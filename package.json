@@ -1,0 +1,64 @@
+{
+    "name": "@unaxiom/scailo-sdk",
+    "version": "1.0.0-dev",
+    "description": "NPM module that provides access to Scailo's API",
+    "types": "./lib/cjs/types/index.d.ts",
+    "main": "./lib/cjs/index.js",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clean": "rm -rf ./lib && rm index.ts",
+        "regenindex": "npx tsx regenindex.ts",
+        "docs": "npx typedoc index.ts --tsconfig tsconfig.esm.json --plugin typedoc-plugin-markdown",
+        "build": "npm run clean && npm run regenindex && npm run build:esm && npm run build:cjs && npm run docs",
+        "build:esm": "npx tsc -p ./tsconfig.esm.json",
+        "build:cjs": "npx tsc -p ./tsconfig.cjs.json",
+        "prepack": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Unaxiom/scailo-ts-sdk.git"
+    },
+    "keywords": [
+        "Scailo",
+        "Unaxiom",
+        "ERP",
+        "API"
+    ],
+    "author": "Pratheek Adidela <apratheek@unaxiom.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Unaxiom/scailo-ts-sdk/issues"
+    },
+    "homepage": "https://github.com/Unaxiom/scailo-ts-sdk#readme",
+    "dependencies": {
+        "@bufbuild/buf": "^1.25.1",
+        "@connectrpc/connect": "^1.1.2",
+        "@connectrpc/connect-node": "^1.1.2",
+        "@connectrpc/connect-web": "^1.1.2",
+        "@bufbuild/protobuf": "^1.3.0",
+        "@bufbuild/protoc-gen-es": "^1.3.0",
+        "@connectrpc/protoc-gen-connect-es": "^1.1.2"
+    },
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./lib/esm/types/index.d.ts",
+                "default": "./lib/esm/index.js"
+            },
+            "require": {
+                "types": "./lib/cjs/types/index.d.ts",
+                "default": "./lib/cjs/index.js"
+            }
+        }
+    },
+    "devDependencies": {
+        "@types/node": "^20.5.7",
+        "tsx": "^3.12.7",
+        "typedoc": "^0.25.0",
+        "typedoc-plugin-markdown": "^3.16.0",
+        "typescript": "^5.2.2"
+    }
+}

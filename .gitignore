@@ -1,0 +1,6 @@
+.npmrc
+.DS_Store
+node_modules/
+*.tgz
+yarn-error.log
+TODO

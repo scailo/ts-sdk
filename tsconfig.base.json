@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "checkJs": true,
+        "allowJs": true,
+        "declaration": true,
+        "declarationMap": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "src/*_pb.ts",
+        "src/*_connect.ts",
+        "index.ts"
+    ],
+}
