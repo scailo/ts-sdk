@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { PurchaseReturn, PurchaseReturnItem, PurchaseReturnItemHistoryRequest, PurchaseReturnItemProspectiveInfoRequest, PurchaseReturnItemsSearchRequest, PurchasesReturnsItemsList, PurchasesReturnsList, PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest, PurchasesReturnsServiceCountReq, PurchasesReturnsServiceCreateRequest, PurchasesReturnsServiceFilterReq, PurchasesReturnsServiceItemCreateRequest, PurchasesReturnsServiceItemUpdateRequest, PurchasesReturnsServicePaginatedItemsResponse, PurchasesReturnsServicePaginationReq, PurchasesReturnsServicePaginationResponse, PurchasesReturnsServiceSearchAllReq, PurchasesReturnsServiceUpdateRequest } from "./purchases_returns.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -359,6 +359,17 @@ export const PurchasesReturnsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.PurchasesReturnsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: PurchaseReturn,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.PurchasesReturnsService.ViewAll
@@ -433,6 +444,17 @@ export const PurchasesReturnsService = {
       name: "ViewAddedFamilyQuantityForSource",
       I: PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest,
       O: DualQuantitiesResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download purchase return with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.PurchasesReturnsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

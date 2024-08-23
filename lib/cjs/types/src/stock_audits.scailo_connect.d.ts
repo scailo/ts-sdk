@@ -1,0 +1,456 @@
+import { StockAudit, StockAuditItem, StockAuditItemHistoryRequest, StockAuditItemProspectiveInfoRequest, StockAuditItemsSearchRequest, StockAuditsItemsList, StockAuditsList, StockAuditsServiceCountReq, StockAuditsServiceCreateRequest, StockAuditsServiceFilterReq, StockAuditsServiceItemCreateRequest, StockAuditsServiceItemUpdateRequest, StockAuditsServicePaginatedItemsResponse, StockAuditsServicePaginationReq, StockAuditsServicePaginationResponse, StockAuditsServiceSearchAllReq, StockAuditsServiceUpdateRequest } from "./stock_audits.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq } from "./base.scailo_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families.scailo_pb.js";
+/**
+ *
+ * Describes the common methods applicable on each stock audit
+ *
+ * @generated from service Scailo.StockAuditsService
+ */
+export declare const StockAuditsService: {
+    readonly typeName: "Scailo.StockAuditsService";
+    readonly methods: {
+        /**
+         * Create and send for verification
+         *
+         * @generated from rpc Scailo.StockAuditsService.Create
+         */
+        readonly create: {
+            readonly name: "Create";
+            readonly I: typeof StockAuditsServiceCreateRequest;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Create and save as draft
+         *
+         * @generated from rpc Scailo.StockAuditsService.Draft
+         */
+        readonly draft: {
+            readonly name: "Draft";
+            readonly I: typeof StockAuditsServiceCreateRequest;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Update draft
+         *
+         * @generated from rpc Scailo.StockAuditsService.DraftUpdate
+         */
+        readonly draftUpdate: {
+            readonly name: "DraftUpdate";
+            readonly I: typeof StockAuditsServiceUpdateRequest;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Send for verification
+         *
+         * @generated from rpc Scailo.StockAuditsService.SendForVerification
+         */
+        readonly sendForVerification: {
+            readonly name: "SendForVerification";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Verify
+         *
+         * @generated from rpc Scailo.StockAuditsService.Verify
+         */
+        readonly verify: {
+            readonly name: "Verify";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Approve
+         *
+         * @generated from rpc Scailo.StockAuditsService.Approve
+         */
+        readonly approve: {
+            readonly name: "Approve";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Send For Revision
+         *
+         * @generated from rpc Scailo.StockAuditsService.SendForRevision
+         */
+        readonly sendForRevision: {
+            readonly name: "SendForRevision";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Update revision
+         *
+         * @generated from rpc Scailo.StockAuditsService.RevisionUpdate
+         */
+        readonly revisionUpdate: {
+            readonly name: "RevisionUpdate";
+            readonly I: typeof StockAuditsServiceUpdateRequest;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Halt
+         *
+         * @generated from rpc Scailo.StockAuditsService.Halt
+         */
+        readonly halt: {
+            readonly name: "Halt";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Discard
+         *
+         * @generated from rpc Scailo.StockAuditsService.Discard
+         */
+        readonly discard: {
+            readonly name: "Discard";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Restore
+         *
+         * @generated from rpc Scailo.StockAuditsService.Restore
+         */
+        readonly restore: {
+            readonly name: "Restore";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Complete
+         *
+         * @generated from rpc Scailo.StockAuditsService.Complete
+         */
+        readonly complete: {
+            readonly name: "Complete";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Repeat
+         *
+         * @generated from rpc Scailo.StockAuditsService.Repeat
+         */
+        readonly repeat: {
+            readonly name: "Repeat";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Reopen
+         *
+         * @generated from rpc Scailo.StockAuditsService.Reopen
+         */
+        readonly reopen: {
+            readonly name: "Reopen";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Add comment
+         *
+         * @generated from rpc Scailo.StockAuditsService.CommentAdd
+         */
+        readonly commentAdd: {
+            readonly name: "CommentAdd";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Send Email
+         *
+         * @generated from rpc Scailo.StockAuditsService.SendEmail
+         */
+        readonly sendEmail: {
+            readonly name: "SendEmail";
+            readonly I: typeof IdentifierWithEmailAttributes;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Checks if the Stock Audit can be marked as completed
+         *
+         * @generated from rpc Scailo.StockAuditsService.IsCompletable
+         */
+        readonly isCompletable: {
+            readonly name: "IsCompletable";
+            readonly I: typeof Identifier;
+            readonly O: typeof BooleanResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Add an item to a stock audit
+         *
+         * @generated from rpc Scailo.StockAuditsService.AddStockAuditItem
+         */
+        readonly addStockAuditItem: {
+            readonly name: "AddStockAuditItem";
+            readonly I: typeof StockAuditsServiceItemCreateRequest;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Modify an item in a stock audit
+         *
+         * @generated from rpc Scailo.StockAuditsService.ModifyStockAuditItem
+         */
+        readonly modifyStockAuditItem: {
+            readonly name: "ModifyStockAuditItem";
+            readonly I: typeof StockAuditsServiceItemUpdateRequest;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Approve an item in a stock audit
+         *
+         * @generated from rpc Scailo.StockAuditsService.ApproveStockAuditItem
+         */
+        readonly approveStockAuditItem: {
+            readonly name: "ApproveStockAuditItem";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Delete an item in a stock audit
+         *
+         * @generated from rpc Scailo.StockAuditsService.DeleteStockAuditItem
+         */
+        readonly deleteStockAuditItem: {
+            readonly name: "DeleteStockAuditItem";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Reorder items in a stock audit
+         *
+         * @generated from rpc Scailo.StockAuditsService.ReorderStockAuditItems
+         */
+        readonly reorderStockAuditItems: {
+            readonly name: "ReorderStockAuditItems";
+            readonly I: typeof ReorderItemsRequest;
+            readonly O: typeof Identifier;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View Stock Audit Item by ID
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewStockAuditItemByID
+         */
+        readonly viewStockAuditItemByID: {
+            readonly name: "ViewStockAuditItemByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof StockAuditItem;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View Stock Audit Item by Inventory Hash
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewStockAuditItemByInventoryHash
+         */
+        readonly viewStockAuditItemByInventoryHash: {
+            readonly name: "ViewStockAuditItemByInventoryHash";
+            readonly I: typeof SimpleSearchReq;
+            readonly O: typeof StockAuditItem;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View approved stock audit items for given stock audit ID
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewApprovedStockAuditItems
+         */
+        readonly viewApprovedStockAuditItems: {
+            readonly name: "ViewApprovedStockAuditItems";
+            readonly I: typeof IdentifierWithSearchKey;
+            readonly O: typeof StockAuditsItemsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View unapproved stock audit items for given stock audit ID
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewUnapprovedStockAuditItems
+         */
+        readonly viewUnapprovedStockAuditItems: {
+            readonly name: "ViewUnapprovedStockAuditItems";
+            readonly I: typeof IdentifierWithSearchKey;
+            readonly O: typeof StockAuditsItemsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the history of the stock audit item
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewStockAuditItemHistory
+         */
+        readonly viewStockAuditItemHistory: {
+            readonly name: "ViewStockAuditItemHistory";
+            readonly I: typeof StockAuditItemHistoryRequest;
+            readonly O: typeof StockAuditsItemsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View approved stock audit items for given stock audit ID with pagination
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewPaginatedApprovedStockAuditItems
+         */
+        readonly viewPaginatedApprovedStockAuditItems: {
+            readonly name: "ViewPaginatedApprovedStockAuditItems";
+            readonly I: typeof StockAuditItemsSearchRequest;
+            readonly O: typeof StockAuditsServicePaginatedItemsResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View unapproved stock audit items for given stock audit ID with pagination
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewPaginatedUnapprovedStockAuditItems
+         */
+        readonly viewPaginatedUnapprovedStockAuditItems: {
+            readonly name: "ViewPaginatedUnapprovedStockAuditItems";
+            readonly I: typeof StockAuditItemsSearchRequest;
+            readonly O: typeof StockAuditsServicePaginatedItemsResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Search through stock audit items with pagination
+         *
+         * @generated from rpc Scailo.StockAuditsService.SearchItemsWithPagination
+         */
+        readonly searchItemsWithPagination: {
+            readonly name: "SearchItemsWithPagination";
+            readonly I: typeof StockAuditItemsSearchRequest;
+            readonly O: typeof StockAuditsServicePaginatedItemsResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View by ID
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewByID
+         */
+        readonly viewByID: {
+            readonly name: "ViewByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof StockAudit;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewAll
+         */
+        readonly viewAll: {
+            readonly name: "ViewAll";
+            readonly I: typeof ActiveStatus;
+            readonly O: typeof StockAuditsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all with the given entity UUID
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewAllForEntityUUID
+         */
+        readonly viewAllForEntityUUID: {
+            readonly name: "ViewAllForEntityUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StockAuditsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View with pagination
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewWithPagination
+         */
+        readonly viewWithPagination: {
+            readonly name: "ViewWithPagination";
+            readonly I: typeof StockAuditsServicePaginationReq;
+            readonly O: typeof StockAuditsServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View prospective families for the given stock audit
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewProspectiveFamilies
+         */
+        readonly viewProspectiveFamilies: {
+            readonly name: "ViewProspectiveFamilies";
+            readonly I: typeof IdentifierWithSearchKey;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View prospective stock audit item info for the given family ID and stock audit ID
+         *
+         * @generated from rpc Scailo.StockAuditsService.ViewProspectiveStockAuditItem
+         */
+        readonly viewProspectiveStockAuditItem: {
+            readonly name: "ViewProspectiveStockAuditItem";
+            readonly I: typeof StockAuditItemProspectiveInfoRequest;
+            readonly O: typeof StockAuditsServiceItemCreateRequest;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all that match the given search key
+         *
+         * @generated from rpc Scailo.StockAuditsService.SearchAll
+         */
+        readonly searchAll: {
+            readonly name: "SearchAll";
+            readonly I: typeof StockAuditsServiceSearchAllReq;
+            readonly O: typeof StockAuditsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all that match the given filter criteria
+         *
+         * @generated from rpc Scailo.StockAuditsService.Filter
+         */
+        readonly filter: {
+            readonly name: "Filter";
+            readonly I: typeof StockAuditsServiceFilterReq;
+            readonly O: typeof StockAuditsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Count in status
+         *
+         * @generated from rpc Scailo.StockAuditsService.CountInStatus
+         */
+        readonly countInStatus: {
+            readonly name: "CountInStatus";
+            readonly I: typeof CountInSLCStatusRequest;
+            readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Count all that match the given criteria
+         *
+         * @generated from rpc Scailo.StockAuditsService.Count
+         */
+        readonly count: {
+            readonly name: "Count";
+            readonly I: typeof StockAuditsServiceCountReq;
+            readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+    };
+};
+//# sourceMappingURL=stock_audits.scailo_connect.d.ts.map

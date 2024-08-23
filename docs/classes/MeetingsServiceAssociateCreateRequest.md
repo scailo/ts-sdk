@@ -1,0 +1,517 @@
+[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceAssociateCreateRequest
+
+# Class: MeetingsServiceAssociateCreateRequest
+
+Describes the parameters necessary to create a meeting associate
+
+**`Generated`**
+
+from message Scailo.MeetingsServiceAssociateCreateRequest
+
+## Hierarchy
+
+- `Message`\<[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)\>
+
+  ↳ **`MeetingsServiceAssociateCreateRequest`**
+
+## Table of contents
+
+### Constructors
+
+- [constructor](MeetingsServiceAssociateCreateRequest.md#constructor)
+
+### Properties
+
+- [associateId](MeetingsServiceAssociateCreateRequest.md#associateid)
+- [meetingId](MeetingsServiceAssociateCreateRequest.md#meetingid)
+- [rsvp](MeetingsServiceAssociateCreateRequest.md#rsvp)
+- [userComment](MeetingsServiceAssociateCreateRequest.md#usercomment)
+- [fields](MeetingsServiceAssociateCreateRequest.md#fields)
+- [runtime](MeetingsServiceAssociateCreateRequest.md#runtime)
+- [typeName](MeetingsServiceAssociateCreateRequest.md#typename)
+
+### Methods
+
+- [clone](MeetingsServiceAssociateCreateRequest.md#clone)
+- [equals](MeetingsServiceAssociateCreateRequest.md#equals)
+- [fromBinary](MeetingsServiceAssociateCreateRequest.md#frombinary)
+- [fromJson](MeetingsServiceAssociateCreateRequest.md#fromjson)
+- [fromJsonString](MeetingsServiceAssociateCreateRequest.md#fromjsonstring)
+- [getType](MeetingsServiceAssociateCreateRequest.md#gettype)
+- [toBinary](MeetingsServiceAssociateCreateRequest.md#tobinary)
+- [toJSON](MeetingsServiceAssociateCreateRequest.md#tojson)
+- [toJson](MeetingsServiceAssociateCreateRequest.md#tojson-1)
+- [toJsonString](MeetingsServiceAssociateCreateRequest.md#tojsonstring)
+- [equals](MeetingsServiceAssociateCreateRequest.md#equals-1)
+- [fromBinary](MeetingsServiceAssociateCreateRequest.md#frombinary-1)
+- [fromJson](MeetingsServiceAssociateCreateRequest.md#fromjson-1)
+- [fromJsonString](MeetingsServiceAssociateCreateRequest.md#fromjsonstring-1)
+
+## Constructors
+
+### constructor
+
+• **new MeetingsServiceAssociateCreateRequest**(`data?`): [`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data?` | `PartialMessage`\<[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)\> |
+
+#### Returns
+
+[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Overrides
+
+Message\&lt;MeetingsServiceAssociateCreateRequest\&gt;.constructor
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2114
+
+## Properties
+
+### associateId
+
+• **associateId**: `bigint` = `protoInt64.zero`
+
+Stores the associate ID
+
+**`Generated`**
+
+from field: uint64 associate_id = 11;
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2105
+
+___
+
+### meetingId
+
+• **meetingId**: `bigint` = `protoInt64.zero`
+
+Stores the meeting ID
+
+**`Generated`**
+
+from field: uint64 meeting_id = 10;
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2098
+
+___
+
+### rsvp
+
+• **rsvp**: [`MEETING_RSVP`](../enums/MEETING_RSVP.md) = `MEETING_RSVP.MEETING_RSVP_ANY_UNSPECIFIED`
+
+Stores the person's RSVP
+
+**`Generated`**
+
+from field: Scailo.MEETING_RSVP rsvp = 12;
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2112
+
+___
+
+### userComment
+
+• **userComment**: `string` = `""`
+
+Stores any comment that the user might add during this operation
+
+**`Generated`**
+
+from field: string user_comment = 1;
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2091
+
+___
+
+### fields
+
+▪ `Static` `Readonly` **fields**: `FieldList`
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2121
+
+___
+
+### runtime
+
+▪ `Static` `Readonly` **runtime**: `ProtoRuntime` = `proto3`
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2119
+
+___
+
+### typeName
+
+▪ `Static` `Readonly` **typeName**: ``"Scailo.MeetingsServiceAssociateCreateRequest"``
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2120
+
+## Methods
+
+### clone
+
+▸ **clone**(): [`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+Create a deep copy.
+
+#### Returns
+
+[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Inherited from
+
+Message.clone
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:28
+
+___
+
+### equals
+
+▸ **equals**(`other`): `boolean`
+
+Compare with a message of the same type.
+Note that this function disregards extensions and unknown fields.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `other` | `undefined` \| ``null`` \| [`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md) \| `PlainMessage`\<[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)\> |
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+Message.equals
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:24
+
+___
+
+### fromBinary
+
+▸ **fromBinary**(`bytes`, `options?`): `this`
+
+Parse from binary data, merging fields.
+
+Repeated fields are appended. Map entries are added, overwriting
+existing keys.
+
+If a message field is already present, it will be merged with the
+new data.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bytes` | `Uint8Array` |
+| `options?` | `Partial`\<`BinaryReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromBinary
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:38
+
+___
+
+### fromJson
+
+▸ **fromJson**(`jsonValue`, `options?`): `this`
+
+Parse a message from a JSON value.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonValue` | `JsonValue` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromJson
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:42
+
+___
+
+### fromJsonString
+
+▸ **fromJsonString**(`jsonString`, `options?`): `this`
+
+Parse a message from a JSON string.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonString` | `string` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromJsonString
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:46
+
+___
+
+### getType
+
+▸ **getType**(): `MessageType`\<[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)\>
+
+Retrieve the MessageType of this message - a singleton that represents
+the protobuf message declaration and provides metadata for reflection-
+based operations.
+
+#### Returns
+
+`MessageType`\<[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)\>
+
+#### Inherited from
+
+Message.getType
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:81
+
+___
+
+### toBinary
+
+▸ **toBinary**(`options?`): `Uint8Array`
+
+Serialize the message to binary data.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`BinaryWriteOptions`\> |
+
+#### Returns
+
+`Uint8Array`
+
+#### Inherited from
+
+Message.toBinary
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:50
+
+___
+
+### toJSON
+
+▸ **toJSON**(): `JsonValue`
+
+Override for serialization behavior. This will be invoked when calling
+JSON.stringify on this message (i.e. JSON.stringify(msg)).
+
+Note that this will not serialize google.protobuf.Any with a packed
+message because the protobuf JSON format specifies that it needs to be
+unpacked, and this is only possible with a type registry to look up the
+message type.  As a result, attempting to serialize a message with this
+type will throw an Error.
+
+This method is protected because you should not need to invoke it
+directly -- instead use JSON.stringify or toJsonString for
+stringified JSON.  Alternatively, if actual JSON is desired, you should
+use toJson.
+
+#### Returns
+
+`JsonValue`
+
+#### Inherited from
+
+Message.toJSON
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:75
+
+___
+
+### toJson
+
+▸ **toJson**(`options?`): `JsonValue`
+
+Serialize the message to a JSON value, a JavaScript value that can be
+passed to JSON.stringify().
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`JsonWriteOptions`\> |
+
+#### Returns
+
+`JsonValue`
+
+#### Inherited from
+
+Message.toJson
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:55
+
+___
+
+### toJsonString
+
+▸ **toJsonString**(`options?`): `string`
+
+Serialize the message to a JSON string.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`JsonWriteStringOptions`\> |
+
+#### Returns
+
+`string`
+
+#### Inherited from
+
+Message.toJsonString
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:59
+
+___
+
+### equals
+
+▸ **equals**(`a`, `b`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `a` | `undefined` \| [`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md) \| `PlainMessage`\<[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)\> |
+| `b` | `undefined` \| [`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md) \| `PlainMessage`\<[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)\> |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2140
+
+___
+
+### fromBinary
+
+▸ **fromBinary**(`bytes`, `options?`): [`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bytes` | `Uint8Array` |
+| `options?` | `Partial`\<`BinaryReadOptions`\> |
+
+#### Returns
+
+[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2128
+
+___
+
+### fromJson
+
+▸ **fromJson**(`jsonValue`, `options?`): [`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonValue` | `JsonValue` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2132
+
+___
+
+### fromJsonString
+
+▸ **fromJsonString**(`jsonString`, `options?`): [`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonString` | `string` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+[`MeetingsServiceAssociateCreateRequest`](MeetingsServiceAssociateCreateRequest.md)
+
+#### Defined in
+
+src/meetings.scailo_pb.ts:2136

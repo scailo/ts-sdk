@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SalesReturn, SalesReturnItem, SalesReturnItemHistoryRequest, SalesReturnItemProspectiveInfoRequest, SalesReturnItemsSearchRequest, SalesReturnsItemsList, SalesReturnsList, SalesReturnsServiceAlreadyAddedQuantityForSourceRequest, SalesReturnsServiceCountReq, SalesReturnsServiceCreateRequest, SalesReturnsServiceFilterReq, SalesReturnsServiceItemCreateRequest, SalesReturnsServiceItemUpdateRequest, SalesReturnsServicePaginatedItemsResponse, SalesReturnsServicePaginationReq, SalesReturnsServicePaginationResponse, SalesReturnsServiceSearchAllReq, SalesReturnsServiceUpdateRequest } from "./sales_returns.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -359,6 +359,17 @@ export const SalesReturnsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.SalesReturnsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: SalesReturn,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.SalesReturnsService.ViewAll
@@ -433,6 +444,17 @@ export const SalesReturnsService = {
       name: "ViewAddedFamilyQuantityForSource",
       I: SalesReturnsServiceAlreadyAddedQuantityForSourceRequest,
       O: DualQuantitiesResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download sales return with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.SalesReturnsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

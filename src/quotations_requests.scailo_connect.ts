@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { QuotationRequest, QuotationRequestItem, QuotationRequestItemHistoryRequest, QuotationRequestItemsSearchRequest, QuotationsRequestsItemsList, QuotationsRequestsList, QuotationsRequestsServiceAutofillRequest, QuotationsRequestsServiceCountReq, QuotationsRequestsServiceCreateRequest, QuotationsRequestsServiceFilterReq, QuotationsRequestsServiceItemCreateRequest, QuotationsRequestsServiceItemUpdateRequest, QuotationsRequestsServicePaginatedItemsResponse, QuotationsRequestsServicePaginationReq, QuotationsRequestsServicePaginationResponse, QuotationsRequestsServiceSearchAllReq, QuotationsRequestsServiceUpdateRequest } from "./quotations_requests.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -336,6 +336,17 @@ export const QuotationsRequestsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.QuotationsRequestsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: QuotationRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.QuotationsRequestsService.ViewAll
@@ -366,6 +377,17 @@ export const QuotationsRequestsService = {
       name: "ViewWithPagination",
       I: QuotationsRequestsServicePaginationReq,
       O: QuotationsRequestsServicePaginationResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download quotation request with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.QuotationsRequestsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

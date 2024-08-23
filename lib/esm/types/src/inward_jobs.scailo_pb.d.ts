@@ -1,0 +1,2319 @@
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
+/**
+ *
+ * Describes the available sort keys
+ *
+ * @generated from enum Scailo.INWARD_JOB_SORT_KEY
+ */
+export declare enum INWARD_JOB_SORT_KEY {
+    /**
+     * Fetch ordered results by id
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_ID_UNSPECIFIED = 0;
+     */
+    INWARD_JOB_SORT_KEY_ID_UNSPECIFIED = 0,
+    /**
+     * Fetch ordered results by the creation timestamp
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_CREATED_AT = 1;
+     */
+    INWARD_JOB_SORT_KEY_CREATED_AT = 1,
+    /**
+     * Fetch ordered results by the modified timestamp
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_MODIFIED_AT = 2;
+     */
+    INWARD_JOB_SORT_KEY_MODIFIED_AT = 2,
+    /**
+     * Fetch ordered results by the approved on timestamp
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_APPROVED_ON = 3;
+     */
+    INWARD_JOB_SORT_KEY_APPROVED_ON = 3,
+    /**
+     * Fetch ordered results by the approved by field
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_APPROVED_BY = 4;
+     */
+    INWARD_JOB_SORT_KEY_APPROVED_BY = 4,
+    /**
+     * Fetch ordered results by the approver's role ID
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_APPROVER_ROLE_ID = 5;
+     */
+    INWARD_JOB_SORT_KEY_APPROVER_ROLE_ID = 5,
+    /**
+     * Fetch ordered results by the approver's completed on timestamp
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_COMPLETED_ON = 6;
+     */
+    INWARD_JOB_SORT_KEY_COMPLETED_ON = 6,
+    /**
+     * Fetch ordered results by the reference ID
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_REFERENCE_ID = 10;
+     */
+    INWARD_JOB_SORT_KEY_REFERENCE_ID = 10,
+    /**
+     * Fetch ordered results by the final ref number
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_FINAL_REF_NUMBER = 11;
+     */
+    INWARD_JOB_SORT_KEY_FINAL_REF_NUMBER = 11,
+    /**
+     * Fetch ordered results by the consignee client ID
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_CONSIGNEE_CLIENT_ID = 12;
+     */
+    INWARD_JOB_SORT_KEY_CONSIGNEE_CLIENT_ID = 12,
+    /**
+     * Fetch ordered results by the buyer client ID
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_BUYER_CLIENT_ID = 13;
+     */
+    INWARD_JOB_SORT_KEY_BUYER_CLIENT_ID = 13,
+    /**
+     * Fetch ordered results by the location ID
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_LOCATION_ID = 14;
+     */
+    INWARD_JOB_SORT_KEY_LOCATION_ID = 14,
+    /**
+     * Fetch ordered results by the project ID
+     *
+     * @generated from enum value: INWARD_JOB_SORT_KEY_PROJECT_ID = 15;
+     */
+    INWARD_JOB_SORT_KEY_PROJECT_ID = 15
+}
+/**
+ *
+ * Describes the available sort keys
+ *
+ * @generated from enum Scailo.INWARD_JOB_INWARD_ITEM_SORT_KEY
+ */
+export declare enum INWARD_JOB_INWARD_ITEM_SORT_KEY {
+    /**
+     * Fetch results by id
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
+    /**
+     * Fetch results by the creation timestamp
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_CREATED_AT = 1;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_CREATED_AT = 1,
+    /**
+     * Fetch results by the modified timestamp
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_MODIFIED_AT = 2;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_MODIFIED_AT = 2,
+    /**
+     * Fetch results by the approved on timestamp
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVED_ON = 3;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVED_ON = 3,
+    /**
+     * Fetch results by the approved by field
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVED_BY = 4;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVED_BY = 4,
+    /**
+     * Fetch results by the approver's role ID
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
+    /**
+     * Fetch results by the family ID
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_FAMILY_ID = 10;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_FAMILY_ID = 10,
+    /**
+     * Fetch results by the internal quantity
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11,
+    /**
+     * Fetch results by the client uom ID
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_UOM_ID = 12,
+    /**
+     * Fetch results by the client quantity
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_QUANTITY = 13,
+    /**
+     * Fetch results by the client family code
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
+     */
+    INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14
+}
+/**
+ *
+ * Describes the applicable statuses of inward job inward items
+ *
+ * @generated from enum Scailo.INWARD_JOB_INWARD_ITEM_STATUS
+ */
+export declare enum INWARD_JOB_INWARD_ITEM_STATUS {
+    /**
+     * Denotes that status be disregarded. This is used only within search APIs
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_STATUS_ANY_UNSPECIFIED = 0;
+     */
+    INWARD_JOB_INWARD_ITEM_STATUS_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the inward job inward items must have been approved
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_STATUS_APPROVED = 1;
+     */
+    INWARD_JOB_INWARD_ITEM_STATUS_APPROVED = 1,
+    /**
+     * Denotes that the inward job inward items must be waiting for approval
+     *
+     * @generated from enum value: INWARD_JOB_INWARD_ITEM_STATUS_UNAPPROVED = 2;
+     */
+    INWARD_JOB_INWARD_ITEM_STATUS_UNAPPROVED = 2
+}
+/**
+ *
+ * Describes the available sort keys
+ *
+ * @generated from enum Scailo.INWARD_JOB_OUTWARD_ITEM_SORT_KEY
+ */
+export declare enum INWARD_JOB_OUTWARD_ITEM_SORT_KEY {
+    /**
+     * Fetch results by id
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
+    /**
+     * Fetch results by the creation timestamp
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_CREATED_AT = 1;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_CREATED_AT = 1,
+    /**
+     * Fetch results by the modified timestamp
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_MODIFIED_AT = 2;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_MODIFIED_AT = 2,
+    /**
+     * Fetch results by the approved on timestamp
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_APPROVED_ON = 3;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_APPROVED_ON = 3,
+    /**
+     * Fetch results by the approved by field
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_APPROVED_BY = 4;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_APPROVED_BY = 4,
+    /**
+     * Fetch results by the approver's role ID
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
+    /**
+     * Fetch results by the family ID
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_FAMILY_ID = 10;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_FAMILY_ID = 10,
+    /**
+     * Fetch results by the internal quantity
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11,
+    /**
+     * Fetch ordered results by the client unit of material ID
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_CLIENT_UOM_ID = 12,
+    /**
+     * Fetch ordered results by the client quantity
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_CLIENT_QUANTITY = 13,
+    /**
+     * Fetch ordered results by the client family code
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14,
+    /**
+     * Fetch ordered results by the delivery date
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_SORT_KEY_DELIVERY_DATE = 15;
+     */
+    INWARD_JOB_OUTWARD_ITEM_SORT_KEY_DELIVERY_DATE = 15
+}
+/**
+ *
+ * Describes the applicable statuses of inward job outward items
+ *
+ * @generated from enum Scailo.INWARD_JOB_OUTWARD_ITEM_STATUS
+ */
+export declare enum INWARD_JOB_OUTWARD_ITEM_STATUS {
+    /**
+     * Denotes that status be disregarded. This is used only within search APIs
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_STATUS_ANY_UNSPECIFIED = 0;
+     */
+    INWARD_JOB_OUTWARD_ITEM_STATUS_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the inward job outward items must have been approved
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_STATUS_APPROVED = 1;
+     */
+    INWARD_JOB_OUTWARD_ITEM_STATUS_APPROVED = 1,
+    /**
+     * Denotes that the inward job outward items must be waiting for approval
+     *
+     * @generated from enum value: INWARD_JOB_OUTWARD_ITEM_STATUS_UNAPPROVED = 2;
+     */
+    INWARD_JOB_OUTWARD_ITEM_STATUS_UNAPPROVED = 2
+}
+/**
+ *
+ * Describes the parameters necessary to create a record
+ *
+ * @generated from message Scailo.InwardJobsServiceCreateRequest
+ */
+export declare class InwardJobsServiceCreateRequest extends Message<InwardJobsServiceCreateRequest> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 2;
+     */
+    userComment: string;
+    /**
+     * The associated vault folder ID
+     *
+     * @generated from field: uint64 vault_folder_id = 9;
+     */
+    vaultFolderId: bigint;
+    /**
+     * The reference ID of the inward job
+     *
+     * @generated from field: string reference_id = 10;
+     */
+    referenceId: string;
+    /**
+     * The ID of the consignee (client)
+     *
+     * @generated from field: uint64 consignee_client_id = 12;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The ID of the buyer (client)
+     *
+     * @generated from field: uint64 buyer_client_id = 13;
+     */
+    buyerClientId: bigint;
+    /**
+     * The ID of the location
+     *
+     * @generated from field: uint64 location_id = 14;
+     */
+    locationId: bigint;
+    /**
+     * The optional associated ID of the project
+     *
+     * @generated from field: uint64 project_id = 15;
+     */
+    projectId: bigint;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
+     */
+    formData: FormFieldDatumCreateRequest[];
+    constructor(data?: PartialMessage<InwardJobsServiceCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceCreateRequest;
+    static equals(a: InwardJobsServiceCreateRequest | PlainMessage<InwardJobsServiceCreateRequest> | undefined, b: InwardJobsServiceCreateRequest | PlainMessage<InwardJobsServiceCreateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters necessary to update a record
+ *
+ * @generated from message Scailo.InwardJobsServiceUpdateRequest
+ */
+export declare class InwardJobsServiceUpdateRequest extends Message<InwardJobsServiceUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The ID of the record that needs to be updated
+     *
+     * @generated from field: uint64 id = 2;
+     */
+    id: bigint;
+    /**
+     * Optional boolean value that stores if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+     *
+     * @generated from field: bool notify_users = 3;
+     */
+    notifyUsers: boolean;
+    /**
+     * The associated vault folder ID
+     *
+     * @generated from field: uint64 vault_folder_id = 9;
+     */
+    vaultFolderId: bigint;
+    /**
+     * The reference ID of the inward job
+     *
+     * @generated from field: string reference_id = 10;
+     */
+    referenceId: string;
+    /**
+     * The ID of the consignee (client)
+     *
+     * @generated from field: uint64 consignee_client_id = 12;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The ID of the buyer (client)
+     *
+     * @generated from field: uint64 buyer_client_id = 13;
+     */
+    buyerClientId: bigint;
+    /**
+     * The optional associated ID of the project
+     *
+     * @generated from field: uint64 project_id = 15;
+     */
+    projectId: bigint;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
+     */
+    formData: FormFieldDatumCreateRequest[];
+    constructor(data?: PartialMessage<InwardJobsServiceUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceUpdateRequest;
+    static equals(a: InwardJobsServiceUpdateRequest | PlainMessage<InwardJobsServiceUpdateRequest> | undefined, b: InwardJobsServiceUpdateRequest | PlainMessage<InwardJobsServiceUpdateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters necessary to perform an autofill request
+ *
+ * @generated from message Scailo.InwardJobsServiceAutofillRequest
+ */
+export declare class InwardJobsServiceAutofillRequest extends Message<InwardJobsServiceAutofillRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The ID of the record that needs to be updated
+     *
+     * @generated from field: uint64 id = 2;
+     */
+    id: bigint;
+    constructor(data?: PartialMessage<InwardJobsServiceAutofillRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceAutofillRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceAutofillRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceAutofillRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceAutofillRequest;
+    static equals(a: InwardJobsServiceAutofillRequest | PlainMessage<InwardJobsServiceAutofillRequest> | undefined, b: InwardJobsServiceAutofillRequest | PlainMessage<InwardJobsServiceAutofillRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are part of a standard response
+ *
+ * @generated from message Scailo.InwardJob
+ */
+export declare class InwardJob extends Message<InwardJob> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this inward job
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the approval metadata
+     *
+     * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+     */
+    approvalMetadata?: ApprovalMetadata;
+    /**
+     * The status of this inward job
+     *
+     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
+     */
+    status: STANDARD_LIFECYCLE_STATUS;
+    /**
+     * Stores the logs of every operation performed on this inward job
+     *
+     * @generated from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
+     */
+    logs: LogbookLogConciseSLC[];
+    /**
+     * The timestamp of when this inward job was marked as completed
+     *
+     * @generated from field: uint64 completed_on = 6;
+     */
+    completedOn: bigint;
+    /**
+     * The associated vault folder ID
+     *
+     * @generated from field: uint64 vault_folder_id = 9;
+     */
+    vaultFolderId: bigint;
+    /**
+     * The reference ID of the inward job
+     *
+     * @generated from field: string reference_id = 10;
+     */
+    referenceId: string;
+    /**
+     * The unique reference number that has been automatically generated
+     *
+     * @generated from field: string final_ref_number = 11;
+     */
+    finalRefNumber: string;
+    /**
+     * The ID of the consignee (client)
+     *
+     * @generated from field: uint64 consignee_client_id = 12;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The ID of the buyer (client)
+     *
+     * @generated from field: uint64 buyer_client_id = 13;
+     */
+    buyerClientId: bigint;
+    /**
+     * The ID of the location
+     *
+     * @generated from field: uint64 location_id = 14;
+     */
+    locationId: bigint;
+    /**
+     * The optional associated ID of the project
+     *
+     * @generated from field: uint64 project_id = 15;
+     */
+    projectId: bigint;
+    /**
+     * The list of associated inward job inward items
+     *
+     * @generated from field: repeated Scailo.InwardJobInwardItem inward_items_list = 20;
+     */
+    inwardItemsList: InwardJobInwardItem[];
+    /**
+     * The list of associated inward job outward items
+     *
+     * @generated from field: repeated Scailo.InwardJobOutwardItem outward_items_list = 21;
+     */
+    outwardItemsList: InwardJobOutwardItem[];
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
+     */
+    formData: FormFieldDatum[];
+    constructor(data?: PartialMessage<InwardJob>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJob";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJob;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJob;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJob;
+    static equals(a: InwardJob | PlainMessage<InwardJob> | undefined, b: InwardJob | PlainMessage<InwardJob> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add an inward item to a inward job
+ *
+ * @generated from message Scailo.InwardJobsServiceInwardItemCreateRequest
+ */
+export declare class InwardJobsServiceInwardItemCreateRequest extends Message<InwardJobsServiceInwardItemCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * Any extra specifications with regards to the item
+     *
+     * @generated from field: string specifications = 16;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<InwardJobsServiceInwardItemCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceInwardItemCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceInwardItemCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceInwardItemCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceInwardItemCreateRequest;
+    static equals(a: InwardJobsServiceInwardItemCreateRequest | PlainMessage<InwardJobsServiceInwardItemCreateRequest> | undefined, b: InwardJobsServiceInwardItemCreateRequest | PlainMessage<InwardJobsServiceInwardItemCreateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a inward job
+ *
+ * @generated from message Scailo.InwardJobsServiceMultipleInwardItemsSingleton
+ */
+export declare class InwardJobsServiceMultipleInwardItemsSingleton extends Message<InwardJobsServiceMultipleInwardItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * Any extra specifications with regards to the item
+     *
+     * @generated from field: string specifications = 16;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<InwardJobsServiceMultipleInwardItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceMultipleInwardItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceMultipleInwardItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceMultipleInwardItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceMultipleInwardItemsSingleton;
+    static equals(a: InwardJobsServiceMultipleInwardItemsSingleton | PlainMessage<InwardJobsServiceMultipleInwardItemsSingleton> | undefined, b: InwardJobsServiceMultipleInwardItemsSingleton | PlainMessage<InwardJobsServiceMultipleInwardItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a inward job
+ *
+ * @generated from message Scailo.InwardJobsServiceMultipleInwardItemsCreateRequest
+ */
+export declare class InwardJobsServiceMultipleInwardItemsCreateRequest extends Message<InwardJobsServiceMultipleInwardItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.InwardJobsServiceMultipleInwardItemsSingleton list = 11;
+     */
+    list: InwardJobsServiceMultipleInwardItemsSingleton[];
+    constructor(data?: PartialMessage<InwardJobsServiceMultipleInwardItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceMultipleInwardItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceMultipleInwardItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceMultipleInwardItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceMultipleInwardItemsCreateRequest;
+    static equals(a: InwardJobsServiceMultipleInwardItemsCreateRequest | PlainMessage<InwardJobsServiceMultipleInwardItemsCreateRequest> | undefined, b: InwardJobsServiceMultipleInwardItemsCreateRequest | PlainMessage<InwardJobsServiceMultipleInwardItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to update an inward item in a inward job
+ *
+ * @generated from message Scailo.InwardJobsServiceInwardItemUpdateRequest
+ */
+export declare class InwardJobsServiceInwardItemUpdateRequest extends Message<InwardJobsServiceInwardItemUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The ID of the record
+     *
+     * @generated from field: uint64 id = 2;
+     */
+    id: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * Any extra specifications with regards to the item
+     *
+     * @generated from field: string specifications = 16;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<InwardJobsServiceInwardItemUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceInwardItemUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceInwardItemUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceInwardItemUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceInwardItemUpdateRequest;
+    static equals(a: InwardJobsServiceInwardItemUpdateRequest | PlainMessage<InwardJobsServiceInwardItemUpdateRequest> | undefined, b: InwardJobsServiceInwardItemUpdateRequest | PlainMessage<InwardJobsServiceInwardItemUpdateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that constitute an inward item associated to a inward job
+ *
+ * @generated from message Scailo.InwardJobInwardItem
+ */
+export declare class InwardJobInwardItem extends Message<InwardJobInwardItem> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this inward job
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the approval metadata
+     *
+     * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+     */
+    approvalMetadata?: ApprovalMetadata;
+    /**
+     * Denotes if this record requires approval (or has been approved)
+     *
+     * @generated from field: bool need_approval = 4;
+     */
+    needApproval: boolean;
+    /**
+     * Stores any comment that the user might have added during an operation
+     *
+     * @generated from field: string user_comment = 5;
+     */
+    userComment: string;
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * Any extra specifications with regards to the item
+     *
+     * @generated from field: string specifications = 16;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<InwardJobInwardItem>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobInwardItem";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobInwardItem;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobInwardItem;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobInwardItem;
+    static equals(a: InwardJobInwardItem | PlainMessage<InwardJobInwardItem> | undefined, b: InwardJobInwardItem | PlainMessage<InwardJobInwardItem> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the list of inward jobs
+ *
+ * @generated from message Scailo.InwardJobsList
+ */
+export declare class InwardJobsList extends Message<InwardJobsList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.InwardJob list = 1;
+     */
+    list: InwardJob[];
+    constructor(data?: PartialMessage<InwardJobsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsList;
+    static equals(a: InwardJobsList | PlainMessage<InwardJobsList> | undefined, b: InwardJobsList | PlainMessage<InwardJobsList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the list of inward job inward items
+ *
+ * @generated from message Scailo.InwardJobsInwardItemsList
+ */
+export declare class InwardJobsInwardItemsList extends Message<InwardJobsInwardItemsList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.InwardJobInwardItem list = 1;
+     */
+    list: InwardJobInwardItem[];
+    constructor(data?: PartialMessage<InwardJobsInwardItemsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsInwardItemsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsInwardItemsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsInwardItemsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsInwardItemsList;
+    static equals(a: InwardJobsInwardItemsList | PlainMessage<InwardJobsInwardItemsList> | undefined, b: InwardJobsInwardItemsList | PlainMessage<InwardJobsInwardItemsList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are required to retrieve the history of the record
+ *
+ * @generated from message Scailo.InwardJobInwardItemHistoryRequest
+ */
+export declare class InwardJobInwardItemHistoryRequest extends Message<InwardJobInwardItemHistoryRequest> {
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    constructor(data?: PartialMessage<InwardJobInwardItemHistoryRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobInwardItemHistoryRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobInwardItemHistoryRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobInwardItemHistoryRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobInwardItemHistoryRequest;
+    static equals(a: InwardJobInwardItemHistoryRequest | PlainMessage<InwardJobInwardItemHistoryRequest> | undefined, b: InwardJobInwardItemHistoryRequest | PlainMessage<InwardJobInwardItemHistoryRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are required to retrieve the info of a prospective inward job inward item
+ *
+ * @generated from message Scailo.InwardJobInwardItemProspectiveInfoRequest
+ */
+export declare class InwardJobInwardItemProspectiveInfoRequest extends Message<InwardJobInwardItemProspectiveInfoRequest> {
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    constructor(data?: PartialMessage<InwardJobInwardItemProspectiveInfoRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobInwardItemProspectiveInfoRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobInwardItemProspectiveInfoRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobInwardItemProspectiveInfoRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobInwardItemProspectiveInfoRequest;
+    static equals(a: InwardJobInwardItemProspectiveInfoRequest | PlainMessage<InwardJobInwardItemProspectiveInfoRequest> | undefined, b: InwardJobInwardItemProspectiveInfoRequest | PlainMessage<InwardJobInwardItemProspectiveInfoRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes a pagination request to retrieve records
+ *
+ * @generated from message Scailo.InwardJobsServicePaginationReq
+ */
+export declare class InwardJobsServicePaginationReq extends Message<InwardJobsServicePaginationReq> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The sort order that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     */
+    sortOrder: SORT_ORDER;
+    /**
+     * The sort key that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.INWARD_JOB_SORT_KEY sort_key = 5;
+     */
+    sortKey: INWARD_JOB_SORT_KEY;
+    /**
+     * The status of this inward job
+     *
+     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+     */
+    status: STANDARD_LIFECYCLE_STATUS;
+    constructor(data?: PartialMessage<InwardJobsServicePaginationReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServicePaginationReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServicePaginationReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServicePaginationReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServicePaginationReq;
+    static equals(a: InwardJobsServicePaginationReq | PlainMessage<InwardJobsServicePaginationReq> | undefined, b: InwardJobsServicePaginationReq | PlainMessage<InwardJobsServicePaginationReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the response to a pagination request
+ *
+ * @generated from message Scailo.InwardJobsServicePaginationResponse
+ */
+export declare class InwardJobsServicePaginationResponse extends Message<InwardJobsServicePaginationResponse> {
+    /**
+     * The number of records in this payload
+     *
+     * @generated from field: uint64 count = 1;
+     */
+    count: bigint;
+    /**
+     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @generated from field: uint64 offset = 2;
+     */
+    offset: bigint;
+    /**
+     * The total number of records that are available
+     *
+     * @generated from field: uint64 total = 3;
+     */
+    total: bigint;
+    /**
+     * The list of records
+     *
+     * @generated from field: repeated Scailo.InwardJob payload = 4;
+     */
+    payload: InwardJob[];
+    constructor(data?: PartialMessage<InwardJobsServicePaginationResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServicePaginationResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServicePaginationResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServicePaginationResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServicePaginationResponse;
+    static equals(a: InwardJobsServicePaginationResponse | PlainMessage<InwardJobsServicePaginationResponse> | undefined, b: InwardJobsServicePaginationResponse | PlainMessage<InwardJobsServicePaginationResponse> | undefined): boolean;
+}
+/**
+ *
+ * Describes the base request payload of a filter search
+ *
+ * @generated from message Scailo.InwardJobsServiceFilterReq
+ */
+export declare class InwardJobsServiceFilterReq extends Message<InwardJobsServiceFilterReq> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The sort order that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     */
+    sortOrder: SORT_ORDER;
+    /**
+     * The sort key that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.INWARD_JOB_SORT_KEY sort_key = 5;
+     */
+    sortKey: INWARD_JOB_SORT_KEY;
+    /**
+     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_start = 101;
+     */
+    creationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_end = 102;
+     */
+    creationTimestampEnd: bigint;
+    /**
+     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_start = 103;
+     */
+    modificationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_end = 104;
+     */
+    modificationTimestampEnd: bigint;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 8;
+     */
+    entityUuid: string;
+    /**
+     * The status of this inward job
+     *
+     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     */
+    status: STANDARD_LIFECYCLE_STATUS;
+    /**
+     * The start range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_start = 11;
+     */
+    approvedOnStart: bigint;
+    /**
+     * The end range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_end = 12;
+     */
+    approvedOnEnd: bigint;
+    /**
+     * The ID of the approver
+     *
+     * @generated from field: uint64 approved_by_user_id = 13;
+     */
+    approvedByUserId: bigint;
+    /**
+     * The role ID of the approver
+     *
+     * @generated from field: uint64 approver_role_id = 14;
+     */
+    approverRoleId: bigint;
+    /**
+     * The start range of completed timestamp
+     *
+     * @generated from field: uint64 completed_on_start = 15;
+     */
+    completedOnStart: bigint;
+    /**
+     * The end range of completed timestamp
+     *
+     * @generated from field: uint64 completed_on_end = 16;
+     */
+    completedOnEnd: bigint;
+    /**
+     * The exact delivery date of any item in the inward job (on the basis of the delivery dates of the outward items)
+     *
+     * @generated from field: string delivery_date_exact = 17;
+     */
+    deliveryDateExact: string;
+    /**
+     * The start delivery date of any item in the inward job (on the basis of the delivery dates of the outward items)
+     *
+     * @generated from field: string delivery_date_start = 18;
+     */
+    deliveryDateStart: string;
+    /**
+     * The end delivery date of any item in the inward job (on the basis of the delivery dates of the outward items)
+     *
+     * @generated from field: string delivery_date_end = 19;
+     */
+    deliveryDateEnd: string;
+    /**
+     * The reference ID of the inward job
+     *
+     * @generated from field: string reference_id = 20;
+     */
+    referenceId: string;
+    /**
+     * The unique reference number that has been automatically generated
+     *
+     * @generated from field: string final_ref_number = 21;
+     */
+    finalRefNumber: string;
+    /**
+     * The associated consignee client ID
+     *
+     * @generated from field: uint64 consignee_client_id = 22;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The associated buyer client ID
+     *
+     * @generated from field: uint64 buyer_client_id = 23;
+     */
+    buyerClientId: bigint;
+    /**
+     * The ID of the associated location
+     *
+     * @generated from field: uint64 location_id = 24;
+     */
+    locationId: bigint;
+    /**
+     * The ID of the associated project
+     *
+     * @generated from field: uint64 project_id = 25;
+     */
+    projectId: bigint;
+    /**
+     * The ID of the outward family
+     *
+     * @generated from field: uint64 outward_family_id = 30;
+     */
+    outwardFamilyId: bigint;
+    constructor(data?: PartialMessage<InwardJobsServiceFilterReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceFilterReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceFilterReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceFilterReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceFilterReq;
+    static equals(a: InwardJobsServiceFilterReq | PlainMessage<InwardJobsServiceFilterReq> | undefined, b: InwardJobsServiceFilterReq | PlainMessage<InwardJobsServiceFilterReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the base request payload of a count search
+ *
+ * @generated from message Scailo.InwardJobsServiceCountReq
+ */
+export declare class InwardJobsServiceCountReq extends Message<InwardJobsServiceCountReq> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_start = 101;
+     */
+    creationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_end = 102;
+     */
+    creationTimestampEnd: bigint;
+    /**
+     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_start = 103;
+     */
+    modificationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_end = 104;
+     */
+    modificationTimestampEnd: bigint;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 8;
+     */
+    entityUuid: string;
+    /**
+     * The status of this inward job
+     *
+     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     */
+    status: STANDARD_LIFECYCLE_STATUS;
+    /**
+     * The start range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_start = 11;
+     */
+    approvedOnStart: bigint;
+    /**
+     * The end range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_end = 12;
+     */
+    approvedOnEnd: bigint;
+    /**
+     * The ID of the approver
+     *
+     * @generated from field: uint64 approved_by_user_id = 13;
+     */
+    approvedByUserId: bigint;
+    /**
+     * The role ID of the approver
+     *
+     * @generated from field: uint64 approver_role_id = 14;
+     */
+    approverRoleId: bigint;
+    /**
+     * The start range of completed timestamp
+     *
+     * @generated from field: uint64 completed_on_start = 15;
+     */
+    completedOnStart: bigint;
+    /**
+     * The end range of completed timestamp
+     *
+     * @generated from field: uint64 completed_on_end = 16;
+     */
+    completedOnEnd: bigint;
+    /**
+     * The exact delivery date of any item in the inward job (on the basis of the delivery dates of the outward items)
+     *
+     * @generated from field: string delivery_date_exact = 17;
+     */
+    deliveryDateExact: string;
+    /**
+     * The start delivery date of any item in the inward job (on the basis of the delivery dates of the outward items)
+     *
+     * @generated from field: string delivery_date_start = 18;
+     */
+    deliveryDateStart: string;
+    /**
+     * The end delivery date of any item in the inward job (on the basis of the delivery dates of the outward items)
+     *
+     * @generated from field: string delivery_date_end = 19;
+     */
+    deliveryDateEnd: string;
+    /**
+     * The reference ID of the inward job
+     *
+     * @generated from field: string reference_id = 20;
+     */
+    referenceId: string;
+    /**
+     * The unique reference number that has been automatically generated
+     *
+     * @generated from field: string final_ref_number = 21;
+     */
+    finalRefNumber: string;
+    /**
+     * The associated consignee client ID
+     *
+     * @generated from field: uint64 consignee_client_id = 22;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The associated buyer client ID
+     *
+     * @generated from field: uint64 buyer_client_id = 23;
+     */
+    buyerClientId: bigint;
+    /**
+     * The ID of the associated location
+     *
+     * @generated from field: uint64 location_id = 24;
+     */
+    locationId: bigint;
+    /**
+     * The ID of the associated project
+     *
+     * @generated from field: uint64 project_id = 25;
+     */
+    projectId: bigint;
+    /**
+     * The ID of the outward family
+     *
+     * @generated from field: uint64 outward_family_id = 30;
+     */
+    outwardFamilyId: bigint;
+    constructor(data?: PartialMessage<InwardJobsServiceCountReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceCountReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceCountReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceCountReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceCountReq;
+    static equals(a: InwardJobsServiceCountReq | PlainMessage<InwardJobsServiceCountReq> | undefined, b: InwardJobsServiceCountReq | PlainMessage<InwardJobsServiceCountReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the request payload for performing a generic search operation on records
+ *
+ * @generated from message Scailo.InwardJobsServiceSearchAllReq
+ */
+export declare class InwardJobsServiceSearchAllReq extends Message<InwardJobsServiceSearchAllReq> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The sort order that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     */
+    sortOrder: SORT_ORDER;
+    /**
+     * The sort key that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.INWARD_JOB_SORT_KEY sort_key = 5;
+     */
+    sortKey: INWARD_JOB_SORT_KEY;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 6;
+     */
+    entityUuid: string;
+    /**
+     * Limit the search space to the given status
+     *
+     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     */
+    status: STANDARD_LIFECYCLE_STATUS;
+    /**
+     * Describes the key with which the search operation needs to be performed
+     *
+     * @generated from field: string search_key = 11;
+     */
+    searchKey: string;
+    /**
+     * The associated consignee client ID
+     *
+     * @generated from field: uint64 consignee_client_id = 22;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The associated buyer client ID
+     *
+     * @generated from field: uint64 buyer_client_id = 23;
+     */
+    buyerClientId: bigint;
+    /**
+     * The ID of the associated location
+     *
+     * @generated from field: uint64 location_id = 24;
+     */
+    locationId: bigint;
+    /**
+     * The ID of the associated project
+     *
+     * @generated from field: uint64 project_id = 25;
+     */
+    projectId: bigint;
+    constructor(data?: PartialMessage<InwardJobsServiceSearchAllReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceSearchAllReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceSearchAllReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceSearchAllReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceSearchAllReq;
+    static equals(a: InwardJobsServiceSearchAllReq | PlainMessage<InwardJobsServiceSearchAllReq> | undefined, b: InwardJobsServiceSearchAllReq | PlainMessage<InwardJobsServiceSearchAllReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the request payload to retrieve approved or unapproved items.
+ *
+ * @generated from message Scailo.InwardJobInwardItemsSearchRequest
+ */
+export declare class InwardJobInwardItemsSearchRequest extends Message<InwardJobInwardItemsSearchRequest> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The sort order that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     */
+    sortOrder: SORT_ORDER;
+    /**
+     * The sort key that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.INWARD_JOB_INWARD_ITEM_SORT_KEY sort_key = 5;
+     */
+    sortKey: INWARD_JOB_INWARD_ITEM_SORT_KEY;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 6;
+     */
+    entityUuid: string;
+    /**
+     * The status of the items
+     *
+     * @generated from field: Scailo.INWARD_JOB_INWARD_ITEM_STATUS status = 7;
+     */
+    status: INWARD_JOB_INWARD_ITEM_STATUS;
+    /**
+     * The start range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_start = 10;
+     */
+    approvedOnStart: bigint;
+    /**
+     * The end range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_end = 11;
+     */
+    approvedOnEnd: bigint;
+    /**
+     * The ID of the approver
+     *
+     * @generated from field: uint64 approved_by_user_id = 12;
+     */
+    approvedByUserId: bigint;
+    /**
+     * The role ID of the approver
+     *
+     * @generated from field: uint64 approver_role_id = 13;
+     */
+    approverRoleId: bigint;
+    /**
+     * The ID of the inward job
+     *
+     * @generated from field: uint64 inward_job_id = 20;
+     */
+    inwardJobId: bigint;
+    /**
+     * The ID of the family
+     *
+     * @generated from field: uint64 family_id = 21;
+     */
+    familyId: bigint;
+    /**
+     * The ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 23;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 25;
+     */
+    clientFamilyCode: string;
+    /**
+     * Describes the key with which the search operation needs to be performed
+     *
+     * @generated from field: string search_key = 40;
+     */
+    searchKey: string;
+    constructor(data?: PartialMessage<InwardJobInwardItemsSearchRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobInwardItemsSearchRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobInwardItemsSearchRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobInwardItemsSearchRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobInwardItemsSearchRequest;
+    static equals(a: InwardJobInwardItemsSearchRequest | PlainMessage<InwardJobInwardItemsSearchRequest> | undefined, b: InwardJobInwardItemsSearchRequest | PlainMessage<InwardJobInwardItemsSearchRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the response to a pagination inward items request
+ *
+ * @generated from message Scailo.InwardJobsServicePaginatedInwardItemsResponse
+ */
+export declare class InwardJobsServicePaginatedInwardItemsResponse extends Message<InwardJobsServicePaginatedInwardItemsResponse> {
+    /**
+     * The number of records in this payload
+     *
+     * @generated from field: uint64 count = 1;
+     */
+    count: bigint;
+    /**
+     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @generated from field: uint64 offset = 2;
+     */
+    offset: bigint;
+    /**
+     * The total number of records that are available
+     *
+     * @generated from field: uint64 total = 3;
+     */
+    total: bigint;
+    /**
+     * The list of records
+     *
+     * @generated from field: repeated Scailo.InwardJobInwardItem payload = 4;
+     */
+    payload: InwardJobInwardItem[];
+    constructor(data?: PartialMessage<InwardJobsServicePaginatedInwardItemsResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServicePaginatedInwardItemsResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServicePaginatedInwardItemsResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServicePaginatedInwardItemsResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServicePaginatedInwardItemsResponse;
+    static equals(a: InwardJobsServicePaginatedInwardItemsResponse | PlainMessage<InwardJobsServicePaginatedInwardItemsResponse> | undefined, b: InwardJobsServicePaginatedInwardItemsResponse | PlainMessage<InwardJobsServicePaginatedInwardItemsResponse> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add an outward item to a inward job
+ *
+ * @generated from message Scailo.InwardJobsServiceOutwardItemCreateRequest
+ */
+export declare class InwardJobsServiceOutwardItemCreateRequest extends Message<InwardJobsServiceOutwardItemCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * The delivery date of the item
+     *
+     * @generated from field: string delivery_date = 16;
+     */
+    deliveryDate: string;
+    /**
+     * Any extra specifications with regards to the item
+     *
+     * @generated from field: string specifications = 17;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<InwardJobsServiceOutwardItemCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceOutwardItemCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceOutwardItemCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceOutwardItemCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceOutwardItemCreateRequest;
+    static equals(a: InwardJobsServiceOutwardItemCreateRequest | PlainMessage<InwardJobsServiceOutwardItemCreateRequest> | undefined, b: InwardJobsServiceOutwardItemCreateRequest | PlainMessage<InwardJobsServiceOutwardItemCreateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a inward job
+ *
+ * @generated from message Scailo.InwardJobsServiceMultipleOutwardItemsSingleton
+ */
+export declare class InwardJobsServiceMultipleOutwardItemsSingleton extends Message<InwardJobsServiceMultipleOutwardItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * The delivery date of the item
+     *
+     * @generated from field: string delivery_date = 16;
+     */
+    deliveryDate: string;
+    /**
+     * Any extra specifications with regards to the item
+     *
+     * @generated from field: string specifications = 17;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<InwardJobsServiceMultipleOutwardItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceMultipleOutwardItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceMultipleOutwardItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceMultipleOutwardItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceMultipleOutwardItemsSingleton;
+    static equals(a: InwardJobsServiceMultipleOutwardItemsSingleton | PlainMessage<InwardJobsServiceMultipleOutwardItemsSingleton> | undefined, b: InwardJobsServiceMultipleOutwardItemsSingleton | PlainMessage<InwardJobsServiceMultipleOutwardItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a inward job
+ *
+ * @generated from message Scailo.InwardJobsServiceMultipleOutwardItemsCreateRequest
+ */
+export declare class InwardJobsServiceMultipleOutwardItemsCreateRequest extends Message<InwardJobsServiceMultipleOutwardItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.InwardJobsServiceMultipleOutwardItemsSingleton list = 11;
+     */
+    list: InwardJobsServiceMultipleOutwardItemsSingleton[];
+    constructor(data?: PartialMessage<InwardJobsServiceMultipleOutwardItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceMultipleOutwardItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceMultipleOutwardItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceMultipleOutwardItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceMultipleOutwardItemsCreateRequest;
+    static equals(a: InwardJobsServiceMultipleOutwardItemsCreateRequest | PlainMessage<InwardJobsServiceMultipleOutwardItemsCreateRequest> | undefined, b: InwardJobsServiceMultipleOutwardItemsCreateRequest | PlainMessage<InwardJobsServiceMultipleOutwardItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to update an outward item in a inward job
+ *
+ * @generated from message Scailo.InwardJobsServiceOutwardItemUpdateRequest
+ */
+export declare class InwardJobsServiceOutwardItemUpdateRequest extends Message<InwardJobsServiceOutwardItemUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The ID of the record
+     *
+     * @generated from field: uint64 id = 2;
+     */
+    id: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * The delivery date of the item
+     *
+     * @generated from field: string delivery_date = 16;
+     */
+    deliveryDate: string;
+    /**
+     * Any extra specifications with regards to the item
+     *
+     * @generated from field: string specifications = 17;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<InwardJobsServiceOutwardItemUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceOutwardItemUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceOutwardItemUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceOutwardItemUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceOutwardItemUpdateRequest;
+    static equals(a: InwardJobsServiceOutwardItemUpdateRequest | PlainMessage<InwardJobsServiceOutwardItemUpdateRequest> | undefined, b: InwardJobsServiceOutwardItemUpdateRequest | PlainMessage<InwardJobsServiceOutwardItemUpdateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that constitute an outward item associated to a inward job
+ *
+ * @generated from message Scailo.InwardJobOutwardItem
+ */
+export declare class InwardJobOutwardItem extends Message<InwardJobOutwardItem> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this inward job
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the approval metadata
+     *
+     * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+     */
+    approvalMetadata?: ApprovalMetadata;
+    /**
+     * Denotes if this record requires approval (or has been approved)
+     *
+     * @generated from field: bool need_approval = 4;
+     */
+    needApproval: boolean;
+    /**
+     * Stores any comment that the user might have added during an operation
+     *
+     * @generated from field: string user_comment = 5;
+     */
+    userComment: string;
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * The delivery date of the item
+     *
+     * @generated from field: string delivery_date = 16;
+     */
+    deliveryDate: string;
+    /**
+     * Any extra specifications with regards to the item
+     *
+     * @generated from field: string specifications = 17;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<InwardJobOutwardItem>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobOutwardItem";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobOutwardItem;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobOutwardItem;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobOutwardItem;
+    static equals(a: InwardJobOutwardItem | PlainMessage<InwardJobOutwardItem> | undefined, b: InwardJobOutwardItem | PlainMessage<InwardJobOutwardItem> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the list of inward job outward items
+ *
+ * @generated from message Scailo.InwardJobsOutwardItemsList
+ */
+export declare class InwardJobsOutwardItemsList extends Message<InwardJobsOutwardItemsList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.InwardJobOutwardItem list = 1;
+     */
+    list: InwardJobOutwardItem[];
+    constructor(data?: PartialMessage<InwardJobsOutwardItemsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsOutwardItemsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsOutwardItemsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsOutwardItemsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsOutwardItemsList;
+    static equals(a: InwardJobsOutwardItemsList | PlainMessage<InwardJobsOutwardItemsList> | undefined, b: InwardJobsOutwardItemsList | PlainMessage<InwardJobsOutwardItemsList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are required to retrieve the history of the record
+ *
+ * @generated from message Scailo.InwardJobOutwardItemHistoryRequest
+ */
+export declare class InwardJobOutwardItemHistoryRequest extends Message<InwardJobOutwardItemHistoryRequest> {
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    constructor(data?: PartialMessage<InwardJobOutwardItemHistoryRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobOutwardItemHistoryRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobOutwardItemHistoryRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobOutwardItemHistoryRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobOutwardItemHistoryRequest;
+    static equals(a: InwardJobOutwardItemHistoryRequest | PlainMessage<InwardJobOutwardItemHistoryRequest> | undefined, b: InwardJobOutwardItemHistoryRequest | PlainMessage<InwardJobOutwardItemHistoryRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are required to retrieve the info of a prospective inward job outward item
+ *
+ * @generated from message Scailo.InwardJobOutwardItemProspectiveInfoRequest
+ */
+export declare class InwardJobOutwardItemProspectiveInfoRequest extends Message<InwardJobOutwardItemProspectiveInfoRequest> {
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    constructor(data?: PartialMessage<InwardJobOutwardItemProspectiveInfoRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobOutwardItemProspectiveInfoRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobOutwardItemProspectiveInfoRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobOutwardItemProspectiveInfoRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobOutwardItemProspectiveInfoRequest;
+    static equals(a: InwardJobOutwardItemProspectiveInfoRequest | PlainMessage<InwardJobOutwardItemProspectiveInfoRequest> | undefined, b: InwardJobOutwardItemProspectiveInfoRequest | PlainMessage<InwardJobOutwardItemProspectiveInfoRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the request payload to retrieve approved or unapproved items.
+ *
+ * @generated from message Scailo.InwardJobOutwardItemsSearchRequest
+ */
+export declare class InwardJobOutwardItemsSearchRequest extends Message<InwardJobOutwardItemsSearchRequest> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The sort order that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     */
+    sortOrder: SORT_ORDER;
+    /**
+     * The sort key that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.INWARD_JOB_OUTWARD_ITEM_SORT_KEY sort_key = 5;
+     */
+    sortKey: INWARD_JOB_OUTWARD_ITEM_SORT_KEY;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 6;
+     */
+    entityUuid: string;
+    /**
+     * The status of the items
+     *
+     * @generated from field: Scailo.INWARD_JOB_OUTWARD_ITEM_STATUS status = 7;
+     */
+    status: INWARD_JOB_OUTWARD_ITEM_STATUS;
+    /**
+     * The start range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_start = 10;
+     */
+    approvedOnStart: bigint;
+    /**
+     * The end range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_end = 11;
+     */
+    approvedOnEnd: bigint;
+    /**
+     * The ID of the approver
+     *
+     * @generated from field: uint64 approved_by_user_id = 12;
+     */
+    approvedByUserId: bigint;
+    /**
+     * The role ID of the approver
+     *
+     * @generated from field: uint64 approver_role_id = 13;
+     */
+    approverRoleId: bigint;
+    /**
+     * The ID of the inward job
+     *
+     * @generated from field: uint64 inward_job_id = 20;
+     */
+    inwardJobId: bigint;
+    /**
+     * The ID of the family
+     *
+     * @generated from field: uint64 family_id = 21;
+     */
+    familyId: bigint;
+    /**
+     * The ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 23;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 25;
+     */
+    clientFamilyCode: string;
+    /**
+     * The exact delivery date of the item in the inward job
+     *
+     * @generated from field: string delivery_date_exact = 26;
+     */
+    deliveryDateExact: string;
+    /**
+     * The start delivery date of the item in the inward job
+     *
+     * @generated from field: string delivery_date_start = 27;
+     */
+    deliveryDateStart: string;
+    /**
+     * The end delivery date of the item in the inward job
+     *
+     * @generated from field: string delivery_date_end = 28;
+     */
+    deliveryDateEnd: string;
+    /**
+     * Describes the key with which the search operation needs to be performed
+     *
+     * @generated from field: string search_key = 40;
+     */
+    searchKey: string;
+    constructor(data?: PartialMessage<InwardJobOutwardItemsSearchRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobOutwardItemsSearchRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobOutwardItemsSearchRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobOutwardItemsSearchRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobOutwardItemsSearchRequest;
+    static equals(a: InwardJobOutwardItemsSearchRequest | PlainMessage<InwardJobOutwardItemsSearchRequest> | undefined, b: InwardJobOutwardItemsSearchRequest | PlainMessage<InwardJobOutwardItemsSearchRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the response to a pagination outward items request
+ *
+ * @generated from message Scailo.InwardJobsServicePaginatedOutwardItemsResponse
+ */
+export declare class InwardJobsServicePaginatedOutwardItemsResponse extends Message<InwardJobsServicePaginatedOutwardItemsResponse> {
+    /**
+     * The number of records in this payload
+     *
+     * @generated from field: uint64 count = 1;
+     */
+    count: bigint;
+    /**
+     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @generated from field: uint64 offset = 2;
+     */
+    offset: bigint;
+    /**
+     * The total number of records that are available
+     *
+     * @generated from field: uint64 total = 3;
+     */
+    total: bigint;
+    /**
+     * The list of records
+     *
+     * @generated from field: repeated Scailo.InwardJobOutwardItem payload = 4;
+     */
+    payload: InwardJobOutwardItem[];
+    constructor(data?: PartialMessage<InwardJobsServicePaginatedOutwardItemsResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServicePaginatedOutwardItemsResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServicePaginatedOutwardItemsResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServicePaginatedOutwardItemsResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServicePaginatedOutwardItemsResponse;
+    static equals(a: InwardJobsServicePaginatedOutwardItemsResponse | PlainMessage<InwardJobsServicePaginatedOutwardItemsResponse> | undefined, b: InwardJobsServicePaginatedOutwardItemsResponse | PlainMessage<InwardJobsServicePaginatedOutwardItemsResponse> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters necessary to create a inward job contact
+ *
+ * @generated from message Scailo.InwardJobsServiceContactCreateRequest
+ */
+export declare class InwardJobsServiceContactCreateRequest extends Message<InwardJobsServiceContactCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the associate ID
+     *
+     * @generated from field: uint64 associate_id = 11;
+     */
+    associateId: bigint;
+    constructor(data?: PartialMessage<InwardJobsServiceContactCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobsServiceContactCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceContactCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobsServiceContactCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobsServiceContactCreateRequest;
+    static equals(a: InwardJobsServiceContactCreateRequest | PlainMessage<InwardJobsServiceContactCreateRequest> | undefined, b: InwardJobsServiceContactCreateRequest | PlainMessage<InwardJobsServiceContactCreateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that constitute a inward job contact
+ *
+ * @generated from message Scailo.InwardJobContact
+ */
+export declare class InwardJobContact extends Message<InwardJobContact> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this inward job
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the approval metadata
+     *
+     * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+     */
+    approvalMetadata?: ApprovalMetadata;
+    /**
+     * Denotes if this record requires approval (or has been approved)
+     *
+     * @generated from field: bool need_approval = 4;
+     */
+    needApproval: boolean;
+    /**
+     * Stores any comment that the user might have added during an operation
+     *
+     * @generated from field: string user_comment = 5;
+     */
+    userComment: string;
+    /**
+     * Stores the inward job ID
+     *
+     * @generated from field: uint64 inward_job_id = 10;
+     */
+    inwardJobId: bigint;
+    /**
+     * Stores the associate ID
+     *
+     * @generated from field: uint64 associate_id = 11;
+     */
+    associateId: bigint;
+    constructor(data?: PartialMessage<InwardJobContact>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobContact";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobContact;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobContact;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobContact;
+    static equals(a: InwardJobContact | PlainMessage<InwardJobContact> | undefined, b: InwardJobContact | PlainMessage<InwardJobContact> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the list of inward job contacts
+ *
+ * @generated from message Scailo.InwardJobContactsList
+ */
+export declare class InwardJobContactsList extends Message<InwardJobContactsList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.InwardJobContact list = 1;
+     */
+    list: InwardJobContact[];
+    constructor(data?: PartialMessage<InwardJobContactsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobContactsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobContactsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobContactsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobContactsList;
+    static equals(a: InwardJobContactsList | PlainMessage<InwardJobContactsList> | undefined, b: InwardJobContactsList | PlainMessage<InwardJobContactsList> | undefined): boolean;
+}
+//# sourceMappingURL=inward_jobs.scailo_pb.d.ts.map

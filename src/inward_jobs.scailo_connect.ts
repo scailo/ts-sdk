@@ -634,6 +634,17 @@ export const InwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.InwardJobsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: InwardJob,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.InwardJobsService.ViewAll
@@ -719,6 +730,17 @@ export const InwardJobsService = {
       name: "ViewProspectiveInwardJobOutwardItem",
       I: InwardJobOutwardItemProspectiveInfoRequest,
       O: InwardJobsServiceOutwardItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download inward job with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.InwardJobsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { GenericInventory, GenericInventoryList, InventoryHashSearchReq, InventoryServiceFamilyQuantityReq, IssuableInventorySearchReq } from "./inventory.scailo_pb.js";
+import { GenericInventory, GenericInventoryList, InventoryHashSearchReq, InventoryServiceFamilyQuantityReq, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { Identifier, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 
@@ -101,6 +101,61 @@ export const InventoryService = {
     viewAdmittedFromProductionPlan: {
       name: "ViewAdmittedFromProductionPlan",
       I: Identifier,
+      O: GenericInventoryList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View inventory that is returnable from a purchase order
+     *
+     * @generated from rpc Scailo.InventoryService.ViewReturnableForPurchaseOrder
+     */
+    viewReturnableForPurchaseOrder: {
+      name: "ViewReturnableForPurchaseOrder",
+      I: ReturnableInventorySearchReq,
+      O: GenericInventoryList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View inventory that is returnable from an inward job
+     *
+     * @generated from rpc Scailo.InventoryService.ViewReturnableForInwardJob
+     */
+    viewReturnableForInwardJob: {
+      name: "ViewReturnableForInwardJob",
+      I: ReturnableInventorySearchReq,
+      O: GenericInventoryList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View inventory that is returnable from a stock issuance
+     *
+     * @generated from rpc Scailo.InventoryService.ViewReturnableForStockIssuance
+     */
+    viewReturnableForStockIssuance: {
+      name: "ViewReturnableForStockIssuance",
+      I: ReturnableInventorySearchReq,
+      O: GenericInventoryList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View inventory that is returnable from a sales order
+     *
+     * @generated from rpc Scailo.InventoryService.ViewReturnableForSalesOrder
+     */
+    viewReturnableForSalesOrder: {
+      name: "ViewReturnableForSalesOrder",
+      I: ReturnableInventorySearchReq,
+      O: GenericInventoryList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View inventory that is returnable from an outward job
+     *
+     * @generated from rpc Scailo.InventoryService.ViewReturnableForOutwardJob
+     */
+    viewReturnableForOutwardJob: {
+      name: "ViewReturnableForOutwardJob",
+      I: ReturnableInventorySearchReq,
       O: GenericInventoryList,
       kind: MethodKind.Unary,
     },

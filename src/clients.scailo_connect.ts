@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest } from "./clients.scailo_pb.js";
+import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList } from "./clients.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -149,6 +149,61 @@ export const ClientsService = {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Add a user
+     *
+     * @generated from rpc Scailo.ClientsService.AddClientUser
+     */
+    addClientUser: {
+      name: "AddClientUser",
+      I: ClientsServiceUserCreateRequest,
+      O: Identifier,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Approve a user
+     *
+     * @generated from rpc Scailo.ClientsService.ApproveClientUser
+     */
+    approveClientUser: {
+      name: "ApproveClientUser",
+      I: IdentifierWithUserComment,
+      O: Identifier,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Delete a user
+     *
+     * @generated from rpc Scailo.ClientsService.DeleteClientUser
+     */
+    deleteClientUser: {
+      name: "DeleteClientUser",
+      I: IdentifierWithUserComment,
+      O: Identifier,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View a user for the given ID
+     *
+     * @generated from rpc Scailo.ClientsService.ViewClientUserByID
+     */
+    viewClientUserByID: {
+      name: "ViewClientUserByID",
+      I: Identifier,
+      O: ClientUser,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all users for given client ID
+     *
+     * @generated from rpc Scailo.ClientsService.ViewClientUsers
+     */
+    viewClientUsers: {
+      name: "ViewClientUsers",
+      I: Identifier,
+      O: ClientUsersList,
       kind: MethodKind.Unary,
     },
     /**

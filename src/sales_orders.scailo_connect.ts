@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { SalesOrder, SalesOrderContact, SalesOrderContactsList, SalesOrderItem, SalesOrderItemHistoryRequest, SalesOrderItemProspectiveInfoRequest, SalesOrderItemsList, SalesOrderItemsSearchRequest, SalesOrderReference, SalesOrderReferencesList, SalesOrdersList, SalesOrdersServiceAutofillRequest, SalesOrdersServiceContactCreateRequest, SalesOrdersServiceCountReq, SalesOrdersServiceCreateRequest, SalesOrdersServiceFilterReq, SalesOrdersServiceItemCreateRequest, SalesOrdersServiceItemUpdateRequest, SalesOrdersServicePaginatedItemsResponse, SalesOrdersServicePaginationReq, SalesOrdersServicePaginationResponse, SalesOrdersServiceReferenceCreateRequest, SalesOrdersServiceSearchAllReq, SalesOrdersServiceUpdateRequest } from "./sales_orders.scailo_pb.js";
+import { SalesOrder, SalesOrderBillingStatistics, SalesOrderContact, SalesOrderContactsList, SalesOrderInventoryStatistics, SalesOrderItem, SalesOrderItemHistoryRequest, SalesOrderItemProspectiveInfoRequest, SalesOrderItemsList, SalesOrderItemsSearchRequest, SalesOrderReference, SalesOrderReferencesList, SalesOrdersList, SalesOrdersServiceAutofillRequest, SalesOrdersServiceContactCreateRequest, SalesOrdersServiceCountReq, SalesOrdersServiceCreateRequest, SalesOrdersServiceFilterReq, SalesOrdersServiceItemCreateRequest, SalesOrdersServiceItemUpdateRequest, SalesOrdersServicePaginatedItemsResponse, SalesOrdersServicePaginationReq, SalesOrdersServicePaginationResponse, SalesOrdersServiceReferenceCreateRequest, SalesOrdersServiceSearchAllReq, SalesOrdersServiceUpdateRequest } from "./sales_orders.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -503,6 +503,17 @@ export const SalesOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.SalesOrdersService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: SalesOrder,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View only essential components of the record
      *
      * @generated from rpc Scailo.SalesOrdersService.ViewEssentialByID
@@ -558,6 +569,28 @@ export const SalesOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View Inventory Statistics of Sales Order
+     *
+     * @generated from rpc Scailo.SalesOrdersService.ViewInventoryStatistics
+     */
+    viewInventoryStatistics: {
+      name: "ViewInventoryStatistics",
+      I: Identifier,
+      O: SalesOrderInventoryStatistics,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View Billing Statistics of Sales Order
+     *
+     * @generated from rpc Scailo.SalesOrdersService.ViewBillingStatistics
+     */
+    viewBillingStatistics: {
+      name: "ViewBillingStatistics",
+      I: Identifier,
+      O: SalesOrderBillingStatistics,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View prospective families for the given sales order
      *
      * @generated from rpc Scailo.SalesOrdersService.ViewProspectiveFamilies
@@ -577,6 +610,18 @@ export const SalesOrdersService = {
       name: "ViewProspectiveSalesOrderItem",
       I: SalesOrderItemProspectiveInfoRequest,
       O: SalesOrdersServiceItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Other view operations
+     * Download sales order with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.SalesOrdersService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

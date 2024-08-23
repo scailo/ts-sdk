@@ -503,6 +503,17 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.SalesQuotationsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: SalesQuotation,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View only essential components of the record
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewEssentialByID
@@ -589,6 +600,17 @@ export const SalesQuotationsService = {
       name: "ViewAssociatedSalesOrdersIDs",
       I: Identifier,
       O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download sales quotation with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.SalesQuotationsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

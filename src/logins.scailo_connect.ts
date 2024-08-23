@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { AuthTokenValidityRequest, LogoutRequest, LogoutResponse, UserLoginHistoryList, UserLoginRequest, UserLoginResponse } from "./logins.scailo_pb.js";
+import { AuthTokenValidityRequest, ClientUserLoginResponse, LogoutRequest, LogoutResponse, UserLoginHistoryList, UserLoginRequest, UserLoginResponse, VendorUserLoginResponse } from "./logins.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { BooleanResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 
@@ -17,14 +17,59 @@ export const LoginService = {
   typeName: "Scailo.LoginService",
   methods: {
     /**
-     * Login using credentials belonging to a user and evaluate using user's primary role
+     * Login using credentials belonging to a user and evaluate using user's primary role (this has been deprecated. Use LoginAsEmployeePrimary instead)
      *
      * @generated from rpc Scailo.LoginService.UserLoginPrimary
+     * @deprecated
      */
     userLoginPrimary: {
       name: "UserLoginPrimary",
       I: UserLoginRequest,
       O: UserLoginResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Login as employee using primary role
+     *
+     * @generated from rpc Scailo.LoginService.LoginAsEmployeePrimary
+     */
+    loginAsEmployeePrimary: {
+      name: "LoginAsEmployeePrimary",
+      I: UserLoginRequest,
+      O: UserLoginResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Login as employee using mobile role
+     *
+     * @generated from rpc Scailo.LoginService.LoginAsEmployeeSecondary
+     */
+    loginAsEmployeeSecondary: {
+      name: "LoginAsEmployeeSecondary",
+      I: UserLoginRequest,
+      O: UserLoginResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Login using credentials belonging to a vendor user
+     *
+     * @generated from rpc Scailo.LoginService.LoginAsVendorUser
+     */
+    loginAsVendorUser: {
+      name: "LoginAsVendorUser",
+      I: UserLoginRequest,
+      O: VendorUserLoginResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Login using credentials belonging to a client user
+     *
+     * @generated from rpc Scailo.LoginService.LoginAsClientUser
+     */
+    loginAsClientUser: {
+      name: "LoginAsClientUser",
+      I: UserLoginRequest,
+      O: ClientUserLoginResponse,
       kind: MethodKind.Unary,
     },
     /**

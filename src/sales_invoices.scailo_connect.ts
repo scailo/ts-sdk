@@ -437,6 +437,17 @@ export const SalesInvoicesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.SalesInvoicesService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: SalesInvoice,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.SalesInvoicesService.ViewAll
@@ -522,6 +533,17 @@ export const SalesInvoicesService = {
       name: "ViewAddedFamilyQuantityForSource",
       I: SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest,
       O: DualQuantitiesResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download sales invoice with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.SalesInvoicesService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest } from "./vendors.scailo_pb.js";
+import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList } from "./vendors.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -258,6 +258,61 @@ export const VendorsService = {
       name: "SearchItemsWithPagination",
       I: VendorItemsSearchRequest,
       O: VendorsServicePaginatedItemsResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Add a user
+     *
+     * @generated from rpc Scailo.VendorsService.AddVendorUser
+     */
+    addVendorUser: {
+      name: "AddVendorUser",
+      I: VendorsServiceUserCreateRequest,
+      O: Identifier,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Approve a user
+     *
+     * @generated from rpc Scailo.VendorsService.ApproveVendorUser
+     */
+    approveVendorUser: {
+      name: "ApproveVendorUser",
+      I: IdentifierWithUserComment,
+      O: Identifier,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Delete a user
+     *
+     * @generated from rpc Scailo.VendorsService.DeleteVendorUser
+     */
+    deleteVendorUser: {
+      name: "DeleteVendorUser",
+      I: IdentifierWithUserComment,
+      O: Identifier,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View a user for the given ID
+     *
+     * @generated from rpc Scailo.VendorsService.ViewVendorUserByID
+     */
+    viewVendorUserByID: {
+      name: "ViewVendorUserByID",
+      I: Identifier,
+      O: VendorUser,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all users for given vendor ID
+     *
+     * @generated from rpc Scailo.VendorsService.ViewVendorUsers
+     */
+    viewVendorUsers: {
+      name: "ViewVendorUsers",
+      I: Identifier,
+      O: VendorUsersList,
       kind: MethodKind.Unary,
     },
     /**

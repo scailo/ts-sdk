@@ -6,8 +6,9 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, SORT_ORDER } from "./base.scailo_pb.js";
-import { FAMILY_TYPE } from "./families.scailo_pb.js";
-import { QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE } from "./qc_groups.scailo_pb.js";
+import { Family, FAMILY_TYPE } from "./families.scailo_pb.js";
+import { QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE, QCGroup } from "./qc_groups.scailo_pb.js";
+import { GenericInventory } from "./inventory.scailo_pb.js";
 
 /**
  *
@@ -692,6 +693,72 @@ export class QCSample extends Message<QCSample> {
 
 /**
  *
+ * Describes the parameters that are part of a standard response
+ *
+ * @generated from message Scailo.QCSampleWithMetadata
+ */
+export class QCSampleWithMetadata extends Message<QCSampleWithMetadata> {
+  /**
+   * Stores the QC Sample
+   *
+   * @generated from field: Scailo.QCSample qc_sample = 1;
+   */
+  qcSample?: QCSample;
+
+  /**
+   * Stores the family information
+   *
+   * @generated from field: Scailo.Family family = 10;
+   */
+  family?: Family;
+
+  /**
+   * Stores the associated qc group
+   *
+   * @generated from field: Scailo.QCGroup qc_group = 20;
+   */
+  qcGroup?: QCGroup;
+
+  /**
+   * Stores the generic inventory information
+   *
+   * @generated from field: Scailo.GenericInventory inventory_item = 30;
+   */
+  inventoryItem?: GenericInventory;
+
+  constructor(data?: PartialMessage<QCSampleWithMetadata>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QCSampleWithMetadata";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "qc_sample", kind: "message", T: QCSample },
+    { no: 10, name: "family", kind: "message", T: Family },
+    { no: 20, name: "qc_group", kind: "message", T: QCGroup },
+    { no: 30, name: "inventory_item", kind: "message", T: GenericInventory },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSampleWithMetadata {
+    return new QCSampleWithMetadata().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCSampleWithMetadata {
+    return new QCSampleWithMetadata().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSampleWithMetadata {
+    return new QCSampleWithMetadata().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QCSampleWithMetadata | PlainMessage<QCSampleWithMetadata> | undefined, b: QCSampleWithMetadata | PlainMessage<QCSampleWithMetadata> | undefined): boolean {
+    return proto3.util.equals(QCSampleWithMetadata, a, b);
+  }
+}
+
+/**
+ *
  * Describes the message consisting of the list of records
  *
  * @generated from message Scailo.QCSamplesList
@@ -729,6 +796,48 @@ export class QCSamplesList extends Message<QCSamplesList> {
 
   static equals(a: QCSamplesList | PlainMessage<QCSamplesList> | undefined, b: QCSamplesList | PlainMessage<QCSamplesList> | undefined): boolean {
     return proto3.util.equals(QCSamplesList, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the list of QC samples with metadata
+ *
+ * @generated from message Scailo.QCSamplesWithMetadataList
+ */
+export class QCSamplesWithMetadataList extends Message<QCSamplesWithMetadataList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.QCSampleWithMetadata list = 1;
+   */
+  list: QCSampleWithMetadata[] = [];
+
+  constructor(data?: PartialMessage<QCSamplesWithMetadataList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QCSamplesWithMetadataList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: QCSampleWithMetadata, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSamplesWithMetadataList {
+    return new QCSamplesWithMetadataList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCSamplesWithMetadataList {
+    return new QCSamplesWithMetadataList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSamplesWithMetadataList {
+    return new QCSamplesWithMetadataList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QCSamplesWithMetadataList | PlainMessage<QCSamplesWithMetadataList> | undefined, b: QCSamplesWithMetadataList | PlainMessage<QCSamplesWithMetadataList> | undefined): boolean {
+    return proto3.util.equals(QCSamplesWithMetadataList, a, b);
   }
 }
 

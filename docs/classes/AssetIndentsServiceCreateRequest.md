@@ -1,0 +1,585 @@
+[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceCreateRequest
+
+# Class: AssetIndentsServiceCreateRequest
+
+Describes the parameters necessary to create a record
+
+**`Generated`**
+
+from message Scailo.AssetIndentsServiceCreateRequest
+
+## Hierarchy
+
+- `Message`\<[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)\>
+
+  ↳ **`AssetIndentsServiceCreateRequest`**
+
+## Table of contents
+
+### Constructors
+
+- [constructor](AssetIndentsServiceCreateRequest.md#constructor)
+
+### Properties
+
+- [entityUuid](AssetIndentsServiceCreateRequest.md#entityuuid)
+- [formData](AssetIndentsServiceCreateRequest.md#formdata)
+- [locationId](AssetIndentsServiceCreateRequest.md#locationid)
+- [projectId](AssetIndentsServiceCreateRequest.md#projectid)
+- [referenceId](AssetIndentsServiceCreateRequest.md#referenceid)
+- [userComment](AssetIndentsServiceCreateRequest.md#usercomment)
+- [userId](AssetIndentsServiceCreateRequest.md#userid)
+- [vaultFolderId](AssetIndentsServiceCreateRequest.md#vaultfolderid)
+- [fields](AssetIndentsServiceCreateRequest.md#fields)
+- [runtime](AssetIndentsServiceCreateRequest.md#runtime)
+- [typeName](AssetIndentsServiceCreateRequest.md#typename)
+
+### Methods
+
+- [clone](AssetIndentsServiceCreateRequest.md#clone)
+- [equals](AssetIndentsServiceCreateRequest.md#equals)
+- [fromBinary](AssetIndentsServiceCreateRequest.md#frombinary)
+- [fromJson](AssetIndentsServiceCreateRequest.md#fromjson)
+- [fromJsonString](AssetIndentsServiceCreateRequest.md#fromjsonstring)
+- [getType](AssetIndentsServiceCreateRequest.md#gettype)
+- [toBinary](AssetIndentsServiceCreateRequest.md#tobinary)
+- [toJSON](AssetIndentsServiceCreateRequest.md#tojson)
+- [toJson](AssetIndentsServiceCreateRequest.md#tojson-1)
+- [toJsonString](AssetIndentsServiceCreateRequest.md#tojsonstring)
+- [equals](AssetIndentsServiceCreateRequest.md#equals-1)
+- [fromBinary](AssetIndentsServiceCreateRequest.md#frombinary-1)
+- [fromJson](AssetIndentsServiceCreateRequest.md#fromjson-1)
+- [fromJsonString](AssetIndentsServiceCreateRequest.md#fromjsonstring-1)
+
+## Constructors
+
+### constructor
+
+• **new AssetIndentsServiceCreateRequest**(`data?`): [`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data?` | `PartialMessage`\<[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)\> |
+
+#### Returns
+
+[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Overrides
+
+Message\&lt;AssetIndentsServiceCreateRequest\&gt;.constructor
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:275
+
+## Properties
+
+### entityUuid
+
+• **entityUuid**: `string` = `""`
+
+Stores a globally unique entity UUID. This will be set at the organization level
+
+**`Generated`**
+
+from field: string entity_uuid = 1;
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:224
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
+
+The list of dynamic forms
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:273
+
+___
+
+### locationId
+
+• **locationId**: `bigint` = `protoInt64.zero`
+
+The ID of the location
+
+**`Generated`**
+
+from field: uint64 location_id = 14;
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:259
+
+___
+
+### projectId
+
+• **projectId**: `bigint` = `protoInt64.zero`
+
+The associated project ID
+
+**`Generated`**
+
+from field: uint64 project_id = 8;
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:238
+
+___
+
+### referenceId
+
+• **referenceId**: `string` = `""`
+
+The reference ID of the asset indent
+
+**`Generated`**
+
+from field: string reference_id = 10;
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:252
+
+___
+
+### userComment
+
+• **userComment**: `string` = `""`
+
+Stores any comment that the user might add during this operation
+
+**`Generated`**
+
+from field: string user_comment = 2;
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:231
+
+___
+
+### userId
+
+• **userId**: `bigint` = `protoInt64.zero`
+
+The ID of the associated user
+
+**`Generated`**
+
+from field: uint64 user_id = 15;
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:266
+
+___
+
+### vaultFolderId
+
+• **vaultFolderId**: `bigint` = `protoInt64.zero`
+
+The associated vault folder ID
+
+**`Generated`**
+
+from field: uint64 vault_folder_id = 9;
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:245
+
+___
+
+### fields
+
+▪ `Static` `Readonly` **fields**: `FieldList`
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:282
+
+___
+
+### runtime
+
+▪ `Static` `Readonly` **runtime**: `ProtoRuntime` = `proto3`
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:280
+
+___
+
+### typeName
+
+▪ `Static` `Readonly` **typeName**: ``"Scailo.AssetIndentsServiceCreateRequest"``
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:281
+
+## Methods
+
+### clone
+
+▸ **clone**(): [`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+Create a deep copy.
+
+#### Returns
+
+[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Inherited from
+
+Message.clone
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:28
+
+___
+
+### equals
+
+▸ **equals**(`other`): `boolean`
+
+Compare with a message of the same type.
+Note that this function disregards extensions and unknown fields.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `other` | `undefined` \| ``null`` \| [`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md) \| `PlainMessage`\<[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)\> |
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+Message.equals
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:24
+
+___
+
+### fromBinary
+
+▸ **fromBinary**(`bytes`, `options?`): `this`
+
+Parse from binary data, merging fields.
+
+Repeated fields are appended. Map entries are added, overwriting
+existing keys.
+
+If a message field is already present, it will be merged with the
+new data.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bytes` | `Uint8Array` |
+| `options?` | `Partial`\<`BinaryReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromBinary
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:38
+
+___
+
+### fromJson
+
+▸ **fromJson**(`jsonValue`, `options?`): `this`
+
+Parse a message from a JSON value.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonValue` | `JsonValue` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromJson
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:42
+
+___
+
+### fromJsonString
+
+▸ **fromJsonString**(`jsonString`, `options?`): `this`
+
+Parse a message from a JSON string.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonString` | `string` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromJsonString
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:46
+
+___
+
+### getType
+
+▸ **getType**(): `MessageType`\<[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)\>
+
+Retrieve the MessageType of this message - a singleton that represents
+the protobuf message declaration and provides metadata for reflection-
+based operations.
+
+#### Returns
+
+`MessageType`\<[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)\>
+
+#### Inherited from
+
+Message.getType
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:81
+
+___
+
+### toBinary
+
+▸ **toBinary**(`options?`): `Uint8Array`
+
+Serialize the message to binary data.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`BinaryWriteOptions`\> |
+
+#### Returns
+
+`Uint8Array`
+
+#### Inherited from
+
+Message.toBinary
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:50
+
+___
+
+### toJSON
+
+▸ **toJSON**(): `JsonValue`
+
+Override for serialization behavior. This will be invoked when calling
+JSON.stringify on this message (i.e. JSON.stringify(msg)).
+
+Note that this will not serialize google.protobuf.Any with a packed
+message because the protobuf JSON format specifies that it needs to be
+unpacked, and this is only possible with a type registry to look up the
+message type.  As a result, attempting to serialize a message with this
+type will throw an Error.
+
+This method is protected because you should not need to invoke it
+directly -- instead use JSON.stringify or toJsonString for
+stringified JSON.  Alternatively, if actual JSON is desired, you should
+use toJson.
+
+#### Returns
+
+`JsonValue`
+
+#### Inherited from
+
+Message.toJSON
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:75
+
+___
+
+### toJson
+
+▸ **toJson**(`options?`): `JsonValue`
+
+Serialize the message to a JSON value, a JavaScript value that can be
+passed to JSON.stringify().
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`JsonWriteOptions`\> |
+
+#### Returns
+
+`JsonValue`
+
+#### Inherited from
+
+Message.toJson
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:55
+
+___
+
+### toJsonString
+
+▸ **toJsonString**(`options?`): `string`
+
+Serialize the message to a JSON string.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`JsonWriteStringOptions`\> |
+
+#### Returns
+
+`string`
+
+#### Inherited from
+
+Message.toJsonString
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:59
+
+___
+
+### equals
+
+▸ **equals**(`a`, `b`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `a` | `undefined` \| [`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md) \| `PlainMessage`\<[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)\> |
+| `b` | `undefined` \| [`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md) \| `PlainMessage`\<[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)\> |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:305
+
+___
+
+### fromBinary
+
+▸ **fromBinary**(`bytes`, `options?`): [`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bytes` | `Uint8Array` |
+| `options?` | `Partial`\<`BinaryReadOptions`\> |
+
+#### Returns
+
+[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:293
+
+___
+
+### fromJson
+
+▸ **fromJson**(`jsonValue`, `options?`): [`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonValue` | `JsonValue` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:297
+
+___
+
+### fromJsonString
+
+▸ **fromJsonString**(`jsonString`, `options?`): [`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonString` | `string` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+[`AssetIndentsServiceCreateRequest`](AssetIndentsServiceCreateRequest.md)
+
+#### Defined in
+
+src/asset_indents.scailo_pb.ts:301

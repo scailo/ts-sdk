@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { PurchaseOrder, PurchaseOrderContact, PurchaseOrderContactsList, PurchaseOrderItem, PurchaseOrderItemHistoryRequest, PurchaseOrderItemProspectiveInfoRequest, PurchaseOrderItemsList, PurchaseOrderItemsSearchRequest, PurchaseOrderReference, PurchaseOrderReferencesList, PurchasesOrdersList, PurchasesOrdersServiceAutofillRequest, PurchasesOrdersServiceContactCreateRequest, PurchasesOrdersServiceCountReq, PurchasesOrdersServiceCreateRequest, PurchasesOrdersServiceFilterReq, PurchasesOrdersServiceItemCreateRequest, PurchasesOrdersServiceItemUpdateRequest, PurchasesOrdersServicePaginatedItemsResponse, PurchasesOrdersServicePaginationReq, PurchasesOrdersServicePaginationResponse, PurchasesOrdersServiceReferenceCreateRequest, PurchasesOrdersServiceSearchAllReq, PurchasesOrdersServiceUpdateRequest } from "./purchases_orders.scailo_pb.js";
+import { PurchaseOrder, PurchaseOrderBillingStatistics, PurchaseOrderContact, PurchaseOrderContactsList, PurchaseOrderInventoryStatistics, PurchaseOrderItem, PurchaseOrderItemHistoryRequest, PurchaseOrderItemProspectiveInfoRequest, PurchaseOrderItemsList, PurchaseOrderItemsSearchRequest, PurchaseOrderReference, PurchaseOrderReferencesList, PurchasesOrdersList, PurchasesOrdersServiceAutofillRequest, PurchasesOrdersServiceContactCreateRequest, PurchasesOrdersServiceCountReq, PurchasesOrdersServiceCreateRequest, PurchasesOrdersServiceFilterReq, PurchasesOrdersServiceItemCreateRequest, PurchasesOrdersServiceItemUpdateRequest, PurchasesOrdersServicePaginatedItemsResponse, PurchasesOrdersServicePaginationReq, PurchasesOrdersServicePaginationResponse, PurchasesOrdersServiceReferenceCreateRequest, PurchasesOrdersServiceSearchAllReq, PurchasesOrdersServiceUpdateRequest } from "./purchases_orders.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -503,6 +503,17 @@ export const PurchasesOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: PurchaseOrder,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View only essential components of the record
      *
      * @generated from rpc Scailo.PurchasesOrdersService.ViewEssentialByID
@@ -558,6 +569,28 @@ export const PurchasesOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View Inventory Statistics of Purchase Order
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.ViewInventoryStatistics
+     */
+    viewInventoryStatistics: {
+      name: "ViewInventoryStatistics",
+      I: Identifier,
+      O: PurchaseOrderInventoryStatistics,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View Billing Statistics of Purchase Order
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.ViewBillingStatistics
+     */
+    viewBillingStatistics: {
+      name: "ViewBillingStatistics",
+      I: Identifier,
+      O: PurchaseOrderBillingStatistics,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View prospective families for the given purchase order
      *
      * @generated from rpc Scailo.PurchasesOrdersService.ViewProspectiveFamilies
@@ -577,6 +610,18 @@ export const PurchasesOrdersService = {
       name: "ViewProspectivePurchaseOrderItem",
       I: PurchaseOrderItemProspectiveInfoRequest,
       O: PurchasesOrdersServiceItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Other view operations
+     * Download purchase order with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

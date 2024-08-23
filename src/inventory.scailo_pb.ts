@@ -639,3 +639,69 @@ export class InventoryServiceFamilyQuantityReq extends Message<InventoryServiceF
   }
 }
 
+/**
+ *
+ * Describes the message that consists of parameters that are required to retrieve returnable inventory
+ *
+ * @generated from message Scailo.ReturnableInventorySearchReq
+ */
+export class ReturnableInventorySearchReq extends Message<ReturnableInventorySearchReq> {
+  /**
+   * Stores the ID of the reference (such as purchase order, sales order, inward job, outward job, stock issuance)
+   *
+   * @generated from field: uint64 ref_id = 1;
+   */
+  refId = protoInt64.zero;
+
+  /**
+   * Stores the search key
+   *
+   * @generated from field: string search_key = 5;
+   */
+  searchKey = "";
+
+  /**
+   * Stores the ID of the family that needs to be retrieved
+   *
+   * @generated from field: uint64 family_id = 10;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the ID of the location from where the inventory needs to be retrieved
+   *
+   * @generated from field: uint64 location_id = 15;
+   */
+  locationId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<ReturnableInventorySearchReq>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ReturnableInventorySearchReq";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 5, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReturnableInventorySearchReq {
+    return new ReturnableInventorySearchReq().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReturnableInventorySearchReq {
+    return new ReturnableInventorySearchReq().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReturnableInventorySearchReq {
+    return new ReturnableInventorySearchReq().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ReturnableInventorySearchReq | PlainMessage<ReturnableInventorySearchReq> | undefined, b: ReturnableInventorySearchReq | PlainMessage<ReturnableInventorySearchReq> | undefined): boolean {
+    return proto3.util.equals(ReturnableInventorySearchReq, a, b);
+  }
+}
+

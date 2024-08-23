@@ -275,6 +275,13 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest extends Mes
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 15;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The list of dynamic forms
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
@@ -295,6 +302,7 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest extends Mes
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -482,6 +490,13 @@ export class InwardJobFreeIssueMaterialReturn extends Message<InwardJobFreeIssue
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 15;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The list of associated inward job free issue material return items
    *
    * @generated from field: repeated Scailo.InwardJobFreeIssueMaterialReturnItem list = 20;
@@ -514,6 +529,7 @@ export class InwardJobFreeIssueMaterialReturn extends Message<InwardJobFreeIssue
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: InwardJobFreeIssueMaterialReturnItem, repeated: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
@@ -1634,6 +1650,13 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceFilterReq extends Message
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 25;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The ID of the family
    *
    * @generated from field: uint64 family_id = 30;
@@ -1691,6 +1714,7 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceFilterReq extends Message
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1841,6 +1865,13 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceCountReq extends Message<
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 25;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The ID of the family
    *
    * @generated from field: uint64 family_id = 30;
@@ -1894,6 +1925,7 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceCountReq extends Message<
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

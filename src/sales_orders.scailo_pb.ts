@@ -3095,3 +3095,119 @@ export class SalesOrderContactsList extends Message<SalesOrderContactsList> {
   }
 }
 
+/**
+ *
+ * Describes the parameters that are part of a sales order's inventory statistics payload
+ *
+ * @generated from message Scailo.SalesOrderInventoryStatistics
+ */
+export class SalesOrderInventoryStatistics extends Message<SalesOrderInventoryStatistics> {
+  /**
+   * Stores the cumulative quantity of the ordered inventory
+   *
+   * @generated from field: uint64 ordered = 1;
+   */
+  ordered = protoInt64.zero;
+
+  /**
+   * Stores the cumulative quantity of the dispatched inventory
+   *
+   * @generated from field: uint64 dispatched = 2;
+   */
+  dispatched = protoInt64.zero;
+
+  /**
+   * Stores the cumulative quantity of the returned inventory
+   *
+   * @generated from field: uint64 returned = 3;
+   */
+  returned = protoInt64.zero;
+
+  constructor(data?: PartialMessage<SalesOrderInventoryStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesOrderInventoryStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "ordered", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "dispatched", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "returned", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderInventoryStatistics {
+    return new SalesOrderInventoryStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderInventoryStatistics {
+    return new SalesOrderInventoryStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderInventoryStatistics {
+    return new SalesOrderInventoryStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesOrderInventoryStatistics | PlainMessage<SalesOrderInventoryStatistics> | undefined, b: SalesOrderInventoryStatistics | PlainMessage<SalesOrderInventoryStatistics> | undefined): boolean {
+    return proto3.util.equals(SalesOrderInventoryStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that are part of a sales order's billing statistics payload
+ *
+ * @generated from message Scailo.SalesOrderBillingStatistics
+ */
+export class SalesOrderBillingStatistics extends Message<SalesOrderBillingStatistics> {
+  /**
+   * Stores the cumulative quantity of the ordered inventory
+   *
+   * @generated from field: uint64 ordered = 1;
+   */
+  ordered = protoInt64.zero;
+
+  /**
+   * Stores the cumulative quantity of the billed inventory
+   *
+   * @generated from field: uint64 billed = 2;
+   */
+  billed = protoInt64.zero;
+
+  /**
+   * Stores the cumulative quantity of the credited inventory
+   *
+   * @generated from field: uint64 credited = 3;
+   */
+  credited = protoInt64.zero;
+
+  constructor(data?: PartialMessage<SalesOrderBillingStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesOrderBillingStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "ordered", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "billed", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "credited", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderBillingStatistics {
+    return new SalesOrderBillingStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderBillingStatistics {
+    return new SalesOrderBillingStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderBillingStatistics {
+    return new SalesOrderBillingStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesOrderBillingStatistics | PlainMessage<SalesOrderBillingStatistics> | undefined, b: SalesOrderBillingStatistics | PlainMessage<SalesOrderBillingStatistics> | undefined): boolean {
+    return proto3.util.equals(SalesOrderBillingStatistics, a, b);
+  }
+}
+

@@ -1,0 +1,466 @@
+[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSampleParameterHistoryRequest
+
+# Class: QCSampleParameterHistoryRequest
+
+Describes the parameters that are required to retrieve the history of the record
+
+**`Generated`**
+
+from message Scailo.QCSampleParameterHistoryRequest
+
+## Hierarchy
+
+- `Message`\<[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)\>
+
+  ↳ **`QCSampleParameterHistoryRequest`**
+
+## Table of contents
+
+### Constructors
+
+- [constructor](QCSampleParameterHistoryRequest.md#constructor)
+
+### Properties
+
+- [qcSampleParameterId](QCSampleParameterHistoryRequest.md#qcsampleparameterid)
+- [fields](QCSampleParameterHistoryRequest.md#fields)
+- [runtime](QCSampleParameterHistoryRequest.md#runtime)
+- [typeName](QCSampleParameterHistoryRequest.md#typename)
+
+### Methods
+
+- [clone](QCSampleParameterHistoryRequest.md#clone)
+- [equals](QCSampleParameterHistoryRequest.md#equals)
+- [fromBinary](QCSampleParameterHistoryRequest.md#frombinary)
+- [fromJson](QCSampleParameterHistoryRequest.md#fromjson)
+- [fromJsonString](QCSampleParameterHistoryRequest.md#fromjsonstring)
+- [getType](QCSampleParameterHistoryRequest.md#gettype)
+- [toBinary](QCSampleParameterHistoryRequest.md#tobinary)
+- [toJSON](QCSampleParameterHistoryRequest.md#tojson)
+- [toJson](QCSampleParameterHistoryRequest.md#tojson-1)
+- [toJsonString](QCSampleParameterHistoryRequest.md#tojsonstring)
+- [equals](QCSampleParameterHistoryRequest.md#equals-1)
+- [fromBinary](QCSampleParameterHistoryRequest.md#frombinary-1)
+- [fromJson](QCSampleParameterHistoryRequest.md#fromjson-1)
+- [fromJsonString](QCSampleParameterHistoryRequest.md#fromjsonstring-1)
+
+## Constructors
+
+### constructor
+
+• **new QCSampleParameterHistoryRequest**(`data?`): [`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data?` | `PartialMessage`\<[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)\> |
+
+#### Returns
+
+[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Overrides
+
+Message\&lt;QCSampleParameterHistoryRequest\&gt;.constructor
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1836
+
+## Properties
+
+### qcSampleParameterId
+
+• **qcSampleParameterId**: `bigint` = `protoInt64.zero`
+
+Stores the qc sample parameter ID
+
+**`Generated`**
+
+from field: uint64 qc_sample_parameter_id = 10;
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1834
+
+___
+
+### fields
+
+▪ `Static` `Readonly` **fields**: `FieldList`
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1843
+
+___
+
+### runtime
+
+▪ `Static` `Readonly` **runtime**: `ProtoRuntime` = `proto3`
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1841
+
+___
+
+### typeName
+
+▪ `Static` `Readonly` **typeName**: ``"Scailo.QCSampleParameterHistoryRequest"``
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1842
+
+## Methods
+
+### clone
+
+▸ **clone**(): [`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+Create a deep copy.
+
+#### Returns
+
+[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Inherited from
+
+Message.clone
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:28
+
+___
+
+### equals
+
+▸ **equals**(`other`): `boolean`
+
+Compare with a message of the same type.
+Note that this function disregards extensions and unknown fields.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `other` | `undefined` \| ``null`` \| [`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md) \| `PlainMessage`\<[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)\> |
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+Message.equals
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:24
+
+___
+
+### fromBinary
+
+▸ **fromBinary**(`bytes`, `options?`): `this`
+
+Parse from binary data, merging fields.
+
+Repeated fields are appended. Map entries are added, overwriting
+existing keys.
+
+If a message field is already present, it will be merged with the
+new data.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bytes` | `Uint8Array` |
+| `options?` | `Partial`\<`BinaryReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromBinary
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:38
+
+___
+
+### fromJson
+
+▸ **fromJson**(`jsonValue`, `options?`): `this`
+
+Parse a message from a JSON value.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonValue` | `JsonValue` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromJson
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:42
+
+___
+
+### fromJsonString
+
+▸ **fromJsonString**(`jsonString`, `options?`): `this`
+
+Parse a message from a JSON string.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonString` | `string` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromJsonString
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:46
+
+___
+
+### getType
+
+▸ **getType**(): `MessageType`\<[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)\>
+
+Retrieve the MessageType of this message - a singleton that represents
+the protobuf message declaration and provides metadata for reflection-
+based operations.
+
+#### Returns
+
+`MessageType`\<[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)\>
+
+#### Inherited from
+
+Message.getType
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:81
+
+___
+
+### toBinary
+
+▸ **toBinary**(`options?`): `Uint8Array`
+
+Serialize the message to binary data.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`BinaryWriteOptions`\> |
+
+#### Returns
+
+`Uint8Array`
+
+#### Inherited from
+
+Message.toBinary
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:50
+
+___
+
+### toJSON
+
+▸ **toJSON**(): `JsonValue`
+
+Override for serialization behavior. This will be invoked when calling
+JSON.stringify on this message (i.e. JSON.stringify(msg)).
+
+Note that this will not serialize google.protobuf.Any with a packed
+message because the protobuf JSON format specifies that it needs to be
+unpacked, and this is only possible with a type registry to look up the
+message type.  As a result, attempting to serialize a message with this
+type will throw an Error.
+
+This method is protected because you should not need to invoke it
+directly -- instead use JSON.stringify or toJsonString for
+stringified JSON.  Alternatively, if actual JSON is desired, you should
+use toJson.
+
+#### Returns
+
+`JsonValue`
+
+#### Inherited from
+
+Message.toJSON
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:75
+
+___
+
+### toJson
+
+▸ **toJson**(`options?`): `JsonValue`
+
+Serialize the message to a JSON value, a JavaScript value that can be
+passed to JSON.stringify().
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`JsonWriteOptions`\> |
+
+#### Returns
+
+`JsonValue`
+
+#### Inherited from
+
+Message.toJson
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:55
+
+___
+
+### toJsonString
+
+▸ **toJsonString**(`options?`): `string`
+
+Serialize the message to a JSON string.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`JsonWriteStringOptions`\> |
+
+#### Returns
+
+`string`
+
+#### Inherited from
+
+Message.toJsonString
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:59
+
+___
+
+### equals
+
+▸ **equals**(`a`, `b`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `a` | `undefined` \| [`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md) \| `PlainMessage`\<[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)\> |
+| `b` | `undefined` \| [`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md) \| `PlainMessage`\<[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)\> |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1859
+
+___
+
+### fromBinary
+
+▸ **fromBinary**(`bytes`, `options?`): [`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bytes` | `Uint8Array` |
+| `options?` | `Partial`\<`BinaryReadOptions`\> |
+
+#### Returns
+
+[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1847
+
+___
+
+### fromJson
+
+▸ **fromJson**(`jsonValue`, `options?`): [`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonValue` | `JsonValue` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1851
+
+___
+
+### fromJsonString
+
+▸ **fromJsonString**(`jsonString`, `options?`): [`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonString` | `string` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+[`QCSampleParameterHistoryRequest`](QCSampleParameterHistoryRequest.md)
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1855

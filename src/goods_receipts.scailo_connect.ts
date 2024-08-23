@@ -382,6 +382,17 @@ export const GoodsReceiptsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.GoodsReceiptsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: GoodsReceipt,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.GoodsReceiptsService.ViewAll
@@ -434,6 +445,18 @@ export const GoodsReceiptsService = {
       name: "ViewProspectiveGoodsReceiptItem",
       I: GoodsReceiptItemProspectiveInfoRequest,
       O: GoodsReceiptsServiceItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Other view operations
+     * Download goods receipt with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.GoodsReceiptsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

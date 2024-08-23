@@ -357,3 +357,135 @@ export class UserLoginHistoryList extends Message<UserLoginHistoryList> {
   }
 }
 
+/**
+ *
+ * Describes the response to a vendor user login request
+ *
+ * @generated from message Scailo.VendorUserLoginResponse
+ */
+export class VendorUserLoginResponse extends Message<VendorUserLoginResponse> {
+  /**
+   * Username of the user that just logged in
+   *
+   * @generated from field: string username = 1;
+   */
+  username = "";
+
+  /**
+   * The token that needs to be used as part of every request
+   *
+   * @generated from field: string auth_token = 2;
+   */
+  authToken = "";
+
+  /**
+   * The unix timestamp after which the auth_token is invalid
+   *
+   * @generated from field: uint64 expires_at = 3;
+   */
+  expiresAt = protoInt64.zero;
+
+  /**
+   * The ID of the vendor
+   *
+   * @generated from field: uint64 vendor_id = 10;
+   */
+  vendorId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<VendorUserLoginResponse>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorUserLoginResponse";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorUserLoginResponse {
+    return new VendorUserLoginResponse().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorUserLoginResponse {
+    return new VendorUserLoginResponse().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorUserLoginResponse {
+    return new VendorUserLoginResponse().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorUserLoginResponse | PlainMessage<VendorUserLoginResponse> | undefined, b: VendorUserLoginResponse | PlainMessage<VendorUserLoginResponse> | undefined): boolean {
+    return proto3.util.equals(VendorUserLoginResponse, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the response to a client user login request
+ *
+ * @generated from message Scailo.ClientUserLoginResponse
+ */
+export class ClientUserLoginResponse extends Message<ClientUserLoginResponse> {
+  /**
+   * Username of the user that just logged in
+   *
+   * @generated from field: string username = 1;
+   */
+  username = "";
+
+  /**
+   * The token that needs to be used as part of every request
+   *
+   * @generated from field: string auth_token = 2;
+   */
+  authToken = "";
+
+  /**
+   * The unix timestamp after which the auth_token is invalid
+   *
+   * @generated from field: uint64 expires_at = 3;
+   */
+  expiresAt = protoInt64.zero;
+
+  /**
+   * The ID of the client
+   *
+   * @generated from field: uint64 client_id = 10;
+   */
+  clientId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<ClientUserLoginResponse>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ClientUserLoginResponse";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientUserLoginResponse {
+    return new ClientUserLoginResponse().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientUserLoginResponse {
+    return new ClientUserLoginResponse().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientUserLoginResponse {
+    return new ClientUserLoginResponse().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ClientUserLoginResponse | PlainMessage<ClientUserLoginResponse> | undefined, b: ClientUserLoginResponse | PlainMessage<ClientUserLoginResponse> | undefined): boolean {
+    return proto3.util.equals(ClientUserLoginResponse, a, b);
+  }
+}
+

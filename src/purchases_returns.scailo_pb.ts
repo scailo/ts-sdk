@@ -302,6 +302,13 @@ export class PurchasesReturnsServiceCreateRequest extends Message<PurchasesRetur
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 15;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The list of dynamic forms
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
@@ -322,6 +329,7 @@ export class PurchasesReturnsServiceCreateRequest extends Message<PurchasesRetur
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -509,6 +517,13 @@ export class PurchaseReturn extends Message<PurchaseReturn> {
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 15;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The list of associated purchase return items
    *
    * @generated from field: repeated Scailo.PurchaseReturnItem list = 20;
@@ -541,6 +556,7 @@ export class PurchaseReturn extends Message<PurchaseReturn> {
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: PurchaseReturnItem, repeated: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
@@ -1629,6 +1645,13 @@ export class PurchasesReturnsServiceFilterReq extends Message<PurchasesReturnsSe
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 25;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The status of the purchase return bill
    *
    * @generated from field: Scailo.PURCHASE_RETURN_BILLING_STATUS billing_status = 40;
@@ -1685,6 +1708,7 @@ export class PurchasesReturnsServiceFilterReq extends Message<PurchasesReturnsSe
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_BILLING_STATUS) },
     { no: 50, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1835,6 +1859,13 @@ export class PurchasesReturnsServiceCountReq extends Message<PurchasesReturnsSer
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 25;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The status of the purchase return bill
    *
    * @generated from field: Scailo.PURCHASE_RETURN_BILLING_STATUS billing_status = 40;
@@ -1887,6 +1918,7 @@ export class PurchasesReturnsServiceCountReq extends Message<PurchasesReturnsSer
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_BILLING_STATUS) },
     { no: 50, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

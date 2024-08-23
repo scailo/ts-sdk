@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { OutwardJobFreeIssueMaterial, OutwardJobFreeIssueMaterialItem, OutwardJobFreeIssueMaterialItemHistoryRequest, OutwardJobFreeIssueMaterialItemProspectiveInfoRequest, OutwardJobFreeIssueMaterialItemsSearchRequest, OutwardJobsFreeIssueMaterialsItemsList, OutwardJobsFreeIssueMaterialsList, OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest, OutwardJobsFreeIssueMaterialsServiceAutofillRequest, OutwardJobsFreeIssueMaterialsServiceCountReq, OutwardJobsFreeIssueMaterialsServiceCreateRequest, OutwardJobsFreeIssueMaterialsServiceFilterReq, OutwardJobsFreeIssueMaterialsServiceItemCreateRequest, OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest, OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse, OutwardJobsFreeIssueMaterialsServicePaginationReq, OutwardJobsFreeIssueMaterialsServicePaginationResponse, OutwardJobsFreeIssueMaterialsServiceSearchAllReq, OutwardJobsFreeIssueMaterialsServiceUpdateRequest } from "./outward_jobs_free_issue_materials.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -370,6 +370,17 @@ export const OutwardJobsFreeIssueMaterialsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: OutwardJobFreeIssueMaterial,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsService.ViewAll
@@ -422,6 +433,18 @@ export const OutwardJobsFreeIssueMaterialsService = {
       name: "ViewProspectiveOutwardJobFreeIssueMaterialItem",
       I: OutwardJobFreeIssueMaterialItemProspectiveInfoRequest,
       O: OutwardJobsFreeIssueMaterialsServiceItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Other view operations
+     * Download outward job free issue material with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

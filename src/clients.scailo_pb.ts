@@ -1053,3 +1053,209 @@ export class ClientsServiceSearchAllReq extends Message<ClientsServiceSearchAllR
   }
 }
 
+/**
+ *
+ * Describes the parameters necessary to create a client user
+ *
+ * @generated from message Scailo.ClientsServiceUserCreateRequest
+ */
+export class ClientsServiceUserCreateRequest extends Message<ClientsServiceUserCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the client ID
+   *
+   * @generated from field: uint64 client_id = 10;
+   */
+  clientId = protoInt64.zero;
+
+  /**
+   * Stores the user ID
+   *
+   * @generated from field: uint64 user_id = 11;
+   */
+  userId = protoInt64.zero;
+
+  /**
+   * Stores an optional associate ID
+   *
+   * @generated from field: uint64 associate_id = 12;
+   */
+  associateId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<ClientsServiceUserCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ClientsServiceUserCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientsServiceUserCreateRequest {
+    return new ClientsServiceUserCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServiceUserCreateRequest {
+    return new ClientsServiceUserCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServiceUserCreateRequest {
+    return new ClientsServiceUserCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ClientsServiceUserCreateRequest | PlainMessage<ClientsServiceUserCreateRequest> | undefined, b: ClientsServiceUserCreateRequest | PlainMessage<ClientsServiceUserCreateRequest> | undefined): boolean {
+    return proto3.util.equals(ClientsServiceUserCreateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that constitute a client user
+ *
+ * @generated from message Scailo.ClientUser
+ */
+export class ClientUser extends Message<ClientUser> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the metadata of this client
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   * Stores the approval metadata
+   *
+   * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+   */
+  approvalMetadata?: ApprovalMetadata;
+
+  /**
+   * Denotes if this record requires approval (or has been approved)
+   *
+   * @generated from field: bool need_approval = 4;
+   */
+  needApproval = false;
+
+  /**
+   * Stores any comment that the user might have added during an operation
+   *
+   * @generated from field: string user_comment = 5;
+   */
+  userComment = "";
+
+  /**
+   * Stores the client ID
+   *
+   * @generated from field: uint64 client_id = 10;
+   */
+  clientId = protoInt64.zero;
+
+  /**
+   * Stores the user ID
+   *
+   * @generated from field: uint64 user_id = 11;
+   */
+  userId = protoInt64.zero;
+
+  /**
+   * Stores an optional associate ID
+   *
+   * @generated from field: uint64 associate_id = 12;
+   */
+  associateId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<ClientUser>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ClientUser";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientUser {
+    return new ClientUser().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientUser {
+    return new ClientUser().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientUser {
+    return new ClientUser().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ClientUser | PlainMessage<ClientUser> | undefined, b: ClientUser | PlainMessage<ClientUser> | undefined): boolean {
+    return proto3.util.equals(ClientUser, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the list of client users
+ *
+ * @generated from message Scailo.ClientUsersList
+ */
+export class ClientUsersList extends Message<ClientUsersList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.ClientUser list = 1;
+   */
+  list: ClientUser[] = [];
+
+  constructor(data?: PartialMessage<ClientUsersList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ClientUsersList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: ClientUser, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientUsersList {
+    return new ClientUsersList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientUsersList {
+    return new ClientUsersList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientUsersList {
+    return new ClientUsersList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ClientUsersList | PlainMessage<ClientUsersList> | undefined, b: ClientUsersList | PlainMessage<ClientUsersList> | undefined): boolean {
+    return proto3.util.equals(ClientUsersList, a, b);
+  }
+}
+

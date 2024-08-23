@@ -302,6 +302,13 @@ export class SalesReturnsServiceCreateRequest extends Message<SalesReturnsServic
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 15;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The list of dynamic forms
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
@@ -322,6 +329,7 @@ export class SalesReturnsServiceCreateRequest extends Message<SalesReturnsServic
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -509,6 +517,13 @@ export class SalesReturn extends Message<SalesReturn> {
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 15;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The list of associated sales return items
    *
    * @generated from field: repeated Scailo.SalesReturnItem list = 20;
@@ -541,6 +556,7 @@ export class SalesReturn extends Message<SalesReturn> {
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: SalesReturnItem, repeated: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
@@ -1629,6 +1645,13 @@ export class SalesReturnsServiceFilterReq extends Message<SalesReturnsServiceFil
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 25;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The status of the sales return bill
    *
    * @generated from field: Scailo.SALES_RETURN_BILLING_STATUS billing_status = 40;
@@ -1693,6 +1716,7 @@ export class SalesReturnsServiceFilterReq extends Message<SalesReturnsServiceFil
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(SALES_RETURN_BILLING_STATUS) },
     { no: 50, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1844,6 +1868,13 @@ export class SalesReturnsServiceCountReq extends Message<SalesReturnsServiceCoun
   refId = protoInt64.zero;
 
   /**
+   * The location ID of where the record is created
+   *
+   * @generated from field: uint64 location_id = 25;
+   */
+  locationId = protoInt64.zero;
+
+  /**
    * The status of the sales return bill
    *
    * @generated from field: Scailo.SALES_RETURN_BILLING_STATUS billing_status = 40;
@@ -1904,6 +1935,7 @@ export class SalesReturnsServiceCountReq extends Message<SalesReturnsServiceCoun
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(SALES_RETURN_BILLING_STATUS) },
     { no: 50, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

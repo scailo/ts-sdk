@@ -10,6 +10,49 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Describes the available user types
+ *
+ * @generated from enum Scailo.USER_TYPE
+ */
+export enum USER_TYPE {
+  /**
+   * Useful for filter and count operation when this field needs to be ignored
+   *
+   * @generated from enum value: USER_TYPE_ANY_UNSPECIFIED = 0;
+   */
+  USER_TYPE_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the user is an employee
+   *
+   * @generated from enum value: USER_TYPE_EMPLOYEE = 1;
+   */
+  USER_TYPE_EMPLOYEE = 1,
+
+  /**
+   * Denotes that the user is a client
+   *
+   * @generated from enum value: USER_TYPE_CLIENT = 2;
+   */
+  USER_TYPE_CLIENT = 2,
+
+  /**
+   * Denotes that the user is a vendor
+   *
+   * @generated from enum value: USER_TYPE_VENDOR = 3;
+   */
+  USER_TYPE_VENDOR = 3,
+}
+// Retrieve enum metadata with: proto3.getEnumType(USER_TYPE)
+proto3.util.setEnumType(USER_TYPE, "Scailo.USER_TYPE", [
+  { no: 0, name: "USER_TYPE_ANY_UNSPECIFIED" },
+  { no: 1, name: "USER_TYPE_EMPLOYEE" },
+  { no: 2, name: "USER_TYPE_CLIENT" },
+  { no: 3, name: "USER_TYPE_VENDOR" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.USER_SORT_KEY
@@ -127,6 +170,13 @@ export class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest
    * @generated from field: string user_comment = 2;
    */
   userComment = "";
+
+  /**
+   * Stores the user type
+   *
+   * @generated from field: Scailo.USER_TYPE user_type = 7;
+   */
+  userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The associated vault folder ID
@@ -327,6 +377,7 @@ export class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 7, name: "user_type", kind: "enum", T: proto3.getEnumType(USER_TYPE) },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -674,6 +725,13 @@ export class User extends Message<User> {
   logs: LogbookLogConciseSLC[] = [];
 
   /**
+   * Stores the user type
+   *
+   * @generated from field: Scailo.USER_TYPE user_type = 7;
+   */
+  userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
+
+  /**
    * The associated vault folder ID
    *
    * @generated from field: uint64 vault_folder_id = 9;
@@ -875,6 +933,7 @@ export class User extends Message<User> {
     { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
     { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 7, name: "user_type", kind: "enum", T: proto3.getEnumType(USER_TYPE) },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -928,6 +987,13 @@ export class User extends Message<User> {
  * @generated from message Scailo.UserPrimaryInfo
  */
 export class UserPrimaryInfo extends Message<UserPrimaryInfo> {
+  /**
+   * Stores the user type
+   *
+   * @generated from field: Scailo.USER_TYPE user_type = 7;
+   */
+  userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
+
   /**
    * The username of the user
    *
@@ -992,6 +1058,7 @@ export class UserPrimaryInfo extends Message<UserPrimaryInfo> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.UserPrimaryInfo";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 7, name: "user_type", kind: "enum", T: proto3.getEnumType(USER_TYPE) },
     { no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "password", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
@@ -1280,6 +1347,13 @@ export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
   modificationTimestampEnd = protoInt64.zero;
 
   /**
+   * Stores the user type
+   *
+   * @generated from field: Scailo.USER_TYPE user_type = 7;
+   */
+  userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
+
+  /**
    * The entity UUID that is to be used to filter records
    *
    * @generated from field: string entity_uuid = 8;
@@ -1436,6 +1510,7 @@ export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
     { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 7, name: "user_type", kind: "enum", T: proto3.getEnumType(USER_TYPE) },
     { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1516,6 +1591,13 @@ export class UsersServiceCountReq extends Message<UsersServiceCountReq> {
    * @generated from field: uint64 modification_timestamp_end = 104;
    */
   modificationTimestampEnd = protoInt64.zero;
+
+  /**
+   * Stores the user type
+   *
+   * @generated from field: Scailo.USER_TYPE user_type = 7;
+   */
+  userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The entity UUID that is to be used to filter records
@@ -1670,6 +1752,7 @@ export class UsersServiceCountReq extends Message<UsersServiceCountReq> {
     { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 7, name: "user_type", kind: "enum", T: proto3.getEnumType(USER_TYPE) },
     { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1759,6 +1842,13 @@ export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> 
   entityUuid = "";
 
   /**
+   * Stores the user type
+   *
+   * @generated from field: Scailo.USER_TYPE user_type = 7;
+   */
+  userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
+
+  /**
    * Limit the search space to the given status
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
@@ -1786,6 +1876,7 @@ export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> 
     { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
     { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) },
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 7, name: "user_type", kind: "enum", T: proto3.getEnumType(USER_TYPE) },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);

@@ -425,6 +425,17 @@ export const SalesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.SalesEnquiriesService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: SalesEnquiry,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.SalesEnquiriesService.ViewAll
@@ -477,6 +488,17 @@ export const SalesEnquiriesService = {
       name: "ViewAssociatedSalesOrdersIDs",
       I: Identifier,
       O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download sales enquiry with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.SalesEnquiriesService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

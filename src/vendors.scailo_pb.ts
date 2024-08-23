@@ -1897,3 +1897,209 @@ export class VendorsServicePaginatedItemsResponse extends Message<VendorsService
   }
 }
 
+/**
+ *
+ * Describes the parameters necessary to create a vendor user
+ *
+ * @generated from message Scailo.VendorsServiceUserCreateRequest
+ */
+export class VendorsServiceUserCreateRequest extends Message<VendorsServiceUserCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the vendor ID
+   *
+   * @generated from field: uint64 vendor_id = 10;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   * Stores the user ID
+   *
+   * @generated from field: uint64 user_id = 11;
+   */
+  userId = protoInt64.zero;
+
+  /**
+   * Stores an optional associate ID
+   *
+   * @generated from field: uint64 associate_id = 12;
+   */
+  associateId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<VendorsServiceUserCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorsServiceUserCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorsServiceUserCreateRequest {
+    return new VendorsServiceUserCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorsServiceUserCreateRequest {
+    return new VendorsServiceUserCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorsServiceUserCreateRequest {
+    return new VendorsServiceUserCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorsServiceUserCreateRequest | PlainMessage<VendorsServiceUserCreateRequest> | undefined, b: VendorsServiceUserCreateRequest | PlainMessage<VendorsServiceUserCreateRequest> | undefined): boolean {
+    return proto3.util.equals(VendorsServiceUserCreateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that constitute a vendor user
+ *
+ * @generated from message Scailo.VendorUser
+ */
+export class VendorUser extends Message<VendorUser> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the metadata of this vendor
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   * Stores the approval metadata
+   *
+   * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+   */
+  approvalMetadata?: ApprovalMetadata;
+
+  /**
+   * Denotes if this record requires approval (or has been approved)
+   *
+   * @generated from field: bool need_approval = 4;
+   */
+  needApproval = false;
+
+  /**
+   * Stores any comment that the user might have added during an operation
+   *
+   * @generated from field: string user_comment = 5;
+   */
+  userComment = "";
+
+  /**
+   * Stores the vendor ID
+   *
+   * @generated from field: uint64 vendor_id = 10;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   * Stores the user ID
+   *
+   * @generated from field: uint64 user_id = 11;
+   */
+  userId = protoInt64.zero;
+
+  /**
+   * Stores an optional associate ID
+   *
+   * @generated from field: uint64 associate_id = 12;
+   */
+  associateId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<VendorUser>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorUser";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorUser {
+    return new VendorUser().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorUser {
+    return new VendorUser().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorUser {
+    return new VendorUser().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorUser | PlainMessage<VendorUser> | undefined, b: VendorUser | PlainMessage<VendorUser> | undefined): boolean {
+    return proto3.util.equals(VendorUser, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the list of vendor users
+ *
+ * @generated from message Scailo.VendorUsersList
+ */
+export class VendorUsersList extends Message<VendorUsersList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.VendorUser list = 1;
+   */
+  list: VendorUser[] = [];
+
+  constructor(data?: PartialMessage<VendorUsersList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorUsersList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: VendorUser, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorUsersList {
+    return new VendorUsersList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorUsersList {
+    return new VendorUsersList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorUsersList {
+    return new VendorUsersList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorUsersList | PlainMessage<VendorUsersList> | undefined, b: VendorUsersList | PlainMessage<VendorUsersList> | undefined): boolean {
+    return proto3.util.equals(VendorUsersList, a, b);
+  }
+}
+
