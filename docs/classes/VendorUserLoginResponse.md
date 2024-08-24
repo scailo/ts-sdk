@@ -25,6 +25,7 @@ from message Scailo.VendorUserLoginResponse
 - [authToken](VendorUserLoginResponse.md#authtoken)
 - [expiresAt](VendorUserLoginResponse.md#expiresat)
 - [username](VendorUserLoginResponse.md#username)
+- [vendorId](VendorUserLoginResponse.md#vendorid)
 - [vendorUuid](VendorUserLoginResponse.md#vendoruuid)
 - [fields](VendorUserLoginResponse.md#fields)
 - [runtime](VendorUserLoginResponse.md#runtime)
@@ -69,7 +70,7 @@ Message\&lt;VendorUserLoginResponse\&gt;.constructor
 
 #### Defined in
 
-src/logins.scailo_pb.ts:395
+src/logins.scailo_pb.ts:402
 
 ## Properties
 
@@ -121,6 +122,22 @@ src/logins.scailo_pb.ts:372
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+The ID of the vendor
+
+**`Generated`**
+
+from field: uint64 vendor_id = 10;
+
+#### Defined in
+
+src/logins.scailo_pb.ts:393
+
+___
+
 ### vendorUuid
 
 • **vendorUuid**: `string` = `""`
@@ -129,11 +146,11 @@ The UUID of the vendor
 
 **`Generated`**
 
-from field: string vendor_uuid = 10;
+from field: string vendor_uuid = 11;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:393
+src/logins.scailo_pb.ts:400
 
 ___
 
@@ -143,7 +160,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:402
+src/logins.scailo_pb.ts:409
 
 ___
 
@@ -153,7 +170,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:400
+src/logins.scailo_pb.ts:407
 
 ___
 
@@ -163,7 +180,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:401
+src/logins.scailo_pb.ts:408
 
 ## Methods
 
@@ -451,7 +468,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:421
+src/logins.scailo_pb.ts:429
 
 ___
 
@@ -472,7 +489,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:409
+src/logins.scailo_pb.ts:417
 
 ___
 
@@ -493,7 +510,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:413
+src/logins.scailo_pb.ts:421
 
 ___
 
@@ -514,4 +531,4 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:417
+src/logins.scailo_pb.ts:425

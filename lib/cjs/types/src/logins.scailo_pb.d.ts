@@ -223,9 +223,15 @@ export declare class VendorUserLoginResponse extends Message<VendorUserLoginResp
      */
     expiresAt: bigint;
     /**
+     * The ID of the vendor
+     *
+     * @generated from field: uint64 vendor_id = 10;
+     */
+    vendorId: bigint;
+    /**
      * The UUID of the vendor
      *
-     * @generated from field: string vendor_uuid = 10;
+     * @generated from field: string vendor_uuid = 11;
      */
     vendorUuid: string;
     constructor(data?: PartialMessage<VendorUserLoginResponse>);
@@ -263,9 +269,15 @@ export declare class ClientUserLoginResponse extends Message<ClientUserLoginResp
      */
     expiresAt: bigint;
     /**
+     * The ID of the client
+     *
+     * @generated from field: uint64 client_id = 10;
+     */
+    clientId: bigint;
+    /**
      * The UUID of the client
      *
-     * @generated from field: string client_uuid = 10;
+     * @generated from field: string client_uuid = 11;
      */
     clientUuid: string;
     constructor(data?: PartialMessage<ClientUserLoginResponse>);
