@@ -37,10 +37,9 @@ from message Scailo.QuotationsResponsesServiceCountReq
 - [modificationTimestampEnd](QuotationsResponsesServiceCountReq.md#modificationtimestampend)
 - [modificationTimestampStart](QuotationsResponsesServiceCountReq.md#modificationtimestampstart)
 - [quotationRequestId](QuotationsResponsesServiceCountReq.md#quotationrequestid)
-- [refFrom](QuotationsResponsesServiceCountReq.md#reffrom)
-- [refId](QuotationsResponsesServiceCountReq.md#refid)
 - [referenceId](QuotationsResponsesServiceCountReq.md#referenceid)
 - [status](QuotationsResponsesServiceCountReq.md#status)
+- [vendorId](QuotationsResponsesServiceCountReq.md#vendorid)
 - [fields](QuotationsResponsesServiceCountReq.md#fields)
 - [runtime](QuotationsResponsesServiceCountReq.md#runtime)
 - [typeName](QuotationsResponsesServiceCountReq.md#typename)
@@ -84,7 +83,7 @@ Message\&lt;QuotationsResponsesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1940
+src/quotations_responses.scailo_pb.ts:1925
 
 ## Properties
 
@@ -100,7 +99,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1875
+src/quotations_responses.scailo_pb.ts:1867
 
 ___
 
@@ -116,7 +115,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1868
+src/quotations_responses.scailo_pb.ts:1860
 
 ___
 
@@ -132,7 +131,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1861
+src/quotations_responses.scailo_pb.ts:1853
 
 ___
 
@@ -148,7 +147,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1882
+src/quotations_responses.scailo_pb.ts:1874
 
 ___
 
@@ -164,7 +163,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1896
+src/quotations_responses.scailo_pb.ts:1888
 
 ___
 
@@ -180,7 +179,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1889
+src/quotations_responses.scailo_pb.ts:1881
 
 ___
 
@@ -196,7 +195,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1826
+src/quotations_responses.scailo_pb.ts:1818
 
 ___
 
@@ -212,7 +211,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1819
+src/quotations_responses.scailo_pb.ts:1811
 
 ___
 
@@ -228,7 +227,7 @@ from field: uint64 currency_id = 25;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1938
+src/quotations_responses.scailo_pb.ts:1916
 
 ___
 
@@ -244,7 +243,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1847
+src/quotations_responses.scailo_pb.ts:1839
 
 ___
 
@@ -260,7 +259,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1910
+src/quotations_responses.scailo_pb.ts:1902
 
 ___
 
@@ -276,7 +275,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1812
+src/quotations_responses.scailo_pb.ts:1804
 
 ___
 
@@ -292,7 +291,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1840
+src/quotations_responses.scailo_pb.ts:1832
 
 ___
 
@@ -308,7 +307,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1833
+src/quotations_responses.scailo_pb.ts:1825
 
 ___
 
@@ -324,39 +323,7 @@ from field: uint64 quotation_request_id = 22;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1917
-
-___
-
-### refFrom
-
-• **refFrom**: `string` = `""`
-
-The associated party type
-
-**`Generated`**
-
-from field: string ref_from = 23;
-
-#### Defined in
-
-src/quotations_responses.scailo_pb.ts:1924
-
-___
-
-### refId
-
-• **refId**: `bigint` = `protoInt64.zero`
-
-The associated party ID
-
-**`Generated`**
-
-from field: uint64 ref_id = 24;
-
-#### Defined in
-
-src/quotations_responses.scailo_pb.ts:1931
+src/quotations_responses.scailo_pb.ts:1909
 
 ___
 
@@ -372,7 +339,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1903
+src/quotations_responses.scailo_pb.ts:1895
 
 ___
 
@@ -388,7 +355,23 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1854
+src/quotations_responses.scailo_pb.ts:1846
+
+___
+
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+The associated vendor ID
+
+**`Generated`**
+
+from field: uint64 vendor_id = 40;
+
+#### Defined in
+
+src/quotations_responses.scailo_pb.ts:1923
 
 ___
 
@@ -398,7 +381,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1947
+src/quotations_responses.scailo_pb.ts:1932
 
 ___
 
@@ -408,7 +391,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1945
+src/quotations_responses.scailo_pb.ts:1930
 
 ___
 
@@ -418,7 +401,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1946
+src/quotations_responses.scailo_pb.ts:1931
 
 ## Methods
 
@@ -706,7 +689,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1981
+src/quotations_responses.scailo_pb.ts:1965
 
 ___
 
@@ -727,7 +710,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1969
+src/quotations_responses.scailo_pb.ts:1953
 
 ___
 
@@ -748,7 +731,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1973
+src/quotations_responses.scailo_pb.ts:1957
 
 ___
 
@@ -769,4 +752,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1977
+src/quotations_responses.scailo_pb.ts:1961

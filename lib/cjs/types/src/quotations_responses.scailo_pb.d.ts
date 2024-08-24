@@ -1184,23 +1184,17 @@ export declare class QuotationsResponsesServiceFilterReq extends Message<Quotati
      */
     quotationRequestId: bigint;
     /**
-     * The associated party type
-     *
-     * @generated from field: string ref_from = 23;
-     */
-    refFrom: string;
-    /**
-     * The associated party ID
-     *
-     * @generated from field: uint64 ref_id = 24;
-     */
-    refId: bigint;
-    /**
      * The associated currency
      *
      * @generated from field: uint64 currency_id = 25;
      */
     currencyId: bigint;
+    /**
+     * The associated vendor ID
+     *
+     * @generated from field: uint64 vendor_id = 40;
+     */
+    vendorId: bigint;
     constructor(data?: PartialMessage<QuotationsResponsesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.QuotationsResponsesServiceFilterReq";
@@ -1314,23 +1308,17 @@ export declare class QuotationsResponsesServiceCountReq extends Message<Quotatio
      */
     quotationRequestId: bigint;
     /**
-     * The associated party type
-     *
-     * @generated from field: string ref_from = 23;
-     */
-    refFrom: string;
-    /**
-     * The associated party ID
-     *
-     * @generated from field: uint64 ref_id = 24;
-     */
-    refId: bigint;
-    /**
      * The associated currency
      *
      * @generated from field: uint64 currency_id = 25;
      */
     currencyId: bigint;
+    /**
+     * The associated vendor ID
+     *
+     * @generated from field: uint64 vendor_id = 40;
+     */
+    vendorId: bigint;
     constructor(data?: PartialMessage<QuotationsResponsesServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.QuotationsResponsesServiceCountReq";

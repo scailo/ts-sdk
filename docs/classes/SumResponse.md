@@ -1,122 +1,88 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / UpdateOwnPasswordReq
+[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SumResponse
 
-# Class: UpdateOwnPasswordReq
+# Class: SumResponse
 
-Describes the payload that is requred to update the user's own password
+Describes the sum reponse
 
 **`Generated`**
 
-from message Scailo.UpdateOwnPasswordReq
+from message Scailo.SumResponse
 
 ## Hierarchy
 
-- `Message`\<[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)\>
+- `Message`\<[`SumResponse`](SumResponse.md)\>
 
-  ↳ **`UpdateOwnPasswordReq`**
+  ↳ **`SumResponse`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](UpdateOwnPasswordReq.md#constructor)
+- [constructor](SumResponse.md#constructor)
 
 ### Properties
 
-- [oldPlainTextPassword](UpdateOwnPasswordReq.md#oldplaintextpassword)
-- [plainTextPassword](UpdateOwnPasswordReq.md#plaintextpassword)
-- [userComment](UpdateOwnPasswordReq.md#usercomment)
-- [fields](UpdateOwnPasswordReq.md#fields)
-- [runtime](UpdateOwnPasswordReq.md#runtime)
-- [typeName](UpdateOwnPasswordReq.md#typename)
+- [sum](SumResponse.md#sum)
+- [fields](SumResponse.md#fields)
+- [runtime](SumResponse.md#runtime)
+- [typeName](SumResponse.md#typename)
 
 ### Methods
 
-- [clone](UpdateOwnPasswordReq.md#clone)
-- [equals](UpdateOwnPasswordReq.md#equals)
-- [fromBinary](UpdateOwnPasswordReq.md#frombinary)
-- [fromJson](UpdateOwnPasswordReq.md#fromjson)
-- [fromJsonString](UpdateOwnPasswordReq.md#fromjsonstring)
-- [getType](UpdateOwnPasswordReq.md#gettype)
-- [toBinary](UpdateOwnPasswordReq.md#tobinary)
-- [toJSON](UpdateOwnPasswordReq.md#tojson)
-- [toJson](UpdateOwnPasswordReq.md#tojson-1)
-- [toJsonString](UpdateOwnPasswordReq.md#tojsonstring)
-- [equals](UpdateOwnPasswordReq.md#equals-1)
-- [fromBinary](UpdateOwnPasswordReq.md#frombinary-1)
-- [fromJson](UpdateOwnPasswordReq.md#fromjson-1)
-- [fromJsonString](UpdateOwnPasswordReq.md#fromjsonstring-1)
+- [clone](SumResponse.md#clone)
+- [equals](SumResponse.md#equals)
+- [fromBinary](SumResponse.md#frombinary)
+- [fromJson](SumResponse.md#fromjson)
+- [fromJsonString](SumResponse.md#fromjsonstring)
+- [getType](SumResponse.md#gettype)
+- [toBinary](SumResponse.md#tobinary)
+- [toJSON](SumResponse.md#tojson)
+- [toJson](SumResponse.md#tojson-1)
+- [toJsonString](SumResponse.md#tojsonstring)
+- [equals](SumResponse.md#equals-1)
+- [fromBinary](SumResponse.md#frombinary-1)
+- [fromJson](SumResponse.md#fromjson-1)
+- [fromJsonString](SumResponse.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new UpdateOwnPasswordReq**(`data?`): [`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+• **new SumResponse**(`data?`): [`SumResponse`](SumResponse.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)\> |
+| `data?` | `PartialMessage`\<[`SumResponse`](SumResponse.md)\> |
 
 #### Returns
 
-[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+[`SumResponse`](SumResponse.md)
 
 #### Overrides
 
-Message\&lt;UpdateOwnPasswordReq\&gt;.constructor
+Message\&lt;SumResponse\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2034
+src/base.scailo_pb.ts:1646
 
 ## Properties
 
-### oldPlainTextPassword
+### sum
 
-• **oldPlainTextPassword**: `string` = `""`
+• **sum**: `number` = `0`
 
-The old login password
-
-**`Generated`**
-
-from field: string old_plain_text_password = 3;
-
-#### Defined in
-
-src/base.scailo_pb.ts:2025
-
-___
-
-### plainTextPassword
-
-• **plainTextPassword**: `string` = `""`
-
-The new password
+The sum of all the records
 
 **`Generated`**
 
-from field: string plain_text_password = 4;
+from field: double sum = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2032
-
-___
-
-### userComment
-
-• **userComment**: `string` = `""`
-
-Stores any comment that the user might add during this operation
-
-**`Generated`**
-
-from field: string user_comment = 1;
-
-#### Defined in
-
-src/base.scailo_pb.ts:2018
+src/base.scailo_pb.ts:1644
 
 ___
 
@@ -126,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2041
+src/base.scailo_pb.ts:1653
 
 ___
 
@@ -136,29 +102,29 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2039
+src/base.scailo_pb.ts:1651
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.UpdateOwnPasswordReq"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.SumResponse"``
 
 #### Defined in
 
-src/base.scailo_pb.ts:2040
+src/base.scailo_pb.ts:1652
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+▸ **clone**(): [`SumResponse`](SumResponse.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+[`SumResponse`](SumResponse.md)
 
 #### Inherited from
 
@@ -181,7 +147,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md) \| `PlainMessage`\<[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)\> |
+| `other` | `undefined` \| ``null`` \| [`SumResponse`](SumResponse.md) \| `PlainMessage`\<[`SumResponse`](SumResponse.md)\> |
 
 #### Returns
 
@@ -286,7 +252,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)\>
+▸ **getType**(): `MessageType`\<[`SumResponse`](SumResponse.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -294,7 +260,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)\>
+`MessageType`\<[`SumResponse`](SumResponse.md)\>
 
 #### Inherited from
 
@@ -425,8 +391,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md) \| `PlainMessage`\<[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)\> |
-| `b` | `undefined` \| [`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md) \| `PlainMessage`\<[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)\> |
+| `a` | `undefined` \| [`SumResponse`](SumResponse.md) \| `PlainMessage`\<[`SumResponse`](SumResponse.md)\> |
+| `b` | `undefined` \| [`SumResponse`](SumResponse.md) \| `PlainMessage`\<[`SumResponse`](SumResponse.md)\> |
 
 #### Returns
 
@@ -434,13 +400,13 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2059
+src/base.scailo_pb.ts:1669
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+▸ **fromBinary**(`bytes`, `options?`): [`SumResponse`](SumResponse.md)
 
 #### Parameters
 
@@ -451,17 +417,17 @@ ___
 
 #### Returns
 
-[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+[`SumResponse`](SumResponse.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:2047
+src/base.scailo_pb.ts:1657
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`SumResponse`](SumResponse.md)
 
 #### Parameters
 
@@ -472,17 +438,17 @@ ___
 
 #### Returns
 
-[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+[`SumResponse`](SumResponse.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:2051
+src/base.scailo_pb.ts:1661
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`SumResponse`](SumResponse.md)
 
 #### Parameters
 
@@ -493,8 +459,8 @@ ___
 
 #### Returns
 
-[`UpdateOwnPasswordReq`](UpdateOwnPasswordReq.md)
+[`SumResponse`](SumResponse.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:2055
+src/base.scailo_pb.ts:1665

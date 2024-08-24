@@ -25,7 +25,7 @@ from message Scailo.VendorUserLoginResponse
 - [authToken](VendorUserLoginResponse.md#authtoken)
 - [expiresAt](VendorUserLoginResponse.md#expiresat)
 - [username](VendorUserLoginResponse.md#username)
-- [vendorId](VendorUserLoginResponse.md#vendorid)
+- [vendorUuid](VendorUserLoginResponse.md#vendoruuid)
 - [fields](VendorUserLoginResponse.md#fields)
 - [runtime](VendorUserLoginResponse.md#runtime)
 - [typeName](VendorUserLoginResponse.md#typename)
@@ -121,15 +121,15 @@ src/logins.scailo_pb.ts:372
 
 ___
 
-### vendorId
+### vendorUuid
 
-• **vendorId**: `bigint` = `protoInt64.zero`
+• **vendorUuid**: `string` = `""`
 
-The ID of the vendor
+The UUID of the vendor
 
 **`Generated`**
 
-from field: uint64 vendor_id = 10;
+from field: string vendor_uuid = 10;
 
 #### Defined in
 

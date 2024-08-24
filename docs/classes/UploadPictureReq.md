@@ -69,7 +69,7 @@ Message\&lt;UploadPictureReq\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2057
+src/base.scailo_pb.ts:2099
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2041
+src/base.scailo_pb.ts:2083
 
 ___
 
@@ -101,7 +101,7 @@ from field: string img = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2048
+src/base.scailo_pb.ts:2090
 
 ___
 
@@ -117,7 +117,7 @@ from field: string mime_type = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2055
+src/base.scailo_pb.ts:2097
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2034
+src/base.scailo_pb.ts:2076
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2064
+src/base.scailo_pb.ts:2106
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2062
+src/base.scailo_pb.ts:2104
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2063
+src/base.scailo_pb.ts:2105
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2083
+src/base.scailo_pb.ts:2125
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2071
+src/base.scailo_pb.ts:2113
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2075
+src/base.scailo_pb.ts:2117
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2079
+src/base.scailo_pb.ts:2121

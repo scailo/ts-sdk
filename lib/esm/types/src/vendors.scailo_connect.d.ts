@@ -321,6 +321,17 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by UUID
+         *
+         * @generated from rpc Scailo.VendorsService.ViewByUUID
+         */
+        readonly viewByUUID: {
+            readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof Vendor;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.VendorsService.ViewAll

@@ -386,11 +386,11 @@ export class VendorUserLoginResponse extends Message<VendorUserLoginResponse> {
   expiresAt = protoInt64.zero;
 
   /**
-   * The ID of the vendor
+   * The UUID of the vendor
    *
-   * @generated from field: uint64 vendor_id = 10;
+   * @generated from field: string vendor_uuid = 10;
    */
-  vendorId = protoInt64.zero;
+  vendorUuid = "";
 
   constructor(data?: PartialMessage<VendorUserLoginResponse>) {
     super();
@@ -403,7 +403,7 @@ export class VendorUserLoginResponse extends Message<VendorUserLoginResponse> {
     { no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "vendor_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorUserLoginResponse {
@@ -452,11 +452,11 @@ export class ClientUserLoginResponse extends Message<ClientUserLoginResponse> {
   expiresAt = protoInt64.zero;
 
   /**
-   * The ID of the client
+   * The UUID of the client
    *
-   * @generated from field: uint64 client_id = 10;
+   * @generated from field: string client_uuid = 10;
    */
-  clientId = protoInt64.zero;
+  clientUuid = "";
 
   constructor(data?: PartialMessage<ClientUserLoginResponse>) {
     super();
@@ -469,7 +469,7 @@ export class ClientUserLoginResponse extends Message<ClientUserLoginResponse> {
     { no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "client_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientUserLoginResponse {

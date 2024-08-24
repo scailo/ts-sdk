@@ -83,6 +83,17 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.AssociatesService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: Associate,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download Associate by ID as a vCard
      *
      * @generated from rpc Scailo.AssociatesService.DownloadVCard

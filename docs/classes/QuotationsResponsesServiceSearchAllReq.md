@@ -73,7 +73,7 @@ Message\&lt;QuotationsResponsesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2049
+src/quotations_responses.scailo_pb.ts:2033
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2005
+src/quotations_responses.scailo_pb.ts:1989
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2033
+src/quotations_responses.scailo_pb.ts:2017
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1998
+src/quotations_responses.scailo_pb.ts:1982
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2012
+src/quotations_responses.scailo_pb.ts:1996
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2047
+src/quotations_responses.scailo_pb.ts:2031
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.QUOTATION_RESPONSE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2026
+src/quotations_responses.scailo_pb.ts:2010
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2019
+src/quotations_responses.scailo_pb.ts:2003
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2040
+src/quotations_responses.scailo_pb.ts:2024
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2056
+src/quotations_responses.scailo_pb.ts:2040
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2054
+src/quotations_responses.scailo_pb.ts:2038
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2055
+src/quotations_responses.scailo_pb.ts:2039
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2079
+src/quotations_responses.scailo_pb.ts:2063
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2067
+src/quotations_responses.scailo_pb.ts:2051
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2071
+src/quotations_responses.scailo_pb.ts:2055
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2075
+src/quotations_responses.scailo_pb.ts:2059

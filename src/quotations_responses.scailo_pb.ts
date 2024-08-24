@@ -1727,25 +1727,18 @@ export class QuotationsResponsesServiceFilterReq extends Message<QuotationsRespo
   quotationRequestId = protoInt64.zero;
 
   /**
-   * The associated party type
-   *
-   * @generated from field: string ref_from = 23;
-   */
-  refFrom = "";
-
-  /**
-   * The associated party ID
-   *
-   * @generated from field: uint64 ref_id = 24;
-   */
-  refId = protoInt64.zero;
-
-  /**
    * The associated currency
    *
    * @generated from field: uint64 currency_id = 25;
    */
   currencyId = protoInt64.zero;
+
+  /**
+   * The associated vendor ID
+   *
+   * @generated from field: uint64 vendor_id = 40;
+   */
+  vendorId = protoInt64.zero;
 
   constructor(data?: PartialMessage<QuotationsResponsesServiceFilterReq>) {
     super();
@@ -1775,9 +1768,8 @@ export class QuotationsResponsesServiceFilterReq extends Message<QuotationsRespo
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "quotation_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 24, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 40, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuotationsResponsesServiceFilterReq {
@@ -1917,25 +1909,18 @@ export class QuotationsResponsesServiceCountReq extends Message<QuotationsRespon
   quotationRequestId = protoInt64.zero;
 
   /**
-   * The associated party type
-   *
-   * @generated from field: string ref_from = 23;
-   */
-  refFrom = "";
-
-  /**
-   * The associated party ID
-   *
-   * @generated from field: uint64 ref_id = 24;
-   */
-  refId = protoInt64.zero;
-
-  /**
    * The associated currency
    *
    * @generated from field: uint64 currency_id = 25;
    */
   currencyId = protoInt64.zero;
+
+  /**
+   * The associated vendor ID
+   *
+   * @generated from field: uint64 vendor_id = 40;
+   */
+  vendorId = protoInt64.zero;
 
   constructor(data?: PartialMessage<QuotationsResponsesServiceCountReq>) {
     super();
@@ -1961,9 +1946,8 @@ export class QuotationsResponsesServiceCountReq extends Message<QuotationsRespon
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "quotation_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 24, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 40, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuotationsResponsesServiceCountReq {

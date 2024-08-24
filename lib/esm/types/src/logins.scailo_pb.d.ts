@@ -223,11 +223,11 @@ export declare class VendorUserLoginResponse extends Message<VendorUserLoginResp
      */
     expiresAt: bigint;
     /**
-     * The ID of the vendor
+     * The UUID of the vendor
      *
-     * @generated from field: uint64 vendor_id = 10;
+     * @generated from field: string vendor_uuid = 10;
      */
-    vendorId: bigint;
+    vendorUuid: string;
     constructor(data?: PartialMessage<VendorUserLoginResponse>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.VendorUserLoginResponse";
@@ -263,11 +263,11 @@ export declare class ClientUserLoginResponse extends Message<ClientUserLoginResp
      */
     expiresAt: bigint;
     /**
-     * The ID of the client
+     * The UUID of the client
      *
-     * @generated from field: uint64 client_id = 10;
+     * @generated from field: string client_uuid = 10;
      */
-    clientId: bigint;
+    clientUuid: string;
     constructor(data?: PartialMessage<ClientUserLoginResponse>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ClientUserLoginResponse";

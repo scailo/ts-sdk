@@ -1631,6 +1631,48 @@ export class CountResponse extends Message<CountResponse> {
 
 /**
  *
+ * Describes the sum reponse
+ *
+ * @generated from message Scailo.SumResponse
+ */
+export class SumResponse extends Message<SumResponse> {
+  /**
+   * The sum of all the records
+   *
+   * @generated from field: double sum = 1;
+   */
+  sum = 0;
+
+  constructor(data?: PartialMessage<SumResponse>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SumResponse";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "sum", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SumResponse {
+    return new SumResponse().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SumResponse {
+    return new SumResponse().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SumResponse {
+    return new SumResponse().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SumResponse | PlainMessage<SumResponse> | undefined, b: SumResponse | PlainMessage<SumResponse> | undefined): boolean {
+    return proto3.util.equals(SumResponse, a, b);
+  }
+}
+
+/**
+ *
  * Describes the quantity response
  *
  * @generated from message Scailo.QuantityResponse

@@ -1112,6 +1112,28 @@ export declare class CountResponse extends Message<CountResponse> {
 }
 /**
  *
+ * Describes the sum reponse
+ *
+ * @generated from message Scailo.SumResponse
+ */
+export declare class SumResponse extends Message<SumResponse> {
+    /**
+     * The sum of all the records
+     *
+     * @generated from field: double sum = 1;
+     */
+    sum: number;
+    constructor(data?: PartialMessage<SumResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SumResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SumResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SumResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SumResponse;
+    static equals(a: SumResponse | PlainMessage<SumResponse> | undefined, b: SumResponse | PlainMessage<SumResponse> | undefined): boolean;
+}
+/**
+ *
  * Describes the quantity response
  *
  * @generated from message Scailo.QuantityResponse

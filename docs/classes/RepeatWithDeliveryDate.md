@@ -69,7 +69,7 @@ Message\&lt;RepeatWithDeliveryDate\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2163
+src/base.scailo_pb.ts:2205
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string delivery_date = 13;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2161
+src/base.scailo_pb.ts:2203
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2140
+src/base.scailo_pb.ts:2182
 
 ___
 
@@ -117,7 +117,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2154
+src/base.scailo_pb.ts:2196
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2147
+src/base.scailo_pb.ts:2189
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2170
+src/base.scailo_pb.ts:2212
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2168
+src/base.scailo_pb.ts:2210
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2169
+src/base.scailo_pb.ts:2211
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2189
+src/base.scailo_pb.ts:2231
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2177
+src/base.scailo_pb.ts:2219
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2181
+src/base.scailo_pb.ts:2223
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2185
+src/base.scailo_pb.ts:2227

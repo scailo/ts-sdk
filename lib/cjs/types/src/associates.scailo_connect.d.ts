@@ -77,6 +77,17 @@ export declare const AssociatesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by UUID
+         *
+         * @generated from rpc Scailo.AssociatesService.ViewByUUID
+         */
+        readonly viewByUUID: {
+            readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof Associate;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Download Associate by ID as a vCard
          *
          * @generated from rpc Scailo.AssociatesService.DownloadVCard

@@ -39,12 +39,11 @@ from message Scailo.QuotationsResponsesServiceFilterReq
 - [modificationTimestampStart](QuotationsResponsesServiceFilterReq.md#modificationtimestampstart)
 - [offset](QuotationsResponsesServiceFilterReq.md#offset)
 - [quotationRequestId](QuotationsResponsesServiceFilterReq.md#quotationrequestid)
-- [refFrom](QuotationsResponsesServiceFilterReq.md#reffrom)
-- [refId](QuotationsResponsesServiceFilterReq.md#refid)
 - [referenceId](QuotationsResponsesServiceFilterReq.md#referenceid)
 - [sortKey](QuotationsResponsesServiceFilterReq.md#sortkey)
 - [sortOrder](QuotationsResponsesServiceFilterReq.md#sortorder)
 - [status](QuotationsResponsesServiceFilterReq.md#status)
+- [vendorId](QuotationsResponsesServiceFilterReq.md#vendorid)
 - [fields](QuotationsResponsesServiceFilterReq.md#fields)
 - [runtime](QuotationsResponsesServiceFilterReq.md#runtime)
 - [typeName](QuotationsResponsesServiceFilterReq.md#typename)
@@ -88,7 +87,7 @@ Message\&lt;QuotationsResponsesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1750
+src/quotations_responses.scailo_pb.ts:1743
 
 ## Properties
 
@@ -248,7 +247,7 @@ from field: uint64 currency_id = 25;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1748
+src/quotations_responses.scailo_pb.ts:1734
 
 ___
 
@@ -364,38 +363,6 @@ src/quotations_responses.scailo_pb.ts:1727
 
 ___
 
-### refFrom
-
-• **refFrom**: `string` = `""`
-
-The associated party type
-
-**`Generated`**
-
-from field: string ref_from = 23;
-
-#### Defined in
-
-src/quotations_responses.scailo_pb.ts:1734
-
-___
-
-### refId
-
-• **refId**: `bigint` = `protoInt64.zero`
-
-The associated party ID
-
-**`Generated`**
-
-from field: uint64 ref_id = 24;
-
-#### Defined in
-
-src/quotations_responses.scailo_pb.ts:1741
-
-___
-
 ### referenceId
 
 • **referenceId**: `string` = `""`
@@ -460,13 +427,29 @@ src/quotations_responses.scailo_pb.ts:1664
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+The associated vendor ID
+
+**`Generated`**
+
+from field: uint64 vendor_id = 40;
+
+#### Defined in
+
+src/quotations_responses.scailo_pb.ts:1741
+
+___
+
 ### fields
 
 ▪ `Static` `Readonly` **fields**: `FieldList`
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1757
+src/quotations_responses.scailo_pb.ts:1750
 
 ___
 
@@ -476,7 +459,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1755
+src/quotations_responses.scailo_pb.ts:1748
 
 ___
 
@@ -486,7 +469,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1756
+src/quotations_responses.scailo_pb.ts:1749
 
 ## Methods
 
@@ -774,7 +757,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1795
+src/quotations_responses.scailo_pb.ts:1787
 
 ___
 
@@ -795,7 +778,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1783
+src/quotations_responses.scailo_pb.ts:1775
 
 ___
 
@@ -816,7 +799,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1787
+src/quotations_responses.scailo_pb.ts:1779
 
 ___
 
@@ -837,4 +820,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1791
+src/quotations_responses.scailo_pb.ts:1783

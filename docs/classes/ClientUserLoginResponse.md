@@ -23,7 +23,7 @@ from message Scailo.ClientUserLoginResponse
 ### Properties
 
 - [authToken](ClientUserLoginResponse.md#authtoken)
-- [clientId](ClientUserLoginResponse.md#clientid)
+- [clientUuid](ClientUserLoginResponse.md#clientuuid)
 - [expiresAt](ClientUserLoginResponse.md#expiresat)
 - [username](ClientUserLoginResponse.md#username)
 - [fields](ClientUserLoginResponse.md#fields)
@@ -89,15 +89,15 @@ src/logins.scailo_pb.ts:445
 
 ___
 
-### clientId
+### clientUuid
 
-• **clientId**: `bigint` = `protoInt64.zero`
+• **clientUuid**: `string` = `""`
 
-The ID of the client
+The UUID of the client
 
 **`Generated`**
 
-from field: uint64 client_id = 10;
+from field: string client_uuid = 10;
 
 #### Defined in
 
