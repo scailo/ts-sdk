@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList } from "./vendors.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -379,6 +379,18 @@ export const VendorsService = {
       name: "ViewVendorsForFamily",
       I: Identifier,
       O: VendorsList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Other view operations
+     * Download vendor with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.VendorsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**
