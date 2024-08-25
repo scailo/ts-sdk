@@ -22,6 +22,7 @@ from message Scailo.AssociatesServiceCountReq
 
 ### Properties
 
+- [clientId](AssociatesServiceCountReq.md#clientid)
 - [creationTimestampEnd](AssociatesServiceCountReq.md#creationtimestampend)
 - [creationTimestampStart](AssociatesServiceCountReq.md#creationtimestampstart)
 - [department](AssociatesServiceCountReq.md#department)
@@ -38,6 +39,7 @@ from message Scailo.AssociatesServiceCountReq
 - [orgRefId](AssociatesServiceCountReq.md#orgrefid)
 - [personalEmail](AssociatesServiceCountReq.md#personalemail)
 - [personalPhone](AssociatesServiceCountReq.md#personalphone)
+- [vendorId](AssociatesServiceCountReq.md#vendorid)
 - [workEmail](AssociatesServiceCountReq.md#workemail)
 - [workPhone](AssociatesServiceCountReq.md#workphone)
 - [fields](AssociatesServiceCountReq.md#fields)
@@ -83,9 +85,25 @@ Message\&lt;AssociatesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1245
+src/associates.scailo_pb.ts:1275
 
 ## Properties
+
+### clientId
+
+• **clientId**: `bigint` = `protoInt64.zero`
+
+The client ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+
+**`Generated`**
+
+from field: uint64 client_id = 60;
+
+#### Defined in
+
+src/associates.scailo_pb.ts:1273
+
+___
 
 ### creationTimestampEnd
 
@@ -99,7 +117,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1138
+src/associates.scailo_pb.ts:1154
 
 ___
 
@@ -115,7 +133,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1131
+src/associates.scailo_pb.ts:1147
 
 ___
 
@@ -131,7 +149,7 @@ from field: string department = 17;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1215
+src/associates.scailo_pb.ts:1231
 
 ___
 
@@ -147,7 +165,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1159
+src/associates.scailo_pb.ts:1175
 
 ___
 
@@ -163,7 +181,7 @@ from field: string first_name = 10;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1166
+src/associates.scailo_pb.ts:1182
 
 ___
 
@@ -179,7 +197,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1124
+src/associates.scailo_pb.ts:1140
 
 ___
 
@@ -195,7 +213,7 @@ from field: string job_title = 16;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1208
+src/associates.scailo_pb.ts:1224
 
 ___
 
@@ -211,7 +229,7 @@ from field: string last_name = 12;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1180
+src/associates.scailo_pb.ts:1196
 
 ___
 
@@ -227,7 +245,7 @@ from field: string middle_name = 11;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1173
+src/associates.scailo_pb.ts:1189
 
 ___
 
@@ -243,7 +261,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1152
+src/associates.scailo_pb.ts:1168
 
 ___
 
@@ -259,7 +277,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1145
+src/associates.scailo_pb.ts:1161
 
 ___
 
@@ -275,7 +293,7 @@ from field: string org_name = 15;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1201
+src/associates.scailo_pb.ts:1217
 
 ___
 
@@ -291,7 +309,7 @@ from field: Scailo.ASSOCIATE_ORG_REF_FROM org_ref_from = 13;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1187
+src/associates.scailo_pb.ts:1203
 
 ___
 
@@ -307,7 +325,7 @@ from field: uint64 org_ref_id = 14;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1194
+src/associates.scailo_pb.ts:1210
 
 ___
 
@@ -323,7 +341,7 @@ from field: string personal_email = 21;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1243
+src/associates.scailo_pb.ts:1259
 
 ___
 
@@ -339,7 +357,23 @@ from field: string personal_phone = 20;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1236
+src/associates.scailo_pb.ts:1252
+
+___
+
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+The vendor ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+
+**`Generated`**
+
+from field: uint64 vendor_id = 50;
+
+#### Defined in
+
+src/associates.scailo_pb.ts:1266
 
 ___
 
@@ -355,7 +389,7 @@ from field: string work_email = 19;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1229
+src/associates.scailo_pb.ts:1245
 
 ___
 
@@ -371,7 +405,7 @@ from field: string work_phone = 18;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1222
+src/associates.scailo_pb.ts:1238
 
 ___
 
@@ -381,7 +415,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1252
+src/associates.scailo_pb.ts:1282
 
 ___
 
@@ -391,7 +425,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1250
+src/associates.scailo_pb.ts:1280
 
 ___
 
@@ -401,7 +435,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1251
+src/associates.scailo_pb.ts:1281
 
 ## Methods
 
@@ -689,7 +723,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1285
+src/associates.scailo_pb.ts:1317
 
 ___
 
@@ -710,7 +744,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1273
+src/associates.scailo_pb.ts:1305
 
 ___
 
@@ -731,7 +765,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1277
+src/associates.scailo_pb.ts:1309
 
 ___
 
@@ -752,4 +786,4 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1281
+src/associates.scailo_pb.ts:1313

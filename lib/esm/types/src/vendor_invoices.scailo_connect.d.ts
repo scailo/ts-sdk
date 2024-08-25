@@ -565,10 +565,10 @@ export declare const VendorInvoicesService: {
         /**
          * Returns the sum of the total value of all the records that match the given criteria
          *
-         * @generated from rpc Scailo.VendorInvoicesService.AcrruedValue
+         * @generated from rpc Scailo.VendorInvoicesService.AccruedValue
          */
-        readonly acrruedValue: {
-            readonly name: "AcrruedValue";
+        readonly accruedValue: {
+            readonly name: "AccruedValue";
             readonly I: typeof VendorInvoicesServiceCountReq;
             readonly O: typeof SumResponse;
             readonly kind: MethodKind.Unary;

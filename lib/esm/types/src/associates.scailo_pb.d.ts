@@ -744,6 +744,18 @@ export declare class AssociatesServiceFilterReq extends Message<AssociatesServic
      * @generated from field: string personal_email = 21;
      */
     personalEmail: string;
+    /**
+     * The vendor ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+     *
+     * @generated from field: uint64 vendor_id = 50;
+     */
+    vendorId: bigint;
+    /**
+     * The client ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+     *
+     * @generated from field: uint64 client_id = 60;
+     */
+    clientId: bigint;
     constructor(data?: PartialMessage<AssociatesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.AssociatesServiceFilterReq";
@@ -868,6 +880,18 @@ export declare class AssociatesServiceCountReq extends Message<AssociatesService
      * @generated from field: string personal_email = 21;
      */
     personalEmail: string;
+    /**
+     * The vendor ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+     *
+     * @generated from field: uint64 vendor_id = 50;
+     */
+    vendorId: bigint;
+    /**
+     * The client ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+     *
+     * @generated from field: uint64 client_id = 60;
+     */
+    clientId: bigint;
     constructor(data?: PartialMessage<AssociatesServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.AssociatesServiceCountReq";

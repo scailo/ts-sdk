@@ -22,6 +22,7 @@ from message Scailo.AssociatesServiceFilterReq
 
 ### Properties
 
+- [clientId](AssociatesServiceFilterReq.md#clientid)
 - [count](AssociatesServiceFilterReq.md#count)
 - [creationTimestampEnd](AssociatesServiceFilterReq.md#creationtimestampend)
 - [creationTimestampStart](AssociatesServiceFilterReq.md#creationtimestampstart)
@@ -42,6 +43,7 @@ from message Scailo.AssociatesServiceFilterReq
 - [personalPhone](AssociatesServiceFilterReq.md#personalphone)
 - [sortKey](AssociatesServiceFilterReq.md#sortkey)
 - [sortOrder](AssociatesServiceFilterReq.md#sortorder)
+- [vendorId](AssociatesServiceFilterReq.md#vendorid)
 - [workEmail](AssociatesServiceFilterReq.md#workemail)
 - [workPhone](AssociatesServiceFilterReq.md#workphone)
 - [fields](AssociatesServiceFilterReq.md#fields)
@@ -87,9 +89,25 @@ Message\&lt;AssociatesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1063
+src/associates.scailo_pb.ts:1077
 
 ## Properties
+
+### clientId
+
+• **clientId**: `bigint` = `protoInt64.zero`
+
+The client ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+
+**`Generated`**
+
+from field: uint64 client_id = 60;
+
+#### Defined in
+
+src/associates.scailo_pb.ts:1075
+
+___
 
 ### count
 
@@ -411,6 +429,22 @@ src/associates.scailo_pb.ts:935
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+The vendor ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+
+**`Generated`**
+
+from field: uint64 vendor_id = 50;
+
+#### Defined in
+
+src/associates.scailo_pb.ts:1068
+
+___
+
 ### workEmail
 
 • **workEmail**: `string` = `""`
@@ -449,7 +483,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1070
+src/associates.scailo_pb.ts:1084
 
 ___
 
@@ -459,7 +493,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1068
+src/associates.scailo_pb.ts:1082
 
 ___
 
@@ -469,7 +503,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1069
+src/associates.scailo_pb.ts:1083
 
 ## Methods
 
@@ -757,7 +791,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1107
+src/associates.scailo_pb.ts:1123
 
 ___
 
@@ -778,7 +812,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1095
+src/associates.scailo_pb.ts:1111
 
 ___
 
@@ -799,7 +833,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1099
+src/associates.scailo_pb.ts:1115
 
 ___
 
@@ -820,4 +854,4 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1103
+src/associates.scailo_pb.ts:1119

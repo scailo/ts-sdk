@@ -665,10 +665,10 @@ export declare const SalesOrdersService: {
         /**
          * Returns the sum of the total value of all the records that match the given criteria
          *
-         * @generated from rpc Scailo.SalesOrdersService.AcrruedValue
+         * @generated from rpc Scailo.SalesOrdersService.AccruedValue
          */
-        readonly acrruedValue: {
-            readonly name: "AcrruedValue";
+        readonly accruedValue: {
+            readonly name: "AccruedValue";
             readonly I: typeof SalesOrdersServiceCountReq;
             readonly O: typeof SumResponse;
             readonly kind: MethodKind.Unary;

@@ -571,10 +571,10 @@ export const VendorInvoicesService = {
     /**
      * Returns the sum of the total value of all the records that match the given criteria
      *
-     * @generated from rpc Scailo.VendorInvoicesService.AcrruedValue
+     * @generated from rpc Scailo.VendorInvoicesService.AccruedValue
      */
-    acrruedValue: {
-      name: "AcrruedValue",
+    accruedValue: {
+      name: "AccruedValue",
       I: VendorInvoicesServiceCountReq,
       O: SumResponse,
       kind: MethodKind.Unary,

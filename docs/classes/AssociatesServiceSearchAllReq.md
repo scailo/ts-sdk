@@ -74,7 +74,7 @@ Message\&lt;AssociatesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1360
+src/associates.scailo_pb.ts:1392
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1309
+src/associates.scailo_pb.ts:1341
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1337
+src/associates.scailo_pb.ts:1369
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1302
+src/associates.scailo_pb.ts:1334
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1316
+src/associates.scailo_pb.ts:1348
 
 ___
 
@@ -154,7 +154,7 @@ from field: Scailo.ASSOCIATE_ORG_REF_FROM org_ref_from = 13;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1351
+src/associates.scailo_pb.ts:1383
 
 ___
 
@@ -170,7 +170,7 @@ from field: uint64 org_ref_id = 14;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1358
+src/associates.scailo_pb.ts:1390
 
 ___
 
@@ -186,7 +186,7 @@ from field: string search_key = 10;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1344
+src/associates.scailo_pb.ts:1376
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.ASSOCIATE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1330
+src/associates.scailo_pb.ts:1362
 
 ___
 
@@ -218,7 +218,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1323
+src/associates.scailo_pb.ts:1355
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1367
+src/associates.scailo_pb.ts:1399
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1365
+src/associates.scailo_pb.ts:1397
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1366
+src/associates.scailo_pb.ts:1398
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1391
+src/associates.scailo_pb.ts:1423
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1379
+src/associates.scailo_pb.ts:1411
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1383
+src/associates.scailo_pb.ts:1415
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:1387
+src/associates.scailo_pb.ts:1419

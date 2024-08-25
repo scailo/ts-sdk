@@ -1060,6 +1060,20 @@ export class AssociatesServiceFilterReq extends Message<AssociatesServiceFilterR
    */
   personalEmail = "";
 
+  /**
+   * The vendor ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+   *
+   * @generated from field: uint64 vendor_id = 50;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   * The client ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+   *
+   * @generated from field: uint64 client_id = 60;
+   */
+  clientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<AssociatesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1090,6 +1104,8 @@ export class AssociatesServiceFilterReq extends Message<AssociatesServiceFilterR
     { no: 19, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "personal_phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "personal_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 50, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 60, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AssociatesServiceFilterReq {
@@ -1242,6 +1258,20 @@ export class AssociatesServiceCountReq extends Message<AssociatesServiceCountReq
    */
   personalEmail = "";
 
+  /**
+   * The vendor ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+   *
+   * @generated from field: uint64 vendor_id = 50;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   * The client ID of the associate (if this is used, then org_ref_from and org_ref_id combination is not necessary)
+   *
+   * @generated from field: uint64 client_id = 60;
+   */
+  clientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<AssociatesServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1268,6 +1298,8 @@ export class AssociatesServiceCountReq extends Message<AssociatesServiceCountReq
     { no: 19, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "personal_phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "personal_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 50, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 60, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AssociatesServiceCountReq {
