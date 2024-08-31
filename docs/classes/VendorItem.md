@@ -79,7 +79,7 @@ Message\&lt;VendorItem\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:911
+src/vendors.scailo_pb.ts:946
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:832
+src/vendors.scailo_pb.ts:867
 
 ___
 
@@ -111,7 +111,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:818
+src/vendors.scailo_pb.ts:853
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:860
+src/vendors.scailo_pb.ts:895
 
 ___
 
@@ -143,7 +143,7 @@ from field: uint64 max_order_qty = 21;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:902
+src/vendors.scailo_pb.ts:937
 
 ___
 
@@ -159,7 +159,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:825
+src/vendors.scailo_pb.ts:860
 
 ___
 
@@ -175,7 +175,7 @@ from field: uint64 min_order_qty = 20;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:895
+src/vendors.scailo_pb.ts:930
 
 ___
 
@@ -191,7 +191,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:839
+src/vendors.scailo_pb.ts:874
 
 ___
 
@@ -207,7 +207,7 @@ from field: uint64 price = 15;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:888
+src/vendors.scailo_pb.ts:923
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 step_interval = 22;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:909
+src/vendors.scailo_pb.ts:944
 
 ___
 
@@ -239,7 +239,7 @@ from field: uint64 tax_group_id = 14;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:881
+src/vendors.scailo_pb.ts:916
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:874
+src/vendors.scailo_pb.ts:909
 
 ___
 
@@ -271,7 +271,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:846
+src/vendors.scailo_pb.ts:881
 
 ___
 
@@ -287,7 +287,7 @@ from field: string vendor_family_code = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:867
+src/vendors.scailo_pb.ts:902
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:853
+src/vendors.scailo_pb.ts:888
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:918
+src/vendors.scailo_pb.ts:953
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:916
+src/vendors.scailo_pb.ts:951
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:917
+src/vendors.scailo_pb.ts:952
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:947
+src/vendors.scailo_pb.ts:982
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:935
+src/vendors.scailo_pb.ts:970
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:939
+src/vendors.scailo_pb.ts:974
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:943
+src/vendors.scailo_pb.ts:978

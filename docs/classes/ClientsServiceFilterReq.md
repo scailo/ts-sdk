@@ -84,7 +84,7 @@ Message\&lt;ClientsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:758
+src/clients.scailo_pb.ts:793
 
 ## Properties
 
@@ -100,7 +100,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:721
+src/clients.scailo_pb.ts:756
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:714
+src/clients.scailo_pb.ts:749
 
 ___
 
@@ -132,7 +132,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:707
+src/clients.scailo_pb.ts:742
 
 ___
 
@@ -148,7 +148,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:728
+src/clients.scailo_pb.ts:763
 
 ___
 
@@ -164,7 +164,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:742
+src/clients.scailo_pb.ts:777
 
 ___
 
@@ -180,7 +180,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:637
+src/clients.scailo_pb.ts:672
 
 ___
 
@@ -196,7 +196,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:672
+src/clients.scailo_pb.ts:707
 
 ___
 
@@ -212,7 +212,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:665
+src/clients.scailo_pb.ts:700
 
 ___
 
@@ -228,7 +228,7 @@ from field: string email = 22;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:749
+src/clients.scailo_pb.ts:784
 
 ___
 
@@ -244,7 +244,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:693
+src/clients.scailo_pb.ts:728
 
 ___
 
@@ -260,7 +260,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:630
+src/clients.scailo_pb.ts:665
 
 ___
 
@@ -276,7 +276,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:686
+src/clients.scailo_pb.ts:721
 
 ___
 
@@ -292,7 +292,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:679
+src/clients.scailo_pb.ts:714
 
 ___
 
@@ -308,7 +308,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:735
+src/clients.scailo_pb.ts:770
 
 ___
 
@@ -324,7 +324,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:644
+src/clients.scailo_pb.ts:679
 
 ___
 
@@ -340,7 +340,7 @@ from field: string phone = 23;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:756
+src/clients.scailo_pb.ts:791
 
 ___
 
@@ -356,7 +356,7 @@ from field: Scailo.CLIENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:658
+src/clients.scailo_pb.ts:693
 
 ___
 
@@ -372,7 +372,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:651
+src/clients.scailo_pb.ts:686
 
 ___
 
@@ -388,7 +388,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:700
+src/clients.scailo_pb.ts:735
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:765
+src/clients.scailo_pb.ts:800
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:763
+src/clients.scailo_pb.ts:798
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:764
+src/clients.scailo_pb.ts:799
 
 ## Methods
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:799
+src/clients.scailo_pb.ts:834
 
 ___
 
@@ -727,7 +727,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:787
+src/clients.scailo_pb.ts:822
 
 ___
 
@@ -748,7 +748,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:791
+src/clients.scailo_pb.ts:826
 
 ___
 
@@ -769,4 +769,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:795
+src/clients.scailo_pb.ts:830

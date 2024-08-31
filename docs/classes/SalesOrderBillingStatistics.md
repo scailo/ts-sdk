@@ -22,8 +22,8 @@ from message Scailo.SalesOrderBillingStatistics
 
 ### Properties
 
-- [billed](SalesOrderBillingStatistics.md#billed)
 - [credited](SalesOrderBillingStatistics.md#credited)
+- [invoiced](SalesOrderBillingStatistics.md#invoiced)
 - [ordered](SalesOrderBillingStatistics.md#ordered)
 - [fields](SalesOrderBillingStatistics.md#fields)
 - [runtime](SalesOrderBillingStatistics.md#runtime)
@@ -72,22 +72,6 @@ src/sales_orders.scailo_pb.ts:3184
 
 ## Properties
 
-### billed
-
-• **billed**: `bigint` = `protoInt64.zero`
-
-Stores the cumulative quantity of the billed inventory
-
-**`Generated`**
-
-from field: uint64 billed = 2;
-
-#### Defined in
-
-src/sales_orders.scailo_pb.ts:3175
-
-___
-
 ### credited
 
 • **credited**: `bigint` = `protoInt64.zero`
@@ -101,6 +85,22 @@ from field: uint64 credited = 3;
 #### Defined in
 
 src/sales_orders.scailo_pb.ts:3182
+
+___
+
+### invoiced
+
+• **invoiced**: `bigint` = `protoInt64.zero`
+
+Stores the cumulative quantity of the invoiced inventory
+
+**`Generated`**
+
+from field: uint64 invoiced = 2;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3175
 
 ___
 

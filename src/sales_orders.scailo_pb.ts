@@ -3168,11 +3168,11 @@ export class SalesOrderBillingStatistics extends Message<SalesOrderBillingStatis
   ordered = protoInt64.zero;
 
   /**
-   * Stores the cumulative quantity of the billed inventory
+   * Stores the cumulative quantity of the invoiced inventory
    *
-   * @generated from field: uint64 billed = 2;
+   * @generated from field: uint64 invoiced = 2;
    */
-  billed = protoInt64.zero;
+  invoiced = protoInt64.zero;
 
   /**
    * Stores the cumulative quantity of the credited inventory
@@ -3190,7 +3190,7 @@ export class SalesOrderBillingStatistics extends Message<SalesOrderBillingStatis
   static readonly typeName = "Scailo.SalesOrderBillingStatistics";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "ordered", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 2, name: "billed", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "invoiced", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "credited", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
@@ -3208,6 +3208,130 @@ export class SalesOrderBillingStatistics extends Message<SalesOrderBillingStatis
 
   static equals(a: SalesOrderBillingStatistics | PlainMessage<SalesOrderBillingStatistics> | undefined, b: SalesOrderBillingStatistics | PlainMessage<SalesOrderBillingStatistics> | undefined): boolean {
     return proto3.util.equals(SalesOrderBillingStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that are part of a sales order's inventory match
+ *
+ * @generated from message Scailo.SalesOrderInventoryMatch
+ */
+export class SalesOrderInventoryMatch extends Message<SalesOrderInventoryMatch> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the ordered quantity
+   *
+   * @generated from field: uint64 ordered = 10;
+   */
+  ordered = protoInt64.zero;
+
+  /**
+   * Stores the dispatched quantity
+   *
+   * @generated from field: uint64 dispatched = 11;
+   */
+  dispatched = protoInt64.zero;
+
+  /**
+   * Stores the invoiced quantity
+   *
+   * @generated from field: uint64 invoiced = 12;
+   */
+  invoiced = protoInt64.zero;
+
+  /**
+   * Stores the returned quantity
+   *
+   * @generated from field: uint64 returned = 13;
+   */
+  returned = protoInt64.zero;
+
+  /**
+   * Stores the credited quantity
+   *
+   * @generated from field: uint64 credited = 14;
+   */
+  credited = protoInt64.zero;
+
+  constructor(data?: PartialMessage<SalesOrderInventoryMatch>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesOrderInventoryMatch";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "ordered", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "dispatched", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "invoiced", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "returned", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "credited", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderInventoryMatch {
+    return new SalesOrderInventoryMatch().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatch {
+    return new SalesOrderInventoryMatch().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatch {
+    return new SalesOrderInventoryMatch().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesOrderInventoryMatch | PlainMessage<SalesOrderInventoryMatch> | undefined, b: SalesOrderInventoryMatch | PlainMessage<SalesOrderInventoryMatch> | undefined): boolean {
+    return proto3.util.equals(SalesOrderInventoryMatch, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of inventory match families
+ *
+ * @generated from message Scailo.SalesOrderInventoryMatchList
+ */
+export class SalesOrderInventoryMatchList extends Message<SalesOrderInventoryMatchList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.SalesOrderInventoryMatch list = 1;
+   */
+  list: SalesOrderInventoryMatch[] = [];
+
+  constructor(data?: PartialMessage<SalesOrderInventoryMatchList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesOrderInventoryMatchList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: SalesOrderInventoryMatch, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderInventoryMatchList {
+    return new SalesOrderInventoryMatchList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatchList {
+    return new SalesOrderInventoryMatchList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatchList {
+    return new SalesOrderInventoryMatchList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesOrderInventoryMatchList | PlainMessage<SalesOrderInventoryMatchList> | undefined, b: SalesOrderInventoryMatchList | PlainMessage<SalesOrderInventoryMatchList> | undefined): boolean {
+    return proto3.util.equals(SalesOrderInventoryMatchList, a, b);
   }
 }
 

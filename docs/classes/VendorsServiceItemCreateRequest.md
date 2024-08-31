@@ -75,7 +75,7 @@ Message\&lt;VendorsServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:663
+src/vendors.scailo_pb.ts:698
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:612
+src/vendors.scailo_pb.ts:647
 
 ___
 
@@ -107,7 +107,7 @@ from field: uint64 max_order_qty = 21;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:654
+src/vendors.scailo_pb.ts:689
 
 ___
 
@@ -123,7 +123,7 @@ from field: uint64 min_order_qty = 20;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:647
+src/vendors.scailo_pb.ts:682
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 price = 15;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:640
+src/vendors.scailo_pb.ts:675
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 step_interval = 22;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:661
+src/vendors.scailo_pb.ts:696
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 tax_group_id = 14;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:633
+src/vendors.scailo_pb.ts:668
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:626
+src/vendors.scailo_pb.ts:661
 
 ___
 
@@ -203,7 +203,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:598
+src/vendors.scailo_pb.ts:633
 
 ___
 
@@ -219,7 +219,7 @@ from field: string vendor_family_code = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:619
+src/vendors.scailo_pb.ts:654
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:605
+src/vendors.scailo_pb.ts:640
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:670
+src/vendors.scailo_pb.ts:705
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:668
+src/vendors.scailo_pb.ts:703
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:669
+src/vendors.scailo_pb.ts:704
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:695
+src/vendors.scailo_pb.ts:730
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:683
+src/vendors.scailo_pb.ts:718
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:687
+src/vendors.scailo_pb.ts:722
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:691
+src/vendors.scailo_pb.ts:726

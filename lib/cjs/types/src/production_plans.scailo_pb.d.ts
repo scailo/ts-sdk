@@ -1032,6 +1032,13 @@ export declare class ProductionPlansServiceFilterReq extends Message<ProductionP
      * @generated from field: uint64 project_id = 60;
      */
     projectId: bigint;
+    /**
+     * Sales Order related filters
+     * The associated buyer client ID of the linked sales order
+     *
+     * @generated from field: uint64 buyer_client_id = 80;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<ProductionPlansServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProductionPlansServiceFilterReq";
@@ -1198,6 +1205,13 @@ export declare class ProductionPlansServiceCountReq extends Message<ProductionPl
      * @generated from field: uint64 project_id = 60;
      */
     projectId: bigint;
+    /**
+     * Sales Order related filters
+     * The associated buyer client ID of the linked sales order
+     *
+     * @generated from field: uint64 buyer_client_id = 80;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<ProductionPlansServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProductionPlansServiceCountReq";

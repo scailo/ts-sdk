@@ -66,7 +66,7 @@ Message\&lt;QCSampleParameterHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1836
+src/qc_samples.scailo_pb.ts:1852
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: uint64 qc_sample_parameter_id = 10;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1834
+src/qc_samples.scailo_pb.ts:1850
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1843
+src/qc_samples.scailo_pb.ts:1859
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1841
+src/qc_samples.scailo_pb.ts:1857
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1842
+src/qc_samples.scailo_pb.ts:1858
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1859
+src/qc_samples.scailo_pb.ts:1875
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1847
+src/qc_samples.scailo_pb.ts:1863
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1851
+src/qc_samples.scailo_pb.ts:1867
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1855
+src/qc_samples.scailo_pb.ts:1871

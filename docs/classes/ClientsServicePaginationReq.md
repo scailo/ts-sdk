@@ -71,7 +71,7 @@ Message\&lt;ClientsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:519
+src/clients.scailo_pb.ts:554
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:489
+src/clients.scailo_pb.ts:524
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:482
+src/clients.scailo_pb.ts:517
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:496
+src/clients.scailo_pb.ts:531
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.CLIENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:510
+src/clients.scailo_pb.ts:545
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:503
+src/clients.scailo_pb.ts:538
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:517
+src/clients.scailo_pb.ts:552
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:526
+src/clients.scailo_pb.ts:561
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:524
+src/clients.scailo_pb.ts:559
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:525
+src/clients.scailo_pb.ts:560
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:547
+src/clients.scailo_pb.ts:582
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:535
+src/clients.scailo_pb.ts:570
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:539
+src/clients.scailo_pb.ts:574
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:543
+src/clients.scailo_pb.ts:578

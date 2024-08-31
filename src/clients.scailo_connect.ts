@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList } from "./clients.scailo_pb.js";
+import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginatedUsersResponse, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList, ClientUsersSearchRequest } from "./clients.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -204,6 +204,17 @@ export const ClientsService = {
       name: "ViewClientUsers",
       I: Identifier,
       O: ClientUsersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Search through client users with pagination
+     *
+     * @generated from rpc Scailo.ClientsService.SearchClientUsersWithPagination
+     */
+    searchClientUsersWithPagination: {
+      name: "SearchClientUsersWithPagination",
+      I: ClientUsersSearchRequest,
+      O: ClientsServicePaginatedUsersResponse,
       kind: MethodKind.Unary,
     },
     /**

@@ -73,7 +73,7 @@ Message\&lt;VendorUser\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2029
+src/vendors.scailo_pb.ts:2064
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1992
+src/vendors.scailo_pb.ts:2027
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 associate_id = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2027
+src/vendors.scailo_pb.ts:2062
 
 ___
 
@@ -121,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1978
+src/vendors.scailo_pb.ts:2013
 
 ___
 
@@ -137,7 +137,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1985
+src/vendors.scailo_pb.ts:2020
 
 ___
 
@@ -153,7 +153,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1999
+src/vendors.scailo_pb.ts:2034
 
 ___
 
@@ -169,7 +169,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2006
+src/vendors.scailo_pb.ts:2041
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2020
+src/vendors.scailo_pb.ts:2055
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2013
+src/vendors.scailo_pb.ts:2048
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2036
+src/vendors.scailo_pb.ts:2071
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2034
+src/vendors.scailo_pb.ts:2069
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2035
+src/vendors.scailo_pb.ts:2070
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2059
+src/vendors.scailo_pb.ts:2094
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2047
+src/vendors.scailo_pb.ts:2082
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2051
+src/vendors.scailo_pb.ts:2086
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2055
+src/vendors.scailo_pb.ts:2090

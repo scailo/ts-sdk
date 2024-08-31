@@ -72,6 +72,32 @@ export declare enum CLIENT_SORT_KEY {
 }
 /**
  *
+ * Describes the applicable statuses of client users
+ *
+ * @generated from enum Scailo.CLIENT_USER_STATUS
+ */
+export declare enum CLIENT_USER_STATUS {
+    /**
+     * Denotes that status be disregarded. This is used only within search APIs
+     *
+     * @generated from enum value: CLIENT_USER_STATUS_ANY_UNSPECIFIED = 0;
+     */
+    CLIENT_USER_STATUS_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the vendor items must have been approved
+     *
+     * @generated from enum value: CLIENT_USER_STATUS_APPROVED = 1;
+     */
+    CLIENT_USER_STATUS_APPROVED = 1,
+    /**
+     * Denotes that the vendor items must be waiting for approval
+     *
+     * @generated from enum value: CLIENT_USER_STATUS_UNAPPROVED = 2;
+     */
+    CLIENT_USER_STATUS_UNAPPROVED = 2
+}
+/**
+ *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Scailo.ClientsServiceCreateRequest
@@ -825,5 +851,115 @@ export declare class ClientUsersList extends Message<ClientUsersList> {
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientUsersList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientUsersList;
     static equals(a: ClientUsersList | PlainMessage<ClientUsersList> | undefined, b: ClientUsersList | PlainMessage<ClientUsersList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the request payload to search client users
+ *
+ * @generated from message Scailo.ClientUsersSearchRequest
+ */
+export declare class ClientUsersSearchRequest extends Message<ClientUsersSearchRequest> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 6;
+     */
+    entityUuid: string;
+    /**
+     * The status of the users
+     *
+     * @generated from field: Scailo.CLIENT_USER_STATUS status = 7;
+     */
+    status: CLIENT_USER_STATUS;
+    /**
+     * Stores the client ID
+     *
+     * @generated from field: uint64 client_id = 10;
+     */
+    clientId: bigint;
+    /**
+     * Stores the user ID
+     *
+     * @generated from field: uint64 user_id = 11;
+     */
+    userId: bigint;
+    /**
+     * Stores an optional associate ID
+     *
+     * @generated from field: uint64 associate_id = 12;
+     */
+    associateId: bigint;
+    /**
+     * Describes the key with which the search operation needs to be performed
+     *
+     * @generated from field: string search_key = 20;
+     */
+    searchKey: string;
+    constructor(data?: PartialMessage<ClientUsersSearchRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ClientUsersSearchRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientUsersSearchRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientUsersSearchRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientUsersSearchRequest;
+    static equals(a: ClientUsersSearchRequest | PlainMessage<ClientUsersSearchRequest> | undefined, b: ClientUsersSearchRequest | PlainMessage<ClientUsersSearchRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the response to a pagination items request
+ *
+ * @generated from message Scailo.ClientsServicePaginatedUsersResponse
+ */
+export declare class ClientsServicePaginatedUsersResponse extends Message<ClientsServicePaginatedUsersResponse> {
+    /**
+     * The number of records in this payload
+     *
+     * @generated from field: uint64 count = 1;
+     */
+    count: bigint;
+    /**
+     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @generated from field: uint64 offset = 2;
+     */
+    offset: bigint;
+    /**
+     * The total number of records that are available
+     *
+     * @generated from field: uint64 total = 3;
+     */
+    total: bigint;
+    /**
+     * The list of records
+     *
+     * @generated from field: repeated Scailo.ClientUser payload = 4;
+     */
+    payload: ClientUser[];
+    constructor(data?: PartialMessage<ClientsServicePaginatedUsersResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ClientsServicePaginatedUsersResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientsServicePaginatedUsersResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServicePaginatedUsersResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServicePaginatedUsersResponse;
+    static equals(a: ClientsServicePaginatedUsersResponse | PlainMessage<ClientsServicePaginatedUsersResponse> | undefined, b: ClientsServicePaginatedUsersResponse | PlainMessage<ClientsServicePaginatedUsersResponse> | undefined): boolean;
 }
 //# sourceMappingURL=clients.scailo_pb.d.ts.map

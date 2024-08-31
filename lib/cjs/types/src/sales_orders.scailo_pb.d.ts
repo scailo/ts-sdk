@@ -2136,11 +2136,11 @@ export declare class SalesOrderBillingStatistics extends Message<SalesOrderBilli
      */
     ordered: bigint;
     /**
-     * Stores the cumulative quantity of the billed inventory
+     * Stores the cumulative quantity of the invoiced inventory
      *
-     * @generated from field: uint64 billed = 2;
+     * @generated from field: uint64 invoiced = 2;
      */
-    billed: bigint;
+    invoiced: bigint;
     /**
      * Stores the cumulative quantity of the credited inventory
      *
@@ -2155,5 +2155,79 @@ export declare class SalesOrderBillingStatistics extends Message<SalesOrderBilli
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderBillingStatistics;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderBillingStatistics;
     static equals(a: SalesOrderBillingStatistics | PlainMessage<SalesOrderBillingStatistics> | undefined, b: SalesOrderBillingStatistics | PlainMessage<SalesOrderBillingStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are part of a sales order's inventory match
+ *
+ * @generated from message Scailo.SalesOrderInventoryMatch
+ */
+export declare class SalesOrderInventoryMatch extends Message<SalesOrderInventoryMatch> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the ordered quantity
+     *
+     * @generated from field: uint64 ordered = 10;
+     */
+    ordered: bigint;
+    /**
+     * Stores the dispatched quantity
+     *
+     * @generated from field: uint64 dispatched = 11;
+     */
+    dispatched: bigint;
+    /**
+     * Stores the invoiced quantity
+     *
+     * @generated from field: uint64 invoiced = 12;
+     */
+    invoiced: bigint;
+    /**
+     * Stores the returned quantity
+     *
+     * @generated from field: uint64 returned = 13;
+     */
+    returned: bigint;
+    /**
+     * Stores the credited quantity
+     *
+     * @generated from field: uint64 credited = 14;
+     */
+    credited: bigint;
+    constructor(data?: PartialMessage<SalesOrderInventoryMatch>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrderInventoryMatch";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderInventoryMatch;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatch;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatch;
+    static equals(a: SalesOrderInventoryMatch | PlainMessage<SalesOrderInventoryMatch> | undefined, b: SalesOrderInventoryMatch | PlainMessage<SalesOrderInventoryMatch> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of inventory match families
+ *
+ * @generated from message Scailo.SalesOrderInventoryMatchList
+ */
+export declare class SalesOrderInventoryMatchList extends Message<SalesOrderInventoryMatchList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.SalesOrderInventoryMatch list = 1;
+     */
+    list: SalesOrderInventoryMatch[];
+    constructor(data?: PartialMessage<SalesOrderInventoryMatchList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrderInventoryMatchList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderInventoryMatchList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatchList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatchList;
+    static equals(a: SalesOrderInventoryMatchList | PlainMessage<SalesOrderInventoryMatchList> | undefined, b: SalesOrderInventoryMatchList | PlainMessage<SalesOrderInventoryMatchList> | undefined): boolean;
 }
 //# sourceMappingURL=sales_orders.scailo_pb.d.ts.map

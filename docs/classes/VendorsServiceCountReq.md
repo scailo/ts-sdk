@@ -81,7 +81,7 @@ Message\&lt;VendorsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1555
+src/vendors.scailo_pb.ts:1590
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1511
+src/vendors.scailo_pb.ts:1546
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1504
+src/vendors.scailo_pb.ts:1539
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1497
+src/vendors.scailo_pb.ts:1532
 
 ___
 
@@ -145,7 +145,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1518
+src/vendors.scailo_pb.ts:1553
 
 ___
 
@@ -161,7 +161,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1532
+src/vendors.scailo_pb.ts:1567
 
 ___
 
@@ -177,7 +177,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1462
+src/vendors.scailo_pb.ts:1497
 
 ___
 
@@ -193,7 +193,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1455
+src/vendors.scailo_pb.ts:1490
 
 ___
 
@@ -209,7 +209,7 @@ from field: string email = 22;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1539
+src/vendors.scailo_pb.ts:1574
 
 ___
 
@@ -225,7 +225,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1483
+src/vendors.scailo_pb.ts:1518
 
 ___
 
@@ -241,7 +241,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1553
+src/vendors.scailo_pb.ts:1588
 
 ___
 
@@ -257,7 +257,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1448
+src/vendors.scailo_pb.ts:1483
 
 ___
 
@@ -273,7 +273,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1476
+src/vendors.scailo_pb.ts:1511
 
 ___
 
@@ -289,7 +289,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1469
+src/vendors.scailo_pb.ts:1504
 
 ___
 
@@ -305,7 +305,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1525
+src/vendors.scailo_pb.ts:1560
 
 ___
 
@@ -321,7 +321,7 @@ from field: string phone = 23;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1546
+src/vendors.scailo_pb.ts:1581
 
 ___
 
@@ -337,7 +337,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1490
+src/vendors.scailo_pb.ts:1525
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1562
+src/vendors.scailo_pb.ts:1597
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1560
+src/vendors.scailo_pb.ts:1595
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1561
+src/vendors.scailo_pb.ts:1596
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1593
+src/vendors.scailo_pb.ts:1628
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1581
+src/vendors.scailo_pb.ts:1616
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1585
+src/vendors.scailo_pb.ts:1620
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1589
+src/vendors.scailo_pb.ts:1624

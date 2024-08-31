@@ -73,7 +73,7 @@ Message\&lt;ClientsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:165
+src/clients.scailo_pb.ts:200
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:142
+src/clients.scailo_pb.ts:177
 
 ___
 
@@ -105,7 +105,7 @@ from field: string email = 12;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:149
+src/clients.scailo_pb.ts:184
 
 ___
 
@@ -121,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:114
+src/clients.scailo_pb.ts:149
 
 ___
 
@@ -137,7 +137,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:163
+src/clients.scailo_pb.ts:198
 
 ___
 
@@ -153,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:135
+src/clients.scailo_pb.ts:170
 
 ___
 
@@ -169,7 +169,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:156
+src/clients.scailo_pb.ts:191
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:121
+src/clients.scailo_pb.ts:156
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:128
+src/clients.scailo_pb.ts:163
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:172
+src/clients.scailo_pb.ts:207
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:170
+src/clients.scailo_pb.ts:205
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:171
+src/clients.scailo_pb.ts:206
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:195
+src/clients.scailo_pb.ts:230
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:183
+src/clients.scailo_pb.ts:218
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:187
+src/clients.scailo_pb.ts:222
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:191
+src/clients.scailo_pb.ts:226

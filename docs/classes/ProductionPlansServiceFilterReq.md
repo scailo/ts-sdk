@@ -26,6 +26,7 @@ from message Scailo.ProductionPlansServiceFilterReq
 - [approvedOnEnd](ProductionPlansServiceFilterReq.md#approvedonend)
 - [approvedOnStart](ProductionPlansServiceFilterReq.md#approvedonstart)
 - [approverRoleId](ProductionPlansServiceFilterReq.md#approverroleid)
+- [buyerClientId](ProductionPlansServiceFilterReq.md#buyerclientid)
 - [completedOnEnd](ProductionPlansServiceFilterReq.md#completedonend)
 - [completedOnStart](ProductionPlansServiceFilterReq.md#completedonstart)
 - [count](ProductionPlansServiceFilterReq.md#count)
@@ -94,7 +95,7 @@ Message\&lt;ProductionPlansServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1531
+src/production_plans.scailo_pb.ts:1539
 
 ## Properties
 
@@ -159,6 +160,23 @@ from field: uint64 approver_role_id = 14;
 #### Defined in
 
 src/production_plans.scailo_pb.ts:1431
+
+___
+
+### buyerClientId
+
+• **buyerClientId**: `bigint` = `protoInt64.zero`
+
+Sales Order related filters
+The associated buyer client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 buyer_client_id = 80;
+
+#### Defined in
+
+src/production_plans.scailo_pb.ts:1537
 
 ___
 
@@ -568,7 +586,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1538
+src/production_plans.scailo_pb.ts:1546
 
 ___
 
@@ -578,7 +596,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1536
+src/production_plans.scailo_pb.ts:1544
 
 ___
 
@@ -588,7 +606,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1537
+src/production_plans.scailo_pb.ts:1545
 
 ## Methods
 
@@ -876,7 +894,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1582
+src/production_plans.scailo_pb.ts:1591
 
 ___
 
@@ -897,7 +915,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1570
+src/production_plans.scailo_pb.ts:1579
 
 ___
 
@@ -918,7 +936,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1574
+src/production_plans.scailo_pb.ts:1583
 
 ___
 
@@ -939,4 +957,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1578
+src/production_plans.scailo_pb.ts:1587

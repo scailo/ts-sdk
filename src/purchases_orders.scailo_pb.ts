@@ -3179,3 +3179,127 @@ export class PurchaseOrderBillingStatistics extends Message<PurchaseOrderBilling
   }
 }
 
+/**
+ *
+ * Describes the parameters that are part of a purchase order's inventory match
+ *
+ * @generated from message Scailo.PurchaseOrderInventoryMatch
+ */
+export class PurchaseOrderInventoryMatch extends Message<PurchaseOrderInventoryMatch> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the ordered quantity
+   *
+   * @generated from field: uint64 ordered = 10;
+   */
+  ordered = protoInt64.zero;
+
+  /**
+   * Stores the received quantity
+   *
+   * @generated from field: uint64 received = 11;
+   */
+  received = protoInt64.zero;
+
+  /**
+   * Stores the invoiced quantity
+   *
+   * @generated from field: uint64 invoiced = 12;
+   */
+  invoiced = protoInt64.zero;
+
+  /**
+   * Stores the returned quantity
+   *
+   * @generated from field: uint64 returned = 13;
+   */
+  returned = protoInt64.zero;
+
+  /**
+   * Stores the debited quantity
+   *
+   * @generated from field: uint64 debited = 14;
+   */
+  debited = protoInt64.zero;
+
+  constructor(data?: PartialMessage<PurchaseOrderInventoryMatch>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchaseOrderInventoryMatch";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "ordered", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "received", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "invoiced", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "returned", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "debited", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderInventoryMatch {
+    return new PurchaseOrderInventoryMatch().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatch {
+    return new PurchaseOrderInventoryMatch().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatch {
+    return new PurchaseOrderInventoryMatch().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchaseOrderInventoryMatch | PlainMessage<PurchaseOrderInventoryMatch> | undefined, b: PurchaseOrderInventoryMatch | PlainMessage<PurchaseOrderInventoryMatch> | undefined): boolean {
+    return proto3.util.equals(PurchaseOrderInventoryMatch, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of inventory match families
+ *
+ * @generated from message Scailo.PurchaseOrderInventoryMatchList
+ */
+export class PurchaseOrderInventoryMatchList extends Message<PurchaseOrderInventoryMatchList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.PurchaseOrderInventoryMatch list = 1;
+   */
+  list: PurchaseOrderInventoryMatch[] = [];
+
+  constructor(data?: PartialMessage<PurchaseOrderInventoryMatchList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchaseOrderInventoryMatchList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: PurchaseOrderInventoryMatch, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderInventoryMatchList {
+    return new PurchaseOrderInventoryMatchList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatchList {
+    return new PurchaseOrderInventoryMatchList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatchList {
+    return new PurchaseOrderInventoryMatchList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchaseOrderInventoryMatchList | PlainMessage<PurchaseOrderInventoryMatchList> | undefined, b: PurchaseOrderInventoryMatchList | PlainMessage<PurchaseOrderInventoryMatchList> | undefined): boolean {
+    return proto3.util.equals(PurchaseOrderInventoryMatchList, a, b);
+  }
+}
+

@@ -1528,6 +1528,14 @@ export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServ
    */
   projectId = protoInt64.zero;
 
+  /**
+   * Sales Order related filters
+   * The associated buyer client ID of the linked sales order
+   *
+   * @generated from field: uint64 buyer_client_id = 80;
+   */
+  buyerClientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<ProductionPlansServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1565,6 +1573,7 @@ export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServ
     { no: 33, name: "ends_at_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 80, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceFilterReq {
@@ -1766,6 +1775,14 @@ export class ProductionPlansServiceCountReq extends Message<ProductionPlansServi
    */
   projectId = protoInt64.zero;
 
+  /**
+   * Sales Order related filters
+   * The associated buyer client ID of the linked sales order
+   *
+   * @generated from field: uint64 buyer_client_id = 80;
+   */
+  buyerClientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<ProductionPlansServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1799,6 +1816,7 @@ export class ProductionPlansServiceCountReq extends Message<ProductionPlansServi
     { no: 33, name: "ends_at_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 80, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceCountReq {

@@ -791,11 +791,17 @@ export declare class QCSamplesServiceFilterReq extends Message<QCSamplesServiceF
     /**
      * The associated vendor ID
      *
-     * ------------------------------------------------------------
-     *
      * @generated from field: uint64 vendor_id = 55;
      */
     vendorId: bigint;
+    /**
+     * The associated buyer client ID of the linked sales order
+     *
+     * ------------------------------------------------------------
+     *
+     * @generated from field: uint64 buyer_client_id = 70;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<QCSamplesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.QCSamplesServiceFilterReq";
@@ -920,11 +926,17 @@ export declare class QCSamplesServiceCountReq extends Message<QCSamplesServiceCo
     /**
      * The associated vendor ID
      *
-     * ------------------------------------------------------------
-     *
      * @generated from field: uint64 vendor_id = 55;
      */
     vendorId: bigint;
+    /**
+     * The associated buyer client ID of the linked sales order
+     *
+     * ------------------------------------------------------------
+     *
+     * @generated from field: uint64 buyer_client_id = 70;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<QCSamplesServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.QCSamplesServiceCountReq";

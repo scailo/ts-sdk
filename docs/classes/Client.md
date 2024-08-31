@@ -76,7 +76,7 @@ Message\&lt;Client\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:390
+src/clients.scailo_pb.ts:425
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:332
+src/clients.scailo_pb.ts:367
 
 ___
 
@@ -108,7 +108,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:367
+src/clients.scailo_pb.ts:402
 
 ___
 
@@ -124,7 +124,7 @@ from field: string email = 12;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:374
+src/clients.scailo_pb.ts:409
 
 ___
 
@@ -140,7 +140,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:318
+src/clients.scailo_pb.ts:353
 
 ___
 
@@ -156,7 +156,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:388
+src/clients.scailo_pb.ts:423
 
 ___
 
@@ -172,7 +172,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:346
+src/clients.scailo_pb.ts:381
 
 ___
 
@@ -188,7 +188,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:325
+src/clients.scailo_pb.ts:360
 
 ___
 
@@ -204,7 +204,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:360
+src/clients.scailo_pb.ts:395
 
 ___
 
@@ -220,7 +220,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:381
+src/clients.scailo_pb.ts:416
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:339
+src/clients.scailo_pb.ts:374
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:353
+src/clients.scailo_pb.ts:388
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:397
+src/clients.scailo_pb.ts:432
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:395
+src/clients.scailo_pb.ts:430
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:396
+src/clients.scailo_pb.ts:431
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:423
+src/clients.scailo_pb.ts:458
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:411
+src/clients.scailo_pb.ts:446
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:415
+src/clients.scailo_pb.ts:450
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:419
+src/clients.scailo_pb.ts:454

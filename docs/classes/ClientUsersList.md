@@ -66,7 +66,7 @@ Message\&lt;ClientUsersList\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1234
+src/clients.scailo_pb.ts:1269
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ClientUser list = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1232
+src/clients.scailo_pb.ts:1267
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1241
+src/clients.scailo_pb.ts:1276
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1239
+src/clients.scailo_pb.ts:1274
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1240
+src/clients.scailo_pb.ts:1275
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1257
+src/clients.scailo_pb.ts:1292
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1245
+src/clients.scailo_pb.ts:1280
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1249
+src/clients.scailo_pb.ts:1284
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1253
+src/clients.scailo_pb.ts:1288

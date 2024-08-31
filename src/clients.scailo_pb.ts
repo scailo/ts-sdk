@@ -101,6 +101,41 @@ proto3.util.setEnumType(CLIENT_SORT_KEY, "Scailo.CLIENT_SORT_KEY", [
 
 /**
  *
+ * Describes the applicable statuses of client users
+ *
+ * @generated from enum Scailo.CLIENT_USER_STATUS
+ */
+export enum CLIENT_USER_STATUS {
+  /**
+   * Denotes that status be disregarded. This is used only within search APIs
+   *
+   * @generated from enum value: CLIENT_USER_STATUS_ANY_UNSPECIFIED = 0;
+   */
+  CLIENT_USER_STATUS_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the vendor items must have been approved
+   *
+   * @generated from enum value: CLIENT_USER_STATUS_APPROVED = 1;
+   */
+  CLIENT_USER_STATUS_APPROVED = 1,
+
+  /**
+   * Denotes that the vendor items must be waiting for approval
+   *
+   * @generated from enum value: CLIENT_USER_STATUS_UNAPPROVED = 2;
+   */
+  CLIENT_USER_STATUS_UNAPPROVED = 2,
+}
+// Retrieve enum metadata with: proto3.getEnumType(CLIENT_USER_STATUS)
+proto3.util.setEnumType(CLIENT_USER_STATUS, "Scailo.CLIENT_USER_STATUS", [
+  { no: 0, name: "CLIENT_USER_STATUS_ANY_UNSPECIFIED" },
+  { no: 1, name: "CLIENT_USER_STATUS_APPROVED" },
+  { no: 2, name: "CLIENT_USER_STATUS_UNAPPROVED" },
+]);
+
+/**
+ *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Scailo.ClientsServiceCreateRequest
@@ -1256,6 +1291,178 @@ export class ClientUsersList extends Message<ClientUsersList> {
 
   static equals(a: ClientUsersList | PlainMessage<ClientUsersList> | undefined, b: ClientUsersList | PlainMessage<ClientUsersList> | undefined): boolean {
     return proto3.util.equals(ClientUsersList, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the request payload to search client users
+ *
+ * @generated from message Scailo.ClientUsersSearchRequest
+ */
+export class ClientUsersSearchRequest extends Message<ClientUsersSearchRequest> {
+  /**
+   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   */
+  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
+   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @generated from field: int64 count = 2;
+   */
+  count = protoInt64.zero;
+
+  /**
+   * The number that need to be offset by before fetching the records
+   *
+   * @generated from field: uint64 offset = 3;
+   */
+  offset = protoInt64.zero;
+
+  /**
+   * The entity UUID that is to be used to filter records
+   *
+   * @generated from field: string entity_uuid = 6;
+   */
+  entityUuid = "";
+
+  /**
+   * The status of the users
+   *
+   * @generated from field: Scailo.CLIENT_USER_STATUS status = 7;
+   */
+  status = CLIENT_USER_STATUS.CLIENT_USER_STATUS_ANY_UNSPECIFIED;
+
+  /**
+   * Stores the client ID
+   *
+   * @generated from field: uint64 client_id = 10;
+   */
+  clientId = protoInt64.zero;
+
+  /**
+   * Stores the user ID
+   *
+   * @generated from field: uint64 user_id = 11;
+   */
+  userId = protoInt64.zero;
+
+  /**
+   * Stores an optional associate ID
+   *
+   * @generated from field: uint64 associate_id = 12;
+   */
+  associateId = protoInt64.zero;
+
+  /**
+   * Describes the key with which the search operation needs to be performed
+   *
+   * @generated from field: string search_key = 20;
+   */
+  searchKey = "";
+
+  constructor(data?: PartialMessage<ClientUsersSearchRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ClientUsersSearchRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(CLIENT_USER_STATUS) },
+    { no: 10, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientUsersSearchRequest {
+    return new ClientUsersSearchRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientUsersSearchRequest {
+    return new ClientUsersSearchRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientUsersSearchRequest {
+    return new ClientUsersSearchRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ClientUsersSearchRequest | PlainMessage<ClientUsersSearchRequest> | undefined, b: ClientUsersSearchRequest | PlainMessage<ClientUsersSearchRequest> | undefined): boolean {
+    return proto3.util.equals(ClientUsersSearchRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the response to a pagination items request
+ *
+ * @generated from message Scailo.ClientsServicePaginatedUsersResponse
+ */
+export class ClientsServicePaginatedUsersResponse extends Message<ClientsServicePaginatedUsersResponse> {
+  /**
+   * The number of records in this payload
+   *
+   * @generated from field: uint64 count = 1;
+   */
+  count = protoInt64.zero;
+
+  /**
+   * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+   *
+   * @generated from field: uint64 offset = 2;
+   */
+  offset = protoInt64.zero;
+
+  /**
+   * The total number of records that are available
+   *
+   * @generated from field: uint64 total = 3;
+   */
+  total = protoInt64.zero;
+
+  /**
+   * The list of records
+   *
+   * @generated from field: repeated Scailo.ClientUser payload = 4;
+   */
+  payload: ClientUser[] = [];
+
+  constructor(data?: PartialMessage<ClientsServicePaginatedUsersResponse>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ClientsServicePaginatedUsersResponse";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "payload", kind: "message", T: ClientUser, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientsServicePaginatedUsersResponse {
+    return new ClientsServicePaginatedUsersResponse().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServicePaginatedUsersResponse {
+    return new ClientsServicePaginatedUsersResponse().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServicePaginatedUsersResponse {
+    return new ClientsServicePaginatedUsersResponse().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ClientsServicePaginatedUsersResponse | PlainMessage<ClientsServicePaginatedUsersResponse> | undefined, b: ClientsServicePaginatedUsersResponse | PlainMessage<ClientsServicePaginatedUsersResponse> | undefined): boolean {
+    return proto3.util.equals(ClientsServicePaginatedUsersResponse, a, b);
   }
 }
 

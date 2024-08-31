@@ -1,4 +1,4 @@
-import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList } from "./clients.scailo_pb.js";
+import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginatedUsersResponse, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList, ClientUsersSearchRequest } from "./clients.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
@@ -198,6 +198,17 @@ export declare const ClientsService: {
             readonly name: "ViewClientUsers";
             readonly I: typeof Identifier;
             readonly O: typeof ClientUsersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Search through client users with pagination
+         *
+         * @generated from rpc Scailo.ClientsService.SearchClientUsersWithPagination
+         */
+        readonly searchClientUsersWithPagination: {
+            readonly name: "SearchClientUsersWithPagination";
+            readonly I: typeof ClientUsersSearchRequest;
+            readonly O: typeof ClientsServicePaginatedUsersResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

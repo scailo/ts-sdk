@@ -22,6 +22,7 @@ from message Scailo.QCSamplesServiceFilterReq
 
 ### Properties
 
+- [buyerClientId](QCSamplesServiceFilterReq.md#buyerclientid)
 - [count](QCSamplesServiceFilterReq.md#count)
 - [creationTimestampEnd](QCSamplesServiceFilterReq.md#creationtimestampend)
 - [creationTimestampStart](QCSamplesServiceFilterReq.md#creationtimestampstart)
@@ -87,9 +88,27 @@ Message\&lt;QCSamplesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1158
+src/qc_samples.scailo_pb.ts:1165
 
 ## Properties
+
+### buyerClientId
+
+• **buyerClientId**: `bigint` = `protoInt64.zero`
+
+The associated buyer client ID of the linked sales order
+
+------------------------------------------------------------
+
+**`Generated`**
+
+from field: uint64 buyer_client_id = 70;
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:1163
+
+___
 
 ### count
 
@@ -436,15 +455,13 @@ ___
 
 The associated vendor ID
 
-------------------------------------------------------------
-
 **`Generated`**
 
 from field: uint64 vendor_id = 55;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1156
+src/qc_samples.scailo_pb.ts:1154
 
 ___
 
@@ -454,7 +471,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1165
+src/qc_samples.scailo_pb.ts:1172
 
 ___
 
@@ -464,7 +481,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1163
+src/qc_samples.scailo_pb.ts:1170
 
 ___
 
@@ -474,7 +491,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1164
+src/qc_samples.scailo_pb.ts:1171
 
 ## Methods
 
@@ -762,7 +779,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1202
+src/qc_samples.scailo_pb.ts:1210
 
 ___
 
@@ -783,7 +800,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1190
+src/qc_samples.scailo_pb.ts:1198
 
 ___
 
@@ -804,7 +821,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1194
+src/qc_samples.scailo_pb.ts:1202
 
 ___
 
@@ -825,4 +842,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1198
+src/qc_samples.scailo_pb.ts:1206

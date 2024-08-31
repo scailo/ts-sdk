@@ -1149,11 +1149,18 @@ export class QCSamplesServiceFilterReq extends Message<QCSamplesServiceFilterReq
   /**
    * The associated vendor ID
    *
-   * ------------------------------------------------------------
-   *
    * @generated from field: uint64 vendor_id = 55;
    */
   vendorId = protoInt64.zero;
+
+  /**
+   * The associated buyer client ID of the linked sales order
+   *
+   * ------------------------------------------------------------
+   *
+   * @generated from field: uint64 buyer_client_id = 70;
+   */
+  buyerClientId = protoInt64.zero;
 
   constructor(data?: PartialMessage<QCSamplesServiceFilterReq>) {
     super();
@@ -1185,6 +1192,7 @@ export class QCSamplesServiceFilterReq extends Message<QCSamplesServiceFilterReq
     { no: 51, name: "goods_receipt_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 52, name: "inward_job_free_issue_material_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 55, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 70, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSamplesServiceFilterReq {
@@ -1336,11 +1344,18 @@ export class QCSamplesServiceCountReq extends Message<QCSamplesServiceCountReq> 
   /**
    * The associated vendor ID
    *
-   * ------------------------------------------------------------
-   *
    * @generated from field: uint64 vendor_id = 55;
    */
   vendorId = protoInt64.zero;
+
+  /**
+   * The associated buyer client ID of the linked sales order
+   *
+   * ------------------------------------------------------------
+   *
+   * @generated from field: uint64 buyer_client_id = 70;
+   */
+  buyerClientId = protoInt64.zero;
 
   constructor(data?: PartialMessage<QCSamplesServiceCountReq>) {
     super();
@@ -1368,6 +1383,7 @@ export class QCSamplesServiceCountReq extends Message<QCSamplesServiceCountReq> 
     { no: 51, name: "goods_receipt_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 52, name: "inward_job_free_issue_material_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 55, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 70, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSamplesServiceCountReq {

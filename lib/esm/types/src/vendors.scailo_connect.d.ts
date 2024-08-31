@@ -1,4 +1,4 @@
-import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList } from "./vendors.scailo_pb.js";
+import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginatedUsersResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList, VendorUsersSearchRequest } from "./vendors.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
@@ -307,6 +307,17 @@ export declare const VendorsService: {
             readonly name: "ViewVendorUsers";
             readonly I: typeof Identifier;
             readonly O: typeof VendorUsersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Search through vendor users with pagination
+         *
+         * @generated from rpc Scailo.VendorsService.SearchVendorUsersWithPagination
+         */
+        readonly searchVendorUsersWithPagination: {
+            readonly name: "SearchVendorUsersWithPagination";
+            readonly I: typeof VendorUsersSearchRequest;
+            readonly O: typeof VendorsServicePaginatedUsersResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

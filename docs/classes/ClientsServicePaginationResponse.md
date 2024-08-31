@@ -69,7 +69,7 @@ Message\&lt;ClientsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:587
+src/clients.scailo_pb.ts:622
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:564
+src/clients.scailo_pb.ts:599
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:571
+src/clients.scailo_pb.ts:606
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Client payload = 4;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:585
+src/clients.scailo_pb.ts:620
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:578
+src/clients.scailo_pb.ts:613
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:594
+src/clients.scailo_pb.ts:629
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:592
+src/clients.scailo_pb.ts:627
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:593
+src/clients.scailo_pb.ts:628
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:613
+src/clients.scailo_pb.ts:648
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:601
+src/clients.scailo_pb.ts:636
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:605
+src/clients.scailo_pb.ts:640
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:609
+src/clients.scailo_pb.ts:644

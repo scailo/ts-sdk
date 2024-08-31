@@ -73,7 +73,7 @@ Message\&lt;VendorsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:323
+src/vendors.scailo_pb.ts:358
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:300
+src/vendors.scailo_pb.ts:335
 
 ___
 
@@ -105,7 +105,7 @@ from field: string email = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:307
+src/vendors.scailo_pb.ts:342
 
 ___
 
@@ -121,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:272
+src/vendors.scailo_pb.ts:307
 
 ___
 
@@ -137,7 +137,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:321
+src/vendors.scailo_pb.ts:356
 
 ___
 
@@ -153,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:293
+src/vendors.scailo_pb.ts:328
 
 ___
 
@@ -169,7 +169,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:314
+src/vendors.scailo_pb.ts:349
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:279
+src/vendors.scailo_pb.ts:314
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:286
+src/vendors.scailo_pb.ts:321
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:330
+src/vendors.scailo_pb.ts:365
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:328
+src/vendors.scailo_pb.ts:363
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:329
+src/vendors.scailo_pb.ts:364
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:353
+src/vendors.scailo_pb.ts:388
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:341
+src/vendors.scailo_pb.ts:376
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:345
+src/vendors.scailo_pb.ts:380
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:349
+src/vendors.scailo_pb.ts:384

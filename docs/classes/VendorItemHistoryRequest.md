@@ -68,7 +68,7 @@ Message\&lt;VendorItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1064
+src/vendors.scailo_pb.ts:1099
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1055
+src/vendors.scailo_pb.ts:1090
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1062
+src/vendors.scailo_pb.ts:1097
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1048
+src/vendors.scailo_pb.ts:1083
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1071
+src/vendors.scailo_pb.ts:1106
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1069
+src/vendors.scailo_pb.ts:1104
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1070
+src/vendors.scailo_pb.ts:1105
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1089
+src/vendors.scailo_pb.ts:1124
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1077
+src/vendors.scailo_pb.ts:1112
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1081
+src/vendors.scailo_pb.ts:1116
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1085
+src/vendors.scailo_pb.ts:1120

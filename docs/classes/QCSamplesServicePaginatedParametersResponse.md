@@ -69,7 +69,7 @@ Message\&lt;QCSamplesServicePaginatedParametersResponse\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2254
+src/qc_samples.scailo_pb.ts:2270
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2231
+src/qc_samples.scailo_pb.ts:2247
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2238
+src/qc_samples.scailo_pb.ts:2254
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.QCSampleParameter payload = 4;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2252
+src/qc_samples.scailo_pb.ts:2268
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2245
+src/qc_samples.scailo_pb.ts:2261
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2261
+src/qc_samples.scailo_pb.ts:2277
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2259
+src/qc_samples.scailo_pb.ts:2275
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2260
+src/qc_samples.scailo_pb.ts:2276
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2280
+src/qc_samples.scailo_pb.ts:2296
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2268
+src/qc_samples.scailo_pb.ts:2284
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2272
+src/qc_samples.scailo_pb.ts:2288
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:2276
+src/qc_samples.scailo_pb.ts:2292

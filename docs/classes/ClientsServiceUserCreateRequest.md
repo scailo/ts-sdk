@@ -69,7 +69,7 @@ Message\&lt;ClientsServiceUserCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1091
+src/clients.scailo_pb.ts:1126
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 associate_id = 12;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1089
+src/clients.scailo_pb.ts:1124
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 client_id = 10;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1075
+src/clients.scailo_pb.ts:1110
 
 ___
 
@@ -117,7 +117,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1068
+src/clients.scailo_pb.ts:1103
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1082
+src/clients.scailo_pb.ts:1117
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1098
+src/clients.scailo_pb.ts:1133
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1096
+src/clients.scailo_pb.ts:1131
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1097
+src/clients.scailo_pb.ts:1132
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1117
+src/clients.scailo_pb.ts:1152
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1105
+src/clients.scailo_pb.ts:1140
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1109
+src/clients.scailo_pb.ts:1144
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1113
+src/clients.scailo_pb.ts:1148

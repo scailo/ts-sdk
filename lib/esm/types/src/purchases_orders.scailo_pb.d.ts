@@ -2132,4 +2132,78 @@ export declare class PurchaseOrderBillingStatistics extends Message<PurchaseOrde
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderBillingStatistics;
     static equals(a: PurchaseOrderBillingStatistics | PlainMessage<PurchaseOrderBillingStatistics> | undefined, b: PurchaseOrderBillingStatistics | PlainMessage<PurchaseOrderBillingStatistics> | undefined): boolean;
 }
+/**
+ *
+ * Describes the parameters that are part of a purchase order's inventory match
+ *
+ * @generated from message Scailo.PurchaseOrderInventoryMatch
+ */
+export declare class PurchaseOrderInventoryMatch extends Message<PurchaseOrderInventoryMatch> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the ordered quantity
+     *
+     * @generated from field: uint64 ordered = 10;
+     */
+    ordered: bigint;
+    /**
+     * Stores the received quantity
+     *
+     * @generated from field: uint64 received = 11;
+     */
+    received: bigint;
+    /**
+     * Stores the invoiced quantity
+     *
+     * @generated from field: uint64 invoiced = 12;
+     */
+    invoiced: bigint;
+    /**
+     * Stores the returned quantity
+     *
+     * @generated from field: uint64 returned = 13;
+     */
+    returned: bigint;
+    /**
+     * Stores the debited quantity
+     *
+     * @generated from field: uint64 debited = 14;
+     */
+    debited: bigint;
+    constructor(data?: PartialMessage<PurchaseOrderInventoryMatch>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchaseOrderInventoryMatch";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderInventoryMatch;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatch;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatch;
+    static equals(a: PurchaseOrderInventoryMatch | PlainMessage<PurchaseOrderInventoryMatch> | undefined, b: PurchaseOrderInventoryMatch | PlainMessage<PurchaseOrderInventoryMatch> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of inventory match families
+ *
+ * @generated from message Scailo.PurchaseOrderInventoryMatchList
+ */
+export declare class PurchaseOrderInventoryMatchList extends Message<PurchaseOrderInventoryMatchList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.PurchaseOrderInventoryMatch list = 1;
+     */
+    list: PurchaseOrderInventoryMatch[];
+    constructor(data?: PartialMessage<PurchaseOrderInventoryMatchList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchaseOrderInventoryMatchList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderInventoryMatchList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatchList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatchList;
+    static equals(a: PurchaseOrderInventoryMatchList | PlainMessage<PurchaseOrderInventoryMatchList> | undefined, b: PurchaseOrderInventoryMatchList | PlainMessage<PurchaseOrderInventoryMatchList> | undefined): boolean;
+}
 //# sourceMappingURL=purchases_orders.scailo_pb.d.ts.map

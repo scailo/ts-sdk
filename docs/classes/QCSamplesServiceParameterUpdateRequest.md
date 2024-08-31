@@ -70,7 +70,7 @@ Message\&lt;QCSamplesServiceParameterUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1562
+src/qc_samples.scailo_pb.ts:1578
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string description = 20;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1560
+src/qc_samples.scailo_pb.ts:1576
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1539
+src/qc_samples.scailo_pb.ts:1555
 
 ___
 
@@ -118,7 +118,7 @@ from field: int64 number_observed_value = 13;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1546
+src/qc_samples.scailo_pb.ts:1562
 
 ___
 
@@ -134,7 +134,7 @@ from field: string text_observed_value = 14;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1553
+src/qc_samples.scailo_pb.ts:1569
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1532
+src/qc_samples.scailo_pb.ts:1548
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1569
+src/qc_samples.scailo_pb.ts:1585
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1567
+src/qc_samples.scailo_pb.ts:1583
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1568
+src/qc_samples.scailo_pb.ts:1584
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1589
+src/qc_samples.scailo_pb.ts:1605
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1577
+src/qc_samples.scailo_pb.ts:1593
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1581
+src/qc_samples.scailo_pb.ts:1597
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1585
+src/qc_samples.scailo_pb.ts:1601

@@ -190,6 +190,32 @@ export declare enum VENDOR_ITEM_STATUS {
 }
 /**
  *
+ * Describes the applicable statuses of vendor users
+ *
+ * @generated from enum Scailo.VENDOR_USER_STATUS
+ */
+export declare enum VENDOR_USER_STATUS {
+    /**
+     * Denotes that status be disregarded. This is used only within search APIs
+     *
+     * @generated from enum value: VENDOR_USER_STATUS_ANY_UNSPECIFIED = 0;
+     */
+    VENDOR_USER_STATUS_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the vendor items must have been approved
+     *
+     * @generated from enum value: VENDOR_USER_STATUS_APPROVED = 1;
+     */
+    VENDOR_USER_STATUS_APPROVED = 1,
+    /**
+     * Denotes that the vendor items must be waiting for approval
+     *
+     * @generated from enum value: VENDOR_USER_STATUS_UNAPPROVED = 2;
+     */
+    VENDOR_USER_STATUS_UNAPPROVED = 2
+}
+/**
+ *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Scailo.VendorsServiceCreateRequest
@@ -1391,5 +1417,115 @@ export declare class VendorUsersList extends Message<VendorUsersList> {
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorUsersList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorUsersList;
     static equals(a: VendorUsersList | PlainMessage<VendorUsersList> | undefined, b: VendorUsersList | PlainMessage<VendorUsersList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the request payload to search vendor users
+ *
+ * @generated from message Scailo.VendorUsersSearchRequest
+ */
+export declare class VendorUsersSearchRequest extends Message<VendorUsersSearchRequest> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 6;
+     */
+    entityUuid: string;
+    /**
+     * The status of the users
+     *
+     * @generated from field: Scailo.VENDOR_USER_STATUS status = 7;
+     */
+    status: VENDOR_USER_STATUS;
+    /**
+     * Stores the vendor ID
+     *
+     * @generated from field: uint64 vendor_id = 10;
+     */
+    vendorId: bigint;
+    /**
+     * Stores the user ID
+     *
+     * @generated from field: uint64 user_id = 11;
+     */
+    userId: bigint;
+    /**
+     * Stores an optional associate ID
+     *
+     * @generated from field: uint64 associate_id = 12;
+     */
+    associateId: bigint;
+    /**
+     * Describes the key with which the search operation needs to be performed
+     *
+     * @generated from field: string search_key = 20;
+     */
+    searchKey: string;
+    constructor(data?: PartialMessage<VendorUsersSearchRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VendorUsersSearchRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorUsersSearchRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorUsersSearchRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorUsersSearchRequest;
+    static equals(a: VendorUsersSearchRequest | PlainMessage<VendorUsersSearchRequest> | undefined, b: VendorUsersSearchRequest | PlainMessage<VendorUsersSearchRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the response to a pagination items request
+ *
+ * @generated from message Scailo.VendorsServicePaginatedUsersResponse
+ */
+export declare class VendorsServicePaginatedUsersResponse extends Message<VendorsServicePaginatedUsersResponse> {
+    /**
+     * The number of records in this payload
+     *
+     * @generated from field: uint64 count = 1;
+     */
+    count: bigint;
+    /**
+     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @generated from field: uint64 offset = 2;
+     */
+    offset: bigint;
+    /**
+     * The total number of records that are available
+     *
+     * @generated from field: uint64 total = 3;
+     */
+    total: bigint;
+    /**
+     * The list of records
+     *
+     * @generated from field: repeated Scailo.VendorUser payload = 4;
+     */
+    payload: VendorUser[];
+    constructor(data?: PartialMessage<VendorsServicePaginatedUsersResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VendorsServicePaginatedUsersResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorsServicePaginatedUsersResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorsServicePaginatedUsersResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorsServicePaginatedUsersResponse;
+    static equals(a: VendorsServicePaginatedUsersResponse | PlainMessage<VendorsServicePaginatedUsersResponse> | undefined, b: VendorsServicePaginatedUsersResponse | PlainMessage<VendorsServicePaginatedUsersResponse> | undefined): boolean;
 }
 //# sourceMappingURL=vendors.scailo_pb.d.ts.map
