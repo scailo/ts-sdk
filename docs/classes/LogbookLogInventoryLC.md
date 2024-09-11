@@ -75,7 +75,7 @@ Message\&lt;LogbookLogInventoryLC\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3289
+src/base.scailo_pb.ts:3373
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: string app_comment = 15;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3280
+src/base.scailo_pb.ts:3364
 
 ___
 
@@ -107,7 +107,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3224
+src/base.scailo_pb.ts:3308
 
 ___
 
@@ -123,7 +123,7 @@ from field: bool is_active = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3231
+src/base.scailo_pb.ts:3315
 
 ___
 
@@ -139,7 +139,7 @@ from field: string name = 13;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3266
+src/base.scailo_pb.ts:3350
 
 ___
 
@@ -155,7 +155,7 @@ from field: Scailo.INVENTORY_LIFECYCLE operation = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3252
+src/base.scailo_pb.ts:3336
 
 ___
 
@@ -171,7 +171,7 @@ from field: string ref_uuid = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3245
+src/base.scailo_pb.ts:3329
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 timestamp = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3238
+src/base.scailo_pb.ts:3322
 
 ___
 
@@ -203,7 +203,7 @@ from field: string user_comment = 16;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3287
+src/base.scailo_pb.ts:3371
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 user_id = 14;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3273
+src/base.scailo_pb.ts:3357
 
 ___
 
@@ -235,7 +235,7 @@ from field: string username = 12;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3259
+src/base.scailo_pb.ts:3343
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3296
+src/base.scailo_pb.ts:3380
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3294
+src/base.scailo_pb.ts:3378
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3295
+src/base.scailo_pb.ts:3379
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3321
+src/base.scailo_pb.ts:3405
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3309
+src/base.scailo_pb.ts:3393
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3313
+src/base.scailo_pb.ts:3397
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3317
+src/base.scailo_pb.ts:3401

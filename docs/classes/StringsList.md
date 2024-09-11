@@ -1,139 +1,88 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / InventoryPartitionRequest
+[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StringsList
 
-# Class: InventoryPartitionRequest
+# Class: StringsList
 
-Describes the parameters required to partition an inventory lot
+Describes the list of simple strings, used for underlying associated items
 
 **`Generated`**
 
-from message Scailo.InventoryPartitionRequest
+from message Scailo.StringsList
 
 ## Hierarchy
 
-- `Message`\<[`InventoryPartitionRequest`](InventoryPartitionRequest.md)\>
+- `Message`\<[`StringsList`](StringsList.md)\>
 
-  ↳ **`InventoryPartitionRequest`**
+  ↳ **`StringsList`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](InventoryPartitionRequest.md#constructor)
+- [constructor](StringsList.md#constructor)
 
 ### Properties
 
-- [id](InventoryPartitionRequest.md#id)
-- [partitionQuantity](InventoryPartitionRequest.md#partitionquantity)
-- [partitionSecondaryQuantity](InventoryPartitionRequest.md#partitionsecondaryquantity)
-- [userComment](InventoryPartitionRequest.md#usercomment)
-- [fields](InventoryPartitionRequest.md#fields)
-- [runtime](InventoryPartitionRequest.md#runtime)
-- [typeName](InventoryPartitionRequest.md#typename)
+- [list](StringsList.md#list)
+- [fields](StringsList.md#fields)
+- [runtime](StringsList.md#runtime)
+- [typeName](StringsList.md#typename)
 
 ### Methods
 
-- [clone](InventoryPartitionRequest.md#clone)
-- [equals](InventoryPartitionRequest.md#equals)
-- [fromBinary](InventoryPartitionRequest.md#frombinary)
-- [fromJson](InventoryPartitionRequest.md#fromjson)
-- [fromJsonString](InventoryPartitionRequest.md#fromjsonstring)
-- [getType](InventoryPartitionRequest.md#gettype)
-- [toBinary](InventoryPartitionRequest.md#tobinary)
-- [toJSON](InventoryPartitionRequest.md#tojson)
-- [toJson](InventoryPartitionRequest.md#tojson-1)
-- [toJsonString](InventoryPartitionRequest.md#tojsonstring)
-- [equals](InventoryPartitionRequest.md#equals-1)
-- [fromBinary](InventoryPartitionRequest.md#frombinary-1)
-- [fromJson](InventoryPartitionRequest.md#fromjson-1)
-- [fromJsonString](InventoryPartitionRequest.md#fromjsonstring-1)
+- [clone](StringsList.md#clone)
+- [equals](StringsList.md#equals)
+- [fromBinary](StringsList.md#frombinary)
+- [fromJson](StringsList.md#fromjson)
+- [fromJsonString](StringsList.md#fromjsonstring)
+- [getType](StringsList.md#gettype)
+- [toBinary](StringsList.md#tobinary)
+- [toJSON](StringsList.md#tojson)
+- [toJson](StringsList.md#tojson-1)
+- [toJsonString](StringsList.md#tojsonstring)
+- [equals](StringsList.md#equals-1)
+- [fromBinary](StringsList.md#frombinary-1)
+- [fromJson](StringsList.md#fromjson-1)
+- [fromJsonString](StringsList.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new InventoryPartitionRequest**(`data?`): [`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+• **new StringsList**(`data?`): [`StringsList`](StringsList.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`InventoryPartitionRequest`](InventoryPartitionRequest.md)\> |
+| `data?` | `PartialMessage`\<[`StringsList`](StringsList.md)\> |
 
 #### Returns
 
-[`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+[`StringsList`](StringsList.md)
 
 #### Overrides
 
-Message\&lt;InventoryPartitionRequest\&gt;.constructor
+Message\&lt;StringsList\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3445
+src/base.scailo_pb.ts:2426
 
 ## Properties
 
-### id
+### list
 
-• **id**: `bigint` = `protoInt64.zero`
+• **list**: `string`[] = `[]`
 
-ID of the resource
-
-**`Generated`**
-
-from field: uint64 id = 1;
-
-#### Defined in
-
-src/base.scailo_pb.ts:3422
-
-___
-
-### partitionQuantity
-
-• **partitionQuantity**: `bigint` = `protoInt64.zero`
-
-The primary quantity of the new partition
+List of strings
 
 **`Generated`**
 
-from field: uint64 partition_quantity = 10;
+from field: repeated string list = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3436
-
-___
-
-### partitionSecondaryQuantity
-
-• **partitionSecondaryQuantity**: `bigint` = `protoInt64.zero`
-
-The secondary quantity of the new partition
-
-**`Generated`**
-
-from field: uint64 partition_secondary_quantity = 11;
-
-#### Defined in
-
-src/base.scailo_pb.ts:3443
-
-___
-
-### userComment
-
-• **userComment**: `string` = `""`
-
-Stores any comment that the user might add during this operation
-
-**`Generated`**
-
-from field: string user_comment = 2;
-
-#### Defined in
-
-src/base.scailo_pb.ts:3429
+src/base.scailo_pb.ts:2424
 
 ___
 
@@ -143,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3452
+src/base.scailo_pb.ts:2433
 
 ___
 
@@ -153,29 +102,29 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3450
+src/base.scailo_pb.ts:2431
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.InventoryPartitionRequest"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.StringsList"``
 
 #### Defined in
 
-src/base.scailo_pb.ts:3451
+src/base.scailo_pb.ts:2432
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+▸ **clone**(): [`StringsList`](StringsList.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+[`StringsList`](StringsList.md)
 
 #### Inherited from
 
@@ -198,7 +147,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`InventoryPartitionRequest`](InventoryPartitionRequest.md) \| `PlainMessage`\<[`InventoryPartitionRequest`](InventoryPartitionRequest.md)\> |
+| `other` | `undefined` \| ``null`` \| [`StringsList`](StringsList.md) \| `PlainMessage`\<[`StringsList`](StringsList.md)\> |
 
 #### Returns
 
@@ -303,7 +252,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`InventoryPartitionRequest`](InventoryPartitionRequest.md)\>
+▸ **getType**(): `MessageType`\<[`StringsList`](StringsList.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -311,7 +260,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`InventoryPartitionRequest`](InventoryPartitionRequest.md)\>
+`MessageType`\<[`StringsList`](StringsList.md)\>
 
 #### Inherited from
 
@@ -442,8 +391,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`InventoryPartitionRequest`](InventoryPartitionRequest.md) \| `PlainMessage`\<[`InventoryPartitionRequest`](InventoryPartitionRequest.md)\> |
-| `b` | `undefined` \| [`InventoryPartitionRequest`](InventoryPartitionRequest.md) \| `PlainMessage`\<[`InventoryPartitionRequest`](InventoryPartitionRequest.md)\> |
+| `a` | `undefined` \| [`StringsList`](StringsList.md) \| `PlainMessage`\<[`StringsList`](StringsList.md)\> |
+| `b` | `undefined` \| [`StringsList`](StringsList.md) \| `PlainMessage`\<[`StringsList`](StringsList.md)\> |
 
 #### Returns
 
@@ -451,13 +400,13 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3471
+src/base.scailo_pb.ts:2449
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+▸ **fromBinary**(`bytes`, `options?`): [`StringsList`](StringsList.md)
 
 #### Parameters
 
@@ -468,17 +417,17 @@ ___
 
 #### Returns
 
-[`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+[`StringsList`](StringsList.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3459
+src/base.scailo_pb.ts:2437
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`StringsList`](StringsList.md)
 
 #### Parameters
 
@@ -489,17 +438,17 @@ ___
 
 #### Returns
 
-[`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+[`StringsList`](StringsList.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3463
+src/base.scailo_pb.ts:2441
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`StringsList`](StringsList.md)
 
 #### Parameters
 
@@ -510,8 +459,8 @@ ___
 
 #### Returns
 
-[`InventoryPartitionRequest`](InventoryPartitionRequest.md)
+[`StringsList`](StringsList.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3467
+src/base.scailo_pb.ts:2445

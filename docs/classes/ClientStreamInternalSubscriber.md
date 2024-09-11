@@ -27,6 +27,7 @@ from message Scailo.ClientStreamInternalSubscriber
 - [metadata](ClientStreamInternalSubscriber.md#metadata)
 - [userComment](ClientStreamInternalSubscriber.md#usercomment)
 - [userId](ClientStreamInternalSubscriber.md#userid)
+- [userUuid](ClientStreamInternalSubscriber.md#useruuid)
 - [fields](ClientStreamInternalSubscriber.md#fields)
 - [runtime](ClientStreamInternalSubscriber.md#runtime)
 - [typeName](ClientStreamInternalSubscriber.md#typename)
@@ -70,7 +71,7 @@ Message\&lt;ClientStreamInternalSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1976
+src/clientstreams.scailo_pb.ts:1983
 
 ## Properties
 
@@ -154,13 +155,29 @@ src/clientstreams.scailo_pb.ts:1974
 
 ___
 
+### userUuid
+
+• **userUuid**: `string` = `""`
+
+Stores the user UUID (determined by the user_id)
+
+**`Generated`**
+
+from field: string user_uuid = 30;
+
+#### Defined in
+
+src/clientstreams.scailo_pb.ts:1981
+
+___
+
 ### fields
 
 ▪ `Static` `Readonly` **fields**: `FieldList`
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1983
+src/clientstreams.scailo_pb.ts:1990
 
 ___
 
@@ -170,7 +187,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1981
+src/clientstreams.scailo_pb.ts:1988
 
 ___
 
@@ -180,7 +197,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1982
+src/clientstreams.scailo_pb.ts:1989
 
 ## Methods
 
@@ -468,7 +485,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2003
+src/clientstreams.scailo_pb.ts:2011
 
 ___
 
@@ -489,7 +506,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1991
+src/clientstreams.scailo_pb.ts:1999
 
 ___
 
@@ -510,7 +527,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1995
+src/clientstreams.scailo_pb.ts:2003
 
 ___
 
@@ -531,4 +548,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1999
+src/clientstreams.scailo_pb.ts:2007

@@ -26,6 +26,7 @@ from message Scailo.VendorStreamVendorSubscriber
 - [metadata](VendorStreamVendorSubscriber.md#metadata)
 - [userComment](VendorStreamVendorSubscriber.md#usercomment)
 - [userId](VendorStreamVendorSubscriber.md#userid)
+- [userUuid](VendorStreamVendorSubscriber.md#useruuid)
 - [vendorStreamId](VendorStreamVendorSubscriber.md#vendorstreamid)
 - [fields](VendorStreamVendorSubscriber.md#fields)
 - [runtime](VendorStreamVendorSubscriber.md#runtime)
@@ -70,7 +71,7 @@ Message\&lt;VendorStreamVendorSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2200
+src/vendorstreams.scailo_pb.ts:2215
 
 ## Properties
 
@@ -86,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2170
+src/vendorstreams.scailo_pb.ts:2178
 
 ___
 
@@ -102,7 +103,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2177
+src/vendorstreams.scailo_pb.ts:2185
 
 ___
 
@@ -118,7 +119,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2184
+src/vendorstreams.scailo_pb.ts:2192
 
 ___
 
@@ -134,7 +135,23 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2198
+src/vendorstreams.scailo_pb.ts:2206
+
+___
+
+### userUuid
+
+• **userUuid**: `string` = `""`
+
+Stores the user UUID (determined by the user_id)
+
+**`Generated`**
+
+from field: string user_uuid = 30;
+
+#### Defined in
+
+src/vendorstreams.scailo_pb.ts:2213
 
 ___
 
@@ -150,7 +167,7 @@ from field: uint64 vendor_stream_id = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2191
+src/vendorstreams.scailo_pb.ts:2199
 
 ___
 
@@ -160,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2207
+src/vendorstreams.scailo_pb.ts:2222
 
 ___
 
@@ -170,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2205
+src/vendorstreams.scailo_pb.ts:2220
 
 ___
 
@@ -180,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2206
+src/vendorstreams.scailo_pb.ts:2221
 
 ## Methods
 
@@ -468,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2227
+src/vendorstreams.scailo_pb.ts:2243
 
 ___
 
@@ -489,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2215
+src/vendorstreams.scailo_pb.ts:2231
 
 ___
 
@@ -510,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2219
+src/vendorstreams.scailo_pb.ts:2235
 
 ___
 
@@ -531,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2223
+src/vendorstreams.scailo_pb.ts:2239

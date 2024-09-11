@@ -1,5 +1,5 @@
 import { User, UsersList, UsersServiceCountReq, UsersServiceCreateRequest, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users.scailo_pb.js";
-import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierUUID, IdentifierWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
+import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -297,6 +297,39 @@ export declare const UsersService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof UsersServicePaginationReq;
             readonly O: typeof UsersServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all users with the given IDs
+         *
+         * @generated from rpc Scailo.UsersService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof UsersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all users with the given UUIDs
+         *
+         * @generated from rpc Scailo.UsersService.ViewFromUUIDs
+         */
+        readonly viewFromUUIDs: {
+            readonly name: "ViewFromUUIDs";
+            readonly I: typeof IdentifierUUIDsList;
+            readonly O: typeof UsersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all users with the given usernames
+         *
+         * @generated from rpc Scailo.UsersService.ViewFromUsernames
+         */
+        readonly viewFromUsernames: {
+            readonly name: "ViewFromUsernames";
+            readonly I: typeof StringsList;
+            readonly O: typeof UsersList;
             readonly kind: MethodKind.Unary;
         };
         /**

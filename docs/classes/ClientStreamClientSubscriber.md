@@ -27,6 +27,7 @@ from message Scailo.ClientStreamClientSubscriber
 - [metadata](ClientStreamClientSubscriber.md#metadata)
 - [userComment](ClientStreamClientSubscriber.md#usercomment)
 - [userId](ClientStreamClientSubscriber.md#userid)
+- [userUuid](ClientStreamClientSubscriber.md#useruuid)
 - [fields](ClientStreamClientSubscriber.md#fields)
 - [runtime](ClientStreamClientSubscriber.md#runtime)
 - [typeName](ClientStreamClientSubscriber.md#typename)
@@ -70,7 +71,7 @@ Message\&lt;ClientStreamClientSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2216
+src/clientstreams.scailo_pb.ts:2231
 
 ## Properties
 
@@ -86,7 +87,7 @@ from field: uint64 client_stream_id = 10;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2207
+src/clientstreams.scailo_pb.ts:2215
 
 ___
 
@@ -102,7 +103,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2186
+src/clientstreams.scailo_pb.ts:2194
 
 ___
 
@@ -118,7 +119,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2193
+src/clientstreams.scailo_pb.ts:2201
 
 ___
 
@@ -134,7 +135,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2200
+src/clientstreams.scailo_pb.ts:2208
 
 ___
 
@@ -150,7 +151,23 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2214
+src/clientstreams.scailo_pb.ts:2222
+
+___
+
+### userUuid
+
+• **userUuid**: `string` = `""`
+
+Stores the user UUID (determined by the user_id)
+
+**`Generated`**
+
+from field: string user_uuid = 30;
+
+#### Defined in
+
+src/clientstreams.scailo_pb.ts:2229
 
 ___
 
@@ -160,7 +177,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2223
+src/clientstreams.scailo_pb.ts:2238
 
 ___
 
@@ -170,7 +187,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2221
+src/clientstreams.scailo_pb.ts:2236
 
 ___
 
@@ -180,7 +197,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2222
+src/clientstreams.scailo_pb.ts:2237
 
 ## Methods
 
@@ -468,7 +485,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2243
+src/clientstreams.scailo_pb.ts:2259
 
 ___
 
@@ -489,7 +506,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2231
+src/clientstreams.scailo_pb.ts:2247
 
 ___
 
@@ -510,7 +527,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2235
+src/clientstreams.scailo_pb.ts:2251
 
 ___
 
@@ -531,4 +548,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2239
+src/clientstreams.scailo_pb.ts:2255

@@ -26,6 +26,7 @@ from message Scailo.VendorStreamInternalSubscriber
 - [metadata](VendorStreamInternalSubscriber.md#metadata)
 - [userComment](VendorStreamInternalSubscriber.md#usercomment)
 - [userId](VendorStreamInternalSubscriber.md#userid)
+- [userUuid](VendorStreamInternalSubscriber.md#useruuid)
 - [vendorStreamId](VendorStreamInternalSubscriber.md#vendorstreamid)
 - [fields](VendorStreamInternalSubscriber.md#fields)
 - [runtime](VendorStreamInternalSubscriber.md#runtime)
@@ -70,7 +71,7 @@ Message\&lt;VendorStreamInternalSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1960
+src/vendorstreams.scailo_pb.ts:1967
 
 ## Properties
 
@@ -138,6 +139,22 @@ src/vendorstreams.scailo_pb.ts:1958
 
 ___
 
+### userUuid
+
+• **userUuid**: `string` = `""`
+
+Stores the user UUID (determined by the user_id)
+
+**`Generated`**
+
+from field: string user_uuid = 30;
+
+#### Defined in
+
+src/vendorstreams.scailo_pb.ts:1965
+
+___
+
 ### vendorStreamId
 
 • **vendorStreamId**: `bigint` = `protoInt64.zero`
@@ -160,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1967
+src/vendorstreams.scailo_pb.ts:1974
 
 ___
 
@@ -170,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1965
+src/vendorstreams.scailo_pb.ts:1972
 
 ___
 
@@ -180,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1966
+src/vendorstreams.scailo_pb.ts:1973
 
 ## Methods
 
@@ -468,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1987
+src/vendorstreams.scailo_pb.ts:1995
 
 ___
 
@@ -489,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1975
+src/vendorstreams.scailo_pb.ts:1983
 
 ___
 
@@ -510,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1979
+src/vendorstreams.scailo_pb.ts:1987
 
 ___
 
@@ -531,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1983
+src/vendorstreams.scailo_pb.ts:1991

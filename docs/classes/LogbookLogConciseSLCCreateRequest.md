@@ -71,7 +71,7 @@ Message\&lt;LogbookLogConciseSLCCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2833
+src/base.scailo_pb.ts:2917
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string app_comment = 13;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2824
+src/base.scailo_pb.ts:2908
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS operation = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2810
+src/base.scailo_pb.ts:2894
 
 ___
 
@@ -119,7 +119,7 @@ from field: string ref_uuid = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2803
+src/base.scailo_pb.ts:2887
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 timestamp = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2796
+src/base.scailo_pb.ts:2880
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_comment = 14;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2831
+src/base.scailo_pb.ts:2915
 
 ___
 
@@ -167,7 +167,7 @@ from field: string username = 12;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2817
+src/base.scailo_pb.ts:2901
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2840
+src/base.scailo_pb.ts:2924
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2838
+src/base.scailo_pb.ts:2922
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2839
+src/base.scailo_pb.ts:2923
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2861
+src/base.scailo_pb.ts:2945
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2849
+src/base.scailo_pb.ts:2933
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2853
+src/base.scailo_pb.ts:2937
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2857
+src/base.scailo_pb.ts:2941

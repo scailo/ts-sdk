@@ -2411,6 +2411,48 @@ export class IdentifiersList extends Message<IdentifiersList> {
 
 /**
  *
+ * Describes the list of simple strings, used for underlying associated items
+ *
+ * @generated from message Scailo.StringsList
+ */
+export class StringsList extends Message<StringsList> {
+  /**
+   * List of strings
+   *
+   * @generated from field: repeated string list = 1;
+   */
+  list: string[] = [];
+
+  constructor(data?: PartialMessage<StringsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.StringsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StringsList {
+    return new StringsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StringsList {
+    return new StringsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StringsList {
+    return new StringsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: StringsList | PlainMessage<StringsList> | undefined, b: StringsList | PlainMessage<StringsList> | undefined): boolean {
+    return proto3.util.equals(StringsList, a, b);
+  }
+}
+
+/**
+ *
  * Describes the standard identifier with a user comment. Useful when an operation needs to be performed, and a user comment needs to be recorded
  *
  * @generated from message Scailo.IdentifierWithUserComment
@@ -2664,6 +2706,48 @@ export class IdentifierUUID extends Message<IdentifierUUID> {
 
   static equals(a: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined, b: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined): boolean {
     return proto3.util.equals(IdentifierUUID, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of UUID identifiers, used for identifying associated items
+ *
+ * @generated from message Scailo.IdentifierUUIDsList
+ */
+export class IdentifierUUIDsList extends Message<IdentifierUUIDsList> {
+  /**
+   * List of UUID identifiers
+   *
+   * @generated from field: repeated Scailo.IdentifierUUID list = 1;
+   */
+  list: IdentifierUUID[] = [];
+
+  constructor(data?: PartialMessage<IdentifierUUIDsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.IdentifierUUIDsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: IdentifierUUID, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierUUIDsList {
+    return new IdentifierUUIDsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUIDsList {
+    return new IdentifierUUIDsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUIDsList {
+    return new IdentifierUUIDsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: IdentifierUUIDsList | PlainMessage<IdentifierUUIDsList> | undefined, b: IdentifierUUIDsList | PlainMessage<IdentifierUUIDsList> | undefined): boolean {
+    return proto3.util.equals(IdentifierUUIDsList, a, b);
   }
 }
 

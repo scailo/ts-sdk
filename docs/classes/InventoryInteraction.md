@@ -73,7 +73,7 @@ Message\&lt;InventoryInteraction\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3455
+src/base.scailo_pb.ts:3539
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.INVENTORY_INTERACTION_CATEGORY category = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3418
+src/base.scailo_pb.ts:3502
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3404
+src/base.scailo_pb.ts:3488
 
 ___
 
@@ -121,7 +121,7 @@ from field: int64 internal_quantity = 15;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3453
+src/base.scailo_pb.ts:3537
 
 ___
 
@@ -137,7 +137,7 @@ from field: string inventory_ref_uuid = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3425
+src/base.scailo_pb.ts:3509
 
 ___
 
@@ -153,7 +153,7 @@ from field: string issued_inventory_hash = 12;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3432
+src/base.scailo_pb.ts:3516
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 issued_ref_id = 14;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3446
+src/base.scailo_pb.ts:3530
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.INVENTORY_ISSUED_PURPOSE issued_ref_purpose = 13;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3439
+src/base.scailo_pb.ts:3523
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3411
+src/base.scailo_pb.ts:3495
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3462
+src/base.scailo_pb.ts:3546
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3460
+src/base.scailo_pb.ts:3544
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3461
+src/base.scailo_pb.ts:3545
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3485
+src/base.scailo_pb.ts:3569
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3473
+src/base.scailo_pb.ts:3557
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3477
+src/base.scailo_pb.ts:3561
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3481
+src/base.scailo_pb.ts:3565

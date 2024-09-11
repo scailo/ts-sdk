@@ -1554,6 +1554,28 @@ export declare class IdentifiersList extends Message<IdentifiersList> {
 }
 /**
  *
+ * Describes the list of simple strings, used for underlying associated items
+ *
+ * @generated from message Scailo.StringsList
+ */
+export declare class StringsList extends Message<StringsList> {
+    /**
+     * List of strings
+     *
+     * @generated from field: repeated string list = 1;
+     */
+    list: string[];
+    constructor(data?: PartialMessage<StringsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.StringsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StringsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StringsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StringsList;
+    static equals(a: StringsList | PlainMessage<StringsList> | undefined, b: StringsList | PlainMessage<StringsList> | undefined): boolean;
+}
+/**
+ *
  * Describes the standard identifier with a user comment. Useful when an operation needs to be performed, and a user comment needs to be recorded
  *
  * @generated from message Scailo.IdentifierWithUserComment
@@ -1697,6 +1719,28 @@ export declare class IdentifierUUID extends Message<IdentifierUUID> {
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUID;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUID;
     static equals(a: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined, b: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of UUID identifiers, used for identifying associated items
+ *
+ * @generated from message Scailo.IdentifierUUIDsList
+ */
+export declare class IdentifierUUIDsList extends Message<IdentifierUUIDsList> {
+    /**
+     * List of UUID identifiers
+     *
+     * @generated from field: repeated Scailo.IdentifierUUID list = 1;
+     */
+    list: IdentifierUUID[];
+    constructor(data?: PartialMessage<IdentifierUUIDsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.IdentifierUUIDsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierUUIDsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUIDsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUIDsList;
+    static equals(a: IdentifierUUIDsList | PlainMessage<IdentifierUUIDsList> | undefined, b: IdentifierUUIDsList | PlainMessage<IdentifierUUIDsList> | undefined): boolean;
 }
 /**
  *

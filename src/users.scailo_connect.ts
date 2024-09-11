@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { User, UsersList, UsersServiceCountReq, UsersServiceCreateRequest, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users.scailo_pb.js";
-import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierUUID, IdentifierWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
+import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -303,6 +303,39 @@ export const UsersService = {
       name: "ViewWithPagination",
       I: UsersServicePaginationReq,
       O: UsersServicePaginationResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all users with the given IDs
+     *
+     * @generated from rpc Scailo.UsersService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: UsersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all users with the given UUIDs
+     *
+     * @generated from rpc Scailo.UsersService.ViewFromUUIDs
+     */
+    viewFromUUIDs: {
+      name: "ViewFromUUIDs",
+      I: IdentifierUUIDsList,
+      O: UsersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all users with the given usernames
+     *
+     * @generated from rpc Scailo.UsersService.ViewFromUsernames
+     */
+    viewFromUsernames: {
+      name: "ViewFromUsernames",
+      I: StringsList,
+      O: UsersList,
       kind: MethodKind.Unary,
     },
     /**
