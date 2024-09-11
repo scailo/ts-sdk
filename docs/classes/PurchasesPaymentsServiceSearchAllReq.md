@@ -30,6 +30,7 @@ from message Scailo.PurchasesPaymentsServiceSearchAllReq
 - [sortKey](PurchasesPaymentsServiceSearchAllReq.md#sortkey)
 - [sortOrder](PurchasesPaymentsServiceSearchAllReq.md#sortorder)
 - [status](PurchasesPaymentsServiceSearchAllReq.md#status)
+- [vendorId](PurchasesPaymentsServiceSearchAllReq.md#vendorid)
 - [fields](PurchasesPaymentsServiceSearchAllReq.md#fields)
 - [runtime](PurchasesPaymentsServiceSearchAllReq.md#runtime)
 - [typeName](PurchasesPaymentsServiceSearchAllReq.md#typename)
@@ -73,7 +74,7 @@ Message\&lt;PurchasesPaymentsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1276
+src/purchases_payments.scailo_pb.ts:1283
 
 ## Properties
 
@@ -205,13 +206,29 @@ src/purchases_payments.scailo_pb.ts:1267
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+The ID of the associated vendor
+
+**`Generated`**
+
+from field: uint64 vendor_id = 25;
+
+#### Defined in
+
+src/purchases_payments.scailo_pb.ts:1281
+
+___
+
 ### fields
 
 ▪ `Static` `Readonly` **fields**: `FieldList`
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1283
+src/purchases_payments.scailo_pb.ts:1290
 
 ___
 
@@ -221,7 +238,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1281
+src/purchases_payments.scailo_pb.ts:1288
 
 ___
 
@@ -231,7 +248,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1282
+src/purchases_payments.scailo_pb.ts:1289
 
 ## Methods
 
@@ -519,7 +536,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1306
+src/purchases_payments.scailo_pb.ts:1314
 
 ___
 
@@ -540,7 +557,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1294
+src/purchases_payments.scailo_pb.ts:1302
 
 ___
 
@@ -561,7 +578,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1298
+src/purchases_payments.scailo_pb.ts:1306
 
 ___
 
@@ -582,4 +599,4 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1302
+src/purchases_payments.scailo_pb.ts:1310

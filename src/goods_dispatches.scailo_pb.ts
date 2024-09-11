@@ -2142,6 +2142,21 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    */
   billingStatus = GOODS_DISPATCH_BILLING_STATUS.GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED;
 
+  /**
+   * Sales Order related filters
+   * The associated consignee client ID of the linked sales order
+   *
+   * @generated from field: uint64 consignee_client_id = 50;
+   */
+  consigneeClientId = protoInt64.zero;
+
+  /**
+   * The associated buyer client ID of the linked sales order
+   *
+   * @generated from field: uint64 buyer_client_id = 51;
+   */
+  buyerClientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<GoodsDispatchesServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2161,6 +2176,8 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceSearchAllReq {

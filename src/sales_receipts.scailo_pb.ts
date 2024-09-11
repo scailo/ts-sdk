@@ -1273,6 +1273,21 @@ export class SalesReceiptsServiceSearchAllReq extends Message<SalesReceiptsServi
    */
   searchKey = "";
 
+  /**
+   * Sales Order related filters
+   * The associated consignee client ID of the linked sales order
+   *
+   * @generated from field: uint64 consignee_client_id = 60;
+   */
+  consigneeClientId = protoInt64.zero;
+
+  /**
+   * The associated buyer client ID of the linked sales order
+   *
+   * @generated from field: uint64 buyer_client_id = 61;
+   */
+  buyerClientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<SalesReceiptsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1289,6 +1304,8 @@ export class SalesReceiptsServiceSearchAllReq extends Message<SalesReceiptsServi
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 61, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReceiptsServiceSearchAllReq {

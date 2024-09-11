@@ -2044,6 +2044,21 @@ export class SalesReturnsServiceSearchAllReq extends Message<SalesReturnsService
    */
   billingStatus = SALES_RETURN_BILLING_STATUS.SALES_RETURN_BILLING_STATUS_ANY_UNSPECIFIED;
 
+  /**
+   * Sales Order related filters
+   * The associated consignee client ID of the linked sales order
+   *
+   * @generated from field: uint64 consignee_client_id = 60;
+   */
+  consigneeClientId = protoInt64.zero;
+
+  /**
+   * The associated buyer client ID of the linked sales order
+   *
+   * @generated from field: uint64 buyer_client_id = 61;
+   */
+  buyerClientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<SalesReturnsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2063,6 +2078,8 @@ export class SalesReturnsServiceSearchAllReq extends Message<SalesReturnsService
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(SALES_RETURN_BILLING_STATUS) },
+    { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 61, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReturnsServiceSearchAllReq {

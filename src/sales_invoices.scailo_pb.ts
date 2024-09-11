@@ -2169,11 +2169,19 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
   refId = protoInt64.zero;
 
   /**
-   * The ID of the associated client
+   * Sales Order related filters
+   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 client_id = 25;
+   * @generated from field: uint64 consignee_client_id = 50;
    */
-  clientId = protoInt64.zero;
+  consigneeClientId = protoInt64.zero;
+
+  /**
+   * The associated buyer client ID of the linked sales order
+   *
+   * @generated from field: uint64 buyer_client_id = 51;
+   */
+  buyerClientId = protoInt64.zero;
 
   constructor(data?: PartialMessage<SalesInvoicesServiceSearchAllReq>) {
     super();
@@ -2193,7 +2201,8 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceSearchAllReq {

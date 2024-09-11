@@ -1493,6 +1493,23 @@ export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
    */
   workEmail = "";
 
+  /**
+   * --------------------------------------------------------------------------------
+   * Filter by the associated vendor ID (return all the users that belong to this vendor)
+   *
+   * @generated from field: uint64 vendor_id = 70;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   * Filter by the associated client ID (return all the users that belong to this client)
+   *
+   * --------------------------------------------------------------------------------
+   *
+   * @generated from field: uint64 client_id = 71;
+   */
+  clientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<UsersServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1531,6 +1548,8 @@ export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
     { no: 31, name: "payroll_currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 32, name: "basic_pay_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 33, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 70, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 71, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceFilterReq {
@@ -1739,6 +1758,23 @@ export class UsersServiceCountReq extends Message<UsersServiceCountReq> {
    */
   workEmail = "";
 
+  /**
+   * --------------------------------------------------------------------------------
+   * Filter by the associated vendor ID (return all the users that belong to this vendor)
+   *
+   * @generated from field: uint64 vendor_id = 70;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   * Filter by the associated client ID (return all the users that belong to this client)
+   *
+   * --------------------------------------------------------------------------------
+   *
+   * @generated from field: uint64 client_id = 71;
+   */
+  clientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<UsersServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1773,6 +1809,8 @@ export class UsersServiceCountReq extends Message<UsersServiceCountReq> {
     { no: 31, name: "payroll_currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 32, name: "basic_pay_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 33, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 70, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 71, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceCountReq {
@@ -1862,6 +1900,23 @@ export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> 
    */
   searchKey = "";
 
+  /**
+   * --------------------------------------------------------------------------------
+   * Filter by the associated vendor ID (return all the users that belong to this vendor)
+   *
+   * @generated from field: uint64 vendor_id = 70;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   * Filter by the associated client ID (return all the users that belong to this client)
+   *
+   * --------------------------------------------------------------------------------
+   *
+   * @generated from field: uint64 client_id = 71;
+   */
+  clientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<UsersServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1879,6 +1934,8 @@ export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> 
     { no: 7, name: "user_type", kind: "enum", T: proto3.getEnumType(USER_TYPE) },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 70, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 71, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceSearchAllReq {

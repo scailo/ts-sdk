@@ -33,6 +33,7 @@ from message Scailo.PurchasesReturnsServiceSearchAllReq
 - [sortKey](PurchasesReturnsServiceSearchAllReq.md#sortkey)
 - [sortOrder](PurchasesReturnsServiceSearchAllReq.md#sortorder)
 - [status](PurchasesReturnsServiceSearchAllReq.md#status)
+- [vendorId](PurchasesReturnsServiceSearchAllReq.md#vendorid)
 - [fields](PurchasesReturnsServiceSearchAllReq.md#fields)
 - [runtime](PurchasesReturnsServiceSearchAllReq.md#runtime)
 - [typeName](PurchasesReturnsServiceSearchAllReq.md#typename)
@@ -76,7 +77,7 @@ Message\&lt;PurchasesReturnsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2029
+src/purchases_returns.scailo_pb.ts:2036
 
 ## Properties
 
@@ -256,13 +257,29 @@ src/purchases_returns.scailo_pb.ts:1999
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+The ID of the associated vendor
+
+**`Generated`**
+
+from field: uint64 vendor_id = 50;
+
+#### Defined in
+
+src/purchases_returns.scailo_pb.ts:2034
+
+___
+
 ### fields
 
 ▪ `Static` `Readonly` **fields**: `FieldList`
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2036
+src/purchases_returns.scailo_pb.ts:2043
 
 ___
 
@@ -272,7 +289,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2034
+src/purchases_returns.scailo_pb.ts:2041
 
 ___
 
@@ -282,7 +299,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2035
+src/purchases_returns.scailo_pb.ts:2042
 
 ## Methods
 
@@ -570,7 +587,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2062
+src/purchases_returns.scailo_pb.ts:2070
 
 ___
 
@@ -591,7 +608,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2050
+src/purchases_returns.scailo_pb.ts:2058
 
 ___
 
@@ -612,7 +629,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2054
+src/purchases_returns.scailo_pb.ts:2062
 
 ___
 
@@ -633,4 +650,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2058
+src/purchases_returns.scailo_pb.ts:2066

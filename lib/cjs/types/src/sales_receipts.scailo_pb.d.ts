@@ -882,6 +882,19 @@ export declare class SalesReceiptsServiceSearchAllReq extends Message<SalesRecei
      * @generated from field: string search_key = 11;
      */
     searchKey: string;
+    /**
+     * Sales Order related filters
+     * The associated consignee client ID of the linked sales order
+     *
+     * @generated from field: uint64 consignee_client_id = 60;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The associated buyer client ID of the linked sales order
+     *
+     * @generated from field: uint64 buyer_client_id = 61;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<SalesReceiptsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesReceiptsServiceSearchAllReq";

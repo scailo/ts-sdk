@@ -1363,6 +1363,12 @@ export declare class PurchasesReturnsServiceSearchAllReq extends Message<Purchas
      * @generated from field: Scailo.PURCHASE_RETURN_BILLING_STATUS billing_status = 40;
      */
     billingStatus: PURCHASE_RETURN_BILLING_STATUS;
+    /**
+     * The ID of the associated vendor
+     *
+     * @generated from field: uint64 vendor_id = 50;
+     */
+    vendorId: bigint;
     constructor(data?: PartialMessage<PurchasesReturnsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.PurchasesReturnsServiceSearchAllReq";

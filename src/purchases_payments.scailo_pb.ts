@@ -1273,6 +1273,13 @@ export class PurchasesPaymentsServiceSearchAllReq extends Message<PurchasesPayme
    */
   searchKey = "";
 
+  /**
+   * The ID of the associated vendor
+   *
+   * @generated from field: uint64 vendor_id = 25;
+   */
+  vendorId = protoInt64.zero;
+
   constructor(data?: PartialMessage<PurchasesPaymentsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1289,6 +1296,7 @@ export class PurchasesPaymentsServiceSearchAllReq extends Message<PurchasesPayme
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 25, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceSearchAllReq {

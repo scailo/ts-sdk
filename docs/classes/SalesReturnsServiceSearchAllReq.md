@@ -23,6 +23,8 @@ from message Scailo.SalesReturnsServiceSearchAllReq
 ### Properties
 
 - [billingStatus](SalesReturnsServiceSearchAllReq.md#billingstatus)
+- [buyerClientId](SalesReturnsServiceSearchAllReq.md#buyerclientid)
+- [consigneeClientId](SalesReturnsServiceSearchAllReq.md#consigneeclientid)
 - [count](SalesReturnsServiceSearchAllReq.md#count)
 - [entityUuid](SalesReturnsServiceSearchAllReq.md#entityuuid)
 - [isActive](SalesReturnsServiceSearchAllReq.md#isactive)
@@ -76,7 +78,7 @@ Message\&lt;SalesReturnsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2047
+src/sales_returns.scailo_pb.ts:2062
 
 ## Properties
 
@@ -93,6 +95,39 @@ from field: Scailo.SALES_RETURN_BILLING_STATUS billing_status = 40;
 #### Defined in
 
 src/sales_returns.scailo_pb.ts:2045
+
+___
+
+### buyerClientId
+
+• **buyerClientId**: `bigint` = `protoInt64.zero`
+
+The associated buyer client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 buyer_client_id = 61;
+
+#### Defined in
+
+src/sales_returns.scailo_pb.ts:2060
+
+___
+
+### consigneeClientId
+
+• **consigneeClientId**: `bigint` = `protoInt64.zero`
+
+Sales Order related filters
+The associated consignee client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 consignee_client_id = 60;
+
+#### Defined in
+
+src/sales_returns.scailo_pb.ts:2053
 
 ___
 
@@ -262,7 +297,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2054
+src/sales_returns.scailo_pb.ts:2069
 
 ___
 
@@ -272,7 +307,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2052
+src/sales_returns.scailo_pb.ts:2067
 
 ___
 
@@ -282,7 +317,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2053
+src/sales_returns.scailo_pb.ts:2068
 
 ## Methods
 
@@ -570,7 +605,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2080
+src/sales_returns.scailo_pb.ts:2097
 
 ___
 
@@ -591,7 +626,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2068
+src/sales_returns.scailo_pb.ts:2085
 
 ___
 
@@ -612,7 +647,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2072
+src/sales_returns.scailo_pb.ts:2089
 
 ___
 
@@ -633,4 +668,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2076
+src/sales_returns.scailo_pb.ts:2093

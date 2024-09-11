@@ -321,7 +321,7 @@ export class CreditNotesServiceCreateRequest extends Message<CreditNotesServiceC
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 18;
+   * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
@@ -350,7 +350,7 @@ export class CreditNotesServiceCreateRequest extends Message<CreditNotesServiceC
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -444,7 +444,7 @@ export class CreditNotesServiceUpdateRequest extends Message<CreditNotesServiceU
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 18;
+   * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
@@ -472,7 +472,7 @@ export class CreditNotesServiceUpdateRequest extends Message<CreditNotesServiceU
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -658,7 +658,7 @@ export class CreditNote extends Message<CreditNote> {
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 18;
+   * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
@@ -706,7 +706,7 @@ export class CreditNote extends Message<CreditNote> {
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 20, name: "total_value", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
     { no: 30, name: "list", kind: "message", T: CreditNoteItem, repeated: true },
     { no: 40, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
@@ -802,7 +802,7 @@ export class CreditNotesServiceItemCreateRequest extends Message<CreditNotesServ
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 18;
+   * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
@@ -830,7 +830,7 @@ export class CreditNotesServiceItemCreateRequest extends Message<CreditNotesServ
     { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -917,7 +917,7 @@ export class CreditNotesServiceItemUpdateRequest extends Message<CreditNotesServ
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 18;
+   * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
@@ -944,7 +944,7 @@ export class CreditNotesServiceItemUpdateRequest extends Message<CreditNotesServ
     { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -1066,7 +1066,7 @@ export class CreditNoteItem extends Message<CreditNoteItem> {
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 18;
+   * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
@@ -1098,7 +1098,7 @@ export class CreditNoteItem extends Message<CreditNoteItem> {
     { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -2293,11 +2293,19 @@ export class CreditNotesServiceSearchAllReq extends Message<CreditNotesServiceSe
   refId = protoInt64.zero;
 
   /**
-   * The ID of the associated client
+   * Sales Order related filters
+   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 client_id = 25;
+   * @generated from field: uint64 consignee_client_id = 50;
    */
-  clientId = protoInt64.zero;
+  consigneeClientId = protoInt64.zero;
+
+  /**
+   * The associated buyer client ID of the linked sales order
+   *
+   * @generated from field: uint64 buyer_client_id = 51;
+   */
+  buyerClientId = protoInt64.zero;
 
   constructor(data?: PartialMessage<CreditNotesServiceSearchAllReq>) {
     super();
@@ -2317,7 +2325,8 @@ export class CreditNotesServiceSearchAllReq extends Message<CreditNotesServiceSe
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNotesServiceSearchAllReq {

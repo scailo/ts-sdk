@@ -1439,6 +1439,12 @@ export declare class GoodsReceiptsServiceSearchAllReq extends Message<GoodsRecei
      * @generated from field: Scailo.GOODS_RECEIPT_BILLING_STATUS billing_status = 40;
      */
     billingStatus: GOODS_RECEIPT_BILLING_STATUS;
+    /**
+     * The ID of the associated vendor
+     *
+     * @generated from field: uint64 vendor_id = 50;
+     */
+    vendorId: bigint;
     constructor(data?: PartialMessage<GoodsReceiptsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.GoodsReceiptsServiceSearchAllReq";

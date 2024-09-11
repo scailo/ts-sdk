@@ -69,7 +69,7 @@ Message\&lt;UsersServiceRegisterMobileDeviceRequest\&gt;.constructor
 
 #### Defined in
 
-src/users.scailo_pb.ts:1936
+src/users.scailo_pb.ts:1993
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string device_os = 12;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1927
+src/users.scailo_pb.ts:1984
 
 ___
 
@@ -101,7 +101,7 @@ from field: string device_token = 13;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1934
+src/users.scailo_pb.ts:1991
 
 ___
 
@@ -117,7 +117,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1913
+src/users.scailo_pb.ts:1970
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1920
+src/users.scailo_pb.ts:1977
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1943
+src/users.scailo_pb.ts:2000
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1941
+src/users.scailo_pb.ts:1998
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1942
+src/users.scailo_pb.ts:1999
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1962
+src/users.scailo_pb.ts:2019
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1950
+src/users.scailo_pb.ts:2007
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1954
+src/users.scailo_pb.ts:2011
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1958
+src/users.scailo_pb.ts:2015

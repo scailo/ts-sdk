@@ -22,6 +22,8 @@ from message Scailo.SalesReceiptsServiceSearchAllReq
 
 ### Properties
 
+- [buyerClientId](SalesReceiptsServiceSearchAllReq.md#buyerclientid)
+- [consigneeClientId](SalesReceiptsServiceSearchAllReq.md#consigneeclientid)
 - [count](SalesReceiptsServiceSearchAllReq.md#count)
 - [entityUuid](SalesReceiptsServiceSearchAllReq.md#entityuuid)
 - [isActive](SalesReceiptsServiceSearchAllReq.md#isactive)
@@ -73,9 +75,42 @@ Message\&lt;SalesReceiptsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1276
+src/sales_receipts.scailo_pb.ts:1291
 
 ## Properties
+
+### buyerClientId
+
+• **buyerClientId**: `bigint` = `protoInt64.zero`
+
+The associated buyer client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 buyer_client_id = 61;
+
+#### Defined in
+
+src/sales_receipts.scailo_pb.ts:1289
+
+___
+
+### consigneeClientId
+
+• **consigneeClientId**: `bigint` = `protoInt64.zero`
+
+Sales Order related filters
+The associated consignee client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 consignee_client_id = 60;
+
+#### Defined in
+
+src/sales_receipts.scailo_pb.ts:1282
+
+___
 
 ### count
 
@@ -211,7 +246,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1283
+src/sales_receipts.scailo_pb.ts:1298
 
 ___
 
@@ -221,7 +256,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1281
+src/sales_receipts.scailo_pb.ts:1296
 
 ___
 
@@ -231,7 +266,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1282
+src/sales_receipts.scailo_pb.ts:1297
 
 ## Methods
 
@@ -519,7 +554,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1306
+src/sales_receipts.scailo_pb.ts:1323
 
 ___
 
@@ -540,7 +575,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1294
+src/sales_receipts.scailo_pb.ts:1311
 
 ___
 
@@ -561,7 +596,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1298
+src/sales_receipts.scailo_pb.ts:1315
 
 ___
 
@@ -582,4 +617,4 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1302
+src/sales_receipts.scailo_pb.ts:1319

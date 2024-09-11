@@ -306,7 +306,7 @@ export class DebitNotesServiceCreateRequest extends Message<DebitNotesServiceCre
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 17;
+   * @generated from field: int64 round_off = 17;
    */
   roundOff = protoInt64.zero;
 
@@ -334,7 +334,7 @@ export class DebitNotesServiceCreateRequest extends Message<DebitNotesServiceCre
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -421,7 +421,7 @@ export class DebitNotesServiceUpdateRequest extends Message<DebitNotesServiceUpd
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 17;
+   * @generated from field: int64 round_off = 17;
    */
   roundOff = protoInt64.zero;
 
@@ -448,7 +448,7 @@ export class DebitNotesServiceUpdateRequest extends Message<DebitNotesServiceUpd
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -627,7 +627,7 @@ export class DebitNote extends Message<DebitNote> {
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 17;
+   * @generated from field: int64 round_off = 17;
    */
   roundOff = protoInt64.zero;
 
@@ -674,7 +674,7 @@ export class DebitNote extends Message<DebitNote> {
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 20, name: "total_value", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
     { no: 30, name: "list", kind: "message", T: DebitNoteItem, repeated: true },
     { no: 40, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
@@ -763,7 +763,7 @@ export class DebitNotesServiceItemCreateRequest extends Message<DebitNotesServic
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 17;
+   * @generated from field: int64 round_off = 17;
    */
   roundOff = protoInt64.zero;
 
@@ -790,7 +790,7 @@ export class DebitNotesServiceItemCreateRequest extends Message<DebitNotesServic
     { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "vendor_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -870,7 +870,7 @@ export class DebitNotesServiceItemUpdateRequest extends Message<DebitNotesServic
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 17;
+   * @generated from field: int64 round_off = 17;
    */
   roundOff = protoInt64.zero;
 
@@ -896,7 +896,7 @@ export class DebitNotesServiceItemUpdateRequest extends Message<DebitNotesServic
     { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "vendor_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -1011,7 +1011,7 @@ export class DebitNoteItem extends Message<DebitNoteItem> {
   /**
    * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: uint64 round_off = 17;
+   * @generated from field: int64 round_off = 17;
    */
   roundOff = protoInt64.zero;
 
@@ -1042,7 +1042,7 @@ export class DebitNoteItem extends Message<DebitNoteItem> {
     { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "vendor_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "round_off", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 

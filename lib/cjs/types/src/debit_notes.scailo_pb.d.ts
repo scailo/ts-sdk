@@ -234,7 +234,7 @@ export declare class DebitNotesServiceCreateRequest extends Message<DebitNotesSe
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 17;
+     * @generated from field: int64 round_off = 17;
      */
     roundOff: bigint;
     /**
@@ -310,7 +310,7 @@ export declare class DebitNotesServiceUpdateRequest extends Message<DebitNotesSe
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 17;
+     * @generated from field: int64 round_off = 17;
      */
     roundOff: bigint;
     /**
@@ -450,7 +450,7 @@ export declare class DebitNote extends Message<DebitNote> {
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 17;
+     * @generated from field: int64 round_off = 17;
      */
     roundOff: bigint;
     /**
@@ -538,7 +538,7 @@ export declare class DebitNotesServiceItemCreateRequest extends Message<DebitNot
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 17;
+     * @generated from field: int64 round_off = 17;
      */
     roundOff: bigint;
     /**
@@ -608,7 +608,7 @@ export declare class DebitNotesServiceItemUpdateRequest extends Message<DebitNot
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 17;
+     * @generated from field: int64 round_off = 17;
      */
     roundOff: bigint;
     /**
@@ -708,7 +708,7 @@ export declare class DebitNoteItem extends Message<DebitNoteItem> {
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 17;
+     * @generated from field: int64 round_off = 17;
      */
     roundOff: bigint;
     /**

@@ -246,7 +246,7 @@ export declare class CreditNotesServiceCreateRequest extends Message<CreditNotes
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 18;
+     * @generated from field: int64 round_off = 18;
      */
     roundOff: bigint;
     /**
@@ -328,7 +328,7 @@ export declare class CreditNotesServiceUpdateRequest extends Message<CreditNotes
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 18;
+     * @generated from field: int64 round_off = 18;
      */
     roundOff: bigint;
     /**
@@ -474,7 +474,7 @@ export declare class CreditNote extends Message<CreditNote> {
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 18;
+     * @generated from field: int64 round_off = 18;
      */
     roundOff: bigint;
     /**
@@ -568,7 +568,7 @@ export declare class CreditNotesServiceItemCreateRequest extends Message<CreditN
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 18;
+     * @generated from field: int64 round_off = 18;
      */
     roundOff: bigint;
     /**
@@ -644,7 +644,7 @@ export declare class CreditNotesServiceItemUpdateRequest extends Message<CreditN
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 18;
+     * @generated from field: int64 round_off = 18;
      */
     roundOff: bigint;
     /**
@@ -750,7 +750,7 @@ export declare class CreditNoteItem extends Message<CreditNoteItem> {
     /**
      * The applicable round off amount (optional, and can be positive or negative)
      *
-     * @generated from field: uint64 round_off = 18;
+     * @generated from field: int64 round_off = 18;
      */
     roundOff: bigint;
     /**
@@ -1554,11 +1554,18 @@ export declare class CreditNotesServiceSearchAllReq extends Message<CreditNotesS
      */
     refId: bigint;
     /**
-     * The ID of the associated client
+     * Sales Order related filters
+     * The associated consignee client ID of the linked sales order
      *
-     * @generated from field: uint64 client_id = 25;
+     * @generated from field: uint64 consignee_client_id = 50;
      */
-    clientId: bigint;
+    consigneeClientId: bigint;
+    /**
+     * The associated buyer client ID of the linked sales order
+     *
+     * @generated from field: uint64 buyer_client_id = 51;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<CreditNotesServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.CreditNotesServiceSearchAllReq";

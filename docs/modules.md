@@ -27,6 +27,11 @@
 - [BANK\_ACCOUNT\_SORT\_KEY](enums/BANK_ACCOUNT_SORT_KEY.md)
 - [BOOL\_FILTER](enums/BOOL_FILTER.md)
 - [CLIENT\_SORT\_KEY](enums/CLIENT_SORT_KEY.md)
+- [CLIENT\_STREAM\_LIFECYCLE](enums/CLIENT_STREAM_LIFECYCLE.md)
+- [CLIENT\_STREAM\_MESSAGE\_SORT\_KEY](enums/CLIENT_STREAM_MESSAGE_SORT_KEY.md)
+- [CLIENT\_STREAM\_MESSAGE\_TYPE](enums/CLIENT_STREAM_MESSAGE_TYPE.md)
+- [CLIENT\_STREAM\_REF\_FROM](enums/CLIENT_STREAM_REF_FROM.md)
+- [CLIENT\_STREAM\_SORT\_KEY](enums/CLIENT_STREAM_SORT_KEY.md)
 - [CLIENT\_USER\_STATUS](enums/CLIENT_USER_STATUS.md)
 - [COMPONENT\_REF\_FROM](enums/COMPONENT_REF_FROM.md)
 - [CONSUMPTION\_SEQUENCE](enums/CONSUMPTION_SEQUENCE.md)
@@ -61,6 +66,10 @@
 - [FORM\_FIELD\_SORT\_KEY](enums/FORM_FIELD_SORT_KEY.md)
 - [FORM\_SECTION\_SORT\_KEY](enums/FORM_SECTION_SORT_KEY.md)
 - [FORM\_TYPE](enums/FORM_TYPE.md)
+- [GENERAL\_STREAM\_LIFECYCLE](enums/GENERAL_STREAM_LIFECYCLE.md)
+- [GENERAL\_STREAM\_MESSAGE\_SORT\_KEY](enums/GENERAL_STREAM_MESSAGE_SORT_KEY.md)
+- [GENERAL\_STREAM\_MESSAGE\_TYPE](enums/GENERAL_STREAM_MESSAGE_TYPE.md)
+- [GENERAL\_STREAM\_SORT\_KEY](enums/GENERAL_STREAM_SORT_KEY.md)
 - [GENERIC\_INVENTORY\_REF\_FROM](enums/GENERIC_INVENTORY_REF_FROM.md)
 - [GOAL\_ITEM\_INPUT\_VALUE\_TYPE](enums/GOAL_ITEM_INPUT_VALUE_TYPE.md)
 - [GOAL\_ITEM\_SORT\_KEY](enums/GOAL_ITEM_SORT_KEY.md)
@@ -227,6 +236,11 @@
 - [VENDOR\_ITEM\_SORT\_KEY](enums/VENDOR_ITEM_SORT_KEY.md)
 - [VENDOR\_ITEM\_STATUS](enums/VENDOR_ITEM_STATUS.md)
 - [VENDOR\_SORT\_KEY](enums/VENDOR_SORT_KEY.md)
+- [VENDOR\_STREAM\_LIFECYCLE](enums/VENDOR_STREAM_LIFECYCLE.md)
+- [VENDOR\_STREAM\_MESSAGE\_SORT\_KEY](enums/VENDOR_STREAM_MESSAGE_SORT_KEY.md)
+- [VENDOR\_STREAM\_MESSAGE\_TYPE](enums/VENDOR_STREAM_MESSAGE_TYPE.md)
+- [VENDOR\_STREAM\_REF\_FROM](enums/VENDOR_STREAM_REF_FROM.md)
+- [VENDOR\_STREAM\_SORT\_KEY](enums/VENDOR_STREAM_SORT_KEY.md)
 - [VENDOR\_USER\_STATUS](enums/VENDOR_USER_STATUS.md)
 - [VISITATION\_SORT\_KEY](enums/VISITATION_SORT_KEY.md)
 - [WORKFLOW\_RULE\_EXECUTE\_ON](enums/WORKFLOW_RULE_EXECUTE_ON.md)
@@ -397,6 +411,29 @@
 - [BytesResponse](classes/BytesResponse.md)
 - [BytesRules](classes/BytesRules.md)
 - [Client](classes/Client.md)
+- [ClientStream](classes/ClientStream.md)
+- [ClientStreamClientSubscriber](classes/ClientStreamClientSubscriber.md)
+- [ClientStreamClientSubscribersList](classes/ClientStreamClientSubscribersList.md)
+- [ClientStreamInternalSubscriber](classes/ClientStreamInternalSubscriber.md)
+- [ClientStreamInternalSubscribersList](classes/ClientStreamInternalSubscribersList.md)
+- [ClientStreamMessage](classes/ClientStreamMessage.md)
+- [ClientStreamMessageReceipt](classes/ClientStreamMessageReceipt.md)
+- [ClientStreamMessageReceiptsList](classes/ClientStreamMessageReceiptsList.md)
+- [ClientStreamMessagesList](classes/ClientStreamMessagesList.md)
+- [ClientStreamMessagesSearchRequest](classes/ClientStreamMessagesSearchRequest.md)
+- [ClientStreamsList](classes/ClientStreamsList.md)
+- [ClientStreamsServiceClientSubscriberCreateRequest](classes/ClientStreamsServiceClientSubscriberCreateRequest.md)
+- [ClientStreamsServiceCountReq](classes/ClientStreamsServiceCountReq.md)
+- [ClientStreamsServiceCreateRequest](classes/ClientStreamsServiceCreateRequest.md)
+- [ClientStreamsServiceFilterReq](classes/ClientStreamsServiceFilterReq.md)
+- [ClientStreamsServiceImportInternalSubscribersRequest](classes/ClientStreamsServiceImportInternalSubscribersRequest.md)
+- [ClientStreamsServiceInternalSubscriberCreateRequest](classes/ClientStreamsServiceInternalSubscriberCreateRequest.md)
+- [ClientStreamsServiceMessageCreateRequest](classes/ClientStreamsServiceMessageCreateRequest.md)
+- [ClientStreamsServicePaginatedMessagesResponse](classes/ClientStreamsServicePaginatedMessagesResponse.md)
+- [ClientStreamsServicePaginationReq](classes/ClientStreamsServicePaginationReq.md)
+- [ClientStreamsServicePaginationResponse](classes/ClientStreamsServicePaginationResponse.md)
+- [ClientStreamsServiceSearchAllReq](classes/ClientStreamsServiceSearchAllReq.md)
+- [ClientStreamsServiceUpdateRequest](classes/ClientStreamsServiceUpdateRequest.md)
 - [ClientUser](classes/ClientUser.md)
 - [ClientUserLoginResponse](classes/ClientUserLoginResponse.md)
 - [ClientUsersList](classes/ClientUsersList.md)
@@ -641,6 +678,26 @@
 - [GPSCoordinatesResponse](classes/GPSCoordinatesResponse.md)
 - [GeneralSettings](classes/GeneralSettings.md)
 - [GeneralSettingsUpdateRequest](classes/GeneralSettingsUpdateRequest.md)
+- [GeneralStream](classes/GeneralStream.md)
+- [GeneralStreamInternalSubscriber](classes/GeneralStreamInternalSubscriber.md)
+- [GeneralStreamInternalSubscribersList](classes/GeneralStreamInternalSubscribersList.md)
+- [GeneralStreamMessage](classes/GeneralStreamMessage.md)
+- [GeneralStreamMessageReceipt](classes/GeneralStreamMessageReceipt.md)
+- [GeneralStreamMessageReceiptsList](classes/GeneralStreamMessageReceiptsList.md)
+- [GeneralStreamMessagesList](classes/GeneralStreamMessagesList.md)
+- [GeneralStreamMessagesSearchRequest](classes/GeneralStreamMessagesSearchRequest.md)
+- [GeneralStreamsList](classes/GeneralStreamsList.md)
+- [GeneralStreamsServiceCountReq](classes/GeneralStreamsServiceCountReq.md)
+- [GeneralStreamsServiceCreateRequest](classes/GeneralStreamsServiceCreateRequest.md)
+- [GeneralStreamsServiceFilterReq](classes/GeneralStreamsServiceFilterReq.md)
+- [GeneralStreamsServiceImportInternalSubscribersRequest](classes/GeneralStreamsServiceImportInternalSubscribersRequest.md)
+- [GeneralStreamsServiceInternalSubscriberCreateRequest](classes/GeneralStreamsServiceInternalSubscriberCreateRequest.md)
+- [GeneralStreamsServiceMessageCreateRequest](classes/GeneralStreamsServiceMessageCreateRequest.md)
+- [GeneralStreamsServicePaginatedMessagesResponse](classes/GeneralStreamsServicePaginatedMessagesResponse.md)
+- [GeneralStreamsServicePaginationReq](classes/GeneralStreamsServicePaginationReq.md)
+- [GeneralStreamsServicePaginationResponse](classes/GeneralStreamsServicePaginationResponse.md)
+- [GeneralStreamsServiceSearchAllReq](classes/GeneralStreamsServiceSearchAllReq.md)
+- [GeneralStreamsServiceUpdateRequest](classes/GeneralStreamsServiceUpdateRequest.md)
 - [GenericInventory](classes/GenericInventory.md)
 - [GenericInventoryList](classes/GenericInventoryList.md)
 - [GiXAppRun](classes/GiXAppRun.md)
@@ -889,14 +946,17 @@
 - [LocationsServiceSearchAllReq](classes/LocationsServiceSearchAllReq.md)
 - [LocationsServiceUpdateRequest](classes/LocationsServiceUpdateRequest.md)
 - [LogbookLogActivityLC](classes/LogbookLogActivityLC.md)
+- [LogbookLogClientStreamLC](classes/LogbookLogClientStreamLC.md)
 - [LogbookLogComplete](classes/LogbookLogComplete.md)
 - [LogbookLogConciseGenericCreateRequest](classes/LogbookLogConciseGenericCreateRequest.md)
 - [LogbookLogConciseSLC](classes/LogbookLogConciseSLC.md)
 - [LogbookLogConciseSLCCreateRequest](classes/LogbookLogConciseSLCCreateRequest.md)
+- [LogbookLogGeneralStreamLC](classes/LogbookLogGeneralStreamLC.md)
 - [LogbookLogInventoryLC](classes/LogbookLogInventoryLC.md)
 - [LogbookLogMeetingLC](classes/LogbookLogMeetingLC.md)
 - [LogbookLogNoteLC](classes/LogbookLogNoteLC.md)
 - [LogbookLogQCSampleLC](classes/LogbookLogQCSampleLC.md)
+- [LogbookLogVendorStreamLC](classes/LogbookLogVendorStreamLC.md)
 - [LogoutRequest](classes/LogoutRequest.md)
 - [LogoutResponse](classes/LogoutResponse.md)
 - [MapRules](classes/MapRules.md)
@@ -1736,6 +1796,29 @@
 - [VendorItemHistoryRequest](classes/VendorItemHistoryRequest.md)
 - [VendorItemsList](classes/VendorItemsList.md)
 - [VendorItemsSearchRequest](classes/VendorItemsSearchRequest.md)
+- [VendorStream](classes/VendorStream.md)
+- [VendorStreamInternalSubscriber](classes/VendorStreamInternalSubscriber.md)
+- [VendorStreamInternalSubscribersList](classes/VendorStreamInternalSubscribersList.md)
+- [VendorStreamMessage](classes/VendorStreamMessage.md)
+- [VendorStreamMessageReceipt](classes/VendorStreamMessageReceipt.md)
+- [VendorStreamMessageReceiptsList](classes/VendorStreamMessageReceiptsList.md)
+- [VendorStreamMessagesList](classes/VendorStreamMessagesList.md)
+- [VendorStreamMessagesSearchRequest](classes/VendorStreamMessagesSearchRequest.md)
+- [VendorStreamVendorSubscriber](classes/VendorStreamVendorSubscriber.md)
+- [VendorStreamVendorSubscribersList](classes/VendorStreamVendorSubscribersList.md)
+- [VendorStreamsList](classes/VendorStreamsList.md)
+- [VendorStreamsServiceCountReq](classes/VendorStreamsServiceCountReq.md)
+- [VendorStreamsServiceCreateRequest](classes/VendorStreamsServiceCreateRequest.md)
+- [VendorStreamsServiceFilterReq](classes/VendorStreamsServiceFilterReq.md)
+- [VendorStreamsServiceImportInternalSubscribersRequest](classes/VendorStreamsServiceImportInternalSubscribersRequest.md)
+- [VendorStreamsServiceInternalSubscriberCreateRequest](classes/VendorStreamsServiceInternalSubscriberCreateRequest.md)
+- [VendorStreamsServiceMessageCreateRequest](classes/VendorStreamsServiceMessageCreateRequest.md)
+- [VendorStreamsServicePaginatedMessagesResponse](classes/VendorStreamsServicePaginatedMessagesResponse.md)
+- [VendorStreamsServicePaginationReq](classes/VendorStreamsServicePaginationReq.md)
+- [VendorStreamsServicePaginationResponse](classes/VendorStreamsServicePaginationResponse.md)
+- [VendorStreamsServiceSearchAllReq](classes/VendorStreamsServiceSearchAllReq.md)
+- [VendorStreamsServiceUpdateRequest](classes/VendorStreamsServiceUpdateRequest.md)
+- [VendorStreamsServiceVendorSubscriberCreateRequest](classes/VendorStreamsServiceVendorSubscriberCreateRequest.md)
 - [VendorUser](classes/VendorUser.md)
 - [VendorUserLoginResponse](classes/VendorUserLoginResponse.md)
 - [VendorUsersList](classes/VendorUsersList.md)
@@ -1807,6 +1890,7 @@
 - [AttendancesAmendmentsService](modules.md#attendancesamendmentsservice)
 - [AttendancesService](modules.md#attendancesservice)
 - [BankAccountsService](modules.md#bankaccountsservice)
+- [ClientStreamsService](modules.md#clientstreamsservice)
 - [ClientsService](modules.md#clientsservice)
 - [ComponentsService](modules.md#componentsservice)
 - [CreditNotesService](modules.md#creditnotesservice)
@@ -1825,6 +1909,7 @@
 - [FormsFieldsService](modules.md#formsfieldsservice)
 - [FormsSectionsService](modules.md#formssectionsservice)
 - [GeneralSettingsService](modules.md#generalsettingsservice)
+- [GeneralStreamsService](modules.md#generalstreamsservice)
 - [GoalsService](modules.md#goalsservice)
 - [GoodsDispatchesService](modules.md#goodsdispatchesservice)
 - [GoodsReceiptsService](modules.md#goodsreceiptsservice)
@@ -1892,6 +1977,7 @@
 - [UsersService](modules.md#usersservice)
 - [VaultService](modules.md#vaultservice)
 - [VendorInvoicesService](modules.md#vendorinvoicesservice)
+- [VendorStreamsService](modules.md#vendorstreamsservice)
 - [VendorsService](modules.md#vendorsservice)
 - [VisitationsService](modules.md#visitationsservice)
 - [WorkOrdersService](modules.md#workordersservice)
@@ -3687,6 +3773,189 @@ from service Scailo.BankAccountsService
 #### Defined in
 
 src/bank_accounts.scailo_connect.ts:16
+
+___
+
+### ClientStreamsService
+
+• `Const` **ClientStreamsService**: `Object`
+
+Describes the common methods applicable on each client stream
+
+**`Generated`**
+
+from service Scailo.ClientStreamsService
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `methods` | \{ `addClientSubscriber`: \{ `I`: typeof [`ClientStreamsServiceClientSubscriberCreateRequest`](classes/ClientStreamsServiceClientSubscriberCreateRequest.md) = ClientStreamsServiceClientSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddClientSubscriber"`` = "AddClientSubscriber" } ; `addInternalSubscriber`: \{ `I`: typeof [`ClientStreamsServiceInternalSubscriberCreateRequest`](classes/ClientStreamsServiceInternalSubscriberCreateRequest.md) = ClientStreamsServiceInternalSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddInternalSubscriber"`` = "AddInternalSubscriber" } ; `addMessage`: \{ `I`: typeof [`ClientStreamsServiceMessageCreateRequest`](classes/ClientStreamsServiceMessageCreateRequest.md) = ClientStreamsServiceMessageCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMessage"`` = "AddMessage" } ; `cancel`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Cancel"`` = "Cancel" } ; `commentAdd`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`ClientStreamsServiceCountReq`](classes/ClientStreamsServiceCountReq.md) = ClientStreamsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`ClientStreamsServiceCreateRequest`](classes/ClientStreamsServiceCreateRequest.md) = ClientStreamsServiceCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteClientSubscriber`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteClientSubscriber"`` = "DeleteClientSubscriber" } ; `deleteInternalSubscriber`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteInternalSubscriber"`` = "DeleteInternalSubscriber" } ; `deleteMessage`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteMessage"`` = "DeleteMessage" } ; `filter`: \{ `I`: typeof [`ClientStreamsServiceFilterReq`](classes/ClientStreamsServiceFilterReq.md) = ClientStreamsServiceFilterReq; `O`: typeof [`ClientStreamsList`](classes/ClientStreamsList.md) = ClientStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importInternalSubscribersFromDepartment`: \{ `I`: typeof [`ClientStreamsServiceImportInternalSubscribersRequest`](classes/ClientStreamsServiceImportInternalSubscribersRequest.md) = ClientStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromDepartment"`` = "ImportInternalSubscribersFromDepartment" } ; `importInternalSubscribersFromTeam`: \{ `I`: typeof [`ClientStreamsServiceImportInternalSubscribersRequest`](classes/ClientStreamsServiceImportInternalSubscribersRequest.md) = ClientStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromTeam"`` = "ImportInternalSubscribersFromTeam" } ; `reopen`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `repeat`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `searchAll`: \{ `I`: typeof [`ClientStreamsServiceSearchAllReq`](classes/ClientStreamsServiceSearchAllReq.md) = ClientStreamsServiceSearchAllReq; `O`: typeof [`ClientStreamsList`](classes/ClientStreamsList.md) = ClientStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchMessagesWithPagination`: \{ `I`: typeof [`ClientStreamMessagesSearchRequest`](classes/ClientStreamMessagesSearchRequest.md) = ClientStreamMessagesSearchRequest; `O`: typeof [`ClientStreamsServicePaginatedMessagesResponse`](classes/ClientStreamsServicePaginatedMessagesResponse.md) = ClientStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchMessagesWithPagination"`` = "SearchMessagesWithPagination" } ; `update`: \{ `I`: typeof [`ClientStreamsServiceUpdateRequest`](classes/ClientStreamsServiceUpdateRequest.md) = ClientStreamsServiceUpdateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`ClientStreamsList`](classes/ClientStreamsList.md) = ClientStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamsList`](classes/ClientStreamsList.md) = ClientStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ClientStream`](classes/ClientStream.md) = ClientStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStream`](classes/ClientStream.md) = ClientStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewClientSubscriberByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ClientStreamClientSubscriber`](classes/ClientStreamClientSubscriber.md) = ClientStreamClientSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewClientSubscriberByID"`` = "ViewClientSubscriberByID" } ; `viewClientSubscribers`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamClientSubscribersList`](classes/ClientStreamClientSubscribersList.md) = ClientStreamClientSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewClientSubscribers"`` = "ViewClientSubscribers" } ; `viewInternalSubscriberByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ClientStreamInternalSubscriber`](classes/ClientStreamInternalSubscriber.md) = ClientStreamInternalSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscriberByID"`` = "ViewInternalSubscriberByID" } ; `viewInternalSubscribers`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamInternalSubscribersList`](classes/ClientStreamInternalSubscribersList.md) = ClientStreamInternalSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscribers"`` = "ViewInternalSubscribers" } ; `viewMessageByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamMessage`](classes/ClientStreamMessage.md) = ClientStreamMessage; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageByUUID"`` = "ViewMessageByUUID" } ; `viewMessageReceipts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamMessageReceiptsList`](classes/ClientStreamMessageReceiptsList.md) = ClientStreamMessageReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageReceipts"`` = "ViewMessageReceipts" } ; `viewMessages`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamMessagesList`](classes/ClientStreamMessagesList.md) = ClientStreamMessagesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessages"`` = "ViewMessages" } ; `viewPaginatedMessages`: \{ `I`: typeof [`ClientStreamMessagesSearchRequest`](classes/ClientStreamMessagesSearchRequest.md) = ClientStreamMessagesSearchRequest; `O`: typeof [`ClientStreamsServicePaginatedMessagesResponse`](classes/ClientStreamsServicePaginatedMessagesResponse.md) = ClientStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedMessages"`` = "ViewPaginatedMessages" } ; `viewWithPagination`: \{ `I`: typeof [`ClientStreamsServicePaginationReq`](classes/ClientStreamsServicePaginationReq.md) = ClientStreamsServicePaginationReq; `O`: typeof [`ClientStreamsServicePaginationResponse`](classes/ClientStreamsServicePaginationResponse.md) = ClientStreamsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods.addClientSubscriber` | \{ `I`: typeof [`ClientStreamsServiceClientSubscriberCreateRequest`](classes/ClientStreamsServiceClientSubscriberCreateRequest.md) = ClientStreamsServiceClientSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddClientSubscriber"`` = "AddClientSubscriber" } |
+| `methods.addClientSubscriber.I` | typeof [`ClientStreamsServiceClientSubscriberCreateRequest`](classes/ClientStreamsServiceClientSubscriberCreateRequest.md) |
+| `methods.addClientSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.addClientSubscriber.kind` | `Unary` |
+| `methods.addClientSubscriber.name` | ``"AddClientSubscriber"`` |
+| `methods.addInternalSubscriber` | \{ `I`: typeof [`ClientStreamsServiceInternalSubscriberCreateRequest`](classes/ClientStreamsServiceInternalSubscriberCreateRequest.md) = ClientStreamsServiceInternalSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddInternalSubscriber"`` = "AddInternalSubscriber" } |
+| `methods.addInternalSubscriber.I` | typeof [`ClientStreamsServiceInternalSubscriberCreateRequest`](classes/ClientStreamsServiceInternalSubscriberCreateRequest.md) |
+| `methods.addInternalSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.addInternalSubscriber.kind` | `Unary` |
+| `methods.addInternalSubscriber.name` | ``"AddInternalSubscriber"`` |
+| `methods.addMessage` | \{ `I`: typeof [`ClientStreamsServiceMessageCreateRequest`](classes/ClientStreamsServiceMessageCreateRequest.md) = ClientStreamsServiceMessageCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMessage"`` = "AddMessage" } |
+| `methods.addMessage.I` | typeof [`ClientStreamsServiceMessageCreateRequest`](classes/ClientStreamsServiceMessageCreateRequest.md) |
+| `methods.addMessage.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.addMessage.kind` | `Unary` |
+| `methods.addMessage.name` | ``"AddMessage"`` |
+| `methods.cancel` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Cancel"`` = "Cancel" } |
+| `methods.cancel.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.cancel.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.cancel.kind` | `Unary` |
+| `methods.cancel.name` | ``"Cancel"`` |
+| `methods.commentAdd` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
+| `methods.commentAdd.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.commentAdd.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.commentAdd.kind` | `Unary` |
+| `methods.commentAdd.name` | ``"CommentAdd"`` |
+| `methods.complete` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } |
+| `methods.complete.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.complete.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.complete.kind` | `Unary` |
+| `methods.complete.name` | ``"Complete"`` |
+| `methods.count` | \{ `I`: typeof [`ClientStreamsServiceCountReq`](classes/ClientStreamsServiceCountReq.md) = ClientStreamsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } |
+| `methods.count.I` | typeof [`ClientStreamsServiceCountReq`](classes/ClientStreamsServiceCountReq.md) |
+| `methods.count.O` | typeof [`CountResponse`](classes/CountResponse.md) |
+| `methods.count.kind` | `Unary` |
+| `methods.count.name` | ``"Count"`` |
+| `methods.create` | \{ `I`: typeof [`ClientStreamsServiceCreateRequest`](classes/ClientStreamsServiceCreateRequest.md) = ClientStreamsServiceCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } |
+| `methods.create.I` | typeof [`ClientStreamsServiceCreateRequest`](classes/ClientStreamsServiceCreateRequest.md) |
+| `methods.create.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.create.kind` | `Unary` |
+| `methods.create.name` | ``"Create"`` |
+| `methods.deleteClientSubscriber` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteClientSubscriber"`` = "DeleteClientSubscriber" } |
+| `methods.deleteClientSubscriber.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.deleteClientSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.deleteClientSubscriber.kind` | `Unary` |
+| `methods.deleteClientSubscriber.name` | ``"DeleteClientSubscriber"`` |
+| `methods.deleteInternalSubscriber` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteInternalSubscriber"`` = "DeleteInternalSubscriber" } |
+| `methods.deleteInternalSubscriber.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.deleteInternalSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.deleteInternalSubscriber.kind` | `Unary` |
+| `methods.deleteInternalSubscriber.name` | ``"DeleteInternalSubscriber"`` |
+| `methods.deleteMessage` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteMessage"`` = "DeleteMessage" } |
+| `methods.deleteMessage.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.deleteMessage.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.deleteMessage.kind` | `Unary` |
+| `methods.deleteMessage.name` | ``"DeleteMessage"`` |
+| `methods.filter` | \{ `I`: typeof [`ClientStreamsServiceFilterReq`](classes/ClientStreamsServiceFilterReq.md) = ClientStreamsServiceFilterReq; `O`: typeof [`ClientStreamsList`](classes/ClientStreamsList.md) = ClientStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } |
+| `methods.filter.I` | typeof [`ClientStreamsServiceFilterReq`](classes/ClientStreamsServiceFilterReq.md) |
+| `methods.filter.O` | typeof [`ClientStreamsList`](classes/ClientStreamsList.md) |
+| `methods.filter.kind` | `Unary` |
+| `methods.filter.name` | ``"Filter"`` |
+| `methods.importInternalSubscribersFromDepartment` | \{ `I`: typeof [`ClientStreamsServiceImportInternalSubscribersRequest`](classes/ClientStreamsServiceImportInternalSubscribersRequest.md) = ClientStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromDepartment"`` = "ImportInternalSubscribersFromDepartment" } |
+| `methods.importInternalSubscribersFromDepartment.I` | typeof [`ClientStreamsServiceImportInternalSubscribersRequest`](classes/ClientStreamsServiceImportInternalSubscribersRequest.md) |
+| `methods.importInternalSubscribersFromDepartment.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.importInternalSubscribersFromDepartment.kind` | `Unary` |
+| `methods.importInternalSubscribersFromDepartment.name` | ``"ImportInternalSubscribersFromDepartment"`` |
+| `methods.importInternalSubscribersFromTeam` | \{ `I`: typeof [`ClientStreamsServiceImportInternalSubscribersRequest`](classes/ClientStreamsServiceImportInternalSubscribersRequest.md) = ClientStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromTeam"`` = "ImportInternalSubscribersFromTeam" } |
+| `methods.importInternalSubscribersFromTeam.I` | typeof [`ClientStreamsServiceImportInternalSubscribersRequest`](classes/ClientStreamsServiceImportInternalSubscribersRequest.md) |
+| `methods.importInternalSubscribersFromTeam.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.importInternalSubscribersFromTeam.kind` | `Unary` |
+| `methods.importInternalSubscribersFromTeam.name` | ``"ImportInternalSubscribersFromTeam"`` |
+| `methods.reopen` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } |
+| `methods.reopen.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.reopen.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.reopen.kind` | `Unary` |
+| `methods.reopen.name` | ``"Reopen"`` |
+| `methods.repeat` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } |
+| `methods.repeat.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.repeat.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.repeat.kind` | `Unary` |
+| `methods.repeat.name` | ``"Repeat"`` |
+| `methods.searchAll` | \{ `I`: typeof [`ClientStreamsServiceSearchAllReq`](classes/ClientStreamsServiceSearchAllReq.md) = ClientStreamsServiceSearchAllReq; `O`: typeof [`ClientStreamsList`](classes/ClientStreamsList.md) = ClientStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } |
+| `methods.searchAll.I` | typeof [`ClientStreamsServiceSearchAllReq`](classes/ClientStreamsServiceSearchAllReq.md) |
+| `methods.searchAll.O` | typeof [`ClientStreamsList`](classes/ClientStreamsList.md) |
+| `methods.searchAll.kind` | `Unary` |
+| `methods.searchAll.name` | ``"SearchAll"`` |
+| `methods.searchMessagesWithPagination` | \{ `I`: typeof [`ClientStreamMessagesSearchRequest`](classes/ClientStreamMessagesSearchRequest.md) = ClientStreamMessagesSearchRequest; `O`: typeof [`ClientStreamsServicePaginatedMessagesResponse`](classes/ClientStreamsServicePaginatedMessagesResponse.md) = ClientStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchMessagesWithPagination"`` = "SearchMessagesWithPagination" } |
+| `methods.searchMessagesWithPagination.I` | typeof [`ClientStreamMessagesSearchRequest`](classes/ClientStreamMessagesSearchRequest.md) |
+| `methods.searchMessagesWithPagination.O` | typeof [`ClientStreamsServicePaginatedMessagesResponse`](classes/ClientStreamsServicePaginatedMessagesResponse.md) |
+| `methods.searchMessagesWithPagination.kind` | `Unary` |
+| `methods.searchMessagesWithPagination.name` | ``"SearchMessagesWithPagination"`` |
+| `methods.update` | \{ `I`: typeof [`ClientStreamsServiceUpdateRequest`](classes/ClientStreamsServiceUpdateRequest.md) = ClientStreamsServiceUpdateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } |
+| `methods.update.I` | typeof [`ClientStreamsServiceUpdateRequest`](classes/ClientStreamsServiceUpdateRequest.md) |
+| `methods.update.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.update.kind` | `Unary` |
+| `methods.update.name` | ``"Update"`` |
+| `methods.viewAll` | \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`ClientStreamsList`](classes/ClientStreamsList.md) = ClientStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } |
+| `methods.viewAll.I` | typeof [`ActiveStatus`](classes/ActiveStatus.md) |
+| `methods.viewAll.O` | typeof [`ClientStreamsList`](classes/ClientStreamsList.md) |
+| `methods.viewAll.kind` | `Unary` |
+| `methods.viewAll.name` | ``"ViewAll"`` |
+| `methods.viewAllForEntityUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamsList`](classes/ClientStreamsList.md) = ClientStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } |
+| `methods.viewAllForEntityUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewAllForEntityUUID.O` | typeof [`ClientStreamsList`](classes/ClientStreamsList.md) |
+| `methods.viewAllForEntityUUID.kind` | `Unary` |
+| `methods.viewAllForEntityUUID.name` | ``"ViewAllForEntityUUID"`` |
+| `methods.viewByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ClientStream`](classes/ClientStream.md) = ClientStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } |
+| `methods.viewByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewByID.O` | typeof [`ClientStream`](classes/ClientStream.md) |
+| `methods.viewByID.kind` | `Unary` |
+| `methods.viewByID.name` | ``"ViewByID"`` |
+| `methods.viewByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStream`](classes/ClientStream.md) = ClientStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } |
+| `methods.viewByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewByUUID.O` | typeof [`ClientStream`](classes/ClientStream.md) |
+| `methods.viewByUUID.kind` | `Unary` |
+| `methods.viewByUUID.name` | ``"ViewByUUID"`` |
+| `methods.viewClientSubscriberByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ClientStreamClientSubscriber`](classes/ClientStreamClientSubscriber.md) = ClientStreamClientSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewClientSubscriberByID"`` = "ViewClientSubscriberByID" } |
+| `methods.viewClientSubscriberByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewClientSubscriberByID.O` | typeof [`ClientStreamClientSubscriber`](classes/ClientStreamClientSubscriber.md) |
+| `methods.viewClientSubscriberByID.kind` | `Unary` |
+| `methods.viewClientSubscriberByID.name` | ``"ViewClientSubscriberByID"`` |
+| `methods.viewClientSubscribers` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamClientSubscribersList`](classes/ClientStreamClientSubscribersList.md) = ClientStreamClientSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewClientSubscribers"`` = "ViewClientSubscribers" } |
+| `methods.viewClientSubscribers.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewClientSubscribers.O` | typeof [`ClientStreamClientSubscribersList`](classes/ClientStreamClientSubscribersList.md) |
+| `methods.viewClientSubscribers.kind` | `Unary` |
+| `methods.viewClientSubscribers.name` | ``"ViewClientSubscribers"`` |
+| `methods.viewInternalSubscriberByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ClientStreamInternalSubscriber`](classes/ClientStreamInternalSubscriber.md) = ClientStreamInternalSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscriberByID"`` = "ViewInternalSubscriberByID" } |
+| `methods.viewInternalSubscriberByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewInternalSubscriberByID.O` | typeof [`ClientStreamInternalSubscriber`](classes/ClientStreamInternalSubscriber.md) |
+| `methods.viewInternalSubscriberByID.kind` | `Unary` |
+| `methods.viewInternalSubscriberByID.name` | ``"ViewInternalSubscriberByID"`` |
+| `methods.viewInternalSubscribers` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamInternalSubscribersList`](classes/ClientStreamInternalSubscribersList.md) = ClientStreamInternalSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscribers"`` = "ViewInternalSubscribers" } |
+| `methods.viewInternalSubscribers.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewInternalSubscribers.O` | typeof [`ClientStreamInternalSubscribersList`](classes/ClientStreamInternalSubscribersList.md) |
+| `methods.viewInternalSubscribers.kind` | `Unary` |
+| `methods.viewInternalSubscribers.name` | ``"ViewInternalSubscribers"`` |
+| `methods.viewMessageByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamMessage`](classes/ClientStreamMessage.md) = ClientStreamMessage; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageByUUID"`` = "ViewMessageByUUID" } |
+| `methods.viewMessageByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessageByUUID.O` | typeof [`ClientStreamMessage`](classes/ClientStreamMessage.md) |
+| `methods.viewMessageByUUID.kind` | `Unary` |
+| `methods.viewMessageByUUID.name` | ``"ViewMessageByUUID"`` |
+| `methods.viewMessageReceipts` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamMessageReceiptsList`](classes/ClientStreamMessageReceiptsList.md) = ClientStreamMessageReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageReceipts"`` = "ViewMessageReceipts" } |
+| `methods.viewMessageReceipts.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessageReceipts.O` | typeof [`ClientStreamMessageReceiptsList`](classes/ClientStreamMessageReceiptsList.md) |
+| `methods.viewMessageReceipts.kind` | `Unary` |
+| `methods.viewMessageReceipts.name` | ``"ViewMessageReceipts"`` |
+| `methods.viewMessages` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ClientStreamMessagesList`](classes/ClientStreamMessagesList.md) = ClientStreamMessagesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessages"`` = "ViewMessages" } |
+| `methods.viewMessages.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessages.O` | typeof [`ClientStreamMessagesList`](classes/ClientStreamMessagesList.md) |
+| `methods.viewMessages.kind` | `Unary` |
+| `methods.viewMessages.name` | ``"ViewMessages"`` |
+| `methods.viewPaginatedMessages` | \{ `I`: typeof [`ClientStreamMessagesSearchRequest`](classes/ClientStreamMessagesSearchRequest.md) = ClientStreamMessagesSearchRequest; `O`: typeof [`ClientStreamsServicePaginatedMessagesResponse`](classes/ClientStreamsServicePaginatedMessagesResponse.md) = ClientStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedMessages"`` = "ViewPaginatedMessages" } |
+| `methods.viewPaginatedMessages.I` | typeof [`ClientStreamMessagesSearchRequest`](classes/ClientStreamMessagesSearchRequest.md) |
+| `methods.viewPaginatedMessages.O` | typeof [`ClientStreamsServicePaginatedMessagesResponse`](classes/ClientStreamsServicePaginatedMessagesResponse.md) |
+| `methods.viewPaginatedMessages.kind` | `Unary` |
+| `methods.viewPaginatedMessages.name` | ``"ViewPaginatedMessages"`` |
+| `methods.viewWithPagination` | \{ `I`: typeof [`ClientStreamsServicePaginationReq`](classes/ClientStreamsServicePaginationReq.md) = ClientStreamsServicePaginationReq; `O`: typeof [`ClientStreamsServicePaginationResponse`](classes/ClientStreamsServicePaginationResponse.md) = ClientStreamsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
+| `methods.viewWithPagination.I` | typeof [`ClientStreamsServicePaginationReq`](classes/ClientStreamsServicePaginationReq.md) |
+| `methods.viewWithPagination.O` | typeof [`ClientStreamsServicePaginationResponse`](classes/ClientStreamsServicePaginationResponse.md) |
+| `methods.viewWithPagination.kind` | `Unary` |
+| `methods.viewWithPagination.name` | ``"ViewWithPagination"`` |
+| `typeName` | ``"Scailo.ClientStreamsService"`` |
+
+#### Defined in
+
+src/clientstreams.scailo_connect.ts:16
 
 ___
 
@@ -6671,6 +6940,169 @@ from service Scailo.GeneralSettingsService
 #### Defined in
 
 src/general_settings.scailo_connect.ts:16
+
+___
+
+### GeneralStreamsService
+
+• `Const` **GeneralStreamsService**: `Object`
+
+Describes the common methods applicable on each general stream
+
+**`Generated`**
+
+from service Scailo.GeneralStreamsService
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `methods` | \{ `addInternalSubscriber`: \{ `I`: typeof [`GeneralStreamsServiceInternalSubscriberCreateRequest`](classes/GeneralStreamsServiceInternalSubscriberCreateRequest.md) = GeneralStreamsServiceInternalSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddInternalSubscriber"`` = "AddInternalSubscriber" } ; `addMessage`: \{ `I`: typeof [`GeneralStreamsServiceMessageCreateRequest`](classes/GeneralStreamsServiceMessageCreateRequest.md) = GeneralStreamsServiceMessageCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMessage"`` = "AddMessage" } ; `cancel`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Cancel"`` = "Cancel" } ; `commentAdd`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`GeneralStreamsServiceCountReq`](classes/GeneralStreamsServiceCountReq.md) = GeneralStreamsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`GeneralStreamsServiceCreateRequest`](classes/GeneralStreamsServiceCreateRequest.md) = GeneralStreamsServiceCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteInternalSubscriber`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteInternalSubscriber"`` = "DeleteInternalSubscriber" } ; `deleteMessage`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteMessage"`` = "DeleteMessage" } ; `filter`: \{ `I`: typeof [`GeneralStreamsServiceFilterReq`](classes/GeneralStreamsServiceFilterReq.md) = GeneralStreamsServiceFilterReq; `O`: typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) = GeneralStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importInternalSubscribersFromDepartment`: \{ `I`: typeof [`GeneralStreamsServiceImportInternalSubscribersRequest`](classes/GeneralStreamsServiceImportInternalSubscribersRequest.md) = GeneralStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromDepartment"`` = "ImportInternalSubscribersFromDepartment" } ; `importInternalSubscribersFromTeam`: \{ `I`: typeof [`GeneralStreamsServiceImportInternalSubscribersRequest`](classes/GeneralStreamsServiceImportInternalSubscribersRequest.md) = GeneralStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromTeam"`` = "ImportInternalSubscribersFromTeam" } ; `reopen`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `repeat`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `searchAll`: \{ `I`: typeof [`GeneralStreamsServiceSearchAllReq`](classes/GeneralStreamsServiceSearchAllReq.md) = GeneralStreamsServiceSearchAllReq; `O`: typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) = GeneralStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchMessagesWithPagination`: \{ `I`: typeof [`GeneralStreamMessagesSearchRequest`](classes/GeneralStreamMessagesSearchRequest.md) = GeneralStreamMessagesSearchRequest; `O`: typeof [`GeneralStreamsServicePaginatedMessagesResponse`](classes/GeneralStreamsServicePaginatedMessagesResponse.md) = GeneralStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchMessagesWithPagination"`` = "SearchMessagesWithPagination" } ; `update`: \{ `I`: typeof [`GeneralStreamsServiceUpdateRequest`](classes/GeneralStreamsServiceUpdateRequest.md) = GeneralStreamsServiceUpdateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) = GeneralStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) = GeneralStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GeneralStream`](classes/GeneralStream.md) = GeneralStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStream`](classes/GeneralStream.md) = GeneralStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewInternalSubscriberByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GeneralStreamInternalSubscriber`](classes/GeneralStreamInternalSubscriber.md) = GeneralStreamInternalSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscriberByID"`` = "ViewInternalSubscriberByID" } ; `viewInternalSubscribers`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamInternalSubscribersList`](classes/GeneralStreamInternalSubscribersList.md) = GeneralStreamInternalSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscribers"`` = "ViewInternalSubscribers" } ; `viewMessageByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamMessage`](classes/GeneralStreamMessage.md) = GeneralStreamMessage; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageByUUID"`` = "ViewMessageByUUID" } ; `viewMessageReceipts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamMessageReceiptsList`](classes/GeneralStreamMessageReceiptsList.md) = GeneralStreamMessageReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageReceipts"`` = "ViewMessageReceipts" } ; `viewMessages`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamMessagesList`](classes/GeneralStreamMessagesList.md) = GeneralStreamMessagesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessages"`` = "ViewMessages" } ; `viewPaginatedMessages`: \{ `I`: typeof [`GeneralStreamMessagesSearchRequest`](classes/GeneralStreamMessagesSearchRequest.md) = GeneralStreamMessagesSearchRequest; `O`: typeof [`GeneralStreamsServicePaginatedMessagesResponse`](classes/GeneralStreamsServicePaginatedMessagesResponse.md) = GeneralStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedMessages"`` = "ViewPaginatedMessages" } ; `viewWithPagination`: \{ `I`: typeof [`GeneralStreamsServicePaginationReq`](classes/GeneralStreamsServicePaginationReq.md) = GeneralStreamsServicePaginationReq; `O`: typeof [`GeneralStreamsServicePaginationResponse`](classes/GeneralStreamsServicePaginationResponse.md) = GeneralStreamsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods.addInternalSubscriber` | \{ `I`: typeof [`GeneralStreamsServiceInternalSubscriberCreateRequest`](classes/GeneralStreamsServiceInternalSubscriberCreateRequest.md) = GeneralStreamsServiceInternalSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddInternalSubscriber"`` = "AddInternalSubscriber" } |
+| `methods.addInternalSubscriber.I` | typeof [`GeneralStreamsServiceInternalSubscriberCreateRequest`](classes/GeneralStreamsServiceInternalSubscriberCreateRequest.md) |
+| `methods.addInternalSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.addInternalSubscriber.kind` | `Unary` |
+| `methods.addInternalSubscriber.name` | ``"AddInternalSubscriber"`` |
+| `methods.addMessage` | \{ `I`: typeof [`GeneralStreamsServiceMessageCreateRequest`](classes/GeneralStreamsServiceMessageCreateRequest.md) = GeneralStreamsServiceMessageCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMessage"`` = "AddMessage" } |
+| `methods.addMessage.I` | typeof [`GeneralStreamsServiceMessageCreateRequest`](classes/GeneralStreamsServiceMessageCreateRequest.md) |
+| `methods.addMessage.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.addMessage.kind` | `Unary` |
+| `methods.addMessage.name` | ``"AddMessage"`` |
+| `methods.cancel` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Cancel"`` = "Cancel" } |
+| `methods.cancel.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.cancel.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.cancel.kind` | `Unary` |
+| `methods.cancel.name` | ``"Cancel"`` |
+| `methods.commentAdd` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
+| `methods.commentAdd.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.commentAdd.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.commentAdd.kind` | `Unary` |
+| `methods.commentAdd.name` | ``"CommentAdd"`` |
+| `methods.complete` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } |
+| `methods.complete.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.complete.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.complete.kind` | `Unary` |
+| `methods.complete.name` | ``"Complete"`` |
+| `methods.count` | \{ `I`: typeof [`GeneralStreamsServiceCountReq`](classes/GeneralStreamsServiceCountReq.md) = GeneralStreamsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } |
+| `methods.count.I` | typeof [`GeneralStreamsServiceCountReq`](classes/GeneralStreamsServiceCountReq.md) |
+| `methods.count.O` | typeof [`CountResponse`](classes/CountResponse.md) |
+| `methods.count.kind` | `Unary` |
+| `methods.count.name` | ``"Count"`` |
+| `methods.create` | \{ `I`: typeof [`GeneralStreamsServiceCreateRequest`](classes/GeneralStreamsServiceCreateRequest.md) = GeneralStreamsServiceCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } |
+| `methods.create.I` | typeof [`GeneralStreamsServiceCreateRequest`](classes/GeneralStreamsServiceCreateRequest.md) |
+| `methods.create.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.create.kind` | `Unary` |
+| `methods.create.name` | ``"Create"`` |
+| `methods.deleteInternalSubscriber` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteInternalSubscriber"`` = "DeleteInternalSubscriber" } |
+| `methods.deleteInternalSubscriber.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.deleteInternalSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.deleteInternalSubscriber.kind` | `Unary` |
+| `methods.deleteInternalSubscriber.name` | ``"DeleteInternalSubscriber"`` |
+| `methods.deleteMessage` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteMessage"`` = "DeleteMessage" } |
+| `methods.deleteMessage.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.deleteMessage.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.deleteMessage.kind` | `Unary` |
+| `methods.deleteMessage.name` | ``"DeleteMessage"`` |
+| `methods.filter` | \{ `I`: typeof [`GeneralStreamsServiceFilterReq`](classes/GeneralStreamsServiceFilterReq.md) = GeneralStreamsServiceFilterReq; `O`: typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) = GeneralStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } |
+| `methods.filter.I` | typeof [`GeneralStreamsServiceFilterReq`](classes/GeneralStreamsServiceFilterReq.md) |
+| `methods.filter.O` | typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) |
+| `methods.filter.kind` | `Unary` |
+| `methods.filter.name` | ``"Filter"`` |
+| `methods.importInternalSubscribersFromDepartment` | \{ `I`: typeof [`GeneralStreamsServiceImportInternalSubscribersRequest`](classes/GeneralStreamsServiceImportInternalSubscribersRequest.md) = GeneralStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromDepartment"`` = "ImportInternalSubscribersFromDepartment" } |
+| `methods.importInternalSubscribersFromDepartment.I` | typeof [`GeneralStreamsServiceImportInternalSubscribersRequest`](classes/GeneralStreamsServiceImportInternalSubscribersRequest.md) |
+| `methods.importInternalSubscribersFromDepartment.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.importInternalSubscribersFromDepartment.kind` | `Unary` |
+| `methods.importInternalSubscribersFromDepartment.name` | ``"ImportInternalSubscribersFromDepartment"`` |
+| `methods.importInternalSubscribersFromTeam` | \{ `I`: typeof [`GeneralStreamsServiceImportInternalSubscribersRequest`](classes/GeneralStreamsServiceImportInternalSubscribersRequest.md) = GeneralStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromTeam"`` = "ImportInternalSubscribersFromTeam" } |
+| `methods.importInternalSubscribersFromTeam.I` | typeof [`GeneralStreamsServiceImportInternalSubscribersRequest`](classes/GeneralStreamsServiceImportInternalSubscribersRequest.md) |
+| `methods.importInternalSubscribersFromTeam.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.importInternalSubscribersFromTeam.kind` | `Unary` |
+| `methods.importInternalSubscribersFromTeam.name` | ``"ImportInternalSubscribersFromTeam"`` |
+| `methods.reopen` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } |
+| `methods.reopen.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.reopen.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.reopen.kind` | `Unary` |
+| `methods.reopen.name` | ``"Reopen"`` |
+| `methods.repeat` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } |
+| `methods.repeat.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.repeat.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.repeat.kind` | `Unary` |
+| `methods.repeat.name` | ``"Repeat"`` |
+| `methods.searchAll` | \{ `I`: typeof [`GeneralStreamsServiceSearchAllReq`](classes/GeneralStreamsServiceSearchAllReq.md) = GeneralStreamsServiceSearchAllReq; `O`: typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) = GeneralStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } |
+| `methods.searchAll.I` | typeof [`GeneralStreamsServiceSearchAllReq`](classes/GeneralStreamsServiceSearchAllReq.md) |
+| `methods.searchAll.O` | typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) |
+| `methods.searchAll.kind` | `Unary` |
+| `methods.searchAll.name` | ``"SearchAll"`` |
+| `methods.searchMessagesWithPagination` | \{ `I`: typeof [`GeneralStreamMessagesSearchRequest`](classes/GeneralStreamMessagesSearchRequest.md) = GeneralStreamMessagesSearchRequest; `O`: typeof [`GeneralStreamsServicePaginatedMessagesResponse`](classes/GeneralStreamsServicePaginatedMessagesResponse.md) = GeneralStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchMessagesWithPagination"`` = "SearchMessagesWithPagination" } |
+| `methods.searchMessagesWithPagination.I` | typeof [`GeneralStreamMessagesSearchRequest`](classes/GeneralStreamMessagesSearchRequest.md) |
+| `methods.searchMessagesWithPagination.O` | typeof [`GeneralStreamsServicePaginatedMessagesResponse`](classes/GeneralStreamsServicePaginatedMessagesResponse.md) |
+| `methods.searchMessagesWithPagination.kind` | `Unary` |
+| `methods.searchMessagesWithPagination.name` | ``"SearchMessagesWithPagination"`` |
+| `methods.update` | \{ `I`: typeof [`GeneralStreamsServiceUpdateRequest`](classes/GeneralStreamsServiceUpdateRequest.md) = GeneralStreamsServiceUpdateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } |
+| `methods.update.I` | typeof [`GeneralStreamsServiceUpdateRequest`](classes/GeneralStreamsServiceUpdateRequest.md) |
+| `methods.update.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.update.kind` | `Unary` |
+| `methods.update.name` | ``"Update"`` |
+| `methods.viewAll` | \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) = GeneralStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } |
+| `methods.viewAll.I` | typeof [`ActiveStatus`](classes/ActiveStatus.md) |
+| `methods.viewAll.O` | typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) |
+| `methods.viewAll.kind` | `Unary` |
+| `methods.viewAll.name` | ``"ViewAll"`` |
+| `methods.viewAllForEntityUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) = GeneralStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } |
+| `methods.viewAllForEntityUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewAllForEntityUUID.O` | typeof [`GeneralStreamsList`](classes/GeneralStreamsList.md) |
+| `methods.viewAllForEntityUUID.kind` | `Unary` |
+| `methods.viewAllForEntityUUID.name` | ``"ViewAllForEntityUUID"`` |
+| `methods.viewByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GeneralStream`](classes/GeneralStream.md) = GeneralStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } |
+| `methods.viewByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewByID.O` | typeof [`GeneralStream`](classes/GeneralStream.md) |
+| `methods.viewByID.kind` | `Unary` |
+| `methods.viewByID.name` | ``"ViewByID"`` |
+| `methods.viewByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStream`](classes/GeneralStream.md) = GeneralStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } |
+| `methods.viewByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewByUUID.O` | typeof [`GeneralStream`](classes/GeneralStream.md) |
+| `methods.viewByUUID.kind` | `Unary` |
+| `methods.viewByUUID.name` | ``"ViewByUUID"`` |
+| `methods.viewInternalSubscriberByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GeneralStreamInternalSubscriber`](classes/GeneralStreamInternalSubscriber.md) = GeneralStreamInternalSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscriberByID"`` = "ViewInternalSubscriberByID" } |
+| `methods.viewInternalSubscriberByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewInternalSubscriberByID.O` | typeof [`GeneralStreamInternalSubscriber`](classes/GeneralStreamInternalSubscriber.md) |
+| `methods.viewInternalSubscriberByID.kind` | `Unary` |
+| `methods.viewInternalSubscriberByID.name` | ``"ViewInternalSubscriberByID"`` |
+| `methods.viewInternalSubscribers` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamInternalSubscribersList`](classes/GeneralStreamInternalSubscribersList.md) = GeneralStreamInternalSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscribers"`` = "ViewInternalSubscribers" } |
+| `methods.viewInternalSubscribers.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewInternalSubscribers.O` | typeof [`GeneralStreamInternalSubscribersList`](classes/GeneralStreamInternalSubscribersList.md) |
+| `methods.viewInternalSubscribers.kind` | `Unary` |
+| `methods.viewInternalSubscribers.name` | ``"ViewInternalSubscribers"`` |
+| `methods.viewMessageByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamMessage`](classes/GeneralStreamMessage.md) = GeneralStreamMessage; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageByUUID"`` = "ViewMessageByUUID" } |
+| `methods.viewMessageByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessageByUUID.O` | typeof [`GeneralStreamMessage`](classes/GeneralStreamMessage.md) |
+| `methods.viewMessageByUUID.kind` | `Unary` |
+| `methods.viewMessageByUUID.name` | ``"ViewMessageByUUID"`` |
+| `methods.viewMessageReceipts` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamMessageReceiptsList`](classes/GeneralStreamMessageReceiptsList.md) = GeneralStreamMessageReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageReceipts"`` = "ViewMessageReceipts" } |
+| `methods.viewMessageReceipts.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessageReceipts.O` | typeof [`GeneralStreamMessageReceiptsList`](classes/GeneralStreamMessageReceiptsList.md) |
+| `methods.viewMessageReceipts.kind` | `Unary` |
+| `methods.viewMessageReceipts.name` | ``"ViewMessageReceipts"`` |
+| `methods.viewMessages` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GeneralStreamMessagesList`](classes/GeneralStreamMessagesList.md) = GeneralStreamMessagesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessages"`` = "ViewMessages" } |
+| `methods.viewMessages.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessages.O` | typeof [`GeneralStreamMessagesList`](classes/GeneralStreamMessagesList.md) |
+| `methods.viewMessages.kind` | `Unary` |
+| `methods.viewMessages.name` | ``"ViewMessages"`` |
+| `methods.viewPaginatedMessages` | \{ `I`: typeof [`GeneralStreamMessagesSearchRequest`](classes/GeneralStreamMessagesSearchRequest.md) = GeneralStreamMessagesSearchRequest; `O`: typeof [`GeneralStreamsServicePaginatedMessagesResponse`](classes/GeneralStreamsServicePaginatedMessagesResponse.md) = GeneralStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedMessages"`` = "ViewPaginatedMessages" } |
+| `methods.viewPaginatedMessages.I` | typeof [`GeneralStreamMessagesSearchRequest`](classes/GeneralStreamMessagesSearchRequest.md) |
+| `methods.viewPaginatedMessages.O` | typeof [`GeneralStreamsServicePaginatedMessagesResponse`](classes/GeneralStreamsServicePaginatedMessagesResponse.md) |
+| `methods.viewPaginatedMessages.kind` | `Unary` |
+| `methods.viewPaginatedMessages.name` | ``"ViewPaginatedMessages"`` |
+| `methods.viewWithPagination` | \{ `I`: typeof [`GeneralStreamsServicePaginationReq`](classes/GeneralStreamsServicePaginationReq.md) = GeneralStreamsServicePaginationReq; `O`: typeof [`GeneralStreamsServicePaginationResponse`](classes/GeneralStreamsServicePaginationResponse.md) = GeneralStreamsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
+| `methods.viewWithPagination.I` | typeof [`GeneralStreamsServicePaginationReq`](classes/GeneralStreamsServicePaginationReq.md) |
+| `methods.viewWithPagination.O` | typeof [`GeneralStreamsServicePaginationResponse`](classes/GeneralStreamsServicePaginationResponse.md) |
+| `methods.viewWithPagination.kind` | `Unary` |
+| `methods.viewWithPagination.name` | ``"ViewWithPagination"`` |
+| `typeName` | ``"Scailo.GeneralStreamsService"`` |
+
+#### Defined in
+
+src/generalstreams.scailo_connect.ts:16
 
 ___
 
@@ -19707,6 +20139,189 @@ from service Scailo.VendorInvoicesService
 #### Defined in
 
 src/vendor_invoices.scailo_connect.ts:17
+
+___
+
+### VendorStreamsService
+
+• `Const` **VendorStreamsService**: `Object`
+
+Describes the common methods applicable on each vendor stream
+
+**`Generated`**
+
+from service Scailo.VendorStreamsService
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `methods` | \{ `addInternalSubscriber`: \{ `I`: typeof [`VendorStreamsServiceInternalSubscriberCreateRequest`](classes/VendorStreamsServiceInternalSubscriberCreateRequest.md) = VendorStreamsServiceInternalSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddInternalSubscriber"`` = "AddInternalSubscriber" } ; `addMessage`: \{ `I`: typeof [`VendorStreamsServiceMessageCreateRequest`](classes/VendorStreamsServiceMessageCreateRequest.md) = VendorStreamsServiceMessageCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMessage"`` = "AddMessage" } ; `addVendorSubscriber`: \{ `I`: typeof [`VendorStreamsServiceVendorSubscriberCreateRequest`](classes/VendorStreamsServiceVendorSubscriberCreateRequest.md) = VendorStreamsServiceVendorSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorSubscriber"`` = "AddVendorSubscriber" } ; `cancel`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Cancel"`` = "Cancel" } ; `commentAdd`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`VendorStreamsServiceCountReq`](classes/VendorStreamsServiceCountReq.md) = VendorStreamsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`VendorStreamsServiceCreateRequest`](classes/VendorStreamsServiceCreateRequest.md) = VendorStreamsServiceCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteInternalSubscriber`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteInternalSubscriber"`` = "DeleteInternalSubscriber" } ; `deleteMessage`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteMessage"`` = "DeleteMessage" } ; `deleteVendorSubscriber`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorSubscriber"`` = "DeleteVendorSubscriber" } ; `filter`: \{ `I`: typeof [`VendorStreamsServiceFilterReq`](classes/VendorStreamsServiceFilterReq.md) = VendorStreamsServiceFilterReq; `O`: typeof [`VendorStreamsList`](classes/VendorStreamsList.md) = VendorStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importInternalSubscribersFromDepartment`: \{ `I`: typeof [`VendorStreamsServiceImportInternalSubscribersRequest`](classes/VendorStreamsServiceImportInternalSubscribersRequest.md) = VendorStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromDepartment"`` = "ImportInternalSubscribersFromDepartment" } ; `importInternalSubscribersFromTeam`: \{ `I`: typeof [`VendorStreamsServiceImportInternalSubscribersRequest`](classes/VendorStreamsServiceImportInternalSubscribersRequest.md) = VendorStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromTeam"`` = "ImportInternalSubscribersFromTeam" } ; `reopen`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `repeat`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `searchAll`: \{ `I`: typeof [`VendorStreamsServiceSearchAllReq`](classes/VendorStreamsServiceSearchAllReq.md) = VendorStreamsServiceSearchAllReq; `O`: typeof [`VendorStreamsList`](classes/VendorStreamsList.md) = VendorStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchMessagesWithPagination`: \{ `I`: typeof [`VendorStreamMessagesSearchRequest`](classes/VendorStreamMessagesSearchRequest.md) = VendorStreamMessagesSearchRequest; `O`: typeof [`VendorStreamsServicePaginatedMessagesResponse`](classes/VendorStreamsServicePaginatedMessagesResponse.md) = VendorStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchMessagesWithPagination"`` = "SearchMessagesWithPagination" } ; `update`: \{ `I`: typeof [`VendorStreamsServiceUpdateRequest`](classes/VendorStreamsServiceUpdateRequest.md) = VendorStreamsServiceUpdateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`VendorStreamsList`](classes/VendorStreamsList.md) = VendorStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamsList`](classes/VendorStreamsList.md) = VendorStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorStream`](classes/VendorStream.md) = VendorStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStream`](classes/VendorStream.md) = VendorStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewInternalSubscriberByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorStreamInternalSubscriber`](classes/VendorStreamInternalSubscriber.md) = VendorStreamInternalSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscriberByID"`` = "ViewInternalSubscriberByID" } ; `viewInternalSubscribers`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamInternalSubscribersList`](classes/VendorStreamInternalSubscribersList.md) = VendorStreamInternalSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscribers"`` = "ViewInternalSubscribers" } ; `viewMessageByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamMessage`](classes/VendorStreamMessage.md) = VendorStreamMessage; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageByUUID"`` = "ViewMessageByUUID" } ; `viewMessageReceipts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamMessageReceiptsList`](classes/VendorStreamMessageReceiptsList.md) = VendorStreamMessageReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageReceipts"`` = "ViewMessageReceipts" } ; `viewMessages`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamMessagesList`](classes/VendorStreamMessagesList.md) = VendorStreamMessagesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessages"`` = "ViewMessages" } ; `viewPaginatedMessages`: \{ `I`: typeof [`VendorStreamMessagesSearchRequest`](classes/VendorStreamMessagesSearchRequest.md) = VendorStreamMessagesSearchRequest; `O`: typeof [`VendorStreamsServicePaginatedMessagesResponse`](classes/VendorStreamsServicePaginatedMessagesResponse.md) = VendorStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedMessages"`` = "ViewPaginatedMessages" } ; `viewVendorSubscriberByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorStreamVendorSubscriber`](classes/VendorStreamVendorSubscriber.md) = VendorStreamVendorSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorSubscriberByID"`` = "ViewVendorSubscriberByID" } ; `viewVendorSubscribers`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamVendorSubscribersList`](classes/VendorStreamVendorSubscribersList.md) = VendorStreamVendorSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorSubscribers"`` = "ViewVendorSubscribers" } ; `viewWithPagination`: \{ `I`: typeof [`VendorStreamsServicePaginationReq`](classes/VendorStreamsServicePaginationReq.md) = VendorStreamsServicePaginationReq; `O`: typeof [`VendorStreamsServicePaginationResponse`](classes/VendorStreamsServicePaginationResponse.md) = VendorStreamsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods.addInternalSubscriber` | \{ `I`: typeof [`VendorStreamsServiceInternalSubscriberCreateRequest`](classes/VendorStreamsServiceInternalSubscriberCreateRequest.md) = VendorStreamsServiceInternalSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddInternalSubscriber"`` = "AddInternalSubscriber" } |
+| `methods.addInternalSubscriber.I` | typeof [`VendorStreamsServiceInternalSubscriberCreateRequest`](classes/VendorStreamsServiceInternalSubscriberCreateRequest.md) |
+| `methods.addInternalSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.addInternalSubscriber.kind` | `Unary` |
+| `methods.addInternalSubscriber.name` | ``"AddInternalSubscriber"`` |
+| `methods.addMessage` | \{ `I`: typeof [`VendorStreamsServiceMessageCreateRequest`](classes/VendorStreamsServiceMessageCreateRequest.md) = VendorStreamsServiceMessageCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMessage"`` = "AddMessage" } |
+| `methods.addMessage.I` | typeof [`VendorStreamsServiceMessageCreateRequest`](classes/VendorStreamsServiceMessageCreateRequest.md) |
+| `methods.addMessage.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.addMessage.kind` | `Unary` |
+| `methods.addMessage.name` | ``"AddMessage"`` |
+| `methods.addVendorSubscriber` | \{ `I`: typeof [`VendorStreamsServiceVendorSubscriberCreateRequest`](classes/VendorStreamsServiceVendorSubscriberCreateRequest.md) = VendorStreamsServiceVendorSubscriberCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorSubscriber"`` = "AddVendorSubscriber" } |
+| `methods.addVendorSubscriber.I` | typeof [`VendorStreamsServiceVendorSubscriberCreateRequest`](classes/VendorStreamsServiceVendorSubscriberCreateRequest.md) |
+| `methods.addVendorSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.addVendorSubscriber.kind` | `Unary` |
+| `methods.addVendorSubscriber.name` | ``"AddVendorSubscriber"`` |
+| `methods.cancel` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Cancel"`` = "Cancel" } |
+| `methods.cancel.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.cancel.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.cancel.kind` | `Unary` |
+| `methods.cancel.name` | ``"Cancel"`` |
+| `methods.commentAdd` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
+| `methods.commentAdd.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.commentAdd.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.commentAdd.kind` | `Unary` |
+| `methods.commentAdd.name` | ``"CommentAdd"`` |
+| `methods.complete` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } |
+| `methods.complete.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.complete.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.complete.kind` | `Unary` |
+| `methods.complete.name` | ``"Complete"`` |
+| `methods.count` | \{ `I`: typeof [`VendorStreamsServiceCountReq`](classes/VendorStreamsServiceCountReq.md) = VendorStreamsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } |
+| `methods.count.I` | typeof [`VendorStreamsServiceCountReq`](classes/VendorStreamsServiceCountReq.md) |
+| `methods.count.O` | typeof [`CountResponse`](classes/CountResponse.md) |
+| `methods.count.kind` | `Unary` |
+| `methods.count.name` | ``"Count"`` |
+| `methods.create` | \{ `I`: typeof [`VendorStreamsServiceCreateRequest`](classes/VendorStreamsServiceCreateRequest.md) = VendorStreamsServiceCreateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } |
+| `methods.create.I` | typeof [`VendorStreamsServiceCreateRequest`](classes/VendorStreamsServiceCreateRequest.md) |
+| `methods.create.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.create.kind` | `Unary` |
+| `methods.create.name` | ``"Create"`` |
+| `methods.deleteInternalSubscriber` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteInternalSubscriber"`` = "DeleteInternalSubscriber" } |
+| `methods.deleteInternalSubscriber.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.deleteInternalSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.deleteInternalSubscriber.kind` | `Unary` |
+| `methods.deleteInternalSubscriber.name` | ``"DeleteInternalSubscriber"`` |
+| `methods.deleteMessage` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteMessage"`` = "DeleteMessage" } |
+| `methods.deleteMessage.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.deleteMessage.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.deleteMessage.kind` | `Unary` |
+| `methods.deleteMessage.name` | ``"DeleteMessage"`` |
+| `methods.deleteVendorSubscriber` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorSubscriber"`` = "DeleteVendorSubscriber" } |
+| `methods.deleteVendorSubscriber.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.deleteVendorSubscriber.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.deleteVendorSubscriber.kind` | `Unary` |
+| `methods.deleteVendorSubscriber.name` | ``"DeleteVendorSubscriber"`` |
+| `methods.filter` | \{ `I`: typeof [`VendorStreamsServiceFilterReq`](classes/VendorStreamsServiceFilterReq.md) = VendorStreamsServiceFilterReq; `O`: typeof [`VendorStreamsList`](classes/VendorStreamsList.md) = VendorStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } |
+| `methods.filter.I` | typeof [`VendorStreamsServiceFilterReq`](classes/VendorStreamsServiceFilterReq.md) |
+| `methods.filter.O` | typeof [`VendorStreamsList`](classes/VendorStreamsList.md) |
+| `methods.filter.kind` | `Unary` |
+| `methods.filter.name` | ``"Filter"`` |
+| `methods.importInternalSubscribersFromDepartment` | \{ `I`: typeof [`VendorStreamsServiceImportInternalSubscribersRequest`](classes/VendorStreamsServiceImportInternalSubscribersRequest.md) = VendorStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromDepartment"`` = "ImportInternalSubscribersFromDepartment" } |
+| `methods.importInternalSubscribersFromDepartment.I` | typeof [`VendorStreamsServiceImportInternalSubscribersRequest`](classes/VendorStreamsServiceImportInternalSubscribersRequest.md) |
+| `methods.importInternalSubscribersFromDepartment.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.importInternalSubscribersFromDepartment.kind` | `Unary` |
+| `methods.importInternalSubscribersFromDepartment.name` | ``"ImportInternalSubscribersFromDepartment"`` |
+| `methods.importInternalSubscribersFromTeam` | \{ `I`: typeof [`VendorStreamsServiceImportInternalSubscribersRequest`](classes/VendorStreamsServiceImportInternalSubscribersRequest.md) = VendorStreamsServiceImportInternalSubscribersRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportInternalSubscribersFromTeam"`` = "ImportInternalSubscribersFromTeam" } |
+| `methods.importInternalSubscribersFromTeam.I` | typeof [`VendorStreamsServiceImportInternalSubscribersRequest`](classes/VendorStreamsServiceImportInternalSubscribersRequest.md) |
+| `methods.importInternalSubscribersFromTeam.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.importInternalSubscribersFromTeam.kind` | `Unary` |
+| `methods.importInternalSubscribersFromTeam.name` | ``"ImportInternalSubscribersFromTeam"`` |
+| `methods.reopen` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } |
+| `methods.reopen.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.reopen.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.reopen.kind` | `Unary` |
+| `methods.reopen.name` | ``"Reopen"`` |
+| `methods.repeat` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } |
+| `methods.repeat.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.repeat.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.repeat.kind` | `Unary` |
+| `methods.repeat.name` | ``"Repeat"`` |
+| `methods.searchAll` | \{ `I`: typeof [`VendorStreamsServiceSearchAllReq`](classes/VendorStreamsServiceSearchAllReq.md) = VendorStreamsServiceSearchAllReq; `O`: typeof [`VendorStreamsList`](classes/VendorStreamsList.md) = VendorStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } |
+| `methods.searchAll.I` | typeof [`VendorStreamsServiceSearchAllReq`](classes/VendorStreamsServiceSearchAllReq.md) |
+| `methods.searchAll.O` | typeof [`VendorStreamsList`](classes/VendorStreamsList.md) |
+| `methods.searchAll.kind` | `Unary` |
+| `methods.searchAll.name` | ``"SearchAll"`` |
+| `methods.searchMessagesWithPagination` | \{ `I`: typeof [`VendorStreamMessagesSearchRequest`](classes/VendorStreamMessagesSearchRequest.md) = VendorStreamMessagesSearchRequest; `O`: typeof [`VendorStreamsServicePaginatedMessagesResponse`](classes/VendorStreamsServicePaginatedMessagesResponse.md) = VendorStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchMessagesWithPagination"`` = "SearchMessagesWithPagination" } |
+| `methods.searchMessagesWithPagination.I` | typeof [`VendorStreamMessagesSearchRequest`](classes/VendorStreamMessagesSearchRequest.md) |
+| `methods.searchMessagesWithPagination.O` | typeof [`VendorStreamsServicePaginatedMessagesResponse`](classes/VendorStreamsServicePaginatedMessagesResponse.md) |
+| `methods.searchMessagesWithPagination.kind` | `Unary` |
+| `methods.searchMessagesWithPagination.name` | ``"SearchMessagesWithPagination"`` |
+| `methods.update` | \{ `I`: typeof [`VendorStreamsServiceUpdateRequest`](classes/VendorStreamsServiceUpdateRequest.md) = VendorStreamsServiceUpdateRequest; `O`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } |
+| `methods.update.I` | typeof [`VendorStreamsServiceUpdateRequest`](classes/VendorStreamsServiceUpdateRequest.md) |
+| `methods.update.O` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.update.kind` | `Unary` |
+| `methods.update.name` | ``"Update"`` |
+| `methods.viewAll` | \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`VendorStreamsList`](classes/VendorStreamsList.md) = VendorStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } |
+| `methods.viewAll.I` | typeof [`ActiveStatus`](classes/ActiveStatus.md) |
+| `methods.viewAll.O` | typeof [`VendorStreamsList`](classes/VendorStreamsList.md) |
+| `methods.viewAll.kind` | `Unary` |
+| `methods.viewAll.name` | ``"ViewAll"`` |
+| `methods.viewAllForEntityUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamsList`](classes/VendorStreamsList.md) = VendorStreamsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } |
+| `methods.viewAllForEntityUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewAllForEntityUUID.O` | typeof [`VendorStreamsList`](classes/VendorStreamsList.md) |
+| `methods.viewAllForEntityUUID.kind` | `Unary` |
+| `methods.viewAllForEntityUUID.name` | ``"ViewAllForEntityUUID"`` |
+| `methods.viewByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorStream`](classes/VendorStream.md) = VendorStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } |
+| `methods.viewByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewByID.O` | typeof [`VendorStream`](classes/VendorStream.md) |
+| `methods.viewByID.kind` | `Unary` |
+| `methods.viewByID.name` | ``"ViewByID"`` |
+| `methods.viewByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStream`](classes/VendorStream.md) = VendorStream; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } |
+| `methods.viewByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewByUUID.O` | typeof [`VendorStream`](classes/VendorStream.md) |
+| `methods.viewByUUID.kind` | `Unary` |
+| `methods.viewByUUID.name` | ``"ViewByUUID"`` |
+| `methods.viewInternalSubscriberByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorStreamInternalSubscriber`](classes/VendorStreamInternalSubscriber.md) = VendorStreamInternalSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscriberByID"`` = "ViewInternalSubscriberByID" } |
+| `methods.viewInternalSubscriberByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewInternalSubscriberByID.O` | typeof [`VendorStreamInternalSubscriber`](classes/VendorStreamInternalSubscriber.md) |
+| `methods.viewInternalSubscriberByID.kind` | `Unary` |
+| `methods.viewInternalSubscriberByID.name` | ``"ViewInternalSubscriberByID"`` |
+| `methods.viewInternalSubscribers` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamInternalSubscribersList`](classes/VendorStreamInternalSubscribersList.md) = VendorStreamInternalSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInternalSubscribers"`` = "ViewInternalSubscribers" } |
+| `methods.viewInternalSubscribers.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewInternalSubscribers.O` | typeof [`VendorStreamInternalSubscribersList`](classes/VendorStreamInternalSubscribersList.md) |
+| `methods.viewInternalSubscribers.kind` | `Unary` |
+| `methods.viewInternalSubscribers.name` | ``"ViewInternalSubscribers"`` |
+| `methods.viewMessageByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamMessage`](classes/VendorStreamMessage.md) = VendorStreamMessage; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageByUUID"`` = "ViewMessageByUUID" } |
+| `methods.viewMessageByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessageByUUID.O` | typeof [`VendorStreamMessage`](classes/VendorStreamMessage.md) |
+| `methods.viewMessageByUUID.kind` | `Unary` |
+| `methods.viewMessageByUUID.name` | ``"ViewMessageByUUID"`` |
+| `methods.viewMessageReceipts` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamMessageReceiptsList`](classes/VendorStreamMessageReceiptsList.md) = VendorStreamMessageReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessageReceipts"`` = "ViewMessageReceipts" } |
+| `methods.viewMessageReceipts.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessageReceipts.O` | typeof [`VendorStreamMessageReceiptsList`](classes/VendorStreamMessageReceiptsList.md) |
+| `methods.viewMessageReceipts.kind` | `Unary` |
+| `methods.viewMessageReceipts.name` | ``"ViewMessageReceipts"`` |
+| `methods.viewMessages` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamMessagesList`](classes/VendorStreamMessagesList.md) = VendorStreamMessagesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewMessages"`` = "ViewMessages" } |
+| `methods.viewMessages.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewMessages.O` | typeof [`VendorStreamMessagesList`](classes/VendorStreamMessagesList.md) |
+| `methods.viewMessages.kind` | `Unary` |
+| `methods.viewMessages.name` | ``"ViewMessages"`` |
+| `methods.viewPaginatedMessages` | \{ `I`: typeof [`VendorStreamMessagesSearchRequest`](classes/VendorStreamMessagesSearchRequest.md) = VendorStreamMessagesSearchRequest; `O`: typeof [`VendorStreamsServicePaginatedMessagesResponse`](classes/VendorStreamsServicePaginatedMessagesResponse.md) = VendorStreamsServicePaginatedMessagesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedMessages"`` = "ViewPaginatedMessages" } |
+| `methods.viewPaginatedMessages.I` | typeof [`VendorStreamMessagesSearchRequest`](classes/VendorStreamMessagesSearchRequest.md) |
+| `methods.viewPaginatedMessages.O` | typeof [`VendorStreamsServicePaginatedMessagesResponse`](classes/VendorStreamsServicePaginatedMessagesResponse.md) |
+| `methods.viewPaginatedMessages.kind` | `Unary` |
+| `methods.viewPaginatedMessages.name` | ``"ViewPaginatedMessages"`` |
+| `methods.viewVendorSubscriberByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorStreamVendorSubscriber`](classes/VendorStreamVendorSubscriber.md) = VendorStreamVendorSubscriber; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorSubscriberByID"`` = "ViewVendorSubscriberByID" } |
+| `methods.viewVendorSubscriberByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewVendorSubscriberByID.O` | typeof [`VendorStreamVendorSubscriber`](classes/VendorStreamVendorSubscriber.md) |
+| `methods.viewVendorSubscriberByID.kind` | `Unary` |
+| `methods.viewVendorSubscriberByID.name` | ``"ViewVendorSubscriberByID"`` |
+| `methods.viewVendorSubscribers` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorStreamVendorSubscribersList`](classes/VendorStreamVendorSubscribersList.md) = VendorStreamVendorSubscribersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorSubscribers"`` = "ViewVendorSubscribers" } |
+| `methods.viewVendorSubscribers.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewVendorSubscribers.O` | typeof [`VendorStreamVendorSubscribersList`](classes/VendorStreamVendorSubscribersList.md) |
+| `methods.viewVendorSubscribers.kind` | `Unary` |
+| `methods.viewVendorSubscribers.name` | ``"ViewVendorSubscribers"`` |
+| `methods.viewWithPagination` | \{ `I`: typeof [`VendorStreamsServicePaginationReq`](classes/VendorStreamsServicePaginationReq.md) = VendorStreamsServicePaginationReq; `O`: typeof [`VendorStreamsServicePaginationResponse`](classes/VendorStreamsServicePaginationResponse.md) = VendorStreamsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
+| `methods.viewWithPagination.I` | typeof [`VendorStreamsServicePaginationReq`](classes/VendorStreamsServicePaginationReq.md) |
+| `methods.viewWithPagination.O` | typeof [`VendorStreamsServicePaginationResponse`](classes/VendorStreamsServicePaginationResponse.md) |
+| `methods.viewWithPagination.kind` | `Unary` |
+| `methods.viewWithPagination.name` | ``"ViewWithPagination"`` |
+| `typeName` | ``"Scailo.VendorStreamsService"`` |
+
+#### Defined in
+
+src/vendorstreams.scailo_connect.ts:16
 
 ___
 

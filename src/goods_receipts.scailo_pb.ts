@@ -2140,6 +2140,13 @@ export class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServi
    */
   billingStatus = GOODS_RECEIPT_BILLING_STATUS.GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED;
 
+  /**
+   * The ID of the associated vendor
+   *
+   * @generated from field: uint64 vendor_id = 50;
+   */
+  vendorId = protoInt64.zero;
+
   constructor(data?: PartialMessage<GoodsReceiptsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2159,6 +2166,7 @@ export class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServi
     { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) },
+    { no: 50, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceSearchAllReq {

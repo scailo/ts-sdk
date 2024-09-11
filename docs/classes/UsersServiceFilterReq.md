@@ -28,6 +28,7 @@ from message Scailo.UsersServiceFilterReq
 - [approverRoleId](UsersServiceFilterReq.md#approverroleid)
 - [attendanceUomId](UsersServiceFilterReq.md#attendanceuomid)
 - [basicPayUomId](UsersServiceFilterReq.md#basicpayuomid)
+- [clientId](UsersServiceFilterReq.md#clientid)
 - [code](UsersServiceFilterReq.md#code)
 - [count](UsersServiceFilterReq.md#count)
 - [creationTimestampEnd](UsersServiceFilterReq.md#creationtimestampend)
@@ -51,6 +52,7 @@ from message Scailo.UsersServiceFilterReq
 - [status](UsersServiceFilterReq.md#status)
 - [userType](UsersServiceFilterReq.md#usertype)
 - [username](UsersServiceFilterReq.md#username)
+- [vendorId](UsersServiceFilterReq.md#vendorid)
 - [workEmail](UsersServiceFilterReq.md#workemail)
 - [fields](UsersServiceFilterReq.md#fields)
 - [runtime](UsersServiceFilterReq.md#runtime)
@@ -95,7 +97,7 @@ Message\&lt;UsersServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/users.scailo_pb.ts:1496
+src/users.scailo_pb.ts:1513
 
 ## Properties
 
@@ -192,6 +194,24 @@ from field: uint64 basic_pay_uom_id = 32;
 #### Defined in
 
 src/users.scailo_pb.ts:1487
+
+___
+
+### clientId
+
+• **clientId**: `bigint` = `protoInt64.zero`
+
+Filter by the associated client ID (return all the users that belong to this client)
+
+--------------------------------------------------------------------------------
+
+**`Generated`**
+
+from field: uint64 client_id = 71;
+
+#### Defined in
+
+src/users.scailo_pb.ts:1511
 
 ___
 
@@ -563,6 +583,23 @@ src/users.scailo_pb.ts:1403
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+--------------------------------------------------------------------------------
+Filter by the associated vendor ID (return all the users that belong to this vendor)
+
+**`Generated`**
+
+from field: uint64 vendor_id = 70;
+
+#### Defined in
+
+src/users.scailo_pb.ts:1502
+
+___
+
 ### workEmail
 
 • **workEmail**: `string` = `""`
@@ -585,7 +622,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1503
+src/users.scailo_pb.ts:1520
 
 ___
 
@@ -595,7 +632,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1501
+src/users.scailo_pb.ts:1518
 
 ___
 
@@ -605,7 +642,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1502
+src/users.scailo_pb.ts:1519
 
 ## Methods
 
@@ -893,7 +930,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1548
+src/users.scailo_pb.ts:1567
 
 ___
 
@@ -914,7 +951,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1536
+src/users.scailo_pb.ts:1555
 
 ___
 
@@ -935,7 +972,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1540
+src/users.scailo_pb.ts:1559
 
 ___
 
@@ -956,4 +993,4 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1544
+src/users.scailo_pb.ts:1563

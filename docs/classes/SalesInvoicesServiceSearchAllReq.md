@@ -22,7 +22,8 @@ from message Scailo.SalesInvoicesServiceSearchAllReq
 
 ### Properties
 
-- [clientId](SalesInvoicesServiceSearchAllReq.md#clientid)
+- [buyerClientId](SalesInvoicesServiceSearchAllReq.md#buyerclientid)
+- [consigneeClientId](SalesInvoicesServiceSearchAllReq.md#consigneeclientid)
 - [count](SalesInvoicesServiceSearchAllReq.md#count)
 - [entityUuid](SalesInvoicesServiceSearchAllReq.md#entityuuid)
 - [isActive](SalesInvoicesServiceSearchAllReq.md#isactive)
@@ -76,23 +77,40 @@ Message\&lt;SalesInvoicesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2178
+src/sales_invoices.scailo_pb.ts:2186
 
 ## Properties
 
-### clientId
+### buyerClientId
 
-• **clientId**: `bigint` = `protoInt64.zero`
+• **buyerClientId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated client
+The associated buyer client ID of the linked sales order
 
 **`Generated`**
 
-from field: uint64 client_id = 25;
+from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2176
+src/sales_invoices.scailo_pb.ts:2184
+
+___
+
+### consigneeClientId
+
+• **consigneeClientId**: `bigint` = `protoInt64.zero`
+
+Sales Order related filters
+The associated consignee client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 consignee_client_id = 50;
+
+#### Defined in
+
+src/sales_invoices.scailo_pb.ts:2177
 
 ___
 
@@ -262,7 +280,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2185
+src/sales_invoices.scailo_pb.ts:2193
 
 ___
 
@@ -272,7 +290,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2183
+src/sales_invoices.scailo_pb.ts:2191
 
 ___
 
@@ -282,7 +300,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2184
+src/sales_invoices.scailo_pb.ts:2192
 
 ## Methods
 
@@ -570,7 +588,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2211
+src/sales_invoices.scailo_pb.ts:2220
 
 ___
 
@@ -591,7 +609,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2199
+src/sales_invoices.scailo_pb.ts:2208
 
 ___
 
@@ -612,7 +630,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2203
+src/sales_invoices.scailo_pb.ts:2212
 
 ___
 
@@ -633,4 +651,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2207
+src/sales_invoices.scailo_pb.ts:2216

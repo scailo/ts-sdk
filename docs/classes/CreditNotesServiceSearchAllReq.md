@@ -22,7 +22,8 @@ from message Scailo.CreditNotesServiceSearchAllReq
 
 ### Properties
 
-- [clientId](CreditNotesServiceSearchAllReq.md#clientid)
+- [buyerClientId](CreditNotesServiceSearchAllReq.md#buyerclientid)
+- [consigneeClientId](CreditNotesServiceSearchAllReq.md#consigneeclientid)
 - [count](CreditNotesServiceSearchAllReq.md#count)
 - [entityUuid](CreditNotesServiceSearchAllReq.md#entityuuid)
 - [isActive](CreditNotesServiceSearchAllReq.md#isactive)
@@ -76,23 +77,40 @@ Message\&lt;CreditNotesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2302
+src/credit_notes.scailo_pb.ts:2310
 
 ## Properties
 
-### clientId
+### buyerClientId
 
-• **clientId**: `bigint` = `protoInt64.zero`
+• **buyerClientId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated client
+The associated buyer client ID of the linked sales order
 
 **`Generated`**
 
-from field: uint64 client_id = 25;
+from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2300
+src/credit_notes.scailo_pb.ts:2308
+
+___
+
+### consigneeClientId
+
+• **consigneeClientId**: `bigint` = `protoInt64.zero`
+
+Sales Order related filters
+The associated consignee client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 consignee_client_id = 50;
+
+#### Defined in
+
+src/credit_notes.scailo_pb.ts:2301
 
 ___
 
@@ -262,7 +280,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2309
+src/credit_notes.scailo_pb.ts:2317
 
 ___
 
@@ -272,7 +290,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2307
+src/credit_notes.scailo_pb.ts:2315
 
 ___
 
@@ -282,7 +300,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2308
+src/credit_notes.scailo_pb.ts:2316
 
 ## Methods
 
@@ -570,7 +588,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2335
+src/credit_notes.scailo_pb.ts:2344
 
 ___
 
@@ -591,7 +609,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2323
+src/credit_notes.scailo_pb.ts:2332
 
 ___
 
@@ -612,7 +630,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2327
+src/credit_notes.scailo_pb.ts:2336
 
 ___
 
@@ -633,4 +651,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2331
+src/credit_notes.scailo_pb.ts:2340

@@ -23,6 +23,8 @@ from message Scailo.GoodsDispatchesServiceSearchAllReq
 ### Properties
 
 - [billingStatus](GoodsDispatchesServiceSearchAllReq.md#billingstatus)
+- [buyerClientId](GoodsDispatchesServiceSearchAllReq.md#buyerclientid)
+- [consigneeClientId](GoodsDispatchesServiceSearchAllReq.md#consigneeclientid)
 - [count](GoodsDispatchesServiceSearchAllReq.md#count)
 - [entityUuid](GoodsDispatchesServiceSearchAllReq.md#entityuuid)
 - [isActive](GoodsDispatchesServiceSearchAllReq.md#isactive)
@@ -76,7 +78,7 @@ Message\&lt;GoodsDispatchesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2145
+src/goods_dispatches.scailo_pb.ts:2160
 
 ## Properties
 
@@ -93,6 +95,39 @@ from field: Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
 #### Defined in
 
 src/goods_dispatches.scailo_pb.ts:2143
+
+___
+
+### buyerClientId
+
+• **buyerClientId**: `bigint` = `protoInt64.zero`
+
+The associated buyer client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 buyer_client_id = 51;
+
+#### Defined in
+
+src/goods_dispatches.scailo_pb.ts:2158
+
+___
+
+### consigneeClientId
+
+• **consigneeClientId**: `bigint` = `protoInt64.zero`
+
+Sales Order related filters
+The associated consignee client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 consignee_client_id = 50;
+
+#### Defined in
+
+src/goods_dispatches.scailo_pb.ts:2151
 
 ___
 
@@ -262,7 +297,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2152
+src/goods_dispatches.scailo_pb.ts:2167
 
 ___
 
@@ -272,7 +307,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2150
+src/goods_dispatches.scailo_pb.ts:2165
 
 ___
 
@@ -282,7 +317,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2151
+src/goods_dispatches.scailo_pb.ts:2166
 
 ## Methods
 
@@ -570,7 +605,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2178
+src/goods_dispatches.scailo_pb.ts:2195
 
 ___
 
@@ -591,7 +626,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2166
+src/goods_dispatches.scailo_pb.ts:2183
 
 ___
 
@@ -612,7 +647,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2170
+src/goods_dispatches.scailo_pb.ts:2187
 
 ___
 
@@ -633,4 +668,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2174
+src/goods_dispatches.scailo_pb.ts:2191

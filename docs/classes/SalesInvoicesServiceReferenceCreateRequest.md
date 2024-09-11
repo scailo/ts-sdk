@@ -68,7 +68,7 @@ Message\&lt;SalesInvoicesServiceReferenceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2244
+src/sales_invoices.scailo_pb.ts:2253
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 goods_dispatch_id = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2242
+src/sales_invoices.scailo_pb.ts:2251
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 sales_invoice_id = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2235
+src/sales_invoices.scailo_pb.ts:2244
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2228
+src/sales_invoices.scailo_pb.ts:2237
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2251
+src/sales_invoices.scailo_pb.ts:2260
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2249
+src/sales_invoices.scailo_pb.ts:2258
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2250
+src/sales_invoices.scailo_pb.ts:2259
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2269
+src/sales_invoices.scailo_pb.ts:2278
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2257
+src/sales_invoices.scailo_pb.ts:2266
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2261
+src/sales_invoices.scailo_pb.ts:2270
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2265
+src/sales_invoices.scailo_pb.ts:2274

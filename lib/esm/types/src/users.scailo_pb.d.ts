@@ -1073,6 +1073,21 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      * @generated from field: string work_email = 33;
      */
     workEmail: string;
+    /**
+     * --------------------------------------------------------------------------------
+     * Filter by the associated vendor ID (return all the users that belong to this vendor)
+     *
+     * @generated from field: uint64 vendor_id = 70;
+     */
+    vendorId: bigint;
+    /**
+     * Filter by the associated client ID (return all the users that belong to this client)
+     *
+     * --------------------------------------------------------------------------------
+     *
+     * @generated from field: uint64 client_id = 71;
+     */
+    clientId: bigint;
     constructor(data?: PartialMessage<UsersServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.UsersServiceFilterReq";
@@ -1245,6 +1260,21 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      * @generated from field: string work_email = 33;
      */
     workEmail: string;
+    /**
+     * --------------------------------------------------------------------------------
+     * Filter by the associated vendor ID (return all the users that belong to this vendor)
+     *
+     * @generated from field: uint64 vendor_id = 70;
+     */
+    vendorId: bigint;
+    /**
+     * Filter by the associated client ID (return all the users that belong to this client)
+     *
+     * --------------------------------------------------------------------------------
+     *
+     * @generated from field: uint64 client_id = 71;
+     */
+    clientId: bigint;
     constructor(data?: PartialMessage<UsersServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.UsersServiceCountReq";
@@ -1315,6 +1345,21 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
      * @generated from field: string search_key = 11;
      */
     searchKey: string;
+    /**
+     * --------------------------------------------------------------------------------
+     * Filter by the associated vendor ID (return all the users that belong to this vendor)
+     *
+     * @generated from field: uint64 vendor_id = 70;
+     */
+    vendorId: bigint;
+    /**
+     * Filter by the associated client ID (return all the users that belong to this client)
+     *
+     * --------------------------------------------------------------------------------
+     *
+     * @generated from field: uint64 client_id = 71;
+     */
+    clientId: bigint;
     constructor(data?: PartialMessage<UsersServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.UsersServiceSearchAllReq";

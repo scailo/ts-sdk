@@ -22,6 +22,7 @@ from message Scailo.UsersServiceSearchAllReq
 
 ### Properties
 
+- [clientId](UsersServiceSearchAllReq.md#clientid)
 - [count](UsersServiceSearchAllReq.md#count)
 - [entityUuid](UsersServiceSearchAllReq.md#entityuuid)
 - [isActive](UsersServiceSearchAllReq.md#isactive)
@@ -31,6 +32,7 @@ from message Scailo.UsersServiceSearchAllReq
 - [sortOrder](UsersServiceSearchAllReq.md#sortorder)
 - [status](UsersServiceSearchAllReq.md#status)
 - [userType](UsersServiceSearchAllReq.md#usertype)
+- [vendorId](UsersServiceSearchAllReq.md#vendorid)
 - [fields](UsersServiceSearchAllReq.md#fields)
 - [runtime](UsersServiceSearchAllReq.md#runtime)
 - [typeName](UsersServiceSearchAllReq.md#typename)
@@ -74,9 +76,27 @@ Message\&lt;UsersServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/users.scailo_pb.ts:1865
+src/users.scailo_pb.ts:1920
 
 ## Properties
+
+### clientId
+
+• **clientId**: `bigint` = `protoInt64.zero`
+
+Filter by the associated client ID (return all the users that belong to this client)
+
+--------------------------------------------------------------------------------
+
+**`Generated`**
+
+from field: uint64 client_id = 71;
+
+#### Defined in
+
+src/users.scailo_pb.ts:1918
+
+___
 
 ### count
 
@@ -90,7 +110,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1814
+src/users.scailo_pb.ts:1852
 
 ___
 
@@ -106,7 +126,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1842
+src/users.scailo_pb.ts:1880
 
 ___
 
@@ -122,7 +142,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1807
+src/users.scailo_pb.ts:1845
 
 ___
 
@@ -138,7 +158,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1821
+src/users.scailo_pb.ts:1859
 
 ___
 
@@ -154,7 +174,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1863
+src/users.scailo_pb.ts:1901
 
 ___
 
@@ -170,7 +190,7 @@ from field: Scailo.USER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1835
+src/users.scailo_pb.ts:1873
 
 ___
 
@@ -186,7 +206,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1828
+src/users.scailo_pb.ts:1866
 
 ___
 
@@ -202,7 +222,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1856
+src/users.scailo_pb.ts:1894
 
 ___
 
@@ -218,7 +238,24 @@ from field: Scailo.USER_TYPE user_type = 7;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1849
+src/users.scailo_pb.ts:1887
+
+___
+
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+--------------------------------------------------------------------------------
+Filter by the associated vendor ID (return all the users that belong to this vendor)
+
+**`Generated`**
+
+from field: uint64 vendor_id = 70;
+
+#### Defined in
+
+src/users.scailo_pb.ts:1909
 
 ___
 
@@ -228,7 +265,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1872
+src/users.scailo_pb.ts:1927
 
 ___
 
@@ -238,7 +275,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1870
+src/users.scailo_pb.ts:1925
 
 ___
 
@@ -248,7 +285,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1871
+src/users.scailo_pb.ts:1926
 
 ## Methods
 
@@ -536,7 +573,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1896
+src/users.scailo_pb.ts:1953
 
 ___
 
@@ -557,7 +594,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1884
+src/users.scailo_pb.ts:1941
 
 ___
 
@@ -578,7 +615,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1888
+src/users.scailo_pb.ts:1945
 
 ___
 
@@ -599,4 +636,4 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1892
+src/users.scailo_pb.ts:1949

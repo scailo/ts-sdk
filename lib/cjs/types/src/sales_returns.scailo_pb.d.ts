@@ -1377,6 +1377,19 @@ export declare class SalesReturnsServiceSearchAllReq extends Message<SalesReturn
      * @generated from field: Scailo.SALES_RETURN_BILLING_STATUS billing_status = 40;
      */
     billingStatus: SALES_RETURN_BILLING_STATUS;
+    /**
+     * Sales Order related filters
+     * The associated consignee client ID of the linked sales order
+     *
+     * @generated from field: uint64 consignee_client_id = 60;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The associated buyer client ID of the linked sales order
+     *
+     * @generated from field: uint64 buyer_client_id = 61;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<SalesReturnsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesReturnsServiceSearchAllReq";

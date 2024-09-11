@@ -167,7 +167,7 @@ The applicable round off amount (optional, and can be positive or negative)
 
 **`Generated`**
 
-from field: uint64 round_off = 18;
+from field: int64 round_off = 18;
 
 #### Defined in
 

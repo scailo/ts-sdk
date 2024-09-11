@@ -882,6 +882,12 @@ export declare class PurchasesPaymentsServiceSearchAllReq extends Message<Purcha
      * @generated from field: string search_key = 11;
      */
     searchKey: string;
+    /**
+     * The ID of the associated vendor
+     *
+     * @generated from field: uint64 vendor_id = 25;
+     */
+    vendorId: bigint;
     constructor(data?: PartialMessage<PurchasesPaymentsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.PurchasesPaymentsServiceSearchAllReq";
