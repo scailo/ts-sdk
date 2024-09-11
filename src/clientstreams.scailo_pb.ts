@@ -1973,6 +1973,13 @@ export class ClientStreamInternalSubscriber extends Message<ClientStreamInternal
    */
   userId = protoInt64.zero;
 
+  /**
+   * Stores the user UUID (determined by the user_id)
+   *
+   * @generated from field: string user_uuid = 30;
+   */
+  userUuid = "";
+
   constructor(data?: PartialMessage<ClientStreamInternalSubscriber>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1986,6 +1993,7 @@ export class ClientStreamInternalSubscriber extends Message<ClientStreamInternal
     { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "client_stream_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "user_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientStreamInternalSubscriber {
@@ -2213,6 +2221,13 @@ export class ClientStreamClientSubscriber extends Message<ClientStreamClientSubs
    */
   userId = protoInt64.zero;
 
+  /**
+   * Stores the user UUID (determined by the user_id)
+   *
+   * @generated from field: string user_uuid = 30;
+   */
+  userUuid = "";
+
   constructor(data?: PartialMessage<ClientStreamClientSubscriber>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2226,6 +2241,7 @@ export class ClientStreamClientSubscriber extends Message<ClientStreamClientSubs
     { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "client_stream_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "user_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientStreamClientSubscriber {

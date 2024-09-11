@@ -1311,6 +1311,12 @@ export declare class ClientStreamInternalSubscriber extends Message<ClientStream
      * @generated from field: uint64 user_id = 11;
      */
     userId: bigint;
+    /**
+     * Stores the user UUID (determined by the user_id)
+     *
+     * @generated from field: string user_uuid = 30;
+     */
+    userUuid: string;
     constructor(data?: PartialMessage<ClientStreamInternalSubscriber>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ClientStreamInternalSubscriber";
@@ -1453,6 +1459,12 @@ export declare class ClientStreamClientSubscriber extends Message<ClientStreamCl
      * @generated from field: uint64 user_id = 11;
      */
     userId: bigint;
+    /**
+     * Stores the user UUID (determined by the user_id)
+     *
+     * @generated from field: string user_uuid = 30;
+     */
+    userUuid: string;
     constructor(data?: PartialMessage<ClientStreamClientSubscriber>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ClientStreamClientSubscriber";
