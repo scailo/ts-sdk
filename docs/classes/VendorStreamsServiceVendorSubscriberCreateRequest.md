@@ -68,7 +68,7 @@ Message\&lt;VendorStreamsServiceVendorSubscriberCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2136
+src/vendorstreams.scailo_pb.ts:2160
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2120
+src/vendorstreams.scailo_pb.ts:2144
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2134
+src/vendorstreams.scailo_pb.ts:2158
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 vendor_stream_id = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2127
+src/vendorstreams.scailo_pb.ts:2151
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2143
+src/vendorstreams.scailo_pb.ts:2167
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2141
+src/vendorstreams.scailo_pb.ts:2165
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2142
+src/vendorstreams.scailo_pb.ts:2166
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2161
+src/vendorstreams.scailo_pb.ts:2185
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2149
+src/vendorstreams.scailo_pb.ts:2173
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2153
+src/vendorstreams.scailo_pb.ts:2177
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2157
+src/vendorstreams.scailo_pb.ts:2181

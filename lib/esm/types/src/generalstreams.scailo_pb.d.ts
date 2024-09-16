@@ -352,6 +352,18 @@ export declare class GeneralStream extends Message<GeneralStream> {
      * @generated from field: uint64 unread_count = 60;
      */
     unreadCount: bigint;
+    /**
+     * Stores the total number of messages in the stream
+     *
+     * @generated from field: uint64 message_count = 61;
+     */
+    messageCount: bigint;
+    /**
+     * Stores the username of the user who added the last message
+     *
+     * @generated from field: string last_message_by = 62;
+     */
+    lastMessageBy: string;
     constructor(data?: PartialMessage<GeneralStream>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.GeneralStream";

@@ -66,7 +66,7 @@ Message\&lt;ClientStreamMessageReceiptsList\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1848
+src/clientstreams.scailo_pb.ts:1872
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ClientStreamMessageReceipt list = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1846
+src/clientstreams.scailo_pb.ts:1870
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1855
+src/clientstreams.scailo_pb.ts:1879
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1853
+src/clientstreams.scailo_pb.ts:1877
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1854
+src/clientstreams.scailo_pb.ts:1878
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1871
+src/clientstreams.scailo_pb.ts:1895
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1859
+src/clientstreams.scailo_pb.ts:1883
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1863
+src/clientstreams.scailo_pb.ts:1887
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1867
+src/clientstreams.scailo_pb.ts:1891

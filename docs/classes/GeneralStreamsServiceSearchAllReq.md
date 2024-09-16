@@ -74,7 +74,7 @@ Message\&lt;GeneralStreamsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1094
+src/generalstreams.scailo_pb.ts:1110
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1043
+src/generalstreams.scailo_pb.ts:1059
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1071
+src/generalstreams.scailo_pb.ts:1087
 
 ___
 
@@ -122,7 +122,7 @@ from field: uint64 internal_subscriber_user_id = 60;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1092
+src/generalstreams.scailo_pb.ts:1108
 
 ___
 
@@ -138,7 +138,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1036
+src/generalstreams.scailo_pb.ts:1052
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1050
+src/generalstreams.scailo_pb.ts:1066
 
 ___
 
@@ -170,7 +170,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1085
+src/generalstreams.scailo_pb.ts:1101
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.GENERAL_STREAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1064
+src/generalstreams.scailo_pb.ts:1080
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1057
+src/generalstreams.scailo_pb.ts:1073
 
 ___
 
@@ -218,7 +218,7 @@ from field: Scailo.GENERAL_STREAM_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1078
+src/generalstreams.scailo_pb.ts:1094
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1101
+src/generalstreams.scailo_pb.ts:1117
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1099
+src/generalstreams.scailo_pb.ts:1115
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1100
+src/generalstreams.scailo_pb.ts:1116
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1125
+src/generalstreams.scailo_pb.ts:1141
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1113
+src/generalstreams.scailo_pb.ts:1129
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1117
+src/generalstreams.scailo_pb.ts:1133
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1121
+src/generalstreams.scailo_pb.ts:1137

@@ -25,7 +25,9 @@ from message Scailo.GeneralStream
 - [completedOn](GeneralStream.md#completedon)
 - [entityUuid](GeneralStream.md#entityuuid)
 - [internalRef](GeneralStream.md#internalref)
+- [lastMessageBy](GeneralStream.md#lastmessageby)
 - [logs](GeneralStream.md#logs)
+- [messageCount](GeneralStream.md#messagecount)
 - [metadata](GeneralStream.md#metadata)
 - [status](GeneralStream.md#status)
 - [title](GeneralStream.md#title)
@@ -74,7 +76,7 @@ Message\&lt;GeneralStream\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:506
+src/generalstreams.scailo_pb.ts:520
 
 ## Properties
 
@@ -126,6 +128,22 @@ src/generalstreams.scailo_pb.ts:497
 
 ___
 
+### lastMessageBy
+
+• **lastMessageBy**: `string` = `""`
+
+Stores the username of the user who added the last message
+
+**`Generated`**
+
+from field: string last_message_by = 62;
+
+#### Defined in
+
+src/generalstreams.scailo_pb.ts:518
+
+___
+
 ### logs
 
 • **logs**: [`LogbookLogGeneralStreamLC`](LogbookLogGeneralStreamLC.md)[] = `[]`
@@ -139,6 +157,22 @@ from field: repeated Scailo.LogbookLogGeneralStreamLC logs = 5;
 #### Defined in
 
 src/generalstreams.scailo_pb.ts:469
+
+___
+
+### messageCount
+
+• **messageCount**: `bigint` = `protoInt64.zero`
+
+Stores the total number of messages in the stream
+
+**`Generated`**
+
+from field: uint64 message_count = 61;
+
+#### Defined in
+
+src/generalstreams.scailo_pb.ts:511
 
 ___
 
@@ -228,7 +262,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:513
+src/generalstreams.scailo_pb.ts:527
 
 ___
 
@@ -238,7 +272,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:511
+src/generalstreams.scailo_pb.ts:525
 
 ___
 
@@ -248,7 +282,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:512
+src/generalstreams.scailo_pb.ts:526
 
 ## Methods
 
@@ -536,7 +570,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:537
+src/generalstreams.scailo_pb.ts:553
 
 ___
 
@@ -557,7 +591,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:525
+src/generalstreams.scailo_pb.ts:541
 
 ___
 
@@ -578,7 +612,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:529
+src/generalstreams.scailo_pb.ts:545
 
 ___
 
@@ -599,4 +633,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:533
+src/generalstreams.scailo_pb.ts:549

@@ -377,6 +377,17 @@ export declare const UsersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View user's thumbnail picture
+         *
+         * @generated from rpc Scailo.UsersService.ViewThumbnailPicture
+         */
+        readonly viewThumbnailPicture: {
+            readonly name: "ViewThumbnailPicture";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof ImageResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View user's VCard
          *
          * @generated from rpc Scailo.UsersService.ViewVCard

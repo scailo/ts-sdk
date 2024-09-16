@@ -409,6 +409,12 @@ export declare class VendorStream extends Message<VendorStream> {
      */
     vaultFolderId: bigint;
     /**
+     * The associated vault folder UUID (will be empty if vault_folder_id is 0)
+     *
+     * @generated from field: string vault_folder_uuid = 107;
+     */
+    vaultFolderUuid: string;
+    /**
      * The title of the vendor stream
      *
      * @generated from field: string title = 10;
@@ -450,6 +456,18 @@ export declare class VendorStream extends Message<VendorStream> {
      * @generated from field: uint64 unread_count = 60;
      */
     unreadCount: bigint;
+    /**
+     * Stores the total number of messages in the stream
+     *
+     * @generated from field: uint64 message_count = 61;
+     */
+    messageCount: bigint;
+    /**
+     * Stores the username of the user who added the last message
+     *
+     * @generated from field: string last_message_by = 62;
+     */
+    lastMessageBy: string;
     constructor(data?: PartialMessage<VendorStream>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.VendorStream";

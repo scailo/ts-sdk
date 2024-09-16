@@ -71,7 +71,7 @@ Message\&lt;ClientStreamMessageReceipt\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1801
+src/clientstreams.scailo_pb.ts:1825
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string client_stream_message_uuid = 10;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1778
+src/clientstreams.scailo_pb.ts:1802
 
 ___
 
@@ -103,7 +103,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1764
+src/clientstreams.scailo_pb.ts:1788
 
 ___
 
@@ -119,7 +119,7 @@ from field: bool is_read = 12;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1792
+src/clientstreams.scailo_pb.ts:1816
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1771
+src/clientstreams.scailo_pb.ts:1795
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 read_at = 13;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1799
+src/clientstreams.scailo_pb.ts:1823
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1785
+src/clientstreams.scailo_pb.ts:1809
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1808
+src/clientstreams.scailo_pb.ts:1832
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1806
+src/clientstreams.scailo_pb.ts:1830
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1807
+src/clientstreams.scailo_pb.ts:1831
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1829
+src/clientstreams.scailo_pb.ts:1853
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1817
+src/clientstreams.scailo_pb.ts:1841
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1821
+src/clientstreams.scailo_pb.ts:1845
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1825
+src/clientstreams.scailo_pb.ts:1849

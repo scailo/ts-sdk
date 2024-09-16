@@ -102,6 +102,17 @@ export declare const VendorStreamsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Saves a message for viewing it later
+         *
+         * @generated from rpc Scailo.VendorStreamsService.SaveMessageForLater
+         */
+        readonly saveMessageForLater: {
+            readonly name: "SaveMessageForLater";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof IdentifierUUID;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Delete a message in an vendor stream
          *
          * @generated from rpc Scailo.VendorStreamsService.DeleteMessage

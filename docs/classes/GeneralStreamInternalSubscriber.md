@@ -70,7 +70,7 @@ Message\&lt;GeneralStreamInternalSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1740
+src/generalstreams.scailo_pb.ts:1756
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1710
+src/generalstreams.scailo_pb.ts:1726
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 general_stream_id = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1731
+src/generalstreams.scailo_pb.ts:1747
 
 ___
 
@@ -118,7 +118,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1717
+src/generalstreams.scailo_pb.ts:1733
 
 ___
 
@@ -134,7 +134,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1724
+src/generalstreams.scailo_pb.ts:1740
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1738
+src/generalstreams.scailo_pb.ts:1754
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1747
+src/generalstreams.scailo_pb.ts:1763
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1745
+src/generalstreams.scailo_pb.ts:1761
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1746
+src/generalstreams.scailo_pb.ts:1762
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1767
+src/generalstreams.scailo_pb.ts:1783
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1755
+src/generalstreams.scailo_pb.ts:1771
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1759
+src/generalstreams.scailo_pb.ts:1775
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1763
+src/generalstreams.scailo_pb.ts:1779

@@ -503,6 +503,20 @@ export class GeneralStream extends Message<GeneralStream> {
    */
   unreadCount = protoInt64.zero;
 
+  /**
+   * Stores the total number of messages in the stream
+   *
+   * @generated from field: uint64 message_count = 61;
+   */
+  messageCount = protoInt64.zero;
+
+  /**
+   * Stores the username of the user who added the last message
+   *
+   * @generated from field: string last_message_by = 62;
+   */
+  lastMessageBy = "";
+
   constructor(data?: PartialMessage<GeneralStream>) {
     super();
     proto3.util.initPartial(data, this);
@@ -520,6 +534,8 @@ export class GeneralStream extends Message<GeneralStream> {
     { no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 50, name: "internal_ref", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 60, name: "unread_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 61, name: "message_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 62, name: "last_message_by", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GeneralStream {

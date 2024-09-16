@@ -76,7 +76,7 @@ Message\&lt;VendorStreamsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1312
+src/vendorstreams.scailo_pb.ts:1336
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1244
+src/vendorstreams.scailo_pb.ts:1268
 
 ___
 
@@ -108,7 +108,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1272
+src/vendorstreams.scailo_pb.ts:1296
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 internal_subscriber_user_id = 60;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1303
+src/vendorstreams.scailo_pb.ts:1327
 
 ___
 
@@ -140,7 +140,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1237
+src/vendorstreams.scailo_pb.ts:1261
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1251
+src/vendorstreams.scailo_pb.ts:1275
 
 ___
 
@@ -172,7 +172,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1286
+src/vendorstreams.scailo_pb.ts:1310
 
 ___
 
@@ -188,7 +188,7 @@ from field: Scailo.VENDOR_STREAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1265
+src/vendorstreams.scailo_pb.ts:1289
 
 ___
 
@@ -204,7 +204,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1258
+src/vendorstreams.scailo_pb.ts:1282
 
 ___
 
@@ -220,7 +220,7 @@ from field: Scailo.VENDOR_STREAM_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1279
+src/vendorstreams.scailo_pb.ts:1303
 
 ___
 
@@ -239,7 +239,7 @@ from field: uint64 vendor_id = 40;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1296
+src/vendorstreams.scailo_pb.ts:1320
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 vendor_subscriber_user_id = 61;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1310
+src/vendorstreams.scailo_pb.ts:1334
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1319
+src/vendorstreams.scailo_pb.ts:1343
 
 ___
 
@@ -275,7 +275,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1317
+src/vendorstreams.scailo_pb.ts:1341
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1318
+src/vendorstreams.scailo_pb.ts:1342
 
 ## Methods
 
@@ -573,7 +573,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1345
+src/vendorstreams.scailo_pb.ts:1369
 
 ___
 
@@ -594,7 +594,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1333
+src/vendorstreams.scailo_pb.ts:1357
 
 ___
 
@@ -615,7 +615,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1337
+src/vendorstreams.scailo_pb.ts:1361
 
 ___
 
@@ -636,4 +636,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1341
+src/vendorstreams.scailo_pb.ts:1365

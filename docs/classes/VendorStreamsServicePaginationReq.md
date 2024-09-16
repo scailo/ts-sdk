@@ -71,7 +71,7 @@ Message\&lt;VendorStreamsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:764
+src/vendorstreams.scailo_pb.ts:788
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:734
+src/vendorstreams.scailo_pb.ts:758
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:727
+src/vendorstreams.scailo_pb.ts:751
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:741
+src/vendorstreams.scailo_pb.ts:765
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.VENDOR_STREAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:755
+src/vendorstreams.scailo_pb.ts:779
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:748
+src/vendorstreams.scailo_pb.ts:772
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.VENDOR_STREAM_LIFECYCLE status = 6;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:762
+src/vendorstreams.scailo_pb.ts:786
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:771
+src/vendorstreams.scailo_pb.ts:795
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:769
+src/vendorstreams.scailo_pb.ts:793
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:770
+src/vendorstreams.scailo_pb.ts:794
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:792
+src/vendorstreams.scailo_pb.ts:816
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:780
+src/vendorstreams.scailo_pb.ts:804
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:784
+src/vendorstreams.scailo_pb.ts:808
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:788
+src/vendorstreams.scailo_pb.ts:812

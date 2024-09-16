@@ -76,7 +76,7 @@ Message\&lt;ClientStreamsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1328
+src/clientstreams.scailo_pb.ts:1352
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: uint64 client_id = 40;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1312
+src/clientstreams.scailo_pb.ts:1336
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 client_subscriber_user_id = 61;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1326
+src/clientstreams.scailo_pb.ts:1350
 
 ___
 
@@ -127,7 +127,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1260
+src/clientstreams.scailo_pb.ts:1284
 
 ___
 
@@ -143,7 +143,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1288
+src/clientstreams.scailo_pb.ts:1312
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 internal_subscriber_user_id = 60;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1319
+src/clientstreams.scailo_pb.ts:1343
 
 ___
 
@@ -175,7 +175,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1253
+src/clientstreams.scailo_pb.ts:1277
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1267
+src/clientstreams.scailo_pb.ts:1291
 
 ___
 
@@ -207,7 +207,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1302
+src/clientstreams.scailo_pb.ts:1326
 
 ___
 
@@ -223,7 +223,7 @@ from field: Scailo.CLIENT_STREAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1281
+src/clientstreams.scailo_pb.ts:1305
 
 ___
 
@@ -239,7 +239,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1274
+src/clientstreams.scailo_pb.ts:1298
 
 ___
 
@@ -255,7 +255,7 @@ from field: Scailo.CLIENT_STREAM_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1295
+src/clientstreams.scailo_pb.ts:1319
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1335
+src/clientstreams.scailo_pb.ts:1359
 
 ___
 
@@ -275,7 +275,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1333
+src/clientstreams.scailo_pb.ts:1357
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1334
+src/clientstreams.scailo_pb.ts:1358
 
 ## Methods
 
@@ -573,7 +573,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1361
+src/clientstreams.scailo_pb.ts:1385
 
 ___
 
@@ -594,7 +594,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1349
+src/clientstreams.scailo_pb.ts:1373
 
 ___
 
@@ -615,7 +615,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1353
+src/clientstreams.scailo_pb.ts:1377
 
 ___
 
@@ -636,4 +636,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1357
+src/clientstreams.scailo_pb.ts:1381

@@ -25,7 +25,9 @@ from message Scailo.VendorStream
 - [completedOn](VendorStream.md#completedon)
 - [entityUuid](VendorStream.md#entityuuid)
 - [internalRef](VendorStream.md#internalref)
+- [lastMessageBy](VendorStream.md#lastmessageby)
 - [logs](VendorStream.md#logs)
+- [messageCount](VendorStream.md#messagecount)
 - [metadata](VendorStream.md#metadata)
 - [refFrom](VendorStream.md#reffrom)
 - [refId](VendorStream.md#refid)
@@ -34,6 +36,7 @@ from message Scailo.VendorStream
 - [title](VendorStream.md#title)
 - [unreadCount](VendorStream.md#unreadcount)
 - [vaultFolderId](VendorStream.md#vaultfolderid)
+- [vaultFolderUuid](VendorStream.md#vaultfolderuuid)
 - [vendorId](VendorStream.md#vendorid)
 - [fields](VendorStream.md#fields)
 - [runtime](VendorStream.md#runtime)
@@ -78,7 +81,7 @@ Message\&lt;VendorStream\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:633
+src/vendorstreams.scailo_pb.ts:654
 
 ## Properties
 
@@ -126,7 +129,23 @@ from field: string internal_ref = 50;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:624
+src/vendorstreams.scailo_pb.ts:631
+
+___
+
+### lastMessageBy
+
+• **lastMessageBy**: `string` = `""`
+
+Stores the username of the user who added the last message
+
+**`Generated`**
+
+from field: string last_message_by = 62;
+
+#### Defined in
+
+src/vendorstreams.scailo_pb.ts:652
 
 ___
 
@@ -143,6 +162,22 @@ from field: repeated Scailo.LogbookLogVendorStreamLC logs = 5;
 #### Defined in
 
 src/vendorstreams.scailo_pb.ts:568
+
+___
+
+### messageCount
+
+• **messageCount**: `bigint` = `protoInt64.zero`
+
+Stores the total number of messages in the stream
+
+**`Generated`**
+
+from field: uint64 message_count = 61;
+
+#### Defined in
+
+src/vendorstreams.scailo_pb.ts:645
 
 ___
 
@@ -174,7 +209,7 @@ from field: Scailo.VENDOR_STREAM_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:603
+src/vendorstreams.scailo_pb.ts:610
 
 ___
 
@@ -190,7 +225,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:610
+src/vendorstreams.scailo_pb.ts:617
 
 ___
 
@@ -206,7 +241,7 @@ from field: string ref_uuid = 14;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:617
+src/vendorstreams.scailo_pb.ts:624
 
 ___
 
@@ -238,7 +273,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:589
+src/vendorstreams.scailo_pb.ts:596
 
 ___
 
@@ -254,7 +289,7 @@ from field: uint64 unread_count = 60;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:631
+src/vendorstreams.scailo_pb.ts:638
 
 ___
 
@@ -274,6 +309,22 @@ src/vendorstreams.scailo_pb.ts:582
 
 ___
 
+### vaultFolderUuid
+
+• **vaultFolderUuid**: `string` = `""`
+
+The associated vault folder UUID (will be empty if vault_folder_id is 0)
+
+**`Generated`**
+
+from field: string vault_folder_uuid = 107;
+
+#### Defined in
+
+src/vendorstreams.scailo_pb.ts:589
+
+___
+
 ### vendorId
 
 • **vendorId**: `bigint` = `protoInt64.zero`
@@ -286,7 +337,7 @@ from field: uint64 vendor_id = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:596
+src/vendorstreams.scailo_pb.ts:603
 
 ___
 
@@ -296,7 +347,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:640
+src/vendorstreams.scailo_pb.ts:661
 
 ___
 
@@ -306,7 +357,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:638
+src/vendorstreams.scailo_pb.ts:659
 
 ___
 
@@ -316,7 +367,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:639
+src/vendorstreams.scailo_pb.ts:660
 
 ## Methods
 
@@ -604,7 +655,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:668
+src/vendorstreams.scailo_pb.ts:692
 
 ___
 
@@ -625,7 +676,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:656
+src/vendorstreams.scailo_pb.ts:680
 
 ___
 
@@ -646,7 +697,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:660
+src/vendorstreams.scailo_pb.ts:684
 
 ___
 
@@ -667,4 +718,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:664
+src/vendorstreams.scailo_pb.ts:688

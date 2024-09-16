@@ -69,7 +69,7 @@ Message\&lt;GeneralStreamsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:701
+src/generalstreams.scailo_pb.ts:717
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:678
+src/generalstreams.scailo_pb.ts:694
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:685
+src/generalstreams.scailo_pb.ts:701
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.GeneralStream payload = 4;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:699
+src/generalstreams.scailo_pb.ts:715
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:692
+src/generalstreams.scailo_pb.ts:708
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:708
+src/generalstreams.scailo_pb.ts:724
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:706
+src/generalstreams.scailo_pb.ts:722
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:707
+src/generalstreams.scailo_pb.ts:723
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:727
+src/generalstreams.scailo_pb.ts:743
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:715
+src/generalstreams.scailo_pb.ts:731
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:719
+src/generalstreams.scailo_pb.ts:735
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:723
+src/generalstreams.scailo_pb.ts:739

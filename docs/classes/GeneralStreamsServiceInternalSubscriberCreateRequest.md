@@ -68,7 +68,7 @@ Message\&lt;GeneralStreamsServiceInternalSubscriberCreateRequest\&gt;.constructo
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1668
+src/generalstreams.scailo_pb.ts:1684
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 general_stream_id = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1659
+src/generalstreams.scailo_pb.ts:1675
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1652
+src/generalstreams.scailo_pb.ts:1668
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1666
+src/generalstreams.scailo_pb.ts:1682
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1675
+src/generalstreams.scailo_pb.ts:1691
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1673
+src/generalstreams.scailo_pb.ts:1689
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1674
+src/generalstreams.scailo_pb.ts:1690
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1693
+src/generalstreams.scailo_pb.ts:1709
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1681
+src/generalstreams.scailo_pb.ts:1697
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1685
+src/generalstreams.scailo_pb.ts:1701
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1689
+src/generalstreams.scailo_pb.ts:1705

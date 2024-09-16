@@ -81,7 +81,7 @@ Message\&lt;ClientStreamsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1198
+src/clientstreams.scailo_pb.ts:1222
 
 ## Properties
 
@@ -98,7 +98,7 @@ from field: uint64 client_id = 40;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1166
+src/clientstreams.scailo_pb.ts:1190
 
 ___
 
@@ -114,7 +114,7 @@ from field: uint64 client_subscriber_user_id = 61;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1196
+src/clientstreams.scailo_pb.ts:1220
 
 ___
 
@@ -130,7 +130,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1144
+src/clientstreams.scailo_pb.ts:1168
 
 ___
 
@@ -146,7 +146,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1137
+src/clientstreams.scailo_pb.ts:1161
 
 ___
 
@@ -162,7 +162,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1102
+src/clientstreams.scailo_pb.ts:1126
 
 ___
 
@@ -178,7 +178,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1095
+src/clientstreams.scailo_pb.ts:1119
 
 ___
 
@@ -194,7 +194,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1123
+src/clientstreams.scailo_pb.ts:1147
 
 ___
 
@@ -210,7 +210,7 @@ from field: string internal_ref = 18;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1151
+src/clientstreams.scailo_pb.ts:1175
 
 ___
 
@@ -226,7 +226,7 @@ from field: uint64 internal_subscriber_user_id = 60;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1189
+src/clientstreams.scailo_pb.ts:1213
 
 ___
 
@@ -242,7 +242,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1088
+src/clientstreams.scailo_pb.ts:1112
 
 ___
 
@@ -258,7 +258,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1116
+src/clientstreams.scailo_pb.ts:1140
 
 ___
 
@@ -274,7 +274,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1109
+src/clientstreams.scailo_pb.ts:1133
 
 ___
 
@@ -290,7 +290,7 @@ from field: Scailo.CLIENT_STREAM_REF_FROM ref_from = 41;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1173
+src/clientstreams.scailo_pb.ts:1197
 
 ___
 
@@ -308,7 +308,7 @@ from field: uint64 ref_id = 42;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1182
+src/clientstreams.scailo_pb.ts:1206
 
 ___
 
@@ -324,7 +324,7 @@ from field: Scailo.CLIENT_STREAM_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1130
+src/clientstreams.scailo_pb.ts:1154
 
 ___
 
@@ -340,7 +340,7 @@ from field: string title = 30;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1158
+src/clientstreams.scailo_pb.ts:1182
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1205
+src/clientstreams.scailo_pb.ts:1229
 
 ___
 
@@ -360,7 +360,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1203
+src/clientstreams.scailo_pb.ts:1227
 
 ___
 
@@ -370,7 +370,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1204
+src/clientstreams.scailo_pb.ts:1228
 
 ## Methods
 
@@ -658,7 +658,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1236
+src/clientstreams.scailo_pb.ts:1260
 
 ___
 
@@ -679,7 +679,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1224
+src/clientstreams.scailo_pb.ts:1248
 
 ___
 
@@ -700,7 +700,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1228
+src/clientstreams.scailo_pb.ts:1252
 
 ___
 
@@ -721,4 +721,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1232
+src/clientstreams.scailo_pb.ts:1256

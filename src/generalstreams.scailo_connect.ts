@@ -108,6 +108,17 @@ export const GeneralStreamsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Saves a message for viewing it later
+     *
+     * @generated from rpc Scailo.GeneralStreamsService.SaveMessageForLater
+     */
+    saveMessageForLater: {
+      name: "SaveMessageForLater",
+      I: IdentifierUUID,
+      O: IdentifierUUID,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Delete a message in an general stream
      *
      * @generated from rpc Scailo.GeneralStreamsService.DeleteMessage

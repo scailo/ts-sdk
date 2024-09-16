@@ -71,7 +71,7 @@ Message\&lt;VendorStreamMessageReceipt\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1785
+src/vendorstreams.scailo_pb.ts:1809
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1748
+src/vendorstreams.scailo_pb.ts:1772
 
 ___
 
@@ -103,7 +103,7 @@ from field: bool is_read = 12;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1776
+src/vendorstreams.scailo_pb.ts:1800
 
 ___
 
@@ -119,7 +119,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1755
+src/vendorstreams.scailo_pb.ts:1779
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 read_at = 13;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1783
+src/vendorstreams.scailo_pb.ts:1807
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1769
+src/vendorstreams.scailo_pb.ts:1793
 
 ___
 
@@ -167,7 +167,7 @@ from field: string vendor_stream_message_uuid = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1762
+src/vendorstreams.scailo_pb.ts:1786
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1792
+src/vendorstreams.scailo_pb.ts:1816
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1790
+src/vendorstreams.scailo_pb.ts:1814
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1791
+src/vendorstreams.scailo_pb.ts:1815
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1813
+src/vendorstreams.scailo_pb.ts:1837
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1801
+src/vendorstreams.scailo_pb.ts:1825
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1805
+src/vendorstreams.scailo_pb.ts:1829
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1809
+src/vendorstreams.scailo_pb.ts:1833

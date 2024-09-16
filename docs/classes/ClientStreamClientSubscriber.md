@@ -71,7 +71,7 @@ Message\&lt;ClientStreamClientSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2231
+src/clientstreams.scailo_pb.ts:2255
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 client_stream_id = 10;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2215
+src/clientstreams.scailo_pb.ts:2239
 
 ___
 
@@ -103,7 +103,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2194
+src/clientstreams.scailo_pb.ts:2218
 
 ___
 
@@ -119,7 +119,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2201
+src/clientstreams.scailo_pb.ts:2225
 
 ___
 
@@ -135,7 +135,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2208
+src/clientstreams.scailo_pb.ts:2232
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2222
+src/clientstreams.scailo_pb.ts:2246
 
 ___
 
@@ -167,7 +167,7 @@ from field: string user_uuid = 30;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2229
+src/clientstreams.scailo_pb.ts:2253
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2238
+src/clientstreams.scailo_pb.ts:2262
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2236
+src/clientstreams.scailo_pb.ts:2260
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2237
+src/clientstreams.scailo_pb.ts:2261
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2259
+src/clientstreams.scailo_pb.ts:2283
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2247
+src/clientstreams.scailo_pb.ts:2271
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2251
+src/clientstreams.scailo_pb.ts:2275
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2255
+src/clientstreams.scailo_pb.ts:2279

@@ -108,6 +108,17 @@ export const ClientStreamsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Saves a message for viewing it later
+     *
+     * @generated from rpc Scailo.ClientStreamsService.SaveMessageForLater
+     */
+    saveMessageForLater: {
+      name: "SaveMessageForLater",
+      I: IdentifierUUID,
+      O: IdentifierUUID,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Delete a message in an client stream
      *
      * @generated from rpc Scailo.ClientStreamsService.DeleteMessage

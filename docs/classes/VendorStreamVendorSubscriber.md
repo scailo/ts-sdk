@@ -71,7 +71,7 @@ Message\&lt;VendorStreamVendorSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2215
+src/vendorstreams.scailo_pb.ts:2239
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2178
+src/vendorstreams.scailo_pb.ts:2202
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2185
+src/vendorstreams.scailo_pb.ts:2209
 
 ___
 
@@ -119,7 +119,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2192
+src/vendorstreams.scailo_pb.ts:2216
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2206
+src/vendorstreams.scailo_pb.ts:2230
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_uuid = 30;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2213
+src/vendorstreams.scailo_pb.ts:2237
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vendor_stream_id = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2199
+src/vendorstreams.scailo_pb.ts:2223
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2222
+src/vendorstreams.scailo_pb.ts:2246
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2220
+src/vendorstreams.scailo_pb.ts:2244
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2221
+src/vendorstreams.scailo_pb.ts:2245
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2243
+src/vendorstreams.scailo_pb.ts:2267
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2231
+src/vendorstreams.scailo_pb.ts:2255
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2235
+src/vendorstreams.scailo_pb.ts:2259
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2239
+src/vendorstreams.scailo_pb.ts:2263

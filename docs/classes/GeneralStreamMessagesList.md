@@ -66,7 +66,7 @@ Message\&lt;GeneralStreamMessagesList\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1308
+src/generalstreams.scailo_pb.ts:1324
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.GeneralStreamMessage list = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1306
+src/generalstreams.scailo_pb.ts:1322
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1315
+src/generalstreams.scailo_pb.ts:1331
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1313
+src/generalstreams.scailo_pb.ts:1329
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1314
+src/generalstreams.scailo_pb.ts:1330
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1331
+src/generalstreams.scailo_pb.ts:1347
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1319
+src/generalstreams.scailo_pb.ts:1335
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1323
+src/generalstreams.scailo_pb.ts:1339
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1327
+src/generalstreams.scailo_pb.ts:1343

@@ -81,7 +81,7 @@ Message\&lt;GeneralStreamsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:851
+src/generalstreams.scailo_pb.ts:867
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:828
+src/generalstreams.scailo_pb.ts:844
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:821
+src/generalstreams.scailo_pb.ts:837
 
 ___
 
@@ -129,7 +129,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:751
+src/generalstreams.scailo_pb.ts:767
 
 ___
 
@@ -145,7 +145,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:786
+src/generalstreams.scailo_pb.ts:802
 
 ___
 
@@ -161,7 +161,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:779
+src/generalstreams.scailo_pb.ts:795
 
 ___
 
@@ -177,7 +177,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:807
+src/generalstreams.scailo_pb.ts:823
 
 ___
 
@@ -193,7 +193,7 @@ from field: string internal_ref = 18;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:835
+src/generalstreams.scailo_pb.ts:851
 
 ___
 
@@ -209,7 +209,7 @@ from field: uint64 internal_subscriber_user_id = 60;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:849
+src/generalstreams.scailo_pb.ts:865
 
 ___
 
@@ -225,7 +225,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:744
+src/generalstreams.scailo_pb.ts:760
 
 ___
 
@@ -241,7 +241,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:800
+src/generalstreams.scailo_pb.ts:816
 
 ___
 
@@ -257,7 +257,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:793
+src/generalstreams.scailo_pb.ts:809
 
 ___
 
@@ -273,7 +273,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:758
+src/generalstreams.scailo_pb.ts:774
 
 ___
 
@@ -289,7 +289,7 @@ from field: Scailo.GENERAL_STREAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:772
+src/generalstreams.scailo_pb.ts:788
 
 ___
 
@@ -305,7 +305,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:765
+src/generalstreams.scailo_pb.ts:781
 
 ___
 
@@ -321,7 +321,7 @@ from field: Scailo.GENERAL_STREAM_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:814
+src/generalstreams.scailo_pb.ts:830
 
 ___
 
@@ -337,7 +337,7 @@ from field: string title = 30;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:842
+src/generalstreams.scailo_pb.ts:858
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:858
+src/generalstreams.scailo_pb.ts:874
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:856
+src/generalstreams.scailo_pb.ts:872
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:857
+src/generalstreams.scailo_pb.ts:873
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:889
+src/generalstreams.scailo_pb.ts:905
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:877
+src/generalstreams.scailo_pb.ts:893
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:881
+src/generalstreams.scailo_pb.ts:897
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:885
+src/generalstreams.scailo_pb.ts:901

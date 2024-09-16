@@ -383,6 +383,17 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View user's thumbnail picture
+     *
+     * @generated from rpc Scailo.UsersService.ViewThumbnailPicture
+     */
+    viewThumbnailPicture: {
+      name: "ViewThumbnailPicture",
+      I: IdentifierUUID,
+      O: ImageResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View user's VCard
      *
      * @generated from rpc Scailo.UsersService.ViewVCard

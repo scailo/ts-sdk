@@ -69,7 +69,7 @@ Message\&lt;GeneralStreamsServiceImportInternalSubscribersRequest\&gt;.construct
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1849
+src/generalstreams.scailo_pb.ts:1865
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: bool delete_existing = 4;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1847
+src/generalstreams.scailo_pb.ts:1863
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 general_stream_id = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1833
+src/generalstreams.scailo_pb.ts:1849
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 resource_id = 3;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1840
+src/generalstreams.scailo_pb.ts:1856
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1826
+src/generalstreams.scailo_pb.ts:1842
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1856
+src/generalstreams.scailo_pb.ts:1872
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1854
+src/generalstreams.scailo_pb.ts:1870
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1855
+src/generalstreams.scailo_pb.ts:1871
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1875
+src/generalstreams.scailo_pb.ts:1891
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1863
+src/generalstreams.scailo_pb.ts:1879
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1867
+src/generalstreams.scailo_pb.ts:1883
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1871
+src/generalstreams.scailo_pb.ts:1887

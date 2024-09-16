@@ -71,7 +71,7 @@ Message\&lt;GeneralStreamMessageReceipt\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1565
+src/generalstreams.scailo_pb.ts:1581
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1528
+src/generalstreams.scailo_pb.ts:1544
 
 ___
 
@@ -103,7 +103,7 @@ from field: string general_stream_message_uuid = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1542
+src/generalstreams.scailo_pb.ts:1558
 
 ___
 
@@ -119,7 +119,7 @@ from field: bool is_read = 12;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1556
+src/generalstreams.scailo_pb.ts:1572
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1535
+src/generalstreams.scailo_pb.ts:1551
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 read_at = 13;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1563
+src/generalstreams.scailo_pb.ts:1579
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1549
+src/generalstreams.scailo_pb.ts:1565
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1572
+src/generalstreams.scailo_pb.ts:1588
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1570
+src/generalstreams.scailo_pb.ts:1586
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1571
+src/generalstreams.scailo_pb.ts:1587
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1593
+src/generalstreams.scailo_pb.ts:1609
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1581
+src/generalstreams.scailo_pb.ts:1597
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1585
+src/generalstreams.scailo_pb.ts:1601
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1589
+src/generalstreams.scailo_pb.ts:1605

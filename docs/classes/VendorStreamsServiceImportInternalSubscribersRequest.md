@@ -69,7 +69,7 @@ Message\&lt;VendorStreamsServiceImportInternalSubscribersRequest\&gt;.constructo
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2077
+src/vendorstreams.scailo_pb.ts:2101
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: bool delete_existing = 4;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2075
+src/vendorstreams.scailo_pb.ts:2099
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 resource_id = 3;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2068
+src/vendorstreams.scailo_pb.ts:2092
 
 ___
 
@@ -117,7 +117,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2054
+src/vendorstreams.scailo_pb.ts:2078
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 vendor_stream_id = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2061
+src/vendorstreams.scailo_pb.ts:2085
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2084
+src/vendorstreams.scailo_pb.ts:2108
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2082
+src/vendorstreams.scailo_pb.ts:2106
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2083
+src/vendorstreams.scailo_pb.ts:2107
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2103
+src/vendorstreams.scailo_pb.ts:2127
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2091
+src/vendorstreams.scailo_pb.ts:2115
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2095
+src/vendorstreams.scailo_pb.ts:2119
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2099
+src/vendorstreams.scailo_pb.ts:2123

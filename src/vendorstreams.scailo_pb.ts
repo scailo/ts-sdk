@@ -582,6 +582,13 @@ export class VendorStream extends Message<VendorStream> {
   vaultFolderId = protoInt64.zero;
 
   /**
+   * The associated vault folder UUID (will be empty if vault_folder_id is 0)
+   *
+   * @generated from field: string vault_folder_uuid = 107;
+   */
+  vaultFolderUuid = "";
+
+  /**
    * The title of the vendor stream
    *
    * @generated from field: string title = 10;
@@ -630,6 +637,20 @@ export class VendorStream extends Message<VendorStream> {
    */
   unreadCount = protoInt64.zero;
 
+  /**
+   * Stores the total number of messages in the stream
+   *
+   * @generated from field: uint64 message_count = 61;
+   */
+  messageCount = protoInt64.zero;
+
+  /**
+   * Stores the username of the user who added the last message
+   *
+   * @generated from field: string last_message_by = 62;
+   */
+  lastMessageBy = "";
+
   constructor(data?: PartialMessage<VendorStream>) {
     super();
     proto3.util.initPartial(data, this);
@@ -644,6 +665,7 @@ export class VendorStream extends Message<VendorStream> {
     { no: 5, name: "logs", kind: "message", T: LogbookLogVendorStreamLC, repeated: true },
     { no: 6, name: "completed_on", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 7, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 107, name: "vault_folder_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(VENDOR_STREAM_REF_FROM) },
@@ -651,6 +673,8 @@ export class VendorStream extends Message<VendorStream> {
     { no: 14, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 50, name: "internal_ref", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 60, name: "unread_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 61, name: "message_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 62, name: "last_message_by", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorStream {

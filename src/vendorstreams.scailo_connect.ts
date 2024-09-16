@@ -108,6 +108,17 @@ export const VendorStreamsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Saves a message for viewing it later
+     *
+     * @generated from rpc Scailo.VendorStreamsService.SaveMessageForLater
+     */
+    saveMessageForLater: {
+      name: "SaveMessageForLater",
+      I: IdentifierUUID,
+      O: IdentifierUUID,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Delete a message in an vendor stream
      *
      * @generated from rpc Scailo.VendorStreamsService.DeleteMessage
