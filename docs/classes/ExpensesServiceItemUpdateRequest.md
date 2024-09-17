@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ExpensesServiceItemUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ExpensesServiceItemUpdateRequest
 
 # Class: ExpensesServiceItemUpdateRequest
 

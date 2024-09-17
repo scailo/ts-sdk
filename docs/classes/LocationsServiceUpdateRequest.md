@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LocationsServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LocationsServiceUpdateRequest
 
 # Class: LocationsServiceUpdateRequest
 

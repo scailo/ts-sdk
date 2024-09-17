@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LabelsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LabelsList
 
 # Class: LabelsList
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AnnouncementsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AnnouncementsList
 
 # Class: AnnouncementsList
 

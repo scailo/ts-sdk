@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogVendorStreamLC
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogVendorStreamLC
 
 # Class: LogbookLogVendorStreamLC
 

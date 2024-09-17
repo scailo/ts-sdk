@@ -1,5 +1,5 @@
 {
-    "name": "@unaxiom/scailo-sdk",
+    "name": "@kernelminds/scailo-sdk",
     "version": "1.0.0-dev",
     "description": "NPM module that provides access to Scailo's API",
     "types": "./lib/cjs/types/index.d.ts",

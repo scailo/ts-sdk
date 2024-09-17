@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServiceCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServiceCreateRequest
 
 # Class: HolidaysServiceCreateRequest
 

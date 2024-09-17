@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LabelPaginationResp
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LabelPaginationResp
 
 # Class: LabelPaginationResp
 

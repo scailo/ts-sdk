@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceAutofillRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceAutofillRequest
 
 # Class: ProductionPlansServiceAutofillRequest
 

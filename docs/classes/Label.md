@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Label
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Label
 
 # Class: Label
 

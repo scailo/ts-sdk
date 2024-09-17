@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientsServiceCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientsServiceCreateRequest
 
 # Class: ClientsServiceCreateRequest
 

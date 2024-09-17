@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / INVENTORY\_ISSUED\_PURPOSE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / INVENTORY\_ISSUED\_PURPOSE
 
 # Enumeration: INVENTORY\_ISSUED\_PURPOSE
 

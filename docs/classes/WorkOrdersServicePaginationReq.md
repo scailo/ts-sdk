@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServicePaginationReq
 
 # Class: WorkOrdersServicePaginationReq
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesServicePaginatedParametersResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesServicePaginatedParametersResponse
 
 # Class: QCSamplesServicePaginatedParametersResponse
 

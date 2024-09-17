@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BankAccount
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BankAccount
 
 # Class: BankAccount
 

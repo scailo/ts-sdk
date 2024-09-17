@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsParamsServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsParamsServiceFilterReq
 
 # Class: SkillsParamsServiceFilterReq
 

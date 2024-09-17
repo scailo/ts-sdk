@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesServicePaginationReq
 
 # Class: QCSamplesServicePaginationReq
 

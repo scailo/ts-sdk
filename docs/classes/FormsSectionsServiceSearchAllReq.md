@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FormsSectionsServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FormsSectionsServiceSearchAllReq
 
 # Class: FormsSectionsServiceSearchAllReq
 

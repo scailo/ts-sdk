@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkflowsRulesServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkflowsRulesServiceCountReq
 
 # Class: WorkflowsRulesServiceCountReq
 

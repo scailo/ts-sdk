@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Base64String
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Base64String
 
 # Class: Base64String
 

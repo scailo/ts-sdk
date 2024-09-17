@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollGroupsItemsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollGroupsItemsList
 
 # Class: PayrollGroupsItemsList
 

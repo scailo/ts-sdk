@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCHubsServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCHubsServiceUpdateRequest
 
 # Class: QCHubsServiceUpdateRequest
 

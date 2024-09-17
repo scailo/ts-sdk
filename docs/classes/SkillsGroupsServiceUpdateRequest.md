@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsGroupsServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsGroupsServiceUpdateRequest
 
 # Class: SkillsGroupsServiceUpdateRequest
 

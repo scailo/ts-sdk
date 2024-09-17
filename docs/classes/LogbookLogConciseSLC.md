@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogConciseSLC
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogConciseSLC
 
 # Class: LogbookLogConciseSLC
 

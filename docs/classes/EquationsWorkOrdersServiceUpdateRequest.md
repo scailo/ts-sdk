@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsWorkOrdersServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsWorkOrdersServiceUpdateRequest
 
 # Class: EquationsWorkOrdersServiceUpdateRequest
 

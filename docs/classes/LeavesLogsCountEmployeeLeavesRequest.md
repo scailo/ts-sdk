@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesLogsCountEmployeeLeavesRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesLogsCountEmployeeLeavesRequest
 
 # Class: LeavesLogsCountEmployeeLeavesRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsParamsServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsParamsServicePaginationResponse
 
 # Class: SkillsParamsServicePaginationResponse
 

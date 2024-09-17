@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ShiftsServiceCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ShiftsServiceCreateRequest
 
 # Class: ShiftsServiceCreateRequest
 

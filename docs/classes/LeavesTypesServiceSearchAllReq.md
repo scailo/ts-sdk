@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesTypesServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesTypesServiceSearchAllReq
 
 # Class: LeavesTypesServiceSearchAllReq
 

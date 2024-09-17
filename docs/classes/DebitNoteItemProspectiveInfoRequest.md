@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNoteItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNoteItemProspectiveInfoRequest
 
 # Class: DebitNoteItemProspectiveInfoRequest
 

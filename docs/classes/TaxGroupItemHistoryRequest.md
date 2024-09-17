@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupItemHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupItemHistoryRequest
 
 # Class: TaxGroupItemHistoryRequest
 

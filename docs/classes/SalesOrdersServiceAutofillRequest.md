@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServiceAutofillRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServiceAutofillRequest
 
 # Class: SalesOrdersServiceAutofillRequest
 

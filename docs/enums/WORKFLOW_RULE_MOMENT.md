@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WORKFLOW\_RULE\_MOMENT
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WORKFLOW\_RULE\_MOMENT
 
 # Enumeration: WORKFLOW\_RULE\_MOMENT
 

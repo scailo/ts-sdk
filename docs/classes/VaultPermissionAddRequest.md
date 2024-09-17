@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultPermissionAddRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultPermissionAddRequest
 
 # Class: VaultPermissionAddRequest
 

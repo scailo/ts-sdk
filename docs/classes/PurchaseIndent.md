@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseIndent
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseIndent
 
 # Class: PurchaseIndent
 

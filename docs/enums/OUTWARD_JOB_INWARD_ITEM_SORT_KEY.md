@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OUTWARD\_JOB\_INWARD\_ITEM\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OUTWARD\_JOB\_INWARD\_ITEM\_SORT\_KEY
 
 # Enumeration: OUTWARD\_JOB\_INWARD\_ITEM\_SORT\_KEY
 

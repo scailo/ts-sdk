@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StandardFile
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StandardFile
 
 # Class: StandardFile
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServiceCountReq
 
 # Class: OutwardJobsServiceCountReq
 

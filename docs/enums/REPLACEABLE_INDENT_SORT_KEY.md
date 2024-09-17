@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / REPLACEABLE\_INDENT\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / REPLACEABLE\_INDENT\_SORT\_KEY
 
 # Enumeration: REPLACEABLE\_INDENT\_SORT\_KEY
 

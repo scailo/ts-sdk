@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesServiceOwnerCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesServiceOwnerCreateRequest
 
 # Class: ActivitiesServiceOwnerCreateRequest
 

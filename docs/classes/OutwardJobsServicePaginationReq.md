@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServicePaginationReq
 
 # Class: OutwardJobsServicePaginationReq
 

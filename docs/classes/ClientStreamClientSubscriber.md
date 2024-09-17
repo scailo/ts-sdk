@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamClientSubscriber
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamClientSubscriber
 
 # Class: ClientStreamClientSubscriber
 

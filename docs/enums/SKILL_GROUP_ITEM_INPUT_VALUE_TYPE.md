@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SKILL\_GROUP\_ITEM\_INPUT\_VALUE\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SKILL\_GROUP\_ITEM\_INPUT\_VALUE\_TYPE
 
 # Enumeration: SKILL\_GROUP\_ITEM\_INPUT\_VALUE\_TYPE
 

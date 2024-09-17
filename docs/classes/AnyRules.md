@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AnyRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AnyRules
 
 # Class: AnyRules
 

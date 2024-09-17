@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / IssuableInventorySearchReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / IssuableInventorySearchReq
 
 # Class: IssuableInventorySearchReq
 

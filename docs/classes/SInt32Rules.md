@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SInt32Rules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SInt32Rules
 
 # Class: SInt32Rules
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServiceSearchAllReq
 
 # Class: SalesOrdersServiceSearchAllReq
 

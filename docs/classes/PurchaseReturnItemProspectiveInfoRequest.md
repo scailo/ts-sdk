@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseReturnItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseReturnItemProspectiveInfoRequest
 
 # Class: PurchaseReturnItemProspectiveInfoRequest
 

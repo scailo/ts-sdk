@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorStreamsServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorStreamsServiceFilterReq
 
 # Class: VendorStreamsServiceFilterReq
 

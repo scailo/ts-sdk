@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionIndentItemsSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionIndentItemsSearchRequest
 
 # Class: ProductionIndentItemsSearchRequest
 

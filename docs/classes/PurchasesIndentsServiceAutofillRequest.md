@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchasesIndentsServiceAutofillRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchasesIndentsServiceAutofillRequest
 
 # Class: PurchasesIndentsServiceAutofillRequest
 

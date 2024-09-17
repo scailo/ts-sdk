@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServicePaginatedActionablesResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServicePaginatedActionablesResponse
 
 # Class: MeetingsServicePaginatedActionablesResponse
 

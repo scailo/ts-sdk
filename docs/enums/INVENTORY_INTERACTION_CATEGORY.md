@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / INVENTORY\_INTERACTION\_CATEGORY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / INVENTORY\_INTERACTION\_CATEGORY
 
 # Enumeration: INVENTORY\_INTERACTION\_CATEGORY
 

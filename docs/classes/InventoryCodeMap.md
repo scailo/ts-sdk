@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / InventoryCodeMap
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / InventoryCodeMap
 
 # Class: InventoryCodeMap
 

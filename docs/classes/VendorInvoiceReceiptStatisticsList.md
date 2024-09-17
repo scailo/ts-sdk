@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoiceReceiptStatisticsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoiceReceiptStatisticsList
 
 # Class: VendorInvoiceReceiptStatisticsList
 

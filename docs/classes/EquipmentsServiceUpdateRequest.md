@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquipmentsServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquipmentsServiceUpdateRequest
 
 # Class: EquipmentsServiceUpdateRequest
 

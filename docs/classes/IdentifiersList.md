@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifiersList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifiersList
 
 # Class: IdentifiersList
 

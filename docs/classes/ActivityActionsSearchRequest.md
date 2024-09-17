@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityActionsSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityActionsSearchRequest
 
 # Class: ActivityActionsSearchRequest
 

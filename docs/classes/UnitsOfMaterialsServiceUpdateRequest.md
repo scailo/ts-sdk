@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / UnitsOfMaterialsServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / UnitsOfMaterialsServiceUpdateRequest
 
 # Class: UnitsOfMaterialsServiceUpdateRequest
 

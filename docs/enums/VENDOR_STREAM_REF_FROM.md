@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VENDOR\_STREAM\_REF\_FROM
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VENDOR\_STREAM\_REF\_FROM
 
 # Enumeration: VENDOR\_STREAM\_REF\_FROM
 

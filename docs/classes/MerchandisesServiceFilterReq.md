@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MerchandisesServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MerchandisesServiceFilterReq
 
 # Class: MerchandisesServiceFilterReq
 

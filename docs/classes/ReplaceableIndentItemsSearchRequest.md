@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ReplaceableIndentItemsSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ReplaceableIndentItemsSearchRequest
 
 # Class: ReplaceableIndentItemsSearchRequest
 

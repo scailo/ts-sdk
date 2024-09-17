@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MerchandisesServiceSendToStoreRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MerchandisesServiceSendToStoreRequest
 
 # Class: MerchandisesServiceSendToStoreRequest
 

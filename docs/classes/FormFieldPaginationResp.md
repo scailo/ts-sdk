@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FormFieldPaginationResp
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FormFieldPaginationResp
 
 # Class: FormFieldPaginationResp
 

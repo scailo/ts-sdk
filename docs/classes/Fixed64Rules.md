@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Fixed64Rules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Fixed64Rules
 
 # Class: Fixed64Rules
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SALES\_QUOTATION\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SALES\_QUOTATION\_ITEM\_STATUS
 
 # Enumeration: SALES\_QUOTATION\_ITEM\_STATUS
 

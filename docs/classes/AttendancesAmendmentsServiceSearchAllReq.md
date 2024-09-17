@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AttendancesAmendmentsServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AttendancesAmendmentsServiceSearchAllReq
 
 # Class: AttendancesAmendmentsServiceSearchAllReq
 

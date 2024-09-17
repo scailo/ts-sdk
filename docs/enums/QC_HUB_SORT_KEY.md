@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QC\_HUB\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QC\_HUB\_SORT\_KEY
 
 # Enumeration: QC\_HUB\_SORT\_KEY
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalaryAdditionItem
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalaryAdditionItem
 
 # Class: SalaryAdditionItem
 

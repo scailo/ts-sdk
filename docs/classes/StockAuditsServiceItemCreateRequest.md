@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StockAuditsServiceItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StockAuditsServiceItemCreateRequest
 
 # Class: StockAuditsServiceItemCreateRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ASSET\_INDENT\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ASSET\_INDENT\_ITEM\_STATUS
 
 # Enumeration: ASSET\_INDENT\_ITEM\_STATUS
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesReturnsServiceAlreadyAddedQuantityForSourceRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesReturnsServiceAlreadyAddedQuantityForSourceRequest
 
 # Class: SalesReturnsServiceAlreadyAddedQuantityForSourceRequest
 

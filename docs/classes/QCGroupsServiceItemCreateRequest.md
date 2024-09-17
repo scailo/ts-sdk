@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCGroupsServiceItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCGroupsServiceItemCreateRequest
 
 # Class: QCGroupsServiceItemCreateRequest
 

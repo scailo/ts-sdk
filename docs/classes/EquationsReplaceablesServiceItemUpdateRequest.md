@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsReplaceablesServiceItemUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsReplaceablesServiceItemUpdateRequest
 
 # Class: EquationsReplaceablesServiceItemUpdateRequest
 

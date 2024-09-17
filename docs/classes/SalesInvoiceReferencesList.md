@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesInvoiceReferencesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesInvoiceReferencesList
 
 # Class: SalesInvoiceReferencesList
 

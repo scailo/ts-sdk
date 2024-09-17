@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupsServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupsServicePaginationResponse
 
 # Class: TaxGroupsServicePaginationResponse
 

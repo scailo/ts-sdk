@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Department
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Department
 
 # Class: Department
 

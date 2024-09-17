@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationFamilyItemHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationFamilyItemHistoryRequest
 
 # Class: EquationFamilyItemHistoryRequest
 

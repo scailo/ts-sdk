@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServiceAutofillRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServiceAutofillRequest
 
 # Class: WorkOrdersServiceAutofillRequest
 

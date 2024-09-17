@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LogoutRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LogoutRequest
 
 # Class: LogoutRequest
 

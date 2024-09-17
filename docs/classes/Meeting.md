@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Meeting
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Meeting
 
 # Class: Meeting
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsGroupsServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsGroupsServicePaginationReq
 
 # Class: SkillsGroupsServicePaginationReq
 

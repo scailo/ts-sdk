@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ComponentsServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ComponentsServiceSearchAllReq
 
 # Class: ComponentsServiceSearchAllReq
 

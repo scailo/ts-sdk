@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Client
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Client
 
 # Class: Client
 

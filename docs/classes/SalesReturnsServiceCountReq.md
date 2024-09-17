@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesReturnsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesReturnsServiceCountReq
 
 # Class: SalesReturnsServiceCountReq
 

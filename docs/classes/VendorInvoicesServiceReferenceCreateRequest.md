@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoicesServiceReferenceCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoicesServiceReferenceCreateRequest
 
 # Class: VendorInvoicesServiceReferenceCreateRequest
 

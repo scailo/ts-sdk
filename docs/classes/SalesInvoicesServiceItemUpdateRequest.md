@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesInvoicesServiceItemUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesInvoicesServiceItemUpdateRequest
 
 # Class: SalesInvoicesServiceItemUpdateRequest
 

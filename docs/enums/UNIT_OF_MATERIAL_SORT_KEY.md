@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / UNIT\_OF\_MATERIAL\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / UNIT\_OF\_MATERIAL\_SORT\_KEY
 
 # Enumeration: UNIT\_OF\_MATERIAL\_SORT\_KEY
 

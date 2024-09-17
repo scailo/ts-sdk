@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNote
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNote
 
 # Class: DebitNote
 

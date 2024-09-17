@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralStreamsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralStreamsServiceCountReq
 
 # Class: GeneralStreamsServiceCountReq
 

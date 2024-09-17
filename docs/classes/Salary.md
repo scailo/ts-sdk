@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Salary
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Salary
 
 # Class: Salary
 

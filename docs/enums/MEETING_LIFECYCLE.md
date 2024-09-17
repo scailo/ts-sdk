@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MEETING\_LIFECYCLE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MEETING\_LIFECYCLE
 
 # Enumeration: MEETING\_LIFECYCLE
 

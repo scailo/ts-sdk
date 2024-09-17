@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceFilterReq
 
 # Class: AssetIndentsServiceFilterReq
 

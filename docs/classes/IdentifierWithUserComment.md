@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierWithUserComment
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierWithUserComment
 
 # Class: IdentifierWithUserComment
 

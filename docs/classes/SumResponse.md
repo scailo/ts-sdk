@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SumResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SumResponse
 
 # Class: SumResponse
 

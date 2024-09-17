@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceImportEmployeesRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceImportEmployeesRequest
 
 # Class: MeetingsServiceImportEmployeesRequest
 

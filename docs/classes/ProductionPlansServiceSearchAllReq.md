@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceSearchAllReq
 
 # Class: ProductionPlansServiceSearchAllReq
 

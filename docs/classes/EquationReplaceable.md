@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationReplaceable
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationReplaceable
 
 # Class: EquationReplaceable
 

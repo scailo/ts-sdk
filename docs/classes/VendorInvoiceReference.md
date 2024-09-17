@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoiceReference
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoiceReference
 
 # Class: VendorInvoiceReference
 

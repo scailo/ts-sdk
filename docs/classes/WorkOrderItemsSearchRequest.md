@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrderItemsSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrderItemsSearchRequest
 
 # Class: WorkOrderItemsSearchRequest
 

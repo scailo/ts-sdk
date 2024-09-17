@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamsServiceImportInternalSubscribersRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamsServiceImportInternalSubscribersRequest
 
 # Class: ClientStreamsServiceImportInternalSubscribersRequest
 

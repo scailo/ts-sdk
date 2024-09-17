@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNotesServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNotesServicePaginationReq
 
 # Class: DebitNotesServicePaginationReq
 

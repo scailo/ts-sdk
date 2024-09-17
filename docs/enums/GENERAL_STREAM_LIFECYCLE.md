@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GENERAL\_STREAM\_LIFECYCLE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GENERAL\_STREAM\_LIFECYCLE
 
 # Enumeration: GENERAL\_STREAM\_LIFECYCLE
 

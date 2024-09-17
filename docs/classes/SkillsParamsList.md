@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsParamsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillsParamsList
 
 # Class: SkillsParamsList
 

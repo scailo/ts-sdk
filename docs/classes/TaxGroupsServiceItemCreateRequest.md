@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupsServiceItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupsServiceItemCreateRequest
 
 # Class: TaxGroupsServiceItemCreateRequest
 

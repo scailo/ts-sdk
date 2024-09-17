@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersList
 
 # Class: WorkOrdersList
 

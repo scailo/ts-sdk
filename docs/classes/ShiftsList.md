@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ShiftsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ShiftsList
 
 # Class: ShiftsList
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BankAccountsServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BankAccountsServiceFilterReq
 
 # Class: BankAccountsServiceFilterReq
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / UserLoginHistory
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / UserLoginHistory
 
 # Class: UserLoginHistory
 

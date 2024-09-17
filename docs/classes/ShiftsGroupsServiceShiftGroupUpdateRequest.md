@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ShiftsGroupsServiceShiftGroupUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ShiftsGroupsServiceShiftGroupUpdateRequest
 
 # Class: ShiftsGroupsServiceShiftGroupUpdateRequest
 

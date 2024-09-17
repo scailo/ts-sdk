@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoicesServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoicesServicePaginationReq
 
 # Class: VendorInvoicesServicePaginationReq
 

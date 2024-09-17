@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LEAVE\_REQUEST\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LEAVE\_REQUEST\_SORT\_KEY
 
 # Enumeration: LEAVE\_REQUEST\_SORT\_KEY
 

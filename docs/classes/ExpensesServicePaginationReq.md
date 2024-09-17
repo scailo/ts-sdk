@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ExpensesServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ExpensesServicePaginationReq
 
 # Class: ExpensesServicePaginationReq
 

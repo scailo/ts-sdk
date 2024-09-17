@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceCountReq
 
 # Class: AssetIndentsServiceCountReq
 

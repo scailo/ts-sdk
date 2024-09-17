@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActionsCodesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActionsCodesList
 
 # Class: ActionsCodesList
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxParam
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxParam
 
 # Class: TaxParam
 

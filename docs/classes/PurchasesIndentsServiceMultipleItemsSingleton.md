@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchasesIndentsServiceMultipleItemsSingleton
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchasesIndentsServiceMultipleItemsSingleton
 
 # Class: PurchasesIndentsServiceMultipleItemsSingleton
 

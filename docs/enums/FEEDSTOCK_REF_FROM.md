@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FEEDSTOCK\_REF\_FROM
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FEEDSTOCK\_REF\_FROM
 
 # Enumeration: FEEDSTOCK\_REF\_FROM
 

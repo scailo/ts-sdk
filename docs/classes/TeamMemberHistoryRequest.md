@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TeamMemberHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TeamMemberHistoryRequest
 
 # Class: TeamMemberHistoryRequest
 

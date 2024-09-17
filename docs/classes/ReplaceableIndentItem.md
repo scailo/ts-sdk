@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ReplaceableIndentItem
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ReplaceableIndentItem
 
 # Class: ReplaceableIndentItem
 

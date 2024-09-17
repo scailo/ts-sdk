@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsFamiliesServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsFamiliesServiceCountReq
 
 # Class: EquationsFamiliesServiceCountReq
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsFamiliesItemsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsFamiliesItemsList
 
 # Class: EquationsFamiliesItemsList
 

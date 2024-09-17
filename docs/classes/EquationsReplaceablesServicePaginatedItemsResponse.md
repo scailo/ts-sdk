@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsReplaceablesServicePaginatedItemsResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsReplaceablesServicePaginatedItemsResponse
 
 # Class: EquationsReplaceablesServicePaginatedItemsResponse
 

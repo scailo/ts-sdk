@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesQuotationsServiceReferenceCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesQuotationsServiceReferenceCreateRequest
 
 # Class: SalesQuotationsServiceReferenceCreateRequest
 

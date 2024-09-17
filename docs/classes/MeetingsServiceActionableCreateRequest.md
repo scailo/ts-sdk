@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceActionableCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceActionableCreateRequest
 
 # Class: MeetingsServiceActionableCreateRequest
 

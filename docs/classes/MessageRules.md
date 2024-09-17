@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MessageRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MessageRules
 
 # Class: MessageRules
 

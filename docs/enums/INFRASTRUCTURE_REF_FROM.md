@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / INFRASTRUCTURE\_REF\_FROM
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / INFRASTRUCTURE\_REF\_FROM
 
 # Enumeration: INFRASTRUCTURE\_REF\_FROM
 

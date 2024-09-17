@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Fixed32Rules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Fixed32Rules
 
 # Class: Fixed32Rules
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamsServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamsServiceUpdateRequest
 
 # Class: ClientStreamsServiceUpdateRequest
 

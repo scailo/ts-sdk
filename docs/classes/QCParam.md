@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCParam
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCParam
 
 # Class: QCParam
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AbsencesServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AbsencesServiceUpdateRequest
 
 # Class: AbsencesServiceUpdateRequest
 

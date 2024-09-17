@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrderItemsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrderItemsList
 
 # Class: SalesOrderItemsList
 

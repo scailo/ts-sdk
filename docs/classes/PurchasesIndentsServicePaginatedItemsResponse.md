@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchasesIndentsServicePaginatedItemsResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchasesIndentsServicePaginatedItemsResponse
 
 # Class: PurchasesIndentsServicePaginatedItemsResponse
 

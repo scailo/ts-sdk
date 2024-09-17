@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QuotationsRequestsItemsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QuotationsRequestsItemsList
 
 # Class: QuotationsRequestsItemsList
 

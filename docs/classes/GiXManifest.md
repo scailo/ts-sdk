@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXManifest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXManifest
 
 # Class: GiXManifest
 

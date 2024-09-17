@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OvertimesServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OvertimesServicePaginationReq
 
 # Class: OvertimesServicePaginationReq
 

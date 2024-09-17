@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralStreamsServiceMessageCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralStreamsServiceMessageCreateRequest
 
 # Class: GeneralStreamsServiceMessageCreateRequest
 

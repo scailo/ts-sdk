@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyStoragesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyStoragesList
 
 # Class: FamilyStoragesList
 

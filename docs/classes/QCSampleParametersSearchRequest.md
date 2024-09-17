@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSampleParametersSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSampleParametersSearchRequest
 
 # Class: QCSampleParametersSearchRequest
 

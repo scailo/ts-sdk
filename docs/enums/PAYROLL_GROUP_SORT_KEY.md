@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PAYROLL\_GROUP\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PAYROLL\_GROUP\_SORT\_KEY
 
 # Enumeration: PAYROLL\_GROUP\_SORT\_KEY
 

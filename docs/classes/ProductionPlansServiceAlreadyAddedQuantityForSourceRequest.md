@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceAlreadyAddedQuantityForSourceRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceAlreadyAddedQuantityForSourceRequest
 
 # Class: ProductionPlansServiceAlreadyAddedQuantityForSourceRequest
 

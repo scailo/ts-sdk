@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollParamsServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollParamsServicePaginationReq
 
 # Class: PayrollParamsServicePaginationReq
 

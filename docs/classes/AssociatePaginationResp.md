@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AssociatePaginationResp
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AssociatePaginationResp
 
 # Class: AssociatePaginationResp
 

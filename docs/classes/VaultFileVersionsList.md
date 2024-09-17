@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFileVersionsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFileVersionsList
 
 # Class: VaultFileVersionsList
 

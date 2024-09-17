@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesInvoiceItemHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesInvoiceItemHistoryRequest
 
 # Class: SalesInvoiceItemHistoryRequest
 

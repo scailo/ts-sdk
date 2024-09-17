@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ROLE\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ROLE\_SORT\_KEY
 
 # Enumeration: ROLE\_SORT\_KEY
 

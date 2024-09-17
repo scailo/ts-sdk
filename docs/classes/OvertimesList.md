@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OvertimesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OvertimesList
 
 # Class: OvertimesList
 

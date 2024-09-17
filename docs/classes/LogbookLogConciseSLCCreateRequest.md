@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogConciseSLCCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogConciseSLCCreateRequest
 
 # Class: LogbookLogConciseSLCCreateRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AbsencesServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AbsencesServicePaginationResponse
 
 # Class: AbsencesServicePaginationResponse
 

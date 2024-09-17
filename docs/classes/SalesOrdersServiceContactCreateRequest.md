@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServiceContactCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServiceContactCreateRequest
 
 # Class: SalesOrdersServiceContactCreateRequest
 

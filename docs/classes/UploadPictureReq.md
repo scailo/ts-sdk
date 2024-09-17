@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / UploadPictureReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / UploadPictureReq
 
 # Class: UploadPictureReq
 

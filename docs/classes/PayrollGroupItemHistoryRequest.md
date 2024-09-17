@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollGroupItemHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollGroupItemHistoryRequest
 
 # Class: PayrollGroupItemHistoryRequest
 

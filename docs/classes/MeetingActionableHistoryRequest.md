@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingActionableHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingActionableHistoryRequest
 
 # Class: MeetingActionableHistoryRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TAX\_PARAM\_VALUE\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TAX\_PARAM\_VALUE\_TYPE
 
 # Enumeration: TAX\_PARAM\_VALUE\_TYPE
 

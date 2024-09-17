@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FORM\_SECTION\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FORM\_SECTION\_SORT\_KEY
 
 # Enumeration: FORM\_SECTION\_SORT\_KEY
 

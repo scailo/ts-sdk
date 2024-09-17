@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCGroupsServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCGroupsServicePaginationResponse
 
 # Class: QCGroupsServicePaginationResponse
 

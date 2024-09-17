@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EQUIPMENT\_REF\_FROM
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EQUIPMENT\_REF\_FROM
 
 # Enumeration: EQUIPMENT\_REF\_FROM
 

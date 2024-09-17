@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FeedstocksList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FeedstocksList
 
 # Class: FeedstocksList
 

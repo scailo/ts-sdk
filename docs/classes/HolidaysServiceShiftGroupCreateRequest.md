@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServiceShiftGroupCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServiceShiftGroupCreateRequest
 
 # Class: HolidaysServiceShiftGroupCreateRequest
 

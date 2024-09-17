@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CreditNotesServiceAutofillRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CreditNotesServiceAutofillRequest
 
 # Class: CreditNotesServiceAutofillRequest
 

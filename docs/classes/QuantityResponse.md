@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QuantityResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QuantityResponse
 
 # Class: QuantityResponse
 

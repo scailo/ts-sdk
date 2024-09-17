@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesServiceParameterUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesServiceParameterUpdateRequest
 
 # Class: QCSamplesServiceParameterUpdateRequest
 

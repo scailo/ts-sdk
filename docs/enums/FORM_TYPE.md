@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FORM\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FORM\_TYPE
 
 # Enumeration: FORM\_TYPE
 

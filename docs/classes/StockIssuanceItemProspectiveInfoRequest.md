@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StockIssuanceItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StockIssuanceItemProspectiveInfoRequest
 
 # Class: StockIssuanceItemProspectiveInfoRequest
 

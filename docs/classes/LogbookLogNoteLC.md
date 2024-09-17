@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogNoteLC
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogNoteLC
 
 # Class: LogbookLogNoteLC
 

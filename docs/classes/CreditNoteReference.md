@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CreditNoteReference
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CreditNoteReference
 
 # Class: CreditNoteReference
 

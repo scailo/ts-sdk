@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / UnitsOfMaterialsServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / UnitsOfMaterialsServicePaginationResponse
 
 # Class: UnitsOfMaterialsServicePaginationResponse
 

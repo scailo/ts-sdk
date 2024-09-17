@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorStreamMessagesSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorStreamMessagesSearchRequest
 
 # Class: VendorStreamMessagesSearchRequest
 

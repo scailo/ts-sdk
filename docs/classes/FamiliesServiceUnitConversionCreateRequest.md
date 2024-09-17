@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceUnitConversionCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceUnitConversionCreateRequest
 
 # Class: FamiliesServiceUnitConversionCreateRequest
 

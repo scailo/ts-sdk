@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoiceItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoiceItemProspectiveInfoRequest
 
 # Class: VendorInvoiceItemProspectiveInfoRequest
 

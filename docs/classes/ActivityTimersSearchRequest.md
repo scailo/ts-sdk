@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityTimersSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityTimersSearchRequest
 
 # Class: ActivityTimersSearchRequest
 

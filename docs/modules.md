@@ -1,6 +1,6 @@
-[@unaxiom/scailo-sdk](README.md) / Exports
+[@kernelminds/scailo-sdk](README.md) / Exports
 
-# @unaxiom/scailo-sdk
+# @kernelminds/scailo-sdk
 
 ## Table of contents
 

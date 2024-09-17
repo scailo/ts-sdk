@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EnumRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EnumRules
 
 # Class: EnumRules
 

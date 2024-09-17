@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ApprovalMetadata
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ApprovalMetadata
 
 # Class: ApprovalMetadata
 

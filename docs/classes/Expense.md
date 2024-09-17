@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Expense
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Expense
 
 # Class: Expense
 

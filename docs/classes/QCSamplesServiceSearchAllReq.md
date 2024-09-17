@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesServiceSearchAllReq
 
 # Class: QCSamplesServiceSearchAllReq
 

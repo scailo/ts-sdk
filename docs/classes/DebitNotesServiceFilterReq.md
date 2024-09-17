@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNotesServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNotesServiceFilterReq
 
 # Class: DebitNotesServiceFilterReq
 

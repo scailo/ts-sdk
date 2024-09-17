@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MerchandisesServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MerchandisesServiceCountReq
 
 # Class: MerchandisesServiceCountReq
 

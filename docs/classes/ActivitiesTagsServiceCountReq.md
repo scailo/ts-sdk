@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesTagsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesTagsServiceCountReq
 
 # Class: ActivitiesTagsServiceCountReq
 

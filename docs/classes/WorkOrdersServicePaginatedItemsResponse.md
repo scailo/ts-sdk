@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServicePaginatedItemsResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServicePaginatedItemsResponse
 
 # Class: WorkOrdersServicePaginatedItemsResponse
 

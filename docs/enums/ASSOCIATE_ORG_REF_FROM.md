@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ASSOCIATE\_ORG\_REF\_FROM
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ASSOCIATE\_ORG\_REF\_FROM
 
 # Enumeration: ASSOCIATE\_ORG\_REF\_FROM
 

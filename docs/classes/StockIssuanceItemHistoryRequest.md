@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StockIssuanceItemHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StockIssuanceItemHistoryRequest
 
 # Class: StockIssuanceItemHistoryRequest
 

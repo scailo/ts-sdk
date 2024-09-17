@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillGroupItem
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SkillGroupItem
 
 # Class: SkillGroupItem
 

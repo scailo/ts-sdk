@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StockAuditsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StockAuditsList
 
 # Class: StockAuditsList
 

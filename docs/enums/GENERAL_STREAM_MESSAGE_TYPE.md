@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GENERAL\_STREAM\_MESSAGE\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GENERAL\_STREAM\_MESSAGE\_TYPE
 
 # Enumeration: GENERAL\_STREAM\_MESSAGE\_TYPE
 

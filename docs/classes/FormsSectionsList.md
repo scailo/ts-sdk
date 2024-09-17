@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FormsSectionsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FormsSectionsList
 
 # Class: FormsSectionsList
 

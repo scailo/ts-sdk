@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServiceCountReq
 
 # Class: WorkOrdersServiceCountReq
 

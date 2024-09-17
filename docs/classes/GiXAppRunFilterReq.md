@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXAppRunFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXAppRunFilterReq
 
 # Class: GiXAppRunFilterReq
 

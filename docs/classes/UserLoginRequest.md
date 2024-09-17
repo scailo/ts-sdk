@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / UserLoginRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / UserLoginRequest
 
 # Class: UserLoginRequest
 

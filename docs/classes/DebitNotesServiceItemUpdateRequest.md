@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNotesServiceItemUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / DebitNotesServiceItemUpdateRequest
 
 # Class: DebitNotesServiceItemUpdateRequest
 

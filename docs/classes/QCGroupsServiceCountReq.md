@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCGroupsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCGroupsServiceCountReq
 
 # Class: QCGroupsServiceCountReq
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityGroup
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityGroup
 
 # Class: ActivityGroup
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StockReturnsServiceItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StockReturnsServiceItemCreateRequest
 
 # Class: StockReturnsServiceItemCreateRequest
 

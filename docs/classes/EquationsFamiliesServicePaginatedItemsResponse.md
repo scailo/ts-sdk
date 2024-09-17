@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsFamiliesServicePaginatedItemsResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationsFamiliesServicePaginatedItemsResponse
 
 # Class: EquationsFamiliesServicePaginatedItemsResponse
 

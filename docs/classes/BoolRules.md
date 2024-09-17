@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BoolRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BoolRules
 
 # Class: BoolRules
 

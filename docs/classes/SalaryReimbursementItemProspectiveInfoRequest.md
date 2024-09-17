@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalaryReimbursementItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalaryReimbursementItemProspectiveInfoRequest
 
 # Class: SalaryReimbursementItemProspectiveInfoRequest
 

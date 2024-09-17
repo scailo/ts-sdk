@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / KnownRegex
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / KnownRegex
 
 # Enumeration: KnownRegex
 

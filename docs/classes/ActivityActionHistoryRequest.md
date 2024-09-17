@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityActionHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityActionHistoryRequest
 
 # Class: ActivityActionHistoryRequest
 

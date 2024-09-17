@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorUser
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorUser
 
 # Class: VendorUser
 

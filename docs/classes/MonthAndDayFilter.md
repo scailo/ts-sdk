@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MonthAndDayFilter
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MonthAndDayFilter
 
 # Class: MonthAndDayFilter
 

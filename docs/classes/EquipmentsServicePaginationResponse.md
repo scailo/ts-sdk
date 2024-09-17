@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquipmentsServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquipmentsServicePaginationResponse
 
 # Class: EquipmentsServicePaginationResponse
 

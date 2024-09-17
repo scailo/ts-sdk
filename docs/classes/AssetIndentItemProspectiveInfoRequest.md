@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentItemProspectiveInfoRequest
 
 # Class: AssetIndentItemProspectiveInfoRequest
 

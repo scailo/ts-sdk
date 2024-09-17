@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServiceFilterReq
 
 # Class: HolidaysServiceFilterReq
 

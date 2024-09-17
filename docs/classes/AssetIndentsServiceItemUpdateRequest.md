@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceItemUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceItemUpdateRequest
 
 # Class: AssetIndentsServiceItemUpdateRequest
 

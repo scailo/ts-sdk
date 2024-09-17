@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MEETING\_RSVP
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MEETING\_RSVP
 
 # Enumeration: MEETING\_RSVP
 

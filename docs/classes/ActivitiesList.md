@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesList
 
 # Class: ActivitiesList
 

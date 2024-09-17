@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesAdjustmentsServiceRecordUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesAdjustmentsServiceRecordUpdateRequest
 
 # Class: LeavesAdjustmentsServiceRecordUpdateRequest
 

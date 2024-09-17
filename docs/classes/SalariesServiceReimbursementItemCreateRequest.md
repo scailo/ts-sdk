@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalariesServiceReimbursementItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalariesServiceReimbursementItemCreateRequest
 
 # Class: SalariesServiceReimbursementItemCreateRequest
 

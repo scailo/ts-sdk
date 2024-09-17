@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / InfrastructuresList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / InfrastructuresList
 
 # Class: InfrastructuresList
 

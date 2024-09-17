@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GOAL\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GOAL\_ITEM\_STATUS
 
 # Enumeration: GOAL\_ITEM\_STATUS
 

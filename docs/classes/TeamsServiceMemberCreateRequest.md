@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TeamsServiceMemberCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TeamsServiceMemberCreateRequest
 
 # Class: TeamsServiceMemberCreateRequest
 

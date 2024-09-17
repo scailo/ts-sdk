@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PURCHASE\_PAYMENT\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PURCHASE\_PAYMENT\_SORT\_KEY
 
 # Enumeration: PURCHASE\_PAYMENT\_SORT\_KEY
 

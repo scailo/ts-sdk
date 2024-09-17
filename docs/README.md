@@ -1,1 +1,1 @@
-@unaxiom/scailo-sdk / [Exports](modules.md)
+@kernelminds/scailo-sdk / [Exports](modules.md)

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Visitation
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Visitation
 
 # Class: Visitation
 

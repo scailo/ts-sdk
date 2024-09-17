@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityTimersList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityTimersList
 
 # Class: ActivityTimersList
 

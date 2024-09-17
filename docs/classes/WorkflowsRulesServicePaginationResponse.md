@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkflowsRulesServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkflowsRulesServicePaginationResponse
 
 # Class: WorkflowsRulesServicePaginationResponse
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalariesServiceDeductionItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalariesServiceDeductionItemCreateRequest
 
 # Class: SalariesServiceDeductionItemCreateRequest
 

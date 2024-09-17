@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Team
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Team
 
 # Class: Team
 

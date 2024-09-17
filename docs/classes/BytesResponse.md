@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BytesResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BytesResponse
 
 # Class: BytesResponse
 

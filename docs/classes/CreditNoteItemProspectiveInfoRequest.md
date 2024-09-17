@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CreditNoteItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CreditNoteItemProspectiveInfoRequest
 
 # Class: CreditNoteItemProspectiveInfoRequest
 

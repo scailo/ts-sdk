@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServicePaginatedItemsResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServicePaginatedItemsResponse
 
 # Class: ProductionPlansServicePaginatedItemsResponse
 

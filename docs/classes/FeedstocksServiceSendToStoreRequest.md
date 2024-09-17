@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FeedstocksServiceSendToStoreRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FeedstocksServiceSendToStoreRequest
 
 # Class: FeedstocksServiceSendToStoreRequest
 

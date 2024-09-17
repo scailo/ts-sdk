@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesTypesServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesTypesServiceCountReq
 
 # Class: LeavesTypesServiceCountReq
 

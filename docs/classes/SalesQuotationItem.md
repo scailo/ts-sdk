@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesQuotationItem
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesQuotationItem
 
 # Class: SalesQuotationItem
 

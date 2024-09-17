@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrderBillingStatistics
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrderBillingStatistics
 
 # Class: SalesOrderBillingStatistics
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / DualQuantitiesResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / DualQuantitiesResponse
 
 # Class: DualQuantitiesResponse
 

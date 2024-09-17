@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingActionablesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingActionablesList
 
 # Class: MeetingActionablesList
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalaryDeductionItemHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalaryDeductionItemHistoryRequest
 
 # Class: SalaryDeductionItemHistoryRequest
 

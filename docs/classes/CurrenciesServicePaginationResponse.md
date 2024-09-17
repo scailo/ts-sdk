@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CurrenciesServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CurrenciesServicePaginationResponse
 
 # Class: CurrenciesServicePaginationResponse
 

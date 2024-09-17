@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CURRENCY\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CURRENCY\_SORT\_KEY
 
 # Enumeration: CURRENCY\_SORT\_KEY
 

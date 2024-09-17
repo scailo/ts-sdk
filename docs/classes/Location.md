@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Location
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Location
 
 # Class: Location
 

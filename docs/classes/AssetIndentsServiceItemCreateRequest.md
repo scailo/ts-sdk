@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentsServiceItemCreateRequest
 
 # Class: AssetIndentsServiceItemCreateRequest
 

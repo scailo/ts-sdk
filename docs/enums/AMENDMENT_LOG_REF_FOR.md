@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AMENDMENT\_LOG\_REF\_FOR
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AMENDMENT\_LOG\_REF\_FOR
 
 # Enumeration: AMENDMENT\_LOG\_REF\_FOR
 

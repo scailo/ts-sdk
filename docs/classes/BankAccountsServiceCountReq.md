@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BankAccountsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BankAccountsServiceCountReq
 
 # Class: BankAccountsServiceCountReq
 

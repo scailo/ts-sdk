@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityGroupStatistics
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityGroupStatistics
 
 # Class: ActivityGroupStatistics
 

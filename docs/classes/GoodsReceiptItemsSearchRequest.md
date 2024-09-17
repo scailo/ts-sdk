@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GoodsReceiptItemsSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GoodsReceiptItemsSearchRequest
 
 # Class: GoodsReceiptItemsSearchRequest
 

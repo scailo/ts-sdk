@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServiceViewHolidaysOnTimestampRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServiceViewHolidaysOnTimestampRequest
 
 # Class: HolidaysServiceViewHolidaysOnTimestampRequest
 

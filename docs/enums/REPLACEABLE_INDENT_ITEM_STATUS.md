@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / REPLACEABLE\_INDENT\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / REPLACEABLE\_INDENT\_ITEM\_STATUS
 
 # Enumeration: REPLACEABLE\_INDENT\_ITEM\_STATUS
 

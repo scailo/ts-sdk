@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceQCGroupCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceQCGroupCreateRequest
 
 # Class: FamiliesServiceQCGroupCreateRequest
 

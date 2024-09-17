@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EQUATION\_WORK\_ORDER\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EQUATION\_WORK\_ORDER\_ITEM\_STATUS
 
 # Enumeration: EQUATION\_WORK\_ORDER\_ITEM\_STATUS
 

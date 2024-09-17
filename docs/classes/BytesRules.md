@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BytesRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BytesRules
 
 # Class: BytesRules
 

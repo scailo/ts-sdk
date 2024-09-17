@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GoalItem
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GoalItem
 
 # Class: GoalItem
 

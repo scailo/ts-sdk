@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ComponentsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ComponentsServiceCountReq
 
 # Class: ComponentsServiceCountReq
 

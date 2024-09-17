@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ON\_DUTY\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ON\_DUTY\_SORT\_KEY
 
 # Enumeration: ON\_DUTY\_SORT\_KEY
 

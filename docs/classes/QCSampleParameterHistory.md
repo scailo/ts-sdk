@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSampleParameterHistory
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSampleParameterHistory
 
 # Class: QCSampleParameterHistory
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFolderDownload
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFolderDownload
 
 # Class: VaultFolderDownload
 

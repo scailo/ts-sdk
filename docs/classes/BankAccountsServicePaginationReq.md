@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BankAccountsServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BankAccountsServicePaginationReq
 
 # Class: BankAccountsServicePaginationReq
 

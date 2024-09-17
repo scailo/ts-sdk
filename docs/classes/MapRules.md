@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MapRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MapRules
 
 # Class: MapRules
 

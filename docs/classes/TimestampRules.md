@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TimestampRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TimestampRules
 
 # Class: TimestampRules
 

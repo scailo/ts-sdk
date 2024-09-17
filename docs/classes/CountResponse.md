@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CountResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CountResponse
 
 # Class: CountResponse
 

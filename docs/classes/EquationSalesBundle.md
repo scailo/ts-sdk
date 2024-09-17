@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationSalesBundle
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationSalesBundle
 
 # Class: EquationSalesBundle
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EXPENSE\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EXPENSE\_ITEM\_STATUS
 
 # Enumeration: EXPENSE\_ITEM\_STATUS
 

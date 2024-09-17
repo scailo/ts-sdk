@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BooleanResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BooleanResponse
 
 # Class: BooleanResponse
 

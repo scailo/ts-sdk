@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesServiceActionWithTimerCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesServiceActionWithTimerCreateRequest
 
 # Class: ActivitiesServiceActionWithTimerCreateRequest
 

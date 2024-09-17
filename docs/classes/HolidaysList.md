@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysList
 
 # Class: HolidaysList
 

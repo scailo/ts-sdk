@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TEAM\_MEMBER\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TEAM\_MEMBER\_SORT\_KEY
 
 # Enumeration: TEAM\_MEMBER\_SORT\_KEY
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupsServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupsServiceSearchAllReq
 
 # Class: TaxGroupsServiceSearchAllReq
 

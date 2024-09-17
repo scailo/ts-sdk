@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LOGBOOK\_OPERATION
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LOGBOOK\_OPERATION
 
 # Enumeration: LOGBOOK\_OPERATION
 

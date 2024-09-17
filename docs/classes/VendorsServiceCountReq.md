@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorsServiceCountReq
 
 # Class: VendorsServiceCountReq
 

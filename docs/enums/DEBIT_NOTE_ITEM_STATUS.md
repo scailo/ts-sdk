@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / DEBIT\_NOTE\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / DEBIT\_NOTE\_ITEM\_STATUS
 
 # Enumeration: DEBIT\_NOTE\_ITEM\_STATUS
 

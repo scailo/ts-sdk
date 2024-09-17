@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServicePaginatedInwardItemsResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServicePaginatedInwardItemsResponse
 
 # Class: OutwardJobsServicePaginatedInwardItemsResponse
 

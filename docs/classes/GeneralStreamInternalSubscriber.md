@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralStreamInternalSubscriber
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralStreamInternalSubscriber
 
 # Class: GeneralStreamInternalSubscriber
 

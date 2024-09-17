@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FormsFieldsServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FormsFieldsServiceUpdateRequest
 
 # Class: FormsFieldsServiceUpdateRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Associate
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Associate
 
 # Class: Associate
 

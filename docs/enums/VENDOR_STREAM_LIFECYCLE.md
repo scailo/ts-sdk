@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VENDOR\_STREAM\_LIFECYCLE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VENDOR\_STREAM\_LIFECYCLE
 
 # Enumeration: VENDOR\_STREAM\_LIFECYCLE
 

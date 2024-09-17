@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LEAVE\_ADJUSTMENT\_RECORD\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LEAVE\_ADJUSTMENT\_RECORD\_STATUS
 
 # Enumeration: LEAVE\_ADJUSTMENT\_RECORD\_STATUS
 

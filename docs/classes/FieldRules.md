@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FieldRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FieldRules
 
 # Class: FieldRules
 

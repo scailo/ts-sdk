@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ReorderItemsRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ReorderItemsRequest
 
 # Class: ReorderItemsRequest
 

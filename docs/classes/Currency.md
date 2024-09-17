@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Currency
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Currency
 
 # Class: Currency
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / UInt32Rules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / UInt32Rules
 
 # Class: UInt32Rules
 

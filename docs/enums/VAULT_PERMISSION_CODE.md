@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VAULT\_PERMISSION\_CODE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VAULT\_PERMISSION\_CODE
 
 # Enumeration: VAULT\_PERMISSION\_CODE
 

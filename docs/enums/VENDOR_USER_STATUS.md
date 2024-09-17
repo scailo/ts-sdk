@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VENDOR\_USER\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VENDOR\_USER\_STATUS
 
 # Enumeration: VENDOR\_USER\_STATUS
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GoodsDispatchItem
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GoodsDispatchItem
 
 # Class: GoodsDispatchItem
 

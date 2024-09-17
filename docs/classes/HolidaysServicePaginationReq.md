@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysServicePaginationReq
 
 # Class: HolidaysServicePaginationReq
 

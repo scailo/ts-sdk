@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceActionableUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceActionableUpdateRequest
 
 # Class: MeetingsServiceActionableUpdateRequest
 

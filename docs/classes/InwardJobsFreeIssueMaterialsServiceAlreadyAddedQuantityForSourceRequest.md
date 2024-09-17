@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / InwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / InwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest
 
 # Class: InwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest
 

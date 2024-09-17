@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CreditNotesServiceAlreadyAddedQuantityForSourceRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CreditNotesServiceAlreadyAddedQuantityForSourceRequest
 
 # Class: CreditNotesServiceAlreadyAddedQuantityForSourceRequest
 

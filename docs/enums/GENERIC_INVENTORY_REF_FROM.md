@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GENERIC\_INVENTORY\_REF\_FROM
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GENERIC\_INVENTORY\_REF\_FROM
 
 # Enumeration: GENERIC\_INVENTORY\_REF\_FROM
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VAULT\_ACCESS\_LOG\_OPERATION
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VAULT\_ACCESS\_LOG\_OPERATION
 
 # Enumeration: VAULT\_ACCESS\_LOG\_OPERATION
 

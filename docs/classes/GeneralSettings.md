@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralSettings
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralSettings
 
 # Class: GeneralSettings
 

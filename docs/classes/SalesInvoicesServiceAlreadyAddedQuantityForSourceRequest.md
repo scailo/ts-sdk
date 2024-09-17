@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest
 
 # Class: SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest
 

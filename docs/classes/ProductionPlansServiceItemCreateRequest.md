@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceItemCreateRequest
 
 # Class: ProductionPlansServiceItemCreateRequest
 

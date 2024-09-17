@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StockIssuancesServiceAlreadyAddedQuantityForSourceRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StockIssuancesServiceAlreadyAddedQuantityForSourceRequest
 
 # Class: StockIssuancesServiceAlreadyAddedQuantityForSourceRequest
 

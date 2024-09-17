@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / RepeatWithDeliveryDate
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / RepeatWithDeliveryDate
 
 # Class: RepeatWithDeliveryDate
 

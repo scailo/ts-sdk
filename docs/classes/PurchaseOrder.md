@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseOrder
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseOrder
 
 # Class: PurchaseOrder
 

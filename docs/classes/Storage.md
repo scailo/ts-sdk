@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Storage
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Storage
 
 # Class: Storage
 

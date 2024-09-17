@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollGroupsServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollGroupsServicePaginationResponse
 
 # Class: PayrollGroupsServicePaginationResponse
 

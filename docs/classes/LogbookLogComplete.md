@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogComplete
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LogbookLogComplete
 
 # Class: LogbookLogComplete
 

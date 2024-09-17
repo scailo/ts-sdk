@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OVERTIME\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OVERTIME\_SORT\_KEY
 
 # Enumeration: OVERTIME\_SORT\_KEY
 

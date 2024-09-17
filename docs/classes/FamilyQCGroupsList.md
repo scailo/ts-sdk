@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyQCGroupsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyQCGroupsList
 
 # Class: FamilyQCGroupsList
 

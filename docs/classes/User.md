@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / User
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / User
 
 # Class: User
 

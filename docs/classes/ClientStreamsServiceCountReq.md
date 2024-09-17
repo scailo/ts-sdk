@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamsServiceCountReq
 
 # Class: ClientStreamsServiceCountReq
 

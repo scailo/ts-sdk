@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PriceResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PriceResponse
 
 # Class: PriceResponse
 

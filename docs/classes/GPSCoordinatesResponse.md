@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GPSCoordinatesResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GPSCoordinatesResponse
 
 # Class: GPSCoordinatesResponse
 

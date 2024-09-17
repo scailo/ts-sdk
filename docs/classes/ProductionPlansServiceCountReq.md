@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlansServiceCountReq
 
 # Class: ProductionPlansServiceCountReq
 

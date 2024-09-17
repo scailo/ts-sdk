@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Product
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Product
 
 # Class: Product
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VisitationsServiceImageExitRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VisitationsServiceImageExitRequest
 
 # Class: VisitationsServiceImageExitRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / STOCK\_AUDIT\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / STOCK\_AUDIT\_ITEM\_STATUS
 
 # Enumeration: STOCK\_AUDIT\_ITEM\_STATUS
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxParamsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxParamsServiceCountReq
 
 # Class: TaxParamsServiceCountReq
 

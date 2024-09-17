@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesWithMetadataList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesWithMetadataList
 
 # Class: QCSamplesWithMetadataList
 

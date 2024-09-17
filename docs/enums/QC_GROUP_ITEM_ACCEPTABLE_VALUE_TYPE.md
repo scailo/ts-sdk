@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QC\_GROUP\_ITEM\_ACCEPTABLE\_VALUE\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QC\_GROUP\_ITEM\_ACCEPTABLE\_VALUE\_TYPE
 
 # Enumeration: QC\_GROUP\_ITEM\_ACCEPTABLE\_VALUE\_TYPE
 

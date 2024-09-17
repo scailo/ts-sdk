@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActionsCodesServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActionsCodesServiceUpdateRequest
 
 # Class: ActionsCodesServiceUpdateRequest
 

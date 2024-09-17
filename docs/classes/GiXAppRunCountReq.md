@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXAppRunCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXAppRunCountReq
 
 # Class: GiXAppRunCountReq
 

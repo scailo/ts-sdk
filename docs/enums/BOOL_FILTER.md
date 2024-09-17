@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BOOL\_FILTER
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BOOL\_FILTER
 
 # Enumeration: BOOL\_FILTER
 

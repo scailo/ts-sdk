@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StockIssuancesServiceAutofillRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StockIssuancesServiceAutofillRequest
 
 # Class: StockIssuancesServiceAutofillRequest
 

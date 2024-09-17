@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QuotationRequestItemHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QuotationRequestItemHistoryRequest
 
 # Class: QuotationRequestItemHistoryRequest
 

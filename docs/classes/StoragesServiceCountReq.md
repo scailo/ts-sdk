@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StoragesServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StoragesServiceCountReq
 
 # Class: StoragesServiceCountReq
 

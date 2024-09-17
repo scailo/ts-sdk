@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FAMILY\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FAMILY\_TYPE
 
 # Enumeration: FAMILY\_TYPE
 

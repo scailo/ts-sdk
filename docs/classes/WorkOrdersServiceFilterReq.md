@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServiceFilterReq
 
 # Class: WorkOrdersServiceFilterReq
 

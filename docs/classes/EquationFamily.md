@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationFamily
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationFamily
 
 # Class: EquationFamily
 

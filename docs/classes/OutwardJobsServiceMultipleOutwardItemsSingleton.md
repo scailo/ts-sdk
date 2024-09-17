@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServiceMultipleOutwardItemsSingleton
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServiceMultipleOutwardItemsSingleton
 
 # Class: OutwardJobsServiceMultipleOutwardItemsSingleton
 

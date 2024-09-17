@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCGroupsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCGroupsList
 
 # Class: QCGroupsList
 

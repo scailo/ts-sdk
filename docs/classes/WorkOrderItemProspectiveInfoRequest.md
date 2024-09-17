@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrderItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrderItemProspectiveInfoRequest
 
 # Class: WorkOrderItemProspectiveInfoRequest
 

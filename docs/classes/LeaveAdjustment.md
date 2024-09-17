@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeaveAdjustment
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeaveAdjustment
 
 # Class: LeaveAdjustment
 

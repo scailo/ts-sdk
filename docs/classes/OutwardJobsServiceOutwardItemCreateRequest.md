@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServiceOutwardItemCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OutwardJobsServiceOutwardItemCreateRequest
 
 # Class: OutwardJobsServiceOutwardItemCreateRequest
 

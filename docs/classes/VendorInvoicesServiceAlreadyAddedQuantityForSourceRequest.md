@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest
 
 # Class: VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest
 

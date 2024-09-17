@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QC\_SAMPLE\_LIFECYCLE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QC\_SAMPLE\_LIFECYCLE
 
 # Enumeration: QC\_SAMPLE\_LIFECYCLE
 

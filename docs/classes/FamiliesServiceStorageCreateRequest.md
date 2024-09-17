@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceStorageCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceStorageCreateRequest
 
 # Class: FamiliesServiceStorageCreateRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OnDutiesServiceImageExitRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OnDutiesServiceImageExitRequest
 
 # Class: OnDutiesServiceImageExitRequest
 

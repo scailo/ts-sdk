@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesAdjustmentsRecordsHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesAdjustmentsRecordsHistoryRequest
 
 # Class: LeavesAdjustmentsRecordsHistoryRequest
 

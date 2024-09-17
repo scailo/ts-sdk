@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EmployeeMetadata
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EmployeeMetadata
 
 # Class: EmployeeMetadata
 

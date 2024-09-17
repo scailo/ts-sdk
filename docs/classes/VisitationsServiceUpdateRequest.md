@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VisitationsServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VisitationsServiceUpdateRequest
 
 # Class: VisitationsServiceUpdateRequest
 

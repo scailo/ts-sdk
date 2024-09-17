@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / NotesServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / NotesServiceCountReq
 
 # Class: NotesServiceCountReq
 

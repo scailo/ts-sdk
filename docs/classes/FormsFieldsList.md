@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FormsFieldsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FormsFieldsList
 
 # Class: FormsFieldsList
 

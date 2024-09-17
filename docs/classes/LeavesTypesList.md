@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesTypesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesTypesList
 
 # Class: LeavesTypesList
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CloneRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CloneRequest
 
 # Class: CloneRequest
 

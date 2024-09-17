@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EQUATION\_FAMILY\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EQUATION\_FAMILY\_SORT\_KEY
 
 # Enumeration: EQUATION\_FAMILY\_SORT\_KEY
 

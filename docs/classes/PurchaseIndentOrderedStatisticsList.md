@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseIndentOrderedStatisticsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseIndentOrderedStatisticsList
 
 # Class: PurchaseIndentOrderedStatisticsList
 

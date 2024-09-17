@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFileUnzipRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFileUnzipRequest
 
 # Class: VaultFileUnzipRequest
 

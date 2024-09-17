@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VAULT\_REF\_FOR
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VAULT\_REF\_FOR
 
 # Enumeration: VAULT\_REF\_FOR
 

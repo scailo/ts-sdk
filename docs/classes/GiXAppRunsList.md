@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXAppRunsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXAppRunsList
 
 # Class: GiXAppRunsList
 

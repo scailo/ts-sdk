@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CONSUMPTION\_SEQUENCE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CONSUMPTION\_SEQUENCE
 
 # Enumeration: CONSUMPTION\_SEQUENCE
 

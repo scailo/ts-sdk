@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StringRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StringRules
 
 # Class: StringRules
 

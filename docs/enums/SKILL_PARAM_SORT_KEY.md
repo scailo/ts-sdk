@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SKILL\_PARAM\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SKILL\_PARAM\_SORT\_KEY
 
 # Enumeration: SKILL\_PARAM\_SORT\_KEY
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityOwner
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityOwner
 
 # Class: ActivityOwner
 

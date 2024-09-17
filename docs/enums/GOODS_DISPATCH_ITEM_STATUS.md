@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GOODS\_DISPATCH\_ITEM\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GOODS\_DISPATCH\_ITEM\_STATUS
 
 # Enumeration: GOODS\_DISPATCH\_ITEM\_STATUS
 

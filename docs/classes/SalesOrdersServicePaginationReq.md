@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServicePaginationReq
 
 # Class: SalesOrdersServicePaginationReq
 

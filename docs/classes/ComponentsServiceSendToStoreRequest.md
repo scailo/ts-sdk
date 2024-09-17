@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ComponentsServiceSendToStoreRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ComponentsServiceSendToStoreRequest
 
 # Class: ComponentsServiceSendToStoreRequest
 

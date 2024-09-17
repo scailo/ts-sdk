@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupsItemsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TaxGroupsItemsList
 
 # Class: TaxGroupsItemsList
 

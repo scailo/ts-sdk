@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingsServiceCountReq
 
 # Class: MeetingsServiceCountReq
 

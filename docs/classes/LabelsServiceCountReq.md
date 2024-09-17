@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LabelsServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LabelsServiceCountReq
 
 # Class: LabelsServiceCountReq
 

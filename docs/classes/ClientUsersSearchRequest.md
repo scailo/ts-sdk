@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientUsersSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientUsersSearchRequest
 
 # Class: ClientUsersSearchRequest
 

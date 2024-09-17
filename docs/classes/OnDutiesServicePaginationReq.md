@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OnDutiesServicePaginationReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OnDutiesServicePaginationReq
 
 # Class: OnDutiesServicePaginationReq
 

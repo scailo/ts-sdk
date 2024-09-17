@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultAccessLogsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultAccessLogsList
 
 # Class: VaultAccessLogsList
 

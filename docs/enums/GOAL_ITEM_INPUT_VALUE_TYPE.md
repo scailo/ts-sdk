@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GOAL\_ITEM\_INPUT\_VALUE\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GOAL\_ITEM\_INPUT\_VALUE\_TYPE
 
 # Enumeration: GOAL\_ITEM\_INPUT\_VALUE\_TYPE
 

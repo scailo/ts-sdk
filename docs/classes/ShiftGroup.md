@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ShiftGroup
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ShiftGroup
 
 # Class: ShiftGroup
 

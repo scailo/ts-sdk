@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CurrenciesServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CurrenciesServiceSearchAllReq
 
 # Class: CurrenciesServiceSearchAllReq
 

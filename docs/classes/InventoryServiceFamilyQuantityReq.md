@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / InventoryServiceFamilyQuantityReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / InventoryServiceFamilyQuantityReq
 
 # Class: InventoryServiceFamilyQuantityReq
 

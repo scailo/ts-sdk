@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GoodsReceiptItemProspectiveInfoRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GoodsReceiptItemProspectiveInfoRequest
 
 # Class: GoodsReceiptItemProspectiveInfoRequest
 

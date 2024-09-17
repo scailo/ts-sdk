@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingActionablesSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MeetingActionablesSearchRequest
 
 # Class: MeetingActionablesSearchRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / USER\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / USER\_TYPE
 
 # Enumeration: USER\_TYPE
 

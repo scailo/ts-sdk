@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ATTENDANCE\_AMENDMENT\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ATTENDANCE\_AMENDMENT\_SORT\_KEY
 
 # Enumeration: ATTENDANCE\_AMENDMENT\_SORT\_KEY
 

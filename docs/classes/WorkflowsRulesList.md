@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkflowsRulesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkflowsRulesList
 
 # Class: WorkflowsRulesList
 

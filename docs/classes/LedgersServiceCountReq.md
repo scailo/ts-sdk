@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LedgersServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LedgersServiceCountReq
 
 # Class: LedgersServiceCountReq
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFileRenameFileRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFileRenameFileRequest
 
 # Class: VaultFileRenameFileRequest
 

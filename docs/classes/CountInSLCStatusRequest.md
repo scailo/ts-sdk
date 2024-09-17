@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CountInSLCStatusRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CountInSLCStatusRequest
 
 # Class: CountInSLCStatusRequest
 

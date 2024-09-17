@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Absence
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Absence
 
 # Class: Absence
 

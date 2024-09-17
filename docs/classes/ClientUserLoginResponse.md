@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientUserLoginResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientUserLoginResponse
 
 # Class: ClientUserLoginResponse
 

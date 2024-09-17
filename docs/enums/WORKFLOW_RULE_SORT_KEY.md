@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / WORKFLOW\_RULE\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WORKFLOW\_RULE\_SORT\_KEY
 
 # Enumeration: WORKFLOW\_RULE\_SORT\_KEY
 

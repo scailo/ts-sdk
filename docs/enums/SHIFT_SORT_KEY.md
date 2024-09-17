@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SHIFT\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SHIFT\_SORT\_KEY
 
 # Enumeration: SHIFT\_SORT\_KEY
 

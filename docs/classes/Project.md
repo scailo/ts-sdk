@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Project
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Project
 
 # Class: Project
 

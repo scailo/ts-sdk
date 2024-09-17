@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseIndentItemHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchaseIndentItemHistoryRequest
 
 # Class: PurchaseIndentItemHistoryRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GOODS\_RECEIPT\_BILLING\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GOODS\_RECEIPT\_BILLING\_STATUS
 
 # Enumeration: GOODS\_RECEIPT\_BILLING\_STATUS
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentItem
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AssetIndentItem
 
 # Class: AssetIndentItem
 

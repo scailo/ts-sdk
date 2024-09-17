@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / RolesServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / RolesServiceCountReq
 
 # Class: RolesServiceCountReq
 

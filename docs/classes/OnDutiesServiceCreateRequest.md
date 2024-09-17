@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OnDutiesServiceCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OnDutiesServiceCreateRequest
 
 # Class: OnDutiesServiceCreateRequest
 

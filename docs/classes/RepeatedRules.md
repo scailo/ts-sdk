@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / RepeatedRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / RepeatedRules
 
 # Class: RepeatedRules
 

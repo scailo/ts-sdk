@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralStreamsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GeneralStreamsList
 
 # Class: GeneralStreamsList
 

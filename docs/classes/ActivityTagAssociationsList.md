@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityTagAssociationsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivityTagAssociationsList
 
 # Class: ActivityTagAssociationsList
 

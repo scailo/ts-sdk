@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollParamsServiceSearchAllReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollParamsServiceSearchAllReq
 
 # Class: PayrollParamsServiceSearchAllReq
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionIndentIssuedStatisticsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionIndentIssuedStatisticsList
 
 # Class: ProductionIndentIssuedStatisticsList
 

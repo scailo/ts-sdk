@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSampleParametersList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSampleParametersList
 
 # Class: QCSampleParametersList
 

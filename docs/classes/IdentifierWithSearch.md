@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierWithSearch
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierWithSearch
 
 # Class: IdentifierWithSearch
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyTypesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyTypesList
 
 # Class: FamilyTypesList
 

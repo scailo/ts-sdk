@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollParamsServiceCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PayrollParamsServiceCreateRequest
 
 # Class: PayrollParamsServiceCreateRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFolderMoveFolderRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultFolderMoveFolderRequest
 
 # Class: VaultFolderMoveFolderRequest
 

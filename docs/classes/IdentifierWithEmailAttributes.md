@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierWithEmailAttributes
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierWithEmailAttributes
 
 # Class: IdentifierWithEmailAttributes
 

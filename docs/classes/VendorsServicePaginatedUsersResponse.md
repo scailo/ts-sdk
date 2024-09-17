@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorsServicePaginatedUsersResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorsServicePaginatedUsersResponse
 
 # Class: VendorsServicePaginatedUsersResponse
 

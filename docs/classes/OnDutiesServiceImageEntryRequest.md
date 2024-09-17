@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OnDutiesServiceImageEntryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OnDutiesServiceImageEntryRequest
 
 # Class: OnDutiesServiceImageEntryRequest
 

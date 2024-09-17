@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamsServicePaginatedMessagesResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ClientStreamsServicePaginatedMessagesResponse
 
 # Class: ClientStreamsServicePaginatedMessagesResponse
 

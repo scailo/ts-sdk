@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EQUATION\_SALES\_BUNDLE\_ITEM\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EQUATION\_SALES\_BUNDLE\_ITEM\_SORT\_KEY
 
 # Enumeration: EQUATION\_SALES\_BUNDLE\_ITEM\_SORT\_KEY
 

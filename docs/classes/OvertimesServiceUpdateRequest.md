@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / OvertimesServiceUpdateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / OvertimesServiceUpdateRequest
 
 # Class: OvertimesServiceUpdateRequest
 

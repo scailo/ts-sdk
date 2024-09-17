@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / DurationRules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / DurationRules
 
 # Class: DurationRules
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesServicePaginatedTimersResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ActivitiesServicePaginatedTimersResponse
 
 # Class: ActivitiesServicePaginatedTimersResponse
 

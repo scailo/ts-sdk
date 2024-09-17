@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / AnnouncementsServiceFilterReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AnnouncementsServiceFilterReq
 
 # Class: AnnouncementsServiceFilterReq
 

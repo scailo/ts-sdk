@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / BANK\_ACCOUNT\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / BANK\_ACCOUNT\_SORT\_KEY
 
 # Enumeration: BANK\_ACCOUNT\_SORT\_KEY
 

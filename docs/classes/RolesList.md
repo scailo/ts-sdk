@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / RolesList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / RolesList
 
 # Class: RolesList
 

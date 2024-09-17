@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysShiftsGroupsHistoryRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysShiftsGroupsHistoryRequest
 
 # Class: HolidaysShiftsGroupsHistoryRequest
 

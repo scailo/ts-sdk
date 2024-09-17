@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationWorkOrderItem
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EquationWorkOrderItem
 
 # Class: EquationWorkOrderItem
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesRequestsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesRequestsList
 
 # Class: LeavesRequestsList
 

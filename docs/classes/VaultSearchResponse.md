@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultSearchResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VaultSearchResponse
 
 # Class: VaultSearchResponse
 

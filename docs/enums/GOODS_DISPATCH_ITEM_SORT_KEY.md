@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GOODS\_DISPATCH\_ITEM\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GOODS\_DISPATCH\_ITEM\_SORT\_KEY
 
 # Enumeration: GOODS\_DISPATCH\_ITEM\_SORT\_KEY
 

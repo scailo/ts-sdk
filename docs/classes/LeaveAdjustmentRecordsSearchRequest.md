@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeaveAdjustmentRecordsSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeaveAdjustmentRecordsSearchRequest
 
 # Class: LeaveAdjustmentRecordsSearchRequest
 

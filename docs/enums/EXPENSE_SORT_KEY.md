@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / EXPENSE\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / EXPENSE\_SORT\_KEY
 
 # Enumeration: EXPENSE\_SORT\_KEY
 

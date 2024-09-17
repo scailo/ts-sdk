@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / STANDARD\_LIFECYCLE\_STATUS
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / STANDARD\_LIFECYCLE\_STATUS
 
 # Enumeration: STANDARD\_LIFECYCLE\_STATUS
 

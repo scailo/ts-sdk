@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GenericInventory
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GenericInventory
 
 # Class: GenericInventory
 

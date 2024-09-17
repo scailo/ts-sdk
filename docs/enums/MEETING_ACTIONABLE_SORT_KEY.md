@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MEETING\_ACTIONABLE\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MEETING\_ACTIONABLE\_SORT\_KEY
 
 # Enumeration: MEETING\_ACTIONABLE\_SORT\_KEY
 

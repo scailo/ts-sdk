@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / CREDIT\_NOTE\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / CREDIT\_NOTE\_SORT\_KEY
 
 # Enumeration: CREDIT\_NOTE\_SORT\_KEY
 

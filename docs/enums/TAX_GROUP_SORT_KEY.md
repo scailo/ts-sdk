@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TAX\_GROUP\_SORT\_KEY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TAX\_GROUP\_SORT\_KEY
 
 # Enumeration: TAX\_GROUP\_SORT\_KEY
 

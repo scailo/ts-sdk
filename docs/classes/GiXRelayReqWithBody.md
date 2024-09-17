@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXRelayReqWithBody
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / GiXRelayReqWithBody
 
 # Class: GiXRelayReqWithBody
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesLogsServiceCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / LeavesLogsServiceCreateRequest
 
 # Class: LeavesLogsServiceCreateRequest
 

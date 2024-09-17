@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PAYROLL\_GROUP\_ITEM\_VALUE\_TYPE
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PAYROLL\_GROUP\_ITEM\_VALUE\_TYPE
 
 # Enumeration: PAYROLL\_GROUP\_ITEM\_VALUE\_TYPE
 

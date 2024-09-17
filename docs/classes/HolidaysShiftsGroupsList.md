@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysShiftsGroupsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / HolidaysShiftsGroupsList
 
 # Class: HolidaysShiftsGroupsList
 

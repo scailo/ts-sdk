@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SalariesServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalariesServiceCountReq
 
 # Class: SalariesServiceCountReq
 

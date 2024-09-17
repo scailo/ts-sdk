@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / SFixed64Rules
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SFixed64Rules
 
 # Class: SFixed64Rules
 

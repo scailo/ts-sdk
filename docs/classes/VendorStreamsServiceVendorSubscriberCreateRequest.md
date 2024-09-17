@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorStreamsServiceVendorSubscriberCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorStreamsServiceVendorSubscriberCreateRequest
 
 # Class: VendorStreamsServiceVendorSubscriberCreateRequest
 

@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / MERCHANDISE\_REF\_FROM
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / MERCHANDISE\_REF\_FROM
 
 # Enumeration: MERCHANDISE\_REF\_FROM
 

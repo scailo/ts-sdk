@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / Equipment
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / Equipment
 
 # Class: Equipment
 

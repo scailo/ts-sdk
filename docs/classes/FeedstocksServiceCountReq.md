@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / FeedstocksServiceCountReq
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FeedstocksServiceCountReq
 
 # Class: FeedstocksServiceCountReq
 

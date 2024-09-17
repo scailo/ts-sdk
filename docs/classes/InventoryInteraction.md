@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / InventoryInteraction
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / InventoryInteraction
 
 # Class: InventoryInteraction
 

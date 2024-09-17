@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / StringResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / StringResponse
 
 # Class: StringResponse
 

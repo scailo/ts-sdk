@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / TAX\_GROUP\_CATEGORY
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TAX\_GROUP\_CATEGORY
 
 # Enumeration: TAX\_GROUP\_CATEGORY
 

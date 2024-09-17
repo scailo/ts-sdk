@@ -1,4 +1,4 @@
-[@unaxiom/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchasesPaymentsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / PurchasesPaymentsList
 
 # Class: PurchasesPaymentsList
 
