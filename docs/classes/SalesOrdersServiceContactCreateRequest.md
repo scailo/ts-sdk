@@ -68,7 +68,7 @@ Message\&lt;SalesOrdersServiceContactCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2936
+src/sales_orders.scailo_pb.ts:3002
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2934
+src/sales_orders.scailo_pb.ts:3000
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2927
+src/sales_orders.scailo_pb.ts:2993
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2920
+src/sales_orders.scailo_pb.ts:2986
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2943
+src/sales_orders.scailo_pb.ts:3009
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2941
+src/sales_orders.scailo_pb.ts:3007
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2942
+src/sales_orders.scailo_pb.ts:3008
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2961
+src/sales_orders.scailo_pb.ts:3027
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2949
+src/sales_orders.scailo_pb.ts:3015
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2953
+src/sales_orders.scailo_pb.ts:3019
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2957
+src/sales_orders.scailo_pb.ts:3023

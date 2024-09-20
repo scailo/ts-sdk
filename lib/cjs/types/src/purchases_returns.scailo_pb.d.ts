@@ -302,6 +302,34 @@ export declare class PurchasesReturnsServiceUpdateRequest extends Message<Purcha
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.PurchaseReturnAncillaryParameters
+ */
+export declare class PurchaseReturnAncillaryParameters extends Message<PurchaseReturnAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the location (the UUID of the associated location_id)
+     *
+     * @generated from field: string location_uuid = 215;
+     */
+    locationUuid: string;
+    constructor(data?: PartialMessage<PurchaseReturnAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchaseReturnAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturnAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturnAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturnAncillaryParameters;
+    static equals(a: PurchaseReturnAncillaryParameters | PlainMessage<PurchaseReturnAncillaryParameters> | undefined, b: PurchaseReturnAncillaryParameters | PlainMessage<PurchaseReturnAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.PurchaseReturn

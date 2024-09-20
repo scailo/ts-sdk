@@ -71,7 +71,7 @@ Message\&lt;SalesReturnsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1394
+src/sales_returns.scailo_pb.ts:1444
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1364
+src/sales_returns.scailo_pb.ts:1414
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1357
+src/sales_returns.scailo_pb.ts:1407
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1371
+src/sales_returns.scailo_pb.ts:1421
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.SALES_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1385
+src/sales_returns.scailo_pb.ts:1435
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1378
+src/sales_returns.scailo_pb.ts:1428
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1392
+src/sales_returns.scailo_pb.ts:1442
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1401
+src/sales_returns.scailo_pb.ts:1451
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1399
+src/sales_returns.scailo_pb.ts:1449
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1400
+src/sales_returns.scailo_pb.ts:1450
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1422
+src/sales_returns.scailo_pb.ts:1472
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1410
+src/sales_returns.scailo_pb.ts:1460
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1414
+src/sales_returns.scailo_pb.ts:1464
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1418
+src/sales_returns.scailo_pb.ts:1468

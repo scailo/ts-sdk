@@ -67,7 +67,7 @@ Message\&lt;DebitNoteItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1221
+src/debit_notes.scailo_pb.ts:1271
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 debit_note_id = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1212
+src/debit_notes.scailo_pb.ts:1262
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1219
+src/debit_notes.scailo_pb.ts:1269
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1228
+src/debit_notes.scailo_pb.ts:1278
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1226
+src/debit_notes.scailo_pb.ts:1276
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1227
+src/debit_notes.scailo_pb.ts:1277
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1245
+src/debit_notes.scailo_pb.ts:1295
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1233
+src/debit_notes.scailo_pb.ts:1283
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1237
+src/debit_notes.scailo_pb.ts:1287
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1241
+src/debit_notes.scailo_pb.ts:1291

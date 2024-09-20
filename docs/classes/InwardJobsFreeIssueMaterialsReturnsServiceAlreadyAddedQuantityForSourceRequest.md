@@ -68,7 +68,7 @@ Message\&lt;InwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSou
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1320
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1370
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1318
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1368
 
 ___
 
@@ -100,7 +100,7 @@ from field: string ref_from = 1;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1304
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1354
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1311
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1361
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1327
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1377
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1325
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1375
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1326
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1376
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1345
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1395
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1333
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1383
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1337
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1387
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1341
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1391

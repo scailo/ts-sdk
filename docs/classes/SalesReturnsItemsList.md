@@ -66,7 +66,7 @@ Message\&lt;SalesReturnsItemsList\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:931
+src/sales_returns.scailo_pb.ts:981
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesReturnItem list = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:929
+src/sales_returns.scailo_pb.ts:979
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:938
+src/sales_returns.scailo_pb.ts:988
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:936
+src/sales_returns.scailo_pb.ts:986
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:937
+src/sales_returns.scailo_pb.ts:987
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:954
+src/sales_returns.scailo_pb.ts:1004
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:942
+src/sales_returns.scailo_pb.ts:992
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:946
+src/sales_returns.scailo_pb.ts:996
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:950
+src/sales_returns.scailo_pb.ts:1000

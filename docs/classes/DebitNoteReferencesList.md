@@ -66,7 +66,7 @@ Message\&lt;DebitNoteReferencesList\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2404
+src/debit_notes.scailo_pb.ts:2454
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.DebitNoteReference list = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2402
+src/debit_notes.scailo_pb.ts:2452
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2411
+src/debit_notes.scailo_pb.ts:2461
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2409
+src/debit_notes.scailo_pb.ts:2459
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2410
+src/debit_notes.scailo_pb.ts:2460
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2427
+src/debit_notes.scailo_pb.ts:2477
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2415
+src/debit_notes.scailo_pb.ts:2465
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2419
+src/debit_notes.scailo_pb.ts:2469
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2423
+src/debit_notes.scailo_pb.ts:2473

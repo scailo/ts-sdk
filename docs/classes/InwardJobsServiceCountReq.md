@@ -88,7 +88,7 @@ Message\&lt;InwardJobsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2034
+src/inward_jobs.scailo_pb.ts:2092
 
 ## Properties
 
@@ -104,7 +104,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1941
+src/inward_jobs.scailo_pb.ts:1999
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1934
+src/inward_jobs.scailo_pb.ts:1992
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1927
+src/inward_jobs.scailo_pb.ts:1985
 
 ___
 
@@ -152,7 +152,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1948
+src/inward_jobs.scailo_pb.ts:2006
 
 ___
 
@@ -168,7 +168,7 @@ from field: uint64 buyer_client_id = 23;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2011
+src/inward_jobs.scailo_pb.ts:2069
 
 ___
 
@@ -184,7 +184,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1962
+src/inward_jobs.scailo_pb.ts:2020
 
 ___
 
@@ -200,7 +200,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1955
+src/inward_jobs.scailo_pb.ts:2013
 
 ___
 
@@ -216,7 +216,7 @@ from field: uint64 consignee_client_id = 22;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2004
+src/inward_jobs.scailo_pb.ts:2062
 
 ___
 
@@ -232,7 +232,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1892
+src/inward_jobs.scailo_pb.ts:1950
 
 ___
 
@@ -248,7 +248,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1885
+src/inward_jobs.scailo_pb.ts:1943
 
 ___
 
@@ -264,7 +264,7 @@ from field: string delivery_date_end = 19;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1983
+src/inward_jobs.scailo_pb.ts:2041
 
 ___
 
@@ -280,7 +280,7 @@ from field: string delivery_date_exact = 17;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1969
+src/inward_jobs.scailo_pb.ts:2027
 
 ___
 
@@ -296,7 +296,7 @@ from field: string delivery_date_start = 18;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1976
+src/inward_jobs.scailo_pb.ts:2034
 
 ___
 
@@ -312,7 +312,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1913
+src/inward_jobs.scailo_pb.ts:1971
 
 ___
 
@@ -328,7 +328,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1997
+src/inward_jobs.scailo_pb.ts:2055
 
 ___
 
@@ -344,7 +344,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1878
+src/inward_jobs.scailo_pb.ts:1936
 
 ___
 
@@ -360,7 +360,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2018
+src/inward_jobs.scailo_pb.ts:2076
 
 ___
 
@@ -376,7 +376,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1906
+src/inward_jobs.scailo_pb.ts:1964
 
 ___
 
@@ -392,7 +392,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1899
+src/inward_jobs.scailo_pb.ts:1957
 
 ___
 
@@ -408,7 +408,7 @@ from field: uint64 outward_family_id = 30;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2032
+src/inward_jobs.scailo_pb.ts:2090
 
 ___
 
@@ -424,7 +424,7 @@ from field: uint64 project_id = 25;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2025
+src/inward_jobs.scailo_pb.ts:2083
 
 ___
 
@@ -440,7 +440,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1990
+src/inward_jobs.scailo_pb.ts:2048
 
 ___
 
@@ -456,7 +456,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1920
+src/inward_jobs.scailo_pb.ts:1978
 
 ___
 
@@ -466,7 +466,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2041
+src/inward_jobs.scailo_pb.ts:2099
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2039
+src/inward_jobs.scailo_pb.ts:2097
 
 ___
 
@@ -486,7 +486,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2040
+src/inward_jobs.scailo_pb.ts:2098
 
 ## Methods
 
@@ -774,7 +774,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2079
+src/inward_jobs.scailo_pb.ts:2137
 
 ___
 
@@ -795,7 +795,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2067
+src/inward_jobs.scailo_pb.ts:2125
 
 ___
 
@@ -816,7 +816,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2071
+src/inward_jobs.scailo_pb.ts:2129
 
 ___
 
@@ -837,4 +837,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2075
+src/inward_jobs.scailo_pb.ts:2133

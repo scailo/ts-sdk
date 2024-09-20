@@ -71,7 +71,7 @@ Message\&lt;QuotationsResponsesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1483
+src/quotations_responses.scailo_pb.ts:1533
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1453
+src/quotations_responses.scailo_pb.ts:1503
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1446
+src/quotations_responses.scailo_pb.ts:1496
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1460
+src/quotations_responses.scailo_pb.ts:1510
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.QUOTATION_RESPONSE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1474
+src/quotations_responses.scailo_pb.ts:1524
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1467
+src/quotations_responses.scailo_pb.ts:1517
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1481
+src/quotations_responses.scailo_pb.ts:1531
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1490
+src/quotations_responses.scailo_pb.ts:1540
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1488
+src/quotations_responses.scailo_pb.ts:1538
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1489
+src/quotations_responses.scailo_pb.ts:1539
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1511
+src/quotations_responses.scailo_pb.ts:1561
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1499
+src/quotations_responses.scailo_pb.ts:1549
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1503
+src/quotations_responses.scailo_pb.ts:1553
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1507
+src/quotations_responses.scailo_pb.ts:1557

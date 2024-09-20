@@ -66,7 +66,7 @@ Message\&lt;QuotationsResponsesItemsList\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1120
+src/quotations_responses.scailo_pb.ts:1170
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.QuotationResponseItem list = 1;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1118
+src/quotations_responses.scailo_pb.ts:1168
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1127
+src/quotations_responses.scailo_pb.ts:1177
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1125
+src/quotations_responses.scailo_pb.ts:1175
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1126
+src/quotations_responses.scailo_pb.ts:1176
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1143
+src/quotations_responses.scailo_pb.ts:1193
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1131
+src/quotations_responses.scailo_pb.ts:1181
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1135
+src/quotations_responses.scailo_pb.ts:1185
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1139
+src/quotations_responses.scailo_pb.ts:1189

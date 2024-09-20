@@ -1,4 +1,4 @@
-import { PurchasePayment, PurchasesPaymentsList, PurchasesPaymentsServiceCountReq, PurchasesPaymentsServiceCreateRequest, PurchasesPaymentsServiceFilterReq, PurchasesPaymentsServicePaginationReq, PurchasesPaymentsServicePaginationResponse, PurchasesPaymentsServiceSearchAllReq, PurchasesPaymentsServiceUpdateRequest } from "./purchases_payments.scailo_pb.js";
+import { PurchasePayment, PurchasePaymentAncillaryParameters, PurchasesPaymentsList, PurchasesPaymentsServiceCountReq, PurchasesPaymentsServiceCreateRequest, PurchasesPaymentsServiceFilterReq, PurchasesPaymentsServicePaginationReq, PurchasesPaymentsServicePaginationResponse, PurchasesPaymentsServiceSearchAllReq, PurchasesPaymentsServiceUpdateRequest } from "./purchases_payments.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
@@ -187,6 +187,17 @@ export declare const PurchasesPaymentsService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof PurchasePayment;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the ancillary parameters (UUIDs of the internal references) by UUID
+         *
+         * @generated from rpc Scailo.PurchasesPaymentsService.ViewAncillaryParametersByUUID
+         */
+        readonly viewAncillaryParametersByUUID: {
+            readonly name: "ViewAncillaryParametersByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof PurchasePaymentAncillaryParameters;
             readonly kind: MethodKind.Unary;
         };
         /**

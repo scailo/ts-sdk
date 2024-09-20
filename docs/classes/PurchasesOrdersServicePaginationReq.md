@@ -71,7 +71,7 @@ Message\&lt;PurchasesOrdersServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1649
+src/purchases_orders.scailo_pb.ts:1715
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1619
+src/purchases_orders.scailo_pb.ts:1685
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1612
+src/purchases_orders.scailo_pb.ts:1678
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1626
+src/purchases_orders.scailo_pb.ts:1692
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.PURCHASE_ORDER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1640
+src/purchases_orders.scailo_pb.ts:1706
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1633
+src/purchases_orders.scailo_pb.ts:1699
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1647
+src/purchases_orders.scailo_pb.ts:1713
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1656
+src/purchases_orders.scailo_pb.ts:1722
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1654
+src/purchases_orders.scailo_pb.ts:1720
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1655
+src/purchases_orders.scailo_pb.ts:1721
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1677
+src/purchases_orders.scailo_pb.ts:1743
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1665
+src/purchases_orders.scailo_pb.ts:1731
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1669
+src/purchases_orders.scailo_pb.ts:1735
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1673
+src/purchases_orders.scailo_pb.ts:1739

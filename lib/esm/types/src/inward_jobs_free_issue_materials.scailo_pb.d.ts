@@ -304,6 +304,28 @@ export declare class InwardJobsFreeIssueMaterialsServiceAutofillRequest extends 
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.InwardJobFreeIssueMaterialAncillaryParameters
+ */
+export declare class InwardJobFreeIssueMaterialAncillaryParameters extends Message<InwardJobFreeIssueMaterialAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    constructor(data?: PartialMessage<InwardJobFreeIssueMaterialAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobFreeIssueMaterialAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobFreeIssueMaterialAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobFreeIssueMaterialAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobFreeIssueMaterialAncillaryParameters;
+    static equals(a: InwardJobFreeIssueMaterialAncillaryParameters | PlainMessage<InwardJobFreeIssueMaterialAncillaryParameters> | undefined, b: InwardJobFreeIssueMaterialAncillaryParameters | PlainMessage<InwardJobFreeIssueMaterialAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.InwardJobFreeIssueMaterial

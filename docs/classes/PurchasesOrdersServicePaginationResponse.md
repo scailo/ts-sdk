@@ -69,7 +69,7 @@ Message\&lt;PurchasesOrdersServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1717
+src/purchases_orders.scailo_pb.ts:1783
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1694
+src/purchases_orders.scailo_pb.ts:1760
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1701
+src/purchases_orders.scailo_pb.ts:1767
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.PurchaseOrder payload = 4;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1715
+src/purchases_orders.scailo_pb.ts:1781
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1708
+src/purchases_orders.scailo_pb.ts:1774
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1724
+src/purchases_orders.scailo_pb.ts:1790
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1722
+src/purchases_orders.scailo_pb.ts:1788
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1723
+src/purchases_orders.scailo_pb.ts:1789
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1743
+src/purchases_orders.scailo_pb.ts:1809
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1731
+src/purchases_orders.scailo_pb.ts:1797
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1735
+src/purchases_orders.scailo_pb.ts:1801
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1739
+src/purchases_orders.scailo_pb.ts:1805

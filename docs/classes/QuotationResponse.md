@@ -81,7 +81,7 @@ Message\&lt;QuotationResponse\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:559
+src/quotations_responses.scailo_pb.ts:609
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:466
+src/quotations_responses.scailo_pb.ts:516
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:487
+src/quotations_responses.scailo_pb.ts:537
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 currency_id = 15;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:536
+src/quotations_responses.scailo_pb.ts:586
 
 ___
 
@@ -145,7 +145,7 @@ from field: string description = 16;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:543
+src/quotations_responses.scailo_pb.ts:593
 
 ___
 
@@ -161,7 +161,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:452
+src/quotations_responses.scailo_pb.ts:502
 
 ___
 
@@ -177,7 +177,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:508
+src/quotations_responses.scailo_pb.ts:558
 
 ___
 
@@ -193,7 +193,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:557
+src/quotations_responses.scailo_pb.ts:607
 
 ___
 
@@ -209,7 +209,7 @@ from field: repeated Scailo.QuotationResponseItem list = 20;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:550
+src/quotations_responses.scailo_pb.ts:600
 
 ___
 
@@ -225,7 +225,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:480
+src/quotations_responses.scailo_pb.ts:530
 
 ___
 
@@ -241,7 +241,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:459
+src/quotations_responses.scailo_pb.ts:509
 
 ___
 
@@ -257,7 +257,7 @@ from field: uint64 quotation_request_id = 12;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:515
+src/quotations_responses.scailo_pb.ts:565
 
 ___
 
@@ -273,7 +273,7 @@ from field: string ref_from = 13;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:522
+src/quotations_responses.scailo_pb.ts:572
 
 ___
 
@@ -289,7 +289,7 @@ from field: uint64 ref_id = 14;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:529
+src/quotations_responses.scailo_pb.ts:579
 
 ___
 
@@ -305,7 +305,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:501
+src/quotations_responses.scailo_pb.ts:551
 
 ___
 
@@ -321,7 +321,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:473
+src/quotations_responses.scailo_pb.ts:523
 
 ___
 
@@ -337,7 +337,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:494
+src/quotations_responses.scailo_pb.ts:544
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:566
+src/quotations_responses.scailo_pb.ts:616
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:564
+src/quotations_responses.scailo_pb.ts:614
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:565
+src/quotations_responses.scailo_pb.ts:615
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:597
+src/quotations_responses.scailo_pb.ts:647
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:585
+src/quotations_responses.scailo_pb.ts:635
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:589
+src/quotations_responses.scailo_pb.ts:639
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:593
+src/quotations_responses.scailo_pb.ts:643

@@ -74,7 +74,7 @@ Message\&lt;VendorInvoicesServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:996
+src/vendor_invoices.scailo_pb.ts:1046
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:945
+src/vendor_invoices.scailo_pb.ts:995
 
 ___
 
@@ -106,7 +106,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:952
+src/vendor_invoices.scailo_pb.ts:1002
 
 ___
 
@@ -122,7 +122,7 @@ from field: int64 round_off = 17;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:987
+src/vendor_invoices.scailo_pb.ts:1037
 
 ___
 
@@ -138,7 +138,7 @@ from field: string specifications = 18;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:994
+src/vendor_invoices.scailo_pb.ts:1044
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:980
+src/vendor_invoices.scailo_pb.ts:1030
 
 ___
 
@@ -170,7 +170,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:938
+src/vendor_invoices.scailo_pb.ts:988
 
 ___
 
@@ -186,7 +186,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:966
+src/vendor_invoices.scailo_pb.ts:1016
 
 ___
 
@@ -202,7 +202,7 @@ from field: uint64 vendor_unit_price = 15;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:973
+src/vendor_invoices.scailo_pb.ts:1023
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:959
+src/vendor_invoices.scailo_pb.ts:1009
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1003
+src/vendor_invoices.scailo_pb.ts:1053
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1001
+src/vendor_invoices.scailo_pb.ts:1051
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1002
+src/vendor_invoices.scailo_pb.ts:1052
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1027
+src/vendor_invoices.scailo_pb.ts:1077
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1015
+src/vendor_invoices.scailo_pb.ts:1065
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1019
+src/vendor_invoices.scailo_pb.ts:1069
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1023
+src/vendor_invoices.scailo_pb.ts:1073

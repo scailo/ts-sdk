@@ -71,7 +71,7 @@ Message\&lt;GoodsDispatchesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1492
+src/goods_dispatches.scailo_pb.ts:1542
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1462
+src/goods_dispatches.scailo_pb.ts:1512
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1455
+src/goods_dispatches.scailo_pb.ts:1505
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1469
+src/goods_dispatches.scailo_pb.ts:1519
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.GOODS_DISPATCH_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1483
+src/goods_dispatches.scailo_pb.ts:1533
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1476
+src/goods_dispatches.scailo_pb.ts:1526
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1490
+src/goods_dispatches.scailo_pb.ts:1540
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1499
+src/goods_dispatches.scailo_pb.ts:1549
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1497
+src/goods_dispatches.scailo_pb.ts:1547
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1498
+src/goods_dispatches.scailo_pb.ts:1548
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1520
+src/goods_dispatches.scailo_pb.ts:1570
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1508
+src/goods_dispatches.scailo_pb.ts:1558
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1512
+src/goods_dispatches.scailo_pb.ts:1562
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1516
+src/goods_dispatches.scailo_pb.ts:1566

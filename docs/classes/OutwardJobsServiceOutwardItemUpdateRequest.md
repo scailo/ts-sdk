@@ -70,7 +70,7 @@ Message\&lt;OutwardJobsServiceOutwardItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2522
+src/outward_jobs.scailo_pb.ts:2572
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2499
+src/outward_jobs.scailo_pb.ts:2549
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2513
+src/outward_jobs.scailo_pb.ts:2563
 
 ___
 
@@ -118,7 +118,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2506
+src/outward_jobs.scailo_pb.ts:2556
 
 ___
 
@@ -134,7 +134,7 @@ from field: string specifications = 14;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2520
+src/outward_jobs.scailo_pb.ts:2570
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2492
+src/outward_jobs.scailo_pb.ts:2542
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2529
+src/outward_jobs.scailo_pb.ts:2579
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2527
+src/outward_jobs.scailo_pb.ts:2577
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2528
+src/outward_jobs.scailo_pb.ts:2578
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2549
+src/outward_jobs.scailo_pb.ts:2599
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2537
+src/outward_jobs.scailo_pb.ts:2587
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2541
+src/outward_jobs.scailo_pb.ts:2591
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2545
+src/outward_jobs.scailo_pb.ts:2595

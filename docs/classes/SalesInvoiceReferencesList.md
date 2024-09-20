@@ -66,7 +66,7 @@ Message\&lt;SalesInvoiceReferencesList\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2387
+src/sales_invoices.scailo_pb.ts:2437
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesInvoiceReference list = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2385
+src/sales_invoices.scailo_pb.ts:2435
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2394
+src/sales_invoices.scailo_pb.ts:2444
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2392
+src/sales_invoices.scailo_pb.ts:2442
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2393
+src/sales_invoices.scailo_pb.ts:2443
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2410
+src/sales_invoices.scailo_pb.ts:2460
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2398
+src/sales_invoices.scailo_pb.ts:2448
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2402
+src/sales_invoices.scailo_pb.ts:2452
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2406
+src/sales_invoices.scailo_pb.ts:2456

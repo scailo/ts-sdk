@@ -71,7 +71,7 @@ Message\&lt;SalesReceiptsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:646
+src/sales_receipts.scailo_pb.ts:712
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:616
+src/sales_receipts.scailo_pb.ts:682
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:609
+src/sales_receipts.scailo_pb.ts:675
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:623
+src/sales_receipts.scailo_pb.ts:689
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.SALE_RECEIPT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:637
+src/sales_receipts.scailo_pb.ts:703
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:630
+src/sales_receipts.scailo_pb.ts:696
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:644
+src/sales_receipts.scailo_pb.ts:710
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:653
+src/sales_receipts.scailo_pb.ts:719
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:651
+src/sales_receipts.scailo_pb.ts:717
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:652
+src/sales_receipts.scailo_pb.ts:718
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:674
+src/sales_receipts.scailo_pb.ts:740
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:662
+src/sales_receipts.scailo_pb.ts:728
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:666
+src/sales_receipts.scailo_pb.ts:732
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:670
+src/sales_receipts.scailo_pb.ts:736

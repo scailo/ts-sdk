@@ -69,7 +69,7 @@ Message\&lt;QuotationsResponsesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1551
+src/quotations_responses.scailo_pb.ts:1601
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1528
+src/quotations_responses.scailo_pb.ts:1578
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1535
+src/quotations_responses.scailo_pb.ts:1585
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.QuotationResponse payload = 4;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1549
+src/quotations_responses.scailo_pb.ts:1599
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1542
+src/quotations_responses.scailo_pb.ts:1592
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1558
+src/quotations_responses.scailo_pb.ts:1608
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1556
+src/quotations_responses.scailo_pb.ts:1606
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1557
+src/quotations_responses.scailo_pb.ts:1607
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1577
+src/quotations_responses.scailo_pb.ts:1627
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1565
+src/quotations_responses.scailo_pb.ts:1615
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1569
+src/quotations_responses.scailo_pb.ts:1619
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:1573
+src/quotations_responses.scailo_pb.ts:1623

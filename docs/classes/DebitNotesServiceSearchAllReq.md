@@ -76,7 +76,7 @@ Message\&lt;DebitNotesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2204
+src/debit_notes.scailo_pb.ts:2254
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2139
+src/debit_notes.scailo_pb.ts:2189
 
 ___
 
@@ -108,7 +108,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2167
+src/debit_notes.scailo_pb.ts:2217
 
 ___
 
@@ -124,7 +124,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2132
+src/debit_notes.scailo_pb.ts:2182
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2146
+src/debit_notes.scailo_pb.ts:2196
 
 ___
 
@@ -156,7 +156,7 @@ from field: string ref_from = 22;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2188
+src/debit_notes.scailo_pb.ts:2238
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2195
+src/debit_notes.scailo_pb.ts:2245
 
 ___
 
@@ -188,7 +188,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2181
+src/debit_notes.scailo_pb.ts:2231
 
 ___
 
@@ -204,7 +204,7 @@ from field: Scailo.DEBIT_NOTE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2160
+src/debit_notes.scailo_pb.ts:2210
 
 ___
 
@@ -220,7 +220,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2153
+src/debit_notes.scailo_pb.ts:2203
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2174
+src/debit_notes.scailo_pb.ts:2224
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 vendor_id = 25;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2202
+src/debit_notes.scailo_pb.ts:2252
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2211
+src/debit_notes.scailo_pb.ts:2261
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2209
+src/debit_notes.scailo_pb.ts:2259
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2210
+src/debit_notes.scailo_pb.ts:2260
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2237
+src/debit_notes.scailo_pb.ts:2287
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2225
+src/debit_notes.scailo_pb.ts:2275
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2229
+src/debit_notes.scailo_pb.ts:2279
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2233
+src/debit_notes.scailo_pb.ts:2283

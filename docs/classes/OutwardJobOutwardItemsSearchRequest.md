@@ -80,7 +80,7 @@ Message\&lt;OutwardJobOutwardItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2922
+src/outward_jobs.scailo_pb.ts:2972
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2885
+src/outward_jobs.scailo_pb.ts:2935
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2878
+src/outward_jobs.scailo_pb.ts:2928
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2871
+src/outward_jobs.scailo_pb.ts:2921
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2892
+src/outward_jobs.scailo_pb.ts:2942
 
 ___
 
@@ -160,7 +160,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2829
+src/outward_jobs.scailo_pb.ts:2879
 
 ___
 
@@ -176,7 +176,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2857
+src/outward_jobs.scailo_pb.ts:2907
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2906
+src/outward_jobs.scailo_pb.ts:2956
 
 ___
 
@@ -208,7 +208,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2822
+src/outward_jobs.scailo_pb.ts:2872
 
 ___
 
@@ -224,7 +224,7 @@ from field: string item_hash = 22;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2913
+src/outward_jobs.scailo_pb.ts:2963
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2836
+src/outward_jobs.scailo_pb.ts:2886
 
 ___
 
@@ -256,7 +256,7 @@ from field: uint64 outward_job_id = 20;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2899
+src/outward_jobs.scailo_pb.ts:2949
 
 ___
 
@@ -272,7 +272,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2920
+src/outward_jobs.scailo_pb.ts:2970
 
 ___
 
@@ -288,7 +288,7 @@ from field: Scailo.OUTWARD_JOB_OUTWARD_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2850
+src/outward_jobs.scailo_pb.ts:2900
 
 ___
 
@@ -304,7 +304,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2843
+src/outward_jobs.scailo_pb.ts:2893
 
 ___
 
@@ -320,7 +320,7 @@ from field: Scailo.OUTWARD_JOB_OUTWARD_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2864
+src/outward_jobs.scailo_pb.ts:2914
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2929
+src/outward_jobs.scailo_pb.ts:2979
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2927
+src/outward_jobs.scailo_pb.ts:2977
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2928
+src/outward_jobs.scailo_pb.ts:2978
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2959
+src/outward_jobs.scailo_pb.ts:3009
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2947
+src/outward_jobs.scailo_pb.ts:2997
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2951
+src/outward_jobs.scailo_pb.ts:3001
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2955
+src/outward_jobs.scailo_pb.ts:3005

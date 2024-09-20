@@ -69,7 +69,7 @@ Message\&lt;CreditNotesServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1569
+src/credit_notes.scailo_pb.ts:1619
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1546
+src/credit_notes.scailo_pb.ts:1596
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1553
+src/credit_notes.scailo_pb.ts:1603
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.CreditNoteItem payload = 4;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1567
+src/credit_notes.scailo_pb.ts:1617
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1560
+src/credit_notes.scailo_pb.ts:1610
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1576
+src/credit_notes.scailo_pb.ts:1626
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1574
+src/credit_notes.scailo_pb.ts:1624
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1575
+src/credit_notes.scailo_pb.ts:1625
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1595
+src/credit_notes.scailo_pb.ts:1645
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1583
+src/credit_notes.scailo_pb.ts:1633
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1587
+src/credit_notes.scailo_pb.ts:1637
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1591
+src/credit_notes.scailo_pb.ts:1641

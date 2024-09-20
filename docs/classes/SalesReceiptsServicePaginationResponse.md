@@ -69,7 +69,7 @@ Message\&lt;SalesReceiptsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:714
+src/sales_receipts.scailo_pb.ts:780
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:691
+src/sales_receipts.scailo_pb.ts:757
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:698
+src/sales_receipts.scailo_pb.ts:764
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.SaleReceipt payload = 4;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:712
+src/sales_receipts.scailo_pb.ts:778
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:705
+src/sales_receipts.scailo_pb.ts:771
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:721
+src/sales_receipts.scailo_pb.ts:787
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:719
+src/sales_receipts.scailo_pb.ts:785
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:720
+src/sales_receipts.scailo_pb.ts:786
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:740
+src/sales_receipts.scailo_pb.ts:806
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:728
+src/sales_receipts.scailo_pb.ts:794
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:732
+src/sales_receipts.scailo_pb.ts:798
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:736
+src/sales_receipts.scailo_pb.ts:802

@@ -66,7 +66,7 @@ Message\&lt;PurchasesReturnsList\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:889
+src/purchases_returns.scailo_pb.ts:939
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.PurchaseReturn list = 1;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:887
+src/purchases_returns.scailo_pb.ts:937
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:896
+src/purchases_returns.scailo_pb.ts:946
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:894
+src/purchases_returns.scailo_pb.ts:944
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:895
+src/purchases_returns.scailo_pb.ts:945
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:912
+src/purchases_returns.scailo_pb.ts:962
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:900
+src/purchases_returns.scailo_pb.ts:950
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:904
+src/purchases_returns.scailo_pb.ts:954
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:908
+src/purchases_returns.scailo_pb.ts:958

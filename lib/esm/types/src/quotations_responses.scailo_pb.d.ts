@@ -306,6 +306,34 @@ export declare class QuotationsResponsesServiceUpdateRequest extends Message<Quo
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.QuotationResponseAncillaryParameters
+ */
+export declare class QuotationResponseAncillaryParameters extends Message<QuotationResponseAncillaryParameters> {
+    /**
+     * The UUID of the quotation_request_id (the UUID of the associated quotation_request_id)
+     *
+     * @generated from field: string quotation_request_uuid = 212;
+     */
+    quotationRequestUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency_id)
+     *
+     * @generated from field: string currency_uuid = 215;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<QuotationResponseAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.QuotationResponseAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuotationResponseAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationResponseAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationResponseAncillaryParameters;
+    static equals(a: QuotationResponseAncillaryParameters | PlainMessage<QuotationResponseAncillaryParameters> | undefined, b: QuotationResponseAncillaryParameters | PlainMessage<QuotationResponseAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.QuotationResponse

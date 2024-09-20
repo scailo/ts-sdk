@@ -418,6 +418,34 @@ export declare class VendorInvoicesServiceAutofillRequest extends Message<Vendor
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.VendorInvoiceAncillaryParameters
+ */
+export declare class VendorInvoiceAncillaryParameters extends Message<VendorInvoiceAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @generated from field: string currency_uuid = 214;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<VendorInvoiceAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VendorInvoiceAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorInvoiceAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorInvoiceAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorInvoiceAncillaryParameters;
+    static equals(a: VendorInvoiceAncillaryParameters | PlainMessage<VendorInvoiceAncillaryParameters> | undefined, b: VendorInvoiceAncillaryParameters | PlainMessage<VendorInvoiceAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.VendorInvoice

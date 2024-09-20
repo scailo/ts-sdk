@@ -81,7 +81,7 @@ Message\&lt;PurchaseOrderItem\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1365
+src/purchases_orders.scailo_pb.ts:1431
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1272
+src/purchases_orders.scailo_pb.ts:1338
 
 ___
 
@@ -113,7 +113,7 @@ from field: string delivery_date = 18;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1349
+src/purchases_orders.scailo_pb.ts:1415
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 discount = 17;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1342
+src/purchases_orders.scailo_pb.ts:1408
 
 ___
 
@@ -145,7 +145,7 @@ from field: uint64 discounted_vendor_unit_price = 30;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1363
+src/purchases_orders.scailo_pb.ts:1429
 
 ___
 
@@ -161,7 +161,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1258
+src/purchases_orders.scailo_pb.ts:1324
 
 ___
 
@@ -177,7 +177,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1300
+src/purchases_orders.scailo_pb.ts:1366
 
 ___
 
@@ -193,7 +193,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1307
+src/purchases_orders.scailo_pb.ts:1373
 
 ___
 
@@ -209,7 +209,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1265
+src/purchases_orders.scailo_pb.ts:1331
 
 ___
 
@@ -225,7 +225,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1279
+src/purchases_orders.scailo_pb.ts:1345
 
 ___
 
@@ -241,7 +241,7 @@ from field: uint64 purchase_order_id = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1293
+src/purchases_orders.scailo_pb.ts:1359
 
 ___
 
@@ -257,7 +257,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1356
+src/purchases_orders.scailo_pb.ts:1422
 
 ___
 
@@ -273,7 +273,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1335
+src/purchases_orders.scailo_pb.ts:1401
 
 ___
 
@@ -289,7 +289,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1286
+src/purchases_orders.scailo_pb.ts:1352
 
 ___
 
@@ -305,7 +305,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1321
+src/purchases_orders.scailo_pb.ts:1387
 
 ___
 
@@ -321,7 +321,7 @@ from field: uint64 vendor_unit_price = 15;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1328
+src/purchases_orders.scailo_pb.ts:1394
 
 ___
 
@@ -337,7 +337,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1314
+src/purchases_orders.scailo_pb.ts:1380
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1372
+src/purchases_orders.scailo_pb.ts:1438
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1370
+src/purchases_orders.scailo_pb.ts:1436
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1371
+src/purchases_orders.scailo_pb.ts:1437
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1403
+src/purchases_orders.scailo_pb.ts:1469
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1391
+src/purchases_orders.scailo_pb.ts:1457
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1395
+src/purchases_orders.scailo_pb.ts:1461
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1399
+src/purchases_orders.scailo_pb.ts:1465

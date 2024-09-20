@@ -1,4 +1,4 @@
-import { GoodsDispatch, GoodsDispatchesItemsList, GoodsDispatchesList, GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest, GoodsDispatchesServiceAutofillRequest, GoodsDispatchesServiceCountReq, GoodsDispatchesServiceCreateRequest, GoodsDispatchesServiceFilterReq, GoodsDispatchesServiceItemCreateRequest, GoodsDispatchesServiceItemUpdateRequest, GoodsDispatchesServicePaginatedItemsResponse, GoodsDispatchesServicePaginationReq, GoodsDispatchesServicePaginationResponse, GoodsDispatchesServiceSearchAllReq, GoodsDispatchesServiceUpdateRequest, GoodsDispatchItem, GoodsDispatchItemHistoryRequest, GoodsDispatchItemProspectiveInfoRequest, GoodsDispatchItemsSearchRequest } from "./goods_dispatches.scailo_pb.js";
+import { GoodsDispatch, GoodsDispatchAncillaryParameters, GoodsDispatchesItemsList, GoodsDispatchesList, GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest, GoodsDispatchesServiceAutofillRequest, GoodsDispatchesServiceCountReq, GoodsDispatchesServiceCreateRequest, GoodsDispatchesServiceFilterReq, GoodsDispatchesServiceItemCreateRequest, GoodsDispatchesServiceItemUpdateRequest, GoodsDispatchesServicePaginatedItemsResponse, GoodsDispatchesServicePaginationReq, GoodsDispatchesServicePaginationResponse, GoodsDispatchesServiceSearchAllReq, GoodsDispatchesServiceUpdateRequest, GoodsDispatchItem, GoodsDispatchItemHistoryRequest, GoodsDispatchItemProspectiveInfoRequest, GoodsDispatchItemsSearchRequest } from "./goods_dispatches.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -372,6 +372,17 @@ export declare const GoodsDispatchesService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof GoodsDispatch;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the ancillary parameters (UUIDs of the internal references) by UUID
+         *
+         * @generated from rpc Scailo.GoodsDispatchesService.ViewAncillaryParametersByUUID
+         */
+        readonly viewAncillaryParametersByUUID: {
+            readonly name: "ViewAncillaryParametersByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof GoodsDispatchAncillaryParameters;
             readonly kind: MethodKind.Unary;
         };
         /**

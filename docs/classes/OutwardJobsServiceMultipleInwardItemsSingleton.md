@@ -69,7 +69,7 @@ Message\&lt;OutwardJobsServiceMultipleInwardItemsSingleton\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:855
+src/outward_jobs.scailo_pb.ts:905
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string delivery_date = 13;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:846
+src/outward_jobs.scailo_pb.ts:896
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:832
+src/outward_jobs.scailo_pb.ts:882
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:839
+src/outward_jobs.scailo_pb.ts:889
 
 ___
 
@@ -133,7 +133,7 @@ from field: string specifications = 14;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:853
+src/outward_jobs.scailo_pb.ts:903
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:862
+src/outward_jobs.scailo_pb.ts:912
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:860
+src/outward_jobs.scailo_pb.ts:910
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:861
+src/outward_jobs.scailo_pb.ts:911
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:881
+src/outward_jobs.scailo_pb.ts:931
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:869
+src/outward_jobs.scailo_pb.ts:919
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:873
+src/outward_jobs.scailo_pb.ts:923
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:877
+src/outward_jobs.scailo_pb.ts:927

@@ -71,7 +71,7 @@ Message\&lt;VendorInvoicesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1469
+src/vendor_invoices.scailo_pb.ts:1519
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1439
+src/vendor_invoices.scailo_pb.ts:1489
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1432
+src/vendor_invoices.scailo_pb.ts:1482
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1446
+src/vendor_invoices.scailo_pb.ts:1496
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.VENDOR_INVOICE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1460
+src/vendor_invoices.scailo_pb.ts:1510
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1453
+src/vendor_invoices.scailo_pb.ts:1503
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1467
+src/vendor_invoices.scailo_pb.ts:1517
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1476
+src/vendor_invoices.scailo_pb.ts:1526
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1474
+src/vendor_invoices.scailo_pb.ts:1524
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1475
+src/vendor_invoices.scailo_pb.ts:1525
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1497
+src/vendor_invoices.scailo_pb.ts:1547
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1485
+src/vendor_invoices.scailo_pb.ts:1535
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1489
+src/vendor_invoices.scailo_pb.ts:1539
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1493
+src/vendor_invoices.scailo_pb.ts:1543

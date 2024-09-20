@@ -79,7 +79,7 @@ Message\&lt;DebitNoteItem\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1025
+src/debit_notes.scailo_pb.ts:1075
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:946
+src/debit_notes.scailo_pb.ts:996
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 debit_note_id = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:967
+src/debit_notes.scailo_pb.ts:1017
 
 ___
 
@@ -127,7 +127,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:932
+src/debit_notes.scailo_pb.ts:982
 
 ___
 
@@ -143,7 +143,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:974
+src/debit_notes.scailo_pb.ts:1024
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:981
+src/debit_notes.scailo_pb.ts:1031
 
 ___
 
@@ -175,7 +175,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:939
+src/debit_notes.scailo_pb.ts:989
 
 ___
 
@@ -191,7 +191,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:953
+src/debit_notes.scailo_pb.ts:1003
 
 ___
 
@@ -207,7 +207,7 @@ from field: int64 round_off = 17;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1016
+src/debit_notes.scailo_pb.ts:1066
 
 ___
 
@@ -223,7 +223,7 @@ from field: string specifications = 18;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1023
+src/debit_notes.scailo_pb.ts:1073
 
 ___
 
@@ -239,7 +239,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1009
+src/debit_notes.scailo_pb.ts:1059
 
 ___
 
@@ -255,7 +255,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:960
+src/debit_notes.scailo_pb.ts:1010
 
 ___
 
@@ -271,7 +271,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:995
+src/debit_notes.scailo_pb.ts:1045
 
 ___
 
@@ -287,7 +287,7 @@ from field: uint64 vendor_unit_price = 15;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1002
+src/debit_notes.scailo_pb.ts:1052
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:988
+src/debit_notes.scailo_pb.ts:1038
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1032
+src/debit_notes.scailo_pb.ts:1082
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1030
+src/debit_notes.scailo_pb.ts:1080
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1031
+src/debit_notes.scailo_pb.ts:1081
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1061
+src/debit_notes.scailo_pb.ts:1111
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1049
+src/debit_notes.scailo_pb.ts:1099
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1053
+src/debit_notes.scailo_pb.ts:1103
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1057
+src/debit_notes.scailo_pb.ts:1107

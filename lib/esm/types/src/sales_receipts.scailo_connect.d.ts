@@ -1,4 +1,4 @@
-import { SaleReceipt, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
+import { SaleReceipt, SaleReceiptAncillaryParameters, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
@@ -187,6 +187,17 @@ export declare const SalesReceiptsService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof SaleReceipt;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the ancillary parameters (UUIDs of the internal references) by UUID
+         *
+         * @generated from rpc Scailo.SalesReceiptsService.ViewAncillaryParametersByUUID
+         */
+        readonly viewAncillaryParametersByUUID: {
+            readonly name: "ViewAncillaryParametersByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof SaleReceiptAncillaryParameters;
             readonly kind: MethodKind.Unary;
         };
         /**

@@ -72,7 +72,7 @@ Message\&lt;SalesInvoiceReference\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2339
+src/sales_invoices.scailo_pb.ts:2389
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2309
+src/sales_invoices.scailo_pb.ts:2359
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2295
+src/sales_invoices.scailo_pb.ts:2345
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 goods_dispatch_id = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2337
+src/sales_invoices.scailo_pb.ts:2387
 
 ___
 
@@ -136,7 +136,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2302
+src/sales_invoices.scailo_pb.ts:2352
 
 ___
 
@@ -152,7 +152,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2316
+src/sales_invoices.scailo_pb.ts:2366
 
 ___
 
@@ -168,7 +168,7 @@ from field: uint64 sales_invoice_id = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2330
+src/sales_invoices.scailo_pb.ts:2380
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2323
+src/sales_invoices.scailo_pb.ts:2373
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2346
+src/sales_invoices.scailo_pb.ts:2396
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2344
+src/sales_invoices.scailo_pb.ts:2394
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2345
+src/sales_invoices.scailo_pb.ts:2395
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2368
+src/sales_invoices.scailo_pb.ts:2418
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2356
+src/sales_invoices.scailo_pb.ts:2406
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2360
+src/sales_invoices.scailo_pb.ts:2410
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2364
+src/sales_invoices.scailo_pb.ts:2414

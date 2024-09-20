@@ -71,7 +71,7 @@ Message\&lt;SalesInvoicesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1493
+src/sales_invoices.scailo_pb.ts:1543
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1463
+src/sales_invoices.scailo_pb.ts:1513
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1456
+src/sales_invoices.scailo_pb.ts:1506
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1470
+src/sales_invoices.scailo_pb.ts:1520
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1484
+src/sales_invoices.scailo_pb.ts:1534
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1477
+src/sales_invoices.scailo_pb.ts:1527
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1491
+src/sales_invoices.scailo_pb.ts:1541
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1500
+src/sales_invoices.scailo_pb.ts:1550
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1498
+src/sales_invoices.scailo_pb.ts:1548
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1499
+src/sales_invoices.scailo_pb.ts:1549
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1521
+src/sales_invoices.scailo_pb.ts:1571
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1509
+src/sales_invoices.scailo_pb.ts:1559
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1513
+src/sales_invoices.scailo_pb.ts:1563
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1517
+src/sales_invoices.scailo_pb.ts:1567

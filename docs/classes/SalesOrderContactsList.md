@@ -66,7 +66,7 @@ Message\&lt;SalesOrderContactsList\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3070
+src/sales_orders.scailo_pb.ts:3136
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesOrderContact list = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3068
+src/sales_orders.scailo_pb.ts:3134
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3077
+src/sales_orders.scailo_pb.ts:3143
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3075
+src/sales_orders.scailo_pb.ts:3141
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3076
+src/sales_orders.scailo_pb.ts:3142
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3093
+src/sales_orders.scailo_pb.ts:3159
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3081
+src/sales_orders.scailo_pb.ts:3147
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3085
+src/sales_orders.scailo_pb.ts:3151
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3089
+src/sales_orders.scailo_pb.ts:3155

@@ -66,7 +66,7 @@ Message\&lt;InwardJobsOutwardItemsList\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2946
+src/inward_jobs.scailo_pb.ts:3004
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.InwardJobOutwardItem list = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2944
+src/inward_jobs.scailo_pb.ts:3002
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2953
+src/inward_jobs.scailo_pb.ts:3011
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2951
+src/inward_jobs.scailo_pb.ts:3009
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2952
+src/inward_jobs.scailo_pb.ts:3010
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2969
+src/inward_jobs.scailo_pb.ts:3027
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2957
+src/inward_jobs.scailo_pb.ts:3015
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2961
+src/inward_jobs.scailo_pb.ts:3019
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2965
+src/inward_jobs.scailo_pb.ts:3023

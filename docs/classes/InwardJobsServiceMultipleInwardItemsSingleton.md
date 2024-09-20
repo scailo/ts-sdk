@@ -71,7 +71,7 @@ Message\&lt;InwardJobsServiceMultipleInwardItemsSingleton\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:973
+src/inward_jobs.scailo_pb.ts:1031
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string client_family_code = 15;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:964
+src/inward_jobs.scailo_pb.ts:1022
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 client_quantity = 14;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:957
+src/inward_jobs.scailo_pb.ts:1015
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:950
+src/inward_jobs.scailo_pb.ts:1008
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:936
+src/inward_jobs.scailo_pb.ts:994
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:943
+src/inward_jobs.scailo_pb.ts:1001
 
 ___
 
@@ -167,7 +167,7 @@ from field: string specifications = 16;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:971
+src/inward_jobs.scailo_pb.ts:1029
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:980
+src/inward_jobs.scailo_pb.ts:1038
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:978
+src/inward_jobs.scailo_pb.ts:1036
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:979
+src/inward_jobs.scailo_pb.ts:1037
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1001
+src/inward_jobs.scailo_pb.ts:1059
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:989
+src/inward_jobs.scailo_pb.ts:1047
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:993
+src/inward_jobs.scailo_pb.ts:1051
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:997
+src/inward_jobs.scailo_pb.ts:1055

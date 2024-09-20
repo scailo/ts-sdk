@@ -71,7 +71,7 @@ Message\&lt;GoodsReceiptsServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:728
+src/goods_receipts.scailo_pb.ts:770
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:705
+src/goods_receipts.scailo_pb.ts:747
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 goods_receipt_id = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:698
+src/goods_receipts.scailo_pb.ts:740
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:712
+src/goods_receipts.scailo_pb.ts:754
 
 ___
 
@@ -135,7 +135,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:691
+src/goods_receipts.scailo_pb.ts:733
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:726
+src/goods_receipts.scailo_pb.ts:768
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:719
+src/goods_receipts.scailo_pb.ts:761
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:735
+src/goods_receipts.scailo_pb.ts:777
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:733
+src/goods_receipts.scailo_pb.ts:775
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:734
+src/goods_receipts.scailo_pb.ts:776
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:756
+src/goods_receipts.scailo_pb.ts:798
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:744
+src/goods_receipts.scailo_pb.ts:786
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:748
+src/goods_receipts.scailo_pb.ts:790
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:752
+src/goods_receipts.scailo_pb.ts:794

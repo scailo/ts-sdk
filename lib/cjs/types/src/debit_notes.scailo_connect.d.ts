@@ -1,4 +1,4 @@
-import { DebitNote, DebitNoteItem, DebitNoteItemHistoryRequest, DebitNoteItemProspectiveInfoRequest, DebitNoteItemsList, DebitNoteItemsSearchRequest, DebitNoteReference, DebitNoteReferencesList, DebitNotesList, DebitNotesServiceAlreadyAddedQuantityForSourceRequest, DebitNotesServiceAutofillRequest, DebitNotesServiceCountReq, DebitNotesServiceCreateRequest, DebitNotesServiceFilterReq, DebitNotesServiceItemCreateRequest, DebitNotesServiceItemUpdateRequest, DebitNotesServicePaginatedItemsResponse, DebitNotesServicePaginationReq, DebitNotesServicePaginationResponse, DebitNotesServiceReferenceCreateRequest, DebitNotesServiceSearchAllReq, DebitNotesServiceUpdateRequest } from "./debit_notes.scailo_pb.js";
+import { DebitNote, DebitNoteAncillaryParameters, DebitNoteItem, DebitNoteItemHistoryRequest, DebitNoteItemProspectiveInfoRequest, DebitNoteItemsList, DebitNoteItemsSearchRequest, DebitNoteReference, DebitNoteReferencesList, DebitNotesList, DebitNotesServiceAlreadyAddedQuantityForSourceRequest, DebitNotesServiceAutofillRequest, DebitNotesServiceCountReq, DebitNotesServiceCreateRequest, DebitNotesServiceFilterReq, DebitNotesServiceItemCreateRequest, DebitNotesServiceItemUpdateRequest, DebitNotesServicePaginatedItemsResponse, DebitNotesServicePaginationReq, DebitNotesServicePaginationResponse, DebitNotesServiceReferenceCreateRequest, DebitNotesServiceSearchAllReq, DebitNotesServiceUpdateRequest } from "./debit_notes.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -405,6 +405,17 @@ export declare const DebitNotesService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof DebitNote;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the ancillary parameters (UUIDs of the internal references) by UUID
+         *
+         * @generated from rpc Scailo.DebitNotesService.ViewAncillaryParametersByUUID
+         */
+        readonly viewAncillaryParametersByUUID: {
+            readonly name: "ViewAncillaryParametersByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof DebitNoteAncillaryParameters;
             readonly kind: MethodKind.Unary;
         };
         /**

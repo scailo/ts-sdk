@@ -68,7 +68,7 @@ Message\&lt;CreditNotesServiceReferenceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2377
+src/credit_notes.scailo_pb.ts:2427
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 credit_note_id = 10;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2368
+src/credit_notes.scailo_pb.ts:2418
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 sales_return_id = 11;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2375
+src/credit_notes.scailo_pb.ts:2425
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2361
+src/credit_notes.scailo_pb.ts:2411
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2384
+src/credit_notes.scailo_pb.ts:2434
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2382
+src/credit_notes.scailo_pb.ts:2432
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2383
+src/credit_notes.scailo_pb.ts:2433
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2402
+src/credit_notes.scailo_pb.ts:2452
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2390
+src/credit_notes.scailo_pb.ts:2440
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2394
+src/credit_notes.scailo_pb.ts:2444
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2398
+src/credit_notes.scailo_pb.ts:2448

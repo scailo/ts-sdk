@@ -404,6 +404,34 @@ export declare class OutwardJobsServiceAutofillRequest extends Message<OutwardJo
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.OutwardJobAncillaryParameters
+ */
+export declare class OutwardJobAncillaryParameters extends Message<OutwardJobAncillaryParameters> {
+    /**
+     * The UUID of the consignee location (the UUID of the associated consignee_location_id)
+     *
+     * @generated from field: string consignee_location_uuid = 212;
+     */
+    consigneeLocationUuid: string;
+    /**
+     * The UUID of the vendor (the UUID of the associated vendor_id)
+     *
+     * @generated from field: string vendor_uuid = 213;
+     */
+    vendorUuid: string;
+    constructor(data?: PartialMessage<OutwardJobAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.OutwardJobAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobAncillaryParameters;
+    static equals(a: OutwardJobAncillaryParameters | PlainMessage<OutwardJobAncillaryParameters> | undefined, b: OutwardJobAncillaryParameters | PlainMessage<OutwardJobAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.OutwardJob

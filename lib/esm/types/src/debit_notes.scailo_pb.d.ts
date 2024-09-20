@@ -358,6 +358,34 @@ export declare class DebitNotesServiceAutofillRequest extends Message<DebitNotes
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.DebitNoteAncillaryParameters
+ */
+export declare class DebitNoteAncillaryParameters extends Message<DebitNoteAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @generated from field: string currency_uuid = 214;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<DebitNoteAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.DebitNoteAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNoteAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DebitNoteAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DebitNoteAncillaryParameters;
+    static equals(a: DebitNoteAncillaryParameters | PlainMessage<DebitNoteAncillaryParameters> | undefined, b: DebitNoteAncillaryParameters | PlainMessage<DebitNoteAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.DebitNote

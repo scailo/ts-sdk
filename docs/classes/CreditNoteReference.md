@@ -72,7 +72,7 @@ Message\&lt;CreditNoteReference\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2463
+src/credit_notes.scailo_pb.ts:2513
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2433
+src/credit_notes.scailo_pb.ts:2483
 
 ___
 
@@ -104,7 +104,7 @@ from field: uint64 credit_note_id = 10;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2454
+src/credit_notes.scailo_pb.ts:2504
 
 ___
 
@@ -120,7 +120,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2419
+src/credit_notes.scailo_pb.ts:2469
 
 ___
 
@@ -136,7 +136,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2426
+src/credit_notes.scailo_pb.ts:2476
 
 ___
 
@@ -152,7 +152,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2440
+src/credit_notes.scailo_pb.ts:2490
 
 ___
 
@@ -168,7 +168,7 @@ from field: uint64 sales_return_id = 11;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2461
+src/credit_notes.scailo_pb.ts:2511
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2447
+src/credit_notes.scailo_pb.ts:2497
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2470
+src/credit_notes.scailo_pb.ts:2520
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2468
+src/credit_notes.scailo_pb.ts:2518
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2469
+src/credit_notes.scailo_pb.ts:2519
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2492
+src/credit_notes.scailo_pb.ts:2542
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2480
+src/credit_notes.scailo_pb.ts:2530
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2484
+src/credit_notes.scailo_pb.ts:2534
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2488
+src/credit_notes.scailo_pb.ts:2538

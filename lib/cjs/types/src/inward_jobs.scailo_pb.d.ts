@@ -464,6 +464,40 @@ export declare class InwardJobsServiceAutofillRequest extends Message<InwardJobs
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.InwardJobAncillaryParameters
+ */
+export declare class InwardJobAncillaryParameters extends Message<InwardJobAncillaryParameters> {
+    /**
+     * The UUID of the consignee client (the UUID of the associated consignee_client_id)
+     *
+     * @generated from field: string consignee_client_uuid = 212;
+     */
+    consigneeClientUuid: string;
+    /**
+     * The UUID of the buyer client (the UUID of the associated buyer_client_id)
+     *
+     * @generated from field: string buyer_client_uuid = 213;
+     */
+    buyerClientUuid: string;
+    /**
+     * The UUID of the location (the UUID of the associated location_uuid)
+     *
+     * @generated from field: string location_uuid = 214;
+     */
+    locationUuid: string;
+    constructor(data?: PartialMessage<InwardJobAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InwardJobAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobAncillaryParameters;
+    static equals(a: InwardJobAncillaryParameters | PlainMessage<InwardJobAncillaryParameters> | undefined, b: InwardJobAncillaryParameters | PlainMessage<InwardJobAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.InwardJob

@@ -77,7 +77,7 @@ Message\&lt;CreditNotesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2310
+src/credit_notes.scailo_pb.ts:2360
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2308
+src/credit_notes.scailo_pb.ts:2358
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2301
+src/credit_notes.scailo_pb.ts:2351
 
 ___
 
@@ -126,7 +126,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2237
+src/credit_notes.scailo_pb.ts:2287
 
 ___
 
@@ -142,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2265
+src/credit_notes.scailo_pb.ts:2315
 
 ___
 
@@ -158,7 +158,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2230
+src/credit_notes.scailo_pb.ts:2280
 
 ___
 
@@ -174,7 +174,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2244
+src/credit_notes.scailo_pb.ts:2294
 
 ___
 
@@ -190,7 +190,7 @@ from field: string ref_from = 22;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2286
+src/credit_notes.scailo_pb.ts:2336
 
 ___
 
@@ -206,7 +206,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2293
+src/credit_notes.scailo_pb.ts:2343
 
 ___
 
@@ -222,7 +222,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2279
+src/credit_notes.scailo_pb.ts:2329
 
 ___
 
@@ -238,7 +238,7 @@ from field: Scailo.CREDIT_NOTE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2258
+src/credit_notes.scailo_pb.ts:2308
 
 ___
 
@@ -254,7 +254,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2251
+src/credit_notes.scailo_pb.ts:2301
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2272
+src/credit_notes.scailo_pb.ts:2322
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2317
+src/credit_notes.scailo_pb.ts:2367
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2315
+src/credit_notes.scailo_pb.ts:2365
 
 ___
 
@@ -300,7 +300,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2316
+src/credit_notes.scailo_pb.ts:2366
 
 ## Methods
 
@@ -588,7 +588,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2344
+src/credit_notes.scailo_pb.ts:2394
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2332
+src/credit_notes.scailo_pb.ts:2382
 
 ___
 
@@ -630,7 +630,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2336
+src/credit_notes.scailo_pb.ts:2386
 
 ___
 
@@ -651,4 +651,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2340
+src/credit_notes.scailo_pb.ts:2390

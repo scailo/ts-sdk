@@ -80,7 +80,7 @@ Message\&lt;GoodsReceiptItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1245
+src/goods_receipts.scailo_pb.ts:1287
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1208
+src/goods_receipts.scailo_pb.ts:1250
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1201
+src/goods_receipts.scailo_pb.ts:1243
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1194
+src/goods_receipts.scailo_pb.ts:1236
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1215
+src/goods_receipts.scailo_pb.ts:1257
 
 ___
 
@@ -160,7 +160,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1152
+src/goods_receipts.scailo_pb.ts:1194
 
 ___
 
@@ -176,7 +176,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1180
+src/goods_receipts.scailo_pb.ts:1222
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 family_id = 22;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1229
+src/goods_receipts.scailo_pb.ts:1271
 
 ___
 
@@ -208,7 +208,7 @@ from field: uint64 goods_receipt_id = 20;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1222
+src/goods_receipts.scailo_pb.ts:1264
 
 ___
 
@@ -224,7 +224,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1145
+src/goods_receipts.scailo_pb.ts:1187
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1159
+src/goods_receipts.scailo_pb.ts:1201
 
 ___
 
@@ -256,7 +256,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1243
+src/goods_receipts.scailo_pb.ts:1285
 
 ___
 
@@ -272,7 +272,7 @@ from field: Scailo.GOODS_RECEIPT_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1173
+src/goods_receipts.scailo_pb.ts:1215
 
 ___
 
@@ -288,7 +288,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1166
+src/goods_receipts.scailo_pb.ts:1208
 
 ___
 
@@ -304,7 +304,7 @@ from field: Scailo.GOODS_RECEIPT_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1187
+src/goods_receipts.scailo_pb.ts:1229
 
 ___
 
@@ -320,7 +320,7 @@ from field: uint64 vendor_uom_id = 24;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1236
+src/goods_receipts.scailo_pb.ts:1278
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1252
+src/goods_receipts.scailo_pb.ts:1294
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1250
+src/goods_receipts.scailo_pb.ts:1292
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1251
+src/goods_receipts.scailo_pb.ts:1293
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1282
+src/goods_receipts.scailo_pb.ts:1324
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1270
+src/goods_receipts.scailo_pb.ts:1312
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1274
+src/goods_receipts.scailo_pb.ts:1316
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1278
+src/goods_receipts.scailo_pb.ts:1320

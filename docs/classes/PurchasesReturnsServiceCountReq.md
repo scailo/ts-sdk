@@ -87,7 +87,7 @@ Message\&lt;PurchasesReturnsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1896
+src/purchases_returns.scailo_pb.ts:1946
 
 ## Properties
 
@@ -103,7 +103,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1810
+src/purchases_returns.scailo_pb.ts:1860
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1803
+src/purchases_returns.scailo_pb.ts:1853
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1796
+src/purchases_returns.scailo_pb.ts:1846
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1817
+src/purchases_returns.scailo_pb.ts:1867
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.PURCHASE_RETURN_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1873
+src/purchases_returns.scailo_pb.ts:1923
 
 ___
 
@@ -183,7 +183,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1831
+src/purchases_returns.scailo_pb.ts:1881
 
 ___
 
@@ -199,7 +199,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1824
+src/purchases_returns.scailo_pb.ts:1874
 
 ___
 
@@ -215,7 +215,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1761
+src/purchases_returns.scailo_pb.ts:1811
 
 ___
 
@@ -231,7 +231,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1754
+src/purchases_returns.scailo_pb.ts:1804
 
 ___
 
@@ -247,7 +247,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1782
+src/purchases_returns.scailo_pb.ts:1832
 
 ___
 
@@ -263,7 +263,7 @@ from field: uint64 family_id = 60;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1894
+src/purchases_returns.scailo_pb.ts:1944
 
 ___
 
@@ -279,7 +279,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1845
+src/purchases_returns.scailo_pb.ts:1895
 
 ___
 
@@ -295,7 +295,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1747
+src/purchases_returns.scailo_pb.ts:1797
 
 ___
 
@@ -311,7 +311,7 @@ from field: uint64 location_id = 25;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1866
+src/purchases_returns.scailo_pb.ts:1916
 
 ___
 
@@ -327,7 +327,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1775
+src/purchases_returns.scailo_pb.ts:1825
 
 ___
 
@@ -343,7 +343,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1768
+src/purchases_returns.scailo_pb.ts:1818
 
 ___
 
@@ -359,7 +359,7 @@ from field: uint64 project_id = 51;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1887
+src/purchases_returns.scailo_pb.ts:1937
 
 ___
 
@@ -375,7 +375,7 @@ from field: string ref_from = 22;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1852
+src/purchases_returns.scailo_pb.ts:1902
 
 ___
 
@@ -391,7 +391,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1859
+src/purchases_returns.scailo_pb.ts:1909
 
 ___
 
@@ -407,7 +407,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1838
+src/purchases_returns.scailo_pb.ts:1888
 
 ___
 
@@ -423,7 +423,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1789
+src/purchases_returns.scailo_pb.ts:1839
 
 ___
 
@@ -439,7 +439,7 @@ from field: uint64 vendor_id = 50;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1880
+src/purchases_returns.scailo_pb.ts:1930
 
 ___
 
@@ -449,7 +449,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1903
+src/purchases_returns.scailo_pb.ts:1953
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1901
+src/purchases_returns.scailo_pb.ts:1951
 
 ___
 
@@ -469,7 +469,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1902
+src/purchases_returns.scailo_pb.ts:1952
 
 ## Methods
 
@@ -757,7 +757,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1940
+src/purchases_returns.scailo_pb.ts:1990
 
 ___
 
@@ -778,7 +778,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1928
+src/purchases_returns.scailo_pb.ts:1978
 
 ___
 
@@ -799,7 +799,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1932
+src/purchases_returns.scailo_pb.ts:1982
 
 ___
 
@@ -820,4 +820,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1936
+src/purchases_returns.scailo_pb.ts:1986

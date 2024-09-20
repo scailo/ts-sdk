@@ -71,7 +71,7 @@ Message\&lt;PurchasesReturnsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:720
+src/purchases_returns.scailo_pb.ts:770
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:690
+src/purchases_returns.scailo_pb.ts:740
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:704
+src/purchases_returns.scailo_pb.ts:754
 
 ___
 
@@ -119,7 +119,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:697
+src/purchases_returns.scailo_pb.ts:747
 
 ___
 
@@ -135,7 +135,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:683
+src/purchases_returns.scailo_pb.ts:733
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 vendor_quantity = 15;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:718
+src/purchases_returns.scailo_pb.ts:768
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vendor_uom_id = 14;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:711
+src/purchases_returns.scailo_pb.ts:761
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:727
+src/purchases_returns.scailo_pb.ts:777
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:725
+src/purchases_returns.scailo_pb.ts:775
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:726
+src/purchases_returns.scailo_pb.ts:776
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:748
+src/purchases_returns.scailo_pb.ts:798
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:736
+src/purchases_returns.scailo_pb.ts:786
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:740
+src/purchases_returns.scailo_pb.ts:790
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:744
+src/purchases_returns.scailo_pb.ts:794

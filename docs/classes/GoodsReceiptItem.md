@@ -75,7 +75,7 @@ Message\&lt;GoodsReceiptItem\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:912
+src/goods_receipts.scailo_pb.ts:954
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:861
+src/goods_receipts.scailo_pb.ts:903
 
 ___
 
@@ -107,7 +107,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:847
+src/goods_receipts.scailo_pb.ts:889
 
 ___
 
@@ -123,7 +123,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:889
+src/goods_receipts.scailo_pb.ts:931
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 goods_receipt_id = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:882
+src/goods_receipts.scailo_pb.ts:924
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:896
+src/goods_receipts.scailo_pb.ts:938
 
 ___
 
@@ -171,7 +171,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:854
+src/goods_receipts.scailo_pb.ts:896
 
 ___
 
@@ -187,7 +187,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:868
+src/goods_receipts.scailo_pb.ts:910
 
 ___
 
@@ -203,7 +203,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:875
+src/goods_receipts.scailo_pb.ts:917
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:910
+src/goods_receipts.scailo_pb.ts:952
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:903
+src/goods_receipts.scailo_pb.ts:945
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:919
+src/goods_receipts.scailo_pb.ts:961
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:917
+src/goods_receipts.scailo_pb.ts:959
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:918
+src/goods_receipts.scailo_pb.ts:960
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:944
+src/goods_receipts.scailo_pb.ts:986
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:932
+src/goods_receipts.scailo_pb.ts:974
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:936
+src/goods_receipts.scailo_pb.ts:978
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:940
+src/goods_receipts.scailo_pb.ts:982

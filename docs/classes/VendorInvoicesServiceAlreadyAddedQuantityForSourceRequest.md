@@ -68,7 +68,7 @@ Message\&lt;VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest\&gt;.const
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1390
+src/vendor_invoices.scailo_pb.ts:1440
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1388
+src/vendor_invoices.scailo_pb.ts:1438
 
 ___
 
@@ -100,7 +100,7 @@ from field: string ref_from = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1374
+src/vendor_invoices.scailo_pb.ts:1424
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1381
+src/vendor_invoices.scailo_pb.ts:1431
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1397
+src/vendor_invoices.scailo_pb.ts:1447
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1395
+src/vendor_invoices.scailo_pb.ts:1445
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1396
+src/vendor_invoices.scailo_pb.ts:1446
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1415
+src/vendor_invoices.scailo_pb.ts:1465
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1403
+src/vendor_invoices.scailo_pb.ts:1453
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1407
+src/vendor_invoices.scailo_pb.ts:1457
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1411
+src/vendor_invoices.scailo_pb.ts:1461

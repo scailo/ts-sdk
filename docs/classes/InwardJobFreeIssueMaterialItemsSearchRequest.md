@@ -81,7 +81,7 @@ Message\&lt;InwardJobFreeIssueMaterialItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1185
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1227
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1141
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1183
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1134
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1176
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1127
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1169
 
 ___
 
@@ -145,7 +145,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1148
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1190
 
 ___
 
@@ -161,7 +161,7 @@ from field: string client_family_code = 26;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1176
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1218
 
 ___
 
@@ -177,7 +177,7 @@ from field: uint64 client_uom_id = 24;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1169
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1211
 
 ___
 
@@ -193,7 +193,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1085
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1127
 
 ___
 
@@ -209,7 +209,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1113
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1155
 
 ___
 
@@ -225,7 +225,7 @@ from field: uint64 family_id = 22;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1162
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1204
 
 ___
 
@@ -241,7 +241,7 @@ from field: uint64 inward_job_free_issue_material_id = 20;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1155
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1197
 
 ___
 
@@ -257,7 +257,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1078
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1120
 
 ___
 
@@ -273,7 +273,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1092
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1134
 
 ___
 
@@ -289,7 +289,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1183
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1225
 
 ___
 
@@ -305,7 +305,7 @@ from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1106
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1148
 
 ___
 
@@ -321,7 +321,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1099
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1141
 
 ___
 
@@ -337,7 +337,7 @@ from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1120
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1162
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1192
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1234
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1190
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1232
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1191
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1233
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1223
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1265
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1211
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1253
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1215
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1257
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1219
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1261

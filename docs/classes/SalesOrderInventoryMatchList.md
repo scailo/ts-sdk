@@ -66,7 +66,7 @@ Message\&lt;SalesOrderInventoryMatchList\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3310
+src/sales_orders.scailo_pb.ts:3376
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesOrderInventoryMatch list = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3308
+src/sales_orders.scailo_pb.ts:3374
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3317
+src/sales_orders.scailo_pb.ts:3383
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3315
+src/sales_orders.scailo_pb.ts:3381
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3316
+src/sales_orders.scailo_pb.ts:3382
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3333
+src/sales_orders.scailo_pb.ts:3399
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3321
+src/sales_orders.scailo_pb.ts:3387
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3325
+src/sales_orders.scailo_pb.ts:3391
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3329
+src/sales_orders.scailo_pb.ts:3395

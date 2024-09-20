@@ -67,7 +67,7 @@ Message\&lt;GoodsReceiptItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1054
+src/goods_receipts.scailo_pb.ts:1096
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1052
+src/goods_receipts.scailo_pb.ts:1094
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 goods_receipt_id = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1045
+src/goods_receipts.scailo_pb.ts:1087
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1061
+src/goods_receipts.scailo_pb.ts:1103
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1059
+src/goods_receipts.scailo_pb.ts:1101
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1060
+src/goods_receipts.scailo_pb.ts:1102
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1078
+src/goods_receipts.scailo_pb.ts:1120
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1066
+src/goods_receipts.scailo_pb.ts:1108
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1070
+src/goods_receipts.scailo_pb.ts:1112
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1074
+src/goods_receipts.scailo_pb.ts:1116

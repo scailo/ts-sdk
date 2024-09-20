@@ -91,7 +91,7 @@ Message\&lt;SalesOrdersServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2227
+src/sales_orders.scailo_pb.ts:2293
 
 ## Properties
 
@@ -107,7 +107,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2113
+src/sales_orders.scailo_pb.ts:2179
 
 ___
 
@@ -123,7 +123,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2106
+src/sales_orders.scailo_pb.ts:2172
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2099
+src/sales_orders.scailo_pb.ts:2165
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2120
+src/sales_orders.scailo_pb.ts:2186
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 buyer_client_id = 23;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2162
+src/sales_orders.scailo_pb.ts:2228
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2134
+src/sales_orders.scailo_pb.ts:2200
 
 ___
 
@@ -203,7 +203,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2127
+src/sales_orders.scailo_pb.ts:2193
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 consignee_client_id = 22;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2155
+src/sales_orders.scailo_pb.ts:2221
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2064
+src/sales_orders.scailo_pb.ts:2130
 
 ___
 
@@ -251,7 +251,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2057
+src/sales_orders.scailo_pb.ts:2123
 
 ___
 
@@ -267,7 +267,7 @@ from field: uint64 currency_id = 25;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2176
+src/sales_orders.scailo_pb.ts:2242
 
 ___
 
@@ -283,7 +283,7 @@ from field: string delivery_date_end = 43;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2211
+src/sales_orders.scailo_pb.ts:2277
 
 ___
 
@@ -299,7 +299,7 @@ from field: string delivery_date_exact = 41;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2197
+src/sales_orders.scailo_pb.ts:2263
 
 ___
 
@@ -315,7 +315,7 @@ from field: string delivery_date_start = 42;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2204
+src/sales_orders.scailo_pb.ts:2270
 
 ___
 
@@ -331,7 +331,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2085
+src/sales_orders.scailo_pb.ts:2151
 
 ___
 
@@ -347,7 +347,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2190
+src/sales_orders.scailo_pb.ts:2256
 
 ___
 
@@ -363,7 +363,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2148
+src/sales_orders.scailo_pb.ts:2214
 
 ___
 
@@ -379,7 +379,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2050
+src/sales_orders.scailo_pb.ts:2116
 
 ___
 
@@ -395,7 +395,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2169
+src/sales_orders.scailo_pb.ts:2235
 
 ___
 
@@ -411,7 +411,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2078
+src/sales_orders.scailo_pb.ts:2144
 
 ___
 
@@ -427,7 +427,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2071
+src/sales_orders.scailo_pb.ts:2137
 
 ___
 
@@ -443,7 +443,7 @@ from field: uint64 project_id = 26;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2183
+src/sales_orders.scailo_pb.ts:2249
 
 ___
 
@@ -459,7 +459,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2141
+src/sales_orders.scailo_pb.ts:2207
 
 ___
 
@@ -475,7 +475,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2092
+src/sales_orders.scailo_pb.ts:2158
 
 ___
 
@@ -491,7 +491,7 @@ from field: uint64 total_value_max = 51;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2225
+src/sales_orders.scailo_pb.ts:2291
 
 ___
 
@@ -507,7 +507,7 @@ from field: uint64 total_value_min = 50;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2218
+src/sales_orders.scailo_pb.ts:2284
 
 ___
 
@@ -517,7 +517,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2234
+src/sales_orders.scailo_pb.ts:2300
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2232
+src/sales_orders.scailo_pb.ts:2298
 
 ___
 
@@ -537,7 +537,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2233
+src/sales_orders.scailo_pb.ts:2299
 
 ## Methods
 
@@ -825,7 +825,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2275
+src/sales_orders.scailo_pb.ts:2341
 
 ___
 
@@ -846,7 +846,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2263
+src/sales_orders.scailo_pb.ts:2329
 
 ___
 
@@ -867,7 +867,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2267
+src/sales_orders.scailo_pb.ts:2333
 
 ___
 
@@ -888,4 +888,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2271
+src/sales_orders.scailo_pb.ts:2337

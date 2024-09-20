@@ -67,7 +67,7 @@ Message\&lt;QuotationRequestItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1171
+src/quotations_requests.scailo_pb.ts:1221
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1169
+src/quotations_requests.scailo_pb.ts:1219
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 quotation_request_id = 10;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1162
+src/quotations_requests.scailo_pb.ts:1212
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1178
+src/quotations_requests.scailo_pb.ts:1228
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1176
+src/quotations_requests.scailo_pb.ts:1226
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1177
+src/quotations_requests.scailo_pb.ts:1227
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1195
+src/quotations_requests.scailo_pb.ts:1245
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1183
+src/quotations_requests.scailo_pb.ts:1233
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1187
+src/quotations_requests.scailo_pb.ts:1237
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1191
+src/quotations_requests.scailo_pb.ts:1241

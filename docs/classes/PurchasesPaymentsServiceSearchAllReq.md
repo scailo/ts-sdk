@@ -74,7 +74,7 @@ Message\&lt;PurchasesPaymentsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1283
+src/purchases_payments.scailo_pb.ts:1349
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1232
+src/purchases_payments.scailo_pb.ts:1298
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1260
+src/purchases_payments.scailo_pb.ts:1326
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1225
+src/purchases_payments.scailo_pb.ts:1291
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1239
+src/purchases_payments.scailo_pb.ts:1305
 
 ___
 
@@ -154,7 +154,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1274
+src/purchases_payments.scailo_pb.ts:1340
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.PURCHASE_PAYMENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1253
+src/purchases_payments.scailo_pb.ts:1319
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1246
+src/purchases_payments.scailo_pb.ts:1312
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1267
+src/purchases_payments.scailo_pb.ts:1333
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 vendor_id = 25;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1281
+src/purchases_payments.scailo_pb.ts:1347
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1290
+src/purchases_payments.scailo_pb.ts:1356
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1288
+src/purchases_payments.scailo_pb.ts:1354
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1289
+src/purchases_payments.scailo_pb.ts:1355
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1314
+src/purchases_payments.scailo_pb.ts:1380
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1302
+src/purchases_payments.scailo_pb.ts:1368
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1306
+src/purchases_payments.scailo_pb.ts:1372
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:1310
+src/purchases_payments.scailo_pb.ts:1376

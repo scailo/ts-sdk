@@ -69,7 +69,7 @@ Message\&lt;InwardJobsServicePaginatedInwardItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2411
+src/inward_jobs.scailo_pb.ts:2469
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2388
+src/inward_jobs.scailo_pb.ts:2446
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2395
+src/inward_jobs.scailo_pb.ts:2453
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.InwardJobInwardItem payload = 4;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2409
+src/inward_jobs.scailo_pb.ts:2467
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2402
+src/inward_jobs.scailo_pb.ts:2460
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2418
+src/inward_jobs.scailo_pb.ts:2476
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2416
+src/inward_jobs.scailo_pb.ts:2474
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2417
+src/inward_jobs.scailo_pb.ts:2475
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2437
+src/inward_jobs.scailo_pb.ts:2495
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2425
+src/inward_jobs.scailo_pb.ts:2483
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2429
+src/inward_jobs.scailo_pb.ts:2487
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2433
+src/inward_jobs.scailo_pb.ts:2491

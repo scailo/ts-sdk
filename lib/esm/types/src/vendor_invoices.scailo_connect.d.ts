@@ -1,4 +1,4 @@
-import { VendorInvoice, VendorInvoiceItem, VendorInvoiceItemHistoryRequest, VendorInvoiceItemProspectiveInfoRequest, VendorInvoiceItemsList, VendorInvoiceItemsSearchRequest, VendorInvoiceReceiptStatisticsList, VendorInvoiceReference, VendorInvoiceReferencesList, VendorInvoicesList, VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest, VendorInvoicesServiceAutofillRequest, VendorInvoicesServiceCountReq, VendorInvoicesServiceCreateRequest, VendorInvoicesServiceFilterReq, VendorInvoicesServiceItemCreateRequest, VendorInvoicesServiceItemUpdateRequest, VendorInvoicesServicePaginatedItemsResponse, VendorInvoicesServicePaginationReq, VendorInvoicesServicePaginationResponse, VendorInvoicesServiceReferenceCreateRequest, VendorInvoicesServiceSearchAllReq, VendorInvoicesServiceUpdateRequest } from "./vendor_invoices.scailo_pb.js";
+import { VendorInvoice, VendorInvoiceAncillaryParameters, VendorInvoiceItem, VendorInvoiceItemHistoryRequest, VendorInvoiceItemProspectiveInfoRequest, VendorInvoiceItemsList, VendorInvoiceItemsSearchRequest, VendorInvoiceReceiptStatisticsList, VendorInvoiceReference, VendorInvoiceReferencesList, VendorInvoicesList, VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest, VendorInvoicesServiceAutofillRequest, VendorInvoicesServiceCountReq, VendorInvoicesServiceCreateRequest, VendorInvoicesServiceFilterReq, VendorInvoicesServiceItemCreateRequest, VendorInvoicesServiceItemUpdateRequest, VendorInvoicesServicePaginatedItemsResponse, VendorInvoicesServicePaginationReq, VendorInvoicesServicePaginationResponse, VendorInvoicesServiceReferenceCreateRequest, VendorInvoicesServiceSearchAllReq, VendorInvoicesServiceUpdateRequest } from "./vendor_invoices.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -428,6 +428,17 @@ export declare const VendorInvoicesService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof VendorInvoice;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the ancillary parameters (UUIDs of the internal references) by UUID
+         *
+         * @generated from rpc Scailo.VendorInvoicesService.ViewAncillaryParametersByUUID
+         */
+        readonly viewAncillaryParametersByUUID: {
+            readonly name: "ViewAncillaryParametersByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof VendorInvoiceAncillaryParameters;
             readonly kind: MethodKind.Unary;
         };
         /**

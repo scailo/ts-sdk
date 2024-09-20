@@ -69,7 +69,7 @@ Message\&lt;InwardJobsFreeIssueMaterialsServicePaginationResponse\&gt;.construct
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1469
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1511
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1446
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1488
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1453
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1495
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.InwardJobFreeIssueMaterial payload = 4;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1467
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1509
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1460
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1502
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1476
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1518
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1474
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1516
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1475
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1517
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1495
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1537
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1483
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1525
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1487
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1529
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1491
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1533

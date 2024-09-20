@@ -76,7 +76,7 @@ Message\&lt;PurchasesOrdersServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1094
+src/purchases_orders.scailo_pb.ts:1160
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: string delivery_date = 18;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1085
+src/purchases_orders.scailo_pb.ts:1151
 
 ___
 
@@ -108,7 +108,7 @@ from field: uint64 discount = 17;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1078
+src/purchases_orders.scailo_pb.ts:1144
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1036
+src/purchases_orders.scailo_pb.ts:1102
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1043
+src/purchases_orders.scailo_pb.ts:1109
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 purchase_order_id = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1029
+src/purchases_orders.scailo_pb.ts:1095
 
 ___
 
@@ -172,7 +172,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1092
+src/purchases_orders.scailo_pb.ts:1158
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1071
+src/purchases_orders.scailo_pb.ts:1137
 
 ___
 
@@ -204,7 +204,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1022
+src/purchases_orders.scailo_pb.ts:1088
 
 ___
 
@@ -220,7 +220,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1057
+src/purchases_orders.scailo_pb.ts:1123
 
 ___
 
@@ -236,7 +236,7 @@ from field: uint64 vendor_unit_price = 15;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1064
+src/purchases_orders.scailo_pb.ts:1130
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1050
+src/purchases_orders.scailo_pb.ts:1116
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1101
+src/purchases_orders.scailo_pb.ts:1167
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1099
+src/purchases_orders.scailo_pb.ts:1165
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1100
+src/purchases_orders.scailo_pb.ts:1166
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1127
+src/purchases_orders.scailo_pb.ts:1193
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1115
+src/purchases_orders.scailo_pb.ts:1181
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1119
+src/purchases_orders.scailo_pb.ts:1185
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1123
+src/purchases_orders.scailo_pb.ts:1189

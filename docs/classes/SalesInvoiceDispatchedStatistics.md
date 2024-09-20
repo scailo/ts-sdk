@@ -68,7 +68,7 @@ Message\&lt;SalesInvoiceDispatchedStatistics\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2679
+src/sales_invoices.scailo_pb.ts:2729
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 dispatched_quantity = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2677
+src/sales_invoices.scailo_pb.ts:2727
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2663
+src/sales_invoices.scailo_pb.ts:2713
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 invoiced_quantity = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2670
+src/sales_invoices.scailo_pb.ts:2720
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2686
+src/sales_invoices.scailo_pb.ts:2736
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2684
+src/sales_invoices.scailo_pb.ts:2734
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2685
+src/sales_invoices.scailo_pb.ts:2735
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2704
+src/sales_invoices.scailo_pb.ts:2754
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2692
+src/sales_invoices.scailo_pb.ts:2742
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2696
+src/sales_invoices.scailo_pb.ts:2746
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2700
+src/sales_invoices.scailo_pb.ts:2750

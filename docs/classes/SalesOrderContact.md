@@ -72,7 +72,7 @@ Message\&lt;SalesOrderContact\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3022
+src/sales_orders.scailo_pb.ts:3088
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2992
+src/sales_orders.scailo_pb.ts:3058
 
 ___
 
@@ -104,7 +104,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3020
+src/sales_orders.scailo_pb.ts:3086
 
 ___
 
@@ -120,7 +120,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2978
+src/sales_orders.scailo_pb.ts:3044
 
 ___
 
@@ -136,7 +136,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2985
+src/sales_orders.scailo_pb.ts:3051
 
 ___
 
@@ -152,7 +152,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2999
+src/sales_orders.scailo_pb.ts:3065
 
 ___
 
@@ -168,7 +168,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3013
+src/sales_orders.scailo_pb.ts:3079
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3006
+src/sales_orders.scailo_pb.ts:3072
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3029
+src/sales_orders.scailo_pb.ts:3095
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3027
+src/sales_orders.scailo_pb.ts:3093
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3028
+src/sales_orders.scailo_pb.ts:3094
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3051
+src/sales_orders.scailo_pb.ts:3117
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3039
+src/sales_orders.scailo_pb.ts:3105
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3043
+src/sales_orders.scailo_pb.ts:3109
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3047
+src/sales_orders.scailo_pb.ts:3113

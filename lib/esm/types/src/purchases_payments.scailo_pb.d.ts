@@ -253,6 +253,46 @@ export declare class PurchasesPaymentsServiceUpdateRequest extends Message<Purch
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.PurchasePaymentAncillaryParameters
+ */
+export declare class PurchasePaymentAncillaryParameters extends Message<PurchasePaymentAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the vendor (the UUID of the associated vendor_id)
+     *
+     * @generated from field: string vendor_uuid = 214;
+     */
+    vendorUuid: string;
+    /**
+     * The UUID of the bank account (the UUID of the bank_account_id)
+     *
+     * @generated from field: string bank_account_uuid = 215;
+     */
+    bankAccountUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @generated from field: string currency_uuid = 216;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<PurchasePaymentAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchasePaymentAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasePaymentAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasePaymentAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasePaymentAncillaryParameters;
+    static equals(a: PurchasePaymentAncillaryParameters | PlainMessage<PurchasePaymentAncillaryParameters> | undefined, b: PurchasePaymentAncillaryParameters | PlainMessage<PurchasePaymentAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.PurchasePayment

@@ -68,7 +68,7 @@ Message\&lt;DebitNotesServiceReferenceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2270
+src/debit_notes.scailo_pb.ts:2320
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 debit_note_id = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2261
+src/debit_notes.scailo_pb.ts:2311
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 purchase_return_id = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2268
+src/debit_notes.scailo_pb.ts:2318
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2254
+src/debit_notes.scailo_pb.ts:2304
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2277
+src/debit_notes.scailo_pb.ts:2327
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2275
+src/debit_notes.scailo_pb.ts:2325
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2276
+src/debit_notes.scailo_pb.ts:2326
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2295
+src/debit_notes.scailo_pb.ts:2345
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2283
+src/debit_notes.scailo_pb.ts:2333
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2287
+src/debit_notes.scailo_pb.ts:2337
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2291
+src/debit_notes.scailo_pb.ts:2341

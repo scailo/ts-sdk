@@ -68,7 +68,7 @@ Message\&lt;PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest\&gt;.con
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1315
+src/purchases_returns.scailo_pb.ts:1365
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1313
+src/purchases_returns.scailo_pb.ts:1363
 
 ___
 
@@ -100,7 +100,7 @@ from field: string ref_from = 1;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1299
+src/purchases_returns.scailo_pb.ts:1349
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1306
+src/purchases_returns.scailo_pb.ts:1356
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1322
+src/purchases_returns.scailo_pb.ts:1372
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1320
+src/purchases_returns.scailo_pb.ts:1370
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1321
+src/purchases_returns.scailo_pb.ts:1371
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1340
+src/purchases_returns.scailo_pb.ts:1390
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1328
+src/purchases_returns.scailo_pb.ts:1378
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1332
+src/purchases_returns.scailo_pb.ts:1382
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1336
+src/purchases_returns.scailo_pb.ts:1386

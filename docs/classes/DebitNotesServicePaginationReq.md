@@ -71,7 +71,7 @@ Message\&lt;DebitNotesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1585
+src/debit_notes.scailo_pb.ts:1635
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1555
+src/debit_notes.scailo_pb.ts:1605
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1548
+src/debit_notes.scailo_pb.ts:1598
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1562
+src/debit_notes.scailo_pb.ts:1612
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.DEBIT_NOTE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1576
+src/debit_notes.scailo_pb.ts:1626
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1569
+src/debit_notes.scailo_pb.ts:1619
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1583
+src/debit_notes.scailo_pb.ts:1633
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1592
+src/debit_notes.scailo_pb.ts:1642
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1590
+src/debit_notes.scailo_pb.ts:1640
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1591
+src/debit_notes.scailo_pb.ts:1641
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1613
+src/debit_notes.scailo_pb.ts:1663
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1601
+src/debit_notes.scailo_pb.ts:1651
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1605
+src/debit_notes.scailo_pb.ts:1655
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1609
+src/debit_notes.scailo_pb.ts:1659

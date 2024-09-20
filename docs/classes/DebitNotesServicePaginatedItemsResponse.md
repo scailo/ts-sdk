@@ -69,7 +69,7 @@ Message\&lt;DebitNotesServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1505
+src/debit_notes.scailo_pb.ts:1555
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1482
+src/debit_notes.scailo_pb.ts:1532
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1489
+src/debit_notes.scailo_pb.ts:1539
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.DebitNoteItem payload = 4;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1503
+src/debit_notes.scailo_pb.ts:1553
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1496
+src/debit_notes.scailo_pb.ts:1546
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1512
+src/debit_notes.scailo_pb.ts:1562
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1510
+src/debit_notes.scailo_pb.ts:1560
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1511
+src/debit_notes.scailo_pb.ts:1561
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1531
+src/debit_notes.scailo_pb.ts:1581
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1519
+src/debit_notes.scailo_pb.ts:1569
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1523
+src/debit_notes.scailo_pb.ts:1573
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1527
+src/debit_notes.scailo_pb.ts:1577

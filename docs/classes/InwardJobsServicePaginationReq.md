@@ -71,7 +71,7 @@ Message\&lt;InwardJobsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1517
+src/inward_jobs.scailo_pb.ts:1575
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1487
+src/inward_jobs.scailo_pb.ts:1545
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1480
+src/inward_jobs.scailo_pb.ts:1538
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1494
+src/inward_jobs.scailo_pb.ts:1552
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.INWARD_JOB_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1508
+src/inward_jobs.scailo_pb.ts:1566
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1501
+src/inward_jobs.scailo_pb.ts:1559
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1515
+src/inward_jobs.scailo_pb.ts:1573
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1524
+src/inward_jobs.scailo_pb.ts:1582
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1522
+src/inward_jobs.scailo_pb.ts:1580
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1523
+src/inward_jobs.scailo_pb.ts:1581
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1545
+src/inward_jobs.scailo_pb.ts:1603
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1533
+src/inward_jobs.scailo_pb.ts:1591
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1537
+src/inward_jobs.scailo_pb.ts:1595
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1541
+src/inward_jobs.scailo_pb.ts:1599

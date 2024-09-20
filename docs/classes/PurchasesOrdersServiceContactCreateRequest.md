@@ -68,7 +68,7 @@ Message\&lt;PurchasesOrdersServiceContactCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2904
+src/purchases_orders.scailo_pb.ts:2970
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2902
+src/purchases_orders.scailo_pb.ts:2968
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 purchase_order_id = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2895
+src/purchases_orders.scailo_pb.ts:2961
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2888
+src/purchases_orders.scailo_pb.ts:2954
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2911
+src/purchases_orders.scailo_pb.ts:2977
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2909
+src/purchases_orders.scailo_pb.ts:2975
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2910
+src/purchases_orders.scailo_pb.ts:2976
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2929
+src/purchases_orders.scailo_pb.ts:2995
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2917
+src/purchases_orders.scailo_pb.ts:2983
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2921
+src/purchases_orders.scailo_pb.ts:2987
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2925
+src/purchases_orders.scailo_pb.ts:2991

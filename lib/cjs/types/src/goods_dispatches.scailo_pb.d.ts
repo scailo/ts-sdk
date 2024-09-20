@@ -342,6 +342,34 @@ export declare class GoodsDispatchesServiceAutofillRequest extends Message<Goods
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.GoodsDispatchAncillaryParameters
+ */
+export declare class GoodsDispatchAncillaryParameters extends Message<GoodsDispatchAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the location (the UUID of the associated location_id)
+     *
+     * @generated from field: string location_uuid = 215;
+     */
+    locationUuid: string;
+    constructor(data?: PartialMessage<GoodsDispatchAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.GoodsDispatchAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchAncillaryParameters;
+    static equals(a: GoodsDispatchAncillaryParameters | PlainMessage<GoodsDispatchAncillaryParameters> | undefined, b: GoodsDispatchAncillaryParameters | PlainMessage<GoodsDispatchAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.GoodsDispatch

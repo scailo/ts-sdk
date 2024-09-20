@@ -560,6 +560,46 @@ export declare class PurchasesOrdersServiceAutofillRequest extends Message<Purch
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.PurchaseOrderAncillaryParameters
+ */
+export declare class PurchaseOrderAncillaryParameters extends Message<PurchaseOrderAncillaryParameters> {
+    /**
+     * The UUID of the consignee location (the UUID of the associated consignee_location_id)
+     *
+     * @generated from field: string consignee_location_uuid = 212;
+     */
+    consigneeLocationUuid: string;
+    /**
+     * The UUID of the buyer location (the UUID of the associated buyer_location_id)
+     *
+     * @generated from field: string buyer_location_uuid = 213;
+     */
+    buyerLocationUuid: string;
+    /**
+     * The UUID of the vendor (the UUID of the associated vendor_id)
+     *
+     * @generated from field: string vendor_uuid = 214;
+     */
+    vendorUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @generated from field: string currency_uuid = 215;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<PurchaseOrderAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchaseOrderAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderAncillaryParameters;
+    static equals(a: PurchaseOrderAncillaryParameters | PlainMessage<PurchaseOrderAncillaryParameters> | undefined, b: PurchaseOrderAncillaryParameters | PlainMessage<PurchaseOrderAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.PurchaseOrder

@@ -67,7 +67,7 @@ Message\&lt;SalesOrderItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1529
+src/sales_orders.scailo_pb.ts:1595
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1527
+src/sales_orders.scailo_pb.ts:1593
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1520
+src/sales_orders.scailo_pb.ts:1586
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1536
+src/sales_orders.scailo_pb.ts:1602
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1534
+src/sales_orders.scailo_pb.ts:1600
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1535
+src/sales_orders.scailo_pb.ts:1601
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1553
+src/sales_orders.scailo_pb.ts:1619
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1541
+src/sales_orders.scailo_pb.ts:1607
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1545
+src/sales_orders.scailo_pb.ts:1611
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1549
+src/sales_orders.scailo_pb.ts:1615

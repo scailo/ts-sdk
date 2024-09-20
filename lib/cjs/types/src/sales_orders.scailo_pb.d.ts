@@ -530,6 +530,46 @@ export declare class SalesOrdersServiceAutofillRequest extends Message<SalesOrde
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.SalesOrderAncillaryParameters
+ */
+export declare class SalesOrderAncillaryParameters extends Message<SalesOrderAncillaryParameters> {
+    /**
+     * The UUID of the consignee client (the UUID of the associated consignee_client_id)
+     *
+     * @generated from field: string consignee_client_uuid = 212;
+     */
+    consigneeClientUuid: string;
+    /**
+     * The UUID of the buyer client (the UUID of the associated buyer_client_id)
+     *
+     * @generated from field: string buyer_client_uuid = 213;
+     */
+    buyerClientUuid: string;
+    /**
+     * The UUID of the location (the UUID of the associated location_uuid)
+     *
+     * @generated from field: string location_uuid = 214;
+     */
+    locationUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @generated from field: string currency_uuid = 215;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<SalesOrderAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrderAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderAncillaryParameters;
+    static equals(a: SalesOrderAncillaryParameters | PlainMessage<SalesOrderAncillaryParameters> | undefined, b: SalesOrderAncillaryParameters | PlainMessage<SalesOrderAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.SalesOrder

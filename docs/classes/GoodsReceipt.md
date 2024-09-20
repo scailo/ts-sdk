@@ -80,7 +80,7 @@ Message\&lt;GoodsReceipt\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:637
+src/goods_receipts.scailo_pb.ts:679
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:551
+src/goods_receipts.scailo_pb.ts:593
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:572
+src/goods_receipts.scailo_pb.ts:614
 
 ___
 
@@ -128,7 +128,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:537
+src/goods_receipts.scailo_pb.ts:579
 
 ___
 
@@ -144,7 +144,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:593
+src/goods_receipts.scailo_pb.ts:635
 
 ___
 
@@ -160,7 +160,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:635
+src/goods_receipts.scailo_pb.ts:677
 
 ___
 
@@ -176,7 +176,7 @@ from field: repeated Scailo.GoodsReceiptItem list = 20;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:628
+src/goods_receipts.scailo_pb.ts:670
 
 ___
 
@@ -192,7 +192,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:565
+src/goods_receipts.scailo_pb.ts:607
 
 ___
 
@@ -208,7 +208,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:544
+src/goods_receipts.scailo_pb.ts:586
 
 ___
 
@@ -224,7 +224,7 @@ from field: string ref_from = 12;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:600
+src/goods_receipts.scailo_pb.ts:642
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:607
+src/goods_receipts.scailo_pb.ts:649
 
 ___
 
@@ -256,7 +256,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:586
+src/goods_receipts.scailo_pb.ts:628
 
 ___
 
@@ -272,7 +272,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:558
+src/goods_receipts.scailo_pb.ts:600
 
 ___
 
@@ -288,7 +288,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:579
+src/goods_receipts.scailo_pb.ts:621
 
 ___
 
@@ -304,7 +304,7 @@ from field: string vendor_bill_date = 15;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:621
+src/goods_receipts.scailo_pb.ts:663
 
 ___
 
@@ -320,7 +320,7 @@ from field: string vendor_bill_no = 14;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:614
+src/goods_receipts.scailo_pb.ts:656
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:644
+src/goods_receipts.scailo_pb.ts:686
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:642
+src/goods_receipts.scailo_pb.ts:684
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:643
+src/goods_receipts.scailo_pb.ts:685
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:674
+src/goods_receipts.scailo_pb.ts:716
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:662
+src/goods_receipts.scailo_pb.ts:704
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:666
+src/goods_receipts.scailo_pb.ts:708
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:670
+src/goods_receipts.scailo_pb.ts:712

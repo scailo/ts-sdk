@@ -302,6 +302,34 @@ export declare class SalesReturnsServiceUpdateRequest extends Message<SalesRetur
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.SalesReturnAncillaryParameters
+ */
+export declare class SalesReturnAncillaryParameters extends Message<SalesReturnAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the location (the UUID of the associated location_id)
+     *
+     * @generated from field: string location_uuid = 215;
+     */
+    locationUuid: string;
+    constructor(data?: PartialMessage<SalesReturnAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesReturnAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReturnAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnAncillaryParameters;
+    static equals(a: SalesReturnAncillaryParameters | PlainMessage<SalesReturnAncillaryParameters> | undefined, b: SalesReturnAncillaryParameters | PlainMessage<SalesReturnAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.SalesReturn

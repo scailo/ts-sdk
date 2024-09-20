@@ -1,4 +1,4 @@
-import { OutwardJobFreeIssueMaterial, OutwardJobFreeIssueMaterialItem, OutwardJobFreeIssueMaterialItemHistoryRequest, OutwardJobFreeIssueMaterialItemProspectiveInfoRequest, OutwardJobFreeIssueMaterialItemsSearchRequest, OutwardJobsFreeIssueMaterialsItemsList, OutwardJobsFreeIssueMaterialsList, OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest, OutwardJobsFreeIssueMaterialsServiceAutofillRequest, OutwardJobsFreeIssueMaterialsServiceCountReq, OutwardJobsFreeIssueMaterialsServiceCreateRequest, OutwardJobsFreeIssueMaterialsServiceFilterReq, OutwardJobsFreeIssueMaterialsServiceItemCreateRequest, OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest, OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse, OutwardJobsFreeIssueMaterialsServicePaginationReq, OutwardJobsFreeIssueMaterialsServicePaginationResponse, OutwardJobsFreeIssueMaterialsServiceSearchAllReq, OutwardJobsFreeIssueMaterialsServiceUpdateRequest } from "./outward_jobs_free_issue_materials.scailo_pb.js";
+import { OutwardJobFreeIssueMaterial, OutwardJobFreeIssueMaterialAncillaryParameters, OutwardJobFreeIssueMaterialItem, OutwardJobFreeIssueMaterialItemHistoryRequest, OutwardJobFreeIssueMaterialItemProspectiveInfoRequest, OutwardJobFreeIssueMaterialItemsSearchRequest, OutwardJobsFreeIssueMaterialsItemsList, OutwardJobsFreeIssueMaterialsList, OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest, OutwardJobsFreeIssueMaterialsServiceAutofillRequest, OutwardJobsFreeIssueMaterialsServiceCountReq, OutwardJobsFreeIssueMaterialsServiceCreateRequest, OutwardJobsFreeIssueMaterialsServiceFilterReq, OutwardJobsFreeIssueMaterialsServiceItemCreateRequest, OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest, OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse, OutwardJobsFreeIssueMaterialsServicePaginationReq, OutwardJobsFreeIssueMaterialsServicePaginationResponse, OutwardJobsFreeIssueMaterialsServiceSearchAllReq, OutwardJobsFreeIssueMaterialsServiceUpdateRequest } from "./outward_jobs_free_issue_materials.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -372,6 +372,17 @@ export declare const OutwardJobsFreeIssueMaterialsService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof OutwardJobFreeIssueMaterial;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the ancillary parameters (UUIDs of the internal references) by UUID
+         *
+         * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsService.ViewAncillaryParametersByUUID
+         */
+        readonly viewAncillaryParametersByUUID: {
+            readonly name: "ViewAncillaryParametersByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof OutwardJobFreeIssueMaterialAncillaryParameters;
             readonly kind: MethodKind.Unary;
         };
         /**

@@ -67,7 +67,7 @@ Message\&lt;GoodsDispatchItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1120
+src/goods_dispatches.scailo_pb.ts:1170
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1118
+src/goods_dispatches.scailo_pb.ts:1168
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 goods_dispatch_id = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1111
+src/goods_dispatches.scailo_pb.ts:1161
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1127
+src/goods_dispatches.scailo_pb.ts:1177
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1125
+src/goods_dispatches.scailo_pb.ts:1175
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1126
+src/goods_dispatches.scailo_pb.ts:1176
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1144
+src/goods_dispatches.scailo_pb.ts:1194
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1132
+src/goods_dispatches.scailo_pb.ts:1182
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1136
+src/goods_dispatches.scailo_pb.ts:1186
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1140
+src/goods_dispatches.scailo_pb.ts:1190

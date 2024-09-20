@@ -1,4 +1,4 @@
-import { QuotationResponse, QuotationResponseItem, QuotationResponseItemHistoryRequest, QuotationResponseItemsSearchRequest, QuotationsResponsesItemsList, QuotationsResponsesList, QuotationsResponsesServiceCountReq, QuotationsResponsesServiceCreateRequest, QuotationsResponsesServiceFilterReq, QuotationsResponsesServiceItemCreateRequest, QuotationsResponsesServiceItemsFilterReq, QuotationsResponsesServiceItemUpdateRequest, QuotationsResponsesServicePaginatedItemsResponse, QuotationsResponsesServicePaginationReq, QuotationsResponsesServicePaginationResponse, QuotationsResponsesServiceSearchAllReq, QuotationsResponsesServiceUpdateRequest } from "./quotations_responses.scailo_pb.js";
+import { QuotationResponse, QuotationResponseAncillaryParameters, QuotationResponseItem, QuotationResponseItemHistoryRequest, QuotationResponseItemsSearchRequest, QuotationsResponsesItemsList, QuotationsResponsesList, QuotationsResponsesServiceCountReq, QuotationsResponsesServiceCreateRequest, QuotationsResponsesServiceFilterReq, QuotationsResponsesServiceItemCreateRequest, QuotationsResponsesServiceItemsFilterReq, QuotationsResponsesServiceItemUpdateRequest, QuotationsResponsesServicePaginatedItemsResponse, QuotationsResponsesServicePaginationReq, QuotationsResponsesServicePaginationResponse, QuotationsResponsesServiceSearchAllReq, QuotationsResponsesServiceUpdateRequest } from "./quotations_responses.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
@@ -338,6 +338,17 @@ export declare const QuotationsResponsesService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof QuotationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the ancillary parameters (UUIDs of the internal references) by UUID
+         *
+         * @generated from rpc Scailo.QuotationsResponsesService.ViewAncillaryParametersByUUID
+         */
+        readonly viewAncillaryParametersByUUID: {
+            readonly name: "ViewAncillaryParametersByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof QuotationResponseAncillaryParameters;
             readonly kind: MethodKind.Unary;
         };
         /**

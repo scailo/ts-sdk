@@ -66,7 +66,7 @@ Message\&lt;CreditNotesList\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1136
+src/credit_notes.scailo_pb.ts:1186
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.CreditNote list = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1134
+src/credit_notes.scailo_pb.ts:1184
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1143
+src/credit_notes.scailo_pb.ts:1193
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1141
+src/credit_notes.scailo_pb.ts:1191
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1142
+src/credit_notes.scailo_pb.ts:1192
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1159
+src/credit_notes.scailo_pb.ts:1209
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1147
+src/credit_notes.scailo_pb.ts:1197
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1151
+src/credit_notes.scailo_pb.ts:1201
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1155
+src/credit_notes.scailo_pb.ts:1205

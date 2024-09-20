@@ -79,7 +79,7 @@ Message\&lt;QuotationsResponsesServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:707
+src/quotations_responses.scailo_pb.ts:757
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: uint64 delivery_time_in_days = 20;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:698
+src/quotations_responses.scailo_pb.ts:748
 
 ___
 
@@ -111,7 +111,7 @@ from field: string hsn_sac_code = 13;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:649
+src/quotations_responses.scailo_pb.ts:699
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 internal_quantity = 15;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:663
+src/quotations_responses.scailo_pb.ts:713
 
 ___
 
@@ -143,7 +143,7 @@ from field: string name = 12;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:642
+src/quotations_responses.scailo_pb.ts:692
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 quotation_request_item_id = 11;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:635
+src/quotations_responses.scailo_pb.ts:685
 
 ___
 
@@ -175,7 +175,7 @@ from field: uint64 quotation_response_id = 10;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:628
+src/quotations_responses.scailo_pb.ts:678
 
 ___
 
@@ -191,7 +191,7 @@ from field: string specifications = 21;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:705
+src/quotations_responses.scailo_pb.ts:755
 
 ___
 
@@ -207,7 +207,7 @@ from field: uint64 tax_group_id = 19;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:691
+src/quotations_responses.scailo_pb.ts:741
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 uom_id = 14;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:656
+src/quotations_responses.scailo_pb.ts:706
 
 ___
 
@@ -239,7 +239,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:614
+src/quotations_responses.scailo_pb.ts:664
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:621
+src/quotations_responses.scailo_pb.ts:671
 
 ___
 
@@ -271,7 +271,7 @@ from field: uint64 vendor_quantity = 17;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:677
+src/quotations_responses.scailo_pb.ts:727
 
 ___
 
@@ -287,7 +287,7 @@ from field: uint64 vendor_unit_price = 18;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:684
+src/quotations_responses.scailo_pb.ts:734
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vendor_uom_id = 16;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:670
+src/quotations_responses.scailo_pb.ts:720
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:714
+src/quotations_responses.scailo_pb.ts:764
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:712
+src/quotations_responses.scailo_pb.ts:762
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:713
+src/quotations_responses.scailo_pb.ts:763
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:743
+src/quotations_responses.scailo_pb.ts:793
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:731
+src/quotations_responses.scailo_pb.ts:781
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:735
+src/quotations_responses.scailo_pb.ts:785
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:739
+src/quotations_responses.scailo_pb.ts:789

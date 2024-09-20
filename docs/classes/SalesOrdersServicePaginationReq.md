@@ -71,7 +71,7 @@ Message\&lt;SalesOrdersServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1665
+src/sales_orders.scailo_pb.ts:1731
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1635
+src/sales_orders.scailo_pb.ts:1701
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1628
+src/sales_orders.scailo_pb.ts:1694
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1642
+src/sales_orders.scailo_pb.ts:1708
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.SALES_ORDER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1656
+src/sales_orders.scailo_pb.ts:1722
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1649
+src/sales_orders.scailo_pb.ts:1715
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1663
+src/sales_orders.scailo_pb.ts:1729
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1672
+src/sales_orders.scailo_pb.ts:1738
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1670
+src/sales_orders.scailo_pb.ts:1736
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1671
+src/sales_orders.scailo_pb.ts:1737
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1693
+src/sales_orders.scailo_pb.ts:1759
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1681
+src/sales_orders.scailo_pb.ts:1747
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1685
+src/sales_orders.scailo_pb.ts:1751
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1689
+src/sales_orders.scailo_pb.ts:1755

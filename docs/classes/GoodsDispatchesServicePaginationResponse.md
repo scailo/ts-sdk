@@ -69,7 +69,7 @@ Message\&lt;GoodsDispatchesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1560
+src/goods_dispatches.scailo_pb.ts:1610
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1537
+src/goods_dispatches.scailo_pb.ts:1587
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1544
+src/goods_dispatches.scailo_pb.ts:1594
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.GoodsDispatch payload = 4;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1558
+src/goods_dispatches.scailo_pb.ts:1608
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1551
+src/goods_dispatches.scailo_pb.ts:1601
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1567
+src/goods_dispatches.scailo_pb.ts:1617
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1565
+src/goods_dispatches.scailo_pb.ts:1615
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1566
+src/goods_dispatches.scailo_pb.ts:1616
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1586
+src/goods_dispatches.scailo_pb.ts:1636
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1574
+src/goods_dispatches.scailo_pb.ts:1624
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1578
+src/goods_dispatches.scailo_pb.ts:1628
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1582
+src/goods_dispatches.scailo_pb.ts:1632

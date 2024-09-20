@@ -75,7 +75,7 @@ Message\&lt;SalesReceiptsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1291
+src/sales_receipts.scailo_pb.ts:1357
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: uint64 buyer_client_id = 61;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1289
+src/sales_receipts.scailo_pb.ts:1355
 
 ___
 
@@ -108,7 +108,7 @@ from field: uint64 consignee_client_id = 60;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1282
+src/sales_receipts.scailo_pb.ts:1348
 
 ___
 
@@ -124,7 +124,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1232
+src/sales_receipts.scailo_pb.ts:1298
 
 ___
 
@@ -140,7 +140,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1260
+src/sales_receipts.scailo_pb.ts:1326
 
 ___
 
@@ -156,7 +156,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1225
+src/sales_receipts.scailo_pb.ts:1291
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1239
+src/sales_receipts.scailo_pb.ts:1305
 
 ___
 
@@ -188,7 +188,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1274
+src/sales_receipts.scailo_pb.ts:1340
 
 ___
 
@@ -204,7 +204,7 @@ from field: Scailo.SALE_RECEIPT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1253
+src/sales_receipts.scailo_pb.ts:1319
 
 ___
 
@@ -220,7 +220,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1246
+src/sales_receipts.scailo_pb.ts:1312
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1267
+src/sales_receipts.scailo_pb.ts:1333
 
 ___
 
@@ -246,7 +246,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1298
+src/sales_receipts.scailo_pb.ts:1364
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1296
+src/sales_receipts.scailo_pb.ts:1362
 
 ___
 
@@ -266,7 +266,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1297
+src/sales_receipts.scailo_pb.ts:1363
 
 ## Methods
 
@@ -554,7 +554,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1323
+src/sales_receipts.scailo_pb.ts:1389
 
 ___
 
@@ -575,7 +575,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1311
+src/sales_receipts.scailo_pb.ts:1377
 
 ___
 
@@ -596,7 +596,7 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1315
+src/sales_receipts.scailo_pb.ts:1381
 
 ___
 
@@ -617,4 +617,4 @@ ___
 
 #### Defined in
 
-src/sales_receipts.scailo_pb.ts:1319
+src/sales_receipts.scailo_pb.ts:1385

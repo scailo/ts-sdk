@@ -68,7 +68,7 @@ Message\&lt;PurchaseOrderItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1570
+src/purchases_orders.scailo_pb.ts:1636
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1561
+src/purchases_orders.scailo_pb.ts:1627
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 purchase_order_id = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1554
+src/purchases_orders.scailo_pb.ts:1620
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1568
+src/purchases_orders.scailo_pb.ts:1634
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1577
+src/purchases_orders.scailo_pb.ts:1643
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1575
+src/purchases_orders.scailo_pb.ts:1641
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1576
+src/purchases_orders.scailo_pb.ts:1642
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1595
+src/purchases_orders.scailo_pb.ts:1661
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1583
+src/purchases_orders.scailo_pb.ts:1649
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1587
+src/purchases_orders.scailo_pb.ts:1653
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1591
+src/purchases_orders.scailo_pb.ts:1657

@@ -253,6 +253,46 @@ export declare class SalesReceiptsServiceUpdateRequest extends Message<SalesRece
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.SaleReceiptAncillaryParameters
+ */
+export declare class SaleReceiptAncillaryParameters extends Message<SaleReceiptAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the client (the UUID of the associated client_id)
+     *
+     * @generated from field: string client_uuid = 214;
+     */
+    clientUuid: string;
+    /**
+     * The UUID of the bank account (the UUID of the bank_account_id)
+     *
+     * @generated from field: string bank_account_uuid = 215;
+     */
+    bankAccountUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @generated from field: string currency_uuid = 216;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<SaleReceiptAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SaleReceiptAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SaleReceiptAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SaleReceiptAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SaleReceiptAncillaryParameters;
+    static equals(a: SaleReceiptAncillaryParameters | PlainMessage<SaleReceiptAncillaryParameters> | undefined, b: SaleReceiptAncillaryParameters | PlainMessage<SaleReceiptAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.SaleReceipt

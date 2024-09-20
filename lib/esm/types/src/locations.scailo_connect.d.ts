@@ -157,6 +157,17 @@ export declare const LocationsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by UUID
+         *
+         * @generated from rpc Scailo.LocationsService.ViewByUUID
+         */
+        readonly viewByUUID: {
+            readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof Location;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.LocationsService.ViewAll

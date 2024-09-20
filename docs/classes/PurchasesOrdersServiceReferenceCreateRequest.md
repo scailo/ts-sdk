@@ -70,7 +70,7 @@ Message\&lt;PurchasesOrdersServiceReferenceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2444
+src/purchases_orders.scailo_pb.ts:2510
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: Scailo.PURCHASE_ORDER_REFERENCE_CONTEXT context = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2428
+src/purchases_orders.scailo_pb.ts:2494
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 purchase_order_id = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2421
+src/purchases_orders.scailo_pb.ts:2487
 
 ___
 
@@ -118,7 +118,7 @@ from field: Scailo.PURCHASE_ORDER_REFERENCE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2435
+src/purchases_orders.scailo_pb.ts:2501
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2442
+src/purchases_orders.scailo_pb.ts:2508
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2414
+src/purchases_orders.scailo_pb.ts:2480
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2451
+src/purchases_orders.scailo_pb.ts:2517
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2449
+src/purchases_orders.scailo_pb.ts:2515
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2450
+src/purchases_orders.scailo_pb.ts:2516
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2471
+src/purchases_orders.scailo_pb.ts:2537
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2459
+src/purchases_orders.scailo_pb.ts:2525
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2463
+src/purchases_orders.scailo_pb.ts:2529
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2467
+src/purchases_orders.scailo_pb.ts:2533

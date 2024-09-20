@@ -72,7 +72,7 @@ Message\&lt;SalesReturnsServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:637
+src/sales_returns.scailo_pb.ts:687
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:635
+src/sales_returns.scailo_pb.ts:685
 
 ___
 
@@ -104,7 +104,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:628
+src/sales_returns.scailo_pb.ts:678
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:607
+src/sales_returns.scailo_pb.ts:657
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:621
+src/sales_returns.scailo_pb.ts:671
 
 ___
 
@@ -152,7 +152,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:614
+src/sales_returns.scailo_pb.ts:664
 
 ___
 
@@ -168,7 +168,7 @@ from field: uint64 sales_return_id = 10;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:600
+src/sales_returns.scailo_pb.ts:650
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:593
+src/sales_returns.scailo_pb.ts:643
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:644
+src/sales_returns.scailo_pb.ts:694
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:642
+src/sales_returns.scailo_pb.ts:692
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:643
+src/sales_returns.scailo_pb.ts:693
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:666
+src/sales_returns.scailo_pb.ts:716
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:654
+src/sales_returns.scailo_pb.ts:704
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:658
+src/sales_returns.scailo_pb.ts:708
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:662
+src/sales_returns.scailo_pb.ts:712

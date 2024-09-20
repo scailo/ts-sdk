@@ -92,7 +92,7 @@ Message\&lt;PurchasesPaymentsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:941
+src/purchases_payments.scailo_pb.ts:1007
 
 ## Properties
 
@@ -108,7 +108,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:848
+src/purchases_payments.scailo_pb.ts:914
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:841
+src/purchases_payments.scailo_pb.ts:907
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:834
+src/purchases_payments.scailo_pb.ts:900
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:855
+src/purchases_payments.scailo_pb.ts:921
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 bank_account_id = 25;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:911
+src/purchases_payments.scailo_pb.ts:977
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:869
+src/purchases_payments.scailo_pb.ts:935
 
 ___
 
@@ -204,7 +204,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:862
+src/purchases_payments.scailo_pb.ts:928
 
 ___
 
@@ -220,7 +220,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:764
+src/purchases_payments.scailo_pb.ts:830
 
 ___
 
@@ -236,7 +236,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:799
+src/purchases_payments.scailo_pb.ts:865
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:792
+src/purchases_payments.scailo_pb.ts:858
 
 ___
 
@@ -268,7 +268,7 @@ from field: uint64 currency_id = 26;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:918
+src/purchases_payments.scailo_pb.ts:984
 
 ___
 
@@ -284,7 +284,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:820
+src/purchases_payments.scailo_pb.ts:886
 
 ___
 
@@ -300,7 +300,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:883
+src/purchases_payments.scailo_pb.ts:949
 
 ___
 
@@ -316,7 +316,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:757
+src/purchases_payments.scailo_pb.ts:823
 
 ___
 
@@ -332,7 +332,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:813
+src/purchases_payments.scailo_pb.ts:879
 
 ___
 
@@ -348,7 +348,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:806
+src/purchases_payments.scailo_pb.ts:872
 
 ___
 
@@ -364,7 +364,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:771
+src/purchases_payments.scailo_pb.ts:837
 
 ___
 
@@ -380,7 +380,7 @@ from field: uint64 payment_timestamp_end = 29;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:939
+src/purchases_payments.scailo_pb.ts:1005
 
 ___
 
@@ -396,7 +396,7 @@ from field: uint64 payment_timestamp_start = 28;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:932
+src/purchases_payments.scailo_pb.ts:998
 
 ___
 
@@ -412,7 +412,7 @@ from field: string ref_from = 22;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:890
+src/purchases_payments.scailo_pb.ts:956
 
 ___
 
@@ -428,7 +428,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:897
+src/purchases_payments.scailo_pb.ts:963
 
 ___
 
@@ -444,7 +444,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:876
+src/purchases_payments.scailo_pb.ts:942
 
 ___
 
@@ -460,7 +460,7 @@ from field: Scailo.PURCHASE_PAYMENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:785
+src/purchases_payments.scailo_pb.ts:851
 
 ___
 
@@ -476,7 +476,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:778
+src/purchases_payments.scailo_pb.ts:844
 
 ___
 
@@ -492,7 +492,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:827
+src/purchases_payments.scailo_pb.ts:893
 
 ___
 
@@ -508,7 +508,7 @@ from field: string transaction_type = 27;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:925
+src/purchases_payments.scailo_pb.ts:991
 
 ___
 
@@ -524,7 +524,7 @@ from field: uint64 vendor_id = 24;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:904
+src/purchases_payments.scailo_pb.ts:970
 
 ___
 
@@ -534,7 +534,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:948
+src/purchases_payments.scailo_pb.ts:1014
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:946
+src/purchases_payments.scailo_pb.ts:1012
 
 ___
 
@@ -554,7 +554,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:947
+src/purchases_payments.scailo_pb.ts:1013
 
 ## Methods
 
@@ -842,7 +842,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:990
+src/purchases_payments.scailo_pb.ts:1056
 
 ___
 
@@ -863,7 +863,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:978
+src/purchases_payments.scailo_pb.ts:1044
 
 ___
 
@@ -884,7 +884,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:982
+src/purchases_payments.scailo_pb.ts:1048
 
 ___
 
@@ -905,4 +905,4 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:986
+src/purchases_payments.scailo_pb.ts:1052

@@ -82,7 +82,7 @@ Message\&lt;GoodsDispatchItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1275
+src/goods_dispatches.scailo_pb.ts:1325
 
 ## Properties
 
@@ -98,7 +98,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1224
+src/goods_dispatches.scailo_pb.ts:1274
 
 ___
 
@@ -114,7 +114,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1217
+src/goods_dispatches.scailo_pb.ts:1267
 
 ___
 
@@ -130,7 +130,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1210
+src/goods_dispatches.scailo_pb.ts:1260
 
 ___
 
@@ -146,7 +146,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1231
+src/goods_dispatches.scailo_pb.ts:1281
 
 ___
 
@@ -162,7 +162,7 @@ from field: string client_family_code = 26;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1266
+src/goods_dispatches.scailo_pb.ts:1316
 
 ___
 
@@ -178,7 +178,7 @@ from field: uint64 client_uom_id = 24;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1259
+src/goods_dispatches.scailo_pb.ts:1309
 
 ___
 
@@ -194,7 +194,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1168
+src/goods_dispatches.scailo_pb.ts:1218
 
 ___
 
@@ -210,7 +210,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1196
+src/goods_dispatches.scailo_pb.ts:1246
 
 ___
 
@@ -226,7 +226,7 @@ from field: uint64 family_id = 22;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1245
+src/goods_dispatches.scailo_pb.ts:1295
 
 ___
 
@@ -242,7 +242,7 @@ from field: uint64 goods_dispatch_id = 20;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1238
+src/goods_dispatches.scailo_pb.ts:1288
 
 ___
 
@@ -258,7 +258,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1161
+src/goods_dispatches.scailo_pb.ts:1211
 
 ___
 
@@ -274,7 +274,7 @@ from field: string item_hash = 23;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1252
+src/goods_dispatches.scailo_pb.ts:1302
 
 ___
 
@@ -290,7 +290,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1175
+src/goods_dispatches.scailo_pb.ts:1225
 
 ___
 
@@ -306,7 +306,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1273
+src/goods_dispatches.scailo_pb.ts:1323
 
 ___
 
@@ -322,7 +322,7 @@ from field: Scailo.GOODS_DISPATCH_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1189
+src/goods_dispatches.scailo_pb.ts:1239
 
 ___
 
@@ -338,7 +338,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1182
+src/goods_dispatches.scailo_pb.ts:1232
 
 ___
 
@@ -354,7 +354,7 @@ from field: Scailo.GOODS_DISPATCH_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1203
+src/goods_dispatches.scailo_pb.ts:1253
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1282
+src/goods_dispatches.scailo_pb.ts:1332
 
 ___
 
@@ -374,7 +374,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1280
+src/goods_dispatches.scailo_pb.ts:1330
 
 ___
 
@@ -384,7 +384,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1281
+src/goods_dispatches.scailo_pb.ts:1331
 
 ## Methods
 
@@ -672,7 +672,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1314
+src/goods_dispatches.scailo_pb.ts:1364
 
 ___
 
@@ -693,7 +693,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1302
+src/goods_dispatches.scailo_pb.ts:1352
 
 ___
 
@@ -714,7 +714,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1306
+src/goods_dispatches.scailo_pb.ts:1356
 
 ___
 
@@ -735,4 +735,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1310
+src/goods_dispatches.scailo_pb.ts:1360

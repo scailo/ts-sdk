@@ -360,6 +360,28 @@ export declare class GoodsReceiptsServiceAutofillRequest extends Message<GoodsRe
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.GoodsReceiptAncillaryParameters
+ */
+export declare class GoodsReceiptAncillaryParameters extends Message<GoodsReceiptAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    constructor(data?: PartialMessage<GoodsReceiptAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.GoodsReceiptAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptAncillaryParameters;
+    static equals(a: GoodsReceiptAncillaryParameters | PlainMessage<GoodsReceiptAncillaryParameters> | undefined, b: GoodsReceiptAncillaryParameters | PlainMessage<GoodsReceiptAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.GoodsReceipt

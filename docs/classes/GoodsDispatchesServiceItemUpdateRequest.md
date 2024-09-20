@@ -72,7 +72,7 @@ Message\&lt;GoodsDispatchesServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:801
+src/goods_dispatches.scailo_pb.ts:851
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: string client_family_code = 16;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:799
+src/goods_dispatches.scailo_pb.ts:849
 
 ___
 
@@ -104,7 +104,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:792
+src/goods_dispatches.scailo_pb.ts:842
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:785
+src/goods_dispatches.scailo_pb.ts:835
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:764
+src/goods_dispatches.scailo_pb.ts:814
 
 ___
 
@@ -152,7 +152,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:778
+src/goods_dispatches.scailo_pb.ts:828
 
 ___
 
@@ -168,7 +168,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:771
+src/goods_dispatches.scailo_pb.ts:821
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:757
+src/goods_dispatches.scailo_pb.ts:807
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:808
+src/goods_dispatches.scailo_pb.ts:858
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:806
+src/goods_dispatches.scailo_pb.ts:856
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:807
+src/goods_dispatches.scailo_pb.ts:857
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:830
+src/goods_dispatches.scailo_pb.ts:880
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:818
+src/goods_dispatches.scailo_pb.ts:868
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:822
+src/goods_dispatches.scailo_pb.ts:872
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:826
+src/goods_dispatches.scailo_pb.ts:876

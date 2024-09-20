@@ -78,7 +78,7 @@ Message\&lt;SalesOrdersServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1068
+src/sales_orders.scailo_pb.ts:1134
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: string client_family_code = 16;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1024
+src/sales_orders.scailo_pb.ts:1090
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1017
+src/sales_orders.scailo_pb.ts:1083
 
 ___
 
@@ -126,7 +126,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1010
+src/sales_orders.scailo_pb.ts:1076
 
 ___
 
@@ -142,7 +142,7 @@ from field: string delivery_date = 20;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1052
+src/sales_orders.scailo_pb.ts:1118
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 discount = 19;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1045
+src/sales_orders.scailo_pb.ts:1111
 
 ___
 
@@ -174,7 +174,7 @@ from field: uint64 family_id = 12;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:996
+src/sales_orders.scailo_pb.ts:1062
 
 ___
 
@@ -190,7 +190,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1003
+src/sales_orders.scailo_pb.ts:1069
 
 ___
 
@@ -206,7 +206,7 @@ from field: bool is_invoiceable = 22;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1066
+src/sales_orders.scailo_pb.ts:1132
 
 ___
 
@@ -222,7 +222,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:989
+src/sales_orders.scailo_pb.ts:1055
 
 ___
 
@@ -238,7 +238,7 @@ from field: string specifications = 21;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1059
+src/sales_orders.scailo_pb.ts:1125
 
 ___
 
@@ -254,7 +254,7 @@ from field: uint64 tax_group_id = 18;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1038
+src/sales_orders.scailo_pb.ts:1104
 
 ___
 
@@ -270,7 +270,7 @@ from field: uint64 unit_price = 17;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1031
+src/sales_orders.scailo_pb.ts:1097
 
 ___
 
@@ -286,7 +286,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:982
+src/sales_orders.scailo_pb.ts:1048
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1075
+src/sales_orders.scailo_pb.ts:1141
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1073
+src/sales_orders.scailo_pb.ts:1139
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1074
+src/sales_orders.scailo_pb.ts:1140
 
 ## Methods
 
@@ -604,7 +604,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1103
+src/sales_orders.scailo_pb.ts:1169
 
 ___
 
@@ -625,7 +625,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1091
+src/sales_orders.scailo_pb.ts:1157
 
 ___
 
@@ -646,7 +646,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1095
+src/sales_orders.scailo_pb.ts:1161
 
 ___
 
@@ -667,4 +667,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1099
+src/sales_orders.scailo_pb.ts:1165

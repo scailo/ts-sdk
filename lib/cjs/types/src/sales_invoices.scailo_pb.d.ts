@@ -418,6 +418,34 @@ export declare class SalesInvoicesServiceAutofillRequest extends Message<SalesIn
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.SalesInvoiceAncillaryParameters
+ */
+export declare class SalesInvoiceAncillaryParameters extends Message<SalesInvoiceAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @generated from field: string currency_uuid = 214;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<SalesInvoiceAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesInvoiceAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoiceAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesInvoiceAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesInvoiceAncillaryParameters;
+    static equals(a: SalesInvoiceAncillaryParameters | PlainMessage<SalesInvoiceAncillaryParameters> | undefined, b: SalesInvoiceAncillaryParameters | PlainMessage<SalesInvoiceAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.SalesInvoice

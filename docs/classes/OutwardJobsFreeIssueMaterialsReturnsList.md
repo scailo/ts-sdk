@@ -66,7 +66,7 @@ Message\&lt;OutwardJobsFreeIssueMaterialsReturnsList\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:854
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:904
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.OutwardJobFreeIssueMaterialReturn list = 1;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:852
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:902
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:861
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:911
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:859
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:909
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:860
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:910
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:877
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:927
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:865
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:915
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:869
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:919
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:873
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:923

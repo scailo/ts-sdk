@@ -69,7 +69,7 @@ Message\&lt;SalesInvoicesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1561
+src/sales_invoices.scailo_pb.ts:1611
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1538
+src/sales_invoices.scailo_pb.ts:1588
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1545
+src/sales_invoices.scailo_pb.ts:1595
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.SalesInvoice payload = 4;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1559
+src/sales_invoices.scailo_pb.ts:1609
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1552
+src/sales_invoices.scailo_pb.ts:1602
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1568
+src/sales_invoices.scailo_pb.ts:1618
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1566
+src/sales_invoices.scailo_pb.ts:1616
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1567
+src/sales_invoices.scailo_pb.ts:1617
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1587
+src/sales_invoices.scailo_pb.ts:1637
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1575
+src/sales_invoices.scailo_pb.ts:1625
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1579
+src/sales_invoices.scailo_pb.ts:1629
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1583
+src/sales_invoices.scailo_pb.ts:1633
