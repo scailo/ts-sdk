@@ -521,6 +521,56 @@ export class DebitNotesServiceAutofillRequest extends Message<DebitNotesServiceA
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.DebitNoteAncillaryParameters
+ */
+export class DebitNoteAncillaryParameters extends Message<DebitNoteAncillaryParameters> {
+  /**
+   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @generated from field: string ref_uuid = 213;
+   */
+  refUuid = "";
+
+  /**
+   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @generated from field: string currency_uuid = 214;
+   */
+  currencyUuid = "";
+
+  constructor(data?: PartialMessage<DebitNoteAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.DebitNoteAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 214, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNoteAncillaryParameters {
+    return new DebitNoteAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DebitNoteAncillaryParameters {
+    return new DebitNoteAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DebitNoteAncillaryParameters {
+    return new DebitNoteAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: DebitNoteAncillaryParameters | PlainMessage<DebitNoteAncillaryParameters> | undefined, b: DebitNoteAncillaryParameters | PlainMessage<DebitNoteAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(DebitNoteAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.DebitNote

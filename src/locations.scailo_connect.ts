@@ -163,6 +163,17 @@ export const LocationsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.LocationsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: Location,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.LocationsService.ViewAll

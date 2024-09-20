@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { QuotationRequest, QuotationRequestItem, QuotationRequestItemHistoryRequest, QuotationRequestItemsSearchRequest, QuotationsRequestsItemsList, QuotationsRequestsList, QuotationsRequestsServiceAutofillRequest, QuotationsRequestsServiceCountReq, QuotationsRequestsServiceCreateRequest, QuotationsRequestsServiceFilterReq, QuotationsRequestsServiceItemCreateRequest, QuotationsRequestsServiceItemUpdateRequest, QuotationsRequestsServicePaginatedItemsResponse, QuotationsRequestsServicePaginationReq, QuotationsRequestsServicePaginationResponse, QuotationsRequestsServiceSearchAllReq, QuotationsRequestsServiceUpdateRequest } from "./quotations_requests.scailo_pb.js";
+import { QuotationRequest, QuotationRequestAncillaryParameters, QuotationRequestItem, QuotationRequestItemHistoryRequest, QuotationRequestItemsSearchRequest, QuotationsRequestsItemsList, QuotationsRequestsList, QuotationsRequestsServiceAutofillRequest, QuotationsRequestsServiceCountReq, QuotationsRequestsServiceCreateRequest, QuotationsRequestsServiceFilterReq, QuotationsRequestsServiceItemCreateRequest, QuotationsRequestsServiceItemUpdateRequest, QuotationsRequestsServicePaginatedItemsResponse, QuotationsRequestsServicePaginationReq, QuotationsRequestsServicePaginationResponse, QuotationsRequestsServiceSearchAllReq, QuotationsRequestsServiceUpdateRequest } from "./quotations_requests.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -344,6 +344,17 @@ export const QuotationsRequestsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: QuotationRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.QuotationsRequestsService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: QuotationRequestAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

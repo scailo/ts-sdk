@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { SalesOrder, SalesOrderBillingStatistics, SalesOrderContact, SalesOrderContactsList, SalesOrderInventoryMatchList, SalesOrderInventoryStatistics, SalesOrderItem, SalesOrderItemHistoryRequest, SalesOrderItemProspectiveInfoRequest, SalesOrderItemsList, SalesOrderItemsSearchRequest, SalesOrderReference, SalesOrderReferencesList, SalesOrdersList, SalesOrdersServiceAutofillRequest, SalesOrdersServiceContactCreateRequest, SalesOrdersServiceCountReq, SalesOrdersServiceCreateRequest, SalesOrdersServiceFilterReq, SalesOrdersServiceItemCreateRequest, SalesOrdersServiceItemUpdateRequest, SalesOrdersServicePaginatedItemsResponse, SalesOrdersServicePaginationReq, SalesOrdersServicePaginationResponse, SalesOrdersServiceReferenceCreateRequest, SalesOrdersServiceSearchAllReq, SalesOrdersServiceUpdateRequest } from "./sales_orders.scailo_pb.js";
+import { SalesOrder, SalesOrderAncillaryParameters, SalesOrderBillingStatistics, SalesOrderContact, SalesOrderContactsList, SalesOrderInventoryMatchList, SalesOrderInventoryStatistics, SalesOrderItem, SalesOrderItemHistoryRequest, SalesOrderItemProspectiveInfoRequest, SalesOrderItemsList, SalesOrderItemsSearchRequest, SalesOrderReference, SalesOrderReferencesList, SalesOrdersList, SalesOrdersServiceAutofillRequest, SalesOrdersServiceContactCreateRequest, SalesOrdersServiceCountReq, SalesOrdersServiceCreateRequest, SalesOrdersServiceFilterReq, SalesOrdersServiceItemCreateRequest, SalesOrdersServiceItemUpdateRequest, SalesOrdersServicePaginatedItemsResponse, SalesOrdersServicePaginationReq, SalesOrdersServicePaginationResponse, SalesOrdersServiceReferenceCreateRequest, SalesOrdersServiceSearchAllReq, SalesOrdersServiceUpdateRequest } from "./sales_orders.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -511,6 +511,17 @@ export const SalesOrdersService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: SalesOrder,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.SalesOrdersService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: SalesOrderAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

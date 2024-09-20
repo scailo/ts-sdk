@@ -434,6 +434,56 @@ export class SalesReturnsServiceUpdateRequest extends Message<SalesReturnsServic
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.SalesReturnAncillaryParameters
+ */
+export class SalesReturnAncillaryParameters extends Message<SalesReturnAncillaryParameters> {
+  /**
+   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @generated from field: string ref_uuid = 213;
+   */
+  refUuid = "";
+
+  /**
+   * The UUID of the location (the UUID of the associated location_id)
+   *
+   * @generated from field: string location_uuid = 215;
+   */
+  locationUuid = "";
+
+  constructor(data?: PartialMessage<SalesReturnAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesReturnAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 215, name: "location_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReturnAncillaryParameters {
+    return new SalesReturnAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnAncillaryParameters {
+    return new SalesReturnAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnAncillaryParameters {
+    return new SalesReturnAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesReturnAncillaryParameters | PlainMessage<SalesReturnAncillaryParameters> | undefined, b: SalesReturnAncillaryParameters | PlainMessage<SalesReturnAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(SalesReturnAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.SalesReturn

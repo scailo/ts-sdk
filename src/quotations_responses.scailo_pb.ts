@@ -439,6 +439,56 @@ export class QuotationsResponsesServiceUpdateRequest extends Message<QuotationsR
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.QuotationResponseAncillaryParameters
+ */
+export class QuotationResponseAncillaryParameters extends Message<QuotationResponseAncillaryParameters> {
+  /**
+   * The UUID of the quotation_request_id (the UUID of the associated quotation_request_id)
+   *
+   * @generated from field: string quotation_request_uuid = 212;
+   */
+  quotationRequestUuid = "";
+
+  /**
+   * The UUID of the currency (the UUID of the associated currency_id)
+   *
+   * @generated from field: string currency_uuid = 215;
+   */
+  currencyUuid = "";
+
+  constructor(data?: PartialMessage<QuotationResponseAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuotationResponseAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 212, name: "quotation_request_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 215, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuotationResponseAncillaryParameters {
+    return new QuotationResponseAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationResponseAncillaryParameters {
+    return new QuotationResponseAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationResponseAncillaryParameters {
+    return new QuotationResponseAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuotationResponseAncillaryParameters | PlainMessage<QuotationResponseAncillaryParameters> | undefined, b: QuotationResponseAncillaryParameters | PlainMessage<QuotationResponseAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(QuotationResponseAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.QuotationResponse

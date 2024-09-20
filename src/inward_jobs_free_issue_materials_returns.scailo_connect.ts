@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { InwardJobFreeIssueMaterialReturn, InwardJobFreeIssueMaterialReturnItem, InwardJobFreeIssueMaterialReturnItemHistoryRequest, InwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest, InwardJobFreeIssueMaterialReturnItemsSearchRequest, InwardJobsFreeIssueMaterialsReturnsItemsList, InwardJobsFreeIssueMaterialsReturnsList, InwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSourceRequest, InwardJobsFreeIssueMaterialsReturnsServiceCountReq, InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest, InwardJobsFreeIssueMaterialsReturnsServiceFilterReq, InwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest, InwardJobsFreeIssueMaterialsReturnsServiceItemUpdateRequest, InwardJobsFreeIssueMaterialsReturnsServicePaginatedItemsResponse, InwardJobsFreeIssueMaterialsReturnsServicePaginationReq, InwardJobsFreeIssueMaterialsReturnsServicePaginationResponse, InwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq, InwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest } from "./inward_jobs_free_issue_materials_returns.scailo_pb.js";
+import { InwardJobFreeIssueMaterialReturn, InwardJobFreeIssueMaterialReturnAncillaryParameters, InwardJobFreeIssueMaterialReturnItem, InwardJobFreeIssueMaterialReturnItemHistoryRequest, InwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest, InwardJobFreeIssueMaterialReturnItemsSearchRequest, InwardJobsFreeIssueMaterialsReturnsItemsList, InwardJobsFreeIssueMaterialsReturnsList, InwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSourceRequest, InwardJobsFreeIssueMaterialsReturnsServiceCountReq, InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest, InwardJobsFreeIssueMaterialsReturnsServiceFilterReq, InwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest, InwardJobsFreeIssueMaterialsReturnsServiceItemUpdateRequest, InwardJobsFreeIssueMaterialsReturnsServicePaginatedItemsResponse, InwardJobsFreeIssueMaterialsReturnsServicePaginationReq, InwardJobsFreeIssueMaterialsReturnsServicePaginationResponse, InwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq, InwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest } from "./inward_jobs_free_issue_materials_returns.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -367,6 +367,17 @@ export const InwardJobsFreeIssueMaterialsReturnsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: InwardJobFreeIssueMaterialReturn,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsReturnsService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: InwardJobFreeIssueMaterialReturnAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

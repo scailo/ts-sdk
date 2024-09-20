@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { GoodsDispatch, GoodsDispatchesItemsList, GoodsDispatchesList, GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest, GoodsDispatchesServiceAutofillRequest, GoodsDispatchesServiceCountReq, GoodsDispatchesServiceCreateRequest, GoodsDispatchesServiceFilterReq, GoodsDispatchesServiceItemCreateRequest, GoodsDispatchesServiceItemUpdateRequest, GoodsDispatchesServicePaginatedItemsResponse, GoodsDispatchesServicePaginationReq, GoodsDispatchesServicePaginationResponse, GoodsDispatchesServiceSearchAllReq, GoodsDispatchesServiceUpdateRequest, GoodsDispatchItem, GoodsDispatchItemHistoryRequest, GoodsDispatchItemProspectiveInfoRequest, GoodsDispatchItemsSearchRequest } from "./goods_dispatches.scailo_pb.js";
+import { GoodsDispatch, GoodsDispatchAncillaryParameters, GoodsDispatchesItemsList, GoodsDispatchesList, GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest, GoodsDispatchesServiceAutofillRequest, GoodsDispatchesServiceCountReq, GoodsDispatchesServiceCreateRequest, GoodsDispatchesServiceFilterReq, GoodsDispatchesServiceItemCreateRequest, GoodsDispatchesServiceItemUpdateRequest, GoodsDispatchesServicePaginatedItemsResponse, GoodsDispatchesServicePaginationReq, GoodsDispatchesServicePaginationResponse, GoodsDispatchesServiceSearchAllReq, GoodsDispatchesServiceUpdateRequest, GoodsDispatchItem, GoodsDispatchItemHistoryRequest, GoodsDispatchItemProspectiveInfoRequest, GoodsDispatchItemsSearchRequest } from "./goods_dispatches.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -378,6 +378,17 @@ export const GoodsDispatchesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: GoodsDispatch,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.GoodsDispatchesService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: GoodsDispatchAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

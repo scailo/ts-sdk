@@ -601,6 +601,56 @@ export class SalesInvoicesServiceAutofillRequest extends Message<SalesInvoicesSe
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.SalesInvoiceAncillaryParameters
+ */
+export class SalesInvoiceAncillaryParameters extends Message<SalesInvoiceAncillaryParameters> {
+  /**
+   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @generated from field: string ref_uuid = 213;
+   */
+  refUuid = "";
+
+  /**
+   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @generated from field: string currency_uuid = 214;
+   */
+  currencyUuid = "";
+
+  constructor(data?: PartialMessage<SalesInvoiceAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesInvoiceAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 214, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoiceAncillaryParameters {
+    return new SalesInvoiceAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesInvoiceAncillaryParameters {
+    return new SalesInvoiceAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesInvoiceAncillaryParameters {
+    return new SalesInvoiceAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesInvoiceAncillaryParameters | PlainMessage<SalesInvoiceAncillaryParameters> | undefined, b: SalesInvoiceAncillaryParameters | PlainMessage<SalesInvoiceAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(SalesInvoiceAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.SalesInvoice

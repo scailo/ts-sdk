@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { SalesInvoice, SalesInvoiceDispatchedStatisticsList, SalesInvoiceItem, SalesInvoiceItemHistoryRequest, SalesInvoiceItemProspectiveInfoRequest, SalesInvoiceItemsList, SalesInvoiceItemsSearchRequest, SalesInvoiceReference, SalesInvoiceReferencesList, SalesInvoicesList, SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest, SalesInvoicesServiceAutofillRequest, SalesInvoicesServiceCountReq, SalesInvoicesServiceCreateRequest, SalesInvoicesServiceFilterReq, SalesInvoicesServiceItemCreateRequest, SalesInvoicesServiceItemUpdateRequest, SalesInvoicesServicePaginatedItemsResponse, SalesInvoicesServicePaginationReq, SalesInvoicesServicePaginationResponse, SalesInvoicesServiceReferenceCreateRequest, SalesInvoicesServiceSearchAllReq, SalesInvoicesServiceUpdateRequest } from "./sales_invoices.scailo_pb.js";
+import { SalesInvoice, SalesInvoiceAncillaryParameters, SalesInvoiceDispatchedStatisticsList, SalesInvoiceItem, SalesInvoiceItemHistoryRequest, SalesInvoiceItemProspectiveInfoRequest, SalesInvoiceItemsList, SalesInvoiceItemsSearchRequest, SalesInvoiceReference, SalesInvoiceReferencesList, SalesInvoicesList, SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest, SalesInvoicesServiceAutofillRequest, SalesInvoicesServiceCountReq, SalesInvoicesServiceCreateRequest, SalesInvoicesServiceFilterReq, SalesInvoicesServiceItemCreateRequest, SalesInvoicesServiceItemUpdateRequest, SalesInvoicesServicePaginatedItemsResponse, SalesInvoicesServicePaginationReq, SalesInvoicesServicePaginationResponse, SalesInvoicesServiceReferenceCreateRequest, SalesInvoicesServiceSearchAllReq, SalesInvoicesServiceUpdateRequest } from "./sales_invoices.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -445,6 +445,17 @@ export const SalesInvoicesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: SalesInvoice,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.SalesInvoicesService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: SalesInvoiceAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

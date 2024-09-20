@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { QuotationResponse, QuotationResponseItem, QuotationResponseItemHistoryRequest, QuotationResponseItemsSearchRequest, QuotationsResponsesItemsList, QuotationsResponsesList, QuotationsResponsesServiceCountReq, QuotationsResponsesServiceCreateRequest, QuotationsResponsesServiceFilterReq, QuotationsResponsesServiceItemCreateRequest, QuotationsResponsesServiceItemsFilterReq, QuotationsResponsesServiceItemUpdateRequest, QuotationsResponsesServicePaginatedItemsResponse, QuotationsResponsesServicePaginationReq, QuotationsResponsesServicePaginationResponse, QuotationsResponsesServiceSearchAllReq, QuotationsResponsesServiceUpdateRequest } from "./quotations_responses.scailo_pb.js";
+import { QuotationResponse, QuotationResponseAncillaryParameters, QuotationResponseItem, QuotationResponseItemHistoryRequest, QuotationResponseItemsSearchRequest, QuotationsResponsesItemsList, QuotationsResponsesList, QuotationsResponsesServiceCountReq, QuotationsResponsesServiceCreateRequest, QuotationsResponsesServiceFilterReq, QuotationsResponsesServiceItemCreateRequest, QuotationsResponsesServiceItemsFilterReq, QuotationsResponsesServiceItemUpdateRequest, QuotationsResponsesServicePaginatedItemsResponse, QuotationsResponsesServicePaginationReq, QuotationsResponsesServicePaginationResponse, QuotationsResponsesServiceSearchAllReq, QuotationsResponsesServiceUpdateRequest } from "./quotations_responses.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -344,6 +344,17 @@ export const QuotationsResponsesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: QuotationResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.QuotationsResponsesService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: QuotationResponseAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

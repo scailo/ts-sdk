@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { InwardJob, InwardJobContact, InwardJobContactsList, InwardJobInwardItem, InwardJobInwardItemHistoryRequest, InwardJobInwardItemProspectiveInfoRequest, InwardJobInwardItemsSearchRequest, InwardJobOutwardItem, InwardJobOutwardItemHistoryRequest, InwardJobOutwardItemProspectiveInfoRequest, InwardJobOutwardItemsSearchRequest, InwardJobsInwardItemsList, InwardJobsList, InwardJobsOutwardItemsList, InwardJobsServiceAutofillRequest, InwardJobsServiceContactCreateRequest, InwardJobsServiceCountReq, InwardJobsServiceCreateRequest, InwardJobsServiceFilterReq, InwardJobsServiceInwardItemCreateRequest, InwardJobsServiceInwardItemUpdateRequest, InwardJobsServiceMultipleInwardItemsCreateRequest, InwardJobsServiceMultipleOutwardItemsCreateRequest, InwardJobsServiceOutwardItemCreateRequest, InwardJobsServiceOutwardItemUpdateRequest, InwardJobsServicePaginatedInwardItemsResponse, InwardJobsServicePaginatedOutwardItemsResponse, InwardJobsServicePaginationReq, InwardJobsServicePaginationResponse, InwardJobsServiceSearchAllReq, InwardJobsServiceUpdateRequest } from "./inward_jobs.scailo_pb.js";
+import { InwardJob, InwardJobAncillaryParameters, InwardJobContact, InwardJobContactsList, InwardJobInwardItem, InwardJobInwardItemHistoryRequest, InwardJobInwardItemProspectiveInfoRequest, InwardJobInwardItemsSearchRequest, InwardJobOutwardItem, InwardJobOutwardItemHistoryRequest, InwardJobOutwardItemProspectiveInfoRequest, InwardJobOutwardItemsSearchRequest, InwardJobsInwardItemsList, InwardJobsList, InwardJobsOutwardItemsList, InwardJobsServiceAutofillRequest, InwardJobsServiceContactCreateRequest, InwardJobsServiceCountReq, InwardJobsServiceCreateRequest, InwardJobsServiceFilterReq, InwardJobsServiceInwardItemCreateRequest, InwardJobsServiceInwardItemUpdateRequest, InwardJobsServiceMultipleInwardItemsCreateRequest, InwardJobsServiceMultipleOutwardItemsCreateRequest, InwardJobsServiceOutwardItemCreateRequest, InwardJobsServiceOutwardItemUpdateRequest, InwardJobsServicePaginatedInwardItemsResponse, InwardJobsServicePaginatedOutwardItemsResponse, InwardJobsServicePaginationReq, InwardJobsServicePaginationResponse, InwardJobsServiceSearchAllReq, InwardJobsServiceUpdateRequest } from "./inward_jobs.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -642,6 +642,17 @@ export const InwardJobsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: InwardJob,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.InwardJobsService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: InwardJobAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

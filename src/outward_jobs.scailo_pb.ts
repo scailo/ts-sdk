@@ -583,6 +583,56 @@ export class OutwardJobsServiceAutofillRequest extends Message<OutwardJobsServic
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.OutwardJobAncillaryParameters
+ */
+export class OutwardJobAncillaryParameters extends Message<OutwardJobAncillaryParameters> {
+  /**
+   * The UUID of the consignee location (the UUID of the associated consignee_location_id)
+   *
+   * @generated from field: string consignee_location_uuid = 212;
+   */
+  consigneeLocationUuid = "";
+
+  /**
+   * The UUID of the vendor (the UUID of the associated vendor_id)
+   *
+   * @generated from field: string vendor_uuid = 213;
+   */
+  vendorUuid = "";
+
+  constructor(data?: PartialMessage<OutwardJobAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.OutwardJobAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 212, name: "consignee_location_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 213, name: "vendor_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobAncillaryParameters {
+    return new OutwardJobAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobAncillaryParameters {
+    return new OutwardJobAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobAncillaryParameters {
+    return new OutwardJobAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: OutwardJobAncillaryParameters | PlainMessage<OutwardJobAncillaryParameters> | undefined, b: OutwardJobAncillaryParameters | PlainMessage<OutwardJobAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(OutwardJobAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.OutwardJob

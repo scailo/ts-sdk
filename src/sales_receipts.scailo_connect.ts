@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { SaleReceipt, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
+import { SaleReceipt, SaleReceiptAncillaryParameters, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -193,6 +193,17 @@ export const SalesReceiptsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: SaleReceipt,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.SalesReceiptsService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: SaleReceiptAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

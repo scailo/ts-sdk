@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { InwardJobFreeIssueMaterial, InwardJobFreeIssueMaterialItem, InwardJobFreeIssueMaterialItemHistoryRequest, InwardJobFreeIssueMaterialItemProspectiveInfoRequest, InwardJobFreeIssueMaterialItemsSearchRequest, InwardJobsFreeIssueMaterialsItemsList, InwardJobsFreeIssueMaterialsList, InwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest, InwardJobsFreeIssueMaterialsServiceAutofillRequest, InwardJobsFreeIssueMaterialsServiceCountReq, InwardJobsFreeIssueMaterialsServiceCreateRequest, InwardJobsFreeIssueMaterialsServiceFilterReq, InwardJobsFreeIssueMaterialsServiceItemCreateRequest, InwardJobsFreeIssueMaterialsServiceItemUpdateRequest, InwardJobsFreeIssueMaterialsServicePaginatedItemsResponse, InwardJobsFreeIssueMaterialsServicePaginationReq, InwardJobsFreeIssueMaterialsServicePaginationResponse, InwardJobsFreeIssueMaterialsServiceSearchAllReq, InwardJobsFreeIssueMaterialsServiceUpdateRequest } from "./inward_jobs_free_issue_materials.scailo_pb.js";
+import { InwardJobFreeIssueMaterial, InwardJobFreeIssueMaterialAncillaryParameters, InwardJobFreeIssueMaterialItem, InwardJobFreeIssueMaterialItemHistoryRequest, InwardJobFreeIssueMaterialItemProspectiveInfoRequest, InwardJobFreeIssueMaterialItemsSearchRequest, InwardJobsFreeIssueMaterialsItemsList, InwardJobsFreeIssueMaterialsList, InwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest, InwardJobsFreeIssueMaterialsServiceAutofillRequest, InwardJobsFreeIssueMaterialsServiceCountReq, InwardJobsFreeIssueMaterialsServiceCreateRequest, InwardJobsFreeIssueMaterialsServiceFilterReq, InwardJobsFreeIssueMaterialsServiceItemCreateRequest, InwardJobsFreeIssueMaterialsServiceItemUpdateRequest, InwardJobsFreeIssueMaterialsServicePaginatedItemsResponse, InwardJobsFreeIssueMaterialsServicePaginationReq, InwardJobsFreeIssueMaterialsServicePaginationResponse, InwardJobsFreeIssueMaterialsServiceSearchAllReq, InwardJobsFreeIssueMaterialsServiceUpdateRequest } from "./inward_jobs_free_issue_materials.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -367,6 +367,17 @@ export const InwardJobsFreeIssueMaterialsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: InwardJobFreeIssueMaterial,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: InwardJobFreeIssueMaterialAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

@@ -521,6 +521,56 @@ export class QuotationsRequestsServiceAutofillRequest extends Message<Quotations
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.QuotationRequestAncillaryParameters
+ */
+export class QuotationRequestAncillaryParameters extends Message<QuotationRequestAncillaryParameters> {
+  /**
+   * The UUID of the purchase_enquiry_id (the UUID of the associated purchase_enquiry_id)
+   *
+   * @generated from field: string purchase_enquiry_uuid = 212;
+   */
+  purchaseEnquiryUuid = "";
+
+  /**
+   * The UUID of the currency (the UUID of the associated currency_id)
+   *
+   * @generated from field: string currency_uuid = 214;
+   */
+  currencyUuid = "";
+
+  constructor(data?: PartialMessage<QuotationRequestAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuotationRequestAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 212, name: "purchase_enquiry_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 214, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuotationRequestAncillaryParameters {
+    return new QuotationRequestAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationRequestAncillaryParameters {
+    return new QuotationRequestAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationRequestAncillaryParameters {
+    return new QuotationRequestAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuotationRequestAncillaryParameters | PlainMessage<QuotationRequestAncillaryParameters> | undefined, b: QuotationRequestAncillaryParameters | PlainMessage<QuotationRequestAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(QuotationRequestAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.QuotationRequest

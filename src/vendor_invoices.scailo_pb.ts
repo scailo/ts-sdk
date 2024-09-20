@@ -601,6 +601,56 @@ export class VendorInvoicesServiceAutofillRequest extends Message<VendorInvoices
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.VendorInvoiceAncillaryParameters
+ */
+export class VendorInvoiceAncillaryParameters extends Message<VendorInvoiceAncillaryParameters> {
+  /**
+   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @generated from field: string ref_uuid = 213;
+   */
+  refUuid = "";
+
+  /**
+   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @generated from field: string currency_uuid = 214;
+   */
+  currencyUuid = "";
+
+  constructor(data?: PartialMessage<VendorInvoiceAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorInvoiceAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 214, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorInvoiceAncillaryParameters {
+    return new VendorInvoiceAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorInvoiceAncillaryParameters {
+    return new VendorInvoiceAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorInvoiceAncillaryParameters {
+    return new VendorInvoiceAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorInvoiceAncillaryParameters | PlainMessage<VendorInvoiceAncillaryParameters> | undefined, b: VendorInvoiceAncillaryParameters | PlainMessage<VendorInvoiceAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(VendorInvoiceAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.VendorInvoice

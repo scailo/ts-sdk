@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { CreditNote, CreditNoteItem, CreditNoteItemHistoryRequest, CreditNoteItemProspectiveInfoRequest, CreditNoteItemsList, CreditNoteItemsSearchRequest, CreditNoteReference, CreditNoteReferencesList, CreditNotesList, CreditNotesServiceAlreadyAddedQuantityForSourceRequest, CreditNotesServiceAutofillRequest, CreditNotesServiceCountReq, CreditNotesServiceCreateRequest, CreditNotesServiceFilterReq, CreditNotesServiceItemCreateRequest, CreditNotesServiceItemUpdateRequest, CreditNotesServicePaginatedItemsResponse, CreditNotesServicePaginationReq, CreditNotesServicePaginationResponse, CreditNotesServiceReferenceCreateRequest, CreditNotesServiceSearchAllReq, CreditNotesServiceUpdateRequest } from "./credit_notes.scailo_pb.js";
+import { CreditNote, CreditNoteAncillaryParameters, CreditNoteItem, CreditNoteItemHistoryRequest, CreditNoteItemProspectiveInfoRequest, CreditNoteItemsList, CreditNoteItemsSearchRequest, CreditNoteReference, CreditNoteReferencesList, CreditNotesList, CreditNotesServiceAlreadyAddedQuantityForSourceRequest, CreditNotesServiceAutofillRequest, CreditNotesServiceCountReq, CreditNotesServiceCreateRequest, CreditNotesServiceFilterReq, CreditNotesServiceItemCreateRequest, CreditNotesServiceItemUpdateRequest, CreditNotesServicePaginatedItemsResponse, CreditNotesServicePaginationReq, CreditNotesServicePaginationResponse, CreditNotesServiceReferenceCreateRequest, CreditNotesServiceSearchAllReq, CreditNotesServiceUpdateRequest } from "./credit_notes.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -411,6 +411,17 @@ export const CreditNotesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: CreditNote,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.CreditNotesService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: CreditNoteAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

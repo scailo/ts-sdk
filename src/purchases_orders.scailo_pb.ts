@@ -791,6 +791,72 @@ export class PurchasesOrdersServiceAutofillRequest extends Message<PurchasesOrde
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.PurchaseOrderAncillaryParameters
+ */
+export class PurchaseOrderAncillaryParameters extends Message<PurchaseOrderAncillaryParameters> {
+  /**
+   * The UUID of the consignee location (the UUID of the associated consignee_location_id)
+   *
+   * @generated from field: string consignee_location_uuid = 212;
+   */
+  consigneeLocationUuid = "";
+
+  /**
+   * The UUID of the buyer location (the UUID of the associated buyer_location_id)
+   *
+   * @generated from field: string buyer_location_uuid = 213;
+   */
+  buyerLocationUuid = "";
+
+  /**
+   * The UUID of the vendor (the UUID of the associated vendor_id)
+   *
+   * @generated from field: string vendor_uuid = 214;
+   */
+  vendorUuid = "";
+
+  /**
+   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @generated from field: string currency_uuid = 215;
+   */
+  currencyUuid = "";
+
+  constructor(data?: PartialMessage<PurchaseOrderAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchaseOrderAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 212, name: "consignee_location_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 213, name: "buyer_location_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 214, name: "vendor_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 215, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderAncillaryParameters {
+    return new PurchaseOrderAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderAncillaryParameters {
+    return new PurchaseOrderAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderAncillaryParameters {
+    return new PurchaseOrderAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchaseOrderAncillaryParameters | PlainMessage<PurchaseOrderAncillaryParameters> | undefined, b: PurchaseOrderAncillaryParameters | PlainMessage<PurchaseOrderAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(PurchaseOrderAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.PurchaseOrder

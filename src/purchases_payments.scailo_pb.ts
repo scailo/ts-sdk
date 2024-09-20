@@ -368,6 +368,72 @@ export class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaym
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.PurchasePaymentAncillaryParameters
+ */
+export class PurchasePaymentAncillaryParameters extends Message<PurchasePaymentAncillaryParameters> {
+  /**
+   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @generated from field: string ref_uuid = 213;
+   */
+  refUuid = "";
+
+  /**
+   * The UUID of the vendor (the UUID of the associated vendor_id)
+   *
+   * @generated from field: string vendor_uuid = 214;
+   */
+  vendorUuid = "";
+
+  /**
+   * The UUID of the bank account (the UUID of the bank_account_id)
+   *
+   * @generated from field: string bank_account_uuid = 215;
+   */
+  bankAccountUuid = "";
+
+  /**
+   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @generated from field: string currency_uuid = 216;
+   */
+  currencyUuid = "";
+
+  constructor(data?: PartialMessage<PurchasePaymentAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchasePaymentAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 214, name: "vendor_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 215, name: "bank_account_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 216, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasePaymentAncillaryParameters {
+    return new PurchasePaymentAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasePaymentAncillaryParameters {
+    return new PurchasePaymentAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasePaymentAncillaryParameters {
+    return new PurchasePaymentAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchasePaymentAncillaryParameters | PlainMessage<PurchasePaymentAncillaryParameters> | undefined, b: PurchasePaymentAncillaryParameters | PlainMessage<PurchasePaymentAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(PurchasePaymentAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.PurchasePayment

@@ -663,6 +663,64 @@ export class InwardJobsServiceAutofillRequest extends Message<InwardJobsServiceA
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.InwardJobAncillaryParameters
+ */
+export class InwardJobAncillaryParameters extends Message<InwardJobAncillaryParameters> {
+  /**
+   * The UUID of the consignee client (the UUID of the associated consignee_client_id)
+   *
+   * @generated from field: string consignee_client_uuid = 212;
+   */
+  consigneeClientUuid = "";
+
+  /**
+   * The UUID of the buyer client (the UUID of the associated buyer_client_id)
+   *
+   * @generated from field: string buyer_client_uuid = 213;
+   */
+  buyerClientUuid = "";
+
+  /**
+   * The UUID of the location (the UUID of the associated location_uuid)
+   *
+   * @generated from field: string location_uuid = 214;
+   */
+  locationUuid = "";
+
+  constructor(data?: PartialMessage<InwardJobAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.InwardJobAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 212, name: "consignee_client_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 213, name: "buyer_client_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 214, name: "location_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobAncillaryParameters {
+    return new InwardJobAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InwardJobAncillaryParameters {
+    return new InwardJobAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InwardJobAncillaryParameters {
+    return new InwardJobAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: InwardJobAncillaryParameters | PlainMessage<InwardJobAncillaryParameters> | undefined, b: InwardJobAncillaryParameters | PlainMessage<InwardJobAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(InwardJobAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.InwardJob

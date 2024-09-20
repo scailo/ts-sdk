@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { SalesReturn, SalesReturnItem, SalesReturnItemHistoryRequest, SalesReturnItemProspectiveInfoRequest, SalesReturnItemsSearchRequest, SalesReturnsItemsList, SalesReturnsList, SalesReturnsServiceAlreadyAddedQuantityForSourceRequest, SalesReturnsServiceCountReq, SalesReturnsServiceCreateRequest, SalesReturnsServiceFilterReq, SalesReturnsServiceItemCreateRequest, SalesReturnsServiceItemUpdateRequest, SalesReturnsServicePaginatedItemsResponse, SalesReturnsServicePaginationReq, SalesReturnsServicePaginationResponse, SalesReturnsServiceSearchAllReq, SalesReturnsServiceUpdateRequest } from "./sales_returns.scailo_pb.js";
+import { SalesReturn, SalesReturnAncillaryParameters, SalesReturnItem, SalesReturnItemHistoryRequest, SalesReturnItemProspectiveInfoRequest, SalesReturnItemsSearchRequest, SalesReturnsItemsList, SalesReturnsList, SalesReturnsServiceAlreadyAddedQuantityForSourceRequest, SalesReturnsServiceCountReq, SalesReturnsServiceCreateRequest, SalesReturnsServiceFilterReq, SalesReturnsServiceItemCreateRequest, SalesReturnsServiceItemUpdateRequest, SalesReturnsServicePaginatedItemsResponse, SalesReturnsServicePaginationReq, SalesReturnsServicePaginationResponse, SalesReturnsServiceSearchAllReq, SalesReturnsServiceUpdateRequest } from "./sales_returns.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
@@ -367,6 +367,17 @@ export const SalesReturnsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: SalesReturn,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.SalesReturnsService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: SalesReturnAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**

@@ -368,6 +368,72 @@ export class SalesReceiptsServiceUpdateRequest extends Message<SalesReceiptsServ
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.SaleReceiptAncillaryParameters
+ */
+export class SaleReceiptAncillaryParameters extends Message<SaleReceiptAncillaryParameters> {
+  /**
+   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @generated from field: string ref_uuid = 213;
+   */
+  refUuid = "";
+
+  /**
+   * The UUID of the client (the UUID of the associated client_id)
+   *
+   * @generated from field: string client_uuid = 214;
+   */
+  clientUuid = "";
+
+  /**
+   * The UUID of the bank account (the UUID of the bank_account_id)
+   *
+   * @generated from field: string bank_account_uuid = 215;
+   */
+  bankAccountUuid = "";
+
+  /**
+   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @generated from field: string currency_uuid = 216;
+   */
+  currencyUuid = "";
+
+  constructor(data?: PartialMessage<SaleReceiptAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SaleReceiptAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 214, name: "client_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 215, name: "bank_account_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 216, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SaleReceiptAncillaryParameters {
+    return new SaleReceiptAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SaleReceiptAncillaryParameters {
+    return new SaleReceiptAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SaleReceiptAncillaryParameters {
+    return new SaleReceiptAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SaleReceiptAncillaryParameters | PlainMessage<SaleReceiptAncillaryParameters> | undefined, b: SaleReceiptAncillaryParameters | PlainMessage<SaleReceiptAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(SaleReceiptAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.SaleReceipt

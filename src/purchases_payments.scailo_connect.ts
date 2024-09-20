@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { PurchasePayment, PurchasesPaymentsList, PurchasesPaymentsServiceCountReq, PurchasesPaymentsServiceCreateRequest, PurchasesPaymentsServiceFilterReq, PurchasesPaymentsServicePaginationReq, PurchasesPaymentsServicePaginationResponse, PurchasesPaymentsServiceSearchAllReq, PurchasesPaymentsServiceUpdateRequest } from "./purchases_payments.scailo_pb.js";
+import { PurchasePayment, PurchasePaymentAncillaryParameters, PurchasesPaymentsList, PurchasesPaymentsServiceCountReq, PurchasesPaymentsServiceCreateRequest, PurchasesPaymentsServiceFilterReq, PurchasesPaymentsServicePaginationReq, PurchasesPaymentsServicePaginationResponse, PurchasesPaymentsServiceSearchAllReq, PurchasesPaymentsServiceUpdateRequest } from "./purchases_payments.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -193,6 +193,17 @@ export const PurchasesPaymentsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: PurchasePayment,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     *
+     * @generated from rpc Scailo.PurchasesPaymentsService.ViewAncillaryParametersByUUID
+     */
+    viewAncillaryParametersByUUID: {
+      name: "ViewAncillaryParametersByUUID",
+      I: IdentifierUUID,
+      O: PurchasePaymentAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**
