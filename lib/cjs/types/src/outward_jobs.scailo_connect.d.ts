@@ -606,13 +606,13 @@ export declare const OutwardJobsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all contacts for given outward job ID
+         * View all contacts for given outward job UUID
          *
          * @generated from rpc Scailo.OutwardJobsService.ViewOutwardJobContacts
          */
         readonly viewOutwardJobContacts: {
             readonly name: "ViewOutwardJobContacts";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof OutwardJobContactsList;
             readonly kind: MethodKind.Unary;
         };

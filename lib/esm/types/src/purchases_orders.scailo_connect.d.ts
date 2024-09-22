@@ -420,13 +420,13 @@ export declare const PurchasesOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all contacts for given purchase order ID
+         * View all contacts for given purchase order UUID
          *
          * @generated from rpc Scailo.PurchasesOrdersService.ViewPurchaseOrderContacts
          */
         readonly viewPurchaseOrderContacts: {
             readonly name: "ViewPurchaseOrderContacts";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof PurchaseOrderContactsList;
             readonly kind: MethodKind.Unary;
         };

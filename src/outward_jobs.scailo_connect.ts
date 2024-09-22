@@ -612,13 +612,13 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all contacts for given outward job ID
+     * View all contacts for given outward job UUID
      *
      * @generated from rpc Scailo.OutwardJobsService.ViewOutwardJobContacts
      */
     viewOutwardJobContacts: {
       name: "ViewOutwardJobContacts",
-      I: Identifier,
+      I: IdentifierUUID,
       O: OutwardJobContactsList,
       kind: MethodKind.Unary,
     },

@@ -231,13 +231,13 @@ export declare const ProjectsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all contacts for given project ID
+         * View all contacts for given project UUID
          *
          * @generated from rpc Scailo.ProjectsService.ViewProjectContacts
          */
         readonly viewProjectContacts: {
             readonly name: "ViewProjectContacts";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ProjectContactsList;
             readonly kind: MethodKind.Unary;
         };

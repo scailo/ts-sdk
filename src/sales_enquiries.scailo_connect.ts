@@ -403,13 +403,13 @@ export const SalesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all contacts for given sales enquiry ID
+     * View all contacts for given sales enquiry UUID
      *
      * @generated from rpc Scailo.SalesEnquiriesService.ViewSalesEnquiryContacts
      */
     viewSalesEnquiryContacts: {
       name: "ViewSalesEnquiryContacts",
-      I: Identifier,
+      I: IdentifierUUID,
       O: SalesEnquiryContactsList,
       kind: MethodKind.Unary,
     },

@@ -426,13 +426,13 @@ export const PurchasesOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all contacts for given purchase order ID
+     * View all contacts for given purchase order UUID
      *
      * @generated from rpc Scailo.PurchasesOrdersService.ViewPurchaseOrderContacts
      */
     viewPurchaseOrderContacts: {
       name: "ViewPurchaseOrderContacts",
-      I: Identifier,
+      I: IdentifierUUID,
       O: PurchaseOrderContactsList,
       kind: MethodKind.Unary,
     },

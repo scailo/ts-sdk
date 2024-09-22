@@ -237,13 +237,13 @@ export const ProjectsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all contacts for given project ID
+     * View all contacts for given project UUID
      *
      * @generated from rpc Scailo.ProjectsService.ViewProjectContacts
      */
     viewProjectContacts: {
       name: "ViewProjectContacts",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ProjectContactsList,
       kind: MethodKind.Unary,
     },

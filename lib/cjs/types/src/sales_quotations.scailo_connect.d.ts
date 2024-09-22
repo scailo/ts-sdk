@@ -420,13 +420,13 @@ export declare const SalesQuotationsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all contacts for given sales quotation ID
+         * View all contacts for given sales quotation UUID
          *
          * @generated from rpc Scailo.SalesQuotationsService.ViewSalesQuotationContacts
          */
         readonly viewSalesQuotationContacts: {
             readonly name: "ViewSalesQuotationContacts";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof SalesQuotationContactsList;
             readonly kind: MethodKind.Unary;
         };

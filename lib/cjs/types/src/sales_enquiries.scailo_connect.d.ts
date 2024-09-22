@@ -397,13 +397,13 @@ export declare const SalesEnquiriesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all contacts for given sales enquiry ID
+         * View all contacts for given sales enquiry UUID
          *
          * @generated from rpc Scailo.SalesEnquiriesService.ViewSalesEnquiryContacts
          */
         readonly viewSalesEnquiryContacts: {
             readonly name: "ViewSalesEnquiryContacts";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof SalesEnquiryContactsList;
             readonly kind: MethodKind.Unary;
         };
