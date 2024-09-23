@@ -24,6 +24,7 @@ from message Scailo.OutwardJobContact
 
 - [approvalMetadata](OutwardJobContact.md#approvalmetadata)
 - [associateId](OutwardJobContact.md#associateid)
+- [associateUuid](OutwardJobContact.md#associateuuid)
 - [entityUuid](OutwardJobContact.md#entityuuid)
 - [metadata](OutwardJobContact.md#metadata)
 - [needApproval](OutwardJobContact.md#needapproval)
@@ -72,7 +73,7 @@ Message\&lt;OutwardJobContact\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3194
+src/outward_jobs.scailo_pb.ts:3201
 
 ## Properties
 
@@ -105,6 +106,22 @@ from field: uint64 associate_id = 11;
 #### Defined in
 
 src/outward_jobs.scailo_pb.ts:3192
+
+___
+
+### associateUuid
+
+• **associateUuid**: `string` = `""`
+
+Stores the UUID of the associate
+
+**`Generated`**
+
+from field: string associate_uuid = 211;
+
+#### Defined in
+
+src/outward_jobs.scailo_pb.ts:3199
 
 ___
 
@@ -194,7 +211,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3201
+src/outward_jobs.scailo_pb.ts:3208
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3199
+src/outward_jobs.scailo_pb.ts:3206
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3200
+src/outward_jobs.scailo_pb.ts:3207
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3223
+src/outward_jobs.scailo_pb.ts:3231
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3211
+src/outward_jobs.scailo_pb.ts:3219
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3215
+src/outward_jobs.scailo_pb.ts:3223
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3219
+src/outward_jobs.scailo_pb.ts:3227

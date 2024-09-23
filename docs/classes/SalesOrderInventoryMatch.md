@@ -71,7 +71,7 @@ Message\&lt;SalesOrderInventoryMatch\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3329
+src/sales_orders.scailo_pb.ts:3337
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 credited = 14;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3327
+src/sales_orders.scailo_pb.ts:3335
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 dispatched = 11;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3306
+src/sales_orders.scailo_pb.ts:3314
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3292
+src/sales_orders.scailo_pb.ts:3300
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 invoiced = 12;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3313
+src/sales_orders.scailo_pb.ts:3321
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 ordered = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3299
+src/sales_orders.scailo_pb.ts:3307
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 returned = 13;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3320
+src/sales_orders.scailo_pb.ts:3328
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3336
+src/sales_orders.scailo_pb.ts:3344
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3334
+src/sales_orders.scailo_pb.ts:3342
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3335
+src/sales_orders.scailo_pb.ts:3343
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3357
+src/sales_orders.scailo_pb.ts:3365
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3345
+src/sales_orders.scailo_pb.ts:3353
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3349
+src/sales_orders.scailo_pb.ts:3357
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3353
+src/sales_orders.scailo_pb.ts:3361

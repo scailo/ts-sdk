@@ -24,6 +24,7 @@ from message Scailo.ProjectContact
 
 - [approvalMetadata](ProjectContact.md#approvalmetadata)
 - [employeeId](ProjectContact.md#employeeid)
+- [employeeUuid](ProjectContact.md#employeeuuid)
 - [entityUuid](ProjectContact.md#entityuuid)
 - [metadata](ProjectContact.md#metadata)
 - [needApproval](ProjectContact.md#needapproval)
@@ -72,7 +73,7 @@ Message\&lt;ProjectContact\&gt;.constructor
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1332
+src/projects.scailo_pb.ts:1339
 
 ## Properties
 
@@ -105,6 +106,22 @@ from field: uint64 employee_id = 11;
 #### Defined in
 
 src/projects.scailo_pb.ts:1330
+
+___
+
+### employeeUuid
+
+• **employeeUuid**: `string` = `""`
+
+Stores the UUID of the employee
+
+**`Generated`**
+
+from field: string employee_uuid = 211;
+
+#### Defined in
+
+src/projects.scailo_pb.ts:1337
 
 ___
 
@@ -194,7 +211,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1339
+src/projects.scailo_pb.ts:1346
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1337
+src/projects.scailo_pb.ts:1344
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1338
+src/projects.scailo_pb.ts:1345
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1361
+src/projects.scailo_pb.ts:1369
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1349
+src/projects.scailo_pb.ts:1357
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1353
+src/projects.scailo_pb.ts:1361
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1357
+src/projects.scailo_pb.ts:1365

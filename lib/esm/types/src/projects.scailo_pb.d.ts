@@ -895,6 +895,12 @@ export declare class ProjectContact extends Message<ProjectContact> {
      * @generated from field: uint64 employee_id = 11;
      */
     employeeId: bigint;
+    /**
+     * Stores the UUID of the employee
+     *
+     * @generated from field: string employee_uuid = 211;
+     */
+    employeeUuid: string;
     constructor(data?: PartialMessage<ProjectContact>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProjectContact";

@@ -24,6 +24,7 @@ from message Scailo.SalesOrderContact
 
 - [approvalMetadata](SalesOrderContact.md#approvalmetadata)
 - [associateId](SalesOrderContact.md#associateid)
+- [associateUuid](SalesOrderContact.md#associateuuid)
 - [entityUuid](SalesOrderContact.md#entityuuid)
 - [metadata](SalesOrderContact.md#metadata)
 - [needApproval](SalesOrderContact.md#needapproval)
@@ -72,7 +73,7 @@ Message\&lt;SalesOrderContact\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3088
+src/sales_orders.scailo_pb.ts:3095
 
 ## Properties
 
@@ -105,6 +106,22 @@ from field: uint64 associate_id = 11;
 #### Defined in
 
 src/sales_orders.scailo_pb.ts:3086
+
+___
+
+### associateUuid
+
+• **associateUuid**: `string` = `""`
+
+Stores the UUID of the associate
+
+**`Generated`**
+
+from field: string associate_uuid = 211;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3093
 
 ___
 
@@ -194,7 +211,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3095
+src/sales_orders.scailo_pb.ts:3102
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3093
+src/sales_orders.scailo_pb.ts:3100
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3094
+src/sales_orders.scailo_pb.ts:3101
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3117
+src/sales_orders.scailo_pb.ts:3125
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3105
+src/sales_orders.scailo_pb.ts:3113
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3109
+src/sales_orders.scailo_pb.ts:3117
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3113
+src/sales_orders.scailo_pb.ts:3121

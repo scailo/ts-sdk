@@ -2091,6 +2091,12 @@ export declare class OutwardJobContact extends Message<OutwardJobContact> {
      * @generated from field: uint64 associate_id = 11;
      */
     associateId: bigint;
+    /**
+     * Stores the UUID of the associate
+     *
+     * @generated from field: string associate_uuid = 211;
+     */
+    associateUuid: string;
     constructor(data?: PartialMessage<OutwardJobContact>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.OutwardJobContact";

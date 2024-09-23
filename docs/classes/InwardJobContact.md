@@ -24,6 +24,7 @@ from message Scailo.InwardJobContact
 
 - [approvalMetadata](InwardJobContact.md#approvalmetadata)
 - [associateId](InwardJobContact.md#associateid)
+- [associateUuid](InwardJobContact.md#associateuuid)
 - [entityUuid](InwardJobContact.md#entityuuid)
 - [inwardJobId](InwardJobContact.md#inwardjobid)
 - [metadata](InwardJobContact.md#metadata)
@@ -72,7 +73,7 @@ Message\&lt;InwardJobContact\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3498
+src/inward_jobs.scailo_pb.ts:3505
 
 ## Properties
 
@@ -105,6 +106,22 @@ from field: uint64 associate_id = 11;
 #### Defined in
 
 src/inward_jobs.scailo_pb.ts:3496
+
+___
+
+### associateUuid
+
+• **associateUuid**: `string` = `""`
+
+Stores the UUID of the associate
+
+**`Generated`**
+
+from field: string associate_uuid = 211;
+
+#### Defined in
+
+src/inward_jobs.scailo_pb.ts:3503
 
 ___
 
@@ -194,7 +211,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3505
+src/inward_jobs.scailo_pb.ts:3512
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3503
+src/inward_jobs.scailo_pb.ts:3510
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3504
+src/inward_jobs.scailo_pb.ts:3511
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3527
+src/inward_jobs.scailo_pb.ts:3535
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3515
+src/inward_jobs.scailo_pb.ts:3523
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3519
+src/inward_jobs.scailo_pb.ts:3527
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3523
+src/inward_jobs.scailo_pb.ts:3531

@@ -66,7 +66,7 @@ Message\&lt;ProjectContactsList\&gt;.constructor
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1380
+src/projects.scailo_pb.ts:1388
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ProjectContact list = 1;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1378
+src/projects.scailo_pb.ts:1386
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1387
+src/projects.scailo_pb.ts:1395
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1385
+src/projects.scailo_pb.ts:1393
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1386
+src/projects.scailo_pb.ts:1394
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1403
+src/projects.scailo_pb.ts:1411
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1391
+src/projects.scailo_pb.ts:1399
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1395
+src/projects.scailo_pb.ts:1403
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1399
+src/projects.scailo_pb.ts:1407

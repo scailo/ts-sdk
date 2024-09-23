@@ -1993,6 +1993,12 @@ export declare class SalesQuotationContact extends Message<SalesQuotationContact
      * @generated from field: uint64 associate_id = 11;
      */
     associateId: bigint;
+    /**
+     * Stores the UUID of the associate
+     *
+     * @generated from field: string associate_uuid = 211;
+     */
+    associateUuid: string;
     constructor(data?: PartialMessage<SalesQuotationContact>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesQuotationContact";

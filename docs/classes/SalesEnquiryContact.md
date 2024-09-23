@@ -24,6 +24,7 @@ from message Scailo.SalesEnquiryContact
 
 - [approvalMetadata](SalesEnquiryContact.md#approvalmetadata)
 - [associateId](SalesEnquiryContact.md#associateid)
+- [associateUuid](SalesEnquiryContact.md#associateuuid)
 - [entityUuid](SalesEnquiryContact.md#entityuuid)
 - [metadata](SalesEnquiryContact.md#metadata)
 - [needApproval](SalesEnquiryContact.md#needapproval)
@@ -72,7 +73,7 @@ Message\&lt;SalesEnquiryContact\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2350
+src/sales_enquiries.scailo_pb.ts:2357
 
 ## Properties
 
@@ -105,6 +106,22 @@ from field: uint64 associate_id = 11;
 #### Defined in
 
 src/sales_enquiries.scailo_pb.ts:2348
+
+___
+
+### associateUuid
+
+• **associateUuid**: `string` = `""`
+
+Stores the UUID of the associate
+
+**`Generated`**
+
+from field: string associate_uuid = 211;
+
+#### Defined in
+
+src/sales_enquiries.scailo_pb.ts:2355
 
 ___
 
@@ -194,7 +211,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2357
+src/sales_enquiries.scailo_pb.ts:2364
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2355
+src/sales_enquiries.scailo_pb.ts:2362
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2356
+src/sales_enquiries.scailo_pb.ts:2363
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2379
+src/sales_enquiries.scailo_pb.ts:2387
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2367
+src/sales_enquiries.scailo_pb.ts:2375
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2371
+src/sales_enquiries.scailo_pb.ts:2379
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2375
+src/sales_enquiries.scailo_pb.ts:2383

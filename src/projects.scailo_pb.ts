@@ -1329,6 +1329,13 @@ export class ProjectContact extends Message<ProjectContact> {
    */
   employeeId = protoInt64.zero;
 
+  /**
+   * Stores the UUID of the employee
+   *
+   * @generated from field: string employee_uuid = 211;
+   */
+  employeeUuid = "";
+
   constructor(data?: PartialMessage<ProjectContact>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1344,6 +1351,7 @@ export class ProjectContact extends Message<ProjectContact> {
     { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "employee_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 211, name: "employee_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProjectContact {

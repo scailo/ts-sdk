@@ -2347,6 +2347,13 @@ export class SalesEnquiryContact extends Message<SalesEnquiryContact> {
    */
   associateId = protoInt64.zero;
 
+  /**
+   * Stores the UUID of the associate
+   *
+   * @generated from field: string associate_uuid = 211;
+   */
+  associateUuid = "";
+
   constructor(data?: PartialMessage<SalesEnquiryContact>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2362,6 +2369,7 @@ export class SalesEnquiryContact extends Message<SalesEnquiryContact> {
     { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "sales_enquiry_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 211, name: "associate_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiryContact {

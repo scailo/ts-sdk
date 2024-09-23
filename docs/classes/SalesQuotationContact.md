@@ -24,6 +24,7 @@ from message Scailo.SalesQuotationContact
 
 - [approvalMetadata](SalesQuotationContact.md#approvalmetadata)
 - [associateId](SalesQuotationContact.md#associateid)
+- [associateUuid](SalesQuotationContact.md#associateuuid)
 - [entityUuid](SalesQuotationContact.md#entityuuid)
 - [metadata](SalesQuotationContact.md#metadata)
 - [needApproval](SalesQuotationContact.md#needapproval)
@@ -72,7 +73,7 @@ Message\&lt;SalesQuotationContact\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2936
+src/sales_quotations.scailo_pb.ts:2943
 
 ## Properties
 
@@ -105,6 +106,22 @@ from field: uint64 associate_id = 11;
 #### Defined in
 
 src/sales_quotations.scailo_pb.ts:2934
+
+___
+
+### associateUuid
+
+• **associateUuid**: `string` = `""`
+
+Stores the UUID of the associate
+
+**`Generated`**
+
+from field: string associate_uuid = 211;
+
+#### Defined in
+
+src/sales_quotations.scailo_pb.ts:2941
 
 ___
 
@@ -194,7 +211,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2943
+src/sales_quotations.scailo_pb.ts:2950
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2941
+src/sales_quotations.scailo_pb.ts:2948
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2942
+src/sales_quotations.scailo_pb.ts:2949
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2965
+src/sales_quotations.scailo_pb.ts:2973
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2953
+src/sales_quotations.scailo_pb.ts:2961
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2957
+src/sales_quotations.scailo_pb.ts:2965
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2961
+src/sales_quotations.scailo_pb.ts:2969

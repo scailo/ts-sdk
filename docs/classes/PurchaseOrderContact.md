@@ -24,6 +24,7 @@ from message Scailo.PurchaseOrderContact
 
 - [approvalMetadata](PurchaseOrderContact.md#approvalmetadata)
 - [associateId](PurchaseOrderContact.md#associateid)
+- [associateUuid](PurchaseOrderContact.md#associateuuid)
 - [entityUuid](PurchaseOrderContact.md#entityuuid)
 - [metadata](PurchaseOrderContact.md#metadata)
 - [needApproval](PurchaseOrderContact.md#needapproval)
@@ -72,7 +73,7 @@ Message\&lt;PurchaseOrderContact\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3056
+src/purchases_orders.scailo_pb.ts:3063
 
 ## Properties
 
@@ -105,6 +106,22 @@ from field: uint64 associate_id = 11;
 #### Defined in
 
 src/purchases_orders.scailo_pb.ts:3054
+
+___
+
+### associateUuid
+
+• **associateUuid**: `string` = `""`
+
+Stores the UUID of the associate
+
+**`Generated`**
+
+from field: string associate_uuid = 211;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:3061
 
 ___
 
@@ -194,7 +211,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3063
+src/purchases_orders.scailo_pb.ts:3070
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3061
+src/purchases_orders.scailo_pb.ts:3068
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3062
+src/purchases_orders.scailo_pb.ts:3069
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3085
+src/purchases_orders.scailo_pb.ts:3093
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3073
+src/purchases_orders.scailo_pb.ts:3081
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3077
+src/purchases_orders.scailo_pb.ts:3085
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3081
+src/purchases_orders.scailo_pb.ts:3089
