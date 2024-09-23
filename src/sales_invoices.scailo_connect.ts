@@ -355,7 +355,7 @@ export const SalesInvoicesService = {
      */
     downloadAsCSV: {
       name: "DownloadAsCSV",
-      I: Identifier,
+      I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,
     },

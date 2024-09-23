@@ -366,7 +366,7 @@ export const PurchasesIndentsService = {
      */
     downloadAsCSV: {
       name: "DownloadAsCSV",
-      I: Identifier,
+      I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,
     },

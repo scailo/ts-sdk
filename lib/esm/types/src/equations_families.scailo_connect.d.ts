@@ -330,7 +330,7 @@ export declare const EquationsFamiliesService: {
          */
         readonly downloadAsCSV: {
             readonly name: "DownloadAsCSV";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
