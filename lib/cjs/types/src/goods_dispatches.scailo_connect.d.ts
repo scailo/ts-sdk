@@ -453,6 +453,17 @@ export declare const GoodsDispatchesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Download the label for the goods dispatch with the given IdentifierUUID
+         *
+         * @generated from rpc Scailo.GoodsDispatchesService.DownloadLabelByUUID
+         */
+        readonly downloadLabelByUUID: {
+            readonly name: "DownloadLabelByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View the associated sales invoice ID that is denoted by the identifier in the response for the goods dispatch that is denoted by the identifier in the request
          *
          * @generated from rpc Scailo.GoodsDispatchesService.ViewAssociatedSalesInvoiceID

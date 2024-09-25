@@ -387,7 +387,7 @@ export const OutwardJobsService = {
      */
     downloadInwardItemsCSVTemplate: {
       name: "DownloadInwardItemsCSVTemplate",
-      I: Identifier,
+      I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,
     },
@@ -552,7 +552,7 @@ export const OutwardJobsService = {
      */
     downloadOutwardItemsCSVTemplate: {
       name: "DownloadOutwardItemsCSVTemplate",
-      I: Identifier,
+      I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,
     },

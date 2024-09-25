@@ -469,6 +469,17 @@ export const SalesReturnsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Download the label for the sales return with the given IdentifierUUID
+     *
+     * @generated from rpc Scailo.SalesReturnsService.DownloadLabelByUUID
+     */
+    downloadLabelByUUID: {
+      name: "DownloadLabelByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all that match the given search key
      *
      * @generated from rpc Scailo.SalesReturnsService.SearchAll

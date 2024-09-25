@@ -463,6 +463,17 @@ export declare const PurchasesReturnsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Download the label for the purchase return with the given IdentifierUUID
+         *
+         * @generated from rpc Scailo.PurchasesReturnsService.DownloadLabelByUUID
+         */
+        readonly downloadLabelByUUID: {
+            readonly name: "DownloadLabelByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all that match the given search key
          *
          * @generated from rpc Scailo.PurchasesReturnsService.SearchAll

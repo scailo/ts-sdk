@@ -1,5 +1,5 @@
 import { StockAudit, StockAuditItem, StockAuditItemHistoryRequest, StockAuditItemProspectiveInfoRequest, StockAuditItemsSearchRequest, StockAuditsItemsList, StockAuditsList, StockAuditsServiceCountReq, StockAuditsServiceCreateRequest, StockAuditsServiceFilterReq, StockAuditsServiceItemCreateRequest, StockAuditsServiceItemUpdateRequest, StockAuditsServicePaginatedItemsResponse, StockAuditsServicePaginationReq, StockAuditsServicePaginationResponse, StockAuditsServiceSearchAllReq, StockAuditsServiceUpdateRequest } from "./stock_audits.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -405,6 +405,17 @@ export declare const StockAuditsService: {
             readonly name: "ViewProspectiveStockAuditItem";
             readonly I: typeof StockAuditItemProspectiveInfoRequest;
             readonly O: typeof StockAuditsServiceItemCreateRequest;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download the label for the stock audit with the given IdentifierUUID
+         *
+         * @generated from rpc Scailo.StockAuditsService.DownloadLabelByUUID
+         */
+        readonly downloadLabelByUUID: {
+            readonly name: "DownloadLabelByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
         /**

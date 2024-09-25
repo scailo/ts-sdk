@@ -448,6 +448,17 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Download the label for the outward job free issue material return with the given IdentifierUUID
+     *
+     * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsReturnsService.DownloadLabelByUUID
+     */
+    downloadLabelByUUID: {
+      name: "DownloadLabelByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View already added quantities
      *
      * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsReturnsService.ViewAddedFamilyQuantityForSource

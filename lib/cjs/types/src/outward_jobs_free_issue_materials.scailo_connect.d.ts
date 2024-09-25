@@ -453,6 +453,17 @@ export declare const OutwardJobsFreeIssueMaterialsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Download the label for the outward job free issue material with the given IdentifierUUID
+         *
+         * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsService.DownloadLabelByUUID
+         */
+        readonly downloadLabelByUUID: {
+            readonly name: "DownloadLabelByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View already added quantities
          *
          * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsService.ViewAddedFamilyQuantityForSource

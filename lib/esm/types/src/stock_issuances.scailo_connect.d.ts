@@ -1,5 +1,5 @@
 import { StockIssuance, StockIssuanceItem, StockIssuanceItemHistoryRequest, StockIssuanceItemProspectiveInfoRequest, StockIssuanceItemsSearchRequest, StockIssuancesItemsList, StockIssuancesList, StockIssuancesServiceAlreadyAddedQuantityForSourceRequest, StockIssuancesServiceAutofillRequest, StockIssuancesServiceCountReq, StockIssuancesServiceCreateRequest, StockIssuancesServiceFilterReq, StockIssuancesServiceItemCreateRequest, StockIssuancesServiceItemUpdateRequest, StockIssuancesServicePaginatedItemsResponse, StockIssuancesServicePaginationReq, StockIssuancesServicePaginationResponse, StockIssuancesServiceSearchAllReq, StockIssuancesServiceUpdateRequest } from "./stock_issuances.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -427,6 +427,17 @@ export declare const StockIssuancesService: {
             readonly name: "ViewAddedFamilyQuantityForSource";
             readonly I: typeof StockIssuancesServiceAlreadyAddedQuantityForSourceRequest;
             readonly O: typeof QuantityResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download the label for the stock issuance with the given IdentifierUUID
+         *
+         * @generated from rpc Scailo.StockIssuancesService.DownloadLabelByUUID
+         */
+        readonly downloadLabelByUUID: {
+            readonly name: "DownloadLabelByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
         /**

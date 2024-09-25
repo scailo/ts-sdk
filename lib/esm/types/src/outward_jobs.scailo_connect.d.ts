@@ -381,7 +381,7 @@ export declare const OutwardJobsService: {
          */
         readonly downloadInwardItemsCSVTemplate: {
             readonly name: "DownloadInwardItemsCSVTemplate";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
@@ -546,7 +546,7 @@ export declare const OutwardJobsService: {
          */
         readonly downloadOutwardItemsCSVTemplate: {
             readonly name: "DownloadOutwardItemsCSVTemplate";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
