@@ -69,7 +69,7 @@ Message\&lt;WorkOrdersServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2011
+src/work_orders.scailo_pb.ts:2061
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1988
+src/work_orders.scailo_pb.ts:2038
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1995
+src/work_orders.scailo_pb.ts:2045
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.WorkOrderItem payload = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2009
+src/work_orders.scailo_pb.ts:2059
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2002
+src/work_orders.scailo_pb.ts:2052
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2018
+src/work_orders.scailo_pb.ts:2068
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2016
+src/work_orders.scailo_pb.ts:2066
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2017
+src/work_orders.scailo_pb.ts:2067
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2037
+src/work_orders.scailo_pb.ts:2087
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2025
+src/work_orders.scailo_pb.ts:2075
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2029
+src/work_orders.scailo_pb.ts:2079
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2033
+src/work_orders.scailo_pb.ts:2083

@@ -80,7 +80,7 @@ Message\&lt;SalesEnquiryItem\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1102
+src/sales_enquiries.scailo_pb.ts:1160
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1016
+src/sales_enquiries.scailo_pb.ts:1074
 
 ___
 
@@ -112,7 +112,7 @@ from field: string delivery_date = 18;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1093
+src/sales_enquiries.scailo_pb.ts:1151
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 discount = 15;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1072
+src/sales_enquiries.scailo_pb.ts:1130
 
 ___
 
@@ -144,7 +144,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1002
+src/sales_enquiries.scailo_pb.ts:1060
 
 ___
 
@@ -160,7 +160,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1051
+src/sales_enquiries.scailo_pb.ts:1109
 
 ___
 
@@ -176,7 +176,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1009
+src/sales_enquiries.scailo_pb.ts:1067
 
 ___
 
@@ -192,7 +192,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1044
+src/sales_enquiries.scailo_pb.ts:1102
 
 ___
 
@@ -208,7 +208,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1023
+src/sales_enquiries.scailo_pb.ts:1081
 
 ___
 
@@ -224,7 +224,7 @@ from field: int64 round_off = 17;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1086
+src/sales_enquiries.scailo_pb.ts:1144
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 sales_enquiry_id = 10;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1037
+src/sales_enquiries.scailo_pb.ts:1095
 
 ___
 
@@ -256,7 +256,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1100
+src/sales_enquiries.scailo_pb.ts:1158
 
 ___
 
@@ -272,7 +272,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1079
+src/sales_enquiries.scailo_pb.ts:1137
 
 ___
 
@@ -288,7 +288,7 @@ from field: uint64 unit_price = 14;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1065
+src/sales_enquiries.scailo_pb.ts:1123
 
 ___
 
@@ -304,7 +304,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1058
+src/sales_enquiries.scailo_pb.ts:1116
 
 ___
 
@@ -320,7 +320,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1030
+src/sales_enquiries.scailo_pb.ts:1088
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1109
+src/sales_enquiries.scailo_pb.ts:1167
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1107
+src/sales_enquiries.scailo_pb.ts:1165
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1108
+src/sales_enquiries.scailo_pb.ts:1166
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1139
+src/sales_enquiries.scailo_pb.ts:1197
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1127
+src/sales_enquiries.scailo_pb.ts:1185
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1131
+src/sales_enquiries.scailo_pb.ts:1189
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1135
+src/sales_enquiries.scailo_pb.ts:1193

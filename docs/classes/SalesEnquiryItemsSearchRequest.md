@@ -83,7 +83,7 @@ Message\&lt;SalesEnquiryItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1411
+src/sales_enquiries.scailo_pb.ts:1469
 
 ## Properties
 
@@ -99,7 +99,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1353
+src/sales_enquiries.scailo_pb.ts:1411
 
 ___
 
@@ -115,7 +115,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1346
+src/sales_enquiries.scailo_pb.ts:1404
 
 ___
 
@@ -131,7 +131,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1339
+src/sales_enquiries.scailo_pb.ts:1397
 
 ___
 
@@ -147,7 +147,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1360
+src/sales_enquiries.scailo_pb.ts:1418
 
 ___
 
@@ -163,7 +163,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1297
+src/sales_enquiries.scailo_pb.ts:1355
 
 ___
 
@@ -179,7 +179,7 @@ from field: string delivery_date_end = 30;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1402
+src/sales_enquiries.scailo_pb.ts:1460
 
 ___
 
@@ -195,7 +195,7 @@ from field: string delivery_date_exact = 28;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1388
+src/sales_enquiries.scailo_pb.ts:1446
 
 ___
 
@@ -211,7 +211,7 @@ from field: string delivery_date_start = 29;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1395
+src/sales_enquiries.scailo_pb.ts:1453
 
 ___
 
@@ -227,7 +227,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1325
+src/sales_enquiries.scailo_pb.ts:1383
 
 ___
 
@@ -243,7 +243,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1290
+src/sales_enquiries.scailo_pb.ts:1348
 
 ___
 
@@ -259,7 +259,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1304
+src/sales_enquiries.scailo_pb.ts:1362
 
 ___
 
@@ -275,7 +275,7 @@ from field: uint64 sales_enquiry_id = 20;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1367
+src/sales_enquiries.scailo_pb.ts:1425
 
 ___
 
@@ -291,7 +291,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1409
+src/sales_enquiries.scailo_pb.ts:1467
 
 ___
 
@@ -307,7 +307,7 @@ from field: Scailo.SALES_ENQUIRY_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1318
+src/sales_enquiries.scailo_pb.ts:1376
 
 ___
 
@@ -323,7 +323,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1311
+src/sales_enquiries.scailo_pb.ts:1369
 
 ___
 
@@ -339,7 +339,7 @@ from field: Scailo.SALES_ENQUIRY_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1332
+src/sales_enquiries.scailo_pb.ts:1390
 
 ___
 
@@ -355,7 +355,7 @@ from field: uint64 tax_group_id = 22;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1381
+src/sales_enquiries.scailo_pb.ts:1439
 
 ___
 
@@ -371,7 +371,7 @@ from field: uint64 uom_id = 21;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1374
+src/sales_enquiries.scailo_pb.ts:1432
 
 ___
 
@@ -381,7 +381,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1418
+src/sales_enquiries.scailo_pb.ts:1476
 
 ___
 
@@ -391,7 +391,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1416
+src/sales_enquiries.scailo_pb.ts:1474
 
 ___
 
@@ -401,7 +401,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1417
+src/sales_enquiries.scailo_pb.ts:1475
 
 ## Methods
 
@@ -689,7 +689,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1451
+src/sales_enquiries.scailo_pb.ts:1509
 
 ___
 
@@ -710,7 +710,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1439
+src/sales_enquiries.scailo_pb.ts:1497
 
 ___
 
@@ -731,7 +731,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1443
+src/sales_enquiries.scailo_pb.ts:1501
 
 ___
 
@@ -752,4 +752,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1447
+src/sales_enquiries.scailo_pb.ts:1505

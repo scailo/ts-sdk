@@ -1,139 +1,105 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlanAncillaryParameters
 
-# Class: WorkOrdersServicePaginationResponse
+# Class: ProductionPlanAncillaryParameters
 
-Describes the response to a pagination request
+Stores the UUID references of the record
 
 **`Generated`**
 
-from message Scailo.WorkOrdersServicePaginationResponse
+from message Scailo.ProductionPlanAncillaryParameters
 
 ## Hierarchy
 
-- `Message`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\>
+- `Message`\<[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)\>
 
-  ↳ **`WorkOrdersServicePaginationResponse`**
+  ↳ **`ProductionPlanAncillaryParameters`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](WorkOrdersServicePaginationResponse.md#constructor)
+- [constructor](ProductionPlanAncillaryParameters.md#constructor)
 
 ### Properties
 
-- [count](WorkOrdersServicePaginationResponse.md#count)
-- [offset](WorkOrdersServicePaginationResponse.md#offset)
-- [payload](WorkOrdersServicePaginationResponse.md#payload)
-- [total](WorkOrdersServicePaginationResponse.md#total)
-- [fields](WorkOrdersServicePaginationResponse.md#fields)
-- [runtime](WorkOrdersServicePaginationResponse.md#runtime)
-- [typeName](WorkOrdersServicePaginationResponse.md#typename)
+- [locationUuid](ProductionPlanAncillaryParameters.md#locationuuid)
+- [refUuid](ProductionPlanAncillaryParameters.md#refuuid)
+- [fields](ProductionPlanAncillaryParameters.md#fields)
+- [runtime](ProductionPlanAncillaryParameters.md#runtime)
+- [typeName](ProductionPlanAncillaryParameters.md#typename)
 
 ### Methods
 
-- [clone](WorkOrdersServicePaginationResponse.md#clone)
-- [equals](WorkOrdersServicePaginationResponse.md#equals)
-- [fromBinary](WorkOrdersServicePaginationResponse.md#frombinary)
-- [fromJson](WorkOrdersServicePaginationResponse.md#fromjson)
-- [fromJsonString](WorkOrdersServicePaginationResponse.md#fromjsonstring)
-- [getType](WorkOrdersServicePaginationResponse.md#gettype)
-- [toBinary](WorkOrdersServicePaginationResponse.md#tobinary)
-- [toJSON](WorkOrdersServicePaginationResponse.md#tojson)
-- [toJson](WorkOrdersServicePaginationResponse.md#tojson-1)
-- [toJsonString](WorkOrdersServicePaginationResponse.md#tojsonstring)
-- [equals](WorkOrdersServicePaginationResponse.md#equals-1)
-- [fromBinary](WorkOrdersServicePaginationResponse.md#frombinary-1)
-- [fromJson](WorkOrdersServicePaginationResponse.md#fromjson-1)
-- [fromJsonString](WorkOrdersServicePaginationResponse.md#fromjsonstring-1)
+- [clone](ProductionPlanAncillaryParameters.md#clone)
+- [equals](ProductionPlanAncillaryParameters.md#equals)
+- [fromBinary](ProductionPlanAncillaryParameters.md#frombinary)
+- [fromJson](ProductionPlanAncillaryParameters.md#fromjson)
+- [fromJsonString](ProductionPlanAncillaryParameters.md#fromjsonstring)
+- [getType](ProductionPlanAncillaryParameters.md#gettype)
+- [toBinary](ProductionPlanAncillaryParameters.md#tobinary)
+- [toJSON](ProductionPlanAncillaryParameters.md#tojson)
+- [toJson](ProductionPlanAncillaryParameters.md#tojson-1)
+- [toJsonString](ProductionPlanAncillaryParameters.md#tojsonstring)
+- [equals](ProductionPlanAncillaryParameters.md#equals-1)
+- [fromBinary](ProductionPlanAncillaryParameters.md#frombinary-1)
+- [fromJson](ProductionPlanAncillaryParameters.md#fromjson-1)
+- [fromJsonString](ProductionPlanAncillaryParameters.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new WorkOrdersServicePaginationResponse**(`data?`): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+• **new ProductionPlanAncillaryParameters**(`data?`): [`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\> |
+| `data?` | `PartialMessage`\<[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)\> |
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Overrides
 
-Message\&lt;WorkOrdersServicePaginationResponse\&gt;.constructor
+Message\&lt;ProductionPlanAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1201
+src/production_plans.scailo_pb.ts:552
 
 ## Properties
 
-### count
+### locationUuid
 
-• **count**: `bigint` = `protoInt64.zero`
+• **locationUuid**: `string` = `""`
 
-The number of records in this payload
+The UUID of the location (the UUID of the associated location_id)
 
 **`Generated`**
 
-from field: uint64 count = 1;
+from field: string location_uuid = 215;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1178
+src/production_plans.scailo_pb.ts:550
 
 ___
 
-### offset
+### refUuid
 
-• **offset**: `bigint` = `protoInt64.zero`
+• **refUuid**: `string` = `""`
 
-The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
-
-**`Generated`**
-
-from field: uint64 offset = 2;
-
-#### Defined in
-
-src/work_orders.scailo_pb.ts:1185
-
-___
-
-### payload
-
-• **payload**: [`WorkOrder`](WorkOrder.md)[] = `[]`
-
-The list of records
+The UUID of the ref_id (the UUID of the associated ref_id)
 
 **`Generated`**
 
-from field: repeated Scailo.WorkOrder payload = 4;
+from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1199
-
-___
-
-### total
-
-• **total**: `bigint` = `protoInt64.zero`
-
-The total number of records that are available
-
-**`Generated`**
-
-from field: uint64 total = 3;
-
-#### Defined in
-
-src/work_orders.scailo_pb.ts:1192
+src/production_plans.scailo_pb.ts:543
 
 ___
 
@@ -143,7 +109,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1208
+src/production_plans.scailo_pb.ts:559
 
 ___
 
@@ -153,29 +119,29 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1206
+src/production_plans.scailo_pb.ts:557
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.WorkOrdersServicePaginationResponse"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.ProductionPlanAncillaryParameters"``
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1207
+src/production_plans.scailo_pb.ts:558
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+▸ **clone**(): [`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Inherited from
 
@@ -198,7 +164,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md) \| `PlainMessage`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\> |
+| `other` | `undefined` \| ``null`` \| [`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md) \| `PlainMessage`\<[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)\> |
 
 #### Returns
 
@@ -303,7 +269,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\>
+▸ **getType**(): `MessageType`\<[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -311,7 +277,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\>
+`MessageType`\<[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)\>
 
 #### Inherited from
 
@@ -442,8 +408,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md) \| `PlainMessage`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\> |
-| `b` | `undefined` \| [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md) \| `PlainMessage`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\> |
+| `a` | `undefined` \| [`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md) \| `PlainMessage`\<[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)\> |
+| `b` | `undefined` \| [`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md) \| `PlainMessage`\<[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)\> |
 
 #### Returns
 
@@ -451,13 +417,13 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1227
+src/production_plans.scailo_pb.ts:576
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+▸ **fromBinary**(`bytes`, `options?`): [`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Parameters
 
@@ -468,17 +434,17 @@ ___
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1215
+src/production_plans.scailo_pb.ts:564
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Parameters
 
@@ -489,17 +455,17 @@ ___
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1219
+src/production_plans.scailo_pb.ts:568
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Parameters
 
@@ -510,8 +476,8 @@ ___
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`ProductionPlanAncillaryParameters`](ProductionPlanAncillaryParameters.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1223
+src/production_plans.scailo_pb.ts:572

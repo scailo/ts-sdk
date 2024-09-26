@@ -1,139 +1,122 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServicePaginationResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesEnquiryAncillaryParameters
 
-# Class: WorkOrdersServicePaginationResponse
+# Class: SalesEnquiryAncillaryParameters
 
-Describes the response to a pagination request
+Stores the UUID references of the record
 
 **`Generated`**
 
-from message Scailo.WorkOrdersServicePaginationResponse
+from message Scailo.SalesEnquiryAncillaryParameters
 
 ## Hierarchy
 
-- `Message`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\>
+- `Message`\<[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)\>
 
-  ↳ **`WorkOrdersServicePaginationResponse`**
+  ↳ **`SalesEnquiryAncillaryParameters`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](WorkOrdersServicePaginationResponse.md#constructor)
+- [constructor](SalesEnquiryAncillaryParameters.md#constructor)
 
 ### Properties
 
-- [count](WorkOrdersServicePaginationResponse.md#count)
-- [offset](WorkOrdersServicePaginationResponse.md#offset)
-- [payload](WorkOrdersServicePaginationResponse.md#payload)
-- [total](WorkOrdersServicePaginationResponse.md#total)
-- [fields](WorkOrdersServicePaginationResponse.md#fields)
-- [runtime](WorkOrdersServicePaginationResponse.md#runtime)
-- [typeName](WorkOrdersServicePaginationResponse.md#typename)
+- [buyerClientUuid](SalesEnquiryAncillaryParameters.md#buyerclientuuid)
+- [consigneeClientUuid](SalesEnquiryAncillaryParameters.md#consigneeclientuuid)
+- [currencyUuid](SalesEnquiryAncillaryParameters.md#currencyuuid)
+- [fields](SalesEnquiryAncillaryParameters.md#fields)
+- [runtime](SalesEnquiryAncillaryParameters.md#runtime)
+- [typeName](SalesEnquiryAncillaryParameters.md#typename)
 
 ### Methods
 
-- [clone](WorkOrdersServicePaginationResponse.md#clone)
-- [equals](WorkOrdersServicePaginationResponse.md#equals)
-- [fromBinary](WorkOrdersServicePaginationResponse.md#frombinary)
-- [fromJson](WorkOrdersServicePaginationResponse.md#fromjson)
-- [fromJsonString](WorkOrdersServicePaginationResponse.md#fromjsonstring)
-- [getType](WorkOrdersServicePaginationResponse.md#gettype)
-- [toBinary](WorkOrdersServicePaginationResponse.md#tobinary)
-- [toJSON](WorkOrdersServicePaginationResponse.md#tojson)
-- [toJson](WorkOrdersServicePaginationResponse.md#tojson-1)
-- [toJsonString](WorkOrdersServicePaginationResponse.md#tojsonstring)
-- [equals](WorkOrdersServicePaginationResponse.md#equals-1)
-- [fromBinary](WorkOrdersServicePaginationResponse.md#frombinary-1)
-- [fromJson](WorkOrdersServicePaginationResponse.md#fromjson-1)
-- [fromJsonString](WorkOrdersServicePaginationResponse.md#fromjsonstring-1)
+- [clone](SalesEnquiryAncillaryParameters.md#clone)
+- [equals](SalesEnquiryAncillaryParameters.md#equals)
+- [fromBinary](SalesEnquiryAncillaryParameters.md#frombinary)
+- [fromJson](SalesEnquiryAncillaryParameters.md#fromjson)
+- [fromJsonString](SalesEnquiryAncillaryParameters.md#fromjsonstring)
+- [getType](SalesEnquiryAncillaryParameters.md#gettype)
+- [toBinary](SalesEnquiryAncillaryParameters.md#tobinary)
+- [toJSON](SalesEnquiryAncillaryParameters.md#tojson)
+- [toJson](SalesEnquiryAncillaryParameters.md#tojson-1)
+- [toJsonString](SalesEnquiryAncillaryParameters.md#tojsonstring)
+- [equals](SalesEnquiryAncillaryParameters.md#equals-1)
+- [fromBinary](SalesEnquiryAncillaryParameters.md#frombinary-1)
+- [fromJson](SalesEnquiryAncillaryParameters.md#fromjson-1)
+- [fromJsonString](SalesEnquiryAncillaryParameters.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new WorkOrdersServicePaginationResponse**(`data?`): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+• **new SalesEnquiryAncillaryParameters**(`data?`): [`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\> |
+| `data?` | `PartialMessage`\<[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)\> |
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Overrides
 
-Message\&lt;WorkOrdersServicePaginationResponse\&gt;.constructor
+Message\&lt;SalesEnquiryAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1201
+src/sales_enquiries.scailo_pb.ts:572
 
 ## Properties
 
-### count
+### buyerClientUuid
 
-• **count**: `bigint` = `protoInt64.zero`
+• **buyerClientUuid**: `string` = `""`
 
-The number of records in this payload
+The UUID of the buyer client (the UUID of the associated buyer_client_id)
 
 **`Generated`**
 
-from field: uint64 count = 1;
+from field: string buyer_client_uuid = 213;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1178
+src/sales_enquiries.scailo_pb.ts:563
 
 ___
 
-### offset
+### consigneeClientUuid
 
-• **offset**: `bigint` = `protoInt64.zero`
+• **consigneeClientUuid**: `string` = `""`
 
-The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+The UUID of the consignee client (the UUID of the associated consignee_client_id)
 
 **`Generated`**
 
-from field: uint64 offset = 2;
+from field: string consignee_client_uuid = 212;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1185
+src/sales_enquiries.scailo_pb.ts:556
 
 ___
 
-### payload
+### currencyUuid
 
-• **payload**: [`WorkOrder`](WorkOrder.md)[] = `[]`
+• **currencyUuid**: `string` = `""`
 
-The list of records
-
-**`Generated`**
-
-from field: repeated Scailo.WorkOrder payload = 4;
-
-#### Defined in
-
-src/work_orders.scailo_pb.ts:1199
-
-___
-
-### total
-
-• **total**: `bigint` = `protoInt64.zero`
-
-The total number of records that are available
+The UUID of the currency (the UUID of the associated currency)
 
 **`Generated`**
 
-from field: uint64 total = 3;
+from field: string currency_uuid = 215;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1192
+src/sales_enquiries.scailo_pb.ts:570
 
 ___
 
@@ -143,7 +126,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1208
+src/sales_enquiries.scailo_pb.ts:579
 
 ___
 
@@ -153,29 +136,29 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1206
+src/sales_enquiries.scailo_pb.ts:577
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.WorkOrdersServicePaginationResponse"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.SalesEnquiryAncillaryParameters"``
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1207
+src/sales_enquiries.scailo_pb.ts:578
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+▸ **clone**(): [`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Inherited from
 
@@ -198,7 +181,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md) \| `PlainMessage`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\> |
+| `other` | `undefined` \| ``null`` \| [`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md) \| `PlainMessage`\<[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)\> |
 
 #### Returns
 
@@ -303,7 +286,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\>
+▸ **getType**(): `MessageType`\<[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -311,7 +294,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\>
+`MessageType`\<[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)\>
 
 #### Inherited from
 
@@ -442,8 +425,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md) \| `PlainMessage`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\> |
-| `b` | `undefined` \| [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md) \| `PlainMessage`\<[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)\> |
+| `a` | `undefined` \| [`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md) \| `PlainMessage`\<[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)\> |
+| `b` | `undefined` \| [`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md) \| `PlainMessage`\<[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)\> |
 
 #### Returns
 
@@ -451,13 +434,13 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1227
+src/sales_enquiries.scailo_pb.ts:597
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+▸ **fromBinary**(`bytes`, `options?`): [`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Parameters
 
@@ -468,17 +451,17 @@ ___
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1215
+src/sales_enquiries.scailo_pb.ts:585
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Parameters
 
@@ -489,17 +472,17 @@ ___
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1219
+src/sales_enquiries.scailo_pb.ts:589
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Parameters
 
@@ -510,8 +493,8 @@ ___
 
 #### Returns
 
-[`WorkOrdersServicePaginationResponse`](WorkOrdersServicePaginationResponse.md)
+[`SalesEnquiryAncillaryParameters`](SalesEnquiryAncillaryParameters.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1223
+src/sales_enquiries.scailo_pb.ts:593

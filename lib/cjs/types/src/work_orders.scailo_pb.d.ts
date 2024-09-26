@@ -310,6 +310,34 @@ export declare class WorkOrdersServiceAutofillRequest extends Message<WorkOrders
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.WorkOrderAncillaryParameters
+ */
+export declare class WorkOrderAncillaryParameters extends Message<WorkOrderAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the location (the UUID of the associated location_id)
+     *
+     * @generated from field: string location_uuid = 215;
+     */
+    locationUuid: string;
+    constructor(data?: PartialMessage<WorkOrderAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.WorkOrderAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderAncillaryParameters;
+    static equals(a: WorkOrderAncillaryParameters | PlainMessage<WorkOrderAncillaryParameters> | undefined, b: WorkOrderAncillaryParameters | PlainMessage<WorkOrderAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.WorkOrder

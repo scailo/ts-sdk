@@ -457,6 +457,56 @@ export class WorkOrdersServiceAutofillRequest extends Message<WorkOrdersServiceA
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.WorkOrderAncillaryParameters
+ */
+export class WorkOrderAncillaryParameters extends Message<WorkOrderAncillaryParameters> {
+  /**
+   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @generated from field: string ref_uuid = 213;
+   */
+  refUuid = "";
+
+  /**
+   * The UUID of the location (the UUID of the associated location_id)
+   *
+   * @generated from field: string location_uuid = 215;
+   */
+  locationUuid = "";
+
+  constructor(data?: PartialMessage<WorkOrderAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.WorkOrderAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 215, name: "location_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderAncillaryParameters {
+    return new WorkOrderAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderAncillaryParameters {
+    return new WorkOrderAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderAncillaryParameters {
+    return new WorkOrderAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: WorkOrderAncillaryParameters | PlainMessage<WorkOrderAncillaryParameters> | undefined, b: WorkOrderAncillaryParameters | PlainMessage<WorkOrderAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(WorkOrderAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.WorkOrder

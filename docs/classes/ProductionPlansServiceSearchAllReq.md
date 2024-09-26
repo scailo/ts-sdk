@@ -77,7 +77,7 @@ Message\&lt;ProductionPlansServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1930
+src/production_plans.scailo_pb.ts:1980
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1858
+src/production_plans.scailo_pb.ts:1908
 
 ___
 
@@ -109,7 +109,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1886
+src/production_plans.scailo_pb.ts:1936
 
 ___
 
@@ -125,7 +125,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1851
+src/production_plans.scailo_pb.ts:1901
 
 ___
 
@@ -141,7 +141,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1921
+src/production_plans.scailo_pb.ts:1971
 
 ___
 
@@ -157,7 +157,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1865
+src/production_plans.scailo_pb.ts:1915
 
 ___
 
@@ -173,7 +173,7 @@ from field: string ref_from = 22;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1907
+src/production_plans.scailo_pb.ts:1957
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1914
+src/production_plans.scailo_pb.ts:1964
 
 ___
 
@@ -205,7 +205,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1900
+src/production_plans.scailo_pb.ts:1950
 
 ___
 
@@ -221,7 +221,7 @@ from field: Scailo.PRODUCTION_PLAN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1879
+src/production_plans.scailo_pb.ts:1929
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1872
+src/production_plans.scailo_pb.ts:1922
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1893
+src/production_plans.scailo_pb.ts:1943
 
 ___
 
@@ -269,7 +269,7 @@ from field: string supervisor = 25;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1928
+src/production_plans.scailo_pb.ts:1978
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1937
+src/production_plans.scailo_pb.ts:1987
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1935
+src/production_plans.scailo_pb.ts:1985
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1936
+src/production_plans.scailo_pb.ts:1986
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1964
+src/production_plans.scailo_pb.ts:2014
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1952
+src/production_plans.scailo_pb.ts:2002
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1956
+src/production_plans.scailo_pb.ts:2006
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1960
+src/production_plans.scailo_pb.ts:2010

@@ -79,7 +79,7 @@ Message\&lt;WorkOrder\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:563
+src/work_orders.scailo_pb.ts:613
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:484
+src/work_orders.scailo_pb.ts:534
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:505
+src/work_orders.scailo_pb.ts:555
 
 ___
 
@@ -127,7 +127,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:470
+src/work_orders.scailo_pb.ts:520
 
 ___
 
@@ -143,7 +143,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:526
+src/work_orders.scailo_pb.ts:576
 
 ___
 
@@ -159,7 +159,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:561
+src/work_orders.scailo_pb.ts:611
 
 ___
 
@@ -175,7 +175,7 @@ from field: repeated Scailo.WorkOrderItem list = 20;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:554
+src/work_orders.scailo_pb.ts:604
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 location_id = 14;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:547
+src/work_orders.scailo_pb.ts:597
 
 ___
 
@@ -207,7 +207,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:498
+src/work_orders.scailo_pb.ts:548
 
 ___
 
@@ -223,7 +223,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:477
+src/work_orders.scailo_pb.ts:527
 
 ___
 
@@ -239,7 +239,7 @@ from field: string ref_from = 12;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:533
+src/work_orders.scailo_pb.ts:583
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:540
+src/work_orders.scailo_pb.ts:590
 
 ___
 
@@ -271,7 +271,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:519
+src/work_orders.scailo_pb.ts:569
 
 ___
 
@@ -287,7 +287,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:491
+src/work_orders.scailo_pb.ts:541
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:512
+src/work_orders.scailo_pb.ts:562
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:570
+src/work_orders.scailo_pb.ts:620
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:568
+src/work_orders.scailo_pb.ts:618
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:569
+src/work_orders.scailo_pb.ts:619
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:599
+src/work_orders.scailo_pb.ts:649
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:587
+src/work_orders.scailo_pb.ts:637
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:591
+src/work_orders.scailo_pb.ts:641
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:595
+src/work_orders.scailo_pb.ts:645

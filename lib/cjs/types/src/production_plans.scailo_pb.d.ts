@@ -365,6 +365,34 @@ export declare class ProductionPlansServiceAutofillRequest extends Message<Produ
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.ProductionPlanAncillaryParameters
+ */
+export declare class ProductionPlanAncillaryParameters extends Message<ProductionPlanAncillaryParameters> {
+    /**
+     * The UUID of the ref_id (the UUID of the associated ref_id)
+     *
+     * @generated from field: string ref_uuid = 213;
+     */
+    refUuid: string;
+    /**
+     * The UUID of the location (the UUID of the associated location_id)
+     *
+     * @generated from field: string location_uuid = 215;
+     */
+    locationUuid: string;
+    constructor(data?: PartialMessage<ProductionPlanAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ProductionPlanAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanAncillaryParameters;
+    static equals(a: ProductionPlanAncillaryParameters | PlainMessage<ProductionPlanAncillaryParameters> | undefined, b: ProductionPlanAncillaryParameters | PlainMessage<ProductionPlanAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.ProductionPlan

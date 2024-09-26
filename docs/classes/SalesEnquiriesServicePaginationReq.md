@@ -71,7 +71,7 @@ Message\&lt;SalesEnquiriesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1571
+src/sales_enquiries.scailo_pb.ts:1629
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1541
+src/sales_enquiries.scailo_pb.ts:1599
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1534
+src/sales_enquiries.scailo_pb.ts:1592
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1548
+src/sales_enquiries.scailo_pb.ts:1606
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1562
+src/sales_enquiries.scailo_pb.ts:1620
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1555
+src/sales_enquiries.scailo_pb.ts:1613
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1569
+src/sales_enquiries.scailo_pb.ts:1627
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1578
+src/sales_enquiries.scailo_pb.ts:1636
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1576
+src/sales_enquiries.scailo_pb.ts:1634
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1577
+src/sales_enquiries.scailo_pb.ts:1635
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1599
+src/sales_enquiries.scailo_pb.ts:1657
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1587
+src/sales_enquiries.scailo_pb.ts:1645
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1591
+src/sales_enquiries.scailo_pb.ts:1649
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1595
+src/sales_enquiries.scailo_pb.ts:1653

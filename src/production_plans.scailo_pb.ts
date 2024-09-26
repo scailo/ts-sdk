@@ -530,6 +530,56 @@ export class ProductionPlansServiceAutofillRequest extends Message<ProductionPla
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.ProductionPlanAncillaryParameters
+ */
+export class ProductionPlanAncillaryParameters extends Message<ProductionPlanAncillaryParameters> {
+  /**
+   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @generated from field: string ref_uuid = 213;
+   */
+  refUuid = "";
+
+  /**
+   * The UUID of the location (the UUID of the associated location_id)
+   *
+   * @generated from field: string location_uuid = 215;
+   */
+  locationUuid = "";
+
+  constructor(data?: PartialMessage<ProductionPlanAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ProductionPlanAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 215, name: "location_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanAncillaryParameters {
+    return new ProductionPlanAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanAncillaryParameters {
+    return new ProductionPlanAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanAncillaryParameters {
+    return new ProductionPlanAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ProductionPlanAncillaryParameters | PlainMessage<ProductionPlanAncillaryParameters> | undefined, b: ProductionPlanAncillaryParameters | PlainMessage<ProductionPlanAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(ProductionPlanAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.ProductionPlan

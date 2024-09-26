@@ -76,7 +76,7 @@ Message\&lt;SalesEnquiriesServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:830
+src/sales_enquiries.scailo_pb.ts:888
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: string delivery_date = 18;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:821
+src/sales_enquiries.scailo_pb.ts:879
 
 ___
 
@@ -108,7 +108,7 @@ from field: uint64 discount = 15;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:800
+src/sales_enquiries.scailo_pb.ts:858
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:779
+src/sales_enquiries.scailo_pb.ts:837
 
 ___
 
@@ -140,7 +140,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:772
+src/sales_enquiries.scailo_pb.ts:830
 
 ___
 
@@ -156,7 +156,7 @@ from field: int64 round_off = 17;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:814
+src/sales_enquiries.scailo_pb.ts:872
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 sales_enquiry_id = 10;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:765
+src/sales_enquiries.scailo_pb.ts:823
 
 ___
 
@@ -188,7 +188,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:828
+src/sales_enquiries.scailo_pb.ts:886
 
 ___
 
@@ -204,7 +204,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:807
+src/sales_enquiries.scailo_pb.ts:865
 
 ___
 
@@ -220,7 +220,7 @@ from field: uint64 unit_price = 14;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:793
+src/sales_enquiries.scailo_pb.ts:851
 
 ___
 
@@ -236,7 +236,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:786
+src/sales_enquiries.scailo_pb.ts:844
 
 ___
 
@@ -252,7 +252,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:758
+src/sales_enquiries.scailo_pb.ts:816
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:837
+src/sales_enquiries.scailo_pb.ts:895
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:835
+src/sales_enquiries.scailo_pb.ts:893
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:836
+src/sales_enquiries.scailo_pb.ts:894
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:863
+src/sales_enquiries.scailo_pb.ts:921
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:851
+src/sales_enquiries.scailo_pb.ts:909
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:855
+src/sales_enquiries.scailo_pb.ts:913
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:859
+src/sales_enquiries.scailo_pb.ts:917

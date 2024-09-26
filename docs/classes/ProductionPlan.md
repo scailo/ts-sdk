@@ -83,7 +83,7 @@ Message\&lt;ProductionPlan\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:664
+src/production_plans.scailo_pb.ts:714
 
 ## Properties
 
@@ -99,7 +99,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:557
+src/production_plans.scailo_pb.ts:607
 
 ___
 
@@ -115,7 +115,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:578
+src/production_plans.scailo_pb.ts:628
 
 ___
 
@@ -131,7 +131,7 @@ from field: uint64 ends_at = 17;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:648
+src/production_plans.scailo_pb.ts:698
 
 ___
 
@@ -147,7 +147,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:543
+src/production_plans.scailo_pb.ts:593
 
 ___
 
@@ -163,7 +163,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:606
+src/production_plans.scailo_pb.ts:656
 
 ___
 
@@ -179,7 +179,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:662
+src/production_plans.scailo_pb.ts:712
 
 ___
 
@@ -195,7 +195,7 @@ from field: repeated Scailo.ProductionPlanItem list = 20;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:655
+src/production_plans.scailo_pb.ts:705
 
 ___
 
@@ -211,7 +211,7 @@ from field: uint64 location_id = 14;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:627
+src/production_plans.scailo_pb.ts:677
 
 ___
 
@@ -227,7 +227,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:571
+src/production_plans.scailo_pb.ts:621
 
 ___
 
@@ -243,7 +243,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:550
+src/production_plans.scailo_pb.ts:600
 
 ___
 
@@ -259,7 +259,7 @@ from field: uint64 project_id = 8;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:585
+src/production_plans.scailo_pb.ts:635
 
 ___
 
@@ -275,7 +275,7 @@ from field: string ref_from = 12;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:613
+src/production_plans.scailo_pb.ts:663
 
 ___
 
@@ -291,7 +291,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:620
+src/production_plans.scailo_pb.ts:670
 
 ___
 
@@ -307,7 +307,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:599
+src/production_plans.scailo_pb.ts:649
 
 ___
 
@@ -323,7 +323,7 @@ from field: uint64 starts_at = 16;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:641
+src/production_plans.scailo_pb.ts:691
 
 ___
 
@@ -339,7 +339,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:564
+src/production_plans.scailo_pb.ts:614
 
 ___
 
@@ -355,7 +355,7 @@ from field: string supervisor = 15;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:634
+src/production_plans.scailo_pb.ts:684
 
 ___
 
@@ -371,7 +371,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:592
+src/production_plans.scailo_pb.ts:642
 
 ___
 
@@ -381,7 +381,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:671
+src/production_plans.scailo_pb.ts:721
 
 ___
 
@@ -391,7 +391,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:669
+src/production_plans.scailo_pb.ts:719
 
 ___
 
@@ -401,7 +401,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:670
+src/production_plans.scailo_pb.ts:720
 
 ## Methods
 
@@ -689,7 +689,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:704
+src/production_plans.scailo_pb.ts:754
 
 ___
 
@@ -710,7 +710,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:692
+src/production_plans.scailo_pb.ts:742
 
 ___
 
@@ -731,7 +731,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:696
+src/production_plans.scailo_pb.ts:746
 
 ___
 
@@ -752,4 +752,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:700
+src/production_plans.scailo_pb.ts:750

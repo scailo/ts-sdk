@@ -384,6 +384,40 @@ export declare class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnq
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.SalesEnquiryAncillaryParameters
+ */
+export declare class SalesEnquiryAncillaryParameters extends Message<SalesEnquiryAncillaryParameters> {
+    /**
+     * The UUID of the consignee client (the UUID of the associated consignee_client_id)
+     *
+     * @generated from field: string consignee_client_uuid = 212;
+     */
+    consigneeClientUuid: string;
+    /**
+     * The UUID of the buyer client (the UUID of the associated buyer_client_id)
+     *
+     * @generated from field: string buyer_client_uuid = 213;
+     */
+    buyerClientUuid: string;
+    /**
+     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @generated from field: string currency_uuid = 215;
+     */
+    currencyUuid: string;
+    constructor(data?: PartialMessage<SalesEnquiryAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesEnquiryAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiryAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiryAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiryAncillaryParameters;
+    static equals(a: SalesEnquiryAncillaryParameters | PlainMessage<SalesEnquiryAncillaryParameters> | undefined, b: SalesEnquiryAncillaryParameters | PlainMessage<SalesEnquiryAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.SalesEnquiry

@@ -69,7 +69,7 @@ Message\&lt;SalesEnquiriesServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1491
+src/sales_enquiries.scailo_pb.ts:1549
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1468
+src/sales_enquiries.scailo_pb.ts:1526
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1475
+src/sales_enquiries.scailo_pb.ts:1533
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.SalesEnquiryItem payload = 4;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1489
+src/sales_enquiries.scailo_pb.ts:1547
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1482
+src/sales_enquiries.scailo_pb.ts:1540
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1498
+src/sales_enquiries.scailo_pb.ts:1556
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1496
+src/sales_enquiries.scailo_pb.ts:1554
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1497
+src/sales_enquiries.scailo_pb.ts:1555
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1517
+src/sales_enquiries.scailo_pb.ts:1575
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1505
+src/sales_enquiries.scailo_pb.ts:1563
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1509
+src/sales_enquiries.scailo_pb.ts:1567
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1513
+src/sales_enquiries.scailo_pb.ts:1571

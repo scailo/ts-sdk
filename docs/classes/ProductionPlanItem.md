@@ -73,7 +73,7 @@ Message\&lt;ProductionPlanItem\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:896
+src/production_plans.scailo_pb.ts:946
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:859
+src/production_plans.scailo_pb.ts:909
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:845
+src/production_plans.scailo_pb.ts:895
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:887
+src/production_plans.scailo_pb.ts:937
 
 ___
 
@@ -137,7 +137,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:852
+src/production_plans.scailo_pb.ts:902
 
 ___
 
@@ -153,7 +153,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:866
+src/production_plans.scailo_pb.ts:916
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 production_plan_id = 10;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:880
+src/production_plans.scailo_pb.ts:930
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:894
+src/production_plans.scailo_pb.ts:944
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:873
+src/production_plans.scailo_pb.ts:923
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:903
+src/production_plans.scailo_pb.ts:953
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:901
+src/production_plans.scailo_pb.ts:951
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:902
+src/production_plans.scailo_pb.ts:952
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:926
+src/production_plans.scailo_pb.ts:976
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:914
+src/production_plans.scailo_pb.ts:964
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:918
+src/production_plans.scailo_pb.ts:968
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:922
+src/production_plans.scailo_pb.ts:972
