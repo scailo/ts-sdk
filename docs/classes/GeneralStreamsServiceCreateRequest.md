@@ -70,7 +70,7 @@ Message\&lt;GeneralStreamsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:330
+src/general_streams.scailo_pb.ts:330
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: bool assign_self_as_internal_subscriber = 80;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:328
+src/general_streams.scailo_pb.ts:328
 
 ___
 
@@ -102,7 +102,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:300
+src/general_streams.scailo_pb.ts:300
 
 ___
 
@@ -118,7 +118,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:321
+src/general_streams.scailo_pb.ts:321
 
 ___
 
@@ -134,7 +134,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:307
+src/general_streams.scailo_pb.ts:307
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 vault_folder_id = 7;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:314
+src/general_streams.scailo_pb.ts:314
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:337
+src/general_streams.scailo_pb.ts:337
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:335
+src/general_streams.scailo_pb.ts:335
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:336
+src/general_streams.scailo_pb.ts:336
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:357
+src/general_streams.scailo_pb.ts:357
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:345
+src/general_streams.scailo_pb.ts:345
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:349
+src/general_streams.scailo_pb.ts:349
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:353
+src/general_streams.scailo_pb.ts:353

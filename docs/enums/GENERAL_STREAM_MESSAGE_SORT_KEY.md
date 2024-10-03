@@ -30,7 +30,7 @@ from enum value: GENERAL_STREAM_MESSAGE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:158
+src/general_streams.scailo_pb.ts:158
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GENERAL_STREAM_MESSAGE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:151
+src/general_streams.scailo_pb.ts:151
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GENERAL_STREAM_MESSAGE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:165
+src/general_streams.scailo_pb.ts:165

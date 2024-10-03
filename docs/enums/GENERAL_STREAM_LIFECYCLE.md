@@ -31,7 +31,7 @@ from enum value: GENERAL_STREAM_LIFECYCLE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:22
+src/general_streams.scailo_pb.ts:22
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: GENERAL_STREAM_LIFECYCLE_CANCELLED = 3;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:43
+src/general_streams.scailo_pb.ts:43
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: GENERAL_STREAM_LIFECYCLE_COMPLETED = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:36
+src/general_streams.scailo_pb.ts:36
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: GENERAL_STREAM_LIFECYCLE_OPEN = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:29
+src/general_streams.scailo_pb.ts:29

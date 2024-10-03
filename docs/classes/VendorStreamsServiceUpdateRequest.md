@@ -70,7 +70,7 @@ Message\&lt;VendorStreamsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:503
+src/vendor_streams.scailo_pb.ts:503
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:480
+src/vendor_streams.scailo_pb.ts:480
 
 ___
 
@@ -102,7 +102,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:487
+src/vendor_streams.scailo_pb.ts:487
 
 ___
 
@@ -118,7 +118,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:501
+src/vendor_streams.scailo_pb.ts:501
 
 ___
 
@@ -134,7 +134,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:473
+src/vendor_streams.scailo_pb.ts:473
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 vault_folder_id = 7;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:494
+src/vendor_streams.scailo_pb.ts:494
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:510
+src/vendor_streams.scailo_pb.ts:510
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:508
+src/vendor_streams.scailo_pb.ts:508
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:509
+src/vendor_streams.scailo_pb.ts:509
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:530
+src/vendor_streams.scailo_pb.ts:530
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:518
+src/vendor_streams.scailo_pb.ts:518
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:522
+src/vendor_streams.scailo_pb.ts:522
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:526
+src/vendor_streams.scailo_pb.ts:526

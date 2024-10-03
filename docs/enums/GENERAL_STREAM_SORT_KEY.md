@@ -32,7 +32,7 @@ from enum value: GENERAL_STREAM_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:86
+src/general_streams.scailo_pb.ts:86
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: GENERAL_STREAM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:72
+src/general_streams.scailo_pb.ts:72
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: GENERAL_STREAM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:65
+src/general_streams.scailo_pb.ts:65
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: GENERAL_STREAM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:79
+src/general_streams.scailo_pb.ts:79
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: GENERAL_STREAM_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:93
+src/general_streams.scailo_pb.ts:93

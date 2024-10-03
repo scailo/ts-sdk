@@ -71,7 +71,7 @@ Message\&lt;VendorStreamInternalSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1991
+src/vendor_streams.scailo_pb.ts:1991
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1954
+src/vendor_streams.scailo_pb.ts:1954
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1961
+src/vendor_streams.scailo_pb.ts:1961
 
 ___
 
@@ -119,7 +119,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1968
+src/vendor_streams.scailo_pb.ts:1968
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1982
+src/vendor_streams.scailo_pb.ts:1982
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_uuid = 30;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1989
+src/vendor_streams.scailo_pb.ts:1989
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vendor_stream_id = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1975
+src/vendor_streams.scailo_pb.ts:1975
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1998
+src/vendor_streams.scailo_pb.ts:1998
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1996
+src/vendor_streams.scailo_pb.ts:1996
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1997
+src/vendor_streams.scailo_pb.ts:1997
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2019
+src/vendor_streams.scailo_pb.ts:2019
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2007
+src/vendor_streams.scailo_pb.ts:2007
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2011
+src/vendor_streams.scailo_pb.ts:2011
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2015
+src/vendor_streams.scailo_pb.ts:2015

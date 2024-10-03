@@ -2008,6 +2008,113 @@
 - [WorkOrdersService](modules.md#workordersservice)
 - [WorkflowsRulesService](modules.md#workflowsrulesservice)
 
+### Functions
+
+- [getClientForAbsencesService](modules.md#getclientforabsencesservice)
+- [getClientForActionsCodesService](modules.md#getclientforactionscodesservice)
+- [getClientForActivitiesGroupsService](modules.md#getclientforactivitiesgroupsservice)
+- [getClientForActivitiesService](modules.md#getclientforactivitiesservice)
+- [getClientForActivitiesStatusesService](modules.md#getclientforactivitiesstatusesservice)
+- [getClientForActivitiesTagsService](modules.md#getclientforactivitiestagsservice)
+- [getClientForAnnouncementsService](modules.md#getclientforannouncementsservice)
+- [getClientForAssetIndentsService](modules.md#getclientforassetindentsservice)
+- [getClientForAssociatesService](modules.md#getclientforassociatesservice)
+- [getClientForAttendancesAmendmentsService](modules.md#getclientforattendancesamendmentsservice)
+- [getClientForAttendancesService](modules.md#getclientforattendancesservice)
+- [getClientForBankAccountsService](modules.md#getclientforbankaccountsservice)
+- [getClientForClientStreamsService](modules.md#getclientforclientstreamsservice)
+- [getClientForClientsService](modules.md#getclientforclientsservice)
+- [getClientForComponentsService](modules.md#getclientforcomponentsservice)
+- [getClientForCreditNotesService](modules.md#getclientforcreditnotesservice)
+- [getClientForCurrenciesService](modules.md#getclientforcurrenciesservice)
+- [getClientForDebitNotesService](modules.md#getclientfordebitnotesservice)
+- [getClientForDepartmentsService](modules.md#getclientfordepartmentsservice)
+- [getClientForEquationsFamiliesService](modules.md#getclientforequationsfamiliesservice)
+- [getClientForEquationsReplaceablesService](modules.md#getclientforequationsreplaceablesservice)
+- [getClientForEquationsSalesBundlesService](modules.md#getclientforequationssalesbundlesservice)
+- [getClientForEquationsWorkOrdersService](modules.md#getclientforequationsworkordersservice)
+- [getClientForEquipmentsService](modules.md#getclientforequipmentsservice)
+- [getClientForExpensesService](modules.md#getclientforexpensesservice)
+- [getClientForFamiliesService](modules.md#getclientforfamiliesservice)
+- [getClientForFeedstocksService](modules.md#getclientforfeedstocksservice)
+- [getClientForFormsFieldsDataService](modules.md#getclientforformsfieldsdataservice)
+- [getClientForFormsFieldsService](modules.md#getclientforformsfieldsservice)
+- [getClientForFormsSectionsService](modules.md#getclientforformssectionsservice)
+- [getClientForGeneralSettingsService](modules.md#getclientforgeneralsettingsservice)
+- [getClientForGeneralStreamsService](modules.md#getclientforgeneralstreamsservice)
+- [getClientForGoalsService](modules.md#getclientforgoalsservice)
+- [getClientForGoodsDispatchesService](modules.md#getclientforgoodsdispatchesservice)
+- [getClientForGoodsReceiptsService](modules.md#getclientforgoodsreceiptsservice)
+- [getClientForHolidaysService](modules.md#getclientforholidaysservice)
+- [getClientForInfrastructuresService](modules.md#getclientforinfrastructuresservice)
+- [getClientForInventoryService](modules.md#getclientforinventoryservice)
+- [getClientForInwardJobsFreeIssueMaterialsReturnsService](modules.md#getclientforinwardjobsfreeissuematerialsreturnsservice)
+- [getClientForInwardJobsFreeIssueMaterialsService](modules.md#getclientforinwardjobsfreeissuematerialsservice)
+- [getClientForInwardJobsService](modules.md#getclientforinwardjobsservice)
+- [getClientForLabelsService](modules.md#getclientforlabelsservice)
+- [getClientForLeavesAdjustmentsService](modules.md#getclientforleavesadjustmentsservice)
+- [getClientForLeavesLogsService](modules.md#getclientforleaveslogsservice)
+- [getClientForLeavesRequestsService](modules.md#getclientforleavesrequestsservice)
+- [getClientForLeavesTypesService](modules.md#getclientforleavestypesservice)
+- [getClientForLedgersService](modules.md#getclientforledgersservice)
+- [getClientForLocationsService](modules.md#getclientforlocationsservice)
+- [getClientForLoginService](modules.md#getclientforloginservice)
+- [getClientForMeetingsService](modules.md#getclientformeetingsservice)
+- [getClientForMerchandisesService](modules.md#getclientformerchandisesservice)
+- [getClientForNotesService](modules.md#getclientfornotesservice)
+- [getClientForOnDutiesService](modules.md#getclientforondutiesservice)
+- [getClientForOutwardJobsFreeIssueMaterialsReturnsService](modules.md#getclientforoutwardjobsfreeissuematerialsreturnsservice)
+- [getClientForOutwardJobsFreeIssueMaterialsService](modules.md#getclientforoutwardjobsfreeissuematerialsservice)
+- [getClientForOutwardJobsService](modules.md#getclientforoutwardjobsservice)
+- [getClientForOvertimesService](modules.md#getclientforovertimesservice)
+- [getClientForPayrollGroupsService](modules.md#getclientforpayrollgroupsservice)
+- [getClientForPayrollParamsService](modules.md#getclientforpayrollparamsservice)
+- [getClientForProductionIndentsService](modules.md#getclientforproductionindentsservice)
+- [getClientForProductionPlansService](modules.md#getclientforproductionplansservice)
+- [getClientForProductsService](modules.md#getclientforproductsservice)
+- [getClientForProjectsService](modules.md#getclientforprojectsservice)
+- [getClientForPurchasesEnquiriesService](modules.md#getclientforpurchasesenquiriesservice)
+- [getClientForPurchasesIndentsService](modules.md#getclientforpurchasesindentsservice)
+- [getClientForPurchasesOrdersService](modules.md#getclientforpurchasesordersservice)
+- [getClientForPurchasesPaymentsService](modules.md#getclientforpurchasespaymentsservice)
+- [getClientForPurchasesReturnsService](modules.md#getclientforpurchasesreturnsservice)
+- [getClientForQCGroupsService](modules.md#getclientforqcgroupsservice)
+- [getClientForQCHubsService](modules.md#getclientforqchubsservice)
+- [getClientForQCParamsService](modules.md#getclientforqcparamsservice)
+- [getClientForQCSamplesService](modules.md#getclientforqcsamplesservice)
+- [getClientForQuotationsRequestsService](modules.md#getclientforquotationsrequestsservice)
+- [getClientForQuotationsResponsesService](modules.md#getclientforquotationsresponsesservice)
+- [getClientForReplaceableIndentsService](modules.md#getclientforreplaceableindentsservice)
+- [getClientForRolesService](modules.md#getclientforrolesservice)
+- [getClientForSalariesService](modules.md#getclientforsalariesservice)
+- [getClientForSalesEnquiriesService](modules.md#getclientforsalesenquiriesservice)
+- [getClientForSalesInvoicesService](modules.md#getclientforsalesinvoicesservice)
+- [getClientForSalesOrdersService](modules.md#getclientforsalesordersservice)
+- [getClientForSalesQuotationsService](modules.md#getclientforsalesquotationsservice)
+- [getClientForSalesReceiptsService](modules.md#getclientforsalesreceiptsservice)
+- [getClientForSalesReturnsService](modules.md#getclientforsalesreturnsservice)
+- [getClientForShiftsGroupsService](modules.md#getclientforshiftsgroupsservice)
+- [getClientForShiftsService](modules.md#getclientforshiftsservice)
+- [getClientForSkillsGroupsService](modules.md#getclientforskillsgroupsservice)
+- [getClientForSkillsParamsService](modules.md#getclientforskillsparamsservice)
+- [getClientForStockAuditsService](modules.md#getclientforstockauditsservice)
+- [getClientForStockIssuancesService](modules.md#getclientforstockissuancesservice)
+- [getClientForStockReturnsService](modules.md#getclientforstockreturnsservice)
+- [getClientForStoragesService](modules.md#getclientforstoragesservice)
+- [getClientForStoresService](modules.md#getclientforstoresservice)
+- [getClientForTaxGroupsService](modules.md#getclientfortaxgroupsservice)
+- [getClientForTaxParamsService](modules.md#getclientfortaxparamsservice)
+- [getClientForTeamsService](modules.md#getclientforteamsservice)
+- [getClientForUnitsOfMaterialsService](modules.md#getclientforunitsofmaterialsservice)
+- [getClientForUsersService](modules.md#getclientforusersservice)
+- [getClientForVaultService](modules.md#getclientforvaultservice)
+- [getClientForVendorInvoicesService](modules.md#getclientforvendorinvoicesservice)
+- [getClientForVendorStreamsService](modules.md#getclientforvendorstreamsservice)
+- [getClientForVendorsService](modules.md#getclientforvendorsservice)
+- [getClientForVisitationsService](modules.md#getclientforvisitationsservice)
+- [getClientForWorkOrdersService](modules.md#getclientforworkordersservice)
+- [getClientForWorkflowsRulesService](modules.md#getclientforworkflowsrulesservice)
+
 ## Variables
 
 ### AbsencesService
@@ -3985,7 +4092,7 @@ from service Scailo.ClientStreamsService
 
 #### Defined in
 
-src/clientstreams.scailo_connect.ts:16
+src/client_streams.scailo_connect.ts:16
 
 ___
 
@@ -7147,7 +7254,7 @@ from service Scailo.GeneralStreamsService
 
 #### Defined in
 
-src/generalstreams.scailo_connect.ts:16
+src/general_streams.scailo_connect.ts:16
 
 ___
 
@@ -10121,7 +10228,7 @@ from service Scailo.LoginService
 
 #### Defined in
 
-src/logins.scailo_connect.ts:16
+src/login.scailo_connect.ts:16
 
 ___
 
@@ -20080,7 +20187,7 @@ from service Scailo.VaultService
 
 #### Defined in
 
-src/vault_services.scailo_connect.ts:22
+src/vault.scailo_connect.ts:22
 
 ___
 
@@ -20551,7 +20658,7 @@ from service Scailo.VendorStreamsService
 
 #### Defined in
 
-src/vendorstreams.scailo_connect.ts:16
+src/vendor_streams.scailo_connect.ts:16
 
 ___
 
@@ -21314,3 +21421,4579 @@ from service Scailo.WorkflowsRulesService
 #### Defined in
 
 src/workflows_rules.scailo_connect.ts:16
+
+## Functions
+
+### getClientForAbsencesService
+
+▸ **getClientForAbsencesService**(`transport`): `PromiseClient`\<typeof [`AbsencesService`](modules.md#absencesservice)\>
+
+Get the client to access the AbsencesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`AbsencesService`](modules.md#absencesservice)\>
+
+#### Defined in
+
+index.ts:348
+
+___
+
+### getClientForActionsCodesService
+
+▸ **getClientForActionsCodesService**(`transport`): `PromiseClient`\<typeof [`ActionsCodesService`](modules.md#actionscodesservice)\>
+
+Get the client to access the ActionsCodesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ActionsCodesService`](modules.md#actionscodesservice)\>
+
+#### Defined in
+
+index.ts:379
+
+___
+
+### getClientForActivitiesGroupsService
+
+▸ **getClientForActivitiesGroupsService**(`transport`): `PromiseClient`\<typeof [`ActivitiesGroupsService`](modules.md#activitiesgroupsservice)\>
+
+Get the client to access the ActivitiesGroupsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ActivitiesGroupsService`](modules.md#activitiesgroupsservice)\>
+
+#### Defined in
+
+index.ts:441
+
+___
+
+### getClientForActivitiesService
+
+▸ **getClientForActivitiesService**(`transport`): `PromiseClient`\<typeof [`ActivitiesService`](modules.md#activitiesservice)\>
+
+Get the client to access the ActivitiesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ActivitiesService`](modules.md#activitiesservice)\>
+
+#### Defined in
+
+index.ts:410
+
+___
+
+### getClientForActivitiesStatusesService
+
+▸ **getClientForActivitiesStatusesService**(`transport`): `PromiseClient`\<typeof [`ActivitiesStatusesService`](modules.md#activitiesstatusesservice)\>
+
+Get the client to access the ActivitiesStatusesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ActivitiesStatusesService`](modules.md#activitiesstatusesservice)\>
+
+#### Defined in
+
+index.ts:472
+
+___
+
+### getClientForActivitiesTagsService
+
+▸ **getClientForActivitiesTagsService**(`transport`): `PromiseClient`\<typeof [`ActivitiesTagsService`](modules.md#activitiestagsservice)\>
+
+Get the client to access the ActivitiesTagsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ActivitiesTagsService`](modules.md#activitiestagsservice)\>
+
+#### Defined in
+
+index.ts:503
+
+___
+
+### getClientForAnnouncementsService
+
+▸ **getClientForAnnouncementsService**(`transport`): `PromiseClient`\<typeof [`AnnouncementsService`](modules.md#announcementsservice)\>
+
+Get the client to access the AnnouncementsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`AnnouncementsService`](modules.md#announcementsservice)\>
+
+#### Defined in
+
+index.ts:534
+
+___
+
+### getClientForAssetIndentsService
+
+▸ **getClientForAssetIndentsService**(`transport`): `PromiseClient`\<typeof [`AssetIndentsService`](modules.md#assetindentsservice)\>
+
+Get the client to access the AssetIndentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`AssetIndentsService`](modules.md#assetindentsservice)\>
+
+#### Defined in
+
+index.ts:565
+
+___
+
+### getClientForAssociatesService
+
+▸ **getClientForAssociatesService**(`transport`): `PromiseClient`\<typeof [`AssociatesService`](modules.md#associatesservice)\>
+
+Get the client to access the AssociatesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`AssociatesService`](modules.md#associatesservice)\>
+
+#### Defined in
+
+index.ts:596
+
+___
+
+### getClientForAttendancesAmendmentsService
+
+▸ **getClientForAttendancesAmendmentsService**(`transport`): `PromiseClient`\<typeof [`AttendancesAmendmentsService`](modules.md#attendancesamendmentsservice)\>
+
+Get the client to access the AttendancesAmendmentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`AttendancesAmendmentsService`](modules.md#attendancesamendmentsservice)\>
+
+#### Defined in
+
+index.ts:658
+
+___
+
+### getClientForAttendancesService
+
+▸ **getClientForAttendancesService**(`transport`): `PromiseClient`\<typeof [`AttendancesService`](modules.md#attendancesservice)\>
+
+Get the client to access the AttendancesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`AttendancesService`](modules.md#attendancesservice)\>
+
+#### Defined in
+
+index.ts:627
+
+___
+
+### getClientForBankAccountsService
+
+▸ **getClientForBankAccountsService**(`transport`): `PromiseClient`\<typeof [`BankAccountsService`](modules.md#bankaccountsservice)\>
+
+Get the client to access the BankAccountsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`BankAccountsService`](modules.md#bankaccountsservice)\>
+
+#### Defined in
+
+index.ts:689
+
+___
+
+### getClientForClientStreamsService
+
+▸ **getClientForClientStreamsService**(`transport`): `PromiseClient`\<typeof [`ClientStreamsService`](modules.md#clientstreamsservice)\>
+
+Get the client to access the ClientStreamsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ClientStreamsService`](modules.md#clientstreamsservice)\>
+
+#### Defined in
+
+index.ts:720
+
+___
+
+### getClientForClientsService
+
+▸ **getClientForClientsService**(`transport`): `PromiseClient`\<typeof [`ClientsService`](modules.md#clientsservice)\>
+
+Get the client to access the ClientsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ClientsService`](modules.md#clientsservice)\>
+
+#### Defined in
+
+index.ts:751
+
+___
+
+### getClientForComponentsService
+
+▸ **getClientForComponentsService**(`transport`): `PromiseClient`\<typeof [`ComponentsService`](modules.md#componentsservice)\>
+
+Get the client to access the ComponentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ComponentsService`](modules.md#componentsservice)\>
+
+#### Defined in
+
+index.ts:782
+
+___
+
+### getClientForCreditNotesService
+
+▸ **getClientForCreditNotesService**(`transport`): `PromiseClient`\<typeof [`CreditNotesService`](modules.md#creditnotesservice)\>
+
+Get the client to access the CreditNotesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`CreditNotesService`](modules.md#creditnotesservice)\>
+
+#### Defined in
+
+index.ts:813
+
+___
+
+### getClientForCurrenciesService
+
+▸ **getClientForCurrenciesService**(`transport`): `PromiseClient`\<typeof [`CurrenciesService`](modules.md#currenciesservice)\>
+
+Get the client to access the CurrenciesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`CurrenciesService`](modules.md#currenciesservice)\>
+
+#### Defined in
+
+index.ts:844
+
+___
+
+### getClientForDebitNotesService
+
+▸ **getClientForDebitNotesService**(`transport`): `PromiseClient`\<typeof [`DebitNotesService`](modules.md#debitnotesservice)\>
+
+Get the client to access the DebitNotesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`DebitNotesService`](modules.md#debitnotesservice)\>
+
+#### Defined in
+
+index.ts:875
+
+___
+
+### getClientForDepartmentsService
+
+▸ **getClientForDepartmentsService**(`transport`): `PromiseClient`\<typeof [`DepartmentsService`](modules.md#departmentsservice)\>
+
+Get the client to access the DepartmentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`DepartmentsService`](modules.md#departmentsservice)\>
+
+#### Defined in
+
+index.ts:906
+
+___
+
+### getClientForEquationsFamiliesService
+
+▸ **getClientForEquationsFamiliesService**(`transport`): `PromiseClient`\<typeof [`EquationsFamiliesService`](modules.md#equationsfamiliesservice)\>
+
+Get the client to access the EquationsFamiliesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`EquationsFamiliesService`](modules.md#equationsfamiliesservice)\>
+
+#### Defined in
+
+index.ts:937
+
+___
+
+### getClientForEquationsReplaceablesService
+
+▸ **getClientForEquationsReplaceablesService**(`transport`): `PromiseClient`\<typeof [`EquationsReplaceablesService`](modules.md#equationsreplaceablesservice)\>
+
+Get the client to access the EquationsReplaceablesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`EquationsReplaceablesService`](modules.md#equationsreplaceablesservice)\>
+
+#### Defined in
+
+index.ts:968
+
+___
+
+### getClientForEquationsSalesBundlesService
+
+▸ **getClientForEquationsSalesBundlesService**(`transport`): `PromiseClient`\<typeof [`EquationsSalesBundlesService`](modules.md#equationssalesbundlesservice)\>
+
+Get the client to access the EquationsSalesBundlesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`EquationsSalesBundlesService`](modules.md#equationssalesbundlesservice)\>
+
+#### Defined in
+
+index.ts:999
+
+___
+
+### getClientForEquationsWorkOrdersService
+
+▸ **getClientForEquationsWorkOrdersService**(`transport`): `PromiseClient`\<typeof [`EquationsWorkOrdersService`](modules.md#equationsworkordersservice)\>
+
+Get the client to access the EquationsWorkOrdersService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`EquationsWorkOrdersService`](modules.md#equationsworkordersservice)\>
+
+#### Defined in
+
+index.ts:1030
+
+___
+
+### getClientForEquipmentsService
+
+▸ **getClientForEquipmentsService**(`transport`): `PromiseClient`\<typeof [`EquipmentsService`](modules.md#equipmentsservice)\>
+
+Get the client to access the EquipmentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`EquipmentsService`](modules.md#equipmentsservice)\>
+
+#### Defined in
+
+index.ts:1061
+
+___
+
+### getClientForExpensesService
+
+▸ **getClientForExpensesService**(`transport`): `PromiseClient`\<typeof [`ExpensesService`](modules.md#expensesservice)\>
+
+Get the client to access the ExpensesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ExpensesService`](modules.md#expensesservice)\>
+
+#### Defined in
+
+index.ts:1092
+
+___
+
+### getClientForFamiliesService
+
+▸ **getClientForFamiliesService**(`transport`): `PromiseClient`\<typeof [`FamiliesService`](modules.md#familiesservice)\>
+
+Get the client to access the FamiliesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`FamiliesService`](modules.md#familiesservice)\>
+
+#### Defined in
+
+index.ts:1123
+
+___
+
+### getClientForFeedstocksService
+
+▸ **getClientForFeedstocksService**(`transport`): `PromiseClient`\<typeof [`FeedstocksService`](modules.md#feedstocksservice)\>
+
+Get the client to access the FeedstocksService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`FeedstocksService`](modules.md#feedstocksservice)\>
+
+#### Defined in
+
+index.ts:1154
+
+___
+
+### getClientForFormsFieldsDataService
+
+▸ **getClientForFormsFieldsDataService**(`transport`): `PromiseClient`\<typeof [`FormsFieldsDataService`](modules.md#formsfieldsdataservice)\>
+
+Get the client to access the FormsFieldsDataService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`FormsFieldsDataService`](modules.md#formsfieldsdataservice)\>
+
+#### Defined in
+
+index.ts:1216
+
+___
+
+### getClientForFormsFieldsService
+
+▸ **getClientForFormsFieldsService**(`transport`): `PromiseClient`\<typeof [`FormsFieldsService`](modules.md#formsfieldsservice)\>
+
+Get the client to access the FormsFieldsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`FormsFieldsService`](modules.md#formsfieldsservice)\>
+
+#### Defined in
+
+index.ts:1185
+
+___
+
+### getClientForFormsSectionsService
+
+▸ **getClientForFormsSectionsService**(`transport`): `PromiseClient`\<typeof [`FormsSectionsService`](modules.md#formssectionsservice)\>
+
+Get the client to access the FormsSectionsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`FormsSectionsService`](modules.md#formssectionsservice)\>
+
+#### Defined in
+
+index.ts:1247
+
+___
+
+### getClientForGeneralSettingsService
+
+▸ **getClientForGeneralSettingsService**(`transport`): `PromiseClient`\<typeof [`GeneralSettingsService`](modules.md#generalsettingsservice)\>
+
+Get the client to access the GeneralSettingsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`GeneralSettingsService`](modules.md#generalsettingsservice)\>
+
+#### Defined in
+
+index.ts:1278
+
+___
+
+### getClientForGeneralStreamsService
+
+▸ **getClientForGeneralStreamsService**(`transport`): `PromiseClient`\<typeof [`GeneralStreamsService`](modules.md#generalstreamsservice)\>
+
+Get the client to access the GeneralStreamsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`GeneralStreamsService`](modules.md#generalstreamsservice)\>
+
+#### Defined in
+
+index.ts:1309
+
+___
+
+### getClientForGoalsService
+
+▸ **getClientForGoalsService**(`transport`): `PromiseClient`\<typeof [`GoalsService`](modules.md#goalsservice)\>
+
+Get the client to access the GoalsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`GoalsService`](modules.md#goalsservice)\>
+
+#### Defined in
+
+index.ts:1340
+
+___
+
+### getClientForGoodsDispatchesService
+
+▸ **getClientForGoodsDispatchesService**(`transport`): `PromiseClient`\<typeof [`GoodsDispatchesService`](modules.md#goodsdispatchesservice)\>
+
+Get the client to access the GoodsDispatchesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`GoodsDispatchesService`](modules.md#goodsdispatchesservice)\>
+
+#### Defined in
+
+index.ts:1371
+
+___
+
+### getClientForGoodsReceiptsService
+
+▸ **getClientForGoodsReceiptsService**(`transport`): `PromiseClient`\<typeof [`GoodsReceiptsService`](modules.md#goodsreceiptsservice)\>
+
+Get the client to access the GoodsReceiptsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`GoodsReceiptsService`](modules.md#goodsreceiptsservice)\>
+
+#### Defined in
+
+index.ts:1402
+
+___
+
+### getClientForHolidaysService
+
+▸ **getClientForHolidaysService**(`transport`): `PromiseClient`\<typeof [`HolidaysService`](modules.md#holidaysservice)\>
+
+Get the client to access the HolidaysService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`HolidaysService`](modules.md#holidaysservice)\>
+
+#### Defined in
+
+index.ts:1433
+
+___
+
+### getClientForInfrastructuresService
+
+▸ **getClientForInfrastructuresService**(`transport`): `PromiseClient`\<typeof [`InfrastructuresService`](modules.md#infrastructuresservice)\>
+
+Get the client to access the InfrastructuresService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`InfrastructuresService`](modules.md#infrastructuresservice)\>
+
+#### Defined in
+
+index.ts:1464
+
+___
+
+### getClientForInventoryService
+
+▸ **getClientForInventoryService**(`transport`): `PromiseClient`\<typeof [`InventoryService`](modules.md#inventoryservice)\>
+
+Get the client to access the InventoryService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`InventoryService`](modules.md#inventoryservice)\>
+
+#### Defined in
+
+index.ts:1495
+
+___
+
+### getClientForInwardJobsFreeIssueMaterialsReturnsService
+
+▸ **getClientForInwardJobsFreeIssueMaterialsReturnsService**(`transport`): `PromiseClient`\<typeof [`InwardJobsFreeIssueMaterialsReturnsService`](modules.md#inwardjobsfreeissuematerialsreturnsservice)\>
+
+Get the client to access the InwardJobsFreeIssueMaterialsReturnsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`InwardJobsFreeIssueMaterialsReturnsService`](modules.md#inwardjobsfreeissuematerialsreturnsservice)\>
+
+#### Defined in
+
+index.ts:1588
+
+___
+
+### getClientForInwardJobsFreeIssueMaterialsService
+
+▸ **getClientForInwardJobsFreeIssueMaterialsService**(`transport`): `PromiseClient`\<typeof [`InwardJobsFreeIssueMaterialsService`](modules.md#inwardjobsfreeissuematerialsservice)\>
+
+Get the client to access the InwardJobsFreeIssueMaterialsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`InwardJobsFreeIssueMaterialsService`](modules.md#inwardjobsfreeissuematerialsservice)\>
+
+#### Defined in
+
+index.ts:1557
+
+___
+
+### getClientForInwardJobsService
+
+▸ **getClientForInwardJobsService**(`transport`): `PromiseClient`\<typeof [`InwardJobsService`](modules.md#inwardjobsservice)\>
+
+Get the client to access the InwardJobsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`InwardJobsService`](modules.md#inwardjobsservice)\>
+
+#### Defined in
+
+index.ts:1526
+
+___
+
+### getClientForLabelsService
+
+▸ **getClientForLabelsService**(`transport`): `PromiseClient`\<typeof [`LabelsService`](modules.md#labelsservice)\>
+
+Get the client to access the LabelsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`LabelsService`](modules.md#labelsservice)\>
+
+#### Defined in
+
+index.ts:1619
+
+___
+
+### getClientForLeavesAdjustmentsService
+
+▸ **getClientForLeavesAdjustmentsService**(`transport`): `PromiseClient`\<typeof [`LeavesAdjustmentsService`](modules.md#leavesadjustmentsservice)\>
+
+Get the client to access the LeavesAdjustmentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`LeavesAdjustmentsService`](modules.md#leavesadjustmentsservice)\>
+
+#### Defined in
+
+index.ts:1650
+
+___
+
+### getClientForLeavesLogsService
+
+▸ **getClientForLeavesLogsService**(`transport`): `PromiseClient`\<typeof [`LeavesLogsService`](modules.md#leaveslogsservice)\>
+
+Get the client to access the LeavesLogsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`LeavesLogsService`](modules.md#leaveslogsservice)\>
+
+#### Defined in
+
+index.ts:1681
+
+___
+
+### getClientForLeavesRequestsService
+
+▸ **getClientForLeavesRequestsService**(`transport`): `PromiseClient`\<typeof [`LeavesRequestsService`](modules.md#leavesrequestsservice)\>
+
+Get the client to access the LeavesRequestsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`LeavesRequestsService`](modules.md#leavesrequestsservice)\>
+
+#### Defined in
+
+index.ts:1712
+
+___
+
+### getClientForLeavesTypesService
+
+▸ **getClientForLeavesTypesService**(`transport`): `PromiseClient`\<typeof [`LeavesTypesService`](modules.md#leavestypesservice)\>
+
+Get the client to access the LeavesTypesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`LeavesTypesService`](modules.md#leavestypesservice)\>
+
+#### Defined in
+
+index.ts:1743
+
+___
+
+### getClientForLedgersService
+
+▸ **getClientForLedgersService**(`transport`): `PromiseClient`\<typeof [`LedgersService`](modules.md#ledgersservice)\>
+
+Get the client to access the LedgersService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`LedgersService`](modules.md#ledgersservice)\>
+
+#### Defined in
+
+index.ts:1774
+
+___
+
+### getClientForLocationsService
+
+▸ **getClientForLocationsService**(`transport`): `PromiseClient`\<typeof [`LocationsService`](modules.md#locationsservice)\>
+
+Get the client to access the LocationsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`LocationsService`](modules.md#locationsservice)\>
+
+#### Defined in
+
+index.ts:1805
+
+___
+
+### getClientForLoginService
+
+▸ **getClientForLoginService**(`transport`): `PromiseClient`\<typeof [`LoginService`](modules.md#loginservice)\>
+
+Get the client to access the LoginService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`LoginService`](modules.md#loginservice)\>
+
+#### Defined in
+
+index.ts:1836
+
+___
+
+### getClientForMeetingsService
+
+▸ **getClientForMeetingsService**(`transport`): `PromiseClient`\<typeof [`MeetingsService`](modules.md#meetingsservice)\>
+
+Get the client to access the MeetingsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`MeetingsService`](modules.md#meetingsservice)\>
+
+#### Defined in
+
+index.ts:1867
+
+___
+
+### getClientForMerchandisesService
+
+▸ **getClientForMerchandisesService**(`transport`): `PromiseClient`\<typeof [`MerchandisesService`](modules.md#merchandisesservice)\>
+
+Get the client to access the MerchandisesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`MerchandisesService`](modules.md#merchandisesservice)\>
+
+#### Defined in
+
+index.ts:1898
+
+___
+
+### getClientForNotesService
+
+▸ **getClientForNotesService**(`transport`): `PromiseClient`\<typeof [`NotesService`](modules.md#notesservice)\>
+
+Get the client to access the NotesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`NotesService`](modules.md#notesservice)\>
+
+#### Defined in
+
+index.ts:1929
+
+___
+
+### getClientForOnDutiesService
+
+▸ **getClientForOnDutiesService**(`transport`): `PromiseClient`\<typeof [`OnDutiesService`](modules.md#ondutiesservice)\>
+
+Get the client to access the OnDutiesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`OnDutiesService`](modules.md#ondutiesservice)\>
+
+#### Defined in
+
+index.ts:1960
+
+___
+
+### getClientForOutwardJobsFreeIssueMaterialsReturnsService
+
+▸ **getClientForOutwardJobsFreeIssueMaterialsReturnsService**(`transport`): `PromiseClient`\<typeof [`OutwardJobsFreeIssueMaterialsReturnsService`](modules.md#outwardjobsfreeissuematerialsreturnsservice)\>
+
+Get the client to access the OutwardJobsFreeIssueMaterialsReturnsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`OutwardJobsFreeIssueMaterialsReturnsService`](modules.md#outwardjobsfreeissuematerialsreturnsservice)\>
+
+#### Defined in
+
+index.ts:2053
+
+___
+
+### getClientForOutwardJobsFreeIssueMaterialsService
+
+▸ **getClientForOutwardJobsFreeIssueMaterialsService**(`transport`): `PromiseClient`\<typeof [`OutwardJobsFreeIssueMaterialsService`](modules.md#outwardjobsfreeissuematerialsservice)\>
+
+Get the client to access the OutwardJobsFreeIssueMaterialsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`OutwardJobsFreeIssueMaterialsService`](modules.md#outwardjobsfreeissuematerialsservice)\>
+
+#### Defined in
+
+index.ts:2022
+
+___
+
+### getClientForOutwardJobsService
+
+▸ **getClientForOutwardJobsService**(`transport`): `PromiseClient`\<typeof [`OutwardJobsService`](modules.md#outwardjobsservice)\>
+
+Get the client to access the OutwardJobsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`OutwardJobsService`](modules.md#outwardjobsservice)\>
+
+#### Defined in
+
+index.ts:1991
+
+___
+
+### getClientForOvertimesService
+
+▸ **getClientForOvertimesService**(`transport`): `PromiseClient`\<typeof [`OvertimesService`](modules.md#overtimesservice)\>
+
+Get the client to access the OvertimesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`OvertimesService`](modules.md#overtimesservice)\>
+
+#### Defined in
+
+index.ts:2084
+
+___
+
+### getClientForPayrollGroupsService
+
+▸ **getClientForPayrollGroupsService**(`transport`): `PromiseClient`\<typeof [`PayrollGroupsService`](modules.md#payrollgroupsservice)\>
+
+Get the client to access the PayrollGroupsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`PayrollGroupsService`](modules.md#payrollgroupsservice)\>
+
+#### Defined in
+
+index.ts:2115
+
+___
+
+### getClientForPayrollParamsService
+
+▸ **getClientForPayrollParamsService**(`transport`): `PromiseClient`\<typeof [`PayrollParamsService`](modules.md#payrollparamsservice)\>
+
+Get the client to access the PayrollParamsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`PayrollParamsService`](modules.md#payrollparamsservice)\>
+
+#### Defined in
+
+index.ts:2146
+
+___
+
+### getClientForProductionIndentsService
+
+▸ **getClientForProductionIndentsService**(`transport`): `PromiseClient`\<typeof [`ProductionIndentsService`](modules.md#productionindentsservice)\>
+
+Get the client to access the ProductionIndentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ProductionIndentsService`](modules.md#productionindentsservice)\>
+
+#### Defined in
+
+index.ts:2177
+
+___
+
+### getClientForProductionPlansService
+
+▸ **getClientForProductionPlansService**(`transport`): `PromiseClient`\<typeof [`ProductionPlansService`](modules.md#productionplansservice)\>
+
+Get the client to access the ProductionPlansService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ProductionPlansService`](modules.md#productionplansservice)\>
+
+#### Defined in
+
+index.ts:2208
+
+___
+
+### getClientForProductsService
+
+▸ **getClientForProductsService**(`transport`): `PromiseClient`\<typeof [`ProductsService`](modules.md#productsservice)\>
+
+Get the client to access the ProductsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ProductsService`](modules.md#productsservice)\>
+
+#### Defined in
+
+index.ts:2239
+
+___
+
+### getClientForProjectsService
+
+▸ **getClientForProjectsService**(`transport`): `PromiseClient`\<typeof [`ProjectsService`](modules.md#projectsservice)\>
+
+Get the client to access the ProjectsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ProjectsService`](modules.md#projectsservice)\>
+
+#### Defined in
+
+index.ts:2270
+
+___
+
+### getClientForPurchasesEnquiriesService
+
+▸ **getClientForPurchasesEnquiriesService**(`transport`): `PromiseClient`\<typeof [`PurchasesEnquiriesService`](modules.md#purchasesenquiriesservice)\>
+
+Get the client to access the PurchasesEnquiriesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`PurchasesEnquiriesService`](modules.md#purchasesenquiriesservice)\>
+
+#### Defined in
+
+index.ts:2301
+
+___
+
+### getClientForPurchasesIndentsService
+
+▸ **getClientForPurchasesIndentsService**(`transport`): `PromiseClient`\<typeof [`PurchasesIndentsService`](modules.md#purchasesindentsservice)\>
+
+Get the client to access the PurchasesIndentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`PurchasesIndentsService`](modules.md#purchasesindentsservice)\>
+
+#### Defined in
+
+index.ts:2332
+
+___
+
+### getClientForPurchasesOrdersService
+
+▸ **getClientForPurchasesOrdersService**(`transport`): `PromiseClient`\<typeof [`PurchasesOrdersService`](modules.md#purchasesordersservice)\>
+
+Get the client to access the PurchasesOrdersService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`PurchasesOrdersService`](modules.md#purchasesordersservice)\>
+
+#### Defined in
+
+index.ts:2363
+
+___
+
+### getClientForPurchasesPaymentsService
+
+▸ **getClientForPurchasesPaymentsService**(`transport`): `PromiseClient`\<typeof [`PurchasesPaymentsService`](modules.md#purchasespaymentsservice)\>
+
+Get the client to access the PurchasesPaymentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`PurchasesPaymentsService`](modules.md#purchasespaymentsservice)\>
+
+#### Defined in
+
+index.ts:2394
+
+___
+
+### getClientForPurchasesReturnsService
+
+▸ **getClientForPurchasesReturnsService**(`transport`): `PromiseClient`\<typeof [`PurchasesReturnsService`](modules.md#purchasesreturnsservice)\>
+
+Get the client to access the PurchasesReturnsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`PurchasesReturnsService`](modules.md#purchasesreturnsservice)\>
+
+#### Defined in
+
+index.ts:2425
+
+___
+
+### getClientForQCGroupsService
+
+▸ **getClientForQCGroupsService**(`transport`): `PromiseClient`\<typeof [`QCGroupsService`](modules.md#qcgroupsservice)\>
+
+Get the client to access the QCGroupsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`QCGroupsService`](modules.md#qcgroupsservice)\>
+
+#### Defined in
+
+index.ts:2456
+
+___
+
+### getClientForQCHubsService
+
+▸ **getClientForQCHubsService**(`transport`): `PromiseClient`\<typeof [`QCHubsService`](modules.md#qchubsservice)\>
+
+Get the client to access the QCHubsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`QCHubsService`](modules.md#qchubsservice)\>
+
+#### Defined in
+
+index.ts:2487
+
+___
+
+### getClientForQCParamsService
+
+▸ **getClientForQCParamsService**(`transport`): `PromiseClient`\<typeof [`QCParamsService`](modules.md#qcparamsservice)\>
+
+Get the client to access the QCParamsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`QCParamsService`](modules.md#qcparamsservice)\>
+
+#### Defined in
+
+index.ts:2518
+
+___
+
+### getClientForQCSamplesService
+
+▸ **getClientForQCSamplesService**(`transport`): `PromiseClient`\<typeof [`QCSamplesService`](modules.md#qcsamplesservice)\>
+
+Get the client to access the QCSamplesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`QCSamplesService`](modules.md#qcsamplesservice)\>
+
+#### Defined in
+
+index.ts:2549
+
+___
+
+### getClientForQuotationsRequestsService
+
+▸ **getClientForQuotationsRequestsService**(`transport`): `PromiseClient`\<typeof [`QuotationsRequestsService`](modules.md#quotationsrequestsservice)\>
+
+Get the client to access the QuotationsRequestsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`QuotationsRequestsService`](modules.md#quotationsrequestsservice)\>
+
+#### Defined in
+
+index.ts:2580
+
+___
+
+### getClientForQuotationsResponsesService
+
+▸ **getClientForQuotationsResponsesService**(`transport`): `PromiseClient`\<typeof [`QuotationsResponsesService`](modules.md#quotationsresponsesservice)\>
+
+Get the client to access the QuotationsResponsesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`QuotationsResponsesService`](modules.md#quotationsresponsesservice)\>
+
+#### Defined in
+
+index.ts:2611
+
+___
+
+### getClientForReplaceableIndentsService
+
+▸ **getClientForReplaceableIndentsService**(`transport`): `PromiseClient`\<typeof [`ReplaceableIndentsService`](modules.md#replaceableindentsservice)\>
+
+Get the client to access the ReplaceableIndentsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ReplaceableIndentsService`](modules.md#replaceableindentsservice)\>
+
+#### Defined in
+
+index.ts:2642
+
+___
+
+### getClientForRolesService
+
+▸ **getClientForRolesService**(`transport`): `PromiseClient`\<typeof [`RolesService`](modules.md#rolesservice)\>
+
+Get the client to access the RolesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`RolesService`](modules.md#rolesservice)\>
+
+#### Defined in
+
+index.ts:2673
+
+___
+
+### getClientForSalariesService
+
+▸ **getClientForSalariesService**(`transport`): `PromiseClient`\<typeof [`SalariesService`](modules.md#salariesservice)\>
+
+Get the client to access the SalariesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SalariesService`](modules.md#salariesservice)\>
+
+#### Defined in
+
+index.ts:2704
+
+___
+
+### getClientForSalesEnquiriesService
+
+▸ **getClientForSalesEnquiriesService**(`transport`): `PromiseClient`\<typeof [`SalesEnquiriesService`](modules.md#salesenquiriesservice)\>
+
+Get the client to access the SalesEnquiriesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SalesEnquiriesService`](modules.md#salesenquiriesservice)\>
+
+#### Defined in
+
+index.ts:2735
+
+___
+
+### getClientForSalesInvoicesService
+
+▸ **getClientForSalesInvoicesService**(`transport`): `PromiseClient`\<typeof [`SalesInvoicesService`](modules.md#salesinvoicesservice)\>
+
+Get the client to access the SalesInvoicesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SalesInvoicesService`](modules.md#salesinvoicesservice)\>
+
+#### Defined in
+
+index.ts:2766
+
+___
+
+### getClientForSalesOrdersService
+
+▸ **getClientForSalesOrdersService**(`transport`): `PromiseClient`\<typeof [`SalesOrdersService`](modules.md#salesordersservice)\>
+
+Get the client to access the SalesOrdersService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SalesOrdersService`](modules.md#salesordersservice)\>
+
+#### Defined in
+
+index.ts:2797
+
+___
+
+### getClientForSalesQuotationsService
+
+▸ **getClientForSalesQuotationsService**(`transport`): `PromiseClient`\<typeof [`SalesQuotationsService`](modules.md#salesquotationsservice)\>
+
+Get the client to access the SalesQuotationsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SalesQuotationsService`](modules.md#salesquotationsservice)\>
+
+#### Defined in
+
+index.ts:2828
+
+___
+
+### getClientForSalesReceiptsService
+
+▸ **getClientForSalesReceiptsService**(`transport`): `PromiseClient`\<typeof [`SalesReceiptsService`](modules.md#salesreceiptsservice)\>
+
+Get the client to access the SalesReceiptsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SalesReceiptsService`](modules.md#salesreceiptsservice)\>
+
+#### Defined in
+
+index.ts:2859
+
+___
+
+### getClientForSalesReturnsService
+
+▸ **getClientForSalesReturnsService**(`transport`): `PromiseClient`\<typeof [`SalesReturnsService`](modules.md#salesreturnsservice)\>
+
+Get the client to access the SalesReturnsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SalesReturnsService`](modules.md#salesreturnsservice)\>
+
+#### Defined in
+
+index.ts:2890
+
+___
+
+### getClientForShiftsGroupsService
+
+▸ **getClientForShiftsGroupsService**(`transport`): `PromiseClient`\<typeof [`ShiftsGroupsService`](modules.md#shiftsgroupsservice)\>
+
+Get the client to access the ShiftsGroupsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ShiftsGroupsService`](modules.md#shiftsgroupsservice)\>
+
+#### Defined in
+
+index.ts:2952
+
+___
+
+### getClientForShiftsService
+
+▸ **getClientForShiftsService**(`transport`): `PromiseClient`\<typeof [`ShiftsService`](modules.md#shiftsservice)\>
+
+Get the client to access the ShiftsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ShiftsService`](modules.md#shiftsservice)\>
+
+#### Defined in
+
+index.ts:2921
+
+___
+
+### getClientForSkillsGroupsService
+
+▸ **getClientForSkillsGroupsService**(`transport`): `PromiseClient`\<typeof [`SkillsGroupsService`](modules.md#skillsgroupsservice)\>
+
+Get the client to access the SkillsGroupsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SkillsGroupsService`](modules.md#skillsgroupsservice)\>
+
+#### Defined in
+
+index.ts:2983
+
+___
+
+### getClientForSkillsParamsService
+
+▸ **getClientForSkillsParamsService**(`transport`): `PromiseClient`\<typeof [`SkillsParamsService`](modules.md#skillsparamsservice)\>
+
+Get the client to access the SkillsParamsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SkillsParamsService`](modules.md#skillsparamsservice)\>
+
+#### Defined in
+
+index.ts:3014
+
+___
+
+### getClientForStockAuditsService
+
+▸ **getClientForStockAuditsService**(`transport`): `PromiseClient`\<typeof [`StockAuditsService`](modules.md#stockauditsservice)\>
+
+Get the client to access the StockAuditsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`StockAuditsService`](modules.md#stockauditsservice)\>
+
+#### Defined in
+
+index.ts:3045
+
+___
+
+### getClientForStockIssuancesService
+
+▸ **getClientForStockIssuancesService**(`transport`): `PromiseClient`\<typeof [`StockIssuancesService`](modules.md#stockissuancesservice)\>
+
+Get the client to access the StockIssuancesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`StockIssuancesService`](modules.md#stockissuancesservice)\>
+
+#### Defined in
+
+index.ts:3076
+
+___
+
+### getClientForStockReturnsService
+
+▸ **getClientForStockReturnsService**(`transport`): `PromiseClient`\<typeof [`StockReturnsService`](modules.md#stockreturnsservice)\>
+
+Get the client to access the StockReturnsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`StockReturnsService`](modules.md#stockreturnsservice)\>
+
+#### Defined in
+
+index.ts:3107
+
+___
+
+### getClientForStoragesService
+
+▸ **getClientForStoragesService**(`transport`): `PromiseClient`\<typeof [`StoragesService`](modules.md#storagesservice)\>
+
+Get the client to access the StoragesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`StoragesService`](modules.md#storagesservice)\>
+
+#### Defined in
+
+index.ts:3138
+
+___
+
+### getClientForStoresService
+
+▸ **getClientForStoresService**(`transport`): `PromiseClient`\<typeof [`StoresService`](modules.md#storesservice)\>
+
+Get the client to access the StoresService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`StoresService`](modules.md#storesservice)\>
+
+#### Defined in
+
+index.ts:3169
+
+___
+
+### getClientForTaxGroupsService
+
+▸ **getClientForTaxGroupsService**(`transport`): `PromiseClient`\<typeof [`TaxGroupsService`](modules.md#taxgroupsservice)\>
+
+Get the client to access the TaxGroupsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`TaxGroupsService`](modules.md#taxgroupsservice)\>
+
+#### Defined in
+
+index.ts:3200
+
+___
+
+### getClientForTaxParamsService
+
+▸ **getClientForTaxParamsService**(`transport`): `PromiseClient`\<typeof [`TaxParamsService`](modules.md#taxparamsservice)\>
+
+Get the client to access the TaxParamsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`TaxParamsService`](modules.md#taxparamsservice)\>
+
+#### Defined in
+
+index.ts:3231
+
+___
+
+### getClientForTeamsService
+
+▸ **getClientForTeamsService**(`transport`): `PromiseClient`\<typeof [`TeamsService`](modules.md#teamsservice)\>
+
+Get the client to access the TeamsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`TeamsService`](modules.md#teamsservice)\>
+
+#### Defined in
+
+index.ts:3262
+
+___
+
+### getClientForUnitsOfMaterialsService
+
+▸ **getClientForUnitsOfMaterialsService**(`transport`): `PromiseClient`\<typeof [`UnitsOfMaterialsService`](modules.md#unitsofmaterialsservice)\>
+
+Get the client to access the UnitsOfMaterialsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`UnitsOfMaterialsService`](modules.md#unitsofmaterialsservice)\>
+
+#### Defined in
+
+index.ts:3293
+
+___
+
+### getClientForUsersService
+
+▸ **getClientForUsersService**(`transport`): `PromiseClient`\<typeof [`UsersService`](modules.md#usersservice)\>
+
+Get the client to access the UsersService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`UsersService`](modules.md#usersservice)\>
+
+#### Defined in
+
+index.ts:3324
+
+___
+
+### getClientForVaultService
+
+▸ **getClientForVaultService**(`transport`): `PromiseClient`\<typeof [`VaultService`](modules.md#vaultservice)\>
+
+Get the client to access the VaultService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`VaultService`](modules.md#vaultservice)\>
+
+#### Defined in
+
+index.ts:3355
+
+___
+
+### getClientForVendorInvoicesService
+
+▸ **getClientForVendorInvoicesService**(`transport`): `PromiseClient`\<typeof [`VendorInvoicesService`](modules.md#vendorinvoicesservice)\>
+
+Get the client to access the VendorInvoicesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`VendorInvoicesService`](modules.md#vendorinvoicesservice)\>
+
+#### Defined in
+
+index.ts:3386
+
+___
+
+### getClientForVendorStreamsService
+
+▸ **getClientForVendorStreamsService**(`transport`): `PromiseClient`\<typeof [`VendorStreamsService`](modules.md#vendorstreamsservice)\>
+
+Get the client to access the VendorStreamsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`VendorStreamsService`](modules.md#vendorstreamsservice)\>
+
+#### Defined in
+
+index.ts:3417
+
+___
+
+### getClientForVendorsService
+
+▸ **getClientForVendorsService**(`transport`): `PromiseClient`\<typeof [`VendorsService`](modules.md#vendorsservice)\>
+
+Get the client to access the VendorsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`VendorsService`](modules.md#vendorsservice)\>
+
+#### Defined in
+
+index.ts:3448
+
+___
+
+### getClientForVisitationsService
+
+▸ **getClientForVisitationsService**(`transport`): `PromiseClient`\<typeof [`VisitationsService`](modules.md#visitationsservice)\>
+
+Get the client to access the VisitationsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`VisitationsService`](modules.md#visitationsservice)\>
+
+#### Defined in
+
+index.ts:3479
+
+___
+
+### getClientForWorkOrdersService
+
+▸ **getClientForWorkOrdersService**(`transport`): `PromiseClient`\<typeof [`WorkOrdersService`](modules.md#workordersservice)\>
+
+Get the client to access the WorkOrdersService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`WorkOrdersService`](modules.md#workordersservice)\>
+
+#### Defined in
+
+index.ts:3510
+
+___
+
+### getClientForWorkflowsRulesService
+
+▸ **getClientForWorkflowsRulesService**(`transport`): `PromiseClient`\<typeof [`WorkflowsRulesService`](modules.md#workflowsrulesservice)\>
+
+Get the client to access the WorkflowsRulesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`WorkflowsRulesService`](modules.md#workflowsrulesservice)\>
+
+#### Defined in
+
+index.ts:3541

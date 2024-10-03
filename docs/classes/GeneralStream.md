@@ -76,7 +76,7 @@ Message\&lt;GeneralStream\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:520
+src/general_streams.scailo_pb.ts:520
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:476
+src/general_streams.scailo_pb.ts:476
 
 ___
 
@@ -108,7 +108,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:448
+src/general_streams.scailo_pb.ts:448
 
 ___
 
@@ -124,7 +124,7 @@ from field: string internal_ref = 50;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:497
+src/general_streams.scailo_pb.ts:497
 
 ___
 
@@ -140,7 +140,7 @@ from field: string last_message_by = 62;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:518
+src/general_streams.scailo_pb.ts:518
 
 ___
 
@@ -156,7 +156,7 @@ from field: repeated Scailo.LogbookLogGeneralStreamLC logs = 5;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:469
+src/general_streams.scailo_pb.ts:469
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 message_count = 61;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:511
+src/general_streams.scailo_pb.ts:511
 
 ___
 
@@ -188,7 +188,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:455
+src/general_streams.scailo_pb.ts:455
 
 ___
 
@@ -204,7 +204,7 @@ from field: Scailo.GENERAL_STREAM_LIFECYCLE status = 4;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:462
+src/general_streams.scailo_pb.ts:462
 
 ___
 
@@ -220,7 +220,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:490
+src/general_streams.scailo_pb.ts:490
 
 ___
 
@@ -236,7 +236,7 @@ from field: uint64 unread_count = 60;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:504
+src/general_streams.scailo_pb.ts:504
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 vault_folder_id = 7;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:483
+src/general_streams.scailo_pb.ts:483
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:527
+src/general_streams.scailo_pb.ts:527
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:525
+src/general_streams.scailo_pb.ts:525
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:526
+src/general_streams.scailo_pb.ts:526
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:553
+src/general_streams.scailo_pb.ts:553
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:541
+src/general_streams.scailo_pb.ts:541
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:545
+src/general_streams.scailo_pb.ts:545
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:549
+src/general_streams.scailo_pb.ts:549

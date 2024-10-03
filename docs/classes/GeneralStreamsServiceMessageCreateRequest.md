@@ -69,7 +69,7 @@ Message\&lt;GeneralStreamsServiceMessageCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1181
+src/general_streams.scailo_pb.ts:1181
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string content = 20;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1179
+src/general_streams.scailo_pb.ts:1179
 
 ___
 
@@ -101,7 +101,7 @@ from field: string general_stream_uuid = 10;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1165
+src/general_streams.scailo_pb.ts:1165
 
 ___
 
@@ -117,7 +117,7 @@ from field: Scailo.GENERAL_STREAM_MESSAGE_TYPE message_type = 8;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1158
+src/general_streams.scailo_pb.ts:1158
 
 ___
 
@@ -133,7 +133,7 @@ from field: string response_to_message_uuid = 11;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1172
+src/general_streams.scailo_pb.ts:1172
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1188
+src/general_streams.scailo_pb.ts:1188
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1186
+src/general_streams.scailo_pb.ts:1186
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1187
+src/general_streams.scailo_pb.ts:1187
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1207
+src/general_streams.scailo_pb.ts:1207
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1195
+src/general_streams.scailo_pb.ts:1195
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1199
+src/general_streams.scailo_pb.ts:1199
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1203
+src/general_streams.scailo_pb.ts:1203

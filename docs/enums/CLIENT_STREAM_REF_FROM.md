@@ -36,7 +36,7 @@ from enum value: CLIENT_STREAM_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:65
+src/client_streams.scailo_pb.ts:65
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: CLIENT_STREAM_REF_FROM_CREDIT_NOTE = 21;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:100
+src/client_streams.scailo_pb.ts:100
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: CLIENT_STREAM_REF_FROM_GOODS_DISPATCH = 10;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:79
+src/client_streams.scailo_pb.ts:79
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_ENQUIRY = 50;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:121
+src/client_streams.scailo_pb.ts:121
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_INVOICE = 11;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:86
+src/client_streams.scailo_pb.ts:86
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:72
+src/client_streams.scailo_pb.ts:72
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_QUOTATION = 40;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:114
+src/client_streams.scailo_pb.ts:114
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_RECEIPT = 30;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:107
+src/client_streams.scailo_pb.ts:107
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_RETURN = 20;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:93
+src/client_streams.scailo_pb.ts:93

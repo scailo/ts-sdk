@@ -66,7 +66,7 @@ Message\&lt;VendorStreamMessageReceiptsList\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1856
+src/vendor_streams.scailo_pb.ts:1856
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VendorStreamMessageReceipt list = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1854
+src/vendor_streams.scailo_pb.ts:1854
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1863
+src/vendor_streams.scailo_pb.ts:1863
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1861
+src/vendor_streams.scailo_pb.ts:1861
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1862
+src/vendor_streams.scailo_pb.ts:1862
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1879
+src/vendor_streams.scailo_pb.ts:1879
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1867
+src/vendor_streams.scailo_pb.ts:1867
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1871
+src/vendor_streams.scailo_pb.ts:1871
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1875
+src/vendor_streams.scailo_pb.ts:1875

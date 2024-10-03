@@ -71,7 +71,7 @@ Message\&lt;VendorStreamVendorSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2239
+src/vendor_streams.scailo_pb.ts:2239
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2202
+src/vendor_streams.scailo_pb.ts:2202
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2209
+src/vendor_streams.scailo_pb.ts:2209
 
 ___
 
@@ -119,7 +119,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2216
+src/vendor_streams.scailo_pb.ts:2216
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2230
+src/vendor_streams.scailo_pb.ts:2230
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_uuid = 30;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2237
+src/vendor_streams.scailo_pb.ts:2237
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vendor_stream_id = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2223
+src/vendor_streams.scailo_pb.ts:2223
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2246
+src/vendor_streams.scailo_pb.ts:2246
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2244
+src/vendor_streams.scailo_pb.ts:2244
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2245
+src/vendor_streams.scailo_pb.ts:2245
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2267
+src/vendor_streams.scailo_pb.ts:2267
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2255
+src/vendor_streams.scailo_pb.ts:2255
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2259
+src/vendor_streams.scailo_pb.ts:2259
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:2263
+src/vendor_streams.scailo_pb.ts:2263

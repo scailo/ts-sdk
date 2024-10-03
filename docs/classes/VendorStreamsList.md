@@ -66,7 +66,7 @@ Message\&lt;VendorStreamsList\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:711
+src/vendor_streams.scailo_pb.ts:711
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VendorStream list = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:709
+src/vendor_streams.scailo_pb.ts:709
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:718
+src/vendor_streams.scailo_pb.ts:718
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:716
+src/vendor_streams.scailo_pb.ts:716
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:717
+src/vendor_streams.scailo_pb.ts:717
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:734
+src/vendor_streams.scailo_pb.ts:734
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:722
+src/vendor_streams.scailo_pb.ts:722
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:726
+src/vendor_streams.scailo_pb.ts:726
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:730
+src/vendor_streams.scailo_pb.ts:730

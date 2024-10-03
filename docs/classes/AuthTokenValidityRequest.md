@@ -66,7 +66,7 @@ Message\&lt;AuthTokenValidityRequest\&gt;.constructor
 
 #### Defined in
 
-src/logins.scailo_pb.ts:140
+src/login.scailo_pb.ts:140
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: string auth_token = 1;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:138
+src/login.scailo_pb.ts:138
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:147
+src/login.scailo_pb.ts:147
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:145
+src/login.scailo_pb.ts:145
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:146
+src/login.scailo_pb.ts:146
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:163
+src/login.scailo_pb.ts:163
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:151
+src/login.scailo_pb.ts:151
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:155
+src/login.scailo_pb.ts:155
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:159
+src/login.scailo_pb.ts:159

@@ -68,7 +68,7 @@ Message\&lt;UserLoginRequest\&gt;.constructor
 
 #### Defined in
 
-src/logins.scailo_pb.ts:38
+src/login.scailo_pb.ts:38
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: string otp = 13;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:36
+src/login.scailo_pb.ts:36
 
 ___
 
@@ -100,7 +100,7 @@ from field: string plain_text_password = 12;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:29
+src/login.scailo_pb.ts:29
 
 ___
 
@@ -116,7 +116,7 @@ from field: string username = 1;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:22
+src/login.scailo_pb.ts:22
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:45
+src/login.scailo_pb.ts:45
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:43
+src/login.scailo_pb.ts:43
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:44
+src/login.scailo_pb.ts:44
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:63
+src/login.scailo_pb.ts:63
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:51
+src/login.scailo_pb.ts:51
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:55
+src/login.scailo_pb.ts:55
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:59
+src/login.scailo_pb.ts:59

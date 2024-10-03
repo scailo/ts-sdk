@@ -71,7 +71,7 @@ Message\&lt;ClientStreamsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:804
+src/client_streams.scailo_pb.ts:804
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:774
+src/client_streams.scailo_pb.ts:774
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:767
+src/client_streams.scailo_pb.ts:767
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:781
+src/client_streams.scailo_pb.ts:781
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.CLIENT_STREAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:795
+src/client_streams.scailo_pb.ts:795
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:788
+src/client_streams.scailo_pb.ts:788
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.CLIENT_STREAM_LIFECYCLE status = 6;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:802
+src/client_streams.scailo_pb.ts:802
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:811
+src/client_streams.scailo_pb.ts:811
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:809
+src/client_streams.scailo_pb.ts:809
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:810
+src/client_streams.scailo_pb.ts:810
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:832
+src/client_streams.scailo_pb.ts:832
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:820
+src/client_streams.scailo_pb.ts:820
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:824
+src/client_streams.scailo_pb.ts:824
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:828
+src/client_streams.scailo_pb.ts:828

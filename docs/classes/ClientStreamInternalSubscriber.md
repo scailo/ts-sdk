@@ -71,7 +71,7 @@ Message\&lt;ClientStreamInternalSubscriber\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2007
+src/client_streams.scailo_pb.ts:2007
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 client_stream_id = 10;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1991
+src/client_streams.scailo_pb.ts:1991
 
 ___
 
@@ -103,7 +103,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1970
+src/client_streams.scailo_pb.ts:1970
 
 ___
 
@@ -119,7 +119,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1977
+src/client_streams.scailo_pb.ts:1977
 
 ___
 
@@ -135,7 +135,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1984
+src/client_streams.scailo_pb.ts:1984
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:1998
+src/client_streams.scailo_pb.ts:1998
 
 ___
 
@@ -167,7 +167,7 @@ from field: string user_uuid = 30;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2005
+src/client_streams.scailo_pb.ts:2005
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2014
+src/client_streams.scailo_pb.ts:2014
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2012
+src/client_streams.scailo_pb.ts:2012
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2013
+src/client_streams.scailo_pb.ts:2013
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2035
+src/client_streams.scailo_pb.ts:2035
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2023
+src/client_streams.scailo_pb.ts:2023
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2027
+src/client_streams.scailo_pb.ts:2027
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:2031
+src/client_streams.scailo_pb.ts:2031

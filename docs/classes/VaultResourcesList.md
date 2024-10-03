@@ -67,7 +67,7 @@ Message\&lt;VaultResourcesList\&gt;.constructor
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:32
+src/vault.scailo_pb.ts:32
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: repeated Scailo.VaultFile files = 1;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:23
+src/vault.scailo_pb.ts:23
 
 ___
 
@@ -99,7 +99,7 @@ from field: repeated Scailo.VaultFolder folders = 2;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:30
+src/vault.scailo_pb.ts:30
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:39
+src/vault.scailo_pb.ts:39
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:37
+src/vault.scailo_pb.ts:37
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:38
+src/vault.scailo_pb.ts:38
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:56
+src/vault.scailo_pb.ts:56
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:44
+src/vault.scailo_pb.ts:44
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:48
+src/vault.scailo_pb.ts:48
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:52
+src/vault.scailo_pb.ts:52

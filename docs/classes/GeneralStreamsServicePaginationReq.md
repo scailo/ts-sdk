@@ -71,7 +71,7 @@ Message\&lt;GeneralStreamsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:649
+src/general_streams.scailo_pb.ts:649
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:619
+src/general_streams.scailo_pb.ts:619
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:612
+src/general_streams.scailo_pb.ts:612
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:626
+src/general_streams.scailo_pb.ts:626
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.GENERAL_STREAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:640
+src/general_streams.scailo_pb.ts:640
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:633
+src/general_streams.scailo_pb.ts:633
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.GENERAL_STREAM_LIFECYCLE status = 6;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:647
+src/general_streams.scailo_pb.ts:647
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:656
+src/general_streams.scailo_pb.ts:656
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:654
+src/general_streams.scailo_pb.ts:654
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:655
+src/general_streams.scailo_pb.ts:655
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:677
+src/general_streams.scailo_pb.ts:677
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:665
+src/general_streams.scailo_pb.ts:665
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:669
+src/general_streams.scailo_pb.ts:669
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:673
+src/general_streams.scailo_pb.ts:673

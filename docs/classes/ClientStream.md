@@ -81,7 +81,7 @@ Message\&lt;ClientStream\&gt;.constructor
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:670
+src/client_streams.scailo_pb.ts:670
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: uint64 client_id = 11;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:619
+src/client_streams.scailo_pb.ts:619
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:591
+src/client_streams.scailo_pb.ts:591
 
 ___
 
@@ -129,7 +129,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:563
+src/client_streams.scailo_pb.ts:563
 
 ___
 
@@ -145,7 +145,7 @@ from field: string internal_ref = 50;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:647
+src/client_streams.scailo_pb.ts:647
 
 ___
 
@@ -161,7 +161,7 @@ from field: string last_message_by = 62;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:668
+src/client_streams.scailo_pb.ts:668
 
 ___
 
@@ -177,7 +177,7 @@ from field: repeated Scailo.LogbookLogClientStreamLC logs = 5;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:584
+src/client_streams.scailo_pb.ts:584
 
 ___
 
@@ -193,7 +193,7 @@ from field: uint64 message_count = 61;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:661
+src/client_streams.scailo_pb.ts:661
 
 ___
 
@@ -209,7 +209,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:570
+src/client_streams.scailo_pb.ts:570
 
 ___
 
@@ -225,7 +225,7 @@ from field: Scailo.CLIENT_STREAM_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:626
+src/client_streams.scailo_pb.ts:626
 
 ___
 
@@ -241,7 +241,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:633
+src/client_streams.scailo_pb.ts:633
 
 ___
 
@@ -257,7 +257,7 @@ from field: string ref_uuid = 14;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:640
+src/client_streams.scailo_pb.ts:640
 
 ___
 
@@ -273,7 +273,7 @@ from field: Scailo.CLIENT_STREAM_LIFECYCLE status = 4;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:577
+src/client_streams.scailo_pb.ts:577
 
 ___
 
@@ -289,7 +289,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:612
+src/client_streams.scailo_pb.ts:612
 
 ___
 
@@ -305,7 +305,7 @@ from field: uint64 unread_count = 60;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:654
+src/client_streams.scailo_pb.ts:654
 
 ___
 
@@ -321,7 +321,7 @@ from field: uint64 vault_folder_id = 7;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:598
+src/client_streams.scailo_pb.ts:598
 
 ___
 
@@ -337,7 +337,7 @@ from field: string vault_folder_uuid = 107;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:605
+src/client_streams.scailo_pb.ts:605
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:677
+src/client_streams.scailo_pb.ts:677
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:675
+src/client_streams.scailo_pb.ts:675
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:676
+src/client_streams.scailo_pb.ts:676
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:708
+src/client_streams.scailo_pb.ts:708
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:696
+src/client_streams.scailo_pb.ts:696
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:700
+src/client_streams.scailo_pb.ts:700
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:704
+src/client_streams.scailo_pb.ts:704

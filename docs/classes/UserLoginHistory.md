@@ -71,7 +71,7 @@ Message\&lt;UserLoginHistory\&gt;.constructor
 
 #### Defined in
 
-src/logins.scailo_pb.ts:285
+src/login.scailo_pb.ts:285
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:248
+src/login.scailo_pb.ts:248
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 expires_at = 13;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:283
+src/login.scailo_pb.ts:283
 
 ___
 
@@ -119,7 +119,7 @@ from field: string ip_addr = 12;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:276
+src/login.scailo_pb.ts:276
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:255
+src/login.scailo_pb.ts:255
 
 ___
 
@@ -151,7 +151,7 @@ from field: string url_scheme = 10;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:262
+src/login.scailo_pb.ts:262
 
 ___
 
@@ -167,7 +167,7 @@ from field: string username = 11;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:269
+src/login.scailo_pb.ts:269
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:292
+src/login.scailo_pb.ts:292
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:290
+src/login.scailo_pb.ts:290
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:291
+src/login.scailo_pb.ts:291
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:313
+src/login.scailo_pb.ts:313
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:301
+src/login.scailo_pb.ts:301
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:305
+src/login.scailo_pb.ts:305
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:309
+src/login.scailo_pb.ts:309

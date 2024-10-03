@@ -71,7 +71,7 @@ Message\&lt;GiXRelayReqWithBody\&gt;.constructor
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:234
+src/vault.scailo_pb.ts:234
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: bytes body = 30;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:232
+src/vault.scailo_pb.ts:232
 
 ___
 
@@ -103,7 +103,7 @@ from field: string relay_accept_header = 5;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:211
+src/vault.scailo_pb.ts:211
 
 ___
 
@@ -119,7 +119,7 @@ from field: string relay_content_type_header = 4;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:204
+src/vault.scailo_pb.ts:204
 
 ___
 
@@ -135,7 +135,7 @@ from field: repeated Scailo.GiXRelayHeader relay_headers = 10;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:218
+src/vault.scailo_pb.ts:218
 
 ___
 
@@ -151,7 +151,7 @@ from field: string url = 20;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:225
+src/vault.scailo_pb.ts:225
 
 ___
 
@@ -167,7 +167,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:197
+src/vault.scailo_pb.ts:197
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:241
+src/vault.scailo_pb.ts:241
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:239
+src/vault.scailo_pb.ts:239
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:240
+src/vault.scailo_pb.ts:240
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:262
+src/vault.scailo_pb.ts:262
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:250
+src/vault.scailo_pb.ts:250
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:254
+src/vault.scailo_pb.ts:254
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:258
+src/vault.scailo_pb.ts:258

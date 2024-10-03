@@ -70,7 +70,7 @@ Message\&lt;VendorUserLoginResponse\&gt;.constructor
 
 #### Defined in
 
-src/logins.scailo_pb.ts:402
+src/login.scailo_pb.ts:402
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string auth_token = 2;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:379
+src/login.scailo_pb.ts:379
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 expires_at = 3;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:386
+src/login.scailo_pb.ts:386
 
 ___
 
@@ -118,7 +118,7 @@ from field: string username = 1;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:372
+src/login.scailo_pb.ts:372
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:393
+src/login.scailo_pb.ts:393
 
 ___
 
@@ -150,7 +150,7 @@ from field: string vendor_uuid = 11;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:400
+src/login.scailo_pb.ts:400
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:409
+src/login.scailo_pb.ts:409
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:407
+src/login.scailo_pb.ts:407
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:408
+src/login.scailo_pb.ts:408
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:429
+src/login.scailo_pb.ts:429
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:417
+src/login.scailo_pb.ts:417
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:421
+src/login.scailo_pb.ts:421
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:425
+src/login.scailo_pb.ts:425

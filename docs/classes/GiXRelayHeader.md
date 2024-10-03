@@ -67,7 +67,7 @@ Message\&lt;GiXRelayHeader\&gt;.constructor
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:82
+src/vault.scailo_pb.ts:82
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string name = 1;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:73
+src/vault.scailo_pb.ts:73
 
 ___
 
@@ -99,7 +99,7 @@ from field: string value = 2;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:80
+src/vault.scailo_pb.ts:80
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:89
+src/vault.scailo_pb.ts:89
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:87
+src/vault.scailo_pb.ts:87
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:88
+src/vault.scailo_pb.ts:88
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:106
+src/vault.scailo_pb.ts:106
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:94
+src/vault.scailo_pb.ts:94
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:98
+src/vault.scailo_pb.ts:98
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:102
+src/vault.scailo_pb.ts:102

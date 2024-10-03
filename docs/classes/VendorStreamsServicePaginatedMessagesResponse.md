@@ -69,7 +69,7 @@ Message\&lt;VendorStreamsServicePaginatedMessagesResponse\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1729
+src/vendor_streams.scailo_pb.ts:1729
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1706
+src/vendor_streams.scailo_pb.ts:1706
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1713
+src/vendor_streams.scailo_pb.ts:1713
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.VendorStreamMessage payload = 4;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1727
+src/vendor_streams.scailo_pb.ts:1727
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1720
+src/vendor_streams.scailo_pb.ts:1720
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1736
+src/vendor_streams.scailo_pb.ts:1736
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1734
+src/vendor_streams.scailo_pb.ts:1734
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1735
+src/vendor_streams.scailo_pb.ts:1735
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1755
+src/vendor_streams.scailo_pb.ts:1755
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1743
+src/vendor_streams.scailo_pb.ts:1743
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1747
+src/vendor_streams.scailo_pb.ts:1747
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1751
+src/vendor_streams.scailo_pb.ts:1751

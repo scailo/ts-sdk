@@ -66,7 +66,7 @@ Message\&lt;GeneralStreamInternalSubscribersList\&gt;.constructor
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1802
+src/general_streams.scailo_pb.ts:1802
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.GeneralStreamInternalSubscriber list = 1;
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1800
+src/general_streams.scailo_pb.ts:1800
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1809
+src/general_streams.scailo_pb.ts:1809
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1807
+src/general_streams.scailo_pb.ts:1807
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1808
+src/general_streams.scailo_pb.ts:1808
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1825
+src/general_streams.scailo_pb.ts:1825
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1813
+src/general_streams.scailo_pb.ts:1813
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1817
+src/general_streams.scailo_pb.ts:1817
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/generalstreams.scailo_pb.ts:1821
+src/general_streams.scailo_pb.ts:1821

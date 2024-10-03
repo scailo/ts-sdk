@@ -34,7 +34,7 @@ from enum value: VENDOR_STREAM_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:65
+src/vendor_streams.scailo_pb.ts:65
 
 ___
 
@@ -50,7 +50,7 @@ from enum value: VENDOR_STREAM_REF_FROM_DEBIT_NOTE = 21;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:100
+src/vendor_streams.scailo_pb.ts:100
 
 ___
 
@@ -66,7 +66,7 @@ from enum value: VENDOR_STREAM_REF_FROM_GOODS_RECEIPT = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:79
+src/vendor_streams.scailo_pb.ts:79
 
 ___
 
@@ -82,7 +82,7 @@ from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_ORDER = 1;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:72
+src/vendor_streams.scailo_pb.ts:72
 
 ___
 
@@ -98,7 +98,7 @@ from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_PAYMENT = 30;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:107
+src/vendor_streams.scailo_pb.ts:107
 
 ___
 
@@ -114,7 +114,7 @@ from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_RETURN = 20;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:93
+src/vendor_streams.scailo_pb.ts:93
 
 ___
 
@@ -130,4 +130,4 @@ from enum value: VENDOR_STREAM_REF_FROM_VENDOR_INVOICE = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:86
+src/vendor_streams.scailo_pb.ts:86

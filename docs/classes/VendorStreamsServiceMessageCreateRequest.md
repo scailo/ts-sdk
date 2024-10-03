@@ -69,7 +69,7 @@ Message\&lt;VendorStreamsServiceMessageCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1409
+src/vendor_streams.scailo_pb.ts:1409
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string content = 20;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1407
+src/vendor_streams.scailo_pb.ts:1407
 
 ___
 
@@ -101,7 +101,7 @@ from field: Scailo.VENDOR_STREAM_MESSAGE_TYPE message_type = 8;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1386
+src/vendor_streams.scailo_pb.ts:1386
 
 ___
 
@@ -117,7 +117,7 @@ from field: string response_to_message_uuid = 11;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1400
+src/vendor_streams.scailo_pb.ts:1400
 
 ___
 
@@ -133,7 +133,7 @@ from field: string vendor_stream_uuid = 10;
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1393
+src/vendor_streams.scailo_pb.ts:1393
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1416
+src/vendor_streams.scailo_pb.ts:1416
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1414
+src/vendor_streams.scailo_pb.ts:1414
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1415
+src/vendor_streams.scailo_pb.ts:1415
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1435
+src/vendor_streams.scailo_pb.ts:1435
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1423
+src/vendor_streams.scailo_pb.ts:1423
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1427
+src/vendor_streams.scailo_pb.ts:1427
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/vendorstreams.scailo_pb.ts:1431
+src/vendor_streams.scailo_pb.ts:1431

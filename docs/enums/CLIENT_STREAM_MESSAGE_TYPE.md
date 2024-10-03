@@ -30,7 +30,7 @@ from enum value: CLIENT_STREAM_MESSAGE_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:199
+src/client_streams.scailo_pb.ts:199
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: CLIENT_STREAM_MESSAGE_TYPE_SYSTEM = 2;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:213
+src/client_streams.scailo_pb.ts:213
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: CLIENT_STREAM_MESSAGE_TYPE_USER = 1;
 
 #### Defined in
 
-src/clientstreams.scailo_pb.ts:206
+src/client_streams.scailo_pb.ts:206

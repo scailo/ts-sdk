@@ -67,7 +67,7 @@ Message\&lt;GiXRelayResponse\&gt;.constructor
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:288
+src/vault.scailo_pb.ts:288
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: bytes body = 10;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:286
+src/vault.scailo_pb.ts:286
 
 ___
 
@@ -99,7 +99,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:279
+src/vault.scailo_pb.ts:279
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:295
+src/vault.scailo_pb.ts:295
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:293
+src/vault.scailo_pb.ts:293
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:294
+src/vault.scailo_pb.ts:294
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:312
+src/vault.scailo_pb.ts:312
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:300
+src/vault.scailo_pb.ts:300
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:304
+src/vault.scailo_pb.ts:304
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/vault_services.scailo_pb.ts:308
+src/vault.scailo_pb.ts:308

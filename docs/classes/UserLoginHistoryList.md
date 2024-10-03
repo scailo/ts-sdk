@@ -66,7 +66,7 @@ Message\&lt;UserLoginHistoryList\&gt;.constructor
 
 #### Defined in
 
-src/logins.scailo_pb.ts:332
+src/login.scailo_pb.ts:332
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.UserLoginHistory list = 1;
 
 #### Defined in
 
-src/logins.scailo_pb.ts:330
+src/login.scailo_pb.ts:330
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:339
+src/login.scailo_pb.ts:339
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:337
+src/login.scailo_pb.ts:337
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:338
+src/login.scailo_pb.ts:338
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:355
+src/login.scailo_pb.ts:355
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:343
+src/login.scailo_pb.ts:343
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:347
+src/login.scailo_pb.ts:347
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/logins.scailo_pb.ts:351
+src/login.scailo_pb.ts:351
