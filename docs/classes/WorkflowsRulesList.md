@@ -66,7 +66,7 @@ Message\&lt;WorkflowsRulesList\&gt;.constructor
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1210
+src/workflows_rules.scailo_pb.ts:1226
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.WorkflowRule list = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1208
+src/workflows_rules.scailo_pb.ts:1224
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1217
+src/workflows_rules.scailo_pb.ts:1233
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1215
+src/workflows_rules.scailo_pb.ts:1231
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1216
+src/workflows_rules.scailo_pb.ts:1232
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1233
+src/workflows_rules.scailo_pb.ts:1249
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1221
+src/workflows_rules.scailo_pb.ts:1237
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1225
+src/workflows_rules.scailo_pb.ts:1241
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1229
+src/workflows_rules.scailo_pb.ts:1245

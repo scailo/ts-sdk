@@ -30,7 +30,7 @@ from enum value: WORKFLOW_RULE_EXECUTE_ON_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:676
+src/workflows_rules.scailo_pb.ts:692
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: WORKFLOW_RULE_EXECUTE_ON_FAILURE = 2;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:690
+src/workflows_rules.scailo_pb.ts:706
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: WORKFLOW_RULE_EXECUTE_ON_SUCCESS = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:683
+src/workflows_rules.scailo_pb.ts:699

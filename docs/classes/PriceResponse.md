@@ -66,7 +66,7 @@ Message\&lt;PriceResponse\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1312
+src/base.scailo_pb.ts:1344
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: int64 value = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1310
+src/base.scailo_pb.ts:1342
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1319
+src/base.scailo_pb.ts:1351
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1317
+src/base.scailo_pb.ts:1349
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1318
+src/base.scailo_pb.ts:1350
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1335
+src/base.scailo_pb.ts:1367
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1323
+src/base.scailo_pb.ts:1355
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1327
+src/base.scailo_pb.ts:1359
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1331
+src/base.scailo_pb.ts:1363

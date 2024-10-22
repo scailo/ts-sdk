@@ -66,7 +66,7 @@ Message\&lt;IdentifierUUID\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2684
+src/base.scailo_pb.ts:2716
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2682
+src/base.scailo_pb.ts:2714
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2691
+src/base.scailo_pb.ts:2723
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2689
+src/base.scailo_pb.ts:2721
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2690
+src/base.scailo_pb.ts:2722
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2707
+src/base.scailo_pb.ts:2739
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2695
+src/base.scailo_pb.ts:2727
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2699
+src/base.scailo_pb.ts:2731
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2703
+src/base.scailo_pb.ts:2735

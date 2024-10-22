@@ -69,7 +69,7 @@ Message\&lt;IdentifierWithEmailAttributes\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2539
+src/base.scailo_pb.ts:2571
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string body = 12;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2537
+src/base.scailo_pb.ts:2569
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2516
+src/base.scailo_pb.ts:2548
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated string recipients = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2530
+src/base.scailo_pb.ts:2562
 
 ___
 
@@ -133,7 +133,7 @@ from field: string subject = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2523
+src/base.scailo_pb.ts:2555
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2546
+src/base.scailo_pb.ts:2578
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2544
+src/base.scailo_pb.ts:2576
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2545
+src/base.scailo_pb.ts:2577
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2565
+src/base.scailo_pb.ts:2597
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2553
+src/base.scailo_pb.ts:2585
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2557
+src/base.scailo_pb.ts:2589
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2561
+src/base.scailo_pb.ts:2593

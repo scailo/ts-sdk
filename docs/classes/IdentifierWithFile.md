@@ -67,7 +67,7 @@ Message\&lt;IdentifierWithFile\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2641
+src/base.scailo_pb.ts:2673
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: bytes file_content = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2639
+src/base.scailo_pb.ts:2671
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2632
+src/base.scailo_pb.ts:2664
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2648
+src/base.scailo_pb.ts:2680
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2646
+src/base.scailo_pb.ts:2678
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2647
+src/base.scailo_pb.ts:2679
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2665
+src/base.scailo_pb.ts:2697
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2653
+src/base.scailo_pb.ts:2685
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2657
+src/base.scailo_pb.ts:2689
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2661
+src/base.scailo_pb.ts:2693

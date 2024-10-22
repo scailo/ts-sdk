@@ -36,7 +36,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:739
+src/workflows_rules.scailo_pb.ts:755
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:732
+src/workflows_rules.scailo_pb.ts:748
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:746
+src/workflows_rules.scailo_pb.ts:762
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:753
+src/workflows_rules.scailo_pb.ts:769
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:718
+src/workflows_rules.scailo_pb.ts:734
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:711
+src/workflows_rules.scailo_pb.ts:727
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:725
+src/workflows_rules.scailo_pb.ts:741
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:760
+src/workflows_rules.scailo_pb.ts:776
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: WORKFLOW_RULE_SORT_KEY_SERVICE_NAME = 11;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:767
+src/workflows_rules.scailo_pb.ts:783

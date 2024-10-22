@@ -66,7 +66,7 @@ Message\&lt;BytesResponse\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1228
+src/base.scailo_pb.ts:1260
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: bytes value = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1226
+src/base.scailo_pb.ts:1258
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1235
+src/base.scailo_pb.ts:1267
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1233
+src/base.scailo_pb.ts:1265
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1234
+src/base.scailo_pb.ts:1266
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1251
+src/base.scailo_pb.ts:1283
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1239
+src/base.scailo_pb.ts:1271
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1243
+src/base.scailo_pb.ts:1275
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1247
+src/base.scailo_pb.ts:1279

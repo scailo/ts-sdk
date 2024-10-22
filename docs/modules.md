@@ -141,6 +141,10 @@
 - [PRODUCTION\_PLAN\_ITEM\_STATUS](enums/PRODUCTION_PLAN_ITEM_STATUS.md)
 - [PRODUCTION\_PLAN\_SORT\_KEY](enums/PRODUCTION_PLAN_SORT_KEY.md)
 - [PRODUCT\_REF\_FROM](enums/PRODUCT_REF_FROM.md)
+- [PROFORMA\_INVOICE\_BILLING\_STATUS](enums/PROFORMA_INVOICE_BILLING_STATUS.md)
+- [PROFORMA\_INVOICE\_ITEM\_SORT\_KEY](enums/PROFORMA_INVOICE_ITEM_SORT_KEY.md)
+- [PROFORMA\_INVOICE\_ITEM\_STATUS](enums/PROFORMA_INVOICE_ITEM_STATUS.md)
+- [PROFORMA\_INVOICE\_SORT\_KEY](enums/PROFORMA_INVOICE_SORT_KEY.md)
 - [PROJECT\_SORT\_KEY](enums/PROJECT_SORT_KEY.md)
 - [PURCHASE\_ENQUIRY\_ITEM\_SORT\_KEY](enums/PURCHASE_ENQUIRY_ITEM_SORT_KEY.md)
 - [PURCHASE\_ENQUIRY\_ITEM\_STATUS](enums/PURCHASE_ENQUIRY_ITEM_STATUS.md)
@@ -215,6 +219,9 @@
 - [STOCK\_RETURN\_SORT\_KEY](enums/STOCK_RETURN_SORT_KEY.md)
 - [STORAGE\_SORT\_KEY](enums/STORAGE_SORT_KEY.md)
 - [STORE\_SORT\_KEY](enums/STORE_SORT_KEY.md)
+- [SUPPLY\_OFFER\_ITEM\_SORT\_KEY](enums/SUPPLY_OFFER_ITEM_SORT_KEY.md)
+- [SUPPLY\_OFFER\_ITEM\_STATUS](enums/SUPPLY_OFFER_ITEM_STATUS.md)
+- [SUPPLY\_OFFER\_SORT\_KEY](enums/SUPPLY_OFFER_SORT_KEY.md)
 - [TAX\_GROUP\_CATEGORY](enums/TAX_GROUP_CATEGORY.md)
 - [TAX\_GROUP\_SORT\_KEY](enums/TAX_GROUP_SORT_KEY.md)
 - [TAX\_PARAM\_CATEGORY](enums/TAX_PARAM_CATEGORY.md)
@@ -1180,6 +1187,26 @@
 - [ProductsServiceSearchAllReq](classes/ProductsServiceSearchAllReq.md)
 - [ProductsServiceSendToStoreRequest](classes/ProductsServiceSendToStoreRequest.md)
 - [ProductsServiceUpdateRequest](classes/ProductsServiceUpdateRequest.md)
+- [ProformaInvoice](classes/ProformaInvoice.md)
+- [ProformaInvoiceAncillaryParameters](classes/ProformaInvoiceAncillaryParameters.md)
+- [ProformaInvoiceItem](classes/ProformaInvoiceItem.md)
+- [ProformaInvoiceItemHistoryRequest](classes/ProformaInvoiceItemHistoryRequest.md)
+- [ProformaInvoiceItemProspectiveInfoRequest](classes/ProformaInvoiceItemProspectiveInfoRequest.md)
+- [ProformaInvoiceItemsList](classes/ProformaInvoiceItemsList.md)
+- [ProformaInvoiceItemsSearchRequest](classes/ProformaInvoiceItemsSearchRequest.md)
+- [ProformaInvoicesList](classes/ProformaInvoicesList.md)
+- [ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest](classes/ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest.md)
+- [ProformaInvoicesServiceAutofillRequest](classes/ProformaInvoicesServiceAutofillRequest.md)
+- [ProformaInvoicesServiceCountReq](classes/ProformaInvoicesServiceCountReq.md)
+- [ProformaInvoicesServiceCreateRequest](classes/ProformaInvoicesServiceCreateRequest.md)
+- [ProformaInvoicesServiceFilterReq](classes/ProformaInvoicesServiceFilterReq.md)
+- [ProformaInvoicesServiceItemCreateRequest](classes/ProformaInvoicesServiceItemCreateRequest.md)
+- [ProformaInvoicesServiceItemUpdateRequest](classes/ProformaInvoicesServiceItemUpdateRequest.md)
+- [ProformaInvoicesServicePaginatedItemsResponse](classes/ProformaInvoicesServicePaginatedItemsResponse.md)
+- [ProformaInvoicesServicePaginationReq](classes/ProformaInvoicesServicePaginationReq.md)
+- [ProformaInvoicesServicePaginationResponse](classes/ProformaInvoicesServicePaginationResponse.md)
+- [ProformaInvoicesServiceSearchAllReq](classes/ProformaInvoicesServiceSearchAllReq.md)
+- [ProformaInvoicesServiceUpdateRequest](classes/ProformaInvoicesServiceUpdateRequest.md)
 - [Project](classes/Project.md)
 - [ProjectContact](classes/ProjectContact.md)
 - [ProjectContactsList](classes/ProjectContactsList.md)
@@ -1693,6 +1720,25 @@
 - [StringRules](classes/StringRules.md)
 - [StringsList](classes/StringsList.md)
 - [SumResponse](classes/SumResponse.md)
+- [SupplyOffer](classes/SupplyOffer.md)
+- [SupplyOfferAncillaryParameters](classes/SupplyOfferAncillaryParameters.md)
+- [SupplyOfferItem](classes/SupplyOfferItem.md)
+- [SupplyOfferItemHistoryRequest](classes/SupplyOfferItemHistoryRequest.md)
+- [SupplyOfferItemProspectiveInfoRequest](classes/SupplyOfferItemProspectiveInfoRequest.md)
+- [SupplyOfferItemsList](classes/SupplyOfferItemsList.md)
+- [SupplyOfferItemsSearchRequest](classes/SupplyOfferItemsSearchRequest.md)
+- [SupplyOffersList](classes/SupplyOffersList.md)
+- [SupplyOffersServiceAutofillRequest](classes/SupplyOffersServiceAutofillRequest.md)
+- [SupplyOffersServiceCountReq](classes/SupplyOffersServiceCountReq.md)
+- [SupplyOffersServiceCreateRequest](classes/SupplyOffersServiceCreateRequest.md)
+- [SupplyOffersServiceFilterReq](classes/SupplyOffersServiceFilterReq.md)
+- [SupplyOffersServiceItemCreateRequest](classes/SupplyOffersServiceItemCreateRequest.md)
+- [SupplyOffersServiceItemUpdateRequest](classes/SupplyOffersServiceItemUpdateRequest.md)
+- [SupplyOffersServicePaginatedItemsResponse](classes/SupplyOffersServicePaginatedItemsResponse.md)
+- [SupplyOffersServicePaginationReq](classes/SupplyOffersServicePaginationReq.md)
+- [SupplyOffersServicePaginationResponse](classes/SupplyOffersServicePaginationResponse.md)
+- [SupplyOffersServiceSearchAllReq](classes/SupplyOffersServiceSearchAllReq.md)
+- [SupplyOffersServiceUpdateRequest](classes/SupplyOffersServiceUpdateRequest.md)
 - [TaxGroup](classes/TaxGroup.md)
 - [TaxGroupItem](classes/TaxGroupItem.md)
 - [TaxGroupItemHistoryRequest](classes/TaxGroupItemHistoryRequest.md)
@@ -1965,6 +2011,7 @@
 - [ProductionIndentsService](modules.md#productionindentsservice)
 - [ProductionPlansService](modules.md#productionplansservice)
 - [ProductsService](modules.md#productsservice)
+- [ProformaInvoicesService](modules.md#proformainvoicesservice)
 - [ProjectsService](modules.md#projectsservice)
 - [PurchasesEnquiriesService](modules.md#purchasesenquiriesservice)
 - [PurchasesIndentsService](modules.md#purchasesindentsservice)
@@ -1995,6 +2042,7 @@
 - [StockReturnsService](modules.md#stockreturnsservice)
 - [StoragesService](modules.md#storagesservice)
 - [StoresService](modules.md#storesservice)
+- [SupplyOffersService](modules.md#supplyoffersservice)
 - [TaxGroupsService](modules.md#taxgroupsservice)
 - [TaxParamsService](modules.md#taxparamsservice)
 - [TeamsService](modules.md#teamsservice)
@@ -2072,6 +2120,7 @@
 - [getClientForProductionIndentsService](modules.md#getclientforproductionindentsservice)
 - [getClientForProductionPlansService](modules.md#getclientforproductionplansservice)
 - [getClientForProductsService](modules.md#getclientforproductsservice)
+- [getClientForProformaInvoicesService](modules.md#getclientforproformainvoicesservice)
 - [getClientForProjectsService](modules.md#getclientforprojectsservice)
 - [getClientForPurchasesEnquiriesService](modules.md#getclientforpurchasesenquiriesservice)
 - [getClientForPurchasesIndentsService](modules.md#getclientforpurchasesindentsservice)
@@ -2102,6 +2151,7 @@
 - [getClientForStockReturnsService](modules.md#getclientforstockreturnsservice)
 - [getClientForStoragesService](modules.md#getclientforstoragesservice)
 - [getClientForStoresService](modules.md#getclientforstoresservice)
+- [getClientForSupplyOffersService](modules.md#getclientforsupplyoffersservice)
 - [getClientForTaxGroupsService](modules.md#getclientfortaxgroupsservice)
 - [getClientForTaxParamsService](modules.md#getclientfortaxparamsservice)
 - [getClientForTeamsService](modules.md#getclientforteamsservice)
@@ -12821,6 +12871,279 @@ src/products.scailo_connect.ts:16
 
 ___
 
+### ProformaInvoicesService
+
+• `Const` **ProformaInvoicesService**: `Object`
+
+Describes the common methods applicable on each proforma invoice
+
+**`Generated`**
+
+from service Scailo.ProformaInvoicesService
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `methods` | \{ `accruedValue`: \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) = ProformaInvoicesServiceItemCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddProformaInvoiceItem"`` = "AddProformaInvoiceItem" } ; `amend`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveProformaInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveProformaInvoiceItem"`` = "ApproveProformaInvoiceItem" } ; `autofill`: \{ `I`: typeof [`ProformaInvoicesServiceAutofillRequest`](classes/ProformaInvoicesServiceAutofillRequest.md) = ProformaInvoicesServiceAutofillRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteProformaInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteProformaInvoiceItem"`` = "DeleteProformaInvoiceItem" } ; `discard`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) = ProformaInvoicesServiceUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`ProformaInvoicesServiceFilterReq`](classes/ProformaInvoicesServiceFilterReq.md) = ProformaInvoicesServiceFilterReq; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isBilled`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsBilled"`` = "IsBilled" } ; `modifyProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoicesServiceItemUpdateRequest`](classes/ProformaInvoicesServiceItemUpdateRequest.md) = ProformaInvoicesServiceItemUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyProformaInvoiceItem"`` = "ModifyProformaInvoiceItem" } ; `reopen`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderProformaInvoiceItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderProformaInvoiceItems"`` = "ReorderProformaInvoiceItems" } ; `repeat`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) = ProformaInvoicesServiceUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`ProformaInvoicesServiceSearchAllReq`](classes/ProformaInvoicesServiceSearchAllReq.md) = ProformaInvoicesServiceSearchAllReq; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadProformaInvoiceItems"`` = "UploadProformaInvoiceItems" } ; `verify`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) = ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoiceAncillaryParameters`](classes/ProformaInvoiceAncillaryParameters.md) = ProformaInvoiceAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedProformaInvoiceItems"`` = "ViewApprovedProformaInvoiceItems" } ; `viewAssociatedSalesInvoiceID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesInvoiceID"`` = "ViewAssociatedSalesInvoiceID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ProformaInvoice`](classes/ProformaInvoice.md) = ProformaInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoice`](classes/ProformaInvoice.md) = ProformaInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedProformaInvoiceItems`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedProformaInvoiceItems"`` = "ViewPaginatedApprovedProformaInvoiceItems" } ; `viewPaginatedUnapprovedProformaInvoiceItems`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedProformaInvoiceItems"`` = "ViewPaginatedUnapprovedProformaInvoiceItems" } ; `viewProformaInvoiceItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ProformaInvoiceItem`](classes/ProformaInvoiceItem.md) = ProformaInvoiceItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProformaInvoiceItemByID"`` = "ViewProformaInvoiceItemByID" } ; `viewProformaInvoiceItemHistory`: \{ `I`: typeof [`ProformaInvoiceItemHistoryRequest`](classes/ProformaInvoiceItemHistoryRequest.md) = ProformaInvoiceItemHistoryRequest; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProformaInvoiceItemHistory"`` = "ViewProformaInvoiceItemHistory" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoiceItemProspectiveInfoRequest`](classes/ProformaInvoiceItemProspectiveInfoRequest.md) = ProformaInvoiceItemProspectiveInfoRequest; `O`: typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) = ProformaInvoicesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveProformaInvoiceItem"`` = "ViewProspectiveProformaInvoiceItem" } ; `viewUnapprovedProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedProformaInvoiceItems"`` = "ViewUnapprovedProformaInvoiceItems" } ; `viewWithPagination`: \{ `I`: typeof [`ProformaInvoicesServicePaginationReq`](classes/ProformaInvoicesServicePaginationReq.md) = ProformaInvoicesServicePaginationReq; `O`: typeof [`ProformaInvoicesServicePaginationResponse`](classes/ProformaInvoicesServicePaginationResponse.md) = ProformaInvoicesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods.accruedValue` | \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } |
+| `methods.accruedValue.I` | typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) |
+| `methods.accruedValue.O` | typeof [`SumResponse`](classes/SumResponse.md) |
+| `methods.accruedValue.kind` | `Unary` |
+| `methods.accruedValue.name` | ``"AccruedValue"`` |
+| `methods.addProformaInvoiceItem` | \{ `I`: typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) = ProformaInvoicesServiceItemCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddProformaInvoiceItem"`` = "AddProformaInvoiceItem" } |
+| `methods.addProformaInvoiceItem.I` | typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) |
+| `methods.addProformaInvoiceItem.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.addProformaInvoiceItem.kind` | `Unary` |
+| `methods.addProformaInvoiceItem.name` | ``"AddProformaInvoiceItem"`` |
+| `methods.amend` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } |
+| `methods.amend.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.amend.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.amend.kind` | `Unary` |
+| `methods.amend.name` | ``"Amend"`` |
+| `methods.approve` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } |
+| `methods.approve.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.approve.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.approve.kind` | `Unary` |
+| `methods.approve.name` | ``"Approve"`` |
+| `methods.approveProformaInvoiceItem` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveProformaInvoiceItem"`` = "ApproveProformaInvoiceItem" } |
+| `methods.approveProformaInvoiceItem.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.approveProformaInvoiceItem.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.approveProformaInvoiceItem.kind` | `Unary` |
+| `methods.approveProformaInvoiceItem.name` | ``"ApproveProformaInvoiceItem"`` |
+| `methods.autofill` | \{ `I`: typeof [`ProformaInvoicesServiceAutofillRequest`](classes/ProformaInvoicesServiceAutofillRequest.md) = ProformaInvoicesServiceAutofillRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } |
+| `methods.autofill.I` | typeof [`ProformaInvoicesServiceAutofillRequest`](classes/ProformaInvoicesServiceAutofillRequest.md) |
+| `methods.autofill.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.autofill.kind` | `Unary` |
+| `methods.autofill.name` | ``"Autofill"`` |
+| `methods.commentAdd` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
+| `methods.commentAdd.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.commentAdd.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.commentAdd.kind` | `Unary` |
+| `methods.commentAdd.name` | ``"CommentAdd"`` |
+| `methods.complete` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } |
+| `methods.complete.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.complete.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.complete.kind` | `Unary` |
+| `methods.complete.name` | ``"Complete"`` |
+| `methods.count` | \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } |
+| `methods.count.I` | typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) |
+| `methods.count.O` | typeof [`CountResponse`](classes/CountResponse.md) |
+| `methods.count.kind` | `Unary` |
+| `methods.count.name` | ``"Count"`` |
+| `methods.countInStatus` | \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } |
+| `methods.countInStatus.I` | typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) |
+| `methods.countInStatus.O` | typeof [`CountResponse`](classes/CountResponse.md) |
+| `methods.countInStatus.kind` | `Unary` |
+| `methods.countInStatus.name` | ``"CountInStatus"`` |
+| `methods.create` | \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } |
+| `methods.create.I` | typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) |
+| `methods.create.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.create.kind` | `Unary` |
+| `methods.create.name` | ``"Create"`` |
+| `methods.deleteProformaInvoiceItem` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteProformaInvoiceItem"`` = "DeleteProformaInvoiceItem" } |
+| `methods.deleteProformaInvoiceItem.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.deleteProformaInvoiceItem.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.deleteProformaInvoiceItem.kind` | `Unary` |
+| `methods.deleteProformaInvoiceItem.name` | ``"DeleteProformaInvoiceItem"`` |
+| `methods.discard` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } |
+| `methods.discard.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.discard.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.discard.kind` | `Unary` |
+| `methods.discard.name` | ``"Discard"`` |
+| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
+| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadAsCSV.kind` | `Unary` |
+| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
+| `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
+| `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadByUUID.kind` | `Unary` |
+| `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.draft` | \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
+| `methods.draft.I` | typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) |
+| `methods.draft.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.draft.kind` | `Unary` |
+| `methods.draft.name` | ``"Draft"`` |
+| `methods.draftUpdate` | \{ `I`: typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) = ProformaInvoicesServiceUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } |
+| `methods.draftUpdate.I` | typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) |
+| `methods.draftUpdate.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.draftUpdate.kind` | `Unary` |
+| `methods.draftUpdate.name` | ``"DraftUpdate"`` |
+| `methods.filter` | \{ `I`: typeof [`ProformaInvoicesServiceFilterReq`](classes/ProformaInvoicesServiceFilterReq.md) = ProformaInvoicesServiceFilterReq; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } |
+| `methods.filter.I` | typeof [`ProformaInvoicesServiceFilterReq`](classes/ProformaInvoicesServiceFilterReq.md) |
+| `methods.filter.O` | typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) |
+| `methods.filter.kind` | `Unary` |
+| `methods.filter.name` | ``"Filter"`` |
+| `methods.halt` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } |
+| `methods.halt.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.halt.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.halt.kind` | `Unary` |
+| `methods.halt.name` | ``"Halt"`` |
+| `methods.isBilled` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsBilled"`` = "IsBilled" } |
+| `methods.isBilled.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.isBilled.O` | typeof [`BooleanResponse`](classes/BooleanResponse.md) |
+| `methods.isBilled.kind` | `Unary` |
+| `methods.isBilled.name` | ``"IsBilled"`` |
+| `methods.modifyProformaInvoiceItem` | \{ `I`: typeof [`ProformaInvoicesServiceItemUpdateRequest`](classes/ProformaInvoicesServiceItemUpdateRequest.md) = ProformaInvoicesServiceItemUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyProformaInvoiceItem"`` = "ModifyProformaInvoiceItem" } |
+| `methods.modifyProformaInvoiceItem.I` | typeof [`ProformaInvoicesServiceItemUpdateRequest`](classes/ProformaInvoicesServiceItemUpdateRequest.md) |
+| `methods.modifyProformaInvoiceItem.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.modifyProformaInvoiceItem.kind` | `Unary` |
+| `methods.modifyProformaInvoiceItem.name` | ``"ModifyProformaInvoiceItem"`` |
+| `methods.reopen` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } |
+| `methods.reopen.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.reopen.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.reopen.kind` | `Unary` |
+| `methods.reopen.name` | ``"Reopen"`` |
+| `methods.reorderProformaInvoiceItems` | \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderProformaInvoiceItems"`` = "ReorderProformaInvoiceItems" } |
+| `methods.reorderProformaInvoiceItems.I` | typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) |
+| `methods.reorderProformaInvoiceItems.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.reorderProformaInvoiceItems.kind` | `Unary` |
+| `methods.reorderProformaInvoiceItems.name` | ``"ReorderProformaInvoiceItems"`` |
+| `methods.repeat` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } |
+| `methods.repeat.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.repeat.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.repeat.kind` | `Unary` |
+| `methods.repeat.name` | ``"Repeat"`` |
+| `methods.restore` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } |
+| `methods.restore.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.restore.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.restore.kind` | `Unary` |
+| `methods.restore.name` | ``"Restore"`` |
+| `methods.revisionUpdate` | \{ `I`: typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) = ProformaInvoicesServiceUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } |
+| `methods.revisionUpdate.I` | typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) |
+| `methods.revisionUpdate.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.revisionUpdate.kind` | `Unary` |
+| `methods.revisionUpdate.name` | ``"RevisionUpdate"`` |
+| `methods.searchAll` | \{ `I`: typeof [`ProformaInvoicesServiceSearchAllReq`](classes/ProformaInvoicesServiceSearchAllReq.md) = ProformaInvoicesServiceSearchAllReq; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } |
+| `methods.searchAll.I` | typeof [`ProformaInvoicesServiceSearchAllReq`](classes/ProformaInvoicesServiceSearchAllReq.md) |
+| `methods.searchAll.O` | typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) |
+| `methods.searchAll.kind` | `Unary` |
+| `methods.searchAll.name` | ``"SearchAll"`` |
+| `methods.searchItemsWithPagination` | \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } |
+| `methods.searchItemsWithPagination.I` | typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) |
+| `methods.searchItemsWithPagination.O` | typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) |
+| `methods.searchItemsWithPagination.kind` | `Unary` |
+| `methods.searchItemsWithPagination.name` | ``"SearchItemsWithPagination"`` |
+| `methods.sendEmail` | \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } |
+| `methods.sendEmail.I` | typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) |
+| `methods.sendEmail.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.sendEmail.kind` | `Unary` |
+| `methods.sendEmail.name` | ``"SendEmail"`` |
+| `methods.sendForRevision` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } |
+| `methods.sendForRevision.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.sendForRevision.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.sendForRevision.kind` | `Unary` |
+| `methods.sendForRevision.name` | ``"SendForRevision"`` |
+| `methods.sendForVerification` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } |
+| `methods.sendForVerification.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.sendForVerification.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.sendForVerification.kind` | `Unary` |
+| `methods.sendForVerification.name` | ``"SendForVerification"`` |
+| `methods.uploadProformaInvoiceItems` | \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadProformaInvoiceItems"`` = "UploadProformaInvoiceItems" } |
+| `methods.uploadProformaInvoiceItems.I` | typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) |
+| `methods.uploadProformaInvoiceItems.O` | typeof [`IdentifiersList`](classes/IdentifiersList.md) |
+| `methods.uploadProformaInvoiceItems.kind` | `Unary` |
+| `methods.uploadProformaInvoiceItems.name` | ``"UploadProformaInvoiceItems"`` |
+| `methods.verify` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } |
+| `methods.verify.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.verify.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.verify.kind` | `Unary` |
+| `methods.verify.name` | ``"Verify"`` |
+| `methods.viewAddedFamilyQuantityForSource` | \{ `I`: typeof [`ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) = ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } |
+| `methods.viewAddedFamilyQuantityForSource.I` | typeof [`ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) |
+| `methods.viewAddedFamilyQuantityForSource.O` | typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) |
+| `methods.viewAddedFamilyQuantityForSource.kind` | `Unary` |
+| `methods.viewAddedFamilyQuantityForSource.name` | ``"ViewAddedFamilyQuantityForSource"`` |
+| `methods.viewAll` | \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } |
+| `methods.viewAll.I` | typeof [`ActiveStatus`](classes/ActiveStatus.md) |
+| `methods.viewAll.O` | typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) |
+| `methods.viewAll.kind` | `Unary` |
+| `methods.viewAll.name` | ``"ViewAll"`` |
+| `methods.viewAllForEntityUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } |
+| `methods.viewAllForEntityUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewAllForEntityUUID.O` | typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) |
+| `methods.viewAllForEntityUUID.kind` | `Unary` |
+| `methods.viewAllForEntityUUID.name` | ``"ViewAllForEntityUUID"`` |
+| `methods.viewAmendments` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } |
+| `methods.viewAmendments.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewAmendments.O` | typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) |
+| `methods.viewAmendments.kind` | `Unary` |
+| `methods.viewAmendments.name` | ``"ViewAmendments"`` |
+| `methods.viewAncillaryParametersByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoiceAncillaryParameters`](classes/ProformaInvoiceAncillaryParameters.md) = ProformaInvoiceAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } |
+| `methods.viewAncillaryParametersByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewAncillaryParametersByUUID.O` | typeof [`ProformaInvoiceAncillaryParameters`](classes/ProformaInvoiceAncillaryParameters.md) |
+| `methods.viewAncillaryParametersByUUID.kind` | `Unary` |
+| `methods.viewAncillaryParametersByUUID.name` | ``"ViewAncillaryParametersByUUID"`` |
+| `methods.viewApprovedProformaInvoiceItems` | \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedProformaInvoiceItems"`` = "ViewApprovedProformaInvoiceItems" } |
+| `methods.viewApprovedProformaInvoiceItems.I` | typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) |
+| `methods.viewApprovedProformaInvoiceItems.O` | typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) |
+| `methods.viewApprovedProformaInvoiceItems.kind` | `Unary` |
+| `methods.viewApprovedProformaInvoiceItems.name` | ``"ViewApprovedProformaInvoiceItems"`` |
+| `methods.viewAssociatedSalesInvoiceID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesInvoiceID"`` = "ViewAssociatedSalesInvoiceID" } |
+| `methods.viewAssociatedSalesInvoiceID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewAssociatedSalesInvoiceID.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewAssociatedSalesInvoiceID.kind` | `Unary` |
+| `methods.viewAssociatedSalesInvoiceID.name` | ``"ViewAssociatedSalesInvoiceID"`` |
+| `methods.viewByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ProformaInvoice`](classes/ProformaInvoice.md) = ProformaInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } |
+| `methods.viewByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewByID.O` | typeof [`ProformaInvoice`](classes/ProformaInvoice.md) |
+| `methods.viewByID.kind` | `Unary` |
+| `methods.viewByID.name` | ``"ViewByID"`` |
+| `methods.viewByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoice`](classes/ProformaInvoice.md) = ProformaInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } |
+| `methods.viewByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewByUUID.O` | typeof [`ProformaInvoice`](classes/ProformaInvoice.md) |
+| `methods.viewByUUID.kind` | `Unary` |
+| `methods.viewByUUID.name` | ``"ViewByUUID"`` |
+| `methods.viewPaginatedApprovedProformaInvoiceItems` | \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedProformaInvoiceItems"`` = "ViewPaginatedApprovedProformaInvoiceItems" } |
+| `methods.viewPaginatedApprovedProformaInvoiceItems.I` | typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) |
+| `methods.viewPaginatedApprovedProformaInvoiceItems.O` | typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) |
+| `methods.viewPaginatedApprovedProformaInvoiceItems.kind` | `Unary` |
+| `methods.viewPaginatedApprovedProformaInvoiceItems.name` | ``"ViewPaginatedApprovedProformaInvoiceItems"`` |
+| `methods.viewPaginatedUnapprovedProformaInvoiceItems` | \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedProformaInvoiceItems"`` = "ViewPaginatedUnapprovedProformaInvoiceItems" } |
+| `methods.viewPaginatedUnapprovedProformaInvoiceItems.I` | typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) |
+| `methods.viewPaginatedUnapprovedProformaInvoiceItems.O` | typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) |
+| `methods.viewPaginatedUnapprovedProformaInvoiceItems.kind` | `Unary` |
+| `methods.viewPaginatedUnapprovedProformaInvoiceItems.name` | ``"ViewPaginatedUnapprovedProformaInvoiceItems"`` |
+| `methods.viewProformaInvoiceItemByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ProformaInvoiceItem`](classes/ProformaInvoiceItem.md) = ProformaInvoiceItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProformaInvoiceItemByID"`` = "ViewProformaInvoiceItemByID" } |
+| `methods.viewProformaInvoiceItemByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewProformaInvoiceItemByID.O` | typeof [`ProformaInvoiceItem`](classes/ProformaInvoiceItem.md) |
+| `methods.viewProformaInvoiceItemByID.kind` | `Unary` |
+| `methods.viewProformaInvoiceItemByID.name` | ``"ViewProformaInvoiceItemByID"`` |
+| `methods.viewProformaInvoiceItemHistory` | \{ `I`: typeof [`ProformaInvoiceItemHistoryRequest`](classes/ProformaInvoiceItemHistoryRequest.md) = ProformaInvoiceItemHistoryRequest; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProformaInvoiceItemHistory"`` = "ViewProformaInvoiceItemHistory" } |
+| `methods.viewProformaInvoiceItemHistory.I` | typeof [`ProformaInvoiceItemHistoryRequest`](classes/ProformaInvoiceItemHistoryRequest.md) |
+| `methods.viewProformaInvoiceItemHistory.O` | typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) |
+| `methods.viewProformaInvoiceItemHistory.kind` | `Unary` |
+| `methods.viewProformaInvoiceItemHistory.name` | ``"ViewProformaInvoiceItemHistory"`` |
+| `methods.viewProspectiveFamilies` | \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } |
+| `methods.viewProspectiveFamilies.I` | typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) |
+| `methods.viewProspectiveFamilies.O` | typeof [`FamiliesList`](classes/FamiliesList.md) |
+| `methods.viewProspectiveFamilies.kind` | `Unary` |
+| `methods.viewProspectiveFamilies.name` | ``"ViewProspectiveFamilies"`` |
+| `methods.viewProspectiveProformaInvoiceItem` | \{ `I`: typeof [`ProformaInvoiceItemProspectiveInfoRequest`](classes/ProformaInvoiceItemProspectiveInfoRequest.md) = ProformaInvoiceItemProspectiveInfoRequest; `O`: typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) = ProformaInvoicesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveProformaInvoiceItem"`` = "ViewProspectiveProformaInvoiceItem" } |
+| `methods.viewProspectiveProformaInvoiceItem.I` | typeof [`ProformaInvoiceItemProspectiveInfoRequest`](classes/ProformaInvoiceItemProspectiveInfoRequest.md) |
+| `methods.viewProspectiveProformaInvoiceItem.O` | typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) |
+| `methods.viewProspectiveProformaInvoiceItem.kind` | `Unary` |
+| `methods.viewProspectiveProformaInvoiceItem.name` | ``"ViewProspectiveProformaInvoiceItem"`` |
+| `methods.viewUnapprovedProformaInvoiceItems` | \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedProformaInvoiceItems"`` = "ViewUnapprovedProformaInvoiceItems" } |
+| `methods.viewUnapprovedProformaInvoiceItems.I` | typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) |
+| `methods.viewUnapprovedProformaInvoiceItems.O` | typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) |
+| `methods.viewUnapprovedProformaInvoiceItems.kind` | `Unary` |
+| `methods.viewUnapprovedProformaInvoiceItems.name` | ``"ViewUnapprovedProformaInvoiceItems"`` |
+| `methods.viewWithPagination` | \{ `I`: typeof [`ProformaInvoicesServicePaginationReq`](classes/ProformaInvoicesServicePaginationReq.md) = ProformaInvoicesServicePaginationReq; `O`: typeof [`ProformaInvoicesServicePaginationResponse`](classes/ProformaInvoicesServicePaginationResponse.md) = ProformaInvoicesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
+| `methods.viewWithPagination.I` | typeof [`ProformaInvoicesServicePaginationReq`](classes/ProformaInvoicesServicePaginationReq.md) |
+| `methods.viewWithPagination.O` | typeof [`ProformaInvoicesServicePaginationResponse`](classes/ProformaInvoicesServicePaginationResponse.md) |
+| `methods.viewWithPagination.kind` | `Unary` |
+| `methods.viewWithPagination.name` | ``"ViewWithPagination"`` |
+| `typeName` | ``"Scailo.ProformaInvoicesService"`` |
+
+#### Defined in
+
+src/proforma_invoices.scailo_connect.ts:17
+
+___
+
 ### ProjectsService
 
 • `Const` **ProjectsService**: `Object`
@@ -19051,6 +19374,274 @@ src/stores.scailo_connect.ts:16
 
 ___
 
+### SupplyOffersService
+
+• `Const` **SupplyOffersService**: `Object`
+
+Describes the common methods applicable on each supply offer
+
+**`Generated`**
+
+from service Scailo.SupplyOffersService
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `methods` | \{ `accruedValue`: \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addSupplyOfferItem`: \{ `I`: typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) = SupplyOffersServiceItemCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSupplyOfferItem"`` = "AddSupplyOfferItem" } ; `amend`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSupplyOfferItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSupplyOfferItem"`` = "ApproveSupplyOfferItem" } ; `autofill`: \{ `I`: typeof [`SupplyOffersServiceAutofillRequest`](classes/SupplyOffersServiceAutofillRequest.md) = SupplyOffersServiceAutofillRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSupplyOfferItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSupplyOfferItem"`` = "DeleteSupplyOfferItem" } ; `discard`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) = SupplyOffersServiceUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SupplyOffersServiceFilterReq`](classes/SupplyOffersServiceFilterReq.md) = SupplyOffersServiceFilterReq; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySupplyOfferItem`: \{ `I`: typeof [`SupplyOffersServiceItemUpdateRequest`](classes/SupplyOffersServiceItemUpdateRequest.md) = SupplyOffersServiceItemUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySupplyOfferItem"`` = "ModifySupplyOfferItem" } ; `reopen`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSupplyOfferItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSupplyOfferItems"`` = "ReorderSupplyOfferItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) = SupplyOffersServiceUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SupplyOffersServiceSearchAllReq`](classes/SupplyOffersServiceSearchAllReq.md) = SupplyOffersServiceSearchAllReq; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSupplyOfferItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSupplyOfferItems"`` = "UploadSupplyOfferItems" } ; `verify`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOfferAncillaryParameters`](classes/SupplyOfferAncillaryParameters.md) = SupplyOfferAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSupplyOfferItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSupplyOfferItems"`` = "ViewApprovedSupplyOfferItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewPaginatedApprovedSupplyOfferItems`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSupplyOfferItems"`` = "ViewPaginatedApprovedSupplyOfferItems" } ; `viewPaginatedUnapprovedSupplyOfferItems`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSupplyOfferItems"`` = "ViewPaginatedUnapprovedSupplyOfferItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSupplyOfferItem`: \{ `I`: typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) = SupplyOfferItemProspectiveInfoRequest; `O`: typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) = SupplyOffersServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSupplyOfferItem"`` = "ViewProspectiveSupplyOfferItem" } ; `viewSupplyOfferItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOfferItem`](classes/SupplyOfferItem.md) = SupplyOfferItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemByID"`` = "ViewSupplyOfferItemByID" } ; `viewSupplyOfferItemHistory`: \{ `I`: typeof [`SupplyOfferItemHistoryRequest`](classes/SupplyOfferItemHistoryRequest.md) = SupplyOfferItemHistoryRequest; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemHistory"`` = "ViewSupplyOfferItemHistory" } ; `viewSupplyOfferItemPrice`: \{ `I`: typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) = SupplyOfferItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemPrice"`` = "ViewSupplyOfferItemPrice" } ; `viewUnapprovedSupplyOfferItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSupplyOfferItems"`` = "ViewUnapprovedSupplyOfferItems" } ; `viewWithPagination`: \{ `I`: typeof [`SupplyOffersServicePaginationReq`](classes/SupplyOffersServicePaginationReq.md) = SupplyOffersServicePaginationReq; `O`: typeof [`SupplyOffersServicePaginationResponse`](classes/SupplyOffersServicePaginationResponse.md) = SupplyOffersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods.accruedValue` | \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } |
+| `methods.accruedValue.I` | typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) |
+| `methods.accruedValue.O` | typeof [`SumResponse`](classes/SumResponse.md) |
+| `methods.accruedValue.kind` | `Unary` |
+| `methods.accruedValue.name` | ``"AccruedValue"`` |
+| `methods.addSupplyOfferItem` | \{ `I`: typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) = SupplyOffersServiceItemCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSupplyOfferItem"`` = "AddSupplyOfferItem" } |
+| `methods.addSupplyOfferItem.I` | typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) |
+| `methods.addSupplyOfferItem.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.addSupplyOfferItem.kind` | `Unary` |
+| `methods.addSupplyOfferItem.name` | ``"AddSupplyOfferItem"`` |
+| `methods.amend` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } |
+| `methods.amend.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.amend.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.amend.kind` | `Unary` |
+| `methods.amend.name` | ``"Amend"`` |
+| `methods.approve` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } |
+| `methods.approve.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.approve.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.approve.kind` | `Unary` |
+| `methods.approve.name` | ``"Approve"`` |
+| `methods.approveSupplyOfferItem` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSupplyOfferItem"`` = "ApproveSupplyOfferItem" } |
+| `methods.approveSupplyOfferItem.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.approveSupplyOfferItem.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.approveSupplyOfferItem.kind` | `Unary` |
+| `methods.approveSupplyOfferItem.name` | ``"ApproveSupplyOfferItem"`` |
+| `methods.autofill` | \{ `I`: typeof [`SupplyOffersServiceAutofillRequest`](classes/SupplyOffersServiceAutofillRequest.md) = SupplyOffersServiceAutofillRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } |
+| `methods.autofill.I` | typeof [`SupplyOffersServiceAutofillRequest`](classes/SupplyOffersServiceAutofillRequest.md) |
+| `methods.autofill.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.autofill.kind` | `Unary` |
+| `methods.autofill.name` | ``"Autofill"`` |
+| `methods.commentAdd` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
+| `methods.commentAdd.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.commentAdd.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.commentAdd.kind` | `Unary` |
+| `methods.commentAdd.name` | ``"CommentAdd"`` |
+| `methods.complete` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } |
+| `methods.complete.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.complete.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.complete.kind` | `Unary` |
+| `methods.complete.name` | ``"Complete"`` |
+| `methods.count` | \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } |
+| `methods.count.I` | typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) |
+| `methods.count.O` | typeof [`CountResponse`](classes/CountResponse.md) |
+| `methods.count.kind` | `Unary` |
+| `methods.count.name` | ``"Count"`` |
+| `methods.countInStatus` | \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } |
+| `methods.countInStatus.I` | typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) |
+| `methods.countInStatus.O` | typeof [`CountResponse`](classes/CountResponse.md) |
+| `methods.countInStatus.kind` | `Unary` |
+| `methods.countInStatus.name` | ``"CountInStatus"`` |
+| `methods.create` | \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } |
+| `methods.create.I` | typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) |
+| `methods.create.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.create.kind` | `Unary` |
+| `methods.create.name` | ``"Create"`` |
+| `methods.deleteSupplyOfferItem` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSupplyOfferItem"`` = "DeleteSupplyOfferItem" } |
+| `methods.deleteSupplyOfferItem.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.deleteSupplyOfferItem.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.deleteSupplyOfferItem.kind` | `Unary` |
+| `methods.deleteSupplyOfferItem.name` | ``"DeleteSupplyOfferItem"`` |
+| `methods.discard` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } |
+| `methods.discard.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.discard.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.discard.kind` | `Unary` |
+| `methods.discard.name` | ``"Discard"`` |
+| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
+| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadAsCSV.kind` | `Unary` |
+| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
+| `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
+| `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadByUUID.kind` | `Unary` |
+| `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.draft` | \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
+| `methods.draft.I` | typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) |
+| `methods.draft.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.draft.kind` | `Unary` |
+| `methods.draft.name` | ``"Draft"`` |
+| `methods.draftUpdate` | \{ `I`: typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) = SupplyOffersServiceUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } |
+| `methods.draftUpdate.I` | typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) |
+| `methods.draftUpdate.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.draftUpdate.kind` | `Unary` |
+| `methods.draftUpdate.name` | ``"DraftUpdate"`` |
+| `methods.filter` | \{ `I`: typeof [`SupplyOffersServiceFilterReq`](classes/SupplyOffersServiceFilterReq.md) = SupplyOffersServiceFilterReq; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } |
+| `methods.filter.I` | typeof [`SupplyOffersServiceFilterReq`](classes/SupplyOffersServiceFilterReq.md) |
+| `methods.filter.O` | typeof [`SupplyOffersList`](classes/SupplyOffersList.md) |
+| `methods.filter.kind` | `Unary` |
+| `methods.filter.name` | ``"Filter"`` |
+| `methods.halt` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } |
+| `methods.halt.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.halt.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.halt.kind` | `Unary` |
+| `methods.halt.name` | ``"Halt"`` |
+| `methods.modifySupplyOfferItem` | \{ `I`: typeof [`SupplyOffersServiceItemUpdateRequest`](classes/SupplyOffersServiceItemUpdateRequest.md) = SupplyOffersServiceItemUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySupplyOfferItem"`` = "ModifySupplyOfferItem" } |
+| `methods.modifySupplyOfferItem.I` | typeof [`SupplyOffersServiceItemUpdateRequest`](classes/SupplyOffersServiceItemUpdateRequest.md) |
+| `methods.modifySupplyOfferItem.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.modifySupplyOfferItem.kind` | `Unary` |
+| `methods.modifySupplyOfferItem.name` | ``"ModifySupplyOfferItem"`` |
+| `methods.reopen` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } |
+| `methods.reopen.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.reopen.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.reopen.kind` | `Unary` |
+| `methods.reopen.name` | ``"Reopen"`` |
+| `methods.reorderSupplyOfferItems` | \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSupplyOfferItems"`` = "ReorderSupplyOfferItems" } |
+| `methods.reorderSupplyOfferItems.I` | typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) |
+| `methods.reorderSupplyOfferItems.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.reorderSupplyOfferItems.kind` | `Unary` |
+| `methods.reorderSupplyOfferItems.name` | ``"ReorderSupplyOfferItems"`` |
+| `methods.repeat` | \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } |
+| `methods.repeat.I` | typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) |
+| `methods.repeat.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.repeat.kind` | `Unary` |
+| `methods.repeat.name` | ``"Repeat"`` |
+| `methods.restore` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } |
+| `methods.restore.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.restore.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.restore.kind` | `Unary` |
+| `methods.restore.name` | ``"Restore"`` |
+| `methods.revisionUpdate` | \{ `I`: typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) = SupplyOffersServiceUpdateRequest; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } |
+| `methods.revisionUpdate.I` | typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) |
+| `methods.revisionUpdate.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.revisionUpdate.kind` | `Unary` |
+| `methods.revisionUpdate.name` | ``"RevisionUpdate"`` |
+| `methods.searchAll` | \{ `I`: typeof [`SupplyOffersServiceSearchAllReq`](classes/SupplyOffersServiceSearchAllReq.md) = SupplyOffersServiceSearchAllReq; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } |
+| `methods.searchAll.I` | typeof [`SupplyOffersServiceSearchAllReq`](classes/SupplyOffersServiceSearchAllReq.md) |
+| `methods.searchAll.O` | typeof [`SupplyOffersList`](classes/SupplyOffersList.md) |
+| `methods.searchAll.kind` | `Unary` |
+| `methods.searchAll.name` | ``"SearchAll"`` |
+| `methods.searchItemsWithPagination` | \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } |
+| `methods.searchItemsWithPagination.I` | typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) |
+| `methods.searchItemsWithPagination.O` | typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) |
+| `methods.searchItemsWithPagination.kind` | `Unary` |
+| `methods.searchItemsWithPagination.name` | ``"SearchItemsWithPagination"`` |
+| `methods.sendEmail` | \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } |
+| `methods.sendEmail.I` | typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) |
+| `methods.sendEmail.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.sendEmail.kind` | `Unary` |
+| `methods.sendEmail.name` | ``"SendEmail"`` |
+| `methods.sendForRevision` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } |
+| `methods.sendForRevision.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.sendForRevision.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.sendForRevision.kind` | `Unary` |
+| `methods.sendForRevision.name` | ``"SendForRevision"`` |
+| `methods.sendForVerification` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } |
+| `methods.sendForVerification.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.sendForVerification.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.sendForVerification.kind` | `Unary` |
+| `methods.sendForVerification.name` | ``"SendForVerification"`` |
+| `methods.uploadSupplyOfferItems` | \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSupplyOfferItems"`` = "UploadSupplyOfferItems" } |
+| `methods.uploadSupplyOfferItems.I` | typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) |
+| `methods.uploadSupplyOfferItems.O` | typeof [`IdentifiersList`](classes/IdentifiersList.md) |
+| `methods.uploadSupplyOfferItems.kind` | `Unary` |
+| `methods.uploadSupplyOfferItems.name` | ``"UploadSupplyOfferItems"`` |
+| `methods.verify` | \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } |
+| `methods.verify.I` | typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) |
+| `methods.verify.O` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.verify.kind` | `Unary` |
+| `methods.verify.name` | ``"Verify"`` |
+| `methods.viewAll` | \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } |
+| `methods.viewAll.I` | typeof [`ActiveStatus`](classes/ActiveStatus.md) |
+| `methods.viewAll.O` | typeof [`SupplyOffersList`](classes/SupplyOffersList.md) |
+| `methods.viewAll.kind` | `Unary` |
+| `methods.viewAll.name` | ``"ViewAll"`` |
+| `methods.viewAllForEntityUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } |
+| `methods.viewAllForEntityUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewAllForEntityUUID.O` | typeof [`SupplyOffersList`](classes/SupplyOffersList.md) |
+| `methods.viewAllForEntityUUID.kind` | `Unary` |
+| `methods.viewAllForEntityUUID.name` | ``"ViewAllForEntityUUID"`` |
+| `methods.viewAmendments` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } |
+| `methods.viewAmendments.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewAmendments.O` | typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) |
+| `methods.viewAmendments.kind` | `Unary` |
+| `methods.viewAmendments.name` | ``"ViewAmendments"`` |
+| `methods.viewAncillaryParametersByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOfferAncillaryParameters`](classes/SupplyOfferAncillaryParameters.md) = SupplyOfferAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } |
+| `methods.viewAncillaryParametersByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewAncillaryParametersByUUID.O` | typeof [`SupplyOfferAncillaryParameters`](classes/SupplyOfferAncillaryParameters.md) |
+| `methods.viewAncillaryParametersByUUID.kind` | `Unary` |
+| `methods.viewAncillaryParametersByUUID.name` | ``"ViewAncillaryParametersByUUID"`` |
+| `methods.viewApprovedSupplyOfferItems` | \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSupplyOfferItems"`` = "ViewApprovedSupplyOfferItems" } |
+| `methods.viewApprovedSupplyOfferItems.I` | typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) |
+| `methods.viewApprovedSupplyOfferItems.O` | typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) |
+| `methods.viewApprovedSupplyOfferItems.kind` | `Unary` |
+| `methods.viewApprovedSupplyOfferItems.name` | ``"ViewApprovedSupplyOfferItems"`` |
+| `methods.viewByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } |
+| `methods.viewByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewByID.O` | typeof [`SupplyOffer`](classes/SupplyOffer.md) |
+| `methods.viewByID.kind` | `Unary` |
+| `methods.viewByID.name` | ``"ViewByID"`` |
+| `methods.viewByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } |
+| `methods.viewByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewByUUID.O` | typeof [`SupplyOffer`](classes/SupplyOffer.md) |
+| `methods.viewByUUID.kind` | `Unary` |
+| `methods.viewByUUID.name` | ``"ViewByUUID"`` |
+| `methods.viewEssentialByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } |
+| `methods.viewEssentialByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewEssentialByID.O` | typeof [`SupplyOffer`](classes/SupplyOffer.md) |
+| `methods.viewEssentialByID.kind` | `Unary` |
+| `methods.viewEssentialByID.name` | ``"ViewEssentialByID"`` |
+| `methods.viewPaginatedApprovedSupplyOfferItems` | \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSupplyOfferItems"`` = "ViewPaginatedApprovedSupplyOfferItems" } |
+| `methods.viewPaginatedApprovedSupplyOfferItems.I` | typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) |
+| `methods.viewPaginatedApprovedSupplyOfferItems.O` | typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) |
+| `methods.viewPaginatedApprovedSupplyOfferItems.kind` | `Unary` |
+| `methods.viewPaginatedApprovedSupplyOfferItems.name` | ``"ViewPaginatedApprovedSupplyOfferItems"`` |
+| `methods.viewPaginatedUnapprovedSupplyOfferItems` | \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSupplyOfferItems"`` = "ViewPaginatedUnapprovedSupplyOfferItems" } |
+| `methods.viewPaginatedUnapprovedSupplyOfferItems.I` | typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) |
+| `methods.viewPaginatedUnapprovedSupplyOfferItems.O` | typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) |
+| `methods.viewPaginatedUnapprovedSupplyOfferItems.kind` | `Unary` |
+| `methods.viewPaginatedUnapprovedSupplyOfferItems.name` | ``"ViewPaginatedUnapprovedSupplyOfferItems"`` |
+| `methods.viewProspectiveFamilies` | \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } |
+| `methods.viewProspectiveFamilies.I` | typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) |
+| `methods.viewProspectiveFamilies.O` | typeof [`FamiliesList`](classes/FamiliesList.md) |
+| `methods.viewProspectiveFamilies.kind` | `Unary` |
+| `methods.viewProspectiveFamilies.name` | ``"ViewProspectiveFamilies"`` |
+| `methods.viewProspectiveSupplyOfferItem` | \{ `I`: typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) = SupplyOfferItemProspectiveInfoRequest; `O`: typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) = SupplyOffersServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSupplyOfferItem"`` = "ViewProspectiveSupplyOfferItem" } |
+| `methods.viewProspectiveSupplyOfferItem.I` | typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) |
+| `methods.viewProspectiveSupplyOfferItem.O` | typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) |
+| `methods.viewProspectiveSupplyOfferItem.kind` | `Unary` |
+| `methods.viewProspectiveSupplyOfferItem.name` | ``"ViewProspectiveSupplyOfferItem"`` |
+| `methods.viewSupplyOfferItemByID` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOfferItem`](classes/SupplyOfferItem.md) = SupplyOfferItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemByID"`` = "ViewSupplyOfferItemByID" } |
+| `methods.viewSupplyOfferItemByID.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewSupplyOfferItemByID.O` | typeof [`SupplyOfferItem`](classes/SupplyOfferItem.md) |
+| `methods.viewSupplyOfferItemByID.kind` | `Unary` |
+| `methods.viewSupplyOfferItemByID.name` | ``"ViewSupplyOfferItemByID"`` |
+| `methods.viewSupplyOfferItemHistory` | \{ `I`: typeof [`SupplyOfferItemHistoryRequest`](classes/SupplyOfferItemHistoryRequest.md) = SupplyOfferItemHistoryRequest; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemHistory"`` = "ViewSupplyOfferItemHistory" } |
+| `methods.viewSupplyOfferItemHistory.I` | typeof [`SupplyOfferItemHistoryRequest`](classes/SupplyOfferItemHistoryRequest.md) |
+| `methods.viewSupplyOfferItemHistory.O` | typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) |
+| `methods.viewSupplyOfferItemHistory.kind` | `Unary` |
+| `methods.viewSupplyOfferItemHistory.name` | ``"ViewSupplyOfferItemHistory"`` |
+| `methods.viewSupplyOfferItemPrice` | \{ `I`: typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) = SupplyOfferItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemPrice"`` = "ViewSupplyOfferItemPrice" } |
+| `methods.viewSupplyOfferItemPrice.I` | typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) |
+| `methods.viewSupplyOfferItemPrice.O` | typeof [`PriceResponse`](classes/PriceResponse.md) |
+| `methods.viewSupplyOfferItemPrice.kind` | `Unary` |
+| `methods.viewSupplyOfferItemPrice.name` | ``"ViewSupplyOfferItemPrice"`` |
+| `methods.viewUnapprovedSupplyOfferItems` | \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSupplyOfferItems"`` = "ViewUnapprovedSupplyOfferItems" } |
+| `methods.viewUnapprovedSupplyOfferItems.I` | typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) |
+| `methods.viewUnapprovedSupplyOfferItems.O` | typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) |
+| `methods.viewUnapprovedSupplyOfferItems.kind` | `Unary` |
+| `methods.viewUnapprovedSupplyOfferItems.name` | ``"ViewUnapprovedSupplyOfferItems"`` |
+| `methods.viewWithPagination` | \{ `I`: typeof [`SupplyOffersServicePaginationReq`](classes/SupplyOffersServicePaginationReq.md) = SupplyOffersServicePaginationReq; `O`: typeof [`SupplyOffersServicePaginationResponse`](classes/SupplyOffersServicePaginationResponse.md) = SupplyOffersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
+| `methods.viewWithPagination.I` | typeof [`SupplyOffersServicePaginationReq`](classes/SupplyOffersServicePaginationReq.md) |
+| `methods.viewWithPagination.O` | typeof [`SupplyOffersServicePaginationResponse`](classes/SupplyOffersServicePaginationResponse.md) |
+| `methods.viewWithPagination.kind` | `Unary` |
+| `methods.viewWithPagination.name` | ``"ViewWithPagination"`` |
+| `typeName` | ``"Scailo.SupplyOffersService"`` |
+
+#### Defined in
+
+src/supply_offers.scailo_connect.ts:17
+
+___
+
 ### TaxGroupsService
 
 • `Const` **TaxGroupsService**: `Object`
@@ -21464,7 +22055,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:348
+index.ts:354
 
 ___
 
@@ -21508,7 +22099,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:379
+index.ts:385
 
 ___
 
@@ -21552,7 +22143,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:441
+index.ts:447
 
 ___
 
@@ -21596,7 +22187,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:410
+index.ts:416
 
 ___
 
@@ -21640,7 +22231,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:472
+index.ts:478
 
 ___
 
@@ -21684,7 +22275,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:503
+index.ts:509
 
 ___
 
@@ -21728,7 +22319,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:534
+index.ts:540
 
 ___
 
@@ -21772,7 +22363,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:565
+index.ts:571
 
 ___
 
@@ -21816,7 +22407,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:596
+index.ts:602
 
 ___
 
@@ -21860,7 +22451,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:658
+index.ts:664
 
 ___
 
@@ -21904,7 +22495,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:627
+index.ts:633
 
 ___
 
@@ -21948,7 +22539,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:689
+index.ts:695
 
 ___
 
@@ -21992,7 +22583,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:720
+index.ts:726
 
 ___
 
@@ -22036,7 +22627,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:751
+index.ts:757
 
 ___
 
@@ -22080,7 +22671,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:782
+index.ts:788
 
 ___
 
@@ -22124,7 +22715,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:813
+index.ts:819
 
 ___
 
@@ -22168,7 +22759,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:844
+index.ts:850
 
 ___
 
@@ -22212,7 +22803,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:875
+index.ts:881
 
 ___
 
@@ -22256,7 +22847,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:906
+index.ts:912
 
 ___
 
@@ -22300,7 +22891,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:937
+index.ts:943
 
 ___
 
@@ -22344,7 +22935,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:968
+index.ts:974
 
 ___
 
@@ -22388,7 +22979,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:999
+index.ts:1005
 
 ___
 
@@ -22432,7 +23023,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1030
+index.ts:1036
 
 ___
 
@@ -22476,7 +23067,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1061
+index.ts:1067
 
 ___
 
@@ -22520,7 +23111,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1092
+index.ts:1098
 
 ___
 
@@ -22564,7 +23155,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1123
+index.ts:1129
 
 ___
 
@@ -22608,7 +23199,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1154
+index.ts:1160
 
 ___
 
@@ -22652,7 +23243,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1216
+index.ts:1222
 
 ___
 
@@ -22696,7 +23287,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1185
+index.ts:1191
 
 ___
 
@@ -22740,7 +23331,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1247
+index.ts:1253
 
 ___
 
@@ -22784,7 +23375,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1278
+index.ts:1284
 
 ___
 
@@ -22828,7 +23419,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1309
+index.ts:1315
 
 ___
 
@@ -22872,7 +23463,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1340
+index.ts:1346
 
 ___
 
@@ -22916,7 +23507,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1371
+index.ts:1377
 
 ___
 
@@ -22960,7 +23551,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1402
+index.ts:1408
 
 ___
 
@@ -23004,7 +23595,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1433
+index.ts:1439
 
 ___
 
@@ -23048,7 +23639,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1464
+index.ts:1470
 
 ___
 
@@ -23092,7 +23683,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1495
+index.ts:1501
 
 ___
 
@@ -23136,7 +23727,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1588
+index.ts:1594
 
 ___
 
@@ -23180,7 +23771,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1557
+index.ts:1563
 
 ___
 
@@ -23224,7 +23815,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1526
+index.ts:1532
 
 ___
 
@@ -23268,7 +23859,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1619
+index.ts:1625
 
 ___
 
@@ -23312,7 +23903,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1650
+index.ts:1656
 
 ___
 
@@ -23356,7 +23947,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1681
+index.ts:1687
 
 ___
 
@@ -23400,7 +23991,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1712
+index.ts:1718
 
 ___
 
@@ -23444,7 +24035,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1743
+index.ts:1749
 
 ___
 
@@ -23488,7 +24079,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1774
+index.ts:1780
 
 ___
 
@@ -23532,7 +24123,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1805
+index.ts:1811
 
 ___
 
@@ -23576,7 +24167,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1836
+index.ts:1842
 
 ___
 
@@ -23620,7 +24211,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1867
+index.ts:1873
 
 ___
 
@@ -23664,7 +24255,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1898
+index.ts:1904
 
 ___
 
@@ -23708,7 +24299,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1929
+index.ts:1935
 
 ___
 
@@ -23752,7 +24343,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1960
+index.ts:1966
 
 ___
 
@@ -23796,7 +24387,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2053
+index.ts:2059
 
 ___
 
@@ -23840,7 +24431,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2022
+index.ts:2028
 
 ___
 
@@ -23884,7 +24475,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1991
+index.ts:1997
 
 ___
 
@@ -23928,7 +24519,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2084
+index.ts:2090
 
 ___
 
@@ -23972,7 +24563,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2115
+index.ts:2121
 
 ___
 
@@ -24016,7 +24607,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2146
+index.ts:2152
 
 ___
 
@@ -24060,7 +24651,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2177
+index.ts:2183
 
 ___
 
@@ -24104,7 +24695,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2208
+index.ts:2214
 
 ___
 
@@ -24148,7 +24739,51 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2239
+index.ts:2245
+
+___
+
+### getClientForProformaInvoicesService
+
+▸ **getClientForProformaInvoicesService**(`transport`): `PromiseClient`\<typeof [`ProformaInvoicesService`](modules.md#proformainvoicesservice)\>
+
+Get the client to access the ProformaInvoicesService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`ProformaInvoicesService`](modules.md#proformainvoicesservice)\>
+
+#### Defined in
+
+index.ts:2276
 
 ___
 
@@ -24192,7 +24827,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2270
+index.ts:2307
 
 ___
 
@@ -24236,7 +24871,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2301
+index.ts:2338
 
 ___
 
@@ -24280,7 +24915,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2332
+index.ts:2369
 
 ___
 
@@ -24324,7 +24959,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2363
+index.ts:2400
 
 ___
 
@@ -24368,7 +25003,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2394
+index.ts:2431
 
 ___
 
@@ -24412,7 +25047,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2425
+index.ts:2462
 
 ___
 
@@ -24456,7 +25091,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2456
+index.ts:2493
 
 ___
 
@@ -24500,7 +25135,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2487
+index.ts:2524
 
 ___
 
@@ -24544,7 +25179,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2518
+index.ts:2555
 
 ___
 
@@ -24588,7 +25223,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2549
+index.ts:2586
 
 ___
 
@@ -24632,7 +25267,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2580
+index.ts:2617
 
 ___
 
@@ -24676,7 +25311,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2611
+index.ts:2648
 
 ___
 
@@ -24720,7 +25355,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2642
+index.ts:2679
 
 ___
 
@@ -24764,7 +25399,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2673
+index.ts:2710
 
 ___
 
@@ -24808,7 +25443,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2704
+index.ts:2741
 
 ___
 
@@ -24852,7 +25487,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2735
+index.ts:2772
 
 ___
 
@@ -24896,7 +25531,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2766
+index.ts:2803
 
 ___
 
@@ -24940,7 +25575,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2797
+index.ts:2834
 
 ___
 
@@ -24984,7 +25619,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2828
+index.ts:2865
 
 ___
 
@@ -25028,7 +25663,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2859
+index.ts:2896
 
 ___
 
@@ -25072,7 +25707,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2890
+index.ts:2927
 
 ___
 
@@ -25116,7 +25751,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2952
+index.ts:2989
 
 ___
 
@@ -25160,7 +25795,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2921
+index.ts:2958
 
 ___
 
@@ -25204,7 +25839,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2983
+index.ts:3020
 
 ___
 
@@ -25248,7 +25883,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3014
+index.ts:3051
 
 ___
 
@@ -25292,7 +25927,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3045
+index.ts:3082
 
 ___
 
@@ -25336,7 +25971,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3076
+index.ts:3113
 
 ___
 
@@ -25380,7 +26015,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3107
+index.ts:3144
 
 ___
 
@@ -25424,7 +26059,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3138
+index.ts:3175
 
 ___
 
@@ -25468,7 +26103,51 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3169
+index.ts:3206
+
+___
+
+### getClientForSupplyOffersService
+
+▸ **getClientForSupplyOffersService**(`transport`): `PromiseClient`\<typeof [`SupplyOffersService`](modules.md#supplyoffersservice)\>
+
+Get the client to access the SupplyOffersService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `transport` | `Transport` |
+
+#### Returns
+
+`PromiseClient`\<typeof [`SupplyOffersService`](modules.md#supplyoffersservice)\>
+
+#### Defined in
+
+index.ts:3237
 
 ___
 
@@ -25512,7 +26191,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3200
+index.ts:3268
 
 ___
 
@@ -25556,7 +26235,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3231
+index.ts:3299
 
 ___
 
@@ -25600,7 +26279,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3262
+index.ts:3330
 
 ___
 
@@ -25644,7 +26323,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3293
+index.ts:3361
 
 ___
 
@@ -25688,7 +26367,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3324
+index.ts:3392
 
 ___
 
@@ -25732,7 +26411,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3355
+index.ts:3423
 
 ___
 
@@ -25776,7 +26455,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3386
+index.ts:3454
 
 ___
 
@@ -25820,7 +26499,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3417
+index.ts:3485
 
 ___
 
@@ -25864,7 +26543,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3448
+index.ts:3516
 
 ___
 
@@ -25908,7 +26587,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3479
+index.ts:3547
 
 ___
 
@@ -25952,7 +26631,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3510
+index.ts:3578
 
 ___
 
@@ -25996,4 +26675,4 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3541
+index.ts:3609

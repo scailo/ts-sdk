@@ -14,11 +14,13 @@ from enum Scailo.AMENDMENT_LOG_REF_FOR
 
 - [AMENDMENT\_LOG\_REF\_FOR\_ANY\_UNSPECIFIED](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_any_unspecified)
 - [AMENDMENT\_LOG\_REF\_FOR\_FAMILY](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_family)
+- [AMENDMENT\_LOG\_REF\_FOR\_PROFORMA\_INVOICE](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_proforma_invoice)
 - [AMENDMENT\_LOG\_REF\_FOR\_PURCHASE\_ORDER](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_purchase_order)
 - [AMENDMENT\_LOG\_REF\_FOR\_SALES\_ENQUIRY](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_sales_enquiry)
 - [AMENDMENT\_LOG\_REF\_FOR\_SALES\_INVOICE](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_sales_invoice)
 - [AMENDMENT\_LOG\_REF\_FOR\_SALES\_ORDER](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_sales_order)
 - [AMENDMENT\_LOG\_REF\_FOR\_SALES\_QUOTATION](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_sales_quotation)
+- [AMENDMENT\_LOG\_REF\_FOR\_SUPPLY\_OFFER](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_supply_offer)
 
 ## Enumeration Members
 
@@ -34,7 +36,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1083
+src/base.scailo_pb.ts:1099
 
 ___
 
@@ -50,7 +52,23 @@ from enum value: AMENDMENT_LOG_REF_FOR_FAMILY = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1090
+src/base.scailo_pb.ts:1106
+
+___
+
+### AMENDMENT\_LOG\_REF\_FOR\_PROFORMA\_INVOICE
+
+• **AMENDMENT\_LOG\_REF\_FOR\_PROFORMA\_INVOICE** = ``7``
+
+Denotes that the log is made while amending a proforma invoice
+
+**`Generated`**
+
+from enum value: AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7;
+
+#### Defined in
+
+src/base.scailo_pb.ts:1155
 
 ___
 
@@ -66,7 +84,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_PURCHASE_ORDER = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1097
+src/base.scailo_pb.ts:1113
 
 ___
 
@@ -82,7 +100,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_ENQUIRY = 4;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1111
+src/base.scailo_pb.ts:1134
 
 ___
 
@@ -98,7 +116,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_INVOICE = 6;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1125
+src/base.scailo_pb.ts:1148
 
 ___
 
@@ -114,7 +132,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_ORDER = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1104
+src/base.scailo_pb.ts:1127
 
 ___
 
@@ -130,4 +148,20 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_QUOTATION = 5;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1118
+src/base.scailo_pb.ts:1141
+
+___
+
+### AMENDMENT\_LOG\_REF\_FOR\_SUPPLY\_OFFER
+
+• **AMENDMENT\_LOG\_REF\_FOR\_SUPPLY\_OFFER** = ``21``
+
+Denotes that the log is made while amending a supply offer
+
+**`Generated`**
+
+from enum value: AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER = 21;
+
+#### Defined in
+
+src/base.scailo_pb.ts:1120

@@ -65,7 +65,7 @@ Message\&lt;Empty\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1145
+src/base.scailo_pb.ts:1177
 
 ## Properties
 
@@ -75,7 +75,7 @@ src/base.scailo_pb.ts:1145
 
 #### Defined in
 
-src/base.scailo_pb.ts:1152
+src/base.scailo_pb.ts:1184
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1150
+src/base.scailo_pb.ts:1182
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1151
+src/base.scailo_pb.ts:1183
 
 ## Methods
 
@@ -383,7 +383,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1167
+src/base.scailo_pb.ts:1199
 
 ___
 
@@ -404,7 +404,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1155
+src/base.scailo_pb.ts:1187
 
 ___
 
@@ -425,7 +425,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1159
+src/base.scailo_pb.ts:1191
 
 ___
 
@@ -446,4 +446,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1163
+src/base.scailo_pb.ts:1195

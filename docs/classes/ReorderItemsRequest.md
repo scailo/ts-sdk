@@ -67,7 +67,7 @@ Message\&lt;ReorderItemsRequest\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3143
+src/base.scailo_pb.ts:3175
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3134
+src/base.scailo_pb.ts:3166
 
 ___
 
@@ -99,7 +99,7 @@ from field: repeated uint64 sequence = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3141
+src/base.scailo_pb.ts:3173
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3150
+src/base.scailo_pb.ts:3182
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3148
+src/base.scailo_pb.ts:3180
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3149
+src/base.scailo_pb.ts:3181
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3167
+src/base.scailo_pb.ts:3199
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3155
+src/base.scailo_pb.ts:3187
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3159
+src/base.scailo_pb.ts:3191
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3163
+src/base.scailo_pb.ts:3195

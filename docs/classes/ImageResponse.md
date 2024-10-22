@@ -68,7 +68,7 @@ Message\&lt;ImageResponse\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1368
+src/base.scailo_pb.ts:1400
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: bytes image = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1352
+src/base.scailo_pb.ts:1384
 
 ___
 
@@ -100,7 +100,7 @@ from field: string mime_type = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1359
+src/base.scailo_pb.ts:1391
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 timestamp = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1366
+src/base.scailo_pb.ts:1398
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1375
+src/base.scailo_pb.ts:1407
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1373
+src/base.scailo_pb.ts:1405
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1374
+src/base.scailo_pb.ts:1406
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1393
+src/base.scailo_pb.ts:1425
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1381
+src/base.scailo_pb.ts:1413
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1385
+src/base.scailo_pb.ts:1417
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1389
+src/base.scailo_pb.ts:1421

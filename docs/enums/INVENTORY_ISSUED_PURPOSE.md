@@ -40,7 +40,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:968
+src/base.scailo_pb.ts:984
 
 ___
 
@@ -56,7 +56,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_GOODS_DISPATCH = 5;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1003
+src/base.scailo_pb.ts:1019
 
 ___
 
@@ -72,7 +72,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_INITIAL_STOCK = 7;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1017
+src/base.scailo_pb.ts:1033
 
 ___
 
@@ -88,7 +88,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_INTAKE = 6;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1010
+src/base.scailo_pb.ts:1026
 
 ___
 
@@ -104,7 +104,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN 
 
 #### Defined in
 
-src/base.scailo_pb.ts:1052
+src/base.scailo_pb.ts:1068
 
 ___
 
@@ -120,7 +120,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1038
+src/base.scailo_pb.ts:1054
 
 ___
 
@@ -136,7 +136,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN
 
 #### Defined in
 
-src/base.scailo_pb.ts:1045
+src/base.scailo_pb.ts:1061
 
 ___
 
@@ -152,7 +152,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_PURCHASE_RETURN = 9;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1031
+src/base.scailo_pb.ts:1047
 
 ___
 
@@ -168,7 +168,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_SALES_RETURN = 8;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1024
+src/base.scailo_pb.ts:1040
 
 ___
 
@@ -184,7 +184,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_STOCK_AUDIT = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:982
+src/base.scailo_pb.ts:998
 
 ___
 
@@ -200,7 +200,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_STOCK_ISSUANCE = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:975
+src/base.scailo_pb.ts:991
 
 ___
 
@@ -216,7 +216,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_STOCK_RETURN = 4;
 
 #### Defined in
 
-src/base.scailo_pb.ts:996
+src/base.scailo_pb.ts:1012
 
 ___
 
@@ -232,4 +232,4 @@ from enum value: INVENTORY_ISSUED_PURPOSE_STOCK_SPLIT = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:989
+src/base.scailo_pb.ts:1005

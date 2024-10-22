@@ -66,7 +66,7 @@ Message\&lt;IdentifierUUIDsList\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2726
+src/base.scailo_pb.ts:2758
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.IdentifierUUID list = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2724
+src/base.scailo_pb.ts:2756
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2733
+src/base.scailo_pb.ts:2765
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2731
+src/base.scailo_pb.ts:2763
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2732
+src/base.scailo_pb.ts:2764
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2749
+src/base.scailo_pb.ts:2781
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2737
+src/base.scailo_pb.ts:2769
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2741
+src/base.scailo_pb.ts:2773
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2745
+src/base.scailo_pb.ts:2777

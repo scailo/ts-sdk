@@ -30,7 +30,7 @@ from enum value: BOOL_FILTER_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:676
+src/base.scailo_pb.ts:692
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: BOOL_FILTER_FALSE = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:690
+src/base.scailo_pb.ts:706
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: BOOL_FILTER_TRUE = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:683
+src/base.scailo_pb.ts:699

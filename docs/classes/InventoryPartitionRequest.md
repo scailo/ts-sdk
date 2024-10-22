@@ -69,7 +69,7 @@ Message\&lt;InventoryPartitionRequest\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3445
+src/base.scailo_pb.ts:3477
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3422
+src/base.scailo_pb.ts:3454
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 partition_quantity = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3436
+src/base.scailo_pb.ts:3468
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 partition_secondary_quantity = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3443
+src/base.scailo_pb.ts:3475
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3429
+src/base.scailo_pb.ts:3461
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3452
+src/base.scailo_pb.ts:3484
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3450
+src/base.scailo_pb.ts:3482
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3451
+src/base.scailo_pb.ts:3483
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3471
+src/base.scailo_pb.ts:3503
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3459
+src/base.scailo_pb.ts:3491
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3463
+src/base.scailo_pb.ts:3495
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3467
+src/base.scailo_pb.ts:3499

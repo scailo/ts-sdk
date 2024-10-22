@@ -68,7 +68,7 @@ Message\&lt;UpdatePasswordReq\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1976
+src/base.scailo_pb.ts:2008
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1967
+src/base.scailo_pb.ts:1999
 
 ___
 
@@ -100,7 +100,7 @@ from field: string plain_text_password = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1974
+src/base.scailo_pb.ts:2006
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1960
+src/base.scailo_pb.ts:1992
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1983
+src/base.scailo_pb.ts:2015
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1981
+src/base.scailo_pb.ts:2013
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1982
+src/base.scailo_pb.ts:2014
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2001
+src/base.scailo_pb.ts:2033
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1989
+src/base.scailo_pb.ts:2021
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1993
+src/base.scailo_pb.ts:2025
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1997
+src/base.scailo_pb.ts:2029

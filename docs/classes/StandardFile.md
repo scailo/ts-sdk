@@ -68,7 +68,7 @@ Message\&lt;StandardFile\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3266
+src/base.scailo_pb.ts:3298
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: bytes content = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3264
+src/base.scailo_pb.ts:3296
 
 ___
 
@@ -100,7 +100,7 @@ from field: string mime_type = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3257
+src/base.scailo_pb.ts:3289
 
 ___
 
@@ -116,7 +116,7 @@ from field: string name = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3250
+src/base.scailo_pb.ts:3282
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3273
+src/base.scailo_pb.ts:3305
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3271
+src/base.scailo_pb.ts:3303
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3272
+src/base.scailo_pb.ts:3304
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3291
+src/base.scailo_pb.ts:3323
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3279
+src/base.scailo_pb.ts:3311
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3283
+src/base.scailo_pb.ts:3315
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3287
+src/base.scailo_pb.ts:3319

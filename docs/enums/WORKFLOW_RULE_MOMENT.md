@@ -30,7 +30,7 @@ from enum value: WORKFLOW_RULE_MOMENT_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:641
+src/workflows_rules.scailo_pb.ts:657
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: WORKFLOW_RULE_MOMENT_BEGIN = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:648
+src/workflows_rules.scailo_pb.ts:664
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: WORKFLOW_RULE_MOMENT_END = 2;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:655
+src/workflows_rules.scailo_pb.ts:671

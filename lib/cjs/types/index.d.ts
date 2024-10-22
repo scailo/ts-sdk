@@ -124,6 +124,8 @@ export * from "./src/production_plans.scailo_connect";
 export * from "./src/production_plans.scailo_pb";
 export * from "./src/products.scailo_connect";
 export * from "./src/products.scailo_pb";
+export * from "./src/proforma_invoices.scailo_connect";
+export * from "./src/proforma_invoices.scailo_pb";
 export * from "./src/projects.scailo_connect";
 export * from "./src/projects.scailo_pb";
 export * from "./src/purchases_enquiries.scailo_connect";
@@ -184,6 +186,8 @@ export * from "./src/storages.scailo_connect";
 export * from "./src/storages.scailo_pb";
 export * from "./src/stores.scailo_connect";
 export * from "./src/stores.scailo_pb";
+export * from "./src/supply_offers.scailo_connect";
+export * from "./src/supply_offers.scailo_pb";
 export * from "./src/tax_groups.scailo_connect";
 export * from "./src/tax_groups.scailo_pb";
 export * from "./src/tax_params.scailo_connect";
@@ -274,6 +278,7 @@ import { PayrollParamsService } from "./src/payroll_params.scailo_connect";
 import { ProductionIndentsService } from "./src/production_indents.scailo_connect";
 import { ProductionPlansService } from "./src/production_plans.scailo_connect";
 import { ProductsService } from "./src/products.scailo_connect";
+import { ProformaInvoicesService } from "./src/proforma_invoices.scailo_connect";
 import { ProjectsService } from "./src/projects.scailo_connect";
 import { PurchasesEnquiriesService } from "./src/purchases_enquiries.scailo_connect";
 import { PurchasesIndentsService } from "./src/purchases_indents.scailo_connect";
@@ -304,6 +309,7 @@ import { StockIssuancesService } from "./src/stock_issuances.scailo_connect";
 import { StockReturnsService } from "./src/stock_returns.scailo_connect";
 import { StoragesService } from "./src/storages.scailo_connect";
 import { StoresService } from "./src/stores.scailo_connect";
+import { SupplyOffersService } from "./src/supply_offers.scailo_connect";
 import { TaxGroupsService } from "./src/tax_groups.scailo_connect";
 import { TaxParamsService } from "./src/tax_params.scailo_connect";
 import { TeamsService } from "./src/teams.scailo_connect";
@@ -2054,6 +2060,34 @@ function getNodeTransport(apiEndPoint: string) {
 export declare function getClientForProductsService(transport: Transport): PromiseClient<typeof ProductsService>;
 /**
 
+Get the client to access the ProformaInvoicesService. Transport is a connectrpc Transport, which is created as follows:
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node:
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+*/
+export declare function getClientForProformaInvoicesService(transport: Transport): PromiseClient<typeof ProformaInvoicesService>;
+/**
+
 Get the client to access the ProjectsService. Transport is a connectrpc Transport, which is created as follows:
 
 For web:
@@ -2892,6 +2926,34 @@ function getNodeTransport(apiEndPoint: string) {
 
 */
 export declare function getClientForStoresService(transport: Transport): PromiseClient<typeof StoresService>;
+/**
+
+Get the client to access the SupplyOffersService. Transport is a connectrpc Transport, which is created as follows:
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node:
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+*/
+export declare function getClientForSupplyOffersService(transport: Transport): PromiseClient<typeof SupplyOffersService>;
 /**
 
 Get the client to access the TaxGroupsService. Transport is a connectrpc Transport, which is created as follows:

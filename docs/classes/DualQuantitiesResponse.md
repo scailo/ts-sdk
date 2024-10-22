@@ -67,7 +67,7 @@ Message\&lt;DualQuantitiesResponse\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1737
+src/base.scailo_pb.ts:1769
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 primary_quantity = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1728
+src/base.scailo_pb.ts:1760
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 secondary_quantity = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1735
+src/base.scailo_pb.ts:1767
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1744
+src/base.scailo_pb.ts:1776
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1742
+src/base.scailo_pb.ts:1774
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1743
+src/base.scailo_pb.ts:1775
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1761
+src/base.scailo_pb.ts:1793
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1749
+src/base.scailo_pb.ts:1781
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1753
+src/base.scailo_pb.ts:1785
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1757
+src/base.scailo_pb.ts:1789

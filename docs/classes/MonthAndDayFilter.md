@@ -67,7 +67,7 @@ Message\&lt;MonthAndDayFilter\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1461
+src/base.scailo_pb.ts:1493
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 day = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1459
+src/base.scailo_pb.ts:1491
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 month = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1452
+src/base.scailo_pb.ts:1484
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1468
+src/base.scailo_pb.ts:1500
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1466
+src/base.scailo_pb.ts:1498
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1467
+src/base.scailo_pb.ts:1499
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1485
+src/base.scailo_pb.ts:1517
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1473
+src/base.scailo_pb.ts:1505
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1477
+src/base.scailo_pb.ts:1509
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1481
+src/base.scailo_pb.ts:1513

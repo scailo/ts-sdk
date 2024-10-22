@@ -67,7 +67,7 @@ Message\&lt;GPSCoordinatesResponse\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1511
+src/base.scailo_pb.ts:1543
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: double latitude = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1502
+src/base.scailo_pb.ts:1534
 
 ___
 
@@ -99,7 +99,7 @@ from field: double longitude = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1509
+src/base.scailo_pb.ts:1541
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1518
+src/base.scailo_pb.ts:1550
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1516
+src/base.scailo_pb.ts:1548
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1517
+src/base.scailo_pb.ts:1549
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1535
+src/base.scailo_pb.ts:1567
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1523
+src/base.scailo_pb.ts:1555
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1527
+src/base.scailo_pb.ts:1559
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1531
+src/base.scailo_pb.ts:1563

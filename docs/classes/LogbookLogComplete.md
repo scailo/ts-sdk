@@ -72,7 +72,7 @@ Message\&lt;LogbookLogComplete\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3088
+src/base.scailo_pb.ts:3120
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: string app_comment = 13;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3072
+src/base.scailo_pb.ts:3104
 
 ___
 
@@ -104,7 +104,7 @@ from field: Scailo.EmployeeMetadata metadata = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3044
+src/base.scailo_pb.ts:3076
 
 ___
 
@@ -120,7 +120,7 @@ from field: Scailo.LOGBOOK_OPERATION operation = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3058
+src/base.scailo_pb.ts:3090
 
 ___
 
@@ -136,7 +136,7 @@ from field: bytes previous_data = 15;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3086
+src/base.scailo_pb.ts:3118
 
 ___
 
@@ -152,7 +152,7 @@ from field: string ref_uuid = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3051
+src/base.scailo_pb.ts:3083
 
 ___
 
@@ -168,7 +168,7 @@ from field: string user_comment = 14;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3079
+src/base.scailo_pb.ts:3111
 
 ___
 
@@ -184,7 +184,7 @@ from field: string username = 12;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3065
+src/base.scailo_pb.ts:3097
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3095
+src/base.scailo_pb.ts:3127
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3093
+src/base.scailo_pb.ts:3125
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3094
+src/base.scailo_pb.ts:3126
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3117
+src/base.scailo_pb.ts:3149
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3105
+src/base.scailo_pb.ts:3137
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3109
+src/base.scailo_pb.ts:3141
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3113
+src/base.scailo_pb.ts:3145

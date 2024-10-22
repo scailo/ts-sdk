@@ -72,7 +72,7 @@ Message\&lt;WorkflowEvent\&gt;.constructor
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1960
+src/workflows_rules.scailo_pb.ts:1976
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: uint64 event_id = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1916
+src/workflows_rules.scailo_pb.ts:1932
 
 ___
 
@@ -104,7 +104,7 @@ from field: string rule_code = 2;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1923
+src/workflows_rules.scailo_pb.ts:1939
 
 ___
 
@@ -120,7 +120,7 @@ from field: Scailo.WORKFLOW_RULE_SERVICE_NAME service_name = 10;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1930
+src/workflows_rules.scailo_pb.ts:1946
 
 ___
 
@@ -136,7 +136,7 @@ from field: bytes transaction_payload = 30;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1944
+src/workflows_rules.scailo_pb.ts:1960
 
 ___
 
@@ -152,7 +152,7 @@ from field: Scailo.WORKFLOW_RULE_EXECUTE_ON transaction_status = 20;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1937
+src/workflows_rules.scailo_pb.ts:1953
 
 ___
 
@@ -168,7 +168,7 @@ from field: bytes user_payload = 40;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1951
+src/workflows_rules.scailo_pb.ts:1967
 
 ___
 
@@ -184,7 +184,7 @@ from field: string username = 50;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1958
+src/workflows_rules.scailo_pb.ts:1974
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1967
+src/workflows_rules.scailo_pb.ts:1983
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1965
+src/workflows_rules.scailo_pb.ts:1981
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1966
+src/workflows_rules.scailo_pb.ts:1982
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1989
+src/workflows_rules.scailo_pb.ts:2005
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1977
+src/workflows_rules.scailo_pb.ts:1993
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1981
+src/workflows_rules.scailo_pb.ts:1997
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1985
+src/workflows_rules.scailo_pb.ts:2001

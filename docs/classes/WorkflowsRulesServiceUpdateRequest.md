@@ -77,7 +77,7 @@ Message\&lt;WorkflowsRulesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:995
+src/workflows_rules.scailo_pb.ts:1011
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:958
+src/workflows_rules.scailo_pb.ts:974
 
 ___
 
@@ -109,7 +109,7 @@ from field: Scailo.WORKFLOW_RULE_EXECUTE_ON execute_on = 23;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:986
+src/workflows_rules.scailo_pb.ts:1002
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:923
+src/workflows_rules.scailo_pb.ts:939
 
 ___
 
@@ -141,7 +141,7 @@ from field: Scailo.WORKFLOW_RULE_MOMENT moment = 22;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:979
+src/workflows_rules.scailo_pb.ts:995
 
 ___
 
@@ -157,7 +157,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:944
+src/workflows_rules.scailo_pb.ts:960
 
 ___
 
@@ -173,7 +173,7 @@ from field: uint64 notify_user_id = 12;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:951
+src/workflows_rules.scailo_pb.ts:967
 
 ___
 
@@ -189,7 +189,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:930
+src/workflows_rules.scailo_pb.ts:946
 
 ___
 
@@ -205,7 +205,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS record_status = 21;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:972
+src/workflows_rules.scailo_pb.ts:988
 
 ___
 
@@ -221,7 +221,7 @@ from field: Scailo.WORKFLOW_RULE_SERVICE_NAME service_name = 20;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:965
+src/workflows_rules.scailo_pb.ts:981
 
 ___
 
@@ -237,7 +237,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:916
+src/workflows_rules.scailo_pb.ts:932
 
 ___
 
@@ -253,7 +253,7 @@ from field: bytes user_payload = 40;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:993
+src/workflows_rules.scailo_pb.ts:1009
 
 ___
 
@@ -269,7 +269,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:937
+src/workflows_rules.scailo_pb.ts:953
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1002
+src/workflows_rules.scailo_pb.ts:1018
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1000
+src/workflows_rules.scailo_pb.ts:1016
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1001
+src/workflows_rules.scailo_pb.ts:1017
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1029
+src/workflows_rules.scailo_pb.ts:1045
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1017
+src/workflows_rules.scailo_pb.ts:1033
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1021
+src/workflows_rules.scailo_pb.ts:1037
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1025
+src/workflows_rules.scailo_pb.ts:1041

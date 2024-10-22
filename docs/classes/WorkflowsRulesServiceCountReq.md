@@ -85,7 +85,7 @@ Message\&lt;WorkflowsRulesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1759
+src/workflows_rules.scailo_pb.ts:1775
 
 ## Properties
 
@@ -101,7 +101,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1687
+src/workflows_rules.scailo_pb.ts:1703
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1680
+src/workflows_rules.scailo_pb.ts:1696
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1673
+src/workflows_rules.scailo_pb.ts:1689
 
 ___
 
@@ -149,7 +149,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1694
+src/workflows_rules.scailo_pb.ts:1710
 
 ___
 
@@ -165,7 +165,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1722
+src/workflows_rules.scailo_pb.ts:1738
 
 ___
 
@@ -181,7 +181,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1708
+src/workflows_rules.scailo_pb.ts:1724
 
 ___
 
@@ -197,7 +197,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1701
+src/workflows_rules.scailo_pb.ts:1717
 
 ___
 
@@ -213,7 +213,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1638
+src/workflows_rules.scailo_pb.ts:1654
 
 ___
 
@@ -229,7 +229,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1631
+src/workflows_rules.scailo_pb.ts:1647
 
 ___
 
@@ -245,7 +245,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1659
+src/workflows_rules.scailo_pb.ts:1675
 
 ___
 
@@ -261,7 +261,7 @@ from field: Scailo.WORKFLOW_RULE_EXECUTE_ON execute_on = 33;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1757
+src/workflows_rules.scailo_pb.ts:1773
 
 ___
 
@@ -277,7 +277,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1624
+src/workflows_rules.scailo_pb.ts:1640
 
 ___
 
@@ -293,7 +293,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1652
+src/workflows_rules.scailo_pb.ts:1668
 
 ___
 
@@ -309,7 +309,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1645
+src/workflows_rules.scailo_pb.ts:1661
 
 ___
 
@@ -325,7 +325,7 @@ from field: Scailo.WORKFLOW_RULE_MOMENT moment = 32;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1750
+src/workflows_rules.scailo_pb.ts:1766
 
 ___
 
@@ -341,7 +341,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1715
+src/workflows_rules.scailo_pb.ts:1731
 
 ___
 
@@ -357,7 +357,7 @@ from field: uint64 notify_user_id = 22;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1729
+src/workflows_rules.scailo_pb.ts:1745
 
 ___
 
@@ -373,7 +373,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS record_status = 31;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1743
+src/workflows_rules.scailo_pb.ts:1759
 
 ___
 
@@ -389,7 +389,7 @@ from field: Scailo.WORKFLOW_RULE_SERVICE_NAME service_name = 30;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1736
+src/workflows_rules.scailo_pb.ts:1752
 
 ___
 
@@ -405,7 +405,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1666
+src/workflows_rules.scailo_pb.ts:1682
 
 ___
 
@@ -415,7 +415,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1766
+src/workflows_rules.scailo_pb.ts:1782
 
 ___
 
@@ -425,7 +425,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1764
+src/workflows_rules.scailo_pb.ts:1780
 
 ___
 
@@ -435,7 +435,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1765
+src/workflows_rules.scailo_pb.ts:1781
 
 ## Methods
 
@@ -723,7 +723,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1801
+src/workflows_rules.scailo_pb.ts:1817
 
 ___
 
@@ -744,7 +744,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1789
+src/workflows_rules.scailo_pb.ts:1805
 
 ___
 
@@ -765,7 +765,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1793
+src/workflows_rules.scailo_pb.ts:1809
 
 ___
 
@@ -786,4 +786,4 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1797
+src/workflows_rules.scailo_pb.ts:1813

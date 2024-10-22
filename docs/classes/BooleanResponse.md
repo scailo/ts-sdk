@@ -66,7 +66,7 @@ Message\&lt;BooleanResponse\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1186
+src/base.scailo_pb.ts:1218
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: bool value = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1184
+src/base.scailo_pb.ts:1216
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1193
+src/base.scailo_pb.ts:1225
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1191
+src/base.scailo_pb.ts:1223
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1192
+src/base.scailo_pb.ts:1224
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1209
+src/base.scailo_pb.ts:1241
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1197
+src/base.scailo_pb.ts:1229
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1201
+src/base.scailo_pb.ts:1233
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1205
+src/base.scailo_pb.ts:1237

@@ -327,6 +327,12 @@ export declare enum WORKFLOW_RULE_SERVICE_NAME {
      */
     WORKFLOW_RULE_SERVICE_NAME_PURCHASES_ORDERS = 1560,
     /**
+     * Apply the rule for supply offers service
+     *
+     * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_SUPPLY_OFFERS = 1565;
+     */
+    WORKFLOW_RULE_SERVICE_NAME_SUPPLY_OFFERS = 1565,
+    /**
      * Apply the rule for purchases payments service
      *
      * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_PURCHASES_PAYMENTS = 1570;
@@ -392,6 +398,12 @@ export declare enum WORKFLOW_RULE_SERVICE_NAME {
      * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_SALES_INVOICES = 1820;
      */
     WORKFLOW_RULE_SERVICE_NAME_SALES_INVOICES = 1820,
+    /**
+     * Apply the rule for proforma invoices service
+     *
+     * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_PROFORMA_INVOICES = 1825;
+     */
+    WORKFLOW_RULE_SERVICE_NAME_PROFORMA_INVOICES = 1825,
     /**
      * Apply the rule for sales orders service
      *

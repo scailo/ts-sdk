@@ -144,6 +144,12 @@ export declare enum FORM_TYPE {
      */
     FORM_TYPE_PURCHASE_ORDER_FORM = 80,
     /**
+     * The form type is "supply-offer-form"
+     *
+     * @generated from enum value: FORM_TYPE_SUPPLY_OFFER_FORM = 85;
+     */
+    FORM_TYPE_SUPPLY_OFFER_FORM = 85,
+    /**
      * The form type is "purchase-indent-form"
      *
      * @generated from enum value: FORM_TYPE_PURCHASE_INDENT_FORM = 90;
@@ -155,6 +161,12 @@ export declare enum FORM_TYPE {
      * @generated from enum value: FORM_TYPE_SALES_INVOICE_FORM = 100;
      */
     FORM_TYPE_SALES_INVOICE_FORM = 100,
+    /**
+     * The form type is "proforma-invoice-form"
+     *
+     * @generated from enum value: FORM_TYPE_PROFORMA_INVOICE_FORM = 105;
+     */
+    FORM_TYPE_PROFORMA_INVOICE_FORM = 105,
     /**
      * The form type is "goods-dispatch-form"
      *
@@ -820,6 +832,12 @@ export declare enum AMENDMENT_LOG_REF_FOR {
      */
     AMENDMENT_LOG_REF_FOR_PURCHASE_ORDER = 2,
     /**
+     * Denotes that the log is made while amending a supply offer
+     *
+     * @generated from enum value: AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER = 21;
+     */
+    AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER = 21,
+    /**
      * Denotes that the log is made while amending a sales order
      *
      * @generated from enum value: AMENDMENT_LOG_REF_FOR_SALES_ORDER = 3;
@@ -842,7 +860,13 @@ export declare enum AMENDMENT_LOG_REF_FOR {
      *
      * @generated from enum value: AMENDMENT_LOG_REF_FOR_SALES_INVOICE = 6;
      */
-    AMENDMENT_LOG_REF_FOR_SALES_INVOICE = 6
+    AMENDMENT_LOG_REF_FOR_SALES_INVOICE = 6,
+    /**
+     * Denotes that the log is made while amending a proforma invoice
+     *
+     * @generated from enum value: AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7;
+     */
+    AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7
 }
 /**
  *

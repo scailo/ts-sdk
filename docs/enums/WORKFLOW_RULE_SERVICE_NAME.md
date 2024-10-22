@@ -61,6 +61,7 @@ from enum Scailo.WORKFLOW_RULE_SERVICE_NAME
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_PRODUCTION\_INDENTS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_production_indents)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_PRODUCTION\_PLANS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_production_plans)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_PRODUCTS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_products)
+- [WORKFLOW\_RULE\_SERVICE\_NAME\_PROFORMA\_INVOICES](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_proforma_invoices)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_PROJECTS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_projects)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_PURCHASES\_ENQUIRIES](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_purchases_enquiries)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_PURCHASES\_INDENTS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_purchases_indents)
@@ -83,6 +84,7 @@ from enum Scailo.WORKFLOW_RULE_SERVICE_NAME
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_STOCK\_AUDITS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_stock_audits)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_STOCK\_ISSUANCES](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_stock_issuances)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_STOCK\_RETURNS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_stock_returns)
+- [WORKFLOW\_RULE\_SERVICE\_NAME\_SUPPLY\_OFFERS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_supply_offers)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_USERS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_users)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_VENDORS](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_vendors)
 - [WORKFLOW\_RULE\_SERVICE\_NAME\_VENDOR\_INVOICES](WORKFLOW_RULE_SERVICE_NAME.md#workflow_rule_service_name_vendor_invoices)
@@ -875,6 +877,22 @@ src/workflows_rules.scailo_pb.ts:358
 
 ___
 
+### WORKFLOW\_RULE\_SERVICE\_NAME\_PROFORMA\_INVOICES
+
+• **WORKFLOW\_RULE\_SERVICE\_NAME\_PROFORMA\_INVOICES** = ``1825``
+
+Apply the rule for proforma invoices service
+
+**`Generated`**
+
+from enum value: WORKFLOW_RULE_SERVICE_NAME_PROFORMA_INVOICES = 1825;
+
+#### Defined in
+
+src/workflows_rules.scailo_pb.ts:477
+
+___
+
 ### WORKFLOW\_RULE\_SERVICE\_NAME\_PROJECTS
 
 • **WORKFLOW\_RULE\_SERVICE\_NAME\_PROJECTS** = ``1530``
@@ -951,7 +969,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_PURCHASES_PAYMENTS = 1570;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:393
+src/workflows_rules.scailo_pb.ts:400
 
 ___
 
@@ -967,7 +985,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_PURCHASES_RETURNS = 1580;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:400
+src/workflows_rules.scailo_pb.ts:407
 
 ___
 
@@ -983,7 +1001,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_QC_GROUPS = 1600;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:407
+src/workflows_rules.scailo_pb.ts:414
 
 ___
 
@@ -999,7 +1017,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_QC_SAMPLES = 1610;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:414
+src/workflows_rules.scailo_pb.ts:421
 
 ___
 
@@ -1015,7 +1033,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_QUOTATIONS_REQUESTS = 1620;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:421
+src/workflows_rules.scailo_pb.ts:428
 
 ___
 
@@ -1031,7 +1049,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_QUOTATIONS_RESPONSES = 1630;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:428
+src/workflows_rules.scailo_pb.ts:435
 
 ___
 
@@ -1047,7 +1065,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_REPLACEABLE_INDENTS = 1700;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:435
+src/workflows_rules.scailo_pb.ts:442
 
 ___
 
@@ -1063,7 +1081,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_ROLES = 1710;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:442
+src/workflows_rules.scailo_pb.ts:449
 
 ___
 
@@ -1079,7 +1097,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_SALARIES = 1800;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:449
+src/workflows_rules.scailo_pb.ts:456
 
 ___
 
@@ -1095,7 +1113,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_SALES_ENQUIRIES = 1810;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:456
+src/workflows_rules.scailo_pb.ts:463
 
 ___
 
@@ -1111,7 +1129,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_SALES_INVOICES = 1820;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:463
+src/workflows_rules.scailo_pb.ts:470
 
 ___
 
@@ -1127,7 +1145,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_SALES_ORDERS = 1830;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:470
+src/workflows_rules.scailo_pb.ts:484
 
 ___
 
@@ -1143,7 +1161,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_SALES_QUOTATIONS = 1840;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:477
+src/workflows_rules.scailo_pb.ts:491
 
 ___
 
@@ -1159,7 +1177,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_SALES_RECEIPTS = 1850;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:484
+src/workflows_rules.scailo_pb.ts:498
 
 ___
 
@@ -1175,7 +1193,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_SALES_RETURNS = 1860;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:491
+src/workflows_rules.scailo_pb.ts:505
 
 ___
 
@@ -1191,7 +1209,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_STOCK_AUDITS = 1870;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:498
+src/workflows_rules.scailo_pb.ts:512
 
 ___
 
@@ -1207,7 +1225,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_STOCK_ISSUANCES = 1880;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:505
+src/workflows_rules.scailo_pb.ts:519
 
 ___
 
@@ -1223,7 +1241,23 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_STOCK_RETURNS = 1890;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:512
+src/workflows_rules.scailo_pb.ts:526
+
+___
+
+### WORKFLOW\_RULE\_SERVICE\_NAME\_SUPPLY\_OFFERS
+
+• **WORKFLOW\_RULE\_SERVICE\_NAME\_SUPPLY\_OFFERS** = ``1565``
+
+Apply the rule for supply offers service
+
+**`Generated`**
+
+from enum value: WORKFLOW_RULE_SERVICE_NAME_SUPPLY_OFFERS = 1565;
+
+#### Defined in
+
+src/workflows_rules.scailo_pb.ts:393
 
 ___
 
@@ -1239,7 +1273,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_USERS = 1900;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:519
+src/workflows_rules.scailo_pb.ts:533
 
 ___
 
@@ -1255,7 +1289,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_VENDORS = 2010;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:533
+src/workflows_rules.scailo_pb.ts:547
 
 ___
 
@@ -1271,7 +1305,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_VENDOR_INVOICES = 2000;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:526
+src/workflows_rules.scailo_pb.ts:540
 
 ___
 
@@ -1287,7 +1321,7 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_VISITATIONS = 2020;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:540
+src/workflows_rules.scailo_pb.ts:554
 
 ___
 
@@ -1303,4 +1337,4 @@ from enum value: WORKFLOW_RULE_SERVICE_NAME_WORK_ORDERS = 2100;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:547
+src/workflows_rules.scailo_pb.ts:561

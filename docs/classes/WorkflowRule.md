@@ -81,7 +81,7 @@ Message\&lt;WorkflowRule\&gt;.constructor
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1153
+src/workflows_rules.scailo_pb.ts:1169
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1060
+src/workflows_rules.scailo_pb.ts:1076
 
 ___
 
@@ -113,7 +113,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1102
+src/workflows_rules.scailo_pb.ts:1118
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1081
+src/workflows_rules.scailo_pb.ts:1097
 
 ___
 
@@ -145,7 +145,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1116
+src/workflows_rules.scailo_pb.ts:1132
 
 ___
 
@@ -161,7 +161,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1046
+src/workflows_rules.scailo_pb.ts:1062
 
 ___
 
@@ -177,7 +177,7 @@ from field: Scailo.WORKFLOW_RULE_EXECUTE_ON execute_on = 23;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1144
+src/workflows_rules.scailo_pb.ts:1160
 
 ___
 
@@ -193,7 +193,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1074
+src/workflows_rules.scailo_pb.ts:1090
 
 ___
 
@@ -209,7 +209,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1053
+src/workflows_rules.scailo_pb.ts:1069
 
 ___
 
@@ -225,7 +225,7 @@ from field: Scailo.WORKFLOW_RULE_MOMENT moment = 22;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1137
+src/workflows_rules.scailo_pb.ts:1153
 
 ___
 
@@ -241,7 +241,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1095
+src/workflows_rules.scailo_pb.ts:1111
 
 ___
 
@@ -257,7 +257,7 @@ from field: uint64 notify_user_id = 12;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1109
+src/workflows_rules.scailo_pb.ts:1125
 
 ___
 
@@ -273,7 +273,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS record_status = 21;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1130
+src/workflows_rules.scailo_pb.ts:1146
 
 ___
 
@@ -289,7 +289,7 @@ from field: Scailo.WORKFLOW_RULE_SERVICE_NAME service_name = 20;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1123
+src/workflows_rules.scailo_pb.ts:1139
 
 ___
 
@@ -305,7 +305,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1067
+src/workflows_rules.scailo_pb.ts:1083
 
 ___
 
@@ -321,7 +321,7 @@ from field: bytes user_payload = 40;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1151
+src/workflows_rules.scailo_pb.ts:1167
 
 ___
 
@@ -337,7 +337,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1088
+src/workflows_rules.scailo_pb.ts:1104
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1160
+src/workflows_rules.scailo_pb.ts:1176
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1158
+src/workflows_rules.scailo_pb.ts:1174
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1159
+src/workflows_rules.scailo_pb.ts:1175
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1191
+src/workflows_rules.scailo_pb.ts:1207
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1179
+src/workflows_rules.scailo_pb.ts:1195
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1183
+src/workflows_rules.scailo_pb.ts:1199
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:1187
+src/workflows_rules.scailo_pb.ts:1203

@@ -66,7 +66,7 @@ Message\&lt;ActiveStatus\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1920
+src/base.scailo_pb.ts:1952
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1918
+src/base.scailo_pb.ts:1950
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1927
+src/base.scailo_pb.ts:1959
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1925
+src/base.scailo_pb.ts:1957
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1926
+src/base.scailo_pb.ts:1958
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1943
+src/base.scailo_pb.ts:1975
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1931
+src/base.scailo_pb.ts:1963
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1935
+src/base.scailo_pb.ts:1967
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1939
+src/base.scailo_pb.ts:1971

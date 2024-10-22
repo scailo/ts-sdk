@@ -38,6 +38,7 @@ from enum Scailo.FORM_TYPE
 - [FORM\_TYPE\_OVERTIME\_FORM](FORM_TYPE.md#form_type_overtime_form)
 - [FORM\_TYPE\_PRODUCTION\_INDENT\_FORM](FORM_TYPE.md#form_type_production_indent_form)
 - [FORM\_TYPE\_PRODUCTION\_PLAN\_FORM](FORM_TYPE.md#form_type_production_plan_form)
+- [FORM\_TYPE\_PROFORMA\_INVOICE\_FORM](FORM_TYPE.md#form_type_proforma_invoice_form)
 - [FORM\_TYPE\_PROJECT\_FORM](FORM_TYPE.md#form_type_project_form)
 - [FORM\_TYPE\_PURCHASE\_ENQUIRY\_FORM](FORM_TYPE.md#form_type_purchase_enquiry_form)
 - [FORM\_TYPE\_PURCHASE\_INDENT\_FORM](FORM_TYPE.md#form_type_purchase_indent_form)
@@ -58,6 +59,7 @@ from enum Scailo.FORM_TYPE
 - [FORM\_TYPE\_STOCK\_AUDIT\_FORM](FORM_TYPE.md#form_type_stock_audit_form)
 - [FORM\_TYPE\_STOCK\_ISSUANCE\_FORM](FORM_TYPE.md#form_type_stock_issuance_form)
 - [FORM\_TYPE\_STOCK\_RETURN\_FORM](FORM_TYPE.md#form_type_stock_return_form)
+- [FORM\_TYPE\_SUPPLY\_OFFER\_FORM](FORM_TYPE.md#form_type_supply_offer_form)
 - [FORM\_TYPE\_USER\_FORM](FORM_TYPE.md#form_type_user_form)
 - [FORM\_TYPE\_VENDOR\_FORM](FORM_TYPE.md#form_type_vendor_form)
 - [FORM\_TYPE\_VENDOR\_INVOICE\_FORM](FORM_TYPE.md#form_type_vendor_invoice_form)
@@ -78,7 +80,7 @@ from enum value: FORM_TYPE_ABSENCE_FORM = 420;
 
 #### Defined in
 
-src/base.scailo_pb.ts:425
+src/base.scailo_pb.ts:439
 
 ___
 
@@ -110,7 +112,7 @@ from enum value: FORM_TYPE_ASSET_INDENT_FORM = 280;
 
 #### Defined in
 
-src/base.scailo_pb.ts:327
+src/base.scailo_pb.ts:341
 
 ___
 
@@ -126,7 +128,7 @@ from enum value: FORM_TYPE_ATTENDANCE_AMENDMENT_FORM = 440;
 
 #### Defined in
 
-src/base.scailo_pb.ts:439
+src/base.scailo_pb.ts:453
 
 ___
 
@@ -142,7 +144,7 @@ from enum value: FORM_TYPE_ATTENDANCE_FORM = 410;
 
 #### Defined in
 
-src/base.scailo_pb.ts:418
+src/base.scailo_pb.ts:432
 
 ___
 
@@ -158,7 +160,7 @@ from enum value: FORM_TYPE_BANK_ACCOUNT_FORM = 210;
 
 #### Defined in
 
-src/base.scailo_pb.ts:278
+src/base.scailo_pb.ts:292
 
 ___
 
@@ -190,7 +192,7 @@ from enum value: FORM_TYPE_CREDIT_NOTE_FORM = 320;
 
 #### Defined in
 
-src/base.scailo_pb.ts:355
+src/base.scailo_pb.ts:369
 
 ___
 
@@ -206,7 +208,7 @@ from enum value: FORM_TYPE_DEBIT_NOTE_FORM = 310;
 
 #### Defined in
 
-src/base.scailo_pb.ts:348
+src/base.scailo_pb.ts:362
 
 ___
 
@@ -222,7 +224,7 @@ from enum value: FORM_TYPE_EXPENSE_FORM = 190;
 
 #### Defined in
 
-src/base.scailo_pb.ts:264
+src/base.scailo_pb.ts:278
 
 ___
 
@@ -238,7 +240,7 @@ from enum value: FORM_TYPE_GOAL_FORM = 520;
 
 #### Defined in
 
-src/base.scailo_pb.ts:474
+src/base.scailo_pb.ts:488
 
 ___
 
@@ -254,7 +256,7 @@ from enum value: FORM_TYPE_GOODS_DISPATCH_FORM = 110;
 
 #### Defined in
 
-src/base.scailo_pb.ts:208
+src/base.scailo_pb.ts:222
 
 ___
 
@@ -270,7 +272,7 @@ from enum value: FORM_TYPE_GOODS_RECEIPT_FORM = 130;
 
 #### Defined in
 
-src/base.scailo_pb.ts:222
+src/base.scailo_pb.ts:236
 
 ___
 
@@ -286,7 +288,7 @@ from enum value: FORM_TYPE_INWARD_JOB_FORM = 330;
 
 #### Defined in
 
-src/base.scailo_pb.ts:362
+src/base.scailo_pb.ts:376
 
 ___
 
@@ -302,7 +304,7 @@ from enum value: FORM_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL_FORM = 340;
 
 #### Defined in
 
-src/base.scailo_pb.ts:369
+src/base.scailo_pb.ts:383
 
 ___
 
@@ -318,7 +320,7 @@ from enum value: FORM_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_FORM = 350;
 
 #### Defined in
 
-src/base.scailo_pb.ts:376
+src/base.scailo_pb.ts:390
 
 ___
 
@@ -334,7 +336,7 @@ from enum value: FORM_TYPE_LEAVE_REQUEST_FORM = 390;
 
 #### Defined in
 
-src/base.scailo_pb.ts:404
+src/base.scailo_pb.ts:418
 
 ___
 
@@ -350,7 +352,7 @@ from enum value: FORM_TYPE_LOCATION_FORM = 200;
 
 #### Defined in
 
-src/base.scailo_pb.ts:271
+src/base.scailo_pb.ts:285
 
 ___
 
@@ -366,7 +368,7 @@ from enum value: FORM_TYPE_MEETING_FORM = 530;
 
 #### Defined in
 
-src/base.scailo_pb.ts:481
+src/base.scailo_pb.ts:495
 
 ___
 
@@ -382,7 +384,7 @@ from enum value: FORM_TYPE_ONDUTY_FORM = 430;
 
 #### Defined in
 
-src/base.scailo_pb.ts:432
+src/base.scailo_pb.ts:446
 
 ___
 
@@ -398,7 +400,7 @@ from enum value: FORM_TYPE_OUTWARD_JOB_FORM = 360;
 
 #### Defined in
 
-src/base.scailo_pb.ts:383
+src/base.scailo_pb.ts:397
 
 ___
 
@@ -414,7 +416,7 @@ from enum value: FORM_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_FORM = 370;
 
 #### Defined in
 
-src/base.scailo_pb.ts:390
+src/base.scailo_pb.ts:404
 
 ___
 
@@ -430,7 +432,7 @@ from enum value: FORM_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_FORM = 380;
 
 #### Defined in
 
-src/base.scailo_pb.ts:397
+src/base.scailo_pb.ts:411
 
 ___
 
@@ -446,7 +448,7 @@ from enum value: FORM_TYPE_OVERTIME_FORM = 400;
 
 #### Defined in
 
-src/base.scailo_pb.ts:411
+src/base.scailo_pb.ts:425
 
 ___
 
@@ -462,7 +464,7 @@ from enum value: FORM_TYPE_PRODUCTION_INDENT_FORM = 260;
 
 #### Defined in
 
-src/base.scailo_pb.ts:313
+src/base.scailo_pb.ts:327
 
 ___
 
@@ -478,7 +480,23 @@ from enum value: FORM_TYPE_PRODUCTION_PLAN_FORM = 250;
 
 #### Defined in
 
-src/base.scailo_pb.ts:306
+src/base.scailo_pb.ts:320
+
+___
+
+### FORM\_TYPE\_PROFORMA\_INVOICE\_FORM
+
+• **FORM\_TYPE\_PROFORMA\_INVOICE\_FORM** = ``105``
+
+The form type is "proforma-invoice-form"
+
+**`Generated`**
+
+from enum value: FORM_TYPE_PROFORMA_INVOICE_FORM = 105;
+
+#### Defined in
+
+src/base.scailo_pb.ts:215
 
 ___
 
@@ -526,7 +544,7 @@ from enum value: FORM_TYPE_PURCHASE_INDENT_FORM = 90;
 
 #### Defined in
 
-src/base.scailo_pb.ts:194
+src/base.scailo_pb.ts:201
 
 ___
 
@@ -558,7 +576,7 @@ from enum value: FORM_TYPE_PURCHASE_RETURN_FORM = 290;
 
 #### Defined in
 
-src/base.scailo_pb.ts:334
+src/base.scailo_pb.ts:348
 
 ___
 
@@ -574,7 +592,7 @@ from enum value: FORM_TYPE_QC_GROUP_FORM = 220;
 
 #### Defined in
 
-src/base.scailo_pb.ts:285
+src/base.scailo_pb.ts:299
 
 ___
 
@@ -590,7 +608,7 @@ from enum value: FORM_TYPE_QUOTATION_REQUEST_FORM = 230;
 
 #### Defined in
 
-src/base.scailo_pb.ts:292
+src/base.scailo_pb.ts:306
 
 ___
 
@@ -606,7 +624,7 @@ from enum value: FORM_TYPE_QUOTATION_RESPONSE_FORM = 240;
 
 #### Defined in
 
-src/base.scailo_pb.ts:299
+src/base.scailo_pb.ts:313
 
 ___
 
@@ -622,7 +640,7 @@ from enum value: FORM_TYPE_REPLACEABLE_INDENT_FORM = 270;
 
 #### Defined in
 
-src/base.scailo_pb.ts:320
+src/base.scailo_pb.ts:334
 
 ___
 
@@ -638,7 +656,7 @@ from enum value: FORM_TYPE_SALARY_FORM = 490;
 
 #### Defined in
 
-src/base.scailo_pb.ts:453
+src/base.scailo_pb.ts:467
 
 ___
 
@@ -670,7 +688,7 @@ from enum value: FORM_TYPE_SALES_INVOICE_FORM = 100;
 
 #### Defined in
 
-src/base.scailo_pb.ts:201
+src/base.scailo_pb.ts:208
 
 ___
 
@@ -718,7 +736,7 @@ from enum value: FORM_TYPE_SALES_RETURN_FORM = 300;
 
 #### Defined in
 
-src/base.scailo_pb.ts:341
+src/base.scailo_pb.ts:355
 
 ___
 
@@ -734,7 +752,7 @@ from enum value: FORM_TYPE_SKILL_GROUP_FORM = 510;
 
 #### Defined in
 
-src/base.scailo_pb.ts:467
+src/base.scailo_pb.ts:481
 
 ___
 
@@ -750,7 +768,7 @@ from enum value: FORM_TYPE_SKILL_PARAM_FORM = 500;
 
 #### Defined in
 
-src/base.scailo_pb.ts:460
+src/base.scailo_pb.ts:474
 
 ___
 
@@ -766,7 +784,7 @@ from enum value: FORM_TYPE_STOCK_AUDIT_FORM = 170;
 
 #### Defined in
 
-src/base.scailo_pb.ts:250
+src/base.scailo_pb.ts:264
 
 ___
 
@@ -782,7 +800,7 @@ from enum value: FORM_TYPE_STOCK_ISSUANCE_FORM = 160;
 
 #### Defined in
 
-src/base.scailo_pb.ts:243
+src/base.scailo_pb.ts:257
 
 ___
 
@@ -798,7 +816,23 @@ from enum value: FORM_TYPE_STOCK_RETURN_FORM = 180;
 
 #### Defined in
 
-src/base.scailo_pb.ts:257
+src/base.scailo_pb.ts:271
+
+___
+
+### FORM\_TYPE\_SUPPLY\_OFFER\_FORM
+
+• **FORM\_TYPE\_SUPPLY\_OFFER\_FORM** = ``85``
+
+The form type is "supply-offer-form"
+
+**`Generated`**
+
+from enum value: FORM_TYPE_SUPPLY_OFFER_FORM = 85;
+
+#### Defined in
+
+src/base.scailo_pb.ts:194
 
 ___
 
@@ -830,7 +864,7 @@ from enum value: FORM_TYPE_VENDOR_FORM = 150;
 
 #### Defined in
 
-src/base.scailo_pb.ts:236
+src/base.scailo_pb.ts:250
 
 ___
 
@@ -846,7 +880,7 @@ from enum value: FORM_TYPE_VENDOR_INVOICE_FORM = 120;
 
 #### Defined in
 
-src/base.scailo_pb.ts:215
+src/base.scailo_pb.ts:229
 
 ___
 
@@ -862,7 +896,7 @@ from enum value: FORM_TYPE_VISITATION_FORM = 450;
 
 #### Defined in
 
-src/base.scailo_pb.ts:446
+src/base.scailo_pb.ts:460
 
 ___
 
@@ -878,4 +912,4 @@ from enum value: FORM_TYPE_WORK_ORDER_FORM = 140;
 
 #### Defined in
 
-src/base.scailo_pb.ts:229
+src/base.scailo_pb.ts:243

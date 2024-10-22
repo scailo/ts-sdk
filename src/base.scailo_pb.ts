@@ -187,6 +187,13 @@ export enum FORM_TYPE {
   FORM_TYPE_PURCHASE_ORDER_FORM = 80,
 
   /**
+   * The form type is "supply-offer-form"
+   *
+   * @generated from enum value: FORM_TYPE_SUPPLY_OFFER_FORM = 85;
+   */
+  FORM_TYPE_SUPPLY_OFFER_FORM = 85,
+
+  /**
    * The form type is "purchase-indent-form"
    *
    * @generated from enum value: FORM_TYPE_PURCHASE_INDENT_FORM = 90;
@@ -199,6 +206,13 @@ export enum FORM_TYPE {
    * @generated from enum value: FORM_TYPE_SALES_INVOICE_FORM = 100;
    */
   FORM_TYPE_SALES_INVOICE_FORM = 100,
+
+  /**
+   * The form type is "proforma-invoice-form"
+   *
+   * @generated from enum value: FORM_TYPE_PROFORMA_INVOICE_FORM = 105;
+   */
+  FORM_TYPE_PROFORMA_INVOICE_FORM = 105,
 
   /**
    * The form type is "goods-dispatch-form"
@@ -491,8 +505,10 @@ proto3.util.setEnumType(FORM_TYPE, "Scailo.FORM_TYPE", [
   { no: 60, name: "FORM_TYPE_CLIENT_FORM" },
   { no: 70, name: "FORM_TYPE_USER_FORM" },
   { no: 80, name: "FORM_TYPE_PURCHASE_ORDER_FORM" },
+  { no: 85, name: "FORM_TYPE_SUPPLY_OFFER_FORM" },
   { no: 90, name: "FORM_TYPE_PURCHASE_INDENT_FORM" },
   { no: 100, name: "FORM_TYPE_SALES_INVOICE_FORM" },
+  { no: 105, name: "FORM_TYPE_PROFORMA_INVOICE_FORM" },
   { no: 110, name: "FORM_TYPE_GOODS_DISPATCH_FORM" },
   { no: 120, name: "FORM_TYPE_VENDOR_INVOICE_FORM" },
   { no: 130, name: "FORM_TYPE_GOODS_RECEIPT_FORM" },
@@ -1097,6 +1113,13 @@ export enum AMENDMENT_LOG_REF_FOR {
   AMENDMENT_LOG_REF_FOR_PURCHASE_ORDER = 2,
 
   /**
+   * Denotes that the log is made while amending a supply offer
+   *
+   * @generated from enum value: AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER = 21;
+   */
+  AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER = 21,
+
+  /**
    * Denotes that the log is made while amending a sales order
    *
    * @generated from enum value: AMENDMENT_LOG_REF_FOR_SALES_ORDER = 3;
@@ -1123,16 +1146,25 @@ export enum AMENDMENT_LOG_REF_FOR {
    * @generated from enum value: AMENDMENT_LOG_REF_FOR_SALES_INVOICE = 6;
    */
   AMENDMENT_LOG_REF_FOR_SALES_INVOICE = 6,
+
+  /**
+   * Denotes that the log is made while amending a proforma invoice
+   *
+   * @generated from enum value: AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7;
+   */
+  AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7,
 }
 // Retrieve enum metadata with: proto3.getEnumType(AMENDMENT_LOG_REF_FOR)
 proto3.util.setEnumType(AMENDMENT_LOG_REF_FOR, "Scailo.AMENDMENT_LOG_REF_FOR", [
   { no: 0, name: "AMENDMENT_LOG_REF_FOR_ANY_UNSPECIFIED" },
   { no: 1, name: "AMENDMENT_LOG_REF_FOR_FAMILY" },
   { no: 2, name: "AMENDMENT_LOG_REF_FOR_PURCHASE_ORDER" },
+  { no: 21, name: "AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER" },
   { no: 3, name: "AMENDMENT_LOG_REF_FOR_SALES_ORDER" },
   { no: 4, name: "AMENDMENT_LOG_REF_FOR_SALES_ENQUIRY" },
   { no: 5, name: "AMENDMENT_LOG_REF_FOR_SALES_QUOTATION" },
   { no: 6, name: "AMENDMENT_LOG_REF_FOR_SALES_INVOICE" },
+  { no: 7, name: "AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE" },
 ]);
 
 /**
