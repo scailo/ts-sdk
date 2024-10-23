@@ -1,4 +1,4 @@
-import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginatedUsersResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList, VendorUsersSearchRequest } from "./vendors.scailo_pb.js";
+import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginatedRequiredItemsResponse, VendorsServicePaginatedUsersResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList, VendorUsersSearchRequest } from "./vendors.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
@@ -252,6 +252,17 @@ export declare const VendorsService: {
             readonly name: "SearchItemsWithPagination";
             readonly I: typeof VendorItemsSearchRequest;
             readonly O: typeof VendorsServicePaginatedItemsResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Search through vendor items that are required with pagination
+         *
+         * @generated from rpc Scailo.VendorsService.SearchRequiredItemsWithPagination
+         */
+        readonly searchRequiredItemsWithPagination: {
+            readonly name: "SearchRequiredItemsWithPagination";
+            readonly I: typeof VendorItemsSearchRequest;
+            readonly O: typeof VendorsServicePaginatedRequiredItemsResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

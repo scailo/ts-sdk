@@ -1294,6 +1294,74 @@ export declare class VendorsServicePaginatedItemsResponse extends Message<Vendor
 }
 /**
  *
+ * Describes the vendor item that also stores the quantity that is required
+ *
+ * @generated from message Scailo.VendorItemRequired
+ */
+export declare class VendorItemRequired extends Message<VendorItemRequired> {
+    /**
+     * The applicable vendor item
+     *
+     * @generated from field: Scailo.VendorItem item = 1;
+     */
+    item?: VendorItem;
+    /**
+     * The quantity that is required
+     *
+     * @generated from field: uint64 required_qty = 10;
+     */
+    requiredQty: bigint;
+    constructor(data?: PartialMessage<VendorItemRequired>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VendorItemRequired";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorItemRequired;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorItemRequired;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorItemRequired;
+    static equals(a: VendorItemRequired | PlainMessage<VendorItemRequired> | undefined, b: VendorItemRequired | PlainMessage<VendorItemRequired> | undefined): boolean;
+}
+/**
+ *
+ * Describes the response to a pagination items request for items with applicable required quantities
+ *
+ * @generated from message Scailo.VendorsServicePaginatedRequiredItemsResponse
+ */
+export declare class VendorsServicePaginatedRequiredItemsResponse extends Message<VendorsServicePaginatedRequiredItemsResponse> {
+    /**
+     * The number of records in this payload
+     *
+     * @generated from field: uint64 count = 1;
+     */
+    count: bigint;
+    /**
+     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @generated from field: uint64 offset = 2;
+     */
+    offset: bigint;
+    /**
+     * The total number of records that are available
+     *
+     * @generated from field: uint64 total = 3;
+     */
+    total: bigint;
+    /**
+     * The list of records
+     *
+     * @generated from field: repeated Scailo.VendorItemRequired payload = 4;
+     */
+    payload: VendorItemRequired[];
+    constructor(data?: PartialMessage<VendorsServicePaginatedRequiredItemsResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VendorsServicePaginatedRequiredItemsResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorsServicePaginatedRequiredItemsResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorsServicePaginatedRequiredItemsResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorsServicePaginatedRequiredItemsResponse;
+    static equals(a: VendorsServicePaginatedRequiredItemsResponse | PlainMessage<VendorsServicePaginatedRequiredItemsResponse> | undefined, b: VendorsServicePaginatedRequiredItemsResponse | PlainMessage<VendorsServicePaginatedRequiredItemsResponse> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters necessary to create a vendor user
  *
  * @generated from message Scailo.VendorsServiceUserCreateRequest

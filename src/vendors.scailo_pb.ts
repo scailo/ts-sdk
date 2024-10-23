@@ -1934,6 +1934,122 @@ export class VendorsServicePaginatedItemsResponse extends Message<VendorsService
 
 /**
  *
+ * Describes the vendor item that also stores the quantity that is required
+ *
+ * @generated from message Scailo.VendorItemRequired
+ */
+export class VendorItemRequired extends Message<VendorItemRequired> {
+  /**
+   * The applicable vendor item
+   *
+   * @generated from field: Scailo.VendorItem item = 1;
+   */
+  item?: VendorItem;
+
+  /**
+   * The quantity that is required
+   *
+   * @generated from field: uint64 required_qty = 10;
+   */
+  requiredQty = protoInt64.zero;
+
+  constructor(data?: PartialMessage<VendorItemRequired>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorItemRequired";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "item", kind: "message", T: VendorItem },
+    { no: 10, name: "required_qty", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorItemRequired {
+    return new VendorItemRequired().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorItemRequired {
+    return new VendorItemRequired().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorItemRequired {
+    return new VendorItemRequired().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorItemRequired | PlainMessage<VendorItemRequired> | undefined, b: VendorItemRequired | PlainMessage<VendorItemRequired> | undefined): boolean {
+    return proto3.util.equals(VendorItemRequired, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the response to a pagination items request for items with applicable required quantities
+ *
+ * @generated from message Scailo.VendorsServicePaginatedRequiredItemsResponse
+ */
+export class VendorsServicePaginatedRequiredItemsResponse extends Message<VendorsServicePaginatedRequiredItemsResponse> {
+  /**
+   * The number of records in this payload
+   *
+   * @generated from field: uint64 count = 1;
+   */
+  count = protoInt64.zero;
+
+  /**
+   * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+   *
+   * @generated from field: uint64 offset = 2;
+   */
+  offset = protoInt64.zero;
+
+  /**
+   * The total number of records that are available
+   *
+   * @generated from field: uint64 total = 3;
+   */
+  total = protoInt64.zero;
+
+  /**
+   * The list of records
+   *
+   * @generated from field: repeated Scailo.VendorItemRequired payload = 4;
+   */
+  payload: VendorItemRequired[] = [];
+
+  constructor(data?: PartialMessage<VendorsServicePaginatedRequiredItemsResponse>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorsServicePaginatedRequiredItemsResponse";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "payload", kind: "message", T: VendorItemRequired, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorsServicePaginatedRequiredItemsResponse {
+    return new VendorsServicePaginatedRequiredItemsResponse().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorsServicePaginatedRequiredItemsResponse {
+    return new VendorsServicePaginatedRequiredItemsResponse().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorsServicePaginatedRequiredItemsResponse {
+    return new VendorsServicePaginatedRequiredItemsResponse().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorsServicePaginatedRequiredItemsResponse | PlainMessage<VendorsServicePaginatedRequiredItemsResponse> | undefined, b: VendorsServicePaginatedRequiredItemsResponse | PlainMessage<VendorsServicePaginatedRequiredItemsResponse> | undefined): boolean {
+    return proto3.util.equals(VendorsServicePaginatedRequiredItemsResponse, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters necessary to create a vendor user
  *
  * @generated from message Scailo.VendorsServiceUserCreateRequest

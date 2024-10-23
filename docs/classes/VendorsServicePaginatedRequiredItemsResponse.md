@@ -1,144 +1,91 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorUsersSearchRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorsServicePaginatedRequiredItemsResponse
 
-# Class: VendorUsersSearchRequest
+# Class: VendorsServicePaginatedRequiredItemsResponse
 
-Describes the request payload to search vendor users
+Describes the response to a pagination items request for items with applicable required quantities
 
 **`Generated`**
 
-from message Scailo.VendorUsersSearchRequest
+from message Scailo.VendorsServicePaginatedRequiredItemsResponse
 
 ## Hierarchy
 
-- `Message`\<[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)\>
+- `Message`\<[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)\>
 
-  ↳ **`VendorUsersSearchRequest`**
+  ↳ **`VendorsServicePaginatedRequiredItemsResponse`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](VendorUsersSearchRequest.md#constructor)
+- [constructor](VendorsServicePaginatedRequiredItemsResponse.md#constructor)
 
 ### Properties
 
-- [associateId](VendorUsersSearchRequest.md#associateid)
-- [count](VendorUsersSearchRequest.md#count)
-- [entityUuid](VendorUsersSearchRequest.md#entityuuid)
-- [isActive](VendorUsersSearchRequest.md#isactive)
-- [offset](VendorUsersSearchRequest.md#offset)
-- [searchKey](VendorUsersSearchRequest.md#searchkey)
-- [status](VendorUsersSearchRequest.md#status)
-- [userId](VendorUsersSearchRequest.md#userid)
-- [vendorId](VendorUsersSearchRequest.md#vendorid)
-- [fields](VendorUsersSearchRequest.md#fields)
-- [runtime](VendorUsersSearchRequest.md#runtime)
-- [typeName](VendorUsersSearchRequest.md#typename)
+- [count](VendorsServicePaginatedRequiredItemsResponse.md#count)
+- [offset](VendorsServicePaginatedRequiredItemsResponse.md#offset)
+- [payload](VendorsServicePaginatedRequiredItemsResponse.md#payload)
+- [total](VendorsServicePaginatedRequiredItemsResponse.md#total)
+- [fields](VendorsServicePaginatedRequiredItemsResponse.md#fields)
+- [runtime](VendorsServicePaginatedRequiredItemsResponse.md#runtime)
+- [typeName](VendorsServicePaginatedRequiredItemsResponse.md#typename)
 
 ### Methods
 
-- [clone](VendorUsersSearchRequest.md#clone)
-- [equals](VendorUsersSearchRequest.md#equals)
-- [fromBinary](VendorUsersSearchRequest.md#frombinary)
-- [fromJson](VendorUsersSearchRequest.md#fromjson)
-- [fromJsonString](VendorUsersSearchRequest.md#fromjsonstring)
-- [getType](VendorUsersSearchRequest.md#gettype)
-- [toBinary](VendorUsersSearchRequest.md#tobinary)
-- [toJSON](VendorUsersSearchRequest.md#tojson)
-- [toJson](VendorUsersSearchRequest.md#tojson-1)
-- [toJsonString](VendorUsersSearchRequest.md#tojsonstring)
-- [equals](VendorUsersSearchRequest.md#equals-1)
-- [fromBinary](VendorUsersSearchRequest.md#frombinary-1)
-- [fromJson](VendorUsersSearchRequest.md#fromjson-1)
-- [fromJsonString](VendorUsersSearchRequest.md#fromjsonstring-1)
+- [clone](VendorsServicePaginatedRequiredItemsResponse.md#clone)
+- [equals](VendorsServicePaginatedRequiredItemsResponse.md#equals)
+- [fromBinary](VendorsServicePaginatedRequiredItemsResponse.md#frombinary)
+- [fromJson](VendorsServicePaginatedRequiredItemsResponse.md#fromjson)
+- [fromJsonString](VendorsServicePaginatedRequiredItemsResponse.md#fromjsonstring)
+- [getType](VendorsServicePaginatedRequiredItemsResponse.md#gettype)
+- [toBinary](VendorsServicePaginatedRequiredItemsResponse.md#tobinary)
+- [toJSON](VendorsServicePaginatedRequiredItemsResponse.md#tojson)
+- [toJson](VendorsServicePaginatedRequiredItemsResponse.md#tojson-1)
+- [toJsonString](VendorsServicePaginatedRequiredItemsResponse.md#tojsonstring)
+- [equals](VendorsServicePaginatedRequiredItemsResponse.md#equals-1)
+- [fromBinary](VendorsServicePaginatedRequiredItemsResponse.md#frombinary-1)
+- [fromJson](VendorsServicePaginatedRequiredItemsResponse.md#fromjson-1)
+- [fromJsonString](VendorsServicePaginatedRequiredItemsResponse.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new VendorUsersSearchRequest**(`data?`): [`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+• **new VendorsServicePaginatedRequiredItemsResponse**(`data?`): [`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)\> |
+| `data?` | `PartialMessage`\<[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)\> |
 
 #### Returns
 
-[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Overrides
 
-Message\&lt;VendorUsersSearchRequest\&gt;.constructor
+Message\&lt;VendorsServicePaginatedRequiredItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2327
+src/vendors.scailo_pb.ts:2020
 
 ## Properties
-
-### associateId
-
-• **associateId**: `bigint` = `protoInt64.zero`
-
-Stores an optional associate ID
-
-**`Generated`**
-
-from field: uint64 associate_id = 12;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2318
-
-___
 
 ### count
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+The number of records in this payload
 
 **`Generated`**
 
-from field: int64 count = 2;
+from field: uint64 count = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2276
-
-___
-
-### entityUuid
-
-• **entityUuid**: `string` = `""`
-
-The entity UUID that is to be used to filter records
-
-**`Generated`**
-
-from field: string entity_uuid = 6;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2290
-
-___
-
-### isActive
-
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
-
-If true, then returns only active records. If false, then returns only inactive records
-
-**`Generated`**
-
-from field: Scailo.BOOL_FILTER is_active = 1;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2269
+src/vendors.scailo_pb.ts:1997
 
 ___
 
@@ -146,79 +93,47 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: uint64 offset = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2283
+src/vendors.scailo_pb.ts:2004
 
 ___
 
-### searchKey
+### payload
 
-• **searchKey**: `string` = `""`
+• **payload**: [`VendorItemRequired`](VendorItemRequired.md)[] = `[]`
 
-Describes the key with which the search operation needs to be performed
+The list of records
 
 **`Generated`**
 
-from field: string search_key = 20;
+from field: repeated Scailo.VendorItemRequired payload = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2325
+src/vendors.scailo_pb.ts:2018
 
 ___
 
-### status
+### total
 
-• **status**: [`VENDOR_USER_STATUS`](../enums/VENDOR_USER_STATUS.md) = `VENDOR_USER_STATUS.VENDOR_USER_STATUS_ANY_UNSPECIFIED`
+• **total**: `bigint` = `protoInt64.zero`
 
-The status of the users
-
-**`Generated`**
-
-from field: Scailo.VENDOR_USER_STATUS status = 7;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2297
-
-___
-
-### userId
-
-• **userId**: `bigint` = `protoInt64.zero`
-
-Stores the user ID
+The total number of records that are available
 
 **`Generated`**
 
-from field: uint64 user_id = 11;
+from field: uint64 total = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2311
-
-___
-
-### vendorId
-
-• **vendorId**: `bigint` = `protoInt64.zero`
-
-Stores the vendor ID
-
-**`Generated`**
-
-from field: uint64 vendor_id = 10;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2304
+src/vendors.scailo_pb.ts:2011
 
 ___
 
@@ -228,7 +143,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2334
+src/vendors.scailo_pb.ts:2027
 
 ___
 
@@ -238,29 +153,29 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2332
+src/vendors.scailo_pb.ts:2025
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.VendorUsersSearchRequest"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.VendorsServicePaginatedRequiredItemsResponse"``
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2333
+src/vendors.scailo_pb.ts:2026
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+▸ **clone**(): [`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Inherited from
 
@@ -283,7 +198,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`VendorUsersSearchRequest`](VendorUsersSearchRequest.md) \| `PlainMessage`\<[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)\> |
+| `other` | `undefined` \| ``null`` \| [`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md) \| `PlainMessage`\<[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)\> |
 
 #### Returns
 
@@ -388,7 +303,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)\>
+▸ **getType**(): `MessageType`\<[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -396,7 +311,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)\>
+`MessageType`\<[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)\>
 
 #### Inherited from
 
@@ -527,8 +442,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`VendorUsersSearchRequest`](VendorUsersSearchRequest.md) \| `PlainMessage`\<[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)\> |
-| `b` | `undefined` \| [`VendorUsersSearchRequest`](VendorUsersSearchRequest.md) \| `PlainMessage`\<[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)\> |
+| `a` | `undefined` \| [`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md) \| `PlainMessage`\<[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)\> |
+| `b` | `undefined` \| [`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md) \| `PlainMessage`\<[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)\> |
 
 #### Returns
 
@@ -536,13 +451,13 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2358
+src/vendors.scailo_pb.ts:2046
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+▸ **fromBinary**(`bytes`, `options?`): [`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Parameters
 
@@ -553,17 +468,17 @@ ___
 
 #### Returns
 
-[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2346
+src/vendors.scailo_pb.ts:2034
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Parameters
 
@@ -574,17 +489,17 @@ ___
 
 #### Returns
 
-[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2350
+src/vendors.scailo_pb.ts:2038
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Parameters
 
@@ -595,8 +510,8 @@ ___
 
 #### Returns
 
-[`VendorUsersSearchRequest`](VendorUsersSearchRequest.md)
+[`VendorsServicePaginatedRequiredItemsResponse`](VendorsServicePaginatedRequiredItemsResponse.md)
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2354
+src/vendors.scailo_pb.ts:2042

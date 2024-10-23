@@ -1,207 +1,105 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorUser
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / VendorItemRequired
 
-# Class: VendorUser
+# Class: VendorItemRequired
 
-Describes the parameters that constitute a vendor user
+Describes the vendor item that also stores the quantity that is required
 
 **`Generated`**
 
-from message Scailo.VendorUser
+from message Scailo.VendorItemRequired
 
 ## Hierarchy
 
-- `Message`\<[`VendorUser`](VendorUser.md)\>
+- `Message`\<[`VendorItemRequired`](VendorItemRequired.md)\>
 
-  ↳ **`VendorUser`**
+  ↳ **`VendorItemRequired`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](VendorUser.md#constructor)
+- [constructor](VendorItemRequired.md#constructor)
 
 ### Properties
 
-- [approvalMetadata](VendorUser.md#approvalmetadata)
-- [associateId](VendorUser.md#associateid)
-- [entityUuid](VendorUser.md#entityuuid)
-- [metadata](VendorUser.md#metadata)
-- [needApproval](VendorUser.md#needapproval)
-- [userComment](VendorUser.md#usercomment)
-- [userId](VendorUser.md#userid)
-- [vendorId](VendorUser.md#vendorid)
-- [fields](VendorUser.md#fields)
-- [runtime](VendorUser.md#runtime)
-- [typeName](VendorUser.md#typename)
+- [item](VendorItemRequired.md#item)
+- [requiredQty](VendorItemRequired.md#requiredqty)
+- [fields](VendorItemRequired.md#fields)
+- [runtime](VendorItemRequired.md#runtime)
+- [typeName](VendorItemRequired.md#typename)
 
 ### Methods
 
-- [clone](VendorUser.md#clone)
-- [equals](VendorUser.md#equals)
-- [fromBinary](VendorUser.md#frombinary)
-- [fromJson](VendorUser.md#fromjson)
-- [fromJsonString](VendorUser.md#fromjsonstring)
-- [getType](VendorUser.md#gettype)
-- [toBinary](VendorUser.md#tobinary)
-- [toJSON](VendorUser.md#tojson)
-- [toJson](VendorUser.md#tojson-1)
-- [toJsonString](VendorUser.md#tojsonstring)
-- [equals](VendorUser.md#equals-1)
-- [fromBinary](VendorUser.md#frombinary-1)
-- [fromJson](VendorUser.md#fromjson-1)
-- [fromJsonString](VendorUser.md#fromjsonstring-1)
+- [clone](VendorItemRequired.md#clone)
+- [equals](VendorItemRequired.md#equals)
+- [fromBinary](VendorItemRequired.md#frombinary)
+- [fromJson](VendorItemRequired.md#fromjson)
+- [fromJsonString](VendorItemRequired.md#fromjsonstring)
+- [getType](VendorItemRequired.md#gettype)
+- [toBinary](VendorItemRequired.md#tobinary)
+- [toJSON](VendorItemRequired.md#tojson)
+- [toJson](VendorItemRequired.md#tojson-1)
+- [toJsonString](VendorItemRequired.md#tojsonstring)
+- [equals](VendorItemRequired.md#equals-1)
+- [fromBinary](VendorItemRequired.md#frombinary-1)
+- [fromJson](VendorItemRequired.md#fromjson-1)
+- [fromJsonString](VendorItemRequired.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new VendorUser**(`data?`): [`VendorUser`](VendorUser.md)
+• **new VendorItemRequired**(`data?`): [`VendorItemRequired`](VendorItemRequired.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`VendorUser`](VendorUser.md)\> |
+| `data?` | `PartialMessage`\<[`VendorItemRequired`](VendorItemRequired.md)\> |
 
 #### Returns
 
-[`VendorUser`](VendorUser.md)
+[`VendorItemRequired`](VendorItemRequired.md)
 
 #### Overrides
 
-Message\&lt;VendorUser\&gt;.constructor
+Message\&lt;VendorItemRequired\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2180
+src/vendors.scailo_pb.ts:1956
 
 ## Properties
 
-### approvalMetadata
+### item
 
-• `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
+• `Optional` **item**: [`VendorItem`](VendorItem.md)
 
-Stores the approval metadata
+The applicable vendor item
 
 **`Generated`**
 
-from field: Scailo.ApprovalMetadata approval_metadata = 3;
+from field: Scailo.VendorItem item = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2143
+src/vendors.scailo_pb.ts:1947
 
 ___
 
-### associateId
+### requiredQty
 
-• **associateId**: `bigint` = `protoInt64.zero`
+• **requiredQty**: `bigint` = `protoInt64.zero`
 
-Stores an optional associate ID
-
-**`Generated`**
-
-from field: uint64 associate_id = 12;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2178
-
-___
-
-### entityUuid
-
-• **entityUuid**: `string` = `""`
-
-Stores a globally unique entity UUID. This will be set at the organization level
+The quantity that is required
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: uint64 required_qty = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2129
-
-___
-
-### metadata
-
-• `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
-
-Stores the metadata of this vendor
-
-**`Generated`**
-
-from field: Scailo.EmployeeMetadata metadata = 2;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2136
-
-___
-
-### needApproval
-
-• **needApproval**: `boolean` = `false`
-
-Denotes if this record requires approval (or has been approved)
-
-**`Generated`**
-
-from field: bool need_approval = 4;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2150
-
-___
-
-### userComment
-
-• **userComment**: `string` = `""`
-
-Stores any comment that the user might have added during an operation
-
-**`Generated`**
-
-from field: string user_comment = 5;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2157
-
-___
-
-### userId
-
-• **userId**: `bigint` = `protoInt64.zero`
-
-Stores the user ID
-
-**`Generated`**
-
-from field: uint64 user_id = 11;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2171
-
-___
-
-### vendorId
-
-• **vendorId**: `bigint` = `protoInt64.zero`
-
-Stores the vendor ID
-
-**`Generated`**
-
-from field: uint64 vendor_id = 10;
-
-#### Defined in
-
-src/vendors.scailo_pb.ts:2164
+src/vendors.scailo_pb.ts:1954
 
 ___
 
@@ -211,7 +109,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2187
+src/vendors.scailo_pb.ts:1963
 
 ___
 
@@ -221,29 +119,29 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2185
+src/vendors.scailo_pb.ts:1961
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.VendorUser"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.VendorItemRequired"``
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2186
+src/vendors.scailo_pb.ts:1962
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`VendorUser`](VendorUser.md)
+▸ **clone**(): [`VendorItemRequired`](VendorItemRequired.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`VendorUser`](VendorUser.md)
+[`VendorItemRequired`](VendorItemRequired.md)
 
 #### Inherited from
 
@@ -266,7 +164,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`VendorUser`](VendorUser.md) \| `PlainMessage`\<[`VendorUser`](VendorUser.md)\> |
+| `other` | `undefined` \| ``null`` \| [`VendorItemRequired`](VendorItemRequired.md) \| `PlainMessage`\<[`VendorItemRequired`](VendorItemRequired.md)\> |
 
 #### Returns
 
@@ -371,7 +269,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`VendorUser`](VendorUser.md)\>
+▸ **getType**(): `MessageType`\<[`VendorItemRequired`](VendorItemRequired.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -379,7 +277,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`VendorUser`](VendorUser.md)\>
+`MessageType`\<[`VendorItemRequired`](VendorItemRequired.md)\>
 
 #### Inherited from
 
@@ -510,8 +408,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`VendorUser`](VendorUser.md) \| `PlainMessage`\<[`VendorUser`](VendorUser.md)\> |
-| `b` | `undefined` \| [`VendorUser`](VendorUser.md) \| `PlainMessage`\<[`VendorUser`](VendorUser.md)\> |
+| `a` | `undefined` \| [`VendorItemRequired`](VendorItemRequired.md) \| `PlainMessage`\<[`VendorItemRequired`](VendorItemRequired.md)\> |
+| `b` | `undefined` \| [`VendorItemRequired`](VendorItemRequired.md) \| `PlainMessage`\<[`VendorItemRequired`](VendorItemRequired.md)\> |
 
 #### Returns
 
@@ -519,13 +417,13 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2210
+src/vendors.scailo_pb.ts:1980
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`VendorUser`](VendorUser.md)
+▸ **fromBinary**(`bytes`, `options?`): [`VendorItemRequired`](VendorItemRequired.md)
 
 #### Parameters
 
@@ -536,17 +434,17 @@ ___
 
 #### Returns
 
-[`VendorUser`](VendorUser.md)
+[`VendorItemRequired`](VendorItemRequired.md)
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2198
+src/vendors.scailo_pb.ts:1968
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`VendorUser`](VendorUser.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`VendorItemRequired`](VendorItemRequired.md)
 
 #### Parameters
 
@@ -557,17 +455,17 @@ ___
 
 #### Returns
 
-[`VendorUser`](VendorUser.md)
+[`VendorItemRequired`](VendorItemRequired.md)
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2202
+src/vendors.scailo_pb.ts:1972
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`VendorUser`](VendorUser.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`VendorItemRequired`](VendorItemRequired.md)
 
 #### Parameters
 
@@ -578,8 +476,8 @@ ___
 
 #### Returns
 
-[`VendorUser`](VendorUser.md)
+[`VendorItemRequired`](VendorItemRequired.md)
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2206
+src/vendors.scailo_pb.ts:1976
