@@ -1506,6 +1506,34 @@ export declare class Identifier extends Message<Identifier> {
 }
 /**
  *
+ * Describes the response that consists of the ID and the UUID of the record
+ *
+ * @generated from message Scailo.IdentifierResponse
+ */
+export declare class IdentifierResponse extends Message<IdentifierResponse> {
+    /**
+     * ID of the resource
+     *
+     * @generated from field: uint64 id = 1;
+     */
+    id: bigint;
+    /**
+     * UUID of the resource
+     *
+     * @generated from field: string uuid = 10;
+     */
+    uuid: string;
+    constructor(data?: PartialMessage<IdentifierResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.IdentifierResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierResponse;
+    static equals(a: IdentifierResponse | PlainMessage<IdentifierResponse> | undefined, b: IdentifierResponse | PlainMessage<IdentifierResponse> | undefined): boolean;
+}
+/**
+ *
  * Describes the standard identifier that can also be a zero
  *
  * @generated from message Scailo.IdentifierZeroable

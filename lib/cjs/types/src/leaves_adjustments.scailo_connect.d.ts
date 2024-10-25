@@ -1,5 +1,5 @@
 import { LeaveAdjustment, LeaveAdjustmentRecord, LeaveAdjustmentRecordsSearchRequest, LeavesAdjustmentsList, LeavesAdjustmentsRecordsHistoryRequest, LeavesAdjustmentsRecordsList, LeavesAdjustmentsServiceCountReq, LeavesAdjustmentsServiceCreateRequest, LeavesAdjustmentsServiceFilterReq, LeavesAdjustmentsServicePaginatedRecordsResponse, LeavesAdjustmentsServicePaginationReq, LeavesAdjustmentsServicePaginationResponse, LeavesAdjustmentsServiceRecordCreateRequest, LeavesAdjustmentsServiceRecordUpdateRequest, LeavesAdjustmentsServiceSearchAllReq, LeavesAdjustmentsServiceUpdateRequest } from "./leaves_adjustments.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -18,7 +18,7 @@ export declare const LeavesAdjustmentsService: {
         readonly create: {
             readonly name: "Create";
             readonly I: typeof LeavesAdjustmentsServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -29,7 +29,7 @@ export declare const LeavesAdjustmentsService: {
         readonly draft: {
             readonly name: "Draft";
             readonly I: typeof LeavesAdjustmentsServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -40,7 +40,7 @@ export declare const LeavesAdjustmentsService: {
         readonly draftUpdate: {
             readonly name: "DraftUpdate";
             readonly I: typeof LeavesAdjustmentsServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -51,7 +51,7 @@ export declare const LeavesAdjustmentsService: {
         readonly sendForVerification: {
             readonly name: "SendForVerification";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -62,7 +62,7 @@ export declare const LeavesAdjustmentsService: {
         readonly verify: {
             readonly name: "Verify";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -73,7 +73,7 @@ export declare const LeavesAdjustmentsService: {
         readonly approve: {
             readonly name: "Approve";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -84,7 +84,7 @@ export declare const LeavesAdjustmentsService: {
         readonly sendForRevision: {
             readonly name: "SendForRevision";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -95,7 +95,7 @@ export declare const LeavesAdjustmentsService: {
         readonly revisionUpdate: {
             readonly name: "RevisionUpdate";
             readonly I: typeof LeavesAdjustmentsServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -106,7 +106,7 @@ export declare const LeavesAdjustmentsService: {
         readonly halt: {
             readonly name: "Halt";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -117,7 +117,7 @@ export declare const LeavesAdjustmentsService: {
         readonly discard: {
             readonly name: "Discard";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -128,7 +128,7 @@ export declare const LeavesAdjustmentsService: {
         readonly restore: {
             readonly name: "Restore";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -139,7 +139,7 @@ export declare const LeavesAdjustmentsService: {
         readonly complete: {
             readonly name: "Complete";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -150,21 +150,21 @@ export declare const LeavesAdjustmentsService: {
         readonly repeat: {
             readonly name: "Repeat";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
          * Add comment
          *
          * Send Email
-         * rpc SendEmail (Identifier) returns (Identifier);
+         * rpc SendEmail (Identifier) returns (IdentifierResponse);
          *
          * @generated from rpc Scailo.LeavesAdjustmentsService.CommentAdd
          */
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -175,7 +175,7 @@ export declare const LeavesAdjustmentsService: {
         readonly addLeaveAdjustmentRecord: {
             readonly name: "AddLeaveAdjustmentRecord";
             readonly I: typeof LeavesAdjustmentsServiceRecordCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -186,7 +186,7 @@ export declare const LeavesAdjustmentsService: {
         readonly modifyLeaveAdjustmentRecord: {
             readonly name: "ModifyLeaveAdjustmentRecord";
             readonly I: typeof LeavesAdjustmentsServiceRecordUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -197,7 +197,7 @@ export declare const LeavesAdjustmentsService: {
         readonly approveLeaveAdjustmentRecord: {
             readonly name: "ApproveLeaveAdjustmentRecord";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -208,7 +208,7 @@ export declare const LeavesAdjustmentsService: {
         readonly deleteLeaveAdjustmentRecord: {
             readonly name: "DeleteLeaveAdjustmentRecord";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -219,7 +219,7 @@ export declare const LeavesAdjustmentsService: {
         readonly reorderLeaveAdjustmentRecords: {
             readonly name: "ReorderLeaveAdjustmentRecords";
             readonly I: typeof ReorderItemsRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

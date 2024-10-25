@@ -1,5 +1,5 @@
 import { CreditNote, CreditNoteAncillaryParameters, CreditNoteItem, CreditNoteItemHistoryRequest, CreditNoteItemProspectiveInfoRequest, CreditNoteItemsList, CreditNoteItemsSearchRequest, CreditNoteReference, CreditNoteReferencesList, CreditNotesList, CreditNotesServiceAlreadyAddedQuantityForSourceRequest, CreditNotesServiceAutofillRequest, CreditNotesServiceCountReq, CreditNotesServiceCreateRequest, CreditNotesServiceFilterReq, CreditNotesServiceItemCreateRequest, CreditNotesServiceItemUpdateRequest, CreditNotesServicePaginatedItemsResponse, CreditNotesServicePaginationReq, CreditNotesServicePaginationResponse, CreditNotesServiceReferenceCreateRequest, CreditNotesServiceSearchAllReq, CreditNotesServiceUpdateRequest } from "./credit_notes.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -19,7 +19,7 @@ export declare const CreditNotesService: {
         readonly create: {
             readonly name: "Create";
             readonly I: typeof CreditNotesServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -30,7 +30,7 @@ export declare const CreditNotesService: {
         readonly draft: {
             readonly name: "Draft";
             readonly I: typeof CreditNotesServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -41,7 +41,7 @@ export declare const CreditNotesService: {
         readonly draftUpdate: {
             readonly name: "DraftUpdate";
             readonly I: typeof CreditNotesServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -52,7 +52,7 @@ export declare const CreditNotesService: {
         readonly sendForVerification: {
             readonly name: "SendForVerification";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -63,7 +63,7 @@ export declare const CreditNotesService: {
         readonly verify: {
             readonly name: "Verify";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -74,7 +74,7 @@ export declare const CreditNotesService: {
         readonly approve: {
             readonly name: "Approve";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -85,7 +85,7 @@ export declare const CreditNotesService: {
         readonly sendForRevision: {
             readonly name: "SendForRevision";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -96,7 +96,7 @@ export declare const CreditNotesService: {
         readonly revisionUpdate: {
             readonly name: "RevisionUpdate";
             readonly I: typeof CreditNotesServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -107,7 +107,7 @@ export declare const CreditNotesService: {
         readonly halt: {
             readonly name: "Halt";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -118,7 +118,7 @@ export declare const CreditNotesService: {
         readonly discard: {
             readonly name: "Discard";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -129,7 +129,7 @@ export declare const CreditNotesService: {
         readonly restore: {
             readonly name: "Restore";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -140,7 +140,7 @@ export declare const CreditNotesService: {
         readonly complete: {
             readonly name: "Complete";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -151,7 +151,7 @@ export declare const CreditNotesService: {
         readonly repeat: {
             readonly name: "Repeat";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -162,7 +162,7 @@ export declare const CreditNotesService: {
         readonly reopen: {
             readonly name: "Reopen";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -173,7 +173,7 @@ export declare const CreditNotesService: {
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -184,7 +184,7 @@ export declare const CreditNotesService: {
         readonly sendEmail: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -195,7 +195,7 @@ export declare const CreditNotesService: {
         readonly autofill: {
             readonly name: "Autofill";
             readonly I: typeof CreditNotesServiceAutofillRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -206,7 +206,7 @@ export declare const CreditNotesService: {
         readonly addCreditNoteItem: {
             readonly name: "AddCreditNoteItem";
             readonly I: typeof CreditNotesServiceItemCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -217,7 +217,7 @@ export declare const CreditNotesService: {
         readonly modifyCreditNoteItem: {
             readonly name: "ModifyCreditNoteItem";
             readonly I: typeof CreditNotesServiceItemUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -228,7 +228,7 @@ export declare const CreditNotesService: {
         readonly approveCreditNoteItem: {
             readonly name: "ApproveCreditNoteItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -239,7 +239,7 @@ export declare const CreditNotesService: {
         readonly deleteCreditNoteItem: {
             readonly name: "DeleteCreditNoteItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -250,7 +250,7 @@ export declare const CreditNotesService: {
         readonly reorderCreditNoteItems: {
             readonly name: "ReorderCreditNoteItems";
             readonly I: typeof ReorderItemsRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -338,7 +338,7 @@ export declare const CreditNotesService: {
         readonly addCreditNoteReference: {
             readonly name: "AddCreditNoteReference";
             readonly I: typeof CreditNotesServiceReferenceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -349,7 +349,7 @@ export declare const CreditNotesService: {
         readonly approveCreditNoteReference: {
             readonly name: "ApproveCreditNoteReference";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -360,7 +360,7 @@ export declare const CreditNotesService: {
         readonly deleteCreditNoteReference: {
             readonly name: "DeleteCreditNoteReference";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

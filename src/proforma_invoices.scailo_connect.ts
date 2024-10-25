@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ProformaInvoice, ProformaInvoiceAncillaryParameters, ProformaInvoiceItem, ProformaInvoiceItemHistoryRequest, ProformaInvoiceItemProspectiveInfoRequest, ProformaInvoiceItemsList, ProformaInvoiceItemsSearchRequest, ProformaInvoicesList, ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest, ProformaInvoicesServiceAutofillRequest, ProformaInvoicesServiceCountReq, ProformaInvoicesServiceCreateRequest, ProformaInvoicesServiceFilterReq, ProformaInvoicesServiceItemCreateRequest, ProformaInvoicesServiceItemUpdateRequest, ProformaInvoicesServicePaginatedItemsResponse, ProformaInvoicesServicePaginationReq, ProformaInvoicesServicePaginationResponse, ProformaInvoicesServiceSearchAllReq, ProformaInvoicesServiceUpdateRequest } from "./proforma_invoices.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -25,7 +25,7 @@ export const ProformaInvoicesService = {
     create: {
       name: "Create",
       I: ProformaInvoicesServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -36,7 +36,7 @@ export const ProformaInvoicesService = {
     draft: {
       name: "Draft",
       I: ProformaInvoicesServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -47,7 +47,7 @@ export const ProformaInvoicesService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: ProformaInvoicesServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -58,7 +58,7 @@ export const ProformaInvoicesService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -69,7 +69,7 @@ export const ProformaInvoicesService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -80,7 +80,7 @@ export const ProformaInvoicesService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -91,7 +91,7 @@ export const ProformaInvoicesService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -102,7 +102,7 @@ export const ProformaInvoicesService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: ProformaInvoicesServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -113,7 +113,7 @@ export const ProformaInvoicesService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -124,7 +124,7 @@ export const ProformaInvoicesService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -135,7 +135,7 @@ export const ProformaInvoicesService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -146,7 +146,7 @@ export const ProformaInvoicesService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -157,7 +157,7 @@ export const ProformaInvoicesService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -168,7 +168,7 @@ export const ProformaInvoicesService = {
     reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -179,7 +179,7 @@ export const ProformaInvoicesService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -190,7 +190,7 @@ export const ProformaInvoicesService = {
     sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -201,7 +201,7 @@ export const ProformaInvoicesService = {
     autofill: {
       name: "Autofill",
       I: ProformaInvoicesServiceAutofillRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -212,7 +212,7 @@ export const ProformaInvoicesService = {
     amend: {
       name: "Amend",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -223,7 +223,7 @@ export const ProformaInvoicesService = {
     addProformaInvoiceItem: {
       name: "AddProformaInvoiceItem",
       I: ProformaInvoicesServiceItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -234,7 +234,7 @@ export const ProformaInvoicesService = {
     modifyProformaInvoiceItem: {
       name: "ModifyProformaInvoiceItem",
       I: ProformaInvoicesServiceItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -245,7 +245,7 @@ export const ProformaInvoicesService = {
     approveProformaInvoiceItem: {
       name: "ApproveProformaInvoiceItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -256,7 +256,7 @@ export const ProformaInvoicesService = {
     deleteProformaInvoiceItem: {
       name: "DeleteProformaInvoiceItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -267,7 +267,7 @@ export const ProformaInvoicesService = {
     reorderProformaInvoiceItems: {
       name: "ReorderProformaInvoiceItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -488,7 +488,7 @@ export const ProformaInvoicesService = {
     viewAssociatedSalesInvoiceID: {
       name: "ViewAssociatedSalesInvoiceID",
       I: Identifier,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

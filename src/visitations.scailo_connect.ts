@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Visitation, VisitationsList, VisitationsServiceCountReq, VisitationsServiceCreateRequest, VisitationsServiceFilterReq, VisitationsServiceImageEntryRequest, VisitationsServiceImageExitRequest, VisitationsServicePaginationReq, VisitationsServicePaginationResponse, VisitationsServiceSearchAllReq, VisitationsServiceUpdateRequest } from "./visitations.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierUUID, IdentifierWithUserComment, ImageResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment, ImageResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const VisitationsService = {
     create: {
       name: "Create",
       I: VisitationsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -35,7 +35,7 @@ export const VisitationsService = {
     draft: {
       name: "Draft",
       I: VisitationsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const VisitationsService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: VisitationsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const VisitationsService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -68,7 +68,7 @@ export const VisitationsService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -79,7 +79,7 @@ export const VisitationsService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -90,7 +90,7 @@ export const VisitationsService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -101,7 +101,7 @@ export const VisitationsService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: VisitationsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -112,7 +112,7 @@ export const VisitationsService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const VisitationsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const VisitationsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const VisitationsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,21 +156,21 @@ export const VisitationsService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
      * Add comment
      *
      * Send Email
-     * rpc SendEmail (Identifier) returns (Identifier);
+     * rpc SendEmail (Identifier) returns (IdentifierResponse);
      *
      * @generated from rpc Scailo.VisitationsService.CommentAdd
      */
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -181,7 +181,7 @@ export const VisitationsService = {
     recordImageEntry: {
       name: "RecordImageEntry",
       I: VisitationsServiceImageEntryRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -192,7 +192,7 @@ export const VisitationsService = {
     recordImageExit: {
       name: "RecordImageExit",
       I: VisitationsServiceImageExitRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

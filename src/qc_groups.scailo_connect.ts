@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { QCGroup, QCGroupItem, QCGroupItemHistoryRequest, QCGroupsItemsList, QCGroupsList, QCGroupsServiceCountReq, QCGroupsServiceCreateRequest, QCGroupsServiceFilterReq, QCGroupsServiceItemCreateRequest, QCGroupsServiceItemUpdateRequest, QCGroupsServicePaginationReq, QCGroupsServicePaginationResponse, QCGroupsServiceSearchAllReq, QCGroupsServiceUpdateRequest } from "./qc_groups.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const QCGroupsService = {
     create: {
       name: "Create",
       I: QCGroupsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -35,7 +35,7 @@ export const QCGroupsService = {
     draft: {
       name: "Draft",
       I: QCGroupsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const QCGroupsService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: QCGroupsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const QCGroupsService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -68,7 +68,7 @@ export const QCGroupsService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -79,7 +79,7 @@ export const QCGroupsService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -90,7 +90,7 @@ export const QCGroupsService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -101,7 +101,7 @@ export const QCGroupsService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: QCGroupsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -112,7 +112,7 @@ export const QCGroupsService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const QCGroupsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const QCGroupsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const QCGroupsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,7 +156,7 @@ export const QCGroupsService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -167,21 +167,21 @@ export const QCGroupsService = {
     reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
      * Add comment
      *
      * Send Email
-     * rpc SendEmail (IdentifierWithEmailAttributes) returns (Identifier);
+     * rpc SendEmail (IdentifierWithEmailAttributes) returns (IdentifierResponse);
      *
      * @generated from rpc Scailo.QCGroupsService.CommentAdd
      */
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -192,7 +192,7 @@ export const QCGroupsService = {
     clone: {
       name: "Clone",
       I: CloneRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -203,7 +203,7 @@ export const QCGroupsService = {
     addQCGroupItem: {
       name: "AddQCGroupItem",
       I: QCGroupsServiceItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -214,7 +214,7 @@ export const QCGroupsService = {
     modifyQCGroupItem: {
       name: "ModifyQCGroupItem",
       I: QCGroupsServiceItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -225,7 +225,7 @@ export const QCGroupsService = {
     approveQCGroupItem: {
       name: "ApproveQCGroupItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -236,7 +236,7 @@ export const QCGroupsService = {
     deleteQCGroupItem: {
       name: "DeleteQCGroupItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -247,7 +247,7 @@ export const QCGroupsService = {
     reorderQCGroupItems: {
       name: "ReorderQCGroupItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

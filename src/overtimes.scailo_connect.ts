@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Overtime, OvertimesList, OvertimesServiceCountReq, OvertimesServiceCreateRequest, OvertimesServiceFilterReq, OvertimesServicePaginationReq, OvertimesServicePaginationResponse, OvertimesServiceSearchAllReq, OvertimesServiceUpdateRequest } from "./overtimes.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const OvertimesService = {
     create: {
       name: "Create",
       I: OvertimesServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -35,7 +35,7 @@ export const OvertimesService = {
     draft: {
       name: "Draft",
       I: OvertimesServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const OvertimesService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: OvertimesServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const OvertimesService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -68,7 +68,7 @@ export const OvertimesService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -79,7 +79,7 @@ export const OvertimesService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -90,7 +90,7 @@ export const OvertimesService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -101,7 +101,7 @@ export const OvertimesService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: OvertimesServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -112,7 +112,7 @@ export const OvertimesService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const OvertimesService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const OvertimesService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const OvertimesService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,21 +156,21 @@ export const OvertimesService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
      * Add comment
      *
      * Send Email
-     * rpc SendEmail (Identifier) returns (Identifier);
+     * rpc SendEmail (Identifier) returns (IdentifierResponse);
      *
      * @generated from rpc Scailo.OvertimesService.CommentAdd
      */
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

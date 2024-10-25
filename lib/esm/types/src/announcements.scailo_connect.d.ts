@@ -1,5 +1,5 @@
 import { Announcement, AnnouncementsList, AnnouncementsServiceCountReq, AnnouncementsServiceCreateRequest, AnnouncementsServiceFilterReq, AnnouncementsServicePaginationReq, AnnouncementsServicePaginationResponse, AnnouncementsServiceSearchAllReq, AnnouncementsServiceUpdateRequest } from "./announcements.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -18,7 +18,7 @@ export declare const AnnouncementsService: {
         readonly create: {
             readonly name: "Create";
             readonly I: typeof AnnouncementsServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -29,7 +29,7 @@ export declare const AnnouncementsService: {
         readonly draft: {
             readonly name: "Draft";
             readonly I: typeof AnnouncementsServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -40,7 +40,7 @@ export declare const AnnouncementsService: {
         readonly draftUpdate: {
             readonly name: "DraftUpdate";
             readonly I: typeof AnnouncementsServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -51,7 +51,7 @@ export declare const AnnouncementsService: {
         readonly sendForVerification: {
             readonly name: "SendForVerification";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -62,7 +62,7 @@ export declare const AnnouncementsService: {
         readonly verify: {
             readonly name: "Verify";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -73,7 +73,7 @@ export declare const AnnouncementsService: {
         readonly approve: {
             readonly name: "Approve";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -84,7 +84,7 @@ export declare const AnnouncementsService: {
         readonly sendForRevision: {
             readonly name: "SendForRevision";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -95,7 +95,7 @@ export declare const AnnouncementsService: {
         readonly revisionUpdate: {
             readonly name: "RevisionUpdate";
             readonly I: typeof AnnouncementsServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -106,7 +106,7 @@ export declare const AnnouncementsService: {
         readonly halt: {
             readonly name: "Halt";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -117,7 +117,7 @@ export declare const AnnouncementsService: {
         readonly discard: {
             readonly name: "Discard";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -128,7 +128,7 @@ export declare const AnnouncementsService: {
         readonly restore: {
             readonly name: "Restore";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -139,7 +139,7 @@ export declare const AnnouncementsService: {
         readonly complete: {
             readonly name: "Complete";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -150,21 +150,21 @@ export declare const AnnouncementsService: {
         readonly repeat: {
             readonly name: "Repeat";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
          * Add comment
          *
          * Send Email
-         * rpc SendEmail (Identifier) returns (Identifier);
+         * rpc SendEmail (Identifier) returns (IdentifierResponse);
          *
          * @generated from rpc Scailo.AnnouncementsService.CommentAdd
          */
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

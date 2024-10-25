@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ReplaceableIndent, ReplaceableIndentItem, ReplaceableIndentItemHistoryRequest, ReplaceableIndentItemProspectiveInfoRequest, ReplaceableIndentItemsSearchRequest, ReplaceableIndentsItemsList, ReplaceableIndentsList, ReplaceableIndentsServiceAutofillRequest, ReplaceableIndentsServiceCountReq, ReplaceableIndentsServiceCreateRequest, ReplaceableIndentsServiceFilterReq, ReplaceableIndentsServiceItemCreateRequest, ReplaceableIndentsServiceItemUpdateRequest, ReplaceableIndentsServicePaginatedItemsResponse, ReplaceableIndentsServicePaginationReq, ReplaceableIndentsServicePaginationResponse, ReplaceableIndentsServiceSearchAllReq, ReplaceableIndentsServiceUpdateRequest } from "./replaceable_indents.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -25,7 +25,7 @@ export const ReplaceableIndentsService = {
     create: {
       name: "Create",
       I: ReplaceableIndentsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -36,7 +36,7 @@ export const ReplaceableIndentsService = {
     draft: {
       name: "Draft",
       I: ReplaceableIndentsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -47,7 +47,7 @@ export const ReplaceableIndentsService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: ReplaceableIndentsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -58,7 +58,7 @@ export const ReplaceableIndentsService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -69,7 +69,7 @@ export const ReplaceableIndentsService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -80,7 +80,7 @@ export const ReplaceableIndentsService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -91,7 +91,7 @@ export const ReplaceableIndentsService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -102,7 +102,7 @@ export const ReplaceableIndentsService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: ReplaceableIndentsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -113,7 +113,7 @@ export const ReplaceableIndentsService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -124,7 +124,7 @@ export const ReplaceableIndentsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -135,7 +135,7 @@ export const ReplaceableIndentsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -146,7 +146,7 @@ export const ReplaceableIndentsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -157,7 +157,7 @@ export const ReplaceableIndentsService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -168,7 +168,7 @@ export const ReplaceableIndentsService = {
     reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -179,7 +179,7 @@ export const ReplaceableIndentsService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -190,7 +190,7 @@ export const ReplaceableIndentsService = {
     sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -201,7 +201,7 @@ export const ReplaceableIndentsService = {
     autofill: {
       name: "Autofill",
       I: ReplaceableIndentsServiceAutofillRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -223,7 +223,7 @@ export const ReplaceableIndentsService = {
     addReplaceableIndentItem: {
       name: "AddReplaceableIndentItem",
       I: ReplaceableIndentsServiceItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -234,7 +234,7 @@ export const ReplaceableIndentsService = {
     modifyReplaceableIndentItem: {
       name: "ModifyReplaceableIndentItem",
       I: ReplaceableIndentsServiceItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -245,7 +245,7 @@ export const ReplaceableIndentsService = {
     approveReplaceableIndentItem: {
       name: "ApproveReplaceableIndentItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -256,7 +256,7 @@ export const ReplaceableIndentsService = {
     deleteReplaceableIndentItem: {
       name: "DeleteReplaceableIndentItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -267,7 +267,7 @@ export const ReplaceableIndentsService = {
     reorderReplaceableIndentItems: {
       name: "ReorderReplaceableIndentItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

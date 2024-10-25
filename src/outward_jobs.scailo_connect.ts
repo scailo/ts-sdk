@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { OutwardJob, OutwardJobAncillaryParameters, OutwardJobContact, OutwardJobContactsList, OutwardJobInwardItem, OutwardJobInwardItemHistoryRequest, OutwardJobInwardItemProspectiveInfoRequest, OutwardJobInwardItemsSearchRequest, OutwardJobOutwardItem, OutwardJobOutwardItemHistoryRequest, OutwardJobOutwardItemProspectiveInfoRequest, OutwardJobOutwardItemsSearchRequest, OutwardJobsInwardItemsList, OutwardJobsList, OutwardJobsOutwardItemsList, OutwardJobsServiceAutofillRequest, OutwardJobsServiceContactCreateRequest, OutwardJobsServiceCountReq, OutwardJobsServiceCreateRequest, OutwardJobsServiceFilterReq, OutwardJobsServiceInwardItemCreateRequest, OutwardJobsServiceInwardItemUpdateRequest, OutwardJobsServiceMultipleInwardItemsCreateRequest, OutwardJobsServiceMultipleOutwardItemsCreateRequest, OutwardJobsServiceOutwardItemCreateRequest, OutwardJobsServiceOutwardItemUpdateRequest, OutwardJobsServicePaginatedInwardItemsResponse, OutwardJobsServicePaginatedOutwardItemsResponse, OutwardJobsServicePaginationReq, OutwardJobsServicePaginationResponse, OutwardJobsServiceSearchAllReq, OutwardJobsServiceUpdateRequest } from "./outward_jobs.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -25,7 +25,7 @@ export const OutwardJobsService = {
     create: {
       name: "Create",
       I: OutwardJobsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -36,7 +36,7 @@ export const OutwardJobsService = {
     draft: {
       name: "Draft",
       I: OutwardJobsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -47,7 +47,7 @@ export const OutwardJobsService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: OutwardJobsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -58,7 +58,7 @@ export const OutwardJobsService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -69,7 +69,7 @@ export const OutwardJobsService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -80,7 +80,7 @@ export const OutwardJobsService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -91,7 +91,7 @@ export const OutwardJobsService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -102,7 +102,7 @@ export const OutwardJobsService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: OutwardJobsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -113,7 +113,7 @@ export const OutwardJobsService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -124,7 +124,7 @@ export const OutwardJobsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -135,7 +135,7 @@ export const OutwardJobsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -146,7 +146,7 @@ export const OutwardJobsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -157,7 +157,7 @@ export const OutwardJobsService = {
     repeat: {
       name: "Repeat",
       I: RepeatWithDeliveryDate,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -168,7 +168,7 @@ export const OutwardJobsService = {
     reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -179,7 +179,7 @@ export const OutwardJobsService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -190,7 +190,7 @@ export const OutwardJobsService = {
     sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -201,7 +201,7 @@ export const OutwardJobsService = {
     autofill: {
       name: "Autofill",
       I: OutwardJobsServiceAutofillRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -245,7 +245,7 @@ export const OutwardJobsService = {
     addMultipleOutwardJobInwardItems: {
       name: "AddMultipleOutwardJobInwardItems",
       I: OutwardJobsServiceMultipleInwardItemsCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -256,7 +256,7 @@ export const OutwardJobsService = {
     addOutwardJobInwardItem: {
       name: "AddOutwardJobInwardItem",
       I: OutwardJobsServiceInwardItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -267,7 +267,7 @@ export const OutwardJobsService = {
     modifyOutwardJobInwardItem: {
       name: "ModifyOutwardJobInwardItem",
       I: OutwardJobsServiceInwardItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -278,7 +278,7 @@ export const OutwardJobsService = {
     approveOutwardJobInwardItem: {
       name: "ApproveOutwardJobInwardItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -289,7 +289,7 @@ export const OutwardJobsService = {
     deleteOutwardJobInwardItem: {
       name: "DeleteOutwardJobInwardItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -300,7 +300,7 @@ export const OutwardJobsService = {
     reorderOutwardJobInwardItems: {
       name: "ReorderOutwardJobInwardItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -410,7 +410,7 @@ export const OutwardJobsService = {
     addMultipleOutwardJobOutwardItems: {
       name: "AddMultipleOutwardJobOutwardItems",
       I: OutwardJobsServiceMultipleOutwardItemsCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -421,7 +421,7 @@ export const OutwardJobsService = {
     addOutwardJobOutwardItem: {
       name: "AddOutwardJobOutwardItem",
       I: OutwardJobsServiceOutwardItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -432,7 +432,7 @@ export const OutwardJobsService = {
     modifyOutwardJobOutwardItem: {
       name: "ModifyOutwardJobOutwardItem",
       I: OutwardJobsServiceOutwardItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -443,7 +443,7 @@ export const OutwardJobsService = {
     approveOutwardJobOutwardItem: {
       name: "ApproveOutwardJobOutwardItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -454,7 +454,7 @@ export const OutwardJobsService = {
     deleteOutwardJobOutwardItem: {
       name: "DeleteOutwardJobOutwardItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -465,7 +465,7 @@ export const OutwardJobsService = {
     reorderOutwardJobOutwardItems: {
       name: "ReorderOutwardJobOutwardItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -575,7 +575,7 @@ export const OutwardJobsService = {
     addOutwardJobContact: {
       name: "AddOutwardJobContact",
       I: OutwardJobsServiceContactCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -586,7 +586,7 @@ export const OutwardJobsService = {
     approveOutwardJobContact: {
       name: "ApproveOutwardJobContact",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -597,7 +597,7 @@ export const OutwardJobsService = {
     deleteOutwardJobContact: {
       name: "DeleteOutwardJobContact",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

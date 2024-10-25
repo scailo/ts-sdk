@@ -1,5 +1,5 @@
 import { PurchaseOrder, PurchaseOrderAncillaryParameters, PurchaseOrderBillingStatistics, PurchaseOrderContact, PurchaseOrderContactsList, PurchaseOrderInventoryMatchList, PurchaseOrderInventoryStatistics, PurchaseOrderItem, PurchaseOrderItemHistoryRequest, PurchaseOrderItemProspectiveInfoRequest, PurchaseOrderItemsList, PurchaseOrderItemsSearchRequest, PurchaseOrderReference, PurchaseOrderReferencesList, PurchasesOrdersList, PurchasesOrdersServiceAutofillRequest, PurchasesOrdersServiceContactCreateRequest, PurchasesOrdersServiceCountReq, PurchasesOrdersServiceCreateRequest, PurchasesOrdersServiceFilterReq, PurchasesOrdersServiceItemCreateRequest, PurchasesOrdersServiceItemUpdateRequest, PurchasesOrdersServicePaginatedItemsResponse, PurchasesOrdersServicePaginationReq, PurchasesOrdersServicePaginationResponse, PurchasesOrdersServiceReferenceCreateRequest, PurchasesOrdersServiceSearchAllReq, PurchasesOrdersServiceUpdateRequest } from "./purchases_orders.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -19,7 +19,7 @@ export declare const PurchasesOrdersService: {
         readonly create: {
             readonly name: "Create";
             readonly I: typeof PurchasesOrdersServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -30,7 +30,7 @@ export declare const PurchasesOrdersService: {
         readonly draft: {
             readonly name: "Draft";
             readonly I: typeof PurchasesOrdersServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -41,7 +41,7 @@ export declare const PurchasesOrdersService: {
         readonly draftUpdate: {
             readonly name: "DraftUpdate";
             readonly I: typeof PurchasesOrdersServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -52,7 +52,7 @@ export declare const PurchasesOrdersService: {
         readonly sendForVerification: {
             readonly name: "SendForVerification";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -63,7 +63,7 @@ export declare const PurchasesOrdersService: {
         readonly verify: {
             readonly name: "Verify";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -74,7 +74,7 @@ export declare const PurchasesOrdersService: {
         readonly approve: {
             readonly name: "Approve";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -85,7 +85,7 @@ export declare const PurchasesOrdersService: {
         readonly sendForRevision: {
             readonly name: "SendForRevision";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -96,7 +96,7 @@ export declare const PurchasesOrdersService: {
         readonly revisionUpdate: {
             readonly name: "RevisionUpdate";
             readonly I: typeof PurchasesOrdersServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -107,7 +107,7 @@ export declare const PurchasesOrdersService: {
         readonly halt: {
             readonly name: "Halt";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -118,7 +118,7 @@ export declare const PurchasesOrdersService: {
         readonly discard: {
             readonly name: "Discard";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -129,7 +129,7 @@ export declare const PurchasesOrdersService: {
         readonly restore: {
             readonly name: "Restore";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -140,7 +140,7 @@ export declare const PurchasesOrdersService: {
         readonly complete: {
             readonly name: "Complete";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -151,7 +151,7 @@ export declare const PurchasesOrdersService: {
         readonly repeat: {
             readonly name: "Repeat";
             readonly I: typeof RepeatWithDeliveryDate;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -162,7 +162,7 @@ export declare const PurchasesOrdersService: {
         readonly reopen: {
             readonly name: "Reopen";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -173,7 +173,7 @@ export declare const PurchasesOrdersService: {
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -184,7 +184,7 @@ export declare const PurchasesOrdersService: {
         readonly sendEmail: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -195,7 +195,7 @@ export declare const PurchasesOrdersService: {
         readonly autofill: {
             readonly name: "Autofill";
             readonly I: typeof PurchasesOrdersServiceAutofillRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -206,7 +206,7 @@ export declare const PurchasesOrdersService: {
         readonly amend: {
             readonly name: "Amend";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -217,7 +217,7 @@ export declare const PurchasesOrdersService: {
         readonly addPurchaseOrderItem: {
             readonly name: "AddPurchaseOrderItem";
             readonly I: typeof PurchasesOrdersServiceItemCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -228,7 +228,7 @@ export declare const PurchasesOrdersService: {
         readonly modifyPurchaseOrderItem: {
             readonly name: "ModifyPurchaseOrderItem";
             readonly I: typeof PurchasesOrdersServiceItemUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -239,7 +239,7 @@ export declare const PurchasesOrdersService: {
         readonly approvePurchaseOrderItem: {
             readonly name: "ApprovePurchaseOrderItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -250,7 +250,7 @@ export declare const PurchasesOrdersService: {
         readonly deletePurchaseOrderItem: {
             readonly name: "DeletePurchaseOrderItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -261,7 +261,7 @@ export declare const PurchasesOrdersService: {
         readonly reorderPurchaseOrderItems: {
             readonly name: "ReorderPurchaseOrderItems";
             readonly I: typeof ReorderItemsRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -383,7 +383,7 @@ export declare const PurchasesOrdersService: {
         readonly addPurchaseOrderContact: {
             readonly name: "AddPurchaseOrderContact";
             readonly I: typeof PurchasesOrdersServiceContactCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -394,7 +394,7 @@ export declare const PurchasesOrdersService: {
         readonly approvePurchaseOrderContact: {
             readonly name: "ApprovePurchaseOrderContact";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -405,7 +405,7 @@ export declare const PurchasesOrdersService: {
         readonly deletePurchaseOrderContact: {
             readonly name: "DeletePurchaseOrderContact";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -438,7 +438,7 @@ export declare const PurchasesOrdersService: {
         readonly addPurchaseOrderReference: {
             readonly name: "AddPurchaseOrderReference";
             readonly I: typeof PurchasesOrdersServiceReferenceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -449,7 +449,7 @@ export declare const PurchasesOrdersService: {
         readonly approvePurchaseOrderReference: {
             readonly name: "ApprovePurchaseOrderReference";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -460,7 +460,7 @@ export declare const PurchasesOrdersService: {
         readonly deletePurchaseOrderReference: {
             readonly name: "DeletePurchaseOrderReference";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

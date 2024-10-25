@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SkillParam, SkillsParamsList, SkillsParamsServiceCountReq, SkillsParamsServiceCreateRequest, SkillsParamsServiceFilterReq, SkillsParamsServicePaginationReq, SkillsParamsServicePaginationResponse, SkillsParamsServiceSearchAllReq, SkillsParamsServiceUpdateRequest } from "./skills_params.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const SkillsParamsService = {
     create: {
       name: "Create",
       I: SkillsParamsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -35,7 +35,7 @@ export const SkillsParamsService = {
     draft: {
       name: "Draft",
       I: SkillsParamsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const SkillsParamsService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: SkillsParamsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const SkillsParamsService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -68,7 +68,7 @@ export const SkillsParamsService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -79,7 +79,7 @@ export const SkillsParamsService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -90,7 +90,7 @@ export const SkillsParamsService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -101,7 +101,7 @@ export const SkillsParamsService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: SkillsParamsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -112,7 +112,7 @@ export const SkillsParamsService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const SkillsParamsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const SkillsParamsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const SkillsParamsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,21 +156,21 @@ export const SkillsParamsService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
      * Add comment
      *
      * Send Email
-     * rpc SendEmail (Identifier) returns (Identifier);
+     * rpc SendEmail (Identifier) returns (IdentifierResponse);
      *
      * @generated from rpc Scailo.SkillsParamsService.CommentAdd
      */
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

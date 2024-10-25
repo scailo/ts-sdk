@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Merchandise, MerchandisesList, MerchandisesServiceCountReq, MerchandisesServiceCreateRequest, MerchandisesServiceFilterReq, MerchandisesServicePaginationReq, MerchandisesServicePaginationResponse, MerchandisesServiceSearchAllReq, MerchandisesServiceSendToStoreRequest, MerchandisesServiceUpdateRequest } from "./merchandises.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const MerchandisesService = {
     create: {
       name: "Create",
       I: MerchandisesServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -35,7 +35,7 @@ export const MerchandisesService = {
     sendToStore: {
       name: "SendToStore",
       I: MerchandisesServiceSendToStoreRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const MerchandisesService = {
     update: {
       name: "Update",
       I: MerchandisesServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const MerchandisesService = {
     sendForRework: {
       name: "SendForRework",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -68,7 +68,7 @@ export const MerchandisesService = {
     sendForQC: {
       name: "SendForQC",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -79,7 +79,7 @@ export const MerchandisesService = {
     splitLot: {
       name: "SplitLot",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -90,7 +90,7 @@ export const MerchandisesService = {
     partition: {
       name: "Partition",
       I: InventoryPartitionRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -101,7 +101,7 @@ export const MerchandisesService = {
     consume: {
       name: "Consume",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -112,7 +112,7 @@ export const MerchandisesService = {
     reject: {
       name: "Reject",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const MerchandisesService = {
     scrap: {
       name: "Scrap",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const MerchandisesService = {
     return: {
       name: "Return",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const MerchandisesService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,7 +156,7 @@ export const MerchandisesService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

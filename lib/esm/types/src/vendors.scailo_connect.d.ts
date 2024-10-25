@@ -1,5 +1,5 @@
 import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginatedRequiredItemsResponse, VendorsServicePaginatedUsersResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList, VendorUsersSearchRequest } from "./vendors.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -18,7 +18,7 @@ export declare const VendorsService: {
         readonly create: {
             readonly name: "Create";
             readonly I: typeof VendorsServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -29,7 +29,7 @@ export declare const VendorsService: {
         readonly draft: {
             readonly name: "Draft";
             readonly I: typeof VendorsServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -40,7 +40,7 @@ export declare const VendorsService: {
         readonly draftUpdate: {
             readonly name: "DraftUpdate";
             readonly I: typeof VendorsServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -51,7 +51,7 @@ export declare const VendorsService: {
         readonly sendForVerification: {
             readonly name: "SendForVerification";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -62,7 +62,7 @@ export declare const VendorsService: {
         readonly verify: {
             readonly name: "Verify";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -73,7 +73,7 @@ export declare const VendorsService: {
         readonly approve: {
             readonly name: "Approve";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -84,7 +84,7 @@ export declare const VendorsService: {
         readonly sendForRevision: {
             readonly name: "SendForRevision";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -95,7 +95,7 @@ export declare const VendorsService: {
         readonly revisionUpdate: {
             readonly name: "RevisionUpdate";
             readonly I: typeof VendorsServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -106,7 +106,7 @@ export declare const VendorsService: {
         readonly halt: {
             readonly name: "Halt";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -117,7 +117,7 @@ export declare const VendorsService: {
         readonly discard: {
             readonly name: "Discard";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -128,7 +128,7 @@ export declare const VendorsService: {
         readonly restore: {
             readonly name: "Restore";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -139,7 +139,7 @@ export declare const VendorsService: {
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -150,7 +150,7 @@ export declare const VendorsService: {
         readonly sendEmail: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -161,7 +161,7 @@ export declare const VendorsService: {
         readonly addVendorItem: {
             readonly name: "AddVendorItem";
             readonly I: typeof VendorsServiceItemCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -172,7 +172,7 @@ export declare const VendorsService: {
         readonly modifyVendorItem: {
             readonly name: "ModifyVendorItem";
             readonly I: typeof VendorsServiceItemUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -183,7 +183,7 @@ export declare const VendorsService: {
         readonly approveVendorItem: {
             readonly name: "ApproveVendorItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -194,12 +194,12 @@ export declare const VendorsService: {
         readonly deleteVendorItem: {
             readonly name: "DeleteVendorItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
          * Reorder items in a vendor
-         * rpc ReorderVendorItems(ReorderItemsRequest) returns (Identifier);
+         * rpc ReorderVendorItems(ReorderItemsRequest) returns (IdentifierResponse);
          * View Vendor Item by ID
          *
          * @generated from rpc Scailo.VendorsService.ViewVendorItemByID
@@ -273,7 +273,7 @@ export declare const VendorsService: {
         readonly addVendorUser: {
             readonly name: "AddVendorUser";
             readonly I: typeof VendorsServiceUserCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -284,7 +284,7 @@ export declare const VendorsService: {
         readonly approveVendorUser: {
             readonly name: "ApproveVendorUser";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -295,7 +295,7 @@ export declare const VendorsService: {
         readonly deleteVendorUser: {
             readonly name: "DeleteVendorUser";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

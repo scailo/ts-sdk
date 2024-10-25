@@ -1,5 +1,5 @@
 import { EquationsWorkOrdersItemsList, EquationsWorkOrdersList, EquationsWorkOrdersServiceCountReq, EquationsWorkOrdersServiceCreateRequest, EquationsWorkOrdersServiceFilterReq, EquationsWorkOrdersServiceItemCreateRequest, EquationsWorkOrdersServiceItemUpdateRequest, EquationsWorkOrdersServicePaginatedItemsResponse, EquationsWorkOrdersServicePaginationReq, EquationsWorkOrdersServicePaginationResponse, EquationsWorkOrdersServiceSearchAllReq, EquationsWorkOrdersServiceUpdateRequest, EquationWorkOrder, EquationWorkOrderItem, EquationWorkOrderItemHistoryRequest, EquationWorkOrderItemsSearchRequest } from "./equations_work_orders.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -18,7 +18,7 @@ export declare const EquationsWorkOrdersService: {
         readonly create: {
             readonly name: "Create";
             readonly I: typeof EquationsWorkOrdersServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -29,7 +29,7 @@ export declare const EquationsWorkOrdersService: {
         readonly draft: {
             readonly name: "Draft";
             readonly I: typeof EquationsWorkOrdersServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -40,7 +40,7 @@ export declare const EquationsWorkOrdersService: {
         readonly draftUpdate: {
             readonly name: "DraftUpdate";
             readonly I: typeof EquationsWorkOrdersServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -51,7 +51,7 @@ export declare const EquationsWorkOrdersService: {
         readonly sendForVerification: {
             readonly name: "SendForVerification";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -62,7 +62,7 @@ export declare const EquationsWorkOrdersService: {
         readonly verify: {
             readonly name: "Verify";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -73,7 +73,7 @@ export declare const EquationsWorkOrdersService: {
         readonly approve: {
             readonly name: "Approve";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -84,7 +84,7 @@ export declare const EquationsWorkOrdersService: {
         readonly sendForRevision: {
             readonly name: "SendForRevision";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -95,7 +95,7 @@ export declare const EquationsWorkOrdersService: {
         readonly revisionUpdate: {
             readonly name: "RevisionUpdate";
             readonly I: typeof EquationsWorkOrdersServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -106,7 +106,7 @@ export declare const EquationsWorkOrdersService: {
         readonly halt: {
             readonly name: "Halt";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -117,7 +117,7 @@ export declare const EquationsWorkOrdersService: {
         readonly discard: {
             readonly name: "Discard";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -128,7 +128,7 @@ export declare const EquationsWorkOrdersService: {
         readonly restore: {
             readonly name: "Restore";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -139,7 +139,7 @@ export declare const EquationsWorkOrdersService: {
         readonly complete: {
             readonly name: "Complete";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -150,7 +150,7 @@ export declare const EquationsWorkOrdersService: {
         readonly repeat: {
             readonly name: "Repeat";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -161,21 +161,21 @@ export declare const EquationsWorkOrdersService: {
         readonly reopen: {
             readonly name: "Reopen";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
          * Add comment
          *
          * Send Email
-         * rpc SendEmail (IdentifierWithEmailAttributes) returns (Identifier);
+         * rpc SendEmail (IdentifierWithEmailAttributes) returns (IdentifierResponse);
          *
          * @generated from rpc Scailo.EquationsWorkOrdersService.CommentAdd
          */
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -186,7 +186,7 @@ export declare const EquationsWorkOrdersService: {
         readonly clone: {
             readonly name: "Clone";
             readonly I: typeof CloneRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -197,7 +197,7 @@ export declare const EquationsWorkOrdersService: {
         readonly addEquationWorkOrderItem: {
             readonly name: "AddEquationWorkOrderItem";
             readonly I: typeof EquationsWorkOrdersServiceItemCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -208,7 +208,7 @@ export declare const EquationsWorkOrdersService: {
         readonly modifyEquationWorkOrderItem: {
             readonly name: "ModifyEquationWorkOrderItem";
             readonly I: typeof EquationsWorkOrdersServiceItemUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -219,7 +219,7 @@ export declare const EquationsWorkOrdersService: {
         readonly approveEquationWorkOrderItem: {
             readonly name: "ApproveEquationWorkOrderItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -230,7 +230,7 @@ export declare const EquationsWorkOrdersService: {
         readonly deleteEquationWorkOrderItem: {
             readonly name: "DeleteEquationWorkOrderItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -241,7 +241,7 @@ export declare const EquationsWorkOrdersService: {
         readonly reorderEquationWorkOrderItems: {
             readonly name: "ReorderEquationWorkOrderItems";
             readonly I: typeof ReorderItemsRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

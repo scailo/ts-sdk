@@ -1,5 +1,5 @@
 import { ClientStream, ClientStreamClientSubscriber, ClientStreamClientSubscribersList, ClientStreamInternalSubscriber, ClientStreamInternalSubscribersList, ClientStreamMessage, ClientStreamMessageReceiptsList, ClientStreamMessagesList, ClientStreamMessagesSearchRequest, ClientStreamsList, ClientStreamsServiceClientSubscriberCreateRequest, ClientStreamsServiceCountReq, ClientStreamsServiceCreateRequest, ClientStreamsServiceFilterReq, ClientStreamsServiceImportInternalSubscribersRequest, ClientStreamsServiceInternalSubscriberCreateRequest, ClientStreamsServiceMessageCreateRequest, ClientStreamsServicePaginatedMessagesResponse, ClientStreamsServicePaginationReq, ClientStreamsServicePaginationResponse, ClientStreamsServiceSearchAllReq, ClientStreamsServiceUpdateRequest } from "./client_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -186,7 +186,7 @@ export declare const ClientStreamsService: {
         readonly addInternalSubscriber: {
             readonly name: "AddInternalSubscriber";
             readonly I: typeof ClientStreamsServiceInternalSubscriberCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -197,7 +197,7 @@ export declare const ClientStreamsService: {
         readonly deleteInternalSubscriber: {
             readonly name: "DeleteInternalSubscriber";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -230,7 +230,7 @@ export declare const ClientStreamsService: {
         readonly importInternalSubscribersFromTeam: {
             readonly name: "ImportInternalSubscribersFromTeam";
             readonly I: typeof ClientStreamsServiceImportInternalSubscribersRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -241,7 +241,7 @@ export declare const ClientStreamsService: {
         readonly importInternalSubscribersFromDepartment: {
             readonly name: "ImportInternalSubscribersFromDepartment";
             readonly I: typeof ClientStreamsServiceImportInternalSubscribersRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -252,7 +252,7 @@ export declare const ClientStreamsService: {
         readonly addClientSubscriber: {
             readonly name: "AddClientSubscriber";
             readonly I: typeof ClientStreamsServiceClientSubscriberCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -263,7 +263,7 @@ export declare const ClientStreamsService: {
         readonly deleteClientSubscriber: {
             readonly name: "DeleteClientSubscriber";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

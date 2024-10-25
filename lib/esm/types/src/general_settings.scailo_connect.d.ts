@@ -1,5 +1,5 @@
 import { GeneralSettings, GeneralSettingsUpdateRequest } from "./general_settings.scailo_pb.js";
-import { Empty, Identifier, ImageResponse, StandardFile } from "./base.scailo_pb.js";
+import { Empty, IdentifierResponse, ImageResponse, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -18,7 +18,7 @@ export declare const GeneralSettingsService: {
         readonly updateSettings: {
             readonly name: "UpdateSettings";
             readonly I: typeof GeneralSettingsUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -40,7 +40,7 @@ export declare const GeneralSettingsService: {
         readonly updateOrganizationLogo: {
             readonly name: "UpdateOrganizationLogo";
             readonly I: typeof StandardFile;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

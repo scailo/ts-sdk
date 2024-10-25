@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { PayrollGroup, PayrollGroupItem, PayrollGroupItemHistoryRequest, PayrollGroupsItemsList, PayrollGroupsList, PayrollGroupsServiceCountReq, PayrollGroupsServiceCreateRequest, PayrollGroupsServiceFilterReq, PayrollGroupsServiceItemCreateRequest, PayrollGroupsServiceItemUpdateRequest, PayrollGroupsServicePaginationReq, PayrollGroupsServicePaginationResponse, PayrollGroupsServiceSearchAllReq, PayrollGroupsServiceUpdateRequest } from "./payroll_groups.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const PayrollGroupsService = {
     create: {
       name: "Create",
       I: PayrollGroupsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -35,7 +35,7 @@ export const PayrollGroupsService = {
     draft: {
       name: "Draft",
       I: PayrollGroupsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const PayrollGroupsService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: PayrollGroupsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const PayrollGroupsService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -68,7 +68,7 @@ export const PayrollGroupsService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -79,7 +79,7 @@ export const PayrollGroupsService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -90,7 +90,7 @@ export const PayrollGroupsService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -101,7 +101,7 @@ export const PayrollGroupsService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: PayrollGroupsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -112,7 +112,7 @@ export const PayrollGroupsService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const PayrollGroupsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const PayrollGroupsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const PayrollGroupsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,7 +156,7 @@ export const PayrollGroupsService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -167,21 +167,21 @@ export const PayrollGroupsService = {
     reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
      * Add comment
      *
      * Send Email
-     * rpc SendEmail (IdentifierWithEmailAttributes) returns (Identifier);
+     * rpc SendEmail (IdentifierWithEmailAttributes) returns (IdentifierResponse);
      *
      * @generated from rpc Scailo.PayrollGroupsService.CommentAdd
      */
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -192,7 +192,7 @@ export const PayrollGroupsService = {
     clone: {
       name: "Clone",
       I: CloneRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -203,7 +203,7 @@ export const PayrollGroupsService = {
     addPayrollGroupItem: {
       name: "AddPayrollGroupItem",
       I: PayrollGroupsServiceItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -214,7 +214,7 @@ export const PayrollGroupsService = {
     modifyPayrollGroupItem: {
       name: "ModifyPayrollGroupItem",
       I: PayrollGroupsServiceItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -225,7 +225,7 @@ export const PayrollGroupsService = {
     approvePayrollGroupItem: {
       name: "ApprovePayrollGroupItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -236,7 +236,7 @@ export const PayrollGroupsService = {
     deletePayrollGroupItem: {
       name: "DeletePayrollGroupItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -247,7 +247,7 @@ export const PayrollGroupsService = {
     reorderPayrollGroupItems: {
       name: "ReorderPayrollGroupItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

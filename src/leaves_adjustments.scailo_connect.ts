@@ -10,7 +10,7 @@
 // @ts-nocheck
 
 import { LeaveAdjustment, LeaveAdjustmentRecord, LeaveAdjustmentRecordsSearchRequest, LeavesAdjustmentsList, LeavesAdjustmentsRecordsHistoryRequest, LeavesAdjustmentsRecordsList, LeavesAdjustmentsServiceCountReq, LeavesAdjustmentsServiceCreateRequest, LeavesAdjustmentsServiceFilterReq, LeavesAdjustmentsServicePaginatedRecordsResponse, LeavesAdjustmentsServicePaginationReq, LeavesAdjustmentsServicePaginationResponse, LeavesAdjustmentsServiceRecordCreateRequest, LeavesAdjustmentsServiceRecordUpdateRequest, LeavesAdjustmentsServiceSearchAllReq, LeavesAdjustmentsServiceUpdateRequest } from "./leaves_adjustments.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -30,7 +30,7 @@ export const LeavesAdjustmentsService = {
     create: {
       name: "Create",
       I: LeavesAdjustmentsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -41,7 +41,7 @@ export const LeavesAdjustmentsService = {
     draft: {
       name: "Draft",
       I: LeavesAdjustmentsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -52,7 +52,7 @@ export const LeavesAdjustmentsService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: LeavesAdjustmentsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -63,7 +63,7 @@ export const LeavesAdjustmentsService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -74,7 +74,7 @@ export const LeavesAdjustmentsService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -85,7 +85,7 @@ export const LeavesAdjustmentsService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -96,7 +96,7 @@ export const LeavesAdjustmentsService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -107,7 +107,7 @@ export const LeavesAdjustmentsService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: LeavesAdjustmentsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -118,7 +118,7 @@ export const LeavesAdjustmentsService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -129,7 +129,7 @@ export const LeavesAdjustmentsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -140,7 +140,7 @@ export const LeavesAdjustmentsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -151,7 +151,7 @@ export const LeavesAdjustmentsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -162,21 +162,21 @@ export const LeavesAdjustmentsService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
      * Add comment
      *
      * Send Email
-     * rpc SendEmail (Identifier) returns (Identifier);
+     * rpc SendEmail (Identifier) returns (IdentifierResponse);
      *
      * @generated from rpc Scailo.LeavesAdjustmentsService.CommentAdd
      */
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -187,7 +187,7 @@ export const LeavesAdjustmentsService = {
     addLeaveAdjustmentRecord: {
       name: "AddLeaveAdjustmentRecord",
       I: LeavesAdjustmentsServiceRecordCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -198,7 +198,7 @@ export const LeavesAdjustmentsService = {
     modifyLeaveAdjustmentRecord: {
       name: "ModifyLeaveAdjustmentRecord",
       I: LeavesAdjustmentsServiceRecordUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -209,7 +209,7 @@ export const LeavesAdjustmentsService = {
     approveLeaveAdjustmentRecord: {
       name: "ApproveLeaveAdjustmentRecord",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -220,7 +220,7 @@ export const LeavesAdjustmentsService = {
     deleteLeaveAdjustmentRecord: {
       name: "DeleteLeaveAdjustmentRecord",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -231,7 +231,7 @@ export const LeavesAdjustmentsService = {
     reorderLeaveAdjustmentRecords: {
       name: "ReorderLeaveAdjustmentRecords",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

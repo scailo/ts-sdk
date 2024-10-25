@@ -1,5 +1,5 @@
 import { ActivitiesList, ActivitiesServiceActionCreateRequest, ActivitiesServiceActionUpdateRequest, ActivitiesServiceActionWithTimerCreateRequest, ActivitiesServiceActivityTagAssociationCreateRequest, ActivitiesServiceCountReq, ActivitiesServiceCreateRequest, ActivitiesServiceFilterReq, ActivitiesServiceImportOwnersRequest, ActivitiesServiceOwnerCreateRequest, ActivitiesServicePaginatedActionsResponse, ActivitiesServicePaginatedTimersResponse, ActivitiesServicePaginationReq, ActivitiesServicePaginationResponse, ActivitiesServiceSearchAllReq, ActivitiesServiceSupervisorCreateRequest, ActivitiesServiceTimerCreateRequest, ActivitiesServiceTimerEndRequest, ActivitiesServiceUpdateRequest, Activity, ActivityAction, ActivityActionHistoryRequest, ActivityActionsList, ActivityActionsSearchRequest, ActivityActionStatistics, ActivityOwner, ActivityOwnersList, ActivityStatistics, ActivitySupervisor, ActivitySupervisorsList, ActivityTagAssociation, ActivityTagAssociationsList, ActivityTimer, ActivityTimersList, ActivityTimersSearchRequest } from "./activities.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -106,7 +106,7 @@ export declare const ActivitiesService: {
         readonly addAction: {
             readonly name: "AddAction";
             readonly I: typeof ActivitiesServiceActionCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -117,7 +117,7 @@ export declare const ActivitiesService: {
         readonly addActionWithTimer: {
             readonly name: "AddActionWithTimer";
             readonly I: typeof ActivitiesServiceActionWithTimerCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -128,7 +128,7 @@ export declare const ActivitiesService: {
         readonly modifyAction: {
             readonly name: "ModifyAction";
             readonly I: typeof ActivitiesServiceActionUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -139,7 +139,7 @@ export declare const ActivitiesService: {
         readonly deleteAction: {
             readonly name: "DeleteAction";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -150,7 +150,7 @@ export declare const ActivitiesService: {
         readonly reorderActions: {
             readonly name: "ReorderActions";
             readonly I: typeof ReorderItemsRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -227,7 +227,7 @@ export declare const ActivitiesService: {
         readonly addActivityTagAssociation: {
             readonly name: "AddActivityTagAssociation";
             readonly I: typeof ActivitiesServiceActivityTagAssociationCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -238,7 +238,7 @@ export declare const ActivitiesService: {
         readonly deleteActivityTagAssociation: {
             readonly name: "DeleteActivityTagAssociation";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -271,7 +271,7 @@ export declare const ActivitiesService: {
         readonly addOwner: {
             readonly name: "AddOwner";
             readonly I: typeof ActivitiesServiceOwnerCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -282,7 +282,7 @@ export declare const ActivitiesService: {
         readonly deleteOwner: {
             readonly name: "DeleteOwner";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -315,7 +315,7 @@ export declare const ActivitiesService: {
         readonly importOwnersFromTeam: {
             readonly name: "ImportOwnersFromTeam";
             readonly I: typeof ActivitiesServiceImportOwnersRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -326,7 +326,7 @@ export declare const ActivitiesService: {
         readonly importOwnersFromDepartment: {
             readonly name: "ImportOwnersFromDepartment";
             readonly I: typeof ActivitiesServiceImportOwnersRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -337,7 +337,7 @@ export declare const ActivitiesService: {
         readonly addSupervisor: {
             readonly name: "AddSupervisor";
             readonly I: typeof ActivitiesServiceSupervisorCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -348,7 +348,7 @@ export declare const ActivitiesService: {
         readonly deleteSupervisor: {
             readonly name: "DeleteSupervisor";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -381,7 +381,7 @@ export declare const ActivitiesService: {
         readonly addTimer: {
             readonly name: "AddTimer";
             readonly I: typeof ActivitiesServiceTimerCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -392,7 +392,7 @@ export declare const ActivitiesService: {
         readonly endTimer: {
             readonly name: "EndTimer";
             readonly I: typeof ActivitiesServiceTimerEndRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

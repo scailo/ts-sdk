@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SalariesAdditionItemsList, SalariesDeductionItemsList, SalariesList, SalariesReimbursementItemsList, SalariesServiceAdditionItemCreateRequest, SalariesServiceAdditionItemUpdateRequest, SalariesServiceAutofillRequest, SalariesServiceCountReq, SalariesServiceCreateRequest, SalariesServiceDeductionItemCreateRequest, SalariesServiceDeductionItemUpdateRequest, SalariesServiceFilterReq, SalariesServicePaginationReq, SalariesServicePaginationResponse, SalariesServiceReimbursementItemCreateRequest, SalariesServiceReimbursementItemUpdateRequest, SalariesServiceSearchAllReq, SalariesServiceUpdateRequest, Salary, SalaryAdditionItem, SalaryAdditionItemHistoryRequest, SalaryAdditionItemProspectiveInfoRequest, SalaryDeductionItem, SalaryDeductionItemHistoryRequest, SalaryDeductionItemProspectiveInfoRequest, SalaryReimbursementItem, SalaryReimbursementItemHistoryRequest, SalaryReimbursementItemProspectiveInfoRequest } from "./salaries.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const SalariesService = {
     create: {
       name: "Create",
       I: SalariesServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -35,7 +35,7 @@ export const SalariesService = {
     draft: {
       name: "Draft",
       I: SalariesServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const SalariesService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: SalariesServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const SalariesService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -68,7 +68,7 @@ export const SalariesService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -79,7 +79,7 @@ export const SalariesService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -90,7 +90,7 @@ export const SalariesService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -101,7 +101,7 @@ export const SalariesService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: SalariesServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -112,7 +112,7 @@ export const SalariesService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const SalariesService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const SalariesService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const SalariesService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,7 +156,7 @@ export const SalariesService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -167,7 +167,7 @@ export const SalariesService = {
     reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -178,7 +178,7 @@ export const SalariesService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -189,7 +189,7 @@ export const SalariesService = {
     sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -200,7 +200,7 @@ export const SalariesService = {
     autofill: {
       name: "Autofill",
       I: SalariesServiceAutofillRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -213,7 +213,7 @@ export const SalariesService = {
     addSalaryAdditionItem: {
       name: "AddSalaryAdditionItem",
       I: SalariesServiceAdditionItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -224,7 +224,7 @@ export const SalariesService = {
     modifySalaryAdditionItem: {
       name: "ModifySalaryAdditionItem",
       I: SalariesServiceAdditionItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -235,7 +235,7 @@ export const SalariesService = {
     approveSalaryAdditionItem: {
       name: "ApproveSalaryAdditionItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -246,7 +246,7 @@ export const SalariesService = {
     deleteSalaryAdditionItem: {
       name: "DeleteSalaryAdditionItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -257,7 +257,7 @@ export const SalariesService = {
     reorderSalaryAdditionItems: {
       name: "ReorderSalaryAdditionItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -325,7 +325,7 @@ export const SalariesService = {
     addSalaryDeductionItem: {
       name: "AddSalaryDeductionItem",
       I: SalariesServiceDeductionItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -336,7 +336,7 @@ export const SalariesService = {
     modifySalaryDeductionItem: {
       name: "ModifySalaryDeductionItem",
       I: SalariesServiceDeductionItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -347,7 +347,7 @@ export const SalariesService = {
     approveSalaryDeductionItem: {
       name: "ApproveSalaryDeductionItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -358,7 +358,7 @@ export const SalariesService = {
     deleteSalaryDeductionItem: {
       name: "DeleteSalaryDeductionItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -369,7 +369,7 @@ export const SalariesService = {
     reorderSalaryDeductionItems: {
       name: "ReorderSalaryDeductionItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -437,7 +437,7 @@ export const SalariesService = {
     addSalaryReimbursementItem: {
       name: "AddSalaryReimbursementItem",
       I: SalariesServiceReimbursementItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -448,7 +448,7 @@ export const SalariesService = {
     modifySalaryReimbursementItem: {
       name: "ModifySalaryReimbursementItem",
       I: SalariesServiceReimbursementItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -459,7 +459,7 @@ export const SalariesService = {
     approveSalaryReimbursementItem: {
       name: "ApproveSalaryReimbursementItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -470,7 +470,7 @@ export const SalariesService = {
     deleteSalaryReimbursementItem: {
       name: "DeleteSalaryReimbursementItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -481,7 +481,7 @@ export const SalariesService = {
     reorderSalaryReimbursementItems: {
       name: "ReorderSalaryReimbursementItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

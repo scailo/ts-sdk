@@ -1,5 +1,5 @@
 import { InwardJobFreeIssueMaterialReturn, InwardJobFreeIssueMaterialReturnAncillaryParameters, InwardJobFreeIssueMaterialReturnItem, InwardJobFreeIssueMaterialReturnItemHistoryRequest, InwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest, InwardJobFreeIssueMaterialReturnItemsSearchRequest, InwardJobsFreeIssueMaterialsReturnsItemsList, InwardJobsFreeIssueMaterialsReturnsList, InwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSourceRequest, InwardJobsFreeIssueMaterialsReturnsServiceCountReq, InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest, InwardJobsFreeIssueMaterialsReturnsServiceFilterReq, InwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest, InwardJobsFreeIssueMaterialsReturnsServiceItemUpdateRequest, InwardJobsFreeIssueMaterialsReturnsServicePaginatedItemsResponse, InwardJobsFreeIssueMaterialsReturnsServicePaginationReq, InwardJobsFreeIssueMaterialsReturnsServicePaginationResponse, InwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq, InwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest } from "./inward_jobs_free_issue_materials_returns.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -19,7 +19,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly create: {
             readonly name: "Create";
             readonly I: typeof InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -30,7 +30,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly draft: {
             readonly name: "Draft";
             readonly I: typeof InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -41,7 +41,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly draftUpdate: {
             readonly name: "DraftUpdate";
             readonly I: typeof InwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -52,7 +52,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly sendForVerification: {
             readonly name: "SendForVerification";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -63,7 +63,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly verify: {
             readonly name: "Verify";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -74,7 +74,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly approve: {
             readonly name: "Approve";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -85,7 +85,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly sendForRevision: {
             readonly name: "SendForRevision";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -96,7 +96,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly revisionUpdate: {
             readonly name: "RevisionUpdate";
             readonly I: typeof InwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -107,7 +107,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly halt: {
             readonly name: "Halt";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -118,7 +118,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly discard: {
             readonly name: "Discard";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -129,7 +129,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly restore: {
             readonly name: "Restore";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -140,7 +140,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly complete: {
             readonly name: "Complete";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -151,7 +151,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly repeat: {
             readonly name: "Repeat";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -162,7 +162,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly reopen: {
             readonly name: "Reopen";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -173,7 +173,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -184,7 +184,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly sendEmail: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -206,7 +206,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly addInwardJobFreeIssueMaterialReturnItem: {
             readonly name: "AddInwardJobFreeIssueMaterialReturnItem";
             readonly I: typeof InwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -217,7 +217,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly modifyInwardJobFreeIssueMaterialReturnItem: {
             readonly name: "ModifyInwardJobFreeIssueMaterialReturnItem";
             readonly I: typeof InwardJobsFreeIssueMaterialsReturnsServiceItemUpdateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -228,7 +228,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly approveInwardJobFreeIssueMaterialReturnItem: {
             readonly name: "ApproveInwardJobFreeIssueMaterialReturnItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -239,7 +239,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly deleteInwardJobFreeIssueMaterialReturnItem: {
             readonly name: "DeleteInwardJobFreeIssueMaterialReturnItem";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -250,7 +250,7 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
         readonly reorderInwardJobFreeIssueMaterialReturnItems: {
             readonly name: "ReorderInwardJobFreeIssueMaterialReturnItems";
             readonly I: typeof ReorderItemsRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

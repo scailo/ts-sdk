@@ -1,156 +1,105 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AmendmentLog
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierResponse
 
-# Class: AmendmentLog
+# Class: IdentifierResponse
 
-Describes the data payload within an amendment log
+Describes the response that consists of the ID and the UUID of the record
 
 **`Generated`**
 
-from message Scailo.AmendmentLog
+from message Scailo.IdentifierResponse
 
 ## Hierarchy
 
-- `Message`\<[`AmendmentLog`](AmendmentLog.md)\>
+- `Message`\<[`IdentifierResponse`](IdentifierResponse.md)\>
 
-  ↳ **`AmendmentLog`**
+  ↳ **`IdentifierResponse`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](AmendmentLog.md#constructor)
+- [constructor](IdentifierResponse.md#constructor)
 
 ### Properties
 
-- [comment](AmendmentLog.md#comment)
-- [entityUuid](AmendmentLog.md#entityuuid)
-- [metadata](AmendmentLog.md#metadata)
-- [refFor](AmendmentLog.md#reffor)
-- [refId](AmendmentLog.md#refid)
-- [fields](AmendmentLog.md#fields)
-- [runtime](AmendmentLog.md#runtime)
-- [typeName](AmendmentLog.md#typename)
+- [id](IdentifierResponse.md#id)
+- [uuid](IdentifierResponse.md#uuid)
+- [fields](IdentifierResponse.md#fields)
+- [runtime](IdentifierResponse.md#runtime)
+- [typeName](IdentifierResponse.md#typename)
 
 ### Methods
 
-- [clone](AmendmentLog.md#clone)
-- [equals](AmendmentLog.md#equals)
-- [fromBinary](AmendmentLog.md#frombinary)
-- [fromJson](AmendmentLog.md#fromjson)
-- [fromJsonString](AmendmentLog.md#fromjsonstring)
-- [getType](AmendmentLog.md#gettype)
-- [toBinary](AmendmentLog.md#tobinary)
-- [toJSON](AmendmentLog.md#tojson)
-- [toJson](AmendmentLog.md#tojson-1)
-- [toJsonString](AmendmentLog.md#tojsonstring)
-- [equals](AmendmentLog.md#equals-1)
-- [fromBinary](AmendmentLog.md#frombinary-1)
-- [fromJson](AmendmentLog.md#fromjson-1)
-- [fromJsonString](AmendmentLog.md#fromjsonstring-1)
+- [clone](IdentifierResponse.md#clone)
+- [equals](IdentifierResponse.md#equals)
+- [fromBinary](IdentifierResponse.md#frombinary)
+- [fromJson](IdentifierResponse.md#fromjson)
+- [fromJsonString](IdentifierResponse.md#fromjsonstring)
+- [getType](IdentifierResponse.md#gettype)
+- [toBinary](IdentifierResponse.md#tobinary)
+- [toJSON](IdentifierResponse.md#tojson)
+- [toJson](IdentifierResponse.md#tojson-1)
+- [toJsonString](IdentifierResponse.md#tojsonstring)
+- [equals](IdentifierResponse.md#equals-1)
+- [fromBinary](IdentifierResponse.md#frombinary-1)
+- [fromJson](IdentifierResponse.md#fromjson-1)
+- [fromJsonString](IdentifierResponse.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new AmendmentLog**(`data?`): [`AmendmentLog`](AmendmentLog.md)
+• **new IdentifierResponse**(`data?`): [`IdentifierResponse`](IdentifierResponse.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`AmendmentLog`](AmendmentLog.md)\> |
+| `data?` | `PartialMessage`\<[`IdentifierResponse`](IdentifierResponse.md)\> |
 
 #### Returns
 
-[`AmendmentLog`](AmendmentLog.md)
+[`IdentifierResponse`](IdentifierResponse.md)
 
 #### Overrides
 
-Message\&lt;AmendmentLog\&gt;.constructor
+Message\&lt;IdentifierResponse\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3740
+src/base.scailo_pb.ts:2331
 
 ## Properties
 
-### comment
+### id
 
-• **comment**: `string` = `""`
+• **id**: `bigint` = `protoInt64.zero`
 
-Stores the comment
+ID of the resource
 
 **`Generated`**
 
-from field: string comment = 20;
+from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3738
+src/base.scailo_pb.ts:2322
 
 ___
 
-### entityUuid
+### uuid
 
-• **entityUuid**: `string` = `""`
+• **uuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
-
-**`Generated`**
-
-from field: string entity_uuid = 1;
-
-#### Defined in
-
-src/base.scailo_pb.ts:3710
-
-___
-
-### metadata
-
-• `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
-
-Stores the metada of this resource
+UUID of the resource
 
 **`Generated`**
 
-from field: Scailo.EmployeeMetadata metadata = 2;
+from field: string uuid = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3717
-
-___
-
-### refFor
-
-• **refFor**: [`AMENDMENT_LOG_REF_FOR`](../enums/AMENDMENT_LOG_REF_FOR.md) = `AMENDMENT_LOG_REF_FOR.AMENDMENT_LOG_REF_FOR_ANY_UNSPECIFIED`
-
-Stores the reference
-
-**`Generated`**
-
-from field: Scailo.AMENDMENT_LOG_REF_FOR ref_for = 10;
-
-#### Defined in
-
-src/base.scailo_pb.ts:3724
-
-___
-
-### refId
-
-• **refId**: `bigint` = `protoInt64.zero`
-
-Stores the ID of the reference
-
-**`Generated`**
-
-from field: uint64 ref_id = 11;
-
-#### Defined in
-
-src/base.scailo_pb.ts:3731
+src/base.scailo_pb.ts:2329
 
 ___
 
@@ -160,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3747
+src/base.scailo_pb.ts:2338
 
 ___
 
@@ -170,29 +119,29 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3745
+src/base.scailo_pb.ts:2336
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.AmendmentLog"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.IdentifierResponse"``
 
 #### Defined in
 
-src/base.scailo_pb.ts:3746
+src/base.scailo_pb.ts:2337
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`AmendmentLog`](AmendmentLog.md)
+▸ **clone**(): [`IdentifierResponse`](IdentifierResponse.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`AmendmentLog`](AmendmentLog.md)
+[`IdentifierResponse`](IdentifierResponse.md)
 
 #### Inherited from
 
@@ -215,7 +164,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`AmendmentLog`](AmendmentLog.md) \| `PlainMessage`\<[`AmendmentLog`](AmendmentLog.md)\> |
+| `other` | `undefined` \| ``null`` \| [`IdentifierResponse`](IdentifierResponse.md) \| `PlainMessage`\<[`IdentifierResponse`](IdentifierResponse.md)\> |
 
 #### Returns
 
@@ -320,7 +269,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`AmendmentLog`](AmendmentLog.md)\>
+▸ **getType**(): `MessageType`\<[`IdentifierResponse`](IdentifierResponse.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -328,7 +277,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`AmendmentLog`](AmendmentLog.md)\>
+`MessageType`\<[`IdentifierResponse`](IdentifierResponse.md)\>
 
 #### Inherited from
 
@@ -459,8 +408,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`AmendmentLog`](AmendmentLog.md) \| `PlainMessage`\<[`AmendmentLog`](AmendmentLog.md)\> |
-| `b` | `undefined` \| [`AmendmentLog`](AmendmentLog.md) \| `PlainMessage`\<[`AmendmentLog`](AmendmentLog.md)\> |
+| `a` | `undefined` \| [`IdentifierResponse`](IdentifierResponse.md) \| `PlainMessage`\<[`IdentifierResponse`](IdentifierResponse.md)\> |
+| `b` | `undefined` \| [`IdentifierResponse`](IdentifierResponse.md) \| `PlainMessage`\<[`IdentifierResponse`](IdentifierResponse.md)\> |
 
 #### Returns
 
@@ -468,13 +417,13 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3767
+src/base.scailo_pb.ts:2355
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`AmendmentLog`](AmendmentLog.md)
+▸ **fromBinary**(`bytes`, `options?`): [`IdentifierResponse`](IdentifierResponse.md)
 
 #### Parameters
 
@@ -485,17 +434,17 @@ ___
 
 #### Returns
 
-[`AmendmentLog`](AmendmentLog.md)
+[`IdentifierResponse`](IdentifierResponse.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3755
+src/base.scailo_pb.ts:2343
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`AmendmentLog`](AmendmentLog.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`IdentifierResponse`](IdentifierResponse.md)
 
 #### Parameters
 
@@ -506,17 +455,17 @@ ___
 
 #### Returns
 
-[`AmendmentLog`](AmendmentLog.md)
+[`IdentifierResponse`](IdentifierResponse.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3759
+src/base.scailo_pb.ts:2347
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`AmendmentLog`](AmendmentLog.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`IdentifierResponse`](IdentifierResponse.md)
 
 #### Parameters
 
@@ -527,8 +476,8 @@ ___
 
 #### Returns
 
-[`AmendmentLog`](AmendmentLog.md)
+[`IdentifierResponse`](IdentifierResponse.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3763
+src/base.scailo_pb.ts:2351

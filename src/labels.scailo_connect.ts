@@ -5,7 +5,7 @@
 
 import { Label, LabelPaginationResp, LabelsList, LabelsServiceCountReq, LabelsServiceCreateRequest, LabelsServiceFilterReq, LabelsServicePaginationReq, LabelsServiceSearchAllReq, LabelsServiceUpdateRequest } from "./labels.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { ActiveStatus, BooleanResponse, CountResponse, Empty, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountResponse, Empty, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 
 /**
  *
@@ -46,7 +46,7 @@ export const LabelsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const LabelsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

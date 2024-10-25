@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ActivitiesList, ActivitiesServiceActionCreateRequest, ActivitiesServiceActionUpdateRequest, ActivitiesServiceActionWithTimerCreateRequest, ActivitiesServiceActivityTagAssociationCreateRequest, ActivitiesServiceCountReq, ActivitiesServiceCreateRequest, ActivitiesServiceFilterReq, ActivitiesServiceImportOwnersRequest, ActivitiesServiceOwnerCreateRequest, ActivitiesServicePaginatedActionsResponse, ActivitiesServicePaginatedTimersResponse, ActivitiesServicePaginationReq, ActivitiesServicePaginationResponse, ActivitiesServiceSearchAllReq, ActivitiesServiceSupervisorCreateRequest, ActivitiesServiceTimerCreateRequest, ActivitiesServiceTimerEndRequest, ActivitiesServiceUpdateRequest, Activity, ActivityAction, ActivityActionHistoryRequest, ActivityActionsList, ActivityActionsSearchRequest, ActivityActionStatistics, ActivityOwner, ActivityOwnersList, ActivityStatistics, ActivitySupervisor, ActivitySupervisorsList, ActivityTagAssociation, ActivityTagAssociationsList, ActivityTimer, ActivityTimersList, ActivityTimersSearchRequest } from "./activities.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -112,7 +112,7 @@ export const ActivitiesService = {
     addAction: {
       name: "AddAction",
       I: ActivitiesServiceActionCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const ActivitiesService = {
     addActionWithTimer: {
       name: "AddActionWithTimer",
       I: ActivitiesServiceActionWithTimerCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const ActivitiesService = {
     modifyAction: {
       name: "ModifyAction",
       I: ActivitiesServiceActionUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const ActivitiesService = {
     deleteAction: {
       name: "DeleteAction",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,7 +156,7 @@ export const ActivitiesService = {
     reorderActions: {
       name: "ReorderActions",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -233,7 +233,7 @@ export const ActivitiesService = {
     addActivityTagAssociation: {
       name: "AddActivityTagAssociation",
       I: ActivitiesServiceActivityTagAssociationCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -244,7 +244,7 @@ export const ActivitiesService = {
     deleteActivityTagAssociation: {
       name: "DeleteActivityTagAssociation",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -277,7 +277,7 @@ export const ActivitiesService = {
     addOwner: {
       name: "AddOwner",
       I: ActivitiesServiceOwnerCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -288,7 +288,7 @@ export const ActivitiesService = {
     deleteOwner: {
       name: "DeleteOwner",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -321,7 +321,7 @@ export const ActivitiesService = {
     importOwnersFromTeam: {
       name: "ImportOwnersFromTeam",
       I: ActivitiesServiceImportOwnersRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -332,7 +332,7 @@ export const ActivitiesService = {
     importOwnersFromDepartment: {
       name: "ImportOwnersFromDepartment",
       I: ActivitiesServiceImportOwnersRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -343,7 +343,7 @@ export const ActivitiesService = {
     addSupervisor: {
       name: "AddSupervisor",
       I: ActivitiesServiceSupervisorCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -354,7 +354,7 @@ export const ActivitiesService = {
     deleteSupervisor: {
       name: "DeleteSupervisor",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -387,7 +387,7 @@ export const ActivitiesService = {
     addTimer: {
       name: "AddTimer",
       I: ActivitiesServiceTimerCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -398,7 +398,7 @@ export const ActivitiesService = {
     endTimer: {
       name: "EndTimer",
       I: ActivitiesServiceTimerEndRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ClientStream, ClientStreamClientSubscriber, ClientStreamClientSubscribersList, ClientStreamInternalSubscriber, ClientStreamInternalSubscribersList, ClientStreamMessage, ClientStreamMessageReceiptsList, ClientStreamMessagesList, ClientStreamMessagesSearchRequest, ClientStreamsList, ClientStreamsServiceClientSubscriberCreateRequest, ClientStreamsServiceCountReq, ClientStreamsServiceCreateRequest, ClientStreamsServiceFilterReq, ClientStreamsServiceImportInternalSubscribersRequest, ClientStreamsServiceInternalSubscriberCreateRequest, ClientStreamsServiceMessageCreateRequest, ClientStreamsServicePaginatedMessagesResponse, ClientStreamsServicePaginationReq, ClientStreamsServicePaginationResponse, ClientStreamsServiceSearchAllReq, ClientStreamsServiceUpdateRequest } from "./client_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -192,7 +192,7 @@ export const ClientStreamsService = {
     addInternalSubscriber: {
       name: "AddInternalSubscriber",
       I: ClientStreamsServiceInternalSubscriberCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -203,7 +203,7 @@ export const ClientStreamsService = {
     deleteInternalSubscriber: {
       name: "DeleteInternalSubscriber",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -236,7 +236,7 @@ export const ClientStreamsService = {
     importInternalSubscribersFromTeam: {
       name: "ImportInternalSubscribersFromTeam",
       I: ClientStreamsServiceImportInternalSubscribersRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -247,7 +247,7 @@ export const ClientStreamsService = {
     importInternalSubscribersFromDepartment: {
       name: "ImportInternalSubscribersFromDepartment",
       I: ClientStreamsServiceImportInternalSubscribersRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -258,7 +258,7 @@ export const ClientStreamsService = {
     addClientSubscriber: {
       name: "AddClientSubscriber",
       I: ClientStreamsServiceClientSubscriberCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -269,7 +269,7 @@ export const ClientStreamsService = {
     deleteClientSubscriber: {
       name: "DeleteClientSubscriber",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

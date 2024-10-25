@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Meeting, MeetingActionable, MeetingActionableHistoryRequest, MeetingActionablesList, MeetingActionablesSearchRequest, MeetingAssociate, MeetingAssociatesList, MeetingEmployee, MeetingEmployeesList, MeetingsList, MeetingsServiceActionableCreateRequest, MeetingsServiceActionableUpdateRequest, MeetingsServiceAssociateCreateRequest, MeetingsServiceCountReq, MeetingsServiceCreateRequest, MeetingsServiceEmployeeCreateRequest, MeetingsServiceFilterReq, MeetingsServiceImportEmployeesRequest, MeetingsServicePaginatedActionablesResponse, MeetingsServicePaginationReq, MeetingsServicePaginationResponse, MeetingsServiceSearchAllReq, MeetingsServiceSetRSVPRequest, MeetingsServiceUpdateRequest } from "./meetings.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const MeetingsService = {
     create: {
       name: "Create",
       I: MeetingsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -35,7 +35,7 @@ export const MeetingsService = {
     update: {
       name: "Update",
       I: MeetingsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const MeetingsService = {
     cancel: {
       name: "Cancel",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -57,7 +57,7 @@ export const MeetingsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -68,7 +68,7 @@ export const MeetingsService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -79,7 +79,7 @@ export const MeetingsService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -90,7 +90,7 @@ export const MeetingsService = {
     sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -101,7 +101,7 @@ export const MeetingsService = {
     requestRSVP: {
       name: "RequestRSVP",
       I: IdentifierWithEmailAttributes,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -112,7 +112,7 @@ export const MeetingsService = {
     sendActionables: {
       name: "SendActionables",
       I: IdentifierWithEmailAttributes,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -123,7 +123,7 @@ export const MeetingsService = {
     addActionable: {
       name: "AddActionable",
       I: MeetingsServiceActionableCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -134,7 +134,7 @@ export const MeetingsService = {
     modifyActionable: {
       name: "ModifyActionable",
       I: MeetingsServiceActionableUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -145,7 +145,7 @@ export const MeetingsService = {
     deleteActionable: {
       name: "DeleteActionable",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -156,7 +156,7 @@ export const MeetingsService = {
     reorderActionables: {
       name: "ReorderActionables",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -222,7 +222,7 @@ export const MeetingsService = {
     addEmployee: {
       name: "AddEmployee",
       I: MeetingsServiceEmployeeCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -233,7 +233,7 @@ export const MeetingsService = {
     deleteEmployee: {
       name: "DeleteEmployee",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -277,7 +277,7 @@ export const MeetingsService = {
     importFromTeam: {
       name: "ImportFromTeam",
       I: MeetingsServiceImportEmployeesRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -288,7 +288,7 @@ export const MeetingsService = {
     importFromDepartment: {
       name: "ImportFromDepartment",
       I: MeetingsServiceImportEmployeesRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -299,7 +299,7 @@ export const MeetingsService = {
     addAssociate: {
       name: "AddAssociate",
       I: MeetingsServiceAssociateCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -310,7 +310,7 @@ export const MeetingsService = {
     deleteAssociate: {
       name: "DeleteAssociate",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

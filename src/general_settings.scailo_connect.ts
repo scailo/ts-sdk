@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { GeneralSettings, GeneralSettingsUpdateRequest } from "./general_settings.scailo_pb.js";
-import { Empty, Identifier, ImageResponse, StandardFile } from "./base.scailo_pb.js";
+import { Empty, IdentifierResponse, ImageResponse, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const GeneralSettingsService = {
     updateSettings: {
       name: "UpdateSettings",
       I: GeneralSettingsUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -46,7 +46,7 @@ export const GeneralSettingsService = {
     updateOrganizationLogo: {
       name: "UpdateOrganizationLogo",
       I: StandardFile,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

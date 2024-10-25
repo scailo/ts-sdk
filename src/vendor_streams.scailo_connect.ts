@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { VendorStream, VendorStreamInternalSubscriber, VendorStreamInternalSubscribersList, VendorStreamMessage, VendorStreamMessageReceiptsList, VendorStreamMessagesList, VendorStreamMessagesSearchRequest, VendorStreamsList, VendorStreamsServiceCountReq, VendorStreamsServiceCreateRequest, VendorStreamsServiceFilterReq, VendorStreamsServiceImportInternalSubscribersRequest, VendorStreamsServiceInternalSubscriberCreateRequest, VendorStreamsServiceMessageCreateRequest, VendorStreamsServicePaginatedMessagesResponse, VendorStreamsServicePaginationReq, VendorStreamsServicePaginationResponse, VendorStreamsServiceSearchAllReq, VendorStreamsServiceUpdateRequest, VendorStreamsServiceVendorSubscriberCreateRequest, VendorStreamVendorSubscriber, VendorStreamVendorSubscribersList } from "./vendor_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -192,7 +192,7 @@ export const VendorStreamsService = {
     addInternalSubscriber: {
       name: "AddInternalSubscriber",
       I: VendorStreamsServiceInternalSubscriberCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -203,7 +203,7 @@ export const VendorStreamsService = {
     deleteInternalSubscriber: {
       name: "DeleteInternalSubscriber",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -236,7 +236,7 @@ export const VendorStreamsService = {
     importInternalSubscribersFromTeam: {
       name: "ImportInternalSubscribersFromTeam",
       I: VendorStreamsServiceImportInternalSubscribersRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -247,7 +247,7 @@ export const VendorStreamsService = {
     importInternalSubscribersFromDepartment: {
       name: "ImportInternalSubscribersFromDepartment",
       I: VendorStreamsServiceImportInternalSubscribersRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -258,7 +258,7 @@ export const VendorStreamsService = {
     addVendorSubscriber: {
       name: "AddVendorSubscriber",
       I: VendorStreamsServiceVendorSubscriberCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -269,7 +269,7 @@ export const VendorStreamsService = {
     deleteVendorSubscriber: {
       name: "DeleteVendorSubscriber",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

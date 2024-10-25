@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { OutwardJobFreeIssueMaterialReturn, OutwardJobFreeIssueMaterialReturnAncillaryParameters, OutwardJobFreeIssueMaterialReturnItem, OutwardJobFreeIssueMaterialReturnItemHistoryRequest, OutwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest, OutwardJobFreeIssueMaterialReturnItemsSearchRequest, OutwardJobsFreeIssueMaterialsReturnsItemsList, OutwardJobsFreeIssueMaterialsReturnsList, OutwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSourceRequest, OutwardJobsFreeIssueMaterialsReturnsServiceCountReq, OutwardJobsFreeIssueMaterialsReturnsServiceCreateRequest, OutwardJobsFreeIssueMaterialsReturnsServiceFilterReq, OutwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest, OutwardJobsFreeIssueMaterialsReturnsServiceItemUpdateRequest, OutwardJobsFreeIssueMaterialsReturnsServicePaginatedItemsResponse, OutwardJobsFreeIssueMaterialsReturnsServicePaginationReq, OutwardJobsFreeIssueMaterialsReturnsServicePaginationResponse, OutwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq, OutwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest } from "./outward_jobs_free_issue_materials_returns.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -25,7 +25,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     create: {
       name: "Create",
       I: OutwardJobsFreeIssueMaterialsReturnsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -36,7 +36,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     draft: {
       name: "Draft",
       I: OutwardJobsFreeIssueMaterialsReturnsServiceCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -47,7 +47,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: OutwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -58,7 +58,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -69,7 +69,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -80,7 +80,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -91,7 +91,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -102,7 +102,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     revisionUpdate: {
       name: "RevisionUpdate",
       I: OutwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -113,7 +113,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -124,7 +124,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -135,7 +135,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -146,7 +146,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -157,7 +157,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -168,7 +168,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -179,7 +179,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -190,7 +190,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -212,7 +212,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     addOutwardJobFreeIssueMaterialReturnItem: {
       name: "AddOutwardJobFreeIssueMaterialReturnItem",
       I: OutwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -223,7 +223,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     modifyOutwardJobFreeIssueMaterialReturnItem: {
       name: "ModifyOutwardJobFreeIssueMaterialReturnItem",
       I: OutwardJobsFreeIssueMaterialsReturnsServiceItemUpdateRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -234,7 +234,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     approveOutwardJobFreeIssueMaterialReturnItem: {
       name: "ApproveOutwardJobFreeIssueMaterialReturnItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -245,7 +245,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     deleteOutwardJobFreeIssueMaterialReturnItem: {
       name: "DeleteOutwardJobFreeIssueMaterialReturnItem",
       I: IdentifierWithUserComment,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**
@@ -256,7 +256,7 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
     reorderOutwardJobFreeIssueMaterialReturnItems: {
       name: "ReorderOutwardJobFreeIssueMaterialReturnItems",
       I: ReorderItemsRequest,
-      O: Identifier,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

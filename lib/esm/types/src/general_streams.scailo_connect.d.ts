@@ -1,5 +1,5 @@
 import { GeneralStream, GeneralStreamInternalSubscriber, GeneralStreamInternalSubscribersList, GeneralStreamMessage, GeneralStreamMessageReceiptsList, GeneralStreamMessagesList, GeneralStreamMessagesSearchRequest, GeneralStreamsList, GeneralStreamsServiceCountReq, GeneralStreamsServiceCreateRequest, GeneralStreamsServiceFilterReq, GeneralStreamsServiceImportInternalSubscribersRequest, GeneralStreamsServiceInternalSubscriberCreateRequest, GeneralStreamsServiceMessageCreateRequest, GeneralStreamsServicePaginatedMessagesResponse, GeneralStreamsServicePaginationReq, GeneralStreamsServicePaginationResponse, GeneralStreamsServiceSearchAllReq, GeneralStreamsServiceUpdateRequest } from "./general_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -186,7 +186,7 @@ export declare const GeneralStreamsService: {
         readonly addInternalSubscriber: {
             readonly name: "AddInternalSubscriber";
             readonly I: typeof GeneralStreamsServiceInternalSubscriberCreateRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -197,7 +197,7 @@ export declare const GeneralStreamsService: {
         readonly deleteInternalSubscriber: {
             readonly name: "DeleteInternalSubscriber";
             readonly I: typeof IdentifierWithUserComment;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -230,7 +230,7 @@ export declare const GeneralStreamsService: {
         readonly importInternalSubscribersFromTeam: {
             readonly name: "ImportInternalSubscribersFromTeam";
             readonly I: typeof GeneralStreamsServiceImportInternalSubscribersRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -241,7 +241,7 @@ export declare const GeneralStreamsService: {
         readonly importInternalSubscribersFromDepartment: {
             readonly name: "ImportInternalSubscribersFromDepartment";
             readonly I: typeof GeneralStreamsServiceImportInternalSubscribersRequest;
-            readonly O: typeof Identifier;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

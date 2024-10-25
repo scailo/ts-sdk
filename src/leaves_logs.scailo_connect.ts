@@ -12,7 +12,7 @@ import { CountResponse } from "./base.scailo_pb.js";
  * Describes the common methods applicable on each record
  *
  * Create and send for verification
- * rpc Create (LeavesLogsServiceCreateRequest) returns (Identifier);
+ * rpc Create (LeavesLogsServiceCreateRequest) returns (IdentifierResponse);
  *
  * @generated from service Scailo.LeavesLogsService
  */

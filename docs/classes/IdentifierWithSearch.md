@@ -67,7 +67,7 @@ Message\&lt;IdentifierWithSearch\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2373
+src/base.scailo_pb.ts:2423
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2364
+src/base.scailo_pb.ts:2414
 
 ___
 
@@ -99,7 +99,7 @@ from field: string search_key = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2371
+src/base.scailo_pb.ts:2421
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2380
+src/base.scailo_pb.ts:2430
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2378
+src/base.scailo_pb.ts:2428
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2379
+src/base.scailo_pb.ts:2429
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2397
+src/base.scailo_pb.ts:2447
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2385
+src/base.scailo_pb.ts:2435
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2389
+src/base.scailo_pb.ts:2439
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2393
+src/base.scailo_pb.ts:2443

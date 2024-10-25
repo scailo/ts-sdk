@@ -2309,6 +2309,56 @@ export class Identifier extends Message<Identifier> {
 
 /**
  *
+ * Describes the response that consists of the ID and the UUID of the record
+ *
+ * @generated from message Scailo.IdentifierResponse
+ */
+export class IdentifierResponse extends Message<IdentifierResponse> {
+  /**
+   * ID of the resource
+   *
+   * @generated from field: uint64 id = 1;
+   */
+  id = protoInt64.zero;
+
+  /**
+   * UUID of the resource
+   *
+   * @generated from field: string uuid = 10;
+   */
+  uuid = "";
+
+  constructor(data?: PartialMessage<IdentifierResponse>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.IdentifierResponse";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierResponse {
+    return new IdentifierResponse().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierResponse {
+    return new IdentifierResponse().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierResponse {
+    return new IdentifierResponse().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: IdentifierResponse | PlainMessage<IdentifierResponse> | undefined, b: IdentifierResponse | PlainMessage<IdentifierResponse> | undefined): boolean {
+    return proto3.util.equals(IdentifierResponse, a, b);
+  }
+}
+
+/**
+ *
  * Describes the standard identifier that can also be a zero
  *
  * @generated from message Scailo.IdentifierZeroable

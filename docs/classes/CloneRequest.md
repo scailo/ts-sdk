@@ -69,7 +69,7 @@ Message\&lt;CloneRequest\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3239
+src/base.scailo_pb.ts:3289
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: bool delete_existing = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3230
+src/base.scailo_pb.ts:3280
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 source_id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3216
+src/base.scailo_pb.ts:3266
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 target_id = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3223
+src/base.scailo_pb.ts:3273
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 4;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3237
+src/base.scailo_pb.ts:3287
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3246
+src/base.scailo_pb.ts:3296
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3244
+src/base.scailo_pb.ts:3294
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3245
+src/base.scailo_pb.ts:3295
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3265
+src/base.scailo_pb.ts:3315
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3253
+src/base.scailo_pb.ts:3303
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3257
+src/base.scailo_pb.ts:3307
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3261
+src/base.scailo_pb.ts:3311
