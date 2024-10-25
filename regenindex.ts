@@ -14,6 +14,9 @@ let indexStr = <string[]>[
     // `export { connectNode, connectWeb };`
 ];
 
+// Export all permissions here
+indexStr.push(`export * from "./permissions";`);
+
 filesList.forEach(f => {
     if (f.endsWith("_connect.ts") || f.endsWith("_pb.ts")) {
         indexStr.push(`export * from "./${srcFolder}/${f.split(".ts")[0]}";`);

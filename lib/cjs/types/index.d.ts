@@ -1,3 +1,4 @@
+export * from "./permissions";
 export * from "./src/absences.scailo_connect";
 export * from "./src/absences.scailo_pb";
 export * from "./src/actions_codes.scailo_connect";

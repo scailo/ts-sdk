@@ -2010,6 +2010,1305 @@
 - [OvertimesService](modules.md#overtimesservice)
 - [PayrollGroupsService](modules.md#payrollgroupsservice)
 - [PayrollParamsService](modules.md#payrollparamsservice)
+- [PermissionActivityCancel](modules.md#permissionactivitycancel)
+- [PermissionActivityCancelled](modules.md#permissionactivitycancelled)
+- [PermissionActivityComplete](modules.md#permissionactivitycomplete)
+- [PermissionActivityCompleted](modules.md#permissionactivitycompleted)
+- [PermissionActivityNew](modules.md#permissionactivitynew)
+- [PermissionActivityOpen](modules.md#permissionactivityopen)
+- [PermissionActivityReopen](modules.md#permissionactivityreopen)
+- [PermissionActivityUpdate](modules.md#permissionactivityupdate)
+- [PermissionAmendFamily](modules.md#permissionamendfamily)
+- [PermissionAmendProformaInvoice](modules.md#permissionamendproformainvoice)
+- [PermissionAmendPurchaseOrder](modules.md#permissionamendpurchaseorder)
+- [PermissionAmendSalesEnquiry](modules.md#permissionamendsalesenquiry)
+- [PermissionAmendSalesInvoice](modules.md#permissionamendsalesinvoice)
+- [PermissionAmendSalesOrder](modules.md#permissionamendsalesorder)
+- [PermissionAmendSalesQuotation](modules.md#permissionamendsalesquotation)
+- [PermissionAmendSupplyOffer](modules.md#permissionamendsupplyoffer)
+- [PermissionApproveAbsences](modules.md#permissionapproveabsences)
+- [PermissionApproveActionsCodes](modules.md#permissionapproveactionscodes)
+- [PermissionApproveActivitiesGroups](modules.md#permissionapproveactivitiesgroups)
+- [PermissionApproveActivitiesStatuses](modules.md#permissionapproveactivitiesstatuses)
+- [PermissionApproveActivitiesTags](modules.md#permissionapproveactivitiestags)
+- [PermissionApproveAnnouncements](modules.md#permissionapproveannouncements)
+- [PermissionApproveAttendanceAmendments](modules.md#permissionapproveattendanceamendments)
+- [PermissionApproveAttendances](modules.md#permissionapproveattendances)
+- [PermissionApproveBankAccounts](modules.md#permissionapprovebankaccounts)
+- [PermissionApproveClients](modules.md#permissionapproveclients)
+- [PermissionApproveContractorsPayments](modules.md#permissionapprovecontractorspayments)
+- [PermissionApproveCurrencies](modules.md#permissionapprovecurrencies)
+- [PermissionApproveGoal](modules.md#permissionapprovegoal)
+- [PermissionApproveHolidays](modules.md#permissionapproveholidays)
+- [PermissionApproveLeaveTypes](modules.md#permissionapproveleavetypes)
+- [PermissionApproveLeavesAdjustments](modules.md#permissionapproveleavesadjustments)
+- [PermissionApproveLeavesRequests](modules.md#permissionapproveleavesrequests)
+- [PermissionApproveLedgers](modules.md#permissionapproveledgers)
+- [PermissionApproveLocations](modules.md#permissionapprovelocations)
+- [PermissionApproveOnDuties](modules.md#permissionapproveonduties)
+- [PermissionApproveOvertime](modules.md#permissionapproveovertime)
+- [PermissionApprovePayrollParameters](modules.md#permissionapprovepayrollparameters)
+- [PermissionApprovePurchaseEnquiry](modules.md#permissionapprovepurchaseenquiry)
+- [PermissionApprovePurchasePayment](modules.md#permissionapprovepurchasepayment)
+- [PermissionApproveQCHubs](modules.md#permissionapproveqchubs)
+- [PermissionApproveQCParameters](modules.md#permissionapproveqcparameters)
+- [PermissionApproveQuotationRequest](modules.md#permissionapprovequotationrequest)
+- [PermissionApproveQuotationResponse](modules.md#permissionapprovequotationresponse)
+- [PermissionApproveSaleReceipt](modules.md#permissionapprovesalereceipt)
+- [PermissionApproveShiftGroups](modules.md#permissionapproveshiftgroups)
+- [PermissionApproveShifts](modules.md#permissionapproveshifts)
+- [PermissionApproveSkillParameters](modules.md#permissionapproveskillparameters)
+- [PermissionApproveStorages](modules.md#permissionapprovestorages)
+- [PermissionApproveStores](modules.md#permissionapprovestores)
+- [PermissionApproveSundries](modules.md#permissionapprovesundries)
+- [PermissionApproveTaxGroups](modules.md#permissionapprovetaxgroups)
+- [PermissionApproveTaxParameters](modules.md#permissionapprovetaxparameters)
+- [PermissionApproveUnitsOfMaterials](modules.md#permissionapproveunitsofmaterials)
+- [PermissionApproveVendors](modules.md#permissionapprovevendors)
+- [PermissionApproveVisitations](modules.md#permissionapprovevisitations)
+- [PermissionAssetIndentApprove](modules.md#permissionassetindentapprove)
+- [PermissionAssetIndentComplete](modules.md#permissionassetindentcomplete)
+- [PermissionAssetIndentCompleted](modules.md#permissionassetindentcompleted)
+- [PermissionAssetIndentDiscard](modules.md#permissionassetindentdiscard)
+- [PermissionAssetIndentDiscarded](modules.md#permissionassetindentdiscarded)
+- [PermissionAssetIndentDrafts](modules.md#permissionassetindentdrafts)
+- [PermissionAssetIndentHalt](modules.md#permissionassetindenthalt)
+- [PermissionAssetIndentHalted](modules.md#permissionassetindenthalted)
+- [PermissionAssetIndentNew](modules.md#permissionassetindentnew)
+- [PermissionAssetIndentRevise](modules.md#permissionassetindentrevise)
+- [PermissionAssetIndentStanding](modules.md#permissionassetindentstanding)
+- [PermissionAssetIndentVerify](modules.md#permissionassetindentverify)
+- [PermissionClientStreamCancel](modules.md#permissionclientstreamcancel)
+- [PermissionClientStreamCancelled](modules.md#permissionclientstreamcancelled)
+- [PermissionClientStreamComplete](modules.md#permissionclientstreamcomplete)
+- [PermissionClientStreamCompleted](modules.md#permissionclientstreamcompleted)
+- [PermissionClientStreamNew](modules.md#permissionclientstreamnew)
+- [PermissionClientStreamOpen](modules.md#permissionclientstreamopen)
+- [PermissionClientStreamReopen](modules.md#permissionclientstreamreopen)
+- [PermissionClientStreamUpdate](modules.md#permissionclientstreamupdate)
+- [PermissionCompletedAbsences](modules.md#permissioncompletedabsences)
+- [PermissionCompletedAnnouncements](modules.md#permissioncompletedannouncements)
+- [PermissionCompletedAttendanceAmendments](modules.md#permissioncompletedattendanceamendments)
+- [PermissionCompletedAttendances](modules.md#permissioncompletedattendances)
+- [PermissionCompletedContractorsPayments](modules.md#permissioncompletedcontractorspayments)
+- [PermissionCompletedGoal](modules.md#permissioncompletedgoal)
+- [PermissionCompletedHolidays](modules.md#permissioncompletedholidays)
+- [PermissionCompletedLeaveTypes](modules.md#permissioncompletedleavetypes)
+- [PermissionCompletedLeavesAdjustments](modules.md#permissioncompletedleavesadjustments)
+- [PermissionCompletedLeavesRequests](modules.md#permissioncompletedleavesrequests)
+- [PermissionCompletedOnDuties](modules.md#permissioncompletedonduties)
+- [PermissionCompletedOvertime](modules.md#permissioncompletedovertime)
+- [PermissionCompletedPayrollParameters](modules.md#permissioncompletedpayrollparameters)
+- [PermissionCompletedPurchaseEnquiry](modules.md#permissioncompletedpurchaseenquiry)
+- [PermissionCompletedPurchasePayment](modules.md#permissioncompletedpurchasepayment)
+- [PermissionCompletedQCParameters](modules.md#permissioncompletedqcparameters)
+- [PermissionCompletedQuotationRequest](modules.md#permissioncompletedquotationrequest)
+- [PermissionCompletedQuotationResponse](modules.md#permissioncompletedquotationresponse)
+- [PermissionCompletedSaleReceipt](modules.md#permissioncompletedsalereceipt)
+- [PermissionCompletedShiftGroups](modules.md#permissioncompletedshiftgroups)
+- [PermissionCompletedShifts](modules.md#permissioncompletedshifts)
+- [PermissionCompletedSkillParameters](modules.md#permissioncompletedskillparameters)
+- [PermissionCompletedSundries](modules.md#permissioncompletedsundries)
+- [PermissionCompletedVisitations](modules.md#permissioncompletedvisitations)
+- [PermissionComponentsAdd](modules.md#permissioncomponentsadd)
+- [PermissionComponentsApproveIQC](modules.md#permissioncomponentsapproveiqc)
+- [PermissionComponentsConsume](modules.md#permissioncomponentsconsume)
+- [PermissionComponentsConsumed](modules.md#permissioncomponentsconsumed)
+- [PermissionComponentsDiscard](modules.md#permissioncomponentsdiscard)
+- [PermissionComponentsDiscarded](modules.md#permissioncomponentsdiscarded)
+- [PermissionComponentsIQC](modules.md#permissioncomponentsiqc)
+- [PermissionComponentsIssued](modules.md#permissioncomponentsissued)
+- [PermissionComponentsReject](modules.md#permissioncomponentsreject)
+- [PermissionComponentsRejected](modules.md#permissioncomponentsrejected)
+- [PermissionComponentsReturnable](modules.md#permissioncomponentsreturnable)
+- [PermissionComponentsRework](modules.md#permissioncomponentsrework)
+- [PermissionComponentsScrap](modules.md#permissioncomponentsscrap)
+- [PermissionComponentsStore](modules.md#permissioncomponentsstore)
+- [PermissionComponentsView](modules.md#permissioncomponentsview)
+- [PermissionCreditNoteApprove](modules.md#permissioncreditnoteapprove)
+- [PermissionCreditNoteComplete](modules.md#permissioncreditnotecomplete)
+- [PermissionCreditNoteCompleted](modules.md#permissioncreditnotecompleted)
+- [PermissionCreditNoteDiscard](modules.md#permissioncreditnotediscard)
+- [PermissionCreditNoteDiscarded](modules.md#permissioncreditnotediscarded)
+- [PermissionCreditNoteDrafts](modules.md#permissioncreditnotedrafts)
+- [PermissionCreditNoteHalt](modules.md#permissioncreditnotehalt)
+- [PermissionCreditNoteHalted](modules.md#permissioncreditnotehalted)
+- [PermissionCreditNoteNew](modules.md#permissioncreditnotenew)
+- [PermissionCreditNoteRevise](modules.md#permissioncreditnoterevise)
+- [PermissionCreditNoteStanding](modules.md#permissioncreditnotestanding)
+- [PermissionCreditNoteVerify](modules.md#permissioncreditnoteverify)
+- [PermissionDebitNoteApprove](modules.md#permissiondebitnoteapprove)
+- [PermissionDebitNoteComplete](modules.md#permissiondebitnotecomplete)
+- [PermissionDebitNoteCompleted](modules.md#permissiondebitnotecompleted)
+- [PermissionDebitNoteDiscard](modules.md#permissiondebitnotediscard)
+- [PermissionDebitNoteDiscarded](modules.md#permissiondebitnotediscarded)
+- [PermissionDebitNoteDrafts](modules.md#permissiondebitnotedrafts)
+- [PermissionDebitNoteHalt](modules.md#permissiondebitnotehalt)
+- [PermissionDebitNoteHalted](modules.md#permissiondebitnotehalted)
+- [PermissionDebitNoteNew](modules.md#permissiondebitnotenew)
+- [PermissionDebitNoteRevise](modules.md#permissiondebitnoterevise)
+- [PermissionDebitNoteStanding](modules.md#permissiondebitnotestanding)
+- [PermissionDebitNoteVerify](modules.md#permissiondebitnoteverify)
+- [PermissionDepartmentApprove](modules.md#permissiondepartmentapprove)
+- [PermissionDepartmentComplete](modules.md#permissiondepartmentcomplete)
+- [PermissionDepartmentCompleted](modules.md#permissiondepartmentcompleted)
+- [PermissionDepartmentDiscard](modules.md#permissiondepartmentdiscard)
+- [PermissionDepartmentDiscarded](modules.md#permissiondepartmentdiscarded)
+- [PermissionDepartmentDrafts](modules.md#permissiondepartmentdrafts)
+- [PermissionDepartmentHalt](modules.md#permissiondepartmenthalt)
+- [PermissionDepartmentHalted](modules.md#permissiondepartmenthalted)
+- [PermissionDepartmentNew](modules.md#permissiondepartmentnew)
+- [PermissionDepartmentRevise](modules.md#permissiondepartmentrevise)
+- [PermissionDepartmentStanding](modules.md#permissiondepartmentstanding)
+- [PermissionDepartmentVerify](modules.md#permissiondepartmentverify)
+- [PermissionDescriptiveLogs](modules.md#permissiondescriptivelogs)
+- [PermissionDiscardAbsences](modules.md#permissiondiscardabsences)
+- [PermissionDiscardActionCode](modules.md#permissiondiscardactioncode)
+- [PermissionDiscardActionsCodes](modules.md#permissiondiscardactionscodes)
+- [PermissionDiscardActivitiesGroups](modules.md#permissiondiscardactivitiesgroups)
+- [PermissionDiscardActivitiesStatuses](modules.md#permissiondiscardactivitiesstatuses)
+- [PermissionDiscardActivitiesTags](modules.md#permissiondiscardactivitiestags)
+- [PermissionDiscardActivityGroup](modules.md#permissiondiscardactivitygroup)
+- [PermissionDiscardActivityStatus](modules.md#permissiondiscardactivitystatus)
+- [PermissionDiscardActivityTag](modules.md#permissiondiscardactivitytag)
+- [PermissionDiscardAnnouncements](modules.md#permissiondiscardannouncements)
+- [PermissionDiscardAssociate](modules.md#permissiondiscardassociate)
+- [PermissionDiscardAttendanceAmendments](modules.md#permissiondiscardattendanceamendments)
+- [PermissionDiscardAttendances](modules.md#permissiondiscardattendances)
+- [PermissionDiscardBankAccount](modules.md#permissiondiscardbankaccount)
+- [PermissionDiscardBankAccounts](modules.md#permissiondiscardbankaccounts)
+- [PermissionDiscardClient](modules.md#permissiondiscardclient)
+- [PermissionDiscardClients](modules.md#permissiondiscardclients)
+- [PermissionDiscardContractor](modules.md#permissiondiscardcontractor)
+- [PermissionDiscardContractorsPayments](modules.md#permissiondiscardcontractorspayments)
+- [PermissionDiscardCurrencies](modules.md#permissiondiscardcurrencies)
+- [PermissionDiscardCurrency](modules.md#permissiondiscardcurrency)
+- [PermissionDiscardFormFields](modules.md#permissiondiscardformfields)
+- [PermissionDiscardFormSections](modules.md#permissiondiscardformsections)
+- [PermissionDiscardHolidays](modules.md#permissiondiscardholidays)
+- [PermissionDiscardLabel](modules.md#permissiondiscardlabel)
+- [PermissionDiscardLeaveTypes](modules.md#permissiondiscardleavetypes)
+- [PermissionDiscardLeavesAdjustments](modules.md#permissiondiscardleavesadjustments)
+- [PermissionDiscardLeavesRequests](modules.md#permissiondiscardleavesrequests)
+- [PermissionDiscardLedger](modules.md#permissiondiscardledger)
+- [PermissionDiscardLedgers](modules.md#permissiondiscardledgers)
+- [PermissionDiscardLocation](modules.md#permissiondiscardlocation)
+- [PermissionDiscardLocations](modules.md#permissiondiscardlocations)
+- [PermissionDiscardOnDuties](modules.md#permissiondiscardonduties)
+- [PermissionDiscardOvertime](modules.md#permissiondiscardovertime)
+- [PermissionDiscardPayrollParameters](modules.md#permissiondiscardpayrollparameters)
+- [PermissionDiscardPurchasePayment](modules.md#permissiondiscardpurchasepayment)
+- [PermissionDiscardQCHub](modules.md#permissiondiscardqchub)
+- [PermissionDiscardQCHubs](modules.md#permissiondiscardqchubs)
+- [PermissionDiscardQCParameters](modules.md#permissiondiscardqcparameters)
+- [PermissionDiscardSaleReceipt](modules.md#permissiondiscardsalereceipt)
+- [PermissionDiscardShiftGroups](modules.md#permissiondiscardshiftgroups)
+- [PermissionDiscardShifts](modules.md#permissiondiscardshifts)
+- [PermissionDiscardSkillParameters](modules.md#permissiondiscardskillparameters)
+- [PermissionDiscardStorage](modules.md#permissiondiscardstorage)
+- [PermissionDiscardStorages](modules.md#permissiondiscardstorages)
+- [PermissionDiscardStore](modules.md#permissiondiscardstore)
+- [PermissionDiscardStores](modules.md#permissiondiscardstores)
+- [PermissionDiscardSundries](modules.md#permissiondiscardsundries)
+- [PermissionDiscardTaxGroup](modules.md#permissiondiscardtaxgroup)
+- [PermissionDiscardTaxGroups](modules.md#permissiondiscardtaxgroups)
+- [PermissionDiscardTaxParameter](modules.md#permissiondiscardtaxparameter)
+- [PermissionDiscardTaxParameters](modules.md#permissiondiscardtaxparameters)
+- [PermissionDiscardUnitOfMaterial](modules.md#permissiondiscardunitofmaterial)
+- [PermissionDiscardUnitsOfMaterials](modules.md#permissiondiscardunitsofmaterials)
+- [PermissionDiscardVendor](modules.md#permissiondiscardvendor)
+- [PermissionDiscardVendors](modules.md#permissiondiscardvendors)
+- [PermissionDiscardVisitations](modules.md#permissiondiscardvisitations)
+- [PermissionDraftAbsences](modules.md#permissiondraftabsences)
+- [PermissionDraftActionsCodes](modules.md#permissiondraftactionscodes)
+- [PermissionDraftActivitiesGroups](modules.md#permissiondraftactivitiesgroups)
+- [PermissionDraftActivitiesStatuses](modules.md#permissiondraftactivitiesstatuses)
+- [PermissionDraftActivitiesTags](modules.md#permissiondraftactivitiestags)
+- [PermissionDraftAnnouncements](modules.md#permissiondraftannouncements)
+- [PermissionDraftAttendanceAmendments](modules.md#permissiondraftattendanceamendments)
+- [PermissionDraftAttendances](modules.md#permissiondraftattendances)
+- [PermissionDraftBankAccounts](modules.md#permissiondraftbankaccounts)
+- [PermissionDraftClients](modules.md#permissiondraftclients)
+- [PermissionDraftContractorsPayments](modules.md#permissiondraftcontractorspayments)
+- [PermissionDraftCurrencies](modules.md#permissiondraftcurrencies)
+- [PermissionDraftGoal](modules.md#permissiondraftgoal)
+- [PermissionDraftHolidays](modules.md#permissiondraftholidays)
+- [PermissionDraftLeaveTypes](modules.md#permissiondraftleavetypes)
+- [PermissionDraftLeavesAdjustments](modules.md#permissiondraftleavesadjustments)
+- [PermissionDraftLeavesRequests](modules.md#permissiondraftleavesrequests)
+- [PermissionDraftLedgers](modules.md#permissiondraftledgers)
+- [PermissionDraftLocations](modules.md#permissiondraftlocations)
+- [PermissionDraftOnDuties](modules.md#permissiondraftonduties)
+- [PermissionDraftOvertime](modules.md#permissiondraftovertime)
+- [PermissionDraftPayrollParameters](modules.md#permissiondraftpayrollparameters)
+- [PermissionDraftPurchaseEnquiry](modules.md#permissiondraftpurchaseenquiry)
+- [PermissionDraftPurchasePayment](modules.md#permissiondraftpurchasepayment)
+- [PermissionDraftQCHubs](modules.md#permissiondraftqchubs)
+- [PermissionDraftQCParameters](modules.md#permissiondraftqcparameters)
+- [PermissionDraftQuotationRequest](modules.md#permissiondraftquotationrequest)
+- [PermissionDraftQuotationResponse](modules.md#permissiondraftquotationresponse)
+- [PermissionDraftSaleReceipt](modules.md#permissiondraftsalereceipt)
+- [PermissionDraftShiftGroups](modules.md#permissiondraftshiftgroups)
+- [PermissionDraftShifts](modules.md#permissiondraftshifts)
+- [PermissionDraftSkillParameters](modules.md#permissiondraftskillparameters)
+- [PermissionDraftStorages](modules.md#permissiondraftstorages)
+- [PermissionDraftStores](modules.md#permissiondraftstores)
+- [PermissionDraftSundries](modules.md#permissiondraftsundries)
+- [PermissionDraftTaxGroups](modules.md#permissiondrafttaxgroups)
+- [PermissionDraftTaxParameters](modules.md#permissiondrafttaxparameters)
+- [PermissionDraftUnitsOfMaterials](modules.md#permissiondraftunitsofmaterials)
+- [PermissionDraftVendors](modules.md#permissiondraftvendors)
+- [PermissionDraftVisitations](modules.md#permissiondraftvisitations)
+- [PermissionEquationFamilyApprove](modules.md#permissionequationfamilyapprove)
+- [PermissionEquationFamilyComplete](modules.md#permissionequationfamilycomplete)
+- [PermissionEquationFamilyCompleted](modules.md#permissionequationfamilycompleted)
+- [PermissionEquationFamilyDiscard](modules.md#permissionequationfamilydiscard)
+- [PermissionEquationFamilyDiscarded](modules.md#permissionequationfamilydiscarded)
+- [PermissionEquationFamilyDrafts](modules.md#permissionequationfamilydrafts)
+- [PermissionEquationFamilyHalt](modules.md#permissionequationfamilyhalt)
+- [PermissionEquationFamilyHalted](modules.md#permissionequationfamilyhalted)
+- [PermissionEquationFamilyNew](modules.md#permissionequationfamilynew)
+- [PermissionEquationFamilyRevise](modules.md#permissionequationfamilyrevise)
+- [PermissionEquationFamilyStanding](modules.md#permissionequationfamilystanding)
+- [PermissionEquationFamilyVerify](modules.md#permissionequationfamilyverify)
+- [PermissionEquationReplaceableApprove](modules.md#permissionequationreplaceableapprove)
+- [PermissionEquationReplaceableComplete](modules.md#permissionequationreplaceablecomplete)
+- [PermissionEquationReplaceableCompleted](modules.md#permissionequationreplaceablecompleted)
+- [PermissionEquationReplaceableDiscard](modules.md#permissionequationreplaceablediscard)
+- [PermissionEquationReplaceableDiscarded](modules.md#permissionequationreplaceablediscarded)
+- [PermissionEquationReplaceableDrafts](modules.md#permissionequationreplaceabledrafts)
+- [PermissionEquationReplaceableHalt](modules.md#permissionequationreplaceablehalt)
+- [PermissionEquationReplaceableHalted](modules.md#permissionequationreplaceablehalted)
+- [PermissionEquationReplaceableNew](modules.md#permissionequationreplaceablenew)
+- [PermissionEquationReplaceableRevise](modules.md#permissionequationreplaceablerevise)
+- [PermissionEquationReplaceableStanding](modules.md#permissionequationreplaceablestanding)
+- [PermissionEquationReplaceableVerify](modules.md#permissionequationreplaceableverify)
+- [PermissionEquationSalesBundleApprove](modules.md#permissionequationsalesbundleapprove)
+- [PermissionEquationSalesBundleComplete](modules.md#permissionequationsalesbundlecomplete)
+- [PermissionEquationSalesBundleCompleted](modules.md#permissionequationsalesbundlecompleted)
+- [PermissionEquationSalesBundleDiscard](modules.md#permissionequationsalesbundlediscard)
+- [PermissionEquationSalesBundleDiscarded](modules.md#permissionequationsalesbundlediscarded)
+- [PermissionEquationSalesBundleDrafts](modules.md#permissionequationsalesbundledrafts)
+- [PermissionEquationSalesBundleHalt](modules.md#permissionequationsalesbundlehalt)
+- [PermissionEquationSalesBundleHalted](modules.md#permissionequationsalesbundlehalted)
+- [PermissionEquationSalesBundleNew](modules.md#permissionequationsalesbundlenew)
+- [PermissionEquationSalesBundleRevise](modules.md#permissionequationsalesbundlerevise)
+- [PermissionEquationSalesBundleStanding](modules.md#permissionequationsalesbundlestanding)
+- [PermissionEquationSalesBundleVerify](modules.md#permissionequationsalesbundleverify)
+- [PermissionEquationWorkOrderApprove](modules.md#permissionequationworkorderapprove)
+- [PermissionEquationWorkOrderComplete](modules.md#permissionequationworkordercomplete)
+- [PermissionEquationWorkOrderCompleted](modules.md#permissionequationworkordercompleted)
+- [PermissionEquationWorkOrderDiscard](modules.md#permissionequationworkorderdiscard)
+- [PermissionEquationWorkOrderDiscarded](modules.md#permissionequationworkorderdiscarded)
+- [PermissionEquationWorkOrderDrafts](modules.md#permissionequationworkorderdrafts)
+- [PermissionEquationWorkOrderHalt](modules.md#permissionequationworkorderhalt)
+- [PermissionEquationWorkOrderHalted](modules.md#permissionequationworkorderhalted)
+- [PermissionEquationWorkOrderNew](modules.md#permissionequationworkordernew)
+- [PermissionEquationWorkOrderRevise](modules.md#permissionequationworkorderrevise)
+- [PermissionEquationWorkOrderStanding](modules.md#permissionequationworkorderstanding)
+- [PermissionEquationWorkOrderVerify](modules.md#permissionequationworkorderverify)
+- [PermissionEquipmentAdd](modules.md#permissionequipmentadd)
+- [PermissionEquipmentApproveIQC](modules.md#permissionequipmentapproveiqc)
+- [PermissionEquipmentConsume](modules.md#permissionequipmentconsume)
+- [PermissionEquipmentConsumed](modules.md#permissionequipmentconsumed)
+- [PermissionEquipmentDiscard](modules.md#permissionequipmentdiscard)
+- [PermissionEquipmentDiscarded](modules.md#permissionequipmentdiscarded)
+- [PermissionEquipmentIQC](modules.md#permissionequipmentiqc)
+- [PermissionEquipmentIssued](modules.md#permissionequipmentissued)
+- [PermissionEquipmentReject](modules.md#permissionequipmentreject)
+- [PermissionEquipmentRejected](modules.md#permissionequipmentrejected)
+- [PermissionEquipmentReturnable](modules.md#permissionequipmentreturnable)
+- [PermissionEquipmentRework](modules.md#permissionequipmentrework)
+- [PermissionEquipmentScrap](modules.md#permissionequipmentscrap)
+- [PermissionEquipmentStore](modules.md#permissionequipmentstore)
+- [PermissionEquipmentView](modules.md#permissionequipmentview)
+- [PermissionExpenseApprove](modules.md#permissionexpenseapprove)
+- [PermissionExpenseComplete](modules.md#permissionexpensecomplete)
+- [PermissionExpenseCompleted](modules.md#permissionexpensecompleted)
+- [PermissionExpenseDiscard](modules.md#permissionexpensediscard)
+- [PermissionExpenseDiscarded](modules.md#permissionexpensediscarded)
+- [PermissionExpenseDrafts](modules.md#permissionexpensedrafts)
+- [PermissionExpenseHalt](modules.md#permissionexpensehalt)
+- [PermissionExpenseHalted](modules.md#permissionexpensehalted)
+- [PermissionExpenseNew](modules.md#permissionexpensenew)
+- [PermissionExpenseRevise](modules.md#permissionexpenserevise)
+- [PermissionExpenseStanding](modules.md#permissionexpensestanding)
+- [PermissionExpenseVerify](modules.md#permissionexpenseverify)
+- [PermissionFamilyApprove](modules.md#permissionfamilyapprove)
+- [PermissionFamilyComplete](modules.md#permissionfamilycomplete)
+- [PermissionFamilyDiscard](modules.md#permissionfamilydiscard)
+- [PermissionFamilyDiscarded](modules.md#permissionfamilydiscarded)
+- [PermissionFamilyDrafts](modules.md#permissionfamilydrafts)
+- [PermissionFamilyHalt](modules.md#permissionfamilyhalt)
+- [PermissionFamilyHalted](modules.md#permissionfamilyhalted)
+- [PermissionFamilyNew](modules.md#permissionfamilynew)
+- [PermissionFamilyRevise](modules.md#permissionfamilyrevise)
+- [PermissionFamilyStanding](modules.md#permissionfamilystanding)
+- [PermissionFamilyVerify](modules.md#permissionfamilyverify)
+- [PermissionFeedstockAdd](modules.md#permissionfeedstockadd)
+- [PermissionFeedstockApproveIQC](modules.md#permissionfeedstockapproveiqc)
+- [PermissionFeedstockConsume](modules.md#permissionfeedstockconsume)
+- [PermissionFeedstockConsumed](modules.md#permissionfeedstockconsumed)
+- [PermissionFeedstockDiscard](modules.md#permissionfeedstockdiscard)
+- [PermissionFeedstockDiscarded](modules.md#permissionfeedstockdiscarded)
+- [PermissionFeedstockIQC](modules.md#permissionfeedstockiqc)
+- [PermissionFeedstockIssued](modules.md#permissionfeedstockissued)
+- [PermissionFeedstockReject](modules.md#permissionfeedstockreject)
+- [PermissionFeedstockRejected](modules.md#permissionfeedstockrejected)
+- [PermissionFeedstockReturnable](modules.md#permissionfeedstockreturnable)
+- [PermissionFeedstockRework](modules.md#permissionfeedstockrework)
+- [PermissionFeedstockScrap](modules.md#permissionfeedstockscrap)
+- [PermissionFeedstockStore](modules.md#permissionfeedstockstore)
+- [PermissionFeedstockView](modules.md#permissionfeedstockview)
+- [PermissionGeneralStreamCancel](modules.md#permissiongeneralstreamcancel)
+- [PermissionGeneralStreamCancelled](modules.md#permissiongeneralstreamcancelled)
+- [PermissionGeneralStreamComplete](modules.md#permissiongeneralstreamcomplete)
+- [PermissionGeneralStreamCompleted](modules.md#permissiongeneralstreamcompleted)
+- [PermissionGeneralStreamNew](modules.md#permissiongeneralstreamnew)
+- [PermissionGeneralStreamOpen](modules.md#permissiongeneralstreamopen)
+- [PermissionGeneralStreamReopen](modules.md#permissiongeneralstreamreopen)
+- [PermissionGeneralStreamUpdate](modules.md#permissiongeneralstreamupdate)
+- [PermissionGoalDiscard](modules.md#permissiongoaldiscard)
+- [PermissionGoalDiscarded](modules.md#permissiongoaldiscarded)
+- [PermissionGoodsDispatchApprove](modules.md#permissiongoodsdispatchapprove)
+- [PermissionGoodsDispatchComplete](modules.md#permissiongoodsdispatchcomplete)
+- [PermissionGoodsDispatchCompleted](modules.md#permissiongoodsdispatchcompleted)
+- [PermissionGoodsDispatchDiscard](modules.md#permissiongoodsdispatchdiscard)
+- [PermissionGoodsDispatchDiscarded](modules.md#permissiongoodsdispatchdiscarded)
+- [PermissionGoodsDispatchDrafts](modules.md#permissiongoodsdispatchdrafts)
+- [PermissionGoodsDispatchHalt](modules.md#permissiongoodsdispatchhalt)
+- [PermissionGoodsDispatchHalted](modules.md#permissiongoodsdispatchhalted)
+- [PermissionGoodsDispatchNew](modules.md#permissiongoodsdispatchnew)
+- [PermissionGoodsDispatchRevise](modules.md#permissiongoodsdispatchrevise)
+- [PermissionGoodsDispatchStanding](modules.md#permissiongoodsdispatchstanding)
+- [PermissionGoodsDispatchVerify](modules.md#permissiongoodsdispatchverify)
+- [PermissionGoodsReceiptApprove](modules.md#permissiongoodsreceiptapprove)
+- [PermissionGoodsReceiptComplete](modules.md#permissiongoodsreceiptcomplete)
+- [PermissionGoodsReceiptCompleted](modules.md#permissiongoodsreceiptcompleted)
+- [PermissionGoodsReceiptDiscard](modules.md#permissiongoodsreceiptdiscard)
+- [PermissionGoodsReceiptDiscarded](modules.md#permissiongoodsreceiptdiscarded)
+- [PermissionGoodsReceiptDrafts](modules.md#permissiongoodsreceiptdrafts)
+- [PermissionGoodsReceiptHalt](modules.md#permissiongoodsreceipthalt)
+- [PermissionGoodsReceiptHalted](modules.md#permissiongoodsreceipthalted)
+- [PermissionGoodsReceiptNew](modules.md#permissiongoodsreceiptnew)
+- [PermissionGoodsReceiptRevise](modules.md#permissiongoodsreceiptrevise)
+- [PermissionGoodsReceiptStanding](modules.md#permissiongoodsreceiptstanding)
+- [PermissionGoodsReceiptVerify](modules.md#permissiongoodsreceiptverify)
+- [PermissionHaltAbsence](modules.md#permissionhaltabsence)
+- [PermissionHaltActionCode](modules.md#permissionhaltactioncode)
+- [PermissionHaltActivityGroup](modules.md#permissionhaltactivitygroup)
+- [PermissionHaltActivityStatus](modules.md#permissionhaltactivitystatus)
+- [PermissionHaltActivityTag](modules.md#permissionhaltactivitytag)
+- [PermissionHaltAnnouncement](modules.md#permissionhaltannouncement)
+- [PermissionHaltAttendance](modules.md#permissionhaltattendance)
+- [PermissionHaltAttendanceAmendment](modules.md#permissionhaltattendanceamendment)
+- [PermissionHaltBankAccount](modules.md#permissionhaltbankaccount)
+- [PermissionHaltClient](modules.md#permissionhaltclient)
+- [PermissionHaltContractorPayment](modules.md#permissionhaltcontractorpayment)
+- [PermissionHaltCurrency](modules.md#permissionhaltcurrency)
+- [PermissionHaltGoal](modules.md#permissionhaltgoal)
+- [PermissionHaltHoliday](modules.md#permissionhaltholiday)
+- [PermissionHaltLeaveAdjustment](modules.md#permissionhaltleaveadjustment)
+- [PermissionHaltLeaveRequest](modules.md#permissionhaltleaverequest)
+- [PermissionHaltLeaveType](modules.md#permissionhaltleavetype)
+- [PermissionHaltLedger](modules.md#permissionhaltledger)
+- [PermissionHaltLocation](modules.md#permissionhaltlocation)
+- [PermissionHaltOnDuty](modules.md#permissionhaltonduty)
+- [PermissionHaltOvertime](modules.md#permissionhaltovertime)
+- [PermissionHaltPayrollParameter](modules.md#permissionhaltpayrollparameter)
+- [PermissionHaltPurchaseEnquiry](modules.md#permissionhaltpurchaseenquiry)
+- [PermissionHaltPurchasePayment](modules.md#permissionhaltpurchasepayment)
+- [PermissionHaltQCHub](modules.md#permissionhaltqchub)
+- [PermissionHaltQCParameter](modules.md#permissionhaltqcparameter)
+- [PermissionHaltQuotationRequest](modules.md#permissionhaltquotationrequest)
+- [PermissionHaltQuotationResponse](modules.md#permissionhaltquotationresponse)
+- [PermissionHaltSaleReceipt](modules.md#permissionhaltsalereceipt)
+- [PermissionHaltShift](modules.md#permissionhaltshift)
+- [PermissionHaltShiftGroup](modules.md#permissionhaltshiftgroup)
+- [PermissionHaltSkillParameter](modules.md#permissionhaltskillparameter)
+- [PermissionHaltStorage](modules.md#permissionhaltstorage)
+- [PermissionHaltStore](modules.md#permissionhaltstore)
+- [PermissionHaltSundry](modules.md#permissionhaltsundry)
+- [PermissionHaltTaxGroup](modules.md#permissionhalttaxgroup)
+- [PermissionHaltTaxParameter](modules.md#permissionhalttaxparameter)
+- [PermissionHaltUnitOfMaterial](modules.md#permissionhaltunitofmaterial)
+- [PermissionHaltVendor](modules.md#permissionhaltvendor)
+- [PermissionHaltVisitation](modules.md#permissionhaltvisitation)
+- [PermissionHaltedAbsences](modules.md#permissionhaltedabsences)
+- [PermissionHaltedActionsCodes](modules.md#permissionhaltedactionscodes)
+- [PermissionHaltedActivitiesGroups](modules.md#permissionhaltedactivitiesgroups)
+- [PermissionHaltedActivitiesStatuses](modules.md#permissionhaltedactivitiesstatuses)
+- [PermissionHaltedActivitiesTags](modules.md#permissionhaltedactivitiestags)
+- [PermissionHaltedAnnouncements](modules.md#permissionhaltedannouncements)
+- [PermissionHaltedAttendanceAmendments](modules.md#permissionhaltedattendanceamendments)
+- [PermissionHaltedAttendances](modules.md#permissionhaltedattendances)
+- [PermissionHaltedBankAccounts](modules.md#permissionhaltedbankaccounts)
+- [PermissionHaltedClients](modules.md#permissionhaltedclients)
+- [PermissionHaltedContractorsPayments](modules.md#permissionhaltedcontractorspayments)
+- [PermissionHaltedCurrencies](modules.md#permissionhaltedcurrencies)
+- [PermissionHaltedGoal](modules.md#permissionhaltedgoal)
+- [PermissionHaltedHolidays](modules.md#permissionhaltedholidays)
+- [PermissionHaltedLeaveTypes](modules.md#permissionhaltedleavetypes)
+- [PermissionHaltedLeavesAdjustments](modules.md#permissionhaltedleavesadjustments)
+- [PermissionHaltedLeavesRequests](modules.md#permissionhaltedleavesrequests)
+- [PermissionHaltedLedgers](modules.md#permissionhaltedledgers)
+- [PermissionHaltedLocations](modules.md#permissionhaltedlocations)
+- [PermissionHaltedOnDuties](modules.md#permissionhaltedonduties)
+- [PermissionHaltedOvertime](modules.md#permissionhaltedovertime)
+- [PermissionHaltedPayrollParameters](modules.md#permissionhaltedpayrollparameters)
+- [PermissionHaltedPurchaseEnquiry](modules.md#permissionhaltedpurchaseenquiry)
+- [PermissionHaltedPurchasePayment](modules.md#permissionhaltedpurchasepayment)
+- [PermissionHaltedQCHubs](modules.md#permissionhaltedqchubs)
+- [PermissionHaltedQCParameters](modules.md#permissionhaltedqcparameters)
+- [PermissionHaltedQuotationRequest](modules.md#permissionhaltedquotationrequest)
+- [PermissionHaltedQuotationResponse](modules.md#permissionhaltedquotationresponse)
+- [PermissionHaltedSaleReceipt](modules.md#permissionhaltedsalereceipt)
+- [PermissionHaltedShiftGroups](modules.md#permissionhaltedshiftgroups)
+- [PermissionHaltedShifts](modules.md#permissionhaltedshifts)
+- [PermissionHaltedSkillParameters](modules.md#permissionhaltedskillparameters)
+- [PermissionHaltedStorages](modules.md#permissionhaltedstorages)
+- [PermissionHaltedStores](modules.md#permissionhaltedstores)
+- [PermissionHaltedSundries](modules.md#permissionhaltedsundries)
+- [PermissionHaltedTaxGroups](modules.md#permissionhaltedtaxgroups)
+- [PermissionHaltedTaxParameters](modules.md#permissionhaltedtaxparameters)
+- [PermissionHaltedUnitsOfMaterials](modules.md#permissionhaltedunitsofmaterials)
+- [PermissionHaltedVendors](modules.md#permissionhaltedvendors)
+- [PermissionHaltedVisitations](modules.md#permissionhaltedvisitations)
+- [PermissionInfrastructureAdd](modules.md#permissioninfrastructureadd)
+- [PermissionInfrastructureApproveIQC](modules.md#permissioninfrastructureapproveiqc)
+- [PermissionInfrastructureConsume](modules.md#permissioninfrastructureconsume)
+- [PermissionInfrastructureConsumed](modules.md#permissioninfrastructureconsumed)
+- [PermissionInfrastructureDiscard](modules.md#permissioninfrastructurediscard)
+- [PermissionInfrastructureDiscarded](modules.md#permissioninfrastructurediscarded)
+- [PermissionInfrastructureIQC](modules.md#permissioninfrastructureiqc)
+- [PermissionInfrastructureIssued](modules.md#permissioninfrastructureissued)
+- [PermissionInfrastructureReject](modules.md#permissioninfrastructurereject)
+- [PermissionInfrastructureRejected](modules.md#permissioninfrastructurerejected)
+- [PermissionInfrastructureReturnable](modules.md#permissioninfrastructurereturnable)
+- [PermissionInfrastructureRework](modules.md#permissioninfrastructurerework)
+- [PermissionInfrastructureScrap](modules.md#permissioninfrastructurescrap)
+- [PermissionInfrastructureStore](modules.md#permissioninfrastructurestore)
+- [PermissionInfrastructureView](modules.md#permissioninfrastructureview)
+- [PermissionInwardJobApprove](modules.md#permissioninwardjobapprove)
+- [PermissionInwardJobComplete](modules.md#permissioninwardjobcomplete)
+- [PermissionInwardJobCompleted](modules.md#permissioninwardjobcompleted)
+- [PermissionInwardJobDiscard](modules.md#permissioninwardjobdiscard)
+- [PermissionInwardJobDiscarded](modules.md#permissioninwardjobdiscarded)
+- [PermissionInwardJobDrafts](modules.md#permissioninwardjobdrafts)
+- [PermissionInwardJobFreeIssueMaterialApprove](modules.md#permissioninwardjobfreeissuematerialapprove)
+- [PermissionInwardJobFreeIssueMaterialComplete](modules.md#permissioninwardjobfreeissuematerialcomplete)
+- [PermissionInwardJobFreeIssueMaterialCompleted](modules.md#permissioninwardjobfreeissuematerialcompleted)
+- [PermissionInwardJobFreeIssueMaterialDiscard](modules.md#permissioninwardjobfreeissuematerialdiscard)
+- [PermissionInwardJobFreeIssueMaterialDiscarded](modules.md#permissioninwardjobfreeissuematerialdiscarded)
+- [PermissionInwardJobFreeIssueMaterialDrafts](modules.md#permissioninwardjobfreeissuematerialdrafts)
+- [PermissionInwardJobFreeIssueMaterialHalt](modules.md#permissioninwardjobfreeissuematerialhalt)
+- [PermissionInwardJobFreeIssueMaterialHalted](modules.md#permissioninwardjobfreeissuematerialhalted)
+- [PermissionInwardJobFreeIssueMaterialNew](modules.md#permissioninwardjobfreeissuematerialnew)
+- [PermissionInwardJobFreeIssueMaterialReturnApprove](modules.md#permissioninwardjobfreeissuematerialreturnapprove)
+- [PermissionInwardJobFreeIssueMaterialReturnComplete](modules.md#permissioninwardjobfreeissuematerialreturncomplete)
+- [PermissionInwardJobFreeIssueMaterialReturnCompleted](modules.md#permissioninwardjobfreeissuematerialreturncompleted)
+- [PermissionInwardJobFreeIssueMaterialReturnDiscard](modules.md#permissioninwardjobfreeissuematerialreturndiscard)
+- [PermissionInwardJobFreeIssueMaterialReturnDiscarded](modules.md#permissioninwardjobfreeissuematerialreturndiscarded)
+- [PermissionInwardJobFreeIssueMaterialReturnDrafts](modules.md#permissioninwardjobfreeissuematerialreturndrafts)
+- [PermissionInwardJobFreeIssueMaterialReturnHalt](modules.md#permissioninwardjobfreeissuematerialreturnhalt)
+- [PermissionInwardJobFreeIssueMaterialReturnHalted](modules.md#permissioninwardjobfreeissuematerialreturnhalted)
+- [PermissionInwardJobFreeIssueMaterialReturnNew](modules.md#permissioninwardjobfreeissuematerialreturnnew)
+- [PermissionInwardJobFreeIssueMaterialReturnRevise](modules.md#permissioninwardjobfreeissuematerialreturnrevise)
+- [PermissionInwardJobFreeIssueMaterialReturnStanding](modules.md#permissioninwardjobfreeissuematerialreturnstanding)
+- [PermissionInwardJobFreeIssueMaterialReturnVerify](modules.md#permissioninwardjobfreeissuematerialreturnverify)
+- [PermissionInwardJobFreeIssueMaterialRevise](modules.md#permissioninwardjobfreeissuematerialrevise)
+- [PermissionInwardJobFreeIssueMaterialStanding](modules.md#permissioninwardjobfreeissuematerialstanding)
+- [PermissionInwardJobFreeIssueMaterialVerify](modules.md#permissioninwardjobfreeissuematerialverify)
+- [PermissionInwardJobHalt](modules.md#permissioninwardjobhalt)
+- [PermissionInwardJobHalted](modules.md#permissioninwardjobhalted)
+- [PermissionInwardJobNew](modules.md#permissioninwardjobnew)
+- [PermissionInwardJobRevise](modules.md#permissioninwardjobrevise)
+- [PermissionInwardJobStanding](modules.md#permissioninwardjobstanding)
+- [PermissionInwardJobVerify](modules.md#permissioninwardjobverify)
+- [PermissionMarkAbsenceasCompleted](modules.md#permissionmarkabsenceascompleted)
+- [PermissionMarkAnnouncementasCompleted](modules.md#permissionmarkannouncementascompleted)
+- [PermissionMarkAttendanceAmendmentasCompleted](modules.md#permissionmarkattendanceamendmentascompleted)
+- [PermissionMarkAttendanceasCompleted](modules.md#permissionmarkattendanceascompleted)
+- [PermissionMarkContractorPaymentasCompleted](modules.md#permissionmarkcontractorpaymentascompleted)
+- [PermissionMarkGoalasCompleted](modules.md#permissionmarkgoalascompleted)
+- [PermissionMarkHolidayasCompleted](modules.md#permissionmarkholidayascompleted)
+- [PermissionMarkLeaveAdjustmentasCompleted](modules.md#permissionmarkleaveadjustmentascompleted)
+- [PermissionMarkLeaveRequestasCompleted](modules.md#permissionmarkleaverequestascompleted)
+- [PermissionMarkLeaveTypeasCompleted](modules.md#permissionmarkleavetypeascompleted)
+- [PermissionMarkOnDutyasCompleted](modules.md#permissionmarkondutyascompleted)
+- [PermissionMarkOvertimeasCompleted](modules.md#permissionmarkovertimeascompleted)
+- [PermissionMarkPayrollParameterasCompleted](modules.md#permissionmarkpayrollparameterascompleted)
+- [PermissionMarkPurchaseEnquiryasCompleted](modules.md#permissionmarkpurchaseenquiryascompleted)
+- [PermissionMarkPurchasePaymentasCompleted](modules.md#permissionmarkpurchasepaymentascompleted)
+- [PermissionMarkQCParameterasCompleted](modules.md#permissionmarkqcparameterascompleted)
+- [PermissionMarkQuotationRequestasCompleted](modules.md#permissionmarkquotationrequestascompleted)
+- [PermissionMarkQuotationResponseasCompleted](modules.md#permissionmarkquotationresponseascompleted)
+- [PermissionMarkSaleReceiptasCompleted](modules.md#permissionmarksalereceiptascompleted)
+- [PermissionMarkShiftGroupasCompleted](modules.md#permissionmarkshiftgroupascompleted)
+- [PermissionMarkShiftasCompleted](modules.md#permissionmarkshiftascompleted)
+- [PermissionMarkSkillParameterasCompleted](modules.md#permissionmarkskillparameterascompleted)
+- [PermissionMarkSundryasCompleted](modules.md#permissionmarksundryascompleted)
+- [PermissionMarkVisitationasCompleted](modules.md#permissionmarkvisitationascompleted)
+- [PermissionMeetingCancel](modules.md#permissionmeetingcancel)
+- [PermissionMeetingCancelled](modules.md#permissionmeetingcancelled)
+- [PermissionMeetingComplete](modules.md#permissionmeetingcomplete)
+- [PermissionMeetingCompleted](modules.md#permissionmeetingcompleted)
+- [PermissionMeetingNew](modules.md#permissionmeetingnew)
+- [PermissionMeetingOpen](modules.md#permissionmeetingopen)
+- [PermissionMeetingUpdate](modules.md#permissionmeetingupdate)
+- [PermissionMerchandiseAdd](modules.md#permissionmerchandiseadd)
+- [PermissionMerchandiseApproveIQC](modules.md#permissionmerchandiseapproveiqc)
+- [PermissionMerchandiseConsume](modules.md#permissionmerchandiseconsume)
+- [PermissionMerchandiseConsumed](modules.md#permissionmerchandiseconsumed)
+- [PermissionMerchandiseDiscard](modules.md#permissionmerchandisediscard)
+- [PermissionMerchandiseDiscarded](modules.md#permissionmerchandisediscarded)
+- [PermissionMerchandiseIQC](modules.md#permissionmerchandiseiqc)
+- [PermissionMerchandiseIssued](modules.md#permissionmerchandiseissued)
+- [PermissionMerchandiseReject](modules.md#permissionmerchandisereject)
+- [PermissionMerchandiseRejected](modules.md#permissionmerchandiserejected)
+- [PermissionMerchandiseReturnable](modules.md#permissionmerchandisereturnable)
+- [PermissionMerchandiseRework](modules.md#permissionmerchandiserework)
+- [PermissionMerchandiseScrap](modules.md#permissionmerchandisescrap)
+- [PermissionMerchandiseStore](modules.md#permissionmerchandisestore)
+- [PermissionMerchandiseView](modules.md#permissionmerchandiseview)
+- [PermissionModifyAssociate](modules.md#permissionmodifyassociate)
+- [PermissionModifyContractor](modules.md#permissionmodifycontractor)
+- [PermissionModifyFormFields](modules.md#permissionmodifyformfields)
+- [PermissionModifyFormSections](modules.md#permissionmodifyformsections)
+- [PermissionModifyLabel](modules.md#permissionmodifylabel)
+- [PermissionMyActivityCancelled](modules.md#permissionmyactivitycancelled)
+- [PermissionMyActivityCompleted](modules.md#permissionmyactivitycompleted)
+- [PermissionMyActivityOpen](modules.md#permissionmyactivityopen)
+- [PermissionMyClientStreamCancelled](modules.md#permissionmyclientstreamcancelled)
+- [PermissionMyClientStreamCompleted](modules.md#permissionmyclientstreamcompleted)
+- [PermissionMyClientStreamOpen](modules.md#permissionmyclientstreamopen)
+- [PermissionMyGeneralStreamCancelled](modules.md#permissionmygeneralstreamcancelled)
+- [PermissionMyGeneralStreamCompleted](modules.md#permissionmygeneralstreamcompleted)
+- [PermissionMyGeneralStreamOpen](modules.md#permissionmygeneralstreamopen)
+- [PermissionMyNoteCancelled](modules.md#permissionmynotecancelled)
+- [PermissionMyNoteCompleted](modules.md#permissionmynotecompleted)
+- [PermissionMyNoteOpen](modules.md#permissionmynoteopen)
+- [PermissionMyVendorStreamCancelled](modules.md#permissionmyvendorstreamcancelled)
+- [PermissionMyVendorStreamCompleted](modules.md#permissionmyvendorstreamcompleted)
+- [PermissionMyVendorStreamOpen](modules.md#permissionmyvendorstreamopen)
+- [PermissionNewAbsence](modules.md#permissionnewabsence)
+- [PermissionNewActionCode](modules.md#permissionnewactioncode)
+- [PermissionNewActivityGroup](modules.md#permissionnewactivitygroup)
+- [PermissionNewActivityStatus](modules.md#permissionnewactivitystatus)
+- [PermissionNewActivityTag](modules.md#permissionnewactivitytag)
+- [PermissionNewAnnouncement](modules.md#permissionnewannouncement)
+- [PermissionNewAssociate](modules.md#permissionnewassociate)
+- [PermissionNewAttendance](modules.md#permissionnewattendance)
+- [PermissionNewAttendanceAmendment](modules.md#permissionnewattendanceamendment)
+- [PermissionNewBankAccount](modules.md#permissionnewbankaccount)
+- [PermissionNewClient](modules.md#permissionnewclient)
+- [PermissionNewContractor](modules.md#permissionnewcontractor)
+- [PermissionNewContractorPayment](modules.md#permissionnewcontractorpayment)
+- [PermissionNewCurrency](modules.md#permissionnewcurrency)
+- [PermissionNewFormField](modules.md#permissionnewformfield)
+- [PermissionNewFormSection](modules.md#permissionnewformsection)
+- [PermissionNewGoal](modules.md#permissionnewgoal)
+- [PermissionNewHoliday](modules.md#permissionnewholiday)
+- [PermissionNewLabel](modules.md#permissionnewlabel)
+- [PermissionNewLeaveAdjustment](modules.md#permissionnewleaveadjustment)
+- [PermissionNewLeaveRequest](modules.md#permissionnewleaverequest)
+- [PermissionNewLeaveType](modules.md#permissionnewleavetype)
+- [PermissionNewLedger](modules.md#permissionnewledger)
+- [PermissionNewLocation](modules.md#permissionnewlocation)
+- [PermissionNewOnDuty](modules.md#permissionnewonduty)
+- [PermissionNewOvertime](modules.md#permissionnewovertime)
+- [PermissionNewPayrollParameter](modules.md#permissionnewpayrollparameter)
+- [PermissionNewPurchaseEnquiry](modules.md#permissionnewpurchaseenquiry)
+- [PermissionNewPurchasePayment](modules.md#permissionnewpurchasepayment)
+- [PermissionNewQCHub](modules.md#permissionnewqchub)
+- [PermissionNewQCParameter](modules.md#permissionnewqcparameter)
+- [PermissionNewQuotationRequest](modules.md#permissionnewquotationrequest)
+- [PermissionNewQuotationResponse](modules.md#permissionnewquotationresponse)
+- [PermissionNewSaleReceipt](modules.md#permissionnewsalereceipt)
+- [PermissionNewShift](modules.md#permissionnewshift)
+- [PermissionNewShiftGroup](modules.md#permissionnewshiftgroup)
+- [PermissionNewSkillParameter](modules.md#permissionnewskillparameter)
+- [PermissionNewStorage](modules.md#permissionnewstorage)
+- [PermissionNewStore](modules.md#permissionnewstore)
+- [PermissionNewSundry](modules.md#permissionnewsundry)
+- [PermissionNewTaxGroup](modules.md#permissionnewtaxgroup)
+- [PermissionNewTaxParameter](modules.md#permissionnewtaxparameter)
+- [PermissionNewUnitOfMaterial](modules.md#permissionnewunitofmaterial)
+- [PermissionNewVendor](modules.md#permissionnewvendor)
+- [PermissionNewVisitation](modules.md#permissionnewvisitation)
+- [PermissionNoteCancel](modules.md#permissionnotecancel)
+- [PermissionNoteCancelled](modules.md#permissionnotecancelled)
+- [PermissionNoteComplete](modules.md#permissionnotecomplete)
+- [PermissionNoteCompleted](modules.md#permissionnotecompleted)
+- [PermissionNoteNew](modules.md#permissionnotenew)
+- [PermissionNoteOpen](modules.md#permissionnoteopen)
+- [PermissionNoteUpdate](modules.md#permissionnoteupdate)
+- [PermissionOutwardJobApprove](modules.md#permissionoutwardjobapprove)
+- [PermissionOutwardJobComplete](modules.md#permissionoutwardjobcomplete)
+- [PermissionOutwardJobCompleted](modules.md#permissionoutwardjobcompleted)
+- [PermissionOutwardJobDiscard](modules.md#permissionoutwardjobdiscard)
+- [PermissionOutwardJobDiscarded](modules.md#permissionoutwardjobdiscarded)
+- [PermissionOutwardJobDrafts](modules.md#permissionoutwardjobdrafts)
+- [PermissionOutwardJobFreeIssueMaterialApprove](modules.md#permissionoutwardjobfreeissuematerialapprove)
+- [PermissionOutwardJobFreeIssueMaterialComplete](modules.md#permissionoutwardjobfreeissuematerialcomplete)
+- [PermissionOutwardJobFreeIssueMaterialCompleted](modules.md#permissionoutwardjobfreeissuematerialcompleted)
+- [PermissionOutwardJobFreeIssueMaterialDiscard](modules.md#permissionoutwardjobfreeissuematerialdiscard)
+- [PermissionOutwardJobFreeIssueMaterialDiscarded](modules.md#permissionoutwardjobfreeissuematerialdiscarded)
+- [PermissionOutwardJobFreeIssueMaterialDrafts](modules.md#permissionoutwardjobfreeissuematerialdrafts)
+- [PermissionOutwardJobFreeIssueMaterialHalt](modules.md#permissionoutwardjobfreeissuematerialhalt)
+- [PermissionOutwardJobFreeIssueMaterialHalted](modules.md#permissionoutwardjobfreeissuematerialhalted)
+- [PermissionOutwardJobFreeIssueMaterialNew](modules.md#permissionoutwardjobfreeissuematerialnew)
+- [PermissionOutwardJobFreeIssueMaterialReturnApprove](modules.md#permissionoutwardjobfreeissuematerialreturnapprove)
+- [PermissionOutwardJobFreeIssueMaterialReturnComplete](modules.md#permissionoutwardjobfreeissuematerialreturncomplete)
+- [PermissionOutwardJobFreeIssueMaterialReturnCompleted](modules.md#permissionoutwardjobfreeissuematerialreturncompleted)
+- [PermissionOutwardJobFreeIssueMaterialReturnDiscard](modules.md#permissionoutwardjobfreeissuematerialreturndiscard)
+- [PermissionOutwardJobFreeIssueMaterialReturnDiscarded](modules.md#permissionoutwardjobfreeissuematerialreturndiscarded)
+- [PermissionOutwardJobFreeIssueMaterialReturnDrafts](modules.md#permissionoutwardjobfreeissuematerialreturndrafts)
+- [PermissionOutwardJobFreeIssueMaterialReturnHalt](modules.md#permissionoutwardjobfreeissuematerialreturnhalt)
+- [PermissionOutwardJobFreeIssueMaterialReturnHalted](modules.md#permissionoutwardjobfreeissuematerialreturnhalted)
+- [PermissionOutwardJobFreeIssueMaterialReturnNew](modules.md#permissionoutwardjobfreeissuematerialreturnnew)
+- [PermissionOutwardJobFreeIssueMaterialReturnRevise](modules.md#permissionoutwardjobfreeissuematerialreturnrevise)
+- [PermissionOutwardJobFreeIssueMaterialReturnStanding](modules.md#permissionoutwardjobfreeissuematerialreturnstanding)
+- [PermissionOutwardJobFreeIssueMaterialReturnVerify](modules.md#permissionoutwardjobfreeissuematerialreturnverify)
+- [PermissionOutwardJobFreeIssueMaterialRevise](modules.md#permissionoutwardjobfreeissuematerialrevise)
+- [PermissionOutwardJobFreeIssueMaterialStanding](modules.md#permissionoutwardjobfreeissuematerialstanding)
+- [PermissionOutwardJobFreeIssueMaterialVerify](modules.md#permissionoutwardjobfreeissuematerialverify)
+- [PermissionOutwardJobHalt](modules.md#permissionoutwardjobhalt)
+- [PermissionOutwardJobHalted](modules.md#permissionoutwardjobhalted)
+- [PermissionOutwardJobNew](modules.md#permissionoutwardjobnew)
+- [PermissionOutwardJobRevise](modules.md#permissionoutwardjobrevise)
+- [PermissionOutwardJobStanding](modules.md#permissionoutwardjobstanding)
+- [PermissionOutwardJobVerify](modules.md#permissionoutwardjobverify)
+- [PermissionPayrollGroupApprove](modules.md#permissionpayrollgroupapprove)
+- [PermissionPayrollGroupComplete](modules.md#permissionpayrollgroupcomplete)
+- [PermissionPayrollGroupCompleted](modules.md#permissionpayrollgroupcompleted)
+- [PermissionPayrollGroupDiscard](modules.md#permissionpayrollgroupdiscard)
+- [PermissionPayrollGroupDiscarded](modules.md#permissionpayrollgroupdiscarded)
+- [PermissionPayrollGroupDrafts](modules.md#permissionpayrollgroupdrafts)
+- [PermissionPayrollGroupHalt](modules.md#permissionpayrollgrouphalt)
+- [PermissionPayrollGroupHalted](modules.md#permissionpayrollgrouphalted)
+- [PermissionPayrollGroupNew](modules.md#permissionpayrollgroupnew)
+- [PermissionPayrollGroupRevise](modules.md#permissionpayrollgrouprevise)
+- [PermissionPayrollGroupStanding](modules.md#permissionpayrollgroupstanding)
+- [PermissionPayrollGroupVerify](modules.md#permissionpayrollgroupverify)
+- [PermissionProductionIndentApprove](modules.md#permissionproductionindentapprove)
+- [PermissionProductionIndentComplete](modules.md#permissionproductionindentcomplete)
+- [PermissionProductionIndentCompleted](modules.md#permissionproductionindentcompleted)
+- [PermissionProductionIndentDiscard](modules.md#permissionproductionindentdiscard)
+- [PermissionProductionIndentDiscarded](modules.md#permissionproductionindentdiscarded)
+- [PermissionProductionIndentDrafts](modules.md#permissionproductionindentdrafts)
+- [PermissionProductionIndentHalt](modules.md#permissionproductionindenthalt)
+- [PermissionProductionIndentHalted](modules.md#permissionproductionindenthalted)
+- [PermissionProductionIndentNew](modules.md#permissionproductionindentnew)
+- [PermissionProductionIndentRevise](modules.md#permissionproductionindentrevise)
+- [PermissionProductionIndentStanding](modules.md#permissionproductionindentstanding)
+- [PermissionProductionIndentVerify](modules.md#permissionproductionindentverify)
+- [PermissionProductionPlanApprove](modules.md#permissionproductionplanapprove)
+- [PermissionProductionPlanComplete](modules.md#permissionproductionplancomplete)
+- [PermissionProductionPlanCompleted](modules.md#permissionproductionplancompleted)
+- [PermissionProductionPlanDiscard](modules.md#permissionproductionplandiscard)
+- [PermissionProductionPlanDiscarded](modules.md#permissionproductionplandiscarded)
+- [PermissionProductionPlanDrafts](modules.md#permissionproductionplandrafts)
+- [PermissionProductionPlanHalt](modules.md#permissionproductionplanhalt)
+- [PermissionProductionPlanHalted](modules.md#permissionproductionplanhalted)
+- [PermissionProductionPlanNew](modules.md#permissionproductionplannew)
+- [PermissionProductionPlanRevise](modules.md#permissionproductionplanrevise)
+- [PermissionProductionPlanStanding](modules.md#permissionproductionplanstanding)
+- [PermissionProductionPlanVerify](modules.md#permissionproductionplanverify)
+- [PermissionProductsAdd](modules.md#permissionproductsadd)
+- [PermissionProductsApproveIQC](modules.md#permissionproductsapproveiqc)
+- [PermissionProductsConsume](modules.md#permissionproductsconsume)
+- [PermissionProductsConsumed](modules.md#permissionproductsconsumed)
+- [PermissionProductsDiscard](modules.md#permissionproductsdiscard)
+- [PermissionProductsDiscarded](modules.md#permissionproductsdiscarded)
+- [PermissionProductsIQC](modules.md#permissionproductsiqc)
+- [PermissionProductsIssued](modules.md#permissionproductsissued)
+- [PermissionProductsReject](modules.md#permissionproductsreject)
+- [PermissionProductsRejected](modules.md#permissionproductsrejected)
+- [PermissionProductsRework](modules.md#permissionproductsrework)
+- [PermissionProductsScrap](modules.md#permissionproductsscrap)
+- [PermissionProductsStore](modules.md#permissionproductsstore)
+- [PermissionProductsView](modules.md#permissionproductsview)
+- [PermissionProformaInvoiceApprove](modules.md#permissionproformainvoiceapprove)
+- [PermissionProformaInvoiceComplete](modules.md#permissionproformainvoicecomplete)
+- [PermissionProformaInvoiceCompleted](modules.md#permissionproformainvoicecompleted)
+- [PermissionProformaInvoiceDiscard](modules.md#permissionproformainvoicediscard)
+- [PermissionProformaInvoiceDiscarded](modules.md#permissionproformainvoicediscarded)
+- [PermissionProformaInvoiceDrafts](modules.md#permissionproformainvoicedrafts)
+- [PermissionProformaInvoiceHalt](modules.md#permissionproformainvoicehalt)
+- [PermissionProformaInvoiceHalted](modules.md#permissionproformainvoicehalted)
+- [PermissionProformaInvoiceNew](modules.md#permissionproformainvoicenew)
+- [PermissionProformaInvoiceRevise](modules.md#permissionproformainvoicerevise)
+- [PermissionProformaInvoiceStanding](modules.md#permissionproformainvoicestanding)
+- [PermissionProformaInvoiceVerify](modules.md#permissionproformainvoiceverify)
+- [PermissionProjectApprove](modules.md#permissionprojectapprove)
+- [PermissionProjectComplete](modules.md#permissionprojectcomplete)
+- [PermissionProjectCompleted](modules.md#permissionprojectcompleted)
+- [PermissionProjectDiscard](modules.md#permissionprojectdiscard)
+- [PermissionProjectDiscarded](modules.md#permissionprojectdiscarded)
+- [PermissionProjectDrafts](modules.md#permissionprojectdrafts)
+- [PermissionProjectHalt](modules.md#permissionprojecthalt)
+- [PermissionProjectHalted](modules.md#permissionprojecthalted)
+- [PermissionProjectNew](modules.md#permissionprojectnew)
+- [PermissionProjectRevise](modules.md#permissionprojectrevise)
+- [PermissionProjectStanding](modules.md#permissionprojectstanding)
+- [PermissionProjectVerify](modules.md#permissionprojectverify)
+- [PermissionPurchaseEnquiryDiscard](modules.md#permissionpurchaseenquirydiscard)
+- [PermissionPurchaseEnquiryDiscarded](modules.md#permissionpurchaseenquirydiscarded)
+- [PermissionPurchaseIndentApprove](modules.md#permissionpurchaseindentapprove)
+- [PermissionPurchaseIndentComplete](modules.md#permissionpurchaseindentcomplete)
+- [PermissionPurchaseIndentCompleted](modules.md#permissionpurchaseindentcompleted)
+- [PermissionPurchaseIndentDiscard](modules.md#permissionpurchaseindentdiscard)
+- [PermissionPurchaseIndentDiscarded](modules.md#permissionpurchaseindentdiscarded)
+- [PermissionPurchaseIndentDrafts](modules.md#permissionpurchaseindentdrafts)
+- [PermissionPurchaseIndentHalt](modules.md#permissionpurchaseindenthalt)
+- [PermissionPurchaseIndentHalted](modules.md#permissionpurchaseindenthalted)
+- [PermissionPurchaseIndentNew](modules.md#permissionpurchaseindentnew)
+- [PermissionPurchaseIndentRevise](modules.md#permissionpurchaseindentrevise)
+- [PermissionPurchaseIndentStanding](modules.md#permissionpurchaseindentstanding)
+- [PermissionPurchaseIndentVerify](modules.md#permissionpurchaseindentverify)
+- [PermissionPurchaseOrderApprove](modules.md#permissionpurchaseorderapprove)
+- [PermissionPurchaseOrderComplete](modules.md#permissionpurchaseordercomplete)
+- [PermissionPurchaseOrderCompleted](modules.md#permissionpurchaseordercompleted)
+- [PermissionPurchaseOrderDiscard](modules.md#permissionpurchaseorderdiscard)
+- [PermissionPurchaseOrderDiscarded](modules.md#permissionpurchaseorderdiscarded)
+- [PermissionPurchaseOrderDrafts](modules.md#permissionpurchaseorderdrafts)
+- [PermissionPurchaseOrderHalt](modules.md#permissionpurchaseorderhalt)
+- [PermissionPurchaseOrderHalted](modules.md#permissionpurchaseorderhalted)
+- [PermissionPurchaseOrderNew](modules.md#permissionpurchaseordernew)
+- [PermissionPurchaseOrderRevise](modules.md#permissionpurchaseorderrevise)
+- [PermissionPurchaseOrderStanding](modules.md#permissionpurchaseorderstanding)
+- [PermissionPurchaseOrderVerify](modules.md#permissionpurchaseorderverify)
+- [PermissionPurchaseReturnApprove](modules.md#permissionpurchasereturnapprove)
+- [PermissionPurchaseReturnComplete](modules.md#permissionpurchasereturncomplete)
+- [PermissionPurchaseReturnCompleted](modules.md#permissionpurchasereturncompleted)
+- [PermissionPurchaseReturnDiscard](modules.md#permissionpurchasereturndiscard)
+- [PermissionPurchaseReturnDiscarded](modules.md#permissionpurchasereturndiscarded)
+- [PermissionPurchaseReturnDrafts](modules.md#permissionpurchasereturndrafts)
+- [PermissionPurchaseReturnHalt](modules.md#permissionpurchasereturnhalt)
+- [PermissionPurchaseReturnHalted](modules.md#permissionpurchasereturnhalted)
+- [PermissionPurchaseReturnNew](modules.md#permissionpurchasereturnnew)
+- [PermissionPurchaseReturnRevise](modules.md#permissionpurchasereturnrevise)
+- [PermissionPurchaseReturnStanding](modules.md#permissionpurchasereturnstanding)
+- [PermissionPurchaseReturnVerify](modules.md#permissionpurchasereturnverify)
+- [PermissionQCGroupApprove](modules.md#permissionqcgroupapprove)
+- [PermissionQCGroupComplete](modules.md#permissionqcgroupcomplete)
+- [PermissionQCGroupCompleted](modules.md#permissionqcgroupcompleted)
+- [PermissionQCGroupDiscard](modules.md#permissionqcgroupdiscard)
+- [PermissionQCGroupDiscarded](modules.md#permissionqcgroupdiscarded)
+- [PermissionQCGroupDrafts](modules.md#permissionqcgroupdrafts)
+- [PermissionQCGroupHalt](modules.md#permissionqcgrouphalt)
+- [PermissionQCGroupHalted](modules.md#permissionqcgrouphalted)
+- [PermissionQCGroupNew](modules.md#permissionqcgroupnew)
+- [PermissionQCGroupRevise](modules.md#permissionqcgrouprevise)
+- [PermissionQCGroupStanding](modules.md#permissionqcgroupstanding)
+- [PermissionQCGroupVerify](modules.md#permissionqcgroupverify)
+- [PermissionQCSampleAccept](modules.md#permissionqcsampleaccept)
+- [PermissionQCSampleAcceptWithDeviation](modules.md#permissionqcsampleacceptwithdeviation)
+- [PermissionQCSampleAccepted](modules.md#permissionqcsampleaccepted)
+- [PermissionQCSampleAcceptedWithDeviation](modules.md#permissionqcsampleacceptedwithdeviation)
+- [PermissionQCSampleCancel](modules.md#permissionqcsamplecancel)
+- [PermissionQCSampleCancelled](modules.md#permissionqcsamplecancelled)
+- [PermissionQCSampleFinish](modules.md#permissionqcsamplefinish)
+- [PermissionQCSampleFinished](modules.md#permissionqcsamplefinished)
+- [PermissionQCSampleNew](modules.md#permissionqcsamplenew)
+- [PermissionQCSampleOpen](modules.md#permissionqcsampleopen)
+- [PermissionQCSampleReject](modules.md#permissionqcsamplereject)
+- [PermissionQCSampleRejected](modules.md#permissionqcsamplerejected)
+- [PermissionQCSampleReopen](modules.md#permissionqcsamplereopen)
+- [PermissionQCSampleUpdate](modules.md#permissionqcsampleupdate)
+- [PermissionQuotationRequestDiscard](modules.md#permissionquotationrequestdiscard)
+- [PermissionQuotationRequestDiscarded](modules.md#permissionquotationrequestdiscarded)
+- [PermissionQuotationResponseDiscard](modules.md#permissionquotationresponsediscard)
+- [PermissionQuotationResponseDiscarded](modules.md#permissionquotationresponsediscarded)
+- [PermissionReopenAssetIndent](modules.md#permissionreopenassetindent)
+- [PermissionReopenCreditNote](modules.md#permissionreopencreditnote)
+- [PermissionReopenDebitNote](modules.md#permissionreopendebitnote)
+- [PermissionReopenDepartment](modules.md#permissionreopendepartment)
+- [PermissionReopenEquationFamily](modules.md#permissionreopenequationfamily)
+- [PermissionReopenEquationReplaceable](modules.md#permissionreopenequationreplaceable)
+- [PermissionReopenEquationSalesBundle](modules.md#permissionreopenequationsalesbundle)
+- [PermissionReopenEquationWorkOrder](modules.md#permissionreopenequationworkorder)
+- [PermissionReopenExpense](modules.md#permissionreopenexpense)
+- [PermissionReopenGoal](modules.md#permissionreopengoal)
+- [PermissionReopenGoodsDispatch](modules.md#permissionreopengoodsdispatch)
+- [PermissionReopenGoodsReceipt](modules.md#permissionreopengoodsreceipt)
+- [PermissionReopenInwardJob](modules.md#permissionreopeninwardjob)
+- [PermissionReopenInwardJobFreeIssueMaterial](modules.md#permissionreopeninwardjobfreeissuematerial)
+- [PermissionReopenInwardJobFreeIssueMaterialReturn](modules.md#permissionreopeninwardjobfreeissuematerialreturn)
+- [PermissionReopenOutwardJob](modules.md#permissionreopenoutwardjob)
+- [PermissionReopenOutwardJobFreeIssueMaterial](modules.md#permissionreopenoutwardjobfreeissuematerial)
+- [PermissionReopenOutwardJobFreeIssueMaterialReturn](modules.md#permissionreopenoutwardjobfreeissuematerialreturn)
+- [PermissionReopenPayrollGroup](modules.md#permissionreopenpayrollgroup)
+- [PermissionReopenProductionIndent](modules.md#permissionreopenproductionindent)
+- [PermissionReopenProductionPlan](modules.md#permissionreopenproductionplan)
+- [PermissionReopenProformaInvoice](modules.md#permissionreopenproformainvoice)
+- [PermissionReopenProject](modules.md#permissionreopenproject)
+- [PermissionReopenPurchaseEnquiry](modules.md#permissionreopenpurchaseenquiry)
+- [PermissionReopenPurchaseIndent](modules.md#permissionreopenpurchaseindent)
+- [PermissionReopenPurchaseOrder](modules.md#permissionreopenpurchaseorder)
+- [PermissionReopenPurchaseReturn](modules.md#permissionreopenpurchasereturn)
+- [PermissionReopenQCGroup](modules.md#permissionreopenqcgroup)
+- [PermissionReopenQuotationRequest](modules.md#permissionreopenquotationrequest)
+- [PermissionReopenQuotationResponse](modules.md#permissionreopenquotationresponse)
+- [PermissionReopenReplaceableIndent](modules.md#permissionreopenreplaceableindent)
+- [PermissionReopenRole](modules.md#permissionreopenrole)
+- [PermissionReopenSalary](modules.md#permissionreopensalary)
+- [PermissionReopenSaleReturn](modules.md#permissionreopensalereturn)
+- [PermissionReopenSalesEnquiry](modules.md#permissionreopensalesenquiry)
+- [PermissionReopenSalesInvoice](modules.md#permissionreopensalesinvoice)
+- [PermissionReopenSalesOrder](modules.md#permissionreopensalesorder)
+- [PermissionReopenSalesQuotation](modules.md#permissionreopensalesquotation)
+- [PermissionReopenSkillGroup](modules.md#permissionreopenskillgroup)
+- [PermissionReopenStockAudit](modules.md#permissionreopenstockaudit)
+- [PermissionReopenStockIssuance](modules.md#permissionreopenstockissuance)
+- [PermissionReopenStockReturn](modules.md#permissionreopenstockreturn)
+- [PermissionReopenSupplyOffer](modules.md#permissionreopensupplyoffer)
+- [PermissionReopenTeam](modules.md#permissionreopenteam)
+- [PermissionReopenVendorInvoice](modules.md#permissionreopenvendorinvoice)
+- [PermissionReopenWorkOrder](modules.md#permissionreopenworkorder)
+- [PermissionReopenWorkflowRule](modules.md#permissionreopenworkflowrule)
+- [PermissionReplaceableIndentApprove](modules.md#permissionreplaceableindentapprove)
+- [PermissionReplaceableIndentComplete](modules.md#permissionreplaceableindentcomplete)
+- [PermissionReplaceableIndentCompleted](modules.md#permissionreplaceableindentcompleted)
+- [PermissionReplaceableIndentDiscard](modules.md#permissionreplaceableindentdiscard)
+- [PermissionReplaceableIndentDiscarded](modules.md#permissionreplaceableindentdiscarded)
+- [PermissionReplaceableIndentDrafts](modules.md#permissionreplaceableindentdrafts)
+- [PermissionReplaceableIndentHalt](modules.md#permissionreplaceableindenthalt)
+- [PermissionReplaceableIndentHalted](modules.md#permissionreplaceableindenthalted)
+- [PermissionReplaceableIndentNew](modules.md#permissionreplaceableindentnew)
+- [PermissionReplaceableIndentRevise](modules.md#permissionreplaceableindentrevise)
+- [PermissionReplaceableIndentStanding](modules.md#permissionreplaceableindentstanding)
+- [PermissionReplaceableIndentVerify](modules.md#permissionreplaceableindentverify)
+- [PermissionRestoreAbsences](modules.md#permissionrestoreabsences)
+- [PermissionRestoreActionsCodes](modules.md#permissionrestoreactionscodes)
+- [PermissionRestoreActivitiesGroups](modules.md#permissionrestoreactivitiesgroups)
+- [PermissionRestoreActivitiesStatuses](modules.md#permissionrestoreactivitiesstatuses)
+- [PermissionRestoreActivitiesTags](modules.md#permissionrestoreactivitiestags)
+- [PermissionRestoreAnnouncements](modules.md#permissionrestoreannouncements)
+- [PermissionRestoreAssetIndent](modules.md#permissionrestoreassetindent)
+- [PermissionRestoreAssociate](modules.md#permissionrestoreassociate)
+- [PermissionRestoreAttendanceAmendments](modules.md#permissionrestoreattendanceamendments)
+- [PermissionRestoreAttendances](modules.md#permissionrestoreattendances)
+- [PermissionRestoreBankAccounts](modules.md#permissionrestorebankaccounts)
+- [PermissionRestoreClients](modules.md#permissionrestoreclients)
+- [PermissionRestoreContractor](modules.md#permissionrestorecontractor)
+- [PermissionRestoreContractorsPayments](modules.md#permissionrestorecontractorspayments)
+- [PermissionRestoreCreditNote](modules.md#permissionrestorecreditnote)
+- [PermissionRestoreCurrencies](modules.md#permissionrestorecurrencies)
+- [PermissionRestoreDebitNote](modules.md#permissionrestoredebitnote)
+- [PermissionRestoreDepartment](modules.md#permissionrestoredepartment)
+- [PermissionRestoreEquationFamily](modules.md#permissionrestoreequationfamily)
+- [PermissionRestoreEquationReplaceable](modules.md#permissionrestoreequationreplaceable)
+- [PermissionRestoreEquationSalesBundle](modules.md#permissionrestoreequationsalesbundle)
+- [PermissionRestoreEquationWorkOrder](modules.md#permissionrestoreequationworkorder)
+- [PermissionRestoreExpense](modules.md#permissionrestoreexpense)
+- [PermissionRestoreFamily](modules.md#permissionrestorefamily)
+- [PermissionRestoreFormFields](modules.md#permissionrestoreformfields)
+- [PermissionRestoreFormSections](modules.md#permissionrestoreformsections)
+- [PermissionRestoreGoal](modules.md#permissionrestoregoal)
+- [PermissionRestoreGoodsDispatch](modules.md#permissionrestoregoodsdispatch)
+- [PermissionRestoreGoodsReceipt](modules.md#permissionrestoregoodsreceipt)
+- [PermissionRestoreHolidays](modules.md#permissionrestoreholidays)
+- [PermissionRestoreInwardJob](modules.md#permissionrestoreinwardjob)
+- [PermissionRestoreInwardJobFreeIssueMaterial](modules.md#permissionrestoreinwardjobfreeissuematerial)
+- [PermissionRestoreInwardJobFreeIssueMaterialReturn](modules.md#permissionrestoreinwardjobfreeissuematerialreturn)
+- [PermissionRestoreLabel](modules.md#permissionrestorelabel)
+- [PermissionRestoreLeaveTypes](modules.md#permissionrestoreleavetypes)
+- [PermissionRestoreLeavesAdjustments](modules.md#permissionrestoreleavesadjustments)
+- [PermissionRestoreLeavesRequests](modules.md#permissionrestoreleavesrequests)
+- [PermissionRestoreLedgers](modules.md#permissionrestoreledgers)
+- [PermissionRestoreLocations](modules.md#permissionrestorelocations)
+- [PermissionRestoreOnDuties](modules.md#permissionrestoreonduties)
+- [PermissionRestoreOutwardJob](modules.md#permissionrestoreoutwardjob)
+- [PermissionRestoreOutwardJobFreeIssueMaterial](modules.md#permissionrestoreoutwardjobfreeissuematerial)
+- [PermissionRestoreOutwardJobFreeIssueMaterialReturn](modules.md#permissionrestoreoutwardjobfreeissuematerialreturn)
+- [PermissionRestoreOvertime](modules.md#permissionrestoreovertime)
+- [PermissionRestorePayrollGroup](modules.md#permissionrestorepayrollgroup)
+- [PermissionRestorePayrollParameters](modules.md#permissionrestorepayrollparameters)
+- [PermissionRestoreProductionIndent](modules.md#permissionrestoreproductionindent)
+- [PermissionRestoreProductionPlan](modules.md#permissionrestoreproductionplan)
+- [PermissionRestoreProformaInvoice](modules.md#permissionrestoreproformainvoice)
+- [PermissionRestoreProject](modules.md#permissionrestoreproject)
+- [PermissionRestorePurchaseEnquiry](modules.md#permissionrestorepurchaseenquiry)
+- [PermissionRestorePurchaseIndent](modules.md#permissionrestorepurchaseindent)
+- [PermissionRestorePurchaseOrder](modules.md#permissionrestorepurchaseorder)
+- [PermissionRestorePurchasePayment](modules.md#permissionrestorepurchasepayment)
+- [PermissionRestorePurchaseReturn](modules.md#permissionrestorepurchasereturn)
+- [PermissionRestoreQCGroup](modules.md#permissionrestoreqcgroup)
+- [PermissionRestoreQCHubs](modules.md#permissionrestoreqchubs)
+- [PermissionRestoreQCParameters](modules.md#permissionrestoreqcparameters)
+- [PermissionRestoreQuotationRequest](modules.md#permissionrestorequotationrequest)
+- [PermissionRestoreQuotationResponse](modules.md#permissionrestorequotationresponse)
+- [PermissionRestoreReplaceableIndent](modules.md#permissionrestorereplaceableindent)
+- [PermissionRestoreRole](modules.md#permissionrestorerole)
+- [PermissionRestoreSalary](modules.md#permissionrestoresalary)
+- [PermissionRestoreSaleReceipt](modules.md#permissionrestoresalereceipt)
+- [PermissionRestoreSaleReturn](modules.md#permissionrestoresalereturn)
+- [PermissionRestoreSalesEnquiry](modules.md#permissionrestoresalesenquiry)
+- [PermissionRestoreSalesInvoice](modules.md#permissionrestoresalesinvoice)
+- [PermissionRestoreSalesOrder](modules.md#permissionrestoresalesorder)
+- [PermissionRestoreSalesQuotation](modules.md#permissionrestoresalesquotation)
+- [PermissionRestoreShiftGroups](modules.md#permissionrestoreshiftgroups)
+- [PermissionRestoreShifts](modules.md#permissionrestoreshifts)
+- [PermissionRestoreSkillGroup](modules.md#permissionrestoreskillgroup)
+- [PermissionRestoreSkillParameters](modules.md#permissionrestoreskillparameters)
+- [PermissionRestoreStockAudit](modules.md#permissionrestorestockaudit)
+- [PermissionRestoreStockIssuance](modules.md#permissionrestorestockissuance)
+- [PermissionRestoreStockReturn](modules.md#permissionrestorestockreturn)
+- [PermissionRestoreStorages](modules.md#permissionrestorestorages)
+- [PermissionRestoreStores](modules.md#permissionrestorestores)
+- [PermissionRestoreSundries](modules.md#permissionrestoresundries)
+- [PermissionRestoreSupplyOffer](modules.md#permissionrestoresupplyoffer)
+- [PermissionRestoreTaxGroups](modules.md#permissionrestoretaxgroups)
+- [PermissionRestoreTaxParameters](modules.md#permissionrestoretaxparameters)
+- [PermissionRestoreTeam](modules.md#permissionrestoreteam)
+- [PermissionRestoreUnitsOfMaterials](modules.md#permissionrestoreunitsofmaterials)
+- [PermissionRestoreUser](modules.md#permissionrestoreuser)
+- [PermissionRestoreVendorInvoice](modules.md#permissionrestorevendorinvoice)
+- [PermissionRestoreVendors](modules.md#permissionrestorevendors)
+- [PermissionRestoreVisitations](modules.md#permissionrestorevisitations)
+- [PermissionRestoreWorkOrder](modules.md#permissionrestoreworkorder)
+- [PermissionRestoreWorkflowRule](modules.md#permissionrestoreworkflowrule)
+- [PermissionReviseAbsences](modules.md#permissionreviseabsences)
+- [PermissionReviseActionsCodes](modules.md#permissionreviseactionscodes)
+- [PermissionReviseActivitiesGroups](modules.md#permissionreviseactivitiesgroups)
+- [PermissionReviseActivitiesStatuses](modules.md#permissionreviseactivitiesstatuses)
+- [PermissionReviseActivitiesTags](modules.md#permissionreviseactivitiestags)
+- [PermissionReviseAnnouncements](modules.md#permissionreviseannouncements)
+- [PermissionReviseAttendanceAmendments](modules.md#permissionreviseattendanceamendments)
+- [PermissionReviseAttendances](modules.md#permissionreviseattendances)
+- [PermissionReviseBankAccounts](modules.md#permissionrevisebankaccounts)
+- [PermissionReviseClients](modules.md#permissionreviseclients)
+- [PermissionReviseContractorsPayments](modules.md#permissionrevisecontractorspayments)
+- [PermissionReviseCurrencies](modules.md#permissionrevisecurrencies)
+- [PermissionReviseGoal](modules.md#permissionrevisegoal)
+- [PermissionReviseHolidays](modules.md#permissionreviseholidays)
+- [PermissionReviseLeaveTypes](modules.md#permissionreviseleavetypes)
+- [PermissionReviseLeavesAdjustments](modules.md#permissionreviseleavesadjustments)
+- [PermissionReviseLeavesRequests](modules.md#permissionreviseleavesrequests)
+- [PermissionReviseLedgers](modules.md#permissionreviseledgers)
+- [PermissionReviseLocations](modules.md#permissionreviselocations)
+- [PermissionReviseOnDuties](modules.md#permissionreviseonduties)
+- [PermissionReviseOvertime](modules.md#permissionreviseovertime)
+- [PermissionRevisePayrollParameters](modules.md#permissionrevisepayrollparameters)
+- [PermissionRevisePurchaseEnquiry](modules.md#permissionrevisepurchaseenquiry)
+- [PermissionRevisePurchasePayment](modules.md#permissionrevisepurchasepayment)
+- [PermissionReviseQCHubs](modules.md#permissionreviseqchubs)
+- [PermissionReviseQCParameters](modules.md#permissionreviseqcparameters)
+- [PermissionReviseQuotationRequest](modules.md#permissionrevisequotationrequest)
+- [PermissionReviseQuotationResponse](modules.md#permissionrevisequotationresponse)
+- [PermissionReviseSaleReceipt](modules.md#permissionrevisesalereceipt)
+- [PermissionReviseShiftGroups](modules.md#permissionreviseshiftgroups)
+- [PermissionReviseShifts](modules.md#permissionreviseshifts)
+- [PermissionReviseSkillParameters](modules.md#permissionreviseskillparameters)
+- [PermissionReviseStorages](modules.md#permissionrevisestorages)
+- [PermissionReviseStores](modules.md#permissionrevisestores)
+- [PermissionReviseSundries](modules.md#permissionrevisesundries)
+- [PermissionReviseTaxGroups](modules.md#permissionrevisetaxgroups)
+- [PermissionReviseTaxParameters](modules.md#permissionrevisetaxparameters)
+- [PermissionReviseUnitsOfMaterials](modules.md#permissionreviseunitsofmaterials)
+- [PermissionReviseVendors](modules.md#permissionrevisevendors)
+- [PermissionReviseVisitations](modules.md#permissionrevisevisitations)
+- [PermissionRoleApprove](modules.md#permissionroleapprove)
+- [PermissionRoleComplete](modules.md#permissionrolecomplete)
+- [PermissionRoleCompleted](modules.md#permissionrolecompleted)
+- [PermissionRoleDiscard](modules.md#permissionrolediscard)
+- [PermissionRoleDiscarded](modules.md#permissionrolediscarded)
+- [PermissionRoleDrafts](modules.md#permissionroledrafts)
+- [PermissionRoleHalt](modules.md#permissionrolehalt)
+- [PermissionRoleHalted](modules.md#permissionrolehalted)
+- [PermissionRoleNew](modules.md#permissionrolenew)
+- [PermissionRoleRevise](modules.md#permissionrolerevise)
+- [PermissionRoleStanding](modules.md#permissionrolestanding)
+- [PermissionRoleVerify](modules.md#permissionroleverify)
+- [PermissionSalaryApprove](modules.md#permissionsalaryapprove)
+- [PermissionSalaryComplete](modules.md#permissionsalarycomplete)
+- [PermissionSalaryCompleted](modules.md#permissionsalarycompleted)
+- [PermissionSalaryDiscard](modules.md#permissionsalarydiscard)
+- [PermissionSalaryDiscarded](modules.md#permissionsalarydiscarded)
+- [PermissionSalaryDrafts](modules.md#permissionsalarydrafts)
+- [PermissionSalaryHalt](modules.md#permissionsalaryhalt)
+- [PermissionSalaryHalted](modules.md#permissionsalaryhalted)
+- [PermissionSalaryNew](modules.md#permissionsalarynew)
+- [PermissionSalaryRevise](modules.md#permissionsalaryrevise)
+- [PermissionSalaryStanding](modules.md#permissionsalarystanding)
+- [PermissionSalaryVerify](modules.md#permissionsalaryverify)
+- [PermissionSaleReturnApprove](modules.md#permissionsalereturnapprove)
+- [PermissionSaleReturnComplete](modules.md#permissionsalereturncomplete)
+- [PermissionSaleReturnCompleted](modules.md#permissionsalereturncompleted)
+- [PermissionSaleReturnDiscard](modules.md#permissionsalereturndiscard)
+- [PermissionSaleReturnDiscarded](modules.md#permissionsalereturndiscarded)
+- [PermissionSaleReturnDrafts](modules.md#permissionsalereturndrafts)
+- [PermissionSaleReturnHalt](modules.md#permissionsalereturnhalt)
+- [PermissionSaleReturnHalted](modules.md#permissionsalereturnhalted)
+- [PermissionSaleReturnNew](modules.md#permissionsalereturnnew)
+- [PermissionSaleReturnRevise](modules.md#permissionsalereturnrevise)
+- [PermissionSaleReturnStanding](modules.md#permissionsalereturnstanding)
+- [PermissionSaleReturnVerify](modules.md#permissionsalereturnverify)
+- [PermissionSalesEnquiryApprove](modules.md#permissionsalesenquiryapprove)
+- [PermissionSalesEnquiryComplete](modules.md#permissionsalesenquirycomplete)
+- [PermissionSalesEnquiryCompleted](modules.md#permissionsalesenquirycompleted)
+- [PermissionSalesEnquiryDiscard](modules.md#permissionsalesenquirydiscard)
+- [PermissionSalesEnquiryDiscarded](modules.md#permissionsalesenquirydiscarded)
+- [PermissionSalesEnquiryDrafts](modules.md#permissionsalesenquirydrafts)
+- [PermissionSalesEnquiryHalt](modules.md#permissionsalesenquiryhalt)
+- [PermissionSalesEnquiryHalted](modules.md#permissionsalesenquiryhalted)
+- [PermissionSalesEnquiryNew](modules.md#permissionsalesenquirynew)
+- [PermissionSalesEnquiryRevise](modules.md#permissionsalesenquiryrevise)
+- [PermissionSalesEnquiryStanding](modules.md#permissionsalesenquirystanding)
+- [PermissionSalesEnquiryVerify](modules.md#permissionsalesenquiryverify)
+- [PermissionSalesInvoiceApprove](modules.md#permissionsalesinvoiceapprove)
+- [PermissionSalesInvoiceComplete](modules.md#permissionsalesinvoicecomplete)
+- [PermissionSalesInvoiceCompleted](modules.md#permissionsalesinvoicecompleted)
+- [PermissionSalesInvoiceDiscard](modules.md#permissionsalesinvoicediscard)
+- [PermissionSalesInvoiceDiscarded](modules.md#permissionsalesinvoicediscarded)
+- [PermissionSalesInvoiceDrafts](modules.md#permissionsalesinvoicedrafts)
+- [PermissionSalesInvoiceHalt](modules.md#permissionsalesinvoicehalt)
+- [PermissionSalesInvoiceHalted](modules.md#permissionsalesinvoicehalted)
+- [PermissionSalesInvoiceNew](modules.md#permissionsalesinvoicenew)
+- [PermissionSalesInvoiceRevise](modules.md#permissionsalesinvoicerevise)
+- [PermissionSalesInvoiceStanding](modules.md#permissionsalesinvoicestanding)
+- [PermissionSalesInvoiceVerify](modules.md#permissionsalesinvoiceverify)
+- [PermissionSalesOrderApprove](modules.md#permissionsalesorderapprove)
+- [PermissionSalesOrderComplete](modules.md#permissionsalesordercomplete)
+- [PermissionSalesOrderCompleted](modules.md#permissionsalesordercompleted)
+- [PermissionSalesOrderDiscard](modules.md#permissionsalesorderdiscard)
+- [PermissionSalesOrderDiscarded](modules.md#permissionsalesorderdiscarded)
+- [PermissionSalesOrderDrafts](modules.md#permissionsalesorderdrafts)
+- [PermissionSalesOrderHalt](modules.md#permissionsalesorderhalt)
+- [PermissionSalesOrderHalted](modules.md#permissionsalesorderhalted)
+- [PermissionSalesOrderNew](modules.md#permissionsalesordernew)
+- [PermissionSalesOrderRevise](modules.md#permissionsalesorderrevise)
+- [PermissionSalesOrderStanding](modules.md#permissionsalesorderstanding)
+- [PermissionSalesOrderVerify](modules.md#permissionsalesorderverify)
+- [PermissionSalesQuotationApprove](modules.md#permissionsalesquotationapprove)
+- [PermissionSalesQuotationComplete](modules.md#permissionsalesquotationcomplete)
+- [PermissionSalesQuotationCompleted](modules.md#permissionsalesquotationcompleted)
+- [PermissionSalesQuotationDiscard](modules.md#permissionsalesquotationdiscard)
+- [PermissionSalesQuotationDiscarded](modules.md#permissionsalesquotationdiscarded)
+- [PermissionSalesQuotationDrafts](modules.md#permissionsalesquotationdrafts)
+- [PermissionSalesQuotationHalt](modules.md#permissionsalesquotationhalt)
+- [PermissionSalesQuotationHalted](modules.md#permissionsalesquotationhalted)
+- [PermissionSalesQuotationNew](modules.md#permissionsalesquotationnew)
+- [PermissionSalesQuotationRevise](modules.md#permissionsalesquotationrevise)
+- [PermissionSalesQuotationStanding](modules.md#permissionsalesquotationstanding)
+- [PermissionSalesQuotationVerify](modules.md#permissionsalesquotationverify)
+- [PermissionSet](modules.md#permissionset)
+- [PermissionSimpleLogs](modules.md#permissionsimplelogs)
+- [PermissionSkillGroupApprove](modules.md#permissionskillgroupapprove)
+- [PermissionSkillGroupComplete](modules.md#permissionskillgroupcomplete)
+- [PermissionSkillGroupCompleted](modules.md#permissionskillgroupcompleted)
+- [PermissionSkillGroupDiscard](modules.md#permissionskillgroupdiscard)
+- [PermissionSkillGroupDiscarded](modules.md#permissionskillgroupdiscarded)
+- [PermissionSkillGroupDrafts](modules.md#permissionskillgroupdrafts)
+- [PermissionSkillGroupHalt](modules.md#permissionskillgrouphalt)
+- [PermissionSkillGroupHalted](modules.md#permissionskillgrouphalted)
+- [PermissionSkillGroupNew](modules.md#permissionskillgroupnew)
+- [PermissionSkillGroupRevise](modules.md#permissionskillgrouprevise)
+- [PermissionSkillGroupStanding](modules.md#permissionskillgroupstanding)
+- [PermissionSkillGroupVerify](modules.md#permissionskillgroupverify)
+- [PermissionStandingAbsences](modules.md#permissionstandingabsences)
+- [PermissionStandingActionsCodes](modules.md#permissionstandingactionscodes)
+- [PermissionStandingActivitiesGroups](modules.md#permissionstandingactivitiesgroups)
+- [PermissionStandingActivitiesStatuses](modules.md#permissionstandingactivitiesstatuses)
+- [PermissionStandingActivitiesTags](modules.md#permissionstandingactivitiestags)
+- [PermissionStandingAnnouncements](modules.md#permissionstandingannouncements)
+- [PermissionStandingAttendanceAmendments](modules.md#permissionstandingattendanceamendments)
+- [PermissionStandingAttendances](modules.md#permissionstandingattendances)
+- [PermissionStandingBankAccounts](modules.md#permissionstandingbankaccounts)
+- [PermissionStandingClients](modules.md#permissionstandingclients)
+- [PermissionStandingContractorsPayments](modules.md#permissionstandingcontractorspayments)
+- [PermissionStandingCurrencies](modules.md#permissionstandingcurrencies)
+- [PermissionStandingGoal](modules.md#permissionstandinggoal)
+- [PermissionStandingHolidays](modules.md#permissionstandingholidays)
+- [PermissionStandingLeaveTypes](modules.md#permissionstandingleavetypes)
+- [PermissionStandingLeavesAdjustments](modules.md#permissionstandingleavesadjustments)
+- [PermissionStandingLeavesRequests](modules.md#permissionstandingleavesrequests)
+- [PermissionStandingLedgers](modules.md#permissionstandingledgers)
+- [PermissionStandingLocations](modules.md#permissionstandinglocations)
+- [PermissionStandingOnDuties](modules.md#permissionstandingonduties)
+- [PermissionStandingOvertime](modules.md#permissionstandingovertime)
+- [PermissionStandingPayrollParameters](modules.md#permissionstandingpayrollparameters)
+- [PermissionStandingPurchaseEnquiry](modules.md#permissionstandingpurchaseenquiry)
+- [PermissionStandingPurchasePayment](modules.md#permissionstandingpurchasepayment)
+- [PermissionStandingQCHubs](modules.md#permissionstandingqchubs)
+- [PermissionStandingQCParameters](modules.md#permissionstandingqcparameters)
+- [PermissionStandingQuotationRequest](modules.md#permissionstandingquotationrequest)
+- [PermissionStandingQuotationResponse](modules.md#permissionstandingquotationresponse)
+- [PermissionStandingSaleReceipt](modules.md#permissionstandingsalereceipt)
+- [PermissionStandingShiftGroups](modules.md#permissionstandingshiftgroups)
+- [PermissionStandingShifts](modules.md#permissionstandingshifts)
+- [PermissionStandingSkillParameters](modules.md#permissionstandingskillparameters)
+- [PermissionStandingStorages](modules.md#permissionstandingstorages)
+- [PermissionStandingStores](modules.md#permissionstandingstores)
+- [PermissionStandingSundries](modules.md#permissionstandingsundries)
+- [PermissionStandingTaxGroups](modules.md#permissionstandingtaxgroups)
+- [PermissionStandingTaxParameters](modules.md#permissionstandingtaxparameters)
+- [PermissionStandingUnitsOfMaterials](modules.md#permissionstandingunitsofmaterials)
+- [PermissionStandingVendors](modules.md#permissionstandingvendors)
+- [PermissionStandingVisitations](modules.md#permissionstandingvisitations)
+- [PermissionStockAuditApprove](modules.md#permissionstockauditapprove)
+- [PermissionStockAuditComplete](modules.md#permissionstockauditcomplete)
+- [PermissionStockAuditCompleted](modules.md#permissionstockauditcompleted)
+- [PermissionStockAuditDiscard](modules.md#permissionstockauditdiscard)
+- [PermissionStockAuditDiscarded](modules.md#permissionstockauditdiscarded)
+- [PermissionStockAuditDrafts](modules.md#permissionstockauditdrafts)
+- [PermissionStockAuditHalt](modules.md#permissionstockaudithalt)
+- [PermissionStockAuditHalted](modules.md#permissionstockaudithalted)
+- [PermissionStockAuditNew](modules.md#permissionstockauditnew)
+- [PermissionStockAuditRevise](modules.md#permissionstockauditrevise)
+- [PermissionStockAuditStanding](modules.md#permissionstockauditstanding)
+- [PermissionStockAuditVerify](modules.md#permissionstockauditverify)
+- [PermissionStockIssuanceApprove](modules.md#permissionstockissuanceapprove)
+- [PermissionStockIssuanceComplete](modules.md#permissionstockissuancecomplete)
+- [PermissionStockIssuanceCompleted](modules.md#permissionstockissuancecompleted)
+- [PermissionStockIssuanceDiscard](modules.md#permissionstockissuancediscard)
+- [PermissionStockIssuanceDiscarded](modules.md#permissionstockissuancediscarded)
+- [PermissionStockIssuanceDrafts](modules.md#permissionstockissuancedrafts)
+- [PermissionStockIssuanceHalt](modules.md#permissionstockissuancehalt)
+- [PermissionStockIssuanceHalted](modules.md#permissionstockissuancehalted)
+- [PermissionStockIssuanceNew](modules.md#permissionstockissuancenew)
+- [PermissionStockIssuanceRevise](modules.md#permissionstockissuancerevise)
+- [PermissionStockIssuanceStanding](modules.md#permissionstockissuancestanding)
+- [PermissionStockIssuanceVerify](modules.md#permissionstockissuanceverify)
+- [PermissionStockReturnApprove](modules.md#permissionstockreturnapprove)
+- [PermissionStockReturnComplete](modules.md#permissionstockreturncomplete)
+- [PermissionStockReturnCompleted](modules.md#permissionstockreturncompleted)
+- [PermissionStockReturnDiscard](modules.md#permissionstockreturndiscard)
+- [PermissionStockReturnDiscarded](modules.md#permissionstockreturndiscarded)
+- [PermissionStockReturnDrafts](modules.md#permissionstockreturndrafts)
+- [PermissionStockReturnHalt](modules.md#permissionstockreturnhalt)
+- [PermissionStockReturnHalted](modules.md#permissionstockreturnhalted)
+- [PermissionStockReturnNew](modules.md#permissionstockreturnnew)
+- [PermissionStockReturnRevise](modules.md#permissionstockreturnrevise)
+- [PermissionStockReturnStanding](modules.md#permissionstockreturnstanding)
+- [PermissionStockReturnVerify](modules.md#permissionstockreturnverify)
+- [PermissionSupplyOfferApprove](modules.md#permissionsupplyofferapprove)
+- [PermissionSupplyOfferComplete](modules.md#permissionsupplyoffercomplete)
+- [PermissionSupplyOfferCompleted](modules.md#permissionsupplyoffercompleted)
+- [PermissionSupplyOfferDiscard](modules.md#permissionsupplyofferdiscard)
+- [PermissionSupplyOfferDiscarded](modules.md#permissionsupplyofferdiscarded)
+- [PermissionSupplyOfferDrafts](modules.md#permissionsupplyofferdrafts)
+- [PermissionSupplyOfferHalt](modules.md#permissionsupplyofferhalt)
+- [PermissionSupplyOfferHalted](modules.md#permissionsupplyofferhalted)
+- [PermissionSupplyOfferNew](modules.md#permissionsupplyoffernew)
+- [PermissionSupplyOfferRevise](modules.md#permissionsupplyofferrevise)
+- [PermissionSupplyOfferStanding](modules.md#permissionsupplyofferstanding)
+- [PermissionSupplyOfferVerify](modules.md#permissionsupplyofferverify)
+- [PermissionTeamApprove](modules.md#permissionteamapprove)
+- [PermissionTeamComplete](modules.md#permissionteamcomplete)
+- [PermissionTeamCompleted](modules.md#permissionteamcompleted)
+- [PermissionTeamDiscard](modules.md#permissionteamdiscard)
+- [PermissionTeamDiscarded](modules.md#permissionteamdiscarded)
+- [PermissionTeamDrafts](modules.md#permissionteamdrafts)
+- [PermissionTeamHalt](modules.md#permissionteamhalt)
+- [PermissionTeamHalted](modules.md#permissionteamhalted)
+- [PermissionTeamNew](modules.md#permissionteamnew)
+- [PermissionTeamRevise](modules.md#permissionteamrevise)
+- [PermissionTeamStanding](modules.md#permissionteamstanding)
+- [PermissionTeamVerify](modules.md#permissionteamverify)
+- [PermissionUserApprove](modules.md#permissionuserapprove)
+- [PermissionUserDiscard](modules.md#permissionuserdiscard)
+- [PermissionUserDiscarded](modules.md#permissionuserdiscarded)
+- [PermissionUserDrafts](modules.md#permissionuserdrafts)
+- [PermissionUserHalt](modules.md#permissionuserhalt)
+- [PermissionUserHalted](modules.md#permissionuserhalted)
+- [PermissionUserNew](modules.md#permissionusernew)
+- [PermissionUserRevise](modules.md#permissionuserrevise)
+- [PermissionUserStanding](modules.md#permissionuserstanding)
+- [PermissionUserVerify](modules.md#permissionuserverify)
+- [PermissionVendorInvoiceApprove](modules.md#permissionvendorinvoiceapprove)
+- [PermissionVendorInvoiceComplete](modules.md#permissionvendorinvoicecomplete)
+- [PermissionVendorInvoiceCompleted](modules.md#permissionvendorinvoicecompleted)
+- [PermissionVendorInvoiceDiscard](modules.md#permissionvendorinvoicediscard)
+- [PermissionVendorInvoiceDiscarded](modules.md#permissionvendorinvoicediscarded)
+- [PermissionVendorInvoiceDrafts](modules.md#permissionvendorinvoicedrafts)
+- [PermissionVendorInvoiceHalt](modules.md#permissionvendorinvoicehalt)
+- [PermissionVendorInvoiceHalted](modules.md#permissionvendorinvoicehalted)
+- [PermissionVendorInvoiceNew](modules.md#permissionvendorinvoicenew)
+- [PermissionVendorInvoiceRevise](modules.md#permissionvendorinvoicerevise)
+- [PermissionVendorInvoiceStanding](modules.md#permissionvendorinvoicestanding)
+- [PermissionVendorInvoiceVerify](modules.md#permissionvendorinvoiceverify)
+- [PermissionVendorStreamCancel](modules.md#permissionvendorstreamcancel)
+- [PermissionVendorStreamCancelled](modules.md#permissionvendorstreamcancelled)
+- [PermissionVendorStreamComplete](modules.md#permissionvendorstreamcomplete)
+- [PermissionVendorStreamCompleted](modules.md#permissionvendorstreamcompleted)
+- [PermissionVendorStreamNew](modules.md#permissionvendorstreamnew)
+- [PermissionVendorStreamOpen](modules.md#permissionvendorstreamopen)
+- [PermissionVendorStreamReopen](modules.md#permissionvendorstreamreopen)
+- [PermissionVendorStreamUpdate](modules.md#permissionvendorstreamupdate)
+- [PermissionVerifyAbsences](modules.md#permissionverifyabsences)
+- [PermissionVerifyActionsCodes](modules.md#permissionverifyactionscodes)
+- [PermissionVerifyActivitiesGroups](modules.md#permissionverifyactivitiesgroups)
+- [PermissionVerifyActivitiesStatuses](modules.md#permissionverifyactivitiesstatuses)
+- [PermissionVerifyActivitiesTags](modules.md#permissionverifyactivitiestags)
+- [PermissionVerifyAnnouncements](modules.md#permissionverifyannouncements)
+- [PermissionVerifyAttendanceAmendments](modules.md#permissionverifyattendanceamendments)
+- [PermissionVerifyAttendances](modules.md#permissionverifyattendances)
+- [PermissionVerifyBankAccounts](modules.md#permissionverifybankaccounts)
+- [PermissionVerifyClients](modules.md#permissionverifyclients)
+- [PermissionVerifyContractorsPayments](modules.md#permissionverifycontractorspayments)
+- [PermissionVerifyCurrencies](modules.md#permissionverifycurrencies)
+- [PermissionVerifyGoal](modules.md#permissionverifygoal)
+- [PermissionVerifyHolidays](modules.md#permissionverifyholidays)
+- [PermissionVerifyLeaveTypes](modules.md#permissionverifyleavetypes)
+- [PermissionVerifyLeavesAdjustments](modules.md#permissionverifyleavesadjustments)
+- [PermissionVerifyLeavesRequests](modules.md#permissionverifyleavesrequests)
+- [PermissionVerifyLedgers](modules.md#permissionverifyledgers)
+- [PermissionVerifyLocations](modules.md#permissionverifylocations)
+- [PermissionVerifyOnDuties](modules.md#permissionverifyonduties)
+- [PermissionVerifyOvertime](modules.md#permissionverifyovertime)
+- [PermissionVerifyPayrollParameters](modules.md#permissionverifypayrollparameters)
+- [PermissionVerifyPurchaseEnquiry](modules.md#permissionverifypurchaseenquiry)
+- [PermissionVerifyPurchasePayment](modules.md#permissionverifypurchasepayment)
+- [PermissionVerifyQCHubs](modules.md#permissionverifyqchubs)
+- [PermissionVerifyQCParameters](modules.md#permissionverifyqcparameters)
+- [PermissionVerifyQuotationRequest](modules.md#permissionverifyquotationrequest)
+- [PermissionVerifyQuotationResponse](modules.md#permissionverifyquotationresponse)
+- [PermissionVerifySaleReceipt](modules.md#permissionverifysalereceipt)
+- [PermissionVerifyShiftGroups](modules.md#permissionverifyshiftgroups)
+- [PermissionVerifyShifts](modules.md#permissionverifyshifts)
+- [PermissionVerifySkillParameters](modules.md#permissionverifyskillparameters)
+- [PermissionVerifyStorages](modules.md#permissionverifystorages)
+- [PermissionVerifyStores](modules.md#permissionverifystores)
+- [PermissionVerifySundries](modules.md#permissionverifysundries)
+- [PermissionVerifyTaxGroups](modules.md#permissionverifytaxgroups)
+- [PermissionVerifyTaxParameters](modules.md#permissionverifytaxparameters)
+- [PermissionVerifyUnitsOfMaterials](modules.md#permissionverifyunitsofmaterials)
+- [PermissionVerifyVendors](modules.md#permissionverifyvendors)
+- [PermissionVerifyVisitations](modules.md#permissionverifyvisitations)
+- [PermissionViewAssociate](modules.md#permissionviewassociate)
+- [PermissionViewClientAccount](modules.md#permissionviewclientaccount)
+- [PermissionViewContractor](modules.md#permissionviewcontractor)
+- [PermissionViewFormFields](modules.md#permissionviewformfields)
+- [PermissionViewFormSections](modules.md#permissionviewformsections)
+- [PermissionViewLabel](modules.md#permissionviewlabel)
+- [PermissionViewVendorAccount](modules.md#permissionviewvendoraccount)
+- [PermissionWorkOrderApprove](modules.md#permissionworkorderapprove)
+- [PermissionWorkOrderComplete](modules.md#permissionworkordercomplete)
+- [PermissionWorkOrderCompleted](modules.md#permissionworkordercompleted)
+- [PermissionWorkOrderDiscard](modules.md#permissionworkorderdiscard)
+- [PermissionWorkOrderDiscarded](modules.md#permissionworkorderdiscarded)
+- [PermissionWorkOrderDrafts](modules.md#permissionworkorderdrafts)
+- [PermissionWorkOrderHalt](modules.md#permissionworkorderhalt)
+- [PermissionWorkOrderHalted](modules.md#permissionworkorderhalted)
+- [PermissionWorkOrderNew](modules.md#permissionworkordernew)
+- [PermissionWorkOrderRevise](modules.md#permissionworkorderrevise)
+- [PermissionWorkOrderStanding](modules.md#permissionworkorderstanding)
+- [PermissionWorkOrderVerify](modules.md#permissionworkorderverify)
+- [PermissionWorkflowRuleApprove](modules.md#permissionworkflowruleapprove)
+- [PermissionWorkflowRuleComplete](modules.md#permissionworkflowrulecomplete)
+- [PermissionWorkflowRuleCompleted](modules.md#permissionworkflowrulecompleted)
+- [PermissionWorkflowRuleDiscard](modules.md#permissionworkflowrulediscard)
+- [PermissionWorkflowRuleDiscarded](modules.md#permissionworkflowrulediscarded)
+- [PermissionWorkflowRuleDrafts](modules.md#permissionworkflowruledrafts)
+- [PermissionWorkflowRuleHalt](modules.md#permissionworkflowrulehalt)
+- [PermissionWorkflowRuleHalted](modules.md#permissionworkflowrulehalted)
+- [PermissionWorkflowRuleNew](modules.md#permissionworkflowrulenew)
+- [PermissionWorkflowRuleRevise](modules.md#permissionworkflowrulerevise)
+- [PermissionWorkflowRuleStanding](modules.md#permissionworkflowrulestanding)
+- [PermissionWorkflowRuleVerify](modules.md#permissionworkflowruleverify)
 - [ProductionIndentsService](modules.md#productionindentsservice)
 - [ProductionPlansService](modules.md#productionplansservice)
 - [ProductsService](modules.md#productsservice)
@@ -12249,6 +13548,12996 @@ src/payroll_params.scailo_connect.ts:16
 
 ___
 
+### PermissionActivityCancel
+
+• `Const` **PermissionActivityCancel**: ``"activities-mark-cancel"``
+
+#### Defined in
+
+permissions.ts:1331
+
+___
+
+### PermissionActivityCancelled
+
+• `Const` **PermissionActivityCancelled**: ``"activities-cancelled"``
+
+#### Defined in
+
+permissions.ts:1330
+
+___
+
+### PermissionActivityComplete
+
+• `Const` **PermissionActivityComplete**: ``"activities-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1328
+
+___
+
+### PermissionActivityCompleted
+
+• `Const` **PermissionActivityCompleted**: ``"activities-completed"``
+
+#### Defined in
+
+permissions.ts:1327
+
+___
+
+### PermissionActivityNew
+
+• `Const` **PermissionActivityNew**: ``"activities-create"``
+
+#### Defined in
+
+permissions.ts:1324
+
+___
+
+### PermissionActivityOpen
+
+• `Const` **PermissionActivityOpen**: ``"activities-open"``
+
+#### Defined in
+
+permissions.ts:1326
+
+___
+
+### PermissionActivityReopen
+
+• `Const` **PermissionActivityReopen**: ``"activities-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1329
+
+___
+
+### PermissionActivityUpdate
+
+• `Const` **PermissionActivityUpdate**: ``"activities-update"``
+
+#### Defined in
+
+permissions.ts:1325
+
+___
+
+### PermissionAmendFamily
+
+• `Const` **PermissionAmendFamily**: ``"families-amend"``
+
+#### Defined in
+
+permissions.ts:854
+
+___
+
+### PermissionAmendProformaInvoice
+
+• `Const` **PermissionAmendProformaInvoice**: ``"proforma-invoices-amend"``
+
+#### Defined in
+
+permissions.ts:471
+
+___
+
+### PermissionAmendPurchaseOrder
+
+• `Const` **PermissionAmendPurchaseOrder**: ``"purchases-amend"``
+
+#### Defined in
+
+permissions.ts:384
+
+___
+
+### PermissionAmendSalesEnquiry
+
+• `Const` **PermissionAmendSalesEnquiry**: ``"sales-enquiries-amend"``
+
+#### Defined in
+
+permissions.ts:750
+
+___
+
+### PermissionAmendSalesInvoice
+
+• `Const` **PermissionAmendSalesInvoice**: ``"sales-invoices-amend"``
+
+#### Defined in
+
+permissions.ts:487
+
+___
+
+### PermissionAmendSalesOrder
+
+• `Const` **PermissionAmendSalesOrder**: ``"sales-orders-amend"``
+
+#### Defined in
+
+permissions.ts:439
+
+___
+
+### PermissionAmendSalesQuotation
+
+• `Const` **PermissionAmendSalesQuotation**: ``"sales-quotations-amend"``
+
+#### Defined in
+
+permissions.ts:455
+
+___
+
+### PermissionAmendSupplyOffer
+
+• `Const` **PermissionAmendSupplyOffer**: ``"supply-offers-amend"``
+
+#### Defined in
+
+permissions.ts:368
+
+___
+
+### PermissionApproveAbsences
+
+• `Const` **PermissionApproveAbsences**: ``"absences-approve"``
+
+#### Defined in
+
+permissions.ts:1154
+
+___
+
+### PermissionApproveActionsCodes
+
+• `Const` **PermissionApproveActionsCodes**: ``"actions-codes-approve"``
+
+#### Defined in
+
+permissions.ts:1315
+
+___
+
+### PermissionApproveActivitiesGroups
+
+• `Const` **PermissionApproveActivitiesGroups**: ``"activities-groups-approve"``
+
+#### Defined in
+
+permissions.ts:1303
+
+___
+
+### PermissionApproveActivitiesStatuses
+
+• `Const` **PermissionApproveActivitiesStatuses**: ``"activities-statuses-approve"``
+
+#### Defined in
+
+permissions.ts:1291
+
+___
+
+### PermissionApproveActivitiesTags
+
+• `Const` **PermissionApproveActivitiesTags**: ``"activities-tags-approve"``
+
+#### Defined in
+
+permissions.ts:1279
+
+___
+
+### PermissionApproveAnnouncements
+
+• `Const` **PermissionApproveAnnouncements**: ``"announcements-approve"``
+
+#### Defined in
+
+permissions.ts:1037
+
+___
+
+### PermissionApproveAttendanceAmendments
+
+• `Const` **PermissionApproveAttendanceAmendments**: ``"attendances-amendments-approve"``
+
+#### Defined in
+
+permissions.ts:1180
+
+___
+
+### PermissionApproveAttendances
+
+• `Const` **PermissionApproveAttendances**: ``"attendances-approve"``
+
+#### Defined in
+
+permissions.ts:1141
+
+___
+
+### PermissionApproveBankAccounts
+
+• `Const` **PermissionApproveBankAccounts**: ``"bankaccounts-approve"``
+
+#### Defined in
+
+permissions.ts:977
+
+___
+
+### PermissionApproveClients
+
+• `Const` **PermissionApproveClients**: ``"clients-approve"``
+
+#### Defined in
+
+permissions.ts:42
+
+___
+
+### PermissionApproveContractorsPayments
+
+• `Const` **PermissionApproveContractorsPayments**: ``"contractors-payments-approve"``
+
+#### Defined in
+
+permissions.ts:698
+
+___
+
+### PermissionApproveCurrencies
+
+• `Const` **PermissionApproveCurrencies**: ``"currencies-approve"``
+
+#### Defined in
+
+permissions.ts:389
+
+___
+
+### PermissionApproveGoal
+
+• `Const` **PermissionApproveGoal**: ``"goals-approve"``
+
+#### Defined in
+
+permissions.ts:1268
+
+___
+
+### PermissionApproveHolidays
+
+• `Const` **PermissionApproveHolidays**: ``"holidays-approve"``
+
+#### Defined in
+
+permissions.ts:1076
+
+___
+
+### PermissionApproveLeaveTypes
+
+• `Const` **PermissionApproveLeaveTypes**: ``"leaves-types-approve"``
+
+#### Defined in
+
+permissions.ts:1089
+
+___
+
+### PermissionApproveLeavesAdjustments
+
+• `Const` **PermissionApproveLeavesAdjustments**: ``"leaves-adjustments-approve"``
+
+#### Defined in
+
+permissions.ts:1102
+
+___
+
+### PermissionApproveLeavesRequests
+
+• `Const` **PermissionApproveLeavesRequests**: ``"leaves-requests-approve"``
+
+#### Defined in
+
+permissions.ts:1115
+
+___
+
+### PermissionApproveLedgers
+
+• `Const` **PermissionApproveLedgers**: ``"ledgers-approve"``
+
+#### Defined in
+
+permissions.ts:1025
+
+___
+
+### PermissionApproveLocations
+
+• `Const` **PermissionApproveLocations**: ``"locations-approve"``
+
+#### Defined in
+
+permissions.ts:965
+
+___
+
+### PermissionApproveOnDuties
+
+• `Const` **PermissionApproveOnDuties**: ``"onduties-approve"``
+
+#### Defined in
+
+permissions.ts:1167
+
+___
+
+### PermissionApproveOvertime
+
+• `Const` **PermissionApproveOvertime**: ``"overtimes-approve"``
+
+#### Defined in
+
+permissions.ts:1128
+
+___
+
+### PermissionApprovePayrollParameters
+
+• `Const` **PermissionApprovePayrollParameters**: ``"payroll-params-approve"``
+
+#### Defined in
+
+permissions.ts:926
+
+___
+
+### PermissionApprovePurchaseEnquiry
+
+• `Const` **PermissionApprovePurchaseEnquiry**: ``"purchases-enquiries-approve"``
+
+#### Defined in
+
+permissions.ts:728
+
+___
+
+### PermissionApprovePurchasePayment
+
+• `Const` **PermissionApprovePurchasePayment**: ``"purchases-payments-approve"``
+
+#### Defined in
+
+permissions.ts:612
+
+___
+
+### PermissionApproveQCHubs
+
+• `Const` **PermissionApproveQCHubs**: ``"qchubs-approve"``
+
+#### Defined in
+
+permissions.ts:1001
+
+___
+
+### PermissionApproveQCParameters
+
+• `Const` **PermissionApproveQCParameters**: ``"qc-params-approve"``
+
+#### Defined in
+
+permissions.ts:859
+
+___
+
+### PermissionApproveQuotationRequest
+
+• `Const` **PermissionApproveQuotationRequest**: ``"quotations-requests-approve"``
+
+#### Defined in
+
+permissions.ts:759
+
+___
+
+### PermissionApproveQuotationResponse
+
+• `Const` **PermissionApproveQuotationResponse**: ``"quotations-responses-approve"``
+
+#### Defined in
+
+permissions.ts:774
+
+___
+
+### PermissionApproveSaleReceipt
+
+• `Const` **PermissionApproveSaleReceipt**: ``"sales-receipts-approve"``
+
+#### Defined in
+
+permissions.ts:625
+
+___
+
+### PermissionApproveShiftGroups
+
+• `Const` **PermissionApproveShiftGroups**: ``"shift-groups-approve"``
+
+#### Defined in
+
+permissions.ts:1063
+
+___
+
+### PermissionApproveShifts
+
+• `Const` **PermissionApproveShifts**: ``"shifts-approve"``
+
+#### Defined in
+
+permissions.ts:1050
+
+___
+
+### PermissionApproveSkillParameters
+
+• `Const` **PermissionApproveSkillParameters**: ``"skills-params-approve"``
+
+#### Defined in
+
+permissions.ts:1236
+
+___
+
+### PermissionApproveStorages
+
+• `Const` **PermissionApproveStorages**: ``"storages-approve"``
+
+#### Defined in
+
+permissions.ts:1013
+
+___
+
+### PermissionApproveStores
+
+• `Const` **PermissionApproveStores**: ``"stores-approve"``
+
+#### Defined in
+
+permissions.ts:989
+
+___
+
+### PermissionApproveSundries
+
+• `Const` **PermissionApproveSundries**: ``"sundries-approve"``
+
+#### Defined in
+
+permissions.ts:711
+
+___
+
+### PermissionApproveTaxGroups
+
+• `Const` **PermissionApproveTaxGroups**: ``"tax-groups-approve"``
+
+#### Defined in
+
+permissions.ts:914
+
+___
+
+### PermissionApproveTaxParameters
+
+• `Const` **PermissionApproveTaxParameters**: ``"tax-params-approve"``
+
+#### Defined in
+
+permissions.ts:902
+
+___
+
+### PermissionApproveUnitsOfMaterials
+
+• `Const` **PermissionApproveUnitsOfMaterials**: ``"units-of-materials-approve"``
+
+#### Defined in
+
+permissions.ts:401
+
+___
+
+### PermissionApproveVendors
+
+• `Const` **PermissionApproveVendors**: ``"vendors-approve"``
+
+#### Defined in
+
+permissions.ts:66
+
+___
+
+### PermissionApproveVisitations
+
+• `Const` **PermissionApproveVisitations**: ``"visitations-approve"``
+
+#### Defined in
+
+permissions.ts:1223
+
+___
+
+### PermissionAssetIndentApprove
+
+• `Const` **PermissionAssetIndentApprove**: ``"asset-indents-approve"``
+
+#### Defined in
+
+permissions.ts:271
+
+___
+
+### PermissionAssetIndentComplete
+
+• `Const` **PermissionAssetIndentComplete**: ``"asset-indents-mark-complete"``
+
+#### Defined in
+
+permissions.ts:275
+
+___
+
+### PermissionAssetIndentCompleted
+
+• `Const` **PermissionAssetIndentCompleted**: ``"asset-indents-completed"``
+
+#### Defined in
+
+permissions.ts:273
+
+___
+
+### PermissionAssetIndentDiscard
+
+• `Const` **PermissionAssetIndentDiscard**: ``"asset-indents-extra-discard"``
+
+#### Defined in
+
+permissions.ts:276
+
+___
+
+### PermissionAssetIndentDiscarded
+
+• `Const` **PermissionAssetIndentDiscarded**: ``"asset-indents-discarded"``
+
+#### Defined in
+
+permissions.ts:269
+
+___
+
+### PermissionAssetIndentDrafts
+
+• `Const` **PermissionAssetIndentDrafts**: ``"asset-indents-drafts"``
+
+#### Defined in
+
+permissions.ts:265
+
+___
+
+### PermissionAssetIndentHalt
+
+• `Const` **PermissionAssetIndentHalt**: ``"asset-indents-extra-halt"``
+
+#### Defined in
+
+permissions.ts:274
+
+___
+
+### PermissionAssetIndentHalted
+
+• `Const` **PermissionAssetIndentHalted**: ``"asset-indents-halted"``
+
+#### Defined in
+
+permissions.ts:268
+
+___
+
+### PermissionAssetIndentNew
+
+• `Const` **PermissionAssetIndentNew**: ``"asset-indents-new"``
+
+#### Defined in
+
+permissions.ts:264
+
+___
+
+### PermissionAssetIndentRevise
+
+• `Const` **PermissionAssetIndentRevise**: ``"asset-indents-revise"``
+
+#### Defined in
+
+permissions.ts:267
+
+___
+
+### PermissionAssetIndentStanding
+
+• `Const` **PermissionAssetIndentStanding**: ``"asset-indents-standing"``
+
+#### Defined in
+
+permissions.ts:272
+
+___
+
+### PermissionAssetIndentVerify
+
+• `Const` **PermissionAssetIndentVerify**: ``"asset-indents-verify"``
+
+#### Defined in
+
+permissions.ts:266
+
+___
+
+### PermissionClientStreamCancel
+
+• `Const` **PermissionClientStreamCancel**: ``"client-streams-mark-cancel"``
+
+#### Defined in
+
+permissions.ts:1362
+
+___
+
+### PermissionClientStreamCancelled
+
+• `Const` **PermissionClientStreamCancelled**: ``"client-streams-cancelled"``
+
+#### Defined in
+
+permissions.ts:1361
+
+___
+
+### PermissionClientStreamComplete
+
+• `Const` **PermissionClientStreamComplete**: ``"client-streams-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1359
+
+___
+
+### PermissionClientStreamCompleted
+
+• `Const` **PermissionClientStreamCompleted**: ``"client-streams-completed"``
+
+#### Defined in
+
+permissions.ts:1358
+
+___
+
+### PermissionClientStreamNew
+
+• `Const` **PermissionClientStreamNew**: ``"client-streams-create"``
+
+#### Defined in
+
+permissions.ts:1355
+
+___
+
+### PermissionClientStreamOpen
+
+• `Const` **PermissionClientStreamOpen**: ``"client-streams-open"``
+
+#### Defined in
+
+permissions.ts:1357
+
+___
+
+### PermissionClientStreamReopen
+
+• `Const` **PermissionClientStreamReopen**: ``"client-streams-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1360
+
+___
+
+### PermissionClientStreamUpdate
+
+• `Const` **PermissionClientStreamUpdate**: ``"client-streams-update"``
+
+#### Defined in
+
+permissions.ts:1356
+
+___
+
+### PermissionCompletedAbsences
+
+• `Const` **PermissionCompletedAbsences**: ``"absences-completed"``
+
+#### Defined in
+
+permissions.ts:1160
+
+___
+
+### PermissionCompletedAnnouncements
+
+• `Const` **PermissionCompletedAnnouncements**: ``"announcements-completed"``
+
+#### Defined in
+
+permissions.ts:1043
+
+___
+
+### PermissionCompletedAttendanceAmendments
+
+• `Const` **PermissionCompletedAttendanceAmendments**: ``"attendances-amendments-completed"``
+
+#### Defined in
+
+permissions.ts:1186
+
+___
+
+### PermissionCompletedAttendances
+
+• `Const` **PermissionCompletedAttendances**: ``"attendances-completed"``
+
+#### Defined in
+
+permissions.ts:1147
+
+___
+
+### PermissionCompletedContractorsPayments
+
+• `Const` **PermissionCompletedContractorsPayments**: ``"contractors-payments-completed"``
+
+#### Defined in
+
+permissions.ts:704
+
+___
+
+### PermissionCompletedGoal
+
+• `Const` **PermissionCompletedGoal**: ``"goals-completed"``
+
+#### Defined in
+
+permissions.ts:1270
+
+___
+
+### PermissionCompletedHolidays
+
+• `Const` **PermissionCompletedHolidays**: ``"holidays-completed"``
+
+#### Defined in
+
+permissions.ts:1082
+
+___
+
+### PermissionCompletedLeaveTypes
+
+• `Const` **PermissionCompletedLeaveTypes**: ``"leaves-types-completed"``
+
+#### Defined in
+
+permissions.ts:1095
+
+___
+
+### PermissionCompletedLeavesAdjustments
+
+• `Const` **PermissionCompletedLeavesAdjustments**: ``"leaves-adjustments-completed"``
+
+#### Defined in
+
+permissions.ts:1108
+
+___
+
+### PermissionCompletedLeavesRequests
+
+• `Const` **PermissionCompletedLeavesRequests**: ``"leaves-requests-completed"``
+
+#### Defined in
+
+permissions.ts:1121
+
+___
+
+### PermissionCompletedOnDuties
+
+• `Const` **PermissionCompletedOnDuties**: ``"onduties-completed"``
+
+#### Defined in
+
+permissions.ts:1173
+
+___
+
+### PermissionCompletedOvertime
+
+• `Const` **PermissionCompletedOvertime**: ``"overtimes-completed"``
+
+#### Defined in
+
+permissions.ts:1134
+
+___
+
+### PermissionCompletedPayrollParameters
+
+• `Const` **PermissionCompletedPayrollParameters**: ``"payroll-params-completed"``
+
+#### Defined in
+
+permissions.ts:932
+
+___
+
+### PermissionCompletedPurchaseEnquiry
+
+• `Const` **PermissionCompletedPurchaseEnquiry**: ``"purchases-enquiries-completed"``
+
+#### Defined in
+
+permissions.ts:730
+
+___
+
+### PermissionCompletedPurchasePayment
+
+• `Const` **PermissionCompletedPurchasePayment**: ``"purchases-payments-completed"``
+
+#### Defined in
+
+permissions.ts:618
+
+___
+
+### PermissionCompletedQCParameters
+
+• `Const` **PermissionCompletedQCParameters**: ``"qc-params-completed"``
+
+#### Defined in
+
+permissions.ts:865
+
+___
+
+### PermissionCompletedQuotationRequest
+
+• `Const` **PermissionCompletedQuotationRequest**: ``"quotations-requests-completed"``
+
+#### Defined in
+
+permissions.ts:761
+
+___
+
+### PermissionCompletedQuotationResponse
+
+• `Const` **PermissionCompletedQuotationResponse**: ``"quotations-responses-completed"``
+
+#### Defined in
+
+permissions.ts:776
+
+___
+
+### PermissionCompletedSaleReceipt
+
+• `Const` **PermissionCompletedSaleReceipt**: ``"sales-receipts-completed"``
+
+#### Defined in
+
+permissions.ts:631
+
+___
+
+### PermissionCompletedShiftGroups
+
+• `Const` **PermissionCompletedShiftGroups**: ``"shift-groups-completed"``
+
+#### Defined in
+
+permissions.ts:1069
+
+___
+
+### PermissionCompletedShifts
+
+• `Const` **PermissionCompletedShifts**: ``"shifts-completed"``
+
+#### Defined in
+
+permissions.ts:1056
+
+___
+
+### PermissionCompletedSkillParameters
+
+• `Const` **PermissionCompletedSkillParameters**: ``"skills-params-completed"``
+
+#### Defined in
+
+permissions.ts:1242
+
+___
+
+### PermissionCompletedSundries
+
+• `Const` **PermissionCompletedSundries**: ``"sundries-completed"``
+
+#### Defined in
+
+permissions.ts:717
+
+___
+
+### PermissionCompletedVisitations
+
+• `Const` **PermissionCompletedVisitations**: ``"visitations-completed"``
+
+#### Defined in
+
+permissions.ts:1229
+
+___
+
+### PermissionComponentsAdd
+
+• `Const` **PermissionComponentsAdd**: ``"components-add"``
+
+#### Defined in
+
+permissions.ts:218
+
+___
+
+### PermissionComponentsApproveIQC
+
+• `Const` **PermissionComponentsApproveIQC**: ``"components-extra-iqc-approve"``
+
+#### Defined in
+
+permissions.ts:220
+
+___
+
+### PermissionComponentsConsume
+
+• `Const` **PermissionComponentsConsume**: ``"components-extra-consume"``
+
+#### Defined in
+
+permissions.ts:230
+
+___
+
+### PermissionComponentsConsumed
+
+• `Const` **PermissionComponentsConsumed**: ``"components-consumed"``
+
+#### Defined in
+
+permissions.ts:222
+
+___
+
+### PermissionComponentsDiscard
+
+• `Const` **PermissionComponentsDiscard**: ``"components-extra-discard"``
+
+#### Defined in
+
+permissions.ts:231
+
+___
+
+### PermissionComponentsDiscarded
+
+• `Const` **PermissionComponentsDiscarded**: ``"components-discarded"``
+
+#### Defined in
+
+permissions.ts:227
+
+___
+
+### PermissionComponentsIQC
+
+• `Const` **PermissionComponentsIQC**: ``"components-iqc"``
+
+#### Defined in
+
+permissions.ts:219
+
+___
+
+### PermissionComponentsIssued
+
+• `Const` **PermissionComponentsIssued**: ``"components-issued"``
+
+#### Defined in
+
+permissions.ts:228
+
+___
+
+### PermissionComponentsReject
+
+• `Const` **PermissionComponentsReject**: ``"components-extra-reject"``
+
+#### Defined in
+
+permissions.ts:229
+
+___
+
+### PermissionComponentsRejected
+
+• `Const` **PermissionComponentsRejected**: ``"components-rejected"``
+
+#### Defined in
+
+permissions.ts:224
+
+___
+
+### PermissionComponentsReturnable
+
+• `Const` **PermissionComponentsReturnable**: ``"components-returnable"``
+
+#### Defined in
+
+permissions.ts:225
+
+___
+
+### PermissionComponentsRework
+
+• `Const` **PermissionComponentsRework**: ``"components-rework"``
+
+#### Defined in
+
+permissions.ts:223
+
+___
+
+### PermissionComponentsScrap
+
+• `Const` **PermissionComponentsScrap**: ``"components-scrap"``
+
+#### Defined in
+
+permissions.ts:226
+
+___
+
+### PermissionComponentsStore
+
+• `Const` **PermissionComponentsStore**: ``"components-store"``
+
+#### Defined in
+
+permissions.ts:221
+
+___
+
+### PermissionComponentsView
+
+• `Const` **PermissionComponentsView**: ``"components-view"``
+
+#### Defined in
+
+permissions.ts:232
+
+___
+
+### PermissionCreditNoteApprove
+
+• `Const` **PermissionCreditNoteApprove**: ``"credit-notes-approve"``
+
+#### Defined in
+
+permissions.ts:642
+
+___
+
+### PermissionCreditNoteComplete
+
+• `Const` **PermissionCreditNoteComplete**: ``"credit-notes-mark-complete"``
+
+#### Defined in
+
+permissions.ts:646
+
+___
+
+### PermissionCreditNoteCompleted
+
+• `Const` **PermissionCreditNoteCompleted**: ``"credit-notes-completed"``
+
+#### Defined in
+
+permissions.ts:644
+
+___
+
+### PermissionCreditNoteDiscard
+
+• `Const` **PermissionCreditNoteDiscard**: ``"credit-notes-extra-discard"``
+
+#### Defined in
+
+permissions.ts:647
+
+___
+
+### PermissionCreditNoteDiscarded
+
+• `Const` **PermissionCreditNoteDiscarded**: ``"credit-notes-discarded"``
+
+#### Defined in
+
+permissions.ts:640
+
+___
+
+### PermissionCreditNoteDrafts
+
+• `Const` **PermissionCreditNoteDrafts**: ``"credit-notes-drafts"``
+
+#### Defined in
+
+permissions.ts:636
+
+___
+
+### PermissionCreditNoteHalt
+
+• `Const` **PermissionCreditNoteHalt**: ``"credit-notes-extra-halt"``
+
+#### Defined in
+
+permissions.ts:645
+
+___
+
+### PermissionCreditNoteHalted
+
+• `Const` **PermissionCreditNoteHalted**: ``"credit-notes-halted"``
+
+#### Defined in
+
+permissions.ts:639
+
+___
+
+### PermissionCreditNoteNew
+
+• `Const` **PermissionCreditNoteNew**: ``"credit-notes-new"``
+
+#### Defined in
+
+permissions.ts:635
+
+___
+
+### PermissionCreditNoteRevise
+
+• `Const` **PermissionCreditNoteRevise**: ``"credit-notes-revise"``
+
+#### Defined in
+
+permissions.ts:638
+
+___
+
+### PermissionCreditNoteStanding
+
+• `Const` **PermissionCreditNoteStanding**: ``"credit-notes-standing"``
+
+#### Defined in
+
+permissions.ts:643
+
+___
+
+### PermissionCreditNoteVerify
+
+• `Const` **PermissionCreditNoteVerify**: ``"credit-notes-verify"``
+
+#### Defined in
+
+permissions.ts:637
+
+___
+
+### PermissionDebitNoteApprove
+
+• `Const` **PermissionDebitNoteApprove**: ``"debit-notes-approve"``
+
+#### Defined in
+
+permissions.ts:657
+
+___
+
+### PermissionDebitNoteComplete
+
+• `Const` **PermissionDebitNoteComplete**: ``"debit-notes-mark-complete"``
+
+#### Defined in
+
+permissions.ts:661
+
+___
+
+### PermissionDebitNoteCompleted
+
+• `Const` **PermissionDebitNoteCompleted**: ``"debit-notes-completed"``
+
+#### Defined in
+
+permissions.ts:659
+
+___
+
+### PermissionDebitNoteDiscard
+
+• `Const` **PermissionDebitNoteDiscard**: ``"debit-notes-extra-discard"``
+
+#### Defined in
+
+permissions.ts:662
+
+___
+
+### PermissionDebitNoteDiscarded
+
+• `Const` **PermissionDebitNoteDiscarded**: ``"debit-notes-discarded"``
+
+#### Defined in
+
+permissions.ts:655
+
+___
+
+### PermissionDebitNoteDrafts
+
+• `Const` **PermissionDebitNoteDrafts**: ``"debit-notes-drafts"``
+
+#### Defined in
+
+permissions.ts:651
+
+___
+
+### PermissionDebitNoteHalt
+
+• `Const` **PermissionDebitNoteHalt**: ``"debit-notes-extra-halt"``
+
+#### Defined in
+
+permissions.ts:660
+
+___
+
+### PermissionDebitNoteHalted
+
+• `Const` **PermissionDebitNoteHalted**: ``"debit-notes-halted"``
+
+#### Defined in
+
+permissions.ts:654
+
+___
+
+### PermissionDebitNoteNew
+
+• `Const` **PermissionDebitNoteNew**: ``"debit-notes-new"``
+
+#### Defined in
+
+permissions.ts:650
+
+___
+
+### PermissionDebitNoteRevise
+
+• `Const` **PermissionDebitNoteRevise**: ``"debit-notes-revise"``
+
+#### Defined in
+
+permissions.ts:653
+
+___
+
+### PermissionDebitNoteStanding
+
+• `Const` **PermissionDebitNoteStanding**: ``"debit-notes-standing"``
+
+#### Defined in
+
+permissions.ts:658
+
+___
+
+### PermissionDebitNoteVerify
+
+• `Const` **PermissionDebitNoteVerify**: ``"debit-notes-verify"``
+
+#### Defined in
+
+permissions.ts:652
+
+___
+
+### PermissionDepartmentApprove
+
+• `Const` **PermissionDepartmentApprove**: ``"departments-approve"``
+
+#### Defined in
+
+permissions.ts:1212
+
+___
+
+### PermissionDepartmentComplete
+
+• `Const` **PermissionDepartmentComplete**: ``"departments-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1216
+
+___
+
+### PermissionDepartmentCompleted
+
+• `Const` **PermissionDepartmentCompleted**: ``"departments-completed"``
+
+#### Defined in
+
+permissions.ts:1214
+
+___
+
+### PermissionDepartmentDiscard
+
+• `Const` **PermissionDepartmentDiscard**: ``"departments-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1217
+
+___
+
+### PermissionDepartmentDiscarded
+
+• `Const` **PermissionDepartmentDiscarded**: ``"departments-discarded"``
+
+#### Defined in
+
+permissions.ts:1210
+
+___
+
+### PermissionDepartmentDrafts
+
+• `Const` **PermissionDepartmentDrafts**: ``"departments-drafts"``
+
+#### Defined in
+
+permissions.ts:1206
+
+___
+
+### PermissionDepartmentHalt
+
+• `Const` **PermissionDepartmentHalt**: ``"departments-extra-halt"``
+
+#### Defined in
+
+permissions.ts:1215
+
+___
+
+### PermissionDepartmentHalted
+
+• `Const` **PermissionDepartmentHalted**: ``"departments-halted"``
+
+#### Defined in
+
+permissions.ts:1209
+
+___
+
+### PermissionDepartmentNew
+
+• `Const` **PermissionDepartmentNew**: ``"departments-new"``
+
+#### Defined in
+
+permissions.ts:1205
+
+___
+
+### PermissionDepartmentRevise
+
+• `Const` **PermissionDepartmentRevise**: ``"departments-revise"``
+
+#### Defined in
+
+permissions.ts:1208
+
+___
+
+### PermissionDepartmentStanding
+
+• `Const` **PermissionDepartmentStanding**: ``"departments-standing"``
+
+#### Defined in
+
+permissions.ts:1213
+
+___
+
+### PermissionDepartmentVerify
+
+• `Const` **PermissionDepartmentVerify**: ``"departments-verify"``
+
+#### Defined in
+
+permissions.ts:1207
+
+___
+
+### PermissionDescriptiveLogs
+
+• `Const` **PermissionDescriptiveLogs**: ``"logs-descriptive"``
+
+#### Defined in
+
+permissions.ts:954
+
+___
+
+### PermissionDiscardAbsences
+
+• `Const` **PermissionDiscardAbsences**: ``"absences-discard"``
+
+#### Defined in
+
+permissions.ts:1158
+
+___
+
+### PermissionDiscardActionCode
+
+• `Const` **PermissionDiscardActionCode**: ``"actions-codes-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1322
+
+___
+
+### PermissionDiscardActionsCodes
+
+• `Const` **PermissionDiscardActionsCodes**: ``"actions-codes-discarded"``
+
+#### Defined in
+
+permissions.ts:1319
+
+___
+
+### PermissionDiscardActivitiesGroups
+
+• `Const` **PermissionDiscardActivitiesGroups**: ``"activities-groups-discarded"``
+
+#### Defined in
+
+permissions.ts:1307
+
+___
+
+### PermissionDiscardActivitiesStatuses
+
+• `Const` **PermissionDiscardActivitiesStatuses**: ``"activities-statuses-discarded"``
+
+#### Defined in
+
+permissions.ts:1295
+
+___
+
+### PermissionDiscardActivitiesTags
+
+• `Const` **PermissionDiscardActivitiesTags**: ``"activities-tags-discarded"``
+
+#### Defined in
+
+permissions.ts:1283
+
+___
+
+### PermissionDiscardActivityGroup
+
+• `Const` **PermissionDiscardActivityGroup**: ``"activities-groups-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1310
+
+___
+
+### PermissionDiscardActivityStatus
+
+• `Const` **PermissionDiscardActivityStatus**: ``"activities-statuses-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1298
+
+___
+
+### PermissionDiscardActivityTag
+
+• `Const` **PermissionDiscardActivityTag**: ``"activities-tags-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1286
+
+___
+
+### PermissionDiscardAnnouncements
+
+• `Const` **PermissionDiscardAnnouncements**: ``"announcements-discard"``
+
+#### Defined in
+
+permissions.ts:1041
+
+___
+
+### PermissionDiscardAssociate
+
+• `Const` **PermissionDiscardAssociate**: ``"associates-discard"``
+
+#### Defined in
+
+permissions.ts:54
+
+___
+
+### PermissionDiscardAttendanceAmendments
+
+• `Const` **PermissionDiscardAttendanceAmendments**: ``"attendances-amendments-discard"``
+
+#### Defined in
+
+permissions.ts:1184
+
+___
+
+### PermissionDiscardAttendances
+
+• `Const` **PermissionDiscardAttendances**: ``"attendances-discard"``
+
+#### Defined in
+
+permissions.ts:1145
+
+___
+
+### PermissionDiscardBankAccount
+
+• `Const` **PermissionDiscardBankAccount**: ``"bankaccounts-extra-discard"``
+
+#### Defined in
+
+permissions.ts:984
+
+___
+
+### PermissionDiscardBankAccounts
+
+• `Const` **PermissionDiscardBankAccounts**: ``"bankaccounts-discarded"``
+
+#### Defined in
+
+permissions.ts:981
+
+___
+
+### PermissionDiscardClient
+
+• `Const` **PermissionDiscardClient**: ``"clients-extra-discard"``
+
+#### Defined in
+
+permissions.ts:49
+
+___
+
+### PermissionDiscardClients
+
+• `Const` **PermissionDiscardClients**: ``"clients-discarded"``
+
+#### Defined in
+
+permissions.ts:46
+
+___
+
+### PermissionDiscardContractor
+
+• `Const` **PermissionDiscardContractor**: ``"contractors-discard"``
+
+#### Defined in
+
+permissions.ts:60
+
+___
+
+### PermissionDiscardContractorsPayments
+
+• `Const` **PermissionDiscardContractorsPayments**: ``"contractors-payments-discard"``
+
+#### Defined in
+
+permissions.ts:702
+
+___
+
+### PermissionDiscardCurrencies
+
+• `Const` **PermissionDiscardCurrencies**: ``"currencies-discarded"``
+
+#### Defined in
+
+permissions.ts:393
+
+___
+
+### PermissionDiscardCurrency
+
+• `Const` **PermissionDiscardCurrency**: ``"currencies-extra-discard"``
+
+#### Defined in
+
+permissions.ts:396
+
+___
+
+### PermissionDiscardFormFields
+
+• `Const` **PermissionDiscardFormFields**: ``"forms-fields-discard"``
+
+#### Defined in
+
+permissions.ts:36
+
+___
+
+### PermissionDiscardFormSections
+
+• `Const` **PermissionDiscardFormSections**: ``"forms-sections-discard"``
+
+#### Defined in
+
+permissions.ts:31
+
+___
+
+### PermissionDiscardHolidays
+
+• `Const` **PermissionDiscardHolidays**: ``"holidays-discard"``
+
+#### Defined in
+
+permissions.ts:1080
+
+___
+
+### PermissionDiscardLabel
+
+• `Const` **PermissionDiscardLabel**: ``"labels-discard"``
+
+#### Defined in
+
+permissions.ts:959
+
+___
+
+### PermissionDiscardLeaveTypes
+
+• `Const` **PermissionDiscardLeaveTypes**: ``"leaves-types-discard"``
+
+#### Defined in
+
+permissions.ts:1093
+
+___
+
+### PermissionDiscardLeavesAdjustments
+
+• `Const` **PermissionDiscardLeavesAdjustments**: ``"leaves-adjustments-discard"``
+
+#### Defined in
+
+permissions.ts:1106
+
+___
+
+### PermissionDiscardLeavesRequests
+
+• `Const` **PermissionDiscardLeavesRequests**: ``"leaves-requests-discard"``
+
+#### Defined in
+
+permissions.ts:1119
+
+___
+
+### PermissionDiscardLedger
+
+• `Const` **PermissionDiscardLedger**: ``"ledgers-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1032
+
+___
+
+### PermissionDiscardLedgers
+
+• `Const` **PermissionDiscardLedgers**: ``"ledgers-discarded"``
+
+#### Defined in
+
+permissions.ts:1029
+
+___
+
+### PermissionDiscardLocation
+
+• `Const` **PermissionDiscardLocation**: ``"locations-extra-discard"``
+
+#### Defined in
+
+permissions.ts:972
+
+___
+
+### PermissionDiscardLocations
+
+• `Const` **PermissionDiscardLocations**: ``"locations-discarded"``
+
+#### Defined in
+
+permissions.ts:969
+
+___
+
+### PermissionDiscardOnDuties
+
+• `Const` **PermissionDiscardOnDuties**: ``"onduties-discard"``
+
+#### Defined in
+
+permissions.ts:1171
+
+___
+
+### PermissionDiscardOvertime
+
+• `Const` **PermissionDiscardOvertime**: ``"overtimes-discard"``
+
+#### Defined in
+
+permissions.ts:1132
+
+___
+
+### PermissionDiscardPayrollParameters
+
+• `Const` **PermissionDiscardPayrollParameters**: ``"payroll-params-discard"``
+
+#### Defined in
+
+permissions.ts:930
+
+___
+
+### PermissionDiscardPurchasePayment
+
+• `Const` **PermissionDiscardPurchasePayment**: ``"purchases-payments-discard"``
+
+#### Defined in
+
+permissions.ts:616
+
+___
+
+### PermissionDiscardQCHub
+
+• `Const` **PermissionDiscardQCHub**: ``"qchubs-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1008
+
+___
+
+### PermissionDiscardQCHubs
+
+• `Const` **PermissionDiscardQCHubs**: ``"qchubs-discarded"``
+
+#### Defined in
+
+permissions.ts:1005
+
+___
+
+### PermissionDiscardQCParameters
+
+• `Const` **PermissionDiscardQCParameters**: ``"qc-params-discard"``
+
+#### Defined in
+
+permissions.ts:863
+
+___
+
+### PermissionDiscardSaleReceipt
+
+• `Const` **PermissionDiscardSaleReceipt**: ``"sales-receipts-discard"``
+
+#### Defined in
+
+permissions.ts:629
+
+___
+
+### PermissionDiscardShiftGroups
+
+• `Const` **PermissionDiscardShiftGroups**: ``"shift-groups-discard"``
+
+#### Defined in
+
+permissions.ts:1067
+
+___
+
+### PermissionDiscardShifts
+
+• `Const` **PermissionDiscardShifts**: ``"shifts-discard"``
+
+#### Defined in
+
+permissions.ts:1054
+
+___
+
+### PermissionDiscardSkillParameters
+
+• `Const` **PermissionDiscardSkillParameters**: ``"skills-params-discard"``
+
+#### Defined in
+
+permissions.ts:1240
+
+___
+
+### PermissionDiscardStorage
+
+• `Const` **PermissionDiscardStorage**: ``"storages-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1020
+
+___
+
+### PermissionDiscardStorages
+
+• `Const` **PermissionDiscardStorages**: ``"storages-discarded"``
+
+#### Defined in
+
+permissions.ts:1017
+
+___
+
+### PermissionDiscardStore
+
+• `Const` **PermissionDiscardStore**: ``"stores-extra-discard"``
+
+#### Defined in
+
+permissions.ts:996
+
+___
+
+### PermissionDiscardStores
+
+• `Const` **PermissionDiscardStores**: ``"stores-discarded"``
+
+#### Defined in
+
+permissions.ts:993
+
+___
+
+### PermissionDiscardSundries
+
+• `Const` **PermissionDiscardSundries**: ``"sundries-discard"``
+
+#### Defined in
+
+permissions.ts:715
+
+___
+
+### PermissionDiscardTaxGroup
+
+• `Const` **PermissionDiscardTaxGroup**: ``"tax-groups-extra-discard"``
+
+#### Defined in
+
+permissions.ts:921
+
+___
+
+### PermissionDiscardTaxGroups
+
+• `Const` **PermissionDiscardTaxGroups**: ``"tax-groups-discarded"``
+
+#### Defined in
+
+permissions.ts:918
+
+___
+
+### PermissionDiscardTaxParameter
+
+• `Const` **PermissionDiscardTaxParameter**: ``"tax-params-extra-discard"``
+
+#### Defined in
+
+permissions.ts:909
+
+___
+
+### PermissionDiscardTaxParameters
+
+• `Const` **PermissionDiscardTaxParameters**: ``"tax-params-discarded"``
+
+#### Defined in
+
+permissions.ts:906
+
+___
+
+### PermissionDiscardUnitOfMaterial
+
+• `Const` **PermissionDiscardUnitOfMaterial**: ``"units-of-materials-extra-discard"``
+
+#### Defined in
+
+permissions.ts:408
+
+___
+
+### PermissionDiscardUnitsOfMaterials
+
+• `Const` **PermissionDiscardUnitsOfMaterials**: ``"units-of-materials-discarded"``
+
+#### Defined in
+
+permissions.ts:405
+
+___
+
+### PermissionDiscardVendor
+
+• `Const` **PermissionDiscardVendor**: ``"vendors-extra-discard"``
+
+#### Defined in
+
+permissions.ts:73
+
+___
+
+### PermissionDiscardVendors
+
+• `Const` **PermissionDiscardVendors**: ``"vendors-discarded"``
+
+#### Defined in
+
+permissions.ts:70
+
+___
+
+### PermissionDiscardVisitations
+
+• `Const` **PermissionDiscardVisitations**: ``"visitations-discard"``
+
+#### Defined in
+
+permissions.ts:1227
+
+___
+
+### PermissionDraftAbsences
+
+• `Const` **PermissionDraftAbsences**: ``"absences-drafts"``
+
+#### Defined in
+
+permissions.ts:1152
+
+___
+
+### PermissionDraftActionsCodes
+
+• `Const` **PermissionDraftActionsCodes**: ``"actions-codes-drafts"``
+
+#### Defined in
+
+permissions.ts:1313
+
+___
+
+### PermissionDraftActivitiesGroups
+
+• `Const` **PermissionDraftActivitiesGroups**: ``"activities-groups-drafts"``
+
+#### Defined in
+
+permissions.ts:1301
+
+___
+
+### PermissionDraftActivitiesStatuses
+
+• `Const` **PermissionDraftActivitiesStatuses**: ``"activities-statuses-drafts"``
+
+#### Defined in
+
+permissions.ts:1289
+
+___
+
+### PermissionDraftActivitiesTags
+
+• `Const` **PermissionDraftActivitiesTags**: ``"activities-tags-drafts"``
+
+#### Defined in
+
+permissions.ts:1277
+
+___
+
+### PermissionDraftAnnouncements
+
+• `Const` **PermissionDraftAnnouncements**: ``"announcements-drafts"``
+
+#### Defined in
+
+permissions.ts:1035
+
+___
+
+### PermissionDraftAttendanceAmendments
+
+• `Const` **PermissionDraftAttendanceAmendments**: ``"attendances-amendments-drafts"``
+
+#### Defined in
+
+permissions.ts:1178
+
+___
+
+### PermissionDraftAttendances
+
+• `Const` **PermissionDraftAttendances**: ``"attendances-drafts"``
+
+#### Defined in
+
+permissions.ts:1139
+
+___
+
+### PermissionDraftBankAccounts
+
+• `Const` **PermissionDraftBankAccounts**: ``"bankaccounts-drafts"``
+
+#### Defined in
+
+permissions.ts:975
+
+___
+
+### PermissionDraftClients
+
+• `Const` **PermissionDraftClients**: ``"clients-drafts"``
+
+#### Defined in
+
+permissions.ts:40
+
+___
+
+### PermissionDraftContractorsPayments
+
+• `Const` **PermissionDraftContractorsPayments**: ``"contractors-payments-drafts"``
+
+#### Defined in
+
+permissions.ts:696
+
+___
+
+### PermissionDraftCurrencies
+
+• `Const` **PermissionDraftCurrencies**: ``"currencies-drafts"``
+
+#### Defined in
+
+permissions.ts:387
+
+___
+
+### PermissionDraftGoal
+
+• `Const` **PermissionDraftGoal**: ``"goals-drafts"``
+
+#### Defined in
+
+permissions.ts:1262
+
+___
+
+### PermissionDraftHolidays
+
+• `Const` **PermissionDraftHolidays**: ``"holidays-drafts"``
+
+#### Defined in
+
+permissions.ts:1074
+
+___
+
+### PermissionDraftLeaveTypes
+
+• `Const` **PermissionDraftLeaveTypes**: ``"leaves-types-drafts"``
+
+#### Defined in
+
+permissions.ts:1087
+
+___
+
+### PermissionDraftLeavesAdjustments
+
+• `Const` **PermissionDraftLeavesAdjustments**: ``"leaves-adjustments-drafts"``
+
+#### Defined in
+
+permissions.ts:1100
+
+___
+
+### PermissionDraftLeavesRequests
+
+• `Const` **PermissionDraftLeavesRequests**: ``"leaves-requests-drafts"``
+
+#### Defined in
+
+permissions.ts:1113
+
+___
+
+### PermissionDraftLedgers
+
+• `Const` **PermissionDraftLedgers**: ``"ledgers-drafts"``
+
+#### Defined in
+
+permissions.ts:1023
+
+___
+
+### PermissionDraftLocations
+
+• `Const` **PermissionDraftLocations**: ``"locations-drafts"``
+
+#### Defined in
+
+permissions.ts:963
+
+___
+
+### PermissionDraftOnDuties
+
+• `Const` **PermissionDraftOnDuties**: ``"onduties-drafts"``
+
+#### Defined in
+
+permissions.ts:1165
+
+___
+
+### PermissionDraftOvertime
+
+• `Const` **PermissionDraftOvertime**: ``"overtimes-drafts"``
+
+#### Defined in
+
+permissions.ts:1126
+
+___
+
+### PermissionDraftPayrollParameters
+
+• `Const` **PermissionDraftPayrollParameters**: ``"payroll-params-drafts"``
+
+#### Defined in
+
+permissions.ts:924
+
+___
+
+### PermissionDraftPurchaseEnquiry
+
+• `Const` **PermissionDraftPurchaseEnquiry**: ``"purchases-enquiries-drafts"``
+
+#### Defined in
+
+permissions.ts:722
+
+___
+
+### PermissionDraftPurchasePayment
+
+• `Const` **PermissionDraftPurchasePayment**: ``"purchases-payments-drafts"``
+
+#### Defined in
+
+permissions.ts:610
+
+___
+
+### PermissionDraftQCHubs
+
+• `Const` **PermissionDraftQCHubs**: ``"qchubs-drafts"``
+
+#### Defined in
+
+permissions.ts:999
+
+___
+
+### PermissionDraftQCParameters
+
+• `Const` **PermissionDraftQCParameters**: ``"qc-params-drafts"``
+
+#### Defined in
+
+permissions.ts:857
+
+___
+
+### PermissionDraftQuotationRequest
+
+• `Const` **PermissionDraftQuotationRequest**: ``"quotations-requests-drafts"``
+
+#### Defined in
+
+permissions.ts:753
+
+___
+
+### PermissionDraftQuotationResponse
+
+• `Const` **PermissionDraftQuotationResponse**: ``"quotations-responses-drafts"``
+
+#### Defined in
+
+permissions.ts:768
+
+___
+
+### PermissionDraftSaleReceipt
+
+• `Const` **PermissionDraftSaleReceipt**: ``"sales-receipts-drafts"``
+
+#### Defined in
+
+permissions.ts:623
+
+___
+
+### PermissionDraftShiftGroups
+
+• `Const` **PermissionDraftShiftGroups**: ``"shift-groups-drafts"``
+
+#### Defined in
+
+permissions.ts:1061
+
+___
+
+### PermissionDraftShifts
+
+• `Const` **PermissionDraftShifts**: ``"shifts-drafts"``
+
+#### Defined in
+
+permissions.ts:1048
+
+___
+
+### PermissionDraftSkillParameters
+
+• `Const` **PermissionDraftSkillParameters**: ``"skills-params-drafts"``
+
+#### Defined in
+
+permissions.ts:1234
+
+___
+
+### PermissionDraftStorages
+
+• `Const` **PermissionDraftStorages**: ``"storages-drafts"``
+
+#### Defined in
+
+permissions.ts:1011
+
+___
+
+### PermissionDraftStores
+
+• `Const` **PermissionDraftStores**: ``"stores-drafts"``
+
+#### Defined in
+
+permissions.ts:987
+
+___
+
+### PermissionDraftSundries
+
+• `Const` **PermissionDraftSundries**: ``"sundries-drafts"``
+
+#### Defined in
+
+permissions.ts:709
+
+___
+
+### PermissionDraftTaxGroups
+
+• `Const` **PermissionDraftTaxGroups**: ``"tax-groups-drafts"``
+
+#### Defined in
+
+permissions.ts:912
+
+___
+
+### PermissionDraftTaxParameters
+
+• `Const` **PermissionDraftTaxParameters**: ``"tax-params-drafts"``
+
+#### Defined in
+
+permissions.ts:900
+
+___
+
+### PermissionDraftUnitsOfMaterials
+
+• `Const` **PermissionDraftUnitsOfMaterials**: ``"units-of-materials-drafts"``
+
+#### Defined in
+
+permissions.ts:399
+
+___
+
+### PermissionDraftVendors
+
+• `Const` **PermissionDraftVendors**: ``"vendors-drafts"``
+
+#### Defined in
+
+permissions.ts:64
+
+___
+
+### PermissionDraftVisitations
+
+• `Const` **PermissionDraftVisitations**: ``"visitations-drafts"``
+
+#### Defined in
+
+permissions.ts:1221
+
+___
+
+### PermissionEquationFamilyApprove
+
+• `Const` **PermissionEquationFamilyApprove**: ``"equations-families-approve"``
+
+#### Defined in
+
+permissions.ts:789
+
+___
+
+### PermissionEquationFamilyComplete
+
+• `Const` **PermissionEquationFamilyComplete**: ``"equations-families-mark-complete"``
+
+#### Defined in
+
+permissions.ts:793
+
+___
+
+### PermissionEquationFamilyCompleted
+
+• `Const` **PermissionEquationFamilyCompleted**: ``"equations-families-completed"``
+
+#### Defined in
+
+permissions.ts:791
+
+___
+
+### PermissionEquationFamilyDiscard
+
+• `Const` **PermissionEquationFamilyDiscard**: ``"equations-families-extra-discard"``
+
+#### Defined in
+
+permissions.ts:794
+
+___
+
+### PermissionEquationFamilyDiscarded
+
+• `Const` **PermissionEquationFamilyDiscarded**: ``"equations-families-discarded"``
+
+#### Defined in
+
+permissions.ts:787
+
+___
+
+### PermissionEquationFamilyDrafts
+
+• `Const` **PermissionEquationFamilyDrafts**: ``"equations-families-drafts"``
+
+#### Defined in
+
+permissions.ts:783
+
+___
+
+### PermissionEquationFamilyHalt
+
+• `Const` **PermissionEquationFamilyHalt**: ``"equations-families-extra-halt"``
+
+#### Defined in
+
+permissions.ts:792
+
+___
+
+### PermissionEquationFamilyHalted
+
+• `Const` **PermissionEquationFamilyHalted**: ``"equations-families-halted"``
+
+#### Defined in
+
+permissions.ts:786
+
+___
+
+### PermissionEquationFamilyNew
+
+• `Const` **PermissionEquationFamilyNew**: ``"equations-families-new"``
+
+#### Defined in
+
+permissions.ts:782
+
+___
+
+### PermissionEquationFamilyRevise
+
+• `Const` **PermissionEquationFamilyRevise**: ``"equations-families-revise"``
+
+#### Defined in
+
+permissions.ts:785
+
+___
+
+### PermissionEquationFamilyStanding
+
+• `Const` **PermissionEquationFamilyStanding**: ``"equations-families-standing"``
+
+#### Defined in
+
+permissions.ts:790
+
+___
+
+### PermissionEquationFamilyVerify
+
+• `Const` **PermissionEquationFamilyVerify**: ``"equations-families-verify"``
+
+#### Defined in
+
+permissions.ts:784
+
+___
+
+### PermissionEquationReplaceableApprove
+
+• `Const` **PermissionEquationReplaceableApprove**: ``"equations-replaceables-approve"``
+
+#### Defined in
+
+permissions.ts:834
+
+___
+
+### PermissionEquationReplaceableComplete
+
+• `Const` **PermissionEquationReplaceableComplete**: ``"equations-replaceables-mark-complete"``
+
+#### Defined in
+
+permissions.ts:838
+
+___
+
+### PermissionEquationReplaceableCompleted
+
+• `Const` **PermissionEquationReplaceableCompleted**: ``"equations-replaceables-completed"``
+
+#### Defined in
+
+permissions.ts:836
+
+___
+
+### PermissionEquationReplaceableDiscard
+
+• `Const` **PermissionEquationReplaceableDiscard**: ``"equations-replaceables-extra-discard"``
+
+#### Defined in
+
+permissions.ts:839
+
+___
+
+### PermissionEquationReplaceableDiscarded
+
+• `Const` **PermissionEquationReplaceableDiscarded**: ``"equations-replaceables-discarded"``
+
+#### Defined in
+
+permissions.ts:832
+
+___
+
+### PermissionEquationReplaceableDrafts
+
+• `Const` **PermissionEquationReplaceableDrafts**: ``"equations-replaceables-drafts"``
+
+#### Defined in
+
+permissions.ts:828
+
+___
+
+### PermissionEquationReplaceableHalt
+
+• `Const` **PermissionEquationReplaceableHalt**: ``"equations-replaceables-extra-halt"``
+
+#### Defined in
+
+permissions.ts:837
+
+___
+
+### PermissionEquationReplaceableHalted
+
+• `Const` **PermissionEquationReplaceableHalted**: ``"equations-replaceables-halted"``
+
+#### Defined in
+
+permissions.ts:831
+
+___
+
+### PermissionEquationReplaceableNew
+
+• `Const` **PermissionEquationReplaceableNew**: ``"equations-replaceables-new"``
+
+#### Defined in
+
+permissions.ts:827
+
+___
+
+### PermissionEquationReplaceableRevise
+
+• `Const` **PermissionEquationReplaceableRevise**: ``"equations-replaceables-revise"``
+
+#### Defined in
+
+permissions.ts:830
+
+___
+
+### PermissionEquationReplaceableStanding
+
+• `Const` **PermissionEquationReplaceableStanding**: ``"equations-replaceables-standing"``
+
+#### Defined in
+
+permissions.ts:835
+
+___
+
+### PermissionEquationReplaceableVerify
+
+• `Const` **PermissionEquationReplaceableVerify**: ``"equations-replaceables-verify"``
+
+#### Defined in
+
+permissions.ts:829
+
+___
+
+### PermissionEquationSalesBundleApprove
+
+• `Const` **PermissionEquationSalesBundleApprove**: ``"equations-sales-bundles-approve"``
+
+#### Defined in
+
+permissions.ts:804
+
+___
+
+### PermissionEquationSalesBundleComplete
+
+• `Const` **PermissionEquationSalesBundleComplete**: ``"equations-sales-bundles-mark-complete"``
+
+#### Defined in
+
+permissions.ts:808
+
+___
+
+### PermissionEquationSalesBundleCompleted
+
+• `Const` **PermissionEquationSalesBundleCompleted**: ``"equations-sales-bundles-completed"``
+
+#### Defined in
+
+permissions.ts:806
+
+___
+
+### PermissionEquationSalesBundleDiscard
+
+• `Const` **PermissionEquationSalesBundleDiscard**: ``"equations-sales-bundles-extra-discard"``
+
+#### Defined in
+
+permissions.ts:809
+
+___
+
+### PermissionEquationSalesBundleDiscarded
+
+• `Const` **PermissionEquationSalesBundleDiscarded**: ``"equations-sales-bundles-discarded"``
+
+#### Defined in
+
+permissions.ts:802
+
+___
+
+### PermissionEquationSalesBundleDrafts
+
+• `Const` **PermissionEquationSalesBundleDrafts**: ``"equations-sales-bundles-drafts"``
+
+#### Defined in
+
+permissions.ts:798
+
+___
+
+### PermissionEquationSalesBundleHalt
+
+• `Const` **PermissionEquationSalesBundleHalt**: ``"equations-sales-bundles-extra-halt"``
+
+#### Defined in
+
+permissions.ts:807
+
+___
+
+### PermissionEquationSalesBundleHalted
+
+• `Const` **PermissionEquationSalesBundleHalted**: ``"equations-sales-bundles-halted"``
+
+#### Defined in
+
+permissions.ts:801
+
+___
+
+### PermissionEquationSalesBundleNew
+
+• `Const` **PermissionEquationSalesBundleNew**: ``"equations-sales-bundles-new"``
+
+#### Defined in
+
+permissions.ts:797
+
+___
+
+### PermissionEquationSalesBundleRevise
+
+• `Const` **PermissionEquationSalesBundleRevise**: ``"equations-sales-bundles-revise"``
+
+#### Defined in
+
+permissions.ts:800
+
+___
+
+### PermissionEquationSalesBundleStanding
+
+• `Const` **PermissionEquationSalesBundleStanding**: ``"equations-sales-bundles-standing"``
+
+#### Defined in
+
+permissions.ts:805
+
+___
+
+### PermissionEquationSalesBundleVerify
+
+• `Const` **PermissionEquationSalesBundleVerify**: ``"equations-sales-bundles-verify"``
+
+#### Defined in
+
+permissions.ts:799
+
+___
+
+### PermissionEquationWorkOrderApprove
+
+• `Const` **PermissionEquationWorkOrderApprove**: ``"equations-work-orders-approve"``
+
+#### Defined in
+
+permissions.ts:819
+
+___
+
+### PermissionEquationWorkOrderComplete
+
+• `Const` **PermissionEquationWorkOrderComplete**: ``"equations-work-orders-mark-complete"``
+
+#### Defined in
+
+permissions.ts:823
+
+___
+
+### PermissionEquationWorkOrderCompleted
+
+• `Const` **PermissionEquationWorkOrderCompleted**: ``"equations-work-orders-completed"``
+
+#### Defined in
+
+permissions.ts:821
+
+___
+
+### PermissionEquationWorkOrderDiscard
+
+• `Const` **PermissionEquationWorkOrderDiscard**: ``"equations-work-orders-extra-discard"``
+
+#### Defined in
+
+permissions.ts:824
+
+___
+
+### PermissionEquationWorkOrderDiscarded
+
+• `Const` **PermissionEquationWorkOrderDiscarded**: ``"equations-work-orders-discarded"``
+
+#### Defined in
+
+permissions.ts:817
+
+___
+
+### PermissionEquationWorkOrderDrafts
+
+• `Const` **PermissionEquationWorkOrderDrafts**: ``"equations-work-orders-drafts"``
+
+#### Defined in
+
+permissions.ts:813
+
+___
+
+### PermissionEquationWorkOrderHalt
+
+• `Const` **PermissionEquationWorkOrderHalt**: ``"equations-work-orders-extra-halt"``
+
+#### Defined in
+
+permissions.ts:822
+
+___
+
+### PermissionEquationWorkOrderHalted
+
+• `Const` **PermissionEquationWorkOrderHalted**: ``"equations-work-orders-halted"``
+
+#### Defined in
+
+permissions.ts:816
+
+___
+
+### PermissionEquationWorkOrderNew
+
+• `Const` **PermissionEquationWorkOrderNew**: ``"equations-work-orders-new"``
+
+#### Defined in
+
+permissions.ts:812
+
+___
+
+### PermissionEquationWorkOrderRevise
+
+• `Const` **PermissionEquationWorkOrderRevise**: ``"equations-work-orders-revise"``
+
+#### Defined in
+
+permissions.ts:815
+
+___
+
+### PermissionEquationWorkOrderStanding
+
+• `Const` **PermissionEquationWorkOrderStanding**: ``"equations-work-orders-standing"``
+
+#### Defined in
+
+permissions.ts:820
+
+___
+
+### PermissionEquationWorkOrderVerify
+
+• `Const` **PermissionEquationWorkOrderVerify**: ``"equations-work-orders-verify"``
+
+#### Defined in
+
+permissions.ts:814
+
+___
+
+### PermissionEquipmentAdd
+
+• `Const` **PermissionEquipmentAdd**: ``"equipment-add"``
+
+#### Defined in
+
+permissions.ts:186
+
+___
+
+### PermissionEquipmentApproveIQC
+
+• `Const` **PermissionEquipmentApproveIQC**: ``"equipment-extra-iqc-approve"``
+
+#### Defined in
+
+permissions.ts:188
+
+___
+
+### PermissionEquipmentConsume
+
+• `Const` **PermissionEquipmentConsume**: ``"equipment-extra-consume"``
+
+#### Defined in
+
+permissions.ts:198
+
+___
+
+### PermissionEquipmentConsumed
+
+• `Const` **PermissionEquipmentConsumed**: ``"equipment-consumed"``
+
+#### Defined in
+
+permissions.ts:190
+
+___
+
+### PermissionEquipmentDiscard
+
+• `Const` **PermissionEquipmentDiscard**: ``"equipment-extra-discard"``
+
+#### Defined in
+
+permissions.ts:199
+
+___
+
+### PermissionEquipmentDiscarded
+
+• `Const` **PermissionEquipmentDiscarded**: ``"equipment-discarded"``
+
+#### Defined in
+
+permissions.ts:195
+
+___
+
+### PermissionEquipmentIQC
+
+• `Const` **PermissionEquipmentIQC**: ``"equipment-iqc"``
+
+#### Defined in
+
+permissions.ts:187
+
+___
+
+### PermissionEquipmentIssued
+
+• `Const` **PermissionEquipmentIssued**: ``"equipment-issued"``
+
+#### Defined in
+
+permissions.ts:196
+
+___
+
+### PermissionEquipmentReject
+
+• `Const` **PermissionEquipmentReject**: ``"equipment-extra-reject"``
+
+#### Defined in
+
+permissions.ts:197
+
+___
+
+### PermissionEquipmentRejected
+
+• `Const` **PermissionEquipmentRejected**: ``"equipment-rejected"``
+
+#### Defined in
+
+permissions.ts:192
+
+___
+
+### PermissionEquipmentReturnable
+
+• `Const` **PermissionEquipmentReturnable**: ``"equipment-returnable"``
+
+#### Defined in
+
+permissions.ts:193
+
+___
+
+### PermissionEquipmentRework
+
+• `Const` **PermissionEquipmentRework**: ``"equipment-rework"``
+
+#### Defined in
+
+permissions.ts:191
+
+___
+
+### PermissionEquipmentScrap
+
+• `Const` **PermissionEquipmentScrap**: ``"equipment-scrap"``
+
+#### Defined in
+
+permissions.ts:194
+
+___
+
+### PermissionEquipmentStore
+
+• `Const` **PermissionEquipmentStore**: ``"equipment-store"``
+
+#### Defined in
+
+permissions.ts:189
+
+___
+
+### PermissionEquipmentView
+
+• `Const` **PermissionEquipmentView**: ``"equipment-view"``
+
+#### Defined in
+
+permissions.ts:200
+
+___
+
+### PermissionExpenseApprove
+
+• `Const` **PermissionExpenseApprove**: ``"expenses-approve"``
+
+#### Defined in
+
+permissions.ts:672
+
+___
+
+### PermissionExpenseComplete
+
+• `Const` **PermissionExpenseComplete**: ``"expenses-mark-complete"``
+
+#### Defined in
+
+permissions.ts:676
+
+___
+
+### PermissionExpenseCompleted
+
+• `Const` **PermissionExpenseCompleted**: ``"expenses-completed"``
+
+#### Defined in
+
+permissions.ts:674
+
+___
+
+### PermissionExpenseDiscard
+
+• `Const` **PermissionExpenseDiscard**: ``"expenses-extra-discard"``
+
+#### Defined in
+
+permissions.ts:677
+
+___
+
+### PermissionExpenseDiscarded
+
+• `Const` **PermissionExpenseDiscarded**: ``"expenses-discarded"``
+
+#### Defined in
+
+permissions.ts:670
+
+___
+
+### PermissionExpenseDrafts
+
+• `Const` **PermissionExpenseDrafts**: ``"expenses-drafts"``
+
+#### Defined in
+
+permissions.ts:666
+
+___
+
+### PermissionExpenseHalt
+
+• `Const` **PermissionExpenseHalt**: ``"expenses-extra-halt"``
+
+#### Defined in
+
+permissions.ts:675
+
+___
+
+### PermissionExpenseHalted
+
+• `Const` **PermissionExpenseHalted**: ``"expenses-halted"``
+
+#### Defined in
+
+permissions.ts:669
+
+___
+
+### PermissionExpenseNew
+
+• `Const` **PermissionExpenseNew**: ``"expenses-new"``
+
+#### Defined in
+
+permissions.ts:665
+
+___
+
+### PermissionExpenseRevise
+
+• `Const` **PermissionExpenseRevise**: ``"expenses-revise"``
+
+#### Defined in
+
+permissions.ts:668
+
+___
+
+### PermissionExpenseStanding
+
+• `Const` **PermissionExpenseStanding**: ``"expenses-standing"``
+
+#### Defined in
+
+permissions.ts:673
+
+___
+
+### PermissionExpenseVerify
+
+• `Const` **PermissionExpenseVerify**: ``"expenses-verify"``
+
+#### Defined in
+
+permissions.ts:667
+
+___
+
+### PermissionFamilyApprove
+
+• `Const` **PermissionFamilyApprove**: ``"families-approve"``
+
+#### Defined in
+
+permissions.ts:849
+
+___
+
+### PermissionFamilyComplete
+
+• `Const` **PermissionFamilyComplete**: ``"families-mark-complete"``
+
+#### Defined in
+
+permissions.ts:852
+
+___
+
+### PermissionFamilyDiscard
+
+• `Const` **PermissionFamilyDiscard**: ``"families-extra-discard"``
+
+#### Defined in
+
+permissions.ts:853
+
+___
+
+### PermissionFamilyDiscarded
+
+• `Const` **PermissionFamilyDiscarded**: ``"families-discarded"``
+
+#### Defined in
+
+permissions.ts:847
+
+___
+
+### PermissionFamilyDrafts
+
+• `Const` **PermissionFamilyDrafts**: ``"families-drafts"``
+
+#### Defined in
+
+permissions.ts:843
+
+___
+
+### PermissionFamilyHalt
+
+• `Const` **PermissionFamilyHalt**: ``"families-extra-halt"``
+
+#### Defined in
+
+permissions.ts:851
+
+___
+
+### PermissionFamilyHalted
+
+• `Const` **PermissionFamilyHalted**: ``"families-halted"``
+
+#### Defined in
+
+permissions.ts:846
+
+___
+
+### PermissionFamilyNew
+
+• `Const` **PermissionFamilyNew**: ``"families-new"``
+
+#### Defined in
+
+permissions.ts:842
+
+___
+
+### PermissionFamilyRevise
+
+• `Const` **PermissionFamilyRevise**: ``"families-revise"``
+
+#### Defined in
+
+permissions.ts:845
+
+___
+
+### PermissionFamilyStanding
+
+• `Const` **PermissionFamilyStanding**: ``"families-standing"``
+
+#### Defined in
+
+permissions.ts:850
+
+___
+
+### PermissionFamilyVerify
+
+• `Const` **PermissionFamilyVerify**: ``"families-verify"``
+
+#### Defined in
+
+permissions.ts:844
+
+___
+
+### PermissionFeedstockAdd
+
+• `Const` **PermissionFeedstockAdd**: ``"feedstock-add"``
+
+#### Defined in
+
+permissions.ts:154
+
+___
+
+### PermissionFeedstockApproveIQC
+
+• `Const` **PermissionFeedstockApproveIQC**: ``"feedstock-extra-iqc-approve"``
+
+#### Defined in
+
+permissions.ts:156
+
+___
+
+### PermissionFeedstockConsume
+
+• `Const` **PermissionFeedstockConsume**: ``"feedstock-extra-consume"``
+
+#### Defined in
+
+permissions.ts:166
+
+___
+
+### PermissionFeedstockConsumed
+
+• `Const` **PermissionFeedstockConsumed**: ``"feedstock-consumed"``
+
+#### Defined in
+
+permissions.ts:158
+
+___
+
+### PermissionFeedstockDiscard
+
+• `Const` **PermissionFeedstockDiscard**: ``"feedstock-extra-discard"``
+
+#### Defined in
+
+permissions.ts:167
+
+___
+
+### PermissionFeedstockDiscarded
+
+• `Const` **PermissionFeedstockDiscarded**: ``"feedstock-discarded"``
+
+#### Defined in
+
+permissions.ts:163
+
+___
+
+### PermissionFeedstockIQC
+
+• `Const` **PermissionFeedstockIQC**: ``"feedstock-iqc"``
+
+#### Defined in
+
+permissions.ts:155
+
+___
+
+### PermissionFeedstockIssued
+
+• `Const` **PermissionFeedstockIssued**: ``"feedstock-issued"``
+
+#### Defined in
+
+permissions.ts:164
+
+___
+
+### PermissionFeedstockReject
+
+• `Const` **PermissionFeedstockReject**: ``"feedstock-extra-reject"``
+
+#### Defined in
+
+permissions.ts:165
+
+___
+
+### PermissionFeedstockRejected
+
+• `Const` **PermissionFeedstockRejected**: ``"feedstock-rejected"``
+
+#### Defined in
+
+permissions.ts:160
+
+___
+
+### PermissionFeedstockReturnable
+
+• `Const` **PermissionFeedstockReturnable**: ``"feedstock-returnable"``
+
+#### Defined in
+
+permissions.ts:161
+
+___
+
+### PermissionFeedstockRework
+
+• `Const` **PermissionFeedstockRework**: ``"feedstock-rework"``
+
+#### Defined in
+
+permissions.ts:159
+
+___
+
+### PermissionFeedstockScrap
+
+• `Const` **PermissionFeedstockScrap**: ``"feedstock-scrap"``
+
+#### Defined in
+
+permissions.ts:162
+
+___
+
+### PermissionFeedstockStore
+
+• `Const` **PermissionFeedstockStore**: ``"feedstock-store"``
+
+#### Defined in
+
+permissions.ts:157
+
+___
+
+### PermissionFeedstockView
+
+• `Const` **PermissionFeedstockView**: ``"feedstock-view"``
+
+#### Defined in
+
+permissions.ts:168
+
+___
+
+### PermissionGeneralStreamCancel
+
+• `Const` **PermissionGeneralStreamCancel**: ``"general-streams-mark-cancel"``
+
+#### Defined in
+
+permissions.ts:1374
+
+___
+
+### PermissionGeneralStreamCancelled
+
+• `Const` **PermissionGeneralStreamCancelled**: ``"general-streams-cancelled"``
+
+#### Defined in
+
+permissions.ts:1373
+
+___
+
+### PermissionGeneralStreamComplete
+
+• `Const` **PermissionGeneralStreamComplete**: ``"general-streams-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1371
+
+___
+
+### PermissionGeneralStreamCompleted
+
+• `Const` **PermissionGeneralStreamCompleted**: ``"general-streams-completed"``
+
+#### Defined in
+
+permissions.ts:1370
+
+___
+
+### PermissionGeneralStreamNew
+
+• `Const` **PermissionGeneralStreamNew**: ``"general-streams-create"``
+
+#### Defined in
+
+permissions.ts:1367
+
+___
+
+### PermissionGeneralStreamOpen
+
+• `Const` **PermissionGeneralStreamOpen**: ``"general-streams-open"``
+
+#### Defined in
+
+permissions.ts:1369
+
+___
+
+### PermissionGeneralStreamReopen
+
+• `Const` **PermissionGeneralStreamReopen**: ``"general-streams-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1372
+
+___
+
+### PermissionGeneralStreamUpdate
+
+• `Const` **PermissionGeneralStreamUpdate**: ``"general-streams-update"``
+
+#### Defined in
+
+permissions.ts:1368
+
+___
+
+### PermissionGoalDiscard
+
+• `Const` **PermissionGoalDiscard**: ``"goals-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1273
+
+___
+
+### PermissionGoalDiscarded
+
+• `Const` **PermissionGoalDiscarded**: ``"goals-discarded"``
+
+#### Defined in
+
+permissions.ts:1266
+
+___
+
+### PermissionGoodsDispatchApprove
+
+• `Const` **PermissionGoodsDispatchApprove**: ``"goods-dispatches-approve"``
+
+#### Defined in
+
+permissions.ts:496
+
+___
+
+### PermissionGoodsDispatchComplete
+
+• `Const` **PermissionGoodsDispatchComplete**: ``"goods-dispatches-mark-complete"``
+
+#### Defined in
+
+permissions.ts:500
+
+___
+
+### PermissionGoodsDispatchCompleted
+
+• `Const` **PermissionGoodsDispatchCompleted**: ``"goods-dispatches-completed"``
+
+#### Defined in
+
+permissions.ts:498
+
+___
+
+### PermissionGoodsDispatchDiscard
+
+• `Const` **PermissionGoodsDispatchDiscard**: ``"goods-dispatches-extra-discard"``
+
+#### Defined in
+
+permissions.ts:501
+
+___
+
+### PermissionGoodsDispatchDiscarded
+
+• `Const` **PermissionGoodsDispatchDiscarded**: ``"goods-dispatches-discarded"``
+
+#### Defined in
+
+permissions.ts:494
+
+___
+
+### PermissionGoodsDispatchDrafts
+
+• `Const` **PermissionGoodsDispatchDrafts**: ``"goods-dispatches-drafts"``
+
+#### Defined in
+
+permissions.ts:490
+
+___
+
+### PermissionGoodsDispatchHalt
+
+• `Const` **PermissionGoodsDispatchHalt**: ``"goods-dispatches-extra-halt"``
+
+#### Defined in
+
+permissions.ts:499
+
+___
+
+### PermissionGoodsDispatchHalted
+
+• `Const` **PermissionGoodsDispatchHalted**: ``"goods-dispatches-halted"``
+
+#### Defined in
+
+permissions.ts:493
+
+___
+
+### PermissionGoodsDispatchNew
+
+• `Const` **PermissionGoodsDispatchNew**: ``"goods-dispatches-new"``
+
+#### Defined in
+
+permissions.ts:489
+
+___
+
+### PermissionGoodsDispatchRevise
+
+• `Const` **PermissionGoodsDispatchRevise**: ``"goods-dispatches-revise"``
+
+#### Defined in
+
+permissions.ts:492
+
+___
+
+### PermissionGoodsDispatchStanding
+
+• `Const` **PermissionGoodsDispatchStanding**: ``"goods-dispatches-standing"``
+
+#### Defined in
+
+permissions.ts:497
+
+___
+
+### PermissionGoodsDispatchVerify
+
+• `Const` **PermissionGoodsDispatchVerify**: ``"goods-dispatches-verify"``
+
+#### Defined in
+
+permissions.ts:491
+
+___
+
+### PermissionGoodsReceiptApprove
+
+• `Const` **PermissionGoodsReceiptApprove**: ``"goods-receipts-approve"``
+
+#### Defined in
+
+permissions.ts:526
+
+___
+
+### PermissionGoodsReceiptComplete
+
+• `Const` **PermissionGoodsReceiptComplete**: ``"goods-receipts-mark-complete"``
+
+#### Defined in
+
+permissions.ts:530
+
+___
+
+### PermissionGoodsReceiptCompleted
+
+• `Const` **PermissionGoodsReceiptCompleted**: ``"goods-receipts-completed"``
+
+#### Defined in
+
+permissions.ts:528
+
+___
+
+### PermissionGoodsReceiptDiscard
+
+• `Const` **PermissionGoodsReceiptDiscard**: ``"goods-receipts-extra-discard"``
+
+#### Defined in
+
+permissions.ts:531
+
+___
+
+### PermissionGoodsReceiptDiscarded
+
+• `Const` **PermissionGoodsReceiptDiscarded**: ``"goods-receipts-discarded"``
+
+#### Defined in
+
+permissions.ts:524
+
+___
+
+### PermissionGoodsReceiptDrafts
+
+• `Const` **PermissionGoodsReceiptDrafts**: ``"goods-receipts-drafts"``
+
+#### Defined in
+
+permissions.ts:520
+
+___
+
+### PermissionGoodsReceiptHalt
+
+• `Const` **PermissionGoodsReceiptHalt**: ``"goods-receipts-extra-halt"``
+
+#### Defined in
+
+permissions.ts:529
+
+___
+
+### PermissionGoodsReceiptHalted
+
+• `Const` **PermissionGoodsReceiptHalted**: ``"goods-receipts-halted"``
+
+#### Defined in
+
+permissions.ts:523
+
+___
+
+### PermissionGoodsReceiptNew
+
+• `Const` **PermissionGoodsReceiptNew**: ``"goods-receipts-new"``
+
+#### Defined in
+
+permissions.ts:519
+
+___
+
+### PermissionGoodsReceiptRevise
+
+• `Const` **PermissionGoodsReceiptRevise**: ``"goods-receipts-revise"``
+
+#### Defined in
+
+permissions.ts:522
+
+___
+
+### PermissionGoodsReceiptStanding
+
+• `Const` **PermissionGoodsReceiptStanding**: ``"goods-receipts-standing"``
+
+#### Defined in
+
+permissions.ts:527
+
+___
+
+### PermissionGoodsReceiptVerify
+
+• `Const` **PermissionGoodsReceiptVerify**: ``"goods-receipts-verify"``
+
+#### Defined in
+
+permissions.ts:521
+
+___
+
+### PermissionHaltAbsence
+
+• `Const` **PermissionHaltAbsence**: ``"absences-halt"``
+
+#### Defined in
+
+permissions.ts:1161
+
+___
+
+### PermissionHaltActionCode
+
+• `Const` **PermissionHaltActionCode**: ``"actions-codes-halt"``
+
+#### Defined in
+
+permissions.ts:1321
+
+___
+
+### PermissionHaltActivityGroup
+
+• `Const` **PermissionHaltActivityGroup**: ``"activities-groups-halt"``
+
+#### Defined in
+
+permissions.ts:1309
+
+___
+
+### PermissionHaltActivityStatus
+
+• `Const` **PermissionHaltActivityStatus**: ``"activities-statuses-halt"``
+
+#### Defined in
+
+permissions.ts:1297
+
+___
+
+### PermissionHaltActivityTag
+
+• `Const` **PermissionHaltActivityTag**: ``"activities-tags-halt"``
+
+#### Defined in
+
+permissions.ts:1285
+
+___
+
+### PermissionHaltAnnouncement
+
+• `Const` **PermissionHaltAnnouncement**: ``"announcements-halt"``
+
+#### Defined in
+
+permissions.ts:1044
+
+___
+
+### PermissionHaltAttendance
+
+• `Const` **PermissionHaltAttendance**: ``"attendances-halt"``
+
+#### Defined in
+
+permissions.ts:1148
+
+___
+
+### PermissionHaltAttendanceAmendment
+
+• `Const` **PermissionHaltAttendanceAmendment**: ``"attendances-amendments-halt"``
+
+#### Defined in
+
+permissions.ts:1187
+
+___
+
+### PermissionHaltBankAccount
+
+• `Const` **PermissionHaltBankAccount**: ``"bankaccounts-halt"``
+
+#### Defined in
+
+permissions.ts:983
+
+___
+
+### PermissionHaltClient
+
+• `Const` **PermissionHaltClient**: ``"clients-halt"``
+
+#### Defined in
+
+permissions.ts:48
+
+___
+
+### PermissionHaltContractorPayment
+
+• `Const` **PermissionHaltContractorPayment**: ``"contractors-payments-halt"``
+
+#### Defined in
+
+permissions.ts:705
+
+___
+
+### PermissionHaltCurrency
+
+• `Const` **PermissionHaltCurrency**: ``"currencies-halt"``
+
+#### Defined in
+
+permissions.ts:395
+
+___
+
+### PermissionHaltGoal
+
+• `Const` **PermissionHaltGoal**: ``"goals-halt"``
+
+#### Defined in
+
+permissions.ts:1271
+
+___
+
+### PermissionHaltHoliday
+
+• `Const` **PermissionHaltHoliday**: ``"holidays-halt"``
+
+#### Defined in
+
+permissions.ts:1083
+
+___
+
+### PermissionHaltLeaveAdjustment
+
+• `Const` **PermissionHaltLeaveAdjustment**: ``"leaves-adjustments-halt"``
+
+#### Defined in
+
+permissions.ts:1109
+
+___
+
+### PermissionHaltLeaveRequest
+
+• `Const` **PermissionHaltLeaveRequest**: ``"leaves-requests-halt"``
+
+#### Defined in
+
+permissions.ts:1122
+
+___
+
+### PermissionHaltLeaveType
+
+• `Const` **PermissionHaltLeaveType**: ``"leaves-types-halt"``
+
+#### Defined in
+
+permissions.ts:1096
+
+___
+
+### PermissionHaltLedger
+
+• `Const` **PermissionHaltLedger**: ``"ledgers-halt"``
+
+#### Defined in
+
+permissions.ts:1031
+
+___
+
+### PermissionHaltLocation
+
+• `Const` **PermissionHaltLocation**: ``"locations-halt"``
+
+#### Defined in
+
+permissions.ts:971
+
+___
+
+### PermissionHaltOnDuty
+
+• `Const` **PermissionHaltOnDuty**: ``"onduties-halt"``
+
+#### Defined in
+
+permissions.ts:1174
+
+___
+
+### PermissionHaltOvertime
+
+• `Const` **PermissionHaltOvertime**: ``"overtimes-halt"``
+
+#### Defined in
+
+permissions.ts:1135
+
+___
+
+### PermissionHaltPayrollParameter
+
+• `Const` **PermissionHaltPayrollParameter**: ``"payroll-params-halt"``
+
+#### Defined in
+
+permissions.ts:933
+
+___
+
+### PermissionHaltPurchaseEnquiry
+
+• `Const` **PermissionHaltPurchaseEnquiry**: ``"purchases-enquiries-halt"``
+
+#### Defined in
+
+permissions.ts:731
+
+___
+
+### PermissionHaltPurchasePayment
+
+• `Const` **PermissionHaltPurchasePayment**: ``"purchases-payments-halt"``
+
+#### Defined in
+
+permissions.ts:619
+
+___
+
+### PermissionHaltQCHub
+
+• `Const` **PermissionHaltQCHub**: ``"qchubs-halt"``
+
+#### Defined in
+
+permissions.ts:1007
+
+___
+
+### PermissionHaltQCParameter
+
+• `Const` **PermissionHaltQCParameter**: ``"qc-params-halt"``
+
+#### Defined in
+
+permissions.ts:866
+
+___
+
+### PermissionHaltQuotationRequest
+
+• `Const` **PermissionHaltQuotationRequest**: ``"quotations-requests-halt"``
+
+#### Defined in
+
+permissions.ts:762
+
+___
+
+### PermissionHaltQuotationResponse
+
+• `Const` **PermissionHaltQuotationResponse**: ``"quotations-responses-halt"``
+
+#### Defined in
+
+permissions.ts:777
+
+___
+
+### PermissionHaltSaleReceipt
+
+• `Const` **PermissionHaltSaleReceipt**: ``"sales-receipts-halt"``
+
+#### Defined in
+
+permissions.ts:632
+
+___
+
+### PermissionHaltShift
+
+• `Const` **PermissionHaltShift**: ``"shifts-halt"``
+
+#### Defined in
+
+permissions.ts:1057
+
+___
+
+### PermissionHaltShiftGroup
+
+• `Const` **PermissionHaltShiftGroup**: ``"shift-groups-halt"``
+
+#### Defined in
+
+permissions.ts:1070
+
+___
+
+### PermissionHaltSkillParameter
+
+• `Const` **PermissionHaltSkillParameter**: ``"skills-params-halt"``
+
+#### Defined in
+
+permissions.ts:1243
+
+___
+
+### PermissionHaltStorage
+
+• `Const` **PermissionHaltStorage**: ``"storages-halt"``
+
+#### Defined in
+
+permissions.ts:1019
+
+___
+
+### PermissionHaltStore
+
+• `Const` **PermissionHaltStore**: ``"stores-halt"``
+
+#### Defined in
+
+permissions.ts:995
+
+___
+
+### PermissionHaltSundry
+
+• `Const` **PermissionHaltSundry**: ``"sundries-halt"``
+
+#### Defined in
+
+permissions.ts:718
+
+___
+
+### PermissionHaltTaxGroup
+
+• `Const` **PermissionHaltTaxGroup**: ``"tax-groups-halt"``
+
+#### Defined in
+
+permissions.ts:920
+
+___
+
+### PermissionHaltTaxParameter
+
+• `Const` **PermissionHaltTaxParameter**: ``"tax-params-halt"``
+
+#### Defined in
+
+permissions.ts:908
+
+___
+
+### PermissionHaltUnitOfMaterial
+
+• `Const` **PermissionHaltUnitOfMaterial**: ``"units-of-materials-halt"``
+
+#### Defined in
+
+permissions.ts:407
+
+___
+
+### PermissionHaltVendor
+
+• `Const` **PermissionHaltVendor**: ``"vendors-halt"``
+
+#### Defined in
+
+permissions.ts:72
+
+___
+
+### PermissionHaltVisitation
+
+• `Const` **PermissionHaltVisitation**: ``"visitations-halt"``
+
+#### Defined in
+
+permissions.ts:1230
+
+___
+
+### PermissionHaltedAbsences
+
+• `Const` **PermissionHaltedAbsences**: ``"absences-halted"``
+
+#### Defined in
+
+permissions.ts:1157
+
+___
+
+### PermissionHaltedActionsCodes
+
+• `Const` **PermissionHaltedActionsCodes**: ``"actions-codes-halted"``
+
+#### Defined in
+
+permissions.ts:1318
+
+___
+
+### PermissionHaltedActivitiesGroups
+
+• `Const` **PermissionHaltedActivitiesGroups**: ``"activities-groups-halted"``
+
+#### Defined in
+
+permissions.ts:1306
+
+___
+
+### PermissionHaltedActivitiesStatuses
+
+• `Const` **PermissionHaltedActivitiesStatuses**: ``"activities-statuses-halted"``
+
+#### Defined in
+
+permissions.ts:1294
+
+___
+
+### PermissionHaltedActivitiesTags
+
+• `Const` **PermissionHaltedActivitiesTags**: ``"activities-tags-halted"``
+
+#### Defined in
+
+permissions.ts:1282
+
+___
+
+### PermissionHaltedAnnouncements
+
+• `Const` **PermissionHaltedAnnouncements**: ``"announcements-halted"``
+
+#### Defined in
+
+permissions.ts:1040
+
+___
+
+### PermissionHaltedAttendanceAmendments
+
+• `Const` **PermissionHaltedAttendanceAmendments**: ``"attendances-amendments-halted"``
+
+#### Defined in
+
+permissions.ts:1183
+
+___
+
+### PermissionHaltedAttendances
+
+• `Const` **PermissionHaltedAttendances**: ``"attendances-halted"``
+
+#### Defined in
+
+permissions.ts:1144
+
+___
+
+### PermissionHaltedBankAccounts
+
+• `Const` **PermissionHaltedBankAccounts**: ``"bankaccounts-halted"``
+
+#### Defined in
+
+permissions.ts:980
+
+___
+
+### PermissionHaltedClients
+
+• `Const` **PermissionHaltedClients**: ``"clients-halted"``
+
+#### Defined in
+
+permissions.ts:45
+
+___
+
+### PermissionHaltedContractorsPayments
+
+• `Const` **PermissionHaltedContractorsPayments**: ``"contractors-payments-halted"``
+
+#### Defined in
+
+permissions.ts:701
+
+___
+
+### PermissionHaltedCurrencies
+
+• `Const` **PermissionHaltedCurrencies**: ``"currencies-halted"``
+
+#### Defined in
+
+permissions.ts:392
+
+___
+
+### PermissionHaltedGoal
+
+• `Const` **PermissionHaltedGoal**: ``"goals-halted"``
+
+#### Defined in
+
+permissions.ts:1265
+
+___
+
+### PermissionHaltedHolidays
+
+• `Const` **PermissionHaltedHolidays**: ``"holidays-halted"``
+
+#### Defined in
+
+permissions.ts:1079
+
+___
+
+### PermissionHaltedLeaveTypes
+
+• `Const` **PermissionHaltedLeaveTypes**: ``"leaves-types-halted"``
+
+#### Defined in
+
+permissions.ts:1092
+
+___
+
+### PermissionHaltedLeavesAdjustments
+
+• `Const` **PermissionHaltedLeavesAdjustments**: ``"leaves-adjustments-halted"``
+
+#### Defined in
+
+permissions.ts:1105
+
+___
+
+### PermissionHaltedLeavesRequests
+
+• `Const` **PermissionHaltedLeavesRequests**: ``"leaves-requests-halted"``
+
+#### Defined in
+
+permissions.ts:1118
+
+___
+
+### PermissionHaltedLedgers
+
+• `Const` **PermissionHaltedLedgers**: ``"ledgers-halted"``
+
+#### Defined in
+
+permissions.ts:1028
+
+___
+
+### PermissionHaltedLocations
+
+• `Const` **PermissionHaltedLocations**: ``"locations-halted"``
+
+#### Defined in
+
+permissions.ts:968
+
+___
+
+### PermissionHaltedOnDuties
+
+• `Const` **PermissionHaltedOnDuties**: ``"onduties-halted"``
+
+#### Defined in
+
+permissions.ts:1170
+
+___
+
+### PermissionHaltedOvertime
+
+• `Const` **PermissionHaltedOvertime**: ``"overtimes-halted"``
+
+#### Defined in
+
+permissions.ts:1131
+
+___
+
+### PermissionHaltedPayrollParameters
+
+• `Const` **PermissionHaltedPayrollParameters**: ``"payroll-params-halted"``
+
+#### Defined in
+
+permissions.ts:929
+
+___
+
+### PermissionHaltedPurchaseEnquiry
+
+• `Const` **PermissionHaltedPurchaseEnquiry**: ``"purchases-enquiries-halted"``
+
+#### Defined in
+
+permissions.ts:725
+
+___
+
+### PermissionHaltedPurchasePayment
+
+• `Const` **PermissionHaltedPurchasePayment**: ``"purchases-payments-halted"``
+
+#### Defined in
+
+permissions.ts:615
+
+___
+
+### PermissionHaltedQCHubs
+
+• `Const` **PermissionHaltedQCHubs**: ``"qchubs-halted"``
+
+#### Defined in
+
+permissions.ts:1004
+
+___
+
+### PermissionHaltedQCParameters
+
+• `Const` **PermissionHaltedQCParameters**: ``"qc-params-halted"``
+
+#### Defined in
+
+permissions.ts:862
+
+___
+
+### PermissionHaltedQuotationRequest
+
+• `Const` **PermissionHaltedQuotationRequest**: ``"quotations-requests-halted"``
+
+#### Defined in
+
+permissions.ts:756
+
+___
+
+### PermissionHaltedQuotationResponse
+
+• `Const` **PermissionHaltedQuotationResponse**: ``"quotations-responses-halted"``
+
+#### Defined in
+
+permissions.ts:771
+
+___
+
+### PermissionHaltedSaleReceipt
+
+• `Const` **PermissionHaltedSaleReceipt**: ``"sales-receipts-halted"``
+
+#### Defined in
+
+permissions.ts:628
+
+___
+
+### PermissionHaltedShiftGroups
+
+• `Const` **PermissionHaltedShiftGroups**: ``"shift-groups-halted"``
+
+#### Defined in
+
+permissions.ts:1066
+
+___
+
+### PermissionHaltedShifts
+
+• `Const` **PermissionHaltedShifts**: ``"shifts-halted"``
+
+#### Defined in
+
+permissions.ts:1053
+
+___
+
+### PermissionHaltedSkillParameters
+
+• `Const` **PermissionHaltedSkillParameters**: ``"skills-params-halted"``
+
+#### Defined in
+
+permissions.ts:1239
+
+___
+
+### PermissionHaltedStorages
+
+• `Const` **PermissionHaltedStorages**: ``"storages-halted"``
+
+#### Defined in
+
+permissions.ts:1016
+
+___
+
+### PermissionHaltedStores
+
+• `Const` **PermissionHaltedStores**: ``"stores-halted"``
+
+#### Defined in
+
+permissions.ts:992
+
+___
+
+### PermissionHaltedSundries
+
+• `Const` **PermissionHaltedSundries**: ``"sundries-halted"``
+
+#### Defined in
+
+permissions.ts:714
+
+___
+
+### PermissionHaltedTaxGroups
+
+• `Const` **PermissionHaltedTaxGroups**: ``"tax-groups-halted"``
+
+#### Defined in
+
+permissions.ts:917
+
+___
+
+### PermissionHaltedTaxParameters
+
+• `Const` **PermissionHaltedTaxParameters**: ``"tax-params-halted"``
+
+#### Defined in
+
+permissions.ts:905
+
+___
+
+### PermissionHaltedUnitsOfMaterials
+
+• `Const` **PermissionHaltedUnitsOfMaterials**: ``"units-of-materials-halted"``
+
+#### Defined in
+
+permissions.ts:404
+
+___
+
+### PermissionHaltedVendors
+
+• `Const` **PermissionHaltedVendors**: ``"vendors-halted"``
+
+#### Defined in
+
+permissions.ts:69
+
+___
+
+### PermissionHaltedVisitations
+
+• `Const` **PermissionHaltedVisitations**: ``"visitations-halted"``
+
+#### Defined in
+
+permissions.ts:1226
+
+___
+
+### PermissionInfrastructureAdd
+
+• `Const` **PermissionInfrastructureAdd**: ``"infrastructure-add"``
+
+#### Defined in
+
+permissions.ts:202
+
+___
+
+### PermissionInfrastructureApproveIQC
+
+• `Const` **PermissionInfrastructureApproveIQC**: ``"infrastructure-extra-iqc-approve"``
+
+#### Defined in
+
+permissions.ts:204
+
+___
+
+### PermissionInfrastructureConsume
+
+• `Const` **PermissionInfrastructureConsume**: ``"infrastructure-extra-consume"``
+
+#### Defined in
+
+permissions.ts:214
+
+___
+
+### PermissionInfrastructureConsumed
+
+• `Const` **PermissionInfrastructureConsumed**: ``"infrastructure-consumed"``
+
+#### Defined in
+
+permissions.ts:206
+
+___
+
+### PermissionInfrastructureDiscard
+
+• `Const` **PermissionInfrastructureDiscard**: ``"infrastructure-extra-discard"``
+
+#### Defined in
+
+permissions.ts:215
+
+___
+
+### PermissionInfrastructureDiscarded
+
+• `Const` **PermissionInfrastructureDiscarded**: ``"infrastructure-discarded"``
+
+#### Defined in
+
+permissions.ts:211
+
+___
+
+### PermissionInfrastructureIQC
+
+• `Const` **PermissionInfrastructureIQC**: ``"infrastructure-iqc"``
+
+#### Defined in
+
+permissions.ts:203
+
+___
+
+### PermissionInfrastructureIssued
+
+• `Const` **PermissionInfrastructureIssued**: ``"infrastructure-issued"``
+
+#### Defined in
+
+permissions.ts:212
+
+___
+
+### PermissionInfrastructureReject
+
+• `Const` **PermissionInfrastructureReject**: ``"infrastructure-extra-reject"``
+
+#### Defined in
+
+permissions.ts:213
+
+___
+
+### PermissionInfrastructureRejected
+
+• `Const` **PermissionInfrastructureRejected**: ``"infrastructure-rejected"``
+
+#### Defined in
+
+permissions.ts:208
+
+___
+
+### PermissionInfrastructureReturnable
+
+• `Const` **PermissionInfrastructureReturnable**: ``"infrastructure-returnable"``
+
+#### Defined in
+
+permissions.ts:209
+
+___
+
+### PermissionInfrastructureRework
+
+• `Const` **PermissionInfrastructureRework**: ``"infrastructure-rework"``
+
+#### Defined in
+
+permissions.ts:207
+
+___
+
+### PermissionInfrastructureScrap
+
+• `Const` **PermissionInfrastructureScrap**: ``"infrastructure-scrap"``
+
+#### Defined in
+
+permissions.ts:210
+
+___
+
+### PermissionInfrastructureStore
+
+• `Const` **PermissionInfrastructureStore**: ``"infrastructure-store"``
+
+#### Defined in
+
+permissions.ts:205
+
+___
+
+### PermissionInfrastructureView
+
+• `Const` **PermissionInfrastructureView**: ``"infrastructure-view"``
+
+#### Defined in
+
+permissions.ts:216
+
+___
+
+### PermissionInwardJobApprove
+
+• `Const` **PermissionInwardJobApprove**: ``"inward-jobs-approve"``
+
+#### Defined in
+
+permissions.ts:331
+
+___
+
+### PermissionInwardJobComplete
+
+• `Const` **PermissionInwardJobComplete**: ``"inward-jobs-mark-complete"``
+
+#### Defined in
+
+permissions.ts:335
+
+___
+
+### PermissionInwardJobCompleted
+
+• `Const` **PermissionInwardJobCompleted**: ``"inward-jobs-completed"``
+
+#### Defined in
+
+permissions.ts:333
+
+___
+
+### PermissionInwardJobDiscard
+
+• `Const` **PermissionInwardJobDiscard**: ``"inward-jobs-extra-discard"``
+
+#### Defined in
+
+permissions.ts:336
+
+___
+
+### PermissionInwardJobDiscarded
+
+• `Const` **PermissionInwardJobDiscarded**: ``"inward-jobs-discarded"``
+
+#### Defined in
+
+permissions.ts:329
+
+___
+
+### PermissionInwardJobDrafts
+
+• `Const` **PermissionInwardJobDrafts**: ``"inward-jobs-drafts"``
+
+#### Defined in
+
+permissions.ts:325
+
+___
+
+### PermissionInwardJobFreeIssueMaterialApprove
+
+• `Const` **PermissionInwardJobFreeIssueMaterialApprove**: ``"inward-jobs-free-issue-materials-approve"``
+
+#### Defined in
+
+permissions.ts:346
+
+___
+
+### PermissionInwardJobFreeIssueMaterialComplete
+
+• `Const` **PermissionInwardJobFreeIssueMaterialComplete**: ``"inward-jobs-free-issue-materials-mark-complete"``
+
+#### Defined in
+
+permissions.ts:350
+
+___
+
+### PermissionInwardJobFreeIssueMaterialCompleted
+
+• `Const` **PermissionInwardJobFreeIssueMaterialCompleted**: ``"inward-jobs-free-issue-materials-completed"``
+
+#### Defined in
+
+permissions.ts:348
+
+___
+
+### PermissionInwardJobFreeIssueMaterialDiscard
+
+• `Const` **PermissionInwardJobFreeIssueMaterialDiscard**: ``"inward-jobs-free-issue-materials-extra-discard"``
+
+#### Defined in
+
+permissions.ts:351
+
+___
+
+### PermissionInwardJobFreeIssueMaterialDiscarded
+
+• `Const` **PermissionInwardJobFreeIssueMaterialDiscarded**: ``"inward-jobs-free-issue-materials-discarded"``
+
+#### Defined in
+
+permissions.ts:344
+
+___
+
+### PermissionInwardJobFreeIssueMaterialDrafts
+
+• `Const` **PermissionInwardJobFreeIssueMaterialDrafts**: ``"inward-jobs-free-issue-materials-drafts"``
+
+#### Defined in
+
+permissions.ts:340
+
+___
+
+### PermissionInwardJobFreeIssueMaterialHalt
+
+• `Const` **PermissionInwardJobFreeIssueMaterialHalt**: ``"inward-jobs-free-issue-materials-extra-halt"``
+
+#### Defined in
+
+permissions.ts:349
+
+___
+
+### PermissionInwardJobFreeIssueMaterialHalted
+
+• `Const` **PermissionInwardJobFreeIssueMaterialHalted**: ``"inward-jobs-free-issue-materials-halted"``
+
+#### Defined in
+
+permissions.ts:343
+
+___
+
+### PermissionInwardJobFreeIssueMaterialNew
+
+• `Const` **PermissionInwardJobFreeIssueMaterialNew**: ``"inward-jobs-free-issue-materials-new"``
+
+#### Defined in
+
+permissions.ts:339
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnApprove
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnApprove**: ``"inward-jobs-free-issue-materials-returns-approve"``
+
+#### Defined in
+
+permissions.ts:601
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnComplete
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnComplete**: ``"inward-jobs-free-issue-materials-returns-mark-complete"``
+
+#### Defined in
+
+permissions.ts:605
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnCompleted
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnCompleted**: ``"inward-jobs-free-issue-materials-returns-completed"``
+
+#### Defined in
+
+permissions.ts:603
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnDiscard
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnDiscard**: ``"inward-jobs-free-issue-materials-returns-extra-discard"``
+
+#### Defined in
+
+permissions.ts:606
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnDiscarded
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnDiscarded**: ``"inward-jobs-free-issue-materials-returns-discarded"``
+
+#### Defined in
+
+permissions.ts:599
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnDrafts
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnDrafts**: ``"inward-jobs-free-issue-materials-returns-drafts"``
+
+#### Defined in
+
+permissions.ts:595
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnHalt
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnHalt**: ``"inward-jobs-free-issue-materials-returns-extra-halt"``
+
+#### Defined in
+
+permissions.ts:604
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnHalted
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnHalted**: ``"inward-jobs-free-issue-materials-returns-halted"``
+
+#### Defined in
+
+permissions.ts:598
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnNew
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnNew**: ``"inward-jobs-free-issue-materials-returns-new"``
+
+#### Defined in
+
+permissions.ts:594
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnRevise
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnRevise**: ``"inward-jobs-free-issue-materials-returns-revise"``
+
+#### Defined in
+
+permissions.ts:597
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnStanding
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnStanding**: ``"inward-jobs-free-issue-materials-returns-standing"``
+
+#### Defined in
+
+permissions.ts:602
+
+___
+
+### PermissionInwardJobFreeIssueMaterialReturnVerify
+
+• `Const` **PermissionInwardJobFreeIssueMaterialReturnVerify**: ``"inward-jobs-free-issue-materials-returns-verify"``
+
+#### Defined in
+
+permissions.ts:596
+
+___
+
+### PermissionInwardJobFreeIssueMaterialRevise
+
+• `Const` **PermissionInwardJobFreeIssueMaterialRevise**: ``"inward-jobs-free-issue-materials-revise"``
+
+#### Defined in
+
+permissions.ts:342
+
+___
+
+### PermissionInwardJobFreeIssueMaterialStanding
+
+• `Const` **PermissionInwardJobFreeIssueMaterialStanding**: ``"inward-jobs-free-issue-materials-standing"``
+
+#### Defined in
+
+permissions.ts:347
+
+___
+
+### PermissionInwardJobFreeIssueMaterialVerify
+
+• `Const` **PermissionInwardJobFreeIssueMaterialVerify**: ``"inward-jobs-free-issue-materials-verify"``
+
+#### Defined in
+
+permissions.ts:341
+
+___
+
+### PermissionInwardJobHalt
+
+• `Const` **PermissionInwardJobHalt**: ``"inward-jobs-extra-halt"``
+
+#### Defined in
+
+permissions.ts:334
+
+___
+
+### PermissionInwardJobHalted
+
+• `Const` **PermissionInwardJobHalted**: ``"inward-jobs-halted"``
+
+#### Defined in
+
+permissions.ts:328
+
+___
+
+### PermissionInwardJobNew
+
+• `Const` **PermissionInwardJobNew**: ``"inward-jobs-new"``
+
+#### Defined in
+
+permissions.ts:324
+
+___
+
+### PermissionInwardJobRevise
+
+• `Const` **PermissionInwardJobRevise**: ``"inward-jobs-revise"``
+
+#### Defined in
+
+permissions.ts:327
+
+___
+
+### PermissionInwardJobStanding
+
+• `Const` **PermissionInwardJobStanding**: ``"inward-jobs-standing"``
+
+#### Defined in
+
+permissions.ts:332
+
+___
+
+### PermissionInwardJobVerify
+
+• `Const` **PermissionInwardJobVerify**: ``"inward-jobs-verify"``
+
+#### Defined in
+
+permissions.ts:326
+
+___
+
+### PermissionMarkAbsenceasCompleted
+
+• `Const` **PermissionMarkAbsenceasCompleted**: ``"absences-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1162
+
+___
+
+### PermissionMarkAnnouncementasCompleted
+
+• `Const` **PermissionMarkAnnouncementasCompleted**: ``"announcements-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1045
+
+___
+
+### PermissionMarkAttendanceAmendmentasCompleted
+
+• `Const` **PermissionMarkAttendanceAmendmentasCompleted**: ``"attendances-amendments-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1188
+
+___
+
+### PermissionMarkAttendanceasCompleted
+
+• `Const` **PermissionMarkAttendanceasCompleted**: ``"attendances-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1149
+
+___
+
+### PermissionMarkContractorPaymentasCompleted
+
+• `Const` **PermissionMarkContractorPaymentasCompleted**: ``"contractors-payments-mark-completed"``
+
+#### Defined in
+
+permissions.ts:706
+
+___
+
+### PermissionMarkGoalasCompleted
+
+• `Const` **PermissionMarkGoalasCompleted**: ``"goals-mark-completed"``
+
+#### Defined in
+
+permissions.ts:1272
+
+___
+
+### PermissionMarkHolidayasCompleted
+
+• `Const` **PermissionMarkHolidayasCompleted**: ``"holidays-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1084
+
+___
+
+### PermissionMarkLeaveAdjustmentasCompleted
+
+• `Const` **PermissionMarkLeaveAdjustmentasCompleted**: ``"leaves-adjustments-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1110
+
+___
+
+### PermissionMarkLeaveRequestasCompleted
+
+• `Const` **PermissionMarkLeaveRequestasCompleted**: ``"leaves-requests-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1123
+
+___
+
+### PermissionMarkLeaveTypeasCompleted
+
+• `Const` **PermissionMarkLeaveTypeasCompleted**: ``"leaves-types-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1097
+
+___
+
+### PermissionMarkOnDutyasCompleted
+
+• `Const` **PermissionMarkOnDutyasCompleted**: ``"onduties-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1175
+
+___
+
+### PermissionMarkOvertimeasCompleted
+
+• `Const` **PermissionMarkOvertimeasCompleted**: ``"overtimes-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1136
+
+___
+
+### PermissionMarkPayrollParameterasCompleted
+
+• `Const` **PermissionMarkPayrollParameterasCompleted**: ``"payroll-params-mark-complete"``
+
+#### Defined in
+
+permissions.ts:934
+
+___
+
+### PermissionMarkPurchaseEnquiryasCompleted
+
+• `Const` **PermissionMarkPurchaseEnquiryasCompleted**: ``"purchases-enquiries-mark-completed"``
+
+#### Defined in
+
+permissions.ts:732
+
+___
+
+### PermissionMarkPurchasePaymentasCompleted
+
+• `Const` **PermissionMarkPurchasePaymentasCompleted**: ``"purchases-payments-mark-complete"``
+
+#### Defined in
+
+permissions.ts:620
+
+___
+
+### PermissionMarkQCParameterasCompleted
+
+• `Const` **PermissionMarkQCParameterasCompleted**: ``"qc-params-mark-complete"``
+
+#### Defined in
+
+permissions.ts:867
+
+___
+
+### PermissionMarkQuotationRequestasCompleted
+
+• `Const` **PermissionMarkQuotationRequestasCompleted**: ``"quotations-requests-mark-completed"``
+
+#### Defined in
+
+permissions.ts:763
+
+___
+
+### PermissionMarkQuotationResponseasCompleted
+
+• `Const` **PermissionMarkQuotationResponseasCompleted**: ``"quotations-responses-mark-completed"``
+
+#### Defined in
+
+permissions.ts:778
+
+___
+
+### PermissionMarkSaleReceiptasCompleted
+
+• `Const` **PermissionMarkSaleReceiptasCompleted**: ``"sales-receipts-mark-complete"``
+
+#### Defined in
+
+permissions.ts:633
+
+___
+
+### PermissionMarkShiftGroupasCompleted
+
+• `Const` **PermissionMarkShiftGroupasCompleted**: ``"shift-groups-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1071
+
+___
+
+### PermissionMarkShiftasCompleted
+
+• `Const` **PermissionMarkShiftasCompleted**: ``"shifts-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1058
+
+___
+
+### PermissionMarkSkillParameterasCompleted
+
+• `Const` **PermissionMarkSkillParameterasCompleted**: ``"skills-params-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1244
+
+___
+
+### PermissionMarkSundryasCompleted
+
+• `Const` **PermissionMarkSundryasCompleted**: ``"sundries-mark-completed"``
+
+#### Defined in
+
+permissions.ts:719
+
+___
+
+### PermissionMarkVisitationasCompleted
+
+• `Const` **PermissionMarkVisitationasCompleted**: ``"visitations-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1231
+
+___
+
+### PermissionMeetingCancel
+
+• `Const` **PermissionMeetingCancel**: ``"meetings-mark-cancel"``
+
+#### Defined in
+
+permissions.ts:1342
+
+___
+
+### PermissionMeetingCancelled
+
+• `Const` **PermissionMeetingCancelled**: ``"meetings-cancelled"``
+
+#### Defined in
+
+permissions.ts:1341
+
+___
+
+### PermissionMeetingComplete
+
+• `Const` **PermissionMeetingComplete**: ``"meetings-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1340
+
+___
+
+### PermissionMeetingCompleted
+
+• `Const` **PermissionMeetingCompleted**: ``"meetings-completed"``
+
+#### Defined in
+
+permissions.ts:1339
+
+___
+
+### PermissionMeetingNew
+
+• `Const` **PermissionMeetingNew**: ``"meetings-create"``
+
+#### Defined in
+
+permissions.ts:1336
+
+___
+
+### PermissionMeetingOpen
+
+• `Const` **PermissionMeetingOpen**: ``"meetings-open"``
+
+#### Defined in
+
+permissions.ts:1338
+
+___
+
+### PermissionMeetingUpdate
+
+• `Const` **PermissionMeetingUpdate**: ``"meetings-update"``
+
+#### Defined in
+
+permissions.ts:1337
+
+___
+
+### PermissionMerchandiseAdd
+
+• `Const` **PermissionMerchandiseAdd**: ``"merchandise-add"``
+
+#### Defined in
+
+permissions.ts:170
+
+___
+
+### PermissionMerchandiseApproveIQC
+
+• `Const` **PermissionMerchandiseApproveIQC**: ``"merchandise-extra-iqc-approve"``
+
+#### Defined in
+
+permissions.ts:172
+
+___
+
+### PermissionMerchandiseConsume
+
+• `Const` **PermissionMerchandiseConsume**: ``"merchandise-extra-consume"``
+
+#### Defined in
+
+permissions.ts:182
+
+___
+
+### PermissionMerchandiseConsumed
+
+• `Const` **PermissionMerchandiseConsumed**: ``"merchandise-consumed"``
+
+#### Defined in
+
+permissions.ts:174
+
+___
+
+### PermissionMerchandiseDiscard
+
+• `Const` **PermissionMerchandiseDiscard**: ``"merchandise-extra-discard"``
+
+#### Defined in
+
+permissions.ts:183
+
+___
+
+### PermissionMerchandiseDiscarded
+
+• `Const` **PermissionMerchandiseDiscarded**: ``"merchandise-discarded"``
+
+#### Defined in
+
+permissions.ts:179
+
+___
+
+### PermissionMerchandiseIQC
+
+• `Const` **PermissionMerchandiseIQC**: ``"merchandise-iqc"``
+
+#### Defined in
+
+permissions.ts:171
+
+___
+
+### PermissionMerchandiseIssued
+
+• `Const` **PermissionMerchandiseIssued**: ``"merchandise-issued"``
+
+#### Defined in
+
+permissions.ts:180
+
+___
+
+### PermissionMerchandiseReject
+
+• `Const` **PermissionMerchandiseReject**: ``"merchandise-extra-reject"``
+
+#### Defined in
+
+permissions.ts:181
+
+___
+
+### PermissionMerchandiseRejected
+
+• `Const` **PermissionMerchandiseRejected**: ``"merchandise-rejected"``
+
+#### Defined in
+
+permissions.ts:176
+
+___
+
+### PermissionMerchandiseReturnable
+
+• `Const` **PermissionMerchandiseReturnable**: ``"merchandise-returnable"``
+
+#### Defined in
+
+permissions.ts:177
+
+___
+
+### PermissionMerchandiseRework
+
+• `Const` **PermissionMerchandiseRework**: ``"merchandise-rework"``
+
+#### Defined in
+
+permissions.ts:175
+
+___
+
+### PermissionMerchandiseScrap
+
+• `Const` **PermissionMerchandiseScrap**: ``"merchandise-scrap"``
+
+#### Defined in
+
+permissions.ts:178
+
+___
+
+### PermissionMerchandiseStore
+
+• `Const` **PermissionMerchandiseStore**: ``"merchandise-store"``
+
+#### Defined in
+
+permissions.ts:173
+
+___
+
+### PermissionMerchandiseView
+
+• `Const` **PermissionMerchandiseView**: ``"merchandise-view"``
+
+#### Defined in
+
+permissions.ts:184
+
+___
+
+### PermissionModifyAssociate
+
+• `Const` **PermissionModifyAssociate**: ``"associates-modify"``
+
+#### Defined in
+
+permissions.ts:53
+
+___
+
+### PermissionModifyContractor
+
+• `Const` **PermissionModifyContractor**: ``"contractors-modify"``
+
+#### Defined in
+
+permissions.ts:59
+
+___
+
+### PermissionModifyFormFields
+
+• `Const` **PermissionModifyFormFields**: ``"forms-fields-modify"``
+
+#### Defined in
+
+permissions.ts:35
+
+___
+
+### PermissionModifyFormSections
+
+• `Const` **PermissionModifyFormSections**: ``"forms-sections-modify"``
+
+#### Defined in
+
+permissions.ts:30
+
+___
+
+### PermissionModifyLabel
+
+• `Const` **PermissionModifyLabel**: ``"labels-modify"``
+
+#### Defined in
+
+permissions.ts:958
+
+___
+
+### PermissionMyActivityCancelled
+
+• `Const` **PermissionMyActivityCancelled**: ``"activities-my-cancelled"``
+
+#### Defined in
+
+permissions.ts:1334
+
+___
+
+### PermissionMyActivityCompleted
+
+• `Const` **PermissionMyActivityCompleted**: ``"activities-my-completed"``
+
+#### Defined in
+
+permissions.ts:1333
+
+___
+
+### PermissionMyActivityOpen
+
+• `Const` **PermissionMyActivityOpen**: ``"activities-my-open"``
+
+#### Defined in
+
+permissions.ts:1332
+
+___
+
+### PermissionMyClientStreamCancelled
+
+• `Const` **PermissionMyClientStreamCancelled**: ``"client-streams-my-cancelled"``
+
+#### Defined in
+
+permissions.ts:1365
+
+___
+
+### PermissionMyClientStreamCompleted
+
+• `Const` **PermissionMyClientStreamCompleted**: ``"client-streams-my-completed"``
+
+#### Defined in
+
+permissions.ts:1364
+
+___
+
+### PermissionMyClientStreamOpen
+
+• `Const` **PermissionMyClientStreamOpen**: ``"client-streams-my-open"``
+
+#### Defined in
+
+permissions.ts:1363
+
+___
+
+### PermissionMyGeneralStreamCancelled
+
+• `Const` **PermissionMyGeneralStreamCancelled**: ``"general-streams-my-cancelled"``
+
+#### Defined in
+
+permissions.ts:1377
+
+___
+
+### PermissionMyGeneralStreamCompleted
+
+• `Const` **PermissionMyGeneralStreamCompleted**: ``"general-streams-my-completed"``
+
+#### Defined in
+
+permissions.ts:1376
+
+___
+
+### PermissionMyGeneralStreamOpen
+
+• `Const` **PermissionMyGeneralStreamOpen**: ``"general-streams-my-open"``
+
+#### Defined in
+
+permissions.ts:1375
+
+___
+
+### PermissionMyNoteCancelled
+
+• `Const` **PermissionMyNoteCancelled**: ``"notes-my-cancelled"``
+
+#### Defined in
+
+permissions.ts:1353
+
+___
+
+### PermissionMyNoteCompleted
+
+• `Const` **PermissionMyNoteCompleted**: ``"notes-my-completed"``
+
+#### Defined in
+
+permissions.ts:1352
+
+___
+
+### PermissionMyNoteOpen
+
+• `Const` **PermissionMyNoteOpen**: ``"notes-my-open"``
+
+#### Defined in
+
+permissions.ts:1351
+
+___
+
+### PermissionMyVendorStreamCancelled
+
+• `Const` **PermissionMyVendorStreamCancelled**: ``"vendor-streams-my-cancelled"``
+
+#### Defined in
+
+permissions.ts:1389
+
+___
+
+### PermissionMyVendorStreamCompleted
+
+• `Const` **PermissionMyVendorStreamCompleted**: ``"vendor-streams-my-completed"``
+
+#### Defined in
+
+permissions.ts:1388
+
+___
+
+### PermissionMyVendorStreamOpen
+
+• `Const` **PermissionMyVendorStreamOpen**: ``"vendor-streams-my-open"``
+
+#### Defined in
+
+permissions.ts:1387
+
+___
+
+### PermissionNewAbsence
+
+• `Const` **PermissionNewAbsence**: ``"absences-new"``
+
+#### Defined in
+
+permissions.ts:1151
+
+___
+
+### PermissionNewActionCode
+
+• `Const` **PermissionNewActionCode**: ``"actions-codes-new"``
+
+#### Defined in
+
+permissions.ts:1312
+
+___
+
+### PermissionNewActivityGroup
+
+• `Const` **PermissionNewActivityGroup**: ``"activities-groups-new"``
+
+#### Defined in
+
+permissions.ts:1300
+
+___
+
+### PermissionNewActivityStatus
+
+• `Const` **PermissionNewActivityStatus**: ``"activities-statuses-new"``
+
+#### Defined in
+
+permissions.ts:1288
+
+___
+
+### PermissionNewActivityTag
+
+• `Const` **PermissionNewActivityTag**: ``"activities-tags-new"``
+
+#### Defined in
+
+permissions.ts:1276
+
+___
+
+### PermissionNewAnnouncement
+
+• `Const` **PermissionNewAnnouncement**: ``"announcements-new"``
+
+#### Defined in
+
+permissions.ts:1034
+
+___
+
+### PermissionNewAssociate
+
+• `Const` **PermissionNewAssociate**: ``"associates-new"``
+
+#### Defined in
+
+permissions.ts:51
+
+___
+
+### PermissionNewAttendance
+
+• `Const` **PermissionNewAttendance**: ``"attendances-new"``
+
+#### Defined in
+
+permissions.ts:1138
+
+___
+
+### PermissionNewAttendanceAmendment
+
+• `Const` **PermissionNewAttendanceAmendment**: ``"attendances-amendments-new"``
+
+#### Defined in
+
+permissions.ts:1177
+
+___
+
+### PermissionNewBankAccount
+
+• `Const` **PermissionNewBankAccount**: ``"bankaccounts-new"``
+
+#### Defined in
+
+permissions.ts:974
+
+___
+
+### PermissionNewClient
+
+• `Const` **PermissionNewClient**: ``"clients-new"``
+
+#### Defined in
+
+permissions.ts:39
+
+___
+
+### PermissionNewContractor
+
+• `Const` **PermissionNewContractor**: ``"contractors-new"``
+
+#### Defined in
+
+permissions.ts:57
+
+___
+
+### PermissionNewContractorPayment
+
+• `Const` **PermissionNewContractorPayment**: ``"contractors-payments-new"``
+
+#### Defined in
+
+permissions.ts:695
+
+___
+
+### PermissionNewCurrency
+
+• `Const` **PermissionNewCurrency**: ``"currencies-new"``
+
+#### Defined in
+
+permissions.ts:386
+
+___
+
+### PermissionNewFormField
+
+• `Const` **PermissionNewFormField**: ``"forms-fields-new"``
+
+#### Defined in
+
+permissions.ts:33
+
+___
+
+### PermissionNewFormSection
+
+• `Const` **PermissionNewFormSection**: ``"forms-sections-new"``
+
+#### Defined in
+
+permissions.ts:28
+
+___
+
+### PermissionNewGoal
+
+• `Const` **PermissionNewGoal**: ``"goals-new"``
+
+#### Defined in
+
+permissions.ts:1261
+
+___
+
+### PermissionNewHoliday
+
+• `Const` **PermissionNewHoliday**: ``"holidays-new"``
+
+#### Defined in
+
+permissions.ts:1073
+
+___
+
+### PermissionNewLabel
+
+• `Const` **PermissionNewLabel**: ``"labels-new"``
+
+#### Defined in
+
+permissions.ts:956
+
+___
+
+### PermissionNewLeaveAdjustment
+
+• `Const` **PermissionNewLeaveAdjustment**: ``"leaves-adjustments-new"``
+
+#### Defined in
+
+permissions.ts:1099
+
+___
+
+### PermissionNewLeaveRequest
+
+• `Const` **PermissionNewLeaveRequest**: ``"leaves-requests-new"``
+
+#### Defined in
+
+permissions.ts:1112
+
+___
+
+### PermissionNewLeaveType
+
+• `Const` **PermissionNewLeaveType**: ``"leaves-types-new"``
+
+#### Defined in
+
+permissions.ts:1086
+
+___
+
+### PermissionNewLedger
+
+• `Const` **PermissionNewLedger**: ``"ledgers-new"``
+
+#### Defined in
+
+permissions.ts:1022
+
+___
+
+### PermissionNewLocation
+
+• `Const` **PermissionNewLocation**: ``"locations-new"``
+
+#### Defined in
+
+permissions.ts:962
+
+___
+
+### PermissionNewOnDuty
+
+• `Const` **PermissionNewOnDuty**: ``"onduties-new"``
+
+#### Defined in
+
+permissions.ts:1164
+
+___
+
+### PermissionNewOvertime
+
+• `Const` **PermissionNewOvertime**: ``"overtimes-new"``
+
+#### Defined in
+
+permissions.ts:1125
+
+___
+
+### PermissionNewPayrollParameter
+
+• `Const` **PermissionNewPayrollParameter**: ``"payroll-params-new"``
+
+#### Defined in
+
+permissions.ts:923
+
+___
+
+### PermissionNewPurchaseEnquiry
+
+• `Const` **PermissionNewPurchaseEnquiry**: ``"purchases-enquiries-new"``
+
+#### Defined in
+
+permissions.ts:721
+
+___
+
+### PermissionNewPurchasePayment
+
+• `Const` **PermissionNewPurchasePayment**: ``"purchases-payments-new"``
+
+#### Defined in
+
+permissions.ts:609
+
+___
+
+### PermissionNewQCHub
+
+• `Const` **PermissionNewQCHub**: ``"qchubs-new"``
+
+#### Defined in
+
+permissions.ts:998
+
+___
+
+### PermissionNewQCParameter
+
+• `Const` **PermissionNewQCParameter**: ``"qc-params-new"``
+
+#### Defined in
+
+permissions.ts:856
+
+___
+
+### PermissionNewQuotationRequest
+
+• `Const` **PermissionNewQuotationRequest**: ``"quotations-requests-new"``
+
+#### Defined in
+
+permissions.ts:752
+
+___
+
+### PermissionNewQuotationResponse
+
+• `Const` **PermissionNewQuotationResponse**: ``"quotations-responses-new"``
+
+#### Defined in
+
+permissions.ts:767
+
+___
+
+### PermissionNewSaleReceipt
+
+• `Const` **PermissionNewSaleReceipt**: ``"sales-receipts-new"``
+
+#### Defined in
+
+permissions.ts:622
+
+___
+
+### PermissionNewShift
+
+• `Const` **PermissionNewShift**: ``"shifts-new"``
+
+#### Defined in
+
+permissions.ts:1047
+
+___
+
+### PermissionNewShiftGroup
+
+• `Const` **PermissionNewShiftGroup**: ``"shift-groups-new"``
+
+#### Defined in
+
+permissions.ts:1060
+
+___
+
+### PermissionNewSkillParameter
+
+• `Const` **PermissionNewSkillParameter**: ``"skills-params-new"``
+
+#### Defined in
+
+permissions.ts:1233
+
+___
+
+### PermissionNewStorage
+
+• `Const` **PermissionNewStorage**: ``"storages-new"``
+
+#### Defined in
+
+permissions.ts:1010
+
+___
+
+### PermissionNewStore
+
+• `Const` **PermissionNewStore**: ``"stores-new"``
+
+#### Defined in
+
+permissions.ts:986
+
+___
+
+### PermissionNewSundry
+
+• `Const` **PermissionNewSundry**: ``"sundries-new"``
+
+#### Defined in
+
+permissions.ts:708
+
+___
+
+### PermissionNewTaxGroup
+
+• `Const` **PermissionNewTaxGroup**: ``"tax-groups-new"``
+
+#### Defined in
+
+permissions.ts:911
+
+___
+
+### PermissionNewTaxParameter
+
+• `Const` **PermissionNewTaxParameter**: ``"tax-params-new"``
+
+#### Defined in
+
+permissions.ts:899
+
+___
+
+### PermissionNewUnitOfMaterial
+
+• `Const` **PermissionNewUnitOfMaterial**: ``"units-of-materials-new"``
+
+#### Defined in
+
+permissions.ts:398
+
+___
+
+### PermissionNewVendor
+
+• `Const` **PermissionNewVendor**: ``"vendors-new"``
+
+#### Defined in
+
+permissions.ts:63
+
+___
+
+### PermissionNewVisitation
+
+• `Const` **PermissionNewVisitation**: ``"visitations-new"``
+
+#### Defined in
+
+permissions.ts:1220
+
+___
+
+### PermissionNoteCancel
+
+• `Const` **PermissionNoteCancel**: ``"notes-mark-cancel"``
+
+#### Defined in
+
+permissions.ts:1350
+
+___
+
+### PermissionNoteCancelled
+
+• `Const` **PermissionNoteCancelled**: ``"notes-cancelled"``
+
+#### Defined in
+
+permissions.ts:1349
+
+___
+
+### PermissionNoteComplete
+
+• `Const` **PermissionNoteComplete**: ``"notes-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1348
+
+___
+
+### PermissionNoteCompleted
+
+• `Const` **PermissionNoteCompleted**: ``"notes-completed"``
+
+#### Defined in
+
+permissions.ts:1347
+
+___
+
+### PermissionNoteNew
+
+• `Const` **PermissionNoteNew**: ``"notes-create"``
+
+#### Defined in
+
+permissions.ts:1344
+
+___
+
+### PermissionNoteOpen
+
+• `Const` **PermissionNoteOpen**: ``"notes-open"``
+
+#### Defined in
+
+permissions.ts:1346
+
+___
+
+### PermissionNoteUpdate
+
+• `Const` **PermissionNoteUpdate**: ``"notes-update"``
+
+#### Defined in
+
+permissions.ts:1345
+
+___
+
+### PermissionOutwardJobApprove
+
+• `Const` **PermissionOutwardJobApprove**: ``"outward-jobs-approve"``
+
+#### Defined in
+
+permissions.ts:301
+
+___
+
+### PermissionOutwardJobComplete
+
+• `Const` **PermissionOutwardJobComplete**: ``"outward-jobs-mark-complete"``
+
+#### Defined in
+
+permissions.ts:305
+
+___
+
+### PermissionOutwardJobCompleted
+
+• `Const` **PermissionOutwardJobCompleted**: ``"outward-jobs-completed"``
+
+#### Defined in
+
+permissions.ts:303
+
+___
+
+### PermissionOutwardJobDiscard
+
+• `Const` **PermissionOutwardJobDiscard**: ``"outward-jobs-extra-discard"``
+
+#### Defined in
+
+permissions.ts:306
+
+___
+
+### PermissionOutwardJobDiscarded
+
+• `Const` **PermissionOutwardJobDiscarded**: ``"outward-jobs-discarded"``
+
+#### Defined in
+
+permissions.ts:299
+
+___
+
+### PermissionOutwardJobDrafts
+
+• `Const` **PermissionOutwardJobDrafts**: ``"outward-jobs-drafts"``
+
+#### Defined in
+
+permissions.ts:295
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialApprove
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialApprove**: ``"outward-jobs-free-issue-materials-approve"``
+
+#### Defined in
+
+permissions.ts:316
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialComplete
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialComplete**: ``"outward-jobs-free-issue-materials-mark-complete"``
+
+#### Defined in
+
+permissions.ts:320
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialCompleted
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialCompleted**: ``"outward-jobs-free-issue-materials-completed"``
+
+#### Defined in
+
+permissions.ts:318
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialDiscard
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialDiscard**: ``"outward-jobs-free-issue-materials-extra-discard"``
+
+#### Defined in
+
+permissions.ts:321
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialDiscarded
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialDiscarded**: ``"outward-jobs-free-issue-materials-discarded"``
+
+#### Defined in
+
+permissions.ts:314
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialDrafts
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialDrafts**: ``"outward-jobs-free-issue-materials-drafts"``
+
+#### Defined in
+
+permissions.ts:310
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialHalt
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialHalt**: ``"outward-jobs-free-issue-materials-extra-halt"``
+
+#### Defined in
+
+permissions.ts:319
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialHalted
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialHalted**: ``"outward-jobs-free-issue-materials-halted"``
+
+#### Defined in
+
+permissions.ts:313
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialNew
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialNew**: ``"outward-jobs-free-issue-materials-new"``
+
+#### Defined in
+
+permissions.ts:309
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnApprove
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnApprove**: ``"outward-jobs-free-issue-materials-returns-approve"``
+
+#### Defined in
+
+permissions.ts:586
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnComplete
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnComplete**: ``"outward-jobs-free-issue-materials-returns-mark-complete"``
+
+#### Defined in
+
+permissions.ts:590
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnCompleted
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnCompleted**: ``"outward-jobs-free-issue-materials-returns-completed"``
+
+#### Defined in
+
+permissions.ts:588
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnDiscard
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnDiscard**: ``"outward-jobs-free-issue-materials-returns-extra-discard"``
+
+#### Defined in
+
+permissions.ts:591
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnDiscarded
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnDiscarded**: ``"outward-jobs-free-issue-materials-returns-discarded"``
+
+#### Defined in
+
+permissions.ts:584
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnDrafts
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnDrafts**: ``"outward-jobs-free-issue-materials-returns-drafts"``
+
+#### Defined in
+
+permissions.ts:580
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnHalt
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnHalt**: ``"outward-jobs-free-issue-materials-returns-extra-halt"``
+
+#### Defined in
+
+permissions.ts:589
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnHalted
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnHalted**: ``"outward-jobs-free-issue-materials-returns-halted"``
+
+#### Defined in
+
+permissions.ts:583
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnNew
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnNew**: ``"outward-jobs-free-issue-materials-returns-new"``
+
+#### Defined in
+
+permissions.ts:579
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnRevise
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnRevise**: ``"outward-jobs-free-issue-materials-returns-revise"``
+
+#### Defined in
+
+permissions.ts:582
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnStanding
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnStanding**: ``"outward-jobs-free-issue-materials-returns-standing"``
+
+#### Defined in
+
+permissions.ts:587
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialReturnVerify
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialReturnVerify**: ``"outward-jobs-free-issue-materials-returns-verify"``
+
+#### Defined in
+
+permissions.ts:581
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialRevise
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialRevise**: ``"outward-jobs-free-issue-materials-revise"``
+
+#### Defined in
+
+permissions.ts:312
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialStanding
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialStanding**: ``"outward-jobs-free-issue-materials-standing"``
+
+#### Defined in
+
+permissions.ts:317
+
+___
+
+### PermissionOutwardJobFreeIssueMaterialVerify
+
+• `Const` **PermissionOutwardJobFreeIssueMaterialVerify**: ``"outward-jobs-free-issue-materials-verify"``
+
+#### Defined in
+
+permissions.ts:311
+
+___
+
+### PermissionOutwardJobHalt
+
+• `Const` **PermissionOutwardJobHalt**: ``"outward-jobs-extra-halt"``
+
+#### Defined in
+
+permissions.ts:304
+
+___
+
+### PermissionOutwardJobHalted
+
+• `Const` **PermissionOutwardJobHalted**: ``"outward-jobs-halted"``
+
+#### Defined in
+
+permissions.ts:298
+
+___
+
+### PermissionOutwardJobNew
+
+• `Const` **PermissionOutwardJobNew**: ``"outward-jobs-new"``
+
+#### Defined in
+
+permissions.ts:294
+
+___
+
+### PermissionOutwardJobRevise
+
+• `Const` **PermissionOutwardJobRevise**: ``"outward-jobs-revise"``
+
+#### Defined in
+
+permissions.ts:297
+
+___
+
+### PermissionOutwardJobStanding
+
+• `Const` **PermissionOutwardJobStanding**: ``"outward-jobs-standing"``
+
+#### Defined in
+
+permissions.ts:302
+
+___
+
+### PermissionOutwardJobVerify
+
+• `Const` **PermissionOutwardJobVerify**: ``"outward-jobs-verify"``
+
+#### Defined in
+
+permissions.ts:296
+
+___
+
+### PermissionPayrollGroupApprove
+
+• `Const` **PermissionPayrollGroupApprove**: ``"payroll-groups-approve"``
+
+#### Defined in
+
+permissions.ts:943
+
+___
+
+### PermissionPayrollGroupComplete
+
+• `Const` **PermissionPayrollGroupComplete**: ``"payroll-groups-mark-complete"``
+
+#### Defined in
+
+permissions.ts:947
+
+___
+
+### PermissionPayrollGroupCompleted
+
+• `Const` **PermissionPayrollGroupCompleted**: ``"payroll-groups-completed"``
+
+#### Defined in
+
+permissions.ts:945
+
+___
+
+### PermissionPayrollGroupDiscard
+
+• `Const` **PermissionPayrollGroupDiscard**: ``"payroll-groups-extra-discard"``
+
+#### Defined in
+
+permissions.ts:948
+
+___
+
+### PermissionPayrollGroupDiscarded
+
+• `Const` **PermissionPayrollGroupDiscarded**: ``"payroll-groups-discarded"``
+
+#### Defined in
+
+permissions.ts:941
+
+___
+
+### PermissionPayrollGroupDrafts
+
+• `Const` **PermissionPayrollGroupDrafts**: ``"payroll-groups-drafts"``
+
+#### Defined in
+
+permissions.ts:937
+
+___
+
+### PermissionPayrollGroupHalt
+
+• `Const` **PermissionPayrollGroupHalt**: ``"payroll-groups-extra-halt"``
+
+#### Defined in
+
+permissions.ts:946
+
+___
+
+### PermissionPayrollGroupHalted
+
+• `Const` **PermissionPayrollGroupHalted**: ``"payroll-groups-halted"``
+
+#### Defined in
+
+permissions.ts:940
+
+___
+
+### PermissionPayrollGroupNew
+
+• `Const` **PermissionPayrollGroupNew**: ``"payroll-groups-new"``
+
+#### Defined in
+
+permissions.ts:936
+
+___
+
+### PermissionPayrollGroupRevise
+
+• `Const` **PermissionPayrollGroupRevise**: ``"payroll-groups-revise"``
+
+#### Defined in
+
+permissions.ts:939
+
+___
+
+### PermissionPayrollGroupStanding
+
+• `Const` **PermissionPayrollGroupStanding**: ``"payroll-groups-standing"``
+
+#### Defined in
+
+permissions.ts:944
+
+___
+
+### PermissionPayrollGroupVerify
+
+• `Const` **PermissionPayrollGroupVerify**: ``"payroll-groups-verify"``
+
+#### Defined in
+
+permissions.ts:938
+
+___
+
+### PermissionProductionIndentApprove
+
+• `Const` **PermissionProductionIndentApprove**: ``"production-indents-approve"``
+
+#### Defined in
+
+permissions.ts:101
+
+___
+
+### PermissionProductionIndentComplete
+
+• `Const` **PermissionProductionIndentComplete**: ``"production-indents-mark-complete"``
+
+#### Defined in
+
+permissions.ts:105
+
+___
+
+### PermissionProductionIndentCompleted
+
+• `Const` **PermissionProductionIndentCompleted**: ``"production-indents-completed"``
+
+#### Defined in
+
+permissions.ts:103
+
+___
+
+### PermissionProductionIndentDiscard
+
+• `Const` **PermissionProductionIndentDiscard**: ``"production-indents-extra-discard"``
+
+#### Defined in
+
+permissions.ts:106
+
+___
+
+### PermissionProductionIndentDiscarded
+
+• `Const` **PermissionProductionIndentDiscarded**: ``"production-indents-discarded"``
+
+#### Defined in
+
+permissions.ts:99
+
+___
+
+### PermissionProductionIndentDrafts
+
+• `Const` **PermissionProductionIndentDrafts**: ``"production-indents-drafts"``
+
+#### Defined in
+
+permissions.ts:95
+
+___
+
+### PermissionProductionIndentHalt
+
+• `Const` **PermissionProductionIndentHalt**: ``"production-indents-extra-halt"``
+
+#### Defined in
+
+permissions.ts:104
+
+___
+
+### PermissionProductionIndentHalted
+
+• `Const` **PermissionProductionIndentHalted**: ``"production-indents-halted"``
+
+#### Defined in
+
+permissions.ts:98
+
+___
+
+### PermissionProductionIndentNew
+
+• `Const` **PermissionProductionIndentNew**: ``"production-indents-new"``
+
+#### Defined in
+
+permissions.ts:94
+
+___
+
+### PermissionProductionIndentRevise
+
+• `Const` **PermissionProductionIndentRevise**: ``"production-indents-revise"``
+
+#### Defined in
+
+permissions.ts:97
+
+___
+
+### PermissionProductionIndentStanding
+
+• `Const` **PermissionProductionIndentStanding**: ``"production-indents-standing"``
+
+#### Defined in
+
+permissions.ts:102
+
+___
+
+### PermissionProductionIndentVerify
+
+• `Const` **PermissionProductionIndentVerify**: ``"production-indents-verify"``
+
+#### Defined in
+
+permissions.ts:96
+
+___
+
+### PermissionProductionPlanApprove
+
+• `Const` **PermissionProductionPlanApprove**: ``"productionplans-approve"``
+
+#### Defined in
+
+permissions.ts:86
+
+___
+
+### PermissionProductionPlanComplete
+
+• `Const` **PermissionProductionPlanComplete**: ``"productionplans-mark-complete"``
+
+#### Defined in
+
+permissions.ts:90
+
+___
+
+### PermissionProductionPlanCompleted
+
+• `Const` **PermissionProductionPlanCompleted**: ``"productionplans-completed"``
+
+#### Defined in
+
+permissions.ts:88
+
+___
+
+### PermissionProductionPlanDiscard
+
+• `Const` **PermissionProductionPlanDiscard**: ``"productionplans-extra-discard"``
+
+#### Defined in
+
+permissions.ts:91
+
+___
+
+### PermissionProductionPlanDiscarded
+
+• `Const` **PermissionProductionPlanDiscarded**: ``"productionplans-discarded"``
+
+#### Defined in
+
+permissions.ts:84
+
+___
+
+### PermissionProductionPlanDrafts
+
+• `Const` **PermissionProductionPlanDrafts**: ``"productionplans-drafts"``
+
+#### Defined in
+
+permissions.ts:80
+
+___
+
+### PermissionProductionPlanHalt
+
+• `Const` **PermissionProductionPlanHalt**: ``"productionplans-extra-halt"``
+
+#### Defined in
+
+permissions.ts:89
+
+___
+
+### PermissionProductionPlanHalted
+
+• `Const` **PermissionProductionPlanHalted**: ``"productionplans-halted"``
+
+#### Defined in
+
+permissions.ts:83
+
+___
+
+### PermissionProductionPlanNew
+
+• `Const` **PermissionProductionPlanNew**: ``"productionplans-new"``
+
+#### Defined in
+
+permissions.ts:79
+
+___
+
+### PermissionProductionPlanRevise
+
+• `Const` **PermissionProductionPlanRevise**: ``"productionplans-revise"``
+
+#### Defined in
+
+permissions.ts:82
+
+___
+
+### PermissionProductionPlanStanding
+
+• `Const` **PermissionProductionPlanStanding**: ``"productionplans-standing"``
+
+#### Defined in
+
+permissions.ts:87
+
+___
+
+### PermissionProductionPlanVerify
+
+• `Const` **PermissionProductionPlanVerify**: ``"productionplans-verify"``
+
+#### Defined in
+
+permissions.ts:81
+
+___
+
+### PermissionProductsAdd
+
+• `Const` **PermissionProductsAdd**: ``"products-add"``
+
+#### Defined in
+
+permissions.ts:234
+
+___
+
+### PermissionProductsApproveIQC
+
+• `Const` **PermissionProductsApproveIQC**: ``"products-extra-iqc-approve"``
+
+#### Defined in
+
+permissions.ts:236
+
+___
+
+### PermissionProductsConsume
+
+• `Const` **PermissionProductsConsume**: ``"products-extra-consume"``
+
+#### Defined in
+
+permissions.ts:245
+
+___
+
+### PermissionProductsConsumed
+
+• `Const` **PermissionProductsConsumed**: ``"products-consumed"``
+
+#### Defined in
+
+permissions.ts:238
+
+___
+
+### PermissionProductsDiscard
+
+• `Const` **PermissionProductsDiscard**: ``"products-extra-discard"``
+
+#### Defined in
+
+permissions.ts:246
+
+___
+
+### PermissionProductsDiscarded
+
+• `Const` **PermissionProductsDiscarded**: ``"products-discarded"``
+
+#### Defined in
+
+permissions.ts:242
+
+___
+
+### PermissionProductsIQC
+
+• `Const` **PermissionProductsIQC**: ``"products-iqc"``
+
+#### Defined in
+
+permissions.ts:235
+
+___
+
+### PermissionProductsIssued
+
+• `Const` **PermissionProductsIssued**: ``"products-issued"``
+
+#### Defined in
+
+permissions.ts:243
+
+___
+
+### PermissionProductsReject
+
+• `Const` **PermissionProductsReject**: ``"products-extra-reject"``
+
+#### Defined in
+
+permissions.ts:244
+
+___
+
+### PermissionProductsRejected
+
+• `Const` **PermissionProductsRejected**: ``"products-rejected"``
+
+#### Defined in
+
+permissions.ts:240
+
+___
+
+### PermissionProductsRework
+
+• `Const` **PermissionProductsRework**: ``"products-rework"``
+
+#### Defined in
+
+permissions.ts:239
+
+___
+
+### PermissionProductsScrap
+
+• `Const` **PermissionProductsScrap**: ``"products-scrap"``
+
+#### Defined in
+
+permissions.ts:241
+
+___
+
+### PermissionProductsStore
+
+• `Const` **PermissionProductsStore**: ``"products-store"``
+
+#### Defined in
+
+permissions.ts:237
+
+___
+
+### PermissionProductsView
+
+• `Const` **PermissionProductsView**: ``"products-view"``
+
+#### Defined in
+
+permissions.ts:247
+
+___
+
+### PermissionProformaInvoiceApprove
+
+• `Const` **PermissionProformaInvoiceApprove**: ``"proforma-invoices-approve"``
+
+#### Defined in
+
+permissions.ts:464
+
+___
+
+### PermissionProformaInvoiceComplete
+
+• `Const` **PermissionProformaInvoiceComplete**: ``"proforma-invoices-mark-complete"``
+
+#### Defined in
+
+permissions.ts:468
+
+___
+
+### PermissionProformaInvoiceCompleted
+
+• `Const` **PermissionProformaInvoiceCompleted**: ``"proforma-invoices-completed"``
+
+#### Defined in
+
+permissions.ts:466
+
+___
+
+### PermissionProformaInvoiceDiscard
+
+• `Const` **PermissionProformaInvoiceDiscard**: ``"proforma-invoices-extra-discard"``
+
+#### Defined in
+
+permissions.ts:469
+
+___
+
+### PermissionProformaInvoiceDiscarded
+
+• `Const` **PermissionProformaInvoiceDiscarded**: ``"proforma-invoices-discarded"``
+
+#### Defined in
+
+permissions.ts:462
+
+___
+
+### PermissionProformaInvoiceDrafts
+
+• `Const` **PermissionProformaInvoiceDrafts**: ``"proforma-invoices-drafts"``
+
+#### Defined in
+
+permissions.ts:458
+
+___
+
+### PermissionProformaInvoiceHalt
+
+• `Const` **PermissionProformaInvoiceHalt**: ``"proforma-invoices-extra-halt"``
+
+#### Defined in
+
+permissions.ts:467
+
+___
+
+### PermissionProformaInvoiceHalted
+
+• `Const` **PermissionProformaInvoiceHalted**: ``"proforma-invoices-halted"``
+
+#### Defined in
+
+permissions.ts:461
+
+___
+
+### PermissionProformaInvoiceNew
+
+• `Const` **PermissionProformaInvoiceNew**: ``"proforma-invoices-new"``
+
+#### Defined in
+
+permissions.ts:457
+
+___
+
+### PermissionProformaInvoiceRevise
+
+• `Const` **PermissionProformaInvoiceRevise**: ``"proforma-invoices-revise"``
+
+#### Defined in
+
+permissions.ts:460
+
+___
+
+### PermissionProformaInvoiceStanding
+
+• `Const` **PermissionProformaInvoiceStanding**: ``"proforma-invoices-standing"``
+
+#### Defined in
+
+permissions.ts:465
+
+___
+
+### PermissionProformaInvoiceVerify
+
+• `Const` **PermissionProformaInvoiceVerify**: ``"proforma-invoices-verify"``
+
+#### Defined in
+
+permissions.ts:459
+
+___
+
+### PermissionProjectApprove
+
+• `Const` **PermissionProjectApprove**: ``"projects-approve"``
+
+#### Defined in
+
+permissions.ts:417
+
+___
+
+### PermissionProjectComplete
+
+• `Const` **PermissionProjectComplete**: ``"projects-mark-complete"``
+
+#### Defined in
+
+permissions.ts:421
+
+___
+
+### PermissionProjectCompleted
+
+• `Const` **PermissionProjectCompleted**: ``"projects-completed"``
+
+#### Defined in
+
+permissions.ts:419
+
+___
+
+### PermissionProjectDiscard
+
+• `Const` **PermissionProjectDiscard**: ``"projects-extra-discard"``
+
+#### Defined in
+
+permissions.ts:422
+
+___
+
+### PermissionProjectDiscarded
+
+• `Const` **PermissionProjectDiscarded**: ``"projects-discarded"``
+
+#### Defined in
+
+permissions.ts:415
+
+___
+
+### PermissionProjectDrafts
+
+• `Const` **PermissionProjectDrafts**: ``"projects-drafts"``
+
+#### Defined in
+
+permissions.ts:411
+
+___
+
+### PermissionProjectHalt
+
+• `Const` **PermissionProjectHalt**: ``"projects-extra-halt"``
+
+#### Defined in
+
+permissions.ts:420
+
+___
+
+### PermissionProjectHalted
+
+• `Const` **PermissionProjectHalted**: ``"projects-halted"``
+
+#### Defined in
+
+permissions.ts:414
+
+___
+
+### PermissionProjectNew
+
+• `Const` **PermissionProjectNew**: ``"projects-new"``
+
+#### Defined in
+
+permissions.ts:410
+
+___
+
+### PermissionProjectRevise
+
+• `Const` **PermissionProjectRevise**: ``"projects-revise"``
+
+#### Defined in
+
+permissions.ts:413
+
+___
+
+### PermissionProjectStanding
+
+• `Const` **PermissionProjectStanding**: ``"projects-standing"``
+
+#### Defined in
+
+permissions.ts:418
+
+___
+
+### PermissionProjectVerify
+
+• `Const` **PermissionProjectVerify**: ``"projects-verify"``
+
+#### Defined in
+
+permissions.ts:412
+
+___
+
+### PermissionPurchaseEnquiryDiscard
+
+• `Const` **PermissionPurchaseEnquiryDiscard**: ``"purchases-enquiries-extra-discard"``
+
+#### Defined in
+
+permissions.ts:733
+
+___
+
+### PermissionPurchaseEnquiryDiscarded
+
+• `Const` **PermissionPurchaseEnquiryDiscarded**: ``"purchases-enquiries-discarded"``
+
+#### Defined in
+
+permissions.ts:726
+
+___
+
+### PermissionPurchaseIndentApprove
+
+• `Const` **PermissionPurchaseIndentApprove**: ``"purchases-indents-approve"``
+
+#### Defined in
+
+permissions.ts:286
+
+___
+
+### PermissionPurchaseIndentComplete
+
+• `Const` **PermissionPurchaseIndentComplete**: ``"purchases-indents-mark-complete"``
+
+#### Defined in
+
+permissions.ts:290
+
+___
+
+### PermissionPurchaseIndentCompleted
+
+• `Const` **PermissionPurchaseIndentCompleted**: ``"purchases-indents-completed"``
+
+#### Defined in
+
+permissions.ts:288
+
+___
+
+### PermissionPurchaseIndentDiscard
+
+• `Const` **PermissionPurchaseIndentDiscard**: ``"purchases-indents-extra-discard"``
+
+#### Defined in
+
+permissions.ts:291
+
+___
+
+### PermissionPurchaseIndentDiscarded
+
+• `Const` **PermissionPurchaseIndentDiscarded**: ``"purchases-indents-discarded"``
+
+#### Defined in
+
+permissions.ts:284
+
+___
+
+### PermissionPurchaseIndentDrafts
+
+• `Const` **PermissionPurchaseIndentDrafts**: ``"purchases-indents-drafts"``
+
+#### Defined in
+
+permissions.ts:280
+
+___
+
+### PermissionPurchaseIndentHalt
+
+• `Const` **PermissionPurchaseIndentHalt**: ``"purchases-indents-extra-halt"``
+
+#### Defined in
+
+permissions.ts:289
+
+___
+
+### PermissionPurchaseIndentHalted
+
+• `Const` **PermissionPurchaseIndentHalted**: ``"purchases-indents-halted"``
+
+#### Defined in
+
+permissions.ts:283
+
+___
+
+### PermissionPurchaseIndentNew
+
+• `Const` **PermissionPurchaseIndentNew**: ``"purchases-indents-new"``
+
+#### Defined in
+
+permissions.ts:279
+
+___
+
+### PermissionPurchaseIndentRevise
+
+• `Const` **PermissionPurchaseIndentRevise**: ``"purchases-indents-revise"``
+
+#### Defined in
+
+permissions.ts:282
+
+___
+
+### PermissionPurchaseIndentStanding
+
+• `Const` **PermissionPurchaseIndentStanding**: ``"purchases-indents-standing"``
+
+#### Defined in
+
+permissions.ts:287
+
+___
+
+### PermissionPurchaseIndentVerify
+
+• `Const` **PermissionPurchaseIndentVerify**: ``"purchases-indents-verify"``
+
+#### Defined in
+
+permissions.ts:281
+
+___
+
+### PermissionPurchaseOrderApprove
+
+• `Const` **PermissionPurchaseOrderApprove**: ``"purchases-approve"``
+
+#### Defined in
+
+permissions.ts:377
+
+___
+
+### PermissionPurchaseOrderComplete
+
+• `Const` **PermissionPurchaseOrderComplete**: ``"purchases-mark-complete"``
+
+#### Defined in
+
+permissions.ts:381
+
+___
+
+### PermissionPurchaseOrderCompleted
+
+• `Const` **PermissionPurchaseOrderCompleted**: ``"purchases-completed"``
+
+#### Defined in
+
+permissions.ts:379
+
+___
+
+### PermissionPurchaseOrderDiscard
+
+• `Const` **PermissionPurchaseOrderDiscard**: ``"purchases-extra-discard"``
+
+#### Defined in
+
+permissions.ts:382
+
+___
+
+### PermissionPurchaseOrderDiscarded
+
+• `Const` **PermissionPurchaseOrderDiscarded**: ``"purchases-discarded"``
+
+#### Defined in
+
+permissions.ts:375
+
+___
+
+### PermissionPurchaseOrderDrafts
+
+• `Const` **PermissionPurchaseOrderDrafts**: ``"purchases-drafts"``
+
+#### Defined in
+
+permissions.ts:371
+
+___
+
+### PermissionPurchaseOrderHalt
+
+• `Const` **PermissionPurchaseOrderHalt**: ``"purchases-extra-halt"``
+
+#### Defined in
+
+permissions.ts:380
+
+___
+
+### PermissionPurchaseOrderHalted
+
+• `Const` **PermissionPurchaseOrderHalted**: ``"purchases-halted"``
+
+#### Defined in
+
+permissions.ts:374
+
+___
+
+### PermissionPurchaseOrderNew
+
+• `Const` **PermissionPurchaseOrderNew**: ``"purchases-new"``
+
+#### Defined in
+
+permissions.ts:370
+
+___
+
+### PermissionPurchaseOrderRevise
+
+• `Const` **PermissionPurchaseOrderRevise**: ``"purchases-revise"``
+
+#### Defined in
+
+permissions.ts:373
+
+___
+
+### PermissionPurchaseOrderStanding
+
+• `Const` **PermissionPurchaseOrderStanding**: ``"purchases-standing"``
+
+#### Defined in
+
+permissions.ts:378
+
+___
+
+### PermissionPurchaseOrderVerify
+
+• `Const` **PermissionPurchaseOrderVerify**: ``"purchases-verify"``
+
+#### Defined in
+
+permissions.ts:372
+
+___
+
+### PermissionPurchaseReturnApprove
+
+• `Const` **PermissionPurchaseReturnApprove**: ``"purchases-returns-approve"``
+
+#### Defined in
+
+permissions.ts:556
+
+___
+
+### PermissionPurchaseReturnComplete
+
+• `Const` **PermissionPurchaseReturnComplete**: ``"purchases-returns-mark-complete"``
+
+#### Defined in
+
+permissions.ts:560
+
+___
+
+### PermissionPurchaseReturnCompleted
+
+• `Const` **PermissionPurchaseReturnCompleted**: ``"purchases-returns-completed"``
+
+#### Defined in
+
+permissions.ts:558
+
+___
+
+### PermissionPurchaseReturnDiscard
+
+• `Const` **PermissionPurchaseReturnDiscard**: ``"purchases-returns-extra-discard"``
+
+#### Defined in
+
+permissions.ts:561
+
+___
+
+### PermissionPurchaseReturnDiscarded
+
+• `Const` **PermissionPurchaseReturnDiscarded**: ``"purchases-returns-discarded"``
+
+#### Defined in
+
+permissions.ts:554
+
+___
+
+### PermissionPurchaseReturnDrafts
+
+• `Const` **PermissionPurchaseReturnDrafts**: ``"purchases-returns-drafts"``
+
+#### Defined in
+
+permissions.ts:550
+
+___
+
+### PermissionPurchaseReturnHalt
+
+• `Const` **PermissionPurchaseReturnHalt**: ``"purchases-returns-extra-halt"``
+
+#### Defined in
+
+permissions.ts:559
+
+___
+
+### PermissionPurchaseReturnHalted
+
+• `Const` **PermissionPurchaseReturnHalted**: ``"purchases-returns-halted"``
+
+#### Defined in
+
+permissions.ts:553
+
+___
+
+### PermissionPurchaseReturnNew
+
+• `Const` **PermissionPurchaseReturnNew**: ``"purchases-returns-new"``
+
+#### Defined in
+
+permissions.ts:549
+
+___
+
+### PermissionPurchaseReturnRevise
+
+• `Const` **PermissionPurchaseReturnRevise**: ``"purchases-returns-revise"``
+
+#### Defined in
+
+permissions.ts:552
+
+___
+
+### PermissionPurchaseReturnStanding
+
+• `Const` **PermissionPurchaseReturnStanding**: ``"purchases-returns-standing"``
+
+#### Defined in
+
+permissions.ts:557
+
+___
+
+### PermissionPurchaseReturnVerify
+
+• `Const` **PermissionPurchaseReturnVerify**: ``"purchases-returns-verify"``
+
+#### Defined in
+
+permissions.ts:551
+
+___
+
+### PermissionQCGroupApprove
+
+• `Const` **PermissionQCGroupApprove**: ``"qc-groups-approve"``
+
+#### Defined in
+
+permissions.ts:876
+
+___
+
+### PermissionQCGroupComplete
+
+• `Const` **PermissionQCGroupComplete**: ``"qc-groups-mark-complete"``
+
+#### Defined in
+
+permissions.ts:880
+
+___
+
+### PermissionQCGroupCompleted
+
+• `Const` **PermissionQCGroupCompleted**: ``"qc-groups-completed"``
+
+#### Defined in
+
+permissions.ts:878
+
+___
+
+### PermissionQCGroupDiscard
+
+• `Const` **PermissionQCGroupDiscard**: ``"qc-groups-extra-discard"``
+
+#### Defined in
+
+permissions.ts:881
+
+___
+
+### PermissionQCGroupDiscarded
+
+• `Const` **PermissionQCGroupDiscarded**: ``"qc-groups-discarded"``
+
+#### Defined in
+
+permissions.ts:874
+
+___
+
+### PermissionQCGroupDrafts
+
+• `Const` **PermissionQCGroupDrafts**: ``"qc-groups-drafts"``
+
+#### Defined in
+
+permissions.ts:870
+
+___
+
+### PermissionQCGroupHalt
+
+• `Const` **PermissionQCGroupHalt**: ``"qc-groups-extra-halt"``
+
+#### Defined in
+
+permissions.ts:879
+
+___
+
+### PermissionQCGroupHalted
+
+• `Const` **PermissionQCGroupHalted**: ``"qc-groups-halted"``
+
+#### Defined in
+
+permissions.ts:873
+
+___
+
+### PermissionQCGroupNew
+
+• `Const` **PermissionQCGroupNew**: ``"qc-groups-new"``
+
+#### Defined in
+
+permissions.ts:869
+
+___
+
+### PermissionQCGroupRevise
+
+• `Const` **PermissionQCGroupRevise**: ``"qc-groups-revise"``
+
+#### Defined in
+
+permissions.ts:872
+
+___
+
+### PermissionQCGroupStanding
+
+• `Const` **PermissionQCGroupStanding**: ``"qc-groups-standing"``
+
+#### Defined in
+
+permissions.ts:877
+
+___
+
+### PermissionQCGroupVerify
+
+• `Const` **PermissionQCGroupVerify**: ``"qc-groups-verify"``
+
+#### Defined in
+
+permissions.ts:871
+
+___
+
+### PermissionQCSampleAccept
+
+• `Const` **PermissionQCSampleAccept**: ``"qc-samples-mark-accept"``
+
+#### Defined in
+
+permissions.ts:890
+
+___
+
+### PermissionQCSampleAcceptWithDeviation
+
+• `Const` **PermissionQCSampleAcceptWithDeviation**: ``"qc-samples-mark-accept-with-deviation"``
+
+#### Defined in
+
+permissions.ts:892
+
+___
+
+### PermissionQCSampleAccepted
+
+• `Const` **PermissionQCSampleAccepted**: ``"qc-samples-accepted"``
+
+#### Defined in
+
+permissions.ts:889
+
+___
+
+### PermissionQCSampleAcceptedWithDeviation
+
+• `Const` **PermissionQCSampleAcceptedWithDeviation**: ``"qc-samples-accepted-with-deviation"``
+
+#### Defined in
+
+permissions.ts:891
+
+___
+
+### PermissionQCSampleCancel
+
+• `Const` **PermissionQCSampleCancel**: ``"qc-samples-mark-cancel"``
+
+#### Defined in
+
+permissions.ts:897
+
+___
+
+### PermissionQCSampleCancelled
+
+• `Const` **PermissionQCSampleCancelled**: ``"qc-samples-cancelled"``
+
+#### Defined in
+
+permissions.ts:896
+
+___
+
+### PermissionQCSampleFinish
+
+• `Const` **PermissionQCSampleFinish**: ``"qc-samples-mark-finish"``
+
+#### Defined in
+
+permissions.ts:888
+
+___
+
+### PermissionQCSampleFinished
+
+• `Const` **PermissionQCSampleFinished**: ``"qc-samples-finished"``
+
+#### Defined in
+
+permissions.ts:887
+
+___
+
+### PermissionQCSampleNew
+
+• `Const` **PermissionQCSampleNew**: ``"qc-samples-create"``
+
+#### Defined in
+
+permissions.ts:884
+
+___
+
+### PermissionQCSampleOpen
+
+• `Const` **PermissionQCSampleOpen**: ``"qc-samples-open"``
+
+#### Defined in
+
+permissions.ts:886
+
+___
+
+### PermissionQCSampleReject
+
+• `Const` **PermissionQCSampleReject**: ``"qc-samples-mark-reject"``
+
+#### Defined in
+
+permissions.ts:894
+
+___
+
+### PermissionQCSampleRejected
+
+• `Const` **PermissionQCSampleRejected**: ``"qc-samples-rejected"``
+
+#### Defined in
+
+permissions.ts:893
+
+___
+
+### PermissionQCSampleReopen
+
+• `Const` **PermissionQCSampleReopen**: ``"qc-samples-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:895
+
+___
+
+### PermissionQCSampleUpdate
+
+• `Const` **PermissionQCSampleUpdate**: ``"qc-samples-update"``
+
+#### Defined in
+
+permissions.ts:885
+
+___
+
+### PermissionQuotationRequestDiscard
+
+• `Const` **PermissionQuotationRequestDiscard**: ``"quotations-requests-extra-discard"``
+
+#### Defined in
+
+permissions.ts:764
+
+___
+
+### PermissionQuotationRequestDiscarded
+
+• `Const` **PermissionQuotationRequestDiscarded**: ``"quotations-requests-discarded"``
+
+#### Defined in
+
+permissions.ts:757
+
+___
+
+### PermissionQuotationResponseDiscard
+
+• `Const` **PermissionQuotationResponseDiscard**: ``"quotations-responses-extra-discard"``
+
+#### Defined in
+
+permissions.ts:779
+
+___
+
+### PermissionQuotationResponseDiscarded
+
+• `Const` **PermissionQuotationResponseDiscarded**: ``"quotations-responses-discarded"``
+
+#### Defined in
+
+permissions.ts:772
+
+___
+
+### PermissionReopenAssetIndent
+
+• `Const` **PermissionReopenAssetIndent**: ``"asset-indents-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:277
+
+___
+
+### PermissionReopenCreditNote
+
+• `Const` **PermissionReopenCreditNote**: ``"credit-notes-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:648
+
+___
+
+### PermissionReopenDebitNote
+
+• `Const` **PermissionReopenDebitNote**: ``"debit-notes-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:663
+
+___
+
+### PermissionReopenDepartment
+
+• `Const` **PermissionReopenDepartment**: ``"departments-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1218
+
+___
+
+### PermissionReopenEquationFamily
+
+• `Const` **PermissionReopenEquationFamily**: ``"equations-families-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:795
+
+___
+
+### PermissionReopenEquationReplaceable
+
+• `Const` **PermissionReopenEquationReplaceable**: ``"equations-replaceables-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:840
+
+___
+
+### PermissionReopenEquationSalesBundle
+
+• `Const` **PermissionReopenEquationSalesBundle**: ``"equations-sales-bundles-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:810
+
+___
+
+### PermissionReopenEquationWorkOrder
+
+• `Const` **PermissionReopenEquationWorkOrder**: ``"equations-work-orders-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:825
+
+___
+
+### PermissionReopenExpense
+
+• `Const` **PermissionReopenExpense**: ``"expenses-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:678
+
+___
+
+### PermissionReopenGoal
+
+• `Const` **PermissionReopenGoal**: ``"goals-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1274
+
+___
+
+### PermissionReopenGoodsDispatch
+
+• `Const` **PermissionReopenGoodsDispatch**: ``"goods-dispatches-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:502
+
+___
+
+### PermissionReopenGoodsReceipt
+
+• `Const` **PermissionReopenGoodsReceipt**: ``"goods-receipts-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:532
+
+___
+
+### PermissionReopenInwardJob
+
+• `Const` **PermissionReopenInwardJob**: ``"inward-jobs-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:337
+
+___
+
+### PermissionReopenInwardJobFreeIssueMaterial
+
+• `Const` **PermissionReopenInwardJobFreeIssueMaterial**: ``"inward-jobs-free-issue-materials-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:352
+
+___
+
+### PermissionReopenInwardJobFreeIssueMaterialReturn
+
+• `Const` **PermissionReopenInwardJobFreeIssueMaterialReturn**: ``"inward-jobs-free-issue-materials-returns-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:607
+
+___
+
+### PermissionReopenOutwardJob
+
+• `Const` **PermissionReopenOutwardJob**: ``"outward-jobs-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:307
+
+___
+
+### PermissionReopenOutwardJobFreeIssueMaterial
+
+• `Const` **PermissionReopenOutwardJobFreeIssueMaterial**: ``"outward-jobs-free-issue-materials-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:322
+
+___
+
+### PermissionReopenOutwardJobFreeIssueMaterialReturn
+
+• `Const` **PermissionReopenOutwardJobFreeIssueMaterialReturn**: ``"outward-jobs-free-issue-materials-returns-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:592
+
+___
+
+### PermissionReopenPayrollGroup
+
+• `Const` **PermissionReopenPayrollGroup**: ``"payroll-groups-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:949
+
+___
+
+### PermissionReopenProductionIndent
+
+• `Const` **PermissionReopenProductionIndent**: ``"production-indents-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:107
+
+___
+
+### PermissionReopenProductionPlan
+
+• `Const` **PermissionReopenProductionPlan**: ``"productionplans-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:92
+
+___
+
+### PermissionReopenProformaInvoice
+
+• `Const` **PermissionReopenProformaInvoice**: ``"proforma-invoices-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:470
+
+___
+
+### PermissionReopenProject
+
+• `Const` **PermissionReopenProject**: ``"projects-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:423
+
+___
+
+### PermissionReopenPurchaseEnquiry
+
+• `Const` **PermissionReopenPurchaseEnquiry**: ``"purchases-enquiries-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:734
+
+___
+
+### PermissionReopenPurchaseIndent
+
+• `Const` **PermissionReopenPurchaseIndent**: ``"purchases-indents-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:292
+
+___
+
+### PermissionReopenPurchaseOrder
+
+• `Const` **PermissionReopenPurchaseOrder**: ``"purchases-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:383
+
+___
+
+### PermissionReopenPurchaseReturn
+
+• `Const` **PermissionReopenPurchaseReturn**: ``"purchases-returns-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:562
+
+___
+
+### PermissionReopenQCGroup
+
+• `Const` **PermissionReopenQCGroup**: ``"qc-groups-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:882
+
+___
+
+### PermissionReopenQuotationRequest
+
+• `Const` **PermissionReopenQuotationRequest**: ``"quotations-requests-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:765
+
+___
+
+### PermissionReopenQuotationResponse
+
+• `Const` **PermissionReopenQuotationResponse**: ``"quotations-responses-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:780
+
+___
+
+### PermissionReopenReplaceableIndent
+
+• `Const` **PermissionReopenReplaceableIndent**: ``"replaceable-indents-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:262
+
+___
+
+### PermissionReopenRole
+
+• `Const` **PermissionReopenRole**: ``"roles-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:14
+
+___
+
+### PermissionReopenSalary
+
+• `Const` **PermissionReopenSalary**: ``"salaries-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:693
+
+___
+
+### PermissionReopenSaleReturn
+
+• `Const` **PermissionReopenSaleReturn**: ``"sales-returns-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:577
+
+___
+
+### PermissionReopenSalesEnquiry
+
+• `Const` **PermissionReopenSalesEnquiry**: ``"sales-enquiries-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:749
+
+___
+
+### PermissionReopenSalesInvoice
+
+• `Const` **PermissionReopenSalesInvoice**: ``"sales-invoices-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:486
+
+___
+
+### PermissionReopenSalesOrder
+
+• `Const` **PermissionReopenSalesOrder**: ``"sales-orders-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:438
+
+___
+
+### PermissionReopenSalesQuotation
+
+• `Const` **PermissionReopenSalesQuotation**: ``"sales-quotations-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:454
+
+___
+
+### PermissionReopenSkillGroup
+
+• `Const` **PermissionReopenSkillGroup**: ``"skills-groups-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1259
+
+___
+
+### PermissionReopenStockAudit
+
+• `Const` **PermissionReopenStockAudit**: ``"stock-audits-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:152
+
+___
+
+### PermissionReopenStockIssuance
+
+• `Const` **PermissionReopenStockIssuance**: ``"stock-issuances-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:122
+
+___
+
+### PermissionReopenStockReturn
+
+• `Const` **PermissionReopenStockReturn**: ``"stock-returns-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:137
+
+___
+
+### PermissionReopenSupplyOffer
+
+• `Const` **PermissionReopenSupplyOffer**: ``"supply-offers-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:367
+
+___
+
+### PermissionReopenTeam
+
+• `Const` **PermissionReopenTeam**: ``"teams-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1203
+
+___
+
+### PermissionReopenVendorInvoice
+
+• `Const` **PermissionReopenVendorInvoice**: ``"vendor-invoices-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:517
+
+___
+
+### PermissionReopenWorkOrder
+
+• `Const` **PermissionReopenWorkOrder**: ``"work-orders-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:547
+
+___
+
+### PermissionReopenWorkflowRule
+
+• `Const` **PermissionReopenWorkflowRule**: ``"workflows-rules-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1404
+
+___
+
+### PermissionReplaceableIndentApprove
+
+• `Const` **PermissionReplaceableIndentApprove**: ``"replaceable-indents-approve"``
+
+#### Defined in
+
+permissions.ts:256
+
+___
+
+### PermissionReplaceableIndentComplete
+
+• `Const` **PermissionReplaceableIndentComplete**: ``"replaceable-indents-mark-complete"``
+
+#### Defined in
+
+permissions.ts:260
+
+___
+
+### PermissionReplaceableIndentCompleted
+
+• `Const` **PermissionReplaceableIndentCompleted**: ``"replaceable-indents-completed"``
+
+#### Defined in
+
+permissions.ts:258
+
+___
+
+### PermissionReplaceableIndentDiscard
+
+• `Const` **PermissionReplaceableIndentDiscard**: ``"replaceable-indents-extra-discard"``
+
+#### Defined in
+
+permissions.ts:261
+
+___
+
+### PermissionReplaceableIndentDiscarded
+
+• `Const` **PermissionReplaceableIndentDiscarded**: ``"replaceable-indents-discarded"``
+
+#### Defined in
+
+permissions.ts:254
+
+___
+
+### PermissionReplaceableIndentDrafts
+
+• `Const` **PermissionReplaceableIndentDrafts**: ``"replaceable-indents-drafts"``
+
+#### Defined in
+
+permissions.ts:250
+
+___
+
+### PermissionReplaceableIndentHalt
+
+• `Const` **PermissionReplaceableIndentHalt**: ``"replaceable-indents-extra-halt"``
+
+#### Defined in
+
+permissions.ts:259
+
+___
+
+### PermissionReplaceableIndentHalted
+
+• `Const` **PermissionReplaceableIndentHalted**: ``"replaceable-indents-halted"``
+
+#### Defined in
+
+permissions.ts:253
+
+___
+
+### PermissionReplaceableIndentNew
+
+• `Const` **PermissionReplaceableIndentNew**: ``"replaceable-indents-new"``
+
+#### Defined in
+
+permissions.ts:249
+
+___
+
+### PermissionReplaceableIndentRevise
+
+• `Const` **PermissionReplaceableIndentRevise**: ``"replaceable-indents-revise"``
+
+#### Defined in
+
+permissions.ts:252
+
+___
+
+### PermissionReplaceableIndentStanding
+
+• `Const` **PermissionReplaceableIndentStanding**: ``"replaceable-indents-standing"``
+
+#### Defined in
+
+permissions.ts:257
+
+___
+
+### PermissionReplaceableIndentVerify
+
+• `Const` **PermissionReplaceableIndentVerify**: ``"replaceable-indents-verify"``
+
+#### Defined in
+
+permissions.ts:251
+
+___
+
+### PermissionRestoreAbsences
+
+• `Const` **PermissionRestoreAbsences**: ``"absences-restore"``
+
+#### Defined in
+
+permissions.ts:1159
+
+___
+
+### PermissionRestoreActionsCodes
+
+• `Const` **PermissionRestoreActionsCodes**: ``"actions-codes-restore"``
+
+#### Defined in
+
+permissions.ts:1320
+
+___
+
+### PermissionRestoreActivitiesGroups
+
+• `Const` **PermissionRestoreActivitiesGroups**: ``"activities-groups-restore"``
+
+#### Defined in
+
+permissions.ts:1308
+
+___
+
+### PermissionRestoreActivitiesStatuses
+
+• `Const` **PermissionRestoreActivitiesStatuses**: ``"activities-statuses-restore"``
+
+#### Defined in
+
+permissions.ts:1296
+
+___
+
+### PermissionRestoreActivitiesTags
+
+• `Const` **PermissionRestoreActivitiesTags**: ``"activities-tags-restore"``
+
+#### Defined in
+
+permissions.ts:1284
+
+___
+
+### PermissionRestoreAnnouncements
+
+• `Const` **PermissionRestoreAnnouncements**: ``"announcements-restore"``
+
+#### Defined in
+
+permissions.ts:1042
+
+___
+
+### PermissionRestoreAssetIndent
+
+• `Const` **PermissionRestoreAssetIndent**: ``"asset-indents-restore"``
+
+#### Defined in
+
+permissions.ts:270
+
+___
+
+### PermissionRestoreAssociate
+
+• `Const` **PermissionRestoreAssociate**: ``"associates-restore"``
+
+#### Defined in
+
+permissions.ts:55
+
+___
+
+### PermissionRestoreAttendanceAmendments
+
+• `Const` **PermissionRestoreAttendanceAmendments**: ``"attendances-amendments-restore"``
+
+#### Defined in
+
+permissions.ts:1185
+
+___
+
+### PermissionRestoreAttendances
+
+• `Const` **PermissionRestoreAttendances**: ``"attendances-restore"``
+
+#### Defined in
+
+permissions.ts:1146
+
+___
+
+### PermissionRestoreBankAccounts
+
+• `Const` **PermissionRestoreBankAccounts**: ``"bankaccounts-restore"``
+
+#### Defined in
+
+permissions.ts:982
+
+___
+
+### PermissionRestoreClients
+
+• `Const` **PermissionRestoreClients**: ``"clients-restore"``
+
+#### Defined in
+
+permissions.ts:47
+
+___
+
+### PermissionRestoreContractor
+
+• `Const` **PermissionRestoreContractor**: ``"contractors-restore"``
+
+#### Defined in
+
+permissions.ts:61
+
+___
+
+### PermissionRestoreContractorsPayments
+
+• `Const` **PermissionRestoreContractorsPayments**: ``"contractors-payments-restore"``
+
+#### Defined in
+
+permissions.ts:703
+
+___
+
+### PermissionRestoreCreditNote
+
+• `Const` **PermissionRestoreCreditNote**: ``"credit-notes-restore"``
+
+#### Defined in
+
+permissions.ts:641
+
+___
+
+### PermissionRestoreCurrencies
+
+• `Const` **PermissionRestoreCurrencies**: ``"currencies-restore"``
+
+#### Defined in
+
+permissions.ts:394
+
+___
+
+### PermissionRestoreDebitNote
+
+• `Const` **PermissionRestoreDebitNote**: ``"debit-notes-restore"``
+
+#### Defined in
+
+permissions.ts:656
+
+___
+
+### PermissionRestoreDepartment
+
+• `Const` **PermissionRestoreDepartment**: ``"departments-restore"``
+
+#### Defined in
+
+permissions.ts:1211
+
+___
+
+### PermissionRestoreEquationFamily
+
+• `Const` **PermissionRestoreEquationFamily**: ``"equations-families-restore"``
+
+#### Defined in
+
+permissions.ts:788
+
+___
+
+### PermissionRestoreEquationReplaceable
+
+• `Const` **PermissionRestoreEquationReplaceable**: ``"equations-replaceables-restore"``
+
+#### Defined in
+
+permissions.ts:833
+
+___
+
+### PermissionRestoreEquationSalesBundle
+
+• `Const` **PermissionRestoreEquationSalesBundle**: ``"equations-sales-bundles-restore"``
+
+#### Defined in
+
+permissions.ts:803
+
+___
+
+### PermissionRestoreEquationWorkOrder
+
+• `Const` **PermissionRestoreEquationWorkOrder**: ``"equations-work-orders-restore"``
+
+#### Defined in
+
+permissions.ts:818
+
+___
+
+### PermissionRestoreExpense
+
+• `Const` **PermissionRestoreExpense**: ``"expenses-restore"``
+
+#### Defined in
+
+permissions.ts:671
+
+___
+
+### PermissionRestoreFamily
+
+• `Const` **PermissionRestoreFamily**: ``"families-restore"``
+
+#### Defined in
+
+permissions.ts:848
+
+___
+
+### PermissionRestoreFormFields
+
+• `Const` **PermissionRestoreFormFields**: ``"forms-fields-restore"``
+
+#### Defined in
+
+permissions.ts:37
+
+___
+
+### PermissionRestoreFormSections
+
+• `Const` **PermissionRestoreFormSections**: ``"forms-sections-restore"``
+
+#### Defined in
+
+permissions.ts:32
+
+___
+
+### PermissionRestoreGoal
+
+• `Const` **PermissionRestoreGoal**: ``"goals-restore"``
+
+#### Defined in
+
+permissions.ts:1267
+
+___
+
+### PermissionRestoreGoodsDispatch
+
+• `Const` **PermissionRestoreGoodsDispatch**: ``"goods-dispatches-restore"``
+
+#### Defined in
+
+permissions.ts:495
+
+___
+
+### PermissionRestoreGoodsReceipt
+
+• `Const` **PermissionRestoreGoodsReceipt**: ``"goods-receipts-restore"``
+
+#### Defined in
+
+permissions.ts:525
+
+___
+
+### PermissionRestoreHolidays
+
+• `Const` **PermissionRestoreHolidays**: ``"holidays-restore"``
+
+#### Defined in
+
+permissions.ts:1081
+
+___
+
+### PermissionRestoreInwardJob
+
+• `Const` **PermissionRestoreInwardJob**: ``"inward-jobs-restore"``
+
+#### Defined in
+
+permissions.ts:330
+
+___
+
+### PermissionRestoreInwardJobFreeIssueMaterial
+
+• `Const` **PermissionRestoreInwardJobFreeIssueMaterial**: ``"inward-jobs-free-issue-materials-restore"``
+
+#### Defined in
+
+permissions.ts:345
+
+___
+
+### PermissionRestoreInwardJobFreeIssueMaterialReturn
+
+• `Const` **PermissionRestoreInwardJobFreeIssueMaterialReturn**: ``"inward-jobs-free-issue-materials-returns-restore"``
+
+#### Defined in
+
+permissions.ts:600
+
+___
+
+### PermissionRestoreLabel
+
+• `Const` **PermissionRestoreLabel**: ``"labels-restore"``
+
+#### Defined in
+
+permissions.ts:960
+
+___
+
+### PermissionRestoreLeaveTypes
+
+• `Const` **PermissionRestoreLeaveTypes**: ``"leaves-types-restore"``
+
+#### Defined in
+
+permissions.ts:1094
+
+___
+
+### PermissionRestoreLeavesAdjustments
+
+• `Const` **PermissionRestoreLeavesAdjustments**: ``"leaves-adjustments-restore"``
+
+#### Defined in
+
+permissions.ts:1107
+
+___
+
+### PermissionRestoreLeavesRequests
+
+• `Const` **PermissionRestoreLeavesRequests**: ``"leaves-requests-restore"``
+
+#### Defined in
+
+permissions.ts:1120
+
+___
+
+### PermissionRestoreLedgers
+
+• `Const` **PermissionRestoreLedgers**: ``"ledgers-restore"``
+
+#### Defined in
+
+permissions.ts:1030
+
+___
+
+### PermissionRestoreLocations
+
+• `Const` **PermissionRestoreLocations**: ``"locations-restore"``
+
+#### Defined in
+
+permissions.ts:970
+
+___
+
+### PermissionRestoreOnDuties
+
+• `Const` **PermissionRestoreOnDuties**: ``"onduties-restore"``
+
+#### Defined in
+
+permissions.ts:1172
+
+___
+
+### PermissionRestoreOutwardJob
+
+• `Const` **PermissionRestoreOutwardJob**: ``"outward-jobs-restore"``
+
+#### Defined in
+
+permissions.ts:300
+
+___
+
+### PermissionRestoreOutwardJobFreeIssueMaterial
+
+• `Const` **PermissionRestoreOutwardJobFreeIssueMaterial**: ``"outward-jobs-free-issue-materials-restore"``
+
+#### Defined in
+
+permissions.ts:315
+
+___
+
+### PermissionRestoreOutwardJobFreeIssueMaterialReturn
+
+• `Const` **PermissionRestoreOutwardJobFreeIssueMaterialReturn**: ``"outward-jobs-free-issue-materials-returns-restore"``
+
+#### Defined in
+
+permissions.ts:585
+
+___
+
+### PermissionRestoreOvertime
+
+• `Const` **PermissionRestoreOvertime**: ``"overtimes-restore"``
+
+#### Defined in
+
+permissions.ts:1133
+
+___
+
+### PermissionRestorePayrollGroup
+
+• `Const` **PermissionRestorePayrollGroup**: ``"payroll-groups-restore"``
+
+#### Defined in
+
+permissions.ts:942
+
+___
+
+### PermissionRestorePayrollParameters
+
+• `Const` **PermissionRestorePayrollParameters**: ``"payroll-params-restore"``
+
+#### Defined in
+
+permissions.ts:931
+
+___
+
+### PermissionRestoreProductionIndent
+
+• `Const` **PermissionRestoreProductionIndent**: ``"production-indents-restore"``
+
+#### Defined in
+
+permissions.ts:100
+
+___
+
+### PermissionRestoreProductionPlan
+
+• `Const` **PermissionRestoreProductionPlan**: ``"productionplans-restore"``
+
+#### Defined in
+
+permissions.ts:85
+
+___
+
+### PermissionRestoreProformaInvoice
+
+• `Const` **PermissionRestoreProformaInvoice**: ``"proforma-invoices-restore"``
+
+#### Defined in
+
+permissions.ts:463
+
+___
+
+### PermissionRestoreProject
+
+• `Const` **PermissionRestoreProject**: ``"projects-restore"``
+
+#### Defined in
+
+permissions.ts:416
+
+___
+
+### PermissionRestorePurchaseEnquiry
+
+• `Const` **PermissionRestorePurchaseEnquiry**: ``"purchases-enquiries-restore"``
+
+#### Defined in
+
+permissions.ts:727
+
+___
+
+### PermissionRestorePurchaseIndent
+
+• `Const` **PermissionRestorePurchaseIndent**: ``"purchases-indents-restore"``
+
+#### Defined in
+
+permissions.ts:285
+
+___
+
+### PermissionRestorePurchaseOrder
+
+• `Const` **PermissionRestorePurchaseOrder**: ``"purchases-restore"``
+
+#### Defined in
+
+permissions.ts:376
+
+___
+
+### PermissionRestorePurchasePayment
+
+• `Const` **PermissionRestorePurchasePayment**: ``"purchases-payments-restore"``
+
+#### Defined in
+
+permissions.ts:617
+
+___
+
+### PermissionRestorePurchaseReturn
+
+• `Const` **PermissionRestorePurchaseReturn**: ``"purchases-returns-restore"``
+
+#### Defined in
+
+permissions.ts:555
+
+___
+
+### PermissionRestoreQCGroup
+
+• `Const` **PermissionRestoreQCGroup**: ``"qc-groups-restore"``
+
+#### Defined in
+
+permissions.ts:875
+
+___
+
+### PermissionRestoreQCHubs
+
+• `Const` **PermissionRestoreQCHubs**: ``"qchubs-restore"``
+
+#### Defined in
+
+permissions.ts:1006
+
+___
+
+### PermissionRestoreQCParameters
+
+• `Const` **PermissionRestoreQCParameters**: ``"qc-params-restore"``
+
+#### Defined in
+
+permissions.ts:864
+
+___
+
+### PermissionRestoreQuotationRequest
+
+• `Const` **PermissionRestoreQuotationRequest**: ``"quotations-requests-restore"``
+
+#### Defined in
+
+permissions.ts:758
+
+___
+
+### PermissionRestoreQuotationResponse
+
+• `Const` **PermissionRestoreQuotationResponse**: ``"quotations-responses-restore"``
+
+#### Defined in
+
+permissions.ts:773
+
+___
+
+### PermissionRestoreReplaceableIndent
+
+• `Const` **PermissionRestoreReplaceableIndent**: ``"replaceable-indents-restore"``
+
+#### Defined in
+
+permissions.ts:255
+
+___
+
+### PermissionRestoreRole
+
+• `Const` **PermissionRestoreRole**: ``"roles-restore"``
+
+#### Defined in
+
+permissions.ts:7
+
+___
+
+### PermissionRestoreSalary
+
+• `Const` **PermissionRestoreSalary**: ``"salaries-restore"``
+
+#### Defined in
+
+permissions.ts:686
+
+___
+
+### PermissionRestoreSaleReceipt
+
+• `Const` **PermissionRestoreSaleReceipt**: ``"sales-receipts-restore"``
+
+#### Defined in
+
+permissions.ts:630
+
+___
+
+### PermissionRestoreSaleReturn
+
+• `Const` **PermissionRestoreSaleReturn**: ``"sales-returns-restore"``
+
+#### Defined in
+
+permissions.ts:570
+
+___
+
+### PermissionRestoreSalesEnquiry
+
+• `Const` **PermissionRestoreSalesEnquiry**: ``"sales-enquiries-restore"``
+
+#### Defined in
+
+permissions.ts:742
+
+___
+
+### PermissionRestoreSalesInvoice
+
+• `Const` **PermissionRestoreSalesInvoice**: ``"sales-invoices-restore"``
+
+#### Defined in
+
+permissions.ts:479
+
+___
+
+### PermissionRestoreSalesOrder
+
+• `Const` **PermissionRestoreSalesOrder**: ``"sales-orders-restore"``
+
+#### Defined in
+
+permissions.ts:431
+
+___
+
+### PermissionRestoreSalesQuotation
+
+• `Const` **PermissionRestoreSalesQuotation**: ``"sales-quotations-restore"``
+
+#### Defined in
+
+permissions.ts:447
+
+___
+
+### PermissionRestoreShiftGroups
+
+• `Const` **PermissionRestoreShiftGroups**: ``"shift-groups-restore"``
+
+#### Defined in
+
+permissions.ts:1068
+
+___
+
+### PermissionRestoreShifts
+
+• `Const` **PermissionRestoreShifts**: ``"shifts-restore"``
+
+#### Defined in
+
+permissions.ts:1055
+
+___
+
+### PermissionRestoreSkillGroup
+
+• `Const` **PermissionRestoreSkillGroup**: ``"skills-groups-restore"``
+
+#### Defined in
+
+permissions.ts:1252
+
+___
+
+### PermissionRestoreSkillParameters
+
+• `Const` **PermissionRestoreSkillParameters**: ``"skills-params-restore"``
+
+#### Defined in
+
+permissions.ts:1241
+
+___
+
+### PermissionRestoreStockAudit
+
+• `Const` **PermissionRestoreStockAudit**: ``"stock-audits-restore"``
+
+#### Defined in
+
+permissions.ts:145
+
+___
+
+### PermissionRestoreStockIssuance
+
+• `Const` **PermissionRestoreStockIssuance**: ``"stock-issuances-restore"``
+
+#### Defined in
+
+permissions.ts:115
+
+___
+
+### PermissionRestoreStockReturn
+
+• `Const` **PermissionRestoreStockReturn**: ``"stock-returns-restore"``
+
+#### Defined in
+
+permissions.ts:130
+
+___
+
+### PermissionRestoreStorages
+
+• `Const` **PermissionRestoreStorages**: ``"storages-restore"``
+
+#### Defined in
+
+permissions.ts:1018
+
+___
+
+### PermissionRestoreStores
+
+• `Const` **PermissionRestoreStores**: ``"stores-restore"``
+
+#### Defined in
+
+permissions.ts:994
+
+___
+
+### PermissionRestoreSundries
+
+• `Const` **PermissionRestoreSundries**: ``"sundries-restore"``
+
+#### Defined in
+
+permissions.ts:716
+
+___
+
+### PermissionRestoreSupplyOffer
+
+• `Const` **PermissionRestoreSupplyOffer**: ``"supply-offers-restore"``
+
+#### Defined in
+
+permissions.ts:360
+
+___
+
+### PermissionRestoreTaxGroups
+
+• `Const` **PermissionRestoreTaxGroups**: ``"tax-groups-restore"``
+
+#### Defined in
+
+permissions.ts:919
+
+___
+
+### PermissionRestoreTaxParameters
+
+• `Const` **PermissionRestoreTaxParameters**: ``"tax-params-restore"``
+
+#### Defined in
+
+permissions.ts:907
+
+___
+
+### PermissionRestoreTeam
+
+• `Const` **PermissionRestoreTeam**: ``"teams-restore"``
+
+#### Defined in
+
+permissions.ts:1196
+
+___
+
+### PermissionRestoreUnitsOfMaterials
+
+• `Const` **PermissionRestoreUnitsOfMaterials**: ``"units-of-materials-restore"``
+
+#### Defined in
+
+permissions.ts:406
+
+___
+
+### PermissionRestoreUser
+
+• `Const` **PermissionRestoreUser**: ``"users-restore"``
+
+#### Defined in
+
+permissions.ts:22
+
+___
+
+### PermissionRestoreVendorInvoice
+
+• `Const` **PermissionRestoreVendorInvoice**: ``"vendor-invoices-restore"``
+
+#### Defined in
+
+permissions.ts:510
+
+___
+
+### PermissionRestoreVendors
+
+• `Const` **PermissionRestoreVendors**: ``"vendors-restore"``
+
+#### Defined in
+
+permissions.ts:71
+
+___
+
+### PermissionRestoreVisitations
+
+• `Const` **PermissionRestoreVisitations**: ``"visitations-restore"``
+
+#### Defined in
+
+permissions.ts:1228
+
+___
+
+### PermissionRestoreWorkOrder
+
+• `Const` **PermissionRestoreWorkOrder**: ``"work-orders-restore"``
+
+#### Defined in
+
+permissions.ts:540
+
+___
+
+### PermissionRestoreWorkflowRule
+
+• `Const` **PermissionRestoreWorkflowRule**: ``"workflows-rules-restore"``
+
+#### Defined in
+
+permissions.ts:1397
+
+___
+
+### PermissionReviseAbsences
+
+• `Const` **PermissionReviseAbsences**: ``"absences-revise"``
+
+#### Defined in
+
+permissions.ts:1155
+
+___
+
+### PermissionReviseActionsCodes
+
+• `Const` **PermissionReviseActionsCodes**: ``"actions-codes-revise"``
+
+#### Defined in
+
+permissions.ts:1316
+
+___
+
+### PermissionReviseActivitiesGroups
+
+• `Const` **PermissionReviseActivitiesGroups**: ``"activities-groups-revise"``
+
+#### Defined in
+
+permissions.ts:1304
+
+___
+
+### PermissionReviseActivitiesStatuses
+
+• `Const` **PermissionReviseActivitiesStatuses**: ``"activities-statuses-revise"``
+
+#### Defined in
+
+permissions.ts:1292
+
+___
+
+### PermissionReviseActivitiesTags
+
+• `Const` **PermissionReviseActivitiesTags**: ``"activities-tags-revise"``
+
+#### Defined in
+
+permissions.ts:1280
+
+___
+
+### PermissionReviseAnnouncements
+
+• `Const` **PermissionReviseAnnouncements**: ``"announcements-revise"``
+
+#### Defined in
+
+permissions.ts:1038
+
+___
+
+### PermissionReviseAttendanceAmendments
+
+• `Const` **PermissionReviseAttendanceAmendments**: ``"attendances-amendments-revise"``
+
+#### Defined in
+
+permissions.ts:1181
+
+___
+
+### PermissionReviseAttendances
+
+• `Const` **PermissionReviseAttendances**: ``"attendances-revise"``
+
+#### Defined in
+
+permissions.ts:1142
+
+___
+
+### PermissionReviseBankAccounts
+
+• `Const` **PermissionReviseBankAccounts**: ``"bankaccounts-revise"``
+
+#### Defined in
+
+permissions.ts:978
+
+___
+
+### PermissionReviseClients
+
+• `Const` **PermissionReviseClients**: ``"clients-revise"``
+
+#### Defined in
+
+permissions.ts:43
+
+___
+
+### PermissionReviseContractorsPayments
+
+• `Const` **PermissionReviseContractorsPayments**: ``"contractors-payments-revise"``
+
+#### Defined in
+
+permissions.ts:699
+
+___
+
+### PermissionReviseCurrencies
+
+• `Const` **PermissionReviseCurrencies**: ``"currencies-revise"``
+
+#### Defined in
+
+permissions.ts:390
+
+___
+
+### PermissionReviseGoal
+
+• `Const` **PermissionReviseGoal**: ``"goals-revise"``
+
+#### Defined in
+
+permissions.ts:1264
+
+___
+
+### PermissionReviseHolidays
+
+• `Const` **PermissionReviseHolidays**: ``"holidays-revise"``
+
+#### Defined in
+
+permissions.ts:1077
+
+___
+
+### PermissionReviseLeaveTypes
+
+• `Const` **PermissionReviseLeaveTypes**: ``"leaves-types-revise"``
+
+#### Defined in
+
+permissions.ts:1090
+
+___
+
+### PermissionReviseLeavesAdjustments
+
+• `Const` **PermissionReviseLeavesAdjustments**: ``"leaves-adjustments-revise"``
+
+#### Defined in
+
+permissions.ts:1103
+
+___
+
+### PermissionReviseLeavesRequests
+
+• `Const` **PermissionReviseLeavesRequests**: ``"leaves-requests-revise"``
+
+#### Defined in
+
+permissions.ts:1116
+
+___
+
+### PermissionReviseLedgers
+
+• `Const` **PermissionReviseLedgers**: ``"ledgers-revise"``
+
+#### Defined in
+
+permissions.ts:1026
+
+___
+
+### PermissionReviseLocations
+
+• `Const` **PermissionReviseLocations**: ``"locations-revise"``
+
+#### Defined in
+
+permissions.ts:966
+
+___
+
+### PermissionReviseOnDuties
+
+• `Const` **PermissionReviseOnDuties**: ``"onduties-revise"``
+
+#### Defined in
+
+permissions.ts:1168
+
+___
+
+### PermissionReviseOvertime
+
+• `Const` **PermissionReviseOvertime**: ``"overtimes-revise"``
+
+#### Defined in
+
+permissions.ts:1129
+
+___
+
+### PermissionRevisePayrollParameters
+
+• `Const` **PermissionRevisePayrollParameters**: ``"payroll-params-revise"``
+
+#### Defined in
+
+permissions.ts:927
+
+___
+
+### PermissionRevisePurchaseEnquiry
+
+• `Const` **PermissionRevisePurchaseEnquiry**: ``"purchases-enquiries-revise"``
+
+#### Defined in
+
+permissions.ts:724
+
+___
+
+### PermissionRevisePurchasePayment
+
+• `Const` **PermissionRevisePurchasePayment**: ``"purchases-payments-revise"``
+
+#### Defined in
+
+permissions.ts:613
+
+___
+
+### PermissionReviseQCHubs
+
+• `Const` **PermissionReviseQCHubs**: ``"qchubs-revise"``
+
+#### Defined in
+
+permissions.ts:1002
+
+___
+
+### PermissionReviseQCParameters
+
+• `Const` **PermissionReviseQCParameters**: ``"qc-params-revise"``
+
+#### Defined in
+
+permissions.ts:860
+
+___
+
+### PermissionReviseQuotationRequest
+
+• `Const` **PermissionReviseQuotationRequest**: ``"quotations-requests-revise"``
+
+#### Defined in
+
+permissions.ts:755
+
+___
+
+### PermissionReviseQuotationResponse
+
+• `Const` **PermissionReviseQuotationResponse**: ``"quotations-responses-revise"``
+
+#### Defined in
+
+permissions.ts:770
+
+___
+
+### PermissionReviseSaleReceipt
+
+• `Const` **PermissionReviseSaleReceipt**: ``"sales-receipts-revise"``
+
+#### Defined in
+
+permissions.ts:626
+
+___
+
+### PermissionReviseShiftGroups
+
+• `Const` **PermissionReviseShiftGroups**: ``"shift-groups-revise"``
+
+#### Defined in
+
+permissions.ts:1064
+
+___
+
+### PermissionReviseShifts
+
+• `Const` **PermissionReviseShifts**: ``"shifts-revise"``
+
+#### Defined in
+
+permissions.ts:1051
+
+___
+
+### PermissionReviseSkillParameters
+
+• `Const` **PermissionReviseSkillParameters**: ``"skills-params-revise"``
+
+#### Defined in
+
+permissions.ts:1237
+
+___
+
+### PermissionReviseStorages
+
+• `Const` **PermissionReviseStorages**: ``"storages-revise"``
+
+#### Defined in
+
+permissions.ts:1014
+
+___
+
+### PermissionReviseStores
+
+• `Const` **PermissionReviseStores**: ``"stores-revise"``
+
+#### Defined in
+
+permissions.ts:990
+
+___
+
+### PermissionReviseSundries
+
+• `Const` **PermissionReviseSundries**: ``"sundries-revise"``
+
+#### Defined in
+
+permissions.ts:712
+
+___
+
+### PermissionReviseTaxGroups
+
+• `Const` **PermissionReviseTaxGroups**: ``"tax-groups-revise"``
+
+#### Defined in
+
+permissions.ts:915
+
+___
+
+### PermissionReviseTaxParameters
+
+• `Const` **PermissionReviseTaxParameters**: ``"tax-params-revise"``
+
+#### Defined in
+
+permissions.ts:903
+
+___
+
+### PermissionReviseUnitsOfMaterials
+
+• `Const` **PermissionReviseUnitsOfMaterials**: ``"units-of-materials-revise"``
+
+#### Defined in
+
+permissions.ts:402
+
+___
+
+### PermissionReviseVendors
+
+• `Const` **PermissionReviseVendors**: ``"vendors-revise"``
+
+#### Defined in
+
+permissions.ts:67
+
+___
+
+### PermissionReviseVisitations
+
+• `Const` **PermissionReviseVisitations**: ``"visitations-revise"``
+
+#### Defined in
+
+permissions.ts:1224
+
+___
+
+### PermissionRoleApprove
+
+• `Const` **PermissionRoleApprove**: ``"roles-approve"``
+
+#### Defined in
+
+permissions.ts:8
+
+___
+
+### PermissionRoleComplete
+
+• `Const` **PermissionRoleComplete**: ``"roles-mark-complete"``
+
+#### Defined in
+
+permissions.ts:12
+
+___
+
+### PermissionRoleCompleted
+
+• `Const` **PermissionRoleCompleted**: ``"roles-completed"``
+
+#### Defined in
+
+permissions.ts:10
+
+___
+
+### PermissionRoleDiscard
+
+• `Const` **PermissionRoleDiscard**: ``"roles-extra-discard"``
+
+#### Defined in
+
+permissions.ts:13
+
+___
+
+### PermissionRoleDiscarded
+
+• `Const` **PermissionRoleDiscarded**: ``"roles-discarded"``
+
+#### Defined in
+
+permissions.ts:6
+
+___
+
+### PermissionRoleDrafts
+
+• `Const` **PermissionRoleDrafts**: ``"roles-drafts"``
+
+#### Defined in
+
+permissions.ts:2
+
+___
+
+### PermissionRoleHalt
+
+• `Const` **PermissionRoleHalt**: ``"roles-extra-halt"``
+
+#### Defined in
+
+permissions.ts:11
+
+___
+
+### PermissionRoleHalted
+
+• `Const` **PermissionRoleHalted**: ``"roles-halted"``
+
+#### Defined in
+
+permissions.ts:5
+
+___
+
+### PermissionRoleNew
+
+• `Const` **PermissionRoleNew**: ``"roles-new"``
+
+#### Defined in
+
+permissions.ts:1
+
+___
+
+### PermissionRoleRevise
+
+• `Const` **PermissionRoleRevise**: ``"roles-revise"``
+
+#### Defined in
+
+permissions.ts:4
+
+___
+
+### PermissionRoleStanding
+
+• `Const` **PermissionRoleStanding**: ``"roles-standing"``
+
+#### Defined in
+
+permissions.ts:9
+
+___
+
+### PermissionRoleVerify
+
+• `Const` **PermissionRoleVerify**: ``"roles-verify"``
+
+#### Defined in
+
+permissions.ts:3
+
+___
+
+### PermissionSalaryApprove
+
+• `Const` **PermissionSalaryApprove**: ``"salaries-approve"``
+
+#### Defined in
+
+permissions.ts:687
+
+___
+
+### PermissionSalaryComplete
+
+• `Const` **PermissionSalaryComplete**: ``"salaries-mark-complete"``
+
+#### Defined in
+
+permissions.ts:691
+
+___
+
+### PermissionSalaryCompleted
+
+• `Const` **PermissionSalaryCompleted**: ``"salaries-completed"``
+
+#### Defined in
+
+permissions.ts:689
+
+___
+
+### PermissionSalaryDiscard
+
+• `Const` **PermissionSalaryDiscard**: ``"salaries-extra-discard"``
+
+#### Defined in
+
+permissions.ts:692
+
+___
+
+### PermissionSalaryDiscarded
+
+• `Const` **PermissionSalaryDiscarded**: ``"salaries-discarded"``
+
+#### Defined in
+
+permissions.ts:685
+
+___
+
+### PermissionSalaryDrafts
+
+• `Const` **PermissionSalaryDrafts**: ``"salaries-drafts"``
+
+#### Defined in
+
+permissions.ts:681
+
+___
+
+### PermissionSalaryHalt
+
+• `Const` **PermissionSalaryHalt**: ``"salaries-extra-halt"``
+
+#### Defined in
+
+permissions.ts:690
+
+___
+
+### PermissionSalaryHalted
+
+• `Const` **PermissionSalaryHalted**: ``"salaries-halted"``
+
+#### Defined in
+
+permissions.ts:684
+
+___
+
+### PermissionSalaryNew
+
+• `Const` **PermissionSalaryNew**: ``"salaries-new"``
+
+#### Defined in
+
+permissions.ts:680
+
+___
+
+### PermissionSalaryRevise
+
+• `Const` **PermissionSalaryRevise**: ``"salaries-revise"``
+
+#### Defined in
+
+permissions.ts:683
+
+___
+
+### PermissionSalaryStanding
+
+• `Const` **PermissionSalaryStanding**: ``"salaries-standing"``
+
+#### Defined in
+
+permissions.ts:688
+
+___
+
+### PermissionSalaryVerify
+
+• `Const` **PermissionSalaryVerify**: ``"salaries-verify"``
+
+#### Defined in
+
+permissions.ts:682
+
+___
+
+### PermissionSaleReturnApprove
+
+• `Const` **PermissionSaleReturnApprove**: ``"sales-returns-approve"``
+
+#### Defined in
+
+permissions.ts:571
+
+___
+
+### PermissionSaleReturnComplete
+
+• `Const` **PermissionSaleReturnComplete**: ``"sales-returns-mark-complete"``
+
+#### Defined in
+
+permissions.ts:575
+
+___
+
+### PermissionSaleReturnCompleted
+
+• `Const` **PermissionSaleReturnCompleted**: ``"sales-returns-completed"``
+
+#### Defined in
+
+permissions.ts:573
+
+___
+
+### PermissionSaleReturnDiscard
+
+• `Const` **PermissionSaleReturnDiscard**: ``"sales-returns-extra-discard"``
+
+#### Defined in
+
+permissions.ts:576
+
+___
+
+### PermissionSaleReturnDiscarded
+
+• `Const` **PermissionSaleReturnDiscarded**: ``"sales-returns-discarded"``
+
+#### Defined in
+
+permissions.ts:569
+
+___
+
+### PermissionSaleReturnDrafts
+
+• `Const` **PermissionSaleReturnDrafts**: ``"sales-returns-drafts"``
+
+#### Defined in
+
+permissions.ts:565
+
+___
+
+### PermissionSaleReturnHalt
+
+• `Const` **PermissionSaleReturnHalt**: ``"sales-returns-extra-halt"``
+
+#### Defined in
+
+permissions.ts:574
+
+___
+
+### PermissionSaleReturnHalted
+
+• `Const` **PermissionSaleReturnHalted**: ``"sales-returns-halted"``
+
+#### Defined in
+
+permissions.ts:568
+
+___
+
+### PermissionSaleReturnNew
+
+• `Const` **PermissionSaleReturnNew**: ``"sales-returns-new"``
+
+#### Defined in
+
+permissions.ts:564
+
+___
+
+### PermissionSaleReturnRevise
+
+• `Const` **PermissionSaleReturnRevise**: ``"sales-returns-revise"``
+
+#### Defined in
+
+permissions.ts:567
+
+___
+
+### PermissionSaleReturnStanding
+
+• `Const` **PermissionSaleReturnStanding**: ``"sales-returns-standing"``
+
+#### Defined in
+
+permissions.ts:572
+
+___
+
+### PermissionSaleReturnVerify
+
+• `Const` **PermissionSaleReturnVerify**: ``"sales-returns-verify"``
+
+#### Defined in
+
+permissions.ts:566
+
+___
+
+### PermissionSalesEnquiryApprove
+
+• `Const` **PermissionSalesEnquiryApprove**: ``"sales-enquiries-approve"``
+
+#### Defined in
+
+permissions.ts:743
+
+___
+
+### PermissionSalesEnquiryComplete
+
+• `Const` **PermissionSalesEnquiryComplete**: ``"sales-enquiries-mark-complete"``
+
+#### Defined in
+
+permissions.ts:747
+
+___
+
+### PermissionSalesEnquiryCompleted
+
+• `Const` **PermissionSalesEnquiryCompleted**: ``"sales-enquiries-completed"``
+
+#### Defined in
+
+permissions.ts:745
+
+___
+
+### PermissionSalesEnquiryDiscard
+
+• `Const` **PermissionSalesEnquiryDiscard**: ``"sales-enquiries-extra-discard"``
+
+#### Defined in
+
+permissions.ts:748
+
+___
+
+### PermissionSalesEnquiryDiscarded
+
+• `Const` **PermissionSalesEnquiryDiscarded**: ``"sales-enquiries-discarded"``
+
+#### Defined in
+
+permissions.ts:741
+
+___
+
+### PermissionSalesEnquiryDrafts
+
+• `Const` **PermissionSalesEnquiryDrafts**: ``"sales-enquiries-drafts"``
+
+#### Defined in
+
+permissions.ts:737
+
+___
+
+### PermissionSalesEnquiryHalt
+
+• `Const` **PermissionSalesEnquiryHalt**: ``"sales-enquiries-extra-halt"``
+
+#### Defined in
+
+permissions.ts:746
+
+___
+
+### PermissionSalesEnquiryHalted
+
+• `Const` **PermissionSalesEnquiryHalted**: ``"sales-enquiries-halted"``
+
+#### Defined in
+
+permissions.ts:740
+
+___
+
+### PermissionSalesEnquiryNew
+
+• `Const` **PermissionSalesEnquiryNew**: ``"sales-enquiries-new"``
+
+#### Defined in
+
+permissions.ts:736
+
+___
+
+### PermissionSalesEnquiryRevise
+
+• `Const` **PermissionSalesEnquiryRevise**: ``"sales-enquiries-revise"``
+
+#### Defined in
+
+permissions.ts:739
+
+___
+
+### PermissionSalesEnquiryStanding
+
+• `Const` **PermissionSalesEnquiryStanding**: ``"sales-enquiries-standing"``
+
+#### Defined in
+
+permissions.ts:744
+
+___
+
+### PermissionSalesEnquiryVerify
+
+• `Const` **PermissionSalesEnquiryVerify**: ``"sales-enquiries-verify"``
+
+#### Defined in
+
+permissions.ts:738
+
+___
+
+### PermissionSalesInvoiceApprove
+
+• `Const` **PermissionSalesInvoiceApprove**: ``"sales-invoices-approve"``
+
+#### Defined in
+
+permissions.ts:480
+
+___
+
+### PermissionSalesInvoiceComplete
+
+• `Const` **PermissionSalesInvoiceComplete**: ``"sales-invoices-mark-complete"``
+
+#### Defined in
+
+permissions.ts:484
+
+___
+
+### PermissionSalesInvoiceCompleted
+
+• `Const` **PermissionSalesInvoiceCompleted**: ``"sales-invoices-completed"``
+
+#### Defined in
+
+permissions.ts:482
+
+___
+
+### PermissionSalesInvoiceDiscard
+
+• `Const` **PermissionSalesInvoiceDiscard**: ``"sales-invoices-extra-discard"``
+
+#### Defined in
+
+permissions.ts:485
+
+___
+
+### PermissionSalesInvoiceDiscarded
+
+• `Const` **PermissionSalesInvoiceDiscarded**: ``"sales-invoices-discarded"``
+
+#### Defined in
+
+permissions.ts:478
+
+___
+
+### PermissionSalesInvoiceDrafts
+
+• `Const` **PermissionSalesInvoiceDrafts**: ``"sales-invoices-drafts"``
+
+#### Defined in
+
+permissions.ts:474
+
+___
+
+### PermissionSalesInvoiceHalt
+
+• `Const` **PermissionSalesInvoiceHalt**: ``"sales-invoices-extra-halt"``
+
+#### Defined in
+
+permissions.ts:483
+
+___
+
+### PermissionSalesInvoiceHalted
+
+• `Const` **PermissionSalesInvoiceHalted**: ``"sales-invoices-halted"``
+
+#### Defined in
+
+permissions.ts:477
+
+___
+
+### PermissionSalesInvoiceNew
+
+• `Const` **PermissionSalesInvoiceNew**: ``"sales-invoices-new"``
+
+#### Defined in
+
+permissions.ts:473
+
+___
+
+### PermissionSalesInvoiceRevise
+
+• `Const` **PermissionSalesInvoiceRevise**: ``"sales-invoices-revise"``
+
+#### Defined in
+
+permissions.ts:476
+
+___
+
+### PermissionSalesInvoiceStanding
+
+• `Const` **PermissionSalesInvoiceStanding**: ``"sales-invoices-standing"``
+
+#### Defined in
+
+permissions.ts:481
+
+___
+
+### PermissionSalesInvoiceVerify
+
+• `Const` **PermissionSalesInvoiceVerify**: ``"sales-invoices-verify"``
+
+#### Defined in
+
+permissions.ts:475
+
+___
+
+### PermissionSalesOrderApprove
+
+• `Const` **PermissionSalesOrderApprove**: ``"sales-orders-approve"``
+
+#### Defined in
+
+permissions.ts:432
+
+___
+
+### PermissionSalesOrderComplete
+
+• `Const` **PermissionSalesOrderComplete**: ``"sales-orders-mark-complete"``
+
+#### Defined in
+
+permissions.ts:436
+
+___
+
+### PermissionSalesOrderCompleted
+
+• `Const` **PermissionSalesOrderCompleted**: ``"sales-orders-completed"``
+
+#### Defined in
+
+permissions.ts:434
+
+___
+
+### PermissionSalesOrderDiscard
+
+• `Const` **PermissionSalesOrderDiscard**: ``"sales-orders-extra-discard"``
+
+#### Defined in
+
+permissions.ts:437
+
+___
+
+### PermissionSalesOrderDiscarded
+
+• `Const` **PermissionSalesOrderDiscarded**: ``"sales-orders-discarded"``
+
+#### Defined in
+
+permissions.ts:430
+
+___
+
+### PermissionSalesOrderDrafts
+
+• `Const` **PermissionSalesOrderDrafts**: ``"sales-orders-drafts"``
+
+#### Defined in
+
+permissions.ts:426
+
+___
+
+### PermissionSalesOrderHalt
+
+• `Const` **PermissionSalesOrderHalt**: ``"sales-orders-extra-halt"``
+
+#### Defined in
+
+permissions.ts:435
+
+___
+
+### PermissionSalesOrderHalted
+
+• `Const` **PermissionSalesOrderHalted**: ``"sales-orders-halted"``
+
+#### Defined in
+
+permissions.ts:429
+
+___
+
+### PermissionSalesOrderNew
+
+• `Const` **PermissionSalesOrderNew**: ``"sales-orders-new"``
+
+#### Defined in
+
+permissions.ts:425
+
+___
+
+### PermissionSalesOrderRevise
+
+• `Const` **PermissionSalesOrderRevise**: ``"sales-orders-revise"``
+
+#### Defined in
+
+permissions.ts:428
+
+___
+
+### PermissionSalesOrderStanding
+
+• `Const` **PermissionSalesOrderStanding**: ``"sales-orders-standing"``
+
+#### Defined in
+
+permissions.ts:433
+
+___
+
+### PermissionSalesOrderVerify
+
+• `Const` **PermissionSalesOrderVerify**: ``"sales-orders-verify"``
+
+#### Defined in
+
+permissions.ts:427
+
+___
+
+### PermissionSalesQuotationApprove
+
+• `Const` **PermissionSalesQuotationApprove**: ``"sales-quotations-approve"``
+
+#### Defined in
+
+permissions.ts:448
+
+___
+
+### PermissionSalesQuotationComplete
+
+• `Const` **PermissionSalesQuotationComplete**: ``"sales-quotations-mark-complete"``
+
+#### Defined in
+
+permissions.ts:452
+
+___
+
+### PermissionSalesQuotationCompleted
+
+• `Const` **PermissionSalesQuotationCompleted**: ``"sales-quotations-completed"``
+
+#### Defined in
+
+permissions.ts:450
+
+___
+
+### PermissionSalesQuotationDiscard
+
+• `Const` **PermissionSalesQuotationDiscard**: ``"sales-quotations-extra-discard"``
+
+#### Defined in
+
+permissions.ts:453
+
+___
+
+### PermissionSalesQuotationDiscarded
+
+• `Const` **PermissionSalesQuotationDiscarded**: ``"sales-quotations-discarded"``
+
+#### Defined in
+
+permissions.ts:446
+
+___
+
+### PermissionSalesQuotationDrafts
+
+• `Const` **PermissionSalesQuotationDrafts**: ``"sales-quotations-drafts"``
+
+#### Defined in
+
+permissions.ts:442
+
+___
+
+### PermissionSalesQuotationHalt
+
+• `Const` **PermissionSalesQuotationHalt**: ``"sales-quotations-extra-halt"``
+
+#### Defined in
+
+permissions.ts:451
+
+___
+
+### PermissionSalesQuotationHalted
+
+• `Const` **PermissionSalesQuotationHalted**: ``"sales-quotations-halted"``
+
+#### Defined in
+
+permissions.ts:445
+
+___
+
+### PermissionSalesQuotationNew
+
+• `Const` **PermissionSalesQuotationNew**: ``"sales-quotations-new"``
+
+#### Defined in
+
+permissions.ts:441
+
+___
+
+### PermissionSalesQuotationRevise
+
+• `Const` **PermissionSalesQuotationRevise**: ``"sales-quotations-revise"``
+
+#### Defined in
+
+permissions.ts:444
+
+___
+
+### PermissionSalesQuotationStanding
+
+• `Const` **PermissionSalesQuotationStanding**: ``"sales-quotations-standing"``
+
+#### Defined in
+
+permissions.ts:449
+
+___
+
+### PermissionSalesQuotationVerify
+
+• `Const` **PermissionSalesQuotationVerify**: ``"sales-quotations-verify"``
+
+#### Defined in
+
+permissions.ts:443
+
+___
+
+### PermissionSet
+
+• `Const` **PermissionSet**: ``"general-settings-set"``
+
+#### Defined in
+
+permissions.ts:951
+
+___
+
+### PermissionSimpleLogs
+
+• `Const` **PermissionSimpleLogs**: ``"logs-view"``
+
+#### Defined in
+
+permissions.ts:953
+
+___
+
+### PermissionSkillGroupApprove
+
+• `Const` **PermissionSkillGroupApprove**: ``"skills-groups-approve"``
+
+#### Defined in
+
+permissions.ts:1253
+
+___
+
+### PermissionSkillGroupComplete
+
+• `Const` **PermissionSkillGroupComplete**: ``"skills-groups-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1257
+
+___
+
+### PermissionSkillGroupCompleted
+
+• `Const` **PermissionSkillGroupCompleted**: ``"skills-groups-completed"``
+
+#### Defined in
+
+permissions.ts:1255
+
+___
+
+### PermissionSkillGroupDiscard
+
+• `Const` **PermissionSkillGroupDiscard**: ``"skills-groups-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1258
+
+___
+
+### PermissionSkillGroupDiscarded
+
+• `Const` **PermissionSkillGroupDiscarded**: ``"skills-groups-discarded"``
+
+#### Defined in
+
+permissions.ts:1251
+
+___
+
+### PermissionSkillGroupDrafts
+
+• `Const` **PermissionSkillGroupDrafts**: ``"skills-groups-drafts"``
+
+#### Defined in
+
+permissions.ts:1247
+
+___
+
+### PermissionSkillGroupHalt
+
+• `Const` **PermissionSkillGroupHalt**: ``"skills-groups-extra-halt"``
+
+#### Defined in
+
+permissions.ts:1256
+
+___
+
+### PermissionSkillGroupHalted
+
+• `Const` **PermissionSkillGroupHalted**: ``"skills-groups-halted"``
+
+#### Defined in
+
+permissions.ts:1250
+
+___
+
+### PermissionSkillGroupNew
+
+• `Const` **PermissionSkillGroupNew**: ``"skills-groups-new"``
+
+#### Defined in
+
+permissions.ts:1246
+
+___
+
+### PermissionSkillGroupRevise
+
+• `Const` **PermissionSkillGroupRevise**: ``"skills-groups-revise"``
+
+#### Defined in
+
+permissions.ts:1249
+
+___
+
+### PermissionSkillGroupStanding
+
+• `Const` **PermissionSkillGroupStanding**: ``"skills-groups-standing"``
+
+#### Defined in
+
+permissions.ts:1254
+
+___
+
+### PermissionSkillGroupVerify
+
+• `Const` **PermissionSkillGroupVerify**: ``"skills-groups-verify"``
+
+#### Defined in
+
+permissions.ts:1248
+
+___
+
+### PermissionStandingAbsences
+
+• `Const` **PermissionStandingAbsences**: ``"absences-standing"``
+
+#### Defined in
+
+permissions.ts:1156
+
+___
+
+### PermissionStandingActionsCodes
+
+• `Const` **PermissionStandingActionsCodes**: ``"actions-codes-standing"``
+
+#### Defined in
+
+permissions.ts:1317
+
+___
+
+### PermissionStandingActivitiesGroups
+
+• `Const` **PermissionStandingActivitiesGroups**: ``"activities-groups-standing"``
+
+#### Defined in
+
+permissions.ts:1305
+
+___
+
+### PermissionStandingActivitiesStatuses
+
+• `Const` **PermissionStandingActivitiesStatuses**: ``"activities-statuses-standing"``
+
+#### Defined in
+
+permissions.ts:1293
+
+___
+
+### PermissionStandingActivitiesTags
+
+• `Const` **PermissionStandingActivitiesTags**: ``"activities-tags-standing"``
+
+#### Defined in
+
+permissions.ts:1281
+
+___
+
+### PermissionStandingAnnouncements
+
+• `Const` **PermissionStandingAnnouncements**: ``"announcements-standing"``
+
+#### Defined in
+
+permissions.ts:1039
+
+___
+
+### PermissionStandingAttendanceAmendments
+
+• `Const` **PermissionStandingAttendanceAmendments**: ``"attendances-amendments-standing"``
+
+#### Defined in
+
+permissions.ts:1182
+
+___
+
+### PermissionStandingAttendances
+
+• `Const` **PermissionStandingAttendances**: ``"attendances-standing"``
+
+#### Defined in
+
+permissions.ts:1143
+
+___
+
+### PermissionStandingBankAccounts
+
+• `Const` **PermissionStandingBankAccounts**: ``"bankaccounts-standing"``
+
+#### Defined in
+
+permissions.ts:979
+
+___
+
+### PermissionStandingClients
+
+• `Const` **PermissionStandingClients**: ``"clients-standing"``
+
+#### Defined in
+
+permissions.ts:44
+
+___
+
+### PermissionStandingContractorsPayments
+
+• `Const` **PermissionStandingContractorsPayments**: ``"contractors-payments-standing"``
+
+#### Defined in
+
+permissions.ts:700
+
+___
+
+### PermissionStandingCurrencies
+
+• `Const` **PermissionStandingCurrencies**: ``"currencies-standing"``
+
+#### Defined in
+
+permissions.ts:391
+
+___
+
+### PermissionStandingGoal
+
+• `Const` **PermissionStandingGoal**: ``"goals-standing"``
+
+#### Defined in
+
+permissions.ts:1269
+
+___
+
+### PermissionStandingHolidays
+
+• `Const` **PermissionStandingHolidays**: ``"holidays-standing"``
+
+#### Defined in
+
+permissions.ts:1078
+
+___
+
+### PermissionStandingLeaveTypes
+
+• `Const` **PermissionStandingLeaveTypes**: ``"leaves-types-standing"``
+
+#### Defined in
+
+permissions.ts:1091
+
+___
+
+### PermissionStandingLeavesAdjustments
+
+• `Const` **PermissionStandingLeavesAdjustments**: ``"leaves-adjustments-standing"``
+
+#### Defined in
+
+permissions.ts:1104
+
+___
+
+### PermissionStandingLeavesRequests
+
+• `Const` **PermissionStandingLeavesRequests**: ``"leaves-requests-standing"``
+
+#### Defined in
+
+permissions.ts:1117
+
+___
+
+### PermissionStandingLedgers
+
+• `Const` **PermissionStandingLedgers**: ``"ledgers-standing"``
+
+#### Defined in
+
+permissions.ts:1027
+
+___
+
+### PermissionStandingLocations
+
+• `Const` **PermissionStandingLocations**: ``"locations-standing"``
+
+#### Defined in
+
+permissions.ts:967
+
+___
+
+### PermissionStandingOnDuties
+
+• `Const` **PermissionStandingOnDuties**: ``"onduties-standing"``
+
+#### Defined in
+
+permissions.ts:1169
+
+___
+
+### PermissionStandingOvertime
+
+• `Const` **PermissionStandingOvertime**: ``"overtimes-standing"``
+
+#### Defined in
+
+permissions.ts:1130
+
+___
+
+### PermissionStandingPayrollParameters
+
+• `Const` **PermissionStandingPayrollParameters**: ``"payroll-params-standing"``
+
+#### Defined in
+
+permissions.ts:928
+
+___
+
+### PermissionStandingPurchaseEnquiry
+
+• `Const` **PermissionStandingPurchaseEnquiry**: ``"purchases-enquiries-standing"``
+
+#### Defined in
+
+permissions.ts:729
+
+___
+
+### PermissionStandingPurchasePayment
+
+• `Const` **PermissionStandingPurchasePayment**: ``"purchases-payments-standing"``
+
+#### Defined in
+
+permissions.ts:614
+
+___
+
+### PermissionStandingQCHubs
+
+• `Const` **PermissionStandingQCHubs**: ``"qchubs-standing"``
+
+#### Defined in
+
+permissions.ts:1003
+
+___
+
+### PermissionStandingQCParameters
+
+• `Const` **PermissionStandingQCParameters**: ``"qc-params-standing"``
+
+#### Defined in
+
+permissions.ts:861
+
+___
+
+### PermissionStandingQuotationRequest
+
+• `Const` **PermissionStandingQuotationRequest**: ``"quotations-requests-standing"``
+
+#### Defined in
+
+permissions.ts:760
+
+___
+
+### PermissionStandingQuotationResponse
+
+• `Const` **PermissionStandingQuotationResponse**: ``"quotations-responses-standing"``
+
+#### Defined in
+
+permissions.ts:775
+
+___
+
+### PermissionStandingSaleReceipt
+
+• `Const` **PermissionStandingSaleReceipt**: ``"sales-receipts-standing"``
+
+#### Defined in
+
+permissions.ts:627
+
+___
+
+### PermissionStandingShiftGroups
+
+• `Const` **PermissionStandingShiftGroups**: ``"shift-groups-standing"``
+
+#### Defined in
+
+permissions.ts:1065
+
+___
+
+### PermissionStandingShifts
+
+• `Const` **PermissionStandingShifts**: ``"shifts-standing"``
+
+#### Defined in
+
+permissions.ts:1052
+
+___
+
+### PermissionStandingSkillParameters
+
+• `Const` **PermissionStandingSkillParameters**: ``"skills-params-standing"``
+
+#### Defined in
+
+permissions.ts:1238
+
+___
+
+### PermissionStandingStorages
+
+• `Const` **PermissionStandingStorages**: ``"storages-standing"``
+
+#### Defined in
+
+permissions.ts:1015
+
+___
+
+### PermissionStandingStores
+
+• `Const` **PermissionStandingStores**: ``"stores-standing"``
+
+#### Defined in
+
+permissions.ts:991
+
+___
+
+### PermissionStandingSundries
+
+• `Const` **PermissionStandingSundries**: ``"sundries-standing"``
+
+#### Defined in
+
+permissions.ts:713
+
+___
+
+### PermissionStandingTaxGroups
+
+• `Const` **PermissionStandingTaxGroups**: ``"tax-groups-standing"``
+
+#### Defined in
+
+permissions.ts:916
+
+___
+
+### PermissionStandingTaxParameters
+
+• `Const` **PermissionStandingTaxParameters**: ``"tax-params-standing"``
+
+#### Defined in
+
+permissions.ts:904
+
+___
+
+### PermissionStandingUnitsOfMaterials
+
+• `Const` **PermissionStandingUnitsOfMaterials**: ``"units-of-materials-standing"``
+
+#### Defined in
+
+permissions.ts:403
+
+___
+
+### PermissionStandingVendors
+
+• `Const` **PermissionStandingVendors**: ``"vendors-standing"``
+
+#### Defined in
+
+permissions.ts:68
+
+___
+
+### PermissionStandingVisitations
+
+• `Const` **PermissionStandingVisitations**: ``"visitations-standing"``
+
+#### Defined in
+
+permissions.ts:1225
+
+___
+
+### PermissionStockAuditApprove
+
+• `Const` **PermissionStockAuditApprove**: ``"stock-audits-approve"``
+
+#### Defined in
+
+permissions.ts:146
+
+___
+
+### PermissionStockAuditComplete
+
+• `Const` **PermissionStockAuditComplete**: ``"stock-audits-mark-complete"``
+
+#### Defined in
+
+permissions.ts:150
+
+___
+
+### PermissionStockAuditCompleted
+
+• `Const` **PermissionStockAuditCompleted**: ``"stock-audits-completed"``
+
+#### Defined in
+
+permissions.ts:148
+
+___
+
+### PermissionStockAuditDiscard
+
+• `Const` **PermissionStockAuditDiscard**: ``"stock-audits-extra-discard"``
+
+#### Defined in
+
+permissions.ts:151
+
+___
+
+### PermissionStockAuditDiscarded
+
+• `Const` **PermissionStockAuditDiscarded**: ``"stock-audits-discarded"``
+
+#### Defined in
+
+permissions.ts:144
+
+___
+
+### PermissionStockAuditDrafts
+
+• `Const` **PermissionStockAuditDrafts**: ``"stock-audits-drafts"``
+
+#### Defined in
+
+permissions.ts:140
+
+___
+
+### PermissionStockAuditHalt
+
+• `Const` **PermissionStockAuditHalt**: ``"stock-audits-extra-halt"``
+
+#### Defined in
+
+permissions.ts:149
+
+___
+
+### PermissionStockAuditHalted
+
+• `Const` **PermissionStockAuditHalted**: ``"stock-audits-halted"``
+
+#### Defined in
+
+permissions.ts:143
+
+___
+
+### PermissionStockAuditNew
+
+• `Const` **PermissionStockAuditNew**: ``"stock-audits-new"``
+
+#### Defined in
+
+permissions.ts:139
+
+___
+
+### PermissionStockAuditRevise
+
+• `Const` **PermissionStockAuditRevise**: ``"stock-audits-revise"``
+
+#### Defined in
+
+permissions.ts:142
+
+___
+
+### PermissionStockAuditStanding
+
+• `Const` **PermissionStockAuditStanding**: ``"stock-audits-standing"``
+
+#### Defined in
+
+permissions.ts:147
+
+___
+
+### PermissionStockAuditVerify
+
+• `Const` **PermissionStockAuditVerify**: ``"stock-audits-verify"``
+
+#### Defined in
+
+permissions.ts:141
+
+___
+
+### PermissionStockIssuanceApprove
+
+• `Const` **PermissionStockIssuanceApprove**: ``"stock-issuances-approve"``
+
+#### Defined in
+
+permissions.ts:116
+
+___
+
+### PermissionStockIssuanceComplete
+
+• `Const` **PermissionStockIssuanceComplete**: ``"stock-issuances-mark-complete"``
+
+#### Defined in
+
+permissions.ts:120
+
+___
+
+### PermissionStockIssuanceCompleted
+
+• `Const` **PermissionStockIssuanceCompleted**: ``"stock-issuances-completed"``
+
+#### Defined in
+
+permissions.ts:118
+
+___
+
+### PermissionStockIssuanceDiscard
+
+• `Const` **PermissionStockIssuanceDiscard**: ``"stock-issuances-extra-discard"``
+
+#### Defined in
+
+permissions.ts:121
+
+___
+
+### PermissionStockIssuanceDiscarded
+
+• `Const` **PermissionStockIssuanceDiscarded**: ``"stock-issuances-discarded"``
+
+#### Defined in
+
+permissions.ts:114
+
+___
+
+### PermissionStockIssuanceDrafts
+
+• `Const` **PermissionStockIssuanceDrafts**: ``"stock-issuances-drafts"``
+
+#### Defined in
+
+permissions.ts:110
+
+___
+
+### PermissionStockIssuanceHalt
+
+• `Const` **PermissionStockIssuanceHalt**: ``"stock-issuances-extra-halt"``
+
+#### Defined in
+
+permissions.ts:119
+
+___
+
+### PermissionStockIssuanceHalted
+
+• `Const` **PermissionStockIssuanceHalted**: ``"stock-issuances-halted"``
+
+#### Defined in
+
+permissions.ts:113
+
+___
+
+### PermissionStockIssuanceNew
+
+• `Const` **PermissionStockIssuanceNew**: ``"stock-issuances-new"``
+
+#### Defined in
+
+permissions.ts:109
+
+___
+
+### PermissionStockIssuanceRevise
+
+• `Const` **PermissionStockIssuanceRevise**: ``"stock-issuances-revise"``
+
+#### Defined in
+
+permissions.ts:112
+
+___
+
+### PermissionStockIssuanceStanding
+
+• `Const` **PermissionStockIssuanceStanding**: ``"stock-issuances-standing"``
+
+#### Defined in
+
+permissions.ts:117
+
+___
+
+### PermissionStockIssuanceVerify
+
+• `Const` **PermissionStockIssuanceVerify**: ``"stock-issuances-verify"``
+
+#### Defined in
+
+permissions.ts:111
+
+___
+
+### PermissionStockReturnApprove
+
+• `Const` **PermissionStockReturnApprove**: ``"stock-returns-approve"``
+
+#### Defined in
+
+permissions.ts:131
+
+___
+
+### PermissionStockReturnComplete
+
+• `Const` **PermissionStockReturnComplete**: ``"stock-returns-mark-complete"``
+
+#### Defined in
+
+permissions.ts:135
+
+___
+
+### PermissionStockReturnCompleted
+
+• `Const` **PermissionStockReturnCompleted**: ``"stock-returns-completed"``
+
+#### Defined in
+
+permissions.ts:133
+
+___
+
+### PermissionStockReturnDiscard
+
+• `Const` **PermissionStockReturnDiscard**: ``"stock-returns-extra-discard"``
+
+#### Defined in
+
+permissions.ts:136
+
+___
+
+### PermissionStockReturnDiscarded
+
+• `Const` **PermissionStockReturnDiscarded**: ``"stock-returns-discarded"``
+
+#### Defined in
+
+permissions.ts:129
+
+___
+
+### PermissionStockReturnDrafts
+
+• `Const` **PermissionStockReturnDrafts**: ``"stock-returns-drafts"``
+
+#### Defined in
+
+permissions.ts:125
+
+___
+
+### PermissionStockReturnHalt
+
+• `Const` **PermissionStockReturnHalt**: ``"stock-returns-extra-halt"``
+
+#### Defined in
+
+permissions.ts:134
+
+___
+
+### PermissionStockReturnHalted
+
+• `Const` **PermissionStockReturnHalted**: ``"stock-returns-halted"``
+
+#### Defined in
+
+permissions.ts:128
+
+___
+
+### PermissionStockReturnNew
+
+• `Const` **PermissionStockReturnNew**: ``"stock-returns-new"``
+
+#### Defined in
+
+permissions.ts:124
+
+___
+
+### PermissionStockReturnRevise
+
+• `Const` **PermissionStockReturnRevise**: ``"stock-returns-revise"``
+
+#### Defined in
+
+permissions.ts:127
+
+___
+
+### PermissionStockReturnStanding
+
+• `Const` **PermissionStockReturnStanding**: ``"stock-returns-standing"``
+
+#### Defined in
+
+permissions.ts:132
+
+___
+
+### PermissionStockReturnVerify
+
+• `Const` **PermissionStockReturnVerify**: ``"stock-returns-verify"``
+
+#### Defined in
+
+permissions.ts:126
+
+___
+
+### PermissionSupplyOfferApprove
+
+• `Const` **PermissionSupplyOfferApprove**: ``"supply-offers-approve"``
+
+#### Defined in
+
+permissions.ts:361
+
+___
+
+### PermissionSupplyOfferComplete
+
+• `Const` **PermissionSupplyOfferComplete**: ``"supply-offers-mark-complete"``
+
+#### Defined in
+
+permissions.ts:365
+
+___
+
+### PermissionSupplyOfferCompleted
+
+• `Const` **PermissionSupplyOfferCompleted**: ``"supply-offers-completed"``
+
+#### Defined in
+
+permissions.ts:363
+
+___
+
+### PermissionSupplyOfferDiscard
+
+• `Const` **PermissionSupplyOfferDiscard**: ``"supply-offers-extra-discard"``
+
+#### Defined in
+
+permissions.ts:366
+
+___
+
+### PermissionSupplyOfferDiscarded
+
+• `Const` **PermissionSupplyOfferDiscarded**: ``"supply-offers-discarded"``
+
+#### Defined in
+
+permissions.ts:359
+
+___
+
+### PermissionSupplyOfferDrafts
+
+• `Const` **PermissionSupplyOfferDrafts**: ``"supply-offers-drafts"``
+
+#### Defined in
+
+permissions.ts:355
+
+___
+
+### PermissionSupplyOfferHalt
+
+• `Const` **PermissionSupplyOfferHalt**: ``"supply-offers-extra-halt"``
+
+#### Defined in
+
+permissions.ts:364
+
+___
+
+### PermissionSupplyOfferHalted
+
+• `Const` **PermissionSupplyOfferHalted**: ``"supply-offers-halted"``
+
+#### Defined in
+
+permissions.ts:358
+
+___
+
+### PermissionSupplyOfferNew
+
+• `Const` **PermissionSupplyOfferNew**: ``"supply-offers-new"``
+
+#### Defined in
+
+permissions.ts:354
+
+___
+
+### PermissionSupplyOfferRevise
+
+• `Const` **PermissionSupplyOfferRevise**: ``"supply-offers-revise"``
+
+#### Defined in
+
+permissions.ts:357
+
+___
+
+### PermissionSupplyOfferStanding
+
+• `Const` **PermissionSupplyOfferStanding**: ``"supply-offers-standing"``
+
+#### Defined in
+
+permissions.ts:362
+
+___
+
+### PermissionSupplyOfferVerify
+
+• `Const` **PermissionSupplyOfferVerify**: ``"supply-offers-verify"``
+
+#### Defined in
+
+permissions.ts:356
+
+___
+
+### PermissionTeamApprove
+
+• `Const` **PermissionTeamApprove**: ``"teams-approve"``
+
+#### Defined in
+
+permissions.ts:1197
+
+___
+
+### PermissionTeamComplete
+
+• `Const` **PermissionTeamComplete**: ``"teams-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1201
+
+___
+
+### PermissionTeamCompleted
+
+• `Const` **PermissionTeamCompleted**: ``"teams-completed"``
+
+#### Defined in
+
+permissions.ts:1199
+
+___
+
+### PermissionTeamDiscard
+
+• `Const` **PermissionTeamDiscard**: ``"teams-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1202
+
+___
+
+### PermissionTeamDiscarded
+
+• `Const` **PermissionTeamDiscarded**: ``"teams-discarded"``
+
+#### Defined in
+
+permissions.ts:1195
+
+___
+
+### PermissionTeamDrafts
+
+• `Const` **PermissionTeamDrafts**: ``"teams-drafts"``
+
+#### Defined in
+
+permissions.ts:1191
+
+___
+
+### PermissionTeamHalt
+
+• `Const` **PermissionTeamHalt**: ``"teams-extra-halt"``
+
+#### Defined in
+
+permissions.ts:1200
+
+___
+
+### PermissionTeamHalted
+
+• `Const` **PermissionTeamHalted**: ``"teams-halted"``
+
+#### Defined in
+
+permissions.ts:1194
+
+___
+
+### PermissionTeamNew
+
+• `Const` **PermissionTeamNew**: ``"teams-new"``
+
+#### Defined in
+
+permissions.ts:1190
+
+___
+
+### PermissionTeamRevise
+
+• `Const` **PermissionTeamRevise**: ``"teams-revise"``
+
+#### Defined in
+
+permissions.ts:1193
+
+___
+
+### PermissionTeamStanding
+
+• `Const` **PermissionTeamStanding**: ``"teams-standing"``
+
+#### Defined in
+
+permissions.ts:1198
+
+___
+
+### PermissionTeamVerify
+
+• `Const` **PermissionTeamVerify**: ``"teams-verify"``
+
+#### Defined in
+
+permissions.ts:1192
+
+___
+
+### PermissionUserApprove
+
+• `Const` **PermissionUserApprove**: ``"users-approve"``
+
+#### Defined in
+
+permissions.ts:23
+
+___
+
+### PermissionUserDiscard
+
+• `Const` **PermissionUserDiscard**: ``"users-extra-discard"``
+
+#### Defined in
+
+permissions.ts:26
+
+___
+
+### PermissionUserDiscarded
+
+• `Const` **PermissionUserDiscarded**: ``"users-discarded"``
+
+#### Defined in
+
+permissions.ts:21
+
+___
+
+### PermissionUserDrafts
+
+• `Const` **PermissionUserDrafts**: ``"users-drafts"``
+
+#### Defined in
+
+permissions.ts:17
+
+___
+
+### PermissionUserHalt
+
+• `Const` **PermissionUserHalt**: ``"users-extra-halt"``
+
+#### Defined in
+
+permissions.ts:25
+
+___
+
+### PermissionUserHalted
+
+• `Const` **PermissionUserHalted**: ``"users-halted"``
+
+#### Defined in
+
+permissions.ts:20
+
+___
+
+### PermissionUserNew
+
+• `Const` **PermissionUserNew**: ``"users-new"``
+
+#### Defined in
+
+permissions.ts:16
+
+___
+
+### PermissionUserRevise
+
+• `Const` **PermissionUserRevise**: ``"users-revise"``
+
+#### Defined in
+
+permissions.ts:19
+
+___
+
+### PermissionUserStanding
+
+• `Const` **PermissionUserStanding**: ``"users-standing"``
+
+#### Defined in
+
+permissions.ts:24
+
+___
+
+### PermissionUserVerify
+
+• `Const` **PermissionUserVerify**: ``"users-verify"``
+
+#### Defined in
+
+permissions.ts:18
+
+___
+
+### PermissionVendorInvoiceApprove
+
+• `Const` **PermissionVendorInvoiceApprove**: ``"vendor-invoices-approve"``
+
+#### Defined in
+
+permissions.ts:511
+
+___
+
+### PermissionVendorInvoiceComplete
+
+• `Const` **PermissionVendorInvoiceComplete**: ``"vendor-invoices-mark-complete"``
+
+#### Defined in
+
+permissions.ts:515
+
+___
+
+### PermissionVendorInvoiceCompleted
+
+• `Const` **PermissionVendorInvoiceCompleted**: ``"vendor-invoices-completed"``
+
+#### Defined in
+
+permissions.ts:513
+
+___
+
+### PermissionVendorInvoiceDiscard
+
+• `Const` **PermissionVendorInvoiceDiscard**: ``"vendor-invoices-extra-discard"``
+
+#### Defined in
+
+permissions.ts:516
+
+___
+
+### PermissionVendorInvoiceDiscarded
+
+• `Const` **PermissionVendorInvoiceDiscarded**: ``"vendor-invoices-discarded"``
+
+#### Defined in
+
+permissions.ts:509
+
+___
+
+### PermissionVendorInvoiceDrafts
+
+• `Const` **PermissionVendorInvoiceDrafts**: ``"vendor-invoices-drafts"``
+
+#### Defined in
+
+permissions.ts:505
+
+___
+
+### PermissionVendorInvoiceHalt
+
+• `Const` **PermissionVendorInvoiceHalt**: ``"vendor-invoices-extra-halt"``
+
+#### Defined in
+
+permissions.ts:514
+
+___
+
+### PermissionVendorInvoiceHalted
+
+• `Const` **PermissionVendorInvoiceHalted**: ``"vendor-invoices-halted"``
+
+#### Defined in
+
+permissions.ts:508
+
+___
+
+### PermissionVendorInvoiceNew
+
+• `Const` **PermissionVendorInvoiceNew**: ``"vendor-invoices-new"``
+
+#### Defined in
+
+permissions.ts:504
+
+___
+
+### PermissionVendorInvoiceRevise
+
+• `Const` **PermissionVendorInvoiceRevise**: ``"vendor-invoices-revise"``
+
+#### Defined in
+
+permissions.ts:507
+
+___
+
+### PermissionVendorInvoiceStanding
+
+• `Const` **PermissionVendorInvoiceStanding**: ``"vendor-invoices-standing"``
+
+#### Defined in
+
+permissions.ts:512
+
+___
+
+### PermissionVendorInvoiceVerify
+
+• `Const` **PermissionVendorInvoiceVerify**: ``"vendor-invoices-verify"``
+
+#### Defined in
+
+permissions.ts:506
+
+___
+
+### PermissionVendorStreamCancel
+
+• `Const` **PermissionVendorStreamCancel**: ``"vendor-streams-mark-cancel"``
+
+#### Defined in
+
+permissions.ts:1386
+
+___
+
+### PermissionVendorStreamCancelled
+
+• `Const` **PermissionVendorStreamCancelled**: ``"vendor-streams-cancelled"``
+
+#### Defined in
+
+permissions.ts:1385
+
+___
+
+### PermissionVendorStreamComplete
+
+• `Const` **PermissionVendorStreamComplete**: ``"vendor-streams-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1383
+
+___
+
+### PermissionVendorStreamCompleted
+
+• `Const` **PermissionVendorStreamCompleted**: ``"vendor-streams-completed"``
+
+#### Defined in
+
+permissions.ts:1382
+
+___
+
+### PermissionVendorStreamNew
+
+• `Const` **PermissionVendorStreamNew**: ``"vendor-streams-create"``
+
+#### Defined in
+
+permissions.ts:1379
+
+___
+
+### PermissionVendorStreamOpen
+
+• `Const` **PermissionVendorStreamOpen**: ``"vendor-streams-open"``
+
+#### Defined in
+
+permissions.ts:1381
+
+___
+
+### PermissionVendorStreamReopen
+
+• `Const` **PermissionVendorStreamReopen**: ``"vendor-streams-extra-reopen"``
+
+#### Defined in
+
+permissions.ts:1384
+
+___
+
+### PermissionVendorStreamUpdate
+
+• `Const` **PermissionVendorStreamUpdate**: ``"vendor-streams-update"``
+
+#### Defined in
+
+permissions.ts:1380
+
+___
+
+### PermissionVerifyAbsences
+
+• `Const` **PermissionVerifyAbsences**: ``"absences-verify"``
+
+#### Defined in
+
+permissions.ts:1153
+
+___
+
+### PermissionVerifyActionsCodes
+
+• `Const` **PermissionVerifyActionsCodes**: ``"actions-codes-verify"``
+
+#### Defined in
+
+permissions.ts:1314
+
+___
+
+### PermissionVerifyActivitiesGroups
+
+• `Const` **PermissionVerifyActivitiesGroups**: ``"activities-groups-verify"``
+
+#### Defined in
+
+permissions.ts:1302
+
+___
+
+### PermissionVerifyActivitiesStatuses
+
+• `Const` **PermissionVerifyActivitiesStatuses**: ``"activities-statuses-verify"``
+
+#### Defined in
+
+permissions.ts:1290
+
+___
+
+### PermissionVerifyActivitiesTags
+
+• `Const` **PermissionVerifyActivitiesTags**: ``"activities-tags-verify"``
+
+#### Defined in
+
+permissions.ts:1278
+
+___
+
+### PermissionVerifyAnnouncements
+
+• `Const` **PermissionVerifyAnnouncements**: ``"announcements-verify"``
+
+#### Defined in
+
+permissions.ts:1036
+
+___
+
+### PermissionVerifyAttendanceAmendments
+
+• `Const` **PermissionVerifyAttendanceAmendments**: ``"attendances-amendments-verify"``
+
+#### Defined in
+
+permissions.ts:1179
+
+___
+
+### PermissionVerifyAttendances
+
+• `Const` **PermissionVerifyAttendances**: ``"attendances-verify"``
+
+#### Defined in
+
+permissions.ts:1140
+
+___
+
+### PermissionVerifyBankAccounts
+
+• `Const` **PermissionVerifyBankAccounts**: ``"bankaccounts-verify"``
+
+#### Defined in
+
+permissions.ts:976
+
+___
+
+### PermissionVerifyClients
+
+• `Const` **PermissionVerifyClients**: ``"clients-verify"``
+
+#### Defined in
+
+permissions.ts:41
+
+___
+
+### PermissionVerifyContractorsPayments
+
+• `Const` **PermissionVerifyContractorsPayments**: ``"contractors-payments-verify"``
+
+#### Defined in
+
+permissions.ts:697
+
+___
+
+### PermissionVerifyCurrencies
+
+• `Const` **PermissionVerifyCurrencies**: ``"currencies-verify"``
+
+#### Defined in
+
+permissions.ts:388
+
+___
+
+### PermissionVerifyGoal
+
+• `Const` **PermissionVerifyGoal**: ``"goals-verify"``
+
+#### Defined in
+
+permissions.ts:1263
+
+___
+
+### PermissionVerifyHolidays
+
+• `Const` **PermissionVerifyHolidays**: ``"holidays-verify"``
+
+#### Defined in
+
+permissions.ts:1075
+
+___
+
+### PermissionVerifyLeaveTypes
+
+• `Const` **PermissionVerifyLeaveTypes**: ``"leaves-types-verify"``
+
+#### Defined in
+
+permissions.ts:1088
+
+___
+
+### PermissionVerifyLeavesAdjustments
+
+• `Const` **PermissionVerifyLeavesAdjustments**: ``"leaves-adjustments-verify"``
+
+#### Defined in
+
+permissions.ts:1101
+
+___
+
+### PermissionVerifyLeavesRequests
+
+• `Const` **PermissionVerifyLeavesRequests**: ``"leaves-requests-verify"``
+
+#### Defined in
+
+permissions.ts:1114
+
+___
+
+### PermissionVerifyLedgers
+
+• `Const` **PermissionVerifyLedgers**: ``"ledgers-verify"``
+
+#### Defined in
+
+permissions.ts:1024
+
+___
+
+### PermissionVerifyLocations
+
+• `Const` **PermissionVerifyLocations**: ``"locations-verify"``
+
+#### Defined in
+
+permissions.ts:964
+
+___
+
+### PermissionVerifyOnDuties
+
+• `Const` **PermissionVerifyOnDuties**: ``"onduties-verify"``
+
+#### Defined in
+
+permissions.ts:1166
+
+___
+
+### PermissionVerifyOvertime
+
+• `Const` **PermissionVerifyOvertime**: ``"overtimes-verify"``
+
+#### Defined in
+
+permissions.ts:1127
+
+___
+
+### PermissionVerifyPayrollParameters
+
+• `Const` **PermissionVerifyPayrollParameters**: ``"payroll-params-verify"``
+
+#### Defined in
+
+permissions.ts:925
+
+___
+
+### PermissionVerifyPurchaseEnquiry
+
+• `Const` **PermissionVerifyPurchaseEnquiry**: ``"purchases-enquiries-verify"``
+
+#### Defined in
+
+permissions.ts:723
+
+___
+
+### PermissionVerifyPurchasePayment
+
+• `Const` **PermissionVerifyPurchasePayment**: ``"purchases-payments-verify"``
+
+#### Defined in
+
+permissions.ts:611
+
+___
+
+### PermissionVerifyQCHubs
+
+• `Const` **PermissionVerifyQCHubs**: ``"qchubs-verify"``
+
+#### Defined in
+
+permissions.ts:1000
+
+___
+
+### PermissionVerifyQCParameters
+
+• `Const` **PermissionVerifyQCParameters**: ``"qc-params-verify"``
+
+#### Defined in
+
+permissions.ts:858
+
+___
+
+### PermissionVerifyQuotationRequest
+
+• `Const` **PermissionVerifyQuotationRequest**: ``"quotations-requests-verify"``
+
+#### Defined in
+
+permissions.ts:754
+
+___
+
+### PermissionVerifyQuotationResponse
+
+• `Const` **PermissionVerifyQuotationResponse**: ``"quotations-responses-verify"``
+
+#### Defined in
+
+permissions.ts:769
+
+___
+
+### PermissionVerifySaleReceipt
+
+• `Const` **PermissionVerifySaleReceipt**: ``"sales-receipts-verify"``
+
+#### Defined in
+
+permissions.ts:624
+
+___
+
+### PermissionVerifyShiftGroups
+
+• `Const` **PermissionVerifyShiftGroups**: ``"shift-groups-verify"``
+
+#### Defined in
+
+permissions.ts:1062
+
+___
+
+### PermissionVerifyShifts
+
+• `Const` **PermissionVerifyShifts**: ``"shifts-verify"``
+
+#### Defined in
+
+permissions.ts:1049
+
+___
+
+### PermissionVerifySkillParameters
+
+• `Const` **PermissionVerifySkillParameters**: ``"skills-params-verify"``
+
+#### Defined in
+
+permissions.ts:1235
+
+___
+
+### PermissionVerifyStorages
+
+• `Const` **PermissionVerifyStorages**: ``"storages-verify"``
+
+#### Defined in
+
+permissions.ts:1012
+
+___
+
+### PermissionVerifyStores
+
+• `Const` **PermissionVerifyStores**: ``"stores-verify"``
+
+#### Defined in
+
+permissions.ts:988
+
+___
+
+### PermissionVerifySundries
+
+• `Const` **PermissionVerifySundries**: ``"sundries-verify"``
+
+#### Defined in
+
+permissions.ts:710
+
+___
+
+### PermissionVerifyTaxGroups
+
+• `Const` **PermissionVerifyTaxGroups**: ``"tax-groups-verify"``
+
+#### Defined in
+
+permissions.ts:913
+
+___
+
+### PermissionVerifyTaxParameters
+
+• `Const` **PermissionVerifyTaxParameters**: ``"tax-params-verify"``
+
+#### Defined in
+
+permissions.ts:901
+
+___
+
+### PermissionVerifyUnitsOfMaterials
+
+• `Const` **PermissionVerifyUnitsOfMaterials**: ``"units-of-materials-verify"``
+
+#### Defined in
+
+permissions.ts:400
+
+___
+
+### PermissionVerifyVendors
+
+• `Const` **PermissionVerifyVendors**: ``"vendors-verify"``
+
+#### Defined in
+
+permissions.ts:65
+
+___
+
+### PermissionVerifyVisitations
+
+• `Const` **PermissionVerifyVisitations**: ``"visitations-verify"``
+
+#### Defined in
+
+permissions.ts:1222
+
+___
+
+### PermissionViewAssociate
+
+• `Const` **PermissionViewAssociate**: ``"associates-view"``
+
+#### Defined in
+
+permissions.ts:52
+
+___
+
+### PermissionViewClientAccount
+
+• `Const` **PermissionViewClientAccount**: ``"client-accounts-view"``
+
+#### Defined in
+
+permissions.ts:77
+
+___
+
+### PermissionViewContractor
+
+• `Const` **PermissionViewContractor**: ``"contractors-view"``
+
+#### Defined in
+
+permissions.ts:58
+
+___
+
+### PermissionViewFormFields
+
+• `Const` **PermissionViewFormFields**: ``"forms-fields-view"``
+
+#### Defined in
+
+permissions.ts:34
+
+___
+
+### PermissionViewFormSections
+
+• `Const` **PermissionViewFormSections**: ``"forms-sections-view"``
+
+#### Defined in
+
+permissions.ts:29
+
+___
+
+### PermissionViewLabel
+
+• `Const` **PermissionViewLabel**: ``"labels-view"``
+
+#### Defined in
+
+permissions.ts:957
+
+___
+
+### PermissionViewVendorAccount
+
+• `Const` **PermissionViewVendorAccount**: ``"vendor-accounts-view"``
+
+#### Defined in
+
+permissions.ts:75
+
+___
+
+### PermissionWorkOrderApprove
+
+• `Const` **PermissionWorkOrderApprove**: ``"work-orders-approve"``
+
+#### Defined in
+
+permissions.ts:541
+
+___
+
+### PermissionWorkOrderComplete
+
+• `Const` **PermissionWorkOrderComplete**: ``"work-orders-mark-complete"``
+
+#### Defined in
+
+permissions.ts:545
+
+___
+
+### PermissionWorkOrderCompleted
+
+• `Const` **PermissionWorkOrderCompleted**: ``"work-orders-completed"``
+
+#### Defined in
+
+permissions.ts:543
+
+___
+
+### PermissionWorkOrderDiscard
+
+• `Const` **PermissionWorkOrderDiscard**: ``"work-orders-extra-discard"``
+
+#### Defined in
+
+permissions.ts:546
+
+___
+
+### PermissionWorkOrderDiscarded
+
+• `Const` **PermissionWorkOrderDiscarded**: ``"work-orders-discarded"``
+
+#### Defined in
+
+permissions.ts:539
+
+___
+
+### PermissionWorkOrderDrafts
+
+• `Const` **PermissionWorkOrderDrafts**: ``"work-orders-drafts"``
+
+#### Defined in
+
+permissions.ts:535
+
+___
+
+### PermissionWorkOrderHalt
+
+• `Const` **PermissionWorkOrderHalt**: ``"work-orders-extra-halt"``
+
+#### Defined in
+
+permissions.ts:544
+
+___
+
+### PermissionWorkOrderHalted
+
+• `Const` **PermissionWorkOrderHalted**: ``"work-orders-halted"``
+
+#### Defined in
+
+permissions.ts:538
+
+___
+
+### PermissionWorkOrderNew
+
+• `Const` **PermissionWorkOrderNew**: ``"work-orders-new"``
+
+#### Defined in
+
+permissions.ts:534
+
+___
+
+### PermissionWorkOrderRevise
+
+• `Const` **PermissionWorkOrderRevise**: ``"work-orders-revise"``
+
+#### Defined in
+
+permissions.ts:537
+
+___
+
+### PermissionWorkOrderStanding
+
+• `Const` **PermissionWorkOrderStanding**: ``"work-orders-standing"``
+
+#### Defined in
+
+permissions.ts:542
+
+___
+
+### PermissionWorkOrderVerify
+
+• `Const` **PermissionWorkOrderVerify**: ``"work-orders-verify"``
+
+#### Defined in
+
+permissions.ts:536
+
+___
+
+### PermissionWorkflowRuleApprove
+
+• `Const` **PermissionWorkflowRuleApprove**: ``"workflows-rules-approve"``
+
+#### Defined in
+
+permissions.ts:1398
+
+___
+
+### PermissionWorkflowRuleComplete
+
+• `Const` **PermissionWorkflowRuleComplete**: ``"workflows-rules-mark-complete"``
+
+#### Defined in
+
+permissions.ts:1402
+
+___
+
+### PermissionWorkflowRuleCompleted
+
+• `Const` **PermissionWorkflowRuleCompleted**: ``"workflows-rules-completed"``
+
+#### Defined in
+
+permissions.ts:1400
+
+___
+
+### PermissionWorkflowRuleDiscard
+
+• `Const` **PermissionWorkflowRuleDiscard**: ``"workflows-rules-extra-discard"``
+
+#### Defined in
+
+permissions.ts:1403
+
+___
+
+### PermissionWorkflowRuleDiscarded
+
+• `Const` **PermissionWorkflowRuleDiscarded**: ``"workflows-rules-discarded"``
+
+#### Defined in
+
+permissions.ts:1396
+
+___
+
+### PermissionWorkflowRuleDrafts
+
+• `Const` **PermissionWorkflowRuleDrafts**: ``"workflows-rules-drafts"``
+
+#### Defined in
+
+permissions.ts:1392
+
+___
+
+### PermissionWorkflowRuleHalt
+
+• `Const` **PermissionWorkflowRuleHalt**: ``"workflows-rules-extra-halt"``
+
+#### Defined in
+
+permissions.ts:1401
+
+___
+
+### PermissionWorkflowRuleHalted
+
+• `Const` **PermissionWorkflowRuleHalted**: ``"workflows-rules-halted"``
+
+#### Defined in
+
+permissions.ts:1395
+
+___
+
+### PermissionWorkflowRuleNew
+
+• `Const` **PermissionWorkflowRuleNew**: ``"workflows-rules-new"``
+
+#### Defined in
+
+permissions.ts:1391
+
+___
+
+### PermissionWorkflowRuleRevise
+
+• `Const` **PermissionWorkflowRuleRevise**: ``"workflows-rules-revise"``
+
+#### Defined in
+
+permissions.ts:1394
+
+___
+
+### PermissionWorkflowRuleStanding
+
+• `Const` **PermissionWorkflowRuleStanding**: ``"workflows-rules-standing"``
+
+#### Defined in
+
+permissions.ts:1399
+
+___
+
+### PermissionWorkflowRuleVerify
+
+• `Const` **PermissionWorkflowRuleVerify**: ``"workflows-rules-verify"``
+
+#### Defined in
+
+permissions.ts:1393
+
+___
+
 ### ProductionIndentsService
 
 • `Const` **ProductionIndentsService**: `Object`
@@ -22062,7 +36351,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:354
+index.ts:355
 
 ___
 
@@ -22106,7 +36395,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:385
+index.ts:386
 
 ___
 
@@ -22150,7 +36439,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:447
+index.ts:448
 
 ___
 
@@ -22194,7 +36483,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:416
+index.ts:417
 
 ___
 
@@ -22238,7 +36527,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:478
+index.ts:479
 
 ___
 
@@ -22282,7 +36571,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:509
+index.ts:510
 
 ___
 
@@ -22326,7 +36615,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:540
+index.ts:541
 
 ___
 
@@ -22370,7 +36659,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:571
+index.ts:572
 
 ___
 
@@ -22414,7 +36703,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:602
+index.ts:603
 
 ___
 
@@ -22458,7 +36747,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:664
+index.ts:665
 
 ___
 
@@ -22502,7 +36791,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:633
+index.ts:634
 
 ___
 
@@ -22546,7 +36835,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:695
+index.ts:696
 
 ___
 
@@ -22590,7 +36879,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:726
+index.ts:727
 
 ___
 
@@ -22634,7 +36923,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:757
+index.ts:758
 
 ___
 
@@ -22678,7 +36967,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:788
+index.ts:789
 
 ___
 
@@ -22722,7 +37011,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:819
+index.ts:820
 
 ___
 
@@ -22766,7 +37055,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:850
+index.ts:851
 
 ___
 
@@ -22810,7 +37099,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:881
+index.ts:882
 
 ___
 
@@ -22854,7 +37143,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:912
+index.ts:913
 
 ___
 
@@ -22898,7 +37187,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:943
+index.ts:944
 
 ___
 
@@ -22942,7 +37231,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:974
+index.ts:975
 
 ___
 
@@ -22986,7 +37275,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1005
+index.ts:1006
 
 ___
 
@@ -23030,7 +37319,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1036
+index.ts:1037
 
 ___
 
@@ -23074,7 +37363,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1067
+index.ts:1068
 
 ___
 
@@ -23118,7 +37407,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1098
+index.ts:1099
 
 ___
 
@@ -23162,7 +37451,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1129
+index.ts:1130
 
 ___
 
@@ -23206,7 +37495,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1160
+index.ts:1161
 
 ___
 
@@ -23250,7 +37539,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1222
+index.ts:1223
 
 ___
 
@@ -23294,7 +37583,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1191
+index.ts:1192
 
 ___
 
@@ -23338,7 +37627,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1253
+index.ts:1254
 
 ___
 
@@ -23382,7 +37671,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1284
+index.ts:1285
 
 ___
 
@@ -23426,7 +37715,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1315
+index.ts:1316
 
 ___
 
@@ -23470,7 +37759,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1346
+index.ts:1347
 
 ___
 
@@ -23514,7 +37803,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1377
+index.ts:1378
 
 ___
 
@@ -23558,7 +37847,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1408
+index.ts:1409
 
 ___
 
@@ -23602,7 +37891,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1439
+index.ts:1440
 
 ___
 
@@ -23646,7 +37935,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1470
+index.ts:1471
 
 ___
 
@@ -23690,7 +37979,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1501
+index.ts:1502
 
 ___
 
@@ -23734,7 +38023,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1594
+index.ts:1595
 
 ___
 
@@ -23778,7 +38067,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1563
+index.ts:1564
 
 ___
 
@@ -23822,7 +38111,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1532
+index.ts:1533
 
 ___
 
@@ -23866,7 +38155,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1625
+index.ts:1626
 
 ___
 
@@ -23910,7 +38199,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1656
+index.ts:1657
 
 ___
 
@@ -23954,7 +38243,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1687
+index.ts:1688
 
 ___
 
@@ -23998,7 +38287,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1718
+index.ts:1719
 
 ___
 
@@ -24042,7 +38331,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1749
+index.ts:1750
 
 ___
 
@@ -24086,7 +38375,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1780
+index.ts:1781
 
 ___
 
@@ -24130,7 +38419,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1811
+index.ts:1812
 
 ___
 
@@ -24174,7 +38463,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1842
+index.ts:1843
 
 ___
 
@@ -24218,7 +38507,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1873
+index.ts:1874
 
 ___
 
@@ -24262,7 +38551,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1904
+index.ts:1905
 
 ___
 
@@ -24306,7 +38595,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1935
+index.ts:1936
 
 ___
 
@@ -24350,7 +38639,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1966
+index.ts:1967
 
 ___
 
@@ -24394,7 +38683,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2059
+index.ts:2060
 
 ___
 
@@ -24438,7 +38727,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2028
+index.ts:2029
 
 ___
 
@@ -24482,7 +38771,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:1997
+index.ts:1998
 
 ___
 
@@ -24526,7 +38815,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2090
+index.ts:2091
 
 ___
 
@@ -24570,7 +38859,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2121
+index.ts:2122
 
 ___
 
@@ -24614,7 +38903,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2152
+index.ts:2153
 
 ___
 
@@ -24658,7 +38947,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2183
+index.ts:2184
 
 ___
 
@@ -24702,7 +38991,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2214
+index.ts:2215
 
 ___
 
@@ -24746,7 +39035,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2245
+index.ts:2246
 
 ___
 
@@ -24790,7 +39079,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2276
+index.ts:2277
 
 ___
 
@@ -24834,7 +39123,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2307
+index.ts:2308
 
 ___
 
@@ -24878,7 +39167,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2338
+index.ts:2339
 
 ___
 
@@ -24922,7 +39211,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2369
+index.ts:2370
 
 ___
 
@@ -24966,7 +39255,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2400
+index.ts:2401
 
 ___
 
@@ -25010,7 +39299,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2431
+index.ts:2432
 
 ___
 
@@ -25054,7 +39343,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2462
+index.ts:2463
 
 ___
 
@@ -25098,7 +39387,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2493
+index.ts:2494
 
 ___
 
@@ -25142,7 +39431,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2524
+index.ts:2525
 
 ___
 
@@ -25186,7 +39475,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2555
+index.ts:2556
 
 ___
 
@@ -25230,7 +39519,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2586
+index.ts:2587
 
 ___
 
@@ -25274,7 +39563,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2617
+index.ts:2618
 
 ___
 
@@ -25318,7 +39607,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2648
+index.ts:2649
 
 ___
 
@@ -25362,7 +39651,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2679
+index.ts:2680
 
 ___
 
@@ -25406,7 +39695,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2710
+index.ts:2711
 
 ___
 
@@ -25450,7 +39739,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2741
+index.ts:2742
 
 ___
 
@@ -25494,7 +39783,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2772
+index.ts:2773
 
 ___
 
@@ -25538,7 +39827,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2803
+index.ts:2804
 
 ___
 
@@ -25582,7 +39871,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2834
+index.ts:2835
 
 ___
 
@@ -25626,7 +39915,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2865
+index.ts:2866
 
 ___
 
@@ -25670,7 +39959,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2896
+index.ts:2897
 
 ___
 
@@ -25714,7 +40003,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2927
+index.ts:2928
 
 ___
 
@@ -25758,7 +40047,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2989
+index.ts:2990
 
 ___
 
@@ -25802,7 +40091,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:2958
+index.ts:2959
 
 ___
 
@@ -25846,7 +40135,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3020
+index.ts:3021
 
 ___
 
@@ -25890,7 +40179,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3051
+index.ts:3052
 
 ___
 
@@ -25934,7 +40223,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3082
+index.ts:3083
 
 ___
 
@@ -25978,7 +40267,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3113
+index.ts:3114
 
 ___
 
@@ -26022,7 +40311,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3144
+index.ts:3145
 
 ___
 
@@ -26066,7 +40355,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3175
+index.ts:3176
 
 ___
 
@@ -26110,7 +40399,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3206
+index.ts:3207
 
 ___
 
@@ -26154,7 +40443,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3237
+index.ts:3238
 
 ___
 
@@ -26198,7 +40487,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3268
+index.ts:3269
 
 ___
 
@@ -26242,7 +40531,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3299
+index.ts:3300
 
 ___
 
@@ -26286,7 +40575,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3330
+index.ts:3331
 
 ___
 
@@ -26330,7 +40619,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3361
+index.ts:3362
 
 ___
 
@@ -26374,7 +40663,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3392
+index.ts:3393
 
 ___
 
@@ -26418,7 +40707,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3423
+index.ts:3424
 
 ___
 
@@ -26462,7 +40751,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3454
+index.ts:3455
 
 ___
 
@@ -26506,7 +40795,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3485
+index.ts:3486
 
 ___
 
@@ -26550,7 +40839,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3516
+index.ts:3517
 
 ___
 
@@ -26594,7 +40883,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3547
+index.ts:3548
 
 ___
 
@@ -26638,7 +40927,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3578
+index.ts:3579
 
 ___
 
@@ -26682,4 +40971,4 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-index.ts:3609
+index.ts:3610
