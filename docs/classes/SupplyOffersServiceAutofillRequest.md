@@ -22,8 +22,8 @@ from message Scailo.SupplyOffersServiceAutofillRequest
 
 ### Properties
 
-- [id](SupplyOffersServiceAutofillRequest.md#id)
 - [userComment](SupplyOffersServiceAutofillRequest.md#usercomment)
+- [uuid](SupplyOffersServiceAutofillRequest.md#uuid)
 - [fields](SupplyOffersServiceAutofillRequest.md#fields)
 - [runtime](SupplyOffersServiceAutofillRequest.md#runtime)
 - [typeName](SupplyOffersServiceAutofillRequest.md#typename)
@@ -71,22 +71,6 @@ src/supply_offers.scailo_pb.ts:645
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/supply_offers.scailo_pb.ts:643
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -100,6 +84,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/supply_offers.scailo_pb.ts:636
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/supply_offers.scailo_pb.ts:643
 
 ___
 
