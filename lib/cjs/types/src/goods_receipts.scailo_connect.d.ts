@@ -476,13 +476,13 @@ export declare const GoodsReceiptsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View the associated vendor invoice ID that is denoted by the identifier in the response for the goods receipt that is denoted by the identifier in the request
+         * View the associated vendor invoice information that is denoted by the identifier in the response for the goods receipt that is denoted by the identifier UUID in the request
          *
-         * @generated from rpc Scailo.GoodsReceiptsService.ViewAssociatedVendorInvoiceID
+         * @generated from rpc Scailo.GoodsReceiptsService.ViewAssociatedVendorInvoiceInfo
          */
-        readonly viewAssociatedVendorInvoiceID: {
-            readonly name: "ViewAssociatedVendorInvoiceID";
-            readonly I: typeof Identifier;
+        readonly viewAssociatedVendorInvoiceInfo: {
+            readonly name: "ViewAssociatedVendorInvoiceInfo";
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -493,7 +493,7 @@ export declare const GoodsReceiptsService: {
          */
         readonly isBilled: {
             readonly name: "IsBilled";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };

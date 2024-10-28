@@ -346,9 +346,9 @@ export declare class GoodsReceiptsServiceAutofillRequest extends Message<GoodsRe
     /**
      * The ID of the record that needs to be updated
      *
-     * @generated from field: uint64 id = 2;
+     * @generated from field: string uuid = 2;
      */
-    id: bigint;
+    uuid: string;
     constructor(data?: PartialMessage<GoodsReceiptsServiceAutofillRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.GoodsReceiptsServiceAutofillRequest";

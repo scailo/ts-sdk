@@ -22,8 +22,8 @@ from message Scailo.GoodsReceiptsServiceAutofillRequest
 
 ### Properties
 
-- [id](GoodsReceiptsServiceAutofillRequest.md#id)
 - [userComment](GoodsReceiptsServiceAutofillRequest.md#usercomment)
+- [uuid](GoodsReceiptsServiceAutofillRequest.md#uuid)
 - [fields](GoodsReceiptsServiceAutofillRequest.md#fields)
 - [runtime](GoodsReceiptsServiceAutofillRequest.md#runtime)
 - [typeName](GoodsReceiptsServiceAutofillRequest.md#typename)
@@ -71,22 +71,6 @@ src/goods_receipts.scailo_pb.ts:496
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/goods_receipts.scailo_pb.ts:494
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -100,6 +84,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/goods_receipts.scailo_pb.ts:487
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The ID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/goods_receipts.scailo_pb.ts:494
 
 ___
 
