@@ -1752,6 +1752,34 @@ export declare class IdentifierWithFile extends Message<IdentifierWithFile> {
 }
 /**
  *
+ * Describes the standard UUID identifier with a file. Useful for uploading CSV files to records identified by the identifier UUID
+ *
+ * @generated from message Scailo.IdentifierUUIDWithFile
+ */
+export declare class IdentifierUUIDWithFile extends Message<IdentifierUUIDWithFile> {
+    /**
+     * UUID of the resource
+     *
+     * @generated from field: string uuid = 1;
+     */
+    uuid: string;
+    /**
+     * The content of the file
+     *
+     * @generated from field: bytes file_content = 10;
+     */
+    fileContent: Uint8Array;
+    constructor(data?: PartialMessage<IdentifierUUIDWithFile>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.IdentifierUUIDWithFile";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierUUIDWithFile;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUIDWithFile;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUIDWithFile;
+    static equals(a: IdentifierUUIDWithFile | PlainMessage<IdentifierUUIDWithFile> | undefined, b: IdentifierUUIDWithFile | PlainMessage<IdentifierUUIDWithFile> | undefined): boolean;
+}
+/**
+ *
  * Describes the UUID identifier
  *
  * @generated from message Scailo.IdentifierUUID

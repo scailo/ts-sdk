@@ -487,7 +487,7 @@ export class GoodsReceiptsServiceAutofillRequest extends Message<GoodsReceiptsSe
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   * The UUID of the record that needs to be updated
    *
    * @generated from field: string uuid = 2;
    */

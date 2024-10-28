@@ -1,88 +1,105 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / AmendmentLogsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierUUIDWithFile
 
-# Class: AmendmentLogsList
+# Class: IdentifierUUIDWithFile
 
-Describes the list of amendment logs
+Describes the standard UUID identifier with a file. Useful for uploading CSV files to records identified by the identifier UUID
 
 **`Generated`**
 
-from message Scailo.AmendmentLogsList
+from message Scailo.IdentifierUUIDWithFile
 
 ## Hierarchy
 
-- `Message`\<[`AmendmentLogsList`](AmendmentLogsList.md)\>
+- `Message`\<[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)\>
 
-  ↳ **`AmendmentLogsList`**
+  ↳ **`IdentifierUUIDWithFile`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](AmendmentLogsList.md#constructor)
+- [constructor](IdentifierUUIDWithFile.md#constructor)
 
 ### Properties
 
-- [list](AmendmentLogsList.md#list)
-- [fields](AmendmentLogsList.md#fields)
-- [runtime](AmendmentLogsList.md#runtime)
-- [typeName](AmendmentLogsList.md#typename)
+- [fileContent](IdentifierUUIDWithFile.md#filecontent)
+- [uuid](IdentifierUUIDWithFile.md#uuid)
+- [fields](IdentifierUUIDWithFile.md#fields)
+- [runtime](IdentifierUUIDWithFile.md#runtime)
+- [typeName](IdentifierUUIDWithFile.md#typename)
 
 ### Methods
 
-- [clone](AmendmentLogsList.md#clone)
-- [equals](AmendmentLogsList.md#equals)
-- [fromBinary](AmendmentLogsList.md#frombinary)
-- [fromJson](AmendmentLogsList.md#fromjson)
-- [fromJsonString](AmendmentLogsList.md#fromjsonstring)
-- [getType](AmendmentLogsList.md#gettype)
-- [toBinary](AmendmentLogsList.md#tobinary)
-- [toJSON](AmendmentLogsList.md#tojson)
-- [toJson](AmendmentLogsList.md#tojson-1)
-- [toJsonString](AmendmentLogsList.md#tojsonstring)
-- [equals](AmendmentLogsList.md#equals-1)
-- [fromBinary](AmendmentLogsList.md#frombinary-1)
-- [fromJson](AmendmentLogsList.md#fromjson-1)
-- [fromJsonString](AmendmentLogsList.md#fromjsonstring-1)
+- [clone](IdentifierUUIDWithFile.md#clone)
+- [equals](IdentifierUUIDWithFile.md#equals)
+- [fromBinary](IdentifierUUIDWithFile.md#frombinary)
+- [fromJson](IdentifierUUIDWithFile.md#fromjson)
+- [fromJsonString](IdentifierUUIDWithFile.md#fromjsonstring)
+- [getType](IdentifierUUIDWithFile.md#gettype)
+- [toBinary](IdentifierUUIDWithFile.md#tobinary)
+- [toJSON](IdentifierUUIDWithFile.md#tojson)
+- [toJson](IdentifierUUIDWithFile.md#tojson-1)
+- [toJsonString](IdentifierUUIDWithFile.md#tojsonstring)
+- [equals](IdentifierUUIDWithFile.md#equals-1)
+- [fromBinary](IdentifierUUIDWithFile.md#frombinary-1)
+- [fromJson](IdentifierUUIDWithFile.md#fromjson-1)
+- [fromJsonString](IdentifierUUIDWithFile.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new AmendmentLogsList**(`data?`): [`AmendmentLogsList`](AmendmentLogsList.md)
+• **new IdentifierUUIDWithFile**(`data?`): [`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`AmendmentLogsList`](AmendmentLogsList.md)\> |
+| `data?` | `PartialMessage`\<[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)\> |
 
 #### Returns
 
-[`AmendmentLogsList`](AmendmentLogsList.md)
+[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Overrides
 
-Message\&lt;AmendmentLogsList\&gt;.constructor
+Message\&lt;IdentifierUUIDWithFile\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3836
+src/base.scailo_pb.ts:2773
 
 ## Properties
 
-### list
+### fileContent
 
-• **list**: [`AmendmentLog`](AmendmentLog.md)[] = `[]`
+• **fileContent**: `Uint8Array`
 
-List of amendment logs
+The content of the file
 
 **`Generated`**
 
-from field: repeated Scailo.AmendmentLog list = 1;
+from field: bytes file_content = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3834
+src/base.scailo_pb.ts:2771
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+UUID of the resource
+
+**`Generated`**
+
+from field: string uuid = 1;
+
+#### Defined in
+
+src/base.scailo_pb.ts:2764
 
 ___
 
@@ -92,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3843
+src/base.scailo_pb.ts:2780
 
 ___
 
@@ -102,29 +119,29 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3841
+src/base.scailo_pb.ts:2778
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.AmendmentLogsList"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.IdentifierUUIDWithFile"``
 
 #### Defined in
 
-src/base.scailo_pb.ts:3842
+src/base.scailo_pb.ts:2779
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`AmendmentLogsList`](AmendmentLogsList.md)
+▸ **clone**(): [`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`AmendmentLogsList`](AmendmentLogsList.md)
+[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Inherited from
 
@@ -147,7 +164,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`AmendmentLogsList`](AmendmentLogsList.md) \| `PlainMessage`\<[`AmendmentLogsList`](AmendmentLogsList.md)\> |
+| `other` | `undefined` \| ``null`` \| [`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md) \| `PlainMessage`\<[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)\> |
 
 #### Returns
 
@@ -252,7 +269,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`AmendmentLogsList`](AmendmentLogsList.md)\>
+▸ **getType**(): `MessageType`\<[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -260,7 +277,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`AmendmentLogsList`](AmendmentLogsList.md)\>
+`MessageType`\<[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)\>
 
 #### Inherited from
 
@@ -391,8 +408,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`AmendmentLogsList`](AmendmentLogsList.md) \| `PlainMessage`\<[`AmendmentLogsList`](AmendmentLogsList.md)\> |
-| `b` | `undefined` \| [`AmendmentLogsList`](AmendmentLogsList.md) \| `PlainMessage`\<[`AmendmentLogsList`](AmendmentLogsList.md)\> |
+| `a` | `undefined` \| [`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md) \| `PlainMessage`\<[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)\> |
+| `b` | `undefined` \| [`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md) \| `PlainMessage`\<[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)\> |
 
 #### Returns
 
@@ -400,13 +417,13 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3859
+src/base.scailo_pb.ts:2797
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`AmendmentLogsList`](AmendmentLogsList.md)
+▸ **fromBinary**(`bytes`, `options?`): [`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Parameters
 
@@ -417,17 +434,17 @@ ___
 
 #### Returns
 
-[`AmendmentLogsList`](AmendmentLogsList.md)
+[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3847
+src/base.scailo_pb.ts:2785
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`AmendmentLogsList`](AmendmentLogsList.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Parameters
 
@@ -438,17 +455,17 @@ ___
 
 #### Returns
 
-[`AmendmentLogsList`](AmendmentLogsList.md)
+[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3851
+src/base.scailo_pb.ts:2789
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`AmendmentLogsList`](AmendmentLogsList.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Parameters
 
@@ -459,8 +476,8 @@ ___
 
 #### Returns
 
-[`AmendmentLogsList`](AmendmentLogsList.md)
+[`IdentifierUUIDWithFile`](IdentifierUUIDWithFile.md)
 
 #### Defined in
 
-src/base.scailo_pb.ts:3855
+src/base.scailo_pb.ts:2793

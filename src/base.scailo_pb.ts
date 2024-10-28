@@ -2751,6 +2751,56 @@ export class IdentifierWithFile extends Message<IdentifierWithFile> {
 
 /**
  *
+ * Describes the standard UUID identifier with a file. Useful for uploading CSV files to records identified by the identifier UUID
+ *
+ * @generated from message Scailo.IdentifierUUIDWithFile
+ */
+export class IdentifierUUIDWithFile extends Message<IdentifierUUIDWithFile> {
+  /**
+   * UUID of the resource
+   *
+   * @generated from field: string uuid = 1;
+   */
+  uuid = "";
+
+  /**
+   * The content of the file
+   *
+   * @generated from field: bytes file_content = 10;
+   */
+  fileContent = new Uint8Array(0);
+
+  constructor(data?: PartialMessage<IdentifierUUIDWithFile>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.IdentifierUUIDWithFile";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "file_content", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierUUIDWithFile {
+    return new IdentifierUUIDWithFile().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUIDWithFile {
+    return new IdentifierUUIDWithFile().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUIDWithFile {
+    return new IdentifierUUIDWithFile().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: IdentifierUUIDWithFile | PlainMessage<IdentifierUUIDWithFile> | undefined, b: IdentifierUUIDWithFile | PlainMessage<IdentifierUUIDWithFile> | undefined): boolean {
+    return proto3.util.equals(IdentifierUUIDWithFile, a, b);
+  }
+}
+
+/**
+ *
  * Describes the UUID identifier
  *
  * @generated from message Scailo.IdentifierUUID

@@ -91,7 +91,7 @@ ___
 
 • **uuid**: `string` = `""`
 
-The ID of the record that needs to be updated
+The UUID of the record that needs to be updated
 
 **`Generated`**
 

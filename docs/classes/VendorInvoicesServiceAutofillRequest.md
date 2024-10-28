@@ -22,9 +22,9 @@ from message Scailo.VendorInvoicesServiceAutofillRequest
 
 ### Properties
 
-- [id](VendorInvoicesServiceAutofillRequest.md#id)
 - [includeServices](VendorInvoicesServiceAutofillRequest.md#includeservices)
 - [userComment](VendorInvoicesServiceAutofillRequest.md#usercomment)
+- [uuid](VendorInvoicesServiceAutofillRequest.md#uuid)
 - [fields](VendorInvoicesServiceAutofillRequest.md#fields)
 - [runtime](VendorInvoicesServiceAutofillRequest.md#runtime)
 - [typeName](VendorInvoicesServiceAutofillRequest.md#typename)
@@ -72,22 +72,6 @@ src/vendor_invoices.scailo_pb.ts:572
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/vendor_invoices.scailo_pb.ts:563
-
-___
-
 ### includeServices
 
 • **includeServices**: `boolean` = `false`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/vendor_invoices.scailo_pb.ts:556
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/vendor_invoices.scailo_pb.ts:563
 
 ___
 
