@@ -105,6 +105,13 @@ export enum VENDOR_STREAM_REF_FROM {
    * @generated from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_PAYMENT = 30;
    */
   VENDOR_STREAM_REF_FROM_PURCHASE_PAYMENT = 30,
+
+  /**
+   * Denotes that the reference is from a supply offer
+   *
+   * @generated from enum value: VENDOR_STREAM_REF_FROM_SUPPLY_OFFER = 40;
+   */
+  VENDOR_STREAM_REF_FROM_SUPPLY_OFFER = 40,
 }
 // Retrieve enum metadata with: proto3.getEnumType(VENDOR_STREAM_REF_FROM)
 proto3.util.setEnumType(VENDOR_STREAM_REF_FROM, "Scailo.VENDOR_STREAM_REF_FROM", [
@@ -115,6 +122,7 @@ proto3.util.setEnumType(VENDOR_STREAM_REF_FROM, "Scailo.VENDOR_STREAM_REF_FROM",
   { no: 20, name: "VENDOR_STREAM_REF_FROM_PURCHASE_RETURN" },
   { no: 21, name: "VENDOR_STREAM_REF_FROM_DEBIT_NOTE" },
   { no: 30, name: "VENDOR_STREAM_REF_FROM_PURCHASE_PAYMENT" },
+  { no: 40, name: "VENDOR_STREAM_REF_FROM_SUPPLY_OFFER" },
 ]);
 
 /**

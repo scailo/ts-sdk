@@ -30,7 +30,7 @@ from enum value: VENDOR_STREAM_MESSAGE_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:183
+src/vendor_streams.scailo_pb.ts:191
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: VENDOR_STREAM_MESSAGE_TYPE_SYSTEM = 2;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:197
+src/vendor_streams.scailo_pb.ts:205
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: VENDOR_STREAM_MESSAGE_TYPE_USER = 1;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:190
+src/vendor_streams.scailo_pb.ts:198

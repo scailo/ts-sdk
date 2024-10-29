@@ -30,7 +30,7 @@ from enum value: VENDOR_STREAM_MESSAGE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:225
+src/vendor_streams.scailo_pb.ts:233
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: VENDOR_STREAM_MESSAGE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:218
+src/vendor_streams.scailo_pb.ts:226
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: VENDOR_STREAM_MESSAGE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:232
+src/vendor_streams.scailo_pb.ts:240

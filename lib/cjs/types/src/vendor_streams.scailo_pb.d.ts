@@ -81,7 +81,13 @@ export declare enum VENDOR_STREAM_REF_FROM {
      *
      * @generated from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_PAYMENT = 30;
      */
-    VENDOR_STREAM_REF_FROM_PURCHASE_PAYMENT = 30
+    VENDOR_STREAM_REF_FROM_PURCHASE_PAYMENT = 30,
+    /**
+     * Denotes that the reference is from a supply offer
+     *
+     * @generated from enum value: VENDOR_STREAM_REF_FROM_SUPPLY_OFFER = 40;
+     */
+    VENDOR_STREAM_REF_FROM_SUPPLY_OFFER = 40
 }
 /**
  *

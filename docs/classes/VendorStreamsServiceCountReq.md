@@ -81,7 +81,7 @@ Message\&lt;VendorStreamsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1206
+src/vendor_streams.scailo_pb.ts:1214
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1152
+src/vendor_streams.scailo_pb.ts:1160
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1145
+src/vendor_streams.scailo_pb.ts:1153
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1110
+src/vendor_streams.scailo_pb.ts:1118
 
 ___
 
@@ -145,7 +145,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1103
+src/vendor_streams.scailo_pb.ts:1111
 
 ___
 
@@ -161,7 +161,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1131
+src/vendor_streams.scailo_pb.ts:1139
 
 ___
 
@@ -177,7 +177,7 @@ from field: string internal_ref = 18;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1159
+src/vendor_streams.scailo_pb.ts:1167
 
 ___
 
@@ -193,7 +193,7 @@ from field: uint64 internal_subscriber_user_id = 60;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1197
+src/vendor_streams.scailo_pb.ts:1205
 
 ___
 
@@ -209,7 +209,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1096
+src/vendor_streams.scailo_pb.ts:1104
 
 ___
 
@@ -225,7 +225,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1124
+src/vendor_streams.scailo_pb.ts:1132
 
 ___
 
@@ -241,7 +241,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1117
+src/vendor_streams.scailo_pb.ts:1125
 
 ___
 
@@ -257,7 +257,7 @@ from field: Scailo.VENDOR_STREAM_REF_FROM ref_from = 41;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1181
+src/vendor_streams.scailo_pb.ts:1189
 
 ___
 
@@ -275,7 +275,7 @@ from field: uint64 ref_id = 42;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1190
+src/vendor_streams.scailo_pb.ts:1198
 
 ___
 
@@ -291,7 +291,7 @@ from field: Scailo.VENDOR_STREAM_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1138
+src/vendor_streams.scailo_pb.ts:1146
 
 ___
 
@@ -307,7 +307,7 @@ from field: string title = 30;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1166
+src/vendor_streams.scailo_pb.ts:1174
 
 ___
 
@@ -324,7 +324,7 @@ from field: uint64 vendor_id = 40;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1174
+src/vendor_streams.scailo_pb.ts:1182
 
 ___
 
@@ -340,7 +340,7 @@ from field: uint64 vendor_subscriber_user_id = 61;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1204
+src/vendor_streams.scailo_pb.ts:1212
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1213
+src/vendor_streams.scailo_pb.ts:1221
 
 ___
 
@@ -360,7 +360,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1211
+src/vendor_streams.scailo_pb.ts:1219
 
 ___
 
@@ -370,7 +370,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1212
+src/vendor_streams.scailo_pb.ts:1220
 
 ## Methods
 
@@ -658,7 +658,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1244
+src/vendor_streams.scailo_pb.ts:1252
 
 ___
 
@@ -679,7 +679,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1232
+src/vendor_streams.scailo_pb.ts:1240
 
 ___
 
@@ -700,7 +700,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1236
+src/vendor_streams.scailo_pb.ts:1244
 
 ___
 
@@ -721,4 +721,4 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:1240
+src/vendor_streams.scailo_pb.ts:1248

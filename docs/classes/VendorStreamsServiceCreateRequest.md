@@ -74,7 +74,7 @@ Message\&lt;VendorStreamsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:425
+src/vendor_streams.scailo_pb.ts:433
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: bool assign_self_as_internal_subscriber = 80;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:416
+src/vendor_streams.scailo_pb.ts:424
 
 ___
 
@@ -106,7 +106,7 @@ from field: bool assign_self_as_vendor_subscriber = 81;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:423
+src/vendor_streams.scailo_pb.ts:431
 
 ___
 
@@ -122,7 +122,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:367
+src/vendor_streams.scailo_pb.ts:375
 
 ___
 
@@ -138,7 +138,7 @@ from field: Scailo.VENDOR_STREAM_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:402
+src/vendor_streams.scailo_pb.ts:410
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:409
+src/vendor_streams.scailo_pb.ts:417
 
 ___
 
@@ -170,7 +170,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:388
+src/vendor_streams.scailo_pb.ts:396
 
 ___
 
@@ -186,7 +186,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:374
+src/vendor_streams.scailo_pb.ts:382
 
 ___
 
@@ -202,7 +202,7 @@ from field: uint64 vault_folder_id = 7;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:381
+src/vendor_streams.scailo_pb.ts:389
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 vendor_id = 11;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:395
+src/vendor_streams.scailo_pb.ts:403
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:432
+src/vendor_streams.scailo_pb.ts:440
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:430
+src/vendor_streams.scailo_pb.ts:438
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:431
+src/vendor_streams.scailo_pb.ts:439
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:456
+src/vendor_streams.scailo_pb.ts:464
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:444
+src/vendor_streams.scailo_pb.ts:452
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:448
+src/vendor_streams.scailo_pb.ts:456
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:452
+src/vendor_streams.scailo_pb.ts:460

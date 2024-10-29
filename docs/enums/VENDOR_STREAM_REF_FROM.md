@@ -18,6 +18,7 @@ from enum Scailo.VENDOR_STREAM_REF_FROM
 - [VENDOR\_STREAM\_REF\_FROM\_PURCHASE\_ORDER](VENDOR_STREAM_REF_FROM.md#vendor_stream_ref_from_purchase_order)
 - [VENDOR\_STREAM\_REF\_FROM\_PURCHASE\_PAYMENT](VENDOR_STREAM_REF_FROM.md#vendor_stream_ref_from_purchase_payment)
 - [VENDOR\_STREAM\_REF\_FROM\_PURCHASE\_RETURN](VENDOR_STREAM_REF_FROM.md#vendor_stream_ref_from_purchase_return)
+- [VENDOR\_STREAM\_REF\_FROM\_SUPPLY\_OFFER](VENDOR_STREAM_REF_FROM.md#vendor_stream_ref_from_supply_offer)
 - [VENDOR\_STREAM\_REF\_FROM\_VENDOR\_INVOICE](VENDOR_STREAM_REF_FROM.md#vendor_stream_ref_from_vendor_invoice)
 
 ## Enumeration Members
@@ -115,6 +116,22 @@ from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_RETURN = 20;
 #### Defined in
 
 src/vendor_streams.scailo_pb.ts:93
+
+___
+
+### VENDOR\_STREAM\_REF\_FROM\_SUPPLY\_OFFER
+
+• **VENDOR\_STREAM\_REF\_FROM\_SUPPLY\_OFFER** = ``40``
+
+Denotes that the reference is from a supply offer
+
+**`Generated`**
+
+from enum value: VENDOR_STREAM_REF_FROM_SUPPLY_OFFER = 40;
+
+#### Defined in
+
+src/vendor_streams.scailo_pb.ts:114
 
 ___
 
