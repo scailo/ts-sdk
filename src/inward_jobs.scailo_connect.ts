@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { InwardJob, InwardJobAncillaryParameters, InwardJobContact, InwardJobContactsList, InwardJobInwardItem, InwardJobInwardItemHistoryRequest, InwardJobInwardItemProspectiveInfoRequest, InwardJobInwardItemsSearchRequest, InwardJobOutwardItem, InwardJobOutwardItemHistoryRequest, InwardJobOutwardItemProspectiveInfoRequest, InwardJobOutwardItemsSearchRequest, InwardJobsInwardItemsList, InwardJobsList, InwardJobsOutwardItemsList, InwardJobsServiceAutofillRequest, InwardJobsServiceContactCreateRequest, InwardJobsServiceCountReq, InwardJobsServiceCreateRequest, InwardJobsServiceFilterReq, InwardJobsServiceInwardItemCreateRequest, InwardJobsServiceInwardItemUpdateRequest, InwardJobsServiceMultipleInwardItemsCreateRequest, InwardJobsServiceMultipleOutwardItemsCreateRequest, InwardJobsServiceOutwardItemCreateRequest, InwardJobsServiceOutwardItemUpdateRequest, InwardJobsServicePaginatedInwardItemsResponse, InwardJobsServicePaginatedOutwardItemsResponse, InwardJobsServicePaginationReq, InwardJobsServicePaginationResponse, InwardJobsServiceSearchAllReq, InwardJobsServiceUpdateRequest } from "./inward_jobs.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -57,7 +57,7 @@ export const InwardJobsService = {
      */
     sendForVerification: {
       name: "SendForVerification",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -68,7 +68,7 @@ export const InwardJobsService = {
      */
     verify: {
       name: "Verify",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -79,7 +79,7 @@ export const InwardJobsService = {
      */
     approve: {
       name: "Approve",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -90,7 +90,7 @@ export const InwardJobsService = {
      */
     sendForRevision: {
       name: "SendForRevision",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -112,7 +112,7 @@ export const InwardJobsService = {
      */
     halt: {
       name: "Halt",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -123,7 +123,7 @@ export const InwardJobsService = {
      */
     discard: {
       name: "Discard",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -134,7 +134,7 @@ export const InwardJobsService = {
      */
     restore: {
       name: "Restore",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -145,7 +145,7 @@ export const InwardJobsService = {
      */
     complete: {
       name: "Complete",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -167,7 +167,7 @@ export const InwardJobsService = {
      */
     reopen: {
       name: "Reopen",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -178,7 +178,7 @@ export const InwardJobsService = {
      */
     commentAdd: {
       name: "CommentAdd",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },

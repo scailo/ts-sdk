@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { QCSample, QCSampleParameter, QCSampleParameterHistoryList, QCSampleParameterHistoryRequest, QCSampleParametersList, QCSampleParametersSearchRequest, QCSamplesList, QCSamplesServiceCountReq, QCSamplesServiceCreateRequest, QCSamplesServiceFilterReq, QCSamplesServicePaginatedParametersResponse, QCSamplesServicePaginationReq, QCSamplesServicePaginationResponse, QCSamplesServiceParameterUpdateRequest, QCSamplesServiceSearchAllReq, QCSamplesServiceUpdateRequest, QCSamplesWithMetadataList } from "./qc_samples.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -24,7 +24,7 @@ export const QCSamplesService = {
     create: {
       name: "Create",
       I: QCSamplesServiceCreateRequest,
-      O: IdentifiersList,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
     /**
@@ -45,7 +45,7 @@ export const QCSamplesService = {
      */
     finish: {
       name: "Finish",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -56,7 +56,7 @@ export const QCSamplesService = {
      */
     accept: {
       name: "Accept",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -67,7 +67,7 @@ export const QCSamplesService = {
      */
     acceptWithDeviation: {
       name: "AcceptWithDeviation",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -78,7 +78,7 @@ export const QCSamplesService = {
      */
     reject: {
       name: "Reject",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -89,7 +89,7 @@ export const QCSamplesService = {
      */
     cancel: {
       name: "Cancel",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -100,7 +100,7 @@ export const QCSamplesService = {
      */
     reopen: {
       name: "Reopen",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -111,7 +111,7 @@ export const QCSamplesService = {
      */
     commentAdd: {
       name: "CommentAdd",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -200,6 +200,17 @@ export const QCSamplesService = {
     viewByID: {
       name: "ViewByID",
       I: Identifier,
+      O: QCSample,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.QCSamplesService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
       O: QCSample,
       kind: MethodKind.Unary,
     },

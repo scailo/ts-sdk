@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { User, UsersList, UsersServiceCountReq, UsersServiceCreateRequest, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users.scailo_pb.js";
-import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
+import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -67,7 +67,7 @@ export const UsersService = {
      */
     sendForVerification: {
       name: "SendForVerification",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -78,7 +78,7 @@ export const UsersService = {
      */
     verify: {
       name: "Verify",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -89,7 +89,7 @@ export const UsersService = {
      */
     approve: {
       name: "Approve",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -100,7 +100,7 @@ export const UsersService = {
      */
     sendForRevision: {
       name: "SendForRevision",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -122,7 +122,7 @@ export const UsersService = {
      */
     halt: {
       name: "Halt",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -133,7 +133,7 @@ export const UsersService = {
      */
     discard: {
       name: "Discard",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -144,7 +144,7 @@ export const UsersService = {
      */
     restore: {
       name: "Restore",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -158,7 +158,7 @@ export const UsersService = {
      */
     commentAdd: {
       name: "CommentAdd",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },

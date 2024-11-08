@@ -1,5 +1,5 @@
 import { OutwardJob, OutwardJobAncillaryParameters, OutwardJobContact, OutwardJobContactsList, OutwardJobInwardItem, OutwardJobInwardItemHistoryRequest, OutwardJobInwardItemProspectiveInfoRequest, OutwardJobInwardItemsSearchRequest, OutwardJobOutwardItem, OutwardJobOutwardItemHistoryRequest, OutwardJobOutwardItemProspectiveInfoRequest, OutwardJobOutwardItemsSearchRequest, OutwardJobsInwardItemsList, OutwardJobsList, OutwardJobsOutwardItemsList, OutwardJobsServiceAutofillRequest, OutwardJobsServiceContactCreateRequest, OutwardJobsServiceCountReq, OutwardJobsServiceCreateRequest, OutwardJobsServiceFilterReq, OutwardJobsServiceInwardItemCreateRequest, OutwardJobsServiceInwardItemUpdateRequest, OutwardJobsServiceMultipleInwardItemsCreateRequest, OutwardJobsServiceMultipleOutwardItemsCreateRequest, OutwardJobsServiceOutwardItemCreateRequest, OutwardJobsServiceOutwardItemUpdateRequest, OutwardJobsServicePaginatedInwardItemsResponse, OutwardJobsServicePaginatedOutwardItemsResponse, OutwardJobsServicePaginationReq, OutwardJobsServicePaginationResponse, OutwardJobsServiceSearchAllReq, OutwardJobsServiceUpdateRequest } from "./outward_jobs.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -51,7 +51,7 @@ export declare const OutwardJobsService: {
          */
         readonly sendForVerification: {
             readonly name: "SendForVerification";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -62,7 +62,7 @@ export declare const OutwardJobsService: {
          */
         readonly verify: {
             readonly name: "Verify";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -73,7 +73,7 @@ export declare const OutwardJobsService: {
          */
         readonly approve: {
             readonly name: "Approve";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -84,7 +84,7 @@ export declare const OutwardJobsService: {
          */
         readonly sendForRevision: {
             readonly name: "SendForRevision";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -106,7 +106,7 @@ export declare const OutwardJobsService: {
          */
         readonly halt: {
             readonly name: "Halt";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -117,7 +117,7 @@ export declare const OutwardJobsService: {
          */
         readonly discard: {
             readonly name: "Discard";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -128,7 +128,7 @@ export declare const OutwardJobsService: {
          */
         readonly restore: {
             readonly name: "Restore";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -139,7 +139,7 @@ export declare const OutwardJobsService: {
          */
         readonly complete: {
             readonly name: "Complete";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -161,7 +161,7 @@ export declare const OutwardJobsService: {
          */
         readonly reopen: {
             readonly name: "Reopen";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -172,7 +172,7 @@ export declare const OutwardJobsService: {
          */
         readonly commentAdd: {
             readonly name: "CommentAdd";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };

@@ -1,5 +1,5 @@
 import { ActivitiesList, ActivitiesServiceActionCreateRequest, ActivitiesServiceActionUpdateRequest, ActivitiesServiceActionWithTimerCreateRequest, ActivitiesServiceActivityTagAssociationCreateRequest, ActivitiesServiceCountReq, ActivitiesServiceCreateRequest, ActivitiesServiceFilterReq, ActivitiesServiceImportOwnersRequest, ActivitiesServiceOwnerCreateRequest, ActivitiesServicePaginatedActionsResponse, ActivitiesServicePaginatedTimersResponse, ActivitiesServicePaginationReq, ActivitiesServicePaginationResponse, ActivitiesServiceSearchAllReq, ActivitiesServiceSupervisorCreateRequest, ActivitiesServiceTimerCreateRequest, ActivitiesServiceTimerEndRequest, ActivitiesServiceUpdateRequest, Activity, ActivityAction, ActivityActionHistoryRequest, ActivityActionsList, ActivityActionsSearchRequest, ActivityActionStatistics, ActivityOwner, ActivityOwnersList, ActivityStatistics, ActivitySupervisor, ActivitySupervisorsList, ActivityTagAssociation, ActivityTagAssociationsList, ActivityTimer, ActivityTimersList, ActivityTimersSearchRequest } from "./activities.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -39,7 +39,7 @@ export declare const ActivitiesService: {
          */
         readonly cancel: {
             readonly name: "Cancel";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };
@@ -50,7 +50,7 @@ export declare const ActivitiesService: {
          */
         readonly complete: {
             readonly name: "Complete";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };
@@ -61,7 +61,7 @@ export declare const ActivitiesService: {
          */
         readonly reopen: {
             readonly name: "Reopen";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };
@@ -72,7 +72,7 @@ export declare const ActivitiesService: {
          */
         readonly repeat: {
             readonly name: "Repeat";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };
@@ -83,7 +83,7 @@ export declare const ActivitiesService: {
          */
         readonly commentAdd: {
             readonly name: "CommentAdd";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };

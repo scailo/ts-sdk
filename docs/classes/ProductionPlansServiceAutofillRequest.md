@@ -22,9 +22,9 @@ from message Scailo.ProductionPlansServiceAutofillRequest
 
 ### Properties
 
-- [id](ProductionPlansServiceAutofillRequest.md#id)
 - [populateUsingEquationDependencies](ProductionPlansServiceAutofillRequest.md#populateusingequationdependencies)
 - [userComment](ProductionPlansServiceAutofillRequest.md#usercomment)
+- [uuid](ProductionPlansServiceAutofillRequest.md#uuid)
 - [fields](ProductionPlansServiceAutofillRequest.md#fields)
 - [runtime](ProductionPlansServiceAutofillRequest.md#runtime)
 - [typeName](ProductionPlansServiceAutofillRequest.md#typename)
@@ -72,22 +72,6 @@ src/production_plans.scailo_pb.ts:501
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/production_plans.scailo_pb.ts:492
-
-___
-
 ### populateUsingEquationDependencies
 
 • **populateUsingEquationDependencies**: `boolean` = `false`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/production_plans.scailo_pb.ts:485
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/production_plans.scailo_pb.ts:492
 
 ___
 

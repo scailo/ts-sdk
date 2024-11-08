@@ -1450,11 +1450,11 @@ export declare class SimpleSearchReq extends Message<SimpleSearchReq> {
  */
 export declare class RepeatWithDeliveryDate extends Message<RepeatWithDeliveryDate> {
     /**
-     * ID of the resource
+     * UUID of the resource
      *
-     * @generated from field: uint64 id = 1;
+     * @generated from field: string uuid = 1;
      */
-    id: bigint;
+    uuid: string;
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -1799,6 +1799,34 @@ export declare class IdentifierUUID extends Message<IdentifierUUID> {
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUID;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUID;
     static equals(a: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined, b: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined): boolean;
+}
+/**
+ *
+ * Describes the UUID identifier with a user comment. Useful when an operation needs to be performed, and a user comment needs to be recorded
+ *
+ * @generated from message Scailo.IdentifierUUIDWithUserComment
+ */
+export declare class IdentifierUUIDWithUserComment extends Message<IdentifierUUIDWithUserComment> {
+    /**
+     * UUID of the resource
+     *
+     * @generated from field: string uuid = 1;
+     */
+    uuid: string;
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 10;
+     */
+    userComment: string;
+    constructor(data?: PartialMessage<IdentifierUUIDWithUserComment>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.IdentifierUUIDWithUserComment";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierUUIDWithUserComment;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUIDWithUserComment;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUIDWithUserComment;
+    static equals(a: IdentifierUUIDWithUserComment | PlainMessage<IdentifierUUIDWithUserComment> | undefined, b: IdentifierUUIDWithUserComment | PlainMessage<IdentifierUUIDWithUserComment> | undefined): boolean;
 }
 /**
  *

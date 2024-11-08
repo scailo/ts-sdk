@@ -626,11 +626,11 @@ export class InwardJobsServiceAutofillRequest extends Message<InwardJobsServiceA
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   * The UUID of the record that needs to be updated
    *
-   * @generated from field: uint64 id = 2;
+   * @generated from field: string uuid = 2;
    */
-  id = protoInt64.zero;
+  uuid = "";
 
   constructor(data?: PartialMessage<InwardJobsServiceAutofillRequest>) {
     super();
@@ -641,7 +641,7 @@ export class InwardJobsServiceAutofillRequest extends Message<InwardJobsServiceA
   static readonly typeName = "Scailo.InwardJobsServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobsServiceAutofillRequest {

@@ -1,5 +1,5 @@
 import { StockIssuance, StockIssuanceItem, StockIssuanceItemHistoryRequest, StockIssuanceItemProspectiveInfoRequest, StockIssuanceItemsSearchRequest, StockIssuancesItemsList, StockIssuancesList, StockIssuancesServiceAlreadyAddedQuantityForSourceRequest, StockIssuancesServiceAutofillRequest, StockIssuancesServiceCountReq, StockIssuancesServiceCreateRequest, StockIssuancesServiceFilterReq, StockIssuancesServiceItemCreateRequest, StockIssuancesServiceItemUpdateRequest, StockIssuancesServicePaginatedItemsResponse, StockIssuancesServicePaginationReq, StockIssuancesServicePaginationResponse, StockIssuancesServiceSearchAllReq, StockIssuancesServiceUpdateRequest } from "./stock_issuances.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -51,7 +51,7 @@ export declare const StockIssuancesService: {
          */
         readonly sendForVerification: {
             readonly name: "SendForVerification";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -62,7 +62,7 @@ export declare const StockIssuancesService: {
          */
         readonly verify: {
             readonly name: "Verify";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -73,7 +73,7 @@ export declare const StockIssuancesService: {
          */
         readonly approve: {
             readonly name: "Approve";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -84,7 +84,7 @@ export declare const StockIssuancesService: {
          */
         readonly sendForRevision: {
             readonly name: "SendForRevision";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -106,7 +106,7 @@ export declare const StockIssuancesService: {
          */
         readonly halt: {
             readonly name: "Halt";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -117,7 +117,7 @@ export declare const StockIssuancesService: {
          */
         readonly discard: {
             readonly name: "Discard";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -128,7 +128,7 @@ export declare const StockIssuancesService: {
          */
         readonly restore: {
             readonly name: "Restore";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -139,7 +139,7 @@ export declare const StockIssuancesService: {
          */
         readonly complete: {
             readonly name: "Complete";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -150,7 +150,7 @@ export declare const StockIssuancesService: {
          */
         readonly repeat: {
             readonly name: "Repeat";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -161,7 +161,7 @@ export declare const StockIssuancesService: {
          */
         readonly reopen: {
             readonly name: "Reopen";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -172,7 +172,7 @@ export declare const StockIssuancesService: {
          */
         readonly commentAdd: {
             readonly name: "CommentAdd";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };

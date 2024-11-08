@@ -538,11 +538,11 @@ export declare class PurchasesOrdersServiceAutofillRequest extends Message<Purch
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     * The UUID of the record that needs to be updated
      *
-     * @generated from field: uint64 id = 2;
+     * @generated from field: string uuid = 2;
      */
-    id: bigint;
+    uuid: string;
     /**
      * Stores if referenced items should be consolidated
      *

@@ -23,8 +23,8 @@ from message Scailo.PurchasesOrdersServiceAutofillRequest
 ### Properties
 
 - [consolidateReferencedItems](PurchasesOrdersServiceAutofillRequest.md#consolidatereferenceditems)
-- [id](PurchasesOrdersServiceAutofillRequest.md#id)
 - [userComment](PurchasesOrdersServiceAutofillRequest.md#usercomment)
+- [uuid](PurchasesOrdersServiceAutofillRequest.md#uuid)
 - [fields](PurchasesOrdersServiceAutofillRequest.md#fields)
 - [runtime](PurchasesOrdersServiceAutofillRequest.md#runtime)
 - [typeName](PurchasesOrdersServiceAutofillRequest.md#typename)
@@ -88,22 +88,6 @@ src/purchases_orders.scailo_pb.ts:760
 
 ___
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/purchases_orders.scailo_pb.ts:753
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/purchases_orders.scailo_pb.ts:746
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:753
 
 ___
 

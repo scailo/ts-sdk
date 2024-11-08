@@ -1,5 +1,5 @@
 import { OnDutiesList, OnDutiesServiceCountReq, OnDutiesServiceCreateRequest, OnDutiesServiceFilterReq, OnDutiesServiceImageEntryRequest, OnDutiesServiceImageExitRequest, OnDutiesServicePaginationReq, OnDutiesServicePaginationResponse, OnDutiesServiceSearchAllReq, OnDutiesServiceUpdateRequest, OnDuty } from "./on_duties.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierWithUserComment, ImageResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -50,7 +50,7 @@ export declare const OnDutiesService: {
          */
         readonly sendForVerification: {
             readonly name: "SendForVerification";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -61,7 +61,7 @@ export declare const OnDutiesService: {
          */
         readonly verify: {
             readonly name: "Verify";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -72,7 +72,7 @@ export declare const OnDutiesService: {
          */
         readonly approve: {
             readonly name: "Approve";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -83,7 +83,7 @@ export declare const OnDutiesService: {
          */
         readonly sendForRevision: {
             readonly name: "SendForRevision";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -105,7 +105,7 @@ export declare const OnDutiesService: {
          */
         readonly halt: {
             readonly name: "Halt";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -116,7 +116,7 @@ export declare const OnDutiesService: {
          */
         readonly discard: {
             readonly name: "Discard";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -127,7 +127,7 @@ export declare const OnDutiesService: {
          */
         readonly restore: {
             readonly name: "Restore";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -138,7 +138,7 @@ export declare const OnDutiesService: {
          */
         readonly complete: {
             readonly name: "Complete";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -149,7 +149,7 @@ export declare const OnDutiesService: {
          */
         readonly repeat: {
             readonly name: "Repeat";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -163,7 +163,7 @@ export declare const OnDutiesService: {
          */
         readonly commentAdd: {
             readonly name: "CommentAdd";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };

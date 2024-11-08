@@ -1,5 +1,5 @@
 import { Note, NotesList, NotesServiceCountReq, NotesServiceCreateRequest, NotesServiceFilterReq, NotesServicePaginationReq, NotesServicePaginationResponse, NotesServiceSearchAllReq, NotesServiceUpdateRequest } from "./notes.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -39,7 +39,7 @@ export declare const NotesService: {
          */
         readonly cancel: {
             readonly name: "Cancel";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };
@@ -50,7 +50,7 @@ export declare const NotesService: {
          */
         readonly complete: {
             readonly name: "Complete";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };
@@ -61,7 +61,7 @@ export declare const NotesService: {
          */
         readonly reopen: {
             readonly name: "Reopen";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };
@@ -72,7 +72,7 @@ export declare const NotesService: {
          */
         readonly repeat: {
             readonly name: "Repeat";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };
@@ -83,7 +83,7 @@ export declare const NotesService: {
          */
         readonly commentAdd: {
             readonly name: "CommentAdd";
-            readonly I: typeof IdentifierWithUserComment;
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
             readonly kind: MethodKind.Unary;
         };

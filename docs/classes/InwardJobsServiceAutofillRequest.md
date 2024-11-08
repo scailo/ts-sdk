@@ -22,8 +22,8 @@ from message Scailo.InwardJobsServiceAutofillRequest
 
 ### Properties
 
-- [id](InwardJobsServiceAutofillRequest.md#id)
 - [userComment](InwardJobsServiceAutofillRequest.md#usercomment)
+- [uuid](InwardJobsServiceAutofillRequest.md#uuid)
 - [fields](InwardJobsServiceAutofillRequest.md#fields)
 - [runtime](InwardJobsServiceAutofillRequest.md#runtime)
 - [typeName](InwardJobsServiceAutofillRequest.md#typename)
@@ -71,22 +71,6 @@ src/inward_jobs.scailo_pb.ts:635
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/inward_jobs.scailo_pb.ts:633
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -100,6 +84,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/inward_jobs.scailo_pb.ts:626
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/inward_jobs.scailo_pb.ts:633
 
 ___
 

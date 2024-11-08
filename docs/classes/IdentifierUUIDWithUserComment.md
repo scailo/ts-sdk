@@ -1,92 +1,75 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrdersServiceAutofillRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / IdentifierUUIDWithUserComment
 
-# Class: WorkOrdersServiceAutofillRequest
+# Class: IdentifierUUIDWithUserComment
 
-Describes the parameters necessary to perform an autofill request
+Describes the UUID identifier with a user comment. Useful when an operation needs to be performed, and a user comment needs to be recorded
 
 **`Generated`**
 
-from message Scailo.WorkOrdersServiceAutofillRequest
+from message Scailo.IdentifierUUIDWithUserComment
 
 ## Hierarchy
 
-- `Message`\<[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)\>
+- `Message`\<[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)\>
 
-  ↳ **`WorkOrdersServiceAutofillRequest`**
+  ↳ **`IdentifierUUIDWithUserComment`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](WorkOrdersServiceAutofillRequest.md#constructor)
+- [constructor](IdentifierUUIDWithUserComment.md#constructor)
 
 ### Properties
 
-- [populateUsingEquationDependencies](WorkOrdersServiceAutofillRequest.md#populateusingequationdependencies)
-- [userComment](WorkOrdersServiceAutofillRequest.md#usercomment)
-- [uuid](WorkOrdersServiceAutofillRequest.md#uuid)
-- [fields](WorkOrdersServiceAutofillRequest.md#fields)
-- [runtime](WorkOrdersServiceAutofillRequest.md#runtime)
-- [typeName](WorkOrdersServiceAutofillRequest.md#typename)
+- [userComment](IdentifierUUIDWithUserComment.md#usercomment)
+- [uuid](IdentifierUUIDWithUserComment.md#uuid)
+- [fields](IdentifierUUIDWithUserComment.md#fields)
+- [runtime](IdentifierUUIDWithUserComment.md#runtime)
+- [typeName](IdentifierUUIDWithUserComment.md#typename)
 
 ### Methods
 
-- [clone](WorkOrdersServiceAutofillRequest.md#clone)
-- [equals](WorkOrdersServiceAutofillRequest.md#equals)
-- [fromBinary](WorkOrdersServiceAutofillRequest.md#frombinary)
-- [fromJson](WorkOrdersServiceAutofillRequest.md#fromjson)
-- [fromJsonString](WorkOrdersServiceAutofillRequest.md#fromjsonstring)
-- [getType](WorkOrdersServiceAutofillRequest.md#gettype)
-- [toBinary](WorkOrdersServiceAutofillRequest.md#tobinary)
-- [toJSON](WorkOrdersServiceAutofillRequest.md#tojson)
-- [toJson](WorkOrdersServiceAutofillRequest.md#tojson-1)
-- [toJsonString](WorkOrdersServiceAutofillRequest.md#tojsonstring)
-- [equals](WorkOrdersServiceAutofillRequest.md#equals-1)
-- [fromBinary](WorkOrdersServiceAutofillRequest.md#frombinary-1)
-- [fromJson](WorkOrdersServiceAutofillRequest.md#fromjson-1)
-- [fromJsonString](WorkOrdersServiceAutofillRequest.md#fromjsonstring-1)
+- [clone](IdentifierUUIDWithUserComment.md#clone)
+- [equals](IdentifierUUIDWithUserComment.md#equals)
+- [fromBinary](IdentifierUUIDWithUserComment.md#frombinary)
+- [fromJson](IdentifierUUIDWithUserComment.md#fromjson)
+- [fromJsonString](IdentifierUUIDWithUserComment.md#fromjsonstring)
+- [getType](IdentifierUUIDWithUserComment.md#gettype)
+- [toBinary](IdentifierUUIDWithUserComment.md#tobinary)
+- [toJSON](IdentifierUUIDWithUserComment.md#tojson)
+- [toJson](IdentifierUUIDWithUserComment.md#tojson-1)
+- [toJsonString](IdentifierUUIDWithUserComment.md#tojsonstring)
+- [equals](IdentifierUUIDWithUserComment.md#equals-1)
+- [fromBinary](IdentifierUUIDWithUserComment.md#frombinary-1)
+- [fromJson](IdentifierUUIDWithUserComment.md#fromjson-1)
+- [fromJsonString](IdentifierUUIDWithUserComment.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new WorkOrdersServiceAutofillRequest**(`data?`): [`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+• **new IdentifierUUIDWithUserComment**(`data?`): [`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)\> |
+| `data?` | `PartialMessage`\<[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)\> |
 
 #### Returns
 
-[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Overrides
 
-Message\&lt;WorkOrdersServiceAutofillRequest\&gt;.constructor
+Message\&lt;IdentifierUUIDWithUserComment\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:428
+src/base.scailo_pb.ts:2865
 
 ## Properties
-
-### populateUsingEquationDependencies
-
-• **populateUsingEquationDependencies**: `boolean` = `false`
-
-Denotes if all the equation dependencies (if applicable) should also be automatically added to the work order
-
-**`Generated`**
-
-from field: bool populate_using_equation_dependencies = 3;
-
-#### Defined in
-
-src/work_orders.scailo_pb.ts:426
-
-___
 
 ### userComment
 
@@ -96,11 +79,11 @@ Stores any comment that the user might add during this operation
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: string user_comment = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:412
+src/base.scailo_pb.ts:2863
 
 ___
 
@@ -108,15 +91,15 @@ ___
 
 • **uuid**: `string` = `""`
 
-The UUID of the record that needs to be updated
+UUID of the resource
 
 **`Generated`**
 
-from field: string uuid = 2;
+from field: string uuid = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:419
+src/base.scailo_pb.ts:2856
 
 ___
 
@@ -126,7 +109,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:435
+src/base.scailo_pb.ts:2872
 
 ___
 
@@ -136,29 +119,29 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:433
+src/base.scailo_pb.ts:2870
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.WorkOrdersServiceAutofillRequest"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.IdentifierUUIDWithUserComment"``
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:434
+src/base.scailo_pb.ts:2871
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+▸ **clone**(): [`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Inherited from
 
@@ -181,7 +164,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md) \| `PlainMessage`\<[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)\> |
+| `other` | `undefined` \| ``null`` \| [`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md) \| `PlainMessage`\<[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)\> |
 
 #### Returns
 
@@ -286,7 +269,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)\>
+▸ **getType**(): `MessageType`\<[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -294,7 +277,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)\>
+`MessageType`\<[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)\>
 
 #### Inherited from
 
@@ -425,8 +408,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md) \| `PlainMessage`\<[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)\> |
-| `b` | `undefined` \| [`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md) \| `PlainMessage`\<[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)\> |
+| `a` | `undefined` \| [`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md) \| `PlainMessage`\<[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)\> |
+| `b` | `undefined` \| [`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md) \| `PlainMessage`\<[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)\> |
 
 #### Returns
 
@@ -434,13 +417,13 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:453
+src/base.scailo_pb.ts:2889
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+▸ **fromBinary**(`bytes`, `options?`): [`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Parameters
 
@@ -451,17 +434,17 @@ ___
 
 #### Returns
 
-[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:441
+src/base.scailo_pb.ts:2877
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Parameters
 
@@ -472,17 +455,17 @@ ___
 
 #### Returns
 
-[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:445
+src/base.scailo_pb.ts:2881
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Parameters
 
@@ -493,8 +476,8 @@ ___
 
 #### Returns
 
-[`WorkOrdersServiceAutofillRequest`](WorkOrdersServiceAutofillRequest.md)
+[`IdentifierUUIDWithUserComment`](IdentifierUUIDWithUserComment.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:449
+src/base.scailo_pb.ts:2885

@@ -485,11 +485,11 @@ export class ProductionPlansServiceAutofillRequest extends Message<ProductionPla
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   * The UUID of the record that needs to be updated
    *
-   * @generated from field: uint64 id = 2;
+   * @generated from field: string uuid = 2;
    */
-  id = protoInt64.zero;
+  uuid = "";
 
   /**
    * Denotes if all the equation dependencies (if applicable) should also be automatically added to the production plan
@@ -507,7 +507,7 @@ export class ProductionPlansServiceAutofillRequest extends Message<ProductionPla
   static readonly typeName = "Scailo.ProductionPlansServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "populate_using_equation_dependencies", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 

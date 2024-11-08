@@ -23,9 +23,9 @@ from message Scailo.RepeatWithDeliveryDate
 ### Properties
 
 - [deliveryDate](RepeatWithDeliveryDate.md#deliverydate)
-- [id](RepeatWithDeliveryDate.md#id)
 - [referenceId](RepeatWithDeliveryDate.md#referenceid)
 - [userComment](RepeatWithDeliveryDate.md#usercomment)
+- [uuid](RepeatWithDeliveryDate.md#uuid)
 - [fields](RepeatWithDeliveryDate.md#fields)
 - [runtime](RepeatWithDeliveryDate.md#runtime)
 - [typeName](RepeatWithDeliveryDate.md#typename)
@@ -89,22 +89,6 @@ src/base.scailo_pb.ts:2235
 
 ___
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-ID of the resource
-
-**`Generated`**
-
-from field: uint64 id = 1;
-
-#### Defined in
-
-src/base.scailo_pb.ts:2214
-
-___
-
 ### referenceId
 
 • **referenceId**: `string` = `""`
@@ -134,6 +118,22 @@ from field: string user_comment = 2;
 #### Defined in
 
 src/base.scailo_pb.ts:2221
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+UUID of the resource
+
+**`Generated`**
+
+from field: string uuid = 1;
+
+#### Defined in
+
+src/base.scailo_pb.ts:2214
 
 ___
 

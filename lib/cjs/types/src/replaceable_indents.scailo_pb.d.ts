@@ -306,11 +306,11 @@ export declare class ReplaceableIndentsServiceAutofillRequest extends Message<Re
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     * The UUID of the record that needs to be updated
      *
-     * @generated from field: uint64 id = 2;
+     * @generated from field: string uuid = 2;
      */
-    id: bigint;
+    uuid: string;
     /**
      * Denotes if all the equation dependencies (if applicable) should also be automatically added to the replaceable indent
      *

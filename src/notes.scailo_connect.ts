@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Note, NotesList, NotesServiceCountReq, NotesServiceCreateRequest, NotesServiceFilterReq, NotesServicePaginationReq, NotesServicePaginationResponse, NotesServiceSearchAllReq, NotesServiceUpdateRequest } from "./notes.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -45,7 +45,7 @@ export const NotesService = {
      */
     cancel: {
       name: "Cancel",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierUUID,
       kind: MethodKind.Unary,
     },
@@ -56,7 +56,7 @@ export const NotesService = {
      */
     complete: {
       name: "Complete",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierUUID,
       kind: MethodKind.Unary,
     },
@@ -67,7 +67,7 @@ export const NotesService = {
      */
     reopen: {
       name: "Reopen",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierUUID,
       kind: MethodKind.Unary,
     },
@@ -78,7 +78,7 @@ export const NotesService = {
      */
     repeat: {
       name: "Repeat",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierUUID,
       kind: MethodKind.Unary,
     },
@@ -89,7 +89,7 @@ export const NotesService = {
      */
     commentAdd: {
       name: "CommentAdd",
-      I: IdentifierWithUserComment,
+      I: IdentifierUUIDWithUserComment,
       O: IdentifierUUID,
       kind: MethodKind.Unary,
     },

@@ -22,9 +22,9 @@ from message Scailo.ProformaInvoicesServiceAutofillRequest
 
 ### Properties
 
-- [id](ProformaInvoicesServiceAutofillRequest.md#id)
 - [includeServices](ProformaInvoicesServiceAutofillRequest.md#includeservices)
 - [userComment](ProformaInvoicesServiceAutofillRequest.md#usercomment)
+- [uuid](ProformaInvoicesServiceAutofillRequest.md#uuid)
 - [fields](ProformaInvoicesServiceAutofillRequest.md#fields)
 - [runtime](ProformaInvoicesServiceAutofillRequest.md#runtime)
 - [typeName](ProformaInvoicesServiceAutofillRequest.md#typename)
@@ -72,22 +72,6 @@ src/proforma_invoices.scailo_pb.ts:607
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/proforma_invoices.scailo_pb.ts:598
-
-___
-
 ### includeServices
 
 • **includeServices**: `boolean` = `false`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/proforma_invoices.scailo_pb.ts:591
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/proforma_invoices.scailo_pb.ts:598
 
 ___
 

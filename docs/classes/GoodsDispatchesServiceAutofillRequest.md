@@ -22,9 +22,9 @@ from message Scailo.GoodsDispatchesServiceAutofillRequest
 
 ### Properties
 
-- [id](GoodsDispatchesServiceAutofillRequest.md#id)
 - [splitIntoUnitQuantity](GoodsDispatchesServiceAutofillRequest.md#splitintounitquantity)
 - [userComment](GoodsDispatchesServiceAutofillRequest.md#usercomment)
+- [uuid](GoodsDispatchesServiceAutofillRequest.md#uuid)
 - [fields](GoodsDispatchesServiceAutofillRequest.md#fields)
 - [runtime](GoodsDispatchesServiceAutofillRequest.md#runtime)
 - [typeName](GoodsDispatchesServiceAutofillRequest.md#typename)
@@ -72,22 +72,6 @@ src/goods_dispatches.scailo_pb.ts:471
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/goods_dispatches.scailo_pb.ts:462
-
-___
-
 ### splitIntoUnitQuantity
 
 • **splitIntoUnitQuantity**: `boolean` = `false`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/goods_dispatches.scailo_pb.ts:455
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/goods_dispatches.scailo_pb.ts:462
 
 ___
 

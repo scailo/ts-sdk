@@ -22,8 +22,8 @@ from message Scailo.SalariesServiceAutofillRequest
 
 ### Properties
 
-- [id](SalariesServiceAutofillRequest.md#id)
 - [userComment](SalariesServiceAutofillRequest.md#usercomment)
+- [uuid](SalariesServiceAutofillRequest.md#uuid)
 - [fields](SalariesServiceAutofillRequest.md#fields)
 - [runtime](SalariesServiceAutofillRequest.md#runtime)
 - [typeName](SalariesServiceAutofillRequest.md#typename)
@@ -71,22 +71,6 @@ src/salaries.scailo_pb.ts:543
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/salaries.scailo_pb.ts:541
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -100,6 +84,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/salaries.scailo_pb.ts:534
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/salaries.scailo_pb.ts:541
 
 ___
 

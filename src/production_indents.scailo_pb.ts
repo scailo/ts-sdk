@@ -436,11 +436,11 @@ export class ProductionIndentsServiceAutofillRequest extends Message<ProductionI
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   * The UUID of the record that needs to be updated
    *
-   * @generated from field: uint64 id = 2;
+   * @generated from field: string uuid = 2;
    */
-  id = protoInt64.zero;
+  uuid = "";
 
   /**
    * Denotes if all the equation dependencies (if applicable) should also be automatically added to the production indent
@@ -458,7 +458,7 @@ export class ProductionIndentsServiceAutofillRequest extends Message<ProductionI
   static readonly typeName = "Scailo.ProductionIndentsServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "populate_using_equation_dependencies", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 

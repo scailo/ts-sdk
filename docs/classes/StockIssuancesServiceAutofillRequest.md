@@ -22,9 +22,9 @@ from message Scailo.StockIssuancesServiceAutofillRequest
 
 ### Properties
 
-- [id](StockIssuancesServiceAutofillRequest.md#id)
 - [splitIntoUnitQuantity](StockIssuancesServiceAutofillRequest.md#splitintounitquantity)
 - [userComment](StockIssuancesServiceAutofillRequest.md#usercomment)
+- [uuid](StockIssuancesServiceAutofillRequest.md#uuid)
 - [fields](StockIssuancesServiceAutofillRequest.md#fields)
 - [runtime](StockIssuancesServiceAutofillRequest.md#runtime)
 - [typeName](StockIssuancesServiceAutofillRequest.md#typename)
@@ -72,22 +72,6 @@ src/stock_issuances.scailo_pb.ts:404
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/stock_issuances.scailo_pb.ts:395
-
-___
-
 ### splitIntoUnitQuantity
 
 • **splitIntoUnitQuantity**: `boolean` = `false`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/stock_issuances.scailo_pb.ts:388
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/stock_issuances.scailo_pb.ts:395
 
 ___
 

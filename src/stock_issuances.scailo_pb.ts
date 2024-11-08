@@ -388,11 +388,11 @@ export class StockIssuancesServiceAutofillRequest extends Message<StockIssuances
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   * The UUID of the record that needs to be updated
    *
-   * @generated from field: uint64 id = 2;
+   * @generated from field: string uuid = 2;
    */
-  id = protoInt64.zero;
+  uuid = "";
 
   /**
    * Stores if the inventory needs to be split into unit quantities
@@ -410,7 +410,7 @@ export class StockIssuancesServiceAutofillRequest extends Message<StockIssuances
   static readonly typeName = "Scailo.StockIssuancesServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "split_into_unit_quantity", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 

@@ -22,8 +22,8 @@ from message Scailo.CreditNotesServiceAutofillRequest
 
 ### Properties
 
-- [id](CreditNotesServiceAutofillRequest.md#id)
 - [userComment](CreditNotesServiceAutofillRequest.md#usercomment)
+- [uuid](CreditNotesServiceAutofillRequest.md#uuid)
 - [fields](CreditNotesServiceAutofillRequest.md#fields)
 - [runtime](CreditNotesServiceAutofillRequest.md#runtime)
 - [typeName](CreditNotesServiceAutofillRequest.md#typename)
@@ -71,22 +71,6 @@ src/credit_notes.scailo_pb.ts:517
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/credit_notes.scailo_pb.ts:515
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -100,6 +84,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/credit_notes.scailo_pb.ts:508
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/credit_notes.scailo_pb.ts:515
 
 ___
 

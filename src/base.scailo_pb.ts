@@ -2207,11 +2207,11 @@ export class SimpleSearchReq extends Message<SimpleSearchReq> {
  */
 export class RepeatWithDeliveryDate extends Message<RepeatWithDeliveryDate> {
   /**
-   * ID of the resource
+   * UUID of the resource
    *
-   * @generated from field: uint64 id = 1;
+   * @generated from field: string uuid = 1;
    */
-  id = protoInt64.zero;
+  uuid = "";
 
   /**
    * Stores any comment that the user might add during this operation
@@ -2242,7 +2242,7 @@ export class RepeatWithDeliveryDate extends Message<RepeatWithDeliveryDate> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.RepeatWithDeliveryDate";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -2838,6 +2838,56 @@ export class IdentifierUUID extends Message<IdentifierUUID> {
 
   static equals(a: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined, b: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined): boolean {
     return proto3.util.equals(IdentifierUUID, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the UUID identifier with a user comment. Useful when an operation needs to be performed, and a user comment needs to be recorded
+ *
+ * @generated from message Scailo.IdentifierUUIDWithUserComment
+ */
+export class IdentifierUUIDWithUserComment extends Message<IdentifierUUIDWithUserComment> {
+  /**
+   * UUID of the resource
+   *
+   * @generated from field: string uuid = 1;
+   */
+  uuid = "";
+
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 10;
+   */
+  userComment = "";
+
+  constructor(data?: PartialMessage<IdentifierUUIDWithUserComment>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.IdentifierUUIDWithUserComment";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierUUIDWithUserComment {
+    return new IdentifierUUIDWithUserComment().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUIDWithUserComment {
+    return new IdentifierUUIDWithUserComment().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUIDWithUserComment {
+    return new IdentifierUUIDWithUserComment().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: IdentifierUUIDWithUserComment | PlainMessage<IdentifierUUIDWithUserComment> | undefined, b: IdentifierUUIDWithUserComment | PlainMessage<IdentifierUUIDWithUserComment> | undefined): boolean {
+    return proto3.util.equals(IdentifierUUIDWithUserComment, a, b);
   }
 }
 

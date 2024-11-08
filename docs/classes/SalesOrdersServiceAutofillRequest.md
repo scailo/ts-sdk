@@ -22,8 +22,8 @@ from message Scailo.SalesOrdersServiceAutofillRequest
 
 ### Properties
 
-- [id](SalesOrdersServiceAutofillRequest.md#id)
 - [userComment](SalesOrdersServiceAutofillRequest.md#usercomment)
+- [uuid](SalesOrdersServiceAutofillRequest.md#uuid)
 - [fields](SalesOrdersServiceAutofillRequest.md#fields)
 - [runtime](SalesOrdersServiceAutofillRequest.md#runtime)
 - [typeName](SalesOrdersServiceAutofillRequest.md#typename)
@@ -71,22 +71,6 @@ src/sales_orders.scailo_pb.ts:723
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/sales_orders.scailo_pb.ts:721
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -100,6 +84,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/sales_orders.scailo_pb.ts:714
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:721
 
 ___
 

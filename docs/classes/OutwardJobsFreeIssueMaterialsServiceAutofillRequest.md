@@ -22,9 +22,9 @@ from message Scailo.OutwardJobsFreeIssueMaterialsServiceAutofillRequest
 
 ### Properties
 
-- [id](OutwardJobsFreeIssueMaterialsServiceAutofillRequest.md#id)
 - [splitIntoUnitQuantity](OutwardJobsFreeIssueMaterialsServiceAutofillRequest.md#splitintounitquantity)
 - [userComment](OutwardJobsFreeIssueMaterialsServiceAutofillRequest.md#usercomment)
+- [uuid](OutwardJobsFreeIssueMaterialsServiceAutofillRequest.md#uuid)
 - [fields](OutwardJobsFreeIssueMaterialsServiceAutofillRequest.md#fields)
 - [runtime](OutwardJobsFreeIssueMaterialsServiceAutofillRequest.md#runtime)
 - [typeName](OutwardJobsFreeIssueMaterialsServiceAutofillRequest.md#typename)
@@ -72,22 +72,6 @@ src/outward_jobs_free_issue_materials.scailo_pb.ts:436
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/outward_jobs_free_issue_materials.scailo_pb.ts:427
-
-___
-
 ### splitIntoUnitQuantity
 
 • **splitIntoUnitQuantity**: `boolean` = `false`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/outward_jobs_free_issue_materials.scailo_pb.ts:420
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/outward_jobs_free_issue_materials.scailo_pb.ts:427
 
 ___
 

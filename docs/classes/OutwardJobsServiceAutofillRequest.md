@@ -22,8 +22,8 @@ from message Scailo.OutwardJobsServiceAutofillRequest
 
 ### Properties
 
-- [id](OutwardJobsServiceAutofillRequest.md#id)
 - [userComment](OutwardJobsServiceAutofillRequest.md#usercomment)
+- [uuid](OutwardJobsServiceAutofillRequest.md#uuid)
 - [fields](OutwardJobsServiceAutofillRequest.md#fields)
 - [runtime](OutwardJobsServiceAutofillRequest.md#runtime)
 - [typeName](OutwardJobsServiceAutofillRequest.md#typename)
@@ -71,22 +71,6 @@ src/outward_jobs.scailo_pb.ts:555
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/outward_jobs.scailo_pb.ts:553
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -100,6 +84,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/outward_jobs.scailo_pb.ts:546
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/outward_jobs.scailo_pb.ts:553
 
 ___
 

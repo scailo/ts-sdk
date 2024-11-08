@@ -422,11 +422,11 @@ export declare class ProformaInvoicesServiceAutofillRequest extends Message<Prof
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     * The UUID of the record that needs to be updated
      *
-     * @generated from field: uint64 id = 2;
+     * @generated from field: string uuid = 2;
      */
-    id: bigint;
+    uuid: string;
     /**
      * Stores if services should also be autofilled
      *

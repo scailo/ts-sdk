@@ -22,8 +22,8 @@ from message Scailo.DebitNotesServiceAutofillRequest
 
 ### Properties
 
-- [id](DebitNotesServiceAutofillRequest.md#id)
 - [userComment](DebitNotesServiceAutofillRequest.md#usercomment)
+- [uuid](DebitNotesServiceAutofillRequest.md#uuid)
 - [fields](DebitNotesServiceAutofillRequest.md#fields)
 - [runtime](DebitNotesServiceAutofillRequest.md#runtime)
 - [typeName](DebitNotesServiceAutofillRequest.md#typename)
@@ -71,22 +71,6 @@ src/debit_notes.scailo_pb.ts:493
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/debit_notes.scailo_pb.ts:491
-
-___
-
 ### userComment
 
 • **userComment**: `string` = `""`
@@ -100,6 +84,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/debit_notes.scailo_pb.ts:484
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/debit_notes.scailo_pb.ts:491
 
 ___
 

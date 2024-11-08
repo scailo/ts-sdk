@@ -22,9 +22,9 @@ from message Scailo.ProductionIndentsServiceAutofillRequest
 
 ### Properties
 
-- [id](ProductionIndentsServiceAutofillRequest.md#id)
 - [populateUsingEquationDependencies](ProductionIndentsServiceAutofillRequest.md#populateusingequationdependencies)
 - [userComment](ProductionIndentsServiceAutofillRequest.md#usercomment)
+- [uuid](ProductionIndentsServiceAutofillRequest.md#uuid)
 - [fields](ProductionIndentsServiceAutofillRequest.md#fields)
 - [runtime](ProductionIndentsServiceAutofillRequest.md#runtime)
 - [typeName](ProductionIndentsServiceAutofillRequest.md#typename)
@@ -72,22 +72,6 @@ src/production_indents.scailo_pb.ts:452
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/production_indents.scailo_pb.ts:443
-
-___
-
 ### populateUsingEquationDependencies
 
 • **populateUsingEquationDependencies**: `boolean` = `false`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/production_indents.scailo_pb.ts:436
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/production_indents.scailo_pb.ts:443
 
 ___
 

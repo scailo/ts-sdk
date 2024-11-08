@@ -22,9 +22,9 @@ from message Scailo.ReplaceableIndentsServiceAutofillRequest
 
 ### Properties
 
-- [id](ReplaceableIndentsServiceAutofillRequest.md#id)
 - [populateUsingEquationDependencies](ReplaceableIndentsServiceAutofillRequest.md#populateusingequationdependencies)
 - [userComment](ReplaceableIndentsServiceAutofillRequest.md#usercomment)
+- [uuid](ReplaceableIndentsServiceAutofillRequest.md#uuid)
 - [fields](ReplaceableIndentsServiceAutofillRequest.md#fields)
 - [runtime](ReplaceableIndentsServiceAutofillRequest.md#runtime)
 - [typeName](ReplaceableIndentsServiceAutofillRequest.md#typename)
@@ -72,22 +72,6 @@ src/replaceable_indents.scailo_pb.ts:452
 
 ## Properties
 
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-src/replaceable_indents.scailo_pb.ts:443
-
-___
-
 ### populateUsingEquationDependencies
 
 • **populateUsingEquationDependencies**: `boolean` = `false`
@@ -117,6 +101,22 @@ from field: string user_comment = 1;
 #### Defined in
 
 src/replaceable_indents.scailo_pb.ts:436
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+src/replaceable_indents.scailo_pb.ts:443
 
 ___
 
