@@ -1,5 +1,5 @@
 import { QCSample, QCSampleAncillaryParameters, QCSampleParameter, QCSampleParameterHistoryList, QCSampleParameterHistoryRequest, QCSampleParametersList, QCSampleParametersSearchRequest, QCSamplesList, QCSamplesServiceCountReq, QCSamplesServiceCreateRequest, QCSamplesServiceFilterReq, QCSamplesServicePaginatedParametersResponse, QCSamplesServicePaginationReq, QCSamplesServicePaginationResponse, QCSamplesServiceParameterUpdateRequest, QCSamplesServiceSearchAllReq, QCSamplesServiceUpdateRequest, QCSamplesWithMetadataList } from "./qc_samples.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -143,13 +143,13 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all parameters for given qc sample ID
+         * View all parameters for given qc sample UUID
          *
          * @generated from rpc Scailo.QCSamplesService.ViewParameters
          */
         readonly viewParameters: {
             readonly name: "ViewParameters";
-            readonly I: typeof IdentifierWithSearchKey;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof QCSampleParametersList;
             readonly kind: MethodKind.Unary;
         };

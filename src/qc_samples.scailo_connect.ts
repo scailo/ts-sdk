@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { QCSample, QCSampleAncillaryParameters, QCSampleParameter, QCSampleParameterHistoryList, QCSampleParameterHistoryRequest, QCSampleParametersList, QCSampleParametersSearchRequest, QCSamplesList, QCSamplesServiceCountReq, QCSamplesServiceCreateRequest, QCSamplesServiceFilterReq, QCSamplesServicePaginatedParametersResponse, QCSamplesServicePaginationReq, QCSamplesServicePaginationResponse, QCSamplesServiceParameterUpdateRequest, QCSamplesServiceSearchAllReq, QCSamplesServiceUpdateRequest, QCSamplesWithMetadataList } from "./qc_samples.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -149,13 +149,13 @@ export const QCSamplesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all parameters for given qc sample ID
+     * View all parameters for given qc sample UUID
      *
      * @generated from rpc Scailo.QCSamplesService.ViewParameters
      */
     viewParameters: {
       name: "ViewParameters",
-      I: IdentifierWithSearchKey,
+      I: IdentifierUUID,
       O: QCSampleParametersList,
       kind: MethodKind.Unary,
     },
