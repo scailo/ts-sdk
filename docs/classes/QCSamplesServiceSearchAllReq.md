@@ -77,7 +77,7 @@ Message\&lt;QCSamplesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1497
+src/qc_samples.scailo_pb.ts:1563
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1425
+src/qc_samples.scailo_pb.ts:1491
 
 ___
 
@@ -109,7 +109,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1453
+src/qc_samples.scailo_pb.ts:1519
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 family_id = 18;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1481
+src/qc_samples.scailo_pb.ts:1547
 
 ___
 
@@ -141,7 +141,7 @@ from field: Scailo.FAMILY_TYPE family_type = 17;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1474
+src/qc_samples.scailo_pb.ts:1540
 
 ___
 
@@ -157,7 +157,7 @@ from field: string inventory_item_uuid = 20;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1495
+src/qc_samples.scailo_pb.ts:1561
 
 ___
 
@@ -173,7 +173,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1418
+src/qc_samples.scailo_pb.ts:1484
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1432
+src/qc_samples.scailo_pb.ts:1498
 
 ___
 
@@ -205,7 +205,7 @@ from field: uint64 qc_group_id = 19;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1488
+src/qc_samples.scailo_pb.ts:1554
 
 ___
 
@@ -221,7 +221,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1467
+src/qc_samples.scailo_pb.ts:1533
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.QC_SAMPLE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1446
+src/qc_samples.scailo_pb.ts:1512
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1439
+src/qc_samples.scailo_pb.ts:1505
 
 ___
 
@@ -269,7 +269,7 @@ from field: Scailo.QC_SAMPLE_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1460
+src/qc_samples.scailo_pb.ts:1526
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1504
+src/qc_samples.scailo_pb.ts:1570
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1502
+src/qc_samples.scailo_pb.ts:1568
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1503
+src/qc_samples.scailo_pb.ts:1569
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1531
+src/qc_samples.scailo_pb.ts:1597
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1519
+src/qc_samples.scailo_pb.ts:1585
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1523
+src/qc_samples.scailo_pb.ts:1589
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1527
+src/qc_samples.scailo_pb.ts:1593

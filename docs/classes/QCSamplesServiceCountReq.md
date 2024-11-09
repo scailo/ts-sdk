@@ -84,7 +84,7 @@ Message\&lt;QCSamplesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1360
+src/qc_samples.scailo_pb.ts:1426
 
 ## Properties
 
@@ -102,7 +102,7 @@ from field: uint64 buyer_client_id = 70;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1358
+src/qc_samples.scailo_pb.ts:1424
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1241
+src/qc_samples.scailo_pb.ts:1307
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1234
+src/qc_samples.scailo_pb.ts:1300
 
 ___
 
@@ -150,7 +150,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1262
+src/qc_samples.scailo_pb.ts:1328
 
 ___
 
@@ -166,7 +166,7 @@ from field: uint64 family_id = 18;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1297
+src/qc_samples.scailo_pb.ts:1363
 
 ___
 
@@ -182,7 +182,7 @@ from field: Scailo.FAMILY_TYPE family_type = 17;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1290
+src/qc_samples.scailo_pb.ts:1356
 
 ___
 
@@ -198,7 +198,7 @@ from field: uint64 finished_on_end = 16;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1283
+src/qc_samples.scailo_pb.ts:1349
 
 ___
 
@@ -214,7 +214,7 @@ from field: uint64 finished_on_start = 15;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1276
+src/qc_samples.scailo_pb.ts:1342
 
 ___
 
@@ -230,7 +230,7 @@ from field: uint64 goods_receipt_id = 51;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1335
+src/qc_samples.scailo_pb.ts:1401
 
 ___
 
@@ -246,7 +246,7 @@ from field: string inventory_item_uuid = 20;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1311
+src/qc_samples.scailo_pb.ts:1377
 
 ___
 
@@ -262,7 +262,7 @@ from field: uint64 inward_job_free_issue_material_id = 52;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1342
+src/qc_samples.scailo_pb.ts:1408
 
 ___
 
@@ -278,7 +278,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1227
+src/qc_samples.scailo_pb.ts:1293
 
 ___
 
@@ -294,7 +294,7 @@ from field: uint64 location_id = 21;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1318
+src/qc_samples.scailo_pb.ts:1384
 
 ___
 
@@ -310,7 +310,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1255
+src/qc_samples.scailo_pb.ts:1321
 
 ___
 
@@ -326,7 +326,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1248
+src/qc_samples.scailo_pb.ts:1314
 
 ___
 
@@ -345,7 +345,7 @@ from field: uint64 production_plan_id = 50;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1328
+src/qc_samples.scailo_pb.ts:1394
 
 ___
 
@@ -361,7 +361,7 @@ from field: uint64 qc_group_id = 19;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1304
+src/qc_samples.scailo_pb.ts:1370
 
 ___
 
@@ -377,7 +377,7 @@ from field: Scailo.QC_SAMPLE_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1269
+src/qc_samples.scailo_pb.ts:1335
 
 ___
 
@@ -393,7 +393,7 @@ from field: uint64 vendor_id = 55;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1349
+src/qc_samples.scailo_pb.ts:1415
 
 ___
 
@@ -403,7 +403,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1367
+src/qc_samples.scailo_pb.ts:1433
 
 ___
 
@@ -413,7 +413,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1365
+src/qc_samples.scailo_pb.ts:1431
 
 ___
 
@@ -423,7 +423,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1366
+src/qc_samples.scailo_pb.ts:1432
 
 ## Methods
 
@@ -711,7 +711,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1401
+src/qc_samples.scailo_pb.ts:1467
 
 ___
 
@@ -732,7 +732,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1389
+src/qc_samples.scailo_pb.ts:1455
 
 ___
 
@@ -753,7 +753,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1393
+src/qc_samples.scailo_pb.ts:1459
 
 ___
 
@@ -774,4 +774,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1397
+src/qc_samples.scailo_pb.ts:1463

@@ -547,6 +547,72 @@ export class QCSamplesServiceUpdateRequest extends Message<QCSamplesServiceUpdat
 
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.QCSampleAncillaryParameters
+ */
+export class QCSampleAncillaryParameters extends Message<QCSampleAncillaryParameters> {
+  /**
+   * The UUID of the family
+   *
+   * @generated from field: string family_uuid = 100;
+   */
+  familyUuid = "";
+
+  /**
+   * The UUID of the inventory item
+   *
+   * @generated from field: string inventory_item_uuid = 111;
+   */
+  inventoryItemUuid = "";
+
+  /**
+   * The UUID of the qc group
+   *
+   * @generated from field: string qc_group_uuid = 112;
+   */
+  qcGroupUuid = "";
+
+  /**
+   * The UUID of the location
+   *
+   * @generated from field: string location_uuid = 113;
+   */
+  locationUuid = "";
+
+  constructor(data?: PartialMessage<QCSampleAncillaryParameters>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QCSampleAncillaryParameters";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 100, name: "family_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 111, name: "inventory_item_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 112, name: "qc_group_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 113, name: "location_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSampleAncillaryParameters {
+    return new QCSampleAncillaryParameters().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCSampleAncillaryParameters {
+    return new QCSampleAncillaryParameters().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSampleAncillaryParameters {
+    return new QCSampleAncillaryParameters().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QCSampleAncillaryParameters | PlainMessage<QCSampleAncillaryParameters> | undefined, b: QCSampleAncillaryParameters | PlainMessage<QCSampleAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(QCSampleAncillaryParameters, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.QCSample

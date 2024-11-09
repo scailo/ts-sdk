@@ -69,7 +69,7 @@ Message\&lt;QCSampleWithMetadata\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:729
+src/qc_samples.scailo_pb.ts:795
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: Scailo.Family family = 10;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:713
+src/qc_samples.scailo_pb.ts:779
 
 ___
 
@@ -101,7 +101,7 @@ from field: Scailo.GenericInventory inventory_item = 30;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:727
+src/qc_samples.scailo_pb.ts:793
 
 ___
 
@@ -117,7 +117,7 @@ from field: Scailo.QCGroup qc_group = 20;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:720
+src/qc_samples.scailo_pb.ts:786
 
 ___
 
@@ -133,7 +133,7 @@ from field: Scailo.QCSample qc_sample = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:706
+src/qc_samples.scailo_pb.ts:772
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:736
+src/qc_samples.scailo_pb.ts:802
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:734
+src/qc_samples.scailo_pb.ts:800
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:735
+src/qc_samples.scailo_pb.ts:801
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:755
+src/qc_samples.scailo_pb.ts:821
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:743
+src/qc_samples.scailo_pb.ts:809
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:747
+src/qc_samples.scailo_pb.ts:813
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:751
+src/qc_samples.scailo_pb.ts:817

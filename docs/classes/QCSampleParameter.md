@@ -84,7 +84,7 @@ Message\&lt;QCSampleParameter\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1750
+src/qc_samples.scailo_pb.ts:1816
 
 ## Properties
 
@@ -100,7 +100,7 @@ from field: Scailo.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE acceptable_value_type = 2
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1699
+src/qc_samples.scailo_pb.ts:1765
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 checked_at = 9;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1650
+src/qc_samples.scailo_pb.ts:1716
 
 ___
 
@@ -132,7 +132,7 @@ from field: string checked_by = 8;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1643
+src/qc_samples.scailo_pb.ts:1709
 
 ___
 
@@ -148,7 +148,7 @@ from field: string description = 40;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1748
+src/qc_samples.scailo_pb.ts:1814
 
 ___
 
@@ -164,7 +164,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1622
+src/qc_samples.scailo_pb.ts:1688
 
 ___
 
@@ -180,7 +180,7 @@ from field: bool is_internal = 19;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1692
+src/qc_samples.scailo_pb.ts:1758
 
 ___
 
@@ -196,7 +196,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1629
+src/qc_samples.scailo_pb.ts:1695
 
 ___
 
@@ -212,7 +212,7 @@ from field: int64 number_acceptable_value = 21;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1706
+src/qc_samples.scailo_pb.ts:1772
 
 ___
 
@@ -228,7 +228,7 @@ from field: int64 number_observed_value = 13;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1678
+src/qc_samples.scailo_pb.ts:1744
 
 ___
 
@@ -244,7 +244,7 @@ from field: int64 number_relative_lower_bound = 22;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1713
+src/qc_samples.scailo_pb.ts:1779
 
 ___
 
@@ -260,7 +260,7 @@ from field: int64 number_relative_upper_bound = 23;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1720
+src/qc_samples.scailo_pb.ts:1786
 
 ___
 
@@ -276,7 +276,7 @@ from field: uint64 qc_param_id = 11;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1664
+src/qc_samples.scailo_pb.ts:1730
 
 ___
 
@@ -292,7 +292,7 @@ from field: uint64 qc_sample_id = 10;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1657
+src/qc_samples.scailo_pb.ts:1723
 
 ___
 
@@ -308,7 +308,7 @@ from field: repeated string text_acceptable_values = 30;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1727
+src/qc_samples.scailo_pb.ts:1793
 
 ___
 
@@ -324,7 +324,7 @@ from field: repeated string text_acceptable_values_with_deviation = 31;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1734
+src/qc_samples.scailo_pb.ts:1800
 
 ___
 
@@ -340,7 +340,7 @@ from field: string text_observed_value = 14;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1685
+src/qc_samples.scailo_pb.ts:1751
 
 ___
 
@@ -356,7 +356,7 @@ from field: repeated string text_unacceptable_values = 32;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1741
+src/qc_samples.scailo_pb.ts:1807
 
 ___
 
@@ -372,7 +372,7 @@ from field: uint64 uom_id = 12;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1671
+src/qc_samples.scailo_pb.ts:1737
 
 ___
 
@@ -388,7 +388,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1636
+src/qc_samples.scailo_pb.ts:1702
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1757
+src/qc_samples.scailo_pb.ts:1823
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1755
+src/qc_samples.scailo_pb.ts:1821
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1756
+src/qc_samples.scailo_pb.ts:1822
 
 ## Methods
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1791
+src/qc_samples.scailo_pb.ts:1857
 
 ___
 
@@ -727,7 +727,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1779
+src/qc_samples.scailo_pb.ts:1845
 
 ___
 
@@ -748,7 +748,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1783
+src/qc_samples.scailo_pb.ts:1849
 
 ___
 
@@ -769,4 +769,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1787
+src/qc_samples.scailo_pb.ts:1853

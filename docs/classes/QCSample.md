@@ -79,7 +79,7 @@ Message\&lt;QCSample\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:653
+src/qc_samples.scailo_pb.ts:719
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:574
+src/qc_samples.scailo_pb.ts:640
 
 ___
 
@@ -111,7 +111,7 @@ from field: string description = 21;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:651
+src/qc_samples.scailo_pb.ts:717
 
 ___
 
@@ -127,7 +127,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:560
+src/qc_samples.scailo_pb.ts:626
 
 ___
 
@@ -143,7 +143,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:616
+src/qc_samples.scailo_pb.ts:682
 
 ___
 
@@ -159,7 +159,7 @@ from field: Scailo.FAMILY_TYPE family_type = 9;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:609
+src/qc_samples.scailo_pb.ts:675
 
 ___
 
@@ -175,7 +175,7 @@ from field: uint64 finished_on = 6;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:595
+src/qc_samples.scailo_pb.ts:661
 
 ___
 
@@ -191,7 +191,7 @@ from field: string inventory_item_uuid = 11;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:623
+src/qc_samples.scailo_pb.ts:689
 
 ___
 
@@ -207,7 +207,7 @@ from field: uint64 location_id = 13;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:637
+src/qc_samples.scailo_pb.ts:703
 
 ___
 
@@ -223,7 +223,7 @@ from field: repeated Scailo.LogbookLogQCSampleLC logs = 5;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:588
+src/qc_samples.scailo_pb.ts:654
 
 ___
 
@@ -239,7 +239,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:567
+src/qc_samples.scailo_pb.ts:633
 
 ___
 
@@ -255,7 +255,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:644
+src/qc_samples.scailo_pb.ts:710
 
 ___
 
@@ -271,7 +271,7 @@ from field: uint64 qc_group_id = 12;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:630
+src/qc_samples.scailo_pb.ts:696
 
 ___
 
@@ -287,7 +287,7 @@ from field: Scailo.QC_SAMPLE_LIFECYCLE status = 4;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:581
+src/qc_samples.scailo_pb.ts:647
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vault_folder_id = 8;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:602
+src/qc_samples.scailo_pb.ts:668
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:660
+src/qc_samples.scailo_pb.ts:726
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:658
+src/qc_samples.scailo_pb.ts:724
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:659
+src/qc_samples.scailo_pb.ts:725
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:689
+src/qc_samples.scailo_pb.ts:755
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:677
+src/qc_samples.scailo_pb.ts:743
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:681
+src/qc_samples.scailo_pb.ts:747
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:685
+src/qc_samples.scailo_pb.ts:751

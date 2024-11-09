@@ -395,6 +395,17 @@ export const FamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components of the family (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.FamiliesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Family,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.FamiliesService.ViewAll

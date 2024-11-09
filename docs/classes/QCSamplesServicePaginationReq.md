@@ -71,7 +71,7 @@ Message\&lt;QCSamplesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:893
+src/qc_samples.scailo_pb.ts:959
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:863
+src/qc_samples.scailo_pb.ts:929
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:856
+src/qc_samples.scailo_pb.ts:922
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:870
+src/qc_samples.scailo_pb.ts:936
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.QC_SAMPLE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:884
+src/qc_samples.scailo_pb.ts:950
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:877
+src/qc_samples.scailo_pb.ts:943
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.QC_SAMPLE_LIFECYCLE status = 6;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:891
+src/qc_samples.scailo_pb.ts:957
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:900
+src/qc_samples.scailo_pb.ts:966
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:898
+src/qc_samples.scailo_pb.ts:964
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:899
+src/qc_samples.scailo_pb.ts:965
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:921
+src/qc_samples.scailo_pb.ts:987
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:909
+src/qc_samples.scailo_pb.ts:975
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:913
+src/qc_samples.scailo_pb.ts:979
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:917
+src/qc_samples.scailo_pb.ts:983

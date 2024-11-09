@@ -74,7 +74,7 @@ Message\&lt;QCSampleParameterHistory\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1950
+src/qc_samples.scailo_pb.ts:2016
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: uint64 checked_at = 9;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1920
+src/qc_samples.scailo_pb.ts:1986
 
 ___
 
@@ -106,7 +106,7 @@ from field: string checked_by = 8;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1913
+src/qc_samples.scailo_pb.ts:1979
 
 ___
 
@@ -122,7 +122,7 @@ from field: string description = 40;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1948
+src/qc_samples.scailo_pb.ts:2014
 
 ___
 
@@ -138,7 +138,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1892
+src/qc_samples.scailo_pb.ts:1958
 
 ___
 
@@ -154,7 +154,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1899
+src/qc_samples.scailo_pb.ts:1965
 
 ___
 
@@ -170,7 +170,7 @@ from field: int64 number_observed_value = 13;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1934
+src/qc_samples.scailo_pb.ts:2000
 
 ___
 
@@ -186,7 +186,7 @@ from field: uint64 qc_sample_parameter_id = 10;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1927
+src/qc_samples.scailo_pb.ts:1993
 
 ___
 
@@ -202,7 +202,7 @@ from field: string text_observed_value = 14;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1941
+src/qc_samples.scailo_pb.ts:2007
 
 ___
 
@@ -218,7 +218,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1906
+src/qc_samples.scailo_pb.ts:1972
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1957
+src/qc_samples.scailo_pb.ts:2023
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1955
+src/qc_samples.scailo_pb.ts:2021
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1956
+src/qc_samples.scailo_pb.ts:2022
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1981
+src/qc_samples.scailo_pb.ts:2047
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1969
+src/qc_samples.scailo_pb.ts:2035
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1973
+src/qc_samples.scailo_pb.ts:2039
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:1977
+src/qc_samples.scailo_pb.ts:2043

@@ -1,88 +1,139 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSamplesWithMetadataList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / QCSampleAncillaryParameters
 
-# Class: QCSamplesWithMetadataList
+# Class: QCSampleAncillaryParameters
 
-Describes the message consisting of the list of QC samples with metadata
+Stores the UUID references of the record
 
 **`Generated`**
 
-from message Scailo.QCSamplesWithMetadataList
+from message Scailo.QCSampleAncillaryParameters
 
 ## Hierarchy
 
-- `Message`\<[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)\>
+- `Message`\<[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)\>
 
-  ↳ **`QCSamplesWithMetadataList`**
+  ↳ **`QCSampleAncillaryParameters`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](QCSamplesWithMetadataList.md#constructor)
+- [constructor](QCSampleAncillaryParameters.md#constructor)
 
 ### Properties
 
-- [list](QCSamplesWithMetadataList.md#list)
-- [fields](QCSamplesWithMetadataList.md#fields)
-- [runtime](QCSamplesWithMetadataList.md#runtime)
-- [typeName](QCSamplesWithMetadataList.md#typename)
+- [familyUuid](QCSampleAncillaryParameters.md#familyuuid)
+- [inventoryItemUuid](QCSampleAncillaryParameters.md#inventoryitemuuid)
+- [locationUuid](QCSampleAncillaryParameters.md#locationuuid)
+- [qcGroupUuid](QCSampleAncillaryParameters.md#qcgroupuuid)
+- [fields](QCSampleAncillaryParameters.md#fields)
+- [runtime](QCSampleAncillaryParameters.md#runtime)
+- [typeName](QCSampleAncillaryParameters.md#typename)
 
 ### Methods
 
-- [clone](QCSamplesWithMetadataList.md#clone)
-- [equals](QCSamplesWithMetadataList.md#equals)
-- [fromBinary](QCSamplesWithMetadataList.md#frombinary)
-- [fromJson](QCSamplesWithMetadataList.md#fromjson)
-- [fromJsonString](QCSamplesWithMetadataList.md#fromjsonstring)
-- [getType](QCSamplesWithMetadataList.md#gettype)
-- [toBinary](QCSamplesWithMetadataList.md#tobinary)
-- [toJSON](QCSamplesWithMetadataList.md#tojson)
-- [toJson](QCSamplesWithMetadataList.md#tojson-1)
-- [toJsonString](QCSamplesWithMetadataList.md#tojsonstring)
-- [equals](QCSamplesWithMetadataList.md#equals-1)
-- [fromBinary](QCSamplesWithMetadataList.md#frombinary-1)
-- [fromJson](QCSamplesWithMetadataList.md#fromjson-1)
-- [fromJsonString](QCSamplesWithMetadataList.md#fromjsonstring-1)
+- [clone](QCSampleAncillaryParameters.md#clone)
+- [equals](QCSampleAncillaryParameters.md#equals)
+- [fromBinary](QCSampleAncillaryParameters.md#frombinary)
+- [fromJson](QCSampleAncillaryParameters.md#fromjson)
+- [fromJsonString](QCSampleAncillaryParameters.md#fromjsonstring)
+- [getType](QCSampleAncillaryParameters.md#gettype)
+- [toBinary](QCSampleAncillaryParameters.md#tobinary)
+- [toJSON](QCSampleAncillaryParameters.md#tojson)
+- [toJson](QCSampleAncillaryParameters.md#tojson-1)
+- [toJsonString](QCSampleAncillaryParameters.md#tojsonstring)
+- [equals](QCSampleAncillaryParameters.md#equals-1)
+- [fromBinary](QCSampleAncillaryParameters.md#frombinary-1)
+- [fromJson](QCSampleAncillaryParameters.md#fromjson-1)
+- [fromJsonString](QCSampleAncillaryParameters.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new QCSamplesWithMetadataList**(`data?`): [`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+• **new QCSampleAncillaryParameters**(`data?`): [`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)\> |
+| `data?` | `PartialMessage`\<[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)\> |
 
 #### Returns
 
-[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Overrides
 
-Message\&lt;QCSamplesWithMetadataList\&gt;.constructor
+Message\&lt;QCSampleAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:882
+src/qc_samples.scailo_pb.ts:583
 
 ## Properties
 
-### list
+### familyUuid
 
-• **list**: [`QCSampleWithMetadata`](QCSampleWithMetadata.md)[] = `[]`
+• **familyUuid**: `string` = `""`
 
-List of records
+The UUID of the family
 
 **`Generated`**
 
-from field: repeated Scailo.QCSampleWithMetadata list = 1;
+from field: string family_uuid = 100;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:880
+src/qc_samples.scailo_pb.ts:560
+
+___
+
+### inventoryItemUuid
+
+• **inventoryItemUuid**: `string` = `""`
+
+The UUID of the inventory item
+
+**`Generated`**
+
+from field: string inventory_item_uuid = 111;
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:567
+
+___
+
+### locationUuid
+
+• **locationUuid**: `string` = `""`
+
+The UUID of the location
+
+**`Generated`**
+
+from field: string location_uuid = 113;
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:581
+
+___
+
+### qcGroupUuid
+
+• **qcGroupUuid**: `string` = `""`
+
+The UUID of the qc group
+
+**`Generated`**
+
+from field: string qc_group_uuid = 112;
+
+#### Defined in
+
+src/qc_samples.scailo_pb.ts:574
 
 ___
 
@@ -92,7 +143,7 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:889
+src/qc_samples.scailo_pb.ts:590
 
 ___
 
@@ -102,29 +153,29 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:887
+src/qc_samples.scailo_pb.ts:588
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.QCSamplesWithMetadataList"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.QCSampleAncillaryParameters"``
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:888
+src/qc_samples.scailo_pb.ts:589
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+▸ **clone**(): [`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Inherited from
 
@@ -147,7 +198,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md) \| `PlainMessage`\<[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)\> |
+| `other` | `undefined` \| ``null`` \| [`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md) \| `PlainMessage`\<[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)\> |
 
 #### Returns
 
@@ -252,7 +303,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)\>
+▸ **getType**(): `MessageType`\<[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -260,7 +311,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)\>
+`MessageType`\<[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)\>
 
 #### Inherited from
 
@@ -391,8 +442,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md) \| `PlainMessage`\<[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)\> |
-| `b` | `undefined` \| [`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md) \| `PlainMessage`\<[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)\> |
+| `a` | `undefined` \| [`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md) \| `PlainMessage`\<[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)\> |
+| `b` | `undefined` \| [`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md) \| `PlainMessage`\<[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)\> |
 
 #### Returns
 
@@ -400,13 +451,13 @@ ___
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:905
+src/qc_samples.scailo_pb.ts:609
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+▸ **fromBinary**(`bytes`, `options?`): [`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Parameters
 
@@ -417,17 +468,17 @@ ___
 
 #### Returns
 
-[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:893
+src/qc_samples.scailo_pb.ts:597
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Parameters
 
@@ -438,17 +489,17 @@ ___
 
 #### Returns
 
-[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:897
+src/qc_samples.scailo_pb.ts:601
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Parameters
 
@@ -459,8 +510,8 @@ ___
 
 #### Returns
 
-[`QCSamplesWithMetadataList`](QCSamplesWithMetadataList.md)
+[`QCSampleAncillaryParameters`](QCSampleAncillaryParameters.md)
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:901
+src/qc_samples.scailo_pb.ts:605

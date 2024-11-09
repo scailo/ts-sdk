@@ -378,6 +378,46 @@ export declare class QCSamplesServiceUpdateRequest extends Message<QCSamplesServ
 }
 /**
  *
+ * Stores the UUID references of the record
+ *
+ * @generated from message Scailo.QCSampleAncillaryParameters
+ */
+export declare class QCSampleAncillaryParameters extends Message<QCSampleAncillaryParameters> {
+    /**
+     * The UUID of the family
+     *
+     * @generated from field: string family_uuid = 100;
+     */
+    familyUuid: string;
+    /**
+     * The UUID of the inventory item
+     *
+     * @generated from field: string inventory_item_uuid = 111;
+     */
+    inventoryItemUuid: string;
+    /**
+     * The UUID of the qc group
+     *
+     * @generated from field: string qc_group_uuid = 112;
+     */
+    qcGroupUuid: string;
+    /**
+     * The UUID of the location
+     *
+     * @generated from field: string location_uuid = 113;
+     */
+    locationUuid: string;
+    constructor(data?: PartialMessage<QCSampleAncillaryParameters>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.QCSampleAncillaryParameters";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSampleAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCSampleAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSampleAncillaryParameters;
+    static equals(a: QCSampleAncillaryParameters | PlainMessage<QCSampleAncillaryParameters> | undefined, b: QCSampleAncillaryParameters | PlainMessage<QCSampleAncillaryParameters> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Scailo.QCSample
