@@ -651,6 +651,21 @@ export declare class GoodsReceiptItem extends Message<GoodsReceiptItem> {
      * @generated from field: uint64 vendor_quantity = 14;
      */
     vendorQuantity: bigint;
+    /**
+     * ----------------------------------------
+     * The UUID of the associated goods receipt
+     *
+     * @generated from field: string goods_receipt_uuid = 110;
+     */
+    goodsReceiptUuid: string;
+    /**
+     * The UUID of the associated family
+     *
+     * ----------------------------------------
+     *
+     * @generated from field: string family_uuid = 111;
+     */
+    familyUuid: string;
     constructor(data?: PartialMessage<GoodsReceiptItem>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.GoodsReceiptItem";

@@ -25,6 +25,7 @@ from message Scailo.VendorInvoiceItem
 - [approvalMetadata](VendorInvoiceItem.md#approvalmetadata)
 - [entityUuid](VendorInvoiceItem.md#entityuuid)
 - [familyId](VendorInvoiceItem.md#familyid)
+- [familyUuid](VendorInvoiceItem.md#familyuuid)
 - [internalQuantity](VendorInvoiceItem.md#internalquantity)
 - [metadata](VendorInvoiceItem.md#metadata)
 - [needApproval](VendorInvoiceItem.md#needapproval)
@@ -33,6 +34,7 @@ from message Scailo.VendorInvoiceItem
 - [taxGroupId](VendorInvoiceItem.md#taxgroupid)
 - [userComment](VendorInvoiceItem.md#usercomment)
 - [vendorInvoiceId](VendorInvoiceItem.md#vendorinvoiceid)
+- [vendorInvoiceUuid](VendorInvoiceItem.md#vendorinvoiceuuid)
 - [vendorQuantity](VendorInvoiceItem.md#vendorquantity)
 - [vendorUnitPrice](VendorInvoiceItem.md#vendorunitprice)
 - [vendorUomId](VendorInvoiceItem.md#vendoruomid)
@@ -79,7 +81,7 @@ Message\&lt;VendorInvoiceItem\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1187
+src/vendor_invoices.scailo_pb.ts:1204
 
 ## Properties
 
@@ -128,6 +130,24 @@ from field: uint64 family_id = 11;
 #### Defined in
 
 src/vendor_invoices.scailo_pb.ts:1136
+
+___
+
+### familyUuid
+
+• **familyUuid**: `string` = `""`
+
+The UUID of the associated family
+
+----------------------------------------
+
+**`Generated`**
+
+from field: string family_uuid = 111;
+
+#### Defined in
+
+src/vendor_invoices.scailo_pb.ts:1202
 
 ___
 
@@ -259,6 +279,23 @@ src/vendor_invoices.scailo_pb.ts:1129
 
 ___
 
+### vendorInvoiceUuid
+
+• **vendorInvoiceUuid**: `string` = `""`
+
+----------------------------------------
+The UUID of the associated vendor invoice
+
+**`Generated`**
+
+from field: string vendor_invoice_uuid = 110;
+
+#### Defined in
+
+src/vendor_invoices.scailo_pb.ts:1193
+
+___
+
 ### vendorQuantity
 
 • **vendorQuantity**: `bigint` = `protoInt64.zero`
@@ -313,7 +350,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1194
+src/vendor_invoices.scailo_pb.ts:1211
 
 ___
 
@@ -323,7 +360,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1192
+src/vendor_invoices.scailo_pb.ts:1209
 
 ___
 
@@ -333,7 +370,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1193
+src/vendor_invoices.scailo_pb.ts:1210
 
 ## Methods
 
@@ -621,7 +658,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1223
+src/vendor_invoices.scailo_pb.ts:1242
 
 ___
 
@@ -642,7 +679,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1211
+src/vendor_invoices.scailo_pb.ts:1230
 
 ___
 
@@ -663,7 +700,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1215
+src/vendor_invoices.scailo_pb.ts:1234
 
 ___
 
@@ -684,4 +721,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1219
+src/vendor_invoices.scailo_pb.ts:1238

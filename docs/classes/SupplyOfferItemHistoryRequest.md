@@ -67,7 +67,7 @@ Message\&lt;SupplyOfferItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1461
+src/supply_offers.scailo_pb.ts:1480
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1459
+src/supply_offers.scailo_pb.ts:1478
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 supply_offer_id = 10;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1452
+src/supply_offers.scailo_pb.ts:1471
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1468
+src/supply_offers.scailo_pb.ts:1487
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1466
+src/supply_offers.scailo_pb.ts:1485
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1467
+src/supply_offers.scailo_pb.ts:1486
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1485
+src/supply_offers.scailo_pb.ts:1504
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1473
+src/supply_offers.scailo_pb.ts:1492
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1477
+src/supply_offers.scailo_pb.ts:1496
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1481
+src/supply_offers.scailo_pb.ts:1500

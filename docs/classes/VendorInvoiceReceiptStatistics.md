@@ -68,7 +68,7 @@ Message\&lt;VendorInvoiceReceiptStatistics\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2718
+src/vendor_invoices.scailo_pb.ts:2737
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2702
+src/vendor_invoices.scailo_pb.ts:2721
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 invoiced_quantity = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2709
+src/vendor_invoices.scailo_pb.ts:2728
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 receipt_quantity = 3;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2716
+src/vendor_invoices.scailo_pb.ts:2735
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2725
+src/vendor_invoices.scailo_pb.ts:2744
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2723
+src/vendor_invoices.scailo_pb.ts:2742
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2724
+src/vendor_invoices.scailo_pb.ts:2743
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2743
+src/vendor_invoices.scailo_pb.ts:2762
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2731
+src/vendor_invoices.scailo_pb.ts:2750
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2735
+src/vendor_invoices.scailo_pb.ts:2754
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2739
+src/vendor_invoices.scailo_pb.ts:2758

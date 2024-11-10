@@ -95,7 +95,7 @@ Message\&lt;PurchasesOrdersServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2031
+src/purchases_orders.scailo_pb.ts:2050
 
 ## Properties
 
@@ -111,7 +111,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1917
+src/purchases_orders.scailo_pb.ts:1936
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1910
+src/purchases_orders.scailo_pb.ts:1929
 
 ___
 
@@ -143,7 +143,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1903
+src/purchases_orders.scailo_pb.ts:1922
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1924
+src/purchases_orders.scailo_pb.ts:1943
 
 ___
 
@@ -175,7 +175,7 @@ from field: uint64 buyer_location_id = 23;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1966
+src/purchases_orders.scailo_pb.ts:1985
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1938
+src/purchases_orders.scailo_pb.ts:1957
 
 ___
 
@@ -207,7 +207,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1931
+src/purchases_orders.scailo_pb.ts:1950
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 consignee_location_id = 22;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1959
+src/purchases_orders.scailo_pb.ts:1978
 
 ___
 
@@ -239,7 +239,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1833
+src/purchases_orders.scailo_pb.ts:1852
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1868
+src/purchases_orders.scailo_pb.ts:1887
 
 ___
 
@@ -271,7 +271,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1861
+src/purchases_orders.scailo_pb.ts:1880
 
 ___
 
@@ -287,7 +287,7 @@ from field: uint64 currency_id = 25;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1980
+src/purchases_orders.scailo_pb.ts:1999
 
 ___
 
@@ -303,7 +303,7 @@ from field: string delivery_date_end = 43;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2015
+src/purchases_orders.scailo_pb.ts:2034
 
 ___
 
@@ -319,7 +319,7 @@ from field: string delivery_date_exact = 41;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2001
+src/purchases_orders.scailo_pb.ts:2020
 
 ___
 
@@ -335,7 +335,7 @@ from field: string delivery_date_start = 42;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2008
+src/purchases_orders.scailo_pb.ts:2027
 
 ___
 
@@ -351,7 +351,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1889
+src/purchases_orders.scailo_pb.ts:1908
 
 ___
 
@@ -367,7 +367,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1994
+src/purchases_orders.scailo_pb.ts:2013
 
 ___
 
@@ -383,7 +383,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1952
+src/purchases_orders.scailo_pb.ts:1971
 
 ___
 
@@ -399,7 +399,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1826
+src/purchases_orders.scailo_pb.ts:1845
 
 ___
 
@@ -415,7 +415,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1882
+src/purchases_orders.scailo_pb.ts:1901
 
 ___
 
@@ -431,7 +431,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1875
+src/purchases_orders.scailo_pb.ts:1894
 
 ___
 
@@ -447,7 +447,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1840
+src/purchases_orders.scailo_pb.ts:1859
 
 ___
 
@@ -463,7 +463,7 @@ from field: uint64 project_id = 26;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1987
+src/purchases_orders.scailo_pb.ts:2006
 
 ___
 
@@ -479,7 +479,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1945
+src/purchases_orders.scailo_pb.ts:1964
 
 ___
 
@@ -495,7 +495,7 @@ from field: Scailo.PURCHASE_ORDER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1854
+src/purchases_orders.scailo_pb.ts:1873
 
 ___
 
@@ -511,7 +511,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1847
+src/purchases_orders.scailo_pb.ts:1866
 
 ___
 
@@ -527,7 +527,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1896
+src/purchases_orders.scailo_pb.ts:1915
 
 ___
 
@@ -543,7 +543,7 @@ from field: uint64 total_value_max = 51;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2029
+src/purchases_orders.scailo_pb.ts:2048
 
 ___
 
@@ -559,7 +559,7 @@ from field: uint64 total_value_min = 50;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2022
+src/purchases_orders.scailo_pb.ts:2041
 
 ___
 
@@ -575,7 +575,7 @@ from field: uint64 vendor_id = 24;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:1973
+src/purchases_orders.scailo_pb.ts:1992
 
 ___
 
@@ -585,7 +585,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2038
+src/purchases_orders.scailo_pb.ts:2057
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2036
+src/purchases_orders.scailo_pb.ts:2055
 
 ___
 
@@ -605,7 +605,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2037
+src/purchases_orders.scailo_pb.ts:2056
 
 ## Methods
 
@@ -893,7 +893,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2083
+src/purchases_orders.scailo_pb.ts:2102
 
 ___
 
@@ -914,7 +914,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2071
+src/purchases_orders.scailo_pb.ts:2090
 
 ___
 
@@ -935,7 +935,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2075
+src/purchases_orders.scailo_pb.ts:2094
 
 ___
 
@@ -956,4 +956,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2079
+src/purchases_orders.scailo_pb.ts:2098

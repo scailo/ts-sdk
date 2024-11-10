@@ -26,10 +26,12 @@ from message Scailo.OutwardJobInwardItem
 - [deliveryDate](OutwardJobInwardItem.md#deliverydate)
 - [entityUuid](OutwardJobInwardItem.md#entityuuid)
 - [familyId](OutwardJobInwardItem.md#familyid)
+- [familyUuid](OutwardJobInwardItem.md#familyuuid)
 - [internalQuantity](OutwardJobInwardItem.md#internalquantity)
 - [metadata](OutwardJobInwardItem.md#metadata)
 - [needApproval](OutwardJobInwardItem.md#needapproval)
 - [outwardJobId](OutwardJobInwardItem.md#outwardjobid)
+- [outwardJobUuid](OutwardJobInwardItem.md#outwardjobuuid)
 - [specifications](OutwardJobInwardItem.md#specifications)
 - [userComment](OutwardJobInwardItem.md#usercomment)
 - [fields](OutwardJobInwardItem.md#fields)
@@ -75,7 +77,7 @@ Message\&lt;OutwardJobInwardItem\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1145
+src/outward_jobs.scailo_pb.ts:1162
 
 ## Properties
 
@@ -143,6 +145,24 @@ src/outward_jobs.scailo_pb.ts:1122
 
 ___
 
+### familyUuid
+
+• **familyUuid**: `string` = `""`
+
+The UUID of the associated family
+
+----------------------------------------
+
+**`Generated`**
+
+from field: string family_uuid = 111;
+
+#### Defined in
+
+src/outward_jobs.scailo_pb.ts:1160
+
+___
+
 ### internalQuantity
 
 • **internalQuantity**: `bigint` = `protoInt64.zero`
@@ -207,6 +227,23 @@ src/outward_jobs.scailo_pb.ts:1115
 
 ___
 
+### outwardJobUuid
+
+• **outwardJobUuid**: `string` = `""`
+
+----------------------------------------
+The UUID of the associated outward job
+
+**`Generated`**
+
+from field: string outward_job_uuid = 110;
+
+#### Defined in
+
+src/outward_jobs.scailo_pb.ts:1151
+
+___
+
 ### specifications
 
 • **specifications**: `string` = `""`
@@ -245,7 +282,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1152
+src/outward_jobs.scailo_pb.ts:1169
 
 ___
 
@@ -255,7 +292,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1150
+src/outward_jobs.scailo_pb.ts:1167
 
 ___
 
@@ -265,7 +302,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1151
+src/outward_jobs.scailo_pb.ts:1168
 
 ## Methods
 
@@ -553,7 +590,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1177
+src/outward_jobs.scailo_pb.ts:1196
 
 ___
 
@@ -574,7 +611,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1165
+src/outward_jobs.scailo_pb.ts:1184
 
 ___
 
@@ -595,7 +632,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1169
+src/outward_jobs.scailo_pb.ts:1188
 
 ___
 
@@ -616,4 +653,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1173
+src/outward_jobs.scailo_pb.ts:1192

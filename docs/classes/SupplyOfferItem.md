@@ -28,11 +28,13 @@ from message Scailo.SupplyOfferItem
 - [discountedVendorUnitPrice](SupplyOfferItem.md#discountedvendorunitprice)
 - [entityUuid](SupplyOfferItem.md#entityuuid)
 - [familyId](SupplyOfferItem.md#familyid)
+- [familyUuid](SupplyOfferItem.md#familyuuid)
 - [internalQuantity](SupplyOfferItem.md#internalquantity)
 - [metadata](SupplyOfferItem.md#metadata)
 - [needApproval](SupplyOfferItem.md#needapproval)
 - [specifications](SupplyOfferItem.md#specifications)
 - [supplyOfferId](SupplyOfferItem.md#supplyofferid)
+- [supplyOfferUuid](SupplyOfferItem.md#supplyofferuuid)
 - [taxGroupId](SupplyOfferItem.md#taxgroupid)
 - [userComment](SupplyOfferItem.md#usercomment)
 - [vendorQuantity](SupplyOfferItem.md#vendorquantity)
@@ -81,7 +83,7 @@ Message\&lt;SupplyOfferItem\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1313
+src/supply_offers.scailo_pb.ts:1330
 
 ## Properties
 
@@ -181,6 +183,24 @@ src/supply_offers.scailo_pb.ts:1248
 
 ___
 
+### familyUuid
+
+• **familyUuid**: `string` = `""`
+
+The UUID of the associated family
+
+----------------------------------------
+
+**`Generated`**
+
+from field: string family_uuid = 111;
+
+#### Defined in
+
+src/supply_offers.scailo_pb.ts:1328
+
+___
+
 ### internalQuantity
 
 • **internalQuantity**: `bigint` = `protoInt64.zero`
@@ -258,6 +278,23 @@ from field: uint64 supply_offer_id = 10;
 #### Defined in
 
 src/supply_offers.scailo_pb.ts:1241
+
+___
+
+### supplyOfferUuid
+
+• **supplyOfferUuid**: `string` = `""`
+
+----------------------------------------
+The UUID of the associated supply offer
+
+**`Generated`**
+
+from field: string supply_offer_uuid = 110;
+
+#### Defined in
+
+src/supply_offers.scailo_pb.ts:1319
 
 ___
 
@@ -347,7 +384,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1320
+src/supply_offers.scailo_pb.ts:1337
 
 ___
 
@@ -357,7 +394,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1318
+src/supply_offers.scailo_pb.ts:1335
 
 ___
 
@@ -367,7 +404,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1319
+src/supply_offers.scailo_pb.ts:1336
 
 ## Methods
 
@@ -655,7 +692,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1351
+src/supply_offers.scailo_pb.ts:1370
 
 ___
 
@@ -676,7 +713,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1339
+src/supply_offers.scailo_pb.ts:1358
 
 ___
 
@@ -697,7 +734,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1343
+src/supply_offers.scailo_pb.ts:1362
 
 ___
 
@@ -718,4 +755,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1347
+src/supply_offers.scailo_pb.ts:1366

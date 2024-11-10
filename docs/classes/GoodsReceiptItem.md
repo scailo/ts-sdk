@@ -25,7 +25,9 @@ from message Scailo.GoodsReceiptItem
 - [approvalMetadata](GoodsReceiptItem.md#approvalmetadata)
 - [entityUuid](GoodsReceiptItem.md#entityuuid)
 - [familyId](GoodsReceiptItem.md#familyid)
+- [familyUuid](GoodsReceiptItem.md#familyuuid)
 - [goodsReceiptId](GoodsReceiptItem.md#goodsreceiptid)
+- [goodsReceiptUuid](GoodsReceiptItem.md#goodsreceiptuuid)
 - [internalQuantity](GoodsReceiptItem.md#internalquantity)
 - [metadata](GoodsReceiptItem.md#metadata)
 - [needApproval](GoodsReceiptItem.md#needapproval)
@@ -75,7 +77,7 @@ Message\&lt;GoodsReceiptItem\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:954
+src/goods_receipts.scailo_pb.ts:971
 
 ## Properties
 
@@ -127,6 +129,24 @@ src/goods_receipts.scailo_pb.ts:931
 
 ___
 
+### familyUuid
+
+• **familyUuid**: `string` = `""`
+
+The UUID of the associated family
+
+----------------------------------------
+
+**`Generated`**
+
+from field: string family_uuid = 111;
+
+#### Defined in
+
+src/goods_receipts.scailo_pb.ts:969
+
+___
+
 ### goodsReceiptId
 
 • **goodsReceiptId**: `bigint` = `protoInt64.zero`
@@ -140,6 +160,23 @@ from field: uint64 goods_receipt_id = 10;
 #### Defined in
 
 src/goods_receipts.scailo_pb.ts:924
+
+___
+
+### goodsReceiptUuid
+
+• **goodsReceiptUuid**: `string` = `""`
+
+----------------------------------------
+The UUID of the associated goods receipt
+
+**`Generated`**
+
+from field: string goods_receipt_uuid = 110;
+
+#### Defined in
+
+src/goods_receipts.scailo_pb.ts:960
 
 ___
 
@@ -245,7 +282,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:961
+src/goods_receipts.scailo_pb.ts:978
 
 ___
 
@@ -255,7 +292,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:959
+src/goods_receipts.scailo_pb.ts:976
 
 ___
 
@@ -265,7 +302,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:960
+src/goods_receipts.scailo_pb.ts:977
 
 ## Methods
 
@@ -553,7 +590,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:986
+src/goods_receipts.scailo_pb.ts:1005
 
 ___
 
@@ -574,7 +611,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:974
+src/goods_receipts.scailo_pb.ts:993
 
 ___
 
@@ -595,7 +632,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:978
+src/goods_receipts.scailo_pb.ts:997
 
 ___
 
@@ -616,4 +653,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:982
+src/goods_receipts.scailo_pb.ts:1001

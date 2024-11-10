@@ -829,6 +829,21 @@ export declare class VendorInvoiceItem extends Message<VendorInvoiceItem> {
      * @generated from field: string specifications = 18;
      */
     specifications: string;
+    /**
+     * ----------------------------------------
+     * The UUID of the associated vendor invoice
+     *
+     * @generated from field: string vendor_invoice_uuid = 110;
+     */
+    vendorInvoiceUuid: string;
+    /**
+     * The UUID of the associated family
+     *
+     * ----------------------------------------
+     *
+     * @generated from field: string family_uuid = 111;
+     */
+    familyUuid: string;
     constructor(data?: PartialMessage<VendorInvoiceItem>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.VendorInvoiceItem";

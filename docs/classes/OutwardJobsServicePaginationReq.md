@@ -71,7 +71,7 @@ Message\&lt;OutwardJobsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1415
+src/outward_jobs.scailo_pb.ts:1434
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1385
+src/outward_jobs.scailo_pb.ts:1404
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1378
+src/outward_jobs.scailo_pb.ts:1397
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1392
+src/outward_jobs.scailo_pb.ts:1411
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.OUTWARD_JOB_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1406
+src/outward_jobs.scailo_pb.ts:1425
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1399
+src/outward_jobs.scailo_pb.ts:1418
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1413
+src/outward_jobs.scailo_pb.ts:1432
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1422
+src/outward_jobs.scailo_pb.ts:1441
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1420
+src/outward_jobs.scailo_pb.ts:1439
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1421
+src/outward_jobs.scailo_pb.ts:1440
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1443
+src/outward_jobs.scailo_pb.ts:1462
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1431
+src/outward_jobs.scailo_pb.ts:1450
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1435
+src/outward_jobs.scailo_pb.ts:1454
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1439
+src/outward_jobs.scailo_pb.ts:1458

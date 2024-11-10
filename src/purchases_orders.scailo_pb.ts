@@ -1428,6 +1428,23 @@ export class PurchaseOrderItem extends Message<PurchaseOrderItem> {
    */
   discountedVendorUnitPrice = protoInt64.zero;
 
+  /**
+   * ----------------------------------------
+   * The UUID of the associated purchase order
+   *
+   * @generated from field: string purchase_order_uuid = 110;
+   */
+  purchaseOrderUuid = "";
+
+  /**
+   * The UUID of the associated family
+   *
+   * ----------------------------------------
+   *
+   * @generated from field: string family_uuid = 111;
+   */
+  familyUuid = "";
+
   constructor(data?: PartialMessage<PurchaseOrderItem>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1452,6 +1469,8 @@ export class PurchaseOrderItem extends Message<PurchaseOrderItem> {
     { no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "discounted_vendor_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 110, name: "purchase_order_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 111, name: "family_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderItem {

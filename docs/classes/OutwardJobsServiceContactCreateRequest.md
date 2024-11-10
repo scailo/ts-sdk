@@ -68,7 +68,7 @@ Message\&lt;OutwardJobsServiceContactCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3108
+src/outward_jobs.scailo_pb.ts:3146
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3106
+src/outward_jobs.scailo_pb.ts:3144
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 outward_job_id = 10;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3099
+src/outward_jobs.scailo_pb.ts:3137
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3092
+src/outward_jobs.scailo_pb.ts:3130
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3115
+src/outward_jobs.scailo_pb.ts:3153
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3113
+src/outward_jobs.scailo_pb.ts:3151
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3114
+src/outward_jobs.scailo_pb.ts:3152
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3133
+src/outward_jobs.scailo_pb.ts:3171
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3121
+src/outward_jobs.scailo_pb.ts:3159
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3125
+src/outward_jobs.scailo_pb.ts:3163
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3129
+src/outward_jobs.scailo_pb.ts:3167

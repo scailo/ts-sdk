@@ -925,6 +925,21 @@ export declare class SupplyOfferItem extends Message<SupplyOfferItem> {
      * @generated from field: uint64 discounted_vendor_unit_price = 30;
      */
     discountedVendorUnitPrice: bigint;
+    /**
+     * ----------------------------------------
+     * The UUID of the associated supply offer
+     *
+     * @generated from field: string supply_offer_uuid = 110;
+     */
+    supplyOfferUuid: string;
+    /**
+     * The UUID of the associated family
+     *
+     * ----------------------------------------
+     *
+     * @generated from field: string family_uuid = 111;
+     */
+    familyUuid: string;
     constructor(data?: PartialMessage<SupplyOfferItem>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SupplyOfferItem";

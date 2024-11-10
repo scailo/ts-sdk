@@ -71,7 +71,7 @@ Message\&lt;PurchaseOrderInventoryMatch\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3305
+src/purchases_orders.scailo_pb.ts:3324
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 debited = 14;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3303
+src/purchases_orders.scailo_pb.ts:3322
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3268
+src/purchases_orders.scailo_pb.ts:3287
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 invoiced = 12;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3289
+src/purchases_orders.scailo_pb.ts:3308
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 ordered = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3275
+src/purchases_orders.scailo_pb.ts:3294
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 received = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3282
+src/purchases_orders.scailo_pb.ts:3301
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 returned = 13;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3296
+src/purchases_orders.scailo_pb.ts:3315
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3312
+src/purchases_orders.scailo_pb.ts:3331
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3310
+src/purchases_orders.scailo_pb.ts:3329
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3311
+src/purchases_orders.scailo_pb.ts:3330
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3333
+src/purchases_orders.scailo_pb.ts:3352
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3321
+src/purchases_orders.scailo_pb.ts:3340
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3325
+src/purchases_orders.scailo_pb.ts:3344
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3329
+src/purchases_orders.scailo_pb.ts:3348

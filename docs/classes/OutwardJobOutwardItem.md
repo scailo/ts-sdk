@@ -25,11 +25,13 @@ from message Scailo.OutwardJobOutwardItem
 - [approvalMetadata](OutwardJobOutwardItem.md#approvalmetadata)
 - [entityUuid](OutwardJobOutwardItem.md#entityuuid)
 - [familyId](OutwardJobOutwardItem.md#familyid)
+- [familyUuid](OutwardJobOutwardItem.md#familyuuid)
 - [internalQuantity](OutwardJobOutwardItem.md#internalquantity)
 - [itemHash](OutwardJobOutwardItem.md#itemhash)
 - [metadata](OutwardJobOutwardItem.md#metadata)
 - [needApproval](OutwardJobOutwardItem.md#needapproval)
 - [outwardJobId](OutwardJobOutwardItem.md#outwardjobid)
+- [outwardJobUuid](OutwardJobOutwardItem.md#outwardjobuuid)
 - [specifications](OutwardJobOutwardItem.md#specifications)
 - [userComment](OutwardJobOutwardItem.md#usercomment)
 - [fields](OutwardJobOutwardItem.md#fields)
@@ -75,7 +77,7 @@ Message\&lt;OutwardJobOutwardItem\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2681
+src/outward_jobs.scailo_pb.ts:2717
 
 ## Properties
 
@@ -91,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2630
+src/outward_jobs.scailo_pb.ts:2649
 
 ___
 
@@ -107,7 +109,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2616
+src/outward_jobs.scailo_pb.ts:2635
 
 ___
 
@@ -123,7 +125,25 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2658
+src/outward_jobs.scailo_pb.ts:2677
+
+___
+
+### familyUuid
+
+• **familyUuid**: `string` = `""`
+
+The UUID of the associated family
+
+----------------------------------------
+
+**`Generated`**
+
+from field: string family_uuid = 111;
+
+#### Defined in
+
+src/outward_jobs.scailo_pb.ts:2715
 
 ___
 
@@ -139,7 +159,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2672
+src/outward_jobs.scailo_pb.ts:2691
 
 ___
 
@@ -155,7 +175,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2665
+src/outward_jobs.scailo_pb.ts:2684
 
 ___
 
@@ -171,7 +191,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2623
+src/outward_jobs.scailo_pb.ts:2642
 
 ___
 
@@ -187,7 +207,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2637
+src/outward_jobs.scailo_pb.ts:2656
 
 ___
 
@@ -203,7 +223,24 @@ from field: uint64 outward_job_id = 10;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2651
+src/outward_jobs.scailo_pb.ts:2670
+
+___
+
+### outwardJobUuid
+
+• **outwardJobUuid**: `string` = `""`
+
+----------------------------------------
+The UUID of the associated outward job
+
+**`Generated`**
+
+from field: string outward_job_uuid = 110;
+
+#### Defined in
+
+src/outward_jobs.scailo_pb.ts:2706
 
 ___
 
@@ -219,7 +256,7 @@ from field: string specifications = 14;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2679
+src/outward_jobs.scailo_pb.ts:2698
 
 ___
 
@@ -235,7 +272,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2644
+src/outward_jobs.scailo_pb.ts:2663
 
 ___
 
@@ -245,7 +282,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2688
+src/outward_jobs.scailo_pb.ts:2724
 
 ___
 
@@ -255,7 +292,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2686
+src/outward_jobs.scailo_pb.ts:2722
 
 ___
 
@@ -265,7 +302,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2687
+src/outward_jobs.scailo_pb.ts:2723
 
 ## Methods
 
@@ -553,7 +590,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2713
+src/outward_jobs.scailo_pb.ts:2751
 
 ___
 
@@ -574,7 +611,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2701
+src/outward_jobs.scailo_pb.ts:2739
 
 ___
 
@@ -595,7 +632,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2705
+src/outward_jobs.scailo_pb.ts:2743
 
 ___
 
@@ -616,4 +653,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2709
+src/outward_jobs.scailo_pb.ts:2747

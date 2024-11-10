@@ -84,7 +84,7 @@ Message\&lt;SupplyOfferItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2490
+src/supply_offers.scailo_pb.ts:2509
 
 ## Properties
 
@@ -100,7 +100,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2425
+src/supply_offers.scailo_pb.ts:2444
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2418
+src/supply_offers.scailo_pb.ts:2437
 
 ___
 
@@ -132,7 +132,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2411
+src/supply_offers.scailo_pb.ts:2430
 
 ___
 
@@ -148,7 +148,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2432
+src/supply_offers.scailo_pb.ts:2451
 
 ___
 
@@ -164,7 +164,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2369
+src/supply_offers.scailo_pb.ts:2388
 
 ___
 
@@ -180,7 +180,7 @@ from field: string delivery_date_end = 30;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2481
+src/supply_offers.scailo_pb.ts:2500
 
 ___
 
@@ -196,7 +196,7 @@ from field: string delivery_date_exact = 28;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2467
+src/supply_offers.scailo_pb.ts:2486
 
 ___
 
@@ -212,7 +212,7 @@ from field: string delivery_date_start = 29;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2474
+src/supply_offers.scailo_pb.ts:2493
 
 ___
 
@@ -228,7 +228,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2397
+src/supply_offers.scailo_pb.ts:2416
 
 ___
 
@@ -244,7 +244,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2446
+src/supply_offers.scailo_pb.ts:2465
 
 ___
 
@@ -260,7 +260,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2362
+src/supply_offers.scailo_pb.ts:2381
 
 ___
 
@@ -276,7 +276,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2376
+src/supply_offers.scailo_pb.ts:2395
 
 ___
 
@@ -292,7 +292,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2488
+src/supply_offers.scailo_pb.ts:2507
 
 ___
 
@@ -308,7 +308,7 @@ from field: Scailo.SUPPLY_OFFER_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2390
+src/supply_offers.scailo_pb.ts:2409
 
 ___
 
@@ -324,7 +324,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2383
+src/supply_offers.scailo_pb.ts:2402
 
 ___
 
@@ -340,7 +340,7 @@ from field: Scailo.SUPPLY_OFFER_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2404
+src/supply_offers.scailo_pb.ts:2423
 
 ___
 
@@ -356,7 +356,7 @@ from field: uint64 supply_offer_id = 20;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2439
+src/supply_offers.scailo_pb.ts:2458
 
 ___
 
@@ -372,7 +372,7 @@ from field: uint64 tax_group_id = 23;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2460
+src/supply_offers.scailo_pb.ts:2479
 
 ___
 
@@ -388,7 +388,7 @@ from field: uint64 vendor_uom_id = 22;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2453
+src/supply_offers.scailo_pb.ts:2472
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2497
+src/supply_offers.scailo_pb.ts:2516
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2495
+src/supply_offers.scailo_pb.ts:2514
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2496
+src/supply_offers.scailo_pb.ts:2515
 
 ## Methods
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2531
+src/supply_offers.scailo_pb.ts:2550
 
 ___
 
@@ -727,7 +727,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2519
+src/supply_offers.scailo_pb.ts:2538
 
 ___
 
@@ -748,7 +748,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2523
+src/supply_offers.scailo_pb.ts:2542
 
 ___
 
@@ -769,4 +769,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2527
+src/supply_offers.scailo_pb.ts:2546

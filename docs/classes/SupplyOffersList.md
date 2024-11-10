@@ -66,7 +66,7 @@ Message\&lt;SupplyOffersList\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1370
+src/supply_offers.scailo_pb.ts:1389
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SupplyOffer list = 1;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1368
+src/supply_offers.scailo_pb.ts:1387
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1377
+src/supply_offers.scailo_pb.ts:1396
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1375
+src/supply_offers.scailo_pb.ts:1394
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1376
+src/supply_offers.scailo_pb.ts:1395
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1393
+src/supply_offers.scailo_pb.ts:1412
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1381
+src/supply_offers.scailo_pb.ts:1400
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1385
+src/supply_offers.scailo_pb.ts:1404
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1389
+src/supply_offers.scailo_pb.ts:1408

@@ -71,7 +71,7 @@ Message\&lt;SupplyOffersServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1597
+src/supply_offers.scailo_pb.ts:1616
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1567
+src/supply_offers.scailo_pb.ts:1586
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1560
+src/supply_offers.scailo_pb.ts:1579
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1574
+src/supply_offers.scailo_pb.ts:1593
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.SUPPLY_OFFER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1588
+src/supply_offers.scailo_pb.ts:1607
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1581
+src/supply_offers.scailo_pb.ts:1600
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1595
+src/supply_offers.scailo_pb.ts:1614
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1604
+src/supply_offers.scailo_pb.ts:1623
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1602
+src/supply_offers.scailo_pb.ts:1621
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1603
+src/supply_offers.scailo_pb.ts:1622
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1625
+src/supply_offers.scailo_pb.ts:1644
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1613
+src/supply_offers.scailo_pb.ts:1632
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1617
+src/supply_offers.scailo_pb.ts:1636
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1621
+src/supply_offers.scailo_pb.ts:1640

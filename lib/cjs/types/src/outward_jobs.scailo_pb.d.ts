@@ -775,6 +775,21 @@ export declare class OutwardJobInwardItem extends Message<OutwardJobInwardItem> 
      * @generated from field: string specifications = 14;
      */
     specifications: string;
+    /**
+     * ----------------------------------------
+     * The UUID of the associated outward job
+     *
+     * @generated from field: string outward_job_uuid = 110;
+     */
+    outwardJobUuid: string;
+    /**
+     * The UUID of the associated family
+     *
+     * ----------------------------------------
+     *
+     * @generated from field: string family_uuid = 111;
+     */
+    familyUuid: string;
     constructor(data?: PartialMessage<OutwardJobInwardItem>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.OutwardJobInwardItem";
@@ -1775,6 +1790,21 @@ export declare class OutwardJobOutwardItem extends Message<OutwardJobOutwardItem
      * @generated from field: string specifications = 14;
      */
     specifications: string;
+    /**
+     * ----------------------------------------
+     * The UUID of the associated outward job
+     *
+     * @generated from field: string outward_job_uuid = 110;
+     */
+    outwardJobUuid: string;
+    /**
+     * The UUID of the associated family
+     *
+     * ----------------------------------------
+     *
+     * @generated from field: string family_uuid = 111;
+     */
+    familyUuid: string;
     constructor(data?: PartialMessage<OutwardJobOutwardItem>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.OutwardJobOutwardItem";

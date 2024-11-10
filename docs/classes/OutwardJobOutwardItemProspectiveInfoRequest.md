@@ -67,7 +67,7 @@ Message\&lt;OutwardJobOutwardItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2831
+src/outward_jobs.scailo_pb.ts:2869
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2829
+src/outward_jobs.scailo_pb.ts:2867
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 outward_job_id = 10;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2822
+src/outward_jobs.scailo_pb.ts:2860
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2838
+src/outward_jobs.scailo_pb.ts:2876
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2836
+src/outward_jobs.scailo_pb.ts:2874
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2837
+src/outward_jobs.scailo_pb.ts:2875
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2855
+src/outward_jobs.scailo_pb.ts:2893
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2843
+src/outward_jobs.scailo_pb.ts:2881
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2847
+src/outward_jobs.scailo_pb.ts:2885
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2851
+src/outward_jobs.scailo_pb.ts:2889

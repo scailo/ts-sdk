@@ -1310,6 +1310,23 @@ export class SupplyOfferItem extends Message<SupplyOfferItem> {
    */
   discountedVendorUnitPrice = protoInt64.zero;
 
+  /**
+   * ----------------------------------------
+   * The UUID of the associated supply offer
+   *
+   * @generated from field: string supply_offer_uuid = 110;
+   */
+  supplyOfferUuid = "";
+
+  /**
+   * The UUID of the associated family
+   *
+   * ----------------------------------------
+   *
+   * @generated from field: string family_uuid = 111;
+   */
+  familyUuid = "";
+
   constructor(data?: PartialMessage<SupplyOfferItem>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1334,6 +1351,8 @@ export class SupplyOfferItem extends Message<SupplyOfferItem> {
     { no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "discounted_vendor_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 110, name: "supply_offer_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 111, name: "family_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SupplyOfferItem {

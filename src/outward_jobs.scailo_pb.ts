@@ -1142,6 +1142,23 @@ export class OutwardJobInwardItem extends Message<OutwardJobInwardItem> {
    */
   specifications = "";
 
+  /**
+   * ----------------------------------------
+   * The UUID of the associated outward job
+   *
+   * @generated from field: string outward_job_uuid = 110;
+   */
+  outwardJobUuid = "";
+
+  /**
+   * The UUID of the associated family
+   *
+   * ----------------------------------------
+   *
+   * @generated from field: string family_uuid = 111;
+   */
+  familyUuid = "";
+
   constructor(data?: PartialMessage<OutwardJobInwardItem>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1160,6 +1177,8 @@ export class OutwardJobInwardItem extends Message<OutwardJobInwardItem> {
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 110, name: "outward_job_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 111, name: "family_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobInwardItem {
@@ -2678,6 +2697,23 @@ export class OutwardJobOutwardItem extends Message<OutwardJobOutwardItem> {
    */
   specifications = "";
 
+  /**
+   * ----------------------------------------
+   * The UUID of the associated outward job
+   *
+   * @generated from field: string outward_job_uuid = 110;
+   */
+  outwardJobUuid = "";
+
+  /**
+   * The UUID of the associated family
+   *
+   * ----------------------------------------
+   *
+   * @generated from field: string family_uuid = 111;
+   */
+  familyUuid = "";
+
   constructor(data?: PartialMessage<OutwardJobOutwardItem>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2696,6 +2732,8 @@ export class OutwardJobOutwardItem extends Message<OutwardJobOutwardItem> {
     { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 110, name: "outward_job_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 111, name: "family_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobOutwardItem {

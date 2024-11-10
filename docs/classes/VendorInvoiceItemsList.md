@@ -66,7 +66,7 @@ Message\&lt;VendorInvoiceItemsList\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1284
+src/vendor_invoices.scailo_pb.ts:1303
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VendorInvoiceItem list = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1282
+src/vendor_invoices.scailo_pb.ts:1301
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1291
+src/vendor_invoices.scailo_pb.ts:1310
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1289
+src/vendor_invoices.scailo_pb.ts:1308
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1290
+src/vendor_invoices.scailo_pb.ts:1309
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1307
+src/vendor_invoices.scailo_pb.ts:1326
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1295
+src/vendor_invoices.scailo_pb.ts:1314
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1299
+src/vendor_invoices.scailo_pb.ts:1318
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1303
+src/vendor_invoices.scailo_pb.ts:1322

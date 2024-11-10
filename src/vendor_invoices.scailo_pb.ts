@@ -1184,6 +1184,23 @@ export class VendorInvoiceItem extends Message<VendorInvoiceItem> {
    */
   specifications = "";
 
+  /**
+   * ----------------------------------------
+   * The UUID of the associated vendor invoice
+   *
+   * @generated from field: string vendor_invoice_uuid = 110;
+   */
+  vendorInvoiceUuid = "";
+
+  /**
+   * The UUID of the associated family
+   *
+   * ----------------------------------------
+   *
+   * @generated from field: string family_uuid = 111;
+   */
+  familyUuid = "";
+
   constructor(data?: PartialMessage<VendorInvoiceItem>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1206,6 +1223,8 @@ export class VendorInvoiceItem extends Message<VendorInvoiceItem> {
     { no: 16, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 110, name: "vendor_invoice_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 111, name: "family_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorInvoiceItem {

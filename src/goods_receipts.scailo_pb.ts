@@ -951,6 +951,23 @@ export class GoodsReceiptItem extends Message<GoodsReceiptItem> {
    */
   vendorQuantity = protoInt64.zero;
 
+  /**
+   * ----------------------------------------
+   * The UUID of the associated goods receipt
+   *
+   * @generated from field: string goods_receipt_uuid = 110;
+   */
+  goodsReceiptUuid = "";
+
+  /**
+   * The UUID of the associated family
+   *
+   * ----------------------------------------
+   *
+   * @generated from field: string family_uuid = 111;
+   */
+  familyUuid = "";
+
   constructor(data?: PartialMessage<GoodsReceiptItem>) {
     super();
     proto3.util.initPartial(data, this);
@@ -969,6 +986,8 @@ export class GoodsReceiptItem extends Message<GoodsReceiptItem> {
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 110, name: "goods_receipt_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 111, name: "family_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItem {

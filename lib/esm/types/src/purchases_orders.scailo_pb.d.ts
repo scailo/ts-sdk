@@ -1013,6 +1013,21 @@ export declare class PurchaseOrderItem extends Message<PurchaseOrderItem> {
      * @generated from field: uint64 discounted_vendor_unit_price = 30;
      */
     discountedVendorUnitPrice: bigint;
+    /**
+     * ----------------------------------------
+     * The UUID of the associated purchase order
+     *
+     * @generated from field: string purchase_order_uuid = 110;
+     */
+    purchaseOrderUuid: string;
+    /**
+     * The UUID of the associated family
+     *
+     * ----------------------------------------
+     *
+     * @generated from field: string family_uuid = 111;
+     */
+    familyUuid: string;
     constructor(data?: PartialMessage<PurchaseOrderItem>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.PurchaseOrderItem";

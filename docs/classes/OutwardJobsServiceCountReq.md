@@ -87,7 +87,7 @@ Message\&lt;OutwardJobsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1917
+src/outward_jobs.scailo_pb.ts:1936
 
 ## Properties
 
@@ -103,7 +103,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1831
+src/outward_jobs.scailo_pb.ts:1850
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1824
+src/outward_jobs.scailo_pb.ts:1843
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1817
+src/outward_jobs.scailo_pb.ts:1836
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1838
+src/outward_jobs.scailo_pb.ts:1857
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1852
+src/outward_jobs.scailo_pb.ts:1871
 
 ___
 
@@ -183,7 +183,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1845
+src/outward_jobs.scailo_pb.ts:1864
 
 ___
 
@@ -199,7 +199,7 @@ from field: uint64 consignee_location_id = 22;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1894
+src/outward_jobs.scailo_pb.ts:1913
 
 ___
 
@@ -215,7 +215,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1782
+src/outward_jobs.scailo_pb.ts:1801
 
 ___
 
@@ -231,7 +231,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1775
+src/outward_jobs.scailo_pb.ts:1794
 
 ___
 
@@ -247,7 +247,7 @@ from field: string delivery_date_end = 19;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1873
+src/outward_jobs.scailo_pb.ts:1892
 
 ___
 
@@ -263,7 +263,7 @@ from field: string delivery_date_exact = 17;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1859
+src/outward_jobs.scailo_pb.ts:1878
 
 ___
 
@@ -279,7 +279,7 @@ from field: string delivery_date_start = 18;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1866
+src/outward_jobs.scailo_pb.ts:1885
 
 ___
 
@@ -295,7 +295,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1803
+src/outward_jobs.scailo_pb.ts:1822
 
 ___
 
@@ -311,7 +311,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1887
+src/outward_jobs.scailo_pb.ts:1906
 
 ___
 
@@ -327,7 +327,7 @@ from field: uint64 inward_family_id = 30;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1915
+src/outward_jobs.scailo_pb.ts:1934
 
 ___
 
@@ -343,7 +343,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1768
+src/outward_jobs.scailo_pb.ts:1787
 
 ___
 
@@ -359,7 +359,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1796
+src/outward_jobs.scailo_pb.ts:1815
 
 ___
 
@@ -375,7 +375,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1789
+src/outward_jobs.scailo_pb.ts:1808
 
 ___
 
@@ -391,7 +391,7 @@ from field: uint64 project_id = 26;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1908
+src/outward_jobs.scailo_pb.ts:1927
 
 ___
 
@@ -407,7 +407,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1880
+src/outward_jobs.scailo_pb.ts:1899
 
 ___
 
@@ -423,7 +423,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1810
+src/outward_jobs.scailo_pb.ts:1829
 
 ___
 
@@ -439,7 +439,7 @@ from field: uint64 vendor_id = 23;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1901
+src/outward_jobs.scailo_pb.ts:1920
 
 ___
 
@@ -449,7 +449,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1924
+src/outward_jobs.scailo_pb.ts:1943
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1922
+src/outward_jobs.scailo_pb.ts:1941
 
 ___
 
@@ -469,7 +469,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1923
+src/outward_jobs.scailo_pb.ts:1942
 
 ## Methods
 
@@ -757,7 +757,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1961
+src/outward_jobs.scailo_pb.ts:1980
 
 ___
 
@@ -778,7 +778,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1949
+src/outward_jobs.scailo_pb.ts:1968
 
 ___
 
@@ -799,7 +799,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1953
+src/outward_jobs.scailo_pb.ts:1972
 
 ___
 
@@ -820,4 +820,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:1957
+src/outward_jobs.scailo_pb.ts:1976

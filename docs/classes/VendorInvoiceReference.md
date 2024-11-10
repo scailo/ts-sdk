@@ -72,7 +72,7 @@ Message\&lt;VendorInvoiceReference\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2386
+src/vendor_invoices.scailo_pb.ts:2405
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2356
+src/vendor_invoices.scailo_pb.ts:2375
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2342
+src/vendor_invoices.scailo_pb.ts:2361
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 goods_receipt_id = 11;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2384
+src/vendor_invoices.scailo_pb.ts:2403
 
 ___
 
@@ -136,7 +136,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2349
+src/vendor_invoices.scailo_pb.ts:2368
 
 ___
 
@@ -152,7 +152,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2363
+src/vendor_invoices.scailo_pb.ts:2382
 
 ___
 
@@ -168,7 +168,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2370
+src/vendor_invoices.scailo_pb.ts:2389
 
 ___
 
@@ -184,7 +184,7 @@ from field: uint64 vendor_invoice_id = 10;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2377
+src/vendor_invoices.scailo_pb.ts:2396
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2393
+src/vendor_invoices.scailo_pb.ts:2412
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2391
+src/vendor_invoices.scailo_pb.ts:2410
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2392
+src/vendor_invoices.scailo_pb.ts:2411
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2415
+src/vendor_invoices.scailo_pb.ts:2434
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2403
+src/vendor_invoices.scailo_pb.ts:2422
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2407
+src/vendor_invoices.scailo_pb.ts:2426
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2411
+src/vendor_invoices.scailo_pb.ts:2430

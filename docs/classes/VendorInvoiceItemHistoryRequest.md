@@ -67,7 +67,7 @@ Message\&lt;VendorInvoiceItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1333
+src/vendor_invoices.scailo_pb.ts:1352
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1331
+src/vendor_invoices.scailo_pb.ts:1350
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 vendor_invoice_id = 10;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1324
+src/vendor_invoices.scailo_pb.ts:1343
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1340
+src/vendor_invoices.scailo_pb.ts:1359
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1338
+src/vendor_invoices.scailo_pb.ts:1357
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1339
+src/vendor_invoices.scailo_pb.ts:1358
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1357
+src/vendor_invoices.scailo_pb.ts:1376
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1345
+src/vendor_invoices.scailo_pb.ts:1364
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1349
+src/vendor_invoices.scailo_pb.ts:1368
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:1353
+src/vendor_invoices.scailo_pb.ts:1372
