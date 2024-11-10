@@ -39,6 +39,7 @@ from message Scailo.OutwardJobInwardItemsSearchRequest
 - [sortKey](OutwardJobInwardItemsSearchRequest.md#sortkey)
 - [sortOrder](OutwardJobInwardItemsSearchRequest.md#sortorder)
 - [status](OutwardJobInwardItemsSearchRequest.md#status)
+- [vendorId](OutwardJobInwardItemsSearchRequest.md#vendorid)
 - [fields](OutwardJobInwardItemsSearchRequest.md#fields)
 - [runtime](OutwardJobInwardItemsSearchRequest.md#runtime)
 - [typeName](OutwardJobInwardItemsSearchRequest.md#typename)
@@ -82,7 +83,7 @@ Message\&lt;OutwardJobInwardItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2233
+src/outward_jobs.scailo_pb.ts:2244
 
 ## Properties
 
@@ -358,13 +359,33 @@ src/outward_jobs.scailo_pb.ts:2161
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+------------------------------------------
+Extra filters
+The ID of the associated vendor
+
+------------------------------------------
+
+**`Generated`**
+
+from field: uint64 vendor_id = 200;
+
+#### Defined in
+
+src/outward_jobs.scailo_pb.ts:2242
+
+___
+
 ### fields
 
 ▪ `Static` `Readonly` **fields**: `FieldList`
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2240
+src/outward_jobs.scailo_pb.ts:2251
 
 ___
 
@@ -374,7 +395,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2238
+src/outward_jobs.scailo_pb.ts:2249
 
 ___
 
@@ -384,7 +405,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2239
+src/outward_jobs.scailo_pb.ts:2250
 
 ## Methods
 
@@ -672,7 +693,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2272
+src/outward_jobs.scailo_pb.ts:2284
 
 ___
 
@@ -693,7 +714,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2260
+src/outward_jobs.scailo_pb.ts:2272
 
 ___
 
@@ -714,7 +735,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2264
+src/outward_jobs.scailo_pb.ts:2276
 
 ___
 
@@ -735,4 +756,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2268
+src/outward_jobs.scailo_pb.ts:2280

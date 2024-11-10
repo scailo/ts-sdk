@@ -1956,6 +1956,16 @@ export declare class PurchaseOrderItemsSearchRequest extends Message<PurchaseOrd
      * @generated from field: string search_key = 40;
      */
     searchKey: string;
+    /**
+     * ------------------------------------------
+     * Extra filters
+     * The ID of the associated vendor
+     *
+     * ------------------------------------------
+     *
+     * @generated from field: uint64 vendor_id = 200;
+     */
+    vendorId: bigint;
     constructor(data?: PartialMessage<PurchaseOrderItemsSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.PurchaseOrderItemsSearchRequest";

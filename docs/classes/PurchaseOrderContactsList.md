@@ -66,7 +66,7 @@ Message\&lt;PurchaseOrderContactsList\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3131
+src/purchases_orders.scailo_pb.ts:3143
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.PurchaseOrderContact list = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3129
+src/purchases_orders.scailo_pb.ts:3141
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3138
+src/purchases_orders.scailo_pb.ts:3150
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3136
+src/purchases_orders.scailo_pb.ts:3148
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3137
+src/purchases_orders.scailo_pb.ts:3149
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3154
+src/purchases_orders.scailo_pb.ts:3166
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3142
+src/purchases_orders.scailo_pb.ts:3154
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3146
+src/purchases_orders.scailo_pb.ts:3158
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3150
+src/purchases_orders.scailo_pb.ts:3162

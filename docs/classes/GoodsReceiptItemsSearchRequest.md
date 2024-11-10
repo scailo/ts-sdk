@@ -36,6 +36,7 @@ from message Scailo.GoodsReceiptItemsSearchRequest
 - [sortKey](GoodsReceiptItemsSearchRequest.md#sortkey)
 - [sortOrder](GoodsReceiptItemsSearchRequest.md#sortorder)
 - [status](GoodsReceiptItemsSearchRequest.md#status)
+- [vendorId](GoodsReceiptItemsSearchRequest.md#vendorid)
 - [vendorUomId](GoodsReceiptItemsSearchRequest.md#vendoruomid)
 - [fields](GoodsReceiptItemsSearchRequest.md#fields)
 - [runtime](GoodsReceiptItemsSearchRequest.md#runtime)
@@ -80,7 +81,7 @@ Message\&lt;GoodsReceiptItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1306
+src/goods_receipts.scailo_pb.ts:1317
 
 ## Properties
 
@@ -308,6 +309,26 @@ src/goods_receipts.scailo_pb.ts:1248
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+------------------------------------------
+Extra filters
+The ID of the associated vendor
+
+------------------------------------------
+
+**`Generated`**
+
+from field: uint64 vendor_id = 200;
+
+#### Defined in
+
+src/goods_receipts.scailo_pb.ts:1315
+
+___
+
 ### vendorUomId
 
 • **vendorUomId**: `bigint` = `protoInt64.zero`
@@ -330,7 +351,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1313
+src/goods_receipts.scailo_pb.ts:1324
 
 ___
 
@@ -340,7 +361,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1311
+src/goods_receipts.scailo_pb.ts:1322
 
 ___
 
@@ -350,7 +371,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1312
+src/goods_receipts.scailo_pb.ts:1323
 
 ## Methods
 
@@ -638,7 +659,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1343
+src/goods_receipts.scailo_pb.ts:1355
 
 ___
 
@@ -659,7 +680,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1331
+src/goods_receipts.scailo_pb.ts:1343
 
 ___
 
@@ -680,7 +701,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1335
+src/goods_receipts.scailo_pb.ts:1347
 
 ___
 
@@ -701,4 +722,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1339
+src/goods_receipts.scailo_pb.ts:1351

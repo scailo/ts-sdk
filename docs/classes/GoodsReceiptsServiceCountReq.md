@@ -90,7 +90,7 @@ Message\&lt;GoodsReceiptsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2068
+src/goods_receipts.scailo_pb.ts:2080
 
 ## Properties
 
@@ -106,7 +106,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1961
+src/goods_receipts.scailo_pb.ts:1973
 
 ___
 
@@ -122,7 +122,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1954
+src/goods_receipts.scailo_pb.ts:1966
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1947
+src/goods_receipts.scailo_pb.ts:1959
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1968
+src/goods_receipts.scailo_pb.ts:1980
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.GOODS_RECEIPT_BILLING_STATUS billing_status = 50;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2066
+src/goods_receipts.scailo_pb.ts:2078
 
 ___
 
@@ -186,7 +186,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1982
+src/goods_receipts.scailo_pb.ts:1994
 
 ___
 
@@ -202,7 +202,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1975
+src/goods_receipts.scailo_pb.ts:1987
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1912
+src/goods_receipts.scailo_pb.ts:1924
 
 ___
 
@@ -234,7 +234,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1905
+src/goods_receipts.scailo_pb.ts:1917
 
 ___
 
@@ -250,7 +250,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1933
+src/goods_receipts.scailo_pb.ts:1945
 
 ___
 
@@ -266,7 +266,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2059
+src/goods_receipts.scailo_pb.ts:2071
 
 ___
 
@@ -282,7 +282,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1996
+src/goods_receipts.scailo_pb.ts:2008
 
 ___
 
@@ -298,7 +298,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1898
+src/goods_receipts.scailo_pb.ts:1910
 
 ___
 
@@ -314,7 +314,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1926
+src/goods_receipts.scailo_pb.ts:1938
 
 ___
 
@@ -330,7 +330,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1919
+src/goods_receipts.scailo_pb.ts:1931
 
 ___
 
@@ -346,7 +346,7 @@ from field: uint64 project_id = 31;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2052
+src/goods_receipts.scailo_pb.ts:2064
 
 ___
 
@@ -362,7 +362,7 @@ from field: string ref_from = 22;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2003
+src/goods_receipts.scailo_pb.ts:2015
 
 ___
 
@@ -378,7 +378,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2010
+src/goods_receipts.scailo_pb.ts:2022
 
 ___
 
@@ -394,7 +394,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1989
+src/goods_receipts.scailo_pb.ts:2001
 
 ___
 
@@ -410,7 +410,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1940
+src/goods_receipts.scailo_pb.ts:1952
 
 ___
 
@@ -426,7 +426,7 @@ from field: string vendor_bill_date_end = 26;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2031
+src/goods_receipts.scailo_pb.ts:2043
 
 ___
 
@@ -442,7 +442,7 @@ from field: string vendor_bill_date_exact = 27;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2038
+src/goods_receipts.scailo_pb.ts:2050
 
 ___
 
@@ -458,7 +458,7 @@ from field: string vendor_bill_date_start = 25;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2024
+src/goods_receipts.scailo_pb.ts:2036
 
 ___
 
@@ -474,7 +474,7 @@ from field: string vendor_bill_no = 24;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2017
+src/goods_receipts.scailo_pb.ts:2029
 
 ___
 
@@ -490,7 +490,7 @@ from field: uint64 vendor_id = 30;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2045
+src/goods_receipts.scailo_pb.ts:2057
 
 ___
 
@@ -500,7 +500,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2075
+src/goods_receipts.scailo_pb.ts:2087
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2073
+src/goods_receipts.scailo_pb.ts:2085
 
 ___
 
@@ -520,7 +520,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2074
+src/goods_receipts.scailo_pb.ts:2086
 
 ## Methods
 
@@ -808,7 +808,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2115
+src/goods_receipts.scailo_pb.ts:2127
 
 ___
 
@@ -829,7 +829,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2103
+src/goods_receipts.scailo_pb.ts:2115
 
 ___
 
@@ -850,7 +850,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2107
+src/goods_receipts.scailo_pb.ts:2119
 
 ___
 
@@ -871,4 +871,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2111
+src/goods_receipts.scailo_pb.ts:2123

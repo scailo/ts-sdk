@@ -68,7 +68,7 @@ Message\&lt;PurchaseOrderBillingStatistics\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3245
+src/purchases_orders.scailo_pb.ts:3257
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 billed = 2;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3236
+src/purchases_orders.scailo_pb.ts:3248
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 debited = 3;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3243
+src/purchases_orders.scailo_pb.ts:3255
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ordered = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3229
+src/purchases_orders.scailo_pb.ts:3241
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3252
+src/purchases_orders.scailo_pb.ts:3264
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3250
+src/purchases_orders.scailo_pb.ts:3262
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3251
+src/purchases_orders.scailo_pb.ts:3263
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3270
+src/purchases_orders.scailo_pb.ts:3282
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3258
+src/purchases_orders.scailo_pb.ts:3270
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3262
+src/purchases_orders.scailo_pb.ts:3274
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3266
+src/purchases_orders.scailo_pb.ts:3278

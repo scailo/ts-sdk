@@ -36,6 +36,7 @@ from message Scailo.VendorInvoiceItemsSearchRequest
 - [sortOrder](VendorInvoiceItemsSearchRequest.md#sortorder)
 - [status](VendorInvoiceItemsSearchRequest.md#status)
 - [taxGroupId](VendorInvoiceItemsSearchRequest.md#taxgroupid)
+- [vendorId](VendorInvoiceItemsSearchRequest.md#vendorid)
 - [vendorInvoiceId](VendorInvoiceItemsSearchRequest.md#vendorinvoiceid)
 - [vendorUomId](VendorInvoiceItemsSearchRequest.md#vendoruomid)
 - [fields](VendorInvoiceItemsSearchRequest.md#fields)
@@ -81,7 +82,7 @@ Message\&lt;VendorInvoiceItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2600
+src/vendor_invoices.scailo_pb.ts:2611
 
 ## Properties
 
@@ -309,6 +310,26 @@ src/vendor_invoices.scailo_pb.ts:2591
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+------------------------------------------
+Extra filters
+The ID of the associated vendor
+
+------------------------------------------
+
+**`Generated`**
+
+from field: uint64 vendor_id = 200;
+
+#### Defined in
+
+src/vendor_invoices.scailo_pb.ts:2609
+
+___
+
 ### vendorInvoiceId
 
 • **vendorInvoiceId**: `bigint` = `protoInt64.zero`
@@ -347,7 +368,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2607
+src/vendor_invoices.scailo_pb.ts:2618
 
 ___
 
@@ -357,7 +378,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2605
+src/vendor_invoices.scailo_pb.ts:2616
 
 ___
 
@@ -367,7 +388,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2606
+src/vendor_invoices.scailo_pb.ts:2617
 
 ## Methods
 
@@ -655,7 +676,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2638
+src/vendor_invoices.scailo_pb.ts:2650
 
 ___
 
@@ -676,7 +697,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2626
+src/vendor_invoices.scailo_pb.ts:2638
 
 ___
 
@@ -697,7 +718,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2630
+src/vendor_invoices.scailo_pb.ts:2642
 
 ___
 
@@ -718,4 +739,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2634
+src/vendor_invoices.scailo_pb.ts:2646

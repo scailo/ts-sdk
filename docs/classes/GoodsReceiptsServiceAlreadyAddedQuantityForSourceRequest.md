@@ -68,7 +68,7 @@ Message\&lt;GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest\&gt;.constr
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1442
+src/goods_receipts.scailo_pb.ts:1454
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1440
+src/goods_receipts.scailo_pb.ts:1452
 
 ___
 
@@ -100,7 +100,7 @@ from field: string ref_from = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1426
+src/goods_receipts.scailo_pb.ts:1438
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1433
+src/goods_receipts.scailo_pb.ts:1445
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1449
+src/goods_receipts.scailo_pb.ts:1461
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1447
+src/goods_receipts.scailo_pb.ts:1459
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1448
+src/goods_receipts.scailo_pb.ts:1460
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1467
+src/goods_receipts.scailo_pb.ts:1479
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1455
+src/goods_receipts.scailo_pb.ts:1467
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1459
+src/goods_receipts.scailo_pb.ts:1471
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1463
+src/goods_receipts.scailo_pb.ts:1475

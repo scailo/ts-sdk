@@ -2506,6 +2506,17 @@ export class SupplyOfferItemsSearchRequest extends Message<SupplyOfferItemsSearc
    */
   searchKey = "";
 
+  /**
+   * ------------------------------------------
+   * Extra filters
+   * The ID of the associated vendor
+   *
+   * ------------------------------------------
+   *
+   * @generated from field: uint64 vendor_id = 200;
+   */
+  vendorId = protoInt64.zero;
+
   constructor(data?: PartialMessage<SupplyOfferItemsSearchRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2533,6 +2544,7 @@ export class SupplyOfferItemsSearchRequest extends Message<SupplyOfferItemsSearc
     { no: 29, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 200, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SupplyOfferItemsSearchRequest {

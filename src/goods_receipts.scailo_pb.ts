@@ -1303,6 +1303,17 @@ export class GoodsReceiptItemsSearchRequest extends Message<GoodsReceiptItemsSea
    */
   searchKey = "";
 
+  /**
+   * ------------------------------------------
+   * Extra filters
+   * The ID of the associated vendor
+   *
+   * ------------------------------------------
+   *
+   * @generated from field: uint64 vendor_id = 200;
+   */
+  vendorId = protoInt64.zero;
+
   constructor(data?: PartialMessage<GoodsReceiptItemsSearchRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1326,6 +1337,7 @@ export class GoodsReceiptItemsSearchRequest extends Message<GoodsReceiptItemsSea
     { no: 22, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 200, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItemsSearchRequest {

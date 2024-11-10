@@ -40,6 +40,7 @@ from message Scailo.SupplyOfferItemsSearchRequest
 - [status](SupplyOfferItemsSearchRequest.md#status)
 - [supplyOfferId](SupplyOfferItemsSearchRequest.md#supplyofferid)
 - [taxGroupId](SupplyOfferItemsSearchRequest.md#taxgroupid)
+- [vendorId](SupplyOfferItemsSearchRequest.md#vendorid)
 - [vendorUomId](SupplyOfferItemsSearchRequest.md#vendoruomid)
 - [fields](SupplyOfferItemsSearchRequest.md#fields)
 - [runtime](SupplyOfferItemsSearchRequest.md#runtime)
@@ -84,7 +85,7 @@ Message\&lt;SupplyOfferItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2509
+src/supply_offers.scailo_pb.ts:2520
 
 ## Properties
 
@@ -376,6 +377,26 @@ src/supply_offers.scailo_pb.ts:2479
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+------------------------------------------
+Extra filters
+The ID of the associated vendor
+
+------------------------------------------
+
+**`Generated`**
+
+from field: uint64 vendor_id = 200;
+
+#### Defined in
+
+src/supply_offers.scailo_pb.ts:2518
+
+___
+
 ### vendorUomId
 
 • **vendorUomId**: `bigint` = `protoInt64.zero`
@@ -398,7 +419,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2516
+src/supply_offers.scailo_pb.ts:2527
 
 ___
 
@@ -408,7 +429,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2514
+src/supply_offers.scailo_pb.ts:2525
 
 ___
 
@@ -418,7 +439,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2515
+src/supply_offers.scailo_pb.ts:2526
 
 ## Methods
 
@@ -706,7 +727,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2550
+src/supply_offers.scailo_pb.ts:2562
 
 ___
 
@@ -727,7 +748,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2538
+src/supply_offers.scailo_pb.ts:2550
 
 ___
 
@@ -748,7 +769,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2542
+src/supply_offers.scailo_pb.ts:2554
 
 ___
 
@@ -769,4 +790,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2546
+src/supply_offers.scailo_pb.ts:2558

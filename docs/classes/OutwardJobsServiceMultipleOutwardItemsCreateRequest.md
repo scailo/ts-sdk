@@ -68,7 +68,7 @@ Message\&lt;OutwardJobsServiceMultipleOutwardItemsCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2519
+src/outward_jobs.scailo_pb.ts:2531
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: repeated Scailo.OutwardJobsServiceMultipleOutwardItemsSingleton list
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2517
+src/outward_jobs.scailo_pb.ts:2529
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 outward_job_id = 10;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2510
+src/outward_jobs.scailo_pb.ts:2522
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2503
+src/outward_jobs.scailo_pb.ts:2515
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2526
+src/outward_jobs.scailo_pb.ts:2538
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2524
+src/outward_jobs.scailo_pb.ts:2536
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2525
+src/outward_jobs.scailo_pb.ts:2537
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2544
+src/outward_jobs.scailo_pb.ts:2556
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2532
+src/outward_jobs.scailo_pb.ts:2544
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2536
+src/outward_jobs.scailo_pb.ts:2548
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:2540
+src/outward_jobs.scailo_pb.ts:2552

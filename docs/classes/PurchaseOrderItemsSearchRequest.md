@@ -40,6 +40,7 @@ from message Scailo.PurchaseOrderItemsSearchRequest
 - [sortOrder](PurchaseOrderItemsSearchRequest.md#sortorder)
 - [status](PurchaseOrderItemsSearchRequest.md#status)
 - [taxGroupId](PurchaseOrderItemsSearchRequest.md#taxgroupid)
+- [vendorId](PurchaseOrderItemsSearchRequest.md#vendorid)
 - [vendorUomId](PurchaseOrderItemsSearchRequest.md#vendoruomid)
 - [fields](PurchaseOrderItemsSearchRequest.md#fields)
 - [runtime](PurchaseOrderItemsSearchRequest.md#runtime)
@@ -84,7 +85,7 @@ Message\&lt;PurchaseOrderItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2849
+src/purchases_orders.scailo_pb.ts:2860
 
 ## Properties
 
@@ -376,6 +377,26 @@ src/purchases_orders.scailo_pb.ts:2819
 
 ___
 
+### vendorId
+
+• **vendorId**: `bigint` = `protoInt64.zero`
+
+------------------------------------------
+Extra filters
+The ID of the associated vendor
+
+------------------------------------------
+
+**`Generated`**
+
+from field: uint64 vendor_id = 200;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:2858
+
+___
+
 ### vendorUomId
 
 • **vendorUomId**: `bigint` = `protoInt64.zero`
@@ -398,7 +419,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2856
+src/purchases_orders.scailo_pb.ts:2867
 
 ___
 
@@ -408,7 +429,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2854
+src/purchases_orders.scailo_pb.ts:2865
 
 ___
 
@@ -418,7 +439,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2855
+src/purchases_orders.scailo_pb.ts:2866
 
 ## Methods
 
@@ -706,7 +727,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2890
+src/purchases_orders.scailo_pb.ts:2902
 
 ___
 
@@ -727,7 +748,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2878
+src/purchases_orders.scailo_pb.ts:2890
 
 ___
 
@@ -748,7 +769,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2882
+src/purchases_orders.scailo_pb.ts:2894
 
 ___
 
@@ -769,4 +790,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2886
+src/purchases_orders.scailo_pb.ts:2898

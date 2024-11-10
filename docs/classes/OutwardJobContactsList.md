@@ -66,7 +66,7 @@ Message\&lt;OutwardJobContactsList\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3288
+src/outward_jobs.scailo_pb.ts:3312
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.OutwardJobContact list = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3286
+src/outward_jobs.scailo_pb.ts:3310
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3295
+src/outward_jobs.scailo_pb.ts:3319
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3293
+src/outward_jobs.scailo_pb.ts:3317
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3294
+src/outward_jobs.scailo_pb.ts:3318
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3311
+src/outward_jobs.scailo_pb.ts:3335
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3299
+src/outward_jobs.scailo_pb.ts:3323
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3303
+src/outward_jobs.scailo_pb.ts:3327
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3307
+src/outward_jobs.scailo_pb.ts:3331
