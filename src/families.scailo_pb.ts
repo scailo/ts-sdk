@@ -438,13 +438,6 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
    */
   consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
 
-  /**
-   * Stores the list of label IDs
-   *
-   * @generated from field: repeated uint64 label_ids = 30;
-   */
-  labelIds: bigint[] = [];
-
   constructor(data?: PartialMessage<FamiliesServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -472,7 +465,6 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
     { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 28, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
-    { no: 30, name: "label_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceCreateRequest {
@@ -639,13 +631,6 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
    */
   consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
 
-  /**
-   * Stores the list of label IDs
-   *
-   * @generated from field: repeated uint64 label_ids = 30;
-   */
-  labelIds: bigint[] = [];
-
   constructor(data?: PartialMessage<FamiliesServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -674,7 +659,6 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
     { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 28, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
-    { no: 30, name: "label_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdateRequest {
@@ -856,13 +840,6 @@ export class Family extends Message<Family> {
   consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
 
   /**
-   * Stores the list of label IDs
-   *
-   * @generated from field: repeated uint64 label_ids = 30;
-   */
-  labelIds: bigint[] = [];
-
-  /**
    * The number of times that the family has been amended
    *
    * @generated from field: uint64 amendment_count = 40;
@@ -899,7 +876,6 @@ export class Family extends Message<Family> {
     { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 29, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
-    { no: 30, name: "label_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 40, name: "amendment_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
@@ -1320,6 +1296,13 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    */
   parentStorageId = protoInt64.zero;
 
+  /**
+   * Filter by families that have the given label ID
+   *
+   * @generated from field: uint64 label_id = 60;
+   */
+  labelId = protoInt64.zero;
+
   constructor(data?: PartialMessage<FamiliesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1357,6 +1340,7 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
     { no: 33, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 39, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
     { no: 50, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 60, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceFilterReq {
@@ -1558,6 +1542,13 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    */
   parentStorageId = protoInt64.zero;
 
+  /**
+   * Filter by families that have the given label ID
+   *
+   * @generated from field: uint64 label_id = 60;
+   */
+  labelId = protoInt64.zero;
+
   constructor(data?: PartialMessage<FamiliesServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1591,6 +1582,7 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
     { no: 33, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 39, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
     { no: 50, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 60, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceCountReq {
@@ -1729,6 +1721,196 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
 
   static equals(a: FamiliesServiceSearchAllReq | PlainMessage<FamiliesServiceSearchAllReq> | undefined, b: FamiliesServiceSearchAllReq | PlainMessage<FamiliesServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(FamiliesServiceSearchAllReq, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters necessary to create a family label
+ *
+ * @generated from message Scailo.FamiliesServiceLabelCreateRequest
+ */
+export class FamiliesServiceLabelCreateRequest extends Message<FamiliesServiceLabelCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 10;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the label ID
+   *
+   * @generated from field: uint64 label_id = 11;
+   */
+  labelId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<FamiliesServiceLabelCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamiliesServiceLabelCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceLabelCreateRequest {
+    return new FamiliesServiceLabelCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceLabelCreateRequest {
+    return new FamiliesServiceLabelCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceLabelCreateRequest {
+    return new FamiliesServiceLabelCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamiliesServiceLabelCreateRequest | PlainMessage<FamiliesServiceLabelCreateRequest> | undefined, b: FamiliesServiceLabelCreateRequest | PlainMessage<FamiliesServiceLabelCreateRequest> | undefined): boolean {
+    return proto3.util.equals(FamiliesServiceLabelCreateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that constitute a family label
+ *
+ * @generated from message Scailo.FamilyLabel
+ */
+export class FamilyLabel extends Message<FamilyLabel> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the metadata of this family
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   * Stores the approval metadata
+   *
+   * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+   */
+  approvalMetadata?: ApprovalMetadata;
+
+  /**
+   * Denotes if this record requires approval (or has been approved)
+   *
+   * @generated from field: bool need_approval = 4;
+   */
+  needApproval = false;
+
+  /**
+   * Stores any comment that the user might have added during an operation
+   *
+   * @generated from field: string user_comment = 5;
+   */
+  userComment = "";
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 10;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the label ID
+   *
+   * @generated from field: uint64 label_id = 11;
+   */
+  labelId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<FamilyLabel>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamilyLabel";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamilyLabel {
+    return new FamilyLabel().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyLabel {
+    return new FamilyLabel().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyLabel {
+    return new FamilyLabel().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamilyLabel | PlainMessage<FamilyLabel> | undefined, b: FamilyLabel | PlainMessage<FamilyLabel> | undefined): boolean {
+    return proto3.util.equals(FamilyLabel, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the list of family labels
+ *
+ * @generated from message Scailo.FamilyLabelsList
+ */
+export class FamilyLabelsList extends Message<FamilyLabelsList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.FamilyLabel list = 1;
+   */
+  list: FamilyLabel[] = [];
+
+  constructor(data?: PartialMessage<FamilyLabelsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamilyLabelsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: FamilyLabel, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamilyLabelsList {
+    return new FamilyLabelsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyLabelsList {
+    return new FamilyLabelsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyLabelsList {
+    return new FamilyLabelsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamilyLabelsList | PlainMessage<FamilyLabelsList> | undefined, b: FamilyLabelsList | PlainMessage<FamilyLabelsList> | undefined): boolean {
+    return proto3.util.equals(FamilyLabelsList, a, b);
   }
 }
 
@@ -2381,6 +2563,64 @@ export class FamilyQCGroupsList extends Message<FamilyQCGroupsList> {
 
   static equals(a: FamilyQCGroupsList | PlainMessage<FamilyQCGroupsList> | undefined, b: FamilyQCGroupsList | PlainMessage<FamilyQCGroupsList> | undefined): boolean {
     return proto3.util.equals(FamilyQCGroupsList, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters necessary to adjust a family's price
+ *
+ * @generated from message Scailo.FamiliesServiceAdjustPriceRequest
+ */
+export class FamiliesServiceAdjustPriceRequest extends Message<FamiliesServiceAdjustPriceRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the family
+   *
+   * @generated from field: string uuid = 10;
+   */
+  uuid = "";
+
+  /**
+   * Stores the unit price
+   *
+   * @generated from field: uint64 price = 26;
+   */
+  price = protoInt64.zero;
+
+  constructor(data?: PartialMessage<FamiliesServiceAdjustPriceRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamiliesServiceAdjustPriceRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceAdjustPriceRequest {
+    return new FamiliesServiceAdjustPriceRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceAdjustPriceRequest {
+    return new FamiliesServiceAdjustPriceRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceAdjustPriceRequest {
+    return new FamiliesServiceAdjustPriceRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamiliesServiceAdjustPriceRequest | PlainMessage<FamiliesServiceAdjustPriceRequest> | undefined, b: FamiliesServiceAdjustPriceRequest | PlainMessage<FamiliesServiceAdjustPriceRequest> | undefined): boolean {
+    return proto3.util.equals(FamiliesServiceAdjustPriceRequest, a, b);
   }
 }
 

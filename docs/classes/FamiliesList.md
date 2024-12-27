@@ -66,7 +66,7 @@ Message\&lt;FamiliesList\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:937
+src/families.scailo_pb.ts:913
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Family list = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:935
+src/families.scailo_pb.ts:911
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:944
+src/families.scailo_pb.ts:920
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:942
+src/families.scailo_pb.ts:918
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:943
+src/families.scailo_pb.ts:919
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:960
+src/families.scailo_pb.ts:936
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:948
+src/families.scailo_pb.ts:924
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:952
+src/families.scailo_pb.ts:928
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:956
+src/families.scailo_pb.ts:932

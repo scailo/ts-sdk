@@ -330,12 +330,6 @@ export declare class FamiliesServiceCreateRequest extends Message<FamiliesServic
      * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 28;
      */
     consumptionSequence: CONSUMPTION_SEQUENCE;
-    /**
-     * Stores the list of label IDs
-     *
-     * @generated from field: repeated uint64 label_ids = 30;
-     */
-    labelIds: bigint[];
     constructor(data?: PartialMessage<FamiliesServiceCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FamiliesServiceCreateRequest";
@@ -472,12 +466,6 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
      * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 28;
      */
     consumptionSequence: CONSUMPTION_SEQUENCE;
-    /**
-     * Stores the list of label IDs
-     *
-     * @generated from field: repeated uint64 label_ids = 30;
-     */
-    labelIds: bigint[];
     constructor(data?: PartialMessage<FamiliesServiceUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FamiliesServiceUpdateRequest";
@@ -626,12 +614,6 @@ export declare class Family extends Message<Family> {
      * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 29;
      */
     consumptionSequence: CONSUMPTION_SEQUENCE;
-    /**
-     * Stores the list of label IDs
-     *
-     * @generated from field: repeated uint64 label_ids = 30;
-     */
-    labelIds: bigint[];
     /**
      * The number of times that the family has been amended
      *
@@ -942,6 +924,12 @@ export declare class FamiliesServiceFilterReq extends Message<FamiliesServiceFil
      * @generated from field: uint64 parent_storage_id = 50;
      */
     parentStorageId: bigint;
+    /**
+     * Filter by families that have the given label ID
+     *
+     * @generated from field: uint64 label_id = 60;
+     */
+    labelId: bigint;
     constructor(data?: PartialMessage<FamiliesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FamiliesServiceFilterReq";
@@ -1108,6 +1096,12 @@ export declare class FamiliesServiceCountReq extends Message<FamiliesServiceCoun
      * @generated from field: uint64 parent_storage_id = 50;
      */
     parentStorageId: bigint;
+    /**
+     * Filter by families that have the given label ID
+     *
+     * @generated from field: uint64 label_id = 60;
+     */
+    labelId: bigint;
     constructor(data?: PartialMessage<FamiliesServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FamiliesServiceCountReq";
@@ -1198,6 +1192,120 @@ export declare class FamiliesServiceSearchAllReq extends Message<FamiliesService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceSearchAllReq;
     static equals(a: FamiliesServiceSearchAllReq | PlainMessage<FamiliesServiceSearchAllReq> | undefined, b: FamiliesServiceSearchAllReq | PlainMessage<FamiliesServiceSearchAllReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters necessary to create a family label
+ *
+ * @generated from message Scailo.FamiliesServiceLabelCreateRequest
+ */
+export declare class FamiliesServiceLabelCreateRequest extends Message<FamiliesServiceLabelCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 10;
+     */
+    familyId: bigint;
+    /**
+     * Stores the label ID
+     *
+     * @generated from field: uint64 label_id = 11;
+     */
+    labelId: bigint;
+    constructor(data?: PartialMessage<FamiliesServiceLabelCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamiliesServiceLabelCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceLabelCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceLabelCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceLabelCreateRequest;
+    static equals(a: FamiliesServiceLabelCreateRequest | PlainMessage<FamiliesServiceLabelCreateRequest> | undefined, b: FamiliesServiceLabelCreateRequest | PlainMessage<FamiliesServiceLabelCreateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that constitute a family label
+ *
+ * @generated from message Scailo.FamilyLabel
+ */
+export declare class FamilyLabel extends Message<FamilyLabel> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this family
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the approval metadata
+     *
+     * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+     */
+    approvalMetadata?: ApprovalMetadata;
+    /**
+     * Denotes if this record requires approval (or has been approved)
+     *
+     * @generated from field: bool need_approval = 4;
+     */
+    needApproval: boolean;
+    /**
+     * Stores any comment that the user might have added during an operation
+     *
+     * @generated from field: string user_comment = 5;
+     */
+    userComment: string;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 10;
+     */
+    familyId: bigint;
+    /**
+     * Stores the label ID
+     *
+     * @generated from field: uint64 label_id = 11;
+     */
+    labelId: bigint;
+    constructor(data?: PartialMessage<FamilyLabel>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamilyLabel";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamilyLabel;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyLabel;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyLabel;
+    static equals(a: FamilyLabel | PlainMessage<FamilyLabel> | undefined, b: FamilyLabel | PlainMessage<FamilyLabel> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the list of family labels
+ *
+ * @generated from message Scailo.FamilyLabelsList
+ */
+export declare class FamilyLabelsList extends Message<FamilyLabelsList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.FamilyLabel list = 1;
+     */
+    list: FamilyLabel[];
+    constructor(data?: PartialMessage<FamilyLabelsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamilyLabelsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamilyLabelsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyLabelsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyLabelsList;
+    static equals(a: FamilyLabelsList | PlainMessage<FamilyLabelsList> | undefined, b: FamilyLabelsList | PlainMessage<FamilyLabelsList> | undefined): boolean;
 }
 /**
  *
@@ -1592,5 +1700,39 @@ export declare class FamilyQCGroupsList extends Message<FamilyQCGroupsList> {
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyQCGroupsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyQCGroupsList;
     static equals(a: FamilyQCGroupsList | PlainMessage<FamilyQCGroupsList> | undefined, b: FamilyQCGroupsList | PlainMessage<FamilyQCGroupsList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters necessary to adjust a family's price
+ *
+ * @generated from message Scailo.FamiliesServiceAdjustPriceRequest
+ */
+export declare class FamiliesServiceAdjustPriceRequest extends Message<FamiliesServiceAdjustPriceRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the family
+     *
+     * @generated from field: string uuid = 10;
+     */
+    uuid: string;
+    /**
+     * Stores the unit price
+     *
+     * @generated from field: uint64 price = 26;
+     */
+    price: bigint;
+    constructor(data?: PartialMessage<FamiliesServiceAdjustPriceRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamiliesServiceAdjustPriceRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceAdjustPriceRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceAdjustPriceRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceAdjustPriceRequest;
+    static equals(a: FamiliesServiceAdjustPriceRequest | PlainMessage<FamiliesServiceAdjustPriceRequest> | undefined, b: FamiliesServiceAdjustPriceRequest | PlainMessage<FamiliesServiceAdjustPriceRequest> | undefined): boolean;
 }
 //# sourceMappingURL=families.scailo_pb.d.ts.map

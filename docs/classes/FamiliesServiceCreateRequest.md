@@ -30,7 +30,6 @@ from message Scailo.FamiliesServiceCreateRequest
 - [familyType](FamiliesServiceCreateRequest.md#familytype)
 - [hsnSacCode](FamiliesServiceCreateRequest.md#hsnsaccode)
 - [isLeaf](FamiliesServiceCreateRequest.md#isleaf)
-- [labelIds](FamiliesServiceCreateRequest.md#labelids)
 - [ledgerId](FamiliesServiceCreateRequest.md#ledgerid)
 - [minStockToMaintain](FamiliesServiceCreateRequest.md#minstocktomaintain)
 - [name](FamiliesServiceCreateRequest.md#name)
@@ -85,7 +84,7 @@ Message\&lt;FamiliesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:448
+src/families.scailo_pb.ts:441
 
 ## Properties
 
@@ -214,22 +213,6 @@ from field: bool is_leaf = 20;
 #### Defined in
 
 src/families.scailo_pb.ts:404
-
-___
-
-### labelIds
-
-• **labelIds**: `bigint`[] = `[]`
-
-Stores the list of label IDs
-
-**`Generated`**
-
-from field: repeated uint64 label_ids = 30;
-
-#### Defined in
-
-src/families.scailo_pb.ts:446
 
 ___
 
@@ -415,7 +398,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:455
+src/families.scailo_pb.ts:448
 
 ___
 
@@ -425,7 +408,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:453
+src/families.scailo_pb.ts:446
 
 ___
 
@@ -435,7 +418,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:454
+src/families.scailo_pb.ts:447
 
 ## Methods
 
@@ -723,7 +706,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:490
+src/families.scailo_pb.ts:482
 
 ___
 
@@ -744,7 +727,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:478
+src/families.scailo_pb.ts:470
 
 ___
 
@@ -765,7 +748,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:482
+src/families.scailo_pb.ts:474
 
 ___
 
@@ -786,4 +769,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:486
+src/families.scailo_pb.ts:478

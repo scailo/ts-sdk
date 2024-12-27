@@ -66,7 +66,7 @@ Message\&lt;FamilyUnitConversionsList\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2169
+src/families.scailo_pb.ts:2351
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.FamilyUnitConversion list = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2167
+src/families.scailo_pb.ts:2349
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2176
+src/families.scailo_pb.ts:2358
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2174
+src/families.scailo_pb.ts:2356
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2175
+src/families.scailo_pb.ts:2357
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2192
+src/families.scailo_pb.ts:2374
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2180
+src/families.scailo_pb.ts:2362
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2184
+src/families.scailo_pb.ts:2366
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2188
+src/families.scailo_pb.ts:2370

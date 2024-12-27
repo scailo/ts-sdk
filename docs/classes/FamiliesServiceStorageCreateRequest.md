@@ -68,7 +68,7 @@ Message\&lt;FamiliesServiceStorageCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1763
+src/families.scailo_pb.ts:1945
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1754
+src/families.scailo_pb.ts:1936
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 storage_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1761
+src/families.scailo_pb.ts:1943
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1747
+src/families.scailo_pb.ts:1929
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1770
+src/families.scailo_pb.ts:1952
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1768
+src/families.scailo_pb.ts:1950
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1769
+src/families.scailo_pb.ts:1951
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1788
+src/families.scailo_pb.ts:1970
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1776
+src/families.scailo_pb.ts:1958
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1780
+src/families.scailo_pb.ts:1962
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1784
+src/families.scailo_pb.ts:1966

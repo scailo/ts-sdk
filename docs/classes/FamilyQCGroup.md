@@ -72,7 +72,7 @@ Message\&lt;FamilyQCGroup\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2311
+src/families.scailo_pb.ts:2493
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2281
+src/families.scailo_pb.ts:2463
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2267
+src/families.scailo_pb.ts:2449
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2302
+src/families.scailo_pb.ts:2484
 
 ___
 
@@ -136,7 +136,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2274
+src/families.scailo_pb.ts:2456
 
 ___
 
@@ -152,7 +152,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2288
+src/families.scailo_pb.ts:2470
 
 ___
 
@@ -168,7 +168,7 @@ from field: uint64 qc_group_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2309
+src/families.scailo_pb.ts:2491
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2295
+src/families.scailo_pb.ts:2477
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2318
+src/families.scailo_pb.ts:2500
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2316
+src/families.scailo_pb.ts:2498
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2317
+src/families.scailo_pb.ts:2499
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2340
+src/families.scailo_pb.ts:2522
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2328
+src/families.scailo_pb.ts:2510
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2332
+src/families.scailo_pb.ts:2514
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2336
+src/families.scailo_pb.ts:2518

@@ -3,8 +3,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateRequest, Family, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithFile, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { FamiliesList, FamiliesServiceAdjustPriceRequest, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateRequest, Family, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -163,26 +163,48 @@ export const FamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Adjusts the price of the family with the given UUID
+     *
+     * @generated from rpc Scailo.FamiliesService.AdjustPrice
+     */
+    adjustPrice: {
+      name: "AdjustPrice",
+      I: FamiliesServiceAdjustPriceRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Adjusts the price of all the families mentioned in the file
+     *
+     * @generated from rpc Scailo.FamiliesService.UploadPrices
+     */
+    uploadPrices: {
+      name: "UploadPrices",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * CSV operations
-     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     * Download the CSV file that consists of the list of families according to the given filter request. The same file could also be used as a template for uploading families
      *
      * @generated from rpc Scailo.FamiliesService.DownloadAsCSV
      */
     downloadAsCSV: {
       name: "DownloadAsCSV",
-      I: IdentifierUUID,
+      I: FamiliesServiceFilterReq,
       O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**
-     * Upload items using a CSV file (duplicate codes will be skipped)
+     * Import families using a CSV file (duplicate codes will be skipped)
      *
-     * @generated from rpc Scailo.FamiliesService.UploadFamilies
+     * @generated from rpc Scailo.FamiliesService.Import
      */
-    uploadFamilies: {
-      name: "UploadFamilies",
-      I: IdentifierWithFile,
-      O: IdentifiersList,
+    import: {
+      name: "Import",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
     /**
@@ -238,6 +260,61 @@ export const FamiliesService = {
       name: "ViewStorages",
       I: Identifier,
       O: FamilyStoragesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Add a label
+     *
+     * @generated from rpc Scailo.FamiliesService.AddLabel
+     */
+    addLabel: {
+      name: "AddLabel",
+      I: FamiliesServiceLabelCreateRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Approve a label
+     *
+     * @generated from rpc Scailo.FamiliesService.ApproveLabel
+     */
+    approveLabel: {
+      name: "ApproveLabel",
+      I: IdentifierWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Delete a label
+     *
+     * @generated from rpc Scailo.FamiliesService.DeleteLabel
+     */
+    deleteLabel: {
+      name: "DeleteLabel",
+      I: IdentifierWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View a label for the given ID
+     *
+     * @generated from rpc Scailo.FamiliesService.ViewLabelByID
+     */
+    viewLabelByID: {
+      name: "ViewLabelByID",
+      I: Identifier,
+      O: FamilyLabel,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all labels for given family ID
+     *
+     * @generated from rpc Scailo.FamiliesService.ViewLabels
+     */
+    viewLabels: {
+      name: "ViewLabels",
+      I: Identifier,
+      O: FamilyLabelsList,
       kind: MethodKind.Unary,
     },
     /**

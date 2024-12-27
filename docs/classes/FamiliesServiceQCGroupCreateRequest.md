@@ -68,7 +68,7 @@ Message\&lt;FamiliesServiceQCGroupCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2225
+src/families.scailo_pb.ts:2407
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2216
+src/families.scailo_pb.ts:2398
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 qc_group_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2223
+src/families.scailo_pb.ts:2405
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2209
+src/families.scailo_pb.ts:2391
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2232
+src/families.scailo_pb.ts:2414
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2230
+src/families.scailo_pb.ts:2412
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2231
+src/families.scailo_pb.ts:2413
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2250
+src/families.scailo_pb.ts:2432
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2238
+src/families.scailo_pb.ts:2420
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2242
+src/families.scailo_pb.ts:2424
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2246
+src/families.scailo_pb.ts:2428

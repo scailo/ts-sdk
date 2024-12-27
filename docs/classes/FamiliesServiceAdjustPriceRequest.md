@@ -1,88 +1,122 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyQCGroupsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceAdjustPriceRequest
 
-# Class: FamilyQCGroupsList
+# Class: FamiliesServiceAdjustPriceRequest
 
-Describes the message consisting of the list of family qc groups
+Describes the parameters necessary to adjust a family's price
 
 **`Generated`**
 
-from message Scailo.FamilyQCGroupsList
+from message Scailo.FamiliesServiceAdjustPriceRequest
 
 ## Hierarchy
 
-- `Message`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\>
+- `Message`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\>
 
-  ↳ **`FamilyQCGroupsList`**
+  ↳ **`FamiliesServiceAdjustPriceRequest`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](FamilyQCGroupsList.md#constructor)
+- [constructor](FamiliesServiceAdjustPriceRequest.md#constructor)
 
 ### Properties
 
-- [list](FamilyQCGroupsList.md#list)
-- [fields](FamilyQCGroupsList.md#fields)
-- [runtime](FamilyQCGroupsList.md#runtime)
-- [typeName](FamilyQCGroupsList.md#typename)
+- [price](FamiliesServiceAdjustPriceRequest.md#price)
+- [userComment](FamiliesServiceAdjustPriceRequest.md#usercomment)
+- [uuid](FamiliesServiceAdjustPriceRequest.md#uuid)
+- [fields](FamiliesServiceAdjustPriceRequest.md#fields)
+- [runtime](FamiliesServiceAdjustPriceRequest.md#runtime)
+- [typeName](FamiliesServiceAdjustPriceRequest.md#typename)
 
 ### Methods
 
-- [clone](FamilyQCGroupsList.md#clone)
-- [equals](FamilyQCGroupsList.md#equals)
-- [fromBinary](FamilyQCGroupsList.md#frombinary)
-- [fromJson](FamilyQCGroupsList.md#fromjson)
-- [fromJsonString](FamilyQCGroupsList.md#fromjsonstring)
-- [getType](FamilyQCGroupsList.md#gettype)
-- [toBinary](FamilyQCGroupsList.md#tobinary)
-- [toJSON](FamilyQCGroupsList.md#tojson)
-- [toJson](FamilyQCGroupsList.md#tojson-1)
-- [toJsonString](FamilyQCGroupsList.md#tojsonstring)
-- [equals](FamilyQCGroupsList.md#equals-1)
-- [fromBinary](FamilyQCGroupsList.md#frombinary-1)
-- [fromJson](FamilyQCGroupsList.md#fromjson-1)
-- [fromJsonString](FamilyQCGroupsList.md#fromjsonstring-1)
+- [clone](FamiliesServiceAdjustPriceRequest.md#clone)
+- [equals](FamiliesServiceAdjustPriceRequest.md#equals)
+- [fromBinary](FamiliesServiceAdjustPriceRequest.md#frombinary)
+- [fromJson](FamiliesServiceAdjustPriceRequest.md#fromjson)
+- [fromJsonString](FamiliesServiceAdjustPriceRequest.md#fromjsonstring)
+- [getType](FamiliesServiceAdjustPriceRequest.md#gettype)
+- [toBinary](FamiliesServiceAdjustPriceRequest.md#tobinary)
+- [toJSON](FamiliesServiceAdjustPriceRequest.md#tojson)
+- [toJson](FamiliesServiceAdjustPriceRequest.md#tojson-1)
+- [toJsonString](FamiliesServiceAdjustPriceRequest.md#tojsonstring)
+- [equals](FamiliesServiceAdjustPriceRequest.md#equals-1)
+- [fromBinary](FamiliesServiceAdjustPriceRequest.md#frombinary-1)
+- [fromJson](FamiliesServiceAdjustPriceRequest.md#fromjson-1)
+- [fromJsonString](FamiliesServiceAdjustPriceRequest.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new FamilyQCGroupsList**(`data?`): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+• **new FamiliesServiceAdjustPriceRequest**(`data?`): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\> |
+| `data?` | `PartialMessage`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\> |
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Overrides
 
-Message\&lt;FamilyQCGroupsList\&gt;.constructor
+Message\&lt;FamiliesServiceAdjustPriceRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2541
+src/families.scailo_pb.ts:2597
 
 ## Properties
 
-### list
+### price
 
-• **list**: [`FamilyQCGroup`](FamilyQCGroup.md)[] = `[]`
+• **price**: `bigint` = `protoInt64.zero`
 
-List of records
+Stores the unit price
 
 **`Generated`**
 
-from field: repeated Scailo.FamilyQCGroup list = 1;
+from field: uint64 price = 26;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2539
+src/families.scailo_pb.ts:2595
+
+___
+
+### userComment
+
+• **userComment**: `string` = `""`
+
+Stores any comment that the user might add during this operation
+
+**`Generated`**
+
+from field: string user_comment = 1;
+
+#### Defined in
+
+src/families.scailo_pb.ts:2581
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the family
+
+**`Generated`**
+
+from field: string uuid = 10;
+
+#### Defined in
+
+src/families.scailo_pb.ts:2588
 
 ___
 
@@ -92,7 +126,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2548
+src/families.scailo_pb.ts:2604
 
 ___
 
@@ -102,29 +136,29 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2546
+src/families.scailo_pb.ts:2602
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.FamilyQCGroupsList"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.FamiliesServiceAdjustPriceRequest"``
 
 #### Defined in
 
-src/families.scailo_pb.ts:2547
+src/families.scailo_pb.ts:2603
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+▸ **clone**(): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Inherited from
 
@@ -147,7 +181,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`FamilyQCGroupsList`](FamilyQCGroupsList.md) \| `PlainMessage`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\> |
+| `other` | `undefined` \| ``null`` \| [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md) \| `PlainMessage`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\> |
 
 #### Returns
 
@@ -252,7 +286,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\>
+▸ **getType**(): `MessageType`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -260,7 +294,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\>
+`MessageType`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\>
 
 #### Inherited from
 
@@ -391,8 +425,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`FamilyQCGroupsList`](FamilyQCGroupsList.md) \| `PlainMessage`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\> |
-| `b` | `undefined` \| [`FamilyQCGroupsList`](FamilyQCGroupsList.md) \| `PlainMessage`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\> |
+| `a` | `undefined` \| [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md) \| `PlainMessage`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\> |
+| `b` | `undefined` \| [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md) \| `PlainMessage`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\> |
 
 #### Returns
 
@@ -400,13 +434,13 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2564
+src/families.scailo_pb.ts:2622
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+▸ **fromBinary**(`bytes`, `options?`): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Parameters
 
@@ -417,17 +451,17 @@ ___
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2552
+src/families.scailo_pb.ts:2610
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Parameters
 
@@ -438,17 +472,17 @@ ___
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2556
+src/families.scailo_pb.ts:2614
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Parameters
 
@@ -459,8 +493,8 @@ ___
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2560
+src/families.scailo_pb.ts:2618

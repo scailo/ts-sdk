@@ -1,5 +1,5 @@
-import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateRequest, Family, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithFile, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { FamiliesList, FamiliesServiceAdjustPriceRequest, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateRequest, Family, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -157,26 +157,48 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Adjusts the price of the family with the given UUID
+         *
+         * @generated from rpc Scailo.FamiliesService.AdjustPrice
+         */
+        readonly adjustPrice: {
+            readonly name: "AdjustPrice";
+            readonly I: typeof FamiliesServiceAdjustPriceRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Adjusts the price of all the families mentioned in the file
+         *
+         * @generated from rpc Scailo.FamiliesService.UploadPrices
+         */
+        readonly uploadPrices: {
+            readonly name: "UploadPrices";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * CSV operations
-         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         * Download the CSV file that consists of the list of families according to the given filter request. The same file could also be used as a template for uploading families
          *
          * @generated from rpc Scailo.FamiliesService.DownloadAsCSV
          */
         readonly downloadAsCSV: {
             readonly name: "DownloadAsCSV";
-            readonly I: typeof IdentifierUUID;
+            readonly I: typeof FamiliesServiceFilterReq;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Upload items using a CSV file (duplicate codes will be skipped)
+         * Import families using a CSV file (duplicate codes will be skipped)
          *
-         * @generated from rpc Scailo.FamiliesService.UploadFamilies
+         * @generated from rpc Scailo.FamiliesService.Import
          */
-        readonly uploadFamilies: {
-            readonly name: "UploadFamilies";
-            readonly I: typeof IdentifierWithFile;
-            readonly O: typeof IdentifiersList;
+        readonly import: {
+            readonly name: "Import";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -232,6 +254,61 @@ export declare const FamiliesService: {
             readonly name: "ViewStorages";
             readonly I: typeof Identifier;
             readonly O: typeof FamilyStoragesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Add a label
+         *
+         * @generated from rpc Scailo.FamiliesService.AddLabel
+         */
+        readonly addLabel: {
+            readonly name: "AddLabel";
+            readonly I: typeof FamiliesServiceLabelCreateRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Approve a label
+         *
+         * @generated from rpc Scailo.FamiliesService.ApproveLabel
+         */
+        readonly approveLabel: {
+            readonly name: "ApproveLabel";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Delete a label
+         *
+         * @generated from rpc Scailo.FamiliesService.DeleteLabel
+         */
+        readonly deleteLabel: {
+            readonly name: "DeleteLabel";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View a label for the given ID
+         *
+         * @generated from rpc Scailo.FamiliesService.ViewLabelByID
+         */
+        readonly viewLabelByID: {
+            readonly name: "ViewLabelByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof FamilyLabel;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all labels for given family ID
+         *
+         * @generated from rpc Scailo.FamiliesService.ViewLabels
+         */
+        readonly viewLabels: {
+            readonly name: "ViewLabels";
+            readonly I: typeof Identifier;
+            readonly O: typeof FamilyLabelsList;
             readonly kind: MethodKind.Unary;
         };
         /**

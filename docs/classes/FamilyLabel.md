@@ -1,88 +1,190 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyQCGroupsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamilyLabel
 
-# Class: FamilyQCGroupsList
+# Class: FamilyLabel
 
-Describes the message consisting of the list of family qc groups
+Describes the parameters that constitute a family label
 
 **`Generated`**
 
-from message Scailo.FamilyQCGroupsList
+from message Scailo.FamilyLabel
 
 ## Hierarchy
 
-- `Message`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\>
+- `Message`\<[`FamilyLabel`](FamilyLabel.md)\>
 
-  ↳ **`FamilyQCGroupsList`**
+  ↳ **`FamilyLabel`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](FamilyQCGroupsList.md#constructor)
+- [constructor](FamilyLabel.md#constructor)
 
 ### Properties
 
-- [list](FamilyQCGroupsList.md#list)
-- [fields](FamilyQCGroupsList.md#fields)
-- [runtime](FamilyQCGroupsList.md#runtime)
-- [typeName](FamilyQCGroupsList.md#typename)
+- [approvalMetadata](FamilyLabel.md#approvalmetadata)
+- [entityUuid](FamilyLabel.md#entityuuid)
+- [familyId](FamilyLabel.md#familyid)
+- [labelId](FamilyLabel.md#labelid)
+- [metadata](FamilyLabel.md#metadata)
+- [needApproval](FamilyLabel.md#needapproval)
+- [userComment](FamilyLabel.md#usercomment)
+- [fields](FamilyLabel.md#fields)
+- [runtime](FamilyLabel.md#runtime)
+- [typeName](FamilyLabel.md#typename)
 
 ### Methods
 
-- [clone](FamilyQCGroupsList.md#clone)
-- [equals](FamilyQCGroupsList.md#equals)
-- [fromBinary](FamilyQCGroupsList.md#frombinary)
-- [fromJson](FamilyQCGroupsList.md#fromjson)
-- [fromJsonString](FamilyQCGroupsList.md#fromjsonstring)
-- [getType](FamilyQCGroupsList.md#gettype)
-- [toBinary](FamilyQCGroupsList.md#tobinary)
-- [toJSON](FamilyQCGroupsList.md#tojson)
-- [toJson](FamilyQCGroupsList.md#tojson-1)
-- [toJsonString](FamilyQCGroupsList.md#tojsonstring)
-- [equals](FamilyQCGroupsList.md#equals-1)
-- [fromBinary](FamilyQCGroupsList.md#frombinary-1)
-- [fromJson](FamilyQCGroupsList.md#fromjson-1)
-- [fromJsonString](FamilyQCGroupsList.md#fromjsonstring-1)
+- [clone](FamilyLabel.md#clone)
+- [equals](FamilyLabel.md#equals)
+- [fromBinary](FamilyLabel.md#frombinary)
+- [fromJson](FamilyLabel.md#fromjson)
+- [fromJsonString](FamilyLabel.md#fromjsonstring)
+- [getType](FamilyLabel.md#gettype)
+- [toBinary](FamilyLabel.md#tobinary)
+- [toJSON](FamilyLabel.md#tojson)
+- [toJson](FamilyLabel.md#tojson-1)
+- [toJsonString](FamilyLabel.md#tojsonstring)
+- [equals](FamilyLabel.md#equals-1)
+- [fromBinary](FamilyLabel.md#frombinary-1)
+- [fromJson](FamilyLabel.md#fromjson-1)
+- [fromJsonString](FamilyLabel.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new FamilyQCGroupsList**(`data?`): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+• **new FamilyLabel**(`data?`): [`FamilyLabel`](FamilyLabel.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\> |
+| `data?` | `PartialMessage`\<[`FamilyLabel`](FamilyLabel.md)\> |
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamilyLabel`](FamilyLabel.md)
 
 #### Overrides
 
-Message\&lt;FamilyQCGroupsList\&gt;.constructor
+Message\&lt;FamilyLabel\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2541
+src/families.scailo_pb.ts:1841
 
 ## Properties
 
-### list
+### approvalMetadata
 
-• **list**: [`FamilyQCGroup`](FamilyQCGroup.md)[] = `[]`
+• `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-List of records
+Stores the approval metadata
 
 **`Generated`**
 
-from field: repeated Scailo.FamilyQCGroup list = 1;
+from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2539
+src/families.scailo_pb.ts:1811
+
+___
+
+### entityUuid
+
+• **entityUuid**: `string` = `""`
+
+Stores a globally unique entity UUID. This will be set at the organization level
+
+**`Generated`**
+
+from field: string entity_uuid = 1;
+
+#### Defined in
+
+src/families.scailo_pb.ts:1797
+
+___
+
+### familyId
+
+• **familyId**: `bigint` = `protoInt64.zero`
+
+Stores the family ID
+
+**`Generated`**
+
+from field: uint64 family_id = 10;
+
+#### Defined in
+
+src/families.scailo_pb.ts:1832
+
+___
+
+### labelId
+
+• **labelId**: `bigint` = `protoInt64.zero`
+
+Stores the label ID
+
+**`Generated`**
+
+from field: uint64 label_id = 11;
+
+#### Defined in
+
+src/families.scailo_pb.ts:1839
+
+___
+
+### metadata
+
+• `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
+
+Stores the metadata of this family
+
+**`Generated`**
+
+from field: Scailo.EmployeeMetadata metadata = 2;
+
+#### Defined in
+
+src/families.scailo_pb.ts:1804
+
+___
+
+### needApproval
+
+• **needApproval**: `boolean` = `false`
+
+Denotes if this record requires approval (or has been approved)
+
+**`Generated`**
+
+from field: bool need_approval = 4;
+
+#### Defined in
+
+src/families.scailo_pb.ts:1818
+
+___
+
+### userComment
+
+• **userComment**: `string` = `""`
+
+Stores any comment that the user might have added during an operation
+
+**`Generated`**
+
+from field: string user_comment = 5;
+
+#### Defined in
+
+src/families.scailo_pb.ts:1825
 
 ___
 
@@ -92,7 +194,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2548
+src/families.scailo_pb.ts:1848
 
 ___
 
@@ -102,29 +204,29 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2546
+src/families.scailo_pb.ts:1846
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.FamilyQCGroupsList"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.FamilyLabel"``
 
 #### Defined in
 
-src/families.scailo_pb.ts:2547
+src/families.scailo_pb.ts:1847
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+▸ **clone**(): [`FamilyLabel`](FamilyLabel.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamilyLabel`](FamilyLabel.md)
 
 #### Inherited from
 
@@ -147,7 +249,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`FamilyQCGroupsList`](FamilyQCGroupsList.md) \| `PlainMessage`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\> |
+| `other` | `undefined` \| ``null`` \| [`FamilyLabel`](FamilyLabel.md) \| `PlainMessage`\<[`FamilyLabel`](FamilyLabel.md)\> |
 
 #### Returns
 
@@ -252,7 +354,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\>
+▸ **getType**(): `MessageType`\<[`FamilyLabel`](FamilyLabel.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -260,7 +362,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\>
+`MessageType`\<[`FamilyLabel`](FamilyLabel.md)\>
 
 #### Inherited from
 
@@ -391,8 +493,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`FamilyQCGroupsList`](FamilyQCGroupsList.md) \| `PlainMessage`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\> |
-| `b` | `undefined` \| [`FamilyQCGroupsList`](FamilyQCGroupsList.md) \| `PlainMessage`\<[`FamilyQCGroupsList`](FamilyQCGroupsList.md)\> |
+| `a` | `undefined` \| [`FamilyLabel`](FamilyLabel.md) \| `PlainMessage`\<[`FamilyLabel`](FamilyLabel.md)\> |
+| `b` | `undefined` \| [`FamilyLabel`](FamilyLabel.md) \| `PlainMessage`\<[`FamilyLabel`](FamilyLabel.md)\> |
 
 #### Returns
 
@@ -400,13 +502,13 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2564
+src/families.scailo_pb.ts:1870
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+▸ **fromBinary**(`bytes`, `options?`): [`FamilyLabel`](FamilyLabel.md)
 
 #### Parameters
 
@@ -417,17 +519,17 @@ ___
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamilyLabel`](FamilyLabel.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2552
+src/families.scailo_pb.ts:1858
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`FamilyLabel`](FamilyLabel.md)
 
 #### Parameters
 
@@ -438,17 +540,17 @@ ___
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamilyLabel`](FamilyLabel.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2556
+src/families.scailo_pb.ts:1862
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`FamilyLabel`](FamilyLabel.md)
 
 #### Parameters
 
@@ -459,8 +561,8 @@ ___
 
 #### Returns
 
-[`FamilyQCGroupsList`](FamilyQCGroupsList.md)
+[`FamilyLabel`](FamilyLabel.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2560
+src/families.scailo_pb.ts:1866
