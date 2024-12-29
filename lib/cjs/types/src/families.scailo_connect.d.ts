@@ -1,4 +1,4 @@
-import { FamiliesList, FamiliesServiceAdjustPriceRequest, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateRequest, Family, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
+import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateMinStockToMaintainRequest, FamiliesServiceUpdatePriceRequest, FamiliesServiceUpdateRequest, Family, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
@@ -157,23 +157,45 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Adjusts the price of the family with the given UUID
+         * Updates the price of the family with the given UUID
          *
-         * @generated from rpc Scailo.FamiliesService.AdjustPrice
+         * @generated from rpc Scailo.FamiliesService.UpdatePrice
          */
-        readonly adjustPrice: {
-            readonly name: "AdjustPrice";
-            readonly I: typeof FamiliesServiceAdjustPriceRequest;
+        readonly updatePrice: {
+            readonly name: "UpdatePrice";
+            readonly I: typeof FamiliesServiceUpdatePriceRequest;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Adjusts the price of all the families mentioned in the file
+         * Updates the price of all the families mentioned in the file
          *
          * @generated from rpc Scailo.FamiliesService.UploadPrices
          */
         readonly uploadPrices: {
             readonly name: "UploadPrices";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Updates the minimim stock to maintain for the family with the given UUID
+         *
+         * @generated from rpc Scailo.FamiliesService.UpdateMinStockToMaintain
+         */
+        readonly updateMinStockToMaintain: {
+            readonly name: "UpdateMinStockToMaintain";
+            readonly I: typeof FamiliesServiceUpdateMinStockToMaintainRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Updates the minimum stock to maintain for all the families mentioned in the file
+         *
+         * @generated from rpc Scailo.FamiliesService.UploadMinStockToMaintain
+         */
+        readonly uploadMinStockToMaintain: {
+            readonly name: "UploadMinStockToMaintain";
             readonly I: typeof StandardFile;
             readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;

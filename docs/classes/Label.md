@@ -22,6 +22,7 @@ from message Scailo.Label
 
 ### Properties
 
+- [code](Label.md#code)
 - [description](Label.md#description)
 - [entityUuid](Label.md#entityuuid)
 - [metadata](Label.md#metadata)
@@ -69,9 +70,25 @@ Message\&lt;Label\&gt;.constructor
 
 #### Defined in
 
-src/labels.scailo_pb.ts:88
+src/labels.scailo_pb.ts:103
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the label is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/labels.scailo_pb.ts:94
+
+___
 
 ### description
 
@@ -85,7 +102,7 @@ from field: string description = 11;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:86
+src/labels.scailo_pb.ts:101
 
 ___
 
@@ -101,7 +118,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:65
+src/labels.scailo_pb.ts:73
 
 ___
 
@@ -117,7 +134,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:72
+src/labels.scailo_pb.ts:80
 
 ___
 
@@ -133,7 +150,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:79
+src/labels.scailo_pb.ts:87
 
 ___
 
@@ -143,7 +160,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:95
+src/labels.scailo_pb.ts:110
 
 ___
 
@@ -153,7 +170,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:93
+src/labels.scailo_pb.ts:108
 
 ___
 
@@ -163,7 +180,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:94
+src/labels.scailo_pb.ts:109
 
 ## Methods
 
@@ -451,7 +468,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:114
+src/labels.scailo_pb.ts:130
 
 ___
 
@@ -472,7 +489,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:102
+src/labels.scailo_pb.ts:118
 
 ___
 
@@ -493,7 +510,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:106
+src/labels.scailo_pb.ts:122
 
 ___
 
@@ -514,4 +531,4 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:110
+src/labels.scailo_pb.ts:126

@@ -765,6 +765,7 @@ export declare const PermissionEquationWorkOrderHalt = "equations-work-orders-ex
 export declare const PermissionEquationWorkOrderComplete = "equations-work-orders-mark-complete";
 export declare const PermissionEquationWorkOrderDiscard = "equations-work-orders-extra-discard";
 export declare const PermissionReopenEquationWorkOrder = "equations-work-orders-extra-reopen";
+export declare const PermissionAmendEquationWorkOrder = "equations-work-orders-amend";
 export declare const PermissionEquationReplaceableNew = "equations-replaceables-new";
 export declare const PermissionEquationReplaceableDrafts = "equations-replaceables-drafts";
 export declare const PermissionEquationReplaceableVerify = "equations-replaceables-verify";

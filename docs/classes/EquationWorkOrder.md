@@ -22,6 +22,7 @@ from message Scailo.EquationWorkOrder
 
 ### Properties
 
+- [amendmentCount](EquationWorkOrder.md#amendmentcount)
 - [approvalMetadata](EquationWorkOrder.md#approvalmetadata)
 - [completedOn](EquationWorkOrder.md#completedon)
 - [description](EquationWorkOrder.md#description)
@@ -77,9 +78,25 @@ Message\&lt;EquationWorkOrder\&gt;.constructor
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:466
+src/equations_work_orders.scailo_pb.ts:481
 
 ## Properties
+
+### amendmentCount
+
+• **amendmentCount**: `bigint` = `protoInt64.zero`
+
+The number of times that the equation work order has been amended
+
+**`Generated`**
+
+from field: uint64 amendment_count = 70;
+
+#### Defined in
+
+src/equations_work_orders.scailo_pb.ts:479
+
+___
 
 ### approvalMetadata
 
@@ -93,7 +110,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:401
+src/equations_work_orders.scailo_pb.ts:409
 
 ___
 
@@ -109,7 +126,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:422
+src/equations_work_orders.scailo_pb.ts:430
 
 ___
 
@@ -125,7 +142,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:450
+src/equations_work_orders.scailo_pb.ts:458
 
 ___
 
@@ -141,7 +158,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:387
+src/equations_work_orders.scailo_pb.ts:395
 
 ___
 
@@ -157,7 +174,7 @@ from field: repeated Scailo.EquationWorkOrderItem list = 20;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:457
+src/equations_work_orders.scailo_pb.ts:465
 
 ___
 
@@ -173,7 +190,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:415
+src/equations_work_orders.scailo_pb.ts:423
 
 ___
 
@@ -189,7 +206,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:394
+src/equations_work_orders.scailo_pb.ts:402
 
 ___
 
@@ -205,7 +222,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:436
+src/equations_work_orders.scailo_pb.ts:444
 
 ___
 
@@ -221,7 +238,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:408
+src/equations_work_orders.scailo_pb.ts:416
 
 ___
 
@@ -237,7 +254,7 @@ from field: double total_price = 40;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:464
+src/equations_work_orders.scailo_pb.ts:472
 
 ___
 
@@ -253,7 +270,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:429
+src/equations_work_orders.scailo_pb.ts:437
 
 ___
 
@@ -269,7 +286,7 @@ from field: uint64 work_order_id = 12;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:443
+src/equations_work_orders.scailo_pb.ts:451
 
 ___
 
@@ -279,7 +296,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:473
+src/equations_work_orders.scailo_pb.ts:488
 
 ___
 
@@ -289,7 +306,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:471
+src/equations_work_orders.scailo_pb.ts:486
 
 ___
 
@@ -299,7 +316,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:472
+src/equations_work_orders.scailo_pb.ts:487
 
 ## Methods
 
@@ -587,7 +604,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:500
+src/equations_work_orders.scailo_pb.ts:516
 
 ___
 
@@ -608,7 +625,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:488
+src/equations_work_orders.scailo_pb.ts:504
 
 ___
 
@@ -629,7 +646,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:492
+src/equations_work_orders.scailo_pb.ts:508
 
 ___
 
@@ -650,4 +667,4 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:496
+src/equations_work_orders.scailo_pb.ts:512

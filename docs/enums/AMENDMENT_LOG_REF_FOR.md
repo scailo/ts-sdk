@@ -13,6 +13,7 @@ from enum Scailo.AMENDMENT_LOG_REF_FOR
 ### Enumeration Members
 
 - [AMENDMENT\_LOG\_REF\_FOR\_ANY\_UNSPECIFIED](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_any_unspecified)
+- [AMENDMENT\_LOG\_REF\_FOR\_EQUATION\_WORK\_ORDER](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_equation_work_order)
 - [AMENDMENT\_LOG\_REF\_FOR\_FAMILY](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_family)
 - [AMENDMENT\_LOG\_REF\_FOR\_PROFORMA\_INVOICE](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_proforma_invoice)
 - [AMENDMENT\_LOG\_REF\_FOR\_PURCHASE\_ORDER](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_purchase_order)
@@ -37,6 +38,22 @@ from enum value: AMENDMENT_LOG_REF_FOR_ANY_UNSPECIFIED = 0;
 #### Defined in
 
 src/base.scailo_pb.ts:1099
+
+___
+
+### AMENDMENT\_LOG\_REF\_FOR\_EQUATION\_WORK\_ORDER
+
+• **AMENDMENT\_LOG\_REF\_FOR\_EQUATION\_WORK\_ORDER** = ``100``
+
+Denotes that the log is made while amending a work order equation
+
+**`Generated`**
+
+from enum value: AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER = 100;
+
+#### Defined in
+
+src/base.scailo_pb.ts:1162
 
 ___
 

@@ -194,6 +194,13 @@ export enum EQUATION_WORK_ORDER_SORT_KEY {
    * @generated from enum value: EQUATION_WORK_ORDER_SORT_KEY_WORK_ORDER_ID = 11;
    */
   EQUATION_WORK_ORDER_SORT_KEY_WORK_ORDER_ID = 11,
+
+  /**
+   * Fetch ordered results by the amendment count
+   *
+   * @generated from enum value: EQUATION_WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 15;
+   */
+  EQUATION_WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 15,
 }
 // Retrieve enum metadata with: proto3.getEnumType(EQUATION_WORK_ORDER_SORT_KEY)
 proto3.util.setEnumType(EQUATION_WORK_ORDER_SORT_KEY, "Scailo.EQUATION_WORK_ORDER_SORT_KEY", [
@@ -206,6 +213,7 @@ proto3.util.setEnumType(EQUATION_WORK_ORDER_SORT_KEY, "Scailo.EQUATION_WORK_ORDE
   { no: 6, name: "EQUATION_WORK_ORDER_SORT_KEY_COMPLETED_ON" },
   { no: 10, name: "EQUATION_WORK_ORDER_SORT_KEY_NAME" },
   { no: 11, name: "EQUATION_WORK_ORDER_SORT_KEY_WORK_ORDER_ID" },
+  { no: 15, name: "EQUATION_WORK_ORDER_SORT_KEY_AMENDMENT_COUNT" },
 ]);
 
 /**
@@ -463,6 +471,13 @@ export class EquationWorkOrder extends Message<EquationWorkOrder> {
    */
   totalPrice = 0;
 
+  /**
+   * The number of times that the equation work order has been amended
+   *
+   * @generated from field: uint64 amendment_count = 70;
+   */
+  amendmentCount = protoInt64.zero;
+
   constructor(data?: PartialMessage<EquationWorkOrder>) {
     super();
     proto3.util.initPartial(data, this);
@@ -483,6 +498,7 @@ export class EquationWorkOrder extends Message<EquationWorkOrder> {
     { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "list", kind: "message", T: EquationWorkOrderItem, repeated: true },
     { no: 40, name: "total_price", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
+    { no: 70, name: "amendment_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationWorkOrder {

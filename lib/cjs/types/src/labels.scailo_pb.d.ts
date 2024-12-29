@@ -31,7 +31,13 @@ export declare enum LABEL_SORT_KEY {
      *
      * @generated from enum value: LABEL_SORT_KEY_NAME = 10;
      */
-    LABEL_SORT_KEY_NAME = 10
+    LABEL_SORT_KEY_NAME = 10,
+    /**
+     * Fetch ordered results by the code
+     *
+     * @generated from enum value: LABEL_SORT_KEY_CODE = 11;
+     */
+    LABEL_SORT_KEY_CODE = 11
 }
 /**
  *
@@ -58,6 +64,12 @@ export declare class Label extends Message<Label> {
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the label is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * A short description of the label
      *
@@ -161,6 +173,12 @@ export declare class LabelsServiceCreateRequest extends Message<LabelsServiceCre
      */
     name: string;
     /**
+     * The unique code by which the label is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
+    /**
      * A short description of the label
      *
      * @generated from field: string description = 11;
@@ -200,6 +218,12 @@ export declare class LabelsServiceUpdateRequest extends Message<LabelsServiceUpd
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the label is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * A short description of the label
      *
@@ -334,6 +358,12 @@ export declare class LabelsServiceFilterReq extends Message<LabelsServiceFilterR
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the label is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     constructor(data?: PartialMessage<LabelsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.LabelsServiceFilterReq";
@@ -392,6 +422,12 @@ export declare class LabelsServiceCountReq extends Message<LabelsServiceCountReq
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the label is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     constructor(data?: PartialMessage<LabelsServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.LabelsServiceCountReq";

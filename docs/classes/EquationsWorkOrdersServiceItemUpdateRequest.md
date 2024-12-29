@@ -70,7 +70,7 @@ Message\&lt;EquationsWorkOrdersServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:629
+src/equations_work_orders.scailo_pb.ts:645
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:606
+src/equations_work_orders.scailo_pb.ts:622
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:613
+src/equations_work_orders.scailo_pb.ts:629
 
 ___
 
@@ -118,7 +118,7 @@ from field: string specifications = 14;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:627
+src/equations_work_orders.scailo_pb.ts:643
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 unit_price = 13;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:620
+src/equations_work_orders.scailo_pb.ts:636
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:599
+src/equations_work_orders.scailo_pb.ts:615
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:636
+src/equations_work_orders.scailo_pb.ts:652
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:634
+src/equations_work_orders.scailo_pb.ts:650
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:635
+src/equations_work_orders.scailo_pb.ts:651
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:656
+src/equations_work_orders.scailo_pb.ts:672
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:644
+src/equations_work_orders.scailo_pb.ts:660
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:648
+src/equations_work_orders.scailo_pb.ts:664
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:652
+src/equations_work_orders.scailo_pb.ts:668

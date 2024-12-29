@@ -72,7 +72,7 @@ Message\&lt;LabelsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/labels.scailo_pb.ts:701
+src/labels.scailo_pb.ts:749
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:664
+src/labels.scailo_pb.ts:712
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:692
+src/labels.scailo_pb.ts:740
 
 ___
 
@@ -120,7 +120,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:657
+src/labels.scailo_pb.ts:705
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:671
+src/labels.scailo_pb.ts:719
 
 ___
 
@@ -152,7 +152,7 @@ from field: string search_key = 10;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:699
+src/labels.scailo_pb.ts:747
 
 ___
 
@@ -168,7 +168,7 @@ from field: Scailo.LABEL_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:685
+src/labels.scailo_pb.ts:733
 
 ___
 
@@ -184,7 +184,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:678
+src/labels.scailo_pb.ts:726
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:708
+src/labels.scailo_pb.ts:756
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:706
+src/labels.scailo_pb.ts:754
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:707
+src/labels.scailo_pb.ts:755
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:730
+src/labels.scailo_pb.ts:778
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:718
+src/labels.scailo_pb.ts:766
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:722
+src/labels.scailo_pb.ts:770
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:726
+src/labels.scailo_pb.ts:774

@@ -15,6 +15,7 @@ from enum Scailo.TAX_GROUP_SORT_KEY
 - [TAX\_GROUP\_SORT\_KEY\_APPROVED\_BY](TAX_GROUP_SORT_KEY.md#tax_group_sort_key_approved_by)
 - [TAX\_GROUP\_SORT\_KEY\_APPROVED\_ON](TAX_GROUP_SORT_KEY.md#tax_group_sort_key_approved_on)
 - [TAX\_GROUP\_SORT\_KEY\_APPROVER\_ROLE\_ID](TAX_GROUP_SORT_KEY.md#tax_group_sort_key_approver_role_id)
+- [TAX\_GROUP\_SORT\_KEY\_CODE](TAX_GROUP_SORT_KEY.md#tax_group_sort_key_code)
 - [TAX\_GROUP\_SORT\_KEY\_CREATED\_AT](TAX_GROUP_SORT_KEY.md#tax_group_sort_key_created_at)
 - [TAX\_GROUP\_SORT\_KEY\_ID\_UNSPECIFIED](TAX_GROUP_SORT_KEY.md#tax_group_sort_key_id_unspecified)
 - [TAX\_GROUP\_SORT\_KEY\_MODIFIED\_AT](TAX_GROUP_SORT_KEY.md#tax_group_sort_key_modified_at)
@@ -67,6 +68,22 @@ from enum value: TAX_GROUP_SORT_KEY_APPROVER_ROLE_ID = 5;
 #### Defined in
 
 src/tax_groups.scailo_pb.ts:101
+
+___
+
+### TAX\_GROUP\_SORT\_KEY\_CODE
+
+• **TAX\_GROUP\_SORT\_KEY\_CODE** = ``11``
+
+Fetch ordered results by the code
+
+**`Generated`**
+
+from enum value: TAX_GROUP_SORT_KEY_CODE = 11;
+
+#### Defined in
+
+src/tax_groups.scailo_pb.ts:115
 
 ___
 

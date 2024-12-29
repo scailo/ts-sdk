@@ -66,7 +66,7 @@ Message\&lt;LabelsList\&gt;.constructor
 
 #### Defined in
 
-src/labels.scailo_pb.ts:133
+src/labels.scailo_pb.ts:149
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Label list = 1;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:131
+src/labels.scailo_pb.ts:147
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:140
+src/labels.scailo_pb.ts:156
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:138
+src/labels.scailo_pb.ts:154
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:139
+src/labels.scailo_pb.ts:155
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:156
+src/labels.scailo_pb.ts:172
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:144
+src/labels.scailo_pb.ts:160
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:148
+src/labels.scailo_pb.ts:164
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:152
+src/labels.scailo_pb.ts:168

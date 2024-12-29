@@ -1153,6 +1153,13 @@ export enum AMENDMENT_LOG_REF_FOR {
    * @generated from enum value: AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7;
    */
   AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7,
+
+  /**
+   * Denotes that the log is made while amending a work order equation
+   *
+   * @generated from enum value: AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER = 100;
+   */
+  AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER = 100,
 }
 // Retrieve enum metadata with: proto3.getEnumType(AMENDMENT_LOG_REF_FOR)
 proto3.util.setEnumType(AMENDMENT_LOG_REF_FOR, "Scailo.AMENDMENT_LOG_REF_FOR", [
@@ -1165,6 +1172,7 @@ proto3.util.setEnumType(AMENDMENT_LOG_REF_FOR, "Scailo.AMENDMENT_LOG_REF_FOR", [
   { no: 5, name: "AMENDMENT_LOG_REF_FOR_SALES_QUOTATION" },
   { no: 6, name: "AMENDMENT_LOG_REF_FOR_SALES_INVOICE" },
   { no: 7, name: "AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE" },
+  { no: 100, name: "AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER" },
 ]);
 
 /**

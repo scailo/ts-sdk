@@ -12,12 +12,29 @@ from enum Scailo.LABEL_SORT_KEY
 
 ### Enumeration Members
 
+- [LABEL\_SORT\_KEY\_CODE](LABEL_SORT_KEY.md#label_sort_key_code)
 - [LABEL\_SORT\_KEY\_CREATED\_AT](LABEL_SORT_KEY.md#label_sort_key_created_at)
 - [LABEL\_SORT\_KEY\_ID\_UNSPECIFIED](LABEL_SORT_KEY.md#label_sort_key_id_unspecified)
 - [LABEL\_SORT\_KEY\_MODIFIED\_AT](LABEL_SORT_KEY.md#label_sort_key_modified_at)
 - [LABEL\_SORT\_KEY\_NAME](LABEL_SORT_KEY.md#label_sort_key_name)
 
 ## Enumeration Members
+
+### LABEL\_SORT\_KEY\_CODE
+
+• **LABEL\_SORT\_KEY\_CODE** = ``11``
+
+Fetch ordered results by the code
+
+**`Generated`**
+
+from enum value: LABEL_SORT_KEY_CODE = 11;
+
+#### Defined in
+
+src/labels.scailo_pb.ts:50
+
+___
 
 ### LABEL\_SORT\_KEY\_CREATED\_AT
 

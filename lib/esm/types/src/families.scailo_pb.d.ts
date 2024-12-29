@@ -1703,11 +1703,11 @@ export declare class FamilyQCGroupsList extends Message<FamilyQCGroupsList> {
 }
 /**
  *
- * Describes the parameters necessary to adjust a family's price
+ * Describes the parameters necessary to update a family's price
  *
- * @generated from message Scailo.FamiliesServiceAdjustPriceRequest
+ * @generated from message Scailo.FamiliesServiceUpdatePriceRequest
  */
-export declare class FamiliesServiceAdjustPriceRequest extends Message<FamiliesServiceAdjustPriceRequest> {
+export declare class FamiliesServiceUpdatePriceRequest extends Message<FamiliesServiceUpdatePriceRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -1726,13 +1726,47 @@ export declare class FamiliesServiceAdjustPriceRequest extends Message<FamiliesS
      * @generated from field: uint64 price = 26;
      */
     price: bigint;
-    constructor(data?: PartialMessage<FamiliesServiceAdjustPriceRequest>);
+    constructor(data?: PartialMessage<FamiliesServiceUpdatePriceRequest>);
     static readonly runtime: typeof proto3;
-    static readonly typeName = "Scailo.FamiliesServiceAdjustPriceRequest";
+    static readonly typeName = "Scailo.FamiliesServiceUpdatePriceRequest";
     static readonly fields: FieldList;
-    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceAdjustPriceRequest;
-    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceAdjustPriceRequest;
-    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceAdjustPriceRequest;
-    static equals(a: FamiliesServiceAdjustPriceRequest | PlainMessage<FamiliesServiceAdjustPriceRequest> | undefined, b: FamiliesServiceAdjustPriceRequest | PlainMessage<FamiliesServiceAdjustPriceRequest> | undefined): boolean;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdatePriceRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceUpdatePriceRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceUpdatePriceRequest;
+    static equals(a: FamiliesServiceUpdatePriceRequest | PlainMessage<FamiliesServiceUpdatePriceRequest> | undefined, b: FamiliesServiceUpdatePriceRequest | PlainMessage<FamiliesServiceUpdatePriceRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters necessary to update a family's min stock to maintain
+ *
+ * @generated from message Scailo.FamiliesServiceUpdateMinStockToMaintainRequest
+ */
+export declare class FamiliesServiceUpdateMinStockToMaintainRequest extends Message<FamiliesServiceUpdateMinStockToMaintainRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the family
+     *
+     * @generated from field: string uuid = 10;
+     */
+    uuid: string;
+    /**
+     * Stores the minimum stock to maintain
+     *
+     * @generated from field: uint64 min_stock_to_maintain = 27;
+     */
+    minStockToMaintain: bigint;
+    constructor(data?: PartialMessage<FamiliesServiceUpdateMinStockToMaintainRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamiliesServiceUpdateMinStockToMaintainRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdateMinStockToMaintainRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateMinStockToMaintainRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateMinStockToMaintainRequest;
+    static equals(a: FamiliesServiceUpdateMinStockToMaintainRequest | PlainMessage<FamiliesServiceUpdateMinStockToMaintainRequest> | undefined, b: FamiliesServiceUpdateMinStockToMaintainRequest | PlainMessage<FamiliesServiceUpdateMinStockToMaintainRequest> | undefined): boolean;
 }
 //# sourceMappingURL=families.scailo_pb.d.ts.map

@@ -69,7 +69,7 @@ Message\&lt;TaxGroupsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:550
+src/tax_groups.scailo_pb.ts:582
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:527
+src/tax_groups.scailo_pb.ts:559
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:534
+src/tax_groups.scailo_pb.ts:566
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.TaxGroup payload = 4;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:548
+src/tax_groups.scailo_pb.ts:580
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:541
+src/tax_groups.scailo_pb.ts:573
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:557
+src/tax_groups.scailo_pb.ts:589
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:555
+src/tax_groups.scailo_pb.ts:587
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:556
+src/tax_groups.scailo_pb.ts:588
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:576
+src/tax_groups.scailo_pb.ts:608
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:564
+src/tax_groups.scailo_pb.ts:596
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:568
+src/tax_groups.scailo_pb.ts:600
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:572
+src/tax_groups.scailo_pb.ts:604

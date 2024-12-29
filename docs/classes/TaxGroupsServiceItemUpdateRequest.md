@@ -68,7 +68,7 @@ Message\&lt;TaxGroupsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1089
+src/tax_groups.scailo_pb.ts:1137
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: string description = 40;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1087
+src/tax_groups.scailo_pb.ts:1135
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1080
+src/tax_groups.scailo_pb.ts:1128
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1073
+src/tax_groups.scailo_pb.ts:1121
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1096
+src/tax_groups.scailo_pb.ts:1144
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1094
+src/tax_groups.scailo_pb.ts:1142
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1095
+src/tax_groups.scailo_pb.ts:1143
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1114
+src/tax_groups.scailo_pb.ts:1162
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1102
+src/tax_groups.scailo_pb.ts:1150
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1106
+src/tax_groups.scailo_pb.ts:1154
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1110
+src/tax_groups.scailo_pb.ts:1158

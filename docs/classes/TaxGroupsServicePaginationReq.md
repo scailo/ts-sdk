@@ -71,7 +71,7 @@ Message\&lt;TaxGroupsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:482
+src/tax_groups.scailo_pb.ts:514
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:452
+src/tax_groups.scailo_pb.ts:484
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:445
+src/tax_groups.scailo_pb.ts:477
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:459
+src/tax_groups.scailo_pb.ts:491
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.TAX_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:473
+src/tax_groups.scailo_pb.ts:505
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:466
+src/tax_groups.scailo_pb.ts:498
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:480
+src/tax_groups.scailo_pb.ts:512
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:489
+src/tax_groups.scailo_pb.ts:521
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:487
+src/tax_groups.scailo_pb.ts:519
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:488
+src/tax_groups.scailo_pb.ts:520
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:510
+src/tax_groups.scailo_pb.ts:542
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:498
+src/tax_groups.scailo_pb.ts:530
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:502
+src/tax_groups.scailo_pb.ts:534
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:506
+src/tax_groups.scailo_pb.ts:538

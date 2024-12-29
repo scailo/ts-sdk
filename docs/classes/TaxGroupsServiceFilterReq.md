@@ -27,6 +27,7 @@ from message Scailo.TaxGroupsServiceFilterReq
 - [approvedOnStart](TaxGroupsServiceFilterReq.md#approvedonstart)
 - [approverRoleId](TaxGroupsServiceFilterReq.md#approverroleid)
 - [category](TaxGroupsServiceFilterReq.md#category)
+- [code](TaxGroupsServiceFilterReq.md#code)
 - [count](TaxGroupsServiceFilterReq.md#count)
 - [creationTimestampEnd](TaxGroupsServiceFilterReq.md#creationtimestampend)
 - [creationTimestampStart](TaxGroupsServiceFilterReq.md#creationtimestampstart)
@@ -82,7 +83,7 @@ Message\&lt;TaxGroupsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:707
+src/tax_groups.scailo_pb.ts:746
 
 ## Properties
 
@@ -98,7 +99,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:684
+src/tax_groups.scailo_pb.ts:716
 
 ___
 
@@ -114,7 +115,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:677
+src/tax_groups.scailo_pb.ts:709
 
 ___
 
@@ -130,7 +131,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:670
+src/tax_groups.scailo_pb.ts:702
 
 ___
 
@@ -146,7 +147,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:691
+src/tax_groups.scailo_pb.ts:723
 
 ___
 
@@ -162,7 +163,23 @@ from field: Scailo.TAX_GROUP_CATEGORY category = 32;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:705
+src/tax_groups.scailo_pb.ts:744
+
+___
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the location is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/tax_groups.scailo_pb.ts:737
 
 ___
 
@@ -178,7 +195,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:600
+src/tax_groups.scailo_pb.ts:632
 
 ___
 
@@ -194,7 +211,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:635
+src/tax_groups.scailo_pb.ts:667
 
 ___
 
@@ -210,7 +227,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:628
+src/tax_groups.scailo_pb.ts:660
 
 ___
 
@@ -226,7 +243,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:656
+src/tax_groups.scailo_pb.ts:688
 
 ___
 
@@ -242,7 +259,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:593
+src/tax_groups.scailo_pb.ts:625
 
 ___
 
@@ -258,7 +275,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:649
+src/tax_groups.scailo_pb.ts:681
 
 ___
 
@@ -274,7 +291,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:642
+src/tax_groups.scailo_pb.ts:674
 
 ___
 
@@ -290,7 +307,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:698
+src/tax_groups.scailo_pb.ts:730
 
 ___
 
@@ -306,7 +323,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:607
+src/tax_groups.scailo_pb.ts:639
 
 ___
 
@@ -322,7 +339,7 @@ from field: Scailo.TAX_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:621
+src/tax_groups.scailo_pb.ts:653
 
 ___
 
@@ -338,7 +355,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:614
+src/tax_groups.scailo_pb.ts:646
 
 ___
 
@@ -354,7 +371,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:663
+src/tax_groups.scailo_pb.ts:695
 
 ___
 
@@ -364,7 +381,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:714
+src/tax_groups.scailo_pb.ts:753
 
 ___
 
@@ -374,7 +391,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:712
+src/tax_groups.scailo_pb.ts:751
 
 ___
 
@@ -384,7 +401,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:713
+src/tax_groups.scailo_pb.ts:752
 
 ## Methods
 
@@ -672,7 +689,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:746
+src/tax_groups.scailo_pb.ts:786
 
 ___
 
@@ -693,7 +710,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:734
+src/tax_groups.scailo_pb.ts:774
 
 ___
 
@@ -714,7 +731,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:738
+src/tax_groups.scailo_pb.ts:778
 
 ___
 
@@ -735,4 +752,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:742
+src/tax_groups.scailo_pb.ts:782

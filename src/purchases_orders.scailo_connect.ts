@@ -362,10 +362,10 @@ export const PurchasesOrdersService = {
      * CSV operations
      * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
      *
-     * @generated from rpc Scailo.PurchasesOrdersService.DownloadAsCSV
+     * @generated from rpc Scailo.PurchasesOrdersService.DownloadItemsAsCSV
      */
-    downloadAsCSV: {
-      name: "DownloadAsCSV",
+    downloadItemsAsCSV: {
+      name: "DownloadItemsAsCSV",
       I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,

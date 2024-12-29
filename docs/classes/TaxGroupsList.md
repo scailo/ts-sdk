@@ -66,7 +66,7 @@ Message\&lt;TaxGroupsList\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:405
+src/tax_groups.scailo_pb.ts:437
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.TaxGroup list = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:403
+src/tax_groups.scailo_pb.ts:435
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:412
+src/tax_groups.scailo_pb.ts:444
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:410
+src/tax_groups.scailo_pb.ts:442
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:411
+src/tax_groups.scailo_pb.ts:443
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:428
+src/tax_groups.scailo_pb.ts:460
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:416
+src/tax_groups.scailo_pb.ts:448
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:420
+src/tax_groups.scailo_pb.ts:452
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:424
+src/tax_groups.scailo_pb.ts:456

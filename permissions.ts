@@ -823,6 +823,7 @@ export const PermissionEquationWorkOrderHalt = 'equations-work-orders-extra-halt
 export const PermissionEquationWorkOrderComplete = 'equations-work-orders-mark-complete';
 export const PermissionEquationWorkOrderDiscard = 'equations-work-orders-extra-discard';
 export const PermissionReopenEquationWorkOrder = 'equations-work-orders-extra-reopen';
+export const PermissionAmendEquationWorkOrder = 'equations-work-orders-amend';
 
 export const PermissionEquationReplaceableNew = 'equations-replaceables-new';
 export const PermissionEquationReplaceableDrafts = 'equations-replaceables-drafts';

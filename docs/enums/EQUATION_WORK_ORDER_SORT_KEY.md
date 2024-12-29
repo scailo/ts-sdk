@@ -12,6 +12,7 @@ from enum Scailo.EQUATION_WORK_ORDER_SORT_KEY
 
 ### Enumeration Members
 
+- [EQUATION\_WORK\_ORDER\_SORT\_KEY\_AMENDMENT\_COUNT](EQUATION_WORK_ORDER_SORT_KEY.md#equation_work_order_sort_key_amendment_count)
 - [EQUATION\_WORK\_ORDER\_SORT\_KEY\_APPROVED\_BY](EQUATION_WORK_ORDER_SORT_KEY.md#equation_work_order_sort_key_approved_by)
 - [EQUATION\_WORK\_ORDER\_SORT\_KEY\_APPROVED\_ON](EQUATION_WORK_ORDER_SORT_KEY.md#equation_work_order_sort_key_approved_on)
 - [EQUATION\_WORK\_ORDER\_SORT\_KEY\_APPROVER\_ROLE\_ID](EQUATION_WORK_ORDER_SORT_KEY.md#equation_work_order_sort_key_approver_role_id)
@@ -23,6 +24,22 @@ from enum Scailo.EQUATION_WORK_ORDER_SORT_KEY
 - [EQUATION\_WORK\_ORDER\_SORT\_KEY\_WORK\_ORDER\_ID](EQUATION_WORK_ORDER_SORT_KEY.md#equation_work_order_sort_key_work_order_id)
 
 ## Enumeration Members
+
+### EQUATION\_WORK\_ORDER\_SORT\_KEY\_AMENDMENT\_COUNT
+
+• **EQUATION\_WORK\_ORDER\_SORT\_KEY\_AMENDMENT\_COUNT** = ``15``
+
+Fetch ordered results by the amendment count
+
+**`Generated`**
+
+from enum value: EQUATION_WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 15;
+
+#### Defined in
+
+src/equations_work_orders.scailo_pb.ts:203
+
+___
 
 ### EQUATION\_WORK\_ORDER\_SORT\_KEY\_APPROVED\_BY
 

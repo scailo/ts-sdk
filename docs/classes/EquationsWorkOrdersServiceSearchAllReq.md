@@ -73,7 +73,7 @@ Message\&lt;EquationsWorkOrdersServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1688
+src/equations_work_orders.scailo_pb.ts:1704
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1644
+src/equations_work_orders.scailo_pb.ts:1660
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1672
+src/equations_work_orders.scailo_pb.ts:1688
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1637
+src/equations_work_orders.scailo_pb.ts:1653
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1651
+src/equations_work_orders.scailo_pb.ts:1667
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1686
+src/equations_work_orders.scailo_pb.ts:1702
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.EQUATION_WORK_ORDER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1665
+src/equations_work_orders.scailo_pb.ts:1681
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1658
+src/equations_work_orders.scailo_pb.ts:1674
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1679
+src/equations_work_orders.scailo_pb.ts:1695
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1695
+src/equations_work_orders.scailo_pb.ts:1711
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1693
+src/equations_work_orders.scailo_pb.ts:1709
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1694
+src/equations_work_orders.scailo_pb.ts:1710
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1718
+src/equations_work_orders.scailo_pb.ts:1734
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1706
+src/equations_work_orders.scailo_pb.ts:1722
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1710
+src/equations_work_orders.scailo_pb.ts:1726
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:1714
+src/equations_work_orders.scailo_pb.ts:1730

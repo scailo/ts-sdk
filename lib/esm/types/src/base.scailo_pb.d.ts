@@ -866,7 +866,13 @@ export declare enum AMENDMENT_LOG_REF_FOR {
      *
      * @generated from enum value: AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7;
      */
-    AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7
+    AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7,
+    /**
+     * Denotes that the log is made while amending a work order equation
+     *
+     * @generated from enum value: AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER = 100;
+     */
+    AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER = 100
 }
 /**
  *

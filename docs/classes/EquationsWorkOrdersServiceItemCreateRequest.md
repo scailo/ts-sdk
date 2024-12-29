@@ -71,7 +71,7 @@ Message\&lt;EquationsWorkOrdersServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:554
+src/equations_work_orders.scailo_pb.ts:570
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 equation_id = 10;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:524
+src/equations_work_orders.scailo_pb.ts:540
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:531
+src/equations_work_orders.scailo_pb.ts:547
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:538
+src/equations_work_orders.scailo_pb.ts:554
 
 ___
 
@@ -135,7 +135,7 @@ from field: string specifications = 14;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:552
+src/equations_work_orders.scailo_pb.ts:568
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 unit_price = 13;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:545
+src/equations_work_orders.scailo_pb.ts:561
 
 ___
 
@@ -167,7 +167,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:517
+src/equations_work_orders.scailo_pb.ts:533
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:561
+src/equations_work_orders.scailo_pb.ts:577
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:559
+src/equations_work_orders.scailo_pb.ts:575
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:560
+src/equations_work_orders.scailo_pb.ts:576
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:582
+src/equations_work_orders.scailo_pb.ts:598
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:570
+src/equations_work_orders.scailo_pb.ts:586
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:574
+src/equations_work_orders.scailo_pb.ts:590
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:578
+src/equations_work_orders.scailo_pb.ts:594

@@ -70,7 +70,7 @@ Message\&lt;LabelsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/labels.scailo_pb.ts:401
+src/labels.scailo_pb.ts:433
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:378
+src/labels.scailo_pb.ts:410
 
 ___
 
@@ -102,7 +102,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:371
+src/labels.scailo_pb.ts:403
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:385
+src/labels.scailo_pb.ts:417
 
 ___
 
@@ -134,7 +134,7 @@ from field: Scailo.LABEL_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:399
+src/labels.scailo_pb.ts:431
 
 ___
 
@@ -150,7 +150,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:392
+src/labels.scailo_pb.ts:424
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:408
+src/labels.scailo_pb.ts:440
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:406
+src/labels.scailo_pb.ts:438
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:407
+src/labels.scailo_pb.ts:439
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:428
+src/labels.scailo_pb.ts:460
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:416
+src/labels.scailo_pb.ts:448
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:420
+src/labels.scailo_pb.ts:452
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:424
+src/labels.scailo_pb.ts:456

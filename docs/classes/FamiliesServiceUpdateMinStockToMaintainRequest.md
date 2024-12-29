@@ -1,90 +1,90 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceAdjustPriceRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceUpdateMinStockToMaintainRequest
 
-# Class: FamiliesServiceAdjustPriceRequest
+# Class: FamiliesServiceUpdateMinStockToMaintainRequest
 
-Describes the parameters necessary to adjust a family's price
+Describes the parameters necessary to update a family's min stock to maintain
 
 **`Generated`**
 
-from message Scailo.FamiliesServiceAdjustPriceRequest
+from message Scailo.FamiliesServiceUpdateMinStockToMaintainRequest
 
 ## Hierarchy
 
-- `Message`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\>
+- `Message`\<[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)\>
 
-  ↳ **`FamiliesServiceAdjustPriceRequest`**
+  ↳ **`FamiliesServiceUpdateMinStockToMaintainRequest`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](FamiliesServiceAdjustPriceRequest.md#constructor)
+- [constructor](FamiliesServiceUpdateMinStockToMaintainRequest.md#constructor)
 
 ### Properties
 
-- [price](FamiliesServiceAdjustPriceRequest.md#price)
-- [userComment](FamiliesServiceAdjustPriceRequest.md#usercomment)
-- [uuid](FamiliesServiceAdjustPriceRequest.md#uuid)
-- [fields](FamiliesServiceAdjustPriceRequest.md#fields)
-- [runtime](FamiliesServiceAdjustPriceRequest.md#runtime)
-- [typeName](FamiliesServiceAdjustPriceRequest.md#typename)
+- [minStockToMaintain](FamiliesServiceUpdateMinStockToMaintainRequest.md#minstocktomaintain)
+- [userComment](FamiliesServiceUpdateMinStockToMaintainRequest.md#usercomment)
+- [uuid](FamiliesServiceUpdateMinStockToMaintainRequest.md#uuid)
+- [fields](FamiliesServiceUpdateMinStockToMaintainRequest.md#fields)
+- [runtime](FamiliesServiceUpdateMinStockToMaintainRequest.md#runtime)
+- [typeName](FamiliesServiceUpdateMinStockToMaintainRequest.md#typename)
 
 ### Methods
 
-- [clone](FamiliesServiceAdjustPriceRequest.md#clone)
-- [equals](FamiliesServiceAdjustPriceRequest.md#equals)
-- [fromBinary](FamiliesServiceAdjustPriceRequest.md#frombinary)
-- [fromJson](FamiliesServiceAdjustPriceRequest.md#fromjson)
-- [fromJsonString](FamiliesServiceAdjustPriceRequest.md#fromjsonstring)
-- [getType](FamiliesServiceAdjustPriceRequest.md#gettype)
-- [toBinary](FamiliesServiceAdjustPriceRequest.md#tobinary)
-- [toJSON](FamiliesServiceAdjustPriceRequest.md#tojson)
-- [toJson](FamiliesServiceAdjustPriceRequest.md#tojson-1)
-- [toJsonString](FamiliesServiceAdjustPriceRequest.md#tojsonstring)
-- [equals](FamiliesServiceAdjustPriceRequest.md#equals-1)
-- [fromBinary](FamiliesServiceAdjustPriceRequest.md#frombinary-1)
-- [fromJson](FamiliesServiceAdjustPriceRequest.md#fromjson-1)
-- [fromJsonString](FamiliesServiceAdjustPriceRequest.md#fromjsonstring-1)
+- [clone](FamiliesServiceUpdateMinStockToMaintainRequest.md#clone)
+- [equals](FamiliesServiceUpdateMinStockToMaintainRequest.md#equals)
+- [fromBinary](FamiliesServiceUpdateMinStockToMaintainRequest.md#frombinary)
+- [fromJson](FamiliesServiceUpdateMinStockToMaintainRequest.md#fromjson)
+- [fromJsonString](FamiliesServiceUpdateMinStockToMaintainRequest.md#fromjsonstring)
+- [getType](FamiliesServiceUpdateMinStockToMaintainRequest.md#gettype)
+- [toBinary](FamiliesServiceUpdateMinStockToMaintainRequest.md#tobinary)
+- [toJSON](FamiliesServiceUpdateMinStockToMaintainRequest.md#tojson)
+- [toJson](FamiliesServiceUpdateMinStockToMaintainRequest.md#tojson-1)
+- [toJsonString](FamiliesServiceUpdateMinStockToMaintainRequest.md#tojsonstring)
+- [equals](FamiliesServiceUpdateMinStockToMaintainRequest.md#equals-1)
+- [fromBinary](FamiliesServiceUpdateMinStockToMaintainRequest.md#frombinary-1)
+- [fromJson](FamiliesServiceUpdateMinStockToMaintainRequest.md#fromjson-1)
+- [fromJsonString](FamiliesServiceUpdateMinStockToMaintainRequest.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new FamiliesServiceAdjustPriceRequest**(`data?`): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+• **new FamiliesServiceUpdateMinStockToMaintainRequest**(`data?`): [`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\> |
+| `data?` | `PartialMessage`\<[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)\> |
 
 #### Returns
 
-[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Overrides
 
-Message\&lt;FamiliesServiceAdjustPriceRequest\&gt;.constructor
+Message\&lt;FamiliesServiceUpdateMinStockToMaintainRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2597
+src/families.scailo_pb.ts:2655
 
 ## Properties
 
-### price
+### minStockToMaintain
 
-• **price**: `bigint` = `protoInt64.zero`
+• **minStockToMaintain**: `bigint` = `protoInt64.zero`
 
-Stores the unit price
+Stores the minimum stock to maintain
 
 **`Generated`**
 
-from field: uint64 price = 26;
+from field: uint64 min_stock_to_maintain = 27;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2595
+src/families.scailo_pb.ts:2653
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2581
+src/families.scailo_pb.ts:2639
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2588
+src/families.scailo_pb.ts:2646
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2604
+src/families.scailo_pb.ts:2662
 
 ___
 
@@ -136,29 +136,29 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2602
+src/families.scailo_pb.ts:2660
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.FamiliesServiceAdjustPriceRequest"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.FamiliesServiceUpdateMinStockToMaintainRequest"``
 
 #### Defined in
 
-src/families.scailo_pb.ts:2603
+src/families.scailo_pb.ts:2661
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+▸ **clone**(): [`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Inherited from
 
@@ -181,7 +181,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md) \| `PlainMessage`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\> |
+| `other` | `undefined` \| ``null`` \| [`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md) \| `PlainMessage`\<[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)\> |
 
 #### Returns
 
@@ -286,7 +286,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\>
+▸ **getType**(): `MessageType`\<[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -294,7 +294,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\>
+`MessageType`\<[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)\>
 
 #### Inherited from
 
@@ -425,8 +425,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md) \| `PlainMessage`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\> |
-| `b` | `undefined` \| [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md) \| `PlainMessage`\<[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)\> |
+| `a` | `undefined` \| [`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md) \| `PlainMessage`\<[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)\> |
+| `b` | `undefined` \| [`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md) \| `PlainMessage`\<[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)\> |
 
 #### Returns
 
@@ -434,13 +434,13 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2622
+src/families.scailo_pb.ts:2680
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+▸ **fromBinary**(`bytes`, `options?`): [`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Parameters
 
@@ -451,17 +451,17 @@ ___
 
 #### Returns
 
-[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2610
+src/families.scailo_pb.ts:2668
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Parameters
 
@@ -472,17 +472,17 @@ ___
 
 #### Returns
 
-[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2614
+src/families.scailo_pb.ts:2672
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Parameters
 
@@ -493,8 +493,8 @@ ___
 
 #### Returns
 
-[`FamiliesServiceAdjustPriceRequest`](FamiliesServiceAdjustPriceRequest.md)
+[`FamiliesServiceUpdateMinStockToMaintainRequest`](FamiliesServiceUpdateMinStockToMaintainRequest.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2618
+src/families.scailo_pb.ts:2676

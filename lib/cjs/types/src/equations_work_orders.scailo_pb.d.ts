@@ -149,7 +149,13 @@ export declare enum EQUATION_WORK_ORDER_SORT_KEY {
      *
      * @generated from enum value: EQUATION_WORK_ORDER_SORT_KEY_WORK_ORDER_ID = 11;
      */
-    EQUATION_WORK_ORDER_SORT_KEY_WORK_ORDER_ID = 11
+    EQUATION_WORK_ORDER_SORT_KEY_WORK_ORDER_ID = 11,
+    /**
+     * Fetch ordered results by the amendment count
+     *
+     * @generated from enum value: EQUATION_WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 15;
+     */
+    EQUATION_WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 15
 }
 /**
  *
@@ -334,6 +340,12 @@ export declare class EquationWorkOrder extends Message<EquationWorkOrder> {
      * @generated from field: double total_price = 40;
      */
     totalPrice: number;
+    /**
+     * The number of times that the equation work order has been amended
+     *
+     * @generated from field: uint64 amendment_count = 70;
+     */
+    amendmentCount: bigint;
     constructor(data?: PartialMessage<EquationWorkOrder>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.EquationWorkOrder";

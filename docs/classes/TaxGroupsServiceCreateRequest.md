@@ -23,6 +23,7 @@ from message Scailo.TaxGroupsServiceCreateRequest
 ### Properties
 
 - [category](TaxGroupsServiceCreateRequest.md#category)
+- [code](TaxGroupsServiceCreateRequest.md#code)
 - [description](TaxGroupsServiceCreateRequest.md#description)
 - [entityUuid](TaxGroupsServiceCreateRequest.md#entityuuid)
 - [name](TaxGroupsServiceCreateRequest.md#name)
@@ -70,7 +71,7 @@ Message\&lt;TaxGroupsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:163
+src/tax_groups.scailo_pb.ts:178
 
 ## Properties
 
@@ -86,7 +87,23 @@ from field: Scailo.TAX_GROUP_CATEGORY category = 11;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:154
+src/tax_groups.scailo_pb.ts:169
+
+___
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the tax group is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/tax_groups.scailo_pb.ts:162
 
 ___
 
@@ -102,7 +119,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:161
+src/tax_groups.scailo_pb.ts:176
 
 ___
 
@@ -118,7 +135,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:133
+src/tax_groups.scailo_pb.ts:141
 
 ___
 
@@ -134,7 +151,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:147
+src/tax_groups.scailo_pb.ts:155
 
 ___
 
@@ -150,7 +167,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:140
+src/tax_groups.scailo_pb.ts:148
 
 ___
 
@@ -160,7 +177,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:170
+src/tax_groups.scailo_pb.ts:185
 
 ___
 
@@ -170,7 +187,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:168
+src/tax_groups.scailo_pb.ts:183
 
 ___
 
@@ -180,7 +197,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:169
+src/tax_groups.scailo_pb.ts:184
 
 ## Methods
 
@@ -468,7 +485,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:190
+src/tax_groups.scailo_pb.ts:206
 
 ___
 
@@ -489,7 +506,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:178
+src/tax_groups.scailo_pb.ts:194
 
 ___
 
@@ -510,7 +527,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:182
+src/tax_groups.scailo_pb.ts:198
 
 ___
 
@@ -531,4 +548,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:186
+src/tax_groups.scailo_pb.ts:202

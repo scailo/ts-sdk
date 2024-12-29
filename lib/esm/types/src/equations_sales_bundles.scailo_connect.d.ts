@@ -325,10 +325,10 @@ export declare const EquationsSalesBundlesService: {
          * CSV operations
          * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
          *
-         * @generated from rpc Scailo.EquationsSalesBundlesService.DownloadAsCSV
+         * @generated from rpc Scailo.EquationsSalesBundlesService.DownloadItemsAsCSV
          */
-        readonly downloadAsCSV: {
-            readonly name: "DownloadAsCSV";
+        readonly downloadItemsAsCSV: {
+            readonly name: "DownloadItemsAsCSV";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;

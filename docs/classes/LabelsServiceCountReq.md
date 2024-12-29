@@ -22,6 +22,7 @@ from message Scailo.LabelsServiceCountReq
 
 ### Properties
 
+- [code](LabelsServiceCountReq.md#code)
 - [creationTimestampEnd](LabelsServiceCountReq.md#creationtimestampend)
 - [creationTimestampStart](LabelsServiceCountReq.md#creationtimestampstart)
 - [entityUuid](LabelsServiceCountReq.md#entityuuid)
@@ -72,9 +73,25 @@ Message\&lt;LabelsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/labels.scailo_pb.ts:611
+src/labels.scailo_pb.ts:658
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the label is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/labels.scailo_pb.ts:656
+
+___
 
 ### creationTimestampEnd
 
@@ -88,7 +105,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:581
+src/labels.scailo_pb.ts:621
 
 ___
 
@@ -104,7 +121,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:574
+src/labels.scailo_pb.ts:614
 
 ___
 
@@ -120,7 +137,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:602
+src/labels.scailo_pb.ts:642
 
 ___
 
@@ -136,7 +153,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:567
+src/labels.scailo_pb.ts:607
 
 ___
 
@@ -152,7 +169,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:595
+src/labels.scailo_pb.ts:635
 
 ___
 
@@ -168,7 +185,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:588
+src/labels.scailo_pb.ts:628
 
 ___
 
@@ -184,7 +201,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:609
+src/labels.scailo_pb.ts:649
 
 ___
 
@@ -194,7 +211,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:618
+src/labels.scailo_pb.ts:665
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:616
+src/labels.scailo_pb.ts:663
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:617
+src/labels.scailo_pb.ts:664
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:640
+src/labels.scailo_pb.ts:688
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:628
+src/labels.scailo_pb.ts:676
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:632
+src/labels.scailo_pb.ts:680
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:636
+src/labels.scailo_pb.ts:684

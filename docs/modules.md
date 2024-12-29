@@ -629,7 +629,6 @@
 - [ExpensesServiceSearchAllReq](classes/ExpensesServiceSearchAllReq.md)
 - [ExpensesServiceUpdateRequest](classes/ExpensesServiceUpdateRequest.md)
 - [FamiliesList](classes/FamiliesList.md)
-- [FamiliesServiceAdjustPriceRequest](classes/FamiliesServiceAdjustPriceRequest.md)
 - [FamiliesServiceCountReq](classes/FamiliesServiceCountReq.md)
 - [FamiliesServiceCreateRequest](classes/FamiliesServiceCreateRequest.md)
 - [FamiliesServiceFilterReq](classes/FamiliesServiceFilterReq.md)
@@ -641,6 +640,8 @@
 - [FamiliesServiceStorageCreateRequest](classes/FamiliesServiceStorageCreateRequest.md)
 - [FamiliesServiceUnitConversionCreateRequest](classes/FamiliesServiceUnitConversionCreateRequest.md)
 - [FamiliesServiceUnitConversionPresenceRequest](classes/FamiliesServiceUnitConversionPresenceRequest.md)
+- [FamiliesServiceUpdateMinStockToMaintainRequest](classes/FamiliesServiceUpdateMinStockToMaintainRequest.md)
+- [FamiliesServiceUpdatePriceRequest](classes/FamiliesServiceUpdatePriceRequest.md)
 - [FamiliesServiceUpdateRequest](classes/FamiliesServiceUpdateRequest.md)
 - [Family](classes/Family.md)
 - [FamilyLabel](classes/FamilyLabel.md)
@@ -2026,6 +2027,7 @@
 - [PermissionActivityOpen](modules.md#permissionactivityopen)
 - [PermissionActivityReopen](modules.md#permissionactivityreopen)
 - [PermissionActivityUpdate](modules.md#permissionactivityupdate)
+- [PermissionAmendEquationWorkOrder](modules.md#permissionamendequationworkorder)
 - [PermissionAmendFamily](modules.md#permissionamendfamily)
 - [PermissionAmendProformaInvoice](modules.md#permissionamendproformainvoice)
 - [PermissionAmendPurchaseOrder](modules.md#permissionamendpurchaseorder)
@@ -6562,7 +6564,7 @@ from service Scailo.EquationsFamiliesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addEquationFamilyItem`: \{ `I`: typeof [`EquationsFamiliesServiceItemCreateRequest`](classes/EquationsFamiliesServiceItemCreateRequest.md) = EquationsFamiliesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationFamilyItem"`` = "AddEquationFamilyItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveEquationFamilyItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveEquationFamilyItem"`` = "ApproveEquationFamilyItem" } ; `clone`: \{ `I`: typeof [`CloneRequest`](classes/CloneRequest.md) = CloneRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Clone"`` = "Clone" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`EquationsFamiliesServiceCountReq`](classes/EquationsFamiliesServiceCountReq.md) = EquationsFamiliesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`EquationsFamiliesServiceCreateRequest`](classes/EquationsFamiliesServiceCreateRequest.md) = EquationsFamiliesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteEquationFamilyItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteEquationFamilyItem"`` = "DeleteEquationFamilyItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadTreeAsCSV`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } ; `draft`: \{ `I`: typeof [`EquationsFamiliesServiceCreateRequest`](classes/EquationsFamiliesServiceCreateRequest.md) = EquationsFamiliesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`EquationsFamiliesServiceUpdateRequest`](classes/EquationsFamiliesServiceUpdateRequest.md) = EquationsFamiliesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`EquationsFamiliesServiceFilterReq`](classes/EquationsFamiliesServiceFilterReq.md) = EquationsFamiliesServiceFilterReq; `O`: typeof [`EquationsFamiliesList`](classes/EquationsFamiliesList.md) = EquationsFamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyEquationFamilyItem`: \{ `I`: typeof [`EquationsFamiliesServiceItemUpdateRequest`](classes/EquationsFamiliesServiceItemUpdateRequest.md) = EquationsFamiliesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyEquationFamilyItem"`` = "ModifyEquationFamilyItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderEquationFamilyItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderEquationFamilyItems"`` = "ReorderEquationFamilyItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`EquationsFamiliesServiceUpdateRequest`](classes/EquationsFamiliesServiceUpdateRequest.md) = EquationsFamiliesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`EquationsFamiliesServiceSearchAllReq`](classes/EquationsFamiliesServiceSearchAllReq.md) = EquationsFamiliesServiceSearchAllReq; `O`: typeof [`EquationsFamiliesList`](classes/EquationsFamiliesList.md) = EquationsFamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`EquationFamilyItemsSearchRequest`](classes/EquationFamilyItemsSearchRequest.md) = EquationFamilyItemsSearchRequest; `O`: typeof [`EquationsFamiliesServicePaginatedItemsResponse`](classes/EquationsFamiliesServicePaginatedItemsResponse.md) = EquationsFamiliesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadEquationFamilyItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadEquationFamilyItems"`` = "UploadEquationFamilyItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquationsFamiliesList`](classes/EquationsFamiliesList.md) = EquationsFamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`EquationsFamiliesList`](classes/EquationsFamiliesList.md) = EquationsFamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedEquationFamilyItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsFamiliesItemsList`](classes/EquationsFamiliesItemsList.md) = EquationsFamiliesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationFamilyItems"`` = "ViewApprovedEquationFamilyItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationFamily`](classes/EquationFamily.md) = EquationFamily; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEquationFamilyItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationFamilyItem`](classes/EquationFamilyItem.md) = EquationFamilyItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationFamilyItemByID"`` = "ViewEquationFamilyItemByID" } ; `viewEquationFamilyItemHistory`: \{ `I`: typeof [`EquationFamilyItemHistoryRequest`](classes/EquationFamilyItemHistoryRequest.md) = EquationFamilyItemHistoryRequest; `O`: typeof [`EquationsFamiliesItemsList`](classes/EquationsFamiliesItemsList.md) = EquationsFamiliesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationFamilyItemHistory"`` = "ViewEquationFamilyItemHistory" } ; `viewForFamilyID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationFamily`](classes/EquationFamily.md) = EquationFamily; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewForFamilyID"`` = "ViewForFamilyID" } ; `viewPaginatedApprovedEquationFamilyItems`: \{ `I`: typeof [`EquationFamilyItemsSearchRequest`](classes/EquationFamilyItemsSearchRequest.md) = EquationFamilyItemsSearchRequest; `O`: typeof [`EquationsFamiliesServicePaginatedItemsResponse`](classes/EquationsFamiliesServicePaginatedItemsResponse.md) = EquationsFamiliesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedEquationFamilyItems"`` = "ViewPaginatedApprovedEquationFamilyItems" } ; `viewPaginatedUnapprovedEquationFamilyItems`: \{ `I`: typeof [`EquationFamilyItemsSearchRequest`](classes/EquationFamilyItemsSearchRequest.md) = EquationFamilyItemsSearchRequest; `O`: typeof [`EquationsFamiliesServicePaginatedItemsResponse`](classes/EquationsFamiliesServicePaginatedItemsResponse.md) = EquationsFamiliesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedEquationFamilyItems"`` = "ViewPaginatedUnapprovedEquationFamilyItems" } ; `viewSelectableFamilies`: \{ `I`: typeof [`IdentifierWithSearch`](classes/IdentifierWithSearch.md) = IdentifierWithSearch; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSelectableFamilies"`` = "ViewSelectableFamilies" } ; `viewUnapprovedEquationFamilyItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsFamiliesItemsList`](classes/EquationsFamiliesItemsList.md) = EquationsFamiliesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedEquationFamilyItems"`` = "ViewUnapprovedEquationFamilyItems" } ; `viewWithPagination`: \{ `I`: typeof [`EquationsFamiliesServicePaginationReq`](classes/EquationsFamiliesServicePaginationReq.md) = EquationsFamiliesServicePaginationReq; `O`: typeof [`EquationsFamiliesServicePaginationResponse`](classes/EquationsFamiliesServicePaginationResponse.md) = EquationsFamiliesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addEquationFamilyItem`: \{ `I`: typeof [`EquationsFamiliesServiceItemCreateRequest`](classes/EquationsFamiliesServiceItemCreateRequest.md) = EquationsFamiliesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationFamilyItem"`` = "AddEquationFamilyItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveEquationFamilyItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveEquationFamilyItem"`` = "ApproveEquationFamilyItem" } ; `clone`: \{ `I`: typeof [`CloneRequest`](classes/CloneRequest.md) = CloneRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Clone"`` = "Clone" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`EquationsFamiliesServiceCountReq`](classes/EquationsFamiliesServiceCountReq.md) = EquationsFamiliesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`EquationsFamiliesServiceCreateRequest`](classes/EquationsFamiliesServiceCreateRequest.md) = EquationsFamiliesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteEquationFamilyItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteEquationFamilyItem"`` = "DeleteEquationFamilyItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `downloadTreeAsCSV`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } ; `draft`: \{ `I`: typeof [`EquationsFamiliesServiceCreateRequest`](classes/EquationsFamiliesServiceCreateRequest.md) = EquationsFamiliesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`EquationsFamiliesServiceUpdateRequest`](classes/EquationsFamiliesServiceUpdateRequest.md) = EquationsFamiliesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`EquationsFamiliesServiceFilterReq`](classes/EquationsFamiliesServiceFilterReq.md) = EquationsFamiliesServiceFilterReq; `O`: typeof [`EquationsFamiliesList`](classes/EquationsFamiliesList.md) = EquationsFamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyEquationFamilyItem`: \{ `I`: typeof [`EquationsFamiliesServiceItemUpdateRequest`](classes/EquationsFamiliesServiceItemUpdateRequest.md) = EquationsFamiliesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyEquationFamilyItem"`` = "ModifyEquationFamilyItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderEquationFamilyItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderEquationFamilyItems"`` = "ReorderEquationFamilyItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`EquationsFamiliesServiceUpdateRequest`](classes/EquationsFamiliesServiceUpdateRequest.md) = EquationsFamiliesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`EquationsFamiliesServiceSearchAllReq`](classes/EquationsFamiliesServiceSearchAllReq.md) = EquationsFamiliesServiceSearchAllReq; `O`: typeof [`EquationsFamiliesList`](classes/EquationsFamiliesList.md) = EquationsFamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`EquationFamilyItemsSearchRequest`](classes/EquationFamilyItemsSearchRequest.md) = EquationFamilyItemsSearchRequest; `O`: typeof [`EquationsFamiliesServicePaginatedItemsResponse`](classes/EquationsFamiliesServicePaginatedItemsResponse.md) = EquationsFamiliesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadEquationFamilyItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadEquationFamilyItems"`` = "UploadEquationFamilyItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquationsFamiliesList`](classes/EquationsFamiliesList.md) = EquationsFamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`EquationsFamiliesList`](classes/EquationsFamiliesList.md) = EquationsFamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedEquationFamilyItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsFamiliesItemsList`](classes/EquationsFamiliesItemsList.md) = EquationsFamiliesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationFamilyItems"`` = "ViewApprovedEquationFamilyItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationFamily`](classes/EquationFamily.md) = EquationFamily; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEquationFamilyItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationFamilyItem`](classes/EquationFamilyItem.md) = EquationFamilyItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationFamilyItemByID"`` = "ViewEquationFamilyItemByID" } ; `viewEquationFamilyItemHistory`: \{ `I`: typeof [`EquationFamilyItemHistoryRequest`](classes/EquationFamilyItemHistoryRequest.md) = EquationFamilyItemHistoryRequest; `O`: typeof [`EquationsFamiliesItemsList`](classes/EquationsFamiliesItemsList.md) = EquationsFamiliesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationFamilyItemHistory"`` = "ViewEquationFamilyItemHistory" } ; `viewForFamilyID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationFamily`](classes/EquationFamily.md) = EquationFamily; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewForFamilyID"`` = "ViewForFamilyID" } ; `viewPaginatedApprovedEquationFamilyItems`: \{ `I`: typeof [`EquationFamilyItemsSearchRequest`](classes/EquationFamilyItemsSearchRequest.md) = EquationFamilyItemsSearchRequest; `O`: typeof [`EquationsFamiliesServicePaginatedItemsResponse`](classes/EquationsFamiliesServicePaginatedItemsResponse.md) = EquationsFamiliesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedEquationFamilyItems"`` = "ViewPaginatedApprovedEquationFamilyItems" } ; `viewPaginatedUnapprovedEquationFamilyItems`: \{ `I`: typeof [`EquationFamilyItemsSearchRequest`](classes/EquationFamilyItemsSearchRequest.md) = EquationFamilyItemsSearchRequest; `O`: typeof [`EquationsFamiliesServicePaginatedItemsResponse`](classes/EquationsFamiliesServicePaginatedItemsResponse.md) = EquationsFamiliesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedEquationFamilyItems"`` = "ViewPaginatedUnapprovedEquationFamilyItems" } ; `viewSelectableFamilies`: \{ `I`: typeof [`IdentifierWithSearch`](classes/IdentifierWithSearch.md) = IdentifierWithSearch; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSelectableFamilies"`` = "ViewSelectableFamilies" } ; `viewUnapprovedEquationFamilyItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsFamiliesItemsList`](classes/EquationsFamiliesItemsList.md) = EquationsFamiliesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedEquationFamilyItems"`` = "ViewUnapprovedEquationFamilyItems" } ; `viewWithPagination`: \{ `I`: typeof [`EquationsFamiliesServicePaginationReq`](classes/EquationsFamiliesServicePaginationReq.md) = EquationsFamiliesServicePaginationReq; `O`: typeof [`EquationsFamiliesServicePaginationResponse`](classes/EquationsFamiliesServicePaginationResponse.md) = EquationsFamiliesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addEquationFamilyItem` | \{ `I`: typeof [`EquationsFamiliesServiceItemCreateRequest`](classes/EquationsFamiliesServiceItemCreateRequest.md) = EquationsFamiliesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationFamilyItem"`` = "AddEquationFamilyItem" } |
 | `methods.addEquationFamilyItem.I` | typeof [`EquationsFamiliesServiceItemCreateRequest`](classes/EquationsFamiliesServiceItemCreateRequest.md) |
 | `methods.addEquationFamilyItem.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -6618,11 +6620,11 @@ from service Scailo.EquationsFamiliesService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.downloadTreeAsCSV` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } |
 | `methods.downloadTreeAsCSV.I` | typeof [`Identifier`](classes/Identifier.md) |
 | `methods.downloadTreeAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
@@ -6790,7 +6792,7 @@ from service Scailo.EquationsReplaceablesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addEquationReplaceableItem`: \{ `I`: typeof [`EquationsReplaceablesServiceItemCreateRequest`](classes/EquationsReplaceablesServiceItemCreateRequest.md) = EquationsReplaceablesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationReplaceableItem"`` = "AddEquationReplaceableItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveEquationReplaceableItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveEquationReplaceableItem"`` = "ApproveEquationReplaceableItem" } ; `clone`: \{ `I`: typeof [`CloneRequest`](classes/CloneRequest.md) = CloneRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Clone"`` = "Clone" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`EquationsReplaceablesServiceCountReq`](classes/EquationsReplaceablesServiceCountReq.md) = EquationsReplaceablesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`EquationsReplaceablesServiceCreateRequest`](classes/EquationsReplaceablesServiceCreateRequest.md) = EquationsReplaceablesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteEquationReplaceableItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteEquationReplaceableItem"`` = "DeleteEquationReplaceableItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadTreeAsCSV`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } ; `draft`: \{ `I`: typeof [`EquationsReplaceablesServiceCreateRequest`](classes/EquationsReplaceablesServiceCreateRequest.md) = EquationsReplaceablesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`EquationsReplaceablesServiceUpdateRequest`](classes/EquationsReplaceablesServiceUpdateRequest.md) = EquationsReplaceablesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`EquationsReplaceablesServiceFilterReq`](classes/EquationsReplaceablesServiceFilterReq.md) = EquationsReplaceablesServiceFilterReq; `O`: typeof [`EquationsReplaceablesList`](classes/EquationsReplaceablesList.md) = EquationsReplaceablesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyEquationReplaceableItem`: \{ `I`: typeof [`EquationsReplaceablesServiceItemUpdateRequest`](classes/EquationsReplaceablesServiceItemUpdateRequest.md) = EquationsReplaceablesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyEquationReplaceableItem"`` = "ModifyEquationReplaceableItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderEquationReplaceableItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderEquationReplaceableItems"`` = "ReorderEquationReplaceableItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`EquationsReplaceablesServiceUpdateRequest`](classes/EquationsReplaceablesServiceUpdateRequest.md) = EquationsReplaceablesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`EquationsReplaceablesServiceSearchAllReq`](classes/EquationsReplaceablesServiceSearchAllReq.md) = EquationsReplaceablesServiceSearchAllReq; `O`: typeof [`EquationsReplaceablesList`](classes/EquationsReplaceablesList.md) = EquationsReplaceablesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`EquationReplaceableItemsSearchRequest`](classes/EquationReplaceableItemsSearchRequest.md) = EquationReplaceableItemsSearchRequest; `O`: typeof [`EquationsReplaceablesServicePaginatedItemsResponse`](classes/EquationsReplaceablesServicePaginatedItemsResponse.md) = EquationsReplaceablesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadEquationReplaceableItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadEquationReplaceableItems"`` = "UploadEquationReplaceableItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquationsReplaceablesList`](classes/EquationsReplaceablesList.md) = EquationsReplaceablesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`EquationsReplaceablesList`](classes/EquationsReplaceablesList.md) = EquationsReplaceablesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedEquationReplaceableItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsReplaceablesItemsList`](classes/EquationsReplaceablesItemsList.md) = EquationsReplaceablesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationReplaceableItems"`` = "ViewApprovedEquationReplaceableItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationReplaceable`](classes/EquationReplaceable.md) = EquationReplaceable; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEquationReplaceableItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationReplaceableItem`](classes/EquationReplaceableItem.md) = EquationReplaceableItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationReplaceableItemByID"`` = "ViewEquationReplaceableItemByID" } ; `viewEquationReplaceableItemHistory`: \{ `I`: typeof [`EquationReplaceableItemHistoryRequest`](classes/EquationReplaceableItemHistoryRequest.md) = EquationReplaceableItemHistoryRequest; `O`: typeof [`EquationsReplaceablesItemsList`](classes/EquationsReplaceablesItemsList.md) = EquationsReplaceablesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationReplaceableItemHistory"`` = "ViewEquationReplaceableItemHistory" } ; `viewForFamilyID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationReplaceable`](classes/EquationReplaceable.md) = EquationReplaceable; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewForFamilyID"`` = "ViewForFamilyID" } ; `viewPaginatedApprovedEquationReplaceableItems`: \{ `I`: typeof [`EquationReplaceableItemsSearchRequest`](classes/EquationReplaceableItemsSearchRequest.md) = EquationReplaceableItemsSearchRequest; `O`: typeof [`EquationsReplaceablesServicePaginatedItemsResponse`](classes/EquationsReplaceablesServicePaginatedItemsResponse.md) = EquationsReplaceablesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedEquationReplaceableItems"`` = "ViewPaginatedApprovedEquationReplaceableItems" } ; `viewPaginatedUnapprovedEquationReplaceableItems`: \{ `I`: typeof [`EquationReplaceableItemsSearchRequest`](classes/EquationReplaceableItemsSearchRequest.md) = EquationReplaceableItemsSearchRequest; `O`: typeof [`EquationsReplaceablesServicePaginatedItemsResponse`](classes/EquationsReplaceablesServicePaginatedItemsResponse.md) = EquationsReplaceablesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedEquationReplaceableItems"`` = "ViewPaginatedUnapprovedEquationReplaceableItems" } ; `viewUnapprovedEquationReplaceableItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsReplaceablesItemsList`](classes/EquationsReplaceablesItemsList.md) = EquationsReplaceablesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedEquationReplaceableItems"`` = "ViewUnapprovedEquationReplaceableItems" } ; `viewWithPagination`: \{ `I`: typeof [`EquationsReplaceablesServicePaginationReq`](classes/EquationsReplaceablesServicePaginationReq.md) = EquationsReplaceablesServicePaginationReq; `O`: typeof [`EquationsReplaceablesServicePaginationResponse`](classes/EquationsReplaceablesServicePaginationResponse.md) = EquationsReplaceablesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addEquationReplaceableItem`: \{ `I`: typeof [`EquationsReplaceablesServiceItemCreateRequest`](classes/EquationsReplaceablesServiceItemCreateRequest.md) = EquationsReplaceablesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationReplaceableItem"`` = "AddEquationReplaceableItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveEquationReplaceableItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveEquationReplaceableItem"`` = "ApproveEquationReplaceableItem" } ; `clone`: \{ `I`: typeof [`CloneRequest`](classes/CloneRequest.md) = CloneRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Clone"`` = "Clone" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`EquationsReplaceablesServiceCountReq`](classes/EquationsReplaceablesServiceCountReq.md) = EquationsReplaceablesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`EquationsReplaceablesServiceCreateRequest`](classes/EquationsReplaceablesServiceCreateRequest.md) = EquationsReplaceablesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteEquationReplaceableItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteEquationReplaceableItem"`` = "DeleteEquationReplaceableItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `downloadTreeAsCSV`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } ; `draft`: \{ `I`: typeof [`EquationsReplaceablesServiceCreateRequest`](classes/EquationsReplaceablesServiceCreateRequest.md) = EquationsReplaceablesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`EquationsReplaceablesServiceUpdateRequest`](classes/EquationsReplaceablesServiceUpdateRequest.md) = EquationsReplaceablesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`EquationsReplaceablesServiceFilterReq`](classes/EquationsReplaceablesServiceFilterReq.md) = EquationsReplaceablesServiceFilterReq; `O`: typeof [`EquationsReplaceablesList`](classes/EquationsReplaceablesList.md) = EquationsReplaceablesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyEquationReplaceableItem`: \{ `I`: typeof [`EquationsReplaceablesServiceItemUpdateRequest`](classes/EquationsReplaceablesServiceItemUpdateRequest.md) = EquationsReplaceablesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyEquationReplaceableItem"`` = "ModifyEquationReplaceableItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderEquationReplaceableItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderEquationReplaceableItems"`` = "ReorderEquationReplaceableItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`EquationsReplaceablesServiceUpdateRequest`](classes/EquationsReplaceablesServiceUpdateRequest.md) = EquationsReplaceablesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`EquationsReplaceablesServiceSearchAllReq`](classes/EquationsReplaceablesServiceSearchAllReq.md) = EquationsReplaceablesServiceSearchAllReq; `O`: typeof [`EquationsReplaceablesList`](classes/EquationsReplaceablesList.md) = EquationsReplaceablesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`EquationReplaceableItemsSearchRequest`](classes/EquationReplaceableItemsSearchRequest.md) = EquationReplaceableItemsSearchRequest; `O`: typeof [`EquationsReplaceablesServicePaginatedItemsResponse`](classes/EquationsReplaceablesServicePaginatedItemsResponse.md) = EquationsReplaceablesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadEquationReplaceableItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadEquationReplaceableItems"`` = "UploadEquationReplaceableItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquationsReplaceablesList`](classes/EquationsReplaceablesList.md) = EquationsReplaceablesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`EquationsReplaceablesList`](classes/EquationsReplaceablesList.md) = EquationsReplaceablesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedEquationReplaceableItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsReplaceablesItemsList`](classes/EquationsReplaceablesItemsList.md) = EquationsReplaceablesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationReplaceableItems"`` = "ViewApprovedEquationReplaceableItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationReplaceable`](classes/EquationReplaceable.md) = EquationReplaceable; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEquationReplaceableItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationReplaceableItem`](classes/EquationReplaceableItem.md) = EquationReplaceableItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationReplaceableItemByID"`` = "ViewEquationReplaceableItemByID" } ; `viewEquationReplaceableItemHistory`: \{ `I`: typeof [`EquationReplaceableItemHistoryRequest`](classes/EquationReplaceableItemHistoryRequest.md) = EquationReplaceableItemHistoryRequest; `O`: typeof [`EquationsReplaceablesItemsList`](classes/EquationsReplaceablesItemsList.md) = EquationsReplaceablesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationReplaceableItemHistory"`` = "ViewEquationReplaceableItemHistory" } ; `viewForFamilyID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationReplaceable`](classes/EquationReplaceable.md) = EquationReplaceable; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewForFamilyID"`` = "ViewForFamilyID" } ; `viewPaginatedApprovedEquationReplaceableItems`: \{ `I`: typeof [`EquationReplaceableItemsSearchRequest`](classes/EquationReplaceableItemsSearchRequest.md) = EquationReplaceableItemsSearchRequest; `O`: typeof [`EquationsReplaceablesServicePaginatedItemsResponse`](classes/EquationsReplaceablesServicePaginatedItemsResponse.md) = EquationsReplaceablesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedEquationReplaceableItems"`` = "ViewPaginatedApprovedEquationReplaceableItems" } ; `viewPaginatedUnapprovedEquationReplaceableItems`: \{ `I`: typeof [`EquationReplaceableItemsSearchRequest`](classes/EquationReplaceableItemsSearchRequest.md) = EquationReplaceableItemsSearchRequest; `O`: typeof [`EquationsReplaceablesServicePaginatedItemsResponse`](classes/EquationsReplaceablesServicePaginatedItemsResponse.md) = EquationsReplaceablesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedEquationReplaceableItems"`` = "ViewPaginatedUnapprovedEquationReplaceableItems" } ; `viewUnapprovedEquationReplaceableItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsReplaceablesItemsList`](classes/EquationsReplaceablesItemsList.md) = EquationsReplaceablesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedEquationReplaceableItems"`` = "ViewUnapprovedEquationReplaceableItems" } ; `viewWithPagination`: \{ `I`: typeof [`EquationsReplaceablesServicePaginationReq`](classes/EquationsReplaceablesServicePaginationReq.md) = EquationsReplaceablesServicePaginationReq; `O`: typeof [`EquationsReplaceablesServicePaginationResponse`](classes/EquationsReplaceablesServicePaginationResponse.md) = EquationsReplaceablesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addEquationReplaceableItem` | \{ `I`: typeof [`EquationsReplaceablesServiceItemCreateRequest`](classes/EquationsReplaceablesServiceItemCreateRequest.md) = EquationsReplaceablesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationReplaceableItem"`` = "AddEquationReplaceableItem" } |
 | `methods.addEquationReplaceableItem.I` | typeof [`EquationsReplaceablesServiceItemCreateRequest`](classes/EquationsReplaceablesServiceItemCreateRequest.md) |
 | `methods.addEquationReplaceableItem.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -6846,11 +6848,11 @@ from service Scailo.EquationsReplaceablesService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.downloadTreeAsCSV` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } |
 | `methods.downloadTreeAsCSV.I` | typeof [`Identifier`](classes/Identifier.md) |
 | `methods.downloadTreeAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
@@ -7013,7 +7015,7 @@ from service Scailo.EquationsSalesBundlesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addEquationSalesBundleItem`: \{ `I`: typeof [`EquationsSalesBundlesServiceItemCreateRequest`](classes/EquationsSalesBundlesServiceItemCreateRequest.md) = EquationsSalesBundlesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationSalesBundleItem"`` = "AddEquationSalesBundleItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveEquationSalesBundleItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveEquationSalesBundleItem"`` = "ApproveEquationSalesBundleItem" } ; `clone`: \{ `I`: typeof [`CloneRequest`](classes/CloneRequest.md) = CloneRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Clone"`` = "Clone" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`EquationsSalesBundlesServiceCountReq`](classes/EquationsSalesBundlesServiceCountReq.md) = EquationsSalesBundlesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`EquationsSalesBundlesServiceCreateRequest`](classes/EquationsSalesBundlesServiceCreateRequest.md) = EquationsSalesBundlesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteEquationSalesBundleItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteEquationSalesBundleItem"`` = "DeleteEquationSalesBundleItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadTreeAsCSV`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } ; `draft`: \{ `I`: typeof [`EquationsSalesBundlesServiceCreateRequest`](classes/EquationsSalesBundlesServiceCreateRequest.md) = EquationsSalesBundlesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`EquationsSalesBundlesServiceUpdateRequest`](classes/EquationsSalesBundlesServiceUpdateRequest.md) = EquationsSalesBundlesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`EquationsSalesBundlesServiceFilterReq`](classes/EquationsSalesBundlesServiceFilterReq.md) = EquationsSalesBundlesServiceFilterReq; `O`: typeof [`EquationsSalesBundlesList`](classes/EquationsSalesBundlesList.md) = EquationsSalesBundlesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyEquationSalesBundleItem`: \{ `I`: typeof [`EquationsSalesBundlesServiceItemUpdateRequest`](classes/EquationsSalesBundlesServiceItemUpdateRequest.md) = EquationsSalesBundlesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyEquationSalesBundleItem"`` = "ModifyEquationSalesBundleItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderEquationSalesBundleItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderEquationSalesBundleItems"`` = "ReorderEquationSalesBundleItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`EquationsSalesBundlesServiceUpdateRequest`](classes/EquationsSalesBundlesServiceUpdateRequest.md) = EquationsSalesBundlesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`EquationsSalesBundlesServiceSearchAllReq`](classes/EquationsSalesBundlesServiceSearchAllReq.md) = EquationsSalesBundlesServiceSearchAllReq; `O`: typeof [`EquationsSalesBundlesList`](classes/EquationsSalesBundlesList.md) = EquationsSalesBundlesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`EquationSalesBundleItemsSearchRequest`](classes/EquationSalesBundleItemsSearchRequest.md) = EquationSalesBundleItemsSearchRequest; `O`: typeof [`EquationsSalesBundlesServicePaginatedItemsResponse`](classes/EquationsSalesBundlesServicePaginatedItemsResponse.md) = EquationsSalesBundlesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadEquationSalesBundleItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadEquationSalesBundleItems"`` = "UploadEquationSalesBundleItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquationsSalesBundlesList`](classes/EquationsSalesBundlesList.md) = EquationsSalesBundlesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`EquationsSalesBundlesList`](classes/EquationsSalesBundlesList.md) = EquationsSalesBundlesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedEquationSalesBundleItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsSalesBundlesItemsList`](classes/EquationsSalesBundlesItemsList.md) = EquationsSalesBundlesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationSalesBundleItems"`` = "ViewApprovedEquationSalesBundleItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationSalesBundle`](classes/EquationSalesBundle.md) = EquationSalesBundle; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEquationSalesBundleItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationSalesBundleItem`](classes/EquationSalesBundleItem.md) = EquationSalesBundleItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationSalesBundleItemByID"`` = "ViewEquationSalesBundleItemByID" } ; `viewEquationSalesBundleItemHistory`: \{ `I`: typeof [`EquationSalesBundleItemHistoryRequest`](classes/EquationSalesBundleItemHistoryRequest.md) = EquationSalesBundleItemHistoryRequest; `O`: typeof [`EquationsSalesBundlesItemsList`](classes/EquationsSalesBundlesItemsList.md) = EquationsSalesBundlesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationSalesBundleItemHistory"`` = "ViewEquationSalesBundleItemHistory" } ; `viewForFamilyID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationSalesBundle`](classes/EquationSalesBundle.md) = EquationSalesBundle; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewForFamilyID"`` = "ViewForFamilyID" } ; `viewPaginatedApprovedEquationSalesBundleItems`: \{ `I`: typeof [`EquationSalesBundleItemsSearchRequest`](classes/EquationSalesBundleItemsSearchRequest.md) = EquationSalesBundleItemsSearchRequest; `O`: typeof [`EquationsSalesBundlesServicePaginatedItemsResponse`](classes/EquationsSalesBundlesServicePaginatedItemsResponse.md) = EquationsSalesBundlesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedEquationSalesBundleItems"`` = "ViewPaginatedApprovedEquationSalesBundleItems" } ; `viewPaginatedUnapprovedEquationSalesBundleItems`: \{ `I`: typeof [`EquationSalesBundleItemsSearchRequest`](classes/EquationSalesBundleItemsSearchRequest.md) = EquationSalesBundleItemsSearchRequest; `O`: typeof [`EquationsSalesBundlesServicePaginatedItemsResponse`](classes/EquationsSalesBundlesServicePaginatedItemsResponse.md) = EquationsSalesBundlesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedEquationSalesBundleItems"`` = "ViewPaginatedUnapprovedEquationSalesBundleItems" } ; `viewUnapprovedEquationSalesBundleItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsSalesBundlesItemsList`](classes/EquationsSalesBundlesItemsList.md) = EquationsSalesBundlesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedEquationSalesBundleItems"`` = "ViewUnapprovedEquationSalesBundleItems" } ; `viewWithPagination`: \{ `I`: typeof [`EquationsSalesBundlesServicePaginationReq`](classes/EquationsSalesBundlesServicePaginationReq.md) = EquationsSalesBundlesServicePaginationReq; `O`: typeof [`EquationsSalesBundlesServicePaginationResponse`](classes/EquationsSalesBundlesServicePaginationResponse.md) = EquationsSalesBundlesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addEquationSalesBundleItem`: \{ `I`: typeof [`EquationsSalesBundlesServiceItemCreateRequest`](classes/EquationsSalesBundlesServiceItemCreateRequest.md) = EquationsSalesBundlesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationSalesBundleItem"`` = "AddEquationSalesBundleItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveEquationSalesBundleItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveEquationSalesBundleItem"`` = "ApproveEquationSalesBundleItem" } ; `clone`: \{ `I`: typeof [`CloneRequest`](classes/CloneRequest.md) = CloneRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Clone"`` = "Clone" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`EquationsSalesBundlesServiceCountReq`](classes/EquationsSalesBundlesServiceCountReq.md) = EquationsSalesBundlesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`EquationsSalesBundlesServiceCreateRequest`](classes/EquationsSalesBundlesServiceCreateRequest.md) = EquationsSalesBundlesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteEquationSalesBundleItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteEquationSalesBundleItem"`` = "DeleteEquationSalesBundleItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `downloadTreeAsCSV`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } ; `draft`: \{ `I`: typeof [`EquationsSalesBundlesServiceCreateRequest`](classes/EquationsSalesBundlesServiceCreateRequest.md) = EquationsSalesBundlesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`EquationsSalesBundlesServiceUpdateRequest`](classes/EquationsSalesBundlesServiceUpdateRequest.md) = EquationsSalesBundlesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`EquationsSalesBundlesServiceFilterReq`](classes/EquationsSalesBundlesServiceFilterReq.md) = EquationsSalesBundlesServiceFilterReq; `O`: typeof [`EquationsSalesBundlesList`](classes/EquationsSalesBundlesList.md) = EquationsSalesBundlesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyEquationSalesBundleItem`: \{ `I`: typeof [`EquationsSalesBundlesServiceItemUpdateRequest`](classes/EquationsSalesBundlesServiceItemUpdateRequest.md) = EquationsSalesBundlesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyEquationSalesBundleItem"`` = "ModifyEquationSalesBundleItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderEquationSalesBundleItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderEquationSalesBundleItems"`` = "ReorderEquationSalesBundleItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`EquationsSalesBundlesServiceUpdateRequest`](classes/EquationsSalesBundlesServiceUpdateRequest.md) = EquationsSalesBundlesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`EquationsSalesBundlesServiceSearchAllReq`](classes/EquationsSalesBundlesServiceSearchAllReq.md) = EquationsSalesBundlesServiceSearchAllReq; `O`: typeof [`EquationsSalesBundlesList`](classes/EquationsSalesBundlesList.md) = EquationsSalesBundlesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`EquationSalesBundleItemsSearchRequest`](classes/EquationSalesBundleItemsSearchRequest.md) = EquationSalesBundleItemsSearchRequest; `O`: typeof [`EquationsSalesBundlesServicePaginatedItemsResponse`](classes/EquationsSalesBundlesServicePaginatedItemsResponse.md) = EquationsSalesBundlesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadEquationSalesBundleItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadEquationSalesBundleItems"`` = "UploadEquationSalesBundleItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquationsSalesBundlesList`](classes/EquationsSalesBundlesList.md) = EquationsSalesBundlesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`EquationsSalesBundlesList`](classes/EquationsSalesBundlesList.md) = EquationsSalesBundlesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedEquationSalesBundleItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsSalesBundlesItemsList`](classes/EquationsSalesBundlesItemsList.md) = EquationsSalesBundlesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationSalesBundleItems"`` = "ViewApprovedEquationSalesBundleItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationSalesBundle`](classes/EquationSalesBundle.md) = EquationSalesBundle; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEquationSalesBundleItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationSalesBundleItem`](classes/EquationSalesBundleItem.md) = EquationSalesBundleItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationSalesBundleItemByID"`` = "ViewEquationSalesBundleItemByID" } ; `viewEquationSalesBundleItemHistory`: \{ `I`: typeof [`EquationSalesBundleItemHistoryRequest`](classes/EquationSalesBundleItemHistoryRequest.md) = EquationSalesBundleItemHistoryRequest; `O`: typeof [`EquationsSalesBundlesItemsList`](classes/EquationsSalesBundlesItemsList.md) = EquationsSalesBundlesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationSalesBundleItemHistory"`` = "ViewEquationSalesBundleItemHistory" } ; `viewForFamilyID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationSalesBundle`](classes/EquationSalesBundle.md) = EquationSalesBundle; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewForFamilyID"`` = "ViewForFamilyID" } ; `viewPaginatedApprovedEquationSalesBundleItems`: \{ `I`: typeof [`EquationSalesBundleItemsSearchRequest`](classes/EquationSalesBundleItemsSearchRequest.md) = EquationSalesBundleItemsSearchRequest; `O`: typeof [`EquationsSalesBundlesServicePaginatedItemsResponse`](classes/EquationsSalesBundlesServicePaginatedItemsResponse.md) = EquationsSalesBundlesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedEquationSalesBundleItems"`` = "ViewPaginatedApprovedEquationSalesBundleItems" } ; `viewPaginatedUnapprovedEquationSalesBundleItems`: \{ `I`: typeof [`EquationSalesBundleItemsSearchRequest`](classes/EquationSalesBundleItemsSearchRequest.md) = EquationSalesBundleItemsSearchRequest; `O`: typeof [`EquationsSalesBundlesServicePaginatedItemsResponse`](classes/EquationsSalesBundlesServicePaginatedItemsResponse.md) = EquationsSalesBundlesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedEquationSalesBundleItems"`` = "ViewPaginatedUnapprovedEquationSalesBundleItems" } ; `viewUnapprovedEquationSalesBundleItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsSalesBundlesItemsList`](classes/EquationsSalesBundlesItemsList.md) = EquationsSalesBundlesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedEquationSalesBundleItems"`` = "ViewUnapprovedEquationSalesBundleItems" } ; `viewWithPagination`: \{ `I`: typeof [`EquationsSalesBundlesServicePaginationReq`](classes/EquationsSalesBundlesServicePaginationReq.md) = EquationsSalesBundlesServicePaginationReq; `O`: typeof [`EquationsSalesBundlesServicePaginationResponse`](classes/EquationsSalesBundlesServicePaginationResponse.md) = EquationsSalesBundlesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addEquationSalesBundleItem` | \{ `I`: typeof [`EquationsSalesBundlesServiceItemCreateRequest`](classes/EquationsSalesBundlesServiceItemCreateRequest.md) = EquationsSalesBundlesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationSalesBundleItem"`` = "AddEquationSalesBundleItem" } |
 | `methods.addEquationSalesBundleItem.I` | typeof [`EquationsSalesBundlesServiceItemCreateRequest`](classes/EquationsSalesBundlesServiceItemCreateRequest.md) |
 | `methods.addEquationSalesBundleItem.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -7069,11 +7071,11 @@ from service Scailo.EquationsSalesBundlesService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.downloadTreeAsCSV` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } |
 | `methods.downloadTreeAsCSV.I` | typeof [`Identifier`](classes/Identifier.md) |
 | `methods.downloadTreeAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
@@ -7236,12 +7238,17 @@ from service Scailo.EquationsWorkOrdersService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addEquationWorkOrderItem`: \{ `I`: typeof [`EquationsWorkOrdersServiceItemCreateRequest`](classes/EquationsWorkOrdersServiceItemCreateRequest.md) = EquationsWorkOrdersServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationWorkOrderItem"`` = "AddEquationWorkOrderItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveEquationWorkOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveEquationWorkOrderItem"`` = "ApproveEquationWorkOrderItem" } ; `clone`: \{ `I`: typeof [`CloneRequest`](classes/CloneRequest.md) = CloneRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Clone"`` = "Clone" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`EquationsWorkOrdersServiceCountReq`](classes/EquationsWorkOrdersServiceCountReq.md) = EquationsWorkOrdersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`EquationsWorkOrdersServiceCreateRequest`](classes/EquationsWorkOrdersServiceCreateRequest.md) = EquationsWorkOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteEquationWorkOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteEquationWorkOrderItem"`` = "DeleteEquationWorkOrderItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadTreeAsCSV`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } ; `draft`: \{ `I`: typeof [`EquationsWorkOrdersServiceCreateRequest`](classes/EquationsWorkOrdersServiceCreateRequest.md) = EquationsWorkOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`EquationsWorkOrdersServiceUpdateRequest`](classes/EquationsWorkOrdersServiceUpdateRequest.md) = EquationsWorkOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`EquationsWorkOrdersServiceFilterReq`](classes/EquationsWorkOrdersServiceFilterReq.md) = EquationsWorkOrdersServiceFilterReq; `O`: typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) = EquationsWorkOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyEquationWorkOrderItem`: \{ `I`: typeof [`EquationsWorkOrdersServiceItemUpdateRequest`](classes/EquationsWorkOrdersServiceItemUpdateRequest.md) = EquationsWorkOrdersServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyEquationWorkOrderItem"`` = "ModifyEquationWorkOrderItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderEquationWorkOrderItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderEquationWorkOrderItems"`` = "ReorderEquationWorkOrderItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`EquationsWorkOrdersServiceUpdateRequest`](classes/EquationsWorkOrdersServiceUpdateRequest.md) = EquationsWorkOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`EquationsWorkOrdersServiceSearchAllReq`](classes/EquationsWorkOrdersServiceSearchAllReq.md) = EquationsWorkOrdersServiceSearchAllReq; `O`: typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) = EquationsWorkOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`EquationWorkOrderItemsSearchRequest`](classes/EquationWorkOrderItemsSearchRequest.md) = EquationWorkOrderItemsSearchRequest; `O`: typeof [`EquationsWorkOrdersServicePaginatedItemsResponse`](classes/EquationsWorkOrdersServicePaginatedItemsResponse.md) = EquationsWorkOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadEquationWorkOrderItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadEquationWorkOrderItems"`` = "UploadEquationWorkOrderItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) = EquationsWorkOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) = EquationsWorkOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedEquationWorkOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsWorkOrdersItemsList`](classes/EquationsWorkOrdersItemsList.md) = EquationsWorkOrdersItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationWorkOrderItems"`` = "ViewApprovedEquationWorkOrderItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationWorkOrder`](classes/EquationWorkOrder.md) = EquationWorkOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEquationWorkOrderItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationWorkOrderItem`](classes/EquationWorkOrderItem.md) = EquationWorkOrderItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationWorkOrderItemByID"`` = "ViewEquationWorkOrderItemByID" } ; `viewEquationWorkOrderItemHistory`: \{ `I`: typeof [`EquationWorkOrderItemHistoryRequest`](classes/EquationWorkOrderItemHistoryRequest.md) = EquationWorkOrderItemHistoryRequest; `O`: typeof [`EquationsWorkOrdersItemsList`](classes/EquationsWorkOrdersItemsList.md) = EquationsWorkOrdersItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationWorkOrderItemHistory"`` = "ViewEquationWorkOrderItemHistory" } ; `viewForWorkOrderID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationWorkOrder`](classes/EquationWorkOrder.md) = EquationWorkOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewForWorkOrderID"`` = "ViewForWorkOrderID" } ; `viewPaginatedApprovedEquationWorkOrderItems`: \{ `I`: typeof [`EquationWorkOrderItemsSearchRequest`](classes/EquationWorkOrderItemsSearchRequest.md) = EquationWorkOrderItemsSearchRequest; `O`: typeof [`EquationsWorkOrdersServicePaginatedItemsResponse`](classes/EquationsWorkOrdersServicePaginatedItemsResponse.md) = EquationsWorkOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedEquationWorkOrderItems"`` = "ViewPaginatedApprovedEquationWorkOrderItems" } ; `viewPaginatedUnapprovedEquationWorkOrderItems`: \{ `I`: typeof [`EquationWorkOrderItemsSearchRequest`](classes/EquationWorkOrderItemsSearchRequest.md) = EquationWorkOrderItemsSearchRequest; `O`: typeof [`EquationsWorkOrdersServicePaginatedItemsResponse`](classes/EquationsWorkOrdersServicePaginatedItemsResponse.md) = EquationsWorkOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedEquationWorkOrderItems"`` = "ViewPaginatedUnapprovedEquationWorkOrderItems" } ; `viewUnapprovedEquationWorkOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsWorkOrdersItemsList`](classes/EquationsWorkOrdersItemsList.md) = EquationsWorkOrdersItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedEquationWorkOrderItems"`` = "ViewUnapprovedEquationWorkOrderItems" } ; `viewWithPagination`: \{ `I`: typeof [`EquationsWorkOrdersServicePaginationReq`](classes/EquationsWorkOrdersServicePaginationReq.md) = EquationsWorkOrdersServicePaginationReq; `O`: typeof [`EquationsWorkOrdersServicePaginationResponse`](classes/EquationsWorkOrdersServicePaginationResponse.md) = EquationsWorkOrdersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addEquationWorkOrderItem`: \{ `I`: typeof [`EquationsWorkOrdersServiceItemCreateRequest`](classes/EquationsWorkOrdersServiceItemCreateRequest.md) = EquationsWorkOrdersServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationWorkOrderItem"`` = "AddEquationWorkOrderItem" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveEquationWorkOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveEquationWorkOrderItem"`` = "ApproveEquationWorkOrderItem" } ; `clone`: \{ `I`: typeof [`CloneRequest`](classes/CloneRequest.md) = CloneRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Clone"`` = "Clone" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`EquationsWorkOrdersServiceCountReq`](classes/EquationsWorkOrdersServiceCountReq.md) = EquationsWorkOrdersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`EquationsWorkOrdersServiceCreateRequest`](classes/EquationsWorkOrdersServiceCreateRequest.md) = EquationsWorkOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteEquationWorkOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteEquationWorkOrderItem"`` = "DeleteEquationWorkOrderItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `downloadTreeAsCSV`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } ; `draft`: \{ `I`: typeof [`EquationsWorkOrdersServiceCreateRequest`](classes/EquationsWorkOrdersServiceCreateRequest.md) = EquationsWorkOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`EquationsWorkOrdersServiceUpdateRequest`](classes/EquationsWorkOrdersServiceUpdateRequest.md) = EquationsWorkOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`EquationsWorkOrdersServiceFilterReq`](classes/EquationsWorkOrdersServiceFilterReq.md) = EquationsWorkOrdersServiceFilterReq; `O`: typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) = EquationsWorkOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyEquationWorkOrderItem`: \{ `I`: typeof [`EquationsWorkOrdersServiceItemUpdateRequest`](classes/EquationsWorkOrdersServiceItemUpdateRequest.md) = EquationsWorkOrdersServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyEquationWorkOrderItem"`` = "ModifyEquationWorkOrderItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderEquationWorkOrderItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderEquationWorkOrderItems"`` = "ReorderEquationWorkOrderItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`EquationsWorkOrdersServiceUpdateRequest`](classes/EquationsWorkOrdersServiceUpdateRequest.md) = EquationsWorkOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`EquationsWorkOrdersServiceSearchAllReq`](classes/EquationsWorkOrdersServiceSearchAllReq.md) = EquationsWorkOrdersServiceSearchAllReq; `O`: typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) = EquationsWorkOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`EquationWorkOrderItemsSearchRequest`](classes/EquationWorkOrderItemsSearchRequest.md) = EquationWorkOrderItemsSearchRequest; `O`: typeof [`EquationsWorkOrdersServicePaginatedItemsResponse`](classes/EquationsWorkOrdersServicePaginatedItemsResponse.md) = EquationsWorkOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadEquationWorkOrderItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadEquationWorkOrderItems"`` = "UploadEquationWorkOrderItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) = EquationsWorkOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) = EquationsWorkOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewApprovedEquationWorkOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsWorkOrdersItemsList`](classes/EquationsWorkOrdersItemsList.md) = EquationsWorkOrdersItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationWorkOrderItems"`` = "ViewApprovedEquationWorkOrderItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationWorkOrder`](classes/EquationWorkOrder.md) = EquationWorkOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEquationWorkOrderItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationWorkOrderItem`](classes/EquationWorkOrderItem.md) = EquationWorkOrderItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationWorkOrderItemByID"`` = "ViewEquationWorkOrderItemByID" } ; `viewEquationWorkOrderItemHistory`: \{ `I`: typeof [`EquationWorkOrderItemHistoryRequest`](classes/EquationWorkOrderItemHistoryRequest.md) = EquationWorkOrderItemHistoryRequest; `O`: typeof [`EquationsWorkOrdersItemsList`](classes/EquationsWorkOrdersItemsList.md) = EquationsWorkOrdersItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEquationWorkOrderItemHistory"`` = "ViewEquationWorkOrderItemHistory" } ; `viewForWorkOrderID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`EquationWorkOrder`](classes/EquationWorkOrder.md) = EquationWorkOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewForWorkOrderID"`` = "ViewForWorkOrderID" } ; `viewPaginatedApprovedEquationWorkOrderItems`: \{ `I`: typeof [`EquationWorkOrderItemsSearchRequest`](classes/EquationWorkOrderItemsSearchRequest.md) = EquationWorkOrderItemsSearchRequest; `O`: typeof [`EquationsWorkOrdersServicePaginatedItemsResponse`](classes/EquationsWorkOrdersServicePaginatedItemsResponse.md) = EquationsWorkOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedEquationWorkOrderItems"`` = "ViewPaginatedApprovedEquationWorkOrderItems" } ; `viewPaginatedUnapprovedEquationWorkOrderItems`: \{ `I`: typeof [`EquationWorkOrderItemsSearchRequest`](classes/EquationWorkOrderItemsSearchRequest.md) = EquationWorkOrderItemsSearchRequest; `O`: typeof [`EquationsWorkOrdersServicePaginatedItemsResponse`](classes/EquationsWorkOrdersServicePaginatedItemsResponse.md) = EquationsWorkOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedEquationWorkOrderItems"`` = "ViewPaginatedUnapprovedEquationWorkOrderItems" } ; `viewUnapprovedEquationWorkOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsWorkOrdersItemsList`](classes/EquationsWorkOrdersItemsList.md) = EquationsWorkOrdersItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedEquationWorkOrderItems"`` = "ViewUnapprovedEquationWorkOrderItems" } ; `viewWithPagination`: \{ `I`: typeof [`EquationsWorkOrdersServicePaginationReq`](classes/EquationsWorkOrdersServicePaginationReq.md) = EquationsWorkOrdersServicePaginationReq; `O`: typeof [`EquationsWorkOrdersServicePaginationResponse`](classes/EquationsWorkOrdersServicePaginationResponse.md) = EquationsWorkOrdersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addEquationWorkOrderItem` | \{ `I`: typeof [`EquationsWorkOrdersServiceItemCreateRequest`](classes/EquationsWorkOrdersServiceItemCreateRequest.md) = EquationsWorkOrdersServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddEquationWorkOrderItem"`` = "AddEquationWorkOrderItem" } |
 | `methods.addEquationWorkOrderItem.I` | typeof [`EquationsWorkOrdersServiceItemCreateRequest`](classes/EquationsWorkOrdersServiceItemCreateRequest.md) |
 | `methods.addEquationWorkOrderItem.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.addEquationWorkOrderItem.kind` | `Unary` |
 | `methods.addEquationWorkOrderItem.name` | ``"AddEquationWorkOrderItem"`` |
+| `methods.amend` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } |
+| `methods.amend.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
+| `methods.amend.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
+| `methods.amend.kind` | `Unary` |
+| `methods.amend.name` | ``"Amend"`` |
 | `methods.approve` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } |
 | `methods.approve.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
 | `methods.approve.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -7292,11 +7299,11 @@ from service Scailo.EquationsWorkOrdersService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.downloadTreeAsCSV` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadTreeAsCSV"`` = "DownloadTreeAsCSV" } |
 | `methods.downloadTreeAsCSV.I` | typeof [`Identifier`](classes/Identifier.md) |
 | `methods.downloadTreeAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
@@ -7392,6 +7399,11 @@ from service Scailo.EquationsWorkOrdersService
 | `methods.viewAllForEntityUUID.O` | typeof [`EquationsWorkOrdersList`](classes/EquationsWorkOrdersList.md) |
 | `methods.viewAllForEntityUUID.kind` | `Unary` |
 | `methods.viewAllForEntityUUID.name` | ``"ViewAllForEntityUUID"`` |
+| `methods.viewAmendments` | \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } |
+| `methods.viewAmendments.I` | typeof [`Identifier`](classes/Identifier.md) |
+| `methods.viewAmendments.O` | typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) |
+| `methods.viewAmendments.kind` | `Unary` |
+| `methods.viewAmendments.name` | ``"ViewAmendments"`` |
 | `methods.viewApprovedEquationWorkOrderItems` | \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`EquationsWorkOrdersItemsList`](classes/EquationsWorkOrdersItemsList.md) = EquationsWorkOrdersItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedEquationWorkOrderItems"`` = "ViewApprovedEquationWorkOrderItems" } |
 | `methods.viewApprovedEquationWorkOrderItems.I` | typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) |
 | `methods.viewApprovedEquationWorkOrderItems.O` | typeof [`EquationsWorkOrdersItemsList`](classes/EquationsWorkOrdersItemsList.md) |
@@ -7810,7 +7822,7 @@ from service Scailo.FamiliesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addLabel`: \{ `I`: typeof [`FamiliesServiceLabelCreateRequest`](classes/FamiliesServiceLabelCreateRequest.md) = FamiliesServiceLabelCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddLabel"`` = "AddLabel" } ; `addQCGroup`: \{ `I`: typeof [`FamiliesServiceQCGroupCreateRequest`](classes/FamiliesServiceQCGroupCreateRequest.md) = FamiliesServiceQCGroupCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddQCGroup"`` = "AddQCGroup" } ; `addStorage`: \{ `I`: typeof [`FamiliesServiceStorageCreateRequest`](classes/FamiliesServiceStorageCreateRequest.md) = FamiliesServiceStorageCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddStorage"`` = "AddStorage" } ; `addUnitConversion`: \{ `I`: typeof [`FamiliesServiceUnitConversionCreateRequest`](classes/FamiliesServiceUnitConversionCreateRequest.md) = FamiliesServiceUnitConversionCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddUnitConversion"`` = "AddUnitConversion" } ; `adjustPrice`: \{ `I`: typeof [`FamiliesServiceAdjustPriceRequest`](classes/FamiliesServiceAdjustPriceRequest.md) = FamiliesServiceAdjustPriceRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AdjustPrice"`` = "AdjustPrice" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveLabel`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveLabel"`` = "ApproveLabel" } ; `approveQCGroup`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveQCGroup"`` = "ApproveQCGroup" } ; `approveStorage`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveStorage"`` = "ApproveStorage" } ; `approveUnitConversion`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveUnitConversion"`` = "ApproveUnitConversion" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `count`: \{ `I`: typeof [`FamiliesServiceCountReq`](classes/FamiliesServiceCountReq.md) = FamiliesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`FamiliesServiceCreateRequest`](classes/FamiliesServiceCreateRequest.md) = FamiliesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteLabel`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteLabel"`` = "DeleteLabel" } ; `deleteQCGroup`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteQCGroup"`` = "DeleteQCGroup" } ; `deleteStorage`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteStorage"`` = "DeleteStorage" } ; `deleteUnitConversion`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteUnitConversion"`` = "DeleteUnitConversion" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`FamiliesServiceFilterReq`](classes/FamiliesServiceFilterReq.md) = FamiliesServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `draft`: \{ `I`: typeof [`FamiliesServiceCreateRequest`](classes/FamiliesServiceCreateRequest.md) = FamiliesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`FamiliesServiceUpdateRequest`](classes/FamiliesServiceUpdateRequest.md) = FamiliesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`FamiliesServiceFilterReq`](classes/FamiliesServiceFilterReq.md) = FamiliesServiceFilterReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `import`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Import"`` = "Import" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`FamiliesServiceUpdateRequest`](classes/FamiliesServiceUpdateRequest.md) = FamiliesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`FamiliesServiceSearchAllReq`](classes/FamiliesServiceSearchAllReq.md) = FamiliesServiceSearchAllReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchForEquationFamily`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForEquationFamily"`` = "SearchForEquationFamily" } ; `searchForEquationReplaceable`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForEquationReplaceable"`` = "SearchForEquationReplaceable" } ; `searchForEquationSalesBundle`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForEquationSalesBundle"`` = "SearchForEquationSalesBundle" } ; `searchForProduction`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForProduction"`` = "SearchForProduction" } ; `searchForPurchase`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForPurchase"`` = "SearchForPurchase" } ; `searchForReplaceables`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForReplaceables"`` = "SearchForReplaceables" } ; `searchForSale`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForSale"`` = "SearchForSale" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadPrices`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadPrices"`` = "UploadPrices" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAllRequirable`: \{ `I`: typeof [`FamilyTypesList`](classes/FamilyTypesList.md) = FamilyTypesList; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllRequirable"`` = "ViewAllRequirable" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Family`](classes/Family.md) = Family; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEssentialByCode`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`Family`](classes/Family.md) = Family; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByCode"`` = "ViewEssentialByCode" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Family`](classes/Family.md) = Family; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Family`](classes/Family.md) = Family; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyLabel`](classes/FamilyLabel.md) = FamilyLabel; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewLabelByID"`` = "ViewLabelByID" } ; `viewLabels`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyLabelsList`](classes/FamilyLabelsList.md) = FamilyLabelsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewLabels"`` = "ViewLabels" } ; `viewQCGroupByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyQCGroup`](classes/FamilyQCGroup.md) = FamilyQCGroup; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewQCGroupByID"`` = "ViewQCGroupByID" } ; `viewQCGroups`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyQCGroupsList`](classes/FamilyQCGroupsList.md) = FamilyQCGroupsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewQCGroups"`` = "ViewQCGroups" } ; `viewStorageByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyStorage`](classes/FamilyStorage.md) = FamilyStorage; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewStorageByID"`` = "ViewStorageByID" } ; `viewStorages`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyStoragesList`](classes/FamilyStoragesList.md) = FamilyStoragesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewStorages"`` = "ViewStorages" } ; `viewUnitConversionByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyUnitConversion`](classes/FamilyUnitConversion.md) = FamilyUnitConversion; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnitConversionByID"`` = "ViewUnitConversionByID" } ; `viewUnitConversionFor`: \{ `I`: typeof [`FamiliesServiceUnitConversionPresenceRequest`](classes/FamiliesServiceUnitConversionPresenceRequest.md) = FamiliesServiceUnitConversionPresenceRequest; `O`: typeof [`FamilyUnitConversion`](classes/FamilyUnitConversion.md) = FamilyUnitConversion; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnitConversionFor"`` = "ViewUnitConversionFor" } ; `viewUnitConversions`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyUnitConversionsList`](classes/FamilyUnitConversionsList.md) = FamilyUnitConversionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnitConversions"`` = "ViewUnitConversions" } ; `viewWithPagination`: \{ `I`: typeof [`FamiliesServicePaginationReq`](classes/FamiliesServicePaginationReq.md) = FamiliesServicePaginationReq; `O`: typeof [`FamiliesServicePaginationResponse`](classes/FamiliesServicePaginationResponse.md) = FamiliesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addLabel`: \{ `I`: typeof [`FamiliesServiceLabelCreateRequest`](classes/FamiliesServiceLabelCreateRequest.md) = FamiliesServiceLabelCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddLabel"`` = "AddLabel" } ; `addQCGroup`: \{ `I`: typeof [`FamiliesServiceQCGroupCreateRequest`](classes/FamiliesServiceQCGroupCreateRequest.md) = FamiliesServiceQCGroupCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddQCGroup"`` = "AddQCGroup" } ; `addStorage`: \{ `I`: typeof [`FamiliesServiceStorageCreateRequest`](classes/FamiliesServiceStorageCreateRequest.md) = FamiliesServiceStorageCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddStorage"`` = "AddStorage" } ; `addUnitConversion`: \{ `I`: typeof [`FamiliesServiceUnitConversionCreateRequest`](classes/FamiliesServiceUnitConversionCreateRequest.md) = FamiliesServiceUnitConversionCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddUnitConversion"`` = "AddUnitConversion" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveLabel`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveLabel"`` = "ApproveLabel" } ; `approveQCGroup`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveQCGroup"`` = "ApproveQCGroup" } ; `approveStorage`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveStorage"`` = "ApproveStorage" } ; `approveUnitConversion`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveUnitConversion"`` = "ApproveUnitConversion" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `count`: \{ `I`: typeof [`FamiliesServiceCountReq`](classes/FamiliesServiceCountReq.md) = FamiliesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`FamiliesServiceCreateRequest`](classes/FamiliesServiceCreateRequest.md) = FamiliesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteLabel`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteLabel"`` = "DeleteLabel" } ; `deleteQCGroup`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteQCGroup"`` = "DeleteQCGroup" } ; `deleteStorage`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteStorage"`` = "DeleteStorage" } ; `deleteUnitConversion`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteUnitConversion"`` = "DeleteUnitConversion" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`FamiliesServiceFilterReq`](classes/FamiliesServiceFilterReq.md) = FamiliesServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `draft`: \{ `I`: typeof [`FamiliesServiceCreateRequest`](classes/FamiliesServiceCreateRequest.md) = FamiliesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`FamiliesServiceUpdateRequest`](classes/FamiliesServiceUpdateRequest.md) = FamiliesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`FamiliesServiceFilterReq`](classes/FamiliesServiceFilterReq.md) = FamiliesServiceFilterReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `import`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Import"`` = "Import" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`FamiliesServiceUpdateRequest`](classes/FamiliesServiceUpdateRequest.md) = FamiliesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`FamiliesServiceSearchAllReq`](classes/FamiliesServiceSearchAllReq.md) = FamiliesServiceSearchAllReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchForEquationFamily`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForEquationFamily"`` = "SearchForEquationFamily" } ; `searchForEquationReplaceable`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForEquationReplaceable"`` = "SearchForEquationReplaceable" } ; `searchForEquationSalesBundle`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForEquationSalesBundle"`` = "SearchForEquationSalesBundle" } ; `searchForProduction`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForProduction"`` = "SearchForProduction" } ; `searchForPurchase`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForPurchase"`` = "SearchForPurchase" } ; `searchForReplaceables`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForReplaceables"`` = "SearchForReplaceables" } ; `searchForSale`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchForSale"`` = "SearchForSale" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `updateMinStockToMaintain`: \{ `I`: typeof [`FamiliesServiceUpdateMinStockToMaintainRequest`](classes/FamiliesServiceUpdateMinStockToMaintainRequest.md) = FamiliesServiceUpdateMinStockToMaintainRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UpdateMinStockToMaintain"`` = "UpdateMinStockToMaintain" } ; `updatePrice`: \{ `I`: typeof [`FamiliesServiceUpdatePriceRequest`](classes/FamiliesServiceUpdatePriceRequest.md) = FamiliesServiceUpdatePriceRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UpdatePrice"`` = "UpdatePrice" } ; `uploadMinStockToMaintain`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadMinStockToMaintain"`` = "UploadMinStockToMaintain" } ; `uploadPrices`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadPrices"`` = "UploadPrices" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAllRequirable`: \{ `I`: typeof [`FamilyTypesList`](classes/FamilyTypesList.md) = FamilyTypesList; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllRequirable"`` = "ViewAllRequirable" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Family`](classes/Family.md) = Family; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewEssentialByCode`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`Family`](classes/Family.md) = Family; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByCode"`` = "ViewEssentialByCode" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Family`](classes/Family.md) = Family; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Family`](classes/Family.md) = Family; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyLabel`](classes/FamilyLabel.md) = FamilyLabel; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewLabelByID"`` = "ViewLabelByID" } ; `viewLabels`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyLabelsList`](classes/FamilyLabelsList.md) = FamilyLabelsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewLabels"`` = "ViewLabels" } ; `viewQCGroupByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyQCGroup`](classes/FamilyQCGroup.md) = FamilyQCGroup; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewQCGroupByID"`` = "ViewQCGroupByID" } ; `viewQCGroups`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyQCGroupsList`](classes/FamilyQCGroupsList.md) = FamilyQCGroupsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewQCGroups"`` = "ViewQCGroups" } ; `viewStorageByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyStorage`](classes/FamilyStorage.md) = FamilyStorage; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewStorageByID"`` = "ViewStorageByID" } ; `viewStorages`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyStoragesList`](classes/FamilyStoragesList.md) = FamilyStoragesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewStorages"`` = "ViewStorages" } ; `viewUnitConversionByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyUnitConversion`](classes/FamilyUnitConversion.md) = FamilyUnitConversion; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnitConversionByID"`` = "ViewUnitConversionByID" } ; `viewUnitConversionFor`: \{ `I`: typeof [`FamiliesServiceUnitConversionPresenceRequest`](classes/FamiliesServiceUnitConversionPresenceRequest.md) = FamiliesServiceUnitConversionPresenceRequest; `O`: typeof [`FamilyUnitConversion`](classes/FamilyUnitConversion.md) = FamilyUnitConversion; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnitConversionFor"`` = "ViewUnitConversionFor" } ; `viewUnitConversions`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`FamilyUnitConversionsList`](classes/FamilyUnitConversionsList.md) = FamilyUnitConversionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnitConversions"`` = "ViewUnitConversions" } ; `viewWithPagination`: \{ `I`: typeof [`FamiliesServicePaginationReq`](classes/FamiliesServicePaginationReq.md) = FamiliesServicePaginationReq; `O`: typeof [`FamiliesServicePaginationResponse`](classes/FamiliesServicePaginationResponse.md) = FamiliesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addLabel` | \{ `I`: typeof [`FamiliesServiceLabelCreateRequest`](classes/FamiliesServiceLabelCreateRequest.md) = FamiliesServiceLabelCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddLabel"`` = "AddLabel" } |
 | `methods.addLabel.I` | typeof [`FamiliesServiceLabelCreateRequest`](classes/FamiliesServiceLabelCreateRequest.md) |
 | `methods.addLabel.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -7831,11 +7843,6 @@ from service Scailo.FamiliesService
 | `methods.addUnitConversion.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.addUnitConversion.kind` | `Unary` |
 | `methods.addUnitConversion.name` | ``"AddUnitConversion"`` |
-| `methods.adjustPrice` | \{ `I`: typeof [`FamiliesServiceAdjustPriceRequest`](classes/FamiliesServiceAdjustPriceRequest.md) = FamiliesServiceAdjustPriceRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AdjustPrice"`` = "AdjustPrice" } |
-| `methods.adjustPrice.I` | typeof [`FamiliesServiceAdjustPriceRequest`](classes/FamiliesServiceAdjustPriceRequest.md) |
-| `methods.adjustPrice.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
-| `methods.adjustPrice.kind` | `Unary` |
-| `methods.adjustPrice.name` | ``"AdjustPrice"`` |
 | `methods.amend` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } |
 | `methods.amend.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
 | `methods.amend.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -8001,6 +8008,21 @@ from service Scailo.FamiliesService
 | `methods.sendForVerification.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.sendForVerification.kind` | `Unary` |
 | `methods.sendForVerification.name` | ``"SendForVerification"`` |
+| `methods.updateMinStockToMaintain` | \{ `I`: typeof [`FamiliesServiceUpdateMinStockToMaintainRequest`](classes/FamiliesServiceUpdateMinStockToMaintainRequest.md) = FamiliesServiceUpdateMinStockToMaintainRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UpdateMinStockToMaintain"`` = "UpdateMinStockToMaintain" } |
+| `methods.updateMinStockToMaintain.I` | typeof [`FamiliesServiceUpdateMinStockToMaintainRequest`](classes/FamiliesServiceUpdateMinStockToMaintainRequest.md) |
+| `methods.updateMinStockToMaintain.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
+| `methods.updateMinStockToMaintain.kind` | `Unary` |
+| `methods.updateMinStockToMaintain.name` | ``"UpdateMinStockToMaintain"`` |
+| `methods.updatePrice` | \{ `I`: typeof [`FamiliesServiceUpdatePriceRequest`](classes/FamiliesServiceUpdatePriceRequest.md) = FamiliesServiceUpdatePriceRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UpdatePrice"`` = "UpdatePrice" } |
+| `methods.updatePrice.I` | typeof [`FamiliesServiceUpdatePriceRequest`](classes/FamiliesServiceUpdatePriceRequest.md) |
+| `methods.updatePrice.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
+| `methods.updatePrice.kind` | `Unary` |
+| `methods.updatePrice.name` | ``"UpdatePrice"`` |
+| `methods.uploadMinStockToMaintain` | \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadMinStockToMaintain"`` = "UploadMinStockToMaintain" } |
+| `methods.uploadMinStockToMaintain.I` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.uploadMinStockToMaintain.O` | typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) |
+| `methods.uploadMinStockToMaintain.kind` | `Unary` |
+| `methods.uploadMinStockToMaintain.name` | ``"UploadMinStockToMaintain"`` |
 | `methods.uploadPrices` | \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadPrices"`` = "UploadPrices" } |
 | `methods.uploadPrices.I` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.uploadPrices.O` | typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) |
@@ -8874,7 +8896,7 @@ from service Scailo.GoodsDispatchesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addGoodsDispatchItem`: \{ `I`: typeof [`GoodsDispatchesServiceItemCreateRequest`](classes/GoodsDispatchesServiceItemCreateRequest.md) = GoodsDispatchesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddGoodsDispatchItem"`` = "AddGoodsDispatchItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveGoodsDispatchItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveGoodsDispatchItem"`` = "ApproveGoodsDispatchItem" } ; `autofill`: \{ `I`: typeof [`GoodsDispatchesServiceAutofillRequest`](classes/GoodsDispatchesServiceAutofillRequest.md) = GoodsDispatchesServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`GoodsDispatchesServiceCountReq`](classes/GoodsDispatchesServiceCountReq.md) = GoodsDispatchesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`GoodsDispatchesServiceCreateRequest`](classes/GoodsDispatchesServiceCreateRequest.md) = GoodsDispatchesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteGoodsDispatchItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteGoodsDispatchItem"`` = "DeleteGoodsDispatchItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `draft`: \{ `I`: typeof [`GoodsDispatchesServiceCreateRequest`](classes/GoodsDispatchesServiceCreateRequest.md) = GoodsDispatchesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`GoodsDispatchesServiceUpdateRequest`](classes/GoodsDispatchesServiceUpdateRequest.md) = GoodsDispatchesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`GoodsDispatchesServiceFilterReq`](classes/GoodsDispatchesServiceFilterReq.md) = GoodsDispatchesServiceFilterReq; `O`: typeof [`GoodsDispatchesList`](classes/GoodsDispatchesList.md) = GoodsDispatchesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isBilled`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsBilled"`` = "IsBilled" } ; `isCompletable`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsCompletable"`` = "IsCompletable" } ; `modifyGoodsDispatchItem`: \{ `I`: typeof [`GoodsDispatchesServiceItemUpdateRequest`](classes/GoodsDispatchesServiceItemUpdateRequest.md) = GoodsDispatchesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyGoodsDispatchItem"`` = "ModifyGoodsDispatchItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderGoodsDispatchItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderGoodsDispatchItems"`` = "ReorderGoodsDispatchItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`GoodsDispatchesServiceUpdateRequest`](classes/GoodsDispatchesServiceUpdateRequest.md) = GoodsDispatchesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`GoodsDispatchesServiceSearchAllReq`](classes/GoodsDispatchesServiceSearchAllReq.md) = GoodsDispatchesServiceSearchAllReq; `O`: typeof [`GoodsDispatchesList`](classes/GoodsDispatchesList.md) = GoodsDispatchesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`GoodsDispatchItemsSearchRequest`](classes/GoodsDispatchItemsSearchRequest.md) = GoodsDispatchItemsSearchRequest; `O`: typeof [`GoodsDispatchesServicePaginatedItemsResponse`](classes/GoodsDispatchesServicePaginatedItemsResponse.md) = GoodsDispatchesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest`](classes/GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest.md) = GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`GoodsDispatchesList`](classes/GoodsDispatchesList.md) = GoodsDispatchesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsDispatchesList`](classes/GoodsDispatchesList.md) = GoodsDispatchesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsDispatchAncillaryParameters`](classes/GoodsDispatchAncillaryParameters.md) = GoodsDispatchAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedGoodsDispatchItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`GoodsDispatchesItemsList`](classes/GoodsDispatchesItemsList.md) = GoodsDispatchesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedGoodsDispatchItems"`` = "ViewApprovedGoodsDispatchItems" } ; `viewAssociatedSalesInvoiceID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesInvoiceID"`` = "ViewAssociatedSalesInvoiceID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GoodsDispatch`](classes/GoodsDispatch.md) = GoodsDispatch; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsDispatch`](classes/GoodsDispatch.md) = GoodsDispatch; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewGoodsDispatchItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GoodsDispatchItem`](classes/GoodsDispatchItem.md) = GoodsDispatchItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsDispatchItemByID"`` = "ViewGoodsDispatchItemByID" } ; `viewGoodsDispatchItemByInventoryHash`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`GoodsDispatchItem`](classes/GoodsDispatchItem.md) = GoodsDispatchItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsDispatchItemByInventoryHash"`` = "ViewGoodsDispatchItemByInventoryHash" } ; `viewGoodsDispatchItemHistory`: \{ `I`: typeof [`GoodsDispatchItemHistoryRequest`](classes/GoodsDispatchItemHistoryRequest.md) = GoodsDispatchItemHistoryRequest; `O`: typeof [`GoodsDispatchesItemsList`](classes/GoodsDispatchesItemsList.md) = GoodsDispatchesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsDispatchItemHistory"`` = "ViewGoodsDispatchItemHistory" } ; `viewPaginatedApprovedGoodsDispatchItems`: \{ `I`: typeof [`GoodsDispatchItemsSearchRequest`](classes/GoodsDispatchItemsSearchRequest.md) = GoodsDispatchItemsSearchRequest; `O`: typeof [`GoodsDispatchesServicePaginatedItemsResponse`](classes/GoodsDispatchesServicePaginatedItemsResponse.md) = GoodsDispatchesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedGoodsDispatchItems"`` = "ViewPaginatedApprovedGoodsDispatchItems" } ; `viewPaginatedUnapprovedGoodsDispatchItems`: \{ `I`: typeof [`GoodsDispatchItemsSearchRequest`](classes/GoodsDispatchItemsSearchRequest.md) = GoodsDispatchItemsSearchRequest; `O`: typeof [`GoodsDispatchesServicePaginatedItemsResponse`](classes/GoodsDispatchesServicePaginatedItemsResponse.md) = GoodsDispatchesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedGoodsDispatchItems"`` = "ViewPaginatedUnapprovedGoodsDispatchItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveGoodsDispatchItem`: \{ `I`: typeof [`GoodsDispatchItemProspectiveInfoRequest`](classes/GoodsDispatchItemProspectiveInfoRequest.md) = GoodsDispatchItemProspectiveInfoRequest; `O`: typeof [`GoodsDispatchesServiceItemCreateRequest`](classes/GoodsDispatchesServiceItemCreateRequest.md) = GoodsDispatchesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveGoodsDispatchItem"`` = "ViewProspectiveGoodsDispatchItem" } ; `viewUnapprovedGoodsDispatchItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`GoodsDispatchesItemsList`](classes/GoodsDispatchesItemsList.md) = GoodsDispatchesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedGoodsDispatchItems"`` = "ViewUnapprovedGoodsDispatchItems" } ; `viewWithPagination`: \{ `I`: typeof [`GoodsDispatchesServicePaginationReq`](classes/GoodsDispatchesServicePaginationReq.md) = GoodsDispatchesServicePaginationReq; `O`: typeof [`GoodsDispatchesServicePaginationResponse`](classes/GoodsDispatchesServicePaginationResponse.md) = GoodsDispatchesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addGoodsDispatchItem`: \{ `I`: typeof [`GoodsDispatchesServiceItemCreateRequest`](classes/GoodsDispatchesServiceItemCreateRequest.md) = GoodsDispatchesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddGoodsDispatchItem"`` = "AddGoodsDispatchItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveGoodsDispatchItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveGoodsDispatchItem"`` = "ApproveGoodsDispatchItem" } ; `autofill`: \{ `I`: typeof [`GoodsDispatchesServiceAutofillRequest`](classes/GoodsDispatchesServiceAutofillRequest.md) = GoodsDispatchesServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`GoodsDispatchesServiceCountReq`](classes/GoodsDispatchesServiceCountReq.md) = GoodsDispatchesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`GoodsDispatchesServiceCreateRequest`](classes/GoodsDispatchesServiceCreateRequest.md) = GoodsDispatchesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteGoodsDispatchItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteGoodsDispatchItem"`` = "DeleteGoodsDispatchItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `draft`: \{ `I`: typeof [`GoodsDispatchesServiceCreateRequest`](classes/GoodsDispatchesServiceCreateRequest.md) = GoodsDispatchesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`GoodsDispatchesServiceUpdateRequest`](classes/GoodsDispatchesServiceUpdateRequest.md) = GoodsDispatchesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`GoodsDispatchesServiceFilterReq`](classes/GoodsDispatchesServiceFilterReq.md) = GoodsDispatchesServiceFilterReq; `O`: typeof [`GoodsDispatchesList`](classes/GoodsDispatchesList.md) = GoodsDispatchesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isBilled`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsBilled"`` = "IsBilled" } ; `isCompletable`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsCompletable"`` = "IsCompletable" } ; `modifyGoodsDispatchItem`: \{ `I`: typeof [`GoodsDispatchesServiceItemUpdateRequest`](classes/GoodsDispatchesServiceItemUpdateRequest.md) = GoodsDispatchesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyGoodsDispatchItem"`` = "ModifyGoodsDispatchItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderGoodsDispatchItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderGoodsDispatchItems"`` = "ReorderGoodsDispatchItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`GoodsDispatchesServiceUpdateRequest`](classes/GoodsDispatchesServiceUpdateRequest.md) = GoodsDispatchesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`GoodsDispatchesServiceSearchAllReq`](classes/GoodsDispatchesServiceSearchAllReq.md) = GoodsDispatchesServiceSearchAllReq; `O`: typeof [`GoodsDispatchesList`](classes/GoodsDispatchesList.md) = GoodsDispatchesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`GoodsDispatchItemsSearchRequest`](classes/GoodsDispatchItemsSearchRequest.md) = GoodsDispatchItemsSearchRequest; `O`: typeof [`GoodsDispatchesServicePaginatedItemsResponse`](classes/GoodsDispatchesServicePaginatedItemsResponse.md) = GoodsDispatchesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest`](classes/GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest.md) = GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`GoodsDispatchesList`](classes/GoodsDispatchesList.md) = GoodsDispatchesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsDispatchesList`](classes/GoodsDispatchesList.md) = GoodsDispatchesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsDispatchAncillaryParameters`](classes/GoodsDispatchAncillaryParameters.md) = GoodsDispatchAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedGoodsDispatchItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`GoodsDispatchesItemsList`](classes/GoodsDispatchesItemsList.md) = GoodsDispatchesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedGoodsDispatchItems"`` = "ViewApprovedGoodsDispatchItems" } ; `viewAssociatedSalesInvoiceID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesInvoiceID"`` = "ViewAssociatedSalesInvoiceID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GoodsDispatch`](classes/GoodsDispatch.md) = GoodsDispatch; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsDispatch`](classes/GoodsDispatch.md) = GoodsDispatch; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewGoodsDispatchItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GoodsDispatchItem`](classes/GoodsDispatchItem.md) = GoodsDispatchItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsDispatchItemByID"`` = "ViewGoodsDispatchItemByID" } ; `viewGoodsDispatchItemByInventoryHash`: \{ `I`: typeof [`SimpleSearchReq`](classes/SimpleSearchReq.md) = SimpleSearchReq; `O`: typeof [`GoodsDispatchItem`](classes/GoodsDispatchItem.md) = GoodsDispatchItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsDispatchItemByInventoryHash"`` = "ViewGoodsDispatchItemByInventoryHash" } ; `viewGoodsDispatchItemHistory`: \{ `I`: typeof [`GoodsDispatchItemHistoryRequest`](classes/GoodsDispatchItemHistoryRequest.md) = GoodsDispatchItemHistoryRequest; `O`: typeof [`GoodsDispatchesItemsList`](classes/GoodsDispatchesItemsList.md) = GoodsDispatchesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsDispatchItemHistory"`` = "ViewGoodsDispatchItemHistory" } ; `viewPaginatedApprovedGoodsDispatchItems`: \{ `I`: typeof [`GoodsDispatchItemsSearchRequest`](classes/GoodsDispatchItemsSearchRequest.md) = GoodsDispatchItemsSearchRequest; `O`: typeof [`GoodsDispatchesServicePaginatedItemsResponse`](classes/GoodsDispatchesServicePaginatedItemsResponse.md) = GoodsDispatchesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedGoodsDispatchItems"`` = "ViewPaginatedApprovedGoodsDispatchItems" } ; `viewPaginatedUnapprovedGoodsDispatchItems`: \{ `I`: typeof [`GoodsDispatchItemsSearchRequest`](classes/GoodsDispatchItemsSearchRequest.md) = GoodsDispatchItemsSearchRequest; `O`: typeof [`GoodsDispatchesServicePaginatedItemsResponse`](classes/GoodsDispatchesServicePaginatedItemsResponse.md) = GoodsDispatchesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedGoodsDispatchItems"`` = "ViewPaginatedUnapprovedGoodsDispatchItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveGoodsDispatchItem`: \{ `I`: typeof [`GoodsDispatchItemProspectiveInfoRequest`](classes/GoodsDispatchItemProspectiveInfoRequest.md) = GoodsDispatchItemProspectiveInfoRequest; `O`: typeof [`GoodsDispatchesServiceItemCreateRequest`](classes/GoodsDispatchesServiceItemCreateRequest.md) = GoodsDispatchesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveGoodsDispatchItem"`` = "ViewProspectiveGoodsDispatchItem" } ; `viewUnapprovedGoodsDispatchItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`GoodsDispatchesItemsList`](classes/GoodsDispatchesItemsList.md) = GoodsDispatchesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedGoodsDispatchItems"`` = "ViewUnapprovedGoodsDispatchItems" } ; `viewWithPagination`: \{ `I`: typeof [`GoodsDispatchesServicePaginationReq`](classes/GoodsDispatchesServicePaginationReq.md) = GoodsDispatchesServicePaginationReq; `O`: typeof [`GoodsDispatchesServicePaginationResponse`](classes/GoodsDispatchesServicePaginationResponse.md) = GoodsDispatchesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addGoodsDispatchItem` | \{ `I`: typeof [`GoodsDispatchesServiceItemCreateRequest`](classes/GoodsDispatchesServiceItemCreateRequest.md) = GoodsDispatchesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddGoodsDispatchItem"`` = "AddGoodsDispatchItem" } |
 | `methods.addGoodsDispatchItem.I` | typeof [`GoodsDispatchesServiceItemCreateRequest`](classes/GoodsDispatchesServiceItemCreateRequest.md) |
 | `methods.addGoodsDispatchItem.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -8930,16 +8952,16 @@ from service Scailo.GoodsDispatchesService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.downloadLabelByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } |
 | `methods.downloadLabelByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadLabelByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
@@ -9142,7 +9164,7 @@ from service Scailo.GoodsReceiptsService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addGoodsReceiptItem`: \{ `I`: typeof [`GoodsReceiptsServiceItemCreateRequest`](classes/GoodsReceiptsServiceItemCreateRequest.md) = GoodsReceiptsServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddGoodsReceiptItem"`` = "AddGoodsReceiptItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveGoodsReceiptItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveGoodsReceiptItem"`` = "ApproveGoodsReceiptItem" } ; `autofill`: \{ `I`: typeof [`GoodsReceiptsServiceAutofillRequest`](classes/GoodsReceiptsServiceAutofillRequest.md) = GoodsReceiptsServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`GoodsReceiptsServiceCountReq`](classes/GoodsReceiptsServiceCountReq.md) = GoodsReceiptsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`GoodsReceiptsServiceCreateRequest`](classes/GoodsReceiptsServiceCreateRequest.md) = GoodsReceiptsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteGoodsReceiptItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteGoodsReceiptItem"`` = "DeleteGoodsReceiptItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `draft`: \{ `I`: typeof [`GoodsReceiptsServiceCreateRequest`](classes/GoodsReceiptsServiceCreateRequest.md) = GoodsReceiptsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`GoodsReceiptsServiceUpdateRequest`](classes/GoodsReceiptsServiceUpdateRequest.md) = GoodsReceiptsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`GoodsReceiptsServiceFilterReq`](classes/GoodsReceiptsServiceFilterReq.md) = GoodsReceiptsServiceFilterReq; `O`: typeof [`GoodsReceiptsList`](classes/GoodsReceiptsList.md) = GoodsReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isBilled`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsBilled"`` = "IsBilled" } ; `isCompletable`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsCompletable"`` = "IsCompletable" } ; `modifyGoodsReceiptItem`: \{ `I`: typeof [`GoodsReceiptsServiceItemUpdateRequest`](classes/GoodsReceiptsServiceItemUpdateRequest.md) = GoodsReceiptsServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyGoodsReceiptItem"`` = "ModifyGoodsReceiptItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderGoodsReceiptItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderGoodsReceiptItems"`` = "ReorderGoodsReceiptItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`GoodsReceiptsServiceUpdateRequest`](classes/GoodsReceiptsServiceUpdateRequest.md) = GoodsReceiptsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`GoodsReceiptsServiceSearchAllReq`](classes/GoodsReceiptsServiceSearchAllReq.md) = GoodsReceiptsServiceSearchAllReq; `O`: typeof [`GoodsReceiptsList`](classes/GoodsReceiptsList.md) = GoodsReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`GoodsReceiptItemsSearchRequest`](classes/GoodsReceiptItemsSearchRequest.md) = GoodsReceiptItemsSearchRequest; `O`: typeof [`GoodsReceiptsServicePaginatedItemsResponse`](classes/GoodsReceiptsServicePaginatedItemsResponse.md) = GoodsReceiptsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadGoodsReceiptItems`: \{ `I`: typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) = IdentifierUUIDWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadGoodsReceiptItems"`` = "UploadGoodsReceiptItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest`](classes/GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest.md) = GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`GoodsReceiptsList`](classes/GoodsReceiptsList.md) = GoodsReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsReceiptsList`](classes/GoodsReceiptsList.md) = GoodsReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsReceiptAncillaryParameters`](classes/GoodsReceiptAncillaryParameters.md) = GoodsReceiptAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedGoodsReceiptItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`GoodsReceiptsItemsList`](classes/GoodsReceiptsItemsList.md) = GoodsReceiptsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedGoodsReceiptItems"`` = "ViewApprovedGoodsReceiptItems" } ; `viewAssociatedVendorInvoiceInfo`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedVendorInvoiceInfo"`` = "ViewAssociatedVendorInvoiceInfo" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GoodsReceipt`](classes/GoodsReceipt.md) = GoodsReceipt; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsReceipt`](classes/GoodsReceipt.md) = GoodsReceipt; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewGoodsReceiptItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GoodsReceiptItem`](classes/GoodsReceiptItem.md) = GoodsReceiptItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsReceiptItemByID"`` = "ViewGoodsReceiptItemByID" } ; `viewGoodsReceiptItemHistory`: \{ `I`: typeof [`GoodsReceiptItemHistoryRequest`](classes/GoodsReceiptItemHistoryRequest.md) = GoodsReceiptItemHistoryRequest; `O`: typeof [`GoodsReceiptsItemsList`](classes/GoodsReceiptsItemsList.md) = GoodsReceiptsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsReceiptItemHistory"`` = "ViewGoodsReceiptItemHistory" } ; `viewPaginatedApprovedGoodsReceiptItems`: \{ `I`: typeof [`GoodsReceiptItemsSearchRequest`](classes/GoodsReceiptItemsSearchRequest.md) = GoodsReceiptItemsSearchRequest; `O`: typeof [`GoodsReceiptsServicePaginatedItemsResponse`](classes/GoodsReceiptsServicePaginatedItemsResponse.md) = GoodsReceiptsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedGoodsReceiptItems"`` = "ViewPaginatedApprovedGoodsReceiptItems" } ; `viewPaginatedUnapprovedGoodsReceiptItems`: \{ `I`: typeof [`GoodsReceiptItemsSearchRequest`](classes/GoodsReceiptItemsSearchRequest.md) = GoodsReceiptItemsSearchRequest; `O`: typeof [`GoodsReceiptsServicePaginatedItemsResponse`](classes/GoodsReceiptsServicePaginatedItemsResponse.md) = GoodsReceiptsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedGoodsReceiptItems"`` = "ViewPaginatedUnapprovedGoodsReceiptItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveGoodsReceiptItem`: \{ `I`: typeof [`GoodsReceiptItemProspectiveInfoRequest`](classes/GoodsReceiptItemProspectiveInfoRequest.md) = GoodsReceiptItemProspectiveInfoRequest; `O`: typeof [`GoodsReceiptsServiceItemCreateRequest`](classes/GoodsReceiptsServiceItemCreateRequest.md) = GoodsReceiptsServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveGoodsReceiptItem"`` = "ViewProspectiveGoodsReceiptItem" } ; `viewUnapprovedGoodsReceiptItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`GoodsReceiptsItemsList`](classes/GoodsReceiptsItemsList.md) = GoodsReceiptsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedGoodsReceiptItems"`` = "ViewUnapprovedGoodsReceiptItems" } ; `viewWithPagination`: \{ `I`: typeof [`GoodsReceiptsServicePaginationReq`](classes/GoodsReceiptsServicePaginationReq.md) = GoodsReceiptsServicePaginationReq; `O`: typeof [`GoodsReceiptsServicePaginationResponse`](classes/GoodsReceiptsServicePaginationResponse.md) = GoodsReceiptsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addGoodsReceiptItem`: \{ `I`: typeof [`GoodsReceiptsServiceItemCreateRequest`](classes/GoodsReceiptsServiceItemCreateRequest.md) = GoodsReceiptsServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddGoodsReceiptItem"`` = "AddGoodsReceiptItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveGoodsReceiptItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveGoodsReceiptItem"`` = "ApproveGoodsReceiptItem" } ; `autofill`: \{ `I`: typeof [`GoodsReceiptsServiceAutofillRequest`](classes/GoodsReceiptsServiceAutofillRequest.md) = GoodsReceiptsServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`GoodsReceiptsServiceCountReq`](classes/GoodsReceiptsServiceCountReq.md) = GoodsReceiptsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`GoodsReceiptsServiceCreateRequest`](classes/GoodsReceiptsServiceCreateRequest.md) = GoodsReceiptsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteGoodsReceiptItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteGoodsReceiptItem"`` = "DeleteGoodsReceiptItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `draft`: \{ `I`: typeof [`GoodsReceiptsServiceCreateRequest`](classes/GoodsReceiptsServiceCreateRequest.md) = GoodsReceiptsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`GoodsReceiptsServiceUpdateRequest`](classes/GoodsReceiptsServiceUpdateRequest.md) = GoodsReceiptsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`GoodsReceiptsServiceFilterReq`](classes/GoodsReceiptsServiceFilterReq.md) = GoodsReceiptsServiceFilterReq; `O`: typeof [`GoodsReceiptsList`](classes/GoodsReceiptsList.md) = GoodsReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isBilled`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsBilled"`` = "IsBilled" } ; `isCompletable`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsCompletable"`` = "IsCompletable" } ; `modifyGoodsReceiptItem`: \{ `I`: typeof [`GoodsReceiptsServiceItemUpdateRequest`](classes/GoodsReceiptsServiceItemUpdateRequest.md) = GoodsReceiptsServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyGoodsReceiptItem"`` = "ModifyGoodsReceiptItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderGoodsReceiptItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderGoodsReceiptItems"`` = "ReorderGoodsReceiptItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`GoodsReceiptsServiceUpdateRequest`](classes/GoodsReceiptsServiceUpdateRequest.md) = GoodsReceiptsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`GoodsReceiptsServiceSearchAllReq`](classes/GoodsReceiptsServiceSearchAllReq.md) = GoodsReceiptsServiceSearchAllReq; `O`: typeof [`GoodsReceiptsList`](classes/GoodsReceiptsList.md) = GoodsReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`GoodsReceiptItemsSearchRequest`](classes/GoodsReceiptItemsSearchRequest.md) = GoodsReceiptItemsSearchRequest; `O`: typeof [`GoodsReceiptsServicePaginatedItemsResponse`](classes/GoodsReceiptsServicePaginatedItemsResponse.md) = GoodsReceiptsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadGoodsReceiptItems`: \{ `I`: typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) = IdentifierUUIDWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadGoodsReceiptItems"`` = "UploadGoodsReceiptItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest`](classes/GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest.md) = GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`GoodsReceiptsList`](classes/GoodsReceiptsList.md) = GoodsReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsReceiptsList`](classes/GoodsReceiptsList.md) = GoodsReceiptsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsReceiptAncillaryParameters`](classes/GoodsReceiptAncillaryParameters.md) = GoodsReceiptAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedGoodsReceiptItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`GoodsReceiptsItemsList`](classes/GoodsReceiptsItemsList.md) = GoodsReceiptsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedGoodsReceiptItems"`` = "ViewApprovedGoodsReceiptItems" } ; `viewAssociatedVendorInvoiceInfo`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedVendorInvoiceInfo"`` = "ViewAssociatedVendorInvoiceInfo" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GoodsReceipt`](classes/GoodsReceipt.md) = GoodsReceipt; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`GoodsReceipt`](classes/GoodsReceipt.md) = GoodsReceipt; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewGoodsReceiptItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`GoodsReceiptItem`](classes/GoodsReceiptItem.md) = GoodsReceiptItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsReceiptItemByID"`` = "ViewGoodsReceiptItemByID" } ; `viewGoodsReceiptItemHistory`: \{ `I`: typeof [`GoodsReceiptItemHistoryRequest`](classes/GoodsReceiptItemHistoryRequest.md) = GoodsReceiptItemHistoryRequest; `O`: typeof [`GoodsReceiptsItemsList`](classes/GoodsReceiptsItemsList.md) = GoodsReceiptsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewGoodsReceiptItemHistory"`` = "ViewGoodsReceiptItemHistory" } ; `viewPaginatedApprovedGoodsReceiptItems`: \{ `I`: typeof [`GoodsReceiptItemsSearchRequest`](classes/GoodsReceiptItemsSearchRequest.md) = GoodsReceiptItemsSearchRequest; `O`: typeof [`GoodsReceiptsServicePaginatedItemsResponse`](classes/GoodsReceiptsServicePaginatedItemsResponse.md) = GoodsReceiptsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedGoodsReceiptItems"`` = "ViewPaginatedApprovedGoodsReceiptItems" } ; `viewPaginatedUnapprovedGoodsReceiptItems`: \{ `I`: typeof [`GoodsReceiptItemsSearchRequest`](classes/GoodsReceiptItemsSearchRequest.md) = GoodsReceiptItemsSearchRequest; `O`: typeof [`GoodsReceiptsServicePaginatedItemsResponse`](classes/GoodsReceiptsServicePaginatedItemsResponse.md) = GoodsReceiptsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedGoodsReceiptItems"`` = "ViewPaginatedUnapprovedGoodsReceiptItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveGoodsReceiptItem`: \{ `I`: typeof [`GoodsReceiptItemProspectiveInfoRequest`](classes/GoodsReceiptItemProspectiveInfoRequest.md) = GoodsReceiptItemProspectiveInfoRequest; `O`: typeof [`GoodsReceiptsServiceItemCreateRequest`](classes/GoodsReceiptsServiceItemCreateRequest.md) = GoodsReceiptsServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveGoodsReceiptItem"`` = "ViewProspectiveGoodsReceiptItem" } ; `viewUnapprovedGoodsReceiptItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`GoodsReceiptsItemsList`](classes/GoodsReceiptsItemsList.md) = GoodsReceiptsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedGoodsReceiptItems"`` = "ViewUnapprovedGoodsReceiptItems" } ; `viewWithPagination`: \{ `I`: typeof [`GoodsReceiptsServicePaginationReq`](classes/GoodsReceiptsServicePaginationReq.md) = GoodsReceiptsServicePaginationReq; `O`: typeof [`GoodsReceiptsServicePaginationResponse`](classes/GoodsReceiptsServicePaginationResponse.md) = GoodsReceiptsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addGoodsReceiptItem` | \{ `I`: typeof [`GoodsReceiptsServiceItemCreateRequest`](classes/GoodsReceiptsServiceItemCreateRequest.md) = GoodsReceiptsServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddGoodsReceiptItem"`` = "AddGoodsReceiptItem" } |
 | `methods.addGoodsReceiptItem.I` | typeof [`GoodsReceiptsServiceItemCreateRequest`](classes/GoodsReceiptsServiceItemCreateRequest.md) |
 | `methods.addGoodsReceiptItem.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -9198,16 +9220,16 @@ from service Scailo.GoodsReceiptsService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.downloadLabelByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } |
 | `methods.downloadLabelByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadLabelByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
@@ -13602,7 +13624,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1331
+permissions.ts:1332
 
 ___
 
@@ -13612,7 +13634,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1330
+permissions.ts:1331
 
 ___
 
@@ -13622,7 +13644,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1328
+permissions.ts:1329
 
 ___
 
@@ -13632,7 +13654,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1327
+permissions.ts:1328
 
 ___
 
@@ -13642,7 +13664,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1324
+permissions.ts:1325
 
 ___
 
@@ -13652,7 +13674,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1326
+permissions.ts:1327
 
 ___
 
@@ -13662,7 +13684,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1329
+permissions.ts:1330
 
 ___
 
@@ -13672,7 +13694,17 @@ ___
 
 #### Defined in
 
-permissions.ts:1325
+permissions.ts:1326
+
+___
+
+### PermissionAmendEquationWorkOrder
+
+• `Const` **PermissionAmendEquationWorkOrder**: ``"equations-work-orders-amend"``
+
+#### Defined in
+
+permissions.ts:826
 
 ___
 
@@ -13682,7 +13714,7 @@ ___
 
 #### Defined in
 
-permissions.ts:854
+permissions.ts:855
 
 ___
 
@@ -13762,7 +13794,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1154
+permissions.ts:1155
 
 ___
 
@@ -13772,7 +13804,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1315
+permissions.ts:1316
 
 ___
 
@@ -13782,7 +13814,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1303
+permissions.ts:1304
 
 ___
 
@@ -13792,7 +13824,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1291
+permissions.ts:1292
 
 ___
 
@@ -13802,7 +13834,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1279
+permissions.ts:1280
 
 ___
 
@@ -13812,7 +13844,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1037
+permissions.ts:1038
 
 ___
 
@@ -13822,7 +13854,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1180
+permissions.ts:1181
 
 ___
 
@@ -13832,7 +13864,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1141
+permissions.ts:1142
 
 ___
 
@@ -13842,7 +13874,7 @@ ___
 
 #### Defined in
 
-permissions.ts:977
+permissions.ts:978
 
 ___
 
@@ -13882,7 +13914,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1268
+permissions.ts:1269
 
 ___
 
@@ -13892,7 +13924,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1076
+permissions.ts:1077
 
 ___
 
@@ -13902,7 +13934,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1089
+permissions.ts:1090
 
 ___
 
@@ -13912,7 +13944,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1102
+permissions.ts:1103
 
 ___
 
@@ -13922,7 +13954,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1115
+permissions.ts:1116
 
 ___
 
@@ -13932,7 +13964,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1025
+permissions.ts:1026
 
 ___
 
@@ -13942,7 +13974,7 @@ ___
 
 #### Defined in
 
-permissions.ts:965
+permissions.ts:966
 
 ___
 
@@ -13952,7 +13984,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1167
+permissions.ts:1168
 
 ___
 
@@ -13962,7 +13994,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1128
+permissions.ts:1129
 
 ___
 
@@ -13972,7 +14004,7 @@ ___
 
 #### Defined in
 
-permissions.ts:926
+permissions.ts:927
 
 ___
 
@@ -14002,7 +14034,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1001
+permissions.ts:1002
 
 ___
 
@@ -14012,7 +14044,7 @@ ___
 
 #### Defined in
 
-permissions.ts:859
+permissions.ts:860
 
 ___
 
@@ -14052,7 +14084,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1063
+permissions.ts:1064
 
 ___
 
@@ -14062,7 +14094,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1050
+permissions.ts:1051
 
 ___
 
@@ -14072,7 +14104,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1236
+permissions.ts:1237
 
 ___
 
@@ -14082,7 +14114,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1013
+permissions.ts:1014
 
 ___
 
@@ -14092,7 +14124,7 @@ ___
 
 #### Defined in
 
-permissions.ts:989
+permissions.ts:990
 
 ___
 
@@ -14112,7 +14144,7 @@ ___
 
 #### Defined in
 
-permissions.ts:914
+permissions.ts:915
 
 ___
 
@@ -14122,7 +14154,7 @@ ___
 
 #### Defined in
 
-permissions.ts:902
+permissions.ts:903
 
 ___
 
@@ -14152,7 +14184,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1223
+permissions.ts:1224
 
 ___
 
@@ -14282,7 +14314,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1362
+permissions.ts:1363
 
 ___
 
@@ -14292,7 +14324,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1361
+permissions.ts:1362
 
 ___
 
@@ -14302,7 +14334,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1359
+permissions.ts:1360
 
 ___
 
@@ -14312,7 +14344,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1358
+permissions.ts:1359
 
 ___
 
@@ -14322,7 +14354,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1355
+permissions.ts:1356
 
 ___
 
@@ -14332,7 +14364,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1357
+permissions.ts:1358
 
 ___
 
@@ -14342,7 +14374,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1360
+permissions.ts:1361
 
 ___
 
@@ -14352,7 +14384,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1356
+permissions.ts:1357
 
 ___
 
@@ -14362,7 +14394,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1160
+permissions.ts:1161
 
 ___
 
@@ -14372,7 +14404,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1043
+permissions.ts:1044
 
 ___
 
@@ -14382,7 +14414,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1186
+permissions.ts:1187
 
 ___
 
@@ -14392,7 +14424,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1147
+permissions.ts:1148
 
 ___
 
@@ -14412,7 +14444,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1270
+permissions.ts:1271
 
 ___
 
@@ -14422,7 +14454,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1082
+permissions.ts:1083
 
 ___
 
@@ -14432,7 +14464,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1095
+permissions.ts:1096
 
 ___
 
@@ -14442,7 +14474,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1108
+permissions.ts:1109
 
 ___
 
@@ -14452,7 +14484,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1121
+permissions.ts:1122
 
 ___
 
@@ -14462,7 +14494,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1173
+permissions.ts:1174
 
 ___
 
@@ -14472,7 +14504,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1134
+permissions.ts:1135
 
 ___
 
@@ -14482,7 +14514,7 @@ ___
 
 #### Defined in
 
-permissions.ts:932
+permissions.ts:933
 
 ___
 
@@ -14512,7 +14544,7 @@ ___
 
 #### Defined in
 
-permissions.ts:865
+permissions.ts:866
 
 ___
 
@@ -14552,7 +14584,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1069
+permissions.ts:1070
 
 ___
 
@@ -14562,7 +14594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1056
+permissions.ts:1057
 
 ___
 
@@ -14572,7 +14604,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1242
+permissions.ts:1243
 
 ___
 
@@ -14592,7 +14624,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1229
+permissions.ts:1230
 
 ___
 
@@ -14992,7 +15024,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1212
+permissions.ts:1213
 
 ___
 
@@ -15002,7 +15034,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1216
+permissions.ts:1217
 
 ___
 
@@ -15012,7 +15044,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1214
+permissions.ts:1215
 
 ___
 
@@ -15022,7 +15054,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1217
+permissions.ts:1218
 
 ___
 
@@ -15032,7 +15064,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1210
+permissions.ts:1211
 
 ___
 
@@ -15042,7 +15074,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1206
+permissions.ts:1207
 
 ___
 
@@ -15052,7 +15084,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1215
+permissions.ts:1216
 
 ___
 
@@ -15062,7 +15094,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1209
+permissions.ts:1210
 
 ___
 
@@ -15072,7 +15104,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1205
+permissions.ts:1206
 
 ___
 
@@ -15082,7 +15114,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1208
+permissions.ts:1209
 
 ___
 
@@ -15092,7 +15124,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1213
+permissions.ts:1214
 
 ___
 
@@ -15102,7 +15134,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1207
+permissions.ts:1208
 
 ___
 
@@ -15112,7 +15144,7 @@ ___
 
 #### Defined in
 
-permissions.ts:954
+permissions.ts:955
 
 ___
 
@@ -15122,7 +15154,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1158
+permissions.ts:1159
 
 ___
 
@@ -15132,7 +15164,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1322
+permissions.ts:1323
 
 ___
 
@@ -15142,7 +15174,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1319
+permissions.ts:1320
 
 ___
 
@@ -15152,7 +15184,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1307
+permissions.ts:1308
 
 ___
 
@@ -15162,7 +15194,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1295
+permissions.ts:1296
 
 ___
 
@@ -15172,7 +15204,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1283
+permissions.ts:1284
 
 ___
 
@@ -15182,7 +15214,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1310
+permissions.ts:1311
 
 ___
 
@@ -15192,7 +15224,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1298
+permissions.ts:1299
 
 ___
 
@@ -15202,7 +15234,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1286
+permissions.ts:1287
 
 ___
 
@@ -15212,7 +15244,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1041
+permissions.ts:1042
 
 ___
 
@@ -15232,7 +15264,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1184
+permissions.ts:1185
 
 ___
 
@@ -15242,7 +15274,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1145
+permissions.ts:1146
 
 ___
 
@@ -15252,7 +15284,7 @@ ___
 
 #### Defined in
 
-permissions.ts:984
+permissions.ts:985
 
 ___
 
@@ -15262,7 +15294,7 @@ ___
 
 #### Defined in
 
-permissions.ts:981
+permissions.ts:982
 
 ___
 
@@ -15352,7 +15384,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1080
+permissions.ts:1081
 
 ___
 
@@ -15362,7 +15394,7 @@ ___
 
 #### Defined in
 
-permissions.ts:959
+permissions.ts:960
 
 ___
 
@@ -15372,7 +15404,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1093
+permissions.ts:1094
 
 ___
 
@@ -15382,7 +15414,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1106
+permissions.ts:1107
 
 ___
 
@@ -15392,7 +15424,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1119
+permissions.ts:1120
 
 ___
 
@@ -15402,7 +15434,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1032
+permissions.ts:1033
 
 ___
 
@@ -15412,7 +15444,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1029
+permissions.ts:1030
 
 ___
 
@@ -15422,7 +15454,7 @@ ___
 
 #### Defined in
 
-permissions.ts:972
+permissions.ts:973
 
 ___
 
@@ -15432,7 +15464,7 @@ ___
 
 #### Defined in
 
-permissions.ts:969
+permissions.ts:970
 
 ___
 
@@ -15442,7 +15474,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1171
+permissions.ts:1172
 
 ___
 
@@ -15452,7 +15484,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1132
+permissions.ts:1133
 
 ___
 
@@ -15462,7 +15494,7 @@ ___
 
 #### Defined in
 
-permissions.ts:930
+permissions.ts:931
 
 ___
 
@@ -15482,7 +15514,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1008
+permissions.ts:1009
 
 ___
 
@@ -15492,7 +15524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1005
+permissions.ts:1006
 
 ___
 
@@ -15502,7 +15534,7 @@ ___
 
 #### Defined in
 
-permissions.ts:863
+permissions.ts:864
 
 ___
 
@@ -15522,7 +15554,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1067
+permissions.ts:1068
 
 ___
 
@@ -15532,7 +15564,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1054
+permissions.ts:1055
 
 ___
 
@@ -15542,7 +15574,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1240
+permissions.ts:1241
 
 ___
 
@@ -15552,7 +15584,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1020
+permissions.ts:1021
 
 ___
 
@@ -15562,7 +15594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1017
+permissions.ts:1018
 
 ___
 
@@ -15572,7 +15604,7 @@ ___
 
 #### Defined in
 
-permissions.ts:996
+permissions.ts:997
 
 ___
 
@@ -15582,7 +15614,7 @@ ___
 
 #### Defined in
 
-permissions.ts:993
+permissions.ts:994
 
 ___
 
@@ -15602,7 +15634,7 @@ ___
 
 #### Defined in
 
-permissions.ts:921
+permissions.ts:922
 
 ___
 
@@ -15612,7 +15644,7 @@ ___
 
 #### Defined in
 
-permissions.ts:918
+permissions.ts:919
 
 ___
 
@@ -15622,7 +15654,7 @@ ___
 
 #### Defined in
 
-permissions.ts:909
+permissions.ts:910
 
 ___
 
@@ -15632,7 +15664,7 @@ ___
 
 #### Defined in
 
-permissions.ts:906
+permissions.ts:907
 
 ___
 
@@ -15682,7 +15714,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1227
+permissions.ts:1228
 
 ___
 
@@ -15692,7 +15724,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1152
+permissions.ts:1153
 
 ___
 
@@ -15702,7 +15734,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1313
+permissions.ts:1314
 
 ___
 
@@ -15712,7 +15744,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1301
+permissions.ts:1302
 
 ___
 
@@ -15722,7 +15754,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1289
+permissions.ts:1290
 
 ___
 
@@ -15732,7 +15764,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1277
+permissions.ts:1278
 
 ___
 
@@ -15742,7 +15774,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1035
+permissions.ts:1036
 
 ___
 
@@ -15752,7 +15784,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1178
+permissions.ts:1179
 
 ___
 
@@ -15762,7 +15794,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1139
+permissions.ts:1140
 
 ___
 
@@ -15772,7 +15804,7 @@ ___
 
 #### Defined in
 
-permissions.ts:975
+permissions.ts:976
 
 ___
 
@@ -15812,7 +15844,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1262
+permissions.ts:1263
 
 ___
 
@@ -15822,7 +15854,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1074
+permissions.ts:1075
 
 ___
 
@@ -15832,7 +15864,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1087
+permissions.ts:1088
 
 ___
 
@@ -15842,7 +15874,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1100
+permissions.ts:1101
 
 ___
 
@@ -15852,7 +15884,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1113
+permissions.ts:1114
 
 ___
 
@@ -15862,7 +15894,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1023
+permissions.ts:1024
 
 ___
 
@@ -15872,7 +15904,7 @@ ___
 
 #### Defined in
 
-permissions.ts:963
+permissions.ts:964
 
 ___
 
@@ -15882,7 +15914,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1165
+permissions.ts:1166
 
 ___
 
@@ -15892,7 +15924,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1126
+permissions.ts:1127
 
 ___
 
@@ -15902,7 +15934,7 @@ ___
 
 #### Defined in
 
-permissions.ts:924
+permissions.ts:925
 
 ___
 
@@ -15932,7 +15964,7 @@ ___
 
 #### Defined in
 
-permissions.ts:999
+permissions.ts:1000
 
 ___
 
@@ -15942,7 +15974,7 @@ ___
 
 #### Defined in
 
-permissions.ts:857
+permissions.ts:858
 
 ___
 
@@ -15982,7 +16014,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1061
+permissions.ts:1062
 
 ___
 
@@ -15992,7 +16024,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1048
+permissions.ts:1049
 
 ___
 
@@ -16002,7 +16034,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1234
+permissions.ts:1235
 
 ___
 
@@ -16012,7 +16044,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1011
+permissions.ts:1012
 
 ___
 
@@ -16022,7 +16054,7 @@ ___
 
 #### Defined in
 
-permissions.ts:987
+permissions.ts:988
 
 ___
 
@@ -16042,7 +16074,7 @@ ___
 
 #### Defined in
 
-permissions.ts:912
+permissions.ts:913
 
 ___
 
@@ -16052,7 +16084,7 @@ ___
 
 #### Defined in
 
-permissions.ts:900
+permissions.ts:901
 
 ___
 
@@ -16082,7 +16114,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1221
+permissions.ts:1222
 
 ___
 
@@ -16212,7 +16244,7 @@ ___
 
 #### Defined in
 
-permissions.ts:834
+permissions.ts:835
 
 ___
 
@@ -16222,7 +16254,7 @@ ___
 
 #### Defined in
 
-permissions.ts:838
+permissions.ts:839
 
 ___
 
@@ -16232,7 +16264,7 @@ ___
 
 #### Defined in
 
-permissions.ts:836
+permissions.ts:837
 
 ___
 
@@ -16242,7 +16274,7 @@ ___
 
 #### Defined in
 
-permissions.ts:839
+permissions.ts:840
 
 ___
 
@@ -16252,7 +16284,7 @@ ___
 
 #### Defined in
 
-permissions.ts:832
+permissions.ts:833
 
 ___
 
@@ -16262,7 +16294,7 @@ ___
 
 #### Defined in
 
-permissions.ts:828
+permissions.ts:829
 
 ___
 
@@ -16272,7 +16304,7 @@ ___
 
 #### Defined in
 
-permissions.ts:837
+permissions.ts:838
 
 ___
 
@@ -16282,7 +16314,7 @@ ___
 
 #### Defined in
 
-permissions.ts:831
+permissions.ts:832
 
 ___
 
@@ -16292,7 +16324,7 @@ ___
 
 #### Defined in
 
-permissions.ts:827
+permissions.ts:828
 
 ___
 
@@ -16302,7 +16334,7 @@ ___
 
 #### Defined in
 
-permissions.ts:830
+permissions.ts:831
 
 ___
 
@@ -16312,7 +16344,7 @@ ___
 
 #### Defined in
 
-permissions.ts:835
+permissions.ts:836
 
 ___
 
@@ -16322,7 +16354,7 @@ ___
 
 #### Defined in
 
-permissions.ts:829
+permissions.ts:830
 
 ___
 
@@ -16842,7 +16874,7 @@ ___
 
 #### Defined in
 
-permissions.ts:849
+permissions.ts:850
 
 ___
 
@@ -16852,7 +16884,7 @@ ___
 
 #### Defined in
 
-permissions.ts:852
+permissions.ts:853
 
 ___
 
@@ -16862,7 +16894,7 @@ ___
 
 #### Defined in
 
-permissions.ts:853
+permissions.ts:854
 
 ___
 
@@ -16872,7 +16904,7 @@ ___
 
 #### Defined in
 
-permissions.ts:847
+permissions.ts:848
 
 ___
 
@@ -16882,7 +16914,7 @@ ___
 
 #### Defined in
 
-permissions.ts:843
+permissions.ts:844
 
 ___
 
@@ -16892,7 +16924,7 @@ ___
 
 #### Defined in
 
-permissions.ts:851
+permissions.ts:852
 
 ___
 
@@ -16902,7 +16934,7 @@ ___
 
 #### Defined in
 
-permissions.ts:846
+permissions.ts:847
 
 ___
 
@@ -16912,7 +16944,7 @@ ___
 
 #### Defined in
 
-permissions.ts:842
+permissions.ts:843
 
 ___
 
@@ -16922,7 +16954,7 @@ ___
 
 #### Defined in
 
-permissions.ts:845
+permissions.ts:846
 
 ___
 
@@ -16932,7 +16964,7 @@ ___
 
 #### Defined in
 
-permissions.ts:850
+permissions.ts:851
 
 ___
 
@@ -16942,7 +16974,7 @@ ___
 
 #### Defined in
 
-permissions.ts:844
+permissions.ts:845
 
 ___
 
@@ -17102,7 +17134,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1374
+permissions.ts:1375
 
 ___
 
@@ -17112,7 +17144,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1373
+permissions.ts:1374
 
 ___
 
@@ -17122,7 +17154,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1371
+permissions.ts:1372
 
 ___
 
@@ -17132,7 +17164,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1370
+permissions.ts:1371
 
 ___
 
@@ -17142,7 +17174,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1367
+permissions.ts:1368
 
 ___
 
@@ -17152,7 +17184,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1369
+permissions.ts:1370
 
 ___
 
@@ -17162,7 +17194,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1372
+permissions.ts:1373
 
 ___
 
@@ -17172,7 +17204,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1368
+permissions.ts:1369
 
 ___
 
@@ -17182,7 +17214,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1273
+permissions.ts:1274
 
 ___
 
@@ -17192,7 +17224,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1266
+permissions.ts:1267
 
 ___
 
@@ -17442,7 +17474,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1161
+permissions.ts:1162
 
 ___
 
@@ -17452,7 +17484,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1321
+permissions.ts:1322
 
 ___
 
@@ -17462,7 +17494,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1309
+permissions.ts:1310
 
 ___
 
@@ -17472,7 +17504,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1297
+permissions.ts:1298
 
 ___
 
@@ -17482,7 +17514,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1285
+permissions.ts:1286
 
 ___
 
@@ -17492,7 +17524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1044
+permissions.ts:1045
 
 ___
 
@@ -17502,7 +17534,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1148
+permissions.ts:1149
 
 ___
 
@@ -17512,7 +17544,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1187
+permissions.ts:1188
 
 ___
 
@@ -17522,7 +17554,7 @@ ___
 
 #### Defined in
 
-permissions.ts:983
+permissions.ts:984
 
 ___
 
@@ -17562,7 +17594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1271
+permissions.ts:1272
 
 ___
 
@@ -17572,7 +17604,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1083
+permissions.ts:1084
 
 ___
 
@@ -17582,7 +17614,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1109
+permissions.ts:1110
 
 ___
 
@@ -17592,7 +17624,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1122
+permissions.ts:1123
 
 ___
 
@@ -17602,7 +17634,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1096
+permissions.ts:1097
 
 ___
 
@@ -17612,7 +17644,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1031
+permissions.ts:1032
 
 ___
 
@@ -17622,7 +17654,7 @@ ___
 
 #### Defined in
 
-permissions.ts:971
+permissions.ts:972
 
 ___
 
@@ -17632,7 +17664,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1174
+permissions.ts:1175
 
 ___
 
@@ -17642,7 +17674,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1135
+permissions.ts:1136
 
 ___
 
@@ -17652,7 +17684,7 @@ ___
 
 #### Defined in
 
-permissions.ts:933
+permissions.ts:934
 
 ___
 
@@ -17682,7 +17714,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1007
+permissions.ts:1008
 
 ___
 
@@ -17692,7 +17724,7 @@ ___
 
 #### Defined in
 
-permissions.ts:866
+permissions.ts:867
 
 ___
 
@@ -17732,7 +17764,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1057
+permissions.ts:1058
 
 ___
 
@@ -17742,7 +17774,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1070
+permissions.ts:1071
 
 ___
 
@@ -17752,7 +17784,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1243
+permissions.ts:1244
 
 ___
 
@@ -17762,7 +17794,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1019
+permissions.ts:1020
 
 ___
 
@@ -17772,7 +17804,7 @@ ___
 
 #### Defined in
 
-permissions.ts:995
+permissions.ts:996
 
 ___
 
@@ -17792,7 +17824,7 @@ ___
 
 #### Defined in
 
-permissions.ts:920
+permissions.ts:921
 
 ___
 
@@ -17802,7 +17834,7 @@ ___
 
 #### Defined in
 
-permissions.ts:908
+permissions.ts:909
 
 ___
 
@@ -17832,7 +17864,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1230
+permissions.ts:1231
 
 ___
 
@@ -17842,7 +17874,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1157
+permissions.ts:1158
 
 ___
 
@@ -17852,7 +17884,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1318
+permissions.ts:1319
 
 ___
 
@@ -17862,7 +17894,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1306
+permissions.ts:1307
 
 ___
 
@@ -17872,7 +17904,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1294
+permissions.ts:1295
 
 ___
 
@@ -17882,7 +17914,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1282
+permissions.ts:1283
 
 ___
 
@@ -17892,7 +17924,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1040
+permissions.ts:1041
 
 ___
 
@@ -17902,7 +17934,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1183
+permissions.ts:1184
 
 ___
 
@@ -17912,7 +17944,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1144
+permissions.ts:1145
 
 ___
 
@@ -17922,7 +17954,7 @@ ___
 
 #### Defined in
 
-permissions.ts:980
+permissions.ts:981
 
 ___
 
@@ -17962,7 +17994,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1265
+permissions.ts:1266
 
 ___
 
@@ -17972,7 +18004,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1079
+permissions.ts:1080
 
 ___
 
@@ -17982,7 +18014,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1092
+permissions.ts:1093
 
 ___
 
@@ -17992,7 +18024,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1105
+permissions.ts:1106
 
 ___
 
@@ -18002,7 +18034,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1118
+permissions.ts:1119
 
 ___
 
@@ -18012,7 +18044,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1028
+permissions.ts:1029
 
 ___
 
@@ -18022,7 +18054,7 @@ ___
 
 #### Defined in
 
-permissions.ts:968
+permissions.ts:969
 
 ___
 
@@ -18032,7 +18064,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1170
+permissions.ts:1171
 
 ___
 
@@ -18042,7 +18074,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1131
+permissions.ts:1132
 
 ___
 
@@ -18052,7 +18084,7 @@ ___
 
 #### Defined in
 
-permissions.ts:929
+permissions.ts:930
 
 ___
 
@@ -18082,7 +18114,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1004
+permissions.ts:1005
 
 ___
 
@@ -18092,7 +18124,7 @@ ___
 
 #### Defined in
 
-permissions.ts:862
+permissions.ts:863
 
 ___
 
@@ -18132,7 +18164,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1066
+permissions.ts:1067
 
 ___
 
@@ -18142,7 +18174,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1053
+permissions.ts:1054
 
 ___
 
@@ -18152,7 +18184,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1239
+permissions.ts:1240
 
 ___
 
@@ -18162,7 +18194,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1016
+permissions.ts:1017
 
 ___
 
@@ -18172,7 +18204,7 @@ ___
 
 #### Defined in
 
-permissions.ts:992
+permissions.ts:993
 
 ___
 
@@ -18192,7 +18224,7 @@ ___
 
 #### Defined in
 
-permissions.ts:917
+permissions.ts:918
 
 ___
 
@@ -18202,7 +18234,7 @@ ___
 
 #### Defined in
 
-permissions.ts:905
+permissions.ts:906
 
 ___
 
@@ -18232,7 +18264,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1226
+permissions.ts:1227
 
 ___
 
@@ -18752,7 +18784,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1162
+permissions.ts:1163
 
 ___
 
@@ -18762,7 +18794,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1045
+permissions.ts:1046
 
 ___
 
@@ -18772,7 +18804,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1188
+permissions.ts:1189
 
 ___
 
@@ -18782,7 +18814,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1149
+permissions.ts:1150
 
 ___
 
@@ -18802,7 +18834,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1272
+permissions.ts:1273
 
 ___
 
@@ -18812,7 +18844,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1084
+permissions.ts:1085
 
 ___
 
@@ -18822,7 +18854,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1110
+permissions.ts:1111
 
 ___
 
@@ -18832,7 +18864,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1123
+permissions.ts:1124
 
 ___
 
@@ -18842,7 +18874,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1097
+permissions.ts:1098
 
 ___
 
@@ -18852,7 +18884,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1175
+permissions.ts:1176
 
 ___
 
@@ -18862,7 +18894,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1136
+permissions.ts:1137
 
 ___
 
@@ -18872,7 +18904,7 @@ ___
 
 #### Defined in
 
-permissions.ts:934
+permissions.ts:935
 
 ___
 
@@ -18902,7 +18934,7 @@ ___
 
 #### Defined in
 
-permissions.ts:867
+permissions.ts:868
 
 ___
 
@@ -18942,7 +18974,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1071
+permissions.ts:1072
 
 ___
 
@@ -18952,7 +18984,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1058
+permissions.ts:1059
 
 ___
 
@@ -18962,7 +18994,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1244
+permissions.ts:1245
 
 ___
 
@@ -18982,7 +19014,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1231
+permissions.ts:1232
 
 ___
 
@@ -18992,7 +19024,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1342
+permissions.ts:1343
 
 ___
 
@@ -19002,7 +19034,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1341
+permissions.ts:1342
 
 ___
 
@@ -19012,7 +19044,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1340
+permissions.ts:1341
 
 ___
 
@@ -19022,7 +19054,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1339
+permissions.ts:1340
 
 ___
 
@@ -19032,7 +19064,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1336
+permissions.ts:1337
 
 ___
 
@@ -19042,7 +19074,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1338
+permissions.ts:1339
 
 ___
 
@@ -19052,7 +19084,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1337
+permissions.ts:1338
 
 ___
 
@@ -19252,7 +19284,7 @@ ___
 
 #### Defined in
 
-permissions.ts:958
+permissions.ts:959
 
 ___
 
@@ -19262,7 +19294,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1334
+permissions.ts:1335
 
 ___
 
@@ -19272,7 +19304,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1333
+permissions.ts:1334
 
 ___
 
@@ -19282,7 +19314,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1332
+permissions.ts:1333
 
 ___
 
@@ -19292,7 +19324,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1365
+permissions.ts:1366
 
 ___
 
@@ -19302,7 +19334,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1364
+permissions.ts:1365
 
 ___
 
@@ -19312,7 +19344,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1363
+permissions.ts:1364
 
 ___
 
@@ -19322,7 +19354,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1377
+permissions.ts:1378
 
 ___
 
@@ -19332,7 +19364,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1376
+permissions.ts:1377
 
 ___
 
@@ -19342,7 +19374,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1375
+permissions.ts:1376
 
 ___
 
@@ -19352,7 +19384,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1353
+permissions.ts:1354
 
 ___
 
@@ -19362,7 +19394,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1352
+permissions.ts:1353
 
 ___
 
@@ -19372,7 +19404,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1351
+permissions.ts:1352
 
 ___
 
@@ -19382,7 +19414,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1389
+permissions.ts:1390
 
 ___
 
@@ -19392,7 +19424,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1388
+permissions.ts:1389
 
 ___
 
@@ -19402,7 +19434,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1387
+permissions.ts:1388
 
 ___
 
@@ -19412,7 +19444,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1151
+permissions.ts:1152
 
 ___
 
@@ -19422,7 +19454,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1312
+permissions.ts:1313
 
 ___
 
@@ -19432,7 +19464,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1300
+permissions.ts:1301
 
 ___
 
@@ -19442,7 +19474,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1288
+permissions.ts:1289
 
 ___
 
@@ -19452,7 +19484,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1276
+permissions.ts:1277
 
 ___
 
@@ -19462,7 +19494,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1034
+permissions.ts:1035
 
 ___
 
@@ -19482,7 +19514,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1138
+permissions.ts:1139
 
 ___
 
@@ -19492,7 +19524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1177
+permissions.ts:1178
 
 ___
 
@@ -19502,7 +19534,7 @@ ___
 
 #### Defined in
 
-permissions.ts:974
+permissions.ts:975
 
 ___
 
@@ -19572,7 +19604,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1261
+permissions.ts:1262
 
 ___
 
@@ -19582,7 +19614,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1073
+permissions.ts:1074
 
 ___
 
@@ -19592,7 +19624,7 @@ ___
 
 #### Defined in
 
-permissions.ts:956
+permissions.ts:957
 
 ___
 
@@ -19602,7 +19634,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1099
+permissions.ts:1100
 
 ___
 
@@ -19612,7 +19644,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1112
+permissions.ts:1113
 
 ___
 
@@ -19622,7 +19654,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1086
+permissions.ts:1087
 
 ___
 
@@ -19632,7 +19664,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1022
+permissions.ts:1023
 
 ___
 
@@ -19642,7 +19674,7 @@ ___
 
 #### Defined in
 
-permissions.ts:962
+permissions.ts:963
 
 ___
 
@@ -19652,7 +19684,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1164
+permissions.ts:1165
 
 ___
 
@@ -19662,7 +19694,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1125
+permissions.ts:1126
 
 ___
 
@@ -19672,7 +19704,7 @@ ___
 
 #### Defined in
 
-permissions.ts:923
+permissions.ts:924
 
 ___
 
@@ -19702,7 +19734,7 @@ ___
 
 #### Defined in
 
-permissions.ts:998
+permissions.ts:999
 
 ___
 
@@ -19712,7 +19744,7 @@ ___
 
 #### Defined in
 
-permissions.ts:856
+permissions.ts:857
 
 ___
 
@@ -19752,7 +19784,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1047
+permissions.ts:1048
 
 ___
 
@@ -19762,7 +19794,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1060
+permissions.ts:1061
 
 ___
 
@@ -19772,7 +19804,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1233
+permissions.ts:1234
 
 ___
 
@@ -19782,7 +19814,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1010
+permissions.ts:1011
 
 ___
 
@@ -19792,7 +19824,7 @@ ___
 
 #### Defined in
 
-permissions.ts:986
+permissions.ts:987
 
 ___
 
@@ -19812,7 +19844,7 @@ ___
 
 #### Defined in
 
-permissions.ts:911
+permissions.ts:912
 
 ___
 
@@ -19822,7 +19854,7 @@ ___
 
 #### Defined in
 
-permissions.ts:899
+permissions.ts:900
 
 ___
 
@@ -19852,7 +19884,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1220
+permissions.ts:1221
 
 ___
 
@@ -19862,7 +19894,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1350
+permissions.ts:1351
 
 ___
 
@@ -19872,7 +19904,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1349
+permissions.ts:1350
 
 ___
 
@@ -19882,7 +19914,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1348
+permissions.ts:1349
 
 ___
 
@@ -19892,7 +19924,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1347
+permissions.ts:1348
 
 ___
 
@@ -19902,7 +19934,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1344
+permissions.ts:1345
 
 ___
 
@@ -19912,7 +19944,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1346
+permissions.ts:1347
 
 ___
 
@@ -19922,7 +19954,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1345
+permissions.ts:1346
 
 ___
 
@@ -20292,7 +20324,7 @@ ___
 
 #### Defined in
 
-permissions.ts:943
+permissions.ts:944
 
 ___
 
@@ -20302,7 +20334,7 @@ ___
 
 #### Defined in
 
-permissions.ts:947
+permissions.ts:948
 
 ___
 
@@ -20312,7 +20344,7 @@ ___
 
 #### Defined in
 
-permissions.ts:945
+permissions.ts:946
 
 ___
 
@@ -20322,7 +20354,7 @@ ___
 
 #### Defined in
 
-permissions.ts:948
+permissions.ts:949
 
 ___
 
@@ -20332,7 +20364,7 @@ ___
 
 #### Defined in
 
-permissions.ts:941
+permissions.ts:942
 
 ___
 
@@ -20342,7 +20374,7 @@ ___
 
 #### Defined in
 
-permissions.ts:937
+permissions.ts:938
 
 ___
 
@@ -20352,7 +20384,7 @@ ___
 
 #### Defined in
 
-permissions.ts:946
+permissions.ts:947
 
 ___
 
@@ -20362,7 +20394,7 @@ ___
 
 #### Defined in
 
-permissions.ts:940
+permissions.ts:941
 
 ___
 
@@ -20372,7 +20404,7 @@ ___
 
 #### Defined in
 
-permissions.ts:936
+permissions.ts:937
 
 ___
 
@@ -20382,7 +20414,7 @@ ___
 
 #### Defined in
 
-permissions.ts:939
+permissions.ts:940
 
 ___
 
@@ -20392,7 +20424,7 @@ ___
 
 #### Defined in
 
-permissions.ts:944
+permissions.ts:945
 
 ___
 
@@ -20402,7 +20434,7 @@ ___
 
 #### Defined in
 
-permissions.ts:938
+permissions.ts:939
 
 ___
 
@@ -21412,7 +21444,7 @@ ___
 
 #### Defined in
 
-permissions.ts:876
+permissions.ts:877
 
 ___
 
@@ -21422,7 +21454,7 @@ ___
 
 #### Defined in
 
-permissions.ts:880
+permissions.ts:881
 
 ___
 
@@ -21432,7 +21464,7 @@ ___
 
 #### Defined in
 
-permissions.ts:878
+permissions.ts:879
 
 ___
 
@@ -21442,7 +21474,7 @@ ___
 
 #### Defined in
 
-permissions.ts:881
+permissions.ts:882
 
 ___
 
@@ -21452,7 +21484,7 @@ ___
 
 #### Defined in
 
-permissions.ts:874
+permissions.ts:875
 
 ___
 
@@ -21462,7 +21494,7 @@ ___
 
 #### Defined in
 
-permissions.ts:870
+permissions.ts:871
 
 ___
 
@@ -21472,7 +21504,7 @@ ___
 
 #### Defined in
 
-permissions.ts:879
+permissions.ts:880
 
 ___
 
@@ -21482,7 +21514,7 @@ ___
 
 #### Defined in
 
-permissions.ts:873
+permissions.ts:874
 
 ___
 
@@ -21492,7 +21524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:869
+permissions.ts:870
 
 ___
 
@@ -21502,7 +21534,7 @@ ___
 
 #### Defined in
 
-permissions.ts:872
+permissions.ts:873
 
 ___
 
@@ -21512,7 +21544,7 @@ ___
 
 #### Defined in
 
-permissions.ts:877
+permissions.ts:878
 
 ___
 
@@ -21522,7 +21554,7 @@ ___
 
 #### Defined in
 
-permissions.ts:871
+permissions.ts:872
 
 ___
 
@@ -21532,7 +21564,7 @@ ___
 
 #### Defined in
 
-permissions.ts:890
+permissions.ts:891
 
 ___
 
@@ -21542,7 +21574,7 @@ ___
 
 #### Defined in
 
-permissions.ts:892
+permissions.ts:893
 
 ___
 
@@ -21552,7 +21584,7 @@ ___
 
 #### Defined in
 
-permissions.ts:889
+permissions.ts:890
 
 ___
 
@@ -21562,7 +21594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:891
+permissions.ts:892
 
 ___
 
@@ -21572,7 +21604,7 @@ ___
 
 #### Defined in
 
-permissions.ts:897
+permissions.ts:898
 
 ___
 
@@ -21582,7 +21614,7 @@ ___
 
 #### Defined in
 
-permissions.ts:896
+permissions.ts:897
 
 ___
 
@@ -21592,7 +21624,7 @@ ___
 
 #### Defined in
 
-permissions.ts:888
+permissions.ts:889
 
 ___
 
@@ -21602,7 +21634,7 @@ ___
 
 #### Defined in
 
-permissions.ts:887
+permissions.ts:888
 
 ___
 
@@ -21612,7 +21644,7 @@ ___
 
 #### Defined in
 
-permissions.ts:884
+permissions.ts:885
 
 ___
 
@@ -21622,7 +21654,7 @@ ___
 
 #### Defined in
 
-permissions.ts:886
+permissions.ts:887
 
 ___
 
@@ -21632,7 +21664,7 @@ ___
 
 #### Defined in
 
-permissions.ts:894
+permissions.ts:895
 
 ___
 
@@ -21642,7 +21674,7 @@ ___
 
 #### Defined in
 
-permissions.ts:893
+permissions.ts:894
 
 ___
 
@@ -21652,7 +21684,7 @@ ___
 
 #### Defined in
 
-permissions.ts:895
+permissions.ts:896
 
 ___
 
@@ -21662,7 +21694,7 @@ ___
 
 #### Defined in
 
-permissions.ts:885
+permissions.ts:886
 
 ___
 
@@ -21742,7 +21774,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1218
+permissions.ts:1219
 
 ___
 
@@ -21762,7 +21794,7 @@ ___
 
 #### Defined in
 
-permissions.ts:840
+permissions.ts:841
 
 ___
 
@@ -21802,7 +21834,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1274
+permissions.ts:1275
 
 ___
 
@@ -21892,7 +21924,7 @@ ___
 
 #### Defined in
 
-permissions.ts:949
+permissions.ts:950
 
 ___
 
@@ -21982,7 +22014,7 @@ ___
 
 #### Defined in
 
-permissions.ts:882
+permissions.ts:883
 
 ___
 
@@ -22092,7 +22124,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1259
+permissions.ts:1260
 
 ___
 
@@ -22142,7 +22174,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1203
+permissions.ts:1204
 
 ___
 
@@ -22172,7 +22204,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1404
+permissions.ts:1405
 
 ___
 
@@ -22302,7 +22334,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1159
+permissions.ts:1160
 
 ___
 
@@ -22312,7 +22344,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1320
+permissions.ts:1321
 
 ___
 
@@ -22322,7 +22354,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1308
+permissions.ts:1309
 
 ___
 
@@ -22332,7 +22364,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1296
+permissions.ts:1297
 
 ___
 
@@ -22342,7 +22374,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1284
+permissions.ts:1285
 
 ___
 
@@ -22352,7 +22384,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1042
+permissions.ts:1043
 
 ___
 
@@ -22382,7 +22414,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1185
+permissions.ts:1186
 
 ___
 
@@ -22392,7 +22424,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1146
+permissions.ts:1147
 
 ___
 
@@ -22402,7 +22434,7 @@ ___
 
 #### Defined in
 
-permissions.ts:982
+permissions.ts:983
 
 ___
 
@@ -22472,7 +22504,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1211
+permissions.ts:1212
 
 ___
 
@@ -22492,7 +22524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:833
+permissions.ts:834
 
 ___
 
@@ -22532,7 +22564,7 @@ ___
 
 #### Defined in
 
-permissions.ts:848
+permissions.ts:849
 
 ___
 
@@ -22562,7 +22594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1267
+permissions.ts:1268
 
 ___
 
@@ -22592,7 +22624,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1081
+permissions.ts:1082
 
 ___
 
@@ -22632,7 +22664,7 @@ ___
 
 #### Defined in
 
-permissions.ts:960
+permissions.ts:961
 
 ___
 
@@ -22642,7 +22674,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1094
+permissions.ts:1095
 
 ___
 
@@ -22652,7 +22684,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1107
+permissions.ts:1108
 
 ___
 
@@ -22662,7 +22694,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1120
+permissions.ts:1121
 
 ___
 
@@ -22672,7 +22704,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1030
+permissions.ts:1031
 
 ___
 
@@ -22682,7 +22714,7 @@ ___
 
 #### Defined in
 
-permissions.ts:970
+permissions.ts:971
 
 ___
 
@@ -22692,7 +22724,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1172
+permissions.ts:1173
 
 ___
 
@@ -22732,7 +22764,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1133
+permissions.ts:1134
 
 ___
 
@@ -22742,7 +22774,7 @@ ___
 
 #### Defined in
 
-permissions.ts:942
+permissions.ts:943
 
 ___
 
@@ -22752,7 +22784,7 @@ ___
 
 #### Defined in
 
-permissions.ts:931
+permissions.ts:932
 
 ___
 
@@ -22852,7 +22884,7 @@ ___
 
 #### Defined in
 
-permissions.ts:875
+permissions.ts:876
 
 ___
 
@@ -22862,7 +22894,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1006
+permissions.ts:1007
 
 ___
 
@@ -22872,7 +22904,7 @@ ___
 
 #### Defined in
 
-permissions.ts:864
+permissions.ts:865
 
 ___
 
@@ -22992,7 +23024,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1068
+permissions.ts:1069
 
 ___
 
@@ -23002,7 +23034,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1055
+permissions.ts:1056
 
 ___
 
@@ -23012,7 +23044,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1252
+permissions.ts:1253
 
 ___
 
@@ -23022,7 +23054,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1241
+permissions.ts:1242
 
 ___
 
@@ -23062,7 +23094,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1018
+permissions.ts:1019
 
 ___
 
@@ -23072,7 +23104,7 @@ ___
 
 #### Defined in
 
-permissions.ts:994
+permissions.ts:995
 
 ___
 
@@ -23102,7 +23134,7 @@ ___
 
 #### Defined in
 
-permissions.ts:919
+permissions.ts:920
 
 ___
 
@@ -23112,7 +23144,7 @@ ___
 
 #### Defined in
 
-permissions.ts:907
+permissions.ts:908
 
 ___
 
@@ -23122,7 +23154,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1196
+permissions.ts:1197
 
 ___
 
@@ -23172,7 +23204,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1228
+permissions.ts:1229
 
 ___
 
@@ -23192,7 +23224,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1397
+permissions.ts:1398
 
 ___
 
@@ -23202,7 +23234,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1155
+permissions.ts:1156
 
 ___
 
@@ -23212,7 +23244,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1316
+permissions.ts:1317
 
 ___
 
@@ -23222,7 +23254,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1304
+permissions.ts:1305
 
 ___
 
@@ -23232,7 +23264,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1292
+permissions.ts:1293
 
 ___
 
@@ -23242,7 +23274,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1280
+permissions.ts:1281
 
 ___
 
@@ -23252,7 +23284,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1038
+permissions.ts:1039
 
 ___
 
@@ -23262,7 +23294,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1181
+permissions.ts:1182
 
 ___
 
@@ -23272,7 +23304,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1142
+permissions.ts:1143
 
 ___
 
@@ -23282,7 +23314,7 @@ ___
 
 #### Defined in
 
-permissions.ts:978
+permissions.ts:979
 
 ___
 
@@ -23322,7 +23354,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1264
+permissions.ts:1265
 
 ___
 
@@ -23332,7 +23364,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1077
+permissions.ts:1078
 
 ___
 
@@ -23342,7 +23374,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1090
+permissions.ts:1091
 
 ___
 
@@ -23352,7 +23384,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1103
+permissions.ts:1104
 
 ___
 
@@ -23362,7 +23394,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1116
+permissions.ts:1117
 
 ___
 
@@ -23372,7 +23404,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1026
+permissions.ts:1027
 
 ___
 
@@ -23382,7 +23414,7 @@ ___
 
 #### Defined in
 
-permissions.ts:966
+permissions.ts:967
 
 ___
 
@@ -23392,7 +23424,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1168
+permissions.ts:1169
 
 ___
 
@@ -23402,7 +23434,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1129
+permissions.ts:1130
 
 ___
 
@@ -23412,7 +23444,7 @@ ___
 
 #### Defined in
 
-permissions.ts:927
+permissions.ts:928
 
 ___
 
@@ -23442,7 +23474,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1002
+permissions.ts:1003
 
 ___
 
@@ -23452,7 +23484,7 @@ ___
 
 #### Defined in
 
-permissions.ts:860
+permissions.ts:861
 
 ___
 
@@ -23492,7 +23524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1064
+permissions.ts:1065
 
 ___
 
@@ -23502,7 +23534,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1051
+permissions.ts:1052
 
 ___
 
@@ -23512,7 +23544,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1237
+permissions.ts:1238
 
 ___
 
@@ -23522,7 +23554,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1014
+permissions.ts:1015
 
 ___
 
@@ -23532,7 +23564,7 @@ ___
 
 #### Defined in
 
-permissions.ts:990
+permissions.ts:991
 
 ___
 
@@ -23552,7 +23584,7 @@ ___
 
 #### Defined in
 
-permissions.ts:915
+permissions.ts:916
 
 ___
 
@@ -23562,7 +23594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:903
+permissions.ts:904
 
 ___
 
@@ -23592,7 +23624,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1224
+permissions.ts:1225
 
 ___
 
@@ -24442,7 +24474,7 @@ ___
 
 #### Defined in
 
-permissions.ts:951
+permissions.ts:952
 
 ___
 
@@ -24452,7 +24484,7 @@ ___
 
 #### Defined in
 
-permissions.ts:953
+permissions.ts:954
 
 ___
 
@@ -24462,7 +24494,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1253
+permissions.ts:1254
 
 ___
 
@@ -24472,7 +24504,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1257
+permissions.ts:1258
 
 ___
 
@@ -24482,7 +24514,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1255
+permissions.ts:1256
 
 ___
 
@@ -24492,7 +24524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1258
+permissions.ts:1259
 
 ___
 
@@ -24502,7 +24534,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1251
+permissions.ts:1252
 
 ___
 
@@ -24512,7 +24544,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1247
+permissions.ts:1248
 
 ___
 
@@ -24522,7 +24554,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1256
+permissions.ts:1257
 
 ___
 
@@ -24532,7 +24564,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1250
+permissions.ts:1251
 
 ___
 
@@ -24542,7 +24574,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1246
+permissions.ts:1247
 
 ___
 
@@ -24552,7 +24584,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1249
+permissions.ts:1250
 
 ___
 
@@ -24562,7 +24594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1254
+permissions.ts:1255
 
 ___
 
@@ -24572,7 +24604,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1248
+permissions.ts:1249
 
 ___
 
@@ -24582,7 +24614,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1156
+permissions.ts:1157
 
 ___
 
@@ -24592,7 +24624,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1317
+permissions.ts:1318
 
 ___
 
@@ -24602,7 +24634,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1305
+permissions.ts:1306
 
 ___
 
@@ -24612,7 +24644,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1293
+permissions.ts:1294
 
 ___
 
@@ -24622,7 +24654,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1281
+permissions.ts:1282
 
 ___
 
@@ -24632,7 +24664,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1039
+permissions.ts:1040
 
 ___
 
@@ -24642,7 +24674,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1182
+permissions.ts:1183
 
 ___
 
@@ -24652,7 +24684,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1143
+permissions.ts:1144
 
 ___
 
@@ -24662,7 +24694,7 @@ ___
 
 #### Defined in
 
-permissions.ts:979
+permissions.ts:980
 
 ___
 
@@ -24702,7 +24734,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1269
+permissions.ts:1270
 
 ___
 
@@ -24712,7 +24744,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1078
+permissions.ts:1079
 
 ___
 
@@ -24722,7 +24754,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1091
+permissions.ts:1092
 
 ___
 
@@ -24732,7 +24764,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1104
+permissions.ts:1105
 
 ___
 
@@ -24742,7 +24774,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1117
+permissions.ts:1118
 
 ___
 
@@ -24752,7 +24784,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1027
+permissions.ts:1028
 
 ___
 
@@ -24762,7 +24794,7 @@ ___
 
 #### Defined in
 
-permissions.ts:967
+permissions.ts:968
 
 ___
 
@@ -24772,7 +24804,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1169
+permissions.ts:1170
 
 ___
 
@@ -24782,7 +24814,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1130
+permissions.ts:1131
 
 ___
 
@@ -24792,7 +24824,7 @@ ___
 
 #### Defined in
 
-permissions.ts:928
+permissions.ts:929
 
 ___
 
@@ -24822,7 +24854,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1003
+permissions.ts:1004
 
 ___
 
@@ -24832,7 +24864,7 @@ ___
 
 #### Defined in
 
-permissions.ts:861
+permissions.ts:862
 
 ___
 
@@ -24872,7 +24904,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1065
+permissions.ts:1066
 
 ___
 
@@ -24882,7 +24914,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1052
+permissions.ts:1053
 
 ___
 
@@ -24892,7 +24924,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1238
+permissions.ts:1239
 
 ___
 
@@ -24902,7 +24934,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1015
+permissions.ts:1016
 
 ___
 
@@ -24912,7 +24944,7 @@ ___
 
 #### Defined in
 
-permissions.ts:991
+permissions.ts:992
 
 ___
 
@@ -24932,7 +24964,7 @@ ___
 
 #### Defined in
 
-permissions.ts:916
+permissions.ts:917
 
 ___
 
@@ -24942,7 +24974,7 @@ ___
 
 #### Defined in
 
-permissions.ts:904
+permissions.ts:905
 
 ___
 
@@ -24972,7 +25004,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1225
+permissions.ts:1226
 
 ___
 
@@ -25462,7 +25494,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1197
+permissions.ts:1198
 
 ___
 
@@ -25472,7 +25504,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1201
+permissions.ts:1202
 
 ___
 
@@ -25482,7 +25514,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1199
+permissions.ts:1200
 
 ___
 
@@ -25492,7 +25524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1202
+permissions.ts:1203
 
 ___
 
@@ -25502,7 +25534,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1195
+permissions.ts:1196
 
 ___
 
@@ -25512,7 +25544,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1191
+permissions.ts:1192
 
 ___
 
@@ -25522,7 +25554,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1200
+permissions.ts:1201
 
 ___
 
@@ -25532,7 +25564,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1194
+permissions.ts:1195
 
 ___
 
@@ -25542,7 +25574,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1190
+permissions.ts:1191
 
 ___
 
@@ -25552,7 +25584,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1193
+permissions.ts:1194
 
 ___
 
@@ -25562,7 +25594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1198
+permissions.ts:1199
 
 ___
 
@@ -25572,7 +25604,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1192
+permissions.ts:1193
 
 ___
 
@@ -25802,7 +25834,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1386
+permissions.ts:1387
 
 ___
 
@@ -25812,7 +25844,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1385
+permissions.ts:1386
 
 ___
 
@@ -25822,7 +25854,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1383
+permissions.ts:1384
 
 ___
 
@@ -25832,7 +25864,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1382
+permissions.ts:1383
 
 ___
 
@@ -25842,7 +25874,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1379
+permissions.ts:1380
 
 ___
 
@@ -25852,7 +25884,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1381
+permissions.ts:1382
 
 ___
 
@@ -25862,7 +25894,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1384
+permissions.ts:1385
 
 ___
 
@@ -25872,7 +25904,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1380
+permissions.ts:1381
 
 ___
 
@@ -25882,7 +25914,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1153
+permissions.ts:1154
 
 ___
 
@@ -25892,7 +25924,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1314
+permissions.ts:1315
 
 ___
 
@@ -25902,7 +25934,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1302
+permissions.ts:1303
 
 ___
 
@@ -25912,7 +25944,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1290
+permissions.ts:1291
 
 ___
 
@@ -25922,7 +25954,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1278
+permissions.ts:1279
 
 ___
 
@@ -25932,7 +25964,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1036
+permissions.ts:1037
 
 ___
 
@@ -25942,7 +25974,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1179
+permissions.ts:1180
 
 ___
 
@@ -25952,7 +25984,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1140
+permissions.ts:1141
 
 ___
 
@@ -25962,7 +25994,7 @@ ___
 
 #### Defined in
 
-permissions.ts:976
+permissions.ts:977
 
 ___
 
@@ -26002,7 +26034,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1263
+permissions.ts:1264
 
 ___
 
@@ -26012,7 +26044,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1075
+permissions.ts:1076
 
 ___
 
@@ -26022,7 +26054,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1088
+permissions.ts:1089
 
 ___
 
@@ -26032,7 +26064,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1101
+permissions.ts:1102
 
 ___
 
@@ -26042,7 +26074,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1114
+permissions.ts:1115
 
 ___
 
@@ -26052,7 +26084,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1024
+permissions.ts:1025
 
 ___
 
@@ -26062,7 +26094,7 @@ ___
 
 #### Defined in
 
-permissions.ts:964
+permissions.ts:965
 
 ___
 
@@ -26072,7 +26104,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1166
+permissions.ts:1167
 
 ___
 
@@ -26082,7 +26114,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1127
+permissions.ts:1128
 
 ___
 
@@ -26092,7 +26124,7 @@ ___
 
 #### Defined in
 
-permissions.ts:925
+permissions.ts:926
 
 ___
 
@@ -26122,7 +26154,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1000
+permissions.ts:1001
 
 ___
 
@@ -26132,7 +26164,7 @@ ___
 
 #### Defined in
 
-permissions.ts:858
+permissions.ts:859
 
 ___
 
@@ -26172,7 +26204,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1062
+permissions.ts:1063
 
 ___
 
@@ -26182,7 +26214,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1049
+permissions.ts:1050
 
 ___
 
@@ -26192,7 +26224,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1235
+permissions.ts:1236
 
 ___
 
@@ -26202,7 +26234,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1012
+permissions.ts:1013
 
 ___
 
@@ -26212,7 +26244,7 @@ ___
 
 #### Defined in
 
-permissions.ts:988
+permissions.ts:989
 
 ___
 
@@ -26232,7 +26264,7 @@ ___
 
 #### Defined in
 
-permissions.ts:913
+permissions.ts:914
 
 ___
 
@@ -26242,7 +26274,7 @@ ___
 
 #### Defined in
 
-permissions.ts:901
+permissions.ts:902
 
 ___
 
@@ -26272,7 +26304,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1222
+permissions.ts:1223
 
 ___
 
@@ -26332,7 +26364,7 @@ ___
 
 #### Defined in
 
-permissions.ts:957
+permissions.ts:958
 
 ___
 
@@ -26472,7 +26504,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1398
+permissions.ts:1399
 
 ___
 
@@ -26482,7 +26514,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1402
+permissions.ts:1403
 
 ___
 
@@ -26492,7 +26524,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1400
+permissions.ts:1401
 
 ___
 
@@ -26502,7 +26534,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1403
+permissions.ts:1404
 
 ___
 
@@ -26512,7 +26544,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1396
+permissions.ts:1397
 
 ___
 
@@ -26522,7 +26554,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1392
+permissions.ts:1393
 
 ___
 
@@ -26532,7 +26564,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1401
+permissions.ts:1402
 
 ___
 
@@ -26542,7 +26574,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1395
+permissions.ts:1396
 
 ___
 
@@ -26552,7 +26584,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1391
+permissions.ts:1392
 
 ___
 
@@ -26562,7 +26594,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1394
+permissions.ts:1395
 
 ___
 
@@ -26572,7 +26604,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1399
+permissions.ts:1400
 
 ___
 
@@ -26582,7 +26614,7 @@ ___
 
 #### Defined in
 
-permissions.ts:1393
+permissions.ts:1394
 
 ___
 
@@ -27224,7 +27256,7 @@ from service Scailo.ProformaInvoicesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `accruedValue`: \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) = ProformaInvoicesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddProformaInvoiceItem"`` = "AddProformaInvoiceItem" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveProformaInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveProformaInvoiceItem"`` = "ApproveProformaInvoiceItem" } ; `autofill`: \{ `I`: typeof [`ProformaInvoicesServiceAutofillRequest`](classes/ProformaInvoicesServiceAutofillRequest.md) = ProformaInvoicesServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteProformaInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteProformaInvoiceItem"`` = "DeleteProformaInvoiceItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) = ProformaInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`ProformaInvoicesServiceFilterReq`](classes/ProformaInvoicesServiceFilterReq.md) = ProformaInvoicesServiceFilterReq; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isBilled`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsBilled"`` = "IsBilled" } ; `modifyProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoicesServiceItemUpdateRequest`](classes/ProformaInvoicesServiceItemUpdateRequest.md) = ProformaInvoicesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyProformaInvoiceItem"`` = "ModifyProformaInvoiceItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderProformaInvoiceItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderProformaInvoiceItems"`` = "ReorderProformaInvoiceItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) = ProformaInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`ProformaInvoicesServiceSearchAllReq`](classes/ProformaInvoicesServiceSearchAllReq.md) = ProformaInvoicesServiceSearchAllReq; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadProformaInvoiceItems"`` = "UploadProformaInvoiceItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) = ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoiceAncillaryParameters`](classes/ProformaInvoiceAncillaryParameters.md) = ProformaInvoiceAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedProformaInvoiceItems"`` = "ViewApprovedProformaInvoiceItems" } ; `viewAssociatedSalesInvoiceID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesInvoiceID"`` = "ViewAssociatedSalesInvoiceID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ProformaInvoice`](classes/ProformaInvoice.md) = ProformaInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoice`](classes/ProformaInvoice.md) = ProformaInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedProformaInvoiceItems`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedProformaInvoiceItems"`` = "ViewPaginatedApprovedProformaInvoiceItems" } ; `viewPaginatedUnapprovedProformaInvoiceItems`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedProformaInvoiceItems"`` = "ViewPaginatedUnapprovedProformaInvoiceItems" } ; `viewProformaInvoiceItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ProformaInvoiceItem`](classes/ProformaInvoiceItem.md) = ProformaInvoiceItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProformaInvoiceItemByID"`` = "ViewProformaInvoiceItemByID" } ; `viewProformaInvoiceItemHistory`: \{ `I`: typeof [`ProformaInvoiceItemHistoryRequest`](classes/ProformaInvoiceItemHistoryRequest.md) = ProformaInvoiceItemHistoryRequest; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProformaInvoiceItemHistory"`` = "ViewProformaInvoiceItemHistory" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoiceItemProspectiveInfoRequest`](classes/ProformaInvoiceItemProspectiveInfoRequest.md) = ProformaInvoiceItemProspectiveInfoRequest; `O`: typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) = ProformaInvoicesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveProformaInvoiceItem"`` = "ViewProspectiveProformaInvoiceItem" } ; `viewUnapprovedProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedProformaInvoiceItems"`` = "ViewUnapprovedProformaInvoiceItems" } ; `viewWithPagination`: \{ `I`: typeof [`ProformaInvoicesServicePaginationReq`](classes/ProformaInvoicesServicePaginationReq.md) = ProformaInvoicesServicePaginationReq; `O`: typeof [`ProformaInvoicesServicePaginationResponse`](classes/ProformaInvoicesServicePaginationResponse.md) = ProformaInvoicesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `accruedValue`: \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) = ProformaInvoicesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddProformaInvoiceItem"`` = "AddProformaInvoiceItem" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveProformaInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveProformaInvoiceItem"`` = "ApproveProformaInvoiceItem" } ; `autofill`: \{ `I`: typeof [`ProformaInvoicesServiceAutofillRequest`](classes/ProformaInvoicesServiceAutofillRequest.md) = ProformaInvoicesServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteProformaInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteProformaInvoiceItem"`` = "DeleteProformaInvoiceItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) = ProformaInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`ProformaInvoicesServiceFilterReq`](classes/ProformaInvoicesServiceFilterReq.md) = ProformaInvoicesServiceFilterReq; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isBilled`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsBilled"`` = "IsBilled" } ; `modifyProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoicesServiceItemUpdateRequest`](classes/ProformaInvoicesServiceItemUpdateRequest.md) = ProformaInvoicesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyProformaInvoiceItem"`` = "ModifyProformaInvoiceItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderProformaInvoiceItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderProformaInvoiceItems"`` = "ReorderProformaInvoiceItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`ProformaInvoicesServiceUpdateRequest`](classes/ProformaInvoicesServiceUpdateRequest.md) = ProformaInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`ProformaInvoicesServiceSearchAllReq`](classes/ProformaInvoicesServiceSearchAllReq.md) = ProformaInvoicesServiceSearchAllReq; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadProformaInvoiceItems"`` = "UploadProformaInvoiceItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) = ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoicesList`](classes/ProformaInvoicesList.md) = ProformaInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoiceAncillaryParameters`](classes/ProformaInvoiceAncillaryParameters.md) = ProformaInvoiceAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedProformaInvoiceItems"`` = "ViewApprovedProformaInvoiceItems" } ; `viewAssociatedSalesInvoiceID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesInvoiceID"`` = "ViewAssociatedSalesInvoiceID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ProformaInvoice`](classes/ProformaInvoice.md) = ProformaInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`ProformaInvoice`](classes/ProformaInvoice.md) = ProformaInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedProformaInvoiceItems`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedProformaInvoiceItems"`` = "ViewPaginatedApprovedProformaInvoiceItems" } ; `viewPaginatedUnapprovedProformaInvoiceItems`: \{ `I`: typeof [`ProformaInvoiceItemsSearchRequest`](classes/ProformaInvoiceItemsSearchRequest.md) = ProformaInvoiceItemsSearchRequest; `O`: typeof [`ProformaInvoicesServicePaginatedItemsResponse`](classes/ProformaInvoicesServicePaginatedItemsResponse.md) = ProformaInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedProformaInvoiceItems"`` = "ViewPaginatedUnapprovedProformaInvoiceItems" } ; `viewProformaInvoiceItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`ProformaInvoiceItem`](classes/ProformaInvoiceItem.md) = ProformaInvoiceItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProformaInvoiceItemByID"`` = "ViewProformaInvoiceItemByID" } ; `viewProformaInvoiceItemHistory`: \{ `I`: typeof [`ProformaInvoiceItemHistoryRequest`](classes/ProformaInvoiceItemHistoryRequest.md) = ProformaInvoiceItemHistoryRequest; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProformaInvoiceItemHistory"`` = "ViewProformaInvoiceItemHistory" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveProformaInvoiceItem`: \{ `I`: typeof [`ProformaInvoiceItemProspectiveInfoRequest`](classes/ProformaInvoiceItemProspectiveInfoRequest.md) = ProformaInvoiceItemProspectiveInfoRequest; `O`: typeof [`ProformaInvoicesServiceItemCreateRequest`](classes/ProformaInvoicesServiceItemCreateRequest.md) = ProformaInvoicesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveProformaInvoiceItem"`` = "ViewProspectiveProformaInvoiceItem" } ; `viewUnapprovedProformaInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`ProformaInvoiceItemsList`](classes/ProformaInvoiceItemsList.md) = ProformaInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedProformaInvoiceItems"`` = "ViewUnapprovedProformaInvoiceItems" } ; `viewWithPagination`: \{ `I`: typeof [`ProformaInvoicesServicePaginationReq`](classes/ProformaInvoicesServicePaginationReq.md) = ProformaInvoicesServicePaginationReq; `O`: typeof [`ProformaInvoicesServicePaginationResponse`](classes/ProformaInvoicesServicePaginationResponse.md) = ProformaInvoicesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.accruedValue` | \{ `I`: typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) = ProformaInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } |
 | `methods.accruedValue.I` | typeof [`ProformaInvoicesServiceCountReq`](classes/ProformaInvoicesServiceCountReq.md) |
 | `methods.accruedValue.O` | typeof [`SumResponse`](classes/SumResponse.md) |
@@ -27290,16 +27322,16 @@ from service Scailo.ProformaInvoicesService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) = ProformaInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`ProformaInvoicesServiceCreateRequest`](classes/ProformaInvoicesServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -27878,7 +27910,7 @@ from service Scailo.PurchasesIndentsService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addMultiplePurchaseIndentItems`: \{ `I`: typeof [`PurchasesIndentsServiceMultipleItemsCreateRequest`](classes/PurchasesIndentsServiceMultipleItemsCreateRequest.md) = PurchasesIndentsServiceMultipleItemsCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMultiplePurchaseIndentItems"`` = "AddMultiplePurchaseIndentItems" } ; `addPurchaseIndentItem`: \{ `I`: typeof [`PurchasesIndentsServiceItemCreateRequest`](classes/PurchasesIndentsServiceItemCreateRequest.md) = PurchasesIndentsServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddPurchaseIndentItem"`` = "AddPurchaseIndentItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approvePurchaseIndentItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApprovePurchaseIndentItem"`` = "ApprovePurchaseIndentItem" } ; `autofill`: \{ `I`: typeof [`PurchasesIndentsServiceAutofillRequest`](classes/PurchasesIndentsServiceAutofillRequest.md) = PurchasesIndentsServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`PurchasesIndentsServiceCountReq`](classes/PurchasesIndentsServiceCountReq.md) = PurchasesIndentsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`PurchasesIndentsServiceCreateRequest`](classes/PurchasesIndentsServiceCreateRequest.md) = PurchasesIndentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deletePurchaseIndentItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeletePurchaseIndentItem"`` = "DeletePurchaseIndentItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `draft`: \{ `I`: typeof [`PurchasesIndentsServiceCreateRequest`](classes/PurchasesIndentsServiceCreateRequest.md) = PurchasesIndentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`PurchasesIndentsServiceUpdateRequest`](classes/PurchasesIndentsServiceUpdateRequest.md) = PurchasesIndentsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`PurchasesIndentsServiceFilterReq`](classes/PurchasesIndentsServiceFilterReq.md) = PurchasesIndentsServiceFilterReq; `O`: typeof [`PurchasesIndentsList`](classes/PurchasesIndentsList.md) = PurchasesIndentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isCompletable`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsCompletable"`` = "IsCompletable" } ; `modifyPurchaseIndentItem`: \{ `I`: typeof [`PurchasesIndentsServiceItemUpdateRequest`](classes/PurchasesIndentsServiceItemUpdateRequest.md) = PurchasesIndentsServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyPurchaseIndentItem"`` = "ModifyPurchaseIndentItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderPurchaseIndentItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderPurchaseIndentItems"`` = "ReorderPurchaseIndentItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`PurchasesIndentsServiceUpdateRequest`](classes/PurchasesIndentsServiceUpdateRequest.md) = PurchasesIndentsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`PurchasesIndentsServiceSearchAllReq`](classes/PurchasesIndentsServiceSearchAllReq.md) = PurchasesIndentsServiceSearchAllReq; `O`: typeof [`PurchasesIndentsList`](classes/PurchasesIndentsList.md) = PurchasesIndentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`PurchaseIndentItemsSearchRequest`](classes/PurchaseIndentItemsSearchRequest.md) = PurchaseIndentItemsSearchRequest; `O`: typeof [`PurchasesIndentsServicePaginatedItemsResponse`](classes/PurchasesIndentsServicePaginatedItemsResponse.md) = PurchasesIndentsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadPurchaseIndentItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadPurchaseIndentItems"`` = "UploadPurchaseIndentItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`PurchasesIndentsList`](classes/PurchasesIndentsList.md) = PurchasesIndentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchasesIndentsList`](classes/PurchasesIndentsList.md) = PurchasesIndentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedPurchaseIndentItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`PurchasesIndentsItemsList`](classes/PurchasesIndentsItemsList.md) = PurchasesIndentsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedPurchaseIndentItems"`` = "ViewApprovedPurchaseIndentItems" } ; `viewAssociatedPurchaseOrderIDs`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedPurchaseOrderIDs"`` = "ViewAssociatedPurchaseOrderIDs" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseIndent`](classes/PurchaseIndent.md) = PurchaseIndent; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewOrderedStatistics`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseIndentOrderedStatisticsList`](classes/PurchaseIndentOrderedStatisticsList.md) = PurchaseIndentOrderedStatisticsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewOrderedStatistics"`` = "ViewOrderedStatistics" } ; `viewPaginatedApprovedPurchaseIndentItems`: \{ `I`: typeof [`PurchaseIndentItemsSearchRequest`](classes/PurchaseIndentItemsSearchRequest.md) = PurchaseIndentItemsSearchRequest; `O`: typeof [`PurchasesIndentsServicePaginatedItemsResponse`](classes/PurchasesIndentsServicePaginatedItemsResponse.md) = PurchasesIndentsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedPurchaseIndentItems"`` = "ViewPaginatedApprovedPurchaseIndentItems" } ; `viewPaginatedUnapprovedPurchaseIndentItems`: \{ `I`: typeof [`PurchaseIndentItemsSearchRequest`](classes/PurchaseIndentItemsSearchRequest.md) = PurchaseIndentItemsSearchRequest; `O`: typeof [`PurchasesIndentsServicePaginatedItemsResponse`](classes/PurchasesIndentsServicePaginatedItemsResponse.md) = PurchasesIndentsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedPurchaseIndentItems"`` = "ViewPaginatedUnapprovedPurchaseIndentItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectivePurchaseIndentItem`: \{ `I`: typeof [`PurchaseIndentItemProspectiveInfoRequest`](classes/PurchaseIndentItemProspectiveInfoRequest.md) = PurchaseIndentItemProspectiveInfoRequest; `O`: typeof [`PurchasesIndentsServiceItemCreateRequest`](classes/PurchasesIndentsServiceItemCreateRequest.md) = PurchasesIndentsServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectivePurchaseIndentItem"`` = "ViewProspectivePurchaseIndentItem" } ; `viewPurchaseIndentItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseIndentItem`](classes/PurchaseIndentItem.md) = PurchaseIndentItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseIndentItemByID"`` = "ViewPurchaseIndentItemByID" } ; `viewPurchaseIndentItemHistory`: \{ `I`: typeof [`PurchaseIndentItemHistoryRequest`](classes/PurchaseIndentItemHistoryRequest.md) = PurchaseIndentItemHistoryRequest; `O`: typeof [`PurchasesIndentsItemsList`](classes/PurchasesIndentsItemsList.md) = PurchasesIndentsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseIndentItemHistory"`` = "ViewPurchaseIndentItemHistory" } ; `viewUnapprovedPurchaseIndentItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`PurchasesIndentsItemsList`](classes/PurchasesIndentsItemsList.md) = PurchasesIndentsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedPurchaseIndentItems"`` = "ViewUnapprovedPurchaseIndentItems" } ; `viewWithPagination`: \{ `I`: typeof [`PurchasesIndentsServicePaginationReq`](classes/PurchasesIndentsServicePaginationReq.md) = PurchasesIndentsServicePaginationReq; `O`: typeof [`PurchasesIndentsServicePaginationResponse`](classes/PurchasesIndentsServicePaginationResponse.md) = PurchasesIndentsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addMultiplePurchaseIndentItems`: \{ `I`: typeof [`PurchasesIndentsServiceMultipleItemsCreateRequest`](classes/PurchasesIndentsServiceMultipleItemsCreateRequest.md) = PurchasesIndentsServiceMultipleItemsCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMultiplePurchaseIndentItems"`` = "AddMultiplePurchaseIndentItems" } ; `addPurchaseIndentItem`: \{ `I`: typeof [`PurchasesIndentsServiceItemCreateRequest`](classes/PurchasesIndentsServiceItemCreateRequest.md) = PurchasesIndentsServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddPurchaseIndentItem"`` = "AddPurchaseIndentItem" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approvePurchaseIndentItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApprovePurchaseIndentItem"`` = "ApprovePurchaseIndentItem" } ; `autofill`: \{ `I`: typeof [`PurchasesIndentsServiceAutofillRequest`](classes/PurchasesIndentsServiceAutofillRequest.md) = PurchasesIndentsServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`PurchasesIndentsServiceCountReq`](classes/PurchasesIndentsServiceCountReq.md) = PurchasesIndentsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`PurchasesIndentsServiceCreateRequest`](classes/PurchasesIndentsServiceCreateRequest.md) = PurchasesIndentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deletePurchaseIndentItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeletePurchaseIndentItem"`` = "DeletePurchaseIndentItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`PurchasesIndentsServiceCreateRequest`](classes/PurchasesIndentsServiceCreateRequest.md) = PurchasesIndentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`PurchasesIndentsServiceUpdateRequest`](classes/PurchasesIndentsServiceUpdateRequest.md) = PurchasesIndentsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`PurchasesIndentsServiceFilterReq`](classes/PurchasesIndentsServiceFilterReq.md) = PurchasesIndentsServiceFilterReq; `O`: typeof [`PurchasesIndentsList`](classes/PurchasesIndentsList.md) = PurchasesIndentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `isCompletable`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`BooleanResponse`](classes/BooleanResponse.md) = BooleanResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"IsCompletable"`` = "IsCompletable" } ; `modifyPurchaseIndentItem`: \{ `I`: typeof [`PurchasesIndentsServiceItemUpdateRequest`](classes/PurchasesIndentsServiceItemUpdateRequest.md) = PurchasesIndentsServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyPurchaseIndentItem"`` = "ModifyPurchaseIndentItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderPurchaseIndentItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderPurchaseIndentItems"`` = "ReorderPurchaseIndentItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`PurchasesIndentsServiceUpdateRequest`](classes/PurchasesIndentsServiceUpdateRequest.md) = PurchasesIndentsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`PurchasesIndentsServiceSearchAllReq`](classes/PurchasesIndentsServiceSearchAllReq.md) = PurchasesIndentsServiceSearchAllReq; `O`: typeof [`PurchasesIndentsList`](classes/PurchasesIndentsList.md) = PurchasesIndentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`PurchaseIndentItemsSearchRequest`](classes/PurchaseIndentItemsSearchRequest.md) = PurchaseIndentItemsSearchRequest; `O`: typeof [`PurchasesIndentsServicePaginatedItemsResponse`](classes/PurchasesIndentsServicePaginatedItemsResponse.md) = PurchasesIndentsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadPurchaseIndentItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadPurchaseIndentItems"`` = "UploadPurchaseIndentItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`PurchasesIndentsList`](classes/PurchasesIndentsList.md) = PurchasesIndentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchasesIndentsList`](classes/PurchasesIndentsList.md) = PurchasesIndentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewApprovedPurchaseIndentItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`PurchasesIndentsItemsList`](classes/PurchasesIndentsItemsList.md) = PurchasesIndentsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedPurchaseIndentItems"`` = "ViewApprovedPurchaseIndentItems" } ; `viewAssociatedPurchaseOrderIDs`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedPurchaseOrderIDs"`` = "ViewAssociatedPurchaseOrderIDs" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseIndent`](classes/PurchaseIndent.md) = PurchaseIndent; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewOrderedStatistics`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseIndentOrderedStatisticsList`](classes/PurchaseIndentOrderedStatisticsList.md) = PurchaseIndentOrderedStatisticsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewOrderedStatistics"`` = "ViewOrderedStatistics" } ; `viewPaginatedApprovedPurchaseIndentItems`: \{ `I`: typeof [`PurchaseIndentItemsSearchRequest`](classes/PurchaseIndentItemsSearchRequest.md) = PurchaseIndentItemsSearchRequest; `O`: typeof [`PurchasesIndentsServicePaginatedItemsResponse`](classes/PurchasesIndentsServicePaginatedItemsResponse.md) = PurchasesIndentsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedPurchaseIndentItems"`` = "ViewPaginatedApprovedPurchaseIndentItems" } ; `viewPaginatedUnapprovedPurchaseIndentItems`: \{ `I`: typeof [`PurchaseIndentItemsSearchRequest`](classes/PurchaseIndentItemsSearchRequest.md) = PurchaseIndentItemsSearchRequest; `O`: typeof [`PurchasesIndentsServicePaginatedItemsResponse`](classes/PurchasesIndentsServicePaginatedItemsResponse.md) = PurchasesIndentsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedPurchaseIndentItems"`` = "ViewPaginatedUnapprovedPurchaseIndentItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectivePurchaseIndentItem`: \{ `I`: typeof [`PurchaseIndentItemProspectiveInfoRequest`](classes/PurchaseIndentItemProspectiveInfoRequest.md) = PurchaseIndentItemProspectiveInfoRequest; `O`: typeof [`PurchasesIndentsServiceItemCreateRequest`](classes/PurchasesIndentsServiceItemCreateRequest.md) = PurchasesIndentsServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectivePurchaseIndentItem"`` = "ViewProspectivePurchaseIndentItem" } ; `viewPurchaseIndentItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseIndentItem`](classes/PurchaseIndentItem.md) = PurchaseIndentItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseIndentItemByID"`` = "ViewPurchaseIndentItemByID" } ; `viewPurchaseIndentItemHistory`: \{ `I`: typeof [`PurchaseIndentItemHistoryRequest`](classes/PurchaseIndentItemHistoryRequest.md) = PurchaseIndentItemHistoryRequest; `O`: typeof [`PurchasesIndentsItemsList`](classes/PurchasesIndentsItemsList.md) = PurchasesIndentsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseIndentItemHistory"`` = "ViewPurchaseIndentItemHistory" } ; `viewUnapprovedPurchaseIndentItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`PurchasesIndentsItemsList`](classes/PurchasesIndentsItemsList.md) = PurchasesIndentsItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedPurchaseIndentItems"`` = "ViewUnapprovedPurchaseIndentItems" } ; `viewWithPagination`: \{ `I`: typeof [`PurchasesIndentsServicePaginationReq`](classes/PurchasesIndentsServicePaginationReq.md) = PurchasesIndentsServicePaginationReq; `O`: typeof [`PurchasesIndentsServicePaginationResponse`](classes/PurchasesIndentsServicePaginationResponse.md) = PurchasesIndentsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addMultiplePurchaseIndentItems` | \{ `I`: typeof [`PurchasesIndentsServiceMultipleItemsCreateRequest`](classes/PurchasesIndentsServiceMultipleItemsCreateRequest.md) = PurchasesIndentsServiceMultipleItemsCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddMultiplePurchaseIndentItems"`` = "AddMultiplePurchaseIndentItems" } |
 | `methods.addMultiplePurchaseIndentItems.I` | typeof [`PurchasesIndentsServiceMultipleItemsCreateRequest`](classes/PurchasesIndentsServiceMultipleItemsCreateRequest.md) |
 | `methods.addMultiplePurchaseIndentItems.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -27939,11 +27971,11 @@ from service Scailo.PurchasesIndentsService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`PurchasesIndentsServiceCreateRequest`](classes/PurchasesIndentsServiceCreateRequest.md) = PurchasesIndentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`PurchasesIndentsServiceCreateRequest`](classes/PurchasesIndentsServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -28126,7 +28158,7 @@ from service Scailo.PurchasesOrdersService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `accruedValue`: \{ `I`: typeof [`PurchasesOrdersServiceCountReq`](classes/PurchasesOrdersServiceCountReq.md) = PurchasesOrdersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addPurchaseOrderContact`: \{ `I`: typeof [`PurchasesOrdersServiceContactCreateRequest`](classes/PurchasesOrdersServiceContactCreateRequest.md) = PurchasesOrdersServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddPurchaseOrderContact"`` = "AddPurchaseOrderContact" } ; `addPurchaseOrderItem`: \{ `I`: typeof [`PurchasesOrdersServiceItemCreateRequest`](classes/PurchasesOrdersServiceItemCreateRequest.md) = PurchasesOrdersServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddPurchaseOrderItem"`` = "AddPurchaseOrderItem" } ; `addPurchaseOrderReference`: \{ `I`: typeof [`PurchasesOrdersServiceReferenceCreateRequest`](classes/PurchasesOrdersServiceReferenceCreateRequest.md) = PurchasesOrdersServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddPurchaseOrderReference"`` = "AddPurchaseOrderReference" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approvePurchaseOrderContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApprovePurchaseOrderContact"`` = "ApprovePurchaseOrderContact" } ; `approvePurchaseOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApprovePurchaseOrderItem"`` = "ApprovePurchaseOrderItem" } ; `approvePurchaseOrderReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApprovePurchaseOrderReference"`` = "ApprovePurchaseOrderReference" } ; `autofill`: \{ `I`: typeof [`PurchasesOrdersServiceAutofillRequest`](classes/PurchasesOrdersServiceAutofillRequest.md) = PurchasesOrdersServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`PurchasesOrdersServiceCountReq`](classes/PurchasesOrdersServiceCountReq.md) = PurchasesOrdersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`PurchasesOrdersServiceCreateRequest`](classes/PurchasesOrdersServiceCreateRequest.md) = PurchasesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deletePurchaseOrderContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeletePurchaseOrderContact"`` = "DeletePurchaseOrderContact" } ; `deletePurchaseOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeletePurchaseOrderItem"`` = "DeletePurchaseOrderItem" } ; `deletePurchaseOrderReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeletePurchaseOrderReference"`` = "DeletePurchaseOrderReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`PurchasesOrdersServiceCreateRequest`](classes/PurchasesOrdersServiceCreateRequest.md) = PurchasesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`PurchasesOrdersServiceUpdateRequest`](classes/PurchasesOrdersServiceUpdateRequest.md) = PurchasesOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`PurchasesOrdersServiceFilterReq`](classes/PurchasesOrdersServiceFilterReq.md) = PurchasesOrdersServiceFilterReq; `O`: typeof [`PurchasesOrdersList`](classes/PurchasesOrdersList.md) = PurchasesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyPurchaseOrderItem`: \{ `I`: typeof [`PurchasesOrdersServiceItemUpdateRequest`](classes/PurchasesOrdersServiceItemUpdateRequest.md) = PurchasesOrdersServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyPurchaseOrderItem"`` = "ModifyPurchaseOrderItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderPurchaseOrderItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderPurchaseOrderItems"`` = "ReorderPurchaseOrderItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`PurchasesOrdersServiceUpdateRequest`](classes/PurchasesOrdersServiceUpdateRequest.md) = PurchasesOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`PurchasesOrdersServiceSearchAllReq`](classes/PurchasesOrdersServiceSearchAllReq.md) = PurchasesOrdersServiceSearchAllReq; `O`: typeof [`PurchasesOrdersList`](classes/PurchasesOrdersList.md) = PurchasesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`PurchaseOrderItemsSearchRequest`](classes/PurchaseOrderItemsSearchRequest.md) = PurchaseOrderItemsSearchRequest; `O`: typeof [`PurchasesOrdersServicePaginatedItemsResponse`](classes/PurchasesOrdersServicePaginatedItemsResponse.md) = PurchasesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadPurchaseOrderItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadPurchaseOrderItems"`` = "UploadPurchaseOrderItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`PurchasesOrdersList`](classes/PurchasesOrdersList.md) = PurchasesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchasesOrdersList`](classes/PurchasesOrdersList.md) = PurchasesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderAncillaryParameters`](classes/PurchaseOrderAncillaryParameters.md) = PurchaseOrderAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedPurchaseOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`PurchaseOrderItemsList`](classes/PurchaseOrderItemsList.md) = PurchaseOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedPurchaseOrderItems"`` = "ViewApprovedPurchaseOrderItems" } ; `viewBillingStatistics`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderBillingStatistics`](classes/PurchaseOrderBillingStatistics.md) = PurchaseOrderBillingStatistics; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewBillingStatistics"`` = "ViewBillingStatistics" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrder`](classes/PurchaseOrder.md) = PurchaseOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrder`](classes/PurchaseOrder.md) = PurchaseOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrder`](classes/PurchaseOrder.md) = PurchaseOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewInventoryMatch`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderInventoryMatchList`](classes/PurchaseOrderInventoryMatchList.md) = PurchaseOrderInventoryMatchList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryMatch"`` = "ViewInventoryMatch" } ; `viewInventoryStatistics`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderInventoryStatistics`](classes/PurchaseOrderInventoryStatistics.md) = PurchaseOrderInventoryStatistics; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryStatistics"`` = "ViewInventoryStatistics" } ; `viewPaginatedApprovedPurchaseOrderItems`: \{ `I`: typeof [`PurchaseOrderItemsSearchRequest`](classes/PurchaseOrderItemsSearchRequest.md) = PurchaseOrderItemsSearchRequest; `O`: typeof [`PurchasesOrdersServicePaginatedItemsResponse`](classes/PurchasesOrdersServicePaginatedItemsResponse.md) = PurchasesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedPurchaseOrderItems"`` = "ViewPaginatedApprovedPurchaseOrderItems" } ; `viewPaginatedUnapprovedPurchaseOrderItems`: \{ `I`: typeof [`PurchaseOrderItemsSearchRequest`](classes/PurchaseOrderItemsSearchRequest.md) = PurchaseOrderItemsSearchRequest; `O`: typeof [`PurchasesOrdersServicePaginatedItemsResponse`](classes/PurchasesOrdersServicePaginatedItemsResponse.md) = PurchasesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedPurchaseOrderItems"`` = "ViewPaginatedUnapprovedPurchaseOrderItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectivePurchaseOrderItem`: \{ `I`: typeof [`PurchaseOrderItemProspectiveInfoRequest`](classes/PurchaseOrderItemProspectiveInfoRequest.md) = PurchaseOrderItemProspectiveInfoRequest; `O`: typeof [`PurchasesOrdersServiceItemCreateRequest`](classes/PurchasesOrdersServiceItemCreateRequest.md) = PurchasesOrdersServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectivePurchaseOrderItem"`` = "ViewProspectivePurchaseOrderItem" } ; `viewPurchaseOrderContactByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrderContact`](classes/PurchaseOrderContact.md) = PurchaseOrderContact; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderContactByID"`` = "ViewPurchaseOrderContactByID" } ; `viewPurchaseOrderContacts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderContactsList`](classes/PurchaseOrderContactsList.md) = PurchaseOrderContactsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderContacts"`` = "ViewPurchaseOrderContacts" } ; `viewPurchaseOrderItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrderItem`](classes/PurchaseOrderItem.md) = PurchaseOrderItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderItemByID"`` = "ViewPurchaseOrderItemByID" } ; `viewPurchaseOrderItemHistory`: \{ `I`: typeof [`PurchaseOrderItemHistoryRequest`](classes/PurchaseOrderItemHistoryRequest.md) = PurchaseOrderItemHistoryRequest; `O`: typeof [`PurchaseOrderItemsList`](classes/PurchaseOrderItemsList.md) = PurchaseOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderItemHistory"`` = "ViewPurchaseOrderItemHistory" } ; `viewPurchaseOrderItemPrice`: \{ `I`: typeof [`PurchaseOrderItemProspectiveInfoRequest`](classes/PurchaseOrderItemProspectiveInfoRequest.md) = PurchaseOrderItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderItemPrice"`` = "ViewPurchaseOrderItemPrice" } ; `viewPurchaseOrderReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrderReference`](classes/PurchaseOrderReference.md) = PurchaseOrderReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderReferenceByID"`` = "ViewPurchaseOrderReferenceByID" } ; `viewPurchaseOrderReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrderReferencesList`](classes/PurchaseOrderReferencesList.md) = PurchaseOrderReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderReferences"`` = "ViewPurchaseOrderReferences" } ; `viewUnapprovedPurchaseOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`PurchaseOrderItemsList`](classes/PurchaseOrderItemsList.md) = PurchaseOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedPurchaseOrderItems"`` = "ViewUnapprovedPurchaseOrderItems" } ; `viewWithPagination`: \{ `I`: typeof [`PurchasesOrdersServicePaginationReq`](classes/PurchasesOrdersServicePaginationReq.md) = PurchasesOrdersServicePaginationReq; `O`: typeof [`PurchasesOrdersServicePaginationResponse`](classes/PurchasesOrdersServicePaginationResponse.md) = PurchasesOrdersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `accruedValue`: \{ `I`: typeof [`PurchasesOrdersServiceCountReq`](classes/PurchasesOrdersServiceCountReq.md) = PurchasesOrdersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addPurchaseOrderContact`: \{ `I`: typeof [`PurchasesOrdersServiceContactCreateRequest`](classes/PurchasesOrdersServiceContactCreateRequest.md) = PurchasesOrdersServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddPurchaseOrderContact"`` = "AddPurchaseOrderContact" } ; `addPurchaseOrderItem`: \{ `I`: typeof [`PurchasesOrdersServiceItemCreateRequest`](classes/PurchasesOrdersServiceItemCreateRequest.md) = PurchasesOrdersServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddPurchaseOrderItem"`` = "AddPurchaseOrderItem" } ; `addPurchaseOrderReference`: \{ `I`: typeof [`PurchasesOrdersServiceReferenceCreateRequest`](classes/PurchasesOrdersServiceReferenceCreateRequest.md) = PurchasesOrdersServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddPurchaseOrderReference"`` = "AddPurchaseOrderReference" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approvePurchaseOrderContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApprovePurchaseOrderContact"`` = "ApprovePurchaseOrderContact" } ; `approvePurchaseOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApprovePurchaseOrderItem"`` = "ApprovePurchaseOrderItem" } ; `approvePurchaseOrderReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApprovePurchaseOrderReference"`` = "ApprovePurchaseOrderReference" } ; `autofill`: \{ `I`: typeof [`PurchasesOrdersServiceAutofillRequest`](classes/PurchasesOrdersServiceAutofillRequest.md) = PurchasesOrdersServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`PurchasesOrdersServiceCountReq`](classes/PurchasesOrdersServiceCountReq.md) = PurchasesOrdersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`PurchasesOrdersServiceCreateRequest`](classes/PurchasesOrdersServiceCreateRequest.md) = PurchasesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deletePurchaseOrderContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeletePurchaseOrderContact"`` = "DeletePurchaseOrderContact" } ; `deletePurchaseOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeletePurchaseOrderItem"`` = "DeletePurchaseOrderItem" } ; `deletePurchaseOrderReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeletePurchaseOrderReference"`` = "DeletePurchaseOrderReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`PurchasesOrdersServiceCreateRequest`](classes/PurchasesOrdersServiceCreateRequest.md) = PurchasesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`PurchasesOrdersServiceUpdateRequest`](classes/PurchasesOrdersServiceUpdateRequest.md) = PurchasesOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`PurchasesOrdersServiceFilterReq`](classes/PurchasesOrdersServiceFilterReq.md) = PurchasesOrdersServiceFilterReq; `O`: typeof [`PurchasesOrdersList`](classes/PurchasesOrdersList.md) = PurchasesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyPurchaseOrderItem`: \{ `I`: typeof [`PurchasesOrdersServiceItemUpdateRequest`](classes/PurchasesOrdersServiceItemUpdateRequest.md) = PurchasesOrdersServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyPurchaseOrderItem"`` = "ModifyPurchaseOrderItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderPurchaseOrderItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderPurchaseOrderItems"`` = "ReorderPurchaseOrderItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`PurchasesOrdersServiceUpdateRequest`](classes/PurchasesOrdersServiceUpdateRequest.md) = PurchasesOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`PurchasesOrdersServiceSearchAllReq`](classes/PurchasesOrdersServiceSearchAllReq.md) = PurchasesOrdersServiceSearchAllReq; `O`: typeof [`PurchasesOrdersList`](classes/PurchasesOrdersList.md) = PurchasesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`PurchaseOrderItemsSearchRequest`](classes/PurchaseOrderItemsSearchRequest.md) = PurchaseOrderItemsSearchRequest; `O`: typeof [`PurchasesOrdersServicePaginatedItemsResponse`](classes/PurchasesOrdersServicePaginatedItemsResponse.md) = PurchasesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadPurchaseOrderItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadPurchaseOrderItems"`` = "UploadPurchaseOrderItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`PurchasesOrdersList`](classes/PurchasesOrdersList.md) = PurchasesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchasesOrdersList`](classes/PurchasesOrdersList.md) = PurchasesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderAncillaryParameters`](classes/PurchaseOrderAncillaryParameters.md) = PurchaseOrderAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedPurchaseOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`PurchaseOrderItemsList`](classes/PurchaseOrderItemsList.md) = PurchaseOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedPurchaseOrderItems"`` = "ViewApprovedPurchaseOrderItems" } ; `viewBillingStatistics`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderBillingStatistics`](classes/PurchaseOrderBillingStatistics.md) = PurchaseOrderBillingStatistics; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewBillingStatistics"`` = "ViewBillingStatistics" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrder`](classes/PurchaseOrder.md) = PurchaseOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrder`](classes/PurchaseOrder.md) = PurchaseOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrder`](classes/PurchaseOrder.md) = PurchaseOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewInventoryMatch`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderInventoryMatchList`](classes/PurchaseOrderInventoryMatchList.md) = PurchaseOrderInventoryMatchList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryMatch"`` = "ViewInventoryMatch" } ; `viewInventoryStatistics`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderInventoryStatistics`](classes/PurchaseOrderInventoryStatistics.md) = PurchaseOrderInventoryStatistics; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryStatistics"`` = "ViewInventoryStatistics" } ; `viewPaginatedApprovedPurchaseOrderItems`: \{ `I`: typeof [`PurchaseOrderItemsSearchRequest`](classes/PurchaseOrderItemsSearchRequest.md) = PurchaseOrderItemsSearchRequest; `O`: typeof [`PurchasesOrdersServicePaginatedItemsResponse`](classes/PurchasesOrdersServicePaginatedItemsResponse.md) = PurchasesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedPurchaseOrderItems"`` = "ViewPaginatedApprovedPurchaseOrderItems" } ; `viewPaginatedUnapprovedPurchaseOrderItems`: \{ `I`: typeof [`PurchaseOrderItemsSearchRequest`](classes/PurchaseOrderItemsSearchRequest.md) = PurchaseOrderItemsSearchRequest; `O`: typeof [`PurchasesOrdersServicePaginatedItemsResponse`](classes/PurchasesOrdersServicePaginatedItemsResponse.md) = PurchasesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedPurchaseOrderItems"`` = "ViewPaginatedUnapprovedPurchaseOrderItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectivePurchaseOrderItem`: \{ `I`: typeof [`PurchaseOrderItemProspectiveInfoRequest`](classes/PurchaseOrderItemProspectiveInfoRequest.md) = PurchaseOrderItemProspectiveInfoRequest; `O`: typeof [`PurchasesOrdersServiceItemCreateRequest`](classes/PurchasesOrdersServiceItemCreateRequest.md) = PurchasesOrdersServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectivePurchaseOrderItem"`` = "ViewProspectivePurchaseOrderItem" } ; `viewPurchaseOrderContactByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrderContact`](classes/PurchaseOrderContact.md) = PurchaseOrderContact; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderContactByID"`` = "ViewPurchaseOrderContactByID" } ; `viewPurchaseOrderContacts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PurchaseOrderContactsList`](classes/PurchaseOrderContactsList.md) = PurchaseOrderContactsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderContacts"`` = "ViewPurchaseOrderContacts" } ; `viewPurchaseOrderItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrderItem`](classes/PurchaseOrderItem.md) = PurchaseOrderItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderItemByID"`` = "ViewPurchaseOrderItemByID" } ; `viewPurchaseOrderItemHistory`: \{ `I`: typeof [`PurchaseOrderItemHistoryRequest`](classes/PurchaseOrderItemHistoryRequest.md) = PurchaseOrderItemHistoryRequest; `O`: typeof [`PurchaseOrderItemsList`](classes/PurchaseOrderItemsList.md) = PurchaseOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderItemHistory"`` = "ViewPurchaseOrderItemHistory" } ; `viewPurchaseOrderItemPrice`: \{ `I`: typeof [`PurchaseOrderItemProspectiveInfoRequest`](classes/PurchaseOrderItemProspectiveInfoRequest.md) = PurchaseOrderItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderItemPrice"`` = "ViewPurchaseOrderItemPrice" } ; `viewPurchaseOrderReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrderReference`](classes/PurchaseOrderReference.md) = PurchaseOrderReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderReferenceByID"`` = "ViewPurchaseOrderReferenceByID" } ; `viewPurchaseOrderReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`PurchaseOrderReferencesList`](classes/PurchaseOrderReferencesList.md) = PurchaseOrderReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPurchaseOrderReferences"`` = "ViewPurchaseOrderReferences" } ; `viewUnapprovedPurchaseOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`PurchaseOrderItemsList`](classes/PurchaseOrderItemsList.md) = PurchaseOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedPurchaseOrderItems"`` = "ViewUnapprovedPurchaseOrderItems" } ; `viewWithPagination`: \{ `I`: typeof [`PurchasesOrdersServicePaginationReq`](classes/PurchasesOrdersServicePaginationReq.md) = PurchasesOrdersServicePaginationReq; `O`: typeof [`PurchasesOrdersServicePaginationResponse`](classes/PurchasesOrdersServicePaginationResponse.md) = PurchasesOrdersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.accruedValue` | \{ `I`: typeof [`PurchasesOrdersServiceCountReq`](classes/PurchasesOrdersServiceCountReq.md) = PurchasesOrdersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } |
 | `methods.accruedValue.I` | typeof [`PurchasesOrdersServiceCountReq`](classes/PurchasesOrdersServiceCountReq.md) |
 | `methods.accruedValue.O` | typeof [`SumResponse`](classes/SumResponse.md) |
@@ -28222,16 +28254,16 @@ from service Scailo.PurchasesOrdersService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`PurchasesOrdersServiceCreateRequest`](classes/PurchasesOrdersServiceCreateRequest.md) = PurchasesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`PurchasesOrdersServiceCreateRequest`](classes/PurchasesOrdersServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -30557,7 +30589,7 @@ from service Scailo.SalesEnquiriesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addSalesEnquiryContact`: \{ `I`: typeof [`SalesEnquiriesServiceContactCreateRequest`](classes/SalesEnquiriesServiceContactCreateRequest.md) = SalesEnquiriesServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesEnquiryContact"`` = "AddSalesEnquiryContact" } ; `addSalesEnquiryItem`: \{ `I`: typeof [`SalesEnquiriesServiceItemCreateRequest`](classes/SalesEnquiriesServiceItemCreateRequest.md) = SalesEnquiriesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesEnquiryItem"`` = "AddSalesEnquiryItem" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSalesEnquiryContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesEnquiryContact"`` = "ApproveSalesEnquiryContact" } ; `approveSalesEnquiryItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesEnquiryItem"`` = "ApproveSalesEnquiryItem" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SalesEnquiriesServiceCountReq`](classes/SalesEnquiriesServiceCountReq.md) = SalesEnquiriesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SalesEnquiriesServiceCreateRequest`](classes/SalesEnquiriesServiceCreateRequest.md) = SalesEnquiriesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSalesEnquiryContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesEnquiryContact"`` = "DeleteSalesEnquiryContact" } ; `deleteSalesEnquiryItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesEnquiryItem"`` = "DeleteSalesEnquiryItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`SalesEnquiriesServiceCreateRequest`](classes/SalesEnquiriesServiceCreateRequest.md) = SalesEnquiriesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SalesEnquiriesServiceUpdateRequest`](classes/SalesEnquiriesServiceUpdateRequest.md) = SalesEnquiriesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SalesEnquiriesServiceFilterReq`](classes/SalesEnquiriesServiceFilterReq.md) = SalesEnquiriesServiceFilterReq; `O`: typeof [`SalesEnquiriesList`](classes/SalesEnquiriesList.md) = SalesEnquiriesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySalesEnquiryItem`: \{ `I`: typeof [`SalesEnquiriesServiceItemUpdateRequest`](classes/SalesEnquiriesServiceItemUpdateRequest.md) = SalesEnquiriesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySalesEnquiryItem"`` = "ModifySalesEnquiryItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSalesEnquiryItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSalesEnquiryItems"`` = "ReorderSalesEnquiryItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SalesEnquiriesServiceUpdateRequest`](classes/SalesEnquiriesServiceUpdateRequest.md) = SalesEnquiriesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SalesEnquiriesServiceSearchAllReq`](classes/SalesEnquiriesServiceSearchAllReq.md) = SalesEnquiriesServiceSearchAllReq; `O`: typeof [`SalesEnquiriesList`](classes/SalesEnquiriesList.md) = SalesEnquiriesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SalesEnquiryItemsSearchRequest`](classes/SalesEnquiryItemsSearchRequest.md) = SalesEnquiryItemsSearchRequest; `O`: typeof [`SalesEnquiriesServicePaginatedItemsResponse`](classes/SalesEnquiriesServicePaginatedItemsResponse.md) = SalesEnquiriesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSalesEnquiryItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSalesEnquiryItems"`` = "UploadSalesEnquiryItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SalesEnquiriesList`](classes/SalesEnquiriesList.md) = SalesEnquiriesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesEnquiriesList`](classes/SalesEnquiriesList.md) = SalesEnquiriesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesEnquiryAncillaryParameters`](classes/SalesEnquiryAncillaryParameters.md) = SalesEnquiryAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSalesEnquiryItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesEnquiriesItemsList`](classes/SalesEnquiriesItemsList.md) = SalesEnquiriesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSalesEnquiryItems"`` = "ViewApprovedSalesEnquiryItems" } ; `viewAssociatedSalesOrdersIDs`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesOrdersIDs"`` = "ViewAssociatedSalesOrdersIDs" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesEnquiry`](classes/SalesEnquiry.md) = SalesEnquiry; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesEnquiry`](classes/SalesEnquiry.md) = SalesEnquiry; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedSalesEnquiryItems`: \{ `I`: typeof [`SalesEnquiryItemsSearchRequest`](classes/SalesEnquiryItemsSearchRequest.md) = SalesEnquiryItemsSearchRequest; `O`: typeof [`SalesEnquiriesServicePaginatedItemsResponse`](classes/SalesEnquiriesServicePaginatedItemsResponse.md) = SalesEnquiriesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSalesEnquiryItems"`` = "ViewPaginatedApprovedSalesEnquiryItems" } ; `viewPaginatedUnapprovedSalesEnquiryItems`: \{ `I`: typeof [`SalesEnquiryItemsSearchRequest`](classes/SalesEnquiryItemsSearchRequest.md) = SalesEnquiryItemsSearchRequest; `O`: typeof [`SalesEnquiriesServicePaginatedItemsResponse`](classes/SalesEnquiriesServicePaginatedItemsResponse.md) = SalesEnquiriesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSalesEnquiryItems"`` = "ViewPaginatedUnapprovedSalesEnquiryItems" } ; `viewSalesEnquiryContactByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesEnquiryContact`](classes/SalesEnquiryContact.md) = SalesEnquiryContact; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesEnquiryContactByID"`` = "ViewSalesEnquiryContactByID" } ; `viewSalesEnquiryContacts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesEnquiryContactsList`](classes/SalesEnquiryContactsList.md) = SalesEnquiryContactsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesEnquiryContacts"`` = "ViewSalesEnquiryContacts" } ; `viewSalesEnquiryItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesEnquiryItem`](classes/SalesEnquiryItem.md) = SalesEnquiryItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesEnquiryItemByID"`` = "ViewSalesEnquiryItemByID" } ; `viewSalesEnquiryItemHistory`: \{ `I`: typeof [`SalesEnquiryItemHistoryRequest`](classes/SalesEnquiryItemHistoryRequest.md) = SalesEnquiryItemHistoryRequest; `O`: typeof [`SalesEnquiriesItemsList`](classes/SalesEnquiriesItemsList.md) = SalesEnquiriesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesEnquiryItemHistory"`` = "ViewSalesEnquiryItemHistory" } ; `viewUnapprovedSalesEnquiryItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesEnquiriesItemsList`](classes/SalesEnquiriesItemsList.md) = SalesEnquiriesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSalesEnquiryItems"`` = "ViewUnapprovedSalesEnquiryItems" } ; `viewWithPagination`: \{ `I`: typeof [`SalesEnquiriesServicePaginationReq`](classes/SalesEnquiriesServicePaginationReq.md) = SalesEnquiriesServicePaginationReq; `O`: typeof [`SalesEnquiriesServicePaginationResponse`](classes/SalesEnquiriesServicePaginationResponse.md) = SalesEnquiriesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addSalesEnquiryContact`: \{ `I`: typeof [`SalesEnquiriesServiceContactCreateRequest`](classes/SalesEnquiriesServiceContactCreateRequest.md) = SalesEnquiriesServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesEnquiryContact"`` = "AddSalesEnquiryContact" } ; `addSalesEnquiryItem`: \{ `I`: typeof [`SalesEnquiriesServiceItemCreateRequest`](classes/SalesEnquiriesServiceItemCreateRequest.md) = SalesEnquiriesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesEnquiryItem"`` = "AddSalesEnquiryItem" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSalesEnquiryContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesEnquiryContact"`` = "ApproveSalesEnquiryContact" } ; `approveSalesEnquiryItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesEnquiryItem"`` = "ApproveSalesEnquiryItem" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SalesEnquiriesServiceCountReq`](classes/SalesEnquiriesServiceCountReq.md) = SalesEnquiriesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SalesEnquiriesServiceCreateRequest`](classes/SalesEnquiriesServiceCreateRequest.md) = SalesEnquiriesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSalesEnquiryContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesEnquiryContact"`` = "DeleteSalesEnquiryContact" } ; `deleteSalesEnquiryItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesEnquiryItem"`` = "DeleteSalesEnquiryItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`SalesEnquiriesServiceCreateRequest`](classes/SalesEnquiriesServiceCreateRequest.md) = SalesEnquiriesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SalesEnquiriesServiceUpdateRequest`](classes/SalesEnquiriesServiceUpdateRequest.md) = SalesEnquiriesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SalesEnquiriesServiceFilterReq`](classes/SalesEnquiriesServiceFilterReq.md) = SalesEnquiriesServiceFilterReq; `O`: typeof [`SalesEnquiriesList`](classes/SalesEnquiriesList.md) = SalesEnquiriesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySalesEnquiryItem`: \{ `I`: typeof [`SalesEnquiriesServiceItemUpdateRequest`](classes/SalesEnquiriesServiceItemUpdateRequest.md) = SalesEnquiriesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySalesEnquiryItem"`` = "ModifySalesEnquiryItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSalesEnquiryItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSalesEnquiryItems"`` = "ReorderSalesEnquiryItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SalesEnquiriesServiceUpdateRequest`](classes/SalesEnquiriesServiceUpdateRequest.md) = SalesEnquiriesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SalesEnquiriesServiceSearchAllReq`](classes/SalesEnquiriesServiceSearchAllReq.md) = SalesEnquiriesServiceSearchAllReq; `O`: typeof [`SalesEnquiriesList`](classes/SalesEnquiriesList.md) = SalesEnquiriesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SalesEnquiryItemsSearchRequest`](classes/SalesEnquiryItemsSearchRequest.md) = SalesEnquiryItemsSearchRequest; `O`: typeof [`SalesEnquiriesServicePaginatedItemsResponse`](classes/SalesEnquiriesServicePaginatedItemsResponse.md) = SalesEnquiriesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSalesEnquiryItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSalesEnquiryItems"`` = "UploadSalesEnquiryItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SalesEnquiriesList`](classes/SalesEnquiriesList.md) = SalesEnquiriesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesEnquiriesList`](classes/SalesEnquiriesList.md) = SalesEnquiriesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesEnquiryAncillaryParameters`](classes/SalesEnquiryAncillaryParameters.md) = SalesEnquiryAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSalesEnquiryItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesEnquiriesItemsList`](classes/SalesEnquiriesItemsList.md) = SalesEnquiriesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSalesEnquiryItems"`` = "ViewApprovedSalesEnquiryItems" } ; `viewAssociatedSalesOrdersIDs`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesOrdersIDs"`` = "ViewAssociatedSalesOrdersIDs" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesEnquiry`](classes/SalesEnquiry.md) = SalesEnquiry; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesEnquiry`](classes/SalesEnquiry.md) = SalesEnquiry; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedSalesEnquiryItems`: \{ `I`: typeof [`SalesEnquiryItemsSearchRequest`](classes/SalesEnquiryItemsSearchRequest.md) = SalesEnquiryItemsSearchRequest; `O`: typeof [`SalesEnquiriesServicePaginatedItemsResponse`](classes/SalesEnquiriesServicePaginatedItemsResponse.md) = SalesEnquiriesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSalesEnquiryItems"`` = "ViewPaginatedApprovedSalesEnquiryItems" } ; `viewPaginatedUnapprovedSalesEnquiryItems`: \{ `I`: typeof [`SalesEnquiryItemsSearchRequest`](classes/SalesEnquiryItemsSearchRequest.md) = SalesEnquiryItemsSearchRequest; `O`: typeof [`SalesEnquiriesServicePaginatedItemsResponse`](classes/SalesEnquiriesServicePaginatedItemsResponse.md) = SalesEnquiriesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSalesEnquiryItems"`` = "ViewPaginatedUnapprovedSalesEnquiryItems" } ; `viewSalesEnquiryContactByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesEnquiryContact`](classes/SalesEnquiryContact.md) = SalesEnquiryContact; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesEnquiryContactByID"`` = "ViewSalesEnquiryContactByID" } ; `viewSalesEnquiryContacts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesEnquiryContactsList`](classes/SalesEnquiryContactsList.md) = SalesEnquiryContactsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesEnquiryContacts"`` = "ViewSalesEnquiryContacts" } ; `viewSalesEnquiryItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesEnquiryItem`](classes/SalesEnquiryItem.md) = SalesEnquiryItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesEnquiryItemByID"`` = "ViewSalesEnquiryItemByID" } ; `viewSalesEnquiryItemHistory`: \{ `I`: typeof [`SalesEnquiryItemHistoryRequest`](classes/SalesEnquiryItemHistoryRequest.md) = SalesEnquiryItemHistoryRequest; `O`: typeof [`SalesEnquiriesItemsList`](classes/SalesEnquiriesItemsList.md) = SalesEnquiriesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesEnquiryItemHistory"`` = "ViewSalesEnquiryItemHistory" } ; `viewUnapprovedSalesEnquiryItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesEnquiriesItemsList`](classes/SalesEnquiriesItemsList.md) = SalesEnquiriesItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSalesEnquiryItems"`` = "ViewUnapprovedSalesEnquiryItems" } ; `viewWithPagination`: \{ `I`: typeof [`SalesEnquiriesServicePaginationReq`](classes/SalesEnquiriesServicePaginationReq.md) = SalesEnquiriesServicePaginationReq; `O`: typeof [`SalesEnquiriesServicePaginationResponse`](classes/SalesEnquiriesServicePaginationResponse.md) = SalesEnquiriesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addSalesEnquiryContact` | \{ `I`: typeof [`SalesEnquiriesServiceContactCreateRequest`](classes/SalesEnquiriesServiceContactCreateRequest.md) = SalesEnquiriesServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesEnquiryContact"`` = "AddSalesEnquiryContact" } |
 | `methods.addSalesEnquiryContact.I` | typeof [`SalesEnquiriesServiceContactCreateRequest`](classes/SalesEnquiriesServiceContactCreateRequest.md) |
 | `methods.addSalesEnquiryContact.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -30628,16 +30660,16 @@ from service Scailo.SalesEnquiriesService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`SalesEnquiriesServiceCreateRequest`](classes/SalesEnquiriesServiceCreateRequest.md) = SalesEnquiriesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`SalesEnquiriesServiceCreateRequest`](classes/SalesEnquiriesServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -30825,7 +30857,7 @@ from service Scailo.SalesInvoicesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `accruedValue`: \{ `I`: typeof [`SalesInvoicesServiceCountReq`](classes/SalesInvoicesServiceCountReq.md) = SalesInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addSalesInvoiceItem`: \{ `I`: typeof [`SalesInvoicesServiceItemCreateRequest`](classes/SalesInvoicesServiceItemCreateRequest.md) = SalesInvoicesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesInvoiceItem"`` = "AddSalesInvoiceItem" } ; `addSalesInvoiceReference`: \{ `I`: typeof [`SalesInvoicesServiceReferenceCreateRequest`](classes/SalesInvoicesServiceReferenceCreateRequest.md) = SalesInvoicesServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesInvoiceReference"`` = "AddSalesInvoiceReference" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSalesInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesInvoiceItem"`` = "ApproveSalesInvoiceItem" } ; `approveSalesInvoiceReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesInvoiceReference"`` = "ApproveSalesInvoiceReference" } ; `autofill`: \{ `I`: typeof [`SalesInvoicesServiceAutofillRequest`](classes/SalesInvoicesServiceAutofillRequest.md) = SalesInvoicesServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SalesInvoicesServiceCountReq`](classes/SalesInvoicesServiceCountReq.md) = SalesInvoicesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SalesInvoicesServiceCreateRequest`](classes/SalesInvoicesServiceCreateRequest.md) = SalesInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSalesInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesInvoiceItem"`` = "DeleteSalesInvoiceItem" } ; `deleteSalesInvoiceReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesInvoiceReference"`` = "DeleteSalesInvoiceReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`SalesInvoicesServiceCreateRequest`](classes/SalesInvoicesServiceCreateRequest.md) = SalesInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SalesInvoicesServiceUpdateRequest`](classes/SalesInvoicesServiceUpdateRequest.md) = SalesInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SalesInvoicesServiceFilterReq`](classes/SalesInvoicesServiceFilterReq.md) = SalesInvoicesServiceFilterReq; `O`: typeof [`SalesInvoicesList`](classes/SalesInvoicesList.md) = SalesInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySalesInvoiceItem`: \{ `I`: typeof [`SalesInvoicesServiceItemUpdateRequest`](classes/SalesInvoicesServiceItemUpdateRequest.md) = SalesInvoicesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySalesInvoiceItem"`` = "ModifySalesInvoiceItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSalesInvoiceItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSalesInvoiceItems"`` = "ReorderSalesInvoiceItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SalesInvoicesServiceUpdateRequest`](classes/SalesInvoicesServiceUpdateRequest.md) = SalesInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SalesInvoicesServiceSearchAllReq`](classes/SalesInvoicesServiceSearchAllReq.md) = SalesInvoicesServiceSearchAllReq; `O`: typeof [`SalesInvoicesList`](classes/SalesInvoicesList.md) = SalesInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SalesInvoiceItemsSearchRequest`](classes/SalesInvoiceItemsSearchRequest.md) = SalesInvoiceItemsSearchRequest; `O`: typeof [`SalesInvoicesServicePaginatedItemsResponse`](classes/SalesInvoicesServicePaginatedItemsResponse.md) = SalesInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSalesInvoiceItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSalesInvoiceItems"`` = "UploadSalesInvoiceItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) = SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SalesInvoicesList`](classes/SalesInvoicesList.md) = SalesInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesInvoicesList`](classes/SalesInvoicesList.md) = SalesInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesInvoiceAncillaryParameters`](classes/SalesInvoiceAncillaryParameters.md) = SalesInvoiceAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSalesInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesInvoiceItemsList`](classes/SalesInvoiceItemsList.md) = SalesInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSalesInvoiceItems"`` = "ViewApprovedSalesInvoiceItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoice`](classes/SalesInvoice.md) = SalesInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesInvoice`](classes/SalesInvoice.md) = SalesInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewDispatchedStatistics`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoiceDispatchedStatisticsList`](classes/SalesInvoiceDispatchedStatisticsList.md) = SalesInvoiceDispatchedStatisticsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewDispatchedStatistics"`` = "ViewDispatchedStatistics" } ; `viewPaginatedApprovedSalesInvoiceItems`: \{ `I`: typeof [`SalesInvoiceItemsSearchRequest`](classes/SalesInvoiceItemsSearchRequest.md) = SalesInvoiceItemsSearchRequest; `O`: typeof [`SalesInvoicesServicePaginatedItemsResponse`](classes/SalesInvoicesServicePaginatedItemsResponse.md) = SalesInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSalesInvoiceItems"`` = "ViewPaginatedApprovedSalesInvoiceItems" } ; `viewPaginatedUnapprovedSalesInvoiceItems`: \{ `I`: typeof [`SalesInvoiceItemsSearchRequest`](classes/SalesInvoiceItemsSearchRequest.md) = SalesInvoiceItemsSearchRequest; `O`: typeof [`SalesInvoicesServicePaginatedItemsResponse`](classes/SalesInvoicesServicePaginatedItemsResponse.md) = SalesInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSalesInvoiceItems"`` = "ViewPaginatedUnapprovedSalesInvoiceItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSalesInvoiceItem`: \{ `I`: typeof [`SalesInvoiceItemProspectiveInfoRequest`](classes/SalesInvoiceItemProspectiveInfoRequest.md) = SalesInvoiceItemProspectiveInfoRequest; `O`: typeof [`SalesInvoicesServiceItemCreateRequest`](classes/SalesInvoicesServiceItemCreateRequest.md) = SalesInvoicesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSalesInvoiceItem"`` = "ViewProspectiveSalesInvoiceItem" } ; `viewSalesInvoiceItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoiceItem`](classes/SalesInvoiceItem.md) = SalesInvoiceItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesInvoiceItemByID"`` = "ViewSalesInvoiceItemByID" } ; `viewSalesInvoiceItemHistory`: \{ `I`: typeof [`SalesInvoiceItemHistoryRequest`](classes/SalesInvoiceItemHistoryRequest.md) = SalesInvoiceItemHistoryRequest; `O`: typeof [`SalesInvoiceItemsList`](classes/SalesInvoiceItemsList.md) = SalesInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesInvoiceItemHistory"`` = "ViewSalesInvoiceItemHistory" } ; `viewSalesInvoiceReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoiceReference`](classes/SalesInvoiceReference.md) = SalesInvoiceReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesInvoiceReferenceByID"`` = "ViewSalesInvoiceReferenceByID" } ; `viewSalesInvoiceReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoiceReferencesList`](classes/SalesInvoiceReferencesList.md) = SalesInvoiceReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesInvoiceReferences"`` = "ViewSalesInvoiceReferences" } ; `viewUnapprovedSalesInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesInvoiceItemsList`](classes/SalesInvoiceItemsList.md) = SalesInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSalesInvoiceItems"`` = "ViewUnapprovedSalesInvoiceItems" } ; `viewWithPagination`: \{ `I`: typeof [`SalesInvoicesServicePaginationReq`](classes/SalesInvoicesServicePaginationReq.md) = SalesInvoicesServicePaginationReq; `O`: typeof [`SalesInvoicesServicePaginationResponse`](classes/SalesInvoicesServicePaginationResponse.md) = SalesInvoicesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `accruedValue`: \{ `I`: typeof [`SalesInvoicesServiceCountReq`](classes/SalesInvoicesServiceCountReq.md) = SalesInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addSalesInvoiceItem`: \{ `I`: typeof [`SalesInvoicesServiceItemCreateRequest`](classes/SalesInvoicesServiceItemCreateRequest.md) = SalesInvoicesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesInvoiceItem"`` = "AddSalesInvoiceItem" } ; `addSalesInvoiceReference`: \{ `I`: typeof [`SalesInvoicesServiceReferenceCreateRequest`](classes/SalesInvoicesServiceReferenceCreateRequest.md) = SalesInvoicesServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesInvoiceReference"`` = "AddSalesInvoiceReference" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSalesInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesInvoiceItem"`` = "ApproveSalesInvoiceItem" } ; `approveSalesInvoiceReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesInvoiceReference"`` = "ApproveSalesInvoiceReference" } ; `autofill`: \{ `I`: typeof [`SalesInvoicesServiceAutofillRequest`](classes/SalesInvoicesServiceAutofillRequest.md) = SalesInvoicesServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SalesInvoicesServiceCountReq`](classes/SalesInvoicesServiceCountReq.md) = SalesInvoicesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SalesInvoicesServiceCreateRequest`](classes/SalesInvoicesServiceCreateRequest.md) = SalesInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSalesInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesInvoiceItem"`` = "DeleteSalesInvoiceItem" } ; `deleteSalesInvoiceReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesInvoiceReference"`` = "DeleteSalesInvoiceReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`SalesInvoicesServiceCreateRequest`](classes/SalesInvoicesServiceCreateRequest.md) = SalesInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SalesInvoicesServiceUpdateRequest`](classes/SalesInvoicesServiceUpdateRequest.md) = SalesInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SalesInvoicesServiceFilterReq`](classes/SalesInvoicesServiceFilterReq.md) = SalesInvoicesServiceFilterReq; `O`: typeof [`SalesInvoicesList`](classes/SalesInvoicesList.md) = SalesInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySalesInvoiceItem`: \{ `I`: typeof [`SalesInvoicesServiceItemUpdateRequest`](classes/SalesInvoicesServiceItemUpdateRequest.md) = SalesInvoicesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySalesInvoiceItem"`` = "ModifySalesInvoiceItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSalesInvoiceItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSalesInvoiceItems"`` = "ReorderSalesInvoiceItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SalesInvoicesServiceUpdateRequest`](classes/SalesInvoicesServiceUpdateRequest.md) = SalesInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SalesInvoicesServiceSearchAllReq`](classes/SalesInvoicesServiceSearchAllReq.md) = SalesInvoicesServiceSearchAllReq; `O`: typeof [`SalesInvoicesList`](classes/SalesInvoicesList.md) = SalesInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SalesInvoiceItemsSearchRequest`](classes/SalesInvoiceItemsSearchRequest.md) = SalesInvoiceItemsSearchRequest; `O`: typeof [`SalesInvoicesServicePaginatedItemsResponse`](classes/SalesInvoicesServicePaginatedItemsResponse.md) = SalesInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSalesInvoiceItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSalesInvoiceItems"`` = "UploadSalesInvoiceItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) = SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SalesInvoicesList`](classes/SalesInvoicesList.md) = SalesInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesInvoicesList`](classes/SalesInvoicesList.md) = SalesInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesInvoiceAncillaryParameters`](classes/SalesInvoiceAncillaryParameters.md) = SalesInvoiceAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSalesInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesInvoiceItemsList`](classes/SalesInvoiceItemsList.md) = SalesInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSalesInvoiceItems"`` = "ViewApprovedSalesInvoiceItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoice`](classes/SalesInvoice.md) = SalesInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesInvoice`](classes/SalesInvoice.md) = SalesInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewDispatchedStatistics`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoiceDispatchedStatisticsList`](classes/SalesInvoiceDispatchedStatisticsList.md) = SalesInvoiceDispatchedStatisticsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewDispatchedStatistics"`` = "ViewDispatchedStatistics" } ; `viewPaginatedApprovedSalesInvoiceItems`: \{ `I`: typeof [`SalesInvoiceItemsSearchRequest`](classes/SalesInvoiceItemsSearchRequest.md) = SalesInvoiceItemsSearchRequest; `O`: typeof [`SalesInvoicesServicePaginatedItemsResponse`](classes/SalesInvoicesServicePaginatedItemsResponse.md) = SalesInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSalesInvoiceItems"`` = "ViewPaginatedApprovedSalesInvoiceItems" } ; `viewPaginatedUnapprovedSalesInvoiceItems`: \{ `I`: typeof [`SalesInvoiceItemsSearchRequest`](classes/SalesInvoiceItemsSearchRequest.md) = SalesInvoiceItemsSearchRequest; `O`: typeof [`SalesInvoicesServicePaginatedItemsResponse`](classes/SalesInvoicesServicePaginatedItemsResponse.md) = SalesInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSalesInvoiceItems"`` = "ViewPaginatedUnapprovedSalesInvoiceItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSalesInvoiceItem`: \{ `I`: typeof [`SalesInvoiceItemProspectiveInfoRequest`](classes/SalesInvoiceItemProspectiveInfoRequest.md) = SalesInvoiceItemProspectiveInfoRequest; `O`: typeof [`SalesInvoicesServiceItemCreateRequest`](classes/SalesInvoicesServiceItemCreateRequest.md) = SalesInvoicesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSalesInvoiceItem"`` = "ViewProspectiveSalesInvoiceItem" } ; `viewSalesInvoiceItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoiceItem`](classes/SalesInvoiceItem.md) = SalesInvoiceItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesInvoiceItemByID"`` = "ViewSalesInvoiceItemByID" } ; `viewSalesInvoiceItemHistory`: \{ `I`: typeof [`SalesInvoiceItemHistoryRequest`](classes/SalesInvoiceItemHistoryRequest.md) = SalesInvoiceItemHistoryRequest; `O`: typeof [`SalesInvoiceItemsList`](classes/SalesInvoiceItemsList.md) = SalesInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesInvoiceItemHistory"`` = "ViewSalesInvoiceItemHistory" } ; `viewSalesInvoiceReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoiceReference`](classes/SalesInvoiceReference.md) = SalesInvoiceReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesInvoiceReferenceByID"`` = "ViewSalesInvoiceReferenceByID" } ; `viewSalesInvoiceReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesInvoiceReferencesList`](classes/SalesInvoiceReferencesList.md) = SalesInvoiceReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesInvoiceReferences"`` = "ViewSalesInvoiceReferences" } ; `viewUnapprovedSalesInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesInvoiceItemsList`](classes/SalesInvoiceItemsList.md) = SalesInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSalesInvoiceItems"`` = "ViewUnapprovedSalesInvoiceItems" } ; `viewWithPagination`: \{ `I`: typeof [`SalesInvoicesServicePaginationReq`](classes/SalesInvoicesServicePaginationReq.md) = SalesInvoicesServicePaginationReq; `O`: typeof [`SalesInvoicesServicePaginationResponse`](classes/SalesInvoicesServicePaginationResponse.md) = SalesInvoicesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.accruedValue` | \{ `I`: typeof [`SalesInvoicesServiceCountReq`](classes/SalesInvoicesServiceCountReq.md) = SalesInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } |
 | `methods.accruedValue.I` | typeof [`SalesInvoicesServiceCountReq`](classes/SalesInvoicesServiceCountReq.md) |
 | `methods.accruedValue.O` | typeof [`SumResponse`](classes/SumResponse.md) |
@@ -30906,16 +30938,16 @@ from service Scailo.SalesInvoicesService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`SalesInvoicesServiceCreateRequest`](classes/SalesInvoicesServiceCreateRequest.md) = SalesInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`SalesInvoicesServiceCreateRequest`](classes/SalesInvoicesServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -31118,7 +31150,7 @@ from service Scailo.SalesOrdersService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `accruedValue`: \{ `I`: typeof [`SalesOrdersServiceCountReq`](classes/SalesOrdersServiceCountReq.md) = SalesOrdersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addSalesOrderContact`: \{ `I`: typeof [`SalesOrdersServiceContactCreateRequest`](classes/SalesOrdersServiceContactCreateRequest.md) = SalesOrdersServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesOrderContact"`` = "AddSalesOrderContact" } ; `addSalesOrderItem`: \{ `I`: typeof [`SalesOrdersServiceItemCreateRequest`](classes/SalesOrdersServiceItemCreateRequest.md) = SalesOrdersServiceItemCreateRequest; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesOrderItem"`` = "AddSalesOrderItem" } ; `addSalesOrderReference`: \{ `I`: typeof [`SalesOrdersServiceReferenceCreateRequest`](classes/SalesOrdersServiceReferenceCreateRequest.md) = SalesOrdersServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesOrderReference"`` = "AddSalesOrderReference" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSalesOrderContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesOrderContact"`` = "ApproveSalesOrderContact" } ; `approveSalesOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesOrderItem"`` = "ApproveSalesOrderItem" } ; `approveSalesOrderReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesOrderReference"`` = "ApproveSalesOrderReference" } ; `autofill`: \{ `I`: typeof [`SalesOrdersServiceAutofillRequest`](classes/SalesOrdersServiceAutofillRequest.md) = SalesOrdersServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SalesOrdersServiceCountReq`](classes/SalesOrdersServiceCountReq.md) = SalesOrdersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SalesOrdersServiceCreateRequest`](classes/SalesOrdersServiceCreateRequest.md) = SalesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSalesOrderContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesOrderContact"`` = "DeleteSalesOrderContact" } ; `deleteSalesOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesOrderItem"`` = "DeleteSalesOrderItem" } ; `deleteSalesOrderReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesOrderReference"`` = "DeleteSalesOrderReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`SalesOrdersServiceCreateRequest`](classes/SalesOrdersServiceCreateRequest.md) = SalesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SalesOrdersServiceUpdateRequest`](classes/SalesOrdersServiceUpdateRequest.md) = SalesOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SalesOrdersServiceFilterReq`](classes/SalesOrdersServiceFilterReq.md) = SalesOrdersServiceFilterReq; `O`: typeof [`SalesOrdersList`](classes/SalesOrdersList.md) = SalesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySalesOrderItem`: \{ `I`: typeof [`SalesOrdersServiceItemUpdateRequest`](classes/SalesOrdersServiceItemUpdateRequest.md) = SalesOrdersServiceItemUpdateRequest; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySalesOrderItem"`` = "ModifySalesOrderItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSalesOrderItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSalesOrderItems"`` = "ReorderSalesOrderItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SalesOrdersServiceUpdateRequest`](classes/SalesOrdersServiceUpdateRequest.md) = SalesOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SalesOrdersServiceSearchAllReq`](classes/SalesOrdersServiceSearchAllReq.md) = SalesOrdersServiceSearchAllReq; `O`: typeof [`SalesOrdersList`](classes/SalesOrdersList.md) = SalesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SalesOrderItemsSearchRequest`](classes/SalesOrderItemsSearchRequest.md) = SalesOrderItemsSearchRequest; `O`: typeof [`SalesOrdersServicePaginatedItemsResponse`](classes/SalesOrdersServicePaginatedItemsResponse.md) = SalesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSalesOrderItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSalesOrderItems"`` = "UploadSalesOrderItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SalesOrdersList`](classes/SalesOrdersList.md) = SalesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrdersList`](classes/SalesOrdersList.md) = SalesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderAncillaryParameters`](classes/SalesOrderAncillaryParameters.md) = SalesOrderAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSalesOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesOrderItemsList`](classes/SalesOrderItemsList.md) = SalesOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSalesOrderItems"`` = "ViewApprovedSalesOrderItems" } ; `viewBillingStatistics`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderBillingStatistics`](classes/SalesOrderBillingStatistics.md) = SalesOrderBillingStatistics; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewBillingStatistics"`` = "ViewBillingStatistics" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrder`](classes/SalesOrder.md) = SalesOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrder`](classes/SalesOrder.md) = SalesOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrder`](classes/SalesOrder.md) = SalesOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewInventoryMatch`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderInventoryMatchList`](classes/SalesOrderInventoryMatchList.md) = SalesOrderInventoryMatchList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryMatch"`` = "ViewInventoryMatch" } ; `viewInventoryStatistics`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderInventoryStatistics`](classes/SalesOrderInventoryStatistics.md) = SalesOrderInventoryStatistics; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryStatistics"`` = "ViewInventoryStatistics" } ; `viewPaginatedApprovedSalesOrderItems`: \{ `I`: typeof [`SalesOrderItemsSearchRequest`](classes/SalesOrderItemsSearchRequest.md) = SalesOrderItemsSearchRequest; `O`: typeof [`SalesOrdersServicePaginatedItemsResponse`](classes/SalesOrdersServicePaginatedItemsResponse.md) = SalesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSalesOrderItems"`` = "ViewPaginatedApprovedSalesOrderItems" } ; `viewPaginatedUnapprovedSalesOrderItems`: \{ `I`: typeof [`SalesOrderItemsSearchRequest`](classes/SalesOrderItemsSearchRequest.md) = SalesOrderItemsSearchRequest; `O`: typeof [`SalesOrdersServicePaginatedItemsResponse`](classes/SalesOrdersServicePaginatedItemsResponse.md) = SalesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSalesOrderItems"`` = "ViewPaginatedUnapprovedSalesOrderItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSalesOrderItem`: \{ `I`: typeof [`SalesOrderItemProspectiveInfoRequest`](classes/SalesOrderItemProspectiveInfoRequest.md) = SalesOrderItemProspectiveInfoRequest; `O`: typeof [`SalesOrdersServiceItemCreateRequest`](classes/SalesOrdersServiceItemCreateRequest.md) = SalesOrdersServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSalesOrderItem"`` = "ViewProspectiveSalesOrderItem" } ; `viewSalesOrderContactByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrderContact`](classes/SalesOrderContact.md) = SalesOrderContact; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderContactByID"`` = "ViewSalesOrderContactByID" } ; `viewSalesOrderContacts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderContactsList`](classes/SalesOrderContactsList.md) = SalesOrderContactsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderContacts"`` = "ViewSalesOrderContacts" } ; `viewSalesOrderItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrderItem`](classes/SalesOrderItem.md) = SalesOrderItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderItemByID"`` = "ViewSalesOrderItemByID" } ; `viewSalesOrderItemHistory`: \{ `I`: typeof [`SalesOrderItemHistoryRequest`](classes/SalesOrderItemHistoryRequest.md) = SalesOrderItemHistoryRequest; `O`: typeof [`SalesOrderItemsList`](classes/SalesOrderItemsList.md) = SalesOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderItemHistory"`` = "ViewSalesOrderItemHistory" } ; `viewSalesOrderItemPrice`: \{ `I`: typeof [`SalesOrderItemProspectiveInfoRequest`](classes/SalesOrderItemProspectiveInfoRequest.md) = SalesOrderItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderItemPrice"`` = "ViewSalesOrderItemPrice" } ; `viewSalesOrderReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrderReference`](classes/SalesOrderReference.md) = SalesOrderReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderReferenceByID"`` = "ViewSalesOrderReferenceByID" } ; `viewSalesOrderReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrderReferencesList`](classes/SalesOrderReferencesList.md) = SalesOrderReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderReferences"`` = "ViewSalesOrderReferences" } ; `viewUnapprovedSalesOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesOrderItemsList`](classes/SalesOrderItemsList.md) = SalesOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSalesOrderItems"`` = "ViewUnapprovedSalesOrderItems" } ; `viewWithPagination`: \{ `I`: typeof [`SalesOrdersServicePaginationReq`](classes/SalesOrdersServicePaginationReq.md) = SalesOrdersServicePaginationReq; `O`: typeof [`SalesOrdersServicePaginationResponse`](classes/SalesOrdersServicePaginationResponse.md) = SalesOrdersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `accruedValue`: \{ `I`: typeof [`SalesOrdersServiceCountReq`](classes/SalesOrdersServiceCountReq.md) = SalesOrdersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addSalesOrderContact`: \{ `I`: typeof [`SalesOrdersServiceContactCreateRequest`](classes/SalesOrdersServiceContactCreateRequest.md) = SalesOrdersServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesOrderContact"`` = "AddSalesOrderContact" } ; `addSalesOrderItem`: \{ `I`: typeof [`SalesOrdersServiceItemCreateRequest`](classes/SalesOrdersServiceItemCreateRequest.md) = SalesOrdersServiceItemCreateRequest; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesOrderItem"`` = "AddSalesOrderItem" } ; `addSalesOrderReference`: \{ `I`: typeof [`SalesOrdersServiceReferenceCreateRequest`](classes/SalesOrdersServiceReferenceCreateRequest.md) = SalesOrdersServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesOrderReference"`` = "AddSalesOrderReference" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSalesOrderContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesOrderContact"`` = "ApproveSalesOrderContact" } ; `approveSalesOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesOrderItem"`` = "ApproveSalesOrderItem" } ; `approveSalesOrderReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesOrderReference"`` = "ApproveSalesOrderReference" } ; `autofill`: \{ `I`: typeof [`SalesOrdersServiceAutofillRequest`](classes/SalesOrdersServiceAutofillRequest.md) = SalesOrdersServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SalesOrdersServiceCountReq`](classes/SalesOrdersServiceCountReq.md) = SalesOrdersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SalesOrdersServiceCreateRequest`](classes/SalesOrdersServiceCreateRequest.md) = SalesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSalesOrderContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesOrderContact"`` = "DeleteSalesOrderContact" } ; `deleteSalesOrderItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesOrderItem"`` = "DeleteSalesOrderItem" } ; `deleteSalesOrderReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesOrderReference"`` = "DeleteSalesOrderReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`SalesOrdersServiceCreateRequest`](classes/SalesOrdersServiceCreateRequest.md) = SalesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SalesOrdersServiceUpdateRequest`](classes/SalesOrdersServiceUpdateRequest.md) = SalesOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SalesOrdersServiceFilterReq`](classes/SalesOrdersServiceFilterReq.md) = SalesOrdersServiceFilterReq; `O`: typeof [`SalesOrdersList`](classes/SalesOrdersList.md) = SalesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySalesOrderItem`: \{ `I`: typeof [`SalesOrdersServiceItemUpdateRequest`](classes/SalesOrdersServiceItemUpdateRequest.md) = SalesOrdersServiceItemUpdateRequest; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySalesOrderItem"`` = "ModifySalesOrderItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSalesOrderItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSalesOrderItems"`` = "ReorderSalesOrderItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SalesOrdersServiceUpdateRequest`](classes/SalesOrdersServiceUpdateRequest.md) = SalesOrdersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SalesOrdersServiceSearchAllReq`](classes/SalesOrdersServiceSearchAllReq.md) = SalesOrdersServiceSearchAllReq; `O`: typeof [`SalesOrdersList`](classes/SalesOrdersList.md) = SalesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SalesOrderItemsSearchRequest`](classes/SalesOrderItemsSearchRequest.md) = SalesOrderItemsSearchRequest; `O`: typeof [`SalesOrdersServicePaginatedItemsResponse`](classes/SalesOrdersServicePaginatedItemsResponse.md) = SalesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSalesOrderItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSalesOrderItems"`` = "UploadSalesOrderItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SalesOrdersList`](classes/SalesOrdersList.md) = SalesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrdersList`](classes/SalesOrdersList.md) = SalesOrdersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderAncillaryParameters`](classes/SalesOrderAncillaryParameters.md) = SalesOrderAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSalesOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesOrderItemsList`](classes/SalesOrderItemsList.md) = SalesOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSalesOrderItems"`` = "ViewApprovedSalesOrderItems" } ; `viewBillingStatistics`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderBillingStatistics`](classes/SalesOrderBillingStatistics.md) = SalesOrderBillingStatistics; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewBillingStatistics"`` = "ViewBillingStatistics" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrder`](classes/SalesOrder.md) = SalesOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrder`](classes/SalesOrder.md) = SalesOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrder`](classes/SalesOrder.md) = SalesOrder; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewInventoryMatch`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderInventoryMatchList`](classes/SalesOrderInventoryMatchList.md) = SalesOrderInventoryMatchList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryMatch"`` = "ViewInventoryMatch" } ; `viewInventoryStatistics`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderInventoryStatistics`](classes/SalesOrderInventoryStatistics.md) = SalesOrderInventoryStatistics; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryStatistics"`` = "ViewInventoryStatistics" } ; `viewPaginatedApprovedSalesOrderItems`: \{ `I`: typeof [`SalesOrderItemsSearchRequest`](classes/SalesOrderItemsSearchRequest.md) = SalesOrderItemsSearchRequest; `O`: typeof [`SalesOrdersServicePaginatedItemsResponse`](classes/SalesOrdersServicePaginatedItemsResponse.md) = SalesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSalesOrderItems"`` = "ViewPaginatedApprovedSalesOrderItems" } ; `viewPaginatedUnapprovedSalesOrderItems`: \{ `I`: typeof [`SalesOrderItemsSearchRequest`](classes/SalesOrderItemsSearchRequest.md) = SalesOrderItemsSearchRequest; `O`: typeof [`SalesOrdersServicePaginatedItemsResponse`](classes/SalesOrdersServicePaginatedItemsResponse.md) = SalesOrdersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSalesOrderItems"`` = "ViewPaginatedUnapprovedSalesOrderItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSalesOrderItem`: \{ `I`: typeof [`SalesOrderItemProspectiveInfoRequest`](classes/SalesOrderItemProspectiveInfoRequest.md) = SalesOrderItemProspectiveInfoRequest; `O`: typeof [`SalesOrdersServiceItemCreateRequest`](classes/SalesOrdersServiceItemCreateRequest.md) = SalesOrdersServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSalesOrderItem"`` = "ViewProspectiveSalesOrderItem" } ; `viewSalesOrderContactByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrderContact`](classes/SalesOrderContact.md) = SalesOrderContact; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderContactByID"`` = "ViewSalesOrderContactByID" } ; `viewSalesOrderContacts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesOrderContactsList`](classes/SalesOrderContactsList.md) = SalesOrderContactsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderContacts"`` = "ViewSalesOrderContacts" } ; `viewSalesOrderItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrderItem`](classes/SalesOrderItem.md) = SalesOrderItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderItemByID"`` = "ViewSalesOrderItemByID" } ; `viewSalesOrderItemHistory`: \{ `I`: typeof [`SalesOrderItemHistoryRequest`](classes/SalesOrderItemHistoryRequest.md) = SalesOrderItemHistoryRequest; `O`: typeof [`SalesOrderItemsList`](classes/SalesOrderItemsList.md) = SalesOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderItemHistory"`` = "ViewSalesOrderItemHistory" } ; `viewSalesOrderItemPrice`: \{ `I`: typeof [`SalesOrderItemProspectiveInfoRequest`](classes/SalesOrderItemProspectiveInfoRequest.md) = SalesOrderItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderItemPrice"`` = "ViewSalesOrderItemPrice" } ; `viewSalesOrderReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrderReference`](classes/SalesOrderReference.md) = SalesOrderReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderReferenceByID"`` = "ViewSalesOrderReferenceByID" } ; `viewSalesOrderReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesOrderReferencesList`](classes/SalesOrderReferencesList.md) = SalesOrderReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesOrderReferences"`` = "ViewSalesOrderReferences" } ; `viewUnapprovedSalesOrderItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesOrderItemsList`](classes/SalesOrderItemsList.md) = SalesOrderItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSalesOrderItems"`` = "ViewUnapprovedSalesOrderItems" } ; `viewWithPagination`: \{ `I`: typeof [`SalesOrdersServicePaginationReq`](classes/SalesOrdersServicePaginationReq.md) = SalesOrdersServicePaginationReq; `O`: typeof [`SalesOrdersServicePaginationResponse`](classes/SalesOrdersServicePaginationResponse.md) = SalesOrdersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.accruedValue` | \{ `I`: typeof [`SalesOrdersServiceCountReq`](classes/SalesOrdersServiceCountReq.md) = SalesOrdersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } |
 | `methods.accruedValue.I` | typeof [`SalesOrdersServiceCountReq`](classes/SalesOrdersServiceCountReq.md) |
 | `methods.accruedValue.O` | typeof [`SumResponse`](classes/SumResponse.md) |
@@ -31214,16 +31246,16 @@ from service Scailo.SalesOrdersService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`SalesOrdersServiceCreateRequest`](classes/SalesOrdersServiceCreateRequest.md) = SalesOrdersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`SalesOrdersServiceCreateRequest`](classes/SalesOrdersServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -31451,7 +31483,7 @@ from service Scailo.SalesQuotationsService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addSalesQuotationContact`: \{ `I`: typeof [`SalesQuotationsServiceContactCreateRequest`](classes/SalesQuotationsServiceContactCreateRequest.md) = SalesQuotationsServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesQuotationContact"`` = "AddSalesQuotationContact" } ; `addSalesQuotationItem`: \{ `I`: typeof [`SalesQuotationsServiceItemCreateRequest`](classes/SalesQuotationsServiceItemCreateRequest.md) = SalesQuotationsServiceItemCreateRequest; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesQuotationItem"`` = "AddSalesQuotationItem" } ; `addSalesQuotationReference`: \{ `I`: typeof [`SalesQuotationsServiceReferenceCreateRequest`](classes/SalesQuotationsServiceReferenceCreateRequest.md) = SalesQuotationsServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesQuotationReference"`` = "AddSalesQuotationReference" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSalesQuotationContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesQuotationContact"`` = "ApproveSalesQuotationContact" } ; `approveSalesQuotationItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesQuotationItem"`` = "ApproveSalesQuotationItem" } ; `approveSalesQuotationReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesQuotationReference"`` = "ApproveSalesQuotationReference" } ; `autofill`: \{ `I`: typeof [`SalesQuotationsServiceAutofillRequest`](classes/SalesQuotationsServiceAutofillRequest.md) = SalesQuotationsServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SalesQuotationsServiceCountReq`](classes/SalesQuotationsServiceCountReq.md) = SalesQuotationsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SalesQuotationsServiceCreateRequest`](classes/SalesQuotationsServiceCreateRequest.md) = SalesQuotationsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSalesQuotationContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesQuotationContact"`` = "DeleteSalesQuotationContact" } ; `deleteSalesQuotationItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesQuotationItem"`` = "DeleteSalesQuotationItem" } ; `deleteSalesQuotationReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesQuotationReference"`` = "DeleteSalesQuotationReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`SalesQuotationsServiceCreateRequest`](classes/SalesQuotationsServiceCreateRequest.md) = SalesQuotationsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SalesQuotationsServiceUpdateRequest`](classes/SalesQuotationsServiceUpdateRequest.md) = SalesQuotationsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SalesQuotationsServiceFilterReq`](classes/SalesQuotationsServiceFilterReq.md) = SalesQuotationsServiceFilterReq; `O`: typeof [`SalesQuotationsList`](classes/SalesQuotationsList.md) = SalesQuotationsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySalesQuotationItem`: \{ `I`: typeof [`SalesQuotationsServiceItemUpdateRequest`](classes/SalesQuotationsServiceItemUpdateRequest.md) = SalesQuotationsServiceItemUpdateRequest; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySalesQuotationItem"`` = "ModifySalesQuotationItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSalesQuotationItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSalesQuotationItems"`` = "ReorderSalesQuotationItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SalesQuotationsServiceUpdateRequest`](classes/SalesQuotationsServiceUpdateRequest.md) = SalesQuotationsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SalesQuotationsServiceSearchAllReq`](classes/SalesQuotationsServiceSearchAllReq.md) = SalesQuotationsServiceSearchAllReq; `O`: typeof [`SalesQuotationsList`](classes/SalesQuotationsList.md) = SalesQuotationsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SalesQuotationItemsSearchRequest`](classes/SalesQuotationItemsSearchRequest.md) = SalesQuotationItemsSearchRequest; `O`: typeof [`SalesQuotationsServicePaginatedItemsResponse`](classes/SalesQuotationsServicePaginatedItemsResponse.md) = SalesQuotationsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSalesQuotationItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSalesQuotationItems"`` = "UploadSalesQuotationItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SalesQuotationsList`](classes/SalesQuotationsList.md) = SalesQuotationsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesQuotationsList`](classes/SalesQuotationsList.md) = SalesQuotationsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewApprovedSalesQuotationItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesQuotationItemsList`](classes/SalesQuotationItemsList.md) = SalesQuotationItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSalesQuotationItems"`` = "ViewApprovedSalesQuotationItems" } ; `viewAssociatedSalesOrdersIDs`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesOrdersIDs"`` = "ViewAssociatedSalesOrdersIDs" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotation`](classes/SalesQuotation.md) = SalesQuotation; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesQuotation`](classes/SalesQuotation.md) = SalesQuotation; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotation`](classes/SalesQuotation.md) = SalesQuotation; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewPaginatedApprovedSalesQuotationItems`: \{ `I`: typeof [`SalesQuotationItemsSearchRequest`](classes/SalesQuotationItemsSearchRequest.md) = SalesQuotationItemsSearchRequest; `O`: typeof [`SalesQuotationsServicePaginatedItemsResponse`](classes/SalesQuotationsServicePaginatedItemsResponse.md) = SalesQuotationsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSalesQuotationItems"`` = "ViewPaginatedApprovedSalesQuotationItems" } ; `viewPaginatedUnapprovedSalesQuotationItems`: \{ `I`: typeof [`SalesQuotationItemsSearchRequest`](classes/SalesQuotationItemsSearchRequest.md) = SalesQuotationItemsSearchRequest; `O`: typeof [`SalesQuotationsServicePaginatedItemsResponse`](classes/SalesQuotationsServicePaginatedItemsResponse.md) = SalesQuotationsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSalesQuotationItems"`` = "ViewPaginatedUnapprovedSalesQuotationItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSalesQuotationItem`: \{ `I`: typeof [`SalesQuotationItemProspectiveInfoRequest`](classes/SalesQuotationItemProspectiveInfoRequest.md) = SalesQuotationItemProspectiveInfoRequest; `O`: typeof [`SalesQuotationsServiceItemCreateRequest`](classes/SalesQuotationsServiceItemCreateRequest.md) = SalesQuotationsServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSalesQuotationItem"`` = "ViewProspectiveSalesQuotationItem" } ; `viewSalesQuotationContactByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotationContact`](classes/SalesQuotationContact.md) = SalesQuotationContact; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationContactByID"`` = "ViewSalesQuotationContactByID" } ; `viewSalesQuotationContacts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesQuotationContactsList`](classes/SalesQuotationContactsList.md) = SalesQuotationContactsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationContacts"`` = "ViewSalesQuotationContacts" } ; `viewSalesQuotationItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotationItem`](classes/SalesQuotationItem.md) = SalesQuotationItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationItemByID"`` = "ViewSalesQuotationItemByID" } ; `viewSalesQuotationItemHistory`: \{ `I`: typeof [`SalesQuotationItemHistoryRequest`](classes/SalesQuotationItemHistoryRequest.md) = SalesQuotationItemHistoryRequest; `O`: typeof [`SalesQuotationItemsList`](classes/SalesQuotationItemsList.md) = SalesQuotationItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationItemHistory"`` = "ViewSalesQuotationItemHistory" } ; `viewSalesQuotationItemPrice`: \{ `I`: typeof [`SalesQuotationItemProspectiveInfoRequest`](classes/SalesQuotationItemProspectiveInfoRequest.md) = SalesQuotationItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationItemPrice"`` = "ViewSalesQuotationItemPrice" } ; `viewSalesQuotationReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotationReference`](classes/SalesQuotationReference.md) = SalesQuotationReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationReferenceByID"`` = "ViewSalesQuotationReferenceByID" } ; `viewSalesQuotationReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotationReferencesList`](classes/SalesQuotationReferencesList.md) = SalesQuotationReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationReferences"`` = "ViewSalesQuotationReferences" } ; `viewUnapprovedSalesQuotationItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesQuotationItemsList`](classes/SalesQuotationItemsList.md) = SalesQuotationItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSalesQuotationItems"`` = "ViewUnapprovedSalesQuotationItems" } ; `viewWithPagination`: \{ `I`: typeof [`SalesQuotationsServicePaginationReq`](classes/SalesQuotationsServicePaginationReq.md) = SalesQuotationsServicePaginationReq; `O`: typeof [`SalesQuotationsServicePaginationResponse`](classes/SalesQuotationsServicePaginationResponse.md) = SalesQuotationsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addSalesQuotationContact`: \{ `I`: typeof [`SalesQuotationsServiceContactCreateRequest`](classes/SalesQuotationsServiceContactCreateRequest.md) = SalesQuotationsServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesQuotationContact"`` = "AddSalesQuotationContact" } ; `addSalesQuotationItem`: \{ `I`: typeof [`SalesQuotationsServiceItemCreateRequest`](classes/SalesQuotationsServiceItemCreateRequest.md) = SalesQuotationsServiceItemCreateRequest; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesQuotationItem"`` = "AddSalesQuotationItem" } ; `addSalesQuotationReference`: \{ `I`: typeof [`SalesQuotationsServiceReferenceCreateRequest`](classes/SalesQuotationsServiceReferenceCreateRequest.md) = SalesQuotationsServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesQuotationReference"`` = "AddSalesQuotationReference" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSalesQuotationContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesQuotationContact"`` = "ApproveSalesQuotationContact" } ; `approveSalesQuotationItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesQuotationItem"`` = "ApproveSalesQuotationItem" } ; `approveSalesQuotationReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSalesQuotationReference"`` = "ApproveSalesQuotationReference" } ; `autofill`: \{ `I`: typeof [`SalesQuotationsServiceAutofillRequest`](classes/SalesQuotationsServiceAutofillRequest.md) = SalesQuotationsServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SalesQuotationsServiceCountReq`](classes/SalesQuotationsServiceCountReq.md) = SalesQuotationsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SalesQuotationsServiceCreateRequest`](classes/SalesQuotationsServiceCreateRequest.md) = SalesQuotationsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSalesQuotationContact`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesQuotationContact"`` = "DeleteSalesQuotationContact" } ; `deleteSalesQuotationItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesQuotationItem"`` = "DeleteSalesQuotationItem" } ; `deleteSalesQuotationReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSalesQuotationReference"`` = "DeleteSalesQuotationReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`SalesQuotationsServiceCreateRequest`](classes/SalesQuotationsServiceCreateRequest.md) = SalesQuotationsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SalesQuotationsServiceUpdateRequest`](classes/SalesQuotationsServiceUpdateRequest.md) = SalesQuotationsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SalesQuotationsServiceFilterReq`](classes/SalesQuotationsServiceFilterReq.md) = SalesQuotationsServiceFilterReq; `O`: typeof [`SalesQuotationsList`](classes/SalesQuotationsList.md) = SalesQuotationsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySalesQuotationItem`: \{ `I`: typeof [`SalesQuotationsServiceItemUpdateRequest`](classes/SalesQuotationsServiceItemUpdateRequest.md) = SalesQuotationsServiceItemUpdateRequest; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySalesQuotationItem"`` = "ModifySalesQuotationItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSalesQuotationItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSalesQuotationItems"`` = "ReorderSalesQuotationItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SalesQuotationsServiceUpdateRequest`](classes/SalesQuotationsServiceUpdateRequest.md) = SalesQuotationsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SalesQuotationsServiceSearchAllReq`](classes/SalesQuotationsServiceSearchAllReq.md) = SalesQuotationsServiceSearchAllReq; `O`: typeof [`SalesQuotationsList`](classes/SalesQuotationsList.md) = SalesQuotationsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SalesQuotationItemsSearchRequest`](classes/SalesQuotationItemsSearchRequest.md) = SalesQuotationItemsSearchRequest; `O`: typeof [`SalesQuotationsServicePaginatedItemsResponse`](classes/SalesQuotationsServicePaginatedItemsResponse.md) = SalesQuotationsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSalesQuotationItems`: \{ `I`: typeof [`IdentifierWithFile`](classes/IdentifierWithFile.md) = IdentifierWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSalesQuotationItems"`` = "UploadSalesQuotationItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SalesQuotationsList`](classes/SalesQuotationsList.md) = SalesQuotationsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesQuotationsList`](classes/SalesQuotationsList.md) = SalesQuotationsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewApprovedSalesQuotationItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesQuotationItemsList`](classes/SalesQuotationItemsList.md) = SalesQuotationItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSalesQuotationItems"`` = "ViewApprovedSalesQuotationItems" } ; `viewAssociatedSalesOrdersIDs`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAssociatedSalesOrdersIDs"`` = "ViewAssociatedSalesOrdersIDs" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotation`](classes/SalesQuotation.md) = SalesQuotation; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesQuotation`](classes/SalesQuotation.md) = SalesQuotation; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotation`](classes/SalesQuotation.md) = SalesQuotation; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewPaginatedApprovedSalesQuotationItems`: \{ `I`: typeof [`SalesQuotationItemsSearchRequest`](classes/SalesQuotationItemsSearchRequest.md) = SalesQuotationItemsSearchRequest; `O`: typeof [`SalesQuotationsServicePaginatedItemsResponse`](classes/SalesQuotationsServicePaginatedItemsResponse.md) = SalesQuotationsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSalesQuotationItems"`` = "ViewPaginatedApprovedSalesQuotationItems" } ; `viewPaginatedUnapprovedSalesQuotationItems`: \{ `I`: typeof [`SalesQuotationItemsSearchRequest`](classes/SalesQuotationItemsSearchRequest.md) = SalesQuotationItemsSearchRequest; `O`: typeof [`SalesQuotationsServicePaginatedItemsResponse`](classes/SalesQuotationsServicePaginatedItemsResponse.md) = SalesQuotationsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSalesQuotationItems"`` = "ViewPaginatedUnapprovedSalesQuotationItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSalesQuotationItem`: \{ `I`: typeof [`SalesQuotationItemProspectiveInfoRequest`](classes/SalesQuotationItemProspectiveInfoRequest.md) = SalesQuotationItemProspectiveInfoRequest; `O`: typeof [`SalesQuotationsServiceItemCreateRequest`](classes/SalesQuotationsServiceItemCreateRequest.md) = SalesQuotationsServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSalesQuotationItem"`` = "ViewProspectiveSalesQuotationItem" } ; `viewSalesQuotationContactByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotationContact`](classes/SalesQuotationContact.md) = SalesQuotationContact; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationContactByID"`` = "ViewSalesQuotationContactByID" } ; `viewSalesQuotationContacts`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SalesQuotationContactsList`](classes/SalesQuotationContactsList.md) = SalesQuotationContactsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationContacts"`` = "ViewSalesQuotationContacts" } ; `viewSalesQuotationItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotationItem`](classes/SalesQuotationItem.md) = SalesQuotationItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationItemByID"`` = "ViewSalesQuotationItemByID" } ; `viewSalesQuotationItemHistory`: \{ `I`: typeof [`SalesQuotationItemHistoryRequest`](classes/SalesQuotationItemHistoryRequest.md) = SalesQuotationItemHistoryRequest; `O`: typeof [`SalesQuotationItemsList`](classes/SalesQuotationItemsList.md) = SalesQuotationItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationItemHistory"`` = "ViewSalesQuotationItemHistory" } ; `viewSalesQuotationItemPrice`: \{ `I`: typeof [`SalesQuotationItemProspectiveInfoRequest`](classes/SalesQuotationItemProspectiveInfoRequest.md) = SalesQuotationItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationItemPrice"`` = "ViewSalesQuotationItemPrice" } ; `viewSalesQuotationReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotationReference`](classes/SalesQuotationReference.md) = SalesQuotationReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationReferenceByID"`` = "ViewSalesQuotationReferenceByID" } ; `viewSalesQuotationReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SalesQuotationReferencesList`](classes/SalesQuotationReferencesList.md) = SalesQuotationReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSalesQuotationReferences"`` = "ViewSalesQuotationReferences" } ; `viewUnapprovedSalesQuotationItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SalesQuotationItemsList`](classes/SalesQuotationItemsList.md) = SalesQuotationItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSalesQuotationItems"`` = "ViewUnapprovedSalesQuotationItems" } ; `viewWithPagination`: \{ `I`: typeof [`SalesQuotationsServicePaginationReq`](classes/SalesQuotationsServicePaginationReq.md) = SalesQuotationsServicePaginationReq; `O`: typeof [`SalesQuotationsServicePaginationResponse`](classes/SalesQuotationsServicePaginationResponse.md) = SalesQuotationsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addSalesQuotationContact` | \{ `I`: typeof [`SalesQuotationsServiceContactCreateRequest`](classes/SalesQuotationsServiceContactCreateRequest.md) = SalesQuotationsServiceContactCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSalesQuotationContact"`` = "AddSalesQuotationContact" } |
 | `methods.addSalesQuotationContact.I` | typeof [`SalesQuotationsServiceContactCreateRequest`](classes/SalesQuotationsServiceContactCreateRequest.md) |
 | `methods.addSalesQuotationContact.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -31542,16 +31574,16 @@ from service Scailo.SalesQuotationsService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`SalesQuotationsServiceCreateRequest`](classes/SalesQuotationsServiceCreateRequest.md) = SalesQuotationsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`SalesQuotationsServiceCreateRequest`](classes/SalesQuotationsServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -33737,7 +33769,7 @@ from service Scailo.SupplyOffersService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `accruedValue`: \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addSupplyOfferItem`: \{ `I`: typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) = SupplyOffersServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSupplyOfferItem"`` = "AddSupplyOfferItem" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSupplyOfferItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSupplyOfferItem"`` = "ApproveSupplyOfferItem" } ; `autofill`: \{ `I`: typeof [`SupplyOffersServiceAutofillRequest`](classes/SupplyOffersServiceAutofillRequest.md) = SupplyOffersServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSupplyOfferItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSupplyOfferItem"`` = "DeleteSupplyOfferItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) = SupplyOffersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SupplyOffersServiceFilterReq`](classes/SupplyOffersServiceFilterReq.md) = SupplyOffersServiceFilterReq; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySupplyOfferItem`: \{ `I`: typeof [`SupplyOffersServiceItemUpdateRequest`](classes/SupplyOffersServiceItemUpdateRequest.md) = SupplyOffersServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySupplyOfferItem"`` = "ModifySupplyOfferItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSupplyOfferItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSupplyOfferItems"`` = "ReorderSupplyOfferItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) = SupplyOffersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SupplyOffersServiceSearchAllReq`](classes/SupplyOffersServiceSearchAllReq.md) = SupplyOffersServiceSearchAllReq; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSupplyOfferItems`: \{ `I`: typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) = IdentifierUUIDWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSupplyOfferItems"`` = "UploadSupplyOfferItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOfferAncillaryParameters`](classes/SupplyOfferAncillaryParameters.md) = SupplyOfferAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSupplyOfferItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSupplyOfferItems"`` = "ViewApprovedSupplyOfferItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewPaginatedApprovedSupplyOfferItems`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSupplyOfferItems"`` = "ViewPaginatedApprovedSupplyOfferItems" } ; `viewPaginatedUnapprovedSupplyOfferItems`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSupplyOfferItems"`` = "ViewPaginatedUnapprovedSupplyOfferItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSupplyOfferItem`: \{ `I`: typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) = SupplyOfferItemProspectiveInfoRequest; `O`: typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) = SupplyOffersServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSupplyOfferItem"`` = "ViewProspectiveSupplyOfferItem" } ; `viewSupplyOfferItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOfferItem`](classes/SupplyOfferItem.md) = SupplyOfferItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemByID"`` = "ViewSupplyOfferItemByID" } ; `viewSupplyOfferItemHistory`: \{ `I`: typeof [`SupplyOfferItemHistoryRequest`](classes/SupplyOfferItemHistoryRequest.md) = SupplyOfferItemHistoryRequest; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemHistory"`` = "ViewSupplyOfferItemHistory" } ; `viewSupplyOfferItemPrice`: \{ `I`: typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) = SupplyOfferItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemPrice"`` = "ViewSupplyOfferItemPrice" } ; `viewUnapprovedSupplyOfferItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSupplyOfferItems"`` = "ViewUnapprovedSupplyOfferItems" } ; `viewWithPagination`: \{ `I`: typeof [`SupplyOffersServicePaginationReq`](classes/SupplyOffersServicePaginationReq.md) = SupplyOffersServicePaginationReq; `O`: typeof [`SupplyOffersServicePaginationResponse`](classes/SupplyOffersServicePaginationResponse.md) = SupplyOffersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `accruedValue`: \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addSupplyOfferItem`: \{ `I`: typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) = SupplyOffersServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddSupplyOfferItem"`` = "AddSupplyOfferItem" } ; `amend`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Amend"`` = "Amend" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveSupplyOfferItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveSupplyOfferItem"`` = "ApproveSupplyOfferItem" } ; `autofill`: \{ `I`: typeof [`SupplyOffersServiceAutofillRequest`](classes/SupplyOffersServiceAutofillRequest.md) = SupplyOffersServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteSupplyOfferItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteSupplyOfferItem"`` = "DeleteSupplyOfferItem" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) = SupplyOffersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`SupplyOffersServiceFilterReq`](classes/SupplyOffersServiceFilterReq.md) = SupplyOffersServiceFilterReq; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifySupplyOfferItem`: \{ `I`: typeof [`SupplyOffersServiceItemUpdateRequest`](classes/SupplyOffersServiceItemUpdateRequest.md) = SupplyOffersServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifySupplyOfferItem"`` = "ModifySupplyOfferItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderSupplyOfferItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderSupplyOfferItems"`` = "ReorderSupplyOfferItems" } ; `repeat`: \{ `I`: typeof [`RepeatWithDeliveryDate`](classes/RepeatWithDeliveryDate.md) = RepeatWithDeliveryDate; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`SupplyOffersServiceUpdateRequest`](classes/SupplyOffersServiceUpdateRequest.md) = SupplyOffersServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`SupplyOffersServiceSearchAllReq`](classes/SupplyOffersServiceSearchAllReq.md) = SupplyOffersServiceSearchAllReq; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadSupplyOfferItems`: \{ `I`: typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) = IdentifierUUIDWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadSupplyOfferItems"`` = "UploadSupplyOfferItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOffersList`](classes/SupplyOffersList.md) = SupplyOffersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAmendments`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`AmendmentLogsList`](classes/AmendmentLogsList.md) = AmendmentLogsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAmendments"`` = "ViewAmendments" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOfferAncillaryParameters`](classes/SupplyOfferAncillaryParameters.md) = SupplyOfferAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedSupplyOfferItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedSupplyOfferItems"`` = "ViewApprovedSupplyOfferItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOffer`](classes/SupplyOffer.md) = SupplyOffer; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewPaginatedApprovedSupplyOfferItems`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedSupplyOfferItems"`` = "ViewPaginatedApprovedSupplyOfferItems" } ; `viewPaginatedUnapprovedSupplyOfferItems`: \{ `I`: typeof [`SupplyOfferItemsSearchRequest`](classes/SupplyOfferItemsSearchRequest.md) = SupplyOfferItemsSearchRequest; `O`: typeof [`SupplyOffersServicePaginatedItemsResponse`](classes/SupplyOffersServicePaginatedItemsResponse.md) = SupplyOffersServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedSupplyOfferItems"`` = "ViewPaginatedUnapprovedSupplyOfferItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveSupplyOfferItem`: \{ `I`: typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) = SupplyOfferItemProspectiveInfoRequest; `O`: typeof [`SupplyOffersServiceItemCreateRequest`](classes/SupplyOffersServiceItemCreateRequest.md) = SupplyOffersServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveSupplyOfferItem"`` = "ViewProspectiveSupplyOfferItem" } ; `viewSupplyOfferItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`SupplyOfferItem`](classes/SupplyOfferItem.md) = SupplyOfferItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemByID"`` = "ViewSupplyOfferItemByID" } ; `viewSupplyOfferItemHistory`: \{ `I`: typeof [`SupplyOfferItemHistoryRequest`](classes/SupplyOfferItemHistoryRequest.md) = SupplyOfferItemHistoryRequest; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemHistory"`` = "ViewSupplyOfferItemHistory" } ; `viewSupplyOfferItemPrice`: \{ `I`: typeof [`SupplyOfferItemProspectiveInfoRequest`](classes/SupplyOfferItemProspectiveInfoRequest.md) = SupplyOfferItemProspectiveInfoRequest; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewSupplyOfferItemPrice"`` = "ViewSupplyOfferItemPrice" } ; `viewUnapprovedSupplyOfferItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`SupplyOfferItemsList`](classes/SupplyOfferItemsList.md) = SupplyOfferItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedSupplyOfferItems"`` = "ViewUnapprovedSupplyOfferItems" } ; `viewWithPagination`: \{ `I`: typeof [`SupplyOffersServicePaginationReq`](classes/SupplyOffersServicePaginationReq.md) = SupplyOffersServicePaginationReq; `O`: typeof [`SupplyOffersServicePaginationResponse`](classes/SupplyOffersServicePaginationResponse.md) = SupplyOffersServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.accruedValue` | \{ `I`: typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) = SupplyOffersServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } |
 | `methods.accruedValue.I` | typeof [`SupplyOffersServiceCountReq`](classes/SupplyOffersServiceCountReq.md) |
 | `methods.accruedValue.O` | typeof [`SumResponse`](classes/SumResponse.md) |
@@ -33803,16 +33835,16 @@ from service Scailo.SupplyOffersService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) = SupplyOffersServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`SupplyOffersServiceCreateRequest`](classes/SupplyOffersServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -35145,7 +35177,7 @@ from service Scailo.VendorInvoicesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `accruedValue`: \{ `I`: typeof [`VendorInvoicesServiceCountReq`](classes/VendorInvoicesServiceCountReq.md) = VendorInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addVendorInvoiceItem`: \{ `I`: typeof [`VendorInvoicesServiceItemCreateRequest`](classes/VendorInvoicesServiceItemCreateRequest.md) = VendorInvoicesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorInvoiceItem"`` = "AddVendorInvoiceItem" } ; `addVendorInvoiceReference`: \{ `I`: typeof [`VendorInvoicesServiceReferenceCreateRequest`](classes/VendorInvoicesServiceReferenceCreateRequest.md) = VendorInvoicesServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorInvoiceReference"`` = "AddVendorInvoiceReference" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveVendorInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveVendorInvoiceItem"`` = "ApproveVendorInvoiceItem" } ; `approveVendorInvoiceReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveVendorInvoiceReference"`` = "ApproveVendorInvoiceReference" } ; `autofill`: \{ `I`: typeof [`VendorInvoicesServiceAutofillRequest`](classes/VendorInvoicesServiceAutofillRequest.md) = VendorInvoicesServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`VendorInvoicesServiceCountReq`](classes/VendorInvoicesServiceCountReq.md) = VendorInvoicesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`VendorInvoicesServiceCreateRequest`](classes/VendorInvoicesServiceCreateRequest.md) = VendorInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteVendorInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorInvoiceItem"`` = "DeleteVendorInvoiceItem" } ; `deleteVendorInvoiceReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorInvoiceReference"`` = "DeleteVendorInvoiceReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`VendorInvoicesServiceCreateRequest`](classes/VendorInvoicesServiceCreateRequest.md) = VendorInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`VendorInvoicesServiceUpdateRequest`](classes/VendorInvoicesServiceUpdateRequest.md) = VendorInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`VendorInvoicesServiceFilterReq`](classes/VendorInvoicesServiceFilterReq.md) = VendorInvoicesServiceFilterReq; `O`: typeof [`VendorInvoicesList`](classes/VendorInvoicesList.md) = VendorInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyVendorInvoiceItem`: \{ `I`: typeof [`VendorInvoicesServiceItemUpdateRequest`](classes/VendorInvoicesServiceItemUpdateRequest.md) = VendorInvoicesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyVendorInvoiceItem"`` = "ModifyVendorInvoiceItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderVendorInvoiceItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderVendorInvoiceItems"`` = "ReorderVendorInvoiceItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`VendorInvoicesServiceUpdateRequest`](classes/VendorInvoicesServiceUpdateRequest.md) = VendorInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`VendorInvoicesServiceSearchAllReq`](classes/VendorInvoicesServiceSearchAllReq.md) = VendorInvoicesServiceSearchAllReq; `O`: typeof [`VendorInvoicesList`](classes/VendorInvoicesList.md) = VendorInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`VendorInvoiceItemsSearchRequest`](classes/VendorInvoiceItemsSearchRequest.md) = VendorInvoiceItemsSearchRequest; `O`: typeof [`VendorInvoicesServicePaginatedItemsResponse`](classes/VendorInvoicesServicePaginatedItemsResponse.md) = VendorInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadVendorInvoiceItems`: \{ `I`: typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) = IdentifierUUIDWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadVendorInvoiceItems"`` = "UploadVendorInvoiceItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) = VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`VendorInvoicesList`](classes/VendorInvoicesList.md) = VendorInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorInvoicesList`](classes/VendorInvoicesList.md) = VendorInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorInvoiceAncillaryParameters`](classes/VendorInvoiceAncillaryParameters.md) = VendorInvoiceAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedVendorInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`VendorInvoiceItemsList`](classes/VendorInvoiceItemsList.md) = VendorInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedVendorInvoiceItems"`` = "ViewApprovedVendorInvoiceItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoice`](classes/VendorInvoice.md) = VendorInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorInvoice`](classes/VendorInvoice.md) = VendorInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedVendorInvoiceItems`: \{ `I`: typeof [`VendorInvoiceItemsSearchRequest`](classes/VendorInvoiceItemsSearchRequest.md) = VendorInvoiceItemsSearchRequest; `O`: typeof [`VendorInvoicesServicePaginatedItemsResponse`](classes/VendorInvoicesServicePaginatedItemsResponse.md) = VendorInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedVendorInvoiceItems"`` = "ViewPaginatedApprovedVendorInvoiceItems" } ; `viewPaginatedUnapprovedVendorInvoiceItems`: \{ `I`: typeof [`VendorInvoiceItemsSearchRequest`](classes/VendorInvoiceItemsSearchRequest.md) = VendorInvoiceItemsSearchRequest; `O`: typeof [`VendorInvoicesServicePaginatedItemsResponse`](classes/VendorInvoicesServicePaginatedItemsResponse.md) = VendorInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedVendorInvoiceItems"`` = "ViewPaginatedUnapprovedVendorInvoiceItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveVendorInvoiceItem`: \{ `I`: typeof [`VendorInvoiceItemProspectiveInfoRequest`](classes/VendorInvoiceItemProspectiveInfoRequest.md) = VendorInvoiceItemProspectiveInfoRequest; `O`: typeof [`VendorInvoicesServiceItemCreateRequest`](classes/VendorInvoicesServiceItemCreateRequest.md) = VendorInvoicesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveVendorInvoiceItem"`` = "ViewProspectiveVendorInvoiceItem" } ; `viewReceiptStatistics`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoiceReceiptStatisticsList`](classes/VendorInvoiceReceiptStatisticsList.md) = VendorInvoiceReceiptStatisticsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewReceiptStatistics"`` = "ViewReceiptStatistics" } ; `viewUnapprovedVendorInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`VendorInvoiceItemsList`](classes/VendorInvoiceItemsList.md) = VendorInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedVendorInvoiceItems"`` = "ViewUnapprovedVendorInvoiceItems" } ; `viewVendorInvoiceItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoiceItem`](classes/VendorInvoiceItem.md) = VendorInvoiceItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceItemByID"`` = "ViewVendorInvoiceItemByID" } ; `viewVendorInvoiceItemHistory`: \{ `I`: typeof [`VendorInvoiceItemHistoryRequest`](classes/VendorInvoiceItemHistoryRequest.md) = VendorInvoiceItemHistoryRequest; `O`: typeof [`VendorInvoiceItemsList`](classes/VendorInvoiceItemsList.md) = VendorInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceItemHistory"`` = "ViewVendorInvoiceItemHistory" } ; `viewVendorInvoiceReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoiceReference`](classes/VendorInvoiceReference.md) = VendorInvoiceReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceReferenceByID"`` = "ViewVendorInvoiceReferenceByID" } ; `viewVendorInvoiceReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoiceReferencesList`](classes/VendorInvoiceReferencesList.md) = VendorInvoiceReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceReferences"`` = "ViewVendorInvoiceReferences" } ; `viewWithPagination`: \{ `I`: typeof [`VendorInvoicesServicePaginationReq`](classes/VendorInvoicesServicePaginationReq.md) = VendorInvoicesServicePaginationReq; `O`: typeof [`VendorInvoicesServicePaginationResponse`](classes/VendorInvoicesServicePaginationResponse.md) = VendorInvoicesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `accruedValue`: \{ `I`: typeof [`VendorInvoicesServiceCountReq`](classes/VendorInvoicesServiceCountReq.md) = VendorInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } ; `addVendorInvoiceItem`: \{ `I`: typeof [`VendorInvoicesServiceItemCreateRequest`](classes/VendorInvoicesServiceItemCreateRequest.md) = VendorInvoicesServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorInvoiceItem"`` = "AddVendorInvoiceItem" } ; `addVendorInvoiceReference`: \{ `I`: typeof [`VendorInvoicesServiceReferenceCreateRequest`](classes/VendorInvoicesServiceReferenceCreateRequest.md) = VendorInvoicesServiceReferenceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorInvoiceReference"`` = "AddVendorInvoiceReference" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveVendorInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveVendorInvoiceItem"`` = "ApproveVendorInvoiceItem" } ; `approveVendorInvoiceReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveVendorInvoiceReference"`` = "ApproveVendorInvoiceReference" } ; `autofill`: \{ `I`: typeof [`VendorInvoicesServiceAutofillRequest`](classes/VendorInvoicesServiceAutofillRequest.md) = VendorInvoicesServiceAutofillRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Autofill"`` = "Autofill" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `complete`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Complete"`` = "Complete" } ; `count`: \{ `I`: typeof [`VendorInvoicesServiceCountReq`](classes/VendorInvoicesServiceCountReq.md) = VendorInvoicesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`VendorInvoicesServiceCreateRequest`](classes/VendorInvoicesServiceCreateRequest.md) = VendorInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteVendorInvoiceItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorInvoiceItem"`` = "DeleteVendorInvoiceItem" } ; `deleteVendorInvoiceReference`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorInvoiceReference"`` = "DeleteVendorInvoiceReference" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`VendorInvoicesServiceCreateRequest`](classes/VendorInvoicesServiceCreateRequest.md) = VendorInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`VendorInvoicesServiceUpdateRequest`](classes/VendorInvoicesServiceUpdateRequest.md) = VendorInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`VendorInvoicesServiceFilterReq`](classes/VendorInvoicesServiceFilterReq.md) = VendorInvoicesServiceFilterReq; `O`: typeof [`VendorInvoicesList`](classes/VendorInvoicesList.md) = VendorInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyVendorInvoiceItem`: \{ `I`: typeof [`VendorInvoicesServiceItemUpdateRequest`](classes/VendorInvoicesServiceItemUpdateRequest.md) = VendorInvoicesServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyVendorInvoiceItem"`` = "ModifyVendorInvoiceItem" } ; `reopen`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reopen"`` = "Reopen" } ; `reorderVendorInvoiceItems`: \{ `I`: typeof [`ReorderItemsRequest`](classes/ReorderItemsRequest.md) = ReorderItemsRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReorderVendorInvoiceItems"`` = "ReorderVendorInvoiceItems" } ; `repeat`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Repeat"`` = "Repeat" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`VendorInvoicesServiceUpdateRequest`](classes/VendorInvoicesServiceUpdateRequest.md) = VendorInvoicesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`VendorInvoicesServiceSearchAllReq`](classes/VendorInvoicesServiceSearchAllReq.md) = VendorInvoicesServiceSearchAllReq; `O`: typeof [`VendorInvoicesList`](classes/VendorInvoicesList.md) = VendorInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`VendorInvoiceItemsSearchRequest`](classes/VendorInvoiceItemsSearchRequest.md) = VendorInvoiceItemsSearchRequest; `O`: typeof [`VendorInvoicesServicePaginatedItemsResponse`](classes/VendorInvoicesServicePaginatedItemsResponse.md) = VendorInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadVendorInvoiceItems`: \{ `I`: typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) = IdentifierUUIDWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadVendorInvoiceItems"`` = "UploadVendorInvoiceItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAddedFamilyQuantityForSource`: \{ `I`: typeof [`VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest`](classes/VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest.md) = VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest; `O`: typeof [`DualQuantitiesResponse`](classes/DualQuantitiesResponse.md) = DualQuantitiesResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAddedFamilyQuantityForSource"`` = "ViewAddedFamilyQuantityForSource" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`VendorInvoicesList`](classes/VendorInvoicesList.md) = VendorInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorInvoicesList`](classes/VendorInvoicesList.md) = VendorInvoicesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewAncillaryParametersByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorInvoiceAncillaryParameters`](classes/VendorInvoiceAncillaryParameters.md) = VendorInvoiceAncillaryParameters; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAncillaryParametersByUUID"`` = "ViewAncillaryParametersByUUID" } ; `viewApprovedVendorInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`VendorInvoiceItemsList`](classes/VendorInvoiceItemsList.md) = VendorInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewApprovedVendorInvoiceItems"`` = "ViewApprovedVendorInvoiceItems" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoice`](classes/VendorInvoice.md) = VendorInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorInvoice`](classes/VendorInvoice.md) = VendorInvoice; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedVendorInvoiceItems`: \{ `I`: typeof [`VendorInvoiceItemsSearchRequest`](classes/VendorInvoiceItemsSearchRequest.md) = VendorInvoiceItemsSearchRequest; `O`: typeof [`VendorInvoicesServicePaginatedItemsResponse`](classes/VendorInvoicesServicePaginatedItemsResponse.md) = VendorInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedVendorInvoiceItems"`` = "ViewPaginatedApprovedVendorInvoiceItems" } ; `viewPaginatedUnapprovedVendorInvoiceItems`: \{ `I`: typeof [`VendorInvoiceItemsSearchRequest`](classes/VendorInvoiceItemsSearchRequest.md) = VendorInvoiceItemsSearchRequest; `O`: typeof [`VendorInvoicesServicePaginatedItemsResponse`](classes/VendorInvoicesServicePaginatedItemsResponse.md) = VendorInvoicesServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedVendorInvoiceItems"`` = "ViewPaginatedUnapprovedVendorInvoiceItems" } ; `viewProspectiveFamilies`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveFamilies"`` = "ViewProspectiveFamilies" } ; `viewProspectiveVendorInvoiceItem`: \{ `I`: typeof [`VendorInvoiceItemProspectiveInfoRequest`](classes/VendorInvoiceItemProspectiveInfoRequest.md) = VendorInvoiceItemProspectiveInfoRequest; `O`: typeof [`VendorInvoicesServiceItemCreateRequest`](classes/VendorInvoicesServiceItemCreateRequest.md) = VendorInvoicesServiceItemCreateRequest; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewProspectiveVendorInvoiceItem"`` = "ViewProspectiveVendorInvoiceItem" } ; `viewReceiptStatistics`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoiceReceiptStatisticsList`](classes/VendorInvoiceReceiptStatisticsList.md) = VendorInvoiceReceiptStatisticsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewReceiptStatistics"`` = "ViewReceiptStatistics" } ; `viewUnapprovedVendorInvoiceItems`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`VendorInvoiceItemsList`](classes/VendorInvoiceItemsList.md) = VendorInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewUnapprovedVendorInvoiceItems"`` = "ViewUnapprovedVendorInvoiceItems" } ; `viewVendorInvoiceItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoiceItem`](classes/VendorInvoiceItem.md) = VendorInvoiceItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceItemByID"`` = "ViewVendorInvoiceItemByID" } ; `viewVendorInvoiceItemHistory`: \{ `I`: typeof [`VendorInvoiceItemHistoryRequest`](classes/VendorInvoiceItemHistoryRequest.md) = VendorInvoiceItemHistoryRequest; `O`: typeof [`VendorInvoiceItemsList`](classes/VendorInvoiceItemsList.md) = VendorInvoiceItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceItemHistory"`` = "ViewVendorInvoiceItemHistory" } ; `viewVendorInvoiceReferenceByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoiceReference`](classes/VendorInvoiceReference.md) = VendorInvoiceReference; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceReferenceByID"`` = "ViewVendorInvoiceReferenceByID" } ; `viewVendorInvoiceReferences`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorInvoiceReferencesList`](classes/VendorInvoiceReferencesList.md) = VendorInvoiceReferencesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceReferences"`` = "ViewVendorInvoiceReferences" } ; `viewWithPagination`: \{ `I`: typeof [`VendorInvoicesServicePaginationReq`](classes/VendorInvoicesServicePaginationReq.md) = VendorInvoicesServicePaginationReq; `O`: typeof [`VendorInvoicesServicePaginationResponse`](classes/VendorInvoicesServicePaginationResponse.md) = VendorInvoicesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.accruedValue` | \{ `I`: typeof [`VendorInvoicesServiceCountReq`](classes/VendorInvoicesServiceCountReq.md) = VendorInvoicesServiceCountReq; `O`: typeof [`SumResponse`](classes/SumResponse.md) = SumResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AccruedValue"`` = "AccruedValue" } |
 | `methods.accruedValue.I` | typeof [`VendorInvoicesServiceCountReq`](classes/VendorInvoicesServiceCountReq.md) |
 | `methods.accruedValue.O` | typeof [`SumResponse`](classes/SumResponse.md) |
@@ -35221,16 +35253,16 @@ from service Scailo.VendorInvoicesService
 | `methods.discard.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.discard.kind` | `Unary` |
 | `methods.discard.name` | ``"Discard"`` |
-| `methods.downloadAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } |
-| `methods.downloadAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
-| `methods.downloadAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
-| `methods.downloadAsCSV.kind` | `Unary` |
-| `methods.downloadAsCSV.name` | ``"DownloadAsCSV"`` |
 | `methods.downloadByUUID` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } |
 | `methods.downloadByUUID.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`VendorInvoicesServiceCreateRequest`](classes/VendorInvoicesServiceCreateRequest.md) = VendorInvoicesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`VendorInvoicesServiceCreateRequest`](classes/VendorInvoicesServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -35616,7 +35648,7 @@ from service Scailo.VendorsService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `addVendorItem`: \{ `I`: typeof [`VendorsServiceItemCreateRequest`](classes/VendorsServiceItemCreateRequest.md) = VendorsServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorItem"`` = "AddVendorItem" } ; `addVendorUser`: \{ `I`: typeof [`VendorsServiceUserCreateRequest`](classes/VendorsServiceUserCreateRequest.md) = VendorsServiceUserCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorUser"`` = "AddVendorUser" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveVendorItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveVendorItem"`` = "ApproveVendorItem" } ; `approveVendorUser`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveVendorUser"`` = "ApproveVendorUser" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `count`: \{ `I`: typeof [`VendorsServiceCountReq`](classes/VendorsServiceCountReq.md) = VendorsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`VendorsServiceCreateRequest`](classes/VendorsServiceCreateRequest.md) = VendorsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteVendorItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorItem"`` = "DeleteVendorItem" } ; `deleteVendorUser`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorUser"`` = "DeleteVendorUser" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `draft`: \{ `I`: typeof [`VendorsServiceCreateRequest`](classes/VendorsServiceCreateRequest.md) = VendorsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`VendorsServiceUpdateRequest`](classes/VendorsServiceUpdateRequest.md) = VendorsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`VendorsServiceFilterReq`](classes/VendorsServiceFilterReq.md) = VendorsServiceFilterReq; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyVendorItem`: \{ `I`: typeof [`VendorsServiceItemUpdateRequest`](classes/VendorsServiceItemUpdateRequest.md) = VendorsServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyVendorItem"`` = "ModifyVendorItem" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`VendorsServiceUpdateRequest`](classes/VendorsServiceUpdateRequest.md) = VendorsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`VendorsServiceSearchAllReq`](classes/VendorsServiceSearchAllReq.md) = VendorsServiceSearchAllReq; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`VendorItemsSearchRequest`](classes/VendorItemsSearchRequest.md) = VendorItemsSearchRequest; `O`: typeof [`VendorsServicePaginatedItemsResponse`](classes/VendorsServicePaginatedItemsResponse.md) = VendorsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `searchRequiredItemsWithPagination`: \{ `I`: typeof [`VendorItemsSearchRequest`](classes/VendorItemsSearchRequest.md) = VendorItemsSearchRequest; `O`: typeof [`VendorsServicePaginatedRequiredItemsResponse`](classes/VendorsServicePaginatedRequiredItemsResponse.md) = VendorsServicePaginatedRequiredItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchRequiredItemsWithPagination"`` = "SearchRequiredItemsWithPagination" } ; `searchVendorUsersWithPagination`: \{ `I`: typeof [`VendorUsersSearchRequest`](classes/VendorUsersSearchRequest.md) = VendorUsersSearchRequest; `O`: typeof [`VendorsServicePaginatedUsersResponse`](classes/VendorsServicePaginatedUsersResponse.md) = VendorsServicePaginatedUsersResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchVendorUsersWithPagination"`` = "SearchVendorUsersWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Vendor`](classes/Vendor.md) = Vendor; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Vendor`](classes/Vendor.md) = Vendor; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedVendorItems`: \{ `I`: typeof [`VendorItemsSearchRequest`](classes/VendorItemsSearchRequest.md) = VendorItemsSearchRequest; `O`: typeof [`VendorsServicePaginatedItemsResponse`](classes/VendorsServicePaginatedItemsResponse.md) = VendorsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedVendorItems"`` = "ViewPaginatedApprovedVendorItems" } ; `viewPaginatedUnapprovedVendorItems`: \{ `I`: typeof [`VendorItemsSearchRequest`](classes/VendorItemsSearchRequest.md) = VendorItemsSearchRequest; `O`: typeof [`VendorsServicePaginatedItemsResponse`](classes/VendorsServicePaginatedItemsResponse.md) = VendorsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedVendorItems"`` = "ViewPaginatedUnapprovedVendorItems" } ; `viewVendorItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorItem`](classes/VendorItem.md) = VendorItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorItemByID"`` = "ViewVendorItemByID" } ; `viewVendorItemHistory`: \{ `I`: typeof [`VendorItemHistoryRequest`](classes/VendorItemHistoryRequest.md) = VendorItemHistoryRequest; `O`: typeof [`VendorItemsList`](classes/VendorItemsList.md) = VendorItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorItemHistory"`` = "ViewVendorItemHistory" } ; `viewVendorUserByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorUser`](classes/VendorUser.md) = VendorUser; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorUserByID"`` = "ViewVendorUserByID" } ; `viewVendorUsers`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorUsersList`](classes/VendorUsersList.md) = VendorUsersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorUsers"`` = "ViewVendorUsers" } ; `viewVendorsForFamily`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorsForFamily"`` = "ViewVendorsForFamily" } ; `viewWithPagination`: \{ `I`: typeof [`VendorsServicePaginationReq`](classes/VendorsServicePaginationReq.md) = VendorsServicePaginationReq; `O`: typeof [`VendorsServicePaginationResponse`](classes/VendorsServicePaginationResponse.md) = VendorsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `addVendorItem`: \{ `I`: typeof [`VendorsServiceItemCreateRequest`](classes/VendorsServiceItemCreateRequest.md) = VendorsServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorItem"`` = "AddVendorItem" } ; `addVendorUser`: \{ `I`: typeof [`VendorsServiceUserCreateRequest`](classes/VendorsServiceUserCreateRequest.md) = VendorsServiceUserCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorUser"`` = "AddVendorUser" } ; `approve`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Approve"`` = "Approve" } ; `approveVendorItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveVendorItem"`` = "ApproveVendorItem" } ; `approveVendorUser`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ApproveVendorUser"`` = "ApproveVendorUser" } ; `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `count`: \{ `I`: typeof [`VendorsServiceCountReq`](classes/VendorsServiceCountReq.md) = VendorsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `countInStatus`: \{ `I`: typeof [`CountInSLCStatusRequest`](classes/CountInSLCStatusRequest.md) = CountInSLCStatusRequest; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CountInStatus"`` = "CountInStatus" } ; `create`: \{ `I`: typeof [`VendorsServiceCreateRequest`](classes/VendorsServiceCreateRequest.md) = VendorsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `deleteVendorItem`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorItem"`` = "DeleteVendorItem" } ; `deleteVendorUser`: \{ `I`: typeof [`IdentifierWithUserComment`](classes/IdentifierWithUserComment.md) = IdentifierWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DeleteVendorUser"`` = "DeleteVendorUser" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadByUUID"`` = "DownloadByUUID" } ; `downloadItemsAsCSV`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } ; `draft`: \{ `I`: typeof [`VendorsServiceCreateRequest`](classes/VendorsServiceCreateRequest.md) = VendorsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } ; `draftUpdate`: \{ `I`: typeof [`VendorsServiceUpdateRequest`](classes/VendorsServiceUpdateRequest.md) = VendorsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DraftUpdate"`` = "DraftUpdate" } ; `filter`: \{ `I`: typeof [`VendorsServiceFilterReq`](classes/VendorsServiceFilterReq.md) = VendorsServiceFilterReq; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `halt`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Halt"`` = "Halt" } ; `modifyVendorItem`: \{ `I`: typeof [`VendorsServiceItemUpdateRequest`](classes/VendorsServiceItemUpdateRequest.md) = VendorsServiceItemUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ModifyVendorItem"`` = "ModifyVendorItem" } ; `restore`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Restore"`` = "Restore" } ; `revisionUpdate`: \{ `I`: typeof [`VendorsServiceUpdateRequest`](classes/VendorsServiceUpdateRequest.md) = VendorsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"RevisionUpdate"`` = "RevisionUpdate" } ; `searchAll`: \{ `I`: typeof [`VendorsServiceSearchAllReq`](classes/VendorsServiceSearchAllReq.md) = VendorsServiceSearchAllReq; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `searchItemsWithPagination`: \{ `I`: typeof [`VendorItemsSearchRequest`](classes/VendorItemsSearchRequest.md) = VendorItemsSearchRequest; `O`: typeof [`VendorsServicePaginatedItemsResponse`](classes/VendorsServicePaginatedItemsResponse.md) = VendorsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchItemsWithPagination"`` = "SearchItemsWithPagination" } ; `searchRequiredItemsWithPagination`: \{ `I`: typeof [`VendorItemsSearchRequest`](classes/VendorItemsSearchRequest.md) = VendorItemsSearchRequest; `O`: typeof [`VendorsServicePaginatedRequiredItemsResponse`](classes/VendorsServicePaginatedRequiredItemsResponse.md) = VendorsServicePaginatedRequiredItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchRequiredItemsWithPagination"`` = "SearchRequiredItemsWithPagination" } ; `searchVendorUsersWithPagination`: \{ `I`: typeof [`VendorUsersSearchRequest`](classes/VendorUsersSearchRequest.md) = VendorUsersSearchRequest; `O`: typeof [`VendorsServicePaginatedUsersResponse`](classes/VendorsServicePaginatedUsersResponse.md) = VendorsServicePaginatedUsersResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchVendorUsersWithPagination"`` = "SearchVendorUsersWithPagination" } ; `sendEmail`: \{ `I`: typeof [`IdentifierWithEmailAttributes`](classes/IdentifierWithEmailAttributes.md) = IdentifierWithEmailAttributes; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendEmail"`` = "SendEmail" } ; `sendForRevision`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRevision"`` = "SendForRevision" } ; `sendForVerification`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForVerification"`` = "SendForVerification" } ; `uploadVendorItems`: \{ `I`: typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) = IdentifierUUIDWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadVendorItems"`` = "UploadVendorItems" } ; `verify`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewAllForEntityUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAllForEntityUUID"`` = "ViewAllForEntityUUID" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Vendor`](classes/Vendor.md) = Vendor; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Vendor`](classes/Vendor.md) = Vendor; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewPaginatedApprovedVendorItems`: \{ `I`: typeof [`VendorItemsSearchRequest`](classes/VendorItemsSearchRequest.md) = VendorItemsSearchRequest; `O`: typeof [`VendorsServicePaginatedItemsResponse`](classes/VendorsServicePaginatedItemsResponse.md) = VendorsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedApprovedVendorItems"`` = "ViewPaginatedApprovedVendorItems" } ; `viewPaginatedUnapprovedVendorItems`: \{ `I`: typeof [`VendorItemsSearchRequest`](classes/VendorItemsSearchRequest.md) = VendorItemsSearchRequest; `O`: typeof [`VendorsServicePaginatedItemsResponse`](classes/VendorsServicePaginatedItemsResponse.md) = VendorsServicePaginatedItemsResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewPaginatedUnapprovedVendorItems"`` = "ViewPaginatedUnapprovedVendorItems" } ; `viewVendorItemByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorItem`](classes/VendorItem.md) = VendorItem; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorItemByID"`` = "ViewVendorItemByID" } ; `viewVendorItemHistory`: \{ `I`: typeof [`VendorItemHistoryRequest`](classes/VendorItemHistoryRequest.md) = VendorItemHistoryRequest; `O`: typeof [`VendorItemsList`](classes/VendorItemsList.md) = VendorItemsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorItemHistory"`` = "ViewVendorItemHistory" } ; `viewVendorUserByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorUser`](classes/VendorUser.md) = VendorUser; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorUserByID"`` = "ViewVendorUserByID" } ; `viewVendorUsers`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorUsersList`](classes/VendorUsersList.md) = VendorUsersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorUsers"`` = "ViewVendorUsers" } ; `viewVendorsForFamily`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`VendorsList`](classes/VendorsList.md) = VendorsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorsForFamily"`` = "ViewVendorsForFamily" } ; `viewWithPagination`: \{ `I`: typeof [`VendorsServicePaginationReq`](classes/VendorsServicePaginationReq.md) = VendorsServicePaginationReq; `O`: typeof [`VendorsServicePaginationResponse`](classes/VendorsServicePaginationResponse.md) = VendorsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.addVendorItem` | \{ `I`: typeof [`VendorsServiceItemCreateRequest`](classes/VendorsServiceItemCreateRequest.md) = VendorsServiceItemCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"AddVendorItem"`` = "AddVendorItem" } |
 | `methods.addVendorItem.I` | typeof [`VendorsServiceItemCreateRequest`](classes/VendorsServiceItemCreateRequest.md) |
 | `methods.addVendorItem.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -35682,6 +35714,11 @@ from service Scailo.VendorsService
 | `methods.downloadByUUID.O` | typeof [`StandardFile`](classes/StandardFile.md) |
 | `methods.downloadByUUID.kind` | `Unary` |
 | `methods.downloadByUUID.name` | ``"DownloadByUUID"`` |
+| `methods.downloadItemsAsCSV` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadItemsAsCSV"`` = "DownloadItemsAsCSV" } |
+| `methods.downloadItemsAsCSV.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.downloadItemsAsCSV.O` | typeof [`StandardFile`](classes/StandardFile.md) |
+| `methods.downloadItemsAsCSV.kind` | `Unary` |
+| `methods.downloadItemsAsCSV.name` | ``"DownloadItemsAsCSV"`` |
 | `methods.draft` | \{ `I`: typeof [`VendorsServiceCreateRequest`](classes/VendorsServiceCreateRequest.md) = VendorsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Draft"`` = "Draft" } |
 | `methods.draft.I` | typeof [`VendorsServiceCreateRequest`](classes/VendorsServiceCreateRequest.md) |
 | `methods.draft.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -35752,6 +35789,11 @@ from service Scailo.VendorsService
 | `methods.sendForVerification.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
 | `methods.sendForVerification.kind` | `Unary` |
 | `methods.sendForVerification.name` | ``"SendForVerification"`` |
+| `methods.uploadVendorItems` | \{ `I`: typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) = IdentifierUUIDWithFile; `O`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"UploadVendorItems"`` = "UploadVendorItems" } |
+| `methods.uploadVendorItems.I` | typeof [`IdentifierUUIDWithFile`](classes/IdentifierUUIDWithFile.md) |
+| `methods.uploadVendorItems.O` | typeof [`IdentifiersList`](classes/IdentifiersList.md) |
+| `methods.uploadVendorItems.kind` | `Unary` |
+| `methods.uploadVendorItems.name` | ``"UploadVendorItems"`` |
 | `methods.verify` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Verify"`` = "Verify" } |
 | `methods.verify.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
 | `methods.verify.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |

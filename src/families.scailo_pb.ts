@@ -2568,11 +2568,11 @@ export class FamilyQCGroupsList extends Message<FamilyQCGroupsList> {
 
 /**
  *
- * Describes the parameters necessary to adjust a family's price
+ * Describes the parameters necessary to update a family's price
  *
- * @generated from message Scailo.FamiliesServiceAdjustPriceRequest
+ * @generated from message Scailo.FamiliesServiceUpdatePriceRequest
  */
-export class FamiliesServiceAdjustPriceRequest extends Message<FamiliesServiceAdjustPriceRequest> {
+export class FamiliesServiceUpdatePriceRequest extends Message<FamiliesServiceUpdatePriceRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -2594,33 +2594,91 @@ export class FamiliesServiceAdjustPriceRequest extends Message<FamiliesServiceAd
    */
   price = protoInt64.zero;
 
-  constructor(data?: PartialMessage<FamiliesServiceAdjustPriceRequest>) {
+  constructor(data?: PartialMessage<FamiliesServiceUpdatePriceRequest>) {
     super();
     proto3.util.initPartial(data, this);
   }
 
   static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "Scailo.FamiliesServiceAdjustPriceRequest";
+  static readonly typeName = "Scailo.FamiliesServiceUpdatePriceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceAdjustPriceRequest {
-    return new FamiliesServiceAdjustPriceRequest().fromBinary(bytes, options);
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdatePriceRequest {
+    return new FamiliesServiceUpdatePriceRequest().fromBinary(bytes, options);
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceAdjustPriceRequest {
-    return new FamiliesServiceAdjustPriceRequest().fromJson(jsonValue, options);
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceUpdatePriceRequest {
+    return new FamiliesServiceUpdatePriceRequest().fromJson(jsonValue, options);
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceAdjustPriceRequest {
-    return new FamiliesServiceAdjustPriceRequest().fromJsonString(jsonString, options);
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceUpdatePriceRequest {
+    return new FamiliesServiceUpdatePriceRequest().fromJsonString(jsonString, options);
   }
 
-  static equals(a: FamiliesServiceAdjustPriceRequest | PlainMessage<FamiliesServiceAdjustPriceRequest> | undefined, b: FamiliesServiceAdjustPriceRequest | PlainMessage<FamiliesServiceAdjustPriceRequest> | undefined): boolean {
-    return proto3.util.equals(FamiliesServiceAdjustPriceRequest, a, b);
+  static equals(a: FamiliesServiceUpdatePriceRequest | PlainMessage<FamiliesServiceUpdatePriceRequest> | undefined, b: FamiliesServiceUpdatePriceRequest | PlainMessage<FamiliesServiceUpdatePriceRequest> | undefined): boolean {
+    return proto3.util.equals(FamiliesServiceUpdatePriceRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters necessary to update a family's min stock to maintain
+ *
+ * @generated from message Scailo.FamiliesServiceUpdateMinStockToMaintainRequest
+ */
+export class FamiliesServiceUpdateMinStockToMaintainRequest extends Message<FamiliesServiceUpdateMinStockToMaintainRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the family
+   *
+   * @generated from field: string uuid = 10;
+   */
+  uuid = "";
+
+  /**
+   * Stores the minimum stock to maintain
+   *
+   * @generated from field: uint64 min_stock_to_maintain = 27;
+   */
+  minStockToMaintain = protoInt64.zero;
+
+  constructor(data?: PartialMessage<FamiliesServiceUpdateMinStockToMaintainRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamiliesServiceUpdateMinStockToMaintainRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdateMinStockToMaintainRequest {
+    return new FamiliesServiceUpdateMinStockToMaintainRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateMinStockToMaintainRequest {
+    return new FamiliesServiceUpdateMinStockToMaintainRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateMinStockToMaintainRequest {
+    return new FamiliesServiceUpdateMinStockToMaintainRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamiliesServiceUpdateMinStockToMaintainRequest | PlainMessage<FamiliesServiceUpdateMinStockToMaintainRequest> | undefined, b: FamiliesServiceUpdateMinStockToMaintainRequest | PlainMessage<FamiliesServiceUpdateMinStockToMaintainRequest> | undefined): boolean {
+    return proto3.util.equals(FamiliesServiceUpdateMinStockToMaintainRequest, a, b);
   }
 }
 

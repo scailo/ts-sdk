@@ -22,6 +22,7 @@ from message Scailo.LabelsServiceFilterReq
 
 ### Properties
 
+- [code](LabelsServiceFilterReq.md#code)
 - [count](LabelsServiceFilterReq.md#count)
 - [creationTimestampEnd](LabelsServiceFilterReq.md#creationtimestampend)
 - [creationTimestampStart](LabelsServiceFilterReq.md#creationtimestampstart)
@@ -76,9 +77,25 @@ Message\&lt;LabelsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/labels.scailo_pb.ts:517
+src/labels.scailo_pb.ts:556
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the label is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/labels.scailo_pb.ts:554
+
+___
 
 ### count
 
@@ -92,7 +109,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:452
+src/labels.scailo_pb.ts:484
 
 ___
 
@@ -108,7 +125,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:487
+src/labels.scailo_pb.ts:519
 
 ___
 
@@ -124,7 +141,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:480
+src/labels.scailo_pb.ts:512
 
 ___
 
@@ -140,7 +157,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:508
+src/labels.scailo_pb.ts:540
 
 ___
 
@@ -156,7 +173,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:445
+src/labels.scailo_pb.ts:477
 
 ___
 
@@ -172,7 +189,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:501
+src/labels.scailo_pb.ts:533
 
 ___
 
@@ -188,7 +205,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:494
+src/labels.scailo_pb.ts:526
 
 ___
 
@@ -204,7 +221,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:515
+src/labels.scailo_pb.ts:547
 
 ___
 
@@ -220,7 +237,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:459
+src/labels.scailo_pb.ts:491
 
 ___
 
@@ -236,7 +253,7 @@ from field: Scailo.LABEL_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:473
+src/labels.scailo_pb.ts:505
 
 ___
 
@@ -252,7 +269,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:466
+src/labels.scailo_pb.ts:498
 
 ___
 
@@ -262,7 +279,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:524
+src/labels.scailo_pb.ts:563
 
 ___
 
@@ -272,7 +289,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:522
+src/labels.scailo_pb.ts:561
 
 ___
 
@@ -282,7 +299,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:523
+src/labels.scailo_pb.ts:562
 
 ## Methods
 
@@ -570,7 +587,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:550
+src/labels.scailo_pb.ts:590
 
 ___
 
@@ -591,7 +608,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:538
+src/labels.scailo_pb.ts:578
 
 ___
 
@@ -612,7 +629,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:542
+src/labels.scailo_pb.ts:582
 
 ___
 
@@ -633,4 +650,4 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:546
+src/labels.scailo_pb.ts:586

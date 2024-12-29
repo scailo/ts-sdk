@@ -106,6 +106,13 @@ export enum TAX_GROUP_SORT_KEY {
    * @generated from enum value: TAX_GROUP_SORT_KEY_NAME = 10;
    */
   TAX_GROUP_SORT_KEY_NAME = 10,
+
+  /**
+   * Fetch ordered results by the code
+   *
+   * @generated from enum value: TAX_GROUP_SORT_KEY_CODE = 11;
+   */
+  TAX_GROUP_SORT_KEY_CODE = 11,
 }
 // Retrieve enum metadata with: proto3.getEnumType(TAX_GROUP_SORT_KEY)
 proto3.util.setEnumType(TAX_GROUP_SORT_KEY, "Scailo.TAX_GROUP_SORT_KEY", [
@@ -116,6 +123,7 @@ proto3.util.setEnumType(TAX_GROUP_SORT_KEY, "Scailo.TAX_GROUP_SORT_KEY", [
   { no: 4, name: "TAX_GROUP_SORT_KEY_APPROVED_BY" },
   { no: 5, name: "TAX_GROUP_SORT_KEY_APPROVER_ROLE_ID" },
   { no: 10, name: "TAX_GROUP_SORT_KEY_NAME" },
+  { no: 11, name: "TAX_GROUP_SORT_KEY_CODE" },
 ]);
 
 /**
@@ -147,6 +155,13 @@ export class TaxGroupsServiceCreateRequest extends Message<TaxGroupsServiceCreat
   name = "";
 
   /**
+   * The unique code by which the tax group is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The category of the tax group
    *
    * @generated from field: Scailo.TAX_GROUP_CATEGORY category = 11;
@@ -171,6 +186,7 @@ export class TaxGroupsServiceCreateRequest extends Message<TaxGroupsServiceCreat
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "category", kind: "enum", T: proto3.getEnumType(TAX_GROUP_CATEGORY) },
     { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
@@ -228,6 +244,13 @@ export class TaxGroupsServiceUpdateRequest extends Message<TaxGroupsServiceUpdat
   name = "";
 
   /**
+   * The unique code by which the tax group is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The description of the tax group
    *
    * @generated from field: string description = 12;
@@ -246,6 +269,7 @@ export class TaxGroupsServiceUpdateRequest extends Message<TaxGroupsServiceUpdat
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -316,6 +340,13 @@ export class TaxGroup extends Message<TaxGroup> {
   name = "";
 
   /**
+   * The unique code by which the tax group is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The category of the tax group
    *
    * @generated from field: Scailo.TAX_GROUP_CATEGORY category = 11;
@@ -364,6 +395,7 @@ export class TaxGroup extends Message<TaxGroup> {
     { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "category", kind: "enum", T: proto3.getEnumType(TAX_GROUP_CATEGORY) },
     { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "list", kind: "message", T: TaxGroupItem, repeated: true },
@@ -698,6 +730,13 @@ export class TaxGroupsServiceFilterReq extends Message<TaxGroupsServiceFilterReq
   name = "";
 
   /**
+   * The unique code by which the location is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The category of the tax group
    *
    * @generated from field: Scailo.TAX_GROUP_CATEGORY category = 32;
@@ -728,6 +767,7 @@ export class TaxGroupsServiceFilterReq extends Message<TaxGroupsServiceFilterReq
     { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 32, name: "category", kind: "enum", T: proto3.getEnumType(TAX_GROUP_CATEGORY) },
   ]);
 
@@ -840,6 +880,13 @@ export class TaxGroupsServiceCountReq extends Message<TaxGroupsServiceCountReq> 
   name = "";
 
   /**
+   * The unique code by which the location is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The category of the tax group
    *
    * @generated from field: Scailo.TAX_GROUP_CATEGORY category = 32;
@@ -866,6 +913,7 @@ export class TaxGroupsServiceCountReq extends Message<TaxGroupsServiceCountReq> 
     { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 32, name: "category", kind: "enum", T: proto3.getEnumType(TAX_GROUP_CATEGORY) },
   ]);
 

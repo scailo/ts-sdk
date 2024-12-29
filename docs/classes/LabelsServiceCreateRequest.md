@@ -22,6 +22,7 @@ from message Scailo.LabelsServiceCreateRequest
 
 ### Properties
 
+- [code](LabelsServiceCreateRequest.md#code)
 - [description](LabelsServiceCreateRequest.md#description)
 - [entityUuid](LabelsServiceCreateRequest.md#entityuuid)
 - [name](LabelsServiceCreateRequest.md#name)
@@ -69,9 +70,25 @@ Message\&lt;LabelsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/labels.scailo_pb.ts:262
+src/labels.scailo_pb.ts:285
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the label is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/labels.scailo_pb.ts:276
+
+___
 
 ### description
 
@@ -85,7 +102,7 @@ from field: string description = 11;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:260
+src/labels.scailo_pb.ts:283
 
 ___
 
@@ -101,7 +118,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:239
+src/labels.scailo_pb.ts:255
 
 ___
 
@@ -117,7 +134,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:253
+src/labels.scailo_pb.ts:269
 
 ___
 
@@ -133,7 +150,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:246
+src/labels.scailo_pb.ts:262
 
 ___
 
@@ -143,7 +160,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:269
+src/labels.scailo_pb.ts:292
 
 ___
 
@@ -153,7 +170,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:267
+src/labels.scailo_pb.ts:290
 
 ___
 
@@ -163,7 +180,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:268
+src/labels.scailo_pb.ts:291
 
 ## Methods
 
@@ -451,7 +468,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:288
+src/labels.scailo_pb.ts:312
 
 ___
 
@@ -472,7 +489,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:276
+src/labels.scailo_pb.ts:300
 
 ___
 
@@ -493,7 +510,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:280
+src/labels.scailo_pb.ts:304
 
 ___
 
@@ -514,4 +531,4 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:284
+src/labels.scailo_pb.ts:308

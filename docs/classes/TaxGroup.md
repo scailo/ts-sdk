@@ -24,6 +24,7 @@ from message Scailo.TaxGroup
 
 - [approvalMetadata](TaxGroup.md#approvalmetadata)
 - [category](TaxGroup.md#category)
+- [code](TaxGroup.md#code)
 - [cumulativeTaxPercentage](TaxGroup.md#cumulativetaxpercentage)
 - [description](TaxGroup.md#description)
 - [entityUuid](TaxGroup.md#entityuuid)
@@ -76,7 +77,7 @@ Message\&lt;TaxGroup\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:353
+src/tax_groups.scailo_pb.ts:384
 
 ## Properties
 
@@ -92,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:295
+src/tax_groups.scailo_pb.ts:319
 
 ___
 
@@ -108,7 +109,23 @@ from field: Scailo.TAX_GROUP_CATEGORY category = 11;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:323
+src/tax_groups.scailo_pb.ts:354
+
+___
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the tax group is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/tax_groups.scailo_pb.ts:347
 
 ___
 
@@ -124,7 +141,7 @@ from field: double cumulative_tax_percentage = 60;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:351
+src/tax_groups.scailo_pb.ts:382
 
 ___
 
@@ -140,7 +157,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:330
+src/tax_groups.scailo_pb.ts:361
 
 ___
 
@@ -156,7 +173,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:281
+src/tax_groups.scailo_pb.ts:305
 
 ___
 
@@ -172,7 +189,7 @@ from field: repeated Scailo.TaxGroupItem list = 30;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:337
+src/tax_groups.scailo_pb.ts:368
 
 ___
 
@@ -188,7 +205,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:309
+src/tax_groups.scailo_pb.ts:333
 
 ___
 
@@ -204,7 +221,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:288
+src/tax_groups.scailo_pb.ts:312
 
 ___
 
@@ -220,7 +237,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:316
+src/tax_groups.scailo_pb.ts:340
 
 ___
 
@@ -236,7 +253,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:302
+src/tax_groups.scailo_pb.ts:326
 
 ___
 
@@ -252,7 +269,7 @@ from field: repeated Scailo.TaxParam tax_params = 50;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:344
+src/tax_groups.scailo_pb.ts:375
 
 ___
 
@@ -262,7 +279,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:360
+src/tax_groups.scailo_pb.ts:391
 
 ___
 
@@ -272,7 +289,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:358
+src/tax_groups.scailo_pb.ts:389
 
 ___
 
@@ -282,7 +299,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:359
+src/tax_groups.scailo_pb.ts:390
 
 ## Methods
 
@@ -570,7 +587,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:386
+src/tax_groups.scailo_pb.ts:418
 
 ___
 
@@ -591,7 +608,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:374
+src/tax_groups.scailo_pb.ts:406
 
 ___
 
@@ -612,7 +629,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:378
+src/tax_groups.scailo_pb.ts:410
 
 ___
 
@@ -633,4 +650,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:382
+src/tax_groups.scailo_pb.ts:414

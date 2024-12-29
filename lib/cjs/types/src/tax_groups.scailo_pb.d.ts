@@ -82,7 +82,13 @@ export declare enum TAX_GROUP_SORT_KEY {
      *
      * @generated from enum value: TAX_GROUP_SORT_KEY_NAME = 10;
      */
-    TAX_GROUP_SORT_KEY_NAME = 10
+    TAX_GROUP_SORT_KEY_NAME = 10,
+    /**
+     * Fetch ordered results by the code
+     *
+     * @generated from enum value: TAX_GROUP_SORT_KEY_CODE = 11;
+     */
+    TAX_GROUP_SORT_KEY_CODE = 11
 }
 /**
  *
@@ -109,6 +115,12 @@ export declare class TaxGroupsServiceCreateRequest extends Message<TaxGroupsServ
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the tax group is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The category of the tax group
      *
@@ -161,6 +173,12 @@ export declare class TaxGroupsServiceUpdateRequest extends Message<TaxGroupsServ
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the tax group is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The description of the tax group
      *
@@ -219,6 +237,12 @@ export declare class TaxGroup extends Message<TaxGroup> {
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the tax group is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The category of the tax group
      *
@@ -476,6 +500,12 @@ export declare class TaxGroupsServiceFilterReq extends Message<TaxGroupsServiceF
      */
     name: string;
     /**
+     * The unique code by which the location is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
+    /**
      * The category of the tax group
      *
      * @generated from field: Scailo.TAX_GROUP_CATEGORY category = 32;
@@ -569,6 +599,12 @@ export declare class TaxGroupsServiceCountReq extends Message<TaxGroupsServiceCo
      * @generated from field: string name = 20;
      */
     name: string;
+    /**
+     * The unique code by which the location is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The category of the tax group
      *

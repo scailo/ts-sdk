@@ -66,7 +66,7 @@ Message\&lt;EquationsWorkOrdersList\&gt;.constructor
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:789
+src/equations_work_orders.scailo_pb.ts:805
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.EquationWorkOrder list = 1;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:787
+src/equations_work_orders.scailo_pb.ts:803
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:796
+src/equations_work_orders.scailo_pb.ts:812
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:794
+src/equations_work_orders.scailo_pb.ts:810
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:795
+src/equations_work_orders.scailo_pb.ts:811
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:812
+src/equations_work_orders.scailo_pb.ts:828
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:800
+src/equations_work_orders.scailo_pb.ts:816
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:804
+src/equations_work_orders.scailo_pb.ts:820
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:808
+src/equations_work_orders.scailo_pb.ts:824

@@ -69,7 +69,7 @@ Message\&lt;LabelPaginationResp\&gt;.constructor
 
 #### Defined in
 
-src/labels.scailo_pb.ts:196
+src/labels.scailo_pb.ts:212
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:173
+src/labels.scailo_pb.ts:189
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:180
+src/labels.scailo_pb.ts:196
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Label payload = 4;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:194
+src/labels.scailo_pb.ts:210
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/labels.scailo_pb.ts:187
+src/labels.scailo_pb.ts:203
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:203
+src/labels.scailo_pb.ts:219
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:201
+src/labels.scailo_pb.ts:217
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:202
+src/labels.scailo_pb.ts:218
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:222
+src/labels.scailo_pb.ts:238
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:210
+src/labels.scailo_pb.ts:226
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:214
+src/labels.scailo_pb.ts:230
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/labels.scailo_pb.ts:218
+src/labels.scailo_pb.ts:234

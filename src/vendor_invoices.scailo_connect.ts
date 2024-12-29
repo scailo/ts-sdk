@@ -340,10 +340,10 @@ export const VendorInvoicesService = {
      * CSV operations
      * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
      *
-     * @generated from rpc Scailo.VendorInvoicesService.DownloadAsCSV
+     * @generated from rpc Scailo.VendorInvoicesService.DownloadItemsAsCSV
      */
-    downloadAsCSV: {
-      name: "DownloadAsCSV",
+    downloadItemsAsCSV: {
+      name: "DownloadItemsAsCSV",
       I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,

@@ -22,6 +22,7 @@ from message Scailo.TaxGroupsServiceUpdateRequest
 
 ### Properties
 
+- [code](TaxGroupsServiceUpdateRequest.md#code)
 - [description](TaxGroupsServiceUpdateRequest.md#description)
 - [id](TaxGroupsServiceUpdateRequest.md#id)
 - [name](TaxGroupsServiceUpdateRequest.md#name)
@@ -70,9 +71,25 @@ Message\&lt;TaxGroupsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:237
+src/tax_groups.scailo_pb.ts:260
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the tax group is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/tax_groups.scailo_pb.ts:251
+
+___
 
 ### description
 
@@ -86,7 +103,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:235
+src/tax_groups.scailo_pb.ts:258
 
 ___
 
@@ -102,7 +119,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:214
+src/tax_groups.scailo_pb.ts:230
 
 ___
 
@@ -118,7 +135,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:228
+src/tax_groups.scailo_pb.ts:244
 
 ___
 
@@ -134,7 +151,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:221
+src/tax_groups.scailo_pb.ts:237
 
 ___
 
@@ -150,7 +167,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:207
+src/tax_groups.scailo_pb.ts:223
 
 ___
 
@@ -160,7 +177,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:244
+src/tax_groups.scailo_pb.ts:267
 
 ___
 
@@ -170,7 +187,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:242
+src/tax_groups.scailo_pb.ts:265
 
 ___
 
@@ -180,7 +197,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:243
+src/tax_groups.scailo_pb.ts:266
 
 ## Methods
 
@@ -468,7 +485,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:264
+src/tax_groups.scailo_pb.ts:288
 
 ___
 
@@ -489,7 +506,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:252
+src/tax_groups.scailo_pb.ts:276
 
 ___
 
@@ -510,7 +527,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:256
+src/tax_groups.scailo_pb.ts:280
 
 ___
 
@@ -531,4 +548,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:260
+src/tax_groups.scailo_pb.ts:284

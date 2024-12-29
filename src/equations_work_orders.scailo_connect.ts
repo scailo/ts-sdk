@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { EquationsWorkOrdersItemsList, EquationsWorkOrdersList, EquationsWorkOrdersServiceCountReq, EquationsWorkOrdersServiceCreateRequest, EquationsWorkOrdersServiceFilterReq, EquationsWorkOrdersServiceItemCreateRequest, EquationsWorkOrdersServiceItemUpdateRequest, EquationsWorkOrdersServicePaginatedItemsResponse, EquationsWorkOrdersServicePaginationReq, EquationsWorkOrdersServicePaginationResponse, EquationsWorkOrdersServiceSearchAllReq, EquationsWorkOrdersServiceUpdateRequest, EquationWorkOrder, EquationWorkOrderItem, EquationWorkOrderItemHistoryRequest, EquationWorkOrderItemsSearchRequest } from "./equations_work_orders.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -185,6 +185,17 @@ export const EquationsWorkOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Amend the equation work order and send for revision
+     *
+     * @generated from rpc Scailo.EquationsWorkOrdersService.Amend
+     */
+    amend: {
+      name: "Amend",
+      I: IdentifierUUIDWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Clone equation from an existing equation (denoted by the identifier)
      *
      * @generated from rpc Scailo.EquationsWorkOrdersService.Clone
@@ -331,10 +342,10 @@ export const EquationsWorkOrdersService = {
      * CSV operations
      * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
      *
-     * @generated from rpc Scailo.EquationsWorkOrdersService.DownloadAsCSV
+     * @generated from rpc Scailo.EquationsWorkOrdersService.DownloadItemsAsCSV
      */
-    downloadAsCSV: {
-      name: "DownloadAsCSV",
+    downloadItemsAsCSV: {
+      name: "DownloadItemsAsCSV",
       I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,
@@ -414,6 +425,17 @@ export const EquationsWorkOrdersService = {
       name: "ViewForWorkOrderID",
       I: Identifier,
       O: EquationWorkOrder,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all the amendments made
+     *
+     * @generated from rpc Scailo.EquationsWorkOrdersService.ViewAmendments
+     */
+    viewAmendments: {
+      name: "ViewAmendments",
+      I: Identifier,
+      O: AmendmentLogsList,
       kind: MethodKind.Unary,
     },
     /**

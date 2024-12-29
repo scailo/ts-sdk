@@ -41,6 +41,13 @@ export enum LABEL_SORT_KEY {
    * @generated from enum value: LABEL_SORT_KEY_NAME = 10;
    */
   LABEL_SORT_KEY_NAME = 10,
+
+  /**
+   * Fetch ordered results by the code
+   *
+   * @generated from enum value: LABEL_SORT_KEY_CODE = 11;
+   */
+  LABEL_SORT_KEY_CODE = 11,
 }
 // Retrieve enum metadata with: proto3.getEnumType(LABEL_SORT_KEY)
 proto3.util.setEnumType(LABEL_SORT_KEY, "Scailo.LABEL_SORT_KEY", [
@@ -48,6 +55,7 @@ proto3.util.setEnumType(LABEL_SORT_KEY, "Scailo.LABEL_SORT_KEY", [
   { no: 1, name: "LABEL_SORT_KEY_CREATED_AT" },
   { no: 2, name: "LABEL_SORT_KEY_MODIFIED_AT" },
   { no: 10, name: "LABEL_SORT_KEY_NAME" },
+  { no: 11, name: "LABEL_SORT_KEY_CODE" },
 ]);
 
 /**
@@ -79,6 +87,13 @@ export class Label extends Message<Label> {
   name = "";
 
   /**
+   * The unique code by which the label is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * A short description of the label
    *
    * @generated from field: string description = 11;
@@ -96,6 +111,7 @@ export class Label extends Message<Label> {
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -253,6 +269,13 @@ export class LabelsServiceCreateRequest extends Message<LabelsServiceCreateReque
   name = "";
 
   /**
+   * The unique code by which the label is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * A short description of the label
    *
    * @generated from field: string description = 11;
@@ -270,6 +293,7 @@ export class LabelsServiceCreateRequest extends Message<LabelsServiceCreateReque
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -319,6 +343,13 @@ export class LabelsServiceUpdateRequest extends Message<LabelsServiceUpdateReque
   name = "";
 
   /**
+   * The unique code by which the label is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * A short description of the label
    *
    * @generated from field: string description = 11;
@@ -336,6 +367,7 @@ export class LabelsServiceUpdateRequest extends Message<LabelsServiceUpdateReque
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -514,6 +546,13 @@ export class LabelsServiceFilterReq extends Message<LabelsServiceFilterReq> {
    */
   name = "";
 
+  /**
+   * The unique code by which the label is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
   constructor(data?: PartialMessage<LabelsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -533,6 +572,7 @@ export class LabelsServiceFilterReq extends Message<LabelsServiceFilterReq> {
     { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LabelsServiceFilterReq {
@@ -608,6 +648,13 @@ export class LabelsServiceCountReq extends Message<LabelsServiceCountReq> {
    */
   name = "";
 
+  /**
+   * The unique code by which the label is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
   constructor(data?: PartialMessage<LabelsServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -623,6 +670,7 @@ export class LabelsServiceCountReq extends Message<LabelsServiceCountReq> {
     { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LabelsServiceCountReq {
