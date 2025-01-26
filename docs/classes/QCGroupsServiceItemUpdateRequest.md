@@ -76,13 +76,13 @@ Message\&lt;QCGroupsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:669
+src/qc_groups.scailo_pb.ts:795
 
 ## Properties
 
 ### acceptableValueType
 
-• **acceptableValueType**: [`QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE`](../enums/QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE.md) = `QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED`
+• **acceptableValueType**: [`QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE`](../enums/QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE.md) = `QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_ANY_UNSPECIFIED`
 
 The acceptable value type of the item
 
@@ -92,7 +92,7 @@ from field: Scailo.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE acceptable_value_type = 2
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:618
+src/qc_groups.scailo_pb.ts:744
 
 ___
 
@@ -108,7 +108,7 @@ from field: string description = 40;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:667
+src/qc_groups.scailo_pb.ts:793
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:604
+src/qc_groups.scailo_pb.ts:730
 
 ___
 
@@ -140,7 +140,7 @@ from field: bool is_internal = 19;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:611
+src/qc_groups.scailo_pb.ts:737
 
 ___
 
@@ -156,7 +156,7 @@ from field: int64 number_acceptable_value = 21;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:625
+src/qc_groups.scailo_pb.ts:751
 
 ___
 
@@ -172,7 +172,7 @@ from field: int64 number_relative_lower_bound = 22;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:632
+src/qc_groups.scailo_pb.ts:758
 
 ___
 
@@ -188,7 +188,7 @@ from field: int64 number_relative_upper_bound = 23;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:639
+src/qc_groups.scailo_pb.ts:765
 
 ___
 
@@ -204,7 +204,7 @@ from field: repeated string text_acceptable_values = 30;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:646
+src/qc_groups.scailo_pb.ts:772
 
 ___
 
@@ -220,7 +220,7 @@ from field: repeated string text_acceptable_values_with_deviation = 31;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:653
+src/qc_groups.scailo_pb.ts:779
 
 ___
 
@@ -236,7 +236,7 @@ from field: repeated string text_unacceptable_values = 32;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:660
+src/qc_groups.scailo_pb.ts:786
 
 ___
 
@@ -252,7 +252,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:597
+src/qc_groups.scailo_pb.ts:723
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:676
+src/qc_groups.scailo_pb.ts:802
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:674
+src/qc_groups.scailo_pb.ts:800
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:675
+src/qc_groups.scailo_pb.ts:801
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:702
+src/qc_groups.scailo_pb.ts:828
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:690
+src/qc_groups.scailo_pb.ts:816
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:694
+src/qc_groups.scailo_pb.ts:820
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:698
+src/qc_groups.scailo_pb.ts:824

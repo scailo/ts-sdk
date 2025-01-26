@@ -71,7 +71,7 @@ Message\&lt;QCGroupsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1060
+src/qc_groups.scailo_pb.ts:1422
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1030
+src/qc_groups.scailo_pb.ts:1392
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1023
+src/qc_groups.scailo_pb.ts:1385
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1037
+src/qc_groups.scailo_pb.ts:1399
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.QC_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1051
+src/qc_groups.scailo_pb.ts:1413
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1044
+src/qc_groups.scailo_pb.ts:1406
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1058
+src/qc_groups.scailo_pb.ts:1420
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1067
+src/qc_groups.scailo_pb.ts:1429
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1065
+src/qc_groups.scailo_pb.ts:1427
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1066
+src/qc_groups.scailo_pb.ts:1428
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1088
+src/qc_groups.scailo_pb.ts:1450
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1076
+src/qc_groups.scailo_pb.ts:1438
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1080
+src/qc_groups.scailo_pb.ts:1442
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1084
+src/qc_groups.scailo_pb.ts:1446

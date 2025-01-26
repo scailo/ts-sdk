@@ -1,5 +1,5 @@
 import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginatedUsersResponse, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList, ClientUsersSearchRequest } from "./clients.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -308,6 +308,29 @@ export declare const ClientsService: {
             readonly name: "Count";
             readonly I: typeof ClientsServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.ClientsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof ClientsServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Import records using a CSV file (duplicate codes will be skipped)
+         *
+         * @generated from rpc Scailo.ClientsService.Import
+         */
+        readonly import: {
+            readonly name: "Import";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };

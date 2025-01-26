@@ -1,5 +1,5 @@
 import { SalesEnquiriesItemsList, SalesEnquiriesList, SalesEnquiriesServiceContactCreateRequest, SalesEnquiriesServiceCountReq, SalesEnquiriesServiceCreateRequest, SalesEnquiriesServiceFilterReq, SalesEnquiriesServiceItemCreateRequest, SalesEnquiriesServiceItemUpdateRequest, SalesEnquiriesServicePaginatedItemsResponse, SalesEnquiriesServicePaginationReq, SalesEnquiriesServicePaginationResponse, SalesEnquiriesServiceSearchAllReq, SalesEnquiriesServiceUpdateRequest, SalesEnquiry, SalesEnquiryAncillaryParameters, SalesEnquiryContact, SalesEnquiryContactsList, SalesEnquiryItem, SalesEnquiryItemHistoryRequest, SalesEnquiryItemsSearchRequest } from "./sales_enquiries.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -348,7 +348,7 @@ export declare const SalesEnquiriesService: {
          */
         readonly uploadSalesEnquiryItems: {
             readonly name: "UploadSalesEnquiryItems";
-            readonly I: typeof IdentifierWithFile;
+            readonly I: typeof IdentifierUUIDWithFile;
             readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };

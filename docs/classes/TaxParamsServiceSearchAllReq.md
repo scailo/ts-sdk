@@ -75,7 +75,7 @@ Message\&lt;TaxParamsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1104
+src/tax_params.scailo_pb.ts:1152
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: Scailo.TAX_PARAM_CATEGORY category = 32;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1102
+src/tax_params.scailo_pb.ts:1150
 
 ___
 
@@ -107,7 +107,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1046
+src/tax_params.scailo_pb.ts:1094
 
 ___
 
@@ -123,7 +123,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1074
+src/tax_params.scailo_pb.ts:1122
 
 ___
 
@@ -139,7 +139,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1039
+src/tax_params.scailo_pb.ts:1087
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1053
+src/tax_params.scailo_pb.ts:1101
 
 ___
 
@@ -171,7 +171,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1088
+src/tax_params.scailo_pb.ts:1136
 
 ___
 
@@ -187,7 +187,7 @@ from field: Scailo.TAX_PARAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1067
+src/tax_params.scailo_pb.ts:1115
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1060
+src/tax_params.scailo_pb.ts:1108
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1081
+src/tax_params.scailo_pb.ts:1129
 
 ___
 
@@ -235,7 +235,7 @@ from field: Scailo.TAX_PARAM_VALUE_TYPE value_type = 31;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1095
+src/tax_params.scailo_pb.ts:1143
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1111
+src/tax_params.scailo_pb.ts:1159
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1109
+src/tax_params.scailo_pb.ts:1157
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1110
+src/tax_params.scailo_pb.ts:1158
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1136
+src/tax_params.scailo_pb.ts:1184
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1124
+src/tax_params.scailo_pb.ts:1172
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1128
+src/tax_params.scailo_pb.ts:1176
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1132
+src/tax_params.scailo_pb.ts:1180

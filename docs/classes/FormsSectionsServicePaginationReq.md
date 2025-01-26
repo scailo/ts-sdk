@@ -70,7 +70,7 @@ Message\&lt;FormsSectionsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:441
+src/forms_sections.scailo_pb.ts:473
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:418
+src/forms_sections.scailo_pb.ts:450
 
 ___
 
@@ -102,7 +102,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:411
+src/forms_sections.scailo_pb.ts:443
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:425
+src/forms_sections.scailo_pb.ts:457
 
 ___
 
@@ -134,7 +134,7 @@ from field: Scailo.FORM_SECTION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:439
+src/forms_sections.scailo_pb.ts:471
 
 ___
 
@@ -150,7 +150,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:432
+src/forms_sections.scailo_pb.ts:464
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:448
+src/forms_sections.scailo_pb.ts:480
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:446
+src/forms_sections.scailo_pb.ts:478
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:447
+src/forms_sections.scailo_pb.ts:479
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:468
+src/forms_sections.scailo_pb.ts:500
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:456
+src/forms_sections.scailo_pb.ts:488
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:460
+src/forms_sections.scailo_pb.ts:492
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:464
+src/forms_sections.scailo_pb.ts:496

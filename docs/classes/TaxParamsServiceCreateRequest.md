@@ -23,6 +23,7 @@ from message Scailo.TaxParamsServiceCreateRequest
 ### Properties
 
 - [category](TaxParamsServiceCreateRequest.md#category)
+- [code](TaxParamsServiceCreateRequest.md#code)
 - [description](TaxParamsServiceCreateRequest.md#description)
 - [divisor](TaxParamsServiceCreateRequest.md#divisor)
 - [entityUuid](TaxParamsServiceCreateRequest.md#entityuuid)
@@ -77,7 +78,7 @@ Message\&lt;TaxParamsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:246
+src/tax_params.scailo_pb.ts:261
 
 ## Properties
 
@@ -93,7 +94,23 @@ from field: Scailo.TAX_PARAM_CATEGORY category = 18;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:237
+src/tax_params.scailo_pb.ts:252
+
+___
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the tax param is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/tax_params.scailo_pb.ts:196
 
 ___
 
@@ -109,7 +126,7 @@ from field: string description = 20;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:244
+src/tax_params.scailo_pb.ts:259
 
 ___
 
@@ -125,7 +142,7 @@ from field: uint64 divisor = 14;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:209
+src/tax_params.scailo_pb.ts:224
 
 ___
 
@@ -141,7 +158,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:167
+src/tax_params.scailo_pb.ts:175
 
 ___
 
@@ -157,7 +174,7 @@ from field: uint64 input_credit_percentage = 15;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:216
+src/tax_params.scailo_pb.ts:231
 
 ___
 
@@ -173,7 +190,7 @@ from field: int64 max_amount = 17;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:230
+src/tax_params.scailo_pb.ts:245
 
 ___
 
@@ -189,7 +206,7 @@ from field: int64 min_amount = 16;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:223
+src/tax_params.scailo_pb.ts:238
 
 ___
 
@@ -205,7 +222,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:181
+src/tax_params.scailo_pb.ts:189
 
 ___
 
@@ -221,7 +238,7 @@ from field: uint64 tax_fixed_amount = 12;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:195
+src/tax_params.scailo_pb.ts:210
 
 ___
 
@@ -237,7 +254,7 @@ from field: uint64 tax_rate_percentage = 13;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:202
+src/tax_params.scailo_pb.ts:217
 
 ___
 
@@ -253,7 +270,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:174
+src/tax_params.scailo_pb.ts:182
 
 ___
 
@@ -269,7 +286,7 @@ from field: Scailo.TAX_PARAM_VALUE_TYPE value_type = 11;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:188
+src/tax_params.scailo_pb.ts:203
 
 ___
 
@@ -279,7 +296,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:253
+src/tax_params.scailo_pb.ts:268
 
 ___
 
@@ -289,7 +306,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:251
+src/tax_params.scailo_pb.ts:266
 
 ___
 
@@ -299,7 +316,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:252
+src/tax_params.scailo_pb.ts:267
 
 ## Methods
 
@@ -587,7 +604,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:280
+src/tax_params.scailo_pb.ts:296
 
 ___
 
@@ -608,7 +625,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:268
+src/tax_params.scailo_pb.ts:284
 
 ___
 
@@ -629,7 +646,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:272
+src/tax_params.scailo_pb.ts:288
 
 ___
 
@@ -650,4 +667,4 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:276
+src/tax_params.scailo_pb.ts:292

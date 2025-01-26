@@ -107,7 +107,13 @@ export declare enum TAX_PARAM_SORT_KEY {
      *
      * @generated from enum value: TAX_PARAM_SORT_KEY_TAX_RATE_PERCENTAGE = 11;
      */
-    TAX_PARAM_SORT_KEY_TAX_RATE_PERCENTAGE = 11
+    TAX_PARAM_SORT_KEY_TAX_RATE_PERCENTAGE = 11,
+    /**
+     * Fetch ordered results by the code
+     *
+     * @generated from enum value: TAX_PARAM_SORT_KEY_CODE = 21;
+     */
+    TAX_PARAM_SORT_KEY_CODE = 21
 }
 /**
  *
@@ -134,6 +140,12 @@ export declare class TaxParamsServiceCreateRequest extends Message<TaxParamsServ
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the tax param is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The type of the tax param
      *
@@ -229,6 +241,12 @@ export declare class TaxParamsServiceUpdateRequest extends Message<TaxParamsServ
      */
     name: string;
     /**
+     * The unique code by which the tax param is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
+    /**
      * The description of the tax param
      *
      * @generated from field: string description = 20;
@@ -286,6 +304,12 @@ export declare class TaxParam extends Message<TaxParam> {
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the tax param is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The type of the tax param
      *
@@ -567,6 +591,12 @@ export declare class TaxParamsServiceFilterReq extends Message<TaxParamsServiceF
      */
     name: string;
     /**
+     * The unique code by which the tax param is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
+    /**
      * The type of the tax param
      *
      * @generated from field: Scailo.TAX_PARAM_VALUE_TYPE value_type = 31;
@@ -666,6 +696,12 @@ export declare class TaxParamsServiceCountReq extends Message<TaxParamsServiceCo
      * @generated from field: string name = 20;
      */
     name: string;
+    /**
+     * The unique code by which the tax param is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The type of the tax param
      *

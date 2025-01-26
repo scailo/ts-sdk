@@ -73,7 +73,7 @@ Message\&lt;QCGroupsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:282
+src/qc_groups.scailo_pb.ts:408
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:266
+src/qc_groups.scailo_pb.ts:392
 
 ___
 
@@ -105,7 +105,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:273
+src/qc_groups.scailo_pb.ts:399
 
 ___
 
@@ -121,7 +121,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:280
+src/qc_groups.scailo_pb.ts:406
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:238
+src/qc_groups.scailo_pb.ts:364
 
 ___
 
@@ -153,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:259
+src/qc_groups.scailo_pb.ts:385
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:245
+src/qc_groups.scailo_pb.ts:371
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:231
+src/qc_groups.scailo_pb.ts:357
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:252
+src/qc_groups.scailo_pb.ts:378
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:289
+src/qc_groups.scailo_pb.ts:415
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:287
+src/qc_groups.scailo_pb.ts:413
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:288
+src/qc_groups.scailo_pb.ts:414
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:312
+src/qc_groups.scailo_pb.ts:438
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:300
+src/qc_groups.scailo_pb.ts:426
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:304
+src/qc_groups.scailo_pb.ts:430
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:308
+src/qc_groups.scailo_pb.ts:434

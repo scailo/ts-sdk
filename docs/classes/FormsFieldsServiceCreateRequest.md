@@ -22,6 +22,7 @@ from message Scailo.FormsFieldsServiceCreateRequest
 
 ### Properties
 
+- [code](FormsFieldsServiceCreateRequest.md#code)
 - [definedValues](FormsFieldsServiceCreateRequest.md#definedvalues)
 - [element](FormsFieldsServiceCreateRequest.md#element)
 - [entityUuid](FormsFieldsServiceCreateRequest.md#entityuuid)
@@ -77,9 +78,25 @@ Message\&lt;FormsFieldsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:382
+src/forms_fields.scailo_pb.ts:413
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the form field is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/forms_fields.scailo_pb.ts:348
+
+___
 
 ### definedValues
 
@@ -93,7 +110,7 @@ from field: repeated string defined_values = 17;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:366
+src/forms_fields.scailo_pb.ts:397
 
 ___
 
@@ -109,7 +126,7 @@ from field: Scailo.FORM_FIELD_ELEMENT element = 14;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:345
+src/forms_fields.scailo_pb.ts:376
 
 ___
 
@@ -125,7 +142,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:303
+src/forms_fields.scailo_pb.ts:327
 
 ___
 
@@ -141,7 +158,7 @@ from field: bool highlightable = 19;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:380
+src/forms_fields.scailo_pb.ts:411
 
 ___
 
@@ -157,7 +174,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:317
+src/forms_fields.scailo_pb.ts:341
 
 ___
 
@@ -173,7 +190,7 @@ from field: string placeholder = 15;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:352
+src/forms_fields.scailo_pb.ts:383
 
 ___
 
@@ -189,7 +206,7 @@ from field: bool printable = 18;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:373
+src/forms_fields.scailo_pb.ts:404
 
 ___
 
@@ -205,7 +222,7 @@ from field: string regex = 16;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:359
+src/forms_fields.scailo_pb.ts:390
 
 ___
 
@@ -221,7 +238,7 @@ from field: uint64 section_id = 12;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:331
+src/forms_fields.scailo_pb.ts:362
 
 ___
 
@@ -237,7 +254,7 @@ from field: Scailo.FORM_TYPE type = 11;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:324
+src/forms_fields.scailo_pb.ts:355
 
 ___
 
@@ -253,7 +270,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:310
+src/forms_fields.scailo_pb.ts:334
 
 ___
 
@@ -269,7 +286,7 @@ from field: string width = 13;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:338
+src/forms_fields.scailo_pb.ts:369
 
 ___
 
@@ -279,7 +296,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:389
+src/forms_fields.scailo_pb.ts:420
 
 ___
 
@@ -289,7 +306,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:387
+src/forms_fields.scailo_pb.ts:418
 
 ___
 
@@ -299,7 +316,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:388
+src/forms_fields.scailo_pb.ts:419
 
 ## Methods
 
@@ -587,7 +604,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:416
+src/forms_fields.scailo_pb.ts:448
 
 ___
 
@@ -608,7 +625,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:404
+src/forms_fields.scailo_pb.ts:436
 
 ___
 
@@ -629,7 +646,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:408
+src/forms_fields.scailo_pb.ts:440
 
 ___
 
@@ -650,4 +667,4 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:412
+src/forms_fields.scailo_pb.ts:444

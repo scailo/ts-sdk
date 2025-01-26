@@ -72,7 +72,7 @@ Message\&lt;QCGroupsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:185
+src/qc_groups.scailo_pb.ts:311
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:169
+src/qc_groups.scailo_pb.ts:295
 
 ___
 
@@ -104,7 +104,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:176
+src/qc_groups.scailo_pb.ts:302
 
 ___
 
@@ -120,7 +120,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:141
+src/qc_groups.scailo_pb.ts:267
 
 ___
 
@@ -136,7 +136,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:183
+src/qc_groups.scailo_pb.ts:309
 
 ___
 
@@ -152,7 +152,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:162
+src/qc_groups.scailo_pb.ts:288
 
 ___
 
@@ -168,7 +168,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:148
+src/qc_groups.scailo_pb.ts:274
 
 ___
 
@@ -184,7 +184,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:155
+src/qc_groups.scailo_pb.ts:281
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:192
+src/qc_groups.scailo_pb.ts:318
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:190
+src/qc_groups.scailo_pb.ts:316
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:191
+src/qc_groups.scailo_pb.ts:317
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:214
+src/qc_groups.scailo_pb.ts:340
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:202
+src/qc_groups.scailo_pb.ts:328
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:206
+src/qc_groups.scailo_pb.ts:332
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:210
+src/qc_groups.scailo_pb.ts:336

@@ -81,7 +81,7 @@ Message\&lt;QCGroupsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1472
+src/qc_groups.scailo_pb.ts:1834
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1428
+src/qc_groups.scailo_pb.ts:1790
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1421
+src/qc_groups.scailo_pb.ts:1783
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1414
+src/qc_groups.scailo_pb.ts:1776
 
 ___
 
@@ -145,7 +145,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1435
+src/qc_groups.scailo_pb.ts:1797
 
 ___
 
@@ -161,7 +161,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1463
+src/qc_groups.scailo_pb.ts:1825
 
 ___
 
@@ -177,7 +177,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1449
+src/qc_groups.scailo_pb.ts:1811
 
 ___
 
@@ -193,7 +193,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1442
+src/qc_groups.scailo_pb.ts:1804
 
 ___
 
@@ -209,7 +209,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1379
+src/qc_groups.scailo_pb.ts:1741
 
 ___
 
@@ -225,7 +225,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1372
+src/qc_groups.scailo_pb.ts:1734
 
 ___
 
@@ -241,7 +241,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1400
+src/qc_groups.scailo_pb.ts:1762
 
 ___
 
@@ -257,7 +257,7 @@ from field: uint64 family_id = 30;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1470
+src/qc_groups.scailo_pb.ts:1832
 
 ___
 
@@ -273,7 +273,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1365
+src/qc_groups.scailo_pb.ts:1727
 
 ___
 
@@ -289,7 +289,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1393
+src/qc_groups.scailo_pb.ts:1755
 
 ___
 
@@ -305,7 +305,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1386
+src/qc_groups.scailo_pb.ts:1748
 
 ___
 
@@ -321,7 +321,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1456
+src/qc_groups.scailo_pb.ts:1818
 
 ___
 
@@ -337,7 +337,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1407
+src/qc_groups.scailo_pb.ts:1769
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1479
+src/qc_groups.scailo_pb.ts:1841
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1477
+src/qc_groups.scailo_pb.ts:1839
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1478
+src/qc_groups.scailo_pb.ts:1840
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1510
+src/qc_groups.scailo_pb.ts:1872
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1498
+src/qc_groups.scailo_pb.ts:1860
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1502
+src/qc_groups.scailo_pb.ts:1864
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1506
+src/qc_groups.scailo_pb.ts:1868

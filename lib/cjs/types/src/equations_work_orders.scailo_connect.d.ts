@@ -1,5 +1,5 @@
 import { EquationsWorkOrdersItemsList, EquationsWorkOrdersList, EquationsWorkOrdersServiceCountReq, EquationsWorkOrdersServiceCreateRequest, EquationsWorkOrdersServiceFilterReq, EquationsWorkOrdersServiceItemCreateRequest, EquationsWorkOrdersServiceItemUpdateRequest, EquationsWorkOrdersServicePaginatedItemsResponse, EquationsWorkOrdersServicePaginationReq, EquationsWorkOrdersServicePaginationResponse, EquationsWorkOrdersServiceSearchAllReq, EquationsWorkOrdersServiceUpdateRequest, EquationWorkOrder, EquationWorkOrderItem, EquationWorkOrderItemHistoryRequest, EquationWorkOrderItemsSearchRequest } from "./equations_work_orders.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -362,7 +362,7 @@ export declare const EquationsWorkOrdersService: {
          */
         readonly uploadEquationWorkOrderItems: {
             readonly name: "UploadEquationWorkOrderItems";
-            readonly I: typeof IdentifierWithFile;
+            readonly I: typeof IdentifierUUIDWithFile;
             readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };

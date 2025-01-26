@@ -22,6 +22,7 @@ from message Scailo.FormsSectionsServiceUpdateRequest
 
 ### Properties
 
+- [code](FormsSectionsServiceUpdateRequest.md#code)
 - [description](FormsSectionsServiceUpdateRequest.md#description)
 - [id](FormsSectionsServiceUpdateRequest.md#id)
 - [name](FormsSectionsServiceUpdateRequest.md#name)
@@ -70,9 +71,25 @@ Message\&lt;FormsSectionsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:367
+src/forms_sections.scailo_pb.ts:398
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the form section is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/forms_sections.scailo_pb.ts:382
+
+___
 
 ### description
 
@@ -86,7 +103,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:358
+src/forms_sections.scailo_pb.ts:389
 
 ___
 
@@ -102,7 +119,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:344
+src/forms_sections.scailo_pb.ts:368
 
 ___
 
@@ -118,7 +135,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:351
+src/forms_sections.scailo_pb.ts:375
 
 ___
 
@@ -134,7 +151,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:337
+src/forms_sections.scailo_pb.ts:361
 
 ___
 
@@ -150,7 +167,7 @@ from field: string width = 13;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:365
+src/forms_sections.scailo_pb.ts:396
 
 ___
 
@@ -160,7 +177,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:374
+src/forms_sections.scailo_pb.ts:405
 
 ___
 
@@ -170,7 +187,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:372
+src/forms_sections.scailo_pb.ts:403
 
 ___
 
@@ -180,7 +197,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:373
+src/forms_sections.scailo_pb.ts:404
 
 ## Methods
 
@@ -468,7 +485,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:394
+src/forms_sections.scailo_pb.ts:426
 
 ___
 
@@ -489,7 +506,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:382
+src/forms_sections.scailo_pb.ts:414
 
 ___
 
@@ -510,7 +527,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:386
+src/forms_sections.scailo_pb.ts:418
 
 ___
 
@@ -531,4 +548,4 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:390
+src/forms_sections.scailo_pb.ts:422

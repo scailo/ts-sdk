@@ -1,5 +1,5 @@
 import { EquationReplaceable, EquationReplaceableItem, EquationReplaceableItemHistoryRequest, EquationReplaceableItemsSearchRequest, EquationsReplaceablesItemsList, EquationsReplaceablesList, EquationsReplaceablesServiceCountReq, EquationsReplaceablesServiceCreateRequest, EquationsReplaceablesServiceFilterReq, EquationsReplaceablesServiceItemCreateRequest, EquationsReplaceablesServiceItemUpdateRequest, EquationsReplaceablesServicePaginatedItemsResponse, EquationsReplaceablesServicePaginationReq, EquationsReplaceablesServicePaginationResponse, EquationsReplaceablesServiceSearchAllReq, EquationsReplaceablesServiceUpdateRequest } from "./equations_replaceables.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -351,7 +351,7 @@ export declare const EquationsReplaceablesService: {
          */
         readonly uploadEquationReplaceableItems: {
             readonly name: "UploadEquationReplaceableItems";
-            readonly I: typeof IdentifierWithFile;
+            readonly I: typeof IdentifierUUIDWithFile;
             readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };

@@ -31,7 +31,19 @@ export declare enum FORM_FIELD_SORT_KEY {
      *
      * @generated from enum value: FORM_FIELD_SORT_KEY_NAME = 10;
      */
-    FORM_FIELD_SORT_KEY_NAME = 10
+    FORM_FIELD_SORT_KEY_NAME = 10,
+    /**
+     * Fetch ordered results by code
+     *
+     * @generated from enum value: FORM_FIELD_SORT_KEY_CODE = 11;
+     */
+    FORM_FIELD_SORT_KEY_CODE = 11,
+    /**
+     * Fetch ordered results by the section ID, and the record ID (this is a composite sort key)
+     *
+     * @generated from enum value: FORM_FIELD_SORT_KEY_SECTION_ID_AND_RECORD_ID = 20;
+     */
+    FORM_FIELD_SORT_KEY_SECTION_ID_AND_RECORD_ID = 20
 }
 /**
  *
@@ -58,6 +70,12 @@ export declare class FormField extends Message<FormField> {
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the form field is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The type of the form field
      *
@@ -209,6 +227,12 @@ export declare class FormsFieldsServiceCreateRequest extends Message<FormsFields
      */
     name: string;
     /**
+     * The unique code by which the form field is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
+    /**
      * The type of the form field
      *
      * @generated from field: Scailo.FORM_TYPE type = 11;
@@ -296,6 +320,12 @@ export declare class FormsFieldsServiceUpdateRequest extends Message<FormsFields
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the form field is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The ID of the corresponding form section that the form field belongs to
      *
@@ -478,6 +508,12 @@ export declare class FormsFieldsServiceFilterReq extends Message<FormsFieldsServ
      * @generated from field: uint64 section_id = 12;
      */
     sectionId: bigint;
+    /**
+     * The unique code by which the form field is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     constructor(data?: PartialMessage<FormsFieldsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsFieldsServiceFilterReq";
@@ -548,6 +584,12 @@ export declare class FormsFieldsServiceCountReq extends Message<FormsFieldsServi
      * @generated from field: uint64 section_id = 12;
      */
     sectionId: bigint;
+    /**
+     * The unique code by which the form field is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     constructor(data?: PartialMessage<FormsFieldsServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsFieldsServiceCountReq";

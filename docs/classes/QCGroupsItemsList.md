@@ -66,7 +66,7 @@ Message\&lt;QCGroupsItemsList\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:933
+src/qc_groups.scailo_pb.ts:1059
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.QCGroupItem list = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:931
+src/qc_groups.scailo_pb.ts:1057
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:940
+src/qc_groups.scailo_pb.ts:1066
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:938
+src/qc_groups.scailo_pb.ts:1064
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:939
+src/qc_groups.scailo_pb.ts:1065
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:956
+src/qc_groups.scailo_pb.ts:1082
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:944
+src/qc_groups.scailo_pb.ts:1070
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:948
+src/qc_groups.scailo_pb.ts:1074
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:952
+src/qc_groups.scailo_pb.ts:1078

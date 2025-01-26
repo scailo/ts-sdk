@@ -69,7 +69,7 @@ Message\&lt;QCGroupsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1128
+src/qc_groups.scailo_pb.ts:1490
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1105
+src/qc_groups.scailo_pb.ts:1467
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1112
+src/qc_groups.scailo_pb.ts:1474
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.QCGroup payload = 4;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1126
+src/qc_groups.scailo_pb.ts:1488
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1119
+src/qc_groups.scailo_pb.ts:1481
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1135
+src/qc_groups.scailo_pb.ts:1497
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1133
+src/qc_groups.scailo_pb.ts:1495
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1134
+src/qc_groups.scailo_pb.ts:1496
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1154
+src/qc_groups.scailo_pb.ts:1516
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1142
+src/qc_groups.scailo_pb.ts:1504
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1146
+src/qc_groups.scailo_pb.ts:1508
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1150
+src/qc_groups.scailo_pb.ts:1512

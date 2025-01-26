@@ -77,7 +77,7 @@ Message\&lt;QCGroup\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:408
+src/qc_groups.scailo_pb.ts:534
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:343
+src/qc_groups.scailo_pb.ts:469
 
 ___
 
@@ -109,7 +109,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:385
+src/qc_groups.scailo_pb.ts:511
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:364
+src/qc_groups.scailo_pb.ts:490
 
 ___
 
@@ -141,7 +141,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:392
+src/qc_groups.scailo_pb.ts:518
 
 ___
 
@@ -157,7 +157,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:329
+src/qc_groups.scailo_pb.ts:455
 
 ___
 
@@ -173,7 +173,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:406
+src/qc_groups.scailo_pb.ts:532
 
 ___
 
@@ -189,7 +189,7 @@ from field: repeated Scailo.QCGroupItem list = 20;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:399
+src/qc_groups.scailo_pb.ts:525
 
 ___
 
@@ -205,7 +205,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:357
+src/qc_groups.scailo_pb.ts:483
 
 ___
 
@@ -221,7 +221,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:336
+src/qc_groups.scailo_pb.ts:462
 
 ___
 
@@ -237,7 +237,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:378
+src/qc_groups.scailo_pb.ts:504
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:350
+src/qc_groups.scailo_pb.ts:476
 
 ___
 
@@ -269,7 +269,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:371
+src/qc_groups.scailo_pb.ts:497
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:415
+src/qc_groups.scailo_pb.ts:541
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:413
+src/qc_groups.scailo_pb.ts:539
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:414
+src/qc_groups.scailo_pb.ts:540
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:442
+src/qc_groups.scailo_pb.ts:568
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:430
+src/qc_groups.scailo_pb.ts:556
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:434
+src/qc_groups.scailo_pb.ts:560
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:438
+src/qc_groups.scailo_pb.ts:564

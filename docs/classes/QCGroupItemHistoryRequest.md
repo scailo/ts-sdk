@@ -67,7 +67,7 @@ Message\&lt;QCGroupItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:982
+src/qc_groups.scailo_pb.ts:1108
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 qc_group_id = 10;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:973
+src/qc_groups.scailo_pb.ts:1099
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 qc_param_id = 11;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:980
+src/qc_groups.scailo_pb.ts:1106
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:989
+src/qc_groups.scailo_pb.ts:1115
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:987
+src/qc_groups.scailo_pb.ts:1113
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:988
+src/qc_groups.scailo_pb.ts:1114
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1006
+src/qc_groups.scailo_pb.ts:1132
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:994
+src/qc_groups.scailo_pb.ts:1120
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:998
+src/qc_groups.scailo_pb.ts:1124
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1002
+src/qc_groups.scailo_pb.ts:1128

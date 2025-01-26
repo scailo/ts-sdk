@@ -1,6 +1,6 @@
 import { FormField, FormFieldPaginationResp, FormsFieldsList, FormsFieldsServiceCountReq, FormsFieldsServiceCreateRequest, FormsFieldsServiceFilterReq, FormsFieldsServicePaginationReq, FormsFieldsServiceSearchAllReq, FormsFieldsServiceUpdateRequest } from "./forms_fields.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 /**
  *
  * Describes the methods applicable on each form field
@@ -129,6 +129,29 @@ export declare const FormsFieldsService: {
             readonly name: "Count";
             readonly I: typeof FormsFieldsServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.FormsFieldsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof FormsFieldsServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Import records using a CSV file (duplicate codes will be skipped)
+         *
+         * @generated from rpc Scailo.FormsFieldsService.Import
+         */
+        readonly import: {
+            readonly name: "Import";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };

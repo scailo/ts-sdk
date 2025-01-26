@@ -72,7 +72,7 @@ Message\&lt;FormsSectionsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:757
+src/forms_sections.scailo_pb.ts:805
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:720
+src/forms_sections.scailo_pb.ts:768
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:748
+src/forms_sections.scailo_pb.ts:796
 
 ___
 
@@ -120,7 +120,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:713
+src/forms_sections.scailo_pb.ts:761
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:727
+src/forms_sections.scailo_pb.ts:775
 
 ___
 
@@ -152,7 +152,7 @@ from field: string search_key = 10;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:755
+src/forms_sections.scailo_pb.ts:803
 
 ___
 
@@ -168,7 +168,7 @@ from field: Scailo.FORM_SECTION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:741
+src/forms_sections.scailo_pb.ts:789
 
 ___
 
@@ -184,7 +184,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:734
+src/forms_sections.scailo_pb.ts:782
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:764
+src/forms_sections.scailo_pb.ts:812
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:762
+src/forms_sections.scailo_pb.ts:810
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:763
+src/forms_sections.scailo_pb.ts:811
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:786
+src/forms_sections.scailo_pb.ts:834
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:774
+src/forms_sections.scailo_pb.ts:822
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:778
+src/forms_sections.scailo_pb.ts:826
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:782
+src/forms_sections.scailo_pb.ts:830

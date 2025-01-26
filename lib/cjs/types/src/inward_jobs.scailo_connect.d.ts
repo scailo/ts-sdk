@@ -1,5 +1,5 @@
 import { InwardJob, InwardJobAncillaryParameters, InwardJobContact, InwardJobContactsList, InwardJobInwardItem, InwardJobInwardItemHistoryRequest, InwardJobInwardItemProspectiveInfoRequest, InwardJobInwardItemsSearchRequest, InwardJobOutwardItem, InwardJobOutwardItemHistoryRequest, InwardJobOutwardItemProspectiveInfoRequest, InwardJobOutwardItemsSearchRequest, InwardJobsInwardItemsList, InwardJobsList, InwardJobsOutwardItemsList, InwardJobsServiceAutofillRequest, InwardJobsServiceContactCreateRequest, InwardJobsServiceCountReq, InwardJobsServiceCreateRequest, InwardJobsServiceFilterReq, InwardJobsServiceInwardItemCreateRequest, InwardJobsServiceInwardItemUpdateRequest, InwardJobsServiceMultipleInwardItemsCreateRequest, InwardJobsServiceMultipleOutwardItemsCreateRequest, InwardJobsServiceOutwardItemCreateRequest, InwardJobsServiceOutwardItemUpdateRequest, InwardJobsServicePaginatedInwardItemsResponse, InwardJobsServicePaginatedOutwardItemsResponse, InwardJobsServicePaginationReq, InwardJobsServicePaginationResponse, InwardJobsServiceSearchAllReq, InwardJobsServiceUpdateRequest } from "./inward_jobs.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -392,7 +392,7 @@ export declare const InwardJobsService: {
          */
         readonly uploadInwardJobInwardItems: {
             readonly name: "UploadInwardJobInwardItems";
-            readonly I: typeof IdentifierWithFile;
+            readonly I: typeof IdentifierUUIDWithFile;
             readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };
@@ -557,7 +557,7 @@ export declare const InwardJobsService: {
          */
         readonly uploadInwardJobOutwardItems: {
             readonly name: "UploadInwardJobOutwardItems";
-            readonly I: typeof IdentifierWithFile;
+            readonly I: typeof IdentifierUUIDWithFile;
             readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };

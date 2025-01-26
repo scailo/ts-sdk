@@ -1,5 +1,5 @@
 import { Location, LocationsList, LocationsServiceCountReq, LocationsServiceCreateRequest, LocationsServiceFilterReq, LocationsServicePaginationReq, LocationsServicePaginationResponse, LocationsServiceSearchAllReq, LocationsServiceUpdateRequest } from "./locations.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -242,6 +242,29 @@ export declare const LocationsService: {
             readonly name: "Count";
             readonly I: typeof LocationsServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.LocationsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof LocationsServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Import records using a CSV file (duplicate codes will be skipped)
+         *
+         * @generated from rpc Scailo.LocationsService.Import
+         */
+        readonly import: {
+            readonly name: "Import";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };

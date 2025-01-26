@@ -27,6 +27,7 @@ from message Scailo.TaxParamsServiceCountReq
 - [approvedOnStart](TaxParamsServiceCountReq.md#approvedonstart)
 - [approverRoleId](TaxParamsServiceCountReq.md#approverroleid)
 - [category](TaxParamsServiceCountReq.md#category)
+- [code](TaxParamsServiceCountReq.md#code)
 - [creationTimestampEnd](TaxParamsServiceCountReq.md#creationtimestampend)
 - [creationTimestampStart](TaxParamsServiceCountReq.md#creationtimestampstart)
 - [entityUuid](TaxParamsServiceCountReq.md#entityuuid)
@@ -79,7 +80,7 @@ Message\&lt;TaxParamsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:986
+src/tax_params.scailo_pb.ts:1033
 
 ## Properties
 
@@ -95,7 +96,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:956
+src/tax_params.scailo_pb.ts:996
 
 ___
 
@@ -111,7 +112,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:949
+src/tax_params.scailo_pb.ts:989
 
 ___
 
@@ -127,7 +128,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:942
+src/tax_params.scailo_pb.ts:982
 
 ___
 
@@ -143,7 +144,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:963
+src/tax_params.scailo_pb.ts:1003
 
 ___
 
@@ -159,7 +160,23 @@ from field: Scailo.TAX_PARAM_CATEGORY category = 32;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:984
+src/tax_params.scailo_pb.ts:1031
+
+___
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the tax param is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/tax_params.scailo_pb.ts:1017
 
 ___
 
@@ -175,7 +192,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:907
+src/tax_params.scailo_pb.ts:947
 
 ___
 
@@ -191,7 +208,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:900
+src/tax_params.scailo_pb.ts:940
 
 ___
 
@@ -207,7 +224,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:928
+src/tax_params.scailo_pb.ts:968
 
 ___
 
@@ -223,7 +240,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:893
+src/tax_params.scailo_pb.ts:933
 
 ___
 
@@ -239,7 +256,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:921
+src/tax_params.scailo_pb.ts:961
 
 ___
 
@@ -255,7 +272,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:914
+src/tax_params.scailo_pb.ts:954
 
 ___
 
@@ -271,7 +288,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:970
+src/tax_params.scailo_pb.ts:1010
 
 ___
 
@@ -287,7 +304,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:935
+src/tax_params.scailo_pb.ts:975
 
 ___
 
@@ -303,7 +320,7 @@ from field: Scailo.TAX_PARAM_VALUE_TYPE value_type = 31;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:977
+src/tax_params.scailo_pb.ts:1024
 
 ___
 
@@ -313,7 +330,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:993
+src/tax_params.scailo_pb.ts:1040
 
 ___
 
@@ -323,7 +340,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:991
+src/tax_params.scailo_pb.ts:1038
 
 ___
 
@@ -333,7 +350,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:992
+src/tax_params.scailo_pb.ts:1039
 
 ## Methods
 
@@ -621,7 +638,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1022
+src/tax_params.scailo_pb.ts:1070
 
 ___
 
@@ -642,7 +659,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1010
+src/tax_params.scailo_pb.ts:1058
 
 ___
 
@@ -663,7 +680,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1014
+src/tax_params.scailo_pb.ts:1062
 
 ___
 
@@ -684,4 +701,4 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:1018
+src/tax_params.scailo_pb.ts:1066

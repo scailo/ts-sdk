@@ -24,6 +24,7 @@ from message Scailo.TaxParam
 
 - [approvalMetadata](TaxParam.md#approvalmetadata)
 - [category](TaxParam.md#category)
+- [code](TaxParam.md#code)
 - [description](TaxParam.md#description)
 - [divisor](TaxParam.md#divisor)
 - [entityUuid](TaxParam.md#entityuuid)
@@ -80,7 +81,7 @@ Message\&lt;TaxParam\&gt;.constructor
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:471
+src/tax_params.scailo_pb.ts:502
 
 ## Properties
 
@@ -96,7 +97,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:385
+src/tax_params.scailo_pb.ts:409
 
 ___
 
@@ -112,7 +113,23 @@ from field: Scailo.TAX_PARAM_CATEGORY category = 18;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:462
+src/tax_params.scailo_pb.ts:493
+
+___
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the tax param is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/tax_params.scailo_pb.ts:437
 
 ___
 
@@ -128,7 +145,7 @@ from field: string description = 20;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:469
+src/tax_params.scailo_pb.ts:500
 
 ___
 
@@ -144,7 +161,7 @@ from field: uint64 divisor = 14;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:434
+src/tax_params.scailo_pb.ts:465
 
 ___
 
@@ -160,7 +177,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:371
+src/tax_params.scailo_pb.ts:395
 
 ___
 
@@ -176,7 +193,7 @@ from field: uint64 input_credit_percentage = 15;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:441
+src/tax_params.scailo_pb.ts:472
 
 ___
 
@@ -192,7 +209,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:399
+src/tax_params.scailo_pb.ts:423
 
 ___
 
@@ -208,7 +225,7 @@ from field: int64 max_amount = 17;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:455
+src/tax_params.scailo_pb.ts:486
 
 ___
 
@@ -224,7 +241,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:378
+src/tax_params.scailo_pb.ts:402
 
 ___
 
@@ -240,7 +257,7 @@ from field: int64 min_amount = 16;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:448
+src/tax_params.scailo_pb.ts:479
 
 ___
 
@@ -256,7 +273,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:406
+src/tax_params.scailo_pb.ts:430
 
 ___
 
@@ -272,7 +289,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:392
+src/tax_params.scailo_pb.ts:416
 
 ___
 
@@ -288,7 +305,7 @@ from field: uint64 tax_fixed_amount = 12;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:420
+src/tax_params.scailo_pb.ts:451
 
 ___
 
@@ -304,7 +321,7 @@ from field: uint64 tax_rate_percentage = 13;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:427
+src/tax_params.scailo_pb.ts:458
 
 ___
 
@@ -320,7 +337,7 @@ from field: Scailo.TAX_PARAM_VALUE_TYPE value_type = 11;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:413
+src/tax_params.scailo_pb.ts:444
 
 ___
 
@@ -330,7 +347,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:478
+src/tax_params.scailo_pb.ts:509
 
 ___
 
@@ -340,7 +357,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:476
+src/tax_params.scailo_pb.ts:507
 
 ___
 
@@ -350,7 +367,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:477
+src/tax_params.scailo_pb.ts:508
 
 ## Methods
 
@@ -638,7 +655,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:508
+src/tax_params.scailo_pb.ts:540
 
 ___
 
@@ -659,7 +676,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:496
+src/tax_params.scailo_pb.ts:528
 
 ___
 
@@ -680,7 +697,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:500
+src/tax_params.scailo_pb.ts:532
 
 ___
 
@@ -701,4 +718,4 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:504
+src/tax_params.scailo_pb.ts:536

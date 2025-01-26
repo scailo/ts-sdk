@@ -31,7 +31,13 @@ export declare enum FORM_SECTION_SORT_KEY {
      *
      * @generated from enum value: FORM_SECTION_SORT_KEY_NAME = 10;
      */
-    FORM_SECTION_SORT_KEY_NAME = 10
+    FORM_SECTION_SORT_KEY_NAME = 10,
+    /**
+     * Fetch ordered results by code
+     *
+     * @generated from enum value: FORM_SECTION_SORT_KEY_CODE = 11;
+     */
+    FORM_SECTION_SORT_KEY_CODE = 11
 }
 /**
  *
@@ -58,6 +64,12 @@ export declare class FormSection extends Message<FormSection> {
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the form section is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * The type of the form section
      *
@@ -173,6 +185,12 @@ export declare class FormsSectionsServiceCreateRequest extends Message<FormsSect
      */
     name: string;
     /**
+     * The unique code by which the form section is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
+    /**
      * The type of the form section
      *
      * @generated from field: Scailo.FORM_TYPE type = 11;
@@ -224,6 +242,12 @@ export declare class FormsSectionsServiceUpdateRequest extends Message<FormsSect
      * @generated from field: string name = 10;
      */
     name: string;
+    /**
+     * The unique code by which the form section is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     /**
      * A short description of the form section
      *
@@ -370,6 +394,12 @@ export declare class FormsSectionsServiceFilterReq extends Message<FormsSections
      * @generated from field: Scailo.FORM_TYPE type = 11;
      */
     type: FORM_TYPE;
+    /**
+     * The unique code by which the form section is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     constructor(data?: PartialMessage<FormsSectionsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsSectionsServiceFilterReq";
@@ -434,6 +464,12 @@ export declare class FormsSectionsServiceCountReq extends Message<FormsSectionsS
      * @generated from field: Scailo.FORM_TYPE type = 11;
      */
     type: FORM_TYPE;
+    /**
+     * The unique code by which the form section is classified
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
     constructor(data?: PartialMessage<FormsSectionsServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsSectionsServiceCountReq";

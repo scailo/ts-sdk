@@ -15,6 +15,7 @@ from enum Scailo.TAX_PARAM_SORT_KEY
 - [TAX\_PARAM\_SORT\_KEY\_APPROVED\_BY](TAX_PARAM_SORT_KEY.md#tax_param_sort_key_approved_by)
 - [TAX\_PARAM\_SORT\_KEY\_APPROVED\_ON](TAX_PARAM_SORT_KEY.md#tax_param_sort_key_approved_on)
 - [TAX\_PARAM\_SORT\_KEY\_APPROVER\_ROLE\_ID](TAX_PARAM_SORT_KEY.md#tax_param_sort_key_approver_role_id)
+- [TAX\_PARAM\_SORT\_KEY\_CODE](TAX_PARAM_SORT_KEY.md#tax_param_sort_key_code)
 - [TAX\_PARAM\_SORT\_KEY\_CREATED\_AT](TAX_PARAM_SORT_KEY.md#tax_param_sort_key_created_at)
 - [TAX\_PARAM\_SORT\_KEY\_ID\_UNSPECIFIED](TAX_PARAM_SORT_KEY.md#tax_param_sort_key_id_unspecified)
 - [TAX\_PARAM\_SORT\_KEY\_MODIFIED\_AT](TAX_PARAM_SORT_KEY.md#tax_param_sort_key_modified_at)
@@ -68,6 +69,22 @@ from enum value: TAX_PARAM_SORT_KEY_APPROVER_ROLE_ID = 5;
 #### Defined in
 
 src/tax_params.scailo_pb.ts:127
+
+___
+
+### TAX\_PARAM\_SORT\_KEY\_CODE
+
+• **TAX\_PARAM\_SORT\_KEY\_CODE** = ``21``
+
+Fetch ordered results by the code
+
+**`Generated`**
+
+from enum value: TAX_PARAM_SORT_KEY_CODE = 21;
+
+#### Defined in
+
+src/tax_params.scailo_pb.ts:148
 
 ___
 

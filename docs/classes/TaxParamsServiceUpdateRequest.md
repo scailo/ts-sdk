@@ -22,6 +22,7 @@ from message Scailo.TaxParamsServiceUpdateRequest
 
 ### Properties
 
+- [code](TaxParamsServiceUpdateRequest.md#code)
 - [description](TaxParamsServiceUpdateRequest.md#description)
 - [id](TaxParamsServiceUpdateRequest.md#id)
 - [name](TaxParamsServiceUpdateRequest.md#name)
@@ -70,9 +71,25 @@ Message\&lt;TaxParamsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:327
+src/tax_params.scailo_pb.ts:350
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the tax param is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/tax_params.scailo_pb.ts:341
+
+___
 
 ### description
 
@@ -86,7 +103,7 @@ from field: string description = 20;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:325
+src/tax_params.scailo_pb.ts:348
 
 ___
 
@@ -102,7 +119,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:304
+src/tax_params.scailo_pb.ts:320
 
 ___
 
@@ -118,7 +135,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:318
+src/tax_params.scailo_pb.ts:334
 
 ___
 
@@ -134,7 +151,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:311
+src/tax_params.scailo_pb.ts:327
 
 ___
 
@@ -150,7 +167,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:297
+src/tax_params.scailo_pb.ts:313
 
 ___
 
@@ -160,7 +177,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:334
+src/tax_params.scailo_pb.ts:357
 
 ___
 
@@ -170,7 +187,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:332
+src/tax_params.scailo_pb.ts:355
 
 ___
 
@@ -180,7 +197,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:333
+src/tax_params.scailo_pb.ts:356
 
 ## Methods
 
@@ -468,7 +485,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:354
+src/tax_params.scailo_pb.ts:378
 
 ___
 
@@ -489,7 +506,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:342
+src/tax_params.scailo_pb.ts:366
 
 ___
 
@@ -510,7 +527,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:346
+src/tax_params.scailo_pb.ts:370
 
 ___
 
@@ -531,4 +548,4 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:350
+src/tax_params.scailo_pb.ts:374

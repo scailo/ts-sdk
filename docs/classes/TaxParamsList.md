@@ -66,7 +66,7 @@ Message\&lt;TaxParamsList\&gt;.constructor
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:527
+src/tax_params.scailo_pb.ts:559
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.TaxParam list = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:525
+src/tax_params.scailo_pb.ts:557
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:534
+src/tax_params.scailo_pb.ts:566
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:532
+src/tax_params.scailo_pb.ts:564
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:533
+src/tax_params.scailo_pb.ts:565
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:550
+src/tax_params.scailo_pb.ts:582
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:538
+src/tax_params.scailo_pb.ts:570
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:542
+src/tax_params.scailo_pb.ts:574
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:546
+src/tax_params.scailo_pb.ts:578

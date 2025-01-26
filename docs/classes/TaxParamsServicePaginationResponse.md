@@ -69,7 +69,7 @@ Message\&lt;TaxParamsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:672
+src/tax_params.scailo_pb.ts:704
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:649
+src/tax_params.scailo_pb.ts:681
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:656
+src/tax_params.scailo_pb.ts:688
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.TaxParam payload = 4;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:670
+src/tax_params.scailo_pb.ts:702
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:663
+src/tax_params.scailo_pb.ts:695
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:679
+src/tax_params.scailo_pb.ts:711
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:677
+src/tax_params.scailo_pb.ts:709
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:678
+src/tax_params.scailo_pb.ts:710
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:698
+src/tax_params.scailo_pb.ts:730
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:686
+src/tax_params.scailo_pb.ts:718
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:690
+src/tax_params.scailo_pb.ts:722
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:694
+src/tax_params.scailo_pb.ts:726

@@ -22,6 +22,7 @@ from message Scailo.FormsFieldsServiceFilterReq
 
 ### Properties
 
+- [code](FormsFieldsServiceFilterReq.md#code)
 - [count](FormsFieldsServiceFilterReq.md#count)
 - [creationTimestampEnd](FormsFieldsServiceFilterReq.md#creationtimestampend)
 - [creationTimestampStart](FormsFieldsServiceFilterReq.md#creationtimestampstart)
@@ -78,9 +79,25 @@ Message\&lt;FormsFieldsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:707
+src/forms_fields.scailo_pb.ts:754
 
 ## Properties
+
+### code
+
+• **code**: `string` = `""`
+
+The unique code by which the form field is classified
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/forms_fields.scailo_pb.ts:752
+
+___
 
 ### count
 
@@ -94,7 +111,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:628
+src/forms_fields.scailo_pb.ts:668
 
 ___
 
@@ -110,7 +127,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:663
+src/forms_fields.scailo_pb.ts:703
 
 ___
 
@@ -126,7 +143,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:656
+src/forms_fields.scailo_pb.ts:696
 
 ___
 
@@ -142,7 +159,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:684
+src/forms_fields.scailo_pb.ts:724
 
 ___
 
@@ -158,7 +175,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:621
+src/forms_fields.scailo_pb.ts:661
 
 ___
 
@@ -174,7 +191,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:677
+src/forms_fields.scailo_pb.ts:717
 
 ___
 
@@ -190,7 +207,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:670
+src/forms_fields.scailo_pb.ts:710
 
 ___
 
@@ -206,7 +223,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:691
+src/forms_fields.scailo_pb.ts:731
 
 ___
 
@@ -222,7 +239,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:635
+src/forms_fields.scailo_pb.ts:675
 
 ___
 
@@ -238,7 +255,7 @@ from field: uint64 section_id = 12;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:705
+src/forms_fields.scailo_pb.ts:745
 
 ___
 
@@ -254,7 +271,7 @@ from field: Scailo.FORM_FIELD_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:649
+src/forms_fields.scailo_pb.ts:689
 
 ___
 
@@ -270,7 +287,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:642
+src/forms_fields.scailo_pb.ts:682
 
 ___
 
@@ -286,7 +303,7 @@ from field: Scailo.FORM_TYPE type = 11;
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:698
+src/forms_fields.scailo_pb.ts:738
 
 ___
 
@@ -296,7 +313,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:714
+src/forms_fields.scailo_pb.ts:761
 
 ___
 
@@ -306,7 +323,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:712
+src/forms_fields.scailo_pb.ts:759
 
 ___
 
@@ -316,7 +333,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:713
+src/forms_fields.scailo_pb.ts:760
 
 ## Methods
 
@@ -604,7 +621,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:742
+src/forms_fields.scailo_pb.ts:790
 
 ___
 
@@ -625,7 +642,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:730
+src/forms_fields.scailo_pb.ts:778
 
 ___
 
@@ -646,7 +663,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:734
+src/forms_fields.scailo_pb.ts:782
 
 ___
 
@@ -667,4 +684,4 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:738
+src/forms_fields.scailo_pb.ts:786

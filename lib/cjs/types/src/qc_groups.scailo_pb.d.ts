@@ -10,29 +10,123 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
  */
 export declare enum QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE {
     /**
+     * Denotes that value type is disregarded. This is used only within search APIs
+     *
+     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_ANY_UNSPECIFIED = 0;
+     */
+    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_ANY_UNSPECIFIED = 0,
+    /**
      * Acceptable value type is an absolute number (with min and max defined in number_min_value and number_max_value)
      *
-     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED = 0;
+     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_ABSOLUTE = 1;
      */
-    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED = 0,
+    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_ABSOLUTE = 1,
     /**
      * Acceptable value type is a percentage
      *
-     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_PERCENTAGE = 1;
+     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_PERCENTAGE = 2;
      */
-    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_PERCENTAGE = 1,
+    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_PERCENTAGE = 2,
     /**
      * Acceptable value type is a textual input
      *
-     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_INPUT = 2;
+     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_INPUT = 3;
      */
-    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_INPUT = 2,
+    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_INPUT = 3,
     /**
      * Acceptable value type is a dropdown (from the values as defined in text_values)
      *
-     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_DROPDOWN = 3;
+     * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_DROPDOWN = 4;
      */
-    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_DROPDOWN = 3
+    QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_DROPDOWN = 4
+}
+/**
+ *
+ * Describes the available sort keys
+ *
+ * @generated from enum Scailo.QC_GROUP_ITEM_SORT_KEY
+ */
+export declare enum QC_GROUP_ITEM_SORT_KEY {
+    /**
+     * Fetch ordered results by id
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
+     */
+    QC_GROUP_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
+    /**
+     * Fetch ordered results by the creation timestamp
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_CREATED_AT = 1;
+     */
+    QC_GROUP_ITEM_SORT_KEY_CREATED_AT = 1,
+    /**
+     * Fetch ordered results by the modified timestamp
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_MODIFIED_AT = 2;
+     */
+    QC_GROUP_ITEM_SORT_KEY_MODIFIED_AT = 2,
+    /**
+     * Fetch ordered results by the approved on timestamp
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_APPROVED_ON = 3;
+     */
+    QC_GROUP_ITEM_SORT_KEY_APPROVED_ON = 3,
+    /**
+     * Fetch ordered results by the approved by field
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_APPROVED_BY = 4;
+     */
+    QC_GROUP_ITEM_SORT_KEY_APPROVED_BY = 4,
+    /**
+     * Fetch ordered results by the approver's role ID
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
+     */
+    QC_GROUP_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
+    /**
+     * Fetch ordered results by the qc group ID
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_QC_GROUP_ID = 10;
+     */
+    QC_GROUP_ITEM_SORT_KEY_QC_GROUP_ID = 10,
+    /**
+     * Fetch ordered results by the qc param ID
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_QC_PARAM_ID = 11;
+     */
+    QC_GROUP_ITEM_SORT_KEY_QC_PARAM_ID = 11,
+    /**
+     * Fetch ordered results by the unit of material ID
+     *
+     * @generated from enum value: QC_GROUP_ITEM_SORT_KEY_UOM_ID = 12;
+     */
+    QC_GROUP_ITEM_SORT_KEY_UOM_ID = 12
+}
+/**
+ *
+ * Describes the applicable statuses of qc group items
+ *
+ * @generated from enum Scailo.QC_GROUP_ITEM_STATUS
+ */
+export declare enum QC_GROUP_ITEM_STATUS {
+    /**
+     * Denotes that status be disregarded. This is used only within search APIs
+     *
+     * @generated from enum value: QC_GROUP_ITEM_STATUS_ANY_UNSPECIFIED = 0;
+     */
+    QC_GROUP_ITEM_STATUS_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the qc group items must have been approved
+     *
+     * @generated from enum value: QC_GROUP_ITEM_STATUS_APPROVED = 1;
+     */
+    QC_GROUP_ITEM_STATUS_APPROVED = 1,
+    /**
+     * Denotes that the qc group items must be waiting for approval
+     *
+     * @generated from enum value: QC_GROUP_ITEM_STATUS_UNAPPROVED = 2;
+     */
+    QC_GROUP_ITEM_STATUS_UNAPPROVED = 2
 }
 /**
  *
@@ -665,6 +759,164 @@ export declare class QCGroupItemHistoryRequest extends Message<QCGroupItemHistor
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupItemHistoryRequest;
     static equals(a: QCGroupItemHistoryRequest | PlainMessage<QCGroupItemHistoryRequest> | undefined, b: QCGroupItemHistoryRequest | PlainMessage<QCGroupItemHistoryRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the request payload to retrieve approved or unapproved items.
+ *
+ * @generated from message Scailo.QCGroupItemsSearchRequest
+ */
+export declare class QCGroupItemsSearchRequest extends Message<QCGroupItemsSearchRequest> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The sort order that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     */
+    sortOrder: SORT_ORDER;
+    /**
+     * The sort key that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.QC_GROUP_ITEM_SORT_KEY sort_key = 5;
+     */
+    sortKey: QC_GROUP_ITEM_SORT_KEY;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 6;
+     */
+    entityUuid: string;
+    /**
+     * The status of the items
+     *
+     * @generated from field: Scailo.QC_GROUP_ITEM_STATUS status = 7;
+     */
+    status: QC_GROUP_ITEM_STATUS;
+    /**
+     * The start range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_start = 10;
+     */
+    approvedOnStart: bigint;
+    /**
+     * The end range of approved timestamp
+     *
+     * @generated from field: uint64 approved_on_end = 11;
+     */
+    approvedOnEnd: bigint;
+    /**
+     * The ID of the approver
+     *
+     * @generated from field: uint64 approved_by_user_id = 12;
+     */
+    approvedByUserId: bigint;
+    /**
+     * The role ID of the approver
+     *
+     * @generated from field: uint64 approver_role_id = 13;
+     */
+    approverRoleId: bigint;
+    /**
+     * The ID of the qc group
+     *
+     * @generated from field: uint64 qc_group_id = 20;
+     */
+    qcGroupId: bigint;
+    /**
+     * The ID of the qc param
+     *
+     * @generated from field: uint64 qc_param_id = 21;
+     */
+    qcParamId: bigint;
+    /**
+     * The ID of the unit of material
+     *
+     * @generated from field: uint64 uom_id = 22;
+     */
+    uomId: bigint;
+    /**
+     * Denotes if this parameter is internal or not (if set to true, then this value will be hidden. If set to false, then this value will be printed)
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_internal = 29;
+     */
+    isInternal: BOOL_FILTER;
+    /**
+     * The acceptable value type of the item
+     *
+     * @generated from field: Scailo.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE acceptable_value_type = 30;
+     */
+    acceptableValueType: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE;
+    /**
+     * Describes the key with which the search operation needs to be performed
+     *
+     * @generated from field: string search_key = 40;
+     */
+    searchKey: string;
+    constructor(data?: PartialMessage<QCGroupItemsSearchRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.QCGroupItemsSearchRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCGroupItemsSearchRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupItemsSearchRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupItemsSearchRequest;
+    static equals(a: QCGroupItemsSearchRequest | PlainMessage<QCGroupItemsSearchRequest> | undefined, b: QCGroupItemsSearchRequest | PlainMessage<QCGroupItemsSearchRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the response to a pagination items request
+ *
+ * @generated from message Scailo.QCGroupsServicePaginatedItemsResponse
+ */
+export declare class QCGroupsServicePaginatedItemsResponse extends Message<QCGroupsServicePaginatedItemsResponse> {
+    /**
+     * The number of records in this payload
+     *
+     * @generated from field: uint64 count = 1;
+     */
+    count: bigint;
+    /**
+     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @generated from field: uint64 offset = 2;
+     */
+    offset: bigint;
+    /**
+     * The total number of records that are available
+     *
+     * @generated from field: uint64 total = 3;
+     */
+    total: bigint;
+    /**
+     * The list of records
+     *
+     * @generated from field: repeated Scailo.QCGroupItem payload = 4;
+     */
+    payload: QCGroupItem[];
+    constructor(data?: PartialMessage<QCGroupsServicePaginatedItemsResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.QCGroupsServicePaginatedItemsResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCGroupsServicePaginatedItemsResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServicePaginatedItemsResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServicePaginatedItemsResponse;
+    static equals(a: QCGroupsServicePaginatedItemsResponse | PlainMessage<QCGroupsServicePaginatedItemsResponse> | undefined, b: QCGroupsServicePaginatedItemsResponse | PlainMessage<QCGroupsServicePaginatedItemsResponse> | undefined): boolean;
 }
 /**
  *

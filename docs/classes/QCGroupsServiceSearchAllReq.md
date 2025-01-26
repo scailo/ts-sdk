@@ -74,7 +74,7 @@ Message\&lt;QCGroupsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1585
+src/qc_groups.scailo_pb.ts:1947
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1534
+src/qc_groups.scailo_pb.ts:1896
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1562
+src/qc_groups.scailo_pb.ts:1924
 
 ___
 
@@ -122,7 +122,7 @@ from field: uint64 family_id = 30;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1583
+src/qc_groups.scailo_pb.ts:1945
 
 ___
 
@@ -138,7 +138,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1527
+src/qc_groups.scailo_pb.ts:1889
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1541
+src/qc_groups.scailo_pb.ts:1903
 
 ___
 
@@ -170,7 +170,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1576
+src/qc_groups.scailo_pb.ts:1938
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.QC_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1555
+src/qc_groups.scailo_pb.ts:1917
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1548
+src/qc_groups.scailo_pb.ts:1910
 
 ___
 
@@ -218,7 +218,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1569
+src/qc_groups.scailo_pb.ts:1931
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1592
+src/qc_groups.scailo_pb.ts:1954
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1590
+src/qc_groups.scailo_pb.ts:1952
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1591
+src/qc_groups.scailo_pb.ts:1953
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1616
+src/qc_groups.scailo_pb.ts:1978
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1604
+src/qc_groups.scailo_pb.ts:1966
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1608
+src/qc_groups.scailo_pb.ts:1970
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:1612
+src/qc_groups.scailo_pb.ts:1974

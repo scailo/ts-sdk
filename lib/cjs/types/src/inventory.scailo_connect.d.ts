@@ -1,4 +1,4 @@
-import { GenericInventory, GenericInventoryList, InventoryHashSearchReq, InventoryServiceFamilyQuantityReq, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
+import { ConsolidatedInventoryStatistics, GenericInventory, GenericInventoryList, InventoryHashSearchReq, InventoryServiceFamilyQuantityReq, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { Identifier, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 /**
@@ -228,6 +228,17 @@ export declare const InventoryService: {
             readonly name: "ViewRequiredQuantity";
             readonly I: typeof Identifier;
             readonly O: typeof QuantityResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View consolidated inventory statistics
+         *
+         * @generated from rpc Scailo.InventoryService.ViewConsolidatedStatistics
+         */
+        readonly viewConsolidatedStatistics: {
+            readonly name: "ViewConsolidatedStatistics";
+            readonly I: typeof Identifier;
+            readonly O: typeof ConsolidatedInventoryStatistics;
             readonly kind: MethodKind.Unary;
         };
         /**

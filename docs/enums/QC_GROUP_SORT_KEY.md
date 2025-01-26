@@ -35,7 +35,7 @@ from enum value: QC_GROUP_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:94
+src/qc_groups.scailo_pb.ts:220
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: QC_GROUP_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:87
+src/qc_groups.scailo_pb.ts:213
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: QC_GROUP_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:101
+src/qc_groups.scailo_pb.ts:227
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: QC_GROUP_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:108
+src/qc_groups.scailo_pb.ts:234
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: QC_GROUP_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:73
+src/qc_groups.scailo_pb.ts:199
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: QC_GROUP_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:66
+src/qc_groups.scailo_pb.ts:192
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: QC_GROUP_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:80
+src/qc_groups.scailo_pb.ts:206
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: QC_GROUP_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/qc_groups.scailo_pb.ts:115
+src/qc_groups.scailo_pb.ts:241

@@ -458,4 +458,92 @@ export declare class ReturnableInventorySearchReq extends Message<ReturnableInve
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReturnableInventorySearchReq;
     static equals(a: ReturnableInventorySearchReq | PlainMessage<ReturnableInventorySearchReq> | undefined, b: ReturnableInventorySearchReq | PlainMessage<ReturnableInventorySearchReq> | undefined): boolean;
 }
+/**
+ *
+ * Describes the message consisting of all the inventory statistics for the given family ID
+ *
+ * @generated from message Scailo.ConsolidatedInventoryStatistics
+ */
+export declare class ConsolidatedInventoryStatistics extends Message<ConsolidatedInventoryStatistics> {
+    /**
+     * The ID of the family
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * The base demand quantity
+     *
+     * @generated from field: int64 base_demand_count = 10;
+     */
+    baseDemandCount: bigint;
+    /**
+     * The work in progress quantity
+     *
+     * @generated from field: int64 work_in_progress_count = 20;
+     */
+    workInProgressCount: bigint;
+    /**
+     * The indented quantity
+     *
+     * @generated from field: int64 indented_count = 30;
+     */
+    indentedCount: bigint;
+    /**
+     * The ordered quantity
+     *
+     * @generated from field: int64 ordered_count = 40;
+     */
+    orderedCount: bigint;
+    /**
+     * The quantity in QC
+     *
+     * @generated from field: int64 qc_count = 100;
+     */
+    qcCount: bigint;
+    /**
+     * The quantity that has been rejected
+     *
+     * @generated from field: int64 rejected_count = 110;
+     */
+    rejectedCount: bigint;
+    /**
+     * The quantity that has been marked for return
+     *
+     * @generated from field: int64 returnable_count = 120;
+     */
+    returnableCount: bigint;
+    /**
+     * The quantity in rework
+     *
+     * @generated from field: int64 rework_count = 130;
+     */
+    reworkCount: bigint;
+    /**
+     * The quantity that has been scrapped
+     *
+     * @generated from field: int64 scrap_count = 140;
+     */
+    scrapCount: bigint;
+    /**
+     * The quantity in store
+     *
+     * @generated from field: int64 store_count = 150;
+     */
+    storeCount: bigint;
+    /**
+     * The quantity that is required
+     *
+     * @generated from field: int64 required_count = 200;
+     */
+    requiredCount: bigint;
+    constructor(data?: PartialMessage<ConsolidatedInventoryStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ConsolidatedInventoryStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ConsolidatedInventoryStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatistics;
+    static equals(a: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined, b: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined): boolean;
+}
 //# sourceMappingURL=inventory.scailo_pb.d.ts.map

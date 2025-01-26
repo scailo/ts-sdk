@@ -1,5 +1,5 @@
 import { PurchaseOrder, PurchaseOrderAncillaryParameters, PurchaseOrderBillingStatistics, PurchaseOrderContact, PurchaseOrderContactsList, PurchaseOrderInventoryMatchList, PurchaseOrderInventoryStatistics, PurchaseOrderItem, PurchaseOrderItemHistoryRequest, PurchaseOrderItemProspectiveInfoRequest, PurchaseOrderItemsList, PurchaseOrderItemsSearchRequest, PurchaseOrderReference, PurchaseOrderReferencesList, PurchasesOrdersList, PurchasesOrdersServiceAutofillRequest, PurchasesOrdersServiceContactCreateRequest, PurchasesOrdersServiceCountReq, PurchasesOrdersServiceCreateRequest, PurchasesOrdersServiceFilterReq, PurchasesOrdersServiceItemCreateRequest, PurchasesOrdersServiceItemUpdateRequest, PurchasesOrdersServicePaginatedItemsResponse, PurchasesOrdersServicePaginationReq, PurchasesOrdersServicePaginationResponse, PurchasesOrdersServiceReferenceCreateRequest, PurchasesOrdersServiceSearchAllReq, PurchasesOrdersServiceUpdateRequest } from "./purchases_orders.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 /**
@@ -371,7 +371,7 @@ export declare const PurchasesOrdersService: {
          */
         readonly uploadPurchaseOrderItems: {
             readonly name: "UploadPurchaseOrderItems";
-            readonly I: typeof IdentifierWithFile;
+            readonly I: typeof IdentifierUUIDWithFile;
             readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };
