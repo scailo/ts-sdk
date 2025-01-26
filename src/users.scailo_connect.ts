@@ -492,6 +492,29 @@ export const UsersService = {
       O: CountResponse,
       kind: MethodKind.Unary,
     },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.UsersService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: UsersServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file (duplicate codes will be skipped)
+     *
+     * @generated from rpc Scailo.UsersService.Import
+     */
+    import: {
+      name: "Import",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
+      kind: MethodKind.Unary,
+    },
   }
 } as const;
 

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { EquationSalesBundle, EquationSalesBundleItem, EquationSalesBundleItemHistoryRequest, EquationSalesBundleItemsSearchRequest, EquationsSalesBundlesItemsList, EquationsSalesBundlesList, EquationsSalesBundlesServiceCountReq, EquationsSalesBundlesServiceCreateRequest, EquationsSalesBundlesServiceFilterReq, EquationsSalesBundlesServiceItemCreateRequest, EquationsSalesBundlesServiceItemUpdateRequest, EquationsSalesBundlesServicePaginatedItemsResponse, EquationsSalesBundlesServicePaginationReq, EquationsSalesBundlesServicePaginationResponse, EquationsSalesBundlesServiceSearchAllReq, EquationsSalesBundlesServiceUpdateRequest } from "./equations_sales_bundles.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -357,7 +357,7 @@ export const EquationsSalesBundlesService = {
      */
     uploadEquationSalesBundleItems: {
       name: "UploadEquationSalesBundleItems",
-      I: IdentifierWithFile,
+      I: IdentifierUUIDWithFile,
       O: IdentifiersList,
       kind: MethodKind.Unary,
     },

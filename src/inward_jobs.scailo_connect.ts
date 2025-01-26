@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { InwardJob, InwardJobAncillaryParameters, InwardJobContact, InwardJobContactsList, InwardJobInwardItem, InwardJobInwardItemHistoryRequest, InwardJobInwardItemProspectiveInfoRequest, InwardJobInwardItemsSearchRequest, InwardJobOutwardItem, InwardJobOutwardItemHistoryRequest, InwardJobOutwardItemProspectiveInfoRequest, InwardJobOutwardItemsSearchRequest, InwardJobsInwardItemsList, InwardJobsList, InwardJobsOutwardItemsList, InwardJobsServiceAutofillRequest, InwardJobsServiceContactCreateRequest, InwardJobsServiceCountReq, InwardJobsServiceCreateRequest, InwardJobsServiceFilterReq, InwardJobsServiceInwardItemCreateRequest, InwardJobsServiceInwardItemUpdateRequest, InwardJobsServiceMultipleInwardItemsCreateRequest, InwardJobsServiceMultipleOutwardItemsCreateRequest, InwardJobsServiceOutwardItemCreateRequest, InwardJobsServiceOutwardItemUpdateRequest, InwardJobsServicePaginatedInwardItemsResponse, InwardJobsServicePaginatedOutwardItemsResponse, InwardJobsServicePaginationReq, InwardJobsServicePaginationResponse, InwardJobsServiceSearchAllReq, InwardJobsServiceUpdateRequest } from "./inward_jobs.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -398,7 +398,7 @@ export const InwardJobsService = {
      */
     uploadInwardJobInwardItems: {
       name: "UploadInwardJobInwardItems",
-      I: IdentifierWithFile,
+      I: IdentifierUUIDWithFile,
       O: IdentifiersList,
       kind: MethodKind.Unary,
     },
@@ -563,7 +563,7 @@ export const InwardJobsService = {
      */
     uploadInwardJobOutwardItems: {
       name: "UploadInwardJobOutwardItems",
-      I: IdentifierWithFile,
+      I: IdentifierUUIDWithFile,
       O: IdentifiersList,
       kind: MethodKind.Unary,
     },

@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { GenericInventory, GenericInventoryList, InventoryHashSearchReq, InventoryServiceFamilyQuantityReq, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
+import { ConsolidatedInventoryStatistics, GenericInventory, GenericInventoryList, InventoryHashSearchReq, InventoryServiceFamilyQuantityReq, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { Identifier, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 
@@ -234,6 +234,17 @@ export const InventoryService = {
       name: "ViewRequiredQuantity",
       I: Identifier,
       O: QuantityResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View consolidated inventory statistics
+     *
+     * @generated from rpc Scailo.InventoryService.ViewConsolidatedStatistics
+     */
+    viewConsolidatedStatistics: {
+      name: "ViewConsolidatedStatistics",
+      I: Identifier,
+      O: ConsolidatedInventoryStatistics,
       kind: MethodKind.Unary,
     },
     /**

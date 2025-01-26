@@ -705,3 +705,133 @@ export class ReturnableInventorySearchReq extends Message<ReturnableInventorySea
   }
 }
 
+/**
+ *
+ * Describes the message consisting of all the inventory statistics for the given family ID
+ *
+ * @generated from message Scailo.ConsolidatedInventoryStatistics
+ */
+export class ConsolidatedInventoryStatistics extends Message<ConsolidatedInventoryStatistics> {
+  /**
+   * The ID of the family
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The base demand quantity
+   *
+   * @generated from field: int64 base_demand_count = 10;
+   */
+  baseDemandCount = protoInt64.zero;
+
+  /**
+   * The work in progress quantity
+   *
+   * @generated from field: int64 work_in_progress_count = 20;
+   */
+  workInProgressCount = protoInt64.zero;
+
+  /**
+   * The indented quantity
+   *
+   * @generated from field: int64 indented_count = 30;
+   */
+  indentedCount = protoInt64.zero;
+
+  /**
+   * The ordered quantity
+   *
+   * @generated from field: int64 ordered_count = 40;
+   */
+  orderedCount = protoInt64.zero;
+
+  /**
+   * The quantity in QC
+   *
+   * @generated from field: int64 qc_count = 100;
+   */
+  qcCount = protoInt64.zero;
+
+  /**
+   * The quantity that has been rejected
+   *
+   * @generated from field: int64 rejected_count = 110;
+   */
+  rejectedCount = protoInt64.zero;
+
+  /**
+   * The quantity that has been marked for return
+   *
+   * @generated from field: int64 returnable_count = 120;
+   */
+  returnableCount = protoInt64.zero;
+
+  /**
+   * The quantity in rework
+   *
+   * @generated from field: int64 rework_count = 130;
+   */
+  reworkCount = protoInt64.zero;
+
+  /**
+   * The quantity that has been scrapped
+   *
+   * @generated from field: int64 scrap_count = 140;
+   */
+  scrapCount = protoInt64.zero;
+
+  /**
+   * The quantity in store
+   *
+   * @generated from field: int64 store_count = 150;
+   */
+  storeCount = protoInt64.zero;
+
+  /**
+   * The quantity that is required
+   *
+   * @generated from field: int64 required_count = 200;
+   */
+  requiredCount = protoInt64.zero;
+
+  constructor(data?: PartialMessage<ConsolidatedInventoryStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ConsolidatedInventoryStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "base_demand_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "work_in_progress_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "indented_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 40, name: "ordered_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 100, name: "qc_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 110, name: "rejected_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 120, name: "returnable_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 130, name: "rework_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 140, name: "scrap_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 150, name: "store_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 200, name: "required_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ConsolidatedInventoryStatistics {
+    return new ConsolidatedInventoryStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatistics {
+    return new ConsolidatedInventoryStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatistics {
+    return new ConsolidatedInventoryStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined, b: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined): boolean {
+    return proto3.util.equals(ConsolidatedInventoryStatistics, a, b);
+  }
+}
+

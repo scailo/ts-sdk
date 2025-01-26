@@ -41,6 +41,13 @@ export enum FORM_SECTION_SORT_KEY {
    * @generated from enum value: FORM_SECTION_SORT_KEY_NAME = 10;
    */
   FORM_SECTION_SORT_KEY_NAME = 10,
+
+  /**
+   * Fetch ordered results by code
+   *
+   * @generated from enum value: FORM_SECTION_SORT_KEY_CODE = 11;
+   */
+  FORM_SECTION_SORT_KEY_CODE = 11,
 }
 // Retrieve enum metadata with: proto3.getEnumType(FORM_SECTION_SORT_KEY)
 proto3.util.setEnumType(FORM_SECTION_SORT_KEY, "Scailo.FORM_SECTION_SORT_KEY", [
@@ -48,6 +55,7 @@ proto3.util.setEnumType(FORM_SECTION_SORT_KEY, "Scailo.FORM_SECTION_SORT_KEY", [
   { no: 1, name: "FORM_SECTION_SORT_KEY_CREATED_AT" },
   { no: 2, name: "FORM_SECTION_SORT_KEY_MODIFIED_AT" },
   { no: 10, name: "FORM_SECTION_SORT_KEY_NAME" },
+  { no: 11, name: "FORM_SECTION_SORT_KEY_CODE" },
 ]);
 
 /**
@@ -77,6 +85,13 @@ export class FormSection extends Message<FormSection> {
    * @generated from field: string name = 10;
    */
   name = "";
+
+  /**
+   * The unique code by which the form section is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
 
   /**
    * The type of the form section
@@ -110,6 +125,7 @@ export class FormSection extends Message<FormSection> {
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
     { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "width", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -269,6 +285,13 @@ export class FormsSectionsServiceCreateRequest extends Message<FormsSectionsServ
   name = "";
 
   /**
+   * The unique code by which the form section is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The type of the form section
    *
    * @generated from field: Scailo.FORM_TYPE type = 11;
@@ -300,6 +323,7 @@ export class FormsSectionsServiceCreateRequest extends Message<FormsSectionsServ
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
     { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "width", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -351,6 +375,13 @@ export class FormsSectionsServiceUpdateRequest extends Message<FormsSectionsServ
   name = "";
 
   /**
+   * The unique code by which the form section is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * A short description of the form section
    *
    * @generated from field: string description = 12;
@@ -375,6 +406,7 @@ export class FormsSectionsServiceUpdateRequest extends Message<FormsSectionsServ
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "width", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
@@ -561,6 +593,13 @@ export class FormsSectionsServiceFilterReq extends Message<FormsSectionsServiceF
    */
   type = FORM_TYPE.FORM_TYPE_ANY_UNSPECIFIED;
 
+  /**
+   * The unique code by which the form section is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
   constructor(data?: PartialMessage<FormsSectionsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -581,6 +620,7 @@ export class FormsSectionsServiceFilterReq extends Message<FormsSectionsServiceF
     { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsSectionsServiceFilterReq {
@@ -663,6 +703,13 @@ export class FormsSectionsServiceCountReq extends Message<FormsSectionsServiceCo
    */
   type = FORM_TYPE.FORM_TYPE_ANY_UNSPECIFIED;
 
+  /**
+   * The unique code by which the form section is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
   constructor(data?: PartialMessage<FormsSectionsServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -679,6 +726,7 @@ export class FormsSectionsServiceCountReq extends Message<FormsSectionsServiceCo
     { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsSectionsServiceCountReq {

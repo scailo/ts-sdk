@@ -12,6 +12,7 @@ export const PermissionRoleHalt = 'roles-extra-halt';
 export const PermissionRoleComplete = 'roles-mark-complete';
 export const PermissionRoleDiscard = 'roles-extra-discard';
 export const PermissionReopenRole = 'roles-extra-reopen';
+export const PermissionsRoles = [PermissionRoleNew, PermissionRoleDrafts, PermissionRoleVerify, PermissionRoleRevise, PermissionRoleHalted, PermissionRoleDiscarded, PermissionRestoreRole, PermissionRoleApprove, PermissionRoleStanding, PermissionRoleCompleted, PermissionRoleHalt, PermissionRoleComplete, PermissionRoleDiscard, PermissionReopenRole];
 
 export const PermissionUserNew = 'users-new';
 export const PermissionUserDrafts = 'users-drafts';
@@ -24,6 +25,7 @@ export const PermissionUserApprove = 'users-approve';
 export const PermissionUserStanding = 'users-standing';
 export const PermissionUserHalt = 'users-extra-halt';
 export const PermissionUserDiscard = 'users-extra-discard';
+export const PermissionsUsers = [PermissionUserNew, PermissionUserDrafts, PermissionUserVerify, PermissionUserRevise, PermissionUserHalted, PermissionUserDiscarded, PermissionRestoreUser, PermissionUserApprove, PermissionUserStanding, PermissionUserHalt, PermissionUserDiscard];
 
 export const PermissionNewFormSection = 'forms-sections-new';
 export const PermissionViewFormSections = 'forms-sections-view';
@@ -35,6 +37,7 @@ export const PermissionViewFormFields = 'forms-fields-view';
 export const PermissionModifyFormFields = 'forms-fields-modify';
 export const PermissionDiscardFormFields = 'forms-fields-discard';
 export const PermissionRestoreFormFields = 'forms-fields-restore';
+export const PermissionsFormsSections = [PermissionNewFormSection, PermissionViewFormSections, PermissionModifyFormSections, PermissionDiscardFormSections, PermissionRestoreFormSections, PermissionNewFormField, PermissionViewFormFields, PermissionModifyFormFields, PermissionDiscardFormFields, PermissionRestoreFormFields];
 
 export const PermissionNewClient = 'clients-new';
 export const PermissionDraftClients = 'clients-drafts';
@@ -47,18 +50,21 @@ export const PermissionDiscardClients = 'clients-discarded';
 export const PermissionRestoreClients = 'clients-restore';
 export const PermissionHaltClient = 'clients-halt';
 export const PermissionDiscardClient = 'clients-extra-discard';
+export const PermissionsClients = [PermissionNewClient, PermissionDraftClients, PermissionVerifyClients, PermissionApproveClients, PermissionReviseClients, PermissionStandingClients, PermissionHaltedClients, PermissionDiscardClients, PermissionRestoreClients, PermissionHaltClient, PermissionDiscardClient];
 
 export const PermissionNewAssociate = 'associates-new';
 export const PermissionViewAssociate = 'associates-view';
 export const PermissionModifyAssociate = 'associates-modify';
 export const PermissionDiscardAssociate = 'associates-discard';
 export const PermissionRestoreAssociate = 'associates-restore';
+export const PermissionsAssociates = [PermissionNewAssociate, PermissionViewAssociate, PermissionModifyAssociate, PermissionDiscardAssociate, PermissionRestoreAssociate];
 
 export const PermissionNewContractor = 'contractors-new';
 export const PermissionViewContractor = 'contractors-view';
 export const PermissionModifyContractor = 'contractors-modify';
 export const PermissionDiscardContractor = 'contractors-discard';
 export const PermissionRestoreContractor = 'contractors-restore';
+export const PermissionsContractors = [PermissionNewContractor, PermissionViewContractor, PermissionModifyContractor, PermissionDiscardContractor, PermissionRestoreContractor];
 
 export const PermissionNewVendor = 'vendors-new';
 export const PermissionDraftVendors = 'vendors-drafts';
@@ -71,10 +77,13 @@ export const PermissionDiscardVendors = 'vendors-discarded';
 export const PermissionRestoreVendors = 'vendors-restore';
 export const PermissionHaltVendor = 'vendors-halt';
 export const PermissionDiscardVendor = 'vendors-extra-discard';
+export const PermissionsVendors = [PermissionNewVendor, PermissionDraftVendors, PermissionVerifyVendors, PermissionApproveVendors, PermissionReviseVendors, PermissionStandingVendors, PermissionHaltedVendors, PermissionDiscardVendors, PermissionRestoreVendors, PermissionHaltVendor, PermissionDiscardVendor];
 
 export const PermissionViewVendorAccount = 'vendor-accounts-view';
+export const PermissionsVendorAccounts = [PermissionViewVendorAccount];
 
 export const PermissionViewClientAccount = 'client-accounts-view';
+export const PermissionsClientAccounts = [PermissionViewClientAccount];
 
 export const PermissionProductionPlanNew = 'productionplans-new';
 export const PermissionProductionPlanDrafts = 'productionplans-drafts';
@@ -90,6 +99,7 @@ export const PermissionProductionPlanHalt = 'productionplans-extra-halt';
 export const PermissionProductionPlanComplete = 'productionplans-mark-complete';
 export const PermissionProductionPlanDiscard = 'productionplans-extra-discard';
 export const PermissionReopenProductionPlan = 'productionplans-extra-reopen';
+export const PermissionsProductionPlans = [PermissionProductionPlanNew, PermissionProductionPlanDrafts, PermissionProductionPlanVerify, PermissionProductionPlanRevise, PermissionProductionPlanHalted, PermissionProductionPlanDiscarded, PermissionRestoreProductionPlan, PermissionProductionPlanApprove, PermissionProductionPlanStanding, PermissionProductionPlanCompleted, PermissionProductionPlanHalt, PermissionProductionPlanComplete, PermissionProductionPlanDiscard, PermissionReopenProductionPlan];
 
 export const PermissionProductionIndentNew = 'production-indents-new';
 export const PermissionProductionIndentDrafts = 'production-indents-drafts';
@@ -105,6 +115,7 @@ export const PermissionProductionIndentHalt = 'production-indents-extra-halt';
 export const PermissionProductionIndentComplete = 'production-indents-mark-complete';
 export const PermissionProductionIndentDiscard = 'production-indents-extra-discard';
 export const PermissionReopenProductionIndent = 'production-indents-extra-reopen';
+export const PermissionsProductionIndents = [PermissionProductionIndentNew, PermissionProductionIndentDrafts, PermissionProductionIndentVerify, PermissionProductionIndentRevise, PermissionProductionIndentHalted, PermissionProductionIndentDiscarded, PermissionRestoreProductionIndent, PermissionProductionIndentApprove, PermissionProductionIndentStanding, PermissionProductionIndentCompleted, PermissionProductionIndentHalt, PermissionProductionIndentComplete, PermissionProductionIndentDiscard, PermissionReopenProductionIndent];
 
 export const PermissionStockIssuanceNew = 'stock-issuances-new';
 export const PermissionStockIssuanceDrafts = 'stock-issuances-drafts';
@@ -120,6 +131,7 @@ export const PermissionStockIssuanceHalt = 'stock-issuances-extra-halt';
 export const PermissionStockIssuanceComplete = 'stock-issuances-mark-complete';
 export const PermissionStockIssuanceDiscard = 'stock-issuances-extra-discard';
 export const PermissionReopenStockIssuance = 'stock-issuances-extra-reopen';
+export const PermissionsStockIssuances = [PermissionStockIssuanceNew, PermissionStockIssuanceDrafts, PermissionStockIssuanceVerify, PermissionStockIssuanceRevise, PermissionStockIssuanceHalted, PermissionStockIssuanceDiscarded, PermissionRestoreStockIssuance, PermissionStockIssuanceApprove, PermissionStockIssuanceStanding, PermissionStockIssuanceCompleted, PermissionStockIssuanceHalt, PermissionStockIssuanceComplete, PermissionStockIssuanceDiscard, PermissionReopenStockIssuance];
 
 export const PermissionStockReturnNew = 'stock-returns-new';
 export const PermissionStockReturnDrafts = 'stock-returns-drafts';
@@ -135,6 +147,7 @@ export const PermissionStockReturnHalt = 'stock-returns-extra-halt';
 export const PermissionStockReturnComplete = 'stock-returns-mark-complete';
 export const PermissionStockReturnDiscard = 'stock-returns-extra-discard';
 export const PermissionReopenStockReturn = 'stock-returns-extra-reopen';
+export const PermissionsStockReturns = [PermissionStockReturnNew, PermissionStockReturnDrafts, PermissionStockReturnVerify, PermissionStockReturnRevise, PermissionStockReturnHalted, PermissionStockReturnDiscarded, PermissionRestoreStockReturn, PermissionStockReturnApprove, PermissionStockReturnStanding, PermissionStockReturnCompleted, PermissionStockReturnHalt, PermissionStockReturnComplete, PermissionStockReturnDiscard, PermissionReopenStockReturn];
 
 export const PermissionStockAuditNew = 'stock-audits-new';
 export const PermissionStockAuditDrafts = 'stock-audits-drafts';
@@ -150,6 +163,7 @@ export const PermissionStockAuditHalt = 'stock-audits-extra-halt';
 export const PermissionStockAuditComplete = 'stock-audits-mark-complete';
 export const PermissionStockAuditDiscard = 'stock-audits-extra-discard';
 export const PermissionReopenStockAudit = 'stock-audits-extra-reopen';
+export const PermissionsStockAudits = [PermissionStockAuditNew, PermissionStockAuditDrafts, PermissionStockAuditVerify, PermissionStockAuditRevise, PermissionStockAuditHalted, PermissionStockAuditDiscarded, PermissionRestoreStockAudit, PermissionStockAuditApprove, PermissionStockAuditStanding, PermissionStockAuditCompleted, PermissionStockAuditHalt, PermissionStockAuditComplete, PermissionStockAuditDiscard, PermissionReopenStockAudit];
 
 export const PermissionFeedstockAdd = 'feedstock-add';
 export const PermissionFeedstockIQC = 'feedstock-iqc';
@@ -166,6 +180,7 @@ export const PermissionFeedstockReject = 'feedstock-extra-reject';
 export const PermissionFeedstockConsume = 'feedstock-extra-consume';
 export const PermissionFeedstockDiscard = 'feedstock-extra-discard';
 export const PermissionFeedstockView = 'feedstock-view';
+export const PermissionsFeedstock = [PermissionFeedstockAdd, PermissionFeedstockIQC, PermissionFeedstockApproveIQC, PermissionFeedstockStore, PermissionFeedstockConsumed, PermissionFeedstockRework, PermissionFeedstockRejected, PermissionFeedstockReturnable, PermissionFeedstockScrap, PermissionFeedstockDiscarded, PermissionFeedstockIssued, PermissionFeedstockReject, PermissionFeedstockConsume, PermissionFeedstockDiscard, PermissionFeedstockView];
 
 export const PermissionMerchandiseAdd = 'merchandise-add';
 export const PermissionMerchandiseIQC = 'merchandise-iqc';
@@ -182,6 +197,7 @@ export const PermissionMerchandiseReject = 'merchandise-extra-reject';
 export const PermissionMerchandiseConsume = 'merchandise-extra-consume';
 export const PermissionMerchandiseDiscard = 'merchandise-extra-discard';
 export const PermissionMerchandiseView = 'merchandise-view';
+export const PermissionsMerchandise = [PermissionMerchandiseAdd, PermissionMerchandiseIQC, PermissionMerchandiseApproveIQC, PermissionMerchandiseStore, PermissionMerchandiseConsumed, PermissionMerchandiseRework, PermissionMerchandiseRejected, PermissionMerchandiseReturnable, PermissionMerchandiseScrap, PermissionMerchandiseDiscarded, PermissionMerchandiseIssued, PermissionMerchandiseReject, PermissionMerchandiseConsume, PermissionMerchandiseDiscard, PermissionMerchandiseView];
 
 export const PermissionEquipmentAdd = 'equipment-add';
 export const PermissionEquipmentIQC = 'equipment-iqc';
@@ -198,6 +214,7 @@ export const PermissionEquipmentReject = 'equipment-extra-reject';
 export const PermissionEquipmentConsume = 'equipment-extra-consume';
 export const PermissionEquipmentDiscard = 'equipment-extra-discard';
 export const PermissionEquipmentView = 'equipment-view';
+export const PermissionsEquipment = [PermissionEquipmentAdd, PermissionEquipmentIQC, PermissionEquipmentApproveIQC, PermissionEquipmentStore, PermissionEquipmentConsumed, PermissionEquipmentRework, PermissionEquipmentRejected, PermissionEquipmentReturnable, PermissionEquipmentScrap, PermissionEquipmentDiscarded, PermissionEquipmentIssued, PermissionEquipmentReject, PermissionEquipmentConsume, PermissionEquipmentDiscard, PermissionEquipmentView];
 
 export const PermissionInfrastructureAdd = 'infrastructure-add';
 export const PermissionInfrastructureIQC = 'infrastructure-iqc';
@@ -214,6 +231,7 @@ export const PermissionInfrastructureReject = 'infrastructure-extra-reject';
 export const PermissionInfrastructureConsume = 'infrastructure-extra-consume';
 export const PermissionInfrastructureDiscard = 'infrastructure-extra-discard';
 export const PermissionInfrastructureView = 'infrastructure-view';
+export const PermissionsInfrastructure = [PermissionInfrastructureAdd, PermissionInfrastructureIQC, PermissionInfrastructureApproveIQC, PermissionInfrastructureStore, PermissionInfrastructureConsumed, PermissionInfrastructureRework, PermissionInfrastructureRejected, PermissionInfrastructureReturnable, PermissionInfrastructureScrap, PermissionInfrastructureDiscarded, PermissionInfrastructureIssued, PermissionInfrastructureReject, PermissionInfrastructureConsume, PermissionInfrastructureDiscard, PermissionInfrastructureView];
 
 export const PermissionComponentsAdd = 'components-add';
 export const PermissionComponentsIQC = 'components-iqc';
@@ -230,6 +248,7 @@ export const PermissionComponentsReject = 'components-extra-reject';
 export const PermissionComponentsConsume = 'components-extra-consume';
 export const PermissionComponentsDiscard = 'components-extra-discard';
 export const PermissionComponentsView = 'components-view';
+export const PermissionsComponents = [PermissionComponentsAdd, PermissionComponentsIQC, PermissionComponentsApproveIQC, PermissionComponentsStore, PermissionComponentsConsumed, PermissionComponentsRework, PermissionComponentsRejected, PermissionComponentsReturnable, PermissionComponentsScrap, PermissionComponentsDiscarded, PermissionComponentsIssued, PermissionComponentsReject, PermissionComponentsConsume, PermissionComponentsDiscard, PermissionComponentsView];
 
 export const PermissionProductsAdd = 'products-add';
 export const PermissionProductsIQC = 'products-iqc';
@@ -245,6 +264,7 @@ export const PermissionProductsReject = 'products-extra-reject';
 export const PermissionProductsConsume = 'products-extra-consume';
 export const PermissionProductsDiscard = 'products-extra-discard';
 export const PermissionProductsView = 'products-view';
+export const PermissionsProducts = [PermissionProductsAdd, PermissionProductsIQC, PermissionProductsApproveIQC, PermissionProductsStore, PermissionProductsConsumed, PermissionProductsRework, PermissionProductsRejected, PermissionProductsScrap, PermissionProductsDiscarded, PermissionProductsIssued, PermissionProductsReject, PermissionProductsConsume, PermissionProductsDiscard, PermissionProductsView];
 
 export const PermissionReplaceableIndentNew = 'replaceable-indents-new';
 export const PermissionReplaceableIndentDrafts = 'replaceable-indents-drafts';
@@ -260,6 +280,7 @@ export const PermissionReplaceableIndentHalt = 'replaceable-indents-extra-halt';
 export const PermissionReplaceableIndentComplete = 'replaceable-indents-mark-complete';
 export const PermissionReplaceableIndentDiscard = 'replaceable-indents-extra-discard';
 export const PermissionReopenReplaceableIndent = 'replaceable-indents-extra-reopen';
+export const PermissionsReplaceableIndents = [PermissionReplaceableIndentNew, PermissionReplaceableIndentDrafts, PermissionReplaceableIndentVerify, PermissionReplaceableIndentRevise, PermissionReplaceableIndentHalted, PermissionReplaceableIndentDiscarded, PermissionRestoreReplaceableIndent, PermissionReplaceableIndentApprove, PermissionReplaceableIndentStanding, PermissionReplaceableIndentCompleted, PermissionReplaceableIndentHalt, PermissionReplaceableIndentComplete, PermissionReplaceableIndentDiscard, PermissionReopenReplaceableIndent];
 
 export const PermissionAssetIndentNew = 'asset-indents-new';
 export const PermissionAssetIndentDrafts = 'asset-indents-drafts';
@@ -275,6 +296,7 @@ export const PermissionAssetIndentHalt = 'asset-indents-extra-halt';
 export const PermissionAssetIndentComplete = 'asset-indents-mark-complete';
 export const PermissionAssetIndentDiscard = 'asset-indents-extra-discard';
 export const PermissionReopenAssetIndent = 'asset-indents-extra-reopen';
+export const PermissionsAssetIndents = [PermissionAssetIndentNew, PermissionAssetIndentDrafts, PermissionAssetIndentVerify, PermissionAssetIndentRevise, PermissionAssetIndentHalted, PermissionAssetIndentDiscarded, PermissionRestoreAssetIndent, PermissionAssetIndentApprove, PermissionAssetIndentStanding, PermissionAssetIndentCompleted, PermissionAssetIndentHalt, PermissionAssetIndentComplete, PermissionAssetIndentDiscard, PermissionReopenAssetIndent];
 
 export const PermissionPurchaseIndentNew = 'purchases-indents-new';
 export const PermissionPurchaseIndentDrafts = 'purchases-indents-drafts';
@@ -290,6 +312,7 @@ export const PermissionPurchaseIndentHalt = 'purchases-indents-extra-halt';
 export const PermissionPurchaseIndentComplete = 'purchases-indents-mark-complete';
 export const PermissionPurchaseIndentDiscard = 'purchases-indents-extra-discard';
 export const PermissionReopenPurchaseIndent = 'purchases-indents-extra-reopen';
+export const PermissionsPurchasesIndents = [PermissionPurchaseIndentNew, PermissionPurchaseIndentDrafts, PermissionPurchaseIndentVerify, PermissionPurchaseIndentRevise, PermissionPurchaseIndentHalted, PermissionPurchaseIndentDiscarded, PermissionRestorePurchaseIndent, PermissionPurchaseIndentApprove, PermissionPurchaseIndentStanding, PermissionPurchaseIndentCompleted, PermissionPurchaseIndentHalt, PermissionPurchaseIndentComplete, PermissionPurchaseIndentDiscard, PermissionReopenPurchaseIndent];
 
 export const PermissionOutwardJobNew = 'outward-jobs-new';
 export const PermissionOutwardJobDrafts = 'outward-jobs-drafts';
@@ -305,6 +328,7 @@ export const PermissionOutwardJobHalt = 'outward-jobs-extra-halt';
 export const PermissionOutwardJobComplete = 'outward-jobs-mark-complete';
 export const PermissionOutwardJobDiscard = 'outward-jobs-extra-discard';
 export const PermissionReopenOutwardJob = 'outward-jobs-extra-reopen';
+export const PermissionsOutwardJobs = [PermissionOutwardJobNew, PermissionOutwardJobDrafts, PermissionOutwardJobVerify, PermissionOutwardJobRevise, PermissionOutwardJobHalted, PermissionOutwardJobDiscarded, PermissionRestoreOutwardJob, PermissionOutwardJobApprove, PermissionOutwardJobStanding, PermissionOutwardJobCompleted, PermissionOutwardJobHalt, PermissionOutwardJobComplete, PermissionOutwardJobDiscard, PermissionReopenOutwardJob];
 
 export const PermissionOutwardJobFreeIssueMaterialNew = 'outward-jobs-free-issue-materials-new';
 export const PermissionOutwardJobFreeIssueMaterialDrafts = 'outward-jobs-free-issue-materials-drafts';
@@ -320,6 +344,7 @@ export const PermissionOutwardJobFreeIssueMaterialHalt = 'outward-jobs-free-issu
 export const PermissionOutwardJobFreeIssueMaterialComplete = 'outward-jobs-free-issue-materials-mark-complete';
 export const PermissionOutwardJobFreeIssueMaterialDiscard = 'outward-jobs-free-issue-materials-extra-discard';
 export const PermissionReopenOutwardJobFreeIssueMaterial = 'outward-jobs-free-issue-materials-extra-reopen';
+export const PermissionsOutwardJobsFreeIssueMaterials = [PermissionOutwardJobFreeIssueMaterialNew, PermissionOutwardJobFreeIssueMaterialDrafts, PermissionOutwardJobFreeIssueMaterialVerify, PermissionOutwardJobFreeIssueMaterialRevise, PermissionOutwardJobFreeIssueMaterialHalted, PermissionOutwardJobFreeIssueMaterialDiscarded, PermissionRestoreOutwardJobFreeIssueMaterial, PermissionOutwardJobFreeIssueMaterialApprove, PermissionOutwardJobFreeIssueMaterialStanding, PermissionOutwardJobFreeIssueMaterialCompleted, PermissionOutwardJobFreeIssueMaterialHalt, PermissionOutwardJobFreeIssueMaterialComplete, PermissionOutwardJobFreeIssueMaterialDiscard, PermissionReopenOutwardJobFreeIssueMaterial];
 
 export const PermissionInwardJobNew = 'inward-jobs-new';
 export const PermissionInwardJobDrafts = 'inward-jobs-drafts';
@@ -335,6 +360,7 @@ export const PermissionInwardJobHalt = 'inward-jobs-extra-halt';
 export const PermissionInwardJobComplete = 'inward-jobs-mark-complete';
 export const PermissionInwardJobDiscard = 'inward-jobs-extra-discard';
 export const PermissionReopenInwardJob = 'inward-jobs-extra-reopen';
+export const PermissionsInwardJobs = [PermissionInwardJobNew, PermissionInwardJobDrafts, PermissionInwardJobVerify, PermissionInwardJobRevise, PermissionInwardJobHalted, PermissionInwardJobDiscarded, PermissionRestoreInwardJob, PermissionInwardJobApprove, PermissionInwardJobStanding, PermissionInwardJobCompleted, PermissionInwardJobHalt, PermissionInwardJobComplete, PermissionInwardJobDiscard, PermissionReopenInwardJob];
 
 export const PermissionInwardJobFreeIssueMaterialNew = 'inward-jobs-free-issue-materials-new';
 export const PermissionInwardJobFreeIssueMaterialDrafts = 'inward-jobs-free-issue-materials-drafts';
@@ -350,6 +376,7 @@ export const PermissionInwardJobFreeIssueMaterialHalt = 'inward-jobs-free-issue-
 export const PermissionInwardJobFreeIssueMaterialComplete = 'inward-jobs-free-issue-materials-mark-complete';
 export const PermissionInwardJobFreeIssueMaterialDiscard = 'inward-jobs-free-issue-materials-extra-discard';
 export const PermissionReopenInwardJobFreeIssueMaterial = 'inward-jobs-free-issue-materials-extra-reopen';
+export const PermissionsInwardJobsFreeIssueMaterials = [PermissionInwardJobFreeIssueMaterialNew, PermissionInwardJobFreeIssueMaterialDrafts, PermissionInwardJobFreeIssueMaterialVerify, PermissionInwardJobFreeIssueMaterialRevise, PermissionInwardJobFreeIssueMaterialHalted, PermissionInwardJobFreeIssueMaterialDiscarded, PermissionRestoreInwardJobFreeIssueMaterial, PermissionInwardJobFreeIssueMaterialApprove, PermissionInwardJobFreeIssueMaterialStanding, PermissionInwardJobFreeIssueMaterialCompleted, PermissionInwardJobFreeIssueMaterialHalt, PermissionInwardJobFreeIssueMaterialComplete, PermissionInwardJobFreeIssueMaterialDiscard, PermissionReopenInwardJobFreeIssueMaterial];
 
 export const PermissionSupplyOfferNew = 'supply-offers-new';
 export const PermissionSupplyOfferDrafts = 'supply-offers-drafts';
@@ -366,6 +393,7 @@ export const PermissionSupplyOfferComplete = 'supply-offers-mark-complete';
 export const PermissionSupplyOfferDiscard = 'supply-offers-extra-discard';
 export const PermissionReopenSupplyOffer = 'supply-offers-extra-reopen';
 export const PermissionAmendSupplyOffer = 'supply-offers-amend';
+export const PermissionsSupplyOffers = [PermissionSupplyOfferNew, PermissionSupplyOfferDrafts, PermissionSupplyOfferVerify, PermissionSupplyOfferRevise, PermissionSupplyOfferHalted, PermissionSupplyOfferDiscarded, PermissionRestoreSupplyOffer, PermissionSupplyOfferApprove, PermissionSupplyOfferStanding, PermissionSupplyOfferCompleted, PermissionSupplyOfferHalt, PermissionSupplyOfferComplete, PermissionSupplyOfferDiscard, PermissionReopenSupplyOffer, PermissionAmendSupplyOffer];
 
 export const PermissionPurchaseOrderNew = 'purchases-new';
 export const PermissionPurchaseOrderDrafts = 'purchases-drafts';
@@ -382,6 +410,7 @@ export const PermissionPurchaseOrderComplete = 'purchases-mark-complete';
 export const PermissionPurchaseOrderDiscard = 'purchases-extra-discard';
 export const PermissionReopenPurchaseOrder = 'purchases-extra-reopen';
 export const PermissionAmendPurchaseOrder = 'purchases-amend';
+export const PermissionsPurchases = [PermissionPurchaseOrderNew, PermissionPurchaseOrderDrafts, PermissionPurchaseOrderVerify, PermissionPurchaseOrderRevise, PermissionPurchaseOrderHalted, PermissionPurchaseOrderDiscarded, PermissionRestorePurchaseOrder, PermissionPurchaseOrderApprove, PermissionPurchaseOrderStanding, PermissionPurchaseOrderCompleted, PermissionPurchaseOrderHalt, PermissionPurchaseOrderComplete, PermissionPurchaseOrderDiscard, PermissionReopenPurchaseOrder, PermissionAmendPurchaseOrder];
 
 export const PermissionNewCurrency = 'currencies-new';
 export const PermissionDraftCurrencies = 'currencies-drafts';
@@ -394,6 +423,7 @@ export const PermissionDiscardCurrencies = 'currencies-discarded';
 export const PermissionRestoreCurrencies = 'currencies-restore';
 export const PermissionHaltCurrency = 'currencies-halt';
 export const PermissionDiscardCurrency = 'currencies-extra-discard';
+export const PermissionsCurrencies = [PermissionNewCurrency, PermissionDraftCurrencies, PermissionVerifyCurrencies, PermissionApproveCurrencies, PermissionReviseCurrencies, PermissionStandingCurrencies, PermissionHaltedCurrencies, PermissionDiscardCurrencies, PermissionRestoreCurrencies, PermissionHaltCurrency, PermissionDiscardCurrency];
 
 export const PermissionNewUnitOfMaterial = 'units-of-materials-new';
 export const PermissionDraftUnitsOfMaterials = 'units-of-materials-drafts';
@@ -406,6 +436,7 @@ export const PermissionDiscardUnitsOfMaterials = 'units-of-materials-discarded';
 export const PermissionRestoreUnitsOfMaterials = 'units-of-materials-restore';
 export const PermissionHaltUnitOfMaterial = 'units-of-materials-halt';
 export const PermissionDiscardUnitOfMaterial = 'units-of-materials-extra-discard';
+export const PermissionsUnitsOfMaterials = [PermissionNewUnitOfMaterial, PermissionDraftUnitsOfMaterials, PermissionVerifyUnitsOfMaterials, PermissionApproveUnitsOfMaterials, PermissionReviseUnitsOfMaterials, PermissionStandingUnitsOfMaterials, PermissionHaltedUnitsOfMaterials, PermissionDiscardUnitsOfMaterials, PermissionRestoreUnitsOfMaterials, PermissionHaltUnitOfMaterial, PermissionDiscardUnitOfMaterial];
 
 export const PermissionProjectNew = 'projects-new';
 export const PermissionProjectDrafts = 'projects-drafts';
@@ -421,6 +452,7 @@ export const PermissionProjectHalt = 'projects-extra-halt';
 export const PermissionProjectComplete = 'projects-mark-complete';
 export const PermissionProjectDiscard = 'projects-extra-discard';
 export const PermissionReopenProject = 'projects-extra-reopen';
+export const PermissionsProjects = [PermissionProjectNew, PermissionProjectDrafts, PermissionProjectVerify, PermissionProjectRevise, PermissionProjectHalted, PermissionProjectDiscarded, PermissionRestoreProject, PermissionProjectApprove, PermissionProjectStanding, PermissionProjectCompleted, PermissionProjectHalt, PermissionProjectComplete, PermissionProjectDiscard, PermissionReopenProject];
 
 export const PermissionSalesOrderNew = 'sales-orders-new';
 export const PermissionSalesOrderDrafts = 'sales-orders-drafts';
@@ -437,6 +469,7 @@ export const PermissionSalesOrderComplete = 'sales-orders-mark-complete';
 export const PermissionSalesOrderDiscard = 'sales-orders-extra-discard';
 export const PermissionReopenSalesOrder = 'sales-orders-extra-reopen';
 export const PermissionAmendSalesOrder = 'sales-orders-amend';
+export const PermissionsSalesOrders = [PermissionSalesOrderNew, PermissionSalesOrderDrafts, PermissionSalesOrderVerify, PermissionSalesOrderRevise, PermissionSalesOrderHalted, PermissionSalesOrderDiscarded, PermissionRestoreSalesOrder, PermissionSalesOrderApprove, PermissionSalesOrderStanding, PermissionSalesOrderCompleted, PermissionSalesOrderHalt, PermissionSalesOrderComplete, PermissionSalesOrderDiscard, PermissionReopenSalesOrder, PermissionAmendSalesOrder];
 
 export const PermissionSalesQuotationNew = 'sales-quotations-new';
 export const PermissionSalesQuotationDrafts = 'sales-quotations-drafts';
@@ -453,6 +486,7 @@ export const PermissionSalesQuotationComplete = 'sales-quotations-mark-complete'
 export const PermissionSalesQuotationDiscard = 'sales-quotations-extra-discard';
 export const PermissionReopenSalesQuotation = 'sales-quotations-extra-reopen';
 export const PermissionAmendSalesQuotation = 'sales-quotations-amend';
+export const PermissionsSalesQuotations = [PermissionSalesQuotationNew, PermissionSalesQuotationDrafts, PermissionSalesQuotationVerify, PermissionSalesQuotationRevise, PermissionSalesQuotationHalted, PermissionSalesQuotationDiscarded, PermissionRestoreSalesQuotation, PermissionSalesQuotationApprove, PermissionSalesQuotationStanding, PermissionSalesQuotationCompleted, PermissionSalesQuotationHalt, PermissionSalesQuotationComplete, PermissionSalesQuotationDiscard, PermissionReopenSalesQuotation, PermissionAmendSalesQuotation];
 
 export const PermissionProformaInvoiceNew = 'proforma-invoices-new';
 export const PermissionProformaInvoiceDrafts = 'proforma-invoices-drafts';
@@ -469,6 +503,7 @@ export const PermissionProformaInvoiceComplete = 'proforma-invoices-mark-complet
 export const PermissionProformaInvoiceDiscard = 'proforma-invoices-extra-discard';
 export const PermissionReopenProformaInvoice = 'proforma-invoices-extra-reopen';
 export const PermissionAmendProformaInvoice = 'proforma-invoices-amend';
+export const PermissionsProformaInvoices = [PermissionProformaInvoiceNew, PermissionProformaInvoiceDrafts, PermissionProformaInvoiceVerify, PermissionProformaInvoiceRevise, PermissionProformaInvoiceHalted, PermissionProformaInvoiceDiscarded, PermissionRestoreProformaInvoice, PermissionProformaInvoiceApprove, PermissionProformaInvoiceStanding, PermissionProformaInvoiceCompleted, PermissionProformaInvoiceHalt, PermissionProformaInvoiceComplete, PermissionProformaInvoiceDiscard, PermissionReopenProformaInvoice, PermissionAmendProformaInvoice];
 
 export const PermissionSalesInvoiceNew = 'sales-invoices-new';
 export const PermissionSalesInvoiceDrafts = 'sales-invoices-drafts';
@@ -485,6 +520,7 @@ export const PermissionSalesInvoiceComplete = 'sales-invoices-mark-complete';
 export const PermissionSalesInvoiceDiscard = 'sales-invoices-extra-discard';
 export const PermissionReopenSalesInvoice = 'sales-invoices-extra-reopen';
 export const PermissionAmendSalesInvoice = 'sales-invoices-amend';
+export const PermissionsSalesInvoices = [PermissionSalesInvoiceNew, PermissionSalesInvoiceDrafts, PermissionSalesInvoiceVerify, PermissionSalesInvoiceRevise, PermissionSalesInvoiceHalted, PermissionSalesInvoiceDiscarded, PermissionRestoreSalesInvoice, PermissionSalesInvoiceApprove, PermissionSalesInvoiceStanding, PermissionSalesInvoiceCompleted, PermissionSalesInvoiceHalt, PermissionSalesInvoiceComplete, PermissionSalesInvoiceDiscard, PermissionReopenSalesInvoice, PermissionAmendSalesInvoice];
 
 export const PermissionGoodsDispatchNew = 'goods-dispatches-new';
 export const PermissionGoodsDispatchDrafts = 'goods-dispatches-drafts';
@@ -500,6 +536,7 @@ export const PermissionGoodsDispatchHalt = 'goods-dispatches-extra-halt';
 export const PermissionGoodsDispatchComplete = 'goods-dispatches-mark-complete';
 export const PermissionGoodsDispatchDiscard = 'goods-dispatches-extra-discard';
 export const PermissionReopenGoodsDispatch = 'goods-dispatches-extra-reopen';
+export const PermissionsGoodsDispatches = [PermissionGoodsDispatchNew, PermissionGoodsDispatchDrafts, PermissionGoodsDispatchVerify, PermissionGoodsDispatchRevise, PermissionGoodsDispatchHalted, PermissionGoodsDispatchDiscarded, PermissionRestoreGoodsDispatch, PermissionGoodsDispatchApprove, PermissionGoodsDispatchStanding, PermissionGoodsDispatchCompleted, PermissionGoodsDispatchHalt, PermissionGoodsDispatchComplete, PermissionGoodsDispatchDiscard, PermissionReopenGoodsDispatch];
 
 export const PermissionVendorInvoiceNew = 'vendor-invoices-new';
 export const PermissionVendorInvoiceDrafts = 'vendor-invoices-drafts';
@@ -515,6 +552,7 @@ export const PermissionVendorInvoiceHalt = 'vendor-invoices-extra-halt';
 export const PermissionVendorInvoiceComplete = 'vendor-invoices-mark-complete';
 export const PermissionVendorInvoiceDiscard = 'vendor-invoices-extra-discard';
 export const PermissionReopenVendorInvoice = 'vendor-invoices-extra-reopen';
+export const PermissionsVendorInvoices = [PermissionVendorInvoiceNew, PermissionVendorInvoiceDrafts, PermissionVendorInvoiceVerify, PermissionVendorInvoiceRevise, PermissionVendorInvoiceHalted, PermissionVendorInvoiceDiscarded, PermissionRestoreVendorInvoice, PermissionVendorInvoiceApprove, PermissionVendorInvoiceStanding, PermissionVendorInvoiceCompleted, PermissionVendorInvoiceHalt, PermissionVendorInvoiceComplete, PermissionVendorInvoiceDiscard, PermissionReopenVendorInvoice];
 
 export const PermissionGoodsReceiptNew = 'goods-receipts-new';
 export const PermissionGoodsReceiptDrafts = 'goods-receipts-drafts';
@@ -530,6 +568,7 @@ export const PermissionGoodsReceiptHalt = 'goods-receipts-extra-halt';
 export const PermissionGoodsReceiptComplete = 'goods-receipts-mark-complete';
 export const PermissionGoodsReceiptDiscard = 'goods-receipts-extra-discard';
 export const PermissionReopenGoodsReceipt = 'goods-receipts-extra-reopen';
+export const PermissionsGoodsReceipts = [PermissionGoodsReceiptNew, PermissionGoodsReceiptDrafts, PermissionGoodsReceiptVerify, PermissionGoodsReceiptRevise, PermissionGoodsReceiptHalted, PermissionGoodsReceiptDiscarded, PermissionRestoreGoodsReceipt, PermissionGoodsReceiptApprove, PermissionGoodsReceiptStanding, PermissionGoodsReceiptCompleted, PermissionGoodsReceiptHalt, PermissionGoodsReceiptComplete, PermissionGoodsReceiptDiscard, PermissionReopenGoodsReceipt];
 
 export const PermissionWorkOrderNew = 'work-orders-new';
 export const PermissionWorkOrderDrafts = 'work-orders-drafts';
@@ -545,6 +584,7 @@ export const PermissionWorkOrderHalt = 'work-orders-extra-halt';
 export const PermissionWorkOrderComplete = 'work-orders-mark-complete';
 export const PermissionWorkOrderDiscard = 'work-orders-extra-discard';
 export const PermissionReopenWorkOrder = 'work-orders-extra-reopen';
+export const PermissionsWorkOrders = [PermissionWorkOrderNew, PermissionWorkOrderDrafts, PermissionWorkOrderVerify, PermissionWorkOrderRevise, PermissionWorkOrderHalted, PermissionWorkOrderDiscarded, PermissionRestoreWorkOrder, PermissionWorkOrderApprove, PermissionWorkOrderStanding, PermissionWorkOrderCompleted, PermissionWorkOrderHalt, PermissionWorkOrderComplete, PermissionWorkOrderDiscard, PermissionReopenWorkOrder];
 
 export const PermissionPurchaseReturnNew = 'purchases-returns-new';
 export const PermissionPurchaseReturnDrafts = 'purchases-returns-drafts';
@@ -560,6 +600,7 @@ export const PermissionPurchaseReturnHalt = 'purchases-returns-extra-halt';
 export const PermissionPurchaseReturnComplete = 'purchases-returns-mark-complete';
 export const PermissionPurchaseReturnDiscard = 'purchases-returns-extra-discard';
 export const PermissionReopenPurchaseReturn = 'purchases-returns-extra-reopen';
+export const PermissionsPurchasesReturns = [PermissionPurchaseReturnNew, PermissionPurchaseReturnDrafts, PermissionPurchaseReturnVerify, PermissionPurchaseReturnRevise, PermissionPurchaseReturnHalted, PermissionPurchaseReturnDiscarded, PermissionRestorePurchaseReturn, PermissionPurchaseReturnApprove, PermissionPurchaseReturnStanding, PermissionPurchaseReturnCompleted, PermissionPurchaseReturnHalt, PermissionPurchaseReturnComplete, PermissionPurchaseReturnDiscard, PermissionReopenPurchaseReturn];
 
 export const PermissionSaleReturnNew = 'sales-returns-new';
 export const PermissionSaleReturnDrafts = 'sales-returns-drafts';
@@ -575,6 +616,7 @@ export const PermissionSaleReturnHalt = 'sales-returns-extra-halt';
 export const PermissionSaleReturnComplete = 'sales-returns-mark-complete';
 export const PermissionSaleReturnDiscard = 'sales-returns-extra-discard';
 export const PermissionReopenSaleReturn = 'sales-returns-extra-reopen';
+export const PermissionsSalesReturns = [PermissionSaleReturnNew, PermissionSaleReturnDrafts, PermissionSaleReturnVerify, PermissionSaleReturnRevise, PermissionSaleReturnHalted, PermissionSaleReturnDiscarded, PermissionRestoreSaleReturn, PermissionSaleReturnApprove, PermissionSaleReturnStanding, PermissionSaleReturnCompleted, PermissionSaleReturnHalt, PermissionSaleReturnComplete, PermissionSaleReturnDiscard, PermissionReopenSaleReturn];
 
 export const PermissionOutwardJobFreeIssueMaterialReturnNew = 'outward-jobs-free-issue-materials-returns-new';
 export const PermissionOutwardJobFreeIssueMaterialReturnDrafts = 'outward-jobs-free-issue-materials-returns-drafts';
@@ -590,6 +632,7 @@ export const PermissionOutwardJobFreeIssueMaterialReturnHalt = 'outward-jobs-fre
 export const PermissionOutwardJobFreeIssueMaterialReturnComplete = 'outward-jobs-free-issue-materials-returns-mark-complete';
 export const PermissionOutwardJobFreeIssueMaterialReturnDiscard = 'outward-jobs-free-issue-materials-returns-extra-discard';
 export const PermissionReopenOutwardJobFreeIssueMaterialReturn = 'outward-jobs-free-issue-materials-returns-extra-reopen';
+export const PermissionsOutwardJobsFreeIssueMaterialsReturns = [PermissionOutwardJobFreeIssueMaterialReturnNew, PermissionOutwardJobFreeIssueMaterialReturnDrafts, PermissionOutwardJobFreeIssueMaterialReturnVerify, PermissionOutwardJobFreeIssueMaterialReturnRevise, PermissionOutwardJobFreeIssueMaterialReturnHalted, PermissionOutwardJobFreeIssueMaterialReturnDiscarded, PermissionRestoreOutwardJobFreeIssueMaterialReturn, PermissionOutwardJobFreeIssueMaterialReturnApprove, PermissionOutwardJobFreeIssueMaterialReturnStanding, PermissionOutwardJobFreeIssueMaterialReturnCompleted, PermissionOutwardJobFreeIssueMaterialReturnHalt, PermissionOutwardJobFreeIssueMaterialReturnComplete, PermissionOutwardJobFreeIssueMaterialReturnDiscard, PermissionReopenOutwardJobFreeIssueMaterialReturn];
 
 export const PermissionInwardJobFreeIssueMaterialReturnNew = 'inward-jobs-free-issue-materials-returns-new';
 export const PermissionInwardJobFreeIssueMaterialReturnDrafts = 'inward-jobs-free-issue-materials-returns-drafts';
@@ -605,6 +648,7 @@ export const PermissionInwardJobFreeIssueMaterialReturnHalt = 'inward-jobs-free-
 export const PermissionInwardJobFreeIssueMaterialReturnComplete = 'inward-jobs-free-issue-materials-returns-mark-complete';
 export const PermissionInwardJobFreeIssueMaterialReturnDiscard = 'inward-jobs-free-issue-materials-returns-extra-discard';
 export const PermissionReopenInwardJobFreeIssueMaterialReturn = 'inward-jobs-free-issue-materials-returns-extra-reopen';
+export const PermissionsInwardJobsFreeIssueMaterialsReturns = [PermissionInwardJobFreeIssueMaterialReturnNew, PermissionInwardJobFreeIssueMaterialReturnDrafts, PermissionInwardJobFreeIssueMaterialReturnVerify, PermissionInwardJobFreeIssueMaterialReturnRevise, PermissionInwardJobFreeIssueMaterialReturnHalted, PermissionInwardJobFreeIssueMaterialReturnDiscarded, PermissionRestoreInwardJobFreeIssueMaterialReturn, PermissionInwardJobFreeIssueMaterialReturnApprove, PermissionInwardJobFreeIssueMaterialReturnStanding, PermissionInwardJobFreeIssueMaterialReturnCompleted, PermissionInwardJobFreeIssueMaterialReturnHalt, PermissionInwardJobFreeIssueMaterialReturnComplete, PermissionInwardJobFreeIssueMaterialReturnDiscard, PermissionReopenInwardJobFreeIssueMaterialReturn];
 
 export const PermissionNewPurchasePayment = 'purchases-payments-new';
 export const PermissionDraftPurchasePayment = 'purchases-payments-drafts';
@@ -618,6 +662,7 @@ export const PermissionRestorePurchasePayment = 'purchases-payments-restore';
 export const PermissionCompletedPurchasePayment = 'purchases-payments-completed';
 export const PermissionHaltPurchasePayment = 'purchases-payments-halt';
 export const PermissionMarkPurchasePaymentasCompleted = 'purchases-payments-mark-complete';
+export const PermissionsPurchasesPayments = [PermissionNewPurchasePayment, PermissionDraftPurchasePayment, PermissionVerifyPurchasePayment, PermissionApprovePurchasePayment, PermissionRevisePurchasePayment, PermissionStandingPurchasePayment, PermissionHaltedPurchasePayment, PermissionDiscardPurchasePayment, PermissionRestorePurchasePayment, PermissionCompletedPurchasePayment, PermissionHaltPurchasePayment, PermissionMarkPurchasePaymentasCompleted];
 
 export const PermissionNewSaleReceipt = 'sales-receipts-new';
 export const PermissionDraftSaleReceipt = 'sales-receipts-drafts';
@@ -631,6 +676,7 @@ export const PermissionRestoreSaleReceipt = 'sales-receipts-restore';
 export const PermissionCompletedSaleReceipt = 'sales-receipts-completed';
 export const PermissionHaltSaleReceipt = 'sales-receipts-halt';
 export const PermissionMarkSaleReceiptasCompleted = 'sales-receipts-mark-complete';
+export const PermissionsSalesReceipts = [PermissionNewSaleReceipt, PermissionDraftSaleReceipt, PermissionVerifySaleReceipt, PermissionApproveSaleReceipt, PermissionReviseSaleReceipt, PermissionStandingSaleReceipt, PermissionHaltedSaleReceipt, PermissionDiscardSaleReceipt, PermissionRestoreSaleReceipt, PermissionCompletedSaleReceipt, PermissionHaltSaleReceipt, PermissionMarkSaleReceiptasCompleted];
 
 export const PermissionCreditNoteNew = 'credit-notes-new';
 export const PermissionCreditNoteDrafts = 'credit-notes-drafts';
@@ -646,6 +692,7 @@ export const PermissionCreditNoteHalt = 'credit-notes-extra-halt';
 export const PermissionCreditNoteComplete = 'credit-notes-mark-complete';
 export const PermissionCreditNoteDiscard = 'credit-notes-extra-discard';
 export const PermissionReopenCreditNote = 'credit-notes-extra-reopen';
+export const PermissionsCreditNotes = [PermissionCreditNoteNew, PermissionCreditNoteDrafts, PermissionCreditNoteVerify, PermissionCreditNoteRevise, PermissionCreditNoteHalted, PermissionCreditNoteDiscarded, PermissionRestoreCreditNote, PermissionCreditNoteApprove, PermissionCreditNoteStanding, PermissionCreditNoteCompleted, PermissionCreditNoteHalt, PermissionCreditNoteComplete, PermissionCreditNoteDiscard, PermissionReopenCreditNote];
 
 export const PermissionDebitNoteNew = 'debit-notes-new';
 export const PermissionDebitNoteDrafts = 'debit-notes-drafts';
@@ -661,6 +708,7 @@ export const PermissionDebitNoteHalt = 'debit-notes-extra-halt';
 export const PermissionDebitNoteComplete = 'debit-notes-mark-complete';
 export const PermissionDebitNoteDiscard = 'debit-notes-extra-discard';
 export const PermissionReopenDebitNote = 'debit-notes-extra-reopen';
+export const PermissionsDebitNotes = [PermissionDebitNoteNew, PermissionDebitNoteDrafts, PermissionDebitNoteVerify, PermissionDebitNoteRevise, PermissionDebitNoteHalted, PermissionDebitNoteDiscarded, PermissionRestoreDebitNote, PermissionDebitNoteApprove, PermissionDebitNoteStanding, PermissionDebitNoteCompleted, PermissionDebitNoteHalt, PermissionDebitNoteComplete, PermissionDebitNoteDiscard, PermissionReopenDebitNote];
 
 export const PermissionExpenseNew = 'expenses-new';
 export const PermissionExpenseDrafts = 'expenses-drafts';
@@ -676,6 +724,7 @@ export const PermissionExpenseHalt = 'expenses-extra-halt';
 export const PermissionExpenseComplete = 'expenses-mark-complete';
 export const PermissionExpenseDiscard = 'expenses-extra-discard';
 export const PermissionReopenExpense = 'expenses-extra-reopen';
+export const PermissionsExpenses = [PermissionExpenseNew, PermissionExpenseDrafts, PermissionExpenseVerify, PermissionExpenseRevise, PermissionExpenseHalted, PermissionExpenseDiscarded, PermissionRestoreExpense, PermissionExpenseApprove, PermissionExpenseStanding, PermissionExpenseCompleted, PermissionExpenseHalt, PermissionExpenseComplete, PermissionExpenseDiscard, PermissionReopenExpense];
 
 export const PermissionSalaryNew = 'salaries-new';
 export const PermissionSalaryDrafts = 'salaries-drafts';
@@ -691,6 +740,7 @@ export const PermissionSalaryHalt = 'salaries-extra-halt';
 export const PermissionSalaryComplete = 'salaries-mark-complete';
 export const PermissionSalaryDiscard = 'salaries-extra-discard';
 export const PermissionReopenSalary = 'salaries-extra-reopen';
+export const PermissionsSalaries = [PermissionSalaryNew, PermissionSalaryDrafts, PermissionSalaryVerify, PermissionSalaryRevise, PermissionSalaryHalted, PermissionSalaryDiscarded, PermissionRestoreSalary, PermissionSalaryApprove, PermissionSalaryStanding, PermissionSalaryCompleted, PermissionSalaryHalt, PermissionSalaryComplete, PermissionSalaryDiscard, PermissionReopenSalary];
 
 export const PermissionNewContractorPayment = 'contractors-payments-new';
 export const PermissionDraftContractorsPayments = 'contractors-payments-drafts';
@@ -704,6 +754,7 @@ export const PermissionRestoreContractorsPayments = 'contractors-payments-restor
 export const PermissionCompletedContractorsPayments = 'contractors-payments-completed';
 export const PermissionHaltContractorPayment = 'contractors-payments-halt';
 export const PermissionMarkContractorPaymentasCompleted = 'contractors-payments-mark-completed';
+export const PermissionsContractorsPayments = [PermissionNewContractorPayment, PermissionDraftContractorsPayments, PermissionVerifyContractorsPayments, PermissionApproveContractorsPayments, PermissionReviseContractorsPayments, PermissionStandingContractorsPayments, PermissionHaltedContractorsPayments, PermissionDiscardContractorsPayments, PermissionRestoreContractorsPayments, PermissionCompletedContractorsPayments, PermissionHaltContractorPayment, PermissionMarkContractorPaymentasCompleted];
 
 export const PermissionNewSundry = 'sundries-new';
 export const PermissionDraftSundries = 'sundries-drafts';
@@ -717,6 +768,7 @@ export const PermissionRestoreSundries = 'sundries-restore';
 export const PermissionCompletedSundries = 'sundries-completed';
 export const PermissionHaltSundry = 'sundries-halt';
 export const PermissionMarkSundryasCompleted = 'sundries-mark-completed';
+export const PermissionsSundries = [PermissionNewSundry, PermissionDraftSundries, PermissionVerifySundries, PermissionApproveSundries, PermissionReviseSundries, PermissionStandingSundries, PermissionHaltedSundries, PermissionDiscardSundries, PermissionRestoreSundries, PermissionCompletedSundries, PermissionHaltSundry, PermissionMarkSundryasCompleted];
 
 export const PermissionNewPurchaseEnquiry = 'purchases-enquiries-new';
 export const PermissionDraftPurchaseEnquiry = 'purchases-enquiries-drafts';
@@ -732,6 +784,7 @@ export const PermissionHaltPurchaseEnquiry = 'purchases-enquiries-halt';
 export const PermissionMarkPurchaseEnquiryasCompleted = 'purchases-enquiries-mark-completed';
 export const PermissionPurchaseEnquiryDiscard = 'purchases-enquiries-extra-discard';
 export const PermissionReopenPurchaseEnquiry = 'purchases-enquiries-extra-reopen';
+export const PermissionsPurchasesEnquiries = [PermissionNewPurchaseEnquiry, PermissionDraftPurchaseEnquiry, PermissionVerifyPurchaseEnquiry, PermissionRevisePurchaseEnquiry, PermissionHaltedPurchaseEnquiry, PermissionPurchaseEnquiryDiscarded, PermissionRestorePurchaseEnquiry, PermissionApprovePurchaseEnquiry, PermissionStandingPurchaseEnquiry, PermissionCompletedPurchaseEnquiry, PermissionHaltPurchaseEnquiry, PermissionMarkPurchaseEnquiryasCompleted, PermissionPurchaseEnquiryDiscard, PermissionReopenPurchaseEnquiry];
 
 export const PermissionSalesEnquiryNew = 'sales-enquiries-new';
 export const PermissionSalesEnquiryDrafts = 'sales-enquiries-drafts';
@@ -748,6 +801,7 @@ export const PermissionSalesEnquiryComplete = 'sales-enquiries-mark-complete';
 export const PermissionSalesEnquiryDiscard = 'sales-enquiries-extra-discard';
 export const PermissionReopenSalesEnquiry = 'sales-enquiries-extra-reopen';
 export const PermissionAmendSalesEnquiry = 'sales-enquiries-amend';
+export const PermissionsSalesEnquiries = [PermissionSalesEnquiryNew, PermissionSalesEnquiryDrafts, PermissionSalesEnquiryVerify, PermissionSalesEnquiryRevise, PermissionSalesEnquiryHalted, PermissionSalesEnquiryDiscarded, PermissionRestoreSalesEnquiry, PermissionSalesEnquiryApprove, PermissionSalesEnquiryStanding, PermissionSalesEnquiryCompleted, PermissionSalesEnquiryHalt, PermissionSalesEnquiryComplete, PermissionSalesEnquiryDiscard, PermissionReopenSalesEnquiry, PermissionAmendSalesEnquiry];
 
 export const PermissionNewQuotationRequest = 'quotations-requests-new';
 export const PermissionDraftQuotationRequest = 'quotations-requests-drafts';
@@ -763,6 +817,7 @@ export const PermissionHaltQuotationRequest = 'quotations-requests-halt';
 export const PermissionMarkQuotationRequestasCompleted = 'quotations-requests-mark-completed';
 export const PermissionQuotationRequestDiscard = 'quotations-requests-extra-discard';
 export const PermissionReopenQuotationRequest = 'quotations-requests-extra-reopen';
+export const PermissionsQuotationsRequests = [PermissionNewQuotationRequest, PermissionDraftQuotationRequest, PermissionVerifyQuotationRequest, PermissionReviseQuotationRequest, PermissionHaltedQuotationRequest, PermissionQuotationRequestDiscarded, PermissionRestoreQuotationRequest, PermissionApproveQuotationRequest, PermissionStandingQuotationRequest, PermissionCompletedQuotationRequest, PermissionHaltQuotationRequest, PermissionMarkQuotationRequestasCompleted, PermissionQuotationRequestDiscard, PermissionReopenQuotationRequest];
 
 export const PermissionNewQuotationResponse = 'quotations-responses-new';
 export const PermissionDraftQuotationResponse = 'quotations-responses-drafts';
@@ -778,6 +833,7 @@ export const PermissionHaltQuotationResponse = 'quotations-responses-halt';
 export const PermissionMarkQuotationResponseasCompleted = 'quotations-responses-mark-completed';
 export const PermissionQuotationResponseDiscard = 'quotations-responses-extra-discard';
 export const PermissionReopenQuotationResponse = 'quotations-responses-extra-reopen';
+export const PermissionsQuotationsResponses = [PermissionNewQuotationResponse, PermissionDraftQuotationResponse, PermissionVerifyQuotationResponse, PermissionReviseQuotationResponse, PermissionHaltedQuotationResponse, PermissionQuotationResponseDiscarded, PermissionRestoreQuotationResponse, PermissionApproveQuotationResponse, PermissionStandingQuotationResponse, PermissionCompletedQuotationResponse, PermissionHaltQuotationResponse, PermissionMarkQuotationResponseasCompleted, PermissionQuotationResponseDiscard, PermissionReopenQuotationResponse];
 
 export const PermissionEquationFamilyNew = 'equations-families-new';
 export const PermissionEquationFamilyDrafts = 'equations-families-drafts';
@@ -793,6 +849,7 @@ export const PermissionEquationFamilyHalt = 'equations-families-extra-halt';
 export const PermissionEquationFamilyComplete = 'equations-families-mark-complete';
 export const PermissionEquationFamilyDiscard = 'equations-families-extra-discard';
 export const PermissionReopenEquationFamily = 'equations-families-extra-reopen';
+export const PermissionsEquationsFamilies = [PermissionEquationFamilyNew, PermissionEquationFamilyDrafts, PermissionEquationFamilyVerify, PermissionEquationFamilyRevise, PermissionEquationFamilyHalted, PermissionEquationFamilyDiscarded, PermissionRestoreEquationFamily, PermissionEquationFamilyApprove, PermissionEquationFamilyStanding, PermissionEquationFamilyCompleted, PermissionEquationFamilyHalt, PermissionEquationFamilyComplete, PermissionEquationFamilyDiscard, PermissionReopenEquationFamily];
 
 export const PermissionEquationSalesBundleNew = 'equations-sales-bundles-new';
 export const PermissionEquationSalesBundleDrafts = 'equations-sales-bundles-drafts';
@@ -808,6 +865,7 @@ export const PermissionEquationSalesBundleHalt = 'equations-sales-bundles-extra-
 export const PermissionEquationSalesBundleComplete = 'equations-sales-bundles-mark-complete';
 export const PermissionEquationSalesBundleDiscard = 'equations-sales-bundles-extra-discard';
 export const PermissionReopenEquationSalesBundle = 'equations-sales-bundles-extra-reopen';
+export const PermissionsEquationsSalesBundles = [PermissionEquationSalesBundleNew, PermissionEquationSalesBundleDrafts, PermissionEquationSalesBundleVerify, PermissionEquationSalesBundleRevise, PermissionEquationSalesBundleHalted, PermissionEquationSalesBundleDiscarded, PermissionRestoreEquationSalesBundle, PermissionEquationSalesBundleApprove, PermissionEquationSalesBundleStanding, PermissionEquationSalesBundleCompleted, PermissionEquationSalesBundleHalt, PermissionEquationSalesBundleComplete, PermissionEquationSalesBundleDiscard, PermissionReopenEquationSalesBundle];
 
 export const PermissionEquationWorkOrderNew = 'equations-work-orders-new';
 export const PermissionEquationWorkOrderDrafts = 'equations-work-orders-drafts';
@@ -824,6 +882,7 @@ export const PermissionEquationWorkOrderComplete = 'equations-work-orders-mark-c
 export const PermissionEquationWorkOrderDiscard = 'equations-work-orders-extra-discard';
 export const PermissionReopenEquationWorkOrder = 'equations-work-orders-extra-reopen';
 export const PermissionAmendEquationWorkOrder = 'equations-work-orders-amend';
+export const PermissionsEquationsWorkOrders = [PermissionEquationWorkOrderNew, PermissionEquationWorkOrderDrafts, PermissionEquationWorkOrderVerify, PermissionEquationWorkOrderRevise, PermissionEquationWorkOrderHalted, PermissionEquationWorkOrderDiscarded, PermissionRestoreEquationWorkOrder, PermissionEquationWorkOrderApprove, PermissionEquationWorkOrderStanding, PermissionEquationWorkOrderCompleted, PermissionEquationWorkOrderHalt, PermissionEquationWorkOrderComplete, PermissionEquationWorkOrderDiscard, PermissionReopenEquationWorkOrder, PermissionAmendEquationWorkOrder];
 
 export const PermissionEquationReplaceableNew = 'equations-replaceables-new';
 export const PermissionEquationReplaceableDrafts = 'equations-replaceables-drafts';
@@ -839,6 +898,7 @@ export const PermissionEquationReplaceableHalt = 'equations-replaceables-extra-h
 export const PermissionEquationReplaceableComplete = 'equations-replaceables-mark-complete';
 export const PermissionEquationReplaceableDiscard = 'equations-replaceables-extra-discard';
 export const PermissionReopenEquationReplaceable = 'equations-replaceables-extra-reopen';
+export const PermissionsEquationsReplaceables = [PermissionEquationReplaceableNew, PermissionEquationReplaceableDrafts, PermissionEquationReplaceableVerify, PermissionEquationReplaceableRevise, PermissionEquationReplaceableHalted, PermissionEquationReplaceableDiscarded, PermissionRestoreEquationReplaceable, PermissionEquationReplaceableApprove, PermissionEquationReplaceableStanding, PermissionEquationReplaceableCompleted, PermissionEquationReplaceableHalt, PermissionEquationReplaceableComplete, PermissionEquationReplaceableDiscard, PermissionReopenEquationReplaceable];
 
 export const PermissionFamilyNew = 'families-new';
 export const PermissionFamilyDrafts = 'families-drafts';
@@ -853,6 +913,7 @@ export const PermissionFamilyHalt = 'families-extra-halt';
 export const PermissionFamilyComplete = 'families-mark-complete';
 export const PermissionFamilyDiscard = 'families-extra-discard';
 export const PermissionAmendFamily = 'families-amend';
+export const PermissionsFamilies = [PermissionFamilyNew, PermissionFamilyDrafts, PermissionFamilyVerify, PermissionFamilyRevise, PermissionFamilyHalted, PermissionFamilyDiscarded, PermissionRestoreFamily, PermissionFamilyApprove, PermissionFamilyStanding, PermissionFamilyHalt, PermissionFamilyComplete, PermissionFamilyDiscard, PermissionAmendFamily];
 
 export const PermissionNewQCParameter = 'qc-params-new';
 export const PermissionDraftQCParameters = 'qc-params-drafts';
@@ -866,6 +927,7 @@ export const PermissionRestoreQCParameters = 'qc-params-restore';
 export const PermissionCompletedQCParameters = 'qc-params-completed';
 export const PermissionHaltQCParameter = 'qc-params-halt';
 export const PermissionMarkQCParameterasCompleted = 'qc-params-mark-complete';
+export const PermissionsQcParams = [PermissionNewQCParameter, PermissionDraftQCParameters, PermissionVerifyQCParameters, PermissionApproveQCParameters, PermissionReviseQCParameters, PermissionStandingQCParameters, PermissionHaltedQCParameters, PermissionDiscardQCParameters, PermissionRestoreQCParameters, PermissionCompletedQCParameters, PermissionHaltQCParameter, PermissionMarkQCParameterasCompleted];
 
 export const PermissionQCGroupNew = 'qc-groups-new';
 export const PermissionQCGroupDrafts = 'qc-groups-drafts';
@@ -881,6 +943,7 @@ export const PermissionQCGroupHalt = 'qc-groups-extra-halt';
 export const PermissionQCGroupComplete = 'qc-groups-mark-complete';
 export const PermissionQCGroupDiscard = 'qc-groups-extra-discard';
 export const PermissionReopenQCGroup = 'qc-groups-extra-reopen';
+export const PermissionsQcGroups = [PermissionQCGroupNew, PermissionQCGroupDrafts, PermissionQCGroupVerify, PermissionQCGroupRevise, PermissionQCGroupHalted, PermissionQCGroupDiscarded, PermissionRestoreQCGroup, PermissionQCGroupApprove, PermissionQCGroupStanding, PermissionQCGroupCompleted, PermissionQCGroupHalt, PermissionQCGroupComplete, PermissionQCGroupDiscard, PermissionReopenQCGroup];
 
 export const PermissionQCSampleNew = 'qc-samples-create';
 export const PermissionQCSampleUpdate = 'qc-samples-update';
@@ -896,6 +959,7 @@ export const PermissionQCSampleReject = 'qc-samples-mark-reject';
 export const PermissionQCSampleReopen = 'qc-samples-extra-reopen';
 export const PermissionQCSampleCancelled = 'qc-samples-cancelled';
 export const PermissionQCSampleCancel = 'qc-samples-mark-cancel';
+export const PermissionsQcSamples = [PermissionQCSampleNew, PermissionQCSampleUpdate, PermissionQCSampleOpen, PermissionQCSampleFinished, PermissionQCSampleFinish, PermissionQCSampleAccepted, PermissionQCSampleAccept, PermissionQCSampleAcceptedWithDeviation, PermissionQCSampleAcceptWithDeviation, PermissionQCSampleRejected, PermissionQCSampleReject, PermissionQCSampleReopen, PermissionQCSampleCancelled, PermissionQCSampleCancel];
 
 export const PermissionNewTaxParameter = 'tax-params-new';
 export const PermissionDraftTaxParameters = 'tax-params-drafts';
@@ -908,6 +972,7 @@ export const PermissionDiscardTaxParameters = 'tax-params-discarded';
 export const PermissionRestoreTaxParameters = 'tax-params-restore';
 export const PermissionHaltTaxParameter = 'tax-params-halt';
 export const PermissionDiscardTaxParameter = 'tax-params-extra-discard';
+export const PermissionsTaxParams = [PermissionNewTaxParameter, PermissionDraftTaxParameters, PermissionVerifyTaxParameters, PermissionApproveTaxParameters, PermissionReviseTaxParameters, PermissionStandingTaxParameters, PermissionHaltedTaxParameters, PermissionDiscardTaxParameters, PermissionRestoreTaxParameters, PermissionHaltTaxParameter, PermissionDiscardTaxParameter];
 
 export const PermissionNewTaxGroup = 'tax-groups-new';
 export const PermissionDraftTaxGroups = 'tax-groups-drafts';
@@ -920,6 +985,7 @@ export const PermissionDiscardTaxGroups = 'tax-groups-discarded';
 export const PermissionRestoreTaxGroups = 'tax-groups-restore';
 export const PermissionHaltTaxGroup = 'tax-groups-halt';
 export const PermissionDiscardTaxGroup = 'tax-groups-extra-discard';
+export const PermissionsTaxGroups = [PermissionNewTaxGroup, PermissionDraftTaxGroups, PermissionVerifyTaxGroups, PermissionApproveTaxGroups, PermissionReviseTaxGroups, PermissionStandingTaxGroups, PermissionHaltedTaxGroups, PermissionDiscardTaxGroups, PermissionRestoreTaxGroups, PermissionHaltTaxGroup, PermissionDiscardTaxGroup];
 
 export const PermissionNewPayrollParameter = 'payroll-params-new';
 export const PermissionDraftPayrollParameters = 'payroll-params-drafts';
@@ -933,6 +999,7 @@ export const PermissionRestorePayrollParameters = 'payroll-params-restore';
 export const PermissionCompletedPayrollParameters = 'payroll-params-completed';
 export const PermissionHaltPayrollParameter = 'payroll-params-halt';
 export const PermissionMarkPayrollParameterasCompleted = 'payroll-params-mark-complete';
+export const PermissionsPayrollParams = [PermissionNewPayrollParameter, PermissionDraftPayrollParameters, PermissionVerifyPayrollParameters, PermissionApprovePayrollParameters, PermissionRevisePayrollParameters, PermissionStandingPayrollParameters, PermissionHaltedPayrollParameters, PermissionDiscardPayrollParameters, PermissionRestorePayrollParameters, PermissionCompletedPayrollParameters, PermissionHaltPayrollParameter, PermissionMarkPayrollParameterasCompleted];
 
 export const PermissionPayrollGroupNew = 'payroll-groups-new';
 export const PermissionPayrollGroupDrafts = 'payroll-groups-drafts';
@@ -948,17 +1015,21 @@ export const PermissionPayrollGroupHalt = 'payroll-groups-extra-halt';
 export const PermissionPayrollGroupComplete = 'payroll-groups-mark-complete';
 export const PermissionPayrollGroupDiscard = 'payroll-groups-extra-discard';
 export const PermissionReopenPayrollGroup = 'payroll-groups-extra-reopen';
+export const PermissionsPayrollGroups = [PermissionPayrollGroupNew, PermissionPayrollGroupDrafts, PermissionPayrollGroupVerify, PermissionPayrollGroupRevise, PermissionPayrollGroupHalted, PermissionPayrollGroupDiscarded, PermissionRestorePayrollGroup, PermissionPayrollGroupApprove, PermissionPayrollGroupStanding, PermissionPayrollGroupCompleted, PermissionPayrollGroupHalt, PermissionPayrollGroupComplete, PermissionPayrollGroupDiscard, PermissionReopenPayrollGroup];
 
 export const PermissionSet = 'general-settings-set';
+export const PermissionsGeneralSettings = [PermissionSet];
 
 export const PermissionSimpleLogs = 'logs-view';
 export const PermissionDescriptiveLogs = 'logs-descriptive';
+export const PermissionsLogs = [PermissionSimpleLogs, PermissionDescriptiveLogs];
 
 export const PermissionNewLabel = 'labels-new';
 export const PermissionViewLabel = 'labels-view';
 export const PermissionModifyLabel = 'labels-modify';
 export const PermissionDiscardLabel = 'labels-discard';
 export const PermissionRestoreLabel = 'labels-restore';
+export const PermissionsLabels = [PermissionNewLabel, PermissionViewLabel, PermissionModifyLabel, PermissionDiscardLabel, PermissionRestoreLabel];
 
 export const PermissionNewLocation = 'locations-new';
 export const PermissionDraftLocations = 'locations-drafts';
@@ -971,6 +1042,7 @@ export const PermissionDiscardLocations = 'locations-discarded';
 export const PermissionRestoreLocations = 'locations-restore';
 export const PermissionHaltLocation = 'locations-halt';
 export const PermissionDiscardLocation = 'locations-extra-discard';
+export const PermissionsLocations = [PermissionNewLocation, PermissionDraftLocations, PermissionVerifyLocations, PermissionApproveLocations, PermissionReviseLocations, PermissionStandingLocations, PermissionHaltedLocations, PermissionDiscardLocations, PermissionRestoreLocations, PermissionHaltLocation, PermissionDiscardLocation];
 
 export const PermissionNewBankAccount = 'bankaccounts-new';
 export const PermissionDraftBankAccounts = 'bankaccounts-drafts';
@@ -983,6 +1055,7 @@ export const PermissionDiscardBankAccounts = 'bankaccounts-discarded';
 export const PermissionRestoreBankAccounts = 'bankaccounts-restore';
 export const PermissionHaltBankAccount = 'bankaccounts-halt';
 export const PermissionDiscardBankAccount = 'bankaccounts-extra-discard';
+export const PermissionsBankaccounts = [PermissionNewBankAccount, PermissionDraftBankAccounts, PermissionVerifyBankAccounts, PermissionApproveBankAccounts, PermissionReviseBankAccounts, PermissionStandingBankAccounts, PermissionHaltedBankAccounts, PermissionDiscardBankAccounts, PermissionRestoreBankAccounts, PermissionHaltBankAccount, PermissionDiscardBankAccount];
 
 export const PermissionNewStore = 'stores-new';
 export const PermissionDraftStores = 'stores-drafts';
@@ -995,6 +1068,7 @@ export const PermissionDiscardStores = 'stores-discarded';
 export const PermissionRestoreStores = 'stores-restore';
 export const PermissionHaltStore = 'stores-halt';
 export const PermissionDiscardStore = 'stores-extra-discard';
+export const PermissionsStores = [PermissionNewStore, PermissionDraftStores, PermissionVerifyStores, PermissionApproveStores, PermissionReviseStores, PermissionStandingStores, PermissionHaltedStores, PermissionDiscardStores, PermissionRestoreStores, PermissionHaltStore, PermissionDiscardStore];
 
 export const PermissionNewQCHub = 'qchubs-new';
 export const PermissionDraftQCHubs = 'qchubs-drafts';
@@ -1007,6 +1081,7 @@ export const PermissionDiscardQCHubs = 'qchubs-discarded';
 export const PermissionRestoreQCHubs = 'qchubs-restore';
 export const PermissionHaltQCHub = 'qchubs-halt';
 export const PermissionDiscardQCHub = 'qchubs-extra-discard';
+export const PermissionsQchubs = [PermissionNewQCHub, PermissionDraftQCHubs, PermissionVerifyQCHubs, PermissionApproveQCHubs, PermissionReviseQCHubs, PermissionStandingQCHubs, PermissionHaltedQCHubs, PermissionDiscardQCHubs, PermissionRestoreQCHubs, PermissionHaltQCHub, PermissionDiscardQCHub];
 
 export const PermissionNewStorage = 'storages-new';
 export const PermissionDraftStorages = 'storages-drafts';
@@ -1019,6 +1094,7 @@ export const PermissionDiscardStorages = 'storages-discarded';
 export const PermissionRestoreStorages = 'storages-restore';
 export const PermissionHaltStorage = 'storages-halt';
 export const PermissionDiscardStorage = 'storages-extra-discard';
+export const PermissionsStorages = [PermissionNewStorage, PermissionDraftStorages, PermissionVerifyStorages, PermissionApproveStorages, PermissionReviseStorages, PermissionStandingStorages, PermissionHaltedStorages, PermissionDiscardStorages, PermissionRestoreStorages, PermissionHaltStorage, PermissionDiscardStorage];
 
 export const PermissionNewLedger = 'ledgers-new';
 export const PermissionDraftLedgers = 'ledgers-drafts';
@@ -1031,6 +1107,7 @@ export const PermissionDiscardLedgers = 'ledgers-discarded';
 export const PermissionRestoreLedgers = 'ledgers-restore';
 export const PermissionHaltLedger = 'ledgers-halt';
 export const PermissionDiscardLedger = 'ledgers-extra-discard';
+export const PermissionsLedgers = [PermissionNewLedger, PermissionDraftLedgers, PermissionVerifyLedgers, PermissionApproveLedgers, PermissionReviseLedgers, PermissionStandingLedgers, PermissionHaltedLedgers, PermissionDiscardLedgers, PermissionRestoreLedgers, PermissionHaltLedger, PermissionDiscardLedger];
 
 export const PermissionNewAnnouncement = 'announcements-new';
 export const PermissionDraftAnnouncements = 'announcements-drafts';
@@ -1044,6 +1121,7 @@ export const PermissionRestoreAnnouncements = 'announcements-restore';
 export const PermissionCompletedAnnouncements = 'announcements-completed';
 export const PermissionHaltAnnouncement = 'announcements-halt';
 export const PermissionMarkAnnouncementasCompleted = 'announcements-mark-complete';
+export const PermissionsAnnouncements = [PermissionNewAnnouncement, PermissionDraftAnnouncements, PermissionVerifyAnnouncements, PermissionApproveAnnouncements, PermissionReviseAnnouncements, PermissionStandingAnnouncements, PermissionHaltedAnnouncements, PermissionDiscardAnnouncements, PermissionRestoreAnnouncements, PermissionCompletedAnnouncements, PermissionHaltAnnouncement, PermissionMarkAnnouncementasCompleted];
 
 export const PermissionNewShift = 'shifts-new';
 export const PermissionDraftShifts = 'shifts-drafts';
@@ -1057,6 +1135,7 @@ export const PermissionRestoreShifts = 'shifts-restore';
 export const PermissionCompletedShifts = 'shifts-completed';
 export const PermissionHaltShift = 'shifts-halt';
 export const PermissionMarkShiftasCompleted = 'shifts-mark-complete';
+export const PermissionsShifts = [PermissionNewShift, PermissionDraftShifts, PermissionVerifyShifts, PermissionApproveShifts, PermissionReviseShifts, PermissionStandingShifts, PermissionHaltedShifts, PermissionDiscardShifts, PermissionRestoreShifts, PermissionCompletedShifts, PermissionHaltShift, PermissionMarkShiftasCompleted];
 
 export const PermissionNewShiftGroup = 'shift-groups-new';
 export const PermissionDraftShiftGroups = 'shift-groups-drafts';
@@ -1070,6 +1149,7 @@ export const PermissionRestoreShiftGroups = 'shift-groups-restore';
 export const PermissionCompletedShiftGroups = 'shift-groups-completed';
 export const PermissionHaltShiftGroup = 'shift-groups-halt';
 export const PermissionMarkShiftGroupasCompleted = 'shift-groups-mark-complete';
+export const PermissionsShiftGroups = [PermissionNewShiftGroup, PermissionDraftShiftGroups, PermissionVerifyShiftGroups, PermissionApproveShiftGroups, PermissionReviseShiftGroups, PermissionStandingShiftGroups, PermissionHaltedShiftGroups, PermissionDiscardShiftGroups, PermissionRestoreShiftGroups, PermissionCompletedShiftGroups, PermissionHaltShiftGroup, PermissionMarkShiftGroupasCompleted];
 
 export const PermissionNewHoliday = 'holidays-new';
 export const PermissionDraftHolidays = 'holidays-drafts';
@@ -1083,6 +1163,7 @@ export const PermissionRestoreHolidays = 'holidays-restore';
 export const PermissionCompletedHolidays = 'holidays-completed';
 export const PermissionHaltHoliday = 'holidays-halt';
 export const PermissionMarkHolidayasCompleted = 'holidays-mark-complete';
+export const PermissionsHolidays = [PermissionNewHoliday, PermissionDraftHolidays, PermissionVerifyHolidays, PermissionApproveHolidays, PermissionReviseHolidays, PermissionStandingHolidays, PermissionHaltedHolidays, PermissionDiscardHolidays, PermissionRestoreHolidays, PermissionCompletedHolidays, PermissionHaltHoliday, PermissionMarkHolidayasCompleted];
 
 export const PermissionNewLeaveType = 'leaves-types-new';
 export const PermissionDraftLeaveTypes = 'leaves-types-drafts';
@@ -1096,6 +1177,7 @@ export const PermissionRestoreLeaveTypes = 'leaves-types-restore';
 export const PermissionCompletedLeaveTypes = 'leaves-types-completed';
 export const PermissionHaltLeaveType = 'leaves-types-halt';
 export const PermissionMarkLeaveTypeasCompleted = 'leaves-types-mark-complete';
+export const PermissionsLeavesTypes = [PermissionNewLeaveType, PermissionDraftLeaveTypes, PermissionVerifyLeaveTypes, PermissionApproveLeaveTypes, PermissionReviseLeaveTypes, PermissionStandingLeaveTypes, PermissionHaltedLeaveTypes, PermissionDiscardLeaveTypes, PermissionRestoreLeaveTypes, PermissionCompletedLeaveTypes, PermissionHaltLeaveType, PermissionMarkLeaveTypeasCompleted];
 
 export const PermissionNewLeaveAdjustment = 'leaves-adjustments-new';
 export const PermissionDraftLeavesAdjustments = 'leaves-adjustments-drafts';
@@ -1109,6 +1191,7 @@ export const PermissionRestoreLeavesAdjustments = 'leaves-adjustments-restore';
 export const PermissionCompletedLeavesAdjustments = 'leaves-adjustments-completed';
 export const PermissionHaltLeaveAdjustment = 'leaves-adjustments-halt';
 export const PermissionMarkLeaveAdjustmentasCompleted = 'leaves-adjustments-mark-complete';
+export const PermissionsLeavesAdjustments = [PermissionNewLeaveAdjustment, PermissionDraftLeavesAdjustments, PermissionVerifyLeavesAdjustments, PermissionApproveLeavesAdjustments, PermissionReviseLeavesAdjustments, PermissionStandingLeavesAdjustments, PermissionHaltedLeavesAdjustments, PermissionDiscardLeavesAdjustments, PermissionRestoreLeavesAdjustments, PermissionCompletedLeavesAdjustments, PermissionHaltLeaveAdjustment, PermissionMarkLeaveAdjustmentasCompleted];
 
 export const PermissionNewLeaveRequest = 'leaves-requests-new';
 export const PermissionDraftLeavesRequests = 'leaves-requests-drafts';
@@ -1122,6 +1205,7 @@ export const PermissionRestoreLeavesRequests = 'leaves-requests-restore';
 export const PermissionCompletedLeavesRequests = 'leaves-requests-completed';
 export const PermissionHaltLeaveRequest = 'leaves-requests-halt';
 export const PermissionMarkLeaveRequestasCompleted = 'leaves-requests-mark-complete';
+export const PermissionsLeavesRequests = [PermissionNewLeaveRequest, PermissionDraftLeavesRequests, PermissionVerifyLeavesRequests, PermissionApproveLeavesRequests, PermissionReviseLeavesRequests, PermissionStandingLeavesRequests, PermissionHaltedLeavesRequests, PermissionDiscardLeavesRequests, PermissionRestoreLeavesRequests, PermissionCompletedLeavesRequests, PermissionHaltLeaveRequest, PermissionMarkLeaveRequestasCompleted];
 
 export const PermissionNewOvertime = 'overtimes-new';
 export const PermissionDraftOvertime = 'overtimes-drafts';
@@ -1135,6 +1219,7 @@ export const PermissionRestoreOvertime = 'overtimes-restore';
 export const PermissionCompletedOvertime = 'overtimes-completed';
 export const PermissionHaltOvertime = 'overtimes-halt';
 export const PermissionMarkOvertimeasCompleted = 'overtimes-mark-complete';
+export const PermissionsOvertimes = [PermissionNewOvertime, PermissionDraftOvertime, PermissionVerifyOvertime, PermissionApproveOvertime, PermissionReviseOvertime, PermissionStandingOvertime, PermissionHaltedOvertime, PermissionDiscardOvertime, PermissionRestoreOvertime, PermissionCompletedOvertime, PermissionHaltOvertime, PermissionMarkOvertimeasCompleted];
 
 export const PermissionNewAttendance = 'attendances-new';
 export const PermissionDraftAttendances = 'attendances-drafts';
@@ -1148,6 +1233,7 @@ export const PermissionRestoreAttendances = 'attendances-restore';
 export const PermissionCompletedAttendances = 'attendances-completed';
 export const PermissionHaltAttendance = 'attendances-halt';
 export const PermissionMarkAttendanceasCompleted = 'attendances-mark-complete';
+export const PermissionsAttendances = [PermissionNewAttendance, PermissionDraftAttendances, PermissionVerifyAttendances, PermissionApproveAttendances, PermissionReviseAttendances, PermissionStandingAttendances, PermissionHaltedAttendances, PermissionDiscardAttendances, PermissionRestoreAttendances, PermissionCompletedAttendances, PermissionHaltAttendance, PermissionMarkAttendanceasCompleted];
 
 export const PermissionNewAbsence = 'absences-new';
 export const PermissionDraftAbsences = 'absences-drafts';
@@ -1161,6 +1247,7 @@ export const PermissionRestoreAbsences = 'absences-restore';
 export const PermissionCompletedAbsences = 'absences-completed';
 export const PermissionHaltAbsence = 'absences-halt';
 export const PermissionMarkAbsenceasCompleted = 'absences-mark-complete';
+export const PermissionsAbsences = [PermissionNewAbsence, PermissionDraftAbsences, PermissionVerifyAbsences, PermissionApproveAbsences, PermissionReviseAbsences, PermissionStandingAbsences, PermissionHaltedAbsences, PermissionDiscardAbsences, PermissionRestoreAbsences, PermissionCompletedAbsences, PermissionHaltAbsence, PermissionMarkAbsenceasCompleted];
 
 export const PermissionNewOnDuty = 'onduties-new';
 export const PermissionDraftOnDuties = 'onduties-drafts';
@@ -1174,6 +1261,7 @@ export const PermissionRestoreOnDuties = 'onduties-restore';
 export const PermissionCompletedOnDuties = 'onduties-completed';
 export const PermissionHaltOnDuty = 'onduties-halt';
 export const PermissionMarkOnDutyasCompleted = 'onduties-mark-complete';
+export const PermissionsOnduties = [PermissionNewOnDuty, PermissionDraftOnDuties, PermissionVerifyOnDuties, PermissionApproveOnDuties, PermissionReviseOnDuties, PermissionStandingOnDuties, PermissionHaltedOnDuties, PermissionDiscardOnDuties, PermissionRestoreOnDuties, PermissionCompletedOnDuties, PermissionHaltOnDuty, PermissionMarkOnDutyasCompleted];
 
 export const PermissionNewAttendanceAmendment = 'attendances-amendments-new';
 export const PermissionDraftAttendanceAmendments = 'attendances-amendments-drafts';
@@ -1187,6 +1275,7 @@ export const PermissionRestoreAttendanceAmendments = 'attendances-amendments-res
 export const PermissionCompletedAttendanceAmendments = 'attendances-amendments-completed';
 export const PermissionHaltAttendanceAmendment = 'attendances-amendments-halt';
 export const PermissionMarkAttendanceAmendmentasCompleted = 'attendances-amendments-mark-complete';
+export const PermissionsAttendancesAmendments = [PermissionNewAttendanceAmendment, PermissionDraftAttendanceAmendments, PermissionVerifyAttendanceAmendments, PermissionApproveAttendanceAmendments, PermissionReviseAttendanceAmendments, PermissionStandingAttendanceAmendments, PermissionHaltedAttendanceAmendments, PermissionDiscardAttendanceAmendments, PermissionRestoreAttendanceAmendments, PermissionCompletedAttendanceAmendments, PermissionHaltAttendanceAmendment, PermissionMarkAttendanceAmendmentasCompleted];
 
 export const PermissionTeamNew = 'teams-new';
 export const PermissionTeamDrafts = 'teams-drafts';
@@ -1202,6 +1291,7 @@ export const PermissionTeamHalt = 'teams-extra-halt';
 export const PermissionTeamComplete = 'teams-mark-complete';
 export const PermissionTeamDiscard = 'teams-extra-discard';
 export const PermissionReopenTeam = 'teams-extra-reopen';
+export const PermissionsTeams = [PermissionTeamNew, PermissionTeamDrafts, PermissionTeamVerify, PermissionTeamRevise, PermissionTeamHalted, PermissionTeamDiscarded, PermissionRestoreTeam, PermissionTeamApprove, PermissionTeamStanding, PermissionTeamCompleted, PermissionTeamHalt, PermissionTeamComplete, PermissionTeamDiscard, PermissionReopenTeam];
 
 export const PermissionDepartmentNew = 'departments-new';
 export const PermissionDepartmentDrafts = 'departments-drafts';
@@ -1217,6 +1307,7 @@ export const PermissionDepartmentHalt = 'departments-extra-halt';
 export const PermissionDepartmentComplete = 'departments-mark-complete';
 export const PermissionDepartmentDiscard = 'departments-extra-discard';
 export const PermissionReopenDepartment = 'departments-extra-reopen';
+export const PermissionsDepartments = [PermissionDepartmentNew, PermissionDepartmentDrafts, PermissionDepartmentVerify, PermissionDepartmentRevise, PermissionDepartmentHalted, PermissionDepartmentDiscarded, PermissionRestoreDepartment, PermissionDepartmentApprove, PermissionDepartmentStanding, PermissionDepartmentCompleted, PermissionDepartmentHalt, PermissionDepartmentComplete, PermissionDepartmentDiscard, PermissionReopenDepartment];
 
 export const PermissionNewVisitation = 'visitations-new';
 export const PermissionDraftVisitations = 'visitations-drafts';
@@ -1230,6 +1321,7 @@ export const PermissionRestoreVisitations = 'visitations-restore';
 export const PermissionCompletedVisitations = 'visitations-completed';
 export const PermissionHaltVisitation = 'visitations-halt';
 export const PermissionMarkVisitationasCompleted = 'visitations-mark-complete';
+export const PermissionsVisitations = [PermissionNewVisitation, PermissionDraftVisitations, PermissionVerifyVisitations, PermissionApproveVisitations, PermissionReviseVisitations, PermissionStandingVisitations, PermissionHaltedVisitations, PermissionDiscardVisitations, PermissionRestoreVisitations, PermissionCompletedVisitations, PermissionHaltVisitation, PermissionMarkVisitationasCompleted];
 
 export const PermissionNewSkillParameter = 'skills-params-new';
 export const PermissionDraftSkillParameters = 'skills-params-drafts';
@@ -1243,6 +1335,7 @@ export const PermissionRestoreSkillParameters = 'skills-params-restore';
 export const PermissionCompletedSkillParameters = 'skills-params-completed';
 export const PermissionHaltSkillParameter = 'skills-params-halt';
 export const PermissionMarkSkillParameterasCompleted = 'skills-params-mark-complete';
+export const PermissionsSkillsParams = [PermissionNewSkillParameter, PermissionDraftSkillParameters, PermissionVerifySkillParameters, PermissionApproveSkillParameters, PermissionReviseSkillParameters, PermissionStandingSkillParameters, PermissionHaltedSkillParameters, PermissionDiscardSkillParameters, PermissionRestoreSkillParameters, PermissionCompletedSkillParameters, PermissionHaltSkillParameter, PermissionMarkSkillParameterasCompleted];
 
 export const PermissionSkillGroupNew = 'skills-groups-new';
 export const PermissionSkillGroupDrafts = 'skills-groups-drafts';
@@ -1258,6 +1351,7 @@ export const PermissionSkillGroupHalt = 'skills-groups-extra-halt';
 export const PermissionSkillGroupComplete = 'skills-groups-mark-complete';
 export const PermissionSkillGroupDiscard = 'skills-groups-extra-discard';
 export const PermissionReopenSkillGroup = 'skills-groups-extra-reopen';
+export const PermissionsSkillsGroups = [PermissionSkillGroupNew, PermissionSkillGroupDrafts, PermissionSkillGroupVerify, PermissionSkillGroupRevise, PermissionSkillGroupHalted, PermissionSkillGroupDiscarded, PermissionRestoreSkillGroup, PermissionSkillGroupApprove, PermissionSkillGroupStanding, PermissionSkillGroupCompleted, PermissionSkillGroupHalt, PermissionSkillGroupComplete, PermissionSkillGroupDiscard, PermissionReopenSkillGroup];
 
 export const PermissionNewGoal = 'goals-new';
 export const PermissionDraftGoal = 'goals-drafts';
@@ -1273,6 +1367,7 @@ export const PermissionHaltGoal = 'goals-halt';
 export const PermissionMarkGoalasCompleted = 'goals-mark-completed';
 export const PermissionGoalDiscard = 'goals-extra-discard';
 export const PermissionReopenGoal = 'goals-extra-reopen';
+export const PermissionsGoals = [PermissionNewGoal, PermissionDraftGoal, PermissionVerifyGoal, PermissionReviseGoal, PermissionHaltedGoal, PermissionGoalDiscarded, PermissionRestoreGoal, PermissionApproveGoal, PermissionStandingGoal, PermissionCompletedGoal, PermissionHaltGoal, PermissionMarkGoalasCompleted, PermissionGoalDiscard, PermissionReopenGoal];
 
 export const PermissionNewActivityTag = 'activities-tags-new';
 export const PermissionDraftActivitiesTags = 'activities-tags-drafts';
@@ -1285,6 +1380,7 @@ export const PermissionDiscardActivitiesTags = 'activities-tags-discarded';
 export const PermissionRestoreActivitiesTags = 'activities-tags-restore';
 export const PermissionHaltActivityTag = 'activities-tags-halt';
 export const PermissionDiscardActivityTag = 'activities-tags-extra-discard';
+export const PermissionsActivitiesTags = [PermissionNewActivityTag, PermissionDraftActivitiesTags, PermissionVerifyActivitiesTags, PermissionApproveActivitiesTags, PermissionReviseActivitiesTags, PermissionStandingActivitiesTags, PermissionHaltedActivitiesTags, PermissionDiscardActivitiesTags, PermissionRestoreActivitiesTags, PermissionHaltActivityTag, PermissionDiscardActivityTag];
 
 export const PermissionNewActivityStatus = 'activities-statuses-new';
 export const PermissionDraftActivitiesStatuses = 'activities-statuses-drafts';
@@ -1297,6 +1393,7 @@ export const PermissionDiscardActivitiesStatuses = 'activities-statuses-discarde
 export const PermissionRestoreActivitiesStatuses = 'activities-statuses-restore';
 export const PermissionHaltActivityStatus = 'activities-statuses-halt';
 export const PermissionDiscardActivityStatus = 'activities-statuses-extra-discard';
+export const PermissionsActivitiesStatuses = [PermissionNewActivityStatus, PermissionDraftActivitiesStatuses, PermissionVerifyActivitiesStatuses, PermissionApproveActivitiesStatuses, PermissionReviseActivitiesStatuses, PermissionStandingActivitiesStatuses, PermissionHaltedActivitiesStatuses, PermissionDiscardActivitiesStatuses, PermissionRestoreActivitiesStatuses, PermissionHaltActivityStatus, PermissionDiscardActivityStatus];
 
 export const PermissionNewActivityGroup = 'activities-groups-new';
 export const PermissionDraftActivitiesGroups = 'activities-groups-drafts';
@@ -1309,6 +1406,7 @@ export const PermissionDiscardActivitiesGroups = 'activities-groups-discarded';
 export const PermissionRestoreActivitiesGroups = 'activities-groups-restore';
 export const PermissionHaltActivityGroup = 'activities-groups-halt';
 export const PermissionDiscardActivityGroup = 'activities-groups-extra-discard';
+export const PermissionsActivitiesGroups = [PermissionNewActivityGroup, PermissionDraftActivitiesGroups, PermissionVerifyActivitiesGroups, PermissionApproveActivitiesGroups, PermissionReviseActivitiesGroups, PermissionStandingActivitiesGroups, PermissionHaltedActivitiesGroups, PermissionDiscardActivitiesGroups, PermissionRestoreActivitiesGroups, PermissionHaltActivityGroup, PermissionDiscardActivityGroup];
 
 export const PermissionNewActionCode = 'actions-codes-new';
 export const PermissionDraftActionsCodes = 'actions-codes-drafts';
@@ -1321,6 +1419,7 @@ export const PermissionDiscardActionsCodes = 'actions-codes-discarded';
 export const PermissionRestoreActionsCodes = 'actions-codes-restore';
 export const PermissionHaltActionCode = 'actions-codes-halt';
 export const PermissionDiscardActionCode = 'actions-codes-extra-discard';
+export const PermissionsActionsCodes = [PermissionNewActionCode, PermissionDraftActionsCodes, PermissionVerifyActionsCodes, PermissionApproveActionsCodes, PermissionReviseActionsCodes, PermissionStandingActionsCodes, PermissionHaltedActionsCodes, PermissionDiscardActionsCodes, PermissionRestoreActionsCodes, PermissionHaltActionCode, PermissionDiscardActionCode];
 
 export const PermissionActivityNew = 'activities-create';
 export const PermissionActivityUpdate = 'activities-update';
@@ -1333,6 +1432,7 @@ export const PermissionActivityCancel = 'activities-mark-cancel';
 export const PermissionMyActivityOpen = 'activities-my-open';
 export const PermissionMyActivityCompleted = 'activities-my-completed';
 export const PermissionMyActivityCancelled = 'activities-my-cancelled';
+export const PermissionsActivities = [PermissionActivityNew, PermissionActivityUpdate, PermissionActivityOpen, PermissionActivityCompleted, PermissionActivityComplete, PermissionActivityReopen, PermissionActivityCancelled, PermissionActivityCancel, PermissionMyActivityOpen, PermissionMyActivityCompleted, PermissionMyActivityCancelled];
 
 export const PermissionMeetingNew = 'meetings-create';
 export const PermissionMeetingUpdate = 'meetings-update';
@@ -1341,6 +1441,7 @@ export const PermissionMeetingCompleted = 'meetings-completed';
 export const PermissionMeetingComplete = 'meetings-mark-complete';
 export const PermissionMeetingCancelled = 'meetings-cancelled';
 export const PermissionMeetingCancel = 'meetings-mark-cancel';
+export const PermissionsMeetings = [PermissionMeetingNew, PermissionMeetingUpdate, PermissionMeetingOpen, PermissionMeetingCompleted, PermissionMeetingComplete, PermissionMeetingCancelled, PermissionMeetingCancel];
 
 export const PermissionNoteNew = 'notes-create';
 export const PermissionNoteUpdate = 'notes-update';
@@ -1352,6 +1453,7 @@ export const PermissionNoteCancel = 'notes-mark-cancel';
 export const PermissionMyNoteOpen = 'notes-my-open';
 export const PermissionMyNoteCompleted = 'notes-my-completed';
 export const PermissionMyNoteCancelled = 'notes-my-cancelled';
+export const PermissionsNotes = [PermissionNoteNew, PermissionNoteUpdate, PermissionNoteOpen, PermissionNoteCompleted, PermissionNoteComplete, PermissionNoteCancelled, PermissionNoteCancel, PermissionMyNoteOpen, PermissionMyNoteCompleted, PermissionMyNoteCancelled];
 
 export const PermissionClientStreamNew = 'client-streams-create';
 export const PermissionClientStreamUpdate = 'client-streams-update';
@@ -1364,6 +1466,7 @@ export const PermissionClientStreamCancel = 'client-streams-mark-cancel';
 export const PermissionMyClientStreamOpen = 'client-streams-my-open';
 export const PermissionMyClientStreamCompleted = 'client-streams-my-completed';
 export const PermissionMyClientStreamCancelled = 'client-streams-my-cancelled';
+export const PermissionsClientStreams = [PermissionClientStreamNew, PermissionClientStreamUpdate, PermissionClientStreamOpen, PermissionClientStreamCompleted, PermissionClientStreamComplete, PermissionClientStreamReopen, PermissionClientStreamCancelled, PermissionClientStreamCancel, PermissionMyClientStreamOpen, PermissionMyClientStreamCompleted, PermissionMyClientStreamCancelled];
 
 export const PermissionGeneralStreamNew = 'general-streams-create';
 export const PermissionGeneralStreamUpdate = 'general-streams-update';
@@ -1376,6 +1479,7 @@ export const PermissionGeneralStreamCancel = 'general-streams-mark-cancel';
 export const PermissionMyGeneralStreamOpen = 'general-streams-my-open';
 export const PermissionMyGeneralStreamCompleted = 'general-streams-my-completed';
 export const PermissionMyGeneralStreamCancelled = 'general-streams-my-cancelled';
+export const PermissionsGeneralStreams = [PermissionGeneralStreamNew, PermissionGeneralStreamUpdate, PermissionGeneralStreamOpen, PermissionGeneralStreamCompleted, PermissionGeneralStreamComplete, PermissionGeneralStreamReopen, PermissionGeneralStreamCancelled, PermissionGeneralStreamCancel, PermissionMyGeneralStreamOpen, PermissionMyGeneralStreamCompleted, PermissionMyGeneralStreamCancelled];
 
 export const PermissionVendorStreamNew = 'vendor-streams-create';
 export const PermissionVendorStreamUpdate = 'vendor-streams-update';
@@ -1388,6 +1492,7 @@ export const PermissionVendorStreamCancel = 'vendor-streams-mark-cancel';
 export const PermissionMyVendorStreamOpen = 'vendor-streams-my-open';
 export const PermissionMyVendorStreamCompleted = 'vendor-streams-my-completed';
 export const PermissionMyVendorStreamCancelled = 'vendor-streams-my-cancelled';
+export const PermissionsVendorStreams = [PermissionVendorStreamNew, PermissionVendorStreamUpdate, PermissionVendorStreamOpen, PermissionVendorStreamCompleted, PermissionVendorStreamComplete, PermissionVendorStreamReopen, PermissionVendorStreamCancelled, PermissionVendorStreamCancel, PermissionMyVendorStreamOpen, PermissionMyVendorStreamCompleted, PermissionMyVendorStreamCancelled];
 
 export const PermissionWorkflowRuleNew = 'workflows-rules-new';
 export const PermissionWorkflowRuleDrafts = 'workflows-rules-drafts';
@@ -1403,4 +1508,5 @@ export const PermissionWorkflowRuleHalt = 'workflows-rules-extra-halt';
 export const PermissionWorkflowRuleComplete = 'workflows-rules-mark-complete';
 export const PermissionWorkflowRuleDiscard = 'workflows-rules-extra-discard';
 export const PermissionReopenWorkflowRule = 'workflows-rules-extra-reopen';
+export const PermissionsWorkflowsRules = [PermissionWorkflowRuleNew, PermissionWorkflowRuleDrafts, PermissionWorkflowRuleVerify, PermissionWorkflowRuleRevise, PermissionWorkflowRuleHalted, PermissionWorkflowRuleDiscarded, PermissionRestoreWorkflowRule, PermissionWorkflowRuleApprove, PermissionWorkflowRuleStanding, PermissionWorkflowRuleCompleted, PermissionWorkflowRuleHalt, PermissionWorkflowRuleComplete, PermissionWorkflowRuleDiscard, PermissionReopenWorkflowRule];
 

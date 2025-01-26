@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ProformaInvoice, ProformaInvoiceAncillaryParameters, ProformaInvoiceItem, ProformaInvoiceItemHistoryRequest, ProformaInvoiceItemProspectiveInfoRequest, ProformaInvoiceItemsList, ProformaInvoiceItemsSearchRequest, ProformaInvoicesList, ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest, ProformaInvoicesServiceAutofillRequest, ProformaInvoicesServiceCountReq, ProformaInvoicesServiceCreateRequest, ProformaInvoicesServiceFilterReq, ProformaInvoicesServiceItemCreateRequest, ProformaInvoicesServiceItemUpdateRequest, ProformaInvoicesServicePaginatedItemsResponse, ProformaInvoicesServicePaginationReq, ProformaInvoicesServicePaginationResponse, ProformaInvoicesServiceSearchAllReq, ProformaInvoicesServiceUpdateRequest } from "./proforma_invoices.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -366,7 +366,7 @@ export const ProformaInvoicesService = {
      */
     uploadProformaInvoiceItems: {
       name: "UploadProformaInvoiceItems",
-      I: IdentifierWithFile,
+      I: IdentifierUUIDWithFile,
       O: IdentifiersList,
       kind: MethodKind.Unary,
     },

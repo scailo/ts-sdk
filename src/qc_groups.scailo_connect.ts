@@ -3,8 +3,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { QCGroup, QCGroupItem, QCGroupItemHistoryRequest, QCGroupsItemsList, QCGroupsList, QCGroupsServiceCountReq, QCGroupsServiceCreateRequest, QCGroupsServiceFilterReq, QCGroupsServiceItemCreateRequest, QCGroupsServiceItemUpdateRequest, QCGroupsServicePaginationReq, QCGroupsServicePaginationResponse, QCGroupsServiceSearchAllReq, QCGroupsServiceUpdateRequest } from "./qc_groups.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { QCGroup, QCGroupItem, QCGroupItemHistoryRequest, QCGroupItemsSearchRequest, QCGroupsItemsList, QCGroupsList, QCGroupsServiceCountReq, QCGroupsServiceCreateRequest, QCGroupsServiceFilterReq, QCGroupsServiceItemCreateRequest, QCGroupsServiceItemUpdateRequest, QCGroupsServicePaginatedItemsResponse, QCGroupsServicePaginationReq, QCGroupsServicePaginationResponse, QCGroupsServiceSearchAllReq, QCGroupsServiceUpdateRequest } from "./qc_groups.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -295,6 +295,62 @@ export const QCGroupsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View approved qc group items for given qc group ID with pagination
+     *
+     * @generated from rpc Scailo.QCGroupsService.ViewPaginatedApprovedQCGroupItems
+     */
+    viewPaginatedApprovedQCGroupItems: {
+      name: "ViewPaginatedApprovedQCGroupItems",
+      I: QCGroupItemsSearchRequest,
+      O: QCGroupsServicePaginatedItemsResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View unapproved qc group items for given qc group ID with pagination
+     *
+     * @generated from rpc Scailo.QCGroupsService.ViewPaginatedUnapprovedQCGroupItems
+     */
+    viewPaginatedUnapprovedQCGroupItems: {
+      name: "ViewPaginatedUnapprovedQCGroupItems",
+      I: QCGroupItemsSearchRequest,
+      O: QCGroupsServicePaginatedItemsResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Search through qc group items with pagination
+     *
+     * @generated from rpc Scailo.QCGroupsService.SearchItemsWithPagination
+     */
+    searchItemsWithPagination: {
+      name: "SearchItemsWithPagination",
+      I: QCGroupItemsSearchRequest,
+      O: QCGroupsServicePaginatedItemsResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     *
+     * @generated from rpc Scailo.QCGroupsService.DownloadItemsAsCSV
+     */
+    downloadItemsAsCSV: {
+      name: "DownloadItemsAsCSV",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+     *
+     * @generated from rpc Scailo.QCGroupsService.UploadQCGroupItems
+     */
+    uploadQCGroupItems: {
+      name: "UploadQCGroupItems",
+      I: IdentifierUUIDWithFile,
+      O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View by ID
      *
      * @generated from rpc Scailo.QCGroupsService.ViewByID
@@ -380,6 +436,29 @@ export const QCGroupsService = {
       name: "Count",
       I: QCGroupsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.QCGroupsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: QCGroupsServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file (duplicate codes will be skipped)
+     *
+     * @generated from rpc Scailo.QCGroupsService.Import
+     */
+    import: {
+      name: "Import",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }

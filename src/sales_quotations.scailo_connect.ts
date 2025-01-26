@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SalesQuotation, SalesQuotationContact, SalesQuotationContactsList, SalesQuotationItem, SalesQuotationItemHistoryRequest, SalesQuotationItemProspectiveInfoRequest, SalesQuotationItemsList, SalesQuotationItemsSearchRequest, SalesQuotationReference, SalesQuotationReferencesList, SalesQuotationsList, SalesQuotationsServiceAutofillRequest, SalesQuotationsServiceContactCreateRequest, SalesQuotationsServiceCountReq, SalesQuotationsServiceCreateRequest, SalesQuotationsServiceFilterReq, SalesQuotationsServiceItemCreateRequest, SalesQuotationsServiceItemUpdateRequest, SalesQuotationsServicePaginatedItemsResponse, SalesQuotationsServicePaginationReq, SalesQuotationsServicePaginationResponse, SalesQuotationsServiceReferenceCreateRequest, SalesQuotationsServiceSearchAllReq, SalesQuotationsServiceUpdateRequest } from "./sales_quotations.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -377,7 +377,7 @@ export const SalesQuotationsService = {
      */
     uploadSalesQuotationItems: {
       name: "UploadSalesQuotationItems",
-      I: IdentifierWithFile,
+      I: IdentifierUUIDWithFile,
       O: IdentifiersList,
       kind: MethodKind.Unary,
     },

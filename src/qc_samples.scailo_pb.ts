@@ -1762,7 +1762,7 @@ export class QCSampleParameter extends Message<QCSampleParameter> {
    *
    * @generated from field: Scailo.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE acceptable_value_type = 20;
    */
-  acceptableValueType = QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED;
+  acceptableValueType = QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The acceptable value (in cents) in case the acceptable value type is number-absolute or number-percentage

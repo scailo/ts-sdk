@@ -5,7 +5,7 @@
 
 import { FormSection, FormSectionPaginationResp, FormsSectionsList, FormsSectionsServiceCountReq, FormsSectionsServiceCreateRequest, FormsSectionsServiceFilterReq, FormsSectionsServicePaginationReq, FormsSectionsServiceSearchAllReq, FormsSectionsServiceUpdateRequest } from "./forms_sections.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 
 /**
  *
@@ -135,6 +135,29 @@ export const FormsSectionsService = {
       name: "Count",
       I: FormsSectionsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.FormsSectionsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: FormsSectionsServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file (duplicate codes will be skipped)
+     *
+     * @generated from rpc Scailo.FormsSectionsService.Import
+     */
+    import: {
+      name: "Import",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }

@@ -41,6 +41,20 @@ export enum FORM_FIELD_SORT_KEY {
    * @generated from enum value: FORM_FIELD_SORT_KEY_NAME = 10;
    */
   FORM_FIELD_SORT_KEY_NAME = 10,
+
+  /**
+   * Fetch ordered results by code
+   *
+   * @generated from enum value: FORM_FIELD_SORT_KEY_CODE = 11;
+   */
+  FORM_FIELD_SORT_KEY_CODE = 11,
+
+  /**
+   * Fetch ordered results by the section ID, and the record ID (this is a composite sort key)
+   *
+   * @generated from enum value: FORM_FIELD_SORT_KEY_SECTION_ID_AND_RECORD_ID = 20;
+   */
+  FORM_FIELD_SORT_KEY_SECTION_ID_AND_RECORD_ID = 20,
 }
 // Retrieve enum metadata with: proto3.getEnumType(FORM_FIELD_SORT_KEY)
 proto3.util.setEnumType(FORM_FIELD_SORT_KEY, "Scailo.FORM_FIELD_SORT_KEY", [
@@ -48,6 +62,8 @@ proto3.util.setEnumType(FORM_FIELD_SORT_KEY, "Scailo.FORM_FIELD_SORT_KEY", [
   { no: 1, name: "FORM_FIELD_SORT_KEY_CREATED_AT" },
   { no: 2, name: "FORM_FIELD_SORT_KEY_MODIFIED_AT" },
   { no: 10, name: "FORM_FIELD_SORT_KEY_NAME" },
+  { no: 11, name: "FORM_FIELD_SORT_KEY_CODE" },
+  { no: 20, name: "FORM_FIELD_SORT_KEY_SECTION_ID_AND_RECORD_ID" },
 ]);
 
 /**
@@ -77,6 +93,13 @@ export class FormField extends Message<FormField> {
    * @generated from field: string name = 10;
    */
   name = "";
+
+  /**
+   * The unique code by which the form field is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
 
   /**
    * The type of the form field
@@ -152,6 +175,7 @@ export class FormField extends Message<FormField> {
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
     { no: 12, name: "section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "width", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -317,6 +341,13 @@ export class FormsFieldsServiceCreateRequest extends Message<FormsFieldsServiceC
   name = "";
 
   /**
+   * The unique code by which the form field is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The type of the form field
    *
    * @generated from field: Scailo.FORM_TYPE type = 11;
@@ -390,6 +421,7 @@ export class FormsFieldsServiceCreateRequest extends Message<FormsFieldsServiceC
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
     { no: 12, name: "section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "width", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -445,6 +477,13 @@ export class FormsFieldsServiceUpdateRequest extends Message<FormsFieldsServiceU
    * @generated from field: string name = 10;
    */
   name = "";
+
+  /**
+   * The unique code by which the form field is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
 
   /**
    * The ID of the corresponding form section that the form field belongs to
@@ -506,6 +545,7 @@ export class FormsFieldsServiceUpdateRequest extends Message<FormsFieldsServiceU
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "width", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "placeholder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -704,6 +744,13 @@ export class FormsFieldsServiceFilterReq extends Message<FormsFieldsServiceFilte
    */
   sectionId = protoInt64.zero;
 
+  /**
+   * The unique code by which the form field is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
   constructor(data?: PartialMessage<FormsFieldsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -725,6 +772,7 @@ export class FormsFieldsServiceFilterReq extends Message<FormsFieldsServiceFilte
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
     { no: 12, name: "section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsFieldsServiceFilterReq {
@@ -814,6 +862,13 @@ export class FormsFieldsServiceCountReq extends Message<FormsFieldsServiceCountR
    */
   sectionId = protoInt64.zero;
 
+  /**
+   * The unique code by which the form field is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
   constructor(data?: PartialMessage<FormsFieldsServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -831,6 +886,7 @@ export class FormsFieldsServiceCountReq extends Message<FormsFieldsServiceCountR
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
     { no: 12, name: "section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsFieldsServiceCountReq {

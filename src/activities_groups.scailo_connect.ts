@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ActivitiesGroupsList, ActivitiesGroupsServiceCountReq, ActivitiesGroupsServiceCreateRequest, ActivitiesGroupsServiceFilterReq, ActivitiesGroupsServicePaginationReq, ActivitiesGroupsServicePaginationResponse, ActivitiesGroupsServiceSearchAllReq, ActivitiesGroupsServiceUpdateRequest, ActivityGroup, ActivityGroupStatistics } from "./activities_groups.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -248,6 +248,29 @@ export const ActivitiesGroupsService = {
       name: "Count",
       I: ActivitiesGroupsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.ActivitiesGroupsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: ActivitiesGroupsServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file (duplicate codes will be skipped)
+     *
+     * @generated from rpc Scailo.ActivitiesGroupsService.Import
+     */
+    import: {
+      name: "Import",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }

@@ -139,6 +139,13 @@ export enum TAX_PARAM_SORT_KEY {
    * @generated from enum value: TAX_PARAM_SORT_KEY_TAX_RATE_PERCENTAGE = 11;
    */
   TAX_PARAM_SORT_KEY_TAX_RATE_PERCENTAGE = 11,
+
+  /**
+   * Fetch ordered results by the code
+   *
+   * @generated from enum value: TAX_PARAM_SORT_KEY_CODE = 21;
+   */
+  TAX_PARAM_SORT_KEY_CODE = 21,
 }
 // Retrieve enum metadata with: proto3.getEnumType(TAX_PARAM_SORT_KEY)
 proto3.util.setEnumType(TAX_PARAM_SORT_KEY, "Scailo.TAX_PARAM_SORT_KEY", [
@@ -150,6 +157,7 @@ proto3.util.setEnumType(TAX_PARAM_SORT_KEY, "Scailo.TAX_PARAM_SORT_KEY", [
   { no: 5, name: "TAX_PARAM_SORT_KEY_APPROVER_ROLE_ID" },
   { no: 10, name: "TAX_PARAM_SORT_KEY_NAME" },
   { no: 11, name: "TAX_PARAM_SORT_KEY_TAX_RATE_PERCENTAGE" },
+  { no: 21, name: "TAX_PARAM_SORT_KEY_CODE" },
 ]);
 
 /**
@@ -179,6 +187,13 @@ export class TaxParamsServiceCreateRequest extends Message<TaxParamsServiceCreat
    * @generated from field: string name = 10;
    */
   name = "";
+
+  /**
+   * The unique code by which the tax param is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
 
   /**
    * The type of the tax param
@@ -254,6 +269,7 @@ export class TaxParamsServiceCreateRequest extends Message<TaxParamsServiceCreat
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "value_type", kind: "enum", T: proto3.getEnumType(TAX_PARAM_VALUE_TYPE) },
     { no: 12, name: "tax_fixed_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "tax_rate_percentage", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -318,6 +334,13 @@ export class TaxParamsServiceUpdateRequest extends Message<TaxParamsServiceUpdat
   name = "";
 
   /**
+   * The unique code by which the tax param is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The description of the tax param
    *
    * @generated from field: string description = 20;
@@ -336,6 +359,7 @@ export class TaxParamsServiceUpdateRequest extends Message<TaxParamsServiceUpdat
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -404,6 +428,13 @@ export class TaxParam extends Message<TaxParam> {
    * @generated from field: string name = 10;
    */
   name = "";
+
+  /**
+   * The unique code by which the tax param is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
 
   /**
    * The type of the tax param
@@ -482,6 +513,7 @@ export class TaxParam extends Message<TaxParam> {
     { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "value_type", kind: "enum", T: proto3.getEnumType(TAX_PARAM_VALUE_TYPE) },
     { no: 12, name: "tax_fixed_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "tax_rate_percentage", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -820,6 +852,13 @@ export class TaxParamsServiceFilterReq extends Message<TaxParamsServiceFilterReq
   name = "";
 
   /**
+   * The unique code by which the tax param is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The type of the tax param
    *
    * @generated from field: Scailo.TAX_PARAM_VALUE_TYPE value_type = 31;
@@ -857,6 +896,7 @@ export class TaxParamsServiceFilterReq extends Message<TaxParamsServiceFilterReq
     { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 31, name: "value_type", kind: "enum", T: proto3.getEnumType(TAX_PARAM_VALUE_TYPE) },
     { no: 32, name: "category", kind: "enum", T: proto3.getEnumType(TAX_PARAM_CATEGORY) },
   ]);
@@ -970,6 +1010,13 @@ export class TaxParamsServiceCountReq extends Message<TaxParamsServiceCountReq> 
   name = "";
 
   /**
+   * The unique code by which the tax param is classified
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The type of the tax param
    *
    * @generated from field: Scailo.TAX_PARAM_VALUE_TYPE value_type = 31;
@@ -1003,6 +1050,7 @@ export class TaxParamsServiceCountReq extends Message<TaxParamsServiceCountReq> 
     { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 31, name: "value_type", kind: "enum", T: proto3.getEnumType(TAX_PARAM_VALUE_TYPE) },
     { no: 32, name: "category", kind: "enum", T: proto3.getEnumType(TAX_PARAM_CATEGORY) },
   ]);

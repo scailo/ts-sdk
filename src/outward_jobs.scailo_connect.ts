@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { OutwardJob, OutwardJobAncillaryParameters, OutwardJobContact, OutwardJobContactsList, OutwardJobInwardItem, OutwardJobInwardItemHistoryRequest, OutwardJobInwardItemProspectiveInfoRequest, OutwardJobInwardItemsSearchRequest, OutwardJobOutwardItem, OutwardJobOutwardItemHistoryRequest, OutwardJobOutwardItemProspectiveInfoRequest, OutwardJobOutwardItemsSearchRequest, OutwardJobsInwardItemsList, OutwardJobsList, OutwardJobsOutwardItemsList, OutwardJobsServiceAutofillRequest, OutwardJobsServiceContactCreateRequest, OutwardJobsServiceCountReq, OutwardJobsServiceCreateRequest, OutwardJobsServiceFilterReq, OutwardJobsServiceInwardItemCreateRequest, OutwardJobsServiceInwardItemUpdateRequest, OutwardJobsServiceMultipleInwardItemsCreateRequest, OutwardJobsServiceMultipleOutwardItemsCreateRequest, OutwardJobsServiceOutwardItemCreateRequest, OutwardJobsServiceOutwardItemUpdateRequest, OutwardJobsServicePaginatedInwardItemsResponse, OutwardJobsServicePaginatedOutwardItemsResponse, OutwardJobsServicePaginationReq, OutwardJobsServicePaginationResponse, OutwardJobsServiceSearchAllReq, OutwardJobsServiceUpdateRequest } from "./outward_jobs.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithFile, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList } from "./families.scailo_pb.js";
 
@@ -398,7 +398,7 @@ export const OutwardJobsService = {
      */
     uploadOutwardJobInwardItems: {
       name: "UploadOutwardJobInwardItems",
-      I: IdentifierWithFile,
+      I: IdentifierUUIDWithFile,
       O: IdentifiersList,
       kind: MethodKind.Unary,
     },
@@ -563,7 +563,7 @@ export const OutwardJobsService = {
      */
     uploadOutwardJobOutwardItems: {
       name: "UploadOutwardJobOutwardItems",
-      I: IdentifierWithFile,
+      I: IdentifierUUIDWithFile,
       O: IdentifiersList,
       kind: MethodKind.Unary,
     },

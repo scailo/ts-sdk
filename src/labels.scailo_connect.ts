@@ -5,7 +5,7 @@
 
 import { Label, LabelPaginationResp, LabelsList, LabelsServiceCountReq, LabelsServiceCreateRequest, LabelsServiceFilterReq, LabelsServicePaginationReq, LabelsServiceSearchAllReq, LabelsServiceUpdateRequest } from "./labels.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { ActiveStatus, BooleanResponse, CountResponse, Empty, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountResponse, Empty, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 
 /**
  *
@@ -157,6 +157,29 @@ export const LabelsService = {
       name: "Count",
       I: LabelsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.LabelsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: LabelsServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file (duplicate codes will be skipped)
+     *
+     * @generated from rpc Scailo.LabelsService.Import
+     */
+    import: {
+      name: "Import",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }
