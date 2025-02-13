@@ -163,6 +163,17 @@ export const CurrenciesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.CurrenciesService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: Currency,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.CurrenciesService.ViewAll

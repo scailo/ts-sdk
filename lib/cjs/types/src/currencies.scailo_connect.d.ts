@@ -157,6 +157,17 @@ export declare const CurrenciesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by UUID
+         *
+         * @generated from rpc Scailo.CurrenciesService.ViewByUUID
+         */
+        readonly viewByUUID: {
+            readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof Currency;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.CurrenciesService.ViewAll
