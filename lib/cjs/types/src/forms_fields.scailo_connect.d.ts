@@ -66,6 +66,17 @@ export declare const FormsFieldsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by UUID
+         *
+         * @generated from rpc Scailo.FormsFieldsService.ViewByUUID
+         */
+        readonly viewByUUID: {
+            readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof FormField;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all forms fields
          *
          * @generated from rpc Scailo.FormsFieldsService.ViewAll

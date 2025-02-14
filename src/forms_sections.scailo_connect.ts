@@ -72,6 +72,17 @@ export const FormsSectionsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.FormsSectionsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: FormSection,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all forms sections
      *
      * @generated from rpc Scailo.FormsSectionsService.ViewAll

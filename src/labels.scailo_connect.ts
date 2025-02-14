@@ -72,6 +72,17 @@ export const LabelsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.LabelsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: Label,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all labels
      *
      * @generated from rpc Scailo.LabelsService.ViewAll

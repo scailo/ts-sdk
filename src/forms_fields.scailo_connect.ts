@@ -72,6 +72,17 @@ export const FormsFieldsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by UUID
+     *
+     * @generated from rpc Scailo.FormsFieldsService.ViewByUUID
+     */
+    viewByUUID: {
+      name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: FormField,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all forms fields
      *
      * @generated from rpc Scailo.FormsFieldsService.ViewAll

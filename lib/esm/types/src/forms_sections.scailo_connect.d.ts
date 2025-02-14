@@ -66,6 +66,17 @@ export declare const FormsSectionsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by UUID
+         *
+         * @generated from rpc Scailo.FormsSectionsService.ViewByUUID
+         */
+        readonly viewByUUID: {
+            readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof FormSection;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all forms sections
          *
          * @generated from rpc Scailo.FormsSectionsService.ViewAll
