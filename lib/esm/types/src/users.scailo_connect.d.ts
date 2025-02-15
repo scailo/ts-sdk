@@ -1,5 +1,5 @@
 import { User, UsersList, UsersServiceCountReq, UsersServiceCreateRequest, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users.scailo_pb.js";
-import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
+import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -207,7 +207,7 @@ export declare const UsersService: {
          */
         readonly mFAEnable: {
             readonly name: "MFAEnable";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -218,7 +218,7 @@ export declare const UsersService: {
          */
         readonly mFAReset: {
             readonly name: "MFAReset";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -361,7 +361,7 @@ export declare const UsersService: {
          */
         readonly viewSignature: {
             readonly name: "ViewSignature";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof Base64String;
             readonly kind: MethodKind.Unary;
         };
@@ -372,7 +372,7 @@ export declare const UsersService: {
          */
         readonly viewProfilePicture: {
             readonly name: "ViewProfilePicture";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -394,7 +394,7 @@ export declare const UsersService: {
          */
         readonly viewVCard: {
             readonly name: "ViewVCard";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -405,7 +405,7 @@ export declare const UsersService: {
          */
         readonly viewQRImage: {
             readonly name: "ViewQRImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -416,7 +416,7 @@ export declare const UsersService: {
          */
         readonly viewQRString: {
             readonly name: "ViewQRString";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof StringResponse;
             readonly kind: MethodKind.Unary;
         };

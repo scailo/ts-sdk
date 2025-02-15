@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { User, UsersList, UsersServiceCountReq, UsersServiceCreateRequest, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users.scailo_pb.js";
-import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
+import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -213,7 +213,7 @@ export const UsersService = {
      */
     mFAEnable: {
       name: "MFAEnable",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
@@ -224,7 +224,7 @@ export const UsersService = {
      */
     mFAReset: {
       name: "MFAReset",
-      I: Identifier,
+      I: IdentifierUUID,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -367,7 +367,7 @@ export const UsersService = {
      */
     viewSignature: {
       name: "ViewSignature",
-      I: Identifier,
+      I: IdentifierUUID,
       O: Base64String,
       kind: MethodKind.Unary,
     },
@@ -378,7 +378,7 @@ export const UsersService = {
      */
     viewProfilePicture: {
       name: "ViewProfilePicture",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
@@ -400,7 +400,7 @@ export const UsersService = {
      */
     viewVCard: {
       name: "ViewVCard",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
@@ -411,7 +411,7 @@ export const UsersService = {
      */
     viewQRImage: {
       name: "ViewQRImage",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
@@ -422,7 +422,7 @@ export const UsersService = {
      */
     viewQRString: {
       name: "ViewQRString",
-      I: Identifier,
+      I: IdentifierUUID,
       O: StringResponse,
       kind: MethodKind.Unary,
     },
