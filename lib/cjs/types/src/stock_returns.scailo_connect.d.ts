@@ -353,6 +353,17 @@ export declare const StockReturnsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by UUID
+         *
+         * @generated from rpc Scailo.StockReturnsService.ViewByUUID
+         */
+        readonly viewByUUID: {
+            readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StockReturn;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.StockReturnsService.ViewAll

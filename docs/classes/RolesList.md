@@ -66,7 +66,7 @@ Message\&lt;RolesList\&gt;.constructor
 
 #### Defined in
 
-src/roles.scailo_pb.ts:629
+src/roles.scailo_pb.ts:687
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Role list = 1;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:627
+src/roles.scailo_pb.ts:685
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:636
+src/roles.scailo_pb.ts:694
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:634
+src/roles.scailo_pb.ts:692
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:635
+src/roles.scailo_pb.ts:693
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:652
+src/roles.scailo_pb.ts:710
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:640
+src/roles.scailo_pb.ts:698
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:644
+src/roles.scailo_pb.ts:702
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:648
+src/roles.scailo_pb.ts:706

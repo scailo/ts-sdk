@@ -73,7 +73,7 @@ Message\&lt;RolesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1208
+src/roles.scailo_pb.ts:1266
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1164
+src/roles.scailo_pb.ts:1222
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1192
+src/roles.scailo_pb.ts:1250
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1157
+src/roles.scailo_pb.ts:1215
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1171
+src/roles.scailo_pb.ts:1229
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1206
+src/roles.scailo_pb.ts:1264
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.ROLE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1185
+src/roles.scailo_pb.ts:1243
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1178
+src/roles.scailo_pb.ts:1236
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1199
+src/roles.scailo_pb.ts:1257
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1215
+src/roles.scailo_pb.ts:1273
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1213
+src/roles.scailo_pb.ts:1271
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1214
+src/roles.scailo_pb.ts:1272
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1238
+src/roles.scailo_pb.ts:1296
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1226
+src/roles.scailo_pb.ts:1284
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1230
+src/roles.scailo_pb.ts:1288
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1234
+src/roles.scailo_pb.ts:1292

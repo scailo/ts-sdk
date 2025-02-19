@@ -524,6 +524,64 @@ export class RolesServiceAccessCreateAndUpdateRequest extends Message<RolesServi
 
 /**
  *
+ * Describes the parameters for a role definition
+ *
+ * @generated from message Scailo.RolesServiceAccessDefinition
+ */
+export class RolesServiceAccessDefinition extends Message<RolesServiceAccessDefinition> {
+  /**
+   * The menu UID (or internal code)
+   *
+   * @generated from field: string menu_uid = 11;
+   */
+  menuUid = "";
+
+  /**
+   * The name of the menu
+   *
+   * @generated from field: string menu_name = 12;
+   */
+  menuName = "";
+
+  /**
+   * The description of the menu
+   *
+   * @generated from field: string menu_description = 13;
+   */
+  menuDescription = "";
+
+  constructor(data?: PartialMessage<RolesServiceAccessDefinition>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.RolesServiceAccessDefinition";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 11, name: "menu_uid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "menu_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "menu_description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RolesServiceAccessDefinition {
+    return new RolesServiceAccessDefinition().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServiceAccessDefinition {
+    return new RolesServiceAccessDefinition().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServiceAccessDefinition {
+    return new RolesServiceAccessDefinition().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: RolesServiceAccessDefinition | PlainMessage<RolesServiceAccessDefinition> | undefined, b: RolesServiceAccessDefinition | PlainMessage<RolesServiceAccessDefinition> | undefined): boolean {
+    return proto3.util.equals(RolesServiceAccessDefinition, a, b);
+  }
+}
+
+/**
+ *
  * Describes the data structure of each role access on the platform
  *
  * @generated from message Scailo.RoleAccess

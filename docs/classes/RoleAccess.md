@@ -72,7 +72,7 @@ Message\&lt;RoleAccess\&gt;.constructor
 
 #### Defined in
 
-src/roles.scailo_pb.ts:581
+src/roles.scailo_pb.ts:639
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:551
+src/roles.scailo_pb.ts:609
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:537
+src/roles.scailo_pb.ts:595
 
 ___
 
@@ -120,7 +120,7 @@ from field: bool is_accessible = 12;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:579
+src/roles.scailo_pb.ts:637
 
 ___
 
@@ -136,7 +136,7 @@ from field: string menu_uid = 11;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:572
+src/roles.scailo_pb.ts:630
 
 ___
 
@@ -152,7 +152,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:544
+src/roles.scailo_pb.ts:602
 
 ___
 
@@ -168,7 +168,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:558
+src/roles.scailo_pb.ts:616
 
 ___
 
@@ -184,7 +184,7 @@ from field: uint64 role_id = 10;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:565
+src/roles.scailo_pb.ts:623
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:588
+src/roles.scailo_pb.ts:646
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:586
+src/roles.scailo_pb.ts:644
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:587
+src/roles.scailo_pb.ts:645
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:610
+src/roles.scailo_pb.ts:668
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:598
+src/roles.scailo_pb.ts:656
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:602
+src/roles.scailo_pb.ts:660
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:606
+src/roles.scailo_pb.ts:664

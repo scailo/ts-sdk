@@ -351,6 +351,40 @@ export declare class RolesServiceAccessCreateAndUpdateRequest extends Message<Ro
 }
 /**
  *
+ * Describes the parameters for a role definition
+ *
+ * @generated from message Scailo.RolesServiceAccessDefinition
+ */
+export declare class RolesServiceAccessDefinition extends Message<RolesServiceAccessDefinition> {
+    /**
+     * The menu UID (or internal code)
+     *
+     * @generated from field: string menu_uid = 11;
+     */
+    menuUid: string;
+    /**
+     * The name of the menu
+     *
+     * @generated from field: string menu_name = 12;
+     */
+    menuName: string;
+    /**
+     * The description of the menu
+     *
+     * @generated from field: string menu_description = 13;
+     */
+    menuDescription: string;
+    constructor(data?: PartialMessage<RolesServiceAccessDefinition>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.RolesServiceAccessDefinition";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RolesServiceAccessDefinition;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServiceAccessDefinition;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServiceAccessDefinition;
+    static equals(a: RolesServiceAccessDefinition | PlainMessage<RolesServiceAccessDefinition> | undefined, b: RolesServiceAccessDefinition | PlainMessage<RolesServiceAccessDefinition> | undefined): boolean;
+}
+/**
+ *
  * Describes the data structure of each role access on the platform
  *
  * @generated from message Scailo.RoleAccess

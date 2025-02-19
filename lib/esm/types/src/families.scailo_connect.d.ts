@@ -466,6 +466,17 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by UUID
+         *
+         * @generated from rpc Scailo.FamiliesService.ViewByUUID
+         */
+        readonly viewByUUID: {
+            readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof Family;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View only essential components of the family (without logs)
          *
          * @generated from rpc Scailo.FamiliesService.ViewEssentialByID

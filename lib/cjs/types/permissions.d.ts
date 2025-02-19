@@ -1,1407 +1,6906 @@
-export declare const PermissionRoleNew = "roles-new";
-export declare const PermissionRoleDrafts = "roles-drafts";
-export declare const PermissionRoleVerify = "roles-verify";
-export declare const PermissionRoleRevise = "roles-revise";
-export declare const PermissionRoleHalted = "roles-halted";
-export declare const PermissionRoleDiscarded = "roles-discarded";
-export declare const PermissionRestoreRole = "roles-restore";
-export declare const PermissionRoleApprove = "roles-approve";
-export declare const PermissionRoleStanding = "roles-standing";
-export declare const PermissionRoleCompleted = "roles-completed";
-export declare const PermissionRoleHalt = "roles-extra-halt";
-export declare const PermissionRoleComplete = "roles-mark-complete";
-export declare const PermissionRoleDiscard = "roles-extra-discard";
-export declare const PermissionReopenRole = "roles-extra-reopen";
-export declare const PermissionsRoles: string[];
-export declare const PermissionUserNew = "users-new";
-export declare const PermissionUserDrafts = "users-drafts";
-export declare const PermissionUserVerify = "users-verify";
-export declare const PermissionUserRevise = "users-revise";
-export declare const PermissionUserHalted = "users-halted";
-export declare const PermissionUserDiscarded = "users-discarded";
-export declare const PermissionRestoreUser = "users-restore";
-export declare const PermissionUserApprove = "users-approve";
-export declare const PermissionUserStanding = "users-standing";
-export declare const PermissionUserHalt = "users-extra-halt";
-export declare const PermissionUserDiscard = "users-extra-discard";
-export declare const PermissionsUsers: string[];
-export declare const PermissionNewFormSection = "forms-sections-new";
-export declare const PermissionViewFormSections = "forms-sections-view";
-export declare const PermissionModifyFormSections = "forms-sections-modify";
-export declare const PermissionDiscardFormSections = "forms-sections-discard";
-export declare const PermissionRestoreFormSections = "forms-sections-restore";
-export declare const PermissionNewFormField = "forms-fields-new";
-export declare const PermissionViewFormFields = "forms-fields-view";
-export declare const PermissionModifyFormFields = "forms-fields-modify";
-export declare const PermissionDiscardFormFields = "forms-fields-discard";
-export declare const PermissionRestoreFormFields = "forms-fields-restore";
-export declare const PermissionsFormsSections: string[];
-export declare const PermissionNewClient = "clients-new";
-export declare const PermissionDraftClients = "clients-drafts";
-export declare const PermissionVerifyClients = "clients-verify";
-export declare const PermissionApproveClients = "clients-approve";
-export declare const PermissionReviseClients = "clients-revise";
-export declare const PermissionStandingClients = "clients-standing";
-export declare const PermissionHaltedClients = "clients-halted";
-export declare const PermissionDiscardClients = "clients-discarded";
-export declare const PermissionRestoreClients = "clients-restore";
-export declare const PermissionHaltClient = "clients-halt";
-export declare const PermissionDiscardClient = "clients-extra-discard";
-export declare const PermissionsClients: string[];
-export declare const PermissionNewAssociate = "associates-new";
-export declare const PermissionViewAssociate = "associates-view";
-export declare const PermissionModifyAssociate = "associates-modify";
-export declare const PermissionDiscardAssociate = "associates-discard";
-export declare const PermissionRestoreAssociate = "associates-restore";
-export declare const PermissionsAssociates: string[];
-export declare const PermissionNewContractor = "contractors-new";
-export declare const PermissionViewContractor = "contractors-view";
-export declare const PermissionModifyContractor = "contractors-modify";
-export declare const PermissionDiscardContractor = "contractors-discard";
-export declare const PermissionRestoreContractor = "contractors-restore";
-export declare const PermissionsContractors: string[];
-export declare const PermissionNewVendor = "vendors-new";
-export declare const PermissionDraftVendors = "vendors-drafts";
-export declare const PermissionVerifyVendors = "vendors-verify";
-export declare const PermissionApproveVendors = "vendors-approve";
-export declare const PermissionReviseVendors = "vendors-revise";
-export declare const PermissionStandingVendors = "vendors-standing";
-export declare const PermissionHaltedVendors = "vendors-halted";
-export declare const PermissionDiscardVendors = "vendors-discarded";
-export declare const PermissionRestoreVendors = "vendors-restore";
-export declare const PermissionHaltVendor = "vendors-halt";
-export declare const PermissionDiscardVendor = "vendors-extra-discard";
-export declare const PermissionsVendors: string[];
-export declare const PermissionViewVendorAccount = "vendor-accounts-view";
-export declare const PermissionsVendorAccounts: string[];
-export declare const PermissionViewClientAccount = "client-accounts-view";
-export declare const PermissionsClientAccounts: string[];
-export declare const PermissionProductionPlanNew = "productionplans-new";
-export declare const PermissionProductionPlanDrafts = "productionplans-drafts";
-export declare const PermissionProductionPlanVerify = "productionplans-verify";
-export declare const PermissionProductionPlanRevise = "productionplans-revise";
-export declare const PermissionProductionPlanHalted = "productionplans-halted";
-export declare const PermissionProductionPlanDiscarded = "productionplans-discarded";
-export declare const PermissionRestoreProductionPlan = "productionplans-restore";
-export declare const PermissionProductionPlanApprove = "productionplans-approve";
-export declare const PermissionProductionPlanStanding = "productionplans-standing";
-export declare const PermissionProductionPlanCompleted = "productionplans-completed";
-export declare const PermissionProductionPlanHalt = "productionplans-extra-halt";
-export declare const PermissionProductionPlanComplete = "productionplans-mark-complete";
-export declare const PermissionProductionPlanDiscard = "productionplans-extra-discard";
-export declare const PermissionReopenProductionPlan = "productionplans-extra-reopen";
-export declare const PermissionsProductionPlans: string[];
-export declare const PermissionProductionIndentNew = "production-indents-new";
-export declare const PermissionProductionIndentDrafts = "production-indents-drafts";
-export declare const PermissionProductionIndentVerify = "production-indents-verify";
-export declare const PermissionProductionIndentRevise = "production-indents-revise";
-export declare const PermissionProductionIndentHalted = "production-indents-halted";
-export declare const PermissionProductionIndentDiscarded = "production-indents-discarded";
-export declare const PermissionRestoreProductionIndent = "production-indents-restore";
-export declare const PermissionProductionIndentApprove = "production-indents-approve";
-export declare const PermissionProductionIndentStanding = "production-indents-standing";
-export declare const PermissionProductionIndentCompleted = "production-indents-completed";
-export declare const PermissionProductionIndentHalt = "production-indents-extra-halt";
-export declare const PermissionProductionIndentComplete = "production-indents-mark-complete";
-export declare const PermissionProductionIndentDiscard = "production-indents-extra-discard";
-export declare const PermissionReopenProductionIndent = "production-indents-extra-reopen";
-export declare const PermissionsProductionIndents: string[];
-export declare const PermissionStockIssuanceNew = "stock-issuances-new";
-export declare const PermissionStockIssuanceDrafts = "stock-issuances-drafts";
-export declare const PermissionStockIssuanceVerify = "stock-issuances-verify";
-export declare const PermissionStockIssuanceRevise = "stock-issuances-revise";
-export declare const PermissionStockIssuanceHalted = "stock-issuances-halted";
-export declare const PermissionStockIssuanceDiscarded = "stock-issuances-discarded";
-export declare const PermissionRestoreStockIssuance = "stock-issuances-restore";
-export declare const PermissionStockIssuanceApprove = "stock-issuances-approve";
-export declare const PermissionStockIssuanceStanding = "stock-issuances-standing";
-export declare const PermissionStockIssuanceCompleted = "stock-issuances-completed";
-export declare const PermissionStockIssuanceHalt = "stock-issuances-extra-halt";
-export declare const PermissionStockIssuanceComplete = "stock-issuances-mark-complete";
-export declare const PermissionStockIssuanceDiscard = "stock-issuances-extra-discard";
-export declare const PermissionReopenStockIssuance = "stock-issuances-extra-reopen";
-export declare const PermissionsStockIssuances: string[];
-export declare const PermissionStockReturnNew = "stock-returns-new";
-export declare const PermissionStockReturnDrafts = "stock-returns-drafts";
-export declare const PermissionStockReturnVerify = "stock-returns-verify";
-export declare const PermissionStockReturnRevise = "stock-returns-revise";
-export declare const PermissionStockReturnHalted = "stock-returns-halted";
-export declare const PermissionStockReturnDiscarded = "stock-returns-discarded";
-export declare const PermissionRestoreStockReturn = "stock-returns-restore";
-export declare const PermissionStockReturnApprove = "stock-returns-approve";
-export declare const PermissionStockReturnStanding = "stock-returns-standing";
-export declare const PermissionStockReturnCompleted = "stock-returns-completed";
-export declare const PermissionStockReturnHalt = "stock-returns-extra-halt";
-export declare const PermissionStockReturnComplete = "stock-returns-mark-complete";
-export declare const PermissionStockReturnDiscard = "stock-returns-extra-discard";
-export declare const PermissionReopenStockReturn = "stock-returns-extra-reopen";
-export declare const PermissionsStockReturns: string[];
-export declare const PermissionStockAuditNew = "stock-audits-new";
-export declare const PermissionStockAuditDrafts = "stock-audits-drafts";
-export declare const PermissionStockAuditVerify = "stock-audits-verify";
-export declare const PermissionStockAuditRevise = "stock-audits-revise";
-export declare const PermissionStockAuditHalted = "stock-audits-halted";
-export declare const PermissionStockAuditDiscarded = "stock-audits-discarded";
-export declare const PermissionRestoreStockAudit = "stock-audits-restore";
-export declare const PermissionStockAuditApprove = "stock-audits-approve";
-export declare const PermissionStockAuditStanding = "stock-audits-standing";
-export declare const PermissionStockAuditCompleted = "stock-audits-completed";
-export declare const PermissionStockAuditHalt = "stock-audits-extra-halt";
-export declare const PermissionStockAuditComplete = "stock-audits-mark-complete";
-export declare const PermissionStockAuditDiscard = "stock-audits-extra-discard";
-export declare const PermissionReopenStockAudit = "stock-audits-extra-reopen";
-export declare const PermissionsStockAudits: string[];
-export declare const PermissionFeedstockAdd = "feedstock-add";
-export declare const PermissionFeedstockIQC = "feedstock-iqc";
-export declare const PermissionFeedstockApproveIQC = "feedstock-extra-iqc-approve";
-export declare const PermissionFeedstockStore = "feedstock-store";
-export declare const PermissionFeedstockConsumed = "feedstock-consumed";
-export declare const PermissionFeedstockRework = "feedstock-rework";
-export declare const PermissionFeedstockRejected = "feedstock-rejected";
-export declare const PermissionFeedstockReturnable = "feedstock-returnable";
-export declare const PermissionFeedstockScrap = "feedstock-scrap";
-export declare const PermissionFeedstockDiscarded = "feedstock-discarded";
-export declare const PermissionFeedstockIssued = "feedstock-issued";
-export declare const PermissionFeedstockReject = "feedstock-extra-reject";
-export declare const PermissionFeedstockConsume = "feedstock-extra-consume";
-export declare const PermissionFeedstockDiscard = "feedstock-extra-discard";
-export declare const PermissionFeedstockView = "feedstock-view";
-export declare const PermissionsFeedstock: string[];
-export declare const PermissionMerchandiseAdd = "merchandise-add";
-export declare const PermissionMerchandiseIQC = "merchandise-iqc";
-export declare const PermissionMerchandiseApproveIQC = "merchandise-extra-iqc-approve";
-export declare const PermissionMerchandiseStore = "merchandise-store";
-export declare const PermissionMerchandiseConsumed = "merchandise-consumed";
-export declare const PermissionMerchandiseRework = "merchandise-rework";
-export declare const PermissionMerchandiseRejected = "merchandise-rejected";
-export declare const PermissionMerchandiseReturnable = "merchandise-returnable";
-export declare const PermissionMerchandiseScrap = "merchandise-scrap";
-export declare const PermissionMerchandiseDiscarded = "merchandise-discarded";
-export declare const PermissionMerchandiseIssued = "merchandise-issued";
-export declare const PermissionMerchandiseReject = "merchandise-extra-reject";
-export declare const PermissionMerchandiseConsume = "merchandise-extra-consume";
-export declare const PermissionMerchandiseDiscard = "merchandise-extra-discard";
-export declare const PermissionMerchandiseView = "merchandise-view";
-export declare const PermissionsMerchandise: string[];
-export declare const PermissionEquipmentAdd = "equipment-add";
-export declare const PermissionEquipmentIQC = "equipment-iqc";
-export declare const PermissionEquipmentApproveIQC = "equipment-extra-iqc-approve";
-export declare const PermissionEquipmentStore = "equipment-store";
-export declare const PermissionEquipmentConsumed = "equipment-consumed";
-export declare const PermissionEquipmentRework = "equipment-rework";
-export declare const PermissionEquipmentRejected = "equipment-rejected";
-export declare const PermissionEquipmentReturnable = "equipment-returnable";
-export declare const PermissionEquipmentScrap = "equipment-scrap";
-export declare const PermissionEquipmentDiscarded = "equipment-discarded";
-export declare const PermissionEquipmentIssued = "equipment-issued";
-export declare const PermissionEquipmentReject = "equipment-extra-reject";
-export declare const PermissionEquipmentConsume = "equipment-extra-consume";
-export declare const PermissionEquipmentDiscard = "equipment-extra-discard";
-export declare const PermissionEquipmentView = "equipment-view";
-export declare const PermissionsEquipment: string[];
-export declare const PermissionInfrastructureAdd = "infrastructure-add";
-export declare const PermissionInfrastructureIQC = "infrastructure-iqc";
-export declare const PermissionInfrastructureApproveIQC = "infrastructure-extra-iqc-approve";
-export declare const PermissionInfrastructureStore = "infrastructure-store";
-export declare const PermissionInfrastructureConsumed = "infrastructure-consumed";
-export declare const PermissionInfrastructureRework = "infrastructure-rework";
-export declare const PermissionInfrastructureRejected = "infrastructure-rejected";
-export declare const PermissionInfrastructureReturnable = "infrastructure-returnable";
-export declare const PermissionInfrastructureScrap = "infrastructure-scrap";
-export declare const PermissionInfrastructureDiscarded = "infrastructure-discarded";
-export declare const PermissionInfrastructureIssued = "infrastructure-issued";
-export declare const PermissionInfrastructureReject = "infrastructure-extra-reject";
-export declare const PermissionInfrastructureConsume = "infrastructure-extra-consume";
-export declare const PermissionInfrastructureDiscard = "infrastructure-extra-discard";
-export declare const PermissionInfrastructureView = "infrastructure-view";
-export declare const PermissionsInfrastructure: string[];
-export declare const PermissionComponentsAdd = "components-add";
-export declare const PermissionComponentsIQC = "components-iqc";
-export declare const PermissionComponentsApproveIQC = "components-extra-iqc-approve";
-export declare const PermissionComponentsStore = "components-store";
-export declare const PermissionComponentsConsumed = "components-consumed";
-export declare const PermissionComponentsRework = "components-rework";
-export declare const PermissionComponentsRejected = "components-rejected";
-export declare const PermissionComponentsReturnable = "components-returnable";
-export declare const PermissionComponentsScrap = "components-scrap";
-export declare const PermissionComponentsDiscarded = "components-discarded";
-export declare const PermissionComponentsIssued = "components-issued";
-export declare const PermissionComponentsReject = "components-extra-reject";
-export declare const PermissionComponentsConsume = "components-extra-consume";
-export declare const PermissionComponentsDiscard = "components-extra-discard";
-export declare const PermissionComponentsView = "components-view";
-export declare const PermissionsComponents: string[];
-export declare const PermissionProductsAdd = "products-add";
-export declare const PermissionProductsIQC = "products-iqc";
-export declare const PermissionProductsApproveIQC = "products-extra-iqc-approve";
-export declare const PermissionProductsStore = "products-store";
-export declare const PermissionProductsConsumed = "products-consumed";
-export declare const PermissionProductsRework = "products-rework";
-export declare const PermissionProductsRejected = "products-rejected";
-export declare const PermissionProductsScrap = "products-scrap";
-export declare const PermissionProductsDiscarded = "products-discarded";
-export declare const PermissionProductsIssued = "products-issued";
-export declare const PermissionProductsReject = "products-extra-reject";
-export declare const PermissionProductsConsume = "products-extra-consume";
-export declare const PermissionProductsDiscard = "products-extra-discard";
-export declare const PermissionProductsView = "products-view";
-export declare const PermissionsProducts: string[];
-export declare const PermissionReplaceableIndentNew = "replaceable-indents-new";
-export declare const PermissionReplaceableIndentDrafts = "replaceable-indents-drafts";
-export declare const PermissionReplaceableIndentVerify = "replaceable-indents-verify";
-export declare const PermissionReplaceableIndentRevise = "replaceable-indents-revise";
-export declare const PermissionReplaceableIndentHalted = "replaceable-indents-halted";
-export declare const PermissionReplaceableIndentDiscarded = "replaceable-indents-discarded";
-export declare const PermissionRestoreReplaceableIndent = "replaceable-indents-restore";
-export declare const PermissionReplaceableIndentApprove = "replaceable-indents-approve";
-export declare const PermissionReplaceableIndentStanding = "replaceable-indents-standing";
-export declare const PermissionReplaceableIndentCompleted = "replaceable-indents-completed";
-export declare const PermissionReplaceableIndentHalt = "replaceable-indents-extra-halt";
-export declare const PermissionReplaceableIndentComplete = "replaceable-indents-mark-complete";
-export declare const PermissionReplaceableIndentDiscard = "replaceable-indents-extra-discard";
-export declare const PermissionReopenReplaceableIndent = "replaceable-indents-extra-reopen";
-export declare const PermissionsReplaceableIndents: string[];
-export declare const PermissionAssetIndentNew = "asset-indents-new";
-export declare const PermissionAssetIndentDrafts = "asset-indents-drafts";
-export declare const PermissionAssetIndentVerify = "asset-indents-verify";
-export declare const PermissionAssetIndentRevise = "asset-indents-revise";
-export declare const PermissionAssetIndentHalted = "asset-indents-halted";
-export declare const PermissionAssetIndentDiscarded = "asset-indents-discarded";
-export declare const PermissionRestoreAssetIndent = "asset-indents-restore";
-export declare const PermissionAssetIndentApprove = "asset-indents-approve";
-export declare const PermissionAssetIndentStanding = "asset-indents-standing";
-export declare const PermissionAssetIndentCompleted = "asset-indents-completed";
-export declare const PermissionAssetIndentHalt = "asset-indents-extra-halt";
-export declare const PermissionAssetIndentComplete = "asset-indents-mark-complete";
-export declare const PermissionAssetIndentDiscard = "asset-indents-extra-discard";
-export declare const PermissionReopenAssetIndent = "asset-indents-extra-reopen";
-export declare const PermissionsAssetIndents: string[];
-export declare const PermissionPurchaseIndentNew = "purchases-indents-new";
-export declare const PermissionPurchaseIndentDrafts = "purchases-indents-drafts";
-export declare const PermissionPurchaseIndentVerify = "purchases-indents-verify";
-export declare const PermissionPurchaseIndentRevise = "purchases-indents-revise";
-export declare const PermissionPurchaseIndentHalted = "purchases-indents-halted";
-export declare const PermissionPurchaseIndentDiscarded = "purchases-indents-discarded";
-export declare const PermissionRestorePurchaseIndent = "purchases-indents-restore";
-export declare const PermissionPurchaseIndentApprove = "purchases-indents-approve";
-export declare const PermissionPurchaseIndentStanding = "purchases-indents-standing";
-export declare const PermissionPurchaseIndentCompleted = "purchases-indents-completed";
-export declare const PermissionPurchaseIndentHalt = "purchases-indents-extra-halt";
-export declare const PermissionPurchaseIndentComplete = "purchases-indents-mark-complete";
-export declare const PermissionPurchaseIndentDiscard = "purchases-indents-extra-discard";
-export declare const PermissionReopenPurchaseIndent = "purchases-indents-extra-reopen";
-export declare const PermissionsPurchasesIndents: string[];
-export declare const PermissionOutwardJobNew = "outward-jobs-new";
-export declare const PermissionOutwardJobDrafts = "outward-jobs-drafts";
-export declare const PermissionOutwardJobVerify = "outward-jobs-verify";
-export declare const PermissionOutwardJobRevise = "outward-jobs-revise";
-export declare const PermissionOutwardJobHalted = "outward-jobs-halted";
-export declare const PermissionOutwardJobDiscarded = "outward-jobs-discarded";
-export declare const PermissionRestoreOutwardJob = "outward-jobs-restore";
-export declare const PermissionOutwardJobApprove = "outward-jobs-approve";
-export declare const PermissionOutwardJobStanding = "outward-jobs-standing";
-export declare const PermissionOutwardJobCompleted = "outward-jobs-completed";
-export declare const PermissionOutwardJobHalt = "outward-jobs-extra-halt";
-export declare const PermissionOutwardJobComplete = "outward-jobs-mark-complete";
-export declare const PermissionOutwardJobDiscard = "outward-jobs-extra-discard";
-export declare const PermissionReopenOutwardJob = "outward-jobs-extra-reopen";
-export declare const PermissionsOutwardJobs: string[];
-export declare const PermissionOutwardJobFreeIssueMaterialNew = "outward-jobs-free-issue-materials-new";
-export declare const PermissionOutwardJobFreeIssueMaterialDrafts = "outward-jobs-free-issue-materials-drafts";
-export declare const PermissionOutwardJobFreeIssueMaterialVerify = "outward-jobs-free-issue-materials-verify";
-export declare const PermissionOutwardJobFreeIssueMaterialRevise = "outward-jobs-free-issue-materials-revise";
-export declare const PermissionOutwardJobFreeIssueMaterialHalted = "outward-jobs-free-issue-materials-halted";
-export declare const PermissionOutwardJobFreeIssueMaterialDiscarded = "outward-jobs-free-issue-materials-discarded";
-export declare const PermissionRestoreOutwardJobFreeIssueMaterial = "outward-jobs-free-issue-materials-restore";
-export declare const PermissionOutwardJobFreeIssueMaterialApprove = "outward-jobs-free-issue-materials-approve";
-export declare const PermissionOutwardJobFreeIssueMaterialStanding = "outward-jobs-free-issue-materials-standing";
-export declare const PermissionOutwardJobFreeIssueMaterialCompleted = "outward-jobs-free-issue-materials-completed";
-export declare const PermissionOutwardJobFreeIssueMaterialHalt = "outward-jobs-free-issue-materials-extra-halt";
-export declare const PermissionOutwardJobFreeIssueMaterialComplete = "outward-jobs-free-issue-materials-mark-complete";
-export declare const PermissionOutwardJobFreeIssueMaterialDiscard = "outward-jobs-free-issue-materials-extra-discard";
-export declare const PermissionReopenOutwardJobFreeIssueMaterial = "outward-jobs-free-issue-materials-extra-reopen";
-export declare const PermissionsOutwardJobsFreeIssueMaterials: string[];
-export declare const PermissionInwardJobNew = "inward-jobs-new";
-export declare const PermissionInwardJobDrafts = "inward-jobs-drafts";
-export declare const PermissionInwardJobVerify = "inward-jobs-verify";
-export declare const PermissionInwardJobRevise = "inward-jobs-revise";
-export declare const PermissionInwardJobHalted = "inward-jobs-halted";
-export declare const PermissionInwardJobDiscarded = "inward-jobs-discarded";
-export declare const PermissionRestoreInwardJob = "inward-jobs-restore";
-export declare const PermissionInwardJobApprove = "inward-jobs-approve";
-export declare const PermissionInwardJobStanding = "inward-jobs-standing";
-export declare const PermissionInwardJobCompleted = "inward-jobs-completed";
-export declare const PermissionInwardJobHalt = "inward-jobs-extra-halt";
-export declare const PermissionInwardJobComplete = "inward-jobs-mark-complete";
-export declare const PermissionInwardJobDiscard = "inward-jobs-extra-discard";
-export declare const PermissionReopenInwardJob = "inward-jobs-extra-reopen";
-export declare const PermissionsInwardJobs: string[];
-export declare const PermissionInwardJobFreeIssueMaterialNew = "inward-jobs-free-issue-materials-new";
-export declare const PermissionInwardJobFreeIssueMaterialDrafts = "inward-jobs-free-issue-materials-drafts";
-export declare const PermissionInwardJobFreeIssueMaterialVerify = "inward-jobs-free-issue-materials-verify";
-export declare const PermissionInwardJobFreeIssueMaterialRevise = "inward-jobs-free-issue-materials-revise";
-export declare const PermissionInwardJobFreeIssueMaterialHalted = "inward-jobs-free-issue-materials-halted";
-export declare const PermissionInwardJobFreeIssueMaterialDiscarded = "inward-jobs-free-issue-materials-discarded";
-export declare const PermissionRestoreInwardJobFreeIssueMaterial = "inward-jobs-free-issue-materials-restore";
-export declare const PermissionInwardJobFreeIssueMaterialApprove = "inward-jobs-free-issue-materials-approve";
-export declare const PermissionInwardJobFreeIssueMaterialStanding = "inward-jobs-free-issue-materials-standing";
-export declare const PermissionInwardJobFreeIssueMaterialCompleted = "inward-jobs-free-issue-materials-completed";
-export declare const PermissionInwardJobFreeIssueMaterialHalt = "inward-jobs-free-issue-materials-extra-halt";
-export declare const PermissionInwardJobFreeIssueMaterialComplete = "inward-jobs-free-issue-materials-mark-complete";
-export declare const PermissionInwardJobFreeIssueMaterialDiscard = "inward-jobs-free-issue-materials-extra-discard";
-export declare const PermissionReopenInwardJobFreeIssueMaterial = "inward-jobs-free-issue-materials-extra-reopen";
-export declare const PermissionsInwardJobsFreeIssueMaterials: string[];
-export declare const PermissionSupplyOfferNew = "supply-offers-new";
-export declare const PermissionSupplyOfferDrafts = "supply-offers-drafts";
-export declare const PermissionSupplyOfferVerify = "supply-offers-verify";
-export declare const PermissionSupplyOfferRevise = "supply-offers-revise";
-export declare const PermissionSupplyOfferHalted = "supply-offers-halted";
-export declare const PermissionSupplyOfferDiscarded = "supply-offers-discarded";
-export declare const PermissionRestoreSupplyOffer = "supply-offers-restore";
-export declare const PermissionSupplyOfferApprove = "supply-offers-approve";
-export declare const PermissionSupplyOfferStanding = "supply-offers-standing";
-export declare const PermissionSupplyOfferCompleted = "supply-offers-completed";
-export declare const PermissionSupplyOfferHalt = "supply-offers-extra-halt";
-export declare const PermissionSupplyOfferComplete = "supply-offers-mark-complete";
-export declare const PermissionSupplyOfferDiscard = "supply-offers-extra-discard";
-export declare const PermissionReopenSupplyOffer = "supply-offers-extra-reopen";
-export declare const PermissionAmendSupplyOffer = "supply-offers-amend";
-export declare const PermissionsSupplyOffers: string[];
-export declare const PermissionPurchaseOrderNew = "purchases-new";
-export declare const PermissionPurchaseOrderDrafts = "purchases-drafts";
-export declare const PermissionPurchaseOrderVerify = "purchases-verify";
-export declare const PermissionPurchaseOrderRevise = "purchases-revise";
-export declare const PermissionPurchaseOrderHalted = "purchases-halted";
-export declare const PermissionPurchaseOrderDiscarded = "purchases-discarded";
-export declare const PermissionRestorePurchaseOrder = "purchases-restore";
-export declare const PermissionPurchaseOrderApprove = "purchases-approve";
-export declare const PermissionPurchaseOrderStanding = "purchases-standing";
-export declare const PermissionPurchaseOrderCompleted = "purchases-completed";
-export declare const PermissionPurchaseOrderHalt = "purchases-extra-halt";
-export declare const PermissionPurchaseOrderComplete = "purchases-mark-complete";
-export declare const PermissionPurchaseOrderDiscard = "purchases-extra-discard";
-export declare const PermissionReopenPurchaseOrder = "purchases-extra-reopen";
-export declare const PermissionAmendPurchaseOrder = "purchases-amend";
-export declare const PermissionsPurchases: string[];
-export declare const PermissionNewCurrency = "currencies-new";
-export declare const PermissionDraftCurrencies = "currencies-drafts";
-export declare const PermissionVerifyCurrencies = "currencies-verify";
-export declare const PermissionApproveCurrencies = "currencies-approve";
-export declare const PermissionReviseCurrencies = "currencies-revise";
-export declare const PermissionStandingCurrencies = "currencies-standing";
-export declare const PermissionHaltedCurrencies = "currencies-halted";
-export declare const PermissionDiscardCurrencies = "currencies-discarded";
-export declare const PermissionRestoreCurrencies = "currencies-restore";
-export declare const PermissionHaltCurrency = "currencies-halt";
-export declare const PermissionDiscardCurrency = "currencies-extra-discard";
-export declare const PermissionsCurrencies: string[];
-export declare const PermissionNewUnitOfMaterial = "units-of-materials-new";
-export declare const PermissionDraftUnitsOfMaterials = "units-of-materials-drafts";
-export declare const PermissionVerifyUnitsOfMaterials = "units-of-materials-verify";
-export declare const PermissionApproveUnitsOfMaterials = "units-of-materials-approve";
-export declare const PermissionReviseUnitsOfMaterials = "units-of-materials-revise";
-export declare const PermissionStandingUnitsOfMaterials = "units-of-materials-standing";
-export declare const PermissionHaltedUnitsOfMaterials = "units-of-materials-halted";
-export declare const PermissionDiscardUnitsOfMaterials = "units-of-materials-discarded";
-export declare const PermissionRestoreUnitsOfMaterials = "units-of-materials-restore";
-export declare const PermissionHaltUnitOfMaterial = "units-of-materials-halt";
-export declare const PermissionDiscardUnitOfMaterial = "units-of-materials-extra-discard";
-export declare const PermissionsUnitsOfMaterials: string[];
-export declare const PermissionProjectNew = "projects-new";
-export declare const PermissionProjectDrafts = "projects-drafts";
-export declare const PermissionProjectVerify = "projects-verify";
-export declare const PermissionProjectRevise = "projects-revise";
-export declare const PermissionProjectHalted = "projects-halted";
-export declare const PermissionProjectDiscarded = "projects-discarded";
-export declare const PermissionRestoreProject = "projects-restore";
-export declare const PermissionProjectApprove = "projects-approve";
-export declare const PermissionProjectStanding = "projects-standing";
-export declare const PermissionProjectCompleted = "projects-completed";
-export declare const PermissionProjectHalt = "projects-extra-halt";
-export declare const PermissionProjectComplete = "projects-mark-complete";
-export declare const PermissionProjectDiscard = "projects-extra-discard";
-export declare const PermissionReopenProject = "projects-extra-reopen";
-export declare const PermissionsProjects: string[];
-export declare const PermissionSalesOrderNew = "sales-orders-new";
-export declare const PermissionSalesOrderDrafts = "sales-orders-drafts";
-export declare const PermissionSalesOrderVerify = "sales-orders-verify";
-export declare const PermissionSalesOrderRevise = "sales-orders-revise";
-export declare const PermissionSalesOrderHalted = "sales-orders-halted";
-export declare const PermissionSalesOrderDiscarded = "sales-orders-discarded";
-export declare const PermissionRestoreSalesOrder = "sales-orders-restore";
-export declare const PermissionSalesOrderApprove = "sales-orders-approve";
-export declare const PermissionSalesOrderStanding = "sales-orders-standing";
-export declare const PermissionSalesOrderCompleted = "sales-orders-completed";
-export declare const PermissionSalesOrderHalt = "sales-orders-extra-halt";
-export declare const PermissionSalesOrderComplete = "sales-orders-mark-complete";
-export declare const PermissionSalesOrderDiscard = "sales-orders-extra-discard";
-export declare const PermissionReopenSalesOrder = "sales-orders-extra-reopen";
-export declare const PermissionAmendSalesOrder = "sales-orders-amend";
-export declare const PermissionsSalesOrders: string[];
-export declare const PermissionSalesQuotationNew = "sales-quotations-new";
-export declare const PermissionSalesQuotationDrafts = "sales-quotations-drafts";
-export declare const PermissionSalesQuotationVerify = "sales-quotations-verify";
-export declare const PermissionSalesQuotationRevise = "sales-quotations-revise";
-export declare const PermissionSalesQuotationHalted = "sales-quotations-halted";
-export declare const PermissionSalesQuotationDiscarded = "sales-quotations-discarded";
-export declare const PermissionRestoreSalesQuotation = "sales-quotations-restore";
-export declare const PermissionSalesQuotationApprove = "sales-quotations-approve";
-export declare const PermissionSalesQuotationStanding = "sales-quotations-standing";
-export declare const PermissionSalesQuotationCompleted = "sales-quotations-completed";
-export declare const PermissionSalesQuotationHalt = "sales-quotations-extra-halt";
-export declare const PermissionSalesQuotationComplete = "sales-quotations-mark-complete";
-export declare const PermissionSalesQuotationDiscard = "sales-quotations-extra-discard";
-export declare const PermissionReopenSalesQuotation = "sales-quotations-extra-reopen";
-export declare const PermissionAmendSalesQuotation = "sales-quotations-amend";
-export declare const PermissionsSalesQuotations: string[];
-export declare const PermissionProformaInvoiceNew = "proforma-invoices-new";
-export declare const PermissionProformaInvoiceDrafts = "proforma-invoices-drafts";
-export declare const PermissionProformaInvoiceVerify = "proforma-invoices-verify";
-export declare const PermissionProformaInvoiceRevise = "proforma-invoices-revise";
-export declare const PermissionProformaInvoiceHalted = "proforma-invoices-halted";
-export declare const PermissionProformaInvoiceDiscarded = "proforma-invoices-discarded";
-export declare const PermissionRestoreProformaInvoice = "proforma-invoices-restore";
-export declare const PermissionProformaInvoiceApprove = "proforma-invoices-approve";
-export declare const PermissionProformaInvoiceStanding = "proforma-invoices-standing";
-export declare const PermissionProformaInvoiceCompleted = "proforma-invoices-completed";
-export declare const PermissionProformaInvoiceHalt = "proforma-invoices-extra-halt";
-export declare const PermissionProformaInvoiceComplete = "proforma-invoices-mark-complete";
-export declare const PermissionProformaInvoiceDiscard = "proforma-invoices-extra-discard";
-export declare const PermissionReopenProformaInvoice = "proforma-invoices-extra-reopen";
-export declare const PermissionAmendProformaInvoice = "proforma-invoices-amend";
-export declare const PermissionsProformaInvoices: string[];
-export declare const PermissionSalesInvoiceNew = "sales-invoices-new";
-export declare const PermissionSalesInvoiceDrafts = "sales-invoices-drafts";
-export declare const PermissionSalesInvoiceVerify = "sales-invoices-verify";
-export declare const PermissionSalesInvoiceRevise = "sales-invoices-revise";
-export declare const PermissionSalesInvoiceHalted = "sales-invoices-halted";
-export declare const PermissionSalesInvoiceDiscarded = "sales-invoices-discarded";
-export declare const PermissionRestoreSalesInvoice = "sales-invoices-restore";
-export declare const PermissionSalesInvoiceApprove = "sales-invoices-approve";
-export declare const PermissionSalesInvoiceStanding = "sales-invoices-standing";
-export declare const PermissionSalesInvoiceCompleted = "sales-invoices-completed";
-export declare const PermissionSalesInvoiceHalt = "sales-invoices-extra-halt";
-export declare const PermissionSalesInvoiceComplete = "sales-invoices-mark-complete";
-export declare const PermissionSalesInvoiceDiscard = "sales-invoices-extra-discard";
-export declare const PermissionReopenSalesInvoice = "sales-invoices-extra-reopen";
-export declare const PermissionAmendSalesInvoice = "sales-invoices-amend";
-export declare const PermissionsSalesInvoices: string[];
-export declare const PermissionGoodsDispatchNew = "goods-dispatches-new";
-export declare const PermissionGoodsDispatchDrafts = "goods-dispatches-drafts";
-export declare const PermissionGoodsDispatchVerify = "goods-dispatches-verify";
-export declare const PermissionGoodsDispatchRevise = "goods-dispatches-revise";
-export declare const PermissionGoodsDispatchHalted = "goods-dispatches-halted";
-export declare const PermissionGoodsDispatchDiscarded = "goods-dispatches-discarded";
-export declare const PermissionRestoreGoodsDispatch = "goods-dispatches-restore";
-export declare const PermissionGoodsDispatchApprove = "goods-dispatches-approve";
-export declare const PermissionGoodsDispatchStanding = "goods-dispatches-standing";
-export declare const PermissionGoodsDispatchCompleted = "goods-dispatches-completed";
-export declare const PermissionGoodsDispatchHalt = "goods-dispatches-extra-halt";
-export declare const PermissionGoodsDispatchComplete = "goods-dispatches-mark-complete";
-export declare const PermissionGoodsDispatchDiscard = "goods-dispatches-extra-discard";
-export declare const PermissionReopenGoodsDispatch = "goods-dispatches-extra-reopen";
-export declare const PermissionsGoodsDispatches: string[];
-export declare const PermissionVendorInvoiceNew = "vendor-invoices-new";
-export declare const PermissionVendorInvoiceDrafts = "vendor-invoices-drafts";
-export declare const PermissionVendorInvoiceVerify = "vendor-invoices-verify";
-export declare const PermissionVendorInvoiceRevise = "vendor-invoices-revise";
-export declare const PermissionVendorInvoiceHalted = "vendor-invoices-halted";
-export declare const PermissionVendorInvoiceDiscarded = "vendor-invoices-discarded";
-export declare const PermissionRestoreVendorInvoice = "vendor-invoices-restore";
-export declare const PermissionVendorInvoiceApprove = "vendor-invoices-approve";
-export declare const PermissionVendorInvoiceStanding = "vendor-invoices-standing";
-export declare const PermissionVendorInvoiceCompleted = "vendor-invoices-completed";
-export declare const PermissionVendorInvoiceHalt = "vendor-invoices-extra-halt";
-export declare const PermissionVendorInvoiceComplete = "vendor-invoices-mark-complete";
-export declare const PermissionVendorInvoiceDiscard = "vendor-invoices-extra-discard";
-export declare const PermissionReopenVendorInvoice = "vendor-invoices-extra-reopen";
-export declare const PermissionsVendorInvoices: string[];
-export declare const PermissionGoodsReceiptNew = "goods-receipts-new";
-export declare const PermissionGoodsReceiptDrafts = "goods-receipts-drafts";
-export declare const PermissionGoodsReceiptVerify = "goods-receipts-verify";
-export declare const PermissionGoodsReceiptRevise = "goods-receipts-revise";
-export declare const PermissionGoodsReceiptHalted = "goods-receipts-halted";
-export declare const PermissionGoodsReceiptDiscarded = "goods-receipts-discarded";
-export declare const PermissionRestoreGoodsReceipt = "goods-receipts-restore";
-export declare const PermissionGoodsReceiptApprove = "goods-receipts-approve";
-export declare const PermissionGoodsReceiptStanding = "goods-receipts-standing";
-export declare const PermissionGoodsReceiptCompleted = "goods-receipts-completed";
-export declare const PermissionGoodsReceiptHalt = "goods-receipts-extra-halt";
-export declare const PermissionGoodsReceiptComplete = "goods-receipts-mark-complete";
-export declare const PermissionGoodsReceiptDiscard = "goods-receipts-extra-discard";
-export declare const PermissionReopenGoodsReceipt = "goods-receipts-extra-reopen";
-export declare const PermissionsGoodsReceipts: string[];
-export declare const PermissionWorkOrderNew = "work-orders-new";
-export declare const PermissionWorkOrderDrafts = "work-orders-drafts";
-export declare const PermissionWorkOrderVerify = "work-orders-verify";
-export declare const PermissionWorkOrderRevise = "work-orders-revise";
-export declare const PermissionWorkOrderHalted = "work-orders-halted";
-export declare const PermissionWorkOrderDiscarded = "work-orders-discarded";
-export declare const PermissionRestoreWorkOrder = "work-orders-restore";
-export declare const PermissionWorkOrderApprove = "work-orders-approve";
-export declare const PermissionWorkOrderStanding = "work-orders-standing";
-export declare const PermissionWorkOrderCompleted = "work-orders-completed";
-export declare const PermissionWorkOrderHalt = "work-orders-extra-halt";
-export declare const PermissionWorkOrderComplete = "work-orders-mark-complete";
-export declare const PermissionWorkOrderDiscard = "work-orders-extra-discard";
-export declare const PermissionReopenWorkOrder = "work-orders-extra-reopen";
-export declare const PermissionsWorkOrders: string[];
-export declare const PermissionPurchaseReturnNew = "purchases-returns-new";
-export declare const PermissionPurchaseReturnDrafts = "purchases-returns-drafts";
-export declare const PermissionPurchaseReturnVerify = "purchases-returns-verify";
-export declare const PermissionPurchaseReturnRevise = "purchases-returns-revise";
-export declare const PermissionPurchaseReturnHalted = "purchases-returns-halted";
-export declare const PermissionPurchaseReturnDiscarded = "purchases-returns-discarded";
-export declare const PermissionRestorePurchaseReturn = "purchases-returns-restore";
-export declare const PermissionPurchaseReturnApprove = "purchases-returns-approve";
-export declare const PermissionPurchaseReturnStanding = "purchases-returns-standing";
-export declare const PermissionPurchaseReturnCompleted = "purchases-returns-completed";
-export declare const PermissionPurchaseReturnHalt = "purchases-returns-extra-halt";
-export declare const PermissionPurchaseReturnComplete = "purchases-returns-mark-complete";
-export declare const PermissionPurchaseReturnDiscard = "purchases-returns-extra-discard";
-export declare const PermissionReopenPurchaseReturn = "purchases-returns-extra-reopen";
-export declare const PermissionsPurchasesReturns: string[];
-export declare const PermissionSaleReturnNew = "sales-returns-new";
-export declare const PermissionSaleReturnDrafts = "sales-returns-drafts";
-export declare const PermissionSaleReturnVerify = "sales-returns-verify";
-export declare const PermissionSaleReturnRevise = "sales-returns-revise";
-export declare const PermissionSaleReturnHalted = "sales-returns-halted";
-export declare const PermissionSaleReturnDiscarded = "sales-returns-discarded";
-export declare const PermissionRestoreSaleReturn = "sales-returns-restore";
-export declare const PermissionSaleReturnApprove = "sales-returns-approve";
-export declare const PermissionSaleReturnStanding = "sales-returns-standing";
-export declare const PermissionSaleReturnCompleted = "sales-returns-completed";
-export declare const PermissionSaleReturnHalt = "sales-returns-extra-halt";
-export declare const PermissionSaleReturnComplete = "sales-returns-mark-complete";
-export declare const PermissionSaleReturnDiscard = "sales-returns-extra-discard";
-export declare const PermissionReopenSaleReturn = "sales-returns-extra-reopen";
-export declare const PermissionsSalesReturns: string[];
-export declare const PermissionOutwardJobFreeIssueMaterialReturnNew = "outward-jobs-free-issue-materials-returns-new";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnDrafts = "outward-jobs-free-issue-materials-returns-drafts";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnVerify = "outward-jobs-free-issue-materials-returns-verify";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnRevise = "outward-jobs-free-issue-materials-returns-revise";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnHalted = "outward-jobs-free-issue-materials-returns-halted";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnDiscarded = "outward-jobs-free-issue-materials-returns-discarded";
-export declare const PermissionRestoreOutwardJobFreeIssueMaterialReturn = "outward-jobs-free-issue-materials-returns-restore";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnApprove = "outward-jobs-free-issue-materials-returns-approve";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnStanding = "outward-jobs-free-issue-materials-returns-standing";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnCompleted = "outward-jobs-free-issue-materials-returns-completed";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnHalt = "outward-jobs-free-issue-materials-returns-extra-halt";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnComplete = "outward-jobs-free-issue-materials-returns-mark-complete";
-export declare const PermissionOutwardJobFreeIssueMaterialReturnDiscard = "outward-jobs-free-issue-materials-returns-extra-discard";
-export declare const PermissionReopenOutwardJobFreeIssueMaterialReturn = "outward-jobs-free-issue-materials-returns-extra-reopen";
-export declare const PermissionsOutwardJobsFreeIssueMaterialsReturns: string[];
-export declare const PermissionInwardJobFreeIssueMaterialReturnNew = "inward-jobs-free-issue-materials-returns-new";
-export declare const PermissionInwardJobFreeIssueMaterialReturnDrafts = "inward-jobs-free-issue-materials-returns-drafts";
-export declare const PermissionInwardJobFreeIssueMaterialReturnVerify = "inward-jobs-free-issue-materials-returns-verify";
-export declare const PermissionInwardJobFreeIssueMaterialReturnRevise = "inward-jobs-free-issue-materials-returns-revise";
-export declare const PermissionInwardJobFreeIssueMaterialReturnHalted = "inward-jobs-free-issue-materials-returns-halted";
-export declare const PermissionInwardJobFreeIssueMaterialReturnDiscarded = "inward-jobs-free-issue-materials-returns-discarded";
-export declare const PermissionRestoreInwardJobFreeIssueMaterialReturn = "inward-jobs-free-issue-materials-returns-restore";
-export declare const PermissionInwardJobFreeIssueMaterialReturnApprove = "inward-jobs-free-issue-materials-returns-approve";
-export declare const PermissionInwardJobFreeIssueMaterialReturnStanding = "inward-jobs-free-issue-materials-returns-standing";
-export declare const PermissionInwardJobFreeIssueMaterialReturnCompleted = "inward-jobs-free-issue-materials-returns-completed";
-export declare const PermissionInwardJobFreeIssueMaterialReturnHalt = "inward-jobs-free-issue-materials-returns-extra-halt";
-export declare const PermissionInwardJobFreeIssueMaterialReturnComplete = "inward-jobs-free-issue-materials-returns-mark-complete";
-export declare const PermissionInwardJobFreeIssueMaterialReturnDiscard = "inward-jobs-free-issue-materials-returns-extra-discard";
-export declare const PermissionReopenInwardJobFreeIssueMaterialReturn = "inward-jobs-free-issue-materials-returns-extra-reopen";
-export declare const PermissionsInwardJobsFreeIssueMaterialsReturns: string[];
-export declare const PermissionNewPurchasePayment = "purchases-payments-new";
-export declare const PermissionDraftPurchasePayment = "purchases-payments-drafts";
-export declare const PermissionVerifyPurchasePayment = "purchases-payments-verify";
-export declare const PermissionApprovePurchasePayment = "purchases-payments-approve";
-export declare const PermissionRevisePurchasePayment = "purchases-payments-revise";
-export declare const PermissionStandingPurchasePayment = "purchases-payments-standing";
-export declare const PermissionHaltedPurchasePayment = "purchases-payments-halted";
-export declare const PermissionDiscardPurchasePayment = "purchases-payments-discard";
-export declare const PermissionRestorePurchasePayment = "purchases-payments-restore";
-export declare const PermissionCompletedPurchasePayment = "purchases-payments-completed";
-export declare const PermissionHaltPurchasePayment = "purchases-payments-halt";
-export declare const PermissionMarkPurchasePaymentasCompleted = "purchases-payments-mark-complete";
-export declare const PermissionsPurchasesPayments: string[];
-export declare const PermissionNewSaleReceipt = "sales-receipts-new";
-export declare const PermissionDraftSaleReceipt = "sales-receipts-drafts";
-export declare const PermissionVerifySaleReceipt = "sales-receipts-verify";
-export declare const PermissionApproveSaleReceipt = "sales-receipts-approve";
-export declare const PermissionReviseSaleReceipt = "sales-receipts-revise";
-export declare const PermissionStandingSaleReceipt = "sales-receipts-standing";
-export declare const PermissionHaltedSaleReceipt = "sales-receipts-halted";
-export declare const PermissionDiscardSaleReceipt = "sales-receipts-discard";
-export declare const PermissionRestoreSaleReceipt = "sales-receipts-restore";
-export declare const PermissionCompletedSaleReceipt = "sales-receipts-completed";
-export declare const PermissionHaltSaleReceipt = "sales-receipts-halt";
-export declare const PermissionMarkSaleReceiptasCompleted = "sales-receipts-mark-complete";
-export declare const PermissionsSalesReceipts: string[];
-export declare const PermissionCreditNoteNew = "credit-notes-new";
-export declare const PermissionCreditNoteDrafts = "credit-notes-drafts";
-export declare const PermissionCreditNoteVerify = "credit-notes-verify";
-export declare const PermissionCreditNoteRevise = "credit-notes-revise";
-export declare const PermissionCreditNoteHalted = "credit-notes-halted";
-export declare const PermissionCreditNoteDiscarded = "credit-notes-discarded";
-export declare const PermissionRestoreCreditNote = "credit-notes-restore";
-export declare const PermissionCreditNoteApprove = "credit-notes-approve";
-export declare const PermissionCreditNoteStanding = "credit-notes-standing";
-export declare const PermissionCreditNoteCompleted = "credit-notes-completed";
-export declare const PermissionCreditNoteHalt = "credit-notes-extra-halt";
-export declare const PermissionCreditNoteComplete = "credit-notes-mark-complete";
-export declare const PermissionCreditNoteDiscard = "credit-notes-extra-discard";
-export declare const PermissionReopenCreditNote = "credit-notes-extra-reopen";
-export declare const PermissionsCreditNotes: string[];
-export declare const PermissionDebitNoteNew = "debit-notes-new";
-export declare const PermissionDebitNoteDrafts = "debit-notes-drafts";
-export declare const PermissionDebitNoteVerify = "debit-notes-verify";
-export declare const PermissionDebitNoteRevise = "debit-notes-revise";
-export declare const PermissionDebitNoteHalted = "debit-notes-halted";
-export declare const PermissionDebitNoteDiscarded = "debit-notes-discarded";
-export declare const PermissionRestoreDebitNote = "debit-notes-restore";
-export declare const PermissionDebitNoteApprove = "debit-notes-approve";
-export declare const PermissionDebitNoteStanding = "debit-notes-standing";
-export declare const PermissionDebitNoteCompleted = "debit-notes-completed";
-export declare const PermissionDebitNoteHalt = "debit-notes-extra-halt";
-export declare const PermissionDebitNoteComplete = "debit-notes-mark-complete";
-export declare const PermissionDebitNoteDiscard = "debit-notes-extra-discard";
-export declare const PermissionReopenDebitNote = "debit-notes-extra-reopen";
-export declare const PermissionsDebitNotes: string[];
-export declare const PermissionExpenseNew = "expenses-new";
-export declare const PermissionExpenseDrafts = "expenses-drafts";
-export declare const PermissionExpenseVerify = "expenses-verify";
-export declare const PermissionExpenseRevise = "expenses-revise";
-export declare const PermissionExpenseHalted = "expenses-halted";
-export declare const PermissionExpenseDiscarded = "expenses-discarded";
-export declare const PermissionRestoreExpense = "expenses-restore";
-export declare const PermissionExpenseApprove = "expenses-approve";
-export declare const PermissionExpenseStanding = "expenses-standing";
-export declare const PermissionExpenseCompleted = "expenses-completed";
-export declare const PermissionExpenseHalt = "expenses-extra-halt";
-export declare const PermissionExpenseComplete = "expenses-mark-complete";
-export declare const PermissionExpenseDiscard = "expenses-extra-discard";
-export declare const PermissionReopenExpense = "expenses-extra-reopen";
-export declare const PermissionsExpenses: string[];
-export declare const PermissionSalaryNew = "salaries-new";
-export declare const PermissionSalaryDrafts = "salaries-drafts";
-export declare const PermissionSalaryVerify = "salaries-verify";
-export declare const PermissionSalaryRevise = "salaries-revise";
-export declare const PermissionSalaryHalted = "salaries-halted";
-export declare const PermissionSalaryDiscarded = "salaries-discarded";
-export declare const PermissionRestoreSalary = "salaries-restore";
-export declare const PermissionSalaryApprove = "salaries-approve";
-export declare const PermissionSalaryStanding = "salaries-standing";
-export declare const PermissionSalaryCompleted = "salaries-completed";
-export declare const PermissionSalaryHalt = "salaries-extra-halt";
-export declare const PermissionSalaryComplete = "salaries-mark-complete";
-export declare const PermissionSalaryDiscard = "salaries-extra-discard";
-export declare const PermissionReopenSalary = "salaries-extra-reopen";
-export declare const PermissionsSalaries: string[];
-export declare const PermissionNewContractorPayment = "contractors-payments-new";
-export declare const PermissionDraftContractorsPayments = "contractors-payments-drafts";
-export declare const PermissionVerifyContractorsPayments = "contractors-payments-verify";
-export declare const PermissionApproveContractorsPayments = "contractors-payments-approve";
-export declare const PermissionReviseContractorsPayments = "contractors-payments-revise";
-export declare const PermissionStandingContractorsPayments = "contractors-payments-standing";
-export declare const PermissionHaltedContractorsPayments = "contractors-payments-halted";
-export declare const PermissionDiscardContractorsPayments = "contractors-payments-discard";
-export declare const PermissionRestoreContractorsPayments = "contractors-payments-restore";
-export declare const PermissionCompletedContractorsPayments = "contractors-payments-completed";
-export declare const PermissionHaltContractorPayment = "contractors-payments-halt";
-export declare const PermissionMarkContractorPaymentasCompleted = "contractors-payments-mark-completed";
-export declare const PermissionsContractorsPayments: string[];
-export declare const PermissionNewSundry = "sundries-new";
-export declare const PermissionDraftSundries = "sundries-drafts";
-export declare const PermissionVerifySundries = "sundries-verify";
-export declare const PermissionApproveSundries = "sundries-approve";
-export declare const PermissionReviseSundries = "sundries-revise";
-export declare const PermissionStandingSundries = "sundries-standing";
-export declare const PermissionHaltedSundries = "sundries-halted";
-export declare const PermissionDiscardSundries = "sundries-discard";
-export declare const PermissionRestoreSundries = "sundries-restore";
-export declare const PermissionCompletedSundries = "sundries-completed";
-export declare const PermissionHaltSundry = "sundries-halt";
-export declare const PermissionMarkSundryasCompleted = "sundries-mark-completed";
-export declare const PermissionsSundries: string[];
-export declare const PermissionNewPurchaseEnquiry = "purchases-enquiries-new";
-export declare const PermissionDraftPurchaseEnquiry = "purchases-enquiries-drafts";
-export declare const PermissionVerifyPurchaseEnquiry = "purchases-enquiries-verify";
-export declare const PermissionRevisePurchaseEnquiry = "purchases-enquiries-revise";
-export declare const PermissionHaltedPurchaseEnquiry = "purchases-enquiries-halted";
-export declare const PermissionPurchaseEnquiryDiscarded = "purchases-enquiries-discarded";
-export declare const PermissionRestorePurchaseEnquiry = "purchases-enquiries-restore";
-export declare const PermissionApprovePurchaseEnquiry = "purchases-enquiries-approve";
-export declare const PermissionStandingPurchaseEnquiry = "purchases-enquiries-standing";
-export declare const PermissionCompletedPurchaseEnquiry = "purchases-enquiries-completed";
-export declare const PermissionHaltPurchaseEnquiry = "purchases-enquiries-halt";
-export declare const PermissionMarkPurchaseEnquiryasCompleted = "purchases-enquiries-mark-completed";
-export declare const PermissionPurchaseEnquiryDiscard = "purchases-enquiries-extra-discard";
-export declare const PermissionReopenPurchaseEnquiry = "purchases-enquiries-extra-reopen";
-export declare const PermissionsPurchasesEnquiries: string[];
-export declare const PermissionSalesEnquiryNew = "sales-enquiries-new";
-export declare const PermissionSalesEnquiryDrafts = "sales-enquiries-drafts";
-export declare const PermissionSalesEnquiryVerify = "sales-enquiries-verify";
-export declare const PermissionSalesEnquiryRevise = "sales-enquiries-revise";
-export declare const PermissionSalesEnquiryHalted = "sales-enquiries-halted";
-export declare const PermissionSalesEnquiryDiscarded = "sales-enquiries-discarded";
-export declare const PermissionRestoreSalesEnquiry = "sales-enquiries-restore";
-export declare const PermissionSalesEnquiryApprove = "sales-enquiries-approve";
-export declare const PermissionSalesEnquiryStanding = "sales-enquiries-standing";
-export declare const PermissionSalesEnquiryCompleted = "sales-enquiries-completed";
-export declare const PermissionSalesEnquiryHalt = "sales-enquiries-extra-halt";
-export declare const PermissionSalesEnquiryComplete = "sales-enquiries-mark-complete";
-export declare const PermissionSalesEnquiryDiscard = "sales-enquiries-extra-discard";
-export declare const PermissionReopenSalesEnquiry = "sales-enquiries-extra-reopen";
-export declare const PermissionAmendSalesEnquiry = "sales-enquiries-amend";
-export declare const PermissionsSalesEnquiries: string[];
-export declare const PermissionNewQuotationRequest = "quotations-requests-new";
-export declare const PermissionDraftQuotationRequest = "quotations-requests-drafts";
-export declare const PermissionVerifyQuotationRequest = "quotations-requests-verify";
-export declare const PermissionReviseQuotationRequest = "quotations-requests-revise";
-export declare const PermissionHaltedQuotationRequest = "quotations-requests-halted";
-export declare const PermissionQuotationRequestDiscarded = "quotations-requests-discarded";
-export declare const PermissionRestoreQuotationRequest = "quotations-requests-restore";
-export declare const PermissionApproveQuotationRequest = "quotations-requests-approve";
-export declare const PermissionStandingQuotationRequest = "quotations-requests-standing";
-export declare const PermissionCompletedQuotationRequest = "quotations-requests-completed";
-export declare const PermissionHaltQuotationRequest = "quotations-requests-halt";
-export declare const PermissionMarkQuotationRequestasCompleted = "quotations-requests-mark-completed";
-export declare const PermissionQuotationRequestDiscard = "quotations-requests-extra-discard";
-export declare const PermissionReopenQuotationRequest = "quotations-requests-extra-reopen";
-export declare const PermissionsQuotationsRequests: string[];
-export declare const PermissionNewQuotationResponse = "quotations-responses-new";
-export declare const PermissionDraftQuotationResponse = "quotations-responses-drafts";
-export declare const PermissionVerifyQuotationResponse = "quotations-responses-verify";
-export declare const PermissionReviseQuotationResponse = "quotations-responses-revise";
-export declare const PermissionHaltedQuotationResponse = "quotations-responses-halted";
-export declare const PermissionQuotationResponseDiscarded = "quotations-responses-discarded";
-export declare const PermissionRestoreQuotationResponse = "quotations-responses-restore";
-export declare const PermissionApproveQuotationResponse = "quotations-responses-approve";
-export declare const PermissionStandingQuotationResponse = "quotations-responses-standing";
-export declare const PermissionCompletedQuotationResponse = "quotations-responses-completed";
-export declare const PermissionHaltQuotationResponse = "quotations-responses-halt";
-export declare const PermissionMarkQuotationResponseasCompleted = "quotations-responses-mark-completed";
-export declare const PermissionQuotationResponseDiscard = "quotations-responses-extra-discard";
-export declare const PermissionReopenQuotationResponse = "quotations-responses-extra-reopen";
-export declare const PermissionsQuotationsResponses: string[];
-export declare const PermissionEquationFamilyNew = "equations-families-new";
-export declare const PermissionEquationFamilyDrafts = "equations-families-drafts";
-export declare const PermissionEquationFamilyVerify = "equations-families-verify";
-export declare const PermissionEquationFamilyRevise = "equations-families-revise";
-export declare const PermissionEquationFamilyHalted = "equations-families-halted";
-export declare const PermissionEquationFamilyDiscarded = "equations-families-discarded";
-export declare const PermissionRestoreEquationFamily = "equations-families-restore";
-export declare const PermissionEquationFamilyApprove = "equations-families-approve";
-export declare const PermissionEquationFamilyStanding = "equations-families-standing";
-export declare const PermissionEquationFamilyCompleted = "equations-families-completed";
-export declare const PermissionEquationFamilyHalt = "equations-families-extra-halt";
-export declare const PermissionEquationFamilyComplete = "equations-families-mark-complete";
-export declare const PermissionEquationFamilyDiscard = "equations-families-extra-discard";
-export declare const PermissionReopenEquationFamily = "equations-families-extra-reopen";
-export declare const PermissionsEquationsFamilies: string[];
-export declare const PermissionEquationSalesBundleNew = "equations-sales-bundles-new";
-export declare const PermissionEquationSalesBundleDrafts = "equations-sales-bundles-drafts";
-export declare const PermissionEquationSalesBundleVerify = "equations-sales-bundles-verify";
-export declare const PermissionEquationSalesBundleRevise = "equations-sales-bundles-revise";
-export declare const PermissionEquationSalesBundleHalted = "equations-sales-bundles-halted";
-export declare const PermissionEquationSalesBundleDiscarded = "equations-sales-bundles-discarded";
-export declare const PermissionRestoreEquationSalesBundle = "equations-sales-bundles-restore";
-export declare const PermissionEquationSalesBundleApprove = "equations-sales-bundles-approve";
-export declare const PermissionEquationSalesBundleStanding = "equations-sales-bundles-standing";
-export declare const PermissionEquationSalesBundleCompleted = "equations-sales-bundles-completed";
-export declare const PermissionEquationSalesBundleHalt = "equations-sales-bundles-extra-halt";
-export declare const PermissionEquationSalesBundleComplete = "equations-sales-bundles-mark-complete";
-export declare const PermissionEquationSalesBundleDiscard = "equations-sales-bundles-extra-discard";
-export declare const PermissionReopenEquationSalesBundle = "equations-sales-bundles-extra-reopen";
-export declare const PermissionsEquationsSalesBundles: string[];
-export declare const PermissionEquationWorkOrderNew = "equations-work-orders-new";
-export declare const PermissionEquationWorkOrderDrafts = "equations-work-orders-drafts";
-export declare const PermissionEquationWorkOrderVerify = "equations-work-orders-verify";
-export declare const PermissionEquationWorkOrderRevise = "equations-work-orders-revise";
-export declare const PermissionEquationWorkOrderHalted = "equations-work-orders-halted";
-export declare const PermissionEquationWorkOrderDiscarded = "equations-work-orders-discarded";
-export declare const PermissionRestoreEquationWorkOrder = "equations-work-orders-restore";
-export declare const PermissionEquationWorkOrderApprove = "equations-work-orders-approve";
-export declare const PermissionEquationWorkOrderStanding = "equations-work-orders-standing";
-export declare const PermissionEquationWorkOrderCompleted = "equations-work-orders-completed";
-export declare const PermissionEquationWorkOrderHalt = "equations-work-orders-extra-halt";
-export declare const PermissionEquationWorkOrderComplete = "equations-work-orders-mark-complete";
-export declare const PermissionEquationWorkOrderDiscard = "equations-work-orders-extra-discard";
-export declare const PermissionReopenEquationWorkOrder = "equations-work-orders-extra-reopen";
-export declare const PermissionAmendEquationWorkOrder = "equations-work-orders-amend";
-export declare const PermissionsEquationsWorkOrders: string[];
-export declare const PermissionEquationReplaceableNew = "equations-replaceables-new";
-export declare const PermissionEquationReplaceableDrafts = "equations-replaceables-drafts";
-export declare const PermissionEquationReplaceableVerify = "equations-replaceables-verify";
-export declare const PermissionEquationReplaceableRevise = "equations-replaceables-revise";
-export declare const PermissionEquationReplaceableHalted = "equations-replaceables-halted";
-export declare const PermissionEquationReplaceableDiscarded = "equations-replaceables-discarded";
-export declare const PermissionRestoreEquationReplaceable = "equations-replaceables-restore";
-export declare const PermissionEquationReplaceableApprove = "equations-replaceables-approve";
-export declare const PermissionEquationReplaceableStanding = "equations-replaceables-standing";
-export declare const PermissionEquationReplaceableCompleted = "equations-replaceables-completed";
-export declare const PermissionEquationReplaceableHalt = "equations-replaceables-extra-halt";
-export declare const PermissionEquationReplaceableComplete = "equations-replaceables-mark-complete";
-export declare const PermissionEquationReplaceableDiscard = "equations-replaceables-extra-discard";
-export declare const PermissionReopenEquationReplaceable = "equations-replaceables-extra-reopen";
-export declare const PermissionsEquationsReplaceables: string[];
-export declare const PermissionFamilyNew = "families-new";
-export declare const PermissionFamilyDrafts = "families-drafts";
-export declare const PermissionFamilyVerify = "families-verify";
-export declare const PermissionFamilyRevise = "families-revise";
-export declare const PermissionFamilyHalted = "families-halted";
-export declare const PermissionFamilyDiscarded = "families-discarded";
-export declare const PermissionRestoreFamily = "families-restore";
-export declare const PermissionFamilyApprove = "families-approve";
-export declare const PermissionFamilyStanding = "families-standing";
-export declare const PermissionFamilyHalt = "families-extra-halt";
-export declare const PermissionFamilyComplete = "families-mark-complete";
-export declare const PermissionFamilyDiscard = "families-extra-discard";
-export declare const PermissionAmendFamily = "families-amend";
-export declare const PermissionsFamilies: string[];
-export declare const PermissionNewQCParameter = "qc-params-new";
-export declare const PermissionDraftQCParameters = "qc-params-drafts";
-export declare const PermissionVerifyQCParameters = "qc-params-verify";
-export declare const PermissionApproveQCParameters = "qc-params-approve";
-export declare const PermissionReviseQCParameters = "qc-params-revise";
-export declare const PermissionStandingQCParameters = "qc-params-standing";
-export declare const PermissionHaltedQCParameters = "qc-params-halted";
-export declare const PermissionDiscardQCParameters = "qc-params-discard";
-export declare const PermissionRestoreQCParameters = "qc-params-restore";
-export declare const PermissionCompletedQCParameters = "qc-params-completed";
-export declare const PermissionHaltQCParameter = "qc-params-halt";
-export declare const PermissionMarkQCParameterasCompleted = "qc-params-mark-complete";
-export declare const PermissionsQcParams: string[];
-export declare const PermissionQCGroupNew = "qc-groups-new";
-export declare const PermissionQCGroupDrafts = "qc-groups-drafts";
-export declare const PermissionQCGroupVerify = "qc-groups-verify";
-export declare const PermissionQCGroupRevise = "qc-groups-revise";
-export declare const PermissionQCGroupHalted = "qc-groups-halted";
-export declare const PermissionQCGroupDiscarded = "qc-groups-discarded";
-export declare const PermissionRestoreQCGroup = "qc-groups-restore";
-export declare const PermissionQCGroupApprove = "qc-groups-approve";
-export declare const PermissionQCGroupStanding = "qc-groups-standing";
-export declare const PermissionQCGroupCompleted = "qc-groups-completed";
-export declare const PermissionQCGroupHalt = "qc-groups-extra-halt";
-export declare const PermissionQCGroupComplete = "qc-groups-mark-complete";
-export declare const PermissionQCGroupDiscard = "qc-groups-extra-discard";
-export declare const PermissionReopenQCGroup = "qc-groups-extra-reopen";
-export declare const PermissionsQcGroups: string[];
-export declare const PermissionQCSampleNew = "qc-samples-create";
-export declare const PermissionQCSampleUpdate = "qc-samples-update";
-export declare const PermissionQCSampleOpen = "qc-samples-open";
-export declare const PermissionQCSampleFinished = "qc-samples-finished";
-export declare const PermissionQCSampleFinish = "qc-samples-mark-finish";
-export declare const PermissionQCSampleAccepted = "qc-samples-accepted";
-export declare const PermissionQCSampleAccept = "qc-samples-mark-accept";
-export declare const PermissionQCSampleAcceptedWithDeviation = "qc-samples-accepted-with-deviation";
-export declare const PermissionQCSampleAcceptWithDeviation = "qc-samples-mark-accept-with-deviation";
-export declare const PermissionQCSampleRejected = "qc-samples-rejected";
-export declare const PermissionQCSampleReject = "qc-samples-mark-reject";
-export declare const PermissionQCSampleReopen = "qc-samples-extra-reopen";
-export declare const PermissionQCSampleCancelled = "qc-samples-cancelled";
-export declare const PermissionQCSampleCancel = "qc-samples-mark-cancel";
-export declare const PermissionsQcSamples: string[];
-export declare const PermissionNewTaxParameter = "tax-params-new";
-export declare const PermissionDraftTaxParameters = "tax-params-drafts";
-export declare const PermissionVerifyTaxParameters = "tax-params-verify";
-export declare const PermissionApproveTaxParameters = "tax-params-approve";
-export declare const PermissionReviseTaxParameters = "tax-params-revise";
-export declare const PermissionStandingTaxParameters = "tax-params-standing";
-export declare const PermissionHaltedTaxParameters = "tax-params-halted";
-export declare const PermissionDiscardTaxParameters = "tax-params-discarded";
-export declare const PermissionRestoreTaxParameters = "tax-params-restore";
-export declare const PermissionHaltTaxParameter = "tax-params-halt";
-export declare const PermissionDiscardTaxParameter = "tax-params-extra-discard";
-export declare const PermissionsTaxParams: string[];
-export declare const PermissionNewTaxGroup = "tax-groups-new";
-export declare const PermissionDraftTaxGroups = "tax-groups-drafts";
-export declare const PermissionVerifyTaxGroups = "tax-groups-verify";
-export declare const PermissionApproveTaxGroups = "tax-groups-approve";
-export declare const PermissionReviseTaxGroups = "tax-groups-revise";
-export declare const PermissionStandingTaxGroups = "tax-groups-standing";
-export declare const PermissionHaltedTaxGroups = "tax-groups-halted";
-export declare const PermissionDiscardTaxGroups = "tax-groups-discarded";
-export declare const PermissionRestoreTaxGroups = "tax-groups-restore";
-export declare const PermissionHaltTaxGroup = "tax-groups-halt";
-export declare const PermissionDiscardTaxGroup = "tax-groups-extra-discard";
-export declare const PermissionsTaxGroups: string[];
-export declare const PermissionNewPayrollParameter = "payroll-params-new";
-export declare const PermissionDraftPayrollParameters = "payroll-params-drafts";
-export declare const PermissionVerifyPayrollParameters = "payroll-params-verify";
-export declare const PermissionApprovePayrollParameters = "payroll-params-approve";
-export declare const PermissionRevisePayrollParameters = "payroll-params-revise";
-export declare const PermissionStandingPayrollParameters = "payroll-params-standing";
-export declare const PermissionHaltedPayrollParameters = "payroll-params-halted";
-export declare const PermissionDiscardPayrollParameters = "payroll-params-discard";
-export declare const PermissionRestorePayrollParameters = "payroll-params-restore";
-export declare const PermissionCompletedPayrollParameters = "payroll-params-completed";
-export declare const PermissionHaltPayrollParameter = "payroll-params-halt";
-export declare const PermissionMarkPayrollParameterasCompleted = "payroll-params-mark-complete";
-export declare const PermissionsPayrollParams: string[];
-export declare const PermissionPayrollGroupNew = "payroll-groups-new";
-export declare const PermissionPayrollGroupDrafts = "payroll-groups-drafts";
-export declare const PermissionPayrollGroupVerify = "payroll-groups-verify";
-export declare const PermissionPayrollGroupRevise = "payroll-groups-revise";
-export declare const PermissionPayrollGroupHalted = "payroll-groups-halted";
-export declare const PermissionPayrollGroupDiscarded = "payroll-groups-discarded";
-export declare const PermissionRestorePayrollGroup = "payroll-groups-restore";
-export declare const PermissionPayrollGroupApprove = "payroll-groups-approve";
-export declare const PermissionPayrollGroupStanding = "payroll-groups-standing";
-export declare const PermissionPayrollGroupCompleted = "payroll-groups-completed";
-export declare const PermissionPayrollGroupHalt = "payroll-groups-extra-halt";
-export declare const PermissionPayrollGroupComplete = "payroll-groups-mark-complete";
-export declare const PermissionPayrollGroupDiscard = "payroll-groups-extra-discard";
-export declare const PermissionReopenPayrollGroup = "payroll-groups-extra-reopen";
-export declare const PermissionsPayrollGroups: string[];
-export declare const PermissionSet = "general-settings-set";
-export declare const PermissionsGeneralSettings: string[];
-export declare const PermissionSimpleLogs = "logs-view";
-export declare const PermissionDescriptiveLogs = "logs-descriptive";
-export declare const PermissionsLogs: string[];
-export declare const PermissionNewLabel = "labels-new";
-export declare const PermissionViewLabel = "labels-view";
-export declare const PermissionModifyLabel = "labels-modify";
-export declare const PermissionDiscardLabel = "labels-discard";
-export declare const PermissionRestoreLabel = "labels-restore";
-export declare const PermissionsLabels: string[];
-export declare const PermissionNewLocation = "locations-new";
-export declare const PermissionDraftLocations = "locations-drafts";
-export declare const PermissionVerifyLocations = "locations-verify";
-export declare const PermissionApproveLocations = "locations-approve";
-export declare const PermissionReviseLocations = "locations-revise";
-export declare const PermissionStandingLocations = "locations-standing";
-export declare const PermissionHaltedLocations = "locations-halted";
-export declare const PermissionDiscardLocations = "locations-discarded";
-export declare const PermissionRestoreLocations = "locations-restore";
-export declare const PermissionHaltLocation = "locations-halt";
-export declare const PermissionDiscardLocation = "locations-extra-discard";
-export declare const PermissionsLocations: string[];
-export declare const PermissionNewBankAccount = "bankaccounts-new";
-export declare const PermissionDraftBankAccounts = "bankaccounts-drafts";
-export declare const PermissionVerifyBankAccounts = "bankaccounts-verify";
-export declare const PermissionApproveBankAccounts = "bankaccounts-approve";
-export declare const PermissionReviseBankAccounts = "bankaccounts-revise";
-export declare const PermissionStandingBankAccounts = "bankaccounts-standing";
-export declare const PermissionHaltedBankAccounts = "bankaccounts-halted";
-export declare const PermissionDiscardBankAccounts = "bankaccounts-discarded";
-export declare const PermissionRestoreBankAccounts = "bankaccounts-restore";
-export declare const PermissionHaltBankAccount = "bankaccounts-halt";
-export declare const PermissionDiscardBankAccount = "bankaccounts-extra-discard";
-export declare const PermissionsBankaccounts: string[];
-export declare const PermissionNewStore = "stores-new";
-export declare const PermissionDraftStores = "stores-drafts";
-export declare const PermissionVerifyStores = "stores-verify";
-export declare const PermissionApproveStores = "stores-approve";
-export declare const PermissionReviseStores = "stores-revise";
-export declare const PermissionStandingStores = "stores-standing";
-export declare const PermissionHaltedStores = "stores-halted";
-export declare const PermissionDiscardStores = "stores-discarded";
-export declare const PermissionRestoreStores = "stores-restore";
-export declare const PermissionHaltStore = "stores-halt";
-export declare const PermissionDiscardStore = "stores-extra-discard";
-export declare const PermissionsStores: string[];
-export declare const PermissionNewQCHub = "qchubs-new";
-export declare const PermissionDraftQCHubs = "qchubs-drafts";
-export declare const PermissionVerifyQCHubs = "qchubs-verify";
-export declare const PermissionApproveQCHubs = "qchubs-approve";
-export declare const PermissionReviseQCHubs = "qchubs-revise";
-export declare const PermissionStandingQCHubs = "qchubs-standing";
-export declare const PermissionHaltedQCHubs = "qchubs-halted";
-export declare const PermissionDiscardQCHubs = "qchubs-discarded";
-export declare const PermissionRestoreQCHubs = "qchubs-restore";
-export declare const PermissionHaltQCHub = "qchubs-halt";
-export declare const PermissionDiscardQCHub = "qchubs-extra-discard";
-export declare const PermissionsQchubs: string[];
-export declare const PermissionNewStorage = "storages-new";
-export declare const PermissionDraftStorages = "storages-drafts";
-export declare const PermissionVerifyStorages = "storages-verify";
-export declare const PermissionApproveStorages = "storages-approve";
-export declare const PermissionReviseStorages = "storages-revise";
-export declare const PermissionStandingStorages = "storages-standing";
-export declare const PermissionHaltedStorages = "storages-halted";
-export declare const PermissionDiscardStorages = "storages-discarded";
-export declare const PermissionRestoreStorages = "storages-restore";
-export declare const PermissionHaltStorage = "storages-halt";
-export declare const PermissionDiscardStorage = "storages-extra-discard";
-export declare const PermissionsStorages: string[];
-export declare const PermissionNewLedger = "ledgers-new";
-export declare const PermissionDraftLedgers = "ledgers-drafts";
-export declare const PermissionVerifyLedgers = "ledgers-verify";
-export declare const PermissionApproveLedgers = "ledgers-approve";
-export declare const PermissionReviseLedgers = "ledgers-revise";
-export declare const PermissionStandingLedgers = "ledgers-standing";
-export declare const PermissionHaltedLedgers = "ledgers-halted";
-export declare const PermissionDiscardLedgers = "ledgers-discarded";
-export declare const PermissionRestoreLedgers = "ledgers-restore";
-export declare const PermissionHaltLedger = "ledgers-halt";
-export declare const PermissionDiscardLedger = "ledgers-extra-discard";
-export declare const PermissionsLedgers: string[];
-export declare const PermissionNewAnnouncement = "announcements-new";
-export declare const PermissionDraftAnnouncements = "announcements-drafts";
-export declare const PermissionVerifyAnnouncements = "announcements-verify";
-export declare const PermissionApproveAnnouncements = "announcements-approve";
-export declare const PermissionReviseAnnouncements = "announcements-revise";
-export declare const PermissionStandingAnnouncements = "announcements-standing";
-export declare const PermissionHaltedAnnouncements = "announcements-halted";
-export declare const PermissionDiscardAnnouncements = "announcements-discard";
-export declare const PermissionRestoreAnnouncements = "announcements-restore";
-export declare const PermissionCompletedAnnouncements = "announcements-completed";
-export declare const PermissionHaltAnnouncement = "announcements-halt";
-export declare const PermissionMarkAnnouncementasCompleted = "announcements-mark-complete";
-export declare const PermissionsAnnouncements: string[];
-export declare const PermissionNewShift = "shifts-new";
-export declare const PermissionDraftShifts = "shifts-drafts";
-export declare const PermissionVerifyShifts = "shifts-verify";
-export declare const PermissionApproveShifts = "shifts-approve";
-export declare const PermissionReviseShifts = "shifts-revise";
-export declare const PermissionStandingShifts = "shifts-standing";
-export declare const PermissionHaltedShifts = "shifts-halted";
-export declare const PermissionDiscardShifts = "shifts-discard";
-export declare const PermissionRestoreShifts = "shifts-restore";
-export declare const PermissionCompletedShifts = "shifts-completed";
-export declare const PermissionHaltShift = "shifts-halt";
-export declare const PermissionMarkShiftasCompleted = "shifts-mark-complete";
-export declare const PermissionsShifts: string[];
-export declare const PermissionNewShiftGroup = "shift-groups-new";
-export declare const PermissionDraftShiftGroups = "shift-groups-drafts";
-export declare const PermissionVerifyShiftGroups = "shift-groups-verify";
-export declare const PermissionApproveShiftGroups = "shift-groups-approve";
-export declare const PermissionReviseShiftGroups = "shift-groups-revise";
-export declare const PermissionStandingShiftGroups = "shift-groups-standing";
-export declare const PermissionHaltedShiftGroups = "shift-groups-halted";
-export declare const PermissionDiscardShiftGroups = "shift-groups-discard";
-export declare const PermissionRestoreShiftGroups = "shift-groups-restore";
-export declare const PermissionCompletedShiftGroups = "shift-groups-completed";
-export declare const PermissionHaltShiftGroup = "shift-groups-halt";
-export declare const PermissionMarkShiftGroupasCompleted = "shift-groups-mark-complete";
-export declare const PermissionsShiftGroups: string[];
-export declare const PermissionNewHoliday = "holidays-new";
-export declare const PermissionDraftHolidays = "holidays-drafts";
-export declare const PermissionVerifyHolidays = "holidays-verify";
-export declare const PermissionApproveHolidays = "holidays-approve";
-export declare const PermissionReviseHolidays = "holidays-revise";
-export declare const PermissionStandingHolidays = "holidays-standing";
-export declare const PermissionHaltedHolidays = "holidays-halted";
-export declare const PermissionDiscardHolidays = "holidays-discard";
-export declare const PermissionRestoreHolidays = "holidays-restore";
-export declare const PermissionCompletedHolidays = "holidays-completed";
-export declare const PermissionHaltHoliday = "holidays-halt";
-export declare const PermissionMarkHolidayasCompleted = "holidays-mark-complete";
-export declare const PermissionsHolidays: string[];
-export declare const PermissionNewLeaveType = "leaves-types-new";
-export declare const PermissionDraftLeaveTypes = "leaves-types-drafts";
-export declare const PermissionVerifyLeaveTypes = "leaves-types-verify";
-export declare const PermissionApproveLeaveTypes = "leaves-types-approve";
-export declare const PermissionReviseLeaveTypes = "leaves-types-revise";
-export declare const PermissionStandingLeaveTypes = "leaves-types-standing";
-export declare const PermissionHaltedLeaveTypes = "leaves-types-halted";
-export declare const PermissionDiscardLeaveTypes = "leaves-types-discard";
-export declare const PermissionRestoreLeaveTypes = "leaves-types-restore";
-export declare const PermissionCompletedLeaveTypes = "leaves-types-completed";
-export declare const PermissionHaltLeaveType = "leaves-types-halt";
-export declare const PermissionMarkLeaveTypeasCompleted = "leaves-types-mark-complete";
-export declare const PermissionsLeavesTypes: string[];
-export declare const PermissionNewLeaveAdjustment = "leaves-adjustments-new";
-export declare const PermissionDraftLeavesAdjustments = "leaves-adjustments-drafts";
-export declare const PermissionVerifyLeavesAdjustments = "leaves-adjustments-verify";
-export declare const PermissionApproveLeavesAdjustments = "leaves-adjustments-approve";
-export declare const PermissionReviseLeavesAdjustments = "leaves-adjustments-revise";
-export declare const PermissionStandingLeavesAdjustments = "leaves-adjustments-standing";
-export declare const PermissionHaltedLeavesAdjustments = "leaves-adjustments-halted";
-export declare const PermissionDiscardLeavesAdjustments = "leaves-adjustments-discard";
-export declare const PermissionRestoreLeavesAdjustments = "leaves-adjustments-restore";
-export declare const PermissionCompletedLeavesAdjustments = "leaves-adjustments-completed";
-export declare const PermissionHaltLeaveAdjustment = "leaves-adjustments-halt";
-export declare const PermissionMarkLeaveAdjustmentasCompleted = "leaves-adjustments-mark-complete";
-export declare const PermissionsLeavesAdjustments: string[];
-export declare const PermissionNewLeaveRequest = "leaves-requests-new";
-export declare const PermissionDraftLeavesRequests = "leaves-requests-drafts";
-export declare const PermissionVerifyLeavesRequests = "leaves-requests-verify";
-export declare const PermissionApproveLeavesRequests = "leaves-requests-approve";
-export declare const PermissionReviseLeavesRequests = "leaves-requests-revise";
-export declare const PermissionStandingLeavesRequests = "leaves-requests-standing";
-export declare const PermissionHaltedLeavesRequests = "leaves-requests-halted";
-export declare const PermissionDiscardLeavesRequests = "leaves-requests-discard";
-export declare const PermissionRestoreLeavesRequests = "leaves-requests-restore";
-export declare const PermissionCompletedLeavesRequests = "leaves-requests-completed";
-export declare const PermissionHaltLeaveRequest = "leaves-requests-halt";
-export declare const PermissionMarkLeaveRequestasCompleted = "leaves-requests-mark-complete";
-export declare const PermissionsLeavesRequests: string[];
-export declare const PermissionNewOvertime = "overtimes-new";
-export declare const PermissionDraftOvertime = "overtimes-drafts";
-export declare const PermissionVerifyOvertime = "overtimes-verify";
-export declare const PermissionApproveOvertime = "overtimes-approve";
-export declare const PermissionReviseOvertime = "overtimes-revise";
-export declare const PermissionStandingOvertime = "overtimes-standing";
-export declare const PermissionHaltedOvertime = "overtimes-halted";
-export declare const PermissionDiscardOvertime = "overtimes-discard";
-export declare const PermissionRestoreOvertime = "overtimes-restore";
-export declare const PermissionCompletedOvertime = "overtimes-completed";
-export declare const PermissionHaltOvertime = "overtimes-halt";
-export declare const PermissionMarkOvertimeasCompleted = "overtimes-mark-complete";
-export declare const PermissionsOvertimes: string[];
-export declare const PermissionNewAttendance = "attendances-new";
-export declare const PermissionDraftAttendances = "attendances-drafts";
-export declare const PermissionVerifyAttendances = "attendances-verify";
-export declare const PermissionApproveAttendances = "attendances-approve";
-export declare const PermissionReviseAttendances = "attendances-revise";
-export declare const PermissionStandingAttendances = "attendances-standing";
-export declare const PermissionHaltedAttendances = "attendances-halted";
-export declare const PermissionDiscardAttendances = "attendances-discard";
-export declare const PermissionRestoreAttendances = "attendances-restore";
-export declare const PermissionCompletedAttendances = "attendances-completed";
-export declare const PermissionHaltAttendance = "attendances-halt";
-export declare const PermissionMarkAttendanceasCompleted = "attendances-mark-complete";
-export declare const PermissionsAttendances: string[];
-export declare const PermissionNewAbsence = "absences-new";
-export declare const PermissionDraftAbsences = "absences-drafts";
-export declare const PermissionVerifyAbsences = "absences-verify";
-export declare const PermissionApproveAbsences = "absences-approve";
-export declare const PermissionReviseAbsences = "absences-revise";
-export declare const PermissionStandingAbsences = "absences-standing";
-export declare const PermissionHaltedAbsences = "absences-halted";
-export declare const PermissionDiscardAbsences = "absences-discard";
-export declare const PermissionRestoreAbsences = "absences-restore";
-export declare const PermissionCompletedAbsences = "absences-completed";
-export declare const PermissionHaltAbsence = "absences-halt";
-export declare const PermissionMarkAbsenceasCompleted = "absences-mark-complete";
-export declare const PermissionsAbsences: string[];
-export declare const PermissionNewOnDuty = "onduties-new";
-export declare const PermissionDraftOnDuties = "onduties-drafts";
-export declare const PermissionVerifyOnDuties = "onduties-verify";
-export declare const PermissionApproveOnDuties = "onduties-approve";
-export declare const PermissionReviseOnDuties = "onduties-revise";
-export declare const PermissionStandingOnDuties = "onduties-standing";
-export declare const PermissionHaltedOnDuties = "onduties-halted";
-export declare const PermissionDiscardOnDuties = "onduties-discard";
-export declare const PermissionRestoreOnDuties = "onduties-restore";
-export declare const PermissionCompletedOnDuties = "onduties-completed";
-export declare const PermissionHaltOnDuty = "onduties-halt";
-export declare const PermissionMarkOnDutyasCompleted = "onduties-mark-complete";
-export declare const PermissionsOnduties: string[];
-export declare const PermissionNewAttendanceAmendment = "attendances-amendments-new";
-export declare const PermissionDraftAttendanceAmendments = "attendances-amendments-drafts";
-export declare const PermissionVerifyAttendanceAmendments = "attendances-amendments-verify";
-export declare const PermissionApproveAttendanceAmendments = "attendances-amendments-approve";
-export declare const PermissionReviseAttendanceAmendments = "attendances-amendments-revise";
-export declare const PermissionStandingAttendanceAmendments = "attendances-amendments-standing";
-export declare const PermissionHaltedAttendanceAmendments = "attendances-amendments-halted";
-export declare const PermissionDiscardAttendanceAmendments = "attendances-amendments-discard";
-export declare const PermissionRestoreAttendanceAmendments = "attendances-amendments-restore";
-export declare const PermissionCompletedAttendanceAmendments = "attendances-amendments-completed";
-export declare const PermissionHaltAttendanceAmendment = "attendances-amendments-halt";
-export declare const PermissionMarkAttendanceAmendmentasCompleted = "attendances-amendments-mark-complete";
-export declare const PermissionsAttendancesAmendments: string[];
-export declare const PermissionTeamNew = "teams-new";
-export declare const PermissionTeamDrafts = "teams-drafts";
-export declare const PermissionTeamVerify = "teams-verify";
-export declare const PermissionTeamRevise = "teams-revise";
-export declare const PermissionTeamHalted = "teams-halted";
-export declare const PermissionTeamDiscarded = "teams-discarded";
-export declare const PermissionRestoreTeam = "teams-restore";
-export declare const PermissionTeamApprove = "teams-approve";
-export declare const PermissionTeamStanding = "teams-standing";
-export declare const PermissionTeamCompleted = "teams-completed";
-export declare const PermissionTeamHalt = "teams-extra-halt";
-export declare const PermissionTeamComplete = "teams-mark-complete";
-export declare const PermissionTeamDiscard = "teams-extra-discard";
-export declare const PermissionReopenTeam = "teams-extra-reopen";
-export declare const PermissionsTeams: string[];
-export declare const PermissionDepartmentNew = "departments-new";
-export declare const PermissionDepartmentDrafts = "departments-drafts";
-export declare const PermissionDepartmentVerify = "departments-verify";
-export declare const PermissionDepartmentRevise = "departments-revise";
-export declare const PermissionDepartmentHalted = "departments-halted";
-export declare const PermissionDepartmentDiscarded = "departments-discarded";
-export declare const PermissionRestoreDepartment = "departments-restore";
-export declare const PermissionDepartmentApprove = "departments-approve";
-export declare const PermissionDepartmentStanding = "departments-standing";
-export declare const PermissionDepartmentCompleted = "departments-completed";
-export declare const PermissionDepartmentHalt = "departments-extra-halt";
-export declare const PermissionDepartmentComplete = "departments-mark-complete";
-export declare const PermissionDepartmentDiscard = "departments-extra-discard";
-export declare const PermissionReopenDepartment = "departments-extra-reopen";
-export declare const PermissionsDepartments: string[];
-export declare const PermissionNewVisitation = "visitations-new";
-export declare const PermissionDraftVisitations = "visitations-drafts";
-export declare const PermissionVerifyVisitations = "visitations-verify";
-export declare const PermissionApproveVisitations = "visitations-approve";
-export declare const PermissionReviseVisitations = "visitations-revise";
-export declare const PermissionStandingVisitations = "visitations-standing";
-export declare const PermissionHaltedVisitations = "visitations-halted";
-export declare const PermissionDiscardVisitations = "visitations-discard";
-export declare const PermissionRestoreVisitations = "visitations-restore";
-export declare const PermissionCompletedVisitations = "visitations-completed";
-export declare const PermissionHaltVisitation = "visitations-halt";
-export declare const PermissionMarkVisitationasCompleted = "visitations-mark-complete";
-export declare const PermissionsVisitations: string[];
-export declare const PermissionNewSkillParameter = "skills-params-new";
-export declare const PermissionDraftSkillParameters = "skills-params-drafts";
-export declare const PermissionVerifySkillParameters = "skills-params-verify";
-export declare const PermissionApproveSkillParameters = "skills-params-approve";
-export declare const PermissionReviseSkillParameters = "skills-params-revise";
-export declare const PermissionStandingSkillParameters = "skills-params-standing";
-export declare const PermissionHaltedSkillParameters = "skills-params-halted";
-export declare const PermissionDiscardSkillParameters = "skills-params-discard";
-export declare const PermissionRestoreSkillParameters = "skills-params-restore";
-export declare const PermissionCompletedSkillParameters = "skills-params-completed";
-export declare const PermissionHaltSkillParameter = "skills-params-halt";
-export declare const PermissionMarkSkillParameterasCompleted = "skills-params-mark-complete";
-export declare const PermissionsSkillsParams: string[];
-export declare const PermissionSkillGroupNew = "skills-groups-new";
-export declare const PermissionSkillGroupDrafts = "skills-groups-drafts";
-export declare const PermissionSkillGroupVerify = "skills-groups-verify";
-export declare const PermissionSkillGroupRevise = "skills-groups-revise";
-export declare const PermissionSkillGroupHalted = "skills-groups-halted";
-export declare const PermissionSkillGroupDiscarded = "skills-groups-discarded";
-export declare const PermissionRestoreSkillGroup = "skills-groups-restore";
-export declare const PermissionSkillGroupApprove = "skills-groups-approve";
-export declare const PermissionSkillGroupStanding = "skills-groups-standing";
-export declare const PermissionSkillGroupCompleted = "skills-groups-completed";
-export declare const PermissionSkillGroupHalt = "skills-groups-extra-halt";
-export declare const PermissionSkillGroupComplete = "skills-groups-mark-complete";
-export declare const PermissionSkillGroupDiscard = "skills-groups-extra-discard";
-export declare const PermissionReopenSkillGroup = "skills-groups-extra-reopen";
-export declare const PermissionsSkillsGroups: string[];
-export declare const PermissionNewGoal = "goals-new";
-export declare const PermissionDraftGoal = "goals-drafts";
-export declare const PermissionVerifyGoal = "goals-verify";
-export declare const PermissionReviseGoal = "goals-revise";
-export declare const PermissionHaltedGoal = "goals-halted";
-export declare const PermissionGoalDiscarded = "goals-discarded";
-export declare const PermissionRestoreGoal = "goals-restore";
-export declare const PermissionApproveGoal = "goals-approve";
-export declare const PermissionStandingGoal = "goals-standing";
-export declare const PermissionCompletedGoal = "goals-completed";
-export declare const PermissionHaltGoal = "goals-halt";
-export declare const PermissionMarkGoalasCompleted = "goals-mark-completed";
-export declare const PermissionGoalDiscard = "goals-extra-discard";
-export declare const PermissionReopenGoal = "goals-extra-reopen";
-export declare const PermissionsGoals: string[];
-export declare const PermissionNewActivityTag = "activities-tags-new";
-export declare const PermissionDraftActivitiesTags = "activities-tags-drafts";
-export declare const PermissionVerifyActivitiesTags = "activities-tags-verify";
-export declare const PermissionApproveActivitiesTags = "activities-tags-approve";
-export declare const PermissionReviseActivitiesTags = "activities-tags-revise";
-export declare const PermissionStandingActivitiesTags = "activities-tags-standing";
-export declare const PermissionHaltedActivitiesTags = "activities-tags-halted";
-export declare const PermissionDiscardActivitiesTags = "activities-tags-discarded";
-export declare const PermissionRestoreActivitiesTags = "activities-tags-restore";
-export declare const PermissionHaltActivityTag = "activities-tags-halt";
-export declare const PermissionDiscardActivityTag = "activities-tags-extra-discard";
-export declare const PermissionsActivitiesTags: string[];
-export declare const PermissionNewActivityStatus = "activities-statuses-new";
-export declare const PermissionDraftActivitiesStatuses = "activities-statuses-drafts";
-export declare const PermissionVerifyActivitiesStatuses = "activities-statuses-verify";
-export declare const PermissionApproveActivitiesStatuses = "activities-statuses-approve";
-export declare const PermissionReviseActivitiesStatuses = "activities-statuses-revise";
-export declare const PermissionStandingActivitiesStatuses = "activities-statuses-standing";
-export declare const PermissionHaltedActivitiesStatuses = "activities-statuses-halted";
-export declare const PermissionDiscardActivitiesStatuses = "activities-statuses-discarded";
-export declare const PermissionRestoreActivitiesStatuses = "activities-statuses-restore";
-export declare const PermissionHaltActivityStatus = "activities-statuses-halt";
-export declare const PermissionDiscardActivityStatus = "activities-statuses-extra-discard";
-export declare const PermissionsActivitiesStatuses: string[];
-export declare const PermissionNewActivityGroup = "activities-groups-new";
-export declare const PermissionDraftActivitiesGroups = "activities-groups-drafts";
-export declare const PermissionVerifyActivitiesGroups = "activities-groups-verify";
-export declare const PermissionApproveActivitiesGroups = "activities-groups-approve";
-export declare const PermissionReviseActivitiesGroups = "activities-groups-revise";
-export declare const PermissionStandingActivitiesGroups = "activities-groups-standing";
-export declare const PermissionHaltedActivitiesGroups = "activities-groups-halted";
-export declare const PermissionDiscardActivitiesGroups = "activities-groups-discarded";
-export declare const PermissionRestoreActivitiesGroups = "activities-groups-restore";
-export declare const PermissionHaltActivityGroup = "activities-groups-halt";
-export declare const PermissionDiscardActivityGroup = "activities-groups-extra-discard";
-export declare const PermissionsActivitiesGroups: string[];
-export declare const PermissionNewActionCode = "actions-codes-new";
-export declare const PermissionDraftActionsCodes = "actions-codes-drafts";
-export declare const PermissionVerifyActionsCodes = "actions-codes-verify";
-export declare const PermissionApproveActionsCodes = "actions-codes-approve";
-export declare const PermissionReviseActionsCodes = "actions-codes-revise";
-export declare const PermissionStandingActionsCodes = "actions-codes-standing";
-export declare const PermissionHaltedActionsCodes = "actions-codes-halted";
-export declare const PermissionDiscardActionsCodes = "actions-codes-discarded";
-export declare const PermissionRestoreActionsCodes = "actions-codes-restore";
-export declare const PermissionHaltActionCode = "actions-codes-halt";
-export declare const PermissionDiscardActionCode = "actions-codes-extra-discard";
-export declare const PermissionsActionsCodes: string[];
-export declare const PermissionActivityNew = "activities-create";
-export declare const PermissionActivityUpdate = "activities-update";
-export declare const PermissionActivityOpen = "activities-open";
-export declare const PermissionActivityCompleted = "activities-completed";
-export declare const PermissionActivityComplete = "activities-mark-complete";
-export declare const PermissionActivityReopen = "activities-extra-reopen";
-export declare const PermissionActivityCancelled = "activities-cancelled";
-export declare const PermissionActivityCancel = "activities-mark-cancel";
-export declare const PermissionMyActivityOpen = "activities-my-open";
-export declare const PermissionMyActivityCompleted = "activities-my-completed";
-export declare const PermissionMyActivityCancelled = "activities-my-cancelled";
-export declare const PermissionsActivities: string[];
-export declare const PermissionMeetingNew = "meetings-create";
-export declare const PermissionMeetingUpdate = "meetings-update";
-export declare const PermissionMeetingOpen = "meetings-open";
-export declare const PermissionMeetingCompleted = "meetings-completed";
-export declare const PermissionMeetingComplete = "meetings-mark-complete";
-export declare const PermissionMeetingCancelled = "meetings-cancelled";
-export declare const PermissionMeetingCancel = "meetings-mark-cancel";
-export declare const PermissionsMeetings: string[];
-export declare const PermissionNoteNew = "notes-create";
-export declare const PermissionNoteUpdate = "notes-update";
-export declare const PermissionNoteOpen = "notes-open";
-export declare const PermissionNoteCompleted = "notes-completed";
-export declare const PermissionNoteComplete = "notes-mark-complete";
-export declare const PermissionNoteCancelled = "notes-cancelled";
-export declare const PermissionNoteCancel = "notes-mark-cancel";
-export declare const PermissionMyNoteOpen = "notes-my-open";
-export declare const PermissionMyNoteCompleted = "notes-my-completed";
-export declare const PermissionMyNoteCancelled = "notes-my-cancelled";
-export declare const PermissionsNotes: string[];
-export declare const PermissionClientStreamNew = "client-streams-create";
-export declare const PermissionClientStreamUpdate = "client-streams-update";
-export declare const PermissionClientStreamOpen = "client-streams-open";
-export declare const PermissionClientStreamCompleted = "client-streams-completed";
-export declare const PermissionClientStreamComplete = "client-streams-mark-complete";
-export declare const PermissionClientStreamReopen = "client-streams-extra-reopen";
-export declare const PermissionClientStreamCancelled = "client-streams-cancelled";
-export declare const PermissionClientStreamCancel = "client-streams-mark-cancel";
-export declare const PermissionMyClientStreamOpen = "client-streams-my-open";
-export declare const PermissionMyClientStreamCompleted = "client-streams-my-completed";
-export declare const PermissionMyClientStreamCancelled = "client-streams-my-cancelled";
-export declare const PermissionsClientStreams: string[];
-export declare const PermissionGeneralStreamNew = "general-streams-create";
-export declare const PermissionGeneralStreamUpdate = "general-streams-update";
-export declare const PermissionGeneralStreamOpen = "general-streams-open";
-export declare const PermissionGeneralStreamCompleted = "general-streams-completed";
-export declare const PermissionGeneralStreamComplete = "general-streams-mark-complete";
-export declare const PermissionGeneralStreamReopen = "general-streams-extra-reopen";
-export declare const PermissionGeneralStreamCancelled = "general-streams-cancelled";
-export declare const PermissionGeneralStreamCancel = "general-streams-mark-cancel";
-export declare const PermissionMyGeneralStreamOpen = "general-streams-my-open";
-export declare const PermissionMyGeneralStreamCompleted = "general-streams-my-completed";
-export declare const PermissionMyGeneralStreamCancelled = "general-streams-my-cancelled";
-export declare const PermissionsGeneralStreams: string[];
-export declare const PermissionVendorStreamNew = "vendor-streams-create";
-export declare const PermissionVendorStreamUpdate = "vendor-streams-update";
-export declare const PermissionVendorStreamOpen = "vendor-streams-open";
-export declare const PermissionVendorStreamCompleted = "vendor-streams-completed";
-export declare const PermissionVendorStreamComplete = "vendor-streams-mark-complete";
-export declare const PermissionVendorStreamReopen = "vendor-streams-extra-reopen";
-export declare const PermissionVendorStreamCancelled = "vendor-streams-cancelled";
-export declare const PermissionVendorStreamCancel = "vendor-streams-mark-cancel";
-export declare const PermissionMyVendorStreamOpen = "vendor-streams-my-open";
-export declare const PermissionMyVendorStreamCompleted = "vendor-streams-my-completed";
-export declare const PermissionMyVendorStreamCancelled = "vendor-streams-my-cancelled";
-export declare const PermissionsVendorStreams: string[];
-export declare const PermissionWorkflowRuleNew = "workflows-rules-new";
-export declare const PermissionWorkflowRuleDrafts = "workflows-rules-drafts";
-export declare const PermissionWorkflowRuleVerify = "workflows-rules-verify";
-export declare const PermissionWorkflowRuleRevise = "workflows-rules-revise";
-export declare const PermissionWorkflowRuleHalted = "workflows-rules-halted";
-export declare const PermissionWorkflowRuleDiscarded = "workflows-rules-discarded";
-export declare const PermissionRestoreWorkflowRule = "workflows-rules-restore";
-export declare const PermissionWorkflowRuleApprove = "workflows-rules-approve";
-export declare const PermissionWorkflowRuleStanding = "workflows-rules-standing";
-export declare const PermissionWorkflowRuleCompleted = "workflows-rules-completed";
-export declare const PermissionWorkflowRuleHalt = "workflows-rules-extra-halt";
-export declare const PermissionWorkflowRuleComplete = "workflows-rules-mark-complete";
-export declare const PermissionWorkflowRuleDiscard = "workflows-rules-extra-discard";
-export declare const PermissionReopenWorkflowRule = "workflows-rules-extra-reopen";
-export declare const PermissionsWorkflowsRules: string[];
+export declare const PermissionRoleNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreRole: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRoleDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenRole: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsRoles: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionUserNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreUser: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionUserDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsUsers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewFormSection: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionViewFormSections: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionModifyFormSections: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardFormSections: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreFormSections: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionNewFormField: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionViewFormFields: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionModifyFormFields: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardFormFields: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreFormFields: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsFormsSections: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewClient: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltClient: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardClient: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsClients: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewAssociate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionViewAssociate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionModifyAssociate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardAssociate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreAssociate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsAssociates: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewContractor: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionViewContractor: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionModifyContractor: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardContractor: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreContractor: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsContractors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewVendor: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltVendor: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardVendor: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsVendors: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionViewVendorAccount: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsVendorAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionViewClientAccount: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsClientAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionProductionPlanNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreProductionPlan: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionPlanDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenProductionPlan: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsProductionPlans: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionProductionIndentNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreProductionIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenProductionIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsProductionIndents: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionStockIssuanceNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreStockIssuance: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockIssuanceDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenStockIssuance: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsStockIssuances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionStockReturnNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreStockReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockReturnDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenStockReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsStockReturns: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionStockAuditNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreStockAudit: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenStockAudit: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsStockAudits: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionFeedstockAdd: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockApproveQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockConsumed: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockRework: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockRejected: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockReturnable: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockScrap: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockIssued: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockReject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockConsume: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFeedstockView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsFeedstock: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionMerchandiseAdd: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseApproveQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseConsumed: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseRework: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseRejected: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseReturnable: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseScrap: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseIssued: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseReject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseConsume: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsMerchandise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionEquipmentAdd: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentApproveQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentConsumed: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentRework: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentRejected: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentReturnable: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentScrap: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentIssued: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentReject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentConsume: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquipmentView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsEquipment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionInfrastructureAdd: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureApproveQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureConsumed: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureRework: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureRejected: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureReturnable: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureScrap: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureIssued: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureReject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureConsume: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsInfrastructure: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionComponentsAdd: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsApproveQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsConsumed: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsRework: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsRejected: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsReturnable: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsScrap: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsIssued: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsReject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsConsume: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionComponentsView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsComponents: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionProductsAdd: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsApproveQC: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsConsumed: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsRework: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsRejected: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsScrap: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsIssued: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsReject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsConsume: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductsView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsProducts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionReplaceableIndentNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreReplaceableIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReplaceableIndentDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenReplaceableIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsReplaceableIndents: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionAssetIndentNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreAssetIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAssetIndentDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenAssetIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsAssetIndents: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionPurchaseIndentNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestorePurchaseIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenPurchaseIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsPurchasesIndents: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionOutwardJobNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreOutwardJob: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenOutwardJob: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsOutwardJobs: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionOutwardJobFreeIssueMaterialNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreOutwardJobFreeIssueMaterial: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenOutwardJobFreeIssueMaterial: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsOutwardJobsFreeIssueMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionInwardJobNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreInwardJob: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenInwardJob: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsInwardJobs: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionInwardJobFreeIssueMaterialNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreInwardJobFreeIssueMaterial: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenInwardJobFreeIssueMaterial: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsInwardJobsFreeIssueMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSupplyOfferNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSupplyOffer: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenSupplyOffer: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendSupplyOffer: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSupplyOffers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionPurchaseOrderNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestorePurchaseOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseOrderDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenPurchaseOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendPurchaseOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsPurchases: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewCurrency: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltCurrency: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardCurrency: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsCurrencies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewUnitOfMaterial: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltUnitOfMaterial: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardUnitOfMaterial: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsUnitsOfMaterials: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionProjectNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreProject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProjectDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenProject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsProjects: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSalesOrderNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSalesOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesOrderDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenSalesOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendSalesOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSalesOrders: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSalesQuotationNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSalesQuotation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesQuotationDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenSalesQuotation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendSalesQuotation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSalesQuotations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionProformaInvoiceNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreProformaInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenProformaInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendProformaInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsProformaInvoices: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSalesInvoiceNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSalesInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesInvoiceDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenSalesInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendSalesInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSalesInvoices: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionGoodsDispatchNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreGoodsDispatch: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsDispatchDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenGoodsDispatch: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsGoodsDispatches: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionVendorInvoiceNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreVendorInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorInvoiceDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenVendorInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsVendorInvoices: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionGoodsReceiptNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreGoodsReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoodsReceiptDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenGoodsReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsGoodsReceipts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionWorkOrderNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreWorkOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkOrderDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenWorkOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsWorkOrders: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionPurchaseReturnNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestorePurchaseReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseReturnDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenPurchaseReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsPurchasesReturns: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSaleReturnNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSaleReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReturnDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenSaleReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSalesReturns: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionOutwardJobFreeIssueMaterialReturnNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreOutwardJobFreeIssueMaterialReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOutwardJobFreeIssueMaterialReturnDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenOutwardJobFreeIssueMaterialReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsOutwardJobsFreeIssueMaterialsReturns: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionInwardJobFreeIssueMaterialReturnNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreInwardJobFreeIssueMaterialReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInwardJobFreeIssueMaterialReturnDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenInwardJobFreeIssueMaterialReturn: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsInwardJobsFreeIssueMaterialsReturns: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewPurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftPurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyPurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApprovePurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRevisePurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingPurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedPurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardPurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestorePurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedPurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltPurchasePayment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkPurchasePaymentasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsPurchasesPayments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifySaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltSaleReceipt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkSaleReceiptasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSalesReceipts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionCreditNoteNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreCreditNote: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCreditNoteDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenCreditNote: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsCreditNotes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionDebitNoteNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreDebitNote: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDebitNoteDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenDebitNote: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsDebitNotes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionExpenseNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreExpense: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionExpenseDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenExpense: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsExpenses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSalaryNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSalary: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalaryDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenSalary: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSalaries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewSundry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifySundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltSundry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkSundryasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSundries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewPurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftPurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyPurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRevisePurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedPurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseEnquiryDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestorePurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApprovePurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingPurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedPurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltPurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkPurchaseEnquiryasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseEnquiryDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenPurchaseEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsPurchasesEnquiries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSalesEnquiryNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSalesEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSalesEnquiryDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenSalesEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendSalesEnquiry: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSalesEnquiries: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuotationRequestDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkQuotationRequestasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuotationRequestDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenQuotationRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsQuotationsRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuotationResponseDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkQuotationResponseasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuotationResponseDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsQuotationsResponses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionEquationFamilyNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreEquationFamily: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationFamilyDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenEquationFamily: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsEquationsFamilies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionEquationSalesBundleNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreEquationSalesBundle: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenEquationSalesBundle: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsEquationsSalesBundles: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionEquationWorkOrderNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreEquationWorkOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationWorkOrderDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenEquationWorkOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendEquationWorkOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsEquationsWorkOrders: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionEquationReplaceableNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreEquationReplaceable: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenEquationReplaceable: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsEquationsReplaceables: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionFamilyNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreFamily: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionFamilyDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionAmendFamily: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsFamilies: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewQCParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedQCParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltQCParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkQCParameterasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsQcParams: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionQCGroupNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreQCGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCGroupDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenQCGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsQcGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionQCSampleNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleUpdate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleFinished: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleFinish: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleAccepted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleAccept: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleAcceptedWithDeviation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleAcceptWithDeviation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleRejected: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleReject: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleReopen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleCancel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsQcSamples: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewTaxParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftTaxParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyTaxParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveTaxParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseTaxParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingTaxParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedTaxParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardTaxParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreTaxParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltTaxParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardTaxParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsTaxParams: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewTaxGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltTaxGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardTaxGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsTaxGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewPayrollParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftPayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyPayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApprovePayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRevisePayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingPayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedPayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardPayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestorePayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedPayrollParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltPayrollParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkPayrollParameterasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsPayrollParams: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionPayrollGroupNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestorePayrollGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPayrollGroupDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenPayrollGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsPayrollGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSet: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsGeneralSettings: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSimpleLogs: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDescriptiveLogs: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsLogs: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewLabel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionViewLabel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionModifyLabel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardLabel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreLabel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsLabels: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewLocation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltLocation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardLocation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsLocations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewBankAccount: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftBankAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyBankAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveBankAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseBankAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingBankAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedBankAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardBankAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreBankAccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltBankAccount: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardBankAccount: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsBankaccounts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardStore: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsStores: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewStorage: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltStorage: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardStorage: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsStorages: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewLedger: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltLedger: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardLedger: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsLedgers: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewAnnouncement: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltAnnouncement: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkAnnouncementasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsAnnouncements: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewShift: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltShift: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkShiftasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsShifts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewShiftGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltShiftGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkShiftGroupasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsShiftGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewHoliday: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltHoliday: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkHolidayasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsHolidays: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewLeaveType: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedLeaveTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltLeaveType: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkLeaveTypeasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsLeavesTypes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewLeaveAdjustment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltLeaveAdjustment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkLeaveAdjustmentasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsLeavesAdjustments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewLeaveRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltLeaveRequest: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkLeaveRequestasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsLeavesRequests: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltOvertime: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkOvertimeasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsOvertimes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewAttendance: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltAttendance: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkAttendanceasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsAttendances: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewAbsence: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltAbsence: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkAbsenceasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsAbsences: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewOnDuty: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedOnDuties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltOnDuty: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkOnDutyasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsOnduties: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewAttendanceAmendment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedAttendanceAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltAttendanceAmendment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkAttendanceAmendmentasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsAttendancesAmendments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionTeamNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreTeam: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionTeamDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenTeam: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsTeams: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionDepartmentNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreDepartment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDepartmentDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenDepartment: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsDepartments: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewVisitation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltVisitation: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkVisitationasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsVisitations: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewSkillParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftSkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifySkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveSkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseSkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingSkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedSkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardSkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedSkillParameters: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltSkillParameter: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkSkillParameterasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSkillsParams: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionSkillGroupNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreSkillGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSkillGroupDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenSkillGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsSkillsGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoalDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionCompletedGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMarkGoalasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGoalDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenGoal: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsGoals: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewActivityTag: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltActivityTag: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardActivityTag: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsActivitiesTags: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewActivityStatus: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltActivityStatus: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardActivityStatus: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsActivitiesStatuses: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewActivityGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltActivityGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardActivityGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsActivitiesGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNewActionCode: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDraftActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVerifyActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionApproveActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReviseActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStandingActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltedActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionHaltActionCode: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionDiscardActionCode: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsActionsCodes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionActivityNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionActivityUpdate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionActivityOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionActivityCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionActivityComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionActivityReopen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionActivityCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionActivityCancel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyActivityOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyActivityCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyActivityCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsActivities: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionMeetingNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMeetingUpdate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMeetingOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMeetingCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMeetingComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMeetingCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMeetingCancel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsMeetings: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionNoteNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionNoteUpdate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionNoteOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionNoteCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionNoteComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionNoteCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionNoteCancel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyNoteOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyNoteCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyNoteCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsNotes: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionClientStreamNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionClientStreamUpdate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionClientStreamOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionClientStreamCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionClientStreamComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionClientStreamReopen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionClientStreamCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionClientStreamCancel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyClientStreamOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyClientStreamCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyClientStreamCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsClientStreams: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionGeneralStreamNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGeneralStreamUpdate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGeneralStreamOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGeneralStreamCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGeneralStreamComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGeneralStreamReopen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGeneralStreamCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionGeneralStreamCancel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyGeneralStreamOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyGeneralStreamCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyGeneralStreamCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsGeneralStreams: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionVendorStreamNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorStreamUpdate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorStreamOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorStreamCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorStreamComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorStreamReopen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorStreamCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVendorStreamCancel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyVendorStreamOpen: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyVendorStreamCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMyVendorStreamCancelled: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsVendorStreams: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionWorkflowRuleNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreWorkflowRule: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionWorkflowRuleDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenWorkflowRule: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsWorkflowsRules: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
 //# sourceMappingURL=permissions.d.ts.map

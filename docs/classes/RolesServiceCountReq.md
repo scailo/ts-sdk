@@ -80,7 +80,7 @@ Message\&lt;RolesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1103
+src/roles.scailo_pb.ts:1161
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1066
+src/roles.scailo_pb.ts:1124
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1059
+src/roles.scailo_pb.ts:1117
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1052
+src/roles.scailo_pb.ts:1110
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1073
+src/roles.scailo_pb.ts:1131
 
 ___
 
@@ -160,7 +160,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1101
+src/roles.scailo_pb.ts:1159
 
 ___
 
@@ -176,7 +176,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1087
+src/roles.scailo_pb.ts:1145
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1080
+src/roles.scailo_pb.ts:1138
 
 ___
 
@@ -208,7 +208,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1017
+src/roles.scailo_pb.ts:1075
 
 ___
 
@@ -224,7 +224,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1010
+src/roles.scailo_pb.ts:1068
 
 ___
 
@@ -240,7 +240,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1038
+src/roles.scailo_pb.ts:1096
 
 ___
 
@@ -256,7 +256,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1003
+src/roles.scailo_pb.ts:1061
 
 ___
 
@@ -272,7 +272,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1031
+src/roles.scailo_pb.ts:1089
 
 ___
 
@@ -288,7 +288,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1024
+src/roles.scailo_pb.ts:1082
 
 ___
 
@@ -304,7 +304,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1094
+src/roles.scailo_pb.ts:1152
 
 ___
 
@@ -320,7 +320,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1045
+src/roles.scailo_pb.ts:1103
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1110
+src/roles.scailo_pb.ts:1168
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1108
+src/roles.scailo_pb.ts:1166
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1109
+src/roles.scailo_pb.ts:1167
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1140
+src/roles.scailo_pb.ts:1198
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1128
+src/roles.scailo_pb.ts:1186
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1132
+src/roles.scailo_pb.ts:1190
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1136
+src/roles.scailo_pb.ts:1194

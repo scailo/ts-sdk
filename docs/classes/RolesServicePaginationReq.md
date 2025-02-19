@@ -71,7 +71,7 @@ Message\&lt;RolesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/roles.scailo_pb.ts:706
+src/roles.scailo_pb.ts:764
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:676
+src/roles.scailo_pb.ts:734
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:669
+src/roles.scailo_pb.ts:727
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:683
+src/roles.scailo_pb.ts:741
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.ROLE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:697
+src/roles.scailo_pb.ts:755
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:690
+src/roles.scailo_pb.ts:748
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:704
+src/roles.scailo_pb.ts:762
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:713
+src/roles.scailo_pb.ts:771
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:711
+src/roles.scailo_pb.ts:769
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:712
+src/roles.scailo_pb.ts:770
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:734
+src/roles.scailo_pb.ts:792
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:722
+src/roles.scailo_pb.ts:780
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:726
+src/roles.scailo_pb.ts:784
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:730
+src/roles.scailo_pb.ts:788

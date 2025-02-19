@@ -69,7 +69,7 @@ Message\&lt;RolesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/roles.scailo_pb.ts:774
+src/roles.scailo_pb.ts:832
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:751
+src/roles.scailo_pb.ts:809
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:758
+src/roles.scailo_pb.ts:816
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Role payload = 4;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:772
+src/roles.scailo_pb.ts:830
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:765
+src/roles.scailo_pb.ts:823
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:781
+src/roles.scailo_pb.ts:839
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:779
+src/roles.scailo_pb.ts:837
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:780
+src/roles.scailo_pb.ts:838
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:800
+src/roles.scailo_pb.ts:858
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:788
+src/roles.scailo_pb.ts:846
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:792
+src/roles.scailo_pb.ts:850
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:796
+src/roles.scailo_pb.ts:854
