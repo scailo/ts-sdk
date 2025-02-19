@@ -6903,4 +6903,9 @@ export declare const PermissionsWorkflowsRules: {
     Name: string;
     Description: string;
 }[];
+export declare const PermissionsAll: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[][];
 //# sourceMappingURL=permissions.d.ts.map
