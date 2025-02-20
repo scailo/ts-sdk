@@ -163,10 +163,10 @@ export const FormsFieldsService = {
     /**
      * Import records using a CSV file (duplicate codes will be skipped)
      *
-     * @generated from rpc Scailo.FormsFieldsService.Import
+     * @generated from rpc Scailo.FormsFieldsService.ImportFromCSV
      */
-    import: {
-      name: "Import",
+    importFromCSV: {
+      name: "ImportFromCSV",
       I: StandardFile,
       O: IdentifierUUIDsList,
       kind: MethodKind.Unary,

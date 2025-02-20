@@ -13,10 +13,10 @@ export declare const AssociatesService: {
         /**
          * Import associates
          *
-         * @generated from rpc Scailo.AssociatesService.Import
+         * @generated from rpc Scailo.AssociatesService.ImportFromReq
          */
-        readonly import: {
-            readonly name: "Import";
+        readonly importFromReq: {
+            readonly name: "ImportFromReq";
             readonly I: typeof AssociatesServiceImportRequest;
             readonly O: typeof AssociatesList;
             readonly kind: MethodKind.Unary;

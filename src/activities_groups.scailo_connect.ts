@@ -276,10 +276,10 @@ export const ActivitiesGroupsService = {
     /**
      * Import records using a CSV file (duplicate codes will be skipped)
      *
-     * @generated from rpc Scailo.ActivitiesGroupsService.Import
+     * @generated from rpc Scailo.ActivitiesGroupsService.ImportFromCSV
      */
-    import: {
-      name: "Import",
+    importFromCSV: {
+      name: "ImportFromCSV",
       I: StandardFile,
       O: IdentifierUUIDsList,
       kind: MethodKind.Unary,

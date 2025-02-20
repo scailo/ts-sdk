@@ -129,10 +129,10 @@ export const EquipmentsService = {
     /**
      * Return
      *
-     * @generated from rpc Scailo.EquipmentsService.Return
+     * @generated from rpc Scailo.EquipmentsService.ReturnMaterial
      */
-    return: {
-      name: "Return",
+    returnMaterial: {
+      name: "ReturnMaterial",
       I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,

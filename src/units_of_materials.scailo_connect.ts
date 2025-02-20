@@ -265,10 +265,10 @@ export const UnitsOfMaterialsService = {
     /**
      * Import records using a CSV file (duplicate codes will be skipped)
      *
-     * @generated from rpc Scailo.UnitsOfMaterialsService.Import
+     * @generated from rpc Scailo.UnitsOfMaterialsService.ImportFromCSV
      */
-    import: {
-      name: "Import",
+    importFromCSV: {
+      name: "ImportFromCSV",
       I: StandardFile,
       O: IdentifierUUIDsList,
       kind: MethodKind.Unary,

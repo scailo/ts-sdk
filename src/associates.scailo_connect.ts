@@ -19,10 +19,10 @@ export const AssociatesService = {
     /**
      * Import associates
      *
-     * @generated from rpc Scailo.AssociatesService.Import
+     * @generated from rpc Scailo.AssociatesService.ImportFromReq
      */
-    import: {
-      name: "Import",
+    importFromReq: {
+      name: "ImportFromReq",
       I: AssociatesServiceImportRequest,
       O: AssociatesList,
       kind: MethodKind.Unary,

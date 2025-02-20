@@ -129,10 +129,10 @@ export const FeedstocksService = {
     /**
      * Return
      *
-     * @generated from rpc Scailo.FeedstocksService.Return
+     * @generated from rpc Scailo.FeedstocksService.ReturnMaterial
      */
-    return: {
-      name: "Return",
+    returnMaterial: {
+      name: "ReturnMaterial",
       I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,

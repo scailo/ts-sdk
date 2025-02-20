@@ -452,10 +452,10 @@ export const TeamsService = {
     /**
      * Import records using a CSV file (duplicate codes will be skipped)
      *
-     * @generated from rpc Scailo.TeamsService.Import
+     * @generated from rpc Scailo.TeamsService.ImportFromCSV
      */
-    import: {
-      name: "Import",
+    importFromCSV: {
+      name: "ImportFromCSV",
       I: StandardFile,
       O: IdentifierUUIDsList,
       kind: MethodKind.Unary,

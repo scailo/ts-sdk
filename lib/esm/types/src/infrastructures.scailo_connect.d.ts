@@ -123,10 +123,10 @@ export declare const InfrastructuresService: {
         /**
          * Return
          *
-         * @generated from rpc Scailo.InfrastructuresService.Return
+         * @generated from rpc Scailo.InfrastructuresService.ReturnMaterial
          */
-        readonly return: {
-            readonly name: "Return";
+        readonly returnMaterial: {
+            readonly name: "ReturnMaterial";
             readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;

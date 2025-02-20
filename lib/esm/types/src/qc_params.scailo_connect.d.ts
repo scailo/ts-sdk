@@ -281,10 +281,10 @@ export declare const QCParamsService: {
         /**
          * Import records using a CSV file (duplicate codes will be skipped)
          *
-         * @generated from rpc Scailo.QCParamsService.Import
+         * @generated from rpc Scailo.QCParamsService.ImportFromCSV
          */
-        readonly import: {
-            readonly name: "Import";
+        readonly importFromCSV: {
+            readonly name: "ImportFromCSV";
             readonly I: typeof StandardFile;
             readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;

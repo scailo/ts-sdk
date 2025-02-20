@@ -292,10 +292,10 @@ export declare const DepartmentsService: {
         /**
          * Import records using a CSV file (duplicate codes will be skipped)
          *
-         * @generated from rpc Scailo.DepartmentsService.Import
+         * @generated from rpc Scailo.DepartmentsService.ImportFromCSV
          */
-        readonly import: {
-            readonly name: "Import";
+        readonly importFromCSV: {
+            readonly name: "ImportFromCSV";
             readonly I: typeof StandardFile;
             readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;

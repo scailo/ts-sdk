@@ -129,10 +129,10 @@ export const MerchandisesService = {
     /**
      * Return
      *
-     * @generated from rpc Scailo.MerchandisesService.Return
+     * @generated from rpc Scailo.MerchandisesService.ReturnMaterial
      */
-    return: {
-      name: "Return",
+    returnMaterial: {
+      name: "ReturnMaterial",
       I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
       kind: MethodKind.Unary,

@@ -221,10 +221,10 @@ export const FamiliesService = {
     /**
      * Import families using a CSV file (duplicate codes will be skipped)
      *
-     * @generated from rpc Scailo.FamiliesService.Import
+     * @generated from rpc Scailo.FamiliesService.ImportFromCSV
      */
-    import: {
-      name: "Import",
+    importFromCSV: {
+      name: "ImportFromCSV",
       I: StandardFile,
       O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
