@@ -27,8 +27,10 @@ from message Scailo.FormsFieldsServiceSearchAllReq
 - [isActive](FormsFieldsServiceSearchAllReq.md#isactive)
 - [offset](FormsFieldsServiceSearchAllReq.md#offset)
 - [searchKey](FormsFieldsServiceSearchAllReq.md#searchkey)
+- [sectionId](FormsFieldsServiceSearchAllReq.md#sectionid)
 - [sortKey](FormsFieldsServiceSearchAllReq.md#sortkey)
 - [sortOrder](FormsFieldsServiceSearchAllReq.md#sortorder)
+- [type](FormsFieldsServiceSearchAllReq.md#type)
 - [fields](FormsFieldsServiceSearchAllReq.md#fields)
 - [runtime](FormsFieldsServiceSearchAllReq.md#runtime)
 - [typeName](FormsFieldsServiceSearchAllReq.md#typename)
@@ -72,7 +74,7 @@ Message\&lt;FormsFieldsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:965
+src/forms_fields.scailo_pb.ts:979
 
 ## Properties
 
@@ -156,6 +158,22 @@ src/forms_fields.scailo_pb.ts:963
 
 ___
 
+### sectionId
+
+• **sectionId**: `bigint` = `protoInt64.zero`
+
+The ID of the corresponding form section that the form field belongs to
+
+**`Generated`**
+
+from field: uint64 section_id = 12;
+
+#### Defined in
+
+src/forms_fields.scailo_pb.ts:977
+
+___
+
 ### sortKey
 
 • **sortKey**: [`FORM_FIELD_SORT_KEY`](../enums/FORM_FIELD_SORT_KEY.md) = `FORM_FIELD_SORT_KEY.FORM_FIELD_SORT_KEY_ID_UNSPECIFIED`
@@ -188,13 +206,29 @@ src/forms_fields.scailo_pb.ts:942
 
 ___
 
+### type
+
+• **type**: [`FORM_TYPE`](../enums/FORM_TYPE.md) = `FORM_TYPE.FORM_TYPE_ANY_UNSPECIFIED`
+
+The type of the form field
+
+**`Generated`**
+
+from field: Scailo.FORM_TYPE type = 11;
+
+#### Defined in
+
+src/forms_fields.scailo_pb.ts:970
+
+___
+
 ### fields
 
 ▪ `Static` `Readonly` **fields**: `FieldList`
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:972
+src/forms_fields.scailo_pb.ts:986
 
 ___
 
@@ -204,7 +238,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:970
+src/forms_fields.scailo_pb.ts:984
 
 ___
 
@@ -214,7 +248,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:971
+src/forms_fields.scailo_pb.ts:985
 
 ## Methods
 
@@ -502,7 +536,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:994
+src/forms_fields.scailo_pb.ts:1010
 
 ___
 
@@ -523,7 +557,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:982
+src/forms_fields.scailo_pb.ts:998
 
 ___
 
@@ -544,7 +578,7 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:986
+src/forms_fields.scailo_pb.ts:1002
 
 ___
 
@@ -565,4 +599,4 @@ ___
 
 #### Defined in
 
-src/forms_fields.scailo_pb.ts:990
+src/forms_fields.scailo_pb.ts:1006

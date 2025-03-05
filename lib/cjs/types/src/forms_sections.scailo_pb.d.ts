@@ -528,6 +528,12 @@ export declare class FormsSectionsServiceSearchAllReq extends Message<FormsSecti
      * @generated from field: string search_key = 10;
      */
     searchKey: string;
+    /**
+     * The type of the form section
+     *
+     * @generated from field: Scailo.FORM_TYPE type = 11;
+     */
+    type: FORM_TYPE;
     constructor(data?: PartialMessage<FormsSectionsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsSectionsServiceSearchAllReq";

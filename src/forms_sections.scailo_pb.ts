@@ -802,6 +802,13 @@ export class FormsSectionsServiceSearchAllReq extends Message<FormsSectionsServi
    */
   searchKey = "";
 
+  /**
+   * The type of the form section
+   *
+   * @generated from field: Scailo.FORM_TYPE type = 11;
+   */
+  type = FORM_TYPE.FORM_TYPE_ANY_UNSPECIFIED;
+
   constructor(data?: PartialMessage<FormsSectionsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -817,6 +824,7 @@ export class FormsSectionsServiceSearchAllReq extends Message<FormsSectionsServi
     { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(FORM_SECTION_SORT_KEY) },
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "type", kind: "enum", T: proto3.getEnumType(FORM_TYPE) },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsSectionsServiceSearchAllReq {

@@ -29,6 +29,7 @@ from message Scailo.FormsSectionsServiceSearchAllReq
 - [searchKey](FormsSectionsServiceSearchAllReq.md#searchkey)
 - [sortKey](FormsSectionsServiceSearchAllReq.md#sortkey)
 - [sortOrder](FormsSectionsServiceSearchAllReq.md#sortorder)
+- [type](FormsSectionsServiceSearchAllReq.md#type)
 - [fields](FormsSectionsServiceSearchAllReq.md#fields)
 - [runtime](FormsSectionsServiceSearchAllReq.md#runtime)
 - [typeName](FormsSectionsServiceSearchAllReq.md#typename)
@@ -72,7 +73,7 @@ Message\&lt;FormsSectionsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:805
+src/forms_sections.scailo_pb.ts:812
 
 ## Properties
 
@@ -188,13 +189,29 @@ src/forms_sections.scailo_pb.ts:782
 
 ___
 
+### type
+
+• **type**: [`FORM_TYPE`](../enums/FORM_TYPE.md) = `FORM_TYPE.FORM_TYPE_ANY_UNSPECIFIED`
+
+The type of the form section
+
+**`Generated`**
+
+from field: Scailo.FORM_TYPE type = 11;
+
+#### Defined in
+
+src/forms_sections.scailo_pb.ts:810
+
+___
+
 ### fields
 
 ▪ `Static` `Readonly` **fields**: `FieldList`
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:812
+src/forms_sections.scailo_pb.ts:819
 
 ___
 
@@ -204,7 +221,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:810
+src/forms_sections.scailo_pb.ts:817
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:811
+src/forms_sections.scailo_pb.ts:818
 
 ## Methods
 
@@ -502,7 +519,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:834
+src/forms_sections.scailo_pb.ts:842
 
 ___
 
@@ -523,7 +540,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:822
+src/forms_sections.scailo_pb.ts:830
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:826
+src/forms_sections.scailo_pb.ts:834
 
 ___
 
@@ -565,4 +582,4 @@ ___
 
 #### Defined in
 
-src/forms_sections.scailo_pb.ts:830
+src/forms_sections.scailo_pb.ts:838
