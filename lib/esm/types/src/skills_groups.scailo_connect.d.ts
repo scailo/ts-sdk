@@ -1,5 +1,5 @@
 import { SkillGroup, SkillGroupItem, SkillGroupItemHistoryRequest, SkillsGroupsItemsList, SkillsGroupsList, SkillsGroupsServiceCountReq, SkillsGroupsServiceCreateRequest, SkillsGroupsServiceFilterReq, SkillsGroupsServiceItemCreateRequest, SkillsGroupsServiceItemUpdateRequest, SkillsGroupsServicePaginationReq, SkillsGroupsServicePaginationResponse, SkillsGroupsServiceSearchAllReq, SkillsGroupsServiceUpdateRequest } from "./skills_groups.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -289,6 +289,29 @@ export declare const SkillsGroupsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * CSV operations
+         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         *
+         * @generated from rpc Scailo.SkillsGroupsService.DownloadItemsAsCSV
+         */
+        readonly downloadItemsAsCSV: {
+            readonly name: "DownloadItemsAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+         *
+         * @generated from rpc Scailo.SkillsGroupsService.UploadSkillGroupItems
+         */
+        readonly uploadSkillGroupItems: {
+            readonly name: "UploadSkillGroupItems";
+            readonly I: typeof IdentifierUUIDWithFile;
+            readonly O: typeof IdentifiersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View by ID
          *
          * @generated from rpc Scailo.SkillsGroupsService.ViewByID
@@ -396,6 +419,29 @@ export declare const SkillsGroupsService: {
             readonly name: "Count";
             readonly I: typeof SkillsGroupsServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.SkillsGroupsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof SkillsGroupsServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Import records using a CSV file (duplicate codes will be skipped)
+         *
+         * @generated from rpc Scailo.SkillsGroupsService.ImportFromCSV
+         */
+        readonly importFromCSV: {
+            readonly name: "ImportFromCSV";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };
