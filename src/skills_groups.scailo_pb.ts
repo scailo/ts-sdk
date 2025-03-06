@@ -16,39 +16,47 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
  */
 export enum SKILL_GROUP_ITEM_INPUT_VALUE_TYPE {
   /**
+   * Denotes that value type is disregarded. This is used only within search APIs
+   *
+   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED = 0;
+   */
+  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED = 0,
+
+  /**
    * Input value type is an absolute number (with min and max defined in number_min_value and number_max_value)
    *
-   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED = 0;
+   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE = 1;
    */
-  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED = 0,
+  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE = 1,
 
   /**
    * Input value type is a percentage
    *
-   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 1;
+   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 2;
    */
-  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 1,
+  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 2,
 
   /**
    * Input value type is a textual input
    *
-   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 2;
+   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 3;
    */
-  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 2,
+  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 3,
 
   /**
    * Input value type is a dropdown (from the values as defined in text_values)
    *
-   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3;
+   * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 4;
    */
-  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3,
+  SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 4,
 }
 // Retrieve enum metadata with: proto3.getEnumType(SKILL_GROUP_ITEM_INPUT_VALUE_TYPE)
 proto3.util.setEnumType(SKILL_GROUP_ITEM_INPUT_VALUE_TYPE, "Scailo.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE", [
-  { no: 0, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED" },
-  { no: 1, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE" },
-  { no: 2, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT" },
-  { no: 3, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN" },
+  { no: 0, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED" },
+  { no: 1, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE" },
+  { no: 2, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE" },
+  { no: 3, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT" },
+  { no: 4, name: "SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN" },
 ]);
 
 /**
@@ -509,7 +517,7 @@ export class SkillsGroupsServiceItemCreateRequest extends Message<SkillsGroupsSe
    *
    * @generated from field: Scailo.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE input_value_type = 12;
    */
-  inputValueType = SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED;
+  inputValueType = SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The minimum value (in cents) in case the input value type is number-absolute or number-percentage
@@ -600,7 +608,7 @@ export class SkillsGroupsServiceItemUpdateRequest extends Message<SkillsGroupsSe
    *
    * @generated from field: Scailo.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE input_value_type = 12;
    */
-  inputValueType = SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED;
+  inputValueType = SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The minimum value (in cents) in case the input value type is number-absolute or number-percentage
@@ -725,7 +733,7 @@ export class SkillGroupItem extends Message<SkillGroupItem> {
    *
    * @generated from field: Scailo.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE input_value_type = 12;
    */
-  inputValueType = SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED;
+  inputValueType = SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The minimum value (in cents) in case the input value type is number-absolute or number-percentage

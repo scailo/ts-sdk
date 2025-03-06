@@ -71,7 +71,7 @@ Message\&lt;SkillsGroupsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:980
+src/skills_groups.scailo_pb.ts:988
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:950
+src/skills_groups.scailo_pb.ts:958
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:943
+src/skills_groups.scailo_pb.ts:951
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:957
+src/skills_groups.scailo_pb.ts:965
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.SKILL_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:971
+src/skills_groups.scailo_pb.ts:979
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:964
+src/skills_groups.scailo_pb.ts:972
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:978
+src/skills_groups.scailo_pb.ts:986
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:987
+src/skills_groups.scailo_pb.ts:995
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:985
+src/skills_groups.scailo_pb.ts:993
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:986
+src/skills_groups.scailo_pb.ts:994
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1008
+src/skills_groups.scailo_pb.ts:1016
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:996
+src/skills_groups.scailo_pb.ts:1004
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1000
+src/skills_groups.scailo_pb.ts:1008
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1004
+src/skills_groups.scailo_pb.ts:1012

@@ -81,7 +81,7 @@ Message\&lt;SkillsGroupsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1392
+src/skills_groups.scailo_pb.ts:1400
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1348
+src/skills_groups.scailo_pb.ts:1356
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1341
+src/skills_groups.scailo_pb.ts:1349
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1334
+src/skills_groups.scailo_pb.ts:1342
 
 ___
 
@@ -145,7 +145,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1355
+src/skills_groups.scailo_pb.ts:1363
 
 ___
 
@@ -161,7 +161,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1383
+src/skills_groups.scailo_pb.ts:1391
 
 ___
 
@@ -177,7 +177,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1369
+src/skills_groups.scailo_pb.ts:1377
 
 ___
 
@@ -193,7 +193,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1362
+src/skills_groups.scailo_pb.ts:1370
 
 ___
 
@@ -209,7 +209,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1299
+src/skills_groups.scailo_pb.ts:1307
 
 ___
 
@@ -225,7 +225,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1292
+src/skills_groups.scailo_pb.ts:1300
 
 ___
 
@@ -241,7 +241,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1320
+src/skills_groups.scailo_pb.ts:1328
 
 ___
 
@@ -257,7 +257,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1285
+src/skills_groups.scailo_pb.ts:1293
 
 ___
 
@@ -273,7 +273,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1313
+src/skills_groups.scailo_pb.ts:1321
 
 ___
 
@@ -289,7 +289,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1306
+src/skills_groups.scailo_pb.ts:1314
 
 ___
 
@@ -305,7 +305,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1376
+src/skills_groups.scailo_pb.ts:1384
 
 ___
 
@@ -321,7 +321,7 @@ from field: uint64 role_id = 22;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1390
+src/skills_groups.scailo_pb.ts:1398
 
 ___
 
@@ -337,7 +337,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1327
+src/skills_groups.scailo_pb.ts:1335
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1399
+src/skills_groups.scailo_pb.ts:1407
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1397
+src/skills_groups.scailo_pb.ts:1405
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1398
+src/skills_groups.scailo_pb.ts:1406
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1430
+src/skills_groups.scailo_pb.ts:1438
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1418
+src/skills_groups.scailo_pb.ts:1426
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1422
+src/skills_groups.scailo_pb.ts:1430
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1426
+src/skills_groups.scailo_pb.ts:1434

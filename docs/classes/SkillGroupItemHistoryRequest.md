@@ -67,7 +67,7 @@ Message\&lt;SkillGroupItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:902
+src/skills_groups.scailo_pb.ts:910
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 skill_group_id = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:893
+src/skills_groups.scailo_pb.ts:901
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 skill_param_id = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:900
+src/skills_groups.scailo_pb.ts:908
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:909
+src/skills_groups.scailo_pb.ts:917
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:907
+src/skills_groups.scailo_pb.ts:915
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:908
+src/skills_groups.scailo_pb.ts:916
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:926
+src/skills_groups.scailo_pb.ts:934
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:914
+src/skills_groups.scailo_pb.ts:922
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:918
+src/skills_groups.scailo_pb.ts:926
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:922
+src/skills_groups.scailo_pb.ts:930

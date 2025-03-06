@@ -73,7 +73,7 @@ Message\&lt;SkillsGroupsServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:542
+src/skills_groups.scailo_pb.ts:550
 
 ## Properties
 
@@ -89,13 +89,13 @@ from field: string description = 20;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:540
+src/skills_groups.scailo_pb.ts:548
 
 ___
 
 ### inputValueType
 
-• **inputValueType**: [`SKILL_GROUP_ITEM_INPUT_VALUE_TYPE`](../enums/SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.md) = `SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED`
+• **inputValueType**: [`SKILL_GROUP_ITEM_INPUT_VALUE_TYPE`](../enums/SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.md) = `SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED`
 
 The input value type of the item
 
@@ -105,7 +105,7 @@ from field: Scailo.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE input_value_type = 12;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:512
+src/skills_groups.scailo_pb.ts:520
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 number_max_value = 14;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:526
+src/skills_groups.scailo_pb.ts:534
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 number_min_value = 13;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:519
+src/skills_groups.scailo_pb.ts:527
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 skill_group_id = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:498
+src/skills_groups.scailo_pb.ts:506
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 skill_param_id = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:505
+src/skills_groups.scailo_pb.ts:513
 
 ___
 
@@ -185,7 +185,7 @@ from field: repeated string text_values = 15;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:533
+src/skills_groups.scailo_pb.ts:541
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:491
+src/skills_groups.scailo_pb.ts:499
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:549
+src/skills_groups.scailo_pb.ts:557
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:547
+src/skills_groups.scailo_pb.ts:555
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:548
+src/skills_groups.scailo_pb.ts:556
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:572
+src/skills_groups.scailo_pb.ts:580
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:560
+src/skills_groups.scailo_pb.ts:568
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:564
+src/skills_groups.scailo_pb.ts:572
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:568
+src/skills_groups.scailo_pb.ts:576

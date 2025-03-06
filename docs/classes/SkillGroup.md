@@ -78,7 +78,7 @@ Message\&lt;SkillGroup\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:439
+src/skills_groups.scailo_pb.ts:447
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:367
+src/skills_groups.scailo_pb.ts:375
 
 ___
 
@@ -110,7 +110,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:409
+src/skills_groups.scailo_pb.ts:417
 
 ___
 
@@ -126,7 +126,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:388
+src/skills_groups.scailo_pb.ts:396
 
 ___
 
@@ -142,7 +142,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:423
+src/skills_groups.scailo_pb.ts:431
 
 ___
 
@@ -158,7 +158,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:353
+src/skills_groups.scailo_pb.ts:361
 
 ___
 
@@ -174,7 +174,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:437
+src/skills_groups.scailo_pb.ts:445
 
 ___
 
@@ -190,7 +190,7 @@ from field: repeated Scailo.SkillGroupItem list = 20;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:430
+src/skills_groups.scailo_pb.ts:438
 
 ___
 
@@ -206,7 +206,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:381
+src/skills_groups.scailo_pb.ts:389
 
 ___
 
@@ -222,7 +222,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:360
+src/skills_groups.scailo_pb.ts:368
 
 ___
 
@@ -238,7 +238,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:402
+src/skills_groups.scailo_pb.ts:410
 
 ___
 
@@ -254,7 +254,7 @@ from field: uint64 role_id = 12;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:416
+src/skills_groups.scailo_pb.ts:424
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:374
+src/skills_groups.scailo_pb.ts:382
 
 ___
 
@@ -286,7 +286,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:395
+src/skills_groups.scailo_pb.ts:403
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:446
+src/skills_groups.scailo_pb.ts:454
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:444
+src/skills_groups.scailo_pb.ts:452
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:445
+src/skills_groups.scailo_pb.ts:453
 
 ## Methods
 
@@ -604,7 +604,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:474
+src/skills_groups.scailo_pb.ts:482
 
 ___
 
@@ -625,7 +625,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:462
+src/skills_groups.scailo_pb.ts:470
 
 ___
 
@@ -646,7 +646,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:466
+src/skills_groups.scailo_pb.ts:474
 
 ___
 
@@ -667,4 +667,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:470
+src/skills_groups.scailo_pb.ts:478

@@ -36,7 +36,7 @@ from enum value: SKILL_GROUP_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:94
+src/skills_groups.scailo_pb.ts:102
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: SKILL_GROUP_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:87
+src/skills_groups.scailo_pb.ts:95
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: SKILL_GROUP_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:101
+src/skills_groups.scailo_pb.ts:109
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: SKILL_GROUP_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:108
+src/skills_groups.scailo_pb.ts:116
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: SKILL_GROUP_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:73
+src/skills_groups.scailo_pb.ts:81
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: SKILL_GROUP_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:66
+src/skills_groups.scailo_pb.ts:74
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: SKILL_GROUP_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:80
+src/skills_groups.scailo_pb.ts:88
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: SKILL_GROUP_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:115
+src/skills_groups.scailo_pb.ts:123
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: SKILL_GROUP_SORT_KEY_ROLE_ID = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:122
+src/skills_groups.scailo_pb.ts:130

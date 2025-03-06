@@ -77,7 +77,7 @@ Message\&lt;SkillGroupItem\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:758
+src/skills_groups.scailo_pb.ts:766
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:693
+src/skills_groups.scailo_pb.ts:701
 
 ___
 
@@ -109,7 +109,7 @@ from field: string description = 20;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:756
+src/skills_groups.scailo_pb.ts:764
 
 ___
 
@@ -125,13 +125,13 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:679
+src/skills_groups.scailo_pb.ts:687
 
 ___
 
 ### inputValueType
 
-• **inputValueType**: [`SKILL_GROUP_ITEM_INPUT_VALUE_TYPE`](../enums/SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.md) = `SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED`
+• **inputValueType**: [`SKILL_GROUP_ITEM_INPUT_VALUE_TYPE`](../enums/SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.md) = `SKILL_GROUP_ITEM_INPUT_VALUE_TYPE.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED`
 
 The input value type of the item
 
@@ -141,7 +141,7 @@ from field: Scailo.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE input_value_type = 12;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:728
+src/skills_groups.scailo_pb.ts:736
 
 ___
 
@@ -157,7 +157,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:686
+src/skills_groups.scailo_pb.ts:694
 
 ___
 
@@ -173,7 +173,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:700
+src/skills_groups.scailo_pb.ts:708
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 number_max_value = 14;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:742
+src/skills_groups.scailo_pb.ts:750
 
 ___
 
@@ -205,7 +205,7 @@ from field: uint64 number_min_value = 13;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:735
+src/skills_groups.scailo_pb.ts:743
 
 ___
 
@@ -221,7 +221,7 @@ from field: uint64 skill_group_id = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:714
+src/skills_groups.scailo_pb.ts:722
 
 ___
 
@@ -237,7 +237,7 @@ from field: uint64 skill_param_id = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:721
+src/skills_groups.scailo_pb.ts:729
 
 ___
 
@@ -253,7 +253,7 @@ from field: repeated string text_values = 15;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:749
+src/skills_groups.scailo_pb.ts:757
 
 ___
 
@@ -269,7 +269,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:707
+src/skills_groups.scailo_pb.ts:715
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:765
+src/skills_groups.scailo_pb.ts:773
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:763
+src/skills_groups.scailo_pb.ts:771
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:764
+src/skills_groups.scailo_pb.ts:772
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:792
+src/skills_groups.scailo_pb.ts:800
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:780
+src/skills_groups.scailo_pb.ts:788
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:784
+src/skills_groups.scailo_pb.ts:792
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:788
+src/skills_groups.scailo_pb.ts:796

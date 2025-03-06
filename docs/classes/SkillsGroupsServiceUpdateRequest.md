@@ -74,7 +74,7 @@ Message\&lt;SkillsGroupsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:305
+src/skills_groups.scailo_pb.ts:313
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:282
+src/skills_groups.scailo_pb.ts:290
 
 ___
 
@@ -106,7 +106,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:296
+src/skills_groups.scailo_pb.ts:304
 
 ___
 
@@ -122,7 +122,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:303
+src/skills_groups.scailo_pb.ts:311
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:254
+src/skills_groups.scailo_pb.ts:262
 
 ___
 
@@ -154,7 +154,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:275
+src/skills_groups.scailo_pb.ts:283
 
 ___
 
@@ -170,7 +170,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:261
+src/skills_groups.scailo_pb.ts:269
 
 ___
 
@@ -186,7 +186,7 @@ from field: uint64 role_id = 12;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:289
+src/skills_groups.scailo_pb.ts:297
 
 ___
 
@@ -202,7 +202,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:247
+src/skills_groups.scailo_pb.ts:255
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:268
+src/skills_groups.scailo_pb.ts:276
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:312
+src/skills_groups.scailo_pb.ts:320
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:310
+src/skills_groups.scailo_pb.ts:318
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:311
+src/skills_groups.scailo_pb.ts:319
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:336
+src/skills_groups.scailo_pb.ts:344
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:324
+src/skills_groups.scailo_pb.ts:332
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:328
+src/skills_groups.scailo_pb.ts:336
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:332
+src/skills_groups.scailo_pb.ts:340

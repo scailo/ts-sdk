@@ -66,7 +66,7 @@ Message\&lt;SkillsGroupsItemsList\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:853
+src/skills_groups.scailo_pb.ts:861
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SkillGroupItem list = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:851
+src/skills_groups.scailo_pb.ts:859
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:860
+src/skills_groups.scailo_pb.ts:868
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:858
+src/skills_groups.scailo_pb.ts:866
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:859
+src/skills_groups.scailo_pb.ts:867
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:876
+src/skills_groups.scailo_pb.ts:884
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:864
+src/skills_groups.scailo_pb.ts:872
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:868
+src/skills_groups.scailo_pb.ts:876
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:872
+src/skills_groups.scailo_pb.ts:880

@@ -10,29 +10,35 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
  */
 export declare enum SKILL_GROUP_ITEM_INPUT_VALUE_TYPE {
     /**
+     * Denotes that value type is disregarded. This is used only within search APIs
+     *
+     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED = 0;
+     */
+    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED = 0,
+    /**
      * Input value type is an absolute number (with min and max defined in number_min_value and number_max_value)
      *
-     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED = 0;
+     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE = 1;
      */
-    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED = 0,
+    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE = 1,
     /**
      * Input value type is a percentage
      *
-     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 1;
+     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 2;
      */
-    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 1,
+    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 2,
     /**
      * Input value type is a textual input
      *
-     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 2;
+     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 3;
      */
-    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 2,
+    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 3,
     /**
      * Input value type is a dropdown (from the values as defined in text_values)
      *
-     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3;
+     * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 4;
      */
-    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3
+    SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 4
 }
 /**
  *
