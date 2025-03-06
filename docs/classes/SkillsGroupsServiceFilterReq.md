@@ -26,6 +26,7 @@ from message Scailo.SkillsGroupsServiceFilterReq
 - [approvedOnEnd](SkillsGroupsServiceFilterReq.md#approvedonend)
 - [approvedOnStart](SkillsGroupsServiceFilterReq.md#approvedonstart)
 - [approverRoleId](SkillsGroupsServiceFilterReq.md#approverroleid)
+- [code](SkillsGroupsServiceFilterReq.md#code)
 - [completedOnEnd](SkillsGroupsServiceFilterReq.md#completedonend)
 - [completedOnStart](SkillsGroupsServiceFilterReq.md#completedonstart)
 - [count](SkillsGroupsServiceFilterReq.md#count)
@@ -84,7 +85,7 @@ Message\&lt;SkillsGroupsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1219
+src/skills_groups.scailo_pb.ts:1226
 
 ## Properties
 
@@ -149,6 +150,22 @@ from field: uint64 approver_role_id = 14;
 #### Defined in
 
 src/skills_groups.scailo_pb.ts:1189
+
+___
+
+### code
+
+• **code**: `string` = `""`
+
+The skill group code
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/skills_groups.scailo_pb.ts:1217
 
 ___
 
@@ -336,11 +353,11 @@ The ID of the role that this skill group belongs to
 
 **`Generated`**
 
-from field: uint64 role_id = 21;
+from field: uint64 role_id = 22;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1217
+src/skills_groups.scailo_pb.ts:1224
 
 ___
 
@@ -398,7 +415,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1226
+src/skills_groups.scailo_pb.ts:1233
 
 ___
 
@@ -408,7 +425,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1224
+src/skills_groups.scailo_pb.ts:1231
 
 ___
 
@@ -418,7 +435,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1225
+src/skills_groups.scailo_pb.ts:1232
 
 ## Methods
 
@@ -706,7 +723,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1260
+src/skills_groups.scailo_pb.ts:1268
 
 ___
 
@@ -727,7 +744,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1248
+src/skills_groups.scailo_pb.ts:1256
 
 ___
 
@@ -748,7 +765,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1252
+src/skills_groups.scailo_pb.ts:1260
 
 ___
 
@@ -769,4 +786,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1256
+src/skills_groups.scailo_pb.ts:1264

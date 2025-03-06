@@ -814,9 +814,15 @@ export declare class SkillsGroupsServiceFilterReq extends Message<SkillsGroupsSe
      */
     name: string;
     /**
+     * The skill group code
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
+    /**
      * The ID of the role that this skill group belongs to
      *
-     * @generated from field: uint64 role_id = 21;
+     * @generated from field: uint64 role_id = 22;
      */
     roleId: bigint;
     constructor(data?: PartialMessage<SkillsGroupsServiceFilterReq>);
@@ -920,9 +926,15 @@ export declare class SkillsGroupsServiceCountReq extends Message<SkillsGroupsSer
      */
     name: string;
     /**
+     * The skill group code
+     *
+     * @generated from field: string code = 21;
+     */
+    code: string;
+    /**
      * The ID of the role that this skill group belongs to
      *
-     * @generated from field: uint64 role_id = 21;
+     * @generated from field: uint64 role_id = 22;
      */
     roleId: bigint;
     constructor(data?: PartialMessage<SkillsGroupsServiceCountReq>);

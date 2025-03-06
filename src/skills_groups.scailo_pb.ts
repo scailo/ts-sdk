@@ -1210,9 +1210,16 @@ export class SkillsGroupsServiceFilterReq extends Message<SkillsGroupsServiceFil
   name = "";
 
   /**
+   * The skill group code
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The ID of the role that this skill group belongs to
    *
-   * @generated from field: uint64 role_id = 21;
+   * @generated from field: uint64 role_id = 22;
    */
   roleId = protoInt64.zero;
 
@@ -1242,7 +1249,8 @@ export class SkillsGroupsServiceFilterReq extends Message<SkillsGroupsServiceFil
     { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SkillsGroupsServiceFilterReq {
@@ -1368,9 +1376,16 @@ export class SkillsGroupsServiceCountReq extends Message<SkillsGroupsServiceCoun
   name = "";
 
   /**
+   * The skill group code
+   *
+   * @generated from field: string code = 21;
+   */
+  code = "";
+
+  /**
    * The ID of the role that this skill group belongs to
    *
-   * @generated from field: uint64 role_id = 21;
+   * @generated from field: uint64 role_id = 22;
    */
   roleId = protoInt64.zero;
 
@@ -1396,7 +1411,8 @@ export class SkillsGroupsServiceCountReq extends Message<SkillsGroupsServiceCoun
     { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SkillsGroupsServiceCountReq {

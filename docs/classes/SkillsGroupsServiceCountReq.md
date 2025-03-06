@@ -26,6 +26,7 @@ from message Scailo.SkillsGroupsServiceCountReq
 - [approvedOnEnd](SkillsGroupsServiceCountReq.md#approvedonend)
 - [approvedOnStart](SkillsGroupsServiceCountReq.md#approvedonstart)
 - [approverRoleId](SkillsGroupsServiceCountReq.md#approverroleid)
+- [code](SkillsGroupsServiceCountReq.md#code)
 - [completedOnEnd](SkillsGroupsServiceCountReq.md#completedonend)
 - [completedOnStart](SkillsGroupsServiceCountReq.md#completedonstart)
 - [creationTimestampEnd](SkillsGroupsServiceCountReq.md#creationtimestampend)
@@ -80,7 +81,7 @@ Message\&lt;SkillsGroupsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1377
+src/skills_groups.scailo_pb.ts:1392
 
 ## Properties
 
@@ -96,7 +97,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1340
+src/skills_groups.scailo_pb.ts:1348
 
 ___
 
@@ -112,7 +113,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1333
+src/skills_groups.scailo_pb.ts:1341
 
 ___
 
@@ -128,7 +129,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1326
+src/skills_groups.scailo_pb.ts:1334
 
 ___
 
@@ -144,7 +145,23 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1347
+src/skills_groups.scailo_pb.ts:1355
+
+___
+
+### code
+
+• **code**: `string` = `""`
+
+The skill group code
+
+**`Generated`**
+
+from field: string code = 21;
+
+#### Defined in
+
+src/skills_groups.scailo_pb.ts:1383
 
 ___
 
@@ -160,7 +177,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1361
+src/skills_groups.scailo_pb.ts:1369
 
 ___
 
@@ -176,7 +193,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1354
+src/skills_groups.scailo_pb.ts:1362
 
 ___
 
@@ -192,7 +209,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1291
+src/skills_groups.scailo_pb.ts:1299
 
 ___
 
@@ -208,7 +225,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1284
+src/skills_groups.scailo_pb.ts:1292
 
 ___
 
@@ -224,7 +241,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1312
+src/skills_groups.scailo_pb.ts:1320
 
 ___
 
@@ -240,7 +257,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1277
+src/skills_groups.scailo_pb.ts:1285
 
 ___
 
@@ -256,7 +273,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1305
+src/skills_groups.scailo_pb.ts:1313
 
 ___
 
@@ -272,7 +289,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1298
+src/skills_groups.scailo_pb.ts:1306
 
 ___
 
@@ -288,7 +305,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1368
+src/skills_groups.scailo_pb.ts:1376
 
 ___
 
@@ -300,11 +317,11 @@ The ID of the role that this skill group belongs to
 
 **`Generated`**
 
-from field: uint64 role_id = 21;
+from field: uint64 role_id = 22;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1375
+src/skills_groups.scailo_pb.ts:1390
 
 ___
 
@@ -320,7 +337,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1319
+src/skills_groups.scailo_pb.ts:1327
 
 ___
 
@@ -330,7 +347,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1384
+src/skills_groups.scailo_pb.ts:1399
 
 ___
 
@@ -340,7 +357,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1382
+src/skills_groups.scailo_pb.ts:1397
 
 ___
 
@@ -350,7 +367,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1383
+src/skills_groups.scailo_pb.ts:1398
 
 ## Methods
 
@@ -638,7 +655,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1414
+src/skills_groups.scailo_pb.ts:1430
 
 ___
 
@@ -659,7 +676,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1402
+src/skills_groups.scailo_pb.ts:1418
 
 ___
 
@@ -680,7 +697,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1406
+src/skills_groups.scailo_pb.ts:1422
 
 ___
 
@@ -701,4 +718,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1410
+src/skills_groups.scailo_pb.ts:1426
