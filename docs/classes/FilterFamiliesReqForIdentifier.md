@@ -1,122 +1,105 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FamiliesServiceQCGroupCreateRequest
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FilterFamiliesReqForIdentifier
 
-# Class: FamiliesServiceQCGroupCreateRequest
+# Class: FilterFamiliesReqForIdentifier
 
-Describes the parameters necessary to create a family qc group
+Describes the parameters that are required to filter the prospective families for a record represented by the given UUID
 
 **`Generated`**
 
-from message Scailo.FamiliesServiceQCGroupCreateRequest
+from message Scailo.FilterFamiliesReqForIdentifier
 
 ## Hierarchy
 
-- `Message`\<[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)\>
+- `Message`\<[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)\>
 
-  ↳ **`FamiliesServiceQCGroupCreateRequest`**
+  ↳ **`FilterFamiliesReqForIdentifier`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](FamiliesServiceQCGroupCreateRequest.md#constructor)
+- [constructor](FilterFamiliesReqForIdentifier.md#constructor)
 
 ### Properties
 
-- [familyId](FamiliesServiceQCGroupCreateRequest.md#familyid)
-- [qcGroupId](FamiliesServiceQCGroupCreateRequest.md#qcgroupid)
-- [userComment](FamiliesServiceQCGroupCreateRequest.md#usercomment)
-- [fields](FamiliesServiceQCGroupCreateRequest.md#fields)
-- [runtime](FamiliesServiceQCGroupCreateRequest.md#runtime)
-- [typeName](FamiliesServiceQCGroupCreateRequest.md#typename)
+- [filter](FilterFamiliesReqForIdentifier.md#filter)
+- [uuid](FilterFamiliesReqForIdentifier.md#uuid)
+- [fields](FilterFamiliesReqForIdentifier.md#fields)
+- [runtime](FilterFamiliesReqForIdentifier.md#runtime)
+- [typeName](FilterFamiliesReqForIdentifier.md#typename)
 
 ### Methods
 
-- [clone](FamiliesServiceQCGroupCreateRequest.md#clone)
-- [equals](FamiliesServiceQCGroupCreateRequest.md#equals)
-- [fromBinary](FamiliesServiceQCGroupCreateRequest.md#frombinary)
-- [fromJson](FamiliesServiceQCGroupCreateRequest.md#fromjson)
-- [fromJsonString](FamiliesServiceQCGroupCreateRequest.md#fromjsonstring)
-- [getType](FamiliesServiceQCGroupCreateRequest.md#gettype)
-- [toBinary](FamiliesServiceQCGroupCreateRequest.md#tobinary)
-- [toJSON](FamiliesServiceQCGroupCreateRequest.md#tojson)
-- [toJson](FamiliesServiceQCGroupCreateRequest.md#tojson-1)
-- [toJsonString](FamiliesServiceQCGroupCreateRequest.md#tojsonstring)
-- [equals](FamiliesServiceQCGroupCreateRequest.md#equals-1)
-- [fromBinary](FamiliesServiceQCGroupCreateRequest.md#frombinary-1)
-- [fromJson](FamiliesServiceQCGroupCreateRequest.md#fromjson-1)
-- [fromJsonString](FamiliesServiceQCGroupCreateRequest.md#fromjsonstring-1)
+- [clone](FilterFamiliesReqForIdentifier.md#clone)
+- [equals](FilterFamiliesReqForIdentifier.md#equals)
+- [fromBinary](FilterFamiliesReqForIdentifier.md#frombinary)
+- [fromJson](FilterFamiliesReqForIdentifier.md#fromjson)
+- [fromJsonString](FilterFamiliesReqForIdentifier.md#fromjsonstring)
+- [getType](FilterFamiliesReqForIdentifier.md#gettype)
+- [toBinary](FilterFamiliesReqForIdentifier.md#tobinary)
+- [toJSON](FilterFamiliesReqForIdentifier.md#tojson)
+- [toJson](FilterFamiliesReqForIdentifier.md#tojson-1)
+- [toJsonString](FilterFamiliesReqForIdentifier.md#tojsonstring)
+- [equals](FilterFamiliesReqForIdentifier.md#equals-1)
+- [fromBinary](FilterFamiliesReqForIdentifier.md#frombinary-1)
+- [fromJson](FilterFamiliesReqForIdentifier.md#fromjson-1)
+- [fromJsonString](FilterFamiliesReqForIdentifier.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new FamiliesServiceQCGroupCreateRequest**(`data?`): [`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+• **new FilterFamiliesReqForIdentifier**(`data?`): [`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)\> |
+| `data?` | `PartialMessage`\<[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)\> |
 
 #### Returns
 
-[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Overrides
 
-Message\&lt;FamiliesServiceQCGroupCreateRequest\&gt;.constructor
+Message\&lt;FilterFamiliesReqForIdentifier\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2457
+src/families.scailo_pb.ts:1748
 
 ## Properties
 
-### familyId
+### filter
 
-• **familyId**: `bigint` = `protoInt64.zero`
+• `Optional` **filter**: [`FamiliesServiceFilterReq`](FamiliesServiceFilterReq.md)
 
-Stores the family ID
+The families filter to apply
 
 **`Generated`**
 
-from field: uint64 family_id = 10;
+from field: Scailo.FamiliesServiceFilterReq filter = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2448
+src/families.scailo_pb.ts:1746
 
 ___
 
-### qcGroupId
+### uuid
 
-• **qcGroupId**: `bigint` = `protoInt64.zero`
+• **uuid**: `string` = `""`
 
-Stores the qc group ID
-
-**`Generated`**
-
-from field: uint64 qc_group_id = 11;
-
-#### Defined in
-
-src/families.scailo_pb.ts:2455
-
-___
-
-### userComment
-
-• **userComment**: `string` = `""`
-
-Stores any comment that the user might add during this operation
+UUID of the resource
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: string uuid = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2441
+src/families.scailo_pb.ts:1739
 
 ___
 
@@ -126,7 +109,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2464
+src/families.scailo_pb.ts:1755
 
 ___
 
@@ -136,29 +119,29 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2462
+src/families.scailo_pb.ts:1753
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.FamiliesServiceQCGroupCreateRequest"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.FilterFamiliesReqForIdentifier"``
 
 #### Defined in
 
-src/families.scailo_pb.ts:2463
+src/families.scailo_pb.ts:1754
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+▸ **clone**(): [`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Inherited from
 
@@ -181,7 +164,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md) \| `PlainMessage`\<[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)\> |
+| `other` | `undefined` \| ``null`` \| [`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md) \| `PlainMessage`\<[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)\> |
 
 #### Returns
 
@@ -286,7 +269,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)\>
+▸ **getType**(): `MessageType`\<[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -294,7 +277,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)\>
+`MessageType`\<[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)\>
 
 #### Inherited from
 
@@ -425,8 +408,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md) \| `PlainMessage`\<[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)\> |
-| `b` | `undefined` \| [`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md) \| `PlainMessage`\<[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)\> |
+| `a` | `undefined` \| [`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md) \| `PlainMessage`\<[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)\> |
+| `b` | `undefined` \| [`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md) \| `PlainMessage`\<[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)\> |
 
 #### Returns
 
@@ -434,13 +417,13 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2482
+src/families.scailo_pb.ts:1772
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+▸ **fromBinary**(`bytes`, `options?`): [`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Parameters
 
@@ -451,17 +434,17 @@ ___
 
 #### Returns
 
-[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2470
+src/families.scailo_pb.ts:1760
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Parameters
 
@@ -472,17 +455,17 @@ ___
 
 #### Returns
 
-[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2474
+src/families.scailo_pb.ts:1764
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Parameters
 
@@ -493,8 +476,8 @@ ___
 
 #### Returns
 
-[`FamiliesServiceQCGroupCreateRequest`](FamiliesServiceQCGroupCreateRequest.md)
+[`FilterFamiliesReqForIdentifier`](FilterFamiliesReqForIdentifier.md)
 
 #### Defined in
 
-src/families.scailo_pb.ts:2478
+src/families.scailo_pb.ts:1768

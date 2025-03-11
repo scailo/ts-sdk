@@ -1,7 +1,7 @@
 import { InwardJob, InwardJobAncillaryParameters, InwardJobContact, InwardJobContactsList, InwardJobInwardItem, InwardJobInwardItemHistoryRequest, InwardJobInwardItemProspectiveInfoRequest, InwardJobInwardItemsSearchRequest, InwardJobOutwardItem, InwardJobOutwardItemHistoryRequest, InwardJobOutwardItemProspectiveInfoRequest, InwardJobOutwardItemsSearchRequest, InwardJobsInwardItemsList, InwardJobsList, InwardJobsOutwardItemsList, InwardJobsServiceAutofillRequest, InwardJobsServiceContactCreateRequest, InwardJobsServiceCountReq, InwardJobsServiceCreateRequest, InwardJobsServiceFilterReq, InwardJobsServiceInwardItemCreateRequest, InwardJobsServiceInwardItemUpdateRequest, InwardJobsServiceMultipleInwardItemsCreateRequest, InwardJobsServiceMultipleOutwardItemsCreateRequest, InwardJobsServiceOutwardItemCreateRequest, InwardJobsServiceOutwardItemUpdateRequest, InwardJobsServicePaginatedInwardItemsResponse, InwardJobsServicePaginatedOutwardItemsResponse, InwardJobsServicePaginationReq, InwardJobsServicePaginationResponse, InwardJobsServiceSearchAllReq, InwardJobsServiceUpdateRequest } from "./inward_jobs.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { FamiliesList } from "./families.scailo_pb.js";
+import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each inward job
@@ -705,6 +705,17 @@ export declare const InwardJobsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Filter prospective inward families for the record represented by the given UUID identifier
+         *
+         * @generated from rpc Scailo.InwardJobsService.FilterProspectiveInwardFamilies
+         */
+        readonly filterProspectiveInwardFamilies: {
+            readonly name: "FilterProspectiveInwardFamilies";
+            readonly I: typeof FilterFamiliesReqForIdentifier;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View prospective inward job inward item info for the given family ID and inward job ID
          *
          * @generated from rpc Scailo.InwardJobsService.ViewProspectiveInwardJobInwardItem
@@ -723,6 +734,17 @@ export declare const InwardJobsService: {
         readonly viewProspectiveOutwardFamilies: {
             readonly name: "ViewProspectiveOutwardFamilies";
             readonly I: typeof IdentifierWithSearchKey;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter prospective outward families for the record represented by the given UUID identifier
+         *
+         * @generated from rpc Scailo.InwardJobsService.FilterProspectiveOutwardFamilies
+         */
+        readonly filterProspectiveOutwardFamilies: {
+            readonly name: "FilterProspectiveOutwardFamilies";
+            readonly I: typeof FilterFamiliesReqForIdentifier;
             readonly O: typeof FamiliesList;
             readonly kind: MethodKind.Unary;
         };

@@ -6,7 +6,7 @@
 import { StockAudit, StockAuditItem, StockAuditItemHistoryRequest, StockAuditItemProspectiveInfoRequest, StockAuditItemsSearchRequest, StockAuditsItemsList, StockAuditsList, StockAuditsServiceCountReq, StockAuditsServiceCreateRequest, StockAuditsServiceFilterReq, StockAuditsServiceItemCreateRequest, StockAuditsServiceItemUpdateRequest, StockAuditsServicePaginatedItemsResponse, StockAuditsServicePaginationReq, StockAuditsServicePaginationResponse, StockAuditsServiceSearchAllReq, StockAuditsServiceUpdateRequest } from "./stock_audits.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { FamiliesList } from "./families.scailo_pb.js";
+import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
 /**
  *
@@ -410,6 +410,17 @@ export const StockAuditsService = {
     viewProspectiveFamilies: {
       name: "ViewProspectiveFamilies",
       I: IdentifierWithSearchKey,
+      O: FamiliesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Filter prospective families for the record represented by the given UUID identifier
+     *
+     * @generated from rpc Scailo.StockAuditsService.FilterProspectiveFamilies
+     */
+    filterProspectiveFamilies: {
+      name: "FilterProspectiveFamilies",
+      I: FilterFamiliesReqForIdentifier,
       O: FamiliesList,
       kind: MethodKind.Unary,
     },

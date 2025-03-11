@@ -66,7 +66,7 @@ Message\&lt;FamilyLabelsList\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1889
+src/families.scailo_pb.ts:1939
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.FamilyLabel list = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1887
+src/families.scailo_pb.ts:1937
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1896
+src/families.scailo_pb.ts:1946
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1894
+src/families.scailo_pb.ts:1944
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1895
+src/families.scailo_pb.ts:1945
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1912
+src/families.scailo_pb.ts:1962
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1900
+src/families.scailo_pb.ts:1950
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1904
+src/families.scailo_pb.ts:1954
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1908
+src/families.scailo_pb.ts:1958

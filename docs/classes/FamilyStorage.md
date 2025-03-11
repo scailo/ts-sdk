@@ -72,7 +72,7 @@ Message\&lt;FamilyStorage\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2031
+src/families.scailo_pb.ts:2081
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2001
+src/families.scailo_pb.ts:2051
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1987
+src/families.scailo_pb.ts:2037
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2022
+src/families.scailo_pb.ts:2072
 
 ___
 
@@ -136,7 +136,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1994
+src/families.scailo_pb.ts:2044
 
 ___
 
@@ -152,7 +152,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2008
+src/families.scailo_pb.ts:2058
 
 ___
 
@@ -168,7 +168,7 @@ from field: uint64 storage_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2029
+src/families.scailo_pb.ts:2079
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2015
+src/families.scailo_pb.ts:2065
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2038
+src/families.scailo_pb.ts:2088
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2036
+src/families.scailo_pb.ts:2086
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2037
+src/families.scailo_pb.ts:2087
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2060
+src/families.scailo_pb.ts:2110
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2048
+src/families.scailo_pb.ts:2098
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2052
+src/families.scailo_pb.ts:2102
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2056
+src/families.scailo_pb.ts:2106

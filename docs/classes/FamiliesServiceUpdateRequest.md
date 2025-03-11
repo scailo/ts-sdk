@@ -93,7 +93,7 @@ src/families.scailo_pb.ts:634
 
 • **code**: `string` = `""`
 
-The unique code that represents the family
+The unique code that represents the family (can be updated only prior to the first approval)
 
 **`Generated`**
 
@@ -157,7 +157,7 @@ ___
 
 • **familyType**: [`FAMILY_TYPE`](../enums/FAMILY_TYPE.md) = `FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED`
 
-The type of the family
+The type of the family (can be updated only prior to the first approval)
 
 **`Generated`**
 
@@ -205,7 +205,7 @@ ___
 
 • **isLeaf**: `boolean` = `false`
 
-Stores if the family is a leaf family
+Stores if the family is a leaf family (can be updated only prior to the first approval)
 
 **`Generated`**
 
@@ -285,7 +285,7 @@ ___
 
 • **parentId**: `bigint` = `protoInt64.zero`
 
-Stores the ID of the parent family
+Stores the ID of the parent family (can be updated only prior to the first approval)
 
 **`Generated`**
 

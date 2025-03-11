@@ -66,7 +66,7 @@ Message\&lt;FamilyQCGroupsList\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2541
+src/families.scailo_pb.ts:2591
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.FamilyQCGroup list = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2539
+src/families.scailo_pb.ts:2589
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2548
+src/families.scailo_pb.ts:2598
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2546
+src/families.scailo_pb.ts:2596
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2547
+src/families.scailo_pb.ts:2597
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2564
+src/families.scailo_pb.ts:2614
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2552
+src/families.scailo_pb.ts:2602
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2556
+src/families.scailo_pb.ts:2606
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2560
+src/families.scailo_pb.ts:2610

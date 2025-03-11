@@ -534,7 +534,7 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
   printName = "";
 
   /**
-   * The unique code that represents the family
+   * The unique code that represents the family (can be updated only prior to the first approval)
    *
    * @generated from field: string code = 12;
    */
@@ -555,7 +555,7 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
   description = "";
 
   /**
-   * The type of the family
+   * The type of the family (can be updated only prior to the first approval)
    *
    * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
    */
@@ -583,14 +583,14 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
   unitQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the parent family
+   * Stores the ID of the parent family (can be updated only prior to the first approval)
    *
    * @generated from field: uint64 parent_id = 19;
    */
   parentId = protoInt64.zero;
 
   /**
-   * Stores if the family is a leaf family
+   * Stores if the family is a leaf family (can be updated only prior to the first approval)
    *
    * @generated from field: bool is_leaf = 20;
    */
@@ -1721,6 +1721,56 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
 
   static equals(a: FamiliesServiceSearchAllReq | PlainMessage<FamiliesServiceSearchAllReq> | undefined, b: FamiliesServiceSearchAllReq | PlainMessage<FamiliesServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(FamiliesServiceSearchAllReq, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that are required to filter the prospective families for a record represented by the given UUID
+ *
+ * @generated from message Scailo.FilterFamiliesReqForIdentifier
+ */
+export class FilterFamiliesReqForIdentifier extends Message<FilterFamiliesReqForIdentifier> {
+  /**
+   * UUID of the resource
+   *
+   * @generated from field: string uuid = 1;
+   */
+  uuid = "";
+
+  /**
+   * The families filter to apply
+   *
+   * @generated from field: Scailo.FamiliesServiceFilterReq filter = 10;
+   */
+  filter?: FamiliesServiceFilterReq;
+
+  constructor(data?: PartialMessage<FilterFamiliesReqForIdentifier>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FilterFamiliesReqForIdentifier";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "filter", kind: "message", T: FamiliesServiceFilterReq },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FilterFamiliesReqForIdentifier {
+    return new FilterFamiliesReqForIdentifier().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FilterFamiliesReqForIdentifier {
+    return new FilterFamiliesReqForIdentifier().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FilterFamiliesReqForIdentifier {
+    return new FilterFamiliesReqForIdentifier().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FilterFamiliesReqForIdentifier | PlainMessage<FilterFamiliesReqForIdentifier> | undefined, b: FilterFamiliesReqForIdentifier | PlainMessage<FilterFamiliesReqForIdentifier> | undefined): boolean {
+    return proto3.util.equals(FilterFamiliesReqForIdentifier, a, b);
   }
 }
 

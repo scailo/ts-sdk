@@ -383,7 +383,7 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
      */
     printName: string;
     /**
-     * The unique code that represents the family
+     * The unique code that represents the family (can be updated only prior to the first approval)
      *
      * @generated from field: string code = 12;
      */
@@ -401,7 +401,7 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
      */
     description: string;
     /**
-     * The type of the family
+     * The type of the family (can be updated only prior to the first approval)
      *
      * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
      */
@@ -425,13 +425,13 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
      */
     unitQuantity: bigint;
     /**
-     * Stores the ID of the parent family
+     * Stores the ID of the parent family (can be updated only prior to the first approval)
      *
      * @generated from field: uint64 parent_id = 19;
      */
     parentId: bigint;
     /**
-     * Stores if the family is a leaf family
+     * Stores if the family is a leaf family (can be updated only prior to the first approval)
      *
      * @generated from field: bool is_leaf = 20;
      */
@@ -1192,6 +1192,34 @@ export declare class FamiliesServiceSearchAllReq extends Message<FamiliesService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceSearchAllReq;
     static equals(a: FamiliesServiceSearchAllReq | PlainMessage<FamiliesServiceSearchAllReq> | undefined, b: FamiliesServiceSearchAllReq | PlainMessage<FamiliesServiceSearchAllReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are required to filter the prospective families for a record represented by the given UUID
+ *
+ * @generated from message Scailo.FilterFamiliesReqForIdentifier
+ */
+export declare class FilterFamiliesReqForIdentifier extends Message<FilterFamiliesReqForIdentifier> {
+    /**
+     * UUID of the resource
+     *
+     * @generated from field: string uuid = 1;
+     */
+    uuid: string;
+    /**
+     * The families filter to apply
+     *
+     * @generated from field: Scailo.FamiliesServiceFilterReq filter = 10;
+     */
+    filter?: FamiliesServiceFilterReq;
+    constructor(data?: PartialMessage<FilterFamiliesReqForIdentifier>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FilterFamiliesReqForIdentifier";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FilterFamiliesReqForIdentifier;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FilterFamiliesReqForIdentifier;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FilterFamiliesReqForIdentifier;
+    static equals(a: FilterFamiliesReqForIdentifier | PlainMessage<FilterFamiliesReqForIdentifier> | undefined, b: FilterFamiliesReqForIdentifier | PlainMessage<FilterFamiliesReqForIdentifier> | undefined): boolean;
 }
 /**
  *

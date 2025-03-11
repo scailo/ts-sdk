@@ -72,7 +72,7 @@ Message\&lt;FamilyLabel\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1841
+src/families.scailo_pb.ts:1891
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1811
+src/families.scailo_pb.ts:1861
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1797
+src/families.scailo_pb.ts:1847
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1832
+src/families.scailo_pb.ts:1882
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 label_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1839
+src/families.scailo_pb.ts:1889
 
 ___
 
@@ -152,7 +152,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1804
+src/families.scailo_pb.ts:1854
 
 ___
 
@@ -168,7 +168,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1818
+src/families.scailo_pb.ts:1868
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1825
+src/families.scailo_pb.ts:1875
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1848
+src/families.scailo_pb.ts:1898
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1846
+src/families.scailo_pb.ts:1896
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1847
+src/families.scailo_pb.ts:1897
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1870
+src/families.scailo_pb.ts:1920
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1858
+src/families.scailo_pb.ts:1908
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1862
+src/families.scailo_pb.ts:1912
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1866
+src/families.scailo_pb.ts:1916

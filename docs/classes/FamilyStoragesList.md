@@ -66,7 +66,7 @@ Message\&lt;FamilyStoragesList\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2079
+src/families.scailo_pb.ts:2129
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.FamilyStorage list = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2077
+src/families.scailo_pb.ts:2127
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2086
+src/families.scailo_pb.ts:2136
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2084
+src/families.scailo_pb.ts:2134
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2085
+src/families.scailo_pb.ts:2135
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2102
+src/families.scailo_pb.ts:2152
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2090
+src/families.scailo_pb.ts:2140
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2094
+src/families.scailo_pb.ts:2144
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2098
+src/families.scailo_pb.ts:2148
