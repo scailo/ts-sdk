@@ -1171,6 +1171,13 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
+   * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+   *
+   * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
+   */
+  multiStatus: STANDARD_LIFECYCLE_STATUS[] = [];
+
+  /**
    * The start range of approved timestamp
    *
    * @generated from field: uint64 approved_on_start = 11;
@@ -1225,6 +1232,13 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
    */
   familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * Filter from any of the given family types. All the records that match any of the family types will be returned
+   *
+   * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
+   */
+  multiFamilyType: FAMILY_TYPE[] = [];
 
   /**
    * The HSN/SAC code of the family
@@ -1322,6 +1336,7 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
     { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 100, name: "multi_status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), repeated: true },
     { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1330,6 +1345,7 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
     { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
+    { no: 250, name: "multi_family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), repeated: true },
     { no: 26, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 27, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 28, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1417,6 +1433,13 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
+   * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+   *
+   * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
+   */
+  multiStatus: STANDARD_LIFECYCLE_STATUS[] = [];
+
+  /**
    * The start range of approved timestamp
    *
    * @generated from field: uint64 approved_on_start = 11;
@@ -1471,6 +1494,13 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
    */
   familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * Filter from any of the given family types. All the records that match any of the family types will be returned
+   *
+   * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
+   */
+  multiFamilyType: FAMILY_TYPE[] = [];
 
   /**
    * The HSN/SAC code of the family
@@ -1564,6 +1594,7 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
     { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 100, name: "multi_status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), repeated: true },
     { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1572,6 +1603,7 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
     { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
+    { no: 250, name: "multi_family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), repeated: true },
     { no: 26, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 27, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 28, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1659,6 +1691,13 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
+   * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+   *
+   * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
+   */
+  multiStatus: STANDARD_LIFECYCLE_STATUS[] = [];
+
+  /**
    * Describes the key with which the search operation needs to be performed
    *
    * @generated from field: string search_key = 11;
@@ -1671,6 +1710,13 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
    * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
    */
   familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * Filter from any of the given family types. All the records that match any of the family types will be returned
+   *
+   * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
+   */
+  multiFamilyType: FAMILY_TYPE[] = [];
 
   /**
    * The ID of the associated non-leaf parent family
@@ -1701,8 +1747,10 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
     { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(FAMILY_SORT_KEY) },
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 100, name: "multi_status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), repeated: true },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
+    { no: 250, name: "multi_family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), repeated: true },
     { no: 29, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
   ]);

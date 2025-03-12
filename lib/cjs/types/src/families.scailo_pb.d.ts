@@ -817,6 +817,12 @@ export declare class FamiliesServiceFilterReq extends Message<FamiliesServiceFil
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
+     * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+     *
+     * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
+     */
+    multiStatus: STANDARD_LIFECYCLE_STATUS[];
+    /**
      * The start range of approved timestamp
      *
      * @generated from field: uint64 approved_on_start = 11;
@@ -864,6 +870,12 @@ export declare class FamiliesServiceFilterReq extends Message<FamiliesServiceFil
      * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
      */
     familyType: FAMILY_TYPE;
+    /**
+     * Filter from any of the given family types. All the records that match any of the family types will be returned
+     *
+     * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
+     */
+    multiFamilyType: FAMILY_TYPE[];
     /**
      * The HSN/SAC code of the family
      *
@@ -989,6 +1001,12 @@ export declare class FamiliesServiceCountReq extends Message<FamiliesServiceCoun
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
+     * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+     *
+     * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
+     */
+    multiStatus: STANDARD_LIFECYCLE_STATUS[];
+    /**
      * The start range of approved timestamp
      *
      * @generated from field: uint64 approved_on_start = 11;
@@ -1036,6 +1054,12 @@ export declare class FamiliesServiceCountReq extends Message<FamiliesServiceCoun
      * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
      */
     familyType: FAMILY_TYPE;
+    /**
+     * Filter from any of the given family types. All the records that match any of the family types will be returned
+     *
+     * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
+     */
+    multiFamilyType: FAMILY_TYPE[];
     /**
      * The HSN/SAC code of the family
      *
@@ -1161,6 +1185,12 @@ export declare class FamiliesServiceSearchAllReq extends Message<FamiliesService
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
+     * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+     *
+     * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
+     */
+    multiStatus: STANDARD_LIFECYCLE_STATUS[];
+    /**
      * Describes the key with which the search operation needs to be performed
      *
      * @generated from field: string search_key = 11;
@@ -1172,6 +1202,12 @@ export declare class FamiliesServiceSearchAllReq extends Message<FamiliesService
      * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
      */
     familyType: FAMILY_TYPE;
+    /**
+     * Filter from any of the given family types. All the records that match any of the family types will be returned
+     *
+     * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
+     */
+    multiFamilyType: FAMILY_TYPE[];
     /**
      * The ID of the associated non-leaf parent family
      *
