@@ -66,7 +66,7 @@ Message\&lt;AmendmentLogsList\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3894
+src/base.scailo_pb.ts:3844
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.AmendmentLog list = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3892
+src/base.scailo_pb.ts:3842
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3901
+src/base.scailo_pb.ts:3851
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3899
+src/base.scailo_pb.ts:3849
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3900
+src/base.scailo_pb.ts:3850
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3917
+src/base.scailo_pb.ts:3867
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3905
+src/base.scailo_pb.ts:3855
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3909
+src/base.scailo_pb.ts:3859
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3913
+src/base.scailo_pb.ts:3863

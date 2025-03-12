@@ -66,7 +66,7 @@ Message\&lt;InventoryInteractionsList\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3778
+src/base.scailo_pb.ts:3728
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.InventoryInteraction list = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3776
+src/base.scailo_pb.ts:3726
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3785
+src/base.scailo_pb.ts:3735
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3783
+src/base.scailo_pb.ts:3733
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3784
+src/base.scailo_pb.ts:3734
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3801
+src/base.scailo_pb.ts:3751
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3789
+src/base.scailo_pb.ts:3739
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3793
+src/base.scailo_pb.ts:3743
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3797
+src/base.scailo_pb.ts:3747

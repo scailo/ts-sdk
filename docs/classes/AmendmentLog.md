@@ -70,7 +70,7 @@ Message\&lt;AmendmentLog\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3848
+src/base.scailo_pb.ts:3798
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string comment = 20;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3846
+src/base.scailo_pb.ts:3796
 
 ___
 
@@ -102,7 +102,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3818
+src/base.scailo_pb.ts:3768
 
 ___
 
@@ -118,7 +118,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3825
+src/base.scailo_pb.ts:3775
 
 ___
 
@@ -134,7 +134,7 @@ from field: Scailo.AMENDMENT_LOG_REF_FOR ref_for = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3832
+src/base.scailo_pb.ts:3782
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 ref_id = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3839
+src/base.scailo_pb.ts:3789
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3855
+src/base.scailo_pb.ts:3805
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3853
+src/base.scailo_pb.ts:3803
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3854
+src/base.scailo_pb.ts:3804
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3875
+src/base.scailo_pb.ts:3825
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3863
+src/base.scailo_pb.ts:3813
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3867
+src/base.scailo_pb.ts:3817
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3871
+src/base.scailo_pb.ts:3821

@@ -67,7 +67,7 @@ Message\&lt;IdentifierUUIDWithFile\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2781
+src/base.scailo_pb.ts:2731
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: bytes file_content = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2779
+src/base.scailo_pb.ts:2729
 
 ___
 
@@ -99,7 +99,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2772
+src/base.scailo_pb.ts:2722
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2788
+src/base.scailo_pb.ts:2738
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2786
+src/base.scailo_pb.ts:2736
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2787
+src/base.scailo_pb.ts:2737
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2805
+src/base.scailo_pb.ts:2755
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2793
+src/base.scailo_pb.ts:2743
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2797
+src/base.scailo_pb.ts:2747
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2801
+src/base.scailo_pb.ts:2751

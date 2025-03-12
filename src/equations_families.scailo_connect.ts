@@ -4,9 +4,9 @@
 // @ts-nocheck
 
 import { EquationFamily, EquationFamilyItem, EquationFamilyItemHistoryRequest, EquationFamilyItemsSearchRequest, EquationsFamiliesItemsList, EquationsFamiliesList, EquationsFamiliesServiceCountReq, EquationsFamiliesServiceCreateRequest, EquationsFamiliesServiceFilterReq, EquationsFamiliesServiceItemCreateRequest, EquationsFamiliesServiceItemUpdateRequest, EquationsFamiliesServicePaginatedItemsResponse, EquationsFamiliesServicePaginationReq, EquationsFamiliesServicePaginationResponse, EquationsFamiliesServiceSearchAllReq, EquationsFamiliesServiceUpdateRequest } from "./equations_families.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearch, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { FamiliesList } from "./families.scailo_pb.js";
+import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
 /**
  *
@@ -429,13 +429,24 @@ export const EquationsFamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all selectable families for a family ID represented by Identifier (without cyclical dependencies) and the given search key
+     * View prospective families for the given equation family (without cyclical dependencies)
      *
-     * @generated from rpc Scailo.EquationsFamiliesService.ViewSelectableFamilies
+     * @generated from rpc Scailo.EquationsFamiliesService.ViewProspectiveFamilies
      */
-    viewSelectableFamilies: {
-      name: "ViewSelectableFamilies",
-      I: IdentifierWithSearch,
+    viewProspectiveFamilies: {
+      name: "ViewProspectiveFamilies",
+      I: IdentifierWithSearchKey,
+      O: FamiliesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Filter prospective families for the record represented by the given UUID identifier (without cyclical dependencies)
+     *
+     * @generated from rpc Scailo.EquationsFamiliesService.FilterProspectiveFamilies
+     */
+    filterProspectiveFamilies: {
+      name: "FilterProspectiveFamilies",
+      I: FilterFamiliesReqForIdentifier,
       O: FamiliesList,
       kind: MethodKind.Unary,
     },

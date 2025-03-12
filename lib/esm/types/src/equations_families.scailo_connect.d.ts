@@ -1,7 +1,7 @@
 import { EquationFamily, EquationFamilyItem, EquationFamilyItemHistoryRequest, EquationFamilyItemsSearchRequest, EquationsFamiliesItemsList, EquationsFamiliesList, EquationsFamiliesServiceCountReq, EquationsFamiliesServiceCreateRequest, EquationsFamiliesServiceFilterReq, EquationsFamiliesServiceItemCreateRequest, EquationsFamiliesServiceItemUpdateRequest, EquationsFamiliesServicePaginatedItemsResponse, EquationsFamiliesServicePaginationReq, EquationsFamiliesServicePaginationResponse, EquationsFamiliesServiceSearchAllReq, EquationsFamiliesServiceUpdateRequest } from "./equations_families.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearch, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { FamiliesList } from "./families.scailo_pb.js";
+import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each equation family
@@ -423,13 +423,24 @@ export declare const EquationsFamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all selectable families for a family ID represented by Identifier (without cyclical dependencies) and the given search key
+         * View prospective families for the given equation family (without cyclical dependencies)
          *
-         * @generated from rpc Scailo.EquationsFamiliesService.ViewSelectableFamilies
+         * @generated from rpc Scailo.EquationsFamiliesService.ViewProspectiveFamilies
          */
-        readonly viewSelectableFamilies: {
-            readonly name: "ViewSelectableFamilies";
-            readonly I: typeof IdentifierWithSearch;
+        readonly viewProspectiveFamilies: {
+            readonly name: "ViewProspectiveFamilies";
+            readonly I: typeof IdentifierWithSearchKey;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter prospective families for the record represented by the given UUID identifier (without cyclical dependencies)
+         *
+         * @generated from rpc Scailo.EquationsFamiliesService.FilterProspectiveFamilies
+         */
+        readonly filterProspectiveFamilies: {
+            readonly name: "FilterProspectiveFamilies";
+            readonly I: typeof FilterFamiliesReqForIdentifier;
             readonly O: typeof FamiliesList;
             readonly kind: MethodKind.Unary;
         };

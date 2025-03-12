@@ -71,7 +71,7 @@ Message\&lt;LogbookLogConciseGenericCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3189
+src/base.scailo_pb.ts:3139
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string app_comment = 13;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3180
+src/base.scailo_pb.ts:3130
 
 ___
 
@@ -103,7 +103,7 @@ from field: string operation = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3166
+src/base.scailo_pb.ts:3116
 
 ___
 
@@ -119,7 +119,7 @@ from field: string ref_uuid = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3159
+src/base.scailo_pb.ts:3109
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 timestamp = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3152
+src/base.scailo_pb.ts:3102
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_comment = 14;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3187
+src/base.scailo_pb.ts:3137
 
 ___
 
@@ -167,7 +167,7 @@ from field: string username = 12;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3173
+src/base.scailo_pb.ts:3123
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3196
+src/base.scailo_pb.ts:3146
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3194
+src/base.scailo_pb.ts:3144
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3195
+src/base.scailo_pb.ts:3145
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3217
+src/base.scailo_pb.ts:3167
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3205
+src/base.scailo_pb.ts:3155
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3209
+src/base.scailo_pb.ts:3159
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3213
+src/base.scailo_pb.ts:3163

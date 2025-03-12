@@ -67,7 +67,7 @@ Message\&lt;IdentifierWithUserComment\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2565
+src/base.scailo_pb.ts:2515
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2556
+src/base.scailo_pb.ts:2506
 
 ___
 
@@ -99,7 +99,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2563
+src/base.scailo_pb.ts:2513
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2572
+src/base.scailo_pb.ts:2522
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2570
+src/base.scailo_pb.ts:2520
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2571
+src/base.scailo_pb.ts:2521
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2589
+src/base.scailo_pb.ts:2539
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2577
+src/base.scailo_pb.ts:2527
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2581
+src/base.scailo_pb.ts:2531
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2585
+src/base.scailo_pb.ts:2535

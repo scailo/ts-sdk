@@ -1562,34 +1562,6 @@ export declare class IdentifierZeroable extends Message<IdentifierZeroable> {
 }
 /**
  *
- * Describes the standard identifier along with a search key
- *
- * @generated from message Scailo.IdentifierWithSearch
- */
-export declare class IdentifierWithSearch extends Message<IdentifierWithSearch> {
-    /**
-     * ID of the resource
-     *
-     * @generated from field: uint64 id = 1;
-     */
-    id: bigint;
-    /**
-     * Describes the key with which the search operation needs to be performed
-     *
-     * @generated from field: string search_key = 2;
-     */
-    searchKey: string;
-    constructor(data?: PartialMessage<IdentifierWithSearch>);
-    static readonly runtime: typeof proto3;
-    static readonly typeName = "Scailo.IdentifierWithSearch";
-    static readonly fields: FieldList;
-    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithSearch;
-    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithSearch;
-    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithSearch;
-    static equals(a: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined, b: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined): boolean;
-}
-/**
- *
  * Describes the list of standard identifiers, used for identifying associated items
  *
  * @generated from message Scailo.IdentifiersList

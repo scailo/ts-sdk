@@ -2409,56 +2409,6 @@ export class IdentifierZeroable extends Message<IdentifierZeroable> {
 
 /**
  *
- * Describes the standard identifier along with a search key
- *
- * @generated from message Scailo.IdentifierWithSearch
- */
-export class IdentifierWithSearch extends Message<IdentifierWithSearch> {
-  /**
-   * ID of the resource
-   *
-   * @generated from field: uint64 id = 1;
-   */
-  id = protoInt64.zero;
-
-  /**
-   * Describes the key with which the search operation needs to be performed
-   *
-   * @generated from field: string search_key = 2;
-   */
-  searchKey = "";
-
-  constructor(data?: PartialMessage<IdentifierWithSearch>) {
-    super();
-    proto3.util.initPartial(data, this);
-  }
-
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "Scailo.IdentifierWithSearch";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 2, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-  ]);
-
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithSearch {
-    return new IdentifierWithSearch().fromBinary(bytes, options);
-  }
-
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithSearch {
-    return new IdentifierWithSearch().fromJson(jsonValue, options);
-  }
-
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithSearch {
-    return new IdentifierWithSearch().fromJsonString(jsonString, options);
-  }
-
-  static equals(a: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined, b: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined): boolean {
-    return proto3.util.equals(IdentifierWithSearch, a, b);
-  }
-}
-
-/**
- *
  * Describes the list of standard identifiers, used for identifying associated items
  *
  * @generated from message Scailo.IdentifiersList
