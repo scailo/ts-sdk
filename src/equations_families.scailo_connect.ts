@@ -347,7 +347,7 @@ export const EquationsFamiliesService = {
      */
     downloadTreeAsCSV: {
       name: "DownloadTreeAsCSV",
-      I: Identifier,
+      I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,
     },

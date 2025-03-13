@@ -357,7 +357,7 @@ export const EquationsWorkOrdersService = {
      */
     downloadTreeAsCSV: {
       name: "DownloadTreeAsCSV",
-      I: Identifier,
+      I: IdentifierUUID,
       O: StandardFile,
       kind: MethodKind.Unary,
     },

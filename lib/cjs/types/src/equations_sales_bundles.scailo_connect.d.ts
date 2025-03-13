@@ -340,7 +340,7 @@ export declare const EquationsSalesBundlesService: {
          */
         readonly downloadTreeAsCSV: {
             readonly name: "DownloadTreeAsCSV";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
