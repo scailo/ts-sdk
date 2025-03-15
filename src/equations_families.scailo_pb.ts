@@ -993,9 +993,9 @@ export class EquationFamilyItemsSearchRequest extends Message<EquationFamilyItem
   /**
    * The ID of the equation family
    *
-   * @generated from field: uint64 equation_family_id = 20;
+   * @generated from field: uint64 equation_id = 20;
    */
-  equationFamilyId = protoInt64.zero;
+  equationId = protoInt64.zero;
 
   /**
    * The ID of the family
@@ -1030,7 +1030,7 @@ export class EquationFamilyItemsSearchRequest extends Message<EquationFamilyItem
     { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "equation_family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "equation_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 21, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);

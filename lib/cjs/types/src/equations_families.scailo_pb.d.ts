@@ -665,9 +665,9 @@ export declare class EquationFamilyItemsSearchRequest extends Message<EquationFa
     /**
      * The ID of the equation family
      *
-     * @generated from field: uint64 equation_family_id = 20;
+     * @generated from field: uint64 equation_id = 20;
      */
-    equationFamilyId: bigint;
+    equationId: bigint;
     /**
      * The ID of the family
      *

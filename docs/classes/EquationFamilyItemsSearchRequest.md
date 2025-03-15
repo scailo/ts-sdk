@@ -28,7 +28,7 @@ from message Scailo.EquationFamilyItemsSearchRequest
 - [approverRoleId](EquationFamilyItemsSearchRequest.md#approverroleid)
 - [count](EquationFamilyItemsSearchRequest.md#count)
 - [entityUuid](EquationFamilyItemsSearchRequest.md#entityuuid)
-- [equationFamilyId](EquationFamilyItemsSearchRequest.md#equationfamilyid)
+- [equationId](EquationFamilyItemsSearchRequest.md#equationid)
 - [familyId](EquationFamilyItemsSearchRequest.md#familyid)
 - [isActive](EquationFamilyItemsSearchRequest.md#isactive)
 - [offset](EquationFamilyItemsSearchRequest.md#offset)
@@ -179,15 +179,15 @@ src/equations_families.scailo_pb.ts:956
 
 ___
 
-### equationFamilyId
+### equationId
 
-• **equationFamilyId**: `bigint` = `protoInt64.zero`
+• **equationId**: `bigint` = `protoInt64.zero`
 
 The ID of the equation family
 
 **`Generated`**
 
-from field: uint64 equation_family_id = 20;
+from field: uint64 equation_id = 20;
 
 #### Defined in
 
