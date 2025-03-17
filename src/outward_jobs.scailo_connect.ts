@@ -645,6 +645,39 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.OutwardJobsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: OutwardJob,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.OutwardJobsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: OutwardJob,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.OutwardJobsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: OutwardJobsList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View the ancillary parameters (UUIDs of the internal references) by UUID
      *
      * @generated from rpc Scailo.OutwardJobsService.ViewAncillaryParametersByUUID

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ProductionPlan, ProductionPlanAncillaryParameters, ProductionPlanItem, ProductionPlanItemHistoryRequest, ProductionPlanItemProspectiveInfoRequest, ProductionPlanItemsSearchRequest, ProductionPlansItemsList, ProductionPlansList, ProductionPlansServiceAlreadyAddedQuantityForSourceRequest, ProductionPlansServiceAutofillRequest, ProductionPlansServiceCountReq, ProductionPlansServiceCreateRequest, ProductionPlansServiceFilterReq, ProductionPlansServiceItemCreateRequest, ProductionPlansServiceItemUpdateRequest, ProductionPlansServicePaginatedItemsResponse, ProductionPlansServicePaginationReq, ProductionPlansServicePaginationResponse, ProductionPlansServiceSearchAllReq, ProductionPlansServiceUpdateRequest } from "./production_plans.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -367,6 +367,39 @@ export const ProductionPlansService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: ProductionPlan,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.ProductionPlansService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: ProductionPlan,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.ProductionPlansService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: ProductionPlan,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.ProductionPlansService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: ProductionPlansList,
       kind: MethodKind.Unary,
     },
     /**

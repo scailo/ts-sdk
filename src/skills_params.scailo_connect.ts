@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SkillParam, SkillsParamsList, SkillsParamsServiceCountReq, SkillsParamsServiceCreateRequest, SkillsParamsServiceFilterReq, SkillsParamsServicePaginationReq, SkillsParamsServicePaginationResponse, SkillsParamsServiceSearchAllReq, SkillsParamsServiceUpdateRequest } from "./skills_params.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -193,6 +193,39 @@ export const SkillsParamsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: SkillParam,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.SkillsParamsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: SkillParam,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.SkillsParamsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: SkillParam,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.SkillsParamsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: SkillsParamsList,
       kind: MethodKind.Unary,
     },
     /**

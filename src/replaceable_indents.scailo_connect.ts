@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ReplaceableIndent, ReplaceableIndentItem, ReplaceableIndentItemHistoryRequest, ReplaceableIndentItemProspectiveInfoRequest, ReplaceableIndentItemsSearchRequest, ReplaceableIndentsItemsList, ReplaceableIndentsList, ReplaceableIndentsServiceAutofillRequest, ReplaceableIndentsServiceCountReq, ReplaceableIndentsServiceCreateRequest, ReplaceableIndentsServiceFilterReq, ReplaceableIndentsServiceItemCreateRequest, ReplaceableIndentsServiceItemUpdateRequest, ReplaceableIndentsServicePaginatedItemsResponse, ReplaceableIndentsServicePaginationReq, ReplaceableIndentsServicePaginationResponse, ReplaceableIndentsServiceSearchAllReq, ReplaceableIndentsServiceUpdateRequest } from "./replaceable_indents.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -367,6 +367,39 @@ export const ReplaceableIndentsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: ReplaceableIndent,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.ReplaceableIndentsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: ReplaceableIndent,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.ReplaceableIndentsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: ReplaceableIndent,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.ReplaceableIndentsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: ReplaceableIndentsList,
       kind: MethodKind.Unary,
     },
     /**

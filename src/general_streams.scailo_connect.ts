@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { GeneralStream, GeneralStreamInternalSubscriber, GeneralStreamInternalSubscribersList, GeneralStreamMessage, GeneralStreamMessageReceiptsList, GeneralStreamMessagesList, GeneralStreamMessagesSearchRequest, GeneralStreamsList, GeneralStreamsServiceCountReq, GeneralStreamsServiceCreateRequest, GeneralStreamsServiceFilterReq, GeneralStreamsServiceImportInternalSubscribersRequest, GeneralStreamsServiceInternalSubscriberCreateRequest, GeneralStreamsServiceMessageCreateRequest, GeneralStreamsServicePaginatedMessagesResponse, GeneralStreamsServicePaginationReq, GeneralStreamsServicePaginationResponse, GeneralStreamsServiceSearchAllReq, GeneralStreamsServiceUpdateRequest } from "./general_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -270,6 +270,39 @@ export const GeneralStreamsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: GeneralStream,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.GeneralStreamsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: GeneralStream,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.GeneralStreamsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: GeneralStream,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.GeneralStreamsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: GeneralStreamsList,
       kind: MethodKind.Unary,
     },
     /**

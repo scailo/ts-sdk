@@ -404,6 +404,39 @@ export const PurchasesIndentsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.PurchasesIndentsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: PurchaseIndent,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.PurchasesIndentsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: PurchaseIndent,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.PurchasesIndentsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: PurchasesIndentsList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.PurchasesIndentsService.ViewAll

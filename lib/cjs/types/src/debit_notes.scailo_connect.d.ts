@@ -1,5 +1,5 @@
 import { DebitNote, DebitNoteAncillaryParameters, DebitNoteItem, DebitNoteItemHistoryRequest, DebitNoteItemProspectiveInfoRequest, DebitNoteItemsList, DebitNoteItemsSearchRequest, DebitNoteReference, DebitNoteReferencesList, DebitNotesList, DebitNotesServiceAlreadyAddedQuantityForSourceRequest, DebitNotesServiceAutofillRequest, DebitNotesServiceCountReq, DebitNotesServiceCreateRequest, DebitNotesServiceFilterReq, DebitNotesServiceItemCreateRequest, DebitNotesServiceItemUpdateRequest, DebitNotesServicePaginatedItemsResponse, DebitNotesServicePaginationReq, DebitNotesServicePaginationResponse, DebitNotesServiceReferenceCreateRequest, DebitNotesServiceSearchAllReq, DebitNotesServiceUpdateRequest } from "./debit_notes.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
@@ -405,6 +405,39 @@ export declare const DebitNotesService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof DebitNote;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.DebitNotesService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof DebitNote;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.DebitNotesService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof DebitNote;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.DebitNotesService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof DebitNotesList;
             readonly kind: MethodKind.Unary;
         };
         /**

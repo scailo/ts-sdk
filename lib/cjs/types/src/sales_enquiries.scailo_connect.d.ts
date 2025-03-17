@@ -430,6 +430,39 @@ export declare const SalesEnquiriesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.SalesEnquiriesService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof SalesEnquiry;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.SalesEnquiriesService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof SalesEnquiry;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.SalesEnquiriesService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof SalesEnquiriesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View the ancillary parameters (UUIDs of the internal references) by UUID
          *
          * @generated from rpc Scailo.SalesEnquiriesService.ViewAncillaryParametersByUUID

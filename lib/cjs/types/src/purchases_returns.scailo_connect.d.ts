@@ -1,5 +1,5 @@
 import { PurchaseReturn, PurchaseReturnAncillaryParameters, PurchaseReturnItem, PurchaseReturnItemHistoryRequest, PurchaseReturnItemProspectiveInfoRequest, PurchaseReturnItemsSearchRequest, PurchasesReturnsItemsList, PurchasesReturnsList, PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest, PurchasesReturnsServiceCountReq, PurchasesReturnsServiceCreateRequest, PurchasesReturnsServiceFilterReq, PurchasesReturnsServiceItemCreateRequest, PurchasesReturnsServiceItemUpdateRequest, PurchasesReturnsServicePaginatedItemsResponse, PurchasesReturnsServicePaginationReq, PurchasesReturnsServicePaginationResponse, PurchasesReturnsServiceSearchAllReq, PurchasesReturnsServiceUpdateRequest } from "./purchases_returns.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
@@ -361,6 +361,39 @@ export declare const PurchasesReturnsService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof PurchaseReturn;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.PurchasesReturnsService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof PurchaseReturn;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.PurchasesReturnsService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof PurchaseReturn;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.PurchasesReturnsService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof PurchasesReturnsList;
             readonly kind: MethodKind.Unary;
         };
         /**

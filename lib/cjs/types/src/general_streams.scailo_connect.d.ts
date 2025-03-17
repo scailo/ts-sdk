@@ -1,5 +1,5 @@
 import { GeneralStream, GeneralStreamInternalSubscriber, GeneralStreamInternalSubscribersList, GeneralStreamMessage, GeneralStreamMessageReceiptsList, GeneralStreamMessagesList, GeneralStreamMessagesSearchRequest, GeneralStreamsList, GeneralStreamsServiceCountReq, GeneralStreamsServiceCreateRequest, GeneralStreamsServiceFilterReq, GeneralStreamsServiceImportInternalSubscribersRequest, GeneralStreamsServiceInternalSubscriberCreateRequest, GeneralStreamsServiceMessageCreateRequest, GeneralStreamsServicePaginatedMessagesResponse, GeneralStreamsServicePaginationReq, GeneralStreamsServicePaginationResponse, GeneralStreamsServiceSearchAllReq, GeneralStreamsServiceUpdateRequest } from "./general_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -264,6 +264,39 @@ export declare const GeneralStreamsService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof GeneralStream;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.GeneralStreamsService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof GeneralStream;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.GeneralStreamsService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof GeneralStream;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.GeneralStreamsService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof GeneralStreamsList;
             readonly kind: MethodKind.Unary;
         };
         /**

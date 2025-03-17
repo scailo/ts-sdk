@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Attendance, AttendancesList, AttendancesServiceCountReq, AttendancesServiceCreateRequest, AttendancesServiceFilterReq, AttendancesServiceImageEntryRequest, AttendancesServiceImageExitRequest, AttendancesServicePaginationReq, AttendancesServicePaginationResponse, AttendancesServiceSearchAllReq, AttendancesServiceUpdateRequest } from "./attendances.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -215,6 +215,39 @@ export const AttendancesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: Attendance,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.AttendancesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: Attendance,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.AttendancesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Attendance,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.AttendancesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: AttendancesList,
       kind: MethodKind.Unary,
     },
     /**

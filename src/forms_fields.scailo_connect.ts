@@ -5,7 +5,7 @@
 
 import { FormField, FormFieldPaginationResp, FormsFieldsList, FormsFieldsServiceCountReq, FormsFieldsServiceCreateRequest, FormsFieldsServiceFilterReq, FormsFieldsServicePaginationReq, FormsFieldsServiceSearchAllReq, FormsFieldsServiceUpdateRequest } from "./forms_fields.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 
 /**
  *
@@ -80,6 +80,39 @@ export const FormsFieldsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: FormField,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.FormsFieldsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: FormField,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.FormsFieldsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: FormField,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.FormsFieldsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: FormsFieldsList,
       kind: MethodKind.Unary,
     },
     /**

@@ -340,6 +340,39 @@ export const SkillsGroupsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.SkillsGroupsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: SkillGroup,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.SkillsGroupsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: SkillGroup,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.SkillsGroupsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: SkillsGroupsList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.SkillsGroupsService.ViewAll

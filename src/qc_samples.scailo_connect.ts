@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { QCSample, QCSampleAncillaryParameters, QCSampleParameter, QCSampleParameterHistoryList, QCSampleParameterHistoryRequest, QCSampleParametersList, QCSampleParametersSearchRequest, QCSamplesList, QCSamplesServiceCountReq, QCSamplesServiceCreateRequest, QCSamplesServiceFilterReq, QCSamplesServicePaginatedParametersResponse, QCSamplesServicePaginationReq, QCSamplesServicePaginationResponse, QCSamplesServiceParameterUpdateRequest, QCSamplesServiceSearchAllReq, QCSamplesServiceUpdateRequest, QCSamplesWithMetadataList } from "./qc_samples.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -212,6 +212,39 @@ export const QCSamplesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: QCSample,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.QCSamplesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: QCSample,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.QCSamplesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: QCSample,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.QCSamplesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: QCSamplesList,
       kind: MethodKind.Unary,
     },
     /**

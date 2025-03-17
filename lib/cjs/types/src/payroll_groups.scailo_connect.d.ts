@@ -334,6 +334,39 @@ export declare const PayrollGroupsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.PayrollGroupsService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof PayrollGroup;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.PayrollGroupsService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof PayrollGroup;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.PayrollGroupsService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof PayrollGroupsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.PayrollGroupsService.ViewAll

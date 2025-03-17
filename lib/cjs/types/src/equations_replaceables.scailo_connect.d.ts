@@ -378,6 +378,39 @@ export declare const EquationsReplaceablesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.EquationsReplaceablesService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof EquationReplaceable;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.EquationsReplaceablesService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof EquationReplaceable;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.EquationsReplaceablesService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof EquationsReplaceablesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.EquationsReplaceablesService.ViewAll

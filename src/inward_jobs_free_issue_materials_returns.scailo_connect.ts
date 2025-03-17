@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { InwardJobFreeIssueMaterialReturn, InwardJobFreeIssueMaterialReturnAncillaryParameters, InwardJobFreeIssueMaterialReturnItem, InwardJobFreeIssueMaterialReturnItemHistoryRequest, InwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest, InwardJobFreeIssueMaterialReturnItemsSearchRequest, InwardJobsFreeIssueMaterialsReturnsItemsList, InwardJobsFreeIssueMaterialsReturnsList, InwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSourceRequest, InwardJobsFreeIssueMaterialsReturnsServiceCountReq, InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest, InwardJobsFreeIssueMaterialsReturnsServiceFilterReq, InwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest, InwardJobsFreeIssueMaterialsReturnsServiceItemUpdateRequest, InwardJobsFreeIssueMaterialsReturnsServicePaginatedItemsResponse, InwardJobsFreeIssueMaterialsReturnsServicePaginationReq, InwardJobsFreeIssueMaterialsReturnsServicePaginationResponse, InwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq, InwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest } from "./inward_jobs_free_issue_materials_returns.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -367,6 +367,39 @@ export const InwardJobsFreeIssueMaterialsReturnsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: InwardJobFreeIssueMaterialReturn,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsReturnsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: InwardJobFreeIssueMaterialReturn,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsReturnsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: InwardJobFreeIssueMaterialReturn,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsReturnsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: InwardJobsFreeIssueMaterialsReturnsList,
       kind: MethodKind.Unary,
     },
     /**

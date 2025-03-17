@@ -384,6 +384,39 @@ export const EquationsSalesBundlesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.EquationsSalesBundlesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: EquationSalesBundle,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.EquationsSalesBundlesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: EquationSalesBundle,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.EquationsSalesBundlesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: EquationsSalesBundlesList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.EquationsSalesBundlesService.ViewAll

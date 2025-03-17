@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Infrastructure, InfrastructuresList, InfrastructuresServiceCountReq, InfrastructuresServiceCreateRequest, InfrastructuresServiceFilterReq, InfrastructuresServicePaginationReq, InfrastructuresServicePaginationResponse, InfrastructuresServiceSearchAllReq, InfrastructuresServiceSendToStoreRequest, InfrastructuresServiceUpdateRequest } from "./infrastructures.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -179,6 +179,39 @@ export const InfrastructuresService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: Infrastructure,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.InfrastructuresService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: Infrastructure,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.InfrastructuresService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Infrastructure,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.InfrastructuresService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: InfrastructuresList,
       kind: MethodKind.Unary,
     },
     /**

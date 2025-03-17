@@ -10,7 +10,7 @@
 // @ts-nocheck
 
 import { Holiday, HolidayShiftGroup, HolidaysList, HolidaysServiceCountReq, HolidaysServiceCreateRequest, HolidaysServiceFilterReq, HolidaysServicePaginationReq, HolidaysServicePaginationResponse, HolidaysServiceSearchAllReq, HolidaysServiceShiftGroupCreateRequest, HolidaysServiceShiftGroupUpdateRequest, HolidaysServiceUpdateRequest, HolidaysServiceViewHolidaysOnTimestampRequest, HolidaysShiftsGroupsHistoryRequest, HolidaysShiftsGroupsList } from "./holidays.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -298,6 +298,39 @@ export const HolidaysService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: Holiday,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.HolidaysService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: Holiday,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.HolidaysService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Holiday,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.HolidaysService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: HolidaysList,
       kind: MethodKind.Unary,
     },
     /**

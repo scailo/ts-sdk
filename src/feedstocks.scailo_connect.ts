@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Feedstock, FeedstocksList, FeedstocksServiceCountReq, FeedstocksServiceCreateRequest, FeedstocksServiceFilterReq, FeedstocksServicePaginationReq, FeedstocksServicePaginationResponse, FeedstocksServiceSearchAllReq, FeedstocksServiceSendToStoreRequest, FeedstocksServiceUpdateRequest } from "./feedstocks.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -179,6 +179,39 @@ export const FeedstocksService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: Feedstock,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.FeedstocksService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: Feedstock,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.FeedstocksService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Feedstock,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.FeedstocksService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: FeedstocksList,
       kind: MethodKind.Unary,
     },
     /**

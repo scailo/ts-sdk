@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { AttendanceAmendment, AttendancesAmendmentsList, AttendancesAmendmentsServiceCountReq, AttendancesAmendmentsServiceCreateRequest, AttendancesAmendmentsServiceFilterReq, AttendancesAmendmentsServicePaginationReq, AttendancesAmendmentsServicePaginationResponse, AttendancesAmendmentsServiceSearchAllReq, AttendancesAmendmentsServiceUpdateRequest } from "./attendances_amendments.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -193,6 +193,39 @@ export const AttendancesAmendmentsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: AttendanceAmendment,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.AttendancesAmendmentsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: AttendanceAmendment,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.AttendancesAmendmentsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: AttendanceAmendment,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.AttendancesAmendmentsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: AttendancesAmendmentsList,
       kind: MethodKind.Unary,
     },
     /**

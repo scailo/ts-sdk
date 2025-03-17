@@ -514,7 +514,7 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View only essential components of the record
+     * View only essential components by ID (without logs)
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewEssentialByID
      */
@@ -522,6 +522,28 @@ export const SalesQuotationsService = {
       name: "ViewEssentialByID",
       I: Identifier,
       O: SalesQuotation,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.SalesQuotationsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: SalesQuotation,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.SalesQuotationsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: SalesQuotationsList,
       kind: MethodKind.Unary,
     },
     /**

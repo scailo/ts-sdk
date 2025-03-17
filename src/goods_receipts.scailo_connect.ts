@@ -393,6 +393,39 @@ export const GoodsReceiptsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.GoodsReceiptsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: GoodsReceipt,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.GoodsReceiptsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: GoodsReceipt,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.GoodsReceiptsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: GoodsReceiptsList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View the ancillary parameters (UUIDs of the internal references) by UUID
      *
      * @generated from rpc Scailo.GoodsReceiptsService.ViewAncillaryParametersByUUID

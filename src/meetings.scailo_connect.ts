@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Meeting, MeetingActionable, MeetingActionableHistoryRequest, MeetingActionablesList, MeetingActionablesSearchRequest, MeetingAssociate, MeetingAssociatesList, MeetingEmployee, MeetingEmployeesList, MeetingsList, MeetingsServiceActionableCreateRequest, MeetingsServiceActionableUpdateRequest, MeetingsServiceAssociateCreateRequest, MeetingsServiceCountReq, MeetingsServiceCreateRequest, MeetingsServiceEmployeeCreateRequest, MeetingsServiceFilterReq, MeetingsServiceImportEmployeesRequest, MeetingsServicePaginatedActionablesResponse, MeetingsServicePaginationReq, MeetingsServicePaginationResponse, MeetingsServiceSearchAllReq, MeetingsServiceSetRSVPRequest, MeetingsServiceUpdateRequest } from "./meetings.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -366,6 +366,39 @@ export const MeetingsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: Meeting,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.MeetingsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: Meeting,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.MeetingsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Meeting,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.MeetingsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: MeetingsList,
       kind: MethodKind.Unary,
     },
     /**

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { TaxParam, TaxParamsList, TaxParamsServiceCountReq, TaxParamsServiceCreateRequest, TaxParamsServiceFilterReq, TaxParamsServicePaginationReq, TaxParamsServicePaginationResponse, TaxParamsServiceSearchAllReq, TaxParamsServiceUpdateRequest } from "./tax_params.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -171,6 +171,39 @@ export const TaxParamsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: TaxParam,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.TaxParamsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: TaxParam,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.TaxParamsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: TaxParam,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.TaxParamsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: TaxParamsList,
       kind: MethodKind.Unary,
     },
     /**

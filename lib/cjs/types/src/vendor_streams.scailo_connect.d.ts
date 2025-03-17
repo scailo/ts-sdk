@@ -1,5 +1,5 @@
 import { VendorStream, VendorStreamInternalSubscriber, VendorStreamInternalSubscribersList, VendorStreamMessage, VendorStreamMessageReceiptsList, VendorStreamMessagesList, VendorStreamMessagesSearchRequest, VendorStreamsList, VendorStreamsServiceCountReq, VendorStreamsServiceCreateRequest, VendorStreamsServiceFilterReq, VendorStreamsServiceImportInternalSubscribersRequest, VendorStreamsServiceInternalSubscriberCreateRequest, VendorStreamsServiceMessageCreateRequest, VendorStreamsServicePaginatedMessagesResponse, VendorStreamsServicePaginationReq, VendorStreamsServicePaginationResponse, VendorStreamsServiceSearchAllReq, VendorStreamsServiceUpdateRequest, VendorStreamsServiceVendorSubscriberCreateRequest, VendorStreamVendorSubscriber, VendorStreamVendorSubscribersList } from "./vendor_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -308,6 +308,39 @@ export declare const VendorStreamsService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof VendorStream;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.VendorStreamsService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof VendorStream;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.VendorStreamsService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof VendorStream;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.VendorStreamsService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof VendorStreamsList;
             readonly kind: MethodKind.Unary;
         };
         /**

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SalariesAdditionItemsList, SalariesDeductionItemsList, SalariesList, SalariesReimbursementItemsList, SalariesServiceAdditionItemCreateRequest, SalariesServiceAdditionItemUpdateRequest, SalariesServiceAutofillRequest, SalariesServiceCountReq, SalariesServiceCreateRequest, SalariesServiceDeductionItemCreateRequest, SalariesServiceDeductionItemUpdateRequest, SalariesServiceFilterReq, SalariesServicePaginationReq, SalariesServicePaginationResponse, SalariesServiceReimbursementItemCreateRequest, SalariesServiceReimbursementItemUpdateRequest, SalariesServiceSearchAllReq, SalariesServiceUpdateRequest, Salary, SalaryAdditionItem, SalaryAdditionItemHistoryRequest, SalaryAdditionItemProspectiveInfoRequest, SalaryDeductionItem, SalaryDeductionItemHistoryRequest, SalaryDeductionItemProspectiveInfoRequest, SalaryReimbursementItem, SalaryReimbursementItemHistoryRequest, SalaryReimbursementItemProspectiveInfoRequest } from "./salaries.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -559,6 +559,39 @@ export const SalariesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: Salary,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.SalariesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: Salary,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.SalariesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Salary,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.SalariesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: SalariesList,
       kind: MethodKind.Unary,
     },
     /**

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { UnitOfMaterial, UnitsOfMaterialsList, UnitsOfMaterialsServiceCountReq, UnitsOfMaterialsServiceCreateRequest, UnitsOfMaterialsServiceFilterReq, UnitsOfMaterialsServicePaginationReq, UnitsOfMaterialsServicePaginationResponse, UnitsOfMaterialsServiceSearchAllReq, UnitsOfMaterialsServiceUpdateRequest } from "./units_of_materials.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -171,6 +171,39 @@ export const UnitsOfMaterialsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: UnitOfMaterial,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.UnitsOfMaterialsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: UnitOfMaterial,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.UnitsOfMaterialsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: UnitOfMaterial,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.UnitsOfMaterialsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: UnitsOfMaterialsList,
       kind: MethodKind.Unary,
     },
     /**

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Merchandise, MerchandisesList, MerchandisesServiceCountReq, MerchandisesServiceCreateRequest, MerchandisesServiceFilterReq, MerchandisesServicePaginationReq, MerchandisesServicePaginationResponse, MerchandisesServiceSearchAllReq, MerchandisesServiceSendToStoreRequest, MerchandisesServiceUpdateRequest } from "./merchandises.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -179,6 +179,39 @@ export const MerchandisesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: Merchandise,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.MerchandisesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: Merchandise,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.MerchandisesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Merchandise,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.MerchandisesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: MerchandisesList,
       kind: MethodKind.Unary,
     },
     /**

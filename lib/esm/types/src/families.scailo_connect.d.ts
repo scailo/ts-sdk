@@ -510,6 +510,17 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View all families with the given IDs
+         *
+         * @generated from rpc Scailo.FamiliesService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.FamiliesService.ViewAll
@@ -540,17 +551,6 @@ export declare const FamiliesService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof FamiliesServicePaginationReq;
             readonly O: typeof FamiliesServicePaginationResponse;
-            readonly kind: MethodKind.Unary;
-        };
-        /**
-         * View all families with the given IDs
-         *
-         * @generated from rpc Scailo.FamiliesService.ViewFromIDs
-         */
-        readonly viewFromIDs: {
-            readonly name: "ViewFromIDs";
-            readonly I: typeof IdentifiersList;
-            readonly O: typeof FamiliesList;
             readonly kind: MethodKind.Unary;
         };
         /**

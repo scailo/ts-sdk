@@ -404,6 +404,39 @@ export const SupplyOffersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.SupplyOffersService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: SupplyOffer,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.SupplyOffersService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: SupplyOffer,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.SupplyOffersService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: SupplyOffersList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View the ancillary parameters (UUIDs of the internal references) by UUID
      *
      * @generated from rpc Scailo.SupplyOffersService.ViewAncillaryParametersByUUID
@@ -412,17 +445,6 @@ export const SupplyOffersService = {
       name: "ViewAncillaryParametersByUUID",
       I: IdentifierUUID,
       O: SupplyOfferAncillaryParameters,
-      kind: MethodKind.Unary,
-    },
-    /**
-     * View only essential components of the record
-     *
-     * @generated from rpc Scailo.SupplyOffersService.ViewEssentialByID
-     */
-    viewEssentialByID: {
-      name: "ViewEssentialByID",
-      I: Identifier,
-      O: SupplyOffer,
       kind: MethodKind.Unary,
     },
     /**

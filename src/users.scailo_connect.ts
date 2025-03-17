@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { User, UsersList, UsersServiceCountReq, UsersServiceCreateRequest, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users.scailo_pb.js";
-import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
+import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -246,6 +246,28 @@ export const UsersService = {
      */
     viewByUUID: {
       name: "ViewByUUID",
+      I: IdentifierUUID,
+      O: User,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.UsersService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: User,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.UsersService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
       I: IdentifierUUID,
       O: User,
       kind: MethodKind.Unary,

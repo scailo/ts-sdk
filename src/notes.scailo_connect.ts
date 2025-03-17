@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Note, NotesList, NotesServiceCountReq, NotesServiceCreateRequest, NotesServiceFilterReq, NotesServicePaginationReq, NotesServicePaginationResponse, NotesServiceSearchAllReq, NotesServiceUpdateRequest } from "./notes.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -124,6 +124,39 @@ export const NotesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: Note,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.NotesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: Note,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.NotesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: Note,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.NotesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: NotesList,
       kind: MethodKind.Unary,
     },
     /**

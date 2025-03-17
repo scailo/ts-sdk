@@ -1,5 +1,5 @@
 import { User, UsersList, UsersServiceCountReq, UsersServiceCreateRequest, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users.scailo_pb.js";
-import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
+import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -240,6 +240,28 @@ export declare const UsersService: {
          */
         readonly viewByUUID: {
             readonly name: "ViewByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof User;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.UsersService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof User;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.UsersService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof User;
             readonly kind: MethodKind.Unary;

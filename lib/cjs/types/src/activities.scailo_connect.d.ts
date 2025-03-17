@@ -1,5 +1,5 @@
 import { ActivitiesList, ActivitiesServiceActionCreateRequest, ActivitiesServiceActionUpdateRequest, ActivitiesServiceActionWithTimerCreateRequest, ActivitiesServiceActivityTagAssociationCreateRequest, ActivitiesServiceCountReq, ActivitiesServiceCreateRequest, ActivitiesServiceFilterReq, ActivitiesServiceImportOwnersRequest, ActivitiesServiceOwnerCreateRequest, ActivitiesServicePaginatedActionsResponse, ActivitiesServicePaginatedTimersResponse, ActivitiesServicePaginationReq, ActivitiesServicePaginationResponse, ActivitiesServiceSearchAllReq, ActivitiesServiceSupervisorCreateRequest, ActivitiesServiceTimerCreateRequest, ActivitiesServiceTimerEndRequest, ActivitiesServiceUpdateRequest, Activity, ActivityAction, ActivityActionHistoryRequest, ActivityActionsList, ActivityActionsSearchRequest, ActivityActionStatistics, ActivityOwner, ActivityOwnersList, ActivityStatistics, ActivitySupervisor, ActivitySupervisorsList, ActivityTagAssociation, ActivityTagAssociationsList, ActivityTimer, ActivityTimersList, ActivityTimersSearchRequest } from "./activities.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -459,6 +459,39 @@ export declare const ActivitiesService: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof Activity;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.ActivitiesService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof Activity;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.ActivitiesService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof Activity;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.ActivitiesService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof ActivitiesList;
             readonly kind: MethodKind.Unary;
         };
         /**

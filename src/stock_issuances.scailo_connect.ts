@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { StockIssuance, StockIssuanceItem, StockIssuanceItemHistoryRequest, StockIssuanceItemProspectiveInfoRequest, StockIssuanceItemsSearchRequest, StockIssuancesItemsList, StockIssuancesList, StockIssuancesServiceAlreadyAddedQuantityForSourceRequest, StockIssuancesServiceAutofillRequest, StockIssuancesServiceCountReq, StockIssuancesServiceCreateRequest, StockIssuancesServiceFilterReq, StockIssuancesServiceItemCreateRequest, StockIssuancesServiceItemUpdateRequest, StockIssuancesServicePaginatedItemsResponse, StockIssuancesServicePaginationReq, StockIssuancesServicePaginationResponse, StockIssuancesServiceSearchAllReq, StockIssuancesServiceUpdateRequest } from "./stock_issuances.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -378,6 +378,39 @@ export const StockIssuancesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: StockIssuance,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.StockIssuancesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: StockIssuance,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.StockIssuancesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: StockIssuance,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.StockIssuancesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: StockIssuancesList,
       kind: MethodKind.Unary,
     },
     /**

@@ -10,7 +10,7 @@
 // @ts-nocheck
 
 import { ShiftGroup, ShiftGroupShift, ShiftsGroupsList, ShiftsGroupsServiceCountReq, ShiftsGroupsServiceCreateRequest, ShiftsGroupsServiceFilterReq, ShiftsGroupsServicePaginationReq, ShiftsGroupsServicePaginationResponse, ShiftsGroupsServiceSearchAllReq, ShiftsGroupsServiceShiftGroupCreateRequest, ShiftsGroupsServiceShiftGroupUpdateRequest, ShiftsGroupsServiceUpdateRequest, ShiftsGroupsShiftsHistoryRequest, ShiftsGroupsShiftsList } from "./shifts_groups.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -298,6 +298,39 @@ export const ShiftsGroupsService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: ShiftGroup,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.ShiftsGroupsService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: ShiftGroup,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.ShiftsGroupsService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: ShiftGroup,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.ShiftsGroupsService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: ShiftsGroupsList,
       kind: MethodKind.Unary,
     },
     /**

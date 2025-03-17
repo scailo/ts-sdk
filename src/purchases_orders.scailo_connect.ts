@@ -514,6 +514,39 @@ export const PurchasesOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: PurchaseOrder,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: PurchaseOrder,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: PurchasesOrdersList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View the ancillary parameters (UUIDs of the internal references) by UUID
      *
      * @generated from rpc Scailo.PurchasesOrdersService.ViewAncillaryParametersByUUID
@@ -522,17 +555,6 @@ export const PurchasesOrdersService = {
       name: "ViewAncillaryParametersByUUID",
       I: IdentifierUUID,
       O: PurchaseOrderAncillaryParameters,
-      kind: MethodKind.Unary,
-    },
-    /**
-     * View only essential components of the record
-     *
-     * @generated from rpc Scailo.PurchasesOrdersService.ViewEssentialByID
-     */
-    viewEssentialByID: {
-      name: "ViewEssentialByID",
-      I: Identifier,
-      O: PurchaseOrder,
       kind: MethodKind.Unary,
     },
     /**

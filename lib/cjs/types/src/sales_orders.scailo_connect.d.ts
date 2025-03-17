@@ -508,6 +508,39 @@ export declare const SalesOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View only essential components by ID (without logs)
+         *
+         * @generated from rpc Scailo.SalesOrdersService.ViewEssentialByID
+         */
+        readonly viewEssentialByID: {
+            readonly name: "ViewEssentialByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof SalesOrder;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the given UUID
+         *
+         * @generated from rpc Scailo.SalesOrdersService.ViewEssentialByUUID
+         */
+        readonly viewEssentialByUUID: {
+            readonly name: "ViewEssentialByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof SalesOrder;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all records with the given IDs
+         *
+         * @generated from rpc Scailo.SalesOrdersService.ViewFromIDs
+         */
+        readonly viewFromIDs: {
+            readonly name: "ViewFromIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof SalesOrdersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View the ancillary parameters (UUIDs of the internal references) by UUID
          *
          * @generated from rpc Scailo.SalesOrdersService.ViewAncillaryParametersByUUID
@@ -516,17 +549,6 @@ export declare const SalesOrdersService: {
             readonly name: "ViewAncillaryParametersByUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof SalesOrderAncillaryParameters;
-            readonly kind: MethodKind.Unary;
-        };
-        /**
-         * View only essential components of the record
-         *
-         * @generated from rpc Scailo.SalesOrdersService.ViewEssentialByID
-         */
-        readonly viewEssentialByID: {
-            readonly name: "ViewEssentialByID";
-            readonly I: typeof Identifier;
-            readonly O: typeof SalesOrder;
             readonly kind: MethodKind.Unary;
         };
         /**

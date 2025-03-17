@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { OnDutiesList, OnDutiesServiceCountReq, OnDutiesServiceCreateRequest, OnDutiesServiceFilterReq, OnDutiesServiceImageEntryRequest, OnDutiesServiceImageExitRequest, OnDutiesServicePaginationReq, OnDutiesServicePaginationResponse, OnDutiesServiceSearchAllReq, OnDutiesServiceUpdateRequest, OnDuty } from "./on_duties.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -215,6 +215,39 @@ export const OnDutiesService = {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: OnDuty,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.OnDutiesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: OnDuty,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.OnDutiesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: OnDuty,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.OnDutiesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: OnDutiesList,
       kind: MethodKind.Unary,
     },
     /**

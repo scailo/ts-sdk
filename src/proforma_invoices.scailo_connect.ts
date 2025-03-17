@@ -393,6 +393,39 @@ export const ProformaInvoicesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View only essential components by ID (without logs)
+     *
+     * @generated from rpc Scailo.ProformaInvoicesService.ViewEssentialByID
+     */
+    viewEssentialByID: {
+      name: "ViewEssentialByID",
+      I: Identifier,
+      O: ProformaInvoice,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the given UUID
+     *
+     * @generated from rpc Scailo.ProformaInvoicesService.ViewEssentialByUUID
+     */
+    viewEssentialByUUID: {
+      name: "ViewEssentialByUUID",
+      I: IdentifierUUID,
+      O: ProformaInvoice,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all records with the given IDs
+     *
+     * @generated from rpc Scailo.ProformaInvoicesService.ViewFromIDs
+     */
+    viewFromIDs: {
+      name: "ViewFromIDs",
+      I: IdentifiersList,
+      O: ProformaInvoicesList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View the ancillary parameters (UUIDs of the internal references) by UUID
      *
      * @generated from rpc Scailo.ProformaInvoicesService.ViewAncillaryParametersByUUID
