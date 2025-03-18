@@ -607,6 +607,7 @@ export const FamiliesService = {
      * View all families for purchase that match the given search key
      *
      * @generated from rpc Scailo.FamiliesService.SearchForPurchase
+     * @deprecated
      */
     searchForPurchase: {
       name: "SearchForPurchase",
@@ -618,6 +619,7 @@ export const FamiliesService = {
      * View all families for sale that match the given search key
      *
      * @generated from rpc Scailo.FamiliesService.SearchForSale
+     * @deprecated
      */
     searchForSale: {
       name: "SearchForSale",
@@ -629,6 +631,7 @@ export const FamiliesService = {
      * View all families for production that match the given search key
      *
      * @generated from rpc Scailo.FamiliesService.SearchForProduction
+     * @deprecated
      */
     searchForProduction: {
       name: "SearchForProduction",
@@ -640,6 +643,7 @@ export const FamiliesService = {
      * View all families for replaceables that match the given search key
      *
      * @generated from rpc Scailo.FamiliesService.SearchForReplaceables
+     * @deprecated
      */
     searchForReplaceables: {
       name: "SearchForReplaceables",
@@ -651,6 +655,7 @@ export const FamiliesService = {
      * View all families for equation family that match the given search key
      *
      * @generated from rpc Scailo.FamiliesService.SearchForEquationFamily
+     * @deprecated
      */
     searchForEquationFamily: {
       name: "SearchForEquationFamily",
@@ -662,6 +667,7 @@ export const FamiliesService = {
      * View all families for equation replaceable that match the given search key
      *
      * @generated from rpc Scailo.FamiliesService.SearchForEquationReplaceable
+     * @deprecated
      */
     searchForEquationReplaceable: {
       name: "SearchForEquationReplaceable",
@@ -673,6 +679,7 @@ export const FamiliesService = {
      * View all families for equation sales bundle that match the given search key
      *
      * @generated from rpc Scailo.FamiliesService.SearchForEquationSalesBundle
+     * @deprecated
      */
     searchForEquationSalesBundle: {
       name: "SearchForEquationSalesBundle",

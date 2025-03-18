@@ -601,6 +601,7 @@ export declare const FamiliesService: {
          * View all families for purchase that match the given search key
          *
          * @generated from rpc Scailo.FamiliesService.SearchForPurchase
+         * @deprecated
          */
         readonly searchForPurchase: {
             readonly name: "SearchForPurchase";
@@ -612,6 +613,7 @@ export declare const FamiliesService: {
          * View all families for sale that match the given search key
          *
          * @generated from rpc Scailo.FamiliesService.SearchForSale
+         * @deprecated
          */
         readonly searchForSale: {
             readonly name: "SearchForSale";
@@ -623,6 +625,7 @@ export declare const FamiliesService: {
          * View all families for production that match the given search key
          *
          * @generated from rpc Scailo.FamiliesService.SearchForProduction
+         * @deprecated
          */
         readonly searchForProduction: {
             readonly name: "SearchForProduction";
@@ -634,6 +637,7 @@ export declare const FamiliesService: {
          * View all families for replaceables that match the given search key
          *
          * @generated from rpc Scailo.FamiliesService.SearchForReplaceables
+         * @deprecated
          */
         readonly searchForReplaceables: {
             readonly name: "SearchForReplaceables";
@@ -645,6 +649,7 @@ export declare const FamiliesService: {
          * View all families for equation family that match the given search key
          *
          * @generated from rpc Scailo.FamiliesService.SearchForEquationFamily
+         * @deprecated
          */
         readonly searchForEquationFamily: {
             readonly name: "SearchForEquationFamily";
@@ -656,6 +661,7 @@ export declare const FamiliesService: {
          * View all families for equation replaceable that match the given search key
          *
          * @generated from rpc Scailo.FamiliesService.SearchForEquationReplaceable
+         * @deprecated
          */
         readonly searchForEquationReplaceable: {
             readonly name: "SearchForEquationReplaceable";
@@ -667,6 +673,7 @@ export declare const FamiliesService: {
          * View all families for equation sales bundle that match the given search key
          *
          * @generated from rpc Scailo.FamiliesService.SearchForEquationSalesBundle
+         * @deprecated
          */
         readonly searchForEquationSalesBundle: {
             readonly name: "SearchForEquationSalesBundle";

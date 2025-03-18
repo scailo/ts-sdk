@@ -562,6 +562,18 @@ export declare const PurchasesIndentsService: {
             readonly O: typeof CountResponse;
             readonly kind: MethodKind.Unary;
         };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.PurchasesIndentsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof PurchasesIndentsServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
     };
 };
 //# sourceMappingURL=purchases_indents.scailo_connect.d.ts.map
