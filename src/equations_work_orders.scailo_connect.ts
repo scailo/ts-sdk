@@ -483,6 +483,17 @@ export const EquationsWorkOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Download equation with the given IdentifierUUID
+     *
+     * @generated from rpc Scailo.EquationsWorkOrdersService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all that match the given search key
      *
      * @generated from rpc Scailo.EquationsWorkOrdersService.SearchAll

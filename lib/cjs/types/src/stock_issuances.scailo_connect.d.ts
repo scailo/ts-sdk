@@ -496,6 +496,17 @@ export declare const StockIssuancesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Download stock issuance with the given IdentifierUUID
+         *
+         * @generated from rpc Scailo.StockIssuancesService.DownloadByUUID
+         */
+        readonly downloadByUUID: {
+            readonly name: "DownloadByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all that match the given search key
          *
          * @generated from rpc Scailo.StockIssuancesService.SearchAll
@@ -537,6 +548,18 @@ export declare const StockIssuancesService: {
             readonly name: "Count";
             readonly I: typeof StockIssuancesServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.StockIssuancesService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof StockIssuancesServiceFilterReq;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
     };

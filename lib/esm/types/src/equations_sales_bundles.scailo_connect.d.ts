@@ -455,6 +455,17 @@ export declare const EquationsSalesBundlesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Download equation with the given IdentifierUUID
+         *
+         * @generated from rpc Scailo.EquationsSalesBundlesService.DownloadByUUID
+         */
+        readonly downloadByUUID: {
+            readonly name: "DownloadByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all that match the given search key
          *
          * @generated from rpc Scailo.EquationsSalesBundlesService.SearchAll

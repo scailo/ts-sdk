@@ -1,5 +1,5 @@
 import { WorkOrder, WorkOrderAncillaryParameters, WorkOrderItem, WorkOrderItemHistoryRequest, WorkOrderItemProspectiveInfoRequest, WorkOrderItemsSearchRequest, WorkOrdersItemsList, WorkOrdersList, WorkOrdersServiceAutofillRequest, WorkOrdersServiceCountReq, WorkOrdersServiceCreateRequest, WorkOrdersServiceFilterReq, WorkOrdersServiceItemCreateRequest, WorkOrdersServiceItemUpdateRequest, WorkOrdersServicePaginatedItemsResponse, WorkOrdersServicePaginationReq, WorkOrdersServicePaginationResponse, WorkOrdersServiceSearchAllReq, WorkOrdersServiceUpdateRequest } from "./work_orders.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
@@ -342,6 +342,29 @@ export declare const WorkOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * CSV operations
+         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         *
+         * @generated from rpc Scailo.WorkOrdersService.DownloadItemsAsCSV
+         */
+        readonly downloadItemsAsCSV: {
+            readonly name: "DownloadItemsAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+         *
+         * @generated from rpc Scailo.WorkOrdersService.UploadWorkOrderItems
+         */
+        readonly uploadWorkOrderItems: {
+            readonly name: "UploadWorkOrderItems";
+            readonly I: typeof IdentifierUUIDWithFile;
+            readonly O: typeof IdentifiersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View by ID
          *
          * @generated from rpc Scailo.WorkOrdersService.ViewByID
@@ -526,6 +549,18 @@ export declare const WorkOrdersService: {
             readonly name: "Count";
             readonly I: typeof WorkOrdersServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.WorkOrdersService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof WorkOrdersServiceFilterReq;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
     };

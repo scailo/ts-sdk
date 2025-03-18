@@ -525,6 +525,17 @@ export const PurchasesIndentsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Download equation with the given IdentifierUUID
+     *
+     * @generated from rpc Scailo.PurchasesIndentsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all that match the given search key
      *
      * @generated from rpc Scailo.PurchasesIndentsService.SearchAll

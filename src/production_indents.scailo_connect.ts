@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ProductionIndent, ProductionIndentIssuedStatisticsList, ProductionIndentItem, ProductionIndentItemHistoryRequest, ProductionIndentItemProspectiveInfoRequest, ProductionIndentItemsSearchRequest, ProductionIndentsItemsList, ProductionIndentsList, ProductionIndentsServiceAutofillRequest, ProductionIndentsServiceCountReq, ProductionIndentsServiceCreateRequest, ProductionIndentsServiceFilterReq, ProductionIndentsServiceItemCreateRequest, ProductionIndentsServiceItemUpdateRequest, ProductionIndentsServicePaginatedItemsResponse, ProductionIndentsServicePaginationReq, ProductionIndentsServicePaginationResponse, ProductionIndentsServiceSearchAllReq, ProductionIndentsServiceUpdateRequest } from "./production_indents.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -348,6 +348,29 @@ export const ProductionIndentsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * CSV operations
+     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     *
+     * @generated from rpc Scailo.ProductionIndentsService.DownloadItemsAsCSV
+     */
+    downloadItemsAsCSV: {
+      name: "DownloadItemsAsCSV",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+     *
+     * @generated from rpc Scailo.ProductionIndentsService.UploadProductionIndentItems
+     */
+    uploadProductionIndentItems: {
+      name: "UploadProductionIndentItems",
+      I: IdentifierUUIDWithFile,
+      O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View by ID
      *
      * @generated from rpc Scailo.ProductionIndentsService.ViewByID
@@ -469,6 +492,17 @@ export const ProductionIndentsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Download production indent with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.ProductionIndentsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View issued (stock issuance) statistics of the production indent
      *
      * @generated from rpc Scailo.ProductionIndentsService.ViewIssuedStatistics
@@ -532,6 +566,18 @@ export const ProductionIndentsService = {
       name: "Count",
       I: ProductionIndentsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.ProductionIndentsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: ProductionIndentsServiceFilterReq,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
   }
