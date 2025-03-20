@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { StockAudit, StockAuditItem, StockAuditItemHistoryRequest, StockAuditItemProspectiveInfoRequest, StockAuditItemsSearchRequest, StockAuditsItemsList, StockAuditsList, StockAuditsServiceCountReq, StockAuditsServiceCreateRequest, StockAuditsServiceFilterReq, StockAuditsServiceItemCreateRequest, StockAuditsServiceItemUpdateRequest, StockAuditsServicePaginatedItemsResponse, StockAuditsServicePaginationReq, StockAuditsServicePaginationResponse, StockAuditsServiceSearchAllReq, StockAuditsServiceUpdateRequest } from "./stock_audits.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -348,6 +348,29 @@ export const StockAuditsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * CSV operations
+     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     *
+     * @generated from rpc Scailo.StockAuditsService.DownloadItemsAsCSV
+     */
+    downloadItemsAsCSV: {
+      name: "DownloadItemsAsCSV",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+     *
+     * @generated from rpc Scailo.StockAuditsService.UploadStockAuditItems
+     */
+    uploadStockAuditItems: {
+      name: "UploadStockAuditItems",
+      I: IdentifierUUIDWithFile,
+      O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View by ID
      *
      * @generated from rpc Scailo.StockAuditsService.ViewByID
@@ -480,6 +503,17 @@ export const StockAuditsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Download stock audit with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.StockAuditsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all that match the given search key
      *
      * @generated from rpc Scailo.StockAuditsService.SearchAll
@@ -521,6 +555,18 @@ export const StockAuditsService = {
       name: "Count",
       I: StockAuditsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.StockAuditsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: StockAuditsServiceFilterReq,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
   }
