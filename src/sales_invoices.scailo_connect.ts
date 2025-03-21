@@ -656,6 +656,18 @@ export const SalesInvoicesService = {
       O: SumResponse,
       kind: MethodKind.Unary,
     },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.SalesInvoicesService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: SalesInvoicesServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
   }
 } as const;
 

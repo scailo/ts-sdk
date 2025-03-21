@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { DebitNote, DebitNoteAncillaryParameters, DebitNoteItem, DebitNoteItemHistoryRequest, DebitNoteItemProspectiveInfoRequest, DebitNoteItemsList, DebitNoteItemsSearchRequest, DebitNoteReference, DebitNoteReferencesList, DebitNotesList, DebitNotesServiceAlreadyAddedQuantityForSourceRequest, DebitNotesServiceAutofillRequest, DebitNotesServiceCountReq, DebitNotesServiceCreateRequest, DebitNotesServiceFilterReq, DebitNotesServiceItemCreateRequest, DebitNotesServiceItemUpdateRequest, DebitNotesServicePaginatedItemsResponse, DebitNotesServicePaginationReq, DebitNotesServicePaginationResponse, DebitNotesServiceReferenceCreateRequest, DebitNotesServiceSearchAllReq, DebitNotesServiceUpdateRequest } from "./debit_notes.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -337,6 +337,29 @@ export const DebitNotesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * CSV operations
+     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     *
+     * @generated from rpc Scailo.DebitNotesService.DownloadItemsAsCSV
+     */
+    downloadItemsAsCSV: {
+      name: "DownloadItemsAsCSV",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+     *
+     * @generated from rpc Scailo.DebitNotesService.UploadDebitNoteItems
+     */
+    uploadDebitNoteItems: {
+      name: "UploadDebitNoteItems",
+      I: IdentifierUUIDWithFile,
+      O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Add a reference
      *
      * @generated from rpc Scailo.DebitNotesService.AddDebitNoteReference
@@ -588,6 +611,18 @@ export const DebitNotesService = {
       name: "Count",
       I: DebitNotesServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.DebitNotesService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: DebitNotesServiceFilterReq,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
   }

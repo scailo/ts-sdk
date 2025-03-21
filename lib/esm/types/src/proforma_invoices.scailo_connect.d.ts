@@ -606,6 +606,18 @@ export declare const ProformaInvoicesService: {
             readonly O: typeof SumResponse;
             readonly kind: MethodKind.Unary;
         };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.ProformaInvoicesService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof ProformaInvoicesServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
     };
 };
 //# sourceMappingURL=proforma_invoices.scailo_connect.d.ts.map

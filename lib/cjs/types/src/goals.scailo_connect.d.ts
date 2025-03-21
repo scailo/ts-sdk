@@ -1,5 +1,5 @@
 import { Goal, GoalItem, GoalItemHistoryRequest, GoalItemsSearchRequest, GoalsItemsList, GoalsList, GoalsServiceCountReq, GoalsServiceCreateRequest, GoalsServiceFilterReq, GoalsServiceItemCreateRequest, GoalsServiceItemUpdateRequest, GoalsServicePaginatedItemsResponse, GoalsServicePaginationReq, GoalsServicePaginationResponse, GoalsServiceSearchAllReq, GoalsServiceUpdateRequest } from "./goals.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -319,6 +319,29 @@ export declare const GoalsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * CSV operations
+         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         *
+         * @generated from rpc Scailo.GoalsService.DownloadItemsAsCSV
+         */
+        readonly downloadItemsAsCSV: {
+            readonly name: "DownloadItemsAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+         *
+         * @generated from rpc Scailo.GoalsService.UploadGoalItems
+         */
+        readonly uploadGoalItems: {
+            readonly name: "UploadGoalItems";
+            readonly I: typeof IdentifierUUIDWithFile;
+            readonly O: typeof IdentifiersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View by ID
          *
          * @generated from rpc Scailo.GoalsService.ViewByID
@@ -448,6 +471,18 @@ export declare const GoalsService: {
             readonly name: "Count";
             readonly I: typeof GoalsServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.GoalsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof GoalsServiceFilterReq;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
     };

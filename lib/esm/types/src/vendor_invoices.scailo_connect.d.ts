@@ -628,6 +628,18 @@ export declare const VendorInvoicesService: {
             readonly O: typeof SumResponse;
             readonly kind: MethodKind.Unary;
         };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.VendorInvoicesService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof VendorInvoicesServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
     };
 };
 //# sourceMappingURL=vendor_invoices.scailo_connect.d.ts.map

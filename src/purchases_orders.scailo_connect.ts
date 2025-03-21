@@ -734,6 +734,18 @@ export const PurchasesOrdersService = {
       O: SumResponse,
       kind: MethodKind.Unary,
     },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: PurchasesOrdersServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
   }
 } as const;
 

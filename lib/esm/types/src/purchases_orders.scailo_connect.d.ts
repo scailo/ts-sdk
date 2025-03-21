@@ -728,6 +728,18 @@ export declare const PurchasesOrdersService: {
             readonly O: typeof SumResponse;
             readonly kind: MethodKind.Unary;
         };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.PurchasesOrdersService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof PurchasesOrdersServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
     };
 };
 //# sourceMappingURL=purchases_orders.scailo_connect.d.ts.map

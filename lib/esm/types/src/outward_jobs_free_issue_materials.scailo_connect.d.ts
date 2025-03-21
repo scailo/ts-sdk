@@ -562,6 +562,18 @@ export declare const OutwardJobsFreeIssueMaterialsService: {
             readonly O: typeof CountResponse;
             readonly kind: MethodKind.Unary;
         };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof OutwardJobsFreeIssueMaterialsServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
     };
 };
 //# sourceMappingURL=outward_jobs_free_issue_materials.scailo_connect.d.ts.map
