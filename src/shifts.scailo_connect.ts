@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Shift, ShiftsList, ShiftsServiceCountReq, ShiftsServiceCreateRequest, ShiftsServiceFilterReq, ShiftsServicePaginationReq, ShiftsServicePaginationResponse, ShiftsServiceSearchAllReq, ShiftsServiceUpdateRequest } from "./shifts.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -315,6 +315,17 @@ export const ShiftsService = {
       name: "DownloadAsCSV",
       I: ShiftsServiceFilterReq,
       O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file (duplicate codes will be skipped)
+     *
+     * @generated from rpc Scailo.ShiftsService.ImportFromCSV
+     */
+    importFromCSV: {
+      name: "ImportFromCSV",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }

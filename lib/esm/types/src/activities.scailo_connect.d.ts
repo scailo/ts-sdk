@@ -1,5 +1,5 @@
 import { ActivitiesList, ActivitiesServiceActionCreateRequest, ActivitiesServiceActionUpdateRequest, ActivitiesServiceActionWithTimerCreateRequest, ActivitiesServiceActivityTagAssociationCreateRequest, ActivitiesServiceCountReq, ActivitiesServiceCreateRequest, ActivitiesServiceFilterReq, ActivitiesServiceImportOwnersRequest, ActivitiesServiceOwnerCreateRequest, ActivitiesServicePaginatedActionsResponse, ActivitiesServicePaginatedTimersResponse, ActivitiesServicePaginationReq, ActivitiesServicePaginationResponse, ActivitiesServiceSearchAllReq, ActivitiesServiceSupervisorCreateRequest, ActivitiesServiceTimerCreateRequest, ActivitiesServiceTimerEndRequest, ActivitiesServiceUpdateRequest, Activity, ActivityAction, ActivityActionHistoryRequest, ActivityActionsList, ActivityActionsSearchRequest, ActivityActionStatistics, ActivityOwner, ActivityOwnersList, ActivityStatistics, ActivitySupervisor, ActivitySupervisorsList, ActivityTagAssociation, ActivityTagAssociationsList, ActivityTimer, ActivityTimersList, ActivityTimersSearchRequest } from "./activities.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -217,6 +217,29 @@ export declare const ActivitiesService: {
             readonly name: "SearchActionsWithPagination";
             readonly I: typeof ActivityActionsSearchRequest;
             readonly O: typeof ActivitiesServicePaginatedActionsResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that could be used to upload actions from the filled CSV file. The same file can also be used as a template when there are no existing records
+         *
+         * @generated from rpc Scailo.ActivitiesService.DownloadActionsAsCSV
+         */
+        readonly downloadActionsAsCSV: {
+            readonly name: "DownloadActionsAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Upload actions using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+         *
+         * @generated from rpc Scailo.ActivitiesService.UploadActivityActions
+         */
+        readonly uploadActivityActions: {
+            readonly name: "UploadActivityActions";
+            readonly I: typeof IdentifierUUIDWithFile;
+            readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -440,6 +463,21 @@ export declare const ActivitiesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * CSV operations
+         * Download the CSV file that could be used to upload timers from the filled CSV file. The same file can also be used as a template when there are no existing records
+         *
+         * Upload timers using a CSV file. This is not an idempotent operation.
+         * rpc UploadActivityTimers(IdentifierUUIDWithFile) returns (IdentifiersList);
+         *
+         * @generated from rpc Scailo.ActivitiesService.DownloadTimersAsCSV
+         */
+        readonly downloadTimersAsCSV: {
+            readonly name: "DownloadTimersAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View by ID
          *
          * @generated from rpc Scailo.ActivitiesService.ViewByID
@@ -581,6 +619,17 @@ export declare const ActivitiesService: {
             readonly name: "DownloadAsCSV";
             readonly I: typeof ActivitiesServiceFilterReq;
             readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Import records using a CSV file (duplicate codes will be skipped)
+         *
+         * @generated from rpc Scailo.ActivitiesService.ImportFromCSV
+         */
+        readonly importFromCSV: {
+            readonly name: "ImportFromCSV";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };

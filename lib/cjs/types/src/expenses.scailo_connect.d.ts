@@ -430,6 +430,18 @@ export declare const ExpensesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Other view operations
+         * Download expense with the given IdentifierUUID (can be used to allow public downloads)
+         *
+         * @generated from rpc Scailo.ExpensesService.DownloadByUUID
+         */
+        readonly downloadByUUID: {
+            readonly name: "DownloadByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all that match the given search key
          *
          * @generated from rpc Scailo.ExpensesService.SearchAll

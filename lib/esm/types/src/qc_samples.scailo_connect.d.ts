@@ -187,6 +187,18 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * CSV operations
+         * Download the CSV file that consists of the list of parameters in each qc sample represented by the given identifier UUID
+         *
+         * @generated from rpc Scailo.QCSamplesService.DownloadParametersAsCSV
+         */
+        readonly downloadParametersAsCSV: {
+            readonly name: "DownloadParametersAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View by ID
          *
          * @generated from rpc Scailo.QCSamplesService.ViewByID
@@ -283,6 +295,17 @@ export declare const QCSamplesService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof QCSamplesServicePaginationReq;
             readonly O: typeof QCSamplesServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download qc sample with the given IdentifierUUID (can be used to allow public downloads)
+         *
+         * @generated from rpc Scailo.QCSamplesService.DownloadByUUID
+         */
+        readonly downloadByUUID: {
+            readonly name: "DownloadByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
         /**

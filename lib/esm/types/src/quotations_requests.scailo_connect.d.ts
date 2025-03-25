@@ -1,5 +1,5 @@
 import { QuotationRequest, QuotationRequestAncillaryParameters, QuotationRequestItem, QuotationRequestItemHistoryRequest, QuotationRequestItemsSearchRequest, QuotationsRequestsItemsList, QuotationsRequestsList, QuotationsRequestsServiceAutofillRequest, QuotationsRequestsServiceCountReq, QuotationsRequestsServiceCreateRequest, QuotationsRequestsServiceFilterReq, QuotationsRequestsServiceItemCreateRequest, QuotationsRequestsServiceItemUpdateRequest, QuotationsRequestsServicePaginatedItemsResponse, QuotationsRequestsServicePaginationReq, QuotationsRequestsServicePaginationResponse, QuotationsRequestsServiceSearchAllReq, QuotationsRequestsServiceUpdateRequest } from "./quotations_requests.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -316,6 +316,29 @@ export declare const QuotationsRequestsService: {
             readonly name: "SearchItemsWithPagination";
             readonly I: typeof QuotationRequestItemsSearchRequest;
             readonly O: typeof QuotationsRequestsServicePaginatedItemsResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         *
+         * @generated from rpc Scailo.QuotationsRequestsService.DownloadItemsAsCSV
+         */
+        readonly downloadItemsAsCSV: {
+            readonly name: "DownloadItemsAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+         *
+         * @generated from rpc Scailo.QuotationsRequestsService.UploadQuotationRequestItems
+         */
+        readonly uploadQuotationRequestItems: {
+            readonly name: "UploadQuotationRequestItems";
+            readonly I: typeof IdentifierUUIDWithFile;
+            readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };
         /**
