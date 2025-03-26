@@ -234,6 +234,17 @@ export declare const UnitsOfMaterialsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View the primary units of materials for the given family IDs list
+         *
+         * @generated from rpc Scailo.UnitsOfMaterialsService.ViewForFamilyIDs
+         */
+        readonly viewForFamilyIDs: {
+            readonly name: "ViewForFamilyIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof UnitsOfMaterialsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all that match the given search key
          *
          * @generated from rpc Scailo.UnitsOfMaterialsService.SearchAll

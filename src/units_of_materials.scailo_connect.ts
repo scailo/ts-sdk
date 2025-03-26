@@ -240,6 +240,17 @@ export const UnitsOfMaterialsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View the primary units of materials for the given family IDs list
+     *
+     * @generated from rpc Scailo.UnitsOfMaterialsService.ViewForFamilyIDs
+     */
+    viewForFamilyIDs: {
+      name: "ViewForFamilyIDs",
+      I: IdentifiersList,
+      O: UnitsOfMaterialsList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all that match the given search key
      *
      * @generated from rpc Scailo.UnitsOfMaterialsService.SearchAll
