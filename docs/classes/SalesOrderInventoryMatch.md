@@ -22,12 +22,18 @@ from message Scailo.SalesOrderInventoryMatch
 
 ### Properties
 
-- [credited](SalesOrderInventoryMatch.md#credited)
-- [dispatched](SalesOrderInventoryMatch.md#dispatched)
+- [clientUomId](SalesOrderInventoryMatch.md#clientuomid)
+- [creditedPrimary](SalesOrderInventoryMatch.md#creditedprimary)
+- [creditedSecondary](SalesOrderInventoryMatch.md#creditedsecondary)
+- [dispatchedPrimary](SalesOrderInventoryMatch.md#dispatchedprimary)
+- [dispatchedSecondary](SalesOrderInventoryMatch.md#dispatchedsecondary)
 - [familyId](SalesOrderInventoryMatch.md#familyid)
-- [invoiced](SalesOrderInventoryMatch.md#invoiced)
-- [ordered](SalesOrderInventoryMatch.md#ordered)
-- [returned](SalesOrderInventoryMatch.md#returned)
+- [invoicedPrimary](SalesOrderInventoryMatch.md#invoicedprimary)
+- [invoicedSecondary](SalesOrderInventoryMatch.md#invoicedsecondary)
+- [orderedPrimary](SalesOrderInventoryMatch.md#orderedprimary)
+- [orderedSecondary](SalesOrderInventoryMatch.md#orderedsecondary)
+- [returnedPrimary](SalesOrderInventoryMatch.md#returnedprimary)
+- [returnedSecondary](SalesOrderInventoryMatch.md#returnedsecondary)
 - [fields](SalesOrderInventoryMatch.md#fields)
 - [runtime](SalesOrderInventoryMatch.md#runtime)
 - [typeName](SalesOrderInventoryMatch.md#typename)
@@ -71,39 +77,87 @@ Message\&lt;SalesOrderInventoryMatch\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3337
+src/sales_orders.scailo_pb.ts:3379
 
 ## Properties
 
-### credited
+### clientUomId
 
-• **credited**: `bigint` = `protoInt64.zero`
+• **clientUomId**: `bigint` = `protoInt64.zero`
 
-Stores the credited quantity
+Stores the client unit of material ID
 
 **`Generated`**
 
-from field: uint64 credited = 14;
+from field: uint64 client_uom_id = 2;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3307
+
+___
+
+### creditedPrimary
+
+• **creditedPrimary**: `bigint` = `protoInt64.zero`
+
+Stores the credited quantity in primary unit of material
+
+**`Generated`**
+
+from field: uint64 credited_primary = 14;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3370
+
+___
+
+### creditedSecondary
+
+• **creditedSecondary**: `bigint` = `protoInt64.zero`
+
+Stores the credited quantity in secondary unit of material
+
+**`Generated`**
+
+from field: uint64 credited_secondary = 24;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3377
+
+___
+
+### dispatchedPrimary
+
+• **dispatchedPrimary**: `bigint` = `protoInt64.zero`
+
+Stores the dispatched quantity in primary unit of material
+
+**`Generated`**
+
+from field: uint64 dispatched_primary = 11;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3328
+
+___
+
+### dispatchedSecondary
+
+• **dispatchedSecondary**: `bigint` = `protoInt64.zero`
+
+Stores the dispatched quantity in secondary unit of material
+
+**`Generated`**
+
+from field: uint64 dispatched_secondary = 21;
 
 #### Defined in
 
 src/sales_orders.scailo_pb.ts:3335
-
-___
-
-### dispatched
-
-• **dispatched**: `bigint` = `protoInt64.zero`
-
-Stores the dispatched quantity
-
-**`Generated`**
-
-from field: uint64 dispatched = 11;
-
-#### Defined in
-
-src/sales_orders.scailo_pb.ts:3314
 
 ___
 
@@ -123,15 +177,63 @@ src/sales_orders.scailo_pb.ts:3300
 
 ___
 
-### invoiced
+### invoicedPrimary
 
-• **invoiced**: `bigint` = `protoInt64.zero`
+• **invoicedPrimary**: `bigint` = `protoInt64.zero`
 
-Stores the invoiced quantity
+Stores the invoiced quantity in primary unit of material
 
 **`Generated`**
 
-from field: uint64 invoiced = 12;
+from field: uint64 invoiced_primary = 12;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3342
+
+___
+
+### invoicedSecondary
+
+• **invoicedSecondary**: `bigint` = `protoInt64.zero`
+
+Stores the invoiced quantity in secondary unit of material
+
+**`Generated`**
+
+from field: uint64 invoiced_secondary = 22;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3349
+
+___
+
+### orderedPrimary
+
+• **orderedPrimary**: `bigint` = `protoInt64.zero`
+
+Stores the ordered quantity in primary unit of material
+
+**`Generated`**
+
+from field: uint64 ordered_primary = 10;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:3314
+
+___
+
+### orderedSecondary
+
+• **orderedSecondary**: `bigint` = `protoInt64.zero`
+
+Stores the ordered quantity in secondary unit of material
+
+**`Generated`**
+
+from field: uint64 ordered_secondary = 20;
 
 #### Defined in
 
@@ -139,35 +241,35 @@ src/sales_orders.scailo_pb.ts:3321
 
 ___
 
-### ordered
+### returnedPrimary
 
-• **ordered**: `bigint` = `protoInt64.zero`
+• **returnedPrimary**: `bigint` = `protoInt64.zero`
 
-Stores the ordered quantity
+Stores the returned quantity in primary unit of material
 
 **`Generated`**
 
-from field: uint64 ordered = 10;
+from field: uint64 returned_primary = 13;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3307
+src/sales_orders.scailo_pb.ts:3356
 
 ___
 
-### returned
+### returnedSecondary
 
-• **returned**: `bigint` = `protoInt64.zero`
+• **returnedSecondary**: `bigint` = `protoInt64.zero`
 
-Stores the returned quantity
+Stores the returned quantity in secondary unit of material
 
 **`Generated`**
 
-from field: uint64 returned = 13;
+from field: uint64 returned_secondary = 23;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3328
+src/sales_orders.scailo_pb.ts:3363
 
 ___
 
@@ -177,7 +279,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3344
+src/sales_orders.scailo_pb.ts:3386
 
 ___
 
@@ -187,7 +289,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3342
+src/sales_orders.scailo_pb.ts:3384
 
 ___
 
@@ -197,7 +299,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3343
+src/sales_orders.scailo_pb.ts:3385
 
 ## Methods
 
@@ -485,7 +587,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3365
+src/sales_orders.scailo_pb.ts:3413
 
 ___
 
@@ -506,7 +608,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3353
+src/sales_orders.scailo_pb.ts:3401
 
 ___
 
@@ -527,7 +629,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3357
+src/sales_orders.scailo_pb.ts:3405
 
 ___
 
@@ -548,4 +650,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3361
+src/sales_orders.scailo_pb.ts:3409

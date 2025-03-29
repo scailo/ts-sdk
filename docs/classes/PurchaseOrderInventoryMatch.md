@@ -22,12 +22,18 @@ from message Scailo.PurchaseOrderInventoryMatch
 
 ### Properties
 
-- [debited](PurchaseOrderInventoryMatch.md#debited)
+- [debitedPrimary](PurchaseOrderInventoryMatch.md#debitedprimary)
+- [debitedSecondary](PurchaseOrderInventoryMatch.md#debitedsecondary)
 - [familyId](PurchaseOrderInventoryMatch.md#familyid)
-- [invoiced](PurchaseOrderInventoryMatch.md#invoiced)
-- [ordered](PurchaseOrderInventoryMatch.md#ordered)
-- [received](PurchaseOrderInventoryMatch.md#received)
-- [returned](PurchaseOrderInventoryMatch.md#returned)
+- [invoicedPrimary](PurchaseOrderInventoryMatch.md#invoicedprimary)
+- [invoicedSecondary](PurchaseOrderInventoryMatch.md#invoicedsecondary)
+- [orderedPrimary](PurchaseOrderInventoryMatch.md#orderedprimary)
+- [orderedSecondary](PurchaseOrderInventoryMatch.md#orderedsecondary)
+- [receivedPrimary](PurchaseOrderInventoryMatch.md#receivedprimary)
+- [receivedSecondary](PurchaseOrderInventoryMatch.md#receivedsecondary)
+- [returnedPrimary](PurchaseOrderInventoryMatch.md#returnedprimary)
+- [returnedSecondary](PurchaseOrderInventoryMatch.md#returnedsecondary)
+- [vendorUomId](PurchaseOrderInventoryMatch.md#vendoruomid)
 - [fields](PurchaseOrderInventoryMatch.md#fields)
 - [runtime](PurchaseOrderInventoryMatch.md#runtime)
 - [typeName](PurchaseOrderInventoryMatch.md#typename)
@@ -71,23 +77,39 @@ Message\&lt;PurchaseOrderInventoryMatch\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3336
+src/purchases_orders.scailo_pb.ts:3378
 
 ## Properties
 
-### debited
+### debitedPrimary
 
-• **debited**: `bigint` = `protoInt64.zero`
+• **debitedPrimary**: `bigint` = `protoInt64.zero`
 
-Stores the debited quantity
+Stores the debited quantity in primary unit of material
 
 **`Generated`**
 
-from field: uint64 debited = 14;
+from field: uint64 debited_primary = 14;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3334
+src/purchases_orders.scailo_pb.ts:3369
+
+___
+
+### debitedSecondary
+
+• **debitedSecondary**: `bigint` = `protoInt64.zero`
+
+Stores the debited quantity in secondary unit of material
+
+**`Generated`**
+
+from field: uint64 debited_secondary = 24;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:3376
 
 ___
 
@@ -107,47 +129,47 @@ src/purchases_orders.scailo_pb.ts:3299
 
 ___
 
-### invoiced
+### invoicedPrimary
 
-• **invoiced**: `bigint` = `protoInt64.zero`
+• **invoicedPrimary**: `bigint` = `protoInt64.zero`
 
-Stores the invoiced quantity
+Stores the invoiced quantity in primary unit of material
 
 **`Generated`**
 
-from field: uint64 invoiced = 12;
+from field: uint64 invoiced_primary = 12;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3320
+src/purchases_orders.scailo_pb.ts:3341
 
 ___
 
-### ordered
+### invoicedSecondary
 
-• **ordered**: `bigint` = `protoInt64.zero`
+• **invoicedSecondary**: `bigint` = `protoInt64.zero`
 
-Stores the ordered quantity
+Stores the invoiced quantity in secondary unit of material
 
 **`Generated`**
 
-from field: uint64 ordered = 10;
+from field: uint64 invoiced_secondary = 22;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3306
+src/purchases_orders.scailo_pb.ts:3348
 
 ___
 
-### received
+### orderedPrimary
 
-• **received**: `bigint` = `protoInt64.zero`
+• **orderedPrimary**: `bigint` = `protoInt64.zero`
 
-Stores the received quantity
+Stores the ordered quantity in primary unit of material
 
 **`Generated`**
 
-from field: uint64 received = 11;
+from field: uint64 ordered_primary = 10;
 
 #### Defined in
 
@@ -155,19 +177,99 @@ src/purchases_orders.scailo_pb.ts:3313
 
 ___
 
-### returned
+### orderedSecondary
 
-• **returned**: `bigint` = `protoInt64.zero`
+• **orderedSecondary**: `bigint` = `protoInt64.zero`
 
-Stores the returned quantity
+Stores the ordered quantity in secondary unit of material
 
 **`Generated`**
 
-from field: uint64 returned = 13;
+from field: uint64 ordered_secondary = 20;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:3320
+
+___
+
+### receivedPrimary
+
+• **receivedPrimary**: `bigint` = `protoInt64.zero`
+
+Stores the received quantity in primary unit of material
+
+**`Generated`**
+
+from field: uint64 received_primary = 11;
 
 #### Defined in
 
 src/purchases_orders.scailo_pb.ts:3327
+
+___
+
+### receivedSecondary
+
+• **receivedSecondary**: `bigint` = `protoInt64.zero`
+
+Stores the received quantity in secondary unit of material
+
+**`Generated`**
+
+from field: uint64 received_secondary = 21;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:3334
+
+___
+
+### returnedPrimary
+
+• **returnedPrimary**: `bigint` = `protoInt64.zero`
+
+Stores the returned quantity in primary unit of material
+
+**`Generated`**
+
+from field: uint64 returned_primary = 13;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:3355
+
+___
+
+### returnedSecondary
+
+• **returnedSecondary**: `bigint` = `protoInt64.zero`
+
+Stores the returned quantity in secondary unit of material
+
+**`Generated`**
+
+from field: uint64 returned_secondary = 23;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:3362
+
+___
+
+### vendorUomId
+
+• **vendorUomId**: `bigint` = `protoInt64.zero`
+
+Stores the vendor unit of material ID
+
+**`Generated`**
+
+from field: uint64 vendor_uom_id = 2;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:3306
 
 ___
 
@@ -177,7 +279,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3343
+src/purchases_orders.scailo_pb.ts:3385
 
 ___
 
@@ -187,7 +289,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3341
+src/purchases_orders.scailo_pb.ts:3383
 
 ___
 
@@ -197,7 +299,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3342
+src/purchases_orders.scailo_pb.ts:3384
 
 ## Methods
 
@@ -485,7 +587,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3364
+src/purchases_orders.scailo_pb.ts:3412
 
 ___
 
@@ -506,7 +608,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3352
+src/purchases_orders.scailo_pb.ts:3400
 
 ___
 
@@ -527,7 +629,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3356
+src/purchases_orders.scailo_pb.ts:3404
 
 ___
 
@@ -548,4 +650,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3360
+src/purchases_orders.scailo_pb.ts:3408

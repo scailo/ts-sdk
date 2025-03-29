@@ -2217,35 +2217,71 @@ export declare class PurchaseOrderInventoryMatch extends Message<PurchaseOrderIn
      */
     familyId: bigint;
     /**
-     * Stores the ordered quantity
+     * Stores the vendor unit of material ID
      *
-     * @generated from field: uint64 ordered = 10;
+     * @generated from field: uint64 vendor_uom_id = 2;
      */
-    ordered: bigint;
+    vendorUomId: bigint;
     /**
-     * Stores the received quantity
+     * Stores the ordered quantity in primary unit of material
      *
-     * @generated from field: uint64 received = 11;
+     * @generated from field: uint64 ordered_primary = 10;
      */
-    received: bigint;
+    orderedPrimary: bigint;
     /**
-     * Stores the invoiced quantity
+     * Stores the ordered quantity in secondary unit of material
      *
-     * @generated from field: uint64 invoiced = 12;
+     * @generated from field: uint64 ordered_secondary = 20;
      */
-    invoiced: bigint;
+    orderedSecondary: bigint;
     /**
-     * Stores the returned quantity
+     * Stores the received quantity in primary unit of material
      *
-     * @generated from field: uint64 returned = 13;
+     * @generated from field: uint64 received_primary = 11;
      */
-    returned: bigint;
+    receivedPrimary: bigint;
     /**
-     * Stores the debited quantity
+     * Stores the received quantity in secondary unit of material
      *
-     * @generated from field: uint64 debited = 14;
+     * @generated from field: uint64 received_secondary = 21;
      */
-    debited: bigint;
+    receivedSecondary: bigint;
+    /**
+     * Stores the invoiced quantity in primary unit of material
+     *
+     * @generated from field: uint64 invoiced_primary = 12;
+     */
+    invoicedPrimary: bigint;
+    /**
+     * Stores the invoiced quantity in secondary unit of material
+     *
+     * @generated from field: uint64 invoiced_secondary = 22;
+     */
+    invoicedSecondary: bigint;
+    /**
+     * Stores the returned quantity in primary unit of material
+     *
+     * @generated from field: uint64 returned_primary = 13;
+     */
+    returnedPrimary: bigint;
+    /**
+     * Stores the returned quantity in secondary unit of material
+     *
+     * @generated from field: uint64 returned_secondary = 23;
+     */
+    returnedSecondary: bigint;
+    /**
+     * Stores the debited quantity in primary unit of material
+     *
+     * @generated from field: uint64 debited_primary = 14;
+     */
+    debitedPrimary: bigint;
+    /**
+     * Stores the debited quantity in secondary unit of material
+     *
+     * @generated from field: uint64 debited_secondary = 24;
+     */
+    debitedSecondary: bigint;
     constructor(data?: PartialMessage<PurchaseOrderInventoryMatch>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.PurchaseOrderInventoryMatch";

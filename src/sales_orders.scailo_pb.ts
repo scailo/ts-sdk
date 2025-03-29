@@ -3300,39 +3300,81 @@ export class SalesOrderInventoryMatch extends Message<SalesOrderInventoryMatch> 
   familyId = protoInt64.zero;
 
   /**
-   * Stores the ordered quantity
+   * Stores the client unit of material ID
    *
-   * @generated from field: uint64 ordered = 10;
+   * @generated from field: uint64 client_uom_id = 2;
    */
-  ordered = protoInt64.zero;
+  clientUomId = protoInt64.zero;
 
   /**
-   * Stores the dispatched quantity
+   * Stores the ordered quantity in primary unit of material
    *
-   * @generated from field: uint64 dispatched = 11;
+   * @generated from field: uint64 ordered_primary = 10;
    */
-  dispatched = protoInt64.zero;
+  orderedPrimary = protoInt64.zero;
 
   /**
-   * Stores the invoiced quantity
+   * Stores the ordered quantity in secondary unit of material
    *
-   * @generated from field: uint64 invoiced = 12;
+   * @generated from field: uint64 ordered_secondary = 20;
    */
-  invoiced = protoInt64.zero;
+  orderedSecondary = protoInt64.zero;
 
   /**
-   * Stores the returned quantity
+   * Stores the dispatched quantity in primary unit of material
    *
-   * @generated from field: uint64 returned = 13;
+   * @generated from field: uint64 dispatched_primary = 11;
    */
-  returned = protoInt64.zero;
+  dispatchedPrimary = protoInt64.zero;
 
   /**
-   * Stores the credited quantity
+   * Stores the dispatched quantity in secondary unit of material
    *
-   * @generated from field: uint64 credited = 14;
+   * @generated from field: uint64 dispatched_secondary = 21;
    */
-  credited = protoInt64.zero;
+  dispatchedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the invoiced quantity in primary unit of material
+   *
+   * @generated from field: uint64 invoiced_primary = 12;
+   */
+  invoicedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the invoiced quantity in secondary unit of material
+   *
+   * @generated from field: uint64 invoiced_secondary = 22;
+   */
+  invoicedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the returned quantity in primary unit of material
+   *
+   * @generated from field: uint64 returned_primary = 13;
+   */
+  returnedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the returned quantity in secondary unit of material
+   *
+   * @generated from field: uint64 returned_secondary = 23;
+   */
+  returnedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the credited quantity in primary unit of material
+   *
+   * @generated from field: uint64 credited_primary = 14;
+   */
+  creditedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the credited quantity in secondary unit of material
+   *
+   * @generated from field: uint64 credited_secondary = 24;
+   */
+  creditedSecondary = protoInt64.zero;
 
   constructor(data?: PartialMessage<SalesOrderInventoryMatch>) {
     super();
@@ -3343,11 +3385,17 @@ export class SalesOrderInventoryMatch extends Message<SalesOrderInventoryMatch> 
   static readonly typeName = "Scailo.SalesOrderInventoryMatch";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "ordered", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 11, name: "dispatched", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "invoiced", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "returned", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "credited", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "ordered_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "ordered_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "dispatched_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 21, name: "dispatched_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "invoiced_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 22, name: "invoiced_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "returned_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 23, name: "returned_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "credited_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 24, name: "credited_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderInventoryMatch {

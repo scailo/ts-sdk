@@ -2216,35 +2216,71 @@ export declare class SalesOrderInventoryMatch extends Message<SalesOrderInventor
      */
     familyId: bigint;
     /**
-     * Stores the ordered quantity
+     * Stores the client unit of material ID
      *
-     * @generated from field: uint64 ordered = 10;
+     * @generated from field: uint64 client_uom_id = 2;
      */
-    ordered: bigint;
+    clientUomId: bigint;
     /**
-     * Stores the dispatched quantity
+     * Stores the ordered quantity in primary unit of material
      *
-     * @generated from field: uint64 dispatched = 11;
+     * @generated from field: uint64 ordered_primary = 10;
      */
-    dispatched: bigint;
+    orderedPrimary: bigint;
     /**
-     * Stores the invoiced quantity
+     * Stores the ordered quantity in secondary unit of material
      *
-     * @generated from field: uint64 invoiced = 12;
+     * @generated from field: uint64 ordered_secondary = 20;
      */
-    invoiced: bigint;
+    orderedSecondary: bigint;
     /**
-     * Stores the returned quantity
+     * Stores the dispatched quantity in primary unit of material
      *
-     * @generated from field: uint64 returned = 13;
+     * @generated from field: uint64 dispatched_primary = 11;
      */
-    returned: bigint;
+    dispatchedPrimary: bigint;
     /**
-     * Stores the credited quantity
+     * Stores the dispatched quantity in secondary unit of material
      *
-     * @generated from field: uint64 credited = 14;
+     * @generated from field: uint64 dispatched_secondary = 21;
      */
-    credited: bigint;
+    dispatchedSecondary: bigint;
+    /**
+     * Stores the invoiced quantity in primary unit of material
+     *
+     * @generated from field: uint64 invoiced_primary = 12;
+     */
+    invoicedPrimary: bigint;
+    /**
+     * Stores the invoiced quantity in secondary unit of material
+     *
+     * @generated from field: uint64 invoiced_secondary = 22;
+     */
+    invoicedSecondary: bigint;
+    /**
+     * Stores the returned quantity in primary unit of material
+     *
+     * @generated from field: uint64 returned_primary = 13;
+     */
+    returnedPrimary: bigint;
+    /**
+     * Stores the returned quantity in secondary unit of material
+     *
+     * @generated from field: uint64 returned_secondary = 23;
+     */
+    returnedSecondary: bigint;
+    /**
+     * Stores the credited quantity in primary unit of material
+     *
+     * @generated from field: uint64 credited_primary = 14;
+     */
+    creditedPrimary: bigint;
+    /**
+     * Stores the credited quantity in secondary unit of material
+     *
+     * @generated from field: uint64 credited_secondary = 24;
+     */
+    creditedSecondary: bigint;
     constructor(data?: PartialMessage<SalesOrderInventoryMatch>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesOrderInventoryMatch";
