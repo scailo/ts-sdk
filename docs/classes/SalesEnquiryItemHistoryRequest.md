@@ -67,7 +67,7 @@ Message\&lt;SalesEnquiryItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1307
+src/sales_enquiries.scailo_pb.ts:1315
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1305
+src/sales_enquiries.scailo_pb.ts:1313
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 sales_enquiry_id = 10;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1298
+src/sales_enquiries.scailo_pb.ts:1306
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1314
+src/sales_enquiries.scailo_pb.ts:1322
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1312
+src/sales_enquiries.scailo_pb.ts:1320
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1313
+src/sales_enquiries.scailo_pb.ts:1321
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1331
+src/sales_enquiries.scailo_pb.ts:1339
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1319
+src/sales_enquiries.scailo_pb.ts:1327
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1323
+src/sales_enquiries.scailo_pb.ts:1331
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1327
+src/sales_enquiries.scailo_pb.ts:1335

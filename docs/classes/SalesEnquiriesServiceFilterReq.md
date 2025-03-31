@@ -91,7 +91,7 @@ Message\&lt;SalesEnquiriesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1917
+src/sales_enquiries.scailo_pb.ts:1925
 
 ## Properties
 
@@ -107,7 +107,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1831
+src/sales_enquiries.scailo_pb.ts:1839
 
 ___
 
@@ -123,7 +123,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1824
+src/sales_enquiries.scailo_pb.ts:1832
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1817
+src/sales_enquiries.scailo_pb.ts:1825
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1838
+src/sales_enquiries.scailo_pb.ts:1846
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 buyer_client_id = 23;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1880
+src/sales_enquiries.scailo_pb.ts:1888
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1852
+src/sales_enquiries.scailo_pb.ts:1860
 
 ___
 
@@ -203,7 +203,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1845
+src/sales_enquiries.scailo_pb.ts:1853
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 consignee_client_id = 22;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1873
+src/sales_enquiries.scailo_pb.ts:1881
 
 ___
 
@@ -235,7 +235,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1747
+src/sales_enquiries.scailo_pb.ts:1755
 
 ___
 
@@ -251,7 +251,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1782
+src/sales_enquiries.scailo_pb.ts:1790
 
 ___
 
@@ -267,7 +267,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1775
+src/sales_enquiries.scailo_pb.ts:1783
 
 ___
 
@@ -283,7 +283,7 @@ from field: uint64 currency_id = 25;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1894
+src/sales_enquiries.scailo_pb.ts:1902
 
 ___
 
@@ -299,7 +299,7 @@ from field: string delivery_date_end = 43;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1915
+src/sales_enquiries.scailo_pb.ts:1923
 
 ___
 
@@ -315,7 +315,7 @@ from field: string delivery_date_exact = 41;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1901
+src/sales_enquiries.scailo_pb.ts:1909
 
 ___
 
@@ -331,7 +331,7 @@ from field: string delivery_date_start = 42;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1908
+src/sales_enquiries.scailo_pb.ts:1916
 
 ___
 
@@ -347,7 +347,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1803
+src/sales_enquiries.scailo_pb.ts:1811
 
 ___
 
@@ -363,7 +363,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1866
+src/sales_enquiries.scailo_pb.ts:1874
 
 ___
 
@@ -379,7 +379,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1740
+src/sales_enquiries.scailo_pb.ts:1748
 
 ___
 
@@ -395,7 +395,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1796
+src/sales_enquiries.scailo_pb.ts:1804
 
 ___
 
@@ -411,7 +411,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1789
+src/sales_enquiries.scailo_pb.ts:1797
 
 ___
 
@@ -427,7 +427,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1754
+src/sales_enquiries.scailo_pb.ts:1762
 
 ___
 
@@ -443,7 +443,7 @@ from field: string priority = 24;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1887
+src/sales_enquiries.scailo_pb.ts:1895
 
 ___
 
@@ -459,7 +459,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1859
+src/sales_enquiries.scailo_pb.ts:1867
 
 ___
 
@@ -475,7 +475,7 @@ from field: Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1768
+src/sales_enquiries.scailo_pb.ts:1776
 
 ___
 
@@ -491,7 +491,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1761
+src/sales_enquiries.scailo_pb.ts:1769
 
 ___
 
@@ -507,7 +507,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1810
+src/sales_enquiries.scailo_pb.ts:1818
 
 ___
 
@@ -517,7 +517,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1924
+src/sales_enquiries.scailo_pb.ts:1932
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1922
+src/sales_enquiries.scailo_pb.ts:1930
 
 ___
 
@@ -537,7 +537,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1923
+src/sales_enquiries.scailo_pb.ts:1931
 
 ## Methods
 
@@ -825,7 +825,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1965
+src/sales_enquiries.scailo_pb.ts:1973
 
 ___
 
@@ -846,7 +846,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1953
+src/sales_enquiries.scailo_pb.ts:1961
 
 ___
 
@@ -867,7 +867,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1957
+src/sales_enquiries.scailo_pb.ts:1965
 
 ___
 
@@ -888,4 +888,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1961
+src/sales_enquiries.scailo_pb.ts:1969

@@ -73,7 +73,7 @@ Message\&lt;SalesEnquiryContact\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2415
+src/sales_enquiries.scailo_pb.ts:2423
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2378
+src/sales_enquiries.scailo_pb.ts:2386
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2406
+src/sales_enquiries.scailo_pb.ts:2414
 
 ___
 
@@ -121,7 +121,7 @@ from field: string associate_uuid = 211;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2413
+src/sales_enquiries.scailo_pb.ts:2421
 
 ___
 
@@ -137,7 +137,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2364
+src/sales_enquiries.scailo_pb.ts:2372
 
 ___
 
@@ -153,7 +153,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2371
+src/sales_enquiries.scailo_pb.ts:2379
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2385
+src/sales_enquiries.scailo_pb.ts:2393
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 sales_enquiry_id = 10;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2399
+src/sales_enquiries.scailo_pb.ts:2407
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2392
+src/sales_enquiries.scailo_pb.ts:2400
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2422
+src/sales_enquiries.scailo_pb.ts:2430
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2420
+src/sales_enquiries.scailo_pb.ts:2428
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2421
+src/sales_enquiries.scailo_pb.ts:2429
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2445
+src/sales_enquiries.scailo_pb.ts:2453
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2433
+src/sales_enquiries.scailo_pb.ts:2441
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2437
+src/sales_enquiries.scailo_pb.ts:2445
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2441
+src/sales_enquiries.scailo_pb.ts:2449

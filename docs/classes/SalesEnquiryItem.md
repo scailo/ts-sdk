@@ -25,6 +25,7 @@ from message Scailo.SalesEnquiryItem
 - [approvalMetadata](SalesEnquiryItem.md#approvalmetadata)
 - [deliveryDate](SalesEnquiryItem.md#deliverydate)
 - [discount](SalesEnquiryItem.md#discount)
+- [discountedUnitPrice](SalesEnquiryItem.md#discountedunitprice)
 - [entityUuid](SalesEnquiryItem.md#entityuuid)
 - [internalQuantity](SalesEnquiryItem.md#internalquantity)
 - [metadata](SalesEnquiryItem.md#metadata)
@@ -80,7 +81,7 @@ Message\&lt;SalesEnquiryItem\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1160
+src/sales_enquiries.scailo_pb.ts:1167
 
 ## Properties
 
@@ -129,6 +130,22 @@ from field: uint64 discount = 15;
 #### Defined in
 
 src/sales_enquiries.scailo_pb.ts:1130
+
+___
+
+### discountedUnitPrice
+
+• **discountedUnitPrice**: `bigint` = `protoInt64.zero`
+
+Stores the unit price after factoring in the discount
+
+**`Generated`**
+
+from field: uint64 discounted_unit_price = 30;
+
+#### Defined in
+
+src/sales_enquiries.scailo_pb.ts:1165
 
 ___
 
@@ -330,7 +347,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1167
+src/sales_enquiries.scailo_pb.ts:1174
 
 ___
 
@@ -340,7 +357,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1165
+src/sales_enquiries.scailo_pb.ts:1172
 
 ___
 
@@ -350,7 +367,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1166
+src/sales_enquiries.scailo_pb.ts:1173
 
 ## Methods
 
@@ -638,7 +655,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1197
+src/sales_enquiries.scailo_pb.ts:1205
 
 ___
 
@@ -659,7 +676,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1185
+src/sales_enquiries.scailo_pb.ts:1193
 
 ___
 
@@ -680,7 +697,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1189
+src/sales_enquiries.scailo_pb.ts:1197
 
 ___
 
@@ -701,4 +718,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1193
+src/sales_enquiries.scailo_pb.ts:1201

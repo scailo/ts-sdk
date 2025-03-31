@@ -68,7 +68,7 @@ Message\&lt;SalesEnquiriesServiceContactCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2322
+src/sales_enquiries.scailo_pb.ts:2330
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2320
+src/sales_enquiries.scailo_pb.ts:2328
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 sales_enquiry_id = 10;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2313
+src/sales_enquiries.scailo_pb.ts:2321
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2306
+src/sales_enquiries.scailo_pb.ts:2314
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2329
+src/sales_enquiries.scailo_pb.ts:2337
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2327
+src/sales_enquiries.scailo_pb.ts:2335
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2328
+src/sales_enquiries.scailo_pb.ts:2336
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2347
+src/sales_enquiries.scailo_pb.ts:2355
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2335
+src/sales_enquiries.scailo_pb.ts:2343
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2339
+src/sales_enquiries.scailo_pb.ts:2347
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2343
+src/sales_enquiries.scailo_pb.ts:2351

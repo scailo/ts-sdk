@@ -75,7 +75,7 @@ Message\&lt;SalesEnquiriesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2257
+src/sales_enquiries.scailo_pb.ts:2265
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: uint64 buyer_client_id = 23;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2255
+src/sales_enquiries.scailo_pb.ts:2263
 
 ___
 
@@ -107,7 +107,7 @@ from field: uint64 consignee_client_id = 22;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2248
+src/sales_enquiries.scailo_pb.ts:2256
 
 ___
 
@@ -123,7 +123,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2199
+src/sales_enquiries.scailo_pb.ts:2207
 
 ___
 
@@ -139,7 +139,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2227
+src/sales_enquiries.scailo_pb.ts:2235
 
 ___
 
@@ -155,7 +155,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2192
+src/sales_enquiries.scailo_pb.ts:2200
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2206
+src/sales_enquiries.scailo_pb.ts:2214
 
 ___
 
@@ -187,7 +187,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2241
+src/sales_enquiries.scailo_pb.ts:2249
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2220
+src/sales_enquiries.scailo_pb.ts:2228
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2213
+src/sales_enquiries.scailo_pb.ts:2221
 
 ___
 
@@ -235,7 +235,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2234
+src/sales_enquiries.scailo_pb.ts:2242
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2264
+src/sales_enquiries.scailo_pb.ts:2272
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2262
+src/sales_enquiries.scailo_pb.ts:2270
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2263
+src/sales_enquiries.scailo_pb.ts:2271
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2289
+src/sales_enquiries.scailo_pb.ts:2297
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2277
+src/sales_enquiries.scailo_pb.ts:2285
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2281
+src/sales_enquiries.scailo_pb.ts:2289
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2285
+src/sales_enquiries.scailo_pb.ts:2293
