@@ -68,7 +68,7 @@ Message\&lt;SalesQuotationItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1532
+src/sales_quotations.scailo_pb.ts:1540
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1530
+src/sales_quotations.scailo_pb.ts:1538
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1523
+src/sales_quotations.scailo_pb.ts:1531
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 sales_quotation_id = 10;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1516
+src/sales_quotations.scailo_pb.ts:1524
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1539
+src/sales_quotations.scailo_pb.ts:1547
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1537
+src/sales_quotations.scailo_pb.ts:1545
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1538
+src/sales_quotations.scailo_pb.ts:1546
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1557
+src/sales_quotations.scailo_pb.ts:1565
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1545
+src/sales_quotations.scailo_pb.ts:1553
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1549
+src/sales_quotations.scailo_pb.ts:1557
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1553
+src/sales_quotations.scailo_pb.ts:1561

@@ -66,7 +66,7 @@ Message\&lt;SalesQuotationsList\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1384
+src/sales_quotations.scailo_pb.ts:1392
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesQuotation list = 1;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1382
+src/sales_quotations.scailo_pb.ts:1390
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1391
+src/sales_quotations.scailo_pb.ts:1399
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1389
+src/sales_quotations.scailo_pb.ts:1397
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1390
+src/sales_quotations.scailo_pb.ts:1398
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1407
+src/sales_quotations.scailo_pb.ts:1415
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1395
+src/sales_quotations.scailo_pb.ts:1403
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1399
+src/sales_quotations.scailo_pb.ts:1407
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1403
+src/sales_quotations.scailo_pb.ts:1411

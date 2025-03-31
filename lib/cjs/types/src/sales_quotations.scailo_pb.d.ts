@@ -945,6 +945,12 @@ export declare class SalesQuotationItem extends Message<SalesQuotationItem> {
      * @generated from field: string specifications = 21;
      */
     specifications: string;
+    /**
+     * Stores the unit price after factoring in the discount
+     *
+     * @generated from field: uint64 discounted_unit_price = 30;
+     */
+    discountedUnitPrice: bigint;
     constructor(data?: PartialMessage<SalesQuotationItem>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesQuotationItem";

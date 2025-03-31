@@ -89,7 +89,7 @@ Message\&lt;SalesQuotationsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2143
+src/sales_quotations.scailo_pb.ts:2151
 
 ## Properties
 
@@ -105,7 +105,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2043
+src/sales_quotations.scailo_pb.ts:2051
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2036
+src/sales_quotations.scailo_pb.ts:2044
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2029
+src/sales_quotations.scailo_pb.ts:2037
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2050
+src/sales_quotations.scailo_pb.ts:2058
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 buyer_client_id = 23;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2092
+src/sales_quotations.scailo_pb.ts:2100
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2064
+src/sales_quotations.scailo_pb.ts:2072
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2057
+src/sales_quotations.scailo_pb.ts:2065
 
 ___
 
@@ -217,7 +217,7 @@ from field: uint64 consignee_client_id = 22;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2085
+src/sales_quotations.scailo_pb.ts:2093
 
 ___
 
@@ -233,7 +233,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1994
+src/sales_quotations.scailo_pb.ts:2002
 
 ___
 
@@ -249,7 +249,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1987
+src/sales_quotations.scailo_pb.ts:1995
 
 ___
 
@@ -265,7 +265,7 @@ from field: uint64 currency_id = 25;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2106
+src/sales_quotations.scailo_pb.ts:2114
 
 ___
 
@@ -281,7 +281,7 @@ from field: string delivery_date_end = 43;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2141
+src/sales_quotations.scailo_pb.ts:2149
 
 ___
 
@@ -297,7 +297,7 @@ from field: string delivery_date_exact = 41;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2127
+src/sales_quotations.scailo_pb.ts:2135
 
 ___
 
@@ -313,7 +313,7 @@ from field: string delivery_date_start = 42;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2134
+src/sales_quotations.scailo_pb.ts:2142
 
 ___
 
@@ -329,7 +329,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2015
+src/sales_quotations.scailo_pb.ts:2023
 
 ___
 
@@ -345,7 +345,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2120
+src/sales_quotations.scailo_pb.ts:2128
 
 ___
 
@@ -361,7 +361,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2078
+src/sales_quotations.scailo_pb.ts:2086
 
 ___
 
@@ -377,7 +377,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1980
+src/sales_quotations.scailo_pb.ts:1988
 
 ___
 
@@ -393,7 +393,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2099
+src/sales_quotations.scailo_pb.ts:2107
 
 ___
 
@@ -409,7 +409,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2008
+src/sales_quotations.scailo_pb.ts:2016
 
 ___
 
@@ -425,7 +425,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2001
+src/sales_quotations.scailo_pb.ts:2009
 
 ___
 
@@ -441,7 +441,7 @@ from field: uint64 project_id = 26;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2113
+src/sales_quotations.scailo_pb.ts:2121
 
 ___
 
@@ -457,7 +457,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2071
+src/sales_quotations.scailo_pb.ts:2079
 
 ___
 
@@ -473,7 +473,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2022
+src/sales_quotations.scailo_pb.ts:2030
 
 ___
 
@@ -483,7 +483,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2150
+src/sales_quotations.scailo_pb.ts:2158
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2148
+src/sales_quotations.scailo_pb.ts:2156
 
 ___
 
@@ -503,7 +503,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2149
+src/sales_quotations.scailo_pb.ts:2157
 
 ## Methods
 
@@ -791,7 +791,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2189
+src/sales_quotations.scailo_pb.ts:2197
 
 ___
 
@@ -812,7 +812,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2177
+src/sales_quotations.scailo_pb.ts:2185
 
 ___
 
@@ -833,7 +833,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2181
+src/sales_quotations.scailo_pb.ts:2189
 
 ___
 
@@ -854,4 +854,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2185
+src/sales_quotations.scailo_pb.ts:2193

@@ -71,7 +71,7 @@ Message\&lt;SalesQuotationsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1611
+src/sales_quotations.scailo_pb.ts:1619
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1581
+src/sales_quotations.scailo_pb.ts:1589
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1574
+src/sales_quotations.scailo_pb.ts:1582
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1588
+src/sales_quotations.scailo_pb.ts:1596
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.SALES_QUOTATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1602
+src/sales_quotations.scailo_pb.ts:1610
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1595
+src/sales_quotations.scailo_pb.ts:1603
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1609
+src/sales_quotations.scailo_pb.ts:1617
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1618
+src/sales_quotations.scailo_pb.ts:1626
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1616
+src/sales_quotations.scailo_pb.ts:1624
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1617
+src/sales_quotations.scailo_pb.ts:1625
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1639
+src/sales_quotations.scailo_pb.ts:1647
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1627
+src/sales_quotations.scailo_pb.ts:1635
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1631
+src/sales_quotations.scailo_pb.ts:1639
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1635
+src/sales_quotations.scailo_pb.ts:1643

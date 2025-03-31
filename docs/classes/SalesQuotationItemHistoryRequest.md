@@ -67,7 +67,7 @@ Message\&lt;SalesQuotationItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1475
+src/sales_quotations.scailo_pb.ts:1483
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1473
+src/sales_quotations.scailo_pb.ts:1481
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 sales_quotation_id = 10;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1466
+src/sales_quotations.scailo_pb.ts:1474
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1482
+src/sales_quotations.scailo_pb.ts:1490
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1480
+src/sales_quotations.scailo_pb.ts:1488
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1481
+src/sales_quotations.scailo_pb.ts:1489
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1499
+src/sales_quotations.scailo_pb.ts:1507
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1487
+src/sales_quotations.scailo_pb.ts:1495
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1491
+src/sales_quotations.scailo_pb.ts:1499
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1495
+src/sales_quotations.scailo_pb.ts:1503

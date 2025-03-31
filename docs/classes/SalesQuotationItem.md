@@ -29,6 +29,7 @@ from message Scailo.SalesQuotationItem
 - [clientUomId](SalesQuotationItem.md#clientuomid)
 - [deliveryDate](SalesQuotationItem.md#deliverydate)
 - [discount](SalesQuotationItem.md#discount)
+- [discountedUnitPrice](SalesQuotationItem.md#discountedunitprice)
 - [entityUuid](SalesQuotationItem.md#entityuuid)
 - [familyId](SalesQuotationItem.md#familyid)
 - [internalQuantity](SalesQuotationItem.md#internalquantity)
@@ -82,7 +83,7 @@ Message\&lt;SalesQuotationItem\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1326
+src/sales_quotations.scailo_pb.ts:1333
 
 ## Properties
 
@@ -195,6 +196,22 @@ from field: uint64 discount = 19;
 #### Defined in
 
 src/sales_quotations.scailo_pb.ts:1310
+
+___
+
+### discountedUnitPrice
+
+• **discountedUnitPrice**: `bigint` = `protoInt64.zero`
+
+Stores the unit price after factoring in the discount
+
+**`Generated`**
+
+from field: uint64 discounted_unit_price = 30;
+
+#### Defined in
+
+src/sales_quotations.scailo_pb.ts:1331
 
 ___
 
@@ -364,7 +381,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1333
+src/sales_quotations.scailo_pb.ts:1340
 
 ___
 
@@ -374,7 +391,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1331
+src/sales_quotations.scailo_pb.ts:1338
 
 ___
 
@@ -384,7 +401,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1332
+src/sales_quotations.scailo_pb.ts:1339
 
 ## Methods
 
@@ -672,7 +689,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1365
+src/sales_quotations.scailo_pb.ts:1373
 
 ___
 
@@ -693,7 +710,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1353
+src/sales_quotations.scailo_pb.ts:1361
 
 ___
 
@@ -714,7 +731,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1357
+src/sales_quotations.scailo_pb.ts:1365
 
 ___
 
@@ -735,4 +752,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1361
+src/sales_quotations.scailo_pb.ts:1369

@@ -1323,6 +1323,13 @@ export class SalesQuotationItem extends Message<SalesQuotationItem> {
    */
   specifications = "";
 
+  /**
+   * Stores the unit price after factoring in the discount
+   *
+   * @generated from field: uint64 discounted_unit_price = 30;
+   */
+  discountedUnitPrice = protoInt64.zero;
+
   constructor(data?: PartialMessage<SalesQuotationItem>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1348,6 +1355,7 @@ export class SalesQuotationItem extends Message<SalesQuotationItem> {
     { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "discounted_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesQuotationItem {
