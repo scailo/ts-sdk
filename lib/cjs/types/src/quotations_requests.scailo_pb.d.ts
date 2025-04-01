@@ -493,6 +493,12 @@ export declare class QuotationRequest extends Message<QuotationRequest> {
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
      */
     formData: FormFieldDatum[];
+    /**
+     * Stores the total value of the quotation request (as a double, which requires no adjustments)
+     *
+     * @generated from field: double total_value = 50;
+     */
+    totalValue: number;
     constructor(data?: PartialMessage<QuotationRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.QuotationRequest";

@@ -695,6 +695,13 @@ export class QuotationRequest extends Message<QuotationRequest> {
    */
   formData: FormFieldDatum[] = [];
 
+  /**
+   * Stores the total value of the quotation request (as a double, which requires no adjustments)
+   *
+   * @generated from field: double total_value = 50;
+   */
+  totalValue = 0;
+
   constructor(data?: PartialMessage<QuotationRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -720,6 +727,7 @@ export class QuotationRequest extends Message<QuotationRequest> {
     { no: 17, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "list", kind: "message", T: QuotationRequestItem, repeated: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
+    { no: 50, name: "total_value", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuotationRequest {

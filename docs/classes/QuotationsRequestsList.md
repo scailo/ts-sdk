@@ -66,7 +66,7 @@ Message\&lt;QuotationsRequestsList\&gt;.constructor
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1130
+src/quotations_requests.scailo_pb.ts:1138
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.QuotationRequest list = 1;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1128
+src/quotations_requests.scailo_pb.ts:1136
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1137
+src/quotations_requests.scailo_pb.ts:1145
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1135
+src/quotations_requests.scailo_pb.ts:1143
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1136
+src/quotations_requests.scailo_pb.ts:1144
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1153
+src/quotations_requests.scailo_pb.ts:1161
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1141
+src/quotations_requests.scailo_pb.ts:1149
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1145
+src/quotations_requests.scailo_pb.ts:1153
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1149
+src/quotations_requests.scailo_pb.ts:1157

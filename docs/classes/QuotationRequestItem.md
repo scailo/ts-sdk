@@ -79,7 +79,7 @@ Message\&lt;QuotationRequestItem\&gt;.constructor
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1075
+src/quotations_requests.scailo_pb.ts:1083
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:996
+src/quotations_requests.scailo_pb.ts:1004
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 baseline_price = 13;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1045
+src/quotations_requests.scailo_pb.ts:1053
 
 ___
 
@@ -127,7 +127,7 @@ from field: string delivery_date = 16;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1066
+src/quotations_requests.scailo_pb.ts:1074
 
 ___
 
@@ -143,7 +143,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:982
+src/quotations_requests.scailo_pb.ts:990
 
 ___
 
@@ -159,7 +159,7 @@ from field: string hsn_sac_code = 12;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1038
+src/quotations_requests.scailo_pb.ts:1046
 
 ___
 
@@ -175,7 +175,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:989
+src/quotations_requests.scailo_pb.ts:997
 
 ___
 
@@ -191,7 +191,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1031
+src/quotations_requests.scailo_pb.ts:1039
 
 ___
 
@@ -207,7 +207,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1003
+src/quotations_requests.scailo_pb.ts:1011
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 quantity = 14;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1052
+src/quotations_requests.scailo_pb.ts:1060
 
 ___
 
@@ -239,7 +239,7 @@ from field: uint64 quotation_request_id = 10;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1024
+src/quotations_requests.scailo_pb.ts:1032
 
 ___
 
@@ -255,7 +255,7 @@ from field: string specifications = 17;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1073
+src/quotations_requests.scailo_pb.ts:1081
 
 ___
 
@@ -271,7 +271,7 @@ from field: uint64 uom_id = 15;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1059
+src/quotations_requests.scailo_pb.ts:1067
 
 ___
 
@@ -287,7 +287,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1010
+src/quotations_requests.scailo_pb.ts:1018
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1017
+src/quotations_requests.scailo_pb.ts:1025
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1082
+src/quotations_requests.scailo_pb.ts:1090
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1080
+src/quotations_requests.scailo_pb.ts:1088
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1081
+src/quotations_requests.scailo_pb.ts:1089
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1111
+src/quotations_requests.scailo_pb.ts:1119
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1099
+src/quotations_requests.scailo_pb.ts:1107
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1103
+src/quotations_requests.scailo_pb.ts:1111
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1107
+src/quotations_requests.scailo_pb.ts:1115

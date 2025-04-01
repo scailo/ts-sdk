@@ -1,6 +1,6 @@
 {
     "name": "@kernelminds/scailo-sdk",
-    "version": "0.0.52",
+    "version": "0.0.53",
     "description": "NPM module that provides access to Scailo's API",
     "types": "./lib/cjs/types/index.d.ts",
     "main": "./lib/cjs/index.js",

@@ -75,7 +75,7 @@ Message\&lt;QuotationsRequestsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:933
+src/quotations_requests.scailo_pb.ts:941
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: uint64 baseline_price = 13;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:903
+src/quotations_requests.scailo_pb.ts:911
 
 ___
 
@@ -107,7 +107,7 @@ from field: string delivery_date = 16;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:924
+src/quotations_requests.scailo_pb.ts:932
 
 ___
 
@@ -123,7 +123,7 @@ from field: string hsn_sac_code = 12;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:896
+src/quotations_requests.scailo_pb.ts:904
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:875
+src/quotations_requests.scailo_pb.ts:883
 
 ___
 
@@ -155,7 +155,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:889
+src/quotations_requests.scailo_pb.ts:897
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 quantity = 14;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:910
+src/quotations_requests.scailo_pb.ts:918
 
 ___
 
@@ -187,7 +187,7 @@ from field: string specifications = 17;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:931
+src/quotations_requests.scailo_pb.ts:939
 
 ___
 
@@ -203,7 +203,7 @@ from field: uint64 uom_id = 15;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:917
+src/quotations_requests.scailo_pb.ts:925
 
 ___
 
@@ -219,7 +219,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:868
+src/quotations_requests.scailo_pb.ts:876
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:882
+src/quotations_requests.scailo_pb.ts:890
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:940
+src/quotations_requests.scailo_pb.ts:948
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:938
+src/quotations_requests.scailo_pb.ts:946
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:939
+src/quotations_requests.scailo_pb.ts:947
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:965
+src/quotations_requests.scailo_pb.ts:973
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:953
+src/quotations_requests.scailo_pb.ts:961
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:957
+src/quotations_requests.scailo_pb.ts:965
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:961
+src/quotations_requests.scailo_pb.ts:969

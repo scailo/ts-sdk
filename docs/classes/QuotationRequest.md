@@ -38,6 +38,7 @@ from message Scailo.QuotationRequest
 - [referenceId](QuotationRequest.md#referenceid)
 - [renewalPeriod](QuotationRequest.md#renewalperiod)
 - [status](QuotationRequest.md#status)
+- [totalValue](QuotationRequest.md#totalvalue)
 - [vaultFolderId](QuotationRequest.md#vaultfolderid)
 - [fields](QuotationRequest.md#fields)
 - [runtime](QuotationRequest.md#runtime)
@@ -82,7 +83,7 @@ Message\&lt;QuotationRequest\&gt;.constructor
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:698
+src/quotations_requests.scailo_pb.ts:705
 
 ## Properties
 
@@ -342,6 +343,22 @@ src/quotations_requests.scailo_pb.ts:605
 
 ___
 
+### totalValue
+
+• **totalValue**: `number` = `0`
+
+Stores the total value of the quotation request (as a double, which requires no adjustments)
+
+**`Generated`**
+
+from field: double total_value = 50;
+
+#### Defined in
+
+src/quotations_requests.scailo_pb.ts:703
+
+___
+
 ### vaultFolderId
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
@@ -364,7 +381,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:705
+src/quotations_requests.scailo_pb.ts:712
 
 ___
 
@@ -374,7 +391,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:703
+src/quotations_requests.scailo_pb.ts:710
 
 ___
 
@@ -384,7 +401,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:704
+src/quotations_requests.scailo_pb.ts:711
 
 ## Methods
 
@@ -672,7 +689,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:737
+src/quotations_requests.scailo_pb.ts:745
 
 ___
 
@@ -693,7 +710,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:725
+src/quotations_requests.scailo_pb.ts:733
 
 ___
 
@@ -714,7 +731,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:729
+src/quotations_requests.scailo_pb.ts:737
 
 ___
 
@@ -735,4 +752,4 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:733
+src/quotations_requests.scailo_pb.ts:741

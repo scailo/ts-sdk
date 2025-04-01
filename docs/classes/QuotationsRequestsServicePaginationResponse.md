@@ -69,7 +69,7 @@ Message\&lt;QuotationsRequestsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1603
+src/quotations_requests.scailo_pb.ts:1611
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1580
+src/quotations_requests.scailo_pb.ts:1588
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1587
+src/quotations_requests.scailo_pb.ts:1595
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.QuotationRequest payload = 4;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1601
+src/quotations_requests.scailo_pb.ts:1609
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1594
+src/quotations_requests.scailo_pb.ts:1602
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1610
+src/quotations_requests.scailo_pb.ts:1618
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1608
+src/quotations_requests.scailo_pb.ts:1616
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1609
+src/quotations_requests.scailo_pb.ts:1617
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1629
+src/quotations_requests.scailo_pb.ts:1637
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1617
+src/quotations_requests.scailo_pb.ts:1625
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1621
+src/quotations_requests.scailo_pb.ts:1629
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1625
+src/quotations_requests.scailo_pb.ts:1633
