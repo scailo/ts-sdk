@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a work order can be added
+ *
+ * @generated from enum Scailo.WORK_ORDER_REF_FROM
+ */
+export enum WORK_ORDER_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: WORK_ORDER_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  WORK_ORDER_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the work order originated from a sales order
+   *
+   * @generated from enum value: WORK_ORDER_REF_FROM_SALES_ORDER = 1;
+   */
+  WORK_ORDER_REF_FROM_SALES_ORDER = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(WORK_ORDER_REF_FROM)
+proto3.util.setEnumType(WORK_ORDER_REF_FROM, "Scailo.WORK_ORDER_REF_FROM", [
+  { no: 0, name: "WORK_ORDER_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "WORK_ORDER_REF_FROM_SALES_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.WORK_ORDER_SORT_KEY
@@ -255,9 +282,9 @@ export class WorkOrdersServiceCreateRequest extends Message<WorkOrdersServiceCre
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = WORK_ORDER_REF_FROM.WORK_ORDER_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -292,7 +319,7 @@ export class WorkOrdersServiceCreateRequest extends Message<WorkOrdersServiceCre
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(WORK_ORDER_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
@@ -578,9 +605,9 @@ export class WorkOrder extends Message<WorkOrder> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = WORK_ORDER_REF_FROM.WORK_ORDER_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -627,7 +654,7 @@ export class WorkOrder extends Message<WorkOrder> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(WORK_ORDER_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: WorkOrderItem, repeated: true },
@@ -1393,9 +1420,9 @@ export class WorkOrdersServiceFilterReq extends Message<WorkOrdersServiceFilterR
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = WORK_ORDER_REF_FROM.WORK_ORDER_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1470,7 +1497,7 @@ export class WorkOrdersServiceFilterReq extends Message<WorkOrdersServiceFilterR
     { no: 19, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(WORK_ORDER_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1632,9 +1659,9 @@ export class WorkOrdersServiceCountReq extends Message<WorkOrdersServiceCountReq
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = WORK_ORDER_REF_FROM.WORK_ORDER_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1705,7 +1732,7 @@ export class WorkOrdersServiceCountReq extends Message<WorkOrdersServiceCountReq
     { no: 19, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(WORK_ORDER_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1797,9 +1824,9 @@ export class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersServiceSear
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = WORK_ORDER_REF_FROM.WORK_ORDER_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1831,7 +1858,7 @@ export class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersServiceSear
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(WORK_ORDER_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);

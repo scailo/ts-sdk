@@ -30,7 +30,7 @@ from enum value: WORK_ORDER_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:197
+src/work_orders.scailo_pb.ts:224
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: WORK_ORDER_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:204
+src/work_orders.scailo_pb.ts:231
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: WORK_ORDER_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:211
+src/work_orders.scailo_pb.ts:238

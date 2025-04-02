@@ -74,7 +74,7 @@ Message\&lt;WorkOrderItem\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:864
+src/work_orders.scailo_pb.ts:891
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:820
+src/work_orders.scailo_pb.ts:847
 
 ___
 
@@ -106,7 +106,7 @@ from field: string delivery_date = 13;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:862
+src/work_orders.scailo_pb.ts:889
 
 ___
 
@@ -122,7 +122,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:806
+src/work_orders.scailo_pb.ts:833
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:848
+src/work_orders.scailo_pb.ts:875
 
 ___
 
@@ -154,7 +154,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:813
+src/work_orders.scailo_pb.ts:840
 
 ___
 
@@ -170,7 +170,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:827
+src/work_orders.scailo_pb.ts:854
 
 ___
 
@@ -186,7 +186,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:855
+src/work_orders.scailo_pb.ts:882
 
 ___
 
@@ -202,7 +202,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:834
+src/work_orders.scailo_pb.ts:861
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 work_order_id = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:841
+src/work_orders.scailo_pb.ts:868
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:871
+src/work_orders.scailo_pb.ts:898
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:869
+src/work_orders.scailo_pb.ts:896
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:870
+src/work_orders.scailo_pb.ts:897
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:895
+src/work_orders.scailo_pb.ts:922
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:883
+src/work_orders.scailo_pb.ts:910
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:887
+src/work_orders.scailo_pb.ts:914
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:891
+src/work_orders.scailo_pb.ts:918

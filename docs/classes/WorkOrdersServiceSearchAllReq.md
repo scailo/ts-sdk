@@ -76,7 +76,7 @@ Message\&lt;WorkOrdersServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1818
+src/work_orders.scailo_pb.ts:1845
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1753
+src/work_orders.scailo_pb.ts:1780
 
 ___
 
@@ -108,7 +108,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1781
+src/work_orders.scailo_pb.ts:1808
 
 ___
 
@@ -124,7 +124,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1746
+src/work_orders.scailo_pb.ts:1773
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1816
+src/work_orders.scailo_pb.ts:1843
 
 ___
 
@@ -156,23 +156,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1760
+src/work_orders.scailo_pb.ts:1787
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`WORK_ORDER_REF_FROM`](../enums/WORK_ORDER_REF_FROM.md) = `WORK_ORDER_REF_FROM.WORK_ORDER_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1802
+src/work_orders.scailo_pb.ts:1829
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1809
+src/work_orders.scailo_pb.ts:1836
 
 ___
 
@@ -204,7 +204,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1795
+src/work_orders.scailo_pb.ts:1822
 
 ___
 
@@ -220,7 +220,7 @@ from field: Scailo.WORK_ORDER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1774
+src/work_orders.scailo_pb.ts:1801
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1767
+src/work_orders.scailo_pb.ts:1794
 
 ___
 
@@ -252,7 +252,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1788
+src/work_orders.scailo_pb.ts:1815
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1825
+src/work_orders.scailo_pb.ts:1852
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1823
+src/work_orders.scailo_pb.ts:1850
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1824
+src/work_orders.scailo_pb.ts:1851
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1851
+src/work_orders.scailo_pb.ts:1878
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1839
+src/work_orders.scailo_pb.ts:1866
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1843
+src/work_orders.scailo_pb.ts:1870
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1847
+src/work_orders.scailo_pb.ts:1874

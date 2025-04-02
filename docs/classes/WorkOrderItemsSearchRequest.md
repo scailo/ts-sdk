@@ -82,7 +82,7 @@ Message\&lt;WorkOrderItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1982
+src/work_orders.scailo_pb.ts:2009
 
 ## Properties
 
@@ -98,7 +98,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1931
+src/work_orders.scailo_pb.ts:1958
 
 ___
 
@@ -114,7 +114,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1924
+src/work_orders.scailo_pb.ts:1951
 
 ___
 
@@ -130,7 +130,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1917
+src/work_orders.scailo_pb.ts:1944
 
 ___
 
@@ -146,7 +146,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1938
+src/work_orders.scailo_pb.ts:1965
 
 ___
 
@@ -162,7 +162,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1875
+src/work_orders.scailo_pb.ts:1902
 
 ___
 
@@ -178,7 +178,7 @@ from field: string delivery_date_end = 30;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1973
+src/work_orders.scailo_pb.ts:2000
 
 ___
 
@@ -194,7 +194,7 @@ from field: string delivery_date_exact = 28;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1959
+src/work_orders.scailo_pb.ts:1986
 
 ___
 
@@ -210,7 +210,7 @@ from field: string delivery_date_start = 29;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1966
+src/work_orders.scailo_pb.ts:1993
 
 ___
 
@@ -226,7 +226,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1903
+src/work_orders.scailo_pb.ts:1930
 
 ___
 
@@ -242,7 +242,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1952
+src/work_orders.scailo_pb.ts:1979
 
 ___
 
@@ -258,7 +258,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1868
+src/work_orders.scailo_pb.ts:1895
 
 ___
 
@@ -274,7 +274,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1882
+src/work_orders.scailo_pb.ts:1909
 
 ___
 
@@ -290,7 +290,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1980
+src/work_orders.scailo_pb.ts:2007
 
 ___
 
@@ -306,7 +306,7 @@ from field: Scailo.WORK_ORDER_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1896
+src/work_orders.scailo_pb.ts:1923
 
 ___
 
@@ -322,7 +322,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1889
+src/work_orders.scailo_pb.ts:1916
 
 ___
 
@@ -338,7 +338,7 @@ from field: Scailo.WORK_ORDER_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1910
+src/work_orders.scailo_pb.ts:1937
 
 ___
 
@@ -354,7 +354,7 @@ from field: uint64 work_order_id = 20;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1945
+src/work_orders.scailo_pb.ts:1972
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1989
+src/work_orders.scailo_pb.ts:2016
 
 ___
 
@@ -374,7 +374,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1987
+src/work_orders.scailo_pb.ts:2014
 
 ___
 
@@ -384,7 +384,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1988
+src/work_orders.scailo_pb.ts:2015
 
 ## Methods
 
@@ -672,7 +672,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2021
+src/work_orders.scailo_pb.ts:2048
 
 ___
 
@@ -693,7 +693,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2009
+src/work_orders.scailo_pb.ts:2036
 
 ___
 
@@ -714,7 +714,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2013
+src/work_orders.scailo_pb.ts:2040
 
 ___
 
@@ -735,4 +735,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2017
+src/work_orders.scailo_pb.ts:2044

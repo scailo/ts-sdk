@@ -70,7 +70,7 @@ Message\&lt;WorkOrdersServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:696
+src/work_orders.scailo_pb.ts:723
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string delivery_date = 13;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:694
+src/work_orders.scailo_pb.ts:721
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:680
+src/work_orders.scailo_pb.ts:707
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:687
+src/work_orders.scailo_pb.ts:714
 
 ___
 
@@ -134,7 +134,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:666
+src/work_orders.scailo_pb.ts:693
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 work_order_id = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:673
+src/work_orders.scailo_pb.ts:700
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:703
+src/work_orders.scailo_pb.ts:730
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:701
+src/work_orders.scailo_pb.ts:728
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:702
+src/work_orders.scailo_pb.ts:729
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:723
+src/work_orders.scailo_pb.ts:750
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:711
+src/work_orders.scailo_pb.ts:738
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:715
+src/work_orders.scailo_pb.ts:742
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:719
+src/work_orders.scailo_pb.ts:746

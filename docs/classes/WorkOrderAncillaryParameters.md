@@ -67,7 +67,7 @@ Message\&lt;WorkOrderAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:479
+src/work_orders.scailo_pb.ts:506
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string location_uuid = 215;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:477
+src/work_orders.scailo_pb.ts:504
 
 ___
 
@@ -99,7 +99,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:470
+src/work_orders.scailo_pb.ts:497
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:486
+src/work_orders.scailo_pb.ts:513
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:484
+src/work_orders.scailo_pb.ts:511
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:485
+src/work_orders.scailo_pb.ts:512
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:503
+src/work_orders.scailo_pb.ts:530
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:491
+src/work_orders.scailo_pb.ts:518
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:495
+src/work_orders.scailo_pb.ts:522
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:499
+src/work_orders.scailo_pb.ts:526

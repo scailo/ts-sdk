@@ -94,7 +94,7 @@ Message\&lt;WorkOrdersServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1443
+src/work_orders.scailo_pb.ts:1470
 
 ## Properties
 
@@ -110,7 +110,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1335
+src/work_orders.scailo_pb.ts:1362
 
 ___
 
@@ -126,7 +126,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1328
+src/work_orders.scailo_pb.ts:1355
 
 ___
 
@@ -142,7 +142,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1321
+src/work_orders.scailo_pb.ts:1348
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1342
+src/work_orders.scailo_pb.ts:1369
 
 ___
 
@@ -174,7 +174,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1434
+src/work_orders.scailo_pb.ts:1461
 
 ___
 
@@ -190,7 +190,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1356
+src/work_orders.scailo_pb.ts:1383
 
 ___
 
@@ -206,7 +206,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1349
+src/work_orders.scailo_pb.ts:1376
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1427
+src/work_orders.scailo_pb.ts:1454
 
 ___
 
@@ -239,7 +239,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1251
+src/work_orders.scailo_pb.ts:1278
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1286
+src/work_orders.scailo_pb.ts:1313
 
 ___
 
@@ -271,7 +271,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1279
+src/work_orders.scailo_pb.ts:1306
 
 ___
 
@@ -287,7 +287,7 @@ from field: string delivery_date_end = 19;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1377
+src/work_orders.scailo_pb.ts:1404
 
 ___
 
@@ -303,7 +303,7 @@ from field: string delivery_date_exact = 17;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1363
+src/work_orders.scailo_pb.ts:1390
 
 ___
 
@@ -319,7 +319,7 @@ from field: string delivery_date_start = 18;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1370
+src/work_orders.scailo_pb.ts:1397
 
 ___
 
@@ -335,7 +335,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1307
+src/work_orders.scailo_pb.ts:1334
 
 ___
 
@@ -351,7 +351,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1419
+src/work_orders.scailo_pb.ts:1446
 
 ___
 
@@ -367,7 +367,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1391
+src/work_orders.scailo_pb.ts:1418
 
 ___
 
@@ -383,7 +383,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1244
+src/work_orders.scailo_pb.ts:1271
 
 ___
 
@@ -399,7 +399,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1412
+src/work_orders.scailo_pb.ts:1439
 
 ___
 
@@ -415,7 +415,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1300
+src/work_orders.scailo_pb.ts:1327
 
 ___
 
@@ -431,7 +431,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1293
+src/work_orders.scailo_pb.ts:1320
 
 ___
 
@@ -447,7 +447,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1258
+src/work_orders.scailo_pb.ts:1285
 
 ___
 
@@ -463,23 +463,23 @@ from field: uint64 project_id = 52;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1441
+src/work_orders.scailo_pb.ts:1468
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`WORK_ORDER_REF_FROM`](../enums/WORK_ORDER_REF_FROM.md) = `WORK_ORDER_REF_FROM.WORK_ORDER_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1398
+src/work_orders.scailo_pb.ts:1425
 
 ___
 
@@ -495,7 +495,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1405
+src/work_orders.scailo_pb.ts:1432
 
 ___
 
@@ -511,7 +511,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1384
+src/work_orders.scailo_pb.ts:1411
 
 ___
 
@@ -527,7 +527,7 @@ from field: Scailo.WORK_ORDER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1272
+src/work_orders.scailo_pb.ts:1299
 
 ___
 
@@ -543,7 +543,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1265
+src/work_orders.scailo_pb.ts:1292
 
 ___
 
@@ -559,7 +559,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1314
+src/work_orders.scailo_pb.ts:1341
 
 ___
 
@@ -569,7 +569,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1450
+src/work_orders.scailo_pb.ts:1477
 
 ___
 
@@ -579,7 +579,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1448
+src/work_orders.scailo_pb.ts:1475
 
 ___
 
@@ -589,7 +589,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1449
+src/work_orders.scailo_pb.ts:1476
 
 ## Methods
 
@@ -877,7 +877,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1494
+src/work_orders.scailo_pb.ts:1521
 
 ___
 
@@ -898,7 +898,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1482
+src/work_orders.scailo_pb.ts:1509
 
 ___
 
@@ -919,7 +919,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1486
+src/work_orders.scailo_pb.ts:1513
 
 ___
 
@@ -940,4 +940,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1490
+src/work_orders.scailo_pb.ts:1517

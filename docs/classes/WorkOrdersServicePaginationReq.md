@@ -71,7 +71,7 @@ Message\&lt;WorkOrdersServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1133
+src/work_orders.scailo_pb.ts:1160
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1103
+src/work_orders.scailo_pb.ts:1130
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1096
+src/work_orders.scailo_pb.ts:1123
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1110
+src/work_orders.scailo_pb.ts:1137
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.WORK_ORDER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1124
+src/work_orders.scailo_pb.ts:1151
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1117
+src/work_orders.scailo_pb.ts:1144
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1131
+src/work_orders.scailo_pb.ts:1158
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1140
+src/work_orders.scailo_pb.ts:1167
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1138
+src/work_orders.scailo_pb.ts:1165
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1139
+src/work_orders.scailo_pb.ts:1166
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1161
+src/work_orders.scailo_pb.ts:1188
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1149
+src/work_orders.scailo_pb.ts:1176
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1153
+src/work_orders.scailo_pb.ts:1180
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1157
+src/work_orders.scailo_pb.ts:1184

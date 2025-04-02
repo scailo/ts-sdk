@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a work order can be added
+ *
+ * @generated from enum Scailo.WORK_ORDER_REF_FROM
+ */
+export declare enum WORK_ORDER_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: WORK_ORDER_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    WORK_ORDER_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the work order originated from a sales order
+     *
+     * @generated from enum value: WORK_ORDER_REF_FROM_SALES_ORDER = 1;
+     */
+    WORK_ORDER_REF_FROM_SALES_ORDER = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.WORK_ORDER_SORT_KEY
@@ -192,9 +212,9 @@ export declare class WorkOrdersServiceCreateRequest extends Message<WorkOrdersSe
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: WORK_ORDER_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -400,9 +420,9 @@ export declare class WorkOrder extends Message<WorkOrder> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: WORK_ORDER_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -926,9 +946,9 @@ export declare class WorkOrdersServiceFilterReq extends Message<WorkOrdersServic
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: WORK_ORDER_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1093,9 +1113,9 @@ export declare class WorkOrdersServiceCountReq extends Message<WorkOrdersService
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: WORK_ORDER_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1200,9 +1220,9 @@ export declare class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersSer
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: WORK_ORDER_REF_FROM;
     /**
      * The associated ID of the reference
      *

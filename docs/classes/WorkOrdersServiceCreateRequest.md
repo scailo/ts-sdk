@@ -73,7 +73,7 @@ Message\&lt;WorkOrdersServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:283
+src/work_orders.scailo_pb.ts:310
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:232
+src/work_orders.scailo_pb.ts:259
 
 ___
 
@@ -105,7 +105,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:281
+src/work_orders.scailo_pb.ts:308
 
 ___
 
@@ -121,23 +121,23 @@ from field: uint64 location_id = 14;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:274
+src/work_orders.scailo_pb.ts:301
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`WORK_ORDER_REF_FROM`](../enums/WORK_ORDER_REF_FROM.md) = `WORK_ORDER_REF_FROM.WORK_ORDER_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 12;
+from field: Scailo.WORK_ORDER_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:260
+src/work_orders.scailo_pb.ts:287
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:267
+src/work_orders.scailo_pb.ts:294
 
 ___
 
@@ -169,7 +169,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:253
+src/work_orders.scailo_pb.ts:280
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:239
+src/work_orders.scailo_pb.ts:266
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:246
+src/work_orders.scailo_pb.ts:273
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:290
+src/work_orders.scailo_pb.ts:317
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:288
+src/work_orders.scailo_pb.ts:315
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:289
+src/work_orders.scailo_pb.ts:316
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:313
+src/work_orders.scailo_pb.ts:340
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:301
+src/work_orders.scailo_pb.ts:328
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:305
+src/work_orders.scailo_pb.ts:332
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:309
+src/work_orders.scailo_pb.ts:336
