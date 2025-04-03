@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { WorkOrder, WorkOrderAncillaryParameters, WorkOrderItem, WorkOrderItemHistoryRequest, WorkOrderItemProspectiveInfoRequest, WorkOrderItemsSearchRequest, WorkOrdersItemsList, WorkOrdersList, WorkOrdersServiceAutofillRequest, WorkOrdersServiceCountReq, WorkOrdersServiceCreateRequest, WorkOrdersServiceFilterReq, WorkOrdersServiceItemCreateRequest, WorkOrdersServiceItemUpdateRequest, WorkOrdersServicePaginatedItemsResponse, WorkOrdersServicePaginationReq, WorkOrdersServicePaginationResponse, WorkOrdersServiceSearchAllReq, WorkOrdersServiceUpdateRequest } from "./work_orders.scailo_pb.js";
+import { WorkOrder, WorkOrderAncillaryParameters, WorkOrderItem, WorkOrderItemHistoryRequest, WorkOrderItemProspectiveInfoRequest, WorkOrderItemsSearchRequest, WorkOrderProductionStatisticsList, WorkOrderRequirementStatisticsList, WorkOrdersItemsList, WorkOrdersList, WorkOrdersServiceAutofillRequest, WorkOrdersServiceCountReq, WorkOrdersServiceCreateRequest, WorkOrdersServiceFilterReq, WorkOrdersServiceItemCreateRequest, WorkOrdersServiceItemUpdateRequest, WorkOrdersServicePaginatedItemsResponse, WorkOrdersServicePaginationReq, WorkOrdersServicePaginationResponse, WorkOrdersServiceSearchAllReq, WorkOrdersServiceUpdateRequest } from "./work_orders.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -500,6 +500,28 @@ export const WorkOrdersService = {
       name: "ViewProspectiveWorkOrderItem",
       I: WorkOrderItemProspectiveInfoRequest,
       O: WorkOrdersServiceItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View requirement statistics (match with the selected sales order) of the work order
+     *
+     * @generated from rpc Scailo.WorkOrdersService.ViewRequirementStatistics
+     */
+    viewRequirementStatistics: {
+      name: "ViewRequirementStatistics",
+      I: IdentifierUUID,
+      O: WorkOrderRequirementStatisticsList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View production statistics (match with all the associated production plans) of the work order
+     *
+     * @generated from rpc Scailo.WorkOrdersService.ViewProductionStatistics
+     */
+    viewProductionStatistics: {
+      name: "ViewProductionStatistics",
+      I: IdentifierUUID,
+      O: WorkOrderProductionStatisticsList,
       kind: MethodKind.Unary,
     },
     /**

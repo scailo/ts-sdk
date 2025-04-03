@@ -1402,4 +1402,112 @@ export declare class WorkOrdersServicePaginatedItemsResponse extends Message<Wor
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServicePaginatedItemsResponse;
     static equals(a: WorkOrdersServicePaginatedItemsResponse | PlainMessage<WorkOrdersServicePaginatedItemsResponse> | undefined, b: WorkOrdersServicePaginatedItemsResponse | PlainMessage<WorkOrdersServicePaginatedItemsResponse> | undefined): boolean;
 }
+/**
+ *
+ * Describes the requirement statistics of the work order
+ *
+ * @generated from message Scailo.WorkOrderRequirementStatistics
+ */
+export declare class WorkOrderRequirementStatistics extends Message<WorkOrderRequirementStatistics> {
+    /**
+     * Stores the ID of the family
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the sales order quantity
+     *
+     * @generated from field: uint64 sales_order_quantity = 2;
+     */
+    salesOrderQuantity: bigint;
+    /**
+     * Stores the work order quantity
+     *
+     * @generated from field: uint64 work_order_quantity = 3;
+     */
+    workOrderQuantity: bigint;
+    constructor(data?: PartialMessage<WorkOrderRequirementStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.WorkOrderRequirementStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderRequirementStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderRequirementStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderRequirementStatistics;
+    static equals(a: WorkOrderRequirementStatistics | PlainMessage<WorkOrderRequirementStatistics> | undefined, b: WorkOrderRequirementStatistics | PlainMessage<WorkOrderRequirementStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of requirement statistics of the work order
+ *
+ * @generated from message Scailo.WorkOrderRequirementStatisticsList
+ */
+export declare class WorkOrderRequirementStatisticsList extends Message<WorkOrderRequirementStatisticsList> {
+    /**
+     * @generated from field: repeated Scailo.WorkOrderRequirementStatistics list = 1;
+     */
+    list: WorkOrderRequirementStatistics[];
+    constructor(data?: PartialMessage<WorkOrderRequirementStatisticsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.WorkOrderRequirementStatisticsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderRequirementStatisticsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderRequirementStatisticsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderRequirementStatisticsList;
+    static equals(a: WorkOrderRequirementStatisticsList | PlainMessage<WorkOrderRequirementStatisticsList> | undefined, b: WorkOrderRequirementStatisticsList | PlainMessage<WorkOrderRequirementStatisticsList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the requirement statistics of the work order
+ *
+ * @generated from message Scailo.WorkOrderProductionStatistics
+ */
+export declare class WorkOrderProductionStatistics extends Message<WorkOrderProductionStatistics> {
+    /**
+     * Stores the ID of the family
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the production plan quantity
+     *
+     * @generated from field: uint64 production_plan_quantity = 2;
+     */
+    productionPlanQuantity: bigint;
+    /**
+     * Stores the work order quantity
+     *
+     * @generated from field: uint64 work_order_quantity = 3;
+     */
+    workOrderQuantity: bigint;
+    constructor(data?: PartialMessage<WorkOrderProductionStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.WorkOrderProductionStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderProductionStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderProductionStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderProductionStatistics;
+    static equals(a: WorkOrderProductionStatistics | PlainMessage<WorkOrderProductionStatistics> | undefined, b: WorkOrderProductionStatistics | PlainMessage<WorkOrderProductionStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of requirement statistics of the work order
+ *
+ * @generated from message Scailo.WorkOrderProductionStatisticsList
+ */
+export declare class WorkOrderProductionStatisticsList extends Message<WorkOrderProductionStatisticsList> {
+    /**
+     * @generated from field: repeated Scailo.WorkOrderProductionStatistics list = 1;
+     */
+    list: WorkOrderProductionStatistics[];
+    constructor(data?: PartialMessage<WorkOrderProductionStatisticsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.WorkOrderProductionStatisticsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderProductionStatisticsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderProductionStatisticsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderProductionStatisticsList;
+    static equals(a: WorkOrderProductionStatisticsList | PlainMessage<WorkOrderProductionStatisticsList> | undefined, b: WorkOrderProductionStatisticsList | PlainMessage<WorkOrderProductionStatisticsList> | undefined): boolean;
+}
 //# sourceMappingURL=work_orders.scailo_pb.d.ts.map

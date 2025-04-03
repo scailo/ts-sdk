@@ -2116,3 +2116,199 @@ export class WorkOrdersServicePaginatedItemsResponse extends Message<WorkOrdersS
   }
 }
 
+/**
+ *
+ * Describes the requirement statistics of the work order
+ *
+ * @generated from message Scailo.WorkOrderRequirementStatistics
+ */
+export class WorkOrderRequirementStatistics extends Message<WorkOrderRequirementStatistics> {
+  /**
+   * Stores the ID of the family
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the sales order quantity
+   *
+   * @generated from field: uint64 sales_order_quantity = 2;
+   */
+  salesOrderQuantity = protoInt64.zero;
+
+  /**
+   * Stores the work order quantity
+   *
+   * @generated from field: uint64 work_order_quantity = 3;
+   */
+  workOrderQuantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<WorkOrderRequirementStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.WorkOrderRequirementStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "sales_order_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "work_order_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderRequirementStatistics {
+    return new WorkOrderRequirementStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderRequirementStatistics {
+    return new WorkOrderRequirementStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderRequirementStatistics {
+    return new WorkOrderRequirementStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: WorkOrderRequirementStatistics | PlainMessage<WorkOrderRequirementStatistics> | undefined, b: WorkOrderRequirementStatistics | PlainMessage<WorkOrderRequirementStatistics> | undefined): boolean {
+    return proto3.util.equals(WorkOrderRequirementStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of requirement statistics of the work order
+ *
+ * @generated from message Scailo.WorkOrderRequirementStatisticsList
+ */
+export class WorkOrderRequirementStatisticsList extends Message<WorkOrderRequirementStatisticsList> {
+  /**
+   * @generated from field: repeated Scailo.WorkOrderRequirementStatistics list = 1;
+   */
+  list: WorkOrderRequirementStatistics[] = [];
+
+  constructor(data?: PartialMessage<WorkOrderRequirementStatisticsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.WorkOrderRequirementStatisticsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: WorkOrderRequirementStatistics, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderRequirementStatisticsList {
+    return new WorkOrderRequirementStatisticsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderRequirementStatisticsList {
+    return new WorkOrderRequirementStatisticsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderRequirementStatisticsList {
+    return new WorkOrderRequirementStatisticsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: WorkOrderRequirementStatisticsList | PlainMessage<WorkOrderRequirementStatisticsList> | undefined, b: WorkOrderRequirementStatisticsList | PlainMessage<WorkOrderRequirementStatisticsList> | undefined): boolean {
+    return proto3.util.equals(WorkOrderRequirementStatisticsList, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the requirement statistics of the work order
+ *
+ * @generated from message Scailo.WorkOrderProductionStatistics
+ */
+export class WorkOrderProductionStatistics extends Message<WorkOrderProductionStatistics> {
+  /**
+   * Stores the ID of the family
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the production plan quantity
+   *
+   * @generated from field: uint64 production_plan_quantity = 2;
+   */
+  productionPlanQuantity = protoInt64.zero;
+
+  /**
+   * Stores the work order quantity
+   *
+   * @generated from field: uint64 work_order_quantity = 3;
+   */
+  workOrderQuantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<WorkOrderProductionStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.WorkOrderProductionStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "production_plan_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "work_order_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderProductionStatistics {
+    return new WorkOrderProductionStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderProductionStatistics {
+    return new WorkOrderProductionStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderProductionStatistics {
+    return new WorkOrderProductionStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: WorkOrderProductionStatistics | PlainMessage<WorkOrderProductionStatistics> | undefined, b: WorkOrderProductionStatistics | PlainMessage<WorkOrderProductionStatistics> | undefined): boolean {
+    return proto3.util.equals(WorkOrderProductionStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of requirement statistics of the work order
+ *
+ * @generated from message Scailo.WorkOrderProductionStatisticsList
+ */
+export class WorkOrderProductionStatisticsList extends Message<WorkOrderProductionStatisticsList> {
+  /**
+   * @generated from field: repeated Scailo.WorkOrderProductionStatistics list = 1;
+   */
+  list: WorkOrderProductionStatistics[] = [];
+
+  constructor(data?: PartialMessage<WorkOrderProductionStatisticsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.WorkOrderProductionStatisticsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: WorkOrderProductionStatistics, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderProductionStatisticsList {
+    return new WorkOrderProductionStatisticsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderProductionStatisticsList {
+    return new WorkOrderProductionStatisticsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderProductionStatisticsList {
+    return new WorkOrderProductionStatisticsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: WorkOrderProductionStatisticsList | PlainMessage<WorkOrderProductionStatisticsList> | undefined, b: WorkOrderProductionStatisticsList | PlainMessage<WorkOrderProductionStatisticsList> | undefined): boolean {
+    return proto3.util.equals(WorkOrderProductionStatisticsList, a, b);
+  }
+}
+
