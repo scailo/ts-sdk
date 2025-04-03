@@ -68,7 +68,7 @@ Message\&lt;ProductionPlansServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:853
+src/production_plans.scailo_pb.ts:880
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:844
+src/production_plans.scailo_pb.ts:871
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:851
+src/production_plans.scailo_pb.ts:878
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:837
+src/production_plans.scailo_pb.ts:864
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:860
+src/production_plans.scailo_pb.ts:887
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:858
+src/production_plans.scailo_pb.ts:885
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:859
+src/production_plans.scailo_pb.ts:886
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:878
+src/production_plans.scailo_pb.ts:905
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:866
+src/production_plans.scailo_pb.ts:893
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:870
+src/production_plans.scailo_pb.ts:897
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:874
+src/production_plans.scailo_pb.ts:901

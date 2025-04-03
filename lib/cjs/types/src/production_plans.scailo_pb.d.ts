@@ -5,6 +5,26 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 import { FAMILY_TYPE } from "./families.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a production plan can be added
+ *
+ * @generated from enum Scailo.PRODUCTION_PLAN_REF_FROM
+ */
+export declare enum PRODUCTION_PLAN_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the production plan originated from a work order
+     *
+     * @generated from enum value: PRODUCTION_PLAN_REF_FROM_WORK_ORDER = 1;
+     */
+    PRODUCTION_PLAN_REF_FROM_WORK_ORDER = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.PRODUCTION_PLAN_SORT_KEY
@@ -205,9 +225,9 @@ export declare class ProductionPlansServiceCreateRequest extends Message<Product
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: PRODUCTION_PLAN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -461,9 +481,9 @@ export declare class ProductionPlan extends Message<ProductionPlan> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: PRODUCTION_PLAN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -763,9 +783,9 @@ export declare class ProductionPlansServiceAlreadyAddedQuantityForSourceRequest 
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: PRODUCTION_PLAN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1003,9 +1023,9 @@ export declare class ProductionPlansServiceFilterReq extends Message<ProductionP
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: PRODUCTION_PLAN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1176,9 +1196,9 @@ export declare class ProductionPlansServiceCountReq extends Message<ProductionPl
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: PRODUCTION_PLAN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1307,9 +1327,9 @@ export declare class ProductionPlansServiceSearchAllReq extends Message<Producti
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: PRODUCTION_PLAN_REF_FROM;
     /**
      * The associated ID of the reference
      *

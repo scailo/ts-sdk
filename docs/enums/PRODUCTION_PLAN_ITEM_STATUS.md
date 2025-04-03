@@ -30,7 +30,7 @@ from enum value: PRODUCTION_PLAN_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:206
+src/production_plans.scailo_pb.ts:233
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PRODUCTION_PLAN_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:213
+src/production_plans.scailo_pb.ts:240
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PRODUCTION_PLAN_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:220
+src/production_plans.scailo_pb.ts:247

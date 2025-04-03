@@ -39,7 +39,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:52
+src/production_plans.scailo_pb.ts:79
 
 ___
 
@@ -55,7 +55,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:45
+src/production_plans.scailo_pb.ts:72
 
 ___
 
@@ -71,7 +71,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:59
+src/production_plans.scailo_pb.ts:86
 
 ___
 
@@ -87,7 +87,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:66
+src/production_plans.scailo_pb.ts:93
 
 ___
 
@@ -103,7 +103,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:31
+src/production_plans.scailo_pb.ts:58
 
 ___
 
@@ -119,7 +119,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_ENDS_AT = 14;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:101
+src/production_plans.scailo_pb.ts:128
 
 ___
 
@@ -135,7 +135,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:80
+src/production_plans.scailo_pb.ts:107
 
 ___
 
@@ -151,7 +151,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:24
+src/production_plans.scailo_pb.ts:51
 
 ___
 
@@ -167,7 +167,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_LOCATION_ID = 12;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:87
+src/production_plans.scailo_pb.ts:114
 
 ___
 
@@ -183,7 +183,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:38
+src/production_plans.scailo_pb.ts:65
 
 ___
 
@@ -199,7 +199,7 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:73
+src/production_plans.scailo_pb.ts:100
 
 ___
 
@@ -215,4 +215,4 @@ from enum value: PRODUCTION_PLAN_SORT_KEY_STARTS_AT = 13;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:94
+src/production_plans.scailo_pb.ts:121

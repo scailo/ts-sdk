@@ -67,7 +67,7 @@ Message\&lt;ProductionPlanItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1136
+src/production_plans.scailo_pb.ts:1163
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1134
+src/production_plans.scailo_pb.ts:1161
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 production_plan_id = 10;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1127
+src/production_plans.scailo_pb.ts:1154
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1143
+src/production_plans.scailo_pb.ts:1170
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1141
+src/production_plans.scailo_pb.ts:1168
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1142
+src/production_plans.scailo_pb.ts:1169
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1160
+src/production_plans.scailo_pb.ts:1187
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1148
+src/production_plans.scailo_pb.ts:1175
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1152
+src/production_plans.scailo_pb.ts:1179
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1156
+src/production_plans.scailo_pb.ts:1183

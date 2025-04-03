@@ -77,7 +77,7 @@ Message\&lt;ProductionPlansServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1980
+src/production_plans.scailo_pb.ts:2007
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1908
+src/production_plans.scailo_pb.ts:1935
 
 ___
 
@@ -109,7 +109,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1936
+src/production_plans.scailo_pb.ts:1963
 
 ___
 
@@ -125,7 +125,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1901
+src/production_plans.scailo_pb.ts:1928
 
 ___
 
@@ -141,7 +141,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1971
+src/production_plans.scailo_pb.ts:1998
 
 ___
 
@@ -157,23 +157,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1915
+src/production_plans.scailo_pb.ts:1942
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`PRODUCTION_PLAN_REF_FROM`](../enums/PRODUCTION_PLAN_REF_FROM.md) = `PRODUCTION_PLAN_REF_FROM.PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1957
+src/production_plans.scailo_pb.ts:1984
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1964
+src/production_plans.scailo_pb.ts:1991
 
 ___
 
@@ -205,7 +205,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1950
+src/production_plans.scailo_pb.ts:1977
 
 ___
 
@@ -221,7 +221,7 @@ from field: Scailo.PRODUCTION_PLAN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1929
+src/production_plans.scailo_pb.ts:1956
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1922
+src/production_plans.scailo_pb.ts:1949
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1943
+src/production_plans.scailo_pb.ts:1970
 
 ___
 
@@ -269,7 +269,7 @@ from field: string supervisor = 25;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1978
+src/production_plans.scailo_pb.ts:2005
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1987
+src/production_plans.scailo_pb.ts:2014
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1985
+src/production_plans.scailo_pb.ts:2012
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1986
+src/production_plans.scailo_pb.ts:2013
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:2014
+src/production_plans.scailo_pb.ts:2041
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:2002
+src/production_plans.scailo_pb.ts:2029
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:2006
+src/production_plans.scailo_pb.ts:2033
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:2010
+src/production_plans.scailo_pb.ts:2037

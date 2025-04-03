@@ -11,6 +11,33 @@ import { FAMILY_TYPE } from "./families.scailo_pb.js";
 
 /**
  *
+ * Stores all the possible references from which a production plan can be added
+ *
+ * @generated from enum Scailo.PRODUCTION_PLAN_REF_FROM
+ */
+export enum PRODUCTION_PLAN_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the production plan originated from a work order
+   *
+   * @generated from enum value: PRODUCTION_PLAN_REF_FROM_WORK_ORDER = 1;
+   */
+  PRODUCTION_PLAN_REF_FROM_WORK_ORDER = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(PRODUCTION_PLAN_REF_FROM)
+proto3.util.setEnumType(PRODUCTION_PLAN_REF_FROM, "Scailo.PRODUCTION_PLAN_REF_FROM", [
+  { no: 0, name: "PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "PRODUCTION_PLAN_REF_FROM_WORK_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.PRODUCTION_PLAN_SORT_KEY
@@ -271,9 +298,9 @@ export class ProductionPlansServiceCreateRequest extends Message<ProductionPlans
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = PRODUCTION_PLAN_REF_FROM.PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -330,7 +357,7 @@ export class ProductionPlansServiceCreateRequest extends Message<ProductionPlans
     { no: 8, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -658,9 +685,9 @@ export class ProductionPlan extends Message<ProductionPlan> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = PRODUCTION_PLAN_REF_FROM.PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -729,7 +756,7 @@ export class ProductionPlan extends Message<ProductionPlan> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -1172,9 +1199,9 @@ export class ProductionPlansServiceAlreadyAddedQuantityForSourceRequest extends 
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = PRODUCTION_PLAN_REF_FROM.PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1198,7 +1225,7 @@ export class ProductionPlansServiceAlreadyAddedQuantityForSourceRequest extends 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProductionPlansServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1511,9 +1538,9 @@ export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServ
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = PRODUCTION_PLAN_REF_FROM.PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1613,7 +1640,7 @@ export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServ
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -1758,9 +1785,9 @@ export class ProductionPlansServiceCountReq extends Message<ProductionPlansServi
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = PRODUCTION_PLAN_REF_FROM.PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1856,7 +1883,7 @@ export class ProductionPlansServiceCountReq extends Message<ProductionPlansServi
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -1952,9 +1979,9 @@ export class ProductionPlansServiceSearchAllReq extends Message<ProductionPlansS
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = PRODUCTION_PLAN_REF_FROM.PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1993,7 +2020,7 @@ export class ProductionPlansServiceSearchAllReq extends Message<ProductionPlansS
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },

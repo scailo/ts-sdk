@@ -67,7 +67,7 @@ Message\&lt;ProductionPlanAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:552
+src/production_plans.scailo_pb.ts:579
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string location_uuid = 215;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:550
+src/production_plans.scailo_pb.ts:577
 
 ___
 
@@ -99,7 +99,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:543
+src/production_plans.scailo_pb.ts:570
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:559
+src/production_plans.scailo_pb.ts:586
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:557
+src/production_plans.scailo_pb.ts:584
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:558
+src/production_plans.scailo_pb.ts:585
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:576
+src/production_plans.scailo_pb.ts:603
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:564
+src/production_plans.scailo_pb.ts:591
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:568
+src/production_plans.scailo_pb.ts:595
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:572
+src/production_plans.scailo_pb.ts:599

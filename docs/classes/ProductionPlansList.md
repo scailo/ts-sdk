@@ -66,7 +66,7 @@ Message\&lt;ProductionPlansList\&gt;.constructor
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:995
+src/production_plans.scailo_pb.ts:1022
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ProductionPlan list = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:993
+src/production_plans.scailo_pb.ts:1020
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1002
+src/production_plans.scailo_pb.ts:1029
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1000
+src/production_plans.scailo_pb.ts:1027
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1001
+src/production_plans.scailo_pb.ts:1028
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1018
+src/production_plans.scailo_pb.ts:1045
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1006
+src/production_plans.scailo_pb.ts:1033
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1010
+src/production_plans.scailo_pb.ts:1037
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1014
+src/production_plans.scailo_pb.ts:1041

@@ -68,7 +68,7 @@ Message\&lt;ProductionPlansServiceAlreadyAddedQuantityForSourceRequest\&gt;.cons
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1193
+src/production_plans.scailo_pb.ts:1220
 
 ## Properties
 
@@ -84,23 +84,23 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1191
+src/production_plans.scailo_pb.ts:1218
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`PRODUCTION_PLAN_REF_FROM`](../enums/PRODUCTION_PLAN_REF_FROM.md) = `PRODUCTION_PLAN_REF_FROM.PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 1;
+from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1177
+src/production_plans.scailo_pb.ts:1204
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1184
+src/production_plans.scailo_pb.ts:1211
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1200
+src/production_plans.scailo_pb.ts:1227
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1198
+src/production_plans.scailo_pb.ts:1225
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1199
+src/production_plans.scailo_pb.ts:1226
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1218
+src/production_plans.scailo_pb.ts:1245
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1206
+src/production_plans.scailo_pb.ts:1233
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1210
+src/production_plans.scailo_pb.ts:1237
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:1214
+src/production_plans.scailo_pb.ts:1241
