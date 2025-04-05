@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { ProductionPlan, ProductionPlanAncillaryParameters, ProductionPlanItem, ProductionPlanItemHistoryRequest, ProductionPlanItemProspectiveInfoRequest, ProductionPlanItemsSearchRequest, ProductionPlansItemsList, ProductionPlansList, ProductionPlansServiceAlreadyAddedQuantityForSourceRequest, ProductionPlansServiceAutofillRequest, ProductionPlansServiceCountReq, ProductionPlansServiceCreateRequest, ProductionPlansServiceFilterReq, ProductionPlansServiceItemCreateRequest, ProductionPlansServiceItemUpdateRequest, ProductionPlansServicePaginatedItemsResponse, ProductionPlansServicePaginationReq, ProductionPlansServicePaginationResponse, ProductionPlansServiceSearchAllReq, ProductionPlansServiceUpdateRequest } from "./production_plans.scailo_pb.js";
+import { ProductionPlan, ProductionPlanAncillaryParameters, ProductionPlanItem, ProductionPlanItemHistoryRequest, ProductionPlanItemProspectiveInfoRequest, ProductionPlanItemsSearchRequest, ProductionPlanProductionStatisticsList, ProductionPlansItemsList, ProductionPlansList, ProductionPlansServiceAlreadyAddedQuantityForSourceRequest, ProductionPlansServiceAutofillRequest, ProductionPlansServiceCountReq, ProductionPlansServiceCreateRequest, ProductionPlansServiceFilterReq, ProductionPlansServiceItemCreateRequest, ProductionPlansServiceItemUpdateRequest, ProductionPlansServicePaginatedItemsResponse, ProductionPlansServicePaginationReq, ProductionPlansServicePaginationResponse, ProductionPlansServiceSearchAllReq, ProductionPlansServiceUpdateRequest } from "./production_plans.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -505,12 +505,23 @@ export const ProductionPlansService = {
     /**
      * View the net quantity to be produced for the given family in the given production plan
      *
-     * @generated from rpc Scailo.ProductionPlansService.ViewRemainingProductionQuantiy
+     * @generated from rpc Scailo.ProductionPlansService.ViewRemainingProductionQuantity
      */
-    viewRemainingProductionQuantiy: {
-      name: "ViewRemainingProductionQuantiy",
+    viewRemainingProductionQuantity: {
+      name: "ViewRemainingProductionQuantity",
       I: ProductionPlanItemProspectiveInfoRequest,
       O: QuantityResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View production statistics of the production plan (match with all the produced items)
+     *
+     * @generated from rpc Scailo.ProductionPlansService.ViewProductionStatistics
+     */
+    viewProductionStatistics: {
+      name: "ViewProductionStatistics",
+      I: IdentifierUUID,
+      O: ProductionPlanProductionStatisticsList,
       kind: MethodKind.Unary,
     },
     /**

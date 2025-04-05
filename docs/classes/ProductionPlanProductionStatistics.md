@@ -1,86 +1,122 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / WorkOrderProductionStatisticsList
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / ProductionPlanProductionStatistics
 
-# Class: WorkOrderProductionStatisticsList
+# Class: ProductionPlanProductionStatistics
 
-Describes the list of production statistics of the work order
+Describes the production statistics of the production plan
 
 **`Generated`**
 
-from message Scailo.WorkOrderProductionStatisticsList
+from message Scailo.ProductionPlanProductionStatistics
 
 ## Hierarchy
 
-- `Message`\<[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)\>
+- `Message`\<[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)\>
 
-  ↳ **`WorkOrderProductionStatisticsList`**
+  ↳ **`ProductionPlanProductionStatistics`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](WorkOrderProductionStatisticsList.md#constructor)
+- [constructor](ProductionPlanProductionStatistics.md#constructor)
 
 ### Properties
 
-- [list](WorkOrderProductionStatisticsList.md#list)
-- [fields](WorkOrderProductionStatisticsList.md#fields)
-- [runtime](WorkOrderProductionStatisticsList.md#runtime)
-- [typeName](WorkOrderProductionStatisticsList.md#typename)
+- [familyId](ProductionPlanProductionStatistics.md#familyid)
+- [producedQuantity](ProductionPlanProductionStatistics.md#producedquantity)
+- [productionPlanQuantity](ProductionPlanProductionStatistics.md#productionplanquantity)
+- [fields](ProductionPlanProductionStatistics.md#fields)
+- [runtime](ProductionPlanProductionStatistics.md#runtime)
+- [typeName](ProductionPlanProductionStatistics.md#typename)
 
 ### Methods
 
-- [clone](WorkOrderProductionStatisticsList.md#clone)
-- [equals](WorkOrderProductionStatisticsList.md#equals)
-- [fromBinary](WorkOrderProductionStatisticsList.md#frombinary)
-- [fromJson](WorkOrderProductionStatisticsList.md#fromjson)
-- [fromJsonString](WorkOrderProductionStatisticsList.md#fromjsonstring)
-- [getType](WorkOrderProductionStatisticsList.md#gettype)
-- [toBinary](WorkOrderProductionStatisticsList.md#tobinary)
-- [toJSON](WorkOrderProductionStatisticsList.md#tojson)
-- [toJson](WorkOrderProductionStatisticsList.md#tojson-1)
-- [toJsonString](WorkOrderProductionStatisticsList.md#tojsonstring)
-- [equals](WorkOrderProductionStatisticsList.md#equals-1)
-- [fromBinary](WorkOrderProductionStatisticsList.md#frombinary-1)
-- [fromJson](WorkOrderProductionStatisticsList.md#fromjson-1)
-- [fromJsonString](WorkOrderProductionStatisticsList.md#fromjsonstring-1)
+- [clone](ProductionPlanProductionStatistics.md#clone)
+- [equals](ProductionPlanProductionStatistics.md#equals)
+- [fromBinary](ProductionPlanProductionStatistics.md#frombinary)
+- [fromJson](ProductionPlanProductionStatistics.md#fromjson)
+- [fromJsonString](ProductionPlanProductionStatistics.md#fromjsonstring)
+- [getType](ProductionPlanProductionStatistics.md#gettype)
+- [toBinary](ProductionPlanProductionStatistics.md#tobinary)
+- [toJSON](ProductionPlanProductionStatistics.md#tojson)
+- [toJson](ProductionPlanProductionStatistics.md#tojson-1)
+- [toJsonString](ProductionPlanProductionStatistics.md#tojsonstring)
+- [equals](ProductionPlanProductionStatistics.md#equals-1)
+- [fromBinary](ProductionPlanProductionStatistics.md#frombinary-1)
+- [fromJson](ProductionPlanProductionStatistics.md#fromjson-1)
+- [fromJsonString](ProductionPlanProductionStatistics.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new WorkOrderProductionStatisticsList**(`data?`): [`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+• **new ProductionPlanProductionStatistics**(`data?`): [`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)\> |
+| `data?` | `PartialMessage`\<[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)\> |
 
 #### Returns
 
-[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Overrides
 
-Message\&lt;WorkOrderProductionStatisticsList\&gt;.constructor
+Message\&lt;ProductionPlanProductionStatistics\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2287
+src/production_plans.scailo_pb.ts:2294
 
 ## Properties
 
-### list
+### familyId
 
-• **list**: [`WorkOrderProductionStatistics`](WorkOrderProductionStatistics.md)[] = `[]`
+• **familyId**: `bigint` = `protoInt64.zero`
+
+Stores the ID of the family
 
 **`Generated`**
 
-from field: repeated Scailo.WorkOrderProductionStatistics list = 1;
+from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2285
+src/production_plans.scailo_pb.ts:2278
+
+___
+
+### producedQuantity
+
+• **producedQuantity**: `bigint` = `protoInt64.zero`
+
+Stores the produced quantity
+
+**`Generated`**
+
+from field: uint64 produced_quantity = 3;
+
+#### Defined in
+
+src/production_plans.scailo_pb.ts:2292
+
+___
+
+### productionPlanQuantity
+
+• **productionPlanQuantity**: `bigint` = `protoInt64.zero`
+
+Stores the production plan quantity
+
+**`Generated`**
+
+from field: uint64 production_plan_quantity = 2;
+
+#### Defined in
+
+src/production_plans.scailo_pb.ts:2285
 
 ___
 
@@ -90,7 +126,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2294
+src/production_plans.scailo_pb.ts:2301
 
 ___
 
@@ -100,29 +136,29 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2292
+src/production_plans.scailo_pb.ts:2299
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.WorkOrderProductionStatisticsList"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.ProductionPlanProductionStatistics"``
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2293
+src/production_plans.scailo_pb.ts:2300
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+▸ **clone**(): [`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Inherited from
 
@@ -145,7 +181,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md) \| `PlainMessage`\<[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)\> |
+| `other` | `undefined` \| ``null`` \| [`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md) \| `PlainMessage`\<[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)\> |
 
 #### Returns
 
@@ -250,7 +286,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)\>
+▸ **getType**(): `MessageType`\<[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -258,7 +294,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)\>
+`MessageType`\<[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)\>
 
 #### Inherited from
 
@@ -389,8 +425,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md) \| `PlainMessage`\<[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)\> |
-| `b` | `undefined` \| [`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md) \| `PlainMessage`\<[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)\> |
+| `a` | `undefined` \| [`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md) \| `PlainMessage`\<[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)\> |
+| `b` | `undefined` \| [`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md) \| `PlainMessage`\<[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)\> |
 
 #### Returns
 
@@ -398,13 +434,13 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2310
+src/production_plans.scailo_pb.ts:2319
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+▸ **fromBinary**(`bytes`, `options?`): [`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Parameters
 
@@ -415,17 +451,17 @@ ___
 
 #### Returns
 
-[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2298
+src/production_plans.scailo_pb.ts:2307
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Parameters
 
@@ -436,17 +472,17 @@ ___
 
 #### Returns
 
-[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2302
+src/production_plans.scailo_pb.ts:2311
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Parameters
 
@@ -457,8 +493,8 @@ ___
 
 #### Returns
 
-[`WorkOrderProductionStatisticsList`](WorkOrderProductionStatisticsList.md)
+[`ProductionPlanProductionStatistics`](ProductionPlanProductionStatistics.md)
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2306
+src/production_plans.scailo_pb.ts:2315

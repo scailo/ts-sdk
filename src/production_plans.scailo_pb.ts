@@ -2263,3 +2263,101 @@ export class ProductionPlansServicePaginatedItemsResponse extends Message<Produc
   }
 }
 
+/**
+ *
+ * Describes the production statistics of the production plan
+ *
+ * @generated from message Scailo.ProductionPlanProductionStatistics
+ */
+export class ProductionPlanProductionStatistics extends Message<ProductionPlanProductionStatistics> {
+  /**
+   * Stores the ID of the family
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the production plan quantity
+   *
+   * @generated from field: uint64 production_plan_quantity = 2;
+   */
+  productionPlanQuantity = protoInt64.zero;
+
+  /**
+   * Stores the produced quantity
+   *
+   * @generated from field: uint64 produced_quantity = 3;
+   */
+  producedQuantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<ProductionPlanProductionStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ProductionPlanProductionStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "production_plan_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "produced_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanProductionStatistics {
+    return new ProductionPlanProductionStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanProductionStatistics {
+    return new ProductionPlanProductionStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanProductionStatistics {
+    return new ProductionPlanProductionStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ProductionPlanProductionStatistics | PlainMessage<ProductionPlanProductionStatistics> | undefined, b: ProductionPlanProductionStatistics | PlainMessage<ProductionPlanProductionStatistics> | undefined): boolean {
+    return proto3.util.equals(ProductionPlanProductionStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of production statistics of the production plan
+ *
+ * @generated from message Scailo.ProductionPlanProductionStatisticsList
+ */
+export class ProductionPlanProductionStatisticsList extends Message<ProductionPlanProductionStatisticsList> {
+  /**
+   * @generated from field: repeated Scailo.ProductionPlanProductionStatistics list = 1;
+   */
+  list: ProductionPlanProductionStatistics[] = [];
+
+  constructor(data?: PartialMessage<ProductionPlanProductionStatisticsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ProductionPlanProductionStatisticsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: ProductionPlanProductionStatistics, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanProductionStatisticsList {
+    return new ProductionPlanProductionStatisticsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanProductionStatisticsList {
+    return new ProductionPlanProductionStatisticsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanProductionStatisticsList {
+    return new ProductionPlanProductionStatisticsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ProductionPlanProductionStatisticsList | PlainMessage<ProductionPlanProductionStatisticsList> | undefined, b: ProductionPlanProductionStatisticsList | PlainMessage<ProductionPlanProductionStatisticsList> | undefined): boolean {
+    return proto3.util.equals(ProductionPlanProductionStatisticsList, a, b);
+  }
+}
+

@@ -1458,7 +1458,7 @@ export declare class WorkOrderRequirementStatisticsList extends Message<WorkOrde
 }
 /**
  *
- * Describes the requirement statistics of the work order
+ * Describes the production statistics of the work order
  *
  * @generated from message Scailo.WorkOrderProductionStatistics
  */
@@ -1492,7 +1492,7 @@ export declare class WorkOrderProductionStatistics extends Message<WorkOrderProd
 }
 /**
  *
- * Describes the list of requirement statistics of the work order
+ * Describes the list of production statistics of the work order
  *
  * @generated from message Scailo.WorkOrderProductionStatisticsList
  */

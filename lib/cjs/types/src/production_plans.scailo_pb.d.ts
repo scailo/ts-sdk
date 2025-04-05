@@ -1503,4 +1503,58 @@ export declare class ProductionPlansServicePaginatedItemsResponse extends Messag
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginatedItemsResponse;
     static equals(a: ProductionPlansServicePaginatedItemsResponse | PlainMessage<ProductionPlansServicePaginatedItemsResponse> | undefined, b: ProductionPlansServicePaginatedItemsResponse | PlainMessage<ProductionPlansServicePaginatedItemsResponse> | undefined): boolean;
 }
+/**
+ *
+ * Describes the production statistics of the production plan
+ *
+ * @generated from message Scailo.ProductionPlanProductionStatistics
+ */
+export declare class ProductionPlanProductionStatistics extends Message<ProductionPlanProductionStatistics> {
+    /**
+     * Stores the ID of the family
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the production plan quantity
+     *
+     * @generated from field: uint64 production_plan_quantity = 2;
+     */
+    productionPlanQuantity: bigint;
+    /**
+     * Stores the produced quantity
+     *
+     * @generated from field: uint64 produced_quantity = 3;
+     */
+    producedQuantity: bigint;
+    constructor(data?: PartialMessage<ProductionPlanProductionStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ProductionPlanProductionStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanProductionStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanProductionStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanProductionStatistics;
+    static equals(a: ProductionPlanProductionStatistics | PlainMessage<ProductionPlanProductionStatistics> | undefined, b: ProductionPlanProductionStatistics | PlainMessage<ProductionPlanProductionStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of production statistics of the production plan
+ *
+ * @generated from message Scailo.ProductionPlanProductionStatisticsList
+ */
+export declare class ProductionPlanProductionStatisticsList extends Message<ProductionPlanProductionStatisticsList> {
+    /**
+     * @generated from field: repeated Scailo.ProductionPlanProductionStatistics list = 1;
+     */
+    list: ProductionPlanProductionStatistics[];
+    constructor(data?: PartialMessage<ProductionPlanProductionStatisticsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ProductionPlanProductionStatisticsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanProductionStatisticsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanProductionStatisticsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanProductionStatisticsList;
+    static equals(a: ProductionPlanProductionStatisticsList | PlainMessage<ProductionPlanProductionStatisticsList> | undefined, b: ProductionPlanProductionStatisticsList | PlainMessage<ProductionPlanProductionStatisticsList> | undefined): boolean;
+}
 //# sourceMappingURL=production_plans.scailo_pb.d.ts.map

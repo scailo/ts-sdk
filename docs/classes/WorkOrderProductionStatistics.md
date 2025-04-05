@@ -2,7 +2,7 @@
 
 # Class: WorkOrderProductionStatistics
 
-Describes the requirement statistics of the work order
+Describes the production statistics of the work order
 
 **`Generated`**
 
