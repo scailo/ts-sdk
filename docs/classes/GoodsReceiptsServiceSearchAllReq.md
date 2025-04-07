@@ -77,7 +77,7 @@ Message\&lt;GoodsReceiptsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2223
+src/goods_receipts.scailo_pb.ts:2250
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: Scailo.GOODS_RECEIPT_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2214
+src/goods_receipts.scailo_pb.ts:2241
 
 ___
 
@@ -109,7 +109,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2151
+src/goods_receipts.scailo_pb.ts:2178
 
 ___
 
@@ -125,7 +125,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2179
+src/goods_receipts.scailo_pb.ts:2206
 
 ___
 
@@ -141,7 +141,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2144
+src/goods_receipts.scailo_pb.ts:2171
 
 ___
 
@@ -157,23 +157,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2158
+src/goods_receipts.scailo_pb.ts:2185
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`GOODS_RECEIPT_REF_FROM`](../enums/GOODS_RECEIPT_REF_FROM.md) = `GOODS_RECEIPT_REF_FROM.GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2200
+src/goods_receipts.scailo_pb.ts:2227
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2207
+src/goods_receipts.scailo_pb.ts:2234
 
 ___
 
@@ -205,7 +205,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2193
+src/goods_receipts.scailo_pb.ts:2220
 
 ___
 
@@ -221,7 +221,7 @@ from field: Scailo.GOODS_RECEIPT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2172
+src/goods_receipts.scailo_pb.ts:2199
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2165
+src/goods_receipts.scailo_pb.ts:2192
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2186
+src/goods_receipts.scailo_pb.ts:2213
 
 ___
 
@@ -269,7 +269,7 @@ from field: uint64 vendor_id = 50;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2221
+src/goods_receipts.scailo_pb.ts:2248
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2230
+src/goods_receipts.scailo_pb.ts:2257
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2228
+src/goods_receipts.scailo_pb.ts:2255
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2229
+src/goods_receipts.scailo_pb.ts:2256
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2257
+src/goods_receipts.scailo_pb.ts:2284
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2245
+src/goods_receipts.scailo_pb.ts:2272
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2249
+src/goods_receipts.scailo_pb.ts:2276
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:2253
+src/goods_receipts.scailo_pb.ts:2280

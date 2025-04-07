@@ -30,7 +30,7 @@ from enum value: GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:248
+src/goods_receipts.scailo_pb.ts:275
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GOODS_RECEIPT_BILLING_STATUS_BILLED = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:255
+src/goods_receipts.scailo_pb.ts:282
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GOODS_RECEIPT_BILLING_STATUS_UNBILLED = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:262
+src/goods_receipts.scailo_pb.ts:289

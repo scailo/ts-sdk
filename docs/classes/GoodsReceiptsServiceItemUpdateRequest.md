@@ -70,7 +70,7 @@ Message\&lt;GoodsReceiptsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:845
+src/goods_receipts.scailo_pb.ts:872
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:822
+src/goods_receipts.scailo_pb.ts:849
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:829
+src/goods_receipts.scailo_pb.ts:856
 
 ___
 
@@ -118,7 +118,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:815
+src/goods_receipts.scailo_pb.ts:842
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:843
+src/goods_receipts.scailo_pb.ts:870
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:836
+src/goods_receipts.scailo_pb.ts:863
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:852
+src/goods_receipts.scailo_pb.ts:879
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:850
+src/goods_receipts.scailo_pb.ts:877
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:851
+src/goods_receipts.scailo_pb.ts:878
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:872
+src/goods_receipts.scailo_pb.ts:899
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:860
+src/goods_receipts.scailo_pb.ts:887
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:864
+src/goods_receipts.scailo_pb.ts:891
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:868
+src/goods_receipts.scailo_pb.ts:895

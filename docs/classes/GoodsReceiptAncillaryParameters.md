@@ -66,7 +66,7 @@ Message\&lt;GoodsReceiptAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:539
+src/goods_receipts.scailo_pb.ts:566
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:537
+src/goods_receipts.scailo_pb.ts:564
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:546
+src/goods_receipts.scailo_pb.ts:573
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:544
+src/goods_receipts.scailo_pb.ts:571
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:545
+src/goods_receipts.scailo_pb.ts:572
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:562
+src/goods_receipts.scailo_pb.ts:589
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:550
+src/goods_receipts.scailo_pb.ts:577
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:554
+src/goods_receipts.scailo_pb.ts:581
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:558
+src/goods_receipts.scailo_pb.ts:585

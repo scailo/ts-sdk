@@ -73,7 +73,7 @@ Message\&lt;GoodsReceiptsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:440
+src/goods_receipts.scailo_pb.ts:467
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:438
+src/goods_receipts.scailo_pb.ts:465
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:396
+src/goods_receipts.scailo_pb.ts:423
 
 ___
 
@@ -121,7 +121,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:403
+src/goods_receipts.scailo_pb.ts:430
 
 ___
 
@@ -137,7 +137,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:417
+src/goods_receipts.scailo_pb.ts:444
 
 ___
 
@@ -153,7 +153,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:389
+src/goods_receipts.scailo_pb.ts:416
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:410
+src/goods_receipts.scailo_pb.ts:437
 
 ___
 
@@ -185,7 +185,7 @@ from field: string vendor_bill_date = 15;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:431
+src/goods_receipts.scailo_pb.ts:458
 
 ___
 
@@ -201,7 +201,7 @@ from field: string vendor_bill_no = 14;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:424
+src/goods_receipts.scailo_pb.ts:451
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:447
+src/goods_receipts.scailo_pb.ts:474
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:445
+src/goods_receipts.scailo_pb.ts:472
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:446
+src/goods_receipts.scailo_pb.ts:473
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:470
+src/goods_receipts.scailo_pb.ts:497
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:458
+src/goods_receipts.scailo_pb.ts:485
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:462
+src/goods_receipts.scailo_pb.ts:489
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:466
+src/goods_receipts.scailo_pb.ts:493

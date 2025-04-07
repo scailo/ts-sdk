@@ -71,7 +71,7 @@ Message\&lt;GoodsReceiptsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1533
+src/goods_receipts.scailo_pb.ts:1560
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1503
+src/goods_receipts.scailo_pb.ts:1530
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1496
+src/goods_receipts.scailo_pb.ts:1523
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1510
+src/goods_receipts.scailo_pb.ts:1537
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.GOODS_RECEIPT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1524
+src/goods_receipts.scailo_pb.ts:1551
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1517
+src/goods_receipts.scailo_pb.ts:1544
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1531
+src/goods_receipts.scailo_pb.ts:1558
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1540
+src/goods_receipts.scailo_pb.ts:1567
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1538
+src/goods_receipts.scailo_pb.ts:1565
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1539
+src/goods_receipts.scailo_pb.ts:1566
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1561
+src/goods_receipts.scailo_pb.ts:1588
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1549
+src/goods_receipts.scailo_pb.ts:1576
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1553
+src/goods_receipts.scailo_pb.ts:1580
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1557
+src/goods_receipts.scailo_pb.ts:1584

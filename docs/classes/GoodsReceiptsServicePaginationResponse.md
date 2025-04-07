@@ -69,7 +69,7 @@ Message\&lt;GoodsReceiptsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1601
+src/goods_receipts.scailo_pb.ts:1628
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1578
+src/goods_receipts.scailo_pb.ts:1605
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1585
+src/goods_receipts.scailo_pb.ts:1612
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.GoodsReceipt payload = 4;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1599
+src/goods_receipts.scailo_pb.ts:1626
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1592
+src/goods_receipts.scailo_pb.ts:1619
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1608
+src/goods_receipts.scailo_pb.ts:1635
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1606
+src/goods_receipts.scailo_pb.ts:1633
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1607
+src/goods_receipts.scailo_pb.ts:1634
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1627
+src/goods_receipts.scailo_pb.ts:1654
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1615
+src/goods_receipts.scailo_pb.ts:1642
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1619
+src/goods_receipts.scailo_pb.ts:1646
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1623
+src/goods_receipts.scailo_pb.ts:1650

@@ -77,7 +77,7 @@ Message\&lt;GoodsReceiptItem\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:971
+src/goods_receipts.scailo_pb.ts:998
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:903
+src/goods_receipts.scailo_pb.ts:930
 
 ___
 
@@ -109,7 +109,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:889
+src/goods_receipts.scailo_pb.ts:916
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:931
+src/goods_receipts.scailo_pb.ts:958
 
 ___
 
@@ -143,7 +143,7 @@ from field: string family_uuid = 111;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:969
+src/goods_receipts.scailo_pb.ts:996
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 goods_receipt_id = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:924
+src/goods_receipts.scailo_pb.ts:951
 
 ___
 
@@ -176,7 +176,7 @@ from field: string goods_receipt_uuid = 110;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:960
+src/goods_receipts.scailo_pb.ts:987
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:938
+src/goods_receipts.scailo_pb.ts:965
 
 ___
 
@@ -208,7 +208,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:896
+src/goods_receipts.scailo_pb.ts:923
 
 ___
 
@@ -224,7 +224,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:910
+src/goods_receipts.scailo_pb.ts:937
 
 ___
 
@@ -240,7 +240,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:917
+src/goods_receipts.scailo_pb.ts:944
 
 ___
 
@@ -256,7 +256,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:952
+src/goods_receipts.scailo_pb.ts:979
 
 ___
 
@@ -272,7 +272,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:945
+src/goods_receipts.scailo_pb.ts:972
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:978
+src/goods_receipts.scailo_pb.ts:1005
 
 ___
 
@@ -292,7 +292,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:976
+src/goods_receipts.scailo_pb.ts:1003
 
 ___
 
@@ -302,7 +302,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:977
+src/goods_receipts.scailo_pb.ts:1004
 
 ## Methods
 
@@ -590,7 +590,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1005
+src/goods_receipts.scailo_pb.ts:1032
 
 ___
 
@@ -611,7 +611,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:993
+src/goods_receipts.scailo_pb.ts:1020
 
 ___
 
@@ -632,7 +632,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:997
+src/goods_receipts.scailo_pb.ts:1024
 
 ___
 
@@ -653,4 +653,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1001
+src/goods_receipts.scailo_pb.ts:1028

@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a goods receipt can be added
+ *
+ * @generated from enum Scailo.GOODS_RECEIPT_REF_FROM
+ */
+export declare enum GOODS_RECEIPT_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the goods receipt originated from a purchase order
+     *
+     * @generated from enum value: GOODS_RECEIPT_REF_FROM_PURCHASE_ORDER = 1;
+     */
+    GOODS_RECEIPT_REF_FROM_PURCHASE_ORDER = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.GOODS_RECEIPT_ITEM_SORT_KEY
@@ -230,9 +250,9 @@ export declare class GoodsReceiptsServiceCreateRequest extends Message<GoodsRece
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: GOODS_RECEIPT_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -444,9 +464,9 @@ export declare class GoodsReceipt extends Message<GoodsReceipt> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: GOODS_RECEIPT_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -941,9 +961,9 @@ export declare class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest ex
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: GOODS_RECEIPT_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1181,9 +1201,9 @@ export declare class GoodsReceiptsServiceFilterReq extends Message<GoodsReceipts
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: GOODS_RECEIPT_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1347,9 +1367,9 @@ export declare class GoodsReceiptsServiceCountReq extends Message<GoodsReceiptsS
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: GOODS_RECEIPT_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1471,9 +1491,9 @@ export declare class GoodsReceiptsServiceSearchAllReq extends Message<GoodsRecei
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: GOODS_RECEIPT_REF_FROM;
     /**
      * The associated ID of the reference
      *

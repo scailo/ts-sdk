@@ -66,7 +66,7 @@ Message\&lt;GoodsReceiptsList\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1024
+src/goods_receipts.scailo_pb.ts:1051
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.GoodsReceipt list = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1022
+src/goods_receipts.scailo_pb.ts:1049
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1031
+src/goods_receipts.scailo_pb.ts:1058
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1029
+src/goods_receipts.scailo_pb.ts:1056
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1030
+src/goods_receipts.scailo_pb.ts:1057
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1047
+src/goods_receipts.scailo_pb.ts:1074
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1035
+src/goods_receipts.scailo_pb.ts:1062
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1039
+src/goods_receipts.scailo_pb.ts:1066
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1043
+src/goods_receipts.scailo_pb.ts:1070

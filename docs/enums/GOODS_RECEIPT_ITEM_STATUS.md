@@ -30,7 +30,7 @@ from enum value: GOODS_RECEIPT_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:114
+src/goods_receipts.scailo_pb.ts:141
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GOODS_RECEIPT_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:121
+src/goods_receipts.scailo_pb.ts:148
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GOODS_RECEIPT_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:128
+src/goods_receipts.scailo_pb.ts:155

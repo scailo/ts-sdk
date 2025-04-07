@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a goods receipt can be added
+ *
+ * @generated from enum Scailo.GOODS_RECEIPT_REF_FROM
+ */
+export enum GOODS_RECEIPT_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the goods receipt originated from a purchase order
+   *
+   * @generated from enum value: GOODS_RECEIPT_REF_FROM_PURCHASE_ORDER = 1;
+   */
+  GOODS_RECEIPT_REF_FROM_PURCHASE_ORDER = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(GOODS_RECEIPT_REF_FROM)
+proto3.util.setEnumType(GOODS_RECEIPT_REF_FROM, "Scailo.GOODS_RECEIPT_REF_FROM", [
+  { no: 0, name: "GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "GOODS_RECEIPT_REF_FROM_PURCHASE_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.GOODS_RECEIPT_ITEM_SORT_KEY
@@ -306,9 +333,9 @@ export class GoodsReceiptsServiceCreateRequest extends Message<GoodsReceiptsServ
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = GOODS_RECEIPT_REF_FROM.GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -350,7 +377,7 @@ export class GoodsReceiptsServiceCreateRequest extends Message<GoodsReceiptsServ
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "vendor_bill_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -637,9 +664,9 @@ export class GoodsReceipt extends Message<GoodsReceipt> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = GOODS_RECEIPT_REF_FROM.GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -693,7 +720,7 @@ export class GoodsReceipt extends Message<GoodsReceipt> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "vendor_bill_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -1433,9 +1460,9 @@ export class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest extends Me
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = GOODS_RECEIPT_REF_FROM.GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1459,7 +1486,7 @@ export class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest extends Me
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1772,9 +1799,9 @@ export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceF
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = GOODS_RECEIPT_REF_FROM.GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1866,7 +1893,7 @@ export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceF
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 25, name: "vendor_bill_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -2010,9 +2037,9 @@ export class GoodsReceiptsServiceCountReq extends Message<GoodsReceiptsServiceCo
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = GOODS_RECEIPT_REF_FROM.GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2100,7 +2127,7 @@ export class GoodsReceiptsServiceCountReq extends Message<GoodsReceiptsServiceCo
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 25, name: "vendor_bill_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -2195,9 +2222,9 @@ export class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServi
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.GOODS_RECEIPT_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = GOODS_RECEIPT_REF_FROM.GOODS_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2236,7 +2263,7 @@ export class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServi
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) },
     { no: 50, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

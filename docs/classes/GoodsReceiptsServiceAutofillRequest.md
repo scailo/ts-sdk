@@ -67,7 +67,7 @@ Message\&lt;GoodsReceiptsServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:496
+src/goods_receipts.scailo_pb.ts:523
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:487
+src/goods_receipts.scailo_pb.ts:514
 
 ___
 
@@ -99,7 +99,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:494
+src/goods_receipts.scailo_pb.ts:521
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:503
+src/goods_receipts.scailo_pb.ts:530
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:501
+src/goods_receipts.scailo_pb.ts:528
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:502
+src/goods_receipts.scailo_pb.ts:529
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:520
+src/goods_receipts.scailo_pb.ts:547
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:508
+src/goods_receipts.scailo_pb.ts:535
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:512
+src/goods_receipts.scailo_pb.ts:539
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:516
+src/goods_receipts.scailo_pb.ts:543
