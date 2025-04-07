@@ -1481,6 +1481,12 @@ export declare class WorkOrderProductionStatistics extends Message<WorkOrderProd
      * @generated from field: uint64 work_order_quantity = 3;
      */
     workOrderQuantity: bigint;
+    /**
+     * Stores the produced quantity
+     *
+     * @generated from field: uint64 produced_quantity = 4;
+     */
+    producedQuantity: bigint;
     constructor(data?: PartialMessage<WorkOrderProductionStatistics>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.WorkOrderProductionStatistics";

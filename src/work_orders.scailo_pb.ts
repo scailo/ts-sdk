@@ -2242,6 +2242,13 @@ export class WorkOrderProductionStatistics extends Message<WorkOrderProductionSt
    */
   workOrderQuantity = protoInt64.zero;
 
+  /**
+   * Stores the produced quantity
+   *
+   * @generated from field: uint64 produced_quantity = 4;
+   */
+  producedQuantity = protoInt64.zero;
+
   constructor(data?: PartialMessage<WorkOrderProductionStatistics>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2253,6 +2260,7 @@ export class WorkOrderProductionStatistics extends Message<WorkOrderProductionSt
     { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "production_plan_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "work_order_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "produced_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderProductionStatistics {

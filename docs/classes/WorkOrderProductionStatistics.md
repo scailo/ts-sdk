@@ -23,6 +23,7 @@ from message Scailo.WorkOrderProductionStatistics
 ### Properties
 
 - [familyId](WorkOrderProductionStatistics.md#familyid)
+- [producedQuantity](WorkOrderProductionStatistics.md#producedquantity)
 - [productionPlanQuantity](WorkOrderProductionStatistics.md#productionplanquantity)
 - [workOrderQuantity](WorkOrderProductionStatistics.md#workorderquantity)
 - [fields](WorkOrderProductionStatistics.md#fields)
@@ -68,7 +69,7 @@ Message\&lt;WorkOrderProductionStatistics\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2245
+src/work_orders.scailo_pb.ts:2252
 
 ## Properties
 
@@ -85,6 +86,22 @@ from field: uint64 family_id = 1;
 #### Defined in
 
 src/work_orders.scailo_pb.ts:2229
+
+___
+
+### producedQuantity
+
+• **producedQuantity**: `bigint` = `protoInt64.zero`
+
+Stores the produced quantity
+
+**`Generated`**
+
+from field: uint64 produced_quantity = 4;
+
+#### Defined in
+
+src/work_orders.scailo_pb.ts:2250
 
 ___
 
@@ -126,7 +143,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2252
+src/work_orders.scailo_pb.ts:2259
 
 ___
 
@@ -136,7 +153,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2250
+src/work_orders.scailo_pb.ts:2257
 
 ___
 
@@ -146,7 +163,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2251
+src/work_orders.scailo_pb.ts:2258
 
 ## Methods
 
@@ -434,7 +451,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2270
+src/work_orders.scailo_pb.ts:2278
 
 ___
 
@@ -455,7 +472,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2258
+src/work_orders.scailo_pb.ts:2266
 
 ___
 
@@ -476,7 +493,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2262
+src/work_orders.scailo_pb.ts:2270
 
 ___
 
@@ -497,4 +514,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2266
+src/work_orders.scailo_pb.ts:2274
