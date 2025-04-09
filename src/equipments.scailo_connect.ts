@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Equipment, EquipmentsList, EquipmentsServiceCountReq, EquipmentsServiceCreateRequest, EquipmentsServiceFilterReq, EquipmentsServicePaginationReq, EquipmentsServicePaginationResponse, EquipmentsServiceSearchAllReq, EquipmentsServiceSendToStoreRequest, EquipmentsServiceUpdateRequest } from "./equipments.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -322,6 +322,29 @@ export const EquipmentsService = {
       name: "Count",
       I: EquipmentsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.EquipmentsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: EquipmentsServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file. Imports records as initial stock
+     *
+     * @generated from rpc Scailo.EquipmentsService.ImportFromCSV
+     */
+    importFromCSV: {
+      name: "ImportFromCSV",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }

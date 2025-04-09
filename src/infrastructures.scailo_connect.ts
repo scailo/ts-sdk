@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Infrastructure, InfrastructuresList, InfrastructuresServiceCountReq, InfrastructuresServiceCreateRequest, InfrastructuresServiceFilterReq, InfrastructuresServicePaginationReq, InfrastructuresServicePaginationResponse, InfrastructuresServiceSearchAllReq, InfrastructuresServiceSendToStoreRequest, InfrastructuresServiceUpdateRequest } from "./infrastructures.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -322,6 +322,29 @@ export const InfrastructuresService = {
       name: "Count",
       I: InfrastructuresServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.InfrastructuresService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: InfrastructuresServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file. Imports records as initial stock
+     *
+     * @generated from rpc Scailo.InfrastructuresService.ImportFromCSV
+     */
+    importFromCSV: {
+      name: "ImportFromCSV",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }

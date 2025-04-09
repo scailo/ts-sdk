@@ -1,5 +1,5 @@
 import { Component, ComponentsList, ComponentsServiceCountReq, ComponentsServiceCreateRequest, ComponentsServiceFilterReq, ComponentsServicePaginationReq, ComponentsServicePaginationResponse, ComponentsServiceSearchAllReq, ComponentsServiceSendToStoreRequest, ComponentsServiceUpdateRequest } from "./components.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -316,6 +316,29 @@ export declare const ComponentsService: {
             readonly name: "Count";
             readonly I: typeof ComponentsServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+         *
+         * @generated from rpc Scailo.ComponentsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof ComponentsServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Import records using a CSV file. Imports records as initial stock
+         *
+         * @generated from rpc Scailo.ComponentsService.ImportFromCSV
+         */
+        readonly importFromCSV: {
+            readonly name: "ImportFromCSV";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Merchandise, MerchandisesList, MerchandisesServiceCountReq, MerchandisesServiceCreateRequest, MerchandisesServiceFilterReq, MerchandisesServicePaginationReq, MerchandisesServicePaginationResponse, MerchandisesServiceSearchAllReq, MerchandisesServiceSendToStoreRequest, MerchandisesServiceUpdateRequest } from "./merchandises.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -322,6 +322,29 @@ export const MerchandisesService = {
       name: "Count",
       I: MerchandisesServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.MerchandisesService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: MerchandisesServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file. Imports records as initial stock
+     *
+     * @generated from rpc Scailo.MerchandisesService.ImportFromCSV
+     */
+    importFromCSV: {
+      name: "ImportFromCSV",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }
