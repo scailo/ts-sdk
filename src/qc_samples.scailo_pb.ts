@@ -2364,3 +2364,85 @@ export class QCSamplesServicePaginatedParametersResponse extends Message<QCSampl
   }
 }
 
+/**
+ *
+ * Describes the payload that has the counts of all the QC samples for an inventory item
+ *
+ * @generated from message Scailo.QCSamplesCountStatistics
+ */
+export class QCSamplesCountStatistics extends Message<QCSamplesCountStatistics> {
+  /**
+   * The number of open samples
+   *
+   * @generated from field: uint64 open = 1;
+   */
+  open = protoInt64.zero;
+
+  /**
+   * The number of finished samples
+   *
+   * @generated from field: uint64 finished = 2;
+   */
+  finished = protoInt64.zero;
+
+  /**
+   * The number of samples that were accepted
+   *
+   * @generated from field: uint64 accepted = 3;
+   */
+  accepted = protoInt64.zero;
+
+  /**
+   * The number of samples that were accepted with deviation
+   *
+   * @generated from field: uint64 accepted_with_deviation = 4;
+   */
+  acceptedWithDeviation = protoInt64.zero;
+
+  /**
+   * The number of samples that were rejected
+   *
+   * @generated from field: uint64 rejected = 5;
+   */
+  rejected = protoInt64.zero;
+
+  /**
+   * The number of samples that were cancelled
+   *
+   * @generated from field: uint64 cancelled = 6;
+   */
+  cancelled = protoInt64.zero;
+
+  constructor(data?: PartialMessage<QCSamplesCountStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QCSamplesCountStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "open", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "finished", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "accepted", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "accepted_with_deviation", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 5, name: "rejected", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 6, name: "cancelled", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSamplesCountStatistics {
+    return new QCSamplesCountStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCSamplesCountStatistics {
+    return new QCSamplesCountStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSamplesCountStatistics {
+    return new QCSamplesCountStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QCSamplesCountStatistics | PlainMessage<QCSamplesCountStatistics> | undefined, b: QCSamplesCountStatistics | PlainMessage<QCSamplesCountStatistics> | undefined): boolean {
+    return proto3.util.equals(QCSamplesCountStatistics, a, b);
+  }
+}
+

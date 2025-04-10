@@ -1573,4 +1573,56 @@ export declare class QCSamplesServicePaginatedParametersResponse extends Message
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSamplesServicePaginatedParametersResponse;
     static equals(a: QCSamplesServicePaginatedParametersResponse | PlainMessage<QCSamplesServicePaginatedParametersResponse> | undefined, b: QCSamplesServicePaginatedParametersResponse | PlainMessage<QCSamplesServicePaginatedParametersResponse> | undefined): boolean;
 }
+/**
+ *
+ * Describes the payload that has the counts of all the QC samples for an inventory item
+ *
+ * @generated from message Scailo.QCSamplesCountStatistics
+ */
+export declare class QCSamplesCountStatistics extends Message<QCSamplesCountStatistics> {
+    /**
+     * The number of open samples
+     *
+     * @generated from field: uint64 open = 1;
+     */
+    open: bigint;
+    /**
+     * The number of finished samples
+     *
+     * @generated from field: uint64 finished = 2;
+     */
+    finished: bigint;
+    /**
+     * The number of samples that were accepted
+     *
+     * @generated from field: uint64 accepted = 3;
+     */
+    accepted: bigint;
+    /**
+     * The number of samples that were accepted with deviation
+     *
+     * @generated from field: uint64 accepted_with_deviation = 4;
+     */
+    acceptedWithDeviation: bigint;
+    /**
+     * The number of samples that were rejected
+     *
+     * @generated from field: uint64 rejected = 5;
+     */
+    rejected: bigint;
+    /**
+     * The number of samples that were cancelled
+     *
+     * @generated from field: uint64 cancelled = 6;
+     */
+    cancelled: bigint;
+    constructor(data?: PartialMessage<QCSamplesCountStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.QCSamplesCountStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSamplesCountStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCSamplesCountStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSamplesCountStatistics;
+    static equals(a: QCSamplesCountStatistics | PlainMessage<QCSamplesCountStatistics> | undefined, b: QCSamplesCountStatistics | PlainMessage<QCSamplesCountStatistics> | undefined): boolean;
+}
 //# sourceMappingURL=qc_samples.scailo_pb.d.ts.map
