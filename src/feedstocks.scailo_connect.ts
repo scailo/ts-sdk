@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Feedstock, FeedstocksList, FeedstocksServiceCountReq, FeedstocksServiceCreateRequest, FeedstocksServiceFilterReq, FeedstocksServicePaginationReq, FeedstocksServicePaginationResponse, FeedstocksServiceSearchAllReq, FeedstocksServiceSendToStoreRequest, FeedstocksServiceUpdateRequest } from "./feedstocks.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -326,13 +326,24 @@ export const FeedstocksService = {
     },
     /**
      * CSV operations
-     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     * Download the CSV file that consists of the list of records according to the given filter request
      *
      * @generated from rpc Scailo.FeedstocksService.DownloadAsCSV
      */
     downloadAsCSV: {
       name: "DownloadAsCSV",
       I: FeedstocksServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download the CSV template that could be used to upload records
+     *
+     * @generated from rpc Scailo.FeedstocksService.DownloadImportTemplate
+     */
+    downloadImportTemplate: {
+      name: "DownloadImportTemplate",
+      I: Empty,
       O: StandardFile,
       kind: MethodKind.Unary,
     },
