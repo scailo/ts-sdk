@@ -1,6 +1,7 @@
 import { Component, ComponentsList, ComponentsServiceCountReq, ComponentsServiceCreateRequest, ComponentsServiceFilterReq, ComponentsServicePaginationReq, ComponentsServicePaginationResponse, ComponentsServiceSearchAllReq, ComponentsServiceSendToStoreRequest, ComponentsServiceUpdateRequest } from "./components.scailo_pb.js";
-import { ActiveStatus, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each component
@@ -228,6 +229,28 @@ export declare const ComponentsService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof ComponentsServicePaginationReq;
             readonly O: typeof ComponentsServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View component families for the given production plan
+         *
+         * @generated from rpc Scailo.ComponentsService.ViewFamiliesInProductionPlan
+         */
+        readonly viewFamiliesInProductionPlan: {
+            readonly name: "ViewFamiliesInProductionPlan";
+            readonly I: typeof IdentifierWithSearchKey;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter component families for the given production plan
+         *
+         * @generated from rpc Scailo.ComponentsService.FilterFamiliesInProductionPlan
+         */
+        readonly filterFamiliesInProductionPlan: {
+            readonly name: "FilterFamiliesInProductionPlan";
+            readonly I: typeof FilterFamiliesReqForIdentifier;
+            readonly O: typeof FamiliesList;
             readonly kind: MethodKind.Unary;
         };
         /**

@@ -1,6 +1,7 @@
 import { Product, ProductsList, ProductsServiceCountReq, ProductsServiceCreateRequest, ProductsServiceFilterReq, ProductsServicePaginationReq, ProductsServicePaginationResponse, ProductsServiceSearchAllReq, ProductsServiceSendToStoreRequest, ProductsServiceUpdateRequest } from "./products.scailo_pb.js";
-import { ActiveStatus, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each product
@@ -217,6 +218,28 @@ export declare const ProductsService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof ProductsServicePaginationReq;
             readonly O: typeof ProductsServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View product families for the given production plan
+         *
+         * @generated from rpc Scailo.ProductsService.ViewFamiliesInProductionPlan
+         */
+        readonly viewFamiliesInProductionPlan: {
+            readonly name: "ViewFamiliesInProductionPlan";
+            readonly I: typeof IdentifierWithSearchKey;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter product families for the given production plan
+         *
+         * @generated from rpc Scailo.ProductsService.FilterFamiliesInProductionPlan
+         */
+        readonly filterFamiliesInProductionPlan: {
+            readonly name: "FilterFamiliesInProductionPlan";
+            readonly I: typeof FilterFamiliesReqForIdentifier;
+            readonly O: typeof FamiliesList;
             readonly kind: MethodKind.Unary;
         };
         /**

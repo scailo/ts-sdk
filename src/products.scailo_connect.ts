@@ -4,8 +4,9 @@
 // @ts-nocheck
 
 import { Product, ProductsList, ProductsServiceCountReq, ProductsServiceCreateRequest, ProductsServiceFilterReq, ProductsServicePaginationReq, ProductsServicePaginationResponse, ProductsServiceSearchAllReq, ProductsServiceSendToStoreRequest, ProductsServiceUpdateRequest } from "./products.scailo_pb.js";
-import { ActiveStatus, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, InventoryInteractionsList, InventoryPartitionRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
 /**
  *
@@ -223,6 +224,28 @@ export const ProductsService = {
       name: "ViewWithPagination",
       I: ProductsServicePaginationReq,
       O: ProductsServicePaginationResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View product families for the given production plan
+     *
+     * @generated from rpc Scailo.ProductsService.ViewFamiliesInProductionPlan
+     */
+    viewFamiliesInProductionPlan: {
+      name: "ViewFamiliesInProductionPlan",
+      I: IdentifierWithSearchKey,
+      O: FamiliesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Filter product families for the given production plan
+     *
+     * @generated from rpc Scailo.ProductsService.FilterFamiliesInProductionPlan
+     */
+    filterFamiliesInProductionPlan: {
+      name: "FilterFamiliesInProductionPlan",
+      I: FilterFamiliesReqForIdentifier,
+      O: FamiliesList,
       kind: MethodKind.Unary,
     },
     /**
