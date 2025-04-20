@@ -79,7 +79,7 @@ Message\&lt;GoodsDispatch\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:656
+src/goods_dispatches.scailo_pb.ts:683
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:577
+src/goods_dispatches.scailo_pb.ts:604
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:598
+src/goods_dispatches.scailo_pb.ts:625
 
 ___
 
@@ -127,7 +127,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:563
+src/goods_dispatches.scailo_pb.ts:590
 
 ___
 
@@ -143,7 +143,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:619
+src/goods_dispatches.scailo_pb.ts:646
 
 ___
 
@@ -159,7 +159,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:654
+src/goods_dispatches.scailo_pb.ts:681
 
 ___
 
@@ -175,7 +175,7 @@ from field: repeated Scailo.GoodsDispatchItem list = 20;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:647
+src/goods_dispatches.scailo_pb.ts:674
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:640
+src/goods_dispatches.scailo_pb.ts:667
 
 ___
 
@@ -207,7 +207,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:591
+src/goods_dispatches.scailo_pb.ts:618
 
 ___
 
@@ -223,23 +223,23 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:570
+src/goods_dispatches.scailo_pb.ts:597
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`GOODS_DISPATCH_REF_FROM`](../enums/GOODS_DISPATCH_REF_FROM.md) = `GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 12;
+from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:626
+src/goods_dispatches.scailo_pb.ts:653
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:633
+src/goods_dispatches.scailo_pb.ts:660
 
 ___
 
@@ -271,7 +271,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:612
+src/goods_dispatches.scailo_pb.ts:639
 
 ___
 
@@ -287,7 +287,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:584
+src/goods_dispatches.scailo_pb.ts:611
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:605
+src/goods_dispatches.scailo_pb.ts:632
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:663
+src/goods_dispatches.scailo_pb.ts:690
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:661
+src/goods_dispatches.scailo_pb.ts:688
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:662
+src/goods_dispatches.scailo_pb.ts:689
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:692
+src/goods_dispatches.scailo_pb.ts:719
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:680
+src/goods_dispatches.scailo_pb.ts:707
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:684
+src/goods_dispatches.scailo_pb.ts:711
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:688
+src/goods_dispatches.scailo_pb.ts:715

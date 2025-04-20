@@ -77,7 +77,7 @@ Message\&lt;GoodsDispatchItem\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:976
+src/goods_dispatches.scailo_pb.ts:1003
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:911
+src/goods_dispatches.scailo_pb.ts:938
 
 ___
 
@@ -109,7 +109,7 @@ from field: string client_family_code = 16;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:974
+src/goods_dispatches.scailo_pb.ts:1001
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:967
+src/goods_dispatches.scailo_pb.ts:994
 
 ___
 
@@ -141,7 +141,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:960
+src/goods_dispatches.scailo_pb.ts:987
 
 ___
 
@@ -157,7 +157,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:897
+src/goods_dispatches.scailo_pb.ts:924
 
 ___
 
@@ -173,7 +173,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:939
+src/goods_dispatches.scailo_pb.ts:966
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 goods_dispatch_id = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:932
+src/goods_dispatches.scailo_pb.ts:959
 
 ___
 
@@ -205,7 +205,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:953
+src/goods_dispatches.scailo_pb.ts:980
 
 ___
 
@@ -221,7 +221,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:946
+src/goods_dispatches.scailo_pb.ts:973
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:904
+src/goods_dispatches.scailo_pb.ts:931
 
 ___
 
@@ -253,7 +253,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:918
+src/goods_dispatches.scailo_pb.ts:945
 
 ___
 
@@ -269,7 +269,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:925
+src/goods_dispatches.scailo_pb.ts:952
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:983
+src/goods_dispatches.scailo_pb.ts:1010
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:981
+src/goods_dispatches.scailo_pb.ts:1008
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:982
+src/goods_dispatches.scailo_pb.ts:1009
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1010
+src/goods_dispatches.scailo_pb.ts:1037
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:998
+src/goods_dispatches.scailo_pb.ts:1025
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1002
+src/goods_dispatches.scailo_pb.ts:1029
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1006
+src/goods_dispatches.scailo_pb.ts:1033

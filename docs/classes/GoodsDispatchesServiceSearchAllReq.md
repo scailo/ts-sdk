@@ -78,7 +78,7 @@ Message\&lt;GoodsDispatchesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2210
+src/goods_dispatches.scailo_pb.ts:2237
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2193
+src/goods_dispatches.scailo_pb.ts:2220
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2208
+src/goods_dispatches.scailo_pb.ts:2235
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2201
+src/goods_dispatches.scailo_pb.ts:2228
 
 ___
 
@@ -143,7 +143,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2130
+src/goods_dispatches.scailo_pb.ts:2157
 
 ___
 
@@ -159,7 +159,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2158
+src/goods_dispatches.scailo_pb.ts:2185
 
 ___
 
@@ -175,7 +175,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2123
+src/goods_dispatches.scailo_pb.ts:2150
 
 ___
 
@@ -191,23 +191,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2137
+src/goods_dispatches.scailo_pb.ts:2164
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`GOODS_DISPATCH_REF_FROM`](../enums/GOODS_DISPATCH_REF_FROM.md) = `GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2179
+src/goods_dispatches.scailo_pb.ts:2206
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2186
+src/goods_dispatches.scailo_pb.ts:2213
 
 ___
 
@@ -239,7 +239,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2172
+src/goods_dispatches.scailo_pb.ts:2199
 
 ___
 
@@ -255,7 +255,7 @@ from field: Scailo.GOODS_DISPATCH_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2151
+src/goods_dispatches.scailo_pb.ts:2178
 
 ___
 
@@ -271,7 +271,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2144
+src/goods_dispatches.scailo_pb.ts:2171
 
 ___
 
@@ -287,7 +287,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2165
+src/goods_dispatches.scailo_pb.ts:2192
 
 ___
 
@@ -297,7 +297,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2217
+src/goods_dispatches.scailo_pb.ts:2244
 
 ___
 
@@ -307,7 +307,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2215
+src/goods_dispatches.scailo_pb.ts:2242
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2216
+src/goods_dispatches.scailo_pb.ts:2243
 
 ## Methods
 
@@ -605,7 +605,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2245
+src/goods_dispatches.scailo_pb.ts:2272
 
 ___
 
@@ -626,7 +626,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2233
+src/goods_dispatches.scailo_pb.ts:2260
 
 ___
 
@@ -647,7 +647,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2237
+src/goods_dispatches.scailo_pb.ts:2264
 
 ___
 
@@ -668,4 +668,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2241
+src/goods_dispatches.scailo_pb.ts:2268

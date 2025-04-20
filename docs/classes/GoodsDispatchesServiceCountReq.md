@@ -88,7 +88,7 @@ Message\&lt;GoodsDispatchesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2061
+src/goods_dispatches.scailo_pb.ts:2088
 
 ## Properties
 
@@ -104,7 +104,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1967
+src/goods_dispatches.scailo_pb.ts:1994
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1960
+src/goods_dispatches.scailo_pb.ts:1987
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1953
+src/goods_dispatches.scailo_pb.ts:1980
 
 ___
 
@@ -152,7 +152,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1974
+src/goods_dispatches.scailo_pb.ts:2001
 
 ___
 
@@ -168,7 +168,7 @@ from field: Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2037
+src/goods_dispatches.scailo_pb.ts:2064
 
 ___
 
@@ -184,7 +184,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2052
+src/goods_dispatches.scailo_pb.ts:2079
 
 ___
 
@@ -200,7 +200,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1988
+src/goods_dispatches.scailo_pb.ts:2015
 
 ___
 
@@ -216,7 +216,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1981
+src/goods_dispatches.scailo_pb.ts:2008
 
 ___
 
@@ -233,7 +233,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2045
+src/goods_dispatches.scailo_pb.ts:2072
 
 ___
 
@@ -249,7 +249,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1918
+src/goods_dispatches.scailo_pb.ts:1945
 
 ___
 
@@ -265,7 +265,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1911
+src/goods_dispatches.scailo_pb.ts:1938
 
 ___
 
@@ -281,7 +281,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1939
+src/goods_dispatches.scailo_pb.ts:1966
 
 ___
 
@@ -297,7 +297,7 @@ from field: uint64 family_id = 30;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2030
+src/goods_dispatches.scailo_pb.ts:2057
 
 ___
 
@@ -313,7 +313,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2002
+src/goods_dispatches.scailo_pb.ts:2029
 
 ___
 
@@ -329,7 +329,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1904
+src/goods_dispatches.scailo_pb.ts:1931
 
 ___
 
@@ -345,7 +345,7 @@ from field: uint64 location_id = 25;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2023
+src/goods_dispatches.scailo_pb.ts:2050
 
 ___
 
@@ -361,7 +361,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1932
+src/goods_dispatches.scailo_pb.ts:1959
 
 ___
 
@@ -377,7 +377,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1925
+src/goods_dispatches.scailo_pb.ts:1952
 
 ___
 
@@ -393,23 +393,23 @@ from field: uint64 project_id = 52;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2059
+src/goods_dispatches.scailo_pb.ts:2086
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`GOODS_DISPATCH_REF_FROM`](../enums/GOODS_DISPATCH_REF_FROM.md) = `GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2009
+src/goods_dispatches.scailo_pb.ts:2036
 
 ___
 
@@ -425,7 +425,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2016
+src/goods_dispatches.scailo_pb.ts:2043
 
 ___
 
@@ -441,7 +441,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1995
+src/goods_dispatches.scailo_pb.ts:2022
 
 ___
 
@@ -457,7 +457,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1946
+src/goods_dispatches.scailo_pb.ts:1973
 
 ___
 
@@ -467,7 +467,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2068
+src/goods_dispatches.scailo_pb.ts:2095
 
 ___
 
@@ -477,7 +477,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2066
+src/goods_dispatches.scailo_pb.ts:2093
 
 ___
 
@@ -487,7 +487,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2067
+src/goods_dispatches.scailo_pb.ts:2094
 
 ## Methods
 
@@ -775,7 +775,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2106
+src/goods_dispatches.scailo_pb.ts:2133
 
 ___
 
@@ -796,7 +796,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2094
+src/goods_dispatches.scailo_pb.ts:2121
 
 ___
 
@@ -817,7 +817,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2098
+src/goods_dispatches.scailo_pb.ts:2125
 
 ___
 
@@ -838,4 +838,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:2102
+src/goods_dispatches.scailo_pb.ts:2129

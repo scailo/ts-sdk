@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a goods dispatch can be added
+ *
+ * @generated from enum Scailo.GOODS_DISPATCH_REF_FROM
+ */
+export declare enum GOODS_DISPATCH_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the goods dispatch originated from a sales order
+     *
+     * @generated from enum value: GOODS_DISPATCH_REF_FROM_SALES_ORDER = 1;
+     */
+    GOODS_DISPATCH_REF_FROM_SALES_ORDER = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.GOODS_DISPATCH_ITEM_SORT_KEY
@@ -224,9 +244,9 @@ export declare class GoodsDispatchesServiceCreateRequest extends Message<GoodsDi
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: GOODS_DISPATCH_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -432,9 +452,9 @@ export declare class GoodsDispatch extends Message<GoodsDispatch> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: GOODS_DISPATCH_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -946,9 +966,9 @@ export declare class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest 
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: GOODS_DISPATCH_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1186,9 +1206,9 @@ export declare class GoodsDispatchesServiceFilterReq extends Message<GoodsDispat
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: GOODS_DISPATCH_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1341,9 +1361,9 @@ export declare class GoodsDispatchesServiceCountReq extends Message<GoodsDispatc
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: GOODS_DISPATCH_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1454,9 +1474,9 @@ export declare class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDis
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: GOODS_DISPATCH_REF_FROM;
     /**
      * The associated ID of the reference
      *

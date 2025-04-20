@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a goods dispatch can be added
+ *
+ * @generated from enum Scailo.GOODS_DISPATCH_REF_FROM
+ */
+export enum GOODS_DISPATCH_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the goods dispatch originated from a sales order
+   *
+   * @generated from enum value: GOODS_DISPATCH_REF_FROM_SALES_ORDER = 1;
+   */
+  GOODS_DISPATCH_REF_FROM_SALES_ORDER = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(GOODS_DISPATCH_REF_FROM)
+proto3.util.setEnumType(GOODS_DISPATCH_REF_FROM, "Scailo.GOODS_DISPATCH_REF_FROM", [
+  { no: 0, name: "GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "GOODS_DISPATCH_REF_FROM_SALES_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.GOODS_DISPATCH_ITEM_SORT_KEY
@@ -298,9 +325,9 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -335,7 +362,7 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
@@ -621,9 +648,9 @@ export class GoodsDispatch extends Message<GoodsDispatch> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -670,7 +697,7 @@ export class GoodsDispatch extends Message<GoodsDispatch> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: GoodsDispatchItem, repeated: true },
@@ -1442,9 +1469,9 @@ export class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends 
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1468,7 +1495,7 @@ export class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1781,9 +1808,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1862,7 +1889,7 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2004,9 +2031,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2081,7 +2108,7 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2174,9 +2201,9 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2223,7 +2250,7 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) },
     { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

@@ -71,7 +71,7 @@ Message\&lt;GoodsDispatchesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:410
+src/goods_dispatches.scailo_pb.ts:437
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:408
+src/goods_dispatches.scailo_pb.ts:435
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:380
+src/goods_dispatches.scailo_pb.ts:407
 
 ___
 
@@ -119,7 +119,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:387
+src/goods_dispatches.scailo_pb.ts:414
 
 ___
 
@@ -135,7 +135,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:401
+src/goods_dispatches.scailo_pb.ts:428
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:373
+src/goods_dispatches.scailo_pb.ts:400
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:394
+src/goods_dispatches.scailo_pb.ts:421
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:417
+src/goods_dispatches.scailo_pb.ts:444
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:415
+src/goods_dispatches.scailo_pb.ts:442
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:416
+src/goods_dispatches.scailo_pb.ts:443
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:438
+src/goods_dispatches.scailo_pb.ts:465
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:426
+src/goods_dispatches.scailo_pb.ts:453
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:430
+src/goods_dispatches.scailo_pb.ts:457
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:434
+src/goods_dispatches.scailo_pb.ts:461

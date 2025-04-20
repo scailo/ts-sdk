@@ -68,7 +68,7 @@ Message\&lt;GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest\&gt;.cons
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1463
+src/goods_dispatches.scailo_pb.ts:1490
 
 ## Properties
 
@@ -84,23 +84,23 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1461
+src/goods_dispatches.scailo_pb.ts:1488
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`GOODS_DISPATCH_REF_FROM`](../enums/GOODS_DISPATCH_REF_FROM.md) = `GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 1;
+from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1447
+src/goods_dispatches.scailo_pb.ts:1474
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1454
+src/goods_dispatches.scailo_pb.ts:1481
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1470
+src/goods_dispatches.scailo_pb.ts:1497
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1468
+src/goods_dispatches.scailo_pb.ts:1495
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1469
+src/goods_dispatches.scailo_pb.ts:1496
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1488
+src/goods_dispatches.scailo_pb.ts:1515
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1476
+src/goods_dispatches.scailo_pb.ts:1503
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1480
+src/goods_dispatches.scailo_pb.ts:1507
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1484
+src/goods_dispatches.scailo_pb.ts:1511

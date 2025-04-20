@@ -67,7 +67,7 @@ Message\&lt;GoodsDispatchAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:522
+src/goods_dispatches.scailo_pb.ts:549
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string location_uuid = 215;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:520
+src/goods_dispatches.scailo_pb.ts:547
 
 ___
 
@@ -99,7 +99,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:513
+src/goods_dispatches.scailo_pb.ts:540
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:529
+src/goods_dispatches.scailo_pb.ts:556
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:527
+src/goods_dispatches.scailo_pb.ts:554
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:528
+src/goods_dispatches.scailo_pb.ts:555
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:546
+src/goods_dispatches.scailo_pb.ts:573
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:534
+src/goods_dispatches.scailo_pb.ts:561
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:538
+src/goods_dispatches.scailo_pb.ts:565
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:542
+src/goods_dispatches.scailo_pb.ts:569

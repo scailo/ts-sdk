@@ -30,7 +30,7 @@ from enum value: GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:240
+src/goods_dispatches.scailo_pb.ts:267
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GOODS_DISPATCH_BILLING_STATUS_BILLED = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:247
+src/goods_dispatches.scailo_pb.ts:274
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GOODS_DISPATCH_BILLING_STATUS_UNBILLED = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:254
+src/goods_dispatches.scailo_pb.ts:281

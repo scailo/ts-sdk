@@ -73,7 +73,7 @@ Message\&lt;GoodsDispatchesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:326
+src/goods_dispatches.scailo_pb.ts:353
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:275
+src/goods_dispatches.scailo_pb.ts:302
 
 ___
 
@@ -105,7 +105,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:324
+src/goods_dispatches.scailo_pb.ts:351
 
 ___
 
@@ -121,23 +121,23 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:317
+src/goods_dispatches.scailo_pb.ts:344
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`GOODS_DISPATCH_REF_FROM`](../enums/GOODS_DISPATCH_REF_FROM.md) = `GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 12;
+from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:303
+src/goods_dispatches.scailo_pb.ts:330
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:310
+src/goods_dispatches.scailo_pb.ts:337
 
 ___
 
@@ -169,7 +169,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:296
+src/goods_dispatches.scailo_pb.ts:323
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:282
+src/goods_dispatches.scailo_pb.ts:309
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:289
+src/goods_dispatches.scailo_pb.ts:316
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:333
+src/goods_dispatches.scailo_pb.ts:360
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:331
+src/goods_dispatches.scailo_pb.ts:358
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:332
+src/goods_dispatches.scailo_pb.ts:359
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:356
+src/goods_dispatches.scailo_pb.ts:383
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:344
+src/goods_dispatches.scailo_pb.ts:371
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:348
+src/goods_dispatches.scailo_pb.ts:375
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:352
+src/goods_dispatches.scailo_pb.ts:379

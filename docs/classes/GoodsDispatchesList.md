@@ -66,7 +66,7 @@ Message\&lt;GoodsDispatchesList\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1029
+src/goods_dispatches.scailo_pb.ts:1056
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.GoodsDispatch list = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1027
+src/goods_dispatches.scailo_pb.ts:1054
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1036
+src/goods_dispatches.scailo_pb.ts:1063
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1034
+src/goods_dispatches.scailo_pb.ts:1061
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1035
+src/goods_dispatches.scailo_pb.ts:1062
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1052
+src/goods_dispatches.scailo_pb.ts:1079
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1040
+src/goods_dispatches.scailo_pb.ts:1067
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1044
+src/goods_dispatches.scailo_pb.ts:1071
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1048
+src/goods_dispatches.scailo_pb.ts:1075

@@ -68,7 +68,7 @@ Message\&lt;GoodsDispatchesServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:471
+src/goods_dispatches.scailo_pb.ts:498
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: bool split_into_unit_quantity = 10;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:469
+src/goods_dispatches.scailo_pb.ts:496
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:455
+src/goods_dispatches.scailo_pb.ts:482
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:462
+src/goods_dispatches.scailo_pb.ts:489
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:478
+src/goods_dispatches.scailo_pb.ts:505
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:476
+src/goods_dispatches.scailo_pb.ts:503
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:477
+src/goods_dispatches.scailo_pb.ts:504
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:496
+src/goods_dispatches.scailo_pb.ts:523
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:484
+src/goods_dispatches.scailo_pb.ts:511
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:488
+src/goods_dispatches.scailo_pb.ts:515
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:492
+src/goods_dispatches.scailo_pb.ts:519
