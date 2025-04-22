@@ -27,6 +27,7 @@ from message Scailo.MerchandisesServiceSearchAllReq
 - [familyId](MerchandisesServiceSearchAllReq.md#familyid)
 - [isActive](MerchandisesServiceSearchAllReq.md#isactive)
 - [isQcReportPublic](MerchandisesServiceSearchAllReq.md#isqcreportpublic)
+- [locationId](MerchandisesServiceSearchAllReq.md#locationid)
 - [offset](MerchandisesServiceSearchAllReq.md#offset)
 - [parentRefId](MerchandisesServiceSearchAllReq.md#parentrefid)
 - [refFrom](MerchandisesServiceSearchAllReq.md#reffrom)
@@ -81,7 +82,7 @@ Message\&lt;MerchandisesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/merchandises.scailo_pb.ts:1618
+src/merchandises.scailo_pb.ts:1625
 
 ## Properties
 
@@ -162,6 +163,22 @@ from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
 #### Defined in
 
 src/merchandises.scailo_pb.ts:1616
+
+___
+
+### locationId
+
+• **locationId**: `bigint` = `protoInt64.zero`
+
+Filter by the location ID
+
+**`Generated`**
+
+from field: uint64 location_id = 54;
+
+#### Defined in
+
+src/merchandises.scailo_pb.ts:1623
 
 ___
 
@@ -347,7 +364,7 @@ ___
 
 #### Defined in
 
-src/merchandises.scailo_pb.ts:1625
+src/merchandises.scailo_pb.ts:1632
 
 ___
 
@@ -357,7 +374,7 @@ ___
 
 #### Defined in
 
-src/merchandises.scailo_pb.ts:1623
+src/merchandises.scailo_pb.ts:1630
 
 ___
 
@@ -367,7 +384,7 @@ ___
 
 #### Defined in
 
-src/merchandises.scailo_pb.ts:1624
+src/merchandises.scailo_pb.ts:1631
 
 ## Methods
 
@@ -655,7 +672,7 @@ ___
 
 #### Defined in
 
-src/merchandises.scailo_pb.ts:1656
+src/merchandises.scailo_pb.ts:1664
 
 ___
 
@@ -676,7 +693,7 @@ ___
 
 #### Defined in
 
-src/merchandises.scailo_pb.ts:1644
+src/merchandises.scailo_pb.ts:1652
 
 ___
 
@@ -697,7 +714,7 @@ ___
 
 #### Defined in
 
-src/merchandises.scailo_pb.ts:1648
+src/merchandises.scailo_pb.ts:1656
 
 ___
 
@@ -718,4 +735,4 @@ ___
 
 #### Defined in
 
-src/merchandises.scailo_pb.ts:1652
+src/merchandises.scailo_pb.ts:1660

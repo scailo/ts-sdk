@@ -27,6 +27,7 @@ from message Scailo.ComponentsServiceSearchAllReq
 - [familyId](ComponentsServiceSearchAllReq.md#familyid)
 - [isActive](ComponentsServiceSearchAllReq.md#isactive)
 - [isQcReportPublic](ComponentsServiceSearchAllReq.md#isqcreportpublic)
+- [locationId](ComponentsServiceSearchAllReq.md#locationid)
 - [offset](ComponentsServiceSearchAllReq.md#offset)
 - [parentRefId](ComponentsServiceSearchAllReq.md#parentrefid)
 - [refFrom](ComponentsServiceSearchAllReq.md#reffrom)
@@ -81,7 +82,7 @@ Message\&lt;ComponentsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/components.scailo_pb.ts:1634
+src/components.scailo_pb.ts:1641
 
 ## Properties
 
@@ -162,6 +163,22 @@ from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
 #### Defined in
 
 src/components.scailo_pb.ts:1632
+
+___
+
+### locationId
+
+• **locationId**: `bigint` = `protoInt64.zero`
+
+Filter by the location ID
+
+**`Generated`**
+
+from field: uint64 location_id = 54;
+
+#### Defined in
+
+src/components.scailo_pb.ts:1639
 
 ___
 
@@ -347,7 +364,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:1641
+src/components.scailo_pb.ts:1648
 
 ___
 
@@ -357,7 +374,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:1639
+src/components.scailo_pb.ts:1646
 
 ___
 
@@ -367,7 +384,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:1640
+src/components.scailo_pb.ts:1647
 
 ## Methods
 
@@ -655,7 +672,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:1672
+src/components.scailo_pb.ts:1680
 
 ___
 
@@ -676,7 +693,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:1660
+src/components.scailo_pb.ts:1668
 
 ___
 
@@ -697,7 +714,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:1664
+src/components.scailo_pb.ts:1672
 
 ___
 
@@ -718,4 +735,4 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:1668
+src/components.scailo_pb.ts:1676

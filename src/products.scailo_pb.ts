@@ -1587,6 +1587,13 @@ export class ProductsServiceSearchAllReq extends Message<ProductsServiceSearchAl
    */
   isQcReportPublic = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
+  /**
+   * Filter by the location ID
+   *
+   * @generated from field: uint64 location_id = 54;
+   */
+  locationId = protoInt64.zero;
+
   constructor(data?: PartialMessage<ProductsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1611,6 +1618,7 @@ export class ProductsServiceSearchAllReq extends Message<ProductsServiceSearchAl
     { no: 50, name: "store_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 52, name: "is_qc_report_public", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 54, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductsServiceSearchAllReq {

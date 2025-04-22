@@ -1148,6 +1148,12 @@ export declare class ComponentsServiceSearchAllReq extends Message<ComponentsSer
      * @generated from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
      */
     isQcReportPublic: BOOL_FILTER;
+    /**
+     * Filter by the location ID
+     *
+     * @generated from field: uint64 location_id = 54;
+     */
+    locationId: bigint;
     constructor(data?: PartialMessage<ComponentsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ComponentsServiceSearchAllReq";

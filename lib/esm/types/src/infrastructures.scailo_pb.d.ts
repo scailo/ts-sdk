@@ -1136,6 +1136,12 @@ export declare class InfrastructuresServiceSearchAllReq extends Message<Infrastr
      * @generated from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
      */
     isQcReportPublic: BOOL_FILTER;
+    /**
+     * Filter by the location ID
+     *
+     * @generated from field: uint64 location_id = 54;
+     */
+    locationId: bigint;
     constructor(data?: PartialMessage<InfrastructuresServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.InfrastructuresServiceSearchAllReq";
