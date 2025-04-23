@@ -39,7 +39,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:142
+src/vendor_invoices.scailo_pb.ts:169
 
 ___
 
@@ -55,7 +55,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:135
+src/vendor_invoices.scailo_pb.ts:162
 
 ___
 
@@ -71,7 +71,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:149
+src/vendor_invoices.scailo_pb.ts:176
 
 ___
 
@@ -87,7 +87,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:121
+src/vendor_invoices.scailo_pb.ts:148
 
 ___
 
@@ -103,7 +103,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:156
+src/vendor_invoices.scailo_pb.ts:183
 
 ___
 
@@ -119,7 +119,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:114
+src/vendor_invoices.scailo_pb.ts:141
 
 ___
 
@@ -135,7 +135,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:163
+src/vendor_invoices.scailo_pb.ts:190
 
 ___
 
@@ -151,7 +151,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:128
+src/vendor_invoices.scailo_pb.ts:155
 
 ___
 
@@ -167,7 +167,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_TAX_GROUP_ID = 15;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:191
+src/vendor_invoices.scailo_pb.ts:218
 
 ___
 
@@ -183,7 +183,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_VENDOR_QUANTITY = 13;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:177
+src/vendor_invoices.scailo_pb.ts:204
 
 ___
 
@@ -199,7 +199,7 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_VENDOR_UNIT_PRICE = 14;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:184
+src/vendor_invoices.scailo_pb.ts:211
 
 ___
 
@@ -215,4 +215,4 @@ from enum value: VENDOR_INVOICE_ITEM_SORT_KEY_VENDOR_UOM_ID = 12;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:170
+src/vendor_invoices.scailo_pb.ts:197

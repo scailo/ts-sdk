@@ -82,7 +82,7 @@ Message\&lt;ProformaInvoiceItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2460
+src/proforma_invoices.scailo_pb.ts:2487
 
 ## Properties
 
@@ -98,7 +98,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2409
+src/proforma_invoices.scailo_pb.ts:2436
 
 ___
 
@@ -114,7 +114,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2402
+src/proforma_invoices.scailo_pb.ts:2429
 
 ___
 
@@ -130,7 +130,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2395
+src/proforma_invoices.scailo_pb.ts:2422
 
 ___
 
@@ -146,7 +146,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2416
+src/proforma_invoices.scailo_pb.ts:2443
 
 ___
 
@@ -162,7 +162,7 @@ from field: string client_family_code = 25;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2444
+src/proforma_invoices.scailo_pb.ts:2471
 
 ___
 
@@ -178,7 +178,7 @@ from field: uint64 client_uom_id = 23;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2437
+src/proforma_invoices.scailo_pb.ts:2464
 
 ___
 
@@ -194,7 +194,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2353
+src/proforma_invoices.scailo_pb.ts:2380
 
 ___
 
@@ -210,7 +210,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2381
+src/proforma_invoices.scailo_pb.ts:2408
 
 ___
 
@@ -226,7 +226,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2430
+src/proforma_invoices.scailo_pb.ts:2457
 
 ___
 
@@ -242,7 +242,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2346
+src/proforma_invoices.scailo_pb.ts:2373
 
 ___
 
@@ -258,7 +258,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2360
+src/proforma_invoices.scailo_pb.ts:2387
 
 ___
 
@@ -274,7 +274,7 @@ from field: uint64 proforma_invoice_id = 20;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2423
+src/proforma_invoices.scailo_pb.ts:2450
 
 ___
 
@@ -290,7 +290,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2458
+src/proforma_invoices.scailo_pb.ts:2485
 
 ___
 
@@ -306,7 +306,7 @@ from field: Scailo.PROFORMA_INVOICE_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2374
+src/proforma_invoices.scailo_pb.ts:2401
 
 ___
 
@@ -322,7 +322,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2367
+src/proforma_invoices.scailo_pb.ts:2394
 
 ___
 
@@ -338,7 +338,7 @@ from field: Scailo.PROFORMA_INVOICE_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2388
+src/proforma_invoices.scailo_pb.ts:2415
 
 ___
 
@@ -354,7 +354,7 @@ from field: uint64 tax_group_id = 27;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2451
+src/proforma_invoices.scailo_pb.ts:2478
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2467
+src/proforma_invoices.scailo_pb.ts:2494
 
 ___
 
@@ -374,7 +374,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2465
+src/proforma_invoices.scailo_pb.ts:2492
 
 ___
 
@@ -384,7 +384,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2466
+src/proforma_invoices.scailo_pb.ts:2493
 
 ## Methods
 
@@ -672,7 +672,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2499
+src/proforma_invoices.scailo_pb.ts:2526
 
 ___
 
@@ -693,7 +693,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2487
+src/proforma_invoices.scailo_pb.ts:2514
 
 ___
 
@@ -714,7 +714,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2491
+src/proforma_invoices.scailo_pb.ts:2518
 
 ___
 
@@ -735,4 +735,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2495
+src/proforma_invoices.scailo_pb.ts:2522

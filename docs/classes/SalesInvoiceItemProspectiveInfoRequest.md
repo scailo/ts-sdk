@@ -67,7 +67,7 @@ Message\&lt;SalesInvoiceItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1407
+src/sales_invoices.scailo_pb.ts:1434
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1405
+src/sales_invoices.scailo_pb.ts:1432
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 sales_invoice_id = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1398
+src/sales_invoices.scailo_pb.ts:1425
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1414
+src/sales_invoices.scailo_pb.ts:1441
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1412
+src/sales_invoices.scailo_pb.ts:1439
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1413
+src/sales_invoices.scailo_pb.ts:1440
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1431
+src/sales_invoices.scailo_pb.ts:1458
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1419
+src/sales_invoices.scailo_pb.ts:1446
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1423
+src/sales_invoices.scailo_pb.ts:1450
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1427
+src/sales_invoices.scailo_pb.ts:1454

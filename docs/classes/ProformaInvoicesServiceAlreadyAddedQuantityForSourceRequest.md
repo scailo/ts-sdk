@@ -68,7 +68,7 @@ Message\&lt;ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest\&gt;.con
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1499
+src/proforma_invoices.scailo_pb.ts:1526
 
 ## Properties
 
@@ -84,23 +84,23 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1497
+src/proforma_invoices.scailo_pb.ts:1524
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`PROFORMA_INVOICE_REF_FROM`](../enums/PROFORMA_INVOICE_REF_FROM.md) = `PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 1;
+from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1483
+src/proforma_invoices.scailo_pb.ts:1510
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1490
+src/proforma_invoices.scailo_pb.ts:1517
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1506
+src/proforma_invoices.scailo_pb.ts:1533
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1504
+src/proforma_invoices.scailo_pb.ts:1531
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1505
+src/proforma_invoices.scailo_pb.ts:1532
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1524
+src/proforma_invoices.scailo_pb.ts:1551
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1512
+src/proforma_invoices.scailo_pb.ts:1539
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1516
+src/proforma_invoices.scailo_pb.ts:1543
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1520
+src/proforma_invoices.scailo_pb.ts:1547

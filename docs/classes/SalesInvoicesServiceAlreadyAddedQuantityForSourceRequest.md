@@ -68,7 +68,7 @@ Message\&lt;SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest\&gt;.constr
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1464
+src/sales_invoices.scailo_pb.ts:1491
 
 ## Properties
 
@@ -84,23 +84,23 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1462
+src/sales_invoices.scailo_pb.ts:1489
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`SALES_INVOICE_REF_FROM`](../enums/SALES_INVOICE_REF_FROM.md) = `SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 1;
+from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1448
+src/sales_invoices.scailo_pb.ts:1475
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1455
+src/sales_invoices.scailo_pb.ts:1482
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1471
+src/sales_invoices.scailo_pb.ts:1498
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1469
+src/sales_invoices.scailo_pb.ts:1496
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1470
+src/sales_invoices.scailo_pb.ts:1497
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1489
+src/sales_invoices.scailo_pb.ts:1516
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1477
+src/sales_invoices.scailo_pb.ts:1504
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1481
+src/sales_invoices.scailo_pb.ts:1508
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1485
+src/sales_invoices.scailo_pb.ts:1512

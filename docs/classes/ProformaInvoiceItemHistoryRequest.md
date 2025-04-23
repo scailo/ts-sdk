@@ -67,7 +67,7 @@ Message\&lt;ProformaInvoiceItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1392
+src/proforma_invoices.scailo_pb.ts:1419
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1390
+src/proforma_invoices.scailo_pb.ts:1417
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 proforma_invoice_id = 10;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1383
+src/proforma_invoices.scailo_pb.ts:1410
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1399
+src/proforma_invoices.scailo_pb.ts:1426
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1397
+src/proforma_invoices.scailo_pb.ts:1424
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1398
+src/proforma_invoices.scailo_pb.ts:1425
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1416
+src/proforma_invoices.scailo_pb.ts:1443
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1404
+src/proforma_invoices.scailo_pb.ts:1431
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1408
+src/proforma_invoices.scailo_pb.ts:1435
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1412
+src/proforma_invoices.scailo_pb.ts:1439

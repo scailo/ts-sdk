@@ -68,7 +68,7 @@ Message\&lt;SalesInvoicesServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:572
+src/sales_invoices.scailo_pb.ts:599
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: bool include_services = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:570
+src/sales_invoices.scailo_pb.ts:597
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:556
+src/sales_invoices.scailo_pb.ts:583
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:563
+src/sales_invoices.scailo_pb.ts:590
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:579
+src/sales_invoices.scailo_pb.ts:606
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:577
+src/sales_invoices.scailo_pb.ts:604
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:578
+src/sales_invoices.scailo_pb.ts:605
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:597
+src/sales_invoices.scailo_pb.ts:624
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:585
+src/sales_invoices.scailo_pb.ts:612
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:589
+src/sales_invoices.scailo_pb.ts:616
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:593
+src/sales_invoices.scailo_pb.ts:620

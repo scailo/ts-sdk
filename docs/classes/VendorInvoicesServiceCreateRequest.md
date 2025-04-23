@@ -80,7 +80,7 @@ Message\&lt;VendorInvoicesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:356
+src/vendor_invoices.scailo_pb.ts:383
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 cumulative_excess_tax_amount = 21;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:347
+src/vendor_invoices.scailo_pb.ts:374
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 cumulative_excess_tax_group_id = 20;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:340
+src/vendor_invoices.scailo_pb.ts:367
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 currency_id = 14;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:298
+src/vendor_invoices.scailo_pb.ts:325
 
 ___
 
@@ -144,7 +144,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:256
+src/vendor_invoices.scailo_pb.ts:283
 
 ___
 
@@ -160,7 +160,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:354
+src/vendor_invoices.scailo_pb.ts:381
 
 ___
 
@@ -176,7 +176,7 @@ from field: uint64 miscellaneous_cost = 17;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:319
+src/vendor_invoices.scailo_pb.ts:346
 
 ___
 
@@ -192,23 +192,23 @@ from field: uint64 overall_discount = 18;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:326
+src/vendor_invoices.scailo_pb.ts:353
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`VENDOR_INVOICE_REF_FROM`](../enums/VENDOR_INVOICE_REF_FROM.md) = `VENDOR_INVOICE_REF_FROM.VENDOR_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 12;
+from field: Scailo.VENDOR_INVOICE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:284
+src/vendor_invoices.scailo_pb.ts:311
 
 ___
 
@@ -224,7 +224,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:291
+src/vendor_invoices.scailo_pb.ts:318
 
 ___
 
@@ -240,7 +240,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:277
+src/vendor_invoices.scailo_pb.ts:304
 
 ___
 
@@ -256,7 +256,7 @@ from field: int64 round_off = 19;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:333
+src/vendor_invoices.scailo_pb.ts:360
 
 ___
 
@@ -272,7 +272,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:263
+src/vendor_invoices.scailo_pb.ts:290
 
 ___
 
@@ -288,7 +288,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:270
+src/vendor_invoices.scailo_pb.ts:297
 
 ___
 
@@ -304,7 +304,7 @@ from field: string vendor_bill_date = 16;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:312
+src/vendor_invoices.scailo_pb.ts:339
 
 ___
 
@@ -320,7 +320,7 @@ from field: string vendor_bill_no = 15;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:305
+src/vendor_invoices.scailo_pb.ts:332
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:363
+src/vendor_invoices.scailo_pb.ts:390
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:361
+src/vendor_invoices.scailo_pb.ts:388
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:362
+src/vendor_invoices.scailo_pb.ts:389
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:393
+src/vendor_invoices.scailo_pb.ts:420
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:381
+src/vendor_invoices.scailo_pb.ts:408
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:385
+src/vendor_invoices.scailo_pb.ts:412
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:389
+src/vendor_invoices.scailo_pb.ts:416

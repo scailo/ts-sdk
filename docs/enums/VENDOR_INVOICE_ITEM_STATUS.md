@@ -30,7 +30,7 @@ from enum value: VENDOR_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:221
+src/vendor_invoices.scailo_pb.ts:248
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: VENDOR_INVOICE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:228
+src/vendor_invoices.scailo_pb.ts:255
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: VENDOR_INVOICE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:235
+src/vendor_invoices.scailo_pb.ts:262

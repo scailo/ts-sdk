@@ -66,7 +66,7 @@ Message\&lt;ProformaInvoiceItemsList\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1343
+src/proforma_invoices.scailo_pb.ts:1370
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ProformaInvoiceItem list = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1341
+src/proforma_invoices.scailo_pb.ts:1368
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1350
+src/proforma_invoices.scailo_pb.ts:1377
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1348
+src/proforma_invoices.scailo_pb.ts:1375
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1349
+src/proforma_invoices.scailo_pb.ts:1376
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1366
+src/proforma_invoices.scailo_pb.ts:1393
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1354
+src/proforma_invoices.scailo_pb.ts:1381
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1358
+src/proforma_invoices.scailo_pb.ts:1385
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1362
+src/proforma_invoices.scailo_pb.ts:1389

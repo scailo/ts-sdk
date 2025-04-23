@@ -76,7 +76,7 @@ Message\&lt;SalesInvoicesServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:946
+src/sales_invoices.scailo_pb.ts:973
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: string client_family_code = 15;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:916
+src/sales_invoices.scailo_pb.ts:943
 
 ___
 
@@ -108,7 +108,7 @@ from field: uint64 client_quantity = 14;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:909
+src/sales_invoices.scailo_pb.ts:936
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:902
+src/sales_invoices.scailo_pb.ts:929
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:888
+src/sales_invoices.scailo_pb.ts:915
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:895
+src/sales_invoices.scailo_pb.ts:922
 
 ___
 
@@ -172,7 +172,7 @@ from field: int64 round_off = 18;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:937
+src/sales_invoices.scailo_pb.ts:964
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 sales_invoice_id = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:881
+src/sales_invoices.scailo_pb.ts:908
 
 ___
 
@@ -204,7 +204,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:944
+src/sales_invoices.scailo_pb.ts:971
 
 ___
 
@@ -220,7 +220,7 @@ from field: uint64 tax_group_id = 17;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:930
+src/sales_invoices.scailo_pb.ts:957
 
 ___
 
@@ -236,7 +236,7 @@ from field: uint64 unit_price = 16;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:923
+src/sales_invoices.scailo_pb.ts:950
 
 ___
 
@@ -252,7 +252,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:874
+src/sales_invoices.scailo_pb.ts:901
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:953
+src/sales_invoices.scailo_pb.ts:980
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:951
+src/sales_invoices.scailo_pb.ts:978
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:952
+src/sales_invoices.scailo_pb.ts:979
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:979
+src/sales_invoices.scailo_pb.ts:1006
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:967
+src/sales_invoices.scailo_pb.ts:994
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:971
+src/sales_invoices.scailo_pb.ts:998
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:975
+src/sales_invoices.scailo_pb.ts:1002

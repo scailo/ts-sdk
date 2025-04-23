@@ -91,7 +91,7 @@ Message\&lt;ProformaInvoicesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2142
+src/proforma_invoices.scailo_pb.ts:2169
 
 ## Properties
 
@@ -107,7 +107,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2027
+src/proforma_invoices.scailo_pb.ts:2054
 
 ___
 
@@ -123,7 +123,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2020
+src/proforma_invoices.scailo_pb.ts:2047
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2013
+src/proforma_invoices.scailo_pb.ts:2040
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2034
+src/proforma_invoices.scailo_pb.ts:2061
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 bank_account_id = 25;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2090
+src/proforma_invoices.scailo_pb.ts:2117
 
 ___
 
@@ -187,7 +187,7 @@ from field: Scailo.PROFORMA_INVOICE_BILLING_STATUS billing_status = 50;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2104
+src/proforma_invoices.scailo_pb.ts:2131
 
 ___
 
@@ -203,7 +203,7 @@ from field: uint64 buyer_client_id = 61;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2119
+src/proforma_invoices.scailo_pb.ts:2146
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2048
+src/proforma_invoices.scailo_pb.ts:2075
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2041
+src/proforma_invoices.scailo_pb.ts:2068
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 consignee_client_id = 60;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2112
+src/proforma_invoices.scailo_pb.ts:2139
 
 ___
 
@@ -268,7 +268,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1978
+src/proforma_invoices.scailo_pb.ts:2005
 
 ___
 
@@ -284,7 +284,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1971
+src/proforma_invoices.scailo_pb.ts:1998
 
 ___
 
@@ -300,7 +300,7 @@ from field: uint64 currency_id = 24;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2083
+src/proforma_invoices.scailo_pb.ts:2110
 
 ___
 
@@ -316,7 +316,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1999
+src/proforma_invoices.scailo_pb.ts:2026
 
 ___
 
@@ -332,7 +332,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2097
+src/proforma_invoices.scailo_pb.ts:2124
 
 ___
 
@@ -348,7 +348,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2062
+src/proforma_invoices.scailo_pb.ts:2089
 
 ___
 
@@ -364,7 +364,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1964
+src/proforma_invoices.scailo_pb.ts:1991
 
 ___
 
@@ -380,7 +380,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1992
+src/proforma_invoices.scailo_pb.ts:2019
 
 ___
 
@@ -396,7 +396,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1985
+src/proforma_invoices.scailo_pb.ts:2012
 
 ___
 
@@ -412,23 +412,23 @@ from field: uint64 project_id = 62;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2126
+src/proforma_invoices.scailo_pb.ts:2153
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`PROFORMA_INVOICE_REF_FROM`](../enums/PROFORMA_INVOICE_REF_FROM.md) = `PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2069
+src/proforma_invoices.scailo_pb.ts:2096
 
 ___
 
@@ -444,7 +444,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2076
+src/proforma_invoices.scailo_pb.ts:2103
 
 ___
 
@@ -460,7 +460,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2055
+src/proforma_invoices.scailo_pb.ts:2082
 
 ___
 
@@ -476,7 +476,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2006
+src/proforma_invoices.scailo_pb.ts:2033
 
 ___
 
@@ -492,7 +492,7 @@ from field: uint64 total_value_max = 81;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2140
+src/proforma_invoices.scailo_pb.ts:2167
 
 ___
 
@@ -508,7 +508,7 @@ from field: uint64 total_value_min = 80;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2133
+src/proforma_invoices.scailo_pb.ts:2160
 
 ___
 
@@ -518,7 +518,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2149
+src/proforma_invoices.scailo_pb.ts:2176
 
 ___
 
@@ -528,7 +528,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2147
+src/proforma_invoices.scailo_pb.ts:2174
 
 ___
 
@@ -538,7 +538,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2148
+src/proforma_invoices.scailo_pb.ts:2175
 
 ## Methods
 
@@ -826,7 +826,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2190
+src/proforma_invoices.scailo_pb.ts:2217
 
 ___
 
@@ -847,7 +847,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2178
+src/proforma_invoices.scailo_pb.ts:2205
 
 ___
 
@@ -868,7 +868,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2182
+src/proforma_invoices.scailo_pb.ts:2209
 
 ___
 
@@ -889,4 +889,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2186
+src/proforma_invoices.scailo_pb.ts:2213

@@ -69,7 +69,7 @@ Message\&lt;VendorInvoicesServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2690
+src/vendor_invoices.scailo_pb.ts:2717
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2667
+src/vendor_invoices.scailo_pb.ts:2694
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2674
+src/vendor_invoices.scailo_pb.ts:2701
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.VendorInvoiceItem payload = 4;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2688
+src/vendor_invoices.scailo_pb.ts:2715
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2681
+src/vendor_invoices.scailo_pb.ts:2708
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2697
+src/vendor_invoices.scailo_pb.ts:2724
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2695
+src/vendor_invoices.scailo_pb.ts:2722
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2696
+src/vendor_invoices.scailo_pb.ts:2723
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2716
+src/vendor_invoices.scailo_pb.ts:2743
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2704
+src/vendor_invoices.scailo_pb.ts:2731
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2708
+src/vendor_invoices.scailo_pb.ts:2735
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2712
+src/vendor_invoices.scailo_pb.ts:2739

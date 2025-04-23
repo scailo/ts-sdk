@@ -68,7 +68,7 @@ Message\&lt;ProformaInvoicesServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:607
+src/proforma_invoices.scailo_pb.ts:634
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: bool include_services = 10;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:605
+src/proforma_invoices.scailo_pb.ts:632
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:591
+src/proforma_invoices.scailo_pb.ts:618
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:598
+src/proforma_invoices.scailo_pb.ts:625
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:614
+src/proforma_invoices.scailo_pb.ts:641
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:612
+src/proforma_invoices.scailo_pb.ts:639
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:613
+src/proforma_invoices.scailo_pb.ts:640
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:632
+src/proforma_invoices.scailo_pb.ts:659
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:620
+src/proforma_invoices.scailo_pb.ts:647
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:624
+src/proforma_invoices.scailo_pb.ts:651
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:628
+src/proforma_invoices.scailo_pb.ts:655

@@ -80,7 +80,7 @@ Message\&lt;ProformaInvoiceItem\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1245
+src/proforma_invoices.scailo_pb.ts:1272
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1159
+src/proforma_invoices.scailo_pb.ts:1186
 
 ___
 
@@ -112,7 +112,7 @@ from field: string client_family_code = 15;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1215
+src/proforma_invoices.scailo_pb.ts:1242
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 client_quantity = 14;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1208
+src/proforma_invoices.scailo_pb.ts:1235
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1201
+src/proforma_invoices.scailo_pb.ts:1228
 
 ___
 
@@ -160,7 +160,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1145
+src/proforma_invoices.scailo_pb.ts:1172
 
 ___
 
@@ -176,7 +176,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1187
+src/proforma_invoices.scailo_pb.ts:1214
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1194
+src/proforma_invoices.scailo_pb.ts:1221
 
 ___
 
@@ -208,7 +208,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1152
+src/proforma_invoices.scailo_pb.ts:1179
 
 ___
 
@@ -224,7 +224,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1166
+src/proforma_invoices.scailo_pb.ts:1193
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 proforma_invoice_id = 10;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1180
+src/proforma_invoices.scailo_pb.ts:1207
 
 ___
 
@@ -256,7 +256,7 @@ from field: int64 round_off = 18;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1236
+src/proforma_invoices.scailo_pb.ts:1263
 
 ___
 
@@ -272,7 +272,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1243
+src/proforma_invoices.scailo_pb.ts:1270
 
 ___
 
@@ -288,7 +288,7 @@ from field: uint64 tax_group_id = 17;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1229
+src/proforma_invoices.scailo_pb.ts:1256
 
 ___
 
@@ -304,7 +304,7 @@ from field: uint64 unit_price = 16;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1222
+src/proforma_invoices.scailo_pb.ts:1249
 
 ___
 
@@ -320,7 +320,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1173
+src/proforma_invoices.scailo_pb.ts:1200
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1252
+src/proforma_invoices.scailo_pb.ts:1279
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1250
+src/proforma_invoices.scailo_pb.ts:1277
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1251
+src/proforma_invoices.scailo_pb.ts:1278
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1282
+src/proforma_invoices.scailo_pb.ts:1309
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1270
+src/proforma_invoices.scailo_pb.ts:1297
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1274
+src/proforma_invoices.scailo_pb.ts:1301
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1278
+src/proforma_invoices.scailo_pb.ts:1305

@@ -30,7 +30,7 @@ from enum value: PROFORMA_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:272
+src/proforma_invoices.scailo_pb.ts:299
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PROFORMA_INVOICE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:279
+src/proforma_invoices.scailo_pb.ts:306
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PROFORMA_INVOICE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:286
+src/proforma_invoices.scailo_pb.ts:313

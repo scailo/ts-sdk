@@ -30,7 +30,7 @@ from enum value: PROFORMA_INVOICE_BILLING_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:122
+src/proforma_invoices.scailo_pb.ts:149
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PROFORMA_INVOICE_BILLING_STATUS_BILLED = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:129
+src/proforma_invoices.scailo_pb.ts:156
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PROFORMA_INVOICE_BILLING_STATUS_UNBILLED = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:136
+src/proforma_invoices.scailo_pb.ts:163

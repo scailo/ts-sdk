@@ -80,7 +80,7 @@ Message\&lt;SalesInvoiceItem\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1210
+src/sales_invoices.scailo_pb.ts:1237
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1124
+src/sales_invoices.scailo_pb.ts:1151
 
 ___
 
@@ -112,7 +112,7 @@ from field: string client_family_code = 15;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1180
+src/sales_invoices.scailo_pb.ts:1207
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 client_quantity = 14;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1173
+src/sales_invoices.scailo_pb.ts:1200
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1166
+src/sales_invoices.scailo_pb.ts:1193
 
 ___
 
@@ -160,7 +160,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1110
+src/sales_invoices.scailo_pb.ts:1137
 
 ___
 
@@ -176,7 +176,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1152
+src/sales_invoices.scailo_pb.ts:1179
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1159
+src/sales_invoices.scailo_pb.ts:1186
 
 ___
 
@@ -208,7 +208,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1117
+src/sales_invoices.scailo_pb.ts:1144
 
 ___
 
@@ -224,7 +224,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1131
+src/sales_invoices.scailo_pb.ts:1158
 
 ___
 
@@ -240,7 +240,7 @@ from field: int64 round_off = 18;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1201
+src/sales_invoices.scailo_pb.ts:1228
 
 ___
 
@@ -256,7 +256,7 @@ from field: uint64 sales_invoice_id = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1145
+src/sales_invoices.scailo_pb.ts:1172
 
 ___
 
@@ -272,7 +272,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1208
+src/sales_invoices.scailo_pb.ts:1235
 
 ___
 
@@ -288,7 +288,7 @@ from field: uint64 tax_group_id = 17;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1194
+src/sales_invoices.scailo_pb.ts:1221
 
 ___
 
@@ -304,7 +304,7 @@ from field: uint64 unit_price = 16;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1187
+src/sales_invoices.scailo_pb.ts:1214
 
 ___
 
@@ -320,7 +320,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1138
+src/sales_invoices.scailo_pb.ts:1165
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1217
+src/sales_invoices.scailo_pb.ts:1244
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1215
+src/sales_invoices.scailo_pb.ts:1242
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1216
+src/sales_invoices.scailo_pb.ts:1243
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1247
+src/sales_invoices.scailo_pb.ts:1274
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1235
+src/sales_invoices.scailo_pb.ts:1262
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1239
+src/sales_invoices.scailo_pb.ts:1266
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1243
+src/sales_invoices.scailo_pb.ts:1270

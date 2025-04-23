@@ -67,7 +67,7 @@ Message\&lt;VendorInvoiceAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:623
+src/vendor_invoices.scailo_pb.ts:650
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string currency_uuid = 214;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:621
+src/vendor_invoices.scailo_pb.ts:648
 
 ___
 
@@ -99,7 +99,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:614
+src/vendor_invoices.scailo_pb.ts:641
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:630
+src/vendor_invoices.scailo_pb.ts:657
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:628
+src/vendor_invoices.scailo_pb.ts:655
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:629
+src/vendor_invoices.scailo_pb.ts:656
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:647
+src/vendor_invoices.scailo_pb.ts:674
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:635
+src/vendor_invoices.scailo_pb.ts:662
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:639
+src/vendor_invoices.scailo_pb.ts:666
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:643
+src/vendor_invoices.scailo_pb.ts:670

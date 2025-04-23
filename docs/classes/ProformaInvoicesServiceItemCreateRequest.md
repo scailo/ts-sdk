@@ -76,7 +76,7 @@ Message\&lt;ProformaInvoicesServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:981
+src/proforma_invoices.scailo_pb.ts:1008
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: string client_family_code = 15;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:951
+src/proforma_invoices.scailo_pb.ts:978
 
 ___
 
@@ -108,7 +108,7 @@ from field: uint64 client_quantity = 14;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:944
+src/proforma_invoices.scailo_pb.ts:971
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:937
+src/proforma_invoices.scailo_pb.ts:964
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:923
+src/proforma_invoices.scailo_pb.ts:950
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:930
+src/proforma_invoices.scailo_pb.ts:957
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 proforma_invoice_id = 10;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:916
+src/proforma_invoices.scailo_pb.ts:943
 
 ___
 
@@ -188,7 +188,7 @@ from field: int64 round_off = 18;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:972
+src/proforma_invoices.scailo_pb.ts:999
 
 ___
 
@@ -204,7 +204,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:979
+src/proforma_invoices.scailo_pb.ts:1006
 
 ___
 
@@ -220,7 +220,7 @@ from field: uint64 tax_group_id = 17;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:965
+src/proforma_invoices.scailo_pb.ts:992
 
 ___
 
@@ -236,7 +236,7 @@ from field: uint64 unit_price = 16;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:958
+src/proforma_invoices.scailo_pb.ts:985
 
 ___
 
@@ -252,7 +252,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:909
+src/proforma_invoices.scailo_pb.ts:936
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:988
+src/proforma_invoices.scailo_pb.ts:1015
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:986
+src/proforma_invoices.scailo_pb.ts:1013
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:987
+src/proforma_invoices.scailo_pb.ts:1014
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1014
+src/proforma_invoices.scailo_pb.ts:1041
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1002
+src/proforma_invoices.scailo_pb.ts:1029
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1006
+src/proforma_invoices.scailo_pb.ts:1033
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1010
+src/proforma_invoices.scailo_pb.ts:1037

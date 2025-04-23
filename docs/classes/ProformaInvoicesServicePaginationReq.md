@@ -71,7 +71,7 @@ Message\&lt;ProformaInvoicesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1578
+src/proforma_invoices.scailo_pb.ts:1605
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1548
+src/proforma_invoices.scailo_pb.ts:1575
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1541
+src/proforma_invoices.scailo_pb.ts:1568
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1555
+src/proforma_invoices.scailo_pb.ts:1582
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.PROFORMA_INVOICE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1569
+src/proforma_invoices.scailo_pb.ts:1596
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1562
+src/proforma_invoices.scailo_pb.ts:1589
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1576
+src/proforma_invoices.scailo_pb.ts:1603
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1585
+src/proforma_invoices.scailo_pb.ts:1612
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1583
+src/proforma_invoices.scailo_pb.ts:1610
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1584
+src/proforma_invoices.scailo_pb.ts:1611
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1606
+src/proforma_invoices.scailo_pb.ts:1633
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1594
+src/proforma_invoices.scailo_pb.ts:1621
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1598
+src/proforma_invoices.scailo_pb.ts:1625
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1602
+src/proforma_invoices.scailo_pb.ts:1629

@@ -79,7 +79,7 @@ Message\&lt;SalesInvoicesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:365
+src/sales_invoices.scailo_pb.ts:392
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: uint64 bank_account_id = 15;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:321
+src/sales_invoices.scailo_pb.ts:348
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 cumulative_excess_tax_amount = 20;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:356
+src/sales_invoices.scailo_pb.ts:383
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 cumulative_excess_tax_group_id = 19;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:349
+src/sales_invoices.scailo_pb.ts:376
 
 ___
 
@@ -143,7 +143,7 @@ from field: uint64 currency_id = 14;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:314
+src/sales_invoices.scailo_pb.ts:341
 
 ___
 
@@ -159,7 +159,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:272
+src/sales_invoices.scailo_pb.ts:299
 
 ___
 
@@ -175,7 +175,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:363
+src/sales_invoices.scailo_pb.ts:390
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 miscellaneous_cost = 16;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:328
+src/sales_invoices.scailo_pb.ts:355
 
 ___
 
@@ -207,23 +207,23 @@ from field: uint64 overall_discount = 17;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:335
+src/sales_invoices.scailo_pb.ts:362
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`SALES_INVOICE_REF_FROM`](../enums/SALES_INVOICE_REF_FROM.md) = `SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 12;
+from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:300
+src/sales_invoices.scailo_pb.ts:327
 
 ___
 
@@ -239,7 +239,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:307
+src/sales_invoices.scailo_pb.ts:334
 
 ___
 
@@ -255,7 +255,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:293
+src/sales_invoices.scailo_pb.ts:320
 
 ___
 
@@ -271,7 +271,7 @@ from field: int64 round_off = 18;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:342
+src/sales_invoices.scailo_pb.ts:369
 
 ___
 
@@ -287,7 +287,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:279
+src/sales_invoices.scailo_pb.ts:306
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:286
+src/sales_invoices.scailo_pb.ts:313
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:372
+src/sales_invoices.scailo_pb.ts:399
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:370
+src/sales_invoices.scailo_pb.ts:397
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:371
+src/sales_invoices.scailo_pb.ts:398
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:401
+src/sales_invoices.scailo_pb.ts:428
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:389
+src/sales_invoices.scailo_pb.ts:416
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:393
+src/sales_invoices.scailo_pb.ts:420
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:397
+src/sales_invoices.scailo_pb.ts:424

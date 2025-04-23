@@ -30,7 +30,7 @@ from enum value: SALES_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:237
+src/sales_invoices.scailo_pb.ts:264
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SALES_INVOICE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:244
+src/sales_invoices.scailo_pb.ts:271
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SALES_INVOICE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:251
+src/sales_invoices.scailo_pb.ts:278

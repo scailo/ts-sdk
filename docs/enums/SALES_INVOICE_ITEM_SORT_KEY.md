@@ -40,7 +40,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:150
+src/sales_invoices.scailo_pb.ts:177
 
 ___
 
@@ -56,7 +56,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:143
+src/sales_invoices.scailo_pb.ts:170
 
 ___
 
@@ -72,7 +72,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:157
+src/sales_invoices.scailo_pb.ts:184
 
 ___
 
@@ -88,7 +88,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:192
+src/sales_invoices.scailo_pb.ts:219
 
 ___
 
@@ -104,7 +104,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:185
+src/sales_invoices.scailo_pb.ts:212
 
 ___
 
@@ -120,7 +120,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:178
+src/sales_invoices.scailo_pb.ts:205
 
 ___
 
@@ -136,7 +136,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:129
+src/sales_invoices.scailo_pb.ts:156
 
 ___
 
@@ -152,7 +152,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:164
+src/sales_invoices.scailo_pb.ts:191
 
 ___
 
@@ -168,7 +168,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:122
+src/sales_invoices.scailo_pb.ts:149
 
 ___
 
@@ -184,7 +184,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:171
+src/sales_invoices.scailo_pb.ts:198
 
 ___
 
@@ -200,7 +200,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:136
+src/sales_invoices.scailo_pb.ts:163
 
 ___
 
@@ -216,7 +216,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:206
+src/sales_invoices.scailo_pb.ts:233
 
 ___
 
@@ -232,4 +232,4 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_UNIT_PRICE = 15;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:199
+src/sales_invoices.scailo_pb.ts:226

@@ -40,7 +40,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:185
+src/proforma_invoices.scailo_pb.ts:212
 
 ___
 
@@ -56,7 +56,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:178
+src/proforma_invoices.scailo_pb.ts:205
 
 ___
 
@@ -72,7 +72,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:192
+src/proforma_invoices.scailo_pb.ts:219
 
 ___
 
@@ -88,7 +88,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:227
+src/proforma_invoices.scailo_pb.ts:254
 
 ___
 
@@ -104,7 +104,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:220
+src/proforma_invoices.scailo_pb.ts:247
 
 ___
 
@@ -120,7 +120,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:213
+src/proforma_invoices.scailo_pb.ts:240
 
 ___
 
@@ -136,7 +136,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:164
+src/proforma_invoices.scailo_pb.ts:191
 
 ___
 
@@ -152,7 +152,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:199
+src/proforma_invoices.scailo_pb.ts:226
 
 ___
 
@@ -168,7 +168,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:157
+src/proforma_invoices.scailo_pb.ts:184
 
 ___
 
@@ -184,7 +184,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:206
+src/proforma_invoices.scailo_pb.ts:233
 
 ___
 
@@ -200,7 +200,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:171
+src/proforma_invoices.scailo_pb.ts:198
 
 ___
 
@@ -216,7 +216,7 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:241
+src/proforma_invoices.scailo_pb.ts:268
 
 ___
 
@@ -232,4 +232,4 @@ from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_UNIT_PRICE = 15;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:234
+src/proforma_invoices.scailo_pb.ts:261

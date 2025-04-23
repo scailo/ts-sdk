@@ -67,7 +67,7 @@ Message\&lt;ProformaInvoiceAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:658
+src/proforma_invoices.scailo_pb.ts:685
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string currency_uuid = 214;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:656
+src/proforma_invoices.scailo_pb.ts:683
 
 ___
 
@@ -99,7 +99,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:649
+src/proforma_invoices.scailo_pb.ts:676
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:665
+src/proforma_invoices.scailo_pb.ts:692
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:663
+src/proforma_invoices.scailo_pb.ts:690
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:664
+src/proforma_invoices.scailo_pb.ts:691
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:682
+src/proforma_invoices.scailo_pb.ts:709
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:670
+src/proforma_invoices.scailo_pb.ts:697
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:674
+src/proforma_invoices.scailo_pb.ts:701
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:678
+src/proforma_invoices.scailo_pb.ts:705

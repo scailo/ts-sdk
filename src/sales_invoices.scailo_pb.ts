@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a sales invoice can be added
+ *
+ * @generated from enum Scailo.SALES_INVOICE_REF_FROM
+ */
+export enum SALES_INVOICE_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the sales invoice originated from a sales order
+   *
+   * @generated from enum value: SALES_INVOICE_REF_FROM_SALES_ORDER = 1;
+   */
+  SALES_INVOICE_REF_FROM_SALES_ORDER = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(SALES_INVOICE_REF_FROM)
+proto3.util.setEnumType(SALES_INVOICE_REF_FROM, "Scailo.SALES_INVOICE_REF_FROM", [
+  { no: 0, name: "SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "SALES_INVOICE_REF_FROM_SALES_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.SALES_INVOICE_SORT_KEY
@@ -295,9 +322,9 @@ export class SalesInvoicesServiceCreateRequest extends Message<SalesInvoicesServ
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -374,7 +401,7 @@ export class SalesInvoicesServiceCreateRequest extends Message<SalesInvoicesServ
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -722,9 +749,9 @@ export class SalesInvoice extends Message<SalesInvoice> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -827,7 +854,7 @@ export class SalesInvoice extends Message<SalesInvoice> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1443,9 +1470,9 @@ export class SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest extends Me
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1469,7 +1496,7 @@ export class SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest extends Me
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1782,9 +1809,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1877,7 +1904,7 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2021,9 +2048,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2112,7 +2139,7 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2207,9 +2234,9 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2249,7 +2276,7 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

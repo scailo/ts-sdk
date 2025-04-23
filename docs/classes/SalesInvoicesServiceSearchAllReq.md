@@ -77,7 +77,7 @@ Message\&lt;SalesInvoicesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2236
+src/sales_invoices.scailo_pb.ts:2263
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2234
+src/sales_invoices.scailo_pb.ts:2261
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2227
+src/sales_invoices.scailo_pb.ts:2254
 
 ___
 
@@ -126,7 +126,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2163
+src/sales_invoices.scailo_pb.ts:2190
 
 ___
 
@@ -142,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2191
+src/sales_invoices.scailo_pb.ts:2218
 
 ___
 
@@ -158,7 +158,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2156
+src/sales_invoices.scailo_pb.ts:2183
 
 ___
 
@@ -174,23 +174,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2170
+src/sales_invoices.scailo_pb.ts:2197
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`SALES_INVOICE_REF_FROM`](../enums/SALES_INVOICE_REF_FROM.md) = `SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2212
+src/sales_invoices.scailo_pb.ts:2239
 
 ___
 
@@ -206,7 +206,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2219
+src/sales_invoices.scailo_pb.ts:2246
 
 ___
 
@@ -222,7 +222,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2205
+src/sales_invoices.scailo_pb.ts:2232
 
 ___
 
@@ -238,7 +238,7 @@ from field: Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2184
+src/sales_invoices.scailo_pb.ts:2211
 
 ___
 
@@ -254,7 +254,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2177
+src/sales_invoices.scailo_pb.ts:2204
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2198
+src/sales_invoices.scailo_pb.ts:2225
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2243
+src/sales_invoices.scailo_pb.ts:2270
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2241
+src/sales_invoices.scailo_pb.ts:2268
 
 ___
 
@@ -300,7 +300,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2242
+src/sales_invoices.scailo_pb.ts:2269
 
 ## Methods
 
@@ -588,7 +588,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2270
+src/sales_invoices.scailo_pb.ts:2297
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2258
+src/sales_invoices.scailo_pb.ts:2285
 
 ___
 
@@ -630,7 +630,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2262
+src/sales_invoices.scailo_pb.ts:2289
 
 ___
 
@@ -651,4 +651,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2266
+src/sales_invoices.scailo_pb.ts:2293

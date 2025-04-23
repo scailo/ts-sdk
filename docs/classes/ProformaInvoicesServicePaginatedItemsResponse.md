@@ -69,7 +69,7 @@ Message\&lt;ProformaInvoicesServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2539
+src/proforma_invoices.scailo_pb.ts:2566
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2516
+src/proforma_invoices.scailo_pb.ts:2543
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2523
+src/proforma_invoices.scailo_pb.ts:2550
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.ProformaInvoiceItem payload = 4;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2537
+src/proforma_invoices.scailo_pb.ts:2564
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2530
+src/proforma_invoices.scailo_pb.ts:2557
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2546
+src/proforma_invoices.scailo_pb.ts:2573
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2544
+src/proforma_invoices.scailo_pb.ts:2571
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2545
+src/proforma_invoices.scailo_pb.ts:2572
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2565
+src/proforma_invoices.scailo_pb.ts:2592
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2553
+src/proforma_invoices.scailo_pb.ts:2580
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2557
+src/proforma_invoices.scailo_pb.ts:2584
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2561
+src/proforma_invoices.scailo_pb.ts:2588

@@ -94,7 +94,7 @@ Message\&lt;SalesInvoicesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1853
+src/sales_invoices.scailo_pb.ts:1880
 
 ## Properties
 
@@ -110,7 +110,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1745
+src/sales_invoices.scailo_pb.ts:1772
 
 ___
 
@@ -126,7 +126,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1738
+src/sales_invoices.scailo_pb.ts:1765
 
 ___
 
@@ -142,7 +142,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1731
+src/sales_invoices.scailo_pb.ts:1758
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1752
+src/sales_invoices.scailo_pb.ts:1779
 
 ___
 
@@ -174,7 +174,7 @@ from field: uint64 bank_account_id = 25;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1808
+src/sales_invoices.scailo_pb.ts:1835
 
 ___
 
@@ -190,7 +190,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1830
+src/sales_invoices.scailo_pb.ts:1857
 
 ___
 
@@ -206,7 +206,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1766
+src/sales_invoices.scailo_pb.ts:1793
 
 ___
 
@@ -222,7 +222,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1759
+src/sales_invoices.scailo_pb.ts:1786
 
 ___
 
@@ -239,7 +239,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1823
+src/sales_invoices.scailo_pb.ts:1850
 
 ___
 
@@ -255,7 +255,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1661
+src/sales_invoices.scailo_pb.ts:1688
 
 ___
 
@@ -271,7 +271,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1696
+src/sales_invoices.scailo_pb.ts:1723
 
 ___
 
@@ -287,7 +287,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1689
+src/sales_invoices.scailo_pb.ts:1716
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 currency_id = 24;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1801
+src/sales_invoices.scailo_pb.ts:1828
 
 ___
 
@@ -319,7 +319,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1717
+src/sales_invoices.scailo_pb.ts:1744
 
 ___
 
@@ -335,7 +335,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1815
+src/sales_invoices.scailo_pb.ts:1842
 
 ___
 
@@ -351,7 +351,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1780
+src/sales_invoices.scailo_pb.ts:1807
 
 ___
 
@@ -367,7 +367,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1654
+src/sales_invoices.scailo_pb.ts:1681
 
 ___
 
@@ -383,7 +383,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1710
+src/sales_invoices.scailo_pb.ts:1737
 
 ___
 
@@ -399,7 +399,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1703
+src/sales_invoices.scailo_pb.ts:1730
 
 ___
 
@@ -415,7 +415,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1668
+src/sales_invoices.scailo_pb.ts:1695
 
 ___
 
@@ -431,23 +431,23 @@ from field: uint64 project_id = 52;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1837
+src/sales_invoices.scailo_pb.ts:1864
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`SALES_INVOICE_REF_FROM`](../enums/SALES_INVOICE_REF_FROM.md) = `SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1787
+src/sales_invoices.scailo_pb.ts:1814
 
 ___
 
@@ -463,7 +463,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1794
+src/sales_invoices.scailo_pb.ts:1821
 
 ___
 
@@ -479,7 +479,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1773
+src/sales_invoices.scailo_pb.ts:1800
 
 ___
 
@@ -495,7 +495,7 @@ from field: Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1682
+src/sales_invoices.scailo_pb.ts:1709
 
 ___
 
@@ -511,7 +511,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1675
+src/sales_invoices.scailo_pb.ts:1702
 
 ___
 
@@ -527,7 +527,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1724
+src/sales_invoices.scailo_pb.ts:1751
 
 ___
 
@@ -543,7 +543,7 @@ from field: uint64 total_value_max = 71;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1851
+src/sales_invoices.scailo_pb.ts:1878
 
 ___
 
@@ -559,7 +559,7 @@ from field: uint64 total_value_min = 70;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1844
+src/sales_invoices.scailo_pb.ts:1871
 
 ___
 
@@ -569,7 +569,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1860
+src/sales_invoices.scailo_pb.ts:1887
 
 ___
 
@@ -579,7 +579,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1858
+src/sales_invoices.scailo_pb.ts:1885
 
 ___
 
@@ -589,7 +589,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1859
+src/sales_invoices.scailo_pb.ts:1886
 
 ## Methods
 
@@ -877,7 +877,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1904
+src/sales_invoices.scailo_pb.ts:1931
 
 ___
 
@@ -898,7 +898,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1892
+src/sales_invoices.scailo_pb.ts:1919
 
 ___
 
@@ -919,7 +919,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1896
+src/sales_invoices.scailo_pb.ts:1923
 
 ___
 
@@ -940,4 +940,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1900
+src/sales_invoices.scailo_pb.ts:1927
