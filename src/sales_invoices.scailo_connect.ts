@@ -575,7 +575,7 @@ export const SalesInvoicesService = {
      */
     viewDispatchedStatistics: {
       name: "ViewDispatchedStatistics",
-      I: Identifier,
+      I: IdentifierUUID,
       O: SalesInvoiceDispatchedStatisticsList,
       kind: MethodKind.Unary,
     },

@@ -569,7 +569,7 @@ export declare const SalesInvoicesService: {
          */
         readonly viewDispatchedStatistics: {
             readonly name: "ViewDispatchedStatistics";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof SalesInvoiceDispatchedStatisticsList;
             readonly kind: MethodKind.Unary;
         };

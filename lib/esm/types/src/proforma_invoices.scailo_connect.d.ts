@@ -519,13 +519,13 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View the associated sales invoice ID that is denoted by the identifier in the response for the goods dispatch that is denoted by the identifier in the request
+         * View the associated sales invoice information that is denoted by the identifier in the response for the proforma invoice that is denoted by the identifier UUID in the request
          *
-         * @generated from rpc Scailo.ProformaInvoicesService.ViewAssociatedSalesInvoiceID
+         * @generated from rpc Scailo.ProformaInvoicesService.ViewAssociatedSalesInvoiceInfo
          */
-        readonly viewAssociatedSalesInvoiceID: {
-            readonly name: "ViewAssociatedSalesInvoiceID";
-            readonly I: typeof Identifier;
+        readonly viewAssociatedSalesInvoiceInfo: {
+            readonly name: "ViewAssociatedSalesInvoiceInfo";
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -536,7 +536,7 @@ export declare const ProformaInvoicesService: {
          */
         readonly isBilled: {
             readonly name: "IsBilled";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
