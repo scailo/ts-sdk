@@ -547,7 +547,7 @@ export declare const VendorInvoicesService: {
          */
         readonly viewReceiptStatistics: {
             readonly name: "ViewReceiptStatistics";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof VendorInvoiceReceiptStatisticsList;
             readonly kind: MethodKind.Unary;
         };

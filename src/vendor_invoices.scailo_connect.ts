@@ -553,7 +553,7 @@ export const VendorInvoicesService = {
      */
     viewReceiptStatistics: {
       name: "ViewReceiptStatistics",
-      I: Identifier,
+      I: IdentifierUUID,
       O: VendorInvoiceReceiptStatisticsList,
       kind: MethodKind.Unary,
     },
