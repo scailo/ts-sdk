@@ -205,7 +205,7 @@ export declare const OutwardJobsService: {
          */
         readonly isCompletable: {
             readonly name: "IsCompletable";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -216,7 +216,7 @@ export declare const OutwardJobsService: {
          */
         readonly isOrdered: {
             readonly name: "IsOrdered";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -227,7 +227,7 @@ export declare const OutwardJobsService: {
          */
         readonly isDispatched: {
             readonly name: "IsDispatched";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -716,13 +716,13 @@ export declare const OutwardJobsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all purchase order IDs that are associated with the given outward job ID
+         * View all purchase order IDs that are associated with the given outward job UUID
          *
          * @generated from rpc Scailo.OutwardJobsService.ViewAssociatedPurchaseOrderIDs
          */
         readonly viewAssociatedPurchaseOrderIDs: {
             readonly name: "ViewAssociatedPurchaseOrderIDs";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };

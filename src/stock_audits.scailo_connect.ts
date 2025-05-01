@@ -200,7 +200,7 @@ export const StockAuditsService = {
      */
     isCompletable: {
       name: "IsCompletable",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },

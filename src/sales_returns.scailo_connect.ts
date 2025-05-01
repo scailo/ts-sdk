@@ -200,7 +200,7 @@ export const SalesReturnsService = {
      */
     isCompletable: {
       name: "IsCompletable",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },
@@ -486,7 +486,7 @@ export const SalesReturnsService = {
      */
     isBilled: {
       name: "IsBilled",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },

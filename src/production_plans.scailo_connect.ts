@@ -211,7 +211,7 @@ export const ProductionPlansService = {
      */
     isCompletable: {
       name: "IsCompletable",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },

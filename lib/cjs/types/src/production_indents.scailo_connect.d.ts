@@ -205,7 +205,7 @@ export declare const ProductionIndentsService: {
          */
         readonly isCompletable: {
             readonly name: "IsCompletable";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };

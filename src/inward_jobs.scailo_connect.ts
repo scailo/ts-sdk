@@ -211,7 +211,7 @@ export const InwardJobsService = {
      */
     isCompletable: {
       name: "IsCompletable",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },
@@ -222,7 +222,7 @@ export const InwardJobsService = {
      */
     isOrdered: {
       name: "IsOrdered",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },
@@ -233,7 +233,7 @@ export const InwardJobsService = {
      */
     isReceived: {
       name: "IsReceived",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },
@@ -722,13 +722,13 @@ export const InwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all sales order IDs that are associated with the given inward job ID
+     * View all sales order IDs that are associated with the given inward job UUID
      *
      * @generated from rpc Scailo.InwardJobsService.ViewAssociatedSalesOrderIDs
      */
     viewAssociatedSalesOrderIDs: {
       name: "ViewAssociatedSalesOrderIDs",
-      I: Identifier,
+      I: IdentifierUUID,
       O: IdentifiersList,
       kind: MethodKind.Unary,
     },

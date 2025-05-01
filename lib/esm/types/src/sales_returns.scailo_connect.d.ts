@@ -194,7 +194,7 @@ export declare const SalesReturnsService: {
          */
         readonly isCompletable: {
             readonly name: "IsCompletable";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -480,7 +480,7 @@ export declare const SalesReturnsService: {
          */
         readonly isBilled: {
             readonly name: "IsBilled";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
