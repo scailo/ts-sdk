@@ -1,4 +1,4 @@
-import { InwardJob, InwardJobAncillaryParameters, InwardJobContact, InwardJobContactsList, InwardJobInwardItem, InwardJobInwardItemHistoryRequest, InwardJobInwardItemProspectiveInfoRequest, InwardJobInwardItemsSearchRequest, InwardJobOutwardItem, InwardJobOutwardItemHistoryRequest, InwardJobOutwardItemProspectiveInfoRequest, InwardJobOutwardItemsSearchRequest, InwardJobsInwardItemsList, InwardJobsList, InwardJobsOutwardItemsList, InwardJobsServiceAutofillRequest, InwardJobsServiceContactCreateRequest, InwardJobsServiceCountReq, InwardJobsServiceCreateRequest, InwardJobsServiceFilterReq, InwardJobsServiceInwardItemCreateRequest, InwardJobsServiceInwardItemUpdateRequest, InwardJobsServiceMultipleInwardItemsCreateRequest, InwardJobsServiceMultipleOutwardItemsCreateRequest, InwardJobsServiceOutwardItemCreateRequest, InwardJobsServiceOutwardItemUpdateRequest, InwardJobsServicePaginatedInwardItemsResponse, InwardJobsServicePaginatedOutwardItemsResponse, InwardJobsServicePaginationReq, InwardJobsServicePaginationResponse, InwardJobsServiceSearchAllReq, InwardJobsServiceUpdateRequest } from "./inward_jobs.scailo_pb.js";
+import { InwardJob, InwardJobAncillaryParameters, InwardJobContact, InwardJobContactsList, InwardJobInwardInventoryMatchList, InwardJobInwardItem, InwardJobInwardItemHistoryRequest, InwardJobInwardItemProspectiveInfoRequest, InwardJobInwardItemsSearchRequest, InwardJobOutwardInventoryMatchList, InwardJobOutwardItem, InwardJobOutwardItemHistoryRequest, InwardJobOutwardItemProspectiveInfoRequest, InwardJobOutwardItemsSearchRequest, InwardJobsInwardItemsList, InwardJobsList, InwardJobsOutwardItemsList, InwardJobsServiceAutofillRequest, InwardJobsServiceContactCreateRequest, InwardJobsServiceCountReq, InwardJobsServiceCreateRequest, InwardJobsServiceFilterReq, InwardJobsServiceInwardItemCreateRequest, InwardJobsServiceInwardItemUpdateRequest, InwardJobsServiceMultipleInwardItemsCreateRequest, InwardJobsServiceMultipleOutwardItemsCreateRequest, InwardJobsServiceOutwardItemCreateRequest, InwardJobsServiceOutwardItemUpdateRequest, InwardJobsServicePaginatedInwardItemsResponse, InwardJobsServicePaginatedOutwardItemsResponse, InwardJobsServicePaginationReq, InwardJobsServicePaginationResponse, InwardJobsServiceSearchAllReq, InwardJobsServiceUpdateRequest } from "./inward_jobs.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -727,6 +727,17 @@ export declare const InwardJobsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View Inward Inventory Match of all the inward families of the given inward job
+         *
+         * @generated from rpc Scailo.InwardJobsService.ViewInwardInventoryMatch
+         */
+        readonly viewInwardInventoryMatch: {
+            readonly name: "ViewInwardInventoryMatch";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof InwardJobInwardInventoryMatchList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View prospective inward items for the given inward job (all families that could be purchased)
          *
          * @generated from rpc Scailo.InwardJobsService.ViewProspectiveInwardFamilies
@@ -757,6 +768,17 @@ export declare const InwardJobsService: {
             readonly name: "ViewProspectiveInwardJobInwardItem";
             readonly I: typeof InwardJobInwardItemProspectiveInfoRequest;
             readonly O: typeof InwardJobsServiceInwardItemCreateRequest;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View Outward Inventory Match of all the outward families of the given inward job
+         *
+         * @generated from rpc Scailo.InwardJobsService.ViewOutwardInventoryMatch
+         */
+        readonly viewOutwardInventoryMatch: {
+            readonly name: "ViewOutwardInventoryMatch";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof InwardJobOutwardInventoryMatchList;
             readonly kind: MethodKind.Unary;
         };
         /**

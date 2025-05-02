@@ -2178,4 +2178,134 @@ export declare class OutwardJobContactsList extends Message<OutwardJobContactsLi
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobContactsList;
     static equals(a: OutwardJobContactsList | PlainMessage<OutwardJobContactsList> | undefined, b: OutwardJobContactsList | PlainMessage<OutwardJobContactsList> | undefined): boolean;
 }
+/**
+ *
+ * Describes the parameters that are part of an outward job's inward inventory match
+ *
+ * @generated from message Scailo.OutwardJobInwardInventoryMatch
+ */
+export declare class OutwardJobInwardInventoryMatch extends Message<OutwardJobInwardInventoryMatch> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the job quantity
+     *
+     * @generated from field: uint64 job_qty_primary = 10;
+     */
+    jobQtyPrimary: bigint;
+    /**
+     * Stores the ordered quantity
+     *
+     * @generated from field: uint64 ordered_qty_primary = 20;
+     */
+    orderedQtyPrimary: bigint;
+    /**
+     * Stores the received quantity
+     *
+     * @generated from field: uint64 received_qty_primary = 30;
+     */
+    receivedQtyPrimary: bigint;
+    /**
+     * Stores the returned quantity
+     *
+     * @generated from field: uint64 returned_qty_primary = 40;
+     */
+    returnedQtyPrimary: bigint;
+    constructor(data?: PartialMessage<OutwardJobInwardInventoryMatch>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.OutwardJobInwardInventoryMatch";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobInwardInventoryMatch;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobInwardInventoryMatch;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobInwardInventoryMatch;
+    static equals(a: OutwardJobInwardInventoryMatch | PlainMessage<OutwardJobInwardInventoryMatch> | undefined, b: OutwardJobInwardInventoryMatch | PlainMessage<OutwardJobInwardInventoryMatch> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of inward inventory match families
+ *
+ * @generated from message Scailo.OutwardJobInwardInventoryMatchList
+ */
+export declare class OutwardJobInwardInventoryMatchList extends Message<OutwardJobInwardInventoryMatchList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.OutwardJobInwardInventoryMatch list = 1;
+     */
+    list: OutwardJobInwardInventoryMatch[];
+    constructor(data?: PartialMessage<OutwardJobInwardInventoryMatchList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.OutwardJobInwardInventoryMatchList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobInwardInventoryMatchList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobInwardInventoryMatchList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobInwardInventoryMatchList;
+    static equals(a: OutwardJobInwardInventoryMatchList | PlainMessage<OutwardJobInwardInventoryMatchList> | undefined, b: OutwardJobInwardInventoryMatchList | PlainMessage<OutwardJobInwardInventoryMatchList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are part of an outward job's outward inventory match
+ *
+ * @generated from message Scailo.OutwardJobOutwardInventoryMatch
+ */
+export declare class OutwardJobOutwardInventoryMatch extends Message<OutwardJobOutwardInventoryMatch> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the job quantity
+     *
+     * @generated from field: uint64 job_qty_primary = 10;
+     */
+    jobQtyPrimary: bigint;
+    /**
+     * Stores the issued quantity
+     *
+     * @generated from field: uint64 issued_qty_primary = 20;
+     */
+    issuedQtyPrimary: bigint;
+    /**
+     * Stores the returned quantity
+     *
+     * @generated from field: uint64 returned_qty_primary = 30;
+     */
+    returnedQtyPrimary: bigint;
+    constructor(data?: PartialMessage<OutwardJobOutwardInventoryMatch>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.OutwardJobOutwardInventoryMatch";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobOutwardInventoryMatch;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobOutwardInventoryMatch;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobOutwardInventoryMatch;
+    static equals(a: OutwardJobOutwardInventoryMatch | PlainMessage<OutwardJobOutwardInventoryMatch> | undefined, b: OutwardJobOutwardInventoryMatch | PlainMessage<OutwardJobOutwardInventoryMatch> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of outward inventory match families
+ *
+ * @generated from message Scailo.OutwardJobOutwardInventoryMatchList
+ */
+export declare class OutwardJobOutwardInventoryMatchList extends Message<OutwardJobOutwardInventoryMatchList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.OutwardJobOutwardInventoryMatch list = 1;
+     */
+    list: OutwardJobOutwardInventoryMatch[];
+    constructor(data?: PartialMessage<OutwardJobOutwardInventoryMatchList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.OutwardJobOutwardInventoryMatchList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobOutwardInventoryMatchList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobOutwardInventoryMatchList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobOutwardInventoryMatchList;
+    static equals(a: OutwardJobOutwardInventoryMatchList | PlainMessage<OutwardJobOutwardInventoryMatchList> | undefined, b: OutwardJobOutwardInventoryMatchList | PlainMessage<OutwardJobOutwardInventoryMatchList> | undefined): boolean;
+}
 //# sourceMappingURL=outward_jobs.scailo_pb.d.ts.map

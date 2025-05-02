@@ -3337,3 +3337,227 @@ export class OutwardJobContactsList extends Message<OutwardJobContactsList> {
   }
 }
 
+/**
+ *
+ * Describes the parameters that are part of an outward job's inward inventory match
+ *
+ * @generated from message Scailo.OutwardJobInwardInventoryMatch
+ */
+export class OutwardJobInwardInventoryMatch extends Message<OutwardJobInwardInventoryMatch> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the job quantity
+   *
+   * @generated from field: uint64 job_qty_primary = 10;
+   */
+  jobQtyPrimary = protoInt64.zero;
+
+  /**
+   * Stores the ordered quantity
+   *
+   * @generated from field: uint64 ordered_qty_primary = 20;
+   */
+  orderedQtyPrimary = protoInt64.zero;
+
+  /**
+   * Stores the received quantity
+   *
+   * @generated from field: uint64 received_qty_primary = 30;
+   */
+  receivedQtyPrimary = protoInt64.zero;
+
+  /**
+   * Stores the returned quantity
+   *
+   * @generated from field: uint64 returned_qty_primary = 40;
+   */
+  returnedQtyPrimary = protoInt64.zero;
+
+  constructor(data?: PartialMessage<OutwardJobInwardInventoryMatch>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.OutwardJobInwardInventoryMatch";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "job_qty_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "ordered_qty_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "received_qty_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 40, name: "returned_qty_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobInwardInventoryMatch {
+    return new OutwardJobInwardInventoryMatch().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobInwardInventoryMatch {
+    return new OutwardJobInwardInventoryMatch().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobInwardInventoryMatch {
+    return new OutwardJobInwardInventoryMatch().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: OutwardJobInwardInventoryMatch | PlainMessage<OutwardJobInwardInventoryMatch> | undefined, b: OutwardJobInwardInventoryMatch | PlainMessage<OutwardJobInwardInventoryMatch> | undefined): boolean {
+    return proto3.util.equals(OutwardJobInwardInventoryMatch, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of inward inventory match families
+ *
+ * @generated from message Scailo.OutwardJobInwardInventoryMatchList
+ */
+export class OutwardJobInwardInventoryMatchList extends Message<OutwardJobInwardInventoryMatchList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.OutwardJobInwardInventoryMatch list = 1;
+   */
+  list: OutwardJobInwardInventoryMatch[] = [];
+
+  constructor(data?: PartialMessage<OutwardJobInwardInventoryMatchList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.OutwardJobInwardInventoryMatchList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: OutwardJobInwardInventoryMatch, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobInwardInventoryMatchList {
+    return new OutwardJobInwardInventoryMatchList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobInwardInventoryMatchList {
+    return new OutwardJobInwardInventoryMatchList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobInwardInventoryMatchList {
+    return new OutwardJobInwardInventoryMatchList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: OutwardJobInwardInventoryMatchList | PlainMessage<OutwardJobInwardInventoryMatchList> | undefined, b: OutwardJobInwardInventoryMatchList | PlainMessage<OutwardJobInwardInventoryMatchList> | undefined): boolean {
+    return proto3.util.equals(OutwardJobInwardInventoryMatchList, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that are part of an outward job's outward inventory match
+ *
+ * @generated from message Scailo.OutwardJobOutwardInventoryMatch
+ */
+export class OutwardJobOutwardInventoryMatch extends Message<OutwardJobOutwardInventoryMatch> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the job quantity
+   *
+   * @generated from field: uint64 job_qty_primary = 10;
+   */
+  jobQtyPrimary = protoInt64.zero;
+
+  /**
+   * Stores the issued quantity
+   *
+   * @generated from field: uint64 issued_qty_primary = 20;
+   */
+  issuedQtyPrimary = protoInt64.zero;
+
+  /**
+   * Stores the returned quantity
+   *
+   * @generated from field: uint64 returned_qty_primary = 30;
+   */
+  returnedQtyPrimary = protoInt64.zero;
+
+  constructor(data?: PartialMessage<OutwardJobOutwardInventoryMatch>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.OutwardJobOutwardInventoryMatch";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "job_qty_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "issued_qty_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "returned_qty_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobOutwardInventoryMatch {
+    return new OutwardJobOutwardInventoryMatch().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobOutwardInventoryMatch {
+    return new OutwardJobOutwardInventoryMatch().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobOutwardInventoryMatch {
+    return new OutwardJobOutwardInventoryMatch().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: OutwardJobOutwardInventoryMatch | PlainMessage<OutwardJobOutwardInventoryMatch> | undefined, b: OutwardJobOutwardInventoryMatch | PlainMessage<OutwardJobOutwardInventoryMatch> | undefined): boolean {
+    return proto3.util.equals(OutwardJobOutwardInventoryMatch, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of outward inventory match families
+ *
+ * @generated from message Scailo.OutwardJobOutwardInventoryMatchList
+ */
+export class OutwardJobOutwardInventoryMatchList extends Message<OutwardJobOutwardInventoryMatchList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.OutwardJobOutwardInventoryMatch list = 1;
+   */
+  list: OutwardJobOutwardInventoryMatch[] = [];
+
+  constructor(data?: PartialMessage<OutwardJobOutwardInventoryMatchList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.OutwardJobOutwardInventoryMatchList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: OutwardJobOutwardInventoryMatch, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobOutwardInventoryMatchList {
+    return new OutwardJobOutwardInventoryMatchList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OutwardJobOutwardInventoryMatchList {
+    return new OutwardJobOutwardInventoryMatchList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OutwardJobOutwardInventoryMatchList {
+    return new OutwardJobOutwardInventoryMatchList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: OutwardJobOutwardInventoryMatchList | PlainMessage<OutwardJobOutwardInventoryMatchList> | undefined, b: OutwardJobOutwardInventoryMatchList | PlainMessage<OutwardJobOutwardInventoryMatchList> | undefined): boolean {
+    return proto3.util.equals(OutwardJobOutwardInventoryMatchList, a, b);
+  }
+}
+

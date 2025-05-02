@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { OutwardJob, OutwardJobAncillaryParameters, OutwardJobContact, OutwardJobContactsList, OutwardJobInwardItem, OutwardJobInwardItemHistoryRequest, OutwardJobInwardItemProspectiveInfoRequest, OutwardJobInwardItemsSearchRequest, OutwardJobOutwardItem, OutwardJobOutwardItemHistoryRequest, OutwardJobOutwardItemProspectiveInfoRequest, OutwardJobOutwardItemsSearchRequest, OutwardJobsInwardItemsList, OutwardJobsList, OutwardJobsOutwardItemsList, OutwardJobsServiceAutofillRequest, OutwardJobsServiceContactCreateRequest, OutwardJobsServiceCountReq, OutwardJobsServiceCreateRequest, OutwardJobsServiceFilterReq, OutwardJobsServiceInwardItemCreateRequest, OutwardJobsServiceInwardItemUpdateRequest, OutwardJobsServiceMultipleInwardItemsCreateRequest, OutwardJobsServiceMultipleOutwardItemsCreateRequest, OutwardJobsServiceOutwardItemCreateRequest, OutwardJobsServiceOutwardItemUpdateRequest, OutwardJobsServicePaginatedInwardItemsResponse, OutwardJobsServicePaginatedOutwardItemsResponse, OutwardJobsServicePaginationReq, OutwardJobsServicePaginationResponse, OutwardJobsServiceSearchAllReq, OutwardJobsServiceUpdateRequest } from "./outward_jobs.scailo_pb.js";
+import { OutwardJob, OutwardJobAncillaryParameters, OutwardJobContact, OutwardJobContactsList, OutwardJobInwardInventoryMatchList, OutwardJobInwardItem, OutwardJobInwardItemHistoryRequest, OutwardJobInwardItemProspectiveInfoRequest, OutwardJobInwardItemsSearchRequest, OutwardJobOutwardInventoryMatchList, OutwardJobOutwardItem, OutwardJobOutwardItemHistoryRequest, OutwardJobOutwardItemProspectiveInfoRequest, OutwardJobOutwardItemsSearchRequest, OutwardJobsInwardItemsList, OutwardJobsList, OutwardJobsOutwardItemsList, OutwardJobsServiceAutofillRequest, OutwardJobsServiceContactCreateRequest, OutwardJobsServiceCountReq, OutwardJobsServiceCreateRequest, OutwardJobsServiceFilterReq, OutwardJobsServiceInwardItemCreateRequest, OutwardJobsServiceInwardItemUpdateRequest, OutwardJobsServiceMultipleInwardItemsCreateRequest, OutwardJobsServiceMultipleOutwardItemsCreateRequest, OutwardJobsServiceOutwardItemCreateRequest, OutwardJobsServiceOutwardItemUpdateRequest, OutwardJobsServicePaginatedInwardItemsResponse, OutwardJobsServicePaginatedOutwardItemsResponse, OutwardJobsServicePaginationReq, OutwardJobsServicePaginationResponse, OutwardJobsServiceSearchAllReq, OutwardJobsServiceUpdateRequest } from "./outward_jobs.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -733,6 +733,17 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View Inward Inventory Match of all the inward families of the given outward job
+     *
+     * @generated from rpc Scailo.OutwardJobsService.ViewInwardInventoryMatch
+     */
+    viewInwardInventoryMatch: {
+      name: "ViewInwardInventoryMatch",
+      I: IdentifierUUID,
+      O: OutwardJobInwardInventoryMatchList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View prospective inward items for the given outward job
      *
      * @generated from rpc Scailo.OutwardJobsService.ViewProspectiveInwardFamilies
@@ -763,6 +774,17 @@ export const OutwardJobsService = {
       name: "ViewProspectiveOutwardJobInwardItem",
       I: OutwardJobInwardItemProspectiveInfoRequest,
       O: OutwardJobsServiceInwardItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View Outward Inventory Match of all the outward families of the given outward job
+     *
+     * @generated from rpc Scailo.OutwardJobsService.ViewOutwardInventoryMatch
+     */
+    viewOutwardInventoryMatch: {
+      name: "ViewOutwardInventoryMatch",
+      I: IdentifierUUID,
+      O: OutwardJobOutwardInventoryMatchList,
       kind: MethodKind.Unary,
     },
     /**
