@@ -733,17 +733,6 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View Inward Inventory Match of all the inward families of the given outward job
-     *
-     * @generated from rpc Scailo.OutwardJobsService.ViewInwardInventoryMatch
-     */
-    viewInwardInventoryMatch: {
-      name: "ViewInwardInventoryMatch",
-      I: IdentifierUUID,
-      O: OutwardJobInwardInventoryMatchList,
-      kind: MethodKind.Unary,
-    },
-    /**
      * View prospective inward items for the given outward job
      *
      * @generated from rpc Scailo.OutwardJobsService.ViewProspectiveInwardFamilies
@@ -777,14 +766,14 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View Outward Inventory Match of all the outward families of the given outward job
+     * View Inward Inventory Match of all the inward families of the given outward job
      *
-     * @generated from rpc Scailo.OutwardJobsService.ViewOutwardInventoryMatch
+     * @generated from rpc Scailo.OutwardJobsService.ViewInwardInventoryMatch
      */
-    viewOutwardInventoryMatch: {
-      name: "ViewOutwardInventoryMatch",
+    viewInwardInventoryMatch: {
+      name: "ViewInwardInventoryMatch",
       I: IdentifierUUID,
-      O: OutwardJobOutwardInventoryMatchList,
+      O: OutwardJobInwardInventoryMatchList,
       kind: MethodKind.Unary,
     },
     /**
@@ -818,6 +807,17 @@ export const OutwardJobsService = {
       name: "ViewProspectiveOutwardJobOutwardItem",
       I: OutwardJobOutwardItemProspectiveInfoRequest,
       O: OutwardJobsServiceOutwardItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View Outward Inventory Match of all the outward families of the given outward job
+     *
+     * @generated from rpc Scailo.OutwardJobsService.ViewOutwardInventoryMatch
+     */
+    viewOutwardInventoryMatch: {
+      name: "ViewOutwardInventoryMatch",
+      I: IdentifierUUID,
+      O: OutwardJobOutwardInventoryMatchList,
       kind: MethodKind.Unary,
     },
     /**

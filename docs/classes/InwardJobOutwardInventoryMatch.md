@@ -70,7 +70,7 @@ Message\&lt;InwardJobOutwardInventoryMatch\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3732
+src/inward_jobs.scailo_pb.ts:3756
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 dispatched_qty_primary = 30;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3723
+src/inward_jobs.scailo_pb.ts:3747
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3702
+src/inward_jobs.scailo_pb.ts:3726
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 job_qty_primary = 10;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3709
+src/inward_jobs.scailo_pb.ts:3733
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 ordered_qty_primary = 20;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3716
+src/inward_jobs.scailo_pb.ts:3740
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 returned_qty_primary = 40;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3730
+src/inward_jobs.scailo_pb.ts:3754
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3739
+src/inward_jobs.scailo_pb.ts:3763
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3737
+src/inward_jobs.scailo_pb.ts:3761
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3738
+src/inward_jobs.scailo_pb.ts:3762
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3759
+src/inward_jobs.scailo_pb.ts:3783
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3747
+src/inward_jobs.scailo_pb.ts:3771
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3751
+src/inward_jobs.scailo_pb.ts:3775
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3755
+src/inward_jobs.scailo_pb.ts:3779

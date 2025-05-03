@@ -73,7 +73,7 @@ Message\&lt;InwardJobContact\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3505
+src/inward_jobs.scailo_pb.ts:3529
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3468
+src/inward_jobs.scailo_pb.ts:3492
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3496
+src/inward_jobs.scailo_pb.ts:3520
 
 ___
 
@@ -121,7 +121,7 @@ from field: string associate_uuid = 211;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3503
+src/inward_jobs.scailo_pb.ts:3527
 
 ___
 
@@ -137,7 +137,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3454
+src/inward_jobs.scailo_pb.ts:3478
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 inward_job_id = 10;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3489
+src/inward_jobs.scailo_pb.ts:3513
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3461
+src/inward_jobs.scailo_pb.ts:3485
 
 ___
 
@@ -185,7 +185,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3475
+src/inward_jobs.scailo_pb.ts:3499
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3482
+src/inward_jobs.scailo_pb.ts:3506
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3512
+src/inward_jobs.scailo_pb.ts:3536
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3510
+src/inward_jobs.scailo_pb.ts:3534
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3511
+src/inward_jobs.scailo_pb.ts:3535
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3535
+src/inward_jobs.scailo_pb.ts:3559
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3523
+src/inward_jobs.scailo_pb.ts:3547
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3527
+src/inward_jobs.scailo_pb.ts:3551
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:3531
+src/inward_jobs.scailo_pb.ts:3555

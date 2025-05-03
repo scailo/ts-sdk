@@ -727,17 +727,6 @@ export declare const OutwardJobsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View Inward Inventory Match of all the inward families of the given outward job
-         *
-         * @generated from rpc Scailo.OutwardJobsService.ViewInwardInventoryMatch
-         */
-        readonly viewInwardInventoryMatch: {
-            readonly name: "ViewInwardInventoryMatch";
-            readonly I: typeof IdentifierUUID;
-            readonly O: typeof OutwardJobInwardInventoryMatchList;
-            readonly kind: MethodKind.Unary;
-        };
-        /**
          * View prospective inward items for the given outward job
          *
          * @generated from rpc Scailo.OutwardJobsService.ViewProspectiveInwardFamilies
@@ -771,14 +760,14 @@ export declare const OutwardJobsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View Outward Inventory Match of all the outward families of the given outward job
+         * View Inward Inventory Match of all the inward families of the given outward job
          *
-         * @generated from rpc Scailo.OutwardJobsService.ViewOutwardInventoryMatch
+         * @generated from rpc Scailo.OutwardJobsService.ViewInwardInventoryMatch
          */
-        readonly viewOutwardInventoryMatch: {
-            readonly name: "ViewOutwardInventoryMatch";
+        readonly viewInwardInventoryMatch: {
+            readonly name: "ViewInwardInventoryMatch";
             readonly I: typeof IdentifierUUID;
-            readonly O: typeof OutwardJobOutwardInventoryMatchList;
+            readonly O: typeof OutwardJobInwardInventoryMatchList;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -812,6 +801,17 @@ export declare const OutwardJobsService: {
             readonly name: "ViewProspectiveOutwardJobOutwardItem";
             readonly I: typeof OutwardJobOutwardItemProspectiveInfoRequest;
             readonly O: typeof OutwardJobsServiceOutwardItemCreateRequest;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View Outward Inventory Match of all the outward families of the given outward job
+         *
+         * @generated from rpc Scailo.OutwardJobsService.ViewOutwardInventoryMatch
+         */
+        readonly viewOutwardInventoryMatch: {
+            readonly name: "ViewOutwardInventoryMatch";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof OutwardJobOutwardInventoryMatchList;
             readonly kind: MethodKind.Unary;
         };
         /**

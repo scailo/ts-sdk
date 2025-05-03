@@ -1619,6 +1619,16 @@ export declare class InwardJobInwardItemsSearchRequest extends Message<InwardJob
      * @generated from field: string search_key = 40;
      */
     searchKey: string;
+    /**
+     * ------------------------------------------
+     * Extra filters
+     * The ID of the associated buyer client
+     *
+     * ------------------------------------------
+     *
+     * @generated from field: uint64 buyer_client_id = 200;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<InwardJobInwardItemsSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.InwardJobInwardItemsSearchRequest";
@@ -2187,6 +2197,16 @@ export declare class InwardJobOutwardItemsSearchRequest extends Message<InwardJo
      * @generated from field: string search_key = 40;
      */
     searchKey: string;
+    /**
+     * ------------------------------------------
+     * Extra filters
+     * The ID of the associated buyer client
+     *
+     * ------------------------------------------
+     *
+     * @generated from field: uint64 buyer_client_id = 200;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<InwardJobOutwardItemsSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.InwardJobOutwardItemsSearchRequest";

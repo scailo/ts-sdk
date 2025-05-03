@@ -2388,6 +2388,17 @@ export class InwardJobInwardItemsSearchRequest extends Message<InwardJobInwardIt
    */
   searchKey = "";
 
+  /**
+   * ------------------------------------------
+   * Extra filters
+   * The ID of the associated buyer client
+   *
+   * ------------------------------------------
+   *
+   * @generated from field: uint64 buyer_client_id = 200;
+   */
+  buyerClientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<InwardJobInwardItemsSearchRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2412,6 +2423,7 @@ export class InwardJobInwardItemsSearchRequest extends Message<InwardJobInwardIt
     { no: 23, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 200, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobInwardItemsSearchRequest {
@@ -3269,6 +3281,17 @@ export class InwardJobOutwardItemsSearchRequest extends Message<InwardJobOutward
    */
   searchKey = "";
 
+  /**
+   * ------------------------------------------
+   * Extra filters
+   * The ID of the associated buyer client
+   *
+   * ------------------------------------------
+   *
+   * @generated from field: uint64 buyer_client_id = 200;
+   */
+  buyerClientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<InwardJobOutwardItemsSearchRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -3296,6 +3319,7 @@ export class InwardJobOutwardItemsSearchRequest extends Message<InwardJobOutward
     { no: 27, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 28, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 200, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InwardJobOutwardItemsSearchRequest {
