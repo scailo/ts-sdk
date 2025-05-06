@@ -75,7 +75,7 @@ Message\&lt;DebitNotesServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:827
+src/debit_notes.scailo_pb.ts:862
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: uint64 debit_note_id = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:769
+src/debit_notes.scailo_pb.ts:804
 
 ___
 
@@ -107,7 +107,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:776
+src/debit_notes.scailo_pb.ts:811
 
 ___
 
@@ -123,7 +123,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:783
+src/debit_notes.scailo_pb.ts:818
 
 ___
 
@@ -139,7 +139,7 @@ from field: int64 round_off = 17;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:818
+src/debit_notes.scailo_pb.ts:853
 
 ___
 
@@ -155,7 +155,7 @@ from field: string specifications = 18;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:825
+src/debit_notes.scailo_pb.ts:860
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:811
+src/debit_notes.scailo_pb.ts:846
 
 ___
 
@@ -187,7 +187,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:762
+src/debit_notes.scailo_pb.ts:797
 
 ___
 
@@ -203,7 +203,7 @@ from field: uint64 vendor_quantity = 14;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:797
+src/debit_notes.scailo_pb.ts:832
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 vendor_unit_price = 15;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:804
+src/debit_notes.scailo_pb.ts:839
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 vendor_uom_id = 13;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:790
+src/debit_notes.scailo_pb.ts:825
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:834
+src/debit_notes.scailo_pb.ts:869
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:832
+src/debit_notes.scailo_pb.ts:867
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:833
+src/debit_notes.scailo_pb.ts:868
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:859
+src/debit_notes.scailo_pb.ts:894
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:847
+src/debit_notes.scailo_pb.ts:882
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:851
+src/debit_notes.scailo_pb.ts:886
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:855
+src/debit_notes.scailo_pb.ts:890

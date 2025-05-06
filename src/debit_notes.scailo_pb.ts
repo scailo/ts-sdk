@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a debit note can be added
+ *
+ * @generated from enum Scailo.DEBIT_NOTE_REF_FROM
+ */
+export enum DEBIT_NOTE_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the debit note originated from a purchase order
+   *
+   * @generated from enum value: DEBIT_NOTE_REF_FROM_PURCHASE_ORDER = 1;
+   */
+  DEBIT_NOTE_REF_FROM_PURCHASE_ORDER = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(DEBIT_NOTE_REF_FROM)
+proto3.util.setEnumType(DEBIT_NOTE_REF_FROM, "Scailo.DEBIT_NOTE_REF_FROM", [
+  { no: 0, name: "DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "DEBIT_NOTE_REF_FROM_PURCHASE_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.DEBIT_NOTE_ITEM_SORT_KEY
@@ -219,6 +246,13 @@ export enum DEBIT_NOTE_SORT_KEY {
    * @generated from enum value: DEBIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   DEBIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11,
+
+  /**
+   * Fetch ordered results by the total value
+   *
+   * @generated from enum value: DEBIT_NOTE_SORT_KEY_TOTAL_VALUE = 30;
+   */
+  DEBIT_NOTE_SORT_KEY_TOTAL_VALUE = 30,
 }
 // Retrieve enum metadata with: proto3.getEnumType(DEBIT_NOTE_SORT_KEY)
 proto3.util.setEnumType(DEBIT_NOTE_SORT_KEY, "Scailo.DEBIT_NOTE_SORT_KEY", [
@@ -231,6 +265,7 @@ proto3.util.setEnumType(DEBIT_NOTE_SORT_KEY, "Scailo.DEBIT_NOTE_SORT_KEY", [
   { no: 6, name: "DEBIT_NOTE_SORT_KEY_COMPLETED_ON" },
   { no: 10, name: "DEBIT_NOTE_SORT_KEY_REFERENCE_ID" },
   { no: 11, name: "DEBIT_NOTE_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 30, name: "DEBIT_NOTE_SORT_KEY_TOTAL_VALUE" },
 ]);
 
 /**
@@ -271,9 +306,9 @@ export class DebitNotesServiceCreateRequest extends Message<DebitNotesServiceCre
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = DEBIT_NOTE_REF_FROM.DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -329,7 +364,7 @@ export class DebitNotesServiceCreateRequest extends Message<DebitNotesServiceCre
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(DEBIT_NOTE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -642,9 +677,9 @@ export class DebitNote extends Message<DebitNote> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = DEBIT_NOTE_REF_FROM.DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -719,7 +754,7 @@ export class DebitNote extends Message<DebitNote> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(DEBIT_NOTE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1307,9 +1342,9 @@ export class DebitNotesServiceAlreadyAddedQuantityForSourceRequest extends Messa
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = DEBIT_NOTE_REF_FROM.DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1333,7 +1368,7 @@ export class DebitNotesServiceAlreadyAddedQuantityForSourceRequest extends Messa
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.DebitNotesServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(DEBIT_NOTE_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1874,9 +1909,9 @@ export class DebitNotesServiceFilterReq extends Message<DebitNotesServiceFilterR
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = DEBIT_NOTE_REF_FROM.DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1913,6 +1948,20 @@ export class DebitNotesServiceFilterReq extends Message<DebitNotesServiceFilterR
    */
   familyId = protoInt64.zero;
 
+  /**
+   * Stores the minimum value of the debit note (ignored if 0)
+   *
+   * @generated from field: uint64 total_value_min = 70;
+   */
+  totalValueMin = protoInt64.zero;
+
+  /**
+   * Stores the maximum value of the debit note (ignored if 0)
+   *
+   * @generated from field: uint64 total_value_max = 71;
+   */
+  totalValueMax = protoInt64.zero;
+
   constructor(data?: PartialMessage<DebitNotesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1940,12 +1989,14 @@ export class DebitNotesServiceFilterReq extends Message<DebitNotesServiceFilterR
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(DEBIT_NOTE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 31, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 32, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNotesServiceFilterReq {
@@ -2080,9 +2131,9 @@ export class DebitNotesServiceCountReq extends Message<DebitNotesServiceCountReq
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = DEBIT_NOTE_REF_FROM.DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2119,6 +2170,20 @@ export class DebitNotesServiceCountReq extends Message<DebitNotesServiceCountReq
    */
   familyId = protoInt64.zero;
 
+  /**
+   * Stores the minimum value of the debit note (ignored if 0)
+   *
+   * @generated from field: uint64 total_value_min = 70;
+   */
+  totalValueMin = protoInt64.zero;
+
+  /**
+   * Stores the maximum value of the debit note (ignored if 0)
+   *
+   * @generated from field: uint64 total_value_max = 71;
+   */
+  totalValueMax = protoInt64.zero;
+
   constructor(data?: PartialMessage<DebitNotesServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2142,12 +2207,14 @@ export class DebitNotesServiceCountReq extends Message<DebitNotesServiceCountReq
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(DEBIT_NOTE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 31, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 32, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNotesServiceCountReq {
@@ -2233,9 +2300,9 @@ export class DebitNotesServiceSearchAllReq extends Message<DebitNotesServiceSear
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = DEBIT_NOTE_REF_FROM.DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2267,7 +2334,7 @@ export class DebitNotesServiceSearchAllReq extends Message<DebitNotesServiceSear
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(DEBIT_NOTE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);

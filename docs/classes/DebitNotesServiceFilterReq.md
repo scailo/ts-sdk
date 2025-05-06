@@ -46,6 +46,8 @@ from message Scailo.DebitNotesServiceFilterReq
 - [sortKey](DebitNotesServiceFilterReq.md#sortkey)
 - [sortOrder](DebitNotesServiceFilterReq.md#sortorder)
 - [status](DebitNotesServiceFilterReq.md#status)
+- [totalValueMax](DebitNotesServiceFilterReq.md#totalvaluemax)
+- [totalValueMin](DebitNotesServiceFilterReq.md#totalvaluemin)
 - [vendorId](DebitNotesServiceFilterReq.md#vendorid)
 - [fields](DebitNotesServiceFilterReq.md#fields)
 - [runtime](DebitNotesServiceFilterReq.md#runtime)
@@ -90,7 +92,7 @@ Message\&lt;DebitNotesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1916
+src/debit_notes.scailo_pb.ts:1965
 
 ## Properties
 
@@ -106,7 +108,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1837
+src/debit_notes.scailo_pb.ts:1872
 
 ___
 
@@ -122,7 +124,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1830
+src/debit_notes.scailo_pb.ts:1865
 
 ___
 
@@ -138,7 +140,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1823
+src/debit_notes.scailo_pb.ts:1858
 
 ___
 
@@ -154,7 +156,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1844
+src/debit_notes.scailo_pb.ts:1879
 
 ___
 
@@ -170,7 +172,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1858
+src/debit_notes.scailo_pb.ts:1893
 
 ___
 
@@ -186,7 +188,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1851
+src/debit_notes.scailo_pb.ts:1886
 
 ___
 
@@ -202,7 +204,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1753
+src/debit_notes.scailo_pb.ts:1788
 
 ___
 
@@ -218,7 +220,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1788
+src/debit_notes.scailo_pb.ts:1823
 
 ___
 
@@ -234,7 +236,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1781
+src/debit_notes.scailo_pb.ts:1816
 
 ___
 
@@ -250,7 +252,7 @@ from field: uint64 currency_id = 30;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1893
+src/debit_notes.scailo_pb.ts:1928
 
 ___
 
@@ -266,7 +268,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1809
+src/debit_notes.scailo_pb.ts:1844
 
 ___
 
@@ -282,7 +284,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1914
+src/debit_notes.scailo_pb.ts:1949
 
 ___
 
@@ -298,7 +300,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1872
+src/debit_notes.scailo_pb.ts:1907
 
 ___
 
@@ -314,7 +316,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1746
+src/debit_notes.scailo_pb.ts:1781
 
 ___
 
@@ -330,7 +332,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1802
+src/debit_notes.scailo_pb.ts:1837
 
 ___
 
@@ -346,7 +348,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1795
+src/debit_notes.scailo_pb.ts:1830
 
 ___
 
@@ -362,7 +364,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1760
+src/debit_notes.scailo_pb.ts:1795
 
 ___
 
@@ -378,23 +380,23 @@ from field: uint64 project_id = 32;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1907
+src/debit_notes.scailo_pb.ts:1942
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`DEBIT_NOTE_REF_FROM`](../enums/DEBIT_NOTE_REF_FROM.md) = `DEBIT_NOTE_REF_FROM.DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1879
+src/debit_notes.scailo_pb.ts:1914
 
 ___
 
@@ -410,7 +412,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1886
+src/debit_notes.scailo_pb.ts:1921
 
 ___
 
@@ -426,7 +428,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1865
+src/debit_notes.scailo_pb.ts:1900
 
 ___
 
@@ -442,7 +444,7 @@ from field: Scailo.DEBIT_NOTE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1774
+src/debit_notes.scailo_pb.ts:1809
 
 ___
 
@@ -458,7 +460,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1767
+src/debit_notes.scailo_pb.ts:1802
 
 ___
 
@@ -474,7 +476,39 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1816
+src/debit_notes.scailo_pb.ts:1851
+
+___
+
+### totalValueMax
+
+• **totalValueMax**: `bigint` = `protoInt64.zero`
+
+Stores the maximum value of the debit note (ignored if 0)
+
+**`Generated`**
+
+from field: uint64 total_value_max = 71;
+
+#### Defined in
+
+src/debit_notes.scailo_pb.ts:1963
+
+___
+
+### totalValueMin
+
+• **totalValueMin**: `bigint` = `protoInt64.zero`
+
+Stores the minimum value of the debit note (ignored if 0)
+
+**`Generated`**
+
+from field: uint64 total_value_min = 70;
+
+#### Defined in
+
+src/debit_notes.scailo_pb.ts:1956
 
 ___
 
@@ -490,7 +524,7 @@ from field: uint64 vendor_id = 31;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1900
+src/debit_notes.scailo_pb.ts:1935
 
 ___
 
@@ -500,7 +534,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1923
+src/debit_notes.scailo_pb.ts:1972
 
 ___
 
@@ -510,7 +544,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1921
+src/debit_notes.scailo_pb.ts:1970
 
 ___
 
@@ -520,7 +554,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1922
+src/debit_notes.scailo_pb.ts:1971
 
 ## Methods
 
@@ -808,7 +842,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1963
+src/debit_notes.scailo_pb.ts:2014
 
 ___
 
@@ -829,7 +863,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1951
+src/debit_notes.scailo_pb.ts:2002
 
 ___
 
@@ -850,7 +884,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1955
+src/debit_notes.scailo_pb.ts:2006
 
 ___
 
@@ -871,4 +905,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1959
+src/debit_notes.scailo_pb.ts:2010

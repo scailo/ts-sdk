@@ -72,7 +72,7 @@ Message\&lt;DebitNoteReference\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2406
+src/debit_notes.scailo_pb.ts:2473
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2376
+src/debit_notes.scailo_pb.ts:2443
 
 ___
 
@@ -104,7 +104,7 @@ from field: uint64 debit_note_id = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2397
+src/debit_notes.scailo_pb.ts:2464
 
 ___
 
@@ -120,7 +120,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2362
+src/debit_notes.scailo_pb.ts:2429
 
 ___
 
@@ -136,7 +136,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2369
+src/debit_notes.scailo_pb.ts:2436
 
 ___
 
@@ -152,7 +152,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2383
+src/debit_notes.scailo_pb.ts:2450
 
 ___
 
@@ -168,7 +168,7 @@ from field: uint64 purchase_return_id = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2404
+src/debit_notes.scailo_pb.ts:2471
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2390
+src/debit_notes.scailo_pb.ts:2457
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2413
+src/debit_notes.scailo_pb.ts:2480
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2411
+src/debit_notes.scailo_pb.ts:2478
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2412
+src/debit_notes.scailo_pb.ts:2479
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2435
+src/debit_notes.scailo_pb.ts:2502
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2423
+src/debit_notes.scailo_pb.ts:2490
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2427
+src/debit_notes.scailo_pb.ts:2494
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2431
+src/debit_notes.scailo_pb.ts:2498

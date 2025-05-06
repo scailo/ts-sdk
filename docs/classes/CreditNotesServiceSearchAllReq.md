@@ -77,7 +77,7 @@ Message\&lt;CreditNotesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2360
+src/credit_notes.scailo_pb.ts:2427
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2358
+src/credit_notes.scailo_pb.ts:2425
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2351
+src/credit_notes.scailo_pb.ts:2418
 
 ___
 
@@ -126,7 +126,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2287
+src/credit_notes.scailo_pb.ts:2354
 
 ___
 
@@ -142,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2315
+src/credit_notes.scailo_pb.ts:2382
 
 ___
 
@@ -158,7 +158,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2280
+src/credit_notes.scailo_pb.ts:2347
 
 ___
 
@@ -174,23 +174,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2294
+src/credit_notes.scailo_pb.ts:2361
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`CREDIT_NOTE_REF_FROM`](../enums/CREDIT_NOTE_REF_FROM.md) = `CREDIT_NOTE_REF_FROM.CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2336
+src/credit_notes.scailo_pb.ts:2403
 
 ___
 
@@ -206,7 +206,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2343
+src/credit_notes.scailo_pb.ts:2410
 
 ___
 
@@ -222,7 +222,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2329
+src/credit_notes.scailo_pb.ts:2396
 
 ___
 
@@ -238,7 +238,7 @@ from field: Scailo.CREDIT_NOTE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2308
+src/credit_notes.scailo_pb.ts:2375
 
 ___
 
@@ -254,7 +254,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2301
+src/credit_notes.scailo_pb.ts:2368
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2322
+src/credit_notes.scailo_pb.ts:2389
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2367
+src/credit_notes.scailo_pb.ts:2434
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2365
+src/credit_notes.scailo_pb.ts:2432
 
 ___
 
@@ -300,7 +300,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2366
+src/credit_notes.scailo_pb.ts:2433
 
 ## Methods
 
@@ -588,7 +588,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2394
+src/credit_notes.scailo_pb.ts:2461
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2382
+src/credit_notes.scailo_pb.ts:2449
 
 ___
 
@@ -630,7 +630,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2386
+src/credit_notes.scailo_pb.ts:2453
 
 ___
 
@@ -651,4 +651,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2390
+src/credit_notes.scailo_pb.ts:2457

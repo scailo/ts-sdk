@@ -67,7 +67,7 @@ Message\&lt;DebitNoteAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:543
+src/debit_notes.scailo_pb.ts:578
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string currency_uuid = 214;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:541
+src/debit_notes.scailo_pb.ts:576
 
 ___
 
@@ -99,7 +99,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:534
+src/debit_notes.scailo_pb.ts:569
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:550
+src/debit_notes.scailo_pb.ts:585
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:548
+src/debit_notes.scailo_pb.ts:583
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:549
+src/debit_notes.scailo_pb.ts:584
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:567
+src/debit_notes.scailo_pb.ts:602
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:555
+src/debit_notes.scailo_pb.ts:590
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:559
+src/debit_notes.scailo_pb.ts:594
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:563
+src/debit_notes.scailo_pb.ts:598

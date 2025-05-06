@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a debit note can be added
+ *
+ * @generated from enum Scailo.DEBIT_NOTE_REF_FROM
+ */
+export declare enum DEBIT_NOTE_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the debit note originated from a purchase order
+     *
+     * @generated from enum value: DEBIT_NOTE_REF_FROM_PURCHASE_ORDER = 1;
+     */
+    DEBIT_NOTE_REF_FROM_PURCHASE_ORDER = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.DEBIT_NOTE_ITEM_SORT_KEY
@@ -168,7 +188,13 @@ export declare enum DEBIT_NOTE_SORT_KEY {
      *
      * @generated from enum value: DEBIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
-    DEBIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11
+    DEBIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11,
+    /**
+     * Fetch ordered results by the total value
+     *
+     * @generated from enum value: DEBIT_NOTE_SORT_KEY_TOTAL_VALUE = 30;
+     */
+    DEBIT_NOTE_SORT_KEY_TOTAL_VALUE = 30
 }
 /**
  *
@@ -204,9 +230,9 @@ export declare class DebitNotesServiceCreateRequest extends Message<DebitNotesSe
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: DEBIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -448,9 +474,9 @@ export declare class DebitNote extends Message<DebitNote> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: DEBIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -864,9 +890,9 @@ export declare class DebitNotesServiceAlreadyAddedQuantityForSourceRequest exten
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: DEBIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1256,9 +1282,9 @@ export declare class DebitNotesServiceFilterReq extends Message<DebitNotesServic
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: DEBIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1289,6 +1315,18 @@ export declare class DebitNotesServiceFilterReq extends Message<DebitNotesServic
      * @generated from field: uint64 family_id = 40;
      */
     familyId: bigint;
+    /**
+     * Stores the minimum value of the debit note (ignored if 0)
+     *
+     * @generated from field: uint64 total_value_min = 70;
+     */
+    totalValueMin: bigint;
+    /**
+     * Stores the maximum value of the debit note (ignored if 0)
+     *
+     * @generated from field: uint64 total_value_max = 71;
+     */
+    totalValueMax: bigint;
     constructor(data?: PartialMessage<DebitNotesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.DebitNotesServiceFilterReq";
@@ -1398,9 +1436,9 @@ export declare class DebitNotesServiceCountReq extends Message<DebitNotesService
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: DEBIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1431,6 +1469,18 @@ export declare class DebitNotesServiceCountReq extends Message<DebitNotesService
      * @generated from field: uint64 family_id = 40;
      */
     familyId: bigint;
+    /**
+     * Stores the minimum value of the debit note (ignored if 0)
+     *
+     * @generated from field: uint64 total_value_min = 70;
+     */
+    totalValueMin: bigint;
+    /**
+     * Stores the maximum value of the debit note (ignored if 0)
+     *
+     * @generated from field: uint64 total_value_max = 71;
+     */
+    totalValueMax: bigint;
     constructor(data?: PartialMessage<DebitNotesServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.DebitNotesServiceCountReq";
@@ -1498,9 +1548,9 @@ export declare class DebitNotesServiceSearchAllReq extends Message<DebitNotesSer
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: DEBIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *

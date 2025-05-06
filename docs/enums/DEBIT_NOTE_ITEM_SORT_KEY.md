@@ -39,7 +39,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:51
+src/debit_notes.scailo_pb.ts:78
 
 ___
 
@@ -55,7 +55,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:44
+src/debit_notes.scailo_pb.ts:71
 
 ___
 
@@ -71,7 +71,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:58
+src/debit_notes.scailo_pb.ts:85
 
 ___
 
@@ -87,7 +87,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:30
+src/debit_notes.scailo_pb.ts:57
 
 ___
 
@@ -103,7 +103,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:65
+src/debit_notes.scailo_pb.ts:92
 
 ___
 
@@ -119,7 +119,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:23
+src/debit_notes.scailo_pb.ts:50
 
 ___
 
@@ -135,7 +135,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:72
+src/debit_notes.scailo_pb.ts:99
 
 ___
 
@@ -151,7 +151,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:37
+src/debit_notes.scailo_pb.ts:64
 
 ___
 
@@ -167,7 +167,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:100
+src/debit_notes.scailo_pb.ts:127
 
 ___
 
@@ -183,7 +183,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_VENDOR_QUANTITY = 13;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:86
+src/debit_notes.scailo_pb.ts:113
 
 ___
 
@@ -199,7 +199,7 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_VENDOR_UNIT_PRICE = 14;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:93
+src/debit_notes.scailo_pb.ts:120
 
 ___
 
@@ -215,4 +215,4 @@ from enum value: DEBIT_NOTE_ITEM_SORT_KEY_VENDOR_UOM_ID = 12;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:79
+src/debit_notes.scailo_pb.ts:106

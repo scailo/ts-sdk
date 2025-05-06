@@ -30,7 +30,7 @@ from enum value: DEBIT_NOTE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:130
+src/debit_notes.scailo_pb.ts:157
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: DEBIT_NOTE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:137
+src/debit_notes.scailo_pb.ts:164
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: DEBIT_NOTE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:144
+src/debit_notes.scailo_pb.ts:171

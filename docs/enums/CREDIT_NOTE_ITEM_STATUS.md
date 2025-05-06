@@ -30,7 +30,7 @@ from enum value: CREDIT_NOTE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:138
+src/credit_notes.scailo_pb.ts:165
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: CREDIT_NOTE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:145
+src/credit_notes.scailo_pb.ts:172
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: CREDIT_NOTE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:152
+src/credit_notes.scailo_pb.ts:179

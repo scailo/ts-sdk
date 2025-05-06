@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a credit note can be added
+ *
+ * @generated from enum Scailo.CREDIT_NOTE_REF_FROM
+ */
+export declare enum CREDIT_NOTE_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the credit note originated from a sales order
+     *
+     * @generated from enum value: CREDIT_NOTE_REF_FROM_SALES_ORDER = 1;
+     */
+    CREDIT_NOTE_REF_FROM_SALES_ORDER = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.CREDIT_NOTE_ITEM_SORT_KEY
@@ -174,7 +194,13 @@ export declare enum CREDIT_NOTE_SORT_KEY {
      *
      * @generated from enum value: CREDIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
-    CREDIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11
+    CREDIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11,
+    /**
+     * Fetch ordered results by the total value
+     *
+     * @generated from enum value: CREDIT_NOTE_SORT_KEY_TOTAL_VALUE = 30;
+     */
+    CREDIT_NOTE_SORT_KEY_TOTAL_VALUE = 30
 }
 /**
  *
@@ -210,9 +236,9 @@ export declare class CreditNotesServiceCreateRequest extends Message<CreditNotes
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: CREDIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -466,9 +492,9 @@ export declare class CreditNote extends Message<CreditNote> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: CREDIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -906,9 +932,9 @@ export declare class CreditNotesServiceAlreadyAddedQuantityForSourceRequest exte
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: CREDIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1304,9 +1330,9 @@ export declare class CreditNotesServiceFilterReq extends Message<CreditNotesServ
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: CREDIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1350,6 +1376,18 @@ export declare class CreditNotesServiceFilterReq extends Message<CreditNotesServ
      * @generated from field: uint64 project_id = 52;
      */
     projectId: bigint;
+    /**
+     * Stores the minimum value of the credit note (ignored if 0)
+     *
+     * @generated from field: uint64 total_value_min = 70;
+     */
+    totalValueMin: bigint;
+    /**
+     * Stores the maximum value of the credit note (ignored if 0)
+     *
+     * @generated from field: uint64 total_value_max = 71;
+     */
+    totalValueMax: bigint;
     constructor(data?: PartialMessage<CreditNotesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.CreditNotesServiceFilterReq";
@@ -1459,9 +1497,9 @@ export declare class CreditNotesServiceCountReq extends Message<CreditNotesServi
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: CREDIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1505,6 +1543,18 @@ export declare class CreditNotesServiceCountReq extends Message<CreditNotesServi
      * @generated from field: uint64 project_id = 52;
      */
     projectId: bigint;
+    /**
+     * Stores the minimum value of the credit note (ignored if 0)
+     *
+     * @generated from field: uint64 total_value_min = 70;
+     */
+    totalValueMin: bigint;
+    /**
+     * Stores the maximum value of the credit note (ignored if 0)
+     *
+     * @generated from field: uint64 total_value_max = 71;
+     */
+    totalValueMax: bigint;
     constructor(data?: PartialMessage<CreditNotesServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.CreditNotesServiceCountReq";
@@ -1572,9 +1622,9 @@ export declare class CreditNotesServiceSearchAllReq extends Message<CreditNotesS
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: CREDIT_NOTE_REF_FROM;
     /**
      * The associated ID of the reference
      *

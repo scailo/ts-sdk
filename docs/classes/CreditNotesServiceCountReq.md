@@ -45,6 +45,8 @@ from message Scailo.CreditNotesServiceCountReq
 - [refId](CreditNotesServiceCountReq.md#refid)
 - [referenceId](CreditNotesServiceCountReq.md#referenceid)
 - [status](CreditNotesServiceCountReq.md#status)
+- [totalValueMax](CreditNotesServiceCountReq.md#totalvaluemax)
+- [totalValueMin](CreditNotesServiceCountReq.md#totalvaluemin)
 - [fields](CreditNotesServiceCountReq.md#fields)
 - [runtime](CreditNotesServiceCountReq.md#runtime)
 - [typeName](CreditNotesServiceCountReq.md#typename)
@@ -88,7 +90,7 @@ Message\&lt;CreditNotesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2218
+src/credit_notes.scailo_pb.ts:2283
 
 ## Properties
 
@@ -104,7 +106,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2124
+src/credit_notes.scailo_pb.ts:2175
 
 ___
 
@@ -120,7 +122,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2117
+src/credit_notes.scailo_pb.ts:2168
 
 ___
 
@@ -136,7 +138,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2110
+src/credit_notes.scailo_pb.ts:2161
 
 ___
 
@@ -152,7 +154,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2131
+src/credit_notes.scailo_pb.ts:2182
 
 ___
 
@@ -168,7 +170,7 @@ from field: uint64 bank_account_id = 25;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2187
+src/credit_notes.scailo_pb.ts:2238
 
 ___
 
@@ -184,7 +186,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2209
+src/credit_notes.scailo_pb.ts:2260
 
 ___
 
@@ -200,7 +202,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2145
+src/credit_notes.scailo_pb.ts:2196
 
 ___
 
@@ -216,7 +218,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2138
+src/credit_notes.scailo_pb.ts:2189
 
 ___
 
@@ -233,7 +235,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2202
+src/credit_notes.scailo_pb.ts:2253
 
 ___
 
@@ -249,7 +251,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2075
+src/credit_notes.scailo_pb.ts:2126
 
 ___
 
@@ -265,7 +267,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2068
+src/credit_notes.scailo_pb.ts:2119
 
 ___
 
@@ -281,7 +283,7 @@ from field: uint64 currency_id = 24;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2180
+src/credit_notes.scailo_pb.ts:2231
 
 ___
 
@@ -297,7 +299,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2096
+src/credit_notes.scailo_pb.ts:2147
 
 ___
 
@@ -313,7 +315,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2194
+src/credit_notes.scailo_pb.ts:2245
 
 ___
 
@@ -329,7 +331,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2159
+src/credit_notes.scailo_pb.ts:2210
 
 ___
 
@@ -345,7 +347,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2061
+src/credit_notes.scailo_pb.ts:2112
 
 ___
 
@@ -361,7 +363,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2089
+src/credit_notes.scailo_pb.ts:2140
 
 ___
 
@@ -377,7 +379,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2082
+src/credit_notes.scailo_pb.ts:2133
 
 ___
 
@@ -393,23 +395,23 @@ from field: uint64 project_id = 52;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2216
+src/credit_notes.scailo_pb.ts:2267
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`CREDIT_NOTE_REF_FROM`](../enums/CREDIT_NOTE_REF_FROM.md) = `CREDIT_NOTE_REF_FROM.CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2166
+src/credit_notes.scailo_pb.ts:2217
 
 ___
 
@@ -425,7 +427,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2173
+src/credit_notes.scailo_pb.ts:2224
 
 ___
 
@@ -441,7 +443,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2152
+src/credit_notes.scailo_pb.ts:2203
 
 ___
 
@@ -457,7 +459,39 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2103
+src/credit_notes.scailo_pb.ts:2154
+
+___
+
+### totalValueMax
+
+• **totalValueMax**: `bigint` = `protoInt64.zero`
+
+Stores the maximum value of the credit note (ignored if 0)
+
+**`Generated`**
+
+from field: uint64 total_value_max = 71;
+
+#### Defined in
+
+src/credit_notes.scailo_pb.ts:2281
+
+___
+
+### totalValueMin
+
+• **totalValueMin**: `bigint` = `protoInt64.zero`
+
+Stores the minimum value of the credit note (ignored if 0)
+
+**`Generated`**
+
+from field: uint64 total_value_min = 70;
+
+#### Defined in
+
+src/credit_notes.scailo_pb.ts:2274
 
 ___
 
@@ -467,7 +501,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2225
+src/credit_notes.scailo_pb.ts:2290
 
 ___
 
@@ -477,7 +511,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2223
+src/credit_notes.scailo_pb.ts:2288
 
 ___
 
@@ -487,7 +521,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2224
+src/credit_notes.scailo_pb.ts:2289
 
 ## Methods
 
@@ -775,7 +809,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2263
+src/credit_notes.scailo_pb.ts:2330
 
 ___
 
@@ -796,7 +830,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2251
+src/credit_notes.scailo_pb.ts:2318
 
 ___
 
@@ -817,7 +851,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2255
+src/credit_notes.scailo_pb.ts:2322
 
 ___
 
@@ -838,4 +872,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2259
+src/credit_notes.scailo_pb.ts:2326

@@ -68,7 +68,7 @@ Message\&lt;DebitNotesServiceAlreadyAddedQuantityForSourceRequest\&gt;.construct
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1328
+src/debit_notes.scailo_pb.ts:1363
 
 ## Properties
 
@@ -84,23 +84,23 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1326
+src/debit_notes.scailo_pb.ts:1361
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`DEBIT_NOTE_REF_FROM`](../enums/DEBIT_NOTE_REF_FROM.md) = `DEBIT_NOTE_REF_FROM.DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 1;
+from field: Scailo.DEBIT_NOTE_REF_FROM ref_from = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1312
+src/debit_notes.scailo_pb.ts:1347
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1319
+src/debit_notes.scailo_pb.ts:1354
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1335
+src/debit_notes.scailo_pb.ts:1370
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1333
+src/debit_notes.scailo_pb.ts:1368
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1334
+src/debit_notes.scailo_pb.ts:1369
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1353
+src/debit_notes.scailo_pb.ts:1388
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1341
+src/debit_notes.scailo_pb.ts:1376
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1345
+src/debit_notes.scailo_pb.ts:1380
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1349
+src/debit_notes.scailo_pb.ts:1384

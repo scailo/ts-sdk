@@ -21,6 +21,7 @@ from enum Scailo.DEBIT_NOTE_SORT_KEY
 - [DEBIT\_NOTE\_SORT\_KEY\_ID\_UNSPECIFIED](DEBIT_NOTE_SORT_KEY.md#debit_note_sort_key_id_unspecified)
 - [DEBIT\_NOTE\_SORT\_KEY\_MODIFIED\_AT](DEBIT_NOTE_SORT_KEY.md#debit_note_sort_key_modified_at)
 - [DEBIT\_NOTE\_SORT\_KEY\_REFERENCE\_ID](DEBIT_NOTE_SORT_KEY.md#debit_note_sort_key_reference_id)
+- [DEBIT\_NOTE\_SORT\_KEY\_TOTAL\_VALUE](DEBIT_NOTE_SORT_KEY.md#debit_note_sort_key_total_value)
 
 ## Enumeration Members
 
@@ -36,7 +37,7 @@ from enum value: DEBIT_NOTE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:193
+src/debit_notes.scailo_pb.ts:220
 
 ___
 
@@ -52,7 +53,7 @@ from enum value: DEBIT_NOTE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:186
+src/debit_notes.scailo_pb.ts:213
 
 ___
 
@@ -68,7 +69,7 @@ from enum value: DEBIT_NOTE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:200
+src/debit_notes.scailo_pb.ts:227
 
 ___
 
@@ -84,7 +85,7 @@ from enum value: DEBIT_NOTE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:207
+src/debit_notes.scailo_pb.ts:234
 
 ___
 
@@ -100,7 +101,7 @@ from enum value: DEBIT_NOTE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:172
+src/debit_notes.scailo_pb.ts:199
 
 ___
 
@@ -116,7 +117,7 @@ from enum value: DEBIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:221
+src/debit_notes.scailo_pb.ts:248
 
 ___
 
@@ -132,7 +133,7 @@ from enum value: DEBIT_NOTE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:165
+src/debit_notes.scailo_pb.ts:192
 
 ___
 
@@ -148,7 +149,7 @@ from enum value: DEBIT_NOTE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:179
+src/debit_notes.scailo_pb.ts:206
 
 ___
 
@@ -164,4 +165,20 @@ from enum value: DEBIT_NOTE_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:214
+src/debit_notes.scailo_pb.ts:241
+
+___
+
+### DEBIT\_NOTE\_SORT\_KEY\_TOTAL\_VALUE
+
+• **DEBIT\_NOTE\_SORT\_KEY\_TOTAL\_VALUE** = ``30``
+
+Fetch ordered results by the total value
+
+**`Generated`**
+
+from enum value: DEBIT_NOTE_SORT_KEY_TOTAL_VALUE = 30;
+
+#### Defined in
+
+src/debit_notes.scailo_pb.ts:255

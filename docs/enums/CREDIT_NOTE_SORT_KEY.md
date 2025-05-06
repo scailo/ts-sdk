@@ -21,6 +21,7 @@ from enum Scailo.CREDIT_NOTE_SORT_KEY
 - [CREDIT\_NOTE\_SORT\_KEY\_ID\_UNSPECIFIED](CREDIT_NOTE_SORT_KEY.md#credit_note_sort_key_id_unspecified)
 - [CREDIT\_NOTE\_SORT\_KEY\_MODIFIED\_AT](CREDIT_NOTE_SORT_KEY.md#credit_note_sort_key_modified_at)
 - [CREDIT\_NOTE\_SORT\_KEY\_REFERENCE\_ID](CREDIT_NOTE_SORT_KEY.md#credit_note_sort_key_reference_id)
+- [CREDIT\_NOTE\_SORT\_KEY\_TOTAL\_VALUE](CREDIT_NOTE_SORT_KEY.md#credit_note_sort_key_total_value)
 
 ## Enumeration Members
 
@@ -36,7 +37,7 @@ from enum value: CREDIT_NOTE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:201
+src/credit_notes.scailo_pb.ts:228
 
 ___
 
@@ -52,7 +53,7 @@ from enum value: CREDIT_NOTE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:194
+src/credit_notes.scailo_pb.ts:221
 
 ___
 
@@ -68,7 +69,7 @@ from enum value: CREDIT_NOTE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:208
+src/credit_notes.scailo_pb.ts:235
 
 ___
 
@@ -84,7 +85,7 @@ from enum value: CREDIT_NOTE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:215
+src/credit_notes.scailo_pb.ts:242
 
 ___
 
@@ -100,7 +101,7 @@ from enum value: CREDIT_NOTE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:180
+src/credit_notes.scailo_pb.ts:207
 
 ___
 
@@ -116,7 +117,7 @@ from enum value: CREDIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:229
+src/credit_notes.scailo_pb.ts:256
 
 ___
 
@@ -132,7 +133,7 @@ from enum value: CREDIT_NOTE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:173
+src/credit_notes.scailo_pb.ts:200
 
 ___
 
@@ -148,7 +149,7 @@ from enum value: CREDIT_NOTE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:187
+src/credit_notes.scailo_pb.ts:214
 
 ___
 
@@ -164,4 +165,20 @@ from enum value: CREDIT_NOTE_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:222
+src/credit_notes.scailo_pb.ts:249
+
+___
+
+### CREDIT\_NOTE\_SORT\_KEY\_TOTAL\_VALUE
+
+• **CREDIT\_NOTE\_SORT\_KEY\_TOTAL\_VALUE** = ``30``
+
+Fetch ordered results by the total value
+
+**`Generated`**
+
+from enum value: CREDIT_NOTE_SORT_KEY_TOTAL_VALUE = 30;
+
+#### Defined in
+
+src/credit_notes.scailo_pb.ts:263

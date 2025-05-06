@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a credit note can be added
+ *
+ * @generated from enum Scailo.CREDIT_NOTE_REF_FROM
+ */
+export enum CREDIT_NOTE_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the credit note originated from a sales order
+   *
+   * @generated from enum value: CREDIT_NOTE_REF_FROM_SALES_ORDER = 1;
+   */
+  CREDIT_NOTE_REF_FROM_SALES_ORDER = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(CREDIT_NOTE_REF_FROM)
+proto3.util.setEnumType(CREDIT_NOTE_REF_FROM, "Scailo.CREDIT_NOTE_REF_FROM", [
+  { no: 0, name: "CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "CREDIT_NOTE_REF_FROM_SALES_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.CREDIT_NOTE_ITEM_SORT_KEY
@@ -227,6 +254,13 @@ export enum CREDIT_NOTE_SORT_KEY {
    * @generated from enum value: CREDIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   CREDIT_NOTE_SORT_KEY_FINAL_REF_NUMBER = 11,
+
+  /**
+   * Fetch ordered results by the total value
+   *
+   * @generated from enum value: CREDIT_NOTE_SORT_KEY_TOTAL_VALUE = 30;
+   */
+  CREDIT_NOTE_SORT_KEY_TOTAL_VALUE = 30,
 }
 // Retrieve enum metadata with: proto3.getEnumType(CREDIT_NOTE_SORT_KEY)
 proto3.util.setEnumType(CREDIT_NOTE_SORT_KEY, "Scailo.CREDIT_NOTE_SORT_KEY", [
@@ -239,6 +273,7 @@ proto3.util.setEnumType(CREDIT_NOTE_SORT_KEY, "Scailo.CREDIT_NOTE_SORT_KEY", [
   { no: 6, name: "CREDIT_NOTE_SORT_KEY_COMPLETED_ON" },
   { no: 10, name: "CREDIT_NOTE_SORT_KEY_REFERENCE_ID" },
   { no: 11, name: "CREDIT_NOTE_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 30, name: "CREDIT_NOTE_SORT_KEY_TOTAL_VALUE" },
 ]);
 
 /**
@@ -279,9 +314,9 @@ export class CreditNotesServiceCreateRequest extends Message<CreditNotesServiceC
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = CREDIT_NOTE_REF_FROM.CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -344,7 +379,7 @@ export class CreditNotesServiceCreateRequest extends Message<CreditNotesServiceC
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(CREDIT_NOTE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -666,9 +701,9 @@ export class CreditNote extends Message<CreditNote> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = CREDIT_NOTE_REF_FROM.CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -750,7 +785,7 @@ export class CreditNote extends Message<CreditNote> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(CREDIT_NOTE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1363,9 +1398,9 @@ export class CreditNotesServiceAlreadyAddedQuantityForSourceRequest extends Mess
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = CREDIT_NOTE_REF_FROM.CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1389,7 +1424,7 @@ export class CreditNotesServiceAlreadyAddedQuantityForSourceRequest extends Mess
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.CreditNotesServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(CREDIT_NOTE_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1938,9 +1973,9 @@ export class CreditNotesServiceFilterReq extends Message<CreditNotesServiceFilte
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = CREDIT_NOTE_REF_FROM.CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1992,6 +2027,20 @@ export class CreditNotesServiceFilterReq extends Message<CreditNotesServiceFilte
    */
   projectId = protoInt64.zero;
 
+  /**
+   * Stores the minimum value of the credit note (ignored if 0)
+   *
+   * @generated from field: uint64 total_value_min = 70;
+   */
+  totalValueMin = protoInt64.zero;
+
+  /**
+   * Stores the maximum value of the credit note (ignored if 0)
+   *
+   * @generated from field: uint64 total_value_max = 71;
+   */
+  totalValueMax = protoInt64.zero;
+
   constructor(data?: PartialMessage<CreditNotesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2019,7 +2068,7 @@ export class CreditNotesServiceFilterReq extends Message<CreditNotesServiceFilte
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(CREDIT_NOTE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2027,6 +2076,8 @@ export class CreditNotesServiceFilterReq extends Message<CreditNotesServiceFilte
     { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNotesServiceFilterReq {
@@ -2161,9 +2212,9 @@ export class CreditNotesServiceCountReq extends Message<CreditNotesServiceCountR
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = CREDIT_NOTE_REF_FROM.CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2215,6 +2266,20 @@ export class CreditNotesServiceCountReq extends Message<CreditNotesServiceCountR
    */
   projectId = protoInt64.zero;
 
+  /**
+   * Stores the minimum value of the credit note (ignored if 0)
+   *
+   * @generated from field: uint64 total_value_min = 70;
+   */
+  totalValueMin = protoInt64.zero;
+
+  /**
+   * Stores the maximum value of the credit note (ignored if 0)
+   *
+   * @generated from field: uint64 total_value_max = 71;
+   */
+  totalValueMax = protoInt64.zero;
+
   constructor(data?: PartialMessage<CreditNotesServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2238,7 +2303,7 @@ export class CreditNotesServiceCountReq extends Message<CreditNotesServiceCountR
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(CREDIT_NOTE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2246,6 +2311,8 @@ export class CreditNotesServiceCountReq extends Message<CreditNotesServiceCountR
     { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNotesServiceCountReq {
@@ -2331,9 +2398,9 @@ export class CreditNotesServiceSearchAllReq extends Message<CreditNotesServiceSe
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = CREDIT_NOTE_REF_FROM.CREDIT_NOTE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2373,7 +2440,7 @@ export class CreditNotesServiceSearchAllReq extends Message<CreditNotesServiceSe
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(CREDIT_NOTE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
