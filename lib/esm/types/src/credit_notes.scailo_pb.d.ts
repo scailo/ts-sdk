@@ -1767,4 +1767,58 @@ export declare class CreditNoteReferencesList extends Message<CreditNoteReferenc
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CreditNoteReferencesList;
     static equals(a: CreditNoteReferencesList | PlainMessage<CreditNoteReferencesList> | undefined, b: CreditNoteReferencesList | PlainMessage<CreditNoteReferencesList> | undefined): boolean;
 }
+/**
+ *
+ * Describes the returned statistics of the credit note
+ *
+ * @generated from message Scailo.CreditNoteReturnStatistics
+ */
+export declare class CreditNoteReturnStatistics extends Message<CreditNoteReturnStatistics> {
+    /**
+     * Stores the ID of the family
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the billed quantity
+     *
+     * @generated from field: uint64 billed_quantity = 2;
+     */
+    billedQuantity: bigint;
+    /**
+     * Stores the returned quantity
+     *
+     * @generated from field: uint64 returned_quantity = 3;
+     */
+    returnedQuantity: bigint;
+    constructor(data?: PartialMessage<CreditNoteReturnStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.CreditNoteReturnStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNoteReturnStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CreditNoteReturnStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CreditNoteReturnStatistics;
+    static equals(a: CreditNoteReturnStatistics | PlainMessage<CreditNoteReturnStatistics> | undefined, b: CreditNoteReturnStatistics | PlainMessage<CreditNoteReturnStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of returned statistics of the credit note
+ *
+ * @generated from message Scailo.CreditNoteReturnStatisticsList
+ */
+export declare class CreditNoteReturnStatisticsList extends Message<CreditNoteReturnStatisticsList> {
+    /**
+     * @generated from field: repeated Scailo.CreditNoteReturnStatistics list = 1;
+     */
+    list: CreditNoteReturnStatistics[];
+    constructor(data?: PartialMessage<CreditNoteReturnStatisticsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.CreditNoteReturnStatisticsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNoteReturnStatisticsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CreditNoteReturnStatisticsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CreditNoteReturnStatisticsList;
+    static equals(a: CreditNoteReturnStatisticsList | PlainMessage<CreditNoteReturnStatisticsList> | undefined, b: CreditNoteReturnStatisticsList | PlainMessage<CreditNoteReturnStatisticsList> | undefined): boolean;
+}
 //# sourceMappingURL=credit_notes.scailo_pb.d.ts.map

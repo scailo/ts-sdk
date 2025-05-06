@@ -2546,3 +2546,101 @@ export class DebitNoteReferencesList extends Message<DebitNoteReferencesList> {
   }
 }
 
+/**
+ *
+ * Describes the returned statistics of the debit note
+ *
+ * @generated from message Scailo.DebitNoteReturnStatistics
+ */
+export class DebitNoteReturnStatistics extends Message<DebitNoteReturnStatistics> {
+  /**
+   * Stores the ID of the family
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the billed quantity
+   *
+   * @generated from field: uint64 billed_quantity = 2;
+   */
+  billedQuantity = protoInt64.zero;
+
+  /**
+   * Stores the returned quantity
+   *
+   * @generated from field: uint64 returned_quantity = 3;
+   */
+  returnedQuantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<DebitNoteReturnStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.DebitNoteReturnStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "billed_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "returned_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNoteReturnStatistics {
+    return new DebitNoteReturnStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DebitNoteReturnStatistics {
+    return new DebitNoteReturnStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DebitNoteReturnStatistics {
+    return new DebitNoteReturnStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: DebitNoteReturnStatistics | PlainMessage<DebitNoteReturnStatistics> | undefined, b: DebitNoteReturnStatistics | PlainMessage<DebitNoteReturnStatistics> | undefined): boolean {
+    return proto3.util.equals(DebitNoteReturnStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of returned statistics of the debit note
+ *
+ * @generated from message Scailo.DebitNoteReturnStatisticsList
+ */
+export class DebitNoteReturnStatisticsList extends Message<DebitNoteReturnStatisticsList> {
+  /**
+   * @generated from field: repeated Scailo.DebitNoteReturnStatistics list = 1;
+   */
+  list: DebitNoteReturnStatistics[] = [];
+
+  constructor(data?: PartialMessage<DebitNoteReturnStatisticsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.DebitNoteReturnStatisticsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: DebitNoteReturnStatistics, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNoteReturnStatisticsList {
+    return new DebitNoteReturnStatisticsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DebitNoteReturnStatisticsList {
+    return new DebitNoteReturnStatisticsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DebitNoteReturnStatisticsList {
+    return new DebitNoteReturnStatisticsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: DebitNoteReturnStatisticsList | PlainMessage<DebitNoteReturnStatisticsList> | undefined, b: DebitNoteReturnStatisticsList | PlainMessage<DebitNoteReturnStatisticsList> | undefined): boolean {
+    return proto3.util.equals(DebitNoteReturnStatisticsList, a, b);
+  }
+}
+
