@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which an inward job free issue material can be added
+ *
+ * @generated from enum Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM
+ */
+export declare enum INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the inward job free issue material originated from an inward job
+     *
+     * @generated from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_INWARD_JOB = 1;
+     */
+    INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_INWARD_JOB = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_SORT_KEY
@@ -198,9 +218,9 @@ export declare class InwardJobsFreeIssueMaterialsServiceCreateRequest extends Me
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -388,9 +408,9 @@ export declare class InwardJobFreeIssueMaterial extends Message<InwardJobFreeIss
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -872,9 +892,9 @@ export declare class InwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForS
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1112,9 +1132,9 @@ export declare class InwardJobsFreeIssueMaterialsServiceFilterReq extends Messag
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1255,9 +1275,9 @@ export declare class InwardJobsFreeIssueMaterialsServiceCountReq extends Message
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1356,9 +1376,9 @@ export declare class InwardJobsFreeIssueMaterialsServiceSearchAllReq extends Mes
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM;
     /**
      * The associated ID of the reference
      *

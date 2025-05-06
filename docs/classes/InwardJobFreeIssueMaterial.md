@@ -78,7 +78,7 @@ Message\&lt;InwardJobFreeIssueMaterial\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:590
+src/inward_jobs_free_issue_materials.scailo_pb.ts:617
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:518
+src/inward_jobs_free_issue_materials.scailo_pb.ts:545
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:539
+src/inward_jobs_free_issue_materials.scailo_pb.ts:566
 
 ___
 
@@ -126,7 +126,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:504
+src/inward_jobs_free_issue_materials.scailo_pb.ts:531
 
 ___
 
@@ -142,7 +142,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:560
+src/inward_jobs_free_issue_materials.scailo_pb.ts:587
 
 ___
 
@@ -158,7 +158,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:588
+src/inward_jobs_free_issue_materials.scailo_pb.ts:615
 
 ___
 
@@ -174,7 +174,7 @@ from field: repeated Scailo.InwardJobFreeIssueMaterialItem list = 20;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:581
+src/inward_jobs_free_issue_materials.scailo_pb.ts:608
 
 ___
 
@@ -190,7 +190,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:532
+src/inward_jobs_free_issue_materials.scailo_pb.ts:559
 
 ___
 
@@ -206,23 +206,23 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:511
+src/inward_jobs_free_issue_materials.scailo_pb.ts:538
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM`](../enums/INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.md) = `INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 12;
+from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:567
+src/inward_jobs_free_issue_materials.scailo_pb.ts:594
 
 ___
 
@@ -238,7 +238,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:574
+src/inward_jobs_free_issue_materials.scailo_pb.ts:601
 
 ___
 
@@ -254,7 +254,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:553
+src/inward_jobs_free_issue_materials.scailo_pb.ts:580
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:525
+src/inward_jobs_free_issue_materials.scailo_pb.ts:552
 
 ___
 
@@ -286,7 +286,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:546
+src/inward_jobs_free_issue_materials.scailo_pb.ts:573
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:597
+src/inward_jobs_free_issue_materials.scailo_pb.ts:624
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:595
+src/inward_jobs_free_issue_materials.scailo_pb.ts:622
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:596
+src/inward_jobs_free_issue_materials.scailo_pb.ts:623
 
 ## Methods
 
@@ -604,7 +604,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:625
+src/inward_jobs_free_issue_materials.scailo_pb.ts:652
 
 ___
 
@@ -625,7 +625,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:613
+src/inward_jobs_free_issue_materials.scailo_pb.ts:640
 
 ___
 
@@ -646,7 +646,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:617
+src/inward_jobs_free_issue_materials.scailo_pb.ts:644
 
 ___
 
@@ -667,4 +667,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:621
+src/inward_jobs_free_issue_materials.scailo_pb.ts:648

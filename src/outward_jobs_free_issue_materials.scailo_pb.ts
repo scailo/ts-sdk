@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which an outward job free issue material can be added
+ *
+ * @generated from enum Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM
+ */
+export enum OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the outward job free issue material originated from an outward job
+   *
+   * @generated from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_OUTWARD_JOB = 1;
+   */
+  OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_OUTWARD_JOB = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM)
+proto3.util.setEnumType(OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM, "Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM", [
+  { no: 0, name: "OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_OUTWARD_JOB" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_SORT_KEY
@@ -263,9 +290,9 @@ export class OutwardJobsFreeIssueMaterialsServiceCreateRequest extends Message<O
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -300,7 +327,7 @@ export class OutwardJobsFreeIssueMaterialsServiceCreateRequest extends Message<O
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
@@ -586,9 +613,9 @@ export class OutwardJobFreeIssueMaterial extends Message<OutwardJobFreeIssueMate
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -635,7 +662,7 @@ export class OutwardJobFreeIssueMaterial extends Message<OutwardJobFreeIssueMate
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: OutwardJobFreeIssueMaterialItem, repeated: true },
@@ -1407,9 +1434,9 @@ export class OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRe
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1433,7 +1460,7 @@ export class OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRe
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1746,9 +1773,9 @@ export class OutwardJobsFreeIssueMaterialsServiceFilterReq extends Message<Outwa
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1813,7 +1840,7 @@ export class OutwardJobsFreeIssueMaterialsServiceFilterReq extends Message<Outwa
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1953,9 +1980,9 @@ export class OutwardJobsFreeIssueMaterialsServiceCountReq extends Message<Outwar
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2016,7 +2043,7 @@ export class OutwardJobsFreeIssueMaterialsServiceCountReq extends Message<Outwar
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2107,9 +2134,9 @@ export class OutwardJobsFreeIssueMaterialsServiceSearchAllReq extends Message<Ou
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2134,7 +2161,7 @@ export class OutwardJobsFreeIssueMaterialsServiceSearchAllReq extends Message<Ou
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 

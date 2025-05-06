@@ -68,7 +68,7 @@ Message\&lt;OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceReq
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1428
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1455
 
 ## Properties
 
@@ -84,23 +84,23 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1426
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1453
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM`](../enums/OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.md) = `OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 1;
+from field: Scailo.OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM ref_from = 1;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1412
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1439
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1419
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1446
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1435
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1462
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1433
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1460
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1434
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1461
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1453
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1480
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1441
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1468
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1445
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1472
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:1449
+src/outward_jobs_free_issue_materials.scailo_pb.ts:1476

@@ -36,7 +36,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:185
+src/outward_jobs_free_issue_materials.scailo_pb.ts:212
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:178
+src/outward_jobs_free_issue_materials.scailo_pb.ts:205
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:192
+src/outward_jobs_free_issue_materials.scailo_pb.ts:219
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:199
+src/outward_jobs_free_issue_materials.scailo_pb.ts:226
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:164
+src/outward_jobs_free_issue_materials.scailo_pb.ts:191
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:213
+src/outward_jobs_free_issue_materials.scailo_pb.ts:240
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:157
+src/outward_jobs_free_issue_materials.scailo_pb.ts:184
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:171
+src/outward_jobs_free_issue_materials.scailo_pb.ts:198
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:206
+src/outward_jobs_free_issue_materials.scailo_pb.ts:233

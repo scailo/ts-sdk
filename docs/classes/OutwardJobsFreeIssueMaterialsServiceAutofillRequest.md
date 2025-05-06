@@ -68,7 +68,7 @@ Message\&lt;OutwardJobsFreeIssueMaterialsServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:436
+src/outward_jobs_free_issue_materials.scailo_pb.ts:463
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: bool split_into_unit_quantity = 10;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:434
+src/outward_jobs_free_issue_materials.scailo_pb.ts:461
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:420
+src/outward_jobs_free_issue_materials.scailo_pb.ts:447
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:427
+src/outward_jobs_free_issue_materials.scailo_pb.ts:454
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:443
+src/outward_jobs_free_issue_materials.scailo_pb.ts:470
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:441
+src/outward_jobs_free_issue_materials.scailo_pb.ts:468
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:442
+src/outward_jobs_free_issue_materials.scailo_pb.ts:469
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:461
+src/outward_jobs_free_issue_materials.scailo_pb.ts:488
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:449
+src/outward_jobs_free_issue_materials.scailo_pb.ts:476
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:453
+src/outward_jobs_free_issue_materials.scailo_pb.ts:480
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:457
+src/outward_jobs_free_issue_materials.scailo_pb.ts:484

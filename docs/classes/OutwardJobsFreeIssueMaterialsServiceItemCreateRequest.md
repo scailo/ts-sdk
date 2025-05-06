@@ -73,7 +73,7 @@ Message\&lt;OutwardJobsFreeIssueMaterialsServiceItemCreateRequest\&gt;.construct
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:725
+src/outward_jobs_free_issue_materials.scailo_pb.ts:752
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:688
+src/outward_jobs_free_issue_materials.scailo_pb.ts:715
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:702
+src/outward_jobs_free_issue_materials.scailo_pb.ts:729
 
 ___
 
@@ -121,7 +121,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:695
+src/outward_jobs_free_issue_materials.scailo_pb.ts:722
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 outward_job_free_issue_material_id = 10;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:681
+src/outward_jobs_free_issue_materials.scailo_pb.ts:708
 
 ___
 
@@ -153,7 +153,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:674
+src/outward_jobs_free_issue_materials.scailo_pb.ts:701
 
 ___
 
@@ -169,7 +169,7 @@ from field: string vendor_family_code = 16;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:723
+src/outward_jobs_free_issue_materials.scailo_pb.ts:750
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 vendor_quantity = 15;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:716
+src/outward_jobs_free_issue_materials.scailo_pb.ts:743
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vendor_uom_id = 14;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:709
+src/outward_jobs_free_issue_materials.scailo_pb.ts:736
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:732
+src/outward_jobs_free_issue_materials.scailo_pb.ts:759
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:730
+src/outward_jobs_free_issue_materials.scailo_pb.ts:757
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:731
+src/outward_jobs_free_issue_materials.scailo_pb.ts:758
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:755
+src/outward_jobs_free_issue_materials.scailo_pb.ts:782
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:743
+src/outward_jobs_free_issue_materials.scailo_pb.ts:770
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:747
+src/outward_jobs_free_issue_materials.scailo_pb.ts:774
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials.scailo_pb.ts:751
+src/outward_jobs_free_issue_materials.scailo_pb.ts:778

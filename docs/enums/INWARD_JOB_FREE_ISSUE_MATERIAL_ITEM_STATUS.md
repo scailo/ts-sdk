@@ -30,7 +30,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:122
+src/inward_jobs_free_issue_materials.scailo_pb.ts:149
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:129
+src/inward_jobs_free_issue_materials.scailo_pb.ts:156
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:136
+src/inward_jobs_free_issue_materials.scailo_pb.ts:163
