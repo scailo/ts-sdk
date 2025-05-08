@@ -1835,3 +1835,109 @@ export class AssetIndentsServiceSearchAllReq extends Message<AssetIndentsService
   }
 }
 
+/**
+ *
+ * Describes the issued statistics of the asset indent
+ *
+ * @generated from message Scailo.AssetIndentIssuedStatistics
+ */
+export class AssetIndentIssuedStatistics extends Message<AssetIndentIssuedStatistics> {
+  /**
+   * Stores the ID of the family
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the indented quantity
+   *
+   * @generated from field: uint64 indented_quantity = 2;
+   */
+  indentedQuantity = protoInt64.zero;
+
+  /**
+   * Stores the unapproved issued quantity
+   *
+   * @generated from field: uint64 unapproved_issued_quantity = 3;
+   */
+  unapprovedIssuedQuantity = protoInt64.zero;
+
+  /**
+   * Stores the approved issued quantity
+   *
+   * @generated from field: uint64 approved_issued_quantity = 4;
+   */
+  approvedIssuedQuantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<AssetIndentIssuedStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.AssetIndentIssuedStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "indented_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "unapproved_issued_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "approved_issued_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AssetIndentIssuedStatistics {
+    return new AssetIndentIssuedStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentIssuedStatistics {
+    return new AssetIndentIssuedStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentIssuedStatistics {
+    return new AssetIndentIssuedStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: AssetIndentIssuedStatistics | PlainMessage<AssetIndentIssuedStatistics> | undefined, b: AssetIndentIssuedStatistics | PlainMessage<AssetIndentIssuedStatistics> | undefined): boolean {
+    return proto3.util.equals(AssetIndentIssuedStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of issued statistics of the asset indent
+ *
+ * @generated from message Scailo.AssetIndentIssuedStatisticsList
+ */
+export class AssetIndentIssuedStatisticsList extends Message<AssetIndentIssuedStatisticsList> {
+  /**
+   * @generated from field: repeated Scailo.AssetIndentIssuedStatistics list = 1;
+   */
+  list: AssetIndentIssuedStatistics[] = [];
+
+  constructor(data?: PartialMessage<AssetIndentIssuedStatisticsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.AssetIndentIssuedStatisticsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: AssetIndentIssuedStatistics, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AssetIndentIssuedStatisticsList {
+    return new AssetIndentIssuedStatisticsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentIssuedStatisticsList {
+    return new AssetIndentIssuedStatisticsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentIssuedStatisticsList {
+    return new AssetIndentIssuedStatisticsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: AssetIndentIssuedStatisticsList | PlainMessage<AssetIndentIssuedStatisticsList> | undefined, b: AssetIndentIssuedStatisticsList | PlainMessage<AssetIndentIssuedStatisticsList> | undefined): boolean {
+    return proto3.util.equals(AssetIndentIssuedStatisticsList, a, b);
+  }
+}
+

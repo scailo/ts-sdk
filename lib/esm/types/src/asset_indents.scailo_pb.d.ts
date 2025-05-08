@@ -1210,4 +1210,64 @@ export declare class AssetIndentsServiceSearchAllReq extends Message<AssetIndent
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServiceSearchAllReq;
     static equals(a: AssetIndentsServiceSearchAllReq | PlainMessage<AssetIndentsServiceSearchAllReq> | undefined, b: AssetIndentsServiceSearchAllReq | PlainMessage<AssetIndentsServiceSearchAllReq> | undefined): boolean;
 }
+/**
+ *
+ * Describes the issued statistics of the asset indent
+ *
+ * @generated from message Scailo.AssetIndentIssuedStatistics
+ */
+export declare class AssetIndentIssuedStatistics extends Message<AssetIndentIssuedStatistics> {
+    /**
+     * Stores the ID of the family
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the indented quantity
+     *
+     * @generated from field: uint64 indented_quantity = 2;
+     */
+    indentedQuantity: bigint;
+    /**
+     * Stores the unapproved issued quantity
+     *
+     * @generated from field: uint64 unapproved_issued_quantity = 3;
+     */
+    unapprovedIssuedQuantity: bigint;
+    /**
+     * Stores the approved issued quantity
+     *
+     * @generated from field: uint64 approved_issued_quantity = 4;
+     */
+    approvedIssuedQuantity: bigint;
+    constructor(data?: PartialMessage<AssetIndentIssuedStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.AssetIndentIssuedStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AssetIndentIssuedStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentIssuedStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentIssuedStatistics;
+    static equals(a: AssetIndentIssuedStatistics | PlainMessage<AssetIndentIssuedStatistics> | undefined, b: AssetIndentIssuedStatistics | PlainMessage<AssetIndentIssuedStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of issued statistics of the asset indent
+ *
+ * @generated from message Scailo.AssetIndentIssuedStatisticsList
+ */
+export declare class AssetIndentIssuedStatisticsList extends Message<AssetIndentIssuedStatisticsList> {
+    /**
+     * @generated from field: repeated Scailo.AssetIndentIssuedStatistics list = 1;
+     */
+    list: AssetIndentIssuedStatistics[];
+    constructor(data?: PartialMessage<AssetIndentIssuedStatisticsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.AssetIndentIssuedStatisticsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AssetIndentIssuedStatisticsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentIssuedStatisticsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentIssuedStatisticsList;
+    static equals(a: AssetIndentIssuedStatisticsList | PlainMessage<AssetIndentIssuedStatisticsList> | undefined, b: AssetIndentIssuedStatisticsList | PlainMessage<AssetIndentIssuedStatisticsList> | undefined): boolean;
+}
 //# sourceMappingURL=asset_indents.scailo_pb.d.ts.map
