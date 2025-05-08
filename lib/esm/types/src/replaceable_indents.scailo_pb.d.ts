@@ -1292,4 +1292,64 @@ export declare class ReplaceableIndentsServicePaginatedItemsResponse extends Mes
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginatedItemsResponse;
     static equals(a: ReplaceableIndentsServicePaginatedItemsResponse | PlainMessage<ReplaceableIndentsServicePaginatedItemsResponse> | undefined, b: ReplaceableIndentsServicePaginatedItemsResponse | PlainMessage<ReplaceableIndentsServicePaginatedItemsResponse> | undefined): boolean;
 }
+/**
+ *
+ * Describes the issued statistics of the replaceable indent
+ *
+ * @generated from message Scailo.ReplaceableIndentIssuedStatistics
+ */
+export declare class ReplaceableIndentIssuedStatistics extends Message<ReplaceableIndentIssuedStatistics> {
+    /**
+     * Stores the ID of the family
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the indented quantity
+     *
+     * @generated from field: uint64 indented_quantity = 2;
+     */
+    indentedQuantity: bigint;
+    /**
+     * Stores the unapproved issued quantity
+     *
+     * @generated from field: uint64 unapproved_issued_quantity = 3;
+     */
+    unapprovedIssuedQuantity: bigint;
+    /**
+     * Stores the approved issued quantity
+     *
+     * @generated from field: uint64 approved_issued_quantity = 4;
+     */
+    approvedIssuedQuantity: bigint;
+    constructor(data?: PartialMessage<ReplaceableIndentIssuedStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ReplaceableIndentIssuedStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentIssuedStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentIssuedStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentIssuedStatistics;
+    static equals(a: ReplaceableIndentIssuedStatistics | PlainMessage<ReplaceableIndentIssuedStatistics> | undefined, b: ReplaceableIndentIssuedStatistics | PlainMessage<ReplaceableIndentIssuedStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of issued statistics of the replaceable indent
+ *
+ * @generated from message Scailo.ReplaceableIndentIssuedStatisticsList
+ */
+export declare class ReplaceableIndentIssuedStatisticsList extends Message<ReplaceableIndentIssuedStatisticsList> {
+    /**
+     * @generated from field: repeated Scailo.ReplaceableIndentIssuedStatistics list = 1;
+     */
+    list: ReplaceableIndentIssuedStatistics[];
+    constructor(data?: PartialMessage<ReplaceableIndentIssuedStatisticsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ReplaceableIndentIssuedStatisticsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentIssuedStatisticsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentIssuedStatisticsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentIssuedStatisticsList;
+    static equals(a: ReplaceableIndentIssuedStatisticsList | PlainMessage<ReplaceableIndentIssuedStatisticsList> | undefined, b: ReplaceableIndentIssuedStatisticsList | PlainMessage<ReplaceableIndentIssuedStatisticsList> | undefined): boolean;
+}
 //# sourceMappingURL=replaceable_indents.scailo_pb.d.ts.map

@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { ReplaceableIndent, ReplaceableIndentItem, ReplaceableIndentItemHistoryRequest, ReplaceableIndentItemProspectiveInfoRequest, ReplaceableIndentItemsSearchRequest, ReplaceableIndentsItemsList, ReplaceableIndentsList, ReplaceableIndentsServiceAutofillRequest, ReplaceableIndentsServiceCountReq, ReplaceableIndentsServiceCreateRequest, ReplaceableIndentsServiceFilterReq, ReplaceableIndentsServiceItemCreateRequest, ReplaceableIndentsServiceItemUpdateRequest, ReplaceableIndentsServicePaginatedItemsResponse, ReplaceableIndentsServicePaginationReq, ReplaceableIndentsServicePaginationResponse, ReplaceableIndentsServiceSearchAllReq, ReplaceableIndentsServiceUpdateRequest } from "./replaceable_indents.scailo_pb.js";
+import { ReplaceableIndent, ReplaceableIndentIssuedStatisticsList, ReplaceableIndentItem, ReplaceableIndentItemHistoryRequest, ReplaceableIndentItemProspectiveInfoRequest, ReplaceableIndentItemsSearchRequest, ReplaceableIndentsItemsList, ReplaceableIndentsList, ReplaceableIndentsServiceAutofillRequest, ReplaceableIndentsServiceCountReq, ReplaceableIndentsServiceCreateRequest, ReplaceableIndentsServiceFilterReq, ReplaceableIndentsServiceItemCreateRequest, ReplaceableIndentsServiceItemUpdateRequest, ReplaceableIndentsServicePaginatedItemsResponse, ReplaceableIndentsServicePaginationReq, ReplaceableIndentsServicePaginationResponse, ReplaceableIndentsServiceSearchAllReq, ReplaceableIndentsServiceUpdateRequest } from "./replaceable_indents.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -500,6 +500,17 @@ export const ReplaceableIndentsService = {
       name: "DownloadByUUID",
       I: IdentifierUUID,
       O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View issued (stock issuance) statistics of the replaceable indent
+     *
+     * @generated from rpc Scailo.ReplaceableIndentsService.ViewIssuedStatistics
+     */
+    viewIssuedStatistics: {
+      name: "ViewIssuedStatistics",
+      I: IdentifierUUID,
+      O: ReplaceableIndentIssuedStatisticsList,
       kind: MethodKind.Unary,
     },
     /**

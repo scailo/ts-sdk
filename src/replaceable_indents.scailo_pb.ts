@@ -1957,3 +1957,109 @@ export class ReplaceableIndentsServicePaginatedItemsResponse extends Message<Rep
   }
 }
 
+/**
+ *
+ * Describes the issued statistics of the replaceable indent
+ *
+ * @generated from message Scailo.ReplaceableIndentIssuedStatistics
+ */
+export class ReplaceableIndentIssuedStatistics extends Message<ReplaceableIndentIssuedStatistics> {
+  /**
+   * Stores the ID of the family
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the indented quantity
+   *
+   * @generated from field: uint64 indented_quantity = 2;
+   */
+  indentedQuantity = protoInt64.zero;
+
+  /**
+   * Stores the unapproved issued quantity
+   *
+   * @generated from field: uint64 unapproved_issued_quantity = 3;
+   */
+  unapprovedIssuedQuantity = protoInt64.zero;
+
+  /**
+   * Stores the approved issued quantity
+   *
+   * @generated from field: uint64 approved_issued_quantity = 4;
+   */
+  approvedIssuedQuantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<ReplaceableIndentIssuedStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ReplaceableIndentIssuedStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "indented_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "unapproved_issued_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "approved_issued_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentIssuedStatistics {
+    return new ReplaceableIndentIssuedStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentIssuedStatistics {
+    return new ReplaceableIndentIssuedStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentIssuedStatistics {
+    return new ReplaceableIndentIssuedStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ReplaceableIndentIssuedStatistics | PlainMessage<ReplaceableIndentIssuedStatistics> | undefined, b: ReplaceableIndentIssuedStatistics | PlainMessage<ReplaceableIndentIssuedStatistics> | undefined): boolean {
+    return proto3.util.equals(ReplaceableIndentIssuedStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of issued statistics of the replaceable indent
+ *
+ * @generated from message Scailo.ReplaceableIndentIssuedStatisticsList
+ */
+export class ReplaceableIndentIssuedStatisticsList extends Message<ReplaceableIndentIssuedStatisticsList> {
+  /**
+   * @generated from field: repeated Scailo.ReplaceableIndentIssuedStatistics list = 1;
+   */
+  list: ReplaceableIndentIssuedStatistics[] = [];
+
+  constructor(data?: PartialMessage<ReplaceableIndentIssuedStatisticsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ReplaceableIndentIssuedStatisticsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: ReplaceableIndentIssuedStatistics, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentIssuedStatisticsList {
+    return new ReplaceableIndentIssuedStatisticsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentIssuedStatisticsList {
+    return new ReplaceableIndentIssuedStatisticsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentIssuedStatisticsList {
+    return new ReplaceableIndentIssuedStatisticsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ReplaceableIndentIssuedStatisticsList | PlainMessage<ReplaceableIndentIssuedStatisticsList> | undefined, b: ReplaceableIndentIssuedStatisticsList | PlainMessage<ReplaceableIndentIssuedStatisticsList> | undefined): boolean {
+    return proto3.util.equals(ReplaceableIndentIssuedStatisticsList, a, b);
+  }
+}
+
