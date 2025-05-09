@@ -35,7 +35,7 @@ from enum value: STOCK_ISSUANCE_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:134
+src/stock_issuances.scailo_pb.ts:177
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: STOCK_ISSUANCE_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:127
+src/stock_issuances.scailo_pb.ts:170
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: STOCK_ISSUANCE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:141
+src/stock_issuances.scailo_pb.ts:184
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: STOCK_ISSUANCE_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:113
+src/stock_issuances.scailo_pb.ts:156
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: STOCK_ISSUANCE_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:148
+src/stock_issuances.scailo_pb.ts:191
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: STOCK_ISSUANCE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:106
+src/stock_issuances.scailo_pb.ts:149
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: STOCK_ISSUANCE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:155
+src/stock_issuances.scailo_pb.ts:198
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: STOCK_ISSUANCE_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:120
+src/stock_issuances.scailo_pb.ts:163

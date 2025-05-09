@@ -30,7 +30,7 @@ from enum value: PRODUCTION_INDENT_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:189
+src/production_indents.scailo_pb.ts:267
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PRODUCTION_INDENT_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:196
+src/production_indents.scailo_pb.ts:274
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PRODUCTION_INDENT_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:203
+src/production_indents.scailo_pb.ts:281

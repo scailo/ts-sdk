@@ -4,6 +4,38 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a stock issuance can be added
+ *
+ * @generated from enum Scailo.STOCK_ISSUANCE_REF_FROM
+ */
+export declare enum STOCK_ISSUANCE_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the stock issuance originated from a production indent
+     *
+     * @generated from enum value: STOCK_ISSUANCE_REF_FROM_PRODUCTION_INDENT = 1;
+     */
+    STOCK_ISSUANCE_REF_FROM_PRODUCTION_INDENT = 1,
+    /**
+     * Denotes that the stock issuance originated from an asset indent
+     *
+     * @generated from enum value: STOCK_ISSUANCE_REF_FROM_ASSET_INDENT = 2;
+     */
+    STOCK_ISSUANCE_REF_FROM_ASSET_INDENT = 2,
+    /**
+     * Denotes that the stock issuance originated from a replaceable indent
+     *
+     * @generated from enum value: STOCK_ISSUANCE_REF_FROM_REPLACEABLE_INDENT = 3;
+     */
+    STOCK_ISSUANCE_REF_FROM_REPLACEABLE_INDENT = 3
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.STOCK_ISSUANCE_SORT_KEY
@@ -180,9 +212,9 @@ export declare class StockIssuancesServiceCreateRequest extends Message<StockIss
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: STOCK_ISSUANCE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -354,9 +386,9 @@ export declare class StockIssuance extends Message<StockIssuance> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: STOCK_ISSUANCE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -656,9 +688,9 @@ export declare class StockIssuancesServiceAlreadyAddedQuantityForSourceRequest e
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: STOCK_ISSUANCE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -896,9 +928,9 @@ export declare class StockIssuancesServiceFilterReq extends Message<StockIssuanc
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: STOCK_ISSUANCE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1026,9 +1058,9 @@ export declare class StockIssuancesServiceCountReq extends Message<StockIssuance
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: STOCK_ISSUANCE_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1114,9 +1146,9 @@ export declare class StockIssuancesServiceSearchAllReq extends Message<StockIssu
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: STOCK_ISSUANCE_REF_FROM;
     /**
      * The associated ID of the reference
      *

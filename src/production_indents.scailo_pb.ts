@@ -10,6 +10,84 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible production references from which a production indent can be added
+ *
+ * @generated from enum Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR
+ */
+export enum PRODUCTION_INDENT_PRODUCTION_REF_FOR {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED = 0;
+   */
+  PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the production indent is not associated to any production plan
+   *
+   * @generated from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_NONE = 1;
+   */
+  PRODUCTION_INDENT_PRODUCTION_REF_FOR_NONE = 1,
+
+  /**
+   * Denotes that the production indent is associated to a production plan
+   *
+   * @generated from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_PRODUCTION_PLAN = 2;
+   */
+  PRODUCTION_INDENT_PRODUCTION_REF_FOR_PRODUCTION_PLAN = 2,
+}
+// Retrieve enum metadata with: proto3.getEnumType(PRODUCTION_INDENT_PRODUCTION_REF_FOR)
+proto3.util.setEnumType(PRODUCTION_INDENT_PRODUCTION_REF_FOR, "Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR", [
+  { no: 0, name: "PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED" },
+  { no: 1, name: "PRODUCTION_INDENT_PRODUCTION_REF_FOR_NONE" },
+  { no: 2, name: "PRODUCTION_INDENT_PRODUCTION_REF_FOR_PRODUCTION_PLAN" },
+]);
+
+/**
+ *
+ * Stores all the possible indent references from which a production indent can be added
+ *
+ * @generated from enum Scailo.PRODUCTION_INDENT_INDENT_REF_FOR
+ */
+export enum PRODUCTION_INDENT_INDENT_REF_FOR {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED = 0;
+   */
+  PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the production indent is not associated to any indent
+   *
+   * @generated from enum value: PRODUCTION_INDENT_INDENT_REF_FOR_NONE = 1;
+   */
+  PRODUCTION_INDENT_INDENT_REF_FOR_NONE = 1,
+
+  /**
+   * Denotes that the indent is created on the basis of a family
+   *
+   * @generated from enum value: PRODUCTION_INDENT_INDENT_REF_FOR_FAMILY = 2;
+   */
+  PRODUCTION_INDENT_INDENT_REF_FOR_FAMILY = 2,
+
+  /**
+   * Denotes that the indent is created on the basis of a work order
+   *
+   * @generated from enum value: PRODUCTION_INDENT_INDENT_REF_FOR_WORK_ORDER = 3;
+   */
+  PRODUCTION_INDENT_INDENT_REF_FOR_WORK_ORDER = 3,
+}
+// Retrieve enum metadata with: proto3.getEnumType(PRODUCTION_INDENT_INDENT_REF_FOR)
+proto3.util.setEnumType(PRODUCTION_INDENT_INDENT_REF_FOR, "Scailo.PRODUCTION_INDENT_INDENT_REF_FOR", [
+  { no: 0, name: "PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED" },
+  { no: 1, name: "PRODUCTION_INDENT_INDENT_REF_FOR_NONE" },
+  { no: 2, name: "PRODUCTION_INDENT_INDENT_REF_FOR_FAMILY" },
+  { no: 3, name: "PRODUCTION_INDENT_INDENT_REF_FOR_WORK_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.PRODUCTION_INDENT_SORT_KEY
@@ -261,9 +339,9 @@ export class ProductionIndentsServiceCreateRequest extends Message<ProductionInd
   /**
    * Stores if the indent is associated to a production plan
    *
-   * @generated from field: string production_ref_for = 16;
+   * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 16;
    */
-  productionRefFor = "";
+  productionRefFor = PRODUCTION_INDENT_PRODUCTION_REF_FOR.PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the production plan ID if production_ref_for is production-plan
@@ -275,9 +353,9 @@ export class ProductionIndentsServiceCreateRequest extends Message<ProductionInd
   /**
    * Stores if the indent should be created on the basis of a work order or a family
    *
-   * @generated from field: string indent_ref_for = 18;
+   * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 18;
    */
-  indentRefFor = "";
+  indentRefFor = PRODUCTION_INDENT_INDENT_REF_FOR.PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the ID of the associated family or work order
@@ -307,9 +385,9 @@ export class ProductionIndentsServiceCreateRequest extends Message<ProductionInd
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 16, name: "production_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "production_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_PRODUCTION_REF_FOR) },
     { no: 17, name: "production_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "indent_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "indent_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_INDENT_REF_FOR) },
     { no: 19, name: "indent_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
@@ -566,9 +644,9 @@ export class ProductionIndent extends Message<ProductionIndent> {
   /**
    * Stores if the indent is associated to a production plan
    *
-   * @generated from field: string production_ref_for = 16;
+   * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 16;
    */
-  productionRefFor = "";
+  productionRefFor = PRODUCTION_INDENT_PRODUCTION_REF_FOR.PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the production plan ID if production_ref_for is production-plan
@@ -580,9 +658,9 @@ export class ProductionIndent extends Message<ProductionIndent> {
   /**
    * Stores if the indent should be created on the basis of a work order or a family
    *
-   * @generated from field: string indent_ref_for = 18;
+   * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 18;
    */
-  indentRefFor = "";
+  indentRefFor = PRODUCTION_INDENT_INDENT_REF_FOR.PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the ID of the associated family or work order
@@ -624,9 +702,9 @@ export class ProductionIndent extends Message<ProductionIndent> {
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 16, name: "production_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "production_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_PRODUCTION_REF_FOR) },
     { no: 17, name: "production_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "indent_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "indent_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_INDENT_REF_FOR) },
     { no: 19, name: "indent_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "list", kind: "message", T: ProductionIndentItem, repeated: true },
     { no: 40, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
@@ -1360,9 +1438,9 @@ export class ProductionIndentsServiceFilterReq extends Message<ProductionIndents
   /**
    * Stores if the indent is associated to a production plan
    *
-   * @generated from field: string production_ref_for = 26;
+   * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 26;
    */
-  productionRefFor = "";
+  productionRefFor = PRODUCTION_INDENT_PRODUCTION_REF_FOR.PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the production plan ID if production_ref_for is production-plan
@@ -1374,9 +1452,9 @@ export class ProductionIndentsServiceFilterReq extends Message<ProductionIndents
   /**
    * Stores if the indent should be created on the basis of a work order or a family
    *
-   * @generated from field: string indent_ref_for = 28;
+   * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 28;
    */
-  indentRefFor = "";
+  indentRefFor = PRODUCTION_INDENT_INDENT_REF_FOR.PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the ID of the associated family or work order
@@ -1421,9 +1499,9 @@ export class ProductionIndentsServiceFilterReq extends Message<ProductionIndents
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 26, name: "production_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 26, name: "production_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_PRODUCTION_REF_FOR) },
     { no: 27, name: "production_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "indent_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 28, name: "indent_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_INDENT_REF_FOR) },
     { no: 29, name: "indent_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1574,9 +1652,9 @@ export class ProductionIndentsServiceCountReq extends Message<ProductionIndentsS
   /**
    * Stores if the indent is associated to a production plan
    *
-   * @generated from field: string production_ref_for = 26;
+   * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 26;
    */
-  productionRefFor = "";
+  productionRefFor = PRODUCTION_INDENT_PRODUCTION_REF_FOR.PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the production plan ID if production_ref_for is production-plan
@@ -1588,9 +1666,9 @@ export class ProductionIndentsServiceCountReq extends Message<ProductionIndentsS
   /**
    * Stores if the indent should be created on the basis of a work order or a family
    *
-   * @generated from field: string indent_ref_for = 28;
+   * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 28;
    */
-  indentRefFor = "";
+  indentRefFor = PRODUCTION_INDENT_INDENT_REF_FOR.PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the ID of the associated family or work order
@@ -1631,9 +1709,9 @@ export class ProductionIndentsServiceCountReq extends Message<ProductionIndentsS
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 26, name: "production_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 26, name: "production_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_PRODUCTION_REF_FOR) },
     { no: 27, name: "production_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "indent_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 28, name: "indent_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_INDENT_REF_FOR) },
     { no: 29, name: "indent_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1735,9 +1813,9 @@ export class ProductionIndentsServiceSearchAllReq extends Message<ProductionInde
   /**
    * Stores if the indent is associated to a production plan
    *
-   * @generated from field: string production_ref_for = 26;
+   * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 26;
    */
-  productionRefFor = "";
+  productionRefFor = PRODUCTION_INDENT_PRODUCTION_REF_FOR.PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the production plan ID if production_ref_for is production-plan
@@ -1749,9 +1827,9 @@ export class ProductionIndentsServiceSearchAllReq extends Message<ProductionInde
   /**
    * Stores if the indent should be created on the basis of a work order or a family
    *
-   * @generated from field: string indent_ref_for = 28;
+   * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 28;
    */
-  indentRefFor = "";
+  indentRefFor = PRODUCTION_INDENT_INDENT_REF_FOR.PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED;
 
   /**
    * Stores the ID of the associated family or work order
@@ -1778,9 +1856,9 @@ export class ProductionIndentsServiceSearchAllReq extends Message<ProductionInde
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 26, name: "production_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 26, name: "production_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_PRODUCTION_REF_FOR) },
     { no: 27, name: "production_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "indent_ref_for", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 28, name: "indent_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_INDENT_REF_FOR) },
     { no: 29, name: "indent_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 

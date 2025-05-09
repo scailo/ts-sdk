@@ -71,7 +71,7 @@ Message\&lt;StockIssuancesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:343
+src/stock_issuances.scailo_pb.ts:386
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:341
+src/stock_issuances.scailo_pb.ts:384
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:313
+src/stock_issuances.scailo_pb.ts:356
 
 ___
 
@@ -119,7 +119,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:320
+src/stock_issuances.scailo_pb.ts:363
 
 ___
 
@@ -135,7 +135,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:334
+src/stock_issuances.scailo_pb.ts:377
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:306
+src/stock_issuances.scailo_pb.ts:349
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:327
+src/stock_issuances.scailo_pb.ts:370
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:350
+src/stock_issuances.scailo_pb.ts:393
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:348
+src/stock_issuances.scailo_pb.ts:391
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:349
+src/stock_issuances.scailo_pb.ts:392
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:371
+src/stock_issuances.scailo_pb.ts:414
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:359
+src/stock_issuances.scailo_pb.ts:402
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:363
+src/stock_issuances.scailo_pb.ts:406
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:367
+src/stock_issuances.scailo_pb.ts:410

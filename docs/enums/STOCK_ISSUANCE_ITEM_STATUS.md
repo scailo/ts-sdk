@@ -30,7 +30,7 @@ from enum value: STOCK_ISSUANCE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:181
+src/stock_issuances.scailo_pb.ts:224
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: STOCK_ISSUANCE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:188
+src/stock_issuances.scailo_pb.ts:231
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: STOCK_ISSUANCE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:195
+src/stock_issuances.scailo_pb.ts:238

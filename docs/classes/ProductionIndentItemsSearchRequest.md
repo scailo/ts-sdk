@@ -79,7 +79,7 @@ Message\&lt;ProductionIndentItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1909
+src/production_indents.scailo_pb.ts:1987
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1879
+src/production_indents.scailo_pb.ts:1957
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1872
+src/production_indents.scailo_pb.ts:1950
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1865
+src/production_indents.scailo_pb.ts:1943
 
 ___
 
@@ -143,7 +143,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1886
+src/production_indents.scailo_pb.ts:1964
 
 ___
 
@@ -159,7 +159,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1823
+src/production_indents.scailo_pb.ts:1901
 
 ___
 
@@ -175,7 +175,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1851
+src/production_indents.scailo_pb.ts:1929
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1900
+src/production_indents.scailo_pb.ts:1978
 
 ___
 
@@ -207,7 +207,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1816
+src/production_indents.scailo_pb.ts:1894
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1830
+src/production_indents.scailo_pb.ts:1908
 
 ___
 
@@ -239,7 +239,7 @@ from field: uint64 production_indent_id = 20;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1893
+src/production_indents.scailo_pb.ts:1971
 
 ___
 
@@ -255,7 +255,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1907
+src/production_indents.scailo_pb.ts:1985
 
 ___
 
@@ -271,7 +271,7 @@ from field: Scailo.PRODUCTION_INDENT_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1844
+src/production_indents.scailo_pb.ts:1922
 
 ___
 
@@ -287,7 +287,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1837
+src/production_indents.scailo_pb.ts:1915
 
 ___
 
@@ -303,7 +303,7 @@ from field: Scailo.PRODUCTION_INDENT_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1858
+src/production_indents.scailo_pb.ts:1936
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1916
+src/production_indents.scailo_pb.ts:1994
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1914
+src/production_indents.scailo_pb.ts:1992
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1915
+src/production_indents.scailo_pb.ts:1993
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1945
+src/production_indents.scailo_pb.ts:2023
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1933
+src/production_indents.scailo_pb.ts:2011
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1937
+src/production_indents.scailo_pb.ts:2015
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:1941
+src/production_indents.scailo_pb.ts:2019

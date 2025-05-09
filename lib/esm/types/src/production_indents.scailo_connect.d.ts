@@ -503,7 +503,7 @@ export declare const ProductionIndentsService: {
          */
         readonly viewIssuedStatistics: {
             readonly name: "ViewIssuedStatistics";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ProductionIndentIssuedStatisticsList;
             readonly kind: MethodKind.Unary;
         };

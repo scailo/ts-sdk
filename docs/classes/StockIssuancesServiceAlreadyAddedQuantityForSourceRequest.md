@@ -68,7 +68,7 @@ Message\&lt;StockIssuancesServiceAlreadyAddedQuantityForSourceRequest\&gt;.const
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1038
+src/stock_issuances.scailo_pb.ts:1081
 
 ## Properties
 
@@ -84,23 +84,23 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1036
+src/stock_issuances.scailo_pb.ts:1079
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`STOCK_ISSUANCE_REF_FROM`](../enums/STOCK_ISSUANCE_REF_FROM.md) = `STOCK_ISSUANCE_REF_FROM.STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 1;
+from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1022
+src/stock_issuances.scailo_pb.ts:1065
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1029
+src/stock_issuances.scailo_pb.ts:1072
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1045
+src/stock_issuances.scailo_pb.ts:1088
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1043
+src/stock_issuances.scailo_pb.ts:1086
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1044
+src/stock_issuances.scailo_pb.ts:1087
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1063
+src/stock_issuances.scailo_pb.ts:1106
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1051
+src/stock_issuances.scailo_pb.ts:1094
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1055
+src/stock_issuances.scailo_pb.ts:1098
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1059
+src/stock_issuances.scailo_pb.ts:1102

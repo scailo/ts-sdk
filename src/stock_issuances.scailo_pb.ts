@@ -10,6 +10,49 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a stock issuance can be added
+ *
+ * @generated from enum Scailo.STOCK_ISSUANCE_REF_FROM
+ */
+export enum STOCK_ISSUANCE_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the stock issuance originated from a production indent
+   *
+   * @generated from enum value: STOCK_ISSUANCE_REF_FROM_PRODUCTION_INDENT = 1;
+   */
+  STOCK_ISSUANCE_REF_FROM_PRODUCTION_INDENT = 1,
+
+  /**
+   * Denotes that the stock issuance originated from an asset indent
+   *
+   * @generated from enum value: STOCK_ISSUANCE_REF_FROM_ASSET_INDENT = 2;
+   */
+  STOCK_ISSUANCE_REF_FROM_ASSET_INDENT = 2,
+
+  /**
+   * Denotes that the stock issuance originated from a replaceable indent
+   *
+   * @generated from enum value: STOCK_ISSUANCE_REF_FROM_REPLACEABLE_INDENT = 3;
+   */
+  STOCK_ISSUANCE_REF_FROM_REPLACEABLE_INDENT = 3,
+}
+// Retrieve enum metadata with: proto3.getEnumType(STOCK_ISSUANCE_REF_FROM)
+proto3.util.setEnumType(STOCK_ISSUANCE_REF_FROM, "Scailo.STOCK_ISSUANCE_REF_FROM", [
+  { no: 0, name: "STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "STOCK_ISSUANCE_REF_FROM_PRODUCTION_INDENT" },
+  { no: 2, name: "STOCK_ISSUANCE_REF_FROM_ASSET_INDENT" },
+  { no: 3, name: "STOCK_ISSUANCE_REF_FROM_REPLACEABLE_INDENT" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.STOCK_ISSUANCE_SORT_KEY
@@ -239,9 +282,9 @@ export class StockIssuancesServiceCreateRequest extends Message<StockIssuancesSe
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = STOCK_ISSUANCE_REF_FROM.STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -269,7 +312,7 @@ export class StockIssuancesServiceCreateRequest extends Message<StockIssuancesSe
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(STOCK_ISSUANCE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
@@ -504,9 +547,9 @@ export class StockIssuance extends Message<StockIssuance> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = STOCK_ISSUANCE_REF_FROM.STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -553,7 +596,7 @@ export class StockIssuance extends Message<StockIssuance> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(STOCK_ISSUANCE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: StockIssuanceItem, repeated: true },
@@ -1017,9 +1060,9 @@ export class StockIssuancesServiceAlreadyAddedQuantityForSourceRequest extends M
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = STOCK_ISSUANCE_REF_FROM.STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1043,7 +1086,7 @@ export class StockIssuancesServiceAlreadyAddedQuantityForSourceRequest extends M
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StockIssuancesServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(STOCK_ISSUANCE_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1356,9 +1399,9 @@ export class StockIssuancesServiceFilterReq extends Message<StockIssuancesServic
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = STOCK_ISSUANCE_REF_FROM.STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1408,7 +1451,7 @@ export class StockIssuancesServiceFilterReq extends Message<StockIssuancesServic
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(STOCK_ISSUANCE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1546,9 +1589,9 @@ export class StockIssuancesServiceCountReq extends Message<StockIssuancesService
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = STOCK_ISSUANCE_REF_FROM.STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1594,7 +1637,7 @@ export class StockIssuancesServiceCountReq extends Message<StockIssuancesService
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(STOCK_ISSUANCE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1683,9 +1726,9 @@ export class StockIssuancesServiceSearchAllReq extends Message<StockIssuancesSer
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = STOCK_ISSUANCE_REF_FROM.STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1710,7 +1753,7 @@ export class StockIssuancesServiceSearchAllReq extends Message<StockIssuancesSer
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(STOCK_ISSUANCE_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 

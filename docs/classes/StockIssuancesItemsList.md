@@ -66,7 +66,7 @@ Message\&lt;StockIssuancesItemsList\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:882
+src/stock_issuances.scailo_pb.ts:925
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.StockIssuanceItem list = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:880
+src/stock_issuances.scailo_pb.ts:923
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:889
+src/stock_issuances.scailo_pb.ts:932
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:887
+src/stock_issuances.scailo_pb.ts:930
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:888
+src/stock_issuances.scailo_pb.ts:931
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:905
+src/stock_issuances.scailo_pb.ts:948
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:893
+src/stock_issuances.scailo_pb.ts:936
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:897
+src/stock_issuances.scailo_pb.ts:940
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:901
+src/stock_issuances.scailo_pb.ts:944

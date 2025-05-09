@@ -67,7 +67,7 @@ Message\&lt;StockIssuanceItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:981
+src/stock_issuances.scailo_pb.ts:1024
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:979
+src/stock_issuances.scailo_pb.ts:1022
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 stock_issuance_id = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:972
+src/stock_issuances.scailo_pb.ts:1015
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:988
+src/stock_issuances.scailo_pb.ts:1031
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:986
+src/stock_issuances.scailo_pb.ts:1029
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:987
+src/stock_issuances.scailo_pb.ts:1030
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1005
+src/stock_issuances.scailo_pb.ts:1048
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:993
+src/stock_issuances.scailo_pb.ts:1036
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:997
+src/stock_issuances.scailo_pb.ts:1040
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1001
+src/stock_issuances.scailo_pb.ts:1044

@@ -68,7 +68,7 @@ Message\&lt;StockIssuancesServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:404
+src/stock_issuances.scailo_pb.ts:447
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: bool split_into_unit_quantity = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:402
+src/stock_issuances.scailo_pb.ts:445
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:388
+src/stock_issuances.scailo_pb.ts:431
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:395
+src/stock_issuances.scailo_pb.ts:438
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:411
+src/stock_issuances.scailo_pb.ts:454
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:409
+src/stock_issuances.scailo_pb.ts:452
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:410
+src/stock_issuances.scailo_pb.ts:453
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:429
+src/stock_issuances.scailo_pb.ts:472
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:417
+src/stock_issuances.scailo_pb.ts:460
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:421
+src/stock_issuances.scailo_pb.ts:464
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:425
+src/stock_issuances.scailo_pb.ts:468

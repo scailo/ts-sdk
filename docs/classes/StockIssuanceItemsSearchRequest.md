@@ -80,7 +80,7 @@ Message\&lt;StockIssuanceItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1846
+src/stock_issuances.scailo_pb.ts:1889
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1809
+src/stock_issuances.scailo_pb.ts:1852
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1802
+src/stock_issuances.scailo_pb.ts:1845
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1795
+src/stock_issuances.scailo_pb.ts:1838
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1816
+src/stock_issuances.scailo_pb.ts:1859
 
 ___
 
@@ -160,7 +160,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1753
+src/stock_issuances.scailo_pb.ts:1796
 
 ___
 
@@ -176,7 +176,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1781
+src/stock_issuances.scailo_pb.ts:1824
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1830
+src/stock_issuances.scailo_pb.ts:1873
 
 ___
 
@@ -208,7 +208,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1746
+src/stock_issuances.scailo_pb.ts:1789
 
 ___
 
@@ -224,7 +224,7 @@ from field: string item_hash = 22;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1837
+src/stock_issuances.scailo_pb.ts:1880
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1760
+src/stock_issuances.scailo_pb.ts:1803
 
 ___
 
@@ -256,7 +256,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1844
+src/stock_issuances.scailo_pb.ts:1887
 
 ___
 
@@ -272,7 +272,7 @@ from field: Scailo.STOCK_ISSUANCE_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1774
+src/stock_issuances.scailo_pb.ts:1817
 
 ___
 
@@ -288,7 +288,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1767
+src/stock_issuances.scailo_pb.ts:1810
 
 ___
 
@@ -304,7 +304,7 @@ from field: Scailo.STOCK_ISSUANCE_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1788
+src/stock_issuances.scailo_pb.ts:1831
 
 ___
 
@@ -320,7 +320,7 @@ from field: uint64 stock_issuance_id = 20;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1823
+src/stock_issuances.scailo_pb.ts:1866
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1853
+src/stock_issuances.scailo_pb.ts:1896
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1851
+src/stock_issuances.scailo_pb.ts:1894
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1852
+src/stock_issuances.scailo_pb.ts:1895
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1883
+src/stock_issuances.scailo_pb.ts:1926
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1871
+src/stock_issuances.scailo_pb.ts:1914
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1875
+src/stock_issuances.scailo_pb.ts:1918
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1879
+src/stock_issuances.scailo_pb.ts:1922

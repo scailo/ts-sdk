@@ -509,7 +509,7 @@ export const ProductionIndentsService = {
      */
     viewIssuedStatistics: {
       name: "ViewIssuedStatistics",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ProductionIndentIssuedStatisticsList,
       kind: MethodKind.Unary,
     },

@@ -4,6 +4,64 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible production references from which a production indent can be added
+ *
+ * @generated from enum Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR
+ */
+export declare enum PRODUCTION_INDENT_PRODUCTION_REF_FOR {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED = 0;
+     */
+    PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the production indent is not associated to any production plan
+     *
+     * @generated from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_NONE = 1;
+     */
+    PRODUCTION_INDENT_PRODUCTION_REF_FOR_NONE = 1,
+    /**
+     * Denotes that the production indent is associated to a production plan
+     *
+     * @generated from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_PRODUCTION_PLAN = 2;
+     */
+    PRODUCTION_INDENT_PRODUCTION_REF_FOR_PRODUCTION_PLAN = 2
+}
+/**
+ *
+ * Stores all the possible indent references from which a production indent can be added
+ *
+ * @generated from enum Scailo.PRODUCTION_INDENT_INDENT_REF_FOR
+ */
+export declare enum PRODUCTION_INDENT_INDENT_REF_FOR {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED = 0;
+     */
+    PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the production indent is not associated to any indent
+     *
+     * @generated from enum value: PRODUCTION_INDENT_INDENT_REF_FOR_NONE = 1;
+     */
+    PRODUCTION_INDENT_INDENT_REF_FOR_NONE = 1,
+    /**
+     * Denotes that the indent is created on the basis of a family
+     *
+     * @generated from enum value: PRODUCTION_INDENT_INDENT_REF_FOR_FAMILY = 2;
+     */
+    PRODUCTION_INDENT_INDENT_REF_FOR_FAMILY = 2,
+    /**
+     * Denotes that the indent is created on the basis of a work order
+     *
+     * @generated from enum value: PRODUCTION_INDENT_INDENT_REF_FOR_WORK_ORDER = 3;
+     */
+    PRODUCTION_INDENT_INDENT_REF_FOR_WORK_ORDER = 3
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.PRODUCTION_INDENT_SORT_KEY
@@ -198,9 +256,9 @@ export declare class ProductionIndentsServiceCreateRequest extends Message<Produ
     /**
      * Stores if the indent is associated to a production plan
      *
-     * @generated from field: string production_ref_for = 16;
+     * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 16;
      */
-    productionRefFor: string;
+    productionRefFor: PRODUCTION_INDENT_PRODUCTION_REF_FOR;
     /**
      * Stores the production plan ID if production_ref_for is production-plan
      *
@@ -210,9 +268,9 @@ export declare class ProductionIndentsServiceCreateRequest extends Message<Produ
     /**
      * Stores if the indent should be created on the basis of a work order or a family
      *
-     * @generated from field: string indent_ref_for = 18;
+     * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 18;
      */
-    indentRefFor: string;
+    indentRefFor: PRODUCTION_INDENT_INDENT_REF_FOR;
     /**
      * Stores the ID of the associated family or work order
      *
@@ -402,9 +460,9 @@ export declare class ProductionIndent extends Message<ProductionIndent> {
     /**
      * Stores if the indent is associated to a production plan
      *
-     * @generated from field: string production_ref_for = 16;
+     * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 16;
      */
-    productionRefFor: string;
+    productionRefFor: PRODUCTION_INDENT_PRODUCTION_REF_FOR;
     /**
      * Stores the production plan ID if production_ref_for is production-plan
      *
@@ -414,9 +472,9 @@ export declare class ProductionIndent extends Message<ProductionIndent> {
     /**
      * Stores if the indent should be created on the basis of a work order or a family
      *
-     * @generated from field: string indent_ref_for = 18;
+     * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 18;
      */
-    indentRefFor: string;
+    indentRefFor: PRODUCTION_INDENT_INDENT_REF_FOR;
     /**
      * Stores the ID of the associated family or work order
      *
@@ -910,9 +968,9 @@ export declare class ProductionIndentsServiceFilterReq extends Message<Productio
     /**
      * Stores if the indent is associated to a production plan
      *
-     * @generated from field: string production_ref_for = 26;
+     * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 26;
      */
-    productionRefFor: string;
+    productionRefFor: PRODUCTION_INDENT_PRODUCTION_REF_FOR;
     /**
      * Stores the production plan ID if production_ref_for is production-plan
      *
@@ -922,9 +980,9 @@ export declare class ProductionIndentsServiceFilterReq extends Message<Productio
     /**
      * Stores if the indent should be created on the basis of a work order or a family
      *
-     * @generated from field: string indent_ref_for = 28;
+     * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 28;
      */
-    indentRefFor: string;
+    indentRefFor: PRODUCTION_INDENT_INDENT_REF_FOR;
     /**
      * Stores the ID of the associated family or work order
      *
@@ -1058,9 +1116,9 @@ export declare class ProductionIndentsServiceCountReq extends Message<Production
     /**
      * Stores if the indent is associated to a production plan
      *
-     * @generated from field: string production_ref_for = 26;
+     * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 26;
      */
-    productionRefFor: string;
+    productionRefFor: PRODUCTION_INDENT_PRODUCTION_REF_FOR;
     /**
      * Stores the production plan ID if production_ref_for is production-plan
      *
@@ -1070,9 +1128,9 @@ export declare class ProductionIndentsServiceCountReq extends Message<Production
     /**
      * Stores if the indent should be created on the basis of a work order or a family
      *
-     * @generated from field: string indent_ref_for = 28;
+     * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 28;
      */
-    indentRefFor: string;
+    indentRefFor: PRODUCTION_INDENT_INDENT_REF_FOR;
     /**
      * Stores the ID of the associated family or work order
      *
@@ -1164,9 +1222,9 @@ export declare class ProductionIndentsServiceSearchAllReq extends Message<Produc
     /**
      * Stores if the indent is associated to a production plan
      *
-     * @generated from field: string production_ref_for = 26;
+     * @generated from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 26;
      */
-    productionRefFor: string;
+    productionRefFor: PRODUCTION_INDENT_PRODUCTION_REF_FOR;
     /**
      * Stores the production plan ID if production_ref_for is production-plan
      *
@@ -1176,9 +1234,9 @@ export declare class ProductionIndentsServiceSearchAllReq extends Message<Produc
     /**
      * Stores if the indent should be created on the basis of a work order or a family
      *
-     * @generated from field: string indent_ref_for = 28;
+     * @generated from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 28;
      */
-    indentRefFor: string;
+    indentRefFor: PRODUCTION_INDENT_INDENT_REF_FOR;
     /**
      * Stores the ID of the associated family or work order
      *

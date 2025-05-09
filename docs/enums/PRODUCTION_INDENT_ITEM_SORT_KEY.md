@@ -35,7 +35,7 @@ from enum value: PRODUCTION_INDENT_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:142
+src/production_indents.scailo_pb.ts:220
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: PRODUCTION_INDENT_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:135
+src/production_indents.scailo_pb.ts:213
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: PRODUCTION_INDENT_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:149
+src/production_indents.scailo_pb.ts:227
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: PRODUCTION_INDENT_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:121
+src/production_indents.scailo_pb.ts:199
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: PRODUCTION_INDENT_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:156
+src/production_indents.scailo_pb.ts:234
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: PRODUCTION_INDENT_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:114
+src/production_indents.scailo_pb.ts:192
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: PRODUCTION_INDENT_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:163
+src/production_indents.scailo_pb.ts:241
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: PRODUCTION_INDENT_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:128
+src/production_indents.scailo_pb.ts:206

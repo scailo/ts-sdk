@@ -70,7 +70,7 @@ Message\&lt;StockIssuancesServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:622
+src/stock_issuances.scailo_pb.ts:665
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:606
+src/stock_issuances.scailo_pb.ts:649
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:613
+src/stock_issuances.scailo_pb.ts:656
 
 ___
 
@@ -118,7 +118,7 @@ from field: string item_hash = 13;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:620
+src/stock_issuances.scailo_pb.ts:663
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 stock_issuance_id = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:599
+src/stock_issuances.scailo_pb.ts:642
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:592
+src/stock_issuances.scailo_pb.ts:635
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:629
+src/stock_issuances.scailo_pb.ts:672
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:627
+src/stock_issuances.scailo_pb.ts:670
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:628
+src/stock_issuances.scailo_pb.ts:671
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:649
+src/stock_issuances.scailo_pb.ts:692
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:637
+src/stock_issuances.scailo_pb.ts:680
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:641
+src/stock_issuances.scailo_pb.ts:684
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:645
+src/stock_issuances.scailo_pb.ts:688

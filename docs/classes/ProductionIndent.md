@@ -82,7 +82,7 @@ Message\&lt;ProductionIndent\&gt;.constructor
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:608
+src/production_indents.scailo_pb.ts:686
 
 ## Properties
 
@@ -98,7 +98,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:508
+src/production_indents.scailo_pb.ts:586
 
 ___
 
@@ -114,7 +114,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:529
+src/production_indents.scailo_pb.ts:607
 
 ___
 
@@ -130,7 +130,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:494
+src/production_indents.scailo_pb.ts:572
 
 ___
 
@@ -146,7 +146,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:550
+src/production_indents.scailo_pb.ts:628
 
 ___
 
@@ -162,23 +162,23 @@ from field: repeated Scailo.FormFieldDatum form_data = 40;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:606
+src/production_indents.scailo_pb.ts:684
 
 ___
 
 ### indentRefFor
 
-• **indentRefFor**: `string` = `""`
+• **indentRefFor**: [`PRODUCTION_INDENT_INDENT_REF_FOR`](../enums/PRODUCTION_INDENT_INDENT_REF_FOR.md) = `PRODUCTION_INDENT_INDENT_REF_FOR.PRODUCTION_INDENT_INDENT_REF_FOR_ANY_UNSPECIFIED`
 
 Stores if the indent should be created on the basis of a work order or a family
 
 **`Generated`**
 
-from field: string indent_ref_for = 18;
+from field: Scailo.PRODUCTION_INDENT_INDENT_REF_FOR indent_ref_for = 18;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:585
+src/production_indents.scailo_pb.ts:663
 
 ___
 
@@ -194,7 +194,7 @@ from field: uint64 indent_ref_id = 19;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:592
+src/production_indents.scailo_pb.ts:670
 
 ___
 
@@ -210,7 +210,7 @@ from field: repeated Scailo.ProductionIndentItem list = 30;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:599
+src/production_indents.scailo_pb.ts:677
 
 ___
 
@@ -226,7 +226,7 @@ from field: uint64 location_id = 14;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:557
+src/production_indents.scailo_pb.ts:635
 
 ___
 
@@ -242,7 +242,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:522
+src/production_indents.scailo_pb.ts:600
 
 ___
 
@@ -258,23 +258,23 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:501
+src/production_indents.scailo_pb.ts:579
 
 ___
 
 ### productionRefFor
 
-• **productionRefFor**: `string` = `""`
+• **productionRefFor**: [`PRODUCTION_INDENT_PRODUCTION_REF_FOR`](../enums/PRODUCTION_INDENT_PRODUCTION_REF_FOR.md) = `PRODUCTION_INDENT_PRODUCTION_REF_FOR.PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED`
 
 Stores if the indent is associated to a production plan
 
 **`Generated`**
 
-from field: string production_ref_for = 16;
+from field: Scailo.PRODUCTION_INDENT_PRODUCTION_REF_FOR production_ref_for = 16;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:571
+src/production_indents.scailo_pb.ts:649
 
 ___
 
@@ -290,7 +290,7 @@ from field: uint64 production_ref_id = 17;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:578
+src/production_indents.scailo_pb.ts:656
 
 ___
 
@@ -306,7 +306,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:543
+src/production_indents.scailo_pb.ts:621
 
 ___
 
@@ -322,7 +322,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:515
+src/production_indents.scailo_pb.ts:593
 
 ___
 
@@ -338,7 +338,7 @@ from field: string supervisor = 15;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:564
+src/production_indents.scailo_pb.ts:642
 
 ___
 
@@ -354,7 +354,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:536
+src/production_indents.scailo_pb.ts:614
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:615
+src/production_indents.scailo_pb.ts:693
 
 ___
 
@@ -374,7 +374,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:613
+src/production_indents.scailo_pb.ts:691
 
 ___
 
@@ -384,7 +384,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:614
+src/production_indents.scailo_pb.ts:692
 
 ## Methods
 
@@ -672,7 +672,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:647
+src/production_indents.scailo_pb.ts:725
 
 ___
 
@@ -693,7 +693,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:635
+src/production_indents.scailo_pb.ts:713
 
 ___
 
@@ -714,7 +714,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:639
+src/production_indents.scailo_pb.ts:717
 
 ___
 
@@ -735,4 +735,4 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:643
+src/production_indents.scailo_pb.ts:721

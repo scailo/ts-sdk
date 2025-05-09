@@ -68,7 +68,7 @@ Message\&lt;ProductionIndentsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:746
+src/production_indents.scailo_pb.ts:824
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:737
+src/production_indents.scailo_pb.ts:815
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:744
+src/production_indents.scailo_pb.ts:822
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:730
+src/production_indents.scailo_pb.ts:808
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:753
+src/production_indents.scailo_pb.ts:831
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:751
+src/production_indents.scailo_pb.ts:829
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:752
+src/production_indents.scailo_pb.ts:830
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:771
+src/production_indents.scailo_pb.ts:849
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:759
+src/production_indents.scailo_pb.ts:837
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:763
+src/production_indents.scailo_pb.ts:841
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:767
+src/production_indents.scailo_pb.ts:845

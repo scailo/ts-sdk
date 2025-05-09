@@ -79,7 +79,7 @@ Message\&lt;StockIssuance\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:539
+src/stock_issuances.scailo_pb.ts:582
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:460
+src/stock_issuances.scailo_pb.ts:503
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:481
+src/stock_issuances.scailo_pb.ts:524
 
 ___
 
@@ -127,7 +127,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:446
+src/stock_issuances.scailo_pb.ts:489
 
 ___
 
@@ -143,7 +143,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:502
+src/stock_issuances.scailo_pb.ts:545
 
 ___
 
@@ -159,7 +159,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:537
+src/stock_issuances.scailo_pb.ts:580
 
 ___
 
@@ -175,7 +175,7 @@ from field: repeated Scailo.StockIssuanceItem list = 20;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:530
+src/stock_issuances.scailo_pb.ts:573
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:523
+src/stock_issuances.scailo_pb.ts:566
 
 ___
 
@@ -207,7 +207,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:474
+src/stock_issuances.scailo_pb.ts:517
 
 ___
 
@@ -223,23 +223,23 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:453
+src/stock_issuances.scailo_pb.ts:496
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`STOCK_ISSUANCE_REF_FROM`](../enums/STOCK_ISSUANCE_REF_FROM.md) = `STOCK_ISSUANCE_REF_FROM.STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 12;
+from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:509
+src/stock_issuances.scailo_pb.ts:552
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:516
+src/stock_issuances.scailo_pb.ts:559
 
 ___
 
@@ -271,7 +271,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:495
+src/stock_issuances.scailo_pb.ts:538
 
 ___
 
@@ -287,7 +287,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:467
+src/stock_issuances.scailo_pb.ts:510
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:488
+src/stock_issuances.scailo_pb.ts:531
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:546
+src/stock_issuances.scailo_pb.ts:589
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:544
+src/stock_issuances.scailo_pb.ts:587
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:545
+src/stock_issuances.scailo_pb.ts:588
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:575
+src/stock_issuances.scailo_pb.ts:618
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:563
+src/stock_issuances.scailo_pb.ts:606
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:567
+src/stock_issuances.scailo_pb.ts:610
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:571
+src/stock_issuances.scailo_pb.ts:614

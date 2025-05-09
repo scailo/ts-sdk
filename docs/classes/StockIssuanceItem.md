@@ -74,7 +74,7 @@ Message\&lt;StockIssuanceItem\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:790
+src/stock_issuances.scailo_pb.ts:833
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:746
+src/stock_issuances.scailo_pb.ts:789
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:732
+src/stock_issuances.scailo_pb.ts:775
 
 ___
 
@@ -122,7 +122,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:774
+src/stock_issuances.scailo_pb.ts:817
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:781
+src/stock_issuances.scailo_pb.ts:824
 
 ___
 
@@ -154,7 +154,7 @@ from field: string item_hash = 13;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:788
+src/stock_issuances.scailo_pb.ts:831
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:739
+src/stock_issuances.scailo_pb.ts:782
 
 ___
 
@@ -186,7 +186,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:753
+src/stock_issuances.scailo_pb.ts:796
 
 ___
 
@@ -202,7 +202,7 @@ from field: uint64 stock_issuance_id = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:767
+src/stock_issuances.scailo_pb.ts:810
 
 ___
 
@@ -218,7 +218,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:760
+src/stock_issuances.scailo_pb.ts:803
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:797
+src/stock_issuances.scailo_pb.ts:840
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:795
+src/stock_issuances.scailo_pb.ts:838
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:796
+src/stock_issuances.scailo_pb.ts:839
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:821
+src/stock_issuances.scailo_pb.ts:864
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:809
+src/stock_issuances.scailo_pb.ts:852
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:813
+src/stock_issuances.scailo_pb.ts:856
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:817
+src/stock_issuances.scailo_pb.ts:860
