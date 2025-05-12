@@ -1,5 +1,5 @@
 import { VendorInvoice, VendorInvoiceAncillaryParameters, VendorInvoiceItem, VendorInvoiceItemHistoryRequest, VendorInvoiceItemProspectiveInfoRequest, VendorInvoiceItemsList, VendorInvoiceItemsSearchRequest, VendorInvoiceReceiptStatisticsList, VendorInvoiceReference, VendorInvoiceReferencesList, VendorInvoicesList, VendorInvoicesServiceAlreadyAddedQuantityForSourceRequest, VendorInvoicesServiceAutofillRequest, VendorInvoicesServiceCountReq, VendorInvoicesServiceCreateRequest, VendorInvoicesServiceFilterReq, VendorInvoicesServiceItemCreateRequest, VendorInvoicesServiceItemUpdateRequest, VendorInvoicesServicePaginatedItemsResponse, VendorInvoicesServicePaginationReq, VendorInvoicesServicePaginationResponse, VendorInvoicesServiceReferenceCreateRequest, VendorInvoicesServiceSearchAllReq, VendorInvoicesServiceUpdateRequest } from "./vendor_invoices.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
@@ -196,6 +196,17 @@ export declare const VendorInvoicesService: {
             readonly name: "Autofill";
             readonly I: typeof VendorInvoicesServiceAutofillRequest;
             readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Checks if all the material has been admitted to store
+         *
+         * @generated from rpc Scailo.VendorInvoicesService.IsAdmittedToStore
+         */
+        readonly isAdmittedToStore: {
+            readonly name: "IsAdmittedToStore";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

@@ -519,6 +519,28 @@ export declare const ProductionPlansService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View families (of all family types) for the given production plan
+         *
+         * @generated from rpc Scailo.ProductionPlansService.ViewFamiliesInProductionPlan
+         */
+        readonly viewFamiliesInProductionPlan: {
+            readonly name: "ViewFamiliesInProductionPlan";
+            readonly I: typeof IdentifierWithSearchKey;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter families (of all family types) for the given production plan
+         *
+         * @generated from rpc Scailo.ProductionPlansService.FilterFamiliesInProductionPlan
+         */
+        readonly filterFamiliesInProductionPlan: {
+            readonly name: "FilterFamiliesInProductionPlan";
+            readonly I: typeof FilterFamiliesReqForIdentifier;
+            readonly O: typeof FamiliesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View already added quantities
          *
          * @generated from rpc Scailo.ProductionPlansService.ViewAddedFamilyQuantityForSource
