@@ -81,7 +81,7 @@ Message\&lt;SalesReturnItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1228
+src/sales_returns.scailo_pb.ts:1255
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1184
+src/sales_returns.scailo_pb.ts:1211
 
 ___
 
@@ -113,7 +113,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1177
+src/sales_returns.scailo_pb.ts:1204
 
 ___
 
@@ -129,7 +129,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1170
+src/sales_returns.scailo_pb.ts:1197
 
 ___
 
@@ -145,7 +145,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1191
+src/sales_returns.scailo_pb.ts:1218
 
 ___
 
@@ -161,7 +161,7 @@ from field: uint64 client_uom_id = 24;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1219
+src/sales_returns.scailo_pb.ts:1246
 
 ___
 
@@ -177,7 +177,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1128
+src/sales_returns.scailo_pb.ts:1155
 
 ___
 
@@ -193,7 +193,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1156
+src/sales_returns.scailo_pb.ts:1183
 
 ___
 
@@ -209,7 +209,7 @@ from field: uint64 family_id = 22;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1205
+src/sales_returns.scailo_pb.ts:1232
 
 ___
 
@@ -225,7 +225,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1121
+src/sales_returns.scailo_pb.ts:1148
 
 ___
 
@@ -241,7 +241,7 @@ from field: string item_hash = 23;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1212
+src/sales_returns.scailo_pb.ts:1239
 
 ___
 
@@ -257,7 +257,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1135
+src/sales_returns.scailo_pb.ts:1162
 
 ___
 
@@ -273,7 +273,7 @@ from field: uint64 sales_return_id = 20;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1198
+src/sales_returns.scailo_pb.ts:1225
 
 ___
 
@@ -289,7 +289,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1226
+src/sales_returns.scailo_pb.ts:1253
 
 ___
 
@@ -305,7 +305,7 @@ from field: Scailo.SALES_RETURN_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1149
+src/sales_returns.scailo_pb.ts:1176
 
 ___
 
@@ -321,7 +321,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1142
+src/sales_returns.scailo_pb.ts:1169
 
 ___
 
@@ -337,7 +337,7 @@ from field: Scailo.SALES_RETURN_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1163
+src/sales_returns.scailo_pb.ts:1190
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1235
+src/sales_returns.scailo_pb.ts:1262
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1233
+src/sales_returns.scailo_pb.ts:1260
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1234
+src/sales_returns.scailo_pb.ts:1261
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1266
+src/sales_returns.scailo_pb.ts:1293
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1254
+src/sales_returns.scailo_pb.ts:1281
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1258
+src/sales_returns.scailo_pb.ts:1285
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1262
+src/sales_returns.scailo_pb.ts:1289

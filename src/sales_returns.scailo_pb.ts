@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a sales return can be added
+ *
+ * @generated from enum Scailo.SALES_RETURN_REF_FROM
+ */
+export enum SALES_RETURN_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: SALES_RETURN_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  SALES_RETURN_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the sales return originated from a sales order
+   *
+   * @generated from enum value: SALES_RETURN_REF_FROM_SALES_ORDER = 1;
+   */
+  SALES_RETURN_REF_FROM_SALES_ORDER = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(SALES_RETURN_REF_FROM)
+proto3.util.setEnumType(SALES_RETURN_REF_FROM, "Scailo.SALES_RETURN_REF_FROM", [
+  { no: 0, name: "SALES_RETURN_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "SALES_RETURN_REF_FROM_SALES_ORDER" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.SALES_RETURN_ITEM_SORT_KEY
@@ -290,9 +317,9 @@ export class SalesReturnsServiceCreateRequest extends Message<SalesReturnsServic
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = SALES_RETURN_REF_FROM.SALES_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -327,7 +354,7 @@ export class SalesReturnsServiceCreateRequest extends Message<SalesReturnsServic
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RETURN_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
@@ -555,9 +582,9 @@ export class SalesReturn extends Message<SalesReturn> {
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = SALES_RETURN_REF_FROM.SALES_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -604,7 +631,7 @@ export class SalesReturn extends Message<SalesReturn> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RETURN_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: SalesReturnItem, repeated: true },
@@ -1344,9 +1371,9 @@ export class SalesReturnsServiceAlreadyAddedQuantityForSourceRequest extends Mes
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = SALES_RETURN_REF_FROM.SALES_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1370,7 +1397,7 @@ export class SalesReturnsServiceAlreadyAddedQuantityForSourceRequest extends Mes
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesReturnsServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RETURN_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1683,9 +1710,9 @@ export class SalesReturnsServiceFilterReq extends Message<SalesReturnsServiceFil
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = SALES_RETURN_REF_FROM.SALES_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1764,7 +1791,7 @@ export class SalesReturnsServiceFilterReq extends Message<SalesReturnsServiceFil
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RETURN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(SALES_RETURN_BILLING_STATUS) },
@@ -1906,9 +1933,9 @@ export class SalesReturnsServiceCountReq extends Message<SalesReturnsServiceCoun
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = SALES_RETURN_REF_FROM.SALES_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1983,7 +2010,7 @@ export class SalesReturnsServiceCountReq extends Message<SalesReturnsServiceCoun
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RETURN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(SALES_RETURN_BILLING_STATUS) },
@@ -2076,9 +2103,9 @@ export class SalesReturnsServiceSearchAllReq extends Message<SalesReturnsService
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = SALES_RETURN_REF_FROM.SALES_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2125,7 +2152,7 @@ export class SalesReturnsServiceSearchAllReq extends Message<SalesReturnsService
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RETURN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(SALES_RETURN_BILLING_STATUS) },
     { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

@@ -30,7 +30,7 @@ from enum value: SALES_RETURN_BILLING_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:232
+src/sales_returns.scailo_pb.ts:259
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SALES_RETURN_BILLING_STATUS_BILLED = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:239
+src/sales_returns.scailo_pb.ts:266
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SALES_RETURN_BILLING_STATUS_UNBILLED = 2;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:246
+src/sales_returns.scailo_pb.ts:273

@@ -71,7 +71,7 @@ Message\&lt;SalesReturnsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:402
+src/sales_returns.scailo_pb.ts:429
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:400
+src/sales_returns.scailo_pb.ts:427
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:372
+src/sales_returns.scailo_pb.ts:399
 
 ___
 
@@ -119,7 +119,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:379
+src/sales_returns.scailo_pb.ts:406
 
 ___
 
@@ -135,7 +135,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:393
+src/sales_returns.scailo_pb.ts:420
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:365
+src/sales_returns.scailo_pb.ts:392
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:386
+src/sales_returns.scailo_pb.ts:413
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:409
+src/sales_returns.scailo_pb.ts:436
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:407
+src/sales_returns.scailo_pb.ts:434
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:408
+src/sales_returns.scailo_pb.ts:435
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:430
+src/sales_returns.scailo_pb.ts:457
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:418
+src/sales_returns.scailo_pb.ts:445
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:422
+src/sales_returns.scailo_pb.ts:449
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:426
+src/sales_returns.scailo_pb.ts:453

@@ -71,7 +71,7 @@ Message\&lt;SalesReturnsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:770
+src/sales_returns.scailo_pb.ts:797
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:768
+src/sales_returns.scailo_pb.ts:795
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:761
+src/sales_returns.scailo_pb.ts:788
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:740
+src/sales_returns.scailo_pb.ts:767
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:754
+src/sales_returns.scailo_pb.ts:781
 
 ___
 
@@ -151,7 +151,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:747
+src/sales_returns.scailo_pb.ts:774
 
 ___
 
@@ -167,7 +167,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:733
+src/sales_returns.scailo_pb.ts:760
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:777
+src/sales_returns.scailo_pb.ts:804
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:775
+src/sales_returns.scailo_pb.ts:802
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:776
+src/sales_returns.scailo_pb.ts:803
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:798
+src/sales_returns.scailo_pb.ts:825
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:786
+src/sales_returns.scailo_pb.ts:813
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:790
+src/sales_returns.scailo_pb.ts:817
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:794
+src/sales_returns.scailo_pb.ts:821

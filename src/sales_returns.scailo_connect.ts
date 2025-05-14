@@ -348,6 +348,18 @@ export const SalesReturnsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * CSV operations
+     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     *
+     * @generated from rpc Scailo.SalesReturnsService.DownloadItemsAsCSV
+     */
+    downloadItemsAsCSV: {
+      name: "DownloadItemsAsCSV",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View by ID
      *
      * @generated from rpc Scailo.SalesReturnsService.ViewByID
@@ -477,6 +489,18 @@ export const SalesReturnsService = {
       name: "ViewProspectiveSalesReturnItem",
       I: SalesReturnItemProspectiveInfoRequest,
       O: SalesReturnsServiceItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Other view operations
+     * View the associated credit note information that is denoted by the identifier in the response for the goods dispatch that is denoted by the identifier UUID in the request
+     *
+     * @generated from rpc Scailo.SalesReturnsService.ViewAssociatedCreditNoteInfo
+     */
+    viewAssociatedCreditNoteInfo: {
+      name: "ViewAssociatedCreditNoteInfo",
+      I: IdentifierUUID,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

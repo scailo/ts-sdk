@@ -67,7 +67,7 @@ Message\&lt;SalesReturnAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:456
+src/sales_returns.scailo_pb.ts:483
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string location_uuid = 215;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:454
+src/sales_returns.scailo_pb.ts:481
 
 ___
 
@@ -99,7 +99,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:447
+src/sales_returns.scailo_pb.ts:474
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:463
+src/sales_returns.scailo_pb.ts:490
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:461
+src/sales_returns.scailo_pb.ts:488
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:462
+src/sales_returns.scailo_pb.ts:489
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:480
+src/sales_returns.scailo_pb.ts:507
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:468
+src/sales_returns.scailo_pb.ts:495
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:472
+src/sales_returns.scailo_pb.ts:499
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:476
+src/sales_returns.scailo_pb.ts:503

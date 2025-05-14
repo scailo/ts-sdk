@@ -67,7 +67,7 @@ Message\&lt;SalesReturnItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1080
+src/sales_returns.scailo_pb.ts:1107
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1078
+src/sales_returns.scailo_pb.ts:1105
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 sales_return_id = 10;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1071
+src/sales_returns.scailo_pb.ts:1098
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1087
+src/sales_returns.scailo_pb.ts:1114
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1085
+src/sales_returns.scailo_pb.ts:1112
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1086
+src/sales_returns.scailo_pb.ts:1113
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1104
+src/sales_returns.scailo_pb.ts:1131
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1092
+src/sales_returns.scailo_pb.ts:1119
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1096
+src/sales_returns.scailo_pb.ts:1123
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1100
+src/sales_returns.scailo_pb.ts:1127

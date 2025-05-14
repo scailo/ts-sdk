@@ -36,7 +36,7 @@ from enum value: SALES_RETURN_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:177
+src/sales_returns.scailo_pb.ts:204
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: SALES_RETURN_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:170
+src/sales_returns.scailo_pb.ts:197
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: SALES_RETURN_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:184
+src/sales_returns.scailo_pb.ts:211
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: SALES_RETURN_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:191
+src/sales_returns.scailo_pb.ts:218
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: SALES_RETURN_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:156
+src/sales_returns.scailo_pb.ts:183
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: SALES_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:205
+src/sales_returns.scailo_pb.ts:232
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: SALES_RETURN_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:149
+src/sales_returns.scailo_pb.ts:176
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: SALES_RETURN_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:163
+src/sales_returns.scailo_pb.ts:190
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: SALES_RETURN_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:198
+src/sales_returns.scailo_pb.ts:225

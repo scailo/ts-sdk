@@ -73,7 +73,7 @@ Message\&lt;SalesReturnsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:318
+src/sales_returns.scailo_pb.ts:345
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:267
+src/sales_returns.scailo_pb.ts:294
 
 ___
 
@@ -105,7 +105,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:316
+src/sales_returns.scailo_pb.ts:343
 
 ___
 
@@ -121,23 +121,23 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:309
+src/sales_returns.scailo_pb.ts:336
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`SALES_RETURN_REF_FROM`](../enums/SALES_RETURN_REF_FROM.md) = `SALES_RETURN_REF_FROM.SALES_RETURN_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 12;
+from field: Scailo.SALES_RETURN_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:295
+src/sales_returns.scailo_pb.ts:322
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:302
+src/sales_returns.scailo_pb.ts:329
 
 ___
 
@@ -169,7 +169,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:288
+src/sales_returns.scailo_pb.ts:315
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:274
+src/sales_returns.scailo_pb.ts:301
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:281
+src/sales_returns.scailo_pb.ts:308
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:325
+src/sales_returns.scailo_pb.ts:352
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:323
+src/sales_returns.scailo_pb.ts:350
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:324
+src/sales_returns.scailo_pb.ts:351
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:348
+src/sales_returns.scailo_pb.ts:375
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:336
+src/sales_returns.scailo_pb.ts:363
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:340
+src/sales_returns.scailo_pb.ts:367
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:344
+src/sales_returns.scailo_pb.ts:371

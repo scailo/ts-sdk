@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a sales return can be added
+ *
+ * @generated from enum Scailo.SALES_RETURN_REF_FROM
+ */
+export declare enum SALES_RETURN_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: SALES_RETURN_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    SALES_RETURN_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the sales return originated from a sales order
+     *
+     * @generated from enum value: SALES_RETURN_REF_FROM_SALES_ORDER = 1;
+     */
+    SALES_RETURN_REF_FROM_SALES_ORDER = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.SALES_RETURN_ITEM_SORT_KEY
@@ -218,9 +238,9 @@ export declare class SalesReturnsServiceCreateRequest extends Message<SalesRetur
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: SALES_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -392,9 +412,9 @@ export declare class SalesReturn extends Message<SalesReturn> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: SALES_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -882,9 +902,9 @@ export declare class SalesReturnsServiceAlreadyAddedQuantityForSourceRequest ext
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: SALES_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1122,9 +1142,9 @@ export declare class SalesReturnsServiceFilterReq extends Message<SalesReturnsSe
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: SALES_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1277,9 +1297,9 @@ export declare class SalesReturnsServiceCountReq extends Message<SalesReturnsSer
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: SALES_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1390,9 +1410,9 @@ export declare class SalesReturnsServiceSearchAllReq extends Message<SalesReturn
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: SALES_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
