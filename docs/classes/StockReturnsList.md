@@ -66,7 +66,7 @@ Message\&lt;StockReturnsList\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:814
+src/stock_returns.scailo_pb.ts:841
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.StockReturn list = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:812
+src/stock_returns.scailo_pb.ts:839
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:821
+src/stock_returns.scailo_pb.ts:848
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:819
+src/stock_returns.scailo_pb.ts:846
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:820
+src/stock_returns.scailo_pb.ts:847
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:837
+src/stock_returns.scailo_pb.ts:864
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:825
+src/stock_returns.scailo_pb.ts:852
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:829
+src/stock_returns.scailo_pb.ts:856
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:833
+src/stock_returns.scailo_pb.ts:860

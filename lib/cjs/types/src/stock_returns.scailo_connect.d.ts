@@ -2,6 +2,7 @@ import { StockReturn, StockReturnItem, StockReturnItemHistoryRequest, StockRetur
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
+import { FilterReturnableInventoryForIdentifierUUID, GenericInventoryList, SearchReturnableInventoryForIdentifierUUID } from "./inventory.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each stock return
@@ -342,6 +343,18 @@ export declare const StockReturnsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * CSV operations
+         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         *
+         * @generated from rpc Scailo.StockReturnsService.DownloadItemsAsCSV
+         */
+        readonly downloadItemsAsCSV: {
+            readonly name: "DownloadItemsAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View by ID
          *
          * @generated from rpc Scailo.StockReturnsService.ViewByID
@@ -460,6 +473,28 @@ export declare const StockReturnsService: {
             readonly name: "ViewProspectiveStockReturnItem";
             readonly I: typeof StockReturnItemProspectiveInfoRequest;
             readonly O: typeof StockReturnsServiceItemCreateRequest;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Search for returnable inventory
+         *
+         * @generated from rpc Scailo.StockReturnsService.SearchReturnableInventory
+         */
+        readonly searchReturnableInventory: {
+            readonly name: "SearchReturnableInventory";
+            readonly I: typeof SearchReturnableInventoryForIdentifierUUID;
+            readonly O: typeof GenericInventoryList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter returnable inventory
+         *
+         * @generated from rpc Scailo.StockReturnsService.FilterReturnableInventory
+         */
+        readonly filterReturnableInventory: {
+            readonly name: "FilterReturnableInventory";
+            readonly I: typeof FilterReturnableInventoryForIdentifierUUID;
+            readonly O: typeof GenericInventoryList;
             readonly kind: MethodKind.Unary;
         };
         /**

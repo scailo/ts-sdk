@@ -103,7 +103,7 @@ src/inventory.scailo_pb.ts:287
 
 • **code**: `string` = `""`
 
-The auto generated code of the product
+The auto generated code of the inventory item
 
 **`Generated`**
 
@@ -135,7 +135,7 @@ ___
 
 • **description**: `string` = `""`
 
-The description of the product
+The description of the inventory item
 
 **`Generated`**
 
@@ -199,7 +199,7 @@ ___
 
 • **hash**: `string` = `""`
 
-The computed hash of the product
+The computed hash of the inventory item
 
 **`Generated`**
 
@@ -263,7 +263,7 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this product
+Stores the metadata of this inventory item
 
 **`Generated`**
 
@@ -423,7 +423,7 @@ ___
 
 • **secondaryQuantity**: `bigint` = `protoInt64.zero`
 
-Stores an optional quantity in the secondary unit of product
+Stores an optional quantity in the secondary unit of inventory item
 
 **`Generated`**
 
@@ -439,7 +439,7 @@ ___
 
 • **secondaryUomId**: `bigint` = `protoInt64.zero`
 
-Stores an optional secondary unit of product
+Stores an optional secondary unit of inventory item
 
 **`Generated`**
 
@@ -487,7 +487,7 @@ ___
 
 • **status**: [`INVENTORY_LIFECYCLE`](../enums/INVENTORY_LIFECYCLE.md) = `INVENTORY_LIFECYCLE.INVENTORY_LIFECYCLE_ANY_UNSPECIFIED`
 
-The status of this product
+The status of this inventory item
 
 **`Generated`**
 
@@ -503,7 +503,7 @@ ___
 
 • **storageId**: `bigint` = `protoInt64.zero`
 
-Stores an optional ID of the associated storage that the product is stored in
+Stores an optional ID of the associated storage that the inventory item is stored in
 
 **`Generated`**
 
@@ -519,7 +519,7 @@ ___
 
 • **storeId**: `bigint` = `protoInt64.zero`
 
-Stores the store to which the product is sent to
+Stores the store to which the inventory item is sent to
 
 **`Generated`**
 

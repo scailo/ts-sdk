@@ -68,7 +68,7 @@ Message\&lt;StockReturnsServiceAlreadyAddedQuantityForSourceRequest\&gt;.constru
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1012
+src/stock_returns.scailo_pb.ts:1039
 
 ## Properties
 
@@ -84,23 +84,23 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1010
+src/stock_returns.scailo_pb.ts:1037
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`STOCK_RETURN_REF_FROM`](../enums/STOCK_RETURN_REF_FROM.md) = `STOCK_RETURN_REF_FROM.STOCK_RETURN_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 1;
+from field: Scailo.STOCK_RETURN_REF_FROM ref_from = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:996
+src/stock_returns.scailo_pb.ts:1023
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1003
+src/stock_returns.scailo_pb.ts:1030
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1019
+src/stock_returns.scailo_pb.ts:1046
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1017
+src/stock_returns.scailo_pb.ts:1044
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1018
+src/stock_returns.scailo_pb.ts:1045
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1037
+src/stock_returns.scailo_pb.ts:1064
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1025
+src/stock_returns.scailo_pb.ts:1052
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1029
+src/stock_returns.scailo_pb.ts:1056
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1033
+src/stock_returns.scailo_pb.ts:1060

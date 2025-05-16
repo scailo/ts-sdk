@@ -7,6 +7,7 @@ import { OutwardJobFreeIssueMaterialReturn, OutwardJobFreeIssueMaterialReturnAnc
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
+import { FilterReturnableInventoryForIdentifierUUID, GenericInventoryList, SearchReturnableInventoryForIdentifierUUID } from "./inventory.scailo_pb.js";
 
 /**
  *
@@ -477,6 +478,28 @@ export const OutwardJobsFreeIssueMaterialsReturnsService = {
       name: "ViewProspectiveOutwardJobFreeIssueMaterialReturnItem",
       I: OutwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest,
       O: OutwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Search for returnable inventory
+     *
+     * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsReturnsService.SearchReturnableInventory
+     */
+    searchReturnableInventory: {
+      name: "SearchReturnableInventory",
+      I: SearchReturnableInventoryForIdentifierUUID,
+      O: GenericInventoryList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Filter returnable inventory
+     *
+     * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsReturnsService.FilterReturnableInventory
+     */
+    filterReturnableInventory: {
+      name: "FilterReturnableInventory",
+      I: FilterReturnableInventoryForIdentifierUUID,
+      O: GenericInventoryList,
       kind: MethodKind.Unary,
     },
     /**

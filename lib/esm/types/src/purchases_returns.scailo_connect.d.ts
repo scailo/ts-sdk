@@ -2,6 +2,7 @@ import { PurchaseReturn, PurchaseReturnAncillaryParameters, PurchaseReturnItem, 
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
+import { FilterReturnableInventoryForIdentifierUUID, GenericInventoryList, SearchReturnableInventoryForIdentifierUUID } from "./inventory.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each purchase return
@@ -342,6 +343,18 @@ export declare const PurchasesReturnsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * CSV operations
+         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         *
+         * @generated from rpc Scailo.PurchasesReturnsService.DownloadItemsAsCSV
+         */
+        readonly downloadItemsAsCSV: {
+            readonly name: "DownloadItemsAsCSV";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View by ID
          *
          * @generated from rpc Scailo.PurchasesReturnsService.ViewByID
@@ -471,6 +484,40 @@ export declare const PurchasesReturnsService: {
             readonly name: "ViewProspectivePurchaseReturnItem";
             readonly I: typeof PurchaseReturnItemProspectiveInfoRequest;
             readonly O: typeof PurchasesReturnsServiceItemCreateRequest;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Search for returnable inventory
+         *
+         * @generated from rpc Scailo.PurchasesReturnsService.SearchReturnableInventory
+         */
+        readonly searchReturnableInventory: {
+            readonly name: "SearchReturnableInventory";
+            readonly I: typeof SearchReturnableInventoryForIdentifierUUID;
+            readonly O: typeof GenericInventoryList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter returnable inventory
+         *
+         * @generated from rpc Scailo.PurchasesReturnsService.FilterReturnableInventory
+         */
+        readonly filterReturnableInventory: {
+            readonly name: "FilterReturnableInventory";
+            readonly I: typeof FilterReturnableInventoryForIdentifierUUID;
+            readonly O: typeof GenericInventoryList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Other view operations
+         * View the associated debit note information that is denoted by the identifier in the response for the goods dispatch that is denoted by the identifier UUID in the request
+         *
+         * @generated from rpc Scailo.PurchasesReturnsService.ViewAssociatedDebitNoteInfo
+         */
+        readonly viewAssociatedDebitNoteInfo: {
+            readonly name: "ViewAssociatedDebitNoteInfo";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

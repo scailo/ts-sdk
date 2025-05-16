@@ -71,7 +71,7 @@ Message\&lt;PurchasesReturnsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1444
+src/purchases_returns.scailo_pb.ts:1471
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1414
+src/purchases_returns.scailo_pb.ts:1441
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1407
+src/purchases_returns.scailo_pb.ts:1434
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1421
+src/purchases_returns.scailo_pb.ts:1448
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.PURCHASE_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1435
+src/purchases_returns.scailo_pb.ts:1462
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1428
+src/purchases_returns.scailo_pb.ts:1455
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1442
+src/purchases_returns.scailo_pb.ts:1469
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1451
+src/purchases_returns.scailo_pb.ts:1478
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1449
+src/purchases_returns.scailo_pb.ts:1476
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1450
+src/purchases_returns.scailo_pb.ts:1477
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1472
+src/purchases_returns.scailo_pb.ts:1499
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1460
+src/purchases_returns.scailo_pb.ts:1487
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1464
+src/purchases_returns.scailo_pb.ts:1491
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1468
+src/purchases_returns.scailo_pb.ts:1495

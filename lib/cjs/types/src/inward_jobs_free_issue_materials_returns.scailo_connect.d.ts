@@ -2,6 +2,7 @@ import { InwardJobFreeIssueMaterialReturn, InwardJobFreeIssueMaterialReturnAncil
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
+import { FilterReturnableInventoryForIdentifierUUID, GenericInventoryList, SearchReturnableInventoryForIdentifierUUID } from "./inventory.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each inward job free issue material return
@@ -471,6 +472,28 @@ export declare const InwardJobsFreeIssueMaterialsReturnsService: {
             readonly name: "ViewProspectiveInwardJobFreeIssueMaterialReturnItem";
             readonly I: typeof InwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest;
             readonly O: typeof InwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Search for returnable inventory
+         *
+         * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsReturnsService.SearchReturnableInventory
+         */
+        readonly searchReturnableInventory: {
+            readonly name: "SearchReturnableInventory";
+            readonly I: typeof SearchReturnableInventoryForIdentifierUUID;
+            readonly O: typeof GenericInventoryList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter returnable inventory
+         *
+         * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsReturnsService.FilterReturnableInventory
+         */
+        readonly filterReturnableInventory: {
+            readonly name: "FilterReturnableInventory";
+            readonly I: typeof FilterReturnableInventoryForIdentifierUUID;
+            readonly O: typeof GenericInventoryList;
             readonly kind: MethodKind.Unary;
         };
         /**

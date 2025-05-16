@@ -69,7 +69,7 @@ Message\&lt;StockReturnsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1159
+src/stock_returns.scailo_pb.ts:1186
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1136
+src/stock_returns.scailo_pb.ts:1163
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1143
+src/stock_returns.scailo_pb.ts:1170
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.StockReturn payload = 4;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1157
+src/stock_returns.scailo_pb.ts:1184
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1150
+src/stock_returns.scailo_pb.ts:1177
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1166
+src/stock_returns.scailo_pb.ts:1193
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1164
+src/stock_returns.scailo_pb.ts:1191
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1165
+src/stock_returns.scailo_pb.ts:1192
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1185
+src/stock_returns.scailo_pb.ts:1212
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1173
+src/stock_returns.scailo_pb.ts:1200
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1177
+src/stock_returns.scailo_pb.ts:1204
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1181
+src/stock_returns.scailo_pb.ts:1208

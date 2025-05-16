@@ -67,7 +67,7 @@ Message\&lt;PurchaseReturnItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1030
+src/purchases_returns.scailo_pb.ts:1057
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1028
+src/purchases_returns.scailo_pb.ts:1055
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 purchase_return_id = 10;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1021
+src/purchases_returns.scailo_pb.ts:1048
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1037
+src/purchases_returns.scailo_pb.ts:1064
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1035
+src/purchases_returns.scailo_pb.ts:1062
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1036
+src/purchases_returns.scailo_pb.ts:1063
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1054
+src/purchases_returns.scailo_pb.ts:1081
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1042
+src/purchases_returns.scailo_pb.ts:1069
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1046
+src/purchases_returns.scailo_pb.ts:1073
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1050
+src/purchases_returns.scailo_pb.ts:1077

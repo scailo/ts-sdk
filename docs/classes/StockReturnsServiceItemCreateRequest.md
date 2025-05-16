@@ -71,7 +71,7 @@ Message\&lt;StockReturnsServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:579
+src/stock_returns.scailo_pb.ts:606
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:556
+src/stock_returns.scailo_pb.ts:583
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:563
+src/stock_returns.scailo_pb.ts:590
 
 ___
 
@@ -119,7 +119,7 @@ from field: string item_hash = 13;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:570
+src/stock_returns.scailo_pb.ts:597
 
 ___
 
@@ -135,7 +135,7 @@ from field: string remaining_dimensions = 14;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:577
+src/stock_returns.scailo_pb.ts:604
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 stock_return_id = 10;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:549
+src/stock_returns.scailo_pb.ts:576
 
 ___
 
@@ -167,7 +167,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:542
+src/stock_returns.scailo_pb.ts:569
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:586
+src/stock_returns.scailo_pb.ts:613
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:584
+src/stock_returns.scailo_pb.ts:611
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:585
+src/stock_returns.scailo_pb.ts:612
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:607
+src/stock_returns.scailo_pb.ts:634
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:595
+src/stock_returns.scailo_pb.ts:622
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:599
+src/stock_returns.scailo_pb.ts:626
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:603
+src/stock_returns.scailo_pb.ts:630

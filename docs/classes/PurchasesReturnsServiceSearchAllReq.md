@@ -77,7 +77,7 @@ Message\&lt;PurchasesReturnsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2086
+src/purchases_returns.scailo_pb.ts:2113
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: Scailo.PURCHASE_RETURN_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2077
+src/purchases_returns.scailo_pb.ts:2104
 
 ___
 
@@ -109,7 +109,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2014
+src/purchases_returns.scailo_pb.ts:2041
 
 ___
 
@@ -125,7 +125,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2042
+src/purchases_returns.scailo_pb.ts:2069
 
 ___
 
@@ -141,7 +141,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2007
+src/purchases_returns.scailo_pb.ts:2034
 
 ___
 
@@ -157,23 +157,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2021
+src/purchases_returns.scailo_pb.ts:2048
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`PURCHASE_RETURN_REF_FROM`](../enums/PURCHASE_RETURN_REF_FROM.md) = `PURCHASE_RETURN_REF_FROM.PURCHASE_RETURN_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.PURCHASE_RETURN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2063
+src/purchases_returns.scailo_pb.ts:2090
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2070
+src/purchases_returns.scailo_pb.ts:2097
 
 ___
 
@@ -205,7 +205,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2056
+src/purchases_returns.scailo_pb.ts:2083
 
 ___
 
@@ -221,7 +221,7 @@ from field: Scailo.PURCHASE_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2035
+src/purchases_returns.scailo_pb.ts:2062
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2028
+src/purchases_returns.scailo_pb.ts:2055
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2049
+src/purchases_returns.scailo_pb.ts:2076
 
 ___
 
@@ -269,7 +269,7 @@ from field: uint64 vendor_id = 50;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2084
+src/purchases_returns.scailo_pb.ts:2111
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2093
+src/purchases_returns.scailo_pb.ts:2120
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2091
+src/purchases_returns.scailo_pb.ts:2118
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2092
+src/purchases_returns.scailo_pb.ts:2119
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2120
+src/purchases_returns.scailo_pb.ts:2147
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2108
+src/purchases_returns.scailo_pb.ts:2135
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2112
+src/purchases_returns.scailo_pb.ts:2139
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:2116
+src/purchases_returns.scailo_pb.ts:2143

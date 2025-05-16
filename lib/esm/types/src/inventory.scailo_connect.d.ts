@@ -102,6 +102,7 @@ export declare const InventoryService: {
          * View inventory that is returnable from a purchase order
          *
          * @generated from rpc Scailo.InventoryService.ViewReturnableForPurchaseOrder
+         * @deprecated
          */
         readonly viewReturnableForPurchaseOrder: {
             readonly name: "ViewReturnableForPurchaseOrder";
@@ -113,6 +114,7 @@ export declare const InventoryService: {
          * View inventory that is returnable from an inward job
          *
          * @generated from rpc Scailo.InventoryService.ViewReturnableForInwardJob
+         * @deprecated
          */
         readonly viewReturnableForInwardJob: {
             readonly name: "ViewReturnableForInwardJob";
@@ -124,6 +126,7 @@ export declare const InventoryService: {
          * View inventory that is returnable from a stock issuance
          *
          * @generated from rpc Scailo.InventoryService.ViewReturnableForStockIssuance
+         * @deprecated
          */
         readonly viewReturnableForStockIssuance: {
             readonly name: "ViewReturnableForStockIssuance";
@@ -135,6 +138,7 @@ export declare const InventoryService: {
          * View inventory that is returnable from a sales order
          *
          * @generated from rpc Scailo.InventoryService.ViewReturnableForSalesOrder
+         * @deprecated
          */
         readonly viewReturnableForSalesOrder: {
             readonly name: "ViewReturnableForSalesOrder";
@@ -146,6 +150,7 @@ export declare const InventoryService: {
          * View inventory that is returnable from an outward job
          *
          * @generated from rpc Scailo.InventoryService.ViewReturnableForOutwardJob
+         * @deprecated
          */
         readonly viewReturnableForOutwardJob: {
             readonly name: "ViewReturnableForOutwardJob";

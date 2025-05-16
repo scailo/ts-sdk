@@ -161,7 +161,7 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this product
+Stores the metadata of this inventory item
 
 **`Generated`**
 

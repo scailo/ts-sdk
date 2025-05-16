@@ -80,7 +80,7 @@ Message\&lt;StockReturnItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1820
+src/stock_returns.scailo_pb.ts:1847
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1783
+src/stock_returns.scailo_pb.ts:1810
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1776
+src/stock_returns.scailo_pb.ts:1803
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1769
+src/stock_returns.scailo_pb.ts:1796
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1790
+src/stock_returns.scailo_pb.ts:1817
 
 ___
 
@@ -160,7 +160,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1727
+src/stock_returns.scailo_pb.ts:1754
 
 ___
 
@@ -176,7 +176,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1755
+src/stock_returns.scailo_pb.ts:1782
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1804
+src/stock_returns.scailo_pb.ts:1831
 
 ___
 
@@ -208,7 +208,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1720
+src/stock_returns.scailo_pb.ts:1747
 
 ___
 
@@ -224,7 +224,7 @@ from field: string item_hash = 22;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1811
+src/stock_returns.scailo_pb.ts:1838
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1734
+src/stock_returns.scailo_pb.ts:1761
 
 ___
 
@@ -256,7 +256,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1818
+src/stock_returns.scailo_pb.ts:1845
 
 ___
 
@@ -272,7 +272,7 @@ from field: Scailo.STOCK_RETURN_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1748
+src/stock_returns.scailo_pb.ts:1775
 
 ___
 
@@ -288,7 +288,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1741
+src/stock_returns.scailo_pb.ts:1768
 
 ___
 
@@ -304,7 +304,7 @@ from field: Scailo.STOCK_RETURN_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1762
+src/stock_returns.scailo_pb.ts:1789
 
 ___
 
@@ -320,7 +320,7 @@ from field: uint64 stock_return_id = 20;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1797
+src/stock_returns.scailo_pb.ts:1824
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1827
+src/stock_returns.scailo_pb.ts:1854
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1825
+src/stock_returns.scailo_pb.ts:1852
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1826
+src/stock_returns.scailo_pb.ts:1853
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1857
+src/stock_returns.scailo_pb.ts:1884
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1845
+src/stock_returns.scailo_pb.ts:1872
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1849
+src/stock_returns.scailo_pb.ts:1876
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1853
+src/stock_returns.scailo_pb.ts:1880

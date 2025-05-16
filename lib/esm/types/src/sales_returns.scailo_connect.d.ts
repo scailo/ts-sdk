@@ -2,6 +2,7 @@ import { SalesReturn, SalesReturnAncillaryParameters, SalesReturnItem, SalesRetu
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
+import { FilterReturnableInventoryForIdentifierUUID, GenericInventoryList, SearchReturnableInventoryForIdentifierUUID } from "./inventory.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each sales return
@@ -483,6 +484,28 @@ export declare const SalesReturnsService: {
             readonly name: "ViewProspectiveSalesReturnItem";
             readonly I: typeof SalesReturnItemProspectiveInfoRequest;
             readonly O: typeof SalesReturnsServiceItemCreateRequest;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Search for returnable inventory
+         *
+         * @generated from rpc Scailo.SalesReturnsService.SearchReturnableInventory
+         */
+        readonly searchReturnableInventory: {
+            readonly name: "SearchReturnableInventory";
+            readonly I: typeof SearchReturnableInventoryForIdentifierUUID;
+            readonly O: typeof GenericInventoryList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Filter returnable inventory
+         *
+         * @generated from rpc Scailo.SalesReturnsService.FilterReturnableInventory
+         */
+        readonly filterReturnableInventory: {
+            readonly name: "FilterReturnableInventory";
+            readonly I: typeof FilterReturnableInventoryForIdentifierUUID;
+            readonly O: typeof GenericInventoryList;
             readonly kind: MethodKind.Unary;
         };
         /**

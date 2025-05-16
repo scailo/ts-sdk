@@ -67,7 +67,7 @@ Message\&lt;StockReturnItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:955
+src/stock_returns.scailo_pb.ts:982
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:953
+src/stock_returns.scailo_pb.ts:980
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 stock_return_id = 10;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:946
+src/stock_returns.scailo_pb.ts:973
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:962
+src/stock_returns.scailo_pb.ts:989
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:960
+src/stock_returns.scailo_pb.ts:987
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:961
+src/stock_returns.scailo_pb.ts:988
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:979
+src/stock_returns.scailo_pb.ts:1006
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:967
+src/stock_returns.scailo_pb.ts:994
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:971
+src/stock_returns.scailo_pb.ts:998
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:975
+src/stock_returns.scailo_pb.ts:1002

@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { EmployeeMetadata, INVENTORY_LIFECYCLE } from "./base.scailo_pb.js";
+import { BOOL_FILTER, EmployeeMetadata, INVENTORY_LIFECYCLE, INVENTORY_SORT_KEY, SORT_ORDER } from "./base.scailo_pb.js";
 import { FAMILY_TYPE } from "./families.scailo_pb.js";
 
 /**
@@ -82,14 +82,14 @@ export class GenericInventory extends Message<GenericInventory> {
   entityUuid = "";
 
   /**
-   * Stores the metadata of this product
+   * Stores the metadata of this inventory item
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * The status of this product
+   * The status of this inventory item
    *
    * @generated from field: Scailo.INVENTORY_LIFECYCLE status = 4;
    */
@@ -173,7 +173,7 @@ export class GenericInventory extends Message<GenericInventory> {
   familyId = protoInt64.zero;
 
   /**
-   * The auto generated code of the product
+   * The auto generated code of the inventory item
    *
    * @generated from field: string code = 34;
    */
@@ -187,7 +187,7 @@ export class GenericInventory extends Message<GenericInventory> {
   internalItemCode = "";
 
   /**
-   * The computed hash of the product
+   * The computed hash of the inventory item
    *
    * @generated from field: string hash = 36;
    */
@@ -208,14 +208,14 @@ export class GenericInventory extends Message<GenericInventory> {
   quantityRemaining = protoInt64.zero;
 
   /**
-   * Stores an optional secondary unit of product
+   * Stores an optional secondary unit of inventory item
    *
    * @generated from field: uint64 secondary_uom_id = 39;
    */
   secondaryUomId = protoInt64.zero;
 
   /**
-   * Stores an optional quantity in the secondary unit of product
+   * Stores an optional quantity in the secondary unit of inventory item
    *
    * @generated from field: uint64 secondary_quantity = 40;
    */
@@ -236,14 +236,14 @@ export class GenericInventory extends Message<GenericInventory> {
   warrantyTimestamp = protoInt64.zero;
 
   /**
-   * Stores the store to which the product is sent to
+   * Stores the store to which the inventory item is sent to
    *
    * @generated from field: uint64 store_id = 50;
    */
   storeId = protoInt64.zero;
 
   /**
-   * Stores an optional ID of the associated storage that the product is stored in
+   * Stores an optional ID of the associated storage that the inventory item is stored in
    *
    * @generated from field: uint64 storage_id = 51;
    */
@@ -271,7 +271,7 @@ export class GenericInventory extends Message<GenericInventory> {
   remainingDimensions = "";
 
   /**
-   * The description of the product
+   * The description of the inventory item
    *
    * @generated from field: string description = 60;
    */
@@ -398,7 +398,7 @@ export class InventoryCodeMap extends Message<InventoryCodeMap> {
   entityUuid = "";
 
   /**
-   * Stores the metadata of this product
+   * Stores the metadata of this inventory item
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
@@ -702,6 +702,494 @@ export class ReturnableInventorySearchReq extends Message<ReturnableInventorySea
 
   static equals(a: ReturnableInventorySearchReq | PlainMessage<ReturnableInventorySearchReq> | undefined, b: ReturnableInventorySearchReq | PlainMessage<ReturnableInventorySearchReq> | undefined): boolean {
     return proto3.util.equals(ReturnableInventorySearchReq, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message that consists of parameters that are required to search for returnable inventory
+ *
+ * @generated from message Scailo.SearchReturnableInventoryReq
+ */
+export class SearchReturnableInventoryReq extends Message<SearchReturnableInventoryReq> {
+  /**
+   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   */
+  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
+   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @generated from field: int64 count = 2;
+   */
+  count = protoInt64.zero;
+
+  /**
+   * The number that need to be offset by before fetching the records
+   *
+   * @generated from field: uint64 offset = 3;
+   */
+  offset = protoInt64.zero;
+
+  /**
+   * The sort order that is to be used to fetch the pagination response
+   *
+   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   */
+  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+
+  /**
+   * The sort key that is to be used to fetch the pagination response
+   *
+   * @generated from field: Scailo.INVENTORY_SORT_KEY sort_key = 5;
+   */
+  sortKey = INVENTORY_SORT_KEY.INVENTORY_SORT_KEY_ID_UNSPECIFIED;
+
+  /**
+   * The entity UUID that is to be used to filter records
+   *
+   * @generated from field: string entity_uuid = 6;
+   */
+  entityUuid = "";
+
+  /**
+   * Describes the key with which the search operation needs to be performed
+   *
+   * @generated from field: string search_key = 11;
+   */
+  searchKey = "";
+
+  /**
+   * Stores the ID of the associated family
+   *
+   * @generated from field: uint64 family_id = 33;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The minimum remaining quantity (in cents)
+   *
+   * @generated from field: uint64 quantity_remaining_min = 37;
+   */
+  quantityRemainingMin = protoInt64.zero;
+
+  /**
+   * The maximum remaining quantity (in cents)
+   *
+   * @generated from field: uint64 quantity_remaining_max = 38;
+   */
+  quantityRemainingMax = protoInt64.zero;
+
+  /**
+   * Stores an optional secondary unit of inventory item
+   *
+   * @generated from field: uint64 secondary_uom_id = 39;
+   */
+  secondaryUomId = protoInt64.zero;
+
+  /**
+   * The start range of shelf life timestamp
+   *
+   * @generated from field: uint64 shelf_life_timestamp_start = 40;
+   */
+  shelfLifeTimestampStart = protoInt64.zero;
+
+  /**
+   * The end range of shelf life timestamp
+   *
+   * @generated from field: uint64 shelf_life_timestamp_end = 41;
+   */
+  shelfLifeTimestampEnd = protoInt64.zero;
+
+  /**
+   * The start range of the warranty timestamp
+   *
+   * @generated from field: uint64 warranty_timestamp_start = 42;
+   */
+  warrantyTimestampStart = protoInt64.zero;
+
+  /**
+   * The end range of the warranty timestamp
+   *
+   * @generated from field: uint64 warranty_timestamp_end = 43;
+   */
+  warrantyTimestampEnd = protoInt64.zero;
+
+  /**
+   * Stores if the associated QC report should be public
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
+   */
+  isQcReportPublic = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
+   * Filter by the location ID
+   *
+   * @generated from field: uint64 location_id = 54;
+   */
+  locationId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<SearchReturnableInventoryReq>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SearchReturnableInventoryReq";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(INVENTORY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 33, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 37, name: "quantity_remaining_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 38, name: "quantity_remaining_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 39, name: "secondary_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 40, name: "shelf_life_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 41, name: "shelf_life_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 42, name: "warranty_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 43, name: "warranty_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 52, name: "is_qc_report_public", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 54, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SearchReturnableInventoryReq {
+    return new SearchReturnableInventoryReq().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SearchReturnableInventoryReq {
+    return new SearchReturnableInventoryReq().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SearchReturnableInventoryReq {
+    return new SearchReturnableInventoryReq().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SearchReturnableInventoryReq | PlainMessage<SearchReturnableInventoryReq> | undefined, b: SearchReturnableInventoryReq | PlainMessage<SearchReturnableInventoryReq> | undefined): boolean {
+    return proto3.util.equals(SearchReturnableInventoryReq, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message that consists of parameters that are required to search for returnable inventory for a record with the given identifier
+ *
+ * @generated from message Scailo.SearchReturnableInventoryForIdentifierUUID
+ */
+export class SearchReturnableInventoryForIdentifierUUID extends Message<SearchReturnableInventoryForIdentifierUUID> {
+  /**
+   * UUID of the resource
+   *
+   * @generated from field: string uuid = 1;
+   */
+  uuid = "";
+
+  /**
+   * The search filter to apply
+   *
+   * @generated from field: Scailo.SearchReturnableInventoryReq filter = 10;
+   */
+  filter?: SearchReturnableInventoryReq;
+
+  constructor(data?: PartialMessage<SearchReturnableInventoryForIdentifierUUID>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SearchReturnableInventoryForIdentifierUUID";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "filter", kind: "message", T: SearchReturnableInventoryReq },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SearchReturnableInventoryForIdentifierUUID {
+    return new SearchReturnableInventoryForIdentifierUUID().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SearchReturnableInventoryForIdentifierUUID {
+    return new SearchReturnableInventoryForIdentifierUUID().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SearchReturnableInventoryForIdentifierUUID {
+    return new SearchReturnableInventoryForIdentifierUUID().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SearchReturnableInventoryForIdentifierUUID | PlainMessage<SearchReturnableInventoryForIdentifierUUID> | undefined, b: SearchReturnableInventoryForIdentifierUUID | PlainMessage<SearchReturnableInventoryForIdentifierUUID> | undefined): boolean {
+    return proto3.util.equals(SearchReturnableInventoryForIdentifierUUID, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message that consists of parameters that are required to filter for returnable inventory
+ *
+ * @generated from message Scailo.FilterReturnableInventoryReq
+ */
+export class FilterReturnableInventoryReq extends Message<FilterReturnableInventoryReq> {
+  /**
+   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   */
+  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
+   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @generated from field: int64 count = 2;
+   */
+  count = protoInt64.zero;
+
+  /**
+   * The number that need to be offset by before fetching the records
+   *
+   * @generated from field: uint64 offset = 3;
+   */
+  offset = protoInt64.zero;
+
+  /**
+   * The sort order that is to be used to fetch the pagination response
+   *
+   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   */
+  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+
+  /**
+   * The sort key that is to be used to fetch the pagination response
+   *
+   * @generated from field: Scailo.INVENTORY_SORT_KEY sort_key = 5;
+   */
+  sortKey = INVENTORY_SORT_KEY.INVENTORY_SORT_KEY_ID_UNSPECIFIED;
+
+  /**
+   * The minimum timestamp that needs to be considered to filter by creation
+   *
+   * @generated from field: uint64 creation_timestamp_start = 101;
+   */
+  creationTimestampStart = protoInt64.zero;
+
+  /**
+   * The maximum timestamp that needs to be considered to filter by creation
+   *
+   * @generated from field: uint64 creation_timestamp_end = 102;
+   */
+  creationTimestampEnd = protoInt64.zero;
+
+  /**
+   * The minimum timestamp that needs to be considered to filter by modification
+   *
+   * @generated from field: uint64 modification_timestamp_start = 103;
+   */
+  modificationTimestampStart = protoInt64.zero;
+
+  /**
+   * The maximum timestamp that needs to be considered to filter by modification
+   *
+   * @generated from field: uint64 modification_timestamp_end = 104;
+   */
+  modificationTimestampEnd = protoInt64.zero;
+
+  /**
+   * The entity UUID that is to be used to filter records
+   *
+   * @generated from field: string entity_uuid = 8;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the ID of the associated family
+   *
+   * @generated from field: uint64 family_id = 33;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The auto generated code of the inventory item
+   *
+   * @generated from field: string code = 34;
+   */
+  code = "";
+
+  /**
+   * Stores the internal code (as given by user)
+   *
+   * @generated from field: string internal_item_code = 35;
+   */
+  internalItemCode = "";
+
+  /**
+   * The computed hash of the inventory item
+   *
+   * @generated from field: string hash = 36;
+   */
+  hash = "";
+
+  /**
+   * The minimum remaining quantity (in cents)
+   *
+   * @generated from field: uint64 quantity_remaining_min = 37;
+   */
+  quantityRemainingMin = protoInt64.zero;
+
+  /**
+   * The maximum remaining quantity (in cents)
+   *
+   * @generated from field: uint64 quantity_remaining_max = 38;
+   */
+  quantityRemainingMax = protoInt64.zero;
+
+  /**
+   * Stores an optional secondary unit of inventory item
+   *
+   * @generated from field: uint64 secondary_uom_id = 39;
+   */
+  secondaryUomId = protoInt64.zero;
+
+  /**
+   * The start range of shelf life timestamp
+   *
+   * @generated from field: uint64 shelf_life_timestamp_start = 40;
+   */
+  shelfLifeTimestampStart = protoInt64.zero;
+
+  /**
+   * The end range of shelf life timestamp
+   *
+   * @generated from field: uint64 shelf_life_timestamp_end = 41;
+   */
+  shelfLifeTimestampEnd = protoInt64.zero;
+
+  /**
+   * The start range of the warranty timestamp
+   *
+   * @generated from field: uint64 warranty_timestamp_start = 42;
+   */
+  warrantyTimestampStart = protoInt64.zero;
+
+  /**
+   * The end range of the warranty timestamp
+   *
+   * @generated from field: uint64 warranty_timestamp_end = 43;
+   */
+  warrantyTimestampEnd = protoInt64.zero;
+
+  /**
+   * Stores if the associated QC report should be public
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
+   */
+  isQcReportPublic = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
+   * Filter by the location ID
+   *
+   * @generated from field: uint64 location_id = 54;
+   */
+  locationId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<FilterReturnableInventoryReq>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FilterReturnableInventoryReq";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(INVENTORY_SORT_KEY) },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 33, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 34, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 35, name: "internal_item_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 36, name: "hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 37, name: "quantity_remaining_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 38, name: "quantity_remaining_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 39, name: "secondary_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 40, name: "shelf_life_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 41, name: "shelf_life_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 42, name: "warranty_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 43, name: "warranty_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 52, name: "is_qc_report_public", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 54, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FilterReturnableInventoryReq {
+    return new FilterReturnableInventoryReq().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FilterReturnableInventoryReq {
+    return new FilterReturnableInventoryReq().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FilterReturnableInventoryReq {
+    return new FilterReturnableInventoryReq().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FilterReturnableInventoryReq | PlainMessage<FilterReturnableInventoryReq> | undefined, b: FilterReturnableInventoryReq | PlainMessage<FilterReturnableInventoryReq> | undefined): boolean {
+    return proto3.util.equals(FilterReturnableInventoryReq, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message that consists of parameters that are required to filter returnable inventory for a record with the given identifier
+ *
+ * @generated from message Scailo.FilterReturnableInventoryForIdentifierUUID
+ */
+export class FilterReturnableInventoryForIdentifierUUID extends Message<FilterReturnableInventoryForIdentifierUUID> {
+  /**
+   * UUID of the resource
+   *
+   * @generated from field: string uuid = 1;
+   */
+  uuid = "";
+
+  /**
+   * The returnable inventory filter to apply
+   *
+   * @generated from field: Scailo.FilterReturnableInventoryReq filter = 10;
+   */
+  filter?: FilterReturnableInventoryReq;
+
+  constructor(data?: PartialMessage<FilterReturnableInventoryForIdentifierUUID>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FilterReturnableInventoryForIdentifierUUID";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "filter", kind: "message", T: FilterReturnableInventoryReq },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FilterReturnableInventoryForIdentifierUUID {
+    return new FilterReturnableInventoryForIdentifierUUID().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FilterReturnableInventoryForIdentifierUUID {
+    return new FilterReturnableInventoryForIdentifierUUID().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FilterReturnableInventoryForIdentifierUUID {
+    return new FilterReturnableInventoryForIdentifierUUID().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FilterReturnableInventoryForIdentifierUUID | PlainMessage<FilterReturnableInventoryForIdentifierUUID> | undefined, b: FilterReturnableInventoryForIdentifierUUID | PlainMessage<FilterReturnableInventoryForIdentifierUUID> | undefined): boolean {
+    return proto3.util.equals(FilterReturnableInventoryForIdentifierUUID, a, b);
   }
 }
 

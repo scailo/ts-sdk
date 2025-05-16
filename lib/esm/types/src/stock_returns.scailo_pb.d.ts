@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a stock return can be added
+ *
+ * @generated from enum Scailo.STOCK_RETURN_REF_FROM
+ */
+export declare enum STOCK_RETURN_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: STOCK_RETURN_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    STOCK_RETURN_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the stock return originated from a stock issuance
+     *
+     * @generated from enum value: STOCK_RETURN_REF_FROM_STOCK_ISSUANCE = 1;
+     */
+    STOCK_RETURN_REF_FROM_STOCK_ISSUANCE = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.STOCK_RETURN_SORT_KEY
@@ -180,9 +200,9 @@ export declare class StockReturnsServiceCreateRequest extends Message<StockRetur
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.STOCK_RETURN_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: STOCK_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -326,9 +346,9 @@ export declare class StockReturn extends Message<StockReturn> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.STOCK_RETURN_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: STOCK_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -646,9 +666,9 @@ export declare class StockReturnsServiceAlreadyAddedQuantityForSourceRequest ext
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.STOCK_RETURN_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: STOCK_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -886,9 +906,9 @@ export declare class StockReturnsServiceFilterReq extends Message<StockReturnsSe
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.STOCK_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: STOCK_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1016,9 +1036,9 @@ export declare class StockReturnsServiceCountReq extends Message<StockReturnsSer
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.STOCK_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: STOCK_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1104,9 +1124,9 @@ export declare class StockReturnsServiceSearchAllReq extends Message<StockReturn
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.STOCK_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: STOCK_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *

@@ -75,7 +75,7 @@ Message\&lt;StockReturnItem\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:763
+src/stock_returns.scailo_pb.ts:790
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:712
+src/stock_returns.scailo_pb.ts:739
 
 ___
 
@@ -107,7 +107,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:698
+src/stock_returns.scailo_pb.ts:725
 
 ___
 
@@ -123,7 +123,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:740
+src/stock_returns.scailo_pb.ts:767
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:747
+src/stock_returns.scailo_pb.ts:774
 
 ___
 
@@ -155,7 +155,7 @@ from field: string item_hash = 13;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:754
+src/stock_returns.scailo_pb.ts:781
 
 ___
 
@@ -171,7 +171,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:705
+src/stock_returns.scailo_pb.ts:732
 
 ___
 
@@ -187,7 +187,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:719
+src/stock_returns.scailo_pb.ts:746
 
 ___
 
@@ -203,7 +203,7 @@ from field: string remaining_dimensions = 14;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:761
+src/stock_returns.scailo_pb.ts:788
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 stock_return_id = 10;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:733
+src/stock_returns.scailo_pb.ts:760
 
 ___
 
@@ -235,7 +235,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:726
+src/stock_returns.scailo_pb.ts:753
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:770
+src/stock_returns.scailo_pb.ts:797
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:768
+src/stock_returns.scailo_pb.ts:795
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:769
+src/stock_returns.scailo_pb.ts:796
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:795
+src/stock_returns.scailo_pb.ts:822
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:783
+src/stock_returns.scailo_pb.ts:810
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:787
+src/stock_returns.scailo_pb.ts:814
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:791
+src/stock_returns.scailo_pb.ts:818

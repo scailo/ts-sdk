@@ -1,6 +1,6 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
-import { EmployeeMetadata, INVENTORY_LIFECYCLE } from "./base.scailo_pb.js";
+import { BOOL_FILTER, EmployeeMetadata, INVENTORY_LIFECYCLE, INVENTORY_SORT_KEY, SORT_ORDER } from "./base.scailo_pb.js";
 import { FAMILY_TYPE } from "./families.scailo_pb.js";
 /**
  *
@@ -60,13 +60,13 @@ export declare class GenericInventory extends Message<GenericInventory> {
      */
     entityUuid: string;
     /**
-     * Stores the metadata of this product
+     * Stores the metadata of this inventory item
      *
      * @generated from field: Scailo.EmployeeMetadata metadata = 2;
      */
     metadata?: EmployeeMetadata;
     /**
-     * The status of this product
+     * The status of this inventory item
      *
      * @generated from field: Scailo.INVENTORY_LIFECYCLE status = 4;
      */
@@ -138,7 +138,7 @@ export declare class GenericInventory extends Message<GenericInventory> {
      */
     familyId: bigint;
     /**
-     * The auto generated code of the product
+     * The auto generated code of the inventory item
      *
      * @generated from field: string code = 34;
      */
@@ -150,7 +150,7 @@ export declare class GenericInventory extends Message<GenericInventory> {
      */
     internalItemCode: string;
     /**
-     * The computed hash of the product
+     * The computed hash of the inventory item
      *
      * @generated from field: string hash = 36;
      */
@@ -168,13 +168,13 @@ export declare class GenericInventory extends Message<GenericInventory> {
      */
     quantityRemaining: bigint;
     /**
-     * Stores an optional secondary unit of product
+     * Stores an optional secondary unit of inventory item
      *
      * @generated from field: uint64 secondary_uom_id = 39;
      */
     secondaryUomId: bigint;
     /**
-     * Stores an optional quantity in the secondary unit of product
+     * Stores an optional quantity in the secondary unit of inventory item
      *
      * @generated from field: uint64 secondary_quantity = 40;
      */
@@ -192,13 +192,13 @@ export declare class GenericInventory extends Message<GenericInventory> {
      */
     warrantyTimestamp: bigint;
     /**
-     * Stores the store to which the product is sent to
+     * Stores the store to which the inventory item is sent to
      *
      * @generated from field: uint64 store_id = 50;
      */
     storeId: bigint;
     /**
-     * Stores an optional ID of the associated storage that the product is stored in
+     * Stores an optional ID of the associated storage that the inventory item is stored in
      *
      * @generated from field: uint64 storage_id = 51;
      */
@@ -222,7 +222,7 @@ export declare class GenericInventory extends Message<GenericInventory> {
      */
     remainingDimensions: string;
     /**
-     * The description of the product
+     * The description of the inventory item
      *
      * @generated from field: string description = 60;
      */
@@ -278,7 +278,7 @@ export declare class InventoryCodeMap extends Message<InventoryCodeMap> {
      */
     entityUuid: string;
     /**
-     * Stores the metadata of this product
+     * Stores the metadata of this inventory item
      *
      * @generated from field: Scailo.EmployeeMetadata metadata = 2;
      */
@@ -457,6 +457,334 @@ export declare class ReturnableInventorySearchReq extends Message<ReturnableInve
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReturnableInventorySearchReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReturnableInventorySearchReq;
     static equals(a: ReturnableInventorySearchReq | PlainMessage<ReturnableInventorySearchReq> | undefined, b: ReturnableInventorySearchReq | PlainMessage<ReturnableInventorySearchReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message that consists of parameters that are required to search for returnable inventory
+ *
+ * @generated from message Scailo.SearchReturnableInventoryReq
+ */
+export declare class SearchReturnableInventoryReq extends Message<SearchReturnableInventoryReq> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The sort order that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     */
+    sortOrder: SORT_ORDER;
+    /**
+     * The sort key that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.INVENTORY_SORT_KEY sort_key = 5;
+     */
+    sortKey: INVENTORY_SORT_KEY;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 6;
+     */
+    entityUuid: string;
+    /**
+     * Describes the key with which the search operation needs to be performed
+     *
+     * @generated from field: string search_key = 11;
+     */
+    searchKey: string;
+    /**
+     * Stores the ID of the associated family
+     *
+     * @generated from field: uint64 family_id = 33;
+     */
+    familyId: bigint;
+    /**
+     * The minimum remaining quantity (in cents)
+     *
+     * @generated from field: uint64 quantity_remaining_min = 37;
+     */
+    quantityRemainingMin: bigint;
+    /**
+     * The maximum remaining quantity (in cents)
+     *
+     * @generated from field: uint64 quantity_remaining_max = 38;
+     */
+    quantityRemainingMax: bigint;
+    /**
+     * Stores an optional secondary unit of inventory item
+     *
+     * @generated from field: uint64 secondary_uom_id = 39;
+     */
+    secondaryUomId: bigint;
+    /**
+     * The start range of shelf life timestamp
+     *
+     * @generated from field: uint64 shelf_life_timestamp_start = 40;
+     */
+    shelfLifeTimestampStart: bigint;
+    /**
+     * The end range of shelf life timestamp
+     *
+     * @generated from field: uint64 shelf_life_timestamp_end = 41;
+     */
+    shelfLifeTimestampEnd: bigint;
+    /**
+     * The start range of the warranty timestamp
+     *
+     * @generated from field: uint64 warranty_timestamp_start = 42;
+     */
+    warrantyTimestampStart: bigint;
+    /**
+     * The end range of the warranty timestamp
+     *
+     * @generated from field: uint64 warranty_timestamp_end = 43;
+     */
+    warrantyTimestampEnd: bigint;
+    /**
+     * Stores if the associated QC report should be public
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
+     */
+    isQcReportPublic: BOOL_FILTER;
+    /**
+     * Filter by the location ID
+     *
+     * @generated from field: uint64 location_id = 54;
+     */
+    locationId: bigint;
+    constructor(data?: PartialMessage<SearchReturnableInventoryReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SearchReturnableInventoryReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SearchReturnableInventoryReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SearchReturnableInventoryReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SearchReturnableInventoryReq;
+    static equals(a: SearchReturnableInventoryReq | PlainMessage<SearchReturnableInventoryReq> | undefined, b: SearchReturnableInventoryReq | PlainMessage<SearchReturnableInventoryReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message that consists of parameters that are required to search for returnable inventory for a record with the given identifier
+ *
+ * @generated from message Scailo.SearchReturnableInventoryForIdentifierUUID
+ */
+export declare class SearchReturnableInventoryForIdentifierUUID extends Message<SearchReturnableInventoryForIdentifierUUID> {
+    /**
+     * UUID of the resource
+     *
+     * @generated from field: string uuid = 1;
+     */
+    uuid: string;
+    /**
+     * The search filter to apply
+     *
+     * @generated from field: Scailo.SearchReturnableInventoryReq filter = 10;
+     */
+    filter?: SearchReturnableInventoryReq;
+    constructor(data?: PartialMessage<SearchReturnableInventoryForIdentifierUUID>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SearchReturnableInventoryForIdentifierUUID";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SearchReturnableInventoryForIdentifierUUID;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SearchReturnableInventoryForIdentifierUUID;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SearchReturnableInventoryForIdentifierUUID;
+    static equals(a: SearchReturnableInventoryForIdentifierUUID | PlainMessage<SearchReturnableInventoryForIdentifierUUID> | undefined, b: SearchReturnableInventoryForIdentifierUUID | PlainMessage<SearchReturnableInventoryForIdentifierUUID> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message that consists of parameters that are required to filter for returnable inventory
+ *
+ * @generated from message Scailo.FilterReturnableInventoryReq
+ */
+export declare class FilterReturnableInventoryReq extends Message<FilterReturnableInventoryReq> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The sort order that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     */
+    sortOrder: SORT_ORDER;
+    /**
+     * The sort key that is to be used to fetch the pagination response
+     *
+     * @generated from field: Scailo.INVENTORY_SORT_KEY sort_key = 5;
+     */
+    sortKey: INVENTORY_SORT_KEY;
+    /**
+     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_start = 101;
+     */
+    creationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_end = 102;
+     */
+    creationTimestampEnd: bigint;
+    /**
+     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_start = 103;
+     */
+    modificationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_end = 104;
+     */
+    modificationTimestampEnd: bigint;
+    /**
+     * The entity UUID that is to be used to filter records
+     *
+     * @generated from field: string entity_uuid = 8;
+     */
+    entityUuid: string;
+    /**
+     * Stores the ID of the associated family
+     *
+     * @generated from field: uint64 family_id = 33;
+     */
+    familyId: bigint;
+    /**
+     * The auto generated code of the inventory item
+     *
+     * @generated from field: string code = 34;
+     */
+    code: string;
+    /**
+     * Stores the internal code (as given by user)
+     *
+     * @generated from field: string internal_item_code = 35;
+     */
+    internalItemCode: string;
+    /**
+     * The computed hash of the inventory item
+     *
+     * @generated from field: string hash = 36;
+     */
+    hash: string;
+    /**
+     * The minimum remaining quantity (in cents)
+     *
+     * @generated from field: uint64 quantity_remaining_min = 37;
+     */
+    quantityRemainingMin: bigint;
+    /**
+     * The maximum remaining quantity (in cents)
+     *
+     * @generated from field: uint64 quantity_remaining_max = 38;
+     */
+    quantityRemainingMax: bigint;
+    /**
+     * Stores an optional secondary unit of inventory item
+     *
+     * @generated from field: uint64 secondary_uom_id = 39;
+     */
+    secondaryUomId: bigint;
+    /**
+     * The start range of shelf life timestamp
+     *
+     * @generated from field: uint64 shelf_life_timestamp_start = 40;
+     */
+    shelfLifeTimestampStart: bigint;
+    /**
+     * The end range of shelf life timestamp
+     *
+     * @generated from field: uint64 shelf_life_timestamp_end = 41;
+     */
+    shelfLifeTimestampEnd: bigint;
+    /**
+     * The start range of the warranty timestamp
+     *
+     * @generated from field: uint64 warranty_timestamp_start = 42;
+     */
+    warrantyTimestampStart: bigint;
+    /**
+     * The end range of the warranty timestamp
+     *
+     * @generated from field: uint64 warranty_timestamp_end = 43;
+     */
+    warrantyTimestampEnd: bigint;
+    /**
+     * Stores if the associated QC report should be public
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
+     */
+    isQcReportPublic: BOOL_FILTER;
+    /**
+     * Filter by the location ID
+     *
+     * @generated from field: uint64 location_id = 54;
+     */
+    locationId: bigint;
+    constructor(data?: PartialMessage<FilterReturnableInventoryReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FilterReturnableInventoryReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FilterReturnableInventoryReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FilterReturnableInventoryReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FilterReturnableInventoryReq;
+    static equals(a: FilterReturnableInventoryReq | PlainMessage<FilterReturnableInventoryReq> | undefined, b: FilterReturnableInventoryReq | PlainMessage<FilterReturnableInventoryReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message that consists of parameters that are required to filter returnable inventory for a record with the given identifier
+ *
+ * @generated from message Scailo.FilterReturnableInventoryForIdentifierUUID
+ */
+export declare class FilterReturnableInventoryForIdentifierUUID extends Message<FilterReturnableInventoryForIdentifierUUID> {
+    /**
+     * UUID of the resource
+     *
+     * @generated from field: string uuid = 1;
+     */
+    uuid: string;
+    /**
+     * The returnable inventory filter to apply
+     *
+     * @generated from field: Scailo.FilterReturnableInventoryReq filter = 10;
+     */
+    filter?: FilterReturnableInventoryReq;
+    constructor(data?: PartialMessage<FilterReturnableInventoryForIdentifierUUID>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FilterReturnableInventoryForIdentifierUUID";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FilterReturnableInventoryForIdentifierUUID;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FilterReturnableInventoryForIdentifierUUID;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FilterReturnableInventoryForIdentifierUUID;
+    static equals(a: FilterReturnableInventoryForIdentifierUUID | PlainMessage<FilterReturnableInventoryForIdentifierUUID> | undefined, b: FilterReturnableInventoryForIdentifierUUID | PlainMessage<FilterReturnableInventoryForIdentifierUUID> | undefined): boolean;
 }
 /**
  *

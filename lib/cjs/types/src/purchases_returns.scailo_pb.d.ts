@@ -4,6 +4,26 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Stores all the possible references from which a purchase return can be added
+ *
+ * @generated from enum Scailo.PURCHASE_RETURN_REF_FROM
+ */
+export declare enum PURCHASE_RETURN_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: PURCHASE_RETURN_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    PURCHASE_RETURN_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the purchase return originated from a purchase order
+     *
+     * @generated from enum value: PURCHASE_RETURN_REF_FROM_PURCHASE_ORDER = 1;
+     */
+    PURCHASE_RETURN_REF_FROM_PURCHASE_ORDER = 1
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.PURCHASE_RETURN_ITEM_SORT_KEY
@@ -218,9 +238,9 @@ export declare class PurchasesReturnsServiceCreateRequest extends Message<Purcha
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.PURCHASE_RETURN_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: PURCHASE_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -392,9 +412,9 @@ export declare class PurchaseReturn extends Message<PurchaseReturn> {
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.PURCHASE_RETURN_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: PURCHASE_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -882,9 +902,9 @@ export declare class PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 1;
+     * @generated from field: Scailo.PURCHASE_RETURN_REF_FROM ref_from = 1;
      */
-    refFrom: string;
+    refFrom: PURCHASE_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1122,9 +1142,9 @@ export declare class PurchasesReturnsServiceFilterReq extends Message<PurchasesR
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.PURCHASE_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: PURCHASE_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1270,9 +1290,9 @@ export declare class PurchasesReturnsServiceCountReq extends Message<PurchasesRe
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.PURCHASE_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: PURCHASE_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *
@@ -1376,9 +1396,9 @@ export declare class PurchasesReturnsServiceSearchAllReq extends Message<Purchas
     /**
      * The associated reference
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.PURCHASE_RETURN_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: PURCHASE_RETURN_REF_FROM;
     /**
      * The associated ID of the reference
      *

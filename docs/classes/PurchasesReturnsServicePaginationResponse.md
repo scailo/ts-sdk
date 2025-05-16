@@ -69,7 +69,7 @@ Message\&lt;PurchasesReturnsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1512
+src/purchases_returns.scailo_pb.ts:1539
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1489
+src/purchases_returns.scailo_pb.ts:1516
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1496
+src/purchases_returns.scailo_pb.ts:1523
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.PurchaseReturn payload = 4;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1510
+src/purchases_returns.scailo_pb.ts:1537
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1503
+src/purchases_returns.scailo_pb.ts:1530
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1519
+src/purchases_returns.scailo_pb.ts:1546
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1517
+src/purchases_returns.scailo_pb.ts:1544
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1518
+src/purchases_returns.scailo_pb.ts:1545
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1538
+src/purchases_returns.scailo_pb.ts:1565
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1526
+src/purchases_returns.scailo_pb.ts:1553
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1530
+src/purchases_returns.scailo_pb.ts:1557
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1534
+src/purchases_returns.scailo_pb.ts:1561

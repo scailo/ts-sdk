@@ -71,7 +71,7 @@ Message\&lt;StockReturnsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1091
+src/stock_returns.scailo_pb.ts:1118
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1061
+src/stock_returns.scailo_pb.ts:1088
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1054
+src/stock_returns.scailo_pb.ts:1081
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1068
+src/stock_returns.scailo_pb.ts:1095
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.STOCK_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1082
+src/stock_returns.scailo_pb.ts:1109
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1075
+src/stock_returns.scailo_pb.ts:1102
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1089
+src/stock_returns.scailo_pb.ts:1116
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1098
+src/stock_returns.scailo_pb.ts:1125
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1096
+src/stock_returns.scailo_pb.ts:1123
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1097
+src/stock_returns.scailo_pb.ts:1124
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1119
+src/stock_returns.scailo_pb.ts:1146
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1107
+src/stock_returns.scailo_pb.ts:1134
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1111
+src/stock_returns.scailo_pb.ts:1138
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1115
+src/stock_returns.scailo_pb.ts:1142
