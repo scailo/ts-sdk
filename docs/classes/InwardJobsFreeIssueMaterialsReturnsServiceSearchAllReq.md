@@ -75,7 +75,7 @@ Message\&lt;InwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq\&gt;.construc
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2079
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2106
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2021
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2048
 
 ___
 
@@ -107,7 +107,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2049
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2076
 
 ___
 
@@ -123,7 +123,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2014
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2041
 
 ___
 
@@ -139,23 +139,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2028
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2055
 
 ___
 
 ### refFrom
 
-• **refFrom**: `string` = `""`
+• **refFrom**: [`INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM`](../enums/INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM.md) = `INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED`
 
 The associated reference
 
 **`Generated`**
 
-from field: string ref_from = 22;
+from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2070
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2097
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2077
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2104
 
 ___
 
@@ -187,7 +187,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2063
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2090
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2042
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2069
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2035
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2062
 
 ___
 
@@ -235,7 +235,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2056
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2083
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2086
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2113
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2084
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2111
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2085
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2112
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2111
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2138
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2099
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2126
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2103
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2130
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2107
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:2134

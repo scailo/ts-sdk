@@ -69,7 +69,7 @@ Message\&lt;OutwardJobsFreeIssueMaterialsReturnsServicePaginationResponse\&gt;.c
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1477
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1504
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1454
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1481
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1461
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1488
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.OutwardJobFreeIssueMaterialReturn payload = 4;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1475
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1502
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1468
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1495
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1484
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1511
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1482
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1509
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1483
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1510
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1503
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1530
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1491
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1518
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1495
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1522
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1499
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:1526

@@ -10,6 +10,33 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Stores all the possible references from which a inward job free issue material return can be added
+ *
+ * @generated from enum Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM
+ */
+export enum INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the inward job free issue material return originated from a inward job
+   *
+   * @generated from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_INWARD_JOB = 1;
+   */
+  INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_INWARD_JOB = 1,
+}
+// Retrieve enum metadata with: proto3.getEnumType(INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM)
+proto3.util.setEnumType(INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM, "Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM", [
+  { no: 0, name: "INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_INWARD_JOB" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY
@@ -263,9 +290,9 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest extends Mes
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -300,7 +327,7 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceCreateRequest extends Mes
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
@@ -528,9 +555,9 @@ export class InwardJobFreeIssueMaterialReturn extends Message<InwardJobFreeIssue
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -577,7 +604,7 @@ export class InwardJobFreeIssueMaterialReturn extends Message<InwardJobFreeIssue
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: InwardJobFreeIssueMaterialReturnItem, repeated: true },
@@ -1349,9 +1376,9 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSo
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 1;
+   * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM ref_from = 1;
    */
-  refFrom = "";
+  refFrom = INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1375,7 +1402,7 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSo
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.InwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "ref_from", kind: "enum", T: proto3.getEnumType(INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM) },
     { no: 2, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1688,9 +1715,9 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceFilterReq extends Message
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1762,7 +1789,7 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceFilterReq extends Message
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1903,9 +1930,9 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceCountReq extends Message<
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -1973,7 +2000,7 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceCountReq extends Message<
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2065,9 +2092,9 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq extends Mess
   /**
    * The associated reference
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM.INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The associated ID of the reference
@@ -2092,7 +2119,7 @@ export class InwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq extends Mess
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 

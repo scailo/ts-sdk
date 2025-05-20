@@ -67,7 +67,7 @@ Message\&lt;InwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest\&gt;.cons
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1077
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1104
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1075
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1102
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 inward_job_free_issue_material_return_id = 10;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1068
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1095
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1084
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1111
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1082
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1109
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1083
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1110
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1101
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1128
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1089
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1116
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1093
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1120
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1097
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1124

@@ -30,7 +30,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_STATUS_ANY_UNSPECIF
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:114
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:141
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_STATUS_APPROVED = 1
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:121
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:148
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_STATUS_UNAPPROVED =
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:128
+src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:155

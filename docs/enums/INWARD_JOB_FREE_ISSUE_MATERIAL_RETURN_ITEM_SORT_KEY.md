@@ -38,7 +38,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_APPROVED_BY
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:51
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:78
 
 ___
 
@@ -54,7 +54,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_APPROVED_ON
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:44
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:71
 
 ___
 
@@ -70,7 +70,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_APPROVER_RO
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:58
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:85
 
 ___
 
@@ -86,7 +86,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_CLIENT_FAMI
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:93
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:120
 
 ___
 
@@ -102,7 +102,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_CLIENT_QUAN
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:86
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:113
 
 ___
 
@@ -118,7 +118,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_CLIENT_UOM_
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:79
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:106
 
 ___
 
@@ -134,7 +134,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_CREATED_AT 
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:30
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:57
 
 ___
 
@@ -150,7 +150,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_FAMILY_ID =
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:65
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:92
 
 ___
 
@@ -166,7 +166,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_ID_UNSPECIF
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:23
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:50
 
 ___
 
@@ -182,7 +182,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_INTERNAL_QU
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:72
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:99
 
 ___
 
@@ -198,4 +198,4 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_MODIFIED_AT
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:37
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:64

@@ -69,7 +69,7 @@ Message\&lt;InwardJobsFreeIssueMaterialsReturnsServicePaginationResponse\&gt;.co
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1517
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1544
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1494
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1521
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1501
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1528
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.InwardJobFreeIssueMaterialReturn payload = 4;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1515
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1542
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1508
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1535
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1524
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1551
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1522
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1549
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1523
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1550
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1543
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1570
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1531
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1558
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1535
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1562
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1539
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1566
