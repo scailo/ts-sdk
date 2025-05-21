@@ -215,6 +215,17 @@ export const FeedstocksService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View all records with the given UUIDs
+     *
+     * @generated from rpc Scailo.FeedstocksService.ViewFromUUIDs
+     */
+    viewFromUUIDs: {
+      name: "ViewFromUUIDs",
+      I: IdentifierUUIDsList,
+      O: FeedstocksList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.FeedstocksService.ViewAll

@@ -216,6 +216,17 @@ export const ComponentsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View all records with the given UUIDs
+     *
+     * @generated from rpc Scailo.ComponentsService.ViewFromUUIDs
+     */
+    viewFromUUIDs: {
+      name: "ViewFromUUIDs",
+      I: IdentifierUUIDsList,
+      O: ComponentsList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.ComponentsService.ViewAll

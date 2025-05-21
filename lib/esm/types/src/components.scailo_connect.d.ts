@@ -210,6 +210,17 @@ export declare const ComponentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View all records with the given UUIDs
+         *
+         * @generated from rpc Scailo.ComponentsService.ViewFromUUIDs
+         */
+        readonly viewFromUUIDs: {
+            readonly name: "ViewFromUUIDs";
+            readonly I: typeof IdentifierUUIDsList;
+            readonly O: typeof ComponentsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.ComponentsService.ViewAll

@@ -215,6 +215,17 @@ export const InfrastructuresService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View all records with the given UUIDs
+     *
+     * @generated from rpc Scailo.InfrastructuresService.ViewFromUUIDs
+     */
+    viewFromUUIDs: {
+      name: "ViewFromUUIDs",
+      I: IdentifierUUIDsList,
+      O: InfrastructuresList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.InfrastructuresService.ViewAll

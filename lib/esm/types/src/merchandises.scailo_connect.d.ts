@@ -209,6 +209,17 @@ export declare const MerchandisesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View all records with the given UUIDs
+         *
+         * @generated from rpc Scailo.MerchandisesService.ViewFromUUIDs
+         */
+        readonly viewFromUUIDs: {
+            readonly name: "ViewFromUUIDs";
+            readonly I: typeof IdentifierUUIDsList;
+            readonly O: typeof MerchandisesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.MerchandisesService.ViewAll

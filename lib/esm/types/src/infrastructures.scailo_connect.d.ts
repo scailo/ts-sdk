@@ -209,6 +209,17 @@ export declare const InfrastructuresService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View all records with the given UUIDs
+         *
+         * @generated from rpc Scailo.InfrastructuresService.ViewFromUUIDs
+         */
+        readonly viewFromUUIDs: {
+            readonly name: "ViewFromUUIDs";
+            readonly I: typeof IdentifierUUIDsList;
+            readonly O: typeof InfrastructuresList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.InfrastructuresService.ViewAll
