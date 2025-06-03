@@ -514,7 +514,7 @@ export declare const PurchasesIndentsService: {
          */
         readonly viewOrderedStatistics: {
             readonly name: "ViewOrderedStatistics";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof PurchaseIndentOrderedStatisticsList;
             readonly kind: MethodKind.Unary;
         };

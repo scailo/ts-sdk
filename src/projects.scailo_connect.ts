@@ -342,7 +342,7 @@ export const ProjectsService = {
      */
     viewStatistics: {
       name: "ViewStatistics",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ProjectStatistics,
       kind: MethodKind.Unary,
     },

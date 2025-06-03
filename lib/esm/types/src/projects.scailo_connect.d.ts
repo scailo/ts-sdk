@@ -336,7 +336,7 @@ export declare const ProjectsService: {
          */
         readonly viewStatistics: {
             readonly name: "ViewStatistics";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ProjectStatistics;
             readonly kind: MethodKind.Unary;
         };

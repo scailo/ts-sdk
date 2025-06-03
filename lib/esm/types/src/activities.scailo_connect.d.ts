@@ -572,7 +572,7 @@ export declare const ActivitiesService: {
          */
         readonly viewStatistics: {
             readonly name: "ViewStatistics";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ActivityStatistics;
             readonly kind: MethodKind.Unary;
         };

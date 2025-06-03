@@ -520,7 +520,7 @@ export const PurchasesIndentsService = {
      */
     viewOrderedStatistics: {
       name: "ViewOrderedStatistics",
-      I: Identifier,
+      I: IdentifierUUID,
       O: PurchaseIndentOrderedStatisticsList,
       kind: MethodKind.Unary,
     },

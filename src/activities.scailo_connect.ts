@@ -578,7 +578,7 @@ export const ActivitiesService = {
      */
     viewStatistics: {
       name: "ViewStatistics",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ActivityStatistics,
       kind: MethodKind.Unary,
     },
