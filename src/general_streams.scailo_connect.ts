@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { GeneralStream, GeneralStreamInternalSubscriber, GeneralStreamInternalSubscribersList, GeneralStreamMessage, GeneralStreamMessageReceiptsList, GeneralStreamMessagesList, GeneralStreamMessagesSearchRequest, GeneralStreamsList, GeneralStreamsServiceCountReq, GeneralStreamsServiceCreateRequest, GeneralStreamsServiceFilterReq, GeneralStreamsServiceImportInternalSubscribersRequest, GeneralStreamsServiceInternalSubscriberCreateRequest, GeneralStreamsServiceMessageCreateRequest, GeneralStreamsServicePaginatedMessagesResponse, GeneralStreamsServicePaginationReq, GeneralStreamsServicePaginationResponse, GeneralStreamsServiceSearchAllReq, GeneralStreamsServiceUpdateRequest } from "./general_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -369,6 +369,18 @@ export const GeneralStreamsService = {
       name: "Count",
       I: GeneralStreamsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request
+     *
+     * @generated from rpc Scailo.GeneralStreamsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: GeneralStreamsServiceFilterReq,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
   }

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ClientStream, ClientStreamClientSubscriber, ClientStreamClientSubscribersList, ClientStreamInternalSubscriber, ClientStreamInternalSubscribersList, ClientStreamMessage, ClientStreamMessageReceiptsList, ClientStreamMessagesList, ClientStreamMessagesSearchRequest, ClientStreamsList, ClientStreamsServiceClientSubscriberCreateRequest, ClientStreamsServiceCountReq, ClientStreamsServiceCreateRequest, ClientStreamsServiceFilterReq, ClientStreamsServiceImportInternalSubscribersRequest, ClientStreamsServiceInternalSubscriberCreateRequest, ClientStreamsServiceMessageCreateRequest, ClientStreamsServicePaginatedMessagesResponse, ClientStreamsServicePaginationReq, ClientStreamsServicePaginationResponse, ClientStreamsServiceSearchAllReq, ClientStreamsServiceUpdateRequest } from "./client_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -413,6 +413,18 @@ export const ClientStreamsService = {
       name: "Count",
       I: ClientStreamsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request
+     *
+     * @generated from rpc Scailo.ClientStreamsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: ClientStreamsServiceFilterReq,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
   }

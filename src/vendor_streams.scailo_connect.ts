@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { VendorStream, VendorStreamInternalSubscriber, VendorStreamInternalSubscribersList, VendorStreamMessage, VendorStreamMessageReceiptsList, VendorStreamMessagesList, VendorStreamMessagesSearchRequest, VendorStreamsList, VendorStreamsServiceCountReq, VendorStreamsServiceCreateRequest, VendorStreamsServiceFilterReq, VendorStreamsServiceImportInternalSubscribersRequest, VendorStreamsServiceInternalSubscriberCreateRequest, VendorStreamsServiceMessageCreateRequest, VendorStreamsServicePaginatedMessagesResponse, VendorStreamsServicePaginationReq, VendorStreamsServicePaginationResponse, VendorStreamsServiceSearchAllReq, VendorStreamsServiceUpdateRequest, VendorStreamsServiceVendorSubscriberCreateRequest, VendorStreamVendorSubscriber, VendorStreamVendorSubscribersList } from "./vendor_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -413,6 +413,18 @@ export const VendorStreamsService = {
       name: "Count",
       I: VendorStreamsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request
+     *
+     * @generated from rpc Scailo.VendorStreamsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: VendorStreamsServiceFilterReq,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
   }

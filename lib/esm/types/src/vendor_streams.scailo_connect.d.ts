@@ -1,5 +1,5 @@
 import { VendorStream, VendorStreamInternalSubscriber, VendorStreamInternalSubscribersList, VendorStreamMessage, VendorStreamMessageReceiptsList, VendorStreamMessagesList, VendorStreamMessagesSearchRequest, VendorStreamsList, VendorStreamsServiceCountReq, VendorStreamsServiceCreateRequest, VendorStreamsServiceFilterReq, VendorStreamsServiceImportInternalSubscribersRequest, VendorStreamsServiceInternalSubscriberCreateRequest, VendorStreamsServiceMessageCreateRequest, VendorStreamsServicePaginatedMessagesResponse, VendorStreamsServicePaginationReq, VendorStreamsServicePaginationResponse, VendorStreamsServiceSearchAllReq, VendorStreamsServiceUpdateRequest, VendorStreamsServiceVendorSubscriberCreateRequest, VendorStreamVendorSubscriber, VendorStreamVendorSubscribersList } from "./vendor_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -407,6 +407,18 @@ export declare const VendorStreamsService: {
             readonly name: "Count";
             readonly I: typeof VendorStreamsServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request
+         *
+         * @generated from rpc Scailo.VendorStreamsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof VendorStreamsServiceFilterReq;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
     };

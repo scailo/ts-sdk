@@ -1,5 +1,5 @@
 import { GeneralStream, GeneralStreamInternalSubscriber, GeneralStreamInternalSubscribersList, GeneralStreamMessage, GeneralStreamMessageReceiptsList, GeneralStreamMessagesList, GeneralStreamMessagesSearchRequest, GeneralStreamsList, GeneralStreamsServiceCountReq, GeneralStreamsServiceCreateRequest, GeneralStreamsServiceFilterReq, GeneralStreamsServiceImportInternalSubscribersRequest, GeneralStreamsServiceInternalSubscriberCreateRequest, GeneralStreamsServiceMessageCreateRequest, GeneralStreamsServicePaginatedMessagesResponse, GeneralStreamsServicePaginationReq, GeneralStreamsServicePaginationResponse, GeneralStreamsServiceSearchAllReq, GeneralStreamsServiceUpdateRequest } from "./general_streams.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -363,6 +363,18 @@ export declare const GeneralStreamsService: {
             readonly name: "Count";
             readonly I: typeof GeneralStreamsServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of records according to the given filter request
+         *
+         * @generated from rpc Scailo.GeneralStreamsService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof GeneralStreamsServiceFilterReq;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
     };
