@@ -171,7 +171,7 @@ export const ActivitiesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View Statistics of Activity Action by ID
+     * View Statistics of Activity Action by UUID
      *
      * @generated from rpc Scailo.ActivitiesService.ViewActionStatistics
      */
@@ -182,13 +182,13 @@ export const ActivitiesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all actions for given activity ID
+     * View all actions for given activity UUID
      *
      * @generated from rpc Scailo.ActivitiesService.ViewActions
      */
     viewActions: {
       name: "ViewActions",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ActivityActionsList,
       kind: MethodKind.Unary,
     },
@@ -282,13 +282,13 @@ export const ActivitiesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all activities tags for given activity ID
+     * View all activities tags for given activity UUID
      *
      * @generated from rpc Scailo.ActivitiesService.ViewActivityTagAssociations
      */
     viewActivityTagAssociations: {
       name: "ViewActivityTagAssociations",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ActivityTagAssociationsList,
       kind: MethodKind.Unary,
     },
@@ -326,13 +326,13 @@ export const ActivitiesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all owners for given activity ID
+     * View all owners for given activity UUID
      *
      * @generated from rpc Scailo.ActivitiesService.ViewOwners
      */
     viewOwners: {
       name: "ViewOwners",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ActivityOwnersList,
       kind: MethodKind.Unary,
     },
@@ -392,13 +392,13 @@ export const ActivitiesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all supervisors for given activity ID
+     * View all supervisors for given activity UUID
      *
      * @generated from rpc Scailo.ActivitiesService.ViewSupervisors
      */
     viewSupervisors: {
       name: "ViewSupervisors",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ActivitySupervisorsList,
       kind: MethodKind.Unary,
     },
@@ -436,13 +436,13 @@ export const ActivitiesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all timers for given activity ID
+     * View all timers for given activity UUID
      *
      * @generated from rpc Scailo.ActivitiesService.ViewTimers
      */
     viewTimers: {
       name: "ViewTimers",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ActivityTimersList,
       kind: MethodKind.Unary,
     },

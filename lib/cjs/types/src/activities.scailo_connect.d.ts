@@ -165,7 +165,7 @@ export declare const ActivitiesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View Statistics of Activity Action by ID
+         * View Statistics of Activity Action by UUID
          *
          * @generated from rpc Scailo.ActivitiesService.ViewActionStatistics
          */
@@ -176,13 +176,13 @@ export declare const ActivitiesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all actions for given activity ID
+         * View all actions for given activity UUID
          *
          * @generated from rpc Scailo.ActivitiesService.ViewActions
          */
         readonly viewActions: {
             readonly name: "ViewActions";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ActivityActionsList;
             readonly kind: MethodKind.Unary;
         };
@@ -276,13 +276,13 @@ export declare const ActivitiesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all activities tags for given activity ID
+         * View all activities tags for given activity UUID
          *
          * @generated from rpc Scailo.ActivitiesService.ViewActivityTagAssociations
          */
         readonly viewActivityTagAssociations: {
             readonly name: "ViewActivityTagAssociations";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ActivityTagAssociationsList;
             readonly kind: MethodKind.Unary;
         };
@@ -320,13 +320,13 @@ export declare const ActivitiesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all owners for given activity ID
+         * View all owners for given activity UUID
          *
          * @generated from rpc Scailo.ActivitiesService.ViewOwners
          */
         readonly viewOwners: {
             readonly name: "ViewOwners";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ActivityOwnersList;
             readonly kind: MethodKind.Unary;
         };
@@ -386,13 +386,13 @@ export declare const ActivitiesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all supervisors for given activity ID
+         * View all supervisors for given activity UUID
          *
          * @generated from rpc Scailo.ActivitiesService.ViewSupervisors
          */
         readonly viewSupervisors: {
             readonly name: "ViewSupervisors";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ActivitySupervisorsList;
             readonly kind: MethodKind.Unary;
         };
@@ -430,13 +430,13 @@ export declare const ActivitiesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all timers for given activity ID
+         * View all timers for given activity UUID
          *
          * @generated from rpc Scailo.ActivitiesService.ViewTimers
          */
         readonly viewTimers: {
             readonly name: "ViewTimers";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ActivityTimersList;
             readonly kind: MethodKind.Unary;
         };
