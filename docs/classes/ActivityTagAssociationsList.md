@@ -66,7 +66,7 @@ Message\&lt;ActivityTagAssociationsList\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2513
+src/activities.scailo_pb.ts:2521
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ActivityTagAssociation list = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2511
+src/activities.scailo_pb.ts:2519
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2520
+src/activities.scailo_pb.ts:2528
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2518
+src/activities.scailo_pb.ts:2526
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2519
+src/activities.scailo_pb.ts:2527
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2536
+src/activities.scailo_pb.ts:2544
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2524
+src/activities.scailo_pb.ts:2532
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2528
+src/activities.scailo_pb.ts:2536
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2532
+src/activities.scailo_pb.ts:2540

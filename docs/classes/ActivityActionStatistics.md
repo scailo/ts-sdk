@@ -67,7 +67,7 @@ Message\&lt;ActivityActionStatistics\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1944
+src/activities.scailo_pb.ts:1952
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 total_completion_percentage = 2;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1942
+src/activities.scailo_pb.ts:1950
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 total_duration = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1935
+src/activities.scailo_pb.ts:1943
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1951
+src/activities.scailo_pb.ts:1959
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1949
+src/activities.scailo_pb.ts:1957
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1950
+src/activities.scailo_pb.ts:1958
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1968
+src/activities.scailo_pb.ts:1976
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1956
+src/activities.scailo_pb.ts:1964
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1960
+src/activities.scailo_pb.ts:1968
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1964
+src/activities.scailo_pb.ts:1972

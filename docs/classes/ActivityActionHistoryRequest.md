@@ -67,7 +67,7 @@ Message\&lt;ActivityActionHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2036
+src/activities.scailo_pb.ts:2044
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 action_code_id = 13;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2034
+src/activities.scailo_pb.ts:2042
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 activity_id = 10;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2027
+src/activities.scailo_pb.ts:2035
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2043
+src/activities.scailo_pb.ts:2051
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2041
+src/activities.scailo_pb.ts:2049
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2042
+src/activities.scailo_pb.ts:2050
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2060
+src/activities.scailo_pb.ts:2068
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2048
+src/activities.scailo_pb.ts:2056
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2052
+src/activities.scailo_pb.ts:2060
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2056
+src/activities.scailo_pb.ts:2064

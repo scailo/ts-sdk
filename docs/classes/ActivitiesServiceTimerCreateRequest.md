@@ -73,7 +73,7 @@ Message\&lt;ActivitiesServiceTimerCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3018
+src/activities.scailo_pb.ts:3026
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: uint64 activity_action_id = 11;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2974
+src/activities.scailo_pb.ts:2982
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 completion_percentage = 16;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3009
+src/activities.scailo_pb.ts:3017
 
 ___
 
@@ -121,7 +121,7 @@ from field: string description = 17;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3016
+src/activities.scailo_pb.ts:3024
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 employee_id = 13;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2988
+src/activities.scailo_pb.ts:2996
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 end_at = 15;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3002
+src/activities.scailo_pb.ts:3010
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 goal_id = 12;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2981
+src/activities.scailo_pb.ts:2989
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 start_at = 14;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2995
+src/activities.scailo_pb.ts:3003
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2967
+src/activities.scailo_pb.ts:2975
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3025
+src/activities.scailo_pb.ts:3033
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3023
+src/activities.scailo_pb.ts:3031
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3024
+src/activities.scailo_pb.ts:3032
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3048
+src/activities.scailo_pb.ts:3056
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3036
+src/activities.scailo_pb.ts:3044
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3040
+src/activities.scailo_pb.ts:3048
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3044
+src/activities.scailo_pb.ts:3052

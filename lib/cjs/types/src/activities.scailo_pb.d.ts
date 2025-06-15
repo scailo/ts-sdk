@@ -1295,6 +1295,12 @@ export declare class ActivityAction extends Message<ActivityAction> {
      * @generated from field: uint64 points = 14;
      */
     points: bigint;
+    /**
+     * Stores the statistics of the activity action
+     *
+     * @generated from field: Scailo.ActivityActionStatistics statistics = 30;
+     */
+    statistics?: ActivityActionStatistics;
     constructor(data?: PartialMessage<ActivityAction>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ActivityAction";

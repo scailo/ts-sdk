@@ -66,7 +66,7 @@ Message\&lt;ActivitySupervisorsList\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2927
+src/activities.scailo_pb.ts:2935
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ActivitySupervisor list = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2925
+src/activities.scailo_pb.ts:2933
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2934
+src/activities.scailo_pb.ts:2942
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2932
+src/activities.scailo_pb.ts:2940
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2933
+src/activities.scailo_pb.ts:2941
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2950
+src/activities.scailo_pb.ts:2958
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2938
+src/activities.scailo_pb.ts:2946
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2942
+src/activities.scailo_pb.ts:2950
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2946
+src/activities.scailo_pb.ts:2954

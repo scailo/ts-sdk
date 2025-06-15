@@ -69,7 +69,7 @@ Message\&lt;ActivitiesServiceImportOwnersRequest\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2750
+src/activities.scailo_pb.ts:2758
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 activity_id = 2;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2734
+src/activities.scailo_pb.ts:2742
 
 ___
 
@@ -101,7 +101,7 @@ from field: bool delete_existing = 4;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2748
+src/activities.scailo_pb.ts:2756
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 resource_id = 3;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2741
+src/activities.scailo_pb.ts:2749
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2727
+src/activities.scailo_pb.ts:2735
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2757
+src/activities.scailo_pb.ts:2765
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2755
+src/activities.scailo_pb.ts:2763
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2756
+src/activities.scailo_pb.ts:2764
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2776
+src/activities.scailo_pb.ts:2784
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2764
+src/activities.scailo_pb.ts:2772
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2768
+src/activities.scailo_pb.ts:2776
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2772
+src/activities.scailo_pb.ts:2780

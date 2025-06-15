@@ -68,7 +68,7 @@ Message\&lt;ActivitiesServiceActivityTagAssociationCreateRequest\&gt;.constructo
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2395
+src/activities.scailo_pb.ts:2403
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 activity_id = 10;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2386
+src/activities.scailo_pb.ts:2394
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 activity_tag_id = 11;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2393
+src/activities.scailo_pb.ts:2401
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2379
+src/activities.scailo_pb.ts:2387
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2402
+src/activities.scailo_pb.ts:2410
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2400
+src/activities.scailo_pb.ts:2408
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2401
+src/activities.scailo_pb.ts:2409
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2420
+src/activities.scailo_pb.ts:2428
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2408
+src/activities.scailo_pb.ts:2416
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2412
+src/activities.scailo_pb.ts:2420
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2416
+src/activities.scailo_pb.ts:2424

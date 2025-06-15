@@ -1884,6 +1884,13 @@ export class ActivityAction extends Message<ActivityAction> {
    */
   points = protoInt64.zero;
 
+  /**
+   * Stores the statistics of the activity action
+   *
+   * @generated from field: Scailo.ActivityActionStatistics statistics = 30;
+   */
+  statistics?: ActivityActionStatistics;
+
   constructor(data?: PartialMessage<ActivityAction>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1901,6 +1908,7 @@ export class ActivityAction extends Message<ActivityAction> {
     { no: 12, name: "content", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "action_code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "points", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "statistics", kind: "message", T: ActivityActionStatistics },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ActivityAction {

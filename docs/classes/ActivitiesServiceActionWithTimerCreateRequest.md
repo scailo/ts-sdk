@@ -76,7 +76,7 @@ Message\&lt;ActivitiesServiceActionWithTimerCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2329
+src/activities.scailo_pb.ts:2337
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: uint64 action_code_id = 17;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2313
+src/activities.scailo_pb.ts:2321
 
 ___
 
@@ -108,7 +108,7 @@ from field: uint64 activity_id = 10;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2264
+src/activities.scailo_pb.ts:2272
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 completion_percentage = 16;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2306
+src/activities.scailo_pb.ts:2314
 
 ___
 
@@ -140,7 +140,7 @@ from field: string content = 21;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2327
+src/activities.scailo_pb.ts:2335
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 employee_id = 12;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2278
+src/activities.scailo_pb.ts:2286
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 end_at = 15;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2299
+src/activities.scailo_pb.ts:2307
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 goal_id = 11;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2271
+src/activities.scailo_pb.ts:2279
 
 ___
 
@@ -204,7 +204,7 @@ from field: uint64 points = 13;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2285
+src/activities.scailo_pb.ts:2293
 
 ___
 
@@ -220,7 +220,7 @@ from field: uint64 start_at = 14;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2292
+src/activities.scailo_pb.ts:2300
 
 ___
 
@@ -236,7 +236,7 @@ from field: string title = 20;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2320
+src/activities.scailo_pb.ts:2328
 
 ___
 
@@ -252,7 +252,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2257
+src/activities.scailo_pb.ts:2265
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2336
+src/activities.scailo_pb.ts:2344
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2334
+src/activities.scailo_pb.ts:2342
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2335
+src/activities.scailo_pb.ts:2343
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2362
+src/activities.scailo_pb.ts:2370
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2350
+src/activities.scailo_pb.ts:2358
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2354
+src/activities.scailo_pb.ts:2362
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2358
+src/activities.scailo_pb.ts:2366

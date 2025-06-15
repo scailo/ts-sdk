@@ -68,7 +68,7 @@ Message\&lt;ActivitiesServiceOwnerCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2569
+src/activities.scailo_pb.ts:2577
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 activity_id = 10;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2560
+src/activities.scailo_pb.ts:2568
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 employee_id = 11;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2567
+src/activities.scailo_pb.ts:2575
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2553
+src/activities.scailo_pb.ts:2561
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2576
+src/activities.scailo_pb.ts:2584
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2574
+src/activities.scailo_pb.ts:2582
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2575
+src/activities.scailo_pb.ts:2583
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2594
+src/activities.scailo_pb.ts:2602
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2582
+src/activities.scailo_pb.ts:2590
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2586
+src/activities.scailo_pb.ts:2594
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2590
+src/activities.scailo_pb.ts:2598

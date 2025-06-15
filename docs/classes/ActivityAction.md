@@ -29,6 +29,7 @@ from message Scailo.ActivityAction
 - [entityUuid](ActivityAction.md#entityuuid)
 - [metadata](ActivityAction.md#metadata)
 - [points](ActivityAction.md#points)
+- [statistics](ActivityAction.md#statistics)
 - [title](ActivityAction.md#title)
 - [userComment](ActivityAction.md#usercomment)
 - [fields](ActivityAction.md#fields)
@@ -74,7 +75,7 @@ Message\&lt;ActivityAction\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1887
+src/activities.scailo_pb.ts:1894
 
 ## Properties
 
@@ -190,6 +191,22 @@ src/activities.scailo_pb.ts:1885
 
 ___
 
+### statistics
+
+• `Optional` **statistics**: [`ActivityActionStatistics`](ActivityActionStatistics.md)
+
+Stores the statistics of the activity action
+
+**`Generated`**
+
+from field: Scailo.ActivityActionStatistics statistics = 30;
+
+#### Defined in
+
+src/activities.scailo_pb.ts:1892
+
+___
+
 ### title
 
 • **title**: `string` = `""`
@@ -228,7 +245,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1894
+src/activities.scailo_pb.ts:1901
 
 ___
 
@@ -238,7 +255,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1892
+src/activities.scailo_pb.ts:1899
 
 ___
 
@@ -248,7 +265,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1893
+src/activities.scailo_pb.ts:1900
 
 ## Methods
 
@@ -536,7 +553,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1918
+src/activities.scailo_pb.ts:1926
 
 ___
 
@@ -557,7 +574,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1906
+src/activities.scailo_pb.ts:1914
 
 ___
 
@@ -578,7 +595,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1910
+src/activities.scailo_pb.ts:1918
 
 ___
 
@@ -599,4 +616,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1914
+src/activities.scailo_pb.ts:1922

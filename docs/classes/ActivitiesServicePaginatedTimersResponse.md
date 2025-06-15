@@ -69,7 +69,7 @@ Message\&lt;ActivitiesServicePaginatedTimersResponse\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3488
+src/activities.scailo_pb.ts:3496
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3465
+src/activities.scailo_pb.ts:3473
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3472
+src/activities.scailo_pb.ts:3480
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.ActivityTimer payload = 4;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3486
+src/activities.scailo_pb.ts:3494
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3479
+src/activities.scailo_pb.ts:3487
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3495
+src/activities.scailo_pb.ts:3503
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3493
+src/activities.scailo_pb.ts:3501
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3494
+src/activities.scailo_pb.ts:3502
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3514
+src/activities.scailo_pb.ts:3522
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3502
+src/activities.scailo_pb.ts:3510
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3506
+src/activities.scailo_pb.ts:3514
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3510
+src/activities.scailo_pb.ts:3518

@@ -171,7 +171,7 @@ export const ActivitiesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View Statistics of Activity Action by UUID
+     * View Statistics of Activity Action by ID
      *
      * @generated from rpc Scailo.ActivitiesService.ViewActionStatistics
      */

@@ -70,7 +70,7 @@ Message\&lt;ActivitySupervisor\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2881
+src/activities.scailo_pb.ts:2889
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 activity_id = 10;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2872
+src/activities.scailo_pb.ts:2880
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 employee_id = 11;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2879
+src/activities.scailo_pb.ts:2887
 
 ___
 
@@ -118,7 +118,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2851
+src/activities.scailo_pb.ts:2859
 
 ___
 
@@ -134,7 +134,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2858
+src/activities.scailo_pb.ts:2866
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2865
+src/activities.scailo_pb.ts:2873
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2888
+src/activities.scailo_pb.ts:2896
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2886
+src/activities.scailo_pb.ts:2894
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2887
+src/activities.scailo_pb.ts:2895
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2908
+src/activities.scailo_pb.ts:2916
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2896
+src/activities.scailo_pb.ts:2904
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2900
+src/activities.scailo_pb.ts:2908
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2904
+src/activities.scailo_pb.ts:2912

@@ -66,7 +66,7 @@ Message\&lt;ActivityActionsList\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1987
+src/activities.scailo_pb.ts:1995
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ActivityAction list = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1985
+src/activities.scailo_pb.ts:1993
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1994
+src/activities.scailo_pb.ts:2002
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1992
+src/activities.scailo_pb.ts:2000
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1993
+src/activities.scailo_pb.ts:2001
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2010
+src/activities.scailo_pb.ts:2018
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:1998
+src/activities.scailo_pb.ts:2006
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2002
+src/activities.scailo_pb.ts:2010
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2006
+src/activities.scailo_pb.ts:2014

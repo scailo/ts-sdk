@@ -69,7 +69,7 @@ Message\&lt;ActivitiesServicePaginatedActionsResponse\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2214
+src/activities.scailo_pb.ts:2222
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2191
+src/activities.scailo_pb.ts:2199
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2198
+src/activities.scailo_pb.ts:2206
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.ActivityAction payload = 4;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2212
+src/activities.scailo_pb.ts:2220
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2205
+src/activities.scailo_pb.ts:2213
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2221
+src/activities.scailo_pb.ts:2229
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2219
+src/activities.scailo_pb.ts:2227
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2220
+src/activities.scailo_pb.ts:2228
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2240
+src/activities.scailo_pb.ts:2248
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2228
+src/activities.scailo_pb.ts:2236
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2232
+src/activities.scailo_pb.ts:2240
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:2236
+src/activities.scailo_pb.ts:2244

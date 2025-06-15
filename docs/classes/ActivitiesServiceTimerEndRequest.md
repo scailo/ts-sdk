@@ -71,7 +71,7 @@ Message\&lt;ActivitiesServiceTimerEndRequest\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3102
+src/activities.scailo_pb.ts:3110
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 completion_percentage = 16;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3093
+src/activities.scailo_pb.ts:3101
 
 ___
 
@@ -103,7 +103,7 @@ from field: string description = 17;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3100
+src/activities.scailo_pb.ts:3108
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 end_at = 15;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3086
+src/activities.scailo_pb.ts:3094
 
 ___
 
@@ -135,7 +135,7 @@ from field: uint64 goal_id = 12;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3079
+src/activities.scailo_pb.ts:3087
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3072
+src/activities.scailo_pb.ts:3080
 
 ___
 
@@ -167,7 +167,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3065
+src/activities.scailo_pb.ts:3073
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3109
+src/activities.scailo_pb.ts:3117
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3107
+src/activities.scailo_pb.ts:3115
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3108
+src/activities.scailo_pb.ts:3116
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3130
+src/activities.scailo_pb.ts:3138
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3118
+src/activities.scailo_pb.ts:3126
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3122
+src/activities.scailo_pb.ts:3130
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3126
+src/activities.scailo_pb.ts:3134

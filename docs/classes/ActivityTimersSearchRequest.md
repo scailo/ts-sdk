@@ -80,7 +80,7 @@ Message\&lt;ActivityTimersSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3411
+src/activities.scailo_pb.ts:3419
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 activity_action_id = 21;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3360
+src/activities.scailo_pb.ts:3368
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 activity_id = 20;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3353
+src/activities.scailo_pb.ts:3361
 
 ___
 
@@ -128,7 +128,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3318
+src/activities.scailo_pb.ts:3326
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 employee_id = 23;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3374
+src/activities.scailo_pb.ts:3382
 
 ___
 
@@ -160,7 +160,7 @@ from field: uint64 ends_at_end = 27;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3402
+src/activities.scailo_pb.ts:3410
 
 ___
 
@@ -176,7 +176,7 @@ from field: uint64 ends_at_start = 26;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3395
+src/activities.scailo_pb.ts:3403
 
 ___
 
@@ -192,7 +192,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3346
+src/activities.scailo_pb.ts:3354
 
 ___
 
@@ -208,7 +208,7 @@ from field: uint64 goal_id = 22;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3367
+src/activities.scailo_pb.ts:3375
 
 ___
 
@@ -224,7 +224,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3311
+src/activities.scailo_pb.ts:3319
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3325
+src/activities.scailo_pb.ts:3333
 
 ___
 
@@ -256,7 +256,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3409
+src/activities.scailo_pb.ts:3417
 
 ___
 
@@ -272,7 +272,7 @@ from field: Scailo.ACTIVITY_TIMER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3339
+src/activities.scailo_pb.ts:3347
 
 ___
 
@@ -288,7 +288,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3332
+src/activities.scailo_pb.ts:3340
 
 ___
 
@@ -304,7 +304,7 @@ from field: uint64 starts_at_end = 25;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3388
+src/activities.scailo_pb.ts:3396
 
 ___
 
@@ -320,7 +320,7 @@ from field: uint64 starts_at_start = 24;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3381
+src/activities.scailo_pb.ts:3389
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3418
+src/activities.scailo_pb.ts:3426
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3416
+src/activities.scailo_pb.ts:3424
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3417
+src/activities.scailo_pb.ts:3425
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3448
+src/activities.scailo_pb.ts:3456
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3436
+src/activities.scailo_pb.ts:3444
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3440
+src/activities.scailo_pb.ts:3448
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/activities.scailo_pb.ts:3444
+src/activities.scailo_pb.ts:3452
