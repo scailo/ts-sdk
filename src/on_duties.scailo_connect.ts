@@ -284,69 +284,91 @@ export const OnDutiesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View entry image for onduty ID
+     * View entry image for onduty UUID
      *
      * @generated from rpc Scailo.OnDutiesService.ViewEntryImage
      */
     viewEntryImage: {
       name: "ViewEntryImage",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
     /**
-     * Confirm that the entry image of the given onduty ID belongs to the user
+     * Confirm that the entry image of the given onduty UUID belongs to the user
      *
      * @generated from rpc Scailo.OnDutiesService.ConfirmEntryImage
      */
     confirmEntryImage: {
       name: "ConfirmEntryImage",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },
     /**
-     * View exit image for onduty ID
+     * View exit image for onduty UUID
      *
      * @generated from rpc Scailo.OnDutiesService.ViewExitImage
      */
     viewExitImage: {
       name: "ViewExitImage",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
     /**
-     * Confirm that the exit image of the given onduty ID belongs to the user
+     * Confirm that the exit image of the given onduty UUID belongs to the user
      *
      * @generated from rpc Scailo.OnDutiesService.ConfirmExitImage
      */
     confirmExitImage: {
       name: "ConfirmExitImage",
-      I: Identifier,
+      I: IdentifierUUID,
       O: BooleanResponse,
       kind: MethodKind.Unary,
     },
     /**
-     * View entry GPS coordinates for onduty ID
+     * View entry GPS coordinates for onduty UUID
      *
      * @generated from rpc Scailo.OnDutiesService.ViewEntryGPSCoordinates
      */
     viewEntryGPSCoordinates: {
       name: "ViewEntryGPSCoordinates",
-      I: Identifier,
+      I: IdentifierUUID,
       O: GPSCoordinatesResponse,
       kind: MethodKind.Unary,
     },
     /**
-     * View exit GPS coordinates for onduty ID
+     * View exit GPS coordinates for onduty UUID
      *
      * @generated from rpc Scailo.OnDutiesService.ViewExitGPSCoordinates
      */
     viewExitGPSCoordinates: {
       name: "ViewExitGPSCoordinates",
-      I: Identifier,
+      I: IdentifierUUID,
       O: GPSCoordinatesResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View entry GPS static image from Google Maps
+     *
+     * @generated from rpc Scailo.OnDutiesService.ViewEntryGPSStaticImage
+     */
+    viewEntryGPSStaticImage: {
+      name: "ViewEntryGPSStaticImage",
+      I: IdentifierUUID,
+      O: ImageResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View exit GPS static image from Google Maps
+     *
+     * @generated from rpc Scailo.OnDutiesService.ViewExitGPSStaticImage
+     */
+    viewExitGPSStaticImage: {
+      name: "ViewExitGPSStaticImage",
+      I: IdentifierUUID,
+      O: ImageResponse,
       kind: MethodKind.Unary,
     },
     /**

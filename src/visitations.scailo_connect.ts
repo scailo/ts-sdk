@@ -284,47 +284,69 @@ export const VisitationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View entry image for visitation ID
+     * View entry image for visitation UUID
      *
      * @generated from rpc Scailo.VisitationsService.ViewEntryImage
      */
     viewEntryImage: {
       name: "ViewEntryImage",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
     /**
-     * View exit image for visitation ID
+     * View exit image for visitation UUID
      *
      * @generated from rpc Scailo.VisitationsService.ViewExitImage
      */
     viewExitImage: {
       name: "ViewExitImage",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
     /**
-     * View entry GPS coordinates for visitation ID
+     * View entry GPS coordinates for visitation UUID
      *
      * @generated from rpc Scailo.VisitationsService.ViewEntryGPSCoordinates
      */
     viewEntryGPSCoordinates: {
       name: "ViewEntryGPSCoordinates",
-      I: Identifier,
+      I: IdentifierUUID,
       O: GPSCoordinatesResponse,
       kind: MethodKind.Unary,
     },
     /**
-     * View exit GPS coordinates for visitation ID
+     * View exit GPS coordinates for visitation UUID
      *
      * @generated from rpc Scailo.VisitationsService.ViewExitGPSCoordinates
      */
     viewExitGPSCoordinates: {
       name: "ViewExitGPSCoordinates",
-      I: Identifier,
+      I: IdentifierUUID,
       O: GPSCoordinatesResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View entry GPS static image from Google Maps
+     *
+     * @generated from rpc Scailo.VisitationsService.ViewEntryGPSStaticImage
+     */
+    viewEntryGPSStaticImage: {
+      name: "ViewEntryGPSStaticImage",
+      I: IdentifierUUID,
+      O: ImageResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View exit GPS static image from Google Maps
+     *
+     * @generated from rpc Scailo.VisitationsService.ViewExitGPSStaticImage
+     */
+    viewExitGPSStaticImage: {
+      name: "ViewExitGPSStaticImage",
+      I: IdentifierUUID,
+      O: ImageResponse,
       kind: MethodKind.Unary,
     },
     /**

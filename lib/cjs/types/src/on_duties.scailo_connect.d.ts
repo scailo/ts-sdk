@@ -278,69 +278,91 @@ export declare const OnDutiesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View entry image for onduty ID
+         * View entry image for onduty UUID
          *
          * @generated from rpc Scailo.OnDutiesService.ViewEntryImage
          */
         readonly viewEntryImage: {
             readonly name: "ViewEntryImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Confirm that the entry image of the given onduty ID belongs to the user
+         * Confirm that the entry image of the given onduty UUID belongs to the user
          *
          * @generated from rpc Scailo.OnDutiesService.ConfirmEntryImage
          */
         readonly confirmEntryImage: {
             readonly name: "ConfirmEntryImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View exit image for onduty ID
+         * View exit image for onduty UUID
          *
          * @generated from rpc Scailo.OnDutiesService.ViewExitImage
          */
         readonly viewExitImage: {
             readonly name: "ViewExitImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Confirm that the exit image of the given onduty ID belongs to the user
+         * Confirm that the exit image of the given onduty UUID belongs to the user
          *
          * @generated from rpc Scailo.OnDutiesService.ConfirmExitImage
          */
         readonly confirmExitImage: {
             readonly name: "ConfirmExitImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View entry GPS coordinates for onduty ID
+         * View entry GPS coordinates for onduty UUID
          *
          * @generated from rpc Scailo.OnDutiesService.ViewEntryGPSCoordinates
          */
         readonly viewEntryGPSCoordinates: {
             readonly name: "ViewEntryGPSCoordinates";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof GPSCoordinatesResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View exit GPS coordinates for onduty ID
+         * View exit GPS coordinates for onduty UUID
          *
          * @generated from rpc Scailo.OnDutiesService.ViewExitGPSCoordinates
          */
         readonly viewExitGPSCoordinates: {
             readonly name: "ViewExitGPSCoordinates";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof GPSCoordinatesResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View entry GPS static image from Google Maps
+         *
+         * @generated from rpc Scailo.OnDutiesService.ViewEntryGPSStaticImage
+         */
+        readonly viewEntryGPSStaticImage: {
+            readonly name: "ViewEntryGPSStaticImage";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof ImageResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View exit GPS static image from Google Maps
+         *
+         * @generated from rpc Scailo.OnDutiesService.ViewExitGPSStaticImage
+         */
+        readonly viewExitGPSStaticImage: {
+            readonly name: "ViewExitGPSStaticImage";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

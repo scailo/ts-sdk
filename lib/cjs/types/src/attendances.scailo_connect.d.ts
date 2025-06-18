@@ -278,69 +278,91 @@ export declare const AttendancesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View entry image for attendance ID
+         * View entry image for attendance UUID
          *
          * @generated from rpc Scailo.AttendancesService.ViewEntryImage
          */
         readonly viewEntryImage: {
             readonly name: "ViewEntryImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Confirm that the entry image of the given attendance ID belongs to the user
+         * Confirm that the entry image of the given attendance UUID belongs to the user
          *
          * @generated from rpc Scailo.AttendancesService.ConfirmEntryImage
          */
         readonly confirmEntryImage: {
             readonly name: "ConfirmEntryImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View exit image for attendance ID
+         * View exit image for attendance UUID
          *
          * @generated from rpc Scailo.AttendancesService.ViewExitImage
          */
         readonly viewExitImage: {
             readonly name: "ViewExitImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Confirm that the exit image of the given attendance ID belongs to the user
+         * Confirm that the exit image of the given attendance UUID belongs to the user
          *
          * @generated from rpc Scailo.AttendancesService.ConfirmExitImage
          */
         readonly confirmExitImage: {
             readonly name: "ConfirmExitImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View entry GPS coordinates for attendance ID
+         * View entry GPS coordinates for attendance UUID
          *
          * @generated from rpc Scailo.AttendancesService.ViewEntryGPSCoordinates
          */
         readonly viewEntryGPSCoordinates: {
             readonly name: "ViewEntryGPSCoordinates";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof GPSCoordinatesResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View exit GPS coordinates for attendance ID
+         * View exit GPS coordinates for attendance UUID
          *
          * @generated from rpc Scailo.AttendancesService.ViewExitGPSCoordinates
          */
         readonly viewExitGPSCoordinates: {
             readonly name: "ViewExitGPSCoordinates";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof GPSCoordinatesResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View entry GPS static image from Google Maps
+         *
+         * @generated from rpc Scailo.AttendancesService.ViewEntryGPSStaticImage
+         */
+        readonly viewEntryGPSStaticImage: {
+            readonly name: "ViewEntryGPSStaticImage";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof ImageResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View exit GPS static image from Google Maps
+         *
+         * @generated from rpc Scailo.AttendancesService.ViewExitGPSStaticImage
+         */
+        readonly viewExitGPSStaticImage: {
+            readonly name: "ViewExitGPSStaticImage";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

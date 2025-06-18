@@ -278,47 +278,69 @@ export declare const VisitationsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View entry image for visitation ID
+         * View entry image for visitation UUID
          *
          * @generated from rpc Scailo.VisitationsService.ViewEntryImage
          */
         readonly viewEntryImage: {
             readonly name: "ViewEntryImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View exit image for visitation ID
+         * View exit image for visitation UUID
          *
          * @generated from rpc Scailo.VisitationsService.ViewExitImage
          */
         readonly viewExitImage: {
             readonly name: "ViewExitImage";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View entry GPS coordinates for visitation ID
+         * View entry GPS coordinates for visitation UUID
          *
          * @generated from rpc Scailo.VisitationsService.ViewEntryGPSCoordinates
          */
         readonly viewEntryGPSCoordinates: {
             readonly name: "ViewEntryGPSCoordinates";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof GPSCoordinatesResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View exit GPS coordinates for visitation ID
+         * View exit GPS coordinates for visitation UUID
          *
          * @generated from rpc Scailo.VisitationsService.ViewExitGPSCoordinates
          */
         readonly viewExitGPSCoordinates: {
             readonly name: "ViewExitGPSCoordinates";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof GPSCoordinatesResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View entry GPS static image from Google Maps
+         *
+         * @generated from rpc Scailo.VisitationsService.ViewEntryGPSStaticImage
+         */
+        readonly viewEntryGPSStaticImage: {
+            readonly name: "ViewEntryGPSStaticImage";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof ImageResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View exit GPS static image from Google Maps
+         *
+         * @generated from rpc Scailo.VisitationsService.ViewExitGPSStaticImage
+         */
+        readonly viewExitGPSStaticImage: {
+            readonly name: "ViewExitGPSStaticImage";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };
         /**
