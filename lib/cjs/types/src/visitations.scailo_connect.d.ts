@@ -350,7 +350,7 @@ export declare const VisitationsService: {
          */
         readonly viewQRCode: {
             readonly name: "ViewQRCode";
-            readonly I: typeof Identifier;
+            readonly I: typeof IdentifierUUID;
             readonly O: typeof ImageResponse;
             readonly kind: MethodKind.Unary;
         };

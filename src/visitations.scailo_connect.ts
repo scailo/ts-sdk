@@ -356,7 +356,7 @@ export const VisitationsService = {
      */
     viewQRCode: {
       name: "ViewQRCode",
-      I: Identifier,
+      I: IdentifierUUID,
       O: ImageResponse,
       kind: MethodKind.Unary,
     },
