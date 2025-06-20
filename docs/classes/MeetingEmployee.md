@@ -71,7 +71,7 @@ Message\&lt;MeetingEmployee\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2004
+src/meetings.scailo_pb.ts:2020
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: uint64 employee_id = 11;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1995
+src/meetings.scailo_pb.ts:2011
 
 ___
 
@@ -103,7 +103,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1967
+src/meetings.scailo_pb.ts:1983
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 meeting_id = 10;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1988
+src/meetings.scailo_pb.ts:2004
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1974
+src/meetings.scailo_pb.ts:1990
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.MEETING_RSVP rsvp = 12;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2002
+src/meetings.scailo_pb.ts:2018
 
 ___
 
@@ -167,7 +167,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1981
+src/meetings.scailo_pb.ts:1997
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2011
+src/meetings.scailo_pb.ts:2027
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2009
+src/meetings.scailo_pb.ts:2025
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2010
+src/meetings.scailo_pb.ts:2026
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2032
+src/meetings.scailo_pb.ts:2048
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2020
+src/meetings.scailo_pb.ts:2036
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2024
+src/meetings.scailo_pb.ts:2040
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2028
+src/meetings.scailo_pb.ts:2044

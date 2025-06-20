@@ -32,6 +32,7 @@ from message Scailo.AbsencesServiceCountReq
 - [creationTimestampStart](AbsencesServiceCountReq.md#creationtimestampstart)
 - [entityUuid](AbsencesServiceCountReq.md#entityuuid)
 - [finalRefNumber](AbsencesServiceCountReq.md#finalrefnumber)
+- [formData](AbsencesServiceCountReq.md#formdata)
 - [fromTimestampEnd](AbsencesServiceCountReq.md#fromtimestampend)
 - [fromTimestampStart](AbsencesServiceCountReq.md#fromtimestampstart)
 - [isActive](AbsencesServiceCountReq.md#isactive)
@@ -89,7 +90,7 @@ Message\&lt;AbsencesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1173
+src/absences.scailo_pb.ts:1188
 
 ## Properties
 
@@ -105,7 +106,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1073
+src/absences.scailo_pb.ts:1081
 
 ___
 
@@ -121,7 +122,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1066
+src/absences.scailo_pb.ts:1074
 
 ___
 
@@ -137,7 +138,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1059
+src/absences.scailo_pb.ts:1067
 
 ___
 
@@ -153,7 +154,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1080
+src/absences.scailo_pb.ts:1088
 
 ___
 
@@ -169,7 +170,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1094
+src/absences.scailo_pb.ts:1102
 
 ___
 
@@ -185,7 +186,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1087
+src/absences.scailo_pb.ts:1095
 
 ___
 
@@ -201,7 +202,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1024
+src/absences.scailo_pb.ts:1032
 
 ___
 
@@ -217,7 +218,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1017
+src/absences.scailo_pb.ts:1025
 
 ___
 
@@ -233,7 +234,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1045
+src/absences.scailo_pb.ts:1053
 
 ___
 
@@ -249,7 +250,23 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1108
+src/absences.scailo_pb.ts:1116
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/absences.scailo_pb.ts:1186
 
 ___
 
@@ -265,7 +282,7 @@ from field: uint64 from_timestamp_end = 25;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1136
+src/absences.scailo_pb.ts:1144
 
 ___
 
@@ -281,7 +298,7 @@ from field: uint64 from_timestamp_start = 24;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1129
+src/absences.scailo_pb.ts:1137
 
 ___
 
@@ -297,7 +314,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1010
+src/absences.scailo_pb.ts:1018
 
 ___
 
@@ -313,7 +330,7 @@ from field: uint64 leave_request_id = 23;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1122
+src/absences.scailo_pb.ts:1130
 
 ___
 
@@ -329,7 +346,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1038
+src/absences.scailo_pb.ts:1046
 
 ___
 
@@ -345,7 +362,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1031
+src/absences.scailo_pb.ts:1039
 
 ___
 
@@ -361,7 +378,7 @@ from field: uint64 quantity_max = 30;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1171
+src/absences.scailo_pb.ts:1179
 
 ___
 
@@ -377,7 +394,7 @@ from field: uint64 quantity_min = 29;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1164
+src/absences.scailo_pb.ts:1172
 
 ___
 
@@ -393,7 +410,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1101
+src/absences.scailo_pb.ts:1109
 
 ___
 
@@ -409,7 +426,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1052
+src/absences.scailo_pb.ts:1060
 
 ___
 
@@ -425,7 +442,7 @@ from field: uint64 to_timestamp_end = 27;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1150
+src/absences.scailo_pb.ts:1158
 
 ___
 
@@ -441,7 +458,7 @@ from field: uint64 to_timestamp_start = 26;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1143
+src/absences.scailo_pb.ts:1151
 
 ___
 
@@ -457,7 +474,7 @@ from field: uint64 uom_id = 28;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1157
+src/absences.scailo_pb.ts:1165
 
 ___
 
@@ -473,7 +490,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1115
+src/absences.scailo_pb.ts:1123
 
 ___
 
@@ -483,7 +500,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1180
+src/absences.scailo_pb.ts:1195
 
 ___
 
@@ -493,7 +510,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1178
+src/absences.scailo_pb.ts:1193
 
 ___
 
@@ -503,7 +520,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1179
+src/absences.scailo_pb.ts:1194
 
 ## Methods
 
@@ -791,7 +808,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1219
+src/absences.scailo_pb.ts:1235
 
 ___
 
@@ -812,7 +829,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1207
+src/absences.scailo_pb.ts:1223
 
 ___
 
@@ -833,7 +850,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1211
+src/absences.scailo_pb.ts:1227
 
 ___
 
@@ -854,4 +871,4 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1215
+src/absences.scailo_pb.ts:1231

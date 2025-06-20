@@ -34,6 +34,7 @@ from message Scailo.StockAuditsServiceFilterReq
 - [entityUuid](StockAuditsServiceFilterReq.md#entityuuid)
 - [familyId](StockAuditsServiceFilterReq.md#familyid)
 - [finalRefNumber](StockAuditsServiceFilterReq.md#finalrefnumber)
+- [formData](StockAuditsServiceFilterReq.md#formdata)
 - [isActive](StockAuditsServiceFilterReq.md#isactive)
 - [locationId](StockAuditsServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](StockAuditsServiceFilterReq.md#modificationtimestampend)
@@ -86,7 +87,7 @@ Message\&lt;StockAuditsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1274
+src/stock_audits.scailo_pb.ts:1281
 
 ## Properties
 
@@ -282,6 +283,22 @@ src/stock_audits.scailo_pb.ts:1258
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/stock_audits.scailo_pb.ts:1279
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -432,7 +449,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1281
+src/stock_audits.scailo_pb.ts:1288
 
 ___
 
@@ -442,7 +459,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1279
+src/stock_audits.scailo_pb.ts:1286
 
 ___
 
@@ -452,7 +469,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1280
+src/stock_audits.scailo_pb.ts:1287
 
 ## Methods
 
@@ -740,7 +757,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1317
+src/stock_audits.scailo_pb.ts:1325
 
 ___
 
@@ -761,7 +778,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1305
+src/stock_audits.scailo_pb.ts:1313
 
 ___
 
@@ -782,7 +799,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1309
+src/stock_audits.scailo_pb.ts:1317
 
 ___
 
@@ -803,4 +820,4 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1313
+src/stock_audits.scailo_pb.ts:1321

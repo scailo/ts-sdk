@@ -73,7 +73,7 @@ Message\&lt;InwardJobsServiceOutwardItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2829
+src/inward_jobs.scailo_pb.ts:2845
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string client_family_code = 15;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2813
+src/inward_jobs.scailo_pb.ts:2829
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 client_quantity = 14;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2806
+src/inward_jobs.scailo_pb.ts:2822
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2799
+src/inward_jobs.scailo_pb.ts:2815
 
 ___
 
@@ -137,7 +137,7 @@ from field: string delivery_date = 16;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2820
+src/inward_jobs.scailo_pb.ts:2836
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2785
+src/inward_jobs.scailo_pb.ts:2801
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2792
+src/inward_jobs.scailo_pb.ts:2808
 
 ___
 
@@ -185,7 +185,7 @@ from field: string specifications = 17;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2827
+src/inward_jobs.scailo_pb.ts:2843
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2778
+src/inward_jobs.scailo_pb.ts:2794
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2836
+src/inward_jobs.scailo_pb.ts:2852
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2834
+src/inward_jobs.scailo_pb.ts:2850
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2835
+src/inward_jobs.scailo_pb.ts:2851
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2859
+src/inward_jobs.scailo_pb.ts:2875
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2847
+src/inward_jobs.scailo_pb.ts:2863
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2851
+src/inward_jobs.scailo_pb.ts:2867
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:2855
+src/inward_jobs.scailo_pb.ts:2871

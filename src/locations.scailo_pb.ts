@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 
 /**
@@ -731,6 +731,13 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    */
   phone = "";
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<LocationsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -758,6 +765,7 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
     { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LocationsServiceFilterReq {
@@ -889,6 +897,13 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    */
   phone = "";
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<LocationsServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -912,6 +927,7 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
     { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LocationsServiceCountReq {

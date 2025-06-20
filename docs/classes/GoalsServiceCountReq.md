@@ -35,6 +35,7 @@ from message Scailo.GoalsServiceCountReq
 - [endDateStart](GoalsServiceCountReq.md#enddatestart)
 - [entityUuid](GoalsServiceCountReq.md#entityuuid)
 - [finalRefNumber](GoalsServiceCountReq.md#finalrefnumber)
+- [formData](GoalsServiceCountReq.md#formdata)
 - [isActive](GoalsServiceCountReq.md#isactive)
 - [modificationTimestampEnd](GoalsServiceCountReq.md#modificationtimestampend)
 - [modificationTimestampStart](GoalsServiceCountReq.md#modificationtimestampstart)
@@ -87,7 +88,7 @@ Message\&lt;GoalsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1900
+src/goals.scailo_pb.ts:1915
 
 ## Properties
 
@@ -103,7 +104,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1814
+src/goals.scailo_pb.ts:1822
 
 ___
 
@@ -119,7 +120,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1807
+src/goals.scailo_pb.ts:1815
 
 ___
 
@@ -135,7 +136,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1800
+src/goals.scailo_pb.ts:1808
 
 ___
 
@@ -151,7 +152,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1821
+src/goals.scailo_pb.ts:1829
 
 ___
 
@@ -167,7 +168,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1835
+src/goals.scailo_pb.ts:1843
 
 ___
 
@@ -183,7 +184,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1828
+src/goals.scailo_pb.ts:1836
 
 ___
 
@@ -199,7 +200,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1765
+src/goals.scailo_pb.ts:1773
 
 ___
 
@@ -215,7 +216,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1758
+src/goals.scailo_pb.ts:1766
 
 ___
 
@@ -231,7 +232,7 @@ from field: string end_date_end = 37;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1891
+src/goals.scailo_pb.ts:1899
 
 ___
 
@@ -247,7 +248,7 @@ from field: string end_date_exact = 38;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1898
+src/goals.scailo_pb.ts:1906
 
 ___
 
@@ -263,7 +264,7 @@ from field: string end_date_start = 36;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1884
+src/goals.scailo_pb.ts:1892
 
 ___
 
@@ -279,7 +280,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1786
+src/goals.scailo_pb.ts:1794
 
 ___
 
@@ -295,7 +296,23 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1849
+src/goals.scailo_pb.ts:1857
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/goals.scailo_pb.ts:1913
 
 ___
 
@@ -311,7 +328,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1751
+src/goals.scailo_pb.ts:1759
 
 ___
 
@@ -327,7 +344,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1779
+src/goals.scailo_pb.ts:1787
 
 ___
 
@@ -343,7 +360,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1772
+src/goals.scailo_pb.ts:1780
 
 ___
 
@@ -359,7 +376,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1842
+src/goals.scailo_pb.ts:1850
 
 ___
 
@@ -375,7 +392,7 @@ from field: string start_date_end = 31;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1870
+src/goals.scailo_pb.ts:1878
 
 ___
 
@@ -391,7 +408,7 @@ from field: string start_date_exact = 32;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1877
+src/goals.scailo_pb.ts:1885
 
 ___
 
@@ -407,7 +424,7 @@ from field: string start_date_start = 30;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1863
+src/goals.scailo_pb.ts:1871
 
 ___
 
@@ -423,7 +440,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1793
+src/goals.scailo_pb.ts:1801
 
 ___
 
@@ -439,7 +456,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1856
+src/goals.scailo_pb.ts:1864
 
 ___
 
@@ -449,7 +466,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1907
+src/goals.scailo_pb.ts:1922
 
 ___
 
@@ -459,7 +476,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1905
+src/goals.scailo_pb.ts:1920
 
 ___
 
@@ -469,7 +486,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1906
+src/goals.scailo_pb.ts:1921
 
 ## Methods
 
@@ -757,7 +774,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1944
+src/goals.scailo_pb.ts:1960
 
 ___
 
@@ -778,7 +795,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1932
+src/goals.scailo_pb.ts:1948
 
 ___
 
@@ -799,7 +816,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1936
+src/goals.scailo_pb.ts:1952
 
 ___
 
@@ -820,4 +837,4 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1940
+src/goals.scailo_pb.ts:1956

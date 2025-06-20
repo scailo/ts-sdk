@@ -1,6 +1,6 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { BOOL_FILTER, EmployeeMetadata, SORT_ORDER } from "./base.scailo_pb.js";
 /**
  *
@@ -723,6 +723,12 @@ export declare class MeetingsServiceFilterReq extends Message<MeetingsServiceFil
      * @generated from field: uint64 activity_tag_id = 42;
      */
     activityTagId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<MeetingsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.MeetingsServiceFilterReq";
@@ -847,6 +853,12 @@ export declare class MeetingsServiceCountReq extends Message<MeetingsServiceCoun
      * @generated from field: uint64 activity_tag_id = 42;
      */
     activityTagId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<MeetingsServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.MeetingsServiceCountReq";

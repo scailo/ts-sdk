@@ -73,7 +73,7 @@ Message\&lt;StockAuditsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1555
+src/stock_audits.scailo_pb.ts:1571
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1511
+src/stock_audits.scailo_pb.ts:1527
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1539
+src/stock_audits.scailo_pb.ts:1555
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1504
+src/stock_audits.scailo_pb.ts:1520
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1518
+src/stock_audits.scailo_pb.ts:1534
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1553
+src/stock_audits.scailo_pb.ts:1569
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.STOCK_AUDIT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1532
+src/stock_audits.scailo_pb.ts:1548
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1525
+src/stock_audits.scailo_pb.ts:1541
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1546
+src/stock_audits.scailo_pb.ts:1562
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1562
+src/stock_audits.scailo_pb.ts:1578
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1560
+src/stock_audits.scailo_pb.ts:1576
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1561
+src/stock_audits.scailo_pb.ts:1577
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1585
+src/stock_audits.scailo_pb.ts:1601
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1573
+src/stock_audits.scailo_pb.ts:1589
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1577
+src/stock_audits.scailo_pb.ts:1593
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1581
+src/stock_audits.scailo_pb.ts:1597

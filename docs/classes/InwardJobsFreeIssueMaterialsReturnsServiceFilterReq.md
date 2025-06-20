@@ -36,6 +36,7 @@ from message Scailo.InwardJobsFreeIssueMaterialsReturnsServiceFilterReq
 - [entityUuid](InwardJobsFreeIssueMaterialsReturnsServiceFilterReq.md#entityuuid)
 - [familyId](InwardJobsFreeIssueMaterialsReturnsServiceFilterReq.md#familyid)
 - [finalRefNumber](InwardJobsFreeIssueMaterialsReturnsServiceFilterReq.md#finalrefnumber)
+- [formData](InwardJobsFreeIssueMaterialsReturnsServiceFilterReq.md#formdata)
 - [isActive](InwardJobsFreeIssueMaterialsReturnsServiceFilterReq.md#isactive)
 - [locationId](InwardJobsFreeIssueMaterialsReturnsServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](InwardJobsFreeIssueMaterialsReturnsServiceFilterReq.md#modificationtimestampend)
@@ -91,7 +92,7 @@ Message\&lt;InwardJobsFreeIssueMaterialsReturnsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1765
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1772
 
 ## Properties
 
@@ -320,6 +321,22 @@ src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1713
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1770
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -518,7 +535,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1772
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1779
 
 ___
 
@@ -528,7 +545,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1770
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1777
 
 ___
 
@@ -538,7 +555,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1771
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1778
 
 ## Methods
 
@@ -826,7 +843,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1813
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1821
 
 ___
 
@@ -847,7 +864,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1801
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1809
 
 ___
 
@@ -868,7 +885,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1805
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1813
 
 ___
 
@@ -889,4 +906,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1809
+src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:1817

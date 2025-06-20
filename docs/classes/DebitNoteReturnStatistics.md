@@ -68,7 +68,7 @@ Message\&lt;DebitNoteReturnStatistics\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2577
+src/debit_notes.scailo_pb.ts:2593
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 billed_quantity = 2;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2568
+src/debit_notes.scailo_pb.ts:2584
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2561
+src/debit_notes.scailo_pb.ts:2577
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 returned_quantity = 3;
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2575
+src/debit_notes.scailo_pb.ts:2591
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2584
+src/debit_notes.scailo_pb.ts:2600
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2582
+src/debit_notes.scailo_pb.ts:2598
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2583
+src/debit_notes.scailo_pb.ts:2599
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2602
+src/debit_notes.scailo_pb.ts:2618
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2590
+src/debit_notes.scailo_pb.ts:2606
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2594
+src/debit_notes.scailo_pb.ts:2610
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2598
+src/debit_notes.scailo_pb.ts:2614

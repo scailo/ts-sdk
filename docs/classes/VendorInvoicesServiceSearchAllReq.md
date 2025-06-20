@@ -76,7 +76,7 @@ Message\&lt;VendorInvoicesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2280
+src/vendor_invoices.scailo_pb.ts:2296
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2215
+src/vendor_invoices.scailo_pb.ts:2231
 
 ___
 
@@ -108,7 +108,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2243
+src/vendor_invoices.scailo_pb.ts:2259
 
 ___
 
@@ -124,7 +124,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2208
+src/vendor_invoices.scailo_pb.ts:2224
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2222
+src/vendor_invoices.scailo_pb.ts:2238
 
 ___
 
@@ -156,7 +156,7 @@ from field: Scailo.VENDOR_INVOICE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2264
+src/vendor_invoices.scailo_pb.ts:2280
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2271
+src/vendor_invoices.scailo_pb.ts:2287
 
 ___
 
@@ -188,7 +188,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2257
+src/vendor_invoices.scailo_pb.ts:2273
 
 ___
 
@@ -204,7 +204,7 @@ from field: Scailo.VENDOR_INVOICE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2236
+src/vendor_invoices.scailo_pb.ts:2252
 
 ___
 
@@ -220,7 +220,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2229
+src/vendor_invoices.scailo_pb.ts:2245
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2250
+src/vendor_invoices.scailo_pb.ts:2266
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 vendor_id = 25;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2278
+src/vendor_invoices.scailo_pb.ts:2294
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2287
+src/vendor_invoices.scailo_pb.ts:2303
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2285
+src/vendor_invoices.scailo_pb.ts:2301
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2286
+src/vendor_invoices.scailo_pb.ts:2302
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2313
+src/vendor_invoices.scailo_pb.ts:2329
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2301
+src/vendor_invoices.scailo_pb.ts:2317
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2305
+src/vendor_invoices.scailo_pb.ts:2321
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2309
+src/vendor_invoices.scailo_pb.ts:2325

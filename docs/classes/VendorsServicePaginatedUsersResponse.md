@@ -69,7 +69,7 @@ Message\&lt;VendorsServicePaginatedUsersResponse\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2398
+src/vendors.scailo_pb.ts:2414
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2375
+src/vendors.scailo_pb.ts:2391
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2382
+src/vendors.scailo_pb.ts:2398
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.VendorUser payload = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2396
+src/vendors.scailo_pb.ts:2412
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2389
+src/vendors.scailo_pb.ts:2405
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2405
+src/vendors.scailo_pb.ts:2421
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2403
+src/vendors.scailo_pb.ts:2419
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2404
+src/vendors.scailo_pb.ts:2420
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2424
+src/vendors.scailo_pb.ts:2440
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2412
+src/vendors.scailo_pb.ts:2428
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2416
+src/vendors.scailo_pb.ts:2432
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2420
+src/vendors.scailo_pb.ts:2436

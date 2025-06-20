@@ -35,6 +35,7 @@ from message Scailo.UsersServiceCountReq
 - [departmentId](UsersServiceCountReq.md#departmentid)
 - [email](UsersServiceCountReq.md#email)
 - [entityUuid](UsersServiceCountReq.md#entityuuid)
+- [formData](UsersServiceCountReq.md#formdata)
 - [isActive](UsersServiceCountReq.md#isactive)
 - [modificationTimestampEnd](UsersServiceCountReq.md#modificationtimestampend)
 - [modificationTimestampStart](UsersServiceCountReq.md#modificationtimestampstart)
@@ -93,7 +94,7 @@ Message\&lt;UsersServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/users.scailo_pb.ts:1778
+src/users.scailo_pb.ts:1793
 
 ## Properties
 
@@ -109,7 +110,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1654
+src/users.scailo_pb.ts:1662
 
 ___
 
@@ -125,7 +126,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1647
+src/users.scailo_pb.ts:1655
 
 ___
 
@@ -141,7 +142,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1640
+src/users.scailo_pb.ts:1648
 
 ___
 
@@ -157,7 +158,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1661
+src/users.scailo_pb.ts:1669
 
 ___
 
@@ -173,7 +174,7 @@ from field: uint64 attendance_uom_id = 27;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1717
+src/users.scailo_pb.ts:1725
 
 ___
 
@@ -189,7 +190,7 @@ from field: uint64 basic_pay_uom_id = 32;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1752
+src/users.scailo_pb.ts:1760
 
 ___
 
@@ -207,7 +208,7 @@ from field: uint64 client_id = 71;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1776
+src/users.scailo_pb.ts:1784
 
 ___
 
@@ -223,7 +224,7 @@ from field: string code = 22;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1682
+src/users.scailo_pb.ts:1690
 
 ___
 
@@ -239,7 +240,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1598
+src/users.scailo_pb.ts:1606
 
 ___
 
@@ -255,7 +256,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1591
+src/users.scailo_pb.ts:1599
 
 ___
 
@@ -271,7 +272,7 @@ from field: uint64 department_id = 28;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1724
+src/users.scailo_pb.ts:1732
 
 ___
 
@@ -287,7 +288,7 @@ from field: string email = 23;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1689
+src/users.scailo_pb.ts:1697
 
 ___
 
@@ -303,7 +304,23 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1626
+src/users.scailo_pb.ts:1634
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/users.scailo_pb.ts:1791
 
 ___
 
@@ -319,7 +336,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1584
+src/users.scailo_pb.ts:1592
 
 ___
 
@@ -335,7 +352,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1612
+src/users.scailo_pb.ts:1620
 
 ___
 
@@ -351,7 +368,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1605
+src/users.scailo_pb.ts:1613
 
 ___
 
@@ -367,7 +384,7 @@ from field: string name = 21;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1675
+src/users.scailo_pb.ts:1683
 
 ___
 
@@ -383,7 +400,7 @@ from field: uint64 payroll_currency_id = 31;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1745
+src/users.scailo_pb.ts:1753
 
 ___
 
@@ -399,7 +416,7 @@ from field: uint64 payroll_group_id = 29;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1731
+src/users.scailo_pb.ts:1739
 
 ___
 
@@ -415,7 +432,7 @@ from field: uint64 payroll_tax_group_id = 30;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1738
+src/users.scailo_pb.ts:1746
 
 ___
 
@@ -431,7 +448,7 @@ from field: string phone = 24;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1696
+src/users.scailo_pb.ts:1704
 
 ___
 
@@ -447,7 +464,7 @@ from field: uint64 role_id = 25;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1703
+src/users.scailo_pb.ts:1711
 
 ___
 
@@ -463,7 +480,7 @@ from field: uint64 shift_group_id = 26;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1710
+src/users.scailo_pb.ts:1718
 
 ___
 
@@ -479,7 +496,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1633
+src/users.scailo_pb.ts:1641
 
 ___
 
@@ -495,7 +512,7 @@ from field: Scailo.USER_TYPE user_type = 7;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1619
+src/users.scailo_pb.ts:1627
 
 ___
 
@@ -511,7 +528,7 @@ from field: string username = 20;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1668
+src/users.scailo_pb.ts:1676
 
 ___
 
@@ -528,7 +545,7 @@ from field: uint64 vendor_id = 70;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1767
+src/users.scailo_pb.ts:1775
 
 ___
 
@@ -544,7 +561,7 @@ from field: string work_email = 33;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1759
+src/users.scailo_pb.ts:1767
 
 ___
 
@@ -554,7 +571,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1785
+src/users.scailo_pb.ts:1800
 
 ___
 
@@ -564,7 +581,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1783
+src/users.scailo_pb.ts:1798
 
 ___
 
@@ -574,7 +591,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1784
+src/users.scailo_pb.ts:1799
 
 ## Methods
 
@@ -862,7 +879,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1828
+src/users.scailo_pb.ts:1844
 
 ___
 
@@ -883,7 +900,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1816
+src/users.scailo_pb.ts:1832
 
 ___
 
@@ -904,7 +921,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1820
+src/users.scailo_pb.ts:1836
 
 ___
 
@@ -925,4 +942,4 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1824
+src/users.scailo_pb.ts:1840

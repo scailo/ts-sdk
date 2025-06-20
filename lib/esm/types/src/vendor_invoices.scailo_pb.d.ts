@@ -1,6 +1,6 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
@@ -1292,6 +1292,12 @@ export declare class VendorInvoicesServiceFilterReq extends Message<VendorInvoic
      * @generated from field: uint64 total_value_max = 51;
      */
     totalValueMax: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<VendorInvoicesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.VendorInvoicesServiceFilterReq";
@@ -1470,6 +1476,12 @@ export declare class VendorInvoicesServiceCountReq extends Message<VendorInvoice
      * @generated from field: uint64 total_value_max = 51;
      */
     totalValueMax: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<VendorInvoicesServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.VendorInvoicesServiceCountReq";

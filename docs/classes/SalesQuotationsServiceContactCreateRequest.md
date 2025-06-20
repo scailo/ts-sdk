@@ -68,7 +68,7 @@ Message\&lt;SalesQuotationsServiceContactCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2858
+src/sales_quotations.scailo_pb.ts:2874
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2856
+src/sales_quotations.scailo_pb.ts:2872
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 sales_quotation_id = 10;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2849
+src/sales_quotations.scailo_pb.ts:2865
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2842
+src/sales_quotations.scailo_pb.ts:2858
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2865
+src/sales_quotations.scailo_pb.ts:2881
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2863
+src/sales_quotations.scailo_pb.ts:2879
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2864
+src/sales_quotations.scailo_pb.ts:2880
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2883
+src/sales_quotations.scailo_pb.ts:2899
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2871
+src/sales_quotations.scailo_pb.ts:2887
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2875
+src/sales_quotations.scailo_pb.ts:2891
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2879
+src/sales_quotations.scailo_pb.ts:2895

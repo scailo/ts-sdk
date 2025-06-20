@@ -75,7 +75,7 @@ Message\&lt;AssetIndentsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1801
+src/asset_indents.scailo_pb.ts:1817
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1743
+src/asset_indents.scailo_pb.ts:1759
 
 ___
 
@@ -107,7 +107,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1771
+src/asset_indents.scailo_pb.ts:1787
 
 ___
 
@@ -123,7 +123,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1736
+src/asset_indents.scailo_pb.ts:1752
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1792
+src/asset_indents.scailo_pb.ts:1808
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1750
+src/asset_indents.scailo_pb.ts:1766
 
 ___
 
@@ -171,7 +171,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1785
+src/asset_indents.scailo_pb.ts:1801
 
 ___
 
@@ -187,7 +187,7 @@ from field: Scailo.ASSET_INDENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1764
+src/asset_indents.scailo_pb.ts:1780
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1757
+src/asset_indents.scailo_pb.ts:1773
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1778
+src/asset_indents.scailo_pb.ts:1794
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 user_id = 25;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1799
+src/asset_indents.scailo_pb.ts:1815
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1808
+src/asset_indents.scailo_pb.ts:1824
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1806
+src/asset_indents.scailo_pb.ts:1822
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1807
+src/asset_indents.scailo_pb.ts:1823
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1833
+src/asset_indents.scailo_pb.ts:1849
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1821
+src/asset_indents.scailo_pb.ts:1837
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1825
+src/asset_indents.scailo_pb.ts:1841
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1829
+src/asset_indents.scailo_pb.ts:1845

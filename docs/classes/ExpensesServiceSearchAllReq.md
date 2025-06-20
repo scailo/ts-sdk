@@ -73,7 +73,7 @@ Message\&lt;ExpensesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1953
+src/expenses.scailo_pb.ts:1969
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1909
+src/expenses.scailo_pb.ts:1925
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1937
+src/expenses.scailo_pb.ts:1953
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1902
+src/expenses.scailo_pb.ts:1918
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1916
+src/expenses.scailo_pb.ts:1932
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1951
+src/expenses.scailo_pb.ts:1967
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.EXPENSE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1930
+src/expenses.scailo_pb.ts:1946
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1923
+src/expenses.scailo_pb.ts:1939
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1944
+src/expenses.scailo_pb.ts:1960
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1960
+src/expenses.scailo_pb.ts:1976
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1958
+src/expenses.scailo_pb.ts:1974
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1959
+src/expenses.scailo_pb.ts:1975
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1983
+src/expenses.scailo_pb.ts:1999
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1971
+src/expenses.scailo_pb.ts:1987
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1975
+src/expenses.scailo_pb.ts:1991
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1979
+src/expenses.scailo_pb.ts:1995

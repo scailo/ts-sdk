@@ -77,7 +77,7 @@ Message\&lt;ReplaceableIndentsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1709
+src/replaceable_indents.scailo_pb.ts:1725
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1637
+src/replaceable_indents.scailo_pb.ts:1653
 
 ___
 
@@ -109,7 +109,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1665
+src/replaceable_indents.scailo_pb.ts:1681
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 family_id = 25;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1700
+src/replaceable_indents.scailo_pb.ts:1716
 
 ___
 
@@ -141,7 +141,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1630
+src/replaceable_indents.scailo_pb.ts:1646
 
 ___
 
@@ -157,7 +157,7 @@ from field: string item_hash = 26;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1707
+src/replaceable_indents.scailo_pb.ts:1723
 
 ___
 
@@ -173,7 +173,7 @@ from field: uint64 location_id = 23;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1686
+src/replaceable_indents.scailo_pb.ts:1702
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1644
+src/replaceable_indents.scailo_pb.ts:1660
 
 ___
 
@@ -205,7 +205,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1679
+src/replaceable_indents.scailo_pb.ts:1695
 
 ___
 
@@ -221,7 +221,7 @@ from field: Scailo.REPLACEABLE_INDENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1658
+src/replaceable_indents.scailo_pb.ts:1674
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1651
+src/replaceable_indents.scailo_pb.ts:1667
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1672
+src/replaceable_indents.scailo_pb.ts:1688
 
 ___
 
@@ -269,7 +269,7 @@ from field: string supervisor = 24;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1693
+src/replaceable_indents.scailo_pb.ts:1709
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1716
+src/replaceable_indents.scailo_pb.ts:1732
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1714
+src/replaceable_indents.scailo_pb.ts:1730
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1715
+src/replaceable_indents.scailo_pb.ts:1731
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1743
+src/replaceable_indents.scailo_pb.ts:1759
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1731
+src/replaceable_indents.scailo_pb.ts:1747
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1735
+src/replaceable_indents.scailo_pb.ts:1751
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1739
+src/replaceable_indents.scailo_pb.ts:1755

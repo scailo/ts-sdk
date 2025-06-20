@@ -69,7 +69,7 @@ Message\&lt;SupplyOffersServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2602
+src/supply_offers.scailo_pb.ts:2618
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2579
+src/supply_offers.scailo_pb.ts:2595
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2586
+src/supply_offers.scailo_pb.ts:2602
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.SupplyOfferItem payload = 4;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2600
+src/supply_offers.scailo_pb.ts:2616
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2593
+src/supply_offers.scailo_pb.ts:2609
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2609
+src/supply_offers.scailo_pb.ts:2625
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2607
+src/supply_offers.scailo_pb.ts:2623
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2608
+src/supply_offers.scailo_pb.ts:2624
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2628
+src/supply_offers.scailo_pb.ts:2644
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2616
+src/supply_offers.scailo_pb.ts:2632
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2620
+src/supply_offers.scailo_pb.ts:2636
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:2624
+src/supply_offers.scailo_pb.ts:2640

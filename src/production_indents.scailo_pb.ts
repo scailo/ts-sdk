@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 
 /**
@@ -1470,6 +1470,13 @@ export class ProductionIndentsServiceFilterReq extends Message<ProductionIndents
    */
   familyId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<ProductionIndentsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1504,6 +1511,7 @@ export class ProductionIndentsServiceFilterReq extends Message<ProductionIndents
     { no: 28, name: "indent_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_INDENT_REF_FOR) },
     { no: 29, name: "indent_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionIndentsServiceFilterReq {
@@ -1684,6 +1692,13 @@ export class ProductionIndentsServiceCountReq extends Message<ProductionIndentsS
    */
   familyId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<ProductionIndentsServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1714,6 +1729,7 @@ export class ProductionIndentsServiceCountReq extends Message<ProductionIndentsS
     { no: 28, name: "indent_ref_for", kind: "enum", T: proto3.getEnumType(PRODUCTION_INDENT_INDENT_REF_FOR) },
     { no: 29, name: "indent_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionIndentsServiceCountReq {

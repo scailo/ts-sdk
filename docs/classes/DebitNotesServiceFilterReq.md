@@ -35,6 +35,7 @@ from message Scailo.DebitNotesServiceFilterReq
 - [entityUuid](DebitNotesServiceFilterReq.md#entityuuid)
 - [familyId](DebitNotesServiceFilterReq.md#familyid)
 - [finalRefNumber](DebitNotesServiceFilterReq.md#finalrefnumber)
+- [formData](DebitNotesServiceFilterReq.md#formdata)
 - [isActive](DebitNotesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](DebitNotesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](DebitNotesServiceFilterReq.md#modificationtimestampstart)
@@ -92,7 +93,7 @@ Message\&lt;DebitNotesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1965
+src/debit_notes.scailo_pb.ts:1972
 
 ## Properties
 
@@ -301,6 +302,22 @@ from field: string final_ref_number = 21;
 #### Defined in
 
 src/debit_notes.scailo_pb.ts:1907
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/debit_notes.scailo_pb.ts:1970
 
 ___
 
@@ -534,7 +551,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1972
+src/debit_notes.scailo_pb.ts:1979
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1970
+src/debit_notes.scailo_pb.ts:1977
 
 ___
 
@@ -554,7 +571,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:1971
+src/debit_notes.scailo_pb.ts:1978
 
 ## Methods
 
@@ -842,7 +859,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2014
+src/debit_notes.scailo_pb.ts:2022
 
 ___
 
@@ -863,7 +880,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2002
+src/debit_notes.scailo_pb.ts:2010
 
 ___
 
@@ -884,7 +901,7 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2006
+src/debit_notes.scailo_pb.ts:2014
 
 ___
 
@@ -905,4 +922,4 @@ ___
 
 #### Defined in
 
-src/debit_notes.scailo_pb.ts:2010
+src/debit_notes.scailo_pb.ts:2018

@@ -40,6 +40,7 @@ from message Scailo.PurchasesOrdersServiceFilterReq
 - [entityUuid](PurchasesOrdersServiceFilterReq.md#entityuuid)
 - [familyId](PurchasesOrdersServiceFilterReq.md#familyid)
 - [finalRefNumber](PurchasesOrdersServiceFilterReq.md#finalrefnumber)
+- [formData](PurchasesOrdersServiceFilterReq.md#formdata)
 - [isActive](PurchasesOrdersServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](PurchasesOrdersServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](PurchasesOrdersServiceFilterReq.md#modificationtimestampstart)
@@ -95,7 +96,7 @@ Message\&lt;PurchasesOrdersServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2050
+src/purchases_orders.scailo_pb.ts:2057
 
 ## Properties
 
@@ -387,6 +388,22 @@ src/purchases_orders.scailo_pb.ts:1971
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/purchases_orders.scailo_pb.ts:2055
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -585,7 +602,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2057
+src/purchases_orders.scailo_pb.ts:2064
 
 ___
 
@@ -595,7 +612,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2055
+src/purchases_orders.scailo_pb.ts:2062
 
 ___
 
@@ -605,7 +622,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2056
+src/purchases_orders.scailo_pb.ts:2063
 
 ## Methods
 
@@ -893,7 +910,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2102
+src/purchases_orders.scailo_pb.ts:2110
 
 ___
 
@@ -914,7 +931,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2090
+src/purchases_orders.scailo_pb.ts:2098
 
 ___
 
@@ -935,7 +952,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2094
+src/purchases_orders.scailo_pb.ts:2102
 
 ___
 
@@ -956,4 +973,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:2098
+src/purchases_orders.scailo_pb.ts:2106

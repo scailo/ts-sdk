@@ -33,6 +33,7 @@ from message Scailo.ExpensesServiceCountReq
 - [currencyId](ExpensesServiceCountReq.md#currencyid)
 - [entityUuid](ExpensesServiceCountReq.md#entityuuid)
 - [finalRefNumber](ExpensesServiceCountReq.md#finalrefnumber)
+- [formData](ExpensesServiceCountReq.md#formdata)
 - [isActive](ExpensesServiceCountReq.md#isactive)
 - [modificationTimestampEnd](ExpensesServiceCountReq.md#modificationtimestampend)
 - [modificationTimestampStart](ExpensesServiceCountReq.md#modificationtimestampstart)
@@ -83,7 +84,7 @@ Message\&lt;ExpensesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1845
+src/expenses.scailo_pb.ts:1860
 
 ## Properties
 
@@ -99,7 +100,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1787
+src/expenses.scailo_pb.ts:1795
 
 ___
 
@@ -115,7 +116,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1780
+src/expenses.scailo_pb.ts:1788
 
 ___
 
@@ -131,7 +132,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1773
+src/expenses.scailo_pb.ts:1781
 
 ___
 
@@ -147,7 +148,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1794
+src/expenses.scailo_pb.ts:1802
 
 ___
 
@@ -163,7 +164,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1808
+src/expenses.scailo_pb.ts:1816
 
 ___
 
@@ -179,7 +180,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1801
+src/expenses.scailo_pb.ts:1809
 
 ___
 
@@ -195,7 +196,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1738
+src/expenses.scailo_pb.ts:1746
 
 ___
 
@@ -211,7 +212,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1731
+src/expenses.scailo_pb.ts:1739
 
 ___
 
@@ -227,7 +228,7 @@ from field: uint64 currency_id = 22;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1829
+src/expenses.scailo_pb.ts:1837
 
 ___
 
@@ -243,7 +244,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1759
+src/expenses.scailo_pb.ts:1767
 
 ___
 
@@ -259,7 +260,23 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1822
+src/expenses.scailo_pb.ts:1830
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/expenses.scailo_pb.ts:1858
 
 ___
 
@@ -275,7 +292,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1724
+src/expenses.scailo_pb.ts:1732
 
 ___
 
@@ -291,7 +308,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1752
+src/expenses.scailo_pb.ts:1760
 
 ___
 
@@ -307,7 +324,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1745
+src/expenses.scailo_pb.ts:1753
 
 ___
 
@@ -323,7 +340,7 @@ from field: uint64 paid_by_user_id = 23;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1836
+src/expenses.scailo_pb.ts:1844
 
 ___
 
@@ -339,7 +356,7 @@ from field: uint64 project_id = 30;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1843
+src/expenses.scailo_pb.ts:1851
 
 ___
 
@@ -355,7 +372,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1815
+src/expenses.scailo_pb.ts:1823
 
 ___
 
@@ -371,7 +388,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1766
+src/expenses.scailo_pb.ts:1774
 
 ___
 
@@ -381,7 +398,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1852
+src/expenses.scailo_pb.ts:1867
 
 ___
 
@@ -391,7 +408,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1850
+src/expenses.scailo_pb.ts:1865
 
 ___
 
@@ -401,7 +418,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1851
+src/expenses.scailo_pb.ts:1866
 
 ## Methods
 
@@ -689,7 +706,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1885
+src/expenses.scailo_pb.ts:1901
 
 ___
 
@@ -710,7 +727,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1873
+src/expenses.scailo_pb.ts:1889
 
 ___
 
@@ -731,7 +748,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1877
+src/expenses.scailo_pb.ts:1893
 
 ___
 
@@ -752,4 +769,4 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1881
+src/expenses.scailo_pb.ts:1897

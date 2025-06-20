@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 import { FAMILY_TYPE } from "./families.scailo_pb.js";
 
@@ -1613,6 +1613,13 @@ export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServ
    */
   buyerClientId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<ProductionPlansServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1651,6 +1658,7 @@ export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServ
     { no: 50, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 80, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceFilterReq {
@@ -1860,6 +1868,13 @@ export class ProductionPlansServiceCountReq extends Message<ProductionPlansServi
    */
   buyerClientId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<ProductionPlansServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1894,6 +1909,7 @@ export class ProductionPlansServiceCountReq extends Message<ProductionPlansServi
     { no: 50, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 80, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceCountReq {

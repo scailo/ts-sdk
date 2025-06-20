@@ -40,6 +40,7 @@ from message Scailo.SupplyOffersServiceFilterReq
 - [entityUuid](SupplyOffersServiceFilterReq.md#entityuuid)
 - [familyId](SupplyOffersServiceFilterReq.md#familyid)
 - [finalRefNumber](SupplyOffersServiceFilterReq.md#finalrefnumber)
+- [formData](SupplyOffersServiceFilterReq.md#formdata)
 - [isActive](SupplyOffersServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](SupplyOffersServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](SupplyOffersServiceFilterReq.md#modificationtimestampstart)
@@ -95,7 +96,7 @@ Message\&lt;SupplyOffersServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1932
+src/supply_offers.scailo_pb.ts:1939
 
 ## Properties
 
@@ -387,6 +388,22 @@ src/supply_offers.scailo_pb.ts:1853
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/supply_offers.scailo_pb.ts:1937
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -585,7 +602,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1939
+src/supply_offers.scailo_pb.ts:1946
 
 ___
 
@@ -595,7 +612,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1937
+src/supply_offers.scailo_pb.ts:1944
 
 ___
 
@@ -605,7 +622,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1938
+src/supply_offers.scailo_pb.ts:1945
 
 ## Methods
 
@@ -893,7 +910,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1984
+src/supply_offers.scailo_pb.ts:1992
 
 ___
 
@@ -914,7 +931,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1972
+src/supply_offers.scailo_pb.ts:1980
 
 ___
 
@@ -935,7 +952,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1976
+src/supply_offers.scailo_pb.ts:1984
 
 ___
 
@@ -956,4 +973,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1980
+src/supply_offers.scailo_pb.ts:1988

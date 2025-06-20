@@ -73,7 +73,7 @@ Message\&lt;PurchaseOrderContact\&gt;.constructor
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3094
+src/purchases_orders.scailo_pb.ts:3110
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3057
+src/purchases_orders.scailo_pb.ts:3073
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3085
+src/purchases_orders.scailo_pb.ts:3101
 
 ___
 
@@ -121,7 +121,7 @@ from field: string associate_uuid = 211;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3092
+src/purchases_orders.scailo_pb.ts:3108
 
 ___
 
@@ -137,7 +137,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3043
+src/purchases_orders.scailo_pb.ts:3059
 
 ___
 
@@ -153,7 +153,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3050
+src/purchases_orders.scailo_pb.ts:3066
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3064
+src/purchases_orders.scailo_pb.ts:3080
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 purchase_order_id = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3078
+src/purchases_orders.scailo_pb.ts:3094
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3071
+src/purchases_orders.scailo_pb.ts:3087
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3101
+src/purchases_orders.scailo_pb.ts:3117
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3099
+src/purchases_orders.scailo_pb.ts:3115
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3100
+src/purchases_orders.scailo_pb.ts:3116
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3124
+src/purchases_orders.scailo_pb.ts:3140
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3112
+src/purchases_orders.scailo_pb.ts:3128
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3116
+src/purchases_orders.scailo_pb.ts:3132
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:3120
+src/purchases_orders.scailo_pb.ts:3136

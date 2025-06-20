@@ -39,6 +39,7 @@ from message Scailo.ProformaInvoicesServiceFilterReq
 - [entityUuid](ProformaInvoicesServiceFilterReq.md#entityuuid)
 - [familyId](ProformaInvoicesServiceFilterReq.md#familyid)
 - [finalRefNumber](ProformaInvoicesServiceFilterReq.md#finalrefnumber)
+- [formData](ProformaInvoicesServiceFilterReq.md#formdata)
 - [isActive](ProformaInvoicesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](ProformaInvoicesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](ProformaInvoicesServiceFilterReq.md#modificationtimestampstart)
@@ -95,7 +96,7 @@ Message\&lt;ProformaInvoicesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1922
+src/proforma_invoices.scailo_pb.ts:1929
 
 ## Properties
 
@@ -372,6 +373,22 @@ src/proforma_invoices.scailo_pb.ts:1842
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/proforma_invoices.scailo_pb.ts:1927
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -586,7 +603,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1929
+src/proforma_invoices.scailo_pb.ts:1936
 
 ___
 
@@ -596,7 +613,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1927
+src/proforma_invoices.scailo_pb.ts:1934
 
 ___
 
@@ -606,7 +623,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1928
+src/proforma_invoices.scailo_pb.ts:1935
 
 ## Methods
 
@@ -894,7 +911,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1974
+src/proforma_invoices.scailo_pb.ts:1982
 
 ___
 
@@ -915,7 +932,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1962
+src/proforma_invoices.scailo_pb.ts:1970
 
 ___
 
@@ -936,7 +953,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1966
+src/proforma_invoices.scailo_pb.ts:1974
 
 ___
 
@@ -957,4 +974,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:1970
+src/proforma_invoices.scailo_pb.ts:1978

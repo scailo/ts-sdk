@@ -39,6 +39,7 @@ from message Scailo.SalesEnquiriesServiceFilterReq
 - [deliveryDateStart](SalesEnquiriesServiceFilterReq.md#deliverydatestart)
 - [entityUuid](SalesEnquiriesServiceFilterReq.md#entityuuid)
 - [finalRefNumber](SalesEnquiriesServiceFilterReq.md#finalrefnumber)
+- [formData](SalesEnquiriesServiceFilterReq.md#formdata)
 - [isActive](SalesEnquiriesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](SalesEnquiriesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](SalesEnquiriesServiceFilterReq.md#modificationtimestampstart)
@@ -91,7 +92,7 @@ Message\&lt;SalesEnquiriesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1925
+src/sales_enquiries.scailo_pb.ts:1932
 
 ## Properties
 
@@ -367,6 +368,22 @@ src/sales_enquiries.scailo_pb.ts:1874
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/sales_enquiries.scailo_pb.ts:1930
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -517,7 +534,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1932
+src/sales_enquiries.scailo_pb.ts:1939
 
 ___
 
@@ -527,7 +544,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1930
+src/sales_enquiries.scailo_pb.ts:1937
 
 ___
 
@@ -537,7 +554,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1931
+src/sales_enquiries.scailo_pb.ts:1938
 
 ## Methods
 
@@ -825,7 +842,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1973
+src/sales_enquiries.scailo_pb.ts:1981
 
 ___
 
@@ -846,7 +863,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1961
+src/sales_enquiries.scailo_pb.ts:1969
 
 ___
 
@@ -867,7 +884,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1965
+src/sales_enquiries.scailo_pb.ts:1973
 
 ___
 
@@ -888,4 +905,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1969
+src/sales_enquiries.scailo_pb.ts:1977

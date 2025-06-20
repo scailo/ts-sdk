@@ -69,7 +69,7 @@ Message\&lt;StockIssuancesServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1966
+src/stock_issuances.scailo_pb.ts:1982
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1943
+src/stock_issuances.scailo_pb.ts:1959
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1950
+src/stock_issuances.scailo_pb.ts:1966
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.StockIssuanceItem payload = 4;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1964
+src/stock_issuances.scailo_pb.ts:1980
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1957
+src/stock_issuances.scailo_pb.ts:1973
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1973
+src/stock_issuances.scailo_pb.ts:1989
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1971
+src/stock_issuances.scailo_pb.ts:1987
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1972
+src/stock_issuances.scailo_pb.ts:1988
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1992
+src/stock_issuances.scailo_pb.ts:2008
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1980
+src/stock_issuances.scailo_pb.ts:1996
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1984
+src/stock_issuances.scailo_pb.ts:2000
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1988
+src/stock_issuances.scailo_pb.ts:2004

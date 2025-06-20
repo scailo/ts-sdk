@@ -66,7 +66,7 @@ Message\&lt;WorkOrderRequirementStatisticsList\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2189
+src/work_orders.scailo_pb.ts:2205
 
 ## Properties
 
@@ -80,7 +80,7 @@ from field: repeated Scailo.WorkOrderRequirementStatistics list = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2187
+src/work_orders.scailo_pb.ts:2203
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2196
+src/work_orders.scailo_pb.ts:2212
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2194
+src/work_orders.scailo_pb.ts:2210
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2195
+src/work_orders.scailo_pb.ts:2211
 
 ## Methods
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2212
+src/work_orders.scailo_pb.ts:2228
 
 ___
 
@@ -419,7 +419,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2200
+src/work_orders.scailo_pb.ts:2216
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2204
+src/work_orders.scailo_pb.ts:2220
 
 ___
 
@@ -461,4 +461,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2208
+src/work_orders.scailo_pb.ts:2224

@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 
 /**
@@ -2041,6 +2041,13 @@ export class CreditNotesServiceFilterReq extends Message<CreditNotesServiceFilte
    */
   totalValueMax = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<CreditNotesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2078,6 +2085,7 @@ export class CreditNotesServiceFilterReq extends Message<CreditNotesServiceFilte
     { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNotesServiceFilterReq {
@@ -2280,6 +2288,13 @@ export class CreditNotesServiceCountReq extends Message<CreditNotesServiceCountR
    */
   totalValueMax = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<CreditNotesServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2313,6 +2328,7 @@ export class CreditNotesServiceCountReq extends Message<CreditNotesServiceCountR
     { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNotesServiceCountReq {

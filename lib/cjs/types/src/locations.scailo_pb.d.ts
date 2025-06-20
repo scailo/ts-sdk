@@ -1,6 +1,6 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
@@ -503,6 +503,12 @@ export declare class LocationsServiceFilterReq extends Message<LocationsServiceF
      * @generated from field: string phone = 23;
      */
     phone: string;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<LocationsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.LocationsServiceFilterReq";
@@ -609,6 +615,12 @@ export declare class LocationsServiceCountReq extends Message<LocationsServiceCo
      * @generated from field: string phone = 23;
      */
     phone: string;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<LocationsServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.LocationsServiceCountReq";

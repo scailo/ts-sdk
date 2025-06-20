@@ -73,7 +73,7 @@ Message\&lt;LocationsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:997
+src/locations.scailo_pb.ts:1013
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:953
+src/locations.scailo_pb.ts:969
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:981
+src/locations.scailo_pb.ts:997
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:946
+src/locations.scailo_pb.ts:962
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:960
+src/locations.scailo_pb.ts:976
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:995
+src/locations.scailo_pb.ts:1011
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.LOCATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:974
+src/locations.scailo_pb.ts:990
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:967
+src/locations.scailo_pb.ts:983
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:988
+src/locations.scailo_pb.ts:1004
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1004
+src/locations.scailo_pb.ts:1020
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1002
+src/locations.scailo_pb.ts:1018
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1003
+src/locations.scailo_pb.ts:1019
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1027
+src/locations.scailo_pb.ts:1043
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1015
+src/locations.scailo_pb.ts:1031
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1019
+src/locations.scailo_pb.ts:1035
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1023
+src/locations.scailo_pb.ts:1039

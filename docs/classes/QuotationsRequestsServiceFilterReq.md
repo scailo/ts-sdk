@@ -34,6 +34,7 @@ from message Scailo.QuotationsRequestsServiceFilterReq
 - [currencyId](QuotationsRequestsServiceFilterReq.md#currencyid)
 - [entityUuid](QuotationsRequestsServiceFilterReq.md#entityuuid)
 - [finalRefNumber](QuotationsRequestsServiceFilterReq.md#finalrefnumber)
+- [formData](QuotationsRequestsServiceFilterReq.md#formdata)
 - [isActive](QuotationsRequestsServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](QuotationsRequestsServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](QuotationsRequestsServiceFilterReq.md#modificationtimestampstart)
@@ -86,7 +87,7 @@ Message\&lt;QuotationsRequestsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1796
+src/quotations_requests.scailo_pb.ts:1803
 
 ## Properties
 
@@ -282,6 +283,22 @@ src/quotations_requests.scailo_pb.ts:1780
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/quotations_requests.scailo_pb.ts:1801
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -432,7 +449,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1803
+src/quotations_requests.scailo_pb.ts:1810
 
 ___
 
@@ -442,7 +459,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1801
+src/quotations_requests.scailo_pb.ts:1808
 
 ___
 
@@ -452,7 +469,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1802
+src/quotations_requests.scailo_pb.ts:1809
 
 ## Methods
 
@@ -740,7 +757,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1839
+src/quotations_requests.scailo_pb.ts:1847
 
 ___
 
@@ -761,7 +778,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1827
+src/quotations_requests.scailo_pb.ts:1835
 
 ___
 
@@ -782,7 +799,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1831
+src/quotations_requests.scailo_pb.ts:1839
 
 ___
 
@@ -803,4 +820,4 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1835
+src/quotations_requests.scailo_pb.ts:1843

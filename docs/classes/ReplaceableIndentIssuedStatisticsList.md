@@ -66,7 +66,7 @@ Message\&lt;ReplaceableIndentIssuedStatisticsList\&gt;.constructor
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2038
+src/replaceable_indents.scailo_pb.ts:2054
 
 ## Properties
 
@@ -80,7 +80,7 @@ from field: repeated Scailo.ReplaceableIndentIssuedStatistics list = 1;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2036
+src/replaceable_indents.scailo_pb.ts:2052
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2045
+src/replaceable_indents.scailo_pb.ts:2061
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2043
+src/replaceable_indents.scailo_pb.ts:2059
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2044
+src/replaceable_indents.scailo_pb.ts:2060
 
 ## Methods
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2061
+src/replaceable_indents.scailo_pb.ts:2077
 
 ___
 
@@ -419,7 +419,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2049
+src/replaceable_indents.scailo_pb.ts:2065
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2053
+src/replaceable_indents.scailo_pb.ts:2069
 
 ___
 
@@ -461,4 +461,4 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2057
+src/replaceable_indents.scailo_pb.ts:2073

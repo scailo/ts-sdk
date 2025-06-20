@@ -70,7 +70,7 @@ Message\&lt;MeetingsServiceActionableCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1429
+src/meetings.scailo_pb.ts:1445
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 activity_tag_id = 13;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1427
+src/meetings.scailo_pb.ts:1443
 
 ___
 
@@ -102,7 +102,7 @@ from field: string content = 12;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1420
+src/meetings.scailo_pb.ts:1436
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 meeting_id = 10;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1406
+src/meetings.scailo_pb.ts:1422
 
 ___
 
@@ -134,7 +134,7 @@ from field: string title = 11;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1413
+src/meetings.scailo_pb.ts:1429
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1399
+src/meetings.scailo_pb.ts:1415
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1436
+src/meetings.scailo_pb.ts:1452
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1434
+src/meetings.scailo_pb.ts:1450
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1435
+src/meetings.scailo_pb.ts:1451
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1456
+src/meetings.scailo_pb.ts:1472
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1444
+src/meetings.scailo_pb.ts:1460
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1448
+src/meetings.scailo_pb.ts:1464
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1452
+src/meetings.scailo_pb.ts:1468

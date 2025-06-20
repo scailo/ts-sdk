@@ -36,6 +36,7 @@ from message Scailo.SalariesServiceFilterReq
 - [employeeId](SalariesServiceFilterReq.md#employeeid)
 - [entityUuid](SalariesServiceFilterReq.md#entityuuid)
 - [finalRefNumber](SalariesServiceFilterReq.md#finalrefnumber)
+- [formData](SalariesServiceFilterReq.md#formdata)
 - [isActive](SalariesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](SalariesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](SalariesServiceFilterReq.md#modificationtimestampstart)
@@ -89,7 +90,7 @@ Message\&lt;SalariesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2367
+src/salaries.scailo_pb.ts:2374
 
 ## Properties
 
@@ -317,6 +318,22 @@ src/salaries.scailo_pb.ts:2330
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/salaries.scailo_pb.ts:2372
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -483,7 +500,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2374
+src/salaries.scailo_pb.ts:2381
 
 ___
 
@@ -493,7 +510,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2372
+src/salaries.scailo_pb.ts:2379
 
 ___
 
@@ -503,7 +520,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2373
+src/salaries.scailo_pb.ts:2380
 
 ## Methods
 
@@ -791,7 +808,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2413
+src/salaries.scailo_pb.ts:2421
 
 ___
 
@@ -812,7 +829,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2401
+src/salaries.scailo_pb.ts:2409
 
 ___
 
@@ -833,7 +850,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2405
+src/salaries.scailo_pb.ts:2413
 
 ___
 
@@ -854,4 +871,4 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2409
+src/salaries.scailo_pb.ts:2417

@@ -1,6 +1,6 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
@@ -986,6 +986,12 @@ export declare class WorkOrdersServiceFilterReq extends Message<WorkOrdersServic
      * @generated from field: uint64 project_id = 52;
      */
     projectId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<WorkOrdersServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.WorkOrdersServiceFilterReq";
@@ -1153,6 +1159,12 @@ export declare class WorkOrdersServiceCountReq extends Message<WorkOrdersService
      * @generated from field: uint64 project_id = 52;
      */
     projectId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<WorkOrdersServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.WorkOrdersServiceCountReq";

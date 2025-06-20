@@ -73,7 +73,7 @@ Message\&lt;VendorsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1696
+src/vendors.scailo_pb.ts:1712
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1652
+src/vendors.scailo_pb.ts:1668
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1680
+src/vendors.scailo_pb.ts:1696
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1645
+src/vendors.scailo_pb.ts:1661
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1659
+src/vendors.scailo_pb.ts:1675
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1694
+src/vendors.scailo_pb.ts:1710
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.VENDOR_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1673
+src/vendors.scailo_pb.ts:1689
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1666
+src/vendors.scailo_pb.ts:1682
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1687
+src/vendors.scailo_pb.ts:1703
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1703
+src/vendors.scailo_pb.ts:1719
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1701
+src/vendors.scailo_pb.ts:1717
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1702
+src/vendors.scailo_pb.ts:1718
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1726
+src/vendors.scailo_pb.ts:1742
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1714
+src/vendors.scailo_pb.ts:1730
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1718
+src/vendors.scailo_pb.ts:1734
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1722
+src/vendors.scailo_pb.ts:1738

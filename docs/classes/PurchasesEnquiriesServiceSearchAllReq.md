@@ -73,7 +73,7 @@ Message\&lt;PurchasesEnquiriesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1785
+src/purchases_enquiries.scailo_pb.ts:1801
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1741
+src/purchases_enquiries.scailo_pb.ts:1757
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1769
+src/purchases_enquiries.scailo_pb.ts:1785
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1734
+src/purchases_enquiries.scailo_pb.ts:1750
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1748
+src/purchases_enquiries.scailo_pb.ts:1764
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1783
+src/purchases_enquiries.scailo_pb.ts:1799
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.PURCHASE_ENQUIRY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1762
+src/purchases_enquiries.scailo_pb.ts:1778
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1755
+src/purchases_enquiries.scailo_pb.ts:1771
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1776
+src/purchases_enquiries.scailo_pb.ts:1792
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1792
+src/purchases_enquiries.scailo_pb.ts:1808
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1790
+src/purchases_enquiries.scailo_pb.ts:1806
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1791
+src/purchases_enquiries.scailo_pb.ts:1807
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1815
+src/purchases_enquiries.scailo_pb.ts:1831
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1803
+src/purchases_enquiries.scailo_pb.ts:1819
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1807
+src/purchases_enquiries.scailo_pb.ts:1823
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1811
+src/purchases_enquiries.scailo_pb.ts:1827

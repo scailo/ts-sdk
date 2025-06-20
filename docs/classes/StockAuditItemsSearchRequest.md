@@ -80,7 +80,7 @@ Message\&lt;StockAuditItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1702
+src/stock_audits.scailo_pb.ts:1718
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1665
+src/stock_audits.scailo_pb.ts:1681
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1658
+src/stock_audits.scailo_pb.ts:1674
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1651
+src/stock_audits.scailo_pb.ts:1667
 
 ___
 
@@ -144,7 +144,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1672
+src/stock_audits.scailo_pb.ts:1688
 
 ___
 
@@ -160,7 +160,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1609
+src/stock_audits.scailo_pb.ts:1625
 
 ___
 
@@ -176,7 +176,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1637
+src/stock_audits.scailo_pb.ts:1653
 
 ___
 
@@ -192,7 +192,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1686
+src/stock_audits.scailo_pb.ts:1702
 
 ___
 
@@ -208,7 +208,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1602
+src/stock_audits.scailo_pb.ts:1618
 
 ___
 
@@ -224,7 +224,7 @@ from field: string item_hash = 22;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1693
+src/stock_audits.scailo_pb.ts:1709
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1616
+src/stock_audits.scailo_pb.ts:1632
 
 ___
 
@@ -256,7 +256,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1700
+src/stock_audits.scailo_pb.ts:1716
 
 ___
 
@@ -272,7 +272,7 @@ from field: Scailo.STOCK_AUDIT_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1630
+src/stock_audits.scailo_pb.ts:1646
 
 ___
 
@@ -288,7 +288,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1623
+src/stock_audits.scailo_pb.ts:1639
 
 ___
 
@@ -304,7 +304,7 @@ from field: Scailo.STOCK_AUDIT_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1644
+src/stock_audits.scailo_pb.ts:1660
 
 ___
 
@@ -320,7 +320,7 @@ from field: uint64 stock_audit_id = 20;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1679
+src/stock_audits.scailo_pb.ts:1695
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1709
+src/stock_audits.scailo_pb.ts:1725
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1707
+src/stock_audits.scailo_pb.ts:1723
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1708
+src/stock_audits.scailo_pb.ts:1724
 
 ## Methods
 
@@ -638,7 +638,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1739
+src/stock_audits.scailo_pb.ts:1755
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1727
+src/stock_audits.scailo_pb.ts:1743
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1731
+src/stock_audits.scailo_pb.ts:1747
 
 ___
 
@@ -701,4 +701,4 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1735
+src/stock_audits.scailo_pb.ts:1751

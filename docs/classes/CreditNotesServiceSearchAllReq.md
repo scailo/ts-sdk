@@ -77,7 +77,7 @@ Message\&lt;CreditNotesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2427
+src/credit_notes.scailo_pb.ts:2443
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2425
+src/credit_notes.scailo_pb.ts:2441
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2418
+src/credit_notes.scailo_pb.ts:2434
 
 ___
 
@@ -126,7 +126,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2354
+src/credit_notes.scailo_pb.ts:2370
 
 ___
 
@@ -142,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2382
+src/credit_notes.scailo_pb.ts:2398
 
 ___
 
@@ -158,7 +158,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2347
+src/credit_notes.scailo_pb.ts:2363
 
 ___
 
@@ -174,7 +174,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2361
+src/credit_notes.scailo_pb.ts:2377
 
 ___
 
@@ -190,7 +190,7 @@ from field: Scailo.CREDIT_NOTE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2403
+src/credit_notes.scailo_pb.ts:2419
 
 ___
 
@@ -206,7 +206,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2410
+src/credit_notes.scailo_pb.ts:2426
 
 ___
 
@@ -222,7 +222,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2396
+src/credit_notes.scailo_pb.ts:2412
 
 ___
 
@@ -238,7 +238,7 @@ from field: Scailo.CREDIT_NOTE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2375
+src/credit_notes.scailo_pb.ts:2391
 
 ___
 
@@ -254,7 +254,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2368
+src/credit_notes.scailo_pb.ts:2384
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2389
+src/credit_notes.scailo_pb.ts:2405
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2434
+src/credit_notes.scailo_pb.ts:2450
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2432
+src/credit_notes.scailo_pb.ts:2448
 
 ___
 
@@ -300,7 +300,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2433
+src/credit_notes.scailo_pb.ts:2449
 
 ## Methods
 
@@ -588,7 +588,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2461
+src/credit_notes.scailo_pb.ts:2477
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2449
+src/credit_notes.scailo_pb.ts:2465
 
 ___
 
@@ -630,7 +630,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2453
+src/credit_notes.scailo_pb.ts:2469
 
 ___
 
@@ -651,4 +651,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2457
+src/credit_notes.scailo_pb.ts:2473

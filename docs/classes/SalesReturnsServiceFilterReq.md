@@ -37,6 +37,7 @@ from message Scailo.SalesReturnsServiceFilterReq
 - [entityUuid](SalesReturnsServiceFilterReq.md#entityuuid)
 - [familyId](SalesReturnsServiceFilterReq.md#familyid)
 - [finalRefNumber](SalesReturnsServiceFilterReq.md#finalrefnumber)
+- [formData](SalesReturnsServiceFilterReq.md#formdata)
 - [isActive](SalesReturnsServiceFilterReq.md#isactive)
 - [locationId](SalesReturnsServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](SalesReturnsServiceFilterReq.md#modificationtimestampend)
@@ -92,7 +93,7 @@ Message\&lt;SalesReturnsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1767
+src/sales_returns.scailo_pb.ts:1774
 
 ## Properties
 
@@ -337,6 +338,22 @@ src/sales_returns.scailo_pb.ts:1708
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/sales_returns.scailo_pb.ts:1772
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -535,7 +552,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1774
+src/sales_returns.scailo_pb.ts:1781
 
 ___
 
@@ -545,7 +562,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1772
+src/sales_returns.scailo_pb.ts:1779
 
 ___
 
@@ -555,7 +572,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1773
+src/sales_returns.scailo_pb.ts:1780
 
 ## Methods
 
@@ -843,7 +860,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1816
+src/sales_returns.scailo_pb.ts:1824
 
 ___
 
@@ -864,7 +881,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1804
+src/sales_returns.scailo_pb.ts:1812
 
 ___
 
@@ -885,7 +902,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1808
+src/sales_returns.scailo_pb.ts:1816
 
 ___
 
@@ -906,4 +923,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1812
+src/sales_returns.scailo_pb.ts:1820

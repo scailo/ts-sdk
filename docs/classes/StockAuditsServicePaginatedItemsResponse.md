@@ -69,7 +69,7 @@ Message\&lt;StockAuditsServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1779
+src/stock_audits.scailo_pb.ts:1795
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1756
+src/stock_audits.scailo_pb.ts:1772
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1763
+src/stock_audits.scailo_pb.ts:1779
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.StockAuditItem payload = 4;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1777
+src/stock_audits.scailo_pb.ts:1793
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1770
+src/stock_audits.scailo_pb.ts:1786
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1786
+src/stock_audits.scailo_pb.ts:1802
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1784
+src/stock_audits.scailo_pb.ts:1800
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1785
+src/stock_audits.scailo_pb.ts:1801
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1805
+src/stock_audits.scailo_pb.ts:1821
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1793
+src/stock_audits.scailo_pb.ts:1809
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1797
+src/stock_audits.scailo_pb.ts:1813
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:1801
+src/stock_audits.scailo_pb.ts:1817

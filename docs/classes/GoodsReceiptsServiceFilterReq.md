@@ -35,6 +35,7 @@ from message Scailo.GoodsReceiptsServiceFilterReq
 - [entityUuid](GoodsReceiptsServiceFilterReq.md#entityuuid)
 - [familyId](GoodsReceiptsServiceFilterReq.md#familyid)
 - [finalRefNumber](GoodsReceiptsServiceFilterReq.md#finalrefnumber)
+- [formData](GoodsReceiptsServiceFilterReq.md#formdata)
 - [isActive](GoodsReceiptsServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](GoodsReceiptsServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](GoodsReceiptsServiceFilterReq.md#modificationtimestampstart)
@@ -94,7 +95,7 @@ Message\&lt;GoodsReceiptsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1869
+src/goods_receipts.scailo_pb.ts:1876
 
 ## Properties
 
@@ -303,6 +304,22 @@ from field: string final_ref_number = 21;
 #### Defined in
 
 src/goods_receipts.scailo_pb.ts:1797
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/goods_receipts.scailo_pb.ts:1874
 
 ___
 
@@ -568,7 +585,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1876
+src/goods_receipts.scailo_pb.ts:1883
 
 ___
 
@@ -578,7 +595,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1874
+src/goods_receipts.scailo_pb.ts:1881
 
 ___
 
@@ -588,7 +605,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1875
+src/goods_receipts.scailo_pb.ts:1882
 
 ## Methods
 
@@ -876,7 +893,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1920
+src/goods_receipts.scailo_pb.ts:1928
 
 ___
 
@@ -897,7 +914,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1908
+src/goods_receipts.scailo_pb.ts:1916
 
 ___
 
@@ -918,7 +935,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1912
+src/goods_receipts.scailo_pb.ts:1920
 
 ___
 
@@ -939,4 +956,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:1916
+src/goods_receipts.scailo_pb.ts:1924

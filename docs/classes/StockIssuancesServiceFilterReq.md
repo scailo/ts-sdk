@@ -34,6 +34,7 @@ from message Scailo.StockIssuancesServiceFilterReq
 - [entityUuid](StockIssuancesServiceFilterReq.md#entityuuid)
 - [familyId](StockIssuancesServiceFilterReq.md#familyid)
 - [finalRefNumber](StockIssuancesServiceFilterReq.md#finalrefnumber)
+- [formData](StockIssuancesServiceFilterReq.md#formdata)
 - [isActive](StockIssuancesServiceFilterReq.md#isactive)
 - [locationId](StockIssuancesServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](StockIssuancesServiceFilterReq.md#modificationtimestampend)
@@ -88,7 +89,7 @@ Message\&lt;StockIssuancesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1427
+src/stock_issuances.scailo_pb.ts:1434
 
 ## Properties
 
@@ -284,6 +285,22 @@ src/stock_issuances.scailo_pb.ts:1397
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/stock_issuances.scailo_pb.ts:1432
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -466,7 +483,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1434
+src/stock_issuances.scailo_pb.ts:1441
 
 ___
 
@@ -476,7 +493,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1432
+src/stock_issuances.scailo_pb.ts:1439
 
 ___
 
@@ -486,7 +503,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1433
+src/stock_issuances.scailo_pb.ts:1440
 
 ## Methods
 
@@ -774,7 +791,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1472
+src/stock_issuances.scailo_pb.ts:1480
 
 ___
 
@@ -795,7 +812,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1460
+src/stock_issuances.scailo_pb.ts:1468
 
 ___
 
@@ -816,7 +833,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1464
+src/stock_issuances.scailo_pb.ts:1472
 
 ___
 
@@ -837,4 +854,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1468
+src/stock_issuances.scailo_pb.ts:1476

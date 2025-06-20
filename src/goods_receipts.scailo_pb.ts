@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 
 /**
@@ -1866,6 +1866,13 @@ export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceF
    */
   billingStatus = GOODS_RECEIPT_BILLING_STATUS.GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<GoodsReceiptsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1903,6 +1910,7 @@ export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceF
     { no: 31, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceFilterReq {
@@ -2104,6 +2112,13 @@ export class GoodsReceiptsServiceCountReq extends Message<GoodsReceiptsServiceCo
    */
   billingStatus = GOODS_RECEIPT_BILLING_STATUS.GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<GoodsReceiptsServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2137,6 +2152,7 @@ export class GoodsReceiptsServiceCountReq extends Message<GoodsReceiptsServiceCo
     { no: 31, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceCountReq {

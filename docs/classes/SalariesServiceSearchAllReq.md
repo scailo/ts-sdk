@@ -73,7 +73,7 @@ Message\&lt;SalariesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2675
+src/salaries.scailo_pb.ts:2691
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2631
+src/salaries.scailo_pb.ts:2647
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2659
+src/salaries.scailo_pb.ts:2675
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2624
+src/salaries.scailo_pb.ts:2640
 
 ___
 
@@ -137,7 +137,7 @@ from field: int64 offset = 3;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2638
+src/salaries.scailo_pb.ts:2654
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2673
+src/salaries.scailo_pb.ts:2689
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.SALARY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2652
+src/salaries.scailo_pb.ts:2668
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2645
+src/salaries.scailo_pb.ts:2661
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2666
+src/salaries.scailo_pb.ts:2682
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2682
+src/salaries.scailo_pb.ts:2698
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2680
+src/salaries.scailo_pb.ts:2696
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2681
+src/salaries.scailo_pb.ts:2697
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2705
+src/salaries.scailo_pb.ts:2721
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2693
+src/salaries.scailo_pb.ts:2709
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2697
+src/salaries.scailo_pb.ts:2713
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2701
+src/salaries.scailo_pb.ts:2717

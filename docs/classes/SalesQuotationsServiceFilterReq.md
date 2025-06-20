@@ -40,6 +40,7 @@ from message Scailo.SalesQuotationsServiceFilterReq
 - [entityUuid](SalesQuotationsServiceFilterReq.md#entityuuid)
 - [familyId](SalesQuotationsServiceFilterReq.md#familyid)
 - [finalRefNumber](SalesQuotationsServiceFilterReq.md#finalrefnumber)
+- [formData](SalesQuotationsServiceFilterReq.md#formdata)
 - [isActive](SalesQuotationsServiceFilterReq.md#isactive)
 - [locationId](SalesQuotationsServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](SalesQuotationsServiceFilterReq.md#modificationtimestampend)
@@ -93,7 +94,7 @@ Message\&lt;SalesQuotationsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1921
+src/sales_quotations.scailo_pb.ts:1928
 
 ## Properties
 
@@ -385,6 +386,22 @@ src/sales_quotations.scailo_pb.ts:1856
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/sales_quotations.scailo_pb.ts:1926
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -551,7 +568,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1928
+src/sales_quotations.scailo_pb.ts:1935
 
 ___
 
@@ -561,7 +578,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1926
+src/sales_quotations.scailo_pb.ts:1933
 
 ___
 
@@ -571,7 +588,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1927
+src/sales_quotations.scailo_pb.ts:1934
 
 ## Methods
 
@@ -859,7 +876,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1971
+src/sales_quotations.scailo_pb.ts:1979
 
 ___
 
@@ -880,7 +897,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1959
+src/sales_quotations.scailo_pb.ts:1967
 
 ___
 
@@ -901,7 +918,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1963
+src/sales_quotations.scailo_pb.ts:1971
 
 ___
 
@@ -922,4 +939,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:1967
+src/sales_quotations.scailo_pb.ts:1975

@@ -73,7 +73,7 @@ Message\&lt;ClientUser\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1220
+src/clients.scailo_pb.ts:1236
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1183
+src/clients.scailo_pb.ts:1199
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 associate_id = 12;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1218
+src/clients.scailo_pb.ts:1234
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 client_id = 10;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1204
+src/clients.scailo_pb.ts:1220
 
 ___
 
@@ -137,7 +137,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1169
+src/clients.scailo_pb.ts:1185
 
 ___
 
@@ -153,7 +153,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1176
+src/clients.scailo_pb.ts:1192
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1190
+src/clients.scailo_pb.ts:1206
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1197
+src/clients.scailo_pb.ts:1213
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1211
+src/clients.scailo_pb.ts:1227
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1227
+src/clients.scailo_pb.ts:1243
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1225
+src/clients.scailo_pb.ts:1241
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1226
+src/clients.scailo_pb.ts:1242
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1250
+src/clients.scailo_pb.ts:1266
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1238
+src/clients.scailo_pb.ts:1254
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1242
+src/clients.scailo_pb.ts:1258
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1246
+src/clients.scailo_pb.ts:1262

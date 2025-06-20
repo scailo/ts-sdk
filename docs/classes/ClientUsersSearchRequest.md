@@ -74,7 +74,7 @@ Message\&lt;ClientUsersSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1367
+src/clients.scailo_pb.ts:1383
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: uint64 associate_id = 12;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1358
+src/clients.scailo_pb.ts:1374
 
 ___
 
@@ -106,7 +106,7 @@ from field: uint64 client_id = 10;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1344
+src/clients.scailo_pb.ts:1360
 
 ___
 
@@ -122,7 +122,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1316
+src/clients.scailo_pb.ts:1332
 
 ___
 
@@ -138,7 +138,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1330
+src/clients.scailo_pb.ts:1346
 
 ___
 
@@ -154,7 +154,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1309
+src/clients.scailo_pb.ts:1325
 
 ___
 
@@ -170,7 +170,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1323
+src/clients.scailo_pb.ts:1339
 
 ___
 
@@ -186,7 +186,7 @@ from field: string search_key = 20;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1365
+src/clients.scailo_pb.ts:1381
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.CLIENT_USER_STATUS status = 7;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1337
+src/clients.scailo_pb.ts:1353
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1351
+src/clients.scailo_pb.ts:1367
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1374
+src/clients.scailo_pb.ts:1390
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1372
+src/clients.scailo_pb.ts:1388
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1373
+src/clients.scailo_pb.ts:1389
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1398
+src/clients.scailo_pb.ts:1414
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1386
+src/clients.scailo_pb.ts:1402
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1390
+src/clients.scailo_pb.ts:1406
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:1394
+src/clients.scailo_pb.ts:1410

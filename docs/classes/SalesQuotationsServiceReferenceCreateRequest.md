@@ -70,7 +70,7 @@ Message\&lt;SalesQuotationsServiceReferenceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2382
+src/sales_quotations.scailo_pb.ts:2398
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: Scailo.SALES_QUOTATION_REFERENCE_CONTEXT context = 11;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2366
+src/sales_quotations.scailo_pb.ts:2382
 
 ___
 
@@ -102,7 +102,7 @@ from field: Scailo.SALES_QUOTATION_REFERENCE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2373
+src/sales_quotations.scailo_pb.ts:2389
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2380
+src/sales_quotations.scailo_pb.ts:2396
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 sales_quotation_id = 10;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2359
+src/sales_quotations.scailo_pb.ts:2375
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2352
+src/sales_quotations.scailo_pb.ts:2368
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2389
+src/sales_quotations.scailo_pb.ts:2405
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2387
+src/sales_quotations.scailo_pb.ts:2403
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2388
+src/sales_quotations.scailo_pb.ts:2404
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2409
+src/sales_quotations.scailo_pb.ts:2425
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2397
+src/sales_quotations.scailo_pb.ts:2413
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2401
+src/sales_quotations.scailo_pb.ts:2417
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2405
+src/sales_quotations.scailo_pb.ts:2421

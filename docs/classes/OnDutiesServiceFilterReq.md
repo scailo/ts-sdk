@@ -37,6 +37,7 @@ from message Scailo.OnDutiesServiceFilterReq
 - [exitTimestampEnd](OnDutiesServiceFilterReq.md#exittimestampend)
 - [exitTimestampStart](OnDutiesServiceFilterReq.md#exittimestampstart)
 - [finalRefNumber](OnDutiesServiceFilterReq.md#finalrefnumber)
+- [formData](OnDutiesServiceFilterReq.md#formdata)
 - [isActive](OnDutiesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](OnDutiesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](OnDutiesServiceFilterReq.md#modificationtimestampstart)
@@ -89,7 +90,7 @@ Message\&lt;OnDutiesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1001
+src/on_duties.scailo_pb.ts:1008
 
 ## Properties
 
@@ -333,6 +334,22 @@ src/on_duties.scailo_pb.ts:964
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/on_duties.scailo_pb.ts:1006
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -483,7 +500,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1008
+src/on_duties.scailo_pb.ts:1015
 
 ___
 
@@ -493,7 +510,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1006
+src/on_duties.scailo_pb.ts:1013
 
 ___
 
@@ -503,7 +520,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1007
+src/on_duties.scailo_pb.ts:1014
 
 ## Methods
 
@@ -791,7 +808,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1047
+src/on_duties.scailo_pb.ts:1055
 
 ___
 
@@ -812,7 +829,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1035
+src/on_duties.scailo_pb.ts:1043
 
 ___
 
@@ -833,7 +850,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1039
+src/on_duties.scailo_pb.ts:1047
 
 ___
 
@@ -854,4 +871,4 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1043
+src/on_duties.scailo_pb.ts:1051

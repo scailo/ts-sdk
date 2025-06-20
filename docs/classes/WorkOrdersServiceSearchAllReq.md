@@ -76,7 +76,7 @@ Message\&lt;WorkOrdersServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1845
+src/work_orders.scailo_pb.ts:1861
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1780
+src/work_orders.scailo_pb.ts:1796
 
 ___
 
@@ -108,7 +108,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1808
+src/work_orders.scailo_pb.ts:1824
 
 ___
 
@@ -124,7 +124,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1773
+src/work_orders.scailo_pb.ts:1789
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1843
+src/work_orders.scailo_pb.ts:1859
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1787
+src/work_orders.scailo_pb.ts:1803
 
 ___
 
@@ -172,7 +172,7 @@ from field: Scailo.WORK_ORDER_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1829
+src/work_orders.scailo_pb.ts:1845
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1836
+src/work_orders.scailo_pb.ts:1852
 
 ___
 
@@ -204,7 +204,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1822
+src/work_orders.scailo_pb.ts:1838
 
 ___
 
@@ -220,7 +220,7 @@ from field: Scailo.WORK_ORDER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1801
+src/work_orders.scailo_pb.ts:1817
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1794
+src/work_orders.scailo_pb.ts:1810
 
 ___
 
@@ -252,7 +252,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1815
+src/work_orders.scailo_pb.ts:1831
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1852
+src/work_orders.scailo_pb.ts:1868
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1850
+src/work_orders.scailo_pb.ts:1866
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1851
+src/work_orders.scailo_pb.ts:1867
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1878
+src/work_orders.scailo_pb.ts:1894
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1866
+src/work_orders.scailo_pb.ts:1882
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1870
+src/work_orders.scailo_pb.ts:1886
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1874
+src/work_orders.scailo_pb.ts:1890

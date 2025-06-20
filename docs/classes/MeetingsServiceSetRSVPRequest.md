@@ -68,7 +68,7 @@ Message\&lt;MeetingsServiceSetRSVPRequest\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2363
+src/meetings.scailo_pb.ts:2379
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: Scailo.MEETING_RSVP rsvp = 11;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2361
+src/meetings.scailo_pb.ts:2377
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2347
+src/meetings.scailo_pb.ts:2363
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 10;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2354
+src/meetings.scailo_pb.ts:2370
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2370
+src/meetings.scailo_pb.ts:2386
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2368
+src/meetings.scailo_pb.ts:2384
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2369
+src/meetings.scailo_pb.ts:2385
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2388
+src/meetings.scailo_pb.ts:2404
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2376
+src/meetings.scailo_pb.ts:2392
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2380
+src/meetings.scailo_pb.ts:2396
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2384
+src/meetings.scailo_pb.ts:2400

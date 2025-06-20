@@ -33,6 +33,7 @@ from message Scailo.PurchasesEnquiriesServiceFilterReq
 - [creationTimestampStart](PurchasesEnquiriesServiceFilterReq.md#creationtimestampstart)
 - [entityUuid](PurchasesEnquiriesServiceFilterReq.md#entityuuid)
 - [finalRefNumber](PurchasesEnquiriesServiceFilterReq.md#finalrefnumber)
+- [formData](PurchasesEnquiriesServiceFilterReq.md#formdata)
 - [isActive](PurchasesEnquiriesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](PurchasesEnquiriesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](PurchasesEnquiriesServiceFilterReq.md#modificationtimestampstart)
@@ -85,7 +86,7 @@ Message\&lt;PurchasesEnquiriesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1513
+src/purchases_enquiries.scailo_pb.ts:1520
 
 ## Properties
 
@@ -265,6 +266,22 @@ src/purchases_enquiries.scailo_pb.ts:1504
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/purchases_enquiries.scailo_pb.ts:1518
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -415,7 +432,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1520
+src/purchases_enquiries.scailo_pb.ts:1527
 
 ___
 
@@ -425,7 +442,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1518
+src/purchases_enquiries.scailo_pb.ts:1525
 
 ___
 
@@ -435,7 +452,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1519
+src/purchases_enquiries.scailo_pb.ts:1526
 
 ## Methods
 
@@ -723,7 +740,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1555
+src/purchases_enquiries.scailo_pb.ts:1563
 
 ___
 
@@ -744,7 +761,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1543
+src/purchases_enquiries.scailo_pb.ts:1551
 
 ___
 
@@ -765,7 +782,7 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1547
+src/purchases_enquiries.scailo_pb.ts:1555
 
 ___
 
@@ -786,4 +803,4 @@ ___
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:1551
+src/purchases_enquiries.scailo_pb.ts:1559

@@ -78,7 +78,7 @@ Message\&lt;SalesReturnsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2139
+src/sales_returns.scailo_pb.ts:2155
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.SALES_RETURN_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2122
+src/sales_returns.scailo_pb.ts:2138
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 buyer_client_id = 61;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2137
+src/sales_returns.scailo_pb.ts:2153
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 consignee_client_id = 60;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2130
+src/sales_returns.scailo_pb.ts:2146
 
 ___
 
@@ -143,7 +143,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2059
+src/sales_returns.scailo_pb.ts:2075
 
 ___
 
@@ -159,7 +159,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2087
+src/sales_returns.scailo_pb.ts:2103
 
 ___
 
@@ -175,7 +175,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2052
+src/sales_returns.scailo_pb.ts:2068
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2066
+src/sales_returns.scailo_pb.ts:2082
 
 ___
 
@@ -207,7 +207,7 @@ from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2108
+src/sales_returns.scailo_pb.ts:2124
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2115
+src/sales_returns.scailo_pb.ts:2131
 
 ___
 
@@ -239,7 +239,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2101
+src/sales_returns.scailo_pb.ts:2117
 
 ___
 
@@ -255,7 +255,7 @@ from field: Scailo.SALES_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2080
+src/sales_returns.scailo_pb.ts:2096
 
 ___
 
@@ -271,7 +271,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2073
+src/sales_returns.scailo_pb.ts:2089
 
 ___
 
@@ -287,7 +287,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2094
+src/sales_returns.scailo_pb.ts:2110
 
 ___
 
@@ -297,7 +297,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2146
+src/sales_returns.scailo_pb.ts:2162
 
 ___
 
@@ -307,7 +307,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2144
+src/sales_returns.scailo_pb.ts:2160
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2145
+src/sales_returns.scailo_pb.ts:2161
 
 ## Methods
 
@@ -605,7 +605,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2174
+src/sales_returns.scailo_pb.ts:2190
 
 ___
 
@@ -626,7 +626,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2162
+src/sales_returns.scailo_pb.ts:2178
 
 ___
 
@@ -647,7 +647,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2166
+src/sales_returns.scailo_pb.ts:2182
 
 ___
 
@@ -668,4 +668,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2170
+src/sales_returns.scailo_pb.ts:2186

@@ -74,7 +74,7 @@ Message\&lt;OvertimesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1156
+src/overtimes.scailo_pb.ts:1172
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1105
+src/overtimes.scailo_pb.ts:1121
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1133
+src/overtimes.scailo_pb.ts:1149
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1098
+src/overtimes.scailo_pb.ts:1114
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1112
+src/overtimes.scailo_pb.ts:1128
 
 ___
 
@@ -154,7 +154,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1147
+src/overtimes.scailo_pb.ts:1163
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.OVERTIME_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1126
+src/overtimes.scailo_pb.ts:1142
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1119
+src/overtimes.scailo_pb.ts:1135
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1140
+src/overtimes.scailo_pb.ts:1156
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1154
+src/overtimes.scailo_pb.ts:1170
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1163
+src/overtimes.scailo_pb.ts:1179
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1161
+src/overtimes.scailo_pb.ts:1177
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1162
+src/overtimes.scailo_pb.ts:1178
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1187
+src/overtimes.scailo_pb.ts:1203
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1175
+src/overtimes.scailo_pb.ts:1191
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1179
+src/overtimes.scailo_pb.ts:1195
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:1183
+src/overtimes.scailo_pb.ts:1199

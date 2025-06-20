@@ -76,7 +76,7 @@ Message\&lt;UsersServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/users.scailo_pb.ts:1920
+src/users.scailo_pb.ts:1936
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: uint64 client_id = 71;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1918
+src/users.scailo_pb.ts:1934
 
 ___
 
@@ -110,7 +110,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1852
+src/users.scailo_pb.ts:1868
 
 ___
 
@@ -126,7 +126,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1880
+src/users.scailo_pb.ts:1896
 
 ___
 
@@ -142,7 +142,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1845
+src/users.scailo_pb.ts:1861
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1859
+src/users.scailo_pb.ts:1875
 
 ___
 
@@ -174,7 +174,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1901
+src/users.scailo_pb.ts:1917
 
 ___
 
@@ -190,7 +190,7 @@ from field: Scailo.USER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1873
+src/users.scailo_pb.ts:1889
 
 ___
 
@@ -206,7 +206,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1866
+src/users.scailo_pb.ts:1882
 
 ___
 
@@ -222,7 +222,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1894
+src/users.scailo_pb.ts:1910
 
 ___
 
@@ -238,7 +238,7 @@ from field: Scailo.USER_TYPE user_type = 7;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1887
+src/users.scailo_pb.ts:1903
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 vendor_id = 70;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1909
+src/users.scailo_pb.ts:1925
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1927
+src/users.scailo_pb.ts:1943
 
 ___
 
@@ -275,7 +275,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1925
+src/users.scailo_pb.ts:1941
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1926
+src/users.scailo_pb.ts:1942
 
 ## Methods
 
@@ -573,7 +573,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1953
+src/users.scailo_pb.ts:1969
 
 ___
 
@@ -594,7 +594,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1941
+src/users.scailo_pb.ts:1957
 
 ___
 
@@ -615,7 +615,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1945
+src/users.scailo_pb.ts:1961
 
 ___
 
@@ -636,4 +636,4 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1949
+src/users.scailo_pb.ts:1965

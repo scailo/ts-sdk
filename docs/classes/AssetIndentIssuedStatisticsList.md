@@ -66,7 +66,7 @@ Message\&lt;AssetIndentIssuedStatisticsList\&gt;.constructor
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1916
+src/asset_indents.scailo_pb.ts:1932
 
 ## Properties
 
@@ -80,7 +80,7 @@ from field: repeated Scailo.AssetIndentIssuedStatistics list = 1;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1914
+src/asset_indents.scailo_pb.ts:1930
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1923
+src/asset_indents.scailo_pb.ts:1939
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1921
+src/asset_indents.scailo_pb.ts:1937
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1922
+src/asset_indents.scailo_pb.ts:1938
 
 ## Methods
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1939
+src/asset_indents.scailo_pb.ts:1955
 
 ___
 
@@ -419,7 +419,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1927
+src/asset_indents.scailo_pb.ts:1943
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1931
+src/asset_indents.scailo_pb.ts:1947
 
 ___
 
@@ -461,4 +461,4 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1935
+src/asset_indents.scailo_pb.ts:1951

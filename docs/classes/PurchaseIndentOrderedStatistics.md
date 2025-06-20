@@ -68,7 +68,7 @@ Message\&lt;PurchaseIndentOrderedStatistics\&gt;.constructor
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2080
+src/purchases_indents.scailo_pb.ts:2096
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2064
+src/purchases_indents.scailo_pb.ts:2080
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 indented_quantity = 2;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2071
+src/purchases_indents.scailo_pb.ts:2087
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ordered_quantity = 3;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2078
+src/purchases_indents.scailo_pb.ts:2094
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2087
+src/purchases_indents.scailo_pb.ts:2103
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2085
+src/purchases_indents.scailo_pb.ts:2101
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2086
+src/purchases_indents.scailo_pb.ts:2102
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2105
+src/purchases_indents.scailo_pb.ts:2121
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2093
+src/purchases_indents.scailo_pb.ts:2109
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2097
+src/purchases_indents.scailo_pb.ts:2113
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:2101
+src/purchases_indents.scailo_pb.ts:2117

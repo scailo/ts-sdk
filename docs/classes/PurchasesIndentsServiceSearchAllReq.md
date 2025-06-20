@@ -74,7 +74,7 @@ Message\&lt;PurchasesIndentsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1780
+src/purchases_indents.scailo_pb.ts:1796
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: uint64 consignee_location_id = 20;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1778
+src/purchases_indents.scailo_pb.ts:1794
 
 ___
 
@@ -106,7 +106,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1729
+src/purchases_indents.scailo_pb.ts:1745
 
 ___
 
@@ -122,7 +122,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1757
+src/purchases_indents.scailo_pb.ts:1773
 
 ___
 
@@ -138,7 +138,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1722
+src/purchases_indents.scailo_pb.ts:1738
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1736
+src/purchases_indents.scailo_pb.ts:1752
 
 ___
 
@@ -170,7 +170,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1771
+src/purchases_indents.scailo_pb.ts:1787
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.PURCHASE_INDENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1750
+src/purchases_indents.scailo_pb.ts:1766
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1743
+src/purchases_indents.scailo_pb.ts:1759
 
 ___
 
@@ -218,7 +218,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1764
+src/purchases_indents.scailo_pb.ts:1780
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1787
+src/purchases_indents.scailo_pb.ts:1803
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1785
+src/purchases_indents.scailo_pb.ts:1801
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1786
+src/purchases_indents.scailo_pb.ts:1802
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1811
+src/purchases_indents.scailo_pb.ts:1827
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1799
+src/purchases_indents.scailo_pb.ts:1815
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1803
+src/purchases_indents.scailo_pb.ts:1819
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/purchases_indents.scailo_pb.ts:1807
+src/purchases_indents.scailo_pb.ts:1823

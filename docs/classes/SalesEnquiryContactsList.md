@@ -66,7 +66,7 @@ Message\&lt;SalesEnquiryContactsList\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2472
+src/sales_enquiries.scailo_pb.ts:2488
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesEnquiryContact list = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2470
+src/sales_enquiries.scailo_pb.ts:2486
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2479
+src/sales_enquiries.scailo_pb.ts:2495
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2477
+src/sales_enquiries.scailo_pb.ts:2493
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2478
+src/sales_enquiries.scailo_pb.ts:2494
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2495
+src/sales_enquiries.scailo_pb.ts:2511
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2483
+src/sales_enquiries.scailo_pb.ts:2499
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2487
+src/sales_enquiries.scailo_pb.ts:2503
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:2491
+src/sales_enquiries.scailo_pb.ts:2507

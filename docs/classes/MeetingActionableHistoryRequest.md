@@ -67,7 +67,7 @@ Message\&lt;MeetingActionableHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1688
+src/meetings.scailo_pb.ts:1704
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 meeting_id = 10;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1679
+src/meetings.scailo_pb.ts:1695
 
 ___
 
@@ -99,7 +99,7 @@ from field: string title = 11;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1686
+src/meetings.scailo_pb.ts:1702
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1695
+src/meetings.scailo_pb.ts:1711
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1693
+src/meetings.scailo_pb.ts:1709
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1694
+src/meetings.scailo_pb.ts:1710
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1712
+src/meetings.scailo_pb.ts:1728
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1700
+src/meetings.scailo_pb.ts:1716
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1704
+src/meetings.scailo_pb.ts:1720
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1708
+src/meetings.scailo_pb.ts:1724

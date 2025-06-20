@@ -78,7 +78,7 @@ Message\&lt;VendorItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1829
+src/vendors.scailo_pb.ts:1845
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1750
+src/vendors.scailo_pb.ts:1766
 
 ___
 
@@ -110,7 +110,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1778
+src/vendors.scailo_pb.ts:1794
 
 ___
 
@@ -126,7 +126,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1799
+src/vendors.scailo_pb.ts:1815
 
 ___
 
@@ -142,7 +142,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1743
+src/vendors.scailo_pb.ts:1759
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1757
+src/vendors.scailo_pb.ts:1773
 
 ___
 
@@ -174,7 +174,7 @@ from field: string search_key = 20;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1827
+src/vendors.scailo_pb.ts:1843
 
 ___
 
@@ -190,7 +190,7 @@ from field: Scailo.VENDOR_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1771
+src/vendors.scailo_pb.ts:1787
 
 ___
 
@@ -206,7 +206,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1764
+src/vendors.scailo_pb.ts:1780
 
 ___
 
@@ -222,7 +222,7 @@ from field: Scailo.VENDOR_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1785
+src/vendors.scailo_pb.ts:1801
 
 ___
 
@@ -238,7 +238,7 @@ from field: uint64 tax_group_id = 14;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1820
+src/vendors.scailo_pb.ts:1836
 
 ___
 
@@ -254,7 +254,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1813
+src/vendors.scailo_pb.ts:1829
 
 ___
 
@@ -270,7 +270,7 @@ from field: string vendor_family_code = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1806
+src/vendors.scailo_pb.ts:1822
 
 ___
 
@@ -286,7 +286,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1792
+src/vendors.scailo_pb.ts:1808
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1836
+src/vendors.scailo_pb.ts:1852
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1834
+src/vendors.scailo_pb.ts:1850
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1835
+src/vendors.scailo_pb.ts:1851
 
 ## Methods
 
@@ -604,7 +604,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1864
+src/vendors.scailo_pb.ts:1880
 
 ___
 
@@ -625,7 +625,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1852
+src/vendors.scailo_pb.ts:1868
 
 ___
 
@@ -646,7 +646,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1856
+src/vendors.scailo_pb.ts:1872
 
 ___
 
@@ -667,4 +667,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1860
+src/vendors.scailo_pb.ts:1876

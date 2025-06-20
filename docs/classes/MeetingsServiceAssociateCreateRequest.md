@@ -69,7 +69,7 @@ Message\&lt;MeetingsServiceAssociateCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2114
+src/meetings.scailo_pb.ts:2130
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2105
+src/meetings.scailo_pb.ts:2121
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 meeting_id = 10;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2098
+src/meetings.scailo_pb.ts:2114
 
 ___
 
@@ -117,7 +117,7 @@ from field: Scailo.MEETING_RSVP rsvp = 12;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2112
+src/meetings.scailo_pb.ts:2128
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2091
+src/meetings.scailo_pb.ts:2107
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2121
+src/meetings.scailo_pb.ts:2137
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2119
+src/meetings.scailo_pb.ts:2135
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2120
+src/meetings.scailo_pb.ts:2136
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2140
+src/meetings.scailo_pb.ts:2156
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2128
+src/meetings.scailo_pb.ts:2144
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2132
+src/meetings.scailo_pb.ts:2148
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2136
+src/meetings.scailo_pb.ts:2152

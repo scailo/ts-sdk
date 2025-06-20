@@ -33,6 +33,7 @@ from message Scailo.SkillsGroupsServiceFilterReq
 - [creationTimestampEnd](SkillsGroupsServiceFilterReq.md#creationtimestampend)
 - [creationTimestampStart](SkillsGroupsServiceFilterReq.md#creationtimestampstart)
 - [entityUuid](SkillsGroupsServiceFilterReq.md#entityuuid)
+- [formData](SkillsGroupsServiceFilterReq.md#formdata)
 - [isActive](SkillsGroupsServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](SkillsGroupsServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](SkillsGroupsServiceFilterReq.md#modificationtimestampstart)
@@ -85,7 +86,7 @@ Message\&lt;SkillsGroupsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1234
+src/skills_groups.scailo_pb.ts:1241
 
 ## Properties
 
@@ -265,6 +266,22 @@ src/skills_groups.scailo_pb.ts:1162
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/skills_groups.scailo_pb.ts:1239
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -415,7 +432,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1241
+src/skills_groups.scailo_pb.ts:1248
 
 ___
 
@@ -425,7 +442,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1239
+src/skills_groups.scailo_pb.ts:1246
 
 ___
 
@@ -435,7 +452,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1240
+src/skills_groups.scailo_pb.ts:1247
 
 ## Methods
 
@@ -723,7 +740,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1276
+src/skills_groups.scailo_pb.ts:1284
 
 ___
 
@@ -744,7 +761,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1264
+src/skills_groups.scailo_pb.ts:1272
 
 ___
 
@@ -765,7 +782,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1268
+src/skills_groups.scailo_pb.ts:1276
 
 ___
 
@@ -786,4 +803,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1272
+src/skills_groups.scailo_pb.ts:1280

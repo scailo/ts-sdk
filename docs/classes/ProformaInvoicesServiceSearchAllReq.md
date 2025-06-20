@@ -78,7 +78,7 @@ Message\&lt;ProformaInvoicesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2321
+src/proforma_invoices.scailo_pb.ts:2337
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.PROFORMA_INVOICE_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2304
+src/proforma_invoices.scailo_pb.ts:2320
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2319
+src/proforma_invoices.scailo_pb.ts:2335
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2312
+src/proforma_invoices.scailo_pb.ts:2328
 
 ___
 
@@ -143,7 +143,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2241
+src/proforma_invoices.scailo_pb.ts:2257
 
 ___
 
@@ -159,7 +159,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2269
+src/proforma_invoices.scailo_pb.ts:2285
 
 ___
 
@@ -175,7 +175,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2234
+src/proforma_invoices.scailo_pb.ts:2250
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2248
+src/proforma_invoices.scailo_pb.ts:2264
 
 ___
 
@@ -207,7 +207,7 @@ from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2290
+src/proforma_invoices.scailo_pb.ts:2306
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2297
+src/proforma_invoices.scailo_pb.ts:2313
 
 ___
 
@@ -239,7 +239,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2283
+src/proforma_invoices.scailo_pb.ts:2299
 
 ___
 
@@ -255,7 +255,7 @@ from field: Scailo.PROFORMA_INVOICE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2262
+src/proforma_invoices.scailo_pb.ts:2278
 
 ___
 
@@ -271,7 +271,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2255
+src/proforma_invoices.scailo_pb.ts:2271
 
 ___
 
@@ -287,7 +287,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2276
+src/proforma_invoices.scailo_pb.ts:2292
 
 ___
 
@@ -297,7 +297,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2328
+src/proforma_invoices.scailo_pb.ts:2344
 
 ___
 
@@ -307,7 +307,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2326
+src/proforma_invoices.scailo_pb.ts:2342
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2327
+src/proforma_invoices.scailo_pb.ts:2343
 
 ## Methods
 
@@ -605,7 +605,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2356
+src/proforma_invoices.scailo_pb.ts:2372
 
 ___
 
@@ -626,7 +626,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2344
+src/proforma_invoices.scailo_pb.ts:2360
 
 ___
 
@@ -647,7 +647,7 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2348
+src/proforma_invoices.scailo_pb.ts:2364
 
 ___
 
@@ -668,4 +668,4 @@ ___
 
 #### Defined in
 
-src/proforma_invoices.scailo_pb.ts:2352
+src/proforma_invoices.scailo_pb.ts:2368

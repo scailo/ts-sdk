@@ -74,7 +74,7 @@ Message\&lt;ProjectsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1182
+src/projects.scailo_pb.ts:1198
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 client_id = 21;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1180
+src/projects.scailo_pb.ts:1196
 
 ___
 
@@ -106,7 +106,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1131
+src/projects.scailo_pb.ts:1147
 
 ___
 
@@ -122,7 +122,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1159
+src/projects.scailo_pb.ts:1175
 
 ___
 
@@ -138,7 +138,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1124
+src/projects.scailo_pb.ts:1140
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1138
+src/projects.scailo_pb.ts:1154
 
 ___
 
@@ -170,7 +170,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1173
+src/projects.scailo_pb.ts:1189
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.PROJECT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1152
+src/projects.scailo_pb.ts:1168
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1145
+src/projects.scailo_pb.ts:1161
 
 ___
 
@@ -218,7 +218,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1166
+src/projects.scailo_pb.ts:1182
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1189
+src/projects.scailo_pb.ts:1205
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1187
+src/projects.scailo_pb.ts:1203
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1188
+src/projects.scailo_pb.ts:1204
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1213
+src/projects.scailo_pb.ts:1229
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1201
+src/projects.scailo_pb.ts:1217
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1205
+src/projects.scailo_pb.ts:1221
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1209
+src/projects.scailo_pb.ts:1225

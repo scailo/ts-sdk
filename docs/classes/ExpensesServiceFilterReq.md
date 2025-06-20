@@ -34,6 +34,7 @@ from message Scailo.ExpensesServiceFilterReq
 - [currencyId](ExpensesServiceFilterReq.md#currencyid)
 - [entityUuid](ExpensesServiceFilterReq.md#entityuuid)
 - [finalRefNumber](ExpensesServiceFilterReq.md#finalrefnumber)
+- [formData](ExpensesServiceFilterReq.md#formdata)
 - [isActive](ExpensesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](ExpensesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](ExpensesServiceFilterReq.md#modificationtimestampstart)
@@ -87,7 +88,7 @@ Message\&lt;ExpensesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1663
+src/expenses.scailo_pb.ts:1670
 
 ## Properties
 
@@ -283,6 +284,22 @@ src/expenses.scailo_pb.ts:1640
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/expenses.scailo_pb.ts:1668
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -449,7 +466,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1670
+src/expenses.scailo_pb.ts:1677
 
 ___
 
@@ -459,7 +476,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1668
+src/expenses.scailo_pb.ts:1675
 
 ___
 
@@ -469,7 +486,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1669
+src/expenses.scailo_pb.ts:1676
 
 ## Methods
 
@@ -757,7 +774,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1707
+src/expenses.scailo_pb.ts:1715
 
 ___
 
@@ -778,7 +795,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1695
+src/expenses.scailo_pb.ts:1703
 
 ___
 
@@ -799,7 +816,7 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1699
+src/expenses.scailo_pb.ts:1707
 
 ___
 
@@ -820,4 +837,4 @@ ___
 
 #### Defined in
 
-src/expenses.scailo_pb.ts:1703
+src/expenses.scailo_pb.ts:1711

@@ -34,6 +34,7 @@ from message Scailo.StockReturnsServiceFilterReq
 - [entityUuid](StockReturnsServiceFilterReq.md#entityuuid)
 - [familyId](StockReturnsServiceFilterReq.md#familyid)
 - [finalRefNumber](StockReturnsServiceFilterReq.md#finalrefnumber)
+- [formData](StockReturnsServiceFilterReq.md#formdata)
 - [isActive](StockReturnsServiceFilterReq.md#isactive)
 - [locationId](StockReturnsServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](StockReturnsServiceFilterReq.md#modificationtimestampend)
@@ -88,7 +89,7 @@ Message\&lt;StockReturnsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1385
+src/stock_returns.scailo_pb.ts:1392
 
 ## Properties
 
@@ -284,6 +285,22 @@ src/stock_returns.scailo_pb.ts:1355
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/stock_returns.scailo_pb.ts:1390
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -466,7 +483,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1392
+src/stock_returns.scailo_pb.ts:1399
 
 ___
 
@@ -476,7 +493,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1390
+src/stock_returns.scailo_pb.ts:1397
 
 ___
 
@@ -486,7 +503,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1391
+src/stock_returns.scailo_pb.ts:1398
 
 ## Methods
 
@@ -774,7 +791,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1430
+src/stock_returns.scailo_pb.ts:1438
 
 ___
 
@@ -795,7 +812,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1418
+src/stock_returns.scailo_pb.ts:1426
 
 ___
 
@@ -816,7 +833,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1422
+src/stock_returns.scailo_pb.ts:1430
 
 ___
 
@@ -837,4 +854,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1426
+src/stock_returns.scailo_pb.ts:1434

@@ -35,6 +35,7 @@ from message Scailo.PurchasesReturnsServiceFilterReq
 - [entityUuid](PurchasesReturnsServiceFilterReq.md#entityuuid)
 - [familyId](PurchasesReturnsServiceFilterReq.md#familyid)
 - [finalRefNumber](PurchasesReturnsServiceFilterReq.md#finalrefnumber)
+- [formData](PurchasesReturnsServiceFilterReq.md#formdata)
 - [isActive](PurchasesReturnsServiceFilterReq.md#isactive)
 - [locationId](PurchasesReturnsServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](PurchasesReturnsServiceFilterReq.md#modificationtimestampend)
@@ -91,7 +92,7 @@ Message\&lt;PurchasesReturnsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1759
+src/purchases_returns.scailo_pb.ts:1766
 
 ## Properties
 
@@ -300,6 +301,22 @@ from field: string final_ref_number = 21;
 #### Defined in
 
 src/purchases_returns.scailo_pb.ts:1708
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/purchases_returns.scailo_pb.ts:1764
 
 ___
 
@@ -517,7 +534,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1766
+src/purchases_returns.scailo_pb.ts:1773
 
 ___
 
@@ -527,7 +544,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1764
+src/purchases_returns.scailo_pb.ts:1771
 
 ___
 
@@ -537,7 +554,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1765
+src/purchases_returns.scailo_pb.ts:1772
 
 ## Methods
 
@@ -825,7 +842,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1807
+src/purchases_returns.scailo_pb.ts:1815
 
 ___
 
@@ -846,7 +863,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1795
+src/purchases_returns.scailo_pb.ts:1803
 
 ___
 
@@ -867,7 +884,7 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1799
+src/purchases_returns.scailo_pb.ts:1807
 
 ___
 
@@ -888,4 +905,4 @@ ___
 
 #### Defined in
 
-src/purchases_returns.scailo_pb.ts:1803
+src/purchases_returns.scailo_pb.ts:1811

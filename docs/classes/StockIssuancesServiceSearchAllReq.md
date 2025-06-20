@@ -75,7 +75,7 @@ Message\&lt;StockIssuancesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1740
+src/stock_issuances.scailo_pb.ts:1756
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1682
+src/stock_issuances.scailo_pb.ts:1698
 
 ___
 
@@ -107,7 +107,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1710
+src/stock_issuances.scailo_pb.ts:1726
 
 ___
 
@@ -123,7 +123,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1675
+src/stock_issuances.scailo_pb.ts:1691
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1689
+src/stock_issuances.scailo_pb.ts:1705
 
 ___
 
@@ -155,7 +155,7 @@ from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1731
+src/stock_issuances.scailo_pb.ts:1747
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1738
+src/stock_issuances.scailo_pb.ts:1754
 
 ___
 
@@ -187,7 +187,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1724
+src/stock_issuances.scailo_pb.ts:1740
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.STOCK_ISSUANCE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1703
+src/stock_issuances.scailo_pb.ts:1719
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1696
+src/stock_issuances.scailo_pb.ts:1712
 
 ___
 
@@ -235,7 +235,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1717
+src/stock_issuances.scailo_pb.ts:1733
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1747
+src/stock_issuances.scailo_pb.ts:1763
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1745
+src/stock_issuances.scailo_pb.ts:1761
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1746
+src/stock_issuances.scailo_pb.ts:1762
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1772
+src/stock_issuances.scailo_pb.ts:1788
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1760
+src/stock_issuances.scailo_pb.ts:1776
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1764
+src/stock_issuances.scailo_pb.ts:1780
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/stock_issuances.scailo_pb.ts:1768
+src/stock_issuances.scailo_pb.ts:1784

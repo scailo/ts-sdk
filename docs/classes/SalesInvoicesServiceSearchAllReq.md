@@ -77,7 +77,7 @@ Message\&lt;SalesInvoicesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2263
+src/sales_invoices.scailo_pb.ts:2279
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 buyer_client_id = 51;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2261
+src/sales_invoices.scailo_pb.ts:2277
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 consignee_client_id = 50;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2254
+src/sales_invoices.scailo_pb.ts:2270
 
 ___
 
@@ -126,7 +126,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2190
+src/sales_invoices.scailo_pb.ts:2206
 
 ___
 
@@ -142,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2218
+src/sales_invoices.scailo_pb.ts:2234
 
 ___
 
@@ -158,7 +158,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2183
+src/sales_invoices.scailo_pb.ts:2199
 
 ___
 
@@ -174,7 +174,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2197
+src/sales_invoices.scailo_pb.ts:2213
 
 ___
 
@@ -190,7 +190,7 @@ from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2239
+src/sales_invoices.scailo_pb.ts:2255
 
 ___
 
@@ -206,7 +206,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2246
+src/sales_invoices.scailo_pb.ts:2262
 
 ___
 
@@ -222,7 +222,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2232
+src/sales_invoices.scailo_pb.ts:2248
 
 ___
 
@@ -238,7 +238,7 @@ from field: Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2211
+src/sales_invoices.scailo_pb.ts:2227
 
 ___
 
@@ -254,7 +254,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2204
+src/sales_invoices.scailo_pb.ts:2220
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2225
+src/sales_invoices.scailo_pb.ts:2241
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2270
+src/sales_invoices.scailo_pb.ts:2286
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2268
+src/sales_invoices.scailo_pb.ts:2284
 
 ___
 
@@ -300,7 +300,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2269
+src/sales_invoices.scailo_pb.ts:2285
 
 ## Methods
 
@@ -588,7 +588,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2297
+src/sales_invoices.scailo_pb.ts:2313
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2285
+src/sales_invoices.scailo_pb.ts:2301
 
 ___
 
@@ -630,7 +630,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2289
+src/sales_invoices.scailo_pb.ts:2305
 
 ___
 
@@ -651,4 +651,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:2293
+src/sales_invoices.scailo_pb.ts:2309

@@ -68,7 +68,7 @@ Message\&lt;CreditNoteReturnStatistics\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2684
+src/credit_notes.scailo_pb.ts:2700
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 billed_quantity = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2675
+src/credit_notes.scailo_pb.ts:2691
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2668
+src/credit_notes.scailo_pb.ts:2684
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 returned_quantity = 3;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2682
+src/credit_notes.scailo_pb.ts:2698
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2691
+src/credit_notes.scailo_pb.ts:2707
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2689
+src/credit_notes.scailo_pb.ts:2705
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2690
+src/credit_notes.scailo_pb.ts:2706
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2709
+src/credit_notes.scailo_pb.ts:2725
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2697
+src/credit_notes.scailo_pb.ts:2713
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2701
+src/credit_notes.scailo_pb.ts:2717
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2705
+src/credit_notes.scailo_pb.ts:2721

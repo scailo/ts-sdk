@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 
 /**
@@ -1922,6 +1922,13 @@ export class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiriesServic
    */
   deliveryDateEnd = "";
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<SalesEnquiriesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1956,6 +1963,7 @@ export class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiriesServic
     { no: 41, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 42, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 43, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceFilterReq {
@@ -2136,6 +2144,13 @@ export class SalesEnquiriesServiceCountReq extends Message<SalesEnquiriesService
    */
   deliveryDateEnd = "";
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<SalesEnquiriesServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2166,6 +2181,7 @@ export class SalesEnquiriesServiceCountReq extends Message<SalesEnquiriesService
     { no: 41, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 42, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 43, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceCountReq {

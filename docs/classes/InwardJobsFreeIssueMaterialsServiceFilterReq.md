@@ -36,6 +36,7 @@ from message Scailo.InwardJobsFreeIssueMaterialsServiceFilterReq
 - [entityUuid](InwardJobsFreeIssueMaterialsServiceFilterReq.md#entityuuid)
 - [familyId](InwardJobsFreeIssueMaterialsServiceFilterReq.md#familyid)
 - [finalRefNumber](InwardJobsFreeIssueMaterialsServiceFilterReq.md#finalrefnumber)
+- [formData](InwardJobsFreeIssueMaterialsServiceFilterReq.md#formdata)
 - [isActive](InwardJobsFreeIssueMaterialsServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](InwardJobsFreeIssueMaterialsServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](InwardJobsFreeIssueMaterialsServiceFilterReq.md#modificationtimestampstart)
@@ -90,7 +91,7 @@ Message\&lt;InwardJobsFreeIssueMaterialsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1752
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1759
 
 ## Properties
 
@@ -319,6 +320,22 @@ src/inward_jobs_free_issue_materials.scailo_pb.ts:1707
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1757
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -501,7 +518,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1759
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1766
 
 ___
 
@@ -511,7 +528,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1757
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1764
 
 ___
 
@@ -521,7 +538,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1758
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1765
 
 ## Methods
 
@@ -809,7 +826,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1799
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1807
 
 ___
 
@@ -830,7 +847,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1787
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1795
 
 ___
 
@@ -851,7 +868,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1791
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1799
 
 ___
 
@@ -872,4 +889,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:1795
+src/inward_jobs_free_issue_materials.scailo_pb.ts:1803

@@ -73,7 +73,7 @@ Message\&lt;SkillsGroupsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1506
+src/skills_groups.scailo_pb.ts:1522
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1462
+src/skills_groups.scailo_pb.ts:1478
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1490
+src/skills_groups.scailo_pb.ts:1506
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1455
+src/skills_groups.scailo_pb.ts:1471
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1469
+src/skills_groups.scailo_pb.ts:1485
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1504
+src/skills_groups.scailo_pb.ts:1520
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.SKILL_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1483
+src/skills_groups.scailo_pb.ts:1499
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1476
+src/skills_groups.scailo_pb.ts:1492
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1497
+src/skills_groups.scailo_pb.ts:1513
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1513
+src/skills_groups.scailo_pb.ts:1529
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1511
+src/skills_groups.scailo_pb.ts:1527
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1512
+src/skills_groups.scailo_pb.ts:1528
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1536
+src/skills_groups.scailo_pb.ts:1552
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1524
+src/skills_groups.scailo_pb.ts:1540
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1528
+src/skills_groups.scailo_pb.ts:1544
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/skills_groups.scailo_pb.ts:1532
+src/skills_groups.scailo_pb.ts:1548

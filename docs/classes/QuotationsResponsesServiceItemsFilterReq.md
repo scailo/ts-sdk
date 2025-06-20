@@ -86,7 +86,7 @@ Message\&lt;QuotationsResponsesServiceItemsFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2272
+src/quotations_responses.scailo_pb.ts:2288
 
 ## Properties
 
@@ -102,7 +102,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2214
+src/quotations_responses.scailo_pb.ts:2230
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2207
+src/quotations_responses.scailo_pb.ts:2223
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2200
+src/quotations_responses.scailo_pb.ts:2216
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2221
+src/quotations_responses.scailo_pb.ts:2237
 
 ___
 
@@ -166,7 +166,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2137
+src/quotations_responses.scailo_pb.ts:2153
 
 ___
 
@@ -182,7 +182,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2172
+src/quotations_responses.scailo_pb.ts:2188
 
 ___
 
@@ -198,7 +198,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2165
+src/quotations_responses.scailo_pb.ts:2181
 
 ___
 
@@ -214,7 +214,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2193
+src/quotations_responses.scailo_pb.ts:2209
 
 ___
 
@@ -230,7 +230,7 @@ from field: string hsn_sac_code = 23;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2249
+src/quotations_responses.scailo_pb.ts:2265
 
 ___
 
@@ -246,7 +246,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2130
+src/quotations_responses.scailo_pb.ts:2146
 
 ___
 
@@ -262,7 +262,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2186
+src/quotations_responses.scailo_pb.ts:2202
 
 ___
 
@@ -278,7 +278,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2179
+src/quotations_responses.scailo_pb.ts:2195
 
 ___
 
@@ -294,7 +294,7 @@ from field: string name = 22;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2242
+src/quotations_responses.scailo_pb.ts:2258
 
 ___
 
@@ -310,7 +310,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2144
+src/quotations_responses.scailo_pb.ts:2160
 
 ___
 
@@ -326,7 +326,7 @@ from field: uint64 quotation_request_item_id = 21;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2235
+src/quotations_responses.scailo_pb.ts:2251
 
 ___
 
@@ -342,7 +342,7 @@ from field: uint64 quotation_response_id = 20;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2228
+src/quotations_responses.scailo_pb.ts:2244
 
 ___
 
@@ -358,7 +358,7 @@ from field: Scailo.QUOTATION_RESPONSE_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2158
+src/quotations_responses.scailo_pb.ts:2174
 
 ___
 
@@ -374,7 +374,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2151
+src/quotations_responses.scailo_pb.ts:2167
 
 ___
 
@@ -390,7 +390,7 @@ from field: uint64 tax_group_id = 29;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2270
+src/quotations_responses.scailo_pb.ts:2286
 
 ___
 
@@ -406,7 +406,7 @@ from field: uint64 uom_id = 24;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2256
+src/quotations_responses.scailo_pb.ts:2272
 
 ___
 
@@ -422,7 +422,7 @@ from field: uint64 vendor_uom_id = 26;
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2263
+src/quotations_responses.scailo_pb.ts:2279
 
 ___
 
@@ -432,7 +432,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2279
+src/quotations_responses.scailo_pb.ts:2295
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2277
+src/quotations_responses.scailo_pb.ts:2293
 
 ___
 
@@ -452,7 +452,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2278
+src/quotations_responses.scailo_pb.ts:2294
 
 ## Methods
 
@@ -740,7 +740,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2315
+src/quotations_responses.scailo_pb.ts:2331
 
 ___
 
@@ -761,7 +761,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2303
+src/quotations_responses.scailo_pb.ts:2319
 
 ___
 
@@ -782,7 +782,7 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2307
+src/quotations_responses.scailo_pb.ts:2323
 
 ___
 
@@ -803,4 +803,4 @@ ___
 
 #### Defined in
 
-src/quotations_responses.scailo_pb.ts:2311
+src/quotations_responses.scailo_pb.ts:2327

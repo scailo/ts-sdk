@@ -74,7 +74,7 @@ Message\&lt;AbsencesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1294
+src/absences.scailo_pb.ts:1310
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1243
+src/absences.scailo_pb.ts:1259
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1271
+src/absences.scailo_pb.ts:1287
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1236
+src/absences.scailo_pb.ts:1252
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1250
+src/absences.scailo_pb.ts:1266
 
 ___
 
@@ -154,7 +154,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1285
+src/absences.scailo_pb.ts:1301
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1264
+src/absences.scailo_pb.ts:1280
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1257
+src/absences.scailo_pb.ts:1273
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1278
+src/absences.scailo_pb.ts:1294
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1292
+src/absences.scailo_pb.ts:1308
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1301
+src/absences.scailo_pb.ts:1317
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1299
+src/absences.scailo_pb.ts:1315
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1300
+src/absences.scailo_pb.ts:1316
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1325
+src/absences.scailo_pb.ts:1341
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1313
+src/absences.scailo_pb.ts:1329
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1317
+src/absences.scailo_pb.ts:1333
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/absences.scailo_pb.ts:1321
+src/absences.scailo_pb.ts:1337

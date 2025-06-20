@@ -35,6 +35,7 @@ from message Scailo.SalariesServiceCountReq
 - [employeeId](SalariesServiceCountReq.md#employeeid)
 - [entityUuid](SalariesServiceCountReq.md#entityuuid)
 - [finalRefNumber](SalariesServiceCountReq.md#finalrefnumber)
+- [formData](SalariesServiceCountReq.md#formdata)
 - [isActive](SalariesServiceCountReq.md#isactive)
 - [modificationTimestampEnd](SalariesServiceCountReq.md#modificationtimestampend)
 - [modificationTimestampStart](SalariesServiceCountReq.md#modificationtimestampstart)
@@ -85,7 +86,7 @@ Message\&lt;SalariesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2565
+src/salaries.scailo_pb.ts:2580
 
 ## Properties
 
@@ -101,7 +102,7 @@ from field: int64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2493
+src/salaries.scailo_pb.ts:2501
 
 ___
 
@@ -117,7 +118,7 @@ from field: int64 approved_on_end = 12;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2486
+src/salaries.scailo_pb.ts:2494
 
 ___
 
@@ -133,7 +134,7 @@ from field: int64 approved_on_start = 11;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2479
+src/salaries.scailo_pb.ts:2487
 
 ___
 
@@ -149,7 +150,7 @@ from field: int64 approver_role_id = 14;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2500
+src/salaries.scailo_pb.ts:2508
 
 ___
 
@@ -165,7 +166,7 @@ from field: int64 bank_account_id = 23;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2542
+src/salaries.scailo_pb.ts:2550
 
 ___
 
@@ -181,7 +182,7 @@ from field: int64 completed_on_end = 16;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2514
+src/salaries.scailo_pb.ts:2522
 
 ___
 
@@ -197,7 +198,7 @@ from field: int64 completed_on_start = 15;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2507
+src/salaries.scailo_pb.ts:2515
 
 ___
 
@@ -213,7 +214,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2444
+src/salaries.scailo_pb.ts:2452
 
 ___
 
@@ -229,7 +230,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2437
+src/salaries.scailo_pb.ts:2445
 
 ___
 
@@ -245,7 +246,7 @@ from field: int64 currency_id = 24;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2549
+src/salaries.scailo_pb.ts:2557
 
 ___
 
@@ -261,7 +262,7 @@ from field: int64 employee_id = 22;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2535
+src/salaries.scailo_pb.ts:2543
 
 ___
 
@@ -277,7 +278,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2465
+src/salaries.scailo_pb.ts:2473
 
 ___
 
@@ -293,7 +294,23 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2528
+src/salaries.scailo_pb.ts:2536
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/salaries.scailo_pb.ts:2578
 
 ___
 
@@ -309,7 +326,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2430
+src/salaries.scailo_pb.ts:2438
 
 ___
 
@@ -325,7 +342,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2458
+src/salaries.scailo_pb.ts:2466
 
 ___
 
@@ -341,7 +358,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2451
+src/salaries.scailo_pb.ts:2459
 
 ___
 
@@ -357,7 +374,7 @@ from field: int64 payroll_group_id = 25;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2556
+src/salaries.scailo_pb.ts:2564
 
 ___
 
@@ -373,7 +390,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2521
+src/salaries.scailo_pb.ts:2529
 
 ___
 
@@ -389,7 +406,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2472
+src/salaries.scailo_pb.ts:2480
 
 ___
 
@@ -405,7 +422,7 @@ from field: int64 tax_group_id = 26;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2563
+src/salaries.scailo_pb.ts:2571
 
 ___
 
@@ -415,7 +432,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2572
+src/salaries.scailo_pb.ts:2587
 
 ___
 
@@ -425,7 +442,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2570
+src/salaries.scailo_pb.ts:2585
 
 ___
 
@@ -435,7 +452,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2571
+src/salaries.scailo_pb.ts:2586
 
 ## Methods
 
@@ -723,7 +740,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2607
+src/salaries.scailo_pb.ts:2623
 
 ___
 
@@ -744,7 +761,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2595
+src/salaries.scailo_pb.ts:2611
 
 ___
 
@@ -765,7 +782,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2599
+src/salaries.scailo_pb.ts:2615
 
 ___
 
@@ -786,4 +803,4 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2603
+src/salaries.scailo_pb.ts:2619

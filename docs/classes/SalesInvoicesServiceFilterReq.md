@@ -38,6 +38,7 @@ from message Scailo.SalesInvoicesServiceFilterReq
 - [entityUuid](SalesInvoicesServiceFilterReq.md#entityuuid)
 - [familyId](SalesInvoicesServiceFilterReq.md#familyid)
 - [finalRefNumber](SalesInvoicesServiceFilterReq.md#finalrefnumber)
+- [formData](SalesInvoicesServiceFilterReq.md#formdata)
 - [isActive](SalesInvoicesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](SalesInvoicesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](SalesInvoicesServiceFilterReq.md#modificationtimestampstart)
@@ -94,7 +95,7 @@ Message\&lt;SalesInvoicesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1880
+src/sales_invoices.scailo_pb.ts:1887
 
 ## Properties
 
@@ -355,6 +356,22 @@ src/sales_invoices.scailo_pb.ts:1807
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/sales_invoices.scailo_pb.ts:1885
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -569,7 +586,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1887
+src/sales_invoices.scailo_pb.ts:1894
 
 ___
 
@@ -579,7 +596,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1885
+src/sales_invoices.scailo_pb.ts:1892
 
 ___
 
@@ -589,7 +606,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1886
+src/sales_invoices.scailo_pb.ts:1893
 
 ## Methods
 
@@ -877,7 +894,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1931
+src/sales_invoices.scailo_pb.ts:1939
 
 ___
 
@@ -898,7 +915,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1919
+src/sales_invoices.scailo_pb.ts:1927
 
 ___
 
@@ -919,7 +936,7 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1923
+src/sales_invoices.scailo_pb.ts:1931
 
 ___
 
@@ -940,4 +957,4 @@ ___
 
 #### Defined in
 
-src/sales_invoices.scailo_pb.ts:1927
+src/sales_invoices.scailo_pb.ts:1935

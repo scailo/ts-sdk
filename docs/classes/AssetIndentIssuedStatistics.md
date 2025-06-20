@@ -69,7 +69,7 @@ Message\&lt;AssetIndentIssuedStatistics\&gt;.constructor
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1873
+src/asset_indents.scailo_pb.ts:1889
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 approved_issued_quantity = 4;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1871
+src/asset_indents.scailo_pb.ts:1887
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1850
+src/asset_indents.scailo_pb.ts:1866
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 indented_quantity = 2;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1857
+src/asset_indents.scailo_pb.ts:1873
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 unapproved_issued_quantity = 3;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1864
+src/asset_indents.scailo_pb.ts:1880
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1880
+src/asset_indents.scailo_pb.ts:1896
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1878
+src/asset_indents.scailo_pb.ts:1894
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1879
+src/asset_indents.scailo_pb.ts:1895
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1899
+src/asset_indents.scailo_pb.ts:1915
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1887
+src/asset_indents.scailo_pb.ts:1903
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1891
+src/asset_indents.scailo_pb.ts:1907
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:1895
+src/asset_indents.scailo_pb.ts:1911

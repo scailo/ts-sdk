@@ -69,7 +69,7 @@ Message\&lt;MeetingsServicePaginatedActionablesResponse\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1858
+src/meetings.scailo_pb.ts:1874
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1835
+src/meetings.scailo_pb.ts:1851
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1842
+src/meetings.scailo_pb.ts:1858
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.MeetingActionable payload = 4;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1856
+src/meetings.scailo_pb.ts:1872
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1849
+src/meetings.scailo_pb.ts:1865
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1865
+src/meetings.scailo_pb.ts:1881
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1863
+src/meetings.scailo_pb.ts:1879
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1864
+src/meetings.scailo_pb.ts:1880
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1884
+src/meetings.scailo_pb.ts:1900
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1872
+src/meetings.scailo_pb.ts:1888
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1876
+src/meetings.scailo_pb.ts:1892
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1880
+src/meetings.scailo_pb.ts:1896

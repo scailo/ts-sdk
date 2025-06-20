@@ -73,7 +73,7 @@ Message\&lt;ProjectContact\&gt;.constructor
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1339
+src/projects.scailo_pb.ts:1355
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1302
+src/projects.scailo_pb.ts:1318
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 employee_id = 11;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1330
+src/projects.scailo_pb.ts:1346
 
 ___
 
@@ -121,7 +121,7 @@ from field: string employee_uuid = 211;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1337
+src/projects.scailo_pb.ts:1353
 
 ___
 
@@ -137,7 +137,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1288
+src/projects.scailo_pb.ts:1304
 
 ___
 
@@ -153,7 +153,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1295
+src/projects.scailo_pb.ts:1311
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1309
+src/projects.scailo_pb.ts:1325
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 project_id = 10;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1323
+src/projects.scailo_pb.ts:1339
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1316
+src/projects.scailo_pb.ts:1332
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1346
+src/projects.scailo_pb.ts:1362
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1344
+src/projects.scailo_pb.ts:1360
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1345
+src/projects.scailo_pb.ts:1361
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1369
+src/projects.scailo_pb.ts:1385
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1357
+src/projects.scailo_pb.ts:1373
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1361
+src/projects.scailo_pb.ts:1377
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1365
+src/projects.scailo_pb.ts:1381

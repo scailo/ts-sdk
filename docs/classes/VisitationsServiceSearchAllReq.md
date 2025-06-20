@@ -74,7 +74,7 @@ Message\&lt;VisitationsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1372
+src/visitations.scailo_pb.ts:1388
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1321
+src/visitations.scailo_pb.ts:1337
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1349
+src/visitations.scailo_pb.ts:1365
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1314
+src/visitations.scailo_pb.ts:1330
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1328
+src/visitations.scailo_pb.ts:1344
 
 ___
 
@@ -154,7 +154,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1363
+src/visitations.scailo_pb.ts:1379
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.VISITATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1342
+src/visitations.scailo_pb.ts:1358
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1335
+src/visitations.scailo_pb.ts:1351
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1356
+src/visitations.scailo_pb.ts:1372
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1370
+src/visitations.scailo_pb.ts:1386
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1379
+src/visitations.scailo_pb.ts:1395
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1377
+src/visitations.scailo_pb.ts:1393
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1378
+src/visitations.scailo_pb.ts:1394
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1403
+src/visitations.scailo_pb.ts:1419
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1391
+src/visitations.scailo_pb.ts:1407
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1395
+src/visitations.scailo_pb.ts:1411
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1399
+src/visitations.scailo_pb.ts:1415

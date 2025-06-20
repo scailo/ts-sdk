@@ -36,6 +36,7 @@ from message Scailo.SalesReturnsServiceCountReq
 - [entityUuid](SalesReturnsServiceCountReq.md#entityuuid)
 - [familyId](SalesReturnsServiceCountReq.md#familyid)
 - [finalRefNumber](SalesReturnsServiceCountReq.md#finalrefnumber)
+- [formData](SalesReturnsServiceCountReq.md#formdata)
 - [isActive](SalesReturnsServiceCountReq.md#isactive)
 - [locationId](SalesReturnsServiceCountReq.md#locationid)
 - [modificationTimestampEnd](SalesReturnsServiceCountReq.md#modificationtimestampend)
@@ -88,7 +89,7 @@ Message\&lt;SalesReturnsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1990
+src/sales_returns.scailo_pb.ts:2005
 
 ## Properties
 
@@ -104,7 +105,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1896
+src/sales_returns.scailo_pb.ts:1904
 
 ___
 
@@ -120,7 +121,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1889
+src/sales_returns.scailo_pb.ts:1897
 
 ___
 
@@ -136,7 +137,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1882
+src/sales_returns.scailo_pb.ts:1890
 
 ___
 
@@ -152,7 +153,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1903
+src/sales_returns.scailo_pb.ts:1911
 
 ___
 
@@ -168,7 +169,7 @@ from field: Scailo.SALES_RETURN_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1959
+src/sales_returns.scailo_pb.ts:1967
 
 ___
 
@@ -184,7 +185,7 @@ from field: uint64 buyer_client_id = 61;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1981
+src/sales_returns.scailo_pb.ts:1989
 
 ___
 
@@ -200,7 +201,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1917
+src/sales_returns.scailo_pb.ts:1925
 
 ___
 
@@ -216,7 +217,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1910
+src/sales_returns.scailo_pb.ts:1918
 
 ___
 
@@ -233,7 +234,7 @@ from field: uint64 consignee_client_id = 60;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1974
+src/sales_returns.scailo_pb.ts:1982
 
 ___
 
@@ -249,7 +250,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1847
+src/sales_returns.scailo_pb.ts:1855
 
 ___
 
@@ -265,7 +266,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1840
+src/sales_returns.scailo_pb.ts:1848
 
 ___
 
@@ -281,7 +282,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1868
+src/sales_returns.scailo_pb.ts:1876
 
 ___
 
@@ -297,7 +298,7 @@ from field: uint64 family_id = 50;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1966
+src/sales_returns.scailo_pb.ts:1974
 
 ___
 
@@ -313,7 +314,23 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1931
+src/sales_returns.scailo_pb.ts:1939
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/sales_returns.scailo_pb.ts:2003
 
 ___
 
@@ -329,7 +346,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1833
+src/sales_returns.scailo_pb.ts:1841
 
 ___
 
@@ -345,7 +362,7 @@ from field: uint64 location_id = 25;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1952
+src/sales_returns.scailo_pb.ts:1960
 
 ___
 
@@ -361,7 +378,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1861
+src/sales_returns.scailo_pb.ts:1869
 
 ___
 
@@ -377,7 +394,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1854
+src/sales_returns.scailo_pb.ts:1862
 
 ___
 
@@ -393,7 +410,7 @@ from field: uint64 project_id = 62;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1988
+src/sales_returns.scailo_pb.ts:1996
 
 ___
 
@@ -409,7 +426,7 @@ from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1938
+src/sales_returns.scailo_pb.ts:1946
 
 ___
 
@@ -425,7 +442,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1945
+src/sales_returns.scailo_pb.ts:1953
 
 ___
 
@@ -441,7 +458,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1924
+src/sales_returns.scailo_pb.ts:1932
 
 ___
 
@@ -457,7 +474,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1875
+src/sales_returns.scailo_pb.ts:1883
 
 ___
 
@@ -467,7 +484,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1997
+src/sales_returns.scailo_pb.ts:2012
 
 ___
 
@@ -477,7 +494,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1995
+src/sales_returns.scailo_pb.ts:2010
 
 ___
 
@@ -487,7 +504,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:1996
+src/sales_returns.scailo_pb.ts:2011
 
 ## Methods
 
@@ -775,7 +792,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2035
+src/sales_returns.scailo_pb.ts:2051
 
 ___
 
@@ -796,7 +813,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2023
+src/sales_returns.scailo_pb.ts:2039
 
 ___
 
@@ -817,7 +834,7 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2027
+src/sales_returns.scailo_pb.ts:2043
 
 ___
 
@@ -838,4 +855,4 @@ ___
 
 #### Defined in
 
-src/sales_returns.scailo_pb.ts:2031
+src/sales_returns.scailo_pb.ts:2047

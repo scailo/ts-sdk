@@ -69,7 +69,7 @@ Message\&lt;ReplaceableIndentIssuedStatistics\&gt;.constructor
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1995
+src/replaceable_indents.scailo_pb.ts:2011
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 approved_issued_quantity = 4;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1993
+src/replaceable_indents.scailo_pb.ts:2009
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1972
+src/replaceable_indents.scailo_pb.ts:1988
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 indented_quantity = 2;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1979
+src/replaceable_indents.scailo_pb.ts:1995
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 unapproved_issued_quantity = 3;
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:1986
+src/replaceable_indents.scailo_pb.ts:2002
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2002
+src/replaceable_indents.scailo_pb.ts:2018
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2000
+src/replaceable_indents.scailo_pb.ts:2016
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2001
+src/replaceable_indents.scailo_pb.ts:2017
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2021
+src/replaceable_indents.scailo_pb.ts:2037
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2009
+src/replaceable_indents.scailo_pb.ts:2025
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2013
+src/replaceable_indents.scailo_pb.ts:2029
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/replaceable_indents.scailo_pb.ts:2017
+src/replaceable_indents.scailo_pb.ts:2033

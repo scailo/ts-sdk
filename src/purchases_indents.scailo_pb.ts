@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 
 /**
@@ -1462,6 +1462,13 @@ export class PurchasesIndentsServiceFilterReq extends Message<PurchasesIndentsSe
    */
   familyId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<PurchasesIndentsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1494,6 +1501,7 @@ export class PurchasesIndentsServiceFilterReq extends Message<PurchasesIndentsSe
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "consignee_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesIndentsServiceFilterReq {
@@ -1660,6 +1668,13 @@ export class PurchasesIndentsServiceCountReq extends Message<PurchasesIndentsSer
    */
   familyId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<PurchasesIndentsServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1688,6 +1703,7 @@ export class PurchasesIndentsServiceCountReq extends Message<PurchasesIndentsSer
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "consignee_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesIndentsServiceCountReq {

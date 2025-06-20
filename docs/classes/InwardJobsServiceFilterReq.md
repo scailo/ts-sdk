@@ -38,6 +38,7 @@ from message Scailo.InwardJobsServiceFilterReq
 - [deliveryDateStart](InwardJobsServiceFilterReq.md#deliverydatestart)
 - [entityUuid](InwardJobsServiceFilterReq.md#entityuuid)
 - [finalRefNumber](InwardJobsServiceFilterReq.md#finalrefnumber)
+- [formData](InwardJobsServiceFilterReq.md#formdata)
 - [isActive](InwardJobsServiceFilterReq.md#isactive)
 - [locationId](InwardJobsServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](InwardJobsServiceFilterReq.md#modificationtimestampend)
@@ -92,7 +93,7 @@ Message\&lt;InwardJobsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1870
+src/inward_jobs.scailo_pb.ts:1877
 
 ## Properties
 
@@ -352,6 +353,22 @@ src/inward_jobs.scailo_pb.ts:1833
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/inward_jobs.scailo_pb.ts:1875
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -534,7 +551,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1877
+src/inward_jobs.scailo_pb.ts:1884
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1875
+src/inward_jobs.scailo_pb.ts:1882
 
 ___
 
@@ -554,7 +571,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1876
+src/inward_jobs.scailo_pb.ts:1883
 
 ## Methods
 
@@ -842,7 +859,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1919
+src/inward_jobs.scailo_pb.ts:1927
 
 ___
 
@@ -863,7 +880,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1907
+src/inward_jobs.scailo_pb.ts:1915
 
 ___
 
@@ -884,7 +901,7 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1911
+src/inward_jobs.scailo_pb.ts:1919
 
 ___
 
@@ -905,4 +922,4 @@ ___
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:1915
+src/inward_jobs.scailo_pb.ts:1923

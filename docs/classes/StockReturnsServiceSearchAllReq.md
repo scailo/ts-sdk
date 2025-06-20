@@ -75,7 +75,7 @@ Message\&lt;StockReturnsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1698
+src/stock_returns.scailo_pb.ts:1714
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1640
+src/stock_returns.scailo_pb.ts:1656
 
 ___
 
@@ -107,7 +107,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1668
+src/stock_returns.scailo_pb.ts:1684
 
 ___
 
@@ -123,7 +123,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1633
+src/stock_returns.scailo_pb.ts:1649
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1647
+src/stock_returns.scailo_pb.ts:1663
 
 ___
 
@@ -155,7 +155,7 @@ from field: Scailo.STOCK_RETURN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1689
+src/stock_returns.scailo_pb.ts:1705
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1696
+src/stock_returns.scailo_pb.ts:1712
 
 ___
 
@@ -187,7 +187,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1682
+src/stock_returns.scailo_pb.ts:1698
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.STOCK_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1661
+src/stock_returns.scailo_pb.ts:1677
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1654
+src/stock_returns.scailo_pb.ts:1670
 
 ___
 
@@ -235,7 +235,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1675
+src/stock_returns.scailo_pb.ts:1691
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1705
+src/stock_returns.scailo_pb.ts:1721
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1703
+src/stock_returns.scailo_pb.ts:1719
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1704
+src/stock_returns.scailo_pb.ts:1720
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1730
+src/stock_returns.scailo_pb.ts:1746
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1718
+src/stock_returns.scailo_pb.ts:1734
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1722
+src/stock_returns.scailo_pb.ts:1738
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:1726
+src/stock_returns.scailo_pb.ts:1742

@@ -66,7 +66,7 @@ Message\&lt;MeetingEmployeesList\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2051
+src/meetings.scailo_pb.ts:2067
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.MeetingEmployee list = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2049
+src/meetings.scailo_pb.ts:2065
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2058
+src/meetings.scailo_pb.ts:2074
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2056
+src/meetings.scailo_pb.ts:2072
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2057
+src/meetings.scailo_pb.ts:2073
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2074
+src/meetings.scailo_pb.ts:2090
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2062
+src/meetings.scailo_pb.ts:2078
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2066
+src/meetings.scailo_pb.ts:2082
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2070
+src/meetings.scailo_pb.ts:2086

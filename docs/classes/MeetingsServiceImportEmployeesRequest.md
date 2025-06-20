@@ -69,7 +69,7 @@ Message\&lt;MeetingsServiceImportEmployeesRequest\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2304
+src/meetings.scailo_pb.ts:2320
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: bool delete_existing = 4;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2302
+src/meetings.scailo_pb.ts:2318
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 meeting_id = 2;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2288
+src/meetings.scailo_pb.ts:2304
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 resource_id = 3;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2295
+src/meetings.scailo_pb.ts:2311
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2281
+src/meetings.scailo_pb.ts:2297
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2311
+src/meetings.scailo_pb.ts:2327
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2309
+src/meetings.scailo_pb.ts:2325
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2310
+src/meetings.scailo_pb.ts:2326
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2330
+src/meetings.scailo_pb.ts:2346
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2318
+src/meetings.scailo_pb.ts:2334
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2322
+src/meetings.scailo_pb.ts:2338
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2326
+src/meetings.scailo_pb.ts:2342

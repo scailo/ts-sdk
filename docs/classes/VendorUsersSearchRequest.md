@@ -74,7 +74,7 @@ Message\&lt;VendorUsersSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2327
+src/vendors.scailo_pb.ts:2343
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: uint64 associate_id = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2318
+src/vendors.scailo_pb.ts:2334
 
 ___
 
@@ -106,7 +106,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2276
+src/vendors.scailo_pb.ts:2292
 
 ___
 
@@ -122,7 +122,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2290
+src/vendors.scailo_pb.ts:2306
 
 ___
 
@@ -138,7 +138,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2269
+src/vendors.scailo_pb.ts:2285
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2283
+src/vendors.scailo_pb.ts:2299
 
 ___
 
@@ -170,7 +170,7 @@ from field: string search_key = 20;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2325
+src/vendors.scailo_pb.ts:2341
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.VENDOR_USER_STATUS status = 7;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2297
+src/vendors.scailo_pb.ts:2313
 
 ___
 
@@ -202,7 +202,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2311
+src/vendors.scailo_pb.ts:2327
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2304
+src/vendors.scailo_pb.ts:2320
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2334
+src/vendors.scailo_pb.ts:2350
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2332
+src/vendors.scailo_pb.ts:2348
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2333
+src/vendors.scailo_pb.ts:2349
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2358
+src/vendors.scailo_pb.ts:2374
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2346
+src/vendors.scailo_pb.ts:2362
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2350
+src/vendors.scailo_pb.ts:2366
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2354
+src/vendors.scailo_pb.ts:2370

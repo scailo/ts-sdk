@@ -73,7 +73,7 @@ Message\&lt;SalesQuotationContact\&gt;.constructor
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2951
+src/sales_quotations.scailo_pb.ts:2967
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2914
+src/sales_quotations.scailo_pb.ts:2930
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2942
+src/sales_quotations.scailo_pb.ts:2958
 
 ___
 
@@ -121,7 +121,7 @@ from field: string associate_uuid = 211;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2949
+src/sales_quotations.scailo_pb.ts:2965
 
 ___
 
@@ -137,7 +137,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2900
+src/sales_quotations.scailo_pb.ts:2916
 
 ___
 
@@ -153,7 +153,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2907
+src/sales_quotations.scailo_pb.ts:2923
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2921
+src/sales_quotations.scailo_pb.ts:2937
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 sales_quotation_id = 10;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2935
+src/sales_quotations.scailo_pb.ts:2951
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2928
+src/sales_quotations.scailo_pb.ts:2944
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2958
+src/sales_quotations.scailo_pb.ts:2974
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2956
+src/sales_quotations.scailo_pb.ts:2972
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2957
+src/sales_quotations.scailo_pb.ts:2973
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2981
+src/sales_quotations.scailo_pb.ts:2997
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2969
+src/sales_quotations.scailo_pb.ts:2985
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2973
+src/sales_quotations.scailo_pb.ts:2989
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:2977
+src/sales_quotations.scailo_pb.ts:2993

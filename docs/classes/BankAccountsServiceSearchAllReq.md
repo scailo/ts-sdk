@@ -73,7 +73,7 @@ Message\&lt;BankAccountsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:901
+src/bank_accounts.scailo_pb.ts:917
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:857
+src/bank_accounts.scailo_pb.ts:873
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:885
+src/bank_accounts.scailo_pb.ts:901
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:850
+src/bank_accounts.scailo_pb.ts:866
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:864
+src/bank_accounts.scailo_pb.ts:880
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:899
+src/bank_accounts.scailo_pb.ts:915
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.BANK_ACCOUNT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:878
+src/bank_accounts.scailo_pb.ts:894
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:871
+src/bank_accounts.scailo_pb.ts:887
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:892
+src/bank_accounts.scailo_pb.ts:908
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:908
+src/bank_accounts.scailo_pb.ts:924
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:906
+src/bank_accounts.scailo_pb.ts:922
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:907
+src/bank_accounts.scailo_pb.ts:923
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:931
+src/bank_accounts.scailo_pb.ts:947
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:919
+src/bank_accounts.scailo_pb.ts:935
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:923
+src/bank_accounts.scailo_pb.ts:939
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:927
+src/bank_accounts.scailo_pb.ts:943

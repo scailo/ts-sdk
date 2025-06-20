@@ -74,7 +74,7 @@ Message\&lt;OnDutiesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1316
+src/on_duties.scailo_pb.ts:1332
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1265
+src/on_duties.scailo_pb.ts:1281
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1293
+src/on_duties.scailo_pb.ts:1309
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1258
+src/on_duties.scailo_pb.ts:1274
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1272
+src/on_duties.scailo_pb.ts:1288
 
 ___
 
@@ -154,7 +154,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1307
+src/on_duties.scailo_pb.ts:1323
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.ON_DUTY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1286
+src/on_duties.scailo_pb.ts:1302
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1279
+src/on_duties.scailo_pb.ts:1295
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1300
+src/on_duties.scailo_pb.ts:1316
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1314
+src/on_duties.scailo_pb.ts:1330
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1323
+src/on_duties.scailo_pb.ts:1339
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1321
+src/on_duties.scailo_pb.ts:1337
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1322
+src/on_duties.scailo_pb.ts:1338
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1347
+src/on_duties.scailo_pb.ts:1363
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1335
+src/on_duties.scailo_pb.ts:1351
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1339
+src/on_duties.scailo_pb.ts:1355
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:1343
+src/on_duties.scailo_pb.ts:1359

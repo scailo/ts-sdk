@@ -38,6 +38,7 @@ from message Scailo.CreditNotesServiceFilterReq
 - [entityUuid](CreditNotesServiceFilterReq.md#entityuuid)
 - [familyId](CreditNotesServiceFilterReq.md#familyid)
 - [finalRefNumber](CreditNotesServiceFilterReq.md#finalrefnumber)
+- [formData](CreditNotesServiceFilterReq.md#formdata)
 - [isActive](CreditNotesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](CreditNotesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](CreditNotesServiceFilterReq.md#modificationtimestampstart)
@@ -94,7 +95,7 @@ Message\&lt;CreditNotesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2044
+src/credit_notes.scailo_pb.ts:2051
 
 ## Properties
 
@@ -355,6 +356,22 @@ src/credit_notes.scailo_pb.ts:1971
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/credit_notes.scailo_pb.ts:2049
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -569,7 +586,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2051
+src/credit_notes.scailo_pb.ts:2058
 
 ___
 
@@ -579,7 +596,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2049
+src/credit_notes.scailo_pb.ts:2056
 
 ___
 
@@ -589,7 +606,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2050
+src/credit_notes.scailo_pb.ts:2057
 
 ## Methods
 
@@ -877,7 +894,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2095
+src/credit_notes.scailo_pb.ts:2103
 
 ___
 
@@ -898,7 +915,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2083
+src/credit_notes.scailo_pb.ts:2091
 
 ___
 
@@ -919,7 +936,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2087
+src/credit_notes.scailo_pb.ts:2095
 
 ___
 
@@ -940,4 +957,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:2091
+src/credit_notes.scailo_pb.ts:2099

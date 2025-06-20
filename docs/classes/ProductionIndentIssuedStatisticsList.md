@@ -66,7 +66,7 @@ Message\&lt;ProductionIndentIssuedStatisticsList\&gt;.constructor
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2172
+src/production_indents.scailo_pb.ts:2188
 
 ## Properties
 
@@ -80,7 +80,7 @@ from field: repeated Scailo.ProductionIndentIssuedStatistics list = 1;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2170
+src/production_indents.scailo_pb.ts:2186
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2179
+src/production_indents.scailo_pb.ts:2195
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2177
+src/production_indents.scailo_pb.ts:2193
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2178
+src/production_indents.scailo_pb.ts:2194
 
 ## Methods
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2195
+src/production_indents.scailo_pb.ts:2211
 
 ___
 
@@ -419,7 +419,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2183
+src/production_indents.scailo_pb.ts:2199
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2187
+src/production_indents.scailo_pb.ts:2203
 
 ___
 
@@ -461,4 +461,4 @@ ___
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:2191
+src/production_indents.scailo_pb.ts:2207

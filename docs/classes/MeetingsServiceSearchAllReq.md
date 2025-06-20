@@ -76,7 +76,7 @@ Message\&lt;MeetingsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1349
+src/meetings.scailo_pb.ts:1365
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: uint64 activity_tag_id = 42;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1347
+src/meetings.scailo_pb.ts:1363
 
 ___
 
@@ -108,7 +108,7 @@ from field: uint64 associate_id = 41;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1340
+src/meetings.scailo_pb.ts:1356
 
 ___
 
@@ -124,7 +124,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1284
+src/meetings.scailo_pb.ts:1300
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 employee_id = 40;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1333
+src/meetings.scailo_pb.ts:1349
 
 ___
 
@@ -156,7 +156,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1312
+src/meetings.scailo_pb.ts:1328
 
 ___
 
@@ -172,7 +172,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1277
+src/meetings.scailo_pb.ts:1293
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1291
+src/meetings.scailo_pb.ts:1307
 
 ___
 
@@ -204,7 +204,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1326
+src/meetings.scailo_pb.ts:1342
 
 ___
 
@@ -220,7 +220,7 @@ from field: Scailo.MEETING_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1305
+src/meetings.scailo_pb.ts:1321
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1298
+src/meetings.scailo_pb.ts:1314
 
 ___
 
@@ -252,7 +252,7 @@ from field: Scailo.MEETING_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1319
+src/meetings.scailo_pb.ts:1335
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1356
+src/meetings.scailo_pb.ts:1372
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1354
+src/meetings.scailo_pb.ts:1370
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1355
+src/meetings.scailo_pb.ts:1371
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1382
+src/meetings.scailo_pb.ts:1398
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1370
+src/meetings.scailo_pb.ts:1386
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1374
+src/meetings.scailo_pb.ts:1390
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1378
+src/meetings.scailo_pb.ts:1394

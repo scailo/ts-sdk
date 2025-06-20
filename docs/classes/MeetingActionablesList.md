@@ -66,7 +66,7 @@ Message\&lt;MeetingActionablesList\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1639
+src/meetings.scailo_pb.ts:1655
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.MeetingActionable list = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1637
+src/meetings.scailo_pb.ts:1653
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1646
+src/meetings.scailo_pb.ts:1662
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1644
+src/meetings.scailo_pb.ts:1660
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1645
+src/meetings.scailo_pb.ts:1661
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1662
+src/meetings.scailo_pb.ts:1678
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1650
+src/meetings.scailo_pb.ts:1666
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1654
+src/meetings.scailo_pb.ts:1670
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1658
+src/meetings.scailo_pb.ts:1674

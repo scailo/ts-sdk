@@ -37,6 +37,7 @@ from message Scailo.GoodsDispatchesServiceFilterReq
 - [entityUuid](GoodsDispatchesServiceFilterReq.md#entityuuid)
 - [familyId](GoodsDispatchesServiceFilterReq.md#familyid)
 - [finalRefNumber](GoodsDispatchesServiceFilterReq.md#finalrefnumber)
+- [formData](GoodsDispatchesServiceFilterReq.md#formdata)
 - [isActive](GoodsDispatchesServiceFilterReq.md#isactive)
 - [locationId](GoodsDispatchesServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](GoodsDispatchesServiceFilterReq.md#modificationtimestampend)
@@ -92,7 +93,7 @@ Message\&lt;GoodsDispatchesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1865
+src/goods_dispatches.scailo_pb.ts:1872
 
 ## Properties
 
@@ -337,6 +338,22 @@ src/goods_dispatches.scailo_pb.ts:1806
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/goods_dispatches.scailo_pb.ts:1870
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -535,7 +552,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1872
+src/goods_dispatches.scailo_pb.ts:1879
 
 ___
 
@@ -545,7 +562,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1870
+src/goods_dispatches.scailo_pb.ts:1877
 
 ___
 
@@ -555,7 +572,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1871
+src/goods_dispatches.scailo_pb.ts:1878
 
 ## Methods
 
@@ -843,7 +860,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1914
+src/goods_dispatches.scailo_pb.ts:1922
 
 ___
 
@@ -864,7 +881,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1902
+src/goods_dispatches.scailo_pb.ts:1910
 
 ___
 
@@ -885,7 +902,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1906
+src/goods_dispatches.scailo_pb.ts:1914
 
 ___
 
@@ -906,4 +923,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:1910
+src/goods_dispatches.scailo_pb.ts:1918

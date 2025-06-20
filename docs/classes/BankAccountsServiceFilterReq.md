@@ -31,6 +31,7 @@ from message Scailo.BankAccountsServiceFilterReq
 - [creationTimestampEnd](BankAccountsServiceFilterReq.md#creationtimestampend)
 - [creationTimestampStart](BankAccountsServiceFilterReq.md#creationtimestampstart)
 - [entityUuid](BankAccountsServiceFilterReq.md#entityuuid)
+- [formData](BankAccountsServiceFilterReq.md#formdata)
 - [isActive](BankAccountsServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](BankAccountsServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](BankAccountsServiceFilterReq.md#modificationtimestampstart)
@@ -82,7 +83,7 @@ Message\&lt;BankAccountsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:656
+src/bank_accounts.scailo_pb.ts:663
 
 ## Properties
 
@@ -230,6 +231,22 @@ src/bank_accounts.scailo_pb.ts:605
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/bank_accounts.scailo_pb.ts:661
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -364,7 +381,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:663
+src/bank_accounts.scailo_pb.ts:670
 
 ___
 
@@ -374,7 +391,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:661
+src/bank_accounts.scailo_pb.ts:668
 
 ___
 
@@ -384,7 +401,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:662
+src/bank_accounts.scailo_pb.ts:669
 
 ## Methods
 
@@ -672,7 +689,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:695
+src/bank_accounts.scailo_pb.ts:703
 
 ___
 
@@ -693,7 +710,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:683
+src/bank_accounts.scailo_pb.ts:691
 
 ___
 
@@ -714,7 +731,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:687
+src/bank_accounts.scailo_pb.ts:695
 
 ___
 
@@ -735,4 +752,4 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:691
+src/bank_accounts.scailo_pb.ts:699

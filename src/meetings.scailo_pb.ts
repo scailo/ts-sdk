@@ -5,7 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { BOOL_FILTER, EmployeeMetadata, SORT_ORDER } from "./base.scailo_pb.js";
 
 /**
@@ -1035,6 +1035,13 @@ export class MeetingsServiceFilterReq extends Message<MeetingsServiceFilterReq> 
    */
   activityTagId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<MeetingsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1065,6 +1072,7 @@ export class MeetingsServiceFilterReq extends Message<MeetingsServiceFilterReq> 
     { no: 40, name: "employee_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 41, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 42, name: "activity_tag_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MeetingsServiceFilterReq {
@@ -1217,6 +1225,13 @@ export class MeetingsServiceCountReq extends Message<MeetingsServiceCountReq> {
    */
   activityTagId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<MeetingsServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1243,6 +1258,7 @@ export class MeetingsServiceCountReq extends Message<MeetingsServiceCountReq> {
     { no: 40, name: "employee_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 41, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 42, name: "activity_tag_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MeetingsServiceCountReq {
