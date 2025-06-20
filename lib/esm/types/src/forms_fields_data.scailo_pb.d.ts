@@ -150,4 +150,32 @@ export declare class FormFieldDatumHistoryRequest extends Message<FormFieldDatum
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumHistoryRequest;
     static equals(a: FormFieldDatumHistoryRequest | PlainMessage<FormFieldDatumHistoryRequest> | undefined, b: FormFieldDatumHistoryRequest | PlainMessage<FormFieldDatumHistoryRequest> | undefined): boolean;
 }
+/**
+ *
+ * Describes the data required to filter for records using form field data
+ *
+ * @generated from message Scailo.FormFieldDatumFilterRequest
+ */
+export declare class FormFieldDatumFilterRequest extends Message<FormFieldDatumFilterRequest> {
+    /**
+     * The ID of the corresponding form field
+     *
+     * @generated from field: uint64 form_field_id = 1;
+     */
+    formFieldId: bigint;
+    /**
+     * The value to be filtered
+     *
+     * @generated from field: string value = 2;
+     */
+    value: string;
+    constructor(data?: PartialMessage<FormFieldDatumFilterRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FormFieldDatumFilterRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumFilterRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumFilterRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumFilterRequest;
+    static equals(a: FormFieldDatumFilterRequest | PlainMessage<FormFieldDatumFilterRequest> | undefined, b: FormFieldDatumFilterRequest | PlainMessage<FormFieldDatumFilterRequest> | undefined): boolean;
+}
 //# sourceMappingURL=forms_fields_data.scailo_pb.d.ts.map

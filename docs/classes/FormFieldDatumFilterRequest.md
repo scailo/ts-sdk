@@ -1,139 +1,105 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesOrdersServicePaginatedItemsResponse
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / FormFieldDatumFilterRequest
 
-# Class: SalesOrdersServicePaginatedItemsResponse
+# Class: FormFieldDatumFilterRequest
 
-Describes the response to a pagination items request
+Describes the data required to filter for records using form field data
 
 **`Generated`**
 
-from message Scailo.SalesOrdersServicePaginatedItemsResponse
+from message Scailo.FormFieldDatumFilterRequest
 
 ## Hierarchy
 
-- `Message`\<[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)\>
+- `Message`\<[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)\>
 
-  ↳ **`SalesOrdersServicePaginatedItemsResponse`**
+  ↳ **`FormFieldDatumFilterRequest`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](SalesOrdersServicePaginatedItemsResponse.md#constructor)
+- [constructor](FormFieldDatumFilterRequest.md#constructor)
 
 ### Properties
 
-- [count](SalesOrdersServicePaginatedItemsResponse.md#count)
-- [offset](SalesOrdersServicePaginatedItemsResponse.md#offset)
-- [payload](SalesOrdersServicePaginatedItemsResponse.md#payload)
-- [total](SalesOrdersServicePaginatedItemsResponse.md#total)
-- [fields](SalesOrdersServicePaginatedItemsResponse.md#fields)
-- [runtime](SalesOrdersServicePaginatedItemsResponse.md#runtime)
-- [typeName](SalesOrdersServicePaginatedItemsResponse.md#typename)
+- [formFieldId](FormFieldDatumFilterRequest.md#formfieldid)
+- [value](FormFieldDatumFilterRequest.md#value)
+- [fields](FormFieldDatumFilterRequest.md#fields)
+- [runtime](FormFieldDatumFilterRequest.md#runtime)
+- [typeName](FormFieldDatumFilterRequest.md#typename)
 
 ### Methods
 
-- [clone](SalesOrdersServicePaginatedItemsResponse.md#clone)
-- [equals](SalesOrdersServicePaginatedItemsResponse.md#equals)
-- [fromBinary](SalesOrdersServicePaginatedItemsResponse.md#frombinary)
-- [fromJson](SalesOrdersServicePaginatedItemsResponse.md#fromjson)
-- [fromJsonString](SalesOrdersServicePaginatedItemsResponse.md#fromjsonstring)
-- [getType](SalesOrdersServicePaginatedItemsResponse.md#gettype)
-- [toBinary](SalesOrdersServicePaginatedItemsResponse.md#tobinary)
-- [toJSON](SalesOrdersServicePaginatedItemsResponse.md#tojson)
-- [toJson](SalesOrdersServicePaginatedItemsResponse.md#tojson-1)
-- [toJsonString](SalesOrdersServicePaginatedItemsResponse.md#tojsonstring)
-- [equals](SalesOrdersServicePaginatedItemsResponse.md#equals-1)
-- [fromBinary](SalesOrdersServicePaginatedItemsResponse.md#frombinary-1)
-- [fromJson](SalesOrdersServicePaginatedItemsResponse.md#fromjson-1)
-- [fromJsonString](SalesOrdersServicePaginatedItemsResponse.md#fromjsonstring-1)
+- [clone](FormFieldDatumFilterRequest.md#clone)
+- [equals](FormFieldDatumFilterRequest.md#equals)
+- [fromBinary](FormFieldDatumFilterRequest.md#frombinary)
+- [fromJson](FormFieldDatumFilterRequest.md#fromjson)
+- [fromJsonString](FormFieldDatumFilterRequest.md#fromjsonstring)
+- [getType](FormFieldDatumFilterRequest.md#gettype)
+- [toBinary](FormFieldDatumFilterRequest.md#tobinary)
+- [toJSON](FormFieldDatumFilterRequest.md#tojson)
+- [toJson](FormFieldDatumFilterRequest.md#tojson-1)
+- [toJsonString](FormFieldDatumFilterRequest.md#tojsonstring)
+- [equals](FormFieldDatumFilterRequest.md#equals-1)
+- [fromBinary](FormFieldDatumFilterRequest.md#frombinary-1)
+- [fromJson](FormFieldDatumFilterRequest.md#fromjson-1)
+- [fromJsonString](FormFieldDatumFilterRequest.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new SalesOrdersServicePaginatedItemsResponse**(`data?`): [`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+• **new FormFieldDatumFilterRequest**(`data?`): [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)\> |
+| `data?` | `PartialMessage`\<[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)\> |
 
 #### Returns
 
-[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Overrides
 
-Message\&lt;SalesOrdersServicePaginatedItemsResponse\&gt;.constructor
+Message\&lt;FormFieldDatumFilterRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2959
+src/forms_fields_data.scailo_pb.ts:280
 
 ## Properties
 
-### count
+### formFieldId
 
-• **count**: `bigint` = `protoInt64.zero`
+• **formFieldId**: `bigint` = `protoInt64.zero`
 
-The number of records in this payload
+The ID of the corresponding form field
 
 **`Generated`**
 
-from field: uint64 count = 1;
+from field: uint64 form_field_id = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2936
+src/forms_fields_data.scailo_pb.ts:271
 
 ___
 
-### offset
+### value
 
-• **offset**: `bigint` = `protoInt64.zero`
+• **value**: `string` = `""`
 
-The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
-
-**`Generated`**
-
-from field: uint64 offset = 2;
-
-#### Defined in
-
-src/sales_orders.scailo_pb.ts:2943
-
-___
-
-### payload
-
-• **payload**: [`SalesOrderItem`](SalesOrderItem.md)[] = `[]`
-
-The list of records
+The value to be filtered
 
 **`Generated`**
 
-from field: repeated Scailo.SalesOrderItem payload = 4;
+from field: string value = 2;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2957
-
-___
-
-### total
-
-• **total**: `bigint` = `protoInt64.zero`
-
-The total number of records that are available
-
-**`Generated`**
-
-from field: uint64 total = 3;
-
-#### Defined in
-
-src/sales_orders.scailo_pb.ts:2950
+src/forms_fields_data.scailo_pb.ts:278
 
 ___
 
@@ -143,7 +109,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2966
+src/forms_fields_data.scailo_pb.ts:287
 
 ___
 
@@ -153,29 +119,29 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2964
+src/forms_fields_data.scailo_pb.ts:285
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.SalesOrdersServicePaginatedItemsResponse"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.FormFieldDatumFilterRequest"``
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2965
+src/forms_fields_data.scailo_pb.ts:286
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+▸ **clone**(): [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Inherited from
 
@@ -198,7 +164,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md) \| `PlainMessage`\<[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)\> |
+| `other` | `undefined` \| ``null`` \| [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md) \| `PlainMessage`\<[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)\> |
 
 #### Returns
 
@@ -303,7 +269,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)\>
+▸ **getType**(): `MessageType`\<[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -311,7 +277,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)\>
+`MessageType`\<[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)\>
 
 #### Inherited from
 
@@ -442,8 +408,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md) \| `PlainMessage`\<[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)\> |
-| `b` | `undefined` \| [`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md) \| `PlainMessage`\<[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)\> |
+| `a` | `undefined` \| [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md) \| `PlainMessage`\<[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)\> |
+| `b` | `undefined` \| [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md) \| `PlainMessage`\<[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)\> |
 
 #### Returns
 
@@ -451,13 +417,13 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2985
+src/forms_fields_data.scailo_pb.ts:304
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+▸ **fromBinary**(`bytes`, `options?`): [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Parameters
 
@@ -468,17 +434,17 @@ ___
 
 #### Returns
 
-[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2973
+src/forms_fields_data.scailo_pb.ts:292
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Parameters
 
@@ -489,17 +455,17 @@ ___
 
 #### Returns
 
-[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2977
+src/forms_fields_data.scailo_pb.ts:296
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Parameters
 
@@ -510,8 +476,8 @@ ___
 
 #### Returns
 
-[`SalesOrdersServicePaginatedItemsResponse`](SalesOrdersServicePaginatedItemsResponse.md)
+[`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2981
+src/forms_fields_data.scailo_pb.ts:300

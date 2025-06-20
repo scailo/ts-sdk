@@ -256,3 +256,53 @@ export class FormFieldDatumHistoryRequest extends Message<FormFieldDatumHistoryR
   }
 }
 
+/**
+ *
+ * Describes the data required to filter for records using form field data
+ *
+ * @generated from message Scailo.FormFieldDatumFilterRequest
+ */
+export class FormFieldDatumFilterRequest extends Message<FormFieldDatumFilterRequest> {
+  /**
+   * The ID of the corresponding form field
+   *
+   * @generated from field: uint64 form_field_id = 1;
+   */
+  formFieldId = protoInt64.zero;
+
+  /**
+   * The value to be filtered
+   *
+   * @generated from field: string value = 2;
+   */
+  value = "";
+
+  constructor(data?: PartialMessage<FormFieldDatumFilterRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FormFieldDatumFilterRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "form_field_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumFilterRequest {
+    return new FormFieldDatumFilterRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumFilterRequest {
+    return new FormFieldDatumFilterRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumFilterRequest {
+    return new FormFieldDatumFilterRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FormFieldDatumFilterRequest | PlainMessage<FormFieldDatumFilterRequest> | undefined, b: FormFieldDatumFilterRequest | PlainMessage<FormFieldDatumFilterRequest> | undefined): boolean {
+    return proto3.util.equals(FormFieldDatumFilterRequest, a, b);
+  }
+}
+

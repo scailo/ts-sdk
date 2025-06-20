@@ -40,6 +40,7 @@ from message Scailo.SalesOrdersServiceFilterReq
 - [entityUuid](SalesOrdersServiceFilterReq.md#entityuuid)
 - [familyId](SalesOrdersServiceFilterReq.md#familyid)
 - [finalRefNumber](SalesOrdersServiceFilterReq.md#finalrefnumber)
+- [formData](SalesOrdersServiceFilterReq.md#formdata)
 - [isActive](SalesOrdersServiceFilterReq.md#isactive)
 - [locationId](SalesOrdersServiceFilterReq.md#locationid)
 - [modificationTimestampEnd](SalesOrdersServiceFilterReq.md#modificationtimestampend)
@@ -95,7 +96,7 @@ Message\&lt;SalesOrdersServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2047
+src/sales_orders.scailo_pb.ts:2054
 
 ## Properties
 
@@ -387,6 +388,22 @@ src/sales_orders.scailo_pb.ts:1968
 
 ___
 
+### formData
+
+• **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
+
+The list of form data filters
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+
+#### Defined in
+
+src/sales_orders.scailo_pb.ts:2052
+
+___
+
 ### isActive
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
@@ -585,7 +602,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2054
+src/sales_orders.scailo_pb.ts:2061
 
 ___
 
@@ -595,7 +612,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2052
+src/sales_orders.scailo_pb.ts:2059
 
 ___
 
@@ -605,7 +622,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2053
+src/sales_orders.scailo_pb.ts:2060
 
 ## Methods
 
@@ -893,7 +910,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2099
+src/sales_orders.scailo_pb.ts:2107
 
 ___
 
@@ -914,7 +931,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2087
+src/sales_orders.scailo_pb.ts:2095
 
 ___
 
@@ -935,7 +952,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2091
+src/sales_orders.scailo_pb.ts:2099
 
 ___
 
@@ -956,4 +973,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2095
+src/sales_orders.scailo_pb.ts:2103

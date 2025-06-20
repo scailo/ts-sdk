@@ -68,7 +68,7 @@ Message\&lt;SalesOrderBillingStatistics\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3258
+src/sales_orders.scailo_pb.ts:3274
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 credited = 3;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3256
+src/sales_orders.scailo_pb.ts:3272
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 invoiced = 2;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3249
+src/sales_orders.scailo_pb.ts:3265
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ordered = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3242
+src/sales_orders.scailo_pb.ts:3258
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3265
+src/sales_orders.scailo_pb.ts:3281
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3263
+src/sales_orders.scailo_pb.ts:3279
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3264
+src/sales_orders.scailo_pb.ts:3280
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3283
+src/sales_orders.scailo_pb.ts:3299
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3271
+src/sales_orders.scailo_pb.ts:3287
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3275
+src/sales_orders.scailo_pb.ts:3291
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:3279
+src/sales_orders.scailo_pb.ts:3295

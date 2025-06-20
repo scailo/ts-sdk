@@ -70,7 +70,7 @@ Message\&lt;SalesOrdersServiceReferenceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2526
+src/sales_orders.scailo_pb.ts:2542
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: Scailo.SALES_ORDER_REFERENCE_CONTEXT context = 11;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2510
+src/sales_orders.scailo_pb.ts:2526
 
 ___
 
@@ -102,7 +102,7 @@ from field: Scailo.SALES_ORDER_REFERENCE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2517
+src/sales_orders.scailo_pb.ts:2533
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2524
+src/sales_orders.scailo_pb.ts:2540
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2503
+src/sales_orders.scailo_pb.ts:2519
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2496
+src/sales_orders.scailo_pb.ts:2512
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2533
+src/sales_orders.scailo_pb.ts:2549
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2531
+src/sales_orders.scailo_pb.ts:2547
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2532
+src/sales_orders.scailo_pb.ts:2548
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2553
+src/sales_orders.scailo_pb.ts:2569
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2541
+src/sales_orders.scailo_pb.ts:2557
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2545
+src/sales_orders.scailo_pb.ts:2561
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:2549
+src/sales_orders.scailo_pb.ts:2565
