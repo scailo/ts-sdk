@@ -3473,3 +3473,167 @@ export class SalesOrderInventoryMatchList extends Message<SalesOrderInventoryMat
   }
 }
 
+/**
+ *
+ * Describes the parameters that are part of a sales order's price match
+ *
+ * @generated from message Scailo.SalesOrderPriceMatch
+ */
+export class SalesOrderPriceMatch extends Message<SalesOrderPriceMatch> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the client unit of material ID
+   *
+   * @generated from field: uint64 client_uom_id = 2;
+   */
+  clientUomId = protoInt64.zero;
+
+  /**
+   * Stores the ordered quantity in primary unit of material
+   *
+   * @generated from field: uint64 ordered_primary = 10;
+   */
+  orderedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the ordered quantity in secondary unit of material
+   *
+   * @generated from field: uint64 ordered_secondary = 20;
+   */
+  orderedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the total ordered value (at the family level) in primary unit of material
+   *
+   * @generated from field: uint64 ordered_total_value = 30;
+   */
+  orderedTotalValue = protoInt64.zero;
+
+  /**
+   * Stores the invoiced quantity in primary unit of material
+   *
+   * @generated from field: uint64 invoiced_primary = 12;
+   */
+  invoicedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the invoiced quantity in secondary unit of material
+   *
+   * @generated from field: uint64 invoiced_secondary = 22;
+   */
+  invoicedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the total invoiced value (at the family level) in primary unit of material
+   *
+   * @generated from field: uint64 invoiced_total_value = 32;
+   */
+  invoicedTotalValue = protoInt64.zero;
+
+  /**
+   * Stores the credited quantity in primary unit of material
+   *
+   * @generated from field: uint64 credited_primary = 14;
+   */
+  creditedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the credited quantity in secondary unit of material
+   *
+   * @generated from field: uint64 credited_secondary = 24;
+   */
+  creditedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the total credit note value (at the family level) in primary unit of material
+   *
+   * @generated from field: uint64 credited_total_value = 34;
+   */
+  creditedTotalValue = protoInt64.zero;
+
+  constructor(data?: PartialMessage<SalesOrderPriceMatch>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesOrderPriceMatch";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "ordered_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "ordered_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "ordered_total_value", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "invoiced_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 22, name: "invoiced_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 32, name: "invoiced_total_value", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "credited_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 24, name: "credited_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 34, name: "credited_total_value", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderPriceMatch {
+    return new SalesOrderPriceMatch().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderPriceMatch {
+    return new SalesOrderPriceMatch().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderPriceMatch {
+    return new SalesOrderPriceMatch().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesOrderPriceMatch | PlainMessage<SalesOrderPriceMatch> | undefined, b: SalesOrderPriceMatch | PlainMessage<SalesOrderPriceMatch> | undefined): boolean {
+    return proto3.util.equals(SalesOrderPriceMatch, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of inventory match families
+ *
+ * @generated from message Scailo.SalesOrderPriceMatchList
+ */
+export class SalesOrderPriceMatchList extends Message<SalesOrderPriceMatchList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.SalesOrderPriceMatch list = 1;
+   */
+  list: SalesOrderPriceMatch[] = [];
+
+  constructor(data?: PartialMessage<SalesOrderPriceMatchList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesOrderPriceMatchList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: SalesOrderPriceMatch, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderPriceMatchList {
+    return new SalesOrderPriceMatchList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderPriceMatchList {
+    return new SalesOrderPriceMatchList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderPriceMatchList {
+    return new SalesOrderPriceMatchList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesOrderPriceMatchList | PlainMessage<SalesOrderPriceMatchList> | undefined, b: SalesOrderPriceMatchList | PlainMessage<SalesOrderPriceMatchList> | undefined): boolean {
+    return proto3.util.equals(SalesOrderPriceMatchList, a, b);
+  }
+}
+

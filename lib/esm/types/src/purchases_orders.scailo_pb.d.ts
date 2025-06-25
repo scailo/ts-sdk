@@ -2325,4 +2325,108 @@ export declare class PurchaseOrderInventoryMatchList extends Message<PurchaseOrd
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderInventoryMatchList;
     static equals(a: PurchaseOrderInventoryMatchList | PlainMessage<PurchaseOrderInventoryMatchList> | undefined, b: PurchaseOrderInventoryMatchList | PlainMessage<PurchaseOrderInventoryMatchList> | undefined): boolean;
 }
+/**
+ *
+ * Describes the parameters that are part of a purchase order's price match
+ *
+ * @generated from message Scailo.PurchaseOrderPriceMatch
+ */
+export declare class PurchaseOrderPriceMatch extends Message<PurchaseOrderPriceMatch> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the vendor unit of material ID
+     *
+     * @generated from field: uint64 vendor_uom_id = 2;
+     */
+    vendorUomId: bigint;
+    /**
+     * Stores the ordered quantity in primary unit of material
+     *
+     * @generated from field: uint64 ordered_primary = 10;
+     */
+    orderedPrimary: bigint;
+    /**
+     * Stores the ordered quantity in secondary unit of material
+     *
+     * @generated from field: uint64 ordered_secondary = 20;
+     */
+    orderedSecondary: bigint;
+    /**
+     * Stores the total ordered value (at the family level) in primary unit of material
+     *
+     * @generated from field: uint64 ordered_total_value = 30;
+     */
+    orderedTotalValue: bigint;
+    /**
+     * Stores the invoiced quantity in primary unit of material
+     *
+     * @generated from field: uint64 invoiced_primary = 12;
+     */
+    invoicedPrimary: bigint;
+    /**
+     * Stores the invoiced quantity in secondary unit of material
+     *
+     * @generated from field: uint64 invoiced_secondary = 22;
+     */
+    invoicedSecondary: bigint;
+    /**
+     * Stores the total invoiced value (at the family level) in primary unit of material
+     *
+     * @generated from field: uint64 invoiced_total_value = 32;
+     */
+    invoicedTotalValue: bigint;
+    /**
+     * Stores the debited quantity in primary unit of material
+     *
+     * @generated from field: uint64 debited_primary = 14;
+     */
+    debitedPrimary: bigint;
+    /**
+     * Stores the debited quantity in secondary unit of material
+     *
+     * @generated from field: uint64 debited_secondary = 24;
+     */
+    debitedSecondary: bigint;
+    /**
+     * Stores the total debit note value (at the family level) in primary unit of material
+     *
+     * @generated from field: uint64 debited_total_value = 34;
+     */
+    debitedTotalValue: bigint;
+    constructor(data?: PartialMessage<PurchaseOrderPriceMatch>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchaseOrderPriceMatch";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderPriceMatch;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderPriceMatch;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderPriceMatch;
+    static equals(a: PurchaseOrderPriceMatch | PlainMessage<PurchaseOrderPriceMatch> | undefined, b: PurchaseOrderPriceMatch | PlainMessage<PurchaseOrderPriceMatch> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of inventory match families
+ *
+ * @generated from message Scailo.PurchaseOrderPriceMatchList
+ */
+export declare class PurchaseOrderPriceMatchList extends Message<PurchaseOrderPriceMatchList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.PurchaseOrderPriceMatch list = 1;
+     */
+    list: PurchaseOrderPriceMatch[];
+    constructor(data?: PartialMessage<PurchaseOrderPriceMatchList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchaseOrderPriceMatchList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderPriceMatchList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderPriceMatchList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderPriceMatchList;
+    static equals(a: PurchaseOrderPriceMatchList | PlainMessage<PurchaseOrderPriceMatchList> | undefined, b: PurchaseOrderPriceMatchList | PlainMessage<PurchaseOrderPriceMatchList> | undefined): boolean;
+}
 //# sourceMappingURL=purchases_orders.scailo_pb.d.ts.map

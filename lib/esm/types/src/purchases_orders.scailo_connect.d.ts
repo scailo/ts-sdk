@@ -1,4 +1,4 @@
-import { PurchaseOrder, PurchaseOrderAncillaryParameters, PurchaseOrderBillingStatistics, PurchaseOrderContact, PurchaseOrderContactsList, PurchaseOrderInventoryMatchList, PurchaseOrderInventoryStatistics, PurchaseOrderItem, PurchaseOrderItemHistoryRequest, PurchaseOrderItemProspectiveInfoRequest, PurchaseOrderItemsList, PurchaseOrderItemsSearchRequest, PurchaseOrderReference, PurchaseOrderReferencesList, PurchasesOrdersList, PurchasesOrdersServiceAutofillRequest, PurchasesOrdersServiceContactCreateRequest, PurchasesOrdersServiceCountReq, PurchasesOrdersServiceCreateRequest, PurchasesOrdersServiceFilterReq, PurchasesOrdersServiceItemCreateRequest, PurchasesOrdersServiceItemUpdateRequest, PurchasesOrdersServicePaginatedItemsResponse, PurchasesOrdersServicePaginationReq, PurchasesOrdersServicePaginationResponse, PurchasesOrdersServiceReferenceCreateRequest, PurchasesOrdersServiceSearchAllReq, PurchasesOrdersServiceUpdateRequest } from "./purchases_orders.scailo_pb.js";
+import { PurchaseOrder, PurchaseOrderAncillaryParameters, PurchaseOrderBillingStatistics, PurchaseOrderContact, PurchaseOrderContactsList, PurchaseOrderInventoryMatchList, PurchaseOrderInventoryStatistics, PurchaseOrderItem, PurchaseOrderItemHistoryRequest, PurchaseOrderItemProspectiveInfoRequest, PurchaseOrderItemsList, PurchaseOrderItemsSearchRequest, PurchaseOrderPriceMatchList, PurchaseOrderReference, PurchaseOrderReferencesList, PurchasesOrdersList, PurchasesOrdersServiceAutofillRequest, PurchasesOrdersServiceContactCreateRequest, PurchasesOrdersServiceCountReq, PurchasesOrdersServiceCreateRequest, PurchasesOrdersServiceFilterReq, PurchasesOrdersServiceItemCreateRequest, PurchasesOrdersServiceItemUpdateRequest, PurchasesOrdersServicePaginatedItemsResponse, PurchasesOrdersServicePaginationReq, PurchasesOrdersServicePaginationResponse, PurchasesOrdersServiceReferenceCreateRequest, PurchasesOrdersServiceSearchAllReq, PurchasesOrdersServiceUpdateRequest } from "./purchases_orders.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -626,6 +626,17 @@ export declare const PurchasesOrdersService: {
             readonly name: "ViewInventoryMatch";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof PurchaseOrderInventoryMatchList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View Price Match of all the families within a Purchase Order (between the purchase order, and the corresponding vendor invoices, and any corresponding debit notes)
+         *
+         * @generated from rpc Scailo.PurchasesOrdersService.ViewPriceMatch
+         */
+        readonly viewPriceMatch: {
+            readonly name: "ViewPriceMatch";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof PurchaseOrderPriceMatchList;
             readonly kind: MethodKind.Unary;
         };
         /**

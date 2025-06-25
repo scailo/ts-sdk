@@ -2324,4 +2324,108 @@ export declare class SalesOrderInventoryMatchList extends Message<SalesOrderInve
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderInventoryMatchList;
     static equals(a: SalesOrderInventoryMatchList | PlainMessage<SalesOrderInventoryMatchList> | undefined, b: SalesOrderInventoryMatchList | PlainMessage<SalesOrderInventoryMatchList> | undefined): boolean;
 }
+/**
+ *
+ * Describes the parameters that are part of a sales order's price match
+ *
+ * @generated from message Scailo.SalesOrderPriceMatch
+ */
+export declare class SalesOrderPriceMatch extends Message<SalesOrderPriceMatch> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 1;
+     */
+    familyId: bigint;
+    /**
+     * Stores the client unit of material ID
+     *
+     * @generated from field: uint64 client_uom_id = 2;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the ordered quantity in primary unit of material
+     *
+     * @generated from field: uint64 ordered_primary = 10;
+     */
+    orderedPrimary: bigint;
+    /**
+     * Stores the ordered quantity in secondary unit of material
+     *
+     * @generated from field: uint64 ordered_secondary = 20;
+     */
+    orderedSecondary: bigint;
+    /**
+     * Stores the total ordered value (at the family level) in primary unit of material
+     *
+     * @generated from field: uint64 ordered_total_value = 30;
+     */
+    orderedTotalValue: bigint;
+    /**
+     * Stores the invoiced quantity in primary unit of material
+     *
+     * @generated from field: uint64 invoiced_primary = 12;
+     */
+    invoicedPrimary: bigint;
+    /**
+     * Stores the invoiced quantity in secondary unit of material
+     *
+     * @generated from field: uint64 invoiced_secondary = 22;
+     */
+    invoicedSecondary: bigint;
+    /**
+     * Stores the total invoiced value (at the family level) in primary unit of material
+     *
+     * @generated from field: uint64 invoiced_total_value = 32;
+     */
+    invoicedTotalValue: bigint;
+    /**
+     * Stores the credited quantity in primary unit of material
+     *
+     * @generated from field: uint64 credited_primary = 14;
+     */
+    creditedPrimary: bigint;
+    /**
+     * Stores the credited quantity in secondary unit of material
+     *
+     * @generated from field: uint64 credited_secondary = 24;
+     */
+    creditedSecondary: bigint;
+    /**
+     * Stores the total credit note value (at the family level) in primary unit of material
+     *
+     * @generated from field: uint64 credited_total_value = 34;
+     */
+    creditedTotalValue: bigint;
+    constructor(data?: PartialMessage<SalesOrderPriceMatch>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrderPriceMatch";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderPriceMatch;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderPriceMatch;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderPriceMatch;
+    static equals(a: SalesOrderPriceMatch | PlainMessage<SalesOrderPriceMatch> | undefined, b: SalesOrderPriceMatch | PlainMessage<SalesOrderPriceMatch> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of inventory match families
+ *
+ * @generated from message Scailo.SalesOrderPriceMatchList
+ */
+export declare class SalesOrderPriceMatchList extends Message<SalesOrderPriceMatchList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.SalesOrderPriceMatch list = 1;
+     */
+    list: SalesOrderPriceMatch[];
+    constructor(data?: PartialMessage<SalesOrderPriceMatchList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrderPriceMatchList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderPriceMatchList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrderPriceMatchList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrderPriceMatchList;
+    static equals(a: SalesOrderPriceMatchList | PlainMessage<SalesOrderPriceMatchList> | undefined, b: SalesOrderPriceMatchList | PlainMessage<SalesOrderPriceMatchList> | undefined): boolean;
+}
 //# sourceMappingURL=sales_orders.scailo_pb.d.ts.map

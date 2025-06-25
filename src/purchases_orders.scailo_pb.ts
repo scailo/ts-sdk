@@ -3472,3 +3472,167 @@ export class PurchaseOrderInventoryMatchList extends Message<PurchaseOrderInvent
   }
 }
 
+/**
+ *
+ * Describes the parameters that are part of a purchase order's price match
+ *
+ * @generated from message Scailo.PurchaseOrderPriceMatch
+ */
+export class PurchaseOrderPriceMatch extends Message<PurchaseOrderPriceMatch> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 1;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the vendor unit of material ID
+   *
+   * @generated from field: uint64 vendor_uom_id = 2;
+   */
+  vendorUomId = protoInt64.zero;
+
+  /**
+   * Stores the ordered quantity in primary unit of material
+   *
+   * @generated from field: uint64 ordered_primary = 10;
+   */
+  orderedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the ordered quantity in secondary unit of material
+   *
+   * @generated from field: uint64 ordered_secondary = 20;
+   */
+  orderedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the total ordered value (at the family level) in primary unit of material
+   *
+   * @generated from field: uint64 ordered_total_value = 30;
+   */
+  orderedTotalValue = protoInt64.zero;
+
+  /**
+   * Stores the invoiced quantity in primary unit of material
+   *
+   * @generated from field: uint64 invoiced_primary = 12;
+   */
+  invoicedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the invoiced quantity in secondary unit of material
+   *
+   * @generated from field: uint64 invoiced_secondary = 22;
+   */
+  invoicedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the total invoiced value (at the family level) in primary unit of material
+   *
+   * @generated from field: uint64 invoiced_total_value = 32;
+   */
+  invoicedTotalValue = protoInt64.zero;
+
+  /**
+   * Stores the debited quantity in primary unit of material
+   *
+   * @generated from field: uint64 debited_primary = 14;
+   */
+  debitedPrimary = protoInt64.zero;
+
+  /**
+   * Stores the debited quantity in secondary unit of material
+   *
+   * @generated from field: uint64 debited_secondary = 24;
+   */
+  debitedSecondary = protoInt64.zero;
+
+  /**
+   * Stores the total debit note value (at the family level) in primary unit of material
+   *
+   * @generated from field: uint64 debited_total_value = 34;
+   */
+  debitedTotalValue = protoInt64.zero;
+
+  constructor(data?: PartialMessage<PurchaseOrderPriceMatch>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchaseOrderPriceMatch";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 10, name: "ordered_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "ordered_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "ordered_total_value", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "invoiced_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 22, name: "invoiced_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 32, name: "invoiced_total_value", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "debited_primary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 24, name: "debited_secondary", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 34, name: "debited_total_value", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderPriceMatch {
+    return new PurchaseOrderPriceMatch().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderPriceMatch {
+    return new PurchaseOrderPriceMatch().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderPriceMatch {
+    return new PurchaseOrderPriceMatch().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchaseOrderPriceMatch | PlainMessage<PurchaseOrderPriceMatch> | undefined, b: PurchaseOrderPriceMatch | PlainMessage<PurchaseOrderPriceMatch> | undefined): boolean {
+    return proto3.util.equals(PurchaseOrderPriceMatch, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the list of inventory match families
+ *
+ * @generated from message Scailo.PurchaseOrderPriceMatchList
+ */
+export class PurchaseOrderPriceMatchList extends Message<PurchaseOrderPriceMatchList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.PurchaseOrderPriceMatch list = 1;
+   */
+  list: PurchaseOrderPriceMatch[] = [];
+
+  constructor(data?: PartialMessage<PurchaseOrderPriceMatchList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchaseOrderPriceMatchList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: PurchaseOrderPriceMatch, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseOrderPriceMatchList {
+    return new PurchaseOrderPriceMatchList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseOrderPriceMatchList {
+    return new PurchaseOrderPriceMatchList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseOrderPriceMatchList {
+    return new PurchaseOrderPriceMatchList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchaseOrderPriceMatchList | PlainMessage<PurchaseOrderPriceMatchList> | undefined, b: PurchaseOrderPriceMatchList | PlainMessage<PurchaseOrderPriceMatchList> | undefined): boolean {
+    return proto3.util.equals(PurchaseOrderPriceMatchList, a, b);
+  }
+}
+
