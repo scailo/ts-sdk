@@ -69,7 +69,7 @@ Message\&lt;ClientStreamsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:872
+src/client_streams.scailo_pb.ts:880
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:849
+src/client_streams.scailo_pb.ts:857
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:856
+src/client_streams.scailo_pb.ts:864
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.ClientStream payload = 4;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:870
+src/client_streams.scailo_pb.ts:878
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:863
+src/client_streams.scailo_pb.ts:871
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:879
+src/client_streams.scailo_pb.ts:887
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:877
+src/client_streams.scailo_pb.ts:885
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:878
+src/client_streams.scailo_pb.ts:886
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:898
+src/client_streams.scailo_pb.ts:906
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:886
+src/client_streams.scailo_pb.ts:894
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:890
+src/client_streams.scailo_pb.ts:898
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:894
+src/client_streams.scailo_pb.ts:902

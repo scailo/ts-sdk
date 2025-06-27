@@ -32,7 +32,7 @@ from enum value: CLIENT_STREAM_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:169
+src/client_streams.scailo_pb.ts:177
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: CLIENT_STREAM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:155
+src/client_streams.scailo_pb.ts:163
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: CLIENT_STREAM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:148
+src/client_streams.scailo_pb.ts:156
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: CLIENT_STREAM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:162
+src/client_streams.scailo_pb.ts:170
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: CLIENT_STREAM_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:176
+src/client_streams.scailo_pb.ts:184

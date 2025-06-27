@@ -1247,6 +1247,19 @@ export declare class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersSer
      * @generated from field: uint64 location_id = 24;
      */
     locationId: bigint;
+    /**
+     * Sales Order related filters
+     * The associated consignee client ID of the linked sales order
+     *
+     * @generated from field: uint64 consignee_client_id = 50;
+     */
+    consigneeClientId: bigint;
+    /**
+     * The associated buyer client ID of the linked sales order
+     *
+     * @generated from field: uint64 buyer_client_id = 51;
+     */
+    buyerClientId: bigint;
     constructor(data?: PartialMessage<WorkOrdersServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.WorkOrdersServiceSearchAllReq";

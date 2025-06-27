@@ -119,6 +119,13 @@ export enum CLIENT_STREAM_REF_FROM {
    * @generated from enum value: CLIENT_STREAM_REF_FROM_SALES_ENQUIRY = 50;
    */
   CLIENT_STREAM_REF_FROM_SALES_ENQUIRY = 50,
+
+  /**
+   * Denotes that the reference is from a work order
+   *
+   * @generated from enum value: CLIENT_STREAM_REF_FROM_WORK_ORDER = 60;
+   */
+  CLIENT_STREAM_REF_FROM_WORK_ORDER = 60,
 }
 // Retrieve enum metadata with: proto3.getEnumType(CLIENT_STREAM_REF_FROM)
 proto3.util.setEnumType(CLIENT_STREAM_REF_FROM, "Scailo.CLIENT_STREAM_REF_FROM", [
@@ -131,6 +138,7 @@ proto3.util.setEnumType(CLIENT_STREAM_REF_FROM, "Scailo.CLIENT_STREAM_REF_FROM",
   { no: 30, name: "CLIENT_STREAM_REF_FROM_SALES_RECEIPT" },
   { no: 40, name: "CLIENT_STREAM_REF_FROM_SALES_QUOTATION" },
   { no: 50, name: "CLIENT_STREAM_REF_FROM_SALES_ENQUIRY" },
+  { no: 60, name: "CLIENT_STREAM_REF_FROM_WORK_ORDER" },
 ]);
 
 /**

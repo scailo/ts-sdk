@@ -69,7 +69,7 @@ Message\&lt;ClientStreamsServiceMessageCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1425
+src/client_streams.scailo_pb.ts:1433
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string client_stream_uuid = 10;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1409
+src/client_streams.scailo_pb.ts:1417
 
 ___
 
@@ -101,7 +101,7 @@ from field: string content = 20;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1423
+src/client_streams.scailo_pb.ts:1431
 
 ___
 
@@ -117,7 +117,7 @@ from field: Scailo.CLIENT_STREAM_MESSAGE_TYPE message_type = 8;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1402
+src/client_streams.scailo_pb.ts:1410
 
 ___
 
@@ -133,7 +133,7 @@ from field: string response_to_message_uuid = 11;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1416
+src/client_streams.scailo_pb.ts:1424
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1432
+src/client_streams.scailo_pb.ts:1440
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1430
+src/client_streams.scailo_pb.ts:1438
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1431
+src/client_streams.scailo_pb.ts:1439
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1451
+src/client_streams.scailo_pb.ts:1459
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1439
+src/client_streams.scailo_pb.ts:1447
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1443
+src/client_streams.scailo_pb.ts:1451
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1447
+src/client_streams.scailo_pb.ts:1455

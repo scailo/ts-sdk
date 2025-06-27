@@ -68,7 +68,7 @@ Message\&lt;ClientStreamsServiceClientSubscriberCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2176
+src/client_streams.scailo_pb.ts:2184
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 client_stream_id = 10;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2167
+src/client_streams.scailo_pb.ts:2175
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2160
+src/client_streams.scailo_pb.ts:2168
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2174
+src/client_streams.scailo_pb.ts:2182
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2183
+src/client_streams.scailo_pb.ts:2191
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2181
+src/client_streams.scailo_pb.ts:2189
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2182
+src/client_streams.scailo_pb.ts:2190
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2201
+src/client_streams.scailo_pb.ts:2209
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2189
+src/client_streams.scailo_pb.ts:2197
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2193
+src/client_streams.scailo_pb.ts:2201
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2197
+src/client_streams.scailo_pb.ts:2205

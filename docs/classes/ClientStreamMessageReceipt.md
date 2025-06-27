@@ -71,7 +71,7 @@ Message\&lt;ClientStreamMessageReceipt\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1825
+src/client_streams.scailo_pb.ts:1833
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string client_stream_message_uuid = 10;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1802
+src/client_streams.scailo_pb.ts:1810
 
 ___
 
@@ -103,7 +103,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1788
+src/client_streams.scailo_pb.ts:1796
 
 ___
 
@@ -119,7 +119,7 @@ from field: bool is_read = 12;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1816
+src/client_streams.scailo_pb.ts:1824
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1795
+src/client_streams.scailo_pb.ts:1803
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 read_at = 13;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1823
+src/client_streams.scailo_pb.ts:1831
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1809
+src/client_streams.scailo_pb.ts:1817
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1832
+src/client_streams.scailo_pb.ts:1840
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1830
+src/client_streams.scailo_pb.ts:1838
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1831
+src/client_streams.scailo_pb.ts:1839
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1853
+src/client_streams.scailo_pb.ts:1861
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1841
+src/client_streams.scailo_pb.ts:1849
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1845
+src/client_streams.scailo_pb.ts:1853
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1849
+src/client_streams.scailo_pb.ts:1857

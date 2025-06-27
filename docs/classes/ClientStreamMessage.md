@@ -73,7 +73,7 @@ Message\&lt;ClientStreamMessage\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1519
+src/client_streams.scailo_pb.ts:1527
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: uint64 client_stream_id = 10;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1489
+src/client_streams.scailo_pb.ts:1497
 
 ___
 
@@ -105,7 +105,7 @@ from field: string content = 20;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1503
+src/client_streams.scailo_pb.ts:1511
 
 ___
 
@@ -121,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1468
+src/client_streams.scailo_pb.ts:1476
 
 ___
 
@@ -137,7 +137,7 @@ from field: string internal_ref = 50;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1510
+src/client_streams.scailo_pb.ts:1518
 
 ___
 
@@ -153,7 +153,7 @@ from field: bool is_read = 60;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1517
+src/client_streams.scailo_pb.ts:1525
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.CLIENT_STREAM_MESSAGE_TYPE message_type = 8;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1482
+src/client_streams.scailo_pb.ts:1490
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1475
+src/client_streams.scailo_pb.ts:1483
 
 ___
 
@@ -201,7 +201,7 @@ from field: string response_to_message_uuid = 11;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1496
+src/client_streams.scailo_pb.ts:1504
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1526
+src/client_streams.scailo_pb.ts:1534
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1524
+src/client_streams.scailo_pb.ts:1532
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1525
+src/client_streams.scailo_pb.ts:1533
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1549
+src/client_streams.scailo_pb.ts:1557
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1537
+src/client_streams.scailo_pb.ts:1545
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1541
+src/client_streams.scailo_pb.ts:1549
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1545
+src/client_streams.scailo_pb.ts:1553

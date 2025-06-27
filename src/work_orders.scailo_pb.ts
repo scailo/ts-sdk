@@ -1858,6 +1858,21 @@ export class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersServiceSear
    */
   locationId = protoInt64.zero;
 
+  /**
+   * Sales Order related filters
+   * The associated consignee client ID of the linked sales order
+   *
+   * @generated from field: uint64 consignee_client_id = 50;
+   */
+  consigneeClientId = protoInt64.zero;
+
+  /**
+   * The associated buyer client ID of the linked sales order
+   *
+   * @generated from field: uint64 buyer_client_id = 51;
+   */
+  buyerClientId = protoInt64.zero;
+
   constructor(data?: PartialMessage<WorkOrdersServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1877,6 +1892,8 @@ export class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersServiceSear
     { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(WORK_ORDER_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrdersServiceSearchAllReq {

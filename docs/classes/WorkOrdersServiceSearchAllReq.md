@@ -22,6 +22,8 @@ from message Scailo.WorkOrdersServiceSearchAllReq
 
 ### Properties
 
+- [buyerClientId](WorkOrdersServiceSearchAllReq.md#buyerclientid)
+- [consigneeClientId](WorkOrdersServiceSearchAllReq.md#consigneeclientid)
 - [count](WorkOrdersServiceSearchAllReq.md#count)
 - [entityUuid](WorkOrdersServiceSearchAllReq.md#entityuuid)
 - [isActive](WorkOrdersServiceSearchAllReq.md#isactive)
@@ -76,9 +78,42 @@ Message\&lt;WorkOrdersServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1861
+src/work_orders.scailo_pb.ts:1876
 
 ## Properties
+
+### buyerClientId
+
+• **buyerClientId**: `bigint` = `protoInt64.zero`
+
+The associated buyer client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 buyer_client_id = 51;
+
+#### Defined in
+
+src/work_orders.scailo_pb.ts:1874
+
+___
+
+### consigneeClientId
+
+• **consigneeClientId**: `bigint` = `protoInt64.zero`
+
+Sales Order related filters
+The associated consignee client ID of the linked sales order
+
+**`Generated`**
+
+from field: uint64 consignee_client_id = 50;
+
+#### Defined in
+
+src/work_orders.scailo_pb.ts:1867
+
+___
 
 ### count
 
@@ -262,7 +297,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1868
+src/work_orders.scailo_pb.ts:1883
 
 ___
 
@@ -272,7 +307,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1866
+src/work_orders.scailo_pb.ts:1881
 
 ___
 
@@ -282,7 +317,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1867
+src/work_orders.scailo_pb.ts:1882
 
 ## Methods
 
@@ -570,7 +605,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1894
+src/work_orders.scailo_pb.ts:1911
 
 ___
 
@@ -591,7 +626,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1882
+src/work_orders.scailo_pb.ts:1899
 
 ___
 
@@ -612,7 +647,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1886
+src/work_orders.scailo_pb.ts:1903
 
 ___
 
@@ -633,4 +668,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1890
+src/work_orders.scailo_pb.ts:1907

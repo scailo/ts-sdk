@@ -93,7 +93,13 @@ export declare enum CLIENT_STREAM_REF_FROM {
      *
      * @generated from enum value: CLIENT_STREAM_REF_FROM_SALES_ENQUIRY = 50;
      */
-    CLIENT_STREAM_REF_FROM_SALES_ENQUIRY = 50
+    CLIENT_STREAM_REF_FROM_SALES_ENQUIRY = 50,
+    /**
+     * Denotes that the reference is from a work order
+     *
+     * @generated from enum value: CLIENT_STREAM_REF_FROM_WORK_ORDER = 60;
+     */
+    CLIENT_STREAM_REF_FROM_WORK_ORDER = 60
 }
 /**
  *

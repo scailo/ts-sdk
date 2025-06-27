@@ -85,7 +85,7 @@ Message\&lt;ClientStreamsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1053
+src/client_streams.scailo_pb.ts:1061
 
 ## Properties
 
@@ -102,7 +102,7 @@ from field: uint64 client_id = 40;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1021
+src/client_streams.scailo_pb.ts:1029
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 client_subscriber_user_id = 61;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1051
+src/client_streams.scailo_pb.ts:1059
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:999
+src/client_streams.scailo_pb.ts:1007
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:992
+src/client_streams.scailo_pb.ts:1000
 
 ___
 
@@ -166,7 +166,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:922
+src/client_streams.scailo_pb.ts:930
 
 ___
 
@@ -182,7 +182,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:957
+src/client_streams.scailo_pb.ts:965
 
 ___
 
@@ -198,7 +198,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:950
+src/client_streams.scailo_pb.ts:958
 
 ___
 
@@ -214,7 +214,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:978
+src/client_streams.scailo_pb.ts:986
 
 ___
 
@@ -230,7 +230,7 @@ from field: string internal_ref = 18;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1006
+src/client_streams.scailo_pb.ts:1014
 
 ___
 
@@ -246,7 +246,7 @@ from field: uint64 internal_subscriber_user_id = 60;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1044
+src/client_streams.scailo_pb.ts:1052
 
 ___
 
@@ -262,7 +262,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:915
+src/client_streams.scailo_pb.ts:923
 
 ___
 
@@ -278,7 +278,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:971
+src/client_streams.scailo_pb.ts:979
 
 ___
 
@@ -294,7 +294,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:964
+src/client_streams.scailo_pb.ts:972
 
 ___
 
@@ -310,7 +310,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:929
+src/client_streams.scailo_pb.ts:937
 
 ___
 
@@ -326,7 +326,7 @@ from field: Scailo.CLIENT_STREAM_REF_FROM ref_from = 41;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1028
+src/client_streams.scailo_pb.ts:1036
 
 ___
 
@@ -344,7 +344,7 @@ from field: uint64 ref_id = 42;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1037
+src/client_streams.scailo_pb.ts:1045
 
 ___
 
@@ -360,7 +360,7 @@ from field: Scailo.CLIENT_STREAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:943
+src/client_streams.scailo_pb.ts:951
 
 ___
 
@@ -376,7 +376,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:936
+src/client_streams.scailo_pb.ts:944
 
 ___
 
@@ -392,7 +392,7 @@ from field: Scailo.CLIENT_STREAM_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:985
+src/client_streams.scailo_pb.ts:993
 
 ___
 
@@ -408,7 +408,7 @@ from field: string title = 30;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1013
+src/client_streams.scailo_pb.ts:1021
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1060
+src/client_streams.scailo_pb.ts:1068
 
 ___
 
@@ -428,7 +428,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1058
+src/client_streams.scailo_pb.ts:1066
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1059
+src/client_streams.scailo_pb.ts:1067
 
 ## Methods
 
@@ -726,7 +726,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1095
+src/client_streams.scailo_pb.ts:1103
 
 ___
 
@@ -747,7 +747,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1083
+src/client_streams.scailo_pb.ts:1091
 
 ___
 
@@ -768,7 +768,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1087
+src/client_streams.scailo_pb.ts:1095
 
 ___
 
@@ -789,4 +789,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:1091
+src/client_streams.scailo_pb.ts:1099

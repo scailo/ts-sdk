@@ -21,6 +21,7 @@ from enum Scailo.CLIENT_STREAM_REF_FROM
 - [CLIENT\_STREAM\_REF\_FROM\_SALES\_QUOTATION](CLIENT_STREAM_REF_FROM.md#client_stream_ref_from_sales_quotation)
 - [CLIENT\_STREAM\_REF\_FROM\_SALES\_RECEIPT](CLIENT_STREAM_REF_FROM.md#client_stream_ref_from_sales_receipt)
 - [CLIENT\_STREAM\_REF\_FROM\_SALES\_RETURN](CLIENT_STREAM_REF_FROM.md#client_stream_ref_from_sales_return)
+- [CLIENT\_STREAM\_REF\_FROM\_WORK\_ORDER](CLIENT_STREAM_REF_FROM.md#client_stream_ref_from_work_order)
 
 ## Enumeration Members
 
@@ -165,3 +166,19 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_RETURN = 20;
 #### Defined in
 
 src/client_streams.scailo_pb.ts:93
+
+___
+
+### CLIENT\_STREAM\_REF\_FROM\_WORK\_ORDER
+
+• **CLIENT\_STREAM\_REF\_FROM\_WORK\_ORDER** = ``60``
+
+Denotes that the reference is from a work order
+
+**`Generated`**
+
+from enum value: CLIENT_STREAM_REF_FROM_WORK_ORDER = 60;
+
+#### Defined in
+
+src/client_streams.scailo_pb.ts:128

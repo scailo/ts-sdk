@@ -30,7 +30,7 @@ from enum value: CLIENT_STREAM_MESSAGE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:241
+src/client_streams.scailo_pb.ts:249
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: CLIENT_STREAM_MESSAGE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:234
+src/client_streams.scailo_pb.ts:242
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: CLIENT_STREAM_MESSAGE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:248
+src/client_streams.scailo_pb.ts:256

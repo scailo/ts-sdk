@@ -66,7 +66,7 @@ Message\&lt;ClientStreamClientSubscribersList\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2302
+src/client_streams.scailo_pb.ts:2310
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ClientStreamClientSubscriber list = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2300
+src/client_streams.scailo_pb.ts:2308
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2309
+src/client_streams.scailo_pb.ts:2317
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2307
+src/client_streams.scailo_pb.ts:2315
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2308
+src/client_streams.scailo_pb.ts:2316
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2325
+src/client_streams.scailo_pb.ts:2333
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2313
+src/client_streams.scailo_pb.ts:2321
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2317
+src/client_streams.scailo_pb.ts:2325
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:2321
+src/client_streams.scailo_pb.ts:2329

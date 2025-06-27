@@ -70,7 +70,7 @@ Message\&lt;ClientStreamsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:519
+src/client_streams.scailo_pb.ts:527
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:496
+src/client_streams.scailo_pb.ts:504
 
 ___
 
@@ -102,7 +102,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:503
+src/client_streams.scailo_pb.ts:511
 
 ___
 
@@ -118,7 +118,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:517
+src/client_streams.scailo_pb.ts:525
 
 ___
 
@@ -134,7 +134,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:489
+src/client_streams.scailo_pb.ts:497
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 vault_folder_id = 7;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:510
+src/client_streams.scailo_pb.ts:518
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:526
+src/client_streams.scailo_pb.ts:534
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:524
+src/client_streams.scailo_pb.ts:532
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:525
+src/client_streams.scailo_pb.ts:533
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:546
+src/client_streams.scailo_pb.ts:554
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:534
+src/client_streams.scailo_pb.ts:542
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:538
+src/client_streams.scailo_pb.ts:546
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:542
+src/client_streams.scailo_pb.ts:550
