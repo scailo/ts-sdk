@@ -34,7 +34,7 @@ from enum value: CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/families.scailo_pb.ts:97
+src/families.scailo_pb.ts:98
 
 ___
 
@@ -50,7 +50,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_INTAKE = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:104
+src/families.scailo_pb.ts:105
 
 ___
 
@@ -66,7 +66,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_SHELF_LIFE = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:111
+src/families.scailo_pb.ts:112
 
 ___
 
@@ -82,7 +82,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_WARRANTY = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:118
+src/families.scailo_pb.ts:119
 
 ___
 
@@ -98,7 +98,7 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_INTAKE = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:125
+src/families.scailo_pb.ts:126
 
 ___
 
@@ -114,7 +114,7 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_SHELF_LIFE = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:132
+src/families.scailo_pb.ts:133
 
 ___
 
@@ -130,4 +130,4 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_WARRANTY = 6;
 
 #### Defined in
 
-src/families.scailo_pb.ts:139
+src/families.scailo_pb.ts:140

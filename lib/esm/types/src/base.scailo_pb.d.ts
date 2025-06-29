@@ -96,6 +96,12 @@ export declare enum FORM_TYPE {
      */
     FORM_TYPE_ANY_UNSPECIFIED = 0,
     /**
+     * The form type is "family-form"
+     *
+     * @generated from enum value: FORM_TYPE_FAMILY_FORM = 5;
+     */
+    FORM_TYPE_FAMILY_FORM = 5,
+    /**
      * The form type is "sales-enquiry-form"
      *
      * @generated from enum value: FORM_TYPE_SALES_ENQUIRY_FORM = 10;

@@ -37,7 +37,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1099
+src/base.scailo_pb.ts:1107
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER = 100;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1162
+src/base.scailo_pb.ts:1170
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_FAMILY = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1106
+src/base.scailo_pb.ts:1114
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1155
+src/base.scailo_pb.ts:1163
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_PURCHASE_ORDER = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1113
+src/base.scailo_pb.ts:1121
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_ENQUIRY = 4;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1134
+src/base.scailo_pb.ts:1142
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_INVOICE = 6;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1148
+src/base.scailo_pb.ts:1156
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_ORDER = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1127
+src/base.scailo_pb.ts:1135
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_QUOTATION = 5;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1141
+src/base.scailo_pb.ts:1149
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER = 21;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1120
+src/base.scailo_pb.ts:1128

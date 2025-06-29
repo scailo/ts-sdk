@@ -35,7 +35,7 @@ from enum value: FAMILY_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/families.scailo_pb.ts:22
+src/families.scailo_pb.ts:23
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: FAMILY_TYPE_COMPONENT = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:29
+src/families.scailo_pb.ts:30
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: FAMILY_TYPE_EQUIPMENT = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:36
+src/families.scailo_pb.ts:37
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: FAMILY_TYPE_FEEDSTOCK = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:43
+src/families.scailo_pb.ts:44
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: FAMILY_TYPE_INFRASTRUCTURE = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:50
+src/families.scailo_pb.ts:51
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: FAMILY_TYPE_MERCHANDISE = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:57
+src/families.scailo_pb.ts:58
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: FAMILY_TYPE_PRODUCT = 6;
 
 #### Defined in
 
-src/families.scailo_pb.ts:64
+src/families.scailo_pb.ts:65
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: FAMILY_TYPE_SERVICE = 7;
 
 #### Defined in
 
-src/families.scailo_pb.ts:71
+src/families.scailo_pb.ts:72

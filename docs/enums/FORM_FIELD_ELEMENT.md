@@ -36,7 +36,7 @@ from enum value: FORM_FIELD_ELEMENT_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:566
+src/base.scailo_pb.ts:574
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: FORM_FIELD_ELEMENT_CHECKBOX = 30;
 
 #### Defined in
 
-src/base.scailo_pb.ts:587
+src/base.scailo_pb.ts:595
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: FORM_FIELD_ELEMENT_DATE = 60;
 
 #### Defined in
 
-src/base.scailo_pb.ts:608
+src/base.scailo_pb.ts:616
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: FORM_FIELD_ELEMENT_EMAIL = 70;
 
 #### Defined in
 
-src/base.scailo_pb.ts:615
+src/base.scailo_pb.ts:623
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: FORM_FIELD_ELEMENT_INPUT = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:573
+src/base.scailo_pb.ts:581
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: FORM_FIELD_ELEMENT_PHONE = 80;
 
 #### Defined in
 
-src/base.scailo_pb.ts:622
+src/base.scailo_pb.ts:630
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: FORM_FIELD_ELEMENT_RADIO = 20;
 
 #### Defined in
 
-src/base.scailo_pb.ts:580
+src/base.scailo_pb.ts:588
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: FORM_FIELD_ELEMENT_SELECT = 40;
 
 #### Defined in
 
-src/base.scailo_pb.ts:594
+src/base.scailo_pb.ts:602
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: FORM_FIELD_ELEMENT_TEXTAREA = 50;
 
 #### Defined in
 
-src/base.scailo_pb.ts:601
+src/base.scailo_pb.ts:609

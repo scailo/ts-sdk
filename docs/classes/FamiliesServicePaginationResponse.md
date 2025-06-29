@@ -69,7 +69,7 @@ Message\&lt;FamiliesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1058
+src/families.scailo_pb.ts:1083
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1035
+src/families.scailo_pb.ts:1060
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1042
+src/families.scailo_pb.ts:1067
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Family payload = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1056
+src/families.scailo_pb.ts:1081
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1049
+src/families.scailo_pb.ts:1074
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1065
+src/families.scailo_pb.ts:1090
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1063
+src/families.scailo_pb.ts:1088
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1064
+src/families.scailo_pb.ts:1089
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1084
+src/families.scailo_pb.ts:1109
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1072
+src/families.scailo_pb.ts:1097
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1076
+src/families.scailo_pb.ts:1101
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1080
+src/families.scailo_pb.ts:1105

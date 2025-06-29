@@ -1,5 +1,6 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
@@ -330,6 +331,12 @@ export declare class FamiliesServiceCreateRequest extends Message<FamiliesServic
      * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 28;
      */
     consumptionSequence: CONSUMPTION_SEQUENCE;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
+     */
+    formData: FormFieldDatumCreateRequest[];
     constructor(data?: PartialMessage<FamiliesServiceCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FamiliesServiceCreateRequest";
@@ -466,6 +473,12 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
      * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 28;
      */
     consumptionSequence: CONSUMPTION_SEQUENCE;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
+     */
+    formData: FormFieldDatumCreateRequest[];
     constructor(data?: PartialMessage<FamiliesServiceUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FamiliesServiceUpdateRequest";
@@ -620,6 +633,12 @@ export declare class Family extends Message<Family> {
      * @generated from field: uint64 amendment_count = 40;
      */
     amendmentCount: bigint;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatum form_data = 50;
+     */
+    formData: FormFieldDatum[];
     constructor(data?: PartialMessage<Family>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.Family";
@@ -942,6 +961,12 @@ export declare class FamiliesServiceFilterReq extends Message<FamiliesServiceFil
      * @generated from field: uint64 label_id = 60;
      */
     labelId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<FamiliesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FamiliesServiceFilterReq";
@@ -1126,6 +1151,12 @@ export declare class FamiliesServiceCountReq extends Message<FamiliesServiceCoun
      * @generated from field: uint64 label_id = 60;
      */
     labelId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<FamiliesServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FamiliesServiceCountReq";

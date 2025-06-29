@@ -5,6 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 
 /**
@@ -438,6 +439,13 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
    */
   consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
 
+  /**
+   * The list of dynamic forms
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
+   */
+  formData: FormFieldDatumCreateRequest[] = [];
+
   constructor(data?: PartialMessage<FamiliesServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -465,6 +473,7 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
     { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 28, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
+    { no: 50, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceCreateRequest {
@@ -631,6 +640,13 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
    */
   consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
 
+  /**
+   * The list of dynamic forms
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
+   */
+  formData: FormFieldDatumCreateRequest[] = [];
+
   constructor(data?: PartialMessage<FamiliesServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -659,6 +675,7 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
     { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 28, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
+    { no: 50, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdateRequest {
@@ -846,6 +863,13 @@ export class Family extends Message<Family> {
    */
   amendmentCount = protoInt64.zero;
 
+  /**
+   * The list of dynamic forms
+   *
+   * @generated from field: repeated Scailo.FormFieldDatum form_data = 50;
+   */
+  formData: FormFieldDatum[] = [];
+
   constructor(data?: PartialMessage<Family>) {
     super();
     proto3.util.initPartial(data, this);
@@ -877,6 +901,7 @@ export class Family extends Message<Family> {
     { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 29, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
     { no: 40, name: "amendment_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 50, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Family {
@@ -1317,6 +1342,13 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    */
   labelId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<FamiliesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1357,6 +1389,7 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
     { no: 39, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
     { no: 50, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceFilterReq {
@@ -1579,6 +1612,13 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    */
   labelId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<FamiliesServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1615,6 +1655,7 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
     { no: 39, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
     { no: 50, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceCountReq {

@@ -131,6 +131,13 @@ export enum FORM_TYPE {
   FORM_TYPE_ANY_UNSPECIFIED = 0,
 
   /**
+   * The form type is "family-form"
+   *
+   * @generated from enum value: FORM_TYPE_FAMILY_FORM = 5;
+   */
+  FORM_TYPE_FAMILY_FORM = 5,
+
+  /**
    * The form type is "sales-enquiry-form"
    *
    * @generated from enum value: FORM_TYPE_SALES_ENQUIRY_FORM = 10;
@@ -497,6 +504,7 @@ export enum FORM_TYPE {
 // Retrieve enum metadata with: proto3.getEnumType(FORM_TYPE)
 proto3.util.setEnumType(FORM_TYPE, "Scailo.FORM_TYPE", [
   { no: 0, name: "FORM_TYPE_ANY_UNSPECIFIED" },
+  { no: 5, name: "FORM_TYPE_FAMILY_FORM" },
   { no: 10, name: "FORM_TYPE_SALES_ENQUIRY_FORM" },
   { no: 20, name: "FORM_TYPE_PURCHASE_ENQUIRY_FORM" },
   { no: 30, name: "FORM_TYPE_PROJECT_FORM" },

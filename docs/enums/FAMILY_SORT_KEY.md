@@ -39,7 +39,7 @@ from enum value: FAMILY_SORT_KEY_AMENDMENT_COUNT = 15;
 
 #### Defined in
 
-src/families.scailo_pb.ts:241
+src/families.scailo_pb.ts:242
 
 ___
 
@@ -55,7 +55,7 @@ from enum value: FAMILY_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:192
+src/families.scailo_pb.ts:193
 
 ___
 
@@ -71,7 +71,7 @@ from enum value: FAMILY_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:185
+src/families.scailo_pb.ts:186
 
 ___
 
@@ -87,7 +87,7 @@ from enum value: FAMILY_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:199
+src/families.scailo_pb.ts:200
 
 ___
 
@@ -103,7 +103,7 @@ from enum value: FAMILY_SORT_KEY_CODE = 12;
 
 #### Defined in
 
-src/families.scailo_pb.ts:220
+src/families.scailo_pb.ts:221
 
 ___
 
@@ -119,7 +119,7 @@ from enum value: FAMILY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:171
+src/families.scailo_pb.ts:172
 
 ___
 
@@ -135,7 +135,7 @@ from enum value: FAMILY_SORT_KEY_DRAWING_NUMBER = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:213
+src/families.scailo_pb.ts:214
 
 ___
 
@@ -151,7 +151,7 @@ from enum value: FAMILY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/families.scailo_pb.ts:164
+src/families.scailo_pb.ts:165
 
 ___
 
@@ -167,7 +167,7 @@ from enum value: FAMILY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:178
+src/families.scailo_pb.ts:179
 
 ___
 
@@ -183,7 +183,7 @@ from enum value: FAMILY_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:206
+src/families.scailo_pb.ts:207
 
 ___
 
@@ -199,7 +199,7 @@ from enum value: FAMILY_SORT_KEY_PRICE = 14;
 
 #### Defined in
 
-src/families.scailo_pb.ts:234
+src/families.scailo_pb.ts:235
 
 ___
 
@@ -215,4 +215,4 @@ from enum value: FAMILY_SORT_KEY_UNIT_QUANTITY = 13;
 
 #### Defined in
 
-src/families.scailo_pb.ts:227
+src/families.scailo_pb.ts:228

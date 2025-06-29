@@ -67,7 +67,7 @@ Message\&lt;FamiliesServiceUnitConversionPresenceRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2226
+src/families.scailo_pb.ts:2267
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2217
+src/families.scailo_pb.ts:2258
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 uom_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2224
+src/families.scailo_pb.ts:2265
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2233
+src/families.scailo_pb.ts:2274
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2231
+src/families.scailo_pb.ts:2272
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2232
+src/families.scailo_pb.ts:2273
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2250
+src/families.scailo_pb.ts:2291
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2238
+src/families.scailo_pb.ts:2279
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2242
+src/families.scailo_pb.ts:2283
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2246
+src/families.scailo_pb.ts:2287
