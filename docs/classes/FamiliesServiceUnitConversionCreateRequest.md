@@ -70,7 +70,7 @@ Message\&lt;FamiliesServiceUnitConversionCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2338
+src/families.scailo_pb.ts:2290
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: uint64 divisor = 13;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2336
+src/families.scailo_pb.ts:2288
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 factor = 12;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2329
+src/families.scailo_pb.ts:2281
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2315
+src/families.scailo_pb.ts:2267
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 uom_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2322
+src/families.scailo_pb.ts:2274
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2308
+src/families.scailo_pb.ts:2260
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2345
+src/families.scailo_pb.ts:2297
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2343
+src/families.scailo_pb.ts:2295
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2344
+src/families.scailo_pb.ts:2296
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2365
+src/families.scailo_pb.ts:2317
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2353
+src/families.scailo_pb.ts:2305
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2357
+src/families.scailo_pb.ts:2309
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2361
+src/families.scailo_pb.ts:2313

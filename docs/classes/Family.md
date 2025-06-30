@@ -27,7 +27,6 @@ from message Scailo.Family
 - [code](Family.md#code)
 - [consumptionSequence](Family.md#consumptionsequence)
 - [description](Family.md#description)
-- [drawingNumber](Family.md#drawingnumber)
 - [entityUuid](Family.md#entityuuid)
 - [familyType](Family.md#familytype)
 - [formData](Family.md#formdata)
@@ -89,7 +88,7 @@ Message\&lt;Family\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:873
+src/families.scailo_pb.ts:842
 
 ## Properties
 
@@ -105,7 +104,7 @@ from field: uint64 amendment_count = 40;
 
 #### Defined in
 
-src/families.scailo_pb.ts:864
+src/families.scailo_pb.ts:833
 
 ___
 
@@ -121,7 +120,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:724
+src/families.scailo_pb.ts:700
 
 ___
 
@@ -137,7 +136,7 @@ from field: string code = 12;
 
 #### Defined in
 
-src/families.scailo_pb.ts:766
+src/families.scailo_pb.ts:742
 
 ___
 
@@ -153,7 +152,7 @@ from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 29;
 
 #### Defined in
 
-src/families.scailo_pb.ts:857
+src/families.scailo_pb.ts:826
 
 ___
 
@@ -169,23 +168,7 @@ from field: string description = 14;
 
 #### Defined in
 
-src/families.scailo_pb.ts:780
-
-___
-
-### drawingNumber
-
-• **drawingNumber**: `string` = `""`
-
-The drawing number of the family
-
-**`Generated`**
-
-from field: string drawing_number = 13;
-
-#### Defined in
-
-src/families.scailo_pb.ts:773
+src/families.scailo_pb.ts:749
 
 ___
 
@@ -201,7 +184,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:710
+src/families.scailo_pb.ts:686
 
 ___
 
@@ -217,7 +200,7 @@ from field: Scailo.FAMILY_TYPE family_type = 15;
 
 #### Defined in
 
-src/families.scailo_pb.ts:787
+src/families.scailo_pb.ts:756
 
 ___
 
@@ -233,7 +216,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 50;
 
 #### Defined in
 
-src/families.scailo_pb.ts:871
+src/families.scailo_pb.ts:840
 
 ___
 
@@ -249,7 +232,7 @@ from field: string hsn_sac_code = 16;
 
 #### Defined in
 
-src/families.scailo_pb.ts:794
+src/families.scailo_pb.ts:763
 
 ___
 
@@ -265,7 +248,7 @@ from field: bool is_leaf = 20;
 
 #### Defined in
 
-src/families.scailo_pb.ts:822
+src/families.scailo_pb.ts:791
 
 ___
 
@@ -281,7 +264,7 @@ from field: uint64 ledger_id = 21;
 
 #### Defined in
 
-src/families.scailo_pb.ts:829
+src/families.scailo_pb.ts:798
 
 ___
 
@@ -297,7 +280,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:738
+src/families.scailo_pb.ts:714
 
 ___
 
@@ -313,7 +296,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:717
+src/families.scailo_pb.ts:693
 
 ___
 
@@ -329,7 +312,7 @@ from field: uint64 min_stock_to_maintain = 27;
 
 #### Defined in
 
-src/families.scailo_pb.ts:850
+src/families.scailo_pb.ts:819
 
 ___
 
@@ -345,7 +328,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:752
+src/families.scailo_pb.ts:728
 
 ___
 
@@ -361,7 +344,7 @@ from field: uint64 parent_id = 19;
 
 #### Defined in
 
-src/families.scailo_pb.ts:815
+src/families.scailo_pb.ts:784
 
 ___
 
@@ -377,7 +360,7 @@ from field: uint64 price = 26;
 
 #### Defined in
 
-src/families.scailo_pb.ts:843
+src/families.scailo_pb.ts:812
 
 ___
 
@@ -393,7 +376,7 @@ from field: string print_name = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:759
+src/families.scailo_pb.ts:735
 
 ___
 
@@ -409,7 +392,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:731
+src/families.scailo_pb.ts:707
 
 ___
 
@@ -425,7 +408,7 @@ from field: uint64 tax_group_id = 23;
 
 #### Defined in
 
-src/families.scailo_pb.ts:836
+src/families.scailo_pb.ts:805
 
 ___
 
@@ -441,7 +424,7 @@ from field: uint64 unit_quantity = 18;
 
 #### Defined in
 
-src/families.scailo_pb.ts:808
+src/families.scailo_pb.ts:777
 
 ___
 
@@ -457,7 +440,7 @@ from field: uint64 uom_id = 17;
 
 #### Defined in
 
-src/families.scailo_pb.ts:801
+src/families.scailo_pb.ts:770
 
 ___
 
@@ -473,7 +456,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/families.scailo_pb.ts:745
+src/families.scailo_pb.ts:721
 
 ___
 
@@ -483,7 +466,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:880
+src/families.scailo_pb.ts:849
 
 ___
 
@@ -493,7 +476,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:878
+src/families.scailo_pb.ts:847
 
 ___
 
@@ -503,7 +486,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:879
+src/families.scailo_pb.ts:848
 
 ## Methods
 
@@ -791,7 +774,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:919
+src/families.scailo_pb.ts:887
 
 ___
 
@@ -812,7 +795,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:907
+src/families.scailo_pb.ts:875
 
 ___
 
@@ -833,7 +816,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:911
+src/families.scailo_pb.ts:879
 
 ___
 
@@ -854,4 +837,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:915
+src/families.scailo_pb.ts:883

@@ -18,7 +18,6 @@ from enum Scailo.FAMILY_SORT_KEY
 - [FAMILY\_SORT\_KEY\_APPROVER\_ROLE\_ID](FAMILY_SORT_KEY.md#family_sort_key_approver_role_id)
 - [FAMILY\_SORT\_KEY\_CODE](FAMILY_SORT_KEY.md#family_sort_key_code)
 - [FAMILY\_SORT\_KEY\_CREATED\_AT](FAMILY_SORT_KEY.md#family_sort_key_created_at)
-- [FAMILY\_SORT\_KEY\_DRAWING\_NUMBER](FAMILY_SORT_KEY.md#family_sort_key_drawing_number)
 - [FAMILY\_SORT\_KEY\_ID\_UNSPECIFIED](FAMILY_SORT_KEY.md#family_sort_key_id_unspecified)
 - [FAMILY\_SORT\_KEY\_MODIFIED\_AT](FAMILY_SORT_KEY.md#family_sort_key_modified_at)
 - [FAMILY\_SORT\_KEY\_NAME](FAMILY_SORT_KEY.md#family_sort_key_name)
@@ -39,7 +38,7 @@ from enum value: FAMILY_SORT_KEY_AMENDMENT_COUNT = 15;
 
 #### Defined in
 
-src/families.scailo_pb.ts:242
+src/families.scailo_pb.ts:235
 
 ___
 
@@ -103,7 +102,7 @@ from enum value: FAMILY_SORT_KEY_CODE = 12;
 
 #### Defined in
 
-src/families.scailo_pb.ts:221
+src/families.scailo_pb.ts:214
 
 ___
 
@@ -120,22 +119,6 @@ from enum value: FAMILY_SORT_KEY_CREATED_AT = 1;
 #### Defined in
 
 src/families.scailo_pb.ts:172
-
-___
-
-### FAMILY\_SORT\_KEY\_DRAWING\_NUMBER
-
-• **FAMILY\_SORT\_KEY\_DRAWING\_NUMBER** = ``11``
-
-Fetch ordered results by the drawing number
-
-**`Generated`**
-
-from enum value: FAMILY_SORT_KEY_DRAWING_NUMBER = 11;
-
-#### Defined in
-
-src/families.scailo_pb.ts:214
 
 ___
 
@@ -199,7 +182,7 @@ from enum value: FAMILY_SORT_KEY_PRICE = 14;
 
 #### Defined in
 
-src/families.scailo_pb.ts:235
+src/families.scailo_pb.ts:228
 
 ___
 
@@ -215,4 +198,4 @@ from enum value: FAMILY_SORT_KEY_UNIT_QUANTITY = 13;
 
 #### Defined in
 
-src/families.scailo_pb.ts:228
+src/families.scailo_pb.ts:221

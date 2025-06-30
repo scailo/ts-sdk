@@ -31,7 +31,6 @@ from message Scailo.FamiliesServiceFilterReq
 - [count](FamiliesServiceFilterReq.md#count)
 - [creationTimestampEnd](FamiliesServiceFilterReq.md#creationtimestampend)
 - [creationTimestampStart](FamiliesServiceFilterReq.md#creationtimestampstart)
-- [drawingNumber](FamiliesServiceFilterReq.md#drawingnumber)
 - [entityUuid](FamiliesServiceFilterReq.md#entityuuid)
 - [familyType](FamiliesServiceFilterReq.md#familytype)
 - [formData](FamiliesServiceFilterReq.md#formdata)
@@ -98,7 +97,7 @@ Message\&lt;FamiliesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1352
+src/families.scailo_pb.ts:1313
 
 ## Properties
 
@@ -114,7 +113,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1224
+src/families.scailo_pb.ts:1192
 
 ___
 
@@ -130,7 +129,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1217
+src/families.scailo_pb.ts:1185
 
 ___
 
@@ -146,7 +145,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1210
+src/families.scailo_pb.ts:1178
 
 ___
 
@@ -162,7 +161,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1231
+src/families.scailo_pb.ts:1199
 
 ___
 
@@ -178,7 +177,7 @@ from field: string code = 22;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1245
+src/families.scailo_pb.ts:1213
 
 ___
 
@@ -194,7 +193,7 @@ from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 39;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1329
+src/families.scailo_pb.ts:1290
 
 ___
 
@@ -210,7 +209,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1133
+src/families.scailo_pb.ts:1101
 
 ___
 
@@ -226,7 +225,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1168
+src/families.scailo_pb.ts:1136
 
 ___
 
@@ -242,23 +241,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1161
-
-___
-
-### drawingNumber
-
-• **drawingNumber**: `string` = `""`
-
-The drawing number of the family
-
-**`Generated`**
-
-from field: string drawing_number = 23;
-
-#### Defined in
-
-src/families.scailo_pb.ts:1252
+src/families.scailo_pb.ts:1129
 
 ___
 
@@ -274,7 +257,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1189
+src/families.scailo_pb.ts:1157
 
 ___
 
@@ -290,7 +273,7 @@ from field: Scailo.FAMILY_TYPE family_type = 25;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1259
+src/families.scailo_pb.ts:1220
 
 ___
 
@@ -306,7 +289,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1350
+src/families.scailo_pb.ts:1311
 
 ___
 
@@ -322,7 +305,7 @@ from field: string hsn_sac_code = 26;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1273
+src/families.scailo_pb.ts:1234
 
 ___
 
@@ -338,7 +321,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1126
+src/families.scailo_pb.ts:1094
 
 ___
 
@@ -354,7 +337,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 30;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1301
+src/families.scailo_pb.ts:1262
 
 ___
 
@@ -370,7 +353,7 @@ from field: uint64 label_id = 60;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1343
+src/families.scailo_pb.ts:1304
 
 ___
 
@@ -386,7 +369,7 @@ from field: uint64 ledger_id = 31;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1308
+src/families.scailo_pb.ts:1269
 
 ___
 
@@ -402,7 +385,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1182
+src/families.scailo_pb.ts:1150
 
 ___
 
@@ -418,7 +401,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1175
+src/families.scailo_pb.ts:1143
 
 ___
 
@@ -434,7 +417,7 @@ from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1266
+src/families.scailo_pb.ts:1227
 
 ___
 
@@ -450,7 +433,7 @@ from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1203
+src/families.scailo_pb.ts:1171
 
 ___
 
@@ -466,7 +449,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1238
+src/families.scailo_pb.ts:1206
 
 ___
 
@@ -482,7 +465,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1140
+src/families.scailo_pb.ts:1108
 
 ___
 
@@ -498,7 +481,7 @@ from field: uint64 parent_id = 29;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1294
+src/families.scailo_pb.ts:1255
 
 ___
 
@@ -514,7 +497,7 @@ from field: uint64 parent_storage_id = 50;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1336
+src/families.scailo_pb.ts:1297
 
 ___
 
@@ -530,7 +513,7 @@ from field: uint64 qc_group_id = 32;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1315
+src/families.scailo_pb.ts:1276
 
 ___
 
@@ -546,7 +529,7 @@ from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1154
+src/families.scailo_pb.ts:1122
 
 ___
 
@@ -562,7 +545,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1147
+src/families.scailo_pb.ts:1115
 
 ___
 
@@ -578,7 +561,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1196
+src/families.scailo_pb.ts:1164
 
 ___
 
@@ -594,7 +577,7 @@ from field: uint64 tax_group_id = 33;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1322
+src/families.scailo_pb.ts:1283
 
 ___
 
@@ -610,7 +593,7 @@ from field: uint64 unit_quantity = 28;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1287
+src/families.scailo_pb.ts:1248
 
 ___
 
@@ -626,7 +609,7 @@ from field: uint64 uom_id = 27;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1280
+src/families.scailo_pb.ts:1241
 
 ___
 
@@ -636,7 +619,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1359
+src/families.scailo_pb.ts:1320
 
 ___
 
@@ -646,7 +629,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1357
+src/families.scailo_pb.ts:1318
 
 ___
 
@@ -656,7 +639,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1358
+src/families.scailo_pb.ts:1319
 
 ## Methods
 
@@ -944,7 +927,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1407
+src/families.scailo_pb.ts:1367
 
 ___
 
@@ -965,7 +948,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1395
+src/families.scailo_pb.ts:1355
 
 ___
 
@@ -986,7 +969,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1399
+src/families.scailo_pb.ts:1359
 
 ___
 
@@ -1007,4 +990,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1403
+src/families.scailo_pb.ts:1363

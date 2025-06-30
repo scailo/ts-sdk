@@ -68,7 +68,7 @@ Message\&lt;FamiliesServiceLabelCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1894
+src/families.scailo_pb.ts:1846
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1885
+src/families.scailo_pb.ts:1837
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 label_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1892
+src/families.scailo_pb.ts:1844
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1878
+src/families.scailo_pb.ts:1830
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1901
+src/families.scailo_pb.ts:1853
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1899
+src/families.scailo_pb.ts:1851
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1900
+src/families.scailo_pb.ts:1852
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1919
+src/families.scailo_pb.ts:1871
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1907
+src/families.scailo_pb.ts:1859
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1911
+src/families.scailo_pb.ts:1863
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1915
+src/families.scailo_pb.ts:1867

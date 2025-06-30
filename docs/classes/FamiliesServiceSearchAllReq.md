@@ -78,7 +78,7 @@ Message\&lt;FamiliesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1776
+src/families.scailo_pb.ts:1728
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1697
+src/families.scailo_pb.ts:1649
 
 ___
 
@@ -110,7 +110,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1725
+src/families.scailo_pb.ts:1677
 
 ___
 
@@ -126,7 +126,7 @@ from field: Scailo.FAMILY_TYPE family_type = 25;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1753
+src/families.scailo_pb.ts:1705
 
 ___
 
@@ -142,7 +142,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1690
+src/families.scailo_pb.ts:1642
 
 ___
 
@@ -158,7 +158,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 30;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1774
+src/families.scailo_pb.ts:1726
 
 ___
 
@@ -174,7 +174,7 @@ from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1760
+src/families.scailo_pb.ts:1712
 
 ___
 
@@ -190,7 +190,7 @@ from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1739
+src/families.scailo_pb.ts:1691
 
 ___
 
@@ -206,7 +206,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1704
+src/families.scailo_pb.ts:1656
 
 ___
 
@@ -222,7 +222,7 @@ from field: uint64 parent_id = 29;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1767
+src/families.scailo_pb.ts:1719
 
 ___
 
@@ -238,7 +238,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1746
+src/families.scailo_pb.ts:1698
 
 ___
 
@@ -254,7 +254,7 @@ from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1718
+src/families.scailo_pb.ts:1670
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1711
+src/families.scailo_pb.ts:1663
 
 ___
 
@@ -286,7 +286,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1732
+src/families.scailo_pb.ts:1684
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1783
+src/families.scailo_pb.ts:1735
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1781
+src/families.scailo_pb.ts:1733
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1782
+src/families.scailo_pb.ts:1734
 
 ## Methods
 
@@ -604,7 +604,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1811
+src/families.scailo_pb.ts:1763
 
 ___
 
@@ -625,7 +625,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1799
+src/families.scailo_pb.ts:1751
 
 ___
 
@@ -646,7 +646,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1803
+src/families.scailo_pb.ts:1755
 
 ___
 
@@ -667,4 +667,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1807
+src/families.scailo_pb.ts:1759

@@ -207,13 +207,6 @@ export enum FAMILY_SORT_KEY {
   FAMILY_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the drawing number
-   *
-   * @generated from enum value: FAMILY_SORT_KEY_DRAWING_NUMBER = 11;
-   */
-  FAMILY_SORT_KEY_DRAWING_NUMBER = 11,
-
-  /**
    * Fetch ordered results by the code
    *
    * @generated from enum value: FAMILY_SORT_KEY_CODE = 12;
@@ -250,7 +243,6 @@ proto3.util.setEnumType(FAMILY_SORT_KEY, "Scailo.FAMILY_SORT_KEY", [
   { no: 4, name: "FAMILY_SORT_KEY_APPROVED_BY" },
   { no: 5, name: "FAMILY_SORT_KEY_APPROVER_ROLE_ID" },
   { no: 10, name: "FAMILY_SORT_KEY_NAME" },
-  { no: 11, name: "FAMILY_SORT_KEY_DRAWING_NUMBER" },
   { no: 12, name: "FAMILY_SORT_KEY_CODE" },
   { no: 13, name: "FAMILY_SORT_KEY_UNIT_QUANTITY" },
   { no: 14, name: "FAMILY_SORT_KEY_PRICE" },
@@ -347,13 +339,6 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
    * @generated from field: string code = 12;
    */
   code = "";
-
-  /**
-   * The drawing number of the family
-   *
-   * @generated from field: string drawing_number = 13;
-   */
-  drawingNumber = "";
 
   /**
    * The description of the family
@@ -460,7 +445,6 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
     { no: 16, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -548,13 +532,6 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
    * @generated from field: string code = 12;
    */
   code = "";
-
-  /**
-   * The drawing number of the family
-   *
-   * @generated from field: string drawing_number = 13;
-   */
-  drawingNumber = "";
 
   /**
    * The description of the family
@@ -662,7 +639,6 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
     { no: 16, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -764,13 +740,6 @@ export class Family extends Message<Family> {
    * @generated from field: string code = 12;
    */
   code = "";
-
-  /**
-   * The drawing number of the family
-   *
-   * @generated from field: string drawing_number = 13;
-   */
-  drawingNumber = "";
 
   /**
    * The description of the family
@@ -887,7 +856,6 @@ export class Family extends Message<Family> {
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
     { no: 16, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -1245,13 +1213,6 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
   code = "";
 
   /**
-   * The drawing number of the family
-   *
-   * @generated from field: string drawing_number = 23;
-   */
-  drawingNumber = "";
-
-  /**
    * The type of the family
    *
    * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
@@ -1375,7 +1336,6 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
     { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 23, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
     { no: 250, name: "multi_family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), repeated: true },
     { no: 26, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -1515,13 +1475,6 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
   code = "";
 
   /**
-   * The drawing number of the family
-   *
-   * @generated from field: string drawing_number = 23;
-   */
-  drawingNumber = "";
-
-  /**
    * The type of the family
    *
    * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
@@ -1641,7 +1594,6 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
     { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 23, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
     { no: 250, name: "multi_family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), repeated: true },
     { no: 26, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },

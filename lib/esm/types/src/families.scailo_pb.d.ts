@@ -158,12 +158,6 @@ export declare enum FAMILY_SORT_KEY {
      */
     FAMILY_SORT_KEY_NAME = 10,
     /**
-     * Fetch ordered results by the drawing number
-     *
-     * @generated from enum value: FAMILY_SORT_KEY_DRAWING_NUMBER = 11;
-     */
-    FAMILY_SORT_KEY_DRAWING_NUMBER = 11,
-    /**
      * Fetch ordered results by the code
      *
      * @generated from enum value: FAMILY_SORT_KEY_CODE = 12;
@@ -253,12 +247,6 @@ export declare class FamiliesServiceCreateRequest extends Message<FamiliesServic
      * @generated from field: string code = 12;
      */
     code: string;
-    /**
-     * The drawing number of the family
-     *
-     * @generated from field: string drawing_number = 13;
-     */
-    drawingNumber: string;
     /**
      * The description of the family
      *
@@ -395,12 +383,6 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
      * @generated from field: string code = 12;
      */
     code: string;
-    /**
-     * The drawing number of the family
-     *
-     * @generated from field: string drawing_number = 13;
-     */
-    drawingNumber: string;
     /**
      * The description of the family
      *
@@ -549,12 +531,6 @@ export declare class Family extends Message<Family> {
      * @generated from field: string code = 12;
      */
     code: string;
-    /**
-     * The drawing number of the family
-     *
-     * @generated from field: string drawing_number = 13;
-     */
-    drawingNumber: string;
     /**
      * The description of the family
      *
@@ -878,12 +854,6 @@ export declare class FamiliesServiceFilterReq extends Message<FamiliesServiceFil
      */
     code: string;
     /**
-     * The drawing number of the family
-     *
-     * @generated from field: string drawing_number = 23;
-     */
-    drawingNumber: string;
-    /**
      * The type of the family
      *
      * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
@@ -1067,12 +1037,6 @@ export declare class FamiliesServiceCountReq extends Message<FamiliesServiceCoun
      * @generated from field: string code = 22;
      */
     code: string;
-    /**
-     * The drawing number of the family
-     *
-     * @generated from field: string drawing_number = 23;
-     */
-    drawingNumber: string;
     /**
      * The type of the family
      *

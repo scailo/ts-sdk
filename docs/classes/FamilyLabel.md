@@ -72,7 +72,7 @@ Message\&lt;FamilyLabel\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1980
+src/families.scailo_pb.ts:1932
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1950
+src/families.scailo_pb.ts:1902
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1936
+src/families.scailo_pb.ts:1888
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1971
+src/families.scailo_pb.ts:1923
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 label_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1978
+src/families.scailo_pb.ts:1930
 
 ___
 
@@ -152,7 +152,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1943
+src/families.scailo_pb.ts:1895
 
 ___
 
@@ -168,7 +168,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1957
+src/families.scailo_pb.ts:1909
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1964
+src/families.scailo_pb.ts:1916
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1987
+src/families.scailo_pb.ts:1939
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1985
+src/families.scailo_pb.ts:1937
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1986
+src/families.scailo_pb.ts:1938
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2009
+src/families.scailo_pb.ts:1961
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1997
+src/families.scailo_pb.ts:1949
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2001
+src/families.scailo_pb.ts:1953
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2005
+src/families.scailo_pb.ts:1957

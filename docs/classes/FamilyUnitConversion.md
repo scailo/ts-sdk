@@ -74,7 +74,7 @@ Message\&lt;FamilyUnitConversion\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2440
+src/families.scailo_pb.ts:2392
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2396
+src/families.scailo_pb.ts:2348
 
 ___
 
@@ -106,7 +106,7 @@ from field: uint64 divisor = 13;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2438
+src/families.scailo_pb.ts:2390
 
 ___
 
@@ -122,7 +122,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2382
+src/families.scailo_pb.ts:2334
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 factor = 12;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2431
+src/families.scailo_pb.ts:2383
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2417
+src/families.scailo_pb.ts:2369
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2389
+src/families.scailo_pb.ts:2341
 
 ___
 
@@ -186,7 +186,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2403
+src/families.scailo_pb.ts:2355
 
 ___
 
@@ -202,7 +202,7 @@ from field: uint64 uom_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2424
+src/families.scailo_pb.ts:2376
 
 ___
 
@@ -218,7 +218,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2410
+src/families.scailo_pb.ts:2362
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2447
+src/families.scailo_pb.ts:2399
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2445
+src/families.scailo_pb.ts:2397
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2446
+src/families.scailo_pb.ts:2398
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2471
+src/families.scailo_pb.ts:2423
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2459
+src/families.scailo_pb.ts:2411
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2463
+src/families.scailo_pb.ts:2415
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2467
+src/families.scailo_pb.ts:2419
