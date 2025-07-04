@@ -87,6 +87,12 @@ export declare class GeneralSettingsUpdateRequest extends Message<GeneralSetting
      */
     domainName: string;
     /**
+     * The name of the domain using which users can access records without logging in
+     *
+     * @generated from field: string authless_access_domain = 41;
+     */
+    authlessAccessDomain: string;
+    /**
      * The email address from which purchase orders will be sent
      *
      * @generated from field: string purchase_order_sender_email = 50;
@@ -252,6 +258,12 @@ export declare class GeneralSettings extends Message<GeneralSettings> {
      * @generated from field: string domain_name = 40;
      */
     domainName: string;
+    /**
+     * The name of the domain using which users can access records without logging in
+     *
+     * @generated from field: string authless_access_domain = 41;
+     */
+    authlessAccessDomain: string;
     /**
      * The email address from which purchase orders will be sent
      *

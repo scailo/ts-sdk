@@ -26,6 +26,12 @@ export declare class UserLoginRequest extends Message<UserLoginRequest> {
      * @generated from field: string otp = 13;
      */
     otp: string;
+    /**
+     * Optional session expiry time in seconds. The value is ignored if set to 0.
+     *
+     * @generated from field: uint64 expires_in = 20;
+     */
+    expiresIn: bigint;
     constructor(data?: PartialMessage<UserLoginRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.UserLoginRequest";

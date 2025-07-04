@@ -68,7 +68,7 @@ Message\&lt;UserLoginResponse\&gt;.constructor
 
 #### Defined in
 
-src/login.scailo_pb.ts:96
+src/login.scailo_pb.ts:104
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: string auth_token = 2;
 
 #### Defined in
 
-src/login.scailo_pb.ts:87
+src/login.scailo_pb.ts:95
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 expires_at = 3;
 
 #### Defined in
 
-src/login.scailo_pb.ts:94
+src/login.scailo_pb.ts:102
 
 ___
 
@@ -116,7 +116,7 @@ from field: string username = 1;
 
 #### Defined in
 
-src/login.scailo_pb.ts:80
+src/login.scailo_pb.ts:88
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:103
+src/login.scailo_pb.ts:111
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:101
+src/login.scailo_pb.ts:109
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:102
+src/login.scailo_pb.ts:110
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:121
+src/login.scailo_pb.ts:129
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:109
+src/login.scailo_pb.ts:117
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:113
+src/login.scailo_pb.ts:121
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:117
+src/login.scailo_pb.ts:125

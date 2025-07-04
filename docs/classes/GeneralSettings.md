@@ -23,6 +23,7 @@ from message Scailo.GeneralSettings
 ### Properties
 
 - [address](GeneralSettings.md#address)
+- [authlessAccessDomain](GeneralSettings.md#authlessaccessdomain)
 - [autoReqVerifyOnExitRecordEntry](GeneralSettings.md#autoreqverifyonexitrecordentry)
 - [cin](GeneralSettings.md#cin)
 - [city](GeneralSettings.md#city)
@@ -91,7 +92,7 @@ Message\&lt;GeneralSettings\&gt;.constructor
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:425
+src/general_settings.scailo_pb.ts:440
 
 ## Properties
 
@@ -107,7 +108,23 @@ from field: string address = 13;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:283
+src/general_settings.scailo_pb.ts:291
+
+___
+
+### authlessAccessDomain
+
+• **authlessAccessDomain**: `string` = `""`
+
+The name of the domain using which users can access records without logging in
+
+**`Generated`**
+
+from field: string authless_access_domain = 41;
+
+#### Defined in
+
+src/general_settings.scailo_pb.ts:354
 
 ___
 
@@ -123,7 +140,7 @@ from field: bool auto_req_verify_on_exit_record_entry = 72;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:416
+src/general_settings.scailo_pb.ts:431
 
 ___
 
@@ -139,7 +156,7 @@ from field: string cin = 18;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:318
+src/general_settings.scailo_pb.ts:326
 
 ___
 
@@ -155,7 +172,7 @@ from field: string city = 14;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:290
+src/general_settings.scailo_pb.ts:298
 
 ___
 
@@ -171,7 +188,7 @@ from field: string company_name = 10;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:262
+src/general_settings.scailo_pb.ts:270
 
 ___
 
@@ -187,7 +204,7 @@ from field: string country = 17;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:311
+src/general_settings.scailo_pb.ts:319
 
 ___
 
@@ -203,7 +220,7 @@ from field: bool disable_vi_creation_with_bill_date_after_po_approval = 70;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:402
+src/general_settings.scailo_pb.ts:417
 
 ___
 
@@ -219,7 +236,7 @@ from field: string domain_name = 40;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:339
+src/general_settings.scailo_pb.ts:347
 
 ___
 
@@ -235,7 +252,7 @@ from field: string email = 12;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:276
+src/general_settings.scailo_pb.ts:284
 
 ___
 
@@ -251,7 +268,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:248
+src/general_settings.scailo_pb.ts:256
 
 ___
 
@@ -267,7 +284,7 @@ from field: string expense_sender_email = 57;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:395
+src/general_settings.scailo_pb.ts:410
 
 ___
 
@@ -283,7 +300,7 @@ from field: string gstin = 20;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:332
+src/general_settings.scailo_pb.ts:340
 
 ___
 
@@ -299,7 +316,7 @@ from field: string licensed_to = 100;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:423
+src/general_settings.scailo_pb.ts:438
 
 ___
 
@@ -315,7 +332,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:255
+src/general_settings.scailo_pb.ts:263
 
 ___
 
@@ -331,7 +348,7 @@ from field: string pan = 19;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:325
+src/general_settings.scailo_pb.ts:333
 
 ___
 
@@ -347,7 +364,7 @@ from field: string phone = 11;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:269
+src/general_settings.scailo_pb.ts:277
 
 ___
 
@@ -363,7 +380,7 @@ from field: string pin_code = 16;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:304
+src/general_settings.scailo_pb.ts:312
 
 ___
 
@@ -379,7 +396,7 @@ from field: string purchase_order_sender_email = 50;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:346
+src/general_settings.scailo_pb.ts:361
 
 ___
 
@@ -395,7 +412,7 @@ from field: bool require_mfa_for_record_approval = 71;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:409
+src/general_settings.scailo_pb.ts:424
 
 ___
 
@@ -411,7 +428,7 @@ from field: string sales_enquiry_sender_email = 51;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:353
+src/general_settings.scailo_pb.ts:368
 
 ___
 
@@ -427,7 +444,7 @@ from field: string sales_invoice_sender_email = 53;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:367
+src/general_settings.scailo_pb.ts:382
 
 ___
 
@@ -443,7 +460,7 @@ from field: string sales_order_sender_email = 52;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:360
+src/general_settings.scailo_pb.ts:375
 
 ___
 
@@ -459,7 +476,7 @@ from field: string sales_quotation_sender_email = 54;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:374
+src/general_settings.scailo_pb.ts:389
 
 ___
 
@@ -475,7 +492,7 @@ from field: string state = 15;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:297
+src/general_settings.scailo_pb.ts:305
 
 ___
 
@@ -491,7 +508,7 @@ from field: string vendor_invoice_sender_email = 55;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:381
+src/general_settings.scailo_pb.ts:396
 
 ___
 
@@ -507,7 +524,7 @@ from field: string work_order_sender_email = 56;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:388
+src/general_settings.scailo_pb.ts:403
 
 ___
 
@@ -517,7 +534,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:432
+src/general_settings.scailo_pb.ts:447
 
 ___
 
@@ -527,7 +544,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:430
+src/general_settings.scailo_pb.ts:445
 
 ___
 
@@ -537,7 +554,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:431
+src/general_settings.scailo_pb.ts:446
 
 ## Methods
 
@@ -825,7 +842,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:473
+src/general_settings.scailo_pb.ts:489
 
 ___
 
@@ -846,7 +863,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:461
+src/general_settings.scailo_pb.ts:477
 
 ___
 
@@ -867,7 +884,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:465
+src/general_settings.scailo_pb.ts:481
 
 ___
 
@@ -888,4 +905,4 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:469
+src/general_settings.scailo_pb.ts:485

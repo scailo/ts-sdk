@@ -6,6 +6,7 @@
 import { GoodsReceipt, GoodsReceiptAncillaryParameters, GoodsReceiptItem, GoodsReceiptItemHistoryRequest, GoodsReceiptItemProspectiveInfoRequest, GoodsReceiptItemsSearchRequest, GoodsReceiptsItemsList, GoodsReceiptsList, GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest, GoodsReceiptsServiceAutofillRequest, GoodsReceiptsServiceCountReq, GoodsReceiptsServiceCreateRequest, GoodsReceiptsServiceFilterReq, GoodsReceiptsServiceItemCreateRequest, GoodsReceiptsServiceItemUpdateRequest, GoodsReceiptsServicePaginatedItemsResponse, GoodsReceiptsServicePaginationReq, GoodsReceiptsServicePaginationResponse, GoodsReceiptsServiceSearchAllReq, GoodsReceiptsServiceUpdateRequest } from "./goods_receipts.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
 /**
@@ -213,6 +214,17 @@ export const GoodsReceiptsService = {
       name: "IsCompletable",
       I: IdentifierUUID,
       O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Create a magic link
+     *
+     * @generated from rpc Scailo.GoodsReceiptsService.CreateMagicLink
+     */
+    createMagicLink: {
+      name: "CreateMagicLink",
+      I: MagicLinksServiceCreateRequestForSpecificResource,
+      O: MagicLink,
       kind: MethodKind.Unary,
     },
     /**

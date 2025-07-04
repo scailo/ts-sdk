@@ -106,6 +106,13 @@ export class GeneralSettingsUpdateRequest extends Message<GeneralSettingsUpdateR
   domainName = "";
 
   /**
+   * The name of the domain using which users can access records without logging in
+   *
+   * @generated from field: string authless_access_domain = 41;
+   */
+  authlessAccessDomain = "";
+
+  /**
    * The email address from which purchase orders will be sent
    *
    * @generated from field: string purchase_order_sender_email = 50;
@@ -203,6 +210,7 @@ export class GeneralSettingsUpdateRequest extends Message<GeneralSettingsUpdateR
     { no: 19, name: "pan", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "gstin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 40, name: "domain_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 41, name: "authless_access_domain", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 50, name: "purchase_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 51, name: "sales_enquiry_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 52, name: "sales_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -339,6 +347,13 @@ export class GeneralSettings extends Message<GeneralSettings> {
   domainName = "";
 
   /**
+   * The name of the domain using which users can access records without logging in
+   *
+   * @generated from field: string authless_access_domain = 41;
+   */
+  authlessAccessDomain = "";
+
+  /**
    * The email address from which purchase orders will be sent
    *
    * @generated from field: string purchase_order_sender_email = 50;
@@ -444,6 +459,7 @@ export class GeneralSettings extends Message<GeneralSettings> {
     { no: 19, name: "pan", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "gstin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 40, name: "domain_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 41, name: "authless_access_domain", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 50, name: "purchase_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 51, name: "sales_enquiry_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 52, name: "sales_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },

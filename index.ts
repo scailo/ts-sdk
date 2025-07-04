@@ -99,6 +99,8 @@ export * from "./src/locations.scailo_connect";
 export * from "./src/locations.scailo_pb";
 export * from "./src/login.scailo_connect";
 export * from "./src/login.scailo_pb";
+export * from "./src/magic_links.scailo_connect";
+export * from "./src/magic_links.scailo_pb";
 export * from "./src/meetings.scailo_connect";
 export * from "./src/meetings.scailo_pb";
 export * from "./src/merchandises.scailo_connect";
@@ -267,6 +269,7 @@ import { LeavesTypesService } from "./src/leaves_types.scailo_connect";
 import { LedgersService } from "./src/ledgers.scailo_connect";
 import { LocationsService } from "./src/locations.scailo_connect";
 import { LoginService } from "./src/login.scailo_connect";
+import { MagicLinksService } from "./src/magic_links.scailo_connect";
 import { MeetingsService } from "./src/meetings.scailo_connect";
 import { MerchandisesService } from "./src/merchandises.scailo_connect";
 import { NotesService } from "./src/notes.scailo_connect";
@@ -1842,6 +1845,37 @@ function getNodeTransport(apiEndPoint: string) {
 */
 export function getClientForLoginService(transport: Transport): PromiseClient<typeof LoginService> {
     return createPromiseClient(LoginService, transport);
+}
+
+/** 
+
+Get the client to access the MagicLinksService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+*/
+export function getClientForMagicLinksService(transport: Transport): PromiseClient<typeof MagicLinksService> {
+    return createPromiseClient(MagicLinksService, transport);
 }
 
 /** 

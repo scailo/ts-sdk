@@ -22,6 +22,7 @@ from message Scailo.UserLoginRequest
 
 ### Properties
 
+- [expiresIn](UserLoginRequest.md#expiresin)
 - [otp](UserLoginRequest.md#otp)
 - [plainTextPassword](UserLoginRequest.md#plaintextpassword)
 - [username](UserLoginRequest.md#username)
@@ -68,9 +69,25 @@ Message\&lt;UserLoginRequest\&gt;.constructor
 
 #### Defined in
 
-src/login.scailo_pb.ts:38
+src/login.scailo_pb.ts:45
 
 ## Properties
+
+### expiresIn
+
+• **expiresIn**: `bigint` = `protoInt64.zero`
+
+Optional session expiry time in seconds. The value is ignored if set to 0.
+
+**`Generated`**
+
+from field: uint64 expires_in = 20;
+
+#### Defined in
+
+src/login.scailo_pb.ts:43
+
+___
 
 ### otp
 
@@ -126,7 +143,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:45
+src/login.scailo_pb.ts:52
 
 ___
 
@@ -136,7 +153,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:43
+src/login.scailo_pb.ts:50
 
 ___
 
@@ -146,7 +163,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:44
+src/login.scailo_pb.ts:51
 
 ## Methods
 
@@ -434,7 +451,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:63
+src/login.scailo_pb.ts:71
 
 ___
 
@@ -455,7 +472,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:51
+src/login.scailo_pb.ts:59
 
 ___
 
@@ -476,7 +493,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:55
+src/login.scailo_pb.ts:63
 
 ___
 
@@ -497,4 +514,4 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:59
+src/login.scailo_pb.ts:67

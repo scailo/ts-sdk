@@ -65,7 +65,7 @@ Message\&lt;LogoutResponse\&gt;.constructor
 
 #### Defined in
 
-src/login.scailo_pb.ts:209
+src/login.scailo_pb.ts:217
 
 ## Properties
 
@@ -75,7 +75,7 @@ src/login.scailo_pb.ts:209
 
 #### Defined in
 
-src/login.scailo_pb.ts:216
+src/login.scailo_pb.ts:224
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:214
+src/login.scailo_pb.ts:222
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:215
+src/login.scailo_pb.ts:223
 
 ## Methods
 
@@ -383,7 +383,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:231
+src/login.scailo_pb.ts:239
 
 ___
 
@@ -404,7 +404,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:219
+src/login.scailo_pb.ts:227
 
 ___
 
@@ -425,7 +425,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:223
+src/login.scailo_pb.ts:231
 
 ___
 
@@ -446,4 +446,4 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:227
+src/login.scailo_pb.ts:235

@@ -35,6 +35,13 @@ export class UserLoginRequest extends Message<UserLoginRequest> {
    */
   otp = "";
 
+  /**
+   * Optional session expiry time in seconds. The value is ignored if set to 0.
+   *
+   * @generated from field: uint64 expires_in = 20;
+   */
+  expiresIn = protoInt64.zero;
+
   constructor(data?: PartialMessage<UserLoginRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -46,6 +53,7 @@ export class UserLoginRequest extends Message<UserLoginRequest> {
     { no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "otp", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "expires_in", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UserLoginRequest {

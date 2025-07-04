@@ -23,6 +23,7 @@ from message Scailo.GeneralSettingsUpdateRequest
 ### Properties
 
 - [address](GeneralSettingsUpdateRequest.md#address)
+- [authlessAccessDomain](GeneralSettingsUpdateRequest.md#authlessaccessdomain)
 - [autoReqVerifyOnExitRecordEntry](GeneralSettingsUpdateRequest.md#autoreqverifyonexitrecordentry)
 - [cin](GeneralSettingsUpdateRequest.md#cin)
 - [city](GeneralSettingsUpdateRequest.md#city)
@@ -89,7 +90,7 @@ Message\&lt;GeneralSettingsUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:185
+src/general_settings.scailo_pb.ts:192
 
 ## Properties
 
@@ -109,6 +110,22 @@ src/general_settings.scailo_pb.ts:50
 
 ___
 
+### authlessAccessDomain
+
+• **authlessAccessDomain**: `string` = `""`
+
+The name of the domain using which users can access records without logging in
+
+**`Generated`**
+
+from field: string authless_access_domain = 41;
+
+#### Defined in
+
+src/general_settings.scailo_pb.ts:113
+
+___
+
 ### autoReqVerifyOnExitRecordEntry
 
 • **autoReqVerifyOnExitRecordEntry**: `boolean` = `false`
@@ -121,7 +138,7 @@ from field: bool auto_req_verify_on_exit_record_entry = 72;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:183
+src/general_settings.scailo_pb.ts:190
 
 ___
 
@@ -201,7 +218,7 @@ from field: bool disable_vi_creation_with_bill_date_after_po_approval = 70;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:169
+src/general_settings.scailo_pb.ts:176
 
 ___
 
@@ -265,7 +282,7 @@ from field: string expense_sender_email = 57;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:162
+src/general_settings.scailo_pb.ts:169
 
 ___
 
@@ -345,7 +362,7 @@ from field: string purchase_order_sender_email = 50;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:113
+src/general_settings.scailo_pb.ts:120
 
 ___
 
@@ -361,7 +378,7 @@ from field: bool require_mfa_for_record_approval = 71;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:176
+src/general_settings.scailo_pb.ts:183
 
 ___
 
@@ -377,7 +394,7 @@ from field: string sales_enquiry_sender_email = 51;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:120
+src/general_settings.scailo_pb.ts:127
 
 ___
 
@@ -393,7 +410,7 @@ from field: string sales_invoice_sender_email = 53;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:134
+src/general_settings.scailo_pb.ts:141
 
 ___
 
@@ -409,7 +426,7 @@ from field: string sales_order_sender_email = 52;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:127
+src/general_settings.scailo_pb.ts:134
 
 ___
 
@@ -425,7 +442,7 @@ from field: string sales_quotation_sender_email = 54;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:141
+src/general_settings.scailo_pb.ts:148
 
 ___
 
@@ -457,7 +474,7 @@ from field: string vendor_invoice_sender_email = 55;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:148
+src/general_settings.scailo_pb.ts:155
 
 ___
 
@@ -473,7 +490,7 @@ from field: string work_order_sender_email = 56;
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:155
+src/general_settings.scailo_pb.ts:162
 
 ___
 
@@ -483,7 +500,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:192
+src/general_settings.scailo_pb.ts:199
 
 ___
 
@@ -493,7 +510,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:190
+src/general_settings.scailo_pb.ts:197
 
 ___
 
@@ -503,7 +520,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:191
+src/general_settings.scailo_pb.ts:198
 
 ## Methods
 
@@ -791,7 +808,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:231
+src/general_settings.scailo_pb.ts:239
 
 ___
 
@@ -812,7 +829,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:219
+src/general_settings.scailo_pb.ts:227
 
 ___
 
@@ -833,7 +850,7 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:223
+src/general_settings.scailo_pb.ts:231
 
 ___
 
@@ -854,4 +871,4 @@ ___
 
 #### Defined in
 
-src/general_settings.scailo_pb.ts:227
+src/general_settings.scailo_pb.ts:235
