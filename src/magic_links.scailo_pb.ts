@@ -1062,6 +1062,13 @@ export class MagicLinkServiceSearchByCodeReq extends Message<MagicLinkServiceSea
    */
   ipAddress = "";
 
+  /**
+   * The user agent information
+   *
+   * @generated from field: string user_agent = 3;
+   */
+  userAgent = "";
+
   constructor(data?: PartialMessage<MagicLinkServiceSearchByCodeReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1072,6 +1079,7 @@ export class MagicLinkServiceSearchByCodeReq extends Message<MagicLinkServiceSea
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "ip_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "user_agent", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MagicLinkServiceSearchByCodeReq {
@@ -1126,6 +1134,13 @@ export class MagicLinkAccessLog extends Message<MagicLinkAccessLog> {
    */
   ipAddr = "";
 
+  /**
+   * The user agent information
+   *
+   * @generated from field: string user_agent = 14;
+   */
+  userAgent = "";
+
   constructor(data?: PartialMessage<MagicLinkAccessLog>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1138,6 +1153,7 @@ export class MagicLinkAccessLog extends Message<MagicLinkAccessLog> {
     { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
     { no: 12, name: "magic_link_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "ip_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "user_agent", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MagicLinkAccessLog {

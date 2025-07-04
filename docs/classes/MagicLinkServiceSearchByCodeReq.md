@@ -24,6 +24,7 @@ from message Scailo.MagicLinkServiceSearchByCodeReq
 
 - [code](MagicLinkServiceSearchByCodeReq.md#code)
 - [ipAddress](MagicLinkServiceSearchByCodeReq.md#ipaddress)
+- [userAgent](MagicLinkServiceSearchByCodeReq.md#useragent)
 - [fields](MagicLinkServiceSearchByCodeReq.md#fields)
 - [runtime](MagicLinkServiceSearchByCodeReq.md#runtime)
 - [typeName](MagicLinkServiceSearchByCodeReq.md#typename)
@@ -67,7 +68,7 @@ Message\&lt;MagicLinkServiceSearchByCodeReq\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1065
+src/magic_links.scailo_pb.ts:1072
 
 ## Properties
 
@@ -103,13 +104,29 @@ src/magic_links.scailo_pb.ts:1063
 
 ___
 
+### userAgent
+
+• **userAgent**: `string` = `""`
+
+The user agent information
+
+**`Generated`**
+
+from field: string user_agent = 3;
+
+#### Defined in
+
+src/magic_links.scailo_pb.ts:1070
+
+___
+
 ### fields
 
 ▪ `Static` `Readonly` **fields**: `FieldList`
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1072
+src/magic_links.scailo_pb.ts:1079
 
 ___
 
@@ -119,7 +136,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1070
+src/magic_links.scailo_pb.ts:1077
 
 ___
 
@@ -129,7 +146,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1071
+src/magic_links.scailo_pb.ts:1078
 
 ## Methods
 
@@ -417,7 +434,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1089
+src/magic_links.scailo_pb.ts:1097
 
 ___
 
@@ -438,7 +455,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1077
+src/magic_links.scailo_pb.ts:1085
 
 ___
 
@@ -459,7 +476,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1081
+src/magic_links.scailo_pb.ts:1089
 
 ___
 
@@ -480,4 +497,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1085
+src/magic_links.scailo_pb.ts:1093

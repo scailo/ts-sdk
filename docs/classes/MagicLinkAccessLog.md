@@ -26,6 +26,7 @@ from message Scailo.MagicLinkAccessLog
 - [ipAddr](MagicLinkAccessLog.md#ipaddr)
 - [magicLinkUuid](MagicLinkAccessLog.md#magiclinkuuid)
 - [metadata](MagicLinkAccessLog.md#metadata)
+- [userAgent](MagicLinkAccessLog.md#useragent)
 - [fields](MagicLinkAccessLog.md#fields)
 - [runtime](MagicLinkAccessLog.md#runtime)
 - [typeName](MagicLinkAccessLog.md#typename)
@@ -69,7 +70,7 @@ Message\&lt;MagicLinkAccessLog\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1129
+src/magic_links.scailo_pb.ts:1144
 
 ## Properties
 
@@ -85,7 +86,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1106
+src/magic_links.scailo_pb.ts:1114
 
 ___
 
@@ -101,7 +102,7 @@ from field: string ip_addr = 13;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1127
+src/magic_links.scailo_pb.ts:1135
 
 ___
 
@@ -117,7 +118,7 @@ from field: string magic_link_uuid = 12;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1120
+src/magic_links.scailo_pb.ts:1128
 
 ___
 
@@ -133,7 +134,23 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1113
+src/magic_links.scailo_pb.ts:1121
+
+___
+
+### userAgent
+
+• **userAgent**: `string` = `""`
+
+The user agent information
+
+**`Generated`**
+
+from field: string user_agent = 14;
+
+#### Defined in
+
+src/magic_links.scailo_pb.ts:1142
 
 ___
 
@@ -143,7 +160,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1136
+src/magic_links.scailo_pb.ts:1151
 
 ___
 
@@ -153,7 +170,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1134
+src/magic_links.scailo_pb.ts:1149
 
 ___
 
@@ -163,7 +180,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1135
+src/magic_links.scailo_pb.ts:1150
 
 ## Methods
 
@@ -451,7 +468,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1155
+src/magic_links.scailo_pb.ts:1171
 
 ___
 
@@ -472,7 +489,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1143
+src/magic_links.scailo_pb.ts:1159
 
 ___
 
@@ -493,7 +510,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1147
+src/magic_links.scailo_pb.ts:1163
 
 ___
 
@@ -514,4 +531,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1151
+src/magic_links.scailo_pb.ts:1167

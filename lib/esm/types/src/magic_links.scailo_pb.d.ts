@@ -700,6 +700,12 @@ export declare class MagicLinkServiceSearchByCodeReq extends Message<MagicLinkSe
      * @generated from field: string ip_address = 2;
      */
     ipAddress: string;
+    /**
+     * The user agent information
+     *
+     * @generated from field: string user_agent = 3;
+     */
+    userAgent: string;
     constructor(data?: PartialMessage<MagicLinkServiceSearchByCodeReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.MagicLinkServiceSearchByCodeReq";
@@ -740,6 +746,12 @@ export declare class MagicLinkAccessLog extends Message<MagicLinkAccessLog> {
      * @generated from field: string ip_addr = 13;
      */
     ipAddr: string;
+    /**
+     * The user agent information
+     *
+     * @generated from field: string user_agent = 14;
+     */
+    userAgent: string;
     constructor(data?: PartialMessage<MagicLinkAccessLog>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.MagicLinkAccessLog";
