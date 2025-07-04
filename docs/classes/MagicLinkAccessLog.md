@@ -69,7 +69,7 @@ Message\&lt;MagicLinkAccessLog\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1113
+src/magic_links.scailo_pb.ts:1129
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1090
+src/magic_links.scailo_pb.ts:1106
 
 ___
 
@@ -101,7 +101,7 @@ from field: string ip_addr = 13;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1111
+src/magic_links.scailo_pb.ts:1127
 
 ___
 
@@ -117,7 +117,7 @@ from field: string magic_link_uuid = 12;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1104
+src/magic_links.scailo_pb.ts:1120
 
 ___
 
@@ -133,7 +133,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1097
+src/magic_links.scailo_pb.ts:1113
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1120
+src/magic_links.scailo_pb.ts:1136
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1118
+src/magic_links.scailo_pb.ts:1134
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1119
+src/magic_links.scailo_pb.ts:1135
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1139
+src/magic_links.scailo_pb.ts:1155
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1127
+src/magic_links.scailo_pb.ts:1143
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1131
+src/magic_links.scailo_pb.ts:1147
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1135
+src/magic_links.scailo_pb.ts:1151

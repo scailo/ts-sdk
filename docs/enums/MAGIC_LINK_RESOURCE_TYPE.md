@@ -19,11 +19,13 @@ from enum Scailo.MAGIC_LINK_RESOURCE_TYPE
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_GOODS\_RECEIPT](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_goods_receipt)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_INWARD\_JOB](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_inward_job)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_OUTWARD\_JOB](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_outward_job)
+- [MAGIC\_LINK\_RESOURCE\_TYPE\_PROFORMA\_INVOICE](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_proforma_invoice)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_PURCHASE\_ORDER](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_purchase_order)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_PURCHASE\_RETURN](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_purchase_return)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_SALES\_ENQUIRY](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_sales_enquiry)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_SALES\_INVOICE](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_sales_invoice)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_SALES\_ORDER](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_sales_order)
+- [MAGIC\_LINK\_RESOURCE\_TYPE\_SALES\_QUOTATION](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_sales_quotation)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_SALES\_RETURN](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_sales_return)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_VENDOR\_INVOICE](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_vendor_invoice)
 
@@ -57,7 +59,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_CREDIT_NOTE = 240;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:92
+src/magic_links.scailo_pb.ts:106
 
 ___
 
@@ -89,7 +91,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_GOODS_DISPATCH = 220;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:78
+src/magic_links.scailo_pb.ts:85
 
 ___
 
@@ -121,7 +123,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB = 300;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:106
+src/magic_links.scailo_pb.ts:120
 
 ___
 
@@ -137,7 +139,23 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB = 400;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:113
+src/magic_links.scailo_pb.ts:127
+
+___
+
+### MAGIC\_LINK\_RESOURCE\_TYPE\_PROFORMA\_INVOICE
+
+• **MAGIC\_LINK\_RESOURCE\_TYPE\_PROFORMA\_INVOICE** = ``225``
+
+Denotes that the magic link was created for a proforma invoice
+
+**`Generated`**
+
+from enum value: MAGIC_LINK_RESOURCE_TYPE_PROFORMA_INVOICE = 225;
+
+#### Defined in
+
+src/magic_links.scailo_pb.ts:92
 
 ___
 
@@ -201,7 +219,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_INVOICE = 230;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:85
+src/magic_links.scailo_pb.ts:99
 
 ___
 
@@ -214,6 +232,22 @@ Denotes that the magic link was created for a sales order
 **`Generated`**
 
 from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_ORDER = 210;
+
+#### Defined in
+
+src/magic_links.scailo_pb.ts:78
+
+___
+
+### MAGIC\_LINK\_RESOURCE\_TYPE\_SALES\_QUOTATION
+
+• **MAGIC\_LINK\_RESOURCE\_TYPE\_SALES\_QUOTATION** = ``205``
+
+Denotes that the magic link was created for a sales quotation;
+
+**`Generated`**
+
+from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_QUOTATION = 205;
 
 #### Defined in
 
@@ -233,7 +267,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_RETURN = 250;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:99
+src/magic_links.scailo_pb.ts:113
 
 ___
 

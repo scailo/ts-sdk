@@ -70,7 +70,7 @@ Message\&lt;MagicLinksServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:638
+src/magic_links.scailo_pb.ts:654
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:615
+src/magic_links.scailo_pb.ts:631
 
 ___
 
@@ -102,7 +102,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:608
+src/magic_links.scailo_pb.ts:624
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:622
+src/magic_links.scailo_pb.ts:638
 
 ___
 
@@ -134,7 +134,7 @@ from field: Scailo.MAGIC_LINK_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:636
+src/magic_links.scailo_pb.ts:652
 
 ___
 
@@ -150,7 +150,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:629
+src/magic_links.scailo_pb.ts:645
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:645
+src/magic_links.scailo_pb.ts:661
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:643
+src/magic_links.scailo_pb.ts:659
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:644
+src/magic_links.scailo_pb.ts:660
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:665
+src/magic_links.scailo_pb.ts:681
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:653
+src/magic_links.scailo_pb.ts:669
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:657
+src/magic_links.scailo_pb.ts:673
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:661
+src/magic_links.scailo_pb.ts:677

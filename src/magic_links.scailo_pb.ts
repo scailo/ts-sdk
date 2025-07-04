@@ -64,6 +64,13 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
   MAGIC_LINK_RESOURCE_TYPE_SALES_ENQUIRY = 200,
 
   /**
+   * Denotes that the magic link was created for a sales quotation;
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_QUOTATION = 205;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_SALES_QUOTATION = 205,
+
+  /**
    * Denotes that the magic link was created for a sales order
    *
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_ORDER = 210;
@@ -76,6 +83,13 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_GOODS_DISPATCH = 220;
    */
   MAGIC_LINK_RESOURCE_TYPE_GOODS_DISPATCH = 220,
+
+  /**
+   * Denotes that the magic link was created for a proforma invoice
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PROFORMA_INVOICE = 225;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_PROFORMA_INVOICE = 225,
 
   /**
    * Denotes that the magic link was created for a sales invoice
@@ -121,8 +135,10 @@ proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TY
   { no: 130, name: "MAGIC_LINK_RESOURCE_TYPE_DEBIT_NOTE" },
   { no: 140, name: "MAGIC_LINK_RESOURCE_TYPE_PURCHASE_RETURN" },
   { no: 200, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_ENQUIRY" },
+  { no: 205, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_QUOTATION" },
   { no: 210, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_ORDER" },
   { no: 220, name: "MAGIC_LINK_RESOURCE_TYPE_GOODS_DISPATCH" },
+  { no: 225, name: "MAGIC_LINK_RESOURCE_TYPE_PROFORMA_INVOICE" },
   { no: 230, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_INVOICE" },
   { no: 240, name: "MAGIC_LINK_RESOURCE_TYPE_CREDIT_NOTE" },
   { no: 250, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_RETURN" },

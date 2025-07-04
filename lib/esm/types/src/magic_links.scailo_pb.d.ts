@@ -51,6 +51,12 @@ export declare enum MAGIC_LINK_RESOURCE_TYPE {
      */
     MAGIC_LINK_RESOURCE_TYPE_SALES_ENQUIRY = 200,
     /**
+     * Denotes that the magic link was created for a sales quotation;
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_QUOTATION = 205;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_SALES_QUOTATION = 205,
+    /**
      * Denotes that the magic link was created for a sales order
      *
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_ORDER = 210;
@@ -62,6 +68,12 @@ export declare enum MAGIC_LINK_RESOURCE_TYPE {
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_GOODS_DISPATCH = 220;
      */
     MAGIC_LINK_RESOURCE_TYPE_GOODS_DISPATCH = 220,
+    /**
+     * Denotes that the magic link was created for a proforma invoice
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PROFORMA_INVOICE = 225;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_PROFORMA_INVOICE = 225,
     /**
      * Denotes that the magic link was created for a sales invoice
      *

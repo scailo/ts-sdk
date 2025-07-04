@@ -66,7 +66,7 @@ Message\&lt;MagicLinkAccessLogsList\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1158
+src/magic_links.scailo_pb.ts:1174
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.MagicLinkAccessLog list = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1156
+src/magic_links.scailo_pb.ts:1172
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1165
+src/magic_links.scailo_pb.ts:1181
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1163
+src/magic_links.scailo_pb.ts:1179
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1164
+src/magic_links.scailo_pb.ts:1180
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1181
+src/magic_links.scailo_pb.ts:1197
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1169
+src/magic_links.scailo_pb.ts:1185
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1173
+src/magic_links.scailo_pb.ts:1189
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1177
+src/magic_links.scailo_pb.ts:1193

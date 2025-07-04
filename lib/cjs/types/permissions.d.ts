@@ -2293,6 +2293,11 @@ export declare const PermissionAmendSalesQuotation: {
     Name: string;
     Description: string;
 };
+export declare const PermissionSalesQuotationCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsSalesQuotations: {
     Uid: string;
     Name: string;
@@ -2369,6 +2374,11 @@ export declare const PermissionReopenProformaInvoice: {
     Description: string;
 };
 export declare const PermissionAmendProformaInvoice: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProformaInvoiceCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
