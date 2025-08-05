@@ -5,7 +5,7 @@
 
 import { FormField, FormFieldPaginationResp, FormsFieldsList, FormsFieldsServiceCountReq, FormsFieldsServiceCreateRequest, FormsFieldsServiceFilterReq, FormsFieldsServicePaginationReq, FormsFieldsServiceSearchAllReq, FormsFieldsServiceUpdateRequest } from "./forms_fields.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 
 /**
  *
@@ -79,6 +79,17 @@ export const FormsFieldsService = {
     viewByUUID: {
       name: "ViewByUUID",
       I: IdentifierUUID,
+      O: FormField,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View by Code
+     *
+     * @generated from rpc Scailo.FormsFieldsService.ViewByCode
+     */
+    viewByCode: {
+      name: "ViewByCode",
+      I: SimpleSearchReq,
       O: FormField,
       kind: MethodKind.Unary,
     },
