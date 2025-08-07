@@ -1,5 +1,5 @@
 import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginatedRequiredItemsResponse, VendorsServicePaginatedUsersResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList, VendorUsersSearchRequest } from "./vendors.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -395,6 +395,28 @@ export declare const VendorsService: {
         readonly viewEssentialByUUID: {
             readonly name: "ViewEssentialByUUID";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof Vendor;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the first given email address
+         *
+         * @generated from rpc Scailo.VendorsService.ViewEssentialByEmail
+         */
+        readonly viewEssentialByEmail: {
+            readonly name: "ViewEssentialByEmail";
+            readonly I: typeof SimpleSearchReq;
+            readonly O: typeof Vendor;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the first given phone number
+         *
+         * @generated from rpc Scailo.VendorsService.ViewEssentialByPhone
+         */
+        readonly viewEssentialByPhone: {
+            readonly name: "ViewEssentialByPhone";
+            readonly I: typeof SimpleSearchReq;
             readonly O: typeof Vendor;
             readonly kind: MethodKind.Unary;
         };

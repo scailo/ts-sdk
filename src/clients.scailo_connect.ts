@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginatedUsersResponse, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList, ClientUsersSearchRequest } from "./clients.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -258,6 +258,28 @@ export const ClientsService = {
     viewEssentialByUUID: {
       name: "ViewEssentialByUUID",
       I: IdentifierUUID,
+      O: Client,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the first given email address
+     *
+     * @generated from rpc Scailo.ClientsService.ViewEssentialByEmail
+     */
+    viewEssentialByEmail: {
+      name: "ViewEssentialByEmail",
+      I: SimpleSearchReq,
+      O: Client,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the first given phone number
+     *
+     * @generated from rpc Scailo.ClientsService.ViewEssentialByPhone
+     */
+    viewEssentialByPhone: {
+      name: "ViewEssentialByPhone",
+      I: SimpleSearchReq,
       O: Client,
       kind: MethodKind.Unary,
     },

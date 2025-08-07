@@ -1,5 +1,5 @@
 import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginatedUsersResponse, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList, ClientUsersSearchRequest } from "./clients.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -252,6 +252,28 @@ export declare const ClientsService: {
         readonly viewEssentialByUUID: {
             readonly name: "ViewEssentialByUUID";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof Client;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the first given email address
+         *
+         * @generated from rpc Scailo.ClientsService.ViewEssentialByEmail
+         */
+        readonly viewEssentialByEmail: {
+            readonly name: "ViewEssentialByEmail";
+            readonly I: typeof SimpleSearchReq;
+            readonly O: typeof Client;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View only essential components (without logs) that matches the first given phone number
+         *
+         * @generated from rpc Scailo.ClientsService.ViewEssentialByPhone
+         */
+        readonly viewEssentialByPhone: {
+            readonly name: "ViewEssentialByPhone";
+            readonly I: typeof SimpleSearchReq;
             readonly O: typeof Client;
             readonly kind: MethodKind.Unary;
         };

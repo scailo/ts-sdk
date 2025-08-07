@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginatedRequiredItemsResponse, VendorsServicePaginatedUsersResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList, VendorUsersSearchRequest } from "./vendors.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -401,6 +401,28 @@ export const VendorsService = {
     viewEssentialByUUID: {
       name: "ViewEssentialByUUID",
       I: IdentifierUUID,
+      O: Vendor,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the first given email address
+     *
+     * @generated from rpc Scailo.VendorsService.ViewEssentialByEmail
+     */
+    viewEssentialByEmail: {
+      name: "ViewEssentialByEmail",
+      I: SimpleSearchReq,
+      O: Vendor,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View only essential components (without logs) that matches the first given phone number
+     *
+     * @generated from rpc Scailo.VendorsService.ViewEssentialByPhone
+     */
+    viewEssentialByPhone: {
+      name: "ViewEssentialByPhone",
+      I: SimpleSearchReq,
       O: Vendor,
       kind: MethodKind.Unary,
     },
