@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { ProformaInvoice, ProformaInvoiceAncillaryParameters, ProformaInvoiceItem, ProformaInvoiceItemHistoryRequest, ProformaInvoiceItemProspectiveInfoRequest, ProformaInvoiceItemsList, ProformaInvoiceItemsSearchRequest, ProformaInvoicesList, ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest, ProformaInvoicesServiceAutofillRequest, ProformaInvoicesServiceCountReq, ProformaInvoicesServiceCreateRequest, ProformaInvoicesServiceFilterReq, ProformaInvoicesServiceItemCreateRequest, ProformaInvoicesServiceItemUpdateRequest, ProformaInvoicesServicePaginatedItemsResponse, ProformaInvoicesServicePaginationReq, ProformaInvoicesServicePaginationResponse, ProformaInvoicesServiceSearchAllReq, ProformaInvoicesServiceUpdateRequest } from "./proforma_invoices.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -361,13 +361,24 @@ export const ProformaInvoicesService = {
     },
     /**
      * CSV operations
-     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
      *
      * @generated from rpc Scailo.ProformaInvoicesService.DownloadItemsAsCSV
      */
     downloadItemsAsCSV: {
       name: "DownloadItemsAsCSV",
       I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download the CSV template that could be used to upload items
+     *
+     * @generated from rpc Scailo.ProformaInvoicesService.DownloadItemsTemplateAsCSV
+     */
+    downloadItemsTemplateAsCSV: {
+      name: "DownloadItemsTemplateAsCSV",
+      I: Empty,
       O: StandardFile,
       kind: MethodKind.Unary,
     },
@@ -401,6 +412,17 @@ export const ProformaInvoicesService = {
     viewByUUID: {
       name: "ViewByUUID",
       I: IdentifierUUID,
+      O: ProformaInvoice,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View by Reference ID (returns the latest record in case of duplicates)
+     *
+     * @generated from rpc Scailo.ProformaInvoicesService.ViewByReferenceID
+     */
+    viewByReferenceID: {
+      name: "ViewByReferenceID",
+      I: SimpleSearchReq,
       O: ProformaInvoice,
       kind: MethodKind.Unary,
     },

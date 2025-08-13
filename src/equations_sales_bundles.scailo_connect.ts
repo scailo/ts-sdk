@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { EquationSalesBundle, EquationSalesBundleItem, EquationSalesBundleItemHistoryRequest, EquationSalesBundleItemsSearchRequest, EquationsSalesBundlesItemsList, EquationsSalesBundlesList, EquationsSalesBundlesServiceCountReq, EquationsSalesBundlesServiceCreateRequest, EquationsSalesBundlesServiceFilterReq, EquationsSalesBundlesServiceItemCreateRequest, EquationsSalesBundlesServiceItemUpdateRequest, EquationsSalesBundlesServicePaginatedItemsResponse, EquationsSalesBundlesServicePaginationReq, EquationsSalesBundlesServicePaginationResponse, EquationsSalesBundlesServiceSearchAllReq, EquationsSalesBundlesServiceUpdateRequest } from "./equations_sales_bundles.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -329,13 +329,24 @@ export const EquationsSalesBundlesService = {
     },
     /**
      * CSV operations
-     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
      *
      * @generated from rpc Scailo.EquationsSalesBundlesService.DownloadItemsAsCSV
      */
     downloadItemsAsCSV: {
       name: "DownloadItemsAsCSV",
       I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download the CSV template that could be used to upload items
+     *
+     * @generated from rpc Scailo.EquationsSalesBundlesService.DownloadItemsTemplateAsCSV
+     */
+    downloadItemsTemplateAsCSV: {
+      name: "DownloadItemsTemplateAsCSV",
+      I: Empty,
       O: StandardFile,
       kind: MethodKind.Unary,
     },
@@ -380,6 +391,17 @@ export const EquationsSalesBundlesService = {
     viewByUUID: {
       name: "ViewByUUID",
       I: IdentifierUUID,
+      O: EquationSalesBundle,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View by Name (returns the latest record in case of duplicates)
+     *
+     * @generated from rpc Scailo.EquationsSalesBundlesService.ViewByName
+     */
+    viewByName: {
+      name: "ViewByName",
+      I: SimpleSearchReq,
       O: EquationSalesBundle,
       kind: MethodKind.Unary,
     },

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { EquationFamily, EquationFamilyItem, EquationFamilyItemHistoryRequest, EquationFamilyItemsSearchRequest, EquationsFamiliesItemsList, EquationsFamiliesList, EquationsFamiliesServiceCountReq, EquationsFamiliesServiceCreateRequest, EquationsFamiliesServiceFilterReq, EquationsFamiliesServiceItemCreateRequest, EquationsFamiliesServiceItemUpdateRequest, EquationsFamiliesServicePaginatedItemsResponse, EquationsFamiliesServicePaginationReq, EquationsFamiliesServicePaginationResponse, EquationsFamiliesServiceSearchAllReq, EquationsFamiliesServiceUpdateRequest } from "./equations_families.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -330,13 +330,24 @@ export const EquationsFamiliesService = {
     },
     /**
      * CSV operations
-     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
      *
      * @generated from rpc Scailo.EquationsFamiliesService.DownloadItemsAsCSV
      */
     downloadItemsAsCSV: {
       name: "DownloadItemsAsCSV",
       I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download the CSV template that could be used to upload items
+     *
+     * @generated from rpc Scailo.EquationsFamiliesService.DownloadItemsTemplateAsCSV
+     */
+    downloadItemsTemplateAsCSV: {
+      name: "DownloadItemsTemplateAsCSV",
+      I: Empty,
       O: StandardFile,
       kind: MethodKind.Unary,
     },
@@ -381,6 +392,17 @@ export const EquationsFamiliesService = {
     viewByUUID: {
       name: "ViewByUUID",
       I: IdentifierUUID,
+      O: EquationFamily,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View by Name (returns the latest record in case of duplicates)
+     *
+     * @generated from rpc Scailo.EquationsFamiliesService.ViewByName
+     */
+    viewByName: {
+      name: "ViewByName",
+      I: SimpleSearchReq,
       O: EquationFamily,
       kind: MethodKind.Unary,
     },

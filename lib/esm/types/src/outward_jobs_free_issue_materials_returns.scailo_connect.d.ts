@@ -1,5 +1,5 @@
 import { OutwardJobFreeIssueMaterialReturn, OutwardJobFreeIssueMaterialReturnAncillaryParameters, OutwardJobFreeIssueMaterialReturnItem, OutwardJobFreeIssueMaterialReturnItemHistoryRequest, OutwardJobFreeIssueMaterialReturnItemProspectiveInfoRequest, OutwardJobFreeIssueMaterialReturnItemsSearchRequest, OutwardJobsFreeIssueMaterialsReturnsItemsList, OutwardJobsFreeIssueMaterialsReturnsList, OutwardJobsFreeIssueMaterialsReturnsServiceAlreadyAddedQuantityForSourceRequest, OutwardJobsFreeIssueMaterialsReturnsServiceCountReq, OutwardJobsFreeIssueMaterialsReturnsServiceCreateRequest, OutwardJobsFreeIssueMaterialsReturnsServiceFilterReq, OutwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest, OutwardJobsFreeIssueMaterialsReturnsServiceItemUpdateRequest, OutwardJobsFreeIssueMaterialsReturnsServicePaginatedItemsResponse, OutwardJobsFreeIssueMaterialsReturnsServicePaginationReq, OutwardJobsFreeIssueMaterialsReturnsServicePaginationResponse, OutwardJobsFreeIssueMaterialsReturnsServiceSearchAllReq, OutwardJobsFreeIssueMaterialsReturnsServiceUpdateRequest } from "./outward_jobs_free_issue_materials_returns.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 import { FilterReturnableInventoryForIdentifierUUID, GenericInventoryList, SearchReturnableInventoryForIdentifierUUID } from "./inventory.scailo_pb.js";
@@ -344,13 +344,24 @@ export declare const OutwardJobsFreeIssueMaterialsReturnsService: {
         };
         /**
          * CSV operations
-         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         * Download the CSV file with the associated line items. The same file could then be used to upload line items.
          *
          * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsReturnsService.DownloadItemsAsCSV
          */
         readonly downloadItemsAsCSV: {
             readonly name: "DownloadItemsAsCSV";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download the CSV template that could be used to upload items
+         *
+         * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsReturnsService.DownloadItemsTemplateAsCSV
+         */
+        readonly downloadItemsTemplateAsCSV: {
+            readonly name: "DownloadItemsTemplateAsCSV";
+            readonly I: typeof Empty;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
@@ -373,6 +384,17 @@ export declare const OutwardJobsFreeIssueMaterialsReturnsService: {
         readonly viewByUUID: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof OutwardJobFreeIssueMaterialReturn;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View by Reference ID (returns the latest record in case of duplicates)
+         *
+         * @generated from rpc Scailo.OutwardJobsFreeIssueMaterialsReturnsService.ViewByReferenceID
+         */
+        readonly viewByReferenceID: {
+            readonly name: "ViewByReferenceID";
+            readonly I: typeof SimpleSearchReq;
             readonly O: typeof OutwardJobFreeIssueMaterialReturn;
             readonly kind: MethodKind.Unary;
         };

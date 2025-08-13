@@ -1,5 +1,5 @@
 import { StockReturn, StockReturnItem, StockReturnItemHistoryRequest, StockReturnItemProspectiveInfoRequest, StockReturnItemsSearchRequest, StockReturnsItemsList, StockReturnsList, StockReturnsServiceAlreadyAddedQuantityForSourceRequest, StockReturnsServiceCountReq, StockReturnsServiceCreateRequest, StockReturnsServiceFilterReq, StockReturnsServiceItemCreateRequest, StockReturnsServiceItemUpdateRequest, StockReturnsServicePaginatedItemsResponse, StockReturnsServicePaginationReq, StockReturnsServicePaginationResponse, StockReturnsServiceSearchAllReq, StockReturnsServiceUpdateRequest } from "./stock_returns.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 import { FilterReturnableInventoryForIdentifierUUID, GenericInventoryList, SearchReturnableInventoryForIdentifierUUID } from "./inventory.scailo_pb.js";
@@ -344,13 +344,24 @@ export declare const StockReturnsService: {
         };
         /**
          * CSV operations
-         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         * Download the CSV file with the associated line items. The same file could then be used to upload line items.
          *
          * @generated from rpc Scailo.StockReturnsService.DownloadItemsAsCSV
          */
         readonly downloadItemsAsCSV: {
             readonly name: "DownloadItemsAsCSV";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download the CSV template that could be used to upload items
+         *
+         * @generated from rpc Scailo.StockReturnsService.DownloadItemsTemplateAsCSV
+         */
+        readonly downloadItemsTemplateAsCSV: {
+            readonly name: "DownloadItemsTemplateAsCSV";
+            readonly I: typeof Empty;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
@@ -373,6 +384,17 @@ export declare const StockReturnsService: {
         readonly viewByUUID: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof StockReturn;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View by Reference ID (returns the latest record in case of duplicates)
+         *
+         * @generated from rpc Scailo.StockReturnsService.ViewByReferenceID
+         */
+        readonly viewByReferenceID: {
+            readonly name: "ViewByReferenceID";
+            readonly I: typeof SimpleSearchReq;
             readonly O: typeof StockReturn;
             readonly kind: MethodKind.Unary;
         };

@@ -95,7 +95,7 @@ Message\&lt;GenericInventory\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:287
+src/inventory.scailo_pb.ts:442
 
 ## Properties
 
@@ -111,7 +111,7 @@ from field: string code = 34;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:180
+src/inventory.scailo_pb.ts:335
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 consumed_or_rejected_at = 11;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:110
+src/inventory.scailo_pb.ts:265
 
 ___
 
@@ -143,7 +143,7 @@ from field: string description = 60;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:278
+src/inventory.scailo_pb.ts:433
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 discarded_at = 15;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:138
+src/inventory.scailo_pb.ts:293
 
 ___
 
@@ -175,7 +175,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:82
+src/inventory.scailo_pb.ts:237
 
 ___
 
@@ -191,7 +191,7 @@ from field: uint64 family_id = 33;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:173
+src/inventory.scailo_pb.ts:328
 
 ___
 
@@ -207,7 +207,7 @@ from field: string hash = 36;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:194
+src/inventory.scailo_pb.ts:349
 
 ___
 
@@ -223,7 +223,7 @@ from field: string internal_item_code = 35;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:187
+src/inventory.scailo_pb.ts:342
 
 ___
 
@@ -239,7 +239,7 @@ from field: bool is_qc_report_public = 52;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:257
+src/inventory.scailo_pb.ts:412
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 location_id = 54;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:264
+src/inventory.scailo_pb.ts:419
 
 ___
 
@@ -271,7 +271,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:89
+src/inventory.scailo_pb.ts:244
 
 ___
 
@@ -287,7 +287,7 @@ from field: uint64 parent_ref_id = 30;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:152
+src/inventory.scailo_pb.ts:307
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 quantity = 37;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:201
+src/inventory.scailo_pb.ts:356
 
 ___
 
@@ -319,7 +319,7 @@ from field: uint64 quantity_remaining = 38;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:208
+src/inventory.scailo_pb.ts:363
 
 ___
 
@@ -335,7 +335,7 @@ from field: Scailo.GENERIC_INVENTORY_REF_FROM ref_from = 31;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:159
+src/inventory.scailo_pb.ts:314
 
 ___
 
@@ -351,7 +351,7 @@ from field: uint64 ref_id = 32;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:166
+src/inventory.scailo_pb.ts:321
 
 ___
 
@@ -367,7 +367,7 @@ from field: string remaining_dimensions = 55;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:271
+src/inventory.scailo_pb.ts:426
 
 ___
 
@@ -383,7 +383,7 @@ from field: uint64 returned_or_scrapped_at = 14;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:131
+src/inventory.scailo_pb.ts:286
 
 ___
 
@@ -399,7 +399,7 @@ from field: uint64 rework_end_at = 13;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:124
+src/inventory.scailo_pb.ts:279
 
 ___
 
@@ -415,7 +415,7 @@ from field: uint64 rework_start_at = 12;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:117
+src/inventory.scailo_pb.ts:272
 
 ___
 
@@ -431,7 +431,7 @@ from field: uint64 secondary_quantity = 40;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:222
+src/inventory.scailo_pb.ts:377
 
 ___
 
@@ -447,7 +447,7 @@ from field: uint64 secondary_uom_id = 39;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:215
+src/inventory.scailo_pb.ts:370
 
 ___
 
@@ -463,7 +463,7 @@ from field: uint64 shelf_life_timestamp = 41;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:229
+src/inventory.scailo_pb.ts:384
 
 ___
 
@@ -479,7 +479,7 @@ from field: string short_url = 70;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:285
+src/inventory.scailo_pb.ts:440
 
 ___
 
@@ -495,7 +495,7 @@ from field: Scailo.INVENTORY_LIFECYCLE status = 4;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:96
+src/inventory.scailo_pb.ts:251
 
 ___
 
@@ -511,7 +511,7 @@ from field: uint64 storage_id = 51;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:250
+src/inventory.scailo_pb.ts:405
 
 ___
 
@@ -527,7 +527,7 @@ from field: uint64 store_id = 50;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:243
+src/inventory.scailo_pb.ts:398
 
 ___
 
@@ -543,7 +543,7 @@ from field: uint64 store_intake_at = 10;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:103
+src/inventory.scailo_pb.ts:258
 
 ___
 
@@ -559,7 +559,7 @@ from field: uint64 vault_folder_id = 18;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:145
+src/inventory.scailo_pb.ts:300
 
 ___
 
@@ -575,7 +575,7 @@ from field: uint64 warranty_timestamp = 42;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:236
+src/inventory.scailo_pb.ts:391
 
 ___
 
@@ -585,7 +585,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:294
+src/inventory.scailo_pb.ts:449
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:292
+src/inventory.scailo_pb.ts:447
 
 ___
 
@@ -605,7 +605,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:293
+src/inventory.scailo_pb.ts:448
 
 ## Methods
 
@@ -893,7 +893,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:339
+src/inventory.scailo_pb.ts:494
 
 ___
 
@@ -914,7 +914,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:327
+src/inventory.scailo_pb.ts:482
 
 ___
 
@@ -935,7 +935,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:331
+src/inventory.scailo_pb.ts:486
 
 ___
 
@@ -956,4 +956,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:335
+src/inventory.scailo_pb.ts:490

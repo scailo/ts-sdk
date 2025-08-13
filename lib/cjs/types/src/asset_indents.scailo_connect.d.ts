@@ -1,5 +1,5 @@
 import { AssetIndent, AssetIndentIssuedStatisticsList, AssetIndentItem, AssetIndentItemHistoryRequest, AssetIndentItemProspectiveInfoRequest, AssetIndentItemsSearchRequest, AssetIndentsItemsList, AssetIndentsList, AssetIndentsServiceCountReq, AssetIndentsServiceCreateRequest, AssetIndentsServiceFilterReq, AssetIndentsServiceItemCreateRequest, AssetIndentsServiceItemUpdateRequest, AssetIndentsServicePaginatedItemsResponse, AssetIndentsServicePaginationReq, AssetIndentsServicePaginationResponse, AssetIndentsServiceSearchAllReq, AssetIndentsServiceUpdateRequest } from "./asset_indents.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
@@ -332,13 +332,24 @@ export declare const AssetIndentsService: {
         };
         /**
          * CSV operations
-         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         * Download the CSV file with the associated line items. The same file could then be used to upload line items.
          *
          * @generated from rpc Scailo.AssetIndentsService.DownloadItemsAsCSV
          */
         readonly downloadItemsAsCSV: {
             readonly name: "DownloadItemsAsCSV";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download the CSV template that could be used to upload items
+         *
+         * @generated from rpc Scailo.AssetIndentsService.DownloadItemsTemplateAsCSV
+         */
+        readonly downloadItemsTemplateAsCSV: {
+            readonly name: "DownloadItemsTemplateAsCSV";
+            readonly I: typeof Empty;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
@@ -372,6 +383,17 @@ export declare const AssetIndentsService: {
         readonly viewByUUID: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof AssetIndent;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View by Reference ID (returns the latest record in case of duplicates)
+         *
+         * @generated from rpc Scailo.AssetIndentsService.ViewByReferenceID
+         */
+        readonly viewByReferenceID: {
+            readonly name: "ViewByReferenceID";
+            readonly I: typeof SimpleSearchReq;
             readonly O: typeof AssetIndent;
             readonly kind: MethodKind.Unary;
         };

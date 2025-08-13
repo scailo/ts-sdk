@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SkillGroup, SkillGroupItem, SkillGroupItemHistoryRequest, SkillsGroupsItemsList, SkillsGroupsList, SkillsGroupsServiceCountReq, SkillsGroupsServiceCreateRequest, SkillsGroupsServiceFilterReq, SkillsGroupsServiceItemCreateRequest, SkillsGroupsServiceItemUpdateRequest, SkillsGroupsServicePaginationReq, SkillsGroupsServicePaginationResponse, SkillsGroupsServiceSearchAllReq, SkillsGroupsServiceUpdateRequest } from "./skills_groups.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -296,13 +296,24 @@ export const SkillsGroupsService = {
     },
     /**
      * CSV operations
-     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
      *
      * @generated from rpc Scailo.SkillsGroupsService.DownloadItemsAsCSV
      */
     downloadItemsAsCSV: {
       name: "DownloadItemsAsCSV",
       I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download the CSV template that could be used to upload items
+     *
+     * @generated from rpc Scailo.SkillsGroupsService.DownloadItemsTemplateAsCSV
+     */
+    downloadItemsTemplateAsCSV: {
+      name: "DownloadItemsTemplateAsCSV",
+      I: Empty,
       O: StandardFile,
       kind: MethodKind.Unary,
     },
@@ -336,6 +347,17 @@ export const SkillsGroupsService = {
     viewByUUID: {
       name: "ViewByUUID",
       I: IdentifierUUID,
+      O: SkillGroup,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View by Code (returns the latest record in case of duplicates)
+     *
+     * @generated from rpc Scailo.SkillsGroupsService.ViewByCode
+     */
+    viewByCode: {
+      name: "ViewByCode",
+      I: SimpleSearchReq,
       O: SkillGroup,
       kind: MethodKind.Unary,
     },

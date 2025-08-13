@@ -1,5 +1,5 @@
 import { PayrollGroup, PayrollGroupItem, PayrollGroupItemHistoryRequest, PayrollGroupsItemsList, PayrollGroupsList, PayrollGroupsServiceCountReq, PayrollGroupsServiceCreateRequest, PayrollGroupsServiceFilterReq, PayrollGroupsServiceItemCreateRequest, PayrollGroupsServiceItemUpdateRequest, PayrollGroupsServicePaginationReq, PayrollGroupsServicePaginationResponse, PayrollGroupsServiceSearchAllReq, PayrollGroupsServiceUpdateRequest } from "./payroll_groups.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -290,13 +290,24 @@ export declare const PayrollGroupsService: {
         };
         /**
          * CSV operations
-         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         * Download the CSV file with the associated line items. The same file could then be used to upload line items.
          *
          * @generated from rpc Scailo.PayrollGroupsService.DownloadItemsAsCSV
          */
         readonly downloadItemsAsCSV: {
             readonly name: "DownloadItemsAsCSV";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download the CSV template that could be used to upload items
+         *
+         * @generated from rpc Scailo.PayrollGroupsService.DownloadItemsTemplateAsCSV
+         */
+        readonly downloadItemsTemplateAsCSV: {
+            readonly name: "DownloadItemsTemplateAsCSV";
+            readonly I: typeof Empty;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
@@ -330,6 +341,17 @@ export declare const PayrollGroupsService: {
         readonly viewByUUID: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof PayrollGroup;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View by Code (returns the latest record in case of duplicates)
+         *
+         * @generated from rpc Scailo.PayrollGroupsService.ViewByCode
+         */
+        readonly viewByCode: {
+            readonly name: "ViewByCode";
+            readonly I: typeof SimpleSearchReq;
             readonly O: typeof PayrollGroup;
             readonly kind: MethodKind.Unary;
         };

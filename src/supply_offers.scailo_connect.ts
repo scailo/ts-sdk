@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SupplyOffer, SupplyOfferAncillaryParameters, SupplyOfferItem, SupplyOfferItemHistoryRequest, SupplyOfferItemProspectiveInfoRequest, SupplyOfferItemsList, SupplyOfferItemsSearchRequest, SupplyOffersList, SupplyOffersServiceAutofillRequest, SupplyOffersServiceCountReq, SupplyOffersServiceCreateRequest, SupplyOffersServiceFilterReq, SupplyOffersServiceItemCreateRequest, SupplyOffersServiceItemUpdateRequest, SupplyOffersServicePaginatedItemsResponse, SupplyOffersServicePaginationReq, SupplyOffersServicePaginationResponse, SupplyOffersServiceSearchAllReq, SupplyOffersServiceUpdateRequest } from "./supply_offers.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -360,13 +360,24 @@ export const SupplyOffersService = {
     },
     /**
      * CSV operations
-     * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
      *
      * @generated from rpc Scailo.SupplyOffersService.DownloadItemsAsCSV
      */
     downloadItemsAsCSV: {
       name: "DownloadItemsAsCSV",
       I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download the CSV template that could be used to upload items
+     *
+     * @generated from rpc Scailo.SupplyOffersService.DownloadItemsTemplateAsCSV
+     */
+    downloadItemsTemplateAsCSV: {
+      name: "DownloadItemsTemplateAsCSV",
+      I: Empty,
       O: StandardFile,
       kind: MethodKind.Unary,
     },
@@ -400,6 +411,17 @@ export const SupplyOffersService = {
     viewByUUID: {
       name: "ViewByUUID",
       I: IdentifierUUID,
+      O: SupplyOffer,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View by Reference ID (returns the latest record in case of duplicates)
+     *
+     * @generated from rpc Scailo.SupplyOffersService.ViewByReferenceID
+     */
+    viewByReferenceID: {
+      name: "ViewByReferenceID",
+      I: SimpleSearchReq,
       O: SupplyOffer,
       kind: MethodKind.Unary,
     },

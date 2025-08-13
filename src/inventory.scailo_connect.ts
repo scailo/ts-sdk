@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { ConsolidatedInventoryStatistics, GenericInventory, GenericInventoryList, InventoryHashSearchReq, InventoryServiceFamilyQuantityReq, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
+import { ConsolidatedInventoryStatistics, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { Identifier, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 
@@ -261,6 +261,50 @@ export const InventoryService = {
       name: "ViewInStorage",
       I: Identifier,
       O: GenericInventoryList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the work in progress statistics of the family with the given Identifier
+     *
+     * @generated from rpc Scailo.InventoryService.ViewWorkInProgressStatistics
+     */
+    viewWorkInProgressStatistics: {
+      name: "ViewWorkInProgressStatistics",
+      I: Identifier,
+      O: InventoryWorkInProgressStatistics,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the indented statistics of the family with the given Identifier
+     *
+     * @generated from rpc Scailo.InventoryService.ViewIndentedStatistics
+     */
+    viewIndentedStatistics: {
+      name: "ViewIndentedStatistics",
+      I: Identifier,
+      O: InventoryIndentedStatistics,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the ordered statistics of the fammily with the given Identifier
+     *
+     * @generated from rpc Scailo.InventoryService.ViewOrderedStatistics
+     */
+    viewOrderedStatistics: {
+      name: "ViewOrderedStatistics",
+      I: Identifier,
+      O: InventoryOrderedStatistics,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the detailed demand of the family with the given Identifier
+     *
+     * @generated from rpc Scailo.InventoryService.ViewDetailedDemand
+     */
+    viewDetailedDemand: {
+      name: "ViewDetailedDemand",
+      I: Identifier,
+      O: InventoryDetailedDemand,
       kind: MethodKind.Unary,
     },
   }

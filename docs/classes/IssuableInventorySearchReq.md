@@ -69,7 +69,7 @@ Message\&lt;IssuableInventorySearchReq\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:519
+src/inventory.scailo_pb.ts:674
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:510
+src/inventory.scailo_pb.ts:665
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:517
+src/inventory.scailo_pb.ts:672
 
 ___
 
@@ -117,7 +117,7 @@ from field: string search_key = 5;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:503
+src/inventory.scailo_pb.ts:658
 
 ___
 
@@ -133,7 +133,7 @@ from field: Scailo.INVENTORY_LIFECYCLE status = 1;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:496
+src/inventory.scailo_pb.ts:651
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:526
+src/inventory.scailo_pb.ts:681
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:524
+src/inventory.scailo_pb.ts:679
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:525
+src/inventory.scailo_pb.ts:680
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:545
+src/inventory.scailo_pb.ts:700
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:533
+src/inventory.scailo_pb.ts:688
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:537
+src/inventory.scailo_pb.ts:692
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:541
+src/inventory.scailo_pb.ts:696

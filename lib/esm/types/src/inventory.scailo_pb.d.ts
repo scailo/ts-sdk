@@ -48,6 +48,122 @@ export declare enum GENERIC_INVENTORY_REF_FROM {
 }
 /**
  *
+ * Describes the available types of inventory node origins
+ *
+ * @generated from enum Scailo.INVENTORY_NODE_ORIGIN_TYPE
+ */
+export declare enum INVENTORY_NODE_ORIGIN_TYPE {
+    /**
+     * Use this only in filter and search queries
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_ANY_UNSPECIFIED = 0;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the origin is from a sales order
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_SALES_ORDER = 10;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_SALES_ORDER = 10,
+    /**
+     * Denotes that the origin is from a sales return
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_SALES_RETURN = 20;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_SALES_RETURN = 20,
+    /**
+     * Denotes that the origin is from a production plan
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_PRODUCTION_PLAN = 30;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_PRODUCTION_PLAN = 30,
+    /**
+     * Denotes that the origin is from a work order equation
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_WORK_ORDER_EQUATION = 40;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_WORK_ORDER_EQUATION = 40,
+    /**
+     * Denotes that the origin from minimum stock
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_MIN_STOCK = 50;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_MIN_STOCK = 50,
+    /**
+     * Denotes that the origin is from a goods dispatch
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_GOODS_DISPATCH = 60;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_GOODS_DISPATCH = 60,
+    /**
+     * Denotes that the origin is from a stock issuance
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_STOCK_ISSUANCE = 70;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_STOCK_ISSUANCE = 70,
+    /**
+     * Denotes that the origin is from a family equation
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_FAMILY_EQUATION = 80;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_FAMILY_EQUATION = 80,
+    /**
+     * Denotes that the origin is from work in progress
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_WORK_IN_PROGRESS = 90;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_WORK_IN_PROGRESS = 90,
+    /**
+     * Denotes that the origin is from net indented
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_NET_INDENTED = 100;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_NET_INDENTED = 100,
+    /**
+     * Dentoes that the origin is from net ordered
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_NET_ORDERED = 110;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_NET_ORDERED = 110,
+    /**
+     * Denotes that the origin is from iqc
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_QC = 120;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_QC = 120,
+    /**
+     * Denotes that the origin is from rejected
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_REJECTED = 130;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_REJECTED = 130,
+    /**
+     * Denotes that the origin is from returnable
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_RETURNABLE = 140;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_RETURNABLE = 140,
+    /**
+     * Denotes that the origin is from rework
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_REWORK = 150;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_REWORK = 150,
+    /**
+     * Denotes that the origin is from scrap
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_SCRAP = 160;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_SCRAP = 160,
+    /**
+     * Denotes that the origin is from store
+     *
+     * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_STORE = 170;
+     */
+    INVENTORY_NODE_ORIGIN_TYPE_STORE = 170
+}
+/**
+ *
  * Describes the parameters that are present in a generic inventory payload, which is an abstraction over every inventory item that consists of the common parameters
  *
  * @generated from message Scailo.GenericInventory
@@ -873,5 +989,479 @@ export declare class ConsolidatedInventoryStatistics extends Message<Consolidate
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatistics;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatistics;
     static equals(a: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined, b: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the abridged version of each production plan item
+ *
+ * @generated from message Scailo.AbridgedProductionPlanItem
+ */
+export declare class AbridgedProductionPlanItem extends Message<AbridgedProductionPlanItem> {
+    /**
+     * Stores the production plan ID
+     *
+     * @generated from field: uint64 production_plan_id = 10;
+     */
+    productionPlanId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 20;
+     */
+    familyId: bigint;
+    /**
+     * The quantity being manufactured (in cents)
+     *
+     * @generated from field: int64 quantity = 30;
+     */
+    quantity: bigint;
+    constructor(data?: PartialMessage<AbridgedProductionPlanItem>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.AbridgedProductionPlanItem";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedProductionPlanItem;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedProductionPlanItem;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedProductionPlanItem;
+    static equals(a: AbridgedProductionPlanItem | PlainMessage<AbridgedProductionPlanItem> | undefined, b: AbridgedProductionPlanItem | PlainMessage<AbridgedProductionPlanItem> | undefined): boolean;
+}
+/**
+ *
+ * Describes the abridged version of each inventory item
+ *
+ * @generated from message Scailo.AbridgedInventoryItem
+ */
+export declare class AbridgedInventoryItem extends Message<AbridgedInventoryItem> {
+    /**
+     * Stores the ID of the associated family
+     *
+     * @generated from field: uint64 family_id = 10;
+     */
+    familyId: bigint;
+    /**
+     * The computed hash of the inventory item
+     *
+     * @generated from field: string hash = 20;
+     */
+    hash: string;
+    /**
+     * Stores the quantity (in cents)
+     *
+     * @generated from field: int64 quantity = 30;
+     */
+    quantity: bigint;
+    constructor(data?: PartialMessage<AbridgedInventoryItem>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.AbridgedInventoryItem";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedInventoryItem;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedInventoryItem;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedInventoryItem;
+    static equals(a: AbridgedInventoryItem | PlainMessage<AbridgedInventoryItem> | undefined, b: AbridgedInventoryItem | PlainMessage<AbridgedInventoryItem> | undefined): boolean;
+}
+/**
+ *
+ * Describes the abridged version of each purchase indent item
+ *
+ * @generated from message Scailo.AbridgedPurchaseIndentItem
+ */
+export declare class AbridgedPurchaseIndentItem extends Message<AbridgedPurchaseIndentItem> {
+    /**
+     * Stores the purchase indent ID
+     *
+     * @generated from field: uint64 purchase_indent_id = 10;
+     */
+    purchaseIndentId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 20;
+     */
+    familyId: bigint;
+    /**
+     * The quantity of the item (in cents)
+     *
+     * @generated from field: int64 quantity = 30;
+     */
+    quantity: bigint;
+    constructor(data?: PartialMessage<AbridgedPurchaseIndentItem>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.AbridgedPurchaseIndentItem";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedPurchaseIndentItem;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedPurchaseIndentItem;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedPurchaseIndentItem;
+    static equals(a: AbridgedPurchaseIndentItem | PlainMessage<AbridgedPurchaseIndentItem> | undefined, b: AbridgedPurchaseIndentItem | PlainMessage<AbridgedPurchaseIndentItem> | undefined): boolean;
+}
+/**
+ *
+ * Describes the abridged version of each purchase order item
+ *
+ * @generated from message Scailo.AbridgedPurchaseOrderItem
+ */
+export declare class AbridgedPurchaseOrderItem extends Message<AbridgedPurchaseOrderItem> {
+    /**
+     * Stores the purchase order ID
+     *
+     * @generated from field: uint64 purchase_order_id = 10;
+     */
+    purchaseOrderId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 20;
+     */
+    familyId: bigint;
+    /**
+     * The quantity of the item (in cents)
+     *
+     * @generated from field: int64 quantity = 30;
+     */
+    quantity: bigint;
+    constructor(data?: PartialMessage<AbridgedPurchaseOrderItem>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.AbridgedPurchaseOrderItem";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedPurchaseOrderItem;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedPurchaseOrderItem;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedPurchaseOrderItem;
+    static equals(a: AbridgedPurchaseOrderItem | PlainMessage<AbridgedPurchaseOrderItem> | undefined, b: AbridgedPurchaseOrderItem | PlainMessage<AbridgedPurchaseOrderItem> | undefined): boolean;
+}
+/**
+ *
+ * Describes the abridged version of each goods receipt item
+ *
+ * @generated from message Scailo.AbridgedGoodsReceiptItem
+ */
+export declare class AbridgedGoodsReceiptItem extends Message<AbridgedGoodsReceiptItem> {
+    /**
+     * Stores the goods receipt ID
+     *
+     * @generated from field: uint64 goods_receipt_id = 10;
+     */
+    goodsReceiptId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 20;
+     */
+    familyId: bigint;
+    /**
+     * The quantity of the item (in cents)
+     *
+     * @generated from field: int64 quantity = 30;
+     */
+    quantity: bigint;
+    constructor(data?: PartialMessage<AbridgedGoodsReceiptItem>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.AbridgedGoodsReceiptItem";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedGoodsReceiptItem;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedGoodsReceiptItem;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedGoodsReceiptItem;
+    static equals(a: AbridgedGoodsReceiptItem | PlainMessage<AbridgedGoodsReceiptItem> | undefined, b: AbridgedGoodsReceiptItem | PlainMessage<AbridgedGoodsReceiptItem> | undefined): boolean;
+}
+/**
+ *
+ * Describes the abridged version of each purchase return item
+ *
+ * @generated from message Scailo.AbridgedPurchaseReturnItem
+ */
+export declare class AbridgedPurchaseReturnItem extends Message<AbridgedPurchaseReturnItem> {
+    /**
+     * Stores the purchase return ID
+     *
+     * @generated from field: uint64 purchase_return_id = 10;
+     */
+    purchaseReturnId: bigint;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 20;
+     */
+    familyId: bigint;
+    /**
+     * The quantity of the item (in cents)
+     *
+     * @generated from field: int64 quantity = 30;
+     */
+    quantity: bigint;
+    constructor(data?: PartialMessage<AbridgedPurchaseReturnItem>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.AbridgedPurchaseReturnItem";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedPurchaseReturnItem;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedPurchaseReturnItem;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedPurchaseReturnItem;
+    static equals(a: AbridgedPurchaseReturnItem | PlainMessage<AbridgedPurchaseReturnItem> | undefined, b: AbridgedPurchaseReturnItem | PlainMessage<AbridgedPurchaseReturnItem> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the work in progress inventory statistics for the given family ID
+ *
+ * @generated from message Scailo.InventoryWorkInProgressStatistics
+ */
+export declare class InventoryWorkInProgressStatistics extends Message<InventoryWorkInProgressStatistics> {
+    /**
+     * List of abridged production plan items
+     *
+     * @generated from field: repeated Scailo.AbridgedProductionPlanItem production_plans = 10;
+     */
+    productionPlans: AbridgedProductionPlanItem[];
+    /**
+     * List of abridged inventory items
+     *
+     * @generated from field: repeated Scailo.AbridgedInventoryItem inventory_items = 20;
+     */
+    inventoryItems: AbridgedInventoryItem[];
+    constructor(data?: PartialMessage<InventoryWorkInProgressStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InventoryWorkInProgressStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryWorkInProgressStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryWorkInProgressStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryWorkInProgressStatistics;
+    static equals(a: InventoryWorkInProgressStatistics | PlainMessage<InventoryWorkInProgressStatistics> | undefined, b: InventoryWorkInProgressStatistics | PlainMessage<InventoryWorkInProgressStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the indented inventory statistics for the given family ID
+ *
+ * @generated from message Scailo.InventoryIndentedStatistics
+ */
+export declare class InventoryIndentedStatistics extends Message<InventoryIndentedStatistics> {
+    /**
+     * List of abridged purchase indent items
+     *
+     * @generated from field: repeated Scailo.AbridgedPurchaseIndentItem purchase_indents = 10;
+     */
+    purchaseIndents: AbridgedPurchaseIndentItem[];
+    /**
+     * List of abridged purchase order items
+     *
+     * @generated from field: repeated Scailo.AbridgedPurchaseOrderItem purchase_orders = 20;
+     */
+    purchaseOrders: AbridgedPurchaseOrderItem[];
+    constructor(data?: PartialMessage<InventoryIndentedStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InventoryIndentedStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryIndentedStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryIndentedStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryIndentedStatistics;
+    static equals(a: InventoryIndentedStatistics | PlainMessage<InventoryIndentedStatistics> | undefined, b: InventoryIndentedStatistics | PlainMessage<InventoryIndentedStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the ordered inventory statistics for the given family ID
+ *
+ * @generated from message Scailo.InventoryOrderedStatistics
+ */
+export declare class InventoryOrderedStatistics extends Message<InventoryOrderedStatistics> {
+    /**
+     * List of abridged purchase order items
+     *
+     * @generated from field: repeated Scailo.AbridgedPurchaseOrderItem purchase_orders = 10;
+     */
+    purchaseOrders: AbridgedPurchaseOrderItem[];
+    /**
+     * List of abridged goods receipt items
+     *
+     * @generated from field: repeated Scailo.AbridgedGoodsReceiptItem goods_receipts = 20;
+     */
+    goodsReceipts: AbridgedGoodsReceiptItem[];
+    /**
+     * List of abridged purchase return items
+     *
+     * @generated from field: repeated Scailo.AbridgedPurchaseReturnItem purchase_returns = 30;
+     */
+    purchaseReturns: AbridgedPurchaseReturnItem[];
+    constructor(data?: PartialMessage<InventoryOrderedStatistics>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InventoryOrderedStatistics";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryOrderedStatistics;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryOrderedStatistics;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryOrderedStatistics;
+    static equals(a: InventoryOrderedStatistics | PlainMessage<InventoryOrderedStatistics> | undefined, b: InventoryOrderedStatistics | PlainMessage<InventoryOrderedStatistics> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the detailed demand statistics for the given family ID
+ *
+ * @generated from message Scailo.InventoryDetailedDemand
+ */
+export declare class InventoryDetailedDemand extends Message<InventoryDetailedDemand> {
+    /**
+     * ID of the resource
+     *
+     * @generated from field: uint64 id = 1;
+     */
+    id: bigint;
+    /**
+     * UUID of the resource
+     *
+     * @generated from field: string uuid = 2;
+     */
+    uuid: string;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 10;
+     */
+    familyId: bigint;
+    /**
+     * The base demand quantity of the item (in cents)
+     *
+     * @generated from field: int64 base_demand_quantity = 20;
+     */
+    baseDemandQuantity: bigint;
+    /**
+     * The adjusted demand quantity of the item (in cents)
+     *
+     * @generated from field: int64 adjusted_demand_quantity = 30;
+     */
+    adjustedDemandQuantity: bigint;
+    /**
+     * The required quantity of the item (in cents)
+     *
+     * @generated from field: int64 required_quantity = 40;
+     */
+    requiredQuantity: bigint;
+    /**
+     * The map of the demand
+     *
+     * @generated from field: Scailo.InventoryDemandMap demand_map = 50;
+     */
+    demandMap?: InventoryDemandMap;
+    /**
+     * Represents if the resource is active
+     *
+     * @generated from field: bool is_active = 60;
+     */
+    isActive: boolean;
+    /**
+     * Stores the timestamp of when the resource was created
+     *
+     * @generated from field: uint64 created_at = 70;
+     */
+    createdAt: bigint;
+    constructor(data?: PartialMessage<InventoryDetailedDemand>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InventoryDetailedDemand";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryDetailedDemand;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryDetailedDemand;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryDetailedDemand;
+    static equals(a: InventoryDetailedDemand | PlainMessage<InventoryDetailedDemand> | undefined, b: InventoryDetailedDemand | PlainMessage<InventoryDetailedDemand> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the demand map
+ *
+ * @generated from message Scailo.InventoryDemandMap
+ */
+export declare class InventoryDemandMap extends Message<InventoryDemandMap> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 10;
+     */
+    familyId: bigint;
+    /**
+     * The base demand list
+     *
+     * @generated from field: repeated Scailo.InventoryDemand base_demand_list = 20;
+     */
+    baseDemandList: InventoryDemand[];
+    /**
+     * The adjusted demand list
+     *
+     * @generated from field: repeated Scailo.InventoryDemand adjusted_demand_list = 30;
+     */
+    adjustedDemandList: InventoryDemand[];
+    /**
+     * The quantity of the base demand (in cents)
+     *
+     * @generated from field: int64 base_demand_quantity = 40;
+     */
+    baseDemandQuantity: bigint;
+    /**
+     * The quantity of the adjusted demand (in cents)
+     *
+     * @generated from field: int64 adjusted_demand_quantity = 50;
+     */
+    adjustedDemandQuantity: bigint;
+    /**
+     * The required quantity of the item (in cents)
+     *
+     * @generated from field: int64 required_quantity = 60;
+     */
+    requiredQuantity: bigint;
+    /**
+     * Stores if the item has been evaluated
+     *
+     * @generated from field: bool is_evaluated = 70;
+     */
+    isEvaluated: boolean;
+    constructor(data?: PartialMessage<InventoryDemandMap>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InventoryDemandMap";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryDemandMap;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryDemandMap;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryDemandMap;
+    static equals(a: InventoryDemandMap | PlainMessage<InventoryDemandMap> | undefined, b: InventoryDemandMap | PlainMessage<InventoryDemandMap> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the demand
+ *
+ * @generated from message Scailo.InventoryDemand
+ */
+export declare class InventoryDemand extends Message<InventoryDemand> {
+    /**
+     * The type of the origin
+     *
+     * @generated from field: Scailo.INVENTORY_NODE_ORIGIN_TYPE origin_type = 10;
+     */
+    originType: INVENTORY_NODE_ORIGIN_TYPE;
+    /**
+     * The ID of the origin
+     *
+     * @generated from field: int64 origin_id = 20;
+     */
+    originId: bigint;
+    /**
+     * The quantity in the origin
+     *
+     * @generated from field: int64 quantity = 30;
+     */
+    quantity: bigint;
+    /**
+     * The multiplier that needs to be applied
+     *
+     * @generated from field: int64 multiplier = 40;
+     */
+    multiplier: bigint;
+    /**
+     * The computed total
+     *
+     * @generated from field: int64 total = 50;
+     */
+    total: bigint;
+    /**
+     * Stores if the quantity is positive
+     *
+     * @generated from field: bool is_positive_quantity = 60;
+     */
+    isPositiveQuantity: boolean;
+    constructor(data?: PartialMessage<InventoryDemand>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InventoryDemand";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryDemand;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryDemand;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryDemand;
+    static equals(a: InventoryDemand | PlainMessage<InventoryDemand> | undefined, b: InventoryDemand | PlainMessage<InventoryDemand> | undefined): boolean;
 }
 //# sourceMappingURL=inventory.scailo_pb.d.ts.map

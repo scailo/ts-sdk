@@ -66,7 +66,7 @@ Message\&lt;InventoryHashSearchReq\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:564
+src/inventory.scailo_pb.ts:719
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: string hash = 1;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:562
+src/inventory.scailo_pb.ts:717
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:571
+src/inventory.scailo_pb.ts:726
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:569
+src/inventory.scailo_pb.ts:724
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:570
+src/inventory.scailo_pb.ts:725
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:587
+src/inventory.scailo_pb.ts:742
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:575
+src/inventory.scailo_pb.ts:730
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:579
+src/inventory.scailo_pb.ts:734
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:583
+src/inventory.scailo_pb.ts:738

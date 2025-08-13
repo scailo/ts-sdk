@@ -69,6 +69,161 @@ proto3.util.setEnumType(GENERIC_INVENTORY_REF_FROM, "Scailo.GENERIC_INVENTORY_RE
 
 /**
  *
+ * Describes the available types of inventory node origins
+ *
+ * @generated from enum Scailo.INVENTORY_NODE_ORIGIN_TYPE
+ */
+export enum INVENTORY_NODE_ORIGIN_TYPE {
+  /**
+   * Use this only in filter and search queries
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_ANY_UNSPECIFIED = 0;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the origin is from a sales order
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_SALES_ORDER = 10;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_SALES_ORDER = 10,
+
+  /**
+   * Denotes that the origin is from a sales return
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_SALES_RETURN = 20;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_SALES_RETURN = 20,
+
+  /**
+   * Denotes that the origin is from a production plan
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_PRODUCTION_PLAN = 30;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_PRODUCTION_PLAN = 30,
+
+  /**
+   * Denotes that the origin is from a work order equation
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_WORK_ORDER_EQUATION = 40;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_WORK_ORDER_EQUATION = 40,
+
+  /**
+   * Denotes that the origin from minimum stock
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_MIN_STOCK = 50;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_MIN_STOCK = 50,
+
+  /**
+   * Denotes that the origin is from a goods dispatch
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_GOODS_DISPATCH = 60;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_GOODS_DISPATCH = 60,
+
+  /**
+   * Denotes that the origin is from a stock issuance
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_STOCK_ISSUANCE = 70;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_STOCK_ISSUANCE = 70,
+
+  /**
+   * Denotes that the origin is from a family equation
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_FAMILY_EQUATION = 80;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_FAMILY_EQUATION = 80,
+
+  /**
+   * Denotes that the origin is from work in progress
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_WORK_IN_PROGRESS = 90;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_WORK_IN_PROGRESS = 90,
+
+  /**
+   * Denotes that the origin is from net indented
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_NET_INDENTED = 100;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_NET_INDENTED = 100,
+
+  /**
+   * Dentoes that the origin is from net ordered
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_NET_ORDERED = 110;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_NET_ORDERED = 110,
+
+  /**
+   * Denotes that the origin is from iqc
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_QC = 120;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_QC = 120,
+
+  /**
+   * Denotes that the origin is from rejected
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_REJECTED = 130;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_REJECTED = 130,
+
+  /**
+   * Denotes that the origin is from returnable
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_RETURNABLE = 140;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_RETURNABLE = 140,
+
+  /**
+   * Denotes that the origin is from rework
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_REWORK = 150;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_REWORK = 150,
+
+  /**
+   * Denotes that the origin is from scrap
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_SCRAP = 160;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_SCRAP = 160,
+
+  /**
+   * Denotes that the origin is from store
+   *
+   * @generated from enum value: INVENTORY_NODE_ORIGIN_TYPE_STORE = 170;
+   */
+  INVENTORY_NODE_ORIGIN_TYPE_STORE = 170,
+}
+// Retrieve enum metadata with: proto3.getEnumType(INVENTORY_NODE_ORIGIN_TYPE)
+proto3.util.setEnumType(INVENTORY_NODE_ORIGIN_TYPE, "Scailo.INVENTORY_NODE_ORIGIN_TYPE", [
+  { no: 0, name: "INVENTORY_NODE_ORIGIN_TYPE_ANY_UNSPECIFIED" },
+  { no: 10, name: "INVENTORY_NODE_ORIGIN_TYPE_SALES_ORDER" },
+  { no: 20, name: "INVENTORY_NODE_ORIGIN_TYPE_SALES_RETURN" },
+  { no: 30, name: "INVENTORY_NODE_ORIGIN_TYPE_PRODUCTION_PLAN" },
+  { no: 40, name: "INVENTORY_NODE_ORIGIN_TYPE_WORK_ORDER_EQUATION" },
+  { no: 50, name: "INVENTORY_NODE_ORIGIN_TYPE_MIN_STOCK" },
+  { no: 60, name: "INVENTORY_NODE_ORIGIN_TYPE_GOODS_DISPATCH" },
+  { no: 70, name: "INVENTORY_NODE_ORIGIN_TYPE_STOCK_ISSUANCE" },
+  { no: 80, name: "INVENTORY_NODE_ORIGIN_TYPE_FAMILY_EQUATION" },
+  { no: 90, name: "INVENTORY_NODE_ORIGIN_TYPE_WORK_IN_PROGRESS" },
+  { no: 100, name: "INVENTORY_NODE_ORIGIN_TYPE_NET_INDENTED" },
+  { no: 110, name: "INVENTORY_NODE_ORIGIN_TYPE_NET_ORDERED" },
+  { no: 120, name: "INVENTORY_NODE_ORIGIN_TYPE_QC" },
+  { no: 130, name: "INVENTORY_NODE_ORIGIN_TYPE_REJECTED" },
+  { no: 140, name: "INVENTORY_NODE_ORIGIN_TYPE_RETURNABLE" },
+  { no: 150, name: "INVENTORY_NODE_ORIGIN_TYPE_REWORK" },
+  { no: 160, name: "INVENTORY_NODE_ORIGIN_TYPE_SCRAP" },
+  { no: 170, name: "INVENTORY_NODE_ORIGIN_TYPE_STORE" },
+]);
+
+/**
+ *
  * Describes the parameters that are present in a generic inventory payload, which is an abstraction over every inventory item that consists of the common parameters
  *
  * @generated from message Scailo.GenericInventory
@@ -1320,6 +1475,790 @@ export class ConsolidatedInventoryStatistics extends Message<ConsolidatedInvento
 
   static equals(a: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined, b: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined): boolean {
     return proto3.util.equals(ConsolidatedInventoryStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the abridged version of each production plan item
+ *
+ * @generated from message Scailo.AbridgedProductionPlanItem
+ */
+export class AbridgedProductionPlanItem extends Message<AbridgedProductionPlanItem> {
+  /**
+   * Stores the production plan ID
+   *
+   * @generated from field: uint64 production_plan_id = 10;
+   */
+  productionPlanId = protoInt64.zero;
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 20;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity being manufactured (in cents)
+   *
+   * @generated from field: int64 quantity = 30;
+   */
+  quantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<AbridgedProductionPlanItem>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.AbridgedProductionPlanItem";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "production_plan_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedProductionPlanItem {
+    return new AbridgedProductionPlanItem().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedProductionPlanItem {
+    return new AbridgedProductionPlanItem().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedProductionPlanItem {
+    return new AbridgedProductionPlanItem().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: AbridgedProductionPlanItem | PlainMessage<AbridgedProductionPlanItem> | undefined, b: AbridgedProductionPlanItem | PlainMessage<AbridgedProductionPlanItem> | undefined): boolean {
+    return proto3.util.equals(AbridgedProductionPlanItem, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the abridged version of each inventory item
+ *
+ * @generated from message Scailo.AbridgedInventoryItem
+ */
+export class AbridgedInventoryItem extends Message<AbridgedInventoryItem> {
+  /**
+   * Stores the ID of the associated family
+   *
+   * @generated from field: uint64 family_id = 10;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The computed hash of the inventory item
+   *
+   * @generated from field: string hash = 20;
+   */
+  hash = "";
+
+  /**
+   * Stores the quantity (in cents)
+   *
+   * @generated from field: int64 quantity = 30;
+   */
+  quantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<AbridgedInventoryItem>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.AbridgedInventoryItem";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedInventoryItem {
+    return new AbridgedInventoryItem().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedInventoryItem {
+    return new AbridgedInventoryItem().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedInventoryItem {
+    return new AbridgedInventoryItem().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: AbridgedInventoryItem | PlainMessage<AbridgedInventoryItem> | undefined, b: AbridgedInventoryItem | PlainMessage<AbridgedInventoryItem> | undefined): boolean {
+    return proto3.util.equals(AbridgedInventoryItem, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the abridged version of each purchase indent item
+ *
+ * @generated from message Scailo.AbridgedPurchaseIndentItem
+ */
+export class AbridgedPurchaseIndentItem extends Message<AbridgedPurchaseIndentItem> {
+  /**
+   * Stores the purchase indent ID
+   *
+   * @generated from field: uint64 purchase_indent_id = 10;
+   */
+  purchaseIndentId = protoInt64.zero;
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 20;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity of the item (in cents)
+   *
+   * @generated from field: int64 quantity = 30;
+   */
+  quantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<AbridgedPurchaseIndentItem>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.AbridgedPurchaseIndentItem";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "purchase_indent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedPurchaseIndentItem {
+    return new AbridgedPurchaseIndentItem().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedPurchaseIndentItem {
+    return new AbridgedPurchaseIndentItem().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedPurchaseIndentItem {
+    return new AbridgedPurchaseIndentItem().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: AbridgedPurchaseIndentItem | PlainMessage<AbridgedPurchaseIndentItem> | undefined, b: AbridgedPurchaseIndentItem | PlainMessage<AbridgedPurchaseIndentItem> | undefined): boolean {
+    return proto3.util.equals(AbridgedPurchaseIndentItem, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the abridged version of each purchase order item
+ *
+ * @generated from message Scailo.AbridgedPurchaseOrderItem
+ */
+export class AbridgedPurchaseOrderItem extends Message<AbridgedPurchaseOrderItem> {
+  /**
+   * Stores the purchase order ID
+   *
+   * @generated from field: uint64 purchase_order_id = 10;
+   */
+  purchaseOrderId = protoInt64.zero;
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 20;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity of the item (in cents)
+   *
+   * @generated from field: int64 quantity = 30;
+   */
+  quantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<AbridgedPurchaseOrderItem>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.AbridgedPurchaseOrderItem";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "purchase_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedPurchaseOrderItem {
+    return new AbridgedPurchaseOrderItem().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedPurchaseOrderItem {
+    return new AbridgedPurchaseOrderItem().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedPurchaseOrderItem {
+    return new AbridgedPurchaseOrderItem().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: AbridgedPurchaseOrderItem | PlainMessage<AbridgedPurchaseOrderItem> | undefined, b: AbridgedPurchaseOrderItem | PlainMessage<AbridgedPurchaseOrderItem> | undefined): boolean {
+    return proto3.util.equals(AbridgedPurchaseOrderItem, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the abridged version of each goods receipt item
+ *
+ * @generated from message Scailo.AbridgedGoodsReceiptItem
+ */
+export class AbridgedGoodsReceiptItem extends Message<AbridgedGoodsReceiptItem> {
+  /**
+   * Stores the goods receipt ID
+   *
+   * @generated from field: uint64 goods_receipt_id = 10;
+   */
+  goodsReceiptId = protoInt64.zero;
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 20;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity of the item (in cents)
+   *
+   * @generated from field: int64 quantity = 30;
+   */
+  quantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<AbridgedGoodsReceiptItem>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.AbridgedGoodsReceiptItem";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "goods_receipt_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedGoodsReceiptItem {
+    return new AbridgedGoodsReceiptItem().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedGoodsReceiptItem {
+    return new AbridgedGoodsReceiptItem().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedGoodsReceiptItem {
+    return new AbridgedGoodsReceiptItem().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: AbridgedGoodsReceiptItem | PlainMessage<AbridgedGoodsReceiptItem> | undefined, b: AbridgedGoodsReceiptItem | PlainMessage<AbridgedGoodsReceiptItem> | undefined): boolean {
+    return proto3.util.equals(AbridgedGoodsReceiptItem, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the abridged version of each purchase return item
+ *
+ * @generated from message Scailo.AbridgedPurchaseReturnItem
+ */
+export class AbridgedPurchaseReturnItem extends Message<AbridgedPurchaseReturnItem> {
+  /**
+   * Stores the purchase return ID
+   *
+   * @generated from field: uint64 purchase_return_id = 10;
+   */
+  purchaseReturnId = protoInt64.zero;
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 20;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity of the item (in cents)
+   *
+   * @generated from field: int64 quantity = 30;
+   */
+  quantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<AbridgedPurchaseReturnItem>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.AbridgedPurchaseReturnItem";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "purchase_return_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 30, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbridgedPurchaseReturnItem {
+    return new AbridgedPurchaseReturnItem().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbridgedPurchaseReturnItem {
+    return new AbridgedPurchaseReturnItem().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbridgedPurchaseReturnItem {
+    return new AbridgedPurchaseReturnItem().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: AbridgedPurchaseReturnItem | PlainMessage<AbridgedPurchaseReturnItem> | undefined, b: AbridgedPurchaseReturnItem | PlainMessage<AbridgedPurchaseReturnItem> | undefined): boolean {
+    return proto3.util.equals(AbridgedPurchaseReturnItem, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the work in progress inventory statistics for the given family ID
+ *
+ * @generated from message Scailo.InventoryWorkInProgressStatistics
+ */
+export class InventoryWorkInProgressStatistics extends Message<InventoryWorkInProgressStatistics> {
+  /**
+   * List of abridged production plan items
+   *
+   * @generated from field: repeated Scailo.AbridgedProductionPlanItem production_plans = 10;
+   */
+  productionPlans: AbridgedProductionPlanItem[] = [];
+
+  /**
+   * List of abridged inventory items
+   *
+   * @generated from field: repeated Scailo.AbridgedInventoryItem inventory_items = 20;
+   */
+  inventoryItems: AbridgedInventoryItem[] = [];
+
+  constructor(data?: PartialMessage<InventoryWorkInProgressStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.InventoryWorkInProgressStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "production_plans", kind: "message", T: AbridgedProductionPlanItem, repeated: true },
+    { no: 20, name: "inventory_items", kind: "message", T: AbridgedInventoryItem, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryWorkInProgressStatistics {
+    return new InventoryWorkInProgressStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryWorkInProgressStatistics {
+    return new InventoryWorkInProgressStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryWorkInProgressStatistics {
+    return new InventoryWorkInProgressStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: InventoryWorkInProgressStatistics | PlainMessage<InventoryWorkInProgressStatistics> | undefined, b: InventoryWorkInProgressStatistics | PlainMessage<InventoryWorkInProgressStatistics> | undefined): boolean {
+    return proto3.util.equals(InventoryWorkInProgressStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the indented inventory statistics for the given family ID
+ *
+ * @generated from message Scailo.InventoryIndentedStatistics
+ */
+export class InventoryIndentedStatistics extends Message<InventoryIndentedStatistics> {
+  /**
+   * List of abridged purchase indent items
+   *
+   * @generated from field: repeated Scailo.AbridgedPurchaseIndentItem purchase_indents = 10;
+   */
+  purchaseIndents: AbridgedPurchaseIndentItem[] = [];
+
+  /**
+   * List of abridged purchase order items
+   *
+   * @generated from field: repeated Scailo.AbridgedPurchaseOrderItem purchase_orders = 20;
+   */
+  purchaseOrders: AbridgedPurchaseOrderItem[] = [];
+
+  constructor(data?: PartialMessage<InventoryIndentedStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.InventoryIndentedStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "purchase_indents", kind: "message", T: AbridgedPurchaseIndentItem, repeated: true },
+    { no: 20, name: "purchase_orders", kind: "message", T: AbridgedPurchaseOrderItem, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryIndentedStatistics {
+    return new InventoryIndentedStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryIndentedStatistics {
+    return new InventoryIndentedStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryIndentedStatistics {
+    return new InventoryIndentedStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: InventoryIndentedStatistics | PlainMessage<InventoryIndentedStatistics> | undefined, b: InventoryIndentedStatistics | PlainMessage<InventoryIndentedStatistics> | undefined): boolean {
+    return proto3.util.equals(InventoryIndentedStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the ordered inventory statistics for the given family ID
+ *
+ * @generated from message Scailo.InventoryOrderedStatistics
+ */
+export class InventoryOrderedStatistics extends Message<InventoryOrderedStatistics> {
+  /**
+   * List of abridged purchase order items
+   *
+   * @generated from field: repeated Scailo.AbridgedPurchaseOrderItem purchase_orders = 10;
+   */
+  purchaseOrders: AbridgedPurchaseOrderItem[] = [];
+
+  /**
+   * List of abridged goods receipt items
+   *
+   * @generated from field: repeated Scailo.AbridgedGoodsReceiptItem goods_receipts = 20;
+   */
+  goodsReceipts: AbridgedGoodsReceiptItem[] = [];
+
+  /**
+   * List of abridged purchase return items
+   *
+   * @generated from field: repeated Scailo.AbridgedPurchaseReturnItem purchase_returns = 30;
+   */
+  purchaseReturns: AbridgedPurchaseReturnItem[] = [];
+
+  constructor(data?: PartialMessage<InventoryOrderedStatistics>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.InventoryOrderedStatistics";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "purchase_orders", kind: "message", T: AbridgedPurchaseOrderItem, repeated: true },
+    { no: 20, name: "goods_receipts", kind: "message", T: AbridgedGoodsReceiptItem, repeated: true },
+    { no: 30, name: "purchase_returns", kind: "message", T: AbridgedPurchaseReturnItem, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryOrderedStatistics {
+    return new InventoryOrderedStatistics().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryOrderedStatistics {
+    return new InventoryOrderedStatistics().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryOrderedStatistics {
+    return new InventoryOrderedStatistics().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: InventoryOrderedStatistics | PlainMessage<InventoryOrderedStatistics> | undefined, b: InventoryOrderedStatistics | PlainMessage<InventoryOrderedStatistics> | undefined): boolean {
+    return proto3.util.equals(InventoryOrderedStatistics, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the detailed demand statistics for the given family ID
+ *
+ * @generated from message Scailo.InventoryDetailedDemand
+ */
+export class InventoryDetailedDemand extends Message<InventoryDetailedDemand> {
+  /**
+   * ID of the resource
+   *
+   * @generated from field: uint64 id = 1;
+   */
+  id = protoInt64.zero;
+
+  /**
+   * UUID of the resource
+   *
+   * @generated from field: string uuid = 2;
+   */
+  uuid = "";
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 10;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The base demand quantity of the item (in cents)
+   *
+   * @generated from field: int64 base_demand_quantity = 20;
+   */
+  baseDemandQuantity = protoInt64.zero;
+
+  /**
+   * The adjusted demand quantity of the item (in cents)
+   *
+   * @generated from field: int64 adjusted_demand_quantity = 30;
+   */
+  adjustedDemandQuantity = protoInt64.zero;
+
+  /**
+   * The required quantity of the item (in cents)
+   *
+   * @generated from field: int64 required_quantity = 40;
+   */
+  requiredQuantity = protoInt64.zero;
+
+  /**
+   * The map of the demand
+   *
+   * @generated from field: Scailo.InventoryDemandMap demand_map = 50;
+   */
+  demandMap?: InventoryDemandMap;
+
+  /**
+   * Represents if the resource is active
+   *
+   * @generated from field: bool is_active = 60;
+   */
+  isActive = false;
+
+  /**
+   * Stores the timestamp of when the resource was created
+   *
+   * @generated from field: uint64 created_at = 70;
+   */
+  createdAt = protoInt64.zero;
+
+  constructor(data?: PartialMessage<InventoryDetailedDemand>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.InventoryDetailedDemand";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "base_demand_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "adjusted_demand_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 40, name: "required_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 50, name: "demand_map", kind: "message", T: InventoryDemandMap },
+    { no: 60, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 70, name: "created_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryDetailedDemand {
+    return new InventoryDetailedDemand().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryDetailedDemand {
+    return new InventoryDetailedDemand().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryDetailedDemand {
+    return new InventoryDetailedDemand().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: InventoryDetailedDemand | PlainMessage<InventoryDetailedDemand> | undefined, b: InventoryDetailedDemand | PlainMessage<InventoryDetailedDemand> | undefined): boolean {
+    return proto3.util.equals(InventoryDetailedDemand, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the demand map
+ *
+ * @generated from message Scailo.InventoryDemandMap
+ */
+export class InventoryDemandMap extends Message<InventoryDemandMap> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 10;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The base demand list
+   *
+   * @generated from field: repeated Scailo.InventoryDemand base_demand_list = 20;
+   */
+  baseDemandList: InventoryDemand[] = [];
+
+  /**
+   * The adjusted demand list
+   *
+   * @generated from field: repeated Scailo.InventoryDemand adjusted_demand_list = 30;
+   */
+  adjustedDemandList: InventoryDemand[] = [];
+
+  /**
+   * The quantity of the base demand (in cents)
+   *
+   * @generated from field: int64 base_demand_quantity = 40;
+   */
+  baseDemandQuantity = protoInt64.zero;
+
+  /**
+   * The quantity of the adjusted demand (in cents)
+   *
+   * @generated from field: int64 adjusted_demand_quantity = 50;
+   */
+  adjustedDemandQuantity = protoInt64.zero;
+
+  /**
+   * The required quantity of the item (in cents)
+   *
+   * @generated from field: int64 required_quantity = 60;
+   */
+  requiredQuantity = protoInt64.zero;
+
+  /**
+   * Stores if the item has been evaluated
+   *
+   * @generated from field: bool is_evaluated = 70;
+   */
+  isEvaluated = false;
+
+  constructor(data?: PartialMessage<InventoryDemandMap>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.InventoryDemandMap";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "base_demand_list", kind: "message", T: InventoryDemand, repeated: true },
+    { no: 30, name: "adjusted_demand_list", kind: "message", T: InventoryDemand, repeated: true },
+    { no: 40, name: "base_demand_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 50, name: "adjusted_demand_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 60, name: "required_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 70, name: "is_evaluated", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryDemandMap {
+    return new InventoryDemandMap().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryDemandMap {
+    return new InventoryDemandMap().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryDemandMap {
+    return new InventoryDemandMap().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: InventoryDemandMap | PlainMessage<InventoryDemandMap> | undefined, b: InventoryDemandMap | PlainMessage<InventoryDemandMap> | undefined): boolean {
+    return proto3.util.equals(InventoryDemandMap, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the demand
+ *
+ * @generated from message Scailo.InventoryDemand
+ */
+export class InventoryDemand extends Message<InventoryDemand> {
+  /**
+   * The type of the origin
+   *
+   * @generated from field: Scailo.INVENTORY_NODE_ORIGIN_TYPE origin_type = 10;
+   */
+  originType = INVENTORY_NODE_ORIGIN_TYPE.INVENTORY_NODE_ORIGIN_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * The ID of the origin
+   *
+   * @generated from field: int64 origin_id = 20;
+   */
+  originId = protoInt64.zero;
+
+  /**
+   * The quantity in the origin
+   *
+   * @generated from field: int64 quantity = 30;
+   */
+  quantity = protoInt64.zero;
+
+  /**
+   * The multiplier that needs to be applied
+   *
+   * @generated from field: int64 multiplier = 40;
+   */
+  multiplier = protoInt64.zero;
+
+  /**
+   * The computed total
+   *
+   * @generated from field: int64 total = 50;
+   */
+  total = protoInt64.zero;
+
+  /**
+   * Stores if the quantity is positive
+   *
+   * @generated from field: bool is_positive_quantity = 60;
+   */
+  isPositiveQuantity = false;
+
+  constructor(data?: PartialMessage<InventoryDemand>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.InventoryDemand";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "origin_type", kind: "enum", T: proto3.getEnumType(INVENTORY_NODE_ORIGIN_TYPE) },
+    { no: 20, name: "origin_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 40, name: "multiplier", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 50, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 60, name: "is_positive_quantity", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryDemand {
+    return new InventoryDemand().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryDemand {
+    return new InventoryDemand().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryDemand {
+    return new InventoryDemand().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: InventoryDemand | PlainMessage<InventoryDemand> | undefined, b: InventoryDemand | PlainMessage<InventoryDemand> | undefined): boolean {
+    return proto3.util.equals(InventoryDemand, a, b);
   }
 }
 

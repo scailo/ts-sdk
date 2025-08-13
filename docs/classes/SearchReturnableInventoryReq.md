@@ -82,7 +82,7 @@ Message\&lt;SearchReturnableInventoryReq\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:834
+src/inventory.scailo_pb.ts:989
 
 ## Properties
 
@@ -98,7 +98,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:727
+src/inventory.scailo_pb.ts:882
 
 ___
 
@@ -114,7 +114,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:755
+src/inventory.scailo_pb.ts:910
 
 ___
 
@@ -130,7 +130,7 @@ from field: uint64 family_id = 33;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:769
+src/inventory.scailo_pb.ts:924
 
 ___
 
@@ -146,7 +146,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:720
+src/inventory.scailo_pb.ts:875
 
 ___
 
@@ -162,7 +162,7 @@ from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:825
+src/inventory.scailo_pb.ts:980
 
 ___
 
@@ -178,7 +178,7 @@ from field: uint64 location_id = 54;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:832
+src/inventory.scailo_pb.ts:987
 
 ___
 
@@ -194,7 +194,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:734
+src/inventory.scailo_pb.ts:889
 
 ___
 
@@ -210,7 +210,7 @@ from field: uint64 quantity_remaining_max = 38;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:783
+src/inventory.scailo_pb.ts:938
 
 ___
 
@@ -226,7 +226,7 @@ from field: uint64 quantity_remaining_min = 37;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:776
+src/inventory.scailo_pb.ts:931
 
 ___
 
@@ -242,7 +242,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:762
+src/inventory.scailo_pb.ts:917
 
 ___
 
@@ -258,7 +258,7 @@ from field: uint64 secondary_uom_id = 39;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:790
+src/inventory.scailo_pb.ts:945
 
 ___
 
@@ -274,7 +274,7 @@ from field: uint64 shelf_life_timestamp_end = 41;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:804
+src/inventory.scailo_pb.ts:959
 
 ___
 
@@ -290,7 +290,7 @@ from field: uint64 shelf_life_timestamp_start = 40;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:797
+src/inventory.scailo_pb.ts:952
 
 ___
 
@@ -306,7 +306,7 @@ from field: Scailo.INVENTORY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:748
+src/inventory.scailo_pb.ts:903
 
 ___
 
@@ -322,7 +322,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:741
+src/inventory.scailo_pb.ts:896
 
 ___
 
@@ -338,7 +338,7 @@ from field: uint64 warranty_timestamp_end = 43;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:818
+src/inventory.scailo_pb.ts:973
 
 ___
 
@@ -354,7 +354,7 @@ from field: uint64 warranty_timestamp_start = 42;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:811
+src/inventory.scailo_pb.ts:966
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:841
+src/inventory.scailo_pb.ts:996
 
 ___
 
@@ -374,7 +374,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:839
+src/inventory.scailo_pb.ts:994
 
 ___
 
@@ -384,7 +384,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:840
+src/inventory.scailo_pb.ts:995
 
 ## Methods
 
@@ -672,7 +672,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:873
+src/inventory.scailo_pb.ts:1028
 
 ___
 
@@ -693,7 +693,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:861
+src/inventory.scailo_pb.ts:1016
 
 ___
 
@@ -714,7 +714,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:865
+src/inventory.scailo_pb.ts:1020
 
 ___
 
@@ -735,4 +735,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:869
+src/inventory.scailo_pb.ts:1024

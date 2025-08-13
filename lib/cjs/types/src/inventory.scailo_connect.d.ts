@@ -1,4 +1,4 @@
-import { ConsolidatedInventoryStatistics, GenericInventory, GenericInventoryList, InventoryHashSearchReq, InventoryServiceFamilyQuantityReq, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
+import { ConsolidatedInventoryStatistics, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { Identifier, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 /**
@@ -255,6 +255,50 @@ export declare const InventoryService: {
             readonly name: "ViewInStorage";
             readonly I: typeof Identifier;
             readonly O: typeof GenericInventoryList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the work in progress statistics of the family with the given Identifier
+         *
+         * @generated from rpc Scailo.InventoryService.ViewWorkInProgressStatistics
+         */
+        readonly viewWorkInProgressStatistics: {
+            readonly name: "ViewWorkInProgressStatistics";
+            readonly I: typeof Identifier;
+            readonly O: typeof InventoryWorkInProgressStatistics;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the indented statistics of the family with the given Identifier
+         *
+         * @generated from rpc Scailo.InventoryService.ViewIndentedStatistics
+         */
+        readonly viewIndentedStatistics: {
+            readonly name: "ViewIndentedStatistics";
+            readonly I: typeof Identifier;
+            readonly O: typeof InventoryIndentedStatistics;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the ordered statistics of the fammily with the given Identifier
+         *
+         * @generated from rpc Scailo.InventoryService.ViewOrderedStatistics
+         */
+        readonly viewOrderedStatistics: {
+            readonly name: "ViewOrderedStatistics";
+            readonly I: typeof Identifier;
+            readonly O: typeof InventoryOrderedStatistics;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View the detailed demand of the family with the given Identifier
+         *
+         * @generated from rpc Scailo.InventoryService.ViewDetailedDemand
+         */
+        readonly viewDetailedDemand: {
+            readonly name: "ViewDetailedDemand";
+            readonly I: typeof Identifier;
+            readonly O: typeof InventoryDetailedDemand;
             readonly kind: MethodKind.Unary;
         };
     };

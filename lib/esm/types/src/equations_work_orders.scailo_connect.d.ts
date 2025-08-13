@@ -1,5 +1,5 @@
 import { EquationsWorkOrdersItemsList, EquationsWorkOrdersList, EquationsWorkOrdersServiceCountReq, EquationsWorkOrdersServiceCreateRequest, EquationsWorkOrdersServiceFilterReq, EquationsWorkOrdersServiceItemCreateRequest, EquationsWorkOrdersServiceItemUpdateRequest, EquationsWorkOrdersServicePaginatedItemsResponse, EquationsWorkOrdersServicePaginationReq, EquationsWorkOrdersServicePaginationResponse, EquationsWorkOrdersServiceSearchAllReq, EquationsWorkOrdersServiceUpdateRequest, EquationWorkOrder, EquationWorkOrderItem, EquationWorkOrderItemHistoryRequest, EquationWorkOrderItemsSearchRequest } from "./equations_work_orders.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -334,13 +334,24 @@ export declare const EquationsWorkOrdersService: {
         };
         /**
          * CSV operations
-         * Download the CSV file that could be used to upload items from the filled CSV file. The same file can also be used as a template when there are no existing records
+         * Download the CSV file with the associated line items. The same file could then be used to upload line items.
          *
          * @generated from rpc Scailo.EquationsWorkOrdersService.DownloadItemsAsCSV
          */
         readonly downloadItemsAsCSV: {
             readonly name: "DownloadItemsAsCSV";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download the CSV template that could be used to upload items
+         *
+         * @generated from rpc Scailo.EquationsWorkOrdersService.DownloadItemsTemplateAsCSV
+         */
+        readonly downloadItemsTemplateAsCSV: {
+            readonly name: "DownloadItemsTemplateAsCSV";
+            readonly I: typeof Empty;
             readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
@@ -385,6 +396,17 @@ export declare const EquationsWorkOrdersService: {
         readonly viewByUUID: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
+            readonly O: typeof EquationWorkOrder;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View by Name (returns the latest record in case of duplicates)
+         *
+         * @generated from rpc Scailo.EquationsWorkOrdersService.ViewByName
+         */
+        readonly viewByName: {
+            readonly name: "ViewByName";
+            readonly I: typeof SimpleSearchReq;
             readonly O: typeof EquationWorkOrder;
             readonly kind: MethodKind.Unary;
         };

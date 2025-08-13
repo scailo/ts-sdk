@@ -67,7 +67,7 @@ Message\&lt;InventoryServiceFamilyQuantityReq\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:613
+src/inventory.scailo_pb.ts:768
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 20;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:611
+src/inventory.scailo_pb.ts:766
 
 ___
 
@@ -99,7 +99,7 @@ from field: Scailo.INVENTORY_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:604
+src/inventory.scailo_pb.ts:759
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:620
+src/inventory.scailo_pb.ts:775
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:618
+src/inventory.scailo_pb.ts:773
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:619
+src/inventory.scailo_pb.ts:774
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:637
+src/inventory.scailo_pb.ts:792
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:625
+src/inventory.scailo_pb.ts:780
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:629
+src/inventory.scailo_pb.ts:784
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:633
+src/inventory.scailo_pb.ts:788

@@ -77,7 +77,7 @@ Message\&lt;ConsolidatedInventoryStatistics\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1287
+src/inventory.scailo_pb.ts:1442
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: int64 base_demand_count = 10;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1215
+src/inventory.scailo_pb.ts:1370
 
 ___
 
@@ -109,7 +109,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1208
+src/inventory.scailo_pb.ts:1363
 
 ___
 
@@ -125,7 +125,7 @@ from field: int64 indented_count = 30;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1229
+src/inventory.scailo_pb.ts:1384
 
 ___
 
@@ -141,7 +141,7 @@ from field: int64 ordered_count = 40;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1236
+src/inventory.scailo_pb.ts:1391
 
 ___
 
@@ -157,7 +157,7 @@ from field: int64 qc_count = 100;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1243
+src/inventory.scailo_pb.ts:1398
 
 ___
 
@@ -173,7 +173,7 @@ from field: int64 rejected_count = 110;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1250
+src/inventory.scailo_pb.ts:1405
 
 ___
 
@@ -189,7 +189,7 @@ from field: int64 required_count = 200;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1285
+src/inventory.scailo_pb.ts:1440
 
 ___
 
@@ -205,7 +205,7 @@ from field: int64 returnable_count = 120;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1257
+src/inventory.scailo_pb.ts:1412
 
 ___
 
@@ -221,7 +221,7 @@ from field: int64 rework_count = 130;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1264
+src/inventory.scailo_pb.ts:1419
 
 ___
 
@@ -237,7 +237,7 @@ from field: int64 scrap_count = 140;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1271
+src/inventory.scailo_pb.ts:1426
 
 ___
 
@@ -253,7 +253,7 @@ from field: int64 store_count = 150;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1278
+src/inventory.scailo_pb.ts:1433
 
 ___
 
@@ -269,7 +269,7 @@ from field: int64 work_in_progress_count = 20;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1222
+src/inventory.scailo_pb.ts:1377
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1294
+src/inventory.scailo_pb.ts:1449
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1292
+src/inventory.scailo_pb.ts:1447
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1293
+src/inventory.scailo_pb.ts:1448
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1321
+src/inventory.scailo_pb.ts:1476
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1309
+src/inventory.scailo_pb.ts:1464
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1313
+src/inventory.scailo_pb.ts:1468
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1317
+src/inventory.scailo_pb.ts:1472

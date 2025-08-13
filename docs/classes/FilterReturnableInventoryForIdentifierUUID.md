@@ -67,7 +67,7 @@ Message\&lt;FilterReturnableInventoryForIdentifierUUID\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1167
+src/inventory.scailo_pb.ts:1322
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: Scailo.FilterReturnableInventoryReq filter = 10;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1165
+src/inventory.scailo_pb.ts:1320
 
 ___
 
@@ -99,7 +99,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1158
+src/inventory.scailo_pb.ts:1313
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1174
+src/inventory.scailo_pb.ts:1329
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1172
+src/inventory.scailo_pb.ts:1327
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1173
+src/inventory.scailo_pb.ts:1328
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1191
+src/inventory.scailo_pb.ts:1346
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1179
+src/inventory.scailo_pb.ts:1334
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1183
+src/inventory.scailo_pb.ts:1338
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1187
+src/inventory.scailo_pb.ts:1342

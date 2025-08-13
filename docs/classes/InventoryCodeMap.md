@@ -73,7 +73,7 @@ Message\&lt;InventoryCodeMap\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:449
+src/inventory.scailo_pb.ts:604
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 20;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:433
+src/inventory.scailo_pb.ts:588
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:398
+src/inventory.scailo_pb.ts:553
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 family_id = 12;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:426
+src/inventory.scailo_pb.ts:581
 
 ___
 
@@ -137,7 +137,7 @@ from field: Scailo.FAMILY_TYPE family_type = 11;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:419
+src/inventory.scailo_pb.ts:574
 
 ___
 
@@ -153,7 +153,7 @@ from field: string hash = 21;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:440
+src/inventory.scailo_pb.ts:595
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:405
+src/inventory.scailo_pb.ts:560
 
 ___
 
@@ -185,7 +185,7 @@ from field: string purpose = 10;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:412
+src/inventory.scailo_pb.ts:567
 
 ___
 
@@ -201,7 +201,7 @@ from field: string short_url = 30;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:447
+src/inventory.scailo_pb.ts:602
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:456
+src/inventory.scailo_pb.ts:611
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:454
+src/inventory.scailo_pb.ts:609
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:455
+src/inventory.scailo_pb.ts:610
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:479
+src/inventory.scailo_pb.ts:634
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:467
+src/inventory.scailo_pb.ts:622
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:471
+src/inventory.scailo_pb.ts:626
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:475
+src/inventory.scailo_pb.ts:630

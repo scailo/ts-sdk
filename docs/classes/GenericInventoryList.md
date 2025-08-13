@@ -66,7 +66,7 @@ Message\&lt;GenericInventoryList\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:358
+src/inventory.scailo_pb.ts:513
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.GenericInventory list = 1;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:356
+src/inventory.scailo_pb.ts:511
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:365
+src/inventory.scailo_pb.ts:520
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:363
+src/inventory.scailo_pb.ts:518
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:364
+src/inventory.scailo_pb.ts:519
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:381
+src/inventory.scailo_pb.ts:536
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:369
+src/inventory.scailo_pb.ts:524
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:373
+src/inventory.scailo_pb.ts:528
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:377
+src/inventory.scailo_pb.ts:532
