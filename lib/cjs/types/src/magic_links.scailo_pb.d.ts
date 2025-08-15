@@ -15,6 +15,30 @@ export declare enum MAGIC_LINK_RESOURCE_TYPE {
      */
     MAGIC_LINK_RESOURCE_TYPE_ANY_UNSPECIFIED = 0,
     /**
+     * Denotes that the magic link was created for a vendor
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_VENDOR = 10;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_VENDOR = 10,
+    /**
+     * Denotes that the magic link was created for a purchase enquiry
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ENQUIRY = 20;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ENQUIRY = 20,
+    /**
+     * Denotes that the magic link was created for a quotation request
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_QUOTATION_REQUEST = 30;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_QUOTATION_REQUEST = 30,
+    /**
+     * Denotes that the magic link was created for a quotation response
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_QUOTATION_RESPONSE = 40;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_QUOTATION_RESPONSE = 40,
+    /**
      * Denotes that the magic link was created for a purchase order
      *
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ORDER = 100;
@@ -44,6 +68,18 @@ export declare enum MAGIC_LINK_RESOURCE_TYPE {
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_RETURN = 140;
      */
     MAGIC_LINK_RESOURCE_TYPE_PURCHASE_RETURN = 140,
+    /**
+     * Denotes that the magic link was created for a purchase payment
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_PAYMENT = 150;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_PURCHASE_PAYMENT = 150,
+    /**
+     * Denotes that the magic link was created for a supply offer
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_SUPPLY_OFFER = 160;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_SUPPLY_OFFER = 160,
     /**
      * Denotes that the magic link was created for a sales enquiry
      *
@@ -93,17 +129,197 @@ export declare enum MAGIC_LINK_RESOURCE_TYPE {
      */
     MAGIC_LINK_RESOURCE_TYPE_SALES_RETURN = 250,
     /**
+     * Denotes that the magic link was created for a sales receipt
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_RECEIPT = 260;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_SALES_RECEIPT = 260,
+    /**
      * Denotes that the magic link was created for an inward job
      *
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB = 300;
      */
     MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB = 300,
     /**
+     * Denotes that the magic link was created for an inward job free issue material
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL = 310;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL = 310,
+    /**
+     * Denotes that the magic link was created for an inward job free issue material return
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN = 320;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN = 320,
+    /**
      * Denotes that the magic link was created for an outward job
      *
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB = 400;
      */
-    MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB = 400
+    MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB = 400,
+    /**
+     * Denotes that the magic link was created for an outward job free issue material
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 410;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 410,
+    /**
+     * Denotes that the magic link was created for an outward job free issue material return
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN = 420;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN = 420,
+    /**
+     * Denotes that the magic link was created for a family equation
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_FAMILY = 600;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_EQUATION_FAMILY = 600,
+    /**
+     * Denotes that the magic link was created for a sales bundle equation
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_SALES_BUNDLE = 610;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_EQUATION_SALES_BUNDLE = 610,
+    /**
+     * Denotes that the magic link was created for a work order equation
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_WORK_ORDER = 620;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_EQUATION_WORK_ORDER = 620,
+    /**
+     * Denotes that the magic link was created for a replaceable equation
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_REPLACEABLE = 630;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_EQUATION_REPLACEABLE = 630,
+    /**
+     * Denotes that the magic link was created for a work order
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_WORK_ORDER = 700;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_WORK_ORDER = 700,
+    /**
+     * Denotes that the magic link was created for a production plan
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_PLAN = 710;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_PLAN = 710,
+    /**
+     * Denotes that the magic link was created for a replaceable indent
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_REPLACEABLE_INDENT = 800;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_REPLACEABLE_INDENT = 800,
+    /**
+     * Denotes that the magic link was created for a purchase indent
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_INDENT = 810;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_PURCHASE_INDENT = 810,
+    /**
+     * Denotes that the magic link was created for a production indent
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_INDENT = 820;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_INDENT = 820,
+    /**
+     * Denotes that the magic link was created for an asset indent
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_ASSET_INDENT = 830;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_ASSET_INDENT = 830,
+    /**
+     * Denotes that the magic link was created for a stock issuance
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_ISSUANCE = 900;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_STOCK_ISSUANCE = 900,
+    /**
+     * Denotes that the magic link was created for a stock return
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_RETURN = 910;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_STOCK_RETURN = 910,
+    /**
+     * Denotes that the magic link was created for a stock audit
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_AUDIT = 920;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_STOCK_AUDIT = 920,
+    /**
+     * Denotes that the magic link was created for a qc sample
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_QC_SAMPLE = 1000;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_QC_SAMPLE = 1000,
+    /**
+     * Denotes that the magic link was created for a component
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_COMPONENT = 1100;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_COMPONENT = 1100,
+    /**
+     * Denotes that the magic link was created for a product
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCT = 1110;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_PRODUCT = 1110,
+    /**
+     * Denotes that the magic link was created for a feedstock
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_FEEDSTOCK = 1120;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_FEEDSTOCK = 1120,
+    /**
+     * Denotes that the magic link was created for a merchandise
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_MERCHANDISE = 1130;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_MERCHANDISE = 1130,
+    /**
+     * Denotes that the magic link was created for an equipment
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUIPMENT = 1140;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_EQUIPMENT = 1140,
+    /**
+     * Denotes that the magic link was created for an infrastructure
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_INFRASTRUCTURE = 1150;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_INFRASTRUCTURE = 1150,
+    /**
+     * Denotes that the magic link was created for an attendance
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_ATTENDANCE = 1200;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_ATTENDANCE = 1200,
+    /**
+     * Denotes that the magic link was created for an absence
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_ABSENCE = 1210;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_ABSENCE = 1210,
+    /**
+     * Denotes that the magic link was created for an on duty
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_ON_DUTY = 1220;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_ON_DUTY = 1220,
+    /**
+     * Denotes that the magic link was created for a visitation
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_VISITATION = 1230;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_VISITATION = 1230,
+    /**
+     * Denotes that the magic link was created for an expense
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500
 }
 /**
  *

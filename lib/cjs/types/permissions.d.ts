@@ -363,6 +363,11 @@ export declare const PermissionDiscardVendor: {
     Name: string;
     Description: string;
 };
+export declare const PermissionVendorCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsVendors: {
     Uid: string;
     Name: string;
@@ -458,6 +463,11 @@ export declare const PermissionReopenProductionPlan: {
     Name: string;
     Description: string;
 };
+export declare const PermissionProductionPlanCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsProductionPlans: {
     Uid: string;
     Name: string;
@@ -529,6 +539,11 @@ export declare const PermissionProductionIndentDiscard: {
     Description: string;
 };
 export declare const PermissionReopenProductionIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductionIndentCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -608,6 +623,11 @@ export declare const PermissionReopenStockIssuance: {
     Name: string;
     Description: string;
 };
+export declare const PermissionStockIssuanceCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsStockIssuances: {
     Uid: string;
     Name: string;
@@ -683,6 +703,11 @@ export declare const PermissionReopenStockReturn: {
     Name: string;
     Description: string;
 };
+export declare const PermissionStockReturnCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsStockReturns: {
     Uid: string;
     Name: string;
@@ -754,6 +779,11 @@ export declare const PermissionStockAuditDiscard: {
     Description: string;
 };
 export declare const PermissionReopenStockAudit: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionStockAuditCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -838,6 +868,11 @@ export declare const PermissionFeedstockView: {
     Name: string;
     Description: string;
 };
+export declare const PermissionFeedstockCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsFeedstock: {
     Uid: string;
     Name: string;
@@ -914,6 +949,11 @@ export declare const PermissionMerchandiseDiscard: {
     Description: string;
 };
 export declare const PermissionMerchandiseView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionMerchandiseCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -998,6 +1038,11 @@ export declare const PermissionEquipmentView: {
     Name: string;
     Description: string;
 };
+export declare const PermissionEquipmentCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsEquipment: {
     Uid: string;
     Name: string;
@@ -1074,6 +1119,11 @@ export declare const PermissionInfrastructureDiscard: {
     Description: string;
 };
 export declare const PermissionInfrastructureView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionInfrastructureCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -1158,6 +1208,11 @@ export declare const PermissionComponentsView: {
     Name: string;
     Description: string;
 };
+export declare const PermissionComponentCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsComponents: {
     Uid: string;
     Name: string;
@@ -1229,6 +1284,11 @@ export declare const PermissionProductsDiscard: {
     Description: string;
 };
 export declare const PermissionProductsView: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionProductCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -1308,6 +1368,11 @@ export declare const PermissionReopenReplaceableIndent: {
     Name: string;
     Description: string;
 };
+export declare const PermissionReplaceableIndentCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsReplaceableIndents: {
     Uid: string;
     Name: string;
@@ -1383,6 +1448,11 @@ export declare const PermissionReopenAssetIndent: {
     Name: string;
     Description: string;
 };
+export declare const PermissionAssetIndentCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsAssetIndents: {
     Uid: string;
     Name: string;
@@ -1454,6 +1524,11 @@ export declare const PermissionPurchaseIndentDiscard: {
     Description: string;
 };
 export declare const PermissionReopenPurchaseIndent: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionPurchaseIndentCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -1613,6 +1688,11 @@ export declare const PermissionReopenOutwardJobFreeIssueMaterial: {
     Name: string;
     Description: string;
 };
+export declare const PermissionOutwardJobFreeIssueMaterialCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsOutwardJobsFreeIssueMaterials: {
     Uid: string;
     Name: string;
@@ -1768,6 +1848,11 @@ export declare const PermissionReopenInwardJobFreeIssueMaterial: {
     Name: string;
     Description: string;
 };
+export declare const PermissionInwardJobFreeIssueMaterialCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsInwardJobsFreeIssueMaterials: {
     Uid: string;
     Name: string;
@@ -1844,6 +1929,11 @@ export declare const PermissionReopenSupplyOffer: {
     Description: string;
 };
 export declare const PermissionAmendSupplyOffer: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSupplyOfferCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -2783,6 +2873,11 @@ export declare const PermissionReopenWorkOrder: {
     Name: string;
     Description: string;
 };
+export declare const PermissionWorkOrderCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsWorkOrders: {
     Uid: string;
     Name: string;
@@ -3018,6 +3113,11 @@ export declare const PermissionReopenOutwardJobFreeIssueMaterialReturn: {
     Name: string;
     Description: string;
 };
+export declare const PermissionOutwardJobFreeIssueMaterialReturnCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsOutwardJobsFreeIssueMaterialsReturns: {
     Uid: string;
     Name: string;
@@ -3093,6 +3193,11 @@ export declare const PermissionReopenInwardJobFreeIssueMaterialReturn: {
     Name: string;
     Description: string;
 };
+export declare const PermissionInwardJobFreeIssueMaterialReturnCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsInwardJobsFreeIssueMaterialsReturns: {
     Uid: string;
     Name: string;
@@ -3158,6 +3263,11 @@ export declare const PermissionMarkPurchasePaymentasCompleted: {
     Name: string;
     Description: string;
 };
+export declare const PermissionPurchasePaymentCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsPurchasesPayments: {
     Uid: string;
     Name: string;
@@ -3219,6 +3329,11 @@ export declare const PermissionHaltSaleReceipt: {
     Description: string;
 };
 export declare const PermissionMarkSaleReceiptasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionSaleReceiptCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -3458,6 +3573,11 @@ export declare const PermissionReopenExpense: {
     Name: string;
     Description: string;
 };
+export declare const PermissionExpenseCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsExpenses: {
     Uid: string;
     Name: string;
@@ -3673,6 +3793,11 @@ export declare const PermissionReopenPurchaseEnquiry: {
     Name: string;
     Description: string;
 };
+export declare const PermissionPurchaseEnquiryCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsPurchasesEnquiries: {
     Uid: string;
     Name: string;
@@ -3833,6 +3958,11 @@ export declare const PermissionReopenQuotationRequest: {
     Name: string;
     Description: string;
 };
+export declare const PermissionQuotationRequestCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsQuotationsRequests: {
     Uid: string;
     Name: string;
@@ -3904,6 +4034,11 @@ export declare const PermissionQuotationResponseDiscard: {
     Description: string;
 };
 export declare const PermissionReopenQuotationResponse: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuotationResponseCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -3983,6 +4118,11 @@ export declare const PermissionReopenEquationFamily: {
     Name: string;
     Description: string;
 };
+export declare const PermissionEquationFamilyCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsEquationsFamilies: {
     Uid: string;
     Name: string;
@@ -4054,6 +4194,11 @@ export declare const PermissionEquationSalesBundleDiscard: {
     Description: string;
 };
 export declare const PermissionReopenEquationSalesBundle: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationSalesBundleCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -4138,6 +4283,11 @@ export declare const PermissionAmendEquationWorkOrder: {
     Name: string;
     Description: string;
 };
+export declare const PermissionEquationWorkOrderCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsEquationsWorkOrders: {
     Uid: string;
     Name: string;
@@ -4209,6 +4359,11 @@ export declare const PermissionEquationReplaceableDiscard: {
     Description: string;
 };
 export declare const PermissionReopenEquationReplaceable: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionEquationReplaceableCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -4494,6 +4649,11 @@ export declare const PermissionQCSampleCancelled: {
     Description: string;
 };
 export declare const PermissionQCSampleCancel: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQCSampleCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -5728,6 +5888,11 @@ export declare const PermissionMarkAttendanceasCompleted: {
     Name: string;
     Description: string;
 };
+export declare const PermissionAttendanceCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsAttendances: {
     Uid: string;
     Name: string;
@@ -5793,6 +5958,11 @@ export declare const PermissionMarkAbsenceasCompleted: {
     Name: string;
     Description: string;
 };
+export declare const PermissionAbsenceCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionsAbsences: {
     Uid: string;
     Name: string;
@@ -5854,6 +6024,11 @@ export declare const PermissionHaltOnDuty: {
     Description: string;
 };
 export declare const PermissionMarkOnDutyasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionOnDutyCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;
@@ -6134,6 +6309,11 @@ export declare const PermissionHaltVisitation: {
     Description: string;
 };
 export declare const PermissionMarkVisitationasCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionVisitationCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;

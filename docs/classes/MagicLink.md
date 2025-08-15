@@ -73,7 +73,7 @@ Message\&lt;MagicLink\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:255
+src/magic_links.scailo_pb.ts:543
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 40;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:246
+src/magic_links.scailo_pb.ts:534
 
 ___
 
@@ -105,7 +105,7 @@ from field: string description = 35;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:239
+src/magic_links.scailo_pb.ts:527
 
 ___
 
@@ -121,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:204
+src/magic_links.scailo_pb.ts:492
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 expires_at = 30;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:232
+src/magic_links.scailo_pb.ts:520
 
 ___
 
@@ -153,7 +153,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:211
+src/magic_links.scailo_pb.ts:499
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.MAGIC_LINK_RESOURCE_TYPE resource_type = 21;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:225
+src/magic_links.scailo_pb.ts:513
 
 ___
 
@@ -185,7 +185,7 @@ from field: string resource_uuid = 10;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:218
+src/magic_links.scailo_pb.ts:506
 
 ___
 
@@ -201,7 +201,7 @@ from field: string url = 100;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:253
+src/magic_links.scailo_pb.ts:541
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:262
+src/magic_links.scailo_pb.ts:550
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:260
+src/magic_links.scailo_pb.ts:548
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:261
+src/magic_links.scailo_pb.ts:549
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:285
+src/magic_links.scailo_pb.ts:573
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:273
+src/magic_links.scailo_pb.ts:561
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:277
+src/magic_links.scailo_pb.ts:565
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:281
+src/magic_links.scailo_pb.ts:569

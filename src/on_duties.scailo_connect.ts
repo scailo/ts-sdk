@@ -6,6 +6,7 @@
 import { OnDutiesList, OnDutiesServiceCountReq, OnDutiesServiceCreateRequest, OnDutiesServiceFilterReq, OnDutiesServiceImageEntryRequest, OnDutiesServiceImageExitRequest, OnDutiesServicePaginationReq, OnDutiesServicePaginationResponse, OnDutiesServiceSearchAllReq, OnDutiesServiceUpdateRequest, OnDuty } from "./on_duties.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 
 /**
  *
@@ -162,15 +163,25 @@ export const OnDutiesService = {
     /**
      * Add comment
      *
-     * Send Email
-     * rpc SendEmail (Identifier) returns (IdentifierResponse);
-     *
      * @generated from rpc Scailo.OnDutiesService.CommentAdd
      */
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierUUIDWithUserComment,
       O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Send Email
+     * rpc SendEmail (Identifier) returns (IdentifierResponse);
+     * Create a magic link
+     *
+     * @generated from rpc Scailo.OnDutiesService.CreateMagicLink
+     */
+    createMagicLink: {
+      name: "CreateMagicLink",
+      I: MagicLinksServiceCreateRequestForSpecificResource,
+      O: MagicLink,
       kind: MethodKind.Unary,
     },
     /**

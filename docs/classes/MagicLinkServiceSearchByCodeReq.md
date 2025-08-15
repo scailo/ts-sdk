@@ -68,7 +68,7 @@ Message\&lt;MagicLinkServiceSearchByCodeReq\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1072
+src/magic_links.scailo_pb.ts:1360
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: string code = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1056
+src/magic_links.scailo_pb.ts:1344
 
 ___
 
@@ -100,7 +100,7 @@ from field: string ip_address = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1063
+src/magic_links.scailo_pb.ts:1351
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_agent = 3;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1070
+src/magic_links.scailo_pb.ts:1358
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1079
+src/magic_links.scailo_pb.ts:1367
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1077
+src/magic_links.scailo_pb.ts:1365
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1078
+src/magic_links.scailo_pb.ts:1366
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1097
+src/magic_links.scailo_pb.ts:1385
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1085
+src/magic_links.scailo_pb.ts:1373
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1089
+src/magic_links.scailo_pb.ts:1377
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1093
+src/magic_links.scailo_pb.ts:1381

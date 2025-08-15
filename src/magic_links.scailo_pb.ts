@@ -22,6 +22,34 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
   MAGIC_LINK_RESOURCE_TYPE_ANY_UNSPECIFIED = 0,
 
   /**
+   * Denotes that the magic link was created for a vendor
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_VENDOR = 10;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_VENDOR = 10,
+
+  /**
+   * Denotes that the magic link was created for a purchase enquiry
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ENQUIRY = 20;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ENQUIRY = 20,
+
+  /**
+   * Denotes that the magic link was created for a quotation request
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_QUOTATION_REQUEST = 30;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_QUOTATION_REQUEST = 30,
+
+  /**
+   * Denotes that the magic link was created for a quotation response
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_QUOTATION_RESPONSE = 40;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_QUOTATION_RESPONSE = 40,
+
+  /**
    * Denotes that the magic link was created for a purchase order
    *
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ORDER = 100;
@@ -55,6 +83,20 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_RETURN = 140;
    */
   MAGIC_LINK_RESOURCE_TYPE_PURCHASE_RETURN = 140,
+
+  /**
+   * Denotes that the magic link was created for a purchase payment
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_PAYMENT = 150;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_PURCHASE_PAYMENT = 150,
+
+  /**
+   * Denotes that the magic link was created for a supply offer
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_SUPPLY_OFFER = 160;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_SUPPLY_OFFER = 160,
 
   /**
    * Denotes that the magic link was created for a sales enquiry
@@ -113,6 +155,13 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
   MAGIC_LINK_RESOURCE_TYPE_SALES_RETURN = 250,
 
   /**
+   * Denotes that the magic link was created for a sales receipt
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_RECEIPT = 260;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_SALES_RECEIPT = 260,
+
+  /**
    * Denotes that the magic link was created for an inward job
    *
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB = 300;
@@ -120,20 +169,229 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
   MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB = 300,
 
   /**
+   * Denotes that the magic link was created for an inward job free issue material
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL = 310;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL = 310,
+
+  /**
+   * Denotes that the magic link was created for an inward job free issue material return
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN = 320;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN = 320,
+
+  /**
    * Denotes that the magic link was created for an outward job
    *
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB = 400;
    */
   MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB = 400,
+
+  /**
+   * Denotes that the magic link was created for an outward job free issue material
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 410;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 410,
+
+  /**
+   * Denotes that the magic link was created for an outward job free issue material return
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN = 420;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN = 420,
+
+  /**
+   * Denotes that the magic link was created for a family equation
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_FAMILY = 600;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_EQUATION_FAMILY = 600,
+
+  /**
+   * Denotes that the magic link was created for a sales bundle equation
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_SALES_BUNDLE = 610;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_EQUATION_SALES_BUNDLE = 610,
+
+  /**
+   * Denotes that the magic link was created for a work order equation
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_WORK_ORDER = 620;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_EQUATION_WORK_ORDER = 620,
+
+  /**
+   * Denotes that the magic link was created for a replaceable equation
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_REPLACEABLE = 630;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_EQUATION_REPLACEABLE = 630,
+
+  /**
+   * Denotes that the magic link was created for a work order
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_WORK_ORDER = 700;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_WORK_ORDER = 700,
+
+  /**
+   * Denotes that the magic link was created for a production plan
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_PLAN = 710;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_PLAN = 710,
+
+  /**
+   * Denotes that the magic link was created for a replaceable indent
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_REPLACEABLE_INDENT = 800;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_REPLACEABLE_INDENT = 800,
+
+  /**
+   * Denotes that the magic link was created for a purchase indent
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_INDENT = 810;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_PURCHASE_INDENT = 810,
+
+  /**
+   * Denotes that the magic link was created for a production indent
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_INDENT = 820;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_INDENT = 820,
+
+  /**
+   * Denotes that the magic link was created for an asset indent
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_ASSET_INDENT = 830;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_ASSET_INDENT = 830,
+
+  /**
+   * Denotes that the magic link was created for a stock issuance
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_ISSUANCE = 900;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_STOCK_ISSUANCE = 900,
+
+  /**
+   * Denotes that the magic link was created for a stock return
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_RETURN = 910;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_STOCK_RETURN = 910,
+
+  /**
+   * Denotes that the magic link was created for a stock audit
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_AUDIT = 920;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_STOCK_AUDIT = 920,
+
+  /**
+   * Denotes that the magic link was created for a qc sample
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_QC_SAMPLE = 1000;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_QC_SAMPLE = 1000,
+
+  /**
+   * Denotes that the magic link was created for a component
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_COMPONENT = 1100;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_COMPONENT = 1100,
+
+  /**
+   * Denotes that the magic link was created for a product
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCT = 1110;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_PRODUCT = 1110,
+
+  /**
+   * Denotes that the magic link was created for a feedstock
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_FEEDSTOCK = 1120;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_FEEDSTOCK = 1120,
+
+  /**
+   * Denotes that the magic link was created for a merchandise
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_MERCHANDISE = 1130;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_MERCHANDISE = 1130,
+
+  /**
+   * Denotes that the magic link was created for an equipment
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUIPMENT = 1140;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_EQUIPMENT = 1140,
+
+  /**
+   * Denotes that the magic link was created for an infrastructure
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_INFRASTRUCTURE = 1150;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_INFRASTRUCTURE = 1150,
+
+  /**
+   * Denotes that the magic link was created for an attendance
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_ATTENDANCE = 1200;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_ATTENDANCE = 1200,
+
+  /**
+   * Denotes that the magic link was created for an absence
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_ABSENCE = 1210;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_ABSENCE = 1210,
+
+  /**
+   * Denotes that the magic link was created for an on duty
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_ON_DUTY = 1220;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_ON_DUTY = 1220,
+
+  /**
+   * Denotes that the magic link was created for a visitation
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_VISITATION = 1230;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_VISITATION = 1230,
+
+  /**
+   * Denotes that the magic link was created for an expense
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500,
 }
 // Retrieve enum metadata with: proto3.getEnumType(MAGIC_LINK_RESOURCE_TYPE)
 proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TYPE", [
   { no: 0, name: "MAGIC_LINK_RESOURCE_TYPE_ANY_UNSPECIFIED" },
+  { no: 10, name: "MAGIC_LINK_RESOURCE_TYPE_VENDOR" },
+  { no: 20, name: "MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ENQUIRY" },
+  { no: 30, name: "MAGIC_LINK_RESOURCE_TYPE_QUOTATION_REQUEST" },
+  { no: 40, name: "MAGIC_LINK_RESOURCE_TYPE_QUOTATION_RESPONSE" },
   { no: 100, name: "MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ORDER" },
   { no: 110, name: "MAGIC_LINK_RESOURCE_TYPE_GOODS_RECEIPT" },
   { no: 120, name: "MAGIC_LINK_RESOURCE_TYPE_VENDOR_INVOICE" },
   { no: 130, name: "MAGIC_LINK_RESOURCE_TYPE_DEBIT_NOTE" },
   { no: 140, name: "MAGIC_LINK_RESOURCE_TYPE_PURCHASE_RETURN" },
+  { no: 150, name: "MAGIC_LINK_RESOURCE_TYPE_PURCHASE_PAYMENT" },
+  { no: 160, name: "MAGIC_LINK_RESOURCE_TYPE_SUPPLY_OFFER" },
   { no: 200, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_ENQUIRY" },
   { no: 205, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_QUOTATION" },
   { no: 210, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_ORDER" },
@@ -142,8 +400,38 @@ proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TY
   { no: 230, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_INVOICE" },
   { no: 240, name: "MAGIC_LINK_RESOURCE_TYPE_CREDIT_NOTE" },
   { no: 250, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_RETURN" },
+  { no: 260, name: "MAGIC_LINK_RESOURCE_TYPE_SALES_RECEIPT" },
   { no: 300, name: "MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB" },
+  { no: 310, name: "MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL" },
+  { no: 320, name: "MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN" },
   { no: 400, name: "MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB" },
+  { no: 410, name: "MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL" },
+  { no: 420, name: "MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN" },
+  { no: 600, name: "MAGIC_LINK_RESOURCE_TYPE_EQUATION_FAMILY" },
+  { no: 610, name: "MAGIC_LINK_RESOURCE_TYPE_EQUATION_SALES_BUNDLE" },
+  { no: 620, name: "MAGIC_LINK_RESOURCE_TYPE_EQUATION_WORK_ORDER" },
+  { no: 630, name: "MAGIC_LINK_RESOURCE_TYPE_EQUATION_REPLACEABLE" },
+  { no: 700, name: "MAGIC_LINK_RESOURCE_TYPE_WORK_ORDER" },
+  { no: 710, name: "MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_PLAN" },
+  { no: 800, name: "MAGIC_LINK_RESOURCE_TYPE_REPLACEABLE_INDENT" },
+  { no: 810, name: "MAGIC_LINK_RESOURCE_TYPE_PURCHASE_INDENT" },
+  { no: 820, name: "MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_INDENT" },
+  { no: 830, name: "MAGIC_LINK_RESOURCE_TYPE_ASSET_INDENT" },
+  { no: 900, name: "MAGIC_LINK_RESOURCE_TYPE_STOCK_ISSUANCE" },
+  { no: 910, name: "MAGIC_LINK_RESOURCE_TYPE_STOCK_RETURN" },
+  { no: 920, name: "MAGIC_LINK_RESOURCE_TYPE_STOCK_AUDIT" },
+  { no: 1000, name: "MAGIC_LINK_RESOURCE_TYPE_QC_SAMPLE" },
+  { no: 1100, name: "MAGIC_LINK_RESOURCE_TYPE_COMPONENT" },
+  { no: 1110, name: "MAGIC_LINK_RESOURCE_TYPE_PRODUCT" },
+  { no: 1120, name: "MAGIC_LINK_RESOURCE_TYPE_FEEDSTOCK" },
+  { no: 1130, name: "MAGIC_LINK_RESOURCE_TYPE_MERCHANDISE" },
+  { no: 1140, name: "MAGIC_LINK_RESOURCE_TYPE_EQUIPMENT" },
+  { no: 1150, name: "MAGIC_LINK_RESOURCE_TYPE_INFRASTRUCTURE" },
+  { no: 1200, name: "MAGIC_LINK_RESOURCE_TYPE_ATTENDANCE" },
+  { no: 1210, name: "MAGIC_LINK_RESOURCE_TYPE_ABSENCE" },
+  { no: 1220, name: "MAGIC_LINK_RESOURCE_TYPE_ON_DUTY" },
+  { no: 1230, name: "MAGIC_LINK_RESOURCE_TYPE_VISITATION" },
+  { no: 1500, name: "MAGIC_LINK_RESOURCE_TYPE_EXPENSE" },
 ]);
 
 /**

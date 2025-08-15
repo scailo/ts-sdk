@@ -69,7 +69,7 @@ Message\&lt;MagicLinkPaginationResp\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:367
+src/magic_links.scailo_pb.ts:655
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:344
+src/magic_links.scailo_pb.ts:632
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:351
+src/magic_links.scailo_pb.ts:639
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.MagicLink payload = 4;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:365
+src/magic_links.scailo_pb.ts:653
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:358
+src/magic_links.scailo_pb.ts:646
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:374
+src/magic_links.scailo_pb.ts:662
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:372
+src/magic_links.scailo_pb.ts:660
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:373
+src/magic_links.scailo_pb.ts:661
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:393
+src/magic_links.scailo_pb.ts:681
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:381
+src/magic_links.scailo_pb.ts:669
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:385
+src/magic_links.scailo_pb.ts:673
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:389
+src/magic_links.scailo_pb.ts:677

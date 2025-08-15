@@ -31,7 +31,7 @@ from enum value: MAGIC_LINK_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:168
+src/magic_links.scailo_pb.ts:456
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: MAGIC_LINK_SORT_KEY_EXPIRES_AT = 10;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:182
+src/magic_links.scailo_pb.ts:470
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: MAGIC_LINK_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:161
+src/magic_links.scailo_pb.ts:449
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: MAGIC_LINK_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:175
+src/magic_links.scailo_pb.ts:463
