@@ -69,7 +69,7 @@ Message\&lt;VendorsServiceUserCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2102
+src/vendors.scailo_pb.ts:2233
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 associate_id = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2100
+src/vendors.scailo_pb.ts:2231
 
 ___
 
@@ -101,7 +101,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2079
+src/vendors.scailo_pb.ts:2210
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2093
+src/vendors.scailo_pb.ts:2224
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2086
+src/vendors.scailo_pb.ts:2217
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2109
+src/vendors.scailo_pb.ts:2240
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2107
+src/vendors.scailo_pb.ts:2238
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2108
+src/vendors.scailo_pb.ts:2239
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2128
+src/vendors.scailo_pb.ts:2259
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2116
+src/vendors.scailo_pb.ts:2247
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2120
+src/vendors.scailo_pb.ts:2251
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2124
+src/vendors.scailo_pb.ts:2255

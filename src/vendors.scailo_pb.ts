@@ -10,6 +10,41 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
+ * Describes the price deviation limit type for an item associated to a vendor
+ *
+ * @generated from enum Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE
+ */
+export enum VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE {
+  /**
+   * Denotes that price limit type be disregarded. This is used only within search/filter APIs
+   *
+   * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED = 0;
+   */
+  VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the price limit type is a percentage
+   *
+   * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE = 1;
+   */
+  VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE = 1,
+
+  /**
+   * Denotes that the price limit type is an absolute value
+   *
+   * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE = 2;
+   */
+  VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE = 2,
+}
+// Retrieve enum metadata with: proto3.getEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE)
+proto3.util.setEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE, "Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE", [
+  { no: 0, name: "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED" },
+  { no: 1, name: "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE" },
+  { no: 2, name: "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.VENDOR_SORT_KEY
@@ -675,6 +710,34 @@ export class VendorsServiceItemCreateRequest extends Message<VendorsServiceItemC
   price = protoInt64.zero;
 
   /**
+   * The relative lower limit type on the price deviation of the item
+   *
+   * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
+   */
+  priceDeviationRelLowerLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+   *
+   * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
+   */
+  priceDeviationRelLowerLimitValue = protoInt64.zero;
+
+  /**
+   * The relative upper limit type on the price deviation of the item
+   *
+   * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
+   */
+  priceDeviationRelUpperLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+   *
+   * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
+   */
+  priceDeviationRelUpperLimitValue = protoInt64.zero;
+
+  /**
    * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
    *
    * @generated from field: uint64 min_order_qty = 20;
@@ -710,6 +773,10 @@ export class VendorsServiceItemCreateRequest extends Message<VendorsServiceItemC
     { no: 13, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 46, name: "price_deviation_rel_lower_limit_type", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE) },
+    { no: 47, name: "price_deviation_rel_lower_limit_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 48, name: "price_deviation_rel_upper_limit_type", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE) },
+    { no: 49, name: "price_deviation_rel_upper_limit_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 20, name: "min_order_qty", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 21, name: "max_order_qty", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 22, name: "step_interval", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -782,6 +849,34 @@ export class VendorsServiceItemUpdateRequest extends Message<VendorsServiceItemU
   price = protoInt64.zero;
 
   /**
+   * The relative lower limit type on the price deviation of the item
+   *
+   * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
+   */
+  priceDeviationRelLowerLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+   *
+   * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
+   */
+  priceDeviationRelLowerLimitValue = protoInt64.zero;
+
+  /**
+   * The relative upper limit type on the price deviation of the item
+   *
+   * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
+   */
+  priceDeviationRelUpperLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+   *
+   * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
+   */
+  priceDeviationRelUpperLimitValue = protoInt64.zero;
+
+  /**
    * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
    *
    * @generated from field: uint64 min_order_qty = 20;
@@ -816,6 +911,10 @@ export class VendorsServiceItemUpdateRequest extends Message<VendorsServiceItemU
     { no: 13, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 46, name: "price_deviation_rel_lower_limit_type", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE) },
+    { no: 47, name: "price_deviation_rel_lower_limit_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 48, name: "price_deviation_rel_upper_limit_type", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE) },
+    { no: 49, name: "price_deviation_rel_upper_limit_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 20, name: "min_order_qty", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 21, name: "max_order_qty", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 22, name: "step_interval", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -923,6 +1022,34 @@ export class VendorItem extends Message<VendorItem> {
   price = protoInt64.zero;
 
   /**
+   * The relative lower limit type on the price deviation of the item
+   *
+   * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
+   */
+  priceDeviationRelLowerLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+   *
+   * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
+   */
+  priceDeviationRelLowerLimitValue = protoInt64.zero;
+
+  /**
+   * The relative upper limit type on the price deviation of the item
+   *
+   * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
+   */
+  priceDeviationRelUpperLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+   *
+   * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
+   */
+  priceDeviationRelUpperLimitValue = protoInt64.zero;
+
+  /**
    * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
    *
    * @generated from field: uint64 min_order_qty = 20;
@@ -962,6 +1089,10 @@ export class VendorItem extends Message<VendorItem> {
     { no: 13, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 46, name: "price_deviation_rel_lower_limit_type", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE) },
+    { no: 47, name: "price_deviation_rel_lower_limit_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 48, name: "price_deviation_rel_upper_limit_type", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE) },
+    { no: 49, name: "price_deviation_rel_upper_limit_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 20, name: "min_order_qty", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 21, name: "max_order_qty", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 22, name: "step_interval", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

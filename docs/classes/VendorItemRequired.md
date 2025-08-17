@@ -67,7 +67,7 @@ Message\&lt;VendorItemRequired\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1972
+src/vendors.scailo_pb.ts:2103
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: Scailo.VendorItem item = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1963
+src/vendors.scailo_pb.ts:2094
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 required_qty = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1970
+src/vendors.scailo_pb.ts:2101
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1979
+src/vendors.scailo_pb.ts:2110
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1977
+src/vendors.scailo_pb.ts:2108
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1978
+src/vendors.scailo_pb.ts:2109
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1996
+src/vendors.scailo_pb.ts:2127
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1984
+src/vendors.scailo_pb.ts:2115
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1988
+src/vendors.scailo_pb.ts:2119
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1992
+src/vendors.scailo_pb.ts:2123

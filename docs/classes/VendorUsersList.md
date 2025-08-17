@@ -66,7 +66,7 @@ Message\&lt;VendorUsersList\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2245
+src/vendors.scailo_pb.ts:2376
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VendorUser list = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2243
+src/vendors.scailo_pb.ts:2374
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2252
+src/vendors.scailo_pb.ts:2383
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2250
+src/vendors.scailo_pb.ts:2381
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2251
+src/vendors.scailo_pb.ts:2382
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2268
+src/vendors.scailo_pb.ts:2399
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2256
+src/vendors.scailo_pb.ts:2387
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2260
+src/vendors.scailo_pb.ts:2391
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2264
+src/vendors.scailo_pb.ts:2395

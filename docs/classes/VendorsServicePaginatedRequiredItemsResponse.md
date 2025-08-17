@@ -69,7 +69,7 @@ Message\&lt;VendorsServicePaginatedRequiredItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2036
+src/vendors.scailo_pb.ts:2167
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2013
+src/vendors.scailo_pb.ts:2144
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2020
+src/vendors.scailo_pb.ts:2151
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.VendorItemRequired payload = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2034
+src/vendors.scailo_pb.ts:2165
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2027
+src/vendors.scailo_pb.ts:2158
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2043
+src/vendors.scailo_pb.ts:2174
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2041
+src/vendors.scailo_pb.ts:2172
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2042
+src/vendors.scailo_pb.ts:2173
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2062
+src/vendors.scailo_pb.ts:2193
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2050
+src/vendors.scailo_pb.ts:2181
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2054
+src/vendors.scailo_pb.ts:2185
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2058
+src/vendors.scailo_pb.ts:2189

@@ -4,6 +4,32 @@ import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterReques
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
+ * Describes the price deviation limit type for an item associated to a vendor
+ *
+ * @generated from enum Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE
+ */
+export declare enum VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE {
+    /**
+     * Denotes that price limit type be disregarded. This is used only within search/filter APIs
+     *
+     * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED = 0;
+     */
+    VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the price limit type is a percentage
+     *
+     * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE = 1;
+     */
+    VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE = 1,
+    /**
+     * Denotes that the price limit type is an absolute value
+     *
+     * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE = 2;
+     */
+    VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE = 2
+}
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.VENDOR_SORT_KEY
@@ -480,6 +506,30 @@ export declare class VendorsServiceItemCreateRequest extends Message<VendorsServ
      */
     price: bigint;
     /**
+     * The relative lower limit type on the price deviation of the item
+     *
+     * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
+     */
+    priceDeviationRelLowerLimitType: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE;
+    /**
+     * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+     *
+     * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
+     */
+    priceDeviationRelLowerLimitValue: bigint;
+    /**
+     * The relative upper limit type on the price deviation of the item
+     *
+     * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
+     */
+    priceDeviationRelUpperLimitType: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE;
+    /**
+     * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+     *
+     * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
+     */
+    priceDeviationRelUpperLimitValue: bigint;
+    /**
      * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
      *
      * @generated from field: uint64 min_order_qty = 20;
@@ -549,6 +599,30 @@ export declare class VendorsServiceItemUpdateRequest extends Message<VendorsServ
      * @generated from field: uint64 price = 15;
      */
     price: bigint;
+    /**
+     * The relative lower limit type on the price deviation of the item
+     *
+     * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
+     */
+    priceDeviationRelLowerLimitType: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE;
+    /**
+     * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+     *
+     * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
+     */
+    priceDeviationRelLowerLimitValue: bigint;
+    /**
+     * The relative upper limit type on the price deviation of the item
+     *
+     * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
+     */
+    priceDeviationRelUpperLimitType: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE;
+    /**
+     * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+     *
+     * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
+     */
+    priceDeviationRelUpperLimitValue: bigint;
     /**
      * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
      *
@@ -649,6 +723,30 @@ export declare class VendorItem extends Message<VendorItem> {
      * @generated from field: uint64 price = 15;
      */
     price: bigint;
+    /**
+     * The relative lower limit type on the price deviation of the item
+     *
+     * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
+     */
+    priceDeviationRelLowerLimitType: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE;
+    /**
+     * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+     *
+     * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
+     */
+    priceDeviationRelLowerLimitValue: bigint;
+    /**
+     * The relative upper limit type on the price deviation of the item
+     *
+     * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
+     */
+    priceDeviationRelUpperLimitType: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE;
+    /**
+     * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+     *
+     * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
+     */
+    priceDeviationRelUpperLimitValue: bigint;
     /**
      * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
      *

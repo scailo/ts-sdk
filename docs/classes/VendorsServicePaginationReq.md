@@ -71,7 +71,7 @@ Message\&lt;VendorsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1178
+src/vendors.scailo_pb.ts:1309
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1148
+src/vendors.scailo_pb.ts:1279
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1141
+src/vendors.scailo_pb.ts:1272
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1155
+src/vendors.scailo_pb.ts:1286
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.VENDOR_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1169
+src/vendors.scailo_pb.ts:1300
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1162
+src/vendors.scailo_pb.ts:1293
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1176
+src/vendors.scailo_pb.ts:1307
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1185
+src/vendors.scailo_pb.ts:1316
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1183
+src/vendors.scailo_pb.ts:1314
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1184
+src/vendors.scailo_pb.ts:1315
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1206
+src/vendors.scailo_pb.ts:1337
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1194
+src/vendors.scailo_pb.ts:1325
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1198
+src/vendors.scailo_pb.ts:1329
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1202
+src/vendors.scailo_pb.ts:1333

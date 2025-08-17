@@ -26,6 +26,10 @@ from message Scailo.VendorsServiceItemUpdateRequest
 - [maxOrderQty](VendorsServiceItemUpdateRequest.md#maxorderqty)
 - [minOrderQty](VendorsServiceItemUpdateRequest.md#minorderqty)
 - [price](VendorsServiceItemUpdateRequest.md#price)
+- [priceDeviationRelLowerLimitType](VendorsServiceItemUpdateRequest.md#pricedeviationrellowerlimittype)
+- [priceDeviationRelLowerLimitValue](VendorsServiceItemUpdateRequest.md#pricedeviationrellowerlimitvalue)
+- [priceDeviationRelUpperLimitType](VendorsServiceItemUpdateRequest.md#pricedeviationrelupperlimittype)
+- [priceDeviationRelUpperLimitValue](VendorsServiceItemUpdateRequest.md#pricedeviationrelupperlimitvalue)
 - [stepInterval](VendorsServiceItemUpdateRequest.md#stepinterval)
 - [taxGroupId](VendorsServiceItemUpdateRequest.md#taxgroupid)
 - [uomId](VendorsServiceItemUpdateRequest.md#uomid)
@@ -74,7 +78,7 @@ Message\&lt;VendorsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:805
+src/vendors.scailo_pb.ts:900
 
 ## Properties
 
@@ -90,7 +94,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:754
+src/vendors.scailo_pb.ts:821
 
 ___
 
@@ -106,7 +110,7 @@ from field: uint64 max_order_qty = 21;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:796
+src/vendors.scailo_pb.ts:891
 
 ___
 
@@ -122,7 +126,7 @@ from field: uint64 min_order_qty = 20;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:789
+src/vendors.scailo_pb.ts:884
 
 ___
 
@@ -138,7 +142,71 @@ from field: uint64 price = 15;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:782
+src/vendors.scailo_pb.ts:849
+
+___
+
+### priceDeviationRelLowerLimitType
+
+• **priceDeviationRelLowerLimitType**: [`VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE`](../enums/VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.md) = `VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED`
+
+The relative lower limit type on the price deviation of the item
+
+**`Generated`**
+
+from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
+
+#### Defined in
+
+src/vendors.scailo_pb.ts:856
+
+___
+
+### priceDeviationRelLowerLimitValue
+
+• **priceDeviationRelLowerLimitValue**: `bigint` = `protoInt64.zero`
+
+The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+
+**`Generated`**
+
+from field: int64 price_deviation_rel_lower_limit_value = 47;
+
+#### Defined in
+
+src/vendors.scailo_pb.ts:863
+
+___
+
+### priceDeviationRelUpperLimitType
+
+• **priceDeviationRelUpperLimitType**: [`VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE`](../enums/VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.md) = `VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED`
+
+The relative upper limit type on the price deviation of the item
+
+**`Generated`**
+
+from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
+
+#### Defined in
+
+src/vendors.scailo_pb.ts:870
+
+___
+
+### priceDeviationRelUpperLimitValue
+
+• **priceDeviationRelUpperLimitValue**: `bigint` = `protoInt64.zero`
+
+The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+
+**`Generated`**
+
+from field: int64 price_deviation_rel_upper_limit_value = 49;
+
+#### Defined in
+
+src/vendors.scailo_pb.ts:877
 
 ___
 
@@ -154,7 +222,7 @@ from field: uint64 step_interval = 22;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:803
+src/vendors.scailo_pb.ts:898
 
 ___
 
@@ -170,7 +238,7 @@ from field: uint64 tax_group_id = 14;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:775
+src/vendors.scailo_pb.ts:842
 
 ___
 
@@ -186,7 +254,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:768
+src/vendors.scailo_pb.ts:835
 
 ___
 
@@ -202,7 +270,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:747
+src/vendors.scailo_pb.ts:814
 
 ___
 
@@ -218,7 +286,7 @@ from field: string vendor_family_code = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:761
+src/vendors.scailo_pb.ts:828
 
 ___
 
@@ -228,7 +296,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:812
+src/vendors.scailo_pb.ts:907
 
 ___
 
@@ -238,7 +306,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:810
+src/vendors.scailo_pb.ts:905
 
 ___
 
@@ -248,7 +316,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:811
+src/vendors.scailo_pb.ts:906
 
 ## Methods
 
@@ -536,7 +604,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:836
+src/vendors.scailo_pb.ts:935
 
 ___
 
@@ -557,7 +625,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:824
+src/vendors.scailo_pb.ts:923
 
 ___
 
@@ -578,7 +646,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:828
+src/vendors.scailo_pb.ts:927
 
 ___
 
@@ -599,4 +667,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:832
+src/vendors.scailo_pb.ts:931

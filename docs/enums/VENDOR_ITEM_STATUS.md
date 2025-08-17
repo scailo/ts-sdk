@@ -30,7 +30,7 @@ from enum value: VENDOR_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:237
+src/vendors.scailo_pb.ts:272
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: VENDOR_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:244
+src/vendors.scailo_pb.ts:279
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: VENDOR_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:251
+src/vendors.scailo_pb.ts:286
