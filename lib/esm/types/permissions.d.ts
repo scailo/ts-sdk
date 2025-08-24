@@ -2873,6 +2873,11 @@ export declare const PermissionReopenWorkOrder: {
     Name: string;
     Description: string;
 };
+export declare const PermissionAmendWorkOrder: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
 export declare const PermissionWorkOrderCreateMagicLink: {
     Uid: string;
     Name: string;
