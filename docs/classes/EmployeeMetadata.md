@@ -71,7 +71,7 @@ Message\&lt;EmployeeMetadata\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1863
+src/base.scailo_pb.ts:1871
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string added_by = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1840
+src/base.scailo_pb.ts:1848
 
 ___
 
@@ -103,7 +103,7 @@ from field: uint64 created_at = 5;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1854
+src/base.scailo_pb.ts:1862
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1826
+src/base.scailo_pb.ts:1834
 
 ___
 
@@ -135,7 +135,7 @@ from field: bool is_active = 4;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1847
+src/base.scailo_pb.ts:1855
 
 ___
 
@@ -151,7 +151,7 @@ from field: uint64 modified_at = 6;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1861
+src/base.scailo_pb.ts:1869
 
 ___
 
@@ -167,7 +167,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1833
+src/base.scailo_pb.ts:1841
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1870
+src/base.scailo_pb.ts:1878
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1868
+src/base.scailo_pb.ts:1876
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1869
+src/base.scailo_pb.ts:1877
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1891
+src/base.scailo_pb.ts:1899
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1879
+src/base.scailo_pb.ts:1887
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1883
+src/base.scailo_pb.ts:1891
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1887
+src/base.scailo_pb.ts:1895

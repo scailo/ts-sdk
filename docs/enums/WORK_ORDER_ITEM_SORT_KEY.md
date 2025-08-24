@@ -36,7 +36,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:169
+src/work_orders.scailo_pb.ts:177
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:162
+src/work_orders.scailo_pb.ts:170
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:176
+src/work_orders.scailo_pb.ts:184
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:148
+src/work_orders.scailo_pb.ts:156
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_DELIVERY_DATE = 12;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:197
+src/work_orders.scailo_pb.ts:205
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:183
+src/work_orders.scailo_pb.ts:191
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:141
+src/work_orders.scailo_pb.ts:149
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:155
+src/work_orders.scailo_pb.ts:163
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_QUANTITY = 11;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:190
+src/work_orders.scailo_pb.ts:198

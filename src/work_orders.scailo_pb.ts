@@ -111,6 +111,13 @@ export enum WORK_ORDER_SORT_KEY {
    * @generated from enum value: WORK_ORDER_SORT_KEY_LOCATION_ID = 12;
    */
   WORK_ORDER_SORT_KEY_LOCATION_ID = 12,
+
+  /**
+   * Fetch ordered results by the amendment count
+   *
+   * @generated from enum value: WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 40;
+   */
+  WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 40,
 }
 // Retrieve enum metadata with: proto3.getEnumType(WORK_ORDER_SORT_KEY)
 proto3.util.setEnumType(WORK_ORDER_SORT_KEY, "Scailo.WORK_ORDER_SORT_KEY", [
@@ -124,6 +131,7 @@ proto3.util.setEnumType(WORK_ORDER_SORT_KEY, "Scailo.WORK_ORDER_SORT_KEY", [
   { no: 10, name: "WORK_ORDER_SORT_KEY_REFERENCE_ID" },
   { no: 11, name: "WORK_ORDER_SORT_KEY_FINAL_REF_NUMBER" },
   { no: 12, name: "WORK_ORDER_SORT_KEY_LOCATION_ID" },
+  { no: 40, name: "WORK_ORDER_SORT_KEY_AMENDMENT_COUNT" },
 ]);
 
 /**
@@ -624,6 +632,13 @@ export class WorkOrder extends Message<WorkOrder> {
   locationId = protoInt64.zero;
 
   /**
+   * The number of times that the wrk order has been amended
+   *
+   * @generated from field: uint64 amendment_count = 40;
+   */
+  amendmentCount = protoInt64.zero;
+
+  /**
    * The list of associated work order items
    *
    * @generated from field: repeated Scailo.WorkOrderItem list = 20;
@@ -657,6 +672,7 @@ export class WorkOrder extends Message<WorkOrder> {
     { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(WORK_ORDER_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 40, name: "amendment_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "list", kind: "message", T: WorkOrderItem, repeated: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);

@@ -12,6 +12,7 @@ from enum Scailo.WORK_ORDER_SORT_KEY
 
 ### Enumeration Members
 
+- [WORK\_ORDER\_SORT\_KEY\_AMENDMENT\_COUNT](WORK_ORDER_SORT_KEY.md#work_order_sort_key_amendment_count)
 - [WORK\_ORDER\_SORT\_KEY\_APPROVED\_BY](WORK_ORDER_SORT_KEY.md#work_order_sort_key_approved_by)
 - [WORK\_ORDER\_SORT\_KEY\_APPROVED\_ON](WORK_ORDER_SORT_KEY.md#work_order_sort_key_approved_on)
 - [WORK\_ORDER\_SORT\_KEY\_APPROVER\_ROLE\_ID](WORK_ORDER_SORT_KEY.md#work_order_sort_key_approver_role_id)
@@ -24,6 +25,22 @@ from enum Scailo.WORK_ORDER_SORT_KEY
 - [WORK\_ORDER\_SORT\_KEY\_REFERENCE\_ID](WORK_ORDER_SORT_KEY.md#work_order_sort_key_reference_id)
 
 ## Enumeration Members
+
+### WORK\_ORDER\_SORT\_KEY\_AMENDMENT\_COUNT
+
+• **WORK\_ORDER\_SORT\_KEY\_AMENDMENT\_COUNT** = ``40``
+
+Fetch ordered results by the amendment count
+
+**`Generated`**
+
+from enum value: WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 40;
+
+#### Defined in
+
+src/work_orders.scailo_pb.ts:120
+
+___
 
 ### WORK\_ORDER\_SORT\_KEY\_APPROVED\_BY
 

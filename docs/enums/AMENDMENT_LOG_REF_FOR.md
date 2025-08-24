@@ -22,6 +22,7 @@ from enum Scailo.AMENDMENT_LOG_REF_FOR
 - [AMENDMENT\_LOG\_REF\_FOR\_SALES\_ORDER](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_sales_order)
 - [AMENDMENT\_LOG\_REF\_FOR\_SALES\_QUOTATION](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_sales_quotation)
 - [AMENDMENT\_LOG\_REF\_FOR\_SUPPLY\_OFFER](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_supply_offer)
+- [AMENDMENT\_LOG\_REF\_FOR\_WORK\_ORDER](AMENDMENT_LOG_REF_FOR.md#amendment_log_ref_for_work_order)
 
 ## Enumeration Members
 
@@ -53,7 +54,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER = 100;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1170
+src/base.scailo_pb.ts:1177
 
 ___
 
@@ -182,3 +183,19 @@ from enum value: AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER = 21;
 #### Defined in
 
 src/base.scailo_pb.ts:1128
+
+___
+
+### AMENDMENT\_LOG\_REF\_FOR\_WORK\_ORDER
+
+• **AMENDMENT\_LOG\_REF\_FOR\_WORK\_ORDER** = ``50``
+
+Denotes that the log is made while amending a work order
+
+**`Generated`**
+
+from enum value: AMENDMENT_LOG_REF_FOR_WORK_ORDER = 50;
+
+#### Defined in
+
+src/base.scailo_pb.ts:1170

@@ -88,7 +88,13 @@ export declare enum WORK_ORDER_SORT_KEY {
      *
      * @generated from enum value: WORK_ORDER_SORT_KEY_LOCATION_ID = 12;
      */
-    WORK_ORDER_SORT_KEY_LOCATION_ID = 12
+    WORK_ORDER_SORT_KEY_LOCATION_ID = 12,
+    /**
+     * Fetch ordered results by the amendment count
+     *
+     * @generated from enum value: WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 40;
+     */
+    WORK_ORDER_SORT_KEY_AMENDMENT_COUNT = 40
 }
 /**
  *
@@ -435,6 +441,12 @@ export declare class WorkOrder extends Message<WorkOrder> {
      * @generated from field: uint64 location_id = 14;
      */
     locationId: bigint;
+    /**
+     * The number of times that the wrk order has been amended
+     *
+     * @generated from field: uint64 amendment_count = 40;
+     */
+    amendmentCount: bigint;
     /**
      * The list of associated work order items
      *

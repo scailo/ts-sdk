@@ -68,7 +68,7 @@ Message\&lt;WorkOrderRequirementStatistics\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2180
+src/work_orders.scailo_pb.ts:2196
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2164
+src/work_orders.scailo_pb.ts:2180
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 sales_order_quantity = 2;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2171
+src/work_orders.scailo_pb.ts:2187
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 work_order_quantity = 3;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2178
+src/work_orders.scailo_pb.ts:2194
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2187
+src/work_orders.scailo_pb.ts:2203
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2185
+src/work_orders.scailo_pb.ts:2201
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2186
+src/work_orders.scailo_pb.ts:2202
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2205
+src/work_orders.scailo_pb.ts:2221
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2193
+src/work_orders.scailo_pb.ts:2209
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2197
+src/work_orders.scailo_pb.ts:2213
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:2201
+src/work_orders.scailo_pb.ts:2217

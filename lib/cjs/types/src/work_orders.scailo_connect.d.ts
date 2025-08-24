@@ -1,5 +1,5 @@
 import { WorkOrder, WorkOrderAncillaryParameters, WorkOrderItem, WorkOrderItemHistoryRequest, WorkOrderItemProspectiveInfoRequest, WorkOrderItemsSearchRequest, WorkOrderProductionStatisticsList, WorkOrderRequirementStatisticsList, WorkOrdersItemsList, WorkOrdersList, WorkOrdersServiceAutofillRequest, WorkOrdersServiceCountReq, WorkOrdersServiceCreateRequest, WorkOrdersServiceFilterReq, WorkOrdersServiceItemCreateRequest, WorkOrdersServiceItemUpdateRequest, WorkOrdersServicePaginatedItemsResponse, WorkOrdersServicePaginationReq, WorkOrdersServicePaginationResponse, WorkOrdersServiceSearchAllReq, WorkOrdersServiceUpdateRequest } from "./work_orders.scailo_pb.js";
-import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -207,6 +207,17 @@ export declare const WorkOrdersService: {
         readonly autofill: {
             readonly name: "Autofill";
             readonly I: typeof WorkOrdersServiceAutofillRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Amend the work order and send for revision
+         *
+         * @generated from rpc Scailo.WorkOrdersService.Amend
+         */
+        readonly amend: {
+            readonly name: "Amend";
+            readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -495,6 +506,17 @@ export declare const WorkOrdersService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof WorkOrdersServicePaginationReq;
             readonly O: typeof WorkOrdersServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all the amendments made
+         *
+         * @generated from rpc Scailo.WorkOrdersService.ViewAmendments
+         */
+        readonly viewAmendments: {
+            readonly name: "ViewAmendments";
+            readonly I: typeof Identifier;
+            readonly O: typeof AmendmentLogsList;
             readonly kind: MethodKind.Unary;
         };
         /**
