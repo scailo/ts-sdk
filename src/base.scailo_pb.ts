@@ -609,7 +609,7 @@ export enum FORM_FIELD_ELEMENT {
   FORM_FIELD_ELEMENT_TEXTAREA = 50,
 
   /**
-   * The element is a date input
+   * The element is a date input. The value is not validated as a date. To validate, use the appropriate regex. This is only useful for comparable fields.
    *
    * @generated from enum value: FORM_FIELD_ELEMENT_DATE = 60;
    */
@@ -628,6 +628,13 @@ export enum FORM_FIELD_ELEMENT {
    * @generated from enum value: FORM_FIELD_ELEMENT_PHONE = 80;
    */
   FORM_FIELD_ELEMENT_PHONE = 80,
+
+  /**
+   * The element is a number input. The value is not validated as a number. To validate, use the appropriate regex. This is only useful for comparable fields.
+   *
+   * @generated from enum value: FORM_FIELD_ELEMENT_NUMBER = 90;
+   */
+  FORM_FIELD_ELEMENT_NUMBER = 90,
 }
 // Retrieve enum metadata with: proto3.getEnumType(FORM_FIELD_ELEMENT)
 proto3.util.setEnumType(FORM_FIELD_ELEMENT, "Scailo.FORM_FIELD_ELEMENT", [
@@ -640,6 +647,7 @@ proto3.util.setEnumType(FORM_FIELD_ELEMENT, "Scailo.FORM_FIELD_ELEMENT", [
   { no: 60, name: "FORM_FIELD_ELEMENT_DATE" },
   { no: 70, name: "FORM_FIELD_ELEMENT_EMAIL" },
   { no: 80, name: "FORM_FIELD_ELEMENT_PHONE" },
+  { no: 90, name: "FORM_FIELD_ELEMENT_NUMBER" },
 ]);
 
 /**

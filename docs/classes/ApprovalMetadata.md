@@ -68,7 +68,7 @@ Message\&lt;ApprovalMetadata\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:1932
+src/base.scailo_pb.ts:1940
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 approved_by_user_id = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1923
+src/base.scailo_pb.ts:1931
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 approved_on = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1916
+src/base.scailo_pb.ts:1924
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 approver_role_id = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:1930
+src/base.scailo_pb.ts:1938
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1939
+src/base.scailo_pb.ts:1947
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1937
+src/base.scailo_pb.ts:1945
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1938
+src/base.scailo_pb.ts:1946
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1957
+src/base.scailo_pb.ts:1965
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1945
+src/base.scailo_pb.ts:1953
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1949
+src/base.scailo_pb.ts:1957
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:1953
+src/base.scailo_pb.ts:1961

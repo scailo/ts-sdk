@@ -17,6 +17,7 @@ from enum Scailo.FORM_FIELD_ELEMENT
 - [FORM\_FIELD\_ELEMENT\_DATE](FORM_FIELD_ELEMENT.md#form_field_element_date)
 - [FORM\_FIELD\_ELEMENT\_EMAIL](FORM_FIELD_ELEMENT.md#form_field_element_email)
 - [FORM\_FIELD\_ELEMENT\_INPUT](FORM_FIELD_ELEMENT.md#form_field_element_input)
+- [FORM\_FIELD\_ELEMENT\_NUMBER](FORM_FIELD_ELEMENT.md#form_field_element_number)
 - [FORM\_FIELD\_ELEMENT\_PHONE](FORM_FIELD_ELEMENT.md#form_field_element_phone)
 - [FORM\_FIELD\_ELEMENT\_RADIO](FORM_FIELD_ELEMENT.md#form_field_element_radio)
 - [FORM\_FIELD\_ELEMENT\_SELECT](FORM_FIELD_ELEMENT.md#form_field_element_select)
@@ -60,7 +61,7 @@ ___
 
 • **FORM\_FIELD\_ELEMENT\_DATE** = ``60``
 
-The element is a date input
+The element is a date input. The value is not validated as a date. To validate, use the appropriate regex. This is only useful for comparable fields.
 
 **`Generated`**
 
@@ -101,6 +102,22 @@ from enum value: FORM_FIELD_ELEMENT_INPUT = 10;
 #### Defined in
 
 src/base.scailo_pb.ts:581
+
+___
+
+### FORM\_FIELD\_ELEMENT\_NUMBER
+
+• **FORM\_FIELD\_ELEMENT\_NUMBER** = ``90``
+
+The element is a number input. The value is not validated as a number. To validate, use the appropriate regex. This is only useful for comparable fields.
+
+**`Generated`**
+
+from enum value: FORM_FIELD_ELEMENT_NUMBER = 90;
+
+#### Defined in
+
+src/base.scailo_pb.ts:637
 
 ___
 

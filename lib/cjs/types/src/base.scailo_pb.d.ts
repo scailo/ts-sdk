@@ -458,7 +458,7 @@ export declare enum FORM_FIELD_ELEMENT {
      */
     FORM_FIELD_ELEMENT_TEXTAREA = 50,
     /**
-     * The element is a date input
+     * The element is a date input. The value is not validated as a date. To validate, use the appropriate regex. This is only useful for comparable fields.
      *
      * @generated from enum value: FORM_FIELD_ELEMENT_DATE = 60;
      */
@@ -474,7 +474,13 @@ export declare enum FORM_FIELD_ELEMENT {
      *
      * @generated from enum value: FORM_FIELD_ELEMENT_PHONE = 80;
      */
-    FORM_FIELD_ELEMENT_PHONE = 80
+    FORM_FIELD_ELEMENT_PHONE = 80,
+    /**
+     * The element is a number input. The value is not validated as a number. To validate, use the appropriate regex. This is only useful for comparable fields.
+     *
+     * @generated from enum value: FORM_FIELD_ELEMENT_NUMBER = 90;
+     */
+    FORM_FIELD_ELEMENT_NUMBER = 90
 }
 /**
  *

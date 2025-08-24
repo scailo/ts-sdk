@@ -41,7 +41,7 @@ from enum value: INVENTORY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:833
+src/base.scailo_pb.ts:841
 
 ___
 
@@ -57,7 +57,7 @@ from enum value: INVENTORY_SORT_KEY_DISCARDED_AT = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:854
+src/base.scailo_pb.ts:862
 
 ___
 
@@ -73,7 +73,7 @@ from enum value: INVENTORY_SORT_KEY_FAMILY_ID = 14;
 
 #### Defined in
 
-src/base.scailo_pb.ts:875
+src/base.scailo_pb.ts:883
 
 ___
 
@@ -89,7 +89,7 @@ from enum value: INVENTORY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:826
+src/base.scailo_pb.ts:834
 
 ___
 
@@ -105,7 +105,7 @@ from enum value: INVENTORY_SORT_KEY_INTERNAL_ITEM_CODE = 20;
 
 #### Defined in
 
-src/base.scailo_pb.ts:882
+src/base.scailo_pb.ts:890
 
 ___
 
@@ -121,7 +121,7 @@ from enum value: INVENTORY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:840
+src/base.scailo_pb.ts:848
 
 ___
 
@@ -137,7 +137,7 @@ from enum value: INVENTORY_SORT_KEY_PRIMARY_QUANTITY = 21;
 
 #### Defined in
 
-src/base.scailo_pb.ts:889
+src/base.scailo_pb.ts:897
 
 ___
 
@@ -153,7 +153,7 @@ from enum value: INVENTORY_SORT_KEY_PRIMARY_QUANTITY_REMAINING = 22;
 
 #### Defined in
 
-src/base.scailo_pb.ts:896
+src/base.scailo_pb.ts:904
 
 ___
 
@@ -169,7 +169,7 @@ from enum value: INVENTORY_SORT_KEY_SECONDARY_QUANTITY = 23;
 
 #### Defined in
 
-src/base.scailo_pb.ts:903
+src/base.scailo_pb.ts:911
 
 ___
 
@@ -185,7 +185,7 @@ from enum value: INVENTORY_SORT_KEY_SHELF_TIMESTAMP = 12;
 
 #### Defined in
 
-src/base.scailo_pb.ts:861
+src/base.scailo_pb.ts:869
 
 ___
 
@@ -201,7 +201,7 @@ from enum value: INVENTORY_SORT_KEY_STORAGE_ID = 25;
 
 #### Defined in
 
-src/base.scailo_pb.ts:917
+src/base.scailo_pb.ts:925
 
 ___
 
@@ -217,7 +217,7 @@ from enum value: INVENTORY_SORT_KEY_STORE_ID = 24;
 
 #### Defined in
 
-src/base.scailo_pb.ts:910
+src/base.scailo_pb.ts:918
 
 ___
 
@@ -233,7 +233,7 @@ from enum value: INVENTORY_SORT_KEY_STORE_INTAKE_AT = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:847
+src/base.scailo_pb.ts:855
 
 ___
 
@@ -249,4 +249,4 @@ from enum value: INVENTORY_SORT_KEY_WARRANTY_TIMESTAMP = 13;
 
 #### Defined in
 
-src/base.scailo_pb.ts:868
+src/base.scailo_pb.ts:876

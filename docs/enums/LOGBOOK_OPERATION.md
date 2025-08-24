@@ -31,7 +31,7 @@ from enum value: ARCHIVE = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:671
+src/base.scailo_pb.ts:679
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: CREATE_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:657
+src/base.scailo_pb.ts:665
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: RESTORE = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:678
+src/base.scailo_pb.ts:686
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: UPDATE = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:664
+src/base.scailo_pb.ts:672

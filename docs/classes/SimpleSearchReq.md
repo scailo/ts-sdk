@@ -66,7 +66,7 @@ Message\&lt;SimpleSearchReq\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:2198
+src/base.scailo_pb.ts:2206
 
 ## Properties
 
@@ -80,7 +80,7 @@ from field: string search_key = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:2196
+src/base.scailo_pb.ts:2204
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2205
+src/base.scailo_pb.ts:2213
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2203
+src/base.scailo_pb.ts:2211
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2204
+src/base.scailo_pb.ts:2212
 
 ## Methods
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2221
+src/base.scailo_pb.ts:2229
 
 ___
 
@@ -419,7 +419,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2209
+src/base.scailo_pb.ts:2217
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2213
+src/base.scailo_pb.ts:2221
 
 ___
 
@@ -461,4 +461,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:2217
+src/base.scailo_pb.ts:2225

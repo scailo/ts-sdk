@@ -37,7 +37,7 @@ from enum value: INVENTORY_LIFECYCLE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:735
+src/base.scailo_pb.ts:743
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: INVENTORY_LIFECYCLE_CONSUMED = 4;
 
 #### Defined in
 
-src/base.scailo_pb.ts:763
+src/base.scailo_pb.ts:771
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: INVENTORY_LIFECYCLE_DISCARDED = 8;
 
 #### Defined in
 
-src/base.scailo_pb.ts:791
+src/base.scailo_pb.ts:799
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: INVENTORY_LIFECYCLE_ISSUED = 9;
 
 #### Defined in
 
-src/base.scailo_pb.ts:798
+src/base.scailo_pb.ts:806
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: INVENTORY_LIFECYCLE_QC = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:742
+src/base.scailo_pb.ts:750
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: INVENTORY_LIFECYCLE_REJECTED = 5;
 
 #### Defined in
 
-src/base.scailo_pb.ts:770
+src/base.scailo_pb.ts:778
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: INVENTORY_LIFECYCLE_RETURNABLE = 7;
 
 #### Defined in
 
-src/base.scailo_pb.ts:784
+src/base.scailo_pb.ts:792
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: INVENTORY_LIFECYCLE_REWORK = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:756
+src/base.scailo_pb.ts:764
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: INVENTORY_LIFECYCLE_SCRAP = 6;
 
 #### Defined in
 
-src/base.scailo_pb.ts:777
+src/base.scailo_pb.ts:785
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: INVENTORY_LIFECYCLE_STORE = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:749
+src/base.scailo_pb.ts:757
