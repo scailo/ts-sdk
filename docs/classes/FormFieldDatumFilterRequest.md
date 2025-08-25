@@ -23,6 +23,7 @@ from message Scailo.FormFieldDatumFilterRequest
 ### Properties
 
 - [formFieldId](FormFieldDatumFilterRequest.md#formfieldid)
+- [operator](FormFieldDatumFilterRequest.md#operator)
 - [value](FormFieldDatumFilterRequest.md#value)
 - [fields](FormFieldDatumFilterRequest.md#fields)
 - [runtime](FormFieldDatumFilterRequest.md#runtime)
@@ -67,7 +68,7 @@ Message\&lt;FormFieldDatumFilterRequest\&gt;.constructor
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:280
+src/forms_fields_data.scailo_pb.ts:346
 
 ## Properties
 
@@ -83,7 +84,23 @@ from field: uint64 form_field_id = 1;
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:271
+src/forms_fields_data.scailo_pb.ts:330
+
+___
+
+### operator
+
+• **operator**: [`FORM_FIELD_FILTER_OPERATOR`](../enums/FORM_FIELD_FILTER_OPERATOR.md) = `FORM_FIELD_FILTER_OPERATOR.FORM_FIELD_FILTER_OPERATOR_SIMILARITY_UNSPECIFIED`
+
+The operator to be used
+
+**`Generated`**
+
+from field: Scailo.FORM_FIELD_FILTER_OPERATOR operator = 10;
+
+#### Defined in
+
+src/forms_fields_data.scailo_pb.ts:344
 
 ___
 
@@ -99,7 +116,7 @@ from field: string value = 2;
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:278
+src/forms_fields_data.scailo_pb.ts:337
 
 ___
 
@@ -109,7 +126,7 @@ ___
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:287
+src/forms_fields_data.scailo_pb.ts:353
 
 ___
 
@@ -119,7 +136,7 @@ ___
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:285
+src/forms_fields_data.scailo_pb.ts:351
 
 ___
 
@@ -129,7 +146,7 @@ ___
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:286
+src/forms_fields_data.scailo_pb.ts:352
 
 ## Methods
 
@@ -417,7 +434,7 @@ ___
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:304
+src/forms_fields_data.scailo_pb.ts:371
 
 ___
 
@@ -438,7 +455,7 @@ ___
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:292
+src/forms_fields_data.scailo_pb.ts:359
 
 ___
 
@@ -459,7 +476,7 @@ ___
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:296
+src/forms_fields_data.scailo_pb.ts:363
 
 ___
 
@@ -480,4 +497,4 @@ ___
 
 #### Defined in
 
-src/forms_fields_data.scailo_pb.ts:300
+src/forms_fields_data.scailo_pb.ts:367

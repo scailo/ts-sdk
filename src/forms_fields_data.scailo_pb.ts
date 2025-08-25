@@ -10,6 +10,65 @@ import { FormField } from "./forms_fields.scailo_pb.js";
 
 /**
  *
+ * Describes the form field filter operator
+ *
+ * @generated from enum Scailo.FORM_FIELD_FILTER_OPERATOR
+ */
+export enum FORM_FIELD_FILTER_OPERATOR {
+  /**
+   * The default operator which uses similarity to filter. Returns all records that are similar to the given value
+   *
+   * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_SIMILARITY_UNSPECIFIED = 0;
+   */
+  FORM_FIELD_FILTER_OPERATOR_SIMILARITY_UNSPECIFIED = 0,
+
+  /**
+   * The operator uses equality. Returns all records that match the given value
+   *
+   * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_EQUALITY = 10;
+   */
+  FORM_FIELD_FILTER_OPERATOR_EQUALITY = 10,
+
+  /**
+   * The operator uses less than. Returns all records that are less than the given value. Useful for comparing numbers and dates. For strings, it returns all records that are lexicographically less than the given value.
+   *
+   * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_LESS_THAN = 20;
+   */
+  FORM_FIELD_FILTER_OPERATOR_LESS_THAN = 20,
+
+  /**
+   * The operator uses less than or equal. Returns all records that are less than or equal to the given value. Useful for comparing numbers and dates. For strings, it returns all records that are lexicographically less than or equal to the given value.
+   *
+   * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_LESS_THAN_OR_EQUAL = 21;
+   */
+  FORM_FIELD_FILTER_OPERATOR_LESS_THAN_OR_EQUAL = 21,
+
+  /**
+   * The operator uses greater than. Returns all records that are greater than the given value. Useful for comparing numbers and dates. For strings, it returns all records that are lexicographically greater than the given value.
+   *
+   * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_GREATER_THAN = 30;
+   */
+  FORM_FIELD_FILTER_OPERATOR_GREATER_THAN = 30,
+
+  /**
+   * The operator uses greater than or equal. Returns all records that are greater than or equal to the given value. Useful for comparing numbers and dates. For strings, it returns all records that are lexicographically greater than or equal to the given value.
+   *
+   * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_GREATER_THAN_OR_EQUAL = 31;
+   */
+  FORM_FIELD_FILTER_OPERATOR_GREATER_THAN_OR_EQUAL = 31,
+}
+// Retrieve enum metadata with: proto3.getEnumType(FORM_FIELD_FILTER_OPERATOR)
+proto3.util.setEnumType(FORM_FIELD_FILTER_OPERATOR, "Scailo.FORM_FIELD_FILTER_OPERATOR", [
+  { no: 0, name: "FORM_FIELD_FILTER_OPERATOR_SIMILARITY_UNSPECIFIED" },
+  { no: 10, name: "FORM_FIELD_FILTER_OPERATOR_EQUALITY" },
+  { no: 20, name: "FORM_FIELD_FILTER_OPERATOR_LESS_THAN" },
+  { no: 21, name: "FORM_FIELD_FILTER_OPERATOR_LESS_THAN_OR_EQUAL" },
+  { no: 30, name: "FORM_FIELD_FILTER_OPERATOR_GREATER_THAN" },
+  { no: 31, name: "FORM_FIELD_FILTER_OPERATOR_GREATER_THAN_OR_EQUAL" },
+]);
+
+/**
+ *
  * Describes the data stored in an individual form field data row of each dynamic form
  *
  * @generated from message Scailo.FormFieldDatum
@@ -277,6 +336,13 @@ export class FormFieldDatumFilterRequest extends Message<FormFieldDatumFilterReq
    */
   value = "";
 
+  /**
+   * The operator to be used
+   *
+   * @generated from field: Scailo.FORM_FIELD_FILTER_OPERATOR operator = 10;
+   */
+  operator = FORM_FIELD_FILTER_OPERATOR.FORM_FIELD_FILTER_OPERATOR_SIMILARITY_UNSPECIFIED;
+
   constructor(data?: PartialMessage<FormFieldDatumFilterRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -287,6 +353,7 @@ export class FormFieldDatumFilterRequest extends Message<FormFieldDatumFilterReq
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "form_field_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "operator", kind: "enum", T: proto3.getEnumType(FORM_FIELD_FILTER_OPERATOR) },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumFilterRequest {

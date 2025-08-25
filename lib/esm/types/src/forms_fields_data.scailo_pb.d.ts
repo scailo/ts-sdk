@@ -4,6 +4,50 @@ import { EmployeeMetadata } from "./base.scailo_pb.js";
 import { FormField } from "./forms_fields.scailo_pb.js";
 /**
  *
+ * Describes the form field filter operator
+ *
+ * @generated from enum Scailo.FORM_FIELD_FILTER_OPERATOR
+ */
+export declare enum FORM_FIELD_FILTER_OPERATOR {
+    /**
+     * The default operator which uses similarity to filter. Returns all records that are similar to the given value
+     *
+     * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_SIMILARITY_UNSPECIFIED = 0;
+     */
+    FORM_FIELD_FILTER_OPERATOR_SIMILARITY_UNSPECIFIED = 0,
+    /**
+     * The operator uses equality. Returns all records that match the given value
+     *
+     * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_EQUALITY = 10;
+     */
+    FORM_FIELD_FILTER_OPERATOR_EQUALITY = 10,
+    /**
+     * The operator uses less than. Returns all records that are less than the given value. Useful for comparing numbers and dates. For strings, it returns all records that are lexicographically less than the given value.
+     *
+     * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_LESS_THAN = 20;
+     */
+    FORM_FIELD_FILTER_OPERATOR_LESS_THAN = 20,
+    /**
+     * The operator uses less than or equal. Returns all records that are less than or equal to the given value. Useful for comparing numbers and dates. For strings, it returns all records that are lexicographically less than or equal to the given value.
+     *
+     * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_LESS_THAN_OR_EQUAL = 21;
+     */
+    FORM_FIELD_FILTER_OPERATOR_LESS_THAN_OR_EQUAL = 21,
+    /**
+     * The operator uses greater than. Returns all records that are greater than the given value. Useful for comparing numbers and dates. For strings, it returns all records that are lexicographically greater than the given value.
+     *
+     * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_GREATER_THAN = 30;
+     */
+    FORM_FIELD_FILTER_OPERATOR_GREATER_THAN = 30,
+    /**
+     * The operator uses greater than or equal. Returns all records that are greater than or equal to the given value. Useful for comparing numbers and dates. For strings, it returns all records that are lexicographically greater than or equal to the given value.
+     *
+     * @generated from enum value: FORM_FIELD_FILTER_OPERATOR_GREATER_THAN_OR_EQUAL = 31;
+     */
+    FORM_FIELD_FILTER_OPERATOR_GREATER_THAN_OR_EQUAL = 31
+}
+/**
+ *
  * Describes the data stored in an individual form field data row of each dynamic form
  *
  * @generated from message Scailo.FormFieldDatum
@@ -169,6 +213,12 @@ export declare class FormFieldDatumFilterRequest extends Message<FormFieldDatumF
      * @generated from field: string value = 2;
      */
     value: string;
+    /**
+     * The operator to be used
+     *
+     * @generated from field: Scailo.FORM_FIELD_FILTER_OPERATOR operator = 10;
+     */
+    operator: FORM_FIELD_FILTER_OPERATOR;
     constructor(data?: PartialMessage<FormFieldDatumFilterRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormFieldDatumFilterRequest";
