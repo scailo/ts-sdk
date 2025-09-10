@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { PurchaseEnquiriesServicePaginatedItemsResponse, PurchaseEnquiry, PurchaseEnquiryItem, PurchaseEnquiryItemHistoryRequest, PurchaseEnquiryItemsSearchRequest, PurchasesEnquiriesItemsList, PurchasesEnquiriesList, PurchasesEnquiriesServiceCountReq, PurchasesEnquiriesServiceCreateRequest, PurchasesEnquiriesServiceFilterReq, PurchasesEnquiriesServiceItemCreateRequest, PurchasesEnquiriesServiceItemUpdateRequest, PurchasesEnquiriesServicePaginationReq, PurchasesEnquiriesServicePaginationResponse, PurchasesEnquiriesServiceSearchAllReq, PurchasesEnquiriesServiceUpdateRequest } from "./purchases_enquiries.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 
@@ -456,6 +456,17 @@ export const PurchasesEnquiriesService = {
       name: "ViewWithPagination",
       I: PurchasesEnquiriesServicePaginationReq,
       O: PurchasesEnquiriesServicePaginationResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.PurchasesEnquiriesService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
       kind: MethodKind.Unary,
     },
     /**

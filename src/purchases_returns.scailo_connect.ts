@@ -583,6 +583,17 @@ export const PurchasesReturnsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.PurchasesReturnsService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download purchase return with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.PurchasesReturnsService.DownloadByUUID

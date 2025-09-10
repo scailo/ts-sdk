@@ -181,7 +181,7 @@ ___
 • **quantity**: `bigint` = `protoInt64.zero`
 
 // Stores the unit of material ID
-uint64 uom_id = 15 [(genesis_validate.rules).uint64.gt = 0];
+uint64 uom_id = 15 [(buf.validate.field).uint64.gt = 0];
 Stores the quantity of absence (in cents)
 
 **`Generated`**

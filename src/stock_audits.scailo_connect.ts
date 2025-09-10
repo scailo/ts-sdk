@@ -537,6 +537,17 @@ export const StockAuditsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.StockAuditsService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download stock audit with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.StockAuditsService.DownloadByUUID

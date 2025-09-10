@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SalesEnquiriesItemsList, SalesEnquiriesList, SalesEnquiriesServiceContactCreateRequest, SalesEnquiriesServiceCountReq, SalesEnquiriesServiceCreateRequest, SalesEnquiriesServiceFilterReq, SalesEnquiriesServiceItemCreateRequest, SalesEnquiriesServiceItemUpdateRequest, SalesEnquiriesServicePaginatedItemsResponse, SalesEnquiriesServicePaginationReq, SalesEnquiriesServicePaginationResponse, SalesEnquiriesServiceSearchAllReq, SalesEnquiriesServiceUpdateRequest, SalesEnquiry, SalesEnquiryAncillaryParameters, SalesEnquiryContact, SalesEnquiryContactsList, SalesEnquiryItem, SalesEnquiryItemHistoryRequest, SalesEnquiryItemsSearchRequest } from "./sales_enquiries.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 
@@ -566,6 +566,17 @@ export const SalesEnquiriesService = {
       name: "ViewAssociatedSalesOrdersIDs",
       I: Identifier,
       O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.SalesEnquiriesService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
       kind: MethodKind.Unary,
     },
     /**

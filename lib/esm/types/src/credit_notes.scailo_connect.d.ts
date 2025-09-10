@@ -1,5 +1,5 @@
 import { CreditNote, CreditNoteAncillaryParameters, CreditNoteItem, CreditNoteItemHistoryRequest, CreditNoteItemProspectiveInfoRequest, CreditNoteItemsList, CreditNoteItemsSearchRequest, CreditNoteReference, CreditNoteReferencesList, CreditNoteReturnStatisticsList, CreditNotesList, CreditNotesServiceAlreadyAddedQuantityForSourceRequest, CreditNotesServiceAutofillRequest, CreditNotesServiceCountReq, CreditNotesServiceCreateRequest, CreditNotesServiceFilterReq, CreditNotesServiceItemCreateRequest, CreditNotesServiceItemUpdateRequest, CreditNotesServicePaginatedItemsResponse, CreditNotesServicePaginationReq, CreditNotesServicePaginationResponse, CreditNotesServiceReferenceCreateRequest, CreditNotesServiceSearchAllReq, CreditNotesServiceUpdateRequest } from "./credit_notes.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -586,7 +586,17 @@ export declare const CreditNotesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Other view operations
+         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         *
+         * @generated from rpc Scailo.CreditNotesService.IsDownloadable
+         */
+        readonly isDownloadable: {
+            readonly name: "IsDownloadable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Download credit note with the given IdentifierUUID (can be used to allow public downloads)
          *
          * @generated from rpc Scailo.CreditNotesService.DownloadByUUID

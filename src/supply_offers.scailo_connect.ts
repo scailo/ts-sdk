@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SupplyOffer, SupplyOfferAncillaryParameters, SupplyOfferItem, SupplyOfferItemHistoryRequest, SupplyOfferItemProspectiveInfoRequest, SupplyOfferItemsList, SupplyOfferItemsSearchRequest, SupplyOffersList, SupplyOffersServiceAutofillRequest, SupplyOffersServiceCountReq, SupplyOffersServiceCreateRequest, SupplyOffersServiceFilterReq, SupplyOffersServiceItemCreateRequest, SupplyOffersServiceItemUpdateRequest, SupplyOffersServicePaginatedItemsResponse, SupplyOffersServicePaginationReq, SupplyOffersServicePaginationResponse, SupplyOffersServiceSearchAllReq, SupplyOffersServiceUpdateRequest } from "./supply_offers.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -559,7 +559,17 @@ export const SupplyOffersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Other view operations
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.SupplyOffersService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download supply offer with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.SupplyOffersService.DownloadByUUID

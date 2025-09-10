@@ -559,6 +559,17 @@ export const PurchasesIndentsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.PurchasesIndentsService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download equation with the given IdentifierUUID
      *
      * @generated from rpc Scailo.PurchasesIndentsService.DownloadByUUID

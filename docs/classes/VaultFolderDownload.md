@@ -75,7 +75,7 @@ Message\&lt;VaultFolderDownload\&gt;.constructor
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:394
+src/vault_folders.scailo_pb.ts:484
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: uint64 download_ended_at = 15;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:378
+src/vault_folders.scailo_pb.ts:468
 
 ___
 
@@ -107,7 +107,7 @@ from field: uint64 download_started_at = 14;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:371
+src/vault_folders.scailo_pb.ts:461
 
 ___
 
@@ -123,7 +123,7 @@ from field: string downloaded_by = 16;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:385
+src/vault_folders.scailo_pb.ts:475
 
 ___
 
@@ -139,7 +139,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:329
+src/vault_folders.scailo_pb.ts:419
 
 ___
 
@@ -155,7 +155,7 @@ from field: string error = 17;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:392
+src/vault_folders.scailo_pb.ts:482
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 folder_id = 10;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:343
+src/vault_folders.scailo_pb.ts:433
 
 ___
 
@@ -187,7 +187,7 @@ from field: bool is_zipped = 12;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:357
+src/vault_folders.scailo_pb.ts:447
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:336
+src/vault_folders.scailo_pb.ts:426
 
 ___
 
@@ -219,7 +219,7 @@ from field: string requested_by = 13;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:364
+src/vault_folders.scailo_pb.ts:454
 
 ___
 
@@ -235,7 +235,7 @@ from field: string zip_file_path = 11;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:350
+src/vault_folders.scailo_pb.ts:440
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:401
+src/vault_folders.scailo_pb.ts:491
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:399
+src/vault_folders.scailo_pb.ts:489
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:400
+src/vault_folders.scailo_pb.ts:490
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:426
+src/vault_folders.scailo_pb.ts:516
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:414
+src/vault_folders.scailo_pb.ts:504
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:418
+src/vault_folders.scailo_pb.ts:508
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:422
+src/vault_folders.scailo_pb.ts:512

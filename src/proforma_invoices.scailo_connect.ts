@@ -548,6 +548,17 @@ export const ProformaInvoicesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.ProformaInvoicesService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download proforma invoice with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.ProformaInvoicesService.DownloadByUUID

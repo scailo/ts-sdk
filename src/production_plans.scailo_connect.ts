@@ -592,6 +592,17 @@ export const ProductionPlansService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.ProductionPlansService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download production plan with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.ProductionPlansService.DownloadByUUID

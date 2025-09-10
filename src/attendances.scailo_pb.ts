@@ -343,7 +343,7 @@ export class AttendancesServiceImageEntryRequest extends Message<AttendancesServ
 
   /**
    * // The reference ID of the attendance
-   * string reference_id = 10 [(genesis_validate.rules).string = {
+   * string reference_id = 10 [(buf.validate.field).string = {
    *     pattern: "[0-9A-Za-z ]+$", // Allow spaces
    * }];
    * The ID of the user that this attendance belongs to

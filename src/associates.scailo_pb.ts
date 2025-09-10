@@ -505,7 +505,7 @@ export class AssociatesServiceCreateRequest extends Message<AssociatesServiceCre
   /**
    * The work email address of the associate
    *
-   * [(genesis_validate.rules).string.email = true];
+   * [(buf.validate.field).string.email = true];
    *
    * @generated from field: string work_email = 19;
    */
@@ -521,7 +521,7 @@ export class AssociatesServiceCreateRequest extends Message<AssociatesServiceCre
   /**
    * The personal email address of the associate
    *
-   * [(genesis_validate.rules).string.email = true];
+   * [(buf.validate.field).string.email = true];
    *
    * @generated from field: string personal_email = 21;
    */
@@ -737,7 +737,7 @@ export class AssociatesServiceUpdateRequest extends Message<AssociatesServiceUpd
   /**
    * The work email address of the associate
    *
-   * [(genesis_validate.rules).string.email = true];
+   * [(buf.validate.field).string.email = true];
    *
    * @generated from field: string work_email = 19;
    */
@@ -753,7 +753,7 @@ export class AssociatesServiceUpdateRequest extends Message<AssociatesServiceUpd
   /**
    * The personal email address of the associate
    *
-   * [(genesis_validate.rules).string.email = true];
+   * [(buf.validate.field).string.email = true];
    *
    * @generated from field: string personal_email = 21;
    */

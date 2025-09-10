@@ -100,6 +100,64 @@ export declare class VaultFolderRenameFolderRequest extends Message<VaultFolderR
 }
 /**
  *
+ * Describes the parameters of a vault parent folder
+ *
+ * @generated from message Scailo.VaultParentFolder
+ */
+export declare class VaultParentFolder extends Message<VaultParentFolder> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this user
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * The name of the folder
+     *
+     * @generated from field: string name = 10;
+     */
+    name: string;
+    /**
+     * The ID of the parent folder
+     *
+     * @generated from field: uint64 parent_folder_id = 11;
+     */
+    parentFolderId: bigint;
+    /**
+     * The path of the folder
+     *
+     * @generated from field: string path_tree = 12;
+     */
+    pathTree: string;
+    /**
+     * The list of permissions
+     *
+     * @generated from field: repeated Scailo.VaultPermission permissions = 20;
+     */
+    permissions: VaultPermission[];
+    /**
+     * The UUID of the parent folder
+     *
+     * @generated from field: string parent_folder_uuid = 50;
+     */
+    parentFolderUuid: string;
+    constructor(data?: PartialMessage<VaultParentFolder>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VaultParentFolder";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VaultParentFolder;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VaultParentFolder;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VaultParentFolder;
+    static equals(a: VaultParentFolder | PlainMessage<VaultParentFolder> | undefined, b: VaultParentFolder | PlainMessage<VaultParentFolder> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters of a vault folder
  *
  * @generated from message Scailo.VaultFolder
@@ -144,9 +202,9 @@ export declare class VaultFolder extends Message<VaultFolder> {
     /**
      * The list of all the parent folders
      *
-     * @generated from field: repeated Scailo.VaultFolder parent_folders = 30;
+     * @generated from field: repeated Scailo.VaultParentFolder parent_folders = 30;
      */
-    parentFolders: VaultFolder[];
+    parentFolders: VaultParentFolder[];
     /**
      * The UUID of the parent folder
      *

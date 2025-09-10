@@ -343,7 +343,7 @@ export class OnDutiesServiceImageEntryRequest extends Message<OnDutiesServiceIma
 
   /**
    * // The reference ID of the onduty
-   * string reference_id = 10 [(genesis_validate.rules).string = {
+   * string reference_id = 10 [(buf.validate.field).string = {
    *     pattern: "[0-9A-Za-z ]+$", // Allow spaces
    * }];
    * The ID of the user who has requested for onduty

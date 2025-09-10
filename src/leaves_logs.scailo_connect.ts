@@ -20,8 +20,6 @@ export const LeavesLogsService = {
   typeName: "Scailo.LeavesLogsService",
   methods: {
     /**
-     * ------------------------------------------------------
-     * Search operations are listed below
      * View all that match the given filter criteria
      *
      * @generated from rpc Scailo.LeavesLogsService.Filter

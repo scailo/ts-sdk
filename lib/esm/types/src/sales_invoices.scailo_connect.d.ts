@@ -1,5 +1,5 @@
 import { SalesInvoice, SalesInvoiceAncillaryParameters, SalesInvoiceDispatchedStatisticsList, SalesInvoiceItem, SalesInvoiceItemHistoryRequest, SalesInvoiceItemProspectiveInfoRequest, SalesInvoiceItemsList, SalesInvoiceItemsSearchRequest, SalesInvoiceReference, SalesInvoiceReferencesList, SalesInvoicesList, SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest, SalesInvoicesServiceAutofillRequest, SalesInvoicesServiceCountReq, SalesInvoicesServiceCreateRequest, SalesInvoicesServiceFilterReq, SalesInvoicesServiceItemCreateRequest, SalesInvoicesServiceItemUpdateRequest, SalesInvoicesServicePaginatedItemsResponse, SalesInvoicesServicePaginationReq, SalesInvoicesServicePaginationResponse, SalesInvoicesServiceReferenceCreateRequest, SalesInvoicesServiceSearchAllReq, SalesInvoicesServiceUpdateRequest } from "./sales_invoices.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -616,6 +616,17 @@ export declare const SalesInvoicesService: {
             readonly name: "ViewAddedFamilyQuantityForSource";
             readonly I: typeof SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest;
             readonly O: typeof DualQuantitiesResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         *
+         * @generated from rpc Scailo.SalesInvoicesService.IsDownloadable
+         */
+        readonly isDownloadable: {
+            readonly name: "IsDownloadable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

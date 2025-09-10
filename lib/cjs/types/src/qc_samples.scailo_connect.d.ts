@@ -1,5 +1,5 @@
 import { QCSample, QCSampleAncillaryParameters, QCSampleParameter, QCSampleParameterHistoryList, QCSampleParameterHistoryRequest, QCSampleParametersList, QCSampleParametersSearchRequest, QCSamplesCountStatistics, QCSamplesList, QCSamplesServiceCountReq, QCSamplesServiceCreateRequest, QCSamplesServiceFilterReq, QCSamplesServicePaginatedParametersResponse, QCSamplesServicePaginationReq, QCSamplesServicePaginationResponse, QCSamplesServiceParameterUpdateRequest, QCSamplesServiceSearchAllReq, QCSamplesServiceUpdateRequest, QCSamplesWithMetadataList } from "./qc_samples.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
@@ -307,6 +307,17 @@ export declare const QCSamplesService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof QCSamplesServicePaginationReq;
             readonly O: typeof QCSamplesServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         *
+         * @generated from rpc Scailo.QCSamplesService.IsDownloadable
+         */
+        readonly isDownloadable: {
+            readonly name: "IsDownloadable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

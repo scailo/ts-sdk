@@ -1,5 +1,5 @@
 import { EquationReplaceable, EquationReplaceableItem, EquationReplaceableItemHistoryRequest, EquationReplaceableItemsSearchRequest, EquationsReplaceablesItemsList, EquationsReplaceablesList, EquationsReplaceablesServiceCountReq, EquationsReplaceablesServiceCreateRequest, EquationsReplaceablesServiceFilterReq, EquationsReplaceablesServiceItemCreateRequest, EquationsReplaceablesServiceItemUpdateRequest, EquationsReplaceablesServicePaginatedItemsResponse, EquationsReplaceablesServicePaginationReq, EquationsReplaceablesServicePaginationResponse, EquationsReplaceablesServiceSearchAllReq, EquationsReplaceablesServiceUpdateRequest } from "./equations_replaceables.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
@@ -485,6 +485,17 @@ export declare const EquationsReplaceablesService: {
             readonly name: "ViewForFamilyID";
             readonly I: typeof Identifier;
             readonly O: typeof EquationReplaceable;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         *
+         * @generated from rpc Scailo.EquationsReplaceablesService.IsDownloadable
+         */
+        readonly isDownloadable: {
+            readonly name: "IsDownloadable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

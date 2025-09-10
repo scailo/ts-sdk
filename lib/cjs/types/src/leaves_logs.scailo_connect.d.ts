@@ -14,8 +14,6 @@ export declare const LeavesLogsService: {
     readonly typeName: "Scailo.LeavesLogsService";
     readonly methods: {
         /**
-         * ------------------------------------------------------
-         * Search operations are listed below
          * View all that match the given filter criteria
          *
          * @generated from rpc Scailo.LeavesLogsService.Filter

@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { PurchaseOrder, PurchaseOrderAncillaryParameters, PurchaseOrderBillingStatistics, PurchaseOrderContact, PurchaseOrderContactsList, PurchaseOrderInventoryMatchList, PurchaseOrderInventoryStatistics, PurchaseOrderItem, PurchaseOrderItemHistoryRequest, PurchaseOrderItemProspectiveInfoRequest, PurchaseOrderItemsList, PurchaseOrderItemsSearchRequest, PurchaseOrderPriceMatchList, PurchaseOrderReference, PurchaseOrderReferencesList, PurchasesOrdersList, PurchasesOrdersServiceAutofillRequest, PurchasesOrdersServiceContactCreateRequest, PurchasesOrdersServiceCountReq, PurchasesOrdersServiceCreateRequest, PurchasesOrdersServiceFilterReq, PurchasesOrdersServiceItemCreateRequest, PurchasesOrdersServiceItemUpdateRequest, PurchasesOrdersServicePaginatedItemsResponse, PurchasesOrdersServicePaginationReq, PurchasesOrdersServicePaginationResponse, PurchasesOrdersServiceReferenceCreateRequest, PurchasesOrdersServiceSearchAllReq, PurchasesOrdersServiceUpdateRequest } from "./purchases_orders.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -713,7 +713,17 @@ export const PurchasesOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Other view operations
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.PurchasesOrdersService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download purchase order with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.PurchasesOrdersService.DownloadByUUID

@@ -1,5 +1,5 @@
 import { Expense, ExpenseItem, ExpenseItemHistoryRequest, ExpenseItemsSearchRequest, ExpensesItemsList, ExpensesList, ExpensesServiceCountReq, ExpensesServiceCreateRequest, ExpensesServiceFilterReq, ExpensesServiceItemCreateRequest, ExpensesServiceItemUpdateRequest, ExpensesServicePaginatedItemsResponse, ExpensesServicePaginationReq, ExpensesServicePaginationResponse, ExpensesServiceSearchAllReq, ExpensesServiceUpdateRequest } from "./expenses.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
@@ -464,7 +464,17 @@ export declare const ExpensesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Other view operations
+         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         *
+         * @generated from rpc Scailo.ExpensesService.IsDownloadable
+         */
+        readonly isDownloadable: {
+            readonly name: "IsDownloadable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Download expense with the given IdentifierUUID (can be used to allow public downloads)
          *
          * @generated from rpc Scailo.ExpensesService.DownloadByUUID

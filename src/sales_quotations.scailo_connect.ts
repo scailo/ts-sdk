@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SalesQuotation, SalesQuotationContact, SalesQuotationContactsList, SalesQuotationItem, SalesQuotationItemHistoryRequest, SalesQuotationItemProspectiveInfoRequest, SalesQuotationItemsList, SalesQuotationItemsSearchRequest, SalesQuotationReference, SalesQuotationReferencesList, SalesQuotationsList, SalesQuotationsServiceAutofillRequest, SalesQuotationsServiceContactCreateRequest, SalesQuotationsServiceCountReq, SalesQuotationsServiceCreateRequest, SalesQuotationsServiceFilterReq, SalesQuotationsServiceItemCreateRequest, SalesQuotationsServiceItemUpdateRequest, SalesQuotationsServicePaginatedItemsResponse, SalesQuotationsServicePaginationReq, SalesQuotationsServicePaginationResponse, SalesQuotationsServiceReferenceCreateRequest, SalesQuotationsServiceSearchAllReq, SalesQuotationsServiceUpdateRequest } from "./sales_quotations.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -667,6 +667,17 @@ export const SalesQuotationsService = {
       name: "ViewAssociatedSalesOrdersIDs",
       I: Identifier,
       O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.SalesQuotationsService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
       kind: MethodKind.Unary,
     },
     /**

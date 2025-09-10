@@ -73,7 +73,7 @@ Message\&lt;VaultFolder\&gt;.constructor
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:240
+src/vault_folders.scailo_pb.ts:330
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:189
+src/vault_folders.scailo_pb.ts:279
 
 ___
 
@@ -105,7 +105,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:196
+src/vault_folders.scailo_pb.ts:286
 
 ___
 
@@ -121,7 +121,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:203
+src/vault_folders.scailo_pb.ts:293
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 parent_folder_id = 11;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:210
+src/vault_folders.scailo_pb.ts:300
 
 ___
 
@@ -153,23 +153,23 @@ from field: string parent_folder_uuid = 50;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:238
+src/vault_folders.scailo_pb.ts:328
 
 ___
 
 ### parentFolders
 
-• **parentFolders**: [`VaultFolder`](VaultFolder.md)[] = `[]`
+• **parentFolders**: [`VaultParentFolder`](VaultParentFolder.md)[] = `[]`
 
 The list of all the parent folders
 
 **`Generated`**
 
-from field: repeated Scailo.VaultFolder parent_folders = 30;
+from field: repeated Scailo.VaultParentFolder parent_folders = 30;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:231
+src/vault_folders.scailo_pb.ts:321
 
 ___
 
@@ -185,7 +185,7 @@ from field: string path_tree = 12;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:217
+src/vault_folders.scailo_pb.ts:307
 
 ___
 
@@ -201,7 +201,7 @@ from field: repeated Scailo.VaultPermission permissions = 20;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:224
+src/vault_folders.scailo_pb.ts:314
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:247
+src/vault_folders.scailo_pb.ts:337
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:245
+src/vault_folders.scailo_pb.ts:335
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:246
+src/vault_folders.scailo_pb.ts:336
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:270
+src/vault_folders.scailo_pb.ts:360
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:258
+src/vault_folders.scailo_pb.ts:348
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:262
+src/vault_folders.scailo_pb.ts:352
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:266
+src/vault_folders.scailo_pb.ts:356

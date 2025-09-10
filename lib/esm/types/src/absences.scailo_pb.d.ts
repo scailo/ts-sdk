@@ -233,7 +233,7 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
     toTimestamp: bigint;
     /**
      * // Stores the unit of material ID
-     * uint64 uom_id = 15 [(genesis_validate.rules).uint64.gt = 0];
+     * uint64 uom_id = 15 [(buf.validate.field).uint64.gt = 0];
      * Stores the quantity of absence (in cents)
      *
      * @generated from field: uint64 quantity = 16;

@@ -204,8 +204,6 @@ export const SalariesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * --------------------------------------------------------------------
-     * Addition Records
      * Add an addition item to a salary
      *
      * @generated from rpc Scailo.SalariesService.AddSalaryAdditionItem
@@ -316,8 +314,6 @@ export const SalariesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * --------------------------------------------------------------------
-     * Deduction Records
      * Add an deduction item to a salary
      *
      * @generated from rpc Scailo.SalariesService.AddSalaryDeductionItem
@@ -428,8 +424,6 @@ export const SalariesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * --------------------------------------------------------------------
-     * Reimbursement Records
      * Add an reimbursement item to a salary
      *
      * @generated from rpc Scailo.SalariesService.AddSalaryReimbursementItem

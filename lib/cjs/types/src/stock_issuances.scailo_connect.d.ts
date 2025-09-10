@@ -542,6 +542,17 @@ export declare const StockIssuancesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         *
+         * @generated from rpc Scailo.StockIssuancesService.IsDownloadable
+         */
+        readonly isDownloadable: {
+            readonly name: "IsDownloadable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Download stock issuance with the given IdentifierUUID
          *
          * @generated from rpc Scailo.StockIssuancesService.DownloadByUUID

@@ -96,7 +96,7 @@ export enum Edition {
 
   /**
    * Placeholder editions for testing feature resolution.  These should not be
-   * used or relyed on outside of tests.
+   * used or relied on outside of tests.
    *
    * @generated from enum value: EDITION_1_TEST_ONLY = 1;
    */
@@ -145,6 +145,38 @@ proto2.util.setEnumType(Edition, "google.protobuf.Edition", [
   { no: 99998, name: "EDITION_99998_TEST_ONLY" },
   { no: 99999, name: "EDITION_99999_TEST_ONLY" },
   { no: 2147483647, name: "EDITION_MAX" },
+]);
+
+/**
+ * Describes the 'visibility' of a symbol with respect to the proto import
+ * system. Symbols can only be imported when the visibility rules do not prevent
+ * it (ex: local symbols cannot be imported).  Visibility modifiers can only set
+ * on `message` and `enum` as they are the only types available to be referenced
+ * from other files.
+ *
+ * @generated from enum google.protobuf.SymbolVisibility
+ */
+export enum SymbolVisibility {
+  /**
+   * @generated from enum value: VISIBILITY_UNSET = 0;
+   */
+  VISIBILITY_UNSET = 0,
+
+  /**
+   * @generated from enum value: VISIBILITY_LOCAL = 1;
+   */
+  VISIBILITY_LOCAL = 1,
+
+  /**
+   * @generated from enum value: VISIBILITY_EXPORT = 2;
+   */
+  VISIBILITY_EXPORT = 2,
+}
+// Retrieve enum metadata with: proto2.getEnumType(SymbolVisibility)
+proto2.util.setEnumType(SymbolVisibility, "google.protobuf.SymbolVisibility", [
+  { no: 0, name: "VISIBILITY_UNSET" },
+  { no: 1, name: "VISIBILITY_LOCAL" },
+  { no: 2, name: "VISIBILITY_EXPORT" },
 ]);
 
 /**
@@ -230,6 +262,14 @@ export class FileDescriptorProto extends Message<FileDescriptorProto> {
   weakDependency: number[] = [];
 
   /**
+   * Names of files imported by this file purely for the purpose of providing
+   * option extensions. These are excluded from the dependency list above.
+   *
+   * @generated from field: repeated string option_dependency = 15;
+   */
+  optionDependency: string[] = [];
+
+  /**
    * All top-level definitions in this file.
    *
    * @generated from field: repeated google.protobuf.DescriptorProto message_type = 4;
@@ -271,6 +311,9 @@ export class FileDescriptorProto extends Message<FileDescriptorProto> {
    * The supported values are "proto2", "proto3", and "editions".
    *
    * If `edition` is present, this value must be "editions".
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional string syntax = 12;
    */
@@ -278,6 +321,9 @@ export class FileDescriptorProto extends Message<FileDescriptorProto> {
 
   /**
    * The edition of the proto file.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.Edition edition = 14;
    */
@@ -296,6 +342,7 @@ export class FileDescriptorProto extends Message<FileDescriptorProto> {
     { no: 3, name: "dependency", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 10, name: "public_dependency", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true },
     { no: 11, name: "weak_dependency", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true },
+    { no: 15, name: "option_dependency", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "message_type", kind: "message", T: DescriptorProto, repeated: true },
     { no: 5, name: "enum_type", kind: "message", T: EnumDescriptorProto, repeated: true },
     { no: 6, name: "service", kind: "message", T: ServiceDescriptorProto, repeated: true },
@@ -382,6 +429,13 @@ export class DescriptorProto extends Message<DescriptorProto> {
    */
   reservedName: string[] = [];
 
+  /**
+   * Support for `export` and `local` keywords on enums.
+   *
+   * @generated from field: optional google.protobuf.SymbolVisibility visibility = 11;
+   */
+  visibility?: SymbolVisibility;
+
   constructor(data?: PartialMessage<DescriptorProto>) {
     super();
     proto2.util.initPartial(data, this);
@@ -400,6 +454,7 @@ export class DescriptorProto extends Message<DescriptorProto> {
     { no: 7, name: "options", kind: "message", T: MessageOptions, opt: true },
     { no: 9, name: "reserved_range", kind: "message", T: DescriptorProto_ReservedRange, repeated: true },
     { no: 10, name: "reserved_name", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 11, name: "visibility", kind: "enum", T: proto2.getEnumType(SymbolVisibility), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DescriptorProto {
@@ -1091,6 +1146,13 @@ export class EnumDescriptorProto extends Message<EnumDescriptorProto> {
    */
   reservedName: string[] = [];
 
+  /**
+   * Support for `export` and `local` keywords on enums.
+   *
+   * @generated from field: optional google.protobuf.SymbolVisibility visibility = 6;
+   */
+  visibility?: SymbolVisibility;
+
   constructor(data?: PartialMessage<EnumDescriptorProto>) {
     super();
     proto2.util.initPartial(data, this);
@@ -1104,6 +1166,7 @@ export class EnumDescriptorProto extends Message<EnumDescriptorProto> {
     { no: 3, name: "options", kind: "message", T: EnumOptions, opt: true },
     { no: 4, name: "reserved_range", kind: "message", T: EnumDescriptorProto_EnumReservedRange, repeated: true },
     { no: 5, name: "reserved_name", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 6, name: "visibility", kind: "enum", T: proto2.getEnumType(SymbolVisibility), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnumDescriptorProto {
@@ -1538,6 +1601,9 @@ export class FileOptions extends Message<FileOptions> {
 
   /**
    * Any features defined in the specific edition.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.FeatureSet features = 50;
    */
@@ -1728,6 +1794,9 @@ export class MessageOptions extends Message<MessageOptions> {
 
   /**
    * Any features defined in the specific edition.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.FeatureSet features = 12;
    */
@@ -1779,12 +1848,13 @@ export class MessageOptions extends Message<MessageOptions> {
  */
 export class FieldOptions extends Message<FieldOptions> {
   /**
+   * NOTE: ctype is deprecated. Use `features.(pb.cpp).string_type` instead.
    * The ctype option instructs the C++ code generator to use a different
    * representation of the field than it normally would.  See the specific
    * options below.  This option is only implemented to support use of
    * [ctype=CORD] and [ctype=STRING] (the default) on non-repeated fields of
-   * type "bytes" in the open source release -- sorry, we'll try to include
-   * other types in a future version!
+   * type "bytes" in the open source release.
+   * TODO: make ctype actually deprecated.
    *
    * @generated from field: optional google.protobuf.FieldOptions.CType ctype = 1 [default = STRING];
    */
@@ -1899,6 +1969,9 @@ export class FieldOptions extends Message<FieldOptions> {
 
   /**
    * Any features defined in the specific edition.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.FeatureSet features = 21;
    */
@@ -2026,8 +2099,6 @@ proto2.util.setEnumType(FieldOptions_JSType, "google.protobuf.FieldOptions.JSTyp
 
 /**
  * If set to RETENTION_SOURCE, the option will be omitted from the binary.
- * Note: as of January 2023, support for this is in progress and does not yet
- * have an effect (b/264593489).
  *
  * @generated from enum google.protobuf.FieldOptions.OptionRetention
  */
@@ -2057,8 +2128,7 @@ proto2.util.setEnumType(FieldOptions_OptionRetention, "google.protobuf.FieldOpti
 /**
  * This indicates the types of entities that the field may apply to when used
  * as an option. If it is unset, then the field may be freely used as an
- * option on any kind of entity. Note: as of January 2023, support for this is
- * in progress and does not yet have an effect (b/264593489).
+ * option on any kind of entity.
  *
  * @generated from enum google.protobuf.FieldOptions.OptionTargetType
  */
@@ -2249,6 +2319,9 @@ export class FieldOptions_FeatureSupport extends Message<FieldOptions_FeatureSup
 export class OneofOptions extends Message<OneofOptions> {
   /**
    * Any features defined in the specific edition.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.FeatureSet features = 1;
    */
@@ -2327,6 +2400,9 @@ export class EnumOptions extends Message<EnumOptions> {
 
   /**
    * Any features defined in the specific edition.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.FeatureSet features = 7;
    */
@@ -2387,6 +2463,9 @@ export class EnumValueOptions extends Message<EnumValueOptions> {
 
   /**
    * Any features defined in the specific edition.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.FeatureSet features = 2;
    */
@@ -2453,6 +2532,9 @@ export class EnumValueOptions extends Message<EnumValueOptions> {
 export class ServiceOptions extends Message<ServiceOptions> {
   /**
    * Any features defined in the specific edition.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.FeatureSet features = 34;
    */
@@ -2526,6 +2608,9 @@ export class MethodOptions extends Message<MethodOptions> {
 
   /**
    * Any features defined in the specific edition.
+   * WARNING: This field should only be used by protobuf plugins or special
+   * cases like the proto compiler. Other uses are discouraged and
+   * developers should rely on the protoreflect APIs for their client language.
    *
    * @generated from field: optional google.protobuf.FeatureSet features = 35;
    */
@@ -2776,6 +2861,16 @@ export class FeatureSet extends Message<FeatureSet> {
    */
   jsonFormat?: FeatureSet_JsonFormat;
 
+  /**
+   * @generated from field: optional google.protobuf.FeatureSet.EnforceNamingStyle enforce_naming_style = 7;
+   */
+  enforceNamingStyle?: FeatureSet_EnforceNamingStyle;
+
+  /**
+   * @generated from field: optional google.protobuf.FeatureSet.VisibilityFeature.DefaultSymbolVisibility default_symbol_visibility = 8;
+   */
+  defaultSymbolVisibility?: FeatureSet_VisibilityFeature_DefaultSymbolVisibility;
+
   constructor(data?: PartialMessage<FeatureSet>) {
     super();
     proto2.util.initPartial(data, this);
@@ -2790,6 +2885,8 @@ export class FeatureSet extends Message<FeatureSet> {
     { no: 4, name: "utf8_validation", kind: "enum", T: proto2.getEnumType(FeatureSet_Utf8Validation), opt: true },
     { no: 5, name: "message_encoding", kind: "enum", T: proto2.getEnumType(FeatureSet_MessageEncoding), opt: true },
     { no: 6, name: "json_format", kind: "enum", T: proto2.getEnumType(FeatureSet_JsonFormat), opt: true },
+    { no: 7, name: "enforce_naming_style", kind: "enum", T: proto2.getEnumType(FeatureSet_EnforceNamingStyle), opt: true },
+    { no: 8, name: "default_symbol_visibility", kind: "enum", T: proto2.getEnumType(FeatureSet_VisibilityFeature_DefaultSymbolVisibility), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FeatureSet {
@@ -2969,6 +3066,111 @@ proto2.util.setEnumType(FeatureSet_JsonFormat, "google.protobuf.FeatureSet.JsonF
   { no: 0, name: "JSON_FORMAT_UNKNOWN" },
   { no: 1, name: "ALLOW" },
   { no: 2, name: "LEGACY_BEST_EFFORT" },
+]);
+
+/**
+ * @generated from enum google.protobuf.FeatureSet.EnforceNamingStyle
+ */
+export enum FeatureSet_EnforceNamingStyle {
+  /**
+   * @generated from enum value: ENFORCE_NAMING_STYLE_UNKNOWN = 0;
+   */
+  ENFORCE_NAMING_STYLE_UNKNOWN = 0,
+
+  /**
+   * @generated from enum value: STYLE2024 = 1;
+   */
+  STYLE2024 = 1,
+
+  /**
+   * @generated from enum value: STYLE_LEGACY = 2;
+   */
+  STYLE_LEGACY = 2,
+}
+// Retrieve enum metadata with: proto2.getEnumType(FeatureSet_EnforceNamingStyle)
+proto2.util.setEnumType(FeatureSet_EnforceNamingStyle, "google.protobuf.FeatureSet.EnforceNamingStyle", [
+  { no: 0, name: "ENFORCE_NAMING_STYLE_UNKNOWN" },
+  { no: 1, name: "STYLE2024" },
+  { no: 2, name: "STYLE_LEGACY" },
+]);
+
+/**
+ * @generated from message google.protobuf.FeatureSet.VisibilityFeature
+ */
+export class FeatureSet_VisibilityFeature extends Message<FeatureSet_VisibilityFeature> {
+  constructor(data?: PartialMessage<FeatureSet_VisibilityFeature>) {
+    super();
+    proto2.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto2 = proto2;
+  static readonly typeName = "google.protobuf.FeatureSet.VisibilityFeature";
+  static readonly fields: FieldList = proto2.util.newFieldList(() => [
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FeatureSet_VisibilityFeature {
+    return new FeatureSet_VisibilityFeature().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FeatureSet_VisibilityFeature {
+    return new FeatureSet_VisibilityFeature().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FeatureSet_VisibilityFeature {
+    return new FeatureSet_VisibilityFeature().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FeatureSet_VisibilityFeature | PlainMessage<FeatureSet_VisibilityFeature> | undefined, b: FeatureSet_VisibilityFeature | PlainMessage<FeatureSet_VisibilityFeature> | undefined): boolean {
+    return proto2.util.equals(FeatureSet_VisibilityFeature, a, b);
+  }
+}
+
+/**
+ * @generated from enum google.protobuf.FeatureSet.VisibilityFeature.DefaultSymbolVisibility
+ */
+export enum FeatureSet_VisibilityFeature_DefaultSymbolVisibility {
+  /**
+   * @generated from enum value: DEFAULT_SYMBOL_VISIBILITY_UNKNOWN = 0;
+   */
+  DEFAULT_SYMBOL_VISIBILITY_UNKNOWN = 0,
+
+  /**
+   * Default pre-EDITION_2024, all UNSET visibility are export.
+   *
+   * @generated from enum value: EXPORT_ALL = 1;
+   */
+  EXPORT_ALL = 1,
+
+  /**
+   * All top-level symbols default to export, nested default to local.
+   *
+   * @generated from enum value: EXPORT_TOP_LEVEL = 2;
+   */
+  EXPORT_TOP_LEVEL = 2,
+
+  /**
+   * All symbols default to local.
+   *
+   * @generated from enum value: LOCAL_ALL = 3;
+   */
+  LOCAL_ALL = 3,
+
+  /**
+   * All symbols local by default. Nested types cannot be exported.
+   * With special case caveat for message { enum {} reserved 1 to max; }
+   * This is the recommended setting for new protos.
+   *
+   * @generated from enum value: STRICT = 4;
+   */
+  STRICT = 4,
+}
+// Retrieve enum metadata with: proto2.getEnumType(FeatureSet_VisibilityFeature_DefaultSymbolVisibility)
+proto2.util.setEnumType(FeatureSet_VisibilityFeature_DefaultSymbolVisibility, "google.protobuf.FeatureSet.VisibilityFeature.DefaultSymbolVisibility", [
+  { no: 0, name: "DEFAULT_SYMBOL_VISIBILITY_UNKNOWN" },
+  { no: 1, name: "EXPORT_ALL" },
+  { no: 2, name: "EXPORT_TOP_LEVEL" },
+  { no: 3, name: "LOCAL_ALL" },
+  { no: 4, name: "STRICT" },
 ]);
 
 /**

@@ -66,7 +66,7 @@ Message\&lt;VaultFoldersList\&gt;.constructor
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:289
+src/vault_folders.scailo_pb.ts:379
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VaultFolder list = 1;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:287
+src/vault_folders.scailo_pb.ts:377
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:296
+src/vault_folders.scailo_pb.ts:386
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:294
+src/vault_folders.scailo_pb.ts:384
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:295
+src/vault_folders.scailo_pb.ts:385
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:312
+src/vault_folders.scailo_pb.ts:402
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:300
+src/vault_folders.scailo_pb.ts:390
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:304
+src/vault_folders.scailo_pb.ts:394
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:308
+src/vault_folders.scailo_pb.ts:398

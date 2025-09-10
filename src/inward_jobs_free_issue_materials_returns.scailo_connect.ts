@@ -549,7 +549,17 @@ export const InwardJobsFreeIssueMaterialsReturnsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Other view operations
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsReturnsService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download inward job free issue material return with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.InwardJobsFreeIssueMaterialsReturnsService.DownloadByUUID

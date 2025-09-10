@@ -488,8 +488,6 @@ export const VaultService = {
       kind: MethodKind.Unary,
     },
     /**
-     * ------------------------------------------
-     * GiX apps routes
      * Setup GiX app
      *
      * @generated from rpc Scailo.VaultService.SetupGiX

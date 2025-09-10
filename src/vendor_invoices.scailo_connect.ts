@@ -614,6 +614,17 @@ export const VendorInvoicesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.VendorInvoicesService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download vendor invoice with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.VendorInvoicesService.DownloadByUUID

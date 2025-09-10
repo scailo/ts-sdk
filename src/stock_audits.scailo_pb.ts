@@ -547,7 +547,7 @@ export class StockAuditsServiceItemCreateRequest extends Message<StockAuditsServ
 
   /**
    * The digitally available quantity (in cents)
-   * uint64 digital_quantity = 14 [(genesis_validate.rules).uint64.gt = 0];
+   * uint64 digital_quantity = 14 [(buf.validate.field).uint64.gt = 0];
    * The reason for reconciliation
    *
    * @generated from field: string reconciliation_reason = 15;
@@ -624,7 +624,7 @@ export class StockAuditsServiceItemUpdateRequest extends Message<StockAuditsServ
 
   /**
    * The digitally available quantity (in cents)
-   * uint64 digital_quantity = 14 [(genesis_validate.rules).uint64.gt = 0];
+   * uint64 digital_quantity = 14 [(buf.validate.field).uint64.gt = 0];
    * The reason for reconciliation
    *
    * @generated from field: string reconciliation_reason = 15;

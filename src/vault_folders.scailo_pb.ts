@@ -176,6 +176,96 @@ export class VaultFolderRenameFolderRequest extends Message<VaultFolderRenameFol
 
 /**
  *
+ * Describes the parameters of a vault parent folder
+ *
+ * @generated from message Scailo.VaultParentFolder
+ */
+export class VaultParentFolder extends Message<VaultParentFolder> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the metadata of this user
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   * The name of the folder
+   *
+   * @generated from field: string name = 10;
+   */
+  name = "";
+
+  /**
+   * The ID of the parent folder
+   *
+   * @generated from field: uint64 parent_folder_id = 11;
+   */
+  parentFolderId = protoInt64.zero;
+
+  /**
+   * The path of the folder
+   *
+   * @generated from field: string path_tree = 12;
+   */
+  pathTree = "";
+
+  /**
+   * The list of permissions
+   *
+   * @generated from field: repeated Scailo.VaultPermission permissions = 20;
+   */
+  permissions: VaultPermission[] = [];
+
+  /**
+   * The UUID of the parent folder
+   *
+   * @generated from field: string parent_folder_uuid = 50;
+   */
+  parentFolderUuid = "";
+
+  constructor(data?: PartialMessage<VaultParentFolder>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VaultParentFolder";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "parent_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "path_tree", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "permissions", kind: "message", T: VaultPermission, repeated: true },
+    { no: 50, name: "parent_folder_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VaultParentFolder {
+    return new VaultParentFolder().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VaultParentFolder {
+    return new VaultParentFolder().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VaultParentFolder {
+    return new VaultParentFolder().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VaultParentFolder | PlainMessage<VaultParentFolder> | undefined, b: VaultParentFolder | PlainMessage<VaultParentFolder> | undefined): boolean {
+    return proto3.util.equals(VaultParentFolder, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters of a vault folder
  *
  * @generated from message Scailo.VaultFolder
@@ -226,9 +316,9 @@ export class VaultFolder extends Message<VaultFolder> {
   /**
    * The list of all the parent folders
    *
-   * @generated from field: repeated Scailo.VaultFolder parent_folders = 30;
+   * @generated from field: repeated Scailo.VaultParentFolder parent_folders = 30;
    */
-  parentFolders: VaultFolder[] = [];
+  parentFolders: VaultParentFolder[] = [];
 
   /**
    * The UUID of the parent folder
@@ -251,7 +341,7 @@ export class VaultFolder extends Message<VaultFolder> {
     { no: 11, name: "parent_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "path_tree", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "permissions", kind: "message", T: VaultPermission, repeated: true },
-    { no: 30, name: "parent_folders", kind: "message", T: VaultFolder, repeated: true },
+    { no: 30, name: "parent_folders", kind: "message", T: VaultParentFolder, repeated: true },
     { no: 50, name: "parent_folder_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 

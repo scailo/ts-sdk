@@ -285,7 +285,7 @@ ___
 
 The personal email address of the associate
 
-[(genesis_validate.rules).string.email = true];
+[(buf.validate.field).string.email = true];
 
 **`Generated`**
 
@@ -351,7 +351,7 @@ ___
 
 The work email address of the associate
 
-[(genesis_validate.rules).string.email = true];
+[(buf.validate.field).string.email = true];
 
 **`Generated`**
 

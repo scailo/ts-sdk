@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { SalesOrder, SalesOrderAncillaryParameters, SalesOrderBillingStatistics, SalesOrderContact, SalesOrderContactsList, SalesOrderInventoryMatchList, SalesOrderInventoryStatistics, SalesOrderItem, SalesOrderItemHistoryRequest, SalesOrderItemProspectiveInfoRequest, SalesOrderItemsList, SalesOrderItemsSearchRequest, SalesOrderPriceMatchList, SalesOrderReference, SalesOrderReferencesList, SalesOrdersList, SalesOrdersServiceAutofillRequest, SalesOrdersServiceContactCreateRequest, SalesOrdersServiceCountReq, SalesOrdersServiceCreateRequest, SalesOrdersServiceFilterReq, SalesOrdersServiceItemCreateRequest, SalesOrdersServiceItemUpdateRequest, SalesOrdersServicePaginatedItemsResponse, SalesOrdersServicePaginationReq, SalesOrdersServicePaginationResponse, SalesOrdersServiceReferenceCreateRequest, SalesOrdersServiceSearchAllReq, SalesOrdersServiceUpdateRequest } from "./sales_orders.scailo_pb.js";
-import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
+import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -713,7 +713,17 @@ export const SalesOrdersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Other view operations
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.SalesOrdersService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Download sales order with the given IdentifierUUID (can be used to allow public downloads)
      *
      * @generated from rpc Scailo.SalesOrdersService.DownloadByUUID

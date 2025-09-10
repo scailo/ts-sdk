@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { EquationFamily, EquationFamilyItem, EquationFamilyItemHistoryRequest, EquationFamilyItemsSearchRequest, EquationsFamiliesItemsList, EquationsFamiliesList, EquationsFamiliesServiceCountReq, EquationsFamiliesServiceCreateRequest, EquationsFamiliesServiceFilterReq, EquationsFamiliesServiceItemCreateRequest, EquationsFamiliesServiceItemUpdateRequest, EquationsFamiliesServicePaginatedItemsResponse, EquationsFamiliesServicePaginationReq, EquationsFamiliesServicePaginationResponse, EquationsFamiliesServiceSearchAllReq, EquationsFamiliesServiceUpdateRequest } from "./equations_families.scailo_pb.js";
-import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
@@ -514,6 +514,17 @@ export const EquationsFamiliesService = {
       name: "FilterProspectiveFamilies",
       I: FilterFamiliesReqForIdentifier,
       O: FamiliesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.EquationsFamiliesService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
       kind: MethodKind.Unary,
     },
     /**

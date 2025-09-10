@@ -249,7 +249,7 @@ export declare class VisitationsServiceImageEntryRequest extends Message<Visitat
     entityUuid: string;
     /**
      * // The reference ID of the visitation
-     * string reference_id = 10 [(genesis_validate.rules).string = {
+     * string reference_id = 10 [(buf.validate.field).string = {
      *     pattern: "[0-9A-Za-z ]+$", // Allow spaces
      * }];
      * The ID of the user who is being visited
