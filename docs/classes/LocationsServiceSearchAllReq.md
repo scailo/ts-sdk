@@ -25,7 +25,9 @@ from message Scailo.LocationsServiceSearchAllReq
 - [count](LocationsServiceSearchAllReq.md#count)
 - [entityUuid](LocationsServiceSearchAllReq.md#entityuuid)
 - [isActive](LocationsServiceSearchAllReq.md#isactive)
+- [isLeaf](LocationsServiceSearchAllReq.md#isleaf)
 - [offset](LocationsServiceSearchAllReq.md#offset)
+- [parentLocationId](LocationsServiceSearchAllReq.md#parentlocationid)
 - [searchKey](LocationsServiceSearchAllReq.md#searchkey)
 - [sortKey](LocationsServiceSearchAllReq.md#sortkey)
 - [sortOrder](LocationsServiceSearchAllReq.md#sortorder)
@@ -73,7 +75,7 @@ Message\&lt;LocationsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1013
+src/locations.scailo_pb.ts:1088
 
 ## Properties
 
@@ -89,7 +91,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:969
+src/locations.scailo_pb.ts:1030
 
 ___
 
@@ -105,7 +107,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:997
+src/locations.scailo_pb.ts:1058
 
 ___
 
@@ -121,7 +123,23 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:962
+src/locations.scailo_pb.ts:1023
+
+___
+
+### isLeaf
+
+• **isLeaf**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+
+Stores if this is a leaf location or a non-leaf location
+
+**`Generated`**
+
+from field: Scailo.BOOL_FILTER is_leaf = 25;
+
+#### Defined in
+
+src/locations.scailo_pb.ts:1086
 
 ___
 
@@ -137,7 +155,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:976
+src/locations.scailo_pb.ts:1037
+
+___
+
+### parentLocationId
+
+• **parentLocationId**: `bigint` = `protoInt64.zero`
+
+The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+
+**`Generated`**
+
+from field: uint64 parent_location_id = 24;
+
+#### Defined in
+
+src/locations.scailo_pb.ts:1079
 
 ___
 
@@ -153,7 +187,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1011
+src/locations.scailo_pb.ts:1072
 
 ___
 
@@ -169,7 +203,7 @@ from field: Scailo.LOCATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:990
+src/locations.scailo_pb.ts:1051
 
 ___
 
@@ -185,7 +219,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:983
+src/locations.scailo_pb.ts:1044
 
 ___
 
@@ -201,7 +235,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1004
+src/locations.scailo_pb.ts:1065
 
 ___
 
@@ -211,7 +245,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1020
+src/locations.scailo_pb.ts:1095
 
 ___
 
@@ -221,7 +255,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1018
+src/locations.scailo_pb.ts:1093
 
 ___
 
@@ -231,7 +265,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1019
+src/locations.scailo_pb.ts:1094
 
 ## Methods
 
@@ -519,7 +553,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1043
+src/locations.scailo_pb.ts:1120
 
 ___
 
@@ -540,7 +574,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1031
+src/locations.scailo_pb.ts:1108
 
 ___
 
@@ -561,7 +595,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1035
+src/locations.scailo_pb.ts:1112
 
 ___
 
@@ -582,4 +616,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:1039
+src/locations.scailo_pb.ts:1116

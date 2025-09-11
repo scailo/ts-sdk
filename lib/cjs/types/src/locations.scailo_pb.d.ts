@@ -114,6 +114,18 @@ export declare class LocationsServiceCreateRequest extends Message<LocationsServ
      */
     phone: string;
     /**
+     * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+     *
+     * @generated from field: uint64 parent_location_id = 14;
+     */
+    parentLocationId: bigint;
+    /**
+     * Stores if this is a leaf location or a non-leaf location
+     *
+     * @generated from field: bool is_leaf = 15;
+     */
+    isLeaf: boolean;
+    /**
      * The list of dynamic forms
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
@@ -160,12 +172,11 @@ export declare class LocationsServiceUpdateRequest extends Message<LocationsServ
      */
     name: string;
     /**
-     * The unique code by which the location is classified
-     *
-     * @generated from field: string code = 11;
-     */
-    code: string;
-    /**
+     * // The unique code by which the location is classified
+     * string code = 11 [(buf.validate.field).string = {
+     *   // pattern:   "^[^[0-9]A-Za-z]+( [^[0-9]A-Za-z]+)*$",
+     *   min_len: 1
+     * }];
      * The primary email of the location
      *
      * @generated from field: string email = 12;
@@ -253,6 +264,18 @@ export declare class Location extends Message<Location> {
      * @generated from field: string phone = 13;
      */
     phone: string;
+    /**
+     * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+     *
+     * @generated from field: uint64 parent_location_id = 14;
+     */
+    parentLocationId: bigint;
+    /**
+     * Stores if this is a leaf location or a non-leaf location
+     *
+     * @generated from field: bool is_leaf = 15;
+     */
+    isLeaf: boolean;
     /**
      * The list of dynamic forms
      *
@@ -504,6 +527,18 @@ export declare class LocationsServiceFilterReq extends Message<LocationsServiceF
      */
     phone: string;
     /**
+     * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+     *
+     * @generated from field: uint64 parent_location_id = 24;
+     */
+    parentLocationId: bigint;
+    /**
+     * Stores if this is a leaf location or a non-leaf location
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+     */
+    isLeaf: BOOL_FILTER;
+    /**
      * The list of form data filters
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
@@ -616,6 +651,18 @@ export declare class LocationsServiceCountReq extends Message<LocationsServiceCo
      */
     phone: string;
     /**
+     * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+     *
+     * @generated from field: uint64 parent_location_id = 24;
+     */
+    parentLocationId: bigint;
+    /**
+     * Stores if this is a leaf location or a non-leaf location
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+     */
+    isLeaf: BOOL_FILTER;
+    /**
      * The list of form data filters
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
@@ -685,6 +732,18 @@ export declare class LocationsServiceSearchAllReq extends Message<LocationsServi
      * @generated from field: string search_key = 11;
      */
     searchKey: string;
+    /**
+     * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+     *
+     * @generated from field: uint64 parent_location_id = 24;
+     */
+    parentLocationId: bigint;
+    /**
+     * Stores if this is a leaf location or a non-leaf location
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+     */
+    isLeaf: BOOL_FILTER;
     constructor(data?: PartialMessage<LocationsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.LocationsServiceSearchAllReq";

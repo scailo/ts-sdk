@@ -71,7 +71,7 @@ Message\&lt;LocationsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:495
+src/locations.scailo_pb.ts:524
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:465
+src/locations.scailo_pb.ts:494
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:458
+src/locations.scailo_pb.ts:487
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:472
+src/locations.scailo_pb.ts:501
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.LOCATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:486
+src/locations.scailo_pb.ts:515
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:479
+src/locations.scailo_pb.ts:508
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:493
+src/locations.scailo_pb.ts:522
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:502
+src/locations.scailo_pb.ts:531
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:500
+src/locations.scailo_pb.ts:529
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:501
+src/locations.scailo_pb.ts:530
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:523
+src/locations.scailo_pb.ts:552
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:511
+src/locations.scailo_pb.ts:540
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:515
+src/locations.scailo_pb.ts:544
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:519
+src/locations.scailo_pb.ts:548

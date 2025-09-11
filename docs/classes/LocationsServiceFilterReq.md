@@ -34,10 +34,12 @@ from message Scailo.LocationsServiceFilterReq
 - [entityUuid](LocationsServiceFilterReq.md#entityuuid)
 - [formData](LocationsServiceFilterReq.md#formdata)
 - [isActive](LocationsServiceFilterReq.md#isactive)
+- [isLeaf](LocationsServiceFilterReq.md#isleaf)
 - [modificationTimestampEnd](LocationsServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](LocationsServiceFilterReq.md#modificationtimestampstart)
 - [name](LocationsServiceFilterReq.md#name)
 - [offset](LocationsServiceFilterReq.md#offset)
+- [parentLocationId](LocationsServiceFilterReq.md#parentlocationid)
 - [phone](LocationsServiceFilterReq.md#phone)
 - [sortKey](LocationsServiceFilterReq.md#sortkey)
 - [sortOrder](LocationsServiceFilterReq.md#sortorder)
@@ -85,7 +87,7 @@ Message\&lt;LocationsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:741
+src/locations.scailo_pb.ts:784
 
 ## Properties
 
@@ -101,7 +103,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:697
+src/locations.scailo_pb.ts:726
 
 ___
 
@@ -117,7 +119,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:690
+src/locations.scailo_pb.ts:719
 
 ___
 
@@ -133,7 +135,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:683
+src/locations.scailo_pb.ts:712
 
 ___
 
@@ -149,7 +151,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:704
+src/locations.scailo_pb.ts:733
 
 ___
 
@@ -165,7 +167,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:718
+src/locations.scailo_pb.ts:747
 
 ___
 
@@ -181,7 +183,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:613
+src/locations.scailo_pb.ts:642
 
 ___
 
@@ -197,7 +199,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:648
+src/locations.scailo_pb.ts:677
 
 ___
 
@@ -213,7 +215,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:641
+src/locations.scailo_pb.ts:670
 
 ___
 
@@ -229,7 +231,7 @@ from field: string email = 22;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:725
+src/locations.scailo_pb.ts:754
 
 ___
 
@@ -245,7 +247,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:669
+src/locations.scailo_pb.ts:698
 
 ___
 
@@ -261,7 +263,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:739
+src/locations.scailo_pb.ts:782
 
 ___
 
@@ -277,7 +279,23 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:606
+src/locations.scailo_pb.ts:635
+
+___
+
+### isLeaf
+
+• **isLeaf**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+
+Stores if this is a leaf location or a non-leaf location
+
+**`Generated`**
+
+from field: Scailo.BOOL_FILTER is_leaf = 25;
+
+#### Defined in
+
+src/locations.scailo_pb.ts:775
 
 ___
 
@@ -293,7 +311,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:662
+src/locations.scailo_pb.ts:691
 
 ___
 
@@ -309,7 +327,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:655
+src/locations.scailo_pb.ts:684
 
 ___
 
@@ -325,7 +343,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:711
+src/locations.scailo_pb.ts:740
 
 ___
 
@@ -341,7 +359,23 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:620
+src/locations.scailo_pb.ts:649
+
+___
+
+### parentLocationId
+
+• **parentLocationId**: `bigint` = `protoInt64.zero`
+
+The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+
+**`Generated`**
+
+from field: uint64 parent_location_id = 24;
+
+#### Defined in
+
+src/locations.scailo_pb.ts:768
 
 ___
 
@@ -357,7 +391,7 @@ from field: string phone = 23;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:732
+src/locations.scailo_pb.ts:761
 
 ___
 
@@ -373,7 +407,7 @@ from field: Scailo.LOCATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:634
+src/locations.scailo_pb.ts:663
 
 ___
 
@@ -389,7 +423,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:627
+src/locations.scailo_pb.ts:656
 
 ___
 
@@ -405,7 +439,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:676
+src/locations.scailo_pb.ts:705
 
 ___
 
@@ -415,7 +449,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:748
+src/locations.scailo_pb.ts:791
 
 ___
 
@@ -425,7 +459,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:746
+src/locations.scailo_pb.ts:789
 
 ___
 
@@ -435,7 +469,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:747
+src/locations.scailo_pb.ts:790
 
 ## Methods
 
@@ -723,7 +757,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:783
+src/locations.scailo_pb.ts:828
 
 ___
 
@@ -744,7 +778,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:771
+src/locations.scailo_pb.ts:816
 
 ___
 
@@ -765,7 +799,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:775
+src/locations.scailo_pb.ts:820
 
 ___
 
@@ -786,4 +820,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:779
+src/locations.scailo_pb.ts:824

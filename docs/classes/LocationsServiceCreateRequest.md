@@ -26,7 +26,9 @@ from message Scailo.LocationsServiceCreateRequest
 - [email](LocationsServiceCreateRequest.md#email)
 - [entityUuid](LocationsServiceCreateRequest.md#entityuuid)
 - [formData](LocationsServiceCreateRequest.md#formdata)
+- [isLeaf](LocationsServiceCreateRequest.md#isleaf)
 - [name](LocationsServiceCreateRequest.md#name)
+- [parentLocationId](LocationsServiceCreateRequest.md#parentlocationid)
 - [phone](LocationsServiceCreateRequest.md#phone)
 - [userComment](LocationsServiceCreateRequest.md#usercomment)
 - [fields](LocationsServiceCreateRequest.md#fields)
@@ -72,7 +74,7 @@ Message\&lt;LocationsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:158
+src/locations.scailo_pb.ts:172
 
 ## Properties
 
@@ -136,7 +138,23 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:156
+src/locations.scailo_pb.ts:170
+
+___
+
+### isLeaf
+
+• **isLeaf**: `boolean` = `false`
+
+Stores if this is a leaf location or a non-leaf location
+
+**`Generated`**
+
+from field: bool is_leaf = 15;
+
+#### Defined in
+
+src/locations.scailo_pb.ts:163
 
 ___
 
@@ -153,6 +171,22 @@ from field: string name = 10;
 #### Defined in
 
 src/locations.scailo_pb.ts:128
+
+___
+
+### parentLocationId
+
+• **parentLocationId**: `bigint` = `protoInt64.zero`
+
+The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+
+**`Generated`**
+
+from field: uint64 parent_location_id = 14;
+
+#### Defined in
+
+src/locations.scailo_pb.ts:156
 
 ___
 
@@ -194,7 +228,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:165
+src/locations.scailo_pb.ts:179
 
 ___
 
@@ -204,7 +238,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:163
+src/locations.scailo_pb.ts:177
 
 ___
 
@@ -214,7 +248,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:164
+src/locations.scailo_pb.ts:178
 
 ## Methods
 
@@ -502,7 +536,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:187
+src/locations.scailo_pb.ts:203
 
 ___
 
@@ -523,7 +557,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:175
+src/locations.scailo_pb.ts:191
 
 ___
 
@@ -544,7 +578,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:179
+src/locations.scailo_pb.ts:195
 
 ___
 
@@ -565,4 +599,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:183
+src/locations.scailo_pb.ts:199

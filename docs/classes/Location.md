@@ -27,9 +27,11 @@ from message Scailo.Location
 - [email](Location.md#email)
 - [entityUuid](Location.md#entityuuid)
 - [formData](Location.md#formdata)
+- [isLeaf](Location.md#isleaf)
 - [logs](Location.md#logs)
 - [metadata](Location.md#metadata)
 - [name](Location.md#name)
+- [parentLocationId](Location.md#parentlocationid)
 - [phone](Location.md#phone)
 - [status](Location.md#status)
 - [fields](Location.md#fields)
@@ -75,7 +77,7 @@ Message\&lt;Location\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:367
+src/locations.scailo_pb.ts:394
 
 ## Properties
 
@@ -91,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:316
+src/locations.scailo_pb.ts:329
 
 ___
 
@@ -107,7 +109,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:344
+src/locations.scailo_pb.ts:357
 
 ___
 
@@ -123,7 +125,7 @@ from field: string email = 12;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:351
+src/locations.scailo_pb.ts:364
 
 ___
 
@@ -139,7 +141,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:302
+src/locations.scailo_pb.ts:315
 
 ___
 
@@ -155,7 +157,23 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:365
+src/locations.scailo_pb.ts:392
+
+___
+
+### isLeaf
+
+• **isLeaf**: `boolean` = `false`
+
+Stores if this is a leaf location or a non-leaf location
+
+**`Generated`**
+
+from field: bool is_leaf = 15;
+
+#### Defined in
+
+src/locations.scailo_pb.ts:385
 
 ___
 
@@ -171,7 +189,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:330
+src/locations.scailo_pb.ts:343
 
 ___
 
@@ -187,7 +205,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:309
+src/locations.scailo_pb.ts:322
 
 ___
 
@@ -203,7 +221,23 @@ from field: string name = 10;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:337
+src/locations.scailo_pb.ts:350
+
+___
+
+### parentLocationId
+
+• **parentLocationId**: `bigint` = `protoInt64.zero`
+
+The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+
+**`Generated`**
+
+from field: uint64 parent_location_id = 14;
+
+#### Defined in
+
+src/locations.scailo_pb.ts:378
 
 ___
 
@@ -219,7 +253,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:358
+src/locations.scailo_pb.ts:371
 
 ___
 
@@ -235,7 +269,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:323
+src/locations.scailo_pb.ts:336
 
 ___
 
@@ -245,7 +279,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:374
+src/locations.scailo_pb.ts:401
 
 ___
 
@@ -255,7 +289,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:372
+src/locations.scailo_pb.ts:399
 
 ___
 
@@ -265,7 +299,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:373
+src/locations.scailo_pb.ts:400
 
 ## Methods
 
@@ -553,7 +587,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:399
+src/locations.scailo_pb.ts:428
 
 ___
 
@@ -574,7 +608,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:387
+src/locations.scailo_pb.ts:416
 
 ___
 
@@ -595,7 +629,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:391
+src/locations.scailo_pb.ts:420
 
 ___
 
@@ -616,4 +650,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:395
+src/locations.scailo_pb.ts:424

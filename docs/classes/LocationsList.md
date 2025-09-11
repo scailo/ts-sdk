@@ -66,7 +66,7 @@ Message\&lt;LocationsList\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:418
+src/locations.scailo_pb.ts:447
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Location list = 1;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:416
+src/locations.scailo_pb.ts:445
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:425
+src/locations.scailo_pb.ts:454
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:423
+src/locations.scailo_pb.ts:452
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:424
+src/locations.scailo_pb.ts:453
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:441
+src/locations.scailo_pb.ts:470
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:429
+src/locations.scailo_pb.ts:458
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:433
+src/locations.scailo_pb.ts:462
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:437
+src/locations.scailo_pb.ts:466

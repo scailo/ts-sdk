@@ -69,7 +69,7 @@ Message\&lt;LocationsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:563
+src/locations.scailo_pb.ts:592
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:540
+src/locations.scailo_pb.ts:569
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:547
+src/locations.scailo_pb.ts:576
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Location payload = 4;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:561
+src/locations.scailo_pb.ts:590
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:554
+src/locations.scailo_pb.ts:583
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:570
+src/locations.scailo_pb.ts:599
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:568
+src/locations.scailo_pb.ts:597
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:569
+src/locations.scailo_pb.ts:598
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:589
+src/locations.scailo_pb.ts:618
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:577
+src/locations.scailo_pb.ts:606
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:581
+src/locations.scailo_pb.ts:610
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:585
+src/locations.scailo_pb.ts:614

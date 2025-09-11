@@ -149,6 +149,20 @@ export class LocationsServiceCreateRequest extends Message<LocationsServiceCreat
   phone = "";
 
   /**
+   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+   *
+   * @generated from field: uint64 parent_location_id = 14;
+   */
+  parentLocationId = protoInt64.zero;
+
+  /**
+   * Stores if this is a leaf location or a non-leaf location
+   *
+   * @generated from field: bool is_leaf = 15;
+   */
+  isLeaf = false;
+
+  /**
    * The list of dynamic forms
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
@@ -169,6 +183,8 @@ export class LocationsServiceCreateRequest extends Message<LocationsServiceCreat
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -225,13 +241,11 @@ export class LocationsServiceUpdateRequest extends Message<LocationsServiceUpdat
   name = "";
 
   /**
-   * The unique code by which the location is classified
-   *
-   * @generated from field: string code = 11;
-   */
-  code = "";
-
-  /**
+   * // The unique code by which the location is classified
+   * string code = 11 [(buf.validate.field).string = {
+   *   // pattern:   "^[^[0-9]A-Za-z]+( [^[0-9]A-Za-z]+)*$",
+   *   min_len: 1
+   * }];
    * The primary email of the location
    *
    * @generated from field: string email = 12;
@@ -264,7 +278,6 @@ export class LocationsServiceUpdateRequest extends Message<LocationsServiceUpdat
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
@@ -358,6 +371,20 @@ export class Location extends Message<Location> {
   phone = "";
 
   /**
+   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+   *
+   * @generated from field: uint64 parent_location_id = 14;
+   */
+  parentLocationId = protoInt64.zero;
+
+  /**
+   * Stores if this is a leaf location or a non-leaf location
+   *
+   * @generated from field: bool is_leaf = 15;
+   */
+  isLeaf = false;
+
+  /**
    * The list of dynamic forms
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
@@ -381,6 +408,8 @@ export class Location extends Message<Location> {
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
@@ -732,6 +761,20 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
   phone = "";
 
   /**
+   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+   *
+   * @generated from field: uint64 parent_location_id = 24;
+   */
+  parentLocationId = protoInt64.zero;
+
+  /**
+   * Stores if this is a leaf location or a non-leaf location
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+   */
+  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
    * The list of form data filters
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
@@ -765,6 +808,8 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
     { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -898,6 +943,20 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
   phone = "";
 
   /**
+   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+   *
+   * @generated from field: uint64 parent_location_id = 24;
+   */
+  parentLocationId = protoInt64.zero;
+
+  /**
+   * Stores if this is a leaf location or a non-leaf location
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+   */
+  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
    * The list of form data filters
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
@@ -927,6 +986,8 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
     { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -1010,6 +1071,20 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
    */
   searchKey = "";
 
+  /**
+   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+   *
+   * @generated from field: uint64 parent_location_id = 24;
+   */
+  parentLocationId = protoInt64.zero;
+
+  /**
+   * Stores if this is a leaf location or a non-leaf location
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+   */
+  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
   constructor(data?: PartialMessage<LocationsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1026,6 +1101,8 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LocationsServiceSearchAllReq {

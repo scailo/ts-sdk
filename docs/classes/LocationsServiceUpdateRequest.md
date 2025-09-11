@@ -22,7 +22,6 @@ from message Scailo.LocationsServiceUpdateRequest
 
 ### Properties
 
-- [code](LocationsServiceUpdateRequest.md#code)
 - [email](LocationsServiceUpdateRequest.md#email)
 - [formData](LocationsServiceUpdateRequest.md#formdata)
 - [id](LocationsServiceUpdateRequest.md#id)
@@ -73,30 +72,19 @@ Message\&lt;LocationsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/locations.scailo_pb.ts:255
+src/locations.scailo_pb.ts:269
 
 ## Properties
-
-### code
-
-• **code**: `string` = `""`
-
-The unique code by which the location is classified
-
-**`Generated`**
-
-from field: string code = 11;
-
-#### Defined in
-
-src/locations.scailo_pb.ts:232
-
-___
 
 ### email
 
 • **email**: `string` = `""`
 
+// The unique code by which the location is classified
+string code = 11 [(buf.validate.field).string = {
+  // pattern:   "^[^[0-9]A-Za-z]+( [^[0-9]A-Za-z]+)*$",
+  min_len: 1
+}];
 The primary email of the location
 
 **`Generated`**
@@ -105,7 +93,7 @@ from field: string email = 12;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:239
+src/locations.scailo_pb.ts:253
 
 ___
 
@@ -121,7 +109,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:253
+src/locations.scailo_pb.ts:267
 
 ___
 
@@ -137,7 +125,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:211
+src/locations.scailo_pb.ts:227
 
 ___
 
@@ -153,7 +141,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:225
+src/locations.scailo_pb.ts:241
 
 ___
 
@@ -169,7 +157,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:218
+src/locations.scailo_pb.ts:234
 
 ___
 
@@ -185,7 +173,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:246
+src/locations.scailo_pb.ts:260
 
 ___
 
@@ -201,7 +189,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/locations.scailo_pb.ts:204
+src/locations.scailo_pb.ts:220
 
 ___
 
@@ -211,7 +199,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:262
+src/locations.scailo_pb.ts:276
 
 ___
 
@@ -221,7 +209,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:260
+src/locations.scailo_pb.ts:274
 
 ___
 
@@ -231,7 +219,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:261
+src/locations.scailo_pb.ts:275
 
 ## Methods
 
@@ -519,7 +507,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:285
+src/locations.scailo_pb.ts:298
 
 ___
 
@@ -540,7 +528,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:273
+src/locations.scailo_pb.ts:286
 
 ___
 
@@ -561,7 +549,7 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:277
+src/locations.scailo_pb.ts:290
 
 ___
 
@@ -582,4 +570,4 @@ ___
 
 #### Defined in
 
-src/locations.scailo_pb.ts:281
+src/locations.scailo_pb.ts:294
