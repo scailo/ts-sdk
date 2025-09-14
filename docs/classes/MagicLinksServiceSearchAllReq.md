@@ -73,7 +73,7 @@ Message\&lt;MagicLinksServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1297
+src/magic_links.scailo_pb.ts:1305
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1253
+src/magic_links.scailo_pb.ts:1261
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1281
+src/magic_links.scailo_pb.ts:1289
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1246
+src/magic_links.scailo_pb.ts:1254
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1260
+src/magic_links.scailo_pb.ts:1268
 
 ___
 
@@ -153,7 +153,7 @@ from field: Scailo.MAGIC_LINK_RESOURCE_TYPE resource_type = 21;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1295
+src/magic_links.scailo_pb.ts:1303
 
 ___
 
@@ -169,7 +169,7 @@ from field: string search_key = 10;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1288
+src/magic_links.scailo_pb.ts:1296
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.MAGIC_LINK_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1274
+src/magic_links.scailo_pb.ts:1282
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1267
+src/magic_links.scailo_pb.ts:1275
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1304
+src/magic_links.scailo_pb.ts:1312
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1302
+src/magic_links.scailo_pb.ts:1310
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1303
+src/magic_links.scailo_pb.ts:1311
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1327
+src/magic_links.scailo_pb.ts:1335
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1315
+src/magic_links.scailo_pb.ts:1323
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1319
+src/magic_links.scailo_pb.ts:1327
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1323
+src/magic_links.scailo_pb.ts:1331

@@ -319,7 +319,13 @@ export declare enum MAGIC_LINK_RESOURCE_TYPE {
      *
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500;
      */
-    MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500
+    MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500,
+    /**
+     * Denotes that the magic link was created for accepting a user's signature
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600
 }
 /**
  *

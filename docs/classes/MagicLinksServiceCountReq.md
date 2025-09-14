@@ -75,7 +75,7 @@ Message\&lt;MagicLinksServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1197
+src/magic_links.scailo_pb.ts:1205
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1146
+src/magic_links.scailo_pb.ts:1154
 
 ___
 
@@ -107,7 +107,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1139
+src/magic_links.scailo_pb.ts:1147
 
 ___
 
@@ -123,7 +123,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1167
+src/magic_links.scailo_pb.ts:1175
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 expires_at_end = 31;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1195
+src/magic_links.scailo_pb.ts:1203
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 expires_at_start = 30;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1188
+src/magic_links.scailo_pb.ts:1196
 
 ___
 
@@ -171,7 +171,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1132
+src/magic_links.scailo_pb.ts:1140
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1160
+src/magic_links.scailo_pb.ts:1168
 
 ___
 
@@ -203,7 +203,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1153
+src/magic_links.scailo_pb.ts:1161
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.MAGIC_LINK_RESOURCE_TYPE resource_type = 21;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1174
+src/magic_links.scailo_pb.ts:1182
 
 ___
 
@@ -235,7 +235,7 @@ from field: string resource_uuid = 22;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1181
+src/magic_links.scailo_pb.ts:1189
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1204
+src/magic_links.scailo_pb.ts:1212
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1202
+src/magic_links.scailo_pb.ts:1210
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1203
+src/magic_links.scailo_pb.ts:1211
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1229
+src/magic_links.scailo_pb.ts:1237
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1217
+src/magic_links.scailo_pb.ts:1225
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1221
+src/magic_links.scailo_pb.ts:1229
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1225
+src/magic_links.scailo_pb.ts:1233

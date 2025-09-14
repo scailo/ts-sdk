@@ -377,6 +377,13 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500;
    */
   MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500,
+
+  /**
+   * Denotes that the magic link was created for accepting a user's signature
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600,
 }
 // Retrieve enum metadata with: proto3.getEnumType(MAGIC_LINK_RESOURCE_TYPE)
 proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TYPE", [
@@ -432,6 +439,7 @@ proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TY
   { no: 1220, name: "MAGIC_LINK_RESOURCE_TYPE_ON_DUTY" },
   { no: 1230, name: "MAGIC_LINK_RESOURCE_TYPE_VISITATION" },
   { no: 1500, name: "MAGIC_LINK_RESOURCE_TYPE_EXPENSE" },
+  { no: 1600, name: "MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE" },
 ]);
 
 /**

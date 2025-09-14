@@ -69,7 +69,7 @@ Message\&lt;MagicLinksServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:869
+src/magic_links.scailo_pb.ts:877
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string description = 35;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:867
+src/magic_links.scailo_pb.ts:875
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 expires_at = 30;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:860
+src/magic_links.scailo_pb.ts:868
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:853
+src/magic_links.scailo_pb.ts:861
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:846
+src/magic_links.scailo_pb.ts:854
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:876
+src/magic_links.scailo_pb.ts:884
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:874
+src/magic_links.scailo_pb.ts:882
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:875
+src/magic_links.scailo_pb.ts:883
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:895
+src/magic_links.scailo_pb.ts:903
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:883
+src/magic_links.scailo_pb.ts:891
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:887
+src/magic_links.scailo_pb.ts:895
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:891
+src/magic_links.scailo_pb.ts:899

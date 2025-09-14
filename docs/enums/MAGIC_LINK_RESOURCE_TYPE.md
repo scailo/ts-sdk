@@ -60,6 +60,7 @@ from enum Scailo.MAGIC_LINK_RESOURCE_TYPE
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_STOCK\_ISSUANCE](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_stock_issuance)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_STOCK\_RETURN](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_stock_return)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_SUPPLY\_OFFER](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_supply_offer)
+- [MAGIC\_LINK\_RESOURCE\_TYPE\_USER\_SIGNATURE](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_user_signature)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_VENDOR](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_vendor)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_VENDOR\_INVOICE](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_vendor_invoice)
 - [MAGIC\_LINK\_RESOURCE\_TYPE\_VISITATION](MAGIC_LINK_RESOURCE_TYPE.md#magic_link_resource_type_visitation)
@@ -832,6 +833,22 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SUPPLY_OFFER = 160;
 #### Defined in
 
 src/magic_links.scailo_pb.ts:99
+
+___
+
+### MAGIC\_LINK\_RESOURCE\_TYPE\_USER\_SIGNATURE
+
+• **MAGIC\_LINK\_RESOURCE\_TYPE\_USER\_SIGNATURE** = ``1600``
+
+Denotes that the magic link was created for accepting a user's signature
+
+**`Generated`**
+
+from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600;
+
+#### Defined in
+
+src/magic_links.scailo_pb.ts:386
 
 ___
 
