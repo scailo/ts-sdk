@@ -75,7 +75,7 @@ Message\&lt;LogbookLogNoteLC\&gt;.constructor
 
 #### Defined in
 
-src/notes.scailo_pb.ts:181
+[src/notes.scailo_pb.ts:181](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L181)
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: string app_comment = 15;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:172
+[src/notes.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L172)
 
 ___
 
@@ -107,7 +107,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:116
+[src/notes.scailo_pb.ts:116](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L116)
 
 ___
 
@@ -123,7 +123,7 @@ from field: bool is_active = 2;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:123
+[src/notes.scailo_pb.ts:123](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L123)
 
 ___
 
@@ -139,7 +139,7 @@ from field: string name = 13;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:158
+[src/notes.scailo_pb.ts:158](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L158)
 
 ___
 
@@ -155,7 +155,7 @@ from field: Scailo.NOTE_LIFECYCLE operation = 11;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:144
+[src/notes.scailo_pb.ts:144](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L144)
 
 ___
 
@@ -171,7 +171,7 @@ from field: string ref_uuid = 10;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:137
+[src/notes.scailo_pb.ts:137](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L137)
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 timestamp = 3;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:130
+[src/notes.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L130)
 
 ___
 
@@ -203,7 +203,7 @@ from field: string user_comment = 16;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:179
+[src/notes.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L179)
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 user_id = 14;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:165
+[src/notes.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L165)
 
 ___
 
@@ -235,7 +235,7 @@ from field: string username = 12;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:151
+[src/notes.scailo_pb.ts:151](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L151)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:188
+[src/notes.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L188)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:186
+[src/notes.scailo_pb.ts:186](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L186)
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:187
+[src/notes.scailo_pb.ts:187](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L187)
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:213
+[src/notes.scailo_pb.ts:213](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L213)
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:201
+[src/notes.scailo_pb.ts:201](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L201)
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:205
+[src/notes.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L205)
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:209
+[src/notes.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L209)

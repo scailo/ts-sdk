@@ -36,7 +36,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:755
+[src/workflows_rules.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L755)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:748
+[src/workflows_rules.scailo_pb.ts:748](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L748)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:762
+[src/workflows_rules.scailo_pb.ts:762](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L762)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:769
+[src/workflows_rules.scailo_pb.ts:769](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L769)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:734
+[src/workflows_rules.scailo_pb.ts:734](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L734)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:727
+[src/workflows_rules.scailo_pb.ts:727](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L727)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:741
+[src/workflows_rules.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L741)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: WORKFLOW_RULE_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:776
+[src/workflows_rules.scailo_pb.ts:776](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L776)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: WORKFLOW_RULE_SORT_KEY_SERVICE_NAME = 11;
 
 #### Defined in
 
-src/workflows_rules.scailo_pb.ts:783
+[src/workflows_rules.scailo_pb.ts:783](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/workflows_rules.scailo_pb.ts#L783)

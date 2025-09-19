@@ -66,7 +66,7 @@ Message\&lt;QuotationsRequestsList\&gt;.constructor
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1138
+[src/quotations_requests.scailo_pb.ts:1138](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1138)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.QuotationRequest list = 1;
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1136
+[src/quotations_requests.scailo_pb.ts:1136](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1136)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1145
+[src/quotations_requests.scailo_pb.ts:1145](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1145)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1143
+[src/quotations_requests.scailo_pb.ts:1143](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1143)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1144
+[src/quotations_requests.scailo_pb.ts:1144](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1144)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1161
+[src/quotations_requests.scailo_pb.ts:1161](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1161)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1149
+[src/quotations_requests.scailo_pb.ts:1149](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1149)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1153
+[src/quotations_requests.scailo_pb.ts:1153](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1153)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/quotations_requests.scailo_pb.ts:1157
+[src/quotations_requests.scailo_pb.ts:1157](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/quotations_requests.scailo_pb.ts#L1157)

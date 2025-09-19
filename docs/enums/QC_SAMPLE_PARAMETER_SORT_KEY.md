@@ -35,7 +35,7 @@ from enum value: QC_SAMPLE_PARAMETER_SORT_KEY_CHECKED_AT = 11;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:203
+[src/qc_samples.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_samples.scailo_pb.ts#L203)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: QC_SAMPLE_PARAMETER_SORT_KEY_CHECKED_BY = 10;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:196
+[src/qc_samples.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_samples.scailo_pb.ts#L196)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: QC_SAMPLE_PARAMETER_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:182
+[src/qc_samples.scailo_pb.ts:182](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_samples.scailo_pb.ts#L182)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: QC_SAMPLE_PARAMETER_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:175
+[src/qc_samples.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_samples.scailo_pb.ts#L175)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: QC_SAMPLE_PARAMETER_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:189
+[src/qc_samples.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_samples.scailo_pb.ts#L189)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: QC_SAMPLE_PARAMETER_SORT_KEY_QC_PARAM_ID = 13;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:217
+[src/qc_samples.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_samples.scailo_pb.ts#L217)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: QC_SAMPLE_PARAMETER_SORT_KEY_QC_SAMPLE_ID = 12;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:210
+[src/qc_samples.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_samples.scailo_pb.ts#L210)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: QC_SAMPLE_PARAMETER_SORT_KEY_UOM_ID = 14;
 
 #### Defined in
 
-src/qc_samples.scailo_pb.ts:224
+[src/qc_samples.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_samples.scailo_pb.ts#L224)

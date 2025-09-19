@@ -73,7 +73,7 @@ Message\&lt;CurrenciesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:948
+[src/currencies.scailo_pb.ts:948](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L948)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:904
+[src/currencies.scailo_pb.ts:904](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L904)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:932
+[src/currencies.scailo_pb.ts:932](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L932)
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:897
+[src/currencies.scailo_pb.ts:897](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L897)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:911
+[src/currencies.scailo_pb.ts:911](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L911)
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:946
+[src/currencies.scailo_pb.ts:946](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L946)
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.CURRENCY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:925
+[src/currencies.scailo_pb.ts:925](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L925)
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:918
+[src/currencies.scailo_pb.ts:918](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L918)
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:939
+[src/currencies.scailo_pb.ts:939](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L939)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:955
+[src/currencies.scailo_pb.ts:955](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L955)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:953
+[src/currencies.scailo_pb.ts:953](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L953)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:954
+[src/currencies.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L954)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:978
+[src/currencies.scailo_pb.ts:978](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L978)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:966
+[src/currencies.scailo_pb.ts:966](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L966)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:970
+[src/currencies.scailo_pb.ts:970](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L970)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:974
+[src/currencies.scailo_pb.ts:974](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L974)

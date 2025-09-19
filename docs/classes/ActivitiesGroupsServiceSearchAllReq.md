@@ -74,7 +74,7 @@ Message\&lt;ActivitiesGroupsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1029
+[src/activities_groups.scailo_pb.ts:1029](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1029)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:978
+[src/activities_groups.scailo_pb.ts:978](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L978)
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1006
+[src/activities_groups.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1006)
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:971
+[src/activities_groups.scailo_pb.ts:971](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L971)
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:985
+[src/activities_groups.scailo_pb.ts:985](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L985)
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 parent_activity_group_id = 22;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1027
+[src/activities_groups.scailo_pb.ts:1027](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1027)
 
 ___
 
@@ -170,7 +170,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1020
+[src/activities_groups.scailo_pb.ts:1020](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1020)
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.ACTIVITY_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:999
+[src/activities_groups.scailo_pb.ts:999](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L999)
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:992
+[src/activities_groups.scailo_pb.ts:992](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L992)
 
 ___
 
@@ -218,7 +218,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1013
+[src/activities_groups.scailo_pb.ts:1013](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1013)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1036
+[src/activities_groups.scailo_pb.ts:1036](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1036)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1034
+[src/activities_groups.scailo_pb.ts:1034](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1034)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1035
+[src/activities_groups.scailo_pb.ts:1035](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1035)
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1060
+[src/activities_groups.scailo_pb.ts:1060](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1060)
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1048
+[src/activities_groups.scailo_pb.ts:1048](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1048)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1052
+[src/activities_groups.scailo_pb.ts:1052](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1052)
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/activities_groups.scailo_pb.ts:1056
+[src/activities_groups.scailo_pb.ts:1056](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_groups.scailo_pb.ts#L1056)

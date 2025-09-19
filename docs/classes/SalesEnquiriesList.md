@@ -66,7 +66,7 @@ Message\&lt;SalesEnquiriesList\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1224
+[src/sales_enquiries.scailo_pb.ts:1224](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1224)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesEnquiry list = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1222
+[src/sales_enquiries.scailo_pb.ts:1222](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1222)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1231
+[src/sales_enquiries.scailo_pb.ts:1231](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1231)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1229
+[src/sales_enquiries.scailo_pb.ts:1229](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1229)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1230
+[src/sales_enquiries.scailo_pb.ts:1230](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1230)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1247
+[src/sales_enquiries.scailo_pb.ts:1247](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1247)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1235
+[src/sales_enquiries.scailo_pb.ts:1235](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1235)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1239
+[src/sales_enquiries.scailo_pb.ts:1239](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1239)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1243
+[src/sales_enquiries.scailo_pb.ts:1243](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1243)

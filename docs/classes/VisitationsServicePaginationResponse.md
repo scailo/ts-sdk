@@ -69,7 +69,7 @@ Message\&lt;VisitationsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:835
+[src/visitations.scailo_pb.ts:835](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L835)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:812
+[src/visitations.scailo_pb.ts:812](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L812)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:819
+[src/visitations.scailo_pb.ts:819](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L819)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Visitation payload = 4;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:833
+[src/visitations.scailo_pb.ts:833](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L833)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:826
+[src/visitations.scailo_pb.ts:826](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L826)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:842
+[src/visitations.scailo_pb.ts:842](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L842)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:840
+[src/visitations.scailo_pb.ts:840](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L840)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:841
+[src/visitations.scailo_pb.ts:841](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L841)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:861
+[src/visitations.scailo_pb.ts:861](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L861)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:849
+[src/visitations.scailo_pb.ts:849](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L849)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:853
+[src/visitations.scailo_pb.ts:853](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L853)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:857
+[src/visitations.scailo_pb.ts:857](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L857)

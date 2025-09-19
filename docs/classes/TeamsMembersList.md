@@ -66,7 +66,7 @@ Message\&lt;TeamsMembersList\&gt;.constructor
 
 #### Defined in
 
-src/teams.scailo_pb.ts:783
+[src/teams.scailo_pb.ts:783](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L783)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.TeamMember list = 1;
 
 #### Defined in
 
-src/teams.scailo_pb.ts:781
+[src/teams.scailo_pb.ts:781](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L781)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/teams.scailo_pb.ts:790
+[src/teams.scailo_pb.ts:790](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L790)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/teams.scailo_pb.ts:788
+[src/teams.scailo_pb.ts:788](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L788)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/teams.scailo_pb.ts:789
+[src/teams.scailo_pb.ts:789](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L789)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/teams.scailo_pb.ts:806
+[src/teams.scailo_pb.ts:806](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L806)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/teams.scailo_pb.ts:794
+[src/teams.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L794)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/teams.scailo_pb.ts:798
+[src/teams.scailo_pb.ts:798](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L798)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/teams.scailo_pb.ts:802
+[src/teams.scailo_pb.ts:802](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/teams.scailo_pb.ts#L802)

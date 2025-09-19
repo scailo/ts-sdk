@@ -73,7 +73,7 @@ Message\&lt;GoodsReceiptsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:467
+[src/goods_receipts.scailo_pb.ts:467](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L467)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:465
+[src/goods_receipts.scailo_pb.ts:465](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L465)
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:423
+[src/goods_receipts.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L423)
 
 ___
 
@@ -121,7 +121,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:430
+[src/goods_receipts.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L430)
 
 ___
 
@@ -137,7 +137,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:444
+[src/goods_receipts.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L444)
 
 ___
 
@@ -153,7 +153,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:416
+[src/goods_receipts.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L416)
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:437
+[src/goods_receipts.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L437)
 
 ___
 
@@ -185,7 +185,7 @@ from field: string vendor_bill_date = 15;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:458
+[src/goods_receipts.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L458)
 
 ___
 
@@ -201,7 +201,7 @@ from field: string vendor_bill_no = 14;
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:451
+[src/goods_receipts.scailo_pb.ts:451](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L451)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:474
+[src/goods_receipts.scailo_pb.ts:474](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L474)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:472
+[src/goods_receipts.scailo_pb.ts:472](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L472)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:473
+[src/goods_receipts.scailo_pb.ts:473](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L473)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:497
+[src/goods_receipts.scailo_pb.ts:497](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L497)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:485
+[src/goods_receipts.scailo_pb.ts:485](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L485)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:489
+[src/goods_receipts.scailo_pb.ts:489](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L489)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/goods_receipts.scailo_pb.ts:493
+[src/goods_receipts.scailo_pb.ts:493](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_receipts.scailo_pb.ts#L493)

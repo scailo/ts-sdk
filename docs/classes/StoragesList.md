@@ -66,7 +66,7 @@ Message\&lt;StoragesList\&gt;.constructor
 
 #### Defined in
 
-src/storages.scailo_pb.ts:393
+[src/storages.scailo_pb.ts:393](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L393)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Storage list = 1;
 
 #### Defined in
 
-src/storages.scailo_pb.ts:391
+[src/storages.scailo_pb.ts:391](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L391)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:400
+[src/storages.scailo_pb.ts:400](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L400)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:398
+[src/storages.scailo_pb.ts:398](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L398)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:399
+[src/storages.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L399)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:416
+[src/storages.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L416)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:404
+[src/storages.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L404)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:408
+[src/storages.scailo_pb.ts:408](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L408)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:412
+[src/storages.scailo_pb.ts:412](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L412)

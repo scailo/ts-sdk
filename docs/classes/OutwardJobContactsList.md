@@ -66,7 +66,7 @@ Message\&lt;OutwardJobContactsList\&gt;.constructor
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3328
+[src/outward_jobs.scailo_pb.ts:3328](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3328)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.OutwardJobContact list = 1;
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3326
+[src/outward_jobs.scailo_pb.ts:3326](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3326)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3335
+[src/outward_jobs.scailo_pb.ts:3335](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3335)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3333
+[src/outward_jobs.scailo_pb.ts:3333](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3333)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3334
+[src/outward_jobs.scailo_pb.ts:3334](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3334)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3351
+[src/outward_jobs.scailo_pb.ts:3351](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3351)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3339
+[src/outward_jobs.scailo_pb.ts:3339](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3339)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3343
+[src/outward_jobs.scailo_pb.ts:3343](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3343)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/outward_jobs.scailo_pb.ts:3347
+[src/outward_jobs.scailo_pb.ts:3347](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs.scailo_pb.ts#L3347)

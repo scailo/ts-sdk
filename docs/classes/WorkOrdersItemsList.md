@@ -66,7 +66,7 @@ Message\&lt;WorkOrdersItemsList\&gt;.constructor
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:999
+[src/work_orders.scailo_pb.ts:999](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L999)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.WorkOrderItem list = 1;
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:997
+[src/work_orders.scailo_pb.ts:997](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L997)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1006
+[src/work_orders.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L1006)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1004
+[src/work_orders.scailo_pb.ts:1004](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L1004)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1005
+[src/work_orders.scailo_pb.ts:1005](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L1005)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1022
+[src/work_orders.scailo_pb.ts:1022](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L1022)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1010
+[src/work_orders.scailo_pb.ts:1010](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L1010)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1014
+[src/work_orders.scailo_pb.ts:1014](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L1014)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/work_orders.scailo_pb.ts:1018
+[src/work_orders.scailo_pb.ts:1018](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/work_orders.scailo_pb.ts#L1018)

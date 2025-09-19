@@ -84,7 +84,7 @@ Message\&lt;SalesOrderItem\&gt;.constructor
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1444
+[src/sales_orders.scailo_pb.ts:1444](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1444)
 
 ## Properties
 
@@ -100,7 +100,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1330
+[src/sales_orders.scailo_pb.ts:1330](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1330)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 bundled_with_id = 11;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1358
+[src/sales_orders.scailo_pb.ts:1358](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1358)
 
 ___
 
@@ -132,7 +132,7 @@ from field: string client_family_code = 16;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1393
+[src/sales_orders.scailo_pb.ts:1393](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1393)
 
 ___
 
@@ -148,7 +148,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1386
+[src/sales_orders.scailo_pb.ts:1386](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1386)
 
 ___
 
@@ -164,7 +164,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1379
+[src/sales_orders.scailo_pb.ts:1379](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1379)
 
 ___
 
@@ -180,7 +180,7 @@ from field: string delivery_date = 20;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1421
+[src/sales_orders.scailo_pb.ts:1421](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1421)
 
 ___
 
@@ -196,7 +196,7 @@ from field: uint64 discount = 19;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1414
+[src/sales_orders.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1414)
 
 ___
 
@@ -212,7 +212,7 @@ from field: uint64 discounted_unit_price = 30;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1442
+[src/sales_orders.scailo_pb.ts:1442](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1442)
 
 ___
 
@@ -228,7 +228,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1316
+[src/sales_orders.scailo_pb.ts:1316](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1316)
 
 ___
 
@@ -244,7 +244,7 @@ from field: uint64 family_id = 12;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1365
+[src/sales_orders.scailo_pb.ts:1365](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1365)
 
 ___
 
@@ -260,7 +260,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1372
+[src/sales_orders.scailo_pb.ts:1372](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1372)
 
 ___
 
@@ -276,7 +276,7 @@ from field: bool is_invoiceable = 22;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1435
+[src/sales_orders.scailo_pb.ts:1435](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1435)
 
 ___
 
@@ -292,7 +292,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1323
+[src/sales_orders.scailo_pb.ts:1323](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1323)
 
 ___
 
@@ -308,7 +308,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1337
+[src/sales_orders.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1337)
 
 ___
 
@@ -324,7 +324,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1351
+[src/sales_orders.scailo_pb.ts:1351](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1351)
 
 ___
 
@@ -340,7 +340,7 @@ from field: string specifications = 21;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1428
+[src/sales_orders.scailo_pb.ts:1428](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1428)
 
 ___
 
@@ -356,7 +356,7 @@ from field: uint64 tax_group_id = 18;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1407
+[src/sales_orders.scailo_pb.ts:1407](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1407)
 
 ___
 
@@ -372,7 +372,7 @@ from field: uint64 unit_price = 17;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1400
+[src/sales_orders.scailo_pb.ts:1400](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1400)
 
 ___
 
@@ -388,7 +388,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1344
+[src/sales_orders.scailo_pb.ts:1344](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1344)
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1451
+[src/sales_orders.scailo_pb.ts:1451](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1451)
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1449
+[src/sales_orders.scailo_pb.ts:1449](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1449)
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1450
+[src/sales_orders.scailo_pb.ts:1450](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1450)
 
 ## Methods
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1485
+[src/sales_orders.scailo_pb.ts:1485](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1485)
 
 ___
 
@@ -727,7 +727,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1473
+[src/sales_orders.scailo_pb.ts:1473](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1473)
 
 ___
 
@@ -748,7 +748,7 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1477
+[src/sales_orders.scailo_pb.ts:1477](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1477)
 
 ___
 
@@ -769,4 +769,4 @@ ___
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:1481
+[src/sales_orders.scailo_pb.ts:1481](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L1481)

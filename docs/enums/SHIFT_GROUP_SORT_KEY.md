@@ -36,7 +36,7 @@ from enum value: SHIFT_GROUP_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:56
+[src/shifts_groups.scailo_pb.ts:56](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L56)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: SHIFT_GROUP_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:49
+[src/shifts_groups.scailo_pb.ts:49](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L49)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: SHIFT_GROUP_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:63
+[src/shifts_groups.scailo_pb.ts:63](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L63)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: SHIFT_GROUP_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:84
+[src/shifts_groups.scailo_pb.ts:84](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L84)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: SHIFT_GROUP_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:70
+[src/shifts_groups.scailo_pb.ts:70](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L70)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: SHIFT_GROUP_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:35
+[src/shifts_groups.scailo_pb.ts:35](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L35)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: SHIFT_GROUP_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:28
+[src/shifts_groups.scailo_pb.ts:28](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L28)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: SHIFT_GROUP_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:42
+[src/shifts_groups.scailo_pb.ts:42](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L42)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: SHIFT_GROUP_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:77
+[src/shifts_groups.scailo_pb.ts:77](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L77)

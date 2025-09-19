@@ -66,7 +66,7 @@ Message\&lt;ProjectsList\&gt;.constructor
 
 #### Defined in
 
-src/projects.scailo_pb.ts:426
+[src/projects.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L426)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Project list = 1;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:424
+[src/projects.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L424)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:433
+[src/projects.scailo_pb.ts:433](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L433)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:431
+[src/projects.scailo_pb.ts:431](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L431)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:432
+[src/projects.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L432)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:449
+[src/projects.scailo_pb.ts:449](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L449)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:437
+[src/projects.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L437)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:441
+[src/projects.scailo_pb.ts:441](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L441)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:445
+[src/projects.scailo_pb.ts:445](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L445)

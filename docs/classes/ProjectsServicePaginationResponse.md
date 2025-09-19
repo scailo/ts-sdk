@@ -69,7 +69,7 @@ Message\&lt;ProjectsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/projects.scailo_pb.ts:629
+[src/projects.scailo_pb.ts:629](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L629)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:606
+[src/projects.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L606)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:613
+[src/projects.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L613)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Project payload = 4;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:627
+[src/projects.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L627)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:620
+[src/projects.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L620)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:636
+[src/projects.scailo_pb.ts:636](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L636)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:634
+[src/projects.scailo_pb.ts:634](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L634)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:635
+[src/projects.scailo_pb.ts:635](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L635)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:655
+[src/projects.scailo_pb.ts:655](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L655)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:643
+[src/projects.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L643)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:647
+[src/projects.scailo_pb.ts:647](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L647)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:651
+[src/projects.scailo_pb.ts:651](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L651)

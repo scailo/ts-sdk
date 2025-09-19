@@ -45,7 +45,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:82
+[src/inventory.scailo_pb.ts:82](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L82)
 
 ___
 
@@ -61,7 +61,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_FAMILY_EQUATION = 80;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:138
+[src/inventory.scailo_pb.ts:138](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L138)
 
 ___
 
@@ -77,7 +77,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_GOODS_DISPATCH = 60;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:124
+[src/inventory.scailo_pb.ts:124](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L124)
 
 ___
 
@@ -93,7 +93,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_MIN_STOCK = 50;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:117
+[src/inventory.scailo_pb.ts:117](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L117)
 
 ___
 
@@ -109,7 +109,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_NET_INDENTED = 100;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:152
+[src/inventory.scailo_pb.ts:152](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L152)
 
 ___
 
@@ -125,7 +125,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_NET_ORDERED = 110;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:159
+[src/inventory.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L159)
 
 ___
 
@@ -141,7 +141,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_PRODUCTION_PLAN = 30;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:103
+[src/inventory.scailo_pb.ts:103](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L103)
 
 ___
 
@@ -157,7 +157,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_QC = 120;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:166
+[src/inventory.scailo_pb.ts:166](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L166)
 
 ___
 
@@ -173,7 +173,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_REJECTED = 130;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:173
+[src/inventory.scailo_pb.ts:173](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L173)
 
 ___
 
@@ -189,7 +189,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_RETURNABLE = 140;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:180
+[src/inventory.scailo_pb.ts:180](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L180)
 
 ___
 
@@ -205,7 +205,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_REWORK = 150;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:187
+[src/inventory.scailo_pb.ts:187](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L187)
 
 ___
 
@@ -221,7 +221,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_SALES_ORDER = 10;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:89
+[src/inventory.scailo_pb.ts:89](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L89)
 
 ___
 
@@ -237,7 +237,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_SALES_RETURN = 20;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:96
+[src/inventory.scailo_pb.ts:96](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L96)
 
 ___
 
@@ -253,7 +253,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_SCRAP = 160;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:194
+[src/inventory.scailo_pb.ts:194](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L194)
 
 ___
 
@@ -269,7 +269,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_STOCK_ISSUANCE = 70;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:131
+[src/inventory.scailo_pb.ts:131](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L131)
 
 ___
 
@@ -285,7 +285,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_STORE = 170;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:201
+[src/inventory.scailo_pb.ts:201](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L201)
 
 ___
 
@@ -301,7 +301,7 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_WORK_IN_PROGRESS = 90;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:145
+[src/inventory.scailo_pb.ts:145](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L145)
 
 ___
 
@@ -317,4 +317,4 @@ from enum value: INVENTORY_NODE_ORIGIN_TYPE_WORK_ORDER_EQUATION = 40;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:110
+[src/inventory.scailo_pb.ts:110](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L110)

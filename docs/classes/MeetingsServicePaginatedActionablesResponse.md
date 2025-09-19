@@ -69,7 +69,7 @@ Message\&lt;MeetingsServicePaginatedActionablesResponse\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1874
+[src/meetings.scailo_pb.ts:1874](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1874)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1851
+[src/meetings.scailo_pb.ts:1851](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1851)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1858
+[src/meetings.scailo_pb.ts:1858](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1858)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.MeetingActionable payload = 4;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1872
+[src/meetings.scailo_pb.ts:1872](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1872)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1865
+[src/meetings.scailo_pb.ts:1865](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1865)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1881
+[src/meetings.scailo_pb.ts:1881](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1881)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1879
+[src/meetings.scailo_pb.ts:1879](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1879)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1880
+[src/meetings.scailo_pb.ts:1880](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1880)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1900
+[src/meetings.scailo_pb.ts:1900](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1900)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1888
+[src/meetings.scailo_pb.ts:1888](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1888)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1892
+[src/meetings.scailo_pb.ts:1892](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1892)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:1896
+[src/meetings.scailo_pb.ts:1896](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L1896)

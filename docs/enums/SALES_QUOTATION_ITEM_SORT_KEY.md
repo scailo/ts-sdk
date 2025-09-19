@@ -42,7 +42,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:246
+[src/sales_quotations.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L246)
 
 ___
 
@@ -58,7 +58,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:239
+[src/sales_quotations.scailo_pb.ts:239](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L239)
 
 ___
 
@@ -74,7 +74,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:253
+[src/sales_quotations.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L253)
 
 ___
 
@@ -90,7 +90,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:288
+[src/sales_quotations.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L288)
 
 ___
 
@@ -106,7 +106,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:281
+[src/sales_quotations.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L281)
 
 ___
 
@@ -122,7 +122,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:274
+[src/sales_quotations.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L274)
 
 ___
 
@@ -138,7 +138,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:225
+[src/sales_quotations.scailo_pb.ts:225](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L225)
 
 ___
 
@@ -154,7 +154,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_DELIVERY_DATE = 18;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:316
+[src/sales_quotations.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L316)
 
 ___
 
@@ -170,7 +170,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_DISCOUNT = 17;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:309
+[src/sales_quotations.scailo_pb.ts:309](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L309)
 
 ___
 
@@ -186,7 +186,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:260
+[src/sales_quotations.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L260)
 
 ___
 
@@ -202,7 +202,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:218
+[src/sales_quotations.scailo_pb.ts:218](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L218)
 
 ___
 
@@ -218,7 +218,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:267
+[src/sales_quotations.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L267)
 
 ___
 
@@ -234,7 +234,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:232
+[src/sales_quotations.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L232)
 
 ___
 
@@ -250,7 +250,7 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:302
+[src/sales_quotations.scailo_pb.ts:302](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L302)
 
 ___
 
@@ -266,4 +266,4 @@ from enum value: SALES_QUOTATION_ITEM_SORT_KEY_UNIT_PRICE = 15;
 
 #### Defined in
 
-src/sales_quotations.scailo_pb.ts:295
+[src/sales_quotations.scailo_pb.ts:295](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_quotations.scailo_pb.ts#L295)

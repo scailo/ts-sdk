@@ -73,7 +73,7 @@ Message\&lt;ProjectsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/projects.scailo_pb.ts:247
+[src/projects.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L247)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: uint64 client_id = 12;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:231
+[src/projects.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L231)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:238
+[src/projects.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L238)
 
 ___
 
@@ -121,7 +121,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:245
+[src/projects.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L245)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:203
+[src/projects.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L203)
 
 ___
 
@@ -153,7 +153,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:210
+[src/projects.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L210)
 
 ___
 
@@ -169,7 +169,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:224
+[src/projects.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L224)
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:196
+[src/projects.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L196)
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:217
+[src/projects.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L217)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:254
+[src/projects.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L254)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:252
+[src/projects.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L252)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:253
+[src/projects.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L253)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:277
+[src/projects.scailo_pb.ts:277](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L277)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:265
+[src/projects.scailo_pb.ts:265](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L265)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:269
+[src/projects.scailo_pb.ts:269](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L269)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:273
+[src/projects.scailo_pb.ts:273](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L273)

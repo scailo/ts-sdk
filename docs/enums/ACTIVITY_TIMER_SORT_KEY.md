@@ -36,7 +36,7 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_ACTIVITY_ACTION_ID = 11;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:219
+[src/activities.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L219)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_ACTIVITY_ID = 10;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:212
+[src/activities.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L212)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_COMPLETION_PERCENTAGE = 15;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:247
+[src/activities.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L247)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:198
+[src/activities.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L198)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_EMPLOYEE_ID = 12;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:226
+[src/activities.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L226)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_END_AT = 14;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:240
+[src/activities.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L240)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:191
+[src/activities.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L191)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:205
+[src/activities.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L205)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: ACTIVITY_TIMER_SORT_KEY_START_AT = 13;
 
 #### Defined in
 
-src/activities.scailo_pb.ts:233
+[src/activities.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities.scailo_pb.ts#L233)

@@ -35,7 +35,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:205
+[src/purchases_orders.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L205)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_REF_FROM_OUTWARD_JOB = 2;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:219
+[src/purchases_orders.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L219)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_REF_FROM_PURCHASE_INDENT = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:212
+[src/purchases_orders.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L212)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_REF_FROM_PURCHASE_ORDER = 6;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:247
+[src/purchases_orders.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L247)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_REF_FROM_QUOTATION_RESPONSE = 3;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:226
+[src/purchases_orders.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L226)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_REF_FROM_SALES_INVOICE = 7;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:254
+[src/purchases_orders.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L254)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_REF_FROM_SALES_ORDER = 4;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:233
+[src/purchases_orders.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L233)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: PURCHASE_ORDER_REFERENCE_REF_FROM_WORK_ORDER = 5;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:240
+[src/purchases_orders.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L240)

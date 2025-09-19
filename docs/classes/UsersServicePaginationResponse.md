@@ -69,7 +69,7 @@ Message\&lt;UsersServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/users.scailo_pb.ts:1248
+[src/users.scailo_pb.ts:1248](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1248)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1225
+[src/users.scailo_pb.ts:1225](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1225)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1232
+[src/users.scailo_pb.ts:1232](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1232)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.User payload = 4;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1246
+[src/users.scailo_pb.ts:1246](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1246)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1239
+[src/users.scailo_pb.ts:1239](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1239)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1255
+[src/users.scailo_pb.ts:1255](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1255)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1253
+[src/users.scailo_pb.ts:1253](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1253)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1254
+[src/users.scailo_pb.ts:1254](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1254)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1274
+[src/users.scailo_pb.ts:1274](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1274)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1262
+[src/users.scailo_pb.ts:1262](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1262)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1266
+[src/users.scailo_pb.ts:1266](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1266)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1270
+[src/users.scailo_pb.ts:1270](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1270)

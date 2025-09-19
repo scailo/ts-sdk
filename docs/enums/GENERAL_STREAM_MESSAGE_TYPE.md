@@ -30,7 +30,7 @@ from enum value: GENERAL_STREAM_MESSAGE_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/general_streams.scailo_pb.ts:116
+[src/general_streams.scailo_pb.ts:116](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/general_streams.scailo_pb.ts#L116)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GENERAL_STREAM_MESSAGE_TYPE_SYSTEM = 2;
 
 #### Defined in
 
-src/general_streams.scailo_pb.ts:130
+[src/general_streams.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/general_streams.scailo_pb.ts#L130)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GENERAL_STREAM_MESSAGE_TYPE_USER = 1;
 
 #### Defined in
 
-src/general_streams.scailo_pb.ts:123
+[src/general_streams.scailo_pb.ts:123](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/general_streams.scailo_pb.ts#L123)

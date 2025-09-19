@@ -67,7 +67,7 @@ Message\&lt;VaultFolderRenameFolderRequest\&gt;.constructor
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:148
+[src/vault_folders.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L148)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:146
+[src/vault_folders.scailo_pb.ts:146](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L146)
 
 ___
 
@@ -99,7 +99,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:139
+[src/vault_folders.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L139)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:155
+[src/vault_folders.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L155)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:153
+[src/vault_folders.scailo_pb.ts:153](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L153)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:154
+[src/vault_folders.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L154)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:172
+[src/vault_folders.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L172)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:160
+[src/vault_folders.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L160)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:164
+[src/vault_folders.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L164)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/vault_folders.scailo_pb.ts:168
+[src/vault_folders.scailo_pb.ts:168](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_folders.scailo_pb.ts#L168)

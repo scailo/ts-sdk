@@ -67,7 +67,7 @@ Message\&lt;FamiliesServiceUnitConversionPresenceRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2219
+[src/families.scailo_pb.ts:2219](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2219)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2210
+[src/families.scailo_pb.ts:2210](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2210)
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 uom_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2217
+[src/families.scailo_pb.ts:2217](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2217)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2226
+[src/families.scailo_pb.ts:2226](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2226)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2224
+[src/families.scailo_pb.ts:2224](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2224)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2225
+[src/families.scailo_pb.ts:2225](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2225)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2243
+[src/families.scailo_pb.ts:2243](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2243)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2231
+[src/families.scailo_pb.ts:2231](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2231)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2235
+[src/families.scailo_pb.ts:2235](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2235)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2239
+[src/families.scailo_pb.ts:2239](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2239)

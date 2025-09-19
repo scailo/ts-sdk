@@ -66,7 +66,7 @@ Message\&lt;UserLoginHistoryList\&gt;.constructor
 
 #### Defined in
 
-src/login.scailo_pb.ts:340
+[src/login.scailo_pb.ts:340](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L340)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.UserLoginHistory list = 1;
 
 #### Defined in
 
-src/login.scailo_pb.ts:338
+[src/login.scailo_pb.ts:338](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L338)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:347
+[src/login.scailo_pb.ts:347](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L347)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:345
+[src/login.scailo_pb.ts:345](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L345)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:346
+[src/login.scailo_pb.ts:346](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L346)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:363
+[src/login.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L363)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:351
+[src/login.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L351)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:355
+[src/login.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L355)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/login.scailo_pb.ts:359
+[src/login.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/login.scailo_pb.ts#L359)

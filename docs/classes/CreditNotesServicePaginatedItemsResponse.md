@@ -69,7 +69,7 @@ Message\&lt;CreditNotesServicePaginatedItemsResponse\&gt;.constructor
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1654
+[src/credit_notes.scailo_pb.ts:1654](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1654)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1631
+[src/credit_notes.scailo_pb.ts:1631](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1631)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1638
+[src/credit_notes.scailo_pb.ts:1638](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1638)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.CreditNoteItem payload = 4;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1652
+[src/credit_notes.scailo_pb.ts:1652](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1652)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1645
+[src/credit_notes.scailo_pb.ts:1645](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1645)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1661
+[src/credit_notes.scailo_pb.ts:1661](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1661)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1659
+[src/credit_notes.scailo_pb.ts:1659](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1659)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1660
+[src/credit_notes.scailo_pb.ts:1660](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1660)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1680
+[src/credit_notes.scailo_pb.ts:1680](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1680)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1668
+[src/credit_notes.scailo_pb.ts:1668](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1668)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1672
+[src/credit_notes.scailo_pb.ts:1672](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1672)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/credit_notes.scailo_pb.ts:1676
+[src/credit_notes.scailo_pb.ts:1676](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/credit_notes.scailo_pb.ts#L1676)

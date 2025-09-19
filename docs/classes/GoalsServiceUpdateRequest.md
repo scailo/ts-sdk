@@ -74,7 +74,7 @@ Message\&lt;GoalsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goals.scailo_pb.ts:415
+[src/goals.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L415)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: string description = 20;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:406
+[src/goals.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L406)
 
 ___
 
@@ -106,7 +106,7 @@ from field: string end_date = 14;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:399
+[src/goals.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L399)
 
 ___
 
@@ -122,7 +122,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:413
+[src/goals.scailo_pb.ts:413](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L413)
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:364
+[src/goals.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L364)
 
 ___
 
@@ -154,7 +154,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:371
+[src/goals.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L371)
 
 ___
 
@@ -170,7 +170,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:385
+[src/goals.scailo_pb.ts:385](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L385)
 
 ___
 
@@ -186,7 +186,7 @@ from field: string start_date = 13;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:392
+[src/goals.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L392)
 
 ___
 
@@ -202,7 +202,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:357
+[src/goals.scailo_pb.ts:357](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L357)
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:378
+[src/goals.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L378)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:422
+[src/goals.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L422)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:420
+[src/goals.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L420)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:421
+[src/goals.scailo_pb.ts:421](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L421)
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:446
+[src/goals.scailo_pb.ts:446](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L446)
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:434
+[src/goals.scailo_pb.ts:434](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L434)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:438
+[src/goals.scailo_pb.ts:438](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L438)
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:442
+[src/goals.scailo_pb.ts:442](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L442)

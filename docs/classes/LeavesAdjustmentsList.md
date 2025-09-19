@@ -66,7 +66,7 @@ Message\&lt;LeavesAdjustmentsList\&gt;.constructor
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:795
+[src/leaves_adjustments.scailo_pb.ts:795](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L795)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.LeaveAdjustment list = 1;
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:793
+[src/leaves_adjustments.scailo_pb.ts:793](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L793)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:802
+[src/leaves_adjustments.scailo_pb.ts:802](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L802)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:800
+[src/leaves_adjustments.scailo_pb.ts:800](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L800)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:801
+[src/leaves_adjustments.scailo_pb.ts:801](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L801)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:818
+[src/leaves_adjustments.scailo_pb.ts:818](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L818)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:806
+[src/leaves_adjustments.scailo_pb.ts:806](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L806)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:810
+[src/leaves_adjustments.scailo_pb.ts:810](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L810)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/leaves_adjustments.scailo_pb.ts:814
+[src/leaves_adjustments.scailo_pb.ts:814](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_adjustments.scailo_pb.ts#L814)

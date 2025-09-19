@@ -76,7 +76,7 @@ Message\&lt;SalesEnquiriesServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1010
+[src/sales_enquiries.scailo_pb.ts:1010](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1010)
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: string delivery_date = 18;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1001
+[src/sales_enquiries.scailo_pb.ts:1001](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1001)
 
 ___
 
@@ -108,7 +108,7 @@ from field: uint64 discount = 15;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:980
+[src/sales_enquiries.scailo_pb.ts:980](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L980)
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:945
+[src/sales_enquiries.scailo_pb.ts:945](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L945)
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:959
+[src/sales_enquiries.scailo_pb.ts:959](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L959)
 
 ___
 
@@ -156,7 +156,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:952
+[src/sales_enquiries.scailo_pb.ts:952](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L952)
 
 ___
 
@@ -172,7 +172,7 @@ from field: int64 round_off = 17;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:994
+[src/sales_enquiries.scailo_pb.ts:994](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L994)
 
 ___
 
@@ -188,7 +188,7 @@ from field: string specifications = 19;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1008
+[src/sales_enquiries.scailo_pb.ts:1008](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1008)
 
 ___
 
@@ -204,7 +204,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:987
+[src/sales_enquiries.scailo_pb.ts:987](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L987)
 
 ___
 
@@ -220,7 +220,7 @@ from field: uint64 unit_price = 14;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:973
+[src/sales_enquiries.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L973)
 
 ___
 
@@ -236,7 +236,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:966
+[src/sales_enquiries.scailo_pb.ts:966](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L966)
 
 ___
 
@@ -252,7 +252,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:938
+[src/sales_enquiries.scailo_pb.ts:938](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L938)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1017
+[src/sales_enquiries.scailo_pb.ts:1017](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1017)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1015
+[src/sales_enquiries.scailo_pb.ts:1015](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1015)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1016
+[src/sales_enquiries.scailo_pb.ts:1016](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1016)
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1043
+[src/sales_enquiries.scailo_pb.ts:1043](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1043)
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1031
+[src/sales_enquiries.scailo_pb.ts:1031](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1031)
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1035
+[src/sales_enquiries.scailo_pb.ts:1035](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1035)
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/sales_enquiries.scailo_pb.ts:1039
+[src/sales_enquiries.scailo_pb.ts:1039](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_enquiries.scailo_pb.ts#L1039)

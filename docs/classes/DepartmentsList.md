@@ -66,7 +66,7 @@ Message\&lt;DepartmentsList\&gt;.constructor
 
 #### Defined in
 
-src/departments.scailo_pb.ts:425
+[src/departments.scailo_pb.ts:425](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L425)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Department list = 1;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:423
+[src/departments.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L423)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:432
+[src/departments.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L432)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:430
+[src/departments.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L430)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:431
+[src/departments.scailo_pb.ts:431](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L431)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:448
+[src/departments.scailo_pb.ts:448](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L448)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:436
+[src/departments.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L436)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:440
+[src/departments.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L440)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:444
+[src/departments.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L444)

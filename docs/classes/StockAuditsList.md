@@ -66,7 +66,7 @@ Message\&lt;StockAuditsList\&gt;.constructor
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:802
+[src/stock_audits.scailo_pb.ts:802](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L802)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.StockAudit list = 1;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:800
+[src/stock_audits.scailo_pb.ts:800](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L800)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:809
+[src/stock_audits.scailo_pb.ts:809](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L809)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:807
+[src/stock_audits.scailo_pb.ts:807](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L807)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:808
+[src/stock_audits.scailo_pb.ts:808](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L808)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:825
+[src/stock_audits.scailo_pb.ts:825](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L825)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:813
+[src/stock_audits.scailo_pb.ts:813](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L813)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:817
+[src/stock_audits.scailo_pb.ts:817](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L817)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:821
+[src/stock_audits.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L821)

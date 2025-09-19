@@ -29,7 +29,7 @@ from enum value: STOCK_RETURN_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:23
+[src/stock_returns.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_returns.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: STOCK_RETURN_REF_FROM_STOCK_ISSUANCE = 1;
 
 #### Defined in
 
-src/stock_returns.scailo_pb.ts:30
+[src/stock_returns.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_returns.scailo_pb.ts#L30)

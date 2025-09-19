@@ -36,7 +36,7 @@ from enum value: ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:48
+[src/base.scailo_pb.ts:48](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L48)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: COMPLETED = 7;
 
 #### Defined in
 
-src/base.scailo_pb.ts:97
+[src/base.scailo_pb.ts:97](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L97)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: DISCARDED = 8;
 
 #### Defined in
 
-src/base.scailo_pb.ts:104
+[src/base.scailo_pb.ts:104](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L104)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: DRAFT = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:62
+[src/base.scailo_pb.ts:62](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L62)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: HALTED = 6;
 
 #### Defined in
 
-src/base.scailo_pb.ts:90
+[src/base.scailo_pb.ts:90](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L90)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: PREVERIFY = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:55
+[src/base.scailo_pb.ts:55](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L55)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: REVISION = 5;
 
 #### Defined in
 
-src/base.scailo_pb.ts:83
+[src/base.scailo_pb.ts:83](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L83)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: STANDING = 4;
 
 #### Defined in
 
-src/base.scailo_pb.ts:76
+[src/base.scailo_pb.ts:76](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L76)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: VERIFIED = 3;
 
 #### Defined in
 
-src/base.scailo_pb.ts:69
+[src/base.scailo_pb.ts:69](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L69)

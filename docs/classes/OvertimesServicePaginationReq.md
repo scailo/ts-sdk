@@ -71,7 +71,7 @@ Message\&lt;OvertimesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:567
+[src/overtimes.scailo_pb.ts:567](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L567)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:537
+[src/overtimes.scailo_pb.ts:537](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L537)
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:530
+[src/overtimes.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L530)
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:544
+[src/overtimes.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L544)
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.OVERTIME_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:558
+[src/overtimes.scailo_pb.ts:558](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L558)
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:551
+[src/overtimes.scailo_pb.ts:551](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L551)
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:565
+[src/overtimes.scailo_pb.ts:565](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L565)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:574
+[src/overtimes.scailo_pb.ts:574](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L574)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:572
+[src/overtimes.scailo_pb.ts:572](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L572)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:573
+[src/overtimes.scailo_pb.ts:573](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L573)
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:595
+[src/overtimes.scailo_pb.ts:595](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L595)
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:583
+[src/overtimes.scailo_pb.ts:583](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L583)
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:587
+[src/overtimes.scailo_pb.ts:587](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L587)
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:591
+[src/overtimes.scailo_pb.ts:591](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L591)

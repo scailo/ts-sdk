@@ -70,7 +70,7 @@ Message\&lt;MagicLinksServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:950
+[src/magic_links.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L950)
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:927
+[src/magic_links.scailo_pb.ts:927](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L927)
 
 ___
 
@@ -102,7 +102,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:920
+[src/magic_links.scailo_pb.ts:920](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L920)
 
 ___
 
@@ -118,7 +118,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:934
+[src/magic_links.scailo_pb.ts:934](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L934)
 
 ___
 
@@ -134,7 +134,7 @@ from field: Scailo.MAGIC_LINK_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:948
+[src/magic_links.scailo_pb.ts:948](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L948)
 
 ___
 
@@ -150,7 +150,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:941
+[src/magic_links.scailo_pb.ts:941](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L941)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:957
+[src/magic_links.scailo_pb.ts:957](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L957)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:955
+[src/magic_links.scailo_pb.ts:955](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L955)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:956
+[src/magic_links.scailo_pb.ts:956](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L956)
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:977
+[src/magic_links.scailo_pb.ts:977](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L977)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:965
+[src/magic_links.scailo_pb.ts:965](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L965)
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:969
+[src/magic_links.scailo_pb.ts:969](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L969)
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:973
+[src/magic_links.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L973)

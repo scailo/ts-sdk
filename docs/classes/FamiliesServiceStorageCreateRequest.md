@@ -68,7 +68,7 @@ Message\&lt;FamiliesServiceStorageCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2036
+[src/families.scailo_pb.ts:2036](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2036)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2027
+[src/families.scailo_pb.ts:2027](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2027)
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 storage_id = 11;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2034
+[src/families.scailo_pb.ts:2034](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2034)
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2020
+[src/families.scailo_pb.ts:2020](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2020)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2043
+[src/families.scailo_pb.ts:2043](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2043)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2041
+[src/families.scailo_pb.ts:2041](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2041)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2042
+[src/families.scailo_pb.ts:2042](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2042)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2061
+[src/families.scailo_pb.ts:2061](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2061)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2049
+[src/families.scailo_pb.ts:2049](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2049)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2053
+[src/families.scailo_pb.ts:2053](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2053)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2057
+[src/families.scailo_pb.ts:2057](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2057)

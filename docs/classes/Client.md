@@ -76,7 +76,7 @@ Message\&lt;Client\&gt;.constructor
 
 #### Defined in
 
-src/clients.scailo_pb.ts:425
+[src/clients.scailo_pb.ts:425](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L425)
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:367
+[src/clients.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L367)
 
 ___
 
@@ -108,7 +108,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:402
+[src/clients.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L402)
 
 ___
 
@@ -124,7 +124,7 @@ from field: string email = 12;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:409
+[src/clients.scailo_pb.ts:409](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L409)
 
 ___
 
@@ -140,7 +140,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:353
+[src/clients.scailo_pb.ts:353](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L353)
 
 ___
 
@@ -156,7 +156,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:423
+[src/clients.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L423)
 
 ___
 
@@ -172,7 +172,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:381
+[src/clients.scailo_pb.ts:381](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L381)
 
 ___
 
@@ -188,7 +188,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:360
+[src/clients.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L360)
 
 ___
 
@@ -204,7 +204,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:395
+[src/clients.scailo_pb.ts:395](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L395)
 
 ___
 
@@ -220,7 +220,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:416
+[src/clients.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L416)
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:374
+[src/clients.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L374)
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/clients.scailo_pb.ts:388
+[src/clients.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L388)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:432
+[src/clients.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L432)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:430
+[src/clients.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L430)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:431
+[src/clients.scailo_pb.ts:431](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L431)
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:458
+[src/clients.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L458)
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:446
+[src/clients.scailo_pb.ts:446](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L446)
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:450
+[src/clients.scailo_pb.ts:450](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L450)
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/clients.scailo_pb.ts:454
+[src/clients.scailo_pb.ts:454](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/clients.scailo_pb.ts#L454)

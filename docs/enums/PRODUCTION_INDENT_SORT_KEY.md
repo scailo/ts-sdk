@@ -37,7 +37,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:129
+[src/production_indents.scailo_pb.ts:129](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L129)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:122
+[src/production_indents.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L122)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:136
+[src/production_indents.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L136)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:143
+[src/production_indents.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L143)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:108
+[src/production_indents.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L108)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:157
+[src/production_indents.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L157)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:101
+[src/production_indents.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L101)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_LOCATION_ID = 12;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:164
+[src/production_indents.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L164)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:115
+[src/production_indents.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L115)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: PRODUCTION_INDENT_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/production_indents.scailo_pb.ts:150
+[src/production_indents.scailo_pb.ts:150](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_indents.scailo_pb.ts#L150)

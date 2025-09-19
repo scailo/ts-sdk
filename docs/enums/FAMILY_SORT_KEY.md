@@ -38,7 +38,7 @@ from enum value: FAMILY_SORT_KEY_AMENDMENT_COUNT = 15;
 
 #### Defined in
 
-src/families.scailo_pb.ts:235
+[src/families.scailo_pb.ts:235](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L235)
 
 ___
 
@@ -54,7 +54,7 @@ from enum value: FAMILY_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:193
+[src/families.scailo_pb.ts:193](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L193)
 
 ___
 
@@ -70,7 +70,7 @@ from enum value: FAMILY_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:186
+[src/families.scailo_pb.ts:186](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L186)
 
 ___
 
@@ -86,7 +86,7 @@ from enum value: FAMILY_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:200
+[src/families.scailo_pb.ts:200](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L200)
 
 ___
 
@@ -102,7 +102,7 @@ from enum value: FAMILY_SORT_KEY_CODE = 12;
 
 #### Defined in
 
-src/families.scailo_pb.ts:214
+[src/families.scailo_pb.ts:214](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L214)
 
 ___
 
@@ -118,7 +118,7 @@ from enum value: FAMILY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:172
+[src/families.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L172)
 
 ___
 
@@ -134,7 +134,7 @@ from enum value: FAMILY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/families.scailo_pb.ts:165
+[src/families.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L165)
 
 ___
 
@@ -150,7 +150,7 @@ from enum value: FAMILY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:179
+[src/families.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L179)
 
 ___
 
@@ -166,7 +166,7 @@ from enum value: FAMILY_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:207
+[src/families.scailo_pb.ts:207](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L207)
 
 ___
 
@@ -182,7 +182,7 @@ from enum value: FAMILY_SORT_KEY_PRICE = 14;
 
 #### Defined in
 
-src/families.scailo_pb.ts:228
+[src/families.scailo_pb.ts:228](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L228)
 
 ___
 
@@ -198,4 +198,4 @@ from enum value: FAMILY_SORT_KEY_UNIT_QUANTITY = 13;
 
 #### Defined in
 
-src/families.scailo_pb.ts:221
+[src/families.scailo_pb.ts:221](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L221)

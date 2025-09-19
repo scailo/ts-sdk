@@ -72,7 +72,7 @@ Message\&lt;GoodsDispatchesServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:878
+[src/goods_dispatches.scailo_pb.ts:878](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L878)
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: string client_family_code = 16;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:876
+[src/goods_dispatches.scailo_pb.ts:876](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L876)
 
 ___
 
@@ -104,7 +104,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:869
+[src/goods_dispatches.scailo_pb.ts:869](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L869)
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:862
+[src/goods_dispatches.scailo_pb.ts:862](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L862)
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:841
+[src/goods_dispatches.scailo_pb.ts:841](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L841)
 
 ___
 
@@ -152,7 +152,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:855
+[src/goods_dispatches.scailo_pb.ts:855](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L855)
 
 ___
 
@@ -168,7 +168,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:848
+[src/goods_dispatches.scailo_pb.ts:848](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L848)
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:834
+[src/goods_dispatches.scailo_pb.ts:834](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L834)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:885
+[src/goods_dispatches.scailo_pb.ts:885](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L885)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:883
+[src/goods_dispatches.scailo_pb.ts:883](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L883)
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:884
+[src/goods_dispatches.scailo_pb.ts:884](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L884)
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:907
+[src/goods_dispatches.scailo_pb.ts:907](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L907)
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:895
+[src/goods_dispatches.scailo_pb.ts:895](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L895)
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:899
+[src/goods_dispatches.scailo_pb.ts:899](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L899)
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/goods_dispatches.scailo_pb.ts:903
+[src/goods_dispatches.scailo_pb.ts:903](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goods_dispatches.scailo_pb.ts#L903)

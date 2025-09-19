@@ -71,7 +71,7 @@ Message\&lt;StockAuditsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:261
+[src/stock_audits.scailo_pb.ts:261](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L261)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:224
+[src/stock_audits.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L224)
 
 ___
 
@@ -103,7 +103,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:259
+[src/stock_audits.scailo_pb.ts:259](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L259)
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:252
+[src/stock_audits.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L252)
 
 ___
 
@@ -135,7 +135,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:245
+[src/stock_audits.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L245)
 
 ___
 
@@ -151,7 +151,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:231
+[src/stock_audits.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L231)
 
 ___
 
@@ -167,7 +167,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:238
+[src/stock_audits.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L238)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:268
+[src/stock_audits.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L268)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:266
+[src/stock_audits.scailo_pb.ts:266](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L266)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:267
+[src/stock_audits.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L267)
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:289
+[src/stock_audits.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L289)
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:277
+[src/stock_audits.scailo_pb.ts:277](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L277)
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:281
+[src/stock_audits.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L281)
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/stock_audits.scailo_pb.ts:285
+[src/stock_audits.scailo_pb.ts:285](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stock_audits.scailo_pb.ts#L285)

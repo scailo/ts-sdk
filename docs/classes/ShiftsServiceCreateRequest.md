@@ -75,7 +75,7 @@ Message\&lt;ShiftsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:186
+[src/shifts.scailo_pb.ts:186](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L186)
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:149
+[src/shifts.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L149)
 
 ___
 
@@ -107,7 +107,7 @@ from field: string day_of_week = 15;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:177
+[src/shifts.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L177)
 
 ___
 
@@ -123,7 +123,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:156
+[src/shifts.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L156)
 
 ___
 
@@ -139,7 +139,7 @@ from field: uint64 end_at = 14;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:170
+[src/shifts.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L170)
 
 ___
 
@@ -155,7 +155,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:121
+[src/shifts.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L121)
 
 ___
 
@@ -171,7 +171,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:142
+[src/shifts.scailo_pb.ts:142](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L142)
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 start_at = 13;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:163
+[src/shifts.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L163)
 
 ___
 
@@ -203,7 +203,7 @@ from field: string timezone = 16;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:184
+[src/shifts.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L184)
 
 ___
 
@@ -219,7 +219,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:128
+[src/shifts.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L128)
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:135
+[src/shifts.scailo_pb.ts:135](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L135)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:193
+[src/shifts.scailo_pb.ts:193](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L193)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:191
+[src/shifts.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L191)
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:192
+[src/shifts.scailo_pb.ts:192](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L192)
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:218
+[src/shifts.scailo_pb.ts:218](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L218)
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:206
+[src/shifts.scailo_pb.ts:206](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L206)
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:210
+[src/shifts.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L210)
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:214
+[src/shifts.scailo_pb.ts:214](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L214)

@@ -41,7 +41,7 @@ from enum value: SALARY_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:51
+[src/salaries.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L51)
 
 ___
 
@@ -57,7 +57,7 @@ from enum value: SALARY_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:44
+[src/salaries.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L44)
 
 ___
 
@@ -73,7 +73,7 @@ from enum value: SALARY_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:58
+[src/salaries.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L58)
 
 ___
 
@@ -89,7 +89,7 @@ from enum value: SALARY_SORT_KEY_BANK_ACCOUNT_ID = 13;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:93
+[src/salaries.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L93)
 
 ___
 
@@ -105,7 +105,7 @@ from enum value: SALARY_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:65
+[src/salaries.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L65)
 
 ___
 
@@ -121,7 +121,7 @@ from enum value: SALARY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:30
+[src/salaries.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L30)
 
 ___
 
@@ -137,7 +137,7 @@ from enum value: SALARY_SORT_KEY_CURRENCY_ID = 14;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:100
+[src/salaries.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L100)
 
 ___
 
@@ -153,7 +153,7 @@ from enum value: SALARY_SORT_KEY_EMPLOYEE_ID = 12;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:86
+[src/salaries.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L86)
 
 ___
 
@@ -169,7 +169,7 @@ from enum value: SALARY_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:79
+[src/salaries.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L79)
 
 ___
 
@@ -185,7 +185,7 @@ from enum value: SALARY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:23
+[src/salaries.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L23)
 
 ___
 
@@ -201,7 +201,7 @@ from enum value: SALARY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:37
+[src/salaries.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L37)
 
 ___
 
@@ -217,7 +217,7 @@ from enum value: SALARY_SORT_KEY_PAYROLL_GROUP_ID = 15;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:107
+[src/salaries.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L107)
 
 ___
 
@@ -233,7 +233,7 @@ from enum value: SALARY_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:72
+[src/salaries.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L72)
 
 ___
 
@@ -249,4 +249,4 @@ from enum value: SALARY_SORT_KEY_TAX_GROUP_ID = 16;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:114
+[src/salaries.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L114)

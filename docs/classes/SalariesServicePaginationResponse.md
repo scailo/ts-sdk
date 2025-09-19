@@ -69,7 +69,7 @@ Message\&lt;SalariesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2161
+[src/salaries.scailo_pb.ts:2161](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2161)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2138
+[src/salaries.scailo_pb.ts:2138](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2138)
 
 ___
 
@@ -101,7 +101,7 @@ from field: int64 offset = 2;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2145
+[src/salaries.scailo_pb.ts:2145](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2145)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Salary payload = 4;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2159
+[src/salaries.scailo_pb.ts:2159](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2159)
 
 ___
 
@@ -133,7 +133,7 @@ from field: int64 total = 3;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2152
+[src/salaries.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2152)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2168
+[src/salaries.scailo_pb.ts:2168](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2168)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2166
+[src/salaries.scailo_pb.ts:2166](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2166)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2167
+[src/salaries.scailo_pb.ts:2167](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2167)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2187
+[src/salaries.scailo_pb.ts:2187](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2187)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2175
+[src/salaries.scailo_pb.ts:2175](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2175)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2179
+[src/salaries.scailo_pb.ts:2179](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2179)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2183
+[src/salaries.scailo_pb.ts:2183](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2183)

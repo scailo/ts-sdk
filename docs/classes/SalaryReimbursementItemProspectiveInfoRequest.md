@@ -67,7 +67,7 @@ Message\&lt;SalaryReimbursementItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2015
+[src/salaries.scailo_pb.ts:2015](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2015)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string ref_from = 11;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2013
+[src/salaries.scailo_pb.ts:2013](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2013)
 
 ___
 
@@ -99,7 +99,7 @@ from field: int64 salary_id = 10;
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2006
+[src/salaries.scailo_pb.ts:2006](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2006)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2022
+[src/salaries.scailo_pb.ts:2022](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2022)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2020
+[src/salaries.scailo_pb.ts:2020](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2020)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2021
+[src/salaries.scailo_pb.ts:2021](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2021)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2039
+[src/salaries.scailo_pb.ts:2039](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2039)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2027
+[src/salaries.scailo_pb.ts:2027](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2027)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2031
+[src/salaries.scailo_pb.ts:2031](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2031)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/salaries.scailo_pb.ts:2035
+[src/salaries.scailo_pb.ts:2035](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/salaries.scailo_pb.ts#L2035)

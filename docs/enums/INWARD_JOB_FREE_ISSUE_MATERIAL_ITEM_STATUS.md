@@ -30,7 +30,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:149
+[src/inward_jobs_free_issue_materials.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs_free_issue_materials.scailo_pb.ts#L149)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:156
+[src/inward_jobs_free_issue_materials.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs_free_issue_materials.scailo_pb.ts#L156)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/inward_jobs_free_issue_materials.scailo_pb.ts:163
+[src/inward_jobs_free_issue_materials.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs_free_issue_materials.scailo_pb.ts#L163)

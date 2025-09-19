@@ -73,7 +73,7 @@ Message\&lt;AnnouncementsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:262
+[src/announcements.scailo_pb.ts:262](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L262)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string description = 11;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:246
+[src/announcements.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L246)
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 end_on = 13;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:260
+[src/announcements.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L260)
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:218
+[src/announcements.scailo_pb.ts:218](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L218)
 
 ___
 
@@ -137,7 +137,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:225
+[src/announcements.scailo_pb.ts:225](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L225)
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 start_on = 12;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:253
+[src/announcements.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L253)
 
 ___
 
@@ -169,7 +169,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:239
+[src/announcements.scailo_pb.ts:239](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L239)
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:211
+[src/announcements.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L211)
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:232
+[src/announcements.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L232)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:269
+[src/announcements.scailo_pb.ts:269](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L269)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:267
+[src/announcements.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L267)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:268
+[src/announcements.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L268)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:292
+[src/announcements.scailo_pb.ts:292](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L292)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:280
+[src/announcements.scailo_pb.ts:280](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L280)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:284
+[src/announcements.scailo_pb.ts:284](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L284)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:288
+[src/announcements.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L288)

@@ -73,7 +73,7 @@ Message\&lt;AnnouncementsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1076
+[src/announcements.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1076)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1032
+[src/announcements.scailo_pb.ts:1032](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1032)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1060
+[src/announcements.scailo_pb.ts:1060](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1060)
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1025
+[src/announcements.scailo_pb.ts:1025](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1025)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1039
+[src/announcements.scailo_pb.ts:1039](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1039)
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1074
+[src/announcements.scailo_pb.ts:1074](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1074)
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1053
+[src/announcements.scailo_pb.ts:1053](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1053)
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1046
+[src/announcements.scailo_pb.ts:1046](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1046)
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1067
+[src/announcements.scailo_pb.ts:1067](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1067)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1083
+[src/announcements.scailo_pb.ts:1083](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1083)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1081
+[src/announcements.scailo_pb.ts:1081](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1081)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1082
+[src/announcements.scailo_pb.ts:1082](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1082)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1106
+[src/announcements.scailo_pb.ts:1106](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1106)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1094
+[src/announcements.scailo_pb.ts:1094](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1094)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1098
+[src/announcements.scailo_pb.ts:1098](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1098)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:1102
+[src/announcements.scailo_pb.ts:1102](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L1102)

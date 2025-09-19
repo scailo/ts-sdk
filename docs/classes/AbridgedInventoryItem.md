@@ -68,7 +68,7 @@ Message\&lt;AbridgedInventoryItem\&gt;.constructor
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1567
+[src/inventory.scailo_pb.ts:1567](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1567)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1551
+[src/inventory.scailo_pb.ts:1551](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1551)
 
 ___
 
@@ -100,7 +100,7 @@ from field: string hash = 20;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1558
+[src/inventory.scailo_pb.ts:1558](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1558)
 
 ___
 
@@ -116,7 +116,7 @@ from field: int64 quantity = 30;
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1565
+[src/inventory.scailo_pb.ts:1565](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1565)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1574
+[src/inventory.scailo_pb.ts:1574](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1574)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1572
+[src/inventory.scailo_pb.ts:1572](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1572)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1573
+[src/inventory.scailo_pb.ts:1573](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1573)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1592
+[src/inventory.scailo_pb.ts:1592](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1592)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1580
+[src/inventory.scailo_pb.ts:1580](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1580)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1584
+[src/inventory.scailo_pb.ts:1584](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1584)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-src/inventory.scailo_pb.ts:1588
+[src/inventory.scailo_pb.ts:1588](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inventory.scailo_pb.ts#L1588)

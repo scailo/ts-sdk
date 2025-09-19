@@ -77,7 +77,7 @@ Message\&lt;NotesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1165
+[src/notes.scailo_pb.ts:1165](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1165)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 activity_id = 27;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1156
+[src/notes.scailo_pb.ts:1156](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1156)
 
 ___
 
@@ -109,7 +109,7 @@ from field: uint64 activity_status_id = 28;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1163
+[src/notes.scailo_pb.ts:1163](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1163)
 
 ___
 
@@ -125,7 +125,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1093
+[src/notes.scailo_pb.ts:1093](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1093)
 
 ___
 
@@ -141,7 +141,7 @@ from field: uint64 employee_id = 26;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1149
+[src/notes.scailo_pb.ts:1149](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1149)
 
 ___
 
@@ -157,7 +157,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1121
+[src/notes.scailo_pb.ts:1121](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1121)
 
 ___
 
@@ -173,7 +173,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1086
+[src/notes.scailo_pb.ts:1086](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1086)
 
 ___
 
@@ -189,7 +189,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1100
+[src/notes.scailo_pb.ts:1100](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1100)
 
 ___
 
@@ -205,7 +205,7 @@ from field: uint64 project_id = 25;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1142
+[src/notes.scailo_pb.ts:1142](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1142)
 
 ___
 
@@ -221,7 +221,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1135
+[src/notes.scailo_pb.ts:1135](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1135)
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.NOTE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1114
+[src/notes.scailo_pb.ts:1114](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1114)
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1107
+[src/notes.scailo_pb.ts:1107](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1107)
 
 ___
 
@@ -269,7 +269,7 @@ from field: Scailo.NOTE_LIFECYCLE status = 10;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1128
+[src/notes.scailo_pb.ts:1128](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1128)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1172
+[src/notes.scailo_pb.ts:1172](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1172)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1170
+[src/notes.scailo_pb.ts:1170](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1170)
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1171
+[src/notes.scailo_pb.ts:1171](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1171)
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1199
+[src/notes.scailo_pb.ts:1199](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1199)
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1187
+[src/notes.scailo_pb.ts:1187](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1187)
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1191
+[src/notes.scailo_pb.ts:1191](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1191)
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:1195
+[src/notes.scailo_pb.ts:1195](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L1195)

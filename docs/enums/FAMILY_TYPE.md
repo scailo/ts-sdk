@@ -35,7 +35,7 @@ from enum value: FAMILY_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/families.scailo_pb.ts:23
+[src/families.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L23)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: FAMILY_TYPE_COMPONENT = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:30
+[src/families.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L30)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: FAMILY_TYPE_EQUIPMENT = 2;
 
 #### Defined in
 
-src/families.scailo_pb.ts:37
+[src/families.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L37)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: FAMILY_TYPE_FEEDSTOCK = 3;
 
 #### Defined in
 
-src/families.scailo_pb.ts:44
+[src/families.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L44)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: FAMILY_TYPE_INFRASTRUCTURE = 4;
 
 #### Defined in
 
-src/families.scailo_pb.ts:51
+[src/families.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L51)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: FAMILY_TYPE_MERCHANDISE = 5;
 
 #### Defined in
 
-src/families.scailo_pb.ts:58
+[src/families.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L58)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: FAMILY_TYPE_PRODUCT = 6;
 
 #### Defined in
 
-src/families.scailo_pb.ts:65
+[src/families.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L65)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: FAMILY_TYPE_SERVICE = 7;
 
 #### Defined in
 
-src/families.scailo_pb.ts:72
+[src/families.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L72)

@@ -73,7 +73,7 @@ Message\&lt;HolidaysServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1396
+[src/holidays.scailo_pb.ts:1396](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1396)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1352
+[src/holidays.scailo_pb.ts:1352](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1352)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1380
+[src/holidays.scailo_pb.ts:1380](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1380)
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1345
+[src/holidays.scailo_pb.ts:1345](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1345)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1359
+[src/holidays.scailo_pb.ts:1359](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1359)
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1394
+[src/holidays.scailo_pb.ts:1394](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1394)
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.HOLIDAY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1373
+[src/holidays.scailo_pb.ts:1373](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1373)
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1366
+[src/holidays.scailo_pb.ts:1366](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1366)
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1387
+[src/holidays.scailo_pb.ts:1387](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1387)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1403
+[src/holidays.scailo_pb.ts:1403](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1403)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1401
+[src/holidays.scailo_pb.ts:1401](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1401)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1402
+[src/holidays.scailo_pb.ts:1402](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1402)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1426
+[src/holidays.scailo_pb.ts:1426](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1426)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1414
+[src/holidays.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1414)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1418
+[src/holidays.scailo_pb.ts:1418](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1418)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:1422
+[src/holidays.scailo_pb.ts:1422](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L1422)

@@ -80,7 +80,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_ABSENCE = 1210;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:358
+[src/magic_links.scailo_pb.ts:358](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L358)
 
 ___
 
@@ -96,7 +96,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:22
+[src/magic_links.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L22)
 
 ___
 
@@ -112,7 +112,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_ASSET_INDENT = 830;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:274
+[src/magic_links.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L274)
 
 ___
 
@@ -128,7 +128,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_ATTENDANCE = 1200;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:351
+[src/magic_links.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L351)
 
 ___
 
@@ -144,7 +144,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_COMPONENT = 1100;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:309
+[src/magic_links.scailo_pb.ts:309](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L309)
 
 ___
 
@@ -160,7 +160,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_CREDIT_NOTE = 240;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:148
+[src/magic_links.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L148)
 
 ___
 
@@ -176,7 +176,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_DEBIT_NOTE = 130;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:78
+[src/magic_links.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L78)
 
 ___
 
@@ -192,7 +192,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_FAMILY = 600;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:211
+[src/magic_links.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L211)
 
 ___
 
@@ -208,7 +208,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_REPLACEABLE = 630;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:232
+[src/magic_links.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L232)
 
 ___
 
@@ -224,7 +224,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_SALES_BUNDLE = 610;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:218
+[src/magic_links.scailo_pb.ts:218](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L218)
 
 ___
 
@@ -240,7 +240,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUATION_WORK_ORDER = 620;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:225
+[src/magic_links.scailo_pb.ts:225](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L225)
 
 ___
 
@@ -256,7 +256,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_EQUIPMENT = 1140;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:337
+[src/magic_links.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L337)
 
 ___
 
@@ -272,7 +272,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_EXPENSE = 1500;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:379
+[src/magic_links.scailo_pb.ts:379](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L379)
 
 ___
 
@@ -288,7 +288,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_FEEDSTOCK = 1120;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:323
+[src/magic_links.scailo_pb.ts:323](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L323)
 
 ___
 
@@ -304,7 +304,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_GOODS_DISPATCH = 220;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:127
+[src/magic_links.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L127)
 
 ___
 
@@ -320,7 +320,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_GOODS_RECEIPT = 110;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:64
+[src/magic_links.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L64)
 
 ___
 
@@ -336,7 +336,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_INFRASTRUCTURE = 1150;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:344
+[src/magic_links.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L344)
 
 ___
 
@@ -352,7 +352,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB = 300;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:169
+[src/magic_links.scailo_pb.ts:169](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L169)
 
 ___
 
@@ -368,7 +368,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL = 310;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:176
+[src/magic_links.scailo_pb.ts:176](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L176)
 
 ___
 
@@ -384,7 +384,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN 
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:183
+[src/magic_links.scailo_pb.ts:183](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L183)
 
 ___
 
@@ -400,7 +400,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_MERCHANDISE = 1130;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:330
+[src/magic_links.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L330)
 
 ___
 
@@ -416,7 +416,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_ON_DUTY = 1220;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:365
+[src/magic_links.scailo_pb.ts:365](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L365)
 
 ___
 
@@ -432,7 +432,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB = 400;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:190
+[src/magic_links.scailo_pb.ts:190](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L190)
 
 ___
 
@@ -448,7 +448,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 410;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:197
+[src/magic_links.scailo_pb.ts:197](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L197)
 
 ___
 
@@ -464,7 +464,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:204
+[src/magic_links.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L204)
 
 ___
 
@@ -480,7 +480,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCT = 1110;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:316
+[src/magic_links.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L316)
 
 ___
 
@@ -496,7 +496,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_INDENT = 820;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:267
+[src/magic_links.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L267)
 
 ___
 
@@ -512,7 +512,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PRODUCTION_PLAN = 710;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:246
+[src/magic_links.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L246)
 
 ___
 
@@ -528,7 +528,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PROFORMA_INVOICE = 225;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:134
+[src/magic_links.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L134)
 
 ___
 
@@ -544,7 +544,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ENQUIRY = 20;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:36
+[src/magic_links.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L36)
 
 ___
 
@@ -560,7 +560,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_INDENT = 810;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:260
+[src/magic_links.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L260)
 
 ___
 
@@ -576,7 +576,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_ORDER = 100;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:57
+[src/magic_links.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L57)
 
 ___
 
@@ -592,7 +592,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_PAYMENT = 150;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:92
+[src/magic_links.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L92)
 
 ___
 
@@ -608,7 +608,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_PURCHASE_RETURN = 140;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:85
+[src/magic_links.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L85)
 
 ___
 
@@ -624,7 +624,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_QC_SAMPLE = 1000;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:302
+[src/magic_links.scailo_pb.ts:302](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L302)
 
 ___
 
@@ -640,7 +640,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_QUOTATION_REQUEST = 30;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:43
+[src/magic_links.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L43)
 
 ___
 
@@ -656,7 +656,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_QUOTATION_RESPONSE = 40;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:50
+[src/magic_links.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L50)
 
 ___
 
@@ -672,7 +672,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_REPLACEABLE_INDENT = 800;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:253
+[src/magic_links.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L253)
 
 ___
 
@@ -688,7 +688,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_ENQUIRY = 200;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:106
+[src/magic_links.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L106)
 
 ___
 
@@ -704,7 +704,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_INVOICE = 230;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:141
+[src/magic_links.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L141)
 
 ___
 
@@ -720,7 +720,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_ORDER = 210;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:120
+[src/magic_links.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L120)
 
 ___
 
@@ -736,7 +736,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_QUOTATION = 205;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:113
+[src/magic_links.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L113)
 
 ___
 
@@ -752,7 +752,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_RECEIPT = 260;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:162
+[src/magic_links.scailo_pb.ts:162](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L162)
 
 ___
 
@@ -768,7 +768,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SALES_RETURN = 250;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:155
+[src/magic_links.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L155)
 
 ___
 
@@ -784,7 +784,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_AUDIT = 920;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:295
+[src/magic_links.scailo_pb.ts:295](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L295)
 
 ___
 
@@ -800,7 +800,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_ISSUANCE = 900;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:281
+[src/magic_links.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L281)
 
 ___
 
@@ -816,7 +816,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_STOCK_RETURN = 910;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:288
+[src/magic_links.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L288)
 
 ___
 
@@ -832,7 +832,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_SUPPLY_OFFER = 160;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:99
+[src/magic_links.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L99)
 
 ___
 
@@ -848,7 +848,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:386
+[src/magic_links.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L386)
 
 ___
 
@@ -864,7 +864,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_VENDOR = 10;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:29
+[src/magic_links.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L29)
 
 ___
 
@@ -880,7 +880,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_VENDOR_INVOICE = 120;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:71
+[src/magic_links.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L71)
 
 ___
 
@@ -896,7 +896,7 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_VISITATION = 1230;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:372
+[src/magic_links.scailo_pb.ts:372](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L372)
 
 ___
 
@@ -912,4 +912,4 @@ from enum value: MAGIC_LINK_RESOURCE_TYPE_WORK_ORDER = 700;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:239
+[src/magic_links.scailo_pb.ts:239](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L239)

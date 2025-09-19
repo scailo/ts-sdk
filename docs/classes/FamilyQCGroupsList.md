@@ -66,7 +66,7 @@ Message\&lt;FamilyQCGroupsList\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:2632
+[src/families.scailo_pb.ts:2632](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2632)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.FamilyQCGroup list = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:2630
+[src/families.scailo_pb.ts:2630](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2630)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2639
+[src/families.scailo_pb.ts:2639](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2639)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2637
+[src/families.scailo_pb.ts:2637](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2637)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2638
+[src/families.scailo_pb.ts:2638](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2638)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2655
+[src/families.scailo_pb.ts:2655](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2655)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2643
+[src/families.scailo_pb.ts:2643](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2643)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2647
+[src/families.scailo_pb.ts:2647](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2647)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:2651
+[src/families.scailo_pb.ts:2651](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L2651)

@@ -66,7 +66,7 @@ Message\&lt;MagicLinkAccessLogsList\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1486
+[src/magic_links.scailo_pb.ts:1486](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1486)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.MagicLinkAccessLog list = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1484
+[src/magic_links.scailo_pb.ts:1484](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1484)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1493
+[src/magic_links.scailo_pb.ts:1493](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1493)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1491
+[src/magic_links.scailo_pb.ts:1491](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1491)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1492
+[src/magic_links.scailo_pb.ts:1492](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1492)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1509
+[src/magic_links.scailo_pb.ts:1509](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1509)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1497
+[src/magic_links.scailo_pb.ts:1497](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1497)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1501
+[src/magic_links.scailo_pb.ts:1501](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1501)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:1505
+[src/magic_links.scailo_pb.ts:1505](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L1505)

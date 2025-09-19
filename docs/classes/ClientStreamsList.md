@@ -66,7 +66,7 @@ Message\&lt;ClientStreamsList\&gt;.constructor
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:735
+[src/client_streams.scailo_pb.ts:735](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L735)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ClientStream list = 1;
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:733
+[src/client_streams.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L733)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:742
+[src/client_streams.scailo_pb.ts:742](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L742)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:740
+[src/client_streams.scailo_pb.ts:740](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L740)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:741
+[src/client_streams.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L741)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:758
+[src/client_streams.scailo_pb.ts:758](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L758)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:746
+[src/client_streams.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L746)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:750
+[src/client_streams.scailo_pb.ts:750](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L750)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/client_streams.scailo_pb.ts:754
+[src/client_streams.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/client_streams.scailo_pb.ts#L754)

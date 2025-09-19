@@ -66,7 +66,7 @@ Message\&lt;VendorStreamInternalSubscribersList\&gt;.constructor
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2046
+[src/vendor_streams.scailo_pb.ts:2046](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2046)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VendorStreamInternalSubscriber list = 1;
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2044
+[src/vendor_streams.scailo_pb.ts:2044](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2044)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2053
+[src/vendor_streams.scailo_pb.ts:2053](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2053)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2051
+[src/vendor_streams.scailo_pb.ts:2051](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2051)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2052
+[src/vendor_streams.scailo_pb.ts:2052](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2052)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2069
+[src/vendor_streams.scailo_pb.ts:2069](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2069)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2057
+[src/vendor_streams.scailo_pb.ts:2057](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2057)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2061
+[src/vendor_streams.scailo_pb.ts:2061](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2061)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/vendor_streams.scailo_pb.ts:2065
+[src/vendor_streams.scailo_pb.ts:2065](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_streams.scailo_pb.ts#L2065)

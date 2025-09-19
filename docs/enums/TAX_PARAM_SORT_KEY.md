@@ -36,7 +36,7 @@ from enum value: TAX_PARAM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:120
+[src/tax_params.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L120)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: TAX_PARAM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:113
+[src/tax_params.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L113)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: TAX_PARAM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:127
+[src/tax_params.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L127)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: TAX_PARAM_SORT_KEY_CODE = 21;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:148
+[src/tax_params.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L148)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: TAX_PARAM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:99
+[src/tax_params.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L99)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: TAX_PARAM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:92
+[src/tax_params.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L92)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: TAX_PARAM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:106
+[src/tax_params.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L106)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: TAX_PARAM_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:134
+[src/tax_params.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L134)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: TAX_PARAM_SORT_KEY_TAX_RATE_PERCENTAGE = 11;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:141
+[src/tax_params.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L141)

@@ -66,7 +66,7 @@ Message\&lt;ProjectContactsList\&gt;.constructor
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1404
+[src/projects.scailo_pb.ts:1404](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1404)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ProjectContact list = 1;
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1402
+[src/projects.scailo_pb.ts:1402](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1402)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1411
+[src/projects.scailo_pb.ts:1411](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1411)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1409
+[src/projects.scailo_pb.ts:1409](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1409)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1410
+[src/projects.scailo_pb.ts:1410](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1410)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1427
+[src/projects.scailo_pb.ts:1427](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1427)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1415
+[src/projects.scailo_pb.ts:1415](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1415)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1419
+[src/projects.scailo_pb.ts:1419](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1419)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/projects.scailo_pb.ts:1423
+[src/projects.scailo_pb.ts:1423](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/projects.scailo_pb.ts#L1423)

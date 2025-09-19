@@ -76,7 +76,7 @@ Message\&lt;QCHub\&gt;.constructor
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:365
+[src/qc_hubs.scailo_pb.ts:365](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L365)
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:307
+[src/qc_hubs.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L307)
 
 ___
 
@@ -108,7 +108,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:342
+[src/qc_hubs.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L342)
 
 ___
 
@@ -124,7 +124,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:349
+[src/qc_hubs.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L349)
 
 ___
 
@@ -140,7 +140,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:293
+[src/qc_hubs.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L293)
 
 ___
 
@@ -156,7 +156,7 @@ from field: string incharge_username = 13;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:356
+[src/qc_hubs.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L356)
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 location_id = 9;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:328
+[src/qc_hubs.scailo_pb.ts:328](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L328)
 
 ___
 
@@ -188,7 +188,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:321
+[src/qc_hubs.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L321)
 
 ___
 
@@ -204,7 +204,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:300
+[src/qc_hubs.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L300)
 
 ___
 
@@ -220,7 +220,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:335
+[src/qc_hubs.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L335)
 
 ___
 
@@ -236,7 +236,7 @@ from field: string phone = 14;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:363
+[src/qc_hubs.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L363)
 
 ___
 
@@ -252,7 +252,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:314
+[src/qc_hubs.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L314)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:372
+[src/qc_hubs.scailo_pb.ts:372](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L372)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:370
+[src/qc_hubs.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L370)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:371
+[src/qc_hubs.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L371)
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:398
+[src/qc_hubs.scailo_pb.ts:398](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L398)
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:386
+[src/qc_hubs.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L386)
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:390
+[src/qc_hubs.scailo_pb.ts:390](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L390)
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:394
+[src/qc_hubs.scailo_pb.ts:394](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L394)

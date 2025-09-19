@@ -73,7 +73,7 @@ Message\&lt;QCHubsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:148
+[src/qc_hubs.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L148)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:125
+[src/qc_hubs.scailo_pb.ts:125](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L125)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:132
+[src/qc_hubs.scailo_pb.ts:132](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L132)
 
 ___
 
@@ -121,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:97
+[src/qc_hubs.scailo_pb.ts:97](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L97)
 
 ___
 
@@ -137,7 +137,7 @@ from field: string incharge_username = 13;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:139
+[src/qc_hubs.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L139)
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 location_id = 9;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:111
+[src/qc_hubs.scailo_pb.ts:111](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L111)
 
 ___
 
@@ -169,7 +169,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:118
+[src/qc_hubs.scailo_pb.ts:118](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L118)
 
 ___
 
@@ -185,7 +185,7 @@ from field: string phone = 14;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:146
+[src/qc_hubs.scailo_pb.ts:146](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L146)
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:104
+[src/qc_hubs.scailo_pb.ts:104](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L104)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:155
+[src/qc_hubs.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L155)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:153
+[src/qc_hubs.scailo_pb.ts:153](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L153)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:154
+[src/qc_hubs.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L154)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:178
+[src/qc_hubs.scailo_pb.ts:178](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L178)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:166
+[src/qc_hubs.scailo_pb.ts:166](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L166)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:170
+[src/qc_hubs.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L170)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/qc_hubs.scailo_pb.ts:174
+[src/qc_hubs.scailo_pb.ts:174](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/qc_hubs.scailo_pb.ts#L174)

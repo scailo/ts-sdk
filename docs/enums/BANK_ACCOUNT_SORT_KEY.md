@@ -35,7 +35,7 @@ from enum value: BANK_ACCOUNT_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:51
+[src/bank_accounts.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L51)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: BANK_ACCOUNT_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:44
+[src/bank_accounts.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L44)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: BANK_ACCOUNT_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:58
+[src/bank_accounts.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L58)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: BANK_ACCOUNT_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:72
+[src/bank_accounts.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L72)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: BANK_ACCOUNT_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:30
+[src/bank_accounts.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L30)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: BANK_ACCOUNT_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:23
+[src/bank_accounts.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L23)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: BANK_ACCOUNT_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:37
+[src/bank_accounts.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L37)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: BANK_ACCOUNT_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:65
+[src/bank_accounts.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L65)

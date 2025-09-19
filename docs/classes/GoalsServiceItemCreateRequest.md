@@ -76,7 +76,7 @@ Message\&lt;GoalsServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/goals.scailo_pb.ts:689
+[src/goals.scailo_pb.ts:689](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L689)
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: uint64 goal_id = 10;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:624
+[src/goals.scailo_pb.ts:624](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L624)
 
 ___
 
@@ -108,7 +108,7 @@ from field: Scailo.GOAL_ITEM_INPUT_VALUE_TYPE input_value_type = 20;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:652
+[src/goals.scailo_pb.ts:652](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L652)
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 label_id = 12;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:638
+[src/goals.scailo_pb.ts:638](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L638)
 
 ___
 
@@ -140,7 +140,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:631
+[src/goals.scailo_pb.ts:631](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L631)
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 number_acceptable_value = 23;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:673
+[src/goals.scailo_pb.ts:673](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L673)
 
 ___
 
@@ -172,7 +172,7 @@ from field: uint64 number_max_value = 22;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:666
+[src/goals.scailo_pb.ts:666](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L666)
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 number_min_value = 21;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:659
+[src/goals.scailo_pb.ts:659](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L659)
 
 ___
 
@@ -204,7 +204,7 @@ from field: string specifications = 13;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:645
+[src/goals.scailo_pb.ts:645](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L645)
 
 ___
 
@@ -220,7 +220,7 @@ from field: string text_acceptable_value = 31;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:687
+[src/goals.scailo_pb.ts:687](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L687)
 
 ___
 
@@ -236,7 +236,7 @@ from field: repeated string text_values = 30;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:680
+[src/goals.scailo_pb.ts:680](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L680)
 
 ___
 
@@ -252,7 +252,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:617
+[src/goals.scailo_pb.ts:617](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L617)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:696
+[src/goals.scailo_pb.ts:696](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L696)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:694
+[src/goals.scailo_pb.ts:694](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L694)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:695
+[src/goals.scailo_pb.ts:695](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L695)
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:722
+[src/goals.scailo_pb.ts:722](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L722)
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:710
+[src/goals.scailo_pb.ts:710](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L710)
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:714
+[src/goals.scailo_pb.ts:714](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L714)
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:718
+[src/goals.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L718)

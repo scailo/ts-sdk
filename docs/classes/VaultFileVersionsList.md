@@ -66,7 +66,7 @@ Message\&lt;VaultFileVersionsList\&gt;.constructor
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:503
+[src/vault_files.scailo_pb.ts:503](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L503)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VaultFileVersion list = 1;
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:501
+[src/vault_files.scailo_pb.ts:501](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L501)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:510
+[src/vault_files.scailo_pb.ts:510](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L510)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:508
+[src/vault_files.scailo_pb.ts:508](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L508)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:509
+[src/vault_files.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L509)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:526
+[src/vault_files.scailo_pb.ts:526](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L526)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:514
+[src/vault_files.scailo_pb.ts:514](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L514)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:518
+[src/vault_files.scailo_pb.ts:518](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L518)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/vault_files.scailo_pb.ts:522
+[src/vault_files.scailo_pb.ts:522](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vault_files.scailo_pb.ts#L522)

@@ -66,7 +66,7 @@ Message\&lt;MagicLinksList\&gt;.constructor
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:600
+[src/magic_links.scailo_pb.ts:600](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L600)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.MagicLink list = 1;
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:598
+[src/magic_links.scailo_pb.ts:598](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L598)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:607
+[src/magic_links.scailo_pb.ts:607](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L607)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:605
+[src/magic_links.scailo_pb.ts:605](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L605)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:606
+[src/magic_links.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L606)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:623
+[src/magic_links.scailo_pb.ts:623](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L623)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:611
+[src/magic_links.scailo_pb.ts:611](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L611)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:615
+[src/magic_links.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L615)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/magic_links.scailo_pb.ts:619
+[src/magic_links.scailo_pb.ts:619](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/magic_links.scailo_pb.ts#L619)

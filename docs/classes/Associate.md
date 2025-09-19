@@ -83,7 +83,7 @@ Message\&lt;Associate\&gt;.constructor
 
 #### Defined in
 
-src/associates.scailo_pb.ts:261
+[src/associates.scailo_pb.ts:261](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L261)
 
 ## Properties
 
@@ -99,7 +99,7 @@ from field: string anniversary = 23;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:252
+[src/associates.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L252)
 
 ___
 
@@ -115,7 +115,7 @@ from field: string birthday = 22;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:245
+[src/associates.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L245)
 
 ___
 
@@ -131,7 +131,7 @@ from field: string department = 17;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:210
+[src/associates.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L210)
 
 ___
 
@@ -147,7 +147,7 @@ from field: string description = 24;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:259
+[src/associates.scailo_pb.ts:259](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L259)
 
 ___
 
@@ -163,7 +163,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:140
+[src/associates.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L140)
 
 ___
 
@@ -179,7 +179,7 @@ from field: string first_name = 10;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:161
+[src/associates.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L161)
 
 ___
 
@@ -195,7 +195,7 @@ from field: string job_title = 16;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:203
+[src/associates.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L203)
 
 ___
 
@@ -211,7 +211,7 @@ from field: string last_name = 12;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:175
+[src/associates.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L175)
 
 ___
 
@@ -227,7 +227,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:147
+[src/associates.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L147)
 
 ___
 
@@ -243,7 +243,7 @@ from field: string middle_name = 11;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:168
+[src/associates.scailo_pb.ts:168](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L168)
 
 ___
 
@@ -259,7 +259,7 @@ from field: string org_name = 15;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:196
+[src/associates.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L196)
 
 ___
 
@@ -275,7 +275,7 @@ from field: Scailo.ASSOCIATE_ORG_REF_FROM org_ref_from = 13;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:182
+[src/associates.scailo_pb.ts:182](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L182)
 
 ___
 
@@ -291,7 +291,7 @@ from field: uint64 org_ref_id = 14;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:189
+[src/associates.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L189)
 
 ___
 
@@ -307,7 +307,7 @@ from field: string personal_email = 21;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:238
+[src/associates.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L238)
 
 ___
 
@@ -323,7 +323,7 @@ from field: string personal_phone = 20;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:231
+[src/associates.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L231)
 
 ___
 
@@ -339,7 +339,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:154
+[src/associates.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L154)
 
 ___
 
@@ -355,7 +355,7 @@ from field: string work_email = 19;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:224
+[src/associates.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L224)
 
 ___
 
@@ -371,7 +371,7 @@ from field: string work_phone = 18;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:217
+[src/associates.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L217)
 
 ___
 
@@ -381,7 +381,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:268
+[src/associates.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L268)
 
 ___
 
@@ -391,7 +391,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:266
+[src/associates.scailo_pb.ts:266](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L266)
 
 ___
 
@@ -401,7 +401,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:267
+[src/associates.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L267)
 
 ## Methods
 
@@ -689,7 +689,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:301
+[src/associates.scailo_pb.ts:301](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L301)
 
 ___
 
@@ -710,7 +710,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:289
+[src/associates.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L289)
 
 ___
 
@@ -731,7 +731,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:293
+[src/associates.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L293)
 
 ___
 
@@ -752,4 +752,4 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:297
+[src/associates.scailo_pb.ts:297](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L297)

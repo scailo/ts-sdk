@@ -73,7 +73,7 @@ Message\&lt;StoresServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/stores.scailo_pb.ts:246
+[src/stores.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L246)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:223
+[src/stores.scailo_pb.ts:223](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L223)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:230
+[src/stores.scailo_pb.ts:230](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L230)
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:202
+[src/stores.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L202)
 
 ___
 
@@ -137,7 +137,7 @@ from field: string incharge_username = 13;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:237
+[src/stores.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L237)
 
 ___
 
@@ -153,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:216
+[src/stores.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L216)
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:209
+[src/stores.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L209)
 
 ___
 
@@ -185,7 +185,7 @@ from field: string phone = 14;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:244
+[src/stores.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L244)
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:195
+[src/stores.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L195)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:253
+[src/stores.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L253)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:251
+[src/stores.scailo_pb.ts:251](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L251)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:252
+[src/stores.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L252)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:276
+[src/stores.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L276)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:264
+[src/stores.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L264)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:268
+[src/stores.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L268)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:272
+[src/stores.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L272)

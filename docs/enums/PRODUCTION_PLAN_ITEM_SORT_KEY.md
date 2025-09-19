@@ -35,7 +35,7 @@ from enum value: PRODUCTION_PLAN_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:186
+[src/production_plans.scailo_pb.ts:186](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_plans.scailo_pb.ts#L186)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: PRODUCTION_PLAN_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:179
+[src/production_plans.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_plans.scailo_pb.ts#L179)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: PRODUCTION_PLAN_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:193
+[src/production_plans.scailo_pb.ts:193](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_plans.scailo_pb.ts#L193)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: PRODUCTION_PLAN_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:165
+[src/production_plans.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_plans.scailo_pb.ts#L165)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: PRODUCTION_PLAN_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:200
+[src/production_plans.scailo_pb.ts:200](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_plans.scailo_pb.ts#L200)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: PRODUCTION_PLAN_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:158
+[src/production_plans.scailo_pb.ts:158](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_plans.scailo_pb.ts#L158)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: PRODUCTION_PLAN_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:172
+[src/production_plans.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_plans.scailo_pb.ts#L172)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: PRODUCTION_PLAN_ITEM_SORT_KEY_QUANTITY = 11;
 
 #### Defined in
 
-src/production_plans.scailo_pb.ts:207
+[src/production_plans.scailo_pb.ts:207](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/production_plans.scailo_pb.ts#L207)

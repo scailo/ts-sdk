@@ -75,7 +75,7 @@ Message\&lt;Currency\&gt;.constructor
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:350
+[src/currencies.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L350)
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:299
+[src/currencies.scailo_pb.ts:299](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L299)
 
 ___
 
@@ -107,7 +107,7 @@ from field: string description = 14;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:348
+[src/currencies.scailo_pb.ts:348](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L348)
 
 ___
 
@@ -123,7 +123,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:285
+[src/currencies.scailo_pb.ts:285](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L285)
 
 ___
 
@@ -139,7 +139,7 @@ from field: string exponent_name = 13;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:341
+[src/currencies.scailo_pb.ts:341](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L341)
 
 ___
 
@@ -155,7 +155,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:313
+[src/currencies.scailo_pb.ts:313](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L313)
 
 ___
 
@@ -171,7 +171,7 @@ from field: string mantissa_name = 12;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:334
+[src/currencies.scailo_pb.ts:334](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L334)
 
 ___
 
@@ -187,7 +187,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:292
+[src/currencies.scailo_pb.ts:292](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L292)
 
 ___
 
@@ -203,7 +203,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:320
+[src/currencies.scailo_pb.ts:320](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L320)
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:306
+[src/currencies.scailo_pb.ts:306](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L306)
 
 ___
 
@@ -235,7 +235,7 @@ from field: string symbol = 11;
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:327
+[src/currencies.scailo_pb.ts:327](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L327)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:357
+[src/currencies.scailo_pb.ts:357](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L357)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:355
+[src/currencies.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L355)
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:356
+[src/currencies.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L356)
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:382
+[src/currencies.scailo_pb.ts:382](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L382)
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:370
+[src/currencies.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L370)
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:374
+[src/currencies.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L374)
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/currencies.scailo_pb.ts:378
+[src/currencies.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/currencies.scailo_pb.ts#L378)

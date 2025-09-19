@@ -41,7 +41,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:308
+[src/purchases_orders.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L308)
 
 ___
 
@@ -57,7 +57,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:301
+[src/purchases_orders.scailo_pb.ts:301](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L301)
 
 ___
 
@@ -73,7 +73,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:315
+[src/purchases_orders.scailo_pb.ts:315](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L315)
 
 ___
 
@@ -89,7 +89,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:287
+[src/purchases_orders.scailo_pb.ts:287](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L287)
 
 ___
 
@@ -105,7 +105,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_DELIVERY_DATE = 17;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:371
+[src/purchases_orders.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L371)
 
 ___
 
@@ -121,7 +121,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_DISCOUNT = 16;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:364
+[src/purchases_orders.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L364)
 
 ___
 
@@ -137,7 +137,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:322
+[src/purchases_orders.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L322)
 
 ___
 
@@ -153,7 +153,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:280
+[src/purchases_orders.scailo_pb.ts:280](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L280)
 
 ___
 
@@ -169,7 +169,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:329
+[src/purchases_orders.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L329)
 
 ___
 
@@ -185,7 +185,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:294
+[src/purchases_orders.scailo_pb.ts:294](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L294)
 
 ___
 
@@ -201,7 +201,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_TAX_GROUP_ID = 15;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:357
+[src/purchases_orders.scailo_pb.ts:357](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L357)
 
 ___
 
@@ -217,7 +217,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_VENDOR_QUANTITY = 13;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:343
+[src/purchases_orders.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L343)
 
 ___
 
@@ -233,7 +233,7 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_VENDOR_UNIT_PRICE = 14;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:350
+[src/purchases_orders.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L350)
 
 ___
 
@@ -249,4 +249,4 @@ from enum value: PURCHASE_ORDER_ITEM_SORT_KEY_VENDOR_UOM_ID = 12;
 
 #### Defined in
 
-src/purchases_orders.scailo_pb.ts:336
+[src/purchases_orders.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_orders.scailo_pb.ts#L336)

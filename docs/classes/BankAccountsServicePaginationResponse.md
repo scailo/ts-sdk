@@ -69,7 +69,7 @@ Message\&lt;BankAccountsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:499
+[src/bank_accounts.scailo_pb.ts:499](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L499)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:476
+[src/bank_accounts.scailo_pb.ts:476](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L476)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:483
+[src/bank_accounts.scailo_pb.ts:483](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L483)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.BankAccount payload = 4;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:497
+[src/bank_accounts.scailo_pb.ts:497](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L497)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:490
+[src/bank_accounts.scailo_pb.ts:490](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L490)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:506
+[src/bank_accounts.scailo_pb.ts:506](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L506)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:504
+[src/bank_accounts.scailo_pb.ts:504](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L504)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:505
+[src/bank_accounts.scailo_pb.ts:505](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L505)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:525
+[src/bank_accounts.scailo_pb.ts:525](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L525)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:513
+[src/bank_accounts.scailo_pb.ts:513](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L513)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:517
+[src/bank_accounts.scailo_pb.ts:517](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L517)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/bank_accounts.scailo_pb.ts:521
+[src/bank_accounts.scailo_pb.ts:521](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/bank_accounts.scailo_pb.ts#L521)

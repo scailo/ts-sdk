@@ -70,7 +70,7 @@ Message\&lt;StoragesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/storages.scailo_pb.ts:225
+[src/storages.scailo_pb.ts:225](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L225)
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string description = 15;
 
 #### Defined in
 
-src/storages.scailo_pb.ts:223
+[src/storages.scailo_pb.ts:223](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L223)
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/storages.scailo_pb.ts:202
+[src/storages.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L202)
 
 ___
 
@@ -118,7 +118,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/storages.scailo_pb.ts:216
+[src/storages.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L216)
 
 ___
 
@@ -134,7 +134,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/storages.scailo_pb.ts:209
+[src/storages.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L209)
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/storages.scailo_pb.ts:195
+[src/storages.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L195)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:232
+[src/storages.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L232)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:230
+[src/storages.scailo_pb.ts:230](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L230)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:231
+[src/storages.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L231)
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:252
+[src/storages.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L252)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:240
+[src/storages.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L240)
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:244
+[src/storages.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L244)
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/storages.scailo_pb.ts:248
+[src/storages.scailo_pb.ts:248](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/storages.scailo_pb.ts#L248)

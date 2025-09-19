@@ -77,7 +77,7 @@ Message\&lt;PurchasesPaymentsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:330
+[src/purchases_payments.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L330)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 amount_base = 18;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:307
+[src/purchases_payments.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L307)
 
 ___
 
@@ -109,7 +109,7 @@ from field: uint64 amount_net = 19;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:314
+[src/purchases_payments.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L314)
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 bank_account_id = 15;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:286
+[src/purchases_payments.scailo_pb.ts:286](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L286)
 
 ___
 
@@ -141,7 +141,7 @@ from field: uint64 currency_id = 16;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:293
+[src/purchases_payments.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L293)
 
 ___
 
@@ -157,7 +157,7 @@ from field: string description = 21;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:328
+[src/purchases_payments.scailo_pb.ts:328](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L328)
 
 ___
 
@@ -173,7 +173,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:258
+[src/purchases_payments.scailo_pb.ts:258](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L258)
 
 ___
 
@@ -189,7 +189,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:265
+[src/purchases_payments.scailo_pb.ts:265](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L265)
 
 ___
 
@@ -205,7 +205,7 @@ from field: uint64 payment_timestamp = 20;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:321
+[src/purchases_payments.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L321)
 
 ___
 
@@ -221,7 +221,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:279
+[src/purchases_payments.scailo_pb.ts:279](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L279)
 
 ___
 
@@ -237,7 +237,7 @@ from field: string transaction_type = 17;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:300
+[src/purchases_payments.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L300)
 
 ___
 
@@ -253,7 +253,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:251
+[src/purchases_payments.scailo_pb.ts:251](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L251)
 
 ___
 
@@ -269,7 +269,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:272
+[src/purchases_payments.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L272)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:337
+[src/purchases_payments.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L337)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:335
+[src/purchases_payments.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L335)
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:336
+[src/purchases_payments.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L336)
 
 ## Methods
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:364
+[src/purchases_payments.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L364)
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:352
+[src/purchases_payments.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L352)
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:356
+[src/purchases_payments.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L356)
 
 ___
 
@@ -650,4 +650,4 @@ ___
 
 #### Defined in
 
-src/purchases_payments.scailo_pb.ts:360
+[src/purchases_payments.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_payments.scailo_pb.ts#L360)

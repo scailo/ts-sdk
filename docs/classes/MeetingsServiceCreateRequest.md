@@ -74,7 +74,7 @@ Message\&lt;MeetingsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:407
+[src/meetings.scailo_pb.ts:407](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L407)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:398
+[src/meetings.scailo_pb.ts:398](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L398)
 
 ___
 
@@ -106,7 +106,7 @@ from field: uint64 ends_at = 12;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:391
+[src/meetings.scailo_pb.ts:391](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L391)
 
 ___
 
@@ -122,7 +122,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:349
+[src/meetings.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L349)
 
 ___
 
@@ -138,7 +138,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:405
+[src/meetings.scailo_pb.ts:405](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L405)
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 project_id = 9;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:370
+[src/meetings.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L370)
 
 ___
 
@@ -170,7 +170,7 @@ from field: uint64 starts_at = 11;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:384
+[src/meetings.scailo_pb.ts:384](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L384)
 
 ___
 
@@ -186,7 +186,7 @@ from field: string title = 10;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:377
+[src/meetings.scailo_pb.ts:377](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L377)
 
 ___
 
@@ -202,7 +202,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:356
+[src/meetings.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L356)
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 vault_folder_id = 8;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:363
+[src/meetings.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L363)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:414
+[src/meetings.scailo_pb.ts:414](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L414)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:412
+[src/meetings.scailo_pb.ts:412](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L412)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:413
+[src/meetings.scailo_pb.ts:413](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L413)
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:438
+[src/meetings.scailo_pb.ts:438](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L438)
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:426
+[src/meetings.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L426)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:430
+[src/meetings.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L430)
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:434
+[src/meetings.scailo_pb.ts:434](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L434)

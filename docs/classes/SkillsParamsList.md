@@ -66,7 +66,7 @@ Message\&lt;SkillsParamsList\&gt;.constructor
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:418
+[src/skills_params.scailo_pb.ts:418](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L418)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SkillParam list = 1;
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:416
+[src/skills_params.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L416)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:425
+[src/skills_params.scailo_pb.ts:425](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L425)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:423
+[src/skills_params.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L423)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:424
+[src/skills_params.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L424)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:441
+[src/skills_params.scailo_pb.ts:441](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L441)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:429
+[src/skills_params.scailo_pb.ts:429](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L429)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:433
+[src/skills_params.scailo_pb.ts:433](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L433)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/skills_params.scailo_pb.ts:437
+[src/skills_params.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/skills_params.scailo_pb.ts#L437)

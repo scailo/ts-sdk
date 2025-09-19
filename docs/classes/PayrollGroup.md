@@ -75,7 +75,7 @@ Message\&lt;PayrollGroup\&gt;.constructor
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:353
+[src/payroll_groups.scailo_pb.ts:353](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L353)
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:302
+[src/payroll_groups.scailo_pb.ts:302](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L302)
 
 ___
 
@@ -107,7 +107,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:337
+[src/payroll_groups.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L337)
 
 ___
 
@@ -123,7 +123,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:323
+[src/payroll_groups.scailo_pb.ts:323](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L323)
 
 ___
 
@@ -139,7 +139,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:344
+[src/payroll_groups.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L344)
 
 ___
 
@@ -155,7 +155,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:288
+[src/payroll_groups.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L288)
 
 ___
 
@@ -171,7 +171,7 @@ from field: repeated Scailo.PayrollGroupItem list = 20;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:351
+[src/payroll_groups.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L351)
 
 ___
 
@@ -187,7 +187,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:316
+[src/payroll_groups.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L316)
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:295
+[src/payroll_groups.scailo_pb.ts:295](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L295)
 
 ___
 
@@ -219,7 +219,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:330
+[src/payroll_groups.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L330)
 
 ___
 
@@ -235,7 +235,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:309
+[src/payroll_groups.scailo_pb.ts:309](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L309)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:360
+[src/payroll_groups.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L360)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:358
+[src/payroll_groups.scailo_pb.ts:358](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L358)
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:359
+[src/payroll_groups.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L359)
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:385
+[src/payroll_groups.scailo_pb.ts:385](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L385)
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:373
+[src/payroll_groups.scailo_pb.ts:373](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L373)
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:377
+[src/payroll_groups.scailo_pb.ts:377](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L377)
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/payroll_groups.scailo_pb.ts:381
+[src/payroll_groups.scailo_pb.ts:381](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/payroll_groups.scailo_pb.ts#L381)

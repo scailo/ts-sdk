@@ -30,7 +30,7 @@ from enum value: SUPPLY_OFFER_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:293
+[src/supply_offers.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L293)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SUPPLY_OFFER_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:300
+[src/supply_offers.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L300)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SUPPLY_OFFER_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:307
+[src/supply_offers.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L307)

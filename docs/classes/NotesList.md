@@ -66,7 +66,7 @@ Message\&lt;NotesList\&gt;.constructor
 
 #### Defined in
 
-src/notes.scailo_pb.ts:574
+[src/notes.scailo_pb.ts:574](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L574)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Note list = 1;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:572
+[src/notes.scailo_pb.ts:572](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L572)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:581
+[src/notes.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L581)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:579
+[src/notes.scailo_pb.ts:579](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L579)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:580
+[src/notes.scailo_pb.ts:580](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L580)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:597
+[src/notes.scailo_pb.ts:597](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L597)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:585
+[src/notes.scailo_pb.ts:585](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L585)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:589
+[src/notes.scailo_pb.ts:589](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L589)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:593
+[src/notes.scailo_pb.ts:593](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L593)

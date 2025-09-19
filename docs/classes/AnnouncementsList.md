@@ -66,7 +66,7 @@ Message\&lt;AnnouncementsList\&gt;.constructor
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:433
+[src/announcements.scailo_pb.ts:433](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L433)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Announcement list = 1;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:431
+[src/announcements.scailo_pb.ts:431](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L431)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:440
+[src/announcements.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L440)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:438
+[src/announcements.scailo_pb.ts:438](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L438)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:439
+[src/announcements.scailo_pb.ts:439](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L439)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:456
+[src/announcements.scailo_pb.ts:456](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L456)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:444
+[src/announcements.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L444)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:448
+[src/announcements.scailo_pb.ts:448](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L448)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:452
+[src/announcements.scailo_pb.ts:452](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L452)

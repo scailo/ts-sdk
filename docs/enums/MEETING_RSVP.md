@@ -32,7 +32,7 @@ from enum value: MEETING_RSVP_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:133
+[src/meetings.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L133)
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: MEETING_RSVP_MAYBE = 4;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:161
+[src/meetings.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L161)
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: MEETING_RSVP_NO = 3;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:154
+[src/meetings.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L154)
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: MEETING_RSVP_NONE = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:140
+[src/meetings.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L140)
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: MEETING_RSVP_YES = 2;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:147
+[src/meetings.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L147)

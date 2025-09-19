@@ -39,7 +39,7 @@ from enum value: OVERTIME_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:51
+[src/overtimes.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L51)
 
 ___
 
@@ -55,7 +55,7 @@ from enum value: OVERTIME_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:44
+[src/overtimes.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L44)
 
 ___
 
@@ -71,7 +71,7 @@ from enum value: OVERTIME_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:58
+[src/overtimes.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L58)
 
 ___
 
@@ -87,7 +87,7 @@ from enum value: OVERTIME_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:65
+[src/overtimes.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L65)
 
 ___
 
@@ -103,7 +103,7 @@ from enum value: OVERTIME_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:30
+[src/overtimes.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L30)
 
 ___
 
@@ -119,7 +119,7 @@ from enum value: OVERTIME_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:79
+[src/overtimes.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L79)
 
 ___
 
@@ -135,7 +135,7 @@ from enum value: OVERTIME_SORT_KEY_FROM_TIMESTAMP = 13;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:93
+[src/overtimes.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L93)
 
 ___
 
@@ -151,7 +151,7 @@ from enum value: OVERTIME_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:23
+[src/overtimes.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L23)
 
 ___
 
@@ -167,7 +167,7 @@ from enum value: OVERTIME_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:37
+[src/overtimes.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L37)
 
 ___
 
@@ -183,7 +183,7 @@ from enum value: OVERTIME_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:72
+[src/overtimes.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L72)
 
 ___
 
@@ -199,7 +199,7 @@ from enum value: OVERTIME_SORT_KEY_TO_TIMESTAMP = 14;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:100
+[src/overtimes.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L100)
 
 ___
 
@@ -215,4 +215,4 @@ from enum value: OVERTIME_SORT_KEY_USER_ID = 12;
 
 #### Defined in
 
-src/overtimes.scailo_pb.ts:86
+[src/overtimes.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/overtimes.scailo_pb.ts#L86)

@@ -79,7 +79,7 @@ Message\&lt;ComponentsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/components.scailo_pb.ts:174
+[src/components.scailo_pb.ts:174](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L174)
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: string description = 60;
 
 #### Defined in
 
-src/components.scailo_pb.ts:172
+[src/components.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L172)
 
 ___
 
@@ -111,7 +111,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/components.scailo_pb.ts:81
+[src/components.scailo_pb.ts:81](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L81)
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 family_id = 33;
 
 #### Defined in
 
-src/components.scailo_pb.ts:116
+[src/components.scailo_pb.ts:116](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L116)
 
 ___
 
@@ -143,7 +143,7 @@ from field: string internal_item_code = 35;
 
 #### Defined in
 
-src/components.scailo_pb.ts:123
+[src/components.scailo_pb.ts:123](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L123)
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 location_id = 54;
 
 #### Defined in
 
-src/components.scailo_pb.ts:165
+[src/components.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L165)
 
 ___
 
@@ -175,7 +175,7 @@ from field: uint64 quantity = 37;
 
 #### Defined in
 
-src/components.scailo_pb.ts:130
+[src/components.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L130)
 
 ___
 
@@ -191,7 +191,7 @@ from field: Scailo.COMPONENT_REF_FROM ref_from = 31;
 
 #### Defined in
 
-src/components.scailo_pb.ts:102
+[src/components.scailo_pb.ts:102](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L102)
 
 ___
 
@@ -207,7 +207,7 @@ from field: uint64 ref_id = 32;
 
 #### Defined in
 
-src/components.scailo_pb.ts:109
+[src/components.scailo_pb.ts:109](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L109)
 
 ___
 
@@ -223,7 +223,7 @@ from field: uint64 secondary_quantity = 40;
 
 #### Defined in
 
-src/components.scailo_pb.ts:144
+[src/components.scailo_pb.ts:144](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L144)
 
 ___
 
@@ -239,7 +239,7 @@ from field: uint64 secondary_uom_id = 39;
 
 #### Defined in
 
-src/components.scailo_pb.ts:137
+[src/components.scailo_pb.ts:137](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L137)
 
 ___
 
@@ -255,7 +255,7 @@ from field: uint64 shelf_life_timestamp = 41;
 
 #### Defined in
 
-src/components.scailo_pb.ts:151
+[src/components.scailo_pb.ts:151](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L151)
 
 ___
 
@@ -271,7 +271,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-src/components.scailo_pb.ts:88
+[src/components.scailo_pb.ts:88](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L88)
 
 ___
 
@@ -287,7 +287,7 @@ from field: uint64 vault_folder_id = 18;
 
 #### Defined in
 
-src/components.scailo_pb.ts:95
+[src/components.scailo_pb.ts:95](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L95)
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 warranty_timestamp = 42;
 
 #### Defined in
 
-src/components.scailo_pb.ts:158
+[src/components.scailo_pb.ts:158](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L158)
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:181
+[src/components.scailo_pb.ts:181](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L181)
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:179
+[src/components.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L179)
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:180
+[src/components.scailo_pb.ts:180](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L180)
 
 ## Methods
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:210
+[src/components.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L210)
 
 ___
 
@@ -642,7 +642,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:198
+[src/components.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L198)
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:202
+[src/components.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L202)
 
 ___
 
@@ -684,4 +684,4 @@ ___
 
 #### Defined in
 
-src/components.scailo_pb.ts:206
+[src/components.scailo_pb.ts:206](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/components.scailo_pb.ts#L206)

@@ -69,7 +69,7 @@ Message\&lt;NotesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/notes.scailo_pb.ts:719
+[src/notes.scailo_pb.ts:719](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L719)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:696
+[src/notes.scailo_pb.ts:696](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L696)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:703
+[src/notes.scailo_pb.ts:703](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L703)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Note payload = 4;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:717
+[src/notes.scailo_pb.ts:717](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L717)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/notes.scailo_pb.ts:710
+[src/notes.scailo_pb.ts:710](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L710)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:726
+[src/notes.scailo_pb.ts:726](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L726)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:724
+[src/notes.scailo_pb.ts:724](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L724)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:725
+[src/notes.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L725)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:745
+[src/notes.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L745)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:733
+[src/notes.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L733)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:737
+[src/notes.scailo_pb.ts:737](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L737)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/notes.scailo_pb.ts:741
+[src/notes.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/notes.scailo_pb.ts#L741)

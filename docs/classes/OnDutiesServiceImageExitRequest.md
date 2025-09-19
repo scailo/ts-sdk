@@ -70,7 +70,7 @@ Message\&lt;OnDutiesServiceImageExitRequest\&gt;.constructor
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:458
+[src/on_duties.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L458)
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: bytes exit_image = 13;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:435
+[src/on_duties.scailo_pb.ts:435](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L435)
 
 ___
 
@@ -102,7 +102,7 @@ from field: string exit_image_mime_type = 14;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:442
+[src/on_duties.scailo_pb.ts:442](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L442)
 
 ___
 
@@ -118,7 +118,7 @@ from field: double exit_latitude = 15;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:449
+[src/on_duties.scailo_pb.ts:449](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L449)
 
 ___
 
@@ -134,7 +134,7 @@ from field: double exit_longitude = 16;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:456
+[src/on_duties.scailo_pb.ts:456](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L456)
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:428
+[src/on_duties.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L428)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:465
+[src/on_duties.scailo_pb.ts:465](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L465)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:463
+[src/on_duties.scailo_pb.ts:463](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L463)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:464
+[src/on_duties.scailo_pb.ts:464](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L464)
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:485
+[src/on_duties.scailo_pb.ts:485](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L485)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:473
+[src/on_duties.scailo_pb.ts:473](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L473)
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:477
+[src/on_duties.scailo_pb.ts:477](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L477)
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/on_duties.scailo_pb.ts:481
+[src/on_duties.scailo_pb.ts:481](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/on_duties.scailo_pb.ts#L481)

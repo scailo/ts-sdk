@@ -69,7 +69,7 @@ Message\&lt;AnnouncementsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:578
+[src/announcements.scailo_pb.ts:578](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L578)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:555
+[src/announcements.scailo_pb.ts:555](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L555)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:562
+[src/announcements.scailo_pb.ts:562](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L562)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Announcement payload = 4;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:576
+[src/announcements.scailo_pb.ts:576](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L576)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:569
+[src/announcements.scailo_pb.ts:569](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L569)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:585
+[src/announcements.scailo_pb.ts:585](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L585)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:583
+[src/announcements.scailo_pb.ts:583](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L583)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:584
+[src/announcements.scailo_pb.ts:584](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L584)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:604
+[src/announcements.scailo_pb.ts:604](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L604)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:592
+[src/announcements.scailo_pb.ts:592](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L592)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:596
+[src/announcements.scailo_pb.ts:596](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L596)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/announcements.scailo_pb.ts:600
+[src/announcements.scailo_pb.ts:600](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/announcements.scailo_pb.ts#L600)

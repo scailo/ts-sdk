@@ -35,7 +35,7 @@ from enum value: TAX_GROUP_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:94
+[src/tax_groups.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L94)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: TAX_GROUP_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:87
+[src/tax_groups.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L87)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: TAX_GROUP_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:101
+[src/tax_groups.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L101)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: TAX_GROUP_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:115
+[src/tax_groups.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L115)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: TAX_GROUP_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:73
+[src/tax_groups.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L73)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: TAX_GROUP_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:66
+[src/tax_groups.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L66)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: TAX_GROUP_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:80
+[src/tax_groups.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L80)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: TAX_GROUP_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:108
+[src/tax_groups.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L108)

@@ -38,7 +38,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:166
+[src/inward_jobs.scailo_pb.ts:166](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L166)
 
 ___
 
@@ -54,7 +54,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:159
+[src/inward_jobs.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L159)
 
 ___
 
@@ -70,7 +70,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:173
+[src/inward_jobs.scailo_pb.ts:173](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L173)
 
 ___
 
@@ -86,7 +86,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:208
+[src/inward_jobs.scailo_pb.ts:208](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L208)
 
 ___
 
@@ -102,7 +102,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:201
+[src/inward_jobs.scailo_pb.ts:201](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L201)
 
 ___
 
@@ -118,7 +118,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:194
+[src/inward_jobs.scailo_pb.ts:194](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L194)
 
 ___
 
@@ -134,7 +134,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:145
+[src/inward_jobs.scailo_pb.ts:145](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L145)
 
 ___
 
@@ -150,7 +150,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:180
+[src/inward_jobs.scailo_pb.ts:180](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L180)
 
 ___
 
@@ -166,7 +166,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:138
+[src/inward_jobs.scailo_pb.ts:138](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L138)
 
 ___
 
@@ -182,7 +182,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:187
+[src/inward_jobs.scailo_pb.ts:187](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L187)
 
 ___
 
@@ -198,4 +198,4 @@ from enum value: INWARD_JOB_INWARD_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:152
+[src/inward_jobs.scailo_pb.ts:152](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L152)

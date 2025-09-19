@@ -66,7 +66,7 @@ Message\&lt;AttendancesAmendmentsList\&gt;.constructor
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:538
+[src/attendances_amendments.scailo_pb.ts:538](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L538)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.AttendanceAmendment list = 1;
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:536
+[src/attendances_amendments.scailo_pb.ts:536](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L536)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:545
+[src/attendances_amendments.scailo_pb.ts:545](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L545)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:543
+[src/attendances_amendments.scailo_pb.ts:543](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L543)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:544
+[src/attendances_amendments.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L544)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:561
+[src/attendances_amendments.scailo_pb.ts:561](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L561)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:549
+[src/attendances_amendments.scailo_pb.ts:549](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L549)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:553
+[src/attendances_amendments.scailo_pb.ts:553](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L553)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:557
+[src/attendances_amendments.scailo_pb.ts:557](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L557)

@@ -37,7 +37,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:169
+[src/purchases_enquiries.scailo_pb.ts:169](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L169)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:162
+[src/purchases_enquiries.scailo_pb.ts:162](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L162)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:176
+[src/purchases_enquiries.scailo_pb.ts:176](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L176)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:183
+[src/purchases_enquiries.scailo_pb.ts:183](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L183)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:148
+[src/purchases_enquiries.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L148)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:197
+[src/purchases_enquiries.scailo_pb.ts:197](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L197)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:141
+[src/purchases_enquiries.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L141)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:155
+[src/purchases_enquiries.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L155)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_PRIORITY = 14;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:204
+[src/purchases_enquiries.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L204)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: PURCHASE_ENQUIRY_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-src/purchases_enquiries.scailo_pb.ts:190
+[src/purchases_enquiries.scailo_pb.ts:190](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/purchases_enquiries.scailo_pb.ts#L190)

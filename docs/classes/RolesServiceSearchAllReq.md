@@ -73,7 +73,7 @@ Message\&lt;RolesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1266
+[src/roles.scailo_pb.ts:1266](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1266)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1222
+[src/roles.scailo_pb.ts:1222](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1222)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1250
+[src/roles.scailo_pb.ts:1250](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1250)
 
 ___
 
@@ -121,7 +121,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1215
+[src/roles.scailo_pb.ts:1215](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1215)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1229
+[src/roles.scailo_pb.ts:1229](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1229)
 
 ___
 
@@ -153,7 +153,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1264
+[src/roles.scailo_pb.ts:1264](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1264)
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.ROLE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1243
+[src/roles.scailo_pb.ts:1243](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1243)
 
 ___
 
@@ -185,7 +185,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1236
+[src/roles.scailo_pb.ts:1236](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1236)
 
 ___
 
@@ -201,7 +201,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1257
+[src/roles.scailo_pb.ts:1257](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1257)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1273
+[src/roles.scailo_pb.ts:1273](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1273)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1271
+[src/roles.scailo_pb.ts:1271](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1271)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1272
+[src/roles.scailo_pb.ts:1272](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1272)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1296
+[src/roles.scailo_pb.ts:1296](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1296)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1284
+[src/roles.scailo_pb.ts:1284](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1284)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1288
+[src/roles.scailo_pb.ts:1288](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1288)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/roles.scailo_pb.ts:1292
+[src/roles.scailo_pb.ts:1292](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/roles.scailo_pb.ts#L1292)

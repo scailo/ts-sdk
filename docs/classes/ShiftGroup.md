@@ -76,7 +76,7 @@ Message\&lt;ShiftGroup\&gt;.constructor
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:355
+[src/shifts_groups.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L355)
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:297
+[src/shifts_groups.scailo_pb.ts:297](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L297)
 
 ___
 
@@ -108,7 +108,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:339
+[src/shifts_groups.scailo_pb.ts:339](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L339)
 
 ___
 
@@ -124,7 +124,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:318
+[src/shifts_groups.scailo_pb.ts:318](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L318)
 
 ___
 
@@ -140,7 +140,7 @@ from field: string description = 12;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:346
+[src/shifts_groups.scailo_pb.ts:346](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L346)
 
 ___
 
@@ -156,7 +156,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:283
+[src/shifts_groups.scailo_pb.ts:283](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L283)
 
 ___
 
@@ -172,7 +172,7 @@ from field: repeated Scailo.ShiftGroupShift list = 20;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:353
+[src/shifts_groups.scailo_pb.ts:353](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L353)
 
 ___
 
@@ -188,7 +188,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:311
+[src/shifts_groups.scailo_pb.ts:311](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L311)
 
 ___
 
@@ -204,7 +204,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:290
+[src/shifts_groups.scailo_pb.ts:290](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L290)
 
 ___
 
@@ -220,7 +220,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:332
+[src/shifts_groups.scailo_pb.ts:332](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L332)
 
 ___
 
@@ -236,7 +236,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:304
+[src/shifts_groups.scailo_pb.ts:304](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L304)
 
 ___
 
@@ -252,7 +252,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:325
+[src/shifts_groups.scailo_pb.ts:325](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L325)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:362
+[src/shifts_groups.scailo_pb.ts:362](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L362)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:360
+[src/shifts_groups.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L360)
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:361
+[src/shifts_groups.scailo_pb.ts:361](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L361)
 
 ## Methods
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:388
+[src/shifts_groups.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L388)
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:376
+[src/shifts_groups.scailo_pb.ts:376](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L376)
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:380
+[src/shifts_groups.scailo_pb.ts:380](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L380)
 
 ___
 
@@ -633,4 +633,4 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:384
+[src/shifts_groups.scailo_pb.ts:384](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L384)

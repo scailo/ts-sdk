@@ -72,7 +72,7 @@ Message\&lt;ActivitiesStatusesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:231
+[src/activities_statuses.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L231)
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: string bg_color = 13;
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:222
+[src/activities_statuses.scailo_pb.ts:222](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L222)
 
 ___
 
@@ -104,7 +104,7 @@ from field: string description = 14;
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:229
+[src/activities_statuses.scailo_pb.ts:229](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L229)
 
 ___
 
@@ -120,7 +120,7 @@ from field: string fg_color = 12;
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:215
+[src/activities_statuses.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L215)
 
 ___
 
@@ -136,7 +136,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:194
+[src/activities_statuses.scailo_pb.ts:194](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L194)
 
 ___
 
@@ -152,7 +152,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:208
+[src/activities_statuses.scailo_pb.ts:208](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L208)
 
 ___
 
@@ -168,7 +168,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:201
+[src/activities_statuses.scailo_pb.ts:201](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L201)
 
 ___
 
@@ -184,7 +184,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:187
+[src/activities_statuses.scailo_pb.ts:187](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L187)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:238
+[src/activities_statuses.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L238)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:236
+[src/activities_statuses.scailo_pb.ts:236](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L236)
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:237
+[src/activities_statuses.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L237)
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:260
+[src/activities_statuses.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L260)
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:248
+[src/activities_statuses.scailo_pb.ts:248](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L248)
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:252
+[src/activities_statuses.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L252)
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/activities_statuses.scailo_pb.ts:256
+[src/activities_statuses.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/activities_statuses.scailo_pb.ts#L256)

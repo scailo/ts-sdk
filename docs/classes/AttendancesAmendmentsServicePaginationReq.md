@@ -71,7 +71,7 @@ Message\&lt;AttendancesAmendmentsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:615
+[src/attendances_amendments.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L615)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:585
+[src/attendances_amendments.scailo_pb.ts:585](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L585)
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:578
+[src/attendances_amendments.scailo_pb.ts:578](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L578)
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:592
+[src/attendances_amendments.scailo_pb.ts:592](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L592)
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.ATTENDANCE_AMENDMENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:606
+[src/attendances_amendments.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L606)
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:599
+[src/attendances_amendments.scailo_pb.ts:599](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L599)
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:613
+[src/attendances_amendments.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L613)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:622
+[src/attendances_amendments.scailo_pb.ts:622](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L622)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:620
+[src/attendances_amendments.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L620)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:621
+[src/attendances_amendments.scailo_pb.ts:621](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L621)
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:643
+[src/attendances_amendments.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L643)
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:631
+[src/attendances_amendments.scailo_pb.ts:631](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L631)
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:635
+[src/attendances_amendments.scailo_pb.ts:635](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L635)
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-src/attendances_amendments.scailo_pb.ts:639
+[src/attendances_amendments.scailo_pb.ts:639](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/attendances_amendments.scailo_pb.ts#L639)

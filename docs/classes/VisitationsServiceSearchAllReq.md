@@ -74,7 +74,7 @@ Message\&lt;VisitationsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1388
+[src/visitations.scailo_pb.ts:1388](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1388)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1337
+[src/visitations.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1337)
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1365
+[src/visitations.scailo_pb.ts:1365](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1365)
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1330
+[src/visitations.scailo_pb.ts:1330](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1330)
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1344
+[src/visitations.scailo_pb.ts:1344](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1344)
 
 ___
 
@@ -154,7 +154,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1379
+[src/visitations.scailo_pb.ts:1379](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1379)
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.VISITATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1358
+[src/visitations.scailo_pb.ts:1358](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1358)
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1351
+[src/visitations.scailo_pb.ts:1351](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1351)
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1372
+[src/visitations.scailo_pb.ts:1372](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1372)
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1386
+[src/visitations.scailo_pb.ts:1386](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1386)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1395
+[src/visitations.scailo_pb.ts:1395](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1395)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1393
+[src/visitations.scailo_pb.ts:1393](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1393)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1394
+[src/visitations.scailo_pb.ts:1394](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1394)
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1419
+[src/visitations.scailo_pb.ts:1419](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1419)
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1407
+[src/visitations.scailo_pb.ts:1407](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1407)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1411
+[src/visitations.scailo_pb.ts:1411](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1411)
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/visitations.scailo_pb.ts:1415
+[src/visitations.scailo_pb.ts:1415](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/visitations.scailo_pb.ts#L1415)

@@ -66,7 +66,7 @@ Message\&lt;HolidaysList\&gt;.constructor
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:661
+[src/holidays.scailo_pb.ts:661](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L661)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Holiday list = 1;
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:659
+[src/holidays.scailo_pb.ts:659](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L659)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:668
+[src/holidays.scailo_pb.ts:668](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L668)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:666
+[src/holidays.scailo_pb.ts:666](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L666)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:667
+[src/holidays.scailo_pb.ts:667](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L667)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:684
+[src/holidays.scailo_pb.ts:684](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L684)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:672
+[src/holidays.scailo_pb.ts:672](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L672)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:676
+[src/holidays.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L676)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/holidays.scailo_pb.ts:680
+[src/holidays.scailo_pb.ts:680](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/holidays.scailo_pb.ts#L680)

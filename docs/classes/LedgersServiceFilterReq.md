@@ -84,7 +84,7 @@ Message\&lt;LedgersServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:693
+[src/ledgers.scailo_pb.ts:693](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L693)
 
 ## Properties
 
@@ -100,7 +100,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:656
+[src/ledgers.scailo_pb.ts:656](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L656)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:649
+[src/ledgers.scailo_pb.ts:649](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L649)
 
 ___
 
@@ -132,7 +132,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:642
+[src/ledgers.scailo_pb.ts:642](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L642)
 
 ___
 
@@ -148,7 +148,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:663
+[src/ledgers.scailo_pb.ts:663](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L663)
 
 ___
 
@@ -164,7 +164,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:677
+[src/ledgers.scailo_pb.ts:677](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L677)
 
 ___
 
@@ -180,7 +180,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:572
+[src/ledgers.scailo_pb.ts:572](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L572)
 
 ___
 
@@ -196,7 +196,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:607
+[src/ledgers.scailo_pb.ts:607](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L607)
 
 ___
 
@@ -212,7 +212,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:600
+[src/ledgers.scailo_pb.ts:600](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L600)
 
 ___
 
@@ -228,7 +228,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:628
+[src/ledgers.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L628)
 
 ___
 
@@ -244,7 +244,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:565
+[src/ledgers.scailo_pb.ts:565](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L565)
 
 ___
 
@@ -260,7 +260,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 23;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:691
+[src/ledgers.scailo_pb.ts:691](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L691)
 
 ___
 
@@ -276,7 +276,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:621
+[src/ledgers.scailo_pb.ts:621](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L621)
 
 ___
 
@@ -292,7 +292,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:614
+[src/ledgers.scailo_pb.ts:614](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L614)
 
 ___
 
@@ -308,7 +308,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:670
+[src/ledgers.scailo_pb.ts:670](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L670)
 
 ___
 
@@ -324,7 +324,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:579
+[src/ledgers.scailo_pb.ts:579](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L579)
 
 ___
 
@@ -340,7 +340,7 @@ from field: uint64 parent_ledger_id = 22;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:684
+[src/ledgers.scailo_pb.ts:684](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L684)
 
 ___
 
@@ -356,7 +356,7 @@ from field: Scailo.LEDGER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:593
+[src/ledgers.scailo_pb.ts:593](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L593)
 
 ___
 
@@ -372,7 +372,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:586
+[src/ledgers.scailo_pb.ts:586](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L586)
 
 ___
 
@@ -388,7 +388,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:635
+[src/ledgers.scailo_pb.ts:635](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L635)
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:700
+[src/ledgers.scailo_pb.ts:700](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L700)
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:698
+[src/ledgers.scailo_pb.ts:698](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L698)
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:699
+[src/ledgers.scailo_pb.ts:699](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L699)
 
 ## Methods
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:734
+[src/ledgers.scailo_pb.ts:734](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L734)
 
 ___
 
@@ -727,7 +727,7 @@ ___
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:722
+[src/ledgers.scailo_pb.ts:722](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L722)
 
 ___
 
@@ -748,7 +748,7 @@ ___
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:726
+[src/ledgers.scailo_pb.ts:726](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L726)
 
 ___
 
@@ -769,4 +769,4 @@ ___
 
 #### Defined in
 
-src/ledgers.scailo_pb.ts:730
+[src/ledgers.scailo_pb.ts:730](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/ledgers.scailo_pb.ts#L730)

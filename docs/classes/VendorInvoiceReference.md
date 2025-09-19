@@ -72,7 +72,7 @@ Message\&lt;VendorInvoiceReference\&gt;.constructor
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2448
+[src/vendor_invoices.scailo_pb.ts:2448](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2448)
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2418
+[src/vendor_invoices.scailo_pb.ts:2418](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2418)
 
 ___
 
@@ -104,7 +104,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2404
+[src/vendor_invoices.scailo_pb.ts:2404](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2404)
 
 ___
 
@@ -120,7 +120,7 @@ from field: uint64 goods_receipt_id = 11;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2446
+[src/vendor_invoices.scailo_pb.ts:2446](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2446)
 
 ___
 
@@ -136,7 +136,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2411
+[src/vendor_invoices.scailo_pb.ts:2411](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2411)
 
 ___
 
@@ -152,7 +152,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2425
+[src/vendor_invoices.scailo_pb.ts:2425](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2425)
 
 ___
 
@@ -168,7 +168,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2432
+[src/vendor_invoices.scailo_pb.ts:2432](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2432)
 
 ___
 
@@ -184,7 +184,7 @@ from field: uint64 vendor_invoice_id = 10;
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2439
+[src/vendor_invoices.scailo_pb.ts:2439](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2439)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2455
+[src/vendor_invoices.scailo_pb.ts:2455](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2455)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2453
+[src/vendor_invoices.scailo_pb.ts:2453](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2453)
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2454
+[src/vendor_invoices.scailo_pb.ts:2454](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2454)
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2477
+[src/vendor_invoices.scailo_pb.ts:2477](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2477)
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2465
+[src/vendor_invoices.scailo_pb.ts:2465](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2465)
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2469
+[src/vendor_invoices.scailo_pb.ts:2469](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2469)
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-src/vendor_invoices.scailo_pb.ts:2473
+[src/vendor_invoices.scailo_pb.ts:2473](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendor_invoices.scailo_pb.ts#L2473)

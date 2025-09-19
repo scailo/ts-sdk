@@ -66,7 +66,7 @@ Message\&lt;ShiftsGroupsList\&gt;.constructor
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:621
+[src/shifts_groups.scailo_pb.ts:621](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L621)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ShiftGroup list = 1;
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:619
+[src/shifts_groups.scailo_pb.ts:619](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L619)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:628
+[src/shifts_groups.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L628)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:626
+[src/shifts_groups.scailo_pb.ts:626](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L626)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:627
+[src/shifts_groups.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L627)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:644
+[src/shifts_groups.scailo_pb.ts:644](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L644)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:632
+[src/shifts_groups.scailo_pb.ts:632](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L632)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:636
+[src/shifts_groups.scailo_pb.ts:636](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L636)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/shifts_groups.scailo_pb.ts:640
+[src/shifts_groups.scailo_pb.ts:640](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts_groups.scailo_pb.ts#L640)

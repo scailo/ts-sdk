@@ -81,7 +81,7 @@ Message\&lt;TaxParam\&gt;.constructor
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:502
+[src/tax_params.scailo_pb.ts:502](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L502)
 
 ## Properties
 
@@ -97,7 +97,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:409
+[src/tax_params.scailo_pb.ts:409](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L409)
 
 ___
 
@@ -113,7 +113,7 @@ from field: Scailo.TAX_PARAM_CATEGORY category = 18;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:493
+[src/tax_params.scailo_pb.ts:493](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L493)
 
 ___
 
@@ -129,7 +129,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:437
+[src/tax_params.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L437)
 
 ___
 
@@ -145,7 +145,7 @@ from field: string description = 20;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:500
+[src/tax_params.scailo_pb.ts:500](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L500)
 
 ___
 
@@ -161,7 +161,7 @@ from field: uint64 divisor = 14;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:465
+[src/tax_params.scailo_pb.ts:465](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L465)
 
 ___
 
@@ -177,7 +177,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:395
+[src/tax_params.scailo_pb.ts:395](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L395)
 
 ___
 
@@ -193,7 +193,7 @@ from field: uint64 input_credit_percentage = 15;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:472
+[src/tax_params.scailo_pb.ts:472](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L472)
 
 ___
 
@@ -209,7 +209,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:423
+[src/tax_params.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L423)
 
 ___
 
@@ -225,7 +225,7 @@ from field: int64 max_amount = 17;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:486
+[src/tax_params.scailo_pb.ts:486](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L486)
 
 ___
 
@@ -241,7 +241,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:402
+[src/tax_params.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L402)
 
 ___
 
@@ -257,7 +257,7 @@ from field: int64 min_amount = 16;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:479
+[src/tax_params.scailo_pb.ts:479](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L479)
 
 ___
 
@@ -273,7 +273,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:430
+[src/tax_params.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L430)
 
 ___
 
@@ -289,7 +289,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:416
+[src/tax_params.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L416)
 
 ___
 
@@ -305,7 +305,7 @@ from field: uint64 tax_fixed_amount = 12;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:451
+[src/tax_params.scailo_pb.ts:451](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L451)
 
 ___
 
@@ -321,7 +321,7 @@ from field: uint64 tax_rate_percentage = 13;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:458
+[src/tax_params.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L458)
 
 ___
 
@@ -337,7 +337,7 @@ from field: Scailo.TAX_PARAM_VALUE_TYPE value_type = 11;
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:444
+[src/tax_params.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L444)
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:509
+[src/tax_params.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L509)
 
 ___
 
@@ -357,7 +357,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:507
+[src/tax_params.scailo_pb.ts:507](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L507)
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:508
+[src/tax_params.scailo_pb.ts:508](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L508)
 
 ## Methods
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:540
+[src/tax_params.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L540)
 
 ___
 
@@ -676,7 +676,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:528
+[src/tax_params.scailo_pb.ts:528](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L528)
 
 ___
 
@@ -697,7 +697,7 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:532
+[src/tax_params.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L532)
 
 ___
 
@@ -718,4 +718,4 @@ ___
 
 #### Defined in
 
-src/tax_params.scailo_pb.ts:536
+[src/tax_params.scailo_pb.ts:536](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_params.scailo_pb.ts#L536)

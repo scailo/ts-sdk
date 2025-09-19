@@ -74,7 +74,7 @@ Message\&lt;UserPrimaryInfo\&gt;.constructor
 
 #### Defined in
 
-src/users.scailo_pb.ts:1053
+[src/users.scailo_pb.ts:1053](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1053)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: string blood_group = 20;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1051
+[src/users.scailo_pb.ts:1051](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1051)
 
 ___
 
@@ -106,7 +106,7 @@ from field: bytes mfa_secret = 16;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1044
+[src/users.scailo_pb.ts:1044](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1044)
 
 ___
 
@@ -122,7 +122,7 @@ from field: bool mfa_status = 15;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1037
+[src/users.scailo_pb.ts:1037](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1037)
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 mobile_role_id = 14;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1030
+[src/users.scailo_pb.ts:1030](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1030)
 
 ___
 
@@ -154,7 +154,7 @@ from field: string name = 11;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1009
+[src/users.scailo_pb.ts:1009](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1009)
 
 ___
 
@@ -170,7 +170,7 @@ from field: bytes password = 12;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1016
+[src/users.scailo_pb.ts:1016](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1016)
 
 ___
 
@@ -186,7 +186,7 @@ from field: uint64 role_id = 13;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1023
+[src/users.scailo_pb.ts:1023](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1023)
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.USER_TYPE user_type = 7;
 
 #### Defined in
 
-src/users.scailo_pb.ts:995
+[src/users.scailo_pb.ts:995](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L995)
 
 ___
 
@@ -218,7 +218,7 @@ from field: string username = 10;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1002
+[src/users.scailo_pb.ts:1002](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1002)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1060
+[src/users.scailo_pb.ts:1060](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1060)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1058
+[src/users.scailo_pb.ts:1058](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1058)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1059
+[src/users.scailo_pb.ts:1059](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1059)
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1084
+[src/users.scailo_pb.ts:1084](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1084)
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1072
+[src/users.scailo_pb.ts:1072](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1072)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1076
+[src/users.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1076)
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:1080
+[src/users.scailo_pb.ts:1080](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1080)

@@ -70,7 +70,7 @@ Message\&lt;AmendmentLog\&gt;.constructor
 
 #### Defined in
 
-src/base.scailo_pb.ts:3822
+[src/base.scailo_pb.ts:3822](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3822)
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string comment = 20;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3820
+[src/base.scailo_pb.ts:3820](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3820)
 
 ___
 
@@ -102,7 +102,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3792
+[src/base.scailo_pb.ts:3792](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3792)
 
 ___
 
@@ -118,7 +118,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3799
+[src/base.scailo_pb.ts:3799](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3799)
 
 ___
 
@@ -134,7 +134,7 @@ from field: Scailo.AMENDMENT_LOG_REF_FOR ref_for = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3806
+[src/base.scailo_pb.ts:3806](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3806)
 
 ___
 
@@ -150,7 +150,7 @@ from field: uint64 ref_id = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:3813
+[src/base.scailo_pb.ts:3813](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3813)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3829
+[src/base.scailo_pb.ts:3829](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3829)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3827
+[src/base.scailo_pb.ts:3827](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3827)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3828
+[src/base.scailo_pb.ts:3828](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3828)
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3849
+[src/base.scailo_pb.ts:3849](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3849)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3837
+[src/base.scailo_pb.ts:3837](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3837)
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3841
+[src/base.scailo_pb.ts:3841](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3841)
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-src/base.scailo_pb.ts:3845
+[src/base.scailo_pb.ts:3845](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L3845)

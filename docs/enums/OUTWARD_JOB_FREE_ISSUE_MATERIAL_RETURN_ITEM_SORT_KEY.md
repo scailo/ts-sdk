@@ -37,7 +37,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_APPROVED_B
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:78
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L78)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_APPROVED_O
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:71
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L71)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_APPROVER_R
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:85
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L85)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_CREATED_AT
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:57
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L57)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_FAMILY_ID 
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:92
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L92)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_ID_UNSPECI
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:50
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L50)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_INTERNAL_Q
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:99
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L99)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_MODIFIED_A
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:64
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L64)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_VENDOR_QUA
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:113
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L113)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_SORT_KEY_VENDOR_UOM
 
 #### Defined in
 
-src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:106
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L106)

@@ -66,7 +66,7 @@ Message\&lt;InfrastructuresList\&gt;.constructor
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:739
+[src/infrastructures.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L739)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Infrastructure list = 1;
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:737
+[src/infrastructures.scailo_pb.ts:737](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L737)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:746
+[src/infrastructures.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L746)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:744
+[src/infrastructures.scailo_pb.ts:744](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L744)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:745
+[src/infrastructures.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L745)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:762
+[src/infrastructures.scailo_pb.ts:762](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L762)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:750
+[src/infrastructures.scailo_pb.ts:750](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L750)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:754
+[src/infrastructures.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L754)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/infrastructures.scailo_pb.ts:758
+[src/infrastructures.scailo_pb.ts:758](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/infrastructures.scailo_pb.ts#L758)

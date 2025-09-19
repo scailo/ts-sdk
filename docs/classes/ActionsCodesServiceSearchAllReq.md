@@ -75,7 +75,7 @@ Message\&lt;ActionsCodesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1050
+[src/actions_codes.scailo_pb.ts:1050](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1050)
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:992
+[src/actions_codes.scailo_pb.ts:992](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L992)
 
 ___
 
@@ -107,7 +107,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1020
+[src/actions_codes.scailo_pb.ts:1020](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1020)
 
 ___
 
@@ -123,7 +123,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:985
+[src/actions_codes.scailo_pb.ts:985](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L985)
 
 ___
 
@@ -139,7 +139,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 26;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1048
+[src/actions_codes.scailo_pb.ts:1048](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1048)
 
 ___
 
@@ -155,7 +155,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:999
+[src/actions_codes.scailo_pb.ts:999](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L999)
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 parent_action_code_id = 25;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1041
+[src/actions_codes.scailo_pb.ts:1041](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1041)
 
 ___
 
@@ -187,7 +187,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1034
+[src/actions_codes.scailo_pb.ts:1034](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1034)
 
 ___
 
@@ -203,7 +203,7 @@ from field: Scailo.ACTION_CODE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1013
+[src/actions_codes.scailo_pb.ts:1013](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1013)
 
 ___
 
@@ -219,7 +219,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1006
+[src/actions_codes.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1006)
 
 ___
 
@@ -235,7 +235,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1027
+[src/actions_codes.scailo_pb.ts:1027](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1027)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1057
+[src/actions_codes.scailo_pb.ts:1057](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1057)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1055
+[src/actions_codes.scailo_pb.ts:1055](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1055)
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1056
+[src/actions_codes.scailo_pb.ts:1056](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1056)
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1082
+[src/actions_codes.scailo_pb.ts:1082](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1082)
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1070
+[src/actions_codes.scailo_pb.ts:1070](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1070)
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1074
+[src/actions_codes.scailo_pb.ts:1074](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1074)
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-src/actions_codes.scailo_pb.ts:1078
+[src/actions_codes.scailo_pb.ts:1078](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/actions_codes.scailo_pb.ts#L1078)

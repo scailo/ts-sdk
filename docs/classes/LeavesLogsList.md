@@ -66,7 +66,7 @@ Message\&lt;LeavesLogsList\&gt;.constructor
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:337
+[src/leaves_logs.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L337)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.LeaveLog list = 1;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:335
+[src/leaves_logs.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L335)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:344
+[src/leaves_logs.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L344)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:342
+[src/leaves_logs.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L342)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:343
+[src/leaves_logs.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L343)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:360
+[src/leaves_logs.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L360)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:348
+[src/leaves_logs.scailo_pb.ts:348](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L348)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:352
+[src/leaves_logs.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L352)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:356
+[src/leaves_logs.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L356)

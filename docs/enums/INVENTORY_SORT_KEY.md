@@ -41,7 +41,7 @@ from enum value: INVENTORY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/base.scailo_pb.ts:841
+[src/base.scailo_pb.ts:841](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L841)
 
 ___
 
@@ -57,7 +57,7 @@ from enum value: INVENTORY_SORT_KEY_DISCARDED_AT = 11;
 
 #### Defined in
 
-src/base.scailo_pb.ts:862
+[src/base.scailo_pb.ts:862](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L862)
 
 ___
 
@@ -73,7 +73,7 @@ from enum value: INVENTORY_SORT_KEY_FAMILY_ID = 14;
 
 #### Defined in
 
-src/base.scailo_pb.ts:883
+[src/base.scailo_pb.ts:883](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L883)
 
 ___
 
@@ -89,7 +89,7 @@ from enum value: INVENTORY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/base.scailo_pb.ts:834
+[src/base.scailo_pb.ts:834](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L834)
 
 ___
 
@@ -105,7 +105,7 @@ from enum value: INVENTORY_SORT_KEY_INTERNAL_ITEM_CODE = 20;
 
 #### Defined in
 
-src/base.scailo_pb.ts:890
+[src/base.scailo_pb.ts:890](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L890)
 
 ___
 
@@ -121,7 +121,7 @@ from enum value: INVENTORY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/base.scailo_pb.ts:848
+[src/base.scailo_pb.ts:848](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L848)
 
 ___
 
@@ -137,7 +137,7 @@ from enum value: INVENTORY_SORT_KEY_PRIMARY_QUANTITY = 21;
 
 #### Defined in
 
-src/base.scailo_pb.ts:897
+[src/base.scailo_pb.ts:897](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L897)
 
 ___
 
@@ -153,7 +153,7 @@ from enum value: INVENTORY_SORT_KEY_PRIMARY_QUANTITY_REMAINING = 22;
 
 #### Defined in
 
-src/base.scailo_pb.ts:904
+[src/base.scailo_pb.ts:904](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L904)
 
 ___
 
@@ -169,7 +169,7 @@ from enum value: INVENTORY_SORT_KEY_SECONDARY_QUANTITY = 23;
 
 #### Defined in
 
-src/base.scailo_pb.ts:911
+[src/base.scailo_pb.ts:911](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L911)
 
 ___
 
@@ -185,7 +185,7 @@ from enum value: INVENTORY_SORT_KEY_SHELF_TIMESTAMP = 12;
 
 #### Defined in
 
-src/base.scailo_pb.ts:869
+[src/base.scailo_pb.ts:869](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L869)
 
 ___
 
@@ -201,7 +201,7 @@ from enum value: INVENTORY_SORT_KEY_STORAGE_ID = 25;
 
 #### Defined in
 
-src/base.scailo_pb.ts:925
+[src/base.scailo_pb.ts:925](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L925)
 
 ___
 
@@ -217,7 +217,7 @@ from enum value: INVENTORY_SORT_KEY_STORE_ID = 24;
 
 #### Defined in
 
-src/base.scailo_pb.ts:918
+[src/base.scailo_pb.ts:918](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L918)
 
 ___
 
@@ -233,7 +233,7 @@ from enum value: INVENTORY_SORT_KEY_STORE_INTAKE_AT = 10;
 
 #### Defined in
 
-src/base.scailo_pb.ts:855
+[src/base.scailo_pb.ts:855](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L855)
 
 ___
 
@@ -249,4 +249,4 @@ from enum value: INVENTORY_SORT_KEY_WARRANTY_TIMESTAMP = 13;
 
 #### Defined in
 
-src/base.scailo_pb.ts:876
+[src/base.scailo_pb.ts:876](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L876)

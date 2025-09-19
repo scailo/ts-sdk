@@ -73,7 +73,7 @@ Message\&lt;DepartmentsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-src/departments.scailo_pb.ts:254
+[src/departments.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L254)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 11;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:238
+[src/departments.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L238)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:252
+[src/departments.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L252)
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 head_user_id = 12;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:245
+[src/departments.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L245)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:210
+[src/departments.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L210)
 
 ___
 
@@ -153,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:231
+[src/departments.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L231)
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:217
+[src/departments.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L217)
 
 ___
 
@@ -185,7 +185,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:203
+[src/departments.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L203)
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:224
+[src/departments.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L224)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:261
+[src/departments.scailo_pb.ts:261](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L261)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:259
+[src/departments.scailo_pb.ts:259](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L259)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:260
+[src/departments.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L260)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:284
+[src/departments.scailo_pb.ts:284](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L284)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:272
+[src/departments.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L272)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:276
+[src/departments.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L276)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:280
+[src/departments.scailo_pb.ts:280](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L280)

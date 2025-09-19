@@ -35,7 +35,7 @@ from enum value: LEAVE_LOG_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:29
+[src/leaves_logs.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L29)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: LEAVE_LOG_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:22
+[src/leaves_logs.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L22)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: LEAVE_LOG_SORT_KEY_LEAVE_TYPE_ID = 12;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:57
+[src/leaves_logs.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L57)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: LEAVE_LOG_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:36
+[src/leaves_logs.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L36)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: LEAVE_LOG_SORT_KEY_QUANTITY = 13;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:64
+[src/leaves_logs.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L64)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: LEAVE_LOG_SORT_KEY_REF_FROM = 14;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:71
+[src/leaves_logs.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L71)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: LEAVE_LOG_SORT_KEY_UOM_ID = 11;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:50
+[src/leaves_logs.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L50)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: LEAVE_LOG_SORT_KEY_USER_ID = 10;
 
 #### Defined in
 
-src/leaves_logs.scailo_pb.ts:43
+[src/leaves_logs.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/leaves_logs.scailo_pb.ts#L43)

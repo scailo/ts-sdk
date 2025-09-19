@@ -74,7 +74,7 @@ Message\&lt;GoalsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2035
+[src/goals.scailo_pb.ts:2035](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2035)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1984
+[src/goals.scailo_pb.ts:1984](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L1984)
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2012
+[src/goals.scailo_pb.ts:2012](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2012)
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1977
+[src/goals.scailo_pb.ts:1977](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L1977)
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1991
+[src/goals.scailo_pb.ts:1991](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L1991)
 
 ___
 
@@ -154,7 +154,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2026
+[src/goals.scailo_pb.ts:2026](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2026)
 
 ___
 
@@ -170,7 +170,7 @@ from field: Scailo.GOAL_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2005
+[src/goals.scailo_pb.ts:2005](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2005)
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:1998
+[src/goals.scailo_pb.ts:1998](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L1998)
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2019
+[src/goals.scailo_pb.ts:2019](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2019)
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2033
+[src/goals.scailo_pb.ts:2033](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2033)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2042
+[src/goals.scailo_pb.ts:2042](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2042)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2040
+[src/goals.scailo_pb.ts:2040](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2040)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2041
+[src/goals.scailo_pb.ts:2041](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2041)
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2066
+[src/goals.scailo_pb.ts:2066](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2066)
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2054
+[src/goals.scailo_pb.ts:2054](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2054)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2058
+[src/goals.scailo_pb.ts:2058](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2058)
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/goals.scailo_pb.ts:2062
+[src/goals.scailo_pb.ts:2062](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/goals.scailo_pb.ts#L2062)

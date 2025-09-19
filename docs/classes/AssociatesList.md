@@ -66,7 +66,7 @@ Message\&lt;AssociatesList\&gt;.constructor
 
 #### Defined in
 
-src/associates.scailo_pb.ts:320
+[src/associates.scailo_pb.ts:320](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L320)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Associate list = 1;
 
 #### Defined in
 
-src/associates.scailo_pb.ts:318
+[src/associates.scailo_pb.ts:318](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L318)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:327
+[src/associates.scailo_pb.ts:327](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L327)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:325
+[src/associates.scailo_pb.ts:325](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L325)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:326
+[src/associates.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L326)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:343
+[src/associates.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L343)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:331
+[src/associates.scailo_pb.ts:331](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L331)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:335
+[src/associates.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L335)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/associates.scailo_pb.ts:339
+[src/associates.scailo_pb.ts:339](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/associates.scailo_pb.ts#L339)

@@ -74,7 +74,7 @@ Message\&lt;StoresServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-src/stores.scailo_pb.ts:987
+[src/stores.scailo_pb.ts:987](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L987)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:936
+[src/stores.scailo_pb.ts:936](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L936)
 
 ___
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:964
+[src/stores.scailo_pb.ts:964](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L964)
 
 ___
 
@@ -122,7 +122,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:929
+[src/stores.scailo_pb.ts:929](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L929)
 
 ___
 
@@ -138,7 +138,7 @@ from field: uint64 location_id = 12;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:985
+[src/stores.scailo_pb.ts:985](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L985)
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:943
+[src/stores.scailo_pb.ts:943](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L943)
 
 ___
 
@@ -170,7 +170,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:978
+[src/stores.scailo_pb.ts:978](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L978)
 
 ___
 
@@ -186,7 +186,7 @@ from field: Scailo.STORE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:957
+[src/stores.scailo_pb.ts:957](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L957)
 
 ___
 
@@ -202,7 +202,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:950
+[src/stores.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L950)
 
 ___
 
@@ -218,7 +218,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/stores.scailo_pb.ts:971
+[src/stores.scailo_pb.ts:971](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L971)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:994
+[src/stores.scailo_pb.ts:994](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L994)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:992
+[src/stores.scailo_pb.ts:992](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L992)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:993
+[src/stores.scailo_pb.ts:993](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L993)
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:1018
+[src/stores.scailo_pb.ts:1018](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L1018)
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:1006
+[src/stores.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L1006)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:1010
+[src/stores.scailo_pb.ts:1010](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L1010)
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-src/stores.scailo_pb.ts:1014
+[src/stores.scailo_pb.ts:1014](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/stores.scailo_pb.ts#L1014)

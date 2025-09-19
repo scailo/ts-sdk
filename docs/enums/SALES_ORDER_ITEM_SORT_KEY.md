@@ -42,7 +42,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:268
+[src/sales_orders.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L268)
 
 ___
 
@@ -58,7 +58,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:261
+[src/sales_orders.scailo_pb.ts:261](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L261)
 
 ___
 
@@ -74,7 +74,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:275
+[src/sales_orders.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L275)
 
 ___
 
@@ -90,7 +90,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:310
+[src/sales_orders.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L310)
 
 ___
 
@@ -106,7 +106,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:303
+[src/sales_orders.scailo_pb.ts:303](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L303)
 
 ___
 
@@ -122,7 +122,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:296
+[src/sales_orders.scailo_pb.ts:296](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L296)
 
 ___
 
@@ -138,7 +138,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:247
+[src/sales_orders.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L247)
 
 ___
 
@@ -154,7 +154,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_DELIVERY_DATE = 18;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:338
+[src/sales_orders.scailo_pb.ts:338](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L338)
 
 ___
 
@@ -170,7 +170,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_DISCOUNT = 17;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:331
+[src/sales_orders.scailo_pb.ts:331](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L331)
 
 ___
 
@@ -186,7 +186,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:282
+[src/sales_orders.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L282)
 
 ___
 
@@ -202,7 +202,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:240
+[src/sales_orders.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L240)
 
 ___
 
@@ -218,7 +218,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:289
+[src/sales_orders.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L289)
 
 ___
 
@@ -234,7 +234,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:254
+[src/sales_orders.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L254)
 
 ___
 
@@ -250,7 +250,7 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:324
+[src/sales_orders.scailo_pb.ts:324](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L324)
 
 ___
 
@@ -266,4 +266,4 @@ from enum value: SALES_ORDER_ITEM_SORT_KEY_UNIT_PRICE = 15;
 
 #### Defined in
 
-src/sales_orders.scailo_pb.ts:317
+[src/sales_orders.scailo_pb.ts:317](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/sales_orders.scailo_pb.ts#L317)

@@ -69,7 +69,7 @@ Message\&lt;TaxGroupsServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1078
+[src/tax_groups.scailo_pb.ts:1078](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1078)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string description = 40;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1076
+[src/tax_groups.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1076)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 tax_group_id = 10;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1062
+[src/tax_groups.scailo_pb.ts:1062](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1062)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 tax_param_id = 11;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1069
+[src/tax_groups.scailo_pb.ts:1069](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1069)
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1055
+[src/tax_groups.scailo_pb.ts:1055](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1055)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1085
+[src/tax_groups.scailo_pb.ts:1085](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1085)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1083
+[src/tax_groups.scailo_pb.ts:1083](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1083)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1084
+[src/tax_groups.scailo_pb.ts:1084](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1084)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1104
+[src/tax_groups.scailo_pb.ts:1104](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1104)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1092
+[src/tax_groups.scailo_pb.ts:1092](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1092)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1096
+[src/tax_groups.scailo_pb.ts:1096](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1096)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/tax_groups.scailo_pb.ts:1100
+[src/tax_groups.scailo_pb.ts:1100](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/tax_groups.scailo_pb.ts#L1100)

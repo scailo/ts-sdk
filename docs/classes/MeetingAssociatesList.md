@@ -66,7 +66,7 @@ Message\&lt;MeetingAssociatesList\&gt;.constructor
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2257
+[src/meetings.scailo_pb.ts:2257](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2257)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.MeetingAssociate list = 1;
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2255
+[src/meetings.scailo_pb.ts:2255](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2255)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2264
+[src/meetings.scailo_pb.ts:2264](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2264)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2262
+[src/meetings.scailo_pb.ts:2262](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2262)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2263
+[src/meetings.scailo_pb.ts:2263](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2263)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2280
+[src/meetings.scailo_pb.ts:2280](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2280)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2268
+[src/meetings.scailo_pb.ts:2268](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2268)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2272
+[src/meetings.scailo_pb.ts:2272](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2272)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/meetings.scailo_pb.ts:2276
+[src/meetings.scailo_pb.ts:2276](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/meetings.scailo_pb.ts#L2276)

@@ -85,7 +85,7 @@ Message\&lt;DepartmentsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-src/departments.scailo_pb.ts:748
+[src/departments.scailo_pb.ts:748](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L748)
 
 ## Properties
 
@@ -101,7 +101,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:704
+[src/departments.scailo_pb.ts:704](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L704)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:697
+[src/departments.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L697)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:690
+[src/departments.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L690)
 
 ___
 
@@ -149,7 +149,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:711
+[src/departments.scailo_pb.ts:711](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L711)
 
 ___
 
@@ -165,7 +165,7 @@ from field: string code = 21;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:739
+[src/departments.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L739)
 
 ___
 
@@ -181,7 +181,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:725
+[src/departments.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L725)
 
 ___
 
@@ -197,7 +197,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:718
+[src/departments.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L718)
 
 ___
 
@@ -213,7 +213,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:620
+[src/departments.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L620)
 
 ___
 
@@ -229,7 +229,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:655
+[src/departments.scailo_pb.ts:655](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L655)
 
 ___
 
@@ -245,7 +245,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:648
+[src/departments.scailo_pb.ts:648](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L648)
 
 ___
 
@@ -261,7 +261,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:676
+[src/departments.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L676)
 
 ___
 
@@ -277,7 +277,7 @@ from field: uint64 head_user_id = 22;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:746
+[src/departments.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L746)
 
 ___
 
@@ -293,7 +293,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:613
+[src/departments.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L613)
 
 ___
 
@@ -309,7 +309,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:669
+[src/departments.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L669)
 
 ___
 
@@ -325,7 +325,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:662
+[src/departments.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L662)
 
 ___
 
@@ -341,7 +341,7 @@ from field: string name = 20;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:732
+[src/departments.scailo_pb.ts:732](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L732)
 
 ___
 
@@ -357,7 +357,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:627
+[src/departments.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L627)
 
 ___
 
@@ -373,7 +373,7 @@ from field: Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:641
+[src/departments.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L641)
 
 ___
 
@@ -389,7 +389,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:634
+[src/departments.scailo_pb.ts:634](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L634)
 
 ___
 
@@ -405,7 +405,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-src/departments.scailo_pb.ts:683
+[src/departments.scailo_pb.ts:683](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L683)
 
 ___
 
@@ -415,7 +415,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:755
+[src/departments.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L755)
 
 ___
 
@@ -425,7 +425,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:753
+[src/departments.scailo_pb.ts:753](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L753)
 
 ___
 
@@ -435,7 +435,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:754
+[src/departments.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L754)
 
 ## Methods
 
@@ -723,7 +723,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:790
+[src/departments.scailo_pb.ts:790](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L790)
 
 ___
 
@@ -744,7 +744,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:778
+[src/departments.scailo_pb.ts:778](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L778)
 
 ___
 
@@ -765,7 +765,7 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:782
+[src/departments.scailo_pb.ts:782](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L782)
 
 ___
 
@@ -786,4 +786,4 @@ ___
 
 #### Defined in
 
-src/departments.scailo_pb.ts:786
+[src/departments.scailo_pb.ts:786](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/departments.scailo_pb.ts#L786)

@@ -67,7 +67,7 @@ Message\&lt;FilterFamiliesReqForIdentifier\&gt;.constructor
 
 #### Defined in
 
-src/families.scailo_pb.ts:1789
+[src/families.scailo_pb.ts:1789](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1789)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: Scailo.FamiliesServiceFilterReq filter = 10;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1787
+[src/families.scailo_pb.ts:1787](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1787)
 
 ___
 
@@ -99,7 +99,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-src/families.scailo_pb.ts:1780
+[src/families.scailo_pb.ts:1780](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1780)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1796
+[src/families.scailo_pb.ts:1796](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1796)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1794
+[src/families.scailo_pb.ts:1794](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1794)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1795
+[src/families.scailo_pb.ts:1795](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1795)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1813
+[src/families.scailo_pb.ts:1813](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1813)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1801
+[src/families.scailo_pb.ts:1801](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1801)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1805
+[src/families.scailo_pb.ts:1805](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1805)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/families.scailo_pb.ts:1809
+[src/families.scailo_pb.ts:1809](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/families.scailo_pb.ts#L1809)

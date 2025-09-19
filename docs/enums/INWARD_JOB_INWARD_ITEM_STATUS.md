@@ -30,7 +30,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:237
+[src/inward_jobs.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L237)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: INWARD_JOB_INWARD_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:244
+[src/inward_jobs.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L244)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: INWARD_JOB_INWARD_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-src/inward_jobs.scailo_pb.ts:251
+[src/inward_jobs.scailo_pb.ts:251](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/inward_jobs.scailo_pb.ts#L251)

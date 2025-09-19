@@ -78,7 +78,7 @@ Message\&lt;EquationWorkOrder\&gt;.constructor
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:481
+[src/equations_work_orders.scailo_pb.ts:481](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L481)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: uint64 amendment_count = 70;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:479
+[src/equations_work_orders.scailo_pb.ts:479](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L479)
 
 ___
 
@@ -110,7 +110,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:409
+[src/equations_work_orders.scailo_pb.ts:409](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L409)
 
 ___
 
@@ -126,7 +126,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:430
+[src/equations_work_orders.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L430)
 
 ___
 
@@ -142,7 +142,7 @@ from field: string description = 13;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:458
+[src/equations_work_orders.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L458)
 
 ___
 
@@ -158,7 +158,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:395
+[src/equations_work_orders.scailo_pb.ts:395](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L395)
 
 ___
 
@@ -174,7 +174,7 @@ from field: repeated Scailo.EquationWorkOrderItem list = 20;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:465
+[src/equations_work_orders.scailo_pb.ts:465](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L465)
 
 ___
 
@@ -190,7 +190,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:423
+[src/equations_work_orders.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L423)
 
 ___
 
@@ -206,7 +206,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:402
+[src/equations_work_orders.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L402)
 
 ___
 
@@ -222,7 +222,7 @@ from field: string name = 10;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:444
+[src/equations_work_orders.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L444)
 
 ___
 
@@ -238,7 +238,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:416
+[src/equations_work_orders.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L416)
 
 ___
 
@@ -254,7 +254,7 @@ from field: double total_price = 40;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:472
+[src/equations_work_orders.scailo_pb.ts:472](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L472)
 
 ___
 
@@ -270,7 +270,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:437
+[src/equations_work_orders.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L437)
 
 ___
 
@@ -286,7 +286,7 @@ from field: uint64 work_order_id = 12;
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:451
+[src/equations_work_orders.scailo_pb.ts:451](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L451)
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:488
+[src/equations_work_orders.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L488)
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:486
+[src/equations_work_orders.scailo_pb.ts:486](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L486)
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:487
+[src/equations_work_orders.scailo_pb.ts:487](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L487)
 
 ## Methods
 
@@ -604,7 +604,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:516
+[src/equations_work_orders.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L516)
 
 ___
 
@@ -625,7 +625,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:504
+[src/equations_work_orders.scailo_pb.ts:504](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L504)
 
 ___
 
@@ -646,7 +646,7 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:508
+[src/equations_work_orders.scailo_pb.ts:508](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L508)
 
 ___
 
@@ -667,4 +667,4 @@ ___
 
 #### Defined in
 
-src/equations_work_orders.scailo_pb.ts:512
+[src/equations_work_orders.scailo_pb.ts:512](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/equations_work_orders.scailo_pb.ts#L512)

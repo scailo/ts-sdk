@@ -73,7 +73,7 @@ Message\&lt;AssetIndentItem\&gt;.constructor
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:741
+[src/asset_indents.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L741)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:704
+[src/asset_indents.scailo_pb.ts:704](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L704)
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 asset_indent_id = 10;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:725
+[src/asset_indents.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L725)
 
 ___
 
@@ -121,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:690
+[src/asset_indents.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L690)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:732
+[src/asset_indents.scailo_pb.ts:732](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L732)
 
 ___
 
@@ -153,7 +153,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:697
+[src/asset_indents.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L697)
 
 ___
 
@@ -169,7 +169,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:711
+[src/asset_indents.scailo_pb.ts:711](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L711)
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:739
+[src/asset_indents.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L739)
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:718
+[src/asset_indents.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L718)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:748
+[src/asset_indents.scailo_pb.ts:748](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L748)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:746
+[src/asset_indents.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L746)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:747
+[src/asset_indents.scailo_pb.ts:747](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L747)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:771
+[src/asset_indents.scailo_pb.ts:771](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L771)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:759
+[src/asset_indents.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L759)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:763
+[src/asset_indents.scailo_pb.ts:763](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L763)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-src/asset_indents.scailo_pb.ts:767
+[src/asset_indents.scailo_pb.ts:767](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/asset_indents.scailo_pb.ts#L767)

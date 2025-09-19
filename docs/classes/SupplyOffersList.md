@@ -66,7 +66,7 @@ Message\&lt;SupplyOffersList\&gt;.constructor
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1389
+[src/supply_offers.scailo_pb.ts:1389](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1389)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SupplyOffer list = 1;
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1387
+[src/supply_offers.scailo_pb.ts:1387](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1387)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1396
+[src/supply_offers.scailo_pb.ts:1396](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1396)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1394
+[src/supply_offers.scailo_pb.ts:1394](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1394)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1395
+[src/supply_offers.scailo_pb.ts:1395](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1395)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1412
+[src/supply_offers.scailo_pb.ts:1412](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1412)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1400
+[src/supply_offers.scailo_pb.ts:1400](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1400)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1404
+[src/supply_offers.scailo_pb.ts:1404](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1404)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/supply_offers.scailo_pb.ts:1408
+[src/supply_offers.scailo_pb.ts:1408](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/supply_offers.scailo_pb.ts#L1408)

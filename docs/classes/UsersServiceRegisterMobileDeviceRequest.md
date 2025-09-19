@@ -69,7 +69,7 @@ Message\&lt;UsersServiceRegisterMobileDeviceRequest\&gt;.constructor
 
 #### Defined in
 
-src/users.scailo_pb.ts:2009
+[src/users.scailo_pb.ts:2009](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2009)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string device_os = 12;
 
 #### Defined in
 
-src/users.scailo_pb.ts:2000
+[src/users.scailo_pb.ts:2000](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2000)
 
 ___
 
@@ -101,7 +101,7 @@ from field: string device_token = 13;
 
 #### Defined in
 
-src/users.scailo_pb.ts:2007
+[src/users.scailo_pb.ts:2007](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2007)
 
 ___
 
@@ -117,7 +117,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1986
+[src/users.scailo_pb.ts:1986](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1986)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-src/users.scailo_pb.ts:1993
+[src/users.scailo_pb.ts:1993](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L1993)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:2016
+[src/users.scailo_pb.ts:2016](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2016)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:2014
+[src/users.scailo_pb.ts:2014](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2014)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:2015
+[src/users.scailo_pb.ts:2015](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2015)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:2035
+[src/users.scailo_pb.ts:2035](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2035)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:2023
+[src/users.scailo_pb.ts:2023](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2023)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:2027
+[src/users.scailo_pb.ts:2027](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2027)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-src/users.scailo_pb.ts:2031
+[src/users.scailo_pb.ts:2031](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/users.scailo_pb.ts#L2031)

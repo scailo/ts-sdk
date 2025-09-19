@@ -66,7 +66,7 @@ Message\&lt;ShiftsList\&gt;.constructor
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:505
+[src/shifts.scailo_pb.ts:505](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L505)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Shift list = 1;
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:503
+[src/shifts.scailo_pb.ts:503](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L503)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:512
+[src/shifts.scailo_pb.ts:512](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L512)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:510
+[src/shifts.scailo_pb.ts:510](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L510)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:511
+[src/shifts.scailo_pb.ts:511](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L511)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:528
+[src/shifts.scailo_pb.ts:528](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L528)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:516
+[src/shifts.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L516)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:520
+[src/shifts.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L520)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-src/shifts.scailo_pb.ts:524
+[src/shifts.scailo_pb.ts:524](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/shifts.scailo_pb.ts#L524)

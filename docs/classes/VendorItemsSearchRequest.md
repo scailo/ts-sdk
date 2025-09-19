@@ -78,7 +78,7 @@ Message\&lt;VendorItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1976
+[src/vendors.scailo_pb.ts:1976](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1976)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1897
+[src/vendors.scailo_pb.ts:1897](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1897)
 
 ___
 
@@ -110,7 +110,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1925
+[src/vendors.scailo_pb.ts:1925](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1925)
 
 ___
 
@@ -126,7 +126,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1946
+[src/vendors.scailo_pb.ts:1946](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1946)
 
 ___
 
@@ -142,7 +142,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1890
+[src/vendors.scailo_pb.ts:1890](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1890)
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1904
+[src/vendors.scailo_pb.ts:1904](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1904)
 
 ___
 
@@ -174,7 +174,7 @@ from field: string search_key = 20;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1974
+[src/vendors.scailo_pb.ts:1974](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1974)
 
 ___
 
@@ -190,7 +190,7 @@ from field: Scailo.VENDOR_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1918
+[src/vendors.scailo_pb.ts:1918](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1918)
 
 ___
 
@@ -206,7 +206,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1911
+[src/vendors.scailo_pb.ts:1911](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1911)
 
 ___
 
@@ -222,7 +222,7 @@ from field: Scailo.VENDOR_ITEM_STATUS status = 7;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1932
+[src/vendors.scailo_pb.ts:1932](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1932)
 
 ___
 
@@ -238,7 +238,7 @@ from field: uint64 tax_group_id = 14;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1967
+[src/vendors.scailo_pb.ts:1967](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1967)
 
 ___
 
@@ -254,7 +254,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1960
+[src/vendors.scailo_pb.ts:1960](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1960)
 
 ___
 
@@ -270,7 +270,7 @@ from field: string vendor_family_code = 12;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1953
+[src/vendors.scailo_pb.ts:1953](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1953)
 
 ___
 
@@ -286,7 +286,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1939
+[src/vendors.scailo_pb.ts:1939](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1939)
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1983
+[src/vendors.scailo_pb.ts:1983](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1983)
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1981
+[src/vendors.scailo_pb.ts:1981](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1981)
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1982
+[src/vendors.scailo_pb.ts:1982](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1982)
 
 ## Methods
 
@@ -604,7 +604,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2011
+[src/vendors.scailo_pb.ts:2011](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L2011)
 
 ___
 
@@ -625,7 +625,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:1999
+[src/vendors.scailo_pb.ts:1999](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L1999)
 
 ___
 
@@ -646,7 +646,7 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2003
+[src/vendors.scailo_pb.ts:2003](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L2003)
 
 ___
 
@@ -667,4 +667,4 @@ ___
 
 #### Defined in
 
-src/vendors.scailo_pb.ts:2007
+[src/vendors.scailo_pb.ts:2007](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/vendors.scailo_pb.ts#L2007)
