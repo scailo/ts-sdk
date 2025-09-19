@@ -64,7 +64,6 @@ export * from "./src/general_settings.scailo_connect";
 export * from "./src/general_settings.scailo_pb";
 export * from "./src/general_streams.scailo_connect";
 export * from "./src/general_streams.scailo_pb";
-export * from "./src/genesis.validate.scailo_pb";
 export * from "./src/goals.scailo_connect";
 export * from "./src/goals.scailo_pb";
 export * from "./src/goods_dispatches.scailo_connect";

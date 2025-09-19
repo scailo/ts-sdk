@@ -144,7 +144,7 @@ ___
 
 • **maxGenesisVersion**: `string` = `""`
 
-Stores the manimum version of Genesis that the application supports
+Stores the manimum version of Scailo that the application supports
 
 **`Generated`**
 
@@ -160,7 +160,7 @@ ___
 
 • **minGenesisVersion**: `string` = `""`
 
-Stores the minimum version of Genesis that the application supports
+Stores the minimum version of Scailo that the application supports
 
 **`Generated`**
 
