@@ -19,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/scailo/go-sdk.git"
+        "url": "git+https://github.com/scailo/ts-sdk.git"
     },
     "keywords": [
         "Scailo",
@@ -30,9 +30,9 @@
     "author": "Pratheek Adidela <apratheek@unaxiom.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/scailo/go-sdk/issues"
+        "url": "https://github.com/scailo/ts-sdk/issues"
     },
-    "homepage": "https://github.com/scailo/go-sdk#readme",
+    "homepage": "https://github.com/scailo/ts-sdk#readme",
     "dependencies": {
         "@bufbuild/buf": "^1.25.1",
         "@connectrpc/connect": "^1.1.2",
