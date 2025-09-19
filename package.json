@@ -28,7 +28,7 @@
         "API"
     ],
     "author": "Pratheek Adidela <apratheek@unaxiom.com>",
-    "license": "ISC",
+    "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/scailo/ts-sdk/issues"
     },
