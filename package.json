@@ -9,7 +9,7 @@
     ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "clean": "rm -rf ./lib && rm index.ts",
+        "clean": "rm -rf ./lib && rm index.ts && rm -rf src/buf && rm -rf src/google",
         "regenindex": "npx tsx regenindex.ts",
         "docs": "npx typedoc index.ts --tsconfig tsconfig.esm.json --plugin typedoc-plugin-markdown",
         "build": "npm run clean && npm run regenindex && npm run build:esm && npm run build:cjs && npm run docs",
