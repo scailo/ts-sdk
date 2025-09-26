@@ -5,6 +5,7 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { BOOL_FILTER, EmployeeMetadata, INVENTORY_LIFECYCLE, INVENTORY_SORT_KEY, LogbookLogInventoryLC, SORT_ORDER } from "./base.scailo_pb.js";
 
 /**
@@ -155,6 +156,13 @@ export class InfrastructuresServiceCreateRequest extends Message<Infrastructures
    */
   description = "";
 
+  /**
+   * The list of dynamic forms
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 80;
+   */
+  formData: FormFieldDatumCreateRequest[] = [];
+
   constructor(data?: PartialMessage<InfrastructuresServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -177,6 +185,7 @@ export class InfrastructuresServiceCreateRequest extends Message<Infrastructures
     { no: 42, name: "warranty_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 54, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 60, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 80, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InfrastructuresServiceCreateRequest {
@@ -294,6 +303,13 @@ export class InfrastructuresServiceUpdateRequest extends Message<Infrastructures
    */
   description = "";
 
+  /**
+   * The list of dynamic forms
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 80;
+   */
+  formData: FormFieldDatumCreateRequest[] = [];
+
   constructor(data?: PartialMessage<InfrastructuresServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -315,6 +331,7 @@ export class InfrastructuresServiceUpdateRequest extends Message<Infrastructures
     { no: 52, name: "is_qc_report_public", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 55, name: "remaining_dimensions", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 60, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 80, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InfrastructuresServiceUpdateRequest {
@@ -664,6 +681,13 @@ export class Infrastructure extends Message<Infrastructure> {
    */
   shortUrl = "";
 
+  /**
+   * The list of dynamic forms
+   *
+   * @generated from field: repeated Scailo.FormFieldDatum form_data = 80;
+   */
+  formData: FormFieldDatum[] = [];
+
   constructor(data?: PartialMessage<Infrastructure>) {
     super();
     proto3.util.initPartial(data, this);
@@ -703,6 +727,7 @@ export class Infrastructure extends Message<Infrastructure> {
     { no: 55, name: "remaining_dimensions", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 60, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 70, name: "short_url", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 80, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Infrastructure {
@@ -1159,6 +1184,13 @@ export class InfrastructuresServiceFilterReq extends Message<InfrastructuresServ
    */
   vendorId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<InfrastructuresServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1201,6 +1233,7 @@ export class InfrastructuresServiceFilterReq extends Message<InfrastructuresServ
     { no: 52, name: "is_qc_report_public", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
     { no: 54, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 81, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InfrastructuresServiceFilterReq {
@@ -1439,6 +1472,13 @@ export class InfrastructuresServiceCountReq extends Message<InfrastructuresServi
    */
   vendorId = protoInt64.zero;
 
+  /**
+   * The list of form data filters
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+   */
+  formData: FormFieldDatumFilterRequest[] = [];
+
   constructor(data?: PartialMessage<InfrastructuresServiceCountReq>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1477,6 +1517,7 @@ export class InfrastructuresServiceCountReq extends Message<InfrastructuresServi
     { no: 52, name: "is_qc_report_public", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
     { no: 54, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 81, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InfrastructuresServiceCountReq {

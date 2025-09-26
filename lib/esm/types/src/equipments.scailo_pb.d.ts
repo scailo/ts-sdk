@@ -1,5 +1,6 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { BOOL_FILTER, EmployeeMetadata, INVENTORY_LIFECYCLE, INVENTORY_SORT_KEY, LogbookLogInventoryLC, SORT_ORDER } from "./base.scailo_pb.js";
 /**
  *
@@ -124,6 +125,12 @@ export declare class EquipmentsServiceCreateRequest extends Message<EquipmentsSe
      * @generated from field: string description = 60;
      */
     description: string;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 80;
+     */
+    formData: FormFieldDatumCreateRequest[];
     constructor(data?: PartialMessage<EquipmentsServiceCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.EquipmentsServiceCreateRequest";
@@ -218,6 +225,12 @@ export declare class EquipmentsServiceUpdateRequest extends Message<EquipmentsSe
      * @generated from field: string description = 60;
      */
     description: string;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 80;
+     */
+    formData: FormFieldDatumCreateRequest[];
     constructor(data?: PartialMessage<EquipmentsServiceUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.EquipmentsServiceUpdateRequest";
@@ -490,6 +503,12 @@ export declare class Equipment extends Message<Equipment> {
      * @generated from field: string short_url = 70;
      */
     shortUrl: string;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatum form_data = 80;
+     */
+    formData: FormFieldDatum[];
     constructor(data?: PartialMessage<Equipment>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.Equipment";
@@ -826,6 +845,12 @@ export declare class EquipmentsServiceFilterReq extends Message<EquipmentsServic
      * @generated from field: uint64 vendor_id = 81;
      */
     vendorId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<EquipmentsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.EquipmentsServiceFilterReq";
@@ -1024,6 +1049,12 @@ export declare class EquipmentsServiceCountReq extends Message<EquipmentsService
      * @generated from field: uint64 vendor_id = 81;
      */
     vendorId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<EquipmentsServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.EquipmentsServiceCountReq";

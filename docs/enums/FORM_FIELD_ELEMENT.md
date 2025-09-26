@@ -37,7 +37,7 @@ from enum value: FORM_FIELD_ELEMENT_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:574](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L574)
+[src/base.scailo_pb.ts:622](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L622)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: FORM_FIELD_ELEMENT_CHECKBOX = 30;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:595](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L595)
+[src/base.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L643)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: FORM_FIELD_ELEMENT_DATE = 60;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:616](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L616)
+[src/base.scailo_pb.ts:664](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L664)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: FORM_FIELD_ELEMENT_EMAIL = 70;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:623](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L623)
+[src/base.scailo_pb.ts:671](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L671)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: FORM_FIELD_ELEMENT_INPUT = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L581)
+[src/base.scailo_pb.ts:629](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L629)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: FORM_FIELD_ELEMENT_NUMBER = 90;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:637](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L637)
+[src/base.scailo_pb.ts:685](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L685)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: FORM_FIELD_ELEMENT_PHONE = 80;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:630](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L630)
+[src/base.scailo_pb.ts:678](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L678)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: FORM_FIELD_ELEMENT_RADIO = 20;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:588](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L588)
+[src/base.scailo_pb.ts:636](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L636)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: FORM_FIELD_ELEMENT_SELECT = 40;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:602](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L602)
+[src/base.scailo_pb.ts:650](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L650)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: FORM_FIELD_ELEMENT_TEXTAREA = 50;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:609](https://github.com/scailo/ts-sdk/blob/c10a36b57201dfa5903d4b53efa1e62aa6208936/src/base.scailo_pb.ts#L609)
+[src/base.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L657)

@@ -1,5 +1,6 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterRequest } from "./forms_fields_data.scailo_pb.js";
 import { BOOL_FILTER, EmployeeMetadata, INVENTORY_LIFECYCLE, INVENTORY_SORT_KEY, LogbookLogInventoryLC, SORT_ORDER } from "./base.scailo_pb.js";
 /**
  *
@@ -118,6 +119,12 @@ export declare class ProductsServiceCreateRequest extends Message<ProductsServic
      * @generated from field: string description = 60;
      */
     description: string;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 80;
+     */
+    formData: FormFieldDatumCreateRequest[];
     constructor(data?: PartialMessage<ProductsServiceCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProductsServiceCreateRequest";
@@ -212,6 +219,12 @@ export declare class ProductsServiceUpdateRequest extends Message<ProductsServic
      * @generated from field: string description = 60;
      */
     description: string;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 80;
+     */
+    formData: FormFieldDatumCreateRequest[];
     constructor(data?: PartialMessage<ProductsServiceUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProductsServiceUpdateRequest";
@@ -484,6 +497,12 @@ export declare class Product extends Message<Product> {
      * @generated from field: string short_url = 70;
      */
     shortUrl: string;
+    /**
+     * The list of dynamic forms
+     *
+     * @generated from field: repeated Scailo.FormFieldDatum form_data = 80;
+     */
+    formData: FormFieldDatum[];
     constructor(data?: PartialMessage<Product>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.Product";
@@ -812,6 +831,12 @@ export declare class ProductsServiceFilterReq extends Message<ProductsServiceFil
      * @generated from field: uint64 location_id = 54;
      */
     locationId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<ProductsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProductsServiceFilterReq";
@@ -1002,6 +1027,12 @@ export declare class ProductsServiceCountReq extends Message<ProductsServiceCoun
      * @generated from field: uint64 location_id = 54;
      */
     locationId: bigint;
+    /**
+     * The list of form data filters
+     *
+     * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
+     */
+    formData: FormFieldDatumFilterRequest[];
     constructor(data?: PartialMessage<ProductsServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProductsServiceCountReq";
