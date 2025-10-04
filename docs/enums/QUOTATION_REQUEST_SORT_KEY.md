@@ -37,7 +37,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L177)
+[src/quotations_requests.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L177)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L170)
+[src/quotations_requests.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L170)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L184)
+[src/quotations_requests.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L184)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L191)
+[src/quotations_requests.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L191)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L156)
+[src/quotations_requests.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L156)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L205)
+[src/quotations_requests.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L205)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L149)
+[src/quotations_requests.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L149)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L163)
+[src/quotations_requests.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L163)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_PRIORITY = 14;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L212)
+[src/quotations_requests.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L212)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: QUOTATION_REQUEST_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/quotations_requests.scailo_pb.ts#L198)
+[src/quotations_requests.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/quotations_requests.scailo_pb.ts#L198)

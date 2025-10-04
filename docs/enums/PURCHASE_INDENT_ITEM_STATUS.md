@@ -30,7 +30,7 @@ from enum value: PURCHASE_INDENT_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:197](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/purchases_indents.scailo_pb.ts#L197)
+[src/purchases_indents.scailo_pb.ts:197](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/purchases_indents.scailo_pb.ts#L197)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PURCHASE_INDENT_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/purchases_indents.scailo_pb.ts#L204)
+[src/purchases_indents.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/purchases_indents.scailo_pb.ts#L204)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PURCHASE_INDENT_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/purchases_indents.scailo_pb.ts#L211)
+[src/purchases_indents.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/purchases_indents.scailo_pb.ts#L211)

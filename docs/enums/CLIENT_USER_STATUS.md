@@ -30,7 +30,7 @@ from enum value: CLIENT_USER_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/clients.scailo_pb.ts#L114)
+[src/clients.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/clients.scailo_pb.ts#L114)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: CLIENT_USER_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/clients.scailo_pb.ts#L121)
+[src/clients.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/clients.scailo_pb.ts#L121)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: CLIENT_USER_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/clients.scailo_pb.ts#L128)
+[src/clients.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/clients.scailo_pb.ts#L128)

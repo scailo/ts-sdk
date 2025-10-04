@@ -29,7 +29,7 @@ from enum value: GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/goods_dispatches.scailo_pb.ts#L23)
+[src/goods_dispatches.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/goods_dispatches.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: GOODS_DISPATCH_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/goods_dispatches.scailo_pb.ts#L30)
+[src/goods_dispatches.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/goods_dispatches.scailo_pb.ts#L30)

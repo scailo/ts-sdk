@@ -30,7 +30,7 @@ from enum value: SALES_RETURN_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/sales_returns.scailo_pb.ts#L141)
+[src/sales_returns.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/sales_returns.scailo_pb.ts#L141)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SALES_RETURN_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/sales_returns.scailo_pb.ts#L148)
+[src/sales_returns.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/sales_returns.scailo_pb.ts#L148)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SALES_RETURN_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/sales_returns.scailo_pb.ts#L155)
+[src/sales_returns.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/sales_returns.scailo_pb.ts#L155)
