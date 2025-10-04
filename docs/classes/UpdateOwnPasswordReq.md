@@ -68,7 +68,7 @@ Message\&lt;UpdateOwnPasswordReq\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2146](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2146)
+[src/base.scailo_pb.ts:2146](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2146)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: string old_plain_text_password = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2137](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2137)
+[src/base.scailo_pb.ts:2137](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2137)
 
 ___
 
@@ -100,7 +100,7 @@ from field: string plain_text_password = 4;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2144](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2144)
+[src/base.scailo_pb.ts:2144](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2144)
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2130](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2130)
+[src/base.scailo_pb.ts:2130](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2130)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2153](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2153)
+[src/base.scailo_pb.ts:2153](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2153)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2151](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2151)
+[src/base.scailo_pb.ts:2151](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2151)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2152)
+[src/base.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2152)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2171](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2171)
+[src/base.scailo_pb.ts:2171](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2171)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2159](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2159)
+[src/base.scailo_pb.ts:2159](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2159)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2163](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2163)
+[src/base.scailo_pb.ts:2163](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2163)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2167](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/base.scailo_pb.ts#L2167)
+[src/base.scailo_pb.ts:2167](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/base.scailo_pb.ts#L2167)

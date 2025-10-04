@@ -1,6 +1,6 @@
 {
     "name": "@kernelminds/scailo-sdk",
-    "version": "0.0.114",
+    "version": "0.0.115",
     "description": "NPM module that provides access to Scailo's API",
     "types": "./lib/cjs/types/index.d.ts",
     "main": "./lib/cjs/index.js",
@@ -35,12 +35,12 @@
     "homepage": "https://github.com/scailo/ts-sdk#readme",
     "dependencies": {
         "@bufbuild/buf": "^1.25.1",
-        "@connectrpc/connect": "1.4.0",
-        "@connectrpc/connect-node": "1.4.0",
-        "@connectrpc/connect-web": "1.4.0",
+        "@connectrpc/connect": "1.7.0",
+        "@connectrpc/connect-node": "1.7.0",
+        "@connectrpc/connect-web": "1.7.0",
         "@bufbuild/protobuf": "^1.3.0",
         "@bufbuild/protoc-gen-es": "^1.3.0",
-        "@connectrpc/protoc-gen-connect-es": "^1.1.2"
+        "@connectrpc/protoc-gen-connect-es": "1.7.0"
     },
     "exports": {
         ".": {

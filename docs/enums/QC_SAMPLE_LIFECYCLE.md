@@ -34,7 +34,7 @@ from enum value: QC_SAMPLE_LIFECYCLE_ACCEPTED = 3;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:46](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/qc_samples.scailo_pb.ts#L46)
+[src/qc_samples.scailo_pb.ts:46](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/qc_samples.scailo_pb.ts#L46)
 
 ___
 
@@ -50,7 +50,7 @@ from enum value: QC_SAMPLE_LIFECYCLE_ACCEPTED_WITH_DEVIATION = 4;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:53](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/qc_samples.scailo_pb.ts#L53)
+[src/qc_samples.scailo_pb.ts:53](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/qc_samples.scailo_pb.ts#L53)
 
 ___
 
@@ -66,7 +66,7 @@ from enum value: QC_SAMPLE_LIFECYCLE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:25](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/qc_samples.scailo_pb.ts#L25)
+[src/qc_samples.scailo_pb.ts:25](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/qc_samples.scailo_pb.ts#L25)
 
 ___
 
@@ -82,7 +82,7 @@ from enum value: QC_SAMPLE_LIFECYCLE_CANCELLED = 6;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:67](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/qc_samples.scailo_pb.ts#L67)
+[src/qc_samples.scailo_pb.ts:67](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/qc_samples.scailo_pb.ts#L67)
 
 ___
 
@@ -98,7 +98,7 @@ from enum value: QC_SAMPLE_LIFECYCLE_FINISHED = 2;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:39](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/qc_samples.scailo_pb.ts#L39)
+[src/qc_samples.scailo_pb.ts:39](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/qc_samples.scailo_pb.ts#L39)
 
 ___
 
@@ -114,7 +114,7 @@ from enum value: QC_SAMPLE_LIFECYCLE_OPEN = 1;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:32](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/qc_samples.scailo_pb.ts#L32)
+[src/qc_samples.scailo_pb.ts:32](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/qc_samples.scailo_pb.ts#L32)
 
 ___
 
@@ -130,4 +130,4 @@ from enum value: QC_SAMPLE_LIFECYCLE_REJECTED = 5;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:60](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/qc_samples.scailo_pb.ts#L60)
+[src/qc_samples.scailo_pb.ts:60](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/qc_samples.scailo_pb.ts#L60)

@@ -29,7 +29,7 @@ from enum value: DEBIT_NOTE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/debit_notes.scailo_pb.ts#L23)
+[src/debit_notes.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/debit_notes.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: DEBIT_NOTE_REF_FROM_PURCHASE_ORDER = 1;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/debit_notes.scailo_pb.ts#L30)
+[src/debit_notes.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/debit_notes.scailo_pb.ts#L30)

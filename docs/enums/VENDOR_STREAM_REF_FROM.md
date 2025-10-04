@@ -35,7 +35,7 @@ from enum value: VENDOR_STREAM_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/vendor_streams.scailo_pb.ts#L65)
+[src/vendor_streams.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/vendor_streams.scailo_pb.ts#L65)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: VENDOR_STREAM_REF_FROM_DEBIT_NOTE = 21;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/vendor_streams.scailo_pb.ts#L100)
+[src/vendor_streams.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/vendor_streams.scailo_pb.ts#L100)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: VENDOR_STREAM_REF_FROM_GOODS_RECEIPT = 10;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/vendor_streams.scailo_pb.ts#L79)
+[src/vendor_streams.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/vendor_streams.scailo_pb.ts#L79)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_ORDER = 1;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/vendor_streams.scailo_pb.ts#L72)
+[src/vendor_streams.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/vendor_streams.scailo_pb.ts#L72)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_PAYMENT = 30;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/vendor_streams.scailo_pb.ts#L107)
+[src/vendor_streams.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/vendor_streams.scailo_pb.ts#L107)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: VENDOR_STREAM_REF_FROM_PURCHASE_RETURN = 20;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/vendor_streams.scailo_pb.ts#L93)
+[src/vendor_streams.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/vendor_streams.scailo_pb.ts#L93)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: VENDOR_STREAM_REF_FROM_SUPPLY_OFFER = 40;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/vendor_streams.scailo_pb.ts#L114)
+[src/vendor_streams.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/vendor_streams.scailo_pb.ts#L114)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: VENDOR_STREAM_REF_FROM_VENDOR_INVOICE = 11;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/vendor_streams.scailo_pb.ts#L86)
+[src/vendor_streams.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/vendor_streams.scailo_pb.ts#L86)

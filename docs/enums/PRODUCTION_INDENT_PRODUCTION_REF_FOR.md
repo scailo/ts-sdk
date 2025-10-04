@@ -30,7 +30,7 @@ from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/production_indents.scailo_pb.ts#L23)
+[src/production_indents.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/production_indents.scailo_pb.ts#L23)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_NONE = 1;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/production_indents.scailo_pb.ts#L30)
+[src/production_indents.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/production_indents.scailo_pb.ts#L30)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PRODUCTION_INDENT_PRODUCTION_REF_FOR_PRODUCTION_PLAN = 2;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/production_indents.scailo_pb.ts#L37)
+[src/production_indents.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/production_indents.scailo_pb.ts#L37)

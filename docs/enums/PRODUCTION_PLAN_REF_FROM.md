@@ -29,7 +29,7 @@ from enum value: PRODUCTION_PLAN_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:24](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/production_plans.scailo_pb.ts#L24)
+[src/production_plans.scailo_pb.ts:24](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/production_plans.scailo_pb.ts#L24)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: PRODUCTION_PLAN_REF_FROM_WORK_ORDER = 1;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:31](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/production_plans.scailo_pb.ts#L31)
+[src/production_plans.scailo_pb.ts:31](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/production_plans.scailo_pb.ts#L31)

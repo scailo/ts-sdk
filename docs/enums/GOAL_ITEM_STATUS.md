@@ -30,7 +30,7 @@ from enum value: GOAL_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/goals.scailo_pb.ts#L133)
+[src/goals.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/goals.scailo_pb.ts#L133)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GOAL_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/goals.scailo_pb.ts#L140)
+[src/goals.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/goals.scailo_pb.ts#L140)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GOAL_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/goals.scailo_pb.ts#L147)
+[src/goals.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/goals.scailo_pb.ts#L147)

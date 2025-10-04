@@ -30,7 +30,7 @@ from enum value: SALES_ORDER_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/sales_orders.scailo_pb.ts#L371)
+[src/sales_orders.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/sales_orders.scailo_pb.ts#L371)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SALES_ORDER_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/sales_orders.scailo_pb.ts#L378)
+[src/sales_orders.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/sales_orders.scailo_pb.ts#L378)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SALES_ORDER_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:385](https://github.com/scailo/ts-sdk/blob/92da31e8270a275744ab051f337f3a07101c0468/src/sales_orders.scailo_pb.ts#L385)
+[src/sales_orders.scailo_pb.ts:385](https://github.com/scailo/ts-sdk/blob/f507fdd53a88c7cbc8d9533380bdfc87c4dacc8a/src/sales_orders.scailo_pb.ts#L385)
