@@ -30,7 +30,7 @@ from enum value: GOODS_RECEIPT_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goods_receipts.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/goods_receipts.scailo_pb.ts#L141)
+[src/goods_receipts.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/goods_receipts.scailo_pb.ts#L141)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GOODS_RECEIPT_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/goods_receipts.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/goods_receipts.scailo_pb.ts#L148)
+[src/goods_receipts.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/goods_receipts.scailo_pb.ts#L148)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GOODS_RECEIPT_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/goods_receipts.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/goods_receipts.scailo_pb.ts#L155)
+[src/goods_receipts.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/goods_receipts.scailo_pb.ts#L155)

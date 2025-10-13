@@ -1172,7 +1172,7 @@ export class FilterReturnableInventoryReq extends Message<FilterReturnableInvent
   code = "";
 
   /**
-   * Stores the internal code (as given by user)
+   * Filter by the exact internal code
    *
    * @generated from field: string internal_item_code = 35;
    */

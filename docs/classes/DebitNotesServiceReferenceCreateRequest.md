@@ -68,7 +68,7 @@ Message\&lt;DebitNotesServiceReferenceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2403](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2403)
+[src/debit_notes.scailo_pb.ts:2559](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2559)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 debit_note_id = 10;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2394](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2394)
+[src/debit_notes.scailo_pb.ts:2550](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2550)
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 purchase_return_id = 11;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2401](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2401)
+[src/debit_notes.scailo_pb.ts:2557](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2557)
 
 ___
 
@@ -116,7 +116,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2387](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2387)
+[src/debit_notes.scailo_pb.ts:2543](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2543)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2410](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2410)
+[src/debit_notes.scailo_pb.ts:2566](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2566)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2408](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2408)
+[src/debit_notes.scailo_pb.ts:2564](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2564)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2409](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2409)
+[src/debit_notes.scailo_pb.ts:2565](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2565)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2428](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2428)
+[src/debit_notes.scailo_pb.ts:2584](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2584)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2416](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2416)
+[src/debit_notes.scailo_pb.ts:2572](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2572)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2420](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2420)
+[src/debit_notes.scailo_pb.ts:2576](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2576)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2424](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/debit_notes.scailo_pb.ts#L2424)
+[src/debit_notes.scailo_pb.ts:2580](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/debit_notes.scailo_pb.ts#L2580)

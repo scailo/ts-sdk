@@ -836,6 +836,110 @@ export declare class PurchasesOrdersServiceItemCreateRequest extends Message<Pur
 }
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a purchase order
+ *
+ * @generated from message Scailo.PurchasesOrdersServiceMultipleItemsSingleton
+ */
+export declare class PurchasesOrdersServiceMultipleItemsSingleton extends Message<PurchasesOrdersServiceMultipleItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the vendor's unit of material
+     *
+     * @generated from field: uint64 vendor_uom_id = 13;
+     */
+    vendorUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in vendor's unit of material
+     *
+     * @generated from field: uint64 vendor_quantity = 14;
+     */
+    vendorQuantity: bigint;
+    /**
+     * The unit price of the item (as supplied by the vendor)
+     *
+     * @generated from field: uint64 vendor_unit_price = 15;
+     */
+    vendorUnitPrice: bigint;
+    /**
+     * The ID of the associated tax group
+     *
+     * @generated from field: uint64 tax_group_id = 16;
+     */
+    taxGroupId: bigint;
+    /**
+     * The applicable discount percentage (in cents)
+     *
+     * @generated from field: uint64 discount = 17;
+     */
+    discount: bigint;
+    /**
+     * The delivery date of the item
+     *
+     * @generated from field: string delivery_date = 18;
+     */
+    deliveryDate: string;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 19;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<PurchasesOrdersServiceMultipleItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchasesOrdersServiceMultipleItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesOrdersServiceMultipleItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceMultipleItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceMultipleItemsSingleton;
+    static equals(a: PurchasesOrdersServiceMultipleItemsSingleton | PlainMessage<PurchasesOrdersServiceMultipleItemsSingleton> | undefined, b: PurchasesOrdersServiceMultipleItemsSingleton | PlainMessage<PurchasesOrdersServiceMultipleItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a purchase order
+ *
+ * @generated from message Scailo.PurchasesOrdersServiceMultipleItemsCreateRequest
+ */
+export declare class PurchasesOrdersServiceMultipleItemsCreateRequest extends Message<PurchasesOrdersServiceMultipleItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the purchase order ID
+     *
+     * @generated from field: uint64 purchase_order_id = 10;
+     */
+    purchaseOrderId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.PurchasesOrdersServiceMultipleItemsSingleton list = 11;
+     */
+    list: PurchasesOrdersServiceMultipleItemsSingleton[];
+    constructor(data?: PartialMessage<PurchasesOrdersServiceMultipleItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchasesOrdersServiceMultipleItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesOrdersServiceMultipleItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceMultipleItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceMultipleItemsCreateRequest;
+    static equals(a: PurchasesOrdersServiceMultipleItemsCreateRequest | PlainMessage<PurchasesOrdersServiceMultipleItemsCreateRequest> | undefined, b: PurchasesOrdersServiceMultipleItemsCreateRequest | PlainMessage<PurchasesOrdersServiceMultipleItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters required to update an item in a purchase order
  *
  * @generated from message Scailo.PurchasesOrdersServiceItemUpdateRequest

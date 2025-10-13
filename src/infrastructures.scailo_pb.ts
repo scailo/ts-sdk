@@ -1085,7 +1085,7 @@ export class InfrastructuresServiceFilterReq extends Message<InfrastructuresServ
   code = "";
 
   /**
-   * Stores the internal code (as given by user)
+   * Filter by the exact internal code
    *
    * @generated from field: string internal_item_code = 35;
    */
@@ -1373,7 +1373,7 @@ export class InfrastructuresServiceCountReq extends Message<InfrastructuresServi
   code = "";
 
   /**
-   * Stores the internal code (as given by user)
+   * Filter by the exact internal code
    *
    * @generated from field: string internal_item_code = 35;
    */

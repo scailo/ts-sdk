@@ -31,7 +31,7 @@ from enum value: STOCK_ISSUANCE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/stock_issuances.scailo_pb.ts#L23)
+[src/stock_issuances.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/stock_issuances.scailo_pb.ts#L23)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: STOCK_ISSUANCE_REF_FROM_ASSET_INDENT = 2;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/stock_issuances.scailo_pb.ts#L37)
+[src/stock_issuances.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/stock_issuances.scailo_pb.ts#L37)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: STOCK_ISSUANCE_REF_FROM_PRODUCTION_INDENT = 1;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/stock_issuances.scailo_pb.ts#L30)
+[src/stock_issuances.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/stock_issuances.scailo_pb.ts#L30)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: STOCK_ISSUANCE_REF_FROM_REPLACEABLE_INDENT = 3;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/stock_issuances.scailo_pb.ts#L44)
+[src/stock_issuances.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/stock_issuances.scailo_pb.ts#L44)

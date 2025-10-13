@@ -754,7 +754,7 @@ export declare class ProductsServiceFilterReq extends Message<ProductsServiceFil
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */
@@ -950,7 +950,7 @@ export declare class ProductsServiceCountReq extends Message<ProductsServiceCoun
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */

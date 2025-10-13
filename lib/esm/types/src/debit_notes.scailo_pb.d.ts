@@ -612,6 +612,104 @@ export declare class DebitNotesServiceItemCreateRequest extends Message<DebitNot
 }
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a debit note
+ *
+ * @generated from message Scailo.DebitNotesServiceMultipleItemsSingleton
+ */
+export declare class DebitNotesServiceMultipleItemsSingleton extends Message<DebitNotesServiceMultipleItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being admitted in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the vendor's unit of material
+     *
+     * @generated from field: uint64 vendor_uom_id = 13;
+     */
+    vendorUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being admitted in vendor's unit of material
+     *
+     * @generated from field: uint64 vendor_quantity = 14;
+     */
+    vendorQuantity: bigint;
+    /**
+     * The unit price of the item (as supplied by the vendor)
+     *
+     * @generated from field: uint64 vendor_unit_price = 15;
+     */
+    vendorUnitPrice: bigint;
+    /**
+     * The ID of the associated tax group
+     *
+     * @generated from field: uint64 tax_group_id = 16;
+     */
+    taxGroupId: bigint;
+    /**
+     * The applicable round off amount (optional, and can be positive or negative)
+     *
+     * @generated from field: int64 round_off = 17;
+     */
+    roundOff: bigint;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 18;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<DebitNotesServiceMultipleItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.DebitNotesServiceMultipleItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNotesServiceMultipleItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DebitNotesServiceMultipleItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DebitNotesServiceMultipleItemsSingleton;
+    static equals(a: DebitNotesServiceMultipleItemsSingleton | PlainMessage<DebitNotesServiceMultipleItemsSingleton> | undefined, b: DebitNotesServiceMultipleItemsSingleton | PlainMessage<DebitNotesServiceMultipleItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a debit note
+ *
+ * @generated from message Scailo.DebitNotesServiceMultipleItemsCreateRequest
+ */
+export declare class DebitNotesServiceMultipleItemsCreateRequest extends Message<DebitNotesServiceMultipleItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the debit note ID
+     *
+     * @generated from field: uint64 debit_note_id = 10;
+     */
+    debitNoteId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.DebitNotesServiceMultipleItemsSingleton list = 11;
+     */
+    list: DebitNotesServiceMultipleItemsSingleton[];
+    constructor(data?: PartialMessage<DebitNotesServiceMultipleItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.DebitNotesServiceMultipleItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNotesServiceMultipleItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DebitNotesServiceMultipleItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DebitNotesServiceMultipleItemsCreateRequest;
+    static equals(a: DebitNotesServiceMultipleItemsCreateRequest | PlainMessage<DebitNotesServiceMultipleItemsCreateRequest> | undefined, b: DebitNotesServiceMultipleItemsCreateRequest | PlainMessage<DebitNotesServiceMultipleItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters required to update an item in a debit note
  *
  * @generated from message Scailo.DebitNotesServiceItemUpdateRequest

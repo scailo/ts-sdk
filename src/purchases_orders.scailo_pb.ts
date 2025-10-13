@@ -1197,6 +1197,170 @@ export class PurchasesOrdersServiceItemCreateRequest extends Message<PurchasesOr
 
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a purchase order
+ *
+ * @generated from message Scailo.PurchasesOrdersServiceMultipleItemsSingleton
+ */
+export class PurchasesOrdersServiceMultipleItemsSingleton extends Message<PurchasesOrdersServiceMultipleItemsSingleton> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 11;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity (in cents) being ordered in internal unit of material
+   *
+   * @generated from field: uint64 internal_quantity = 12;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   * Stores the ID of the vendor's unit of material
+   *
+   * @generated from field: uint64 vendor_uom_id = 13;
+   */
+  vendorUomId = protoInt64.zero;
+
+  /**
+   * Stores the quantity (in cents) being ordered in vendor's unit of material
+   *
+   * @generated from field: uint64 vendor_quantity = 14;
+   */
+  vendorQuantity = protoInt64.zero;
+
+  /**
+   * The unit price of the item (as supplied by the vendor)
+   *
+   * @generated from field: uint64 vendor_unit_price = 15;
+   */
+  vendorUnitPrice = protoInt64.zero;
+
+  /**
+   * The ID of the associated tax group
+   *
+   * @generated from field: uint64 tax_group_id = 16;
+   */
+  taxGroupId = protoInt64.zero;
+
+  /**
+   * The applicable discount percentage (in cents)
+   *
+   * @generated from field: uint64 discount = 17;
+   */
+  discount = protoInt64.zero;
+
+  /**
+   * The delivery date of the item
+   *
+   * @generated from field: string delivery_date = 18;
+   */
+  deliveryDate = "";
+
+  /**
+   * Optional specifications
+   *
+   * @generated from field: string specifications = 19;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<PurchasesOrdersServiceMultipleItemsSingleton>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchasesOrdersServiceMultipleItemsSingleton";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "vendor_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 17, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesOrdersServiceMultipleItemsSingleton {
+    return new PurchasesOrdersServiceMultipleItemsSingleton().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceMultipleItemsSingleton {
+    return new PurchasesOrdersServiceMultipleItemsSingleton().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceMultipleItemsSingleton {
+    return new PurchasesOrdersServiceMultipleItemsSingleton().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchasesOrdersServiceMultipleItemsSingleton | PlainMessage<PurchasesOrdersServiceMultipleItemsSingleton> | undefined, b: PurchasesOrdersServiceMultipleItemsSingleton | PlainMessage<PurchasesOrdersServiceMultipleItemsSingleton> | undefined): boolean {
+    return proto3.util.equals(PurchasesOrdersServiceMultipleItemsSingleton, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters required to add multiple items to a purchase order
+ *
+ * @generated from message Scailo.PurchasesOrdersServiceMultipleItemsCreateRequest
+ */
+export class PurchasesOrdersServiceMultipleItemsCreateRequest extends Message<PurchasesOrdersServiceMultipleItemsCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the purchase order ID
+   *
+   * @generated from field: uint64 purchase_order_id = 10;
+   */
+  purchaseOrderId = protoInt64.zero;
+
+  /**
+   * List of items
+   *
+   * @generated from field: repeated Scailo.PurchasesOrdersServiceMultipleItemsSingleton list = 11;
+   */
+  list: PurchasesOrdersServiceMultipleItemsSingleton[] = [];
+
+  constructor(data?: PartialMessage<PurchasesOrdersServiceMultipleItemsCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchasesOrdersServiceMultipleItemsCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "purchase_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "list", kind: "message", T: PurchasesOrdersServiceMultipleItemsSingleton, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesOrdersServiceMultipleItemsCreateRequest {
+    return new PurchasesOrdersServiceMultipleItemsCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceMultipleItemsCreateRequest {
+    return new PurchasesOrdersServiceMultipleItemsCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceMultipleItemsCreateRequest {
+    return new PurchasesOrdersServiceMultipleItemsCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchasesOrdersServiceMultipleItemsCreateRequest | PlainMessage<PurchasesOrdersServiceMultipleItemsCreateRequest> | undefined, b: PurchasesOrdersServiceMultipleItemsCreateRequest | PlainMessage<PurchasesOrdersServiceMultipleItemsCreateRequest> | undefined): boolean {
+    return proto3.util.equals(PurchasesOrdersServiceMultipleItemsCreateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters required to update an item in a purchase order
  *
  * @generated from message Scailo.PurchasesOrdersServiceItemUpdateRequest

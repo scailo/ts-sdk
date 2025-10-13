@@ -760,7 +760,7 @@ export declare class MerchandisesServiceFilterReq extends Message<MerchandisesSe
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */
@@ -964,7 +964,7 @@ export declare class MerchandisesServiceCountReq extends Message<MerchandisesSer
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */

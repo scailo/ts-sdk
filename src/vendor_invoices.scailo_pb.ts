@@ -1002,6 +1002,162 @@ export class VendorInvoicesServiceItemCreateRequest extends Message<VendorInvoic
 
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a vendor invoice
+ *
+ * @generated from message Scailo.VendorInvoicesServiceMultipleItemsSingleton
+ */
+export class VendorInvoicesServiceMultipleItemsSingleton extends Message<VendorInvoicesServiceMultipleItemsSingleton> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 11;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity (in cents) being admitted in internal unit of material
+   *
+   * @generated from field: uint64 internal_quantity = 12;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   * Stores the ID of the vendor's unit of material
+   *
+   * @generated from field: uint64 vendor_uom_id = 13;
+   */
+  vendorUomId = protoInt64.zero;
+
+  /**
+   * Stores the quantity (in cents) being admitted in vendor's unit of material
+   *
+   * @generated from field: uint64 vendor_quantity = 14;
+   */
+  vendorQuantity = protoInt64.zero;
+
+  /**
+   * The unit price of the item (as supplied by the vendor)
+   *
+   * @generated from field: uint64 vendor_unit_price = 15;
+   */
+  vendorUnitPrice = protoInt64.zero;
+
+  /**
+   * The ID of the associated tax group
+   *
+   * @generated from field: uint64 tax_group_id = 16;
+   */
+  taxGroupId = protoInt64.zero;
+
+  /**
+   * The applicable round off amount (optional, and can be positive or negative)
+   *
+   * @generated from field: int64 round_off = 17;
+   */
+  roundOff = protoInt64.zero;
+
+  /**
+   * Optional specifications
+   *
+   * @generated from field: string specifications = 18;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<VendorInvoicesServiceMultipleItemsSingleton>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorInvoicesServiceMultipleItemsSingleton";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "vendor_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorInvoicesServiceMultipleItemsSingleton {
+    return new VendorInvoicesServiceMultipleItemsSingleton().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorInvoicesServiceMultipleItemsSingleton {
+    return new VendorInvoicesServiceMultipleItemsSingleton().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorInvoicesServiceMultipleItemsSingleton {
+    return new VendorInvoicesServiceMultipleItemsSingleton().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorInvoicesServiceMultipleItemsSingleton | PlainMessage<VendorInvoicesServiceMultipleItemsSingleton> | undefined, b: VendorInvoicesServiceMultipleItemsSingleton | PlainMessage<VendorInvoicesServiceMultipleItemsSingleton> | undefined): boolean {
+    return proto3.util.equals(VendorInvoicesServiceMultipleItemsSingleton, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters required to add multiple items to a vendor invoice
+ *
+ * @generated from message Scailo.VendorInvoicesServiceMultipleItemsCreateRequest
+ */
+export class VendorInvoicesServiceMultipleItemsCreateRequest extends Message<VendorInvoicesServiceMultipleItemsCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the vendor invoice ID
+   *
+   * @generated from field: uint64 vendor_invoice_id = 10;
+   */
+  vendorInvoiceId = protoInt64.zero;
+
+  /**
+   * List of items
+   *
+   * @generated from field: repeated Scailo.VendorInvoicesServiceMultipleItemsSingleton list = 11;
+   */
+  list: VendorInvoicesServiceMultipleItemsSingleton[] = [];
+
+  constructor(data?: PartialMessage<VendorInvoicesServiceMultipleItemsCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorInvoicesServiceMultipleItemsCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "vendor_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "list", kind: "message", T: VendorInvoicesServiceMultipleItemsSingleton, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorInvoicesServiceMultipleItemsCreateRequest {
+    return new VendorInvoicesServiceMultipleItemsCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorInvoicesServiceMultipleItemsCreateRequest {
+    return new VendorInvoicesServiceMultipleItemsCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorInvoicesServiceMultipleItemsCreateRequest {
+    return new VendorInvoicesServiceMultipleItemsCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorInvoicesServiceMultipleItemsCreateRequest | PlainMessage<VendorInvoicesServiceMultipleItemsCreateRequest> | undefined, b: VendorInvoicesServiceMultipleItemsCreateRequest | PlainMessage<VendorInvoicesServiceMultipleItemsCreateRequest> | undefined): boolean {
+    return proto3.util.equals(VendorInvoicesServiceMultipleItemsCreateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters required to update an item in a vendor invoice
  *
  * @generated from message Scailo.VendorInvoicesServiceItemUpdateRequest

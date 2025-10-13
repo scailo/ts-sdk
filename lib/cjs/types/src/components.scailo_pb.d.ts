@@ -772,7 +772,7 @@ export declare class ComponentsServiceFilterReq extends Message<ComponentsServic
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */
@@ -976,7 +976,7 @@ export declare class ComponentsServiceCountReq extends Message<ComponentsService
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */

@@ -1085,7 +1085,7 @@ export class MerchandisesServiceFilterReq extends Message<MerchandisesServiceFil
   code = "";
 
   /**
-   * Stores the internal code (as given by user)
+   * Filter by the exact internal code
    *
    * @generated from field: string internal_item_code = 35;
    */
@@ -1373,7 +1373,7 @@ export class MerchandisesServiceCountReq extends Message<MerchandisesServiceCoun
   code = "";
 
   /**
-   * Stores the internal code (as given by user)
+   * Filter by the exact internal code
    *
    * @generated from field: string internal_item_code = 35;
    */

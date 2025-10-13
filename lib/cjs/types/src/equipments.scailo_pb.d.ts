@@ -760,7 +760,7 @@ export declare class EquipmentsServiceFilterReq extends Message<EquipmentsServic
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */
@@ -964,7 +964,7 @@ export declare class EquipmentsServiceCountReq extends Message<EquipmentsService
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */

@@ -821,6 +821,146 @@ export class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispat
 
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a goods dispatch
+ *
+ * @generated from message Scailo.GoodsDispatchesServiceMultipleItemsSingleton
+ */
+export class GoodsDispatchesServiceMultipleItemsSingleton extends Message<GoodsDispatchesServiceMultipleItemsSingleton> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 11;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the item hash to be dispatched
+   *
+   * @generated from field: string item_hash = 12;
+   */
+  itemHash = "";
+
+  /**
+   * The quantity (in cents) being dispatched in internal unit of material
+   *
+   * @generated from field: uint64 internal_quantity = 13;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   * Stores the ID of the client's unit of material
+   *
+   * @generated from field: uint64 client_uom_id = 14;
+   */
+  clientUomId = protoInt64.zero;
+
+  /**
+   * Stores the quantity (in cents) being dispatched in client's unit of material
+   *
+   * @generated from field: uint64 client_quantity = 15;
+   */
+  clientQuantity = protoInt64.zero;
+
+  /**
+   * Stores the family code as defined by the client
+   *
+   * @generated from field: string client_family_code = 16;
+   */
+  clientFamilyCode = "";
+
+  constructor(data?: PartialMessage<GoodsDispatchesServiceMultipleItemsSingleton>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.GoodsDispatchesServiceMultipleItemsSingleton";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceMultipleItemsSingleton {
+    return new GoodsDispatchesServiceMultipleItemsSingleton().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceMultipleItemsSingleton {
+    return new GoodsDispatchesServiceMultipleItemsSingleton().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceMultipleItemsSingleton {
+    return new GoodsDispatchesServiceMultipleItemsSingleton().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: GoodsDispatchesServiceMultipleItemsSingleton | PlainMessage<GoodsDispatchesServiceMultipleItemsSingleton> | undefined, b: GoodsDispatchesServiceMultipleItemsSingleton | PlainMessage<GoodsDispatchesServiceMultipleItemsSingleton> | undefined): boolean {
+    return proto3.util.equals(GoodsDispatchesServiceMultipleItemsSingleton, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters required to add multiple items to a goods dispatch
+ *
+ * @generated from message Scailo.GoodsDispatchesServiceMultipleItemsCreateRequest
+ */
+export class GoodsDispatchesServiceMultipleItemsCreateRequest extends Message<GoodsDispatchesServiceMultipleItemsCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the goods dispatch ID
+   *
+   * @generated from field: uint64 goods_dispatch_id = 10;
+   */
+  goodsDispatchId = protoInt64.zero;
+
+  /**
+   * List of items
+   *
+   * @generated from field: repeated Scailo.GoodsDispatchesServiceMultipleItemsSingleton list = 11;
+   */
+  list: GoodsDispatchesServiceMultipleItemsSingleton[] = [];
+
+  constructor(data?: PartialMessage<GoodsDispatchesServiceMultipleItemsCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.GoodsDispatchesServiceMultipleItemsCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "goods_dispatch_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "list", kind: "message", T: GoodsDispatchesServiceMultipleItemsSingleton, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceMultipleItemsCreateRequest {
+    return new GoodsDispatchesServiceMultipleItemsCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceMultipleItemsCreateRequest {
+    return new GoodsDispatchesServiceMultipleItemsCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceMultipleItemsCreateRequest {
+    return new GoodsDispatchesServiceMultipleItemsCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: GoodsDispatchesServiceMultipleItemsCreateRequest | PlainMessage<GoodsDispatchesServiceMultipleItemsCreateRequest> | undefined, b: GoodsDispatchesServiceMultipleItemsCreateRequest | PlainMessage<GoodsDispatchesServiceMultipleItemsCreateRequest> | undefined): boolean {
+    return proto3.util.equals(GoodsDispatchesServiceMultipleItemsCreateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters required to update an item in a goods dispatch
  *
  * @generated from message Scailo.GoodsDispatchesServiceItemUpdateRequest

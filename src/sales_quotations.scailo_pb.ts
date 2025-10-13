@@ -1077,6 +1077,178 @@ export class SalesQuotationsServiceItemCreateRequest extends Message<SalesQuotat
 
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a sales quotation
+ *
+ * @generated from message Scailo.SalesQuotationsServiceMultipleItemsSingleton
+ */
+export class SalesQuotationsServiceMultipleItemsSingleton extends Message<SalesQuotationsServiceMultipleItemsSingleton> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 12;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity (in cents) being quotationed in internal unit of material
+   *
+   * @generated from field: uint64 internal_quantity = 13;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   * Stores the ID of the client's unit of material
+   *
+   * @generated from field: uint64 client_uom_id = 14;
+   */
+  clientUomId = protoInt64.zero;
+
+  /**
+   * Stores the quantity (in cents) being quotationed in client's unit of material
+   *
+   * @generated from field: uint64 client_quantity = 15;
+   */
+  clientQuantity = protoInt64.zero;
+
+  /**
+   * Stores the family code as given by the client
+   *
+   * @generated from field: string client_family_code = 16;
+   */
+  clientFamilyCode = "";
+
+  /**
+   * The unit price of the item
+   *
+   * @generated from field: uint64 unit_price = 17;
+   */
+  unitPrice = protoInt64.zero;
+
+  /**
+   * The ID of the associated tax group
+   *
+   * @generated from field: uint64 tax_group_id = 18;
+   */
+  taxGroupId = protoInt64.zero;
+
+  /**
+   * The applicable discount percentage (in cents)
+   *
+   * @generated from field: uint64 discount = 19;
+   */
+  discount = protoInt64.zero;
+
+  /**
+   * The delivery date of the item
+   *
+   * @generated from field: string delivery_date = 20;
+   */
+  deliveryDate = "";
+
+  /**
+   * Optional specifications
+   *
+   * @generated from field: string specifications = 21;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<SalesQuotationsServiceMultipleItemsSingleton>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesQuotationsServiceMultipleItemsSingleton";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 12, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesQuotationsServiceMultipleItemsSingleton {
+    return new SalesQuotationsServiceMultipleItemsSingleton().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesQuotationsServiceMultipleItemsSingleton {
+    return new SalesQuotationsServiceMultipleItemsSingleton().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesQuotationsServiceMultipleItemsSingleton {
+    return new SalesQuotationsServiceMultipleItemsSingleton().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesQuotationsServiceMultipleItemsSingleton | PlainMessage<SalesQuotationsServiceMultipleItemsSingleton> | undefined, b: SalesQuotationsServiceMultipleItemsSingleton | PlainMessage<SalesQuotationsServiceMultipleItemsSingleton> | undefined): boolean {
+    return proto3.util.equals(SalesQuotationsServiceMultipleItemsSingleton, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters required to add multiple items to a sales quotation
+ *
+ * @generated from message Scailo.SalesQuotationsServiceMultipleItemsCreateRequest
+ */
+export class SalesQuotationsServiceMultipleItemsCreateRequest extends Message<SalesQuotationsServiceMultipleItemsCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the sales quotation ID
+   *
+   * @generated from field: uint64 sales_quotation_id = 10;
+   */
+  salesQuotationId = protoInt64.zero;
+
+  /**
+   * List of items
+   *
+   * @generated from field: repeated Scailo.SalesQuotationsServiceMultipleItemsSingleton list = 11;
+   */
+  list: SalesQuotationsServiceMultipleItemsSingleton[] = [];
+
+  constructor(data?: PartialMessage<SalesQuotationsServiceMultipleItemsCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesQuotationsServiceMultipleItemsCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "sales_quotation_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "list", kind: "message", T: SalesQuotationsServiceMultipleItemsSingleton, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesQuotationsServiceMultipleItemsCreateRequest {
+    return new SalesQuotationsServiceMultipleItemsCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesQuotationsServiceMultipleItemsCreateRequest {
+    return new SalesQuotationsServiceMultipleItemsCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesQuotationsServiceMultipleItemsCreateRequest {
+    return new SalesQuotationsServiceMultipleItemsCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesQuotationsServiceMultipleItemsCreateRequest | PlainMessage<SalesQuotationsServiceMultipleItemsCreateRequest> | undefined, b: SalesQuotationsServiceMultipleItemsCreateRequest | PlainMessage<SalesQuotationsServiceMultipleItemsCreateRequest> | undefined): boolean {
+    return proto3.util.equals(SalesQuotationsServiceMultipleItemsCreateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters required to update an item in a sales quotation
  *
  * @generated from message Scailo.SalesQuotationsServiceItemUpdateRequest

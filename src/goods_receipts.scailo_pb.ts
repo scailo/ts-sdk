@@ -829,6 +829,130 @@ export class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceipts
 
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a goods receipt
+ *
+ * @generated from message Scailo.GoodsReceiptsServiceMultipleItemsSingleton
+ */
+export class GoodsReceiptsServiceMultipleItemsSingleton extends Message<GoodsReceiptsServiceMultipleItemsSingleton> {
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 11;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * The quantity (in cents) being admitted in internal unit of material
+   *
+   * @generated from field: uint64 internal_quantity = 12;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   * Stores the ID of the vendor's unit of material
+   *
+   * @generated from field: uint64 vendor_uom_id = 13;
+   */
+  vendorUomId = protoInt64.zero;
+
+  /**
+   * Stores the quantity (in cents) being admitted in vendor's unit of material
+   *
+   * @generated from field: uint64 vendor_quantity = 14;
+   */
+  vendorQuantity = protoInt64.zero;
+
+  constructor(data?: PartialMessage<GoodsReceiptsServiceMultipleItemsSingleton>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.GoodsReceiptsServiceMultipleItemsSingleton";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceMultipleItemsSingleton {
+    return new GoodsReceiptsServiceMultipleItemsSingleton().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceMultipleItemsSingleton {
+    return new GoodsReceiptsServiceMultipleItemsSingleton().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceMultipleItemsSingleton {
+    return new GoodsReceiptsServiceMultipleItemsSingleton().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: GoodsReceiptsServiceMultipleItemsSingleton | PlainMessage<GoodsReceiptsServiceMultipleItemsSingleton> | undefined, b: GoodsReceiptsServiceMultipleItemsSingleton | PlainMessage<GoodsReceiptsServiceMultipleItemsSingleton> | undefined): boolean {
+    return proto3.util.equals(GoodsReceiptsServiceMultipleItemsSingleton, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters required to add multiple items to a goods receipt
+ *
+ * @generated from message Scailo.GoodsReceiptsServiceMultipleItemsCreateRequest
+ */
+export class GoodsReceiptsServiceMultipleItemsCreateRequest extends Message<GoodsReceiptsServiceMultipleItemsCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the goods receipt ID
+   *
+   * @generated from field: uint64 goods_receipt_id = 10;
+   */
+  goodsReceiptId = protoInt64.zero;
+
+  /**
+   * List of items
+   *
+   * @generated from field: repeated Scailo.GoodsReceiptsServiceMultipleItemsSingleton list = 11;
+   */
+  list: GoodsReceiptsServiceMultipleItemsSingleton[] = [];
+
+  constructor(data?: PartialMessage<GoodsReceiptsServiceMultipleItemsCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.GoodsReceiptsServiceMultipleItemsCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "goods_receipt_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "list", kind: "message", T: GoodsReceiptsServiceMultipleItemsSingleton, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceMultipleItemsCreateRequest {
+    return new GoodsReceiptsServiceMultipleItemsCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceMultipleItemsCreateRequest {
+    return new GoodsReceiptsServiceMultipleItemsCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceMultipleItemsCreateRequest {
+    return new GoodsReceiptsServiceMultipleItemsCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: GoodsReceiptsServiceMultipleItemsCreateRequest | PlainMessage<GoodsReceiptsServiceMultipleItemsCreateRequest> | undefined, b: GoodsReceiptsServiceMultipleItemsCreateRequest | PlainMessage<GoodsReceiptsServiceMultipleItemsCreateRequest> | undefined): boolean {
+    return proto3.util.equals(GoodsReceiptsServiceMultipleItemsCreateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters required to update an item in a goods receipt
  *
  * @generated from message Scailo.GoodsReceiptsServiceItemUpdateRequest

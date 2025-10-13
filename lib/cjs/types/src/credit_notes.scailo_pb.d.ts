@@ -642,6 +642,110 @@ export declare class CreditNotesServiceItemCreateRequest extends Message<CreditN
 }
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a credit note
+ *
+ * @generated from message Scailo.CreditNotesServiceMultipleItemsSingleton
+ */
+export declare class CreditNotesServiceMultipleItemsSingleton extends Message<CreditNotesServiceMultipleItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being supplied in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being admitted in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * The family code as represented by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * The unit price of the item (as supplied to the client)
+     *
+     * @generated from field: uint64 unit_price = 16;
+     */
+    unitPrice: bigint;
+    /**
+     * The ID of the associated tax group
+     *
+     * @generated from field: uint64 tax_group_id = 17;
+     */
+    taxGroupId: bigint;
+    /**
+     * The applicable round off amount (optional, and can be positive or negative)
+     *
+     * @generated from field: int64 round_off = 18;
+     */
+    roundOff: bigint;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 19;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<CreditNotesServiceMultipleItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.CreditNotesServiceMultipleItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNotesServiceMultipleItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CreditNotesServiceMultipleItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CreditNotesServiceMultipleItemsSingleton;
+    static equals(a: CreditNotesServiceMultipleItemsSingleton | PlainMessage<CreditNotesServiceMultipleItemsSingleton> | undefined, b: CreditNotesServiceMultipleItemsSingleton | PlainMessage<CreditNotesServiceMultipleItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a credit note
+ *
+ * @generated from message Scailo.CreditNotesServiceMultipleItemsCreateRequest
+ */
+export declare class CreditNotesServiceMultipleItemsCreateRequest extends Message<CreditNotesServiceMultipleItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the credit note ID
+     *
+     * @generated from field: uint64 credit_note_id = 10;
+     */
+    creditNoteId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.CreditNotesServiceMultipleItemsSingleton list = 11;
+     */
+    list: CreditNotesServiceMultipleItemsSingleton[];
+    constructor(data?: PartialMessage<CreditNotesServiceMultipleItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.CreditNotesServiceMultipleItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreditNotesServiceMultipleItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CreditNotesServiceMultipleItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CreditNotesServiceMultipleItemsCreateRequest;
+    static equals(a: CreditNotesServiceMultipleItemsCreateRequest | PlainMessage<CreditNotesServiceMultipleItemsCreateRequest> | undefined, b: CreditNotesServiceMultipleItemsCreateRequest | PlainMessage<CreditNotesServiceMultipleItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters required to update an item in a credit note
  *
  * @generated from message Scailo.CreditNotesServiceItemUpdateRequest

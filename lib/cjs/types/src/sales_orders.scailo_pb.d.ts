@@ -818,6 +818,122 @@ export declare class SalesOrdersServiceItemCreateRequest extends Message<SalesOr
 }
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a sales order
+ *
+ * @generated from message Scailo.SalesOrdersServiceMultipleItemsSingleton
+ */
+export declare class SalesOrdersServiceMultipleItemsSingleton extends Message<SalesOrdersServiceMultipleItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 12;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being ordered in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 13;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 14;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being ordered in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 15;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as given by the client
+     *
+     * @generated from field: string client_family_code = 16;
+     */
+    clientFamilyCode: string;
+    /**
+     * The unit price of the item
+     *
+     * @generated from field: uint64 unit_price = 17;
+     */
+    unitPrice: bigint;
+    /**
+     * The ID of the associated tax group
+     *
+     * @generated from field: uint64 tax_group_id = 18;
+     */
+    taxGroupId: bigint;
+    /**
+     * The applicable discount percentage (in cents)
+     *
+     * @generated from field: uint64 discount = 19;
+     */
+    discount: bigint;
+    /**
+     * The delivery date of the item
+     *
+     * @generated from field: string delivery_date = 20;
+     */
+    deliveryDate: string;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 21;
+     */
+    specifications: string;
+    /**
+     * Stores if the item can be invoiced
+     *
+     * @generated from field: bool is_invoiceable = 22;
+     */
+    isInvoiceable: boolean;
+    constructor(data?: PartialMessage<SalesOrdersServiceMultipleItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrdersServiceMultipleItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceMultipleItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrdersServiceMultipleItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrdersServiceMultipleItemsSingleton;
+    static equals(a: SalesOrdersServiceMultipleItemsSingleton | PlainMessage<SalesOrdersServiceMultipleItemsSingleton> | undefined, b: SalesOrdersServiceMultipleItemsSingleton | PlainMessage<SalesOrdersServiceMultipleItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a sales order
+ *
+ * @generated from message Scailo.SalesOrdersServiceMultipleItemsCreateRequest
+ */
+export declare class SalesOrdersServiceMultipleItemsCreateRequest extends Message<SalesOrdersServiceMultipleItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the sales order ID
+     *
+     * @generated from field: uint64 sales_order_id = 10;
+     */
+    salesOrderId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.SalesOrdersServiceMultipleItemsSingleton list = 11;
+     */
+    list: SalesOrdersServiceMultipleItemsSingleton[];
+    constructor(data?: PartialMessage<SalesOrdersServiceMultipleItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrdersServiceMultipleItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceMultipleItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrdersServiceMultipleItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrdersServiceMultipleItemsCreateRequest;
+    static equals(a: SalesOrdersServiceMultipleItemsCreateRequest | PlainMessage<SalesOrdersServiceMultipleItemsCreateRequest> | undefined, b: SalesOrdersServiceMultipleItemsCreateRequest | PlainMessage<SalesOrdersServiceMultipleItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters required to update an item in a sales order
  *
  * @generated from message Scailo.SalesOrdersServiceItemUpdateRequest

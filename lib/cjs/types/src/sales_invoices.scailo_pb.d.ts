@@ -696,6 +696,110 @@ export declare class SalesInvoicesServiceItemCreateRequest extends Message<Sales
 }
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a sales invoice
+ *
+ * @generated from message Scailo.SalesInvoicesServiceMultipleItemsSingleton
+ */
+export declare class SalesInvoicesServiceMultipleItemsSingleton extends Message<SalesInvoicesServiceMultipleItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being supplied in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 13;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being admitted in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 14;
+     */
+    clientQuantity: bigint;
+    /**
+     * The family code as represented by the client
+     *
+     * @generated from field: string client_family_code = 15;
+     */
+    clientFamilyCode: string;
+    /**
+     * The unit price of the item (as supplied to the client)
+     *
+     * @generated from field: uint64 unit_price = 16;
+     */
+    unitPrice: bigint;
+    /**
+     * The ID of the associated tax group
+     *
+     * @generated from field: uint64 tax_group_id = 17;
+     */
+    taxGroupId: bigint;
+    /**
+     * The applicable round off amount (optional, and can be positive or negative)
+     *
+     * @generated from field: int64 round_off = 18;
+     */
+    roundOff: bigint;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 19;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<SalesInvoicesServiceMultipleItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesInvoicesServiceMultipleItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceMultipleItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesInvoicesServiceMultipleItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesInvoicesServiceMultipleItemsSingleton;
+    static equals(a: SalesInvoicesServiceMultipleItemsSingleton | PlainMessage<SalesInvoicesServiceMultipleItemsSingleton> | undefined, b: SalesInvoicesServiceMultipleItemsSingleton | PlainMessage<SalesInvoicesServiceMultipleItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a sales invoice
+ *
+ * @generated from message Scailo.SalesInvoicesServiceMultipleItemsCreateRequest
+ */
+export declare class SalesInvoicesServiceMultipleItemsCreateRequest extends Message<SalesInvoicesServiceMultipleItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the sales invoice ID
+     *
+     * @generated from field: uint64 sales_invoice_id = 10;
+     */
+    salesInvoiceId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.SalesInvoicesServiceMultipleItemsSingleton list = 11;
+     */
+    list: SalesInvoicesServiceMultipleItemsSingleton[];
+    constructor(data?: PartialMessage<SalesInvoicesServiceMultipleItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesInvoicesServiceMultipleItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceMultipleItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesInvoicesServiceMultipleItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesInvoicesServiceMultipleItemsCreateRequest;
+    static equals(a: SalesInvoicesServiceMultipleItemsCreateRequest | PlainMessage<SalesInvoicesServiceMultipleItemsCreateRequest> | undefined, b: SalesInvoicesServiceMultipleItemsCreateRequest | PlainMessage<SalesInvoicesServiceMultipleItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters required to update an item in a sales invoice
  *
  * @generated from message Scailo.SalesInvoicesServiceItemUpdateRequest

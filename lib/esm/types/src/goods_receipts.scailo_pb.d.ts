@@ -560,6 +560,80 @@ export declare class GoodsReceiptsServiceItemCreateRequest extends Message<Goods
 }
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a goods receipt
+ *
+ * @generated from message Scailo.GoodsReceiptsServiceMultipleItemsSingleton
+ */
+export declare class GoodsReceiptsServiceMultipleItemsSingleton extends Message<GoodsReceiptsServiceMultipleItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * The quantity (in cents) being admitted in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 12;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the vendor's unit of material
+     *
+     * @generated from field: uint64 vendor_uom_id = 13;
+     */
+    vendorUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being admitted in vendor's unit of material
+     *
+     * @generated from field: uint64 vendor_quantity = 14;
+     */
+    vendorQuantity: bigint;
+    constructor(data?: PartialMessage<GoodsReceiptsServiceMultipleItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.GoodsReceiptsServiceMultipleItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceMultipleItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceMultipleItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceMultipleItemsSingleton;
+    static equals(a: GoodsReceiptsServiceMultipleItemsSingleton | PlainMessage<GoodsReceiptsServiceMultipleItemsSingleton> | undefined, b: GoodsReceiptsServiceMultipleItemsSingleton | PlainMessage<GoodsReceiptsServiceMultipleItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a goods receipt
+ *
+ * @generated from message Scailo.GoodsReceiptsServiceMultipleItemsCreateRequest
+ */
+export declare class GoodsReceiptsServiceMultipleItemsCreateRequest extends Message<GoodsReceiptsServiceMultipleItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the goods receipt ID
+     *
+     * @generated from field: uint64 goods_receipt_id = 10;
+     */
+    goodsReceiptId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.GoodsReceiptsServiceMultipleItemsSingleton list = 11;
+     */
+    list: GoodsReceiptsServiceMultipleItemsSingleton[];
+    constructor(data?: PartialMessage<GoodsReceiptsServiceMultipleItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.GoodsReceiptsServiceMultipleItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceMultipleItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceMultipleItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceMultipleItemsCreateRequest;
+    static equals(a: GoodsReceiptsServiceMultipleItemsCreateRequest | PlainMessage<GoodsReceiptsServiceMultipleItemsCreateRequest> | undefined, b: GoodsReceiptsServiceMultipleItemsCreateRequest | PlainMessage<GoodsReceiptsServiceMultipleItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters required to update an item in a goods receipt
  *
  * @generated from message Scailo.GoodsReceiptsServiceItemUpdateRequest

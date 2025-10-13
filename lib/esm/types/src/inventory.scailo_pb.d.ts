@@ -800,7 +800,7 @@ export declare class FilterReturnableInventoryReq extends Message<FilterReturnab
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */

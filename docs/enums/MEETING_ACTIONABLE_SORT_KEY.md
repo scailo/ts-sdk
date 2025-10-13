@@ -32,7 +32,7 @@ from enum value: MEETING_ACTIONABLE_SORT_KEY_ACTIVITY_TAG_ID = 11;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/meetings.scailo_pb.ts#L212)
+[src/meetings.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/meetings.scailo_pb.ts#L212)
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: MEETING_ACTIONABLE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/meetings.scailo_pb.ts#L191)
+[src/meetings.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/meetings.scailo_pb.ts#L191)
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: MEETING_ACTIONABLE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/meetings.scailo_pb.ts#L184)
+[src/meetings.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/meetings.scailo_pb.ts#L184)
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: MEETING_ACTIONABLE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/meetings.scailo_pb.ts#L198)
+[src/meetings.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/meetings.scailo_pb.ts#L198)
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: MEETING_ACTIONABLE_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/df839083423c5ea298e97caa11db6f9ea4d1eb6e/src/meetings.scailo_pb.ts#L205)
+[src/meetings.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/meetings.scailo_pb.ts#L205)

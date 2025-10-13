@@ -1101,7 +1101,7 @@ export class ComponentsServiceFilterReq extends Message<ComponentsServiceFilterR
   code = "";
 
   /**
-   * Stores the internal code (as given by user)
+   * Filter by the exact internal code
    *
    * @generated from field: string internal_item_code = 35;
    */
@@ -1389,7 +1389,7 @@ export class ComponentsServiceCountReq extends Message<ComponentsServiceCountReq
   code = "";
 
   /**
-   * Stores the internal code (as given by user)
+   * Filter by the exact internal code
    *
    * @generated from field: string internal_item_code = 35;
    */

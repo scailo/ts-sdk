@@ -554,6 +554,92 @@ export declare class GoodsDispatchesServiceItemCreateRequest extends Message<Goo
 }
 /**
  *
+ * Describes the parameters required to add an individual item as part of multiple item addition to a goods dispatch
+ *
+ * @generated from message Scailo.GoodsDispatchesServiceMultipleItemsSingleton
+ */
+export declare class GoodsDispatchesServiceMultipleItemsSingleton extends Message<GoodsDispatchesServiceMultipleItemsSingleton> {
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 11;
+     */
+    familyId: bigint;
+    /**
+     * Stores the item hash to be dispatched
+     *
+     * @generated from field: string item_hash = 12;
+     */
+    itemHash: string;
+    /**
+     * The quantity (in cents) being dispatched in internal unit of material
+     *
+     * @generated from field: uint64 internal_quantity = 13;
+     */
+    internalQuantity: bigint;
+    /**
+     * Stores the ID of the client's unit of material
+     *
+     * @generated from field: uint64 client_uom_id = 14;
+     */
+    clientUomId: bigint;
+    /**
+     * Stores the quantity (in cents) being dispatched in client's unit of material
+     *
+     * @generated from field: uint64 client_quantity = 15;
+     */
+    clientQuantity: bigint;
+    /**
+     * Stores the family code as defined by the client
+     *
+     * @generated from field: string client_family_code = 16;
+     */
+    clientFamilyCode: string;
+    constructor(data?: PartialMessage<GoodsDispatchesServiceMultipleItemsSingleton>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.GoodsDispatchesServiceMultipleItemsSingleton";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceMultipleItemsSingleton;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceMultipleItemsSingleton;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceMultipleItemsSingleton;
+    static equals(a: GoodsDispatchesServiceMultipleItemsSingleton | PlainMessage<GoodsDispatchesServiceMultipleItemsSingleton> | undefined, b: GoodsDispatchesServiceMultipleItemsSingleton | PlainMessage<GoodsDispatchesServiceMultipleItemsSingleton> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters required to add multiple items to a goods dispatch
+ *
+ * @generated from message Scailo.GoodsDispatchesServiceMultipleItemsCreateRequest
+ */
+export declare class GoodsDispatchesServiceMultipleItemsCreateRequest extends Message<GoodsDispatchesServiceMultipleItemsCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the goods dispatch ID
+     *
+     * @generated from field: uint64 goods_dispatch_id = 10;
+     */
+    goodsDispatchId: bigint;
+    /**
+     * List of items
+     *
+     * @generated from field: repeated Scailo.GoodsDispatchesServiceMultipleItemsSingleton list = 11;
+     */
+    list: GoodsDispatchesServiceMultipleItemsSingleton[];
+    constructor(data?: PartialMessage<GoodsDispatchesServiceMultipleItemsCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.GoodsDispatchesServiceMultipleItemsCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceMultipleItemsCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceMultipleItemsCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceMultipleItemsCreateRequest;
+    static equals(a: GoodsDispatchesServiceMultipleItemsCreateRequest | PlainMessage<GoodsDispatchesServiceMultipleItemsCreateRequest> | undefined, b: GoodsDispatchesServiceMultipleItemsCreateRequest | PlainMessage<GoodsDispatchesServiceMultipleItemsCreateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters required to update an item in a goods dispatch
  *
  * @generated from message Scailo.GoodsDispatchesServiceItemUpdateRequest

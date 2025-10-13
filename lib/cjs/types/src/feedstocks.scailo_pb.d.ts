@@ -760,7 +760,7 @@ export declare class FeedstocksServiceFilterReq extends Message<FeedstocksServic
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */
@@ -964,7 +964,7 @@ export declare class FeedstocksServiceCountReq extends Message<FeedstocksService
      */
     code: string;
     /**
-     * Stores the internal code (as given by user)
+     * Filter by the exact internal code
      *
      * @generated from field: string internal_item_code = 35;
      */
