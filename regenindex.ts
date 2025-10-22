@@ -31,7 +31,7 @@ fs.appendFileSync(indexFilePath, indexStr.join("\n"));
 // ------------------------------------------------------------------------------------------------------
 // Clients logic
 let clientsImportLogic = [
-    `import { createPromiseClient, PromiseClient, Transport } from "@connectrpc/connect";`
+    `import { createClient, Client, Transport } from "@connectrpc/connect";`
 ];
 
 let serviceNamesList = <string[]>[];
@@ -85,15 +85,15 @@ function getNodeTransport(apiEndPoint: string) {
 \`\`\`
 
 */
-export function getClientFor${serviceName}(transport: Transport): PromiseClient<typeof ${serviceName}> {
-    return createPromiseClient(${serviceName}, transport);
+export function getScailoClientFor${serviceName}(transport: Transport): Client<typeof ${serviceName}> {
+    return createClient(${serviceName}, transport);
 }`;
 }
 
 // ------------------------------------------------------------------------------------------------------
 
 // export function getTestServiceClient(transport: Transport) {
-//     return createPromiseClient(PurchasesEnquiriesService, transport);
+//     return createClient(PurchasesEnquiriesService, transport);
 // }
 
 console.log("index.ts has been updated");

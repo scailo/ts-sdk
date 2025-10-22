@@ -30,7 +30,7 @@ from enum value: ASSET_INDENT_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:98](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/asset_indents.scailo_pb.ts#L98)
+[src/asset_indents.scailo_pb.ts:98](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/asset_indents.scailo_pb.ts#L98)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: ASSET_INDENT_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/asset_indents.scailo_pb.ts#L105)
+[src/asset_indents.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/asset_indents.scailo_pb.ts#L105)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: ASSET_INDENT_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/asset_indents.scailo_pb.ts#L112)
+[src/asset_indents.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/asset_indents.scailo_pb.ts#L112)

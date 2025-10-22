@@ -217,7 +217,7 @@ export * from "./src/work_orders.scailo_connect";
 export * from "./src/work_orders.scailo_pb";
 export * from "./src/workflows_rules.scailo_connect";
 export * from "./src/workflows_rules.scailo_pb";
-import { PromiseClient, Transport } from "@connectrpc/connect";
+import { Client, Transport } from "@connectrpc/connect";
 import { AbsencesService } from "./src/absences.scailo_connect";
 import { ActionsCodesService } from "./src/actions_codes.scailo_connect";
 import { ActivitiesService } from "./src/activities.scailo_connect";
@@ -352,7 +352,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForAbsencesService(transport: Transport): PromiseClient<typeof AbsencesService>;
+export declare function getScailoClientForAbsencesService(transport: Transport): Client<typeof AbsencesService>;
 /**
 
 Get the client to access the ActionsCodesService. Transport is a connectrpc Transport, which is created as follows:
@@ -380,7 +380,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForActionsCodesService(transport: Transport): PromiseClient<typeof ActionsCodesService>;
+export declare function getScailoClientForActionsCodesService(transport: Transport): Client<typeof ActionsCodesService>;
 /**
 
 Get the client to access the ActivitiesService. Transport is a connectrpc Transport, which is created as follows:
@@ -408,7 +408,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForActivitiesService(transport: Transport): PromiseClient<typeof ActivitiesService>;
+export declare function getScailoClientForActivitiesService(transport: Transport): Client<typeof ActivitiesService>;
 /**
 
 Get the client to access the ActivitiesGroupsService. Transport is a connectrpc Transport, which is created as follows:
@@ -436,7 +436,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForActivitiesGroupsService(transport: Transport): PromiseClient<typeof ActivitiesGroupsService>;
+export declare function getScailoClientForActivitiesGroupsService(transport: Transport): Client<typeof ActivitiesGroupsService>;
 /**
 
 Get the client to access the ActivitiesStatusesService. Transport is a connectrpc Transport, which is created as follows:
@@ -464,7 +464,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForActivitiesStatusesService(transport: Transport): PromiseClient<typeof ActivitiesStatusesService>;
+export declare function getScailoClientForActivitiesStatusesService(transport: Transport): Client<typeof ActivitiesStatusesService>;
 /**
 
 Get the client to access the ActivitiesTagsService. Transport is a connectrpc Transport, which is created as follows:
@@ -492,7 +492,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForActivitiesTagsService(transport: Transport): PromiseClient<typeof ActivitiesTagsService>;
+export declare function getScailoClientForActivitiesTagsService(transport: Transport): Client<typeof ActivitiesTagsService>;
 /**
 
 Get the client to access the AnnouncementsService. Transport is a connectrpc Transport, which is created as follows:
@@ -520,7 +520,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForAnnouncementsService(transport: Transport): PromiseClient<typeof AnnouncementsService>;
+export declare function getScailoClientForAnnouncementsService(transport: Transport): Client<typeof AnnouncementsService>;
 /**
 
 Get the client to access the AssetIndentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -548,7 +548,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForAssetIndentsService(transport: Transport): PromiseClient<typeof AssetIndentsService>;
+export declare function getScailoClientForAssetIndentsService(transport: Transport): Client<typeof AssetIndentsService>;
 /**
 
 Get the client to access the AssociatesService. Transport is a connectrpc Transport, which is created as follows:
@@ -576,7 +576,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForAssociatesService(transport: Transport): PromiseClient<typeof AssociatesService>;
+export declare function getScailoClientForAssociatesService(transport: Transport): Client<typeof AssociatesService>;
 /**
 
 Get the client to access the AttendancesService. Transport is a connectrpc Transport, which is created as follows:
@@ -604,7 +604,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForAttendancesService(transport: Transport): PromiseClient<typeof AttendancesService>;
+export declare function getScailoClientForAttendancesService(transport: Transport): Client<typeof AttendancesService>;
 /**
 
 Get the client to access the AttendancesAmendmentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -632,7 +632,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForAttendancesAmendmentsService(transport: Transport): PromiseClient<typeof AttendancesAmendmentsService>;
+export declare function getScailoClientForAttendancesAmendmentsService(transport: Transport): Client<typeof AttendancesAmendmentsService>;
 /**
 
 Get the client to access the BankAccountsService. Transport is a connectrpc Transport, which is created as follows:
@@ -660,7 +660,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForBankAccountsService(transport: Transport): PromiseClient<typeof BankAccountsService>;
+export declare function getScailoClientForBankAccountsService(transport: Transport): Client<typeof BankAccountsService>;
 /**
 
 Get the client to access the ClientStreamsService. Transport is a connectrpc Transport, which is created as follows:
@@ -688,7 +688,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForClientStreamsService(transport: Transport): PromiseClient<typeof ClientStreamsService>;
+export declare function getScailoClientForClientStreamsService(transport: Transport): Client<typeof ClientStreamsService>;
 /**
 
 Get the client to access the ClientsService. Transport is a connectrpc Transport, which is created as follows:
@@ -716,7 +716,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForClientsService(transport: Transport): PromiseClient<typeof ClientsService>;
+export declare function getScailoClientForClientsService(transport: Transport): Client<typeof ClientsService>;
 /**
 
 Get the client to access the ComponentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -744,7 +744,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForComponentsService(transport: Transport): PromiseClient<typeof ComponentsService>;
+export declare function getScailoClientForComponentsService(transport: Transport): Client<typeof ComponentsService>;
 /**
 
 Get the client to access the CreditNotesService. Transport is a connectrpc Transport, which is created as follows:
@@ -772,7 +772,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForCreditNotesService(transport: Transport): PromiseClient<typeof CreditNotesService>;
+export declare function getScailoClientForCreditNotesService(transport: Transport): Client<typeof CreditNotesService>;
 /**
 
 Get the client to access the CurrenciesService. Transport is a connectrpc Transport, which is created as follows:
@@ -800,7 +800,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForCurrenciesService(transport: Transport): PromiseClient<typeof CurrenciesService>;
+export declare function getScailoClientForCurrenciesService(transport: Transport): Client<typeof CurrenciesService>;
 /**
 
 Get the client to access the DebitNotesService. Transport is a connectrpc Transport, which is created as follows:
@@ -828,7 +828,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForDebitNotesService(transport: Transport): PromiseClient<typeof DebitNotesService>;
+export declare function getScailoClientForDebitNotesService(transport: Transport): Client<typeof DebitNotesService>;
 /**
 
 Get the client to access the DepartmentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -856,7 +856,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForDepartmentsService(transport: Transport): PromiseClient<typeof DepartmentsService>;
+export declare function getScailoClientForDepartmentsService(transport: Transport): Client<typeof DepartmentsService>;
 /**
 
 Get the client to access the EquationsFamiliesService. Transport is a connectrpc Transport, which is created as follows:
@@ -884,7 +884,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForEquationsFamiliesService(transport: Transport): PromiseClient<typeof EquationsFamiliesService>;
+export declare function getScailoClientForEquationsFamiliesService(transport: Transport): Client<typeof EquationsFamiliesService>;
 /**
 
 Get the client to access the EquationsReplaceablesService. Transport is a connectrpc Transport, which is created as follows:
@@ -912,7 +912,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForEquationsReplaceablesService(transport: Transport): PromiseClient<typeof EquationsReplaceablesService>;
+export declare function getScailoClientForEquationsReplaceablesService(transport: Transport): Client<typeof EquationsReplaceablesService>;
 /**
 
 Get the client to access the EquationsSalesBundlesService. Transport is a connectrpc Transport, which is created as follows:
@@ -940,7 +940,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForEquationsSalesBundlesService(transport: Transport): PromiseClient<typeof EquationsSalesBundlesService>;
+export declare function getScailoClientForEquationsSalesBundlesService(transport: Transport): Client<typeof EquationsSalesBundlesService>;
 /**
 
 Get the client to access the EquationsWorkOrdersService. Transport is a connectrpc Transport, which is created as follows:
@@ -968,7 +968,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForEquationsWorkOrdersService(transport: Transport): PromiseClient<typeof EquationsWorkOrdersService>;
+export declare function getScailoClientForEquationsWorkOrdersService(transport: Transport): Client<typeof EquationsWorkOrdersService>;
 /**
 
 Get the client to access the EquipmentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -996,7 +996,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForEquipmentsService(transport: Transport): PromiseClient<typeof EquipmentsService>;
+export declare function getScailoClientForEquipmentsService(transport: Transport): Client<typeof EquipmentsService>;
 /**
 
 Get the client to access the ExpensesService. Transport is a connectrpc Transport, which is created as follows:
@@ -1024,7 +1024,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForExpensesService(transport: Transport): PromiseClient<typeof ExpensesService>;
+export declare function getScailoClientForExpensesService(transport: Transport): Client<typeof ExpensesService>;
 /**
 
 Get the client to access the FamiliesService. Transport is a connectrpc Transport, which is created as follows:
@@ -1052,7 +1052,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForFamiliesService(transport: Transport): PromiseClient<typeof FamiliesService>;
+export declare function getScailoClientForFamiliesService(transport: Transport): Client<typeof FamiliesService>;
 /**
 
 Get the client to access the FeedstocksService. Transport is a connectrpc Transport, which is created as follows:
@@ -1080,7 +1080,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForFeedstocksService(transport: Transport): PromiseClient<typeof FeedstocksService>;
+export declare function getScailoClientForFeedstocksService(transport: Transport): Client<typeof FeedstocksService>;
 /**
 
 Get the client to access the FormsFieldsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1108,7 +1108,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForFormsFieldsService(transport: Transport): PromiseClient<typeof FormsFieldsService>;
+export declare function getScailoClientForFormsFieldsService(transport: Transport): Client<typeof FormsFieldsService>;
 /**
 
 Get the client to access the FormsFieldsDataService. Transport is a connectrpc Transport, which is created as follows:
@@ -1136,7 +1136,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForFormsFieldsDataService(transport: Transport): PromiseClient<typeof FormsFieldsDataService>;
+export declare function getScailoClientForFormsFieldsDataService(transport: Transport): Client<typeof FormsFieldsDataService>;
 /**
 
 Get the client to access the FormsSectionsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1164,7 +1164,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForFormsSectionsService(transport: Transport): PromiseClient<typeof FormsSectionsService>;
+export declare function getScailoClientForFormsSectionsService(transport: Transport): Client<typeof FormsSectionsService>;
 /**
 
 Get the client to access the GeneralSettingsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1192,7 +1192,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForGeneralSettingsService(transport: Transport): PromiseClient<typeof GeneralSettingsService>;
+export declare function getScailoClientForGeneralSettingsService(transport: Transport): Client<typeof GeneralSettingsService>;
 /**
 
 Get the client to access the GeneralStreamsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1220,7 +1220,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForGeneralStreamsService(transport: Transport): PromiseClient<typeof GeneralStreamsService>;
+export declare function getScailoClientForGeneralStreamsService(transport: Transport): Client<typeof GeneralStreamsService>;
 /**
 
 Get the client to access the GoalsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1248,7 +1248,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForGoalsService(transport: Transport): PromiseClient<typeof GoalsService>;
+export declare function getScailoClientForGoalsService(transport: Transport): Client<typeof GoalsService>;
 /**
 
 Get the client to access the GoodsDispatchesService. Transport is a connectrpc Transport, which is created as follows:
@@ -1276,7 +1276,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForGoodsDispatchesService(transport: Transport): PromiseClient<typeof GoodsDispatchesService>;
+export declare function getScailoClientForGoodsDispatchesService(transport: Transport): Client<typeof GoodsDispatchesService>;
 /**
 
 Get the client to access the GoodsReceiptsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1304,7 +1304,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForGoodsReceiptsService(transport: Transport): PromiseClient<typeof GoodsReceiptsService>;
+export declare function getScailoClientForGoodsReceiptsService(transport: Transport): Client<typeof GoodsReceiptsService>;
 /**
 
 Get the client to access the HolidaysService. Transport is a connectrpc Transport, which is created as follows:
@@ -1332,7 +1332,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForHolidaysService(transport: Transport): PromiseClient<typeof HolidaysService>;
+export declare function getScailoClientForHolidaysService(transport: Transport): Client<typeof HolidaysService>;
 /**
 
 Get the client to access the InfrastructuresService. Transport is a connectrpc Transport, which is created as follows:
@@ -1360,7 +1360,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForInfrastructuresService(transport: Transport): PromiseClient<typeof InfrastructuresService>;
+export declare function getScailoClientForInfrastructuresService(transport: Transport): Client<typeof InfrastructuresService>;
 /**
 
 Get the client to access the InventoryService. Transport is a connectrpc Transport, which is created as follows:
@@ -1388,7 +1388,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForInventoryService(transport: Transport): PromiseClient<typeof InventoryService>;
+export declare function getScailoClientForInventoryService(transport: Transport): Client<typeof InventoryService>;
 /**
 
 Get the client to access the InwardJobsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1416,7 +1416,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForInwardJobsService(transport: Transport): PromiseClient<typeof InwardJobsService>;
+export declare function getScailoClientForInwardJobsService(transport: Transport): Client<typeof InwardJobsService>;
 /**
 
 Get the client to access the InwardJobsFreeIssueMaterialsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1444,7 +1444,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForInwardJobsFreeIssueMaterialsService(transport: Transport): PromiseClient<typeof InwardJobsFreeIssueMaterialsService>;
+export declare function getScailoClientForInwardJobsFreeIssueMaterialsService(transport: Transport): Client<typeof InwardJobsFreeIssueMaterialsService>;
 /**
 
 Get the client to access the InwardJobsFreeIssueMaterialsReturnsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1472,7 +1472,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForInwardJobsFreeIssueMaterialsReturnsService(transport: Transport): PromiseClient<typeof InwardJobsFreeIssueMaterialsReturnsService>;
+export declare function getScailoClientForInwardJobsFreeIssueMaterialsReturnsService(transport: Transport): Client<typeof InwardJobsFreeIssueMaterialsReturnsService>;
 /**
 
 Get the client to access the LabelsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1500,7 +1500,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForLabelsService(transport: Transport): PromiseClient<typeof LabelsService>;
+export declare function getScailoClientForLabelsService(transport: Transport): Client<typeof LabelsService>;
 /**
 
 Get the client to access the LeavesAdjustmentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1528,7 +1528,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForLeavesAdjustmentsService(transport: Transport): PromiseClient<typeof LeavesAdjustmentsService>;
+export declare function getScailoClientForLeavesAdjustmentsService(transport: Transport): Client<typeof LeavesAdjustmentsService>;
 /**
 
 Get the client to access the LeavesLogsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1556,7 +1556,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForLeavesLogsService(transport: Transport): PromiseClient<typeof LeavesLogsService>;
+export declare function getScailoClientForLeavesLogsService(transport: Transport): Client<typeof LeavesLogsService>;
 /**
 
 Get the client to access the LeavesRequestsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1584,7 +1584,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForLeavesRequestsService(transport: Transport): PromiseClient<typeof LeavesRequestsService>;
+export declare function getScailoClientForLeavesRequestsService(transport: Transport): Client<typeof LeavesRequestsService>;
 /**
 
 Get the client to access the LeavesTypesService. Transport is a connectrpc Transport, which is created as follows:
@@ -1612,7 +1612,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForLeavesTypesService(transport: Transport): PromiseClient<typeof LeavesTypesService>;
+export declare function getScailoClientForLeavesTypesService(transport: Transport): Client<typeof LeavesTypesService>;
 /**
 
 Get the client to access the LedgersService. Transport is a connectrpc Transport, which is created as follows:
@@ -1640,7 +1640,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForLedgersService(transport: Transport): PromiseClient<typeof LedgersService>;
+export declare function getScailoClientForLedgersService(transport: Transport): Client<typeof LedgersService>;
 /**
 
 Get the client to access the LocationsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1668,7 +1668,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForLocationsService(transport: Transport): PromiseClient<typeof LocationsService>;
+export declare function getScailoClientForLocationsService(transport: Transport): Client<typeof LocationsService>;
 /**
 
 Get the client to access the LoginService. Transport is a connectrpc Transport, which is created as follows:
@@ -1696,7 +1696,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForLoginService(transport: Transport): PromiseClient<typeof LoginService>;
+export declare function getScailoClientForLoginService(transport: Transport): Client<typeof LoginService>;
 /**
 
 Get the client to access the MagicLinksService. Transport is a connectrpc Transport, which is created as follows:
@@ -1724,7 +1724,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForMagicLinksService(transport: Transport): PromiseClient<typeof MagicLinksService>;
+export declare function getScailoClientForMagicLinksService(transport: Transport): Client<typeof MagicLinksService>;
 /**
 
 Get the client to access the MeetingsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1752,7 +1752,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForMeetingsService(transport: Transport): PromiseClient<typeof MeetingsService>;
+export declare function getScailoClientForMeetingsService(transport: Transport): Client<typeof MeetingsService>;
 /**
 
 Get the client to access the MerchandisesService. Transport is a connectrpc Transport, which is created as follows:
@@ -1780,7 +1780,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForMerchandisesService(transport: Transport): PromiseClient<typeof MerchandisesService>;
+export declare function getScailoClientForMerchandisesService(transport: Transport): Client<typeof MerchandisesService>;
 /**
 
 Get the client to access the NotesService. Transport is a connectrpc Transport, which is created as follows:
@@ -1808,7 +1808,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForNotesService(transport: Transport): PromiseClient<typeof NotesService>;
+export declare function getScailoClientForNotesService(transport: Transport): Client<typeof NotesService>;
 /**
 
 Get the client to access the OnDutiesService. Transport is a connectrpc Transport, which is created as follows:
@@ -1836,7 +1836,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForOnDutiesService(transport: Transport): PromiseClient<typeof OnDutiesService>;
+export declare function getScailoClientForOnDutiesService(transport: Transport): Client<typeof OnDutiesService>;
 /**
 
 Get the client to access the OutwardJobsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1864,7 +1864,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForOutwardJobsService(transport: Transport): PromiseClient<typeof OutwardJobsService>;
+export declare function getScailoClientForOutwardJobsService(transport: Transport): Client<typeof OutwardJobsService>;
 /**
 
 Get the client to access the OutwardJobsFreeIssueMaterialsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1892,7 +1892,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForOutwardJobsFreeIssueMaterialsService(transport: Transport): PromiseClient<typeof OutwardJobsFreeIssueMaterialsService>;
+export declare function getScailoClientForOutwardJobsFreeIssueMaterialsService(transport: Transport): Client<typeof OutwardJobsFreeIssueMaterialsService>;
 /**
 
 Get the client to access the OutwardJobsFreeIssueMaterialsReturnsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1920,7 +1920,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForOutwardJobsFreeIssueMaterialsReturnsService(transport: Transport): PromiseClient<typeof OutwardJobsFreeIssueMaterialsReturnsService>;
+export declare function getScailoClientForOutwardJobsFreeIssueMaterialsReturnsService(transport: Transport): Client<typeof OutwardJobsFreeIssueMaterialsReturnsService>;
 /**
 
 Get the client to access the OvertimesService. Transport is a connectrpc Transport, which is created as follows:
@@ -1948,7 +1948,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForOvertimesService(transport: Transport): PromiseClient<typeof OvertimesService>;
+export declare function getScailoClientForOvertimesService(transport: Transport): Client<typeof OvertimesService>;
 /**
 
 Get the client to access the PayrollGroupsService. Transport is a connectrpc Transport, which is created as follows:
@@ -1976,7 +1976,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForPayrollGroupsService(transport: Transport): PromiseClient<typeof PayrollGroupsService>;
+export declare function getScailoClientForPayrollGroupsService(transport: Transport): Client<typeof PayrollGroupsService>;
 /**
 
 Get the client to access the PayrollParamsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2004,7 +2004,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForPayrollParamsService(transport: Transport): PromiseClient<typeof PayrollParamsService>;
+export declare function getScailoClientForPayrollParamsService(transport: Transport): Client<typeof PayrollParamsService>;
 /**
 
 Get the client to access the ProductionIndentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2032,7 +2032,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForProductionIndentsService(transport: Transport): PromiseClient<typeof ProductionIndentsService>;
+export declare function getScailoClientForProductionIndentsService(transport: Transport): Client<typeof ProductionIndentsService>;
 /**
 
 Get the client to access the ProductionPlansService. Transport is a connectrpc Transport, which is created as follows:
@@ -2060,7 +2060,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForProductionPlansService(transport: Transport): PromiseClient<typeof ProductionPlansService>;
+export declare function getScailoClientForProductionPlansService(transport: Transport): Client<typeof ProductionPlansService>;
 /**
 
 Get the client to access the ProductsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2088,7 +2088,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForProductsService(transport: Transport): PromiseClient<typeof ProductsService>;
+export declare function getScailoClientForProductsService(transport: Transport): Client<typeof ProductsService>;
 /**
 
 Get the client to access the ProformaInvoicesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2116,7 +2116,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForProformaInvoicesService(transport: Transport): PromiseClient<typeof ProformaInvoicesService>;
+export declare function getScailoClientForProformaInvoicesService(transport: Transport): Client<typeof ProformaInvoicesService>;
 /**
 
 Get the client to access the ProjectsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2144,7 +2144,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForProjectsService(transport: Transport): PromiseClient<typeof ProjectsService>;
+export declare function getScailoClientForProjectsService(transport: Transport): Client<typeof ProjectsService>;
 /**
 
 Get the client to access the PurchasesEnquiriesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2172,7 +2172,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForPurchasesEnquiriesService(transport: Transport): PromiseClient<typeof PurchasesEnquiriesService>;
+export declare function getScailoClientForPurchasesEnquiriesService(transport: Transport): Client<typeof PurchasesEnquiriesService>;
 /**
 
 Get the client to access the PurchasesIndentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2200,7 +2200,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForPurchasesIndentsService(transport: Transport): PromiseClient<typeof PurchasesIndentsService>;
+export declare function getScailoClientForPurchasesIndentsService(transport: Transport): Client<typeof PurchasesIndentsService>;
 /**
 
 Get the client to access the PurchasesOrdersService. Transport is a connectrpc Transport, which is created as follows:
@@ -2228,7 +2228,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForPurchasesOrdersService(transport: Transport): PromiseClient<typeof PurchasesOrdersService>;
+export declare function getScailoClientForPurchasesOrdersService(transport: Transport): Client<typeof PurchasesOrdersService>;
 /**
 
 Get the client to access the PurchasesPaymentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2256,7 +2256,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForPurchasesPaymentsService(transport: Transport): PromiseClient<typeof PurchasesPaymentsService>;
+export declare function getScailoClientForPurchasesPaymentsService(transport: Transport): Client<typeof PurchasesPaymentsService>;
 /**
 
 Get the client to access the PurchasesReturnsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2284,7 +2284,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForPurchasesReturnsService(transport: Transport): PromiseClient<typeof PurchasesReturnsService>;
+export declare function getScailoClientForPurchasesReturnsService(transport: Transport): Client<typeof PurchasesReturnsService>;
 /**
 
 Get the client to access the QCGroupsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2312,7 +2312,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForQCGroupsService(transport: Transport): PromiseClient<typeof QCGroupsService>;
+export declare function getScailoClientForQCGroupsService(transport: Transport): Client<typeof QCGroupsService>;
 /**
 
 Get the client to access the QCHubsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2340,7 +2340,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForQCHubsService(transport: Transport): PromiseClient<typeof QCHubsService>;
+export declare function getScailoClientForQCHubsService(transport: Transport): Client<typeof QCHubsService>;
 /**
 
 Get the client to access the QCParamsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2368,7 +2368,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForQCParamsService(transport: Transport): PromiseClient<typeof QCParamsService>;
+export declare function getScailoClientForQCParamsService(transport: Transport): Client<typeof QCParamsService>;
 /**
 
 Get the client to access the QCSamplesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2396,7 +2396,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForQCSamplesService(transport: Transport): PromiseClient<typeof QCSamplesService>;
+export declare function getScailoClientForQCSamplesService(transport: Transport): Client<typeof QCSamplesService>;
 /**
 
 Get the client to access the QuotationsRequestsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2424,7 +2424,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForQuotationsRequestsService(transport: Transport): PromiseClient<typeof QuotationsRequestsService>;
+export declare function getScailoClientForQuotationsRequestsService(transport: Transport): Client<typeof QuotationsRequestsService>;
 /**
 
 Get the client to access the QuotationsResponsesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2452,7 +2452,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForQuotationsResponsesService(transport: Transport): PromiseClient<typeof QuotationsResponsesService>;
+export declare function getScailoClientForQuotationsResponsesService(transport: Transport): Client<typeof QuotationsResponsesService>;
 /**
 
 Get the client to access the ReplaceableIndentsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2480,7 +2480,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForReplaceableIndentsService(transport: Transport): PromiseClient<typeof ReplaceableIndentsService>;
+export declare function getScailoClientForReplaceableIndentsService(transport: Transport): Client<typeof ReplaceableIndentsService>;
 /**
 
 Get the client to access the RolesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2508,7 +2508,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForRolesService(transport: Transport): PromiseClient<typeof RolesService>;
+export declare function getScailoClientForRolesService(transport: Transport): Client<typeof RolesService>;
 /**
 
 Get the client to access the SalariesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2536,7 +2536,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSalariesService(transport: Transport): PromiseClient<typeof SalariesService>;
+export declare function getScailoClientForSalariesService(transport: Transport): Client<typeof SalariesService>;
 /**
 
 Get the client to access the SalesEnquiriesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2564,7 +2564,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSalesEnquiriesService(transport: Transport): PromiseClient<typeof SalesEnquiriesService>;
+export declare function getScailoClientForSalesEnquiriesService(transport: Transport): Client<typeof SalesEnquiriesService>;
 /**
 
 Get the client to access the SalesInvoicesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2592,7 +2592,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSalesInvoicesService(transport: Transport): PromiseClient<typeof SalesInvoicesService>;
+export declare function getScailoClientForSalesInvoicesService(transport: Transport): Client<typeof SalesInvoicesService>;
 /**
 
 Get the client to access the SalesOrdersService. Transport is a connectrpc Transport, which is created as follows:
@@ -2620,7 +2620,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSalesOrdersService(transport: Transport): PromiseClient<typeof SalesOrdersService>;
+export declare function getScailoClientForSalesOrdersService(transport: Transport): Client<typeof SalesOrdersService>;
 /**
 
 Get the client to access the SalesQuotationsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2648,7 +2648,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSalesQuotationsService(transport: Transport): PromiseClient<typeof SalesQuotationsService>;
+export declare function getScailoClientForSalesQuotationsService(transport: Transport): Client<typeof SalesQuotationsService>;
 /**
 
 Get the client to access the SalesReceiptsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2676,7 +2676,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSalesReceiptsService(transport: Transport): PromiseClient<typeof SalesReceiptsService>;
+export declare function getScailoClientForSalesReceiptsService(transport: Transport): Client<typeof SalesReceiptsService>;
 /**
 
 Get the client to access the SalesReturnsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2704,7 +2704,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSalesReturnsService(transport: Transport): PromiseClient<typeof SalesReturnsService>;
+export declare function getScailoClientForSalesReturnsService(transport: Transport): Client<typeof SalesReturnsService>;
 /**
 
 Get the client to access the ShiftsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2732,7 +2732,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForShiftsService(transport: Transport): PromiseClient<typeof ShiftsService>;
+export declare function getScailoClientForShiftsService(transport: Transport): Client<typeof ShiftsService>;
 /**
 
 Get the client to access the ShiftsGroupsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2760,7 +2760,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForShiftsGroupsService(transport: Transport): PromiseClient<typeof ShiftsGroupsService>;
+export declare function getScailoClientForShiftsGroupsService(transport: Transport): Client<typeof ShiftsGroupsService>;
 /**
 
 Get the client to access the SkillsGroupsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2788,7 +2788,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSkillsGroupsService(transport: Transport): PromiseClient<typeof SkillsGroupsService>;
+export declare function getScailoClientForSkillsGroupsService(transport: Transport): Client<typeof SkillsGroupsService>;
 /**
 
 Get the client to access the SkillsParamsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2816,7 +2816,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSkillsParamsService(transport: Transport): PromiseClient<typeof SkillsParamsService>;
+export declare function getScailoClientForSkillsParamsService(transport: Transport): Client<typeof SkillsParamsService>;
 /**
 
 Get the client to access the StockAuditsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2844,7 +2844,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForStockAuditsService(transport: Transport): PromiseClient<typeof StockAuditsService>;
+export declare function getScailoClientForStockAuditsService(transport: Transport): Client<typeof StockAuditsService>;
 /**
 
 Get the client to access the StockIssuancesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2872,7 +2872,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForStockIssuancesService(transport: Transport): PromiseClient<typeof StockIssuancesService>;
+export declare function getScailoClientForStockIssuancesService(transport: Transport): Client<typeof StockIssuancesService>;
 /**
 
 Get the client to access the StockReturnsService. Transport is a connectrpc Transport, which is created as follows:
@@ -2900,7 +2900,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForStockReturnsService(transport: Transport): PromiseClient<typeof StockReturnsService>;
+export declare function getScailoClientForStockReturnsService(transport: Transport): Client<typeof StockReturnsService>;
 /**
 
 Get the client to access the StoragesService. Transport is a connectrpc Transport, which is created as follows:
@@ -2928,7 +2928,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForStoragesService(transport: Transport): PromiseClient<typeof StoragesService>;
+export declare function getScailoClientForStoragesService(transport: Transport): Client<typeof StoragesService>;
 /**
 
 Get the client to access the StoresService. Transport is a connectrpc Transport, which is created as follows:
@@ -2956,7 +2956,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForStoresService(transport: Transport): PromiseClient<typeof StoresService>;
+export declare function getScailoClientForStoresService(transport: Transport): Client<typeof StoresService>;
 /**
 
 Get the client to access the SupplyOffersService. Transport is a connectrpc Transport, which is created as follows:
@@ -2984,7 +2984,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForSupplyOffersService(transport: Transport): PromiseClient<typeof SupplyOffersService>;
+export declare function getScailoClientForSupplyOffersService(transport: Transport): Client<typeof SupplyOffersService>;
 /**
 
 Get the client to access the TaxGroupsService. Transport is a connectrpc Transport, which is created as follows:
@@ -3012,7 +3012,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForTaxGroupsService(transport: Transport): PromiseClient<typeof TaxGroupsService>;
+export declare function getScailoClientForTaxGroupsService(transport: Transport): Client<typeof TaxGroupsService>;
 /**
 
 Get the client to access the TaxParamsService. Transport is a connectrpc Transport, which is created as follows:
@@ -3040,7 +3040,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForTaxParamsService(transport: Transport): PromiseClient<typeof TaxParamsService>;
+export declare function getScailoClientForTaxParamsService(transport: Transport): Client<typeof TaxParamsService>;
 /**
 
 Get the client to access the TeamsService. Transport is a connectrpc Transport, which is created as follows:
@@ -3068,7 +3068,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForTeamsService(transport: Transport): PromiseClient<typeof TeamsService>;
+export declare function getScailoClientForTeamsService(transport: Transport): Client<typeof TeamsService>;
 /**
 
 Get the client to access the UnitsOfMaterialsService. Transport is a connectrpc Transport, which is created as follows:
@@ -3096,7 +3096,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForUnitsOfMaterialsService(transport: Transport): PromiseClient<typeof UnitsOfMaterialsService>;
+export declare function getScailoClientForUnitsOfMaterialsService(transport: Transport): Client<typeof UnitsOfMaterialsService>;
 /**
 
 Get the client to access the UsersService. Transport is a connectrpc Transport, which is created as follows:
@@ -3124,7 +3124,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForUsersService(transport: Transport): PromiseClient<typeof UsersService>;
+export declare function getScailoClientForUsersService(transport: Transport): Client<typeof UsersService>;
 /**
 
 Get the client to access the VaultService. Transport is a connectrpc Transport, which is created as follows:
@@ -3152,7 +3152,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForVaultService(transport: Transport): PromiseClient<typeof VaultService>;
+export declare function getScailoClientForVaultService(transport: Transport): Client<typeof VaultService>;
 /**
 
 Get the client to access the VendorInvoicesService. Transport is a connectrpc Transport, which is created as follows:
@@ -3180,7 +3180,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForVendorInvoicesService(transport: Transport): PromiseClient<typeof VendorInvoicesService>;
+export declare function getScailoClientForVendorInvoicesService(transport: Transport): Client<typeof VendorInvoicesService>;
 /**
 
 Get the client to access the VendorStreamsService. Transport is a connectrpc Transport, which is created as follows:
@@ -3208,7 +3208,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForVendorStreamsService(transport: Transport): PromiseClient<typeof VendorStreamsService>;
+export declare function getScailoClientForVendorStreamsService(transport: Transport): Client<typeof VendorStreamsService>;
 /**
 
 Get the client to access the VendorsService. Transport is a connectrpc Transport, which is created as follows:
@@ -3236,7 +3236,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForVendorsService(transport: Transport): PromiseClient<typeof VendorsService>;
+export declare function getScailoClientForVendorsService(transport: Transport): Client<typeof VendorsService>;
 /**
 
 Get the client to access the VisitationsService. Transport is a connectrpc Transport, which is created as follows:
@@ -3264,7 +3264,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForVisitationsService(transport: Transport): PromiseClient<typeof VisitationsService>;
+export declare function getScailoClientForVisitationsService(transport: Transport): Client<typeof VisitationsService>;
 /**
 
 Get the client to access the WorkOrdersService. Transport is a connectrpc Transport, which is created as follows:
@@ -3292,7 +3292,7 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForWorkOrdersService(transport: Transport): PromiseClient<typeof WorkOrdersService>;
+export declare function getScailoClientForWorkOrdersService(transport: Transport): Client<typeof WorkOrdersService>;
 /**
 
 Get the client to access the WorkflowsRulesService. Transport is a connectrpc Transport, which is created as follows:
@@ -3320,5 +3320,5 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export declare function getClientForWorkflowsRulesService(transport: Transport): PromiseClient<typeof WorkflowsRulesService>;
+export declare function getScailoClientForWorkflowsRulesService(transport: Transport): Client<typeof WorkflowsRulesService>;
 //# sourceMappingURL=index.d.ts.map

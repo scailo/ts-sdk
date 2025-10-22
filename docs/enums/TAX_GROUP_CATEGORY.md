@@ -31,7 +31,7 @@ from enum value: TAX_GROUP_CATEGORY_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/tax_groups.scailo_pb.ts#L23)
+[src/tax_groups.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/tax_groups.scailo_pb.ts#L23)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: TAX_GROUP_CATEGORY_CUMULATIVE_EXCESS_ON_GOODS = 3;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/tax_groups.scailo_pb.ts#L44)
+[src/tax_groups.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/tax_groups.scailo_pb.ts#L44)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: TAX_GROUP_CATEGORY_GENERAL = 1;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/tax_groups.scailo_pb.ts#L30)
+[src/tax_groups.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/tax_groups.scailo_pb.ts#L30)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: TAX_GROUP_CATEGORY_PAYROLL = 2;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/tax_groups.scailo_pb.ts#L37)
+[src/tax_groups.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/tax_groups.scailo_pb.ts#L37)

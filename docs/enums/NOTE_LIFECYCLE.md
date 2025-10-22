@@ -31,7 +31,7 @@ from enum value: NOTE_LIFECYCLE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/notes.scailo_pb.ts#L22)
+[src/notes.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/notes.scailo_pb.ts#L22)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: NOTE_LIFECYCLE_CANCELLED = 3;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/notes.scailo_pb.ts#L43)
+[src/notes.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/notes.scailo_pb.ts#L43)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: NOTE_LIFECYCLE_COMPLETED = 2;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/notes.scailo_pb.ts#L36)
+[src/notes.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/notes.scailo_pb.ts#L36)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: NOTE_LIFECYCLE_OPEN = 1;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/aebe96e9df56d746071851f1b67b2a4187a43e21/src/notes.scailo_pb.ts#L29)
+[src/notes.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/notes.scailo_pb.ts#L29)

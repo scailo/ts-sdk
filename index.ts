@@ -218,7 +218,7 @@ export * from "./src/work_orders.scailo_pb";
 export * from "./src/workflows_rules.scailo_connect";
 export * from "./src/workflows_rules.scailo_pb";
 
-import { createPromiseClient, PromiseClient, Transport } from "@connectrpc/connect";
+import { createClient, Client, Transport } from "@connectrpc/connect";
 import { AbsencesService } from "./src/absences.scailo_connect";
 import { ActionsCodesService } from "./src/actions_codes.scailo_connect";
 import { ActivitiesService } from "./src/activities.scailo_connect";
@@ -354,8 +354,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForAbsencesService(transport: Transport): PromiseClient<typeof AbsencesService> {
-    return createPromiseClient(AbsencesService, transport);
+export function getScailoClientForAbsencesService(transport: Transport): Client<typeof AbsencesService> {
+    return createClient(AbsencesService, transport);
 }
 
 /** 
@@ -385,8 +385,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForActionsCodesService(transport: Transport): PromiseClient<typeof ActionsCodesService> {
-    return createPromiseClient(ActionsCodesService, transport);
+export function getScailoClientForActionsCodesService(transport: Transport): Client<typeof ActionsCodesService> {
+    return createClient(ActionsCodesService, transport);
 }
 
 /** 
@@ -416,8 +416,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForActivitiesService(transport: Transport): PromiseClient<typeof ActivitiesService> {
-    return createPromiseClient(ActivitiesService, transport);
+export function getScailoClientForActivitiesService(transport: Transport): Client<typeof ActivitiesService> {
+    return createClient(ActivitiesService, transport);
 }
 
 /** 
@@ -447,8 +447,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForActivitiesGroupsService(transport: Transport): PromiseClient<typeof ActivitiesGroupsService> {
-    return createPromiseClient(ActivitiesGroupsService, transport);
+export function getScailoClientForActivitiesGroupsService(transport: Transport): Client<typeof ActivitiesGroupsService> {
+    return createClient(ActivitiesGroupsService, transport);
 }
 
 /** 
@@ -478,8 +478,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForActivitiesStatusesService(transport: Transport): PromiseClient<typeof ActivitiesStatusesService> {
-    return createPromiseClient(ActivitiesStatusesService, transport);
+export function getScailoClientForActivitiesStatusesService(transport: Transport): Client<typeof ActivitiesStatusesService> {
+    return createClient(ActivitiesStatusesService, transport);
 }
 
 /** 
@@ -509,8 +509,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForActivitiesTagsService(transport: Transport): PromiseClient<typeof ActivitiesTagsService> {
-    return createPromiseClient(ActivitiesTagsService, transport);
+export function getScailoClientForActivitiesTagsService(transport: Transport): Client<typeof ActivitiesTagsService> {
+    return createClient(ActivitiesTagsService, transport);
 }
 
 /** 
@@ -540,8 +540,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForAnnouncementsService(transport: Transport): PromiseClient<typeof AnnouncementsService> {
-    return createPromiseClient(AnnouncementsService, transport);
+export function getScailoClientForAnnouncementsService(transport: Transport): Client<typeof AnnouncementsService> {
+    return createClient(AnnouncementsService, transport);
 }
 
 /** 
@@ -571,8 +571,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForAssetIndentsService(transport: Transport): PromiseClient<typeof AssetIndentsService> {
-    return createPromiseClient(AssetIndentsService, transport);
+export function getScailoClientForAssetIndentsService(transport: Transport): Client<typeof AssetIndentsService> {
+    return createClient(AssetIndentsService, transport);
 }
 
 /** 
@@ -602,8 +602,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForAssociatesService(transport: Transport): PromiseClient<typeof AssociatesService> {
-    return createPromiseClient(AssociatesService, transport);
+export function getScailoClientForAssociatesService(transport: Transport): Client<typeof AssociatesService> {
+    return createClient(AssociatesService, transport);
 }
 
 /** 
@@ -633,8 +633,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForAttendancesService(transport: Transport): PromiseClient<typeof AttendancesService> {
-    return createPromiseClient(AttendancesService, transport);
+export function getScailoClientForAttendancesService(transport: Transport): Client<typeof AttendancesService> {
+    return createClient(AttendancesService, transport);
 }
 
 /** 
@@ -664,8 +664,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForAttendancesAmendmentsService(transport: Transport): PromiseClient<typeof AttendancesAmendmentsService> {
-    return createPromiseClient(AttendancesAmendmentsService, transport);
+export function getScailoClientForAttendancesAmendmentsService(transport: Transport): Client<typeof AttendancesAmendmentsService> {
+    return createClient(AttendancesAmendmentsService, transport);
 }
 
 /** 
@@ -695,8 +695,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForBankAccountsService(transport: Transport): PromiseClient<typeof BankAccountsService> {
-    return createPromiseClient(BankAccountsService, transport);
+export function getScailoClientForBankAccountsService(transport: Transport): Client<typeof BankAccountsService> {
+    return createClient(BankAccountsService, transport);
 }
 
 /** 
@@ -726,8 +726,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForClientStreamsService(transport: Transport): PromiseClient<typeof ClientStreamsService> {
-    return createPromiseClient(ClientStreamsService, transport);
+export function getScailoClientForClientStreamsService(transport: Transport): Client<typeof ClientStreamsService> {
+    return createClient(ClientStreamsService, transport);
 }
 
 /** 
@@ -757,8 +757,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForClientsService(transport: Transport): PromiseClient<typeof ClientsService> {
-    return createPromiseClient(ClientsService, transport);
+export function getScailoClientForClientsService(transport: Transport): Client<typeof ClientsService> {
+    return createClient(ClientsService, transport);
 }
 
 /** 
@@ -788,8 +788,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForComponentsService(transport: Transport): PromiseClient<typeof ComponentsService> {
-    return createPromiseClient(ComponentsService, transport);
+export function getScailoClientForComponentsService(transport: Transport): Client<typeof ComponentsService> {
+    return createClient(ComponentsService, transport);
 }
 
 /** 
@@ -819,8 +819,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForCreditNotesService(transport: Transport): PromiseClient<typeof CreditNotesService> {
-    return createPromiseClient(CreditNotesService, transport);
+export function getScailoClientForCreditNotesService(transport: Transport): Client<typeof CreditNotesService> {
+    return createClient(CreditNotesService, transport);
 }
 
 /** 
@@ -850,8 +850,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForCurrenciesService(transport: Transport): PromiseClient<typeof CurrenciesService> {
-    return createPromiseClient(CurrenciesService, transport);
+export function getScailoClientForCurrenciesService(transport: Transport): Client<typeof CurrenciesService> {
+    return createClient(CurrenciesService, transport);
 }
 
 /** 
@@ -881,8 +881,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForDebitNotesService(transport: Transport): PromiseClient<typeof DebitNotesService> {
-    return createPromiseClient(DebitNotesService, transport);
+export function getScailoClientForDebitNotesService(transport: Transport): Client<typeof DebitNotesService> {
+    return createClient(DebitNotesService, transport);
 }
 
 /** 
@@ -912,8 +912,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForDepartmentsService(transport: Transport): PromiseClient<typeof DepartmentsService> {
-    return createPromiseClient(DepartmentsService, transport);
+export function getScailoClientForDepartmentsService(transport: Transport): Client<typeof DepartmentsService> {
+    return createClient(DepartmentsService, transport);
 }
 
 /** 
@@ -943,8 +943,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForEquationsFamiliesService(transport: Transport): PromiseClient<typeof EquationsFamiliesService> {
-    return createPromiseClient(EquationsFamiliesService, transport);
+export function getScailoClientForEquationsFamiliesService(transport: Transport): Client<typeof EquationsFamiliesService> {
+    return createClient(EquationsFamiliesService, transport);
 }
 
 /** 
@@ -974,8 +974,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForEquationsReplaceablesService(transport: Transport): PromiseClient<typeof EquationsReplaceablesService> {
-    return createPromiseClient(EquationsReplaceablesService, transport);
+export function getScailoClientForEquationsReplaceablesService(transport: Transport): Client<typeof EquationsReplaceablesService> {
+    return createClient(EquationsReplaceablesService, transport);
 }
 
 /** 
@@ -1005,8 +1005,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForEquationsSalesBundlesService(transport: Transport): PromiseClient<typeof EquationsSalesBundlesService> {
-    return createPromiseClient(EquationsSalesBundlesService, transport);
+export function getScailoClientForEquationsSalesBundlesService(transport: Transport): Client<typeof EquationsSalesBundlesService> {
+    return createClient(EquationsSalesBundlesService, transport);
 }
 
 /** 
@@ -1036,8 +1036,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForEquationsWorkOrdersService(transport: Transport): PromiseClient<typeof EquationsWorkOrdersService> {
-    return createPromiseClient(EquationsWorkOrdersService, transport);
+export function getScailoClientForEquationsWorkOrdersService(transport: Transport): Client<typeof EquationsWorkOrdersService> {
+    return createClient(EquationsWorkOrdersService, transport);
 }
 
 /** 
@@ -1067,8 +1067,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForEquipmentsService(transport: Transport): PromiseClient<typeof EquipmentsService> {
-    return createPromiseClient(EquipmentsService, transport);
+export function getScailoClientForEquipmentsService(transport: Transport): Client<typeof EquipmentsService> {
+    return createClient(EquipmentsService, transport);
 }
 
 /** 
@@ -1098,8 +1098,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForExpensesService(transport: Transport): PromiseClient<typeof ExpensesService> {
-    return createPromiseClient(ExpensesService, transport);
+export function getScailoClientForExpensesService(transport: Transport): Client<typeof ExpensesService> {
+    return createClient(ExpensesService, transport);
 }
 
 /** 
@@ -1129,8 +1129,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForFamiliesService(transport: Transport): PromiseClient<typeof FamiliesService> {
-    return createPromiseClient(FamiliesService, transport);
+export function getScailoClientForFamiliesService(transport: Transport): Client<typeof FamiliesService> {
+    return createClient(FamiliesService, transport);
 }
 
 /** 
@@ -1160,8 +1160,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForFeedstocksService(transport: Transport): PromiseClient<typeof FeedstocksService> {
-    return createPromiseClient(FeedstocksService, transport);
+export function getScailoClientForFeedstocksService(transport: Transport): Client<typeof FeedstocksService> {
+    return createClient(FeedstocksService, transport);
 }
 
 /** 
@@ -1191,8 +1191,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForFormsFieldsService(transport: Transport): PromiseClient<typeof FormsFieldsService> {
-    return createPromiseClient(FormsFieldsService, transport);
+export function getScailoClientForFormsFieldsService(transport: Transport): Client<typeof FormsFieldsService> {
+    return createClient(FormsFieldsService, transport);
 }
 
 /** 
@@ -1222,8 +1222,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForFormsFieldsDataService(transport: Transport): PromiseClient<typeof FormsFieldsDataService> {
-    return createPromiseClient(FormsFieldsDataService, transport);
+export function getScailoClientForFormsFieldsDataService(transport: Transport): Client<typeof FormsFieldsDataService> {
+    return createClient(FormsFieldsDataService, transport);
 }
 
 /** 
@@ -1253,8 +1253,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForFormsSectionsService(transport: Transport): PromiseClient<typeof FormsSectionsService> {
-    return createPromiseClient(FormsSectionsService, transport);
+export function getScailoClientForFormsSectionsService(transport: Transport): Client<typeof FormsSectionsService> {
+    return createClient(FormsSectionsService, transport);
 }
 
 /** 
@@ -1284,8 +1284,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForGeneralSettingsService(transport: Transport): PromiseClient<typeof GeneralSettingsService> {
-    return createPromiseClient(GeneralSettingsService, transport);
+export function getScailoClientForGeneralSettingsService(transport: Transport): Client<typeof GeneralSettingsService> {
+    return createClient(GeneralSettingsService, transport);
 }
 
 /** 
@@ -1315,8 +1315,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForGeneralStreamsService(transport: Transport): PromiseClient<typeof GeneralStreamsService> {
-    return createPromiseClient(GeneralStreamsService, transport);
+export function getScailoClientForGeneralStreamsService(transport: Transport): Client<typeof GeneralStreamsService> {
+    return createClient(GeneralStreamsService, transport);
 }
 
 /** 
@@ -1346,8 +1346,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForGoalsService(transport: Transport): PromiseClient<typeof GoalsService> {
-    return createPromiseClient(GoalsService, transport);
+export function getScailoClientForGoalsService(transport: Transport): Client<typeof GoalsService> {
+    return createClient(GoalsService, transport);
 }
 
 /** 
@@ -1377,8 +1377,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForGoodsDispatchesService(transport: Transport): PromiseClient<typeof GoodsDispatchesService> {
-    return createPromiseClient(GoodsDispatchesService, transport);
+export function getScailoClientForGoodsDispatchesService(transport: Transport): Client<typeof GoodsDispatchesService> {
+    return createClient(GoodsDispatchesService, transport);
 }
 
 /** 
@@ -1408,8 +1408,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForGoodsReceiptsService(transport: Transport): PromiseClient<typeof GoodsReceiptsService> {
-    return createPromiseClient(GoodsReceiptsService, transport);
+export function getScailoClientForGoodsReceiptsService(transport: Transport): Client<typeof GoodsReceiptsService> {
+    return createClient(GoodsReceiptsService, transport);
 }
 
 /** 
@@ -1439,8 +1439,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForHolidaysService(transport: Transport): PromiseClient<typeof HolidaysService> {
-    return createPromiseClient(HolidaysService, transport);
+export function getScailoClientForHolidaysService(transport: Transport): Client<typeof HolidaysService> {
+    return createClient(HolidaysService, transport);
 }
 
 /** 
@@ -1470,8 +1470,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForInfrastructuresService(transport: Transport): PromiseClient<typeof InfrastructuresService> {
-    return createPromiseClient(InfrastructuresService, transport);
+export function getScailoClientForInfrastructuresService(transport: Transport): Client<typeof InfrastructuresService> {
+    return createClient(InfrastructuresService, transport);
 }
 
 /** 
@@ -1501,8 +1501,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForInventoryService(transport: Transport): PromiseClient<typeof InventoryService> {
-    return createPromiseClient(InventoryService, transport);
+export function getScailoClientForInventoryService(transport: Transport): Client<typeof InventoryService> {
+    return createClient(InventoryService, transport);
 }
 
 /** 
@@ -1532,8 +1532,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForInwardJobsService(transport: Transport): PromiseClient<typeof InwardJobsService> {
-    return createPromiseClient(InwardJobsService, transport);
+export function getScailoClientForInwardJobsService(transport: Transport): Client<typeof InwardJobsService> {
+    return createClient(InwardJobsService, transport);
 }
 
 /** 
@@ -1563,8 +1563,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForInwardJobsFreeIssueMaterialsService(transport: Transport): PromiseClient<typeof InwardJobsFreeIssueMaterialsService> {
-    return createPromiseClient(InwardJobsFreeIssueMaterialsService, transport);
+export function getScailoClientForInwardJobsFreeIssueMaterialsService(transport: Transport): Client<typeof InwardJobsFreeIssueMaterialsService> {
+    return createClient(InwardJobsFreeIssueMaterialsService, transport);
 }
 
 /** 
@@ -1594,8 +1594,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForInwardJobsFreeIssueMaterialsReturnsService(transport: Transport): PromiseClient<typeof InwardJobsFreeIssueMaterialsReturnsService> {
-    return createPromiseClient(InwardJobsFreeIssueMaterialsReturnsService, transport);
+export function getScailoClientForInwardJobsFreeIssueMaterialsReturnsService(transport: Transport): Client<typeof InwardJobsFreeIssueMaterialsReturnsService> {
+    return createClient(InwardJobsFreeIssueMaterialsReturnsService, transport);
 }
 
 /** 
@@ -1625,8 +1625,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForLabelsService(transport: Transport): PromiseClient<typeof LabelsService> {
-    return createPromiseClient(LabelsService, transport);
+export function getScailoClientForLabelsService(transport: Transport): Client<typeof LabelsService> {
+    return createClient(LabelsService, transport);
 }
 
 /** 
@@ -1656,8 +1656,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForLeavesAdjustmentsService(transport: Transport): PromiseClient<typeof LeavesAdjustmentsService> {
-    return createPromiseClient(LeavesAdjustmentsService, transport);
+export function getScailoClientForLeavesAdjustmentsService(transport: Transport): Client<typeof LeavesAdjustmentsService> {
+    return createClient(LeavesAdjustmentsService, transport);
 }
 
 /** 
@@ -1687,8 +1687,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForLeavesLogsService(transport: Transport): PromiseClient<typeof LeavesLogsService> {
-    return createPromiseClient(LeavesLogsService, transport);
+export function getScailoClientForLeavesLogsService(transport: Transport): Client<typeof LeavesLogsService> {
+    return createClient(LeavesLogsService, transport);
 }
 
 /** 
@@ -1718,8 +1718,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForLeavesRequestsService(transport: Transport): PromiseClient<typeof LeavesRequestsService> {
-    return createPromiseClient(LeavesRequestsService, transport);
+export function getScailoClientForLeavesRequestsService(transport: Transport): Client<typeof LeavesRequestsService> {
+    return createClient(LeavesRequestsService, transport);
 }
 
 /** 
@@ -1749,8 +1749,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForLeavesTypesService(transport: Transport): PromiseClient<typeof LeavesTypesService> {
-    return createPromiseClient(LeavesTypesService, transport);
+export function getScailoClientForLeavesTypesService(transport: Transport): Client<typeof LeavesTypesService> {
+    return createClient(LeavesTypesService, transport);
 }
 
 /** 
@@ -1780,8 +1780,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForLedgersService(transport: Transport): PromiseClient<typeof LedgersService> {
-    return createPromiseClient(LedgersService, transport);
+export function getScailoClientForLedgersService(transport: Transport): Client<typeof LedgersService> {
+    return createClient(LedgersService, transport);
 }
 
 /** 
@@ -1811,8 +1811,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForLocationsService(transport: Transport): PromiseClient<typeof LocationsService> {
-    return createPromiseClient(LocationsService, transport);
+export function getScailoClientForLocationsService(transport: Transport): Client<typeof LocationsService> {
+    return createClient(LocationsService, transport);
 }
 
 /** 
@@ -1842,8 +1842,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForLoginService(transport: Transport): PromiseClient<typeof LoginService> {
-    return createPromiseClient(LoginService, transport);
+export function getScailoClientForLoginService(transport: Transport): Client<typeof LoginService> {
+    return createClient(LoginService, transport);
 }
 
 /** 
@@ -1873,8 +1873,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForMagicLinksService(transport: Transport): PromiseClient<typeof MagicLinksService> {
-    return createPromiseClient(MagicLinksService, transport);
+export function getScailoClientForMagicLinksService(transport: Transport): Client<typeof MagicLinksService> {
+    return createClient(MagicLinksService, transport);
 }
 
 /** 
@@ -1904,8 +1904,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForMeetingsService(transport: Transport): PromiseClient<typeof MeetingsService> {
-    return createPromiseClient(MeetingsService, transport);
+export function getScailoClientForMeetingsService(transport: Transport): Client<typeof MeetingsService> {
+    return createClient(MeetingsService, transport);
 }
 
 /** 
@@ -1935,8 +1935,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForMerchandisesService(transport: Transport): PromiseClient<typeof MerchandisesService> {
-    return createPromiseClient(MerchandisesService, transport);
+export function getScailoClientForMerchandisesService(transport: Transport): Client<typeof MerchandisesService> {
+    return createClient(MerchandisesService, transport);
 }
 
 /** 
@@ -1966,8 +1966,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForNotesService(transport: Transport): PromiseClient<typeof NotesService> {
-    return createPromiseClient(NotesService, transport);
+export function getScailoClientForNotesService(transport: Transport): Client<typeof NotesService> {
+    return createClient(NotesService, transport);
 }
 
 /** 
@@ -1997,8 +1997,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForOnDutiesService(transport: Transport): PromiseClient<typeof OnDutiesService> {
-    return createPromiseClient(OnDutiesService, transport);
+export function getScailoClientForOnDutiesService(transport: Transport): Client<typeof OnDutiesService> {
+    return createClient(OnDutiesService, transport);
 }
 
 /** 
@@ -2028,8 +2028,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForOutwardJobsService(transport: Transport): PromiseClient<typeof OutwardJobsService> {
-    return createPromiseClient(OutwardJobsService, transport);
+export function getScailoClientForOutwardJobsService(transport: Transport): Client<typeof OutwardJobsService> {
+    return createClient(OutwardJobsService, transport);
 }
 
 /** 
@@ -2059,8 +2059,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForOutwardJobsFreeIssueMaterialsService(transport: Transport): PromiseClient<typeof OutwardJobsFreeIssueMaterialsService> {
-    return createPromiseClient(OutwardJobsFreeIssueMaterialsService, transport);
+export function getScailoClientForOutwardJobsFreeIssueMaterialsService(transport: Transport): Client<typeof OutwardJobsFreeIssueMaterialsService> {
+    return createClient(OutwardJobsFreeIssueMaterialsService, transport);
 }
 
 /** 
@@ -2090,8 +2090,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForOutwardJobsFreeIssueMaterialsReturnsService(transport: Transport): PromiseClient<typeof OutwardJobsFreeIssueMaterialsReturnsService> {
-    return createPromiseClient(OutwardJobsFreeIssueMaterialsReturnsService, transport);
+export function getScailoClientForOutwardJobsFreeIssueMaterialsReturnsService(transport: Transport): Client<typeof OutwardJobsFreeIssueMaterialsReturnsService> {
+    return createClient(OutwardJobsFreeIssueMaterialsReturnsService, transport);
 }
 
 /** 
@@ -2121,8 +2121,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForOvertimesService(transport: Transport): PromiseClient<typeof OvertimesService> {
-    return createPromiseClient(OvertimesService, transport);
+export function getScailoClientForOvertimesService(transport: Transport): Client<typeof OvertimesService> {
+    return createClient(OvertimesService, transport);
 }
 
 /** 
@@ -2152,8 +2152,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForPayrollGroupsService(transport: Transport): PromiseClient<typeof PayrollGroupsService> {
-    return createPromiseClient(PayrollGroupsService, transport);
+export function getScailoClientForPayrollGroupsService(transport: Transport): Client<typeof PayrollGroupsService> {
+    return createClient(PayrollGroupsService, transport);
 }
 
 /** 
@@ -2183,8 +2183,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForPayrollParamsService(transport: Transport): PromiseClient<typeof PayrollParamsService> {
-    return createPromiseClient(PayrollParamsService, transport);
+export function getScailoClientForPayrollParamsService(transport: Transport): Client<typeof PayrollParamsService> {
+    return createClient(PayrollParamsService, transport);
 }
 
 /** 
@@ -2214,8 +2214,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForProductionIndentsService(transport: Transport): PromiseClient<typeof ProductionIndentsService> {
-    return createPromiseClient(ProductionIndentsService, transport);
+export function getScailoClientForProductionIndentsService(transport: Transport): Client<typeof ProductionIndentsService> {
+    return createClient(ProductionIndentsService, transport);
 }
 
 /** 
@@ -2245,8 +2245,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForProductionPlansService(transport: Transport): PromiseClient<typeof ProductionPlansService> {
-    return createPromiseClient(ProductionPlansService, transport);
+export function getScailoClientForProductionPlansService(transport: Transport): Client<typeof ProductionPlansService> {
+    return createClient(ProductionPlansService, transport);
 }
 
 /** 
@@ -2276,8 +2276,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForProductsService(transport: Transport): PromiseClient<typeof ProductsService> {
-    return createPromiseClient(ProductsService, transport);
+export function getScailoClientForProductsService(transport: Transport): Client<typeof ProductsService> {
+    return createClient(ProductsService, transport);
 }
 
 /** 
@@ -2307,8 +2307,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForProformaInvoicesService(transport: Transport): PromiseClient<typeof ProformaInvoicesService> {
-    return createPromiseClient(ProformaInvoicesService, transport);
+export function getScailoClientForProformaInvoicesService(transport: Transport): Client<typeof ProformaInvoicesService> {
+    return createClient(ProformaInvoicesService, transport);
 }
 
 /** 
@@ -2338,8 +2338,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForProjectsService(transport: Transport): PromiseClient<typeof ProjectsService> {
-    return createPromiseClient(ProjectsService, transport);
+export function getScailoClientForProjectsService(transport: Transport): Client<typeof ProjectsService> {
+    return createClient(ProjectsService, transport);
 }
 
 /** 
@@ -2369,8 +2369,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForPurchasesEnquiriesService(transport: Transport): PromiseClient<typeof PurchasesEnquiriesService> {
-    return createPromiseClient(PurchasesEnquiriesService, transport);
+export function getScailoClientForPurchasesEnquiriesService(transport: Transport): Client<typeof PurchasesEnquiriesService> {
+    return createClient(PurchasesEnquiriesService, transport);
 }
 
 /** 
@@ -2400,8 +2400,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForPurchasesIndentsService(transport: Transport): PromiseClient<typeof PurchasesIndentsService> {
-    return createPromiseClient(PurchasesIndentsService, transport);
+export function getScailoClientForPurchasesIndentsService(transport: Transport): Client<typeof PurchasesIndentsService> {
+    return createClient(PurchasesIndentsService, transport);
 }
 
 /** 
@@ -2431,8 +2431,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForPurchasesOrdersService(transport: Transport): PromiseClient<typeof PurchasesOrdersService> {
-    return createPromiseClient(PurchasesOrdersService, transport);
+export function getScailoClientForPurchasesOrdersService(transport: Transport): Client<typeof PurchasesOrdersService> {
+    return createClient(PurchasesOrdersService, transport);
 }
 
 /** 
@@ -2462,8 +2462,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForPurchasesPaymentsService(transport: Transport): PromiseClient<typeof PurchasesPaymentsService> {
-    return createPromiseClient(PurchasesPaymentsService, transport);
+export function getScailoClientForPurchasesPaymentsService(transport: Transport): Client<typeof PurchasesPaymentsService> {
+    return createClient(PurchasesPaymentsService, transport);
 }
 
 /** 
@@ -2493,8 +2493,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForPurchasesReturnsService(transport: Transport): PromiseClient<typeof PurchasesReturnsService> {
-    return createPromiseClient(PurchasesReturnsService, transport);
+export function getScailoClientForPurchasesReturnsService(transport: Transport): Client<typeof PurchasesReturnsService> {
+    return createClient(PurchasesReturnsService, transport);
 }
 
 /** 
@@ -2524,8 +2524,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForQCGroupsService(transport: Transport): PromiseClient<typeof QCGroupsService> {
-    return createPromiseClient(QCGroupsService, transport);
+export function getScailoClientForQCGroupsService(transport: Transport): Client<typeof QCGroupsService> {
+    return createClient(QCGroupsService, transport);
 }
 
 /** 
@@ -2555,8 +2555,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForQCHubsService(transport: Transport): PromiseClient<typeof QCHubsService> {
-    return createPromiseClient(QCHubsService, transport);
+export function getScailoClientForQCHubsService(transport: Transport): Client<typeof QCHubsService> {
+    return createClient(QCHubsService, transport);
 }
 
 /** 
@@ -2586,8 +2586,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForQCParamsService(transport: Transport): PromiseClient<typeof QCParamsService> {
-    return createPromiseClient(QCParamsService, transport);
+export function getScailoClientForQCParamsService(transport: Transport): Client<typeof QCParamsService> {
+    return createClient(QCParamsService, transport);
 }
 
 /** 
@@ -2617,8 +2617,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForQCSamplesService(transport: Transport): PromiseClient<typeof QCSamplesService> {
-    return createPromiseClient(QCSamplesService, transport);
+export function getScailoClientForQCSamplesService(transport: Transport): Client<typeof QCSamplesService> {
+    return createClient(QCSamplesService, transport);
 }
 
 /** 
@@ -2648,8 +2648,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForQuotationsRequestsService(transport: Transport): PromiseClient<typeof QuotationsRequestsService> {
-    return createPromiseClient(QuotationsRequestsService, transport);
+export function getScailoClientForQuotationsRequestsService(transport: Transport): Client<typeof QuotationsRequestsService> {
+    return createClient(QuotationsRequestsService, transport);
 }
 
 /** 
@@ -2679,8 +2679,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForQuotationsResponsesService(transport: Transport): PromiseClient<typeof QuotationsResponsesService> {
-    return createPromiseClient(QuotationsResponsesService, transport);
+export function getScailoClientForQuotationsResponsesService(transport: Transport): Client<typeof QuotationsResponsesService> {
+    return createClient(QuotationsResponsesService, transport);
 }
 
 /** 
@@ -2710,8 +2710,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForReplaceableIndentsService(transport: Transport): PromiseClient<typeof ReplaceableIndentsService> {
-    return createPromiseClient(ReplaceableIndentsService, transport);
+export function getScailoClientForReplaceableIndentsService(transport: Transport): Client<typeof ReplaceableIndentsService> {
+    return createClient(ReplaceableIndentsService, transport);
 }
 
 /** 
@@ -2741,8 +2741,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForRolesService(transport: Transport): PromiseClient<typeof RolesService> {
-    return createPromiseClient(RolesService, transport);
+export function getScailoClientForRolesService(transport: Transport): Client<typeof RolesService> {
+    return createClient(RolesService, transport);
 }
 
 /** 
@@ -2772,8 +2772,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSalariesService(transport: Transport): PromiseClient<typeof SalariesService> {
-    return createPromiseClient(SalariesService, transport);
+export function getScailoClientForSalariesService(transport: Transport): Client<typeof SalariesService> {
+    return createClient(SalariesService, transport);
 }
 
 /** 
@@ -2803,8 +2803,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSalesEnquiriesService(transport: Transport): PromiseClient<typeof SalesEnquiriesService> {
-    return createPromiseClient(SalesEnquiriesService, transport);
+export function getScailoClientForSalesEnquiriesService(transport: Transport): Client<typeof SalesEnquiriesService> {
+    return createClient(SalesEnquiriesService, transport);
 }
 
 /** 
@@ -2834,8 +2834,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSalesInvoicesService(transport: Transport): PromiseClient<typeof SalesInvoicesService> {
-    return createPromiseClient(SalesInvoicesService, transport);
+export function getScailoClientForSalesInvoicesService(transport: Transport): Client<typeof SalesInvoicesService> {
+    return createClient(SalesInvoicesService, transport);
 }
 
 /** 
@@ -2865,8 +2865,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSalesOrdersService(transport: Transport): PromiseClient<typeof SalesOrdersService> {
-    return createPromiseClient(SalesOrdersService, transport);
+export function getScailoClientForSalesOrdersService(transport: Transport): Client<typeof SalesOrdersService> {
+    return createClient(SalesOrdersService, transport);
 }
 
 /** 
@@ -2896,8 +2896,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSalesQuotationsService(transport: Transport): PromiseClient<typeof SalesQuotationsService> {
-    return createPromiseClient(SalesQuotationsService, transport);
+export function getScailoClientForSalesQuotationsService(transport: Transport): Client<typeof SalesQuotationsService> {
+    return createClient(SalesQuotationsService, transport);
 }
 
 /** 
@@ -2927,8 +2927,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSalesReceiptsService(transport: Transport): PromiseClient<typeof SalesReceiptsService> {
-    return createPromiseClient(SalesReceiptsService, transport);
+export function getScailoClientForSalesReceiptsService(transport: Transport): Client<typeof SalesReceiptsService> {
+    return createClient(SalesReceiptsService, transport);
 }
 
 /** 
@@ -2958,8 +2958,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSalesReturnsService(transport: Transport): PromiseClient<typeof SalesReturnsService> {
-    return createPromiseClient(SalesReturnsService, transport);
+export function getScailoClientForSalesReturnsService(transport: Transport): Client<typeof SalesReturnsService> {
+    return createClient(SalesReturnsService, transport);
 }
 
 /** 
@@ -2989,8 +2989,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForShiftsService(transport: Transport): PromiseClient<typeof ShiftsService> {
-    return createPromiseClient(ShiftsService, transport);
+export function getScailoClientForShiftsService(transport: Transport): Client<typeof ShiftsService> {
+    return createClient(ShiftsService, transport);
 }
 
 /** 
@@ -3020,8 +3020,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForShiftsGroupsService(transport: Transport): PromiseClient<typeof ShiftsGroupsService> {
-    return createPromiseClient(ShiftsGroupsService, transport);
+export function getScailoClientForShiftsGroupsService(transport: Transport): Client<typeof ShiftsGroupsService> {
+    return createClient(ShiftsGroupsService, transport);
 }
 
 /** 
@@ -3051,8 +3051,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSkillsGroupsService(transport: Transport): PromiseClient<typeof SkillsGroupsService> {
-    return createPromiseClient(SkillsGroupsService, transport);
+export function getScailoClientForSkillsGroupsService(transport: Transport): Client<typeof SkillsGroupsService> {
+    return createClient(SkillsGroupsService, transport);
 }
 
 /** 
@@ -3082,8 +3082,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSkillsParamsService(transport: Transport): PromiseClient<typeof SkillsParamsService> {
-    return createPromiseClient(SkillsParamsService, transport);
+export function getScailoClientForSkillsParamsService(transport: Transport): Client<typeof SkillsParamsService> {
+    return createClient(SkillsParamsService, transport);
 }
 
 /** 
@@ -3113,8 +3113,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForStockAuditsService(transport: Transport): PromiseClient<typeof StockAuditsService> {
-    return createPromiseClient(StockAuditsService, transport);
+export function getScailoClientForStockAuditsService(transport: Transport): Client<typeof StockAuditsService> {
+    return createClient(StockAuditsService, transport);
 }
 
 /** 
@@ -3144,8 +3144,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForStockIssuancesService(transport: Transport): PromiseClient<typeof StockIssuancesService> {
-    return createPromiseClient(StockIssuancesService, transport);
+export function getScailoClientForStockIssuancesService(transport: Transport): Client<typeof StockIssuancesService> {
+    return createClient(StockIssuancesService, transport);
 }
 
 /** 
@@ -3175,8 +3175,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForStockReturnsService(transport: Transport): PromiseClient<typeof StockReturnsService> {
-    return createPromiseClient(StockReturnsService, transport);
+export function getScailoClientForStockReturnsService(transport: Transport): Client<typeof StockReturnsService> {
+    return createClient(StockReturnsService, transport);
 }
 
 /** 
@@ -3206,8 +3206,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForStoragesService(transport: Transport): PromiseClient<typeof StoragesService> {
-    return createPromiseClient(StoragesService, transport);
+export function getScailoClientForStoragesService(transport: Transport): Client<typeof StoragesService> {
+    return createClient(StoragesService, transport);
 }
 
 /** 
@@ -3237,8 +3237,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForStoresService(transport: Transport): PromiseClient<typeof StoresService> {
-    return createPromiseClient(StoresService, transport);
+export function getScailoClientForStoresService(transport: Transport): Client<typeof StoresService> {
+    return createClient(StoresService, transport);
 }
 
 /** 
@@ -3268,8 +3268,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForSupplyOffersService(transport: Transport): PromiseClient<typeof SupplyOffersService> {
-    return createPromiseClient(SupplyOffersService, transport);
+export function getScailoClientForSupplyOffersService(transport: Transport): Client<typeof SupplyOffersService> {
+    return createClient(SupplyOffersService, transport);
 }
 
 /** 
@@ -3299,8 +3299,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForTaxGroupsService(transport: Transport): PromiseClient<typeof TaxGroupsService> {
-    return createPromiseClient(TaxGroupsService, transport);
+export function getScailoClientForTaxGroupsService(transport: Transport): Client<typeof TaxGroupsService> {
+    return createClient(TaxGroupsService, transport);
 }
 
 /** 
@@ -3330,8 +3330,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForTaxParamsService(transport: Transport): PromiseClient<typeof TaxParamsService> {
-    return createPromiseClient(TaxParamsService, transport);
+export function getScailoClientForTaxParamsService(transport: Transport): Client<typeof TaxParamsService> {
+    return createClient(TaxParamsService, transport);
 }
 
 /** 
@@ -3361,8 +3361,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForTeamsService(transport: Transport): PromiseClient<typeof TeamsService> {
-    return createPromiseClient(TeamsService, transport);
+export function getScailoClientForTeamsService(transport: Transport): Client<typeof TeamsService> {
+    return createClient(TeamsService, transport);
 }
 
 /** 
@@ -3392,8 +3392,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForUnitsOfMaterialsService(transport: Transport): PromiseClient<typeof UnitsOfMaterialsService> {
-    return createPromiseClient(UnitsOfMaterialsService, transport);
+export function getScailoClientForUnitsOfMaterialsService(transport: Transport): Client<typeof UnitsOfMaterialsService> {
+    return createClient(UnitsOfMaterialsService, transport);
 }
 
 /** 
@@ -3423,8 +3423,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForUsersService(transport: Transport): PromiseClient<typeof UsersService> {
-    return createPromiseClient(UsersService, transport);
+export function getScailoClientForUsersService(transport: Transport): Client<typeof UsersService> {
+    return createClient(UsersService, transport);
 }
 
 /** 
@@ -3454,8 +3454,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForVaultService(transport: Transport): PromiseClient<typeof VaultService> {
-    return createPromiseClient(VaultService, transport);
+export function getScailoClientForVaultService(transport: Transport): Client<typeof VaultService> {
+    return createClient(VaultService, transport);
 }
 
 /** 
@@ -3485,8 +3485,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForVendorInvoicesService(transport: Transport): PromiseClient<typeof VendorInvoicesService> {
-    return createPromiseClient(VendorInvoicesService, transport);
+export function getScailoClientForVendorInvoicesService(transport: Transport): Client<typeof VendorInvoicesService> {
+    return createClient(VendorInvoicesService, transport);
 }
 
 /** 
@@ -3516,8 +3516,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForVendorStreamsService(transport: Transport): PromiseClient<typeof VendorStreamsService> {
-    return createPromiseClient(VendorStreamsService, transport);
+export function getScailoClientForVendorStreamsService(transport: Transport): Client<typeof VendorStreamsService> {
+    return createClient(VendorStreamsService, transport);
 }
 
 /** 
@@ -3547,8 +3547,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForVendorsService(transport: Transport): PromiseClient<typeof VendorsService> {
-    return createPromiseClient(VendorsService, transport);
+export function getScailoClientForVendorsService(transport: Transport): Client<typeof VendorsService> {
+    return createClient(VendorsService, transport);
 }
 
 /** 
@@ -3578,8 +3578,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForVisitationsService(transport: Transport): PromiseClient<typeof VisitationsService> {
-    return createPromiseClient(VisitationsService, transport);
+export function getScailoClientForVisitationsService(transport: Transport): Client<typeof VisitationsService> {
+    return createClient(VisitationsService, transport);
 }
 
 /** 
@@ -3609,8 +3609,8 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForWorkOrdersService(transport: Transport): PromiseClient<typeof WorkOrdersService> {
-    return createPromiseClient(WorkOrdersService, transport);
+export function getScailoClientForWorkOrdersService(transport: Transport): Client<typeof WorkOrdersService> {
+    return createClient(WorkOrdersService, transport);
 }
 
 /** 
@@ -3640,6 +3640,6 @@ function getNodeTransport(apiEndPoint: string) {
 ```
 
 */
-export function getClientForWorkflowsRulesService(transport: Transport): PromiseClient<typeof WorkflowsRulesService> {
-    return createPromiseClient(WorkflowsRulesService, transport);
+export function getScailoClientForWorkflowsRulesService(transport: Transport): Client<typeof WorkflowsRulesService> {
+    return createClient(WorkflowsRulesService, transport);
 }

@@ -66,7 +66,7 @@ function getNodeTransport(apiEndPoint: string) {
 Next, you need to call the login service to get an auth_token. This token is essential for authorizing other API requests.
 
 ```typescript
-import { getClientForLoginService, UserLoginRequest } from "@kernelminds/scailo-sdk";
+import { getScailoClientForLoginService, UserLoginRequest } from "@kernelminds/scailo-sdk";
 
 // The address of your Scailo instance
 const upstreamAPI = "https://your-scailo-instance.com";
@@ -77,7 +77,7 @@ const transport = getWebTransport(upstreamAPI);
 
 async function authenticate() {
     try {
-        const client = getClientForLoginService(transport)
+        const client = getScailoClientForLoginService(transport)
         const loginResp = await client.loginAsEmployeePrimary(new UserLoginRequest({
             username: username,
             plainTextPassword: password,
@@ -100,14 +100,14 @@ authenticate();
 Once you have the authToken, you must include it in the metadata of your API calls. The following example demonstrates how to fetch purchase orders using the token you received.
 
 ```typescript
-import { getClientForPurchasesOrdersService, PurchasesOrdersServiceFilterReq, BOOL_FILTER, SORT_ORDER } from "@kernelminds/scailo-sdk";
+import { getScailoClientForPurchasesOrdersService, PurchasesOrdersServiceFilterReq, BOOL_FILTER, SORT_ORDER } from "@kernelminds/scailo-sdk";
 import { protoInt64 } from "@bufbuild/protobuf";
 
 const transport = getWebTransport(upstreamAPI);
 
 async function getPurchaseOrders(authToken: string) {
     try {
-        const purchaseOrdersClient = getClientForPurchasesOrdersService(transport);
+        const purchaseOrdersClient = getScailoClientForPurchasesOrdersService(transport);
         const resp = await purchaseOrdersClient.filter(new PurchasesOrdersServiceFilterReq({
             isActive: BOOL_FILTER.BOOL_FILTER_TRUE,
             count: protoInt64.parse(5),
