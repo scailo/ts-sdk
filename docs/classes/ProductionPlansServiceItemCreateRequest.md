@@ -69,7 +69,7 @@ Message\&lt;ProductionPlansServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L821)
+[src/production_plans.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L821)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:812](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L812)
+[src/production_plans.scailo_pb.ts:812](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L812)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 production_plan_id = 10;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:805](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L805)
+[src/production_plans.scailo_pb.ts:805](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L805)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:819](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L819)
+[src/production_plans.scailo_pb.ts:819](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L819)
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:798](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L798)
+[src/production_plans.scailo_pb.ts:798](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L798)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:828](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L828)
+[src/production_plans.scailo_pb.ts:828](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L828)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:826](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L826)
+[src/production_plans.scailo_pb.ts:826](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L826)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:827](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L827)
+[src/production_plans.scailo_pb.ts:827](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L827)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:847](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L847)
+[src/production_plans.scailo_pb.ts:847](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L847)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:835](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L835)
+[src/production_plans.scailo_pb.ts:835](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L835)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:839](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L839)
+[src/production_plans.scailo_pb.ts:839](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L839)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:843](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_plans.scailo_pb.ts#L843)
+[src/production_plans.scailo_pb.ts:843](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_plans.scailo_pb.ts#L843)

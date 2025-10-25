@@ -30,7 +30,7 @@ from enum value: GOODS_DISPATCH_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/goods_dispatches.scailo_pb.ts#L149)
+[src/goods_dispatches.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/goods_dispatches.scailo_pb.ts#L149)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GOODS_DISPATCH_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/goods_dispatches.scailo_pb.ts#L156)
+[src/goods_dispatches.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/goods_dispatches.scailo_pb.ts#L156)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GOODS_DISPATCH_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/goods_dispatches.scailo_pb.ts#L163)
+[src/goods_dispatches.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/goods_dispatches.scailo_pb.ts#L163)

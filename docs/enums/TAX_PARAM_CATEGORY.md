@@ -30,7 +30,7 @@ from enum value: TAX_PARAM_CATEGORY_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/tax_params.scailo_pb.ts#L57)
+[src/tax_params.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/tax_params.scailo_pb.ts#L57)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: TAX_PARAM_CATEGORY_GENERAL = 1;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/tax_params.scailo_pb.ts#L64)
+[src/tax_params.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/tax_params.scailo_pb.ts#L64)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: TAX_PARAM_CATEGORY_PAYROLL = 2;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/tax_params.scailo_pb.ts#L71)
+[src/tax_params.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/tax_params.scailo_pb.ts#L71)

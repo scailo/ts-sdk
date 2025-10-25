@@ -30,7 +30,7 @@ from enum value: EQUATION_SALES_BUNDLE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/equations_sales_bundles.scailo_pb.ts#L105)
+[src/equations_sales_bundles.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/equations_sales_bundles.scailo_pb.ts#L105)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: EQUATION_SALES_BUNDLE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/equations_sales_bundles.scailo_pb.ts#L112)
+[src/equations_sales_bundles.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/equations_sales_bundles.scailo_pb.ts#L112)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: EQUATION_SALES_BUNDLE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:119](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/equations_sales_bundles.scailo_pb.ts#L119)
+[src/equations_sales_bundles.scailo_pb.ts:119](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/equations_sales_bundles.scailo_pb.ts#L119)

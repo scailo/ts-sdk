@@ -50,63 +50,71 @@ proto3.util.setEnumType(VAULT_REF_FOR, "Scailo.VAULT_REF_FOR", [
  */
 export enum VAULT_PERMISSION_CODE {
   /**
+   * Stores the default value
+   *
+   * @generated from enum value: VAULT_PERMISSION_CODE_UNSPECIFIED = 0;
+   */
+  VAULT_PERMISSION_CODE_UNSPECIFIED = 0,
+
+  /**
    * Stores the bit weight of the view permission (value is 2^0 = 1)
    *
-   * @generated from enum value: VAULT_PERMISSION_CODE_VIEW_UNSPECIFIED = 0;
+   * @generated from enum value: VAULT_PERMISSION_CODE_VIEW = 1;
    */
-  VAULT_PERMISSION_CODE_VIEW_UNSPECIFIED = 0,
+  VAULT_PERMISSION_CODE_VIEW = 1,
 
   /**
    * Stores the bit weight of the meta permission (value is 2^1 = 2)
    *
-   * @generated from enum value: VAULT_PERMISSION_CODE_META = 1;
+   * @generated from enum value: VAULT_PERMISSION_CODE_META = 2;
    */
-  VAULT_PERMISSION_CODE_META = 1,
+  VAULT_PERMISSION_CODE_META = 2,
 
   /**
    * Stores the bit weight of the download permission (value is 2^2 = 4)
    *
-   * @generated from enum value: VAULT_PERMISSION_CODE_DOWNLOAD = 2;
+   * @generated from enum value: VAULT_PERMISSION_CODE_DOWNLOAD = 4;
    */
-  VAULT_PERMISSION_CODE_DOWNLOAD = 2,
+  VAULT_PERMISSION_CODE_DOWNLOAD = 4,
 
   /**
    * Stores the bit weight of the add permission (value is 2^3 = 8)
    *
-   * @generated from enum value: VAULT_PERMISSION_CODE_ADD = 3;
+   * @generated from enum value: VAULT_PERMISSION_CODE_ADD = 8;
    */
-  VAULT_PERMISSION_CODE_ADD = 3,
+  VAULT_PERMISSION_CODE_ADD = 8,
 
   /**
    * Stores the bit weight of the delete permission (value is 2^4 = 16)
    *
-   * @generated from enum value: VAULT_PERMISSION_CODE_DELETE = 4;
+   * @generated from enum value: VAULT_PERMISSION_CODE_DELETE = 16;
    */
-  VAULT_PERMISSION_CODE_DELETE = 4,
+  VAULT_PERMISSION_CODE_DELETE = 16,
 
   /**
    * Stores the bit weight of the execute permission (value is 2^5 = 32)
    *
-   * @generated from enum value: VAULT_PERMISSION_CODE_EXECUTE = 5;
+   * @generated from enum value: VAULT_PERMISSION_CODE_EXECUTE = 32;
    */
-  VAULT_PERMISSION_CODE_EXECUTE = 5,
+  VAULT_PERMISSION_CODE_EXECUTE = 32,
 
   /**
-   * Stores the bit weight of all the available permissions (value is 2^6 = 64)
+   * Stores the bit weight of all the available permissions (value is 2^6 = 64 - 1)
    *
-   * @generated from enum value: VAULT_PERMISSION_CODE_ALL = 20;
+   * @generated from enum value: VAULT_PERMISSION_CODE_ALL = 63;
    */
-  VAULT_PERMISSION_CODE_ALL = 20,
+  VAULT_PERMISSION_CODE_ALL = 63,
 }
 // Retrieve enum metadata with: proto3.getEnumType(VAULT_PERMISSION_CODE)
 proto3.util.setEnumType(VAULT_PERMISSION_CODE, "Scailo.VAULT_PERMISSION_CODE", [
-  { no: 0, name: "VAULT_PERMISSION_CODE_VIEW_UNSPECIFIED" },
-  { no: 1, name: "VAULT_PERMISSION_CODE_META" },
-  { no: 2, name: "VAULT_PERMISSION_CODE_DOWNLOAD" },
-  { no: 3, name: "VAULT_PERMISSION_CODE_ADD" },
-  { no: 4, name: "VAULT_PERMISSION_CODE_DELETE" },
-  { no: 5, name: "VAULT_PERMISSION_CODE_EXECUTE" },
-  { no: 20, name: "VAULT_PERMISSION_CODE_ALL" },
+  { no: 0, name: "VAULT_PERMISSION_CODE_UNSPECIFIED" },
+  { no: 1, name: "VAULT_PERMISSION_CODE_VIEW" },
+  { no: 2, name: "VAULT_PERMISSION_CODE_META" },
+  { no: 4, name: "VAULT_PERMISSION_CODE_DOWNLOAD" },
+  { no: 8, name: "VAULT_PERMISSION_CODE_ADD" },
+  { no: 16, name: "VAULT_PERMISSION_CODE_DELETE" },
+  { no: 32, name: "VAULT_PERMISSION_CODE_EXECUTE" },
+  { no: 63, name: "VAULT_PERMISSION_CODE_ALL" },
 ]);
 
 /**

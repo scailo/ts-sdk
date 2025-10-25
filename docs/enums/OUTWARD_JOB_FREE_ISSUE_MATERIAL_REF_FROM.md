@@ -29,7 +29,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/outward_jobs_free_issue_materials.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/outward_jobs_free_issue_materials.scailo_pb.ts#L23)
+[src/outward_jobs_free_issue_materials.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/outward_jobs_free_issue_materials.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_OUTWARD_JOB = 1;
 
 #### Defined in
 
-[src/outward_jobs_free_issue_materials.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/outward_jobs_free_issue_materials.scailo_pb.ts#L30)
+[src/outward_jobs_free_issue_materials.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/outward_jobs_free_issue_materials.scailo_pb.ts#L30)

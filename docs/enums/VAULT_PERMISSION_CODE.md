@@ -18,116 +18,133 @@ from enum Scailo.VAULT_PERMISSION_CODE
 - [VAULT\_PERMISSION\_CODE\_DOWNLOAD](VAULT_PERMISSION_CODE.md#vault_permission_code_download)
 - [VAULT\_PERMISSION\_CODE\_EXECUTE](VAULT_PERMISSION_CODE.md#vault_permission_code_execute)
 - [VAULT\_PERMISSION\_CODE\_META](VAULT_PERMISSION_CODE.md#vault_permission_code_meta)
-- [VAULT\_PERMISSION\_CODE\_VIEW\_UNSPECIFIED](VAULT_PERMISSION_CODE.md#vault_permission_code_view_unspecified)
+- [VAULT\_PERMISSION\_CODE\_UNSPECIFIED](VAULT_PERMISSION_CODE.md#vault_permission_code_unspecified)
+- [VAULT\_PERMISSION\_CODE\_VIEW](VAULT_PERMISSION_CODE.md#vault_permission_code_view)
 
 ## Enumeration Members
 
 ### VAULT\_PERMISSION\_CODE\_ADD
 
-• **VAULT\_PERMISSION\_CODE\_ADD** = ``3``
+• **VAULT\_PERMISSION\_CODE\_ADD** = ``8``
 
 Stores the bit weight of the add permission (value is 2^3 = 8)
 
 **`Generated`**
 
-from enum value: VAULT_PERMISSION_CODE_ADD = 3;
+from enum value: VAULT_PERMISSION_CODE_ADD = 8;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/vault_commons.scailo_pb.ts#L78)
+[src/vault_commons.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/vault_commons.scailo_pb.ts#L85)
 
 ___
 
 ### VAULT\_PERMISSION\_CODE\_ALL
 
-• **VAULT\_PERMISSION\_CODE\_ALL** = ``20``
+• **VAULT\_PERMISSION\_CODE\_ALL** = ``63``
 
-Stores the bit weight of all the available permissions (value is 2^6 = 64)
+Stores the bit weight of all the available permissions (value is 2^6 = 64 - 1)
 
 **`Generated`**
 
-from enum value: VAULT_PERMISSION_CODE_ALL = 20;
+from enum value: VAULT_PERMISSION_CODE_ALL = 63;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/vault_commons.scailo_pb.ts#L99)
+[src/vault_commons.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/vault_commons.scailo_pb.ts#L106)
 
 ___
 
 ### VAULT\_PERMISSION\_CODE\_DELETE
 
-• **VAULT\_PERMISSION\_CODE\_DELETE** = ``4``
+• **VAULT\_PERMISSION\_CODE\_DELETE** = ``16``
 
 Stores the bit weight of the delete permission (value is 2^4 = 16)
 
 **`Generated`**
 
-from enum value: VAULT_PERMISSION_CODE_DELETE = 4;
+from enum value: VAULT_PERMISSION_CODE_DELETE = 16;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/vault_commons.scailo_pb.ts#L85)
+[src/vault_commons.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/vault_commons.scailo_pb.ts#L92)
 
 ___
 
 ### VAULT\_PERMISSION\_CODE\_DOWNLOAD
 
-• **VAULT\_PERMISSION\_CODE\_DOWNLOAD** = ``2``
+• **VAULT\_PERMISSION\_CODE\_DOWNLOAD** = ``4``
 
 Stores the bit weight of the download permission (value is 2^2 = 4)
 
 **`Generated`**
 
-from enum value: VAULT_PERMISSION_CODE_DOWNLOAD = 2;
+from enum value: VAULT_PERMISSION_CODE_DOWNLOAD = 4;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/vault_commons.scailo_pb.ts#L71)
+[src/vault_commons.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/vault_commons.scailo_pb.ts#L78)
 
 ___
 
 ### VAULT\_PERMISSION\_CODE\_EXECUTE
 
-• **VAULT\_PERMISSION\_CODE\_EXECUTE** = ``5``
+• **VAULT\_PERMISSION\_CODE\_EXECUTE** = ``32``
 
 Stores the bit weight of the execute permission (value is 2^5 = 32)
 
 **`Generated`**
 
-from enum value: VAULT_PERMISSION_CODE_EXECUTE = 5;
+from enum value: VAULT_PERMISSION_CODE_EXECUTE = 32;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/vault_commons.scailo_pb.ts#L92)
+[src/vault_commons.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/vault_commons.scailo_pb.ts#L99)
 
 ___
 
 ### VAULT\_PERMISSION\_CODE\_META
 
-• **VAULT\_PERMISSION\_CODE\_META** = ``1``
+• **VAULT\_PERMISSION\_CODE\_META** = ``2``
 
 Stores the bit weight of the meta permission (value is 2^1 = 2)
 
 **`Generated`**
 
-from enum value: VAULT_PERMISSION_CODE_META = 1;
+from enum value: VAULT_PERMISSION_CODE_META = 2;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/vault_commons.scailo_pb.ts#L64)
+[src/vault_commons.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/vault_commons.scailo_pb.ts#L71)
 
 ___
 
-### VAULT\_PERMISSION\_CODE\_VIEW\_UNSPECIFIED
+### VAULT\_PERMISSION\_CODE\_UNSPECIFIED
 
-• **VAULT\_PERMISSION\_CODE\_VIEW\_UNSPECIFIED** = ``0``
+• **VAULT\_PERMISSION\_CODE\_UNSPECIFIED** = ``0``
+
+Stores the default value
+
+**`Generated`**
+
+from enum value: VAULT_PERMISSION_CODE_UNSPECIFIED = 0;
+
+#### Defined in
+
+[src/vault_commons.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/vault_commons.scailo_pb.ts#L57)
+
+___
+
+### VAULT\_PERMISSION\_CODE\_VIEW
+
+• **VAULT\_PERMISSION\_CODE\_VIEW** = ``1``
 
 Stores the bit weight of the view permission (value is 2^0 = 1)
 
 **`Generated`**
 
-from enum value: VAULT_PERMISSION_CODE_VIEW_UNSPECIFIED = 0;
+from enum value: VAULT_PERMISSION_CODE_VIEW = 1;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/vault_commons.scailo_pb.ts#L57)
+[src/vault_commons.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/vault_commons.scailo_pb.ts#L64)

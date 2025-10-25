@@ -66,7 +66,7 @@ Message\&lt;ProductionIndentsItemsList\&gt;.constructor
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1008](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1008)
+[src/production_indents.scailo_pb.ts:1008](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1008)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ProductionIndentItem list = 1;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1006)
+[src/production_indents.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1006)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1015](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1015)
+[src/production_indents.scailo_pb.ts:1015](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1015)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1013](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1013)
+[src/production_indents.scailo_pb.ts:1013](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1013)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1014](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1014)
+[src/production_indents.scailo_pb.ts:1014](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1014)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1031](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1031)
+[src/production_indents.scailo_pb.ts:1031](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1031)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1019](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1019)
+[src/production_indents.scailo_pb.ts:1019](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1019)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1023](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1023)
+[src/production_indents.scailo_pb.ts:1023](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1023)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1027](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/production_indents.scailo_pb.ts#L1027)
+[src/production_indents.scailo_pb.ts:1027](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/production_indents.scailo_pb.ts#L1027)

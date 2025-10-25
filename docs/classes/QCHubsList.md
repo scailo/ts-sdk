@@ -66,7 +66,7 @@ Message\&lt;QCHubsList\&gt;.constructor
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L417)
+[src/qc_hubs.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L417)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.QCHub list = 1;
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L415)
+[src/qc_hubs.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L415)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L424)
+[src/qc_hubs.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L424)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L422)
+[src/qc_hubs.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L422)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L423)
+[src/qc_hubs.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L423)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L440)
+[src/qc_hubs.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L440)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L428)
+[src/qc_hubs.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L428)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L432)
+[src/qc_hubs.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L432)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/qc_hubs.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/qc_hubs.scailo_pb.ts#L436)
+[src/qc_hubs.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/qc_hubs.scailo_pb.ts#L436)

@@ -66,7 +66,7 @@ Message\&lt;DebitNoteReferencesList\&gt;.constructor
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2693](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2693)
+[src/debit_notes.scailo_pb.ts:2693](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2693)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.DebitNoteReference list = 1;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2691](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2691)
+[src/debit_notes.scailo_pb.ts:2691](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2691)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2700](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2700)
+[src/debit_notes.scailo_pb.ts:2700](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2700)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2698](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2698)
+[src/debit_notes.scailo_pb.ts:2698](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2698)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2699](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2699)
+[src/debit_notes.scailo_pb.ts:2699](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2699)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2716](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2716)
+[src/debit_notes.scailo_pb.ts:2716](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2716)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2704](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2704)
+[src/debit_notes.scailo_pb.ts:2704](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2704)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2708](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2708)
+[src/debit_notes.scailo_pb.ts:2708](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2708)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2712](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/debit_notes.scailo_pb.ts#L2712)
+[src/debit_notes.scailo_pb.ts:2712](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/debit_notes.scailo_pb.ts#L2712)

@@ -35,7 +35,7 @@ from enum value: TEAM_MEMBER_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/teams.scailo_pb.ts#L141)
+[src/teams.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/teams.scailo_pb.ts#L141)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: TEAM_MEMBER_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/teams.scailo_pb.ts#L134)
+[src/teams.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/teams.scailo_pb.ts#L134)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: TEAM_MEMBER_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/teams.scailo_pb.ts#L148)
+[src/teams.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/teams.scailo_pb.ts#L148)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: TEAM_MEMBER_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/teams.scailo_pb.ts#L120)
+[src/teams.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/teams.scailo_pb.ts#L120)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: TEAM_MEMBER_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/teams.scailo_pb.ts#L113)
+[src/teams.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/teams.scailo_pb.ts#L113)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: TEAM_MEMBER_SORT_KEY_MEMBER_ID = 11;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:162](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/teams.scailo_pb.ts#L162)
+[src/teams.scailo_pb.ts:162](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/teams.scailo_pb.ts#L162)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: TEAM_MEMBER_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/teams.scailo_pb.ts#L127)
+[src/teams.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/teams.scailo_pb.ts#L127)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: TEAM_MEMBER_SORT_KEY_TEAM_ID = 10;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/2b83bd8cefd750c97177d28e7d2e9c44ff948239/src/teams.scailo_pb.ts#L155)
+[src/teams.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/teams.scailo_pb.ts#L155)
