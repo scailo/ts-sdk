@@ -5013,6 +5013,21 @@ export declare const PermissionsMagicLinks: {
     Name: string;
     Description: string;
 }[];
+export declare const PermissionNewTransactionalEmail: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionViewTransactionalEmail: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsTransactionalEmails: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
 export declare const PermissionNewLocation: {
     Uid: string;
     Name: string;

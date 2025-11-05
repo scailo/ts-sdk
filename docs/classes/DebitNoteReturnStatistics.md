@@ -68,7 +68,7 @@ Message\&lt;DebitNoteReturnStatistics\&gt;.constructor
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2749](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2749)
+[src/debit_notes.scailo_pb.ts:2749](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2749)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 billed_quantity = 2;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2740](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2740)
+[src/debit_notes.scailo_pb.ts:2740](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2740)
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2733](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2733)
+[src/debit_notes.scailo_pb.ts:2733](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2733)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 returned_quantity = 3;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2747](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2747)
+[src/debit_notes.scailo_pb.ts:2747](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2747)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2756](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2756)
+[src/debit_notes.scailo_pb.ts:2756](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2756)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2754](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2754)
+[src/debit_notes.scailo_pb.ts:2754](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2754)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2755](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2755)
+[src/debit_notes.scailo_pb.ts:2755](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2755)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2774](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2774)
+[src/debit_notes.scailo_pb.ts:2774](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2774)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2762](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2762)
+[src/debit_notes.scailo_pb.ts:2762](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2762)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2766](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2766)
+[src/debit_notes.scailo_pb.ts:2766](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2766)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:2770](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/debit_notes.scailo_pb.ts#L2770)
+[src/debit_notes.scailo_pb.ts:2770](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/debit_notes.scailo_pb.ts#L2770)

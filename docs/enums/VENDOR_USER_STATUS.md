@@ -30,7 +30,7 @@ from enum value: VENDOR_USER_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/vendors.scailo_pb.ts#L307)
+[src/vendors.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/vendors.scailo_pb.ts#L307)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: VENDOR_USER_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/vendors.scailo_pb.ts#L314)
+[src/vendors.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/vendors.scailo_pb.ts#L314)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: VENDOR_USER_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/vendors.scailo_pb.ts#L321)
+[src/vendors.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/vendors.scailo_pb.ts#L321)

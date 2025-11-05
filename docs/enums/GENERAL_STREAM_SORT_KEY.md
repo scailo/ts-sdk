@@ -32,7 +32,7 @@ from enum value: GENERAL_STREAM_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/general_streams.scailo_pb.ts#L86)
+[src/general_streams.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/general_streams.scailo_pb.ts#L86)
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: GENERAL_STREAM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/general_streams.scailo_pb.ts#L72)
+[src/general_streams.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/general_streams.scailo_pb.ts#L72)
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: GENERAL_STREAM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/general_streams.scailo_pb.ts#L65)
+[src/general_streams.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/general_streams.scailo_pb.ts#L65)
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: GENERAL_STREAM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/general_streams.scailo_pb.ts#L79)
+[src/general_streams.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/general_streams.scailo_pb.ts#L79)
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: GENERAL_STREAM_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/general_streams.scailo_pb.ts#L93)
+[src/general_streams.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/general_streams.scailo_pb.ts#L93)
