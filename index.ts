@@ -196,6 +196,8 @@ export * from "./src/tax_params.scailo_connect";
 export * from "./src/tax_params.scailo_pb";
 export * from "./src/teams.scailo_connect";
 export * from "./src/teams.scailo_pb";
+export * from "./src/transactional_emails.scailo_connect";
+export * from "./src/transactional_emails.scailo_pb";
 export * from "./src/units_of_materials.scailo_connect";
 export * from "./src/units_of_materials.scailo_pb";
 export * from "./src/users.scailo_connect";
@@ -317,6 +319,7 @@ import { SupplyOffersService } from "./src/supply_offers.scailo_connect";
 import { TaxGroupsService } from "./src/tax_groups.scailo_connect";
 import { TaxParamsService } from "./src/tax_params.scailo_connect";
 import { TeamsService } from "./src/teams.scailo_connect";
+import { TransactionalEmailsService } from "./src/transactional_emails.scailo_connect";
 import { UnitsOfMaterialsService } from "./src/units_of_materials.scailo_connect";
 import { UsersService } from "./src/users.scailo_connect";
 import { VaultService } from "./src/vault.scailo_connect";
@@ -3363,6 +3366,37 @@ function getNodeTransport(apiEndPoint: string) {
 */
 export function getScailoClientForTeamsService(transport: Transport): Client<typeof TeamsService> {
     return createClient(TeamsService, transport);
+}
+
+/** 
+
+Get the client to access the TransactionalEmailsService. Transport is a connectrpc Transport, which is created as follows: 
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node: 
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+*/
+export function getScailoClientForTransactionalEmailsService(transport: Transport): Client<typeof TransactionalEmailsService> {
+    return createClient(TransactionalEmailsService, transport);
 }
 
 /** 

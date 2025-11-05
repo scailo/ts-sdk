@@ -69,7 +69,7 @@ Message\&lt;RepeatWithDeliveryDate\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2317](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2317)
+[src/base.scailo_pb.ts:2317](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2317)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string delivery_date = 13;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2315](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2315)
+[src/base.scailo_pb.ts:2315](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2315)
 
 ___
 
@@ -101,7 +101,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2308](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2308)
+[src/base.scailo_pb.ts:2308](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2308)
 
 ___
 
@@ -117,7 +117,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2301](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2301)
+[src/base.scailo_pb.ts:2301](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2301)
 
 ___
 
@@ -133,7 +133,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2294](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2294)
+[src/base.scailo_pb.ts:2294](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2294)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2324](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2324)
+[src/base.scailo_pb.ts:2324](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2324)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2322](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2322)
+[src/base.scailo_pb.ts:2322](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2322)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2323](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2323)
+[src/base.scailo_pb.ts:2323](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2323)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2343](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2343)
+[src/base.scailo_pb.ts:2343](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2343)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2331](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2331)
+[src/base.scailo_pb.ts:2331](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2331)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2335](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2335)
+[src/base.scailo_pb.ts:2335](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2335)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2339](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L2339)
+[src/base.scailo_pb.ts:2339](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L2339)

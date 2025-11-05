@@ -66,7 +66,7 @@ Message\&lt;ClientStreamMessagesList\&gt;.constructor
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1576](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1576)
+[src/client_streams.scailo_pb.ts:1576](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1576)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ClientStreamMessage list = 1;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1574](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1574)
+[src/client_streams.scailo_pb.ts:1574](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1574)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1583](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1583)
+[src/client_streams.scailo_pb.ts:1583](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1583)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1581](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1581)
+[src/client_streams.scailo_pb.ts:1581](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1581)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1582](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1582)
+[src/client_streams.scailo_pb.ts:1582](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1582)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1599](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1599)
+[src/client_streams.scailo_pb.ts:1599](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1599)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1587](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1587)
+[src/client_streams.scailo_pb.ts:1587](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1587)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1591](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1591)
+[src/client_streams.scailo_pb.ts:1591](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1591)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:1595](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L1595)
+[src/client_streams.scailo_pb.ts:1595](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L1595)

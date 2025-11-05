@@ -67,7 +67,7 @@ Message\&lt;SalesInvoiceItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1548](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1548)
+[src/sales_invoices.scailo_pb.ts:1548](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1548)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1546](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1546)
+[src/sales_invoices.scailo_pb.ts:1546](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1546)
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 sales_invoice_id = 10;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1539](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1539)
+[src/sales_invoices.scailo_pb.ts:1539](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1539)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1555](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1555)
+[src/sales_invoices.scailo_pb.ts:1555](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1555)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1553](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1553)
+[src/sales_invoices.scailo_pb.ts:1553](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1553)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1554](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1554)
+[src/sales_invoices.scailo_pb.ts:1554](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1554)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1572](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1572)
+[src/sales_invoices.scailo_pb.ts:1572](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1572)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1560](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1560)
+[src/sales_invoices.scailo_pb.ts:1560](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1560)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1564](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1564)
+[src/sales_invoices.scailo_pb.ts:1564](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1564)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:1568](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/sales_invoices.scailo_pb.ts#L1568)
+[src/sales_invoices.scailo_pb.ts:1568](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/sales_invoices.scailo_pb.ts#L1568)

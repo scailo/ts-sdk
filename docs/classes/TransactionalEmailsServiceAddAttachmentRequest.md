@@ -1,0 +1,483 @@
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / TransactionalEmailsServiceAddAttachmentRequest
+
+# Class: TransactionalEmailsServiceAddAttachmentRequest
+
+Describes the necessary data structure during addition of a recipient
+
+**`Generated`**
+
+from message Scailo.TransactionalEmailsServiceAddAttachmentRequest
+
+## Hierarchy
+
+- `Message`\<[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)\>
+
+  ↳ **`TransactionalEmailsServiceAddAttachmentRequest`**
+
+## Table of contents
+
+### Constructors
+
+- [constructor](TransactionalEmailsServiceAddAttachmentRequest.md#constructor)
+
+### Properties
+
+- [content](TransactionalEmailsServiceAddAttachmentRequest.md#content)
+- [name](TransactionalEmailsServiceAddAttachmentRequest.md#name)
+- [fields](TransactionalEmailsServiceAddAttachmentRequest.md#fields)
+- [runtime](TransactionalEmailsServiceAddAttachmentRequest.md#runtime)
+- [typeName](TransactionalEmailsServiceAddAttachmentRequest.md#typename)
+
+### Methods
+
+- [clone](TransactionalEmailsServiceAddAttachmentRequest.md#clone)
+- [equals](TransactionalEmailsServiceAddAttachmentRequest.md#equals)
+- [fromBinary](TransactionalEmailsServiceAddAttachmentRequest.md#frombinary)
+- [fromJson](TransactionalEmailsServiceAddAttachmentRequest.md#fromjson)
+- [fromJsonString](TransactionalEmailsServiceAddAttachmentRequest.md#fromjsonstring)
+- [getType](TransactionalEmailsServiceAddAttachmentRequest.md#gettype)
+- [toBinary](TransactionalEmailsServiceAddAttachmentRequest.md#tobinary)
+- [toJSON](TransactionalEmailsServiceAddAttachmentRequest.md#tojson)
+- [toJson](TransactionalEmailsServiceAddAttachmentRequest.md#tojson-1)
+- [toJsonString](TransactionalEmailsServiceAddAttachmentRequest.md#tojsonstring)
+- [equals](TransactionalEmailsServiceAddAttachmentRequest.md#equals-1)
+- [fromBinary](TransactionalEmailsServiceAddAttachmentRequest.md#frombinary-1)
+- [fromJson](TransactionalEmailsServiceAddAttachmentRequest.md#fromjson-1)
+- [fromJsonString](TransactionalEmailsServiceAddAttachmentRequest.md#fromjsonstring-1)
+
+## Constructors
+
+### constructor
+
+• **new TransactionalEmailsServiceAddAttachmentRequest**(`data?`): [`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data?` | `PartialMessage`\<[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)\> |
+
+#### Returns
+
+[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Overrides
+
+Message\&lt;TransactionalEmailsServiceAddAttachmentRequest\&gt;.constructor
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:968
+
+## Properties
+
+### content
+
+• **content**: `Uint8Array`
+
+Stores the content of the attachment
+
+**`Generated`**
+
+from field: bytes content = 11;
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:966
+
+___
+
+### name
+
+• **name**: `string` = `""`
+
+Stores the name of the attachment
+
+**`Generated`**
+
+from field: string name = 10;
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:959
+
+___
+
+### fields
+
+▪ `Static` `Readonly` **fields**: `FieldList`
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:975
+
+___
+
+### runtime
+
+▪ `Static` `Readonly` **runtime**: `ProtoRuntime` = `proto3`
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:973
+
+___
+
+### typeName
+
+▪ `Static` `Readonly` **typeName**: ``"Scailo.TransactionalEmailsServiceAddAttachmentRequest"``
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:974
+
+## Methods
+
+### clone
+
+▸ **clone**(): [`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+Create a deep copy.
+
+#### Returns
+
+[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Inherited from
+
+Message.clone
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:28
+
+___
+
+### equals
+
+▸ **equals**(`other`): `boolean`
+
+Compare with a message of the same type.
+Note that this function disregards extensions and unknown fields.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `other` | `undefined` \| ``null`` \| [`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md) \| `PlainMessage`\<[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)\> |
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+Message.equals
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:24
+
+___
+
+### fromBinary
+
+▸ **fromBinary**(`bytes`, `options?`): `this`
+
+Parse from binary data, merging fields.
+
+Repeated fields are appended. Map entries are added, overwriting
+existing keys.
+
+If a message field is already present, it will be merged with the
+new data.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bytes` | `Uint8Array` |
+| `options?` | `Partial`\<`BinaryReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromBinary
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:38
+
+___
+
+### fromJson
+
+▸ **fromJson**(`jsonValue`, `options?`): `this`
+
+Parse a message from a JSON value.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonValue` | `JsonValue` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromJson
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:42
+
+___
+
+### fromJsonString
+
+▸ **fromJsonString**(`jsonString`, `options?`): `this`
+
+Parse a message from a JSON string.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonString` | `string` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Message.fromJsonString
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:46
+
+___
+
+### getType
+
+▸ **getType**(): `MessageType`\<[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)\>
+
+Retrieve the MessageType of this message - a singleton that represents
+the protobuf message declaration and provides metadata for reflection-
+based operations.
+
+#### Returns
+
+`MessageType`\<[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)\>
+
+#### Inherited from
+
+Message.getType
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:81
+
+___
+
+### toBinary
+
+▸ **toBinary**(`options?`): `Uint8Array`
+
+Serialize the message to binary data.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`BinaryWriteOptions`\> |
+
+#### Returns
+
+`Uint8Array`
+
+#### Inherited from
+
+Message.toBinary
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:50
+
+___
+
+### toJSON
+
+▸ **toJSON**(): `JsonValue`
+
+Override for serialization behavior. This will be invoked when calling
+JSON.stringify on this message (i.e. JSON.stringify(msg)).
+
+Note that this will not serialize google.protobuf.Any with a packed
+message because the protobuf JSON format specifies that it needs to be
+unpacked, and this is only possible with a type registry to look up the
+message type.  As a result, attempting to serialize a message with this
+type will throw an Error.
+
+This method is protected because you should not need to invoke it
+directly -- instead use JSON.stringify or toJsonString for
+stringified JSON.  Alternatively, if actual JSON is desired, you should
+use toJson.
+
+#### Returns
+
+`JsonValue`
+
+#### Inherited from
+
+Message.toJSON
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:75
+
+___
+
+### toJson
+
+▸ **toJson**(`options?`): `JsonValue`
+
+Serialize the message to a JSON value, a JavaScript value that can be
+passed to JSON.stringify().
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`JsonWriteOptions`\> |
+
+#### Returns
+
+`JsonValue`
+
+#### Inherited from
+
+Message.toJson
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:55
+
+___
+
+### toJsonString
+
+▸ **toJsonString**(`options?`): `string`
+
+Serialize the message to a JSON string.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `options?` | `Partial`\<`JsonWriteStringOptions`\> |
+
+#### Returns
+
+`string`
+
+#### Inherited from
+
+Message.toJsonString
+
+#### Defined in
+
+node_modules/@bufbuild/protobuf/dist/cjs/message.d.ts:59
+
+___
+
+### equals
+
+▸ **equals**(`a`, `b`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `a` | `undefined` \| [`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md) \| `PlainMessage`\<[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)\> |
+| `b` | `undefined` \| [`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md) \| `PlainMessage`\<[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)\> |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:992
+
+___
+
+### fromBinary
+
+▸ **fromBinary**(`bytes`, `options?`): [`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bytes` | `Uint8Array` |
+| `options?` | `Partial`\<`BinaryReadOptions`\> |
+
+#### Returns
+
+[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:980
+
+___
+
+### fromJson
+
+▸ **fromJson**(`jsonValue`, `options?`): [`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonValue` | `JsonValue` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:984
+
+___
+
+### fromJsonString
+
+▸ **fromJsonString**(`jsonString`, `options?`): [`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonString` | `string` |
+| `options?` | `Partial`\<`JsonReadOptions`\> |
+
+#### Returns
+
+[`TransactionalEmailsServiceAddAttachmentRequest`](TransactionalEmailsServiceAddAttachmentRequest.md)
+
+#### Defined in
+
+src/transactional_emails.scailo_pb.ts:988

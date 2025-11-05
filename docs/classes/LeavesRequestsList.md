@@ -66,7 +66,7 @@ Message\&lt;LeavesRequestsList\&gt;.constructor
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:522](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L522)
+[src/leaves_requests.scailo_pb.ts:522](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L522)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.LeaveRequest list = 1;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L520)
+[src/leaves_requests.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L520)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:529](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L529)
+[src/leaves_requests.scailo_pb.ts:529](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L529)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:527](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L527)
+[src/leaves_requests.scailo_pb.ts:527](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L527)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:528](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L528)
+[src/leaves_requests.scailo_pb.ts:528](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L528)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:545](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L545)
+[src/leaves_requests.scailo_pb.ts:545](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L545)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:533](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L533)
+[src/leaves_requests.scailo_pb.ts:533](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L533)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:537](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L537)
+[src/leaves_requests.scailo_pb.ts:537](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L537)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:541](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/leaves_requests.scailo_pb.ts#L541)
+[src/leaves_requests.scailo_pb.ts:541](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/leaves_requests.scailo_pb.ts#L541)

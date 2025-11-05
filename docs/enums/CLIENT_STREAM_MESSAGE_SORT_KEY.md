@@ -30,7 +30,7 @@ from enum value: CLIENT_STREAM_MESSAGE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L249)
+[src/client_streams.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L249)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: CLIENT_STREAM_MESSAGE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:242](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L242)
+[src/client_streams.scailo_pb.ts:242](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L242)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: CLIENT_STREAM_MESSAGE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/client_streams.scailo_pb.ts#L256)
+[src/client_streams.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/client_streams.scailo_pb.ts#L256)

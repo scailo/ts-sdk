@@ -151,18 +151,25 @@ export class FormField extends Message<FormField> {
   definedValues: string[] = [];
 
   /**
-   * Stores if the form field is printable
+   * Denotes if the field is readonly (changes shall not be allowed to be made on the UI). Any changes will still be made through the API
    *
-   * @generated from field: bool printable = 18;
+   * @generated from field: bool is_readonly = 30;
    */
-  printable = false;
+  isReadonly = false;
 
   /**
-   * Stores the the form field needs to be highlighted
+   * Denotes if the field is hidden (field shall not be visible on the UI). The field shall be visible only through the API
    *
-   * @generated from field: bool highlightable = 19;
+   * @generated from field: bool is_hidden = 31;
    */
-  highlightable = false;
+  isHidden = false;
+
+  /**
+   * Denotes if the field is searchable (field shall not be visible on the UI in the filters view). The field will continue to be searchable through the API
+   *
+   * @generated from field: bool is_searchable = 32;
+   */
+  isSearchable = false;
 
   constructor(data?: PartialMessage<FormField>) {
     super();
@@ -183,8 +190,9 @@ export class FormField extends Message<FormField> {
     { no: 15, name: "placeholder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 16, name: "regex", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 17, name: "defined_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
-    { no: 18, name: "printable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 19, name: "highlightable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 30, name: "is_readonly", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 31, name: "is_hidden", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 32, name: "is_searchable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormField {
@@ -397,18 +405,25 @@ export class FormsFieldsServiceCreateRequest extends Message<FormsFieldsServiceC
   definedValues: string[] = [];
 
   /**
-   * Stores if the form field is printable
+   * Denotes if the field is readonly (changes shall not be allowed to be made on the UI). Any changes will still be made through the API
    *
-   * @generated from field: bool printable = 18;
+   * @generated from field: bool is_readonly = 30;
    */
-  printable = false;
+  isReadonly = false;
 
   /**
-   * Stores the the form field needs to be highlighted
+   * Denotes if the field is hidden (field shall not be visible on the UI). The field shall be visible only through the API
    *
-   * @generated from field: bool highlightable = 19;
+   * @generated from field: bool is_hidden = 31;
    */
-  highlightable = false;
+  isHidden = false;
+
+  /**
+   * Denotes if the field is searchable (field shall not be visible on the UI in the filters view). The field will continue to be searchable through the API
+   *
+   * @generated from field: bool is_searchable = 32;
+   */
+  isSearchable = false;
 
   constructor(data?: PartialMessage<FormsFieldsServiceCreateRequest>) {
     super();
@@ -429,8 +444,9 @@ export class FormsFieldsServiceCreateRequest extends Message<FormsFieldsServiceC
     { no: 15, name: "placeholder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 16, name: "regex", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 17, name: "defined_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
-    { no: 18, name: "printable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 19, name: "highlightable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 30, name: "is_readonly", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 31, name: "is_hidden", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 32, name: "is_searchable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsFieldsServiceCreateRequest {
@@ -521,18 +537,25 @@ export class FormsFieldsServiceUpdateRequest extends Message<FormsFieldsServiceU
   definedValues: string[] = [];
 
   /**
-   * Stores if the form field is printable
+   * Denotes if the field is readonly (changes shall not be allowed to be made on the UI). Any changes will still be made through the API
    *
-   * @generated from field: bool printable = 18;
+   * @generated from field: bool is_readonly = 30;
    */
-  printable = false;
+  isReadonly = false;
 
   /**
-   * Stores the the form field needs to be highlighted
+   * Denotes if the field is hidden (field shall not be visible on the UI). The field shall be visible only through the API
    *
-   * @generated from field: bool highlightable = 19;
+   * @generated from field: bool is_hidden = 31;
    */
-  highlightable = false;
+  isHidden = false;
+
+  /**
+   * Denotes if the field is searchable (field shall not be visible on the UI in the filters view). The field will continue to be searchable through the API
+   *
+   * @generated from field: bool is_searchable = 32;
+   */
+  isSearchable = false;
 
   constructor(data?: PartialMessage<FormsFieldsServiceUpdateRequest>) {
     super();
@@ -551,8 +574,9 @@ export class FormsFieldsServiceUpdateRequest extends Message<FormsFieldsServiceU
     { no: 15, name: "placeholder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 16, name: "regex", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 17, name: "defined_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
-    { no: 18, name: "printable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 19, name: "highlightable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 30, name: "is_readonly", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 31, name: "is_hidden", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 32, name: "is_searchable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsFieldsServiceUpdateRequest {

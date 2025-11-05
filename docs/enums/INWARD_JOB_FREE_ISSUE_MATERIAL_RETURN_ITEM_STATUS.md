@@ -30,7 +30,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_STATUS_ANY_UNSPECIFI
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L149)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L149)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L156)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L156)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_ITEM_STATUS_UNAPPROVED = 
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L163)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L163)

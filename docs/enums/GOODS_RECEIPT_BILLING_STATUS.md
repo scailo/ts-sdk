@@ -30,7 +30,7 @@ from enum value: GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goods_receipts.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/goods_receipts.scailo_pb.ts#L275)
+[src/goods_receipts.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/goods_receipts.scailo_pb.ts#L275)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GOODS_RECEIPT_BILLING_STATUS_BILLED = 1;
 
 #### Defined in
 
-[src/goods_receipts.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/goods_receipts.scailo_pb.ts#L282)
+[src/goods_receipts.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/goods_receipts.scailo_pb.ts#L282)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GOODS_RECEIPT_BILLING_STATUS_UNBILLED = 2;
 
 #### Defined in
 
-[src/goods_receipts.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/goods_receipts.scailo_pb.ts#L289)
+[src/goods_receipts.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/goods_receipts.scailo_pb.ts#L289)

@@ -119,17 +119,23 @@ export declare class FormField extends Message<FormField> {
      */
     definedValues: string[];
     /**
-     * Stores if the form field is printable
+     * Denotes if the field is readonly (changes shall not be allowed to be made on the UI). Any changes will still be made through the API
      *
-     * @generated from field: bool printable = 18;
+     * @generated from field: bool is_readonly = 30;
      */
-    printable: boolean;
+    isReadonly: boolean;
     /**
-     * Stores the the form field needs to be highlighted
+     * Denotes if the field is hidden (field shall not be visible on the UI). The field shall be visible only through the API
      *
-     * @generated from field: bool highlightable = 19;
+     * @generated from field: bool is_hidden = 31;
      */
-    highlightable: boolean;
+    isHidden: boolean;
+    /**
+     * Denotes if the field is searchable (field shall not be visible on the UI in the filters view). The field will continue to be searchable through the API
+     *
+     * @generated from field: bool is_searchable = 32;
+     */
+    isSearchable: boolean;
     constructor(data?: PartialMessage<FormField>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormField";
@@ -275,17 +281,23 @@ export declare class FormsFieldsServiceCreateRequest extends Message<FormsFields
      */
     definedValues: string[];
     /**
-     * Stores if the form field is printable
+     * Denotes if the field is readonly (changes shall not be allowed to be made on the UI). Any changes will still be made through the API
      *
-     * @generated from field: bool printable = 18;
+     * @generated from field: bool is_readonly = 30;
      */
-    printable: boolean;
+    isReadonly: boolean;
     /**
-     * Stores the the form field needs to be highlighted
+     * Denotes if the field is hidden (field shall not be visible on the UI). The field shall be visible only through the API
      *
-     * @generated from field: bool highlightable = 19;
+     * @generated from field: bool is_hidden = 31;
      */
-    highlightable: boolean;
+    isHidden: boolean;
+    /**
+     * Denotes if the field is searchable (field shall not be visible on the UI in the filters view). The field will continue to be searchable through the API
+     *
+     * @generated from field: bool is_searchable = 32;
+     */
+    isSearchable: boolean;
     constructor(data?: PartialMessage<FormsFieldsServiceCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsFieldsServiceCreateRequest";
@@ -357,17 +369,23 @@ export declare class FormsFieldsServiceUpdateRequest extends Message<FormsFields
      */
     definedValues: string[];
     /**
-     * Stores if the form field is printable
+     * Denotes if the field is readonly (changes shall not be allowed to be made on the UI). Any changes will still be made through the API
      *
-     * @generated from field: bool printable = 18;
+     * @generated from field: bool is_readonly = 30;
      */
-    printable: boolean;
+    isReadonly: boolean;
     /**
-     * Stores the the form field needs to be highlighted
+     * Denotes if the field is hidden (field shall not be visible on the UI). The field shall be visible only through the API
      *
-     * @generated from field: bool highlightable = 19;
+     * @generated from field: bool is_hidden = 31;
      */
-    highlightable: boolean;
+    isHidden: boolean;
+    /**
+     * Denotes if the field is searchable (field shall not be visible on the UI in the filters view). The field will continue to be searchable through the API
+     *
+     * @generated from field: bool is_searchable = 32;
+     */
+    isSearchable: boolean;
     constructor(data?: PartialMessage<FormsFieldsServiceUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsFieldsServiceUpdateRequest";

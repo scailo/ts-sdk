@@ -31,7 +31,7 @@ from enum value: MAGIC_LINK_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:464](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/magic_links.scailo_pb.ts#L464)
+[src/magic_links.scailo_pb.ts:464](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/magic_links.scailo_pb.ts#L464)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: MAGIC_LINK_SORT_KEY_EXPIRES_AT = 10;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:478](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/magic_links.scailo_pb.ts#L478)
+[src/magic_links.scailo_pb.ts:478](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/magic_links.scailo_pb.ts#L478)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: MAGIC_LINK_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:457](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/magic_links.scailo_pb.ts#L457)
+[src/magic_links.scailo_pb.ts:457](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/magic_links.scailo_pb.ts#L457)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: MAGIC_LINK_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:471](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/magic_links.scailo_pb.ts#L471)
+[src/magic_links.scailo_pb.ts:471](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/magic_links.scailo_pb.ts#L471)

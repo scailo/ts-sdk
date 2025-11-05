@@ -30,7 +30,7 @@ from enum value: WORKFLOW_RULE_EXECUTE_ON_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:692](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/workflows_rules.scailo_pb.ts#L692)
+[src/workflows_rules.scailo_pb.ts:692](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/workflows_rules.scailo_pb.ts#L692)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: WORKFLOW_RULE_EXECUTE_ON_FAILURE = 2;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:706](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/workflows_rules.scailo_pb.ts#L706)
+[src/workflows_rules.scailo_pb.ts:706](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/workflows_rules.scailo_pb.ts#L706)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: WORKFLOW_RULE_EXECUTE_ON_SUCCESS = 1;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:699](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/workflows_rules.scailo_pb.ts#L699)
+[src/workflows_rules.scailo_pb.ts:699](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/workflows_rules.scailo_pb.ts#L699)

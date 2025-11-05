@@ -38,7 +38,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1163](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1163)
+[src/base.scailo_pb.ts:1163](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1163)
 
 ___
 
@@ -54,7 +54,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_EQUATION_WORK_ORDER = 100;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1233](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1233)
+[src/base.scailo_pb.ts:1233](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1233)
 
 ___
 
@@ -70,7 +70,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_FAMILY = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1170](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1170)
+[src/base.scailo_pb.ts:1170](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1170)
 
 ___
 
@@ -86,7 +86,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_PROFORMA_INVOICE = 7;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1219](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1219)
+[src/base.scailo_pb.ts:1219](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1219)
 
 ___
 
@@ -102,7 +102,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_PURCHASE_ORDER = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1177](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1177)
+[src/base.scailo_pb.ts:1177](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1177)
 
 ___
 
@@ -118,7 +118,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_ENQUIRY = 4;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1198](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1198)
+[src/base.scailo_pb.ts:1198](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1198)
 
 ___
 
@@ -134,7 +134,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_INVOICE = 6;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1212](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1212)
+[src/base.scailo_pb.ts:1212](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1212)
 
 ___
 
@@ -150,7 +150,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_ORDER = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1191](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1191)
+[src/base.scailo_pb.ts:1191](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1191)
 
 ___
 
@@ -166,7 +166,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SALES_QUOTATION = 5;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1205](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1205)
+[src/base.scailo_pb.ts:1205](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1205)
 
 ___
 
@@ -182,7 +182,7 @@ from enum value: AMENDMENT_LOG_REF_FOR_SUPPLY_OFFER = 21;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1184](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1184)
+[src/base.scailo_pb.ts:1184](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1184)
 
 ___
 
@@ -198,4 +198,4 @@ from enum value: AMENDMENT_LOG_REF_FOR_WORK_ORDER = 50;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1226](https://github.com/scailo/ts-sdk/blob/04b9fca300bb4ea3516fb0d115fa871bd87243c7/src/base.scailo_pb.ts#L1226)
+[src/base.scailo_pb.ts:1226](https://github.com/scailo/ts-sdk/blob/62540460d609653a220c71fad1825b3c192850c1/src/base.scailo_pb.ts#L1226)
