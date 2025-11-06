@@ -40,7 +40,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L177)
+[src/sales_invoices.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L177)
 
 ___
 
@@ -56,7 +56,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L170)
+[src/sales_invoices.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L170)
 
 ___
 
@@ -72,7 +72,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L184)
+[src/sales_invoices.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L184)
 
 ___
 
@@ -88,7 +88,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L219)
+[src/sales_invoices.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L219)
 
 ___
 
@@ -104,7 +104,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L212)
+[src/sales_invoices.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L212)
 
 ___
 
@@ -120,7 +120,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L205)
+[src/sales_invoices.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L205)
 
 ___
 
@@ -136,7 +136,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L156)
+[src/sales_invoices.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L156)
 
 ___
 
@@ -152,7 +152,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L191)
+[src/sales_invoices.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L191)
 
 ___
 
@@ -168,7 +168,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L149)
+[src/sales_invoices.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L149)
 
 ___
 
@@ -184,7 +184,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L198)
+[src/sales_invoices.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L198)
 
 ___
 
@@ -200,7 +200,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L163)
+[src/sales_invoices.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L163)
 
 ___
 
@@ -216,7 +216,7 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L233)
+[src/sales_invoices.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L233)
 
 ___
 
@@ -232,4 +232,4 @@ from enum value: SALES_INVOICE_ITEM_SORT_KEY_UNIT_PRICE = 15;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/sales_invoices.scailo_pb.ts#L226)
+[src/sales_invoices.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/sales_invoices.scailo_pb.ts#L226)

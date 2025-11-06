@@ -66,7 +66,7 @@ Message\&lt;VisitationsList\&gt;.constructor
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L690)
+[src/visitations.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L690)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Visitation list = 1;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:688](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L688)
+[src/visitations.scailo_pb.ts:688](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L688)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L697)
+[src/visitations.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L697)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:695](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L695)
+[src/visitations.scailo_pb.ts:695](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L695)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:696](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L696)
+[src/visitations.scailo_pb.ts:696](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L696)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:713](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L713)
+[src/visitations.scailo_pb.ts:713](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L713)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L701)
+[src/visitations.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L701)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L705)
+[src/visitations.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L705)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:709](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/visitations.scailo_pb.ts#L709)
+[src/visitations.scailo_pb.ts:709](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/visitations.scailo_pb.ts#L709)

@@ -30,7 +30,7 @@ from enum value: OUTWARD_JOB_OUTWARD_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:323](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/outward_jobs.scailo_pb.ts#L323)
+[src/outward_jobs.scailo_pb.ts:323](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/outward_jobs.scailo_pb.ts#L323)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: OUTWARD_JOB_OUTWARD_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/outward_jobs.scailo_pb.ts#L330)
+[src/outward_jobs.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/outward_jobs.scailo_pb.ts#L330)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: OUTWARD_JOB_OUTWARD_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/outward_jobs.scailo_pb.ts#L337)
+[src/outward_jobs.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/outward_jobs.scailo_pb.ts#L337)

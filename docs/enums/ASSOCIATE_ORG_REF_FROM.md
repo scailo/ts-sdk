@@ -31,7 +31,7 @@ from enum value: ASSOCIATE_ORG_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/associates.scailo_pb.ts#L22)
+[src/associates.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/associates.scailo_pb.ts#L22)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: ASSOCIATE_ORG_REF_FROM_CLIENT = 2;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/associates.scailo_pb.ts#L36)
+[src/associates.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/associates.scailo_pb.ts#L36)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: ASSOCIATE_ORG_REF_FROM_EMPTY = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/associates.scailo_pb.ts#L29)
+[src/associates.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/associates.scailo_pb.ts#L29)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: ASSOCIATE_ORG_REF_FROM_VENDOR = 3;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/27275fe37bc1d73ce3118f67fbe6f9695341a7f1/src/associates.scailo_pb.ts#L43)
+[src/associates.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/associates.scailo_pb.ts#L43)
