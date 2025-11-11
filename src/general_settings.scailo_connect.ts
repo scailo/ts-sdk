@@ -3,13 +3,13 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { GeneralSettings, GeneralSettingsUpdateRequest } from "./general_settings.scailo_pb.js";
-import { Empty, IdentifierResponse, ImageResponse, StandardFile } from "./base.scailo_pb.js";
+import { GeneralSettings, GeneralSettingsServiceCreateRequest } from "./general_settings.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { Empty, IdentifierResponse, IdentifierUUIDsList, ImageResponse, StandardFile } from "./base.scailo_pb.js";
 
 /**
  *
- * Describes the common methods applicable on general settings
+ * Describes the methods applicable on each general settings
  *
  * @generated from service Scailo.GeneralSettingsService
  */
@@ -17,24 +17,13 @@ export const GeneralSettingsService = {
   typeName: "Scailo.GeneralSettingsService",
   methods: {
     /**
-     * Update General Settings
+     * Create a general settings
      *
-     * @generated from rpc Scailo.GeneralSettingsService.UpdateSettings
+     * @generated from rpc Scailo.GeneralSettingsService.Create
      */
-    updateSettings: {
-      name: "UpdateSettings",
-      I: GeneralSettingsUpdateRequest,
-      O: IdentifierResponse,
-      kind: MethodKind.Unary,
-    },
-    /**
-     * View the current settings
-     *
-     * @generated from rpc Scailo.GeneralSettingsService.ViewSettings
-     */
-    viewSettings: {
-      name: "ViewSettings",
-      I: Empty,
+    create: {
+      name: "Create",
+      I: GeneralSettingsServiceCreateRequest,
       O: GeneralSettings,
       kind: MethodKind.Unary,
     },
@@ -58,6 +47,42 @@ export const GeneralSettingsService = {
       name: "ViewOrganizationLogo",
       I: Empty,
       O: ImageResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * ------------------------------------------------------
+     * All view operations are listed below
+     * View the current settings
+     *
+     * @generated from rpc Scailo.GeneralSettingsService.ViewSettings
+     */
+    viewSettings: {
+      name: "ViewSettings",
+      I: Empty,
+      O: GeneralSettings,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV template that could be used to upload records
+     *
+     * @generated from rpc Scailo.GeneralSettingsService.DownloadImportTemplate
+     */
+    downloadImportTemplate: {
+      name: "DownloadImportTemplate",
+      I: Empty,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Import records using a CSV file
+     *
+     * @generated from rpc Scailo.GeneralSettingsService.ImportFromCSV
+     */
+    importFromCSV: {
+      name: "ImportFromCSV",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }

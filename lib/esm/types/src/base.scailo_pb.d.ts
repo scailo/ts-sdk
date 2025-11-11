@@ -448,7 +448,13 @@ export declare enum FORM_TYPE {
      *
      * @generated from enum value: FORM_TYPE_INFRASTRUCTURE_FORM = 750;
      */
-    FORM_TYPE_INFRASTRUCTURE_FORM = 750
+    FORM_TYPE_INFRASTRUCTURE_FORM = 750,
+    /**
+     * The form type is "general-settings-form"
+     *
+     * @generated from enum value: FORM_TYPE_GENERAL_SETTINGS_FORM = 800;
+     */
+    FORM_TYPE_GENERAL_SETTINGS_FORM = 800
 }
 /**
  *

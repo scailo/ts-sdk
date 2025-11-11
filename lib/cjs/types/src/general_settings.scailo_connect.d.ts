@@ -1,9 +1,9 @@
-import { GeneralSettings, GeneralSettingsUpdateRequest } from "./general_settings.scailo_pb.js";
-import { Empty, IdentifierResponse, ImageResponse, StandardFile } from "./base.scailo_pb.js";
+import { GeneralSettings, GeneralSettingsServiceCreateRequest } from "./general_settings.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { Empty, IdentifierResponse, IdentifierUUIDsList, ImageResponse, StandardFile } from "./base.scailo_pb.js";
 /**
  *
- * Describes the common methods applicable on general settings
+ * Describes the methods applicable on each general settings
  *
  * @generated from service Scailo.GeneralSettingsService
  */
@@ -11,24 +11,13 @@ export declare const GeneralSettingsService: {
     readonly typeName: "Scailo.GeneralSettingsService";
     readonly methods: {
         /**
-         * Update General Settings
+         * Create a general settings
          *
-         * @generated from rpc Scailo.GeneralSettingsService.UpdateSettings
+         * @generated from rpc Scailo.GeneralSettingsService.Create
          */
-        readonly updateSettings: {
-            readonly name: "UpdateSettings";
-            readonly I: typeof GeneralSettingsUpdateRequest;
-            readonly O: typeof IdentifierResponse;
-            readonly kind: MethodKind.Unary;
-        };
-        /**
-         * View the current settings
-         *
-         * @generated from rpc Scailo.GeneralSettingsService.ViewSettings
-         */
-        readonly viewSettings: {
-            readonly name: "ViewSettings";
-            readonly I: typeof Empty;
+        readonly create: {
+            readonly name: "Create";
+            readonly I: typeof GeneralSettingsServiceCreateRequest;
             readonly O: typeof GeneralSettings;
             readonly kind: MethodKind.Unary;
         };
@@ -52,6 +41,42 @@ export declare const GeneralSettingsService: {
             readonly name: "ViewOrganizationLogo";
             readonly I: typeof Empty;
             readonly O: typeof ImageResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * ------------------------------------------------------
+         * All view operations are listed below
+         * View the current settings
+         *
+         * @generated from rpc Scailo.GeneralSettingsService.ViewSettings
+         */
+        readonly viewSettings: {
+            readonly name: "ViewSettings";
+            readonly I: typeof Empty;
+            readonly O: typeof GeneralSettings;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV template that could be used to upload records
+         *
+         * @generated from rpc Scailo.GeneralSettingsService.DownloadImportTemplate
+         */
+        readonly downloadImportTemplate: {
+            readonly name: "DownloadImportTemplate";
+            readonly I: typeof Empty;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Import records using a CSV file
+         *
+         * @generated from rpc Scailo.GeneralSettingsService.ImportFromCSV
+         */
+        readonly importFromCSV: {
+            readonly name: "ImportFromCSV";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };

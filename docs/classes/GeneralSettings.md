@@ -2,7 +2,7 @@
 
 # Class: GeneralSettings
 
-Describes the available general settings
+Describes the data structure of general settings on the platform
 
 **`Generated`**
 
@@ -34,6 +34,7 @@ from message Scailo.GeneralSettings
 - [email](GeneralSettings.md#email)
 - [entityUuid](GeneralSettings.md#entityuuid)
 - [expenseSenderEmail](GeneralSettings.md#expensesenderemail)
+- [formData](GeneralSettings.md#formdata)
 - [gstin](GeneralSettings.md#gstin)
 - [licensedTo](GeneralSettings.md#licensedto)
 - [metadata](GeneralSettings.md#metadata)
@@ -92,7 +93,7 @@ Message\&lt;GeneralSettings\&gt;.constructor
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L440)
+[src/general_settings.scailo_pb.ts:214](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L214)
 
 ## Properties
 
@@ -108,7 +109,7 @@ from field: string address = 13;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:291](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L291)
+[src/general_settings.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L58)
 
 ___
 
@@ -124,7 +125,7 @@ from field: string authless_access_domain = 41;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:354](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L354)
+[src/general_settings.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L121)
 
 ___
 
@@ -140,7 +141,7 @@ from field: bool auto_req_verify_on_exit_record_entry = 72;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:431](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L431)
+[src/general_settings.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L198)
 
 ___
 
@@ -156,7 +157,7 @@ from field: string cin = 18;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L326)
+[src/general_settings.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L93)
 
 ___
 
@@ -172,7 +173,7 @@ from field: string city = 14;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:298](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L298)
+[src/general_settings.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L65)
 
 ___
 
@@ -188,7 +189,7 @@ from field: string company_name = 10;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:270](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L270)
+[src/general_settings.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L37)
 
 ___
 
@@ -204,7 +205,7 @@ from field: string country = 17;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:319](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L319)
+[src/general_settings.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L86)
 
 ___
 
@@ -220,7 +221,7 @@ from field: bool disable_vi_creation_with_bill_date_after_po_approval = 70;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L417)
+[src/general_settings.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L184)
 
 ___
 
@@ -236,7 +237,7 @@ from field: string domain_name = 40;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:347](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L347)
+[src/general_settings.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L114)
 
 ___
 
@@ -252,7 +253,7 @@ from field: string email = 12;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:284](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L284)
+[src/general_settings.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L51)
 
 ___
 
@@ -268,7 +269,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L256)
+[src/general_settings.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L23)
 
 ___
 
@@ -284,7 +285,23 @@ from field: string expense_sender_email = 57;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L410)
+[src/general_settings.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L177)
+
+___
+
+### formData
+
+• **formData**: [`FormFieldDatum`](FormFieldDatum.md)[] = `[]`
+
+The list of dynamic forms
+
+**`Generated`**
+
+from field: repeated Scailo.FormFieldDatum form_data = 200;
+
+#### Defined in
+
+[src/general_settings.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L212)
 
 ___
 
@@ -300,7 +317,7 @@ from field: string gstin = 20;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:340](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L340)
+[src/general_settings.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L107)
 
 ___
 
@@ -316,7 +333,7 @@ from field: string licensed_to = 100;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:438](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L438)
+[src/general_settings.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L205)
 
 ___
 
@@ -332,7 +349,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:263](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L263)
+[src/general_settings.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L30)
 
 ___
 
@@ -348,7 +365,7 @@ from field: string pan = 19;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:333](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L333)
+[src/general_settings.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L100)
 
 ___
 
@@ -364,7 +381,7 @@ from field: string phone = 11;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:277](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L277)
+[src/general_settings.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L44)
 
 ___
 
@@ -380,7 +397,7 @@ from field: string pin_code = 16;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:312](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L312)
+[src/general_settings.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L79)
 
 ___
 
@@ -396,7 +413,7 @@ from field: string purchase_order_sender_email = 50;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:361](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L361)
+[src/general_settings.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L128)
 
 ___
 
@@ -412,7 +429,7 @@ from field: bool require_mfa_for_record_approval = 71;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L424)
+[src/general_settings.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L191)
 
 ___
 
@@ -428,7 +445,7 @@ from field: string sales_enquiry_sender_email = 51;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:368](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L368)
+[src/general_settings.scailo_pb.ts:135](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L135)
 
 ___
 
@@ -444,7 +461,7 @@ from field: string sales_invoice_sender_email = 53;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:382](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L382)
+[src/general_settings.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L149)
 
 ___
 
@@ -460,7 +477,7 @@ from field: string sales_order_sender_email = 52;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L375)
+[src/general_settings.scailo_pb.ts:142](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L142)
 
 ___
 
@@ -476,7 +493,7 @@ from field: string sales_quotation_sender_email = 54;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:389](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L389)
+[src/general_settings.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L156)
 
 ___
 
@@ -492,7 +509,7 @@ from field: string state = 15;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:305](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L305)
+[src/general_settings.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L72)
 
 ___
 
@@ -508,7 +525,7 @@ from field: string vendor_invoice_sender_email = 55;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:396](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L396)
+[src/general_settings.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L163)
 
 ___
 
@@ -524,7 +541,7 @@ from field: string work_order_sender_email = 56;
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L403)
+[src/general_settings.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L170)
 
 ___
 
@@ -534,7 +551,7 @@ ___
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:447](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L447)
+[src/general_settings.scailo_pb.ts:221](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L221)
 
 ___
 
@@ -544,7 +561,7 @@ ___
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:445](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L445)
+[src/general_settings.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L219)
 
 ___
 
@@ -554,7 +571,7 @@ ___
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:446](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L446)
+[src/general_settings.scailo_pb.ts:220](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L220)
 
 ## Methods
 
@@ -842,7 +859,7 @@ ___
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:489](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L489)
+[src/general_settings.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L264)
 
 ___
 
@@ -863,7 +880,7 @@ ___
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:477](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L477)
+[src/general_settings.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L252)
 
 ___
 
@@ -884,7 +901,7 @@ ___
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:481](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L481)
+[src/general_settings.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L256)
 
 ___
 
@@ -905,4 +922,4 @@ ___
 
 #### Defined in
 
-[src/general_settings.scailo_pb.ts:485](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/general_settings.scailo_pb.ts#L485)
+[src/general_settings.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_settings.scailo_pb.ts#L260)

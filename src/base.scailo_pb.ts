@@ -542,6 +542,13 @@ export enum FORM_TYPE {
    * @generated from enum value: FORM_TYPE_INFRASTRUCTURE_FORM = 750;
    */
   FORM_TYPE_INFRASTRUCTURE_FORM = 750,
+
+  /**
+   * The form type is "general-settings-form"
+   *
+   * @generated from enum value: FORM_TYPE_GENERAL_SETTINGS_FORM = 800;
+   */
+  FORM_TYPE_GENERAL_SETTINGS_FORM = 800,
 }
 // Retrieve enum metadata with: proto3.getEnumType(FORM_TYPE)
 proto3.util.setEnumType(FORM_TYPE, "Scailo.FORM_TYPE", [
@@ -605,6 +612,7 @@ proto3.util.setEnumType(FORM_TYPE, "Scailo.FORM_TYPE", [
   { no: 730, name: "FORM_TYPE_MERCHANDISE_FORM" },
   { no: 740, name: "FORM_TYPE_EQUIPMENT_FORM" },
   { no: 750, name: "FORM_TYPE_INFRASTRUCTURE_FORM" },
+  { no: 800, name: "FORM_TYPE_GENERAL_SETTINGS_FORM" },
 ]);
 
 /**

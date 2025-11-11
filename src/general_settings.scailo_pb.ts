@@ -6,244 +6,11 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
 import { EmployeeMetadata } from "./base.scailo_pb.js";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data.scailo_pb.js";
 
 /**
  *
- * Describes the parameters necessary to update the general settings for the organization
- *
- * @generated from message Scailo.GeneralSettingsUpdateRequest
- */
-export class GeneralSettingsUpdateRequest extends Message<GeneralSettingsUpdateRequest> {
-  /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
-   *
-   * @generated from field: string entity_uuid = 1;
-   */
-  entityUuid = "";
-
-  /**
-   * The name of the organization
-   *
-   * @generated from field: string company_name = 10;
-   */
-  companyName = "";
-
-  /**
-   * The phone number of the organization
-   *
-   * @generated from field: string phone = 11;
-   */
-  phone = "";
-
-  /**
-   * The email of the organization
-   *
-   * @generated from field: string email = 12;
-   */
-  email = "";
-
-  /**
-   * The address of the organization
-   *
-   * @generated from field: string address = 13;
-   */
-  address = "";
-
-  /**
-   * The city of the organization
-   *
-   * @generated from field: string city = 14;
-   */
-  city = "";
-
-  /**
-   * The state of the organization
-   *
-   * @generated from field: string state = 15;
-   */
-  state = "";
-
-  /**
-   * The pin code of the organization
-   *
-   * @generated from field: string pin_code = 16;
-   */
-  pinCode = "";
-
-  /**
-   * The country of the organization
-   *
-   * @generated from field: string country = 17;
-   */
-  country = "";
-
-  /**
-   * The Company Identification Number
-   *
-   * @generated from field: string cin = 18;
-   */
-  cin = "";
-
-  /**
-   * The PAN number of the organization
-   *
-   * @generated from field: string pan = 19;
-   */
-  pan = "";
-
-  /**
-   * The GSTIN of the organization
-   *
-   * @generated from field: string gstin = 20;
-   */
-  gstin = "";
-
-  /**
-   * The name of the domain under which this application is run
-   *
-   * @generated from field: string domain_name = 40;
-   */
-  domainName = "";
-
-  /**
-   * The name of the domain using which users can access records without logging in
-   *
-   * @generated from field: string authless_access_domain = 41;
-   */
-  authlessAccessDomain = "";
-
-  /**
-   * The email address from which purchase orders will be sent
-   *
-   * @generated from field: string purchase_order_sender_email = 50;
-   */
-  purchaseOrderSenderEmail = "";
-
-  /**
-   * The email address from which sales enquiries will be sent
-   *
-   * @generated from field: string sales_enquiry_sender_email = 51;
-   */
-  salesEnquirySenderEmail = "";
-
-  /**
-   * The email address from which sales orders will be sent
-   *
-   * @generated from field: string sales_order_sender_email = 52;
-   */
-  salesOrderSenderEmail = "";
-
-  /**
-   * The email address from which sales invoices will be sent
-   *
-   * @generated from field: string sales_invoice_sender_email = 53;
-   */
-  salesInvoiceSenderEmail = "";
-
-  /**
-   * The email address from which sales quotations will be sent
-   *
-   * @generated from field: string sales_quotation_sender_email = 54;
-   */
-  salesQuotationSenderEmail = "";
-
-  /**
-   * The email address from which vendor invoices will be sent
-   *
-   * @generated from field: string vendor_invoice_sender_email = 55;
-   */
-  vendorInvoiceSenderEmail = "";
-
-  /**
-   * The email address from which work orders will be sent
-   *
-   * @generated from field: string work_order_sender_email = 56;
-   */
-  workOrderSenderEmail = "";
-
-  /**
-   * The email address from which expenses will be sent
-   *
-   * @generated from field: string expense_sender_email = 57;
-   */
-  expenseSenderEmail = "";
-
-  /**
-   * Stores if vendor invoices should not be created with bill date that is after the approval of a purchase order
-   *
-   * @generated from field: bool disable_vi_creation_with_bill_date_after_po_approval = 70;
-   */
-  disableViCreationWithBillDateAfterPoApproval = false;
-
-  /**
-   * Stores if MFA is required for record approval
-   *
-   * @generated from field: bool require_mfa_for_record_approval = 71;
-   */
-  requireMfaForRecordApproval = false;
-
-  /**
-   * Stores if attendances should be automatically sent for verification on exit record
-   *
-   * @generated from field: bool auto_req_verify_on_exit_record_entry = 72;
-   */
-  autoReqVerifyOnExitRecordEntry = false;
-
-  constructor(data?: PartialMessage<GeneralSettingsUpdateRequest>) {
-    super();
-    proto3.util.initPartial(data, this);
-  }
-
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "Scailo.GeneralSettingsUpdateRequest";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "company_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "city", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 15, name: "state", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 16, name: "pin_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 17, name: "country", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 18, name: "cin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 19, name: "pan", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 20, name: "gstin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 40, name: "domain_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 41, name: "authless_access_domain", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 50, name: "purchase_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 51, name: "sales_enquiry_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 52, name: "sales_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 53, name: "sales_invoice_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 54, name: "sales_quotation_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 55, name: "vendor_invoice_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 56, name: "work_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 57, name: "expense_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 70, name: "disable_vi_creation_with_bill_date_after_po_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 71, name: "require_mfa_for_record_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 72, name: "auto_req_verify_on_exit_record_entry", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-  ]);
-
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GeneralSettingsUpdateRequest {
-    return new GeneralSettingsUpdateRequest().fromBinary(bytes, options);
-  }
-
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GeneralSettingsUpdateRequest {
-    return new GeneralSettingsUpdateRequest().fromJson(jsonValue, options);
-  }
-
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GeneralSettingsUpdateRequest {
-    return new GeneralSettingsUpdateRequest().fromJsonString(jsonString, options);
-  }
-
-  static equals(a: GeneralSettingsUpdateRequest | PlainMessage<GeneralSettingsUpdateRequest> | undefined, b: GeneralSettingsUpdateRequest | PlainMessage<GeneralSettingsUpdateRequest> | undefined): boolean {
-    return proto3.util.equals(GeneralSettingsUpdateRequest, a, b);
-  }
-}
-
-/**
- *
- * Describes the available general settings
+ * Describes the data structure of general settings on the platform
  *
  * @generated from message Scailo.GeneralSettings
  */
@@ -437,6 +204,13 @@ export class GeneralSettings extends Message<GeneralSettings> {
    */
   licensedTo = "";
 
+  /**
+   * The list of dynamic forms
+   *
+   * @generated from field: repeated Scailo.FormFieldDatum form_data = 200;
+   */
+  formData: FormFieldDatum[] = [];
+
   constructor(data?: PartialMessage<GeneralSettings>) {
     super();
     proto3.util.initPartial(data, this);
@@ -472,6 +246,7 @@ export class GeneralSettings extends Message<GeneralSettings> {
     { no: 71, name: "require_mfa_for_record_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 72, name: "auto_req_verify_on_exit_record_entry", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 100, name: "licensed_to", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 200, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GeneralSettings {
@@ -488,6 +263,248 @@ export class GeneralSettings extends Message<GeneralSettings> {
 
   static equals(a: GeneralSettings | PlainMessage<GeneralSettings> | undefined, b: GeneralSettings | PlainMessage<GeneralSettings> | undefined): boolean {
     return proto3.util.equals(GeneralSettings, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the necessary data structure during creation of a general settings
+ *
+ * @generated from message Scailo.GeneralSettingsServiceCreateRequest
+ */
+export class GeneralSettingsServiceCreateRequest extends Message<GeneralSettingsServiceCreateRequest> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * The name of the organization
+   *
+   * @generated from field: string company_name = 10;
+   */
+  companyName = "";
+
+  /**
+   * The phone number of the organization
+   *
+   * @generated from field: string phone = 11;
+   */
+  phone = "";
+
+  /**
+   * The email of the organization
+   *
+   * @generated from field: string email = 12;
+   */
+  email = "";
+
+  /**
+   * The address of the organization
+   *
+   * @generated from field: string address = 13;
+   */
+  address = "";
+
+  /**
+   * The city of the organization
+   *
+   * @generated from field: string city = 14;
+   */
+  city = "";
+
+  /**
+   * The state of the organization
+   *
+   * @generated from field: string state = 15;
+   */
+  state = "";
+
+  /**
+   * The pin code of the organization
+   *
+   * @generated from field: string pin_code = 16;
+   */
+  pinCode = "";
+
+  /**
+   * The country of the organization
+   *
+   * @generated from field: string country = 17;
+   */
+  country = "";
+
+  /**
+   * The Company Identification Number
+   *
+   * @generated from field: string cin = 18;
+   */
+  cin = "";
+
+  /**
+   * The PAN number of the organization
+   *
+   * @generated from field: string pan = 19;
+   */
+  pan = "";
+
+  /**
+   * The GSTIN of the organization
+   *
+   * @generated from field: string gstin = 20;
+   */
+  gstin = "";
+
+  /**
+   * The name of the domain under which this application is run
+   *
+   * @generated from field: string domain_name = 40;
+   */
+  domainName = "";
+
+  /**
+   * The name of the domain using which users can access records without logging in
+   *
+   * @generated from field: string authless_access_domain = 41;
+   */
+  authlessAccessDomain = "";
+
+  /**
+   * The email address from which purchase orders will be sent
+   *
+   * @generated from field: string purchase_order_sender_email = 50;
+   */
+  purchaseOrderSenderEmail = "";
+
+  /**
+   * The email address from which sales enquiries will be sent
+   *
+   * @generated from field: string sales_enquiry_sender_email = 51;
+   */
+  salesEnquirySenderEmail = "";
+
+  /**
+   * The email address from which sales orders will be sent
+   *
+   * @generated from field: string sales_order_sender_email = 52;
+   */
+  salesOrderSenderEmail = "";
+
+  /**
+   * The email address from which sales invoices will be sent
+   *
+   * @generated from field: string sales_invoice_sender_email = 53;
+   */
+  salesInvoiceSenderEmail = "";
+
+  /**
+   * The email address from which sales quotations will be sent
+   *
+   * @generated from field: string sales_quotation_sender_email = 54;
+   */
+  salesQuotationSenderEmail = "";
+
+  /**
+   * The email address from which vendor invoices will be sent
+   *
+   * @generated from field: string vendor_invoice_sender_email = 55;
+   */
+  vendorInvoiceSenderEmail = "";
+
+  /**
+   * The email address from which work orders will be sent
+   *
+   * @generated from field: string work_order_sender_email = 56;
+   */
+  workOrderSenderEmail = "";
+
+  /**
+   * The email address from which expenses will be sent
+   *
+   * @generated from field: string expense_sender_email = 57;
+   */
+  expenseSenderEmail = "";
+
+  /**
+   * Stores if vendor invoices should not be created with bill date that is after the approval of a purchase order
+   *
+   * @generated from field: bool disable_vi_creation_with_bill_date_after_po_approval = 70;
+   */
+  disableViCreationWithBillDateAfterPoApproval = false;
+
+  /**
+   * Stores if MFA is required for record approval
+   *
+   * @generated from field: bool require_mfa_for_record_approval = 71;
+   */
+  requireMfaForRecordApproval = false;
+
+  /**
+   * Stores if attendances should be automatically sent for verification on exit record
+   *
+   * @generated from field: bool auto_req_verify_on_exit_record_entry = 72;
+   */
+  autoReqVerifyOnExitRecordEntry = false;
+
+  /**
+   * The list of dynamic forms
+   *
+   * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 200;
+   */
+  formData: FormFieldDatumCreateRequest[] = [];
+
+  constructor(data?: PartialMessage<GeneralSettingsServiceCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.GeneralSettingsServiceCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "company_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "city", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "state", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "pin_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "country", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "cin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 19, name: "pan", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "gstin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 40, name: "domain_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 41, name: "authless_access_domain", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 50, name: "purchase_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 51, name: "sales_enquiry_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 52, name: "sales_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 53, name: "sales_invoice_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 54, name: "sales_quotation_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 55, name: "vendor_invoice_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 56, name: "work_order_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 57, name: "expense_sender_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 70, name: "disable_vi_creation_with_bill_date_after_po_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 71, name: "require_mfa_for_record_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 72, name: "auto_req_verify_on_exit_record_entry", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 200, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GeneralSettingsServiceCreateRequest {
+    return new GeneralSettingsServiceCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GeneralSettingsServiceCreateRequest {
+    return new GeneralSettingsServiceCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GeneralSettingsServiceCreateRequest {
+    return new GeneralSettingsServiceCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: GeneralSettingsServiceCreateRequest | PlainMessage<GeneralSettingsServiceCreateRequest> | undefined, b: GeneralSettingsServiceCreateRequest | PlainMessage<GeneralSettingsServiceCreateRequest> | undefined): boolean {
+    return proto3.util.equals(GeneralSettingsServiceCreateRequest, a, b);
   }
 }
 

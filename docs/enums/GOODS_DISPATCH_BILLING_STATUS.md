@@ -30,7 +30,7 @@ from enum value: GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/goods_dispatches.scailo_pb.ts#L267)
+[src/goods_dispatches.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/goods_dispatches.scailo_pb.ts#L267)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: GOODS_DISPATCH_BILLING_STATUS_BILLED = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/goods_dispatches.scailo_pb.ts#L274)
+[src/goods_dispatches.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/goods_dispatches.scailo_pb.ts#L274)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: GOODS_DISPATCH_BILLING_STATUS_UNBILLED = 2;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/8e5d3129bcb3c3a932d1f3538f2ffcec40fdf594/src/goods_dispatches.scailo_pb.ts#L281)
+[src/goods_dispatches.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/goods_dispatches.scailo_pb.ts#L281)
