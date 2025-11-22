@@ -1288,6 +1288,64 @@ export class SalesInvoicesServiceItemUpdateRequest extends Message<SalesInvoices
 
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a sales invoice
+ *
+ * @generated from message Scailo.SalesInvoicesServiceItemSpecificationsUpdateRequest
+ */
+export class SalesInvoicesServiceItemSpecificationsUpdateRequest extends Message<SalesInvoicesServiceItemSpecificationsUpdateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the record
+   *
+   * @generated from field: string uuid = 2;
+   */
+  uuid = "";
+
+  /**
+   * The specifications that should be updated
+   *
+   * @generated from field: string specifications = 21;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<SalesInvoicesServiceItemSpecificationsUpdateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesInvoicesServiceItemSpecificationsUpdateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceItemSpecificationsUpdateRequest {
+    return new SalesInvoicesServiceItemSpecificationsUpdateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesInvoicesServiceItemSpecificationsUpdateRequest {
+    return new SalesInvoicesServiceItemSpecificationsUpdateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesInvoicesServiceItemSpecificationsUpdateRequest {
+    return new SalesInvoicesServiceItemSpecificationsUpdateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<SalesInvoicesServiceItemSpecificationsUpdateRequest> | undefined, b: SalesInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<SalesInvoicesServiceItemSpecificationsUpdateRequest> | undefined): boolean {
+    return proto3.util.equals(SalesInvoicesServiceItemSpecificationsUpdateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that constitute an item associated to a sales invoice
  *
  * @generated from message Scailo.SalesInvoiceItem

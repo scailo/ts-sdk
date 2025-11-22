@@ -449,6 +449,13 @@ export class GeneralSettingsServiceCreateRequest extends Message<GeneralSettings
   autoReqVerifyOnExitRecordEntry = false;
 
   /**
+   * Stores the base64 encoded logo of the organization
+   *
+   * @generated from field: string logo = 80;
+   */
+  logo = "";
+
+  /**
    * The list of dynamic forms
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 200;
@@ -488,6 +495,7 @@ export class GeneralSettingsServiceCreateRequest extends Message<GeneralSettings
     { no: 70, name: "disable_vi_creation_with_bill_date_after_po_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 71, name: "require_mfa_for_record_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 72, name: "auto_req_verify_on_exit_record_entry", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 80, name: "logo", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 200, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 

@@ -31,7 +31,7 @@ from enum value: GENERAL_STREAM_LIFECYCLE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_streams.scailo_pb.ts#L22)
+[src/general_streams.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/general_streams.scailo_pb.ts#L22)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: GENERAL_STREAM_LIFECYCLE_CANCELLED = 3;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_streams.scailo_pb.ts#L43)
+[src/general_streams.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/general_streams.scailo_pb.ts#L43)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: GENERAL_STREAM_LIFECYCLE_COMPLETED = 2;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_streams.scailo_pb.ts#L36)
+[src/general_streams.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/general_streams.scailo_pb.ts#L36)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: GENERAL_STREAM_LIFECYCLE_OPEN = 1;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/general_streams.scailo_pb.ts#L29)
+[src/general_streams.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/general_streams.scailo_pb.ts#L29)

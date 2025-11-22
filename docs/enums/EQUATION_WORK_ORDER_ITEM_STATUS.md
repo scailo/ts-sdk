@@ -30,7 +30,7 @@ from enum value: EQUATION_WORK_ORDER_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/equations_work_orders.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/equations_work_orders.scailo_pb.ts#L105)
+[src/equations_work_orders.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/equations_work_orders.scailo_pb.ts#L105)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: EQUATION_WORK_ORDER_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/equations_work_orders.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/equations_work_orders.scailo_pb.ts#L112)
+[src/equations_work_orders.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/equations_work_orders.scailo_pb.ts#L112)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: EQUATION_WORK_ORDER_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/equations_work_orders.scailo_pb.ts:119](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/equations_work_orders.scailo_pb.ts#L119)
+[src/equations_work_orders.scailo_pb.ts:119](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/equations_work_orders.scailo_pb.ts#L119)

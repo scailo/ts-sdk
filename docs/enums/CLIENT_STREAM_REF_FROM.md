@@ -37,7 +37,7 @@ from enum value: CLIENT_STREAM_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L65)
+[src/client_streams.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L65)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: CLIENT_STREAM_REF_FROM_CREDIT_NOTE = 21;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L100)
+[src/client_streams.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L100)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: CLIENT_STREAM_REF_FROM_GOODS_DISPATCH = 10;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L79)
+[src/client_streams.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L79)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_ENQUIRY = 50;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L121)
+[src/client_streams.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L121)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_INVOICE = 11;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L86)
+[src/client_streams.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L86)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L72)
+[src/client_streams.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L72)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_QUOTATION = 40;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L114)
+[src/client_streams.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L114)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_RECEIPT = 30;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L107)
+[src/client_streams.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L107)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: CLIENT_STREAM_REF_FROM_SALES_RETURN = 20;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L93)
+[src/client_streams.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L93)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: CLIENT_STREAM_REF_FROM_WORK_ORDER = 60;
 
 #### Defined in
 
-[src/client_streams.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/7e77d27d5ce6ad8ed03a5b3e62dab589e413e36b/src/client_streams.scailo_pb.ts#L128)
+[src/client_streams.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/client_streams.scailo_pb.ts#L128)

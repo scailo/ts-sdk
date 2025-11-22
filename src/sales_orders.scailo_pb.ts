@@ -1483,6 +1483,64 @@ export class SalesOrdersServiceItemUpdateRequest extends Message<SalesOrdersServ
 
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a sales order
+ *
+ * @generated from message Scailo.SalesOrdersServiceItemSpecificationsUpdateRequest
+ */
+export class SalesOrdersServiceItemSpecificationsUpdateRequest extends Message<SalesOrdersServiceItemSpecificationsUpdateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the record
+   *
+   * @generated from field: string uuid = 2;
+   */
+  uuid = "";
+
+  /**
+   * The specifications that should be updated
+   *
+   * @generated from field: string specifications = 21;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<SalesOrdersServiceItemSpecificationsUpdateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesOrdersServiceItemSpecificationsUpdateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceItemSpecificationsUpdateRequest {
+    return new SalesOrdersServiceItemSpecificationsUpdateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrdersServiceItemSpecificationsUpdateRequest {
+    return new SalesOrdersServiceItemSpecificationsUpdateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrdersServiceItemSpecificationsUpdateRequest {
+    return new SalesOrdersServiceItemSpecificationsUpdateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesOrdersServiceItemSpecificationsUpdateRequest | PlainMessage<SalesOrdersServiceItemSpecificationsUpdateRequest> | undefined, b: SalesOrdersServiceItemSpecificationsUpdateRequest | PlainMessage<SalesOrdersServiceItemSpecificationsUpdateRequest> | undefined): boolean {
+    return proto3.util.equals(SalesOrdersServiceItemSpecificationsUpdateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that constitute an item associated to a sales order
  *
  * @generated from message Scailo.SalesOrderItem

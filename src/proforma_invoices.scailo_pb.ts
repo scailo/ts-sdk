@@ -1323,6 +1323,64 @@ export class ProformaInvoicesServiceItemUpdateRequest extends Message<ProformaIn
 
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a proforma invoice
+ *
+ * @generated from message Scailo.ProformaInvoicesServiceItemSpecificationsUpdateRequest
+ */
+export class ProformaInvoicesServiceItemSpecificationsUpdateRequest extends Message<ProformaInvoicesServiceItemSpecificationsUpdateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the record
+   *
+   * @generated from field: string uuid = 2;
+   */
+  uuid = "";
+
+  /**
+   * The specifications that should be updated
+   *
+   * @generated from field: string specifications = 21;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<ProformaInvoicesServiceItemSpecificationsUpdateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ProformaInvoicesServiceItemSpecificationsUpdateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServiceItemSpecificationsUpdateRequest {
+    return new ProformaInvoicesServiceItemSpecificationsUpdateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProformaInvoicesServiceItemSpecificationsUpdateRequest {
+    return new ProformaInvoicesServiceItemSpecificationsUpdateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProformaInvoicesServiceItemSpecificationsUpdateRequest {
+    return new ProformaInvoicesServiceItemSpecificationsUpdateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ProformaInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<ProformaInvoicesServiceItemSpecificationsUpdateRequest> | undefined, b: ProformaInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<ProformaInvoicesServiceItemSpecificationsUpdateRequest> | undefined): boolean {
+    return proto3.util.equals(ProformaInvoicesServiceItemSpecificationsUpdateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that constitute an item associated to a proforma invoice
  *
  * @generated from message Scailo.ProformaInvoiceItem

@@ -1016,6 +1016,40 @@ export declare class PurchasesOrdersServiceItemUpdateRequest extends Message<Pur
 }
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a purchase order
+ *
+ * @generated from message Scailo.PurchasesOrdersServiceItemSpecificationsUpdateRequest
+ */
+export declare class PurchasesOrdersServiceItemSpecificationsUpdateRequest extends Message<PurchasesOrdersServiceItemSpecificationsUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the record
+     *
+     * @generated from field: string uuid = 2;
+     */
+    uuid: string;
+    /**
+     * The specifications that should be updated
+     *
+     * @generated from field: string specifications = 21;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<PurchasesOrdersServiceItemSpecificationsUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchasesOrdersServiceItemSpecificationsUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesOrdersServiceItemSpecificationsUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceItemSpecificationsUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceItemSpecificationsUpdateRequest;
+    static equals(a: PurchasesOrdersServiceItemSpecificationsUpdateRequest | PlainMessage<PurchasesOrdersServiceItemSpecificationsUpdateRequest> | undefined, b: PurchasesOrdersServiceItemSpecificationsUpdateRequest | PlainMessage<PurchasesOrdersServiceItemSpecificationsUpdateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that constitute an item associated to a purchase order
  *
  * @generated from message Scailo.PurchaseOrderItem

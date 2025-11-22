@@ -552,6 +552,40 @@ export declare class PurchasesIndentsServiceItemUpdateRequest extends Message<Pu
 }
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a purchase indent
+ *
+ * @generated from message Scailo.PurchasesIndentsServiceItemSpecificationsUpdateRequest
+ */
+export declare class PurchasesIndentsServiceItemSpecificationsUpdateRequest extends Message<PurchasesIndentsServiceItemSpecificationsUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the record
+     *
+     * @generated from field: string uuid = 2;
+     */
+    uuid: string;
+    /**
+     * The specifications that should be updated
+     *
+     * @generated from field: string specifications = 21;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<PurchasesIndentsServiceItemSpecificationsUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.PurchasesIndentsServiceItemSpecificationsUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesIndentsServiceItemSpecificationsUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceItemSpecificationsUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceItemSpecificationsUpdateRequest;
+    static equals(a: PurchasesIndentsServiceItemSpecificationsUpdateRequest | PlainMessage<PurchasesIndentsServiceItemSpecificationsUpdateRequest> | undefined, b: PurchasesIndentsServiceItemSpecificationsUpdateRequest | PlainMessage<PurchasesIndentsServiceItemSpecificationsUpdateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that constitute an item associated to a purchase indent
  *
  * @generated from message Scailo.PurchaseIndentItem

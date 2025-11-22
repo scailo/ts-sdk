@@ -1022,6 +1022,40 @@ export declare class SalesOrdersServiceItemUpdateRequest extends Message<SalesOr
 }
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a sales order
+ *
+ * @generated from message Scailo.SalesOrdersServiceItemSpecificationsUpdateRequest
+ */
+export declare class SalesOrdersServiceItemSpecificationsUpdateRequest extends Message<SalesOrdersServiceItemSpecificationsUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the record
+     *
+     * @generated from field: string uuid = 2;
+     */
+    uuid: string;
+    /**
+     * The specifications that should be updated
+     *
+     * @generated from field: string specifications = 21;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<SalesOrdersServiceItemSpecificationsUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrdersServiceItemSpecificationsUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceItemSpecificationsUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrdersServiceItemSpecificationsUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrdersServiceItemSpecificationsUpdateRequest;
+    static equals(a: SalesOrdersServiceItemSpecificationsUpdateRequest | PlainMessage<SalesOrdersServiceItemSpecificationsUpdateRequest> | undefined, b: SalesOrdersServiceItemSpecificationsUpdateRequest | PlainMessage<SalesOrdersServiceItemSpecificationsUpdateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that constitute an item associated to a sales order
  *
  * @generated from message Scailo.SalesOrderItem

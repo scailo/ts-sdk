@@ -858,6 +858,40 @@ export declare class VendorInvoicesServiceItemUpdateRequest extends Message<Vend
 }
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a vendor invoice
+ *
+ * @generated from message Scailo.VendorInvoicesServiceItemSpecificationsUpdateRequest
+ */
+export declare class VendorInvoicesServiceItemSpecificationsUpdateRequest extends Message<VendorInvoicesServiceItemSpecificationsUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the record
+     *
+     * @generated from field: string uuid = 2;
+     */
+    uuid: string;
+    /**
+     * The specifications that should be updated
+     *
+     * @generated from field: string specifications = 21;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<VendorInvoicesServiceItemSpecificationsUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VendorInvoicesServiceItemSpecificationsUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorInvoicesServiceItemSpecificationsUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorInvoicesServiceItemSpecificationsUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorInvoicesServiceItemSpecificationsUpdateRequest;
+    static equals(a: VendorInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<VendorInvoicesServiceItemSpecificationsUpdateRequest> | undefined, b: VendorInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<VendorInvoicesServiceItemSpecificationsUpdateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that constitute an item associated to a vendor invoice
  *
  * @generated from message Scailo.VendorInvoiceItem

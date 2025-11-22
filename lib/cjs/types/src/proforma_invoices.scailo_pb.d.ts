@@ -902,6 +902,40 @@ export declare class ProformaInvoicesServiceItemUpdateRequest extends Message<Pr
 }
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a proforma invoice
+ *
+ * @generated from message Scailo.ProformaInvoicesServiceItemSpecificationsUpdateRequest
+ */
+export declare class ProformaInvoicesServiceItemSpecificationsUpdateRequest extends Message<ProformaInvoicesServiceItemSpecificationsUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the record
+     *
+     * @generated from field: string uuid = 2;
+     */
+    uuid: string;
+    /**
+     * The specifications that should be updated
+     *
+     * @generated from field: string specifications = 21;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<ProformaInvoicesServiceItemSpecificationsUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ProformaInvoicesServiceItemSpecificationsUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServiceItemSpecificationsUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProformaInvoicesServiceItemSpecificationsUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProformaInvoicesServiceItemSpecificationsUpdateRequest;
+    static equals(a: ProformaInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<ProformaInvoicesServiceItemSpecificationsUpdateRequest> | undefined, b: ProformaInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<ProformaInvoicesServiceItemSpecificationsUpdateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that constitute an item associated to a proforma invoice
  *
  * @generated from message Scailo.ProformaInvoiceItem

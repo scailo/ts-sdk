@@ -1475,6 +1475,64 @@ export class PurchasesOrdersServiceItemUpdateRequest extends Message<PurchasesOr
 
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a purchase order
+ *
+ * @generated from message Scailo.PurchasesOrdersServiceItemSpecificationsUpdateRequest
+ */
+export class PurchasesOrdersServiceItemSpecificationsUpdateRequest extends Message<PurchasesOrdersServiceItemSpecificationsUpdateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the record
+   *
+   * @generated from field: string uuid = 2;
+   */
+  uuid = "";
+
+  /**
+   * The specifications that should be updated
+   *
+   * @generated from field: string specifications = 21;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<PurchasesOrdersServiceItemSpecificationsUpdateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.PurchasesOrdersServiceItemSpecificationsUpdateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesOrdersServiceItemSpecificationsUpdateRequest {
+    return new PurchasesOrdersServiceItemSpecificationsUpdateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceItemSpecificationsUpdateRequest {
+    return new PurchasesOrdersServiceItemSpecificationsUpdateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesOrdersServiceItemSpecificationsUpdateRequest {
+    return new PurchasesOrdersServiceItemSpecificationsUpdateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: PurchasesOrdersServiceItemSpecificationsUpdateRequest | PlainMessage<PurchasesOrdersServiceItemSpecificationsUpdateRequest> | undefined, b: PurchasesOrdersServiceItemSpecificationsUpdateRequest | PlainMessage<PurchasesOrdersServiceItemSpecificationsUpdateRequest> | undefined): boolean {
+    return proto3.util.equals(PurchasesOrdersServiceItemSpecificationsUpdateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that constitute an item associated to a purchase order
  *
  * @generated from message Scailo.PurchaseOrderItem

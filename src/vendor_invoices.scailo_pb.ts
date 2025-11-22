@@ -1264,6 +1264,64 @@ export class VendorInvoicesServiceItemUpdateRequest extends Message<VendorInvoic
 
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a vendor invoice
+ *
+ * @generated from message Scailo.VendorInvoicesServiceItemSpecificationsUpdateRequest
+ */
+export class VendorInvoicesServiceItemSpecificationsUpdateRequest extends Message<VendorInvoicesServiceItemSpecificationsUpdateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the record
+   *
+   * @generated from field: string uuid = 2;
+   */
+  uuid = "";
+
+  /**
+   * The specifications that should be updated
+   *
+   * @generated from field: string specifications = 21;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<VendorInvoicesServiceItemSpecificationsUpdateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VendorInvoicesServiceItemSpecificationsUpdateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorInvoicesServiceItemSpecificationsUpdateRequest {
+    return new VendorInvoicesServiceItemSpecificationsUpdateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VendorInvoicesServiceItemSpecificationsUpdateRequest {
+    return new VendorInvoicesServiceItemSpecificationsUpdateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VendorInvoicesServiceItemSpecificationsUpdateRequest {
+    return new VendorInvoicesServiceItemSpecificationsUpdateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VendorInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<VendorInvoicesServiceItemSpecificationsUpdateRequest> | undefined, b: VendorInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<VendorInvoicesServiceItemSpecificationsUpdateRequest> | undefined): boolean {
+    return proto3.util.equals(VendorInvoicesServiceItemSpecificationsUpdateRequest, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that constitute an item associated to a vendor invoice
  *
  * @generated from message Scailo.VendorInvoiceItem

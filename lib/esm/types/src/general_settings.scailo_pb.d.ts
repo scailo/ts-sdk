@@ -344,6 +344,12 @@ export declare class GeneralSettingsServiceCreateRequest extends Message<General
      */
     autoReqVerifyOnExitRecordEntry: boolean;
     /**
+     * Stores the base64 encoded logo of the organization
+     *
+     * @generated from field: string logo = 80;
+     */
+    logo: string;
+    /**
      * The list of dynamic forms
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 200;

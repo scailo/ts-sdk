@@ -876,6 +876,40 @@ export declare class SalesInvoicesServiceItemUpdateRequest extends Message<Sales
 }
 /**
  *
+ * Describes the parameters required to update the specifications of an item in a sales invoice
+ *
+ * @generated from message Scailo.SalesInvoicesServiceItemSpecificationsUpdateRequest
+ */
+export declare class SalesInvoicesServiceItemSpecificationsUpdateRequest extends Message<SalesInvoicesServiceItemSpecificationsUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the record
+     *
+     * @generated from field: string uuid = 2;
+     */
+    uuid: string;
+    /**
+     * The specifications that should be updated
+     *
+     * @generated from field: string specifications = 21;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<SalesInvoicesServiceItemSpecificationsUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesInvoicesServiceItemSpecificationsUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceItemSpecificationsUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesInvoicesServiceItemSpecificationsUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesInvoicesServiceItemSpecificationsUpdateRequest;
+    static equals(a: SalesInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<SalesInvoicesServiceItemSpecificationsUpdateRequest> | undefined, b: SalesInvoicesServiceItemSpecificationsUpdateRequest | PlainMessage<SalesInvoicesServiceItemSpecificationsUpdateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that constitute an item associated to a sales invoice
  *
  * @generated from message Scailo.SalesInvoiceItem
