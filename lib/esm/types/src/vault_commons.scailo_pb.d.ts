@@ -673,6 +673,579 @@ export declare class GiXAppRunFilterReq extends Message<GiXAppRunFilterReq> {
     static equals(a: GiXAppRunFilterReq | PlainMessage<GiXAppRunFilterReq> | undefined, b: GiXAppRunFilterReq | PlainMessage<GiXAppRunFilterReq> | undefined): boolean;
 }
 /**
+ *
+ * Describes the resources section of an Enclave
+ *
+ * @generated from message Scailo.EnclaveResources
+ */
+export declare class EnclaveResources extends Message<EnclaveResources> {
+    /**
+     * Stores the list of logos that are available
+     *
+     * @generated from field: repeated string logos = 1;
+     */
+    logos: string[];
+    /**
+     * Stores the list of folders that need to be accessible by the Enclave
+     *
+     * @generated from field: repeated string folders = 2;
+     */
+    folders: string[];
+    /**
+     * Stores the list of files that need to be accessible by the Enclave
+     *
+     * @generated from field: repeated string files = 3;
+     */
+    files: string[];
+    constructor(data?: PartialMessage<EnclaveResources>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveResources";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveResources;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveResources;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveResources;
+    static equals(a: EnclaveResources | PlainMessage<EnclaveResources> | undefined, b: EnclaveResources | PlainMessage<EnclaveResources> | undefined): boolean;
+}
+/**
+ *
+ * Describes the manifest file of an Enclave. Stores the attributes that can be a part of the MANIFEST.yaml file, that is present in the root folder of an Enclave
+ *
+ * @generated from message Scailo.EnclaveManifest
+ */
+export declare class EnclaveManifest extends Message<EnclaveManifest> {
+    /**
+     * Stores the manifest version
+     *
+     * @generated from field: string manifest_version = 1 [json_name = "manifest_version"];
+     */
+    manifestVersion: string;
+    /**
+     * Stores the enclave type (valid options are node, golang, python)
+     *
+     * @generated from field: string enclave_type = 2 [json_name = "enclave_type"];
+     */
+    enclaveType: string;
+    /**
+     * Stores the application version
+     *
+     * @generated from field: string app_version = 3 [json_name = "app_version"];
+     */
+    appVersion: string;
+    /**
+     * Stores the name of the application
+     *
+     * @generated from field: string app_name = 4 [json_name = "app_name"];
+     */
+    appName: string;
+    /**
+     * Stores the name of the enclave
+     *
+     * @generated from field: string enclave_name = 5 [json_name = "enclave_name"];
+     */
+    enclaveName: string;
+    /**
+     * Stores the unique identifier for the application
+     *
+     * @generated from field: string app_unique_identifier = 6 [json_name = "app_unique_identifier"];
+     */
+    appUniqueIdentifier: string;
+    /**
+     * Stores the command that starts the enclave
+     *
+     * @generated from field: string start_exec = 7 [json_name = "start_exec"];
+     */
+    startExec: string;
+    /**
+     * Stores the resources of the Enclave
+     *
+     * @generated from field: Scailo.EnclaveResources resources = 10;
+     */
+    resources?: EnclaveResources;
+    constructor(data?: PartialMessage<EnclaveManifest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveManifest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveManifest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveManifest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveManifest;
+    static equals(a: EnclaveManifest | PlainMessage<EnclaveManifest> | undefined, b: EnclaveManifest | PlainMessage<EnclaveManifest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that are a part of each enclave ingress
+ *
+ * @generated from message Scailo.EnclaveIngress
+ */
+export declare class EnclaveIngress extends Message<EnclaveIngress> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this user
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the unique token that can be used to identify the user who executed this enclave
+     *
+     * @generated from field: string token = 10;
+     */
+    token: string;
+    /**
+     * Stores the expiry timestamp of the ingress token
+     *
+     * @generated from field: uint64 expires_at = 11;
+     */
+    expiresAt: bigint;
+    /**
+     * Stores the ID of the file that is being executed
+     *
+     * @generated from field: uint64 vault_file_id = 20;
+     */
+    vaultFileId: bigint;
+    /**
+     * Stores the ID of the version of the file that is being executed
+     *
+     * @generated from field: uint64 vault_file_version_id = 21;
+     */
+    vaultFileVersionId: bigint;
+    /**
+     * Stores the unique identifier of the application
+     *
+     * @generated from field: string enclave_name = 22;
+     */
+    enclaveName: string;
+    /**
+     * Stores the IP address from where the app was executed
+     *
+     * @generated from field: string ip_addr = 24;
+     */
+    ipAddr: string;
+    /**
+     * Stores the ID of the user who executed this enclave
+     *
+     * @generated from field: uint64 runner_user_id = 30;
+     */
+    runnerUserId: bigint;
+    /**
+     * Stores the ID of the user when this enclave was executed
+     *
+     * @generated from field: uint64 runner_role_id = 31;
+     */
+    runnerRoleId: bigint;
+    /**
+     * Stores the endpoint of the application execution
+     *
+     * @generated from field: string app_endpoint = 60;
+     */
+    appEndpoint: string;
+    constructor(data?: PartialMessage<EnclaveIngress>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveIngress";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveIngress;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveIngress;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveIngress;
+    static equals(a: EnclaveIngress | PlainMessage<EnclaveIngress> | undefined, b: EnclaveIngress | PlainMessage<EnclaveIngress> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the list of enclave ingresses
+ *
+ * @generated from message Scailo.EnclaveIngressesList
+ */
+export declare class EnclaveIngressesList extends Message<EnclaveIngressesList> {
+    /**
+     * List of runs
+     *
+     * @generated from field: repeated Scailo.EnclaveIngress list = 1;
+     */
+    list: EnclaveIngress[];
+    constructor(data?: PartialMessage<EnclaveIngressesList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveIngressesList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveIngressesList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveIngressesList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveIngressesList;
+    static equals(a: EnclaveIngressesList | PlainMessage<EnclaveIngressesList> | undefined, b: EnclaveIngressesList | PlainMessage<EnclaveIngressesList> | undefined): boolean;
+}
+/**
+ *
+ * Describes the request payload of a count filter for enclave runs
+ *
+ * @generated from message Scailo.EnclaveIngressCountReq
+ */
+export declare class EnclaveIngressCountReq extends Message<EnclaveIngressCountReq> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_start = 101;
+     */
+    creationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_end = 102;
+     */
+    creationTimestampEnd: bigint;
+    /**
+     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_start = 103;
+     */
+    modificationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_end = 104;
+     */
+    modificationTimestampEnd: bigint;
+    /**
+     * The UUID of the file
+     *
+     * @generated from field: string vault_file_uuid = 20;
+     */
+    vaultFileUuid: string;
+    /**
+     * The UUID of the version
+     *
+     * --------------------------------------------------------
+     *
+     * @generated from field: string vault_file_version_uuid = 21;
+     */
+    vaultFileVersionUuid: string;
+    /**
+     * Stores the ID of the user who executed this enclave
+     *
+     * @generated from field: uint64 runner_user_id = 30;
+     */
+    runnerUserId: bigint;
+    /**
+     * Stores the ID of the user when this enclave was executed
+     *
+     * @generated from field: uint64 runner_role_id = 31;
+     */
+    runnerRoleId: bigint;
+    constructor(data?: PartialMessage<EnclaveIngressCountReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveIngressCountReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveIngressCountReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveIngressCountReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveIngressCountReq;
+    static equals(a: EnclaveIngressCountReq | PlainMessage<EnclaveIngressCountReq> | undefined, b: EnclaveIngressCountReq | PlainMessage<EnclaveIngressCountReq> | undefined): boolean;
+}
+/**
+ *
+ * Describes the base request payload of a filter search for enclave runs
+ *
+ * @generated from message Scailo.EnclaveIngressFilterReq
+ */
+export declare class EnclaveIngressFilterReq extends Message<EnclaveIngressFilterReq> {
+    /**
+     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     */
+    isActive: BOOL_FILTER;
+    /**
+     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @generated from field: int64 count = 2;
+     */
+    count: bigint;
+    /**
+     * The number that need to be offset by before fetching the records
+     *
+     * // The sort order that is to be used to fetch the pagination response
+     * SORT_ORDER sort_order = 4;
+     * // The sort key that is to be used to fetch the pagination response
+     * VAULT_SORT_KEY sort_key = 5;
+     *
+     * @generated from field: uint64 offset = 3;
+     */
+    offset: bigint;
+    /**
+     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_start = 101;
+     */
+    creationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @generated from field: uint64 creation_timestamp_end = 102;
+     */
+    creationTimestampEnd: bigint;
+    /**
+     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_start = 103;
+     */
+    modificationTimestampStart: bigint;
+    /**
+     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @generated from field: uint64 modification_timestamp_end = 104;
+     */
+    modificationTimestampEnd: bigint;
+    /**
+     * The UUID of the file
+     *
+     * @generated from field: string vault_file_uuid = 20;
+     */
+    vaultFileUuid: string;
+    /**
+     * The UUID of the version
+     *
+     * --------------------------------------------------------
+     *
+     * @generated from field: string vault_file_version_uuid = 21;
+     */
+    vaultFileVersionUuid: string;
+    /**
+     * Stores the ID of the user who executed this enclave
+     *
+     * @generated from field: uint64 runner_user_id = 30;
+     */
+    runnerUserId: bigint;
+    /**
+     * Stores the ID of the user when this enclave was executed
+     *
+     * @generated from field: uint64 runner_role_id = 31;
+     */
+    runnerRoleId: bigint;
+    constructor(data?: PartialMessage<EnclaveIngressFilterReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveIngressFilterReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveIngressFilterReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveIngressFilterReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveIngressFilterReq;
+    static equals(a: EnclaveIngressFilterReq | PlainMessage<EnclaveIngressFilterReq> | undefined, b: EnclaveIngressFilterReq | PlainMessage<EnclaveIngressFilterReq> | undefined): boolean;
+}
+/**
+ *
+ * The request payload to verify an enclave ingress
+ *
+ * @generated from message Scailo.VerifyEnclaveIngressRequest
+ */
+export declare class VerifyEnclaveIngressRequest extends Message<VerifyEnclaveIngressRequest> {
+    /**
+     * The token that needs to be verified
+     *
+     * @generated from field: string token = 1;
+     */
+    token: string;
+    constructor(data?: PartialMessage<VerifyEnclaveIngressRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VerifyEnclaveIngressRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VerifyEnclaveIngressRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VerifyEnclaveIngressRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VerifyEnclaveIngressRequest;
+    static equals(a: VerifyEnclaveIngressRequest | PlainMessage<VerifyEnclaveIngressRequest> | undefined, b: VerifyEnclaveIngressRequest | PlainMessage<VerifyEnclaveIngressRequest> | undefined): boolean;
+}
+/**
+ *
+ * The response payload to verify an enclave ingress
+ *
+ * @generated from message Scailo.VerifyEnclaveIngressResponse
+ */
+export declare class VerifyEnclaveIngressResponse extends Message<VerifyEnclaveIngressResponse> {
+    /**
+     * The name of the enclave
+     *
+     * @generated from field: string enclave_name = 1;
+     */
+    enclaveName: string;
+    /**
+     * The UUID of the user who is running the enclave
+     *
+     * @generated from field: string user_uuid = 2;
+     */
+    userUuid: string;
+    /**
+     * The UUID of the user's role
+     *
+     * @generated from field: string role_uuid = 3;
+     */
+    roleUuid: string;
+    /**
+     * The auth token of the user that can be used for subsequent requests
+     *
+     * @generated from field: string auth_token = 4;
+     */
+    authToken: string;
+    /**
+     * The timestamp after which the auth token expires
+     *
+     * @generated from field: uint64 expires_at = 5;
+     */
+    expiresAt: bigint;
+    constructor(data?: PartialMessage<VerifyEnclaveIngressResponse>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VerifyEnclaveIngressResponse";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VerifyEnclaveIngressResponse;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VerifyEnclaveIngressResponse;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VerifyEnclaveIngressResponse;
+    static equals(a: VerifyEnclaveIngressResponse | PlainMessage<VerifyEnclaveIngressResponse> | undefined, b: VerifyEnclaveIngressResponse | PlainMessage<VerifyEnclaveIngressResponse> | undefined): boolean;
+}
+/**
+ *
+ * Stores the payload that is necessary to create a custom environment variable for an enclave
+ *
+ * @generated from message Scailo.EnclaveEnvironmentVariableAddRequest
+ */
+export declare class EnclaveEnvironmentVariableAddRequest extends Message<EnclaveEnvironmentVariableAddRequest> {
+    /**
+     * The UUID of the enclave file that will be updated with the given environment variable
+     *
+     * @generated from field: string file_uuid = 1;
+     */
+    fileUuid: string;
+    /**
+     * The name of the environment variable
+     *
+     * @generated from field: string name = 11;
+     */
+    name: string;
+    /**
+     * The value of the environment variable
+     *
+     * @generated from field: string value = 12;
+     */
+    value: string;
+    /**
+     * Denotes if the value should be stored as a secret (will not be visible to the user post creation)
+     *
+     * @generated from field: bool is_secret = 13;
+     */
+    isSecret: boolean;
+    constructor(data?: PartialMessage<EnclaveEnvironmentVariableAddRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveEnvironmentVariableAddRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveEnvironmentVariableAddRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariableAddRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariableAddRequest;
+    static equals(a: EnclaveEnvironmentVariableAddRequest | PlainMessage<EnclaveEnvironmentVariableAddRequest> | undefined, b: EnclaveEnvironmentVariableAddRequest | PlainMessage<EnclaveEnvironmentVariableAddRequest> | undefined): boolean;
+}
+/**
+ *
+ * Stores the payload that is necessary to update a custom environment variable for an enclave
+ *
+ * @generated from message Scailo.EnclaveEnvironmentVariableUpdateRequest
+ */
+export declare class EnclaveEnvironmentVariableUpdateRequest extends Message<EnclaveEnvironmentVariableUpdateRequest> {
+    /**
+     * The UUID of the environment variables that needs to be updated
+     *
+     * @generated from field: string uuid = 1;
+     */
+    uuid: string;
+    /**
+     * The value of the environment variable that needs to be updated
+     *
+     * @generated from field: string value = 11;
+     */
+    value: string;
+    constructor(data?: PartialMessage<EnclaveEnvironmentVariableUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveEnvironmentVariableUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveEnvironmentVariableUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariableUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariableUpdateRequest;
+    static equals(a: EnclaveEnvironmentVariableUpdateRequest | PlainMessage<EnclaveEnvironmentVariableUpdateRequest> | undefined, b: EnclaveEnvironmentVariableUpdateRequest | PlainMessage<EnclaveEnvironmentVariableUpdateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Denotes an individual environment variable that is part of an enclave
+ *
+ * @generated from message Scailo.EnclaveEnvironmentVariable
+ */
+export declare class EnclaveEnvironmentVariable extends Message<EnclaveEnvironmentVariable> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this user
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the ID of the file that the environment variable belongs to
+     *
+     * @generated from field: uint64 vault_file_id = 10;
+     */
+    vaultFileId: bigint;
+    /**
+     * The name of the environment variable
+     *
+     * @generated from field: string name = 11;
+     */
+    name: string;
+    /**
+     * The value of the environment variable
+     *
+     * @generated from field: string value = 12;
+     */
+    value: string;
+    /**
+     * Denotes if the value should be stored as a secret (will not be visible to the user post creation)
+     *
+     * @generated from field: bool is_secret = 13;
+     */
+    isSecret: boolean;
+    constructor(data?: PartialMessage<EnclaveEnvironmentVariable>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveEnvironmentVariable";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveEnvironmentVariable;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariable;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariable;
+    static equals(a: EnclaveEnvironmentVariable | PlainMessage<EnclaveEnvironmentVariable> | undefined, b: EnclaveEnvironmentVariable | PlainMessage<EnclaveEnvironmentVariable> | undefined): boolean;
+}
+/**
+ *
+ * Denotes the list of environment variables that are part of an enclave
+ *
+ * @generated from message Scailo.EnclaveEnvironmentVariablesList
+ */
+export declare class EnclaveEnvironmentVariablesList extends Message<EnclaveEnvironmentVariablesList> {
+    /**
+     * List of environment variables
+     *
+     * @generated from field: repeated Scailo.EnclaveEnvironmentVariable list = 1;
+     */
+    list: EnclaveEnvironmentVariable[];
+    constructor(data?: PartialMessage<EnclaveEnvironmentVariablesList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveEnvironmentVariablesList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveEnvironmentVariablesList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariablesList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariablesList;
+    static equals(a: EnclaveEnvironmentVariablesList | PlainMessage<EnclaveEnvironmentVariablesList> | undefined, b: EnclaveEnvironmentVariablesList | PlainMessage<EnclaveEnvironmentVariablesList> | undefined): boolean;
+}
+/**
  * @generated from message Scailo.VaultSearchReq
  */
 export declare class VaultSearchReq extends Message<VaultSearchReq> {

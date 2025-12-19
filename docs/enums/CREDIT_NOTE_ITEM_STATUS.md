@@ -30,7 +30,7 @@ from enum value: CREDIT_NOTE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/credit_notes.scailo_pb.ts#L165)
+[src/credit_notes.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/credit_notes.scailo_pb.ts#L165)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: CREDIT_NOTE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/credit_notes.scailo_pb.ts#L172)
+[src/credit_notes.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/credit_notes.scailo_pb.ts#L172)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: CREDIT_NOTE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/credit_notes.scailo_pb.ts#L179)
+[src/credit_notes.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/credit_notes.scailo_pb.ts#L179)

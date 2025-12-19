@@ -1,7 +1,7 @@
 import { VaultFile, VaultFileAddChunkRequest, VaultFileInitiateFileRequest, VaultFileInitiateFileResponse, VaultFileMoveFileRequest, VaultFileRenameFileRequest, VaultFilesList, VaultFileUnzipRequest, VaultFileVersionChunk, VaultFileVersionsList } from "./vault_files.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { BooleanResponse, CountResponse, Identifier, IdentifierUUID, IdentifierZeroable, StandardFile } from "./base.scailo_pb.js";
-import { GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList } from "./vault_commons.scailo_pb.js";
+import { BooleanResponse, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierZeroable, StandardFile } from "./base.scailo_pb.js";
+import { EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
 import { VaultFolder, VaultFolderAddRequest, VaultFolderDownload, VaultFolderMoveFolderRequest, VaultFolderRenameFolderRequest, VaultFoldersList } from "./vault_folders.scailo_pb.js";
 import { GiXRelayReqWithBody, GiXRelayReqWithoutBody, GiXRelayResponse, VaultResourcesList } from "./vault.scailo_pb.js";
 import { RolesList } from "./roles.scailo_pb.js";
@@ -578,6 +578,116 @@ export declare const VaultService: {
             readonly name: "GiXCount";
             readonly I: typeof GiXAppRunCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Reconfigures the enclave (redeploys the enclave)
+         *
+         * @generated from rpc Scailo.VaultService.ReconfigureEnclave
+         */
+        readonly reconfigureEnclave: {
+            readonly name: "ReconfigureEnclave";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof IdentifierUUID;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Setup Enclave Ingress
+         *
+         * @generated from rpc Scailo.VaultService.SetupEnclaveIngress
+         */
+        readonly setupEnclaveIngress: {
+            readonly name: "SetupEnclaveIngress";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof EnclaveIngress;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all enclave ingresses that match the given filter criteria
+         *
+         * @generated from rpc Scailo.VaultService.FilterEnclaveIngresses
+         */
+        readonly filterEnclaveIngresses: {
+            readonly name: "FilterEnclaveIngresses";
+            readonly I: typeof EnclaveIngressFilterReq;
+            readonly O: typeof EnclaveIngressesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Count all enclave ingresses that match the given filter criteria
+         *
+         * @generated from rpc Scailo.VaultService.CountEnclaveIngresses
+         */
+        readonly countEnclaveIngresses: {
+            readonly name: "CountEnclaveIngresses";
+            readonly I: typeof EnclaveIngressCountReq;
+            readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Verifies the enclave ingress and returns the necessary information for subsequent requests
+         *
+         * @generated from rpc Scailo.VaultService.VerifyEnclaveIngress
+         */
+        readonly verifyEnclaveIngress: {
+            readonly name: "VerifyEnclaveIngress";
+            readonly I: typeof VerifyEnclaveIngressRequest;
+            readonly O: typeof VerifyEnclaveIngressResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Add environment variable to enclave
+         *
+         * @generated from rpc Scailo.VaultService.AddEnclaveEnvironmentVariable
+         */
+        readonly addEnclaveEnvironmentVariable: {
+            readonly name: "AddEnclaveEnvironmentVariable";
+            readonly I: typeof EnclaveEnvironmentVariableAddRequest;
+            readonly O: typeof EnclaveEnvironmentVariable;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Update environment variable in enclave
+         *
+         * @generated from rpc Scailo.VaultService.UpdateEnclaveEnvironmentVariable
+         */
+        readonly updateEnclaveEnvironmentVariable: {
+            readonly name: "UpdateEnclaveEnvironmentVariable";
+            readonly I: typeof EnclaveEnvironmentVariableUpdateRequest;
+            readonly O: typeof EnclaveEnvironmentVariable;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Delete environment variable in enclave
+         *
+         * @generated from rpc Scailo.VaultService.DeleteEnclaveEnvironmentVariable
+         */
+        readonly deleteEnclaveEnvironmentVariable: {
+            readonly name: "DeleteEnclaveEnvironmentVariable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View environment variable in enclave represented by the Identifier
+         *
+         * @generated from rpc Scailo.VaultService.ViewEnclaveEnvironmentVariable
+         */
+        readonly viewEnclaveEnvironmentVariable: {
+            readonly name: "ViewEnclaveEnvironmentVariable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof EnclaveEnvironmentVariable;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all environment variables in enclave for the enclave represented by the Identifier
+         *
+         * @generated from rpc Scailo.VaultService.ViewAllEnclaveEnvironmentVariables
+         */
+        readonly viewAllEnclaveEnvironmentVariables: {
+            readonly name: "ViewAllEnclaveEnvironmentVariables";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof EnclaveEnvironmentVariablesList;
             readonly kind: MethodKind.Unary;
         };
     };

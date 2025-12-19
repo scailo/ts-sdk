@@ -1015,6 +1015,919 @@ export class GiXAppRunFilterReq extends Message<GiXAppRunFilterReq> {
 }
 
 /**
+ *
+ * Describes the resources section of an Enclave
+ *
+ * @generated from message Scailo.EnclaveResources
+ */
+export class EnclaveResources extends Message<EnclaveResources> {
+  /**
+   * Stores the list of logos that are available
+   *
+   * @generated from field: repeated string logos = 1;
+   */
+  logos: string[] = [];
+
+  /**
+   * Stores the list of folders that need to be accessible by the Enclave
+   *
+   * @generated from field: repeated string folders = 2;
+   */
+  folders: string[] = [];
+
+  /**
+   * Stores the list of files that need to be accessible by the Enclave
+   *
+   * @generated from field: repeated string files = 3;
+   */
+  files: string[] = [];
+
+  constructor(data?: PartialMessage<EnclaveResources>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveResources";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "logos", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 2, name: "folders", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 3, name: "files", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveResources {
+    return new EnclaveResources().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveResources {
+    return new EnclaveResources().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveResources {
+    return new EnclaveResources().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveResources | PlainMessage<EnclaveResources> | undefined, b: EnclaveResources | PlainMessage<EnclaveResources> | undefined): boolean {
+    return proto3.util.equals(EnclaveResources, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the manifest file of an Enclave. Stores the attributes that can be a part of the MANIFEST.yaml file, that is present in the root folder of an Enclave
+ *
+ * @generated from message Scailo.EnclaveManifest
+ */
+export class EnclaveManifest extends Message<EnclaveManifest> {
+  /**
+   * Stores the manifest version
+   *
+   * @generated from field: string manifest_version = 1 [json_name = "manifest_version"];
+   */
+  manifestVersion = "";
+
+  /**
+   * Stores the enclave type (valid options are node, golang, python)
+   *
+   * @generated from field: string enclave_type = 2 [json_name = "enclave_type"];
+   */
+  enclaveType = "";
+
+  /**
+   * Stores the application version
+   *
+   * @generated from field: string app_version = 3 [json_name = "app_version"];
+   */
+  appVersion = "";
+
+  /**
+   * Stores the name of the application
+   *
+   * @generated from field: string app_name = 4 [json_name = "app_name"];
+   */
+  appName = "";
+
+  /**
+   * Stores the name of the enclave
+   *
+   * @generated from field: string enclave_name = 5 [json_name = "enclave_name"];
+   */
+  enclaveName = "";
+
+  /**
+   * Stores the unique identifier for the application
+   *
+   * @generated from field: string app_unique_identifier = 6 [json_name = "app_unique_identifier"];
+   */
+  appUniqueIdentifier = "";
+
+  /**
+   * Stores the command that starts the enclave
+   *
+   * @generated from field: string start_exec = 7 [json_name = "start_exec"];
+   */
+  startExec = "";
+
+  /**
+   * Stores the resources of the Enclave
+   *
+   * @generated from field: Scailo.EnclaveResources resources = 10;
+   */
+  resources?: EnclaveResources;
+
+  constructor(data?: PartialMessage<EnclaveManifest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveManifest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "manifest_version", jsonName: "manifest_version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "enclave_type", jsonName: "enclave_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "app_version", jsonName: "app_version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: "app_name", jsonName: "app_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 5, name: "enclave_name", jsonName: "enclave_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 6, name: "app_unique_identifier", jsonName: "app_unique_identifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 7, name: "start_exec", jsonName: "start_exec", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "resources", kind: "message", T: EnclaveResources },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveManifest {
+    return new EnclaveManifest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveManifest {
+    return new EnclaveManifest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveManifest {
+    return new EnclaveManifest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveManifest | PlainMessage<EnclaveManifest> | undefined, b: EnclaveManifest | PlainMessage<EnclaveManifest> | undefined): boolean {
+    return proto3.util.equals(EnclaveManifest, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that are a part of each enclave ingress
+ *
+ * @generated from message Scailo.EnclaveIngress
+ */
+export class EnclaveIngress extends Message<EnclaveIngress> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the metadata of this user
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   * Stores the unique token that can be used to identify the user who executed this enclave
+   *
+   * @generated from field: string token = 10;
+   */
+  token = "";
+
+  /**
+   * Stores the expiry timestamp of the ingress token
+   *
+   * @generated from field: uint64 expires_at = 11;
+   */
+  expiresAt = protoInt64.zero;
+
+  /**
+   * Stores the ID of the file that is being executed
+   *
+   * @generated from field: uint64 vault_file_id = 20;
+   */
+  vaultFileId = protoInt64.zero;
+
+  /**
+   * Stores the ID of the version of the file that is being executed
+   *
+   * @generated from field: uint64 vault_file_version_id = 21;
+   */
+  vaultFileVersionId = protoInt64.zero;
+
+  /**
+   * Stores the unique identifier of the application
+   *
+   * @generated from field: string enclave_name = 22;
+   */
+  enclaveName = "";
+
+  /**
+   * Stores the IP address from where the app was executed
+   *
+   * @generated from field: string ip_addr = 24;
+   */
+  ipAddr = "";
+
+  /**
+   * Stores the ID of the user who executed this enclave
+   *
+   * @generated from field: uint64 runner_user_id = 30;
+   */
+  runnerUserId = protoInt64.zero;
+
+  /**
+   * Stores the ID of the user when this enclave was executed
+   *
+   * @generated from field: uint64 runner_role_id = 31;
+   */
+  runnerRoleId = protoInt64.zero;
+
+  /**
+   * Stores the endpoint of the application execution
+   *
+   * @generated from field: string app_endpoint = 60;
+   */
+  appEndpoint = "";
+
+  constructor(data?: PartialMessage<EnclaveIngress>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveIngress";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 10, name: "token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "vault_file_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 21, name: "vault_file_version_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 22, name: "enclave_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 24, name: "ip_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "runner_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 31, name: "runner_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 60, name: "app_endpoint", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveIngress {
+    return new EnclaveIngress().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveIngress {
+    return new EnclaveIngress().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveIngress {
+    return new EnclaveIngress().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveIngress | PlainMessage<EnclaveIngress> | undefined, b: EnclaveIngress | PlainMessage<EnclaveIngress> | undefined): boolean {
+    return proto3.util.equals(EnclaveIngress, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the list of enclave ingresses
+ *
+ * @generated from message Scailo.EnclaveIngressesList
+ */
+export class EnclaveIngressesList extends Message<EnclaveIngressesList> {
+  /**
+   * List of runs
+   *
+   * @generated from field: repeated Scailo.EnclaveIngress list = 1;
+   */
+  list: EnclaveIngress[] = [];
+
+  constructor(data?: PartialMessage<EnclaveIngressesList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveIngressesList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: EnclaveIngress, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveIngressesList {
+    return new EnclaveIngressesList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveIngressesList {
+    return new EnclaveIngressesList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveIngressesList {
+    return new EnclaveIngressesList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveIngressesList | PlainMessage<EnclaveIngressesList> | undefined, b: EnclaveIngressesList | PlainMessage<EnclaveIngressesList> | undefined): boolean {
+    return proto3.util.equals(EnclaveIngressesList, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the request payload of a count filter for enclave runs
+ *
+ * @generated from message Scailo.EnclaveIngressCountReq
+ */
+export class EnclaveIngressCountReq extends Message<EnclaveIngressCountReq> {
+  /**
+   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   */
+  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
+   * The minimum timestamp that needs to be considered to filter by creation
+   *
+   * @generated from field: uint64 creation_timestamp_start = 101;
+   */
+  creationTimestampStart = protoInt64.zero;
+
+  /**
+   * The maximum timestamp that needs to be considered to filter by creation
+   *
+   * @generated from field: uint64 creation_timestamp_end = 102;
+   */
+  creationTimestampEnd = protoInt64.zero;
+
+  /**
+   * The minimum timestamp that needs to be considered to filter by modification
+   *
+   * @generated from field: uint64 modification_timestamp_start = 103;
+   */
+  modificationTimestampStart = protoInt64.zero;
+
+  /**
+   * The maximum timestamp that needs to be considered to filter by modification
+   *
+   * @generated from field: uint64 modification_timestamp_end = 104;
+   */
+  modificationTimestampEnd = protoInt64.zero;
+
+  /**
+   * The UUID of the file
+   *
+   * @generated from field: string vault_file_uuid = 20;
+   */
+  vaultFileUuid = "";
+
+  /**
+   * The UUID of the version
+   *
+   * --------------------------------------------------------
+   *
+   * @generated from field: string vault_file_version_uuid = 21;
+   */
+  vaultFileVersionUuid = "";
+
+  /**
+   * Stores the ID of the user who executed this enclave
+   *
+   * @generated from field: uint64 runner_user_id = 30;
+   */
+  runnerUserId = protoInt64.zero;
+
+  /**
+   * Stores the ID of the user when this enclave was executed
+   *
+   * @generated from field: uint64 runner_role_id = 31;
+   */
+  runnerRoleId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<EnclaveIngressCountReq>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveIngressCountReq";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "vault_file_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "vault_file_version_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "runner_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 31, name: "runner_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveIngressCountReq {
+    return new EnclaveIngressCountReq().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveIngressCountReq {
+    return new EnclaveIngressCountReq().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveIngressCountReq {
+    return new EnclaveIngressCountReq().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveIngressCountReq | PlainMessage<EnclaveIngressCountReq> | undefined, b: EnclaveIngressCountReq | PlainMessage<EnclaveIngressCountReq> | undefined): boolean {
+    return proto3.util.equals(EnclaveIngressCountReq, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the base request payload of a filter search for enclave runs
+ *
+ * @generated from message Scailo.EnclaveIngressFilterReq
+ */
+export class EnclaveIngressFilterReq extends Message<EnclaveIngressFilterReq> {
+  /**
+   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   */
+  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
+   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @generated from field: int64 count = 2;
+   */
+  count = protoInt64.zero;
+
+  /**
+   * The number that need to be offset by before fetching the records
+   *
+   * // The sort order that is to be used to fetch the pagination response
+   * SORT_ORDER sort_order = 4;
+   * // The sort key that is to be used to fetch the pagination response
+   * VAULT_SORT_KEY sort_key = 5;
+   *
+   * @generated from field: uint64 offset = 3;
+   */
+  offset = protoInt64.zero;
+
+  /**
+   * The minimum timestamp that needs to be considered to filter by creation
+   *
+   * @generated from field: uint64 creation_timestamp_start = 101;
+   */
+  creationTimestampStart = protoInt64.zero;
+
+  /**
+   * The maximum timestamp that needs to be considered to filter by creation
+   *
+   * @generated from field: uint64 creation_timestamp_end = 102;
+   */
+  creationTimestampEnd = protoInt64.zero;
+
+  /**
+   * The minimum timestamp that needs to be considered to filter by modification
+   *
+   * @generated from field: uint64 modification_timestamp_start = 103;
+   */
+  modificationTimestampStart = protoInt64.zero;
+
+  /**
+   * The maximum timestamp that needs to be considered to filter by modification
+   *
+   * @generated from field: uint64 modification_timestamp_end = 104;
+   */
+  modificationTimestampEnd = protoInt64.zero;
+
+  /**
+   * The UUID of the file
+   *
+   * @generated from field: string vault_file_uuid = 20;
+   */
+  vaultFileUuid = "";
+
+  /**
+   * The UUID of the version
+   *
+   * --------------------------------------------------------
+   *
+   * @generated from field: string vault_file_version_uuid = 21;
+   */
+  vaultFileVersionUuid = "";
+
+  /**
+   * Stores the ID of the user who executed this enclave
+   *
+   * @generated from field: uint64 runner_user_id = 30;
+   */
+  runnerUserId = protoInt64.zero;
+
+  /**
+   * Stores the ID of the user when this enclave was executed
+   *
+   * @generated from field: uint64 runner_role_id = 31;
+   */
+  runnerRoleId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<EnclaveIngressFilterReq>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveIngressFilterReq";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "vault_file_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "vault_file_version_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "runner_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 31, name: "runner_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveIngressFilterReq {
+    return new EnclaveIngressFilterReq().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveIngressFilterReq {
+    return new EnclaveIngressFilterReq().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveIngressFilterReq {
+    return new EnclaveIngressFilterReq().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveIngressFilterReq | PlainMessage<EnclaveIngressFilterReq> | undefined, b: EnclaveIngressFilterReq | PlainMessage<EnclaveIngressFilterReq> | undefined): boolean {
+    return proto3.util.equals(EnclaveIngressFilterReq, a, b);
+  }
+}
+
+/**
+ *
+ * The request payload to verify an enclave ingress
+ *
+ * @generated from message Scailo.VerifyEnclaveIngressRequest
+ */
+export class VerifyEnclaveIngressRequest extends Message<VerifyEnclaveIngressRequest> {
+  /**
+   * The token that needs to be verified
+   *
+   * @generated from field: string token = 1;
+   */
+  token = "";
+
+  constructor(data?: PartialMessage<VerifyEnclaveIngressRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VerifyEnclaveIngressRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VerifyEnclaveIngressRequest {
+    return new VerifyEnclaveIngressRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VerifyEnclaveIngressRequest {
+    return new VerifyEnclaveIngressRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VerifyEnclaveIngressRequest {
+    return new VerifyEnclaveIngressRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VerifyEnclaveIngressRequest | PlainMessage<VerifyEnclaveIngressRequest> | undefined, b: VerifyEnclaveIngressRequest | PlainMessage<VerifyEnclaveIngressRequest> | undefined): boolean {
+    return proto3.util.equals(VerifyEnclaveIngressRequest, a, b);
+  }
+}
+
+/**
+ *
+ * The response payload to verify an enclave ingress
+ *
+ * @generated from message Scailo.VerifyEnclaveIngressResponse
+ */
+export class VerifyEnclaveIngressResponse extends Message<VerifyEnclaveIngressResponse> {
+  /**
+   * The name of the enclave
+   *
+   * @generated from field: string enclave_name = 1;
+   */
+  enclaveName = "";
+
+  /**
+   * The UUID of the user who is running the enclave
+   *
+   * @generated from field: string user_uuid = 2;
+   */
+  userUuid = "";
+
+  /**
+   * The UUID of the user's role
+   *
+   * @generated from field: string role_uuid = 3;
+   */
+  roleUuid = "";
+
+  /**
+   * The auth token of the user that can be used for subsequent requests
+   *
+   * @generated from field: string auth_token = 4;
+   */
+  authToken = "";
+
+  /**
+   * The timestamp after which the auth token expires
+   *
+   * @generated from field: uint64 expires_at = 5;
+   */
+  expiresAt = protoInt64.zero;
+
+  constructor(data?: PartialMessage<VerifyEnclaveIngressResponse>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VerifyEnclaveIngressResponse";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "enclave_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "role_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 5, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VerifyEnclaveIngressResponse {
+    return new VerifyEnclaveIngressResponse().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VerifyEnclaveIngressResponse {
+    return new VerifyEnclaveIngressResponse().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VerifyEnclaveIngressResponse {
+    return new VerifyEnclaveIngressResponse().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VerifyEnclaveIngressResponse | PlainMessage<VerifyEnclaveIngressResponse> | undefined, b: VerifyEnclaveIngressResponse | PlainMessage<VerifyEnclaveIngressResponse> | undefined): boolean {
+    return proto3.util.equals(VerifyEnclaveIngressResponse, a, b);
+  }
+}
+
+/**
+ *
+ * Stores the payload that is necessary to create a custom environment variable for an enclave
+ *
+ * @generated from message Scailo.EnclaveEnvironmentVariableAddRequest
+ */
+export class EnclaveEnvironmentVariableAddRequest extends Message<EnclaveEnvironmentVariableAddRequest> {
+  /**
+   * The UUID of the enclave file that will be updated with the given environment variable
+   *
+   * @generated from field: string file_uuid = 1;
+   */
+  fileUuid = "";
+
+  /**
+   * The name of the environment variable
+   *
+   * @generated from field: string name = 11;
+   */
+  name = "";
+
+  /**
+   * The value of the environment variable
+   *
+   * @generated from field: string value = 12;
+   */
+  value = "";
+
+  /**
+   * Denotes if the value should be stored as a secret (will not be visible to the user post creation)
+   *
+   * @generated from field: bool is_secret = 13;
+   */
+  isSecret = false;
+
+  constructor(data?: PartialMessage<EnclaveEnvironmentVariableAddRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveEnvironmentVariableAddRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "file_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "is_secret", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveEnvironmentVariableAddRequest {
+    return new EnclaveEnvironmentVariableAddRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariableAddRequest {
+    return new EnclaveEnvironmentVariableAddRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariableAddRequest {
+    return new EnclaveEnvironmentVariableAddRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveEnvironmentVariableAddRequest | PlainMessage<EnclaveEnvironmentVariableAddRequest> | undefined, b: EnclaveEnvironmentVariableAddRequest | PlainMessage<EnclaveEnvironmentVariableAddRequest> | undefined): boolean {
+    return proto3.util.equals(EnclaveEnvironmentVariableAddRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Stores the payload that is necessary to update a custom environment variable for an enclave
+ *
+ * @generated from message Scailo.EnclaveEnvironmentVariableUpdateRequest
+ */
+export class EnclaveEnvironmentVariableUpdateRequest extends Message<EnclaveEnvironmentVariableUpdateRequest> {
+  /**
+   * The UUID of the environment variables that needs to be updated
+   *
+   * @generated from field: string uuid = 1;
+   */
+  uuid = "";
+
+  /**
+   * The value of the environment variable that needs to be updated
+   *
+   * @generated from field: string value = 11;
+   */
+  value = "";
+
+  constructor(data?: PartialMessage<EnclaveEnvironmentVariableUpdateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveEnvironmentVariableUpdateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveEnvironmentVariableUpdateRequest {
+    return new EnclaveEnvironmentVariableUpdateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariableUpdateRequest {
+    return new EnclaveEnvironmentVariableUpdateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariableUpdateRequest {
+    return new EnclaveEnvironmentVariableUpdateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveEnvironmentVariableUpdateRequest | PlainMessage<EnclaveEnvironmentVariableUpdateRequest> | undefined, b: EnclaveEnvironmentVariableUpdateRequest | PlainMessage<EnclaveEnvironmentVariableUpdateRequest> | undefined): boolean {
+    return proto3.util.equals(EnclaveEnvironmentVariableUpdateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Denotes an individual environment variable that is part of an enclave
+ *
+ * @generated from message Scailo.EnclaveEnvironmentVariable
+ */
+export class EnclaveEnvironmentVariable extends Message<EnclaveEnvironmentVariable> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the metadata of this user
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   * Stores the ID of the file that the environment variable belongs to
+   *
+   * @generated from field: uint64 vault_file_id = 10;
+   */
+  vaultFileId = protoInt64.zero;
+
+  /**
+   * The name of the environment variable
+   *
+   * @generated from field: string name = 11;
+   */
+  name = "";
+
+  /**
+   * The value of the environment variable
+   *
+   * @generated from field: string value = 12;
+   */
+  value = "";
+
+  /**
+   * Denotes if the value should be stored as a secret (will not be visible to the user post creation)
+   *
+   * @generated from field: bool is_secret = 13;
+   */
+  isSecret = false;
+
+  constructor(data?: PartialMessage<EnclaveEnvironmentVariable>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveEnvironmentVariable";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 10, name: "vault_file_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "is_secret", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveEnvironmentVariable {
+    return new EnclaveEnvironmentVariable().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariable {
+    return new EnclaveEnvironmentVariable().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariable {
+    return new EnclaveEnvironmentVariable().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveEnvironmentVariable | PlainMessage<EnclaveEnvironmentVariable> | undefined, b: EnclaveEnvironmentVariable | PlainMessage<EnclaveEnvironmentVariable> | undefined): boolean {
+    return proto3.util.equals(EnclaveEnvironmentVariable, a, b);
+  }
+}
+
+/**
+ *
+ * Denotes the list of environment variables that are part of an enclave
+ *
+ * @generated from message Scailo.EnclaveEnvironmentVariablesList
+ */
+export class EnclaveEnvironmentVariablesList extends Message<EnclaveEnvironmentVariablesList> {
+  /**
+   * List of environment variables
+   *
+   * @generated from field: repeated Scailo.EnclaveEnvironmentVariable list = 1;
+   */
+  list: EnclaveEnvironmentVariable[] = [];
+
+  constructor(data?: PartialMessage<EnclaveEnvironmentVariablesList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveEnvironmentVariablesList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: EnclaveEnvironmentVariable, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveEnvironmentVariablesList {
+    return new EnclaveEnvironmentVariablesList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariablesList {
+    return new EnclaveEnvironmentVariablesList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveEnvironmentVariablesList {
+    return new EnclaveEnvironmentVariablesList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveEnvironmentVariablesList | PlainMessage<EnclaveEnvironmentVariablesList> | undefined, b: EnclaveEnvironmentVariablesList | PlainMessage<EnclaveEnvironmentVariablesList> | undefined): boolean {
+    return proto3.util.equals(EnclaveEnvironmentVariablesList, a, b);
+  }
+}
+
+/**
  * @generated from message Scailo.VaultSearchReq
  */
 export class VaultSearchReq extends Message<VaultSearchReq> {

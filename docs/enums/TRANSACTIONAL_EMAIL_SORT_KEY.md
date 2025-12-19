@@ -30,7 +30,7 @@ from enum value: TRANSACTIONAL_EMAIL_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/transactional_emails.scailo_pb.ts#L29)
+[src/transactional_emails.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/transactional_emails.scailo_pb.ts#L29)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: TRANSACTIONAL_EMAIL_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/transactional_emails.scailo_pb.ts#L22)
+[src/transactional_emails.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/transactional_emails.scailo_pb.ts#L22)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: TRANSACTIONAL_EMAIL_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/62dbffdf6a2951e2cc142a128ab465826fed4523/src/transactional_emails.scailo_pb.ts#L36)
+[src/transactional_emails.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/transactional_emails.scailo_pb.ts#L36)
