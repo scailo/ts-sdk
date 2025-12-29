@@ -34,7 +34,7 @@ from enum value: ACTIVITY_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/activities.scailo_pb.ts#L86)
+[src/activities.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/activities.scailo_pb.ts#L86)
 
 ___
 
@@ -50,7 +50,7 @@ from enum value: ACTIVITY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/activities.scailo_pb.ts#L72)
+[src/activities.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/activities.scailo_pb.ts#L72)
 
 ___
 
@@ -66,7 +66,7 @@ from enum value: ACTIVITY_SORT_KEY_DUE_BY = 12;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/activities.scailo_pb.ts#L107)
+[src/activities.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/activities.scailo_pb.ts#L107)
 
 ___
 
@@ -82,7 +82,7 @@ from enum value: ACTIVITY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/activities.scailo_pb.ts#L65)
+[src/activities.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/activities.scailo_pb.ts#L65)
 
 ___
 
@@ -98,7 +98,7 @@ from enum value: ACTIVITY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/activities.scailo_pb.ts#L79)
+[src/activities.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/activities.scailo_pb.ts#L79)
 
 ___
 
@@ -114,7 +114,7 @@ from enum value: ACTIVITY_SORT_KEY_STARTS_AT = 11;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/activities.scailo_pb.ts#L100)
+[src/activities.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/activities.scailo_pb.ts#L100)
 
 ___
 
@@ -130,4 +130,4 @@ from enum value: ACTIVITY_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/activities.scailo_pb.ts#L93)
+[src/activities.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/activities.scailo_pb.ts#L93)

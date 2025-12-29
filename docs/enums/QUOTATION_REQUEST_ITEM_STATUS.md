@@ -30,7 +30,7 @@ from enum value: QUOTATION_REQUEST_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/quotations_requests.scailo_pb.ts#L114)
+[src/quotations_requests.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/quotations_requests.scailo_pb.ts#L114)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: QUOTATION_REQUEST_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/quotations_requests.scailo_pb.ts#L121)
+[src/quotations_requests.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/quotations_requests.scailo_pb.ts#L121)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: QUOTATION_REQUEST_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/quotations_requests.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/quotations_requests.scailo_pb.ts#L128)
+[src/quotations_requests.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/quotations_requests.scailo_pb.ts#L128)

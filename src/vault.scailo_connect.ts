@@ -6,7 +6,7 @@
 import { VaultFile, VaultFileAddChunkRequest, VaultFileInitiateFileRequest, VaultFileInitiateFileResponse, VaultFileMoveFileRequest, VaultFileRenameFileRequest, VaultFilesList, VaultFileUnzipRequest, VaultFileVersionChunk, VaultFileVersionsList } from "./vault_files.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { BooleanResponse, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierZeroable, StandardFile } from "./base.scailo_pb.js";
-import { EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
+import { EnclaveDomain, EnclaveDomainAddRequest, EnclaveDomainsFilterReq, EnclaveDomainsList, EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
 import { VaultFolder, VaultFolderAddRequest, VaultFolderDownload, VaultFolderMoveFolderRequest, VaultFolderRenameFolderRequest, VaultFoldersList } from "./vault_folders.scailo_pb.js";
 import { GiXRelayReqWithBody, GiXRelayReqWithoutBody, GiXRelayResponse, VaultResourcesList } from "./vault.scailo_pb.js";
 import { RolesList } from "./roles.scailo_pb.js";
@@ -694,6 +694,61 @@ export const VaultService = {
       name: "ViewAllEnclaveEnvironmentVariables",
       I: IdentifierUUID,
       O: EnclaveEnvironmentVariablesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Add domain to enclave
+     *
+     * @generated from rpc Scailo.VaultService.AddEnclaveDomain
+     */
+    addEnclaveDomain: {
+      name: "AddEnclaveDomain",
+      I: EnclaveDomainAddRequest,
+      O: EnclaveDomain,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Delete domain from enclave
+     *
+     * @generated from rpc Scailo.VaultService.DeleteEnclaveDomain
+     */
+    deleteEnclaveDomain: {
+      name: "DeleteEnclaveDomain",
+      I: IdentifierUUID,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View domain for enclave represented by the Identifier
+     *
+     * @generated from rpc Scailo.VaultService.ViewEnclaveDomain
+     */
+    viewEnclaveDomain: {
+      name: "ViewEnclaveDomain",
+      I: IdentifierUUID,
+      O: EnclaveDomain,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all domains for enclave for the enclave represented by the Identifier
+     *
+     * @generated from rpc Scailo.VaultService.ViewAllEnclaveDomains
+     */
+    viewAllEnclaveDomains: {
+      name: "ViewAllEnclaveDomains",
+      I: IdentifierUUID,
+      O: EnclaveDomainsList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Filter all domains that match the given filter criteria
+     *
+     * @generated from rpc Scailo.VaultService.FilterEnclaveDomains
+     */
+    filterEnclaveDomains: {
+      name: "FilterEnclaveDomains",
+      I: EnclaveDomainsFilterReq,
+      O: EnclaveDomainsList,
       kind: MethodKind.Unary,
     },
   }

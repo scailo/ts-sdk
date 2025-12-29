@@ -31,7 +31,7 @@ from enum value: MERCHANDISE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/merchandises.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/merchandises.scailo_pb.ts#L23)
+[src/merchandises.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/merchandises.scailo_pb.ts#L23)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: MERCHANDISE_REF_FROM_GOODS_RECEIPT = 2;
 
 #### Defined in
 
-[src/merchandises.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/merchandises.scailo_pb.ts#L37)
+[src/merchandises.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/merchandises.scailo_pb.ts#L37)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: MERCHANDISE_REF_FROM_INITIAL_STOCK = 1;
 
 #### Defined in
 
-[src/merchandises.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/merchandises.scailo_pb.ts#L30)
+[src/merchandises.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/merchandises.scailo_pb.ts#L30)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: MERCHANDISE_REF_FROM_INWARD_JOB_FREE_ISSUE_MATERIAL = 3;
 
 #### Defined in
 
-[src/merchandises.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/merchandises.scailo_pb.ts#L44)
+[src/merchandises.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/merchandises.scailo_pb.ts#L44)

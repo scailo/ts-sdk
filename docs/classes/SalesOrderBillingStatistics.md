@@ -68,7 +68,7 @@ Message\&lt;SalesOrderBillingStatistics\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3512](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3512)
+[src/sales_orders.scailo_pb.ts:3512](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3512)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 credited = 3;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3510](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3510)
+[src/sales_orders.scailo_pb.ts:3510](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3510)
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 invoiced = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3503](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3503)
+[src/sales_orders.scailo_pb.ts:3503](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3503)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ordered = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3496](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3496)
+[src/sales_orders.scailo_pb.ts:3496](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3496)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3519](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3519)
+[src/sales_orders.scailo_pb.ts:3519](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3519)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3517](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3517)
+[src/sales_orders.scailo_pb.ts:3517](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3517)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3518](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3518)
+[src/sales_orders.scailo_pb.ts:3518](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3518)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3537](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3537)
+[src/sales_orders.scailo_pb.ts:3537](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3537)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3525](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3525)
+[src/sales_orders.scailo_pb.ts:3525](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3525)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3529](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3529)
+[src/sales_orders.scailo_pb.ts:3529](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3529)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3533](https://github.com/scailo/ts-sdk/blob/0476175fbfcb1eb56e1e12cd1b6da9e681bc9685/src/sales_orders.scailo_pb.ts#L3533)
+[src/sales_orders.scailo_pb.ts:3533](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/sales_orders.scailo_pb.ts#L3533)

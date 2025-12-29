@@ -119,6 +119,41 @@ proto3.util.setEnumType(VAULT_PERMISSION_CODE, "Scailo.VAULT_PERMISSION_CODE", [
 
 /**
  *
+ * Describes the available sort keys for enclave domains
+ *
+ * @generated from enum Scailo.ENCLAVE_DOMAIN_SORT_KEY
+ */
+export enum ENCLAVE_DOMAIN_SORT_KEY {
+  /**
+   * Fetch ordered results by id
+   *
+   * @generated from enum value: ENCLAVE_DOMAIN_SORT_KEY_ID_UNSPECIFIED = 0;
+   */
+  ENCLAVE_DOMAIN_SORT_KEY_ID_UNSPECIFIED = 0,
+
+  /**
+   * Fetch ordered results by the creation timestamp
+   *
+   * @generated from enum value: ENCLAVE_DOMAIN_SORT_KEY_CREATED_AT = 1;
+   */
+  ENCLAVE_DOMAIN_SORT_KEY_CREATED_AT = 1,
+
+  /**
+   * Fetch ordered results by the domain
+   *
+   * @generated from enum value: ENCLAVE_DOMAIN_SORT_KEY_DOMAIN = 10;
+   */
+  ENCLAVE_DOMAIN_SORT_KEY_DOMAIN = 10,
+}
+// Retrieve enum metadata with: proto3.getEnumType(ENCLAVE_DOMAIN_SORT_KEY)
+proto3.util.setEnumType(ENCLAVE_DOMAIN_SORT_KEY, "Scailo.ENCLAVE_DOMAIN_SORT_KEY", [
+  { no: 0, name: "ENCLAVE_DOMAIN_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "ENCLAVE_DOMAIN_SORT_KEY_CREATED_AT" },
+  { no: 10, name: "ENCLAVE_DOMAIN_SORT_KEY_DOMAIN" },
+]);
+
+/**
+ *
  * Describes the available sort keys
  *
  * @generated from enum Scailo.VAULT_SORT_KEY
@@ -1924,6 +1959,302 @@ export class EnclaveEnvironmentVariablesList extends Message<EnclaveEnvironmentV
 
   static equals(a: EnclaveEnvironmentVariablesList | PlainMessage<EnclaveEnvironmentVariablesList> | undefined, b: EnclaveEnvironmentVariablesList | PlainMessage<EnclaveEnvironmentVariablesList> | undefined): boolean {
     return proto3.util.equals(EnclaveEnvironmentVariablesList, a, b);
+  }
+}
+
+/**
+ *
+ * Stores the payload that is necessary to create a custom domain for an enclave
+ *
+ * @generated from message Scailo.EnclaveDomainAddRequest
+ */
+export class EnclaveDomainAddRequest extends Message<EnclaveDomainAddRequest> {
+  /**
+   * The UUID of the enclave file that will be updated with the given domain
+   *
+   * @generated from field: string file_uuid = 1;
+   */
+  fileUuid = "";
+
+  /**
+   * The domain that points to the enclave
+   *
+   * @generated from field: string domain = 11;
+   */
+  domain = "";
+
+  constructor(data?: PartialMessage<EnclaveDomainAddRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveDomainAddRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "file_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "domain", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveDomainAddRequest {
+    return new EnclaveDomainAddRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveDomainAddRequest {
+    return new EnclaveDomainAddRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveDomainAddRequest {
+    return new EnclaveDomainAddRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveDomainAddRequest | PlainMessage<EnclaveDomainAddRequest> | undefined, b: EnclaveDomainAddRequest | PlainMessage<EnclaveDomainAddRequest> | undefined): boolean {
+    return proto3.util.equals(EnclaveDomainAddRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Denotes an individual domain that is part of an enclave
+ *
+ * @generated from message Scailo.EnclaveDomain
+ */
+export class EnclaveDomain extends Message<EnclaveDomain> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the metadata of this user
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   * Stores the ID of the file that the domain belongs to
+   *
+   * @generated from field: uint64 vault_file_id = 10;
+   */
+  vaultFileId = protoInt64.zero;
+
+  /**
+   * The domain that points to the enclave
+   *
+   * @generated from field: string domain = 11;
+   */
+  domain = "";
+
+  /**
+   * The internal address of the service that the domain points to
+   *
+   * @generated from field: string service_addr = 12;
+   */
+  serviceAddr = "";
+
+  constructor(data?: PartialMessage<EnclaveDomain>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveDomain";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 10, name: "vault_file_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "domain", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "service_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveDomain {
+    return new EnclaveDomain().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveDomain {
+    return new EnclaveDomain().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveDomain {
+    return new EnclaveDomain().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveDomain | PlainMessage<EnclaveDomain> | undefined, b: EnclaveDomain | PlainMessage<EnclaveDomain> | undefined): boolean {
+    return proto3.util.equals(EnclaveDomain, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the request payload of a enclave domains filter search
+ *
+ * @generated from message Scailo.EnclaveDomainsFilterReq
+ */
+export class EnclaveDomainsFilterReq extends Message<EnclaveDomainsFilterReq> {
+  /**
+   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   */
+  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+
+  /**
+   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @generated from field: int64 count = 2;
+   */
+  count = protoInt64.zero;
+
+  /**
+   * The number that need to be offset by before fetching the records
+   *
+   * @generated from field: uint64 offset = 3;
+   */
+  offset = protoInt64.zero;
+
+  /**
+   * The sort order that is to be used to fetch the pagination response
+   *
+   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   */
+  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+
+  /**
+   * The sort key that is to be used to fetch the pagination response
+   *
+   * @generated from field: Scailo.ENCLAVE_DOMAIN_SORT_KEY sort_key = 5;
+   */
+  sortKey = ENCLAVE_DOMAIN_SORT_KEY.ENCLAVE_DOMAIN_SORT_KEY_ID_UNSPECIFIED;
+
+  /**
+   * The minimum timestamp that needs to be considered to filter by creation
+   *
+   * @generated from field: uint64 creation_timestamp_start = 101;
+   */
+  creationTimestampStart = protoInt64.zero;
+
+  /**
+   * The maximum timestamp that needs to be considered to filter by creation
+   *
+   * @generated from field: uint64 creation_timestamp_end = 102;
+   */
+  creationTimestampEnd = protoInt64.zero;
+
+  /**
+   * The minimum timestamp that needs to be considered to filter by modification
+   *
+   * @generated from field: uint64 modification_timestamp_start = 103;
+   */
+  modificationTimestampStart = protoInt64.zero;
+
+  /**
+   * The maximum timestamp that needs to be considered to filter by modification
+   *
+   * @generated from field: uint64 modification_timestamp_end = 104;
+   */
+  modificationTimestampEnd = protoInt64.zero;
+
+  /**
+   * The entity UUID that is to be used to filter records
+   *
+   * @generated from field: string entity_uuid = 8;
+   */
+  entityUuid = "";
+
+  /**
+   * The domain that points to the enclave
+   *
+   * @generated from field: string domain = 11;
+   */
+  domain = "";
+
+  /**
+   * The internal address of the service that the domain points to
+   *
+   * @generated from field: string service_addr = 12;
+   */
+  serviceAddr = "";
+
+  constructor(data?: PartialMessage<EnclaveDomainsFilterReq>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveDomainsFilterReq";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ENCLAVE_DOMAIN_SORT_KEY) },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "domain", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "service_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveDomainsFilterReq {
+    return new EnclaveDomainsFilterReq().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveDomainsFilterReq {
+    return new EnclaveDomainsFilterReq().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveDomainsFilterReq {
+    return new EnclaveDomainsFilterReq().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveDomainsFilterReq | PlainMessage<EnclaveDomainsFilterReq> | undefined, b: EnclaveDomainsFilterReq | PlainMessage<EnclaveDomainsFilterReq> | undefined): boolean {
+    return proto3.util.equals(EnclaveDomainsFilterReq, a, b);
+  }
+}
+
+/**
+ *
+ * Denotes the list of domains that are part of an enclave
+ *
+ * @generated from message Scailo.EnclaveDomainsList
+ */
+export class EnclaveDomainsList extends Message<EnclaveDomainsList> {
+  /**
+   * List of domains
+   *
+   * @generated from field: repeated Scailo.EnclaveDomain list = 1;
+   */
+  list: EnclaveDomain[] = [];
+
+  constructor(data?: PartialMessage<EnclaveDomainsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveDomainsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: EnclaveDomain, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveDomainsList {
+    return new EnclaveDomainsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveDomainsList {
+    return new EnclaveDomainsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveDomainsList {
+    return new EnclaveDomainsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveDomainsList | PlainMessage<EnclaveDomainsList> | undefined, b: EnclaveDomainsList | PlainMessage<EnclaveDomainsList> | undefined): boolean {
+    return proto3.util.equals(EnclaveDomainsList, a, b);
   }
 }
 
