@@ -30,7 +30,7 @@ from enum value: REPLACEABLE_INDENT_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/replaceable_indents.scailo_pb.ts#L189)
+[src/replaceable_indents.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/replaceable_indents.scailo_pb.ts#L189)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: REPLACEABLE_INDENT_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/replaceable_indents.scailo_pb.ts#L196)
+[src/replaceable_indents.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/replaceable_indents.scailo_pb.ts#L196)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: REPLACEABLE_INDENT_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/replaceable_indents.scailo_pb.ts#L203)
+[src/replaceable_indents.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/replaceable_indents.scailo_pb.ts#L203)

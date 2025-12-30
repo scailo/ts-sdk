@@ -30,7 +30,7 @@ from enum value: PAYROLL_GROUP_ITEM_VALUE_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/payroll_groups.scailo_pb.ts#L22)
+[src/payroll_groups.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/payroll_groups.scailo_pb.ts#L22)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PAYROLL_GROUP_ITEM_VALUE_TYPE_FIXED = 2;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/payroll_groups.scailo_pb.ts#L36)
+[src/payroll_groups.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/payroll_groups.scailo_pb.ts#L36)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PAYROLL_GROUP_ITEM_VALUE_TYPE_PERCENTAGE = 1;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/payroll_groups.scailo_pb.ts#L29)
+[src/payroll_groups.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/payroll_groups.scailo_pb.ts#L29)

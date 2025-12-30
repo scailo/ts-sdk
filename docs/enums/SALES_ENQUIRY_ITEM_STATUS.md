@@ -30,7 +30,7 @@ from enum value: SALES_ENQUIRY_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/sales_enquiries.scailo_pb.ts#L122)
+[src/sales_enquiries.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/sales_enquiries.scailo_pb.ts#L122)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SALES_ENQUIRY_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:129](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/sales_enquiries.scailo_pb.ts#L129)
+[src/sales_enquiries.scailo_pb.ts:129](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/sales_enquiries.scailo_pb.ts#L129)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SALES_ENQUIRY_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/sales_enquiries.scailo_pb.ts#L136)
+[src/sales_enquiries.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/sales_enquiries.scailo_pb.ts#L136)

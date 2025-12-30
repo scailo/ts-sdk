@@ -2272,6 +2272,13 @@ export class EnclaveDomainSuffixResp extends Message<EnclaveDomainSuffixResp> {
    */
   suffix = "";
 
+  /**
+   * The relay that is used
+   *
+   * @generated from field: string relay = 2;
+   */
+  relay = "";
+
   constructor(data?: PartialMessage<EnclaveDomainSuffixResp>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2281,6 +2288,7 @@ export class EnclaveDomainSuffixResp extends Message<EnclaveDomainSuffixResp> {
   static readonly typeName = "Scailo.EnclaveDomainSuffixResp";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "suffix", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "relay", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveDomainSuffixResp {

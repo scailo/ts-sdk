@@ -30,7 +30,7 @@ from enum value: PURCHASE_RETURN_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/purchases_returns.scailo_pb.ts#L141)
+[src/purchases_returns.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/purchases_returns.scailo_pb.ts#L141)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PURCHASE_RETURN_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/purchases_returns.scailo_pb.ts#L148)
+[src/purchases_returns.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/purchases_returns.scailo_pb.ts#L148)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PURCHASE_RETURN_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/purchases_returns.scailo_pb.ts#L155)
+[src/purchases_returns.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/purchases_returns.scailo_pb.ts#L155)

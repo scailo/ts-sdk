@@ -1468,6 +1468,12 @@ export declare class EnclaveDomainSuffixResp extends Message<EnclaveDomainSuffix
      * @generated from field: string suffix = 1;
      */
     suffix: string;
+    /**
+     * The relay that is used
+     *
+     * @generated from field: string relay = 2;
+     */
+    relay: string;
     constructor(data?: PartialMessage<EnclaveDomainSuffixResp>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.EnclaveDomainSuffixResp";

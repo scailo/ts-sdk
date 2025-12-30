@@ -66,7 +66,7 @@ Message\&lt;AbsencesList\&gt;.constructor
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:564](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L564)
+[src/absences.scailo_pb.ts:564](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L564)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Absence list = 1;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:562](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L562)
+[src/absences.scailo_pb.ts:562](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L562)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:571](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L571)
+[src/absences.scailo_pb.ts:571](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L571)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:569](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L569)
+[src/absences.scailo_pb.ts:569](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L569)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:570](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L570)
+[src/absences.scailo_pb.ts:570](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L570)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:587](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L587)
+[src/absences.scailo_pb.ts:587](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L587)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:575](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L575)
+[src/absences.scailo_pb.ts:575](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L575)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:579](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L579)
+[src/absences.scailo_pb.ts:579](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L579)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:583](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/absences.scailo_pb.ts#L583)
+[src/absences.scailo_pb.ts:583](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/absences.scailo_pb.ts#L583)

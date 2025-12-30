@@ -71,7 +71,7 @@ Message\&lt;AttendancesServiceImageEntryRequest\&gt;.constructor
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L383)
+[src/attendances.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L383)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L342)
+[src/attendances.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L342)
 
 ___
 
@@ -103,7 +103,7 @@ from field: bytes entry_image = 13;
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L360)
+[src/attendances.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L360)
 
 ___
 
@@ -119,7 +119,7 @@ from field: string entry_image_mime_type = 14;
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L367)
+[src/attendances.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L367)
 
 ___
 
@@ -135,7 +135,7 @@ from field: double entry_latitude = 15;
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L374)
+[src/attendances.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L374)
 
 ___
 
@@ -151,7 +151,7 @@ from field: double entry_longitude = 16;
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:381](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L381)
+[src/attendances.scailo_pb.ts:381](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L381)
 
 ___
 
@@ -171,7 +171,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:353](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L353)
+[src/attendances.scailo_pb.ts:353](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L353)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:390](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L390)
+[src/attendances.scailo_pb.ts:390](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L390)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L388)
+[src/attendances.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L388)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:389](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L389)
+[src/attendances.scailo_pb.ts:389](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L389)
 
 ## Methods
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L411)
+[src/attendances.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L411)
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L399)
+[src/attendances.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L399)
 
 ___
 
@@ -531,7 +531,7 @@ ___
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L403)
+[src/attendances.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L403)
 
 ___
 
@@ -552,4 +552,4 @@ ___
 
 #### Defined in
 
-[src/attendances.scailo_pb.ts:407](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/attendances.scailo_pb.ts#L407)
+[src/attendances.scailo_pb.ts:407](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/attendances.scailo_pb.ts#L407)
