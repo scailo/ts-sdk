@@ -1,7 +1,7 @@
 import { VaultFile, VaultFileAddChunkRequest, VaultFileInitiateFileRequest, VaultFileInitiateFileResponse, VaultFileMoveFileRequest, VaultFileRenameFileRequest, VaultFilesList, VaultFileUnzipRequest, VaultFileVersionChunk, VaultFileVersionsList } from "./vault_files.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { BooleanResponse, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierZeroable, StandardFile } from "./base.scailo_pb.js";
-import { EnclaveDomain, EnclaveDomainAddRequest, EnclaveDomainsFilterReq, EnclaveDomainsList, EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
+import { BooleanResponse, CountResponse, Empty, Identifier, IdentifierResponse, IdentifierUUID, IdentifierZeroable, StandardFile } from "./base.scailo_pb.js";
+import { EnclaveDomain, EnclaveDomainAddRequest, EnclaveDomainsFilterReq, EnclaveDomainsList, EnclaveDomainSuffixResp, EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
 import { VaultFolder, VaultFolderAddRequest, VaultFolderDownload, VaultFolderMoveFolderRequest, VaultFolderRenameFolderRequest, VaultFoldersList } from "./vault_folders.scailo_pb.js";
 import { GiXRelayReqWithBody, GiXRelayReqWithoutBody, GiXRelayResponse, VaultResourcesList } from "./vault.scailo_pb.js";
 import { RolesList } from "./roles.scailo_pb.js";
@@ -732,6 +732,17 @@ export declare const VaultService: {
             readonly name: "ViewAllEnclaveDomains";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof EnclaveDomainsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Retrieve the default domain suffix that could be used for creating a new domain
+         *
+         * @generated from rpc Scailo.VaultService.ViewDomainSuffix
+         */
+        readonly viewDomainSuffix: {
+            readonly name: "ViewDomainSuffix";
+            readonly I: typeof Empty;
+            readonly O: typeof EnclaveDomainSuffixResp;
             readonly kind: MethodKind.Unary;
         };
         /**

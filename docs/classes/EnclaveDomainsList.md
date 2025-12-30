@@ -66,7 +66,7 @@ Message\&lt;EnclaveDomainsList\&gt;.constructor
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2233](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2233)
+[src/vault_commons.scailo_pb.ts:2233](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2233)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.EnclaveDomain list = 1;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2231](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2231)
+[src/vault_commons.scailo_pb.ts:2231](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2231)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2240](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2240)
+[src/vault_commons.scailo_pb.ts:2240](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2240)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2238](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2238)
+[src/vault_commons.scailo_pb.ts:2238](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2238)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2239](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2239)
+[src/vault_commons.scailo_pb.ts:2239](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2239)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2256](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2256)
+[src/vault_commons.scailo_pb.ts:2256](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2256)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2244](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2244)
+[src/vault_commons.scailo_pb.ts:2244](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2244)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2248](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2248)
+[src/vault_commons.scailo_pb.ts:2248](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2248)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:2252](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/vault_commons.scailo_pb.ts#L2252)
+[src/vault_commons.scailo_pb.ts:2252](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/vault_commons.scailo_pb.ts#L2252)

@@ -2259,6 +2259,48 @@ export class EnclaveDomainsList extends Message<EnclaveDomainsList> {
 }
 
 /**
+ *
+ * The response that contains the default domain suffix that is used for creating enclave domains
+ *
+ * @generated from message Scailo.EnclaveDomainSuffixResp
+ */
+export class EnclaveDomainSuffixResp extends Message<EnclaveDomainSuffixResp> {
+  /**
+   * The suffix that is used
+   *
+   * @generated from field: string suffix = 1;
+   */
+  suffix = "";
+
+  constructor(data?: PartialMessage<EnclaveDomainSuffixResp>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveDomainSuffixResp";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "suffix", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveDomainSuffixResp {
+    return new EnclaveDomainSuffixResp().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveDomainSuffixResp {
+    return new EnclaveDomainSuffixResp().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveDomainSuffixResp {
+    return new EnclaveDomainSuffixResp().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveDomainSuffixResp | PlainMessage<EnclaveDomainSuffixResp> | undefined, b: EnclaveDomainSuffixResp | PlainMessage<EnclaveDomainSuffixResp> | undefined): boolean {
+    return proto3.util.equals(EnclaveDomainSuffixResp, a, b);
+  }
+}
+
+/**
  * @generated from message Scailo.VaultSearchReq
  */
 export class VaultSearchReq extends Message<VaultSearchReq> {

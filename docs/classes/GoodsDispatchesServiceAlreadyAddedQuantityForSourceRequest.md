@@ -68,7 +68,7 @@ Message\&lt;GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest\&gt;.cons
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1630](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1630)
+[src/goods_dispatches.scailo_pb.ts:1630](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1630)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1628](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1628)
+[src/goods_dispatches.scailo_pb.ts:1628](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1628)
 
 ___
 
@@ -100,7 +100,7 @@ from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1614](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1614)
+[src/goods_dispatches.scailo_pb.ts:1614](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1614)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1621](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1621)
+[src/goods_dispatches.scailo_pb.ts:1621](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1621)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1637](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1637)
+[src/goods_dispatches.scailo_pb.ts:1637](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1637)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1635](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1635)
+[src/goods_dispatches.scailo_pb.ts:1635](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1635)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1636](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1636)
+[src/goods_dispatches.scailo_pb.ts:1636](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1636)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1655](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1655)
+[src/goods_dispatches.scailo_pb.ts:1655](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1655)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1643](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1643)
+[src/goods_dispatches.scailo_pb.ts:1643](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1643)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1647](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1647)
+[src/goods_dispatches.scailo_pb.ts:1647](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1647)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1651](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/goods_dispatches.scailo_pb.ts#L1651)
+[src/goods_dispatches.scailo_pb.ts:1651](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/goods_dispatches.scailo_pb.ts#L1651)

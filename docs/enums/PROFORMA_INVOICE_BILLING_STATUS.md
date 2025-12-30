@@ -30,7 +30,7 @@ from enum value: PROFORMA_INVOICE_BILLING_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/proforma_invoices.scailo_pb.ts#L149)
+[src/proforma_invoices.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/proforma_invoices.scailo_pb.ts#L149)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PROFORMA_INVOICE_BILLING_STATUS_BILLED = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/proforma_invoices.scailo_pb.ts#L156)
+[src/proforma_invoices.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/proforma_invoices.scailo_pb.ts#L156)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PROFORMA_INVOICE_BILLING_STATUS_UNBILLED = 2;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/proforma_invoices.scailo_pb.ts#L163)
+[src/proforma_invoices.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/proforma_invoices.scailo_pb.ts#L163)

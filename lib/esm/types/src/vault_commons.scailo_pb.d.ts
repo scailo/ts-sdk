@@ -1456,6 +1456,28 @@ export declare class EnclaveDomainsList extends Message<EnclaveDomainsList> {
     static equals(a: EnclaveDomainsList | PlainMessage<EnclaveDomainsList> | undefined, b: EnclaveDomainsList | PlainMessage<EnclaveDomainsList> | undefined): boolean;
 }
 /**
+ *
+ * The response that contains the default domain suffix that is used for creating enclave domains
+ *
+ * @generated from message Scailo.EnclaveDomainSuffixResp
+ */
+export declare class EnclaveDomainSuffixResp extends Message<EnclaveDomainSuffixResp> {
+    /**
+     * The suffix that is used
+     *
+     * @generated from field: string suffix = 1;
+     */
+    suffix: string;
+    constructor(data?: PartialMessage<EnclaveDomainSuffixResp>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveDomainSuffixResp";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveDomainSuffixResp;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveDomainSuffixResp;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveDomainSuffixResp;
+    static equals(a: EnclaveDomainSuffixResp | PlainMessage<EnclaveDomainSuffixResp> | undefined, b: EnclaveDomainSuffixResp | PlainMessage<EnclaveDomainSuffixResp> | undefined): boolean;
+}
+/**
  * @generated from message Scailo.VaultSearchReq
  */
 export declare class VaultSearchReq extends Message<VaultSearchReq> {

@@ -29,7 +29,7 @@ from enum value: WORK_ORDER_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/work_orders.scailo_pb.ts#L23)
+[src/work_orders.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/work_orders.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: WORK_ORDER_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/d2ec702cea580ca309f095c7118072f83e1bd44a/src/work_orders.scailo_pb.ts#L30)
+[src/work_orders.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/dad1253b1ccc719561e53d6336daf37f7c6c7a11/src/work_orders.scailo_pb.ts#L30)
