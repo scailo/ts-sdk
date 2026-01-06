@@ -734,6 +734,40 @@ export declare class EnclaveResources extends Message<EnclaveResources> {
 }
 /**
  *
+ * Describes each environment variable that is defined in the Manifest of an Enclave
+ *
+ * @generated from message Scailo.EnclaveManifestEnvVariable
+ */
+export declare class EnclaveManifestEnvVariable extends Message<EnclaveManifestEnvVariable> {
+    /**
+     * Stores the name of the environment variable
+     *
+     * @generated from field: string name = 1;
+     */
+    name: string;
+    /**
+     * Stores the default value of the environment variable
+     *
+     * @generated from field: string value = 2;
+     */
+    value: string;
+    /**
+     * Stores if the variable is a secret
+     *
+     * @generated from field: bool is_secret = 3 [json_name = "is_secret"];
+     */
+    isSecret: boolean;
+    constructor(data?: PartialMessage<EnclaveManifestEnvVariable>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveManifestEnvVariable";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveManifestEnvVariable;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveManifestEnvVariable;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveManifestEnvVariable;
+    static equals(a: EnclaveManifestEnvVariable | PlainMessage<EnclaveManifestEnvVariable> | undefined, b: EnclaveManifestEnvVariable | PlainMessage<EnclaveManifestEnvVariable> | undefined): boolean;
+}
+/**
+ *
  * Describes the manifest file of an Enclave. Stores the attributes that can be a part of the MANIFEST.yaml file, that is present in the root folder of an Enclave
  *
  * @generated from message Scailo.EnclaveManifest
@@ -746,11 +780,11 @@ export declare class EnclaveManifest extends Message<EnclaveManifest> {
      */
     manifestVersion: string;
     /**
-     * Stores the enclave type (valid options are node, golang, python)
+     * Stores the enclave runtime (valid options are node, golang, python)
      *
-     * @generated from field: string enclave_type = 2 [json_name = "enclave_type"];
+     * @generated from field: string enclave_runtime = 2 [json_name = "enclave_runtime"];
      */
-    enclaveType: string;
+    enclaveRuntime: string;
     /**
      * Stores the application version
      *
@@ -781,6 +815,18 @@ export declare class EnclaveManifest extends Message<EnclaveManifest> {
      * @generated from field: string start_exec = 7 [json_name = "start_exec"];
      */
     startExec: string;
+    /**
+     * Stores how the entry to the application is to be handled
+     *
+     * @generated from field: string entry_point_management = 8 [json_name = "entry_point_management"];
+     */
+    entryPointManagement: string;
+    /**
+     * Stores the list of default environment variables
+     *
+     * @generated from field: repeated Scailo.EnclaveManifestEnvVariable env_variables = 9 [json_name = "env_variables"];
+     */
+    envVariables: EnclaveManifestEnvVariable[];
     /**
      * Stores the resources of the Enclave
      *

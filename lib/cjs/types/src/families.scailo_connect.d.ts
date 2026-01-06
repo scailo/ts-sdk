@@ -334,6 +334,17 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View all labels for given family IDs
+         *
+         * @generated from rpc Scailo.FamiliesService.ViewLabelsForFamilyIDs
+         */
+        readonly viewLabelsForFamilyIDs: {
+            readonly name: "ViewLabelsForFamilyIDs";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof FamilyLabelsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Add a unit conversion
          *
          * @generated from rpc Scailo.FamiliesService.AddUnitConversion

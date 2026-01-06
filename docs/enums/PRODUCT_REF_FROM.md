@@ -30,7 +30,7 @@ from enum value: PRODUCT_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/products.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/products.scailo_pb.ts#L23)
+[src/products.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/products.scailo_pb.ts#L23)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PRODUCT_REF_FROM_INITIAL_STOCK = 1;
 
 #### Defined in
 
-[src/products.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/products.scailo_pb.ts#L30)
+[src/products.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/products.scailo_pb.ts#L30)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PRODUCT_REF_FROM_PRODUCTION_PLAN = 5;
 
 #### Defined in
 
-[src/products.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/products.scailo_pb.ts#L37)
+[src/products.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/products.scailo_pb.ts#L37)

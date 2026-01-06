@@ -36,7 +36,7 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L94)
+[src/stock_issuances.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L94)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L87)
+[src/stock_issuances.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L87)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L101)
+[src/stock_issuances.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L101)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L108)
+[src/stock_issuances.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L108)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L73)
+[src/stock_issuances.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L73)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L122)
+[src/stock_issuances.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L122)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L66)
+[src/stock_issuances.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L66)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L80)
+[src/stock_issuances.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L80)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: STOCK_ISSUANCE_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/stock_issuances.scailo_pb.ts#L115)
+[src/stock_issuances.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_issuances.scailo_pb.ts#L115)

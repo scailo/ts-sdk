@@ -340,6 +340,17 @@ export const FamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View all labels for given family IDs
+     *
+     * @generated from rpc Scailo.FamiliesService.ViewLabelsForFamilyIDs
+     */
+    viewLabelsForFamilyIDs: {
+      name: "ViewLabelsForFamilyIDs",
+      I: IdentifiersList,
+      O: FamilyLabelsList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Add a unit conversion
      *
      * @generated from rpc Scailo.FamiliesService.AddUnitConversion

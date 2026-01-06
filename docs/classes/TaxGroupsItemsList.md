@@ -66,7 +66,7 @@ Message\&lt;TaxGroupsItemsList\&gt;.constructor
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1279](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1279)
+[src/tax_groups.scailo_pb.ts:1279](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1279)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.TaxGroupItem list = 1;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1277](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1277)
+[src/tax_groups.scailo_pb.ts:1277](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1277)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1286](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1286)
+[src/tax_groups.scailo_pb.ts:1286](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1286)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1284](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1284)
+[src/tax_groups.scailo_pb.ts:1284](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1284)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1285](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1285)
+[src/tax_groups.scailo_pb.ts:1285](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1285)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1302](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1302)
+[src/tax_groups.scailo_pb.ts:1302](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1302)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1290](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1290)
+[src/tax_groups.scailo_pb.ts:1290](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1290)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1294](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1294)
+[src/tax_groups.scailo_pb.ts:1294](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1294)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:1298](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_groups.scailo_pb.ts#L1298)
+[src/tax_groups.scailo_pb.ts:1298](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_groups.scailo_pb.ts#L1298)

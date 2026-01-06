@@ -71,7 +71,7 @@ Message\&lt;TaxParamsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:636](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L636)
+[src/tax_params.scailo_pb.ts:636](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L636)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L606)
+[src/tax_params.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L606)
 
 ___
 
@@ -103,7 +103,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:599](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L599)
+[src/tax_params.scailo_pb.ts:599](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L599)
 
 ___
 
@@ -119,7 +119,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L613)
+[src/tax_params.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L613)
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.TAX_PARAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L627)
+[src/tax_params.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L627)
 
 ___
 
@@ -151,7 +151,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L620)
+[src/tax_params.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L620)
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:634](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L634)
+[src/tax_params.scailo_pb.ts:634](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L634)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L643)
+[src/tax_params.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L643)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L641)
+[src/tax_params.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L641)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:642](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L642)
+[src/tax_params.scailo_pb.ts:642](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L642)
 
 ## Methods
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:664](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L664)
+[src/tax_params.scailo_pb.ts:664](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L664)
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:652](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L652)
+[src/tax_params.scailo_pb.ts:652](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L652)
 
 ___
 
@@ -527,7 +527,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:656](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L656)
+[src/tax_params.scailo_pb.ts:656](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L656)
 
 ___
 
@@ -548,4 +548,4 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/tax_params.scailo_pb.ts#L660)
+[src/tax_params.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L660)

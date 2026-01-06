@@ -1109,6 +1109,64 @@ export class EnclaveResources extends Message<EnclaveResources> {
 
 /**
  *
+ * Describes each environment variable that is defined in the Manifest of an Enclave
+ *
+ * @generated from message Scailo.EnclaveManifestEnvVariable
+ */
+export class EnclaveManifestEnvVariable extends Message<EnclaveManifestEnvVariable> {
+  /**
+   * Stores the name of the environment variable
+   *
+   * @generated from field: string name = 1;
+   */
+  name = "";
+
+  /**
+   * Stores the default value of the environment variable
+   *
+   * @generated from field: string value = 2;
+   */
+  value = "";
+
+  /**
+   * Stores if the variable is a secret
+   *
+   * @generated from field: bool is_secret = 3 [json_name = "is_secret"];
+   */
+  isSecret = false;
+
+  constructor(data?: PartialMessage<EnclaveManifestEnvVariable>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.EnclaveManifestEnvVariable";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "is_secret", jsonName: "is_secret", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveManifestEnvVariable {
+    return new EnclaveManifestEnvVariable().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveManifestEnvVariable {
+    return new EnclaveManifestEnvVariable().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveManifestEnvVariable {
+    return new EnclaveManifestEnvVariable().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: EnclaveManifestEnvVariable | PlainMessage<EnclaveManifestEnvVariable> | undefined, b: EnclaveManifestEnvVariable | PlainMessage<EnclaveManifestEnvVariable> | undefined): boolean {
+    return proto3.util.equals(EnclaveManifestEnvVariable, a, b);
+  }
+}
+
+/**
+ *
  * Describes the manifest file of an Enclave. Stores the attributes that can be a part of the MANIFEST.yaml file, that is present in the root folder of an Enclave
  *
  * @generated from message Scailo.EnclaveManifest
@@ -1122,11 +1180,11 @@ export class EnclaveManifest extends Message<EnclaveManifest> {
   manifestVersion = "";
 
   /**
-   * Stores the enclave type (valid options are node, golang, python)
+   * Stores the enclave runtime (valid options are node, golang, python)
    *
-   * @generated from field: string enclave_type = 2 [json_name = "enclave_type"];
+   * @generated from field: string enclave_runtime = 2 [json_name = "enclave_runtime"];
    */
-  enclaveType = "";
+  enclaveRuntime = "";
 
   /**
    * Stores the application version
@@ -1164,6 +1222,20 @@ export class EnclaveManifest extends Message<EnclaveManifest> {
   startExec = "";
 
   /**
+   * Stores how the entry to the application is to be handled
+   *
+   * @generated from field: string entry_point_management = 8 [json_name = "entry_point_management"];
+   */
+  entryPointManagement = "";
+
+  /**
+   * Stores the list of default environment variables
+   *
+   * @generated from field: repeated Scailo.EnclaveManifestEnvVariable env_variables = 9 [json_name = "env_variables"];
+   */
+  envVariables: EnclaveManifestEnvVariable[] = [];
+
+  /**
    * Stores the resources of the Enclave
    *
    * @generated from field: Scailo.EnclaveResources resources = 10;
@@ -1179,12 +1251,14 @@ export class EnclaveManifest extends Message<EnclaveManifest> {
   static readonly typeName = "Scailo.EnclaveManifest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "manifest_version", jsonName: "manifest_version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "enclave_type", jsonName: "enclave_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "enclave_runtime", jsonName: "enclave_runtime", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "app_version", jsonName: "app_version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "app_name", jsonName: "app_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "enclave_name", jsonName: "enclave_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "app_unique_identifier", jsonName: "app_unique_identifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "start_exec", jsonName: "start_exec", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 8, name: "entry_point_management", jsonName: "entry_point_management", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "env_variables", jsonName: "env_variables", kind: "message", T: EnclaveManifestEnvVariable, repeated: true },
     { no: 10, name: "resources", kind: "message", T: EnclaveResources },
   ]);
 

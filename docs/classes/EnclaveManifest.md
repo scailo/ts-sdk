@@ -26,7 +26,9 @@ from message Scailo.EnclaveManifest
 - [appUniqueIdentifier](EnclaveManifest.md#appuniqueidentifier)
 - [appVersion](EnclaveManifest.md#appversion)
 - [enclaveName](EnclaveManifest.md#enclavename)
-- [enclaveType](EnclaveManifest.md#enclavetype)
+- [enclaveRuntime](EnclaveManifest.md#enclaveruntime)
+- [entryPointManagement](EnclaveManifest.md#entrypointmanagement)
+- [envVariables](EnclaveManifest.md#envvariables)
 - [manifestVersion](EnclaveManifest.md#manifestversion)
 - [resources](EnclaveManifest.md#resources)
 - [startExec](EnclaveManifest.md#startexec)
@@ -73,7 +75,7 @@ Message\&lt;EnclaveManifest\&gt;.constructor
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1173](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1173)
+[src/vault_commons.scailo_pb.ts:1245](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1245)
 
 ## Properties
 
@@ -89,7 +91,7 @@ from field: string app_name = 4 [json_name = "app_name"];
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1143](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1143)
+[src/vault_commons.scailo_pb.ts:1201](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1201)
 
 ___
 
@@ -105,7 +107,7 @@ from field: string app_unique_identifier = 6 [json_name = "app_unique_identifier
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1157](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1157)
+[src/vault_commons.scailo_pb.ts:1215](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1215)
 
 ___
 
@@ -121,7 +123,7 @@ from field: string app_version = 3 [json_name = "app_version"];
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1136](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1136)
+[src/vault_commons.scailo_pb.ts:1194](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1194)
 
 ___
 
@@ -137,23 +139,55 @@ from field: string enclave_name = 5 [json_name = "enclave_name"];
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1150](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1150)
+[src/vault_commons.scailo_pb.ts:1208](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1208)
 
 ___
 
-### enclaveType
+### enclaveRuntime
 
-• **enclaveType**: `string` = `""`
+• **enclaveRuntime**: `string` = `""`
 
-Stores the enclave type (valid options are node, golang, python)
+Stores the enclave runtime (valid options are node, golang, python)
 
 **`Generated`**
 
-from field: string enclave_type = 2 [json_name = "enclave_type"];
+from field: string enclave_runtime = 2 [json_name = "enclave_runtime"];
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1129](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1129)
+[src/vault_commons.scailo_pb.ts:1187](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1187)
+
+___
+
+### entryPointManagement
+
+• **entryPointManagement**: `string` = `""`
+
+Stores how the entry to the application is to be handled
+
+**`Generated`**
+
+from field: string entry_point_management = 8 [json_name = "entry_point_management"];
+
+#### Defined in
+
+[src/vault_commons.scailo_pb.ts:1229](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1229)
+
+___
+
+### envVariables
+
+• **envVariables**: [`EnclaveManifestEnvVariable`](EnclaveManifestEnvVariable.md)[] = `[]`
+
+Stores the list of default environment variables
+
+**`Generated`**
+
+from field: repeated Scailo.EnclaveManifestEnvVariable env_variables = 9 [json_name = "env_variables"];
+
+#### Defined in
+
+[src/vault_commons.scailo_pb.ts:1236](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1236)
 
 ___
 
@@ -169,7 +203,7 @@ from field: string manifest_version = 1 [json_name = "manifest_version"];
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1122](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1122)
+[src/vault_commons.scailo_pb.ts:1180](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1180)
 
 ___
 
@@ -185,7 +219,7 @@ from field: Scailo.EnclaveResources resources = 10;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1171](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1171)
+[src/vault_commons.scailo_pb.ts:1243](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1243)
 
 ___
 
@@ -201,7 +235,7 @@ from field: string start_exec = 7 [json_name = "start_exec"];
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1164](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1164)
+[src/vault_commons.scailo_pb.ts:1222](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1222)
 
 ___
 
@@ -211,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1180](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1180)
+[src/vault_commons.scailo_pb.ts:1252](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1252)
 
 ___
 
@@ -221,7 +255,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1178)
+[src/vault_commons.scailo_pb.ts:1250](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1250)
 
 ___
 
@@ -231,7 +265,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1179](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1179)
+[src/vault_commons.scailo_pb.ts:1251](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1251)
 
 ## Methods
 
@@ -519,7 +553,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1203](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1203)
+[src/vault_commons.scailo_pb.ts:1277](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1277)
 
 ___
 
@@ -540,7 +574,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1191](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1191)
+[src/vault_commons.scailo_pb.ts:1265](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1265)
 
 ___
 
@@ -561,7 +595,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1195](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1195)
+[src/vault_commons.scailo_pb.ts:1269](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1269)
 
 ___
 
@@ -582,4 +616,4 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1199](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/vault_commons.scailo_pb.ts#L1199)
+[src/vault_commons.scailo_pb.ts:1273](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/vault_commons.scailo_pb.ts#L1273)

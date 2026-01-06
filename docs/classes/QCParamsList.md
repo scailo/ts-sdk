@@ -66,7 +66,7 @@ Message\&lt;QCParamsList\&gt;.constructor
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:369](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L369)
+[src/qc_params.scailo_pb.ts:369](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L369)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.QCParam list = 1;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L367)
+[src/qc_params.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L367)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:376](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L376)
+[src/qc_params.scailo_pb.ts:376](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L376)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L374)
+[src/qc_params.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L374)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L375)
+[src/qc_params.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L375)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L392)
+[src/qc_params.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L392)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:380](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L380)
+[src/qc_params.scailo_pb.ts:380](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L380)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:384](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L384)
+[src/qc_params.scailo_pb.ts:384](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L384)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/qc_params.scailo_pb.ts#L388)
+[src/qc_params.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/qc_params.scailo_pb.ts#L388)

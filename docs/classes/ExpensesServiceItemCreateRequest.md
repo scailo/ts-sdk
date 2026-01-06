@@ -74,7 +74,7 @@ Message\&lt;ExpensesServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:712](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L712)
+[src/expenses.scailo_pb.ts:712](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L712)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: uint64 amount = 17;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:703](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L703)
+[src/expenses.scailo_pb.ts:703](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L703)
 
 ___
 
@@ -106,7 +106,7 @@ from field: string bill_no = 12;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:675](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L675)
+[src/expenses.scailo_pb.ts:675](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L675)
 
 ___
 
@@ -122,7 +122,7 @@ from field: string date_of_expense = 18;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:710](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L710)
+[src/expenses.scailo_pb.ts:710](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L710)
 
 ___
 
@@ -138,7 +138,7 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:682](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L682)
+[src/expenses.scailo_pb.ts:682](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L682)
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 expense_id = 10;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:661](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L661)
+[src/expenses.scailo_pb.ts:661](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L661)
 
 ___
 
@@ -170,7 +170,7 @@ from field: uint64 ledger_id = 15;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:689](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L689)
+[src/expenses.scailo_pb.ts:689](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L689)
 
 ___
 
@@ -186,7 +186,7 @@ from field: string name = 11;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:668](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L668)
+[src/expenses.scailo_pb.ts:668](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L668)
 
 ___
 
@@ -202,7 +202,7 @@ from field: uint64 tax_group_id = 16;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:696](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L696)
+[src/expenses.scailo_pb.ts:696](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L696)
 
 ___
 
@@ -218,7 +218,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:654](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L654)
+[src/expenses.scailo_pb.ts:654](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L654)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:719](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L719)
+[src/expenses.scailo_pb.ts:719](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L719)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:717](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L717)
+[src/expenses.scailo_pb.ts:717](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L717)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L718)
+[src/expenses.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L718)
 
 ## Methods
 
@@ -536,7 +536,7 @@ ___
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:743](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L743)
+[src/expenses.scailo_pb.ts:743](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L743)
 
 ___
 
@@ -557,7 +557,7 @@ ___
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:731](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L731)
+[src/expenses.scailo_pb.ts:731](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L731)
 
 ___
 
@@ -578,7 +578,7 @@ ___
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:735](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L735)
+[src/expenses.scailo_pb.ts:735](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L735)
 
 ___
 
@@ -599,4 +599,4 @@ ___
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/bae544c9de99a0a467ee7402a9ebf421c87b317c/src/expenses.scailo_pb.ts#L739)
+[src/expenses.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/expenses.scailo_pb.ts#L739)
