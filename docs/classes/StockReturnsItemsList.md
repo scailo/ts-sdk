@@ -66,7 +66,7 @@ Message\&lt;StockReturnsItemsList\&gt;.constructor
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:883](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L883)
+[src/stock_returns.scailo_pb.ts:883](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L883)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.StockReturnItem list = 1;
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:881](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L881)
+[src/stock_returns.scailo_pb.ts:881](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L881)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:890](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L890)
+[src/stock_returns.scailo_pb.ts:890](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L890)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:888](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L888)
+[src/stock_returns.scailo_pb.ts:888](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L888)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:889](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L889)
+[src/stock_returns.scailo_pb.ts:889](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L889)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:906](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L906)
+[src/stock_returns.scailo_pb.ts:906](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L906)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:894](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L894)
+[src/stock_returns.scailo_pb.ts:894](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L894)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:898](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L898)
+[src/stock_returns.scailo_pb.ts:898](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L898)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:902](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/stock_returns.scailo_pb.ts#L902)
+[src/stock_returns.scailo_pb.ts:902](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/stock_returns.scailo_pb.ts#L902)

@@ -171,6 +171,13 @@ export class FormField extends Message<FormField> {
    */
   isSearchable = false;
 
+  /**
+   * Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+   *
+   * @generated from field: bool is_public = 33;
+   */
+  isPublic = false;
+
   constructor(data?: PartialMessage<FormField>) {
     super();
     proto3.util.initPartial(data, this);
@@ -193,6 +200,7 @@ export class FormField extends Message<FormField> {
     { no: 30, name: "is_readonly", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 31, name: "is_hidden", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 32, name: "is_searchable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 33, name: "is_public", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormField {
@@ -425,6 +433,13 @@ export class FormsFieldsServiceCreateRequest extends Message<FormsFieldsServiceC
    */
   isSearchable = false;
 
+  /**
+   * Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+   *
+   * @generated from field: bool is_public = 33;
+   */
+  isPublic = false;
+
   constructor(data?: PartialMessage<FormsFieldsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -447,6 +462,7 @@ export class FormsFieldsServiceCreateRequest extends Message<FormsFieldsServiceC
     { no: 30, name: "is_readonly", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 31, name: "is_hidden", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 32, name: "is_searchable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 33, name: "is_public", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsFieldsServiceCreateRequest {
@@ -557,6 +573,13 @@ export class FormsFieldsServiceUpdateRequest extends Message<FormsFieldsServiceU
    */
   isSearchable = false;
 
+  /**
+   * Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+   *
+   * @generated from field: bool is_public = 33;
+   */
+  isPublic = false;
+
   constructor(data?: PartialMessage<FormsFieldsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -577,6 +600,7 @@ export class FormsFieldsServiceUpdateRequest extends Message<FormsFieldsServiceU
     { no: 30, name: "is_readonly", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 31, name: "is_hidden", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 32, name: "is_searchable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 33, name: "is_public", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormsFieldsServiceUpdateRequest {

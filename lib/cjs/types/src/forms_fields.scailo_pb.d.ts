@@ -136,6 +136,12 @@ export declare class FormField extends Message<FormField> {
      * @generated from field: bool is_searchable = 32;
      */
     isSearchable: boolean;
+    /**
+     * Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+     *
+     * @generated from field: bool is_public = 33;
+     */
+    isPublic: boolean;
     constructor(data?: PartialMessage<FormField>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormField";
@@ -298,6 +304,12 @@ export declare class FormsFieldsServiceCreateRequest extends Message<FormsFields
      * @generated from field: bool is_searchable = 32;
      */
     isSearchable: boolean;
+    /**
+     * Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+     *
+     * @generated from field: bool is_public = 33;
+     */
+    isPublic: boolean;
     constructor(data?: PartialMessage<FormsFieldsServiceCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsFieldsServiceCreateRequest";
@@ -386,6 +398,12 @@ export declare class FormsFieldsServiceUpdateRequest extends Message<FormsFields
      * @generated from field: bool is_searchable = 32;
      */
     isSearchable: boolean;
+    /**
+     * Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+     *
+     * @generated from field: bool is_public = 33;
+     */
+    isPublic: boolean;
     constructor(data?: PartialMessage<FormsFieldsServiceUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.FormsFieldsServiceUpdateRequest";

@@ -30,7 +30,7 @@ from enum value: TAX_PARAM_VALUE_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L22)
+[src/tax_params.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/tax_params.scailo_pb.ts#L22)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: TAX_PARAM_VALUE_TYPE_FIXED = 2;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L36)
+[src/tax_params.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/tax_params.scailo_pb.ts#L36)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: TAX_PARAM_VALUE_TYPE_PERCENTAGE = 1;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/tax_params.scailo_pb.ts#L29)
+[src/tax_params.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/tax_params.scailo_pb.ts#L29)

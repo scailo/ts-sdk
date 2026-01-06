@@ -26,6 +26,7 @@ from message Scailo.FormsFieldsServiceUpdateRequest
 - [definedValues](FormsFieldsServiceUpdateRequest.md#definedvalues)
 - [id](FormsFieldsServiceUpdateRequest.md#id)
 - [isHidden](FormsFieldsServiceUpdateRequest.md#ishidden)
+- [isPublic](FormsFieldsServiceUpdateRequest.md#ispublic)
 - [isReadonly](FormsFieldsServiceUpdateRequest.md#isreadonly)
 - [isSearchable](FormsFieldsServiceUpdateRequest.md#issearchable)
 - [name](FormsFieldsServiceUpdateRequest.md#name)
@@ -77,7 +78,7 @@ Message\&lt;FormsFieldsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:560](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L560)
+[src/forms_fields.scailo_pb.ts:583](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L583)
 
 ## Properties
 
@@ -93,7 +94,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:502](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L502)
+[src/forms_fields.scailo_pb.ts:518](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L518)
 
 ___
 
@@ -109,7 +110,7 @@ from field: repeated string defined_values = 17;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:537](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L537)
+[src/forms_fields.scailo_pb.ts:553](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L553)
 
 ___
 
@@ -125,7 +126,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L488)
+[src/forms_fields.scailo_pb.ts:504](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L504)
 
 ___
 
@@ -141,7 +142,23 @@ from field: bool is_hidden = 31;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:551](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L551)
+[src/forms_fields.scailo_pb.ts:567](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L567)
+
+___
+
+### isPublic
+
+• **isPublic**: `boolean` = `false`
+
+Denotes if the field is public (field shall be visible on any custom designed public interfaces)
+
+**`Generated`**
+
+from field: bool is_public = 33;
+
+#### Defined in
+
+[src/forms_fields.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L581)
 
 ___
 
@@ -157,7 +174,7 @@ from field: bool is_readonly = 30;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L544)
+[src/forms_fields.scailo_pb.ts:560](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L560)
 
 ___
 
@@ -173,7 +190,7 @@ from field: bool is_searchable = 32;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:558](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L558)
+[src/forms_fields.scailo_pb.ts:574](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L574)
 
 ___
 
@@ -189,7 +206,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:495](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L495)
+[src/forms_fields.scailo_pb.ts:511](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L511)
 
 ___
 
@@ -205,7 +222,7 @@ from field: string placeholder = 15;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:523](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L523)
+[src/forms_fields.scailo_pb.ts:539](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L539)
 
 ___
 
@@ -221,7 +238,7 @@ from field: string regex = 16;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L530)
+[src/forms_fields.scailo_pb.ts:546](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L546)
 
 ___
 
@@ -237,7 +254,7 @@ from field: uint64 section_id = 12;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L509)
+[src/forms_fields.scailo_pb.ts:525](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L525)
 
 ___
 
@@ -253,7 +270,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:481](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L481)
+[src/forms_fields.scailo_pb.ts:497](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L497)
 
 ___
 
@@ -269,7 +286,7 @@ from field: string width = 13;
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L516)
+[src/forms_fields.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L532)
 
 ___
 
@@ -279,7 +296,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:567](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L567)
+[src/forms_fields.scailo_pb.ts:590](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L590)
 
 ___
 
@@ -289,7 +306,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:565](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L565)
+[src/forms_fields.scailo_pb.ts:588](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L588)
 
 ___
 
@@ -299,7 +316,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:566](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L566)
+[src/forms_fields.scailo_pb.ts:589](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L589)
 
 ## Methods
 
@@ -587,7 +604,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:594](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L594)
+[src/forms_fields.scailo_pb.ts:618](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L618)
 
 ___
 
@@ -608,7 +625,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:582](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L582)
+[src/forms_fields.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L606)
 
 ___
 
@@ -629,7 +646,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:586](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L586)
+[src/forms_fields.scailo_pb.ts:610](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L610)
 
 ___
 
@@ -650,4 +667,4 @@ ___
 
 #### Defined in
 
-[src/forms_fields.scailo_pb.ts:590](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/forms_fields.scailo_pb.ts#L590)
+[src/forms_fields.scailo_pb.ts:614](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/forms_fields.scailo_pb.ts#L614)

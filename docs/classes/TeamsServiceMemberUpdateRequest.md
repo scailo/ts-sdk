@@ -67,7 +67,7 @@ Message\&lt;TeamsServiceMemberUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:608](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L608)
+[src/teams.scailo_pb.ts:608](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L608)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L606)
+[src/teams.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L606)
 
 ___
 
@@ -99,7 +99,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:599](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L599)
+[src/teams.scailo_pb.ts:599](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L599)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L615)
+[src/teams.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L615)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L613)
+[src/teams.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L613)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:614](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L614)
+[src/teams.scailo_pb.ts:614](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L614)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:632](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L632)
+[src/teams.scailo_pb.ts:632](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L632)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L620)
+[src/teams.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L620)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:624](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L624)
+[src/teams.scailo_pb.ts:624](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L624)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/teams.scailo_pb.ts#L628)
+[src/teams.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/teams.scailo_pb.ts#L628)

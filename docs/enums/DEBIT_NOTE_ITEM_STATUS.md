@@ -30,7 +30,7 @@ from enum value: DEBIT_NOTE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/debit_notes.scailo_pb.ts#L157)
+[src/debit_notes.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/debit_notes.scailo_pb.ts#L157)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: DEBIT_NOTE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/debit_notes.scailo_pb.ts#L164)
+[src/debit_notes.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/debit_notes.scailo_pb.ts#L164)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: DEBIT_NOTE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/debit_notes.scailo_pb.ts:171](https://github.com/scailo/ts-sdk/blob/f81b9da0f4c38776ef8720215b78b003f5af4ef4/src/debit_notes.scailo_pb.ts#L171)
+[src/debit_notes.scailo_pb.ts:171](https://github.com/scailo/ts-sdk/blob/c43e0cf90919e087e4a7685eaddf6425d0b2f336/src/debit_notes.scailo_pb.ts#L171)
