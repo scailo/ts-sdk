@@ -30,7 +30,7 @@ from enum value: PRODUCTION_PLAN_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/production_plans.scailo_pb.ts#L233)
+[src/production_plans.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/production_plans.scailo_pb.ts#L233)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PRODUCTION_PLAN_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/production_plans.scailo_pb.ts#L240)
+[src/production_plans.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/production_plans.scailo_pb.ts#L240)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PRODUCTION_PLAN_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/production_plans.scailo_pb.ts#L247)
+[src/production_plans.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/production_plans.scailo_pb.ts#L247)

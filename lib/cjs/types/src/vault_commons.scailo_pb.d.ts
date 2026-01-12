@@ -1549,7 +1549,7 @@ export declare class EnclaveFrameAddRequest extends Message<EnclaveFrameAddReque
      */
     sequenceNumber: bigint;
     /**
-     * The time in seconds after which the frame needs to be refreshed
+     * The time in seconds after which the frame needs to be refreshed. O denotes no auto refresh.
      *
      * @generated from field: uint64 auto_refresh_interval = 11;
      */
@@ -1722,6 +1722,12 @@ export declare class EnclaveFrameSetup extends Message<EnclaveFrameSetup> {
      * @generated from field: string enclave_frame_uuid = 20;
      */
     enclaveFrameUuid: string;
+    /**
+     * Stores the UUID of the file
+     *
+     * @generated from field: string file_uuid = 21;
+     */
+    fileUuid: string;
     /**
      * The sequence number of the frame
      *

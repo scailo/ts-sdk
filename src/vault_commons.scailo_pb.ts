@@ -2404,7 +2404,7 @@ export class EnclaveFrameAddRequest extends Message<EnclaveFrameAddRequest> {
   sequenceNumber = protoInt64.zero;
 
   /**
-   * The time in seconds after which the frame needs to be refreshed
+   * The time in seconds after which the frame needs to be refreshed. O denotes no auto refresh.
    *
    * @generated from field: uint64 auto_refresh_interval = 11;
    */
@@ -2671,6 +2671,13 @@ export class EnclaveFrameSetup extends Message<EnclaveFrameSetup> {
   enclaveFrameUuid = "";
 
   /**
+   * Stores the UUID of the file
+   *
+   * @generated from field: string file_uuid = 21;
+   */
+  fileUuid = "";
+
+  /**
    * The sequence number of the frame
    *
    * @generated from field: uint64 sequence_number = 30;
@@ -2711,6 +2718,7 @@ export class EnclaveFrameSetup extends Message<EnclaveFrameSetup> {
     { no: 12, name: "enclave_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "app_endpoint", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "enclave_frame_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "file_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "sequence_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 31, name: "auto_refresh_interval", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 32, name: "width", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

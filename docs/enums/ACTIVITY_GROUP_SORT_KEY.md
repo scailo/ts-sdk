@@ -35,7 +35,7 @@ from enum value: ACTIVITY_GROUP_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/activities_groups.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/activities_groups.scailo_pb.ts#L50)
+[src/activities_groups.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/activities_groups.scailo_pb.ts#L50)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: ACTIVITY_GROUP_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/activities_groups.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/activities_groups.scailo_pb.ts#L43)
+[src/activities_groups.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/activities_groups.scailo_pb.ts#L43)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: ACTIVITY_GROUP_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/activities_groups.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/activities_groups.scailo_pb.ts#L57)
+[src/activities_groups.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/activities_groups.scailo_pb.ts#L57)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: ACTIVITY_GROUP_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-[src/activities_groups.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/activities_groups.scailo_pb.ts#L71)
+[src/activities_groups.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/activities_groups.scailo_pb.ts#L71)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: ACTIVITY_GROUP_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/activities_groups.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/activities_groups.scailo_pb.ts#L29)
+[src/activities_groups.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/activities_groups.scailo_pb.ts#L29)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: ACTIVITY_GROUP_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/activities_groups.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/activities_groups.scailo_pb.ts#L22)
+[src/activities_groups.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/activities_groups.scailo_pb.ts#L22)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: ACTIVITY_GROUP_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/activities_groups.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/activities_groups.scailo_pb.ts#L36)
+[src/activities_groups.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/activities_groups.scailo_pb.ts#L36)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: ACTIVITY_GROUP_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/activities_groups.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/activities_groups.scailo_pb.ts#L64)
+[src/activities_groups.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/activities_groups.scailo_pb.ts#L64)

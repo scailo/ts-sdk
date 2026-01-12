@@ -30,7 +30,7 @@ from enum value: STOCK_RETURN_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:208](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/stock_returns.scailo_pb.ts#L208)
+[src/stock_returns.scailo_pb.ts:208](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/stock_returns.scailo_pb.ts#L208)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: STOCK_RETURN_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/stock_returns.scailo_pb.ts#L215)
+[src/stock_returns.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/stock_returns.scailo_pb.ts#L215)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: STOCK_RETURN_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/stock_returns.scailo_pb.ts:222](https://github.com/scailo/ts-sdk/blob/a4beeae7337f3286d15a043b7f6bda528ceb880f/src/stock_returns.scailo_pb.ts#L222)
+[src/stock_returns.scailo_pb.ts:222](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/stock_returns.scailo_pb.ts#L222)
