@@ -2678,6 +2678,13 @@ export class EnclaveFrameSetup extends Message<EnclaveFrameSetup> {
   fileUuid = "";
 
   /**
+   * Stores the version number of the enclave
+   *
+   * @generated from field: string app_version = 22;
+   */
+  appVersion = "";
+
+  /**
    * The sequence number of the frame
    *
    * @generated from field: uint64 sequence_number = 30;
@@ -2719,6 +2726,7 @@ export class EnclaveFrameSetup extends Message<EnclaveFrameSetup> {
     { no: 13, name: "app_endpoint", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 20, name: "enclave_frame_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "file_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "app_version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "sequence_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 31, name: "auto_refresh_interval", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 32, name: "width", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },

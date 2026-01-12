@@ -30,7 +30,7 @@ from enum value: VENDOR_STREAM_MESSAGE_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/vendor_streams.scailo_pb.ts#L191)
+[src/vendor_streams.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/vendor_streams.scailo_pb.ts#L191)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: VENDOR_STREAM_MESSAGE_TYPE_SYSTEM = 2;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/vendor_streams.scailo_pb.ts#L205)
+[src/vendor_streams.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/vendor_streams.scailo_pb.ts#L205)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: VENDOR_STREAM_MESSAGE_TYPE_USER = 1;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/vendor_streams.scailo_pb.ts#L198)
+[src/vendor_streams.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/vendor_streams.scailo_pb.ts#L198)

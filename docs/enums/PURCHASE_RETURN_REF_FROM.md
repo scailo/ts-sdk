@@ -29,7 +29,7 @@ from enum value: PURCHASE_RETURN_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/purchases_returns.scailo_pb.ts#L23)
+[src/purchases_returns.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/purchases_returns.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: PURCHASE_RETURN_REF_FROM_PURCHASE_ORDER = 1;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/purchases_returns.scailo_pb.ts#L30)
+[src/purchases_returns.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/purchases_returns.scailo_pb.ts#L30)

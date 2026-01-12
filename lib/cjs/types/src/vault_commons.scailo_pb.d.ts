@@ -1729,6 +1729,12 @@ export declare class EnclaveFrameSetup extends Message<EnclaveFrameSetup> {
      */
     fileUuid: string;
     /**
+     * Stores the version number of the enclave
+     *
+     * @generated from field: string app_version = 22;
+     */
+    appVersion: string;
+    /**
      * The sequence number of the frame
      *
      * @generated from field: uint64 sequence_number = 30;

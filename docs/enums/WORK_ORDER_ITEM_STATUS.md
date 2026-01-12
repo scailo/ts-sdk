@@ -30,7 +30,7 @@ from enum value: WORK_ORDER_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/work_orders.scailo_pb.ts#L232)
+[src/work_orders.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/work_orders.scailo_pb.ts#L232)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: WORK_ORDER_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:239](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/work_orders.scailo_pb.ts#L239)
+[src/work_orders.scailo_pb.ts:239](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/work_orders.scailo_pb.ts#L239)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: WORK_ORDER_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/work_orders.scailo_pb.ts#L246)
+[src/work_orders.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/work_orders.scailo_pb.ts#L246)

@@ -73,7 +73,7 @@ Message\&lt;InwardJobsServiceInwardItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:947](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L947)
+[src/inward_jobs.scailo_pb.ts:947](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L947)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string client_family_code = 15;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:938](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L938)
+[src/inward_jobs.scailo_pb.ts:938](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L938)
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 client_quantity = 14;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:931](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L931)
+[src/inward_jobs.scailo_pb.ts:931](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L931)
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:924](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L924)
+[src/inward_jobs.scailo_pb.ts:924](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L924)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:910](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L910)
+[src/inward_jobs.scailo_pb.ts:910](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L910)
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:917](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L917)
+[src/inward_jobs.scailo_pb.ts:917](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L917)
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 inward_job_id = 10;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:903](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L903)
+[src/inward_jobs.scailo_pb.ts:903](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L903)
 
 ___
 
@@ -185,7 +185,7 @@ from field: string specifications = 16;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:945](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L945)
+[src/inward_jobs.scailo_pb.ts:945](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L945)
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:896](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L896)
+[src/inward_jobs.scailo_pb.ts:896](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L896)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L954)
+[src/inward_jobs.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L954)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:952](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L952)
+[src/inward_jobs.scailo_pb.ts:952](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L952)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:953](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L953)
+[src/inward_jobs.scailo_pb.ts:953](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L953)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:977](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L977)
+[src/inward_jobs.scailo_pb.ts:977](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L977)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:965](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L965)
+[src/inward_jobs.scailo_pb.ts:965](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L965)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:969](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L969)
+[src/inward_jobs.scailo_pb.ts:969](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L969)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/inward_jobs.scailo_pb.ts#L973)
+[src/inward_jobs.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/inward_jobs.scailo_pb.ts#L973)

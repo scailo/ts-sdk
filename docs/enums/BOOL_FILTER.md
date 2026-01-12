@@ -30,7 +30,7 @@ from enum value: BOOL_FILTER_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:772](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/base.scailo_pb.ts#L772)
+[src/base.scailo_pb.ts:772](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L772)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: BOOL_FILTER_FALSE = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:786](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/base.scailo_pb.ts#L786)
+[src/base.scailo_pb.ts:786](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L786)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: BOOL_FILTER_TRUE = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:779](https://github.com/scailo/ts-sdk/blob/7c8082796d1ee35579f9f1a973974add6b332cf6/src/base.scailo_pb.ts#L779)
+[src/base.scailo_pb.ts:779](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L779)
