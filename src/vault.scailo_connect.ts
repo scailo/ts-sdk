@@ -6,7 +6,7 @@
 import { VaultFile, VaultFileAddChunkRequest, VaultFileInitiateFileRequest, VaultFileInitiateFileResponse, VaultFileMoveFileRequest, VaultFileRenameFileRequest, VaultFilesList, VaultFileUnzipRequest, VaultFileVersionChunk, VaultFileVersionsList } from "./vault_files.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { BooleanResponse, CountResponse, Empty, Identifier, IdentifierResponse, IdentifierUUID, IdentifierZeroable, StandardFile } from "./base.scailo_pb.js";
-import { EnclaveDomain, EnclaveDomainAddRequest, EnclaveDomainsFilterReq, EnclaveDomainsList, EnclaveDomainSuffixResp, EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
+import { EnclaveDomain, EnclaveDomainAddRequest, EnclaveDomainsFilterReq, EnclaveDomainsList, EnclaveDomainSuffixResp, EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveFrame, EnclaveFrameAddRequest, EnclaveFrameSetup, EnclaveFrameSetupList, EnclaveFrameUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
 import { VaultFolder, VaultFolderAddRequest, VaultFolderDownload, VaultFolderMoveFolderRequest, VaultFolderRenameFolderRequest, VaultFoldersList } from "./vault_folders.scailo_pb.js";
 import { GiXRelayReqWithBody, GiXRelayReqWithoutBody, GiXRelayResponse, VaultResourcesList } from "./vault.scailo_pb.js";
 import { RolesList } from "./roles.scailo_pb.js";
@@ -760,6 +760,72 @@ export const VaultService = {
       name: "FilterEnclaveDomains",
       I: EnclaveDomainsFilterReq,
       O: EnclaveDomainsList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Adds an enclave as a dashboard frame. The file needs to be an enclave. Returns an error otherwise
+     *
+     * @generated from rpc Scailo.VaultService.AddEnclaveFrame
+     */
+    addEnclaveFrame: {
+      name: "AddEnclaveFrame",
+      I: EnclaveFrameAddRequest,
+      O: EnclaveFrame,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View the properties of a frame
+     *
+     * @generated from rpc Scailo.VaultService.ViewEnclaveFrame
+     */
+    viewEnclaveFrame: {
+      name: "ViewEnclaveFrame",
+      I: IdentifierUUID,
+      O: EnclaveFrame,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Update the properties of a frame
+     *
+     * @generated from rpc Scailo.VaultService.UpdateEnclaveFrame
+     */
+    updateEnclaveFrame: {
+      name: "UpdateEnclaveFrame",
+      I: EnclaveFrameUpdateRequest,
+      O: EnclaveFrame,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Delete the dashboard frame
+     *
+     * @generated from rpc Scailo.VaultService.DeleteEnclaveFrame
+     */
+    deleteEnclaveFrame: {
+      name: "DeleteEnclaveFrame",
+      I: IdentifierUUID,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Returns the endpoint that could be used to render a frame
+     *
+     * @generated from rpc Scailo.VaultService.SetupEnclaveFrame
+     */
+    setupEnclaveFrame: {
+      name: "SetupEnclaveFrame",
+      I: IdentifierUUID,
+      O: EnclaveFrameSetup,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Returns all the endpoints that could be used to render frames for the identified user. This can be primary used to render all the frames on a user's dashboard, for example.
+     *
+     * @generated from rpc Scailo.VaultService.SetupAllEnclaveFrames
+     */
+    setupAllEnclaveFrames: {
+      name: "SetupAllEnclaveFrames",
+      I: Empty,
+      O: EnclaveFrameSetupList,
       kind: MethodKind.Unary,
     },
   }

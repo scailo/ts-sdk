@@ -1530,6 +1530,254 @@ export declare class EnclaveDomainSuffixResp extends Message<EnclaveDomainSuffix
     static equals(a: EnclaveDomainSuffixResp | PlainMessage<EnclaveDomainSuffixResp> | undefined, b: EnclaveDomainSuffixResp | PlainMessage<EnclaveDomainSuffixResp> | undefined): boolean;
 }
 /**
+ *
+ * Stores the payload that is necessary to create a custom frame for an enclave
+ *
+ * @generated from message Scailo.EnclaveFrameAddRequest
+ */
+export declare class EnclaveFrameAddRequest extends Message<EnclaveFrameAddRequest> {
+    /**
+     * The UUID of the enclave file that will be updated with the given frame
+     *
+     * @generated from field: string file_uuid = 1;
+     */
+    fileUuid: string;
+    /**
+     * The sequence number of the frame
+     *
+     * @generated from field: uint64 sequence_number = 10;
+     */
+    sequenceNumber: bigint;
+    /**
+     * The time in seconds after which the frame needs to be refreshed
+     *
+     * @generated from field: uint64 auto_refresh_interval = 11;
+     */
+    autoRefreshInterval: bigint;
+    /**
+     * The width of the frame, with the possible values being 3, 4, 6, 8, 9, and 12
+     *
+     * @generated from field: uint64 width = 12;
+     */
+    width: bigint;
+    /**
+     * The height of the frame in vh (viewport height)
+     *
+     * @generated from field: uint64 height = 13;
+     */
+    height: bigint;
+    constructor(data?: PartialMessage<EnclaveFrameAddRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveFrameAddRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveFrameAddRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveFrameAddRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveFrameAddRequest;
+    static equals(a: EnclaveFrameAddRequest | PlainMessage<EnclaveFrameAddRequest> | undefined, b: EnclaveFrameAddRequest | PlainMessage<EnclaveFrameAddRequest> | undefined): boolean;
+}
+/**
+ *
+ * Stores the payload that is necessary to update a custom frame for an enclave
+ *
+ * @generated from message Scailo.EnclaveFrameUpdateRequest
+ */
+export declare class EnclaveFrameUpdateRequest extends Message<EnclaveFrameUpdateRequest> {
+    /**
+     * The UUID of the frame that needs to be updated
+     *
+     * @generated from field: string uuid = 1;
+     */
+    uuid: string;
+    /**
+     * The sequence number of the frame
+     *
+     * @generated from field: uint64 sequence_number = 10;
+     */
+    sequenceNumber: bigint;
+    /**
+     * The time in seconds after which the frame needs to be refreshed
+     *
+     * @generated from field: uint64 auto_refresh_interval = 11;
+     */
+    autoRefreshInterval: bigint;
+    /**
+     * The width of the frame, with the possible values being 3, 4, 6, 8, 9, and 12
+     *
+     * @generated from field: uint64 width = 12;
+     */
+    width: bigint;
+    /**
+     * The height of the frame in vh (viewport height)
+     *
+     * @generated from field: uint64 height = 13;
+     */
+    height: bigint;
+    constructor(data?: PartialMessage<EnclaveFrameUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveFrameUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveFrameUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveFrameUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveFrameUpdateRequest;
+    static equals(a: EnclaveFrameUpdateRequest | PlainMessage<EnclaveFrameUpdateRequest> | undefined, b: EnclaveFrameUpdateRequest | PlainMessage<EnclaveFrameUpdateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Denotes an individual frame that is part of an enclave
+ *
+ * @generated from message Scailo.EnclaveFrame
+ */
+export declare class EnclaveFrame extends Message<EnclaveFrame> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this user
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the ID of the user that the frame belongs to
+     *
+     * @generated from field: uint64 user_id = 10;
+     */
+    userId: bigint;
+    /**
+     * Stores the ID of the file that is used to render the frame
+     *
+     * @generated from field: uint64 vault_file_id = 11;
+     */
+    vaultFileId: bigint;
+    /**
+     * The sequence number of the frame
+     *
+     * @generated from field: uint64 sequence_number = 20;
+     */
+    sequenceNumber: bigint;
+    /**
+     * The time in seconds after which the frame needs to be refreshed
+     *
+     * @generated from field: uint64 auto_refresh_interval = 21;
+     */
+    autoRefreshInterval: bigint;
+    /**
+     * The width of the frame, with the possible values being 3, 4, 6, 8, 9, and 12
+     *
+     * @generated from field: uint64 width = 22;
+     */
+    width: bigint;
+    /**
+     * The height of the frame in vh (viewport height)
+     *
+     * @generated from field: uint64 height = 23;
+     */
+    height: bigint;
+    constructor(data?: PartialMessage<EnclaveFrame>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveFrame";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveFrame;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveFrame;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveFrame;
+    static equals(a: EnclaveFrame | PlainMessage<EnclaveFrame> | undefined, b: EnclaveFrame | PlainMessage<EnclaveFrame> | undefined): boolean;
+}
+/**
+ *
+ * Describes the data that is returned after setting up a frame
+ *
+ * @generated from message Scailo.EnclaveFrameSetup
+ */
+export declare class EnclaveFrameSetup extends Message<EnclaveFrameSetup> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the expiry timestamp of the frame
+     *
+     * @generated from field: uint64 expires_at = 10;
+     */
+    expiresAt: bigint;
+    /**
+     * Stores the unique identifier of the application
+     *
+     * @generated from field: string enclave_name = 12;
+     */
+    enclaveName: string;
+    /**
+     * Stores the endpoint of the application execution
+     *
+     * @generated from field: string app_endpoint = 13;
+     */
+    appEndpoint: string;
+    /**
+     * Stores the UUID of the enclave frame
+     *
+     * @generated from field: string enclave_frame_uuid = 20;
+     */
+    enclaveFrameUuid: string;
+    /**
+     * The sequence number of the frame
+     *
+     * @generated from field: uint64 sequence_number = 30;
+     */
+    sequenceNumber: bigint;
+    /**
+     * The time in seconds after which the frame needs to be refreshed
+     *
+     * @generated from field: uint64 auto_refresh_interval = 31;
+     */
+    autoRefreshInterval: bigint;
+    /**
+     * The width of the frame, with the possible values being 3, 4, 6, 8, 9, and 12
+     *
+     * @generated from field: uint64 width = 32;
+     */
+    width: bigint;
+    /**
+     * The height of the frame in vh (viewport height)
+     *
+     * @generated from field: uint64 height = 33;
+     */
+    height: bigint;
+    constructor(data?: PartialMessage<EnclaveFrameSetup>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveFrameSetup";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveFrameSetup;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveFrameSetup;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveFrameSetup;
+    static equals(a: EnclaveFrameSetup | PlainMessage<EnclaveFrameSetup> | undefined, b: EnclaveFrameSetup | PlainMessage<EnclaveFrameSetup> | undefined): boolean;
+}
+/**
+ *
+ * Describes the list of enclave frames that have been setup
+ *
+ * @generated from message Scailo.EnclaveFrameSetupList
+ */
+export declare class EnclaveFrameSetupList extends Message<EnclaveFrameSetupList> {
+    /**
+     * List of setup frames
+     *
+     * @generated from field: repeated Scailo.EnclaveFrameSetup list = 1;
+     */
+    list: EnclaveFrameSetup[];
+    constructor(data?: PartialMessage<EnclaveFrameSetupList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.EnclaveFrameSetupList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnclaveFrameSetupList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnclaveFrameSetupList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnclaveFrameSetupList;
+    static equals(a: EnclaveFrameSetupList | PlainMessage<EnclaveFrameSetupList> | undefined, b: EnclaveFrameSetupList | PlainMessage<EnclaveFrameSetupList> | undefined): boolean;
+}
+/**
  * @generated from message Scailo.VaultSearchReq
  */
 export declare class VaultSearchReq extends Message<VaultSearchReq> {
