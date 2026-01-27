@@ -1,6 +1,6 @@
-import { ConsolidatedInventoryStatistics, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
+import { ConsolidatedInventoryStatistics, ConsolidatedInventoryStatisticsList, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { Identifier, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
+import { Identifier, IdentifiersList, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on inventory
@@ -236,7 +236,7 @@ export declare const InventoryService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View consolidated inventory statistics
+         * View consolidated inventory statistics for family with the given Identifier
          *
          * @generated from rpc Scailo.InventoryService.ViewConsolidatedStatistics
          */
@@ -244,6 +244,17 @@ export declare const InventoryService: {
             readonly name: "ViewConsolidatedStatistics";
             readonly I: typeof Identifier;
             readonly O: typeof ConsolidatedInventoryStatistics;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View consolidated inventory statistics for families with the given IdentifiersList
+         *
+         * @generated from rpc Scailo.InventoryService.ViewConsolidatedStatisticsForFamilies
+         */
+        readonly viewConsolidatedStatisticsForFamilies: {
+            readonly name: "ViewConsolidatedStatisticsForFamilies";
+            readonly I: typeof IdentifiersList;
+            readonly O: typeof ConsolidatedInventoryStatisticsList;
             readonly kind: MethodKind.Unary;
         };
         /**

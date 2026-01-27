@@ -29,7 +29,7 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_ANY_UNSPECIFIED
 
 #### Defined in
 
-[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L23)
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN_REF_FROM_OUTWARD_JOB = 1
 
 #### Defined in
 
-[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L30)
+[src/outward_jobs_free_issue_materials_returns.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/outward_jobs_free_issue_materials_returns.scailo_pb.ts#L30)

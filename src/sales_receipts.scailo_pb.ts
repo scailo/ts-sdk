@@ -5,97 +5,140 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
+import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS, TRANSACTION_TYPE } from "./base.scailo_pb.js";
+
+/**
+ *
+ * Stores all the possible references from which a sales receipt can be added
+ *
+ * @generated from enum Scailo.SALES_RECEIPT_REF_FROM
+ */
+export enum SALES_RECEIPT_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the sales receipt originated from a sales order
+   *
+   * @generated from enum value: SALES_RECEIPT_REF_FROM_SALES_ORDER = 1;
+   */
+  SALES_RECEIPT_REF_FROM_SALES_ORDER = 1,
+
+  /**
+   * Denotes that the sales receipt originated from a sales invoice
+   *
+   * @generated from enum value: SALES_RECEIPT_REF_FROM_SALES_INVOICE = 2;
+   */
+  SALES_RECEIPT_REF_FROM_SALES_INVOICE = 2,
+
+  /**
+   * Denotes that the sales receipt originated from a credit note
+   *
+   * @generated from enum value: SALES_RECEIPT_REF_FROM_CREDIT_NOTE = 3;
+   */
+  SALES_RECEIPT_REF_FROM_CREDIT_NOTE = 3,
+}
+// Retrieve enum metadata with: proto3.getEnumType(SALES_RECEIPT_REF_FROM)
+proto3.util.setEnumType(SALES_RECEIPT_REF_FROM, "Scailo.SALES_RECEIPT_REF_FROM", [
+  { no: 0, name: "SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "SALES_RECEIPT_REF_FROM_SALES_ORDER" },
+  { no: 2, name: "SALES_RECEIPT_REF_FROM_SALES_INVOICE" },
+  { no: 3, name: "SALES_RECEIPT_REF_FROM_CREDIT_NOTE" },
+]);
 
 /**
  *
  * Describes the available sort keys
  *
- * @generated from enum Scailo.SALE_RECEIPT_SORT_KEY
+ * @generated from enum Scailo.SALES_RECEIPT_SORT_KEY
  */
-export enum SALE_RECEIPT_SORT_KEY {
+export enum SALES_RECEIPT_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_ID_UNSPECIFIED = 0;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_ID_UNSPECIFIED = 0;
    */
-  SALE_RECEIPT_SORT_KEY_ID_UNSPECIFIED = 0,
+  SALES_RECEIPT_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
    * Fetch ordered results by the creation timestamp
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_CREATED_AT = 1;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_CREATED_AT = 1;
    */
-  SALE_RECEIPT_SORT_KEY_CREATED_AT = 1,
+  SALES_RECEIPT_SORT_KEY_CREATED_AT = 1,
 
   /**
    * Fetch ordered results by the modified timestamp
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_MODIFIED_AT = 2;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_MODIFIED_AT = 2;
    */
-  SALE_RECEIPT_SORT_KEY_MODIFIED_AT = 2,
+  SALES_RECEIPT_SORT_KEY_MODIFIED_AT = 2,
 
   /**
    * Fetch ordered results by the approved on timestamp
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_APPROVED_ON = 3;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_APPROVED_ON = 3;
    */
-  SALE_RECEIPT_SORT_KEY_APPROVED_ON = 3,
+  SALES_RECEIPT_SORT_KEY_APPROVED_ON = 3,
 
   /**
    * Fetch ordered results by the approved by field
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_APPROVED_BY = 4;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_APPROVED_BY = 4;
    */
-  SALE_RECEIPT_SORT_KEY_APPROVED_BY = 4,
+  SALES_RECEIPT_SORT_KEY_APPROVED_BY = 4,
 
   /**
    * Fetch ordered results by the approver's role ID
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_APPROVER_ROLE_ID = 5;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
-  SALE_RECEIPT_SORT_KEY_APPROVER_ROLE_ID = 5,
+  SALES_RECEIPT_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
    * Fetch ordered results by the approver's completed on timestamp
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_COMPLETED_ON = 6;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_COMPLETED_ON = 6;
    */
-  SALE_RECEIPT_SORT_KEY_COMPLETED_ON = 6,
+  SALES_RECEIPT_SORT_KEY_COMPLETED_ON = 6,
 
   /**
    * Fetch ordered results by the reference ID
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_REFERENCE_ID = 10;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_REFERENCE_ID = 10;
    */
-  SALE_RECEIPT_SORT_KEY_REFERENCE_ID = 10,
+  SALES_RECEIPT_SORT_KEY_REFERENCE_ID = 10,
 
   /**
    * Fetch ordered results by the final ref number
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_FINAL_REF_NUMBER = 11;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
-  SALE_RECEIPT_SORT_KEY_FINAL_REF_NUMBER = 11,
+  SALES_RECEIPT_SORT_KEY_FINAL_REF_NUMBER = 11,
 
   /**
    * Fetch ordered results by the payment timestamp
    *
-   * @generated from enum value: SALE_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12;
+   * @generated from enum value: SALES_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12;
    */
-  SALE_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12,
+  SALES_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12,
 }
-// Retrieve enum metadata with: proto3.getEnumType(SALE_RECEIPT_SORT_KEY)
-proto3.util.setEnumType(SALE_RECEIPT_SORT_KEY, "Scailo.SALE_RECEIPT_SORT_KEY", [
-  { no: 0, name: "SALE_RECEIPT_SORT_KEY_ID_UNSPECIFIED" },
-  { no: 1, name: "SALE_RECEIPT_SORT_KEY_CREATED_AT" },
-  { no: 2, name: "SALE_RECEIPT_SORT_KEY_MODIFIED_AT" },
-  { no: 3, name: "SALE_RECEIPT_SORT_KEY_APPROVED_ON" },
-  { no: 4, name: "SALE_RECEIPT_SORT_KEY_APPROVED_BY" },
-  { no: 5, name: "SALE_RECEIPT_SORT_KEY_APPROVER_ROLE_ID" },
-  { no: 6, name: "SALE_RECEIPT_SORT_KEY_COMPLETED_ON" },
-  { no: 10, name: "SALE_RECEIPT_SORT_KEY_REFERENCE_ID" },
-  { no: 11, name: "SALE_RECEIPT_SORT_KEY_FINAL_REF_NUMBER" },
-  { no: 12, name: "SALE_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP" },
+// Retrieve enum metadata with: proto3.getEnumType(SALES_RECEIPT_SORT_KEY)
+proto3.util.setEnumType(SALES_RECEIPT_SORT_KEY, "Scailo.SALES_RECEIPT_SORT_KEY", [
+  { no: 0, name: "SALES_RECEIPT_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "SALES_RECEIPT_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "SALES_RECEIPT_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "SALES_RECEIPT_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "SALES_RECEIPT_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "SALES_RECEIPT_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "SALES_RECEIPT_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "SALES_RECEIPT_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "SALES_RECEIPT_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "SALES_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP" },
 ]);
 
 /**
@@ -136,9 +179,9 @@ export class SalesReceiptsServiceCreateRequest extends Message<SalesReceiptsServ
   /**
    * The reference on which the sales receipt has been created
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.SALES_RECEIPT_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = SALES_RECEIPT_REF_FROM.SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The ID of the associated reference
@@ -164,9 +207,9 @@ export class SalesReceiptsServiceCreateRequest extends Message<SalesReceiptsServ
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 17;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The initial amount in cents, without any deductions
@@ -208,11 +251,11 @@ export class SalesReceiptsServiceCreateRequest extends Message<SalesReceiptsServ
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RECEIPT_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 18, name: "amount_base", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "amount_net", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "payment_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -295,9 +338,9 @@ export class SalesReceiptsServiceUpdateRequest extends Message<SalesReceiptsServ
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 17;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The initial amount in cents, without any deductions
@@ -342,7 +385,7 @@ export class SalesReceiptsServiceUpdateRequest extends Message<SalesReceiptsServ
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 18, name: "amount_base", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "amount_net", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "payment_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -370,9 +413,9 @@ export class SalesReceiptsServiceUpdateRequest extends Message<SalesReceiptsServ
  *
  * Stores the UUID references of the record
  *
- * @generated from message Scailo.SaleReceiptAncillaryParameters
+ * @generated from message Scailo.SalesReceiptAncillaryParameters
  */
-export class SaleReceiptAncillaryParameters extends Message<SaleReceiptAncillaryParameters> {
+export class SalesReceiptAncillaryParameters extends Message<SalesReceiptAncillaryParameters> {
   /**
    * The UUID of the ref_id (the UUID of the associated ref_id)
    *
@@ -401,13 +444,13 @@ export class SaleReceiptAncillaryParameters extends Message<SaleReceiptAncillary
    */
   currencyUuid = "";
 
-  constructor(data?: PartialMessage<SaleReceiptAncillaryParameters>) {
+  constructor(data?: PartialMessage<SalesReceiptAncillaryParameters>) {
     super();
     proto3.util.initPartial(data, this);
   }
 
   static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "Scailo.SaleReceiptAncillaryParameters";
+  static readonly typeName = "Scailo.SalesReceiptAncillaryParameters";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 213, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 214, name: "client_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -415,20 +458,20 @@ export class SaleReceiptAncillaryParameters extends Message<SaleReceiptAncillary
     { no: 216, name: "currency_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SaleReceiptAncillaryParameters {
-    return new SaleReceiptAncillaryParameters().fromBinary(bytes, options);
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReceiptAncillaryParameters {
+    return new SalesReceiptAncillaryParameters().fromBinary(bytes, options);
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SaleReceiptAncillaryParameters {
-    return new SaleReceiptAncillaryParameters().fromJson(jsonValue, options);
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptAncillaryParameters {
+    return new SalesReceiptAncillaryParameters().fromJson(jsonValue, options);
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SaleReceiptAncillaryParameters {
-    return new SaleReceiptAncillaryParameters().fromJsonString(jsonString, options);
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptAncillaryParameters {
+    return new SalesReceiptAncillaryParameters().fromJsonString(jsonString, options);
   }
 
-  static equals(a: SaleReceiptAncillaryParameters | PlainMessage<SaleReceiptAncillaryParameters> | undefined, b: SaleReceiptAncillaryParameters | PlainMessage<SaleReceiptAncillaryParameters> | undefined): boolean {
-    return proto3.util.equals(SaleReceiptAncillaryParameters, a, b);
+  static equals(a: SalesReceiptAncillaryParameters | PlainMessage<SalesReceiptAncillaryParameters> | undefined, b: SalesReceiptAncillaryParameters | PlainMessage<SalesReceiptAncillaryParameters> | undefined): boolean {
+    return proto3.util.equals(SalesReceiptAncillaryParameters, a, b);
   }
 }
 
@@ -436,9 +479,9 @@ export class SaleReceiptAncillaryParameters extends Message<SaleReceiptAncillary
  *
  * Describes the parameters that are part of a standard response
  *
- * @generated from message Scailo.SaleReceipt
+ * @generated from message Scailo.SalesReceipt
  */
-export class SaleReceipt extends Message<SaleReceipt> {
+export class SalesReceipt extends Message<SalesReceipt> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -505,9 +548,9 @@ export class SaleReceipt extends Message<SaleReceipt> {
   /**
    * The reference on which the sales receipt has been created
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.SALES_RECEIPT_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = SALES_RECEIPT_REF_FROM.SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The ID of the associated reference
@@ -540,9 +583,9 @@ export class SaleReceipt extends Message<SaleReceipt> {
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 17;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The initial amount in cents, without any deductions
@@ -572,13 +615,13 @@ export class SaleReceipt extends Message<SaleReceipt> {
    */
   description = "";
 
-  constructor(data?: PartialMessage<SaleReceipt>) {
+  constructor(data?: PartialMessage<SalesReceipt>) {
     super();
     proto3.util.initPartial(data, this);
   }
 
   static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "Scailo.SaleReceipt";
+  static readonly typeName = "Scailo.SalesReceipt";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
@@ -589,32 +632,32 @@ export class SaleReceipt extends Message<SaleReceipt> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RECEIPT_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 18, name: "amount_base", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "amount_net", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "payment_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SaleReceipt {
-    return new SaleReceipt().fromBinary(bytes, options);
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReceipt {
+    return new SalesReceipt().fromBinary(bytes, options);
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SaleReceipt {
-    return new SaleReceipt().fromJson(jsonValue, options);
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceipt {
+    return new SalesReceipt().fromJson(jsonValue, options);
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SaleReceipt {
-    return new SaleReceipt().fromJsonString(jsonString, options);
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceipt {
+    return new SalesReceipt().fromJsonString(jsonString, options);
   }
 
-  static equals(a: SaleReceipt | PlainMessage<SaleReceipt> | undefined, b: SaleReceipt | PlainMessage<SaleReceipt> | undefined): boolean {
-    return proto3.util.equals(SaleReceipt, a, b);
+  static equals(a: SalesReceipt | PlainMessage<SalesReceipt> | undefined, b: SalesReceipt | PlainMessage<SalesReceipt> | undefined): boolean {
+    return proto3.util.equals(SalesReceipt, a, b);
   }
 }
 
@@ -628,9 +671,9 @@ export class SalesReceiptsList extends Message<SalesReceiptsList> {
   /**
    * List of records
    *
-   * @generated from field: repeated Scailo.SaleReceipt list = 1;
+   * @generated from field: repeated Scailo.SalesReceipt list = 1;
    */
-  list: SaleReceipt[] = [];
+  list: SalesReceipt[] = [];
 
   constructor(data?: PartialMessage<SalesReceiptsList>) {
     super();
@@ -640,7 +683,7 @@ export class SalesReceiptsList extends Message<SalesReceiptsList> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesReceiptsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "list", kind: "message", T: SaleReceipt, repeated: true },
+    { no: 1, name: "list", kind: "message", T: SalesReceipt, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReceiptsList {
@@ -698,9 +741,9 @@ export class SalesReceiptsServicePaginationReq extends Message<SalesReceiptsServ
   /**
    * The sort key that is to be used to fetch the pagination response
    *
-   * @generated from field: Scailo.SALE_RECEIPT_SORT_KEY sort_key = 5;
+   * @generated from field: Scailo.SALES_RECEIPT_SORT_KEY sort_key = 5;
    */
-  sortKey = SALE_RECEIPT_SORT_KEY.SALE_RECEIPT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey = SALES_RECEIPT_SORT_KEY.SALES_RECEIPT_SORT_KEY_ID_UNSPECIFIED;
 
   /**
    * The status of this sales receipt
@@ -721,7 +764,7 @@ export class SalesReceiptsServicePaginationReq extends Message<SalesReceiptsServ
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALE_RECEIPT_SORT_KEY) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_RECEIPT_SORT_KEY) },
     { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
@@ -773,9 +816,9 @@ export class SalesReceiptsServicePaginationResponse extends Message<SalesReceipt
   /**
    * The list of records
    *
-   * @generated from field: repeated Scailo.SaleReceipt payload = 4;
+   * @generated from field: repeated Scailo.SalesReceipt payload = 4;
    */
-  payload: SaleReceipt[] = [];
+  payload: SalesReceipt[] = [];
 
   constructor(data?: PartialMessage<SalesReceiptsServicePaginationResponse>) {
     super();
@@ -788,7 +831,7 @@ export class SalesReceiptsServicePaginationResponse extends Message<SalesReceipt
     { no: 1, name: "count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "total", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "payload", kind: "message", T: SaleReceipt, repeated: true },
+    { no: 4, name: "payload", kind: "message", T: SalesReceipt, repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReceiptsServicePaginationResponse {
@@ -846,9 +889,9 @@ export class SalesReceiptsServiceFilterReq extends Message<SalesReceiptsServiceF
   /**
    * The sort key that is to be used to fetch the pagination response
    *
-   * @generated from field: Scailo.SALE_RECEIPT_SORT_KEY sort_key = 5;
+   * @generated from field: Scailo.SALES_RECEIPT_SORT_KEY sort_key = 5;
    */
-  sortKey = SALE_RECEIPT_SORT_KEY.SALE_RECEIPT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey = SALES_RECEIPT_SORT_KEY.SALES_RECEIPT_SORT_KEY_ID_UNSPECIFIED;
 
   /**
    * The minimum timestamp that needs to be considered to filter by creation
@@ -951,9 +994,9 @@ export class SalesReceiptsServiceFilterReq extends Message<SalesReceiptsServiceF
   /**
    * The reference on which the sales receipt has been created
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.SALES_RECEIPT_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = SALES_RECEIPT_REF_FROM.SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The ID of the associated reference
@@ -986,9 +1029,9 @@ export class SalesReceiptsServiceFilterReq extends Message<SalesReceiptsServiceF
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 27;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 27;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The start range of the payment timestamp
@@ -1016,7 +1059,7 @@ export class SalesReceiptsServiceFilterReq extends Message<SalesReceiptsServiceF
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALE_RECEIPT_SORT_KEY) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_RECEIPT_SORT_KEY) },
     { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -1031,12 +1074,12 @@ export class SalesReceiptsServiceFilterReq extends Message<SalesReceiptsServiceF
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RECEIPT_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 26, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 27, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 27, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 28, name: "payment_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 29, name: "payment_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1173,9 +1216,9 @@ export class SalesReceiptsServiceCountReq extends Message<SalesReceiptsServiceCo
   /**
    * The reference on which the sales receipt has been created
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.SALES_RECEIPT_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = SALES_RECEIPT_REF_FROM.SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The ID of the associated reference
@@ -1208,9 +1251,9 @@ export class SalesReceiptsServiceCountReq extends Message<SalesReceiptsServiceCo
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 27;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 27;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The start range of the payment timestamp
@@ -1249,12 +1292,12 @@ export class SalesReceiptsServiceCountReq extends Message<SalesReceiptsServiceCo
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_RECEIPT_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 26, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 27, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 27, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 28, name: "payment_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 29, name: "payment_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1314,9 +1357,9 @@ export class SalesReceiptsServiceSearchAllReq extends Message<SalesReceiptsServi
   /**
    * The sort key that is to be used to fetch the pagination response
    *
-   * @generated from field: Scailo.SALE_RECEIPT_SORT_KEY sort_key = 5;
+   * @generated from field: Scailo.SALES_RECEIPT_SORT_KEY sort_key = 5;
    */
-  sortKey = SALE_RECEIPT_SORT_KEY.SALE_RECEIPT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey = SALES_RECEIPT_SORT_KEY.SALES_RECEIPT_SORT_KEY_ID_UNSPECIFIED;
 
   /**
    * The entity UUID that is to be used to filter records
@@ -1366,7 +1409,7 @@ export class SalesReceiptsServiceSearchAllReq extends Message<SalesReceiptsServi
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALE_RECEIPT_SORT_KEY) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_RECEIPT_SORT_KEY) },
     { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
     { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },

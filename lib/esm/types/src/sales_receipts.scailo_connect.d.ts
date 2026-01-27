@@ -1,5 +1,5 @@
-import { SaleReceipt, SaleReceiptAncillaryParameters, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { SalesReceipt, SalesReceiptAncillaryParameters, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
@@ -167,7 +167,16 @@ export declare const SalesReceiptsService: {
         };
         /**
          * Send Email
-         * rpc SendEmail (Identifier) returns (IdentifierResponse);
+         *
+         * @generated from rpc Scailo.SalesReceiptsService.SendEmail
+         */
+        readonly sendEmail: {
+            readonly name: "SendEmail";
+            readonly I: typeof IdentifierWithEmailAttributes;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Create a magic link
          *
          * @generated from rpc Scailo.SalesReceiptsService.CreateMagicLink
@@ -186,7 +195,7 @@ export declare const SalesReceiptsService: {
         readonly viewByID: {
             readonly name: "ViewByID";
             readonly I: typeof Identifier;
-            readonly O: typeof SaleReceipt;
+            readonly O: typeof SalesReceipt;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -197,7 +206,7 @@ export declare const SalesReceiptsService: {
         readonly viewByUUID: {
             readonly name: "ViewByUUID";
             readonly I: typeof IdentifierUUID;
-            readonly O: typeof SaleReceipt;
+            readonly O: typeof SalesReceipt;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -208,7 +217,7 @@ export declare const SalesReceiptsService: {
         readonly viewEssentialByID: {
             readonly name: "ViewEssentialByID";
             readonly I: typeof Identifier;
-            readonly O: typeof SaleReceipt;
+            readonly O: typeof SalesReceipt;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -219,7 +228,7 @@ export declare const SalesReceiptsService: {
         readonly viewEssentialByUUID: {
             readonly name: "ViewEssentialByUUID";
             readonly I: typeof IdentifierUUID;
-            readonly O: typeof SaleReceipt;
+            readonly O: typeof SalesReceipt;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -241,7 +250,7 @@ export declare const SalesReceiptsService: {
         readonly viewAncillaryParametersByUUID: {
             readonly name: "ViewAncillaryParametersByUUID";
             readonly I: typeof IdentifierUUID;
-            readonly O: typeof SaleReceiptAncillaryParameters;
+            readonly O: typeof SalesReceiptAncillaryParameters;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -275,6 +284,28 @@ export declare const SalesReceiptsService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof SalesReceiptsServicePaginationReq;
             readonly O: typeof SalesReceiptsServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         *
+         * @generated from rpc Scailo.SalesReceiptsService.IsDownloadable
+         */
+        readonly isDownloadable: {
+            readonly name: "IsDownloadable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download sales receipt with the given IdentifierUUID (can be used to allow public downloads)
+         *
+         * @generated from rpc Scailo.SalesReceiptsService.DownloadByUUID
+         */
+        readonly downloadByUUID: {
+            readonly name: "DownloadByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
         /**

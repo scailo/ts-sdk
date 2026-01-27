@@ -1,6 +1,38 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
-import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
+import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS, TRANSACTION_TYPE } from "./base.scailo_pb.js";
+/**
+ *
+ * Stores all the possible references from which a purchase payment can be added
+ *
+ * @generated from enum Scailo.PURCHASE_PAYMENT_REF_FROM
+ */
+export declare enum PURCHASE_PAYMENT_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the purchase payment originated from a purchase order
+     *
+     * @generated from enum value: PURCHASE_PAYMENT_REF_FROM_PURCHASE_ORDER = 1;
+     */
+    PURCHASE_PAYMENT_REF_FROM_PURCHASE_ORDER = 1,
+    /**
+     * Denotes that the purchase payment originated from a vendor invoice
+     *
+     * @generated from enum value: PURCHASE_PAYMENT_REF_FROM_VENDOR_INVOICE = 2;
+     */
+    PURCHASE_PAYMENT_REF_FROM_VENDOR_INVOICE = 2,
+    /**
+     * Denotes that the purchase payment originated from a debit note
+     *
+     * @generated from enum value: PURCHASE_PAYMENT_REF_FROM_DEBIT_NOTE = 3;
+     */
+    PURCHASE_PAYMENT_REF_FROM_DEBIT_NOTE = 3
+}
 /**
  *
  * Describes the available sort keys
@@ -103,9 +135,9 @@ export declare class PurchasesPaymentsServiceCreateRequest extends Message<Purch
     /**
      * The reference on which the purchase payment has been created
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.PURCHASE_PAYMENT_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: PURCHASE_PAYMENT_REF_FROM;
     /**
      * The ID of the associated reference
      *
@@ -127,9 +159,9 @@ export declare class PurchasesPaymentsServiceCreateRequest extends Message<Purch
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 17;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The initial amount in cents, without any deductions
      *
@@ -215,9 +247,9 @@ export declare class PurchasesPaymentsServiceUpdateRequest extends Message<Purch
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 17;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The initial amount in cents, without any deductions
      *
@@ -355,9 +387,9 @@ export declare class PurchasePayment extends Message<PurchasePayment> {
     /**
      * The reference on which the purchase payment has been created
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.PURCHASE_PAYMENT_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: PURCHASE_PAYMENT_REF_FROM;
     /**
      * The ID of the associated reference
      *
@@ -385,9 +417,9 @@ export declare class PurchasePayment extends Message<PurchasePayment> {
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 17;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The initial amount in cents, without any deductions
      *
@@ -659,9 +691,9 @@ export declare class PurchasesPaymentsServiceFilterReq extends Message<Purchases
     /**
      * The reference on which the purchase payment has been created
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.PURCHASE_PAYMENT_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: PURCHASE_PAYMENT_REF_FROM;
     /**
      * The ID of the associated reference
      *
@@ -689,9 +721,9 @@ export declare class PurchasesPaymentsServiceFilterReq extends Message<Purchases
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 27;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 27;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The start range of the payment timestamp
      *
@@ -813,9 +845,9 @@ export declare class PurchasesPaymentsServiceCountReq extends Message<PurchasesP
     /**
      * The reference on which the purchase payment has been created
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.PURCHASE_PAYMENT_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: PURCHASE_PAYMENT_REF_FROM;
     /**
      * The ID of the associated reference
      *
@@ -843,9 +875,9 @@ export declare class PurchasesPaymentsServiceCountReq extends Message<PurchasesP
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 27;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 27;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The start range of the payment timestamp
      *

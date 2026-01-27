@@ -1,75 +1,75 @@
-[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SaleReceiptAncillaryParameters
+[@kernelminds/scailo-sdk](../README.md) / [Exports](../modules.md) / SalesReceiptAncillaryParameters
 
-# Class: SaleReceiptAncillaryParameters
+# Class: SalesReceiptAncillaryParameters
 
 Stores the UUID references of the record
 
 **`Generated`**
 
-from message Scailo.SaleReceiptAncillaryParameters
+from message Scailo.SalesReceiptAncillaryParameters
 
 ## Hierarchy
 
-- `Message`\<[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)\>
+- `Message`\<[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)\>
 
-  ↳ **`SaleReceiptAncillaryParameters`**
+  ↳ **`SalesReceiptAncillaryParameters`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](SaleReceiptAncillaryParameters.md#constructor)
+- [constructor](SalesReceiptAncillaryParameters.md#constructor)
 
 ### Properties
 
-- [bankAccountUuid](SaleReceiptAncillaryParameters.md#bankaccountuuid)
-- [clientUuid](SaleReceiptAncillaryParameters.md#clientuuid)
-- [currencyUuid](SaleReceiptAncillaryParameters.md#currencyuuid)
-- [refUuid](SaleReceiptAncillaryParameters.md#refuuid)
-- [fields](SaleReceiptAncillaryParameters.md#fields)
-- [runtime](SaleReceiptAncillaryParameters.md#runtime)
-- [typeName](SaleReceiptAncillaryParameters.md#typename)
+- [bankAccountUuid](SalesReceiptAncillaryParameters.md#bankaccountuuid)
+- [clientUuid](SalesReceiptAncillaryParameters.md#clientuuid)
+- [currencyUuid](SalesReceiptAncillaryParameters.md#currencyuuid)
+- [refUuid](SalesReceiptAncillaryParameters.md#refuuid)
+- [fields](SalesReceiptAncillaryParameters.md#fields)
+- [runtime](SalesReceiptAncillaryParameters.md#runtime)
+- [typeName](SalesReceiptAncillaryParameters.md#typename)
 
 ### Methods
 
-- [clone](SaleReceiptAncillaryParameters.md#clone)
-- [equals](SaleReceiptAncillaryParameters.md#equals)
-- [fromBinary](SaleReceiptAncillaryParameters.md#frombinary)
-- [fromJson](SaleReceiptAncillaryParameters.md#fromjson)
-- [fromJsonString](SaleReceiptAncillaryParameters.md#fromjsonstring)
-- [getType](SaleReceiptAncillaryParameters.md#gettype)
-- [toBinary](SaleReceiptAncillaryParameters.md#tobinary)
-- [toJSON](SaleReceiptAncillaryParameters.md#tojson)
-- [toJson](SaleReceiptAncillaryParameters.md#tojson-1)
-- [toJsonString](SaleReceiptAncillaryParameters.md#tojsonstring)
-- [equals](SaleReceiptAncillaryParameters.md#equals-1)
-- [fromBinary](SaleReceiptAncillaryParameters.md#frombinary-1)
-- [fromJson](SaleReceiptAncillaryParameters.md#fromjson-1)
-- [fromJsonString](SaleReceiptAncillaryParameters.md#fromjsonstring-1)
+- [clone](SalesReceiptAncillaryParameters.md#clone)
+- [equals](SalesReceiptAncillaryParameters.md#equals)
+- [fromBinary](SalesReceiptAncillaryParameters.md#frombinary)
+- [fromJson](SalesReceiptAncillaryParameters.md#fromjson)
+- [fromJsonString](SalesReceiptAncillaryParameters.md#fromjsonstring)
+- [getType](SalesReceiptAncillaryParameters.md#gettype)
+- [toBinary](SalesReceiptAncillaryParameters.md#tobinary)
+- [toJSON](SalesReceiptAncillaryParameters.md#tojson)
+- [toJson](SalesReceiptAncillaryParameters.md#tojson-1)
+- [toJsonString](SalesReceiptAncillaryParameters.md#tojsonstring)
+- [equals](SalesReceiptAncillaryParameters.md#equals-1)
+- [fromBinary](SalesReceiptAncillaryParameters.md#frombinary-1)
+- [fromJson](SalesReceiptAncillaryParameters.md#fromjson-1)
+- [fromJsonString](SalesReceiptAncillaryParameters.md#fromjsonstring-1)
 
 ## Constructors
 
 ### constructor
 
-• **new SaleReceiptAncillaryParameters**(`data?`): [`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+• **new SalesReceiptAncillaryParameters**(`data?`): [`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `PartialMessage`\<[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)\> |
+| `data?` | `PartialMessage`\<[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)\> |
 
 #### Returns
 
-[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Overrides
 
-Message\&lt;SaleReceiptAncillaryParameters\&gt;.constructor
+Message\&lt;SalesReceiptAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L404)
+[src/sales_receipts.scailo_pb.ts:447](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L447)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string bank_account_uuid = 215;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:395](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L395)
+[src/sales_receipts.scailo_pb.ts:438](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L438)
 
 ___
 
@@ -101,7 +101,7 @@ from field: string client_uuid = 214;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L388)
+[src/sales_receipts.scailo_pb.ts:431](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L431)
 
 ___
 
@@ -117,7 +117,7 @@ from field: string currency_uuid = 216;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L402)
+[src/sales_receipts.scailo_pb.ts:445](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L445)
 
 ___
 
@@ -133,7 +133,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:381](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L381)
+[src/sales_receipts.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L424)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L411)
+[src/sales_receipts.scailo_pb.ts:454](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L454)
 
 ___
 
@@ -153,29 +153,29 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:409](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L409)
+[src/sales_receipts.scailo_pb.ts:452](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L452)
 
 ___
 
 ### typeName
 
-▪ `Static` `Readonly` **typeName**: ``"Scailo.SaleReceiptAncillaryParameters"``
+▪ `Static` `Readonly` **typeName**: ``"Scailo.SalesReceiptAncillaryParameters"``
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L410)
+[src/sales_receipts.scailo_pb.ts:453](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L453)
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): [`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+▸ **clone**(): [`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 Create a deep copy.
 
 #### Returns
 
-[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Inherited from
 
@@ -198,7 +198,7 @@ Note that this function disregards extensions and unknown fields.
 
 | Name | Type |
 | :------ | :------ |
-| `other` | `undefined` \| ``null`` \| [`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md) \| `PlainMessage`\<[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)\> |
+| `other` | `undefined` \| ``null`` \| [`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md) \| `PlainMessage`\<[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)\> |
 
 #### Returns
 
@@ -303,7 +303,7 @@ ___
 
 ### getType
 
-▸ **getType**(): `MessageType`\<[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)\>
+▸ **getType**(): `MessageType`\<[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)\>
 
 Retrieve the MessageType of this message - a singleton that represents
 the protobuf message declaration and provides metadata for reflection-
@@ -311,7 +311,7 @@ based operations.
 
 #### Returns
 
-`MessageType`\<[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)\>
+`MessageType`\<[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)\>
 
 #### Inherited from
 
@@ -442,8 +442,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `a` | `undefined` \| [`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md) \| `PlainMessage`\<[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)\> |
-| `b` | `undefined` \| [`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md) \| `PlainMessage`\<[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)\> |
+| `a` | `undefined` \| [`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md) \| `PlainMessage`\<[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)\> |
+| `b` | `undefined` \| [`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md) \| `PlainMessage`\<[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)\> |
 
 #### Returns
 
@@ -451,13 +451,13 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L430)
+[src/sales_receipts.scailo_pb.ts:473](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L473)
 
 ___
 
 ### fromBinary
 
-▸ **fromBinary**(`bytes`, `options?`): [`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+▸ **fromBinary**(`bytes`, `options?`): [`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Parameters
 
@@ -468,17 +468,17 @@ ___
 
 #### Returns
 
-[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:418](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L418)
+[src/sales_receipts.scailo_pb.ts:461](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L461)
 
 ___
 
 ### fromJson
 
-▸ **fromJson**(`jsonValue`, `options?`): [`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+▸ **fromJson**(`jsonValue`, `options?`): [`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Parameters
 
@@ -489,17 +489,17 @@ ___
 
 #### Returns
 
-[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L422)
+[src/sales_receipts.scailo_pb.ts:465](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L465)
 
 ___
 
 ### fromJsonString
 
-▸ **fromJsonString**(`jsonString`, `options?`): [`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+▸ **fromJsonString**(`jsonString`, `options?`): [`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Parameters
 
@@ -510,8 +510,8 @@ ___
 
 #### Returns
 
-[`SaleReceiptAncillaryParameters`](SaleReceiptAncillaryParameters.md)
+[`SalesReceiptAncillaryParameters`](SalesReceiptAncillaryParameters.md)
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/sales_receipts.scailo_pb.ts#L426)
+[src/sales_receipts.scailo_pb.ts:469](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L469)

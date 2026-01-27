@@ -1,73 +1,105 @@
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3 } from "@bufbuild/protobuf";
-import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
+import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS, TRANSACTION_TYPE } from "./base.scailo_pb.js";
+/**
+ *
+ * Stores all the possible references from which a sales receipt can be added
+ *
+ * @generated from enum Scailo.SALES_RECEIPT_REF_FROM
+ */
+export declare enum SALES_RECEIPT_REF_FROM {
+    /**
+     * Used only in filters
+     *
+     * @generated from enum value: SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0;
+     */
+    SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes that the sales receipt originated from a sales order
+     *
+     * @generated from enum value: SALES_RECEIPT_REF_FROM_SALES_ORDER = 1;
+     */
+    SALES_RECEIPT_REF_FROM_SALES_ORDER = 1,
+    /**
+     * Denotes that the sales receipt originated from a sales invoice
+     *
+     * @generated from enum value: SALES_RECEIPT_REF_FROM_SALES_INVOICE = 2;
+     */
+    SALES_RECEIPT_REF_FROM_SALES_INVOICE = 2,
+    /**
+     * Denotes that the sales receipt originated from a credit note
+     *
+     * @generated from enum value: SALES_RECEIPT_REF_FROM_CREDIT_NOTE = 3;
+     */
+    SALES_RECEIPT_REF_FROM_CREDIT_NOTE = 3
+}
 /**
  *
  * Describes the available sort keys
  *
- * @generated from enum Scailo.SALE_RECEIPT_SORT_KEY
+ * @generated from enum Scailo.SALES_RECEIPT_SORT_KEY
  */
-export declare enum SALE_RECEIPT_SORT_KEY {
+export declare enum SALES_RECEIPT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_ID_UNSPECIFIED = 0;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_ID_UNSPECIFIED = 0;
      */
-    SALE_RECEIPT_SORT_KEY_ID_UNSPECIFIED = 0,
+    SALES_RECEIPT_SORT_KEY_ID_UNSPECIFIED = 0,
     /**
      * Fetch ordered results by the creation timestamp
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_CREATED_AT = 1;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_CREATED_AT = 1;
      */
-    SALE_RECEIPT_SORT_KEY_CREATED_AT = 1,
+    SALES_RECEIPT_SORT_KEY_CREATED_AT = 1,
     /**
      * Fetch ordered results by the modified timestamp
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_MODIFIED_AT = 2;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_MODIFIED_AT = 2;
      */
-    SALE_RECEIPT_SORT_KEY_MODIFIED_AT = 2,
+    SALES_RECEIPT_SORT_KEY_MODIFIED_AT = 2,
     /**
      * Fetch ordered results by the approved on timestamp
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_APPROVED_ON = 3;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_APPROVED_ON = 3;
      */
-    SALE_RECEIPT_SORT_KEY_APPROVED_ON = 3,
+    SALES_RECEIPT_SORT_KEY_APPROVED_ON = 3,
     /**
      * Fetch ordered results by the approved by field
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_APPROVED_BY = 4;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_APPROVED_BY = 4;
      */
-    SALE_RECEIPT_SORT_KEY_APPROVED_BY = 4,
+    SALES_RECEIPT_SORT_KEY_APPROVED_BY = 4,
     /**
      * Fetch ordered results by the approver's role ID
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_APPROVER_ROLE_ID = 5;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
-    SALE_RECEIPT_SORT_KEY_APPROVER_ROLE_ID = 5,
+    SALES_RECEIPT_SORT_KEY_APPROVER_ROLE_ID = 5,
     /**
      * Fetch ordered results by the approver's completed on timestamp
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_COMPLETED_ON = 6;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_COMPLETED_ON = 6;
      */
-    SALE_RECEIPT_SORT_KEY_COMPLETED_ON = 6,
+    SALES_RECEIPT_SORT_KEY_COMPLETED_ON = 6,
     /**
      * Fetch ordered results by the reference ID
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_REFERENCE_ID = 10;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_REFERENCE_ID = 10;
      */
-    SALE_RECEIPT_SORT_KEY_REFERENCE_ID = 10,
+    SALES_RECEIPT_SORT_KEY_REFERENCE_ID = 10,
     /**
      * Fetch ordered results by the final ref number
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_FINAL_REF_NUMBER = 11;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
-    SALE_RECEIPT_SORT_KEY_FINAL_REF_NUMBER = 11,
+    SALES_RECEIPT_SORT_KEY_FINAL_REF_NUMBER = 11,
     /**
      * Fetch ordered results by the payment timestamp
      *
-     * @generated from enum value: SALE_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12;
+     * @generated from enum value: SALES_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12;
      */
-    SALE_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12
+    SALES_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12
 }
 /**
  *
@@ -103,9 +135,9 @@ export declare class SalesReceiptsServiceCreateRequest extends Message<SalesRece
     /**
      * The reference on which the sales receipt has been created
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.SALES_RECEIPT_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: SALES_RECEIPT_REF_FROM;
     /**
      * The ID of the associated reference
      *
@@ -127,9 +159,9 @@ export declare class SalesReceiptsServiceCreateRequest extends Message<SalesRece
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 17;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The initial amount in cents, without any deductions
      *
@@ -215,9 +247,9 @@ export declare class SalesReceiptsServiceUpdateRequest extends Message<SalesRece
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 17;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The initial amount in cents, without any deductions
      *
@@ -255,9 +287,9 @@ export declare class SalesReceiptsServiceUpdateRequest extends Message<SalesRece
  *
  * Stores the UUID references of the record
  *
- * @generated from message Scailo.SaleReceiptAncillaryParameters
+ * @generated from message Scailo.SalesReceiptAncillaryParameters
  */
-export declare class SaleReceiptAncillaryParameters extends Message<SaleReceiptAncillaryParameters> {
+export declare class SalesReceiptAncillaryParameters extends Message<SalesReceiptAncillaryParameters> {
     /**
      * The UUID of the ref_id (the UUID of the associated ref_id)
      *
@@ -282,22 +314,22 @@ export declare class SaleReceiptAncillaryParameters extends Message<SaleReceiptA
      * @generated from field: string currency_uuid = 216;
      */
     currencyUuid: string;
-    constructor(data?: PartialMessage<SaleReceiptAncillaryParameters>);
+    constructor(data?: PartialMessage<SalesReceiptAncillaryParameters>);
     static readonly runtime: typeof proto3;
-    static readonly typeName = "Scailo.SaleReceiptAncillaryParameters";
+    static readonly typeName = "Scailo.SalesReceiptAncillaryParameters";
     static readonly fields: FieldList;
-    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SaleReceiptAncillaryParameters;
-    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SaleReceiptAncillaryParameters;
-    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SaleReceiptAncillaryParameters;
-    static equals(a: SaleReceiptAncillaryParameters | PlainMessage<SaleReceiptAncillaryParameters> | undefined, b: SaleReceiptAncillaryParameters | PlainMessage<SaleReceiptAncillaryParameters> | undefined): boolean;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReceiptAncillaryParameters;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptAncillaryParameters;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptAncillaryParameters;
+    static equals(a: SalesReceiptAncillaryParameters | PlainMessage<SalesReceiptAncillaryParameters> | undefined, b: SalesReceiptAncillaryParameters | PlainMessage<SalesReceiptAncillaryParameters> | undefined): boolean;
 }
 /**
  *
  * Describes the parameters that are part of a standard response
  *
- * @generated from message Scailo.SaleReceipt
+ * @generated from message Scailo.SalesReceipt
  */
-export declare class SaleReceipt extends Message<SaleReceipt> {
+export declare class SalesReceipt extends Message<SalesReceipt> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -355,9 +387,9 @@ export declare class SaleReceipt extends Message<SaleReceipt> {
     /**
      * The reference on which the sales receipt has been created
      *
-     * @generated from field: string ref_from = 12;
+     * @generated from field: Scailo.SALES_RECEIPT_REF_FROM ref_from = 12;
      */
-    refFrom: string;
+    refFrom: SALES_RECEIPT_REF_FROM;
     /**
      * The ID of the associated reference
      *
@@ -385,9 +417,9 @@ export declare class SaleReceipt extends Message<SaleReceipt> {
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 17;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The initial amount in cents, without any deductions
      *
@@ -412,14 +444,14 @@ export declare class SaleReceipt extends Message<SaleReceipt> {
      * @generated from field: string description = 21;
      */
     description: string;
-    constructor(data?: PartialMessage<SaleReceipt>);
+    constructor(data?: PartialMessage<SalesReceipt>);
     static readonly runtime: typeof proto3;
-    static readonly typeName = "Scailo.SaleReceipt";
+    static readonly typeName = "Scailo.SalesReceipt";
     static readonly fields: FieldList;
-    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SaleReceipt;
-    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SaleReceipt;
-    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SaleReceipt;
-    static equals(a: SaleReceipt | PlainMessage<SaleReceipt> | undefined, b: SaleReceipt | PlainMessage<SaleReceipt> | undefined): boolean;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesReceipt;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceipt;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceipt;
+    static equals(a: SalesReceipt | PlainMessage<SalesReceipt> | undefined, b: SalesReceipt | PlainMessage<SalesReceipt> | undefined): boolean;
 }
 /**
  *
@@ -431,9 +463,9 @@ export declare class SalesReceiptsList extends Message<SalesReceiptsList> {
     /**
      * List of records
      *
-     * @generated from field: repeated Scailo.SaleReceipt list = 1;
+     * @generated from field: repeated Scailo.SalesReceipt list = 1;
      */
-    list: SaleReceipt[];
+    list: SalesReceipt[];
     constructor(data?: PartialMessage<SalesReceiptsList>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesReceiptsList";
@@ -477,9 +509,9 @@ export declare class SalesReceiptsServicePaginationReq extends Message<SalesRece
     /**
      * The sort key that is to be used to fetch the pagination response
      *
-     * @generated from field: Scailo.SALE_RECEIPT_SORT_KEY sort_key = 5;
+     * @generated from field: Scailo.SALES_RECEIPT_SORT_KEY sort_key = 5;
      */
-    sortKey: SALE_RECEIPT_SORT_KEY;
+    sortKey: SALES_RECEIPT_SORT_KEY;
     /**
      * The status of this sales receipt
      *
@@ -523,9 +555,9 @@ export declare class SalesReceiptsServicePaginationResponse extends Message<Sale
     /**
      * The list of records
      *
-     * @generated from field: repeated Scailo.SaleReceipt payload = 4;
+     * @generated from field: repeated Scailo.SalesReceipt payload = 4;
      */
-    payload: SaleReceipt[];
+    payload: SalesReceipt[];
     constructor(data?: PartialMessage<SalesReceiptsServicePaginationResponse>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesReceiptsServicePaginationResponse";
@@ -569,9 +601,9 @@ export declare class SalesReceiptsServiceFilterReq extends Message<SalesReceipts
     /**
      * The sort key that is to be used to fetch the pagination response
      *
-     * @generated from field: Scailo.SALE_RECEIPT_SORT_KEY sort_key = 5;
+     * @generated from field: Scailo.SALES_RECEIPT_SORT_KEY sort_key = 5;
      */
-    sortKey: SALE_RECEIPT_SORT_KEY;
+    sortKey: SALES_RECEIPT_SORT_KEY;
     /**
      * The minimum timestamp that needs to be considered to filter by creation
      *
@@ -659,9 +691,9 @@ export declare class SalesReceiptsServiceFilterReq extends Message<SalesReceipts
     /**
      * The reference on which the sales receipt has been created
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.SALES_RECEIPT_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: SALES_RECEIPT_REF_FROM;
     /**
      * The ID of the associated reference
      *
@@ -689,9 +721,9 @@ export declare class SalesReceiptsServiceFilterReq extends Message<SalesReceipts
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 27;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 27;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The start range of the payment timestamp
      *
@@ -813,9 +845,9 @@ export declare class SalesReceiptsServiceCountReq extends Message<SalesReceiptsS
     /**
      * The reference on which the sales receipt has been created
      *
-     * @generated from field: string ref_from = 22;
+     * @generated from field: Scailo.SALES_RECEIPT_REF_FROM ref_from = 22;
      */
-    refFrom: string;
+    refFrom: SALES_RECEIPT_REF_FROM;
     /**
      * The ID of the associated reference
      *
@@ -843,9 +875,9 @@ export declare class SalesReceiptsServiceCountReq extends Message<SalesReceiptsS
     /**
      * The type of the transaction
      *
-     * @generated from field: string transaction_type = 27;
+     * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 27;
      */
-    transactionType: string;
+    transactionType: TRANSACTION_TYPE;
     /**
      * The start range of the payment timestamp
      *
@@ -901,9 +933,9 @@ export declare class SalesReceiptsServiceSearchAllReq extends Message<SalesRecei
     /**
      * The sort key that is to be used to fetch the pagination response
      *
-     * @generated from field: Scailo.SALE_RECEIPT_SORT_KEY sort_key = 5;
+     * @generated from field: Scailo.SALES_RECEIPT_SORT_KEY sort_key = 5;
      */
-    sortKey: SALE_RECEIPT_SORT_KEY;
+    sortKey: SALES_RECEIPT_SORT_KEY;
     /**
      * The entity UUID that is to be used to filter records
      *

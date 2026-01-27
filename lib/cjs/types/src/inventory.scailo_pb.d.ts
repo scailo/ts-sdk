@@ -991,6 +991,25 @@ export declare class ConsolidatedInventoryStatistics extends Message<Consolidate
     static equals(a: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined, b: ConsolidatedInventoryStatistics | PlainMessage<ConsolidatedInventoryStatistics> | undefined): boolean;
 }
 /**
+ * @generated from message Scailo.ConsolidatedInventoryStatisticsList
+ */
+export declare class ConsolidatedInventoryStatisticsList extends Message<ConsolidatedInventoryStatisticsList> {
+    /**
+     * The list of records
+     *
+     * @generated from field: repeated Scailo.ConsolidatedInventoryStatistics list = 1;
+     */
+    list: ConsolidatedInventoryStatistics[];
+    constructor(data?: PartialMessage<ConsolidatedInventoryStatisticsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.ConsolidatedInventoryStatisticsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ConsolidatedInventoryStatisticsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatisticsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatisticsList;
+    static equals(a: ConsolidatedInventoryStatisticsList | PlainMessage<ConsolidatedInventoryStatisticsList> | undefined, b: ConsolidatedInventoryStatisticsList | PlainMessage<ConsolidatedInventoryStatisticsList> | undefined): boolean;
+}
+/**
  *
  * Describes the abridged version of each production plan item
  *

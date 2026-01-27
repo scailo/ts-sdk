@@ -67,7 +67,7 @@ Message\&lt;IdentifierWithFile\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2769](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2769)
+[src/base.scailo_pb.ts:2804](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2804)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: bytes file_content = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2767](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2767)
+[src/base.scailo_pb.ts:2802](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2802)
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2760](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2760)
+[src/base.scailo_pb.ts:2795](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2795)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2776](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2776)
+[src/base.scailo_pb.ts:2811](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2811)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2774](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2774)
+[src/base.scailo_pb.ts:2809](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2809)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2775](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2775)
+[src/base.scailo_pb.ts:2810](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2810)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2793](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2793)
+[src/base.scailo_pb.ts:2828](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2828)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2781](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2781)
+[src/base.scailo_pb.ts:2816](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2816)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2785](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2785)
+[src/base.scailo_pb.ts:2820](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2820)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2789](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L2789)
+[src/base.scailo_pb.ts:2824](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2824)

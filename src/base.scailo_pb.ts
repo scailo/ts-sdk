@@ -1265,6 +1265,41 @@ proto3.util.setEnumType(AMENDMENT_LOG_REF_FOR, "Scailo.AMENDMENT_LOG_REF_FOR", [
 
 /**
  *
+ * Stores all the possible references of a transaction type
+ *
+ * @generated from enum Scailo.TRANSACTION_TYPE
+ */
+export enum TRANSACTION_TYPE {
+  /**
+   * Only used for filter operations
+   *
+   * @generated from enum value: TRANSACTION_TYPE_ANY_UNSPECIFIED = 0;
+   */
+  TRANSACTION_TYPE_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes a credit
+   *
+   * @generated from enum value: TRANSACTION_TYPE_CREDIT = 1;
+   */
+  TRANSACTION_TYPE_CREDIT = 1,
+
+  /**
+   * Denotes a debit
+   *
+   * @generated from enum value: TRANSACTION_TYPE_DEBIT = 2;
+   */
+  TRANSACTION_TYPE_DEBIT = 2,
+}
+// Retrieve enum metadata with: proto3.getEnumType(TRANSACTION_TYPE)
+proto3.util.setEnumType(TRANSACTION_TYPE, "Scailo.TRANSACTION_TYPE", [
+  { no: 0, name: "TRANSACTION_TYPE_ANY_UNSPECIFIED" },
+  { no: 1, name: "TRANSACTION_TYPE_CREDIT" },
+  { no: 2, name: "TRANSACTION_TYPE_DEBIT" },
+]);
+
+/**
+ *
  * Describes an empty object
  *
  * @generated from message Scailo.Empty

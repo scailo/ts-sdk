@@ -3,8 +3,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { SaleReceipt, SaleReceiptAncillaryParameters, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { SalesReceipt, SalesReceiptAncillaryParameters, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 
@@ -173,7 +173,16 @@ export const SalesReceiptsService = {
     },
     /**
      * Send Email
-     * rpc SendEmail (Identifier) returns (IdentifierResponse);
+     *
+     * @generated from rpc Scailo.SalesReceiptsService.SendEmail
+     */
+    sendEmail: {
+      name: "SendEmail",
+      I: IdentifierWithEmailAttributes,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Create a magic link
      *
      * @generated from rpc Scailo.SalesReceiptsService.CreateMagicLink
@@ -192,7 +201,7 @@ export const SalesReceiptsService = {
     viewByID: {
       name: "ViewByID",
       I: Identifier,
-      O: SaleReceipt,
+      O: SalesReceipt,
       kind: MethodKind.Unary,
     },
     /**
@@ -203,7 +212,7 @@ export const SalesReceiptsService = {
     viewByUUID: {
       name: "ViewByUUID",
       I: IdentifierUUID,
-      O: SaleReceipt,
+      O: SalesReceipt,
       kind: MethodKind.Unary,
     },
     /**
@@ -214,7 +223,7 @@ export const SalesReceiptsService = {
     viewEssentialByID: {
       name: "ViewEssentialByID",
       I: Identifier,
-      O: SaleReceipt,
+      O: SalesReceipt,
       kind: MethodKind.Unary,
     },
     /**
@@ -225,7 +234,7 @@ export const SalesReceiptsService = {
     viewEssentialByUUID: {
       name: "ViewEssentialByUUID",
       I: IdentifierUUID,
-      O: SaleReceipt,
+      O: SalesReceipt,
       kind: MethodKind.Unary,
     },
     /**
@@ -247,7 +256,7 @@ export const SalesReceiptsService = {
     viewAncillaryParametersByUUID: {
       name: "ViewAncillaryParametersByUUID",
       I: IdentifierUUID,
-      O: SaleReceiptAncillaryParameters,
+      O: SalesReceiptAncillaryParameters,
       kind: MethodKind.Unary,
     },
     /**
@@ -281,6 +290,28 @@ export const SalesReceiptsService = {
       name: "ViewWithPagination",
       I: SalesReceiptsServicePaginationReq,
       O: SalesReceiptsServicePaginationResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     *
+     * @generated from rpc Scailo.SalesReceiptsService.IsDownloadable
+     */
+    isDownloadable: {
+      name: "IsDownloadable",
+      I: IdentifierUUID,
+      O: BooleanResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Download sales receipt with the given IdentifierUUID (can be used to allow public downloads)
+     *
+     * @generated from rpc Scailo.SalesReceiptsService.DownloadByUUID
+     */
+    downloadByUUID: {
+      name: "DownloadByUUID",
+      I: IdentifierUUID,
+      O: StandardFile,
       kind: MethodKind.Unary,
     },
     /**

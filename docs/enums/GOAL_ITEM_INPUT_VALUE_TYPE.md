@@ -31,7 +31,7 @@ from enum value: GOAL_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/goals.scailo_pb.ts#L23)
+[src/goals.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/goals.scailo_pb.ts#L23)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: GOAL_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 1;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/goals.scailo_pb.ts#L30)
+[src/goals.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/goals.scailo_pb.ts#L30)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/goals.scailo_pb.ts#L44)
+[src/goals.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/goals.scailo_pb.ts#L44)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 2;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/goals.scailo_pb.ts#L37)
+[src/goals.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/goals.scailo_pb.ts#L37)

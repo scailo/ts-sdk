@@ -942,6 +942,32 @@ export declare enum AMENDMENT_LOG_REF_FOR {
 }
 /**
  *
+ * Stores all the possible references of a transaction type
+ *
+ * @generated from enum Scailo.TRANSACTION_TYPE
+ */
+export declare enum TRANSACTION_TYPE {
+    /**
+     * Only used for filter operations
+     *
+     * @generated from enum value: TRANSACTION_TYPE_ANY_UNSPECIFIED = 0;
+     */
+    TRANSACTION_TYPE_ANY_UNSPECIFIED = 0,
+    /**
+     * Denotes a credit
+     *
+     * @generated from enum value: TRANSACTION_TYPE_CREDIT = 1;
+     */
+    TRANSACTION_TYPE_CREDIT = 1,
+    /**
+     * Denotes a debit
+     *
+     * @generated from enum value: TRANSACTION_TYPE_DEBIT = 2;
+     */
+    TRANSACTION_TYPE_DEBIT = 2
+}
+/**
+ *
  * Describes an empty object
  *
  * @generated from message Scailo.Empty

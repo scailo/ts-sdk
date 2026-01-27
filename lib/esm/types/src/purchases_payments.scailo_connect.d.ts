@@ -1,5 +1,5 @@
 import { PurchasePayment, PurchasePaymentAncillaryParameters, PurchasesPaymentsList, PurchasesPaymentsServiceCountReq, PurchasesPaymentsServiceCreateRequest, PurchasesPaymentsServiceFilterReq, PurchasesPaymentsServicePaginationReq, PurchasesPaymentsServicePaginationResponse, PurchasesPaymentsServiceSearchAllReq, PurchasesPaymentsServiceUpdateRequest } from "./purchases_payments.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
@@ -167,7 +167,16 @@ export declare const PurchasesPaymentsService: {
         };
         /**
          * Send Email
-         * rpc SendEmail (Identifier) returns (IdentifierResponse);
+         *
+         * @generated from rpc Scailo.PurchasesPaymentsService.SendEmail
+         */
+        readonly sendEmail: {
+            readonly name: "SendEmail";
+            readonly I: typeof IdentifierWithEmailAttributes;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Create a magic link
          *
          * @generated from rpc Scailo.PurchasesPaymentsService.CreateMagicLink
@@ -275,6 +284,28 @@ export declare const PurchasesPaymentsService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof PurchasesPaymentsServicePaginationReq;
             readonly O: typeof PurchasesPaymentsServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         *
+         * @generated from rpc Scailo.PurchasesPaymentsService.IsDownloadable
+         */
+        readonly isDownloadable: {
+            readonly name: "IsDownloadable";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof BooleanResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download purchase payment with the given IdentifierUUID (can be used to allow public downloads)
+         *
+         * @generated from rpc Scailo.PurchasesPaymentsService.DownloadByUUID
+         */
+        readonly downloadByUUID: {
+            readonly name: "DownloadByUUID";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StandardFile;
             readonly kind: MethodKind.Unary;
         };
         /**

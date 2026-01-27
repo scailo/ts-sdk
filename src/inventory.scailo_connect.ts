@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { ConsolidatedInventoryStatistics, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
+import { ConsolidatedInventoryStatistics, ConsolidatedInventoryStatisticsList, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { Identifier, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
+import { Identifier, IdentifiersList, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 
 /**
  *
@@ -242,7 +242,7 @@ export const InventoryService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View consolidated inventory statistics
+     * View consolidated inventory statistics for family with the given Identifier
      *
      * @generated from rpc Scailo.InventoryService.ViewConsolidatedStatistics
      */
@@ -250,6 +250,17 @@ export const InventoryService = {
       name: "ViewConsolidatedStatistics",
       I: Identifier,
       O: ConsolidatedInventoryStatistics,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View consolidated inventory statistics for families with the given IdentifiersList
+     *
+     * @generated from rpc Scailo.InventoryService.ViewConsolidatedStatisticsForFamilies
+     */
+    viewConsolidatedStatisticsForFamilies: {
+      name: "ViewConsolidatedStatisticsForFamilies",
+      I: IdentifiersList,
+      O: ConsolidatedInventoryStatisticsList,
       kind: MethodKind.Unary,
     },
     /**

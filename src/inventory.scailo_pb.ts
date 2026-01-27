@@ -1479,6 +1479,45 @@ export class ConsolidatedInventoryStatistics extends Message<ConsolidatedInvento
 }
 
 /**
+ * @generated from message Scailo.ConsolidatedInventoryStatisticsList
+ */
+export class ConsolidatedInventoryStatisticsList extends Message<ConsolidatedInventoryStatisticsList> {
+  /**
+   * The list of records
+   *
+   * @generated from field: repeated Scailo.ConsolidatedInventoryStatistics list = 1;
+   */
+  list: ConsolidatedInventoryStatistics[] = [];
+
+  constructor(data?: PartialMessage<ConsolidatedInventoryStatisticsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.ConsolidatedInventoryStatisticsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: ConsolidatedInventoryStatistics, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ConsolidatedInventoryStatisticsList {
+    return new ConsolidatedInventoryStatisticsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatisticsList {
+    return new ConsolidatedInventoryStatisticsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ConsolidatedInventoryStatisticsList {
+    return new ConsolidatedInventoryStatisticsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: ConsolidatedInventoryStatisticsList | PlainMessage<ConsolidatedInventoryStatisticsList> | undefined, b: ConsolidatedInventoryStatisticsList | PlainMessage<ConsolidatedInventoryStatisticsList> | undefined): boolean {
+    return proto3.util.equals(ConsolidatedInventoryStatisticsList, a, b);
+  }
+}
+
+/**
  *
  * Describes the abridged version of each production plan item
  *

@@ -72,7 +72,7 @@ Message\&lt;LogbookLogComplete\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3316](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3316)
+[src/base.scailo_pb.ts:3351](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3351)
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: string app_comment = 13;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3300](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3300)
+[src/base.scailo_pb.ts:3335](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3335)
 
 ___
 
@@ -104,7 +104,7 @@ from field: Scailo.EmployeeMetadata metadata = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3272](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3272)
+[src/base.scailo_pb.ts:3307](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3307)
 
 ___
 
@@ -120,7 +120,7 @@ from field: Scailo.LOGBOOK_OPERATION operation = 11;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3286](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3286)
+[src/base.scailo_pb.ts:3321](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3321)
 
 ___
 
@@ -136,7 +136,7 @@ from field: bytes previous_data = 15;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3314](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3314)
+[src/base.scailo_pb.ts:3349](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3349)
 
 ___
 
@@ -152,7 +152,7 @@ from field: string ref_uuid = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3279](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3279)
+[src/base.scailo_pb.ts:3314](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3314)
 
 ___
 
@@ -168,7 +168,7 @@ from field: string user_comment = 14;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3307](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3307)
+[src/base.scailo_pb.ts:3342](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3342)
 
 ___
 
@@ -184,7 +184,7 @@ from field: string username = 12;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3293](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3293)
+[src/base.scailo_pb.ts:3328](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3328)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3323](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3323)
+[src/base.scailo_pb.ts:3358](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3358)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3321](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3321)
+[src/base.scailo_pb.ts:3356](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3356)
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3322](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3322)
+[src/base.scailo_pb.ts:3357](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3357)
 
 ## Methods
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3345](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3345)
+[src/base.scailo_pb.ts:3380](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3380)
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3333](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3333)
+[src/base.scailo_pb.ts:3368](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3368)
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3337](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3337)
+[src/base.scailo_pb.ts:3372](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3372)
 
 ___
 
@@ -565,4 +565,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3341](https://github.com/scailo/ts-sdk/blob/9290b8b4ccbad2223d90fcb6be7d58b00b321b54/src/base.scailo_pb.ts#L3341)
+[src/base.scailo_pb.ts:3376](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L3376)

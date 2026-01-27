@@ -5,7 +5,50 @@
 
 import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
 import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
+import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS, TRANSACTION_TYPE } from "./base.scailo_pb.js";
+
+/**
+ *
+ * Stores all the possible references from which a purchase payment can be added
+ *
+ * @generated from enum Scailo.PURCHASE_PAYMENT_REF_FROM
+ */
+export enum PURCHASE_PAYMENT_REF_FROM {
+  /**
+   * Used only in filters
+   *
+   * @generated from enum value: PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED = 0;
+   */
+  PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED = 0,
+
+  /**
+   * Denotes that the purchase payment originated from a purchase order
+   *
+   * @generated from enum value: PURCHASE_PAYMENT_REF_FROM_PURCHASE_ORDER = 1;
+   */
+  PURCHASE_PAYMENT_REF_FROM_PURCHASE_ORDER = 1,
+
+  /**
+   * Denotes that the purchase payment originated from a vendor invoice
+   *
+   * @generated from enum value: PURCHASE_PAYMENT_REF_FROM_VENDOR_INVOICE = 2;
+   */
+  PURCHASE_PAYMENT_REF_FROM_VENDOR_INVOICE = 2,
+
+  /**
+   * Denotes that the purchase payment originated from a debit note
+   *
+   * @generated from enum value: PURCHASE_PAYMENT_REF_FROM_DEBIT_NOTE = 3;
+   */
+  PURCHASE_PAYMENT_REF_FROM_DEBIT_NOTE = 3,
+}
+// Retrieve enum metadata with: proto3.getEnumType(PURCHASE_PAYMENT_REF_FROM)
+proto3.util.setEnumType(PURCHASE_PAYMENT_REF_FROM, "Scailo.PURCHASE_PAYMENT_REF_FROM", [
+  { no: 0, name: "PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED" },
+  { no: 1, name: "PURCHASE_PAYMENT_REF_FROM_PURCHASE_ORDER" },
+  { no: 2, name: "PURCHASE_PAYMENT_REF_FROM_VENDOR_INVOICE" },
+  { no: 3, name: "PURCHASE_PAYMENT_REF_FROM_DEBIT_NOTE" },
+]);
 
 /**
  *
@@ -136,9 +179,9 @@ export class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaym
   /**
    * The reference on which the purchase payment has been created
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.PURCHASE_PAYMENT_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = PURCHASE_PAYMENT_REF_FROM.PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The ID of the associated reference
@@ -164,9 +207,9 @@ export class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaym
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 17;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The initial amount in cents, without any deductions
@@ -208,11 +251,11 @@ export class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaym
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 18, name: "amount_base", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "amount_net", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "payment_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -295,9 +338,9 @@ export class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaym
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 17;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The initial amount in cents, without any deductions
@@ -342,7 +385,7 @@ export class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaym
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 18, name: "amount_base", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "amount_net", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "payment_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -505,9 +548,9 @@ export class PurchasePayment extends Message<PurchasePayment> {
   /**
    * The reference on which the purchase payment has been created
    *
-   * @generated from field: string ref_from = 12;
+   * @generated from field: Scailo.PURCHASE_PAYMENT_REF_FROM ref_from = 12;
    */
-  refFrom = "";
+  refFrom = PURCHASE_PAYMENT_REF_FROM.PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The ID of the associated reference
@@ -540,9 +583,9 @@ export class PurchasePayment extends Message<PurchasePayment> {
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 17;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The initial amount in cents, without any deductions
@@ -589,12 +632,12 @@ export class PurchasePayment extends Message<PurchasePayment> {
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 18, name: "amount_base", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "amount_net", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "payment_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -951,9 +994,9 @@ export class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPayments
   /**
    * The reference on which the purchase payment has been created
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.PURCHASE_PAYMENT_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = PURCHASE_PAYMENT_REF_FROM.PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The ID of the associated reference
@@ -986,9 +1029,9 @@ export class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPayments
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 27;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 27;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The start range of the payment timestamp
@@ -1031,12 +1074,12 @@ export class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPayments
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 26, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 27, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 27, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 28, name: "payment_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 29, name: "payment_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1173,9 +1216,9 @@ export class PurchasesPaymentsServiceCountReq extends Message<PurchasesPaymentsS
   /**
    * The reference on which the purchase payment has been created
    *
-   * @generated from field: string ref_from = 22;
+   * @generated from field: Scailo.PURCHASE_PAYMENT_REF_FROM ref_from = 22;
    */
-  refFrom = "";
+  refFrom = PURCHASE_PAYMENT_REF_FROM.PURCHASE_PAYMENT_REF_FROM_ANY_UNSPECIFIED;
 
   /**
    * The ID of the associated reference
@@ -1208,9 +1251,9 @@ export class PurchasesPaymentsServiceCountReq extends Message<PurchasesPaymentsS
   /**
    * The type of the transaction
    *
-   * @generated from field: string transaction_type = 27;
+   * @generated from field: Scailo.TRANSACTION_TYPE transaction_type = 27;
    */
-  transactionType = "";
+  transactionType = TRANSACTION_TYPE.TRANSACTION_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The start range of the payment timestamp
@@ -1249,12 +1292,12 @@ export class PurchasesPaymentsServiceCountReq extends Message<PurchasesPaymentsS
     { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_REF_FROM) },
     { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 24, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 26, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 27, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 27, name: "transaction_type", kind: "enum", T: proto3.getEnumType(TRANSACTION_TYPE) },
     { no: 28, name: "payment_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 29, name: "payment_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
