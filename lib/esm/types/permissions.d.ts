@@ -3278,67 +3278,67 @@ export declare const PermissionsPurchasesPayments: {
     Name: string;
     Description: string;
 }[];
-export declare const PermissionNewSaleReceipt: {
+export declare const PermissionNewSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionDraftSaleReceipt: {
+export declare const PermissionDraftSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionVerifySaleReceipt: {
+export declare const PermissionVerifySalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionApproveSaleReceipt: {
+export declare const PermissionApproveSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionReviseSaleReceipt: {
+export declare const PermissionReviseSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionStandingSaleReceipt: {
+export declare const PermissionStandingSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionHaltedSaleReceipt: {
+export declare const PermissionHaltedSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionDiscardSaleReceipt: {
+export declare const PermissionDiscardSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionRestoreSaleReceipt: {
+export declare const PermissionRestoreSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionCompletedSaleReceipt: {
+export declare const PermissionCompletedSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionHaltSaleReceipt: {
+export declare const PermissionHaltSalesReceipt: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionMarkSaleReceiptasCompleted: {
+export declare const PermissionMarkSalesReceiptasCompleted: {
     Uid: string;
     Name: string;
     Description: string;
 };
-export declare const PermissionSaleReceiptCreateMagicLink: {
+export declare const PermissionSalesReceiptCreateMagicLink: {
     Uid: string;
     Name: string;
     Description: string;

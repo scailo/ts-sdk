@@ -31,7 +31,7 @@ from enum value: INFRASTRUCTURE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/infrastructures.scailo_pb.ts#L23)
+[src/infrastructures.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/infrastructures.scailo_pb.ts#L23)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: INFRASTRUCTURE_REF_FROM_GOODS_RECEIPT = 2;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/infrastructures.scailo_pb.ts#L37)
+[src/infrastructures.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/infrastructures.scailo_pb.ts#L37)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: INFRASTRUCTURE_REF_FROM_INITIAL_STOCK = 1;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/infrastructures.scailo_pb.ts#L30)
+[src/infrastructures.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/infrastructures.scailo_pb.ts#L30)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: INFRASTRUCTURE_REF_FROM_INWARD_JOB_FREE_ISSUE_MATERIAL = 3;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/infrastructures.scailo_pb.ts#L44)
+[src/infrastructures.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/infrastructures.scailo_pb.ts#L44)
