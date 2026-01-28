@@ -29,7 +29,7 @@ from enum value: SALES_QUOTATION_REFERENCE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_quotations.scailo_pb.ts#L189)
+[src/sales_quotations.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_quotations.scailo_pb.ts#L189)
 
 ___
 
@@ -47,4 +47,4 @@ from enum value: SALES_QUOTATION_REFERENCE_REF_FROM_SALES_ENQUIRY = 2;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_quotations.scailo_pb.ts#L198)
+[src/sales_quotations.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_quotations.scailo_pb.ts#L198)

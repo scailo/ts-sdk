@@ -29,7 +29,7 @@ from enum value: SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_invoices.scailo_pb.ts#L23)
+[src/sales_invoices.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_invoices.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: SALES_INVOICE_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_invoices.scailo_pb.ts#L30)
+[src/sales_invoices.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_invoices.scailo_pb.ts#L30)

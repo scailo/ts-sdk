@@ -68,7 +68,7 @@ Message\&lt;ApprovalMetadata\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2039](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2039)
+[src/base.scailo_pb.ts:2039](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2039)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 approved_by_user_id = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2030](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2030)
+[src/base.scailo_pb.ts:2030](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2030)
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 approved_on = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2023](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2023)
+[src/base.scailo_pb.ts:2023](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2023)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 approver_role_id = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2037](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2037)
+[src/base.scailo_pb.ts:2037](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2037)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2046](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2046)
+[src/base.scailo_pb.ts:2046](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2046)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2044](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2044)
+[src/base.scailo_pb.ts:2044](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2044)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2045](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2045)
+[src/base.scailo_pb.ts:2045](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2045)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2064](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2064)
+[src/base.scailo_pb.ts:2064](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2064)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2052](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2052)
+[src/base.scailo_pb.ts:2052](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2052)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2056](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2056)
+[src/base.scailo_pb.ts:2056](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2056)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2060](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/base.scailo_pb.ts#L2060)
+[src/base.scailo_pb.ts:2060](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/base.scailo_pb.ts#L2060)

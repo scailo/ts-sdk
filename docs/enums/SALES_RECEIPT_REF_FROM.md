@@ -31,7 +31,7 @@ from enum value: SALES_RECEIPT_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L22)
+[src/sales_receipts.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_receipts.scailo_pb.ts#L22)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: SALES_RECEIPT_REF_FROM_CREDIT_NOTE = 3;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L43)
+[src/sales_receipts.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_receipts.scailo_pb.ts#L43)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: SALES_RECEIPT_REF_FROM_SALES_INVOICE = 2;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L36)
+[src/sales_receipts.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_receipts.scailo_pb.ts#L36)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: SALES_RECEIPT_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_receipts.scailo_pb.ts#L29)
+[src/sales_receipts.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_receipts.scailo_pb.ts#L29)

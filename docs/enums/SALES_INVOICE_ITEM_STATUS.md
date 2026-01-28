@@ -30,7 +30,7 @@ from enum value: SALES_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_invoices.scailo_pb.ts#L264)
+[src/sales_invoices.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_invoices.scailo_pb.ts#L264)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SALES_INVOICE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:271](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_invoices.scailo_pb.ts#L271)
+[src/sales_invoices.scailo_pb.ts:271](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_invoices.scailo_pb.ts#L271)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SALES_INVOICE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:278](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/sales_invoices.scailo_pb.ts#L278)
+[src/sales_invoices.scailo_pb.ts:278](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/sales_invoices.scailo_pb.ts#L278)

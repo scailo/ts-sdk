@@ -495,6 +495,17 @@ export const EquationsFamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View the latest equation for every family from the given identifiers list
+     *
+     * @generated from rpc Scailo.EquationsFamiliesService.ViewForFamilyIDs
+     */
+    viewForFamilyIDs: {
+      name: "ViewForFamilyIDs",
+      I: IdentifiersList,
+      O: EquationsFamiliesList,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View prospective families for the given equation family (without cyclical dependencies)
      *
      * @generated from rpc Scailo.EquationsFamiliesService.ViewProspectiveFamilies

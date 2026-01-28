@@ -32,7 +32,7 @@ from enum value: NOTE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/notes.scailo_pb.ts#L86)
+[src/notes.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/notes.scailo_pb.ts#L86)
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: NOTE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/notes.scailo_pb.ts#L72)
+[src/notes.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/notes.scailo_pb.ts#L72)
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: NOTE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/notes.scailo_pb.ts#L65)
+[src/notes.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/notes.scailo_pb.ts#L65)
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: NOTE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/notes.scailo_pb.ts#L79)
+[src/notes.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/notes.scailo_pb.ts#L79)
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: NOTE_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/15b109c9b02e5ed92b10e654becaecb13162ec78/src/notes.scailo_pb.ts#L93)
+[src/notes.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/cebac9503dc5e52d335c8f92756a3a92d88c2091/src/notes.scailo_pb.ts#L93)
