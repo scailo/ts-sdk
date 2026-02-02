@@ -1762,6 +1762,144 @@ export declare class FamilyQCGroupsList extends Message<FamilyQCGroupsList> {
 }
 /**
  *
+ * Describes the parameters necessary to create a family image
+ *
+ * @generated from message Scailo.FamiliesServiceImageCreateRequest
+ */
+export declare class FamiliesServiceImageCreateRequest extends Message<FamiliesServiceImageCreateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 10;
+     */
+    familyId: bigint;
+    /**
+     * Stores the vault file ID
+     *
+     * @generated from field: uint64 vault_file_id = 11;
+     */
+    vaultFileId: bigint;
+    /**
+     * Denotes if the image is public
+     *
+     * @generated from field: bool is_public = 12;
+     */
+    isPublic: boolean;
+    /**
+     * Stores the sequence number
+     *
+     * @generated from field: uint64 sequence_number = 13;
+     */
+    sequenceNumber: bigint;
+    constructor(data?: PartialMessage<FamiliesServiceImageCreateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamiliesServiceImageCreateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceImageCreateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceImageCreateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceImageCreateRequest;
+    static equals(a: FamiliesServiceImageCreateRequest | PlainMessage<FamiliesServiceImageCreateRequest> | undefined, b: FamiliesServiceImageCreateRequest | PlainMessage<FamiliesServiceImageCreateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters that constitute a family image
+ *
+ * @generated from message Scailo.FamilyImage
+ */
+export declare class FamilyImage extends Message<FamilyImage> {
+    /**
+     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @generated from field: string entity_uuid = 1;
+     */
+    entityUuid: string;
+    /**
+     * Stores the metadata of this family
+     *
+     * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+     */
+    metadata?: EmployeeMetadata;
+    /**
+     * Stores the approval metadata
+     *
+     * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+     */
+    approvalMetadata?: ApprovalMetadata;
+    /**
+     * Denotes if this record requires approval (or has been approved)
+     *
+     * @generated from field: bool need_approval = 4;
+     */
+    needApproval: boolean;
+    /**
+     * Stores any comment that the user might have added during an operation
+     *
+     * @generated from field: string user_comment = 5;
+     */
+    userComment: string;
+    /**
+     * Stores the family ID
+     *
+     * @generated from field: uint64 family_id = 10;
+     */
+    familyId: bigint;
+    /**
+     * Stores the vault file ID
+     *
+     * @generated from field: uint64 vault_file_id = 11;
+     */
+    vaultFileId: bigint;
+    /**
+     * Denotes if the image is public
+     *
+     * @generated from field: bool is_public = 12;
+     */
+    isPublic: boolean;
+    /**
+     * Stores the sequence number
+     *
+     * @generated from field: uint64 sequence_number = 13;
+     */
+    sequenceNumber: bigint;
+    constructor(data?: PartialMessage<FamilyImage>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamilyImage";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamilyImage;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyImage;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyImage;
+    static equals(a: FamilyImage | PlainMessage<FamilyImage> | undefined, b: FamilyImage | PlainMessage<FamilyImage> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message consisting of the list of family images
+ *
+ * @generated from message Scailo.FamilyImagesList
+ */
+export declare class FamilyImagesList extends Message<FamilyImagesList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.FamilyImage list = 1;
+     */
+    list: FamilyImage[];
+    constructor(data?: PartialMessage<FamilyImagesList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamilyImagesList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamilyImagesList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyImagesList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyImagesList;
+    static equals(a: FamilyImagesList | PlainMessage<FamilyImagesList> | undefined, b: FamilyImagesList | PlainMessage<FamilyImagesList> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters necessary to update a family's price
  *
  * @generated from message Scailo.FamiliesServiceUpdatePriceRequest

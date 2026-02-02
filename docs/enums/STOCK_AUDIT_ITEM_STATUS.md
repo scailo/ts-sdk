@@ -30,7 +30,7 @@ from enum value: STOCK_AUDIT_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/stock_audits.scailo_pb.ts#L189)
+[src/stock_audits.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/stock_audits.scailo_pb.ts#L189)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: STOCK_AUDIT_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/stock_audits.scailo_pb.ts#L196)
+[src/stock_audits.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/stock_audits.scailo_pb.ts#L196)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: STOCK_AUDIT_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/stock_audits.scailo_pb.ts#L203)
+[src/stock_audits.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/stock_audits.scailo_pb.ts#L203)

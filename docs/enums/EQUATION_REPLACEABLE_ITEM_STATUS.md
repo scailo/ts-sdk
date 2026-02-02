@@ -30,7 +30,7 @@ from enum value: EQUATION_REPLACEABLE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/equations_replaceables.scailo_pb.ts#L99)
+[src/equations_replaceables.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/equations_replaceables.scailo_pb.ts#L99)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: EQUATION_REPLACEABLE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/equations_replaceables.scailo_pb.ts#L106)
+[src/equations_replaceables.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/equations_replaceables.scailo_pb.ts#L106)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: EQUATION_REPLACEABLE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/equations_replaceables.scailo_pb.ts#L113)
+[src/equations_replaceables.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/equations_replaceables.scailo_pb.ts#L113)

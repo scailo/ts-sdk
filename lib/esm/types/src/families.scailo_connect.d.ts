@@ -1,4 +1,4 @@
-import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateMinStockToMaintainRequest, FamiliesServiceUpdatePriceRequest, FamiliesServiceUpdateRequest, Family, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
+import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceImageCreateRequest, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateMinStockToMaintainRequest, FamiliesServiceUpdatePriceRequest, FamiliesServiceUpdateRequest, Family, FamilyImage, FamilyImagesList, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
@@ -463,6 +463,72 @@ export declare const FamiliesService: {
             readonly name: "ViewQCGroups";
             readonly I: typeof Identifier;
             readonly O: typeof FamilyQCGroupsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Add a image
+         *
+         * @generated from rpc Scailo.FamiliesService.AddImage
+         */
+        readonly addImage: {
+            readonly name: "AddImage";
+            readonly I: typeof FamiliesServiceImageCreateRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Approve a image
+         *
+         * @generated from rpc Scailo.FamiliesService.ApproveImage
+         */
+        readonly approveImage: {
+            readonly name: "ApproveImage";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Delete a image
+         *
+         * @generated from rpc Scailo.FamiliesService.DeleteImage
+         */
+        readonly deleteImage: {
+            readonly name: "DeleteImage";
+            readonly I: typeof IdentifierWithUserComment;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View a image for the given ID
+         *
+         * @generated from rpc Scailo.FamiliesService.ViewImageByID
+         */
+        readonly viewImageByID: {
+            readonly name: "ViewImageByID";
+            readonly I: typeof Identifier;
+            readonly O: typeof FamilyImage;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View all images for given family ID
+         *
+         * @generated from rpc Scailo.FamiliesService.ViewImages
+         */
+        readonly viewImages: {
+            readonly name: "ViewImages";
+            readonly I: typeof Identifier;
+            readonly O: typeof FamilyImagesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View public images for given family ID
+         *
+         * @generated from rpc Scailo.FamiliesService.ViewPublicImages
+         */
+        readonly viewPublicImages: {
+            readonly name: "ViewPublicImages";
+            readonly I: typeof Identifier;
+            readonly O: typeof FamilyImagesList;
             readonly kind: MethodKind.Unary;
         };
         /**

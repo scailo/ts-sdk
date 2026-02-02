@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateMinStockToMaintainRequest, FamiliesServiceUpdatePriceRequest, FamiliesServiceUpdateRequest, Family, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
+import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceImageCreateRequest, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateMinStockToMaintainRequest, FamiliesServiceUpdatePriceRequest, FamiliesServiceUpdateRequest, Family, FamilyImage, FamilyImagesList, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -469,6 +469,72 @@ export const FamiliesService = {
       name: "ViewQCGroups",
       I: Identifier,
       O: FamilyQCGroupsList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Add a image
+     *
+     * @generated from rpc Scailo.FamiliesService.AddImage
+     */
+    addImage: {
+      name: "AddImage",
+      I: FamiliesServiceImageCreateRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Approve a image
+     *
+     * @generated from rpc Scailo.FamiliesService.ApproveImage
+     */
+    approveImage: {
+      name: "ApproveImage",
+      I: IdentifierWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Delete a image
+     *
+     * @generated from rpc Scailo.FamiliesService.DeleteImage
+     */
+    deleteImage: {
+      name: "DeleteImage",
+      I: IdentifierWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View a image for the given ID
+     *
+     * @generated from rpc Scailo.FamiliesService.ViewImageByID
+     */
+    viewImageByID: {
+      name: "ViewImageByID",
+      I: Identifier,
+      O: FamilyImage,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View all images for given family ID
+     *
+     * @generated from rpc Scailo.FamiliesService.ViewImages
+     */
+    viewImages: {
+      name: "ViewImages",
+      I: Identifier,
+      O: FamilyImagesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View public images for given family ID
+     *
+     * @generated from rpc Scailo.FamiliesService.ViewPublicImages
+     */
+    viewPublicImages: {
+      name: "ViewPublicImages",
+      I: Identifier,
+      O: FamilyImagesList,
       kind: MethodKind.Unary,
     },
     /**

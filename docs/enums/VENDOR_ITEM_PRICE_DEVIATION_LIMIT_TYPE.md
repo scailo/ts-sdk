@@ -30,7 +30,7 @@ from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/vendors.scailo_pb.ts#L37)
+[src/vendors.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/vendors.scailo_pb.ts#L37)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/vendors.scailo_pb.ts#L23)
+[src/vendors.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/vendors.scailo_pb.ts#L23)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/vendors.scailo_pb.ts#L30)
+[src/vendors.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/vendors.scailo_pb.ts#L30)

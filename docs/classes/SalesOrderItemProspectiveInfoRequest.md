@@ -68,7 +68,7 @@ Message\&lt;SalesOrderItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1890](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1890)
+[src/sales_orders.scailo_pb.ts:1890](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1890)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 client_uom_id = 13;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1888](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1888)
+[src/sales_orders.scailo_pb.ts:1888](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1888)
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1881](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1881)
+[src/sales_orders.scailo_pb.ts:1881](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1881)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1874](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1874)
+[src/sales_orders.scailo_pb.ts:1874](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1874)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1897](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1897)
+[src/sales_orders.scailo_pb.ts:1897](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1897)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1895](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1895)
+[src/sales_orders.scailo_pb.ts:1895](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1895)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1896](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1896)
+[src/sales_orders.scailo_pb.ts:1896](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1896)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1915](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1915)
+[src/sales_orders.scailo_pb.ts:1915](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1915)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1903](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1903)
+[src/sales_orders.scailo_pb.ts:1903](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1903)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1907](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1907)
+[src/sales_orders.scailo_pb.ts:1907](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1907)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1911](https://github.com/scailo/ts-sdk/blob/af96b25d02eecd3a053974bf3005c64869ec737d/src/sales_orders.scailo_pb.ts#L1911)
+[src/sales_orders.scailo_pb.ts:1911](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/sales_orders.scailo_pb.ts#L1911)

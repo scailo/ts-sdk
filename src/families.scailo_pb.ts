@@ -2659,6 +2659,228 @@ export class FamilyQCGroupsList extends Message<FamilyQCGroupsList> {
 
 /**
  *
+ * Describes the parameters necessary to create a family image
+ *
+ * @generated from message Scailo.FamiliesServiceImageCreateRequest
+ */
+export class FamiliesServiceImageCreateRequest extends Message<FamiliesServiceImageCreateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 10;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the vault file ID
+   *
+   * @generated from field: uint64 vault_file_id = 11;
+   */
+  vaultFileId = protoInt64.zero;
+
+  /**
+   * Denotes if the image is public
+   *
+   * @generated from field: bool is_public = 12;
+   */
+  isPublic = false;
+
+  /**
+   * Stores the sequence number
+   *
+   * @generated from field: uint64 sequence_number = 13;
+   */
+  sequenceNumber = protoInt64.zero;
+
+  constructor(data?: PartialMessage<FamiliesServiceImageCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamiliesServiceImageCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "vault_file_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "is_public", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 13, name: "sequence_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceImageCreateRequest {
+    return new FamiliesServiceImageCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceImageCreateRequest {
+    return new FamiliesServiceImageCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceImageCreateRequest {
+    return new FamiliesServiceImageCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamiliesServiceImageCreateRequest | PlainMessage<FamiliesServiceImageCreateRequest> | undefined, b: FamiliesServiceImageCreateRequest | PlainMessage<FamiliesServiceImageCreateRequest> | undefined): boolean {
+    return proto3.util.equals(FamiliesServiceImageCreateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters that constitute a family image
+ *
+ * @generated from message Scailo.FamilyImage
+ */
+export class FamilyImage extends Message<FamilyImage> {
+  /**
+   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   * Stores the metadata of this family
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   * Stores the approval metadata
+   *
+   * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+   */
+  approvalMetadata?: ApprovalMetadata;
+
+  /**
+   * Denotes if this record requires approval (or has been approved)
+   *
+   * @generated from field: bool need_approval = 4;
+   */
+  needApproval = false;
+
+  /**
+   * Stores any comment that the user might have added during an operation
+   *
+   * @generated from field: string user_comment = 5;
+   */
+  userComment = "";
+
+  /**
+   * Stores the family ID
+   *
+   * @generated from field: uint64 family_id = 10;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   * Stores the vault file ID
+   *
+   * @generated from field: uint64 vault_file_id = 11;
+   */
+  vaultFileId = protoInt64.zero;
+
+  /**
+   * Denotes if the image is public
+   *
+   * @generated from field: bool is_public = 12;
+   */
+  isPublic = false;
+
+  /**
+   * Stores the sequence number
+   *
+   * @generated from field: uint64 sequence_number = 13;
+   */
+  sequenceNumber = protoInt64.zero;
+
+  constructor(data?: PartialMessage<FamilyImage>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamilyImage";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "vault_file_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "is_public", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 13, name: "sequence_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamilyImage {
+    return new FamilyImage().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyImage {
+    return new FamilyImage().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyImage {
+    return new FamilyImage().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamilyImage | PlainMessage<FamilyImage> | undefined, b: FamilyImage | PlainMessage<FamilyImage> | undefined): boolean {
+    return proto3.util.equals(FamilyImage, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message consisting of the list of family images
+ *
+ * @generated from message Scailo.FamilyImagesList
+ */
+export class FamilyImagesList extends Message<FamilyImagesList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.FamilyImage list = 1;
+   */
+  list: FamilyImage[] = [];
+
+  constructor(data?: PartialMessage<FamilyImagesList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamilyImagesList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: FamilyImage, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamilyImagesList {
+    return new FamilyImagesList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamilyImagesList {
+    return new FamilyImagesList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamilyImagesList {
+    return new FamilyImagesList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamilyImagesList | PlainMessage<FamilyImagesList> | undefined, b: FamilyImagesList | PlainMessage<FamilyImagesList> | undefined): boolean {
+    return proto3.util.equals(FamilyImagesList, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters necessary to update a family's price
  *
  * @generated from message Scailo.FamiliesServiceUpdatePriceRequest
