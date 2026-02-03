@@ -37,7 +37,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_AMOUNT = 12;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L79)
+[src/expenses.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L79)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L51)
+[src/expenses.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L51)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L44)
+[src/expenses.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L44)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L58)
+[src/expenses.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L58)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L30)
+[src/expenses.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L30)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_DATE_OF_EXPENSE = 13;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L86)
+[src/expenses.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L86)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L23)
+[src/expenses.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L23)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_LEDGER_ID = 10;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L65)
+[src/expenses.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L65)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: EXPENSE_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L37)
+[src/expenses.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L37)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: EXPENSE_ITEM_SORT_KEY_TAX_GROUP_ID = 11;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/expenses.scailo_pb.ts#L72)
+[src/expenses.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/expenses.scailo_pb.ts#L72)

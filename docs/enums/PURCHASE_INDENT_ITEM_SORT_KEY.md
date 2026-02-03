@@ -36,7 +36,7 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:142](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L142)
+[src/purchases_indents.scailo_pb.ts:142](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L142)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:135](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L135)
+[src/purchases_indents.scailo_pb.ts:135](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L135)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L149)
+[src/purchases_indents.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L149)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L121)
+[src/purchases_indents.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L121)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_DELIVERY_DATE = 12;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L170)
+[src/purchases_indents.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L170)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L156)
+[src/purchases_indents.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L156)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L114)
+[src/purchases_indents.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L114)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L163)
+[src/purchases_indents.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L163)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: PURCHASE_INDENT_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_indents.scailo_pb.ts#L128)
+[src/purchases_indents.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_indents.scailo_pb.ts#L128)

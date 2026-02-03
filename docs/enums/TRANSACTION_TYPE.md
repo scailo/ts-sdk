@@ -30,7 +30,7 @@ from enum value: TRANSACTION_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1278](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/base.scailo_pb.ts#L1278)
+[src/base.scailo_pb.ts:1278](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/base.scailo_pb.ts#L1278)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: TRANSACTION_TYPE_CREDIT = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1285](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/base.scailo_pb.ts#L1285)
+[src/base.scailo_pb.ts:1285](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/base.scailo_pb.ts#L1285)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: TRANSACTION_TYPE_DEBIT = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1292](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/base.scailo_pb.ts#L1292)
+[src/base.scailo_pb.ts:1292](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/base.scailo_pb.ts#L1292)

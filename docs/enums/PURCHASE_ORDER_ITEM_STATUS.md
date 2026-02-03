@@ -30,7 +30,7 @@ from enum value: PURCHASE_ORDER_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_orders.scailo_pb.ts#L403)
+[src/purchases_orders.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_orders.scailo_pb.ts#L403)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PURCHASE_ORDER_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_orders.scailo_pb.ts#L410)
+[src/purchases_orders.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_orders.scailo_pb.ts#L410)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PURCHASE_ORDER_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/purchases_orders.scailo_pb.ts#L417)
+[src/purchases_orders.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/purchases_orders.scailo_pb.ts#L417)

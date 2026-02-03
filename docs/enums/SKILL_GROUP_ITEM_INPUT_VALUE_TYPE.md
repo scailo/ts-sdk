@@ -32,7 +32,7 @@ from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/skills_groups.scailo_pb.ts#L23)
+[src/skills_groups.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L23)
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE = 1;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/skills_groups.scailo_pb.ts#L30)
+[src/skills_groups.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L30)
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE = 2;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/skills_groups.scailo_pb.ts#L37)
+[src/skills_groups.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L37)
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 4;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/skills_groups.scailo_pb.ts#L51)
+[src/skills_groups.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L51)
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT = 3;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/2a556b3915e3ec9841b11f46e795a4f74de69808/src/skills_groups.scailo_pb.ts#L44)
+[src/skills_groups.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L44)

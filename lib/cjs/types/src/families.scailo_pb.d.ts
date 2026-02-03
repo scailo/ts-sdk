@@ -1808,6 +1808,46 @@ export declare class FamiliesServiceImageCreateRequest extends Message<FamiliesS
 }
 /**
  *
+ * Describes the parameters necessary to update a family image
+ *
+ * @generated from message Scailo.FamiliesServiceImageUpdateRequest
+ */
+export declare class FamiliesServiceImageUpdateRequest extends Message<FamiliesServiceImageUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The ID of the record
+     *
+     * @generated from field: uint64 id = 2;
+     */
+    id: bigint;
+    /**
+     * Denotes if the image is public
+     *
+     * @generated from field: bool is_public = 12;
+     */
+    isPublic: boolean;
+    /**
+     * Stores the sequence number
+     *
+     * @generated from field: uint64 sequence_number = 13;
+     */
+    sequenceNumber: bigint;
+    constructor(data?: PartialMessage<FamiliesServiceImageUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamiliesServiceImageUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceImageUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceImageUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceImageUpdateRequest;
+    static equals(a: FamiliesServiceImageUpdateRequest | PlainMessage<FamiliesServiceImageUpdateRequest> | undefined, b: FamiliesServiceImageUpdateRequest | PlainMessage<FamiliesServiceImageUpdateRequest> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that constitute a family image
  *
  * @generated from message Scailo.FamilyImage
