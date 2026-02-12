@@ -483,7 +483,7 @@ export const FamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Modify an item in a sales order
+     * Modify an image
      *
      * @generated from rpc Scailo.FamiliesService.UpdateImage
      */

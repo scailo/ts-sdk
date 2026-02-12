@@ -36,7 +36,7 @@ from enum value: SKILL_GROUP_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:102](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L102)
+[src/skills_groups.scailo_pb.ts:102](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L102)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: SKILL_GROUP_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:95](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L95)
+[src/skills_groups.scailo_pb.ts:95](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L95)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: SKILL_GROUP_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:109](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L109)
+[src/skills_groups.scailo_pb.ts:109](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L109)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: SKILL_GROUP_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:116](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L116)
+[src/skills_groups.scailo_pb.ts:116](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L116)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: SKILL_GROUP_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:81](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L81)
+[src/skills_groups.scailo_pb.ts:81](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L81)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: SKILL_GROUP_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:74](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L74)
+[src/skills_groups.scailo_pb.ts:74](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L74)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: SKILL_GROUP_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:88](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L88)
+[src/skills_groups.scailo_pb.ts:88](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L88)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: SKILL_GROUP_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:123](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L123)
+[src/skills_groups.scailo_pb.ts:123](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L123)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: SKILL_GROUP_SORT_KEY_ROLE_ID = 11;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/skills_groups.scailo_pb.ts#L130)
+[src/skills_groups.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/skills_groups.scailo_pb.ts#L130)

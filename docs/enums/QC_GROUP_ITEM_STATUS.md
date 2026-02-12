@@ -30,7 +30,7 @@ from enum value: QC_GROUP_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/qc_groups.scailo_pb.ts#L157)
+[src/qc_groups.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/qc_groups.scailo_pb.ts#L157)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: QC_GROUP_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/qc_groups.scailo_pb.ts#L164)
+[src/qc_groups.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/qc_groups.scailo_pb.ts#L164)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: QC_GROUP_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:171](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/qc_groups.scailo_pb.ts#L171)
+[src/qc_groups.scailo_pb.ts:171](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/qc_groups.scailo_pb.ts#L171)

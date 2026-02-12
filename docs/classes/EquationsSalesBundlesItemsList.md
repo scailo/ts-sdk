@@ -66,7 +66,7 @@ Message\&lt;EquationsSalesBundlesItemsList\&gt;.constructor
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:831](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L831)
+[src/equations_sales_bundles.scailo_pb.ts:831](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L831)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.EquationSalesBundleItem list = 1;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:829](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L829)
+[src/equations_sales_bundles.scailo_pb.ts:829](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L829)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:838](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L838)
+[src/equations_sales_bundles.scailo_pb.ts:838](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L838)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:836](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L836)
+[src/equations_sales_bundles.scailo_pb.ts:836](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L836)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:837](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L837)
+[src/equations_sales_bundles.scailo_pb.ts:837](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L837)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:854](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L854)
+[src/equations_sales_bundles.scailo_pb.ts:854](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L854)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:842](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L842)
+[src/equations_sales_bundles.scailo_pb.ts:842](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L842)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:846](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L846)
+[src/equations_sales_bundles.scailo_pb.ts:846](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L846)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:850](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/equations_sales_bundles.scailo_pb.ts#L850)
+[src/equations_sales_bundles.scailo_pb.ts:850](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/equations_sales_bundles.scailo_pb.ts#L850)

@@ -1,6 +1,6 @@
-import { ConsolidatedInventoryStatistics, ConsolidatedInventoryStatisticsList, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
+import { ConsolidatedInventoryStatistics, ConsolidatedInventoryStatisticsList, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryServiceUpdateStorageReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { Identifier, IdentifiersList, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
+import { Identifier, IdentifierResponse, IdentifiersList, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on inventory
@@ -310,6 +310,50 @@ export declare const InventoryService: {
             readonly name: "ViewDetailedDemand";
             readonly I: typeof Identifier;
             readonly O: typeof InventoryDetailedDemand;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Updates the inventory item identified by the given short URL with the given storage
+         *
+         * @generated from rpc Scailo.InventoryService.UpdateStorageWithShortURL
+         */
+        readonly updateStorageWithShortURL: {
+            readonly name: "UpdateStorageWithShortURL";
+            readonly I: typeof InventoryServiceUpdateStorageReq;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Updates the first inventory item identified by the given internal item code with the given storage
+         *
+         * @generated from rpc Scailo.InventoryService.UpdateStorageWithInternalItemCode
+         */
+        readonly updateStorageWithInternalItemCode: {
+            readonly name: "UpdateStorageWithInternalItemCode";
+            readonly I: typeof InventoryServiceUpdateStorageReq;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Moves the inventory item identified by the given short URL into the given storage
+         *
+         * @generated from rpc Scailo.InventoryService.MoveToStorageWithShortURL
+         */
+        readonly moveToStorageWithShortURL: {
+            readonly name: "MoveToStorageWithShortURL";
+            readonly I: typeof InventoryServiceUpdateStorageReq;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Moves the inventory item identified by the given internal item code into the given storage
+         *
+         * @generated from rpc Scailo.InventoryService.MoveToStorageWithInternalItemCode
+         */
+        readonly moveToStorageWithInternalItemCode: {
+            readonly name: "MoveToStorageWithInternalItemCode";
+            readonly I: typeof InventoryServiceUpdateStorageReq;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
     };

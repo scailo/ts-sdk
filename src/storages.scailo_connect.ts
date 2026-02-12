@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Storage, StoragesList, StoragesServiceCountReq, StoragesServiceCreateRequest, StoragesServiceFilterReq, StoragesServicePaginationReq, StoragesServicePaginationResponse, StoragesServiceSearchAllReq, StoragesServiceUpdateRequest } from "./storages.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, ImageResponse, SimpleSearchReq, StandardFile, StringResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
 /**
@@ -207,6 +207,17 @@ export const StoragesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View by storage's code (logs aren't returned)
+     *
+     * @generated from rpc Scailo.StoragesService.ViewByCode
+     */
+    viewByCode: {
+      name: "ViewByCode",
+      I: SimpleSearchReq,
+      O: Storage,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all
      *
      * @generated from rpc Scailo.StoragesService.ViewAll
@@ -237,6 +248,28 @@ export const StoragesService = {
       name: "ViewWithPagination",
       I: StoragesServicePaginationReq,
       O: StoragesServicePaginationResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View storage's QR Code as image
+     *
+     * @generated from rpc Scailo.StoragesService.ViewQRImage
+     */
+    viewQRImage: {
+      name: "ViewQRImage",
+      I: IdentifierUUID,
+      O: ImageResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * View storage's QR Code as string
+     *
+     * @generated from rpc Scailo.StoragesService.ViewQRString
+     */
+    viewQRString: {
+      name: "ViewQRString",
+      I: IdentifierUUID,
+      O: StringResponse,
       kind: MethodKind.Unary,
     },
     /**

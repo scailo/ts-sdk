@@ -1,5 +1,5 @@
 import { Storage, StoragesList, StoragesServiceCountReq, StoragesServiceCreateRequest, StoragesServiceFilterReq, StoragesServicePaginationReq, StoragesServicePaginationResponse, StoragesServiceSearchAllReq, StoragesServiceUpdateRequest } from "./storages.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, ImageResponse, SimpleSearchReq, StandardFile, StringResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -201,6 +201,17 @@ export declare const StoragesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by storage's code (logs aren't returned)
+         *
+         * @generated from rpc Scailo.StoragesService.ViewByCode
+         */
+        readonly viewByCode: {
+            readonly name: "ViewByCode";
+            readonly I: typeof SimpleSearchReq;
+            readonly O: typeof Storage;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all
          *
          * @generated from rpc Scailo.StoragesService.ViewAll
@@ -231,6 +242,28 @@ export declare const StoragesService: {
             readonly name: "ViewWithPagination";
             readonly I: typeof StoragesServicePaginationReq;
             readonly O: typeof StoragesServicePaginationResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View storage's QR Code as image
+         *
+         * @generated from rpc Scailo.StoragesService.ViewQRImage
+         */
+        readonly viewQRImage: {
+            readonly name: "ViewQRImage";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof ImageResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View storage's QR Code as string
+         *
+         * @generated from rpc Scailo.StoragesService.ViewQRString
+         */
+        readonly viewQRString: {
+            readonly name: "ViewQRString";
+            readonly I: typeof IdentifierUUID;
+            readonly O: typeof StringResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

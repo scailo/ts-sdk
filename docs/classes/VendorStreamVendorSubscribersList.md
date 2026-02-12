@@ -66,7 +66,7 @@ Message\&lt;VendorStreamVendorSubscribersList\&gt;.constructor
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2294](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2294)
+[src/vendor_streams.scailo_pb.ts:2294](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2294)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VendorStreamVendorSubscriber list = 1;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2292](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2292)
+[src/vendor_streams.scailo_pb.ts:2292](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2292)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2301](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2301)
+[src/vendor_streams.scailo_pb.ts:2301](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2301)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2299](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2299)
+[src/vendor_streams.scailo_pb.ts:2299](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2299)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2300](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2300)
+[src/vendor_streams.scailo_pb.ts:2300](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2300)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2317](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2317)
+[src/vendor_streams.scailo_pb.ts:2317](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2317)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2305](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2305)
+[src/vendor_streams.scailo_pb.ts:2305](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2305)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2309](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2309)
+[src/vendor_streams.scailo_pb.ts:2309](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2309)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:2313](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/vendor_streams.scailo_pb.ts#L2313)
+[src/vendor_streams.scailo_pb.ts:2313](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/vendor_streams.scailo_pb.ts#L2313)

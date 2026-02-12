@@ -1483,4 +1483,32 @@ export declare class InventoryDemand extends Message<InventoryDemand> {
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryDemand;
     static equals(a: InventoryDemand | PlainMessage<InventoryDemand> | undefined, b: InventoryDemand | PlainMessage<InventoryDemand> | undefined): boolean;
 }
+/**
+ *
+ * Describes the payload necessary to either update the storage or to move an inventory item to a new storage
+ *
+ * @generated from message Scailo.InventoryServiceUpdateStorageReq
+ */
+export declare class InventoryServiceUpdateStorageReq extends Message<InventoryServiceUpdateStorageReq> {
+    /**
+     * The item code or the short URL that could be used to uniquely identify an inventory item
+     *
+     * @generated from field: string search_key = 1;
+     */
+    searchKey: string;
+    /**
+     * The UUID of the destination storage where the inventory item needs to be moved into
+     *
+     * @generated from field: string storage_uuid = 2;
+     */
+    storageUuid: string;
+    constructor(data?: PartialMessage<InventoryServiceUpdateStorageReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.InventoryServiceUpdateStorageReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryServiceUpdateStorageReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryServiceUpdateStorageReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryServiceUpdateStorageReq;
+    static equals(a: InventoryServiceUpdateStorageReq | PlainMessage<InventoryServiceUpdateStorageReq> | undefined, b: InventoryServiceUpdateStorageReq | PlainMessage<InventoryServiceUpdateStorageReq> | undefined): boolean;
+}
 //# sourceMappingURL=inventory.scailo_pb.d.ts.map

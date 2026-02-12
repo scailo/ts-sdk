@@ -30,7 +30,7 @@ from enum value: SALES_RETURN_BILLING_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:259](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/sales_returns.scailo_pb.ts#L259)
+[src/sales_returns.scailo_pb.ts:259](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/sales_returns.scailo_pb.ts#L259)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SALES_RETURN_BILLING_STATUS_BILLED = 1;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:266](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/sales_returns.scailo_pb.ts#L266)
+[src/sales_returns.scailo_pb.ts:266](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/sales_returns.scailo_pb.ts#L266)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SALES_RETURN_BILLING_STATUS_UNBILLED = 2;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:273](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/sales_returns.scailo_pb.ts#L273)
+[src/sales_returns.scailo_pb.ts:273](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/sales_returns.scailo_pb.ts#L273)

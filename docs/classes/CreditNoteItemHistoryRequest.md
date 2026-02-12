@@ -67,7 +67,7 @@ Message\&lt;CreditNoteItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1476](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1476)
+[src/credit_notes.scailo_pb.ts:1476](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1476)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 credit_note_id = 10;
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1467](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1467)
+[src/credit_notes.scailo_pb.ts:1467](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1467)
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1474](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1474)
+[src/credit_notes.scailo_pb.ts:1474](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1474)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1483](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1483)
+[src/credit_notes.scailo_pb.ts:1483](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1483)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1481](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1481)
+[src/credit_notes.scailo_pb.ts:1481](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1481)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1482](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1482)
+[src/credit_notes.scailo_pb.ts:1482](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1482)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1500](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1500)
+[src/credit_notes.scailo_pb.ts:1500](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1500)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1488](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1488)
+[src/credit_notes.scailo_pb.ts:1488](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1488)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1492](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1492)
+[src/credit_notes.scailo_pb.ts:1492](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1492)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:1496](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/credit_notes.scailo_pb.ts#L1496)
+[src/credit_notes.scailo_pb.ts:1496](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/credit_notes.scailo_pb.ts#L1496)

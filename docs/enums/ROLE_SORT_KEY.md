@@ -36,7 +36,7 @@ from enum value: ROLE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L50)
+[src/roles.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L50)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: ROLE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L43)
+[src/roles.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: ROLE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L57)
+[src/roles.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L57)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: ROLE_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L78)
+[src/roles.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L78)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: ROLE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L64)
+[src/roles.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L64)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: ROLE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L29)
+[src/roles.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L29)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: ROLE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L22)
+[src/roles.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L22)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: ROLE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L36)
+[src/roles.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L36)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: ROLE_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/6aafe0f5853eb6eab77b66c6b60daac3df9963ce/src/roles.scailo_pb.ts#L71)
+[src/roles.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/roles.scailo_pb.ts#L71)

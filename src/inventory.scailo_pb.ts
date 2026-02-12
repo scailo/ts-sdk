@@ -2301,3 +2301,53 @@ export class InventoryDemand extends Message<InventoryDemand> {
   }
 }
 
+/**
+ *
+ * Describes the payload necessary to either update the storage or to move an inventory item to a new storage
+ *
+ * @generated from message Scailo.InventoryServiceUpdateStorageReq
+ */
+export class InventoryServiceUpdateStorageReq extends Message<InventoryServiceUpdateStorageReq> {
+  /**
+   * The item code or the short URL that could be used to uniquely identify an inventory item
+   *
+   * @generated from field: string search_key = 1;
+   */
+  searchKey = "";
+
+  /**
+   * The UUID of the destination storage where the inventory item needs to be moved into
+   *
+   * @generated from field: string storage_uuid = 2;
+   */
+  storageUuid = "";
+
+  constructor(data?: PartialMessage<InventoryServiceUpdateStorageReq>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.InventoryServiceUpdateStorageReq";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "storage_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): InventoryServiceUpdateStorageReq {
+    return new InventoryServiceUpdateStorageReq().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): InventoryServiceUpdateStorageReq {
+    return new InventoryServiceUpdateStorageReq().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): InventoryServiceUpdateStorageReq {
+    return new InventoryServiceUpdateStorageReq().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: InventoryServiceUpdateStorageReq | PlainMessage<InventoryServiceUpdateStorageReq> | undefined, b: InventoryServiceUpdateStorageReq | PlainMessage<InventoryServiceUpdateStorageReq> | undefined): boolean {
+    return proto3.util.equals(InventoryServiceUpdateStorageReq, a, b);
+  }
+}
+
