@@ -34,7 +34,7 @@ from enum value: GOAL_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/goals.scailo_pb.ts#L94)
+[src/goals.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/goals.scailo_pb.ts#L94)
 
 ___
 
@@ -50,7 +50,7 @@ from enum value: GOAL_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/goals.scailo_pb.ts#L87)
+[src/goals.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/goals.scailo_pb.ts#L87)
 
 ___
 
@@ -66,7 +66,7 @@ from enum value: GOAL_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/goals.scailo_pb.ts#L101)
+[src/goals.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/goals.scailo_pb.ts#L101)
 
 ___
 
@@ -82,7 +82,7 @@ from enum value: GOAL_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/goals.scailo_pb.ts#L73)
+[src/goals.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/goals.scailo_pb.ts#L73)
 
 ___
 
@@ -98,7 +98,7 @@ from enum value: GOAL_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/goals.scailo_pb.ts#L66)
+[src/goals.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/goals.scailo_pb.ts#L66)
 
 ___
 
@@ -114,7 +114,7 @@ from enum value: GOAL_ITEM_SORT_KEY_LABEL_ID = 10;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/goals.scailo_pb.ts#L108)
+[src/goals.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/goals.scailo_pb.ts#L108)
 
 ___
 
@@ -130,4 +130,4 @@ from enum value: GOAL_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/goals.scailo_pb.ts#L80)
+[src/goals.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/goals.scailo_pb.ts#L80)

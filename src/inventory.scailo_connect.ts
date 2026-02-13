@@ -5,7 +5,7 @@
 
 import { ConsolidatedInventoryStatistics, ConsolidatedInventoryStatisticsList, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryServiceUpdateStorageReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { Identifier, IdentifierResponse, IdentifiersList, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
+import { Identifier, IdentifiersList, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 
 /**
  *
@@ -326,7 +326,7 @@ export const InventoryService = {
     updateStorageWithShortURL: {
       name: "UpdateStorageWithShortURL",
       I: InventoryServiceUpdateStorageReq,
-      O: IdentifierResponse,
+      O: GenericInventory,
       kind: MethodKind.Unary,
     },
     /**
@@ -337,7 +337,7 @@ export const InventoryService = {
     updateStorageWithInternalItemCode: {
       name: "UpdateStorageWithInternalItemCode",
       I: InventoryServiceUpdateStorageReq,
-      O: IdentifierResponse,
+      O: GenericInventory,
       kind: MethodKind.Unary,
     },
     /**
@@ -348,7 +348,7 @@ export const InventoryService = {
     moveToStorageWithShortURL: {
       name: "MoveToStorageWithShortURL",
       I: InventoryServiceUpdateStorageReq,
-      O: IdentifierResponse,
+      O: GenericInventory,
       kind: MethodKind.Unary,
     },
     /**
@@ -359,7 +359,7 @@ export const InventoryService = {
     moveToStorageWithInternalItemCode: {
       name: "MoveToStorageWithInternalItemCode",
       I: InventoryServiceUpdateStorageReq,
-      O: IdentifierResponse,
+      O: GenericInventory,
       kind: MethodKind.Unary,
     },
   }

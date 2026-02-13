@@ -31,7 +31,7 @@ from enum value: USER_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/users.scailo_pb.ts#L23)
+[src/users.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/users.scailo_pb.ts#L23)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: USER_TYPE_CLIENT = 2;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/users.scailo_pb.ts#L37)
+[src/users.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/users.scailo_pb.ts#L37)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: USER_TYPE_EMPLOYEE = 1;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/users.scailo_pb.ts#L30)
+[src/users.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/users.scailo_pb.ts#L30)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: USER_TYPE_VENDOR = 3;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/users.scailo_pb.ts#L44)
+[src/users.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/users.scailo_pb.ts#L44)

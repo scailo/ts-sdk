@@ -67,7 +67,7 @@ Message\&lt;InventoryServiceFamilyQuantityReq\&gt;.constructor
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:768](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L768)
+[src/inventory.scailo_pb.ts:768](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L768)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 20;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L766)
+[src/inventory.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L766)
 
 ___
 
@@ -99,7 +99,7 @@ from field: Scailo.INVENTORY_LIFECYCLE status = 10;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L759)
+[src/inventory.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L759)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:775](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L775)
+[src/inventory.scailo_pb.ts:775](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L775)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L773)
+[src/inventory.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L773)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:774](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L774)
+[src/inventory.scailo_pb.ts:774](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L774)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:792](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L792)
+[src/inventory.scailo_pb.ts:792](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L792)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:780](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L780)
+[src/inventory.scailo_pb.ts:780](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L780)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:784](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L784)
+[src/inventory.scailo_pb.ts:784](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L784)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:788](https://github.com/scailo/ts-sdk/blob/f953b47013676519c3cca076867c8f445aa20ea3/src/inventory.scailo_pb.ts#L788)
+[src/inventory.scailo_pb.ts:788](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/inventory.scailo_pb.ts#L788)

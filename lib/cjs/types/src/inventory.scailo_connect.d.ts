@@ -1,6 +1,6 @@
 import { ConsolidatedInventoryStatistics, ConsolidatedInventoryStatisticsList, GenericInventory, GenericInventoryList, InventoryDetailedDemand, InventoryHashSearchReq, InventoryIndentedStatistics, InventoryOrderedStatistics, InventoryServiceFamilyQuantityReq, InventoryServiceUpdateStorageReq, InventoryWorkInProgressStatistics, IssuableInventorySearchReq, ReturnableInventorySearchReq } from "./inventory.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
-import { Identifier, IdentifierResponse, IdentifiersList, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
+import { Identifier, IdentifiersList, QuantityResponse, SimpleSearchReq } from "./base.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on inventory
@@ -320,7 +320,7 @@ export declare const InventoryService: {
         readonly updateStorageWithShortURL: {
             readonly name: "UpdateStorageWithShortURL";
             readonly I: typeof InventoryServiceUpdateStorageReq;
-            readonly O: typeof IdentifierResponse;
+            readonly O: typeof GenericInventory;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -331,7 +331,7 @@ export declare const InventoryService: {
         readonly updateStorageWithInternalItemCode: {
             readonly name: "UpdateStorageWithInternalItemCode";
             readonly I: typeof InventoryServiceUpdateStorageReq;
-            readonly O: typeof IdentifierResponse;
+            readonly O: typeof GenericInventory;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -342,7 +342,7 @@ export declare const InventoryService: {
         readonly moveToStorageWithShortURL: {
             readonly name: "MoveToStorageWithShortURL";
             readonly I: typeof InventoryServiceUpdateStorageReq;
-            readonly O: typeof IdentifierResponse;
+            readonly O: typeof GenericInventory;
             readonly kind: MethodKind.Unary;
         };
         /**
@@ -353,7 +353,7 @@ export declare const InventoryService: {
         readonly moveToStorageWithInternalItemCode: {
             readonly name: "MoveToStorageWithInternalItemCode";
             readonly I: typeof InventoryServiceUpdateStorageReq;
-            readonly O: typeof IdentifierResponse;
+            readonly O: typeof GenericInventory;
             readonly kind: MethodKind.Unary;
         };
     };
