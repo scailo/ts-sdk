@@ -30,7 +30,7 @@ from enum value: SALES_QUOTATION_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/sales_quotations.scailo_pb.ts#L349)
+[src/sales_quotations.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/sales_quotations.scailo_pb.ts#L349)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: SALES_QUOTATION_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/sales_quotations.scailo_pb.ts#L356)
+[src/sales_quotations.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/sales_quotations.scailo_pb.ts#L356)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: SALES_QUOTATION_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/sales_quotations.scailo_pb.ts#L363)
+[src/sales_quotations.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/sales_quotations.scailo_pb.ts#L363)

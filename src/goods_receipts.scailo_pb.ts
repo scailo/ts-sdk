@@ -794,6 +794,13 @@ export class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceipts
    */
   vendorQuantity = protoInt64.zero;
 
+  /**
+   * Optional specifications
+   *
+   * @generated from field: string specifications = 18;
+   */
+  specifications = "";
+
   constructor(data?: PartialMessage<GoodsReceiptsServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -808,6 +815,7 @@ export class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceipts
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceItemCreateRequest {
@@ -862,6 +870,13 @@ export class GoodsReceiptsServiceMultipleItemsSingleton extends Message<GoodsRec
    */
   vendorQuantity = protoInt64.zero;
 
+  /**
+   * Optional specifications
+   *
+   * @generated from field: string specifications = 18;
+   */
+  specifications = "";
+
   constructor(data?: PartialMessage<GoodsReceiptsServiceMultipleItemsSingleton>) {
     super();
     proto3.util.initPartial(data, this);
@@ -874,6 +889,7 @@ export class GoodsReceiptsServiceMultipleItemsSingleton extends Message<GoodsRec
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceMultipleItemsSingleton {
@@ -993,6 +1009,13 @@ export class GoodsReceiptsServiceItemUpdateRequest extends Message<GoodsReceipts
    */
   vendorQuantity = protoInt64.zero;
 
+  /**
+   * Optional specifications
+   *
+   * @generated from field: string specifications = 18;
+   */
+  specifications = "";
+
   constructor(data?: PartialMessage<GoodsReceiptsServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1006,6 +1029,7 @@ export class GoodsReceiptsServiceItemUpdateRequest extends Message<GoodsReceipts
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceItemUpdateRequest {
@@ -1103,6 +1127,13 @@ export class GoodsReceiptItem extends Message<GoodsReceiptItem> {
   vendorQuantity = protoInt64.zero;
 
   /**
+   * Optional specifications
+   *
+   * @generated from field: string specifications = 18;
+   */
+  specifications = "";
+
+  /**
    * ----------------------------------------
    * The UUID of the associated goods receipt
    *
@@ -1137,6 +1168,7 @@ export class GoodsReceiptItem extends Message<GoodsReceiptItem> {
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "vendor_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 110, name: "goods_receipt_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 111, name: "family_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);

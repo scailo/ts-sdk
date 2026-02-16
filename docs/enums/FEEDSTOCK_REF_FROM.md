@@ -31,7 +31,7 @@ from enum value: FEEDSTOCK_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/feedstocks.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/feedstocks.scailo_pb.ts#L23)
+[src/feedstocks.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/feedstocks.scailo_pb.ts#L23)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: FEEDSTOCK_REF_FROM_GOODS_RECEIPT = 2;
 
 #### Defined in
 
-[src/feedstocks.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/feedstocks.scailo_pb.ts#L37)
+[src/feedstocks.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/feedstocks.scailo_pb.ts#L37)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: FEEDSTOCK_REF_FROM_INITIAL_STOCK = 1;
 
 #### Defined in
 
-[src/feedstocks.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/feedstocks.scailo_pb.ts#L30)
+[src/feedstocks.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/feedstocks.scailo_pb.ts#L30)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: FEEDSTOCK_REF_FROM_INWARD_JOB_FREE_ISSUE_MATERIAL = 3;
 
 #### Defined in
 
-[src/feedstocks.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/feedstocks.scailo_pb.ts#L44)
+[src/feedstocks.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/feedstocks.scailo_pb.ts#L44)

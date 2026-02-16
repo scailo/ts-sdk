@@ -1482,6 +1482,93 @@ export class SalesOrdersServiceItemUpdateRequest extends Message<SalesOrdersServ
 }
 
 /**
+ * @generated from message Scailo.SalesOrdersServiceItemTermsUpdateRequest
+ */
+export class SalesOrdersServiceItemTermsUpdateRequest extends Message<SalesOrdersServiceItemTermsUpdateRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the record
+   *
+   * @generated from field: string uuid = 2;
+   */
+  uuid = "";
+
+  /**
+   * The unit price of the item
+   *
+   * @generated from field: uint64 unit_price = 17;
+   */
+  unitPrice = protoInt64.zero;
+
+  /**
+   * The ID of the associated tax group
+   *
+   * @generated from field: uint64 tax_group_id = 18;
+   */
+  taxGroupId = protoInt64.zero;
+
+  /**
+   * The applicable discount percentage (in cents)
+   *
+   * @generated from field: uint64 discount = 19;
+   */
+  discount = protoInt64.zero;
+
+  /**
+   * The delivery date of the item
+   *
+   * @generated from field: string delivery_date = 20;
+   */
+  deliveryDate = "";
+
+  /**
+   * The specifications that should be updated
+   *
+   * @generated from field: string specifications = 21;
+   */
+  specifications = "";
+
+  constructor(data?: PartialMessage<SalesOrdersServiceItemTermsUpdateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.SalesOrdersServiceItemTermsUpdateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceItemTermsUpdateRequest {
+    return new SalesOrdersServiceItemTermsUpdateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrdersServiceItemTermsUpdateRequest {
+    return new SalesOrdersServiceItemTermsUpdateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrdersServiceItemTermsUpdateRequest {
+    return new SalesOrdersServiceItemTermsUpdateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: SalesOrdersServiceItemTermsUpdateRequest | PlainMessage<SalesOrdersServiceItemTermsUpdateRequest> | undefined, b: SalesOrdersServiceItemTermsUpdateRequest | PlainMessage<SalesOrdersServiceItemTermsUpdateRequest> | undefined): boolean {
+    return proto3.util.equals(SalesOrdersServiceItemTermsUpdateRequest, a, b);
+  }
+}
+
+/**
  *
  * Describes the parameters required to update the specifications of an item in a sales order
  *

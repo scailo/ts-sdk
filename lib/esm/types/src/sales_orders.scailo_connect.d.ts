@@ -1,4 +1,4 @@
-import { SalesOrder, SalesOrderAncillaryParameters, SalesOrderBillingStatistics, SalesOrderContact, SalesOrderContactsList, SalesOrderInventoryMatchList, SalesOrderInventoryStatistics, SalesOrderItem, SalesOrderItemHistoryRequest, SalesOrderItemProspectiveInfoRequest, SalesOrderItemsList, SalesOrderItemsSearchRequest, SalesOrderPriceMatchList, SalesOrderReference, SalesOrderReferencesList, SalesOrdersList, SalesOrdersServiceAutofillRequest, SalesOrdersServiceContactCreateRequest, SalesOrdersServiceCountReq, SalesOrdersServiceCreateRequest, SalesOrdersServiceFilterReq, SalesOrdersServiceItemCreateRequest, SalesOrdersServiceItemSpecificationsUpdateRequest, SalesOrdersServiceItemUpdateRequest, SalesOrdersServiceMultipleItemsCreateRequest, SalesOrdersServicePaginatedItemsResponse, SalesOrdersServicePaginationReq, SalesOrdersServicePaginationResponse, SalesOrdersServiceReferenceCreateRequest, SalesOrdersServiceSearchAllReq, SalesOrdersServiceUpdateRequest } from "./sales_orders.scailo_pb.js";
+import { SalesOrder, SalesOrderAncillaryParameters, SalesOrderBillingStatistics, SalesOrderContact, SalesOrderContactsList, SalesOrderInventoryMatchList, SalesOrderInventoryStatistics, SalesOrderItem, SalesOrderItemHistoryRequest, SalesOrderItemProspectiveInfoRequest, SalesOrderItemsList, SalesOrderItemsSearchRequest, SalesOrderPriceMatchList, SalesOrderReference, SalesOrderReferencesList, SalesOrdersList, SalesOrdersServiceAutofillRequest, SalesOrdersServiceContactCreateRequest, SalesOrdersServiceCountReq, SalesOrdersServiceCreateRequest, SalesOrdersServiceFilterReq, SalesOrdersServiceItemCreateRequest, SalesOrdersServiceItemSpecificationsUpdateRequest, SalesOrdersServiceItemTermsUpdateRequest, SalesOrdersServiceItemUpdateRequest, SalesOrdersServiceMultipleItemsCreateRequest, SalesOrdersServicePaginatedItemsResponse, SalesOrdersServicePaginationReq, SalesOrdersServicePaginationResponse, SalesOrdersServiceReferenceCreateRequest, SalesOrdersServiceSearchAllReq, SalesOrdersServiceUpdateRequest } from "./sales_orders.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
@@ -252,6 +252,17 @@ export declare const SalesOrdersService: {
             readonly name: "ModifySalesOrderItem";
             readonly I: typeof SalesOrdersServiceItemUpdateRequest;
             readonly O: typeof IdentifiersList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Update Price, Discount, Tax Group, Delivery Date and Specifications of an item in a sales order. This can safely be done even after the item may have been dispatched
+         *
+         * @generated from rpc Scailo.SalesOrdersService.UpdateSalesOrderItemTerms
+         */
+        readonly updateSalesOrderItemTerms: {
+            readonly name: "UpdateSalesOrderItemTerms";
+            readonly I: typeof SalesOrdersServiceItemTermsUpdateRequest;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

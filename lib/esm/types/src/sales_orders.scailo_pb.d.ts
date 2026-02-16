@@ -1021,6 +1021,61 @@ export declare class SalesOrdersServiceItemUpdateRequest extends Message<SalesOr
     static equals(a: SalesOrdersServiceItemUpdateRequest | PlainMessage<SalesOrdersServiceItemUpdateRequest> | undefined, b: SalesOrdersServiceItemUpdateRequest | PlainMessage<SalesOrdersServiceItemUpdateRequest> | undefined): boolean;
 }
 /**
+ * @generated from message Scailo.SalesOrdersServiceItemTermsUpdateRequest
+ */
+export declare class SalesOrdersServiceItemTermsUpdateRequest extends Message<SalesOrdersServiceItemTermsUpdateRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The UUID of the record
+     *
+     * @generated from field: string uuid = 2;
+     */
+    uuid: string;
+    /**
+     * The unit price of the item
+     *
+     * @generated from field: uint64 unit_price = 17;
+     */
+    unitPrice: bigint;
+    /**
+     * The ID of the associated tax group
+     *
+     * @generated from field: uint64 tax_group_id = 18;
+     */
+    taxGroupId: bigint;
+    /**
+     * The applicable discount percentage (in cents)
+     *
+     * @generated from field: uint64 discount = 19;
+     */
+    discount: bigint;
+    /**
+     * The delivery date of the item
+     *
+     * @generated from field: string delivery_date = 20;
+     */
+    deliveryDate: string;
+    /**
+     * The specifications that should be updated
+     *
+     * @generated from field: string specifications = 21;
+     */
+    specifications: string;
+    constructor(data?: PartialMessage<SalesOrdersServiceItemTermsUpdateRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.SalesOrdersServiceItemTermsUpdateRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceItemTermsUpdateRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesOrdersServiceItemTermsUpdateRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesOrdersServiceItemTermsUpdateRequest;
+    static equals(a: SalesOrdersServiceItemTermsUpdateRequest | PlainMessage<SalesOrdersServiceItemTermsUpdateRequest> | undefined, b: SalesOrdersServiceItemTermsUpdateRequest | PlainMessage<SalesOrdersServiceItemTermsUpdateRequest> | undefined): boolean;
+}
+/**
  *
  * Describes the parameters required to update the specifications of an item in a sales order
  *

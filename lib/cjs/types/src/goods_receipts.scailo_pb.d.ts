@@ -549,6 +549,12 @@ export declare class GoodsReceiptsServiceItemCreateRequest extends Message<Goods
      * @generated from field: uint64 vendor_quantity = 14;
      */
     vendorQuantity: bigint;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 18;
+     */
+    specifications: string;
     constructor(data?: PartialMessage<GoodsReceiptsServiceItemCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.GoodsReceiptsServiceItemCreateRequest";
@@ -589,6 +595,12 @@ export declare class GoodsReceiptsServiceMultipleItemsSingleton extends Message<
      * @generated from field: uint64 vendor_quantity = 14;
      */
     vendorQuantity: bigint;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 18;
+     */
+    specifications: string;
     constructor(data?: PartialMessage<GoodsReceiptsServiceMultipleItemsSingleton>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.GoodsReceiptsServiceMultipleItemsSingleton";
@@ -669,6 +681,12 @@ export declare class GoodsReceiptsServiceItemUpdateRequest extends Message<Goods
      * @generated from field: uint64 vendor_quantity = 14;
      */
     vendorQuantity: bigint;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 18;
+     */
+    specifications: string;
     constructor(data?: PartialMessage<GoodsReceiptsServiceItemUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.GoodsReceiptsServiceItemUpdateRequest";
@@ -745,6 +763,12 @@ export declare class GoodsReceiptItem extends Message<GoodsReceiptItem> {
      * @generated from field: uint64 vendor_quantity = 14;
      */
     vendorQuantity: bigint;
+    /**
+     * Optional specifications
+     *
+     * @generated from field: string specifications = 18;
+     */
+    specifications: string;
     /**
      * ----------------------------------------
      * The UUID of the associated goods receipt

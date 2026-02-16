@@ -30,7 +30,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_CONTEXT_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/purchases_orders.scailo_pb.ts#L170)
+[src/purchases_orders.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_orders.scailo_pb.ts#L170)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: PURCHASE_ORDER_REFERENCE_CONTEXT_BILLING = 2;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/purchases_orders.scailo_pb.ts#L184)
+[src/purchases_orders.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_orders.scailo_pb.ts#L184)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: PURCHASE_ORDER_REFERENCE_CONTEXT_BUYING = 1;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/7e4aea8e28edb754c0dda1ce402e0f881e38303d/src/purchases_orders.scailo_pb.ts#L177)
+[src/purchases_orders.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_orders.scailo_pb.ts#L177)
