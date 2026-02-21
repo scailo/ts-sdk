@@ -1051,8 +1051,8 @@ export const PermissionPayrollGroupDiscard = { Uid: 'payroll-groups-extra-discar
 export const PermissionReopenPayrollGroup = { Uid: 'payroll-groups-extra-reopen', Name: 'Reopen Payroll Group', Description: 'Permission to reopen a completed payroll group' };
 export const PermissionsPayrollGroups = [PermissionPayrollGroupNew, PermissionPayrollGroupDrafts, PermissionPayrollGroupVerify, PermissionPayrollGroupRevise, PermissionPayrollGroupHalted, PermissionPayrollGroupDiscarded, PermissionRestorePayrollGroup, PermissionPayrollGroupApprove, PermissionPayrollGroupStanding, PermissionPayrollGroupCompleted, PermissionPayrollGroupHalt, PermissionPayrollGroupComplete, PermissionPayrollGroupDiscard, PermissionReopenPayrollGroup];
 
-export const PermissionSet = { Uid: 'general-settings-set', Name: 'Set', Description: '' };
-export const PermissionsGeneralSettings = [PermissionSet];
+export const PermissionSetGeneralSettings = { Uid: 'general-settings-set', Name: 'Set General Settings', Description: 'Permission to set the general settings' };
+export const PermissionsGeneralSettings = [PermissionSetGeneralSettings];
 
 export const PermissionSimpleLogs = { Uid: 'logs-view', Name: 'Simple Logs', Description: 'Permission to view simple logs' };
 export const PermissionDescriptiveLogs = { Uid: 'logs-descriptive', Name: 'Descriptive Logs', Description: 'Permission to view descriptive logs' };

@@ -68,7 +68,7 @@ Message\&lt;PurchasesIndentsServiceItemSpecificationsUpdateRequest\&gt;.construc
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:872](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L872)
+[src/purchases_indents.scailo_pb.ts:872](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L872)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: string specifications = 21;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:870](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L870)
+[src/purchases_indents.scailo_pb.ts:870](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L870)
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:856](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L856)
+[src/purchases_indents.scailo_pb.ts:856](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L856)
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:863](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L863)
+[src/purchases_indents.scailo_pb.ts:863](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L863)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:879](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L879)
+[src/purchases_indents.scailo_pb.ts:879](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L879)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:877](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L877)
+[src/purchases_indents.scailo_pb.ts:877](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L877)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:878](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L878)
+[src/purchases_indents.scailo_pb.ts:878](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L878)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:897](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L897)
+[src/purchases_indents.scailo_pb.ts:897](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L897)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:885](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L885)
+[src/purchases_indents.scailo_pb.ts:885](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L885)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:889](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L889)
+[src/purchases_indents.scailo_pb.ts:889](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L889)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:893](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/purchases_indents.scailo_pb.ts#L893)
+[src/purchases_indents.scailo_pb.ts:893](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/purchases_indents.scailo_pb.ts#L893)

@@ -34,7 +34,7 @@ from enum value: MEETING_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/meetings.scailo_pb.ts#L87)
+[src/meetings.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/meetings.scailo_pb.ts#L87)
 
 ___
 
@@ -50,7 +50,7 @@ from enum value: MEETING_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/meetings.scailo_pb.ts#L73)
+[src/meetings.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/meetings.scailo_pb.ts#L73)
 
 ___
 
@@ -66,7 +66,7 @@ from enum value: MEETING_SORT_KEY_ENDS_AT = 12;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/meetings.scailo_pb.ts#L108)
+[src/meetings.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/meetings.scailo_pb.ts#L108)
 
 ___
 
@@ -82,7 +82,7 @@ from enum value: MEETING_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/meetings.scailo_pb.ts#L66)
+[src/meetings.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/meetings.scailo_pb.ts#L66)
 
 ___
 
@@ -98,7 +98,7 @@ from enum value: MEETING_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/meetings.scailo_pb.ts#L80)
+[src/meetings.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/meetings.scailo_pb.ts#L80)
 
 ___
 
@@ -114,7 +114,7 @@ from enum value: MEETING_SORT_KEY_STARTS_AT = 11;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/meetings.scailo_pb.ts#L101)
+[src/meetings.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/meetings.scailo_pb.ts#L101)
 
 ___
 
@@ -130,4 +130,4 @@ from enum value: MEETING_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/meetings.scailo_pb.ts#L94)
+[src/meetings.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/meetings.scailo_pb.ts#L94)

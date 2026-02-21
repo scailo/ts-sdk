@@ -37,7 +37,7 @@ from enum value: LOCATION_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L51)
+[src/locations.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L51)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: LOCATION_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L44)
+[src/locations.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L44)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: LOCATION_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L58)
+[src/locations.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L58)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: LOCATION_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L72)
+[src/locations.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L72)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: LOCATION_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L30)
+[src/locations.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L30)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: LOCATION_SORT_KEY_EMAIL = 12;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L79)
+[src/locations.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L79)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: LOCATION_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L23)
+[src/locations.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L23)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: LOCATION_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L37)
+[src/locations.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L37)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: LOCATION_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L65)
+[src/locations.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L65)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: LOCATION_SORT_KEY_PHONE = 13;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/locations.scailo_pb.ts#L86)
+[src/locations.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/locations.scailo_pb.ts#L86)

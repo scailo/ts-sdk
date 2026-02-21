@@ -69,7 +69,7 @@ Message\&lt;VendorsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1377](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1377)
+[src/vendors.scailo_pb.ts:1377](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1377)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1354](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1354)
+[src/vendors.scailo_pb.ts:1354](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1354)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1361](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1361)
+[src/vendors.scailo_pb.ts:1361](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1361)
 
 ___
 
@@ -117,7 +117,7 @@ from field: repeated Scailo.Vendor payload = 4;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1375](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1375)
+[src/vendors.scailo_pb.ts:1375](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1375)
 
 ___
 
@@ -133,7 +133,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1368](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1368)
+[src/vendors.scailo_pb.ts:1368](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1368)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1384](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1384)
+[src/vendors.scailo_pb.ts:1384](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1384)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1382](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1382)
+[src/vendors.scailo_pb.ts:1382](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1382)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1383](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1383)
+[src/vendors.scailo_pb.ts:1383](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1383)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1403](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1403)
+[src/vendors.scailo_pb.ts:1403](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1403)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1391](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1391)
+[src/vendors.scailo_pb.ts:1391](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1391)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1395](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1395)
+[src/vendors.scailo_pb.ts:1395](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1395)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1399](https://github.com/scailo/ts-sdk/blob/99e1107e2a9f65ebd160709e787247b7ca59506f/src/vendors.scailo_pb.ts#L1399)
+[src/vendors.scailo_pb.ts:1399](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/vendors.scailo_pb.ts#L1399)

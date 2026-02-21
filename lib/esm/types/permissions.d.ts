@@ -4928,7 +4928,7 @@ export declare const PermissionsPayrollGroups: {
     Name: string;
     Description: string;
 }[];
-export declare const PermissionSet: {
+export declare const PermissionSetGeneralSettings: {
     Uid: string;
     Name: string;
     Description: string;
