@@ -1122,6 +1122,28 @@ export declare class QCSamplesServiceParameterUpdateRequest extends Message<QCSa
 }
 /**
  *
+ * Describes the parameters required to update a list of parameters in a qc sample
+ *
+ * @generated from message Scailo.QCSamplesServiceParameterUpdateRequestsList
+ */
+export declare class QCSamplesServiceParameterUpdateRequestsList extends Message<QCSamplesServiceParameterUpdateRequestsList> {
+    /**
+     * List of records
+     *
+     * @generated from field: repeated Scailo.QCSamplesServiceParameterUpdateRequest list = 1;
+     */
+    list: QCSamplesServiceParameterUpdateRequest[];
+    constructor(data?: PartialMessage<QCSamplesServiceParameterUpdateRequestsList>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.QCSamplesServiceParameterUpdateRequestsList";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSamplesServiceParameterUpdateRequestsList;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCSamplesServiceParameterUpdateRequestsList;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSamplesServiceParameterUpdateRequestsList;
+    static equals(a: QCSamplesServiceParameterUpdateRequestsList | PlainMessage<QCSamplesServiceParameterUpdateRequestsList> | undefined, b: QCSamplesServiceParameterUpdateRequestsList | PlainMessage<QCSamplesServiceParameterUpdateRequestsList> | undefined): boolean;
+}
+/**
+ *
  * Describes the parameters that constitute an parameter associated to a qc sample
  *
  * @generated from message Scailo.QCSampleParameter

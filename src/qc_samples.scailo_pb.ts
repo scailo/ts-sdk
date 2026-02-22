@@ -1675,6 +1675,48 @@ export class QCSamplesServiceParameterUpdateRequest extends Message<QCSamplesSer
 
 /**
  *
+ * Describes the parameters required to update a list of parameters in a qc sample
+ *
+ * @generated from message Scailo.QCSamplesServiceParameterUpdateRequestsList
+ */
+export class QCSamplesServiceParameterUpdateRequestsList extends Message<QCSamplesServiceParameterUpdateRequestsList> {
+  /**
+   * List of records
+   *
+   * @generated from field: repeated Scailo.QCSamplesServiceParameterUpdateRequest list = 1;
+   */
+  list: QCSamplesServiceParameterUpdateRequest[] = [];
+
+  constructor(data?: PartialMessage<QCSamplesServiceParameterUpdateRequestsList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QCSamplesServiceParameterUpdateRequestsList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: QCSamplesServiceParameterUpdateRequest, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QCSamplesServiceParameterUpdateRequestsList {
+    return new QCSamplesServiceParameterUpdateRequestsList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCSamplesServiceParameterUpdateRequestsList {
+    return new QCSamplesServiceParameterUpdateRequestsList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCSamplesServiceParameterUpdateRequestsList {
+    return new QCSamplesServiceParameterUpdateRequestsList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QCSamplesServiceParameterUpdateRequestsList | PlainMessage<QCSamplesServiceParameterUpdateRequestsList> | undefined, b: QCSamplesServiceParameterUpdateRequestsList | PlainMessage<QCSamplesServiceParameterUpdateRequestsList> | undefined): boolean {
+    return proto3.util.equals(QCSamplesServiceParameterUpdateRequestsList, a, b);
+  }
+}
+
+/**
+ *
  * Describes the parameters that constitute an parameter associated to a qc sample
  *
  * @generated from message Scailo.QCSampleParameter

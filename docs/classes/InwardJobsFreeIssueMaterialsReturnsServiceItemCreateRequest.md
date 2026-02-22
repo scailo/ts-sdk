@@ -73,7 +73,7 @@ Message\&lt;InwardJobsFreeIssueMaterialsReturnsServiceItemCreateRequest\&gt;.con
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:694](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L694)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:694](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L694)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string client_family_code = 16;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:692](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L692)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:692](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L692)
 
 ___
 
@@ -105,7 +105,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:685](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L685)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:685](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L685)
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:678](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L678)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:678](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L678)
 
 ___
 
@@ -137,7 +137,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L657)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L657)
 
 ___
 
@@ -153,7 +153,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:671](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L671)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:671](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L671)
 
 ___
 
@@ -169,7 +169,7 @@ from field: uint64 inward_job_free_issue_material_return_id = 10;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:650](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L650)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:650](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L650)
 
 ___
 
@@ -185,7 +185,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:664](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L664)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:664](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L664)
 
 ___
 
@@ -201,7 +201,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L643)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L643)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L701)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L701)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:699](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L699)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:699](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L699)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:700](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L700)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:700](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L700)
 
 ## Methods
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:724](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L724)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:724](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L724)
 
 ___
 
@@ -540,7 +540,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:712](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L712)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:712](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L712)
 
 ___
 
@@ -561,7 +561,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:716](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L716)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:716](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L716)
 
 ___
 
@@ -582,4 +582,4 @@ ___
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:720](https://github.com/scailo/ts-sdk/blob/0ac219e78249ca0b2fbdf3c20ae003ce6b752959/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L720)
+[src/inward_jobs_free_issue_materials_returns.scailo_pb.ts:720](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/inward_jobs_free_issue_materials_returns.scailo_pb.ts#L720)

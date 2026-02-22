@@ -1,4 +1,4 @@
-import { QCSample, QCSampleAncillaryParameters, QCSampleParameter, QCSampleParameterHistoryList, QCSampleParameterHistoryRequest, QCSampleParametersList, QCSampleParametersSearchRequest, QCSamplesCountStatistics, QCSamplesList, QCSamplesServiceCountReq, QCSamplesServiceCreateRequest, QCSamplesServiceFilterReq, QCSamplesServicePaginatedParametersResponse, QCSamplesServicePaginationReq, QCSamplesServicePaginationResponse, QCSamplesServiceParameterUpdateRequest, QCSamplesServiceSearchAllReq, QCSamplesServiceUpdateRequest, QCSamplesWithMetadataList } from "./qc_samples.scailo_pb.js";
+import { QCSample, QCSampleAncillaryParameters, QCSampleParameter, QCSampleParameterHistoryList, QCSampleParameterHistoryRequest, QCSampleParametersList, QCSampleParametersSearchRequest, QCSamplesCountStatistics, QCSamplesList, QCSamplesServiceCountReq, QCSamplesServiceCreateRequest, QCSamplesServiceFilterReq, QCSamplesServicePaginatedParametersResponse, QCSamplesServicePaginationReq, QCSamplesServicePaginationResponse, QCSamplesServiceParameterUpdateRequest, QCSamplesServiceParameterUpdateRequestsList, QCSamplesServiceSearchAllReq, QCSamplesServiceUpdateRequest, QCSamplesWithMetadataList } from "./qc_samples.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
@@ -133,7 +133,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Modify an parameter in a qc sample
+         * Update a parameter in a qc sample
          *
          * @generated from rpc Scailo.QCSamplesService.UpdateParameter
          */
@@ -141,6 +141,17 @@ export declare const QCSamplesService: {
             readonly name: "UpdateParameter";
             readonly I: typeof QCSamplesServiceParameterUpdateRequest;
             readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Update a list of parameters in a qc sample
+         *
+         * @generated from rpc Scailo.QCSamplesService.UpdateParameters
+         */
+        readonly updateParameters: {
+            readonly name: "UpdateParameters";
+            readonly I: typeof QCSamplesServiceParameterUpdateRequestsList;
+            readonly O: typeof IdentifiersList;
             readonly kind: MethodKind.Unary;
         };
         /**
