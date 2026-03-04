@@ -1,5 +1,5 @@
 import { Visitation, VisitationsList, VisitationsServiceCountReq, VisitationsServiceCreateRequest, VisitationsServiceFilterReq, VisitationsServiceImageEntryRequest, VisitationsServiceImageExitRequest, VisitationsServicePaginationReq, VisitationsServicePaginationResponse, VisitationsServiceSearchAllReq, VisitationsServiceUpdateRequest } from "./visitations.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
@@ -366,6 +366,17 @@ export declare const VisitationsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View the open visitation for an associate (with the given identifier), if available. Returns an empty instance if no visitation is available
+         *
+         * @generated from rpc Scailo.VisitationsService.ViewOpenVisitationForAssociate
+         */
+        readonly viewOpenVisitationForAssociate: {
+            readonly name: "ViewOpenVisitationForAssociate";
+            readonly I: typeof Identifier;
+            readonly O: typeof Visitation;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * View all that match the given search key
          *
          * @generated from rpc Scailo.VisitationsService.SearchAll
@@ -385,6 +396,17 @@ export declare const VisitationsService: {
             readonly name: "Filter";
             readonly I: typeof VisitationsServiceFilterReq;
             readonly O: typeof VisitationsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Checks if an associate (with the given identifier) has an open visitation (visitation with only entry and no exit)
+         *
+         * @generated from rpc Scailo.VisitationsService.AssociateHasOpenVisitation
+         */
+        readonly associateHasOpenVisitation: {
+            readonly name: "AssociateHasOpenVisitation";
+            readonly I: typeof Identifier;
+            readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

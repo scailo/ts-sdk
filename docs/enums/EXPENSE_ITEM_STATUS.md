@@ -30,7 +30,7 @@ from enum value: EXPENSE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/expenses.scailo_pb.ts#L114)
+[src/expenses.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/expenses.scailo_pb.ts#L114)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: EXPENSE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/expenses.scailo_pb.ts#L121)
+[src/expenses.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/expenses.scailo_pb.ts#L121)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: EXPENSE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/expenses.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/expenses.scailo_pb.ts#L128)
+[src/expenses.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/expenses.scailo_pb.ts#L128)

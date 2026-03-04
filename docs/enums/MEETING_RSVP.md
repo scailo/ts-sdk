@@ -32,7 +32,7 @@ from enum value: MEETING_RSVP_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/meetings.scailo_pb.ts#L133)
+[src/meetings.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/meetings.scailo_pb.ts#L133)
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: MEETING_RSVP_MAYBE = 4;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/meetings.scailo_pb.ts#L161)
+[src/meetings.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/meetings.scailo_pb.ts#L161)
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: MEETING_RSVP_NO = 3;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/meetings.scailo_pb.ts#L154)
+[src/meetings.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/meetings.scailo_pb.ts#L154)
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: MEETING_RSVP_NONE = 1;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/meetings.scailo_pb.ts#L140)
+[src/meetings.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/meetings.scailo_pb.ts#L140)
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: MEETING_RSVP_YES = 2;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/meetings.scailo_pb.ts#L147)
+[src/meetings.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/meetings.scailo_pb.ts#L147)

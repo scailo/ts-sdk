@@ -384,6 +384,13 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600;
    */
   MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600,
+
+  /**
+   * Denotes that the magic link was created for requesting a user's password reset email
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610,
 }
 // Retrieve enum metadata with: proto3.getEnumType(MAGIC_LINK_RESOURCE_TYPE)
 proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TYPE", [
@@ -440,6 +447,7 @@ proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TY
   { no: 1230, name: "MAGIC_LINK_RESOURCE_TYPE_VISITATION" },
   { no: 1500, name: "MAGIC_LINK_RESOURCE_TYPE_EXPENSE" },
   { no: 1600, name: "MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE" },
+  { no: 1610, name: "MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL" },
 ]);
 
 /**
@@ -528,6 +536,13 @@ export class MagicLink extends Message<MagicLink> {
   expiresAt = protoInt64.zero;
 
   /**
+   * The number of times that the magic link can be viewed. If -1, then the link can be viewed any number of times. If 0, then the link cannot be viewed at all.
+   *
+   * @generated from field: int64 max_views = 31;
+   */
+  maxViews = protoInt64.zero;
+
+  /**
    * Stores an optional description of the magic link
    *
    * @generated from field: string description = 35;
@@ -561,6 +576,7 @@ export class MagicLink extends Message<MagicLink> {
     { no: 10, name: "resource_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "resource_type", kind: "enum", T: proto3.getEnumType(MAGIC_LINK_RESOURCE_TYPE) },
     { no: 30, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 31, name: "max_views", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 35, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 40, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 100, name: "url", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -734,6 +750,13 @@ export class MagicLinksServiceCreateRequest extends Message<MagicLinksServiceCre
   expiresAt = protoInt64.zero;
 
   /**
+   * The number of times that the magic link can be viewed. If -1, then the link can be viewed any number of times. If 0, then the link cannot be viewed at all.
+   *
+   * @generated from field: int64 max_views = 31;
+   */
+  maxViews = protoInt64.zero;
+
+  /**
    * Stores an optional description of the magic link
    *
    * @generated from field: string description = 35;
@@ -753,6 +776,7 @@ export class MagicLinksServiceCreateRequest extends Message<MagicLinksServiceCre
     { no: 10, name: "resource_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "resource_type", kind: "enum", T: proto3.getEnumType(MAGIC_LINK_RESOURCE_TYPE) },
     { no: 30, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 31, name: "max_views", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 35, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -802,6 +826,13 @@ export class MagicLinksServiceCreateRequestForSpecificResource extends Message<M
   expiresAt = protoInt64.zero;
 
   /**
+   * The number of times that the magic link can be viewed. If -1, then the link can be viewed any number of times. If 0, then the link cannot be viewed at all.
+   *
+   * @generated from field: int64 max_views = 31;
+   */
+  maxViews = protoInt64.zero;
+
+  /**
    * Stores an optional description of the magic link
    *
    * @generated from field: string description = 35;
@@ -819,6 +850,7 @@ export class MagicLinksServiceCreateRequestForSpecificResource extends Message<M
     { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "resource_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 31, name: "max_views", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 35, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
@@ -868,6 +900,13 @@ export class MagicLinksServiceUpdateRequest extends Message<MagicLinksServiceUpd
   expiresAt = protoInt64.zero;
 
   /**
+   * The number of times that the magic link can be viewed. If -1, then the link can be viewed any number of times. If 0, then the link cannot be viewed at all.
+   *
+   * @generated from field: int64 max_views = 31;
+   */
+  maxViews = protoInt64.zero;
+
+  /**
    * Stores an optional description of the magic link
    *
    * @generated from field: string description = 35;
@@ -885,6 +924,7 @@ export class MagicLinksServiceUpdateRequest extends Message<MagicLinksServiceUpd
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 30, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 31, name: "max_views", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 35, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 

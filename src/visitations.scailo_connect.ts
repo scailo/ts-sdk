@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { Visitation, VisitationsList, VisitationsServiceCountReq, VisitationsServiceCreateRequest, VisitationsServiceFilterReq, VisitationsServiceImageEntryRequest, VisitationsServiceImageExitRequest, VisitationsServicePaginationReq, VisitationsServicePaginationResponse, VisitationsServiceSearchAllReq, VisitationsServiceUpdateRequest } from "./visitations.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, ImageResponse, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 
@@ -372,6 +372,17 @@ export const VisitationsService = {
       kind: MethodKind.Unary,
     },
     /**
+     * View the open visitation for an associate (with the given identifier), if available. Returns an empty instance if no visitation is available
+     *
+     * @generated from rpc Scailo.VisitationsService.ViewOpenVisitationForAssociate
+     */
+    viewOpenVisitationForAssociate: {
+      name: "ViewOpenVisitationForAssociate",
+      I: Identifier,
+      O: Visitation,
+      kind: MethodKind.Unary,
+    },
+    /**
      * View all that match the given search key
      *
      * @generated from rpc Scailo.VisitationsService.SearchAll
@@ -391,6 +402,17 @@ export const VisitationsService = {
       name: "Filter",
       I: VisitationsServiceFilterReq,
       O: VisitationsList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Checks if an associate (with the given identifier) has an open visitation (visitation with only entry and no exit)
+     *
+     * @generated from rpc Scailo.VisitationsService.AssociateHasOpenVisitation
+     */
+    associateHasOpenVisitation: {
+      name: "AssociateHasOpenVisitation",
+      I: Identifier,
+      O: BooleanResponse,
       kind: MethodKind.Unary,
     },
     /**

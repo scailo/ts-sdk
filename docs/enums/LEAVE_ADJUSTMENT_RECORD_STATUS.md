@@ -30,7 +30,7 @@ from enum value: LEAVE_ADJUSTMENT_RECORD_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/leaves_adjustments.scailo_pb.ts#L202)
+[src/leaves_adjustments.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/leaves_adjustments.scailo_pb.ts#L202)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: LEAVE_ADJUSTMENT_RECORD_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/leaves_adjustments.scailo_pb.ts#L209)
+[src/leaves_adjustments.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/leaves_adjustments.scailo_pb.ts#L209)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: LEAVE_ADJUSTMENT_RECORD_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/ef4df6d9e1da794d280b9f50eaab47dee444e872/src/leaves_adjustments.scailo_pb.ts#L216)
+[src/leaves_adjustments.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/leaves_adjustments.scailo_pb.ts#L216)

@@ -191,6 +191,17 @@ export declare const UsersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Request the password reset email for the given username. An email is triggered if the username is found.
+         *
+         * @generated from rpc Scailo.UsersService.RequestPasswordResetEmail
+         */
+        readonly requestPasswordResetEmail: {
+            readonly name: "RequestPasswordResetEmail";
+            readonly I: typeof SimpleSearchReq;
+            readonly O: typeof MagicLink;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Update the user's profile picture
          *
          * @generated from rpc Scailo.UsersService.UpdateProfilePicture

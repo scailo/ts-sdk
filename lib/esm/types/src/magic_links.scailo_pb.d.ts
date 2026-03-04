@@ -325,7 +325,13 @@ export declare enum MAGIC_LINK_RESOURCE_TYPE {
      *
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600;
      */
-    MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600
+    MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE = 1600,
+    /**
+     * Denotes that the magic link was created for requesting a user's password reset email
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610
 }
 /**
  *
@@ -396,6 +402,12 @@ export declare class MagicLink extends Message<MagicLink> {
      * @generated from field: uint64 expires_at = 30;
      */
     expiresAt: bigint;
+    /**
+     * The number of times that the magic link can be viewed. If -1, then the link can be viewed any number of times. If 0, then the link cannot be viewed at all.
+     *
+     * @generated from field: int64 max_views = 31;
+     */
+    maxViews: bigint;
     /**
      * Stores an optional description of the magic link
      *
@@ -523,6 +535,12 @@ export declare class MagicLinksServiceCreateRequest extends Message<MagicLinksSe
      */
     expiresAt: bigint;
     /**
+     * The number of times that the magic link can be viewed. If -1, then the link can be viewed any number of times. If 0, then the link cannot be viewed at all.
+     *
+     * @generated from field: int64 max_views = 31;
+     */
+    maxViews: bigint;
+    /**
      * Stores an optional description of the magic link
      *
      * @generated from field: string description = 35;
@@ -563,6 +581,12 @@ export declare class MagicLinksServiceCreateRequestForSpecificResource extends M
      */
     expiresAt: bigint;
     /**
+     * The number of times that the magic link can be viewed. If -1, then the link can be viewed any number of times. If 0, then the link cannot be viewed at all.
+     *
+     * @generated from field: int64 max_views = 31;
+     */
+    maxViews: bigint;
+    /**
      * Stores an optional description of the magic link
      *
      * @generated from field: string description = 35;
@@ -602,6 +626,12 @@ export declare class MagicLinksServiceUpdateRequest extends Message<MagicLinksSe
      * @generated from field: uint64 expires_at = 30;
      */
     expiresAt: bigint;
+    /**
+     * The number of times that the magic link can be viewed. If -1, then the link can be viewed any number of times. If 0, then the link cannot be viewed at all.
+     *
+     * @generated from field: int64 max_views = 31;
+     */
+    maxViews: bigint;
     /**
      * Stores an optional description of the magic link
      *
