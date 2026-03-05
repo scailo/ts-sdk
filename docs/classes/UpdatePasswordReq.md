@@ -22,9 +22,9 @@ from message Scailo.UpdatePasswordReq
 
 ### Properties
 
-- [id](UpdatePasswordReq.md#id)
 - [plainTextPassword](UpdatePasswordReq.md#plaintextpassword)
 - [userComment](UpdatePasswordReq.md#usercomment)
+- [uuid](UpdatePasswordReq.md#uuid)
 - [fields](UpdatePasswordReq.md#fields)
 - [runtime](UpdatePasswordReq.md#runtime)
 - [typeName](UpdatePasswordReq.md#typename)
@@ -68,25 +68,9 @@ Message\&lt;UpdatePasswordReq\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2139](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2139)
+[src/base.scailo_pb.ts:2139](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2139)
 
 ## Properties
-
-### id
-
-• **id**: `bigint` = `protoInt64.zero`
-
-The ID of the record that needs to be updated
-
-**`Generated`**
-
-from field: uint64 id = 2;
-
-#### Defined in
-
-[src/base.scailo_pb.ts:2130](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2130)
-
-___
 
 ### plainTextPassword
 
@@ -100,7 +84,7 @@ from field: string plain_text_password = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2137](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2137)
+[src/base.scailo_pb.ts:2137](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2137)
 
 ___
 
@@ -116,7 +100,23 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2123](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2123)
+[src/base.scailo_pb.ts:2123](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2123)
+
+___
+
+### uuid
+
+• **uuid**: `string` = `""`
+
+The UUID of the record that needs to be updated
+
+**`Generated`**
+
+from field: string uuid = 2;
+
+#### Defined in
+
+[src/base.scailo_pb.ts:2130](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2130)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2146](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2146)
+[src/base.scailo_pb.ts:2146](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2146)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2144](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2144)
+[src/base.scailo_pb.ts:2144](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2144)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2145](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2145)
+[src/base.scailo_pb.ts:2145](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2145)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2164](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2164)
+[src/base.scailo_pb.ts:2164](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2164)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2152)
+[src/base.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2152)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2156](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2156)
+[src/base.scailo_pb.ts:2156](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2156)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2160](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L2160)
+[src/base.scailo_pb.ts:2160](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L2160)

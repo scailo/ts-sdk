@@ -35,7 +35,7 @@ from enum value: ASSOCIATE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/associates.scailo_pb.ts#L72)
+[src/associates.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/associates.scailo_pb.ts#L72)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: ASSOCIATE_SORT_KEY_FIRST_NAME = 10;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/associates.scailo_pb.ts#L86)
+[src/associates.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/associates.scailo_pb.ts#L86)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: ASSOCIATE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/associates.scailo_pb.ts#L65)
+[src/associates.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/associates.scailo_pb.ts#L65)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: ASSOCIATE_SORT_KEY_JOB_TITLE = 14;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/associates.scailo_pb.ts#L114)
+[src/associates.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/associates.scailo_pb.ts#L114)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: ASSOCIATE_SORT_KEY_LAST_NAME = 12;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/associates.scailo_pb.ts#L100)
+[src/associates.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/associates.scailo_pb.ts#L100)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: ASSOCIATE_SORT_KEY_MIDDLE_NAME = 11;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/associates.scailo_pb.ts#L93)
+[src/associates.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/associates.scailo_pb.ts#L93)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: ASSOCIATE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/associates.scailo_pb.ts#L79)
+[src/associates.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/associates.scailo_pb.ts#L79)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: ASSOCIATE_SORT_KEY_ORG_NAME = 13;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/associates.scailo_pb.ts#L107)
+[src/associates.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/associates.scailo_pb.ts#L107)

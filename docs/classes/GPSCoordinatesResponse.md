@@ -67,7 +67,7 @@ Message\&lt;GPSCoordinatesResponse\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1674](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1674)
+[src/base.scailo_pb.ts:1674](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1674)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: double latitude = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1665](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1665)
+[src/base.scailo_pb.ts:1665](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1665)
 
 ___
 
@@ -99,7 +99,7 @@ from field: double longitude = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1672](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1672)
+[src/base.scailo_pb.ts:1672](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1672)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1681](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1681)
+[src/base.scailo_pb.ts:1681](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1681)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1679](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1679)
+[src/base.scailo_pb.ts:1679](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1679)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1680](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1680)
+[src/base.scailo_pb.ts:1680](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1680)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1698](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1698)
+[src/base.scailo_pb.ts:1698](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1698)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1686](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1686)
+[src/base.scailo_pb.ts:1686](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1686)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1690](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1690)
+[src/base.scailo_pb.ts:1690](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1690)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1694](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/base.scailo_pb.ts#L1694)
+[src/base.scailo_pb.ts:1694](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/base.scailo_pb.ts#L1694)

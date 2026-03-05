@@ -33,7 +33,7 @@ from enum value: GENERIC_INVENTORY_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/inventory.scailo_pb.ts#L23)
+[src/inventory.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/inventory.scailo_pb.ts#L23)
 
 ___
 
@@ -49,7 +49,7 @@ from enum value: GENERIC_INVENTORY_REF_FROM_GOODS_RECEIPT = 2;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/inventory.scailo_pb.ts#L37)
+[src/inventory.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/inventory.scailo_pb.ts#L37)
 
 ___
 
@@ -65,7 +65,7 @@ from enum value: GENERIC_INVENTORY_REF_FROM_INITIAL_STOCK = 1;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/inventory.scailo_pb.ts#L30)
+[src/inventory.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/inventory.scailo_pb.ts#L30)
 
 ___
 
@@ -81,7 +81,7 @@ from enum value: GENERIC_INVENTORY_REF_FROM_INWARD_JOB_FREE_ISSUE_MATERIAL = 3;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/inventory.scailo_pb.ts#L44)
+[src/inventory.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/inventory.scailo_pb.ts#L44)
 
 ___
 
@@ -97,7 +97,7 @@ from enum value: GENERIC_INVENTORY_REF_FROM_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 4;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/inventory.scailo_pb.ts#L51)
+[src/inventory.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/inventory.scailo_pb.ts#L51)
 
 ___
 
@@ -113,4 +113,4 @@ from enum value: GENERIC_INVENTORY_REF_FROM_PRODUCTION_PLAN = 5;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/inventory.scailo_pb.ts#L58)
+[src/inventory.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/inventory.scailo_pb.ts#L58)

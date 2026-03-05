@@ -29,7 +29,7 @@ from enum value: PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/proforma_invoices.scailo_pb.ts#L23)
+[src/proforma_invoices.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/proforma_invoices.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: PROFORMA_INVOICE_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/proforma_invoices.scailo_pb.ts#L30)
+[src/proforma_invoices.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/proforma_invoices.scailo_pb.ts#L30)

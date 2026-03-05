@@ -84,7 +84,7 @@ Message\&lt;QCSampleParameter\&gt;.constructor
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1858](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1858)
+[src/qc_samples.scailo_pb.ts:1858](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1858)
 
 ## Properties
 
@@ -100,7 +100,7 @@ from field: Scailo.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE acceptable_value_type = 2
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1807](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1807)
+[src/qc_samples.scailo_pb.ts:1807](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1807)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 checked_at = 9;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1758](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1758)
+[src/qc_samples.scailo_pb.ts:1758](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1758)
 
 ___
 
@@ -132,7 +132,7 @@ from field: string checked_by = 8;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1751](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1751)
+[src/qc_samples.scailo_pb.ts:1751](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1751)
 
 ___
 
@@ -148,7 +148,7 @@ from field: string description = 40;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1856](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1856)
+[src/qc_samples.scailo_pb.ts:1856](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1856)
 
 ___
 
@@ -164,7 +164,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1730)
+[src/qc_samples.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1730)
 
 ___
 
@@ -180,7 +180,7 @@ from field: bool is_internal = 19;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1800](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1800)
+[src/qc_samples.scailo_pb.ts:1800](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1800)
 
 ___
 
@@ -196,7 +196,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1737](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1737)
+[src/qc_samples.scailo_pb.ts:1737](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1737)
 
 ___
 
@@ -212,7 +212,7 @@ from field: int64 number_acceptable_value = 21;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1814](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1814)
+[src/qc_samples.scailo_pb.ts:1814](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1814)
 
 ___
 
@@ -228,7 +228,7 @@ from field: int64 number_observed_value = 13;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1786](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1786)
+[src/qc_samples.scailo_pb.ts:1786](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1786)
 
 ___
 
@@ -244,7 +244,7 @@ from field: int64 number_relative_lower_bound = 22;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1821](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1821)
+[src/qc_samples.scailo_pb.ts:1821](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1821)
 
 ___
 
@@ -260,7 +260,7 @@ from field: int64 number_relative_upper_bound = 23;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1828](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1828)
+[src/qc_samples.scailo_pb.ts:1828](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1828)
 
 ___
 
@@ -276,7 +276,7 @@ from field: uint64 qc_param_id = 11;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1772](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1772)
+[src/qc_samples.scailo_pb.ts:1772](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1772)
 
 ___
 
@@ -292,7 +292,7 @@ from field: uint64 qc_sample_id = 10;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1765](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1765)
+[src/qc_samples.scailo_pb.ts:1765](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1765)
 
 ___
 
@@ -308,7 +308,7 @@ from field: repeated string text_acceptable_values = 30;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1835](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1835)
+[src/qc_samples.scailo_pb.ts:1835](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1835)
 
 ___
 
@@ -324,7 +324,7 @@ from field: repeated string text_acceptable_values_with_deviation = 31;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1842](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1842)
+[src/qc_samples.scailo_pb.ts:1842](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1842)
 
 ___
 
@@ -340,7 +340,7 @@ from field: string text_observed_value = 14;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1793](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1793)
+[src/qc_samples.scailo_pb.ts:1793](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1793)
 
 ___
 
@@ -356,7 +356,7 @@ from field: repeated string text_unacceptable_values = 32;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1849](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1849)
+[src/qc_samples.scailo_pb.ts:1849](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1849)
 
 ___
 
@@ -372,7 +372,7 @@ from field: uint64 uom_id = 12;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1779](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1779)
+[src/qc_samples.scailo_pb.ts:1779](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1779)
 
 ___
 
@@ -388,7 +388,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1744](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1744)
+[src/qc_samples.scailo_pb.ts:1744](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1744)
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1865](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1865)
+[src/qc_samples.scailo_pb.ts:1865](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1865)
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1863](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1863)
+[src/qc_samples.scailo_pb.ts:1863](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1863)
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1864](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1864)
+[src/qc_samples.scailo_pb.ts:1864](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1864)
 
 ## Methods
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1899](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1899)
+[src/qc_samples.scailo_pb.ts:1899](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1899)
 
 ___
 
@@ -727,7 +727,7 @@ ___
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1887](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1887)
+[src/qc_samples.scailo_pb.ts:1887](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1887)
 
 ___
 
@@ -748,7 +748,7 @@ ___
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1891](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1891)
+[src/qc_samples.scailo_pb.ts:1891](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1891)
 
 ___
 
@@ -769,4 +769,4 @@ ___
 
 #### Defined in
 
-[src/qc_samples.scailo_pb.ts:1895](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/qc_samples.scailo_pb.ts#L1895)
+[src/qc_samples.scailo_pb.ts:1895](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/qc_samples.scailo_pb.ts#L1895)

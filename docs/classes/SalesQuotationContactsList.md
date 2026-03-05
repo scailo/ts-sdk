@@ -66,7 +66,7 @@ Message\&lt;SalesQuotationContactsList\&gt;.constructor
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3246](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3246)
+[src/sales_quotations.scailo_pb.ts:3246](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3246)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesQuotationContact list = 1;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3244](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3244)
+[src/sales_quotations.scailo_pb.ts:3244](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3244)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3253](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3253)
+[src/sales_quotations.scailo_pb.ts:3253](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3253)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3251](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3251)
+[src/sales_quotations.scailo_pb.ts:3251](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3251)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3252](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3252)
+[src/sales_quotations.scailo_pb.ts:3252](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3252)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3269](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3269)
+[src/sales_quotations.scailo_pb.ts:3269](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3269)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3257](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3257)
+[src/sales_quotations.scailo_pb.ts:3257](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3257)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3261](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3261)
+[src/sales_quotations.scailo_pb.ts:3261](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3261)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3265](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_quotations.scailo_pb.ts#L3265)
+[src/sales_quotations.scailo_pb.ts:3265](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_quotations.scailo_pb.ts#L3265)

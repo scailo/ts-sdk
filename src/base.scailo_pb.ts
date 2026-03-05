@@ -2123,11 +2123,11 @@ export class UpdatePasswordReq extends Message<UpdatePasswordReq> {
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   * The UUID of the record that needs to be updated
    *
-   * @generated from field: uint64 id = 2;
+   * @generated from field: string uuid = 2;
    */
-  id = protoInt64.zero;
+  uuid = "";
 
   /**
    * The plain text password using which the user can login
@@ -2145,7 +2145,7 @@ export class UpdatePasswordReq extends Message<UpdatePasswordReq> {
   static readonly typeName = "Scailo.UpdatePasswordReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 

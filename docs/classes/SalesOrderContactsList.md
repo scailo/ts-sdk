@@ -66,7 +66,7 @@ Message\&lt;SalesOrderContactsList\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3485](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3485)
+[src/sales_orders.scailo_pb.ts:3485](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3485)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.SalesOrderContact list = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3483](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3483)
+[src/sales_orders.scailo_pb.ts:3483](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3483)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3492](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3492)
+[src/sales_orders.scailo_pb.ts:3492](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3492)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3490](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3490)
+[src/sales_orders.scailo_pb.ts:3490](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3490)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3491](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3491)
+[src/sales_orders.scailo_pb.ts:3491](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3491)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3508](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3508)
+[src/sales_orders.scailo_pb.ts:3508](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3508)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3496](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3496)
+[src/sales_orders.scailo_pb.ts:3496](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3496)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3500](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3500)
+[src/sales_orders.scailo_pb.ts:3500](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3500)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3504](https://github.com/scailo/ts-sdk/blob/82f472649d19de288d06f4ba8d6c97f248d8e611/src/sales_orders.scailo_pb.ts#L3504)
+[src/sales_orders.scailo_pb.ts:3504](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/sales_orders.scailo_pb.ts#L3504)
