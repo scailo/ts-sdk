@@ -1421,4 +1421,32 @@ export declare class UsersServiceRegisterMobileDeviceRequest extends Message<Use
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceRegisterMobileDeviceRequest;
     static equals(a: UsersServiceRegisterMobileDeviceRequest | PlainMessage<UsersServiceRegisterMobileDeviceRequest> | undefined, b: UsersServiceRegisterMobileDeviceRequest | PlainMessage<UsersServiceRegisterMobileDeviceRequest> | undefined): boolean;
 }
+/**
+ *
+ * Describes the message that is required to reset a user's password through an email
+ *
+ * @generated from message Scailo.UsersServicePasswordResetReq
+ */
+export declare class UsersServicePasswordResetReq extends Message<UsersServicePasswordResetReq> {
+    /**
+     * The username of the user
+     *
+     * @generated from field: string username = 10;
+     */
+    username: string;
+    /**
+     * The optional domain prefix that is used to generate the magic link that will allow the user to update the password. If this is empty, then the default authless access domain is used. This is useful in case of password redirections need to happen at custom domains.
+     *
+     * @generated from field: string domain_prefix = 20;
+     */
+    domainPrefix: string;
+    constructor(data?: PartialMessage<UsersServicePasswordResetReq>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.UsersServicePasswordResetReq";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServicePasswordResetReq;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServicePasswordResetReq;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServicePasswordResetReq;
+    static equals(a: UsersServicePasswordResetReq | PlainMessage<UsersServicePasswordResetReq> | undefined, b: UsersServicePasswordResetReq | PlainMessage<UsersServicePasswordResetReq> | undefined): boolean;
+}
 //# sourceMappingURL=users.scailo_pb.d.ts.map

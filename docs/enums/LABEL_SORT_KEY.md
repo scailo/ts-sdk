@@ -32,7 +32,7 @@ from enum value: LABEL_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/labels.scailo_pb.ts#L50)
+[src/labels.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L50)
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: LABEL_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/labels.scailo_pb.ts#L29)
+[src/labels.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L29)
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: LABEL_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/labels.scailo_pb.ts#L22)
+[src/labels.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L22)
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: LABEL_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/labels.scailo_pb.ts#L36)
+[src/labels.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L36)
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: LABEL_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/labels.scailo_pb.ts#L43)
+[src/labels.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L43)

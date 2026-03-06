@@ -2037,3 +2037,53 @@ export class UsersServiceRegisterMobileDeviceRequest extends Message<UsersServic
   }
 }
 
+/**
+ *
+ * Describes the message that is required to reset a user's password through an email
+ *
+ * @generated from message Scailo.UsersServicePasswordResetReq
+ */
+export class UsersServicePasswordResetReq extends Message<UsersServicePasswordResetReq> {
+  /**
+   * The username of the user
+   *
+   * @generated from field: string username = 10;
+   */
+  username = "";
+
+  /**
+   * The optional domain prefix that is used to generate the magic link that will allow the user to update the password. If this is empty, then the default authless access domain is used. This is useful in case of password redirections need to happen at custom domains.
+   *
+   * @generated from field: string domain_prefix = 20;
+   */
+  domainPrefix = "";
+
+  constructor(data?: PartialMessage<UsersServicePasswordResetReq>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.UsersServicePasswordResetReq";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "domain_prefix", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServicePasswordResetReq {
+    return new UsersServicePasswordResetReq().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServicePasswordResetReq {
+    return new UsersServicePasswordResetReq().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServicePasswordResetReq {
+    return new UsersServicePasswordResetReq().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: UsersServicePasswordResetReq | PlainMessage<UsersServicePasswordResetReq> | undefined, b: UsersServicePasswordResetReq | PlainMessage<UsersServicePasswordResetReq> | undefined): boolean {
+    return proto3.util.equals(UsersServicePasswordResetReq, a, b);
+  }
+}
+

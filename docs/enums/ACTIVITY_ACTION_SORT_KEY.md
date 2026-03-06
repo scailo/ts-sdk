@@ -33,7 +33,7 @@ from enum value: ACTIVITY_ACTION_SORT_KEY_ACTION_CODE_ID = 11;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/activities.scailo_pb.ts#L160)
+[src/activities.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities.scailo_pb.ts#L160)
 
 ___
 
@@ -49,7 +49,7 @@ from enum value: ACTIVITY_ACTION_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/activities.scailo_pb.ts#L139)
+[src/activities.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities.scailo_pb.ts#L139)
 
 ___
 
@@ -65,7 +65,7 @@ from enum value: ACTIVITY_ACTION_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:132](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/activities.scailo_pb.ts#L132)
+[src/activities.scailo_pb.ts:132](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities.scailo_pb.ts#L132)
 
 ___
 
@@ -81,7 +81,7 @@ from enum value: ACTIVITY_ACTION_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:146](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/activities.scailo_pb.ts#L146)
+[src/activities.scailo_pb.ts:146](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities.scailo_pb.ts#L146)
 
 ___
 
@@ -97,7 +97,7 @@ from enum value: ACTIVITY_ACTION_SORT_KEY_POINTS = 12;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:167](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/activities.scailo_pb.ts#L167)
+[src/activities.scailo_pb.ts:167](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities.scailo_pb.ts#L167)
 
 ___
 
@@ -113,4 +113,4 @@ from enum value: ACTIVITY_ACTION_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:153](https://github.com/scailo/ts-sdk/blob/fbb7c93f58dd349646e9364e777b3b087e3456a8/src/activities.scailo_pb.ts#L153)
+[src/activities.scailo_pb.ts:153](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities.scailo_pb.ts#L153)
