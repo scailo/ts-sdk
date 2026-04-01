@@ -73,7 +73,7 @@ Message\&lt;SalesOrderContact\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3436](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3436)
+[src/sales_orders.scailo_pb.ts:3948](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3948)
 
 ## Properties
 
@@ -81,7 +81,9 @@ Message\&lt;SalesOrderContact\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -89,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3399](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3399)
+[src/sales_orders.scailo_pb.ts:3910](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3910)
 
 ___
 
@@ -105,7 +107,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3427](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3427)
+[src/sales_orders.scailo_pb.ts:3939](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3939)
 
 ___
 
@@ -121,7 +123,7 @@ from field: string associate_uuid = 211;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3434](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3434)
+[src/sales_orders.scailo_pb.ts:3946](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3946)
 
 ___
 
@@ -129,7 +131,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -137,7 +147,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3385](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3385)
+[src/sales_orders.scailo_pb.ts:3894](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3894)
 
 ___
 
@@ -145,7 +155,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this sales order
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -153,7 +165,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3392](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3392)
+[src/sales_orders.scailo_pb.ts:3902](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3902)
 
 ___
 
@@ -161,7 +173,9 @@ ___
 
 • **needApproval**: `boolean` = `false`
 
-Denotes if this record requires approval (or has been approved)
+**`Description`**
+
+The approval state of the record
 
 **`Generated`**
 
@@ -169,7 +183,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3406](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3406)
+[src/sales_orders.scailo_pb.ts:3918](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3918)
 
 ___
 
@@ -185,7 +199,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3420](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3420)
+[src/sales_orders.scailo_pb.ts:3932](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3932)
 
 ___
 
@@ -201,7 +215,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3413](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3413)
+[src/sales_orders.scailo_pb.ts:3925](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3925)
 
 ___
 
@@ -211,7 +225,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3443](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3443)
+[src/sales_orders.scailo_pb.ts:3955](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3955)
 
 ___
 
@@ -221,7 +235,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3441](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3441)
+[src/sales_orders.scailo_pb.ts:3953](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3953)
 
 ___
 
@@ -231,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3442](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3442)
+[src/sales_orders.scailo_pb.ts:3954](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3954)
 
 ## Methods
 
@@ -519,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3466](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3466)
+[src/sales_orders.scailo_pb.ts:3978](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3978)
 
 ___
 
@@ -540,7 +554,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3454](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3454)
+[src/sales_orders.scailo_pb.ts:3966](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3966)
 
 ___
 
@@ -561,7 +575,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3458](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3458)
+[src/sales_orders.scailo_pb.ts:3970](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3970)
 
 ___
 
@@ -582,4 +596,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3462](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_pb.ts#L3462)
+[src/sales_orders.scailo_pb.ts:3974](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L3974)

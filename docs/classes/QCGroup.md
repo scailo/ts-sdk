@@ -77,7 +77,7 @@ Message\&lt;QCGroup\&gt;.constructor
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:534](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L534)
+[src/qc_groups.scailo_pb.ts:579](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L579)
 
 ## Properties
 
@@ -85,7 +85,9 @@ Message\&lt;QCGroup\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -93,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:469](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L469)
+[src/qc_groups.scailo_pb.ts:506](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L506)
 
 ___
 
@@ -109,7 +111,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:511](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L511)
+[src/qc_groups.scailo_pb.ts:556](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L556)
 
 ___
 
@@ -117,7 +119,15 @@ ___
 
 • **completedOn**: `bigint` = `protoInt64.zero`
 
-The timestamp of when this qc group was marked as completed
+**`Description`**
+
+UNIX timestamp of when the record transitioned to the COMPLETED state.
+
+**`Example`**
+
+```ts
+1698400000
+```
 
 **`Generated`**
 
@@ -125,7 +135,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:490](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L490)
+[src/qc_groups.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L532)
 
 ___
 
@@ -141,7 +151,7 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:518](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L518)
+[src/qc_groups.scailo_pb.ts:563](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L563)
 
 ___
 
@@ -149,7 +159,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -157,7 +175,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:455](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L455)
+[src/qc_groups.scailo_pb.ts:490](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L490)
 
 ___
 
@@ -173,7 +191,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L532)
+[src/qc_groups.scailo_pb.ts:577](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L577)
 
 ___
 
@@ -189,7 +207,7 @@ from field: repeated Scailo.QCGroupItem list = 20;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:525](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L525)
+[src/qc_groups.scailo_pb.ts:570](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L570)
 
 ___
 
@@ -197,7 +215,9 @@ ___
 
 • **logs**: [`LogbookLogConciseSLC`](LogbookLogConciseSLC.md)[] = `[]`
 
-Stores the logs of every operation performed on this qc group
+**`Description`**
+
+Comprehensive audit trail of every operation performed on this record.
 
 **`Generated`**
 
@@ -205,7 +225,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:483](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L483)
+[src/qc_groups.scailo_pb.ts:522](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L522)
 
 ___
 
@@ -213,7 +233,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this qc group
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -221,7 +243,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:462](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L462)
+[src/qc_groups.scailo_pb.ts:498](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L498)
 
 ___
 
@@ -237,7 +259,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:504](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L504)
+[src/qc_groups.scailo_pb.ts:549](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L549)
 
 ___
 
@@ -245,7 +267,9 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this qc group
+**`Description`**
+
+The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
 
 **`Generated`**
 
@@ -253,7 +277,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:476](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L476)
+[src/qc_groups.scailo_pb.ts:514](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L514)
 
 ___
 
@@ -261,7 +285,15 @@ ___
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
 
-The associated vault folder ID
+**`Description`**
+
+Link to the document storage folder.
+
+**`Example`**
+
+```ts
+15234
+```
 
 **`Generated`**
 
@@ -269,7 +301,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:497](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L497)
+[src/qc_groups.scailo_pb.ts:542](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L542)
 
 ___
 
@@ -279,7 +311,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:541](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L541)
+[src/qc_groups.scailo_pb.ts:586](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L586)
 
 ___
 
@@ -289,7 +321,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:539](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L539)
+[src/qc_groups.scailo_pb.ts:584](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L584)
 
 ___
 
@@ -299,7 +331,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L540)
+[src/qc_groups.scailo_pb.ts:585](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L585)
 
 ## Methods
 
@@ -587,7 +619,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:568](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L568)
+[src/qc_groups.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L613)
 
 ___
 
@@ -608,7 +640,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:556](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L556)
+[src/qc_groups.scailo_pb.ts:601](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L601)
 
 ___
 
@@ -629,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:560](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L560)
+[src/qc_groups.scailo_pb.ts:605](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L605)
 
 ___
 
@@ -650,4 +682,4 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:564](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L564)
+[src/qc_groups.scailo_pb.ts:609](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L609)

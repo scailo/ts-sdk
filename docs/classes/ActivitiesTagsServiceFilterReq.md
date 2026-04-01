@@ -86,7 +86,7 @@ Message\&lt;ActivitiesTagsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L755)
+[src/activities_tags.scailo_pb.ts:925](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L925)
 
 ## Properties
 
@@ -94,7 +94,25 @@ Message\&lt;ActivitiesTagsServiceFilterReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -102,7 +120,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:704](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L704)
+[src/activities_tags.scailo_pb.ts:865](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L865)
 
 ___
 
@@ -110,7 +128,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -118,7 +154,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L697)
+[src/activities_tags.scailo_pb.ts:849](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L849)
 
 ___
 
@@ -126,7 +162,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -134,7 +188,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L690)
+[src/activities_tags.scailo_pb.ts:833](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L833)
 
 ___
 
@@ -142,7 +196,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -150,7 +222,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:711](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L711)
+[src/activities_tags.scailo_pb.ts:881](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L881)
 
 ___
 
@@ -166,7 +238,7 @@ from field: string bg_color = 23;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L739)
+[src/activities_tags.scailo_pb.ts:909](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L909)
 
 ___
 
@@ -182,7 +254,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L725)
+[src/activities_tags.scailo_pb.ts:895](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L895)
 
 ___
 
@@ -190,7 +262,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -198,7 +288,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L620)
+[src/activities_tags.scailo_pb.ts:687](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L687)
 
 ___
 
@@ -206,7 +296,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -214,7 +322,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:655](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L655)
+[src/activities_tags.scailo_pb.ts:757](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L757)
 
 ___
 
@@ -222,7 +330,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -230,7 +356,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:648](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L648)
+[src/activities_tags.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L741)
 
 ___
 
@@ -238,7 +364,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -246,7 +390,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L676)
+[src/activities_tags.scailo_pb.ts:805](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L805)
 
 ___
 
@@ -262,7 +406,7 @@ from field: string fg_color = 22;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:732](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L732)
+[src/activities_tags.scailo_pb.ts:902](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L902)
 
 ___
 
@@ -270,7 +414,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -278,7 +432,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L613)
+[src/activities_tags.scailo_pb.ts:671](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L671)
 
 ___
 
@@ -294,7 +448,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 27;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:753](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L753)
+[src/activities_tags.scailo_pb.ts:923](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L923)
 
 ___
 
@@ -302,7 +456,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -310,7 +482,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L669)
+[src/activities_tags.scailo_pb.ts:789](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L789)
 
 ___
 
@@ -318,7 +490,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -326,7 +516,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L662)
+[src/activities_tags.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L773)
 
 ___
 
@@ -342,7 +532,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L718)
+[src/activities_tags.scailo_pb.ts:888](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L888)
 
 ___
 
@@ -350,7 +540,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -358,7 +566,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L627)
+[src/activities_tags.scailo_pb.ts:703](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L703)
 
 ___
 
@@ -374,7 +582,7 @@ from field: uint64 parent_activity_tag_id = 26;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L746)
+[src/activities_tags.scailo_pb.ts:916](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L916)
 
 ___
 
@@ -382,7 +590,11 @@ ___
 
 • **sortKey**: [`ACTIVITY_TAG_SORT_KEY`](../enums/ACTIVITY_TAG_SORT_KEY.md) = `ACTIVITY_TAG_SORT_KEY.ACTIVITY_TAG_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -390,7 +602,7 @@ from field: Scailo.ACTIVITY_TAG_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L641)
+[src/activities_tags.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L725)
 
 ___
 
@@ -398,7 +610,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -406,7 +628,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:634](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L634)
+[src/activities_tags.scailo_pb.ts:715](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L715)
 
 ___
 
@@ -414,7 +636,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this activity tag
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -422,7 +654,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:683](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L683)
+[src/activities_tags.scailo_pb.ts:817](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L817)
 
 ___
 
@@ -432,7 +664,7 @@ ___
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:762](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L762)
+[src/activities_tags.scailo_pb.ts:932](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L932)
 
 ___
 
@@ -442,7 +674,7 @@ ___
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:760](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L760)
+[src/activities_tags.scailo_pb.ts:930](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L930)
 
 ___
 
@@ -452,7 +684,7 @@ ___
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:761](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L761)
+[src/activities_tags.scailo_pb.ts:931](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L931)
 
 ## Methods
 
@@ -740,7 +972,7 @@ ___
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:798](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L798)
+[src/activities_tags.scailo_pb.ts:968](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L968)
 
 ___
 
@@ -761,7 +993,7 @@ ___
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:786](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L786)
+[src/activities_tags.scailo_pb.ts:956](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L956)
 
 ___
 
@@ -782,7 +1014,7 @@ ___
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:790](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L790)
+[src/activities_tags.scailo_pb.ts:960](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L960)
 
 ___
 
@@ -803,4 +1035,4 @@ ___
 
 #### Defined in
 
-[src/activities_tags.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_pb.ts#L794)
+[src/activities_tags.scailo_pb.ts:964](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_pb.ts#L964)

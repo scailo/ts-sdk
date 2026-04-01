@@ -73,7 +73,7 @@ Message\&lt;FormsSectionsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:812](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L812)
+[src/forms_sections.scailo_pb.ts:1005](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1005)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:768](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L768)
+[src/forms_sections.scailo_pb.ts:952](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L952)
 
 ___
 
@@ -97,7 +97,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter forms sections
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -105,7 +123,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:796](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L796)
+[src/forms_sections.scailo_pb.ts:989](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L989)
 
 ___
 
@@ -113,7 +131,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -121,7 +149,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:761](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L761)
+[src/forms_sections.scailo_pb.ts:945](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L945)
 
 ___
 
@@ -137,7 +165,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:775](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L775)
+[src/forms_sections.scailo_pb.ts:959](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L959)
 
 ___
 
@@ -153,7 +181,7 @@ from field: string search_key = 10;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:803](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L803)
+[src/forms_sections.scailo_pb.ts:996](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L996)
 
 ___
 
@@ -169,7 +197,7 @@ from field: Scailo.FORM_SECTION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:789](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L789)
+[src/forms_sections.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L973)
 
 ___
 
@@ -185,7 +213,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:782](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L782)
+[src/forms_sections.scailo_pb.ts:966](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L966)
 
 ___
 
@@ -201,7 +229,7 @@ from field: Scailo.FORM_TYPE type = 11;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:810](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L810)
+[src/forms_sections.scailo_pb.ts:1003](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1003)
 
 ___
 
@@ -211,7 +239,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:819](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L819)
+[src/forms_sections.scailo_pb.ts:1012](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1012)
 
 ___
 
@@ -221,7 +249,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:817](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L817)
+[src/forms_sections.scailo_pb.ts:1010](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1010)
 
 ___
 
@@ -231,7 +259,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:818](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L818)
+[src/forms_sections.scailo_pb.ts:1011](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1011)
 
 ## Methods
 
@@ -519,7 +547,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:842](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L842)
+[src/forms_sections.scailo_pb.ts:1035](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1035)
 
 ___
 
@@ -540,7 +568,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:830](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L830)
+[src/forms_sections.scailo_pb.ts:1023](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1023)
 
 ___
 
@@ -561,7 +589,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:834](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L834)
+[src/forms_sections.scailo_pb.ts:1027](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1027)
 
 ___
 
@@ -582,4 +610,4 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:838](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_pb.ts#L838)
+[src/forms_sections.scailo_pb.ts:1031](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_pb.ts#L1031)

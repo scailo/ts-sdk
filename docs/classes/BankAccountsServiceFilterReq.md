@@ -83,7 +83,7 @@ Message\&lt;BankAccountsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:663](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L663)
+[src/bank_accounts.scailo_pb.ts:842](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L842)
 
 ## Properties
 
@@ -91,7 +91,25 @@ Message\&lt;BankAccountsServiceFilterReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -99,7 +117,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:633](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L633)
+[src/bank_accounts.scailo_pb.ts:803](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L803)
 
 ___
 
@@ -107,7 +125,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -115,7 +151,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:626](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L626)
+[src/bank_accounts.scailo_pb.ts:787](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L787)
 
 ___
 
@@ -123,7 +159,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -131,7 +185,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:619](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L619)
+[src/bank_accounts.scailo_pb.ts:771](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L771)
 
 ___
 
@@ -139,7 +193,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -147,7 +219,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:640](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L640)
+[src/bank_accounts.scailo_pb.ts:819](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L819)
 
 ___
 
@@ -163,7 +235,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:654](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L654)
+[src/bank_accounts.scailo_pb.ts:833](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L833)
 
 ___
 
@@ -171,7 +243,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -179,7 +269,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:549](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L549)
+[src/bank_accounts.scailo_pb.ts:625](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L625)
 
 ___
 
@@ -187,7 +277,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -195,7 +303,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:584](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L584)
+[src/bank_accounts.scailo_pb.ts:695](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L695)
 
 ___
 
@@ -203,7 +311,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -211,7 +337,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:577](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L577)
+[src/bank_accounts.scailo_pb.ts:679](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L679)
 
 ___
 
@@ -219,7 +345,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -227,7 +371,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:605](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L605)
+[src/bank_accounts.scailo_pb.ts:743](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L743)
 
 ___
 
@@ -243,7 +387,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:661](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L661)
+[src/bank_accounts.scailo_pb.ts:840](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L840)
 
 ___
 
@@ -251,7 +395,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -259,7 +413,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:542](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L542)
+[src/bank_accounts.scailo_pb.ts:609](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L609)
 
 ___
 
@@ -267,7 +421,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -275,7 +447,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:598](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L598)
+[src/bank_accounts.scailo_pb.ts:727](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L727)
 
 ___
 
@@ -283,7 +455,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -291,7 +481,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:591](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L591)
+[src/bank_accounts.scailo_pb.ts:711](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L711)
 
 ___
 
@@ -307,7 +497,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:647](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L647)
+[src/bank_accounts.scailo_pb.ts:826](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L826)
 
 ___
 
@@ -315,7 +505,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -323,7 +531,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:556](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L556)
+[src/bank_accounts.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L641)
 
 ___
 
@@ -331,7 +539,11 @@ ___
 
 • **sortKey**: [`BANK_ACCOUNT_SORT_KEY`](../enums/BANK_ACCOUNT_SORT_KEY.md) = `BANK_ACCOUNT_SORT_KEY.BANK_ACCOUNT_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -339,7 +551,7 @@ from field: Scailo.BANK_ACCOUNT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:570](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L570)
+[src/bank_accounts.scailo_pb.ts:663](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L663)
 
 ___
 
@@ -347,7 +559,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -355,7 +577,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:563](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L563)
+[src/bank_accounts.scailo_pb.ts:653](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L653)
 
 ___
 
@@ -363,7 +585,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this bank account
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -371,7 +603,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:612](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L612)
+[src/bank_accounts.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L755)
 
 ___
 
@@ -381,7 +613,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:670](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L670)
+[src/bank_accounts.scailo_pb.ts:849](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L849)
 
 ___
 
@@ -391,7 +623,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:668](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L668)
+[src/bank_accounts.scailo_pb.ts:847](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L847)
 
 ___
 
@@ -401,7 +633,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L669)
+[src/bank_accounts.scailo_pb.ts:848](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L848)
 
 ## Methods
 
@@ -689,7 +921,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:703](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L703)
+[src/bank_accounts.scailo_pb.ts:882](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L882)
 
 ___
 
@@ -710,7 +942,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:691](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L691)
+[src/bank_accounts.scailo_pb.ts:870](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L870)
 
 ___
 
@@ -731,7 +963,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:695](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L695)
+[src/bank_accounts.scailo_pb.ts:874](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L874)
 
 ___
 
@@ -752,4 +984,4 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:699](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_pb.ts#L699)
+[src/bank_accounts.scailo_pb.ts:878](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_pb.ts#L878)

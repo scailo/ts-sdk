@@ -69,7 +69,7 @@ Message\&lt;RolesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:832](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L832)
+[src/roles.scailo_pb.ts:903](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L903)
 
 ## Properties
 
@@ -77,7 +77,15 @@ Message\&lt;RolesServicePaginationResponse\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records in this payload
+**`Description`**
+
+Number of records returned in the current response slice.
+
+**`Example`**
+
+```ts
+50
+```
 
 **`Generated`**
 
@@ -85,7 +93,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:809](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L809)
+[src/roles.scailo_pb.ts:873](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L873)
 
 ___
 
@@ -93,7 +101,15 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+**`Description`**
+
+The offset provided in the request.
+
+**`Example`**
+
+```ts
+0
+```
 
 **`Generated`**
 
@@ -101,7 +117,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:816](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L816)
+[src/roles.scailo_pb.ts:883](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L883)
 
 ___
 
@@ -109,7 +125,9 @@ ___
 
 • **payload**: [`Role`](Role.md)[] = `[]`
 
-The list of records
+**`Description`**
+
+The array of records for the current page.
 
 **`Generated`**
 
@@ -117,7 +135,7 @@ from field: repeated Scailo.Role payload = 4;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:830](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L830)
+[src/roles.scailo_pb.ts:901](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L901)
 
 ___
 
@@ -125,7 +143,15 @@ ___
 
 • **total**: `bigint` = `protoInt64.zero`
 
-The total number of records that are available
+**`Description`**
+
+The total number of records matching the criteria.
+
+**`Example`**
+
+```ts
+1250
+```
 
 **`Generated`**
 
@@ -133,7 +159,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:823](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L823)
+[src/roles.scailo_pb.ts:893](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L893)
 
 ___
 
@@ -143,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:839](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L839)
+[src/roles.scailo_pb.ts:910](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L910)
 
 ___
 
@@ -153,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:837](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L837)
+[src/roles.scailo_pb.ts:908](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L908)
 
 ___
 
@@ -163,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:838](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L838)
+[src/roles.scailo_pb.ts:909](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L909)
 
 ## Methods
 
@@ -451,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:858](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L858)
+[src/roles.scailo_pb.ts:929](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L929)
 
 ___
 
@@ -472,7 +498,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:846](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L846)
+[src/roles.scailo_pb.ts:917](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L917)
 
 ___
 
@@ -493,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:850](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L850)
+[src/roles.scailo_pb.ts:921](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L921)
 
 ___
 
@@ -514,4 +540,4 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:854](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_pb.ts#L854)
+[src/roles.scailo_pb.ts:925](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L925)

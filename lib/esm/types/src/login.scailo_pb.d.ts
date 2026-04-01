@@ -137,7 +137,10 @@ export declare class LogoutResponse extends Message<LogoutResponse> {
  */
 export declare class UserLoginHistory extends Message<UserLoginHistory> {
     /**
-     * Storages a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */

@@ -74,7 +74,7 @@ Message\&lt;QCGroupsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1963](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1963)
+[src/qc_groups.scailo_pb.ts:2403](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2403)
 
 ## Properties
 
@@ -82,7 +82,25 @@ Message\&lt;QCGroupsServiceSearchAllReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -90,7 +108,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1912](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1912)
+[src/qc_groups.scailo_pb.ts:2312](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2312)
 
 ___
 
@@ -98,7 +116,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -106,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1940](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1940)
+[src/qc_groups.scailo_pb.ts:2366](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2366)
 
 ___
 
@@ -122,7 +158,7 @@ from field: uint64 family_id = 30;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1961](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1961)
+[src/qc_groups.scailo_pb.ts:2401](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2401)
 
 ___
 
@@ -130,7 +166,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -138,7 +184,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1905](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1905)
+[src/qc_groups.scailo_pb.ts:2296](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2296)
 
 ___
 
@@ -146,7 +192,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -154,7 +218,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1919](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1919)
+[src/qc_groups.scailo_pb.ts:2328](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2328)
 
 ___
 
@@ -162,7 +226,23 @@ ___
 
 • **searchKey**: `string` = `""`
 
-Describes the key with which the search operation needs to be performed
+**`Mandatory`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -170,7 +250,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1954](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1954)
+[src/qc_groups.scailo_pb.ts:2394](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2394)
 
 ___
 
@@ -178,7 +258,11 @@ ___
 
 • **sortKey**: [`QC_GROUP_SORT_KEY`](../enums/QC_GROUP_SORT_KEY.md) = `QC_GROUP_SORT_KEY.QC_GROUP_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -186,7 +270,7 @@ from field: Scailo.QC_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1933](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1933)
+[src/qc_groups.scailo_pb.ts:2350](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2350)
 
 ___
 
@@ -194,7 +278,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -202,7 +296,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1926](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1926)
+[src/qc_groups.scailo_pb.ts:2340](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2340)
 
 ___
 
@@ -210,7 +304,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-Limit the search space to the given status
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -218,7 +322,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1947](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1947)
+[src/qc_groups.scailo_pb.ts:2378](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2378)
 
 ___
 
@@ -228,7 +332,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1970](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1970)
+[src/qc_groups.scailo_pb.ts:2410](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2410)
 
 ___
 
@@ -238,7 +342,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1968](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1968)
+[src/qc_groups.scailo_pb.ts:2408](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2408)
 
 ___
 
@@ -248,7 +352,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1969](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1969)
+[src/qc_groups.scailo_pb.ts:2409](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2409)
 
 ## Methods
 
@@ -536,7 +640,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1994](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1994)
+[src/qc_groups.scailo_pb.ts:2434](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2434)
 
 ___
 
@@ -557,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1982](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1982)
+[src/qc_groups.scailo_pb.ts:2422](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2422)
 
 ___
 
@@ -578,7 +682,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1986](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1986)
+[src/qc_groups.scailo_pb.ts:2426](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2426)
 
 ___
 
@@ -599,4 +703,4 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1990](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1990)
+[src/qc_groups.scailo_pb.ts:2430](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2430)

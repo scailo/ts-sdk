@@ -77,7 +77,7 @@ Message\&lt;Team\&gt;.constructor
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:490](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L490)
+[src/teams.scailo_pb.ts:535](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L535)
 
 ## Properties
 
@@ -85,7 +85,9 @@ Message\&lt;Team\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -93,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:425](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L425)
+[src/teams.scailo_pb.ts:462](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L462)
 
 ___
 
@@ -109,7 +111,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:467](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L467)
+[src/teams.scailo_pb.ts:512](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L512)
 
 ___
 
@@ -117,7 +119,15 @@ ___
 
 • **completedOn**: `bigint` = `protoInt64.zero`
 
-The timestamp of when this team was marked as completed
+**`Description`**
+
+UNIX timestamp of when the record transitioned to the COMPLETED state.
+
+**`Example`**
+
+```ts
+1698400000
+```
 
 **`Generated`**
 
@@ -125,7 +135,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:446](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L446)
+[src/teams.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L488)
 
 ___
 
@@ -141,7 +151,7 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:481](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L481)
+[src/teams.scailo_pb.ts:526](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L526)
 
 ___
 
@@ -149,7 +159,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -157,7 +175,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L411)
+[src/teams.scailo_pb.ts:446](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L446)
 
 ___
 
@@ -173,7 +191,7 @@ from field: uint64 lead_user_id = 12;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:474](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L474)
+[src/teams.scailo_pb.ts:519](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L519)
 
 ___
 
@@ -189,7 +207,7 @@ from field: repeated Scailo.TeamMember list = 20;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L488)
+[src/teams.scailo_pb.ts:533](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L533)
 
 ___
 
@@ -197,7 +215,9 @@ ___
 
 • **logs**: [`LogbookLogConciseSLC`](LogbookLogConciseSLC.md)[] = `[]`
 
-Stores the logs of every operation performed on this team
+**`Description`**
+
+Comprehensive audit trail of every operation performed on this record.
 
 **`Generated`**
 
@@ -205,7 +225,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:439](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L439)
+[src/teams.scailo_pb.ts:478](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L478)
 
 ___
 
@@ -213,7 +233,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this team
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -221,7 +243,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:418](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L418)
+[src/teams.scailo_pb.ts:454](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L454)
 
 ___
 
@@ -237,7 +259,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:460](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L460)
+[src/teams.scailo_pb.ts:505](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L505)
 
 ___
 
@@ -245,7 +267,9 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this team
+**`Description`**
+
+The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
 
 **`Generated`**
 
@@ -253,7 +277,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L432)
+[src/teams.scailo_pb.ts:470](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L470)
 
 ___
 
@@ -261,7 +285,15 @@ ___
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
 
-The associated vault folder ID
+**`Description`**
+
+Link to the document storage folder.
+
+**`Example`**
+
+```ts
+15234
+```
 
 **`Generated`**
 
@@ -269,7 +301,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:453](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L453)
+[src/teams.scailo_pb.ts:498](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L498)
 
 ___
 
@@ -279,7 +311,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:497](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L497)
+[src/teams.scailo_pb.ts:542](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L542)
 
 ___
 
@@ -289,7 +321,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:495](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L495)
+[src/teams.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L540)
 
 ___
 
@@ -299,7 +331,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:496](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L496)
+[src/teams.scailo_pb.ts:541](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L541)
 
 ## Methods
 
@@ -587,7 +619,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:524](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L524)
+[src/teams.scailo_pb.ts:569](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L569)
 
 ___
 
@@ -608,7 +640,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:512](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L512)
+[src/teams.scailo_pb.ts:557](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L557)
 
 ___
 
@@ -629,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L516)
+[src/teams.scailo_pb.ts:561](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L561)
 
 ___
 
@@ -650,4 +682,4 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_pb.ts#L520)
+[src/teams.scailo_pb.ts:565](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L565)

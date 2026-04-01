@@ -66,7 +66,7 @@ Message\&lt;AssociatesList\&gt;.constructor
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:320](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L320)
+[src/associates.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L326)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.Associate list = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:318](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L318)
+[src/associates.scailo_pb.ts:324](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L324)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:327](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L327)
+[src/associates.scailo_pb.ts:333](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L333)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:325](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L325)
+[src/associates.scailo_pb.ts:331](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L331)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L326)
+[src/associates.scailo_pb.ts:332](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L332)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L343)
+[src/associates.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L349)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:331](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L331)
+[src/associates.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L337)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L335)
+[src/associates.scailo_pb.ts:341](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L341)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:339](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L339)
+[src/associates.scailo_pb.ts:345](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L345)

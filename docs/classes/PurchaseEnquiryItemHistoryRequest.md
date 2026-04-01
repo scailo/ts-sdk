@@ -67,7 +67,7 @@ Message\&lt;PurchaseEnquiryItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:953](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L953)
+[src/purchases_enquiries.scailo_pb.ts:1028](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1028)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: string name = 11;
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:951](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L951)
+[src/purchases_enquiries.scailo_pb.ts:1026](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1026)
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 purchase_enquiry_id = 10;
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:944](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L944)
+[src/purchases_enquiries.scailo_pb.ts:1019](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1019)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:960](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L960)
+[src/purchases_enquiries.scailo_pb.ts:1035](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1035)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:958](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L958)
+[src/purchases_enquiries.scailo_pb.ts:1033](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1033)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:959](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L959)
+[src/purchases_enquiries.scailo_pb.ts:1034](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1034)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:977](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L977)
+[src/purchases_enquiries.scailo_pb.ts:1052](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1052)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:965](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L965)
+[src/purchases_enquiries.scailo_pb.ts:1040](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1040)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:969](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L969)
+[src/purchases_enquiries.scailo_pb.ts:1044](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1044)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_pb.ts#L973)
+[src/purchases_enquiries.scailo_pb.ts:1048](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_pb.ts#L1048)

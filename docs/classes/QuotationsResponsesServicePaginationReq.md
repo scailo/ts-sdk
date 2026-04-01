@@ -71,7 +71,7 @@ Message\&lt;QuotationsResponsesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1533](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1533)
+[src/quotations_responses.scailo_pb.ts:1710](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1710)
 
 ## Properties
 
@@ -79,7 +79,25 @@ Message\&lt;QuotationsResponsesServicePaginationReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to return per page.
+
+**`Example`**
+
+```ts
+50
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Must be a strictly positive integer (1 or greater).
 
 **`Generated`**
 
@@ -87,7 +105,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1503](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1503)
+[src/quotations_responses.scailo_pb.ts:1663](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1663)
 
 ___
 
@@ -95,7 +113,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -103,7 +131,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1496](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1496)
+[src/quotations_responses.scailo_pb.ts:1647](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1647)
 
 ___
 
@@ -111,7 +139,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -119,7 +165,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1510](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1510)
+[src/quotations_responses.scailo_pb.ts:1679](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1679)
 
 ___
 
@@ -127,7 +173,11 @@ ___
 
 • **sortKey**: [`QUOTATION_RESPONSE_SORT_KEY`](../enums/QUOTATION_RESPONSE_SORT_KEY.md) = `QUOTATION_RESPONSE_SORT_KEY.QUOTATION_RESPONSE_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The specific field key to sort the results by.
 
 **`Generated`**
 
@@ -135,7 +185,7 @@ from field: Scailo.QUOTATION_RESPONSE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1524](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1524)
+[src/quotations_responses.scailo_pb.ts:1701](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1701)
 
 ___
 
@@ -143,7 +193,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -151,7 +211,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1517](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1517)
+[src/quotations_responses.scailo_pb.ts:1691](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1691)
 
 ___
 
@@ -167,7 +227,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1531](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1531)
+[src/quotations_responses.scailo_pb.ts:1708](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1708)
 
 ___
 
@@ -177,7 +237,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1540](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1540)
+[src/quotations_responses.scailo_pb.ts:1717](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1717)
 
 ___
 
@@ -187,7 +247,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1538](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1538)
+[src/quotations_responses.scailo_pb.ts:1715](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1715)
 
 ___
 
@@ -197,7 +257,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1539](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1539)
+[src/quotations_responses.scailo_pb.ts:1716](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1716)
 
 ## Methods
 
@@ -485,7 +545,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1561](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1561)
+[src/quotations_responses.scailo_pb.ts:1738](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1738)
 
 ___
 
@@ -506,7 +566,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1549](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1549)
+[src/quotations_responses.scailo_pb.ts:1726](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1726)
 
 ___
 
@@ -527,7 +587,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1553](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1553)
+[src/quotations_responses.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1730)
 
 ___
 
@@ -548,4 +608,4 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:1557](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_pb.ts#L1557)
+[src/quotations_responses.scailo_pb.ts:1734](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_pb.ts#L1734)

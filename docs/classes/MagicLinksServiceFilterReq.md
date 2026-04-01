@@ -79,7 +79,7 @@ Message\&lt;MagicLinksServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1127](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1127)
+[src/magic_links.scailo_pb.ts:1256](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1256)
 
 ## Properties
 
@@ -87,7 +87,25 @@ Message\&lt;MagicLinksServiceFilterReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -95,7 +113,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1041](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1041)
+[src/magic_links.scailo_pb.ts:1108](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1108)
 
 ___
 
@@ -103,7 +121,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -111,7 +147,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1076)
+[src/magic_links.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1178)
 
 ___
 
@@ -119,7 +155,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -127,7 +181,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1069](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1069)
+[src/magic_links.scailo_pb.ts:1162](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1162)
 
 ___
 
@@ -135,7 +189,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -143,7 +215,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1097](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1097)
+[src/magic_links.scailo_pb.ts:1226](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1226)
 
 ___
 
@@ -159,7 +231,7 @@ from field: uint64 expires_at_end = 31;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1125](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1125)
+[src/magic_links.scailo_pb.ts:1254](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1254)
 
 ___
 
@@ -175,7 +247,7 @@ from field: uint64 expires_at_start = 30;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1118](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1118)
+[src/magic_links.scailo_pb.ts:1247](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1247)
 
 ___
 
@@ -183,7 +255,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -191,7 +273,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1034](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1034)
+[src/magic_links.scailo_pb.ts:1092](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1092)
 
 ___
 
@@ -199,7 +281,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -207,7 +307,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1090](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1090)
+[src/magic_links.scailo_pb.ts:1210](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1210)
 
 ___
 
@@ -215,7 +315,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -223,7 +341,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1083](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1083)
+[src/magic_links.scailo_pb.ts:1194](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1194)
 
 ___
 
@@ -231,7 +349,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -239,7 +375,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1048](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1048)
+[src/magic_links.scailo_pb.ts:1124](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1124)
 
 ___
 
@@ -255,7 +391,7 @@ from field: Scailo.MAGIC_LINK_RESOURCE_TYPE resource_type = 21;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1104](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1104)
+[src/magic_links.scailo_pb.ts:1233](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1233)
 
 ___
 
@@ -271,7 +407,7 @@ from field: string resource_uuid = 22;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1111](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1111)
+[src/magic_links.scailo_pb.ts:1240](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1240)
 
 ___
 
@@ -279,7 +415,11 @@ ___
 
 • **sortKey**: [`MAGIC_LINK_SORT_KEY`](../enums/MAGIC_LINK_SORT_KEY.md) = `MAGIC_LINK_SORT_KEY.MAGIC_LINK_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -287,7 +427,7 @@ from field: Scailo.MAGIC_LINK_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1062](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1062)
+[src/magic_links.scailo_pb.ts:1146](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1146)
 
 ___
 
@@ -295,7 +435,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -303,7 +453,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1055](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1055)
+[src/magic_links.scailo_pb.ts:1136](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1136)
 
 ___
 
@@ -313,7 +463,7 @@ ___
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1134](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1134)
+[src/magic_links.scailo_pb.ts:1263](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1263)
 
 ___
 
@@ -323,7 +473,7 @@ ___
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1132](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1132)
+[src/magic_links.scailo_pb.ts:1261](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1261)
 
 ___
 
@@ -333,7 +483,7 @@ ___
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1133](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1133)
+[src/magic_links.scailo_pb.ts:1262](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1262)
 
 ## Methods
 
@@ -621,7 +771,7 @@ ___
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1163](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1163)
+[src/magic_links.scailo_pb.ts:1292](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1292)
 
 ___
 
@@ -642,7 +792,7 @@ ___
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1151](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1151)
+[src/magic_links.scailo_pb.ts:1280](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1280)
 
 ___
 
@@ -663,7 +813,7 @@ ___
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1155](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1155)
+[src/magic_links.scailo_pb.ts:1284](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1284)
 
 ___
 
@@ -684,4 +834,4 @@ ___
 
 #### Defined in
 
-[src/magic_links.scailo_pb.ts:1159](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_pb.ts#L1159)
+[src/magic_links.scailo_pb.ts:1288](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_pb.ts#L1288)

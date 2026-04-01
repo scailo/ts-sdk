@@ -70,7 +70,7 @@ Message\&lt;AssociatesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:870](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L870)
+[src/associates.scailo_pb.ts:944](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L944)
 
 ## Properties
 
@@ -78,7 +78,25 @@ Message\&lt;AssociatesServicePaginationReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to return per page.
+
+**`Example`**
+
+```ts
+50
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Must be a strictly positive integer (1 or greater).
 
 **`Generated`**
 
@@ -86,7 +104,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:847](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L847)
+[src/associates.scailo_pb.ts:904](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L904)
 
 ___
 
@@ -94,7 +112,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -102,7 +130,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:840](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L840)
+[src/associates.scailo_pb.ts:888](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L888)
 
 ___
 
@@ -110,7 +138,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -118,7 +164,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:854](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L854)
+[src/associates.scailo_pb.ts:920](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L920)
 
 ___
 
@@ -126,7 +172,11 @@ ___
 
 • **sortKey**: [`ASSOCIATE_SORT_KEY`](../enums/ASSOCIATE_SORT_KEY.md) = `ASSOCIATE_SORT_KEY.ASSOCIATE_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The specific field key to sort the results by.
 
 **`Generated`**
 
@@ -134,7 +184,7 @@ from field: Scailo.ASSOCIATE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:868](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L868)
+[src/associates.scailo_pb.ts:942](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L942)
 
 ___
 
@@ -142,7 +192,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -150,7 +210,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:861](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L861)
+[src/associates.scailo_pb.ts:932](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L932)
 
 ___
 
@@ -160,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:877](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L877)
+[src/associates.scailo_pb.ts:951](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L951)
 
 ___
 
@@ -170,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:875](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L875)
+[src/associates.scailo_pb.ts:949](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L949)
 
 ___
 
@@ -180,7 +240,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:876](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L876)
+[src/associates.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L950)
 
 ## Methods
 
@@ -468,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:897](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L897)
+[src/associates.scailo_pb.ts:971](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L971)
 
 ___
 
@@ -489,7 +549,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:885](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L885)
+[src/associates.scailo_pb.ts:959](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L959)
 
 ___
 
@@ -510,7 +570,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:889](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L889)
+[src/associates.scailo_pb.ts:963](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L963)
 
 ___
 
@@ -531,4 +591,4 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:893](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L893)
+[src/associates.scailo_pb.ts:967](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L967)

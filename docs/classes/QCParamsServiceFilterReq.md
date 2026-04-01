@@ -84,7 +84,7 @@ Message\&lt;QCParamsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:685](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L685)
+[src/qc_params.scailo_pb.ts:885](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L885)
 
 ## Properties
 
@@ -92,7 +92,25 @@ Message\&lt;QCParamsServiceFilterReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -100,7 +118,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:648](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L648)
+[src/qc_params.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L821)
 
 ___
 
@@ -108,7 +126,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -116,7 +152,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L641)
+[src/qc_params.scailo_pb.ts:805](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L805)
 
 ___
 
@@ -124,7 +160,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -132,7 +186,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:634](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L634)
+[src/qc_params.scailo_pb.ts:789](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L789)
 
 ___
 
@@ -140,7 +194,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -148,7 +220,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:655](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L655)
+[src/qc_params.scailo_pb.ts:837](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L837)
 
 ___
 
@@ -164,7 +236,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:683](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L683)
+[src/qc_params.scailo_pb.ts:883](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L883)
 
 ___
 
@@ -172,7 +244,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -180,7 +270,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L669)
+[src/qc_params.scailo_pb.ts:869](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L869)
 
 ___
 
@@ -188,7 +278,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -196,7 +304,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L662)
+[src/qc_params.scailo_pb.ts:853](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L853)
 
 ___
 
@@ -204,7 +312,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -212,7 +338,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:564](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L564)
+[src/qc_params.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L643)
 
 ___
 
@@ -220,7 +346,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -228,7 +372,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:599](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L599)
+[src/qc_params.scailo_pb.ts:713](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L713)
 
 ___
 
@@ -236,7 +380,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -244,7 +406,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:592](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L592)
+[src/qc_params.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L697)
 
 ___
 
@@ -252,7 +414,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -260,7 +440,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L620)
+[src/qc_params.scailo_pb.ts:761](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L761)
 
 ___
 
@@ -268,7 +448,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -276,7 +466,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:557](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L557)
+[src/qc_params.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L627)
 
 ___
 
@@ -284,7 +474,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -292,7 +500,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L613)
+[src/qc_params.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L745)
 
 ___
 
@@ -300,7 +508,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -308,7 +534,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L606)
+[src/qc_params.scailo_pb.ts:729](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L729)
 
 ___
 
@@ -324,7 +550,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L676)
+[src/qc_params.scailo_pb.ts:876](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L876)
 
 ___
 
@@ -332,7 +558,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -340,7 +584,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:571](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L571)
+[src/qc_params.scailo_pb.ts:659](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L659)
 
 ___
 
@@ -348,7 +592,11 @@ ___
 
 • **sortKey**: [`QC_PARAM_SORT_KEY`](../enums/QC_PARAM_SORT_KEY.md) = `QC_PARAM_SORT_KEY.QC_PARAM_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -356,7 +604,7 @@ from field: Scailo.QC_PARAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:585](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L585)
+[src/qc_params.scailo_pb.ts:681](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L681)
 
 ___
 
@@ -364,7 +612,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -372,7 +630,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:578](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L578)
+[src/qc_params.scailo_pb.ts:671](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L671)
 
 ___
 
@@ -380,7 +638,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this qc param
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -388,7 +656,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L627)
+[src/qc_params.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L773)
 
 ___
 
@@ -398,7 +666,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:692](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L692)
+[src/qc_params.scailo_pb.ts:892](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L892)
 
 ___
 
@@ -408,7 +676,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L690)
+[src/qc_params.scailo_pb.ts:890](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L890)
 
 ___
 
@@ -418,7 +686,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:691](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L691)
+[src/qc_params.scailo_pb.ts:891](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L891)
 
 ## Methods
 
@@ -706,7 +974,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:726](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L726)
+[src/qc_params.scailo_pb.ts:926](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L926)
 
 ___
 
@@ -727,7 +995,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:714](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L714)
+[src/qc_params.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L914)
 
 ___
 
@@ -748,7 +1016,7 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L718)
+[src/qc_params.scailo_pb.ts:918](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L918)
 
 ___
 
@@ -769,4 +1037,4 @@ ___
 
 #### Defined in
 
-[src/qc_params.scailo_pb.ts:722](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_pb.ts#L722)
+[src/qc_params.scailo_pb.ts:922](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_pb.ts#L922)

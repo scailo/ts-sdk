@@ -73,7 +73,7 @@ Message\&lt;StoresServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L246)
+[src/stores.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L260)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:223](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L223)
+[src/stores.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L237)
 
 ___
 
@@ -105,7 +105,7 @@ from field: string description = 12;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:230](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L230)
+[src/stores.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L244)
 
 ___
 
@@ -121,7 +121,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L202)
+[src/stores.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L211)
 
 ___
 
@@ -137,7 +137,7 @@ from field: string incharge_username = 13;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L237)
+[src/stores.scailo_pb.ts:251](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L251)
 
 ___
 
@@ -153,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L216)
+[src/stores.scailo_pb.ts:230](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L230)
 
 ___
 
@@ -161,7 +161,17 @@ ___
 
 • **notifyUsers**: `boolean` = `false`
 
-Optional boolean value that stores if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+**`Optional`**
+
+**`Description`**
+
+Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -169,7 +179,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L209)
+[src/stores.scailo_pb.ts:223](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L223)
 
 ___
 
@@ -185,7 +195,7 @@ from field: string phone = 14;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L244)
+[src/stores.scailo_pb.ts:258](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L258)
 
 ___
 
@@ -201,7 +211,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L195)
+[src/stores.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L204)
 
 ___
 
@@ -211,7 +221,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L253)
+[src/stores.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L267)
 
 ___
 
@@ -221,7 +231,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:251](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L251)
+[src/stores.scailo_pb.ts:265](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L265)
 
 ___
 
@@ -231,7 +241,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L252)
+[src/stores.scailo_pb.ts:266](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L266)
 
 ## Methods
 
@@ -519,7 +529,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L276)
+[src/stores.scailo_pb.ts:290](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L290)
 
 ___
 
@@ -540,7 +550,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L264)
+[src/stores.scailo_pb.ts:278](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L278)
 
 ___
 
@@ -561,7 +571,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L268)
+[src/stores.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L282)
 
 ___
 
@@ -582,4 +592,4 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_pb.ts#L272)
+[src/stores.scailo_pb.ts:286](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_pb.ts#L286)

@@ -71,7 +71,7 @@ Message\&lt;GoalsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1398](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1398)
+[src/goals.scailo_pb.ts:1554](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1554)
 
 ## Properties
 
@@ -79,7 +79,25 @@ Message\&lt;GoalsServicePaginationReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to return per page.
+
+**`Example`**
+
+```ts
+50
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Must be a strictly positive integer (1 or greater).
 
 **`Generated`**
 
@@ -87,7 +105,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1368](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1368)
+[src/goals.scailo_pb.ts:1507](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1507)
 
 ___
 
@@ -95,7 +113,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -103,7 +131,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1361](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1361)
+[src/goals.scailo_pb.ts:1491](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1491)
 
 ___
 
@@ -111,7 +139,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -119,7 +165,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1375](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1375)
+[src/goals.scailo_pb.ts:1523](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1523)
 
 ___
 
@@ -127,7 +173,11 @@ ___
 
 • **sortKey**: [`GOAL_SORT_KEY`](../enums/GOAL_SORT_KEY.md) = `GOAL_SORT_KEY.GOAL_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The specific field key to sort the results by.
 
 **`Generated`**
 
@@ -135,7 +185,7 @@ from field: Scailo.GOAL_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1389](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1389)
+[src/goals.scailo_pb.ts:1545](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1545)
 
 ___
 
@@ -143,7 +193,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -151,7 +211,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1382](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1382)
+[src/goals.scailo_pb.ts:1535](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1535)
 
 ___
 
@@ -167,7 +227,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1396](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1396)
+[src/goals.scailo_pb.ts:1552](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1552)
 
 ___
 
@@ -177,7 +237,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1405](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1405)
+[src/goals.scailo_pb.ts:1561](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1561)
 
 ___
 
@@ -187,7 +247,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1403](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1403)
+[src/goals.scailo_pb.ts:1559](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1559)
 
 ___
 
@@ -197,7 +257,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1404](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1404)
+[src/goals.scailo_pb.ts:1560](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1560)
 
 ## Methods
 
@@ -485,7 +545,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1426](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1426)
+[src/goals.scailo_pb.ts:1582](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1582)
 
 ___
 
@@ -506,7 +566,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1414)
+[src/goals.scailo_pb.ts:1570](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1570)
 
 ___
 
@@ -527,7 +587,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1418](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1418)
+[src/goals.scailo_pb.ts:1574](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1574)
 
 ___
 
@@ -548,4 +608,4 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1422](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1422)
+[src/goals.scailo_pb.ts:1578](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1578)

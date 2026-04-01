@@ -83,7 +83,7 @@ Message\&lt;LocationsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:966](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L966)
+[src/locations.scailo_pb.ts:1236](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1236)
 
 ## Properties
 
@@ -91,7 +91,25 @@ Message\&lt;LocationsServiceCountReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -99,7 +117,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:908](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L908)
+[src/locations.scailo_pb.ts:1169](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1169)
 
 ___
 
@@ -107,7 +125,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -115,7 +151,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:901](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L901)
+[src/locations.scailo_pb.ts:1153](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1153)
 
 ___
 
@@ -123,7 +159,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -131,7 +185,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:894](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L894)
+[src/locations.scailo_pb.ts:1137](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1137)
 
 ___
 
@@ -139,7 +193,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -147,7 +219,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:915](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L915)
+[src/locations.scailo_pb.ts:1185](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1185)
 
 ___
 
@@ -163,7 +235,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:929](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L929)
+[src/locations.scailo_pb.ts:1199](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1199)
 
 ___
 
@@ -171,7 +243,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -179,7 +269,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:859](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L859)
+[src/locations.scailo_pb.ts:1061](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1061)
 
 ___
 
@@ -187,7 +277,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -195,7 +303,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:852](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L852)
+[src/locations.scailo_pb.ts:1045](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1045)
 
 ___
 
@@ -211,7 +319,7 @@ from field: string email = 22;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:936](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L936)
+[src/locations.scailo_pb.ts:1206](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1206)
 
 ___
 
@@ -219,7 +327,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -227,7 +353,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:880](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L880)
+[src/locations.scailo_pb.ts:1109](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1109)
 
 ___
 
@@ -243,7 +369,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:964](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L964)
+[src/locations.scailo_pb.ts:1234](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1234)
 
 ___
 
@@ -251,7 +377,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -259,7 +395,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:845](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L845)
+[src/locations.scailo_pb.ts:1029](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1029)
 
 ___
 
@@ -275,7 +411,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 25;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:957](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L957)
+[src/locations.scailo_pb.ts:1227](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1227)
 
 ___
 
@@ -283,7 +419,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -291,7 +445,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:873](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L873)
+[src/locations.scailo_pb.ts:1093](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1093)
 
 ___
 
@@ -299,7 +453,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -307,7 +479,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:866](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L866)
+[src/locations.scailo_pb.ts:1077](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1077)
 
 ___
 
@@ -323,7 +495,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:922](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L922)
+[src/locations.scailo_pb.ts:1192](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1192)
 
 ___
 
@@ -339,7 +511,7 @@ from field: uint64 parent_location_id = 24;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L950)
+[src/locations.scailo_pb.ts:1220](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1220)
 
 ___
 
@@ -355,7 +527,7 @@ from field: string phone = 23;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:943](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L943)
+[src/locations.scailo_pb.ts:1213](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1213)
 
 ___
 
@@ -363,7 +535,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this location
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -371,7 +553,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:887](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L887)
+[src/locations.scailo_pb.ts:1121](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1121)
 
 ___
 
@@ -381,7 +563,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L973)
+[src/locations.scailo_pb.ts:1243](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1243)
 
 ___
 
@@ -391,7 +573,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:971](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L971)
+[src/locations.scailo_pb.ts:1241](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1241)
 
 ___
 
@@ -401,7 +583,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:972](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L972)
+[src/locations.scailo_pb.ts:1242](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1242)
 
 ## Methods
 
@@ -689,7 +871,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L1006)
+[src/locations.scailo_pb.ts:1276](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1276)
 
 ___
 
@@ -710,7 +892,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:994](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L994)
+[src/locations.scailo_pb.ts:1264](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1264)
 
 ___
 
@@ -731,7 +913,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:998](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L998)
+[src/locations.scailo_pb.ts:1268](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1268)
 
 ___
 
@@ -752,4 +934,4 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:1002](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L1002)
+[src/locations.scailo_pb.ts:1272](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L1272)

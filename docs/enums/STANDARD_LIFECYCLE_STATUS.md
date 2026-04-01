@@ -2,7 +2,11 @@
 
 # Enumeration: STANDARD\_LIFECYCLE\_STATUS
 
-Describes the standard lifecycle status of each record
+Describes the standard lifecycle status of each record.
+* Status Transitions Scenarios:
+1. Happy Path: CREATE -> PREVERIFY -> VERIFIED -> STANDING -> COMPLETED
+2. Revision Path: CREATE -> PREVERIFY -> REVISION -> HALTED -> DISCARDED -> PREVERIFY -> VERIFIED -> HALTED -> DISCARDED
+3. Draft Path: DRAFT -> PREVERIFY -> HALTED -> DISCARDED -> PREVERIFY -> VERIFIED -> REVISION -> PREVERIFY -> VERIFIED -> STANDING -> COMPLETED
 
 **`Generated`**
 
@@ -28,7 +32,7 @@ from enum Scailo.STANDARD_LIFECYCLE_STATUS
 
 • **ANY\_UNSPECIFIED** = ``0``
 
-Use this only in filter and search queries so as to retrieve all the records regardless of the status that they are in
+Use this only in filter and search queries to retrieve all records regardless of status.
 
 **`Generated`**
 
@@ -36,7 +40,7 @@ from enum value: ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:48](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L48)
+[src/base.scailo_pb.ts:52](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L52)
 
 ___
 
@@ -44,7 +48,7 @@ ___
 
 • **COMPLETED** = ``7``
 
-The resource has been marked as completed
+The resource has been finalized/processed.
 
 **`Generated`**
 
@@ -52,7 +56,7 @@ from enum value: COMPLETED = 7;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:97](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L97)
+[src/base.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L101)
 
 ___
 
@@ -60,7 +64,7 @@ ___
 
 • **DISCARDED** = ``8``
 
-The resource has been discarded
+The resource has been permanently cancelled.
 
 **`Generated`**
 
@@ -68,7 +72,7 @@ from enum value: DISCARDED = 8;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:104](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L104)
+[src/base.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L108)
 
 ___
 
@@ -76,7 +80,7 @@ ___
 
 • **DRAFT** = ``2``
 
-The resource has been saved as a draft
+The resource has been saved as a draft and is not yet in the workflow.
 
 **`Generated`**
 
@@ -84,7 +88,7 @@ from enum value: DRAFT = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:62](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L62)
+[src/base.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L66)
 
 ___
 
@@ -92,7 +96,7 @@ ___
 
 • **HALTED** = ``6``
 
-The resource has been halted
+The resource processing has been temporarily paused.
 
 **`Generated`**
 
@@ -100,7 +104,7 @@ from enum value: HALTED = 6;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:90](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L90)
+[src/base.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L94)
 
 ___
 
@@ -108,7 +112,7 @@ ___
 
 • **PREVERIFY** = ``1``
 
-The resource has just been created, and has been sent for verification
+The resource has just been created or restored and is awaiting verification.
 
 **`Generated`**
 
@@ -116,7 +120,7 @@ from enum value: PREVERIFY = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:55](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L55)
+[src/base.scailo_pb.ts:59](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L59)
 
 ___
 
@@ -124,7 +128,7 @@ ___
 
 • **REVISION** = ``5``
 
-The resource has been sent for revision
+The resource has been sent back for corrections.
 
 **`Generated`**
 
@@ -132,7 +136,7 @@ from enum value: REVISION = 5;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:83](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L83)
+[src/base.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L87)
 
 ___
 
@@ -140,7 +144,7 @@ ___
 
 • **STANDING** = ``4``
 
-The resource has been approved
+The resource has been approved. It is now read-only.
 
 **`Generated`**
 
@@ -148,7 +152,7 @@ from enum value: STANDING = 4;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:76](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L76)
+[src/base.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L80)
 
 ___
 
@@ -156,7 +160,7 @@ ___
 
 • **VERIFIED** = ``3``
 
-The resource has been verified
+The resource has been verified and is ready for final approval.
 
 **`Generated`**
 
@@ -164,4 +168,4 @@ from enum value: VERIFIED = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:69](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L69)
+[src/base.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L73)

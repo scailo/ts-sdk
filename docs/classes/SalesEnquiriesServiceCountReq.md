@@ -88,7 +88,7 @@ Message\&lt;SalesEnquiriesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2154](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2154)
+[src/sales_enquiries.scailo_pb.ts:2600](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2600)
 
 ## Properties
 
@@ -96,7 +96,25 @@ Message\&lt;SalesEnquiriesServiceCountReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -104,7 +122,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2061](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2061)
+[src/sales_enquiries.scailo_pb.ts:2462](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2462)
 
 ___
 
@@ -112,7 +130,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -120,7 +156,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2054](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2054)
+[src/sales_enquiries.scailo_pb.ts:2446](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2446)
 
 ___
 
@@ -128,7 +164,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -136,7 +190,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2047](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2047)
+[src/sales_enquiries.scailo_pb.ts:2430](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2430)
 
 ___
 
@@ -144,7 +198,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -152,7 +224,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2068](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2068)
+[src/sales_enquiries.scailo_pb.ts:2478](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2478)
 
 ___
 
@@ -168,7 +240,7 @@ from field: uint64 buyer_client_id = 23;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2110](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2110)
+[src/sales_enquiries.scailo_pb.ts:2556](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2556)
 
 ___
 
@@ -176,7 +248,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -184,7 +274,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2082](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2082)
+[src/sales_enquiries.scailo_pb.ts:2510](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2510)
 
 ___
 
@@ -192,7 +282,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -200,7 +308,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2075](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2075)
+[src/sales_enquiries.scailo_pb.ts:2494](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2494)
 
 ___
 
@@ -216,7 +324,7 @@ from field: uint64 consignee_client_id = 22;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2103](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2103)
+[src/sales_enquiries.scailo_pb.ts:2549](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2549)
 
 ___
 
@@ -224,7 +332,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -232,7 +358,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2012](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2012)
+[src/sales_enquiries.scailo_pb.ts:2354](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2354)
 
 ___
 
@@ -240,7 +366,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -248,7 +392,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2005](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2005)
+[src/sales_enquiries.scailo_pb.ts:2338](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2338)
 
 ___
 
@@ -264,7 +408,7 @@ from field: uint64 currency_id = 25;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2124](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2124)
+[src/sales_enquiries.scailo_pb.ts:2570](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2570)
 
 ___
 
@@ -280,7 +424,7 @@ from field: string delivery_date_end = 43;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2145](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2145)
+[src/sales_enquiries.scailo_pb.ts:2591](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2591)
 
 ___
 
@@ -296,7 +440,7 @@ from field: string delivery_date_exact = 41;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2131](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2131)
+[src/sales_enquiries.scailo_pb.ts:2577](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2577)
 
 ___
 
@@ -312,7 +456,7 @@ from field: string delivery_date_start = 42;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2138](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2138)
+[src/sales_enquiries.scailo_pb.ts:2584](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2584)
 
 ___
 
@@ -320,7 +464,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -328,7 +490,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2033](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2033)
+[src/sales_enquiries.scailo_pb.ts:2402](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2402)
 
 ___
 
@@ -336,7 +498,23 @@ ___
 
 • **finalRefNumber**: `string` = `""`
 
-The unique reference number that has been automatically generated
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the system-generated ref number.
+
+**`Example`**
+
+```ts
+"ABS-2023-X9Z2"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -344,7 +522,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2096](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2096)
+[src/sales_enquiries.scailo_pb.ts:2542](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2542)
 
 ___
 
@@ -360,7 +538,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2152)
+[src/sales_enquiries.scailo_pb.ts:2598](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2598)
 
 ___
 
@@ -368,7 +546,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -376,7 +564,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1998](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L1998)
+[src/sales_enquiries.scailo_pb.ts:2322](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2322)
 
 ___
 
@@ -384,7 +572,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -392,7 +598,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2026](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2026)
+[src/sales_enquiries.scailo_pb.ts:2386](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2386)
 
 ___
 
@@ -400,7 +606,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -408,7 +632,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2019](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2019)
+[src/sales_enquiries.scailo_pb.ts:2370](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2370)
 
 ___
 
@@ -424,7 +648,7 @@ from field: string priority = 24;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2117](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2117)
+[src/sales_enquiries.scailo_pb.ts:2563](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2563)
 
 ___
 
@@ -432,7 +656,23 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference ID of the sales enquiry
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the user-defined reference ID.
+
+**`Example`**
+
+```ts
+"ABS-2023-001"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -440,7 +680,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2089](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2089)
+[src/sales_enquiries.scailo_pb.ts:2526](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2526)
 
 ___
 
@@ -448,7 +688,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this sales enquiry
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -456,7 +706,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2040](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2040)
+[src/sales_enquiries.scailo_pb.ts:2414](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2414)
 
 ___
 
@@ -466,7 +716,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2161](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2161)
+[src/sales_enquiries.scailo_pb.ts:2607](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2607)
 
 ___
 
@@ -476,7 +726,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2159](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2159)
+[src/sales_enquiries.scailo_pb.ts:2605](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2605)
 
 ___
 
@@ -486,7 +736,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2160](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2160)
+[src/sales_enquiries.scailo_pb.ts:2606](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2606)
 
 ## Methods
 
@@ -774,7 +1024,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2199](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2199)
+[src/sales_enquiries.scailo_pb.ts:2645](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2645)
 
 ___
 
@@ -795,7 +1045,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2187](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2187)
+[src/sales_enquiries.scailo_pb.ts:2633](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2633)
 
 ___
 
@@ -816,7 +1066,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2191](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2191)
+[src/sales_enquiries.scailo_pb.ts:2637](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2637)
 
 ___
 
@@ -837,4 +1087,4 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2195](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_pb.ts#L2195)
+[src/sales_enquiries.scailo_pb.ts:2641](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_pb.ts#L2641)

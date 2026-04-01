@@ -66,7 +66,7 @@ Message\&lt;LeavesLogsList\&gt;.constructor
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L337)
+[src/leaves_logs.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L349)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.LeaveLog list = 1;
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L335)
+[src/leaves_logs.scailo_pb.ts:347](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L347)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L344)
+[src/leaves_logs.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L356)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L342)
+[src/leaves_logs.scailo_pb.ts:354](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L354)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L343)
+[src/leaves_logs.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L355)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L360)
+[src/leaves_logs.scailo_pb.ts:372](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L372)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:348](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L348)
+[src/leaves_logs.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L360)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L352)
+[src/leaves_logs.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L364)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/leaves_logs.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_pb.ts#L356)
+[src/leaves_logs.scailo_pb.ts:368](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_pb.ts#L368)

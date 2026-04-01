@@ -74,7 +74,7 @@ Message\&lt;PayrollParam\&gt;.constructor
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:319](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L319)
+[src/payroll_params.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L343)
 
 ## Properties
 
@@ -82,7 +82,9 @@ Message\&lt;PayrollParam\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -90,7 +92,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L275)
+[src/payroll_params.scailo_pb.ts:294](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L294)
 
 ___
 
@@ -106,7 +108,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L310)
+[src/payroll_params.scailo_pb.ts:334](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L334)
 
 ___
 
@@ -114,7 +116,15 @@ ___
 
 • **completedOn**: `bigint` = `protoInt64.zero`
 
-The timestamp of when this payroll param was marked as completed
+**`Description`**
+
+UNIX timestamp of when the record transitioned to the COMPLETED state.
+
+**`Example`**
+
+```ts
+1698400000
+```
 
 **`Generated`**
 
@@ -122,7 +132,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:296](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L296)
+[src/payroll_params.scailo_pb.ts:320](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L320)
 
 ___
 
@@ -138,7 +148,7 @@ from field: string description = 12;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:317](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L317)
+[src/payroll_params.scailo_pb.ts:341](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L341)
 
 ___
 
@@ -146,7 +156,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -154,7 +172,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:261](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L261)
+[src/payroll_params.scailo_pb.ts:278](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L278)
 
 ___
 
@@ -162,7 +180,9 @@ ___
 
 • **logs**: [`LogbookLogConciseSLC`](LogbookLogConciseSLC.md)[] = `[]`
 
-Stores the logs of every operation performed on this payroll param
+**`Description`**
+
+Comprehensive audit trail of every operation performed on this record.
 
 **`Generated`**
 
@@ -170,7 +190,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L289)
+[src/payroll_params.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L310)
 
 ___
 
@@ -178,7 +198,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this payroll param
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -186,7 +208,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L268)
+[src/payroll_params.scailo_pb.ts:286](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L286)
 
 ___
 
@@ -202,7 +224,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:303](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L303)
+[src/payroll_params.scailo_pb.ts:327](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L327)
 
 ___
 
@@ -210,7 +232,9 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this payroll param
+**`Description`**
+
+The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
 
 **`Generated`**
 
@@ -218,7 +242,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L282)
+[src/payroll_params.scailo_pb.ts:302](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L302)
 
 ___
 
@@ -228,7 +252,7 @@ ___
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L326)
+[src/payroll_params.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L350)
 
 ___
 
@@ -238,7 +262,7 @@ ___
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:324](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L324)
+[src/payroll_params.scailo_pb.ts:348](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L348)
 
 ___
 
@@ -248,7 +272,7 @@ ___
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:325](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L325)
+[src/payroll_params.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L349)
 
 ## Methods
 
@@ -536,7 +560,7 @@ ___
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L350)
+[src/payroll_params.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L374)
 
 ___
 
@@ -557,7 +581,7 @@ ___
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:338](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L338)
+[src/payroll_params.scailo_pb.ts:362](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L362)
 
 ___
 
@@ -578,7 +602,7 @@ ___
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L342)
+[src/payroll_params.scailo_pb.ts:366](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L366)
 
 ___
 
@@ -599,4 +623,4 @@ ___
 
 #### Defined in
 
-[src/payroll_params.scailo_pb.ts:346](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_pb.ts#L346)
+[src/payroll_params.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_pb.ts#L370)

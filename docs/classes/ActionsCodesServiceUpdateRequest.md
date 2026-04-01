@@ -2,7 +2,13 @@
 
 # Class: ActionsCodesServiceUpdateRequest
 
-Describes the parameters necessary to update a record
+Request message for updating an existing Action Code record.
+Only applicable for records in `DRAFT` or `REVISION` states.
+This message allows for modifying the visual properties, naming, and
+metadata of an established Action Code.
+
+**Note:** Only fields provided in the request will typically be updated.
+The unique system ID is required to locate the target record.
 
 **`Generated`**
 
@@ -72,7 +78,7 @@ Message\&lt;ActionsCodesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L247)
+[src/actions_codes.scailo_pb.ts:394](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L394)
 
 ## Properties
 
@@ -80,7 +86,25 @@ Message\&lt;ActionsCodesServiceUpdateRequest\&gt;.constructor
 
 • **bgColor**: `string` = `""`
 
-The background color that is displayed for easy recognition
+**`Optional`**
+
+**`Description`**
+
+The updated Hexadecimal background color.
+
+**`Example`**
+
+```ts
+"#FFFF00"
+```
+
+**`Regex`**
+
+"^#[0-9a-fA-F]{6}$"
+
+**`Format`**
+
+Must be a 6-digit hex code starting with #.
 
 **`Generated`**
 
@@ -88,7 +112,7 @@ from field: string bg_color = 13;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L238)
+[src/actions_codes.scailo_pb.ts:376](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L376)
 
 ___
 
@@ -96,7 +120,25 @@ ___
 
 • **description**: `string` = `""`
 
-The description of the action code
+**`Optional`**
+
+**`Description`**
+
+An updated detailed description of the action code's purpose.
+
+**`Example`**
+
+```ts
+"Revised to include high-priority hardware failures."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -104,7 +146,7 @@ from field: string description = 18;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L245)
+[src/actions_codes.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L392)
 
 ___
 
@@ -112,7 +154,25 @@ ___
 
 • **fgColor**: `string` = `""`
 
-The color of the text that is displayed for easy recognition
+**`Optional`**
+
+**`Description`**
+
+The updated Hexadecimal foreground (text) color.
+
+**`Example`**
+
+```ts
+"#000000"
+```
+
+**`Regex`**
+
+"^#[0-9a-fA-F]{6}$"
+
+**`Format`**
+
+Must be a 6-digit hex code starting with #.
 
 **`Generated`**
 
@@ -120,7 +180,7 @@ from field: string fg_color = 12;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L231)
+[src/actions_codes.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L360)
 
 ___
 
@@ -128,7 +188,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique system identifier of the Action Code to be updated. Must be a value greater than `0`.
+
+**`Example`**
+
+```ts
+402
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Must be a strictly positive integer (1 or greater).
 
 **`Generated`**
 
@@ -136,7 +214,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L210)
+[src/actions_codes.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L316)
 
 ___
 
@@ -144,7 +222,25 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the action code
+**`Mandatory`**
+
+**`Description`**
+
+The updated display name of the action code. Must contain at least 1 character.
+
+**`Example`**
+
+```ts
+"Emergency Maintenance"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -152,7 +248,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L224)
+[src/actions_codes.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L344)
 
 ___
 
@@ -160,7 +256,17 @@ ___
 
 • **notifyUsers**: `boolean` = `false`
 
-Optional boolean value that actions codes if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+**`Optional`**
+
+**`Description`**
+
+Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -168,7 +274,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L217)
+[src/actions_codes.scailo_pb.ts:328](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L328)
 
 ___
 
@@ -176,7 +282,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-ActionsCodes any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for this specific update. Captured in the version history for administrative tracking.
+
+**`Example`**
+
+```ts
+"Updating brand colors to match new UI guidelines."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -184,7 +308,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L203)
+[src/actions_codes.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L300)
 
 ___
 
@@ -194,7 +318,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L254)
+[src/actions_codes.scailo_pb.ts:401](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L401)
 
 ___
 
@@ -204,7 +328,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L252)
+[src/actions_codes.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L399)
 
 ___
 
@@ -214,7 +338,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L253)
+[src/actions_codes.scailo_pb.ts:400](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L400)
 
 ## Methods
 
@@ -502,7 +626,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L276)
+[src/actions_codes.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L423)
 
 ___
 
@@ -523,7 +647,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L264)
+[src/actions_codes.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L411)
 
 ___
 
@@ -544,7 +668,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L268)
+[src/actions_codes.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L415)
 
 ___
 
@@ -565,4 +689,4 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L272)
+[src/actions_codes.scailo_pb.ts:419](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L419)

@@ -73,7 +73,7 @@ Message\&lt;VendorUser\&gt;.constructor
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2327](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2327)
+[src/vendors.scailo_pb.ts:2744](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2744)
 
 ## Properties
 
@@ -81,7 +81,9 @@ Message\&lt;VendorUser\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -89,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2290](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2290)
+[src/vendors.scailo_pb.ts:2706](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2706)
 
 ___
 
@@ -105,7 +107,7 @@ from field: uint64 associate_id = 12;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2325](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2325)
+[src/vendors.scailo_pb.ts:2742](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2742)
 
 ___
 
@@ -113,7 +115,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -121,7 +131,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2276](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2276)
+[src/vendors.scailo_pb.ts:2690](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2690)
 
 ___
 
@@ -129,7 +139,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this vendor
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -137,7 +149,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2283](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2283)
+[src/vendors.scailo_pb.ts:2698](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2698)
 
 ___
 
@@ -145,7 +157,9 @@ ___
 
 • **needApproval**: `boolean` = `false`
 
-Denotes if this record requires approval (or has been approved)
+**`Description`**
+
+The approval state of the record
 
 **`Generated`**
 
@@ -153,7 +167,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2297](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2297)
+[src/vendors.scailo_pb.ts:2714](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2714)
 
 ___
 
@@ -169,7 +183,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2304](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2304)
+[src/vendors.scailo_pb.ts:2721](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2721)
 
 ___
 
@@ -185,7 +199,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2318](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2318)
+[src/vendors.scailo_pb.ts:2735](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2735)
 
 ___
 
@@ -201,7 +215,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2311](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2311)
+[src/vendors.scailo_pb.ts:2728](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2728)
 
 ___
 
@@ -211,7 +225,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2334](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2334)
+[src/vendors.scailo_pb.ts:2751](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2751)
 
 ___
 
@@ -221,7 +235,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2332](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2332)
+[src/vendors.scailo_pb.ts:2749](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2749)
 
 ___
 
@@ -231,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2333](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2333)
+[src/vendors.scailo_pb.ts:2750](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2750)
 
 ## Methods
 
@@ -519,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2357](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2357)
+[src/vendors.scailo_pb.ts:2774](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2774)
 
 ___
 
@@ -540,7 +554,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2345](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2345)
+[src/vendors.scailo_pb.ts:2762](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2762)
 
 ___
 
@@ -561,7 +575,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2349](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2349)
+[src/vendors.scailo_pb.ts:2766](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2766)
 
 ___
 
@@ -582,4 +596,4 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2353](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_pb.ts#L2353)
+[src/vendors.scailo_pb.ts:2770](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L2770)

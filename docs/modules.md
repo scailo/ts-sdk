@@ -3759,7 +3759,9 @@
 
 • `Const` **AbsencesService**: `Object`
 
-Describes the common methods applicable on each absence
+The AbsencesService manages the full lifecycle of employee absence records.
+It provides standard CRUD operations alongside a robust state machine for
+HR verification, manager approval, and completion.
 
 **`Generated`**
 
@@ -3914,7 +3916,7 @@ from service Scailo.AbsencesService
 
 #### Defined in
 
-[src/absences.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_connect.ts#L17)
+[src/absences.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_connect.ts#L19)
 
 ___
 
@@ -3922,7 +3924,10 @@ ___
 
 • `Const` **ActionsCodesService**: `Object`
 
-Describes the common methods applicable on each action code
+The ActionsCodesService manages the full lifecycle of action code records.
+It provides standard CRUD operations alongside a robust state machine for
+classification of specific activities, events, or status changes
+within the system, often organized in a hierarchical (tree) structure.
 
 **`Generated`**
 
@@ -4067,7 +4072,7 @@ from service Scailo.ActionsCodesService
 
 #### Defined in
 
-[src/actions_codes.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_connect.ts#L16)
+[src/actions_codes.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_connect.ts#L19)
 
 ___
 
@@ -4225,7 +4230,7 @@ from service Scailo.ActivitiesGroupsService
 
 #### Defined in
 
-[src/activities_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_groups.scailo_connect.ts#L16)
+[src/activities_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_groups.scailo_connect.ts#L16)
 
 ___
 
@@ -4528,7 +4533,7 @@ from service Scailo.ActivitiesService
 
 #### Defined in
 
-[src/activities.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities.scailo_connect.ts#L16)
+[src/activities.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_connect.ts#L16)
 
 ___
 
@@ -4681,7 +4686,7 @@ from service Scailo.ActivitiesStatusesService
 
 #### Defined in
 
-[src/activities_statuses.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_statuses.scailo_connect.ts#L16)
+[src/activities_statuses.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_statuses.scailo_connect.ts#L16)
 
 ___
 
@@ -4834,7 +4839,7 @@ from service Scailo.ActivitiesTagsService
 
 #### Defined in
 
-[src/activities_tags.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/activities_tags.scailo_connect.ts#L16)
+[src/activities_tags.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities_tags.scailo_connect.ts#L16)
 
 ___
 
@@ -4997,7 +5002,7 @@ from service Scailo.AnnouncementsService
 
 #### Defined in
 
-[src/announcements.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_connect.ts#L16)
+[src/announcements.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_connect.ts#L16)
 
 ___
 
@@ -5285,7 +5290,7 @@ from service Scailo.AssetIndentsService
 
 #### Defined in
 
-[src/asset_indents.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/asset_indents.scailo_connect.ts#L18)
+[src/asset_indents.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/asset_indents.scailo_connect.ts#L18)
 
 ___
 
@@ -5413,7 +5418,7 @@ from service Scailo.AssociatesService
 
 #### Defined in
 
-[src/associates.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_connect.ts#L16)
+[src/associates.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_connect.ts#L16)
 
 ___
 
@@ -5576,7 +5581,7 @@ from service Scailo.AttendancesAmendmentsService
 
 #### Defined in
 
-[src/attendances_amendments.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_connect.ts#L16)
+[src/attendances_amendments.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_connect.ts#L16)
 
 ___
 
@@ -5799,7 +5804,7 @@ from service Scailo.AttendancesService
 
 #### Defined in
 
-[src/attendances.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances.scailo_connect.ts#L17)
+[src/attendances.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances.scailo_connect.ts#L17)
 
 ___
 
@@ -5952,7 +5957,7 @@ from service Scailo.BankAccountsService
 
 #### Defined in
 
-[src/bank_accounts.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/bank_accounts.scailo_connect.ts#L16)
+[src/bank_accounts.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/bank_accounts.scailo_connect.ts#L16)
 
 ___
 
@@ -6160,7 +6165,7 @@ from service Scailo.ClientStreamsService
 
 #### Defined in
 
-[src/client_streams.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/client_streams.scailo_connect.ts#L16)
+[src/client_streams.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/client_streams.scailo_connect.ts#L16)
 
 ___
 
@@ -6353,7 +6358,7 @@ from service Scailo.ClientsService
 
 #### Defined in
 
-[src/clients.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/clients.scailo_connect.ts#L16)
+[src/clients.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/clients.scailo_connect.ts#L16)
 
 ___
 
@@ -6371,7 +6376,7 @@ from service Scailo.ComponentsService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`ComponentsServiceCountReq`](classes/ComponentsServiceCountReq.md) = ComponentsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`ComponentsServiceCreateRequest`](classes/ComponentsServiceCreateRequest.md) = ComponentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`ComponentsServiceFilterReq`](classes/ComponentsServiceFilterReq.md) = ComponentsServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`ComponentsServiceFilterReq`](classes/ComponentsServiceFilterReq.md) = ComponentsServiceFilterReq; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `filterFamiliesInProductionPlan`: \{ `I`: typeof [`FilterFamiliesReqForIdentifier`](classes/FilterFamiliesReqForIdentifier.md) = FilterFamiliesReqForIdentifier; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"FilterFamiliesInProductionPlan"`` = "FilterFamiliesInProductionPlan" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`ComponentsServiceSearchAllReq`](classes/ComponentsServiceSearchAllReq.md) = ComponentsServiceSearchAllReq; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`ComponentsServiceSendToStoreRequest`](classes/ComponentsServiceSendToStoreRequest.md) = ComponentsServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`ComponentsServiceUpdateRequest`](classes/ComponentsServiceUpdateRequest.md) = ComponentsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Component`](classes/Component.md) = Component; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Component`](classes/Component.md) = Component; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Component`](classes/Component.md) = Component; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Component`](classes/Component.md) = Component; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFamiliesInProductionPlan`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFamiliesInProductionPlan"`` = "ViewFamiliesInProductionPlan" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewWithPagination`: \{ `I`: typeof [`ComponentsServicePaginationReq`](classes/ComponentsServicePaginationReq.md) = ComponentsServicePaginationReq; `O`: typeof [`ComponentsServicePaginationResponse`](classes/ComponentsServicePaginationResponse.md) = ComponentsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`ComponentsServiceCountReq`](classes/ComponentsServiceCountReq.md) = ComponentsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`ComponentsServiceCreateRequest`](classes/ComponentsServiceCreateRequest.md) = ComponentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`ComponentsServiceFilterReq`](classes/ComponentsServiceFilterReq.md) = ComponentsServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`ComponentsServiceFilterReq`](classes/ComponentsServiceFilterReq.md) = ComponentsServiceFilterReq; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `filterFamiliesInProductionPlan`: \{ `I`: typeof [`FilterFamiliesReqForIdentifier`](classes/FilterFamiliesReqForIdentifier.md) = FilterFamiliesReqForIdentifier; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"FilterFamiliesInProductionPlan"`` = "FilterFamiliesInProductionPlan" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`ComponentsServiceSearchAllReq`](classes/ComponentsServiceSearchAllReq.md) = ComponentsServiceSearchAllReq; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`ComponentsServiceSendToStoreRequest`](classes/ComponentsServiceSendToStoreRequest.md) = ComponentsServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`ComponentsServiceUpdateRequest`](classes/ComponentsServiceUpdateRequest.md) = ComponentsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Component`](classes/Component.md) = Component; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Component`](classes/Component.md) = Component; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Component`](classes/Component.md) = Component; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Component`](classes/Component.md) = Component; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFamiliesInProductionPlan`: \{ `I`: typeof [`IdentifierWithSearchKey`](classes/IdentifierWithSearchKey.md) = IdentifierWithSearchKey; `O`: typeof [`FamiliesList`](classes/FamiliesList.md) = FamiliesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFamiliesInProductionPlan"`` = "ViewFamiliesInProductionPlan" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`ComponentsList`](classes/ComponentsList.md) = ComponentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewVendorInvoiceUnitPrice`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } ; `viewWithPagination`: \{ `I`: typeof [`ComponentsServicePaginationReq`](classes/ComponentsServicePaginationReq.md) = ComponentsServicePaginationReq; `O`: typeof [`ComponentsServicePaginationResponse`](classes/ComponentsServicePaginationResponse.md) = ComponentsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.commentAdd` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
 | `methods.commentAdd.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
 | `methods.commentAdd.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -6542,6 +6547,11 @@ from service Scailo.ComponentsService
 | `methods.viewInventoryInteractions.O` | typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) |
 | `methods.viewInventoryInteractions.kind` | `Unary` |
 | `methods.viewInventoryInteractions.name` | ``"ViewInventoryInteractions"`` |
+| `methods.viewVendorInvoiceUnitPrice` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } |
+| `methods.viewVendorInvoiceUnitPrice.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewVendorInvoiceUnitPrice.O` | typeof [`PriceResponse`](classes/PriceResponse.md) |
+| `methods.viewVendorInvoiceUnitPrice.kind` | `Unary` |
+| `methods.viewVendorInvoiceUnitPrice.name` | ``"ViewVendorInvoiceUnitPrice"`` |
 | `methods.viewWithPagination` | \{ `I`: typeof [`ComponentsServicePaginationReq`](classes/ComponentsServicePaginationReq.md) = ComponentsServicePaginationReq; `O`: typeof [`ComponentsServicePaginationResponse`](classes/ComponentsServicePaginationResponse.md) = ComponentsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
 | `methods.viewWithPagination.I` | typeof [`ComponentsServicePaginationReq`](classes/ComponentsServicePaginationReq.md) |
 | `methods.viewWithPagination.O` | typeof [`ComponentsServicePaginationResponse`](classes/ComponentsServicePaginationResponse.md) |
@@ -6551,7 +6561,7 @@ from service Scailo.ComponentsService
 
 #### Defined in
 
-[src/components.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/components.scailo_connect.ts#L18)
+[src/components.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/components.scailo_connect.ts#L18)
 
 ___
 
@@ -6884,7 +6894,7 @@ from service Scailo.CreditNotesService
 
 #### Defined in
 
-[src/credit_notes.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/credit_notes.scailo_connect.ts#L18)
+[src/credit_notes.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/credit_notes.scailo_connect.ts#L18)
 
 ___
 
@@ -7037,7 +7047,7 @@ from service Scailo.CurrenciesService
 
 #### Defined in
 
-[src/currencies.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/currencies.scailo_connect.ts#L16)
+[src/currencies.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/currencies.scailo_connect.ts#L16)
 
 ___
 
@@ -7370,7 +7380,7 @@ from service Scailo.DebitNotesService
 
 #### Defined in
 
-[src/debit_notes.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/debit_notes.scailo_connect.ts#L18)
+[src/debit_notes.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/debit_notes.scailo_connect.ts#L18)
 
 ___
 
@@ -7538,7 +7548,7 @@ from service Scailo.DepartmentsService
 
 #### Defined in
 
-[src/departments.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/departments.scailo_connect.ts#L16)
+[src/departments.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/departments.scailo_connect.ts#L16)
 
 ___
 
@@ -7831,7 +7841,7 @@ from service Scailo.EquationsFamiliesService
 
 #### Defined in
 
-[src/equations_families.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_connect.ts#L18)
+[src/equations_families.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_connect.ts#L18)
 
 ___
 
@@ -8109,7 +8119,7 @@ from service Scailo.EquationsReplaceablesService
 
 #### Defined in
 
-[src/equations_replaceables.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_connect.ts#L17)
+[src/equations_replaceables.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_connect.ts#L17)
 
 ___
 
@@ -8387,7 +8397,7 @@ from service Scailo.EquationsSalesBundlesService
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_connect.ts#L17)
+[src/equations_sales_bundles.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_connect.ts#L17)
 
 ___
 
@@ -8675,7 +8685,7 @@ from service Scailo.EquationsWorkOrdersService
 
 #### Defined in
 
-[src/equations_work_orders.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_work_orders.scailo_connect.ts#L17)
+[src/equations_work_orders.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_work_orders.scailo_connect.ts#L17)
 
 ___
 
@@ -8693,7 +8703,7 @@ from service Scailo.EquipmentsService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`EquipmentsServiceCountReq`](classes/EquipmentsServiceCountReq.md) = EquipmentsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`EquipmentsServiceCreateRequest`](classes/EquipmentsServiceCreateRequest.md) = EquipmentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`EquipmentsServiceFilterReq`](classes/EquipmentsServiceFilterReq.md) = EquipmentsServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`EquipmentsServiceFilterReq`](classes/EquipmentsServiceFilterReq.md) = EquipmentsServiceFilterReq; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`EquipmentsServiceSearchAllReq`](classes/EquipmentsServiceSearchAllReq.md) = EquipmentsServiceSearchAllReq; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`EquipmentsServiceSendToStoreRequest`](classes/EquipmentsServiceSendToStoreRequest.md) = EquipmentsServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`EquipmentsServiceUpdateRequest`](classes/EquipmentsServiceUpdateRequest.md) = EquipmentsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Equipment`](classes/Equipment.md) = Equipment; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Equipment`](classes/Equipment.md) = Equipment; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Equipment`](classes/Equipment.md) = Equipment; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Equipment`](classes/Equipment.md) = Equipment; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewWithPagination`: \{ `I`: typeof [`EquipmentsServicePaginationReq`](classes/EquipmentsServicePaginationReq.md) = EquipmentsServicePaginationReq; `O`: typeof [`EquipmentsServicePaginationResponse`](classes/EquipmentsServicePaginationResponse.md) = EquipmentsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`EquipmentsServiceCountReq`](classes/EquipmentsServiceCountReq.md) = EquipmentsServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`EquipmentsServiceCreateRequest`](classes/EquipmentsServiceCreateRequest.md) = EquipmentsServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`EquipmentsServiceFilterReq`](classes/EquipmentsServiceFilterReq.md) = EquipmentsServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`EquipmentsServiceFilterReq`](classes/EquipmentsServiceFilterReq.md) = EquipmentsServiceFilterReq; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`EquipmentsServiceSearchAllReq`](classes/EquipmentsServiceSearchAllReq.md) = EquipmentsServiceSearchAllReq; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`EquipmentsServiceSendToStoreRequest`](classes/EquipmentsServiceSendToStoreRequest.md) = EquipmentsServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`EquipmentsServiceUpdateRequest`](classes/EquipmentsServiceUpdateRequest.md) = EquipmentsServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Equipment`](classes/Equipment.md) = Equipment; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Equipment`](classes/Equipment.md) = Equipment; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Equipment`](classes/Equipment.md) = Equipment; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Equipment`](classes/Equipment.md) = Equipment; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`EquipmentsList`](classes/EquipmentsList.md) = EquipmentsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewVendorInvoiceUnitPrice`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } ; `viewWithPagination`: \{ `I`: typeof [`EquipmentsServicePaginationReq`](classes/EquipmentsServicePaginationReq.md) = EquipmentsServicePaginationReq; `O`: typeof [`EquipmentsServicePaginationResponse`](classes/EquipmentsServicePaginationResponse.md) = EquipmentsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.commentAdd` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
 | `methods.commentAdd.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
 | `methods.commentAdd.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -8854,6 +8864,11 @@ from service Scailo.EquipmentsService
 | `methods.viewInventoryInteractions.O` | typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) |
 | `methods.viewInventoryInteractions.kind` | `Unary` |
 | `methods.viewInventoryInteractions.name` | ``"ViewInventoryInteractions"`` |
+| `methods.viewVendorInvoiceUnitPrice` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } |
+| `methods.viewVendorInvoiceUnitPrice.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewVendorInvoiceUnitPrice.O` | typeof [`PriceResponse`](classes/PriceResponse.md) |
+| `methods.viewVendorInvoiceUnitPrice.kind` | `Unary` |
+| `methods.viewVendorInvoiceUnitPrice.name` | ``"ViewVendorInvoiceUnitPrice"`` |
 | `methods.viewWithPagination` | \{ `I`: typeof [`EquipmentsServicePaginationReq`](classes/EquipmentsServicePaginationReq.md) = EquipmentsServicePaginationReq; `O`: typeof [`EquipmentsServicePaginationResponse`](classes/EquipmentsServicePaginationResponse.md) = EquipmentsServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
 | `methods.viewWithPagination.I` | typeof [`EquipmentsServicePaginationReq`](classes/EquipmentsServicePaginationReq.md) |
 | `methods.viewWithPagination.O` | typeof [`EquipmentsServicePaginationResponse`](classes/EquipmentsServicePaginationResponse.md) |
@@ -8863,7 +8878,7 @@ from service Scailo.EquipmentsService
 
 #### Defined in
 
-[src/equipments.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equipments.scailo_connect.ts#L17)
+[src/equipments.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equipments.scailo_connect.ts#L17)
 
 ___
 
@@ -9126,7 +9141,7 @@ from service Scailo.ExpensesService
 
 #### Defined in
 
-[src/expenses.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/expenses.scailo_connect.ts#L17)
+[src/expenses.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/expenses.scailo_connect.ts#L17)
 
 ___
 
@@ -9499,7 +9514,7 @@ from service Scailo.FamiliesService
 
 #### Defined in
 
-[src/families.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_connect.ts#L16)
+[src/families.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_connect.ts#L16)
 
 ___
 
@@ -9517,7 +9532,7 @@ from service Scailo.FeedstocksService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`FeedstocksServiceCountReq`](classes/FeedstocksServiceCountReq.md) = FeedstocksServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`FeedstocksServiceCreateRequest`](classes/FeedstocksServiceCreateRequest.md) = FeedstocksServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`FeedstocksServiceFilterReq`](classes/FeedstocksServiceFilterReq.md) = FeedstocksServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`FeedstocksServiceFilterReq`](classes/FeedstocksServiceFilterReq.md) = FeedstocksServiceFilterReq; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`FeedstocksServiceSearchAllReq`](classes/FeedstocksServiceSearchAllReq.md) = FeedstocksServiceSearchAllReq; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`FeedstocksServiceSendToStoreRequest`](classes/FeedstocksServiceSendToStoreRequest.md) = FeedstocksServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`FeedstocksServiceUpdateRequest`](classes/FeedstocksServiceUpdateRequest.md) = FeedstocksServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Feedstock`](classes/Feedstock.md) = Feedstock; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Feedstock`](classes/Feedstock.md) = Feedstock; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Feedstock`](classes/Feedstock.md) = Feedstock; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Feedstock`](classes/Feedstock.md) = Feedstock; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewWithPagination`: \{ `I`: typeof [`FeedstocksServicePaginationReq`](classes/FeedstocksServicePaginationReq.md) = FeedstocksServicePaginationReq; `O`: typeof [`FeedstocksServicePaginationResponse`](classes/FeedstocksServicePaginationResponse.md) = FeedstocksServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`FeedstocksServiceCountReq`](classes/FeedstocksServiceCountReq.md) = FeedstocksServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`FeedstocksServiceCreateRequest`](classes/FeedstocksServiceCreateRequest.md) = FeedstocksServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`FeedstocksServiceFilterReq`](classes/FeedstocksServiceFilterReq.md) = FeedstocksServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`FeedstocksServiceFilterReq`](classes/FeedstocksServiceFilterReq.md) = FeedstocksServiceFilterReq; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`FeedstocksServiceSearchAllReq`](classes/FeedstocksServiceSearchAllReq.md) = FeedstocksServiceSearchAllReq; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`FeedstocksServiceSendToStoreRequest`](classes/FeedstocksServiceSendToStoreRequest.md) = FeedstocksServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`FeedstocksServiceUpdateRequest`](classes/FeedstocksServiceUpdateRequest.md) = FeedstocksServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Feedstock`](classes/Feedstock.md) = Feedstock; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Feedstock`](classes/Feedstock.md) = Feedstock; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Feedstock`](classes/Feedstock.md) = Feedstock; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Feedstock`](classes/Feedstock.md) = Feedstock; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`FeedstocksList`](classes/FeedstocksList.md) = FeedstocksList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewVendorInvoiceUnitPrice`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } ; `viewWithPagination`: \{ `I`: typeof [`FeedstocksServicePaginationReq`](classes/FeedstocksServicePaginationReq.md) = FeedstocksServicePaginationReq; `O`: typeof [`FeedstocksServicePaginationResponse`](classes/FeedstocksServicePaginationResponse.md) = FeedstocksServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.commentAdd` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
 | `methods.commentAdd.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
 | `methods.commentAdd.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -9678,6 +9693,11 @@ from service Scailo.FeedstocksService
 | `methods.viewInventoryInteractions.O` | typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) |
 | `methods.viewInventoryInteractions.kind` | `Unary` |
 | `methods.viewInventoryInteractions.name` | ``"ViewInventoryInteractions"`` |
+| `methods.viewVendorInvoiceUnitPrice` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } |
+| `methods.viewVendorInvoiceUnitPrice.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewVendorInvoiceUnitPrice.O` | typeof [`PriceResponse`](classes/PriceResponse.md) |
+| `methods.viewVendorInvoiceUnitPrice.kind` | `Unary` |
+| `methods.viewVendorInvoiceUnitPrice.name` | ``"ViewVendorInvoiceUnitPrice"`` |
 | `methods.viewWithPagination` | \{ `I`: typeof [`FeedstocksServicePaginationReq`](classes/FeedstocksServicePaginationReq.md) = FeedstocksServicePaginationReq; `O`: typeof [`FeedstocksServicePaginationResponse`](classes/FeedstocksServicePaginationResponse.md) = FeedstocksServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
 | `methods.viewWithPagination.I` | typeof [`FeedstocksServicePaginationReq`](classes/FeedstocksServicePaginationReq.md) |
 | `methods.viewWithPagination.O` | typeof [`FeedstocksServicePaginationResponse`](classes/FeedstocksServicePaginationResponse.md) |
@@ -9687,7 +9707,7 @@ from service Scailo.FeedstocksService
 
 #### Defined in
 
-[src/feedstocks.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/feedstocks.scailo_connect.ts#L17)
+[src/feedstocks.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/feedstocks.scailo_connect.ts#L17)
 
 ___
 
@@ -9715,7 +9735,7 @@ from service Scailo.FormsFieldsDataService
 
 #### Defined in
 
-[src/forms_fields_data.scailo_connect.ts:15](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_connect.ts#L15)
+[src/forms_fields_data.scailo_connect.ts:15](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_connect.ts#L15)
 
 ___
 
@@ -9828,7 +9848,7 @@ from service Scailo.FormsFieldsService
 
 #### Defined in
 
-[src/forms_fields.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields.scailo_connect.ts#L16)
+[src/forms_fields.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields.scailo_connect.ts#L16)
 
 ___
 
@@ -9936,7 +9956,7 @@ from service Scailo.FormsSectionsService
 
 #### Defined in
 
-[src/forms_sections.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_sections.scailo_connect.ts#L16)
+[src/forms_sections.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_sections.scailo_connect.ts#L16)
 
 ___
 
@@ -9989,7 +10009,7 @@ from service Scailo.GeneralSettingsService
 
 #### Defined in
 
-[src/general_settings.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/general_settings.scailo_connect.ts#L16)
+[src/general_settings.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/general_settings.scailo_connect.ts#L16)
 
 ___
 
@@ -10177,7 +10197,7 @@ from service Scailo.GeneralStreamsService
 
 #### Defined in
 
-[src/general_streams.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/general_streams.scailo_connect.ts#L16)
+[src/general_streams.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/general_streams.scailo_connect.ts#L16)
 
 ___
 
@@ -10425,7 +10445,7 @@ from service Scailo.GoalsService
 
 #### Defined in
 
-[src/goals.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_connect.ts#L16)
+[src/goals.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_connect.ts#L16)
 
 ___
 
@@ -10743,7 +10763,7 @@ from service Scailo.GoodsDispatchesService
 
 #### Defined in
 
-[src/goods_dispatches.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goods_dispatches.scailo_connect.ts#L18)
+[src/goods_dispatches.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goods_dispatches.scailo_connect.ts#L18)
 
 ___
 
@@ -11061,7 +11081,7 @@ from service Scailo.GoodsReceiptsService
 
 #### Defined in
 
-[src/goods_receipts.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goods_receipts.scailo_connect.ts#L18)
+[src/goods_receipts.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goods_receipts.scailo_connect.ts#L18)
 
 ___
 
@@ -11274,7 +11294,7 @@ from service Scailo.HolidaysService
 
 #### Defined in
 
-[src/holidays.scailo_connect.ts:22](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/holidays.scailo_connect.ts#L22)
+[src/holidays.scailo_connect.ts:22](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_connect.ts#L22)
 
 ___
 
@@ -11292,7 +11312,7 @@ from service Scailo.InfrastructuresService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`InfrastructuresServiceCountReq`](classes/InfrastructuresServiceCountReq.md) = InfrastructuresServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`InfrastructuresServiceCreateRequest`](classes/InfrastructuresServiceCreateRequest.md) = InfrastructuresServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`InfrastructuresServiceFilterReq`](classes/InfrastructuresServiceFilterReq.md) = InfrastructuresServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`InfrastructuresServiceFilterReq`](classes/InfrastructuresServiceFilterReq.md) = InfrastructuresServiceFilterReq; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`InfrastructuresServiceSearchAllReq`](classes/InfrastructuresServiceSearchAllReq.md) = InfrastructuresServiceSearchAllReq; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`InfrastructuresServiceSendToStoreRequest`](classes/InfrastructuresServiceSendToStoreRequest.md) = InfrastructuresServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`InfrastructuresServiceUpdateRequest`](classes/InfrastructuresServiceUpdateRequest.md) = InfrastructuresServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Infrastructure`](classes/Infrastructure.md) = Infrastructure; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Infrastructure`](classes/Infrastructure.md) = Infrastructure; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Infrastructure`](classes/Infrastructure.md) = Infrastructure; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Infrastructure`](classes/Infrastructure.md) = Infrastructure; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewWithPagination`: \{ `I`: typeof [`InfrastructuresServicePaginationReq`](classes/InfrastructuresServicePaginationReq.md) = InfrastructuresServicePaginationReq; `O`: typeof [`InfrastructuresServicePaginationResponse`](classes/InfrastructuresServicePaginationResponse.md) = InfrastructuresServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`InfrastructuresServiceCountReq`](classes/InfrastructuresServiceCountReq.md) = InfrastructuresServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`InfrastructuresServiceCreateRequest`](classes/InfrastructuresServiceCreateRequest.md) = InfrastructuresServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`InfrastructuresServiceFilterReq`](classes/InfrastructuresServiceFilterReq.md) = InfrastructuresServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`InfrastructuresServiceFilterReq`](classes/InfrastructuresServiceFilterReq.md) = InfrastructuresServiceFilterReq; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`InfrastructuresServiceSearchAllReq`](classes/InfrastructuresServiceSearchAllReq.md) = InfrastructuresServiceSearchAllReq; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`InfrastructuresServiceSendToStoreRequest`](classes/InfrastructuresServiceSendToStoreRequest.md) = InfrastructuresServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`InfrastructuresServiceUpdateRequest`](classes/InfrastructuresServiceUpdateRequest.md) = InfrastructuresServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Infrastructure`](classes/Infrastructure.md) = Infrastructure; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Infrastructure`](classes/Infrastructure.md) = Infrastructure; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Infrastructure`](classes/Infrastructure.md) = Infrastructure; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Infrastructure`](classes/Infrastructure.md) = Infrastructure; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`InfrastructuresList`](classes/InfrastructuresList.md) = InfrastructuresList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewVendorInvoiceUnitPrice`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } ; `viewWithPagination`: \{ `I`: typeof [`InfrastructuresServicePaginationReq`](classes/InfrastructuresServicePaginationReq.md) = InfrastructuresServicePaginationReq; `O`: typeof [`InfrastructuresServicePaginationResponse`](classes/InfrastructuresServicePaginationResponse.md) = InfrastructuresServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.commentAdd` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
 | `methods.commentAdd.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
 | `methods.commentAdd.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -11453,6 +11473,11 @@ from service Scailo.InfrastructuresService
 | `methods.viewInventoryInteractions.O` | typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) |
 | `methods.viewInventoryInteractions.kind` | `Unary` |
 | `methods.viewInventoryInteractions.name` | ``"ViewInventoryInteractions"`` |
+| `methods.viewVendorInvoiceUnitPrice` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } |
+| `methods.viewVendorInvoiceUnitPrice.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewVendorInvoiceUnitPrice.O` | typeof [`PriceResponse`](classes/PriceResponse.md) |
+| `methods.viewVendorInvoiceUnitPrice.kind` | `Unary` |
+| `methods.viewVendorInvoiceUnitPrice.name` | ``"ViewVendorInvoiceUnitPrice"`` |
 | `methods.viewWithPagination` | \{ `I`: typeof [`InfrastructuresServicePaginationReq`](classes/InfrastructuresServicePaginationReq.md) = InfrastructuresServicePaginationReq; `O`: typeof [`InfrastructuresServicePaginationResponse`](classes/InfrastructuresServicePaginationResponse.md) = InfrastructuresServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
 | `methods.viewWithPagination.I` | typeof [`InfrastructuresServicePaginationReq`](classes/InfrastructuresServicePaginationReq.md) |
 | `methods.viewWithPagination.O` | typeof [`InfrastructuresServicePaginationResponse`](classes/InfrastructuresServicePaginationResponse.md) |
@@ -11462,7 +11487,7 @@ from service Scailo.InfrastructuresService
 
 #### Defined in
 
-[src/infrastructures.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/infrastructures.scailo_connect.ts#L17)
+[src/infrastructures.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/infrastructures.scailo_connect.ts#L17)
 
 ___
 
@@ -11640,7 +11665,7 @@ from service Scailo.InventoryService
 
 #### Defined in
 
-[src/inventory.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_connect.ts#L16)
+[src/inventory.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_connect.ts#L16)
 
 ___
 
@@ -11948,7 +11973,7 @@ from service Scailo.InwardJobsFreeIssueMaterialsReturnsService
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inward_jobs_free_issue_materials_returns.scailo_connect.ts#L19)
+[src/inward_jobs_free_issue_materials_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inward_jobs_free_issue_materials_returns.scailo_connect.ts#L19)
 
 ___
 
@@ -12246,7 +12271,7 @@ from service Scailo.InwardJobsFreeIssueMaterialsService
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inward_jobs_free_issue_materials.scailo_connect.ts#L18)
+[src/inward_jobs_free_issue_materials.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inward_jobs_free_issue_materials.scailo_connect.ts#L18)
 
 ___
 
@@ -12674,7 +12699,7 @@ from service Scailo.InwardJobsService
 
 #### Defined in
 
-[src/inward_jobs.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inward_jobs.scailo_connect.ts#L18)
+[src/inward_jobs.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inward_jobs.scailo_connect.ts#L18)
 
 ___
 
@@ -12792,7 +12817,7 @@ from service Scailo.LabelsService
 
 #### Defined in
 
-[src/labels.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_connect.ts#L16)
+[src/labels.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_connect.ts#L16)
 
 ___
 
@@ -13010,7 +13035,7 @@ from service Scailo.LeavesAdjustmentsService
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_connect.ts:22](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_adjustments.scailo_connect.ts#L22)
+[src/leaves_adjustments.scailo_connect.ts:22](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_connect.ts#L22)
 
 ___
 
@@ -13051,7 +13076,7 @@ from service Scailo.LeavesLogsService
 
 #### Defined in
 
-[src/leaves_logs.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_logs.scailo_connect.ts#L19)
+[src/leaves_logs.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_logs.scailo_connect.ts#L19)
 
 ___
 
@@ -13209,7 +13234,7 @@ from service Scailo.LeavesRequestsService
 
 #### Defined in
 
-[src/leaves_requests.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_connect.ts#L16)
+[src/leaves_requests.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_connect.ts#L16)
 
 ___
 
@@ -13372,7 +13397,7 @@ from service Scailo.LeavesTypesService
 
 #### Defined in
 
-[src/leaves_types.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_types.scailo_connect.ts#L16)
+[src/leaves_types.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_types.scailo_connect.ts#L16)
 
 ___
 
@@ -13525,7 +13550,7 @@ from service Scailo.LedgersService
 
 #### Defined in
 
-[src/ledgers.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_connect.ts#L16)
+[src/ledgers.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_connect.ts#L16)
 
 ___
 
@@ -13678,7 +13703,7 @@ from service Scailo.LocationsService
 
 #### Defined in
 
-[src/locations.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_connect.ts#L16)
+[src/locations.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_connect.ts#L16)
 
 ___
 
@@ -13741,7 +13766,7 @@ from service Scailo.LoginService
 
 #### Defined in
 
-[src/login.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_connect.ts#L16)
+[src/login.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_connect.ts#L16)
 
 ___
 
@@ -13844,7 +13869,7 @@ from service Scailo.MagicLinksService
 
 #### Defined in
 
-[src/magic_links.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/magic_links.scailo_connect.ts#L16)
+[src/magic_links.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/magic_links.scailo_connect.ts#L16)
 
 ___
 
@@ -14072,7 +14097,7 @@ from service Scailo.MeetingsService
 
 #### Defined in
 
-[src/meetings.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/meetings.scailo_connect.ts#L16)
+[src/meetings.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/meetings.scailo_connect.ts#L16)
 
 ___
 
@@ -14090,7 +14115,7 @@ from service Scailo.MerchandisesService
 
 | Name | Type |
 | :------ | :------ |
-| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`MerchandisesServiceCountReq`](classes/MerchandisesServiceCountReq.md) = MerchandisesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`MerchandisesServiceCreateRequest`](classes/MerchandisesServiceCreateRequest.md) = MerchandisesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`MerchandisesServiceFilterReq`](classes/MerchandisesServiceFilterReq.md) = MerchandisesServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`MerchandisesServiceFilterReq`](classes/MerchandisesServiceFilterReq.md) = MerchandisesServiceFilterReq; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`MerchandisesServiceSearchAllReq`](classes/MerchandisesServiceSearchAllReq.md) = MerchandisesServiceSearchAllReq; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`MerchandisesServiceSendToStoreRequest`](classes/MerchandisesServiceSendToStoreRequest.md) = MerchandisesServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`MerchandisesServiceUpdateRequest`](classes/MerchandisesServiceUpdateRequest.md) = MerchandisesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Merchandise`](classes/Merchandise.md) = Merchandise; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Merchandise`](classes/Merchandise.md) = Merchandise; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Merchandise`](classes/Merchandise.md) = Merchandise; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Merchandise`](classes/Merchandise.md) = Merchandise; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewWithPagination`: \{ `I`: typeof [`MerchandisesServicePaginationReq`](classes/MerchandisesServicePaginationReq.md) = MerchandisesServicePaginationReq; `O`: typeof [`MerchandisesServicePaginationResponse`](classes/MerchandisesServicePaginationResponse.md) = MerchandisesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
+| `methods` | \{ `commentAdd`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } ; `consume`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Consume"`` = "Consume" } ; `count`: \{ `I`: typeof [`MerchandisesServiceCountReq`](classes/MerchandisesServiceCountReq.md) = MerchandisesServiceCountReq; `O`: typeof [`CountResponse`](classes/CountResponse.md) = CountResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Count"`` = "Count" } ; `create`: \{ `I`: typeof [`MerchandisesServiceCreateRequest`](classes/MerchandisesServiceCreateRequest.md) = MerchandisesServiceCreateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Create"`` = "Create" } ; `createMagicLink`: \{ `I`: typeof [`MagicLinksServiceCreateRequestForSpecificResource`](classes/MagicLinksServiceCreateRequestForSpecificResource.md) = MagicLinksServiceCreateRequestForSpecificResource; `O`: typeof [`MagicLink`](classes/MagicLink.md) = MagicLink; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CreateMagicLink"`` = "CreateMagicLink" } ; `discard`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Discard"`` = "Discard" } ; `downloadAsCSV`: \{ `I`: typeof [`MerchandisesServiceFilterReq`](classes/MerchandisesServiceFilterReq.md) = MerchandisesServiceFilterReq; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadAsCSV"`` = "DownloadAsCSV" } ; `downloadImportTemplate`: \{ `I`: typeof [`Empty`](classes/Empty.md) = Empty; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadImportTemplate"`` = "DownloadImportTemplate" } ; `downloadLabelByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByID"`` = "DownloadLabelByID" } ; `downloadLabelByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadLabelByUUID"`` = "DownloadLabelByUUID" } ; `downloadQCReportByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByID"`` = "DownloadQCReportByID" } ; `downloadQCReportByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `kind`: `Unary` = MethodKind.Unary; `name`: ``"DownloadQCReportByUUID"`` = "DownloadQCReportByUUID" } ; `filter`: \{ `I`: typeof [`MerchandisesServiceFilterReq`](classes/MerchandisesServiceFilterReq.md) = MerchandisesServiceFilterReq; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Filter"`` = "Filter" } ; `importFromCSV`: \{ `I`: typeof [`StandardFile`](classes/StandardFile.md) = StandardFile; `O`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ImportFromCSV"`` = "ImportFromCSV" } ; `partition`: \{ `I`: typeof [`InventoryPartitionRequest`](classes/InventoryPartitionRequest.md) = InventoryPartitionRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Partition"`` = "Partition" } ; `reject`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Reject"`` = "Reject" } ; `returnMaterial`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ReturnMaterial"`` = "ReturnMaterial" } ; `scrap`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Scrap"`` = "Scrap" } ; `searchAll`: \{ `I`: typeof [`MerchandisesServiceSearchAllReq`](classes/MerchandisesServiceSearchAllReq.md) = MerchandisesServiceSearchAllReq; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SearchAll"`` = "SearchAll" } ; `sendForQC`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForQC"`` = "SendForQC" } ; `sendForRework`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendForRework"`` = "SendForRework" } ; `sendToStore`: \{ `I`: typeof [`MerchandisesServiceSendToStoreRequest`](classes/MerchandisesServiceSendToStoreRequest.md) = MerchandisesServiceSendToStoreRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SendToStore"`` = "SendToStore" } ; `splitLot`: \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"SplitLot"`` = "SplitLot" } ; `update`: \{ `I`: typeof [`MerchandisesServiceUpdateRequest`](classes/MerchandisesServiceUpdateRequest.md) = MerchandisesServiceUpdateRequest; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"Update"`` = "Update" } ; `viewAll`: \{ `I`: typeof [`ActiveStatus`](classes/ActiveStatus.md) = ActiveStatus; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewAll"`` = "ViewAll" } ; `viewByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Merchandise`](classes/Merchandise.md) = Merchandise; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByID"`` = "ViewByID" } ; `viewByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Merchandise`](classes/Merchandise.md) = Merchandise; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewByUUID"`` = "ViewByUUID" } ; `viewEssentialByID`: \{ `I`: typeof [`Identifier`](classes/Identifier.md) = Identifier; `O`: typeof [`Merchandise`](classes/Merchandise.md) = Merchandise; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByID"`` = "ViewEssentialByID" } ; `viewEssentialByUUID`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`Merchandise`](classes/Merchandise.md) = Merchandise; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewEssentialByUUID"`` = "ViewEssentialByUUID" } ; `viewFromIDs`: \{ `I`: typeof [`IdentifiersList`](classes/IdentifiersList.md) = IdentifiersList; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromIDs"`` = "ViewFromIDs" } ; `viewFromUUIDs`: \{ `I`: typeof [`IdentifierUUIDsList`](classes/IdentifierUUIDsList.md) = IdentifierUUIDsList; `O`: typeof [`MerchandisesList`](classes/MerchandisesList.md) = MerchandisesList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewFromUUIDs"`` = "ViewFromUUIDs" } ; `viewInventoryInteractions`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) = InventoryInteractionsList; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewInventoryInteractions"`` = "ViewInventoryInteractions" } ; `viewVendorInvoiceUnitPrice`: \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } ; `viewWithPagination`: \{ `I`: typeof [`MerchandisesServicePaginationReq`](classes/MerchandisesServicePaginationReq.md) = MerchandisesServicePaginationReq; `O`: typeof [`MerchandisesServicePaginationResponse`](classes/MerchandisesServicePaginationResponse.md) = MerchandisesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" }  } |
 | `methods.commentAdd` | \{ `I`: typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) = IdentifierUUIDWithUserComment; `O`: typeof [`IdentifierResponse`](classes/IdentifierResponse.md) = IdentifierResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"CommentAdd"`` = "CommentAdd" } |
 | `methods.commentAdd.I` | typeof [`IdentifierUUIDWithUserComment`](classes/IdentifierUUIDWithUserComment.md) |
 | `methods.commentAdd.O` | typeof [`IdentifierResponse`](classes/IdentifierResponse.md) |
@@ -14251,6 +14276,11 @@ from service Scailo.MerchandisesService
 | `methods.viewInventoryInteractions.O` | typeof [`InventoryInteractionsList`](classes/InventoryInteractionsList.md) |
 | `methods.viewInventoryInteractions.kind` | `Unary` |
 | `methods.viewInventoryInteractions.name` | ``"ViewInventoryInteractions"`` |
+| `methods.viewVendorInvoiceUnitPrice` | \{ `I`: typeof [`IdentifierUUID`](classes/IdentifierUUID.md) = IdentifierUUID; `O`: typeof [`PriceResponse`](classes/PriceResponse.md) = PriceResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewVendorInvoiceUnitPrice"`` = "ViewVendorInvoiceUnitPrice" } |
+| `methods.viewVendorInvoiceUnitPrice.I` | typeof [`IdentifierUUID`](classes/IdentifierUUID.md) |
+| `methods.viewVendorInvoiceUnitPrice.O` | typeof [`PriceResponse`](classes/PriceResponse.md) |
+| `methods.viewVendorInvoiceUnitPrice.kind` | `Unary` |
+| `methods.viewVendorInvoiceUnitPrice.name` | ``"ViewVendorInvoiceUnitPrice"`` |
 | `methods.viewWithPagination` | \{ `I`: typeof [`MerchandisesServicePaginationReq`](classes/MerchandisesServicePaginationReq.md) = MerchandisesServicePaginationReq; `O`: typeof [`MerchandisesServicePaginationResponse`](classes/MerchandisesServicePaginationResponse.md) = MerchandisesServicePaginationResponse; `kind`: `Unary` = MethodKind.Unary; `name`: ``"ViewWithPagination"`` = "ViewWithPagination" } |
 | `methods.viewWithPagination.I` | typeof [`MerchandisesServicePaginationReq`](classes/MerchandisesServicePaginationReq.md) |
 | `methods.viewWithPagination.O` | typeof [`MerchandisesServicePaginationResponse`](classes/MerchandisesServicePaginationResponse.md) |
@@ -14260,7 +14290,7 @@ from service Scailo.MerchandisesService
 
 #### Defined in
 
-[src/merchandises.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/merchandises.scailo_connect.ts#L17)
+[src/merchandises.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/merchandises.scailo_connect.ts#L17)
 
 ___
 
@@ -14378,7 +14408,7 @@ from service Scailo.NotesService
 
 #### Defined in
 
-[src/notes.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/notes.scailo_connect.ts#L16)
+[src/notes.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/notes.scailo_connect.ts#L16)
 
 ___
 
@@ -14591,7 +14621,7 @@ from service Scailo.OnDutiesService
 
 #### Defined in
 
-[src/on_duties.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/on_duties.scailo_connect.ts#L17)
+[src/on_duties.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/on_duties.scailo_connect.ts#L17)
 
 ___
 
@@ -14899,7 +14929,7 @@ from service Scailo.OutwardJobsFreeIssueMaterialsReturnsService
 
 #### Defined in
 
-[src/outward_jobs_free_issue_materials_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/outward_jobs_free_issue_materials_returns.scailo_connect.ts#L19)
+[src/outward_jobs_free_issue_materials_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/outward_jobs_free_issue_materials_returns.scailo_connect.ts#L19)
 
 ___
 
@@ -15202,7 +15232,7 @@ from service Scailo.OutwardJobsFreeIssueMaterialsService
 
 #### Defined in
 
-[src/outward_jobs_free_issue_materials.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/outward_jobs_free_issue_materials.scailo_connect.ts#L18)
+[src/outward_jobs_free_issue_materials.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/outward_jobs_free_issue_materials.scailo_connect.ts#L18)
 
 ___
 
@@ -15630,7 +15660,7 @@ from service Scailo.OutwardJobsService
 
 #### Defined in
 
-[src/outward_jobs.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/outward_jobs.scailo_connect.ts#L18)
+[src/outward_jobs.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/outward_jobs.scailo_connect.ts#L18)
 
 ___
 
@@ -15788,7 +15818,7 @@ from service Scailo.OvertimesService
 
 #### Defined in
 
-[src/overtimes.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_connect.ts#L16)
+[src/overtimes.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_connect.ts#L16)
 
 ___
 
@@ -16026,7 +16056,7 @@ from service Scailo.PayrollGroupsService
 
 #### Defined in
 
-[src/payroll_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_connect.ts#L16)
+[src/payroll_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_connect.ts#L16)
 
 ___
 
@@ -16189,7 +16219,7 @@ from service Scailo.PayrollParamsService
 
 #### Defined in
 
-[src/payroll_params.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_params.scailo_connect.ts#L16)
+[src/payroll_params.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_params.scailo_connect.ts#L16)
 
 ___
 
@@ -16207,7 +16237,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1283](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1283)
+[permissions.ts:1283](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1283)
 
 ___
 
@@ -16225,7 +16255,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1467](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1467)
+[permissions.ts:1467](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1467)
 
 ___
 
@@ -16243,7 +16273,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1466](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1466)
+[permissions.ts:1466](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1466)
 
 ___
 
@@ -16261,7 +16291,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1464](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1464)
+[permissions.ts:1464](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1464)
 
 ___
 
@@ -16279,7 +16309,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1463](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1463)
+[permissions.ts:1463](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1463)
 
 ___
 
@@ -16297,7 +16327,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1460](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1460)
+[permissions.ts:1460](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1460)
 
 ___
 
@@ -16315,7 +16345,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1462](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1462)
+[permissions.ts:1462](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1462)
 
 ___
 
@@ -16333,7 +16363,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1465](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1465)
+[permissions.ts:1465](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1465)
 
 ___
 
@@ -16351,7 +16381,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1461](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1461)
+[permissions.ts:1461](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1461)
 
 ___
 
@@ -16369,7 +16399,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:915](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L915)
+[permissions.ts:915](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L915)
 
 ___
 
@@ -16387,7 +16417,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:948](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L948)
+[permissions.ts:948](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L948)
 
 ___
 
@@ -16405,7 +16435,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:528](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L528)
+[permissions.ts:528](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L528)
 
 ___
 
@@ -16423,7 +16453,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:432](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L432)
+[permissions.ts:432](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L432)
 
 ___
 
@@ -16441,7 +16471,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:829](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L829)
+[permissions.ts:829](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L829)
 
 ___
 
@@ -16459,7 +16489,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:546](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L546)
+[permissions.ts:546](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L546)
 
 ___
 
@@ -16477,7 +16507,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:492](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L492)
+[permissions.ts:492](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L492)
 
 ___
 
@@ -16495,7 +16525,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:510](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L510)
+[permissions.ts:510](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L510)
 
 ___
 
@@ -16513,7 +16543,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:414](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L414)
+[permissions.ts:414](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L414)
 
 ___
 
@@ -16531,7 +16561,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:615](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L615)
+[permissions.ts:615](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L615)
 
 ___
 
@@ -16549,7 +16579,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1274](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1274)
+[permissions.ts:1274](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1274)
 
 ___
 
@@ -16567,7 +16597,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1450](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1450)
+[permissions.ts:1450](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1450)
 
 ___
 
@@ -16585,7 +16615,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1437](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1437)
+[permissions.ts:1437](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1437)
 
 ___
 
@@ -16603,7 +16633,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1424](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1424)
+[permissions.ts:1424](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1424)
 
 ___
 
@@ -16621,7 +16651,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1411](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1411)
+[permissions.ts:1411](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1411)
 
 ___
 
@@ -16639,7 +16669,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1147](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1147)
+[permissions.ts:1147](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1147)
 
 ___
 
@@ -16657,7 +16687,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1304](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1304)
+[permissions.ts:1304](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1304)
 
 ___
 
@@ -16675,7 +16705,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1259](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1259)
+[permissions.ts:1259](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1259)
 
 ___
 
@@ -16693,7 +16723,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1095](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1095)
+[permissions.ts:1095](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1095)
 
 ___
 
@@ -16711,7 +16741,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:45](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L45)
+[permissions.ts:45](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L45)
 
 ___
 
@@ -16729,7 +16759,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:439](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L439)
+[permissions.ts:439](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L439)
 
 ___
 
@@ -16747,7 +16777,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1399](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1399)
+[permissions.ts:1399](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1399)
 
 ___
 
@@ -16765,7 +16795,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1189](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1189)
+[permissions.ts:1189](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1189)
 
 ___
 
@@ -16783,7 +16813,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1203](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1203)
+[permissions.ts:1203](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1203)
 
 ___
 
@@ -16801,7 +16831,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1217](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1217)
+[permissions.ts:1217](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1217)
 
 ___
 
@@ -16819,7 +16849,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1231](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1231)
+[permissions.ts:1231](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1231)
 
 ___
 
@@ -16837,7 +16867,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1134](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1134)
+[permissions.ts:1134](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1134)
 
 ___
 
@@ -16855,7 +16885,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1082](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1082)
+[permissions.ts:1082](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1082)
 
 ___
 
@@ -16873,7 +16903,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1289](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1289)
+[permissions.ts:1289](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1289)
 
 ___
 
@@ -16891,7 +16921,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1245](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1245)
+[permissions.ts:1245](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1245)
 
 ___
 
@@ -16909,7 +16939,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1027](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1027)
+[permissions.ts:1027](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1027)
 
 ___
 
@@ -16927,7 +16957,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:805](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L805)
+[permissions.ts:805](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L805)
 
 ___
 
@@ -16945,7 +16975,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:690](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L690)
+[permissions.ts:690](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L690)
 
 ___
 
@@ -16963,7 +16993,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:954](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L954)
+[permissions.ts:954](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L954)
 
 ___
 
@@ -16981,7 +17011,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:840](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L840)
+[permissions.ts:840](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L840)
 
 ___
 
@@ -16999,7 +17029,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:857](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L857)
+[permissions.ts:857](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L857)
 
 ___
 
@@ -17017,7 +17047,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:705](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L705)
+[permissions.ts:705](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L705)
 
 ___
 
@@ -17035,7 +17065,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1175](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1175)
+[permissions.ts:1175](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1175)
 
 ___
 
@@ -17053,7 +17083,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1161](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1161)
+[permissions.ts:1161](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1161)
 
 ___
 
@@ -17071,7 +17101,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1365](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1365)
+[permissions.ts:1365](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1365)
 
 ___
 
@@ -17089,7 +17119,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1121](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1121)
+[permissions.ts:1121](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1121)
 
 ___
 
@@ -17107,7 +17137,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1108](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1108)
+[permissions.ts:1108](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1108)
 
 ___
 
@@ -17125,7 +17155,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:787](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L787)
+[permissions.ts:787](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L787)
 
 ___
 
@@ -17143,7 +17173,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1014](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1014)
+[permissions.ts:1014](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1014)
 
 ___
 
@@ -17161,7 +17191,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1001](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1001)
+[permissions.ts:1001](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1001)
 
 ___
 
@@ -17179,7 +17209,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:452](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L452)
+[permissions.ts:452](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L452)
 
 ___
 
@@ -17197,7 +17227,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:72](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L72)
+[permissions.ts:72](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L72)
 
 ___
 
@@ -17215,7 +17245,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1350](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1350)
+[permissions.ts:1350](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1350)
 
 ___
 
@@ -17233,7 +17263,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:305](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L305)
+[permissions.ts:305](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L305)
 
 ___
 
@@ -17251,7 +17281,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:309](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L309)
+[permissions.ts:309](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L309)
 
 ___
 
@@ -17269,7 +17299,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:307](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L307)
+[permissions.ts:307](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L307)
 
 ___
 
@@ -17287,7 +17317,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:312](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L312)
+[permissions.ts:312](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L312)
 
 ___
 
@@ -17305,7 +17335,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:310](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L310)
+[permissions.ts:310](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L310)
 
 ___
 
@@ -17323,7 +17353,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:303](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L303)
+[permissions.ts:303](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L303)
 
 ___
 
@@ -17341,7 +17371,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:299](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L299)
+[permissions.ts:299](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L299)
 
 ___
 
@@ -17359,7 +17389,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:308](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L308)
+[permissions.ts:308](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L308)
 
 ___
 
@@ -17377,7 +17407,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:302](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L302)
+[permissions.ts:302](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L302)
 
 ___
 
@@ -17395,7 +17425,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:298](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L298)
+[permissions.ts:298](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L298)
 
 ___
 
@@ -17413,7 +17443,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:301](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L301)
+[permissions.ts:301](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L301)
 
 ___
 
@@ -17431,7 +17461,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:306](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L306)
+[permissions.ts:306](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L306)
 
 ___
 
@@ -17449,7 +17479,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:300](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L300)
+[permissions.ts:300](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L300)
 
 ___
 
@@ -17467,7 +17497,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1268](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1268)
+[permissions.ts:1268](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1268)
 
 ___
 
@@ -17485,7 +17515,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1501](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1501)
+[permissions.ts:1501](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1501)
 
 ___
 
@@ -17503,7 +17533,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1500](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1500)
+[permissions.ts:1500](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1500)
 
 ___
 
@@ -17521,7 +17551,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1498](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1498)
+[permissions.ts:1498](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1498)
 
 ___
 
@@ -17539,7 +17569,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1497](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1497)
+[permissions.ts:1497](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1497)
 
 ___
 
@@ -17557,7 +17587,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1494](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1494)
+[permissions.ts:1494](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1494)
 
 ___
 
@@ -17575,7 +17605,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1496](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1496)
+[permissions.ts:1496](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1496)
 
 ___
 
@@ -17593,7 +17623,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1499](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1499)
+[permissions.ts:1499](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1499)
 
 ___
 
@@ -17611,7 +17641,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1495](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1495)
+[permissions.ts:1495](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1495)
 
 ___
 
@@ -17629,7 +17659,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1280](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1280)
+[permissions.ts:1280](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1280)
 
 ___
 
@@ -17647,7 +17677,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1153](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1153)
+[permissions.ts:1153](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1153)
 
 ___
 
@@ -17665,7 +17695,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1310](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1310)
+[permissions.ts:1310](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1310)
 
 ___
 
@@ -17683,7 +17713,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1265](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1265)
+[permissions.ts:1265](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1265)
 
 ___
 
@@ -17701,7 +17731,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1401](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1401)
+[permissions.ts:1401](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1401)
 
 ___
 
@@ -17719,7 +17749,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1195](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1195)
+[permissions.ts:1195](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1195)
 
 ___
 
@@ -17737,7 +17767,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1209](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1209)
+[permissions.ts:1209](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1209)
 
 ___
 
@@ -17755,7 +17785,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1223](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1223)
+[permissions.ts:1223](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1223)
 
 ___
 
@@ -17773,7 +17803,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1237](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1237)
+[permissions.ts:1237](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1237)
 
 ___
 
@@ -17791,7 +17821,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1295](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1295)
+[permissions.ts:1295](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1295)
 
 ___
 
@@ -17809,7 +17839,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1251](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1251)
+[permissions.ts:1251](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1251)
 
 ___
 
@@ -17827,7 +17857,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1033](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1033)
+[permissions.ts:1033](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1033)
 
 ___
 
@@ -17845,7 +17875,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:807](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L807)
+[permissions.ts:807](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L807)
 
 ___
 
@@ -17863,7 +17893,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:696](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L696)
+[permissions.ts:696](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L696)
 
 ___
 
@@ -17881,7 +17911,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:960](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L960)
+[permissions.ts:960](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L960)
 
 ___
 
@@ -17899,7 +17929,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:842](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L842)
+[permissions.ts:842](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L842)
 
 ___
 
@@ -17917,7 +17947,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:859](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L859)
+[permissions.ts:859](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L859)
 
 ___
 
@@ -17935,7 +17965,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:711](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L711)
+[permissions.ts:711](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L711)
 
 ___
 
@@ -17953,7 +17983,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1181](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1181)
+[permissions.ts:1181](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1181)
 
 ___
 
@@ -17971,7 +18001,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1167](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1167)
+[permissions.ts:1167](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1167)
 
 ___
 
@@ -17989,7 +18019,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1371](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1371)
+[permissions.ts:1371](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1371)
 
 ___
 
@@ -18007,7 +18037,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:793](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L793)
+[permissions.ts:793](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L793)
 
 ___
 
@@ -18025,7 +18055,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1356](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1356)
+[permissions.ts:1356](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1356)
 
 ___
 
@@ -18043,7 +18073,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:261](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L261)
+[permissions.ts:261](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L261)
 
 ___
 
@@ -18061,7 +18091,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:246](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L246)
+[permissions.ts:246](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L246)
 
 ___
 
@@ -18079,7 +18109,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:248](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L248)
+[permissions.ts:248](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L248)
 
 ___
 
@@ -18097,7 +18127,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:258](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L258)
+[permissions.ts:258](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L258)
 
 ___
 
@@ -18115,7 +18145,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:250](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L250)
+[permissions.ts:250](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L250)
 
 ___
 
@@ -18133,7 +18163,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:259](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L259)
+[permissions.ts:259](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L259)
 
 ___
 
@@ -18151,7 +18181,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:255](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L255)
+[permissions.ts:255](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L255)
 
 ___
 
@@ -18169,7 +18199,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:256](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L256)
+[permissions.ts:256](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L256)
 
 ___
 
@@ -18187,7 +18217,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:247](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L247)
+[permissions.ts:247](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L247)
 
 ___
 
@@ -18205,7 +18235,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:257](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L257)
+[permissions.ts:257](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L257)
 
 ___
 
@@ -18223,7 +18253,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:252](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L252)
+[permissions.ts:252](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L252)
 
 ___
 
@@ -18241,7 +18271,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:253](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L253)
+[permissions.ts:253](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L253)
 
 ___
 
@@ -18259,7 +18289,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:251](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L251)
+[permissions.ts:251](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L251)
 
 ___
 
@@ -18277,7 +18307,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:254](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L254)
+[permissions.ts:254](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L254)
 
 ___
 
@@ -18295,7 +18325,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:249](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L249)
+[permissions.ts:249](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L249)
 
 ___
 
@@ -18313,7 +18343,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:260](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L260)
+[permissions.ts:260](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L260)
 
 ___
 
@@ -18331,7 +18361,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:724](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L724)
+[permissions.ts:724](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L724)
 
 ___
 
@@ -18349,7 +18379,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:728](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L728)
+[permissions.ts:728](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L728)
 
 ___
 
@@ -18367,7 +18397,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:726](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L726)
+[permissions.ts:726](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L726)
 
 ___
 
@@ -18385,7 +18415,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:731](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L731)
+[permissions.ts:731](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L731)
 
 ___
 
@@ -18403,7 +18433,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:729](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L729)
+[permissions.ts:729](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L729)
 
 ___
 
@@ -18421,7 +18451,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:722](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L722)
+[permissions.ts:722](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L722)
 
 ___
 
@@ -18439,7 +18469,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:718](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L718)
+[permissions.ts:718](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L718)
 
 ___
 
@@ -18457,7 +18487,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:727](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L727)
+[permissions.ts:727](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L727)
 
 ___
 
@@ -18475,7 +18505,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:721](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L721)
+[permissions.ts:721](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L721)
 
 ___
 
@@ -18493,7 +18523,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:717](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L717)
+[permissions.ts:717](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L717)
 
 ___
 
@@ -18511,7 +18541,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:720](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L720)
+[permissions.ts:720](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L720)
 
 ___
 
@@ -18529,7 +18559,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:725](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L725)
+[permissions.ts:725](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L725)
 
 ___
 
@@ -18547,7 +18577,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:719](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L719)
+[permissions.ts:719](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L719)
 
 ___
 
@@ -18565,7 +18595,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:741](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L741)
+[permissions.ts:741](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L741)
 
 ___
 
@@ -18583,7 +18613,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:745](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L745)
+[permissions.ts:745](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L745)
 
 ___
 
@@ -18601,7 +18631,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:743](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L743)
+[permissions.ts:743](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L743)
 
 ___
 
@@ -18619,7 +18649,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:748](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L748)
+[permissions.ts:748](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L748)
 
 ___
 
@@ -18637,7 +18667,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:746](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L746)
+[permissions.ts:746](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L746)
 
 ___
 
@@ -18655,7 +18685,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:739](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L739)
+[permissions.ts:739](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L739)
 
 ___
 
@@ -18673,7 +18703,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:735](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L735)
+[permissions.ts:735](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L735)
 
 ___
 
@@ -18691,7 +18721,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:744](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L744)
+[permissions.ts:744](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L744)
 
 ___
 
@@ -18709,7 +18739,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:738](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L738)
+[permissions.ts:738](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L738)
 
 ___
 
@@ -18727,7 +18757,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:734](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L734)
+[permissions.ts:734](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L734)
 
 ___
 
@@ -18745,7 +18775,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:737](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L737)
+[permissions.ts:737](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L737)
 
 ___
 
@@ -18763,7 +18793,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:742](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L742)
+[permissions.ts:742](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L742)
 
 ___
 
@@ -18781,7 +18811,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:736](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L736)
+[permissions.ts:736](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L736)
 
 ___
 
@@ -18799,7 +18829,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1338](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1338)
+[permissions.ts:1338](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1338)
 
 ___
 
@@ -18817,7 +18847,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1342](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1342)
+[permissions.ts:1342](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1342)
 
 ___
 
@@ -18835,7 +18865,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1340](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1340)
+[permissions.ts:1340](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1340)
 
 ___
 
@@ -18853,7 +18883,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1343](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1343)
+[permissions.ts:1343](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1343)
 
 ___
 
@@ -18871,7 +18901,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1336](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1336)
+[permissions.ts:1336](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1336)
 
 ___
 
@@ -18889,7 +18919,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1332](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1332)
+[permissions.ts:1332](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1332)
 
 ___
 
@@ -18907,7 +18937,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1341](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1341)
+[permissions.ts:1341](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1341)
 
 ___
 
@@ -18925,7 +18955,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1335](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1335)
+[permissions.ts:1335](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1335)
 
 ___
 
@@ -18943,7 +18973,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1331](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1331)
+[permissions.ts:1331](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1331)
 
 ___
 
@@ -18961,7 +18991,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1334](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1334)
+[permissions.ts:1334](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1334)
 
 ___
 
@@ -18979,7 +19009,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1339](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1339)
+[permissions.ts:1339](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1339)
 
 ___
 
@@ -18997,7 +19027,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1333](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1333)
+[permissions.ts:1333](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1333)
 
 ___
 
@@ -19015,7 +19045,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1058](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1058)
+[permissions.ts:1058](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1058)
 
 ___
 
@@ -19033,7 +19063,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1278](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1278)
+[permissions.ts:1278](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1278)
 
 ___
 
@@ -19051,7 +19081,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1457](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1457)
+[permissions.ts:1457](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1457)
 
 ___
 
@@ -19069,7 +19099,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1454](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1454)
+[permissions.ts:1454](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1454)
 
 ___
 
@@ -19087,7 +19117,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1441](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1441)
+[permissions.ts:1441](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1441)
 
 ___
 
@@ -19105,7 +19135,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1428](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1428)
+[permissions.ts:1428](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1428)
 
 ___
 
@@ -19123,7 +19153,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1415](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1415)
+[permissions.ts:1415](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1415)
 
 ___
 
@@ -19141,7 +19171,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1444](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1444)
+[permissions.ts:1444](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1444)
 
 ___
 
@@ -19159,7 +19189,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1431](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1431)
+[permissions.ts:1431](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1431)
 
 ___
 
@@ -19177,7 +19207,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1418](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1418)
+[permissions.ts:1418](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1418)
 
 ___
 
@@ -19195,7 +19225,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1151](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1151)
+[permissions.ts:1151](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1151)
 
 ___
 
@@ -19213,7 +19243,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:58](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L58)
+[permissions.ts:58](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L58)
 
 ___
 
@@ -19231,7 +19261,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1308](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1308)
+[permissions.ts:1308](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1308)
 
 ___
 
@@ -19249,7 +19279,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1263](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1263)
+[permissions.ts:1263](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1263)
 
 ___
 
@@ -19267,7 +19297,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1102](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1102)
+[permissions.ts:1102](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1102)
 
 ___
 
@@ -19285,7 +19315,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1099](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1099)
+[permissions.ts:1099](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1099)
 
 ___
 
@@ -19303,7 +19333,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:52](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L52)
+[permissions.ts:52](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L52)
 
 ___
 
@@ -19321,7 +19351,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:49](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L49)
+[permissions.ts:49](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L49)
 
 ___
 
@@ -19339,7 +19369,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:65](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L65)
+[permissions.ts:65](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L65)
 
 ___
 
@@ -19357,7 +19387,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:443](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L443)
+[permissions.ts:443](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L443)
 
 ___
 
@@ -19375,7 +19405,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:446](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L446)
+[permissions.ts:446](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L446)
 
 ___
 
@@ -19393,7 +19423,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:38](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L38)
+[permissions.ts:38](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L38)
 
 ___
 
@@ -19411,7 +19441,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:33](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L33)
+[permissions.ts:33](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L33)
 
 ___
 
@@ -19429,7 +19459,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1193](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1193)
+[permissions.ts:1193](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1193)
 
 ___
 
@@ -19447,7 +19477,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1064](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1064)
+[permissions.ts:1064](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1064)
 
 ___
 
@@ -19465,7 +19495,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1207](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1207)
+[permissions.ts:1207](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1207)
 
 ___
 
@@ -19483,7 +19513,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1221](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1221)
+[permissions.ts:1221](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1221)
 
 ___
 
@@ -19501,7 +19531,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1235](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1235)
+[permissions.ts:1235](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1235)
 
 ___
 
@@ -19519,7 +19549,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1141](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1141)
+[permissions.ts:1141](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1141)
 
 ___
 
@@ -19537,7 +19567,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1138](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1138)
+[permissions.ts:1138](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1138)
 
 ___
 
@@ -19555,7 +19585,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1089](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1089)
+[permissions.ts:1089](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1089)
 
 ___
 
@@ -19573,7 +19603,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1086](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1086)
+[permissions.ts:1086](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1086)
 
 ___
 
@@ -19591,7 +19621,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1071](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1071)
+[permissions.ts:1071](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1071)
 
 ___
 
@@ -19609,7 +19639,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1293](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1293)
+[permissions.ts:1293](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1293)
 
 ___
 
@@ -19627,7 +19657,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1249](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1249)
+[permissions.ts:1249](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1249)
 
 ___
 
@@ -19645,7 +19675,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1031](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1031)
+[permissions.ts:1031](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1031)
 
 ___
 
@@ -19663,7 +19693,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:694](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L694)
+[permissions.ts:694](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L694)
 
 ___
 
@@ -19681,7 +19711,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:958](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L958)
+[permissions.ts:958](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L958)
 
 ___
 
@@ -19699,7 +19729,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:709](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L709)
+[permissions.ts:709](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L709)
 
 ___
 
@@ -19717,7 +19747,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1179](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1179)
+[permissions.ts:1179](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1179)
 
 ___
 
@@ -19735,7 +19765,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1165](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1165)
+[permissions.ts:1165](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1165)
 
 ___
 
@@ -19753,7 +19783,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1369](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1369)
+[permissions.ts:1369](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1369)
 
 ___
 
@@ -19771,7 +19801,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1128](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1128)
+[permissions.ts:1128](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1128)
 
 ___
 
@@ -19789,7 +19819,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1125](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1125)
+[permissions.ts:1125](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1125)
 
 ___
 
@@ -19807,7 +19837,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1115](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1115)
+[permissions.ts:1115](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1115)
 
 ___
 
@@ -19825,7 +19855,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1112](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1112)
+[permissions.ts:1112](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1112)
 
 ___
 
@@ -19843,7 +19873,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:791](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L791)
+[permissions.ts:791](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L791)
 
 ___
 
@@ -19861,7 +19891,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1021](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1021)
+[permissions.ts:1021](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1021)
 
 ___
 
@@ -19879,7 +19909,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1018](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1018)
+[permissions.ts:1018](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1018)
 
 ___
 
@@ -19897,7 +19927,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1008](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1008)
+[permissions.ts:1008](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1008)
 
 ___
 
@@ -19915,7 +19945,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1005](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1005)
+[permissions.ts:1005](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1005)
 
 ___
 
@@ -19933,7 +19963,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:459](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L459)
+[permissions.ts:459](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L459)
 
 ___
 
@@ -19951,7 +19981,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:456](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L456)
+[permissions.ts:456](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L456)
 
 ___
 
@@ -19969,7 +19999,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:79](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L79)
+[permissions.ts:79](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L79)
 
 ___
 
@@ -19987,7 +20017,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:76](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L76)
+[permissions.ts:76](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L76)
 
 ___
 
@@ -20005,7 +20035,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1354](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1354)
+[permissions.ts:1354](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1354)
 
 ___
 
@@ -20023,7 +20053,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1272](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1272)
+[permissions.ts:1272](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1272)
 
 ___
 
@@ -20041,7 +20071,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1448](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1448)
+[permissions.ts:1448](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1448)
 
 ___
 
@@ -20059,7 +20089,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1435](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1435)
+[permissions.ts:1435](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1435)
 
 ___
 
@@ -20077,7 +20107,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1422](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1422)
+[permissions.ts:1422](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1422)
 
 ___
 
@@ -20095,7 +20125,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1409](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1409)
+[permissions.ts:1409](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1409)
 
 ___
 
@@ -20113,7 +20143,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1145](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1145)
+[permissions.ts:1145](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1145)
 
 ___
 
@@ -20131,7 +20161,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1302](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1302)
+[permissions.ts:1302](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1302)
 
 ___
 
@@ -20149,7 +20179,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1257](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1257)
+[permissions.ts:1257](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1257)
 
 ___
 
@@ -20167,7 +20197,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1093](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1093)
+[permissions.ts:1093](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1093)
 
 ___
 
@@ -20185,7 +20215,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:43](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L43)
+[permissions.ts:43](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L43)
 
 ___
 
@@ -20203,7 +20233,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:437](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L437)
+[permissions.ts:437](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L437)
 
 ___
 
@@ -20221,7 +20251,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1393](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1393)
+[permissions.ts:1393](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1393)
 
 ___
 
@@ -20239,7 +20269,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1187](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1187)
+[permissions.ts:1187](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1187)
 
 ___
 
@@ -20257,7 +20287,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1201](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1201)
+[permissions.ts:1201](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1201)
 
 ___
 
@@ -20275,7 +20305,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1215](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1215)
+[permissions.ts:1215](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1215)
 
 ___
 
@@ -20293,7 +20323,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1229](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1229)
+[permissions.ts:1229](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1229)
 
 ___
 
@@ -20311,7 +20341,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1132](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1132)
+[permissions.ts:1132](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1132)
 
 ___
 
@@ -20329,7 +20359,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1080](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1080)
+[permissions.ts:1080](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1080)
 
 ___
 
@@ -20347,7 +20377,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1287](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1287)
+[permissions.ts:1287](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1287)
 
 ___
 
@@ -20365,7 +20395,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1243](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1243)
+[permissions.ts:1243](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1243)
 
 ___
 
@@ -20383,7 +20413,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1025](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1025)
+[permissions.ts:1025](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1025)
 
 ___
 
@@ -20401,7 +20431,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:799](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L799)
+[permissions.ts:799](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L799)
 
 ___
 
@@ -20419,7 +20449,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:688](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L688)
+[permissions.ts:688](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L688)
 
 ___
 
@@ -20437,7 +20467,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:952](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L952)
+[permissions.ts:952](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L952)
 
 ___
 
@@ -20455,7 +20485,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:834](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L834)
+[permissions.ts:834](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L834)
 
 ___
 
@@ -20473,7 +20503,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:851](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L851)
+[permissions.ts:851](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L851)
 
 ___
 
@@ -20491,7 +20521,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:703](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L703)
+[permissions.ts:703](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L703)
 
 ___
 
@@ -20509,7 +20539,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1173](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1173)
+[permissions.ts:1173](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1173)
 
 ___
 
@@ -20527,7 +20557,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1159](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1159)
+[permissions.ts:1159](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1159)
 
 ___
 
@@ -20545,7 +20575,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1363](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1363)
+[permissions.ts:1363](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1363)
 
 ___
 
@@ -20563,7 +20593,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1119](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1119)
+[permissions.ts:1119](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1119)
 
 ___
 
@@ -20581,7 +20611,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1106](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1106)
+[permissions.ts:1106](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1106)
 
 ___
 
@@ -20599,7 +20629,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:785](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L785)
+[permissions.ts:785](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L785)
 
 ___
 
@@ -20617,7 +20647,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1012](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1012)
+[permissions.ts:1012](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1012)
 
 ___
 
@@ -20635,7 +20665,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:999](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L999)
+[permissions.ts:999](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L999)
 
 ___
 
@@ -20653,7 +20683,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:450](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L450)
+[permissions.ts:450](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L450)
 
 ___
 
@@ -20671,7 +20701,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:70](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L70)
+[permissions.ts:70](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L70)
 
 ___
 
@@ -20689,7 +20719,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1348](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1348)
+[permissions.ts:1348](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1348)
 
 ___
 
@@ -20707,7 +20737,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:874](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L874)
+[permissions.ts:874](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L874)
 
 ___
 
@@ -20725,7 +20755,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:878](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L878)
+[permissions.ts:878](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L878)
 
 ___
 
@@ -20743,7 +20773,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:876](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L876)
+[permissions.ts:876](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L876)
 
 ___
 
@@ -20761,7 +20791,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:881](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L881)
+[permissions.ts:881](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L881)
 
 ___
 
@@ -20779,7 +20809,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:879](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L879)
+[permissions.ts:879](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L879)
 
 ___
 
@@ -20797,7 +20827,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:872](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L872)
+[permissions.ts:872](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L872)
 
 ___
 
@@ -20815,7 +20845,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:868](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L868)
+[permissions.ts:868](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L868)
 
 ___
 
@@ -20833,7 +20863,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:877](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L877)
+[permissions.ts:877](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L877)
 
 ___
 
@@ -20851,7 +20881,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:871](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L871)
+[permissions.ts:871](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L871)
 
 ___
 
@@ -20869,7 +20899,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:867](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L867)
+[permissions.ts:867](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L867)
 
 ___
 
@@ -20887,7 +20917,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:870](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L870)
+[permissions.ts:870](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L870)
 
 ___
 
@@ -20905,7 +20935,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:875](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L875)
+[permissions.ts:875](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L875)
 
 ___
 
@@ -20923,7 +20953,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:869](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L869)
+[permissions.ts:869](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L869)
 
 ___
 
@@ -20941,7 +20971,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:926](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L926)
+[permissions.ts:926](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L926)
 
 ___
 
@@ -20959,7 +20989,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:930](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L930)
+[permissions.ts:930](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L930)
 
 ___
 
@@ -20977,7 +21007,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:928](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L928)
+[permissions.ts:928](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L928)
 
 ___
 
@@ -20995,7 +21025,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:933](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L933)
+[permissions.ts:933](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L933)
 
 ___
 
@@ -21013,7 +21043,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:931](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L931)
+[permissions.ts:931](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L931)
 
 ___
 
@@ -21031,7 +21061,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:924](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L924)
+[permissions.ts:924](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L924)
 
 ___
 
@@ -21049,7 +21079,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:920](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L920)
+[permissions.ts:920](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L920)
 
 ___
 
@@ -21067,7 +21097,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:929](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L929)
+[permissions.ts:929](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L929)
 
 ___
 
@@ -21085,7 +21115,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:923](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L923)
+[permissions.ts:923](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L923)
 
 ___
 
@@ -21103,7 +21133,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:919](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L919)
+[permissions.ts:919](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L919)
 
 ___
 
@@ -21121,7 +21151,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:922](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L922)
+[permissions.ts:922](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L922)
 
 ___
 
@@ -21139,7 +21169,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:927](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L927)
+[permissions.ts:927](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L927)
 
 ___
 
@@ -21157,7 +21187,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:921](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L921)
+[permissions.ts:921](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L921)
 
 ___
 
@@ -21175,7 +21205,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:891](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L891)
+[permissions.ts:891](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L891)
 
 ___
 
@@ -21193,7 +21223,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:895](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L895)
+[permissions.ts:895](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L895)
 
 ___
 
@@ -21211,7 +21241,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:893](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L893)
+[permissions.ts:893](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L893)
 
 ___
 
@@ -21229,7 +21259,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:898](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L898)
+[permissions.ts:898](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L898)
 
 ___
 
@@ -21247,7 +21277,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:896](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L896)
+[permissions.ts:896](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L896)
 
 ___
 
@@ -21265,7 +21295,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:889](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L889)
+[permissions.ts:889](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L889)
 
 ___
 
@@ -21283,7 +21313,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:885](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L885)
+[permissions.ts:885](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L885)
 
 ___
 
@@ -21301,7 +21331,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:894](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L894)
+[permissions.ts:894](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L894)
 
 ___
 
@@ -21319,7 +21349,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:888](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L888)
+[permissions.ts:888](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L888)
 
 ___
 
@@ -21337,7 +21367,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:884](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L884)
+[permissions.ts:884](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L884)
 
 ___
 
@@ -21355,7 +21385,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:887](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L887)
+[permissions.ts:887](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L887)
 
 ___
 
@@ -21373,7 +21403,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:892](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L892)
+[permissions.ts:892](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L892)
 
 ___
 
@@ -21391,7 +21421,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:886](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L886)
+[permissions.ts:886](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L886)
 
 ___
 
@@ -21409,7 +21439,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:908](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L908)
+[permissions.ts:908](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L908)
 
 ___
 
@@ -21427,7 +21457,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:912](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L912)
+[permissions.ts:912](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L912)
 
 ___
 
@@ -21445,7 +21475,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:910](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L910)
+[permissions.ts:910](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L910)
 
 ___
 
@@ -21463,7 +21493,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:916](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L916)
+[permissions.ts:916](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L916)
 
 ___
 
@@ -21481,7 +21511,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:913](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L913)
+[permissions.ts:913](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L913)
 
 ___
 
@@ -21499,7 +21529,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:906](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L906)
+[permissions.ts:906](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L906)
 
 ___
 
@@ -21517,7 +21547,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:902](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L902)
+[permissions.ts:902](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L902)
 
 ___
 
@@ -21535,7 +21565,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:911](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L911)
+[permissions.ts:911](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L911)
 
 ___
 
@@ -21553,7 +21583,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:905](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L905)
+[permissions.ts:905](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L905)
 
 ___
 
@@ -21571,7 +21601,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:901](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L901)
+[permissions.ts:901](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L901)
 
 ___
 
@@ -21589,7 +21619,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:904](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L904)
+[permissions.ts:904](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L904)
 
 ___
 
@@ -21607,7 +21637,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:909](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L909)
+[permissions.ts:909](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L909)
 
 ___
 
@@ -21625,7 +21655,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:903](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L903)
+[permissions.ts:903](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L903)
 
 ___
 
@@ -21643,7 +21673,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:210](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L210)
+[permissions.ts:210](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L210)
 
 ___
 
@@ -21661,7 +21691,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:212](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L212)
+[permissions.ts:212](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L212)
 
 ___
 
@@ -21679,7 +21709,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:222](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L222)
+[permissions.ts:222](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L222)
 
 ___
 
@@ -21697,7 +21727,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:214](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L214)
+[permissions.ts:214](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L214)
 
 ___
 
@@ -21715,7 +21745,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:225](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L225)
+[permissions.ts:225](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L225)
 
 ___
 
@@ -21733,7 +21763,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:223](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L223)
+[permissions.ts:223](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L223)
 
 ___
 
@@ -21751,7 +21781,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:219](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L219)
+[permissions.ts:219](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L219)
 
 ___
 
@@ -21769,7 +21799,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:220](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L220)
+[permissions.ts:220](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L220)
 
 ___
 
@@ -21787,7 +21817,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:211](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L211)
+[permissions.ts:211](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L211)
 
 ___
 
@@ -21805,7 +21835,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:221](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L221)
+[permissions.ts:221](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L221)
 
 ___
 
@@ -21823,7 +21853,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:216](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L216)
+[permissions.ts:216](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L216)
 
 ___
 
@@ -21841,7 +21871,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:217](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L217)
+[permissions.ts:217](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L217)
 
 ___
 
@@ -21859,7 +21889,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:215](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L215)
+[permissions.ts:215](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L215)
 
 ___
 
@@ -21877,7 +21907,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:218](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L218)
+[permissions.ts:218](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L218)
 
 ___
 
@@ -21895,7 +21925,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:213](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L213)
+[permissions.ts:213](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L213)
 
 ___
 
@@ -21913,7 +21943,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:224](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L224)
+[permissions.ts:224](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L224)
 
 ___
 
@@ -21931,7 +21961,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:758](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L758)
+[permissions.ts:758](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L758)
 
 ___
 
@@ -21949,7 +21979,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:762](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L762)
+[permissions.ts:762](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L762)
 
 ___
 
@@ -21967,7 +21997,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:760](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L760)
+[permissions.ts:760](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L760)
 
 ___
 
@@ -21985,7 +22015,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:765](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L765)
+[permissions.ts:765](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L765)
 
 ___
 
@@ -22003,7 +22033,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:763](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L763)
+[permissions.ts:763](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L763)
 
 ___
 
@@ -22021,7 +22051,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:756](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L756)
+[permissions.ts:756](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L756)
 
 ___
 
@@ -22039,7 +22069,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:752](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L752)
+[permissions.ts:752](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L752)
 
 ___
 
@@ -22057,7 +22087,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:761](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L761)
+[permissions.ts:761](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L761)
 
 ___
 
@@ -22075,7 +22105,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:755](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L755)
+[permissions.ts:755](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L755)
 
 ___
 
@@ -22093,7 +22123,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:751](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L751)
+[permissions.ts:751](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L751)
 
 ___
 
@@ -22111,7 +22141,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:754](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L754)
+[permissions.ts:754](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L754)
 
 ___
 
@@ -22129,7 +22159,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:759](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L759)
+[permissions.ts:759](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L759)
 
 ___
 
@@ -22147,7 +22177,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:753](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L753)
+[permissions.ts:753](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L753)
 
 ___
 
@@ -22165,7 +22195,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:943](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L943)
+[permissions.ts:943](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L943)
 
 ___
 
@@ -22183,7 +22213,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:946](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L946)
+[permissions.ts:946](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L946)
 
 ___
 
@@ -22201,7 +22231,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:947](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L947)
+[permissions.ts:947](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L947)
 
 ___
 
@@ -22219,7 +22249,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:941](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L941)
+[permissions.ts:941](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L941)
 
 ___
 
@@ -22237,7 +22267,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:937](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L937)
+[permissions.ts:937](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L937)
 
 ___
 
@@ -22255,7 +22285,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:945](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L945)
+[permissions.ts:945](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L945)
 
 ___
 
@@ -22273,7 +22303,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:940](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L940)
+[permissions.ts:940](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L940)
 
 ___
 
@@ -22291,7 +22321,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:936](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L936)
+[permissions.ts:936](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L936)
 
 ___
 
@@ -22309,7 +22339,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:939](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L939)
+[permissions.ts:939](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L939)
 
 ___
 
@@ -22327,7 +22357,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:944](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L944)
+[permissions.ts:944](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L944)
 
 ___
 
@@ -22345,7 +22375,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:938](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L938)
+[permissions.ts:938](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L938)
 
 ___
 
@@ -22363,7 +22393,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:174](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L174)
+[permissions.ts:174](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L174)
 
 ___
 
@@ -22381,7 +22411,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:176](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L176)
+[permissions.ts:176](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L176)
 
 ___
 
@@ -22399,7 +22429,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:186](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L186)
+[permissions.ts:186](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L186)
 
 ___
 
@@ -22417,7 +22447,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:178](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L178)
+[permissions.ts:178](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L178)
 
 ___
 
@@ -22435,7 +22465,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:189](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L189)
+[permissions.ts:189](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L189)
 
 ___
 
@@ -22453,7 +22483,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:187](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L187)
+[permissions.ts:187](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L187)
 
 ___
 
@@ -22471,7 +22501,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:183](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L183)
+[permissions.ts:183](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L183)
 
 ___
 
@@ -22489,7 +22519,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:184](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L184)
+[permissions.ts:184](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L184)
 
 ___
 
@@ -22507,7 +22537,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:175](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L175)
+[permissions.ts:175](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L175)
 
 ___
 
@@ -22525,7 +22555,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:185](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L185)
+[permissions.ts:185](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L185)
 
 ___
 
@@ -22543,7 +22573,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:180](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L180)
+[permissions.ts:180](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L180)
 
 ___
 
@@ -22561,7 +22591,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:181](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L181)
+[permissions.ts:181](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L181)
 
 ___
 
@@ -22579,7 +22609,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:179](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L179)
+[permissions.ts:179](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L179)
 
 ___
 
@@ -22597,7 +22627,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:182](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L182)
+[permissions.ts:182](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L182)
 
 ___
 
@@ -22615,7 +22645,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:177](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L177)
+[permissions.ts:177](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L177)
 
 ___
 
@@ -22633,7 +22663,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:188](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L188)
+[permissions.ts:188](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L188)
 
 ___
 
@@ -22651,7 +22681,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1514](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1514)
+[permissions.ts:1514](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1514)
 
 ___
 
@@ -22669,7 +22699,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1513](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1513)
+[permissions.ts:1513](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1513)
 
 ___
 
@@ -22687,7 +22717,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1511](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1511)
+[permissions.ts:1511](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1511)
 
 ___
 
@@ -22705,7 +22735,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1510](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1510)
+[permissions.ts:1510](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1510)
 
 ___
 
@@ -22723,7 +22753,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1507](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1507)
+[permissions.ts:1507](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1507)
 
 ___
 
@@ -22741,7 +22771,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1509](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1509)
+[permissions.ts:1509](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1509)
 
 ___
 
@@ -22759,7 +22789,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1512](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1512)
+[permissions.ts:1512](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1512)
 
 ___
 
@@ -22777,7 +22807,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1508](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1508)
+[permissions.ts:1508](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1508)
 
 ___
 
@@ -22795,7 +22825,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1404](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1404)
+[permissions.ts:1404](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1404)
 
 ___
 
@@ -22813,7 +22843,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1397](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1397)
+[permissions.ts:1397](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1397)
 
 ___
 
@@ -22831,7 +22861,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:557](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L557)
+[permissions.ts:557](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L557)
 
 ___
 
@@ -22849,7 +22879,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:561](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L561)
+[permissions.ts:561](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L561)
 
 ___
 
@@ -22867,7 +22897,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:559](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L559)
+[permissions.ts:559](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L559)
 
 ___
 
@@ -22885,7 +22915,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:564](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L564)
+[permissions.ts:564](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L564)
 
 ___
 
@@ -22903,7 +22933,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:562](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L562)
+[permissions.ts:562](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L562)
 
 ___
 
@@ -22921,7 +22951,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:555](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L555)
+[permissions.ts:555](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L555)
 
 ___
 
@@ -22939,7 +22969,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:551](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L551)
+[permissions.ts:551](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L551)
 
 ___
 
@@ -22957,7 +22987,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:560](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L560)
+[permissions.ts:560](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L560)
 
 ___
 
@@ -22975,7 +23005,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:554](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L554)
+[permissions.ts:554](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L554)
 
 ___
 
@@ -22993,7 +23023,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:550](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L550)
+[permissions.ts:550](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L550)
 
 ___
 
@@ -23011,7 +23041,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:553](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L553)
+[permissions.ts:553](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L553)
 
 ___
 
@@ -23029,7 +23059,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:558](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L558)
+[permissions.ts:558](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L558)
 
 ___
 
@@ -23047,7 +23077,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:552](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L552)
+[permissions.ts:552](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L552)
 
 ___
 
@@ -23065,7 +23095,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:591](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L591)
+[permissions.ts:591](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L591)
 
 ___
 
@@ -23083,7 +23113,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:595](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L595)
+[permissions.ts:595](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L595)
 
 ___
 
@@ -23101,7 +23131,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:593](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L593)
+[permissions.ts:593](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L593)
 
 ___
 
@@ -23119,7 +23149,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:598](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L598)
+[permissions.ts:598](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L598)
 
 ___
 
@@ -23137,7 +23167,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:596](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L596)
+[permissions.ts:596](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L596)
 
 ___
 
@@ -23155,7 +23185,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:589](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L589)
+[permissions.ts:589](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L589)
 
 ___
 
@@ -23173,7 +23203,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:585](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L585)
+[permissions.ts:585](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L585)
 
 ___
 
@@ -23191,7 +23221,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:594](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L594)
+[permissions.ts:594](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L594)
 
 ___
 
@@ -23209,7 +23239,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:588](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L588)
+[permissions.ts:588](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L588)
 
 ___
 
@@ -23227,7 +23257,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:584](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L584)
+[permissions.ts:584](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L584)
 
 ___
 
@@ -23245,7 +23275,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:587](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L587)
+[permissions.ts:587](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L587)
 
 ___
 
@@ -23263,7 +23293,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:592](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L592)
+[permissions.ts:592](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L592)
 
 ___
 
@@ -23281,7 +23311,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:586](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L586)
+[permissions.ts:586](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L586)
 
 ___
 
@@ -23299,7 +23329,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1281](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1281)
+[permissions.ts:1281](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1281)
 
 ___
 
@@ -23317,7 +23347,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1456](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1456)
+[permissions.ts:1456](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1456)
 
 ___
 
@@ -23335,7 +23365,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1443](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1443)
+[permissions.ts:1443](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1443)
 
 ___
 
@@ -23353,7 +23383,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1430](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1430)
+[permissions.ts:1430](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1430)
 
 ___
 
@@ -23371,7 +23401,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1417](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1417)
+[permissions.ts:1417](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1417)
 
 ___
 
@@ -23389,7 +23419,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1154](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1154)
+[permissions.ts:1154](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1154)
 
 ___
 
@@ -23407,7 +23437,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1266](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1266)
+[permissions.ts:1266](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1266)
 
 ___
 
@@ -23425,7 +23455,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1311](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1311)
+[permissions.ts:1311](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1311)
 
 ___
 
@@ -23443,7 +23473,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1101](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1101)
+[permissions.ts:1101](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1101)
 
 ___
 
@@ -23461,7 +23491,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:51](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L51)
+[permissions.ts:51](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L51)
 
 ___
 
@@ -23479,7 +23509,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:445](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L445)
+[permissions.ts:445](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L445)
 
 ___
 
@@ -23497,7 +23527,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1402](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1402)
+[permissions.ts:1402](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1402)
 
 ___
 
@@ -23515,7 +23545,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1196](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1196)
+[permissions.ts:1196](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1196)
 
 ___
 
@@ -23533,7 +23563,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1224](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1224)
+[permissions.ts:1224](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1224)
 
 ___
 
@@ -23551,7 +23581,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1238](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1238)
+[permissions.ts:1238](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1238)
 
 ___
 
@@ -23569,7 +23599,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1210](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1210)
+[permissions.ts:1210](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1210)
 
 ___
 
@@ -23587,7 +23617,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1140](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1140)
+[permissions.ts:1140](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1140)
 
 ___
 
@@ -23605,7 +23635,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1088](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1088)
+[permissions.ts:1088](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1088)
 
 ___
 
@@ -23623,7 +23653,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1296](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1296)
+[permissions.ts:1296](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1296)
 
 ___
 
@@ -23641,7 +23671,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1252](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1252)
+[permissions.ts:1252](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1252)
 
 ___
 
@@ -23659,7 +23689,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1034](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1034)
+[permissions.ts:1034](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1034)
 
 ___
 
@@ -23677,7 +23707,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:808](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L808)
+[permissions.ts:808](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L808)
 
 ___
 
@@ -23695,7 +23725,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:697](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L697)
+[permissions.ts:697](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L697)
 
 ___
 
@@ -23713,7 +23743,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:961](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L961)
+[permissions.ts:961](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L961)
 
 ___
 
@@ -23731,7 +23761,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:843](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L843)
+[permissions.ts:843](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L843)
 
 ___
 
@@ -23749,7 +23779,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:860](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L860)
+[permissions.ts:860](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L860)
 
 ___
 
@@ -23767,7 +23797,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:712](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L712)
+[permissions.ts:712](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L712)
 
 ___
 
@@ -23785,7 +23815,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1168](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1168)
+[permissions.ts:1168](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1168)
 
 ___
 
@@ -23803,7 +23833,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1182](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1182)
+[permissions.ts:1182](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1182)
 
 ___
 
@@ -23821,7 +23851,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1372](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1372)
+[permissions.ts:1372](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1372)
 
 ___
 
@@ -23839,7 +23869,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1127](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1127)
+[permissions.ts:1127](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1127)
 
 ___
 
@@ -23857,7 +23887,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1114](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1114)
+[permissions.ts:1114](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1114)
 
 ___
 
@@ -23875,7 +23905,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:794](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L794)
+[permissions.ts:794](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L794)
 
 ___
 
@@ -23893,7 +23923,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1020](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1020)
+[permissions.ts:1020](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1020)
 
 ___
 
@@ -23911,7 +23941,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1007](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1007)
+[permissions.ts:1007](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1007)
 
 ___
 
@@ -23929,7 +23959,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:458](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L458)
+[permissions.ts:458](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L458)
 
 ___
 
@@ -23947,7 +23977,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:78](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L78)
+[permissions.ts:78](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L78)
 
 ___
 
@@ -23965,7 +23995,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1357](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1357)
+[permissions.ts:1357](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1357)
 
 ___
 
@@ -23983,7 +24013,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1277](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1277)
+[permissions.ts:1277](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1277)
 
 ___
 
@@ -24001,7 +24031,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1453](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1453)
+[permissions.ts:1453](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1453)
 
 ___
 
@@ -24019,7 +24049,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1440](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1440)
+[permissions.ts:1440](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1440)
 
 ___
 
@@ -24037,7 +24067,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1427](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1427)
+[permissions.ts:1427](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1427)
 
 ___
 
@@ -24055,7 +24085,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1414](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1414)
+[permissions.ts:1414](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1414)
 
 ___
 
@@ -24073,7 +24103,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1150](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1150)
+[permissions.ts:1150](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1150)
 
 ___
 
@@ -24091,7 +24121,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1307](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1307)
+[permissions.ts:1307](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1307)
 
 ___
 
@@ -24109,7 +24139,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1262](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1262)
+[permissions.ts:1262](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1262)
 
 ___
 
@@ -24127,7 +24157,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1098](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1098)
+[permissions.ts:1098](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1098)
 
 ___
 
@@ -24145,7 +24175,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:48](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L48)
+[permissions.ts:48](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L48)
 
 ___
 
@@ -24163,7 +24193,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:442](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L442)
+[permissions.ts:442](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L442)
 
 ___
 
@@ -24181,7 +24211,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1396](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1396)
+[permissions.ts:1396](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1396)
 
 ___
 
@@ -24199,7 +24229,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1192](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1192)
+[permissions.ts:1192](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1192)
 
 ___
 
@@ -24217,7 +24247,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1206](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1206)
+[permissions.ts:1206](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1206)
 
 ___
 
@@ -24235,7 +24265,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1220](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1220)
+[permissions.ts:1220](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1220)
 
 ___
 
@@ -24253,7 +24283,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1234](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1234)
+[permissions.ts:1234](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1234)
 
 ___
 
@@ -24271,7 +24301,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1137](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1137)
+[permissions.ts:1137](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1137)
 
 ___
 
@@ -24289,7 +24319,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1085](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1085)
+[permissions.ts:1085](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1085)
 
 ___
 
@@ -24307,7 +24337,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1292](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1292)
+[permissions.ts:1292](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1292)
 
 ___
 
@@ -24325,7 +24355,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1248](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1248)
+[permissions.ts:1248](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1248)
 
 ___
 
@@ -24343,7 +24373,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1030](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1030)
+[permissions.ts:1030](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1030)
 
 ___
 
@@ -24361,7 +24391,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:802](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L802)
+[permissions.ts:802](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L802)
 
 ___
 
@@ -24379,7 +24409,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:693](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L693)
+[permissions.ts:693](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L693)
 
 ___
 
@@ -24397,7 +24427,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:957](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L957)
+[permissions.ts:957](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L957)
 
 ___
 
@@ -24415,7 +24445,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:837](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L837)
+[permissions.ts:837](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L837)
 
 ___
 
@@ -24433,7 +24463,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:854](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L854)
+[permissions.ts:854](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L854)
 
 ___
 
@@ -24451,7 +24481,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:708](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L708)
+[permissions.ts:708](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L708)
 
 ___
 
@@ -24469,7 +24499,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1178](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1178)
+[permissions.ts:1178](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1178)
 
 ___
 
@@ -24487,7 +24517,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1164](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1164)
+[permissions.ts:1164](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1164)
 
 ___
 
@@ -24505,7 +24535,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1368](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1368)
+[permissions.ts:1368](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1368)
 
 ___
 
@@ -24523,7 +24553,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1124](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1124)
+[permissions.ts:1124](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1124)
 
 ___
 
@@ -24541,7 +24571,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1111](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1111)
+[permissions.ts:1111](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1111)
 
 ___
 
@@ -24559,7 +24589,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:790](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L790)
+[permissions.ts:790](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L790)
 
 ___
 
@@ -24577,7 +24607,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1017](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1017)
+[permissions.ts:1017](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1017)
 
 ___
 
@@ -24595,7 +24625,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1004](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1004)
+[permissions.ts:1004](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1004)
 
 ___
 
@@ -24613,7 +24643,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:455](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L455)
+[permissions.ts:455](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L455)
 
 ___
 
@@ -24631,7 +24661,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:75](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L75)
+[permissions.ts:75](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L75)
 
 ___
 
@@ -24649,7 +24679,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1353](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1353)
+[permissions.ts:1353](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1353)
 
 ___
 
@@ -24667,7 +24697,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:228](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L228)
+[permissions.ts:228](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L228)
 
 ___
 
@@ -24685,7 +24715,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:230](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L230)
+[permissions.ts:230](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L230)
 
 ___
 
@@ -24703,7 +24733,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:240](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L240)
+[permissions.ts:240](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L240)
 
 ___
 
@@ -24721,7 +24751,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:232](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L232)
+[permissions.ts:232](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L232)
 
 ___
 
@@ -24739,7 +24769,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:243](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L243)
+[permissions.ts:243](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L243)
 
 ___
 
@@ -24757,7 +24787,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:241](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L241)
+[permissions.ts:241](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L241)
 
 ___
 
@@ -24775,7 +24805,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:237](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L237)
+[permissions.ts:237](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L237)
 
 ___
 
@@ -24793,7 +24823,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:238](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L238)
+[permissions.ts:238](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L238)
 
 ___
 
@@ -24811,7 +24841,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:229](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L229)
+[permissions.ts:229](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L229)
 
 ___
 
@@ -24829,7 +24859,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:239](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L239)
+[permissions.ts:239](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L239)
 
 ___
 
@@ -24847,7 +24877,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:234](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L234)
+[permissions.ts:234](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L234)
 
 ___
 
@@ -24865,7 +24895,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:235](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L235)
+[permissions.ts:235](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L235)
 
 ___
 
@@ -24883,7 +24913,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:233](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L233)
+[permissions.ts:233](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L233)
 
 ___
 
@@ -24901,7 +24931,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:236](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L236)
+[permissions.ts:236](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L236)
 
 ___
 
@@ -24919,7 +24949,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:231](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L231)
+[permissions.ts:231](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L231)
 
 ___
 
@@ -24937,7 +24967,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:242](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L242)
+[permissions.ts:242](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L242)
 
 ___
 
@@ -24955,7 +24985,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:373](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L373)
+[permissions.ts:373](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L373)
 
 ___
 
@@ -24973,7 +25003,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:377](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L377)
+[permissions.ts:377](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L377)
 
 ___
 
@@ -24991,7 +25021,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:375](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L375)
+[permissions.ts:375](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L375)
 
 ___
 
@@ -25009,7 +25039,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:380](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L380)
+[permissions.ts:380](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L380)
 
 ___
 
@@ -25027,7 +25057,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:378](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L378)
+[permissions.ts:378](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L378)
 
 ___
 
@@ -25045,7 +25075,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:371](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L371)
+[permissions.ts:371](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L371)
 
 ___
 
@@ -25063,7 +25093,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:367](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L367)
+[permissions.ts:367](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L367)
 
 ___
 
@@ -25081,7 +25111,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:390](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L390)
+[permissions.ts:390](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L390)
 
 ___
 
@@ -25099,7 +25129,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:394](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L394)
+[permissions.ts:394](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L394)
 
 ___
 
@@ -25117,7 +25147,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:392](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L392)
+[permissions.ts:392](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L392)
 
 ___
 
@@ -25135,7 +25165,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:397](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L397)
+[permissions.ts:397](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L397)
 
 ___
 
@@ -25153,7 +25183,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:395](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L395)
+[permissions.ts:395](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L395)
 
 ___
 
@@ -25171,7 +25201,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:388](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L388)
+[permissions.ts:388](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L388)
 
 ___
 
@@ -25189,7 +25219,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:384](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L384)
+[permissions.ts:384](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L384)
 
 ___
 
@@ -25207,7 +25237,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:393](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L393)
+[permissions.ts:393](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L393)
 
 ___
 
@@ -25225,7 +25255,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:387](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L387)
+[permissions.ts:387](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L387)
 
 ___
 
@@ -25243,7 +25273,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:383](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L383)
+[permissions.ts:383](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L383)
 
 ___
 
@@ -25261,7 +25291,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:677](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L677)
+[permissions.ts:677](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L677)
 
 ___
 
@@ -25279,7 +25309,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:681](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L681)
+[permissions.ts:681](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L681)
 
 ___
 
@@ -25297,7 +25327,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:679](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L679)
+[permissions.ts:679](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L679)
 
 ___
 
@@ -25315,7 +25345,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:684](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L684)
+[permissions.ts:684](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L684)
 
 ___
 
@@ -25333,7 +25363,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:682](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L682)
+[permissions.ts:682](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L682)
 
 ___
 
@@ -25351,7 +25381,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:675](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L675)
+[permissions.ts:675](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L675)
 
 ___
 
@@ -25369,7 +25399,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:671](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L671)
+[permissions.ts:671](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L671)
 
 ___
 
@@ -25387,7 +25417,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:680](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L680)
+[permissions.ts:680](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L680)
 
 ___
 
@@ -25405,7 +25435,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:674](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L674)
+[permissions.ts:674](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L674)
 
 ___
 
@@ -25423,7 +25453,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:670](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L670)
+[permissions.ts:670](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L670)
 
 ___
 
@@ -25441,7 +25471,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:673](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L673)
+[permissions.ts:673](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L673)
 
 ___
 
@@ -25459,7 +25489,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:678](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L678)
+[permissions.ts:678](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L678)
 
 ___
 
@@ -25477,7 +25507,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:672](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L672)
+[permissions.ts:672](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L672)
 
 ___
 
@@ -25495,7 +25525,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:386](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L386)
+[permissions.ts:386](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L386)
 
 ___
 
@@ -25513,7 +25543,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:391](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L391)
+[permissions.ts:391](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L391)
 
 ___
 
@@ -25531,7 +25561,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:385](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L385)
+[permissions.ts:385](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L385)
 
 ___
 
@@ -25549,7 +25579,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:376](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L376)
+[permissions.ts:376](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L376)
 
 ___
 
@@ -25567,7 +25597,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:370](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L370)
+[permissions.ts:370](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L370)
 
 ___
 
@@ -25585,7 +25615,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:366](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L366)
+[permissions.ts:366](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L366)
 
 ___
 
@@ -25603,7 +25633,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:369](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L369)
+[permissions.ts:369](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L369)
 
 ___
 
@@ -25621,7 +25651,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:374](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L374)
+[permissions.ts:374](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L374)
 
 ___
 
@@ -25639,7 +25669,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:368](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L368)
+[permissions.ts:368](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L368)
 
 ___
 
@@ -25657,7 +25687,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1282](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1282)
+[permissions.ts:1282](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1282)
 
 ___
 
@@ -25675,7 +25705,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1155](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1155)
+[permissions.ts:1155](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1155)
 
 ___
 
@@ -25693,7 +25723,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1312](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1312)
+[permissions.ts:1312](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1312)
 
 ___
 
@@ -25711,7 +25741,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1267](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1267)
+[permissions.ts:1267](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1267)
 
 ___
 
@@ -25729,7 +25759,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1403](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1403)
+[permissions.ts:1403](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1403)
 
 ___
 
@@ -25747,7 +25777,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1197](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1197)
+[permissions.ts:1197](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1197)
 
 ___
 
@@ -25765,7 +25795,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1225](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1225)
+[permissions.ts:1225](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1225)
 
 ___
 
@@ -25783,7 +25813,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1239](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1239)
+[permissions.ts:1239](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1239)
 
 ___
 
@@ -25801,7 +25831,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1211](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1211)
+[permissions.ts:1211](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1211)
 
 ___
 
@@ -25819,7 +25849,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1297](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1297)
+[permissions.ts:1297](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1297)
 
 ___
 
@@ -25837,7 +25867,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1253](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1253)
+[permissions.ts:1253](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1253)
 
 ___
 
@@ -25855,7 +25885,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1035](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1035)
+[permissions.ts:1035](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1035)
 
 ___
 
@@ -25873,7 +25903,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:809](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L809)
+[permissions.ts:809](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L809)
 
 ___
 
@@ -25891,7 +25921,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:698](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L698)
+[permissions.ts:698](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L698)
 
 ___
 
@@ -25909,7 +25939,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:962](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L962)
+[permissions.ts:962](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L962)
 
 ___
 
@@ -25927,7 +25957,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:844](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L844)
+[permissions.ts:844](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L844)
 
 ___
 
@@ -25945,7 +25975,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:861](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L861)
+[permissions.ts:861](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L861)
 
 ___
 
@@ -25963,7 +25993,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:713](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L713)
+[permissions.ts:713](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L713)
 
 ___
 
@@ -25981,7 +26011,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1183](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1183)
+[permissions.ts:1183](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1183)
 
 ___
 
@@ -25999,7 +26029,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1169](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1169)
+[permissions.ts:1169](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1169)
 
 ___
 
@@ -26017,7 +26047,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1373](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1373)
+[permissions.ts:1373](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1373)
 
 ___
 
@@ -26035,7 +26065,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:795](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L795)
+[permissions.ts:795](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L795)
 
 ___
 
@@ -26053,7 +26083,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1358](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1358)
+[permissions.ts:1358](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1358)
 
 ___
 
@@ -26071,7 +26101,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1479](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1479)
+[permissions.ts:1479](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1479)
 
 ___
 
@@ -26089,7 +26119,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1478](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1478)
+[permissions.ts:1478](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1478)
 
 ___
 
@@ -26107,7 +26137,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1477](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1477)
+[permissions.ts:1477](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1477)
 
 ___
 
@@ -26125,7 +26155,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1476](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1476)
+[permissions.ts:1476](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1476)
 
 ___
 
@@ -26143,7 +26173,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1473](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1473)
+[permissions.ts:1473](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1473)
 
 ___
 
@@ -26161,7 +26191,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1475](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1475)
+[permissions.ts:1475](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1475)
 
 ___
 
@@ -26179,7 +26209,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1474](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1474)
+[permissions.ts:1474](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1474)
 
 ___
 
@@ -26197,7 +26227,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:192](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L192)
+[permissions.ts:192](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L192)
 
 ___
 
@@ -26215,7 +26245,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:194](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L194)
+[permissions.ts:194](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L194)
 
 ___
 
@@ -26233,7 +26263,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:204](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L204)
+[permissions.ts:204](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L204)
 
 ___
 
@@ -26251,7 +26281,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:196](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L196)
+[permissions.ts:196](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L196)
 
 ___
 
@@ -26269,7 +26299,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:207](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L207)
+[permissions.ts:207](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L207)
 
 ___
 
@@ -26287,7 +26317,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:205](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L205)
+[permissions.ts:205](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L205)
 
 ___
 
@@ -26305,7 +26335,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:201](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L201)
+[permissions.ts:201](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L201)
 
 ___
 
@@ -26323,7 +26353,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:202](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L202)
+[permissions.ts:202](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L202)
 
 ___
 
@@ -26341,7 +26371,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:193](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L193)
+[permissions.ts:193](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L193)
 
 ___
 
@@ -26359,7 +26389,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:203](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L203)
+[permissions.ts:203](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L203)
 
 ___
 
@@ -26377,7 +26407,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:198](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L198)
+[permissions.ts:198](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L198)
 
 ___
 
@@ -26395,7 +26425,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:199](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L199)
+[permissions.ts:199](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L199)
 
 ___
 
@@ -26413,7 +26443,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:197](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L197)
+[permissions.ts:197](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L197)
 
 ___
 
@@ -26431,7 +26461,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:200](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L200)
+[permissions.ts:200](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L200)
 
 ___
 
@@ -26449,7 +26479,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:195](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L195)
+[permissions.ts:195](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L195)
 
 ___
 
@@ -26467,7 +26497,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:206](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L206)
+[permissions.ts:206](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L206)
 
 ___
 
@@ -26485,7 +26515,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:57](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L57)
+[permissions.ts:57](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L57)
 
 ___
 
@@ -26503,7 +26533,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:64](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L64)
+[permissions.ts:64](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L64)
 
 ___
 
@@ -26521,7 +26551,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:37](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L37)
+[permissions.ts:37](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L37)
 
 ___
 
@@ -26539,7 +26569,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:32](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L32)
+[permissions.ts:32](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L32)
 
 ___
 
@@ -26557,7 +26587,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1063](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1063)
+[permissions.ts:1063](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1063)
 
 ___
 
@@ -26575,7 +26605,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1070](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1070)
+[permissions.ts:1070](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1070)
 
 ___
 
@@ -26593,7 +26623,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1470](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1470)
+[permissions.ts:1470](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1470)
 
 ___
 
@@ -26611,7 +26641,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1469](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1469)
+[permissions.ts:1469](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1469)
 
 ___
 
@@ -26629,7 +26659,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1468](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1468)
+[permissions.ts:1468](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1468)
 
 ___
 
@@ -26647,7 +26677,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1504](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1504)
+[permissions.ts:1504](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1504)
 
 ___
 
@@ -26665,7 +26695,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1503](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1503)
+[permissions.ts:1503](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1503)
 
 ___
 
@@ -26683,7 +26713,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1502](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1502)
+[permissions.ts:1502](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1502)
 
 ___
 
@@ -26701,7 +26731,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1517](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1517)
+[permissions.ts:1517](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1517)
 
 ___
 
@@ -26719,7 +26749,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1516](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1516)
+[permissions.ts:1516](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1516)
 
 ___
 
@@ -26737,7 +26767,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1515](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1515)
+[permissions.ts:1515](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1515)
 
 ___
 
@@ -26755,7 +26785,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1491](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1491)
+[permissions.ts:1491](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1491)
 
 ___
 
@@ -26773,7 +26803,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1490](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1490)
+[permissions.ts:1490](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1490)
 
 ___
 
@@ -26791,7 +26821,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1489](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1489)
+[permissions.ts:1489](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1489)
 
 ___
 
@@ -26809,7 +26839,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1530](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1530)
+[permissions.ts:1530](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1530)
 
 ___
 
@@ -26827,7 +26857,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1529](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1529)
+[permissions.ts:1529](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1529)
 
 ___
 
@@ -26845,7 +26875,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1528](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1528)
+[permissions.ts:1528](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1528)
 
 ___
 
@@ -26863,7 +26893,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1271](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1271)
+[permissions.ts:1271](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1271)
 
 ___
 
@@ -26881,7 +26911,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1447](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1447)
+[permissions.ts:1447](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1447)
 
 ___
 
@@ -26899,7 +26929,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1434](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1434)
+[permissions.ts:1434](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1434)
 
 ___
 
@@ -26917,7 +26947,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1421](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1421)
+[permissions.ts:1421](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1421)
 
 ___
 
@@ -26935,7 +26965,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1408](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1408)
+[permissions.ts:1408](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1408)
 
 ___
 
@@ -26953,7 +26983,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1144](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1144)
+[permissions.ts:1144](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1144)
 
 ___
 
@@ -26971,7 +27001,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:55](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L55)
+[permissions.ts:55](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L55)
 
 ___
 
@@ -26989,7 +27019,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1256](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1256)
+[permissions.ts:1256](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1256)
 
 ___
 
@@ -27007,7 +27037,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1301](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1301)
+[permissions.ts:1301](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1301)
 
 ___
 
@@ -27025,7 +27055,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1092](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1092)
+[permissions.ts:1092](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1092)
 
 ___
 
@@ -27043,7 +27073,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:42](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L42)
+[permissions.ts:42](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L42)
 
 ___
 
@@ -27061,7 +27091,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:62](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L62)
+[permissions.ts:62](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L62)
 
 ___
 
@@ -27079,7 +27109,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:436](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L436)
+[permissions.ts:436](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L436)
 
 ___
 
@@ -27097,7 +27127,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:35](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L35)
+[permissions.ts:35](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L35)
 
 ___
 
@@ -27115,7 +27145,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:30](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L30)
+[permissions.ts:30](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L30)
 
 ___
 
@@ -27133,7 +27163,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1392](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1392)
+[permissions.ts:1392](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1392)
 
 ___
 
@@ -27151,7 +27181,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1186](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1186)
+[permissions.ts:1186](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1186)
 
 ___
 
@@ -27169,7 +27199,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1061](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1061)
+[permissions.ts:1061](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1061)
 
 ___
 
@@ -27187,7 +27217,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1214](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1214)
+[permissions.ts:1214](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1214)
 
 ___
 
@@ -27205,7 +27235,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1228](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1228)
+[permissions.ts:1228](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1228)
 
 ___
 
@@ -27223,7 +27253,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1200](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1200)
+[permissions.ts:1200](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1200)
 
 ___
 
@@ -27241,7 +27271,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1131](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1131)
+[permissions.ts:1131](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1131)
 
 ___
 
@@ -27259,7 +27289,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1079](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1079)
+[permissions.ts:1079](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1079)
 
 ___
 
@@ -27277,7 +27307,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1068](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1068)
+[permissions.ts:1068](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1068)
 
 ___
 
@@ -27295,7 +27325,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1286](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1286)
+[permissions.ts:1286](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1286)
 
 ___
 
@@ -27313,7 +27343,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1242](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1242)
+[permissions.ts:1242](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1242)
 
 ___
 
@@ -27331,7 +27361,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1024](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1024)
+[permissions.ts:1024](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1024)
 
 ___
 
@@ -27349,7 +27379,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:798](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L798)
+[permissions.ts:798](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L798)
 
 ___
 
@@ -27367,7 +27397,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:687](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L687)
+[permissions.ts:687](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L687)
 
 ___
 
@@ -27385,7 +27415,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:951](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L951)
+[permissions.ts:951](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L951)
 
 ___
 
@@ -27403,7 +27433,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:833](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L833)
+[permissions.ts:833](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L833)
 
 ___
 
@@ -27421,7 +27451,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:850](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L850)
+[permissions.ts:850](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L850)
 
 ___
 
@@ -27439,7 +27469,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:702](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L702)
+[permissions.ts:702](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L702)
 
 ___
 
@@ -27457,7 +27487,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1158](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1158)
+[permissions.ts:1158](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1158)
 
 ___
 
@@ -27475,7 +27505,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1172](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1172)
+[permissions.ts:1172](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1172)
 
 ___
 
@@ -27493,7 +27523,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1362](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1362)
+[permissions.ts:1362](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1362)
 
 ___
 
@@ -27511,7 +27541,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1118](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1118)
+[permissions.ts:1118](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1118)
 
 ___
 
@@ -27529,7 +27559,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1105](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1105)
+[permissions.ts:1105](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1105)
 
 ___
 
@@ -27547,7 +27577,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:784](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L784)
+[permissions.ts:784](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L784)
 
 ___
 
@@ -27565,7 +27595,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1011](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1011)
+[permissions.ts:1011](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1011)
 
 ___
 
@@ -27583,7 +27613,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:998](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L998)
+[permissions.ts:998](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L998)
 
 ___
 
@@ -27601,7 +27631,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1075](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1075)
+[permissions.ts:1075](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1075)
 
 ___
 
@@ -27619,7 +27649,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:449](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L449)
+[permissions.ts:449](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L449)
 
 ___
 
@@ -27637,7 +27667,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:69](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L69)
+[permissions.ts:69](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L69)
 
 ___
 
@@ -27655,7 +27685,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1347](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1347)
+[permissions.ts:1347](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1347)
 
 ___
 
@@ -27673,7 +27703,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1488](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1488)
+[permissions.ts:1488](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1488)
 
 ___
 
@@ -27691,7 +27721,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1487](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1487)
+[permissions.ts:1487](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1487)
 
 ___
 
@@ -27709,7 +27739,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1486](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1486)
+[permissions.ts:1486](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1486)
 
 ___
 
@@ -27727,7 +27757,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1485](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1485)
+[permissions.ts:1485](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1485)
 
 ___
 
@@ -27745,7 +27775,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1482](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1482)
+[permissions.ts:1482](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1482)
 
 ___
 
@@ -27763,7 +27793,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1484](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1484)
+[permissions.ts:1484](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1484)
 
 ___
 
@@ -27781,7 +27811,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1483](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1483)
+[permissions.ts:1483](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1483)
 
 ___
 
@@ -27799,7 +27829,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1298](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1298)
+[permissions.ts:1298](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1298)
 
 ___
 
@@ -27817,7 +27847,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:339](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L339)
+[permissions.ts:339](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L339)
 
 ___
 
@@ -27835,7 +27865,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:343](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L343)
+[permissions.ts:343](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L343)
 
 ___
 
@@ -27853,7 +27883,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:341](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L341)
+[permissions.ts:341](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L341)
 
 ___
 
@@ -27871,7 +27901,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:346](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L346)
+[permissions.ts:346](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L346)
 
 ___
 
@@ -27889,7 +27919,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:344](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L344)
+[permissions.ts:344](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L344)
 
 ___
 
@@ -27907,7 +27937,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:337](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L337)
+[permissions.ts:337](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L337)
 
 ___
 
@@ -27925,7 +27955,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:333](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L333)
+[permissions.ts:333](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L333)
 
 ___
 
@@ -27943,7 +27973,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:356](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L356)
+[permissions.ts:356](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L356)
 
 ___
 
@@ -27961,7 +27991,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:360](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L360)
+[permissions.ts:360](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L360)
 
 ___
 
@@ -27979,7 +28009,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:358](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L358)
+[permissions.ts:358](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L358)
 
 ___
 
@@ -27997,7 +28027,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:363](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L363)
+[permissions.ts:363](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L363)
 
 ___
 
@@ -28015,7 +28045,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:361](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L361)
+[permissions.ts:361](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L361)
 
 ___
 
@@ -28033,7 +28063,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:354](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L354)
+[permissions.ts:354](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L354)
 
 ___
 
@@ -28051,7 +28081,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:350](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L350)
+[permissions.ts:350](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L350)
 
 ___
 
@@ -28069,7 +28099,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:359](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L359)
+[permissions.ts:359](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L359)
 
 ___
 
@@ -28087,7 +28117,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:353](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L353)
+[permissions.ts:353](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L353)
 
 ___
 
@@ -28105,7 +28135,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:349](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L349)
+[permissions.ts:349](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L349)
 
 ___
 
@@ -28123,7 +28153,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:660](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L660)
+[permissions.ts:660](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L660)
 
 ___
 
@@ -28141,7 +28171,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:664](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L664)
+[permissions.ts:664](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L664)
 
 ___
 
@@ -28159,7 +28189,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:662](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L662)
+[permissions.ts:662](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L662)
 
 ___
 
@@ -28177,7 +28207,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:667](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L667)
+[permissions.ts:667](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L667)
 
 ___
 
@@ -28195,7 +28225,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:665](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L665)
+[permissions.ts:665](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L665)
 
 ___
 
@@ -28213,7 +28243,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:658](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L658)
+[permissions.ts:658](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L658)
 
 ___
 
@@ -28231,7 +28261,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:654](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L654)
+[permissions.ts:654](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L654)
 
 ___
 
@@ -28249,7 +28279,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:663](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L663)
+[permissions.ts:663](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L663)
 
 ___
 
@@ -28267,7 +28297,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:657](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L657)
+[permissions.ts:657](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L657)
 
 ___
 
@@ -28285,7 +28315,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:653](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L653)
+[permissions.ts:653](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L653)
 
 ___
 
@@ -28303,7 +28333,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:656](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L656)
+[permissions.ts:656](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L656)
 
 ___
 
@@ -28321,7 +28351,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:661](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L661)
+[permissions.ts:661](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L661)
 
 ___
 
@@ -28339,7 +28369,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:655](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L655)
+[permissions.ts:655](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L655)
 
 ___
 
@@ -28357,7 +28387,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:352](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L352)
+[permissions.ts:352](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L352)
 
 ___
 
@@ -28375,7 +28405,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:357](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L357)
+[permissions.ts:357](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L357)
 
 ___
 
@@ -28393,7 +28423,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:351](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L351)
+[permissions.ts:351](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L351)
 
 ___
 
@@ -28411,7 +28441,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:342](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L342)
+[permissions.ts:342](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L342)
 
 ___
 
@@ -28429,7 +28459,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:336](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L336)
+[permissions.ts:336](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L336)
 
 ___
 
@@ -28447,7 +28477,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:332](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L332)
+[permissions.ts:332](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L332)
 
 ___
 
@@ -28465,7 +28495,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:335](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L335)
+[permissions.ts:335](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L335)
 
 ___
 
@@ -28483,7 +28513,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:340](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L340)
+[permissions.ts:340](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L340)
 
 ___
 
@@ -28501,7 +28531,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:334](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L334)
+[permissions.ts:334](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L334)
 
 ___
 
@@ -28519,7 +28549,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1045](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1045)
+[permissions.ts:1045](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1045)
 
 ___
 
@@ -28537,7 +28567,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1049](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1049)
+[permissions.ts:1049](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1049)
 
 ___
 
@@ -28555,7 +28585,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1047](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1047)
+[permissions.ts:1047](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1047)
 
 ___
 
@@ -28573,7 +28603,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1050](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1050)
+[permissions.ts:1050](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1050)
 
 ___
 
@@ -28591,7 +28621,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1043](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1043)
+[permissions.ts:1043](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1043)
 
 ___
 
@@ -28609,7 +28639,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1039](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1039)
+[permissions.ts:1039](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1039)
 
 ___
 
@@ -28627,7 +28657,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1048](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1048)
+[permissions.ts:1048](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1048)
 
 ___
 
@@ -28645,7 +28675,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1042](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1042)
+[permissions.ts:1042](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1042)
 
 ___
 
@@ -28663,7 +28693,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1038](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1038)
+[permissions.ts:1038](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1038)
 
 ___
 
@@ -28681,7 +28711,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1041](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1041)
+[permissions.ts:1041](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1041)
 
 ___
 
@@ -28699,7 +28729,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1046](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1046)
+[permissions.ts:1046](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1046)
 
 ___
 
@@ -28717,7 +28747,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1040](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1040)
+[permissions.ts:1040](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1040)
 
 ___
 
@@ -28735,7 +28765,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:278](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L278)
+[permissions.ts:278](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L278)
 
 ___
 
@@ -28753,7 +28783,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:113](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L113)
+[permissions.ts:113](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L113)
 
 ___
 
@@ -28771,7 +28801,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:117](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L117)
+[permissions.ts:117](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L117)
 
 ___
 
@@ -28789,7 +28819,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:115](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L115)
+[permissions.ts:115](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L115)
 
 ___
 
@@ -28807,7 +28837,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:120](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L120)
+[permissions.ts:120](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L120)
 
 ___
 
@@ -28825,7 +28855,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:118](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L118)
+[permissions.ts:118](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L118)
 
 ___
 
@@ -28843,7 +28873,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:111](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L111)
+[permissions.ts:111](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L111)
 
 ___
 
@@ -28861,7 +28891,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:107](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L107)
+[permissions.ts:107](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L107)
 
 ___
 
@@ -28879,7 +28909,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:116](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L116)
+[permissions.ts:116](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L116)
 
 ___
 
@@ -28897,7 +28927,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:110](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L110)
+[permissions.ts:110](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L110)
 
 ___
 
@@ -28915,7 +28945,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:106](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L106)
+[permissions.ts:106](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L106)
 
 ___
 
@@ -28933,7 +28963,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:109](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L109)
+[permissions.ts:109](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L109)
 
 ___
 
@@ -28951,7 +28981,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:114](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L114)
+[permissions.ts:114](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L114)
 
 ___
 
@@ -28969,7 +28999,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:108](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L108)
+[permissions.ts:108](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L108)
 
 ___
 
@@ -28987,7 +29017,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:96](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L96)
+[permissions.ts:96](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L96)
 
 ___
 
@@ -29005,7 +29035,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:100](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L100)
+[permissions.ts:100](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L100)
 
 ___
 
@@ -29023,7 +29053,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:98](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L98)
+[permissions.ts:98](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L98)
 
 ___
 
@@ -29041,7 +29071,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:103](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L103)
+[permissions.ts:103](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L103)
 
 ___
 
@@ -29059,7 +29089,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:101](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L101)
+[permissions.ts:101](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L101)
 
 ___
 
@@ -29077,7 +29107,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:94](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L94)
+[permissions.ts:94](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L94)
 
 ___
 
@@ -29095,7 +29125,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:90](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L90)
+[permissions.ts:90](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L90)
 
 ___
 
@@ -29113,7 +29143,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:99](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L99)
+[permissions.ts:99](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L99)
 
 ___
 
@@ -29131,7 +29161,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:93](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L93)
+[permissions.ts:93](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L93)
 
 ___
 
@@ -29149,7 +29179,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:89](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L89)
+[permissions.ts:89](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L89)
 
 ___
 
@@ -29167,7 +29197,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:92](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L92)
+[permissions.ts:92](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L92)
 
 ___
 
@@ -29185,7 +29215,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:97](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L97)
+[permissions.ts:97](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L97)
 
 ___
 
@@ -29203,7 +29233,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:91](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L91)
+[permissions.ts:91](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L91)
 
 ___
 
@@ -29221,7 +29251,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:264](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L264)
+[permissions.ts:264](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L264)
 
 ___
 
@@ -29239,7 +29269,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:266](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L266)
+[permissions.ts:266](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L266)
 
 ___
 
@@ -29257,7 +29287,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:275](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L275)
+[permissions.ts:275](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L275)
 
 ___
 
@@ -29275,7 +29305,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:268](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L268)
+[permissions.ts:268](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L268)
 
 ___
 
@@ -29293,7 +29323,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:276](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L276)
+[permissions.ts:276](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L276)
 
 ___
 
@@ -29311,7 +29341,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:272](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L272)
+[permissions.ts:272](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L272)
 
 ___
 
@@ -29329,7 +29359,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:273](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L273)
+[permissions.ts:273](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L273)
 
 ___
 
@@ -29347,7 +29377,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:265](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L265)
+[permissions.ts:265](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L265)
 
 ___
 
@@ -29365,7 +29395,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:274](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L274)
+[permissions.ts:274](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L274)
 
 ___
 
@@ -29383,7 +29413,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:270](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L270)
+[permissions.ts:270](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L270)
 
 ___
 
@@ -29401,7 +29431,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:269](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L269)
+[permissions.ts:269](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L269)
 
 ___
 
@@ -29419,7 +29449,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:271](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L271)
+[permissions.ts:271](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L271)
 
 ___
 
@@ -29437,7 +29467,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:267](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L267)
+[permissions.ts:267](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L267)
 
 ___
 
@@ -29455,7 +29485,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:277](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L277)
+[permissions.ts:277](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L277)
 
 ___
 
@@ -29473,7 +29503,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:521](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L521)
+[permissions.ts:521](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L521)
 
 ___
 
@@ -29491,7 +29521,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:525](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L525)
+[permissions.ts:525](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L525)
 
 ___
 
@@ -29509,7 +29539,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:523](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L523)
+[permissions.ts:523](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L523)
 
 ___
 
@@ -29527,7 +29557,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:529](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L529)
+[permissions.ts:529](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L529)
 
 ___
 
@@ -29545,7 +29575,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:526](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L526)
+[permissions.ts:526](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L526)
 
 ___
 
@@ -29563,7 +29593,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:519](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L519)
+[permissions.ts:519](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L519)
 
 ___
 
@@ -29581,7 +29611,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:515](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L515)
+[permissions.ts:515](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L515)
 
 ___
 
@@ -29599,7 +29629,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:524](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L524)
+[permissions.ts:524](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L524)
 
 ___
 
@@ -29617,7 +29647,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:518](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L518)
+[permissions.ts:518](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L518)
 
 ___
 
@@ -29635,7 +29665,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:514](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L514)
+[permissions.ts:514](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L514)
 
 ___
 
@@ -29653,7 +29683,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:517](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L517)
+[permissions.ts:517](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L517)
 
 ___
 
@@ -29671,7 +29701,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:522](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L522)
+[permissions.ts:522](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L522)
 
 ___
 
@@ -29689,7 +29719,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:516](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L516)
+[permissions.ts:516](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L516)
 
 ___
 
@@ -29707,7 +29737,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:469](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L469)
+[permissions.ts:469](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L469)
 
 ___
 
@@ -29725,7 +29755,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:473](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L473)
+[permissions.ts:473](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L473)
 
 ___
 
@@ -29743,7 +29773,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:471](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L471)
+[permissions.ts:471](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L471)
 
 ___
 
@@ -29761,7 +29791,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:474](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L474)
+[permissions.ts:474](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L474)
 
 ___
 
@@ -29779,7 +29809,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:467](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L467)
+[permissions.ts:467](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L467)
 
 ___
 
@@ -29797,7 +29827,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:463](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L463)
+[permissions.ts:463](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L463)
 
 ___
 
@@ -29815,7 +29845,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:472](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L472)
+[permissions.ts:472](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L472)
 
 ___
 
@@ -29833,7 +29863,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:466](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L466)
+[permissions.ts:466](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L466)
 
 ___
 
@@ -29851,7 +29881,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:462](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L462)
+[permissions.ts:462](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L462)
 
 ___
 
@@ -29869,7 +29899,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:465](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L465)
+[permissions.ts:465](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L465)
 
 ___
 
@@ -29887,7 +29917,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:470](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L470)
+[permissions.ts:470](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L470)
 
 ___
 
@@ -29905,7 +29935,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:464](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L464)
+[permissions.ts:464](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L464)
 
 ___
 
@@ -29923,7 +29953,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:812](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L812)
+[permissions.ts:812](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L812)
 
 ___
 
@@ -29941,7 +29971,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:810](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L810)
+[permissions.ts:810](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L810)
 
 ___
 
@@ -29959,7 +29989,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:803](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L803)
+[permissions.ts:803](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L803)
 
 ___
 
@@ -29977,7 +30007,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:322](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L322)
+[permissions.ts:322](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L322)
 
 ___
 
@@ -29995,7 +30025,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:326](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L326)
+[permissions.ts:326](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L326)
 
 ___
 
@@ -30013,7 +30043,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:324](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L324)
+[permissions.ts:324](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L324)
 
 ___
 
@@ -30031,7 +30061,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:329](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L329)
+[permissions.ts:329](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L329)
 
 ___
 
@@ -30049,7 +30079,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:327](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L327)
+[permissions.ts:327](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L327)
 
 ___
 
@@ -30067,7 +30097,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:320](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L320)
+[permissions.ts:320](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L320)
 
 ___
 
@@ -30085,7 +30115,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:316](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L316)
+[permissions.ts:316](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L316)
 
 ___
 
@@ -30103,7 +30133,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:325](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L325)
+[permissions.ts:325](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L325)
 
 ___
 
@@ -30121,7 +30151,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:319](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L319)
+[permissions.ts:319](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L319)
 
 ___
 
@@ -30139,7 +30169,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:315](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L315)
+[permissions.ts:315](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L315)
 
 ___
 
@@ -30157,7 +30187,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:318](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L318)
+[permissions.ts:318](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L318)
 
 ___
 
@@ -30175,7 +30205,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:323](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L323)
+[permissions.ts:323](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L323)
 
 ___
 
@@ -30193,7 +30223,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:317](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L317)
+[permissions.ts:317](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L317)
 
 ___
 
@@ -30211,7 +30241,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:425](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L425)
+[permissions.ts:425](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L425)
 
 ___
 
@@ -30229,7 +30259,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:429](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L429)
+[permissions.ts:429](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L429)
 
 ___
 
@@ -30247,7 +30277,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:427](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L427)
+[permissions.ts:427](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L427)
 
 ___
 
@@ -30265,7 +30295,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:433](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L433)
+[permissions.ts:433](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L433)
 
 ___
 
@@ -30283,7 +30313,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:430](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L430)
+[permissions.ts:430](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L430)
 
 ___
 
@@ -30301,7 +30331,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:423](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L423)
+[permissions.ts:423](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L423)
 
 ___
 
@@ -30319,7 +30349,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:419](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L419)
+[permissions.ts:419](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L419)
 
 ___
 
@@ -30337,7 +30367,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:428](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L428)
+[permissions.ts:428](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L428)
 
 ___
 
@@ -30355,7 +30385,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:422](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L422)
+[permissions.ts:422](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L422)
 
 ___
 
@@ -30373,7 +30403,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:418](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L418)
+[permissions.ts:418](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L418)
 
 ___
 
@@ -30391,7 +30421,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:421](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L421)
+[permissions.ts:421](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L421)
 
 ___
 
@@ -30409,7 +30439,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:426](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L426)
+[permissions.ts:426](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L426)
 
 ___
 
@@ -30427,7 +30457,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:420](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L420)
+[permissions.ts:420](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L420)
 
 ___
 
@@ -30445,7 +30475,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:699](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L699)
+[permissions.ts:699](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L699)
 
 ___
 
@@ -30463,7 +30493,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:626](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L626)
+[permissions.ts:626](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L626)
 
 ___
 
@@ -30481,7 +30511,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:630](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L630)
+[permissions.ts:630](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L630)
 
 ___
 
@@ -30499,7 +30529,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:628](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L628)
+[permissions.ts:628](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L628)
 
 ___
 
@@ -30517,7 +30547,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:633](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L633)
+[permissions.ts:633](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L633)
 
 ___
 
@@ -30535,7 +30565,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:631](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L631)
+[permissions.ts:631](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L631)
 
 ___
 
@@ -30553,7 +30583,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:624](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L624)
+[permissions.ts:624](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L624)
 
 ___
 
@@ -30571,7 +30601,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:620](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L620)
+[permissions.ts:620](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L620)
 
 ___
 
@@ -30589,7 +30619,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:629](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L629)
+[permissions.ts:629](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L629)
 
 ___
 
@@ -30607,7 +30637,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:623](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L623)
+[permissions.ts:623](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L623)
 
 ___
 
@@ -30625,7 +30655,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:619](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L619)
+[permissions.ts:619](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L619)
 
 ___
 
@@ -30643,7 +30673,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:622](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L622)
+[permissions.ts:622](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L622)
 
 ___
 
@@ -30661,7 +30691,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:627](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L627)
+[permissions.ts:627](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L627)
 
 ___
 
@@ -30679,7 +30709,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:621](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L621)
+[permissions.ts:621](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L621)
 
 ___
 
@@ -30697,7 +30727,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:972](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L972)
+[permissions.ts:972](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L972)
 
 ___
 
@@ -30715,7 +30745,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:976](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L976)
+[permissions.ts:976](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L976)
 
 ___
 
@@ -30733,7 +30763,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:974](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L974)
+[permissions.ts:974](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L974)
 
 ___
 
@@ -30751,7 +30781,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:977](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L977)
+[permissions.ts:977](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L977)
 
 ___
 
@@ -30769,7 +30799,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:970](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L970)
+[permissions.ts:970](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L970)
 
 ___
 
@@ -30787,7 +30817,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:966](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L966)
+[permissions.ts:966](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L966)
 
 ___
 
@@ -30805,7 +30835,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:975](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L975)
+[permissions.ts:975](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L975)
 
 ___
 
@@ -30823,7 +30853,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:969](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L969)
+[permissions.ts:969](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L969)
 
 ___
 
@@ -30841,7 +30871,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:965](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L965)
+[permissions.ts:965](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L965)
 
 ___
 
@@ -30859,7 +30889,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:968](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L968)
+[permissions.ts:968](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L968)
 
 ___
 
@@ -30877,7 +30907,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:973](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L973)
+[permissions.ts:973](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L973)
 
 ___
 
@@ -30895,7 +30925,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:967](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L967)
+[permissions.ts:967](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L967)
 
 ___
 
@@ -30913,7 +30943,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:987](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L987)
+[permissions.ts:987](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L987)
 
 ___
 
@@ -30931,7 +30961,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:989](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L989)
+[permissions.ts:989](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L989)
 
 ___
 
@@ -30949,7 +30979,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:986](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L986)
+[permissions.ts:986](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L986)
 
 ___
 
@@ -30967,7 +30997,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:988](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L988)
+[permissions.ts:988](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L988)
 
 ___
 
@@ -30985,7 +31015,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:994](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L994)
+[permissions.ts:994](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L994)
 
 ___
 
@@ -31003,7 +31033,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:993](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L993)
+[permissions.ts:993](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L993)
 
 ___
 
@@ -31021,7 +31051,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:995](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L995)
+[permissions.ts:995](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L995)
 
 ___
 
@@ -31039,7 +31069,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:985](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L985)
+[permissions.ts:985](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L985)
 
 ___
 
@@ -31057,7 +31087,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:984](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L984)
+[permissions.ts:984](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L984)
 
 ___
 
@@ -31075,7 +31105,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:981](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L981)
+[permissions.ts:981](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L981)
 
 ___
 
@@ -31093,7 +31123,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:983](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L983)
+[permissions.ts:983](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L983)
 
 ___
 
@@ -31111,7 +31141,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:991](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L991)
+[permissions.ts:991](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L991)
 
 ___
 
@@ -31129,7 +31159,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:990](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L990)
+[permissions.ts:990](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L990)
 
 ___
 
@@ -31147,7 +31177,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:992](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L992)
+[permissions.ts:992](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L992)
 
 ___
 
@@ -31165,7 +31195,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:982](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L982)
+[permissions.ts:982](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L982)
 
 ___
 
@@ -31183,7 +31213,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:847](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L847)
+[permissions.ts:847](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L847)
 
 ___
 
@@ -31201,7 +31231,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:845](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L845)
+[permissions.ts:845](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L845)
 
 ___
 
@@ -31219,7 +31249,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:838](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L838)
+[permissions.ts:838](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L838)
 
 ___
 
@@ -31237,7 +31267,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:864](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L864)
+[permissions.ts:864](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L864)
 
 ___
 
@@ -31255,7 +31285,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:862](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L862)
+[permissions.ts:862](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L862)
 
 ___
 
@@ -31273,7 +31303,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:855](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L855)
+[permissions.ts:855](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L855)
 
 ___
 
@@ -31291,7 +31321,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:311](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L311)
+[permissions.ts:311](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L311)
 
 ___
 
@@ -31309,7 +31339,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:730](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L730)
+[permissions.ts:730](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L730)
 
 ___
 
@@ -31327,7 +31357,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:747](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L747)
+[permissions.ts:747](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L747)
 
 ___
 
@@ -31345,7 +31375,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1344](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1344)
+[permissions.ts:1344](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1344)
 
 ___
 
@@ -31363,7 +31393,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:880](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L880)
+[permissions.ts:880](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L880)
 
 ___
 
@@ -31381,7 +31411,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:932](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L932)
+[permissions.ts:932](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L932)
 
 ___
 
@@ -31399,7 +31429,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:897](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L897)
+[permissions.ts:897](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L897)
 
 ___
 
@@ -31417,7 +31447,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:914](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L914)
+[permissions.ts:914](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L914)
 
 ___
 
@@ -31435,7 +31465,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:764](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L764)
+[permissions.ts:764](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L764)
 
 ___
 
@@ -31453,7 +31483,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1405](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1405)
+[permissions.ts:1405](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1405)
 
 ___
 
@@ -31471,7 +31501,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:563](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L563)
+[permissions.ts:563](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L563)
 
 ___
 
@@ -31489,7 +31519,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:597](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L597)
+[permissions.ts:597](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L597)
 
 ___
 
@@ -31507,7 +31537,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:379](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L379)
+[permissions.ts:379](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L379)
 
 ___
 
@@ -31525,7 +31555,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:396](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L396)
+[permissions.ts:396](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L396)
 
 ___
 
@@ -31543,7 +31573,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:683](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L683)
+[permissions.ts:683](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L683)
 
 ___
 
@@ -31561,7 +31591,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:345](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L345)
+[permissions.ts:345](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L345)
 
 ___
 
@@ -31579,7 +31609,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:362](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L362)
+[permissions.ts:362](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L362)
 
 ___
 
@@ -31597,7 +31627,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:666](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L666)
+[permissions.ts:666](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L666)
 
 ___
 
@@ -31615,7 +31645,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1051](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1051)
+[permissions.ts:1051](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1051)
 
 ___
 
@@ -31633,7 +31663,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:119](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L119)
+[permissions.ts:119](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L119)
 
 ___
 
@@ -31651,7 +31681,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:102](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L102)
+[permissions.ts:102](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L102)
 
 ___
 
@@ -31669,7 +31699,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:527](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L527)
+[permissions.ts:527](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L527)
 
 ___
 
@@ -31687,7 +31717,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:475](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L475)
+[permissions.ts:475](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L475)
 
 ___
 
@@ -31705,7 +31735,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:811](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L811)
+[permissions.ts:811](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L811)
 
 ___
 
@@ -31723,7 +31753,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:328](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L328)
+[permissions.ts:328](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L328)
 
 ___
 
@@ -31741,7 +31771,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:431](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L431)
+[permissions.ts:431](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L431)
 
 ___
 
@@ -31759,7 +31789,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:632](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L632)
+[permissions.ts:632](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L632)
 
 ___
 
@@ -31777,7 +31807,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:978](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L978)
+[permissions.ts:978](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L978)
 
 ___
 
@@ -31795,7 +31825,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:846](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L846)
+[permissions.ts:846](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L846)
 
 ___
 
@@ -31813,7 +31843,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:863](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L863)
+[permissions.ts:863](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L863)
 
 ___
 
@@ -31831,7 +31861,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:294](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L294)
+[permissions.ts:294](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L294)
 
 ___
 
@@ -31849,7 +31879,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:14](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L14)
+[permissions.ts:14](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L14)
 
 ___
 
@@ -31867,7 +31897,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:781](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L781)
+[permissions.ts:781](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L781)
 
 ___
 
@@ -31885,7 +31915,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:649](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L649)
+[permissions.ts:649](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L649)
 
 ___
 
@@ -31903,7 +31933,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:828](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L828)
+[permissions.ts:828](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L828)
 
 ___
 
@@ -31921,7 +31951,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:545](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L545)
+[permissions.ts:545](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L545)
 
 ___
 
@@ -31939,7 +31969,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:491](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L491)
+[permissions.ts:491](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L491)
 
 ___
 
@@ -31957,7 +31987,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:509](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L509)
+[permissions.ts:509](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L509)
 
 ___
 
@@ -31975,7 +32005,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1389](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1389)
+[permissions.ts:1389](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1389)
 
 ___
 
@@ -31993,7 +32023,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:170](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L170)
+[permissions.ts:170](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L170)
 
 ___
 
@@ -32011,7 +32041,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:136](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L136)
+[permissions.ts:136](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L136)
 
 ___
 
@@ -32029,7 +32059,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:153](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L153)
+[permissions.ts:153](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L153)
 
 ___
 
@@ -32047,7 +32077,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:413](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L413)
+[permissions.ts:413](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L413)
 
 ___
 
@@ -32065,7 +32095,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1328](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1328)
+[permissions.ts:1328](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1328)
 
 ___
 
@@ -32083,7 +32113,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:580](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L580)
+[permissions.ts:580](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L580)
 
 ___
 
@@ -32101,7 +32131,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:614](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L614)
+[permissions.ts:614](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L614)
 
 ___
 
@@ -32119,7 +32149,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1546](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1546)
+[permissions.ts:1546](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1546)
 
 ___
 
@@ -32137,7 +32167,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:288](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L288)
+[permissions.ts:288](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L288)
 
 ___
 
@@ -32155,7 +32185,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:292](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L292)
+[permissions.ts:292](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L292)
 
 ___
 
@@ -32173,7 +32203,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:290](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L290)
+[permissions.ts:290](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L290)
 
 ___
 
@@ -32191,7 +32221,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:295](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L295)
+[permissions.ts:295](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L295)
 
 ___
 
@@ -32209,7 +32239,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:293](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L293)
+[permissions.ts:293](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L293)
 
 ___
 
@@ -32227,7 +32257,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:286](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L286)
+[permissions.ts:286](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L286)
 
 ___
 
@@ -32245,7 +32275,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:282](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L282)
+[permissions.ts:282](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L282)
 
 ___
 
@@ -32263,7 +32293,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:291](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L291)
+[permissions.ts:291](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L291)
 
 ___
 
@@ -32281,7 +32311,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:285](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L285)
+[permissions.ts:285](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L285)
 
 ___
 
@@ -32299,7 +32329,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:281](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L281)
+[permissions.ts:281](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L281)
 
 ___
 
@@ -32317,7 +32347,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:284](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L284)
+[permissions.ts:284](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L284)
 
 ___
 
@@ -32335,7 +32365,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:289](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L289)
+[permissions.ts:289](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L289)
 
 ___
 
@@ -32353,7 +32383,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:283](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L283)
+[permissions.ts:283](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L283)
 
 ___
 
@@ -32371,7 +32401,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1279](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1279)
+[permissions.ts:1279](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1279)
 
 ___
 
@@ -32389,7 +32419,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1455](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1455)
+[permissions.ts:1455](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1455)
 
 ___
 
@@ -32407,7 +32437,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1442](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1442)
+[permissions.ts:1442](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1442)
 
 ___
 
@@ -32425,7 +32455,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1429](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1429)
+[permissions.ts:1429](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1429)
 
 ___
 
@@ -32443,7 +32473,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1416](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1416)
+[permissions.ts:1416](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1416)
 
 ___
 
@@ -32461,7 +32491,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1152](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1152)
+[permissions.ts:1152](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1152)
 
 ___
 
@@ -32479,7 +32509,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:304](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L304)
+[permissions.ts:304](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L304)
 
 ___
 
@@ -32497,7 +32527,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:59](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L59)
+[permissions.ts:59](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L59)
 
 ___
 
@@ -32515,7 +32545,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1309](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1309)
+[permissions.ts:1309](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1309)
 
 ___
 
@@ -32533,7 +32563,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1264](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1264)
+[permissions.ts:1264](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1264)
 
 ___
 
@@ -32551,7 +32581,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1100](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1100)
+[permissions.ts:1100](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1100)
 
 ___
 
@@ -32569,7 +32599,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:50](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L50)
+[permissions.ts:50](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L50)
 
 ___
 
@@ -32587,7 +32617,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:66](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L66)
+[permissions.ts:66](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L66)
 
 ___
 
@@ -32605,7 +32635,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:723](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L723)
+[permissions.ts:723](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L723)
 
 ___
 
@@ -32623,7 +32653,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:444](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L444)
+[permissions.ts:444](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L444)
 
 ___
 
@@ -32641,7 +32671,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:740](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L740)
+[permissions.ts:740](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L740)
 
 ___
 
@@ -32659,7 +32689,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1337](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1337)
+[permissions.ts:1337](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1337)
 
 ___
 
@@ -32677,7 +32707,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:873](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L873)
+[permissions.ts:873](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L873)
 
 ___
 
@@ -32695,7 +32725,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:925](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L925)
+[permissions.ts:925](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L925)
 
 ___
 
@@ -32713,7 +32743,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:890](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L890)
+[permissions.ts:890](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L890)
 
 ___
 
@@ -32731,7 +32761,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:907](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L907)
+[permissions.ts:907](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L907)
 
 ___
 
@@ -32749,7 +32779,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:757](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L757)
+[permissions.ts:757](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L757)
 
 ___
 
@@ -32767,7 +32797,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:942](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L942)
+[permissions.ts:942](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L942)
 
 ___
 
@@ -32785,7 +32815,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:39](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L39)
+[permissions.ts:39](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L39)
 
 ___
 
@@ -32803,7 +32833,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:34](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L34)
+[permissions.ts:34](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L34)
 
 ___
 
@@ -32821,7 +32851,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1398](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1398)
+[permissions.ts:1398](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1398)
 
 ___
 
@@ -32839,7 +32869,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:556](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L556)
+[permissions.ts:556](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L556)
 
 ___
 
@@ -32857,7 +32887,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:590](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L590)
+[permissions.ts:590](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L590)
 
 ___
 
@@ -32875,7 +32905,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1194](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1194)
+[permissions.ts:1194](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1194)
 
 ___
 
@@ -32893,7 +32923,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:372](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L372)
+[permissions.ts:372](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L372)
 
 ___
 
@@ -32911,7 +32941,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:389](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L389)
+[permissions.ts:389](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L389)
 
 ___
 
@@ -32929,7 +32959,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:676](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L676)
+[permissions.ts:676](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L676)
 
 ___
 
@@ -32947,7 +32977,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1065](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1065)
+[permissions.ts:1065](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1065)
 
 ___
 
@@ -32965,7 +32995,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1208](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1208)
+[permissions.ts:1208](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1208)
 
 ___
 
@@ -32983,7 +33013,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1222](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1222)
+[permissions.ts:1222](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1222)
 
 ___
 
@@ -33001,7 +33031,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1236](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1236)
+[permissions.ts:1236](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1236)
 
 ___
 
@@ -33019,7 +33049,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1139](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1139)
+[permissions.ts:1139](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1139)
 
 ___
 
@@ -33037,7 +33067,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1087](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1087)
+[permissions.ts:1087](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1087)
 
 ___
 
@@ -33055,7 +33085,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1072](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1072)
+[permissions.ts:1072](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1072)
 
 ___
 
@@ -33073,7 +33103,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1294](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1294)
+[permissions.ts:1294](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1294)
 
 ___
 
@@ -33091,7 +33121,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:338](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L338)
+[permissions.ts:338](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L338)
 
 ___
 
@@ -33109,7 +33139,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:355](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L355)
+[permissions.ts:355](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L355)
 
 ___
 
@@ -33127,7 +33157,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:659](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L659)
+[permissions.ts:659](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L659)
 
 ___
 
@@ -33145,7 +33175,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1250](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1250)
+[permissions.ts:1250](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1250)
 
 ___
 
@@ -33163,7 +33193,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1044](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1044)
+[permissions.ts:1044](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1044)
 
 ___
 
@@ -33181,7 +33211,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1032](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1032)
+[permissions.ts:1032](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1032)
 
 ___
 
@@ -33199,7 +33229,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:112](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L112)
+[permissions.ts:112](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L112)
 
 ___
 
@@ -33217,7 +33247,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:95](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L95)
+[permissions.ts:95](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L95)
 
 ___
 
@@ -33235,7 +33265,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:520](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L520)
+[permissions.ts:520](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L520)
 
 ___
 
@@ -33253,7 +33283,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:468](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L468)
+[permissions.ts:468](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L468)
 
 ___
 
@@ -33271,7 +33301,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:804](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L804)
+[permissions.ts:804](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L804)
 
 ___
 
@@ -33289,7 +33319,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:321](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L321)
+[permissions.ts:321](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L321)
 
 ___
 
@@ -33307,7 +33337,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:424](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L424)
+[permissions.ts:424](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L424)
 
 ___
 
@@ -33325,7 +33355,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:695](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L695)
+[permissions.ts:695](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L695)
 
 ___
 
@@ -33343,7 +33373,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:625](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L625)
+[permissions.ts:625](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L625)
 
 ___
 
@@ -33361,7 +33391,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:971](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L971)
+[permissions.ts:971](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L971)
 
 ___
 
@@ -33379,7 +33409,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:959](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L959)
+[permissions.ts:959](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L959)
 
 ___
 
@@ -33397,7 +33427,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:839](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L839)
+[permissions.ts:839](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L839)
 
 ___
 
@@ -33415,7 +33445,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:856](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L856)
+[permissions.ts:856](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L856)
 
 ___
 
@@ -33433,7 +33463,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:287](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L287)
+[permissions.ts:287](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L287)
 
 ___
 
@@ -33451,7 +33481,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:7](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L7)
+[permissions.ts:7](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L7)
 
 ___
 
@@ -33469,7 +33499,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:774](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L774)
+[permissions.ts:774](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L774)
 
 ___
 
@@ -33487,7 +33517,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:642](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L642)
+[permissions.ts:642](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L642)
 
 ___
 
@@ -33505,7 +33535,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:821](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L821)
+[permissions.ts:821](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L821)
 
 ___
 
@@ -33523,7 +33553,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:538](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L538)
+[permissions.ts:538](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L538)
 
 ___
 
@@ -33541,7 +33571,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:484](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L484)
+[permissions.ts:484](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L484)
 
 ___
 
@@ -33559,7 +33589,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:502](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L502)
+[permissions.ts:502](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L502)
 
 ___
 
@@ -33577,7 +33607,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:710](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L710)
+[permissions.ts:710](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L710)
 
 ___
 
@@ -33595,7 +33625,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1180](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1180)
+[permissions.ts:1180](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1180)
 
 ___
 
@@ -33613,7 +33643,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1166](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1166)
+[permissions.ts:1166](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1166)
 
 ___
 
@@ -33631,7 +33661,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1382](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1382)
+[permissions.ts:1382](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1382)
 
 ___
 
@@ -33649,7 +33679,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1370](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1370)
+[permissions.ts:1370](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1370)
 
 ___
 
@@ -33667,7 +33697,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:163](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L163)
+[permissions.ts:163](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L163)
 
 ___
 
@@ -33685,7 +33715,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:129](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L129)
+[permissions.ts:129](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L129)
 
 ___
 
@@ -33703,7 +33733,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:146](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L146)
+[permissions.ts:146](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L146)
 
 ___
 
@@ -33721,7 +33751,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1126](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1126)
+[permissions.ts:1126](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1126)
 
 ___
 
@@ -33739,7 +33769,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1113](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1113)
+[permissions.ts:1113](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1113)
 
 ___
 
@@ -33757,7 +33787,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:792](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L792)
+[permissions.ts:792](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L792)
 
 ___
 
@@ -33775,7 +33805,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:406](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L406)
+[permissions.ts:406](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L406)
 
 ___
 
@@ -33793,7 +33823,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1019](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1019)
+[permissions.ts:1019](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1019)
 
 ___
 
@@ -33811,7 +33841,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1006](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1006)
+[permissions.ts:1006](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1006)
 
 ___
 
@@ -33829,7 +33859,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1321](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1321)
+[permissions.ts:1321](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1321)
 
 ___
 
@@ -33847,7 +33877,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:457](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L457)
+[permissions.ts:457](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L457)
 
 ___
 
@@ -33865,7 +33895,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:23](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L23)
+[permissions.ts:23](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L23)
 
 ___
 
@@ -33883,7 +33913,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:573](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L573)
+[permissions.ts:573](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L573)
 
 ___
 
@@ -33901,7 +33931,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:77](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L77)
+[permissions.ts:77](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L77)
 
 ___
 
@@ -33919,7 +33949,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1355](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1355)
+[permissions.ts:1355](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1355)
 
 ___
 
@@ -33937,7 +33967,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:607](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L607)
+[permissions.ts:607](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L607)
 
 ___
 
@@ -33955,7 +33985,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1539](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1539)
+[permissions.ts:1539](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1539)
 
 ___
 
@@ -33973,7 +34003,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1275](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1275)
+[permissions.ts:1275](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1275)
 
 ___
 
@@ -33991,7 +34021,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1451](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1451)
+[permissions.ts:1451](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1451)
 
 ___
 
@@ -34009,7 +34039,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1438](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1438)
+[permissions.ts:1438](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1438)
 
 ___
 
@@ -34027,7 +34057,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1425](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1425)
+[permissions.ts:1425](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1425)
 
 ___
 
@@ -34045,7 +34075,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1412](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1412)
+[permissions.ts:1412](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1412)
 
 ___
 
@@ -34063,7 +34093,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1148](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1148)
+[permissions.ts:1148](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1148)
 
 ___
 
@@ -34081,7 +34111,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1305](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1305)
+[permissions.ts:1305](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1305)
 
 ___
 
@@ -34099,7 +34129,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1260](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1260)
+[permissions.ts:1260](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1260)
 
 ___
 
@@ -34117,7 +34147,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1096](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1096)
+[permissions.ts:1096](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1096)
 
 ___
 
@@ -34135,7 +34165,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:46](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L46)
+[permissions.ts:46](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L46)
 
 ___
 
@@ -34153,7 +34183,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:440](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L440)
+[permissions.ts:440](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L440)
 
 ___
 
@@ -34171,7 +34201,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1395](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1395)
+[permissions.ts:1395](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1395)
 
 ___
 
@@ -34189,7 +34219,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1190](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1190)
+[permissions.ts:1190](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1190)
 
 ___
 
@@ -34207,7 +34237,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1204](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1204)
+[permissions.ts:1204](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1204)
 
 ___
 
@@ -34225,7 +34255,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1218](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1218)
+[permissions.ts:1218](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1218)
 
 ___
 
@@ -34243,7 +34273,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1232](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1232)
+[permissions.ts:1232](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1232)
 
 ___
 
@@ -34261,7 +34291,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1135](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1135)
+[permissions.ts:1135](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1135)
 
 ___
 
@@ -34279,7 +34309,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1083](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1083)
+[permissions.ts:1083](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1083)
 
 ___
 
@@ -34297,7 +34327,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1290](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1290)
+[permissions.ts:1290](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1290)
 
 ___
 
@@ -34315,7 +34345,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1246](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1246)
+[permissions.ts:1246](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1246)
 
 ___
 
@@ -34333,7 +34363,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1028](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1028)
+[permissions.ts:1028](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1028)
 
 ___
 
@@ -34351,7 +34381,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:801](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L801)
+[permissions.ts:801](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L801)
 
 ___
 
@@ -34369,7 +34399,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:691](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L691)
+[permissions.ts:691](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L691)
 
 ___
 
@@ -34387,7 +34417,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:955](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L955)
+[permissions.ts:955](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L955)
 
 ___
 
@@ -34405,7 +34435,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:836](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L836)
+[permissions.ts:836](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L836)
 
 ___
 
@@ -34423,7 +34453,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:853](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L853)
+[permissions.ts:853](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L853)
 
 ___
 
@@ -34441,7 +34471,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:706](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L706)
+[permissions.ts:706](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L706)
 
 ___
 
@@ -34459,7 +34489,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1176](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1176)
+[permissions.ts:1176](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1176)
 
 ___
 
@@ -34477,7 +34507,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1162](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1162)
+[permissions.ts:1162](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1162)
 
 ___
 
@@ -34495,7 +34525,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1366](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1366)
+[permissions.ts:1366](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1366)
 
 ___
 
@@ -34513,7 +34543,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1122](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1122)
+[permissions.ts:1122](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1122)
 
 ___
 
@@ -34531,7 +34561,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1109](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1109)
+[permissions.ts:1109](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1109)
 
 ___
 
@@ -34549,7 +34579,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:788](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L788)
+[permissions.ts:788](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L788)
 
 ___
 
@@ -34567,7 +34597,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1015](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1015)
+[permissions.ts:1015](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1015)
 
 ___
 
@@ -34585,7 +34615,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1002](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1002)
+[permissions.ts:1002](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1002)
 
 ___
 
@@ -34603,7 +34633,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:453](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L453)
+[permissions.ts:453](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L453)
 
 ___
 
@@ -34621,7 +34651,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:73](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L73)
+[permissions.ts:73](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L73)
 
 ___
 
@@ -34639,7 +34669,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1351](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1351)
+[permissions.ts:1351](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1351)
 
 ___
 
@@ -34657,7 +34687,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:8](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L8)
+[permissions.ts:8](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L8)
 
 ___
 
@@ -34675,7 +34705,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:12](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L12)
+[permissions.ts:12](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L12)
 
 ___
 
@@ -34693,7 +34723,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:10](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L10)
+[permissions.ts:10](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L10)
 
 ___
 
@@ -34711,7 +34741,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:13](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L13)
+[permissions.ts:13](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L13)
 
 ___
 
@@ -34729,7 +34759,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:6](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L6)
+[permissions.ts:6](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L6)
 
 ___
 
@@ -34747,7 +34777,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:2](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L2)
+[permissions.ts:2](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L2)
 
 ___
 
@@ -34765,7 +34795,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:11](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L11)
+[permissions.ts:11](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L11)
 
 ___
 
@@ -34783,7 +34813,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:5](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L5)
+[permissions.ts:5](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L5)
 
 ___
 
@@ -34801,7 +34831,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1)
+[permissions.ts:1](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1)
 
 ___
 
@@ -34819,7 +34849,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:4](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L4)
+[permissions.ts:4](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L4)
 
 ___
 
@@ -34837,7 +34867,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:9](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L9)
+[permissions.ts:9](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L9)
 
 ___
 
@@ -34855,7 +34885,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:3](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L3)
+[permissions.ts:3](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L3)
 
 ___
 
@@ -34873,7 +34903,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:775](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L775)
+[permissions.ts:775](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L775)
 
 ___
 
@@ -34891,7 +34921,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:779](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L779)
+[permissions.ts:779](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L779)
 
 ___
 
@@ -34909,7 +34939,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:777](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L777)
+[permissions.ts:777](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L777)
 
 ___
 
@@ -34927,7 +34957,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:780](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L780)
+[permissions.ts:780](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L780)
 
 ___
 
@@ -34945,7 +34975,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:773](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L773)
+[permissions.ts:773](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L773)
 
 ___
 
@@ -34963,7 +34993,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:769](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L769)
+[permissions.ts:769](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L769)
 
 ___
 
@@ -34981,7 +35011,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:778](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L778)
+[permissions.ts:778](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L778)
 
 ___
 
@@ -34999,7 +35029,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:772](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L772)
+[permissions.ts:772](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L772)
 
 ___
 
@@ -35017,7 +35047,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:768](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L768)
+[permissions.ts:768](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L768)
 
 ___
 
@@ -35035,7 +35065,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:771](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L771)
+[permissions.ts:771](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L771)
 
 ___
 
@@ -35053,7 +35083,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:776](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L776)
+[permissions.ts:776](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L776)
 
 ___
 
@@ -35071,7 +35101,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:770](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L770)
+[permissions.ts:770](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L770)
 
 ___
 
@@ -35089,7 +35119,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:643](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L643)
+[permissions.ts:643](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L643)
 
 ___
 
@@ -35107,7 +35137,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:647](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L647)
+[permissions.ts:647](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L647)
 
 ___
 
@@ -35125,7 +35155,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:645](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L645)
+[permissions.ts:645](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L645)
 
 ___
 
@@ -35143,7 +35173,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:650](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L650)
+[permissions.ts:650](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L650)
 
 ___
 
@@ -35161,7 +35191,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:648](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L648)
+[permissions.ts:648](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L648)
 
 ___
 
@@ -35179,7 +35209,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:641](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L641)
+[permissions.ts:641](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L641)
 
 ___
 
@@ -35197,7 +35227,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:637](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L637)
+[permissions.ts:637](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L637)
 
 ___
 
@@ -35215,7 +35245,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:646](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L646)
+[permissions.ts:646](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L646)
 
 ___
 
@@ -35233,7 +35263,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:640](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L640)
+[permissions.ts:640](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L640)
 
 ___
 
@@ -35251,7 +35281,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:636](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L636)
+[permissions.ts:636](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L636)
 
 ___
 
@@ -35269,7 +35299,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:639](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L639)
+[permissions.ts:639](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L639)
 
 ___
 
@@ -35287,7 +35317,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:644](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L644)
+[permissions.ts:644](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L644)
 
 ___
 
@@ -35305,7 +35335,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:638](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L638)
+[permissions.ts:638](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L638)
 
 ___
 
@@ -35323,7 +35353,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:822](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L822)
+[permissions.ts:822](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L822)
 
 ___
 
@@ -35341,7 +35371,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:826](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L826)
+[permissions.ts:826](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L826)
 
 ___
 
@@ -35359,7 +35389,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:824](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L824)
+[permissions.ts:824](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L824)
 
 ___
 
@@ -35377,7 +35407,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:830](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L830)
+[permissions.ts:830](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L830)
 
 ___
 
@@ -35395,7 +35425,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:827](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L827)
+[permissions.ts:827](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L827)
 
 ___
 
@@ -35413,7 +35443,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:820](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L820)
+[permissions.ts:820](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L820)
 
 ___
 
@@ -35431,7 +35461,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:816](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L816)
+[permissions.ts:816](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L816)
 
 ___
 
@@ -35449,7 +35479,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:825](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L825)
+[permissions.ts:825](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L825)
 
 ___
 
@@ -35467,7 +35497,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:819](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L819)
+[permissions.ts:819](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L819)
 
 ___
 
@@ -35485,7 +35515,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:815](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L815)
+[permissions.ts:815](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L815)
 
 ___
 
@@ -35503,7 +35533,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:818](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L818)
+[permissions.ts:818](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L818)
 
 ___
 
@@ -35521,7 +35551,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:823](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L823)
+[permissions.ts:823](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L823)
 
 ___
 
@@ -35539,7 +35569,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:817](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L817)
+[permissions.ts:817](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L817)
 
 ___
 
@@ -35557,7 +35587,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:539](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L539)
+[permissions.ts:539](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L539)
 
 ___
 
@@ -35575,7 +35605,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:543](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L543)
+[permissions.ts:543](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L543)
 
 ___
 
@@ -35593,7 +35623,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:541](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L541)
+[permissions.ts:541](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L541)
 
 ___
 
@@ -35611,7 +35641,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:547](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L547)
+[permissions.ts:547](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L547)
 
 ___
 
@@ -35629,7 +35659,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:544](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L544)
+[permissions.ts:544](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L544)
 
 ___
 
@@ -35647,7 +35677,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:537](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L537)
+[permissions.ts:537](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L537)
 
 ___
 
@@ -35665,7 +35695,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:533](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L533)
+[permissions.ts:533](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L533)
 
 ___
 
@@ -35683,7 +35713,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:542](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L542)
+[permissions.ts:542](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L542)
 
 ___
 
@@ -35701,7 +35731,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:536](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L536)
+[permissions.ts:536](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L536)
 
 ___
 
@@ -35719,7 +35749,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:532](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L532)
+[permissions.ts:532](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L532)
 
 ___
 
@@ -35737,7 +35767,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:535](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L535)
+[permissions.ts:535](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L535)
 
 ___
 
@@ -35755,7 +35785,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:540](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L540)
+[permissions.ts:540](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L540)
 
 ___
 
@@ -35773,7 +35803,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:534](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L534)
+[permissions.ts:534](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L534)
 
 ___
 
@@ -35791,7 +35821,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:485](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L485)
+[permissions.ts:485](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L485)
 
 ___
 
@@ -35809,7 +35839,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:489](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L489)
+[permissions.ts:489](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L489)
 
 ___
 
@@ -35827,7 +35857,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:487](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L487)
+[permissions.ts:487](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L487)
 
 ___
 
@@ -35845,7 +35875,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:493](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L493)
+[permissions.ts:493](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L493)
 
 ___
 
@@ -35863,7 +35893,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:490](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L490)
+[permissions.ts:490](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L490)
 
 ___
 
@@ -35881,7 +35911,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:483](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L483)
+[permissions.ts:483](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L483)
 
 ___
 
@@ -35899,7 +35929,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:479](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L479)
+[permissions.ts:479](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L479)
 
 ___
 
@@ -35917,7 +35947,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:488](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L488)
+[permissions.ts:488](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L488)
 
 ___
 
@@ -35935,7 +35965,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:482](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L482)
+[permissions.ts:482](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L482)
 
 ___
 
@@ -35953,7 +35983,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:478](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L478)
+[permissions.ts:478](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L478)
 
 ___
 
@@ -35971,7 +36001,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:481](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L481)
+[permissions.ts:481](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L481)
 
 ___
 
@@ -35989,7 +36019,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:486](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L486)
+[permissions.ts:486](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L486)
 
 ___
 
@@ -36007,7 +36037,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:480](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L480)
+[permissions.ts:480](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L480)
 
 ___
 
@@ -36025,7 +36055,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:503](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L503)
+[permissions.ts:503](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L503)
 
 ___
 
@@ -36043,7 +36073,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:507](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L507)
+[permissions.ts:507](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L507)
 
 ___
 
@@ -36061,7 +36091,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:505](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L505)
+[permissions.ts:505](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L505)
 
 ___
 
@@ -36079,7 +36109,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:511](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L511)
+[permissions.ts:511](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L511)
 
 ___
 
@@ -36097,7 +36127,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:508](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L508)
+[permissions.ts:508](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L508)
 
 ___
 
@@ -36115,7 +36145,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:501](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L501)
+[permissions.ts:501](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L501)
 
 ___
 
@@ -36133,7 +36163,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:497](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L497)
+[permissions.ts:497](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L497)
 
 ___
 
@@ -36151,7 +36181,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:506](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L506)
+[permissions.ts:506](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L506)
 
 ___
 
@@ -36169,7 +36199,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:500](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L500)
+[permissions.ts:500](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L500)
 
 ___
 
@@ -36187,7 +36217,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:496](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L496)
+[permissions.ts:496](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L496)
 
 ___
 
@@ -36205,7 +36235,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:499](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L499)
+[permissions.ts:499](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L499)
 
 ___
 
@@ -36223,7 +36253,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:504](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L504)
+[permissions.ts:504](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L504)
 
 ___
 
@@ -36241,7 +36271,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:498](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L498)
+[permissions.ts:498](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L498)
 
 ___
 
@@ -36259,7 +36289,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:714](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L714)
+[permissions.ts:714](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L714)
 
 ___
 
@@ -36277,7 +36307,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1054](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1054)
+[permissions.ts:1054](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1054)
 
 ___
 
@@ -36295,7 +36325,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1057](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1057)
+[permissions.ts:1057](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1057)
 
 ___
 
@@ -36313,7 +36343,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1383](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1383)
+[permissions.ts:1383](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1383)
 
 ___
 
@@ -36331,7 +36361,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1387](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1387)
+[permissions.ts:1387](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1387)
 
 ___
 
@@ -36349,7 +36379,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1385](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1385)
+[permissions.ts:1385](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1385)
 
 ___
 
@@ -36367,7 +36397,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1388](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1388)
+[permissions.ts:1388](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1388)
 
 ___
 
@@ -36385,7 +36415,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1381](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1381)
+[permissions.ts:1381](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1381)
 
 ___
 
@@ -36403,7 +36433,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1377](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1377)
+[permissions.ts:1377](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1377)
 
 ___
 
@@ -36421,7 +36451,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1386](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1386)
+[permissions.ts:1386](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1386)
 
 ___
 
@@ -36439,7 +36469,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1380](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1380)
+[permissions.ts:1380](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1380)
 
 ___
 
@@ -36457,7 +36487,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1376](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1376)
+[permissions.ts:1376](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1376)
 
 ___
 
@@ -36475,7 +36505,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1379](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1379)
+[permissions.ts:1379](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1379)
 
 ___
 
@@ -36493,7 +36523,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1384](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1384)
+[permissions.ts:1384](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1384)
 
 ___
 
@@ -36511,7 +36541,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1378](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1378)
+[permissions.ts:1378](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1378)
 
 ___
 
@@ -36529,7 +36559,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1276](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1276)
+[permissions.ts:1276](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1276)
 
 ___
 
@@ -36547,7 +36577,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1452](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1452)
+[permissions.ts:1452](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1452)
 
 ___
 
@@ -36565,7 +36595,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1439](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1439)
+[permissions.ts:1439](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1439)
 
 ___
 
@@ -36583,7 +36613,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1426](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1426)
+[permissions.ts:1426](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1426)
 
 ___
 
@@ -36601,7 +36631,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1413](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1413)
+[permissions.ts:1413](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1413)
 
 ___
 
@@ -36619,7 +36649,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1149](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1149)
+[permissions.ts:1149](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1149)
 
 ___
 
@@ -36637,7 +36667,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1306](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1306)
+[permissions.ts:1306](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1306)
 
 ___
 
@@ -36655,7 +36685,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1261](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1261)
+[permissions.ts:1261](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1261)
 
 ___
 
@@ -36673,7 +36703,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1097](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1097)
+[permissions.ts:1097](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1097)
 
 ___
 
@@ -36691,7 +36721,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:47](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L47)
+[permissions.ts:47](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L47)
 
 ___
 
@@ -36709,7 +36739,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:441](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L441)
+[permissions.ts:441](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L441)
 
 ___
 
@@ -36727,7 +36757,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1400](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1400)
+[permissions.ts:1400](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1400)
 
 ___
 
@@ -36745,7 +36775,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1191](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1191)
+[permissions.ts:1191](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1191)
 
 ___
 
@@ -36763,7 +36793,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1205](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1205)
+[permissions.ts:1205](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1205)
 
 ___
 
@@ -36781,7 +36811,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1219](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1219)
+[permissions.ts:1219](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1219)
 
 ___
 
@@ -36799,7 +36829,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1233](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1233)
+[permissions.ts:1233](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1233)
 
 ___
 
@@ -36817,7 +36847,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1136](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1136)
+[permissions.ts:1136](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1136)
 
 ___
 
@@ -36835,7 +36865,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1084](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1084)
+[permissions.ts:1084](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1084)
 
 ___
 
@@ -36853,7 +36883,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1291](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1291)
+[permissions.ts:1291](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1291)
 
 ___
 
@@ -36871,7 +36901,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1247](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1247)
+[permissions.ts:1247](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1247)
 
 ___
 
@@ -36889,7 +36919,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1029](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1029)
+[permissions.ts:1029](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1029)
 
 ___
 
@@ -36907,7 +36937,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:806](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L806)
+[permissions.ts:806](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L806)
 
 ___
 
@@ -36925,7 +36955,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:692](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L692)
+[permissions.ts:692](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L692)
 
 ___
 
@@ -36943,7 +36973,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:956](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L956)
+[permissions.ts:956](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L956)
 
 ___
 
@@ -36961,7 +36991,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:841](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L841)
+[permissions.ts:841](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L841)
 
 ___
 
@@ -36979,7 +37009,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:858](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L858)
+[permissions.ts:858](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L858)
 
 ___
 
@@ -36997,7 +37027,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:707](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L707)
+[permissions.ts:707](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L707)
 
 ___
 
@@ -37015,7 +37045,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1177](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1177)
+[permissions.ts:1177](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1177)
 
 ___
 
@@ -37033,7 +37063,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1163](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1163)
+[permissions.ts:1163](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1163)
 
 ___
 
@@ -37051,7 +37081,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1367](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1367)
+[permissions.ts:1367](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1367)
 
 ___
 
@@ -37069,7 +37099,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1123](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1123)
+[permissions.ts:1123](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1123)
 
 ___
 
@@ -37087,7 +37117,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1110](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1110)
+[permissions.ts:1110](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1110)
 
 ___
 
@@ -37105,7 +37135,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:789](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L789)
+[permissions.ts:789](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L789)
 
 ___
 
@@ -37123,7 +37153,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1016](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1016)
+[permissions.ts:1016](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1016)
 
 ___
 
@@ -37141,7 +37171,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1003](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1003)
+[permissions.ts:1003](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1003)
 
 ___
 
@@ -37159,7 +37189,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:454](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L454)
+[permissions.ts:454](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L454)
 
 ___
 
@@ -37177,7 +37207,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:74](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L74)
+[permissions.ts:74](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L74)
 
 ___
 
@@ -37195,7 +37225,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1352](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1352)
+[permissions.ts:1352](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1352)
 
 ___
 
@@ -37213,7 +37243,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:164](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L164)
+[permissions.ts:164](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L164)
 
 ___
 
@@ -37231,7 +37261,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:168](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L168)
+[permissions.ts:168](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L168)
 
 ___
 
@@ -37249,7 +37279,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:166](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L166)
+[permissions.ts:166](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L166)
 
 ___
 
@@ -37267,7 +37297,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:171](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L171)
+[permissions.ts:171](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L171)
 
 ___
 
@@ -37285,7 +37315,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:169](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L169)
+[permissions.ts:169](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L169)
 
 ___
 
@@ -37303,7 +37333,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:162](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L162)
+[permissions.ts:162](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L162)
 
 ___
 
@@ -37321,7 +37351,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:158](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L158)
+[permissions.ts:158](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L158)
 
 ___
 
@@ -37339,7 +37369,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:167](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L167)
+[permissions.ts:167](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L167)
 
 ___
 
@@ -37357,7 +37387,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:161](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L161)
+[permissions.ts:161](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L161)
 
 ___
 
@@ -37375,7 +37405,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:157](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L157)
+[permissions.ts:157](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L157)
 
 ___
 
@@ -37393,7 +37423,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:160](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L160)
+[permissions.ts:160](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L160)
 
 ___
 
@@ -37411,7 +37441,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:165](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L165)
+[permissions.ts:165](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L165)
 
 ___
 
@@ -37429,7 +37459,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:159](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L159)
+[permissions.ts:159](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L159)
 
 ___
 
@@ -37447,7 +37477,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:130](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L130)
+[permissions.ts:130](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L130)
 
 ___
 
@@ -37465,7 +37495,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:134](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L134)
+[permissions.ts:134](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L134)
 
 ___
 
@@ -37483,7 +37513,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:132](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L132)
+[permissions.ts:132](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L132)
 
 ___
 
@@ -37501,7 +37531,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:137](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L137)
+[permissions.ts:137](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L137)
 
 ___
 
@@ -37519,7 +37549,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:135](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L135)
+[permissions.ts:135](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L135)
 
 ___
 
@@ -37537,7 +37567,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:128](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L128)
+[permissions.ts:128](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L128)
 
 ___
 
@@ -37555,7 +37585,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:124](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L124)
+[permissions.ts:124](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L124)
 
 ___
 
@@ -37573,7 +37603,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:133](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L133)
+[permissions.ts:133](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L133)
 
 ___
 
@@ -37591,7 +37621,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:127](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L127)
+[permissions.ts:127](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L127)
 
 ___
 
@@ -37609,7 +37639,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:123](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L123)
+[permissions.ts:123](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L123)
 
 ___
 
@@ -37627,7 +37657,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:126](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L126)
+[permissions.ts:126](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L126)
 
 ___
 
@@ -37645,7 +37675,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:131](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L131)
+[permissions.ts:131](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L131)
 
 ___
 
@@ -37663,7 +37693,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:125](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L125)
+[permissions.ts:125](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L125)
 
 ___
 
@@ -37681,7 +37711,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:147](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L147)
+[permissions.ts:147](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L147)
 
 ___
 
@@ -37699,7 +37729,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:151](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L151)
+[permissions.ts:151](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L151)
 
 ___
 
@@ -37717,7 +37747,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:149](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L149)
+[permissions.ts:149](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L149)
 
 ___
 
@@ -37735,7 +37765,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:154](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L154)
+[permissions.ts:154](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L154)
 
 ___
 
@@ -37753,7 +37783,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:152](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L152)
+[permissions.ts:152](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L152)
 
 ___
 
@@ -37771,7 +37801,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:145](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L145)
+[permissions.ts:145](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L145)
 
 ___
 
@@ -37789,7 +37819,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:141](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L141)
+[permissions.ts:141](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L141)
 
 ___
 
@@ -37807,7 +37837,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:150](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L150)
+[permissions.ts:150](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L150)
 
 ___
 
@@ -37825,7 +37855,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:144](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L144)
+[permissions.ts:144](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L144)
 
 ___
 
@@ -37843,7 +37873,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:140](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L140)
+[permissions.ts:140](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L140)
 
 ___
 
@@ -37861,7 +37891,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:143](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L143)
+[permissions.ts:143](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L143)
 
 ___
 
@@ -37879,7 +37909,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:148](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L148)
+[permissions.ts:148](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L148)
 
 ___
 
@@ -37897,7 +37927,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:142](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L142)
+[permissions.ts:142](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L142)
 
 ___
 
@@ -37915,7 +37945,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:407](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L407)
+[permissions.ts:407](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L407)
 
 ___
 
@@ -37933,7 +37963,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:411](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L411)
+[permissions.ts:411](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L411)
 
 ___
 
@@ -37951,7 +37981,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:409](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L409)
+[permissions.ts:409](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L409)
 
 ___
 
@@ -37969,7 +37999,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:415](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L415)
+[permissions.ts:415](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L415)
 
 ___
 
@@ -37987,7 +38017,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:412](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L412)
+[permissions.ts:412](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L412)
 
 ___
 
@@ -38005,7 +38035,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:405](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L405)
+[permissions.ts:405](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L405)
 
 ___
 
@@ -38023,7 +38053,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:401](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L401)
+[permissions.ts:401](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L401)
 
 ___
 
@@ -38041,7 +38071,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:410](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L410)
+[permissions.ts:410](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L410)
 
 ___
 
@@ -38059,7 +38089,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:404](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L404)
+[permissions.ts:404](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L404)
 
 ___
 
@@ -38077,7 +38107,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:400](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L400)
+[permissions.ts:400](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L400)
 
 ___
 
@@ -38095,7 +38125,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:403](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L403)
+[permissions.ts:403](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L403)
 
 ___
 
@@ -38113,7 +38143,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:408](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L408)
+[permissions.ts:408](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L408)
 
 ___
 
@@ -38131,7 +38161,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:402](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L402)
+[permissions.ts:402](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L402)
 
 ___
 
@@ -38149,7 +38179,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1322](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1322)
+[permissions.ts:1322](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1322)
 
 ___
 
@@ -38167,7 +38197,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1326](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1326)
+[permissions.ts:1326](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1326)
 
 ___
 
@@ -38185,7 +38215,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1324](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1324)
+[permissions.ts:1324](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1324)
 
 ___
 
@@ -38203,7 +38233,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1327](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1327)
+[permissions.ts:1327](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1327)
 
 ___
 
@@ -38221,7 +38251,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1320](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1320)
+[permissions.ts:1320](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1320)
 
 ___
 
@@ -38239,7 +38269,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1316](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1316)
+[permissions.ts:1316](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1316)
 
 ___
 
@@ -38257,7 +38287,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1325](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1325)
+[permissions.ts:1325](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1325)
 
 ___
 
@@ -38275,7 +38305,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1319](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1319)
+[permissions.ts:1319](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1319)
 
 ___
 
@@ -38293,7 +38323,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1315](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1315)
+[permissions.ts:1315](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1315)
 
 ___
 
@@ -38311,7 +38341,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1318](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1318)
+[permissions.ts:1318](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1318)
 
 ___
 
@@ -38329,7 +38359,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1323](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1323)
+[permissions.ts:1323](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1323)
 
 ___
 
@@ -38347,7 +38377,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1317](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1317)
+[permissions.ts:1317](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1317)
 
 ___
 
@@ -38365,7 +38395,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:24](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L24)
+[permissions.ts:24](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L24)
 
 ___
 
@@ -38383,7 +38413,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:27](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L27)
+[permissions.ts:27](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L27)
 
 ___
 
@@ -38401,7 +38431,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:22](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L22)
+[permissions.ts:22](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L22)
 
 ___
 
@@ -38419,7 +38449,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L18)
+[permissions.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L18)
 
 ___
 
@@ -38437,7 +38467,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:26](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L26)
+[permissions.ts:26](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L26)
 
 ___
 
@@ -38455,7 +38485,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:21](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L21)
+[permissions.ts:21](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L21)
 
 ___
 
@@ -38473,7 +38503,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L17)
+[permissions.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L17)
 
 ___
 
@@ -38491,7 +38521,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:20](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L20)
+[permissions.ts:20](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L20)
 
 ___
 
@@ -38509,7 +38539,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:25](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L25)
+[permissions.ts:25](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L25)
 
 ___
 
@@ -38527,7 +38557,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:19](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L19)
+[permissions.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L19)
 
 ___
 
@@ -38545,7 +38575,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:80](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L80)
+[permissions.ts:80](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L80)
 
 ___
 
@@ -38563,7 +38593,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:574](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L574)
+[permissions.ts:574](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L574)
 
 ___
 
@@ -38581,7 +38611,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:578](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L578)
+[permissions.ts:578](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L578)
 
 ___
 
@@ -38599,7 +38629,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:576](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L576)
+[permissions.ts:576](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L576)
 
 ___
 
@@ -38617,7 +38647,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:581](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L581)
+[permissions.ts:581](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L581)
 
 ___
 
@@ -38635,7 +38665,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:579](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L579)
+[permissions.ts:579](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L579)
 
 ___
 
@@ -38653,7 +38683,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:572](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L572)
+[permissions.ts:572](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L572)
 
 ___
 
@@ -38671,7 +38701,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:568](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L568)
+[permissions.ts:568](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L568)
 
 ___
 
@@ -38689,7 +38719,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:577](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L577)
+[permissions.ts:577](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L577)
 
 ___
 
@@ -38707,7 +38737,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:571](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L571)
+[permissions.ts:571](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L571)
 
 ___
 
@@ -38725,7 +38755,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:567](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L567)
+[permissions.ts:567](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L567)
 
 ___
 
@@ -38743,7 +38773,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:570](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L570)
+[permissions.ts:570](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L570)
 
 ___
 
@@ -38761,7 +38791,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:575](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L575)
+[permissions.ts:575](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L575)
 
 ___
 
@@ -38779,7 +38809,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:569](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L569)
+[permissions.ts:569](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L569)
 
 ___
 
@@ -38797,7 +38827,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1527](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1527)
+[permissions.ts:1527](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1527)
 
 ___
 
@@ -38815,7 +38845,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1526](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1526)
+[permissions.ts:1526](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1526)
 
 ___
 
@@ -38833,7 +38863,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1524](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1524)
+[permissions.ts:1524](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1524)
 
 ___
 
@@ -38851,7 +38881,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1523](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1523)
+[permissions.ts:1523](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1523)
 
 ___
 
@@ -38869,7 +38899,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1520](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1520)
+[permissions.ts:1520](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1520)
 
 ___
 
@@ -38887,7 +38917,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1522](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1522)
+[permissions.ts:1522](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1522)
 
 ___
 
@@ -38905,7 +38935,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1525](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1525)
+[permissions.ts:1525](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1525)
 
 ___
 
@@ -38923,7 +38953,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1521](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1521)
+[permissions.ts:1521](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1521)
 
 ___
 
@@ -38941,7 +38971,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1273](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1273)
+[permissions.ts:1273](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1273)
 
 ___
 
@@ -38959,7 +38989,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1449](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1449)
+[permissions.ts:1449](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1449)
 
 ___
 
@@ -38977,7 +39007,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1436](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1436)
+[permissions.ts:1436](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1436)
 
 ___
 
@@ -38995,7 +39025,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1423](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1423)
+[permissions.ts:1423](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1423)
 
 ___
 
@@ -39013,7 +39043,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1410](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1410)
+[permissions.ts:1410](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1410)
 
 ___
 
@@ -39031,7 +39061,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1146](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1146)
+[permissions.ts:1146](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1146)
 
 ___
 
@@ -39049,7 +39079,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1303](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1303)
+[permissions.ts:1303](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1303)
 
 ___
 
@@ -39067,7 +39097,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1258](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1258)
+[permissions.ts:1258](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1258)
 
 ___
 
@@ -39085,7 +39115,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1094](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1094)
+[permissions.ts:1094](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1094)
 
 ___
 
@@ -39103,7 +39133,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:44](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L44)
+[permissions.ts:44](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L44)
 
 ___
 
@@ -39121,7 +39151,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:438](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L438)
+[permissions.ts:438](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L438)
 
 ___
 
@@ -39139,7 +39169,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1394](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1394)
+[permissions.ts:1394](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1394)
 
 ___
 
@@ -39157,7 +39187,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1188](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1188)
+[permissions.ts:1188](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1188)
 
 ___
 
@@ -39175,7 +39205,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1202](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1202)
+[permissions.ts:1202](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1202)
 
 ___
 
@@ -39193,7 +39223,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1216](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1216)
+[permissions.ts:1216](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1216)
 
 ___
 
@@ -39211,7 +39241,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1230](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1230)
+[permissions.ts:1230](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1230)
 
 ___
 
@@ -39229,7 +39259,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1133](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1133)
+[permissions.ts:1133](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1133)
 
 ___
 
@@ -39247,7 +39277,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1081](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1081)
+[permissions.ts:1081](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1081)
 
 ___
 
@@ -39265,7 +39295,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1288](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1288)
+[permissions.ts:1288](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1288)
 
 ___
 
@@ -39283,7 +39313,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1244](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1244)
+[permissions.ts:1244](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1244)
 
 ___
 
@@ -39301,7 +39331,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1026](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1026)
+[permissions.ts:1026](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1026)
 
 ___
 
@@ -39319,7 +39349,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:800](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L800)
+[permissions.ts:800](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L800)
 
 ___
 
@@ -39337,7 +39367,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:689](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L689)
+[permissions.ts:689](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L689)
 
 ___
 
@@ -39355,7 +39385,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:953](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L953)
+[permissions.ts:953](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L953)
 
 ___
 
@@ -39373,7 +39403,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:835](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L835)
+[permissions.ts:835](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L835)
 
 ___
 
@@ -39391,7 +39421,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:852](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L852)
+[permissions.ts:852](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L852)
 
 ___
 
@@ -39409,7 +39439,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:704](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L704)
+[permissions.ts:704](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L704)
 
 ___
 
@@ -39427,7 +39457,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1174](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1174)
+[permissions.ts:1174](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1174)
 
 ___
 
@@ -39445,7 +39475,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1160](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1160)
+[permissions.ts:1160](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1160)
 
 ___
 
@@ -39463,7 +39493,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1364](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1364)
+[permissions.ts:1364](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1364)
 
 ___
 
@@ -39481,7 +39511,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1120](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1120)
+[permissions.ts:1120](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1120)
 
 ___
 
@@ -39499,7 +39529,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1107](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1107)
+[permissions.ts:1107](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1107)
 
 ___
 
@@ -39517,7 +39547,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:786](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L786)
+[permissions.ts:786](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L786)
 
 ___
 
@@ -39535,7 +39565,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1013](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1013)
+[permissions.ts:1013](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1013)
 
 ___
 
@@ -39553,7 +39583,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1000](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1000)
+[permissions.ts:1000](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1000)
 
 ___
 
@@ -39571,7 +39601,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:451](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L451)
+[permissions.ts:451](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L451)
 
 ___
 
@@ -39589,7 +39619,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:71](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L71)
+[permissions.ts:71](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L71)
 
 ___
 
@@ -39607,7 +39637,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1349](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1349)
+[permissions.ts:1349](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1349)
 
 ___
 
@@ -39625,7 +39655,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:56](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L56)
+[permissions.ts:56](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L56)
 
 ___
 
@@ -39643,7 +39673,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:86](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L86)
+[permissions.ts:86](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L86)
 
 ___
 
@@ -39661,7 +39691,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:63](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L63)
+[permissions.ts:63](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L63)
 
 ___
 
@@ -39679,7 +39709,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:36](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L36)
+[permissions.ts:36](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L36)
 
 ___
 
@@ -39697,7 +39727,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:31](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L31)
+[permissions.ts:31](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L31)
 
 ___
 
@@ -39715,7 +39745,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1062](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1062)
+[permissions.ts:1062](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1062)
 
 ___
 
@@ -39733,7 +39763,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1069](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1069)
+[permissions.ts:1069](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1069)
 
 ___
 
@@ -39751,7 +39781,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1076](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1076)
+[permissions.ts:1076](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1076)
 
 ___
 
@@ -39769,7 +39799,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:83](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L83)
+[permissions.ts:83](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L83)
 
 ___
 
@@ -39787,7 +39817,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1359](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1359)
+[permissions.ts:1359](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1359)
 
 ___
 
@@ -39805,7 +39835,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:608](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L608)
+[permissions.ts:608](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L608)
 
 ___
 
@@ -39823,7 +39853,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:612](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L612)
+[permissions.ts:612](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L612)
 
 ___
 
@@ -39841,7 +39871,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:610](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L610)
+[permissions.ts:610](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L610)
 
 ___
 
@@ -39859,7 +39889,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:616](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L616)
+[permissions.ts:616](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L616)
 
 ___
 
@@ -39877,7 +39907,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:613](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L613)
+[permissions.ts:613](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L613)
 
 ___
 
@@ -39895,7 +39925,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:606](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L606)
+[permissions.ts:606](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L606)
 
 ___
 
@@ -39913,7 +39943,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:602](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L602)
+[permissions.ts:602](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L602)
 
 ___
 
@@ -39931,7 +39961,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:611](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L611)
+[permissions.ts:611](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L611)
 
 ___
 
@@ -39949,7 +39979,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:605](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L605)
+[permissions.ts:605](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L605)
 
 ___
 
@@ -39967,7 +39997,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:601](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L601)
+[permissions.ts:601](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L601)
 
 ___
 
@@ -39985,7 +40015,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:604](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L604)
+[permissions.ts:604](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L604)
 
 ___
 
@@ -40003,7 +40033,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:609](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L609)
+[permissions.ts:609](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L609)
 
 ___
 
@@ -40021,7 +40051,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:603](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L603)
+[permissions.ts:603](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L603)
 
 ___
 
@@ -40039,7 +40069,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1540](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1540)
+[permissions.ts:1540](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1540)
 
 ___
 
@@ -40057,7 +40087,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1544](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1544)
+[permissions.ts:1544](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1544)
 
 ___
 
@@ -40075,7 +40105,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1542](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1542)
+[permissions.ts:1542](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1542)
 
 ___
 
@@ -40093,7 +40123,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1545](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1545)
+[permissions.ts:1545](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1545)
 
 ___
 
@@ -40111,7 +40141,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1538](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1538)
+[permissions.ts:1538](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1538)
 
 ___
 
@@ -40129,7 +40159,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1534](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1534)
+[permissions.ts:1534](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1534)
 
 ___
 
@@ -40147,7 +40177,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1543](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1543)
+[permissions.ts:1543](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1543)
 
 ___
 
@@ -40165,7 +40195,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1537](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1537)
+[permissions.ts:1537](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1537)
 
 ___
 
@@ -40183,7 +40213,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1533](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1533)
+[permissions.ts:1533](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1533)
 
 ___
 
@@ -40201,7 +40231,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1536](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1536)
+[permissions.ts:1536](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1536)
 
 ___
 
@@ -40219,7 +40249,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1541](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1541)
+[permissions.ts:1541](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1541)
 
 ___
 
@@ -40237,7 +40267,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1535](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1535)
+[permissions.ts:1535](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1535)
 
 ___
 
@@ -40247,7 +40277,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1284](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1284)
+[permissions.ts:1284](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1284)
 
 ___
 
@@ -40257,7 +40287,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1458](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1458)
+[permissions.ts:1458](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1458)
 
 ___
 
@@ -40267,7 +40297,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1471](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1471)
+[permissions.ts:1471](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1471)
 
 ___
 
@@ -40277,7 +40307,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1445](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1445)
+[permissions.ts:1445](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1445)
 
 ___
 
@@ -40287,7 +40317,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1432](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1432)
+[permissions.ts:1432](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1432)
 
 ___
 
@@ -40297,7 +40327,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1419](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1419)
+[permissions.ts:1419](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1419)
 
 ___
 
@@ -40307,7 +40337,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1549](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1549)
+[permissions.ts:1549](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1549)
 
 ___
 
@@ -40317,7 +40347,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1156](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1156)
+[permissions.ts:1156](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1156)
 
 ___
 
@@ -40327,7 +40357,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:313](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L313)
+[permissions.ts:313](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L313)
 
 ___
 
@@ -40337,7 +40367,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:60](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L60)
+[permissions.ts:60](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L60)
 
 ___
 
@@ -40347,7 +40377,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1269](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1269)
+[permissions.ts:1269](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1269)
 
 ___
 
@@ -40357,7 +40387,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1313](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1313)
+[permissions.ts:1313](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1313)
 
 ___
 
@@ -40367,7 +40397,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1103](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1103)
+[permissions.ts:1103](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1103)
 
 ___
 
@@ -40377,7 +40407,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:87](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L87)
+[permissions.ts:87](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L87)
 
 ___
 
@@ -40387,7 +40417,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1505](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1505)
+[permissions.ts:1505](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1505)
 
 ___
 
@@ -40397,7 +40427,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:53](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L53)
+[permissions.ts:53](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L53)
 
 ___
 
@@ -40407,7 +40437,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:262](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L262)
+[permissions.ts:262](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L262)
 
 ___
 
@@ -40417,7 +40447,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:67](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L67)
+[permissions.ts:67](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L67)
 
 ___
 
@@ -40427,7 +40457,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:732](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L732)
+[permissions.ts:732](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L732)
 
 ___
 
@@ -40437,7 +40467,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:447](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L447)
+[permissions.ts:447](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L447)
 
 ___
 
@@ -40447,7 +40477,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:749](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L749)
+[permissions.ts:749](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L749)
 
 ___
 
@@ -40457,7 +40487,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1345](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1345)
+[permissions.ts:1345](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1345)
 
 ___
 
@@ -40467,7 +40497,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:882](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L882)
+[permissions.ts:882](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L882)
 
 ___
 
@@ -40477,7 +40507,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:934](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L934)
+[permissions.ts:934](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L934)
 
 ___
 
@@ -40487,7 +40517,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:899](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L899)
+[permissions.ts:899](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L899)
 
 ___
 
@@ -40497,7 +40527,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:917](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L917)
+[permissions.ts:917](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L917)
 
 ___
 
@@ -40507,7 +40537,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:226](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L226)
+[permissions.ts:226](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L226)
 
 ___
 
@@ -40517,7 +40547,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:766](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L766)
+[permissions.ts:766](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L766)
 
 ___
 
@@ -40527,7 +40557,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:949](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L949)
+[permissions.ts:949](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L949)
 
 ___
 
@@ -40537,7 +40567,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:190](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L190)
+[permissions.ts:190](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L190)
 
 ___
 
@@ -40547,7 +40577,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:40](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L40)
+[permissions.ts:40](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L40)
 
 ___
 
@@ -40557,7 +40587,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1055](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1055)
+[permissions.ts:1055](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1055)
 
 ___
 
@@ -40567,7 +40597,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1518](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1518)
+[permissions.ts:1518](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1518)
 
 ___
 
@@ -40577,7 +40607,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1406](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1406)
+[permissions.ts:1406](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1406)
 
 ___
 
@@ -40587,7 +40617,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:565](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L565)
+[permissions.ts:565](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L565)
 
 ___
 
@@ -40597,7 +40627,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:599](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L599)
+[permissions.ts:599](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L599)
 
 ___
 
@@ -40607,7 +40637,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1198](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1198)
+[permissions.ts:1198](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1198)
 
 ___
 
@@ -40617,7 +40647,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:244](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L244)
+[permissions.ts:244](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L244)
 
 ___
 
@@ -40627,7 +40657,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:381](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L381)
+[permissions.ts:381](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L381)
 
 ___
 
@@ -40637,7 +40667,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:398](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L398)
+[permissions.ts:398](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L398)
 
 ___
 
@@ -40647,7 +40677,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:685](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L685)
+[permissions.ts:685](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L685)
 
 ___
 
@@ -40657,7 +40687,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1066](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1066)
+[permissions.ts:1066](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1066)
 
 ___
 
@@ -40667,7 +40697,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1226](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1226)
+[permissions.ts:1226](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1226)
 
 ___
 
@@ -40677,7 +40707,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1240](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1240)
+[permissions.ts:1240](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1240)
 
 ___
 
@@ -40687,7 +40717,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1212](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1212)
+[permissions.ts:1212](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1212)
 
 ___
 
@@ -40697,7 +40727,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1142](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1142)
+[permissions.ts:1142](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1142)
 
 ___
 
@@ -40707,7 +40737,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1090](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1090)
+[permissions.ts:1090](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1090)
 
 ___
 
@@ -40717,7 +40747,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1059](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1059)
+[permissions.ts:1059](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1059)
 
 ___
 
@@ -40727,7 +40757,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1073](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1073)
+[permissions.ts:1073](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1073)
 
 ___
 
@@ -40737,7 +40767,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1480](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1480)
+[permissions.ts:1480](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1480)
 
 ___
 
@@ -40747,7 +40777,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:208](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L208)
+[permissions.ts:208](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L208)
 
 ___
 
@@ -40757,7 +40787,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1492](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1492)
+[permissions.ts:1492](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1492)
 
 ___
 
@@ -40767,7 +40797,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1299](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1299)
+[permissions.ts:1299](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1299)
 
 ___
 
@@ -40777,7 +40807,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:347](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L347)
+[permissions.ts:347](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L347)
 
 ___
 
@@ -40787,7 +40817,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:364](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L364)
+[permissions.ts:364](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L364)
 
 ___
 
@@ -40797,7 +40827,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:668](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L668)
+[permissions.ts:668](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L668)
 
 ___
 
@@ -40807,7 +40837,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1254](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1254)
+[permissions.ts:1254](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1254)
 
 ___
 
@@ -40817,7 +40847,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1052](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1052)
+[permissions.ts:1052](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1052)
 
 ___
 
@@ -40827,7 +40857,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1036](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1036)
+[permissions.ts:1036](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1036)
 
 ___
 
@@ -40837,7 +40867,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:121](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L121)
+[permissions.ts:121](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L121)
 
 ___
 
@@ -40847,7 +40877,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:104](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L104)
+[permissions.ts:104](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L104)
 
 ___
 
@@ -40857,7 +40887,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:279](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L279)
+[permissions.ts:279](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L279)
 
 ___
 
@@ -40867,7 +40897,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:530](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L530)
+[permissions.ts:530](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L530)
 
 ___
 
@@ -40877,7 +40907,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:476](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L476)
+[permissions.ts:476](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L476)
 
 ___
 
@@ -40887,7 +40917,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:434](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L434)
+[permissions.ts:434](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L434)
 
 ___
 
@@ -40897,7 +40927,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:813](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L813)
+[permissions.ts:813](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L813)
 
 ___
 
@@ -40907,7 +40937,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:330](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L330)
+[permissions.ts:330](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L330)
 
 ___
 
@@ -40917,7 +40947,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:700](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L700)
+[permissions.ts:700](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L700)
 
 ___
 
@@ -40927,7 +40957,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:634](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L634)
+[permissions.ts:634](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L634)
 
 ___
 
@@ -40937,7 +40967,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:979](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L979)
+[permissions.ts:979](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L979)
 
 ___
 
@@ -40947,7 +40977,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:963](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L963)
+[permissions.ts:963](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L963)
 
 ___
 
@@ -40957,7 +40987,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:996](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L996)
+[permissions.ts:996](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L996)
 
 ___
 
@@ -40967,7 +40997,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:848](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L848)
+[permissions.ts:848](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L848)
 
 ___
 
@@ -40977,7 +41007,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:865](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L865)
+[permissions.ts:865](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L865)
 
 ___
 
@@ -40987,7 +41017,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:296](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L296)
+[permissions.ts:296](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L296)
 
 ___
 
@@ -40997,7 +41027,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:15](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L15)
+[permissions.ts:15](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L15)
 
 ___
 
@@ -41007,7 +41037,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:782](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L782)
+[permissions.ts:782](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L782)
 
 ___
 
@@ -41017,7 +41047,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:831](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L831)
+[permissions.ts:831](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L831)
 
 ___
 
@@ -41027,7 +41057,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:548](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L548)
+[permissions.ts:548](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L548)
 
 ___
 
@@ -41037,7 +41067,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:494](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L494)
+[permissions.ts:494](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L494)
 
 ___
 
@@ -41047,7 +41077,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:512](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L512)
+[permissions.ts:512](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L512)
 
 ___
 
@@ -41057,7 +41087,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:715](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L715)
+[permissions.ts:715](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L715)
 
 ___
 
@@ -41067,7 +41097,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:651](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L651)
+[permissions.ts:651](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L651)
 
 ___
 
@@ -41077,7 +41107,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1184](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1184)
+[permissions.ts:1184](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1184)
 
 ___
 
@@ -41087,7 +41117,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1170](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1170)
+[permissions.ts:1170](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1170)
 
 ___
 
@@ -41097,7 +41127,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1390](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1390)
+[permissions.ts:1390](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1390)
 
 ___
 
@@ -41107,7 +41137,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1374](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1374)
+[permissions.ts:1374](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1374)
 
 ___
 
@@ -41117,7 +41147,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:172](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L172)
+[permissions.ts:172](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L172)
 
 ___
 
@@ -41127,7 +41157,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:138](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L138)
+[permissions.ts:138](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L138)
 
 ___
 
@@ -41137,7 +41167,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:155](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L155)
+[permissions.ts:155](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L155)
 
 ___
 
@@ -41147,7 +41177,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1129](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1129)
+[permissions.ts:1129](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1129)
 
 ___
 
@@ -41157,7 +41187,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1116](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1116)
+[permissions.ts:1116](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1116)
 
 ___
 
@@ -41167,7 +41197,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:796](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L796)
+[permissions.ts:796](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L796)
 
 ___
 
@@ -41177,7 +41207,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:416](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L416)
+[permissions.ts:416](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L416)
 
 ___
 
@@ -41187,7 +41217,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1022](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1022)
+[permissions.ts:1022](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1022)
 
 ___
 
@@ -41197,7 +41227,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1009](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1009)
+[permissions.ts:1009](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1009)
 
 ___
 
@@ -41207,7 +41237,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1329](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1329)
+[permissions.ts:1329](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1329)
 
 ___
 
@@ -41217,7 +41247,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1077](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1077)
+[permissions.ts:1077](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1077)
 
 ___
 
@@ -41227,7 +41257,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:460](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L460)
+[permissions.ts:460](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L460)
 
 ___
 
@@ -41237,7 +41267,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:28](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L28)
+[permissions.ts:28](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L28)
 
 ___
 
@@ -41247,7 +41277,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:84](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L84)
+[permissions.ts:84](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L84)
 
 ___
 
@@ -41257,7 +41287,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:582](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L582)
+[permissions.ts:582](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L582)
 
 ___
 
@@ -41267,7 +41297,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1531](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1531)
+[permissions.ts:1531](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1531)
 
 ___
 
@@ -41277,7 +41307,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:81](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L81)
+[permissions.ts:81](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L81)
 
 ___
 
@@ -41287,7 +41317,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1360](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1360)
+[permissions.ts:1360](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1360)
 
 ___
 
@@ -41297,7 +41327,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:617](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L617)
+[permissions.ts:617](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L617)
 
 ___
 
@@ -41307,7 +41337,7 @@ ___
 
 #### Defined in
 
-[permissions.ts:1547](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/permissions.ts#L1547)
+[permissions.ts:1547](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/permissions.ts#L1547)
 
 ___
 
@@ -41605,7 +41635,7 @@ from service Scailo.ProductionIndentsService
 
 #### Defined in
 
-[src/production_indents.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_indents.scailo_connect.ts#L18)
+[src/production_indents.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_indents.scailo_connect.ts#L18)
 
 ___
 
@@ -41923,7 +41953,7 @@ from service Scailo.ProductionPlansService
 
 #### Defined in
 
-[src/production_plans.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_connect.ts#L18)
+[src/production_plans.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_connect.ts#L18)
 
 ___
 
@@ -42116,7 +42146,7 @@ from service Scailo.ProductsService
 
 #### Defined in
 
-[src/products.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/products.scailo_connect.ts#L18)
+[src/products.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/products.scailo_connect.ts#L18)
 
 ___
 
@@ -42444,7 +42474,7 @@ from service Scailo.ProformaInvoicesService
 
 #### Defined in
 
-[src/proforma_invoices.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/proforma_invoices.scailo_connect.ts#L18)
+[src/proforma_invoices.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/proforma_invoices.scailo_connect.ts#L18)
 
 ___
 
@@ -42642,7 +42672,7 @@ from service Scailo.ProjectsService
 
 #### Defined in
 
-[src/projects.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_connect.ts#L16)
+[src/projects.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_connect.ts#L16)
 
 ___
 
@@ -42905,7 +42935,7 @@ from service Scailo.PurchasesEnquiriesService
 
 #### Defined in
 
-[src/purchases_enquiries.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_enquiries.scailo_connect.ts#L17)
+[src/purchases_enquiries.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_enquiries.scailo_connect.ts#L17)
 
 ___
 
@@ -43213,7 +43243,7 @@ from service Scailo.PurchasesIndentsService
 
 #### Defined in
 
-[src/purchases_indents.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_connect.ts#L18)
+[src/purchases_indents.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_connect.ts#L18)
 
 ___
 
@@ -43601,7 +43631,7 @@ from service Scailo.PurchasesOrdersService
 
 #### Defined in
 
-[src/purchases_orders.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_orders.scailo_connect.ts#L18)
+[src/purchases_orders.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_orders.scailo_connect.ts#L18)
 
 ___
 
@@ -43784,7 +43814,7 @@ from service Scailo.PurchasesPaymentsService
 
 #### Defined in
 
-[src/purchases_payments.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_payments.scailo_connect.ts#L17)
+[src/purchases_payments.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_payments.scailo_connect.ts#L17)
 
 ___
 
@@ -44102,7 +44132,7 @@ from service Scailo.PurchasesReturnsService
 
 #### Defined in
 
-[src/purchases_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_connect.ts#L19)
+[src/purchases_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_connect.ts#L19)
 
 ___
 
@@ -44355,7 +44385,7 @@ from service Scailo.QCGroupsService
 
 #### Defined in
 
-[src/qc_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_connect.ts#L16)
+[src/qc_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_connect.ts#L16)
 
 ___
 
@@ -44518,7 +44548,7 @@ from service Scailo.QCParamsService
 
 #### Defined in
 
-[src/qc_params.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_params.scailo_connect.ts#L16)
+[src/qc_params.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_params.scailo_connect.ts#L16)
 
 ___
 
@@ -44716,7 +44746,7 @@ from service Scailo.QCSamplesService
 
 #### Defined in
 
-[src/qc_samples.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_samples.scailo_connect.ts#L17)
+[src/qc_samples.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_samples.scailo_connect.ts#L17)
 
 ___
 
@@ -44984,7 +45014,7 @@ from service Scailo.QuotationsRequestsService
 
 #### Defined in
 
-[src/quotations_requests.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_requests.scailo_connect.ts#L17)
+[src/quotations_requests.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_requests.scailo_connect.ts#L17)
 
 ___
 
@@ -45237,7 +45267,7 @@ from service Scailo.QuotationsResponsesService
 
 #### Defined in
 
-[src/quotations_responses.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/quotations_responses.scailo_connect.ts#L17)
+[src/quotations_responses.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/quotations_responses.scailo_connect.ts#L17)
 
 ___
 
@@ -45535,7 +45565,7 @@ from service Scailo.ReplaceableIndentsService
 
 #### Defined in
 
-[src/replaceable_indents.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_connect.ts#L18)
+[src/replaceable_indents.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_connect.ts#L18)
 
 ___
 
@@ -45713,7 +45743,7 @@ from service Scailo.RolesService
 
 #### Defined in
 
-[src/roles.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/roles.scailo_connect.ts#L16)
+[src/roles.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_connect.ts#L16)
 
 ___
 
@@ -46036,7 +46066,7 @@ from service Scailo.SalariesService
 
 #### Defined in
 
-[src/salaries.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/salaries.scailo_connect.ts#L16)
+[src/salaries.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/salaries.scailo_connect.ts#L16)
 
 ___
 
@@ -46344,7 +46374,7 @@ from service Scailo.SalesEnquiriesService
 
 #### Defined in
 
-[src/sales_enquiries.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_enquiries.scailo_connect.ts#L17)
+[src/sales_enquiries.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_enquiries.scailo_connect.ts#L17)
 
 ___
 
@@ -46692,7 +46722,7 @@ from service Scailo.SalesInvoicesService
 
 #### Defined in
 
-[src/sales_invoices.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_invoices.scailo_connect.ts#L18)
+[src/sales_invoices.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_invoices.scailo_connect.ts#L18)
 
 ___
 
@@ -47085,7 +47115,7 @@ from service Scailo.SalesOrdersService
 
 #### Defined in
 
-[src/sales_orders.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_orders.scailo_connect.ts#L18)
+[src/sales_orders.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_connect.ts#L18)
 
 ___
 
@@ -47448,7 +47478,7 @@ from service Scailo.SalesQuotationsService
 
 #### Defined in
 
-[src/sales_quotations.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_quotations.scailo_connect.ts#L18)
+[src/sales_quotations.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_quotations.scailo_connect.ts#L18)
 
 ___
 
@@ -47631,7 +47661,7 @@ from service Scailo.SalesReceiptsService
 
 #### Defined in
 
-[src/sales_receipts.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_receipts.scailo_connect.ts#L17)
+[src/sales_receipts.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_receipts.scailo_connect.ts#L17)
 
 ___
 
@@ -47949,7 +47979,7 @@ from service Scailo.SalesReturnsService
 
 #### Defined in
 
-[src/sales_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_connect.ts#L19)
+[src/sales_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_connect.ts#L19)
 
 ___
 
@@ -48157,7 +48187,7 @@ from service Scailo.ShiftsGroupsService
 
 #### Defined in
 
-[src/shifts_groups.scailo_connect.ts:22](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/shifts_groups.scailo_connect.ts#L22)
+[src/shifts_groups.scailo_connect.ts:22](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/shifts_groups.scailo_connect.ts#L22)
 
 ___
 
@@ -48320,7 +48350,7 @@ from service Scailo.ShiftsService
 
 #### Defined in
 
-[src/shifts.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/shifts.scailo_connect.ts#L16)
+[src/shifts.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/shifts.scailo_connect.ts#L16)
 
 ___
 
@@ -48563,7 +48593,7 @@ from service Scailo.SkillsGroupsService
 
 #### Defined in
 
-[src/skills_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_connect.ts#L16)
+[src/skills_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_connect.ts#L16)
 
 ___
 
@@ -48726,7 +48756,7 @@ from service Scailo.SkillsParamsService
 
 #### Defined in
 
-[src/skills_params.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_connect.ts#L16)
+[src/skills_params.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_connect.ts#L16)
 
 ___
 
@@ -49019,7 +49049,7 @@ from service Scailo.StockAuditsService
 
 #### Defined in
 
-[src/stock_audits.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stock_audits.scailo_connect.ts#L18)
+[src/stock_audits.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_audits.scailo_connect.ts#L18)
 
 ___
 
@@ -49317,7 +49347,7 @@ from service Scailo.StockIssuancesService
 
 #### Defined in
 
-[src/stock_issuances.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stock_issuances.scailo_connect.ts#L18)
+[src/stock_issuances.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_connect.ts#L18)
 
 ___
 
@@ -49620,7 +49650,7 @@ from service Scailo.StockReturnsService
 
 #### Defined in
 
-[src/stock_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stock_returns.scailo_connect.ts#L19)
+[src/stock_returns.scailo_connect.ts:19](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_returns.scailo_connect.ts#L19)
 
 ___
 
@@ -49788,7 +49818,7 @@ from service Scailo.StoragesService
 
 #### Defined in
 
-[src/storages.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/storages.scailo_connect.ts#L16)
+[src/storages.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/storages.scailo_connect.ts#L16)
 
 ___
 
@@ -49941,7 +49971,7 @@ from service Scailo.StoresService
 
 #### Defined in
 
-[src/stores.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/stores.scailo_connect.ts#L16)
+[src/stores.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stores.scailo_connect.ts#L16)
 
 ___
 
@@ -50249,7 +50279,7 @@ from service Scailo.SupplyOffersService
 
 #### Defined in
 
-[src/supply_offers.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_connect.ts#L18)
+[src/supply_offers.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_connect.ts#L18)
 
 ___
 
@@ -50447,7 +50477,7 @@ from service Scailo.TaxGroupsService
 
 #### Defined in
 
-[src/tax_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/tax_groups.scailo_connect.ts#L16)
+[src/tax_groups.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/tax_groups.scailo_connect.ts#L16)
 
 ___
 
@@ -50600,7 +50630,7 @@ from service Scailo.TaxParamsService
 
 #### Defined in
 
-[src/tax_params.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/tax_params.scailo_connect.ts#L16)
+[src/tax_params.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/tax_params.scailo_connect.ts#L16)
 
 ___
 
@@ -50838,7 +50868,7 @@ from service Scailo.TeamsService
 
 #### Defined in
 
-[src/teams.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/teams.scailo_connect.ts#L16)
+[src/teams.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_connect.ts#L16)
 
 ___
 
@@ -50911,7 +50941,7 @@ from service Scailo.TransactionalEmailsService
 
 #### Defined in
 
-[src/transactional_emails.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/transactional_emails.scailo_connect.ts#L16)
+[src/transactional_emails.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/transactional_emails.scailo_connect.ts#L16)
 
 ___
 
@@ -51069,7 +51099,7 @@ from service Scailo.UnitsOfMaterialsService
 
 #### Defined in
 
-[src/units_of_materials.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/units_of_materials.scailo_connect.ts#L16)
+[src/units_of_materials.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_connect.ts#L16)
 
 ___
 
@@ -51337,7 +51367,7 @@ from service Scailo.UsersService
 
 #### Defined in
 
-[src/users.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/users.scailo_connect.ts#L17)
+[src/users.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_connect.ts#L17)
 
 ___
 
@@ -51727,7 +51757,7 @@ from service Scailo.VaultService
 
 #### Defined in
 
-[src/vault.scailo_connect.ts:22](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault.scailo_connect.ts#L22)
+[src/vault.scailo_connect.ts:22](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault.scailo_connect.ts#L22)
 
 ___
 
@@ -52070,7 +52100,7 @@ from service Scailo.VendorInvoicesService
 
 #### Defined in
 
-[src/vendor_invoices.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendor_invoices.scailo_connect.ts#L18)
+[src/vendor_invoices.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendor_invoices.scailo_connect.ts#L18)
 
 ___
 
@@ -52278,7 +52308,7 @@ from service Scailo.VendorStreamsService
 
 #### Defined in
 
-[src/vendor_streams.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendor_streams.scailo_connect.ts#L16)
+[src/vendor_streams.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendor_streams.scailo_connect.ts#L16)
 
 ___
 
@@ -52561,7 +52591,7 @@ from service Scailo.VendorsService
 
 #### Defined in
 
-[src/vendors.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vendors.scailo_connect.ts#L17)
+[src/vendors.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_connect.ts#L17)
 
 ___
 
@@ -52779,7 +52809,7 @@ from service Scailo.VisitationsService
 
 #### Defined in
 
-[src/visitations.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_connect.ts#L17)
+[src/visitations.scailo_connect.ts:17](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_connect.ts#L17)
 
 ___
 
@@ -53092,7 +53122,7 @@ from service Scailo.WorkOrdersService
 
 #### Defined in
 
-[src/work_orders.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/work_orders.scailo_connect.ts#L18)
+[src/work_orders.scailo_connect.ts:18](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/work_orders.scailo_connect.ts#L18)
 
 ___
 
@@ -53235,7 +53265,7 @@ from service Scailo.WorkflowsRulesService
 
 #### Defined in
 
-[src/workflows_rules.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/workflows_rules.scailo_connect.ts#L16)
+[src/workflows_rules.scailo_connect.ts:16](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/workflows_rules.scailo_connect.ts#L16)
 
 ## Functions
 
@@ -53279,7 +53309,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:357](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L357)
+[index.ts:357](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L357)
 
 ___
 
@@ -53323,7 +53353,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:388](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L388)
+[index.ts:388](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L388)
 
 ___
 
@@ -53367,7 +53397,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:450](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L450)
+[index.ts:450](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L450)
 
 ___
 
@@ -53411,7 +53441,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:419](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L419)
+[index.ts:419](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L419)
 
 ___
 
@@ -53455,7 +53485,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:481](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L481)
+[index.ts:481](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L481)
 
 ___
 
@@ -53499,7 +53529,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:512](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L512)
+[index.ts:512](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L512)
 
 ___
 
@@ -53543,7 +53573,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:543](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L543)
+[index.ts:543](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L543)
 
 ___
 
@@ -53587,7 +53617,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:574](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L574)
+[index.ts:574](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L574)
 
 ___
 
@@ -53631,7 +53661,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:605](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L605)
+[index.ts:605](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L605)
 
 ___
 
@@ -53675,7 +53705,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:667](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L667)
+[index.ts:667](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L667)
 
 ___
 
@@ -53719,7 +53749,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:636](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L636)
+[index.ts:636](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L636)
 
 ___
 
@@ -53763,7 +53793,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:698](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L698)
+[index.ts:698](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L698)
 
 ___
 
@@ -53807,7 +53837,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:729](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L729)
+[index.ts:729](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L729)
 
 ___
 
@@ -53851,7 +53881,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:760](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L760)
+[index.ts:760](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L760)
 
 ___
 
@@ -53895,7 +53925,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:791](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L791)
+[index.ts:791](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L791)
 
 ___
 
@@ -53939,7 +53969,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:822](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L822)
+[index.ts:822](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L822)
 
 ___
 
@@ -53983,7 +54013,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:853](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L853)
+[index.ts:853](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L853)
 
 ___
 
@@ -54027,7 +54057,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:884](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L884)
+[index.ts:884](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L884)
 
 ___
 
@@ -54071,7 +54101,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:915](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L915)
+[index.ts:915](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L915)
 
 ___
 
@@ -54115,7 +54145,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:946](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L946)
+[index.ts:946](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L946)
 
 ___
 
@@ -54159,7 +54189,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:977](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L977)
+[index.ts:977](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L977)
 
 ___
 
@@ -54203,7 +54233,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1008](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1008)
+[index.ts:1008](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1008)
 
 ___
 
@@ -54247,7 +54277,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1039](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1039)
+[index.ts:1039](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1039)
 
 ___
 
@@ -54291,7 +54321,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1070](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1070)
+[index.ts:1070](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1070)
 
 ___
 
@@ -54335,7 +54365,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1101](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1101)
+[index.ts:1101](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1101)
 
 ___
 
@@ -54379,7 +54409,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1132](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1132)
+[index.ts:1132](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1132)
 
 ___
 
@@ -54423,7 +54453,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1163](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1163)
+[index.ts:1163](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1163)
 
 ___
 
@@ -54467,7 +54497,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1225](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1225)
+[index.ts:1225](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1225)
 
 ___
 
@@ -54511,7 +54541,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1194](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1194)
+[index.ts:1194](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1194)
 
 ___
 
@@ -54555,7 +54585,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1256](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1256)
+[index.ts:1256](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1256)
 
 ___
 
@@ -54599,7 +54629,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1287](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1287)
+[index.ts:1287](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1287)
 
 ___
 
@@ -54643,7 +54673,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1318](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1318)
+[index.ts:1318](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1318)
 
 ___
 
@@ -54687,7 +54717,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1349](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1349)
+[index.ts:1349](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1349)
 
 ___
 
@@ -54731,7 +54761,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1380](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1380)
+[index.ts:1380](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1380)
 
 ___
 
@@ -54775,7 +54805,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1411](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1411)
+[index.ts:1411](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1411)
 
 ___
 
@@ -54819,7 +54849,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1442](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1442)
+[index.ts:1442](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1442)
 
 ___
 
@@ -54863,7 +54893,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1473](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1473)
+[index.ts:1473](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1473)
 
 ___
 
@@ -54907,7 +54937,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1504](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1504)
+[index.ts:1504](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1504)
 
 ___
 
@@ -54951,7 +54981,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1597](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1597)
+[index.ts:1597](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1597)
 
 ___
 
@@ -54995,7 +55025,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1566](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1566)
+[index.ts:1566](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1566)
 
 ___
 
@@ -55039,7 +55069,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1535](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1535)
+[index.ts:1535](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1535)
 
 ___
 
@@ -55083,7 +55113,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1628](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1628)
+[index.ts:1628](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1628)
 
 ___
 
@@ -55127,7 +55157,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1659](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1659)
+[index.ts:1659](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1659)
 
 ___
 
@@ -55171,7 +55201,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1690](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1690)
+[index.ts:1690](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1690)
 
 ___
 
@@ -55215,7 +55245,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1721](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1721)
+[index.ts:1721](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1721)
 
 ___
 
@@ -55259,7 +55289,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1752](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1752)
+[index.ts:1752](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1752)
 
 ___
 
@@ -55303,7 +55333,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1783](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1783)
+[index.ts:1783](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1783)
 
 ___
 
@@ -55347,7 +55377,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1814](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1814)
+[index.ts:1814](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1814)
 
 ___
 
@@ -55391,7 +55421,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1845](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1845)
+[index.ts:1845](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1845)
 
 ___
 
@@ -55435,7 +55465,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1876](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1876)
+[index.ts:1876](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1876)
 
 ___
 
@@ -55479,7 +55509,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1907](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1907)
+[index.ts:1907](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1907)
 
 ___
 
@@ -55523,7 +55553,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1938](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1938)
+[index.ts:1938](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1938)
 
 ___
 
@@ -55567,7 +55597,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:1969](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L1969)
+[index.ts:1969](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L1969)
 
 ___
 
@@ -55611,7 +55641,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2000](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2000)
+[index.ts:2000](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2000)
 
 ___
 
@@ -55655,7 +55685,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2093](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2093)
+[index.ts:2093](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2093)
 
 ___
 
@@ -55699,7 +55729,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2062](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2062)
+[index.ts:2062](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2062)
 
 ___
 
@@ -55743,7 +55773,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2031](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2031)
+[index.ts:2031](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2031)
 
 ___
 
@@ -55787,7 +55817,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2124](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2124)
+[index.ts:2124](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2124)
 
 ___
 
@@ -55831,7 +55861,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2155](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2155)
+[index.ts:2155](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2155)
 
 ___
 
@@ -55875,7 +55905,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2186](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2186)
+[index.ts:2186](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2186)
 
 ___
 
@@ -55919,7 +55949,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2217](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2217)
+[index.ts:2217](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2217)
 
 ___
 
@@ -55963,7 +55993,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2248](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2248)
+[index.ts:2248](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2248)
 
 ___
 
@@ -56007,7 +56037,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2279](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2279)
+[index.ts:2279](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2279)
 
 ___
 
@@ -56051,7 +56081,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2310](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2310)
+[index.ts:2310](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2310)
 
 ___
 
@@ -56095,7 +56125,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2341](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2341)
+[index.ts:2341](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2341)
 
 ___
 
@@ -56139,7 +56169,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2372](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2372)
+[index.ts:2372](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2372)
 
 ___
 
@@ -56183,7 +56213,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2403](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2403)
+[index.ts:2403](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2403)
 
 ___
 
@@ -56227,7 +56257,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2434](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2434)
+[index.ts:2434](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2434)
 
 ___
 
@@ -56271,7 +56301,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2465](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2465)
+[index.ts:2465](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2465)
 
 ___
 
@@ -56315,7 +56345,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2496](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2496)
+[index.ts:2496](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2496)
 
 ___
 
@@ -56359,7 +56389,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2527](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2527)
+[index.ts:2527](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2527)
 
 ___
 
@@ -56403,7 +56433,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2558](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2558)
+[index.ts:2558](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2558)
 
 ___
 
@@ -56447,7 +56477,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2589](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2589)
+[index.ts:2589](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2589)
 
 ___
 
@@ -56491,7 +56521,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2620](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2620)
+[index.ts:2620](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2620)
 
 ___
 
@@ -56535,7 +56565,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2651](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2651)
+[index.ts:2651](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2651)
 
 ___
 
@@ -56579,7 +56609,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2682](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2682)
+[index.ts:2682](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2682)
 
 ___
 
@@ -56623,7 +56653,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2713](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2713)
+[index.ts:2713](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2713)
 
 ___
 
@@ -56667,7 +56697,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2744](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2744)
+[index.ts:2744](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2744)
 
 ___
 
@@ -56711,7 +56741,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2775](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2775)
+[index.ts:2775](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2775)
 
 ___
 
@@ -56755,7 +56785,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2806](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2806)
+[index.ts:2806](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2806)
 
 ___
 
@@ -56799,7 +56829,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2837](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2837)
+[index.ts:2837](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2837)
 
 ___
 
@@ -56843,7 +56873,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2868](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2868)
+[index.ts:2868](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2868)
 
 ___
 
@@ -56887,7 +56917,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2899](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2899)
+[index.ts:2899](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2899)
 
 ___
 
@@ -56931,7 +56961,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2930](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2930)
+[index.ts:2930](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2930)
 
 ___
 
@@ -56975,7 +57005,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2992](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2992)
+[index.ts:2992](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2992)
 
 ___
 
@@ -57019,7 +57049,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:2961](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L2961)
+[index.ts:2961](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L2961)
 
 ___
 
@@ -57063,7 +57093,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3023](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3023)
+[index.ts:3023](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3023)
 
 ___
 
@@ -57107,7 +57137,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3054](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3054)
+[index.ts:3054](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3054)
 
 ___
 
@@ -57151,7 +57181,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3085](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3085)
+[index.ts:3085](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3085)
 
 ___
 
@@ -57195,7 +57225,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3116](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3116)
+[index.ts:3116](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3116)
 
 ___
 
@@ -57239,7 +57269,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3147](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3147)
+[index.ts:3147](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3147)
 
 ___
 
@@ -57283,7 +57313,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3178](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3178)
+[index.ts:3178](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3178)
 
 ___
 
@@ -57327,7 +57357,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3209](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3209)
+[index.ts:3209](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3209)
 
 ___
 
@@ -57371,7 +57401,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3240](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3240)
+[index.ts:3240](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3240)
 
 ___
 
@@ -57415,7 +57445,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3271](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3271)
+[index.ts:3271](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3271)
 
 ___
 
@@ -57459,7 +57489,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3302](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3302)
+[index.ts:3302](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3302)
 
 ___
 
@@ -57503,7 +57533,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3333](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3333)
+[index.ts:3333](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3333)
 
 ___
 
@@ -57547,7 +57577,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3364](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3364)
+[index.ts:3364](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3364)
 
 ___
 
@@ -57591,7 +57621,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3395](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3395)
+[index.ts:3395](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3395)
 
 ___
 
@@ -57635,7 +57665,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3426](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3426)
+[index.ts:3426](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3426)
 
 ___
 
@@ -57679,7 +57709,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3457](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3457)
+[index.ts:3457](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3457)
 
 ___
 
@@ -57723,7 +57753,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3488](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3488)
+[index.ts:3488](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3488)
 
 ___
 
@@ -57767,7 +57797,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3519](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3519)
+[index.ts:3519](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3519)
 
 ___
 
@@ -57811,7 +57841,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3550](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3550)
+[index.ts:3550](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3550)
 
 ___
 
@@ -57855,7 +57885,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3581](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3581)
+[index.ts:3581](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3581)
 
 ___
 
@@ -57899,7 +57929,7 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3612](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3612)
+[index.ts:3612](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3612)
 
 ___
 
@@ -57943,4 +57973,4 @@ function getNodeTransport(apiEndPoint: string) {
 
 #### Defined in
 
-[index.ts:3643](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/index.ts#L3643)
+[index.ts:3643](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/index.ts#L3643)

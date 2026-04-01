@@ -73,7 +73,7 @@ Message\&lt;SalesReturnsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:345](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L345)
+[src/sales_returns.scailo_pb.ts:372](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L372)
 
 ## Properties
 
@@ -81,7 +81,25 @@ Message\&lt;SalesReturnsServiceCreateRequest\&gt;.constructor
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Optional`**
+
+**`Description`**
+
+The globally unique identifier for the Organization or Business Entity.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -89,7 +107,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:294](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L294)
+[src/sales_returns.scailo_pb.ts:303](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L303)
 
 ___
 
@@ -105,7 +123,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L343)
+[src/sales_returns.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L370)
 
 ___
 
@@ -121,7 +139,7 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L336)
+[src/sales_returns.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L363)
 
 ___
 
@@ -137,7 +155,7 @@ from field: Scailo.SALES_RETURN_REF_FROM ref_from = 12;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L322)
+[src/sales_returns.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L349)
 
 ___
 
@@ -153,7 +171,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L329)
+[src/sales_returns.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L356)
 
 ___
 
@@ -161,7 +179,25 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference ID of the sales return
+**`Mandatory`**
+
+**`Description`**
+
+A unique external reference ID for the record. Must be alphanumeric (spaces allowed). Used for cross-referencing with external systems.
+
+**`Example`**
+
+```ts
+"ABS-2023-001"
+```
+
+**`Regex`**
+
+"[0-9A-Za-z ]+$"
+
+**`Format`**
+
+Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
 
 **`Generated`**
 
@@ -169,7 +205,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:315](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L315)
+[src/sales_returns.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L342)
 
 ___
 
@@ -185,7 +221,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:301](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L301)
+[src/sales_returns.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L310)
 
 ___
 
@@ -193,7 +229,25 @@ ___
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
 
-The associated vault folder ID
+**`Optional`**
+
+**`Description`**
+
+The ID of the associated vault folder for storing documents. Defaults to 0 if no specific folder is assigned.
+
+**`Example`**
+
+```ts
+15234
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -201,7 +255,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L308)
+[src/sales_returns.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L326)
 
 ___
 
@@ -211,7 +265,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L352)
+[src/sales_returns.scailo_pb.ts:379](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L379)
 
 ___
 
@@ -221,7 +275,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L350)
+[src/sales_returns.scailo_pb.ts:377](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L377)
 
 ___
 
@@ -231,7 +285,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L351)
+[src/sales_returns.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L378)
 
 ## Methods
 
@@ -519,7 +573,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L375)
+[src/sales_returns.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L402)
 
 ___
 
@@ -540,7 +594,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L363)
+[src/sales_returns.scailo_pb.ts:390](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L390)
 
 ___
 
@@ -561,7 +615,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L367)
+[src/sales_returns.scailo_pb.ts:394](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L394)
 
 ___
 
@@ -582,4 +636,4 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/sales_returns.scailo_pb.ts#L371)
+[src/sales_returns.scailo_pb.ts:398](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_returns.scailo_pb.ts#L398)

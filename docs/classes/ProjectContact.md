@@ -73,7 +73,7 @@ Message\&lt;ProjectContact\&gt;.constructor
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1355](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1355)
+[src/projects.scailo_pb.ts:1805](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1805)
 
 ## Properties
 
@@ -81,7 +81,9 @@ Message\&lt;ProjectContact\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -89,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1318](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1318)
+[src/projects.scailo_pb.ts:1767](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1767)
 
 ___
 
@@ -105,7 +107,7 @@ from field: uint64 employee_id = 11;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1346](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1346)
+[src/projects.scailo_pb.ts:1796](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1796)
 
 ___
 
@@ -121,7 +123,7 @@ from field: string employee_uuid = 211;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1353](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1353)
+[src/projects.scailo_pb.ts:1803](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1803)
 
 ___
 
@@ -129,7 +131,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -137,7 +147,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1304](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1304)
+[src/projects.scailo_pb.ts:1751](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1751)
 
 ___
 
@@ -145,7 +155,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this project
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -153,7 +165,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1311](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1311)
+[src/projects.scailo_pb.ts:1759](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1759)
 
 ___
 
@@ -161,7 +173,9 @@ ___
 
 • **needApproval**: `boolean` = `false`
 
-Denotes if this record requires approval (or has been approved)
+**`Description`**
+
+The approval state of the record
 
 **`Generated`**
 
@@ -169,7 +183,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1325](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1325)
+[src/projects.scailo_pb.ts:1775](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1775)
 
 ___
 
@@ -185,7 +199,7 @@ from field: uint64 project_id = 10;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1339](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1339)
+[src/projects.scailo_pb.ts:1789](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1789)
 
 ___
 
@@ -201,7 +215,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1332](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1332)
+[src/projects.scailo_pb.ts:1782](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1782)
 
 ___
 
@@ -211,7 +225,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1362](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1362)
+[src/projects.scailo_pb.ts:1812](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1812)
 
 ___
 
@@ -221,7 +235,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1360](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1360)
+[src/projects.scailo_pb.ts:1810](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1810)
 
 ___
 
@@ -231,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1361](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1361)
+[src/projects.scailo_pb.ts:1811](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1811)
 
 ## Methods
 
@@ -519,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1385](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1385)
+[src/projects.scailo_pb.ts:1835](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1835)
 
 ___
 
@@ -540,7 +554,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1373](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1373)
+[src/projects.scailo_pb.ts:1823](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1823)
 
 ___
 
@@ -561,7 +575,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1377](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1377)
+[src/projects.scailo_pb.ts:1827](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1827)
 
 ___
 
@@ -582,4 +596,4 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1381](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/projects.scailo_pb.ts#L1381)
+[src/projects.scailo_pb.ts:1831](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1831)

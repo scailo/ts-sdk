@@ -77,7 +77,7 @@ Message\&lt;SkillGroupItem\&gt;.constructor
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L766)
+[src/skills_groups.scailo_pb.ts:817](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L817)
 
 ## Properties
 
@@ -85,7 +85,9 @@ Message\&lt;SkillGroupItem\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -93,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L701)
+[src/skills_groups.scailo_pb.ts:751](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L751)
 
 ___
 
@@ -109,7 +111,7 @@ from field: string description = 20;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:764](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L764)
+[src/skills_groups.scailo_pb.ts:815](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L815)
 
 ___
 
@@ -117,7 +119,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -125,7 +135,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:687](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L687)
+[src/skills_groups.scailo_pb.ts:735](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L735)
 
 ___
 
@@ -141,7 +151,7 @@ from field: Scailo.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE input_value_type = 12;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:736](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L736)
+[src/skills_groups.scailo_pb.ts:787](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L787)
 
 ___
 
@@ -149,7 +159,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this skill group
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -157,7 +169,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:694](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L694)
+[src/skills_groups.scailo_pb.ts:743](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L743)
 
 ___
 
@@ -165,7 +177,9 @@ ___
 
 • **needApproval**: `boolean` = `false`
 
-Denotes if this record requires approval (or has been approved)
+**`Description`**
+
+The approval state of the record
 
 **`Generated`**
 
@@ -173,7 +187,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:708](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L708)
+[src/skills_groups.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L759)
 
 ___
 
@@ -189,7 +203,7 @@ from field: uint64 number_max_value = 14;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:750](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L750)
+[src/skills_groups.scailo_pb.ts:801](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L801)
 
 ___
 
@@ -205,7 +219,7 @@ from field: uint64 number_min_value = 13;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:743](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L743)
+[src/skills_groups.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L794)
 
 ___
 
@@ -221,7 +235,7 @@ from field: uint64 skill_group_id = 10;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:722](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L722)
+[src/skills_groups.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L773)
 
 ___
 
@@ -237,7 +251,7 @@ from field: uint64 skill_param_id = 11;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:729](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L729)
+[src/skills_groups.scailo_pb.ts:780](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L780)
 
 ___
 
@@ -253,7 +267,7 @@ from field: repeated string text_values = 15;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:757](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L757)
+[src/skills_groups.scailo_pb.ts:808](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L808)
 
 ___
 
@@ -269,7 +283,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:715](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L715)
+[src/skills_groups.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L766)
 
 ___
 
@@ -279,7 +293,7 @@ ___
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L773)
+[src/skills_groups.scailo_pb.ts:824](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L824)
 
 ___
 
@@ -289,7 +303,7 @@ ___
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:771](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L771)
+[src/skills_groups.scailo_pb.ts:822](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L822)
 
 ___
 
@@ -299,7 +313,7 @@ ___
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:772](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L772)
+[src/skills_groups.scailo_pb.ts:823](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L823)
 
 ## Methods
 
@@ -587,7 +601,7 @@ ___
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:800](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L800)
+[src/skills_groups.scailo_pb.ts:851](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L851)
 
 ___
 
@@ -608,7 +622,7 @@ ___
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:788](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L788)
+[src/skills_groups.scailo_pb.ts:839](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L839)
 
 ___
 
@@ -629,7 +643,7 @@ ___
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:792](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L792)
+[src/skills_groups.scailo_pb.ts:843](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L843)
 
 ___
 
@@ -650,4 +664,4 @@ ___
 
 #### Defined in
 
-[src/skills_groups.scailo_pb.ts:796](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_groups.scailo_pb.ts#L796)
+[src/skills_groups.scailo_pb.ts:847](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_groups.scailo_pb.ts#L847)

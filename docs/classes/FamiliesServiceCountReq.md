@@ -93,7 +93,7 @@ Message\&lt;FamiliesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1575](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1575)
+[src/families.scailo_pb.ts:1861](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1861)
 
 ## Properties
 
@@ -101,7 +101,25 @@ Message\&lt;FamiliesServiceCountReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -109,7 +127,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1454](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1454)
+[src/families.scailo_pb.ts:1731](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1731)
 
 ___
 
@@ -117,7 +135,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -125,7 +161,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1447](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1447)
+[src/families.scailo_pb.ts:1715](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1715)
 
 ___
 
@@ -133,7 +169,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -141,7 +195,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1440](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1440)
+[src/families.scailo_pb.ts:1699](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1699)
 
 ___
 
@@ -149,7 +203,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -157,7 +229,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1461](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1461)
+[src/families.scailo_pb.ts:1747](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1747)
 
 ___
 
@@ -173,7 +245,7 @@ from field: string code = 22;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1475](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1475)
+[src/families.scailo_pb.ts:1761](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1761)
 
 ___
 
@@ -189,7 +261,7 @@ from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 39;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1552](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1552)
+[src/families.scailo_pb.ts:1838](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1838)
 
 ___
 
@@ -197,7 +269,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -205,7 +295,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1398](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1398)
+[src/families.scailo_pb.ts:1616](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1616)
 
 ___
 
@@ -213,7 +303,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -221,7 +329,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1391](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1391)
+[src/families.scailo_pb.ts:1600](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1600)
 
 ___
 
@@ -229,7 +337,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -237,7 +363,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1419](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1419)
+[src/families.scailo_pb.ts:1664](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1664)
 
 ___
 
@@ -253,7 +379,7 @@ from field: Scailo.FAMILY_TYPE family_type = 25;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1482](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1482)
+[src/families.scailo_pb.ts:1768](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1768)
 
 ___
 
@@ -269,7 +395,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1573](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1573)
+[src/families.scailo_pb.ts:1859](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1859)
 
 ___
 
@@ -285,7 +411,7 @@ from field: string hsn_sac_code = 26;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1496](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1496)
+[src/families.scailo_pb.ts:1782](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1782)
 
 ___
 
@@ -293,7 +419,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -301,7 +437,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1384](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1384)
+[src/families.scailo_pb.ts:1584](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1584)
 
 ___
 
@@ -317,7 +453,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 30;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1524](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1524)
+[src/families.scailo_pb.ts:1810](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1810)
 
 ___
 
@@ -333,7 +469,7 @@ from field: uint64 label_id = 60;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1566](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1566)
+[src/families.scailo_pb.ts:1852](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1852)
 
 ___
 
@@ -349,7 +485,7 @@ from field: uint64 ledger_id = 31;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1531](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1531)
+[src/families.scailo_pb.ts:1817](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1817)
 
 ___
 
@@ -357,7 +493,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -365,7 +519,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1412](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1412)
+[src/families.scailo_pb.ts:1648](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1648)
 
 ___
 
@@ -373,7 +527,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -381,7 +553,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1405](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1405)
+[src/families.scailo_pb.ts:1632](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1632)
 
 ___
 
@@ -397,7 +569,7 @@ from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1489](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1489)
+[src/families.scailo_pb.ts:1775](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1775)
 
 ___
 
@@ -413,7 +585,7 @@ from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1433](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1433)
+[src/families.scailo_pb.ts:1683](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1683)
 
 ___
 
@@ -429,7 +601,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1468](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1468)
+[src/families.scailo_pb.ts:1754](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1754)
 
 ___
 
@@ -445,7 +617,7 @@ from field: uint64 parent_id = 29;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1517](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1517)
+[src/families.scailo_pb.ts:1803](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1803)
 
 ___
 
@@ -461,7 +633,7 @@ from field: uint64 parent_storage_id = 50;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1559](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1559)
+[src/families.scailo_pb.ts:1845](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1845)
 
 ___
 
@@ -477,7 +649,7 @@ from field: uint64 qc_group_id = 32;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1538](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1538)
+[src/families.scailo_pb.ts:1824](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1824)
 
 ___
 
@@ -485,7 +657,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this family
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -493,7 +675,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1426](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1426)
+[src/families.scailo_pb.ts:1676](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1676)
 
 ___
 
@@ -509,7 +691,7 @@ from field: uint64 tax_group_id = 33;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1545](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1545)
+[src/families.scailo_pb.ts:1831](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1831)
 
 ___
 
@@ -525,7 +707,7 @@ from field: uint64 unit_quantity = 28;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1510](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1510)
+[src/families.scailo_pb.ts:1796](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1796)
 
 ___
 
@@ -541,7 +723,7 @@ from field: uint64 uom_id = 27;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1503](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1503)
+[src/families.scailo_pb.ts:1789](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1789)
 
 ___
 
@@ -551,7 +733,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1582](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1582)
+[src/families.scailo_pb.ts:1868](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1868)
 
 ___
 
@@ -561,7 +743,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1580](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1580)
+[src/families.scailo_pb.ts:1866](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1866)
 
 ___
 
@@ -571,7 +753,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1581](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1581)
+[src/families.scailo_pb.ts:1867](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1867)
 
 ## Methods
 
@@ -859,7 +1041,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1625](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1625)
+[src/families.scailo_pb.ts:1911](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1911)
 
 ___
 
@@ -880,7 +1062,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1613](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1613)
+[src/families.scailo_pb.ts:1899](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1899)
 
 ___
 
@@ -901,7 +1083,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1617](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1617)
+[src/families.scailo_pb.ts:1903](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1903)
 
 ___
 
@@ -922,4 +1104,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1621](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/families.scailo_pb.ts#L1621)
+[src/families.scailo_pb.ts:1907](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1907)

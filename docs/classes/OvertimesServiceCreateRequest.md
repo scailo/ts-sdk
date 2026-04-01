@@ -74,7 +74,7 @@ Message\&lt;OvertimesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L188)
+[src/overtimes.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L215)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: string description = 14;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L179)
+[src/overtimes.scailo_pb.ts:206](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L206)
 
 ___
 
@@ -98,7 +98,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Optional`**
+
+**`Description`**
+
+The globally unique identifier for the Organization or Business Entity.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -106,7 +124,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L130)
+[src/overtimes.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L139)
 
 ___
 
@@ -122,7 +140,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:186](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L186)
+[src/overtimes.scailo_pb.ts:213](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L213)
 
 ___
 
@@ -138,7 +156,7 @@ from field: uint64 from_timestamp = 12;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L165)
+[src/overtimes.scailo_pb.ts:192](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L192)
 
 ___
 
@@ -146,7 +164,25 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference ID of the overtime
+**`Mandatory`**
+
+**`Description`**
+
+A unique external reference ID for the record. Must be alphanumeric (spaces allowed). Used for cross-referencing with external systems.
+
+**`Example`**
+
+```ts
+"ABS-2023-001"
+```
+
+**`Regex`**
+
+"[0-9A-Za-z ]+$"
+
+**`Format`**
+
+Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
 
 **`Generated`**
 
@@ -154,7 +190,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:151](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L151)
+[src/overtimes.scailo_pb.ts:178](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L178)
 
 ___
 
@@ -170,7 +206,7 @@ from field: uint64 to_timestamp = 13;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L172)
+[src/overtimes.scailo_pb.ts:199](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L199)
 
 ___
 
@@ -186,7 +222,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:137](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L137)
+[src/overtimes.scailo_pb.ts:146](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L146)
 
 ___
 
@@ -202,7 +238,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:158](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L158)
+[src/overtimes.scailo_pb.ts:185](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L185)
 
 ___
 
@@ -210,7 +246,25 @@ ___
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
 
-The associated vault folder ID
+**`Optional`**
+
+**`Description`**
+
+The ID of the associated vault folder for storing documents. Defaults to 0 if no specific folder is assigned.
+
+**`Example`**
+
+```ts
+15234
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -218,7 +272,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:144](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L144)
+[src/overtimes.scailo_pb.ts:162](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L162)
 
 ___
 
@@ -228,7 +282,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L195)
+[src/overtimes.scailo_pb.ts:222](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L222)
 
 ___
 
@@ -238,7 +292,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:193](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L193)
+[src/overtimes.scailo_pb.ts:220](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L220)
 
 ___
 
@@ -248,7 +302,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:194](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L194)
+[src/overtimes.scailo_pb.ts:221](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L221)
 
 ## Methods
 
@@ -536,7 +590,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L219)
+[src/overtimes.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L246)
 
 ___
 
@@ -557,7 +611,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:207](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L207)
+[src/overtimes.scailo_pb.ts:234](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L234)
 
 ___
 
@@ -578,7 +632,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L211)
+[src/overtimes.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L238)
 
 ___
 
@@ -599,4 +653,4 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/overtimes.scailo_pb.ts#L215)
+[src/overtimes.scailo_pb.ts:242](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/overtimes.scailo_pb.ts#L242)

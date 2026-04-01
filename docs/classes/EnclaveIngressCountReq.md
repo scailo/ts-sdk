@@ -74,7 +74,7 @@ Message\&lt;EnclaveIngressCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1518](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1518)
+[src/vault_commons.scailo_pb.ts:1652](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1652)
 
 ## Properties
 
@@ -82,7 +82,25 @@ Message\&lt;EnclaveIngressCountReq\&gt;.constructor
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -90,7 +108,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1472](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1472)
+[src/vault_commons.scailo_pb.ts:1588](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1588)
 
 ___
 
@@ -98,7 +116,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -106,7 +142,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1465](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1465)
+[src/vault_commons.scailo_pb.ts:1572](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1572)
 
 ___
 
@@ -114,7 +150,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -122,7 +168,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1458](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1458)
+[src/vault_commons.scailo_pb.ts:1556](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1556)
 
 ___
 
@@ -130,7 +176,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -138,7 +202,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1486](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1486)
+[src/vault_commons.scailo_pb.ts:1620](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1620)
 
 ___
 
@@ -146,7 +210,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -154,7 +236,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1479](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1479)
+[src/vault_commons.scailo_pb.ts:1604](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1604)
 
 ___
 
@@ -170,7 +252,7 @@ from field: uint64 runner_role_id = 31;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1516](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1516)
+[src/vault_commons.scailo_pb.ts:1650](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1650)
 
 ___
 
@@ -186,7 +268,7 @@ from field: uint64 runner_user_id = 30;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1509](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1509)
+[src/vault_commons.scailo_pb.ts:1643](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1643)
 
 ___
 
@@ -202,7 +284,7 @@ from field: string vault_file_uuid = 20;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1493](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1493)
+[src/vault_commons.scailo_pb.ts:1627](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1627)
 
 ___
 
@@ -220,7 +302,7 @@ from field: string vault_file_version_uuid = 21;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1502](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1502)
+[src/vault_commons.scailo_pb.ts:1636](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1636)
 
 ___
 
@@ -230,7 +312,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1525](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1525)
+[src/vault_commons.scailo_pb.ts:1659](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1659)
 
 ___
 
@@ -240,7 +322,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1523](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1523)
+[src/vault_commons.scailo_pb.ts:1657](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1657)
 
 ___
 
@@ -250,7 +332,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1524](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1524)
+[src/vault_commons.scailo_pb.ts:1658](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1658)
 
 ## Methods
 
@@ -538,7 +620,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1549](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1549)
+[src/vault_commons.scailo_pb.ts:1683](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1683)
 
 ___
 
@@ -559,7 +641,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1537](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1537)
+[src/vault_commons.scailo_pb.ts:1671](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1671)
 
 ___
 
@@ -580,7 +662,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1541](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1541)
+[src/vault_commons.scailo_pb.ts:1675](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1675)
 
 ___
 
@@ -601,4 +683,4 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1545](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/vault_commons.scailo_pb.ts#L1545)
+[src/vault_commons.scailo_pb.ts:1679](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_commons.scailo_pb.ts#L1679)

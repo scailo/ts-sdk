@@ -69,7 +69,7 @@ Message\&lt;AttendancesAmendmentsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:683](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L683)
+[src/attendances_amendments.scailo_pb.ts:793](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L793)
 
 ## Properties
 
@@ -77,7 +77,15 @@ Message\&lt;AttendancesAmendmentsServicePaginationResponse\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records in this payload
+**`Description`**
+
+Number of records returned in the current response slice.
+
+**`Example`**
+
+```ts
+50
+```
 
 **`Generated`**
 
@@ -85,7 +93,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L660)
+[src/attendances_amendments.scailo_pb.ts:763](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L763)
 
 ___
 
@@ -93,7 +101,15 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+**`Description`**
+
+The offset provided in the request.
+
+**`Example`**
+
+```ts
+0
+```
 
 **`Generated`**
 
@@ -101,7 +117,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:667](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L667)
+[src/attendances_amendments.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L773)
 
 ___
 
@@ -109,7 +125,9 @@ ___
 
 • **payload**: [`AttendanceAmendment`](AttendanceAmendment.md)[] = `[]`
 
-The list of records
+**`Description`**
+
+The array of records for the current page.
 
 **`Generated`**
 
@@ -117,7 +135,7 @@ from field: repeated Scailo.AttendanceAmendment payload = 4;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:681](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L681)
+[src/attendances_amendments.scailo_pb.ts:791](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L791)
 
 ___
 
@@ -125,7 +143,15 @@ ___
 
 • **total**: `bigint` = `protoInt64.zero`
 
-The total number of records that are available
+**`Description`**
+
+The total number of records matching the criteria.
+
+**`Example`**
+
+```ts
+1250
+```
 
 **`Generated`**
 
@@ -133,7 +159,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:674](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L674)
+[src/attendances_amendments.scailo_pb.ts:783](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L783)
 
 ___
 
@@ -143,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L690)
+[src/attendances_amendments.scailo_pb.ts:800](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L800)
 
 ___
 
@@ -153,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:688](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L688)
+[src/attendances_amendments.scailo_pb.ts:798](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L798)
 
 ___
 
@@ -163,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:689](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L689)
+[src/attendances_amendments.scailo_pb.ts:799](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L799)
 
 ## Methods
 
@@ -451,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:709](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L709)
+[src/attendances_amendments.scailo_pb.ts:819](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L819)
 
 ___
 
@@ -472,7 +498,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L697)
+[src/attendances_amendments.scailo_pb.ts:807](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L807)
 
 ___
 
@@ -493,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L701)
+[src/attendances_amendments.scailo_pb.ts:811](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L811)
 
 ___
 
@@ -514,4 +540,4 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L705)
+[src/attendances_amendments.scailo_pb.ts:815](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L815)

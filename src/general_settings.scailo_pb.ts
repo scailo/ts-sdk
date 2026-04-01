@@ -16,7 +16,10 @@ import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_fields_data
  */
 export class GeneralSettings extends Message<GeneralSettings> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
@@ -274,7 +277,16 @@ export class GeneralSettings extends Message<GeneralSettings> {
  */
 export class GeneralSettingsServiceCreateRequest extends Message<GeneralSettingsServiceCreateRequest> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @optional
+   *
+   * @description The globally unique identifier for the Organization or Business Entity.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 1;
    */

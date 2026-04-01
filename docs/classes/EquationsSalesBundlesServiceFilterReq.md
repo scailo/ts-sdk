@@ -85,7 +85,7 @@ Message\&lt;EquationsSalesBundlesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1416](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1416)
+[src/equations_sales_bundles.scailo_pb.ts:1693](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1693)
 
 ## Properties
 
@@ -93,7 +93,25 @@ Message\&lt;EquationsSalesBundlesServiceFilterReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -101,7 +119,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1372](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1372)
+[src/equations_sales_bundles.scailo_pb.ts:1622](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1622)
 
 ___
 
@@ -109,7 +127,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -117,7 +153,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1365](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1365)
+[src/equations_sales_bundles.scailo_pb.ts:1606](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1606)
 
 ___
 
@@ -125,7 +161,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -133,7 +187,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1358](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1358)
+[src/equations_sales_bundles.scailo_pb.ts:1590](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1590)
 
 ___
 
@@ -141,7 +195,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -149,7 +221,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1379](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1379)
+[src/equations_sales_bundles.scailo_pb.ts:1638](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1638)
 
 ___
 
@@ -157,7 +229,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -165,7 +255,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1393](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1393)
+[src/equations_sales_bundles.scailo_pb.ts:1670](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1670)
 
 ___
 
@@ -173,7 +263,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -181,7 +289,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1386](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1386)
+[src/equations_sales_bundles.scailo_pb.ts:1654](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1654)
 
 ___
 
@@ -197,7 +305,7 @@ from field: uint64 constituent_family_id = 30;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1414)
+[src/equations_sales_bundles.scailo_pb.ts:1691](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1691)
 
 ___
 
@@ -205,7 +313,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -213,7 +339,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1288](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1288)
+[src/equations_sales_bundles.scailo_pb.ts:1444](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1444)
 
 ___
 
@@ -221,7 +347,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -229,7 +373,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1323](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1323)
+[src/equations_sales_bundles.scailo_pb.ts:1514](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1514)
 
 ___
 
@@ -237,7 +381,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -245,7 +407,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1316](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1316)
+[src/equations_sales_bundles.scailo_pb.ts:1498](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1498)
 
 ___
 
@@ -253,7 +415,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -261,7 +441,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1344](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1344)
+[src/equations_sales_bundles.scailo_pb.ts:1562](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1562)
 
 ___
 
@@ -277,7 +457,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1407](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1407)
+[src/equations_sales_bundles.scailo_pb.ts:1684](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1684)
 
 ___
 
@@ -285,7 +465,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -293,7 +483,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1281](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1281)
+[src/equations_sales_bundles.scailo_pb.ts:1428](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1428)
 
 ___
 
@@ -301,7 +491,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -309,7 +517,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1337)
+[src/equations_sales_bundles.scailo_pb.ts:1546](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1546)
 
 ___
 
@@ -317,7 +525,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -325,7 +551,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1330](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1330)
+[src/equations_sales_bundles.scailo_pb.ts:1530](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1530)
 
 ___
 
@@ -341,7 +567,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1400](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1400)
+[src/equations_sales_bundles.scailo_pb.ts:1677](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1677)
 
 ___
 
@@ -349,7 +575,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -357,7 +601,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1295](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1295)
+[src/equations_sales_bundles.scailo_pb.ts:1460](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1460)
 
 ___
 
@@ -365,7 +609,11 @@ ___
 
 • **sortKey**: [`EQUATION_SALES_BUNDLE_SORT_KEY`](../enums/EQUATION_SALES_BUNDLE_SORT_KEY.md) = `EQUATION_SALES_BUNDLE_SORT_KEY.EQUATION_SALES_BUNDLE_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -373,7 +621,7 @@ from field: Scailo.EQUATION_SALES_BUNDLE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1309](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1309)
+[src/equations_sales_bundles.scailo_pb.ts:1482](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1482)
 
 ___
 
@@ -381,7 +629,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -389,7 +647,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1302](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1302)
+[src/equations_sales_bundles.scailo_pb.ts:1472](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1472)
 
 ___
 
@@ -397,7 +655,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this equation sales bundle
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -405,7 +673,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1351](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1351)
+[src/equations_sales_bundles.scailo_pb.ts:1574](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1574)
 
 ___
 
@@ -415,7 +683,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1423](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1423)
+[src/equations_sales_bundles.scailo_pb.ts:1700](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1700)
 
 ___
 
@@ -425,7 +693,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1421](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1421)
+[src/equations_sales_bundles.scailo_pb.ts:1698](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1698)
 
 ___
 
@@ -435,7 +703,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1422](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1422)
+[src/equations_sales_bundles.scailo_pb.ts:1699](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1699)
 
 ## Methods
 
@@ -723,7 +991,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1458](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1458)
+[src/equations_sales_bundles.scailo_pb.ts:1735](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1735)
 
 ___
 
@@ -744,7 +1012,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1446](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1446)
+[src/equations_sales_bundles.scailo_pb.ts:1723](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1723)
 
 ___
 
@@ -765,7 +1033,7 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1450](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1450)
+[src/equations_sales_bundles.scailo_pb.ts:1727](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1727)
 
 ___
 
@@ -786,4 +1054,4 @@ ___
 
 #### Defined in
 
-[src/equations_sales_bundles.scailo_pb.ts:1454](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_sales_bundles.scailo_pb.ts#L1454)
+[src/equations_sales_bundles.scailo_pb.ts:1731](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_sales_bundles.scailo_pb.ts#L1731)

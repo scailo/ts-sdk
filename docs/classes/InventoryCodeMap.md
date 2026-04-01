@@ -73,7 +73,7 @@ Message\&lt;InventoryCodeMap\&gt;.constructor
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:604](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L604)
+[src/inventory.scailo_pb.ts:610](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L610)
 
 ## Properties
 
@@ -89,7 +89,7 @@ from field: string code = 20;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:588](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L588)
+[src/inventory.scailo_pb.ts:594](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L594)
 
 ___
 
@@ -97,7 +97,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -105,7 +113,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:553](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L553)
+[src/inventory.scailo_pb.ts:559](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L559)
 
 ___
 
@@ -121,7 +129,7 @@ from field: uint64 family_id = 12;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L581)
+[src/inventory.scailo_pb.ts:587](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L587)
 
 ___
 
@@ -137,7 +145,7 @@ from field: Scailo.FAMILY_TYPE family_type = 11;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:574](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L574)
+[src/inventory.scailo_pb.ts:580](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L580)
 
 ___
 
@@ -153,7 +161,7 @@ from field: string hash = 21;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:595](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L595)
+[src/inventory.scailo_pb.ts:601](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L601)
 
 ___
 
@@ -169,7 +177,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:560](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L560)
+[src/inventory.scailo_pb.ts:566](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L566)
 
 ___
 
@@ -185,7 +193,7 @@ from field: string purpose = 10;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:567](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L567)
+[src/inventory.scailo_pb.ts:573](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L573)
 
 ___
 
@@ -201,7 +209,7 @@ from field: string short_url = 30;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:602](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L602)
+[src/inventory.scailo_pb.ts:608](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L608)
 
 ___
 
@@ -211,7 +219,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:611](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L611)
+[src/inventory.scailo_pb.ts:617](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L617)
 
 ___
 
@@ -221,7 +229,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:609](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L609)
+[src/inventory.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L615)
 
 ___
 
@@ -231,7 +239,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:610](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L610)
+[src/inventory.scailo_pb.ts:616](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L616)
 
 ## Methods
 
@@ -519,7 +527,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:634](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L634)
+[src/inventory.scailo_pb.ts:640](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L640)
 
 ___
 
@@ -540,7 +548,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:622](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L622)
+[src/inventory.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L628)
 
 ___
 
@@ -561,7 +569,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:626](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L626)
+[src/inventory.scailo_pb.ts:632](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L632)
 
 ___
 
@@ -582,4 +590,4 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:630](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inventory.scailo_pb.ts#L630)
+[src/inventory.scailo_pb.ts:636](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L636)

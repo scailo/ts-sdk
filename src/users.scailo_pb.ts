@@ -152,216 +152,254 @@ proto3.util.setEnumType(USER_SORT_KEY, "Scailo.USER_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating a new user record.
+ * * This is the primary entry point for onboarding employees or system users.
+ * It handles identity, contact information, physical address, and payroll
+ * configuration in a single atomic operation.
+ *
+ * **Note:** Dynamic fields should be provided in the `form_data` field for
+ * organization-specific requirements.
  *
  * @generated from message Scailo.UsersServiceCreateRequest
  */
 export class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @optional
+   *
+   * @description The globally unique identifier for the Organization or Business Entity.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 1;
    */
   entityUuid = "";
 
   /**
-   * Stores any comment that the user might add during this operation
+   * [Optional] Internal notes or audit comments for this creation event.
+   * Maximum 500 characters.
    *
    * @generated from field: string user_comment = 2;
    */
   userComment = "";
 
   /**
-   * Stores the user type
+   * [Required] The classification of the user (e.g., CLIENT, EMPLOYEE, VENDOR).
    *
    * @generated from field: Scailo.USER_TYPE user_type = 7;
    */
   userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The associated vault folder ID
+   *
+   * @optional
+   *
+   * @description The ID of the associated vault folder for storing documents. Defaults to 0 if no specific folder is assigned.
+   *
+   * @example 15234
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 vault_folder_id = 9;
    */
   vaultFolderId = protoInt64.zero;
 
   /**
-   * The username of the user
+   * [Required] The unique login identifier.
+   * Must be at least 1 character and unique across the entity.
    *
    * @generated from field: string username = 10;
    */
   username = "";
 
   /**
-   * The unique employee code by which the user is classified
+   * [Required] The unique employee or payroll code.
+   * Used for cross-referencing with external HR or ERP systems.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The name of the user
+   * [Required] The full legal name of the user.
    *
    * @generated from field: string name = 12;
    */
   name = "";
 
   /**
-   * The plain text password using which the user can login
+   * [Required] The plain text password for the account.
+   * This value is hashed before storage.
    *
    * @generated from field: string plain_text_password = 13;
    */
   plainTextPassword = "";
 
   /**
-   * The associated role ID
+   * [Required] The primary security Role ID (System/Web access).
    *
    * @generated from field: uint64 role_id = 14;
    */
   roleId = protoInt64.zero;
 
   /**
-   * The associated mobile role ID
+   * [Optional] The secondary Role ID for mobile application access.
    *
    * @generated from field: uint64 mobile_role_id = 15;
    */
   mobileRoleId = protoInt64.zero;
 
   /**
-   * The primary email of the user
+   * [Required] The primary email address for system notifications.
+   * Example: "jane.doe@example.com"
    *
    * @generated from field: string email = 16;
    */
   email = "";
 
   /**
-   * The optional work email of the user
+   * [Optional] The secondary/corporate work email address.
    *
    * @generated from field: string work_email = 17;
    */
   workEmail = "";
 
   /**
-   * The primary contact number of the user
+   * [Required] The primary contact number (e.g., Mobile or Landline).
+   * Recommended format: E.164 (e.g., "+12125550123").
    *
    * @generated from field: string phone = 18;
    */
   phone = "";
 
   /**
-   * The birthday of the user
+   * [Optional] The user's date of birth.
+   * **Format:** `Day Month Date Year`
+   * Example: "Mon Jan 02 2006"
    *
    * @generated from field: string birthday = 30;
    */
   birthday = "";
 
   /**
-   * The joining date of the user
+   * [Optional] The official start date for the user.
+   * **Format:** `Day Month Date Year`
+   * Example: "Wed Oct 25 2023"
    *
    * @generated from field: string joining_date = 31;
    */
   joiningDate = "";
 
   /**
-   * The address of the user
+   * [Optional] Primary residential or mailing address.
    *
    * @generated from field: string address = 32;
    */
   address = "";
 
   /**
-   * The city of residence
+   * [Optional] City of residence.
    *
    * @generated from field: string city = 33;
    */
   city = "";
 
   /**
-   * The state of residence
+   * [Optional] State, Province, or Region of residence.
    *
    * @generated from field: string state = 34;
    */
   state = "";
 
   /**
-   * The country of residence
+   * [Optional] Country of residence (ISO 3166-1 alpha-2 recommended).
+   * Example: "US", "GB", "IN"
    *
    * @generated from field: string country = 35;
    */
   country = "";
 
   /**
-   * THe PIN Code of residence
+   * [Optional] Postal or ZIP code.
    *
    * @generated from field: string pin_code = 36;
    */
   pinCode = "";
 
   /**
-   * THe Blood Group of the user
+   * [Optional] The user's blood group.
+   * Example: "O+", "A-", "B+"
    *
    * @generated from field: string blood_group = 37;
    */
   bloodGroup = "";
 
   /**
-   * The associated shift group ID
+   * [Optional] Assigned shift group for attendance scheduling.
    *
    * @generated from field: uint64 shift_group_id = 50;
    */
   shiftGroupId = protoInt64.zero;
 
   /**
-   * The associated unit of material of the user's attendance record
+   * [Optional] Unit of Measure (UOM) for tracking attendance duration.
    *
    * @generated from field: uint64 attendance_uom_id = 51;
    */
   attendanceUomId = protoInt64.zero;
 
   /**
-   * The associated department (can be 0 to allow seamless transition)
+   * [Optional] The department ID. Set to 0 for unassigned/general.
    *
    * @generated from field: uint64 department_id = 52;
    */
   departmentId = protoInt64.zero;
 
   /**
-   * The associated payroll group ID of the user
+   * [Optional] The payroll group used for salary batching.
    *
    * @generated from field: uint64 payroll_group_id = 53;
    */
   payrollGroupId = protoInt64.zero;
 
   /**
-   * The associated tax group ID using which the user's payroll needs to be calculated
+   * [Optional] The tax group used for statutory deductions.
    *
    * @generated from field: uint64 payroll_tax_group_id = 54;
    */
   payrollTaxGroupId = protoInt64.zero;
 
   /**
-   * The associated currency ID of the user's payroll
+   * [Optional] The ID of the currency for the user's base salary.
    *
    * @generated from field: uint64 payroll_currency_id = 55;
    */
   payrollCurrencyId = protoInt64.zero;
 
   /**
-   * The basic pay amount of the user (in cents)
+   * [Optional] The base salary amount in the **smallest currency unit**.
+   * For USD, 500000 represents $5,000.00.
    *
    * @generated from field: uint64 basic_pay_amount = 56;
    */
   basicPayAmount = protoInt64.zero;
 
   /**
-   * The associated unit of material for storing the basic pay amount
+   * [Optional] The UOM ID for the basic pay (e.g., Per Month, Per Year).
    *
    * @generated from field: uint64 basic_pay_uom_id = 57;
    */
   basicPayUomId = protoInt64.zero;
 
   /**
-   * The list of dynamic forms
+   * [Optional] A collection of custom field data.
+   * Use this for any organization-specific dynamic attributes.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 70;
    */
@@ -446,14 +484,28 @@ export class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest
   id = protoInt64.zero;
 
   /**
-   * Optional boolean value that stores if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+   *
+   * @optional
+   *
+   * @description Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+   *
+   * @example true
    *
    * @generated from field: bool notify_users = 3;
    */
   notifyUsers = false;
 
   /**
-   * The associated vault folder ID
+   *
+   * @optional
+   *
+   * @description Updated vault folder ID for documentation storage.
+   *
+   * @example 15235
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 vault_folder_id = 9;
    */
@@ -690,35 +742,42 @@ export class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest
  */
 export class User extends Message<User> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
   entityUuid = "";
 
   /**
-   * Stores the metadata of this user
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Stores the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * The status of this user
+   *
+   * @description The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
    */
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
-   * Stores the logs of every operation performed on this user
+   *
+   * @description Comprehensive audit trail of every operation performed on this record.
    *
    * @generated from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
    */
@@ -732,7 +791,10 @@ export class User extends Message<User> {
   userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The associated vault folder ID
+   *
+   * @description Link to the document storage folder.
+   *
+   * @example 15234
    *
    * @generated from field: uint64 vault_folder_id = 9;
    */
@@ -1136,35 +1198,66 @@ export class UsersList extends Message<UsersList> {
  */
 export class UsersServicePaginationReq extends Message<UsersServicePaginationReq> {
   /**
-   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
    *
    * @generated from field: Scailo.BOOL_FILTER is_active = 1;
    */
   isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
   /**
-   * The number of records that need to be sent in the response
+   *
+   * @mandatory
+   *
+   * @description Number of records to return per page.
+   *
+   * @example 50
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Must be a strictly positive integer (1 or greater).
    *
    * @generated from field: int64 count = 2;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that need to be offset by before fetching the records
+   *
+   * @optional
+   *
+   * @description Number of records to skip (offset) for pagination.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 offset = 3;
    */
   offset = protoInt64.zero;
 
   /**
-   * The sort order that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description Sort direction.
+   *
+   * @example DESCENDING
    *
    * @generated from field: Scailo.SORT_ORDER sort_order = 4;
    */
   sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
 
   /**
-   * The sort key that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description The specific field key to sort the results by.
    *
    * @generated from field: Scailo.USER_SORT_KEY sort_key = 5;
    */
@@ -1218,28 +1311,38 @@ export class UsersServicePaginationReq extends Message<UsersServicePaginationReq
  */
 export class UsersServicePaginationResponse extends Message<UsersServicePaginationResponse> {
   /**
-   * The number of records in this payload
+   *
+   * @description Number of records returned in the current response slice.
+   *
+   * @example 50
    *
    * @generated from field: uint64 count = 1;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+   *
+   * @description The offset provided in the request.
+   *
+   * @example 0
    *
    * @generated from field: uint64 offset = 2;
    */
   offset = protoInt64.zero;
 
   /**
-   * The total number of records that are available
+   *
+   * @description The total number of records matching the criteria.
+   *
+   * @example 1250
    *
    * @generated from field: uint64 total = 3;
    */
   total = protoInt64.zero;
 
   /**
-   * The list of records
+   *
+   * @description The array of records for the current page.
    *
    * @generated from field: repeated Scailo.User payload = 4;
    */
@@ -1284,63 +1387,130 @@ export class UsersServicePaginationResponse extends Message<UsersServicePaginati
  */
 export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
   /**
-   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
    *
    * @generated from field: Scailo.BOOL_FILTER is_active = 1;
    */
   isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
   /**
-   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @mandatory
+   *
+   * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+   *
+   * @example 100
+   *
+   * @regex ^(?:-1|0|[1-9][0-9]*)$
+   *
+   * @format Must be -1 or any non-negative integer (>= -1).
    *
    * @generated from field: int64 count = 2;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that need to be offset by before fetching the records
+   *
+   * @optional
+   *
+   * @description Number of records to skip (offset) for pagination.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 offset = 3;
    */
   offset = protoInt64.zero;
 
   /**
-   * The sort order that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description Sort direction.
+   *
+   * @example DESCENDING
    *
    * @generated from field: Scailo.SORT_ORDER sort_order = 4;
    */
   sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
 
   /**
-   * The sort key that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description The field used for sorting.
    *
    * @generated from field: Scailo.USER_SORT_KEY sort_key = 5;
    */
   sortKey = USER_SORT_KEY.USER_SORT_KEY_ID_UNSPECIFIED;
 
   /**
-   * The minimum timestamp that needs to be considered to filter by creation
+   *
+   * @optional
+   *
+   * @description Filter records created ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 creation_timestamp_start = 101;
    */
   creationTimestampStart = protoInt64.zero;
 
   /**
-   * The maximum timestamp that needs to be considered to filter by creation
+   *
+   * @optional
+   *
+   * @description Filter records created ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 creation_timestamp_end = 102;
    */
   creationTimestampEnd = protoInt64.zero;
 
   /**
-   * The minimum timestamp that needs to be considered to filter by modification
+   *
+   * @optional
+   *
+   * @description Filter records modified ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 modification_timestamp_start = 103;
    */
   modificationTimestampStart = protoInt64.zero;
 
   /**
-   * The maximum timestamp that needs to be considered to filter by modification
+   *
+   * @optional
+   *
+   * @description Filter records modified ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 modification_timestamp_end = 104;
    */
@@ -1354,42 +1524,92 @@ export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
   userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The entity UUID that is to be used to filter records
+   *
+   * @optional
+   *
+   * @description Filter by the organization UUID.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 8;
    */
   entityUuid = "";
 
   /**
-   * The status of this user
+   *
+   * @optional
+   *
+   * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+   *
+   * @example STANDING
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
-   * The start range of approved timestamp
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_on_start = 11;
    */
   approvedOnStart = protoInt64.zero;
 
   /**
-   * The end range of approved timestamp
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_on_end = 12;
    */
   approvedOnEnd = protoInt64.zero;
 
   /**
-   * The ID of the approver
+   *
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_by_user_id = 13;
    */
   approvedByUserId = protoInt64.zero;
 
   /**
-   * The role ID of the approver
+   *
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approver_role_id = 14;
    */
@@ -1585,35 +1805,76 @@ export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
  */
 export class UsersServiceCountReq extends Message<UsersServiceCountReq> {
   /**
-   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
    *
    * @generated from field: Scailo.BOOL_FILTER is_active = 1;
    */
   isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
   /**
-   * The minimum timestamp that needs to be considered to filter by creation
+   *
+   * @optional
+   *
+   * @description Filter records created ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 creation_timestamp_start = 101;
    */
   creationTimestampStart = protoInt64.zero;
 
   /**
-   * The maximum timestamp that needs to be considered to filter by creation
+   *
+   * @optional
+   *
+   * @description Filter records created ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 creation_timestamp_end = 102;
    */
   creationTimestampEnd = protoInt64.zero;
 
   /**
-   * The minimum timestamp that needs to be considered to filter by modification
+   *
+   * @optional
+   *
+   * @description Filter records modified ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 modification_timestamp_start = 103;
    */
   modificationTimestampStart = protoInt64.zero;
 
   /**
-   * The maximum timestamp that needs to be considered to filter by modification
+   *
+   * @optional
+   *
+   * @description Filter records modified ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 modification_timestamp_end = 104;
    */
@@ -1627,42 +1888,92 @@ export class UsersServiceCountReq extends Message<UsersServiceCountReq> {
   userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The entity UUID that is to be used to filter records
+   *
+   * @optional
+   *
+   * @description Filter by the organization UUID.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 8;
    */
   entityUuid = "";
 
   /**
-   * The status of this user
+   *
+   * @optional
+   *
+   * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+   *
+   * @example STANDING
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
-   * The start range of approved timestamp
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_on_start = 11;
    */
   approvedOnStart = protoInt64.zero;
 
   /**
-   * The end range of approved timestamp
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_on_end = 12;
    */
   approvedOnEnd = protoInt64.zero;
 
   /**
-   * The ID of the approver
+   *
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_by_user_id = 13;
    */
   approvedByUserId = protoInt64.zero;
 
   /**
-   * The role ID of the approver
+   *
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approver_role_id = 14;
    */
@@ -1854,42 +2165,82 @@ export class UsersServiceCountReq extends Message<UsersServiceCountReq> {
  */
 export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> {
   /**
-   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
    *
    * @generated from field: Scailo.BOOL_FILTER is_active = 1;
    */
   isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
   /**
-   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @mandatory
+   *
+   * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+   *
+   * @example 100
+   *
+   * @regex ^(?:-1|0|[1-9][0-9]*)$
+   *
+   * @format Must be -1 or any non-negative integer (>= -1).
    *
    * @generated from field: int64 count = 2;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that need to be offset by before fetching the records
+   *
+   * @optional
+   *
+   * @description Number of records to skip (offset) for pagination.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 offset = 3;
    */
   offset = protoInt64.zero;
 
   /**
-   * The sort order that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description Sort direction.
+   *
+   * @example DESCENDING
    *
    * @generated from field: Scailo.SORT_ORDER sort_order = 4;
    */
   sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
 
   /**
-   * The sort key that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description The field used for sorting.
    *
    * @generated from field: Scailo.USER_SORT_KEY sort_key = 5;
    */
   sortKey = USER_SORT_KEY.USER_SORT_KEY_ID_UNSPECIFIED;
 
   /**
-   * The entity UUID that is to be used to filter records
+   *
+   * @optional
+   *
+   * @description Filter by the organization UUID.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 6;
    */
@@ -1903,14 +2254,28 @@ export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> 
   userType = USER_TYPE.USER_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * Limit the search space to the given status
+   *
+   * @optional
+   *
+   * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+   *
+   * @example STANDING
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
-   * Describes the key with which the search operation needs to be performed
+   *
+   * @mandatory
+   *
+   * @description The search string to match against reference IDs.
+   *
+   * @example "Medical 2023"
+   *
+   * @regex .*
+   *
+   * @format: May contain any UTF-8 characters.
    *
    * @generated from field: string search_key = 11;
    */
@@ -1979,7 +2344,10 @@ export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> 
  */
 export class UsersServiceRegisterMobileDeviceRequest extends Message<UsersServiceRegisterMobileDeviceRequest> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */

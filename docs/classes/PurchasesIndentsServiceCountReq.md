@@ -86,7 +86,7 @@ Message\&lt;PurchasesIndentsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1736](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1736)
+[src/purchases_indents.scailo_pb.ts:2132](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2132)
 
 ## Properties
 
@@ -94,7 +94,25 @@ Message\&lt;PurchasesIndentsServiceCountReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -102,7 +120,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1657](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1657)
+[src/purchases_indents.scailo_pb.ts:2008](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2008)
 
 ___
 
@@ -110,7 +128,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -118,7 +154,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1650](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1650)
+[src/purchases_indents.scailo_pb.ts:1992](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1992)
 
 ___
 
@@ -126,7 +162,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -134,7 +188,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1643](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1643)
+[src/purchases_indents.scailo_pb.ts:1976](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1976)
 
 ___
 
@@ -142,7 +196,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -150,7 +222,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1664](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1664)
+[src/purchases_indents.scailo_pb.ts:2024](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2024)
 
 ___
 
@@ -158,7 +230,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -166,7 +256,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1678](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1678)
+[src/purchases_indents.scailo_pb.ts:2056](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2056)
 
 ___
 
@@ -174,7 +264,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -182,7 +290,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1671](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1671)
+[src/purchases_indents.scailo_pb.ts:2040](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2040)
 
 ___
 
@@ -198,7 +306,7 @@ from field: uint64 consignee_location_id = 22;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1720](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1720)
+[src/purchases_indents.scailo_pb.ts:2116](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2116)
 
 ___
 
@@ -206,7 +314,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -214,7 +340,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1608](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1608)
+[src/purchases_indents.scailo_pb.ts:1900](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1900)
 
 ___
 
@@ -222,7 +348,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -230,7 +374,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1601](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1601)
+[src/purchases_indents.scailo_pb.ts:1884](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1884)
 
 ___
 
@@ -246,7 +390,7 @@ from field: string delivery_date_end = 19;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1699](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1699)
+[src/purchases_indents.scailo_pb.ts:2077](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2077)
 
 ___
 
@@ -262,7 +406,7 @@ from field: string delivery_date_exact = 17;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1685](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1685)
+[src/purchases_indents.scailo_pb.ts:2063](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2063)
 
 ___
 
@@ -278,7 +422,7 @@ from field: string delivery_date_start = 18;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1692](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1692)
+[src/purchases_indents.scailo_pb.ts:2070](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2070)
 
 ___
 
@@ -286,7 +430,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -294,7 +456,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1629](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1629)
+[src/purchases_indents.scailo_pb.ts:1948](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1948)
 
 ___
 
@@ -310,7 +472,7 @@ from field: uint64 family_id = 40;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1727](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1727)
+[src/purchases_indents.scailo_pb.ts:2123](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2123)
 
 ___
 
@@ -318,7 +480,23 @@ ___
 
 • **finalRefNumber**: `string` = `""`
 
-The unique reference number that has been automatically generated
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the system-generated ref number.
+
+**`Example`**
+
+```ts
+"ABS-2023-X9Z2"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -326,7 +504,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1713](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1713)
+[src/purchases_indents.scailo_pb.ts:2109](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2109)
 
 ___
 
@@ -342,7 +520,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1734](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1734)
+[src/purchases_indents.scailo_pb.ts:2130](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2130)
 
 ___
 
@@ -350,7 +528,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -358,7 +546,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1594](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1594)
+[src/purchases_indents.scailo_pb.ts:1868](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1868)
 
 ___
 
@@ -366,7 +554,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -374,7 +580,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1622](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1622)
+[src/purchases_indents.scailo_pb.ts:1932](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1932)
 
 ___
 
@@ -382,7 +588,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -390,7 +614,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1615](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1615)
+[src/purchases_indents.scailo_pb.ts:1916](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1916)
 
 ___
 
@@ -398,7 +622,23 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference ID of the purchase indent
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the user-defined reference ID.
+
+**`Example`**
+
+```ts
+"ABS-2023-001"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -406,7 +646,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1706](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1706)
+[src/purchases_indents.scailo_pb.ts:2093](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2093)
 
 ___
 
@@ -414,7 +654,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this purchase indent
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -422,7 +672,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1636](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1636)
+[src/purchases_indents.scailo_pb.ts:1960](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L1960)
 
 ___
 
@@ -432,7 +682,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1743](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1743)
+[src/purchases_indents.scailo_pb.ts:2139](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2139)
 
 ___
 
@@ -442,7 +692,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1741](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1741)
+[src/purchases_indents.scailo_pb.ts:2137](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2137)
 
 ___
 
@@ -452,7 +702,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1742](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1742)
+[src/purchases_indents.scailo_pb.ts:2138](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2138)
 
 ## Methods
 
@@ -740,7 +990,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1779](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1779)
+[src/purchases_indents.scailo_pb.ts:2175](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2175)
 
 ___
 
@@ -761,7 +1011,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1767](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1767)
+[src/purchases_indents.scailo_pb.ts:2163](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2163)
 
 ___
 
@@ -782,7 +1032,7 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1771](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1771)
+[src/purchases_indents.scailo_pb.ts:2167](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2167)
 
 ___
 
@@ -803,4 +1053,4 @@ ___
 
 #### Defined in
 
-[src/purchases_indents.scailo_pb.ts:1775](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_indents.scailo_pb.ts#L1775)
+[src/purchases_indents.scailo_pb.ts:2171](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_indents.scailo_pb.ts#L2171)

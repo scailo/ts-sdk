@@ -95,7 +95,7 @@ Message\&lt;AttendancesAmendmentsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:931](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L931)
+[src/attendances_amendments.scailo_pb.ts:1194](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1194)
 
 ## Properties
 
@@ -111,7 +111,7 @@ from field: uint64 amendment_entry_timestamp_end = 29;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:908](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L908)
+[src/attendances_amendments.scailo_pb.ts:1171](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1171)
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 amendment_entry_timestamp_start = 28;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:901](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L901)
+[src/attendances_amendments.scailo_pb.ts:1164](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1164)
 
 ___
 
@@ -143,7 +143,7 @@ from field: uint64 amendment_exit_timestamp_end = 31;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:922](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L922)
+[src/attendances_amendments.scailo_pb.ts:1185](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1185)
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 amendment_exit_timestamp_start = 30;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:915](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L915)
+[src/attendances_amendments.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1178)
 
 ___
 
@@ -167,7 +167,25 @@ ___
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -175,7 +193,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:817](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L817)
+[src/attendances_amendments.scailo_pb.ts:1035](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1035)
 
 ___
 
@@ -183,7 +201,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -191,7 +227,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:810](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L810)
+[src/attendances_amendments.scailo_pb.ts:1019](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1019)
 
 ___
 
@@ -199,7 +235,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -207,7 +261,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:803](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L803)
+[src/attendances_amendments.scailo_pb.ts:1003](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1003)
 
 ___
 
@@ -215,7 +269,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -223,7 +295,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:824](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L824)
+[src/attendances_amendments.scailo_pb.ts:1051](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1051)
 
 ___
 
@@ -239,7 +311,7 @@ from field: uint64 attendance_entry_timestamp_end = 25;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:880](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L880)
+[src/attendances_amendments.scailo_pb.ts:1143](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1143)
 
 ___
 
@@ -255,7 +327,7 @@ from field: uint64 attendance_entry_timestamp_start = 24;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:873](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L873)
+[src/attendances_amendments.scailo_pb.ts:1136](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1136)
 
 ___
 
@@ -271,7 +343,7 @@ from field: uint64 attendance_exit_timestamp_end = 27;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:894](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L894)
+[src/attendances_amendments.scailo_pb.ts:1157](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1157)
 
 ___
 
@@ -287,7 +359,7 @@ from field: uint64 attendance_exit_timestamp_start = 26;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:887](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L887)
+[src/attendances_amendments.scailo_pb.ts:1150](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1150)
 
 ___
 
@@ -303,7 +375,7 @@ from field: uint64 attendance_id = 23;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:866](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L866)
+[src/attendances_amendments.scailo_pb.ts:1129](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1129)
 
 ___
 
@@ -311,7 +383,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -319,7 +409,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:838](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L838)
+[src/attendances_amendments.scailo_pb.ts:1083](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1083)
 
 ___
 
@@ -327,7 +417,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -335,7 +443,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:831](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L831)
+[src/attendances_amendments.scailo_pb.ts:1067](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1067)
 
 ___
 
@@ -343,7 +451,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -351,7 +477,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L733)
+[src/attendances_amendments.scailo_pb.ts:857](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L857)
 
 ___
 
@@ -359,7 +485,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -367,7 +511,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:768](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L768)
+[src/attendances_amendments.scailo_pb.ts:927](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L927)
 
 ___
 
@@ -375,7 +519,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -383,7 +545,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:761](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L761)
+[src/attendances_amendments.scailo_pb.ts:911](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L911)
 
 ___
 
@@ -391,7 +553,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -399,7 +579,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:789](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L789)
+[src/attendances_amendments.scailo_pb.ts:975](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L975)
 
 ___
 
@@ -407,7 +587,23 @@ ___
 
 • **finalRefNumber**: `string` = `""`
 
-The unique reference number that has been automatically generated
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the system-generated ref number.
+
+**`Example`**
+
+```ts
+"ABS-2023-X9Z2"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -415,7 +611,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:852](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L852)
+[src/attendances_amendments.scailo_pb.ts:1115](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1115)
 
 ___
 
@@ -431,7 +627,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:929](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L929)
+[src/attendances_amendments.scailo_pb.ts:1192](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1192)
 
 ___
 
@@ -439,7 +635,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -447,7 +653,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:726](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L726)
+[src/attendances_amendments.scailo_pb.ts:841](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L841)
 
 ___
 
@@ -455,7 +661,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -463,7 +687,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:782](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L782)
+[src/attendances_amendments.scailo_pb.ts:959](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L959)
 
 ___
 
@@ -471,7 +695,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -479,7 +721,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:775](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L775)
+[src/attendances_amendments.scailo_pb.ts:943](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L943)
 
 ___
 
@@ -487,7 +729,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -495,7 +755,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:740](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L740)
+[src/attendances_amendments.scailo_pb.ts:873](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L873)
 
 ___
 
@@ -503,7 +763,23 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference_id of the attendance amendment
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the user-defined reference ID.
+
+**`Example`**
+
+```ts
+"ABS-2023-001"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -511,7 +787,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:845](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L845)
+[src/attendances_amendments.scailo_pb.ts:1099](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1099)
 
 ___
 
@@ -519,7 +795,11 @@ ___
 
 • **sortKey**: [`ATTENDANCE_AMENDMENT_SORT_KEY`](../enums/ATTENDANCE_AMENDMENT_SORT_KEY.md) = `ATTENDANCE_AMENDMENT_SORT_KEY.ATTENDANCE_AMENDMENT_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -527,7 +807,7 @@ from field: Scailo.ATTENDANCE_AMENDMENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L754)
+[src/attendances_amendments.scailo_pb.ts:895](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L895)
 
 ___
 
@@ -535,7 +815,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -543,7 +833,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:747](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L747)
+[src/attendances_amendments.scailo_pb.ts:885](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L885)
 
 ___
 
@@ -551,7 +841,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this attendance amendment
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -559,7 +859,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:796](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L796)
+[src/attendances_amendments.scailo_pb.ts:987](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L987)
 
 ___
 
@@ -575,7 +875,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:859](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L859)
+[src/attendances_amendments.scailo_pb.ts:1122](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1122)
 
 ___
 
@@ -585,7 +885,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:938](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L938)
+[src/attendances_amendments.scailo_pb.ts:1201](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1201)
 
 ___
 
@@ -595,7 +895,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:936](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L936)
+[src/attendances_amendments.scailo_pb.ts:1199](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1199)
 
 ___
 
@@ -605,7 +905,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:937](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L937)
+[src/attendances_amendments.scailo_pb.ts:1200](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1200)
 
 ## Methods
 
@@ -893,7 +1193,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:983](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L983)
+[src/attendances_amendments.scailo_pb.ts:1246](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1246)
 
 ___
 
@@ -914,7 +1214,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:971](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L971)
+[src/attendances_amendments.scailo_pb.ts:1234](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1234)
 
 ___
 
@@ -935,7 +1235,7 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:975](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L975)
+[src/attendances_amendments.scailo_pb.ts:1238](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1238)
 
 ___
 
@@ -956,4 +1256,4 @@ ___
 
 #### Defined in
 
-[src/attendances_amendments.scailo_pb.ts:979](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/attendances_amendments.scailo_pb.ts#L979)
+[src/attendances_amendments.scailo_pb.ts:1242](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/attendances_amendments.scailo_pb.ts#L1242)

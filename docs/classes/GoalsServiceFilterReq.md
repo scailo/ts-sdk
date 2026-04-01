@@ -92,7 +92,7 @@ Message\&lt;GoalsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1693](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1693)
+[src/goals.scailo_pb.ts:2012](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2012)
 
 ## Properties
 
@@ -100,7 +100,25 @@ Message\&lt;GoalsServiceFilterReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -108,7 +126,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1600](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1600)
+[src/goals.scailo_pb.ts:1874](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1874)
 
 ___
 
@@ -116,7 +134,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -124,7 +160,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1593](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1593)
+[src/goals.scailo_pb.ts:1858](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1858)
 
 ___
 
@@ -132,7 +168,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -140,7 +194,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1586](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1586)
+[src/goals.scailo_pb.ts:1842](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1842)
 
 ___
 
@@ -148,7 +202,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -156,7 +228,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1607](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1607)
+[src/goals.scailo_pb.ts:1890](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1890)
 
 ___
 
@@ -164,7 +236,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -172,7 +262,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1621](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1621)
+[src/goals.scailo_pb.ts:1922](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1922)
 
 ___
 
@@ -180,7 +270,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -188,7 +296,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1614](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1614)
+[src/goals.scailo_pb.ts:1906](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1906)
 
 ___
 
@@ -196,7 +304,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -204,7 +330,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1516](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1516)
+[src/goals.scailo_pb.ts:1696](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1696)
 
 ___
 
@@ -212,7 +338,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -220,7 +364,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1551](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1551)
+[src/goals.scailo_pb.ts:1766](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1766)
 
 ___
 
@@ -228,7 +372,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -236,7 +398,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1544](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1544)
+[src/goals.scailo_pb.ts:1750](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1750)
 
 ___
 
@@ -252,7 +414,7 @@ from field: string end_date_end = 37;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1677](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1677)
+[src/goals.scailo_pb.ts:1996](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1996)
 
 ___
 
@@ -268,7 +430,7 @@ from field: string end_date_exact = 38;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1684](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1684)
+[src/goals.scailo_pb.ts:2003](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2003)
 
 ___
 
@@ -284,7 +446,7 @@ from field: string end_date_start = 36;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1670](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1670)
+[src/goals.scailo_pb.ts:1989](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1989)
 
 ___
 
@@ -292,7 +454,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -300,7 +480,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1572](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1572)
+[src/goals.scailo_pb.ts:1814](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1814)
 
 ___
 
@@ -308,7 +488,23 @@ ___
 
 • **finalRefNumber**: `string` = `""`
 
-The unique reference number that has been automatically generated
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the system-generated ref number.
+
+**`Example`**
+
+```ts
+"ABS-2023-X9Z2"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -316,7 +512,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1635](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1635)
+[src/goals.scailo_pb.ts:1954](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1954)
 
 ___
 
@@ -332,7 +528,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1691](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1691)
+[src/goals.scailo_pb.ts:2010](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2010)
 
 ___
 
@@ -340,7 +536,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -348,7 +554,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1509](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1509)
+[src/goals.scailo_pb.ts:1680](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1680)
 
 ___
 
@@ -356,7 +562,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -364,7 +588,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1565](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1565)
+[src/goals.scailo_pb.ts:1798](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1798)
 
 ___
 
@@ -372,7 +596,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -380,7 +622,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1558](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1558)
+[src/goals.scailo_pb.ts:1782](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1782)
 
 ___
 
@@ -388,7 +630,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -396,7 +656,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1523](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1523)
+[src/goals.scailo_pb.ts:1712](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1712)
 
 ___
 
@@ -404,7 +664,23 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference ID of the goal
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the user-defined reference ID.
+
+**`Example`**
+
+```ts
+"ABS-2023-001"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -412,7 +688,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1628](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1628)
+[src/goals.scailo_pb.ts:1938](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1938)
 
 ___
 
@@ -420,7 +696,11 @@ ___
 
 • **sortKey**: [`GOAL_SORT_KEY`](../enums/GOAL_SORT_KEY.md) = `GOAL_SORT_KEY.GOAL_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -428,7 +708,7 @@ from field: Scailo.GOAL_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1537](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1537)
+[src/goals.scailo_pb.ts:1734](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1734)
 
 ___
 
@@ -436,7 +716,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -444,7 +734,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1530](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1530)
+[src/goals.scailo_pb.ts:1724](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1724)
 
 ___
 
@@ -460,7 +750,7 @@ from field: string start_date_end = 31;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1656](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1656)
+[src/goals.scailo_pb.ts:1975](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1975)
 
 ___
 
@@ -476,7 +766,7 @@ from field: string start_date_exact = 32;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1663](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1663)
+[src/goals.scailo_pb.ts:1982](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1982)
 
 ___
 
@@ -492,7 +782,7 @@ from field: string start_date_start = 30;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1649](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1649)
+[src/goals.scailo_pb.ts:1968](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1968)
 
 ___
 
@@ -500,7 +790,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this goal
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -508,7 +808,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1579](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1579)
+[src/goals.scailo_pb.ts:1826](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1826)
 
 ___
 
@@ -524,7 +824,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1642](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1642)
+[src/goals.scailo_pb.ts:1961](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L1961)
 
 ___
 
@@ -534,7 +834,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1700](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1700)
+[src/goals.scailo_pb.ts:2019](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2019)
 
 ___
 
@@ -544,7 +844,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1698](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1698)
+[src/goals.scailo_pb.ts:2017](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2017)
 
 ___
 
@@ -554,7 +854,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1699](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1699)
+[src/goals.scailo_pb.ts:2018](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2018)
 
 ## Methods
 
@@ -842,7 +1142,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1742](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1742)
+[src/goals.scailo_pb.ts:2061](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2061)
 
 ___
 
@@ -863,7 +1163,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1730)
+[src/goals.scailo_pb.ts:2049](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2049)
 
 ___
 
@@ -884,7 +1184,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1734](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1734)
+[src/goals.scailo_pb.ts:2053](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2053)
 
 ___
 
@@ -905,4 +1205,4 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1738](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/goals.scailo_pb.ts#L1738)
+[src/goals.scailo_pb.ts:2057](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/goals.scailo_pb.ts#L2057)

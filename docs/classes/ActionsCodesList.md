@@ -2,7 +2,7 @@
 
 # Class: ActionsCodesList
 
-Describes the message consisting of the list of records
+Container message for a collection of Action Code records.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;ActionsCodesList\&gt;.constructor
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:425](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L425)
+[src/actions_codes.scailo_pb.ts:600](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L600)
 
 ## Properties
 
@@ -74,7 +74,9 @@ Message\&lt;ActionsCodesList\&gt;.constructor
 
 • **list**: [`ActionCode`](ActionCode.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array of Action Code records.
 
 **`Generated`**
 
@@ -82,7 +84,7 @@ from field: repeated Scailo.ActionCode list = 1;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L423)
+[src/actions_codes.scailo_pb.ts:598](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L598)
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L432)
+[src/actions_codes.scailo_pb.ts:607](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L607)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L430)
+[src/actions_codes.scailo_pb.ts:605](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L605)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:431](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L431)
+[src/actions_codes.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L606)
 
 ## Methods
 
@@ -400,7 +402,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:448](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L448)
+[src/actions_codes.scailo_pb.ts:623](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L623)
 
 ___
 
@@ -421,7 +423,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L436)
+[src/actions_codes.scailo_pb.ts:611](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L611)
 
 ___
 
@@ -442,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L440)
+[src/actions_codes.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L615)
 
 ___
 
@@ -463,4 +465,4 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L444)
+[src/actions_codes.scailo_pb.ts:619](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L619)

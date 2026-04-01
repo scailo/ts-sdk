@@ -90,7 +90,16 @@ export declare enum OVERTIME_SORT_KEY {
  */
 export declare class OvertimesServiceCreateRequest extends Message<OvertimesServiceCreateRequest> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @optional
+     *
+     * @description The globally unique identifier for the Organization or Business Entity.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -102,13 +111,31 @@ export declare class OvertimesServiceCreateRequest extends Message<OvertimesServ
      */
     userComment: string;
     /**
-     * The associated vault folder ID
+     *
+     * @optional
+     *
+     * @description The ID of the associated vault folder for storing documents. Defaults to 0 if no specific folder is assigned.
+     *
+     * @example 15234
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 vault_folder_id = 9;
      */
     vaultFolderId: bigint;
     /**
-     * The reference ID of the overtime
+     *
+     * @mandatory
+     *
+     * @description A unique external reference ID for the record. Must be alphanumeric (spaces allowed). Used for cross-referencing with external systems.
+     *
+     * @example "ABS-2023-001"
+     *
+     * @regex "[0-9A-Za-z ]+$"
+     *
+     * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
      *
      * @generated from field: string reference_id = 10;
      */
@@ -172,19 +199,42 @@ export declare class OvertimesServiceUpdateRequest extends Message<OvertimesServ
      */
     id: bigint;
     /**
-     * Optional boolean value that stores if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+     *
+     * @optional
+     *
+     * @description Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+     *
+     * @example true
      *
      * @generated from field: bool notify_users = 3;
      */
     notifyUsers: boolean;
     /**
-     * The associated vault folder ID
+     *
+     * @optional
+     *
+     * @description Updated vault folder ID for documentation storage.
+     *
+     * @example 15235
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 vault_folder_id = 9;
      */
     vaultFolderId: bigint;
     /**
-     * The reference ID of the overtime
+     *
+     * @mandatory
+     *
+     * @description Updated alphanumeric reference ID. Must contain at least 1 character.
+     *
+     * @example "ABS-2023-001-REV"
+     *
+     * @regex "[0-9A-Za-z ]+$"
+     *
+     * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
      *
      * @generated from field: string reference_id = 10;
      */
@@ -230,55 +280,74 @@ export declare class OvertimesServiceUpdateRequest extends Message<OvertimesServ
  */
 export declare class Overtime extends Message<Overtime> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
     entityUuid: string;
     /**
-     * Stores the metadata of this overtime
+     *
+     * @description Standard employee and record metadata including timestamps.
      *
      * @generated from field: Scailo.EmployeeMetadata metadata = 2;
      */
     metadata?: EmployeeMetadata;
     /**
-     * Stores the approval metadata
+     *
+     * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
      *
      * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
      */
     approvalMetadata?: ApprovalMetadata;
     /**
-     * The status of this overtime
+     *
+     * @description The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
      *
      * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
-     * Stores the logs of every operation performed on this overtime
+     *
+     * @description Comprehensive audit trail of every operation performed on this record.
      *
      * @generated from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
      */
     logs: LogbookLogConciseSLC[];
     /**
-     * The timestamp of when this overtime was marked as completed
+     *
+     * @description UNIX timestamp of when the record transitioned to the COMPLETED state.
+     *
+     * @example 1698400000
      *
      * @generated from field: uint64 completed_on = 6;
      */
     completedOn: bigint;
     /**
-     * The associated vault folder ID
+     *
+     * @description Link to the document storage folder.
+     *
+     * @example 15234
      *
      * @generated from field: uint64 vault_folder_id = 9;
      */
     vaultFolderId: bigint;
     /**
-     * The reference_id of the overtime
+     *
+     * @description The user-provided reference ID.
+     *
+     * @example "ABS-2023-001"
      *
      * @generated from field: string reference_id = 10;
      */
     referenceId: string;
     /**
-     * The unique reference number that has been automatically generated
+     *
+     * @description The system-generated immutable reference number.
+     *
+     * @example "ABS-2023-X9Z2"
      *
      * @generated from field: string final_ref_number = 11;
      */
@@ -352,31 +421,62 @@ export declare class OvertimesList extends Message<OvertimesList> {
  */
 export declare class OvertimesServicePaginationReq extends Message<OvertimesServicePaginationReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response
+     *
+     * @mandatory
+     *
+     * @description Number of records to return per page.
+     *
+     * @example 50
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Must be a strictly positive integer (1 or greater).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The specific field key to sort the results by.
      *
      * @generated from field: Scailo.OVERTIME_SORT_KEY sort_key = 5;
      */
@@ -404,25 +504,35 @@ export declare class OvertimesServicePaginationReq extends Message<OvertimesServ
  */
 export declare class OvertimesServicePaginationResponse extends Message<OvertimesServicePaginationResponse> {
     /**
-     * The number of records in this payload
+     *
+     * @description Number of records returned in the current response slice.
+     *
+     * @example 50
      *
      * @generated from field: uint64 count = 1;
      */
     count: bigint;
     /**
-     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @description The offset provided in the request.
+     *
+     * @example 0
      *
      * @generated from field: uint64 offset = 2;
      */
     offset: bigint;
     /**
-     * The total number of records that are available
+     *
+     * @description The total number of records matching the criteria.
+     *
+     * @example 1250
      *
      * @generated from field: uint64 total = 3;
      */
     total: bigint;
     /**
-     * The list of records
+     *
+     * @description The array of records for the current page.
      *
      * @generated from field: repeated Scailo.Overtime payload = 4;
      */
@@ -444,115 +554,268 @@ export declare class OvertimesServicePaginationResponse extends Message<Overtime
  */
 export declare class OvertimesServiceFilterReq extends Message<OvertimesServiceFilterReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The field used for sorting.
      *
      * @generated from field: Scailo.OVERTIME_SORT_KEY sort_key = 5;
      */
     sortKey: OVERTIME_SORT_KEY;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
     modificationTimestampEnd: bigint;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 8;
      */
     entityUuid: string;
     /**
-     * The status of this overtime
+     *
+     * @optional
+     *
+     * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+     *
+     * @example STANDING
      *
      * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
-     * The start range of approved timestamp
+     *
+     * @optional
+     *
+     * @description Filter records approved ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_on_start = 11;
      */
     approvedOnStart: bigint;
     /**
-     * The end range of approved timestamp
+     *
+     * @optional
+     *
+     * @description Filter records approved ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_on_end = 12;
      */
     approvedOnEnd: bigint;
     /**
-     * The ID of the approver
+     *
+     * @optional
+     *
+     * @description Filter by the specific user ID who approved the records.
+     *
+     * @example 501
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_by_user_id = 13;
      */
     approvedByUserId: bigint;
     /**
-     * The role ID of the approver
+     *
+     * @optional
+     *
+     * @description Filter by the role ID of the approver.
+     *
+     * @example 5
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approver_role_id = 14;
      */
     approverRoleId: bigint;
     /**
-     * The start range of completed timestamp
+     *
+     * @optional
+     *
+     * @description Filter records completed ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 completed_on_start = 15;
      */
     completedOnStart: bigint;
     /**
-     * The end range of completed timestamp
+     *
+     * @optional
+     *
+     * @description Filter records completed ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 completed_on_end = 16;
      */
     completedOnEnd: bigint;
     /**
-     * The reference_id of the overtime
+     *
+     * @optional
+     *
+     * @description Fuzzy match for the user-defined reference ID.
+     *
+     * @example "ABS-2023-001"
+     *
+     * @regex [0-9A-Za-z ]*$
+     *
+     * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
      * @generated from field: string reference_id = 20;
      */
     referenceId: string;
     /**
-     * The unique reference number that has been automatically generated
+     *
+     * @optional
+     *
+     * @description Fuzzy match for the system-generated ref number.
+     *
+     * @example "ABS-2023-X9Z2"
+     *
+     * @regex [0-9A-Za-z ]*$
+     *
+     * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
      * @generated from field: string final_ref_number = 21;
      */
@@ -610,91 +873,218 @@ export declare class OvertimesServiceFilterReq extends Message<OvertimesServiceF
  */
 export declare class OvertimesServiceCountReq extends Message<OvertimesServiceCountReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
     modificationTimestampEnd: bigint;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 8;
      */
     entityUuid: string;
     /**
-     * The status of this overtime
+     *
+     * @optional
+     *
+     * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+     *
+     * @example STANDING
      *
      * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
-     * The start range of approved timestamp
+     *
+     * @optional
+     *
+     * @description Filter records approved ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_on_start = 11;
      */
     approvedOnStart: bigint;
     /**
-     * The end range of approved timestamp
+     *
+     * @optional
+     *
+     * @description Filter records approved ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_on_end = 12;
      */
     approvedOnEnd: bigint;
     /**
-     * The ID of the approver
+     *
+     * @optional
+     *
+     * @description Filter by the specific user ID who approved the records.
+     *
+     * @example 501
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_by_user_id = 13;
      */
     approvedByUserId: bigint;
     /**
-     * The role ID of the approver
+     *
+     * @optional
+     *
+     * @description Filter by the role ID of the approver.
+     *
+     * @example 5
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approver_role_id = 14;
      */
     approverRoleId: bigint;
     /**
-     * The start range of completed timestamp
+     *
+     * @optional
+     *
+     * @description Filter records completed ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 completed_on_start = 15;
      */
     completedOnStart: bigint;
     /**
-     * The end range of completed timestamp
+     *
+     * @optional
+     *
+     * @description Filter records completed ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 completed_on_end = 16;
      */
     completedOnEnd: bigint;
     /**
-     * The reference_id of the overtime
+     *
+     * @optional
+     *
+     * @description Fuzzy match for the user-defined reference ID.
+     *
+     * @example "ABS-2023-001"
+     *
+     * @regex [0-9A-Za-z ]*$
+     *
+     * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
      * @generated from field: string reference_id = 20;
      */
     referenceId: string;
     /**
-     * The unique reference number that has been automatically generated
+     *
+     * @optional
+     *
+     * @description Fuzzy match for the system-generated ref number.
+     *
+     * @example "ABS-2023-X9Z2"
+     *
+     * @regex [0-9A-Za-z ]*$
+     *
+     * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
      * @generated from field: string final_ref_number = 21;
      */
@@ -752,49 +1142,103 @@ export declare class OvertimesServiceCountReq extends Message<OvertimesServiceCo
  */
 export declare class OvertimesServiceSearchAllReq extends Message<OvertimesServiceSearchAllReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The field used for sorting.
      *
      * @generated from field: Scailo.OVERTIME_SORT_KEY sort_key = 5;
      */
     sortKey: OVERTIME_SORT_KEY;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 6;
      */
     entityUuid: string;
     /**
-     * Limit the search space to the given status
+     *
+     * @optional
+     *
+     * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+     *
+     * @example STANDING
      *
      * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
-     * Describes the key with which the search operation needs to be performed
+     *
+     * @mandatory
+     *
+     * @description The search string to match against reference IDs.
+     *
+     * @example "Medical 2023"
+     *
+     * @regex .*
+     *
+     * @format: May contain any UTF-8 characters.
      *
      * @generated from field: string search_key = 11;
      */

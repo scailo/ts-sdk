@@ -71,7 +71,7 @@ Message\&lt;EquationsReplaceablesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L254)
+[src/equations_replaceables.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L272)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L252)
+[src/equations_replaceables.scailo_pb.ts:270](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L270)
 
 ___
 
@@ -95,7 +95,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Optional`**
+
+**`Description`**
+
+The globally unique identifier for the Organization or Business Entity.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -103,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L217)
+[src/equations_replaceables.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L226)
 
 ___
 
@@ -119,7 +137,7 @@ from field: uint64 family_id = 12;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L245)
+[src/equations_replaceables.scailo_pb.ts:263](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L263)
 
 ___
 
@@ -135,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L238)
+[src/equations_replaceables.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L256)
 
 ___
 
@@ -151,7 +169,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L224)
+[src/equations_replaceables.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L233)
 
 ___
 
@@ -159,7 +177,25 @@ ___
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
 
-The associated vault folder ID
+**`Optional`**
+
+**`Description`**
+
+The ID of the associated vault folder for storing documents. Defaults to 0 if no specific folder is assigned.
+
+**`Example`**
+
+```ts
+15234
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -167,7 +203,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L231)
+[src/equations_replaceables.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L249)
 
 ___
 
@@ -177,7 +213,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:261](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L261)
+[src/equations_replaceables.scailo_pb.ts:279](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L279)
 
 ___
 
@@ -187,7 +223,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:259](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L259)
+[src/equations_replaceables.scailo_pb.ts:277](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L277)
 
 ___
 
@@ -197,7 +233,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L260)
+[src/equations_replaceables.scailo_pb.ts:278](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L278)
 
 ## Methods
 
@@ -485,7 +521,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L282)
+[src/equations_replaceables.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L300)
 
 ___
 
@@ -506,7 +542,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:270](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L270)
+[src/equations_replaceables.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L288)
 
 ___
 
@@ -527,7 +563,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L274)
+[src/equations_replaceables.scailo_pb.ts:292](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L292)
 
 ___
 
@@ -548,4 +584,4 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:278](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L278)
+[src/equations_replaceables.scailo_pb.ts:296](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L296)

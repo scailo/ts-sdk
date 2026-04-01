@@ -76,7 +76,7 @@ Message\&lt;Announcement\&gt;.constructor
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:381](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L381)
+[src/announcements.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L426)
 
 ## Properties
 
@@ -84,7 +84,9 @@ Message\&lt;Announcement\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -92,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:323](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L323)
+[src/announcements.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L360)
 
 ___
 
@@ -100,7 +102,15 @@ ___
 
 • **completedOn**: `bigint` = `protoInt64.zero`
 
-The timestamp of when this announcement was marked as completed
+**`Description`**
+
+UNIX timestamp of when the record transitioned to the COMPLETED state.
+
+**`Example`**
+
+```ts
+1698400000
+```
 
 **`Generated`**
 
@@ -108,7 +118,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L344)
+[src/announcements.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L386)
 
 ___
 
@@ -124,7 +134,7 @@ from field: string description = 11;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:365](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L365)
+[src/announcements.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L410)
 
 ___
 
@@ -140,7 +150,7 @@ from field: uint64 end_on = 13;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:379](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L379)
+[src/announcements.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L424)
 
 ___
 
@@ -148,7 +158,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -156,7 +174,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:309](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L309)
+[src/announcements.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L344)
 
 ___
 
@@ -164,7 +182,9 @@ ___
 
 • **logs**: [`LogbookLogConciseSLC`](LogbookLogConciseSLC.md)[] = `[]`
 
-Stores the logs of every operation performed on this announcement
+**`Description`**
+
+Comprehensive audit trail of every operation performed on this record.
 
 **`Generated`**
 
@@ -172,7 +192,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L337)
+[src/announcements.scailo_pb.ts:376](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L376)
 
 ___
 
@@ -180,7 +200,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this announcement
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -188,7 +210,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L316)
+[src/announcements.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L352)
 
 ___
 
@@ -204,7 +226,7 @@ from field: uint64 start_on = 12;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:372](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L372)
+[src/announcements.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L417)
 
 ___
 
@@ -212,7 +234,9 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this announcement
+**`Description`**
+
+The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
 
 **`Generated`**
 
@@ -220,7 +244,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L330)
+[src/announcements.scailo_pb.ts:368](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L368)
 
 ___
 
@@ -236,7 +260,7 @@ from field: string title = 10;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:358](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L358)
+[src/announcements.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L403)
 
 ___
 
@@ -244,7 +268,15 @@ ___
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
 
-The associated vault folder ID
+**`Description`**
+
+Link to the document storage folder.
+
+**`Example`**
+
+```ts
+15234
+```
 
 **`Generated`**
 
@@ -252,7 +284,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L351)
+[src/announcements.scailo_pb.ts:396](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L396)
 
 ___
 
@@ -262,7 +294,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L388)
+[src/announcements.scailo_pb.ts:433](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L433)
 
 ___
 
@@ -272,7 +304,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L386)
+[src/announcements.scailo_pb.ts:431](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L431)
 
 ___
 
@@ -282,7 +314,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:387](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L387)
+[src/announcements.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L432)
 
 ## Methods
 
@@ -570,7 +602,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:414](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L414)
+[src/announcements.scailo_pb.ts:459](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L459)
 
 ___
 
@@ -591,7 +623,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L402)
+[src/announcements.scailo_pb.ts:447](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L447)
 
 ___
 
@@ -612,7 +644,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L406)
+[src/announcements.scailo_pb.ts:451](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L451)
 
 ___
 
@@ -633,4 +665,4 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/announcements.scailo_pb.ts#L410)
+[src/announcements.scailo_pb.ts:455](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/announcements.scailo_pb.ts#L455)

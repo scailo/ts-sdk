@@ -81,7 +81,7 @@ Message\&lt;SkillsParamsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:907](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L907)
+[src/skills_params.scailo_pb.ts:1237](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1237)
 
 ## Properties
 
@@ -89,7 +89,25 @@ Message\&lt;SkillsParamsServiceCountReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -97,7 +115,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:863](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L863)
+[src/skills_params.scailo_pb.ts:1166](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1166)
 
 ___
 
@@ -105,7 +123,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -113,7 +149,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:856](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L856)
+[src/skills_params.scailo_pb.ts:1150](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1150)
 
 ___
 
@@ -121,7 +157,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -129,7 +183,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:849](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L849)
+[src/skills_params.scailo_pb.ts:1134](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1134)
 
 ___
 
@@ -137,7 +191,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -145,7 +217,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:870](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L870)
+[src/skills_params.scailo_pb.ts:1182](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1182)
 
 ___
 
@@ -161,7 +233,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:898](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L898)
+[src/skills_params.scailo_pb.ts:1228](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1228)
 
 ___
 
@@ -169,7 +241,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -177,7 +267,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:884](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L884)
+[src/skills_params.scailo_pb.ts:1214](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1214)
 
 ___
 
@@ -185,7 +275,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -193,7 +301,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:877](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L877)
+[src/skills_params.scailo_pb.ts:1198](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1198)
 
 ___
 
@@ -201,7 +309,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -209,7 +335,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:814](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L814)
+[src/skills_params.scailo_pb.ts:1058](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1058)
 
 ___
 
@@ -217,7 +343,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -225,7 +369,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:807](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L807)
+[src/skills_params.scailo_pb.ts:1042](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1042)
 
 ___
 
@@ -233,7 +377,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -241,7 +403,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:835](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L835)
+[src/skills_params.scailo_pb.ts:1106](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1106)
 
 ___
 
@@ -257,7 +419,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:905](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L905)
+[src/skills_params.scailo_pb.ts:1235](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1235)
 
 ___
 
@@ -265,7 +427,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -273,7 +445,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:800](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L800)
+[src/skills_params.scailo_pb.ts:1026](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1026)
 
 ___
 
@@ -281,7 +453,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -289,7 +479,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:828](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L828)
+[src/skills_params.scailo_pb.ts:1090](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1090)
 
 ___
 
@@ -297,7 +487,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -305,7 +513,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L821)
+[src/skills_params.scailo_pb.ts:1074](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1074)
 
 ___
 
@@ -321,7 +529,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:891](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L891)
+[src/skills_params.scailo_pb.ts:1221](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1221)
 
 ___
 
@@ -329,7 +537,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this skill param
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -337,7 +555,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:842](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L842)
+[src/skills_params.scailo_pb.ts:1118](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1118)
 
 ___
 
@@ -347,7 +565,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L914)
+[src/skills_params.scailo_pb.ts:1244](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1244)
 
 ___
 
@@ -357,7 +575,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:912](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L912)
+[src/skills_params.scailo_pb.ts:1242](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1242)
 
 ___
 
@@ -367,7 +585,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:913](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L913)
+[src/skills_params.scailo_pb.ts:1243](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1243)
 
 ## Methods
 
@@ -655,7 +873,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:945](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L945)
+[src/skills_params.scailo_pb.ts:1275](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1275)
 
 ___
 
@@ -676,7 +894,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:933](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L933)
+[src/skills_params.scailo_pb.ts:1263](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1263)
 
 ___
 
@@ -697,7 +915,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:937](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L937)
+[src/skills_params.scailo_pb.ts:1267](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1267)
 
 ___
 
@@ -718,4 +936,4 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:941](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/skills_params.scailo_pb.ts#L941)
+[src/skills_params.scailo_pb.ts:1271](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L1271)

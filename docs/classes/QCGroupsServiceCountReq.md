@@ -82,7 +82,7 @@ Message\&lt;QCGroupsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1849](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1849)
+[src/qc_groups.scailo_pb.ts:2235](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2235)
 
 ## Properties
 
@@ -90,7 +90,25 @@ Message\&lt;QCGroupsServiceCountReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -98,7 +116,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1798](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1798)
+[src/qc_groups.scailo_pb.ts:2157](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2157)
 
 ___
 
@@ -106,7 +124,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -114,7 +150,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1791](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1791)
+[src/qc_groups.scailo_pb.ts:2141](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2141)
 
 ___
 
@@ -122,7 +158,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -130,7 +184,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1784](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1784)
+[src/qc_groups.scailo_pb.ts:2125](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2125)
 
 ___
 
@@ -138,7 +192,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -146,7 +218,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1805](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1805)
+[src/qc_groups.scailo_pb.ts:2173](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2173)
 
 ___
 
@@ -162,7 +234,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1833](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1833)
+[src/qc_groups.scailo_pb.ts:2219](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2219)
 
 ___
 
@@ -170,7 +242,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -178,7 +268,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1819](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1819)
+[src/qc_groups.scailo_pb.ts:2205](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2205)
 
 ___
 
@@ -186,7 +276,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -194,7 +302,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1812](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1812)
+[src/qc_groups.scailo_pb.ts:2189](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2189)
 
 ___
 
@@ -202,7 +310,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -210,7 +336,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1749](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1749)
+[src/qc_groups.scailo_pb.ts:2049](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2049)
 
 ___
 
@@ -218,7 +344,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -226,7 +370,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1742](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1742)
+[src/qc_groups.scailo_pb.ts:2033](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2033)
 
 ___
 
@@ -234,7 +378,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -242,7 +404,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1770](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1770)
+[src/qc_groups.scailo_pb.ts:2097](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2097)
 
 ___
 
@@ -258,7 +420,7 @@ from field: uint64 family_id = 30;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1840](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1840)
+[src/qc_groups.scailo_pb.ts:2226](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2226)
 
 ___
 
@@ -274,7 +436,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1847](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1847)
+[src/qc_groups.scailo_pb.ts:2233](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2233)
 
 ___
 
@@ -282,7 +444,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -290,7 +462,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1735](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1735)
+[src/qc_groups.scailo_pb.ts:2017](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2017)
 
 ___
 
@@ -298,7 +470,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -306,7 +496,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1763](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1763)
+[src/qc_groups.scailo_pb.ts:2081](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2081)
 
 ___
 
@@ -314,7 +504,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -322,7 +530,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1756](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1756)
+[src/qc_groups.scailo_pb.ts:2065](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2065)
 
 ___
 
@@ -338,7 +546,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1826](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1826)
+[src/qc_groups.scailo_pb.ts:2212](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2212)
 
 ___
 
@@ -346,7 +554,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this qc group
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -354,7 +572,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1777](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1777)
+[src/qc_groups.scailo_pb.ts:2109](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2109)
 
 ___
 
@@ -364,7 +582,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1856](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1856)
+[src/qc_groups.scailo_pb.ts:2242](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2242)
 
 ___
 
@@ -374,7 +592,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1854](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1854)
+[src/qc_groups.scailo_pb.ts:2240](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2240)
 
 ___
 
@@ -384,7 +602,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1855](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1855)
+[src/qc_groups.scailo_pb.ts:2241](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2241)
 
 ## Methods
 
@@ -672,7 +890,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1888](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1888)
+[src/qc_groups.scailo_pb.ts:2274](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2274)
 
 ___
 
@@ -693,7 +911,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1876](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1876)
+[src/qc_groups.scailo_pb.ts:2262](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2262)
 
 ___
 
@@ -714,7 +932,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1880](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1880)
+[src/qc_groups.scailo_pb.ts:2266](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2266)
 
 ___
 
@@ -735,4 +953,4 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:1884](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/qc_groups.scailo_pb.ts#L1884)
+[src/qc_groups.scailo_pb.ts:2270](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/qc_groups.scailo_pb.ts#L2270)

@@ -35,7 +35,7 @@ from enum value: PAYROLL_GROUP_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_pb.ts#L85)
+[src/payroll_groups.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_pb.ts#L85)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: PAYROLL_GROUP_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_pb.ts#L78)
+[src/payroll_groups.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_pb.ts#L78)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: PAYROLL_GROUP_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_pb.ts#L92)
+[src/payroll_groups.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_pb.ts#L92)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: PAYROLL_GROUP_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_pb.ts#L99)
+[src/payroll_groups.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_pb.ts#L99)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: PAYROLL_GROUP_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_pb.ts#L64)
+[src/payroll_groups.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_pb.ts#L64)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: PAYROLL_GROUP_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_pb.ts#L57)
+[src/payroll_groups.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_pb.ts#L57)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: PAYROLL_GROUP_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_pb.ts#L71)
+[src/payroll_groups.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_pb.ts#L71)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: PAYROLL_GROUP_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/payroll_groups.scailo_pb.ts#L106)
+[src/payroll_groups.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/payroll_groups.scailo_pb.ts#L106)

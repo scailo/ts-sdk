@@ -80,7 +80,7 @@ Message\&lt;LedgersServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:851](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L851)
+[src/ledgers.scailo_pb.ts:1112](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1112)
 
 ## Properties
 
@@ -88,7 +88,25 @@ Message\&lt;LedgersServiceCountReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -96,7 +114,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:814](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L814)
+[src/ledgers.scailo_pb.ts:1066](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1066)
 
 ___
 
@@ -104,7 +122,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -112,7 +148,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:807](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L807)
+[src/ledgers.scailo_pb.ts:1050](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1050)
 
 ___
 
@@ -120,7 +156,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -128,7 +182,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:800](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L800)
+[src/ledgers.scailo_pb.ts:1034](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1034)
 
 ___
 
@@ -136,7 +190,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -144,7 +216,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L821)
+[src/ledgers.scailo_pb.ts:1082](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1082)
 
 ___
 
@@ -160,7 +232,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:835](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L835)
+[src/ledgers.scailo_pb.ts:1096](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1096)
 
 ___
 
@@ -168,7 +240,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -176,7 +266,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:765](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L765)
+[src/ledgers.scailo_pb.ts:958](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L958)
 
 ___
 
@@ -184,7 +274,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -192,7 +300,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:758](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L758)
+[src/ledgers.scailo_pb.ts:942](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L942)
 
 ___
 
@@ -200,7 +308,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -208,7 +334,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:786](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L786)
+[src/ledgers.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1006)
 
 ___
 
@@ -216,7 +342,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -224,7 +360,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:751](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L751)
+[src/ledgers.scailo_pb.ts:926](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L926)
 
 ___
 
@@ -240,7 +376,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 23;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:849](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L849)
+[src/ledgers.scailo_pb.ts:1110](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1110)
 
 ___
 
@@ -248,7 +384,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -256,7 +410,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:779](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L779)
+[src/ledgers.scailo_pb.ts:990](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L990)
 
 ___
 
@@ -264,7 +418,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -272,7 +444,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:772](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L772)
+[src/ledgers.scailo_pb.ts:974](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L974)
 
 ___
 
@@ -288,7 +460,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:828](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L828)
+[src/ledgers.scailo_pb.ts:1089](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1089)
 
 ___
 
@@ -304,7 +476,7 @@ from field: uint64 parent_ledger_id = 22;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:842](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L842)
+[src/ledgers.scailo_pb.ts:1103](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1103)
 
 ___
 
@@ -312,7 +484,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this ledger
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -320,7 +502,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:793](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L793)
+[src/ledgers.scailo_pb.ts:1018](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1018)
 
 ___
 
@@ -330,7 +512,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:858](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L858)
+[src/ledgers.scailo_pb.ts:1119](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1119)
 
 ___
 
@@ -340,7 +522,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:856](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L856)
+[src/ledgers.scailo_pb.ts:1117](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1117)
 
 ___
 
@@ -350,7 +532,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:857](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L857)
+[src/ledgers.scailo_pb.ts:1118](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1118)
 
 ## Methods
 
@@ -638,7 +820,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:888](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L888)
+[src/ledgers.scailo_pb.ts:1149](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1149)
 
 ___
 
@@ -659,7 +841,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:876](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L876)
+[src/ledgers.scailo_pb.ts:1137](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1137)
 
 ___
 
@@ -680,7 +862,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:880](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L880)
+[src/ledgers.scailo_pb.ts:1141](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1141)
 
 ___
 
@@ -701,4 +883,4 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:884](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/ledgers.scailo_pb.ts#L884)
+[src/ledgers.scailo_pb.ts:1145](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L1145)

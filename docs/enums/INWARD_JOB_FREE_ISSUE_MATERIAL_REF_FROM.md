@@ -29,7 +29,7 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inward_jobs_free_issue_materials.scailo_pb.ts#L23)
+[src/inward_jobs_free_issue_materials.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inward_jobs_free_issue_materials.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: INWARD_JOB_FREE_ISSUE_MATERIAL_REF_FROM_INWARD_JOB = 1;
 
 #### Defined in
 
-[src/inward_jobs_free_issue_materials.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/inward_jobs_free_issue_materials.scailo_pb.ts#L30)
+[src/inward_jobs_free_issue_materials.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inward_jobs_free_issue_materials.scailo_pb.ts#L30)

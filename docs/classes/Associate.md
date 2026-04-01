@@ -83,7 +83,7 @@ Message\&lt;Associate\&gt;.constructor
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:261](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L261)
+[src/associates.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L267)
 
 ## Properties
 
@@ -99,7 +99,7 @@ from field: string anniversary = 23;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L252)
+[src/associates.scailo_pb.ts:258](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L258)
 
 ___
 
@@ -115,7 +115,7 @@ from field: string birthday = 22;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L245)
+[src/associates.scailo_pb.ts:251](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L251)
 
 ___
 
@@ -131,7 +131,7 @@ from field: string department = 17;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L210)
+[src/associates.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L216)
 
 ___
 
@@ -147,7 +147,7 @@ from field: string description = 24;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:259](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L259)
+[src/associates.scailo_pb.ts:265](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L265)
 
 ___
 
@@ -155,7 +155,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -163,7 +171,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L140)
+[src/associates.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L143)
 
 ___
 
@@ -179,7 +187,7 @@ from field: string first_name = 10;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L161)
+[src/associates.scailo_pb.ts:167](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L167)
 
 ___
 
@@ -195,7 +203,7 @@ from field: string job_title = 16;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L203)
+[src/associates.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L209)
 
 ___
 
@@ -211,7 +219,7 @@ from field: string last_name = 12;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L175)
+[src/associates.scailo_pb.ts:181](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L181)
 
 ___
 
@@ -227,7 +235,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L147)
+[src/associates.scailo_pb.ts:150](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L150)
 
 ___
 
@@ -243,7 +251,7 @@ from field: string middle_name = 11;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:168](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L168)
+[src/associates.scailo_pb.ts:174](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L174)
 
 ___
 
@@ -259,7 +267,7 @@ from field: string org_name = 15;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L196)
+[src/associates.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L202)
 
 ___
 
@@ -275,7 +283,7 @@ from field: Scailo.ASSOCIATE_ORG_REF_FROM org_ref_from = 13;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:182](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L182)
+[src/associates.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L188)
 
 ___
 
@@ -291,7 +299,7 @@ from field: uint64 org_ref_id = 14;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L189)
+[src/associates.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L195)
 
 ___
 
@@ -307,7 +315,7 @@ from field: string personal_email = 21;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L238)
+[src/associates.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L244)
 
 ___
 
@@ -323,7 +331,7 @@ from field: string personal_phone = 20;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L231)
+[src/associates.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L237)
 
 ___
 
@@ -331,7 +339,15 @@ ___
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
 
-The associated vault folder ID
+**`Description`**
+
+Link to the document storage folder.
+
+**`Example`**
+
+```ts
+15234
+```
 
 **`Generated`**
 
@@ -339,7 +355,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L154)
+[src/associates.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L160)
 
 ___
 
@@ -355,7 +371,7 @@ from field: string work_email = 19;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L224)
+[src/associates.scailo_pb.ts:230](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L230)
 
 ___
 
@@ -371,7 +387,7 @@ from field: string work_phone = 18;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L217)
+[src/associates.scailo_pb.ts:223](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L223)
 
 ___
 
@@ -381,7 +397,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L268)
+[src/associates.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L274)
 
 ___
 
@@ -391,7 +407,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:266](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L266)
+[src/associates.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L272)
 
 ___
 
@@ -401,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L267)
+[src/associates.scailo_pb.ts:273](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L273)
 
 ## Methods
 
@@ -689,7 +705,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:301](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L301)
+[src/associates.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L307)
 
 ___
 
@@ -710,7 +726,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L289)
+[src/associates.scailo_pb.ts:295](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L295)
 
 ___
 
@@ -731,7 +747,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L293)
+[src/associates.scailo_pb.ts:299](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L299)
 
 ___
 
@@ -752,4 +768,4 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:297](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/associates.scailo_pb.ts#L297)
+[src/associates.scailo_pb.ts:303](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L303)

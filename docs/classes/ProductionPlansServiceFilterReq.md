@@ -96,7 +96,7 @@ Message\&lt;ProductionPlansServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1623](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1623)
+[src/production_plans.scailo_pb.ts:1892](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1892)
 
 ## Properties
 
@@ -104,7 +104,25 @@ Message\&lt;ProductionPlansServiceFilterReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -112,7 +130,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1501](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1501)
+[src/production_plans.scailo_pb.ts:1725](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1725)
 
 ___
 
@@ -120,7 +138,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -128,7 +164,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1494](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1494)
+[src/production_plans.scailo_pb.ts:1709](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1709)
 
 ___
 
@@ -136,7 +172,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -144,7 +198,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1487](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1487)
+[src/production_plans.scailo_pb.ts:1693](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1693)
 
 ___
 
@@ -152,7 +206,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -160,7 +232,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1508](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1508)
+[src/production_plans.scailo_pb.ts:1741](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1741)
 
 ___
 
@@ -177,7 +249,7 @@ from field: uint64 buyer_client_id = 80;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1614](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1614)
+[src/production_plans.scailo_pb.ts:1883](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1883)
 
 ___
 
@@ -185,7 +257,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -193,7 +283,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1522](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1522)
+[src/production_plans.scailo_pb.ts:1773](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1773)
 
 ___
 
@@ -201,7 +291,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -209,7 +317,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1515](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1515)
+[src/production_plans.scailo_pb.ts:1757](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1757)
 
 ___
 
@@ -217,7 +325,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -225,7 +351,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1417](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1417)
+[src/production_plans.scailo_pb.ts:1547](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1547)
 
 ___
 
@@ -233,7 +359,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -241,7 +385,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1452](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1452)
+[src/production_plans.scailo_pb.ts:1617](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1617)
 
 ___
 
@@ -249,7 +393,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -257,7 +419,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1445](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1445)
+[src/production_plans.scailo_pb.ts:1601](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1601)
 
 ___
 
@@ -273,7 +435,7 @@ from field: uint64 ends_at_end = 33;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1592](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1592)
+[src/production_plans.scailo_pb.ts:1861](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1861)
 
 ___
 
@@ -289,7 +451,7 @@ from field: uint64 ends_at_start = 32;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1585](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1585)
+[src/production_plans.scailo_pb.ts:1854](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1854)
 
 ___
 
@@ -297,7 +459,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -305,7 +485,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1473](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1473)
+[src/production_plans.scailo_pb.ts:1665](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1665)
 
 ___
 
@@ -321,7 +501,7 @@ from field: uint64 family_id = 50;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1599](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1599)
+[src/production_plans.scailo_pb.ts:1868](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1868)
 
 ___
 
@@ -329,7 +509,23 @@ ___
 
 • **finalRefNumber**: `string` = `""`
 
-The unique reference number that has been automatically generated
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the system-generated ref number.
+
+**`Example`**
+
+```ts
+"ABS-2023-X9Z2"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -337,7 +533,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1536](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1536)
+[src/production_plans.scailo_pb.ts:1805](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1805)
 
 ___
 
@@ -353,7 +549,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1621](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1621)
+[src/production_plans.scailo_pb.ts:1890](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1890)
 
 ___
 
@@ -361,7 +557,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -369,7 +575,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1410](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1410)
+[src/production_plans.scailo_pb.ts:1531](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1531)
 
 ___
 
@@ -385,7 +591,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1557](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1557)
+[src/production_plans.scailo_pb.ts:1826](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1826)
 
 ___
 
@@ -393,7 +599,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -401,7 +625,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1466](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1466)
+[src/production_plans.scailo_pb.ts:1649](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1649)
 
 ___
 
@@ -409,7 +633,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -417,7 +659,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1459](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1459)
+[src/production_plans.scailo_pb.ts:1633](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1633)
 
 ___
 
@@ -425,7 +667,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -433,7 +693,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1424](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1424)
+[src/production_plans.scailo_pb.ts:1563](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1563)
 
 ___
 
@@ -449,7 +709,7 @@ from field: uint64 project_id = 60;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1606](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1606)
+[src/production_plans.scailo_pb.ts:1875](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1875)
 
 ___
 
@@ -465,7 +725,7 @@ from field: Scailo.PRODUCTION_PLAN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1543](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1543)
+[src/production_plans.scailo_pb.ts:1812](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1812)
 
 ___
 
@@ -481,7 +741,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1550](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1550)
+[src/production_plans.scailo_pb.ts:1819](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1819)
 
 ___
 
@@ -489,7 +749,23 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference ID of the production plan
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the user-defined reference ID.
+
+**`Example`**
+
+```ts
+"ABS-2023-001"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -497,7 +773,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1529](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1529)
+[src/production_plans.scailo_pb.ts:1789](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1789)
 
 ___
 
@@ -505,7 +781,11 @@ ___
 
 • **sortKey**: [`PRODUCTION_PLAN_SORT_KEY`](../enums/PRODUCTION_PLAN_SORT_KEY.md) = `PRODUCTION_PLAN_SORT_KEY.PRODUCTION_PLAN_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -513,7 +793,7 @@ from field: Scailo.PRODUCTION_PLAN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1438](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1438)
+[src/production_plans.scailo_pb.ts:1585](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1585)
 
 ___
 
@@ -521,7 +801,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -529,7 +819,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1431](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1431)
+[src/production_plans.scailo_pb.ts:1575](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1575)
 
 ___
 
@@ -545,7 +835,7 @@ from field: uint64 starts_at_end = 31;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1578](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1578)
+[src/production_plans.scailo_pb.ts:1847](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1847)
 
 ___
 
@@ -561,7 +851,7 @@ from field: uint64 starts_at_start = 30;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1571](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1571)
+[src/production_plans.scailo_pb.ts:1840](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1840)
 
 ___
 
@@ -569,7 +859,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this production plan
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -577,7 +877,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1480](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1480)
+[src/production_plans.scailo_pb.ts:1677](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1677)
 
 ___
 
@@ -593,7 +893,7 @@ from field: string supervisor = 25;
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1564](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1564)
+[src/production_plans.scailo_pb.ts:1833](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1833)
 
 ___
 
@@ -603,7 +903,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1630](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1630)
+[src/production_plans.scailo_pb.ts:1899](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1899)
 
 ___
 
@@ -613,7 +913,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1628](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1628)
+[src/production_plans.scailo_pb.ts:1897](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1897)
 
 ___
 
@@ -623,7 +923,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1629](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1629)
+[src/production_plans.scailo_pb.ts:1898](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1898)
 
 ## Methods
 
@@ -911,7 +1211,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1676](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1676)
+[src/production_plans.scailo_pb.ts:1945](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1945)
 
 ___
 
@@ -932,7 +1232,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1664](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1664)
+[src/production_plans.scailo_pb.ts:1933](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1933)
 
 ___
 
@@ -953,7 +1253,7 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1668](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1668)
+[src/production_plans.scailo_pb.ts:1937](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1937)
 
 ___
 
@@ -974,4 +1274,4 @@ ___
 
 #### Defined in
 
-[src/production_plans.scailo_pb.ts:1672](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/production_plans.scailo_pb.ts#L1672)
+[src/production_plans.scailo_pb.ts:1941](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/production_plans.scailo_pb.ts#L1941)

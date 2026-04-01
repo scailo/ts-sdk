@@ -76,7 +76,7 @@ Message\&lt;PurchaseReturnItem\&gt;.constructor
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L914)
+[src/purchases_returns.scailo_pb.ts:989](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L989)
 
 ## Properties
 
@@ -84,7 +84,9 @@ Message\&lt;PurchaseReturnItem\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -92,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:856](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L856)
+[src/purchases_returns.scailo_pb.ts:930](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L930)
 
 ___
 
@@ -100,7 +102,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -108,7 +118,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:842](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L842)
+[src/purchases_returns.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L914)
 
 ___
 
@@ -124,7 +134,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:884](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L884)
+[src/purchases_returns.scailo_pb.ts:959](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L959)
 
 ___
 
@@ -140,7 +150,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:898](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L898)
+[src/purchases_returns.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L973)
 
 ___
 
@@ -156,7 +166,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:891](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L891)
+[src/purchases_returns.scailo_pb.ts:966](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L966)
 
 ___
 
@@ -164,7 +174,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this purchase return
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -172,7 +184,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:849](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L849)
+[src/purchases_returns.scailo_pb.ts:922](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L922)
 
 ___
 
@@ -180,7 +192,9 @@ ___
 
 • **needApproval**: `boolean` = `false`
 
-Denotes if this record requires approval (or has been approved)
+**`Description`**
+
+The approval state of the record
 
 **`Generated`**
 
@@ -188,7 +202,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:863](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L863)
+[src/purchases_returns.scailo_pb.ts:938](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L938)
 
 ___
 
@@ -204,7 +218,7 @@ from field: uint64 purchase_return_id = 10;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:877](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L877)
+[src/purchases_returns.scailo_pb.ts:952](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L952)
 
 ___
 
@@ -220,7 +234,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:870](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L870)
+[src/purchases_returns.scailo_pb.ts:945](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L945)
 
 ___
 
@@ -236,7 +250,7 @@ from field: uint64 vendor_quantity = 15;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:912](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L912)
+[src/purchases_returns.scailo_pb.ts:987](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L987)
 
 ___
 
@@ -252,7 +266,7 @@ from field: uint64 vendor_uom_id = 14;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:905](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L905)
+[src/purchases_returns.scailo_pb.ts:980](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L980)
 
 ___
 
@@ -262,7 +276,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:921](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L921)
+[src/purchases_returns.scailo_pb.ts:996](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L996)
 
 ___
 
@@ -272,7 +286,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:919](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L919)
+[src/purchases_returns.scailo_pb.ts:994](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L994)
 
 ___
 
@@ -282,7 +296,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:920](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L920)
+[src/purchases_returns.scailo_pb.ts:995](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L995)
 
 ## Methods
 
@@ -570,7 +584,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:947](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L947)
+[src/purchases_returns.scailo_pb.ts:1022](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L1022)
 
 ___
 
@@ -591,7 +605,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:935](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L935)
+[src/purchases_returns.scailo_pb.ts:1010](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L1010)
 
 ___
 
@@ -612,7 +626,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:939](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L939)
+[src/purchases_returns.scailo_pb.ts:1014](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L1014)
 
 ___
 
@@ -633,4 +647,4 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:943](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/purchases_returns.scailo_pb.ts#L943)
+[src/purchases_returns.scailo_pb.ts:1018](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/purchases_returns.scailo_pb.ts#L1018)

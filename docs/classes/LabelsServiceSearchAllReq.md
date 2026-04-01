@@ -72,7 +72,7 @@ Message\&lt;LabelsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:749](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L749)
+[src/labels.scailo_pb.ts:942](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L942)
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:712](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L712)
+[src/labels.scailo_pb.ts:896](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L896)
 
 ___
 
@@ -96,7 +96,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter labels
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -104,7 +122,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:740](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L740)
+[src/labels.scailo_pb.ts:933](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L933)
 
 ___
 
@@ -112,7 +130,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -120,7 +148,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L705)
+[src/labels.scailo_pb.ts:889](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L889)
 
 ___
 
@@ -136,7 +164,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:719](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L719)
+[src/labels.scailo_pb.ts:903](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L903)
 
 ___
 
@@ -152,7 +180,7 @@ from field: string search_key = 10;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:747](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L747)
+[src/labels.scailo_pb.ts:940](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L940)
 
 ___
 
@@ -168,7 +196,7 @@ from field: Scailo.LABEL_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L733)
+[src/labels.scailo_pb.ts:917](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L917)
 
 ___
 
@@ -184,7 +212,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:726](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L726)
+[src/labels.scailo_pb.ts:910](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L910)
 
 ___
 
@@ -194,7 +222,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:756](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L756)
+[src/labels.scailo_pb.ts:949](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L949)
 
 ___
 
@@ -204,7 +232,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L754)
+[src/labels.scailo_pb.ts:947](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L947)
 
 ___
 
@@ -214,7 +242,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L755)
+[src/labels.scailo_pb.ts:948](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L948)
 
 ## Methods
 
@@ -502,7 +530,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:778](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L778)
+[src/labels.scailo_pb.ts:971](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L971)
 
 ___
 
@@ -523,7 +551,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L766)
+[src/labels.scailo_pb.ts:959](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L959)
 
 ___
 
@@ -544,7 +572,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:770](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L770)
+[src/labels.scailo_pb.ts:963](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L963)
 
 ___
 
@@ -565,4 +593,4 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:774](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/labels.scailo_pb.ts#L774)
+[src/labels.scailo_pb.ts:967](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/labels.scailo_pb.ts#L967)

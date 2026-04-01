@@ -77,7 +77,7 @@ Message\&lt;ReplaceableIndentsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1725](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1725)
+[src/replaceable_indents.scailo_pb.ts:2175](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2175)
 
 ## Properties
 
@@ -85,7 +85,25 @@ Message\&lt;ReplaceableIndentsServiceSearchAllReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -93,7 +111,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1653](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1653)
+[src/replaceable_indents.scailo_pb.ts:2063](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2063)
 
 ___
 
@@ -101,7 +119,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -109,7 +145,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1681](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1681)
+[src/replaceable_indents.scailo_pb.ts:2117](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2117)
 
 ___
 
@@ -125,7 +161,7 @@ from field: uint64 family_id = 25;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1716](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1716)
+[src/replaceable_indents.scailo_pb.ts:2166](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2166)
 
 ___
 
@@ -133,7 +169,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -141,7 +187,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1646](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1646)
+[src/replaceable_indents.scailo_pb.ts:2047](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2047)
 
 ___
 
@@ -157,7 +203,7 @@ from field: string item_hash = 26;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1723](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1723)
+[src/replaceable_indents.scailo_pb.ts:2173](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2173)
 
 ___
 
@@ -173,7 +219,7 @@ from field: uint64 location_id = 23;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1702](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1702)
+[src/replaceable_indents.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2152)
 
 ___
 
@@ -181,7 +227,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -189,7 +253,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1660](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1660)
+[src/replaceable_indents.scailo_pb.ts:2079](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2079)
 
 ___
 
@@ -197,7 +261,23 @@ ___
 
 • **searchKey**: `string` = `""`
 
-Describes the key with which the search operation needs to be performed
+**`Mandatory`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -205,7 +285,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1695](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1695)
+[src/replaceable_indents.scailo_pb.ts:2145](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2145)
 
 ___
 
@@ -213,7 +293,11 @@ ___
 
 • **sortKey**: [`REPLACEABLE_INDENT_SORT_KEY`](../enums/REPLACEABLE_INDENT_SORT_KEY.md) = `REPLACEABLE_INDENT_SORT_KEY.REPLACEABLE_INDENT_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -221,7 +305,7 @@ from field: Scailo.REPLACEABLE_INDENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1674](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1674)
+[src/replaceable_indents.scailo_pb.ts:2101](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2101)
 
 ___
 
@@ -229,7 +313,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -237,7 +331,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1667](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1667)
+[src/replaceable_indents.scailo_pb.ts:2091](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2091)
 
 ___
 
@@ -245,7 +339,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-Limit the search space to the given status
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -253,7 +357,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1688](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1688)
+[src/replaceable_indents.scailo_pb.ts:2129](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2129)
 
 ___
 
@@ -269,7 +373,7 @@ from field: string supervisor = 24;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1709](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1709)
+[src/replaceable_indents.scailo_pb.ts:2159](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2159)
 
 ___
 
@@ -279,7 +383,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1732](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1732)
+[src/replaceable_indents.scailo_pb.ts:2182](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2182)
 
 ___
 
@@ -289,7 +393,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1730)
+[src/replaceable_indents.scailo_pb.ts:2180](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2180)
 
 ___
 
@@ -299,7 +403,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1731](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1731)
+[src/replaceable_indents.scailo_pb.ts:2181](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2181)
 
 ## Methods
 
@@ -587,7 +691,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1759](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1759)
+[src/replaceable_indents.scailo_pb.ts:2209](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2209)
 
 ___
 
@@ -608,7 +712,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1747](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1747)
+[src/replaceable_indents.scailo_pb.ts:2197](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2197)
 
 ___
 
@@ -629,7 +733,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1751](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1751)
+[src/replaceable_indents.scailo_pb.ts:2201](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2201)
 
 ___
 
@@ -650,4 +754,4 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:1755](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/replaceable_indents.scailo_pb.ts#L1755)
+[src/replaceable_indents.scailo_pb.ts:2205](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/replaceable_indents.scailo_pb.ts#L2205)

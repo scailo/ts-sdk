@@ -2,7 +2,7 @@
 
 # Class: AbsencesServiceSearchAllReq
 
-Describes the request payload for performing a generic search operation on records
+Generic search request for finding absences using a free-text search key.
 
 **`Generated`**
 
@@ -74,7 +74,7 @@ Message\&lt;AbsencesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1310](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1310)
+[src/absences.scailo_pb.ts:2108](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2108)
 
 ## Properties
 
@@ -82,7 +82,25 @@ Message\&lt;AbsencesServiceSearchAllReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -90,7 +108,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1259](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1259)
+[src/absences.scailo_pb.ts:2008](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2008)
 
 ___
 
@@ -98,7 +116,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -106,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1287](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1287)
+[src/absences.scailo_pb.ts:2062](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2062)
 
 ___
 
@@ -114,7 +150,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -122,7 +168,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1252](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1252)
+[src/absences.scailo_pb.ts:1992](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1992)
 
 ___
 
@@ -130,7 +176,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -138,7 +202,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1266](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1266)
+[src/absences.scailo_pb.ts:2024](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2024)
 
 ___
 
@@ -146,7 +210,23 @@ ___
 
 • **searchKey**: `string` = `""`
 
-Describes the key with which the search operation needs to be performed
+**`Mandatory`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -154,7 +234,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1301](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1301)
+[src/absences.scailo_pb.ts:2090](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2090)
 
 ___
 
@@ -162,7 +242,11 @@ ___
 
 • **sortKey**: [`ABSENCE_SORT_KEY`](../enums/ABSENCE_SORT_KEY.md) = `ABSENCE_SORT_KEY.ABSENCE_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -170,7 +254,7 @@ from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1280](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1280)
+[src/absences.scailo_pb.ts:2046](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2046)
 
 ___
 
@@ -178,7 +262,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -186,7 +280,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1273](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1273)
+[src/absences.scailo_pb.ts:2036](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2036)
 
 ___
 
@@ -194,7 +288,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-Limit the search space to the given status
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -202,7 +306,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1294](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1294)
+[src/absences.scailo_pb.ts:2074](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2074)
 
 ___
 
@@ -210,7 +314,25 @@ ___
 
 • **userId**: `bigint` = `protoInt64.zero`
 
-The ID of the user who has been marked as absent
+**`Optional`**
+
+**`Description`**
+
+Limit search results to a specific employee ID.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -218,7 +340,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1308](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1308)
+[src/absences.scailo_pb.ts:2106](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2106)
 
 ___
 
@@ -228,7 +350,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1317](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1317)
+[src/absences.scailo_pb.ts:2115](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2115)
 
 ___
 
@@ -238,7 +360,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1315](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1315)
+[src/absences.scailo_pb.ts:2113](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2113)
 
 ___
 
@@ -248,7 +370,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1316](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1316)
+[src/absences.scailo_pb.ts:2114](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2114)
 
 ## Methods
 
@@ -536,7 +658,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1341](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1341)
+[src/absences.scailo_pb.ts:2139](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2139)
 
 ___
 
@@ -557,7 +679,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1329](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1329)
+[src/absences.scailo_pb.ts:2127](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2127)
 
 ___
 
@@ -578,7 +700,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1333](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1333)
+[src/absences.scailo_pb.ts:2131](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2131)
 
 ___
 
@@ -599,4 +721,4 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1337)
+[src/absences.scailo_pb.ts:2135](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L2135)

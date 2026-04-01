@@ -70,7 +70,7 @@ Message\&lt;ClientUserLoginResponse\&gt;.constructor
 
 #### Defined in
 
-[src/login.scailo_pb.ts:484](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L484)
+[src/login.scailo_pb.ts:487](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L487)
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string auth_token = 2;
 
 #### Defined in
 
-[src/login.scailo_pb.ts:461](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L461)
+[src/login.scailo_pb.ts:464](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L464)
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 client_id = 10;
 
 #### Defined in
 
-[src/login.scailo_pb.ts:475](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L475)
+[src/login.scailo_pb.ts:478](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L478)
 
 ___
 
@@ -118,7 +118,7 @@ from field: string client_uuid = 11;
 
 #### Defined in
 
-[src/login.scailo_pb.ts:482](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L482)
+[src/login.scailo_pb.ts:485](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L485)
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 expires_at = 3;
 
 #### Defined in
 
-[src/login.scailo_pb.ts:468](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L468)
+[src/login.scailo_pb.ts:471](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L471)
 
 ___
 
@@ -150,7 +150,7 @@ from field: string username = 1;
 
 #### Defined in
 
-[src/login.scailo_pb.ts:454](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L454)
+[src/login.scailo_pb.ts:457](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L457)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[src/login.scailo_pb.ts:491](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L491)
+[src/login.scailo_pb.ts:494](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L494)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[src/login.scailo_pb.ts:489](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L489)
+[src/login.scailo_pb.ts:492](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L492)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[src/login.scailo_pb.ts:490](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L490)
+[src/login.scailo_pb.ts:493](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L493)
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-[src/login.scailo_pb.ts:511](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L511)
+[src/login.scailo_pb.ts:514](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L514)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-[src/login.scailo_pb.ts:499](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L499)
+[src/login.scailo_pb.ts:502](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L502)
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-[src/login.scailo_pb.ts:503](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L503)
+[src/login.scailo_pb.ts:506](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L506)
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-[src/login.scailo_pb.ts:507](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/login.scailo_pb.ts#L507)
+[src/login.scailo_pb.ts:510](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/login.scailo_pb.ts#L510)

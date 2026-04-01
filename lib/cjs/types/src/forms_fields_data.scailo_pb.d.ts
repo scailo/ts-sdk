@@ -54,7 +54,10 @@ export declare enum FORM_FIELD_FILTER_OPERATOR {
  */
 export declare class FormFieldDatum extends Message<FormFieldDatum> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -112,25 +115,35 @@ export declare class FormFieldDatum extends Message<FormFieldDatum> {
 }
 /**
  *
- * Describes the data required for creating a dynamic form field entry
+ * Represents a single data entry for a dynamic form field.
+ * * Use this to submit values for custom fields defined at the organization level,
+ * such as "Emergency Contact Name" or "T-Shirt Size".
  *
  * @generated from message Scailo.FormFieldDatumCreateRequest
  */
 export declare class FormFieldDatumCreateRequest extends Message<FormFieldDatumCreateRequest> {
     /**
-     * The ID of the corresponding form field
+     * [Required] The unique identifier of the form field definition.
+     * This ID must correspond to an existing field in the Form Configuration.
      *
      * @generated from field: uint64 form_field_id = 1;
      */
     formFieldId: bigint;
     /**
-     * The value to be stored (for textarea and input)
+     * [Conditional] The text content for single-value inputs.
+     * Use this for `text`, `textarea`, `number`, or `date` field types.
+     *
+     * *Example:* "John Doe" or "123.45"
      *
      * @generated from field: string value = 2;
      */
     value: string;
     /**
-     * The list of selected values (for radio, checkbox, and select)
+     * [Conditional] A list of identifiers for multi-selection fields.
+     * Use this for `radio`, `checkbox`, or `dropdown` field types.
+     *
+     * *Note:* For radio buttons, this list should contain exactly one element.
+     * *Example:* ["option_1", "option_5"]
      *
      * @generated from field: repeated string selected_values = 3;
      */

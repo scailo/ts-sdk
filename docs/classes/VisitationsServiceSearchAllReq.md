@@ -74,7 +74,7 @@ Message\&lt;VisitationsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1388](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1388)
+[src/visitations.scailo_pb.ts:1835](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1835)
 
 ## Properties
 
@@ -82,7 +82,25 @@ Message\&lt;VisitationsServiceSearchAllReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -90,7 +108,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1337)
+[src/visitations.scailo_pb.ts:1744](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1744)
 
 ___
 
@@ -98,7 +116,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -106,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1365](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1365)
+[src/visitations.scailo_pb.ts:1798](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1798)
 
 ___
 
@@ -114,7 +150,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -122,7 +168,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1330](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1330)
+[src/visitations.scailo_pb.ts:1728](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1728)
 
 ___
 
@@ -130,7 +176,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -138,7 +202,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1344](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1344)
+[src/visitations.scailo_pb.ts:1760](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1760)
 
 ___
 
@@ -146,7 +210,23 @@ ___
 
 • **searchKey**: `string` = `""`
 
-Describes the key with which the search operation needs to be performed
+**`Mandatory`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -154,7 +234,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1379](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1379)
+[src/visitations.scailo_pb.ts:1826](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1826)
 
 ___
 
@@ -162,7 +242,11 @@ ___
 
 • **sortKey**: [`VISITATION_SORT_KEY`](../enums/VISITATION_SORT_KEY.md) = `VISITATION_SORT_KEY.VISITATION_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -170,7 +254,7 @@ from field: Scailo.VISITATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1358](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1358)
+[src/visitations.scailo_pb.ts:1782](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1782)
 
 ___
 
@@ -178,7 +262,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -186,7 +280,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1351](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1351)
+[src/visitations.scailo_pb.ts:1772](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1772)
 
 ___
 
@@ -194,7 +288,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-Limit the search space to the given status
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -202,7 +306,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1372](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1372)
+[src/visitations.scailo_pb.ts:1810](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1810)
 
 ___
 
@@ -218,7 +322,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1386](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1386)
+[src/visitations.scailo_pb.ts:1833](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1833)
 
 ___
 
@@ -228,7 +332,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1395](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1395)
+[src/visitations.scailo_pb.ts:1842](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1842)
 
 ___
 
@@ -238,7 +342,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1393](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1393)
+[src/visitations.scailo_pb.ts:1840](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1840)
 
 ___
 
@@ -248,7 +352,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1394](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1394)
+[src/visitations.scailo_pb.ts:1841](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1841)
 
 ## Methods
 
@@ -536,7 +640,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1419](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1419)
+[src/visitations.scailo_pb.ts:1866](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1866)
 
 ___
 
@@ -557,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1407](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1407)
+[src/visitations.scailo_pb.ts:1854](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1854)
 
 ___
 
@@ -578,7 +682,7 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1411](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1411)
+[src/visitations.scailo_pb.ts:1858](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1858)
 
 ___
 
@@ -599,4 +703,4 @@ ___
 
 #### Defined in
 
-[src/visitations.scailo_pb.ts:1415](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/visitations.scailo_pb.ts#L1415)
+[src/visitations.scailo_pb.ts:1862](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/visitations.scailo_pb.ts#L1862)

@@ -2,7 +2,7 @@
 
 # Class: AbsencesServiceFilterReq
 
-Describes the base request payload of a filter search
+Advanced filter request for searching absences using multiple logical criteria.
 
 **`Generated`**
 
@@ -94,7 +94,7 @@ Message\&lt;AbsencesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L950)
+[src/absences.scailo_pb.ts:1474](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1474)
 
 ## Properties
 
@@ -102,7 +102,25 @@ Message\&lt;AbsencesServiceFilterReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -110,7 +128,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:843](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L843)
+[src/absences.scailo_pb.ts:1238](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1238)
 
 ___
 
@@ -118,7 +136,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -126,7 +162,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:836](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L836)
+[src/absences.scailo_pb.ts:1222](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1222)
 
 ___
 
@@ -134,7 +170,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -142,7 +196,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:829](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L829)
+[src/absences.scailo_pb.ts:1206](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1206)
 
 ___
 
@@ -150,7 +204,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -158,7 +230,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:850](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L850)
+[src/absences.scailo_pb.ts:1254](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1254)
 
 ___
 
@@ -166,7 +238,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -174,7 +264,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:864](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L864)
+[src/absences.scailo_pb.ts:1286](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1286)
 
 ___
 
@@ -182,7 +272,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -190,7 +298,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:857](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L857)
+[src/absences.scailo_pb.ts:1270](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1270)
 
 ___
 
@@ -198,7 +306,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -206,7 +332,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L759)
+[src/absences.scailo_pb.ts:1060](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1060)
 
 ___
 
@@ -214,7 +340,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -222,7 +366,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L794)
+[src/absences.scailo_pb.ts:1130](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1130)
 
 ___
 
@@ -230,7 +374,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -238,7 +400,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:787](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L787)
+[src/absences.scailo_pb.ts:1114](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1114)
 
 ___
 
@@ -246,7 +408,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -254,7 +434,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:815](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L815)
+[src/absences.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1178)
 
 ___
 
@@ -262,7 +442,23 @@ ___
 
 • **finalRefNumber**: `string` = `""`
 
-The unique reference number that has been automatically generated
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the system-generated ref number.
+
+**`Example`**
+
+```ts
+"ABS-2023-X9Z2"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -270,7 +466,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:878](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L878)
+[src/absences.scailo_pb.ts:1318](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1318)
 
 ___
 
@@ -278,7 +474,11 @@ ___
 
 • **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
 
-The list of form data filters
+**`Optional`**
+
+**`Description`**
+
+Filter based on dynamic form field values.
 
 **`Generated`**
 
@@ -286,7 +486,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:948](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L948)
+[src/absences.scailo_pb.ts:1472](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1472)
 
 ___
 
@@ -294,7 +494,25 @@ ___
 
 • **fromTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The end range of "from timestamp"
+**`Optional`**
+
+**`Description`**
+
+Filter absences starting ON or BEFORE this timestamp.
+
+**`Example`**
+
+```ts
+1698307200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -302,7 +520,7 @@ from field: uint64 from_timestamp_end = 25;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:906](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L906)
+[src/absences.scailo_pb.ts:1382](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1382)
 
 ___
 
@@ -310,7 +528,25 @@ ___
 
 • **fromTimestampStart**: `bigint` = `protoInt64.zero`
 
-The start range of "from timestamp"
+**`Optional`**
+
+**`Description`**
+
+Filter absences starting ON or AFTER this timestamp.
+
+**`Example`**
+
+```ts
+1698220800
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -318,7 +554,7 @@ from field: uint64 from_timestamp_start = 24;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:899](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L899)
+[src/absences.scailo_pb.ts:1366](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1366)
 
 ___
 
@@ -326,7 +562,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -334,7 +580,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:752](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L752)
+[src/absences.scailo_pb.ts:1044](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1044)
 
 ___
 
@@ -342,7 +588,25 @@ ___
 
 • **leaveRequestId**: `bigint` = `protoInt64.zero`
 
-The ID of the optionally associated leave request
+**`Optional`**
+
+**`Description`**
+
+Filter by linked leave request ID.
+
+**`Example`**
+
+```ts
+552
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -350,7 +614,7 @@ from field: uint64 leave_request_id = 23;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:892](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L892)
+[src/absences.scailo_pb.ts:1350](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1350)
 
 ___
 
@@ -358,7 +622,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -366,7 +648,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:808](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L808)
+[src/absences.scailo_pb.ts:1162](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1162)
 
 ___
 
@@ -374,7 +656,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -382,7 +682,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:801](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L801)
+[src/absences.scailo_pb.ts:1146](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1146)
 
 ___
 
@@ -390,7 +690,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -398,7 +716,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L766)
+[src/absences.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1076)
 
 ___
 
@@ -406,7 +724,25 @@ ___
 
 • **quantityMax**: `bigint` = `protoInt64.zero`
 
-The max quantity of absence (in cents)
+**`Optional`**
+
+**`Description`**
+
+Maximum quantity filter (expressed in cents).
+
+**`Example`**
+
+```ts
+500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -414,7 +750,7 @@ from field: uint64 quantity_max = 30;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:941](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L941)
+[src/absences.scailo_pb.ts:1462](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1462)
 
 ___
 
@@ -422,7 +758,25 @@ ___
 
 • **quantityMin**: `bigint` = `protoInt64.zero`
 
-The min quantity of absence (in cents)
+**`Optional`**
+
+**`Description`**
+
+Minimum quantity filter (expressed in cents).
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -430,7 +784,7 @@ from field: uint64 quantity_min = 29;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:934](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L934)
+[src/absences.scailo_pb.ts:1446](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1446)
 
 ___
 
@@ -438,7 +792,23 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference_id of the absence
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the user-defined reference ID.
+
+**`Example`**
+
+```ts
+"ABS-2023-001"
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -446,7 +816,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:871](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L871)
+[src/absences.scailo_pb.ts:1302](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1302)
 
 ___
 
@@ -454,7 +824,11 @@ ___
 
 • **sortKey**: [`ABSENCE_SORT_KEY`](../enums/ABSENCE_SORT_KEY.md) = `ABSENCE_SORT_KEY.ABSENCE_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -462,7 +836,7 @@ from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:780](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L780)
+[src/absences.scailo_pb.ts:1098](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1098)
 
 ___
 
@@ -470,7 +844,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -478,7 +862,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L773)
+[src/absences.scailo_pb.ts:1088](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1088)
 
 ___
 
@@ -486,7 +870,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this absence
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -494,7 +888,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:822](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L822)
+[src/absences.scailo_pb.ts:1190](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1190)
 
 ___
 
@@ -502,7 +896,25 @@ ___
 
 • **toTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The end range of "to timestamp"
+**`Optional`**
+
+**`Description`**
+
+Filter absences ending ON or BEFORE this timestamp.
+
+**`Example`**
+
+```ts
+1698307200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -510,7 +922,7 @@ from field: uint64 to_timestamp_end = 27;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:920](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L920)
+[src/absences.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1414)
 
 ___
 
@@ -518,7 +930,25 @@ ___
 
 • **toTimestampStart**: `bigint` = `protoInt64.zero`
 
-The start range of "to timestamp"
+**`Optional`**
+
+**`Description`**
+
+Filter absences ending ON or AFTER this timestamp.
+
+**`Example`**
+
+```ts
+1698220800
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -526,7 +956,7 @@ from field: uint64 to_timestamp_start = 26;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:913](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L913)
+[src/absences.scailo_pb.ts:1398](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1398)
 
 ___
 
@@ -534,7 +964,25 @@ ___
 
 • **uomId**: `bigint` = `protoInt64.zero`
 
-Stores the unit of material ID
+**`Optional`**
+
+**`Description`**
+
+Filter by Unit of Measure (e.g., Days, Hours).
+
+**`Example`**
+
+```ts
+1
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -542,7 +990,7 @@ from field: uint64 uom_id = 28;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:927](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L927)
+[src/absences.scailo_pb.ts:1430](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1430)
 
 ___
 
@@ -550,7 +998,25 @@ ___
 
 • **userId**: `bigint` = `protoInt64.zero`
 
-The ID of the user who has been marked as absent
+**`Optional`**
+
+**`Description`**
+
+Filter by specific employee ID.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -558,7 +1024,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:885](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L885)
+[src/absences.scailo_pb.ts:1334](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1334)
 
 ___
 
@@ -568,7 +1034,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:957](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L957)
+[src/absences.scailo_pb.ts:1481](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1481)
 
 ___
 
@@ -578,7 +1044,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:955](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L955)
+[src/absences.scailo_pb.ts:1479](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1479)
 
 ___
 
@@ -588,7 +1054,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:956](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L956)
+[src/absences.scailo_pb.ts:1480](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1480)
 
 ## Methods
 
@@ -876,7 +1342,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1001](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L1001)
+[src/absences.scailo_pb.ts:1525](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1525)
 
 ___
 
@@ -897,7 +1363,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:989](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L989)
+[src/absences.scailo_pb.ts:1513](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1513)
 
 ___
 
@@ -918,7 +1384,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:993](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L993)
+[src/absences.scailo_pb.ts:1517](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1517)
 
 ___
 
@@ -939,4 +1405,4 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:997](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L997)
+[src/absences.scailo_pb.ts:1521](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L1521)

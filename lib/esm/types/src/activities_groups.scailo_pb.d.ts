@@ -65,7 +65,16 @@ export declare enum ACTIVITY_GROUP_SORT_KEY {
  */
 export declare class ActivitiesGroupsServiceCreateRequest extends Message<ActivitiesGroupsServiceCreateRequest> {
     /**
-     * ActivitiesGroups a globally unique entity UUID. This will be set at the organization level
+     *
+     * @optional
+     *
+     * @description The globally unique identifier for the Organization or Business Entity.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -175,7 +184,10 @@ export declare class ActivitiesGroupsServiceUpdateRequest extends Message<Activi
  */
 export declare class ActivityGroup extends Message<ActivityGroup> {
     /**
-     * ActivitiesGroups a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -307,31 +319,62 @@ export declare class ActivityGroupStatistics extends Message<ActivityGroupStatis
  */
 export declare class ActivitiesGroupsServicePaginationReq extends Message<ActivitiesGroupsServicePaginationReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response
+     *
+     * @mandatory
+     *
+     * @description Number of records to return per page.
+     *
+     * @example 50
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Must be a strictly positive integer (1 or greater).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The specific field key to sort the results by.
      *
      * @generated from field: Scailo.ACTIVITY_GROUP_SORT_KEY sort_key = 5;
      */
@@ -359,25 +402,35 @@ export declare class ActivitiesGroupsServicePaginationReq extends Message<Activi
  */
 export declare class ActivitiesGroupsServicePaginationResponse extends Message<ActivitiesGroupsServicePaginationResponse> {
     /**
-     * The number of records in this payload
+     *
+     * @description Number of records returned in the current response slice.
+     *
+     * @example 50
      *
      * @generated from field: uint64 count = 1;
      */
     count: bigint;
     /**
-     * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+     *
+     * @description The offset provided in the request.
+     *
+     * @example 0
      *
      * @generated from field: uint64 offset = 2;
      */
     offset: bigint;
     /**
-     * The total number of records that are available
+     *
+     * @description The total number of records matching the criteria.
+     *
+     * @example 1250
      *
      * @generated from field: uint64 total = 3;
      */
     total: bigint;
     /**
-     * The list of records
+     *
+     * @description The array of records for the current page.
      *
      * @generated from field: repeated Scailo.ActivityGroup payload = 4;
      */
@@ -399,91 +452,208 @@ export declare class ActivitiesGroupsServicePaginationResponse extends Message<A
  */
 export declare class ActivitiesGroupsServiceFilterReq extends Message<ActivitiesGroupsServiceFilterReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The field used for sorting.
      *
      * @generated from field: Scailo.ACTIVITY_GROUP_SORT_KEY sort_key = 5;
      */
     sortKey: ACTIVITY_GROUP_SORT_KEY;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
     modificationTimestampEnd: bigint;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 8;
      */
     entityUuid: string;
     /**
-     * The status of this activity group
+     *
+     * @optional
+     *
+     * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+     *
+     * @example STANDING
      *
      * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
-     * The start range of approved timestamp
+     *
+     * @optional
+     *
+     * @description Filter records approved ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_on_start = 11;
      */
     approvedOnStart: bigint;
     /**
-     * The end range of approved timestamp
+     *
+     * @optional
+     *
+     * @description Filter records approved ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_on_end = 12;
      */
     approvedOnEnd: bigint;
     /**
-     * The ID of the approver
+     *
+     * @optional
+     *
+     * @description Filter by the specific user ID who approved the records.
+     *
+     * @example 501
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_by_user_id = 13;
      */
     approvedByUserId: bigint;
     /**
-     * The role ID of the approver
+     *
+     * @optional
+     *
+     * @description Filter by the role ID of the approver.
+     *
+     * @example 5
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approver_role_id = 14;
      */
@@ -529,67 +699,158 @@ export declare class ActivitiesGroupsServiceFilterReq extends Message<Activities
  */
 export declare class ActivitiesGroupsServiceCountReq extends Message<ActivitiesGroupsServiceCountReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
     modificationTimestampEnd: bigint;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 8;
      */
     entityUuid: string;
     /**
-     * The status of this activity group
+     *
+     * @optional
+     *
+     * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+     *
+     * @example STANDING
      *
      * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
-     * The start range of approved timestamp
+     *
+     * @optional
+     *
+     * @description Filter records approved ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_on_start = 11;
      */
     approvedOnStart: bigint;
     /**
-     * The end range of approved timestamp
+     *
+     * @optional
+     *
+     * @description Filter records approved ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_on_end = 12;
      */
     approvedOnEnd: bigint;
     /**
-     * The ID of the approver
+     *
+     * @optional
+     *
+     * @description Filter by the specific user ID who approved the records.
+     *
+     * @example 501
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approved_by_user_id = 13;
      */
     approvedByUserId: bigint;
     /**
-     * The role ID of the approver
+     *
+     * @optional
+     *
+     * @description Filter by the role ID of the approver.
+     *
+     * @example 5
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 approver_role_id = 14;
      */
@@ -635,49 +896,103 @@ export declare class ActivitiesGroupsServiceCountReq extends Message<ActivitiesG
  */
 export declare class ActivitiesGroupsServiceSearchAllReq extends Message<ActivitiesGroupsServiceSearchAllReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The field used for sorting.
      *
      * @generated from field: Scailo.ACTIVITY_GROUP_SORT_KEY sort_key = 5;
      */
     sortKey: ACTIVITY_GROUP_SORT_KEY;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 6;
      */
     entityUuid: string;
     /**
-     * Limit the search space to the given status
+     *
+     * @optional
+     *
+     * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+     *
+     * @example STANDING
      *
      * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
     status: STANDARD_LIFECYCLE_STATUS;
     /**
-     * Describes the key with which the search operation needs to be performed
+     *
+     * @mandatory
+     *
+     * @description The search string to match against reference IDs.
+     *
+     * @example "Medical 2023"
+     *
+     * @regex .*
+     *
+     * @format: May contain any UTF-8 characters.
      *
      * @generated from field: string search_key = 11;
      */

@@ -81,7 +81,7 @@ Message\&lt;EquationsReplaceablesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1576](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1576)
+[src/equations_replaceables.scailo_pb.ts:1962](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1962)
 
 ## Properties
 
@@ -89,7 +89,25 @@ Message\&lt;EquationsReplaceablesServiceCountReq\&gt;.constructor
 
 • **approvedByUserId**: `bigint` = `protoInt64.zero`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -97,7 +115,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1532](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1532)
+[src/equations_replaceables.scailo_pb.ts:1891](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1891)
 
 ___
 
@@ -105,7 +123,25 @@ ___
 
 • **approvedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -113,7 +149,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1525](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1525)
+[src/equations_replaceables.scailo_pb.ts:1875](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1875)
 
 ___
 
@@ -121,7 +157,25 @@ ___
 
 • **approvedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -129,7 +183,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1518](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1518)
+[src/equations_replaceables.scailo_pb.ts:1859](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1859)
 
 ___
 
@@ -137,7 +191,25 @@ ___
 
 • **approverRoleId**: `bigint` = `protoInt64.zero`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -145,7 +217,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1539](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1539)
+[src/equations_replaceables.scailo_pb.ts:1907](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1907)
 
 ___
 
@@ -153,7 +225,25 @@ ___
 
 • **completedOnEnd**: `bigint` = `protoInt64.zero`
 
-The end range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -161,7 +251,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1553](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1553)
+[src/equations_replaceables.scailo_pb.ts:1939](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1939)
 
 ___
 
@@ -169,7 +259,25 @@ ___
 
 • **completedOnStart**: `bigint` = `protoInt64.zero`
 
-The start range of completed timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records completed ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -177,7 +285,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1546](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1546)
+[src/equations_replaceables.scailo_pb.ts:1923](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1923)
 
 ___
 
@@ -193,7 +301,7 @@ from field: uint64 constituent_family_id = 30;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1574](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1574)
+[src/equations_replaceables.scailo_pb.ts:1960](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1960)
 
 ___
 
@@ -201,7 +309,25 @@ ___
 
 • **creationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -209,7 +335,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1483](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1483)
+[src/equations_replaceables.scailo_pb.ts:1783](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1783)
 
 ___
 
@@ -217,7 +343,25 @@ ___
 
 • **creationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by creation
+**`Optional`**
+
+**`Description`**
+
+Filter records created ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -225,7 +369,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1476](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1476)
+[src/equations_replaceables.scailo_pb.ts:1767](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1767)
 
 ___
 
@@ -233,7 +377,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -241,7 +403,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1504](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1504)
+[src/equations_replaceables.scailo_pb.ts:1831](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1831)
 
 ___
 
@@ -257,7 +419,7 @@ from field: uint64 family_id = 21;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1567](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1567)
+[src/equations_replaceables.scailo_pb.ts:1953](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1953)
 
 ___
 
@@ -265,7 +427,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -273,7 +445,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1469](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1469)
+[src/equations_replaceables.scailo_pb.ts:1751](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1751)
 
 ___
 
@@ -281,7 +453,25 @@ ___
 
 • **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
 
-The maximum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -289,7 +479,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1497](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1497)
+[src/equations_replaceables.scailo_pb.ts:1815](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1815)
 
 ___
 
@@ -297,7 +487,25 @@ ___
 
 • **modificationTimestampStart**: `bigint` = `protoInt64.zero`
 
-The minimum timestamp that needs to be considered to filter by modification
+**`Optional`**
+
+**`Description`**
+
+Filter records modified ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -305,7 +513,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1490](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1490)
+[src/equations_replaceables.scailo_pb.ts:1799](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1799)
 
 ___
 
@@ -321,7 +529,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1560](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1560)
+[src/equations_replaceables.scailo_pb.ts:1946](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1946)
 
 ___
 
@@ -329,7 +537,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this equation replaceable
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -337,7 +555,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1511](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1511)
+[src/equations_replaceables.scailo_pb.ts:1843](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1843)
 
 ___
 
@@ -347,7 +565,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1583](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1583)
+[src/equations_replaceables.scailo_pb.ts:1969](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1969)
 
 ___
 
@@ -357,7 +575,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1581](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1581)
+[src/equations_replaceables.scailo_pb.ts:1967](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1967)
 
 ___
 
@@ -367,7 +585,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1582](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1582)
+[src/equations_replaceables.scailo_pb.ts:1968](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1968)
 
 ## Methods
 
@@ -655,7 +873,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1614](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1614)
+[src/equations_replaceables.scailo_pb.ts:2000](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L2000)
 
 ___
 
@@ -676,7 +894,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1602](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1602)
+[src/equations_replaceables.scailo_pb.ts:1988](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1988)
 
 ___
 
@@ -697,7 +915,7 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1606](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1606)
+[src/equations_replaceables.scailo_pb.ts:1992](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1992)
 
 ___
 
@@ -718,4 +936,4 @@ ___
 
 #### Defined in
 
-[src/equations_replaceables.scailo_pb.ts:1610](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_replaceables.scailo_pb.ts#L1610)
+[src/equations_replaceables.scailo_pb.ts:1996](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_replaceables.scailo_pb.ts#L1996)

@@ -75,7 +75,7 @@ Message\&lt;EquationFamilyItem\&gt;.constructor
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:738](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L738)
+[src/equations_families.scailo_pb.ts:789](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L789)
 
 ## Properties
 
@@ -83,7 +83,9 @@ Message\&lt;EquationFamilyItem\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Stores the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -91,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:687](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L687)
+[src/equations_families.scailo_pb.ts:737](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L737)
 
 ___
 
@@ -99,7 +101,15 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-Stores a globally unique entity UUID. This will be set at the organization level
+**`Description`**
+
+The organization's globally unique identifier.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
 
 **`Generated`**
 
@@ -107,7 +117,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:673](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L673)
+[src/equations_families.scailo_pb.ts:721](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L721)
 
 ___
 
@@ -123,7 +133,7 @@ from field: uint64 equation_id = 10;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:708](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L708)
+[src/equations_families.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L759)
 
 ___
 
@@ -139,7 +149,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:715](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L715)
+[src/equations_families.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L766)
 
 ___
 
@@ -147,7 +157,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Stores the metadata of this equation family
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -155,7 +167,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:680](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L680)
+[src/equations_families.scailo_pb.ts:729](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L729)
 
 ___
 
@@ -163,7 +175,9 @@ ___
 
 • **needApproval**: `boolean` = `false`
 
-Denotes if this record requires approval (or has been approved)
+**`Description`**
+
+The approval state of the record
 
 **`Generated`**
 
@@ -171,7 +185,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:694](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L694)
+[src/equations_families.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L745)
 
 ___
 
@@ -187,7 +201,7 @@ from field: uint64 quantity = 12;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:722](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L722)
+[src/equations_families.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L773)
 
 ___
 
@@ -203,7 +217,7 @@ from field: string specifications = 14;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:736](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L736)
+[src/equations_families.scailo_pb.ts:787](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L787)
 
 ___
 
@@ -219,7 +233,7 @@ from field: uint64 unit_price = 13;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:729](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L729)
+[src/equations_families.scailo_pb.ts:780](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L780)
 
 ___
 
@@ -235,7 +249,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L701)
+[src/equations_families.scailo_pb.ts:752](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L752)
 
 ___
 
@@ -245,7 +259,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L745)
+[src/equations_families.scailo_pb.ts:796](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L796)
 
 ___
 
@@ -255,7 +269,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:743](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L743)
+[src/equations_families.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L794)
 
 ___
 
@@ -265,7 +279,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:744](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L744)
+[src/equations_families.scailo_pb.ts:795](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L795)
 
 ## Methods
 
@@ -553,7 +567,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:770](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L770)
+[src/equations_families.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L821)
 
 ___
 
@@ -574,7 +588,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:758](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L758)
+[src/equations_families.scailo_pb.ts:809](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L809)
 
 ___
 
@@ -595,7 +609,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:762](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L762)
+[src/equations_families.scailo_pb.ts:813](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L813)
 
 ___
 
@@ -616,4 +630,4 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equations_families.scailo_pb.ts#L766)
+[src/equations_families.scailo_pb.ts:817](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equations_families.scailo_pb.ts#L817)

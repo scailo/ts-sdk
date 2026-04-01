@@ -28,7 +28,7 @@ export const TransactionalEmailsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by ID
+     * Retrieves a single record by its internal numeric ID. This operation is optimized for high-performance internal system logic and backend-to-backend communication
      *
      * @generated from rpc Scailo.TransactionalEmailsService.ViewByID
      */
@@ -39,7 +39,7 @@ export const TransactionalEmailsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by UUID
+     * Retrieves a single record by its globally unique UUID. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
      *
      * @generated from rpc Scailo.TransactionalEmailsService.ViewByUUID
      */
@@ -50,7 +50,7 @@ export const TransactionalEmailsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all records with the given IDs
+     * Retrieves a list of records matching the provided array of internal IDs.
      *
      * @generated from rpc Scailo.TransactionalEmailsService.ViewFromIDs
      */
@@ -94,7 +94,7 @@ export const TransactionalEmailsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all that match the given filter criteria
+     * Performs a high-granularity search based on multiple specific field filters.
      *
      * @generated from rpc Scailo.TransactionalEmailsService.Filter
      */
@@ -105,7 +105,7 @@ export const TransactionalEmailsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Count all that match the given criteria
+     * Returns the total count of records matching the given complex filter criteria.
      *
      * @generated from rpc Scailo.TransactionalEmailsService.Count
      */

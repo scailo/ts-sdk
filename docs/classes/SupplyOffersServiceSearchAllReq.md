@@ -78,7 +78,7 @@ Message\&lt;SupplyOffersServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2345](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2345)
+[src/supply_offers.scailo_pb.ts:2795](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2795)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: uint64 buyer_location_id = 23;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2322](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2322)
+[src/supply_offers.scailo_pb.ts:2772](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2772)
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 consignee_location_id = 22;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2315](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2315)
+[src/supply_offers.scailo_pb.ts:2765](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2765)
 
 ___
 
@@ -118,7 +118,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -126,7 +144,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2266](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2266)
+[src/supply_offers.scailo_pb.ts:2676](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2676)
 
 ___
 
@@ -142,7 +160,7 @@ from field: uint64 currency_id = 25;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2336](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2336)
+[src/supply_offers.scailo_pb.ts:2786](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2786)
 
 ___
 
@@ -150,7 +168,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -158,7 +194,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2294](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2294)
+[src/supply_offers.scailo_pb.ts:2730](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2730)
 
 ___
 
@@ -166,7 +202,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -174,7 +220,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2259](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2259)
+[src/supply_offers.scailo_pb.ts:2660](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2660)
 
 ___
 
@@ -182,7 +228,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -190,7 +254,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2273](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2273)
+[src/supply_offers.scailo_pb.ts:2692](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2692)
 
 ___
 
@@ -206,7 +270,7 @@ from field: uint64 project_id = 26;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2343](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2343)
+[src/supply_offers.scailo_pb.ts:2793](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2793)
 
 ___
 
@@ -214,7 +278,23 @@ ___
 
 • **searchKey**: `string` = `""`
 
-Describes the key with which the search operation needs to be performed
+**`Mandatory`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -222,7 +302,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2308](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2308)
+[src/supply_offers.scailo_pb.ts:2758](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2758)
 
 ___
 
@@ -230,7 +310,11 @@ ___
 
 • **sortKey**: [`SUPPLY_OFFER_SORT_KEY`](../enums/SUPPLY_OFFER_SORT_KEY.md) = `SUPPLY_OFFER_SORT_KEY.SUPPLY_OFFER_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -238,7 +322,7 @@ from field: Scailo.SUPPLY_OFFER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2287](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2287)
+[src/supply_offers.scailo_pb.ts:2714](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2714)
 
 ___
 
@@ -246,7 +330,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -254,7 +348,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2280](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2280)
+[src/supply_offers.scailo_pb.ts:2704](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2704)
 
 ___
 
@@ -262,7 +356,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-Limit the search space to the given status
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -270,7 +374,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2301](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2301)
+[src/supply_offers.scailo_pb.ts:2742](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2742)
 
 ___
 
@@ -286,7 +390,7 @@ from field: uint64 vendor_id = 24;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2329](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2329)
+[src/supply_offers.scailo_pb.ts:2779](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2779)
 
 ___
 
@@ -296,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2352](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2352)
+[src/supply_offers.scailo_pb.ts:2802](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2802)
 
 ___
 
@@ -306,7 +410,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2350](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2350)
+[src/supply_offers.scailo_pb.ts:2800](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2800)
 
 ___
 
@@ -316,7 +420,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2351](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2351)
+[src/supply_offers.scailo_pb.ts:2801](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2801)
 
 ## Methods
 
@@ -604,7 +708,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2380](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2380)
+[src/supply_offers.scailo_pb.ts:2830](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2830)
 
 ___
 
@@ -625,7 +729,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2368](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2368)
+[src/supply_offers.scailo_pb.ts:2818](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2818)
 
 ___
 
@@ -646,7 +750,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2372](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2372)
+[src/supply_offers.scailo_pb.ts:2822](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2822)
 
 ___
 
@@ -667,4 +771,4 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:2376](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/supply_offers.scailo_pb.ts#L2376)
+[src/supply_offers.scailo_pb.ts:2826](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/supply_offers.scailo_pb.ts#L2826)

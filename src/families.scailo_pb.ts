@@ -299,7 +299,16 @@ export class FamilyTypesList extends Message<FamilyTypesList> {
  */
 export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateRequest> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @optional
+   *
+   * @description The globally unique identifier for the Organization or Business Entity.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 1;
    */
@@ -313,7 +322,16 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
   userComment = "";
 
   /**
-   * The associated vault folder ID
+   *
+   * @optional
+   *
+   * @description The ID of the associated vault folder for storing documents. Defaults to 0 if no specific folder is assigned.
+   *
+   * @example 15234
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 vault_folder_id = 9;
    */
@@ -506,7 +524,16 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
   notifyUsers = false;
 
   /**
-   * The associated vault folder ID
+   *
+   * @optional
+   *
+   * @description Updated vault folder ID for documentation storage.
+   *
+   * @example 15235
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 vault_folder_id = 9;
    */
@@ -679,42 +706,52 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
  */
 export class Family extends Message<Family> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
   entityUuid = "";
 
   /**
-   * Stores the metadata of this family
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Stores the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * The status of this family
+   *
+   * @description The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
    */
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
-   * Stores the logs of every operation performed on this purchase order
+   *
+   * @description Comprehensive audit trail of every operation performed on this record.
    *
    * @generated from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
    */
   logs: LogbookLogConciseSLC[] = [];
 
   /**
-   * The associated vault folder ID
+   *
+   * @description Link to the document storage folder.
+   *
+   * @example 15234
    *
    * @generated from field: uint64 vault_folder_id = 9;
    */
@@ -939,35 +976,66 @@ export class FamiliesList extends Message<FamiliesList> {
  */
 export class FamiliesServicePaginationReq extends Message<FamiliesServicePaginationReq> {
   /**
-   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
    *
    * @generated from field: Scailo.BOOL_FILTER is_active = 1;
    */
   isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
   /**
-   * The number of records that need to be sent in the response
+   *
+   * @mandatory
+   *
+   * @description Number of records to return per page.
+   *
+   * @example 50
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Must be a strictly positive integer (1 or greater).
    *
    * @generated from field: int64 count = 2;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that need to be offset by before fetching the records
+   *
+   * @optional
+   *
+   * @description Number of records to skip (offset) for pagination.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 offset = 3;
    */
   offset = protoInt64.zero;
 
   /**
-   * The sort order that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description Sort direction.
+   *
+   * @example DESCENDING
    *
    * @generated from field: Scailo.SORT_ORDER sort_order = 4;
    */
   sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
 
   /**
-   * The sort key that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description The specific field key to sort the results by.
    *
    * @generated from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
    */
@@ -1021,28 +1089,38 @@ export class FamiliesServicePaginationReq extends Message<FamiliesServicePaginat
  */
 export class FamiliesServicePaginationResponse extends Message<FamiliesServicePaginationResponse> {
   /**
-   * The number of records in this payload
+   *
+   * @description Number of records returned in the current response slice.
+   *
+   * @example 50
    *
    * @generated from field: uint64 count = 1;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that has been offset before fetching the records. This is the same value that has been sent as part of the pagination request
+   *
+   * @description The offset provided in the request.
+   *
+   * @example 0
    *
    * @generated from field: uint64 offset = 2;
    */
   offset = protoInt64.zero;
 
   /**
-   * The total number of records that are available
+   *
+   * @description The total number of records matching the criteria.
+   *
+   * @example 1250
    *
    * @generated from field: uint64 total = 3;
    */
   total = protoInt64.zero;
 
   /**
-   * The list of records
+   *
+   * @description The array of records for the current page.
    *
    * @generated from field: repeated Scailo.Family payload = 4;
    */
@@ -1087,77 +1165,158 @@ export class FamiliesServicePaginationResponse extends Message<FamiliesServicePa
  */
 export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> {
   /**
-   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
    *
    * @generated from field: Scailo.BOOL_FILTER is_active = 1;
    */
   isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
   /**
-   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @mandatory
+   *
+   * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+   *
+   * @example 100
+   *
+   * @regex ^(?:-1|0|[1-9][0-9]*)$
+   *
+   * @format Must be -1 or any non-negative integer (>= -1).
    *
    * @generated from field: int64 count = 2;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that need to be offset by before fetching the records
+   *
+   * @optional
+   *
+   * @description Number of records to skip (offset) for pagination.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 offset = 3;
    */
   offset = protoInt64.zero;
 
   /**
-   * The sort order that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description Sort direction.
+   *
+   * @example DESCENDING
    *
    * @generated from field: Scailo.SORT_ORDER sort_order = 4;
    */
   sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
 
   /**
-   * The sort key that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description The field used for sorting.
    *
    * @generated from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
    */
   sortKey = FAMILY_SORT_KEY.FAMILY_SORT_KEY_ID_UNSPECIFIED;
 
   /**
-   * The minimum timestamp that needs to be considered to filter by creation
+   *
+   * @optional
+   *
+   * @description Filter records created ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 creation_timestamp_start = 101;
    */
   creationTimestampStart = protoInt64.zero;
 
   /**
-   * The maximum timestamp that needs to be considered to filter by creation
+   *
+   * @optional
+   *
+   * @description Filter records created ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 creation_timestamp_end = 102;
    */
   creationTimestampEnd = protoInt64.zero;
 
   /**
-   * The minimum timestamp that needs to be considered to filter by modification
+   *
+   * @optional
+   *
+   * @description Filter records modified ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 modification_timestamp_start = 103;
    */
   modificationTimestampStart = protoInt64.zero;
 
   /**
-   * The maximum timestamp that needs to be considered to filter by modification
+   *
+   * @optional
+   *
+   * @description Filter records modified ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 modification_timestamp_end = 104;
    */
   modificationTimestampEnd = protoInt64.zero;
 
   /**
-   * The entity UUID that is to be used to filter records
+   *
+   * @optional
+   *
+   * @description Filter by the organization UUID.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 8;
    */
   entityUuid = "";
 
   /**
-   * The status of this family
+   *
+   * @optional
+   *
+   * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+   *
+   * @example STANDING
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
@@ -1171,28 +1330,64 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
   multiStatus: STANDARD_LIFECYCLE_STATUS[] = [];
 
   /**
-   * The start range of approved timestamp
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_on_start = 11;
    */
   approvedOnStart = protoInt64.zero;
 
   /**
-   * The end range of approved timestamp
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_on_end = 12;
    */
   approvedOnEnd = protoInt64.zero;
 
   /**
-   * The ID of the approver
+   *
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_by_user_id = 13;
    */
   approvedByUserId = protoInt64.zero;
 
   /**
-   * The role ID of the approver
+   *
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approver_role_id = 14;
    */
@@ -1377,49 +1572,104 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
  */
 export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
   /**
-   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
    *
    * @generated from field: Scailo.BOOL_FILTER is_active = 1;
    */
   isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
   /**
-   * The minimum timestamp that needs to be considered to filter by creation
+   *
+   * @optional
+   *
+   * @description Filter records created ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 creation_timestamp_start = 101;
    */
   creationTimestampStart = protoInt64.zero;
 
   /**
-   * The maximum timestamp that needs to be considered to filter by creation
+   *
+   * @optional
+   *
+   * @description Filter records created ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 creation_timestamp_end = 102;
    */
   creationTimestampEnd = protoInt64.zero;
 
   /**
-   * The minimum timestamp that needs to be considered to filter by modification
+   *
+   * @optional
+   *
+   * @description Filter records modified ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 modification_timestamp_start = 103;
    */
   modificationTimestampStart = protoInt64.zero;
 
   /**
-   * The maximum timestamp that needs to be considered to filter by modification
+   *
+   * @optional
+   *
+   * @description Filter records modified ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 modification_timestamp_end = 104;
    */
   modificationTimestampEnd = protoInt64.zero;
 
   /**
-   * The entity UUID that is to be used to filter records
+   *
+   * @optional
+   *
+   * @description Filter by the organization UUID.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 8;
    */
   entityUuid = "";
 
   /**
-   * The status of this family
+   *
+   * @optional
+   *
+   * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+   *
+   * @example STANDING
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
@@ -1433,28 +1683,64 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
   multiStatus: STANDARD_LIFECYCLE_STATUS[] = [];
 
   /**
-   * The start range of approved timestamp
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_on_start = 11;
    */
   approvedOnStart = protoInt64.zero;
 
   /**
-   * The end range of approved timestamp
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_on_end = 12;
    */
   approvedOnEnd = protoInt64.zero;
 
   /**
-   * The ID of the approver
+   *
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approved_by_user_id = 13;
    */
   approvedByUserId = protoInt64.zero;
 
   /**
-   * The role ID of the approver
+   *
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 approver_role_id = 14;
    */
@@ -1635,49 +1921,94 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
  */
 export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAllReq> {
   /**
-   * If true, then returns only active records. If false, then returns only inactive records
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
    *
    * @generated from field: Scailo.BOOL_FILTER is_active = 1;
    */
   isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
 
   /**
-   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @mandatory
+   *
+   * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+   *
+   * @example 100
+   *
+   * @regex ^(?:-1|0|[1-9][0-9]*)$
+   *
+   * @format Must be -1 or any non-negative integer (>= -1).
    *
    * @generated from field: int64 count = 2;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that need to be offset by before fetching the records
+   *
+   * @optional
+   *
+   * @description Number of records to skip (offset) for pagination.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 offset = 3;
    */
   offset = protoInt64.zero;
 
   /**
-   * The sort order that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description Sort direction.
+   *
+   * @example DESCENDING
    *
    * @generated from field: Scailo.SORT_ORDER sort_order = 4;
    */
   sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
 
   /**
-   * The sort key that is to be used to fetch the pagination response
+   *
+   * @optional
+   *
+   * @description The field used for sorting.
    *
    * @generated from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
    */
   sortKey = FAMILY_SORT_KEY.FAMILY_SORT_KEY_ID_UNSPECIFIED;
 
   /**
-   * The entity UUID that is to be used to filter records
+   *
+   * @optional
+   *
+   * @description Filter by the organization UUID.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string entity_uuid = 6;
    */
   entityUuid = "";
 
   /**
-   * Limit the search space to the given status
+   *
+   * @optional
+   *
+   * @description Filter by lifecycle status (e.g., DRAFT, STANDING).
+   *
+   * @example STANDING
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
@@ -1691,7 +2022,16 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
   multiStatus: STANDARD_LIFECYCLE_STATUS[] = [];
 
   /**
-   * Describes the key with which the search operation needs to be performed
+   *
+   * @mandatory
+   *
+   * @description The search string to match against reference IDs.
+   *
+   * @example "Medical 2023"
+   *
+   * @regex .*
+   *
+   * @format: May contain any UTF-8 characters.
    *
    * @generated from field: string search_key = 11;
    */
@@ -1881,28 +2221,34 @@ export class FamiliesServiceLabelCreateRequest extends Message<FamiliesServiceLa
  */
 export class FamilyLabel extends Message<FamilyLabel> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
   entityUuid = "";
 
   /**
-   * Stores the metadata of this family
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Stores the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * Denotes if this record requires approval (or has been approved)
+   *
+   * @description The approval state of the record
    *
    * @generated from field: bool need_approval = 4;
    */
@@ -2071,28 +2417,34 @@ export class FamiliesServiceStorageCreateRequest extends Message<FamiliesService
  */
 export class FamilyStorage extends Message<FamilyStorage> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
   entityUuid = "";
 
   /**
-   * Stores the metadata of this family
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Stores the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * Denotes if this record requires approval (or has been approved)
+   *
+   * @description The approval state of the record
    *
    * @generated from field: bool need_approval = 4;
    */
@@ -2327,28 +2679,34 @@ export class FamiliesServiceUnitConversionCreateRequest extends Message<Families
  */
 export class FamilyUnitConversion extends Message<FamilyUnitConversion> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
   entityUuid = "";
 
   /**
-   * Stores the metadata of this family
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Stores the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * Denotes if this record requires approval (or has been approved)
+   *
+   * @description The approval state of the record
    *
    * @generated from field: bool need_approval = 4;
    */
@@ -2533,28 +2891,34 @@ export class FamiliesServiceQCGroupCreateRequest extends Message<FamiliesService
  */
 export class FamilyQCGroup extends Message<FamilyQCGroup> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
   entityUuid = "";
 
   /**
-   * Stores the metadata of this family
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Stores the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * Denotes if this record requires approval (or has been approved)
+   *
+   * @description The approval state of the record
    *
    * @generated from field: bool need_approval = 4;
    */
@@ -2805,28 +3169,34 @@ export class FamiliesServiceImageUpdateRequest extends Message<FamiliesServiceIm
  */
 export class FamilyImage extends Message<FamilyImage> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
   entityUuid = "";
 
   /**
-   * Stores the metadata of this family
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Stores the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * Denotes if this record requires approval (or has been approved)
+   *
+   * @description The approval state of the record
    *
    * @generated from field: bool need_approval = 4;
    */

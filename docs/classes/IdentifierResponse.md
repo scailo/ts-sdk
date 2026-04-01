@@ -2,7 +2,9 @@
 
 # Class: IdentifierResponse
 
-Describes the response that consists of the ID and the UUID of the record
+The standard response returned after a successful resource creation or lookup.
+* This message provides both the internal database ID and the public UUID
+for the newly created or identified record.
 
 **`Generated`**
 
@@ -67,7 +69,7 @@ Message\&lt;IdentifierResponse\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2462](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2462)
+[src/base.scailo_pb.ts:2481](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2481)
 
 ## Properties
 
@@ -75,7 +77,8 @@ Message\&lt;IdentifierResponse\&gt;.constructor
 
 • **id**: `bigint` = `protoInt64.zero`
 
-ID of the resource
+[Output Only] The internal, auto-incrementing integer ID.
+Use this for high-performance internal database lookups or joins.
 
 **`Generated`**
 
@@ -83,7 +86,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2453](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2453)
+[src/base.scailo_pb.ts:2469](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2469)
 
 ___
 
@@ -91,7 +94,10 @@ ___
 
 • **uuid**: `string` = `""`
 
-UUID of the resource
+[Output Only] The globally unique identifier (UUID v4).
+**Note:** This is the preferred ID to use in public URLs or client-side
+API requests to prevent ID enumeration attacks.
+Example: "f47ac10b-58cc-4372-a567-0e02b2c3d479"
 
 **`Generated`**
 
@@ -99,7 +105,7 @@ from field: string uuid = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2460](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2460)
+[src/base.scailo_pb.ts:2479](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2479)
 
 ___
 
@@ -109,7 +115,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2469](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2469)
+[src/base.scailo_pb.ts:2488](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2488)
 
 ___
 
@@ -119,7 +125,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2467](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2467)
+[src/base.scailo_pb.ts:2486](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2486)
 
 ___
 
@@ -129,7 +135,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2468](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2468)
+[src/base.scailo_pb.ts:2487](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2487)
 
 ## Methods
 
@@ -417,7 +423,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2486](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2486)
+[src/base.scailo_pb.ts:2505](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2505)
 
 ___
 
@@ -438,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2474](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2474)
+[src/base.scailo_pb.ts:2493](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2493)
 
 ___
 
@@ -459,7 +465,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2478](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2478)
+[src/base.scailo_pb.ts:2497](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2497)
 
 ___
 
@@ -480,4 +486,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2482](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/base.scailo_pb.ts#L2482)
+[src/base.scailo_pb.ts:2501](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L2501)

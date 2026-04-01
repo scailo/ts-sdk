@@ -74,7 +74,7 @@ Message\&lt;LeavesRequestsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1220](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1220)
+[src/leaves_requests.scailo_pb.ts:1664](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1664)
 
 ## Properties
 
@@ -82,7 +82,25 @@ Message\&lt;LeavesRequestsServiceSearchAllReq\&gt;.constructor
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -90,7 +108,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1169](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1169)
+[src/leaves_requests.scailo_pb.ts:1573](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1573)
 
 ___
 
@@ -98,7 +116,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-The entity UUID that is to be used to filter records
+**`Optional`**
+
+**`Description`**
+
+Filter by the organization UUID.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -106,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1197](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1197)
+[src/leaves_requests.scailo_pb.ts:1627](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1627)
 
 ___
 
@@ -114,7 +150,17 @@ ___
 
 • **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
 
-If true, then returns only active records. If false, then returns only inactive records
+**`Optional`**
+
+**`Description`**
+
+Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+
+**`Example`**
+
+```ts
+ANY
+```
 
 **`Generated`**
 
@@ -122,7 +168,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1162](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1162)
+[src/leaves_requests.scailo_pb.ts:1557](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1557)
 
 ___
 
@@ -130,7 +176,25 @@ ___
 
 • **offset**: `bigint` = `protoInt64.zero`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -138,7 +202,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1176](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1176)
+[src/leaves_requests.scailo_pb.ts:1589](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1589)
 
 ___
 
@@ -146,7 +210,23 @@ ___
 
 • **searchKey**: `string` = `""`
 
-Describes the key with which the search operation needs to be performed
+**`Mandatory`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -154,7 +234,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1211](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1211)
+[src/leaves_requests.scailo_pb.ts:1655](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1655)
 
 ___
 
@@ -162,7 +242,11 @@ ___
 
 • **sortKey**: [`LEAVE_REQUEST_SORT_KEY`](../enums/LEAVE_REQUEST_SORT_KEY.md) = `LEAVE_REQUEST_SORT_KEY.LEAVE_REQUEST_SORT_KEY_ID_UNSPECIFIED`
 
-The sort key that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
@@ -170,7 +254,7 @@ from field: Scailo.LEAVE_REQUEST_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1190](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1190)
+[src/leaves_requests.scailo_pb.ts:1611](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1611)
 
 ___
 
@@ -178,7 +262,17 @@ ___
 
 • **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
 
-The sort order that is to be used to fetch the pagination response
+**`Optional`**
+
+**`Description`**
+
+Sort direction.
+
+**`Example`**
+
+```ts
+DESCENDING
+```
 
 **`Generated`**
 
@@ -186,7 +280,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1183](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1183)
+[src/leaves_requests.scailo_pb.ts:1601](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1601)
 
 ___
 
@@ -194,7 +288,17 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-Limit the search space to the given status
+**`Optional`**
+
+**`Description`**
+
+Filter by lifecycle status (e.g., DRAFT, STANDING).
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
@@ -202,7 +306,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1204](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1204)
+[src/leaves_requests.scailo_pb.ts:1639](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1639)
 
 ___
 
@@ -218,7 +322,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1218](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1218)
+[src/leaves_requests.scailo_pb.ts:1662](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1662)
 
 ___
 
@@ -228,7 +332,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1227](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1227)
+[src/leaves_requests.scailo_pb.ts:1671](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1671)
 
 ___
 
@@ -238,7 +342,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1225](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1225)
+[src/leaves_requests.scailo_pb.ts:1669](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1669)
 
 ___
 
@@ -248,7 +352,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1226](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1226)
+[src/leaves_requests.scailo_pb.ts:1670](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1670)
 
 ## Methods
 
@@ -536,7 +640,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1251](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1251)
+[src/leaves_requests.scailo_pb.ts:1695](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1695)
 
 ___
 
@@ -557,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1239](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1239)
+[src/leaves_requests.scailo_pb.ts:1683](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1683)
 
 ___
 
@@ -578,7 +682,7 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1243](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1243)
+[src/leaves_requests.scailo_pb.ts:1687](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1687)
 
 ___
 
@@ -599,4 +703,4 @@ ___
 
 #### Defined in
 
-[src/leaves_requests.scailo_pb.ts:1247](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/leaves_requests.scailo_pb.ts#L1247)
+[src/leaves_requests.scailo_pb.ts:1691](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_requests.scailo_pb.ts#L1691)

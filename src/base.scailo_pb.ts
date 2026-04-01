@@ -35,69 +35,73 @@ proto3.util.setEnumType(SORT_ORDER, "Scailo.SORT_ORDER", [
 
 /**
  *
- * Describes the standard lifecycle status of each record
+ * Describes the standard lifecycle status of each record.
+ * * Status Transitions Scenarios:
+ * 1. Happy Path: CREATE -> PREVERIFY -> VERIFIED -> STANDING -> COMPLETED
+ * 2. Revision Path: CREATE -> PREVERIFY -> REVISION -> HALTED -> DISCARDED -> PREVERIFY -> VERIFIED -> HALTED -> DISCARDED
+ * 3. Draft Path: DRAFT -> PREVERIFY -> HALTED -> DISCARDED -> PREVERIFY -> VERIFIED -> REVISION -> PREVERIFY -> VERIFIED -> STANDING -> COMPLETED
  *
  * @generated from enum Scailo.STANDARD_LIFECYCLE_STATUS
  */
 export enum STANDARD_LIFECYCLE_STATUS {
   /**
-   * Use this only in filter and search queries so as to retrieve all the records regardless of the status that they are in
+   * Use this only in filter and search queries to retrieve all records regardless of status.
    *
    * @generated from enum value: ANY_UNSPECIFIED = 0;
    */
   ANY_UNSPECIFIED = 0,
 
   /**
-   * The resource has just been created, and has been sent for verification
+   * The resource has just been created or restored and is awaiting verification.
    *
    * @generated from enum value: PREVERIFY = 1;
    */
   PREVERIFY = 1,
 
   /**
-   * The resource has been saved as a draft
+   * The resource has been saved as a draft and is not yet in the workflow.
    *
    * @generated from enum value: DRAFT = 2;
    */
   DRAFT = 2,
 
   /**
-   * The resource has been verified
+   * The resource has been verified and is ready for final approval.
    *
    * @generated from enum value: VERIFIED = 3;
    */
   VERIFIED = 3,
 
   /**
-   * The resource has been approved
+   * The resource has been approved. It is now read-only.
    *
    * @generated from enum value: STANDING = 4;
    */
   STANDING = 4,
 
   /**
-   * The resource has been sent for revision
+   * The resource has been sent back for corrections.
    *
    * @generated from enum value: REVISION = 5;
    */
   REVISION = 5,
 
   /**
-   * The resource has been halted
+   * The resource processing has been temporarily paused.
    *
    * @generated from enum value: HALTED = 6;
    */
   HALTED = 6,
 
   /**
-   * The resource has been marked as completed
+   * The resource has been finalized/processed.
    *
    * @generated from enum value: COMPLETED = 7;
    */
   COMPLETED = 7,
 
   /**
-   * The resource has been discarded
+   * The resource has been permanently cancelled.
    *
    * @generated from enum value: DISCARDED = 8;
    */
@@ -2352,7 +2356,16 @@ export class RepeatWithDeliveryDate extends Message<RepeatWithDeliveryDate> {
   userComment = "";
 
   /**
-   * The reference ID of the repeated record
+   *
+   * @mandatory
+   *
+   * @description A unique external reference ID for the record. Must be alphanumeric (spaces allowed). Used for cross-referencing with external systems.
+   *
+   * @example "ABS-2023-001"
+   *
+   * @regex "[0-9A-Za-z ]+$"
+   *
+   * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
    *
    * @generated from field: string reference_id = 10;
    */
@@ -2440,20 +2453,26 @@ export class Identifier extends Message<Identifier> {
 
 /**
  *
- * Describes the response that consists of the ID and the UUID of the record
+ * The standard response returned after a successful resource creation or lookup.
+ * * This message provides both the internal database ID and the public UUID
+ * for the newly created or identified record.
  *
  * @generated from message Scailo.IdentifierResponse
  */
 export class IdentifierResponse extends Message<IdentifierResponse> {
   /**
-   * ID of the resource
+   * [Output Only] The internal, auto-incrementing integer ID.
+   * Use this for high-performance internal database lookups or joins.
    *
    * @generated from field: uint64 id = 1;
    */
   id = protoInt64.zero;
 
   /**
-   * UUID of the resource
+   * [Output Only] The globally unique identifier (UUID v4).
+   * **Note:** This is the preferred ID to use in public URLs or client-side
+   * API requests to prevent ID enumeration attacks.
+   * Example: "f47ac10b-58cc-4372-a567-0e02b2c3d479"
    *
    * @generated from field: string uuid = 10;
    */
@@ -3744,7 +3763,10 @@ export class InventoryPartitionRequest extends Message<InventoryPartitionRequest
  */
 export class InventoryInteraction extends Message<InventoryInteraction> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
@@ -3884,7 +3906,10 @@ export class InventoryInteractionsList extends Message<InventoryInteractionsList
  */
 export class AmendmentLog extends Message<AmendmentLog> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */

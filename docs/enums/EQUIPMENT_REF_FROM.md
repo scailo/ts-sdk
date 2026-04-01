@@ -31,7 +31,7 @@ from enum value: EQUIPMENT_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equipments.scailo_pb.ts#L23)
+[src/equipments.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equipments.scailo_pb.ts#L23)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: EQUIPMENT_REF_FROM_GOODS_RECEIPT = 2;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equipments.scailo_pb.ts#L37)
+[src/equipments.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equipments.scailo_pb.ts#L37)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: EQUIPMENT_REF_FROM_INITIAL_STOCK = 1;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equipments.scailo_pb.ts#L30)
+[src/equipments.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equipments.scailo_pb.ts#L30)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: EQUIPMENT_REF_FROM_INWARD_JOB_FREE_ISSUE_MATERIAL = 3;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/equipments.scailo_pb.ts#L44)
+[src/equipments.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/equipments.scailo_pb.ts#L44)

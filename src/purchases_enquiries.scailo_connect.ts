@@ -29,7 +29,19 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Create and save as draft
+     * Saves a new record as a draft without triggering side effects.
+     *
+     * Use this method when you have incomplete information but wish to persist
+     * the record for later completion. The record remains in a `DRAFT` state.
+     *
+     * **Note:** Some strict validation rules may be relaxed in the backend for drafts compared to `Create`.
+     *
+     * **Side Effects:**
+     * - Generates a unique system UUID.
+     * - Records an audit log for the "Draft" action.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If critical system fields are missing.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Draft
      */
@@ -40,7 +52,13 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update draft
+     * Updates an existing record that is currently in `DRAFT` status.
+     *
+     * This method allows modification of all primary attributes while the record is not yet verified.
+     *
+     * **Errors:**
+     * - `FAILED_PRECONDITION`: If the record is not in a `DRAFT` state.
+     * - `NOT_FOUND`: If the provided ID does not exist.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.DraftUpdate
      */
@@ -51,7 +69,15 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Send for verification
+     * Submits a record in `DRAFT` or `REVISION` status for verification.
+     *
+     * This triggers the first stage of the approval workflow.
+     *
+     * **Status Transition:** -> `PREVERIFY`
+     *
+     * **Side Effects:**
+     * - Notifies designated verifiers or approvers.
+     * - Locks certain fields from being updated without returning to `REVISION`.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.SendForVerification
      */
@@ -62,7 +88,12 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Verify
+     * Marks a record as verified, signaling that it is ready for final approval.
+     *
+     * **Status Transition:** -> `VERIFIED`
+     *
+     * **Side Effects:**
+     * - Records the verifying user and timestamp in the audit logs.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Verify
      */
@@ -73,7 +104,13 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Approve
+     * Officially approves the record.
+     *
+     * **Status Transition:** -> `STANDING`
+     *
+     * **Side Effects:**
+     * - Finalizes the `final_ref_number`.
+     * - Records the approver's identity and timestamp.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Approve
      */
@@ -84,7 +121,14 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Send For Revision
+     * Sends the record back to the creator for corrections.
+     *
+     * Use this if details are incorrect or supporting documents (in the vault) are missing.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Notifies the record creator that changes are required.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.SendForRevision
      */
@@ -95,7 +139,10 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update revision
+     * Updates a record that has been sent back for `REVISION`.
+     *
+     * **Side Effects:**
+     * - Re-validates the updated fields.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.RevisionUpdate
      */
@@ -106,7 +153,9 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Halt
+     * Temporarily halts processing of the record.
+     *
+     * **Status Transition:** -> `HALTED`
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Halt
      */
@@ -117,7 +166,11 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Discard
+     * Permanently cancels the record.
+     *
+     * Records in this state are typically ignored.
+     *
+     * **Status Transition:** -> `DISCARDED`
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Discard
      */
@@ -128,7 +181,10 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Restore
+     * Restores a previously `DISCARDED` or `HALTED` record.
+     *
+     * **Side Effects:**
+     * - Moves the record back to `PREVERIFY` and sends for verification.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Restore
      */
@@ -139,7 +195,12 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Complete
+     * Marks the record as finalized and fully processed.
+     *
+     * **Status Transition:** -> `COMPLETED`
+     *
+     * **Side Effects:**
+     * - Locks the record from further modification.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Complete
      */
@@ -150,7 +211,9 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Repeat
+     * Creates a new record based on an existing one (cloning).
+     *
+     * This is useful for repeating records or correcting finalized records by starting fresh.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Repeat
      */
@@ -172,7 +235,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Add comment
+     * Adds an audit comment to the record's history without changing its current lifecycle status.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.CommentAdd
      */
@@ -194,7 +257,9 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Create a magic link
+     * Generates a magic link for temporary, authenticated access to the resource.
+     *
+     * This enables non-system users (or users without active sessions) to view specific details.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.CreateMagicLink
      */
@@ -371,7 +436,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by ID
+     * Retrieves a single record by its internal numeric ID. This operation is optimized for high-performance internal system logic and backend-to-backend communication
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.ViewByID
      */
@@ -382,7 +447,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by UUID
+     * Retrieves a single record by its globally unique UUID. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.ViewByUUID
      */
@@ -404,7 +469,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View only essential components by ID (without logs)
+     * Retrieves a record by ID excluding high-volume fields like logs for performance. This operation is optimized for high-performance internal system logic and backend-to-backend communication
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.ViewEssentialByID
      */
@@ -415,7 +480,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View only essential components (without logs) that matches the given UUID
+     * Retrieves a record by UUID excluding high-volume fields like logs. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.ViewEssentialByUUID
      */
@@ -426,7 +491,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all records with the given IDs
+     * Retrieves a list of records matching the provided array of internal IDs.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.ViewFromIDs
      */
@@ -437,7 +502,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all
+     * Returns all records filtered by their active status.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.ViewAll
      */
@@ -448,7 +513,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all with the given entity UUID
+     * Returns all records belonging to a specific organization/entity UUID.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.ViewAllForEntityUUID
      */
@@ -459,7 +524,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View with pagination
+     * Retrieves a paginated list of records based on status, sort keys, and offsets.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.ViewWithPagination
      */
@@ -492,7 +557,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all that match the given search key
+     * Performs a free-text search across records using a search key.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.SearchAll
      */
@@ -503,7 +568,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all that match the given filter criteria
+     * Performs a high-granularity search based on multiple specific field filters.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Filter
      */
@@ -514,7 +579,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Count in status
+     * Returns the total number of records currently in a specific lifecycle status.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.CountInStatus
      */
@@ -525,7 +590,7 @@ export const PurchasesEnquiriesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Count all that match the given criteria
+     * Returns the total count of records matching the given complex filter criteria.
      *
      * @generated from rpc Scailo.PurchasesEnquiriesService.Count
      */

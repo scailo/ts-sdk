@@ -2,7 +2,13 @@
 
 # Class: AbsencesServiceUpdateRequest
 
-Describes the parameters necessary to update a record
+Request message for updating an existing Absence record.
+Only applicable for records in `DRAFT` or `REVISION` states.
+This message allows for modifying the naming, leave request, start and end timestamps and quantity
+of an established Action Code.
+
+**Note:** Only fields provided in the request will typically be updated.
+The unique system ID is required to locate the target record.
 
 **`Generated`**
 
@@ -76,7 +82,7 @@ Message\&lt;AbsencesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L342)
+[src/absences.scailo_pb.ts:542](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L542)
 
 ## Properties
 
@@ -84,7 +90,23 @@ Message\&lt;AbsencesServiceUpdateRequest\&gt;.constructor
 
 • **description**: `string` = `""`
 
-The description of the absence
+**`Optional`**
+
+**`Description`**
+
+Updated textual description.
+
+**`Example`**
+
+```ts
+"Confirmed medical leave."
+```
+
+**`Regex`**
+
+[0-9A-Za-z ]*$
+
+@format: Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
@@ -92,7 +114,7 @@ from field: string description = 17;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:333](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L333)
+[src/absences.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L530)
 
 ___
 
@@ -100,7 +122,11 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+Updated custom dynamic form data.
 
 **`Generated`**
 
@@ -108,7 +134,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:340](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L340)
+[src/absences.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L540)
 
 ___
 
@@ -116,7 +142,25 @@ ___
 
 • **fromTimestamp**: `bigint` = `protoInt64.zero`
 
-The UNIX timestamp from when the user is absent
+**`Mandatory`**
+
+**`Description`**
+
+Updated start timestamp in UNIX Epoch Seconds.
+
+**`Example`**
+
+```ts
+1698220800
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Must be a strictly positive integer (1 or greater).
 
 **`Generated`**
 
@@ -124,7 +168,7 @@ from field: uint64 from_timestamp = 13;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L310)
+[src/absences.scailo_pb.ts:482](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L482)
 
 ___
 
@@ -132,7 +176,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique system identifier of the Absence to be modified. Must be a value greater than `0`.
+
+**`Example`**
+
+```ts
+98765
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Must be a strictly positive integer (1 or greater).
 
 **`Generated`**
 
@@ -140,7 +202,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L275)
+[src/absences.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L406)
 
 ___
 
@@ -148,7 +210,25 @@ ___
 
 • **leaveRequestId**: `bigint` = `protoInt64.zero`
 
-The ID of the optional associated leave request
+**`Optional`**
+
+**`Description`**
+
+Updated link to a Leave Request.
+
+**`Example`**
+
+```ts
+553
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -156,7 +236,7 @@ from field: uint64 leave_request_id = 12;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:303](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L303)
+[src/absences.scailo_pb.ts:466](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L466)
 
 ___
 
@@ -164,7 +244,17 @@ ___
 
 • **notifyUsers**: `boolean` = `false`
 
-Optional boolean value that stores if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+**`Optional`**
+
+**`Description`**
+
+Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -172,7 +262,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L282)
+[src/absences.scailo_pb.ts:418](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L418)
 
 ___
 
@@ -180,9 +270,25 @@ ___
 
 • **quantity**: `bigint` = `protoInt64.zero`
 
-// Stores the unit of material ID
-uint64 uom_id = 15 [(buf.validate.field).uint64.gt = 0];
-Stores the quantity of absence (in cents)
+**`Mandatory`**
+
+**`Description`**
+
+Updated quantity in cents (x100).
+
+**`Example`**
+
+```ts
+200
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Must be a strictly positive integer (1 or greater).
 
 **`Generated`**
 
@@ -190,7 +296,7 @@ from field: uint64 quantity = 16;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L326)
+[src/absences.scailo_pb.ts:514](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L514)
 
 ___
 
@@ -198,7 +304,25 @@ ___
 
 • **referenceId**: `string` = `""`
 
-The reference ID of the absence
+**`Mandatory`**
+
+**`Description`**
+
+Updated alphanumeric reference ID. Must contain at least 1 character.
+
+**`Example`**
+
+```ts
+"ABS-2023-001-REV"
+```
+
+**`Regex`**
+
+"[0-9A-Za-z ]+$"
+
+**`Format`**
+
+Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
 
 **`Generated`**
 
@@ -206,7 +330,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:296](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L296)
+[src/absences.scailo_pb.ts:450](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L450)
 
 ___
 
@@ -214,7 +338,25 @@ ___
 
 • **toTimestamp**: `bigint` = `protoInt64.zero`
 
-The UNIX timestamp until when the user is absent
+**`Mandatory`**
+
+**`Description`**
+
+Updated end timestamp in UNIX Epoch Seconds.
+
+**`Example`**
+
+```ts
+1698393600
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Must be a strictly positive integer (1 or greater).
 
 **`Generated`**
 
@@ -222,7 +364,7 @@ from field: uint64 to_timestamp = 14;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:317](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L317)
+[src/absences.scailo_pb.ts:498](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L498)
 
 ___
 
@@ -230,7 +372,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for this specific update. Captured in the version history for administrative tracking.
+
+**`Example`**
+
+```ts
+"Corrected the end date as per the medical certificate."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -238,7 +398,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L268)
+[src/absences.scailo_pb.ts:390](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L390)
 
 ___
 
@@ -246,7 +406,25 @@ ___
 
 • **vaultFolderId**: `bigint` = `protoInt64.zero`
 
-The associated vault folder ID
+**`Optional`**
+
+**`Description`**
+
+Updated vault folder ID for documentation storage.
+
+**`Example`**
+
+```ts
+15235
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -254,7 +432,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L289)
+[src/absences.scailo_pb.ts:434](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L434)
 
 ___
 
@@ -264,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L349)
+[src/absences.scailo_pb.ts:549](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L549)
 
 ___
 
@@ -274,7 +452,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:347](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L347)
+[src/absences.scailo_pb.ts:547](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L547)
 
 ___
 
@@ -284,7 +462,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:348](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L348)
+[src/absences.scailo_pb.ts:548](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L548)
 
 ## Methods
 
@@ -572,7 +750,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L375)
+[src/absences.scailo_pb.ts:575](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L575)
 
 ___
 
@@ -593,7 +771,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L363)
+[src/absences.scailo_pb.ts:563](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L563)
 
 ___
 
@@ -614,7 +792,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L367)
+[src/absences.scailo_pb.ts:567](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L567)
 
 ___
 
@@ -635,4 +813,4 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/absences.scailo_pb.ts#L371)
+[src/absences.scailo_pb.ts:571](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/absences.scailo_pb.ts#L571)

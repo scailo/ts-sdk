@@ -100,7 +100,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add comment
+         * Adds an audit comment to the record's history without changing its current lifecycle status.
          *
          * @generated from rpc Scailo.QCSamplesService.CommentAdd
          */
@@ -122,7 +122,9 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Create a magic link
+         * Generates a magic link for temporary, authenticated access to the resource.
+         *
+         * This enables non-system users (or users without active sessions) to view specific details.
          *
          * @generated from rpc Scailo.QCSamplesService.CreateMagicLink
          */
@@ -222,7 +224,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by ID
+         * Retrieves a single record by its internal numeric ID. This operation is optimized for high-performance internal system logic and backend-to-backend communication
          *
          * @generated from rpc Scailo.QCSamplesService.ViewByID
          */
@@ -233,7 +235,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by UUID
+         * Retrieves a single record by its globally unique UUID. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
          *
          * @generated from rpc Scailo.QCSamplesService.ViewByUUID
          */
@@ -244,7 +246,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components by ID (without logs)
+         * Retrieves a record by ID excluding high-volume fields like logs for performance. This operation is optimized for high-performance internal system logic and backend-to-backend communication
          *
          * @generated from rpc Scailo.QCSamplesService.ViewEssentialByID
          */
@@ -255,7 +257,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components (without logs) that matches the given UUID
+         * Retrieves a record by UUID excluding high-volume fields like logs. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
          *
          * @generated from rpc Scailo.QCSamplesService.ViewEssentialByUUID
          */
@@ -266,7 +268,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all records with the given IDs
+         * Retrieves a list of records matching the provided array of internal IDs.
          *
          * @generated from rpc Scailo.QCSamplesService.ViewFromIDs
          */
@@ -288,7 +290,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all
+         * Returns all records filtered by their active status.
          *
          * @generated from rpc Scailo.QCSamplesService.ViewAll
          */
@@ -299,7 +301,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all with the given entity UUID
+         * Returns all records belonging to a specific organization/entity UUID.
          *
          * @generated from rpc Scailo.QCSamplesService.ViewAllForEntityUUID
          */
@@ -310,7 +312,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View with pagination
+         * Retrieves a paginated list of records based on status, sort keys, and offsets.
          *
          * @generated from rpc Scailo.QCSamplesService.ViewWithPagination
          */
@@ -343,7 +345,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all that match the given search key
+         * Performs a free-text search across records using a search key.
          *
          * @generated from rpc Scailo.QCSamplesService.SearchAll
          */
@@ -354,7 +356,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all that match the given filter criteria
+         * Performs a high-granularity search based on multiple specific field filters.
          *
          * @generated from rpc Scailo.QCSamplesService.Filter
          */
@@ -365,7 +367,7 @@ export declare const QCSamplesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Count all that match the given criteria
+         * Returns the total count of records matching the given complex filter criteria.
          *
          * @generated from rpc Scailo.QCSamplesService.Count
          */

@@ -10,7 +10,10 @@ import { VaultPermission } from "./vault_commons.scailo_pb.js";
  */
 export declare class VaultFileInitiateFileRequest extends Message<VaultFileInitiateFileRequest> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -140,7 +143,10 @@ export declare class VaultFileMoveFileRequest extends Message<VaultFileMoveFileR
  */
 export declare class VaultFile extends Message<VaultFile> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -244,7 +250,10 @@ export declare class VaultFilesList extends Message<VaultFilesList> {
  */
 export declare class VaultFileVersion extends Message<VaultFileVersion> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -358,7 +367,10 @@ export declare class VaultFileAddChunkRequest extends Message<VaultFileAddChunkR
  */
 export declare class VaultFileVersionChunk extends Message<VaultFileVersionChunk> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */

@@ -2,7 +2,9 @@
 
 # Class: FormFieldDatumCreateRequest
 
-Describes the data required for creating a dynamic form field entry
+Represents a single data entry for a dynamic form field.
+* Use this to submit values for custom fields defined at the organization level,
+such as "Emergency Contact Name" or "T-Shirt Size".
 
 **`Generated`**
 
@@ -68,7 +70,7 @@ Message\&lt;FormFieldDatumCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L196)
+[src/forms_fields_data.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L209)
 
 ## Properties
 
@@ -76,7 +78,8 @@ Message\&lt;FormFieldDatumCreateRequest\&gt;.constructor
 
 • **formFieldId**: `bigint` = `protoInt64.zero`
 
-The ID of the corresponding form field
+[Required] The unique identifier of the form field definition.
+This ID must correspond to an existing field in the Form Configuration.
 
 **`Generated`**
 
@@ -84,7 +87,7 @@ from field: uint64 form_field_id = 1;
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:180](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L180)
+[src/forms_fields_data.scailo_pb.ts:186](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L186)
 
 ___
 
@@ -92,7 +95,11 @@ ___
 
 • **selectedValues**: `string`[] = `[]`
 
-The list of selected values (for radio, checkbox, and select)
+[Conditional] A list of identifiers for multi-selection fields.
+Use this for `radio`, `checkbox`, or `dropdown` field types.
+
+*Note:* For radio buttons, this list should contain exactly one element.
+*Example:* ["option_1", "option_5"]
 
 **`Generated`**
 
@@ -100,7 +107,7 @@ from field: repeated string selected_values = 3;
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:194](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L194)
+[src/forms_fields_data.scailo_pb.ts:207](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L207)
 
 ___
 
@@ -108,7 +115,10 @@ ___
 
 • **value**: `string` = `""`
 
-The value to be stored (for textarea and input)
+[Conditional] The text content for single-value inputs.
+Use this for `text`, `textarea`, `number`, or `date` field types.
+
+*Example:* "John Doe" or "123.45"
 
 **`Generated`**
 
@@ -116,7 +126,7 @@ from field: string value = 2;
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:187](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L187)
+[src/forms_fields_data.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L196)
 
 ___
 
@@ -126,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L203)
+[src/forms_fields_data.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L216)
 
 ___
 
@@ -136,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:201](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L201)
+[src/forms_fields_data.scailo_pb.ts:214](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L214)
 
 ___
 
@@ -146,7 +156,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L202)
+[src/forms_fields_data.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L215)
 
 ## Methods
 
@@ -434,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:221](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L221)
+[src/forms_fields_data.scailo_pb.ts:234](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L234)
 
 ___
 
@@ -455,7 +465,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L209)
+[src/forms_fields_data.scailo_pb.ts:222](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L222)
 
 ___
 
@@ -476,7 +486,7 @@ ___
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:213](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L213)
+[src/forms_fields_data.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L226)
 
 ___
 
@@ -497,4 +507,4 @@ ___
 
 #### Defined in
 
-[src/forms_fields_data.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/forms_fields_data.scailo_pb.ts#L217)
+[src/forms_fields_data.scailo_pb.ts:230](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/forms_fields_data.scailo_pb.ts#L230)

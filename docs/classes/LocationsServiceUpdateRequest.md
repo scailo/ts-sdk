@@ -72,7 +72,7 @@ Message\&lt;LocationsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:269](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L269)
+[src/locations.scailo_pb.ts:283](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L283)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: string email = 12;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L253)
+[src/locations.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L267)
 
 ___
 
@@ -109,7 +109,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L267)
+[src/locations.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L281)
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:227](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L227)
+[src/locations.scailo_pb.ts:236](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L236)
 
 ___
 
@@ -141,7 +141,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:241](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L241)
+[src/locations.scailo_pb.ts:255](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L255)
 
 ___
 
@@ -149,7 +149,17 @@ ___
 
 • **notifyUsers**: `boolean` = `false`
 
-Optional boolean value that stores if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+**`Optional`**
+
+**`Description`**
+
+Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -157,7 +167,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:234](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L234)
+[src/locations.scailo_pb.ts:248](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L248)
 
 ___
 
@@ -173,7 +183,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L260)
+[src/locations.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L274)
 
 ___
 
@@ -189,7 +199,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:220](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L220)
+[src/locations.scailo_pb.ts:229](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L229)
 
 ___
 
@@ -199,7 +209,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L276)
+[src/locations.scailo_pb.ts:290](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L290)
 
 ___
 
@@ -209,7 +219,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L274)
+[src/locations.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L288)
 
 ___
 
@@ -219,7 +229,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L275)
+[src/locations.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L289)
 
 ## Methods
 
@@ -507,7 +517,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:298](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L298)
+[src/locations.scailo_pb.ts:312](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L312)
 
 ___
 
@@ -528,7 +538,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:286](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L286)
+[src/locations.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L300)
 
 ___
 
@@ -549,7 +559,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:290](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L290)
+[src/locations.scailo_pb.ts:304](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L304)
 
 ___
 
@@ -570,4 +580,4 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:294](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/locations.scailo_pb.ts#L294)
+[src/locations.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/locations.scailo_pb.ts#L308)

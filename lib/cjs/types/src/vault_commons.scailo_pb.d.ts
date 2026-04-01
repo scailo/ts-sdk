@@ -223,7 +223,10 @@ export declare enum VAULT_ACCESS_LOG_OPERATION {
  */
 export declare class VaultPermission extends Message<VaultPermission> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -275,7 +278,10 @@ export declare class VaultPermission extends Message<VaultPermission> {
  */
 export declare class VaultPermissionAddRequest extends Message<VaultPermissionAddRequest> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -447,7 +453,10 @@ export declare class GiXManifest extends Message<GiXManifest> {
  */
 export declare class GiXAppRun extends Message<GiXAppRun> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -557,31 +566,72 @@ export declare class GiXAppRunsList extends Message<GiXAppRunsList> {
  */
 export declare class GiXAppRunCountReq extends Message<GiXAppRunCountReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
@@ -623,7 +673,12 @@ export declare class GiXAppRunCountReq extends Message<GiXAppRunCountReq> {
  */
 export declare class GiXAppRunFilterReq extends Message<GiXAppRunFilterReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
@@ -639,32 +694,67 @@ export declare class GiXAppRunFilterReq extends Message<GiXAppRunFilterReq> {
      *
      * // The sort order that is to be used to fetch the pagination response
      * SORT_ORDER sort_order = 4;
-     * // The sort key that is to be used to fetch the pagination response
-     * VAULT_SORT_KEY sort_key = 5;
+     *
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
@@ -850,7 +940,10 @@ export declare class EnclaveManifest extends Message<EnclaveManifest> {
  */
 export declare class EnclaveIngress extends Message<EnclaveIngress> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -954,31 +1047,72 @@ export declare class EnclaveIngressesList extends Message<EnclaveIngressesList> 
  */
 export declare class EnclaveIngressCountReq extends Message<EnclaveIngressCountReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
@@ -1026,7 +1160,12 @@ export declare class EnclaveIngressCountReq extends Message<EnclaveIngressCountR
  */
 export declare class EnclaveIngressFilterReq extends Message<EnclaveIngressFilterReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
@@ -1042,32 +1181,67 @@ export declare class EnclaveIngressFilterReq extends Message<EnclaveIngressFilte
      *
      * // The sort order that is to be used to fetch the pagination response
      * SORT_ORDER sort_order = 4;
-     * // The sort key that is to be used to fetch the pagination response
-     * VAULT_SORT_KEY sort_key = 5;
+     *
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
@@ -1251,7 +1425,10 @@ export declare class EnclaveEnvironmentVariableUpdateRequest extends Message<Enc
  */
 export declare class EnclaveEnvironmentVariable extends Message<EnclaveEnvironmentVariable> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -1353,7 +1530,10 @@ export declare class EnclaveDomainAddRequest extends Message<EnclaveDomainAddReq
  */
 export declare class EnclaveDomain extends Message<EnclaveDomain> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -1399,61 +1579,137 @@ export declare class EnclaveDomain extends Message<EnclaveDomain> {
  */
 export declare class EnclaveDomainsFilterReq extends Message<EnclaveDomainsFilterReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The field used for sorting.
      *
      * @generated from field: Scailo.ENCLAVE_DOMAIN_SORT_KEY sort_key = 5;
      */
     sortKey: ENCLAVE_DOMAIN_SORT_KEY;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
     modificationTimestampEnd: bigint;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 8;
      */
@@ -1629,7 +1885,10 @@ export declare class EnclaveFrameUpdateRequest extends Message<EnclaveFrameUpdat
  */
 export declare class EnclaveFrame extends Message<EnclaveFrame> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -1693,7 +1952,10 @@ export declare class EnclaveFrame extends Message<EnclaveFrame> {
  */
 export declare class EnclaveFrameSetup extends Message<EnclaveFrameSetup> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -1794,61 +2056,137 @@ export declare class EnclaveFrameSetupList extends Message<EnclaveFrameSetupList
  */
 export declare class VaultSearchReq extends Message<VaultSearchReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The field used for sorting.
      *
      * @generated from field: Scailo.VAULT_SORT_KEY sort_key = 5;
      */
     sortKey: VAULT_SORT_KEY;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
     modificationTimestampEnd: bigint;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 8;
      */
@@ -1866,7 +2204,16 @@ export declare class VaultSearchReq extends Message<VaultSearchReq> {
      */
     folderUuid: string;
     /**
-     * Describes the key with which the search operation needs to be performed
+     *
+     * @mandatory
+     *
+     * @description The search string to match against reference IDs.
+     *
+     * @example "Medical 2023"
+     *
+     * @regex .*
+     *
+     * @format: May contain any UTF-8 characters.
      *
      * @generated from field: string search_key = 11;
      */
@@ -1990,7 +2337,10 @@ export declare class VaultDuplicateCheckReq extends Message<VaultDuplicateCheckR
  */
 export declare class VaultAccessLog extends Message<VaultAccessLog> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -2054,7 +2404,16 @@ export declare class VaultAccessLog extends Message<VaultAccessLog> {
  */
 export declare class VaultAccessLogCreateRequest extends Message<VaultAccessLogCreateRequest> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @optional
+     *
+     * @description The globally unique identifier for the Organization or Business Entity.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 1;
      */

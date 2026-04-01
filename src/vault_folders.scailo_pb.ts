@@ -16,7 +16,10 @@ import { VaultPermission } from "./vault_commons.scailo_pb.js";
  */
 export class VaultFolderAddRequest extends Message<VaultFolderAddRequest> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
@@ -182,7 +185,10 @@ export class VaultFolderRenameFolderRequest extends Message<VaultFolderRenameFol
  */
 export class VaultParentFolder extends Message<VaultParentFolder> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
@@ -272,7 +278,10 @@ export class VaultParentFolder extends Message<VaultParentFolder> {
  */
 export class VaultFolder extends Message<VaultFolder> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */
@@ -412,7 +421,10 @@ export class VaultFoldersList extends Message<VaultFoldersList> {
  */
 export class VaultFolderDownload extends Message<VaultFolderDownload> {
   /**
-   * Stores a globally unique entity UUID. This will be set at the organization level
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
    *
    * @generated from field: string entity_uuid = 1;
    */

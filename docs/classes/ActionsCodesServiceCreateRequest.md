@@ -2,7 +2,12 @@
 
 # Class: ActionsCodesServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for creating a new Action Code.
+Action Codes are used to classify specific activities, events, or status changes
+within the system, often organized in a hierarchical (tree) structure.
+
+**Note:** This is a configuration-level entity used to define categorization
+logic for reporting, workflows, and UI visualization.
 
 **`Generated`**
 
@@ -74,7 +79,7 @@ Message\&lt;ActionsCodesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L155)
+[src/actions_codes.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L237)
 
 ## Properties
 
@@ -82,7 +87,25 @@ Message\&lt;ActionsCodesServiceCreateRequest\&gt;.constructor
 
 • **bgColor**: `string` = `""`
 
-The background color that is displayed for easy recognition
+**`Optional`**
+
+**`Description`**
+
+The Hexadecimal background color for UI rendering. Used to visually distinguish codes in dashboards or lists.
+
+**`Example`**
+
+```ts
+"#FF5733"
+```
+
+**`Regex`**
+
+"^#[0-9a-fA-F]{6}$"
+
+**`Format`**
+
+Must be a 6-digit hex code starting with #.
 
 **`Generated`**
 
@@ -90,7 +113,7 @@ from field: string bg_color = 13;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:132](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L132)
+[src/actions_codes.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L191)
 
 ___
 
@@ -98,7 +121,25 @@ ___
 
 • **code**: `string` = `""`
 
-The unique code by which the action code is classified
+**`Mandatory`**
+
+**`Description`**
+
+The unique alphanumeric identifier used for system classification. This is typically a short string or mnemonic used in logic and filtering.
+
+**`Example`**
+
+```ts
+"TECH_SUP_01"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -106,7 +147,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:118](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L118)
+[src/actions_codes.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L159)
 
 ___
 
@@ -114,7 +155,25 @@ ___
 
 • **description**: `string` = `""`
 
-The description of the action code
+**`Optional`**
+
+**`Description`**
+
+Detailed explanation of what this action code represents and when it should be used.
+
+**`Example`**
+
+```ts
+"Used for tracking inbound technical support tickets for Tier 1 issues."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -122,7 +181,7 @@ from field: string description = 18;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:153](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L153)
+[src/actions_codes.scailo_pb.ts:235](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L235)
 
 ___
 
@@ -130,7 +189,25 @@ ___
 
 • **entityUuid**: `string` = `""`
 
-ActionsCodes a globally unique entity UUID. This will be set at the organization level
+**`Optional`**
+
+**`Description`**
+
+The globally unique identifier for the Organization or Business Entity.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -138,7 +215,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:97](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L97)
+[src/actions_codes.scailo_pb.ts:111](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L111)
 
 ___
 
@@ -146,7 +223,25 @@ ___
 
 • **fgColor**: `string` = `""`
 
-The color of the text that is displayed for easy recognition
+**`Optional`**
+
+**`Description`**
+
+The Hexadecimal foreground (text) color for UI rendering. Used to visually distinguish codes in dashboards or lists.
+
+**`Example`**
+
+```ts
+"#FFFFFF"
+```
+
+**`Regex`**
+
+"^#[0-9a-fA-F]{6}$"
+
+**`Format`**
+
+Must be a 6-digit hex code starting with #.
 
 **`Generated`**
 
@@ -154,7 +249,7 @@ from field: string fg_color = 12;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:125](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L125)
+[src/actions_codes.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L175)
 
 ___
 
@@ -162,7 +257,17 @@ ___
 
 • **isLeaf**: `boolean` = `false`
 
-Stores if this is a leaf action code or a non-leaf action code
+**`Mandatory`**
+
+**`Description`**
+
+Indicates whether this code is a terminal "leaf" node. If `true`, no further sub-codes can be nested under this entry.
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -170,7 +275,7 @@ from field: bool is_leaf = 17;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:146](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L146)
+[src/actions_codes.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L219)
 
 ___
 
@@ -178,7 +283,25 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the action code
+**`Mandatory`**
+
+**`Description`**
+
+The display name of the action code. Must be at least 1 character long.
+
+**`Example`**
+
+```ts
+"Technical Support"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+May contain any UTF-8 characters.
 
 **`Generated`**
 
@@ -186,7 +309,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:111](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L111)
+[src/actions_codes.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L143)
 
 ___
 
@@ -194,7 +317,25 @@ ___
 
 • **parentActionCodeId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated non-leaf parent action code (0, if the first action code that is being created is a leaf action code)
+**`Optional`**
+
+**`Description`**
+
+The ID of the parent category in the action code hierarchy. Set to `0` if this is a top-level (root) action code.
+
+**`Example`**
+
+```ts
+105
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -202,7 +343,7 @@ from field: uint64 parent_action_code_id = 16;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L139)
+[src/actions_codes.scailo_pb.ts:207](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L207)
 
 ___
 
@@ -210,7 +351,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-ActionsCodes any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this action code. Useful for tracking configuration changes in the system history.
+
+**`Example`**
+
+```ts
+"Adding new sub-code for regional compliance tracking."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -218,7 +377,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:104](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L104)
+[src/actions_codes.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L127)
 
 ___
 
@@ -228,7 +387,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:162](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L162)
+[src/actions_codes.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L244)
 
 ___
 
@@ -238,7 +397,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L160)
+[src/actions_codes.scailo_pb.ts:242](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L242)
 
 ___
 
@@ -248,7 +407,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L161)
+[src/actions_codes.scailo_pb.ts:243](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L243)
 
 ## Methods
 
@@ -536,7 +695,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:186](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L186)
+[src/actions_codes.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L268)
 
 ___
 
@@ -557,7 +716,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:174](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L174)
+[src/actions_codes.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L256)
 
 ___
 
@@ -578,7 +737,7 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:178](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L178)
+[src/actions_codes.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L260)
 
 ___
 
@@ -599,4 +758,4 @@ ___
 
 #### Defined in
 
-[src/actions_codes.scailo_pb.ts:182](https://github.com/scailo/ts-sdk/blob/bb9a074aab68a823becc869431db7f9f7dd167d8/src/actions_codes.scailo_pb.ts#L182)
+[src/actions_codes.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/actions_codes.scailo_pb.ts#L264)

@@ -29,7 +29,17 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Create and send for verification
+     * Creates a new user and initiates the verification workflow.
+     *
+     * This method validates all required fields.
+     * The user record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+     *
+     * **Side Effects:**
+     * - Generates a unique system UUID.
+     * - Records an audit log for the "Create" action.
+     *
+     * **Errors:** // - `ALREADY_EXISTS`: If the `username`, `code`, or `email` is already taken.
+     * - `INVALID_ARGUMENT`: If validation rules (e.g., `buf.validate`) fail.
      *
      * @generated from rpc Scailo.UsersService.Create
      */
@@ -40,7 +50,12 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Create and save as draft
+     * Saves a new user record as a draft without triggering side effects.
+     *
+     * Use this method when you have incomplete information but wish to persist
+     * the record for later completion. The user cannot log in while the record is in a `DRAFT` state.
+     *
+     * **Note:** Some strict validation rules may be relaxed in the backend for drafts
      *
      * @generated from rpc Scailo.UsersService.Draft
      */
@@ -51,7 +66,13 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update draft
+     * Updates an existing record that is currently in `DRAFT` status.
+     *
+     * This method allows modification of all primary attributes while the record is not yet verified.
+     *
+     * **Errors:**
+     * - `FAILED_PRECONDITION`: If the record is not in a `DRAFT` state.
+     * - `NOT_FOUND`: If the provided ID does not exist.
      *
      * @generated from rpc Scailo.UsersService.DraftUpdate
      */
@@ -62,7 +83,15 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Send for verification
+     * Submits a record in `DRAFT` or `REVISION` status for verification.
+     *
+     * This triggers the first stage of the approval workflow.
+     *
+     * **Status Transition:** -> `PREVERIFY`
+     *
+     * **Side Effects:**
+     * - Notifies designated verifiers or approvers.
+     * - Locks certain fields from being updated without returning to `REVISION`.
      *
      * @generated from rpc Scailo.UsersService.SendForVerification
      */
@@ -73,7 +102,12 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Verify
+     * Marks a record as verified, signaling that it is ready for final approval.
+     *
+     * **Status Transition:** -> `VERIFIED`
+     *
+     * **Side Effects:**
+     * - Records the verifying user and timestamp in the audit logs.
      *
      * @generated from rpc Scailo.UsersService.Verify
      */
@@ -84,7 +118,13 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Approve
+     * Officially approves the record.
+     *
+     * **Status Transition:** -> `STANDING`
+     *
+     * **Side Effects:**
+     * - Finalizes the `final_ref_number`.
+     * - Records the approver's identity and timestamp.
      *
      * @generated from rpc Scailo.UsersService.Approve
      */
@@ -95,7 +135,14 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Send For Revision
+     * Sends the record back to the creator for corrections.
+     *
+     * Use this if details are incorrect or supporting documents (in the vault) are missing.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Notifies the record creator that changes are required.
      *
      * @generated from rpc Scailo.UsersService.SendForRevision
      */
@@ -106,7 +153,10 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update revision
+     * Updates a record that has been sent back for `REVISION`.
+     *
+     * **Side Effects:**
+     * - Re-validates the updated fields.
      *
      * @generated from rpc Scailo.UsersService.RevisionUpdate
      */
@@ -117,7 +167,9 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Halt
+     * Temporarily halts processing of the record.
+     *
+     * **Status Transition:** -> `HALTED`
      *
      * @generated from rpc Scailo.UsersService.Halt
      */
@@ -128,7 +180,11 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Discard
+     * Permanently cancels the record.
+     *
+     * Records in this state are typically ignored.
+     *
+     * **Status Transition:** -> `DISCARDED`
      *
      * @generated from rpc Scailo.UsersService.Discard
      */
@@ -139,7 +195,10 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Restore
+     * Restores a previously `DISCARDED` or `HALTED` record.
+     *
+     * **Side Effects:**
+     * - Moves the record back to `PREVERIFY` and sends for verification.
      *
      * @generated from rpc Scailo.UsersService.Restore
      */
@@ -150,7 +209,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Add comment
+     * Adds an audit comment to the record's history without changing its current lifecycle status.
      *
      * Send Email
      * rpc SendEmail (Identifier) returns (IdentifierResponse);
@@ -274,7 +333,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View only essential components by ID (without logs)
+     * Retrieves a record by ID excluding high-volume fields like logs for performance. This operation is optimized for high-performance internal system logic and backend-to-backend communication
      *
      * @generated from rpc Scailo.UsersService.ViewEssentialByID
      */
@@ -285,7 +344,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View only essential components (without logs) that matches the given UUID
+     * Retrieves a record by UUID excluding high-volume fields like logs. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
      *
      * @generated from rpc Scailo.UsersService.ViewEssentialByUUID
      */
@@ -318,7 +377,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all
+     * Returns all records filtered by their active status.
      *
      * @generated from rpc Scailo.UsersService.ViewAll
      */
@@ -329,7 +388,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all with the given entity UUID
+     * Returns all records belonging to a specific organization/entity UUID.
      *
      * @generated from rpc Scailo.UsersService.ViewAllForEntityUUID
      */
@@ -340,7 +399,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View with pagination
+     * Retrieves a paginated list of records based on status, sort keys, and offsets.
      *
      * @generated from rpc Scailo.UsersService.ViewWithPagination
      */
@@ -494,7 +553,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all that match the given search key
+     * Performs a free-text search across records using a search key.
      *
      * @generated from rpc Scailo.UsersService.SearchAll
      */
@@ -505,7 +564,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all that match the given filter criteria
+     * Performs a high-granularity search based on multiple specific field filters.
      *
      * @generated from rpc Scailo.UsersService.Filter
      */
@@ -516,7 +575,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Count in status
+     * Returns the total number of records currently in a specific lifecycle status.
      *
      * @generated from rpc Scailo.UsersService.CountInStatus
      */
@@ -527,7 +586,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Count all that match the given criteria
+     * Returns the total count of records matching the given complex filter criteria.
      *
      * @generated from rpc Scailo.UsersService.Count
      */
@@ -550,7 +609,13 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Import records using a CSV file (duplicate codes will be skipped)
+     * Bulk imports records from a provided CSV file.
+     * Behavior:
+     * - Deduplication: Skips entries where the `code` already exists in the system.
+     * - Atomicity: This is an "all-or-nothing" operation; if any part of the
+     *   import fails, no changes are committed.
+     * - Idempotency: Multiple calls with the same CSV result in the same state.
+     * Returns a list of UUIDs for all successfully processed or existing records.
      *
      * @generated from rpc Scailo.UsersService.ImportFromCSV
      */

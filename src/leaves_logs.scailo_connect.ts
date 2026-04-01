@@ -20,7 +20,7 @@ export const LeavesLogsService = {
   typeName: "Scailo.LeavesLogsService",
   methods: {
     /**
-     * View all that match the given filter criteria
+     * Performs a high-granularity search based on multiple specific field filters.
      *
      * @generated from rpc Scailo.LeavesLogsService.Filter
      */
@@ -42,7 +42,7 @@ export const LeavesLogsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Count all that match the given criteria
+     * Returns the total count of records matching the given complex filter criteria.
      *
      * @generated from rpc Scailo.LeavesLogsService.Count
      */

@@ -170,7 +170,10 @@ export declare enum INVENTORY_NODE_ORIGIN_TYPE {
  */
 export declare class GenericInventory extends Message<GenericInventory> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -388,7 +391,10 @@ export declare class GenericInventoryList extends Message<GenericInventoryList> 
  */
 export declare class InventoryCodeMap extends Message<InventoryCodeMap> {
     /**
-     * Stores a globally unique entity UUID. This will be set at the organization level
+     *
+     * @description The organization's globally unique identifier.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
      *
      * @generated from field: string entity_uuid = 1;
      */
@@ -582,43 +588,92 @@ export declare class ReturnableInventorySearchReq extends Message<ReturnableInve
  */
 export declare class SearchReturnableInventoryReq extends Message<SearchReturnableInventoryReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The field used for sorting.
      *
      * @generated from field: Scailo.INVENTORY_SORT_KEY sort_key = 5;
      */
     sortKey: INVENTORY_SORT_KEY;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 6;
      */
     entityUuid: string;
     /**
-     * Describes the key with which the search operation needs to be performed
+     *
+     * @mandatory
+     *
+     * @description The search string to match against reference IDs.
+     *
+     * @example "Medical 2023"
+     *
+     * @regex .*
+     *
+     * @format: May contain any UTF-8 characters.
      *
      * @generated from field: string search_key = 11;
      */
@@ -728,61 +783,137 @@ export declare class SearchReturnableInventoryForIdentifierUUID extends Message<
  */
 export declare class FilterReturnableInventoryReq extends Message<FilterReturnableInventoryReq> {
     /**
-     * If true, then returns only active records. If false, then returns only inactive records
+     *
+     * @optional
+     *
+     * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+     *
+     * @example ANY
      *
      * @generated from field: Scailo.BOOL_FILTER is_active = 1;
      */
     isActive: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
+     *
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 offset = 3;
      */
     offset: bigint;
     /**
-     * The sort order that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description Sort direction.
+     *
+     * @example DESCENDING
      *
      * @generated from field: Scailo.SORT_ORDER sort_order = 4;
      */
     sortOrder: SORT_ORDER;
     /**
-     * The sort key that is to be used to fetch the pagination response
+     *
+     * @optional
+     *
+     * @description The field used for sorting.
      *
      * @generated from field: Scailo.INVENTORY_SORT_KEY sort_key = 5;
      */
     sortKey: INVENTORY_SORT_KEY;
     /**
-     * The minimum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_start = 101;
      */
     creationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by creation
+     *
+     * @optional
+     *
+     * @description Filter records created ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 creation_timestamp_end = 102;
      */
     creationTimestampEnd: bigint;
     /**
-     * The minimum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_start = 103;
      */
     modificationTimestampStart: bigint;
     /**
-     * The maximum timestamp that needs to be considered to filter by modification
+     *
+     * @optional
+     *
+     * @description Filter records modified ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 modification_timestamp_end = 104;
      */
     modificationTimestampEnd: bigint;
     /**
-     * The entity UUID that is to be used to filter records
+     *
+     * @optional
+     *
+     * @description Filter by the organization UUID.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string entity_uuid = 8;
      */

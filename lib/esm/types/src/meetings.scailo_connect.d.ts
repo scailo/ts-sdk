@@ -44,7 +44,12 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Complete
+         * Marks the record as finalized and fully processed.
+         *
+         * **Status Transition:** -> `COMPLETED`
+         *
+         * **Side Effects:**
+         * - Locks the record from further modification.
          *
          * @generated from rpc Scailo.MeetingsService.Complete
          */
@@ -55,7 +60,9 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Repeat
+         * Creates a new record based on an existing one (cloning).
+         *
+         * This is useful for repeating records or correcting finalized records by starting fresh.
          *
          * @generated from rpc Scailo.MeetingsService.Repeat
          */
@@ -66,7 +73,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add comment
+         * Adds an audit comment to the record's history without changing its current lifecycle status.
          *
          * @generated from rpc Scailo.MeetingsService.CommentAdd
          */
@@ -341,7 +348,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by ID
+         * Retrieves a single record by its internal numeric ID. This operation is optimized for high-performance internal system logic and backend-to-backend communication
          *
          * @generated from rpc Scailo.MeetingsService.ViewByID
          */
@@ -352,7 +359,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by UUID
+         * Retrieves a single record by its globally unique UUID. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
          *
          * @generated from rpc Scailo.MeetingsService.ViewByUUID
          */
@@ -363,7 +370,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components by ID (without logs)
+         * Retrieves a record by ID excluding high-volume fields like logs for performance. This operation is optimized for high-performance internal system logic and backend-to-backend communication
          *
          * @generated from rpc Scailo.MeetingsService.ViewEssentialByID
          */
@@ -374,7 +381,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components (without logs) that matches the given UUID
+         * Retrieves a record by UUID excluding high-volume fields like logs. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
          *
          * @generated from rpc Scailo.MeetingsService.ViewEssentialByUUID
          */
@@ -385,7 +392,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all records with the given IDs
+         * Retrieves a list of records matching the provided array of internal IDs.
          *
          * @generated from rpc Scailo.MeetingsService.ViewFromIDs
          */
@@ -396,7 +403,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all
+         * Returns all records filtered by their active status.
          *
          * @generated from rpc Scailo.MeetingsService.ViewAll
          */
@@ -407,7 +414,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all with the given entity UUID
+         * Returns all records belonging to a specific organization/entity UUID.
          *
          * @generated from rpc Scailo.MeetingsService.ViewAllForEntityUUID
          */
@@ -418,7 +425,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View with pagination
+         * Retrieves a paginated list of records based on status, sort keys, and offsets.
          *
          * @generated from rpc Scailo.MeetingsService.ViewWithPagination
          */
@@ -429,7 +436,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all that match the given search key
+         * Performs a free-text search across records using a search key.
          *
          * @generated from rpc Scailo.MeetingsService.SearchAll
          */
@@ -440,7 +447,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all that match the given filter criteria
+         * Performs a high-granularity search based on multiple specific field filters.
          *
          * @generated from rpc Scailo.MeetingsService.Filter
          */
@@ -451,7 +458,7 @@ export declare const MeetingsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Count all that match the given criteria
+         * Returns the total count of records matching the given complex filter criteria.
          *
          * @generated from rpc Scailo.MeetingsService.Count
          */
