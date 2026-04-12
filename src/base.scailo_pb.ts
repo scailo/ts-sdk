@@ -1476,6 +1476,13 @@ export class PriceResponse extends Message<PriceResponse> {
    */
   value = protoInt64.zero;
 
+  /**
+   * The ID of the corresponding currency
+   *
+   * @generated from field: uint64 currency_id = 10;
+   */
+  currencyId = protoInt64.zero;
+
   constructor(data?: PartialMessage<PriceResponse>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1485,6 +1492,7 @@ export class PriceResponse extends Message<PriceResponse> {
   static readonly typeName = "Scailo.PriceResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PriceResponse {
