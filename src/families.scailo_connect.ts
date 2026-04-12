@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceImageCreateRequest, FamiliesServiceImageUpdateRequest, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateMinStockToMaintainRequest, FamiliesServiceUpdatePriceRequest, FamiliesServiceUpdateRequest, Family, FamilyImage, FamilyImagesList, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
+import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceImageCreateRequest, FamiliesServiceImageUpdateRequest, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateIdentityRequest, FamiliesServiceUpdateMinStockToMaintainRequest, FamiliesServiceUpdatePriceRequest, FamiliesServiceUpdateRequest, Family, FamilyImage, FamilyImagesList, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 
@@ -64,6 +64,28 @@ export const FamiliesService = {
     draftUpdate: {
       name: "DraftUpdate",
       I: FamiliesServiceUpdateRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Code Generation Logic:
+     * If `parent_id` > 0, the system automatically prefixes the parent family's
+     * code to the provided `code` before persistence (e.g., "PARENT_CODE.SUB_CODE").
+     *
+     * Preconditions:
+     * - The family must be in `DRAFT` or `REVISION` state.
+     * - The family `amendment_count` must be 0 (never previously approved).
+     *
+     * Errors:
+     * - `FAILED_PRECONDITION`: If the family has been approved previously (amendment_count > 0).
+     * - `INVALID_ARGUMENT`: If the hierarchy (parent_id/is_leaf) is self-referential or cyclic.
+     * - `NOT_FOUND`: If the Family ID or the specified `parent_id` does not exist.
+     *
+     * @generated from rpc Scailo.FamiliesService.UpdateIdentity
+     */
+    updateIdentity: {
+      name: "UpdateIdentity",
+      I: FamiliesServiceUpdateIdentityRequest,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },

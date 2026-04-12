@@ -554,25 +554,11 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
   printName = "";
 
   /**
-   * The unique code that represents the family (can be updated only prior to the first approval)
-   *
-   * @generated from field: string code = 12;
-   */
-  code = "";
-
-  /**
    * The description of the family
    *
    * @generated from field: string description = 14;
    */
   description = "";
-
-  /**
-   * The type of the family (can be updated only prior to the first approval)
-   *
-   * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
-   */
-  familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
 
   /**
    * The HSN/SAC code of the family
@@ -594,20 +580,6 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
    * @generated from field: uint64 unit_quantity = 18;
    */
   unitQuantity = protoInt64.zero;
-
-  /**
-   * Stores the ID of the parent family (can be updated only prior to the first approval)
-   *
-   * @generated from field: uint64 parent_id = 19;
-   */
-  parentId = protoInt64.zero;
-
-  /**
-   * Stores if the family is a leaf family (can be updated only prior to the first approval)
-   *
-   * @generated from field: bool is_leaf = 20;
-   */
-  isLeaf = false;
 
   /**
    * Stores the ID of the ledger
@@ -665,14 +637,10 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
     { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 15, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
     { no: 16, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 17, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 18, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 19, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 21, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 23, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -695,6 +663,88 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
 
   static equals(a: FamiliesServiceUpdateRequest | PlainMessage<FamiliesServiceUpdateRequest> | undefined, b: FamiliesServiceUpdateRequest | PlainMessage<FamiliesServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(FamiliesServiceUpdateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the parameters necessary to update the identity of a family
+ *
+ * @generated from message Scailo.FamiliesServiceUpdateIdentityRequest
+ */
+export class FamiliesServiceUpdateIdentityRequest extends Message<FamiliesServiceUpdateIdentityRequest> {
+  /**
+   * Stores any comment that the user might add during this operation
+   *
+   * @generated from field: string user_comment = 1;
+   */
+  userComment = "";
+
+  /**
+   * The ID of the record that needs to be updated
+   *
+   * @generated from field: uint64 id = 2;
+   */
+  id = protoInt64.zero;
+
+  /**
+   * The unique code that represents the family (can be updated only prior to the first approval)
+   *
+   * @generated from field: string code = 12;
+   */
+  code = "";
+
+  /**
+   * The type of the family (can be updated only prior to the first approval)
+   *
+   * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
+   */
+  familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
+
+  /**
+   * Stores the ID of the parent family (can be updated only prior to the first approval)
+   *
+   * @generated from field: uint64 parent_id = 19;
+   */
+  parentId = protoInt64.zero;
+
+  /**
+   * Stores if the family is a leaf family (can be updated only prior to the first approval)
+   *
+   * @generated from field: bool is_leaf = 20;
+   */
+  isLeaf = false;
+
+  constructor(data?: PartialMessage<FamiliesServiceUpdateIdentityRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.FamiliesServiceUpdateIdentityRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
+    { no: 19, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdateIdentityRequest {
+    return new FamiliesServiceUpdateIdentityRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateIdentityRequest {
+    return new FamiliesServiceUpdateIdentityRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateIdentityRequest {
+    return new FamiliesServiceUpdateIdentityRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: FamiliesServiceUpdateIdentityRequest | PlainMessage<FamiliesServiceUpdateIdentityRequest> | undefined, b: FamiliesServiceUpdateIdentityRequest | PlainMessage<FamiliesServiceUpdateIdentityRequest> | undefined): boolean {
+    return proto3.util.equals(FamiliesServiceUpdateIdentityRequest, a, b);
   }
 }
 
