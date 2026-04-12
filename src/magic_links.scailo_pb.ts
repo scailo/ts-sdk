@@ -785,6 +785,13 @@ export class MagicLinksServiceCreateRequest extends Message<MagicLinksServiceCre
    */
   description = "";
 
+  /**
+   * The optional domain prefix that is used to generate the magic link. If this is empty, then the default authless access domain is used. This is useful in case the URL needs to point at a custom domain.
+   *
+   * @generated from field: string domain_prefix = 100;
+   */
+  domainPrefix = "";
+
   constructor(data?: PartialMessage<MagicLinksServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -800,6 +807,7 @@ export class MagicLinksServiceCreateRequest extends Message<MagicLinksServiceCre
     { no: 30, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 31, name: "max_views", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 35, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 100, name: "domain_prefix", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MagicLinksServiceCreateRequest {
@@ -861,6 +869,13 @@ export class MagicLinksServiceCreateRequestForSpecificResource extends Message<M
    */
   description = "";
 
+  /**
+   * The optional domain prefix that is used to generate the magic link. If this is empty, then the default authless access domain is used. This is useful in case the URL needs to point at a custom domain.
+   *
+   * @generated from field: string domain_prefix = 100;
+   */
+  domainPrefix = "";
+
   constructor(data?: PartialMessage<MagicLinksServiceCreateRequestForSpecificResource>) {
     super();
     proto3.util.initPartial(data, this);
@@ -874,6 +889,7 @@ export class MagicLinksServiceCreateRequestForSpecificResource extends Message<M
     { no: 30, name: "expires_at", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 31, name: "max_views", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 35, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 100, name: "domain_prefix", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MagicLinksServiceCreateRequestForSpecificResource {
