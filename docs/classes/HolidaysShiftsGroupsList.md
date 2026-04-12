@@ -66,7 +66,7 @@ Message\&lt;HolidaysShiftsGroupsList\&gt;.constructor
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L754)
+[src/holidays.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L754)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.HolidayShiftGroup list = 1;
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:752](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L752)
+[src/holidays.scailo_pb.ts:752](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L752)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:761](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L761)
+[src/holidays.scailo_pb.ts:761](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L761)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L759)
+[src/holidays.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L759)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:760](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L760)
+[src/holidays.scailo_pb.ts:760](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L760)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:777](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L777)
+[src/holidays.scailo_pb.ts:777](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L777)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:765](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L765)
+[src/holidays.scailo_pb.ts:765](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L765)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:769](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L769)
+[src/holidays.scailo_pb.ts:769](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L769)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/holidays.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/holidays.scailo_pb.ts#L773)
+[src/holidays.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/holidays.scailo_pb.ts#L773)

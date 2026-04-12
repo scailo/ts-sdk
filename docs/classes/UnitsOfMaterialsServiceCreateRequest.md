@@ -70,7 +70,7 @@ Message\&lt;UnitsOfMaterialsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L136)
+[src/units_of_materials.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L136)
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string description = 12;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L134)
+[src/units_of_materials.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L134)
 
 ___
 
@@ -120,7 +120,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L106)
+[src/units_of_materials.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L106)
 
 ___
 
@@ -136,7 +136,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L120)
+[src/units_of_materials.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L120)
 
 ___
 
@@ -152,7 +152,7 @@ from field: string symbol = 11;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L127)
+[src/units_of_materials.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L127)
 
 ___
 
@@ -168,7 +168,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L113)
+[src/units_of_materials.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L113)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L143)
+[src/units_of_materials.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L143)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L141)
+[src/units_of_materials.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L141)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:142](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L142)
+[src/units_of_materials.scailo_pb.ts:142](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L142)
 
 ## Methods
 
@@ -486,7 +486,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L163)
+[src/units_of_materials.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L163)
 
 ___
 
@@ -507,7 +507,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:151](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L151)
+[src/units_of_materials.scailo_pb.ts:151](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L151)
 
 ___
 
@@ -528,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L155)
+[src/units_of_materials.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L155)
 
 ___
 
@@ -549,4 +549,4 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/units_of_materials.scailo_pb.ts#L159)
+[src/units_of_materials.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/units_of_materials.scailo_pb.ts#L159)

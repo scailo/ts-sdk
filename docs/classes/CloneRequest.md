@@ -69,7 +69,7 @@ Message\&lt;CloneRequest\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3489](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3489)
+[src/base.scailo_pb.ts:3497](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3497)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: bool delete_existing = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3480](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3480)
+[src/base.scailo_pb.ts:3488](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3488)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 source_id = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3466](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3466)
+[src/base.scailo_pb.ts:3474](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3474)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 target_id = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3473](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3473)
+[src/base.scailo_pb.ts:3481](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3481)
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 4;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3487](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3487)
+[src/base.scailo_pb.ts:3495](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3495)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3496](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3496)
+[src/base.scailo_pb.ts:3504](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3504)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3494](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3494)
+[src/base.scailo_pb.ts:3502](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3502)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3495](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3495)
+[src/base.scailo_pb.ts:3503](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3503)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3515](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3515)
+[src/base.scailo_pb.ts:3523](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3523)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3503](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3503)
+[src/base.scailo_pb.ts:3511](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3511)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3507](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3507)
+[src/base.scailo_pb.ts:3515](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3515)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:3511](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L3511)
+[src/base.scailo_pb.ts:3519](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L3519)

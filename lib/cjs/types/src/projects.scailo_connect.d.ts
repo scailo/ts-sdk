@@ -1,5 +1,5 @@
 import { Project, ProjectContact, ProjectContactsList, ProjectsList, ProjectsServiceContactCreateRequest, ProjectsServiceCountReq, ProjectsServiceCreateRequest, ProjectsServiceFilterReq, ProjectsServicePaginationReq, ProjectsServicePaginationResponse, ProjectsServiceSearchAllReq, ProjectsServiceUpdateRequest, ProjectStatistics } from "./projects.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -327,6 +327,17 @@ export declare const ProjectsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * View by Reference ID (returns the latest record in case of duplicates)
+         *
+         * @generated from rpc Scailo.ProjectsService.ViewByReferenceID
+         */
+        readonly viewByReferenceID: {
+            readonly name: "ViewByReferenceID";
+            readonly I: typeof SimpleSearchReq;
+            readonly O: typeof Project;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Retrieves a record by ID excluding high-volume fields like logs for performance. This operation is optimized for high-performance internal system logic and backend-to-backend communication
          *
          * @generated from rpc Scailo.ProjectsService.ViewEssentialByID
@@ -457,6 +468,34 @@ export declare const ProjectsService: {
             readonly name: "DownloadAsCSV";
             readonly I: typeof ProjectsServiceFilterReq;
             readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Download the CSV template that could be used to upload records
+         *
+         * @generated from rpc Scailo.ProjectsService.DownloadImportTemplate
+         */
+        readonly downloadImportTemplate: {
+            readonly name: "DownloadImportTemplate";
+            readonly I: typeof Empty;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Bulk imports records from a provided CSV file.
+         * Behavior:
+         * - Deduplication: Skips entries where the `code` already exists in the system.
+         * - Atomicity: This is an "all-or-nothing" operation; if any part of the
+         *   import fails, no changes are committed.
+         * - Idempotency: Multiple calls with the same CSV result in the same state.
+         * Returns a list of UUIDs for all successfully processed or existing records.
+         *
+         * @generated from rpc Scailo.ProjectsService.ImportFromCSV
+         */
+        readonly importFromCSV: {
+            readonly name: "ImportFromCSV";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };

@@ -66,7 +66,7 @@ Message\&lt;ProjectContactsList\&gt;.constructor
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1854](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1854)
+[src/projects.scailo_pb.ts:1854](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1854)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ProjectContact list = 1;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1852](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1852)
+[src/projects.scailo_pb.ts:1852](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1852)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1861](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1861)
+[src/projects.scailo_pb.ts:1861](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1861)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1859](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1859)
+[src/projects.scailo_pb.ts:1859](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1859)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1860](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1860)
+[src/projects.scailo_pb.ts:1860](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1860)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1877](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1877)
+[src/projects.scailo_pb.ts:1877](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1877)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1865](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1865)
+[src/projects.scailo_pb.ts:1865](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1865)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1869](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1869)
+[src/projects.scailo_pb.ts:1869](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1869)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:1873](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/projects.scailo_pb.ts#L1873)
+[src/projects.scailo_pb.ts:1873](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/projects.scailo_pb.ts#L1873)

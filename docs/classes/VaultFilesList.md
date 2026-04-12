@@ -66,7 +66,7 @@ Message\&lt;VaultFilesList\&gt;.constructor
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:377](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L377)
+[src/vault_files.scailo_pb.ts:377](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L377)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.VaultFile list = 1;
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L375)
+[src/vault_files.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L375)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:384](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L384)
+[src/vault_files.scailo_pb.ts:384](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L384)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:382](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L382)
+[src/vault_files.scailo_pb.ts:382](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L382)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L383)
+[src/vault_files.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L383)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:400](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L400)
+[src/vault_files.scailo_pb.ts:400](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L400)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L388)
+[src/vault_files.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L388)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L392)
+[src/vault_files.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L392)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/vault_files.scailo_pb.ts:396](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vault_files.scailo_pb.ts#L396)
+[src/vault_files.scailo_pb.ts:396](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_files.scailo_pb.ts#L396)

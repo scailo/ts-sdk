@@ -568,6 +568,12 @@ export declare class MagicLinksServiceCreateRequest extends Message<MagicLinksSe
      * @generated from field: string description = 35;
      */
     description: string;
+    /**
+     * The optional domain prefix that is used to generate the magic link. If this is empty, then the default authless access domain is used. This is useful in case the URL needs to point at a custom domain.
+     *
+     * @generated from field: string domain_prefix = 100;
+     */
+    domainPrefix: string;
     constructor(data?: PartialMessage<MagicLinksServiceCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.MagicLinksServiceCreateRequest";
@@ -614,6 +620,12 @@ export declare class MagicLinksServiceCreateRequestForSpecificResource extends M
      * @generated from field: string description = 35;
      */
     description: string;
+    /**
+     * The optional domain prefix that is used to generate the magic link. If this is empty, then the default authless access domain is used. This is useful in case the URL needs to point at a custom domain.
+     *
+     * @generated from field: string domain_prefix = 100;
+     */
+    domainPrefix: string;
     constructor(data?: PartialMessage<MagicLinksServiceCreateRequestForSpecificResource>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.MagicLinksServiceCreateRequestForSpecificResource";

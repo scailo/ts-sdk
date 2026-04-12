@@ -70,7 +70,7 @@ Message\&lt;LedgersServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L226)
+[src/ledgers.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L226)
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string description = 14;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L224)
+[src/ledgers.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L224)
 
 ___
 
@@ -102,7 +102,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L203)
+[src/ledgers.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L203)
 
 ___
 
@@ -118,7 +118,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L217)
+[src/ledgers.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L217)
 
 ___
 
@@ -134,7 +134,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L210)
+[src/ledgers.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L210)
 
 ___
 
@@ -150,7 +150,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L196)
+[src/ledgers.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L196)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L233)
+[src/ledgers.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L233)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L231)
+[src/ledgers.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L231)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L232)
+[src/ledgers.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L232)
 
 ## Methods
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L253)
+[src/ledgers.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L253)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:241](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L241)
+[src/ledgers.scailo_pb.ts:241](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L241)
 
 ___
 
@@ -510,7 +510,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L245)
+[src/ledgers.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L245)
 
 ___
 
@@ -531,4 +531,4 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/ledgers.scailo_pb.ts#L249)
+[src/ledgers.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/ledgers.scailo_pb.ts#L249)

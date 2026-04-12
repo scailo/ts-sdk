@@ -78,7 +78,7 @@ Message\&lt;FamiliesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2068](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2068)
+[src/families.scailo_pb.ts:2118](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2118)
 
 ## Properties
 
@@ -112,7 +112,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1949](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1949)
+[src/families.scailo_pb.ts:1999](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L1999)
 
 ___
 
@@ -146,7 +146,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2003](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2003)
+[src/families.scailo_pb.ts:2053](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2053)
 
 ___
 
@@ -162,7 +162,7 @@ from field: Scailo.FAMILY_TYPE family_type = 25;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2045](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2045)
+[src/families.scailo_pb.ts:2095](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2095)
 
 ___
 
@@ -188,7 +188,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1933](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1933)
+[src/families.scailo_pb.ts:1983](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L1983)
 
 ___
 
@@ -204,7 +204,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 30;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2066](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2066)
+[src/families.scailo_pb.ts:2116](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2116)
 
 ___
 
@@ -220,7 +220,7 @@ from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2052](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2052)
+[src/families.scailo_pb.ts:2102](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2102)
 
 ___
 
@@ -236,7 +236,7 @@ from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2022](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2022)
+[src/families.scailo_pb.ts:2072](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2072)
 
 ___
 
@@ -270,7 +270,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1965](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1965)
+[src/families.scailo_pb.ts:2015](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2015)
 
 ___
 
@@ -286,7 +286,7 @@ from field: uint64 parent_id = 29;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2059](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2059)
+[src/families.scailo_pb.ts:2109](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2109)
 
 ___
 
@@ -318,7 +318,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2038](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2038)
+[src/families.scailo_pb.ts:2088](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2088)
 
 ___
 
@@ -338,7 +338,7 @@ from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1987](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1987)
+[src/families.scailo_pb.ts:2037](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2037)
 
 ___
 
@@ -364,7 +364,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:1977](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L1977)
+[src/families.scailo_pb.ts:2027](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2027)
 
 ___
 
@@ -390,7 +390,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2015](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2015)
+[src/families.scailo_pb.ts:2065](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2065)
 
 ___
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2075](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2075)
+[src/families.scailo_pb.ts:2125](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2125)
 
 ___
 
@@ -410,7 +410,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2073](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2073)
+[src/families.scailo_pb.ts:2123](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2123)
 
 ___
 
@@ -420,7 +420,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2074](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2074)
+[src/families.scailo_pb.ts:2124](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2124)
 
 ## Methods
 
@@ -708,7 +708,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2103](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2103)
+[src/families.scailo_pb.ts:2153](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2153)
 
 ___
 
@@ -729,7 +729,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2091](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2091)
+[src/families.scailo_pb.ts:2141](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2141)
 
 ___
 
@@ -750,7 +750,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2095](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2095)
+[src/families.scailo_pb.ts:2145](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2145)
 
 ___
 
@@ -771,4 +771,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2099](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L2099)
+[src/families.scailo_pb.ts:2149](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L2149)

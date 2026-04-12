@@ -78,7 +78,7 @@ Message\&lt;Activity\&gt;.constructor
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:727](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L727)
+[src/activities.scailo_pb.ts:727](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L727)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: uint64 activity_group_id = 8;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:683](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L683)
+[src/activities.scailo_pb.ts:683](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L683)
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 activity_status_id = 9;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L690)
+[src/activities.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L690)
 
 ___
 
@@ -126,7 +126,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L669)
+[src/activities.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L669)
 
 ___
 
@@ -142,7 +142,7 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L718)
+[src/activities.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L718)
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 due_by = 12;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:711](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L711)
+[src/activities.scailo_pb.ts:711](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L711)
 
 ___
 
@@ -182,7 +182,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L641)
+[src/activities.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L641)
 
 ___
 
@@ -198,7 +198,7 @@ from field: string internal_ref = 50;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L725)
+[src/activities.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L725)
 
 ___
 
@@ -214,7 +214,7 @@ from field: repeated Scailo.LogbookLogActivityLC logs = 5;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L662)
+[src/activities.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L662)
 
 ___
 
@@ -230,7 +230,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:648](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L648)
+[src/activities.scailo_pb.ts:648](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L648)
 
 ___
 
@@ -246,7 +246,7 @@ from field: uint64 starts_at = 11;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:704](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L704)
+[src/activities.scailo_pb.ts:704](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L704)
 
 ___
 
@@ -262,7 +262,7 @@ from field: Scailo.ACTIVITY_LIFECYCLE status = 4;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:655](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L655)
+[src/activities.scailo_pb.ts:655](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L655)
 
 ___
 
@@ -278,7 +278,7 @@ from field: string title = 10;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L697)
+[src/activities.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L697)
 
 ___
 
@@ -294,7 +294,7 @@ from field: uint64 vault_folder_id = 7;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L676)
+[src/activities.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L676)
 
 ___
 
@@ -304,7 +304,7 @@ ___
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:734](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L734)
+[src/activities.scailo_pb.ts:734](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L734)
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:732](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L732)
+[src/activities.scailo_pb.ts:732](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L732)
 
 ___
 
@@ -324,7 +324,7 @@ ___
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L733)
+[src/activities.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L733)
 
 ## Methods
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:762](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L762)
+[src/activities.scailo_pb.ts:762](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L762)
 
 ___
 
@@ -633,7 +633,7 @@ ___
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:750](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L750)
+[src/activities.scailo_pb.ts:750](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L750)
 
 ___
 
@@ -654,7 +654,7 @@ ___
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L754)
+[src/activities.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L754)
 
 ___
 
@@ -675,4 +675,4 @@ ___
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:758](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/activities.scailo_pb.ts#L758)
+[src/activities.scailo_pb.ts:758](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities.scailo_pb.ts#L758)

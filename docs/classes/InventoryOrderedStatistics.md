@@ -68,7 +68,7 @@ Message\&lt;InventoryOrderedStatistics\&gt;.constructor
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2127](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2127)
+[src/inventory.scailo_pb.ts:2127](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2127)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: repeated Scailo.AbridgedGoodsReceiptItem goods_receipts = 20;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2118](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2118)
+[src/inventory.scailo_pb.ts:2118](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2118)
 
 ___
 
@@ -100,7 +100,7 @@ from field: repeated Scailo.AbridgedPurchaseOrderItem purchase_orders = 10;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2111](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2111)
+[src/inventory.scailo_pb.ts:2111](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2111)
 
 ___
 
@@ -116,7 +116,7 @@ from field: repeated Scailo.AbridgedPurchaseReturnItem purchase_returns = 30;
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2125](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2125)
+[src/inventory.scailo_pb.ts:2125](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2125)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2134](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2134)
+[src/inventory.scailo_pb.ts:2134](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2134)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2132](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2132)
+[src/inventory.scailo_pb.ts:2132](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2132)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2133](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2133)
+[src/inventory.scailo_pb.ts:2133](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2133)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2152)
+[src/inventory.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2152)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2140](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2140)
+[src/inventory.scailo_pb.ts:2140](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2140)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2144](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2144)
+[src/inventory.scailo_pb.ts:2144](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2144)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/inventory.scailo_pb.ts:2148](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/inventory.scailo_pb.ts#L2148)
+[src/inventory.scailo_pb.ts:2148](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/inventory.scailo_pb.ts#L2148)

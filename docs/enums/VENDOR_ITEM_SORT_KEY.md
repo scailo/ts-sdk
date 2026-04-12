@@ -41,7 +41,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L177)
+[src/vendors.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L177)
 
 ___
 
@@ -57,7 +57,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L170)
+[src/vendors.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L170)
 
 ___
 
@@ -73,7 +73,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L184)
+[src/vendors.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L184)
 
 ___
 
@@ -89,7 +89,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L156)
+[src/vendors.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L156)
 
 ___
 
@@ -105,7 +105,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L191)
+[src/vendors.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L191)
 
 ___
 
@@ -121,7 +121,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L149)
+[src/vendors.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L149)
 
 ___
 
@@ -137,7 +137,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_MAX_ORDER_QTY = 16;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L233)
+[src/vendors.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L233)
 
 ___
 
@@ -153,7 +153,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_MIN_ORDER_QTY = 15;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L226)
+[src/vendors.scailo_pb.ts:226](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L226)
 
 ___
 
@@ -169,7 +169,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L163)
+[src/vendors.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L163)
 
 ___
 
@@ -185,7 +185,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_PRICE = 14;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L219)
+[src/vendors.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L219)
 
 ___
 
@@ -201,7 +201,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_STEP_INTERVAL = 17;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L240)
+[src/vendors.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L240)
 
 ___
 
@@ -217,7 +217,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_TAX_GROUP_ID = 13;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L212)
+[src/vendors.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L212)
 
 ___
 
@@ -233,7 +233,7 @@ from enum value: VENDOR_ITEM_SORT_KEY_UOM_ID = 12;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L205)
+[src/vendors.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L205)
 
 ___
 
@@ -249,4 +249,4 @@ from enum value: VENDOR_ITEM_SORT_KEY_VENDOR_FAMILY_CODE = 11;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/vendors.scailo_pb.ts#L198)
+[src/vendors.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendors.scailo_pb.ts#L198)

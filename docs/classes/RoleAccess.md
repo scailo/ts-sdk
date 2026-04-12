@@ -72,7 +72,7 @@ Message\&lt;RoleAccess\&gt;.constructor
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L669)
+[src/roles.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L669)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:638](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L638)
+[src/roles.scailo_pb.ts:638](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L638)
 
 ___
 
@@ -114,7 +114,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:622](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L622)
+[src/roles.scailo_pb.ts:622](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L622)
 
 ___
 
@@ -130,7 +130,7 @@ from field: bool is_accessible = 12;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:667](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L667)
+[src/roles.scailo_pb.ts:667](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L667)
 
 ___
 
@@ -146,7 +146,7 @@ from field: string menu_uid = 11;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L660)
+[src/roles.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L660)
 
 ___
 
@@ -164,7 +164,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:630](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L630)
+[src/roles.scailo_pb.ts:630](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L630)
 
 ___
 
@@ -182,7 +182,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:646](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L646)
+[src/roles.scailo_pb.ts:646](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L646)
 
 ___
 
@@ -198,7 +198,7 @@ from field: uint64 role_id = 10;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:653](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L653)
+[src/roles.scailo_pb.ts:653](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L653)
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L676)
+[src/roles.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L676)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:674](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L674)
+[src/roles.scailo_pb.ts:674](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L674)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:675](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L675)
+[src/roles.scailo_pb.ts:675](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L675)
 
 ## Methods
 
@@ -516,7 +516,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:698](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L698)
+[src/roles.scailo_pb.ts:698](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L698)
 
 ___
 
@@ -537,7 +537,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:686](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L686)
+[src/roles.scailo_pb.ts:686](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L686)
 
 ___
 
@@ -558,7 +558,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L690)
+[src/roles.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L690)
 
 ___
 
@@ -579,4 +579,4 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:694](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/roles.scailo_pb.ts#L694)
+[src/roles.scailo_pb.ts:694](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/roles.scailo_pb.ts#L694)

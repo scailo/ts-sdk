@@ -69,7 +69,7 @@ Message\&lt;TeamsServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1070](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1070)
+[src/teams.scailo_pb.ts:1070](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1070)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1040](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1040)
+[src/teams.scailo_pb.ts:1040](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1040)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1050](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1050)
+[src/teams.scailo_pb.ts:1050](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1050)
 
 ___
 
@@ -135,7 +135,7 @@ from field: repeated Scailo.Team payload = 4;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1068](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1068)
+[src/teams.scailo_pb.ts:1068](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1068)
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1060](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1060)
+[src/teams.scailo_pb.ts:1060](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1060)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1077](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1077)
+[src/teams.scailo_pb.ts:1077](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1077)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1075](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1075)
+[src/teams.scailo_pb.ts:1075](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1075)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1076)
+[src/teams.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1076)
 
 ## Methods
 
@@ -477,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1096](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1096)
+[src/teams.scailo_pb.ts:1096](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1096)
 
 ___
 
@@ -498,7 +498,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1084](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1084)
+[src/teams.scailo_pb.ts:1084](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1084)
 
 ___
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1088](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1088)
+[src/teams.scailo_pb.ts:1088](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1088)
 
 ___
 
@@ -540,4 +540,4 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1092](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/teams.scailo_pb.ts#L1092)
+[src/teams.scailo_pb.ts:1092](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/teams.scailo_pb.ts#L1092)

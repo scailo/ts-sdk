@@ -69,7 +69,7 @@ Message\&lt;AssociatePaginationResp\&gt;.constructor
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L399)
+[src/associates.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L399)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:369](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L369)
+[src/associates.scailo_pb.ts:369](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L369)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:379](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L379)
+[src/associates.scailo_pb.ts:379](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L379)
 
 ___
 
@@ -135,7 +135,7 @@ from field: repeated Scailo.Associate payload = 4;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:397](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L397)
+[src/associates.scailo_pb.ts:397](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L397)
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:389](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L389)
+[src/associates.scailo_pb.ts:389](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L389)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L406)
+[src/associates.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L406)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L404)
+[src/associates.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L404)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:405](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L405)
+[src/associates.scailo_pb.ts:405](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L405)
 
 ## Methods
 
@@ -477,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:425](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L425)
+[src/associates.scailo_pb.ts:425](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L425)
 
 ___
 
@@ -498,7 +498,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:413](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L413)
+[src/associates.scailo_pb.ts:413](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L413)
 
 ___
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L417)
+[src/associates.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L417)
 
 ___
 
@@ -540,4 +540,4 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:421](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/associates.scailo_pb.ts#L421)
+[src/associates.scailo_pb.ts:421](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/associates.scailo_pb.ts#L421)

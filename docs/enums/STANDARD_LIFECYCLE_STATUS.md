@@ -40,7 +40,7 @@ from enum value: ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:52](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L52)
+[src/base.scailo_pb.ts:52](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L52)
 
 ___
 
@@ -56,7 +56,7 @@ from enum value: COMPLETED = 7;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L101)
+[src/base.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L101)
 
 ___
 
@@ -72,7 +72,7 @@ from enum value: DISCARDED = 8;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L108)
+[src/base.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L108)
 
 ___
 
@@ -88,7 +88,7 @@ from enum value: DRAFT = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L66)
+[src/base.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L66)
 
 ___
 
@@ -104,7 +104,7 @@ from enum value: HALTED = 6;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L94)
+[src/base.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L94)
 
 ___
 
@@ -120,7 +120,7 @@ from enum value: PREVERIFY = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:59](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L59)
+[src/base.scailo_pb.ts:59](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L59)
 
 ___
 
@@ -136,7 +136,7 @@ from enum value: REVISION = 5;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L87)
+[src/base.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L87)
 
 ___
 
@@ -152,7 +152,7 @@ from enum value: STANDING = 4;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L80)
+[src/base.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L80)
 
 ___
 
@@ -168,4 +168,4 @@ from enum value: VERIFIED = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/base.scailo_pb.ts#L73)
+[src/base.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/base.scailo_pb.ts#L73)

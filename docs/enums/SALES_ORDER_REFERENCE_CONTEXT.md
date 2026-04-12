@@ -29,7 +29,7 @@ from enum value: SALES_ORDER_REFERENCE_CONTEXT_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L170)
+[src/sales_orders.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/sales_orders.scailo_pb.ts#L170)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: SALES_ORDER_REFERENCE_CONTEXT_BILLING = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/sales_orders.scailo_pb.ts#L177)
+[src/sales_orders.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/sales_orders.scailo_pb.ts#L177)

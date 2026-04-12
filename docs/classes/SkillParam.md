@@ -76,7 +76,7 @@ Message\&lt;SkillParam\&gt;.constructor
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L411)
+[src/skills_params.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L411)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:345](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L345)
+[src/skills_params.scailo_pb.ts:345](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L345)
 
 ___
 
@@ -110,7 +110,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:395](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L395)
+[src/skills_params.scailo_pb.ts:395](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L395)
 
 ___
 
@@ -134,7 +134,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L371)
+[src/skills_params.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L371)
 
 ___
 
@@ -150,7 +150,7 @@ from field: string description = 12;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L402)
+[src/skills_params.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L402)
 
 ___
 
@@ -174,7 +174,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L329)
+[src/skills_params.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L329)
 
 ___
 
@@ -190,7 +190,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:409](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L409)
+[src/skills_params.scailo_pb.ts:409](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L409)
 
 ___
 
@@ -208,7 +208,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:361](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L361)
+[src/skills_params.scailo_pb.ts:361](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L361)
 
 ___
 
@@ -226,7 +226,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L337)
+[src/skills_params.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L337)
 
 ___
 
@@ -242,7 +242,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L388)
+[src/skills_params.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L388)
 
 ___
 
@@ -260,7 +260,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:353](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L353)
+[src/skills_params.scailo_pb.ts:353](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L353)
 
 ___
 
@@ -284,7 +284,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:381](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L381)
+[src/skills_params.scailo_pb.ts:381](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L381)
 
 ___
 
@@ -294,7 +294,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:418](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L418)
+[src/skills_params.scailo_pb.ts:418](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L418)
 
 ___
 
@@ -304,7 +304,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L416)
+[src/skills_params.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L416)
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L417)
+[src/skills_params.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L417)
 
 ## Methods
 
@@ -602,7 +602,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L444)
+[src/skills_params.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L444)
 
 ___
 
@@ -623,7 +623,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L432)
+[src/skills_params.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L432)
 
 ___
 
@@ -644,7 +644,7 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L436)
+[src/skills_params.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L436)
 
 ___
 
@@ -665,4 +665,4 @@ ___
 
 #### Defined in
 
-[src/skills_params.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/skills_params.scailo_pb.ts#L440)
+[src/skills_params.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/skills_params.scailo_pb.ts#L440)

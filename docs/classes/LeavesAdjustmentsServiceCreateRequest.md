@@ -71,7 +71,7 @@ Message\&lt;LeavesAdjustmentsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:301](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L301)
+[src/leaves_adjustments.scailo_pb.ts:301](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L301)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string description = 12;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:299](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L299)
+[src/leaves_adjustments.scailo_pb.ts:299](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L299)
 
 ___
 
@@ -121,7 +121,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L246)
+[src/leaves_adjustments.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L246)
 
 ___
 
@@ -155,7 +155,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:285](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L285)
+[src/leaves_adjustments.scailo_pb.ts:285](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L285)
 
 ___
 
@@ -171,7 +171,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L253)
+[src/leaves_adjustments.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L253)
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:292](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L292)
+[src/leaves_adjustments.scailo_pb.ts:292](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L292)
 
 ___
 
@@ -221,7 +221,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:269](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L269)
+[src/leaves_adjustments.scailo_pb.ts:269](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L269)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L308)
+[src/leaves_adjustments.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L308)
 
 ___
 
@@ -241,7 +241,7 @@ ___
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:306](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L306)
+[src/leaves_adjustments.scailo_pb.ts:306](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L306)
 
 ___
 
@@ -251,7 +251,7 @@ ___
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L307)
+[src/leaves_adjustments.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L307)
 
 ## Methods
 
@@ -539,7 +539,7 @@ ___
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L329)
+[src/leaves_adjustments.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L329)
 
 ___
 
@@ -560,7 +560,7 @@ ___
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:317](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L317)
+[src/leaves_adjustments.scailo_pb.ts:317](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L317)
 
 ___
 
@@ -581,7 +581,7 @@ ___
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L321)
+[src/leaves_adjustments.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L321)
 
 ___
 
@@ -602,4 +602,4 @@ ___
 
 #### Defined in
 
-[src/leaves_adjustments.scailo_pb.ts:325](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/leaves_adjustments.scailo_pb.ts#L325)
+[src/leaves_adjustments.scailo_pb.ts:325](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_adjustments.scailo_pb.ts#L325)

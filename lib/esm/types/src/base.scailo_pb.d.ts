@@ -1065,6 +1065,12 @@ export declare class PriceResponse extends Message<PriceResponse> {
      * @generated from field: int64 value = 1;
      */
     value: bigint;
+    /**
+     * The ID of the corresponding currency
+     *
+     * @generated from field: uint64 currency_id = 10;
+     */
+    currencyId: bigint;
     constructor(data?: PartialMessage<PriceResponse>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.PriceResponse";

@@ -22,19 +22,15 @@ from message Scailo.FamiliesServiceUpdateRequest
 
 ### Properties
 
-- [code](FamiliesServiceUpdateRequest.md#code)
 - [consumptionSequence](FamiliesServiceUpdateRequest.md#consumptionsequence)
 - [description](FamiliesServiceUpdateRequest.md#description)
-- [familyType](FamiliesServiceUpdateRequest.md#familytype)
 - [formData](FamiliesServiceUpdateRequest.md#formdata)
 - [hsnSacCode](FamiliesServiceUpdateRequest.md#hsnsaccode)
 - [id](FamiliesServiceUpdateRequest.md#id)
-- [isLeaf](FamiliesServiceUpdateRequest.md#isleaf)
 - [ledgerId](FamiliesServiceUpdateRequest.md#ledgerid)
 - [minStockToMaintain](FamiliesServiceUpdateRequest.md#minstocktomaintain)
 - [name](FamiliesServiceUpdateRequest.md#name)
 - [notifyUsers](FamiliesServiceUpdateRequest.md#notifyusers)
-- [parentId](FamiliesServiceUpdateRequest.md#parentid)
 - [price](FamiliesServiceUpdateRequest.md#price)
 - [printName](FamiliesServiceUpdateRequest.md#printname)
 - [taxGroupId](FamiliesServiceUpdateRequest.md#taxgroupid)
@@ -85,25 +81,9 @@ Message\&lt;FamiliesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:654](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L654)
+[src/families.scailo_pb.ts:626](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L626)
 
 ## Properties
-
-### code
-
-• **code**: `string` = `""`
-
-The unique code that represents the family (can be updated only prior to the first approval)
-
-**`Generated`**
-
-from field: string code = 12;
-
-#### Defined in
-
-[src/families.scailo_pb.ts:561](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L561)
-
-___
 
 ### consumptionSequence
 
@@ -117,7 +97,7 @@ from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 28;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:645](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L645)
+[src/families.scailo_pb.ts:617](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L617)
 
 ___
 
@@ -133,23 +113,7 @@ from field: string description = 14;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:568](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L568)
-
-___
-
-### familyType
-
-• **familyType**: [`FAMILY_TYPE`](../enums/FAMILY_TYPE.md) = `FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED`
-
-The type of the family (can be updated only prior to the first approval)
-
-**`Generated`**
-
-from field: Scailo.FAMILY_TYPE family_type = 15;
-
-#### Defined in
-
-[src/families.scailo_pb.ts:575](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L575)
+[src/families.scailo_pb.ts:561](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L561)
 
 ___
 
@@ -165,7 +129,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:652](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L652)
+[src/families.scailo_pb.ts:624](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L624)
 
 ___
 
@@ -181,7 +145,7 @@ from field: string hsn_sac_code = 16;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:582](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L582)
+[src/families.scailo_pb.ts:568](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L568)
 
 ___
 
@@ -197,23 +161,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:517](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L517)
-
-___
-
-### isLeaf
-
-• **isLeaf**: `boolean` = `false`
-
-Stores if the family is a leaf family (can be updated only prior to the first approval)
-
-**`Generated`**
-
-from field: bool is_leaf = 20;
-
-#### Defined in
-
-[src/families.scailo_pb.ts:610](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L610)
+[src/families.scailo_pb.ts:517](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L517)
 
 ___
 
@@ -229,7 +177,7 @@ from field: uint64 ledger_id = 21;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:617](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L617)
+[src/families.scailo_pb.ts:589](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L589)
 
 ___
 
@@ -245,7 +193,7 @@ from field: uint64 min_stock_to_maintain = 27;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:638](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L638)
+[src/families.scailo_pb.ts:610](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L610)
 
 ___
 
@@ -261,7 +209,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:547](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L547)
+[src/families.scailo_pb.ts:547](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L547)
 
 ___
 
@@ -277,23 +225,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:524](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L524)
-
-___
-
-### parentId
-
-• **parentId**: `bigint` = `protoInt64.zero`
-
-Stores the ID of the parent family (can be updated only prior to the first approval)
-
-**`Generated`**
-
-from field: uint64 parent_id = 19;
-
-#### Defined in
-
-[src/families.scailo_pb.ts:603](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L603)
+[src/families.scailo_pb.ts:524](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L524)
 
 ___
 
@@ -309,7 +241,7 @@ from field: uint64 price = 26;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:631](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L631)
+[src/families.scailo_pb.ts:603](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L603)
 
 ___
 
@@ -325,7 +257,7 @@ from field: string print_name = 11;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:554](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L554)
+[src/families.scailo_pb.ts:554](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L554)
 
 ___
 
@@ -341,7 +273,7 @@ from field: uint64 tax_group_id = 23;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:624](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L624)
+[src/families.scailo_pb.ts:596](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L596)
 
 ___
 
@@ -357,7 +289,7 @@ from field: uint64 unit_quantity = 18;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:596](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L596)
+[src/families.scailo_pb.ts:582](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L582)
 
 ___
 
@@ -373,7 +305,7 @@ from field: uint64 uom_id = 17;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:589](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L589)
+[src/families.scailo_pb.ts:575](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L575)
 
 ___
 
@@ -389,7 +321,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:510](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L510)
+[src/families.scailo_pb.ts:510](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L510)
 
 ___
 
@@ -423,7 +355,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L540)
+[src/families.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L540)
 
 ___
 
@@ -433,7 +365,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:661](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L661)
+[src/families.scailo_pb.ts:633](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L633)
 
 ___
 
@@ -443,7 +375,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:659](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L659)
+[src/families.scailo_pb.ts:631](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L631)
 
 ___
 
@@ -453,7 +385,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L660)
+[src/families.scailo_pb.ts:632](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L632)
 
 ## Methods
 
@@ -741,7 +673,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:696](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L696)
+[src/families.scailo_pb.ts:664](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L664)
 
 ___
 
@@ -762,7 +694,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:684](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L684)
+[src/families.scailo_pb.ts:652](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L652)
 
 ___
 
@@ -783,7 +715,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:688](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L688)
+[src/families.scailo_pb.ts:656](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L656)
 
 ___
 
@@ -804,4 +736,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:692](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/families.scailo_pb.ts#L692)
+[src/families.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/families.scailo_pb.ts#L660)

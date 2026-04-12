@@ -405,23 +405,11 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
      */
     printName: string;
     /**
-     * The unique code that represents the family (can be updated only prior to the first approval)
-     *
-     * @generated from field: string code = 12;
-     */
-    code: string;
-    /**
      * The description of the family
      *
      * @generated from field: string description = 14;
      */
     description: string;
-    /**
-     * The type of the family (can be updated only prior to the first approval)
-     *
-     * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
-     */
-    familyType: FAMILY_TYPE;
     /**
      * The HSN/SAC code of the family
      *
@@ -440,18 +428,6 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
      * @generated from field: uint64 unit_quantity = 18;
      */
     unitQuantity: bigint;
-    /**
-     * Stores the ID of the parent family (can be updated only prior to the first approval)
-     *
-     * @generated from field: uint64 parent_id = 19;
-     */
-    parentId: bigint;
-    /**
-     * Stores if the family is a leaf family (can be updated only prior to the first approval)
-     *
-     * @generated from field: bool is_leaf = 20;
-     */
-    isLeaf: boolean;
     /**
      * Stores the ID of the ledger
      *
@@ -496,6 +472,58 @@ export declare class FamiliesServiceUpdateRequest extends Message<FamiliesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateRequest;
     static equals(a: FamiliesServiceUpdateRequest | PlainMessage<FamiliesServiceUpdateRequest> | undefined, b: FamiliesServiceUpdateRequest | PlainMessage<FamiliesServiceUpdateRequest> | undefined): boolean;
+}
+/**
+ *
+ * Describes the parameters necessary to update the identity of a family
+ *
+ * @generated from message Scailo.FamiliesServiceUpdateIdentityRequest
+ */
+export declare class FamiliesServiceUpdateIdentityRequest extends Message<FamiliesServiceUpdateIdentityRequest> {
+    /**
+     * Stores any comment that the user might add during this operation
+     *
+     * @generated from field: string user_comment = 1;
+     */
+    userComment: string;
+    /**
+     * The ID of the record that needs to be updated
+     *
+     * @generated from field: uint64 id = 2;
+     */
+    id: bigint;
+    /**
+     * The unique code that represents the family (can be updated only prior to the first approval)
+     *
+     * @generated from field: string code = 12;
+     */
+    code: string;
+    /**
+     * The type of the family (can be updated only prior to the first approval)
+     *
+     * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
+     */
+    familyType: FAMILY_TYPE;
+    /**
+     * Stores the ID of the parent family (can be updated only prior to the first approval)
+     *
+     * @generated from field: uint64 parent_id = 19;
+     */
+    parentId: bigint;
+    /**
+     * Stores if the family is a leaf family (can be updated only prior to the first approval)
+     *
+     * @generated from field: bool is_leaf = 20;
+     */
+    isLeaf: boolean;
+    constructor(data?: PartialMessage<FamiliesServiceUpdateIdentityRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.FamiliesServiceUpdateIdentityRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdateIdentityRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateIdentityRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesServiceUpdateIdentityRequest;
+    static equals(a: FamiliesServiceUpdateIdentityRequest | PlainMessage<FamiliesServiceUpdateIdentityRequest> | undefined, b: FamiliesServiceUpdateIdentityRequest | PlainMessage<FamiliesServiceUpdateIdentityRequest> | undefined): boolean;
 }
 /**
  *

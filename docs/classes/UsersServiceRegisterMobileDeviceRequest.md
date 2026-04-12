@@ -69,7 +69,7 @@ Message\&lt;UsersServiceRegisterMobileDeviceRequest\&gt;.constructor
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2377](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2377)
+[src/users.scailo_pb.ts:2377](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2377)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: string device_os = 12;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2368](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2368)
+[src/users.scailo_pb.ts:2368](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2368)
 
 ___
 
@@ -101,7 +101,7 @@ from field: string device_token = 13;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2375](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2375)
+[src/users.scailo_pb.ts:2375](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2375)
 
 ___
 
@@ -125,7 +125,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2354](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2354)
+[src/users.scailo_pb.ts:2354](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2354)
 
 ___
 
@@ -141,7 +141,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2361](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2361)
+[src/users.scailo_pb.ts:2361](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2361)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2384](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2384)
+[src/users.scailo_pb.ts:2384](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2384)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2382](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2382)
+[src/users.scailo_pb.ts:2382](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2382)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2383](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2383)
+[src/users.scailo_pb.ts:2383](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2383)
 
 ## Methods
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2403](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2403)
+[src/users.scailo_pb.ts:2403](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2403)
 
 ___
 
@@ -480,7 +480,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2391](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2391)
+[src/users.scailo_pb.ts:2391](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2391)
 
 ___
 
@@ -501,7 +501,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2395](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2395)
+[src/users.scailo_pb.ts:2395](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2395)
 
 ___
 
@@ -522,4 +522,4 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2399](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/users.scailo_pb.ts#L2399)
+[src/users.scailo_pb.ts:2399](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/users.scailo_pb.ts#L2399)

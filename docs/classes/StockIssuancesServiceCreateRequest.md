@@ -72,7 +72,7 @@ Message\&lt;StockIssuancesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L330)
+[src/stock_issuances.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L330)
 
 ## Properties
 
@@ -106,7 +106,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L268)
+[src/stock_issuances.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L268)
 
 ___
 
@@ -122,7 +122,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:328](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L328)
+[src/stock_issuances.scailo_pb.ts:328](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L328)
 
 ___
 
@@ -138,7 +138,7 @@ from field: Scailo.STOCK_ISSUANCE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L314)
+[src/stock_issuances.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L314)
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L321)
+[src/stock_issuances.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L321)
 
 ___
 
@@ -188,7 +188,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L307)
+[src/stock_issuances.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L307)
 
 ___
 
@@ -204,7 +204,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L275)
+[src/stock_issuances.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L275)
 
 ___
 
@@ -238,7 +238,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:291](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L291)
+[src/stock_issuances.scailo_pb.ts:291](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L291)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L337)
+[src/stock_issuances.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L337)
 
 ___
 
@@ -258,7 +258,7 @@ ___
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L335)
+[src/stock_issuances.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L335)
 
 ___
 
@@ -268,7 +268,7 @@ ___
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L336)
+[src/stock_issuances.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L336)
 
 ## Methods
 
@@ -556,7 +556,7 @@ ___
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L359)
+[src/stock_issuances.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L359)
 
 ___
 
@@ -577,7 +577,7 @@ ___
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:347](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L347)
+[src/stock_issuances.scailo_pb.ts:347](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L347)
 
 ___
 
@@ -598,7 +598,7 @@ ___
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L351)
+[src/stock_issuances.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L351)
 
 ___
 
@@ -619,4 +619,4 @@ ___
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/bc686eea7256b0ddca4f2e27b735c56b7c97bc21/src/stock_issuances.scailo_pb.ts#L355)
+[src/stock_issuances.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/stock_issuances.scailo_pb.ts#L355)
