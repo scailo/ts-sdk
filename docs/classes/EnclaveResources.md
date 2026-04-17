@@ -68,7 +68,7 @@ Message\&lt;EnclaveResources\&gt;.constructor
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1170](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1170)
+[src/vault_commons.scailo_pb.ts:1170](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1170)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: repeated string files = 3;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1168](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1168)
+[src/vault_commons.scailo_pb.ts:1168](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1168)
 
 ___
 
@@ -100,7 +100,7 @@ from field: repeated string folders = 2;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1161](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1161)
+[src/vault_commons.scailo_pb.ts:1161](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1161)
 
 ___
 
@@ -116,7 +116,7 @@ from field: repeated string logos = 1;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1154](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1154)
+[src/vault_commons.scailo_pb.ts:1154](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1154)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1177](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1177)
+[src/vault_commons.scailo_pb.ts:1177](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1177)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1175](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1175)
+[src/vault_commons.scailo_pb.ts:1175](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1175)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1176](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1176)
+[src/vault_commons.scailo_pb.ts:1176](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1176)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1195](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1195)
+[src/vault_commons.scailo_pb.ts:1195](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1195)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1183](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1183)
+[src/vault_commons.scailo_pb.ts:1183](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1183)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1187](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1187)
+[src/vault_commons.scailo_pb.ts:1187](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1187)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:1191](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L1191)
+[src/vault_commons.scailo_pb.ts:1191](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L1191)

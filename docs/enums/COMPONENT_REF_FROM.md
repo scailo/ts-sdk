@@ -33,7 +33,7 @@ from enum value: COMPONENT_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/components.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/components.scailo_pb.ts#L23)
+[src/components.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/components.scailo_pb.ts#L23)
 
 ___
 
@@ -49,7 +49,7 @@ from enum value: COMPONENT_REF_FROM_GOODS_RECEIPT = 2;
 
 #### Defined in
 
-[src/components.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/components.scailo_pb.ts#L37)
+[src/components.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/components.scailo_pb.ts#L37)
 
 ___
 
@@ -65,7 +65,7 @@ from enum value: COMPONENT_REF_FROM_INITIAL_STOCK = 1;
 
 #### Defined in
 
-[src/components.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/components.scailo_pb.ts#L30)
+[src/components.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/components.scailo_pb.ts#L30)
 
 ___
 
@@ -81,7 +81,7 @@ from enum value: COMPONENT_REF_FROM_INWARD_JOB_FREE_ISSUE_MATERIAL = 3;
 
 #### Defined in
 
-[src/components.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/components.scailo_pb.ts#L44)
+[src/components.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/components.scailo_pb.ts#L44)
 
 ___
 
@@ -97,7 +97,7 @@ from enum value: COMPONENT_REF_FROM_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 4;
 
 #### Defined in
 
-[src/components.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/components.scailo_pb.ts#L51)
+[src/components.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/components.scailo_pb.ts#L51)
 
 ___
 
@@ -113,4 +113,4 @@ from enum value: COMPONENT_REF_FROM_PRODUCTION_PLAN = 5;
 
 #### Defined in
 
-[src/components.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/components.scailo_pb.ts#L58)
+[src/components.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/components.scailo_pb.ts#L58)

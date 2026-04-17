@@ -69,7 +69,7 @@ Message\&lt;ReplaceableIndentsServiceItemCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:748](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L748)
+[src/replaceable_indents.scailo_pb.ts:748](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L748)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L739)
+[src/replaceable_indents.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L739)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L746)
+[src/replaceable_indents.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L746)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 replaceable_indent_id = 10;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:732](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L732)
+[src/replaceable_indents.scailo_pb.ts:732](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L732)
 
 ___
 
@@ -133,7 +133,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L725)
+[src/replaceable_indents.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L725)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L755)
+[src/replaceable_indents.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L755)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:753](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L753)
+[src/replaceable_indents.scailo_pb.ts:753](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L753)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L754)
+[src/replaceable_indents.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L754)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:774](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L774)
+[src/replaceable_indents.scailo_pb.ts:774](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L774)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:762](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L762)
+[src/replaceable_indents.scailo_pb.ts:762](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L762)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L766)
+[src/replaceable_indents.scailo_pb.ts:766](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L766)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:770](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/replaceable_indents.scailo_pb.ts#L770)
+[src/replaceable_indents.scailo_pb.ts:770](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/replaceable_indents.scailo_pb.ts#L770)

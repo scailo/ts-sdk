@@ -1,5 +1,5 @@
 import { Location, LocationsList, LocationsServiceCountReq, LocationsServiceCreateRequest, LocationsServiceFilterReq, LocationsServicePaginationReq, LocationsServicePaginationResponse, LocationsServiceSearchAllReq, LocationsServiceUpdateRequest } from "./locations.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -254,6 +254,17 @@ export declare const LocationsService: {
             readonly name: "ViewFromIDs";
             readonly I: typeof IdentifiersList;
             readonly O: typeof LocationsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View by location's code (logs aren't returned)
+         *
+         * @generated from rpc Scailo.LocationsService.ViewByCode
+         */
+        readonly viewByCode: {
+            readonly name: "ViewByCode";
+            readonly I: typeof SimpleSearchReq;
+            readonly O: typeof Location;
             readonly kind: MethodKind.Unary;
         };
         /**

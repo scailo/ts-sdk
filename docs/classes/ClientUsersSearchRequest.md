@@ -74,7 +74,7 @@ Message\&lt;ClientUsersSearchRequest\&gt;.constructor
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1748](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1748)
+[src/clients.scailo_pb.ts:1748](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1748)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: uint64 associate_id = 12;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1739](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1739)
+[src/clients.scailo_pb.ts:1739](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1739)
 
 ___
 
@@ -106,7 +106,7 @@ from field: uint64 client_id = 10;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1725](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1725)
+[src/clients.scailo_pb.ts:1725](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1725)
 
 ___
 
@@ -122,7 +122,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1688](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1688)
+[src/clients.scailo_pb.ts:1688](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1688)
 
 ___
 
@@ -156,7 +156,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1711](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1711)
+[src/clients.scailo_pb.ts:1711](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1711)
 
 ___
 
@@ -182,7 +182,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1681](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1681)
+[src/clients.scailo_pb.ts:1681](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1681)
 
 ___
 
@@ -198,7 +198,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1695](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1695)
+[src/clients.scailo_pb.ts:1695](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1695)
 
 ___
 
@@ -214,7 +214,7 @@ from field: string search_key = 20;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1746](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1746)
+[src/clients.scailo_pb.ts:1746](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1746)
 
 ___
 
@@ -230,7 +230,7 @@ from field: Scailo.CLIENT_USER_STATUS status = 7;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1718](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1718)
+[src/clients.scailo_pb.ts:1718](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1718)
 
 ___
 
@@ -246,7 +246,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1732](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1732)
+[src/clients.scailo_pb.ts:1732](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1732)
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1755](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1755)
+[src/clients.scailo_pb.ts:1755](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1755)
 
 ___
 
@@ -266,7 +266,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1753](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1753)
+[src/clients.scailo_pb.ts:1753](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1753)
 
 ___
 
@@ -276,7 +276,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1754](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1754)
+[src/clients.scailo_pb.ts:1754](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1754)
 
 ## Methods
 
@@ -564,7 +564,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1779](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1779)
+[src/clients.scailo_pb.ts:1779](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1779)
 
 ___
 
@@ -585,7 +585,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1767](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1767)
+[src/clients.scailo_pb.ts:1767](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1767)
 
 ___
 
@@ -606,7 +606,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1771](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1771)
+[src/clients.scailo_pb.ts:1771](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1771)
 
 ___
 
@@ -627,4 +627,4 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1775](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/clients.scailo_pb.ts#L1775)
+[src/clients.scailo_pb.ts:1775](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/clients.scailo_pb.ts#L1775)

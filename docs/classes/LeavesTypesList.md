@@ -66,7 +66,7 @@ Message\&lt;LeavesTypesList\&gt;.constructor
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L417)
+[src/leaves_types.scailo_pb.ts:417](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L417)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.LeaveType list = 1;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L415)
+[src/leaves_types.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L415)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L424)
+[src/leaves_types.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L424)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L422)
+[src/leaves_types.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L422)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L423)
+[src/leaves_types.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L423)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L440)
+[src/leaves_types.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L440)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L428)
+[src/leaves_types.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L428)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L432)
+[src/leaves_types.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L432)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/leaves_types.scailo_pb.ts#L436)
+[src/leaves_types.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/leaves_types.scailo_pb.ts#L436)

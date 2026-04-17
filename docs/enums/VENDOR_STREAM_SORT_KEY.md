@@ -32,7 +32,7 @@ from enum value: VENDOR_STREAM_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendor_streams.scailo_pb.ts#L161)
+[src/vendor_streams.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vendor_streams.scailo_pb.ts#L161)
 
 ___
 
@@ -48,7 +48,7 @@ from enum value: VENDOR_STREAM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendor_streams.scailo_pb.ts#L147)
+[src/vendor_streams.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vendor_streams.scailo_pb.ts#L147)
 
 ___
 
@@ -64,7 +64,7 @@ from enum value: VENDOR_STREAM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendor_streams.scailo_pb.ts#L140)
+[src/vendor_streams.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vendor_streams.scailo_pb.ts#L140)
 
 ___
 
@@ -80,7 +80,7 @@ from enum value: VENDOR_STREAM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendor_streams.scailo_pb.ts#L154)
+[src/vendor_streams.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vendor_streams.scailo_pb.ts#L154)
 
 ___
 
@@ -96,4 +96,4 @@ from enum value: VENDOR_STREAM_SORT_KEY_TITLE = 10;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:168](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vendor_streams.scailo_pb.ts#L168)
+[src/vendor_streams.scailo_pb.ts:168](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vendor_streams.scailo_pb.ts#L168)

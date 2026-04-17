@@ -66,7 +66,7 @@ Message\&lt;ActivitiesStatusesList\&gt;.constructor
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:405](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L405)
+[src/activities_statuses.scailo_pb.ts:405](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L405)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.ActivityStatus list = 1;
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L403)
+[src/activities_statuses.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L403)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:412](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L412)
+[src/activities_statuses.scailo_pb.ts:412](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L412)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L410)
+[src/activities_statuses.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L410)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L411)
+[src/activities_statuses.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L411)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L428)
+[src/activities_statuses.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L428)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L416)
+[src/activities_statuses.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L416)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L420)
+[src/activities_statuses.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L420)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/activities_statuses.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/activities_statuses.scailo_pb.ts#L424)
+[src/activities_statuses.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities_statuses.scailo_pb.ts#L424)

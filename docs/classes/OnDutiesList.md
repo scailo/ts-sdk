@@ -66,7 +66,7 @@ Message\&lt;OnDutiesList\&gt;.constructor
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:722](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L722)
+[src/on_duties.scailo_pb.ts:722](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L722)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.OnDuty list = 1;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:720](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L720)
+[src/on_duties.scailo_pb.ts:720](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L720)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:729](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L729)
+[src/on_duties.scailo_pb.ts:729](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L729)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:727](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L727)
+[src/on_duties.scailo_pb.ts:727](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L727)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:728](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L728)
+[src/on_duties.scailo_pb.ts:728](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L728)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L745)
+[src/on_duties.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L745)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L733)
+[src/on_duties.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L733)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:737](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L737)
+[src/on_duties.scailo_pb.ts:737](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L737)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/on_duties.scailo_pb.ts#L741)
+[src/on_duties.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/on_duties.scailo_pb.ts#L741)

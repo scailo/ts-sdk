@@ -35,7 +35,7 @@ from enum value: VAULT_PERMISSION_CODE_ADD = 8;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L85)
+[src/vault_commons.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L85)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: VAULT_PERMISSION_CODE_ALL = 63;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L106)
+[src/vault_commons.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L106)
 
 ___
 
@@ -67,7 +67,7 @@ from enum value: VAULT_PERMISSION_CODE_DELETE = 16;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L92)
+[src/vault_commons.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L92)
 
 ___
 
@@ -83,7 +83,7 @@ from enum value: VAULT_PERMISSION_CODE_DOWNLOAD = 4;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L78)
+[src/vault_commons.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L78)
 
 ___
 
@@ -99,7 +99,7 @@ from enum value: VAULT_PERMISSION_CODE_EXECUTE = 32;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L99)
+[src/vault_commons.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L99)
 
 ___
 
@@ -115,7 +115,7 @@ from enum value: VAULT_PERMISSION_CODE_META = 2;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L71)
+[src/vault_commons.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L71)
 
 ___
 
@@ -131,7 +131,7 @@ from enum value: VAULT_PERMISSION_CODE_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L57)
+[src/vault_commons.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L57)
 
 ___
 
@@ -147,4 +147,4 @@ from enum value: VAULT_PERMISSION_CODE_VIEW = 1;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/148f367386b6d09cd3855fb0be1e28ca97edac90/src/vault_commons.scailo_pb.ts#L64)
+[src/vault_commons.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/vault_commons.scailo_pb.ts#L64)

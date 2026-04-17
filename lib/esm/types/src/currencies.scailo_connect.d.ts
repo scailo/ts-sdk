@@ -1,5 +1,5 @@
 import { CurrenciesList, CurrenciesServiceCountReq, CurrenciesServiceCreateRequest, CurrenciesServiceFilterReq, CurrenciesServicePaginationReq, CurrenciesServicePaginationResponse, CurrenciesServiceSearchAllReq, CurrenciesServiceUpdateRequest, Currency } from "./currencies.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
@@ -254,6 +254,17 @@ export declare const CurrenciesService: {
             readonly name: "ViewFromIDs";
             readonly I: typeof IdentifiersList;
             readonly O: typeof CurrenciesList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * View by currency's code (logs aren't returned)
+         *
+         * @generated from rpc Scailo.CurrenciesService.ViewBySymbol
+         */
+        readonly viewBySymbol: {
+            readonly name: "ViewBySymbol";
+            readonly I: typeof SimpleSearchReq;
+            readonly O: typeof Currency;
             readonly kind: MethodKind.Unary;
         };
         /**
