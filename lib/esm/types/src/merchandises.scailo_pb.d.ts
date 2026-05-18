@@ -974,17 +974,38 @@ export declare class MerchandisesServiceFilterReq extends Message<MerchandisesSe
     /**
      * Filter by the given vendor ID
      *
-     * --------------------------------------------------
-     *
      * @generated from field: uint64 vendor_id = 81;
      */
     vendorId: bigint;
     /**
-     * The list of form data filters
+     * Filter by the ID of the client for whom the item has been issued
+     *
+     * --------------------------------------------------
+     *
+     * @generated from field: uint64 client_id = 82;
+     */
+    clientId: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
     formData: FormFieldDatumFilterRequest[];
+    /**
+     *
+     * @optional
+     *
+     * @description If `true`, the response will include the associated custom form field values for each record.
+     * Set to `false` to improve performance when form data is not needed.
+     *
+     * @example true
+     *
+     * @generated from field: bool include_form_data = 501;
+     */
+    includeFormData: boolean;
     constructor(data?: PartialMessage<MerchandisesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.MerchandisesServiceFilterReq";
@@ -1228,11 +1249,17 @@ export declare class MerchandisesServiceCountReq extends Message<MerchandisesSer
     /**
      * Filter by the given vendor ID
      *
-     * --------------------------------------------------
-     *
      * @generated from field: uint64 vendor_id = 81;
      */
     vendorId: bigint;
+    /**
+     * Filter by the ID of the client for whom the item has been issued
+     *
+     * --------------------------------------------------
+     *
+     * @generated from field: uint64 client_id = 82;
+     */
+    clientId: bigint;
     /**
      * The list of form data filters
      *

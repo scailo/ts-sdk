@@ -966,11 +966,32 @@ export declare class ProductsServiceFilterReq extends Message<ProductsServiceFil
      */
     locationId: bigint;
     /**
-     * The list of form data filters
+     * Filter by the ID of the client for whom the item has been issued
+     *
+     * @generated from field: uint64 client_id = 82;
+     */
+    clientId: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
     formData: FormFieldDatumFilterRequest[];
+    /**
+     *
+     * @optional
+     *
+     * @description If `true`, the response will include the associated custom form field values for each record.
+     * Set to `false` to improve performance when form data is not needed.
+     *
+     * @example true
+     *
+     * @generated from field: bool include_form_data = 501;
+     */
+    includeFormData: boolean;
     constructor(data?: PartialMessage<ProductsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProductsServiceFilterReq";
@@ -1211,6 +1232,14 @@ export declare class ProductsServiceCountReq extends Message<ProductsServiceCoun
      * @generated from field: uint64 location_id = 54;
      */
     locationId: bigint;
+    /**
+     * Filter by the ID of the client for whom the item has been issued
+     *
+     * --------------------------------------------------
+     *
+     * @generated from field: uint64 client_id = 82;
+     */
+    clientId: bigint;
     /**
      * The list of form data filters
      *

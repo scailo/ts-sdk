@@ -31,7 +31,7 @@ from enum value: ACTIVITY_LIFECYCLE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities.scailo_pb.ts#L22)
+[src/activities.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/activities.scailo_pb.ts#L22)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: ACTIVITY_LIFECYCLE_CANCELLED = 3;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities.scailo_pb.ts#L43)
+[src/activities.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/activities.scailo_pb.ts#L43)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: ACTIVITY_LIFECYCLE_COMPLETED = 2;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities.scailo_pb.ts#L36)
+[src/activities.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/activities.scailo_pb.ts#L36)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: ACTIVITY_LIFECYCLE_OPEN = 1;
 
 #### Defined in
 
-[src/activities.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/activities.scailo_pb.ts#L29)
+[src/activities.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/activities.scailo_pb.ts#L29)

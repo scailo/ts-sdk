@@ -2342,11 +2342,27 @@ export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceF
   billingStatus = GOODS_RECEIPT_BILLING_STATUS.GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description Filter based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
   formData: FormFieldDatumFilterRequest[] = [];
+
+  /**
+   *
+   * @optional
+   *
+   * @description If `true`, the response will include the associated custom form field values for each record.
+   * Set to `false` to improve performance when form data is not needed.
+   *
+   * @example true
+   *
+   * @generated from field: bool include_form_data = 501;
+   */
+  includeFormData = false;
 
   constructor(data?: PartialMessage<GoodsReceiptsServiceFilterReq>) {
     super();
@@ -2386,6 +2402,7 @@ export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceF
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 50, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceFilterReq {

@@ -1740,11 +1740,27 @@ export class ProductionIndentsServiceFilterReq extends Message<ProductionIndents
   familyId = protoInt64.zero;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description Filter based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
   formData: FormFieldDatumFilterRequest[] = [];
+
+  /**
+   *
+   * @optional
+   *
+   * @description If `true`, the response will include the associated custom form field values for each record.
+   * Set to `false` to improve performance when form data is not needed.
+   *
+   * @example true
+   *
+   * @generated from field: bool include_form_data = 501;
+   */
+  includeFormData = false;
 
   constructor(data?: PartialMessage<ProductionIndentsServiceFilterReq>) {
     super();
@@ -1781,6 +1797,7 @@ export class ProductionIndentsServiceFilterReq extends Message<ProductionIndents
     { no: 29, name: "indent_ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionIndentsServiceFilterReq {

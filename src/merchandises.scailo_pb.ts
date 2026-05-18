@@ -1312,18 +1312,41 @@ export class MerchandisesServiceFilterReq extends Message<MerchandisesServiceFil
   /**
    * Filter by the given vendor ID
    *
-   * --------------------------------------------------
-   *
    * @generated from field: uint64 vendor_id = 81;
    */
   vendorId = protoInt64.zero;
 
   /**
-   * The list of form data filters
+   * Filter by the ID of the client for whom the item has been issued
+   *
+   * --------------------------------------------------
+   *
+   * @generated from field: uint64 client_id = 82;
+   */
+  clientId = protoInt64.zero;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
   formData: FormFieldDatumFilterRequest[] = [];
+
+  /**
+   *
+   * @optional
+   *
+   * @description If `true`, the response will include the associated custom form field values for each record.
+   * Set to `false` to improve performance when form data is not needed.
+   *
+   * @example true
+   *
+   * @generated from field: bool include_form_data = 501;
+   */
+  includeFormData = false;
 
   constructor(data?: PartialMessage<MerchandisesServiceFilterReq>) {
     super();
@@ -1367,7 +1390,9 @@ export class MerchandisesServiceFilterReq extends Message<MerchandisesServiceFil
     { no: 52, name: "is_qc_report_public", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
     { no: 54, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 81, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 82, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MerchandisesServiceFilterReq {
@@ -1650,11 +1675,18 @@ export class MerchandisesServiceCountReq extends Message<MerchandisesServiceCoun
   /**
    * Filter by the given vendor ID
    *
-   * --------------------------------------------------
-   *
    * @generated from field: uint64 vendor_id = 81;
    */
   vendorId = protoInt64.zero;
+
+  /**
+   * Filter by the ID of the client for whom the item has been issued
+   *
+   * --------------------------------------------------
+   *
+   * @generated from field: uint64 client_id = 82;
+   */
+  clientId = protoInt64.zero;
 
   /**
    * The list of form data filters
@@ -1701,6 +1733,7 @@ export class MerchandisesServiceCountReq extends Message<MerchandisesServiceCoun
     { no: 52, name: "is_qc_report_public", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
     { no: 54, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 81, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 82, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 

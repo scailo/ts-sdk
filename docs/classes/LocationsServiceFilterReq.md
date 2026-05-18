@@ -33,6 +33,7 @@ from message Scailo.LocationsServiceFilterReq
 - [email](LocationsServiceFilterReq.md#email)
 - [entityUuid](LocationsServiceFilterReq.md#entityuuid)
 - [formData](LocationsServiceFilterReq.md#formdata)
+- [includeFormData](LocationsServiceFilterReq.md#includeformdata)
 - [isActive](LocationsServiceFilterReq.md#isactive)
 - [isLeaf](LocationsServiceFilterReq.md#isleaf)
 - [modificationTimestampEnd](LocationsServiceFilterReq.md#modificationtimestampend)
@@ -87,7 +88,7 @@ Message\&lt;LocationsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:963](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L963)
+[src/locations.scailo_pb.ts:979](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L979)
 
 ## Properties
 
@@ -121,7 +122,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:896](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L896)
+[src/locations.scailo_pb.ts:896](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L896)
 
 ___
 
@@ -155,7 +156,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:880](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L880)
+[src/locations.scailo_pb.ts:880](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L880)
 
 ___
 
@@ -189,7 +190,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:864](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L864)
+[src/locations.scailo_pb.ts:864](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L864)
 
 ___
 
@@ -223,7 +224,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:912](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L912)
+[src/locations.scailo_pb.ts:912](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L912)
 
 ___
 
@@ -239,7 +240,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:926](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L926)
+[src/locations.scailo_pb.ts:926](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L926)
 
 ___
 
@@ -273,7 +274,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L718)
+[src/locations.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L718)
 
 ___
 
@@ -307,7 +308,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:788](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L788)
+[src/locations.scailo_pb.ts:788](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L788)
 
 ___
 
@@ -341,7 +342,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:772](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L772)
+[src/locations.scailo_pb.ts:772](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L772)
 
 ___
 
@@ -357,7 +358,7 @@ from field: string email = 22;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:933](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L933)
+[src/locations.scailo_pb.ts:933](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L933)
 
 ___
 
@@ -391,7 +392,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:836](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L836)
+[src/locations.scailo_pb.ts:836](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L836)
 
 ___
 
@@ -399,7 +400,11 @@ ___
 
 • **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
 
-The list of form data filters
+**`Optional`**
+
+**`Description`**
+
+Filter based on dynamic form field values.
 
 **`Generated`**
 
@@ -407,7 +412,34 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:961](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L961)
+[src/locations.scailo_pb.ts:964](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L964)
+
+___
+
+### includeFormData
+
+• **includeFormData**: `boolean` = `false`
+
+**`Optional`**
+
+**`Description`**
+
+If `true`, the response will include the associated custom form field values for each record.
+Set to `false` to improve performance when form data is not needed.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Generated`**
+
+from field: bool include_form_data = 501;
+
+#### Defined in
+
+[src/locations.scailo_pb.ts:977](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L977)
 
 ___
 
@@ -433,7 +465,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:702](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L702)
+[src/locations.scailo_pb.ts:702](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L702)
 
 ___
 
@@ -449,7 +481,7 @@ from field: Scailo.BOOL_FILTER is_leaf = 25;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L954)
+[src/locations.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L954)
 
 ___
 
@@ -483,7 +515,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:820](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L820)
+[src/locations.scailo_pb.ts:820](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L820)
 
 ___
 
@@ -517,7 +549,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:804](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L804)
+[src/locations.scailo_pb.ts:804](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L804)
 
 ___
 
@@ -533,7 +565,7 @@ from field: string name = 20;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:919](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L919)
+[src/locations.scailo_pb.ts:919](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L919)
 
 ___
 
@@ -567,7 +599,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:734](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L734)
+[src/locations.scailo_pb.ts:734](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L734)
 
 ___
 
@@ -583,7 +615,7 @@ from field: uint64 parent_location_id = 24;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:947](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L947)
+[src/locations.scailo_pb.ts:947](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L947)
 
 ___
 
@@ -599,7 +631,7 @@ from field: string phone = 23;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:940](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L940)
+[src/locations.scailo_pb.ts:940](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L940)
 
 ___
 
@@ -619,7 +651,7 @@ from field: Scailo.LOCATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:756](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L756)
+[src/locations.scailo_pb.ts:756](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L756)
 
 ___
 
@@ -645,7 +677,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L746)
+[src/locations.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L746)
 
 ___
 
@@ -671,7 +703,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:848](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L848)
+[src/locations.scailo_pb.ts:848](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L848)
 
 ___
 
@@ -681,7 +713,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:970](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L970)
+[src/locations.scailo_pb.ts:986](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L986)
 
 ___
 
@@ -691,7 +723,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:968](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L968)
+[src/locations.scailo_pb.ts:984](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L984)
 
 ___
 
@@ -701,7 +733,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:969](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L969)
+[src/locations.scailo_pb.ts:985](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L985)
 
 ## Methods
 
@@ -989,7 +1021,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:1007](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L1007)
+[src/locations.scailo_pb.ts:1024](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L1024)
 
 ___
 
@@ -1010,7 +1042,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:995](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L995)
+[src/locations.scailo_pb.ts:1012](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L1012)
 
 ___
 
@@ -1031,7 +1063,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:999](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L999)
+[src/locations.scailo_pb.ts:1016](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L1016)
 
 ___
 
@@ -1052,4 +1084,4 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:1003](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/locations.scailo_pb.ts#L1003)
+[src/locations.scailo_pb.ts:1020](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L1020)

@@ -36,6 +36,7 @@ from message Scailo.OvertimesServiceFilterReq
 - [formData](OvertimesServiceFilterReq.md#formdata)
 - [fromTimestampEnd](OvertimesServiceFilterReq.md#fromtimestampend)
 - [fromTimestampStart](OvertimesServiceFilterReq.md#fromtimestampstart)
+- [includeFormData](OvertimesServiceFilterReq.md#includeformdata)
 - [isActive](OvertimesServiceFilterReq.md#isactive)
 - [modificationTimestampEnd](OvertimesServiceFilterReq.md#modificationtimestampend)
 - [modificationTimestampStart](OvertimesServiceFilterReq.md#modificationtimestampstart)
@@ -90,7 +91,7 @@ Message\&lt;OvertimesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1111](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1111)
+[src/overtimes.scailo_pb.ts:1127](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1127)
 
 ## Properties
 
@@ -124,7 +125,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:987](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L987)
+[src/overtimes.scailo_pb.ts:987](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L987)
 
 ___
 
@@ -158,7 +159,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:971](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L971)
+[src/overtimes.scailo_pb.ts:971](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L971)
 
 ___
 
@@ -192,7 +193,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:955](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L955)
+[src/overtimes.scailo_pb.ts:955](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L955)
 
 ___
 
@@ -226,7 +227,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1003](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1003)
+[src/overtimes.scailo_pb.ts:1003](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1003)
 
 ___
 
@@ -260,7 +261,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1035](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1035)
+[src/overtimes.scailo_pb.ts:1035](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1035)
 
 ___
 
@@ -294,7 +295,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1019](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1019)
+[src/overtimes.scailo_pb.ts:1019](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1019)
 
 ___
 
@@ -328,7 +329,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:809](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L809)
+[src/overtimes.scailo_pb.ts:809](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L809)
 
 ___
 
@@ -362,7 +363,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:879](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L879)
+[src/overtimes.scailo_pb.ts:879](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L879)
 
 ___
 
@@ -396,7 +397,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:863](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L863)
+[src/overtimes.scailo_pb.ts:863](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L863)
 
 ___
 
@@ -430,7 +431,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:927](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L927)
+[src/overtimes.scailo_pb.ts:927](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L927)
 
 ___
 
@@ -462,7 +463,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1067](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1067)
+[src/overtimes.scailo_pb.ts:1067](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1067)
 
 ___
 
@@ -470,7 +471,11 @@ ___
 
 • **formData**: [`FormFieldDatumFilterRequest`](FormFieldDatumFilterRequest.md)[] = `[]`
 
-The list of form data filters
+**`Optional`**
+
+**`Description`**
+
+Filter based on dynamic form field values.
 
 **`Generated`**
 
@@ -478,7 +483,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1109](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1109)
+[src/overtimes.scailo_pb.ts:1112](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1112)
 
 ___
 
@@ -494,7 +499,7 @@ from field: uint64 from_timestamp_end = 25;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1088](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1088)
+[src/overtimes.scailo_pb.ts:1088](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1088)
 
 ___
 
@@ -510,7 +515,34 @@ from field: uint64 from_timestamp_start = 24;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1081](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1081)
+[src/overtimes.scailo_pb.ts:1081](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1081)
+
+___
+
+### includeFormData
+
+• **includeFormData**: `boolean` = `false`
+
+**`Optional`**
+
+**`Description`**
+
+If `true`, the response will include the associated custom form field values for each record.
+Set to `false` to improve performance when form data is not needed.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Generated`**
+
+from field: bool include_form_data = 501;
+
+#### Defined in
+
+[src/overtimes.scailo_pb.ts:1125](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1125)
 
 ___
 
@@ -536,7 +568,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:793](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L793)
+[src/overtimes.scailo_pb.ts:793](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L793)
 
 ___
 
@@ -570,7 +602,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:911](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L911)
+[src/overtimes.scailo_pb.ts:911](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L911)
 
 ___
 
@@ -604,7 +636,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:895](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L895)
+[src/overtimes.scailo_pb.ts:895](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L895)
 
 ___
 
@@ -638,7 +670,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:825](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L825)
+[src/overtimes.scailo_pb.ts:825](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L825)
 
 ___
 
@@ -670,7 +702,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1051](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1051)
+[src/overtimes.scailo_pb.ts:1051](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1051)
 
 ___
 
@@ -690,7 +722,7 @@ from field: Scailo.OVERTIME_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:847](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L847)
+[src/overtimes.scailo_pb.ts:847](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L847)
 
 ___
 
@@ -716,7 +748,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:837](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L837)
+[src/overtimes.scailo_pb.ts:837](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L837)
 
 ___
 
@@ -742,7 +774,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:939](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L939)
+[src/overtimes.scailo_pb.ts:939](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L939)
 
 ___
 
@@ -758,7 +790,7 @@ from field: uint64 to_timestamp_end = 27;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1102](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1102)
+[src/overtimes.scailo_pb.ts:1102](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1102)
 
 ___
 
@@ -774,7 +806,7 @@ from field: uint64 to_timestamp_start = 26;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1095](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1095)
+[src/overtimes.scailo_pb.ts:1095](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1095)
 
 ___
 
@@ -790,7 +822,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1074](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1074)
+[src/overtimes.scailo_pb.ts:1074](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1074)
 
 ___
 
@@ -800,7 +832,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1118](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1118)
+[src/overtimes.scailo_pb.ts:1134](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1134)
 
 ___
 
@@ -810,7 +842,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1116](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1116)
+[src/overtimes.scailo_pb.ts:1132](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1132)
 
 ___
 
@@ -820,7 +852,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1117](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1117)
+[src/overtimes.scailo_pb.ts:1133](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1133)
 
 ## Methods
 
@@ -1108,7 +1140,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1158](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1158)
+[src/overtimes.scailo_pb.ts:1175](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1175)
 
 ___
 
@@ -1129,7 +1161,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1146](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1146)
+[src/overtimes.scailo_pb.ts:1163](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1163)
 
 ___
 
@@ -1150,7 +1182,7 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1150](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1150)
+[src/overtimes.scailo_pb.ts:1167](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1167)
 
 ___
 
@@ -1171,4 +1203,4 @@ ___
 
 #### Defined in
 
-[src/overtimes.scailo_pb.ts:1154](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/overtimes.scailo_pb.ts#L1154)
+[src/overtimes.scailo_pb.ts:1171](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/overtimes.scailo_pb.ts#L1171)

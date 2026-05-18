@@ -1357,11 +1357,26 @@ export declare class ProductionPlansServiceFilterReq extends Message<ProductionP
      */
     buyerClientId: bigint;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description Filter based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
     formData: FormFieldDatumFilterRequest[];
+    /**
+     *
+     * @optional
+     *
+     * @description If `true`, the response will include the associated custom form field values for each record.
+     * Set to `false` to improve performance when form data is not needed.
+     *
+     * @example true
+     *
+     * @generated from field: bool include_form_data = 501;
+     */
+    includeFormData: boolean;
     constructor(data?: PartialMessage<ProductionPlansServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProductionPlansServiceFilterReq";

@@ -2512,11 +2512,27 @@ export class SalariesServiceFilterReq extends Message<SalariesServiceFilterReq> 
   taxGroupId = protoInt64.zero;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description Filter based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
   formData: FormFieldDatumFilterRequest[] = [];
+
+  /**
+   *
+   * @optional
+   *
+   * @description If `true`, the response will include the associated custom form field values for each record.
+   * Set to `false` to improve performance when form data is not needed.
+   *
+   * @example true
+   *
+   * @generated from field: bool include_form_data = 501;
+   */
+  includeFormData = false;
 
   constructor(data?: PartialMessage<SalariesServiceFilterReq>) {
     super();
@@ -2551,6 +2567,7 @@ export class SalariesServiceFilterReq extends Message<SalariesServiceFilterReq> 
     { no: 25, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 26, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalariesServiceFilterReq {

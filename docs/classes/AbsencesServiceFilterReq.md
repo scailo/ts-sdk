@@ -36,6 +36,7 @@ from message Scailo.AbsencesServiceFilterReq
 - [formData](AbsencesServiceFilterReq.md#formdata)
 - [fromTimestampEnd](AbsencesServiceFilterReq.md#fromtimestampend)
 - [fromTimestampStart](AbsencesServiceFilterReq.md#fromtimestampstart)
+- [includeFormData](AbsencesServiceFilterReq.md#includeformdata)
 - [isActive](AbsencesServiceFilterReq.md#isactive)
 - [leaveRequestId](AbsencesServiceFilterReq.md#leaverequestid)
 - [modificationTimestampEnd](AbsencesServiceFilterReq.md#modificationtimestampend)
@@ -94,7 +95,7 @@ Message\&lt;AbsencesServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1474](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1474)
+[src/absences.scailo_pb.ts:1487](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1487)
 
 ## Properties
 
@@ -128,7 +129,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1238](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1238)
+[src/absences.scailo_pb.ts:1238](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1238)
 
 ___
 
@@ -162,7 +163,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1222](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1222)
+[src/absences.scailo_pb.ts:1222](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1222)
 
 ___
 
@@ -196,7 +197,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1206](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1206)
+[src/absences.scailo_pb.ts:1206](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1206)
 
 ___
 
@@ -230,7 +231,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1254](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1254)
+[src/absences.scailo_pb.ts:1254](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1254)
 
 ___
 
@@ -264,7 +265,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1286](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1286)
+[src/absences.scailo_pb.ts:1286](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1286)
 
 ___
 
@@ -298,7 +299,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1270](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1270)
+[src/absences.scailo_pb.ts:1270](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1270)
 
 ___
 
@@ -332,7 +333,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1060](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1060)
+[src/absences.scailo_pb.ts:1060](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1060)
 
 ___
 
@@ -366,7 +367,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1130](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1130)
+[src/absences.scailo_pb.ts:1130](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1130)
 
 ___
 
@@ -400,7 +401,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1114](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1114)
+[src/absences.scailo_pb.ts:1114](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1114)
 
 ___
 
@@ -434,7 +435,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1178)
+[src/absences.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1178)
 
 ___
 
@@ -466,7 +467,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1318](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1318)
+[src/absences.scailo_pb.ts:1318](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1318)
 
 ___
 
@@ -486,7 +487,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1472](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1472)
+[src/absences.scailo_pb.ts:1472](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1472)
 
 ___
 
@@ -520,7 +521,7 @@ from field: uint64 from_timestamp_end = 25;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1382](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1382)
+[src/absences.scailo_pb.ts:1382](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1382)
 
 ___
 
@@ -554,7 +555,34 @@ from field: uint64 from_timestamp_start = 24;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1366](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1366)
+[src/absences.scailo_pb.ts:1366](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1366)
+
+___
+
+### includeFormData
+
+• **includeFormData**: `boolean` = `false`
+
+**`Optional`**
+
+**`Description`**
+
+If `true`, the response will include the associated custom form field values for each record.
+Set to `false` to improve performance when form data is not needed.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Generated`**
+
+from field: bool include_form_data = 501;
+
+#### Defined in
+
+[src/absences.scailo_pb.ts:1485](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1485)
 
 ___
 
@@ -580,7 +608,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1044](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1044)
+[src/absences.scailo_pb.ts:1044](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1044)
 
 ___
 
@@ -614,7 +642,7 @@ from field: uint64 leave_request_id = 23;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1350](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1350)
+[src/absences.scailo_pb.ts:1350](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1350)
 
 ___
 
@@ -648,7 +676,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1162](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1162)
+[src/absences.scailo_pb.ts:1162](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1162)
 
 ___
 
@@ -682,7 +710,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1146](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1146)
+[src/absences.scailo_pb.ts:1146](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1146)
 
 ___
 
@@ -716,7 +744,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1076)
+[src/absences.scailo_pb.ts:1076](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1076)
 
 ___
 
@@ -750,7 +778,7 @@ from field: uint64 quantity_max = 30;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1462](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1462)
+[src/absences.scailo_pb.ts:1462](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1462)
 
 ___
 
@@ -784,7 +812,7 @@ from field: uint64 quantity_min = 29;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1446](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1446)
+[src/absences.scailo_pb.ts:1446](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1446)
 
 ___
 
@@ -816,7 +844,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1302](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1302)
+[src/absences.scailo_pb.ts:1302](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1302)
 
 ___
 
@@ -836,7 +864,7 @@ from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1098](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1098)
+[src/absences.scailo_pb.ts:1098](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1098)
 
 ___
 
@@ -862,7 +890,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1088](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1088)
+[src/absences.scailo_pb.ts:1088](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1088)
 
 ___
 
@@ -888,7 +916,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1190](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1190)
+[src/absences.scailo_pb.ts:1190](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1190)
 
 ___
 
@@ -922,7 +950,7 @@ from field: uint64 to_timestamp_end = 27;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1414)
+[src/absences.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1414)
 
 ___
 
@@ -956,7 +984,7 @@ from field: uint64 to_timestamp_start = 26;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1398](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1398)
+[src/absences.scailo_pb.ts:1398](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1398)
 
 ___
 
@@ -990,7 +1018,7 @@ from field: uint64 uom_id = 28;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1430](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1430)
+[src/absences.scailo_pb.ts:1430](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1430)
 
 ___
 
@@ -1024,7 +1052,7 @@ from field: uint64 user_id = 22;
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1334](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1334)
+[src/absences.scailo_pb.ts:1334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1334)
 
 ___
 
@@ -1034,7 +1062,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1481](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1481)
+[src/absences.scailo_pb.ts:1494](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1494)
 
 ___
 
@@ -1044,7 +1072,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1479](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1479)
+[src/absences.scailo_pb.ts:1492](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1492)
 
 ___
 
@@ -1054,7 +1082,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1480](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1480)
+[src/absences.scailo_pb.ts:1493](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1493)
 
 ## Methods
 
@@ -1342,7 +1370,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1525](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1525)
+[src/absences.scailo_pb.ts:1539](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1539)
 
 ___
 
@@ -1363,7 +1391,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1513](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1513)
+[src/absences.scailo_pb.ts:1527](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1527)
 
 ___
 
@@ -1384,7 +1412,7 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1517](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1517)
+[src/absences.scailo_pb.ts:1531](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1531)
 
 ___
 
@@ -1405,4 +1433,4 @@ ___
 
 #### Defined in
 
-[src/absences.scailo_pb.ts:1521](https://github.com/scailo/ts-sdk/blob/1f18e5ef034d2e7939eefb8fcb2486a3d878e8ff/src/absences.scailo_pb.ts#L1521)
+[src/absences.scailo_pb.ts:1535](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/absences.scailo_pb.ts#L1535)

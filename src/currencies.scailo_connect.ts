@@ -263,7 +263,7 @@ export const CurrenciesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by currency's code (logs aren't returned)
+     * View by currency's symbol (logs aren't returned)
      *
      * @generated from rpc Scailo.CurrenciesService.ViewBySymbol
      */

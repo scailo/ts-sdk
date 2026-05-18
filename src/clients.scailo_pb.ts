@@ -991,11 +991,27 @@ export class ClientsServiceFilterReq extends Message<ClientsServiceFilterReq> {
   phone = "";
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description Filter based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
   formData: FormFieldDatumFilterRequest[] = [];
+
+  /**
+   *
+   * @optional
+   *
+   * @description If `true`, the response will include the associated custom form field values for each record.
+   * Set to `false` to improve performance when form data is not needed.
+   *
+   * @example true
+   *
+   * @generated from field: bool include_form_data = 501;
+   */
+  includeFormData = false;
 
   constructor(data?: PartialMessage<ClientsServiceFilterReq>) {
     super();
@@ -1025,6 +1041,7 @@ export class ClientsServiceFilterReq extends Message<ClientsServiceFilterReq> {
     { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ClientsServiceFilterReq {
