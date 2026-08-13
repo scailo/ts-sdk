@@ -37,7 +37,7 @@ from enum value: CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L101)
+[src/families.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/families.scailo_pb.ts#L101)
 
 ___
 
@@ -55,7 +55,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_INTAKE = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L108)
+[src/families.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/families.scailo_pb.ts#L108)
 
 ___
 
@@ -73,7 +73,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_SHELF_LIFE = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L115)
+[src/families.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/families.scailo_pb.ts#L115)
 
 ___
 
@@ -91,7 +91,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_WARRANTY = 3;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L122)
+[src/families.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/families.scailo_pb.ts#L122)
 
 ___
 
@@ -109,7 +109,7 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_INTAKE = 4;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:129](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L129)
+[src/families.scailo_pb.ts:129](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/families.scailo_pb.ts#L129)
 
 ___
 
@@ -127,7 +127,7 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_SHELF_LIFE = 5;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L136)
+[src/families.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/families.scailo_pb.ts#L136)
 
 ___
 
@@ -145,4 +145,4 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_WARRANTY = 6;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L143)
+[src/families.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/families.scailo_pb.ts#L143)

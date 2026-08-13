@@ -40,7 +40,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_AMENDMENT_COUNT = 18;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L114)
+[src/proforma_invoices.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L114)
 
 ___
 
@@ -58,7 +58,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L79)
+[src/proforma_invoices.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L79)
 
 ___
 
@@ -76,7 +76,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L72)
+[src/proforma_invoices.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L72)
 
 ___
 
@@ -94,7 +94,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L86)
+[src/proforma_invoices.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L86)
 
 ___
 
@@ -112,7 +112,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L93)
+[src/proforma_invoices.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L93)
 
 ___
 
@@ -130,7 +130,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L58)
+[src/proforma_invoices.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L58)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L107)
+[src/proforma_invoices.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L107)
 
 ___
 
@@ -166,7 +166,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L51)
+[src/proforma_invoices.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L51)
 
 ___
 
@@ -184,7 +184,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L65)
+[src/proforma_invoices.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L65)
 
 ___
 
@@ -202,7 +202,7 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L100)
+[src/proforma_invoices.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L100)
 
 ___
 
@@ -220,4 +220,4 @@ from enum value: PROFORMA_INVOICE_SORT_KEY_TOTAL_VALUE = 30;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L121)
+[src/proforma_invoices.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/proforma_invoices.scailo_pb.ts#L121)

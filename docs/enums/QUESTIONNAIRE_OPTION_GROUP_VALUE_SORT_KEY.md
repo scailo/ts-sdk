@@ -37,7 +37,7 @@ from enum value: QUESTIONNAIRE_OPTION_GROUP_VALUE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:51
+[src/questionnaire_option_groups.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L51)
 
 ___
 
@@ -55,7 +55,7 @@ from enum value: QUESTIONNAIRE_OPTION_GROUP_VALUE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:44
+[src/questionnaire_option_groups.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L44)
 
 ___
 
@@ -73,7 +73,7 @@ from enum value: QUESTIONNAIRE_OPTION_GROUP_VALUE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:58
+[src/questionnaire_option_groups.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L58)
 
 ___
 
@@ -91,7 +91,7 @@ from enum value: QUESTIONNAIRE_OPTION_GROUP_VALUE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:30
+[src/questionnaire_option_groups.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L30)
 
 ___
 
@@ -109,7 +109,7 @@ from enum value: QUESTIONNAIRE_OPTION_GROUP_VALUE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:23
+[src/questionnaire_option_groups.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L23)
 
 ___
 
@@ -127,7 +127,7 @@ from enum value: QUESTIONNAIRE_OPTION_GROUP_VALUE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:37
+[src/questionnaire_option_groups.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L37)
 
 ___
 
@@ -145,7 +145,7 @@ from enum value: QUESTIONNAIRE_OPTION_GROUP_VALUE_SORT_KEY_QUESTIONNAIRE_OPTION_
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:65
+[src/questionnaire_option_groups.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L65)
 
 ___
 
@@ -163,4 +163,4 @@ from enum value: QUESTIONNAIRE_OPTION_GROUP_VALUE_SORT_KEY_SORT_ORDER = 12;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:72
+[src/questionnaire_option_groups.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L72)

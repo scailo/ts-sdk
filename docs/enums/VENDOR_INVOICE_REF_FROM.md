@@ -29,7 +29,7 @@ from enum value: VENDOR_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L23)
+[src/vendor_invoices.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vendor_invoices.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: VENDOR_INVOICE_REF_FROM_PURCHASE_ORDER = 1;
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L30)
+[src/vendor_invoices.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vendor_invoices.scailo_pb.ts#L30)

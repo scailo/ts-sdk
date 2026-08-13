@@ -66,7 +66,7 @@ Message\&lt;QuestionnaireOptionGroupsList\&gt;.constructor
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1025
+[src/questionnaire_option_groups.scailo_pb.ts:1025](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1025)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: repeated Scailo.QuestionnaireOptionGroup list = 1;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1023
+[src/questionnaire_option_groups.scailo_pb.ts:1023](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1023)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1032
+[src/questionnaire_option_groups.scailo_pb.ts:1032](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1032)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1030
+[src/questionnaire_option_groups.scailo_pb.ts:1030](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1030)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1031
+[src/questionnaire_option_groups.scailo_pb.ts:1031](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1031)
 
 ## Methods
 
@@ -402,7 +402,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1048
+[src/questionnaire_option_groups.scailo_pb.ts:1048](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1048)
 
 ___
 
@@ -423,7 +423,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1036
+[src/questionnaire_option_groups.scailo_pb.ts:1036](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1036)
 
 ___
 
@@ -444,7 +444,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1040
+[src/questionnaire_option_groups.scailo_pb.ts:1040](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1040)
 
 ___
 
@@ -465,4 +465,4 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1044
+[src/questionnaire_option_groups.scailo_pb.ts:1044](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1044)

@@ -31,7 +31,7 @@ from enum value: VAULT_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:174](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vault_commons.scailo_pb.ts#L174)
+[src/vault_commons.scailo_pb.ts:174](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vault_commons.scailo_pb.ts#L174)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: VAULT_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:167](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vault_commons.scailo_pb.ts#L167)
+[src/vault_commons.scailo_pb.ts:167](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vault_commons.scailo_pb.ts#L167)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: VAULT_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:181](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vault_commons.scailo_pb.ts#L181)
+[src/vault_commons.scailo_pb.ts:181](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vault_commons.scailo_pb.ts#L181)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: VAULT_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vault_commons.scailo_pb.ts#L188)
+[src/vault_commons.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vault_commons.scailo_pb.ts#L188)

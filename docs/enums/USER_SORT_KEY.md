@@ -40,7 +40,7 @@ from enum value: USER_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:98](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L98)
+[src/users.scailo_pb.ts:98](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L98)
 
 ___
 
@@ -58,7 +58,7 @@ from enum value: USER_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:91](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L91)
+[src/users.scailo_pb.ts:91](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L91)
 
 ___
 
@@ -76,7 +76,7 @@ from enum value: USER_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L105)
+[src/users.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L105)
 
 ___
 
@@ -94,7 +94,7 @@ from enum value: USER_SORT_KEY_CODE = 12;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:126](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L126)
+[src/users.scailo_pb.ts:126](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L126)
 
 ___
 
@@ -112,7 +112,7 @@ from enum value: USER_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:77](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L77)
+[src/users.scailo_pb.ts:77](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L77)
 
 ___
 
@@ -130,7 +130,7 @@ from enum value: USER_SORT_KEY_EMAIL = 13;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L133)
+[src/users.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L133)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: USER_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:70](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L70)
+[src/users.scailo_pb.ts:70](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L70)
 
 ___
 
@@ -166,7 +166,7 @@ from enum value: USER_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:84](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L84)
+[src/users.scailo_pb.ts:84](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L84)
 
 ___
 
@@ -184,7 +184,7 @@ from enum value: USER_SORT_KEY_NAME = 11;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:119](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L119)
+[src/users.scailo_pb.ts:119](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L119)
 
 ___
 
@@ -202,7 +202,7 @@ from enum value: USER_SORT_KEY_PHONE = 14;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L140)
+[src/users.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L140)
 
 ___
 
@@ -220,4 +220,4 @@ from enum value: USER_SORT_KEY_USERNAME = 10;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L112)
+[src/users.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/users.scailo_pb.ts#L112)

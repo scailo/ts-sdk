@@ -33,7 +33,7 @@ from enum value: SALES_ORDER_REFERENCE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:197](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L197)
+[src/sales_orders.scailo_pb.ts:197](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/sales_orders.scailo_pb.ts#L197)
 
 ___
 
@@ -51,7 +51,7 @@ from enum value: SALES_ORDER_REFERENCE_REF_FROM_INWARD_JOB = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L204)
+[src/sales_orders.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/sales_orders.scailo_pb.ts#L204)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: SALES_ORDER_REFERENCE_REF_FROM_SALES_ENQUIRY = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L211)
+[src/sales_orders.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/sales_orders.scailo_pb.ts#L211)
 
 ___
 
@@ -87,4 +87,4 @@ from enum value: SALES_ORDER_REFERENCE_REF_FROM_SALES_QUOTATION = 3;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:218](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L218)
+[src/sales_orders.scailo_pb.ts:218](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/sales_orders.scailo_pb.ts#L218)

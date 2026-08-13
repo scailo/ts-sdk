@@ -36,7 +36,7 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:102](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L102)
+[src/qc_groups.scailo_pb.ts:102](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L102)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:95](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L95)
+[src/qc_groups.scailo_pb.ts:95](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L95)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:109](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L109)
+[src/qc_groups.scailo_pb.ts:109](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L109)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:81](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L81)
+[src/qc_groups.scailo_pb.ts:81](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L81)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:74](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L74)
+[src/qc_groups.scailo_pb.ts:74](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L74)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:88](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L88)
+[src/qc_groups.scailo_pb.ts:88](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L88)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_QC_GROUP_ID = 10;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:116](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L116)
+[src/qc_groups.scailo_pb.ts:116](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L116)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_QC_PARAM_ID = 11;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:123](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L123)
+[src/qc_groups.scailo_pb.ts:123](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L123)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: QC_GROUP_ITEM_SORT_KEY_UOM_ID = 12;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L130)
+[src/qc_groups.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/qc_groups.scailo_pb.ts#L130)

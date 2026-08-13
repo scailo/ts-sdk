@@ -30,7 +30,7 @@ from enum value: STOCK_ISSUANCE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_issuances.scailo_pb.ts#L224)
+[src/stock_issuances.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/stock_issuances.scailo_pb.ts#L224)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: STOCK_ISSUANCE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_issuances.scailo_pb.ts#L231)
+[src/stock_issuances.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/stock_issuances.scailo_pb.ts#L231)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: STOCK_ISSUANCE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/stock_issuances.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_issuances.scailo_pb.ts#L238)
+[src/stock_issuances.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/stock_issuances.scailo_pb.ts#L238)

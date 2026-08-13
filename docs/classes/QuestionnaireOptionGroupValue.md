@@ -75,7 +75,7 @@ Message\&lt;QuestionnaireOptionGroupValue\&gt;.constructor
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:976
+[src/questionnaire_option_groups.scailo_pb.ts:976](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L976)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:922
+[src/questionnaire_option_groups.scailo_pb.ts:922](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L922)
 
 ___
 
@@ -117,7 +117,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:906
+[src/questionnaire_option_groups.scailo_pb.ts:906](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L906)
 
 ___
 
@@ -135,7 +135,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:914
+[src/questionnaire_option_groups.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L914)
 
 ___
 
@@ -163,7 +163,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:934
+[src/questionnaire_option_groups.scailo_pb.ts:934](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L934)
 
 ___
 
@@ -187,7 +187,7 @@ from field: uint64 questionnaire_option_group_id = 10;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:954
+[src/questionnaire_option_groups.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L954)
 
 ___
 
@@ -211,7 +211,7 @@ from field: uint64 sort_order = 12;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:974
+[src/questionnaire_option_groups.scailo_pb.ts:974](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L974)
 
 ___
 
@@ -235,7 +235,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:944
+[src/questionnaire_option_groups.scailo_pb.ts:944](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L944)
 
 ___
 
@@ -259,7 +259,7 @@ from field: string value = 11;
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:964
+[src/questionnaire_option_groups.scailo_pb.ts:964](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L964)
 
 ___
 
@@ -269,7 +269,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:983
+[src/questionnaire_option_groups.scailo_pb.ts:983](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L983)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:981
+[src/questionnaire_option_groups.scailo_pb.ts:981](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L981)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:982
+[src/questionnaire_option_groups.scailo_pb.ts:982](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L982)
 
 ## Methods
 
@@ -577,7 +577,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1006
+[src/questionnaire_option_groups.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1006)
 
 ___
 
@@ -598,7 +598,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:994
+[src/questionnaire_option_groups.scailo_pb.ts:994](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L994)
 
 ___
 
@@ -619,7 +619,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:998
+[src/questionnaire_option_groups.scailo_pb.ts:998](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L998)
 
 ___
 
@@ -640,4 +640,4 @@ ___
 
 #### Defined in
 
-src/questionnaire_option_groups.scailo_pb.ts:1002
+[src/questionnaire_option_groups.scailo_pb.ts:1002](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_option_groups.scailo_pb.ts#L1002)

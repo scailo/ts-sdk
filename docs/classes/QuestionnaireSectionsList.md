@@ -66,7 +66,7 @@ Message\&lt;QuestionnaireSectionsList\&gt;.constructor
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:643
+[src/questionnaire_sections.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L643)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: repeated Scailo.QuestionnaireSection list = 1;
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:641
+[src/questionnaire_sections.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L641)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:650
+[src/questionnaire_sections.scailo_pb.ts:650](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L650)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:648
+[src/questionnaire_sections.scailo_pb.ts:648](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L648)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:649
+[src/questionnaire_sections.scailo_pb.ts:649](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L649)
 
 ## Methods
 
@@ -402,7 +402,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:666
+[src/questionnaire_sections.scailo_pb.ts:666](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L666)
 
 ___
 
@@ -423,7 +423,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:654
+[src/questionnaire_sections.scailo_pb.ts:654](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L654)
 
 ___
 
@@ -444,7 +444,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:658
+[src/questionnaire_sections.scailo_pb.ts:658](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L658)
 
 ___
 
@@ -465,4 +465,4 @@ ___
 
 #### Defined in
 
-src/questionnaire_sections.scailo_pb.ts:662
+[src/questionnaire_sections.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L662)

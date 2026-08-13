@@ -66,7 +66,7 @@ Message\&lt;QuestionnaireTemplatesList\&gt;.constructor
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:651
+[src/questionnaire_templates.scailo_pb.ts:651](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L651)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: repeated Scailo.QuestionnaireTemplate list = 1;
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:649
+[src/questionnaire_templates.scailo_pb.ts:649](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L649)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:658
+[src/questionnaire_templates.scailo_pb.ts:658](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L658)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:656
+[src/questionnaire_templates.scailo_pb.ts:656](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L656)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:657
+[src/questionnaire_templates.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L657)
 
 ## Methods
 
@@ -402,7 +402,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:674
+[src/questionnaire_templates.scailo_pb.ts:674](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L674)
 
 ___
 
@@ -423,7 +423,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:662
+[src/questionnaire_templates.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L662)
 
 ___
 
@@ -444,7 +444,7 @@ ___
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:666
+[src/questionnaire_templates.scailo_pb.ts:666](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L666)
 
 ___
 
@@ -465,4 +465,4 @@ ___
 
 #### Defined in
 
-src/questionnaire_templates.scailo_pb.ts:670
+[src/questionnaire_templates.scailo_pb.ts:670](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_templates.scailo_pb.ts#L670)
